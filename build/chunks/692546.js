@@ -94,14 +94,14 @@ class x extends(i = Chunk473749.PureComponent) {
     t !== e.observe && (t ? this.observeZone() : this.interval.stop())
   }
   render() {
-    return Chunk473749.Children.only(this.props.children)
+    return r.Children.only(this.props.children)
   }
   observeZone() {
     this.updateZone(), this.interval.start(this.props.observeInterval, this.updateZone)
   }
   click() {
-    let e = (0, Chunk671999.B)("click", b.x, b.y);
-    (0, Chunk671999.J)(module, b.x, b.y)
+    let e = (0, h.B)("click", b.x, b.y);
+    (0, h.J)(e, b.x, b.y)
   }
   constructor(...e) {
     super(...e), g(this, "zone", s().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {

@@ -23,41 +23,41 @@ let p = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(
   }) : null,
   _ = () => {
     var e;
-    let t = (0, Chunk848572.Rw)(),
-      n = null != (e = (0, Chunk848572.GG)()) ? module : new Date,
-      i = (0, Chunk787528.u)(null == exports ? true : exports.id);
-    if (null == exports || null == Chunk120356) return null;
+    let t = (0, c.Rw)(),
+      n = null != (e = (0, c.GG)()) ? e : new Date,
+      i = (0, u.u)(null == t ? true : t.id);
+    if (null == t || null == i) return null;
     let {
       id: _,
       nameUnformatted: m,
       tenureReqNumMonths: h,
       hasWideArt: g
-    } = exports, E = Chunk388032.intl.string(m), b = (0, Chunk553896.q)(_, h), y = {
-      "--custom-badge-glow-color": (0, Chunk302221.rj)(exports.glowColor, .5)
+    } = t, E = d.intl.string(m), b = (0, l.q)(_, h), y = {
+      "--custom-badge-glow-color": (0, s.rj)(t.glowColor, .5)
     };
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk70815.container,
+    return (0, r.jsxs)("div", {
+      className: f.container,
       style: y,
-      children: [(0, Chunk54381.jsx)("div", {}), " ", (0, Chunk54381.jsx)("img", {
-        src: Chunk120356,
+      children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
+        src: i,
         alt: E,
-        className: a()(Chunk70815.badgeImage, {
-          [Chunk70815.upcomingBadge]: exports.status === Chunk848572.Vq.UPCOMING,
-          [Chunk70815.wide]: g
+        className: a()(f.badgeImage, {
+          [f.upcomingBadge]: t.status === c.Vq.UPCOMING,
+          [f.wide]: g
         })
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk70815.textColumn,
-        children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
+      }), (0, r.jsxs)("div", {
+        className: f.textColumn,
+        children: [(0, r.jsx)(o.xvT, {
           variant: "text-lg/semibold",
-          className: Chunk70815.badgeText,
+          className: f.badgeText,
           children: E
-        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+        }), (0, r.jsx)(o.xvT, {
           variant: "text-md/normal",
-          className: Chunk70815.badgeText,
+          className: f.badgeText,
           children: b
-        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+        }), (0, r.jsx)(o.xvT, {
           variant: "text-xs/normal",
-          children: p(exports, require)
+          children: p(t, n)
         })]
       })]
     })

@@ -10,8 +10,8 @@ var Chunk828700 = require("./828700.js"),
   Chunk981631 = require("./981631.js");
 
 function E() {
-  return (0, Chunk54381.jsx)(Chunk828700.AW, {
-    path: Chunk981631.Z5c.APPLICATION_DIRECTORY,
-    component: Chunk8991.E
+  return (0, a.jsx)(t.AW, {
+    path: R.Z5c.APPLICATION_DIRECTORY,
+    component: O.E
   })
 }

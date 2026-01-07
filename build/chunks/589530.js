@@ -14,8 +14,8 @@ function a() {
   var e;
   let {
     volume: t
-  } = null != (e = Chunk433517.K.get(i)) ? module : {};
-  return "number" != typeof exports && (t = 1), t = Math.min(1, Math.max(0, exports))
+  } = null != (e = r.K.get(i)) ? e : {};
+  return "number" != typeof t && (t = 1), t = Math.min(1, Math.max(0, t))
 }
 
 function o(e) {
@@ -29,8 +29,8 @@ function s() {
   var e;
   let {
     muted: t
-  } = null != (e = Chunk433517.K.get(i)) ? module : {};
-  return "boolean" != typeof exports && (t = false), exports
+  } = null != (e = r.K.get(i)) ? e : {};
+  return "boolean" != typeof t && (t = false), t
 }
 
 function l(e) {

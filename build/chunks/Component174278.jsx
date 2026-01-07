@@ -36,20 +36,20 @@ function f(e) {
   return e
 }
 let p = () => {
-    (0, Chunk952265.openModalLazy)(async () => {
+    (0, i.openModalLazy)(async () => {
       let {
         CustomThemesShareModalWrapper: e
-      } = await Promise.all([require.e("36653"), require.e("58973")]).then(require.bind(require, 433359));
+      } = await Promise.all([n.e("36653"), n.e("58973")]).then(n.bind(n, 433359));
       return t => (0, r.jsx)(e, f({}, t))
     }, {
-      modalKey: Chunk135102.tj
+      modalKey: l.tj
     })
   },
-  _ = () => (0, Chunk54381.jsx)(Chunk28664.u, {
-    text: Chunk388032.intl.string(Chunk388032.t.RDE0Sc),
-    children: (0, Chunk54381.jsx)(Chunk159691.hU, {
-      "aria-label": Chunk388032.intl.string(Chunk831989.default.zgFs8C),
-      icon: Chunk481060.aAc,
+  _ = () => (0, r.jsx)(a.u, {
+    text: u.intl.string(u.t.RDE0Sc),
+    children: (0, r.jsx)(o.hU, {
+      "aria-label": u.intl.string(c.default.zgFs8C),
+      icon: s.aAc,
       variant: "icon-only",
       onClick: () => {
         p()

@@ -42,7 +42,7 @@ let D = 512,
   U = 420,
   G = [8, 8, 0, 8],
   Z = l().debounce(() => {
-    (0, Chunk367907.yw)(Chunk981631.rMx.APPLICATION_COMMAND_BROWSER_SCROLLED)
+    (0, d.yw)(N.rMx.APPLICATION_COMMAND_BROWSER_SCROLLED)
   }, 300),
   F = Chunk473749.forwardRef(function(e, t) {
     let {

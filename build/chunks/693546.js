@@ -156,13 +156,13 @@ let _ = {
     }
   },
   fetchRequestToJoinGuilds: async () => {
-    let e = await Chunk544891.tn.get({
-      url: Chunk981631.ANM.USER_JOIN_REQUEST_GUILDS,
+    let e = await r.tn.get({
+      url: f.ANM.USER_JOIN_REQUEST_GUILDS,
       rejectWithError: false
     });
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "USER_JOIN_REQUEST_GUILDS_FETCH",
-      guilds: module.body
+      guilds: e.body
     })
   },
   setSelectedApplicationTab: (e, t) => {

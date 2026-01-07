@@ -57,13 +57,13 @@ class p {
   setup() {
     var e;
     if (p.isSetUp) throw Error("Cannot have two Keyboard backends at the same time.");
-    p.isSetUp = true, this._handlingFirstEvent = true, null == (e = this.context.window) || module.addEventListener("keydown", this.handleGlobalKeyDown, {
+    p.isSetUp = true, this._handlingFirstEvent = true, null == (e = this.context.window) || e.addEventListener("keydown", this.handleGlobalKeyDown, {
       capture: true
     })
   }
   teardown() {
     var e;
-    p.isSetUp = false, null == (e = this.context.window) || module.removeEventListener("keydown", this.handleGlobalKeyDown, {
+    p.isSetUp = false, null == (e = this.context.window) || e.removeEventListener("keydown", this.handleGlobalKeyDown, {
       capture: true
     }), this.endDrag()
   }

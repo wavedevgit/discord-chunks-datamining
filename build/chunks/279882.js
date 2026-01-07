@@ -90,7 +90,7 @@ class l extends Chunk495852.C {
       no: 5,
       name: "gradient",
       kind: "message",
-      T: () => Chunk7883.p
+      T: () => s.p
     }, {
       no: 6,
       name: "text_color",

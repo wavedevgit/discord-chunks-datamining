@@ -44,61 +44,61 @@ let I = false,
   N = {};
 
 function P() {
-  return Chunk131951.Z.supports(Chunk65154.AN.NATIVE_SCREENSHARE_PICKER)
+  return f.Z.supports(y.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
 function R() {
-  return Chunk131951.Z.getUseSystemScreensharePicker()
+  return f.Z.getUseSystemScreensharePicker()
 }
 
 function w() {
   let e = R() && (C > 0 || I && 0 === T);
-  if (module !== A) {
+  if (e !== A) {
     var t, n;
-    A = module, null == (n = Chunk131951.Z.getMediaEngine()) || null == (t = require.setNativeDesktopVideoSourcePickerActive) || exports.call(require, A)
+    A = e, null == (n = f.Z.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, A)
   }
 }
 
 function D() {
-  return (0, Chunk473749.useEffect)(() => (T++, w(), () => {
+  return (0, a.useEffect)(() => (T++, w(), () => {
     0 == --T && w()
   }), [])
 }
 
 function x() {
-  return (0, Chunk473749.useEffect)(() => (C++, w(), () => {
+  return (0, a.useEffect)(() => (C++, w(), () => {
     --C, w()
   }), [])
 }
 
 function L() {
-  let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId());
-  return I = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), w(), false
+  let e = u.Z.getChannel(_.Z.getVoiceChannelId());
+  return I = null != e && (0, h.Z)(f.Z) && (0, m.JL)(e, d.Z, p.Z, false), w(), false
 }
 
 function j() {
-  return null != r ? (0, Chunk783443.Z)(r) : null
+  return null != r ? (0, E.Z)(r) : null
 }
 
 function M() {
-  return null != r ? (0, Chunk692417.Z)(r) : null
+  return null != r ? (0, g.Z)(r) : null
 }
 
 function k() {
   var e;
   let {
     soundshareEnabled: t
-  } = Chunk361291.Z.getState();
+  } = c.Z.getState();
   return {
     sourceId: "prepicked:0",
     nativePickerStyleUsed: N.lastPresentedPickerStyle,
-    sourceName: null != (e = j()) ? module : Chunk388032.intl.string(Chunk388032.t.KKcy95),
-    sound: exports
+    sourceName: null != (e = j()) ? e : O.intl.string(O.t.KKcy95),
+    sound: t
   }
 }
 class U extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], L), L()
+    this.syncWith([f.Z, _.Z, u.Z, d.Z, p.Z], L), L()
   }
   supported() {
     return P()
@@ -107,7 +107,7 @@ class U extends(i = Chunk442837.ZP.Store) {
     return R()
   }
   releasePickerStream() {
-    (0, Chunk299570.t)()
+    (0, b.t)()
   }
   getPickerState() {
     return N

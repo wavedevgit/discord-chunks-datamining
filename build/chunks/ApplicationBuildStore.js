@@ -46,26 +46,26 @@ function D(e) {
 }
 
 function x() {
-  return !Chunk695346.bm.getSetting() && (D(P), L())
+  return !p.bm.getSetting() && (D(P), L())
 }
 
 function L() {
-  if (!(0, Chunk804739.Q)() || Chunk695346.bm.getSetting()) returnfalse;
-  let e = Chunk283595.Z.entitledBranchIds,
+  if (!(0, y.Q)() || p.bm.getSetting()) returnfalse;
+  let e = m.Z.entitledBranchIds,
     t = [];
-  for (let n of module) A.hasOwnProperty(require) || (A[require] = null, exports.push(require));
-  if (0 === exports.length) returnfalse;
-  Chunk570140.Z.wait(() => Chunk274616.o(exports))
+  for (let n of e) A.hasOwnProperty(n) || (A[n] = null, t.push(n));
+  if (0 === t.length) returnfalse;
+  l.Z.wait(() => c.o(t))
 }
 
 function j() {
-  if (!(0, Chunk804739.Q)()) returnfalse;
+  if (!(0, y.Q)()) returnfalse;
   for (let e of C) {
     let {
       applicationId: t,
       branchId: n
-    } = (0, Chunk780570.CP)(module);
-    null != Chunk812206.Z.getApplication(exports) && (C.delete(module), M(exports, require))
+    } = (0, b.CP)(e);
+    null != f.Z.getApplication(t) && (C.delete(e), M(t, n))
   }
 }
 
@@ -185,7 +185,7 @@ function W(e) {
 }
 class K extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk283595.Z], L), this.waitFor(Chunk812206.Z, Chunk417363.Z, Chunk391690.Z, Chunk283595.Z, Chunk581883.Z)
+    this.syncWith([m.Z], L), this.waitFor(f.Z, h.Z, g.Z, m.Z, _.Z)
   }
   getTargetBuildId(e, t) {
     return null == S[t] ? null : S[t].id

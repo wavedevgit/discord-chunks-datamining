@@ -58,27 +58,27 @@ let p = Chunk311570.v.VARIANTS_GROUP;
 
 function _() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    [t, n, i, l, c, u] = (0, Chunk399606.Wu)([Chunk1870.Z], () => [Chunk1870.Z.isFetching, Chunk1870.Z.isClaiming, Chunk1870.Z.fetchError, Chunk1870.Z.claimError, Chunk1870.Z.purchases, Chunk1870.Z.hasPreviouslyFetched]),
-    d = (0, Chunk473749.useRef)(Chunk1870.Z.hasPreviouslyFetched);
-  (0, Chunk473749.useEffect)(() => {
+    [t, n, i, l, c, u] = (0, a.Wu)([s.Z], () => [s.Z.isFetching, s.Z.isClaiming, s.Z.fetchError, s.Z.claimError, s.Z.purchases, s.Z.hasPreviouslyFetched]),
+    d = (0, r.useRef)(s.Z.hasPreviouslyFetched);
+  (0, r.useEffect)(() => {
     d.current = u
   }, [u]);
-  let f = (0, Chunk473749.useRef)(Chunk1870.Z.fetchError);
-  (0, Chunk473749.useEffect)(() => {
-    f.current = Chunk311570
-  }, [Chunk311570]);
-  let _ = (0, Chunk473749.useRef)(Chunk1870.Z.isFetching);
-  return (0, Chunk473749.useEffect)(() => {
-    _.current = exports
-  }, [exports]), (0, Chunk473749.useEffect)(() => {
-    _.current || true === module && d.current && null == f.current || (0, Chunk335131.qg)({
+  let f = (0, r.useRef)(s.Z.fetchError);
+  (0, r.useEffect)(() => {
+    f.current = i
+  }, [i]);
+  let _ = (0, r.useRef)(s.Z.isFetching);
+  return (0, r.useEffect)(() => {
+    _.current = t
+  }, [t]), (0, r.useEffect)(() => {
+    _.current || true === e && d.current && null == f.current || (0, o.qg)({
       variantsReturnStyle: p
     })
-  }, [module]), {
-    isClaiming: require,
-    fetchPurchasesError: Chunk311570,
-    claimError: Chunk267097,
-    isFetching: exports,
+  }, [e]), {
+    isClaiming: n,
+    fetchPurchasesError: i,
+    claimError: l,
+    isFetching: t,
     purchases: c,
     hasPreviouslyFetched: u
   }

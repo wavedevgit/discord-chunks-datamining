@@ -14,19 +14,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
-  (0, Chunk865066.sU)("nagbar")
+  (0, l.sU)("nagbar")
 }
 
 function f() {
-  return null == (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getVisibleGame()) ? null : (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-    color: Chunk481060.DM8.DANGER,
-    children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-      noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,
-      onClick: () => (0, Chunk369664.c)()
-    }), Chunk388032.intl.string(Chunk388032.t["5rPt+j"]), (0, Chunk54381.jsx)(Chunk481060.NoS, {
+  return null == (0, i.e7)([o.ZP], () => o.ZP.getVisibleGame()) ? null : (0, r.jsxs)(a.qXd, {
+    color: a.DM8.DANGER,
+    children: [(0, r.jsx)(a.RyX, {
+      noticeType: c.kVF.SYSTEM_SERVICE_WARNING,
+      onClick: () => (0, s.c)()
+    }), u.intl.string(u.t["5rPt+j"]), (0, r.jsx)(a.NoS, {
       onClick: d,
-      noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,
-      children: Chunk388032.intl.string(Chunk388032.t["1iI46O"])
+      noticeType: c.kVF.SYSTEM_SERVICE_WARNING,
+      children: u.intl.string(u.t["1iI46O"])
     })]
   })
 }

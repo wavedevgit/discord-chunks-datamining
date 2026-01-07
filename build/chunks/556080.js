@@ -24,20 +24,20 @@ var Chunk473749 = require("./473749.js"),
   Chunk345655 = require("./345655.js"),
   Chunk388032 = require("./388032.jsx");
 let L = (0, Chunk509613.J9)(Chunk313789.n.VOICE_INPUT_PROFILE_SETTING, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.LM3U3k),
+    useTitle: () => f.intl.string(f.t.LM3U3k),
     usePredicate: function() {
       let {
         enabledInputProfiles: t
-      } = (0, Chunk846071.P)({
+      } = (0, c.P)({
         location: "SettingsRendererConfig"
       });
-      return module.length > 0
+      return t.length > 0
     },
-    useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.nuFtHH), Chunk388032.intl.string(Chunk388032.t.VZPR0R), Chunk388032.intl.string(Chunk388032.t.cjPbpT)],
+    useSearchTerms: () => [f.intl.string(f.t.nuFtHH), f.intl.string(f.t.VZPR0R), f.intl.string(f.t.cjPbpT)],
     useValue: function() {
-      return (0, Chunk442837.e7)([Chunk131951.Z], () => {
+      return (0, l.e7)([T.Z], () => {
         var t;
-        return null != (t = Chunk131951.Z.getActiveInputProfile()) ? module : Chunk345655._.CUSTOM
+        return null != (t = T.Z.getActiveInputProfile()) ? t : C._.CUSTOM
       })
     },
     setValue: function(t) {
@@ -49,21 +49,21 @@ let L = (0, Chunk509613.J9)(Chunk313789.n.VOICE_INPUT_PROFILE_SETTING, {
     useOptions: function() {
       let {
         enabledInputProfiles: t
-      } = (0, Chunk846071.G)({
+      } = (0, c.G)({
         location: "InputProfileCategory"
       });
       return [{
-        value: Chunk345655._.VOICE_ISOLATION,
-        name: Chunk388032.intl.string(Chunk388032.t.cjPbpT),
-        desc: Chunk388032.intl.string(Chunk388032.t.CzhvnE)
+        value: C._.VOICE_ISOLATION,
+        name: f.intl.string(f.t.cjPbpT),
+        desc: f.intl.string(f.t.CzhvnE)
       }, {
-        value: Chunk345655._.STUDIO,
-        name: Chunk388032.intl.string(Chunk388032.t.VZPR0R),
-        desc: Chunk388032.intl.string(Chunk388032.t.ZaJksS)
+        value: C._.STUDIO,
+        name: f.intl.string(f.t.VZPR0R),
+        desc: f.intl.string(f.t.ZaJksS)
       }, {
-        value: Chunk345655._.CUSTOM,
-        name: Chunk388032.intl.string(Chunk388032.t["N/PQjv"]),
-        desc: Chunk388032.intl.string(Chunk388032.t.SnBmuY)
+        value: C._.CUSTOM,
+        name: f.intl.string(f.t["N/PQjv"]),
+        desc: f.intl.string(f.t.SnBmuY)
       }].filter(e => {
         let {
           value: n
@@ -74,17 +74,17 @@ let L = (0, Chunk509613.J9)(Chunk313789.n.VOICE_INPUT_PROFILE_SETTING, {
   }),
   P = (0, Chunk509613.k4)(Chunk313789.n.VOICE_INPUT_PROFILE_CATEGORY, {
     useNotice: function() {
-      let t = (0, Chunk442837.e7)([Chunk463395.Z, Chunk131951.Z], () => {
-        let t = Chunk131951.Z.getInputDeviceId();
-        return (Chunk463395.Z.hasEchoCancellation(module) || Chunk463395.Z.hasNoiseSuppression(module) || Chunk463395.Z.hasAutomaticGainControl(module)) && Chunk131951.Z.isInputProfileCustom()
+      let t = (0, l.e7)([o.Z, T.Z], () => {
+        let t = T.Z.getInputDeviceId();
+        return (o.Z.hasEchoCancellation(t) || o.Z.hasNoiseSuppression(t) || o.Z.hasAutomaticGainControl(t)) && T.Z.isInputProfileCustom()
       });
-      return Chunk473749.useMemo(() => {
-        if (module) return {
-          type: Chunk970013.v.INLINE_NOTICE,
+      return i.useMemo(() => {
+        if (t) return {
+          type: a.v.INLINE_NOTICE,
           noticeType: "info",
-          useText: () => Chunk388032.intl.string(Chunk388032.t["/Whuzi"])
+          useText: () => f.intl.string(f.t["/Whuzi"])
         }
-      }, [module])
+      }, [t])
     },
-    buildLayout: () => [L, Chunk782134.q, Chunk833682.L, Chunk383713.A, Chunk595373.Y, Chunk815194.h, Chunk387076.q, Chunk16009.X, Chunk375258.h]
+    buildLayout: () => [L, _.q, g.L, d.A, O.Y, I.h, A.q, N.X, E.h]
   })

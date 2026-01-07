@@ -87,75 +87,75 @@ class j extends Chunk147913.Z {
   }
   getActivelyProgressingPlayOnDesktopQuests() {
     let e = new Map,
-      t = Chunk594190.ZP.getRunningGames(),
-      n = Chunk594190.ZP.getRunningNonGames(),
-      r = Chunk616022.Z.quests;
-    R.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", exports, "Running non-games: ", require);
+      t = s.ZP.getRunningGames(),
+      n = s.ZP.getRunningNonGames(),
+      r = E.Z.quests;
+    R.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", t, "Running non-games: ", n);
     let i = {};
-    for (let e of exports) {
-      if (module.isLauncher) continue;
-      if (null != module.id) {
-        Chunk670081[module.id] = module;
+    for (let e of t) {
+      if (e.isLauncher) continue;
+      if (null != e.id) {
+        i[e.id] = e;
         continue
       }
-      let t = Chunk594190.ZP.getOverrideForGame(module);
-      if (null == module.distributor && null != exports) continue;
-      let n = Chunk77498.Z.getGameByName(module.name);
-      if ((null == require ? true : require.id) != null) {
-        Chunk670081[require.id] = module;
+      let t = s.ZP.getOverrideForGame(e);
+      if (null == e.distributor && null != t) continue;
+      let n = f.Z.getGameByName(e.name);
+      if ((null == n ? true : n.id) != null) {
+        i[n.id] = e;
         continue
       }
     }
-    for (let e of require) null != module.id && (Chunk670081[module.id] = module);
-    for (let t of Object.keys(Chunk670081)) {
-      let n = Chunk670081[exports];
-      for (let i of Chunk754700.values()) {
-        let r = (0, Chunk254579.vj)(Chunk670081);
-        if (!w(Chunk670081) || null == Chunk754700) continue;
-        let a = Chunk754700.find(e => e === t);
-        null != Chunk147913 ? module.set(Chunk670081.id, {
-          applicationId: Chunk147913
-        }) : x(Chunk754700, require) && module.set(Chunk670081.id, {
-          applicationId: Chunk817788.eB
+    for (let e of n) null != e.id && (i[e.id] = e);
+    for (let t of Object.keys(i)) {
+      let n = i[t];
+      for (let i of r.values()) {
+        let r = (0, S.vj)(i);
+        if (!w(i) || null == r) continue;
+        let a = r.find(e => e === t);
+        null != a ? e.set(i.id, {
+          applicationId: a
+        }) : x(r, n) && e.set(i.id, {
+          applicationId: c.eB
         })
       }
     }
-    return R.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
+    return R.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(e.keys())), e
   }
   getActivelyProgressingStreamOnDesktopQuests() {
     let e = new Map,
-      t = Chunk199902.Z.getCurrentUserActiveStream();
-    if (null == exports || Chunk938475.ZP.countVoiceStatesForChannel(exports.channelId) < N) return module;
-    let n = Chunk199902.Z.getStreamerActiveStreamMetadata();
-    if (null == require) return module;
-    R.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", require);
-    let r = require.id;
-    if (null == Chunk754700) return module;
-    for (let t of Chunk616022.Z.quests.values()) {
-      let n = (0, Chunk254579.DR)(exports);
-      w(exports) && null != require && require === Chunk754700 && module.set(exports.id, {
-        applicationId: Chunk754700
+      t = d.Z.getCurrentUserActiveStream();
+    if (null == t || p.ZP.countVoiceStatesForChannel(t.channelId) < N) return e;
+    let n = d.Z.getStreamerActiveStreamMetadata();
+    if (null == n) return e;
+    R.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", n);
+    let r = n.id;
+    if (null == r) return e;
+    for (let t of E.Z.quests.values()) {
+      let n = (0, S.DR)(t);
+      w(t) && null != n && n === r && e.set(t.id, {
+        applicationId: r
       })
     }
-    return R.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
+    return R.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(e.keys())), e
   }
   getActivelyProgressingActivityQuests() {
     let e = new Map,
-      t = Chunk317381.ZP.getSelfEmbeddedActivities(),
-      n = exports.size > 0;
-    if (R.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", exports), !require) return module;
-    let r = Chunk616022.Z.quests;
-    for (let n of exports.keys())
-      for (let t of Chunk754700.values()) {
-        let r = (0, Chunk254579.Mo)(exports);
-        w(exports) && null != Chunk754700 && Chunk754700 === require && module.set(exports.id, {
-          applicationId: require
+      t = o.ZP.getSelfEmbeddedActivities(),
+      n = t.size > 0;
+    if (R.log("~ getActivelyProgressingActivityQuestIds -> Embedded activities: ", t), !n) return e;
+    let r = E.Z.quests;
+    for (let n of t.keys())
+      for (let t of r.values()) {
+        let r = (0, S.Mo)(t);
+        w(t) && null != r && r === n && e.set(t.id, {
+          applicationId: n
         })
       }
-    for (let t of Chunk754700.values()) w(exports) && (0, Chunk283689.KM)(exports) && require && module.set(exports.id, {
-      applicationId: Chunk324805.Ts
+    for (let t of r.values()) w(t) && (0, I.KM)(t) && n && e.set(t.id, {
+      applicationId: T.Ts
     });
-    return R.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
+    return R.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(e.keys())), e
   }
   constructor(...e) {
     super(...e), C(this, "heartbeats", {

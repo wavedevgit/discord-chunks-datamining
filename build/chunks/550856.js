@@ -35,30 +35,30 @@ for (let e of g.allow_list) "name" in module && m.push(module.name.toLowerCase()
 
 function E() {
   var e;
-  if (!(0, Chunk358085.isMac)() && !(0, Chunk358085.isWindows)() || !Chunk131951.Z.getKrispModels().includes(p)) return;
-  let t = Chunk131951.Z.getInputDeviceId(),
-    n = Chunk131951.Z.getInputDevices()[exports],
-    r = null != Chunk19780.Z.getChannelId();
-  if (null == require) return;
-  let a = null == (e = Chunk19780.Z.getRTCConnection()) ? true : module.getInputDeviceSampleRate(),
-    o = Chunk621413.F.getCurrentConfig({
+  if (!(0, c.isMac)() && !(0, c.isWindows)() || !s.Z.getKrispModels().includes(p)) return;
+  let t = s.Z.getInputDeviceId(),
+    n = s.Z.getInputDevices()[t],
+    r = null != l.Z.getChannelId();
+  if (null == n) return;
+  let a = null == (e = l.Z.getRTCConnection()) ? true : e.getInputDeviceSampleRate(),
+    o = u.F.getCurrentConfig({
       location: "KrispBVCDeviceManager"
     }, {
       autoTrackExposure: false
     }).allowBVC;
-  if (null != Chunk147913 && Chunk147913 < 16e3) {
-    Chunk131951.Z.getKrispModelOverride() && (_.info("BVC model doesn't support <16kHz sample rate, disabling BVC."), Chunk846027.Z.setKrispModelOverride(""));
+  if (null != a && a < 16e3) {
+    s.Z.getKrispModelOverride() && (_.info("BVC model doesn't support <16kHz sample rate, disabling BVC."), i.Z.setKrispModelOverride(""));
     return
   }
-  let d = require.name.toLowerCase();
+  let d = n.name.toLowerCase();
   if (h.some(e => d.includes(e))) {
-    Chunk131951.Z.getKrispModelOverride() && (_.info("BVC not compatible with device, disabling BVC."), Chunk846027.Z.setKrispModelOverride(""));
+    s.Z.getKrispModelOverride() && (_.info("BVC not compatible with device, disabling BVC."), i.Z.setKrispModelOverride(""));
     return
   }
-  if (m.some(e => d.includes(e))) return (Chunk46973 && Chunk621413.F.trackExposure({
+  if (m.some(e => d.includes(e))) return (r && u.F.trackExposure({
     location: "KrispBVCDeviceManager"
-  }), Chunk710845) ? void(Chunk131951.Z.getKrispModelOverride() !== p && (_.info("BVC compatible with device, enabling BVC."), Chunk846027.Z.setKrispModelOverride(p))) : void Chunk846027.Z.setKrispModelOverride("");
-  Chunk131951.Z.getKrispModelOverride() && (_.info("Unknown BVC compatibility with device, disabling BVC."), Chunk846027.Z.setKrispModelOverride(""))
+  }), o) ? void(s.Z.getKrispModelOverride() !== p && (_.info("BVC compatible with device, enabling BVC."), i.Z.setKrispModelOverride(p))) : void i.Z.setKrispModelOverride("");
+  s.Z.getKrispModelOverride() && (_.info("Unknown BVC compatibility with device, disabling BVC."), i.Z.setKrispModelOverride(""))
 }
 class b extends Chunk147913.Z {
   constructor(...e) {

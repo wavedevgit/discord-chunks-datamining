@@ -71,7 +71,7 @@ let g = new Chunk710845.Z("VoiceFilterStore"),
   b = null;
 
 function y() {
-  return (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remoteApp.getVersion()) === "0.0.0"
+  return (null === l.Z || true === l.Z ? true : l.Z.remoteApp.getVersion()) === "0.0.0"
 }
 
 function O(e) {
@@ -188,13 +188,13 @@ class A extends(r = Chunk442837.ZP.Store) {
     return E.limitedTimeVoices
   }
   isNativeModuleLoaded() {
-    return E.nativeVoiceFilterModuleState === Chunk750180.O.LOADED
+    return E.nativeVoiceFilterModuleState === u.O.LOADED
   }
   isNativeModuleLoading() {
-    return E.nativeVoiceFilterModuleState === Chunk750180.O.LOADING
+    return E.nativeVoiceFilterModuleState === u.O.LOADING
   }
   hasNativeModuleFailed() {
-    return E.nativeVoiceFilterModuleState === Chunk750180.O.FAILED
+    return E.nativeVoiceFilterModuleState === u.O.FAILED
   }
   getCatalogFetchFailed() {
     return E.catalogFetchFailed
@@ -209,7 +209,7 @@ class A extends(r = Chunk442837.ZP.Store) {
 
 function N() {
   let e = v(E.limitedTimeVoices);
-  E.catalogUpdateTime = module.catalogUpdateTime, Object.keys(E.voiceFilters).forEach(t => {
+  E.catalogUpdateTime = e.catalogUpdateTime, Object.keys(E.voiceFilters).forEach(t => {
     E.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
   }), E.sortedVoiceFilters = I(E.voiceFilters)
 }

@@ -22,5 +22,5 @@ let a = Chunk473749.createContext({
 });
 
 function o() {
-  return Chunk473749.useContext(a)
+  return r.useContext(a)
 }

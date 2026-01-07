@@ -5,5 +5,5 @@ var Chunk115861 = require("./115861.js"),
   i = "​",
   a = "᠎";
 module.exports = function() {
-  return String.prototype.trim && i.trim() === i && a.trim() === a && ("_" + a).trim() === "_" + a && (a + "_").trim() === a + "_" ? String.prototype.trim : Chunk115861
+  return String.prototype.trim && i.trim() === i && a.trim() === a && ("_" + a).trim() === "_" + a && (a + "_").trim() === a + "_" ? String.prototype.trim : r
 }

@@ -25,14 +25,14 @@ var r, Chunk533937 = require("./533937.js"),
   Chunk566817 = require("./566817.js"),
   Chunk461648 = require("./461648.js"),
   S = function() {
-    throw new Chunk815329
+    throw new u
   },
   I = Chunk566817 ? function() {
     try {
       return arguments.callee, S
     } catch (e) {
       try {
-        return Chunk566817(arguments, "callee").get
+        return O(arguments, "callee").get
       } catch (e) {
         return S
       }

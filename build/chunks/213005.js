@@ -25,10 +25,10 @@ let c = [],
   };
 class d extends Chunk836560.EventEmitter {
   destroy() {
-    this.removeAllListeners(), 0 === (c = c.filter(e => e !== this)).length && Chunk998502.ZP.setOnInputEventCallback(null)
+    this.removeAllListeners(), 0 === (c = c.filter(e => e !== this)).length && a.ZP.setOnInputEventCallback(null)
   }
   toString() {
-    return (0, Chunk13140.BB)(this.combo)
+    return (0, o.BB)(this.combo)
   }
   _handleEvent(e, t, n) {
     0 === t ? this.combo = this.combo.filter(t => {
@@ -37,6 +37,6 @@ class d extends Chunk836560.EventEmitter {
     }) : (this.combo.push([e, n, (0, o.dU)()]), this.emit("change", this))
   }
   constructor() {
-    super(), l(this, "combo", []), c.push(this), 1 === c.length && Chunk998502.ZP.setOnInputEventCallback(u)
+    super(), l(this, "combo", []), c.push(this), 1 === c.length && a.ZP.setOnInputEventCallback(u)
   }
 }

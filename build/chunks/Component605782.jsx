@@ -64,11 +64,11 @@ class c extends Chunk473749.Component {
         history: c,
         staticContext: d,
         match: u
-      } = module,
-      p = o(module, ["children", "location", "history", "staticContext", "match"]),
+      } = t,
+      p = o(t, ["children", "location", "history", "staticContext", "match"]),
       f = null,
       m = null;
-    return Chunk473749.Children.forEach(exports, t => {
+    return n.Children.forEach(e, t => {
       if (null == f && n.isValidElement(t)) {
         let e = t.props,
           {
@@ -87,7 +87,7 @@ class c extends Chunk473749.Component {
           staticContext: d
         }), null != s ? m = n.createElement(s, u) : null != a && (m = a(u)))
       }
-    }), (0, Chunk54381.jsx)(Chunk215569.W, l(h({}, p), {
+    }), (0, s.jsx)(a.W, l(h({}, p), {
       children: m
     }))
   }

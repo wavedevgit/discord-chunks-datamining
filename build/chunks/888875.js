@@ -35,38 +35,38 @@ let y = 10 + Math.random() * (10 * Chunk70956.Z.Millis.SECOND),
   S = false;
 class I extends Chunk147913.Z {
   _initialize() {
-    Chunk675478.DZ.beforeSendCallbacks.push({
+    _.DZ.beforeSendCallbacks.push({
       hasChanges: () => false,
       processProto: () => {
         P(O, false)
       }
-    }), Chunk675478.DZ.beforeSendCallbacks.push({
-      hasChanges: () => Chunk822179.Z.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), _.DZ.beforeSendCallbacks.push({
+      hasChanges: () => d.Z.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         d.Z.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.stickerFrecency = a.ls.create(), e.stickerFrecency.stickers = (0, h.tU)(d.Z.stickerFrecencyWithoutFetchingLatest.usageHistory, 100))
       }
-    }), Chunk675478.DZ.beforeSendCallbacks.push({
-      hasChanges: () => Chunk339085.ZP.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), _.DZ.beforeSendCallbacks.push({
+      hasChanges: () => c.ZP.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         c.ZP.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.emojiFrecency = a.PL.create(), e.emojiReactionFrecency = a.PL.create(), e.emojiFrecency.emojis = (0, h.tU)(c.ZP.emojiFrecencyWithoutFetchingLatest.usageHistory, 100), e.emojiReactionFrecency.emojis = (0, h.tU)(c.ZP.emojiReactionFrecencyWithoutFetchingLatest.usageHistory, 100))
       }
-    }), Chunk675478.DZ.beforeSendCallbacks.push({
-      hasChanges: () => Chunk178106.Z.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), _.DZ.beforeSendCallbacks.push({
+      hasChanges: () => u.Z.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         u.Z.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (i().isEmpty(u.Z.playedSoundHistory) || (e.playedSoundFrecency = a.pL.create(), e.playedSoundFrecency.playedSounds = (0, h.tU)(u.Z.playedSoundHistory, 100)))
       }
-    }), Chunk675478.DZ.beforeSendCallbacks.push({
-      hasChanges: () => Chunk654455.ZP.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), _.DZ.beforeSendCallbacks.push({
+      hasChanges: () => s.ZP.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         s.ZP.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = a.YI.create(), e.applicationCommandFrecency.applicationCommands = (0, h.tU)(s.ZP.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
       }
-    }), Chunk675478.DZ.beforeSendCallbacks.push({
-      hasChanges: () => Chunk822245.Z.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), _.DZ.beforeSendCallbacks.push({
+      hasChanges: () => l.Z.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         l.Z.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationFrecency = a.UY.create(), e.applicationFrecency.applications = (0, h.tU)(l.Z.getApplicationFrecencyWithoutLoadingLatest().usageHistory, E.yP))
       }
-    }), Chunk675478.DZ.beforeSendCallbacks.push({
-      hasChanges: () => Chunk580005.Z.hasPendingUsage() && Chunk581883.Z.hasLoaded(Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+    }), _.DZ.beforeSendCallbacks.push({
+      hasChanges: () => f.Z.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS),
       processProto: e => {
         f.Z.hasPendingUsage() && m.Z.hasLoaded(g.yP.FRECENCY_AND_FAVORITES_SETTINGS) && (e.guildAndChannelFrecency = a.lG.create(), e.guildAndChannelFrecency.guildAndChannels = (0, h.tU)(f.Z.frecencyWithoutFetchingLatest.usageHistory, f.C))
       }

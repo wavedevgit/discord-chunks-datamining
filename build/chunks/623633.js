@@ -9,11 +9,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk944486 = require("./944486.js");
 
 function o() {
-  return (0, Chunk442837.e7)([Chunk944486.Z, Chunk592125.Z], () => {
-    let e = Chunk944486.Z.getVoiceChannelId();
-    if (null != module) {
-      let t = Chunk592125.Z.getChannel(module);
-      if (null == exports ? true : exports.isGuildStageVoice()) return exports
+  return (0, r.e7)([a.Z, i.Z], () => {
+    let e = a.Z.getVoiceChannelId();
+    if (null != e) {
+      let t = i.Z.getChannel(e);
+      if (null == t ? true : t.isGuildStageVoice()) return t
     }
     return null
   })

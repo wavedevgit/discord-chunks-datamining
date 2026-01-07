@@ -53,7 +53,7 @@ class s {
   }
   _processEnd() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    this._processing = false, module && this._minimumTimeRemaining++
+    this._processing = false, e && this._minimumTimeRemaining++
   }
   constructor(e, t) {
     i(this, "_language", true), i(this, "_onChange", true), i(this, "_languageHint", true), i(this, "_shouldProcess", false), i(this, "_processing", false), i(this, "_minimumTimeRemaining", 5), this._language = e, this._languageHint = e, this._onChange = t, t(e)

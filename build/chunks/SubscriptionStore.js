@@ -177,7 +177,7 @@ function G(e, t) {
 }
 class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default)
+    this.waitFor(l.default)
   }
   hasFetchedSubscriptions() {
     return null != m
@@ -190,19 +190,19 @@ class Z extends(r = Chunk442837.ZP.Store) {
   }
   getPremiumSubscription() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return G(Chunk981631.NYc.PREMIUM, e => !(0, o.Q0)(e.planId), module)
+    return G(c.NYc.PREMIUM, e => !(0, o.Q0)(e.planId), e)
   }
   getPremiumTypeSubscription() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return G(Chunk981631.NYc.PREMIUM, true, module)
+    return G(c.NYc.PREMIUM, true, e)
   }
   inReverseTrial() {
-    let e = G(Chunk981631.NYc.PREMIUM, true, true);
-    return null != module && null != module.trialId && !!Chunk474936.h8.includes(module.trialId) && null == module.paymentSourceId
+    let e = G(c.NYc.PREMIUM, true, true);
+    return null != e && null != e.trialId && !!u.h8.includes(e.trialId) && null == e.paymentSourceId
   }
   getSubscriptions() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? h : m
+    return e ? h : m
   }
   getSubscriptionById(e) {
     var t;
@@ -240,7 +240,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
     return C
   }
   getPremiumGroupSubscription() {
-    return G(Chunk981631.NYc.PREMIUM, e => e.hasAnyPremiumGroup, true)
+    return G(c.NYc.PREMIUM, e => e.hasAnyPremiumGroup, true)
   }
 }
 d(Z, "displayName", "SubscriptionStore");

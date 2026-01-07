@@ -11,9 +11,9 @@ var Chunk54381 = require("./54381.js"),
 let o = Chunk473749.createContext(true);
 
 function s() {
-  let e = Chunk473749.useContext(o);
-  if (null == module) throw Error("No PollFocusContextProvider found");
-  return module
+  let e = i.useContext(o);
+  if (null == e) throw Error("No PollFocusContextProvider found");
+  return e
 }
 
 function l(e) {

@@ -22,37 +22,37 @@ var Chunk54381 = require("./54381.js"),
   Chunk970964 = require("./970964.js");
 
 function j() {
-  let e, t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
+  let e, t = (0, l.e7)([d.Z], () => d.Z.getGuild()),
     {
       application: n,
       loading: j
-    } = (0, Chunk725803.Z)(null == exports ? true : exports.id, Chunk674563.wW.GUILD_ROLE_SUBSCRIPTIONS),
-    v = Chunk473749.useRef(null),
-    O = (0, Chunk614342.Z)(null != exports ? exports : true);
-  Chunk473749.useEffect(() => {
-    null != exports && (0, Chunk303737.sO)(exports) && (0, Chunk266454.Q3)(Chunk704215.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
-  }, [exports]);
-  let C = (null == exports ? true : exports.features.has(Chunk981631.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == exports ? true : exports.features.has(Chunk981631.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
-  return e = null == exports || j ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : null != O ? (0, Chunk54381.jsx)(Chunk500395.Z, {
-    guild: exports,
+    } = (0, o.Z)(null == t ? true : t.id, h.wW.GUILD_ROLE_SUBSCRIPTIONS),
+    v = i.useRef(null),
+    O = (0, u.Z)(null != t ? t : true);
+  i.useEffect(() => {
+    null != t && (0, g.sO)(t) && (0, c.Q3)(a.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
+  }, [t]);
+  let C = (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
+  return e = null == t || j ? (0, r.jsx)(s.$jN, {}) : null != O ? (0, r.jsx)(m.Z, {
+    guild: t,
     config: O
-  }) : C ? (0, Chunk54381.jsx)(Chunk975464.Z, {
-    guild: exports
-  }) : (0, Chunk54381.jsx)(Chunk618748.Z, {
-    guild: exports,
-    application: require
-  }), (0, Chunk54381.jsx)("div", {
-    className: Chunk970964.settingsColumn,
-    children: (0, Chunk54381.jsx)("div", {
-      className: Chunk970964.settingsContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.w0Z, {
-        className: Chunk970964.settingsScroller,
-        children: (0, Chunk54381.jsx)("main", {
+  }) : C ? (0, r.jsx)(b.Z, {
+    guild: t
+  }) : (0, r.jsx)(f.Z, {
+    guild: t,
+    application: n
+  }), (0, r.jsx)("div", {
+    className: x.settingsColumn,
+    children: (0, r.jsx)("div", {
+      className: x.settingsContainer,
+      children: (0, r.jsx)(s.w0Z, {
+        className: x.settingsScroller,
+        children: (0, r.jsx)("main", {
           ref: v,
-          className: Chunk970964.settingsContent,
-          children: (0, Chunk54381.jsx)(Chunk481060.JcV, {
+          className: x.settingsContent,
+          children: (0, r.jsx)(s.JcV, {
             containerRef: v,
-            children: module
+            children: e
           })
         })
       })

@@ -368,11 +368,11 @@ function k(e) {
 }
 
 function U() {
-  Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
+  r.ZP.trackWithMetadata(p.rMx.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
 }
 
 function G() {
-  Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
+  r.ZP.trackWithMetadata(p.rMx.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
 }
 
 function Z(e) {
@@ -385,10 +385,10 @@ function Z(e) {
 }
 
 function F() {
-  Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.OPEN_MODAL, {
+  r.ZP.trackWithMetadata(p.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {
-      section: Chunk981631.jXE.CHANNEL_WELCOME_CTA
+      section: p.jXE.CHANNEL_WELCOME_CTA
     }
   })
 }

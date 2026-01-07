@@ -26,28 +26,28 @@ class c extends Chunk473749.Component {
         zIndex: a
       }
     } = this;
-    switch (Chunk473749) {
-      case Chunk981631._vf.TOP_LEFT:
-      case Chunk981631._vf.BOTTOM_LEFT:
+    switch (r) {
+      case o._vf.TOP_LEFT:
+      case o._vf.BOTTOM_LEFT:
         e = 0;
         break;
       default:
         t = 0
     }
-    switch (Chunk473749) {
-      case Chunk981631._vf.BOTTOM_LEFT:
-      case Chunk981631._vf.BOTTOM_RIGHT:
+    switch (r) {
+      case o._vf.BOTTOM_LEFT:
+      case o._vf.BOTTOM_RIGHT:
         n = 0;
         break;
       default:
         i = 0
     }
     return {
-      left: module,
-      right: exports,
-      bottom: require,
-      top: Chunk54381,
-      zIndex: Chunk13245
+      left: e,
+      right: t,
+      bottom: n,
+      top: i,
+      zIndex: a
     }
   }
   render() {
@@ -81,7 +81,7 @@ class c extends Chunk473749.Component {
       }
       return r
     }(this.props.notification.props, ["renderFooter", "onNotificationShow", "onDismissClick", "onNotificationClick", "onConfirmClick", "onCancelClick"]);
-    return (0, Chunk54381.jsx)(Chunk593481.ZP, (e = function(e) {
+    return (0, i.jsx)(s.ZP, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -93,24 +93,24 @@ class c extends Chunk473749.Component {
       }
       return e
     }({}, f), t = t = {
-      locked: require,
+      locked: n,
       onNotificationShow: this.handleNotificationShow,
-      onDismissClick: null != Chunk981631 ? this.handleDismissClick : true,
+      onDismissClick: null != o ? this.handleDismissClick : true,
       onNotificationClick: null != c ? this.handleNotificationClick : null,
       onConfirmClick: null != d ? this.handleConfirmClick : null,
       onCancelClick: null != u ? this.handleCancelClick : null,
       renderFooter: this.renderFooter,
-      expand: !require
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+      expand: !n
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
         n.push.apply(n, i)
       }
       return n
-    })(Object(exports)).forEach(function(n) {
+    })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), module))
+    }), e))
   }
   constructor(...e) {
     super(...e), l(this, "handleNotificationShow", () => {

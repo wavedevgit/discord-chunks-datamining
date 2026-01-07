@@ -47,7 +47,7 @@ class m extends Chunk473749.Component {
     let {
       hide: e
     } = this.props;
-    module ? this.state.translateY.setValue(1) : this.state.translateY.setValue(0)
+    e ? this.state.translateY.setValue(1) : this.state.translateY.setValue(0)
   }
   componentDidUpdate(e) {
     let {
@@ -64,9 +64,9 @@ class m extends Chunk473749.Component {
     let {
       translateY: e
     } = this.state;
-    if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) return void module.setValue(0);
+    if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) return void e.setValue(0);
     this._timeout = setTimeout(() => {
-      Chunk748780.Z.spring(module, g({
+      u.Z.spring(e, g({
         toValue: 0
       }, b)).start()
     }, 100)
@@ -75,8 +75,8 @@ class m extends Chunk473749.Component {
     let {
       translateY: e
     } = this.state;
-    if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) return void module.setValue(1);
-    Chunk748780.Z.spring(module, g({
+    if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) return void e.setValue(1);
+    u.Z.spring(e, g({
       toValue: 1
     }, b)).start()
   }
@@ -87,16 +87,16 @@ class m extends Chunk473749.Component {
       hide: n,
       onClick: r
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: o()(Chunk491455.bar, module, {
-        [Chunk491455.hidden]: require
+    return (0, i.jsx)(u.Z.div, {
+      className: o()(h.bar, e, {
+        [h.hidden]: n
       }),
       onClick: r,
       style: this.getAnimatedStyle(),
-      "aria-hidden": require,
-      children: (0, Chunk54381.jsx)("span", {
-        className: Chunk491455.text,
-        children: exports
+      "aria-hidden": n,
+      children: (0, i.jsx)("span", {
+        className: h.text,
+        children: t
       })
     })
   }
@@ -108,9 +108,9 @@ class m extends Chunk473749.Component {
     } = this.props;
     return {
       transform: [{
-        translateY: module.interpolate({
+        translateY: e.interpolate({
           inputRange: [0, 1],
-          outputRange: ["0%", exports ? "180%" : "-180%"]
+          outputRange: ["0%", t ? "180%" : "-180%"]
         })
       }]
     }
@@ -147,14 +147,14 @@ class y extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       reducedMotion: d
     } = this.context;
-    return (0, Chunk54381.jsx)("div", {
-      className: null != Chunk120356 ? Chunk120356 : true,
-      children: (0, Chunk54381.jsx)(m, {
-        hide: true === c || null == module && null == exports,
-        className: o()(Chunk954955, null != exports ? Chunk491455.mention : Chunk491455.unread),
-        text: null != exports ? require : r,
-        reverse: Chunk473749,
-        animate: Chunk748780 && !Chunk902704.enabled,
+    return (0, i.jsx)("div", {
+      className: null != a ? a : true,
+      children: (0, i.jsx)(m, {
+        hide: true === c || null == e && null == t,
+        className: o()(s, null != t ? h.mention : h.unread),
+        text: null != t ? n : r,
+        reverse: l,
+        animate: u && !d.enabled,
         onClick: this.handleClick
       })
     })

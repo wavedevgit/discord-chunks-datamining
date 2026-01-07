@@ -76,9 +76,9 @@ class h extends(r = Chunk473749.Component) {
     let {
       reducedMotion: e
     } = this.context;
-    return Chunk748780.Z.accelerate({
+    return l.Z.accelerate({
       opacity: this.animation,
-      transform: module.enabled ? true : [{
+      transform: e.enabled ? true : [{
         translateY: this.animation.interpolate({
           inputRange: [0, 1],
           outputRange: ["150%", "0%"]
@@ -91,10 +91,10 @@ class h extends(r = Chunk473749.Component) {
       className: e,
       children: t
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: s()(module, Chunk10874.slider),
+    return (0, i.jsx)(l.Z.div, {
+      className: s()(e, u.slider),
       style: this.getAnimatedStyle(),
-      children: exports
+      children: t
     })
   }
   constructor(...e) {

@@ -17,44 +17,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function _() {
-  let e = (0, Chunk442837.e7)([Chunk778825.Z], () => Chunk778825.Z.getIsSubmitDisabled()),
-    t = (0, Chunk442837.e7)([Chunk778825.Z], () => Chunk778825.Z.getGuild()),
-    n = (0, Chunk442837.e7)([Chunk778825.Z], () => Chunk778825.Z.getErrors()),
-    [_, m] = Chunk473749.useState(false),
-    h = Chunk473749.useMemo(() => (null == require ? true : require.message) != null ? null == require ? true : require.message : (null == require ? true : require.guild_tag) !== true && require.guild_tag.length > 0 ? require.guild_tag[0] : Object.keys(null != require ? require : {}).length > 0 ? Chunk388032.intl.string(Chunk388032.t.s35OuK) : null, [require]),
-    g = Chunk473749.useCallback(async () => {
+  let e = (0, a.e7)([f.Z], () => f.Z.getIsSubmitDisabled()),
+    t = (0, a.e7)([f.Z], () => f.Z.getGuild()),
+    n = (0, a.e7)([f.Z], () => f.Z.getErrors()),
+    [_, m] = i.useState(false),
+    h = i.useMemo(() => (null == n ? true : n.message) != null ? null == n ? true : n.message : (null == n ? true : n.guild_tag) !== true && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(null != n ? n : {}).length > 0 ? p.intl.string(p.t.s35OuK) : null, [n]),
+    g = i.useCallback(async () => {
       var e, n, r;
       m(true);
-      let i = Chunk778825.Z.getAllPending(),
-        a = (0, Chunk164946.Jo)(Chunk473749),
-        o = (0, Chunk164946.g9)(Chunk473749),
+      let i = f.Z.getAllPending(),
+        a = (0, s.Jo)(i),
+        o = (0, s.g9)(i),
         p = true;
-      if (Object.keys(Chunk442837).length > 0) {
-        let r = await (0, Chunk18438.iq)(null == exports ? true : exports.id, Chunk442837);
-        if (p = Chunk388032 && null != (e = null == Chunk54381 ? true : Chunk54381.ok) && module, null == Chunk54381 ? true : Chunk54381.ok) {
-          let e = Chunk54381.body;
-          true !== Chunk473749.pendingAvatar && (0, Chunk330055.Z)({
+      if (Object.keys(a).length > 0) {
+        let r = await (0, d.iq)(null == t ? true : t.id, a);
+        if (p = p && null != (e = null == r ? true : r.ok) && e, null == r ? true : r.ok) {
+          let e = r.body;
+          true !== i.pendingAvatar && (0, c.Z)({
             isGuildProfile: true,
-            avatarHash: module.avatar,
-            avatarId: Chunk442837.avatarId,
-            avatarAssetOrigin: null == (n = Chunk473749.pendingAvatar) ? true : require.assetOrigin
-          }), (0, Chunk18438.IO)()
+            avatarHash: e.avatar,
+            avatarId: a.avatarId,
+            avatarAssetOrigin: null == (n = i.pendingAvatar) ? true : n.assetOrigin
+          }), (0, d.IO)()
         }
       }
-      if (Object.keys(Chunk796027).length > 0) {
-        let e = await (0, Chunk350327.Z)(Chunk796027, null == exports ? true : exports.id);
-        p = Chunk388032 && null != (r = null == module ? true : module.ok) && Chunk54381, (null == module ? true : module.ok) ? (0, Chunk18438.pG)() : (0, Chunk647699.v)()
+      if (Object.keys(o).length > 0) {
+        let e = await (0, l.Z)(o, null == t ? true : t.id);
+        p = p && null != (r = null == e ? true : e.ok) && r, (null == e ? true : e.ok) ? (0, d.pG)() : (0, u.v)()
       }
-      Chunk388032 && (0, Chunk18438.b9)(), m(false)
-    }, [null == exports ? true : exports.id]),
-    E = Chunk473749.useCallback(() => {
-      (0, Chunk18438.W3)()
+      p && (0, d.b9)(), m(false)
+    }, [null == t ? true : t.id]),
+    E = i.useCallback(() => {
+      (0, d.W3)()
     }, []);
-  return (0, Chunk54381.jsx)(Chunk796027.Z, {
+  return (0, r.jsx)(o.Z, {
     submitting: _,
     onSave: g,
     onReset: E,
-    disabled: module,
+    disabled: e,
     errorMessage: null != h ? h : true
   })
 }

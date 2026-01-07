@@ -14,12 +14,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.qs)(Chunk313789.n.DATA_USAGE_PERSONALIZATION_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.MNKzyg),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t["eQL/Mr"], {
-    helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_USED_FOR_RECOMMENDED)
+  useTitle: () => c.intl.string(c.t.MNKzyg),
+  useSubtitle: () => c.intl.format(c.t["eQL/Mr"], {
+    helpdeskArticle: a.Z.getArticleURL(S.BhN.DATA_USED_FOR_RECOMMENDED)
   }),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION))
+    return (0, i.e7)([r.Z], () => r.Z.hasConsented(S.pjP.PERSONALIZATION))
   },
   setValue: function(t) {
     t ? (0, l.g)([S.pjP.PERSONALIZATION], []).catch(T.S) : (0, T.V)({

@@ -26,35 +26,35 @@ var Chunk54381 = require("./54381.js"),
   Chunk146927 = require("./146927.js");
 
 function C() {
-  let e = Chunk473749.useRef((0, Chunk726115.PM)()),
+  let e = i.useRef((0, f.PM)()),
     {
       onScroll: t,
       scrollPosition: n,
       resetScrollPosition: C
-    } = (0, Chunk979233.M)(),
+    } = (0, a.M)(),
     {
       tabs: S,
       selectedTab: T,
       setSelectedTab: N
-    } = (0, Chunk29086.Y)(),
-    j = (0, Chunk726115.lg)(T),
-    P = !Chunk128449.MU.has(T),
+    } = (0, b.Y)(),
+    j = (0, f.lg)(T),
+    P = !O.MU.has(T),
     {
       searchQuery: x,
       onSearchTextChange: A,
       onClearSearch: Z,
       onSearchSubmit: w,
       isSearchVisible: L
-    } = (0, Chunk28494.H)({
-      loadId: module.current
+    } = (0, h.H)({
+      loadId: e.current
     }),
-    R = Chunk859921.Z.useField("searchBarState"),
+    R = g.Z.useField("searchBarState"),
     {
       onTabsAvailableWidthChange: D,
       onCollapsedSearchBarClick: M,
       onSearchBarBlur: k,
       tabsClassName: U
-    } = (0, Chunk88693.U)({
+    } = (0, o.U)({
       isSearchBarVisible: P,
       isSearchBarEmpty: "" === x.trim(),
       searchBarState: R,
@@ -62,73 +62,73 @@ function C() {
         searchBarState: e
       })
     }),
-    G = Chunk164991.Z.useField("fetchedQuery"),
-    H = Chunk473749.useCallback(e => {
+    G = d.Z.useField("fetchedQuery"),
+    H = i.useCallback(e => {
       N(e), L && Z()
     }, [L, Z, N]),
-    B = Chunk473749.useMemo(() => L ? S.filter(e => {
+    B = i.useMemo(() => L ? S.filter(e => {
       let {
         id: t
       } = e;
       return !O.MU.has(t)
     }) : S, [S, L]),
-    V = Chunk473749.useRef(new Chunk444324.Z(j)),
+    V = i.useRef(new p.Z(j)),
     {
       onGuildCardSeen: F,
       onGuildCardClick: z
-    } = (0, Chunk750910.H)({
+    } = (0, m.H)({
       guildDiscoveryCardSeenManager: V.current,
-      loadId: module.current
+      loadId: e.current
     });
-  return Chunk473749.useEffect(() => {
-    V.current.flushSeenGuilds(module.current)
-  }, [j]), Chunk473749.useEffect(() => {
+  return i.useEffect(() => {
+    V.current.flushSeenGuilds(e.current)
+  }, [j]), i.useEffect(() => {
     C()
-  }, [T, C]), Chunk473749.useEffect(() => {
-    L || Chunk164991.Z.setState({
+  }, [T, C]), i.useEffect(() => {
+    L || d.Z.setState({
       scrollPosition: null
     })
-  }, [L]), (0, Chunk54381.jsxs)("div", {
-    className: Chunk146927.container,
-    children: [(0, Chunk54381.jsxs)(Chunk611928.ZP, {
-      variant: L ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
-      children: [!L && (0, Chunk54381.jsx)(Chunk611928.z6, {
-        scrollPosition: require
-      }), L ? (0, Chunk54381.jsx)(Chunk611928.Cm, {
-        icon: Chunk481060.j9r,
+  }, [L]), (0, r.jsxs)("div", {
+    className: I.container,
+    children: [(0, r.jsxs)(s.ZP, {
+      variant: L ? s._6.RELATIVE : s._6.OVERLAY,
+      children: [!L && (0, r.jsx)(s.z6, {
+        scrollPosition: n
+      }), L ? (0, r.jsx)(s.Cm, {
+        icon: l.j9r,
         onClick: Z
-      }) : (0, Chunk54381.jsx)(Chunk611928.aV, {
-        icon: Chunk481060.QTo
-      }), !L && (0, Chunk54381.jsx)(c.Z, {
+      }) : (0, r.jsx)(s.aV, {
+        icon: l.QTo
+      }), !L && (0, r.jsx)(c.Z, {
         className: U,
         tabs: B,
         selectedTab: L ? null : T,
         onTabSelect: H,
         onAvailableWidthChange: D
-      }), L && (0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), L && (0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
-        className: Chunk146927.searchResultsHeader,
-        children: Chunk388032.intl.format(Chunk388032.t.zHdzqW, {
+        className: I.searchResultsHeader,
+        children: y.intl.format(y.t.zHdzqW, {
           query: G
         })
-      }), P && (0, Chunk54381.jsx)(Chunk680180.Z, {
+      }), P && (0, r.jsx)(u.Z, {
         query: x,
-        placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
+        placeholder: y.intl.string(y.t["5h0QOP"]),
         onTextChange: A,
         onClear: Z,
         onSubmit: w,
         onCollapsedClick: M,
-        state: L ? Chunk49898.GlobalDiscoverySearchBarState.DEFAULT : R,
+        state: L ? v.GlobalDiscoverySearchBarState.DEFAULT : R,
         onBlur: k
       })]
-    }), L ? (0, Chunk54381.jsx)(Chunk273596.Z, {
-      loadId: module.current,
+    }), L ? (0, r.jsx)(E.Z, {
+      loadId: e.current,
       onGuildCardClick: z,
       onGuildCardSeen: F
-    }) : (0, Chunk54381.jsx)(Chunk590771.Z, {
+    }) : (0, r.jsx)(_.Z, {
       selectedTab: T,
-      onScroll: exports,
+      onScroll: t,
       onGuildCardClick: z,
       onGuildCardSeen: F
     })]

@@ -74,9 +74,9 @@ class R extends(r = Chunk473749.Component) {
       },
       analyticsSection: t
     } = this.props;
-    return P(A({}, module), {
-      section: null != exports ? exports : Chunk981631.jXE.APPLICATION_EMBED,
-      object: Chunk981631.qAy.CARD
+    return P(A({}, e), {
+      section: null != t ? t : S.jXE.APPLICATION_EMBED,
+      object: S.qAy.CARD
     })
   }
   componentDidMount() {
@@ -85,15 +85,15 @@ class R extends(r = Chunk473749.Component) {
       skuId: t,
       storeListing: n
     } = this.props;
-    (null == module || null == require) && (0, Chunk558381.km)(exports)
+    (null == e || null == n) && (0, c.km)(t)
   }
   renderViewInStoreButton() {
-    return (0, Chunk54381.jsx)(Chunk755721.zx.Link, {
+    return (0, i.jsx)(l.zx.Link, {
       to: this.getStoreListingLocation(),
-      className: Chunk961482.actionButton,
-      color: Chunk755721.zx.Colors.GREEN,
-      size: Chunk755721.zx.Sizes.SMALL,
-      children: Chunk388032.intl.string(Chunk388032.t["W+NB90"])
+      className: T.actionButton,
+      color: l.zx.Colors.GREEN,
+      size: l.zx.Sizes.SMALL,
+      children: I.intl.string(I.t["W+NB90"])
     })
   }
   render() {
@@ -103,20 +103,20 @@ class R extends(r = Chunk473749.Component) {
       width: n,
       fetchFailed: r,
       renderFallback: a
-    } = this.props, s = require > Chunk568836.aL;
-    return null == module || null == exports ? r ? Chunk473749() : (0, Chunk54381.jsx)(Chunk568836.OR, {
-      isHorizontal: Chunk442837
-    }) : module.productLine === Chunk981631.POd.COLLECTIBLES ? (0, Chunk54381.jsx)(Chunk410575.Z, {
-      section: Chunk981631.jXE.APPLICATION_EMBED,
-      children: this.renderApplicationTile(module, exports)
-    }) : (0, Chunk54381.jsx)(Chunk410575.Z, {
-      section: Chunk981631.jXE.APPLICATION_EMBED,
-      children: (0, Chunk54381.jsx)(Chunk319498.rU, {
+    } = this.props, s = n > _.aL;
+    return null == e || null == t ? r ? a() : (0, i.jsx)(_.OR, {
+      isHorizontal: s
+    }) : e.productLine === S.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
+      section: S.jXE.APPLICATION_EMBED,
+      children: this.renderApplicationTile(e, t)
+    }) : (0, i.jsx)(u.Z, {
+      section: S.jXE.APPLICATION_EMBED,
+      children: (0, i.jsx)(o.rU, {
         onClick: this.handleLinkClick,
         to: this.getStoreListingLocation(),
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
-        children: this.renderApplicationTile(module, exports)
+        children: this.renderApplicationTile(e, t)
       })
     })
   }

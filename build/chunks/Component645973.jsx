@@ -13,15 +13,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk663618 = require("./663618.js");
 
 function u() {
-  let e = Chunk473749.useRef(null);
-  return (0, Chunk54381.jsx)("div", {
-    ref: module,
-    className: l()(Chunk663618.panel, Chunk886795.panel),
-    children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+  let e = r.useRef(null);
+  return (0, a.jsx)("div", {
+    ref: e,
+    className: l()(d.panel, c.panel),
+    children: (0, a.jsx)(s.Button, {
       variant: "primary",
       size: "sm",
       text: "Reset Uploaded Key Versions Cache",
-      onClick: Chunk90641.Z.clearUploadedKeyVersions
+      onClick: o.Z.clearUploadedKeyVersions
     })
   })
 }

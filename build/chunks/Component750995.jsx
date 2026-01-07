@@ -17,12 +17,12 @@ var Chunk704215 = require("./704215.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js");
-class m extends Chunk317770.Z {
+class h extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
+    a.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect)
+    a.Z.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect)
   }
   handleChannelSelect(e) {
     let {
@@ -39,7 +39,7 @@ class m extends Chunk317770.Z {
       })(t)) return;
     (0, f.qz)(), (0, c.kk)(i.z.FORUM_CHANNEL_UPSELL_MODAL);
     let a = function() {
-      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : h.L.DISMISS;
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : m.L.DISMISS;
       (0, s.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
         dismissAction: e
       })
@@ -86,10 +86,10 @@ class m extends Chunk317770.Z {
       }
     }, {
       onCloseCallback: () => (0, s.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
-        dismissAction: h.L.DISMISS
+        dismissAction: m.L.DISMISS
       }),
       onCloseRequest: g.VqG
     })
   }
 }
-let b = new m
+let b = new h

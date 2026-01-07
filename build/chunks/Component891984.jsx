@@ -9,9 +9,9 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk79243 = require("./79243.js");
 let o = function() {
-  return (0, Chunk54381.jsx)(Chunk481060.Fbu, {
+  return (0, r.jsx)(i.Fbu, {
     size: "md",
     color: "currentColor",
-    className: Chunk79243.icon
+    className: a.icon
   })
 }

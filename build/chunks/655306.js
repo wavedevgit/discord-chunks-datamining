@@ -47,7 +47,7 @@ class N extends Chunk47770.Z {
   getWantsLevel() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
       t = this.getVideoParticipantCount();
-    return this.ladder.getMaxSinkValue(exports, module)
+    return this.ladder.getMaxSinkValue(t, e)
   }
   userVideoDisabled(e) {
     return this.offscreenDisabledUsers[e]
@@ -106,7 +106,7 @@ class N extends Chunk47770.Z {
     return delete this.audioSsrcs[e], delete this.videoSsrcs[e], this.participants.delete(e), delete this.streamPixelCounts[this.streamIds[e]], delete this.streamIds[e], this.update(Array.from(this.participants))
   }
   reset() {
-    this.setConnection(null, false), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.streamPixelCounts = {}, this.latestWants = O, Chunk798681.w.off(Chunk798681.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged)
+    this.setConnection(null, false), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.streamPixelCounts = {}, this.latestWants = O, m.w.off(m.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged)
   }
   setSelectedParticipant(e) {
     if (e === this.selectedParticipantId) return this.latestWants;
@@ -139,9 +139,9 @@ class N extends Chunk47770.Z {
     let e = 0;
     for (let n of Object.keys(this.videoSsrcs)) {
       var t;
-      !(null == (t = this.connection) ? true : exports.getLocalVideoDisabled(require)) && module++
+      !(null == (t = this.connection) ? true : t.getLocalVideoDisabled(n)) && e++
     }
-    return module
+    return e
   }
   getOffscreenTimeoutMs() {
     return this.isStageChannel ? T : I

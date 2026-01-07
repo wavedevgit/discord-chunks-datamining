@@ -15,11 +15,11 @@ let c = new Chunk710845.Z("libdiscore"),
 async function d() {
   if (!u) {
     try {
-      await (0, Chunk511495.e)();
-      let e = (0, Chunk668757.rs)(6, 7);
-      c.info("The answer for life the universe and everything is:", module), f()
+      await (0, i.e)();
+      let e = (0, r.rs)(6, 7);
+      c.info("The answer for life the universe and everything is:", e), f()
     } catch (e) {
-      _(module)
+      _(e)
     }
     u = true
   }
@@ -27,12 +27,12 @@ async function d() {
 
 function f() {
   let e = [];
-  Chunk894276.Re.forEach(t => {
+  s.Re.forEach(t => {
     let n = t.getEnabledFeatureName();
     null != n && e.push(n)
-  }), Chunk626135.default.track(Chunk981631.rMx.LIBDISCORE_LOADED, {
+  }), o.default.track(l.rMx.LIBDISCORE_LOADED, {
     success: true,
-    experimental_features: module
+    experimental_features: e
   })
 }
 

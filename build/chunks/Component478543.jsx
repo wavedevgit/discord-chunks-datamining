@@ -46,16 +46,16 @@ function O(e) {
 }
 
 function v() {
-  return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk80558.buildInfo,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: o()(Chunk80558.barLoader, Chunk80558.barTitle)
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk80558.barLoader
+  return (0, r.jsxs)(i.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: b.buildInfo,
+      children: [(0, r.jsx)("div", {
+        className: o()(b.barLoader, b.barTitle)
+      }), (0, r.jsx)("div", {
+        className: b.barLoader
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk80558.buttonLoader
+    }), (0, r.jsx)("div", {
+      className: b.buttonLoader
     })]
   })
 }

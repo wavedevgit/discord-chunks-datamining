@@ -33,19 +33,19 @@ class p extends(r = Chunk473749.PureComponent) {
       type: r = f.BLOCK,
       style: a
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: s()(exports, r),
-      style: Chunk473749,
-      children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
+    return (0, i.jsxs)("div", {
+      className: s()(t, r),
+      style: a,
+      children: [(0, i.jsxs)(l.Text, {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
-        className: Chunk216746.pro,
-        children: [Chunk388032.intl.string(Chunk388032.t["8tvIiN"]), ":"]
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: s()(Chunk216746.tip, require),
+        className: u.pro,
+        children: [c.intl.string(c.t["8tvIiN"]), ":"]
+      }), (0, i.jsx)(l.Text, {
+        className: s()(u.tip, n),
         variant: "text-sm/normal",
-        children: module
+        children: e
       })]
     })
   }

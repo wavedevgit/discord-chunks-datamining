@@ -23,7 +23,7 @@ let t = async function() {
 
   function E() {
     var r = w.buffer;
-    module.HEAP8 = u = new Int8Array(exports), module.HEAP16 = s = new Int16Array(exports), module.HEAPU8 = c = new Uint8Array(exports), module.HEAPU16 = new Uint16Array(exports), module.HEAP32 = f = new Int32Array(exports), module.HEAPU32 = l = new Uint32Array(exports), module.HEAPF32 = h = new Float32Array(exports), module.HEAPF64 = b = new Float64Array(exports), d = new BigInt64Array(exports), new BigUint64Array(exports)
+    n.HEAP8 = u = new Int8Array(r), n.HEAP16 = s = new Int16Array(r), n.HEAPU8 = c = new Uint8Array(r), n.HEAPU16 = new Uint16Array(r), n.HEAP32 = f = new Int32Array(r), n.HEAPU32 = l = new Uint32Array(r), n.HEAPF32 = h = new Float32Array(r), n.HEAPF64 = b = new Float64Array(r), d = new BigInt64Array(r), new BigUint64Array(r)
   }
 
   function R(r) {
@@ -67,17 +67,17 @@ let t = async function() {
     var t = {
       a: K
     };
-    return module.instantiateWasm ? new Promise((e, i) => {
+    return n.instantiateWasm ? new Promise((e, i) => {
       n.instantiateWasm(t, (n, t) => {
         e(r(n, t))
       })
     }) : (null != m || (m = function() {
-      if (module.locateFile) {
+      if (n.locateFile) {
         var r;
-        return r = "webp_wasm.wasm", module.locateFile ? module.locateFile(exports, y) : y + exports
+        return r = "webp_wasm.wasm", n.locateFile ? n.locateFile(r, y) : y + r
       }
-      return new URL(require("./432362.js"), require.b).href
-    }()), exports((await C(i, m, t)).instance))
+      return new URL(e(432362), e.b).href
+    }()), r((await C(i, m, t)).instance))
   }
   var S = r => {
       for (; r.length > 0;) r.shift()(n)
@@ -186,15 +186,15 @@ let t = async function() {
         return 0 !== f && p(f), "string" === r ? j(n) : "boolean" === r ? !!n : n
       }(b)
     };
-  if (module.noExitRuntime && module.noExitRuntime, module.print && (P = module.print), module.printErr && (_ = module.printErr), module.wasmBinary && (i = module.wasmBinary), module.arguments && module.arguments, module.thisProgram && module.thisProgram, module.preInit)
-    for ("function" == typeof module.preInit && (module.preInit = [module.preInit]); module.preInit.length > 0;) module.preInit.shift()();
-  module.ccall = J, module.cwrap = (n, r, e, t) => {
+  if (n.noExitRuntime && n.noExitRuntime, n.print && (P = n.print), n.printErr && (_ = n.printErr), n.wasmBinary && (i = n.wasmBinary), n.arguments && n.arguments, n.thisProgram && n.thisProgram, n.preInit)
+    for ("function" == typeof n.preInit && (n.preInit = [n.preInit]); n.preInit.length > 0;) n.preInit.shift()();
+  n.ccall = J, n.cwrap = (n, r, e, t) => {
     var i = !e || e.every(n => "number" === n || "boolean" === n);
     return "string" !== r && i && !t ? z(n) : function() {
       for (var i = arguments.length, a = Array(i), o = 0; o < i; o++) a[o] = arguments[o];
       return J(n, r, e, a, t)
     }
-  }, module.setValue = function(n, r) {
+  }, n.setValue = function(n, r) {
     let e = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "i8";
     switch (e.endsWith("*") && (e = "*"), e) {
       case "i1":
@@ -222,7 +222,7 @@ let t = async function() {
       default:
         R("invalid type for setValue: ".concat(e))
     }
-  }, module.getValue = function(n) {
+  }, n.getValue = function(n) {
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "i8";
     switch (r.endsWith("*") && (r = "*"), r) {
       case "i1":
@@ -243,7 +243,7 @@ let t = async function() {
       default:
         R("invalid type for getValue: ".concat(r))
     }
-  }, module.UTF8ToString = j;
+  }, n.UTF8ToString = j;
   var K = {
     c: n => {
       var r = c.length;
@@ -266,20 +266,20 @@ let t = async function() {
       return l[t >> 2] = i, 0
     }
   };
-  if (A = await F(), module.preRun)
-    for ("function" == typeof module.preRun && (module.preRun = [module.preRun]); module.preRun.length;) T(module.preRun.shift());
+  if (A = await F(), n.preRun)
+    for ("function" == typeof n.preRun && (n.preRun = [n.preRun]); n.preRun.length;) T(n.preRun.shift());
 
   function Q() {
     var r;
-    if (module.calledRun = true, !I) {
-      if (W = true, A.e(), null == a || a(module), null == (r = module.onRuntimeInitialized) || exports.call(module), module.postRun)
-        for ("function" == typeof module.postRun && (module.postRun = [module.postRun]); module.postRun.length;) B(module.postRun.shift());
+    if (n.calledRun = true, !I) {
+      if (W = true, A.e(), null == a || a(n), null == (r = n.onRuntimeInitialized) || r.call(n), n.postRun)
+        for ("function" == typeof n.postRun && (n.postRun = [n.postRun]); n.postRun.length;) B(n.postRun.shift());
       S(x)
     }
   }
-  return S(D), module.setStatus ? (module.setStatus("Running..."), setTimeout(() => {
-    setTimeout(() => module.setStatus(""), 1), Q()
-  }, 1)) : Q(), W ? module : new Promise((n, r) => {
+  return S(D), n.setStatus ? (n.setStatus("Running..."), setTimeout(() => {
+    setTimeout(() => n.setStatus(""), 1), Q()
+  }, 1)) : Q(), W ? n : new Promise((n, r) => {
     a = n, o = r
   })
 }

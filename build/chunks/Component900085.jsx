@@ -74,26 +74,26 @@ function F(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = () => (0, Chunk54381.jsxs)("div", {
-  className: Chunk720578.emptyState,
-  children: [(0, Chunk54381.jsx)("div", {
-    className: Chunk720578.emptyStateNote,
-    children: Chunk388032.intl.string(Chunk388032.t.bpbATE)
-  }), (0, Chunk54381.jsx)("div", {
-    className: Chunk720578.emptyStateCTA,
-    children: (0, Chunk54381.jsx)(Chunk481060.eee, {
-      href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUICK_SWITCHER_TUTORIAL),
-      children: Chunk388032.intl.string(Chunk388032.t["4iPfEO"])
+let V = () => (0, i.jsxs)("div", {
+  className: G.emptyState,
+  children: [(0, i.jsx)("div", {
+    className: G.emptyStateNote,
+    children: k.intl.string(k.t.bpbATE)
+  }), (0, i.jsx)("div", {
+    className: G.emptyStateCTA,
+    children: (0, i.jsx)(d.eee, {
+      href: w.Z.getArticleURL(L.BhN.QUICK_SWITCHER_TUTORIAL),
+      children: k.intl.string(k.t["4iPfEO"])
     })
   })]
 });
 class H extends(r = Chunk473749.Component) {
   render() {
-    let e = Chunk430824.Z.getGuild(this.props.channel.guild_id);
-    return (0, Chunk54381.jsx)(Chunk415795.$W, F(B({}, this.props), {
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk720578.miscContainer,
-        children: null != module ? module.name : null
+    let e = x.Z.getGuild(this.props.channel.guild_id);
+    return (0, i.jsx)(R.$W, F(B({}, this.props), {
+      children: (0, i.jsx)("div", {
+        className: G.miscContainer,
+        children: null != e ? e.name : null
       })
     }))
   }
@@ -161,10 +161,10 @@ function Q(e, t, n) {
 }
 class X extends Chunk473749.PureComponent {
   componentDidMount() {
-    Chunk714338.Z.disable(), Chunk714338.Z.enableTemp(Chunk134616.u)
+    p.Z.disable(), p.Z.enableTemp(h.u)
   }
   componentWillUnmount() {
-    Chunk714338.Z.disableTemp(), Chunk714338.Z.enable()
+    p.Z.disableTemp(), p.Z.enable()
   }
   componentDidUpdate(e, t) {
     let {
@@ -184,7 +184,7 @@ class X extends Chunk473749.PureComponent {
     }))
   }
   close() {
-    (0, Chunk51596.Cp)()
+    (0, T.Cp)()
   }
   search(e) {
     this.setState({
@@ -197,23 +197,23 @@ class X extends Chunk473749.PureComponent {
       results: t
     } = this.props, {
       query: n
-    } = this.state, r = exports.length > 0 && "" !== require;
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk459273.d9, {
-        event: Chunk981631.CkL.GLOBAL_CLIPBOARD_PASTE,
+    } = this.state, r = t.length > 0 && "" !== n;
+    return (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(N.d9, {
+        event: L.CkL.GLOBAL_CLIPBOARD_PASTE,
         handler: this.handleGlobalPaste
-      }), (0, Chunk54381.jsx)(Chunk481060.tEY, {
-        children: (0, Chunk54381.jsx)("input", {
-          className: Chunk720578.input,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.ZvKwYa),
+      }), (0, i.jsx)(d.tEY, {
+        children: (0, i.jsx)("input", {
+          className: G.input,
+          "aria-label": k.intl.string(k.t.ZvKwYa),
           ref: this.inputRef,
           type: "text",
           role: "combobox",
           "aria-controls": this._listId,
           "aria-expanded": r,
-          "aria-activedescendant": r ? this.getRowId(module) : true,
+          "aria-activedescendant": r ? this.getRowId(e) : true,
           "aria-autocomplete": "list",
-          placeholder: Chunk388032.intl.string(Chunk388032.t.VtvewW),
+          placeholder: k.intl.string(k.t.VtvewW),
           onChange: this.handleInputChange,
           onKeyDown: this.handleKeyDown,
           value: this.state.query,
@@ -233,23 +233,23 @@ class X extends Chunk473749.PureComponent {
       } = this.state, {
         results: t
       } = this.props;
-      return 0 === exports.length && module.length > 0 ? (0, Chunk54381.jsx)(V, {}) : 0 === exports.length ? null : (0, Chunk54381.jsx)(Chunk481060._2F, {
+      return 0 === t.length && e.length > 0 ? (0, i.jsx)(V, {}) : 0 === t.length ? null : (0, i.jsx)(d._2F, {
         innerId: this._listId,
         innerRole: "listbox",
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.Wef5Do),
+        "aria-label": k.intl.string(k.t.Wef5Do),
         ref: this.scrollerRef,
         sectionHeight: 0,
         rowHeight: 34,
         paddingBottom: 10,
-        sections: [exports.length],
-        className: Chunk720578.scroller,
+        sections: [t.length],
+        className: G.scroller,
         renderRow: this.renderRow,
         renderSection: this.renderSection
       })
     };
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk720578.resultsArea,
-      children: module()
+    return (0, i.jsx)("div", {
+      className: G.resultsArea,
+      children: e()
     })
   }
   focusNode(e) {
@@ -261,17 +261,17 @@ class X extends Chunk473749.PureComponent {
     return "quick-switcher-".concat(this._listId, "-item-").concat(e)
   }
   renderProtip() {
-    return (0, Chunk54381.jsx)(Chunk576855.Z, {
-      className: o()(Chunk720578.protip, {
-        [Chunk720578.hasContent]: this.state.query.length > 0
+    return (0, i.jsx)(y.Z, {
+      className: o()(G.protip, {
+        [G.hasContent]: this.state.query.length > 0
       }),
-      type: Chunk576855.Z.Types.INLINE,
-      children: Chunk388032.intl.format(Chunk388032.t.wukqXQ, {
+      type: y.Z.Types.INLINE,
+      children: k.intl.format(k.t.wukqXQ, {
         userSymbolHook: (e, t) => Q(t, g.xQ.USER, k.intl.string(k.t.GQRCGn)),
         textChannelSymbolHook: (e, t) => Q(t, g.xQ.TEXT_CHANNEL, k.intl.string(k.t.wrwhuZ)),
         voiceChannelSymbolHook: (e, t) => Q(t, g.xQ.VOICE_CHANNEL, k.intl.string(k.t["jz+hJp"])),
         guildSymbolHook: (e, t) => Q(t, g.xQ.GUILD, k.intl.string(k.t.WuwCWi)),
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUICK_SWITCHER_TUTORIAL)
+        helpdeskArticle: w.Z.getArticleURL(L.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }
@@ -282,18 +282,18 @@ class X extends Chunk473749.PureComponent {
       seenTutorial: t,
       results: n
     } = this.props;
-    return exports ? null : (0, Chunk54381.jsx)(Chunk670512.Z, {
-      hasQuery: module.length > 0 && require.length > 0
+    return t ? null : (0, i.jsx)(D.Z, {
+      hasQuery: e.length > 0 && n.length > 0
     })
   }
   render() {
-    return (0, Chunk54381.jsx)(Chunk793030.IX, {
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.ZvKwYa),
+    return (0, i.jsx)(s.IX, {
+      "aria-label": k.intl.string(k.t.ZvKwYa),
       size: "lg",
       transitionState: this.props.transitionState,
       onClose: this.props.onClose,
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk720578.quickswitcher,
+      children: (0, i.jsxs)("div", {
+        className: G.quickswitcher,
         onMouseMove: this.handleMouseMove,
         children: [this.renderInput(), this.renderResults(), this.renderProtip(), this.renderTutorial()]
       })

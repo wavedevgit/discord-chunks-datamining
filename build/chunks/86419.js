@@ -124,14 +124,14 @@ function N(e) {
 
 function P() {
   var e;
-  let t = Chunk594174.default.getCurrentUser(),
-    n = null != exports ? Chunk621853.Z.getUserProfile(exports.id) : null;
-  return null != (e = null == require ? true : require.widgets) ? module : []
+  let t = s.default.getCurrentUser(),
+    n = null != t ? c.Z.getUserProfile(t.id) : null;
+  return null != (e = null == n ? true : n.widgets) ? e : []
 }
 
 function R() {
   var e;
-  return Chunk224724.Z.hasPendingChanges() ? null != (e = Chunk224724.Z.getPendingWidgets()) ? module : [] : P()
+  return d.Z.hasPendingChanges() ? null != (e = d.Z.getPendingWidgets()) ? e : [] : P()
 }
 
 function w(e) {
@@ -258,18 +258,18 @@ function F(e, t) {
   u.Z.setPendingWidgets(i)
 }
 async function B() {
-  let e = Chunk224724.Z.getPendingWidgets();
-  if (null !== module) try {
-    await Chunk592183.Z.savePendingWidgets(module)
+  let e = d.Z.getPendingWidgets();
+  if (null !== e) try {
+    await u.Z.savePendingWidgets(e)
   } catch (e) {
-    console.error("Failed to save sample widgets:", module)
+    console.error("Failed to save sample widgets:", e)
   }
 }
 async function V() {
   try {
-    await Chunk592183.Z.savePendingWidgets([])
+    await u.Z.savePendingWidgets([])
   } catch (e) {
-    console.error("Failed to clear saved widgets", module)
+    console.error("Failed to clear saved widgets", e)
   }
 }
 

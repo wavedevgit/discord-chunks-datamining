@@ -44,8 +44,8 @@ if (!Object.keys) {
     p = function() {
       if ("undefined" == typeof window) returnfalse;
       for (var e in window) try {
-        if (!f["$" + module] && i.call(window, module) && null !== window[module] && "object" == typeof window[module]) try {
-          d(window[module])
+        if (!f["$" + e] && i.call(window, e) && null !== window[e] && "object" == typeof window[e]) try {
+          d(window[e])
         } catch (e) {
           returntrue
         }

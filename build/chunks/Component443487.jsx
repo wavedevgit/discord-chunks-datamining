@@ -28,8 +28,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk925002 = require("./925002.js");
 
 function E() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk925002.container,
+  return (0, r.jsx)("div", {
+    className: g.container,
     "aria-hidden": true
   })
 }
@@ -177,7 +177,7 @@ function I(e) {
 }
 
 function T() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk925002.divider
+  return (0, r.jsx)("div", {
+    className: g.divider
   })
 }

@@ -25,24 +25,24 @@ var Chunk120356 = require("./120356.js"),
 function O() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.ACTIVE_NOW_COLUMN), t = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) ? [] : [Chunk704215.z.NOW_PLAYING_CONSENT_CARD], n = (0, Chunk313201.Dt)();
-  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: module,
-    children: (0, Chunk54381.jsx)(Chunk410575.Z, {
-      section: Chunk981631.jXE.ACTIVE_NOW_COLUMN,
-      children: (0, Chunk54381.jsx)("aside", {
-        className: l()(Chunk833047.container, "refresh-active-now"),
-        "aria-labelledby": require,
-        children: (0, Chunk54381.jsx)(Chunk481060.Ttm, {
-          className: Chunk833047.scroller,
-          children: (0, Chunk54381.jsxs)("div", {
-            children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), t = (0, a.e7)([m.Z], () => m.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [o.z.NOW_PLAYING_CONSENT_CARD], n = (0, p.Dt)();
+  return (0, r.jsx)(d.Gt, {
+    value: e,
+    children: (0, r.jsx)(c.Z, {
+      section: b.jXE.ACTIVE_NOW_COLUMN,
+      children: (0, r.jsx)("aside", {
+        className: l()(E.container, "refresh-active-now"),
+        "aria-labelledby": n,
+        children: (0, r.jsx)(s.Ttm, {
+          className: E.scroller,
+          children: (0, r.jsxs)("div", {
+            children: [(0, r.jsx)(s.Heading, {
               variant: "heading-lg/semibold",
-              className: Chunk833047.header,
-              id: require,
-              children: Chunk388032.intl.string(Chunk388032.t.F4Zggw)
-            }), (0, Chunk54381.jsx)(Chunk243778.ZP, {
-              contentTypes: exports,
+              className: E.header,
+              id: n,
+              children: _.intl.string(_.t.F4Zggw)
+            }), (0, r.jsx)(f.ZP, {
+              contentTypes: t,
               children: e => {
                 let {
                   visibleContent: t,
@@ -53,7 +53,7 @@ function O() {
                   markAsDismissed: n
                 })
               }
-            }), (0, Chunk54381.jsx)(Chunk791359.Z, {})]
+            }), (0, r.jsx)(h.Z, {})]
           })
         })
       })

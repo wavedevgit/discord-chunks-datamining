@@ -145,19 +145,19 @@ let eB = {
 class eW extends Chunk473749.PureComponent {
   getRootNode() {
     var e, t;
-    return (null != (t = null == (e = this.props.popoutWindow) ? true : module.window) ? exports : window).document.getElementById("app-mount")
+    return (null != (t = null == (e = this.props.popoutWindow) ? true : e.window) ? t : window).document.getElementById("app-mount")
   }
   componentDidMount() {
     let {
       channel: e,
       layout: t
     } = this.props;
-    this.currentDocument.addEventListener(Chunk228488.NO, this.handleFullScreenChange), Chunk626135.default.track(Chunk981631.rMx.VIDEO_LAYOUT_TOGGLED, eF({
-      video_layout: this.inPopout ? "popout" : exports
-    }, (0, Chunk367907.AB)(module.id)))
+    this.currentDocument.addEventListener(ex.NO, this.handleFullScreenChange), eg.default.track(eL.rMx.VIDEO_LAYOUT_TOGGLED, eF({
+      video_layout: this.inPopout ? "popout" : t
+    }, (0, T.AB)(e.id)))
   }
   componentWillUnmount() {
-    this._videoBackgroundTooltipTimeout.stop(), this.currentDocument.removeEventListener(Chunk228488.NO, this.handleFullScreenChange), this.inPopout && (0, Chunk358085.isMac)() || this.maybeLeaveFullScreen()
+    this._videoBackgroundTooltipTimeout.stop(), this.currentDocument.removeEventListener(ex.NO, this.handleFullScreenChange), this.inPopout && (0, ey.isMac)() || this.maybeLeaveFullScreen()
   }
   componentDidUpdate(e) {
     let {
@@ -173,30 +173,30 @@ class eW extends Chunk473749.PureComponent {
     e.inCall && !n && this.inPopout && h.Z.wait(() => this.handleClosePopout())
   }
   get nativePopoutSupported() {
-    return Chunk358085.isPlatformEmbedded && Chunk998502.ZP.supportsFeature(Chunk981631.eRX.POPOUT_WINDOWS)
+    return ey.isPlatformEmbedded && ev.ZP.supportsFeature(eL.eRX.POPOUT_WINDOWS)
   }
   get popoutSupported() {
-    return !Chunk358085.isPlatformEmbedded || this.nativePopoutSupported
+    return !ey.isPlatformEmbedded || this.nativePopoutSupported
   }
   get popoutOpen() {
     let {
       popoutWindow: e
     } = this.props;
-    return null != module && !module.closed
+    return null != e && !e.closed
   }
   get currentDocument() {
     let {
       popoutWindow: e
     } = this.props;
-    return null != module && this.popoutOpen && this.inPopout ? module.document : document
+    return null != e && this.popoutOpen && this.inPopout ? e.document : document
   }
   get screenMessage() {
     return this.popoutOpen && !this.inPopout && this.props.inCall ? {
-      mainText: Chunk388032.intl.string(Chunk388032.t.J5bXZU)
+      mainText: ek.intl.string(ek.t.J5bXZU)
     } : null
   }
   get inPopout() {
-    return this.props.appContext === Chunk981631.IlC.POPOUT
+    return this.props.appContext === eL.IlC.POPOUT
   }
   get viewProperties() {
     let {
@@ -205,34 +205,34 @@ class eW extends Chunk473749.PureComponent {
       channel: n,
       inCall: i,
       canPopout: r
-    } = this.props, l = exports === Chunk981631.WtW.VIDEO && Chunk54381 && !(this.popoutOpen && !this.inPopout), a = exports === Chunk981631.WtW.VIDEO && Chunk54381 && this.popoutSupported && Chunk473749, o = exports !== Chunk981631.WtW.VOICE && require.isPrivate() && !this.inPopout && Chunk54381, s = require.type === Chunk981631.d4z.GUILD_VOICE, c = {
+    } = this.props, l = t === eL.WtW.VIDEO && i && !(this.popoutOpen && !this.inPopout), a = t === eL.WtW.VIDEO && i && this.popoutSupported && r, o = t !== eL.WtW.VOICE && n.isPrivate() && !this.inPopout && i, s = n.type === eL.d4z.GUILD_VOICE, c = {
       renderHeader: true,
       useTheme: false,
-      useExternalHeader: module === Chunk981631.AEg.MINIMUM || module === Chunk981631.AEg.NORMAL,
+      useExternalHeader: e === eL.AEg.MINIMUM || e === eL.AEg.NORMAL,
       canInvite: s,
       canPopout: a,
-      canFullscreen: Chunk120356,
-      canChangeLayout: Chunk512722,
+      canFullscreen: l,
+      canChangeLayout: o,
       canStayOnTop: this.inPopout && this.nativePopoutSupported
     };
-    if (!Chunk54381) return eH(eF({}, Chunk990547), {
-      canFullscreen: Chunk120356,
+    if (!i) return eH(eF({}, c), {
+      canFullscreen: l,
       useTheme: true
     });
-    switch (module) {
-      case Chunk981631.AEg.FULL_SCREEN:
-        return eH(eF({}, Chunk990547), {
-          canPopout: !this.inPopout && this.popoutOpen && Chunk990547.canPopout
+    switch (e) {
+      case eL.AEg.FULL_SCREEN:
+        return eH(eF({}, c), {
+          canPopout: !this.inPopout && this.popoutOpen && c.canPopout
         });
-      case Chunk981631.AEg.MINIMUM:
-        return eH(eF({}, Chunk990547), {
+      case eL.AEg.MINIMUM:
+        return eH(eF({}, c), {
           canPopout: false,
           useTheme: true
         });
-      case Chunk981631.AEg.HAVEN:
-      case Chunk981631.AEg.NO_CHAT:
-      case Chunk981631.AEg.NORMAL:
-        return eF({}, Chunk990547)
+      case eL.AEg.HAVEN:
+      case eL.AEg.NO_CHAT:
+      case eL.AEg.NORMAL:
+        return eF({}, c)
     }
   }
   renderContent(e) {
@@ -302,23 +302,23 @@ class eW extends Chunk473749.PureComponent {
       participantsListOpen: d
     } = this.props, {
       resizedHeight: p
-    } = this.state, h = Chunk473749 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.HAVEN && module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
-    return (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk94720.wrapper, eB[module], eG[Chunk512722], {
-        [Chunk94720.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
-        [Chunk94720.video]: Chunk570140,
-        [Chunk94720.sidebarOpen]: Chunk120356 || Chunk704215
+    } = this.state, h = r === eL.WtW.VIDEO, m = e !== eL.AEg.HAVEN && e !== eL.AEg.NO_CHAT && e !== eL.AEg.FULL_SCREEN && null != c, g = eL.BRd.MIDNIGHT;
+    return (0, i.jsxs)("div", {
+      className: a()(eU.wrapper, eB[e], eG[o], {
+        [eU.poppedOut]: this.popoutOpen && !this.inPopout && e !== eL.AEg.NO_CHAT && t.isPrivate(),
+        [eU.video]: h,
+        [eU.sidebarOpen]: l || d
       }),
       ref: e => {
         this._wrapperRef.current = e, this.props.wrapperRef.current = e
       },
-      style: Chunk475179 && null != Chunk846519 ? {
-        minHeight: Chunk354459._i,
-        maxHeight: Chunk990547,
-        height: Chunk846519
+      style: m && null != p ? {
+        minHeight: eD._i,
+        maxHeight: c,
+        height: p
       } : true,
-      children: [(0, Chunk54381.jsx)(Chunk481060.f6W, {
-        theme: Chunk239091,
+      children: [(0, i.jsx)(f.f6W, {
+        theme: g,
         children: t => (0, i.jsx)("div", {
           className: a()(eU.callContainer, l || e !== eL.AEg.FULL_SCREEN ? true : eU.fullScreen, t),
           ref: e => {
@@ -329,24 +329,24 @@ class eW extends Chunk473749.PureComponent {
             children: e => this.renderContent(e)
           })
         })
-      }), Chunk475179 && (0, Chunk54381.jsx)(Chunk900211.Z, {
-        minHeight: Chunk354459._i,
-        maxHeight: Chunk990547,
+      }), m && (0, i.jsx)(eN.Z, {
+        minHeight: eD._i,
+        maxHeight: c,
         resizableNode: this._wrapperRef,
         onResize: this.handleCallResize,
         onResizeEnd: this.props.updateStoredCallHeaderHeight
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk94720.channelChatWrapper,
+      }), (0, i.jsx)("div", {
+        className: eU.channelChatWrapper,
         ref: e => {
           this._channelChatRef.current = e, this.props.channelChatRef.current = e
         },
-        children: (!Chunk442837 || !this.popoutOpen || this.inPopout) && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-          children: [Chunk120356 && (0, Chunk54381.jsx)(Chunk493010.Z, {
-            channel: exports,
-            guild: require,
+        children: (!u || !this.popoutOpen || this.inPopout) && (0, i.jsxs)(i.Fragment, {
+          children: [l && (0, i.jsx)(e_.Z, {
+            channel: t,
+            guild: n,
             maxWidth: s
-          }), Chunk704215 && (0, Chunk54381.jsx)(Chunk71127.Z, {
-            channel: exports,
+          }), d && (0, i.jsx)(eI.Z, {
+            channel: t,
             maxWidth: s
           })]
         })

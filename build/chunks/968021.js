@@ -11,10 +11,10 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 
 function a() {
-  return !Chunk287880.uZ
+  return !l.uZ
 }
 let o = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_TWO_FACTOR_CRYPTO_NOTICE, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.m0FidJ)],
+  useSearchTerms: () => [r.intl.string(r.t.m0FidJ)],
   usePredicate: a,
   Component: Chunk217801.Z
 })

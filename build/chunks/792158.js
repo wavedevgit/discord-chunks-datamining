@@ -10,7 +10,7 @@ var Chunk325854 = require("./325854.js"),
 let o = `(?:(?:приблизно|орієнтовно)\\s*(?:~\\s*)?)?(${Chunk325854.km})${Chunk325854.f.rightBoundary}`;
 class s extends Chunk727916.Z {
   patternLeftBoundary() {
-    return Chunk325854.f.leftBoundary
+    return r.f.leftBoundary
   }
   innerPattern(e) {
     return e.option.forwardDate ? RegExp(o, "i") : RegExp(`(?:протягом|на протязі|протягом|упродовж|впродовж)\\s*${o}`, r.f.flags)

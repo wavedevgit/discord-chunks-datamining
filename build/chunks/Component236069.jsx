@@ -94,14 +94,14 @@ function v(e) {
 }
 
 function S() {
-  let e = (0, Chunk300284.Z)({
-    scrollPosition: Chunk526761.Y_.GUILD_TAG
+  let e = (0, l.Z)({
+    scrollPosition: _.Y_.GUILD_TAG
   });
-  return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-    color: Chunk481060.DM8.DANGER,
-    children: [Chunk388032.intl.string(Chunk388032.t.Zqlecb), (0, Chunk54381.jsx)(Chunk481060.EyT, {
-      onClick: module,
-      children: Chunk388032.intl.string(Chunk388032.t.SJehVW)
+  return (0, r.jsxs)(a.qXd, {
+    color: a.DM8.DANGER,
+    children: [m.intl.string(m.t.Zqlecb), (0, r.jsx)(a.EyT, {
+      onClick: e,
+      children: m.intl.string(m.t.SJehVW)
     })]
   })
 }

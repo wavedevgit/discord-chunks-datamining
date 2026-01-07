@@ -57,13 +57,13 @@ function f() {
     }
   } = i().localeData()._config;
   return {
-    months: c("month", module),
-    monthsShort: c("month", exports),
-    weekdays: c("day", require),
-    weekdaysShort: c("day", Chunk913527),
-    weekdaysMin: c("day", Chunk524437),
-    meridiem: Chunk695346,
-    ordinal: u(Chunk766186),
+    months: c("month", e),
+    monthsShort: c("month", t),
+    weekdays: c("day", n),
+    weekdaysShort: c("day", r),
+    weekdaysMin: c("day", a),
+    meridiem: o,
+    ordinal: u(s),
     longDateFormat: l,
     longFormatters: [],
     week: f

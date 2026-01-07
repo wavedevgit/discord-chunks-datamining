@@ -95,37 +95,37 @@ function q() {
       fetchPolicy: "cache-only",
       callerSource: "unknown"
     },
-    [t, n] = Chunk473749.useState(false),
-    i = (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.quests.values()]),
-    a = (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.excludedQuests.values()]),
+    [t, n] = r.useState(false),
+    i = (0, c.Wu)([N.Z], () => [...N.Z.quests.values()]),
+    a = (0, c.Wu)([N.Z], () => [...N.Z.excludedQuests.values()]),
     {
       isFetchingCurrentQuests: o,
       lastFetchedCurrentQuests: s
-    } = (0, Chunk442837.cj)([Chunk616022.Z], () => ({
-      isFetchingCurrentQuests: Chunk616022.Z.isFetchingCurrentQuests,
-      lastFetchedCurrentQuests: Chunk616022.Z.lastFetchedCurrentQuests
+    } = (0, c.cj)([N.Z], () => ({
+      isFetchingCurrentQuests: N.Z.isFetchingCurrentQuests,
+      lastFetchedCurrentQuests: N.Z.lastFetchedCurrentQuests
     })),
-    l = (0, Chunk787695.c)({
-      location: Chunk324805.dr.USE_QUESTS
+    l = (0, D.c)({
+      location: V.dr.USE_QUESTS
     }),
-    u = Chunk937797.DL.useConfig({
-      location: Chunk324805.dr.USE_QUESTS
+    u = R.DL.useConfig({
+      location: V.dr.USE_QUESTS
     });
-  return Chunk473749.useEffect(() => {
-    if ("cache-only" !== module.fetchPolicy && ("cache-and-network" === module.fetchPolicy || "cache-or-network" === module.fetchPolicy && 0 === Chunk959078) && Chunk780384 && !exports && !Chunk754700) {
-      if (require(true), (0, Chunk22095.xw)(), Chunk410030.enabled && "focused" !== Chunk15624.Z.getState()) return;
+  return r.useEffect(() => {
+    if ("cache-only" !== e.fetchPolicy && ("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === s) && l && !t && !o) {
+      if (n(true), (0, T.xw)(), u.enabled && "focused" !== f.Z.getState()) return;
       let {
         enableNewRequestBehavior: t
-      } = Chunk704161.Z.getConfig({
+      } = w.Z.getConfig({
         location: "QuestHookUseQuests"
       });
-      if (!exports)(0, Chunk22095.w)(Chunk49436.Ok.DESKTOP_ACCOUNT_PANEL_AREA, "use_quests_".concat(module.callerSource))
+      if (!t)(0, T.w)(P.Ok.DESKTOP_ACCOUNT_PANEL_AREA, "use_quests_".concat(e.callerSource))
     }
-  }, [module.fetchPolicy, Chunk780384, exports, Chunk754700, Chunk959078, module.callerSource, Chunk410030.enabled]), {
-    quests: Chunk392711,
-    excludedQuests: Chunk278074,
-    isFetchingCurrentQuests: Chunk754700,
-    hasFetched: exports
+  }, [e.fetchPolicy, l, t, o, s, e.callerSource, u.enabled]), {
+    quests: i,
+    excludedQuests: a,
+    isFetchingCurrentQuests: o,
+    hasFetched: t
   }
 }
 
@@ -245,7 +245,7 @@ function eo(e, t) {
 
 function es() {
   return {
-    takeover: Chunk616022.Z.getQuestHomeTakeoverConfig()
+    takeover: N.Z.getQuestHomeTakeoverConfig()
   }
 }
 let el = {};
@@ -334,19 +334,19 @@ function em(e) {
 }
 
 function eh() {
-  let e = Chunk473749.useRef(false),
-    t = (0, Chunk442837.Wu)([Chunk616022.Z], () => Array.from(Chunk616022.Z.claimedQuests.values())),
-    n = (0, Chunk442837.e7)([Chunk616022.Z], () => Chunk616022.Z.isFetchingClaimedQuests);
-  return Chunk473749.useEffect(() => {
-    require || module.current || (module.current = true, (0, Chunk22095.Ag)())
-  }, [require]), {
-    claimedQuests: exports,
-    isFetchingClaimedQuests: require
+  let e = r.useRef(false),
+    t = (0, c.Wu)([N.Z], () => Array.from(N.Z.claimedQuests.values())),
+    n = (0, c.e7)([N.Z], () => N.Z.isFetchingClaimedQuests);
+  return r.useEffect(() => {
+    n || e.current || (e.current = true, (0, T.Ag)())
+  }, [n]), {
+    claimedQuests: t,
+    isFetchingClaimedQuests: n
   }
 }
 
 function eg() {
-  return (0, Chunk442837.e7)([Chunk616022.Z], () => Chunk616022.Z.getExpiredQuestsMap())
+  return (0, c.e7)([N.Z], () => N.Z.getExpiredQuestsMap())
 }
 
 function eE(e) {
@@ -454,25 +454,25 @@ function eP() {
     fetchPolicy: "cache-or-network",
     callerSource: "settings_badge"
   }), n = eg();
-  return Chunk473749.useMemo(() => {
+  return r.useMemo(() => {
     let r = [];
-    if (exports || 0 === module.length) return Chunk473749;
-    for (let t of module) {
+    if (t || 0 === e.length) return r;
+    for (let t of e) {
       var i;
-      if (!(0, Chunk862657.vR)(exports, Chunk49436.jn.GIFT_INVENTORY_SETTINGS_BADGE) || null != (i = require.get(exports.id)) && Chunk392711) continue;
-      if ((null == exports ? true : exports.userStatus) == null) {
-        Chunk473749.push(exports);
+      if (!(0, M.vR)(t, P.jn.GIFT_INVENTORY_SETTINGS_BADGE) || null != (i = n.get(t.id)) && i) continue;
+      if ((null == t ? true : t.userStatus) == null) {
+        r.push(t);
         continue
       }
-      let e = null != exports.userStatus.claimedAt,
-        a = (0, Chunk862657.zE)(exports.userStatus, Chunk49436.jn.GIFT_INVENTORY_SETTINGS_BADGE);
-      if (!module && !Chunk278074) {
-        Chunk473749.push(exports);
+      let e = null != t.userStatus.claimedAt,
+        a = (0, M.zE)(t.userStatus, P.jn.GIFT_INVENTORY_SETTINGS_BADGE);
+      if (!e && !a) {
+        r.push(t);
         continue
       }
     }
-    return Chunk473749
-  }, [module, require, exports])
+    return r
+  }, [e, n, t])
 }
 
 function eR(e) {
@@ -511,29 +511,29 @@ function ex() {
   let {
     fetching: e,
     accounts: t
-  } = (0, Chunk442837.cj)([Chunk553795.Z], () => ({
-    fetching: Chunk553795.Z.isFetching(),
-    accounts: Chunk553795.Z.getAccounts()
+  } = (0, c.cj)([h.Z], () => ({
+    fetching: h.Z.isFetching(),
+    accounts: h.Z.getAccounts()
   })), {
     xboxAccounts: n,
     playstationAccounts: i,
     xboxAndPlaystationAccounts: a
-  } = Chunk473749.useMemo(() => {
-    let e = exports.filter(e => false === e.revoked),
-      n = module.filter(e => e.type === H.ABu.XBOX),
-      r = module.filter(e => e.type === H.ABu.PLAYSTATION),
-      i = require.concat(Chunk473749);
+  } = r.useMemo(() => {
+    let e = t.filter(e => false === e.revoked),
+      n = e.filter(e => e.type === H.ABu.XBOX),
+      r = e.filter(e => e.type === H.ABu.PLAYSTATION),
+      i = n.concat(r);
     return {
-      xboxAccounts: require,
-      playstationAccounts: Chunk473749,
-      xboxAndPlaystationAccounts: Chunk392711
+      xboxAccounts: n,
+      playstationAccounts: r,
+      xboxAndPlaystationAccounts: i
     }
-  }, [exports]);
+  }, [t]);
   return {
-    fetching: module,
-    xboxAccounts: require,
-    playstationAccounts: Chunk392711,
-    xboxAndPlaystationAccounts: Chunk278074
+    fetching: e,
+    xboxAccounts: n,
+    playstationAccounts: i,
+    xboxAndPlaystationAccounts: a
   }
 }
 let eL = e => {
@@ -573,16 +573,16 @@ let eL = e => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = ex(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk473749 || !require && Chunk473749, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
-      psHelpdeskArticle: Chunk278074,
-      xboxHelpdeskArticle: Chunk754700
-    }), l = Chunk388032.intl.format(Chunk388032.t.HVS7nh, {
-      helpdeskArticle: Chunk473749 ? Chunk278074 : Chunk754700
+    } = ex(), n = e.length > 0, r = t.length > 0, i = n && !r || !n && r, a = y.Z.getArticleURL(H.BhN.QUEST_HOW_TO_PLAYSTATION), o = y.Z.getArticleURL(H.BhN.QUEST_HOW_TO_XBOX), s = W.intl.format(W.t.beN4DG, {
+      psHelpdeskArticle: a,
+      xboxHelpdeskArticle: o
+    }), l = W.intl.format(W.t.HVS7nh, {
+      helpdeskArticle: r ? a : o
     });
     return {
-      message: Chunk392711 ? Chunk780384 : Chunk959078,
-      xboxURL: Chunk754700,
-      playstationURL: Chunk278074
+      message: i ? l : s,
+      xboxURL: o,
+      playstationURL: a
     }
   };
 var ek = function(e) {
@@ -777,13 +777,13 @@ function eK(e) {
     })
   }
 }
-let ez = () => (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.quests.values()]).some(e => e.preview),
+let ez = () => (0, c.Wu)([N.Z], () => [...N.Z.quests.values()]).some(e => e.preview),
   eq = () => {
-    let e = (0, Chunk36243.T)({
-        location: Chunk324805.dr.QUEST_PREVIEW_TOOL_2
+    let e = (0, x.T)({
+        location: V.dr.QUEST_PREVIEW_TOOL_2
       }),
       t = ez();
-    return module && exports
+    return e && t
   },
   eQ = e => {
     var t;
@@ -794,12 +794,12 @@ let ez = () => (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.ques
     return !n && !r && !i && !a
   },
   eX = () => {
-    let e = (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.quests.values()]);
-    return Chunk473749.useMemo(() => module.filter(e => e.preview), [module])
+    let e = (0, c.Wu)([N.Z], () => [...N.Z.quests.values()]);
+    return r.useMemo(() => e.filter(e => e.preview), [e])
   };
 
 function eJ() {
-  return Chunk473749.useMemo(() => Chunk324805.Ew.map(e => {
+  return r.useMemo(() => V.Ew.map(e => {
     let [t, n] = e;
     return {
       heading: (0, j.T2)(t),
@@ -809,7 +809,7 @@ function eJ() {
 }
 
 function e$() {
-  return Chunk473749.useMemo(() => Object.keys(Chunk324805.yq).map(e => ({
+  return r.useMemo(() => Object.keys(V.yq).map(e => ({
     label: (0, j.NL)(V.yq[e]),
     value: V.yq[e]
   })), [])
@@ -853,45 +853,45 @@ let e1 = e => {
 function e2() {
   let {
     enabled: e
-  } = Chunk937797.n0.useConfig({
-    location: Chunk324805.dr.QUEST_HOME_DESKTOP
-  }), [t, n] = Chunk473749.useState(module), [i, a] = Chunk473749.useState(module), [o, s] = Chunk473749.useState(false), [l, u] = Chunk473749.useState(false), {
+  } = R.n0.useConfig({
+    location: V.dr.QUEST_HOME_DESKTOP
+  }), [t, n] = r.useState(e), [i, a] = r.useState(e), [o, s] = r.useState(false), [l, u] = r.useState(false), {
     isFetching: d,
     takeoverConfig: f
-  } = (0, Chunk442837.cj)([Chunk616022.Z], () => ({
-    isFetching: Chunk616022.Z.isFetchingQuestHomeTakeover(),
-    takeoverConfig: Chunk616022.Z.getQuestHomeTakeoverConfig()
-  })), p = Chunk473749.useMemo(() => {
-    if (!module || null == Chunk15624) return null;
+  } = (0, c.cj)([N.Z], () => ({
+    isFetching: N.Z.isFetchingQuestHomeTakeover(),
+    takeoverConfig: N.Z.getQuestHomeTakeoverConfig()
+  })), p = r.useMemo(() => {
+    if (!e || null == f) return null;
     let t = new Date,
-      n = new Date(Chunk15624.startsAt),
-      r = new Date(Chunk15624.expiresAt);
-    return exports < require || exports > Chunk473749 ? null : Chunk15624
-  }, [module, Chunk15624]);
-  return Chunk473749.useEffect(() => {
-    module && exports();
+      n = new Date(f.startsAt),
+      r = new Date(f.expiresAt);
+    return t < n || t > r ? null : f
+  }, [e, f]);
+  return r.useEffect(() => {
+    e && t();
     async function t() {
       try {
-        await (0, Chunk22095.Kh)()
+        await (0, T.Kh)()
       } catch (e) {
-        Chunk278074(false), Chunk959078(true)
+        a(false), s(true)
       } finally {
-        require(false)
+        n(false)
       }
     }
-  }, [module]), Chunk473749.useEffect(() => {
+  }, [e]), r.useEffect(() => {
     !async function() {
       try {
-        if (null == Chunk15624) return;
-        await Promise.all([(0, Chunk956664.pt)(Chunk15624.assetHeroImage.url), (0, Chunk956664.pt)(Chunk15624.assetSponsorImage.url)])
+        if (null == f) return;
+        await Promise.all([(0, O.pt)(f.assetHeroImage.url), (0, O.pt)(f.assetSponsorImage.url)])
       } catch (e) {
-        Chunk410030(true)
+        u(true)
       } finally {
-        Chunk278074(false)
+        a(false)
       }
     }()
-  }, [Chunk15624]), {
-    takeover: Chunk754700 || Chunk780384 ? null : Chunk835473,
-    isLoading: exports || Chunk217774 || Chunk392711
+  }, [f]), {
+    takeover: o || l ? null : p,
+    isLoading: t || d || i
   }
 }

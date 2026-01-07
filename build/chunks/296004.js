@@ -16,19 +16,19 @@ var Chunk424353 = require("./424353.js"),
   m = Chunk971428(Chunk424353.PromiseRejectionEvent);
 module.exports = {
   CONSTRUCTOR: Chunk417791("Promise", function() {
-    var e = Chunk975378(Chunk57100),
-      t = module !== String(Chunk57100);
-    if (!exports && 66 === Chunk306983 || Chunk253462 && !(p.catch && p.finally)) returntrue;
-    if (!Chunk306983 || Chunk306983 < 51 || !/native code/.test(module)) {
-      var n = new Chunk57100(function(e) {
+    var e = s(o),
+      t = e !== String(o);
+    if (!t && 66 === d || u && !(p.catch && p.finally)) returntrue;
+    if (!d || d < 51 || !/native code/.test(e)) {
+      var n = new o(function(e) {
           e(1)
         }),
         r = function(e) {
           e(function() {}, function() {})
         };
-      if ((require.constructor = {})[h] = Chunk424353, !(f = require.then(function() {}) instanceof Chunk424353)) returntrue
+      if ((n.constructor = {})[h] = r, !(f = n.then(function() {}) instanceof r)) returntrue
     }
-    return !exports && ("BROWSER" === Chunk560103 || "DENO" === Chunk560103) && !m
+    return !t && ("BROWSER" === l || "DENO" === l) && !m
   }),
   REJECTION_EVENT: m,
   SUBCLASSING: f

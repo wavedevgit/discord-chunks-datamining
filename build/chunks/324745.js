@@ -13,14 +13,14 @@ var Chunk906732 = require("./906732.jsx"),
 function l() {
   let {
     shouldMergeGameSettings: e
-  } = Chunk202527.b.getCurrentConfig({
+  } = i.b.getCurrentConfig({
     location: "useOpenGameSettings"
   }), {
     analyticsLocations: t
-  } = (0, Chunk906732.ZP)();
-  if ((0, Chunk168308.Jw)()) return () => {
-    (0, Chunk547972.Z)(module ? Chunk332325.Z.MY_GAMES : Chunk332325.Z.ACTIVITY_PRIVACY, {
-      analyticsLocations: exports
+  } = (0, r.ZP)();
+  if ((0, a.Jw)()) return () => {
+    (0, o.Z)(e ? s.Z.MY_GAMES : s.Z.ACTIVITY_PRIVACY, {
+      analyticsLocations: t
     })
   }
 }

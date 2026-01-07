@@ -14,7 +14,7 @@ var Chunk579092 = require("./579092.js"),
 let c = new Chunk579092.Yd("OverlayV3NativeModuleUtils");
 async function u() {
   let e;
-  if (null == Chunk522474.Z.getWindow(Chunk501787.$J)) return;
+  if (null == o.Z.getWindow(l.$J)) return;
   c.warn("Waiting for previous overlay popout to be destroyed.");
   let t = new Promise(e => {
     setTimeout(() => {
@@ -23,24 +23,24 @@ async function u() {
   });
 
   function n() {
-    null == Chunk522474.Z.getWindow(Chunk501787.$J) && (null == module || module())
+    null == o.Z.getWindow(l.$J) && (null == e || e())
   }
   let r = new Promise(t => {
     e = t, o.Z.addChangeListener(n)
   });
   try {
-    await Promise.race([exports, Chunk579092])
+    await Promise.race([t, r])
   } finally {
-    Chunk522474.Z.removeChangeListener(require)
+    o.Z.removeChangeListener(n)
   }
-  null != Chunk522474.Z.getWindow(Chunk501787.$J) && c.error("Previous overlay popout was not destroyed after 5 seconds!")
+  null != o.Z.getWindow(l.$J) && c.error("Previous overlay popout was not destroyed after 5 seconds!")
 }
 let d = 1e3;
 async function f() {
-  let e, t = Chunk509140.Z.isModuleLoaded,
-    n = Chunk509140.Z.getNativeModule();
-  if (exports && null != require) return await (0, Chunk379649._v)(d), require;
-  if (exports && null == require) throw Error("Native module loaded but not found in store");
+  let e, t = s.Z.isModuleLoaded,
+    n = s.Z.getNativeModule();
+  if (t && null != n) return await (0, i._v)(d), n;
+  if (t && null == n) throw Error("Native module loaded but not found in store");
   let r = new Promise(e => {
     setTimeout(() => {
       e()
@@ -48,15 +48,15 @@ async function f() {
   });
 
   function o() {
-    null == module || module()
+    null == e || e()
   }
   let l = new Promise(t => {
     e = t, a.Z.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", o), a.Z.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", o)
   });
   try {
-    await Promise.race([Chunk579092, Chunk501787])
+    await Promise.race([r, l])
   } finally {
-    Chunk570140.Z.unsubscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", Chunk522474), Chunk570140.Z.unsubscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", Chunk522474)
+    a.Z.unsubscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", o), a.Z.unsubscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", o)
   }
-  return Chunk509140.Z.getNativeModule()
+  return s.Z.getNativeModule()
 }

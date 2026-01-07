@@ -101,7 +101,7 @@ class j extends Chunk557635.Mi {
   }
   clone() {
     let e = super.clone();
-    return module.headerRows = this.headerRows, module.columns = this.columns, module.rowHeaderColumnKeys = this.rowHeaderColumnKeys, module.head = this.head, module.body = this.body, module
+    return e.headerRows = this.headerRows, e.columns = this.columns, e.rowHeaderColumnKeys = this.rowHeaderColumnKeys, e.head = this.head, e.body = this.body, e
   }
   getTextValue(e) {
     let t = this.getItem(e);
@@ -797,44 +797,44 @@ function er(e, t) {
 let ei = (0, Chunk473749.forwardRef)(er);
 
 function ea() {
-  let e = (0, Chunk473749.useContext)(U),
+  let e = (0, L.useContext)(U),
     {
       dragAndDropHooks: t,
       dropState: n
-    } = (0, Chunk473749.useContext)(Chunk941084.Ed),
-    r = (0, Chunk473749.useRef)(null),
+    } = (0, L.useContext)(s.Ed),
+    r = (0, L.useRef)(null),
     {
       dropIndicatorProps: i
-    } = exports.useDropIndicator({
+    } = t.useDropIndicator({
       target: {
         type: "root"
       }
-    }, require, Chunk23893),
-    a = require.isDropTarget({
+    }, n, r),
+    a = n.isDropTarget({
       type: "root"
     }),
     {
       visuallyHiddenProps: o
-    } = (0, Chunk485853.S)(),
+    } = (0, A.S)(),
     l = B("tr"),
     c = B("td");
-  return !Chunk110294 && Chunk900090["aria-hidden"] ? null : Chunk473749.createElement(Chunk913074, {
+  return !a && i["aria-hidden"] ? null : L.createElement(l, {
     role: "row",
-    "aria-hidden": Chunk900090["aria-hidden"],
+    "aria-hidden": i["aria-hidden"],
     style: {
       height: 0
     }
-  }, Chunk473749.createElement(Chunk156748, {
+  }, L.createElement(c, {
     role: "gridcell",
-    colSpan: module.collection.columnCount,
+    colSpan: e.collection.columnCount,
     style: {
       padding: 0
     }
-  }, Chunk473749.createElement("div", {
+  }, L.createElement("div", {
     role: "button",
-    ...Chunk595707,
-    ...Chunk900090,
-    ref: Chunk23893
+    ...o,
+    ...i,
+    ref: r
   })))
 }(0, Chunk406581.G5)(Chunk557635.Rb, function(e, t, n) {
   let r = (0, L.useContext)(U),

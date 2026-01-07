@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 617899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,16 +24,16 @@ function f(e, t, n) {
 }
 class g extends Chunk473749.PureComponent {
   render() {
-    let e = "".concat(Chunk388032.intl.string(Chunk388032.t.VWqWZQ), "\n").concat(Chunk388032.intl.string(Chunk388032.t["0Lgb/K"]));
-    return (0, Chunk54381.jsx)(Chunk82950.Z, {
+    let e = "".concat(d.intl.string(d.t.VWqWZQ), "\n").concat(d.intl.string(d.t["0Lgb/K"]));
+    return (0, r.jsx)(s.Z, {
       guild: this.props.guild,
       onDismissed: this.handleClose,
       onClick: this.handleInvite,
-      message: module,
-      cta: Chunk388032.intl.string(Chunk388032.t.Sd8Ixw),
-      trackingSource: Chunk981631.PsQ.INVITE_NOTICE,
-      type: Chunk981631.vID.INVITE,
-      image: Chunk589148,
+      message: e,
+      cta: d.intl.string(d.t.Sd8Ixw),
+      trackingSource: c.PsQ.INVITE_NOTICE,
+      type: c.vID.INVITE,
+      image: p,
       imageMarginX: 46
     })
   }
@@ -82,4 +82,4 @@ class g extends Chunk473749.PureComponent {
     })
   }
 }
-let h = g
+let m = g

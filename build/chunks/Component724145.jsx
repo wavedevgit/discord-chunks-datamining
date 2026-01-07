@@ -38,16 +38,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk769393 = require("./769393.js");
-let k = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk769393.editorHeader,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk769393.bannerUpsell,
-      children: [(0, Chunk54381.jsx)(Chunk587446.Z, {
-        className: Chunk769393.premiumIcon
-      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+let k = () => (0, r.jsx)("div", {
+    className: M.editorHeader,
+    children: (0, r.jsxs)("div", {
+      className: M.bannerUpsell,
+      children: [(0, r.jsx)(O.Z, {
+        className: M.premiumIcon
+      }), (0, r.jsx)(d.Heading, {
         variant: "heading-md/bold",
         color: "always-white",
-        children: Chunk388032.intl.string(Chunk388032.t.POSLGY)
+        children: j.intl.string(j.t.POSLGY)
       })]
     })
   }),

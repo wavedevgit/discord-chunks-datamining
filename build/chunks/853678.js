@@ -61,7 +61,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           var i, c;
           let e = new URL(n),
             o = e.toString();
-          if (m.isPlatformEmbedded) {
+          if (h.isPlatformEmbedded) {
             let e = (0, a.R)() ? v.KJ3.ACTIVITY_POPOUT : null;
             g.Z.focus(e, true)
           }
@@ -75,7 +75,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           }), Promise.resolve({
             opened: true
           });
-          return new Promise(e => (0, h.q)({
+          return new Promise(e => (0, m.q)({
             href: o,
             shouldConfirm: true,
             onConfirm: () => {

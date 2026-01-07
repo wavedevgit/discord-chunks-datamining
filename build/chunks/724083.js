@@ -5,6 +5,6 @@ var Chunk840475 = require("./840475.js"),
   Chunk569743 = require("./569743.js"),
   a = Chunk840475.aTypedArrayConstructor;
 (0, Chunk840475.exportTypedArrayStaticMethod)("of", function() {
-  for (var e = 0, t = arguments.length, n = new(a(this))(exports); exports > module;) require[module] = arguments[module++];
-  return require
+  for (var e = 0, t = arguments.length, n = new(a(this))(t); t > e;) n[e] = arguments[e++];
+  return n
 }, Chunk569743)

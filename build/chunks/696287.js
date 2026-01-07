@@ -71,22 +71,22 @@ class E extends Chunk147913.Z {
     }), e.lastHeartbeatTime = u
   }
   processSessionChanges() {
-    let e = Chunk594190.ZP.getRunningGames(),
+    let e = f.ZP.getRunningGames(),
       t = performance.now(),
       n = new Set;
-    for (let i of module) {
-      if (Chunk846519.isLauncher) continue;
-      let e = g(Chunk846519);
-      if (require.add(module), !this.gameSessions.has(module)) {
+    for (let i of e) {
+      if (i.isLauncher) continue;
+      let e = g(i);
+      if (n.add(e), !this.gameSessions.has(e)) {
         let n = {
-          sessionId: (0, Chunk772848.Z)(),
-          lastHeartbeatTime: exports,
-          runningGame: Chunk846519
+          sessionId: (0, r.Z)(),
+          lastHeartbeatTime: t,
+          runningGame: i
         };
-        this.gameSessions.set(module, require), this.logHeartbeat(require, true, false)
+        this.gameSessions.set(e, n), this.logHeartbeat(n, true, false)
       }
     }
-    for (let [e, t] of this.gameSessions) require.has(module) || (this.logHeartbeat(exports, false, true), this.gameSessions.delete(module))
+    for (let [e, t] of this.gameSessions) n.has(e) || (this.logHeartbeat(t, false, true), this.gameSessions.delete(e))
   }
   constructor(...e) {
     super(...e), _(this, "heartbeatInterval", new i.Xp), _(this, "gameSessions", new Map), _(this, "actions", {

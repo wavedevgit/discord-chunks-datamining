@@ -74,13 +74,13 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, S = null, I = new Set, T = Chunk683860.z.LATEST_ACTIVITY, C = Chunk697988.z.MATCH_SOME, A = 0, R = [], w = o().chain(O), D = o().chain(O), L.clear(), x.clear()
+  N = [], r = null, S = null, I = new Set, T = l.z.LATEST_ACTIVITY, C = s.z.MATCH_SOME, A = 0, R = [], w = o().chain(O), D = o().chain(O), L.clear(), x.clear()
 }
 
 function Z() {
   var e;
-  let t = Chunk944486.Z.getChannelId();
-  if (null == exports || !(null == (e = Chunk592125.Z.getChannel(exports)) ? true : module.isForumLikeChannel())) return G(), false;
+  let t = g.Z.getChannelId();
+  if (null == t || !(null == (e = m.Z.getChannel(t)) ? true : e.isForumLikeChannel())) return G(), false;
   B({
     refreshThreadIds: true
   })
@@ -185,7 +185,7 @@ function q(e) {
 }
 class Q extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk344185.Z, Chunk314897.default, Chunk592125.Z, Chunk306680.ZP, Chunk944486.Z, Chunk144140.Z)
+    this.waitFor(f.Z, _.default, m.Z, h.ZP, g.Z, p.Z)
   }
   getNewThreadCount() {
     return A
@@ -209,7 +209,7 @@ class Q extends(i = Chunk442837.ZP.Store) {
   }
   getAndDeleteMostRecentUserCreatedThreadId() {
     let e = v;
-    return v = null, module
+    return v = null, e
   }
   getFirstNoReplyThreadId() {
     return r

@@ -57,7 +57,7 @@ let E = "LibraryApplicationStore";
 
 function b() {
   var e;
-  return null != (e = Chunk433517.K.get(E)) ? module : {}
+  return null != (e = l.K.get(E)) ? e : {}
 }
 let y = false,
   O = {},
@@ -68,13 +68,13 @@ let y = false,
   C = false;
 
 function A() {
-  Chunk433517.K.set(E, g(m({}, b()), {
+  l.K.set(E, g(m({}, b()), {
     activeLaunchOptionIds: T
   }))
 }
 
 function N() {
-  Chunk433517.K.set(E, g(m({}, b()), {
+  l.K.set(E, g(m({}, b()), {
     activeLibraryApplicationBranchIds: I
   }))
 }
@@ -167,9 +167,9 @@ function F() {
 }
 class B extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default);
-    let e = Chunk433517.K.get(E);
-    null != module && (null == module.activeLaunchOptionIds ? A() : T = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? N() : I = module.activeLibraryApplicationBranchIds)
+    this.waitFor(f.default);
+    let e = l.K.get(E);
+    null != e && (null == e.activeLaunchOptionIds ? A() : T = e.activeLaunchOptionIds, null == e.activeLibraryApplicationBranchIds ? N() : I = e.activeLibraryApplicationBranchIds)
   }
   get libraryApplications() {
     return G(e => !e.isHidden())

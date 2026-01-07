@@ -32,16 +32,16 @@ function u(e) {
 }
 let d = "ActivityInviteManager",
   f = () => {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
 class h extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), Chunk570140.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
+    a.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), a.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), Chunk570140.Z.unsubscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
+    a.Z.unsubscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), a.Z.unsubscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
   handleModalOpen(e) {
     let {

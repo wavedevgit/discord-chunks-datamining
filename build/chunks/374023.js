@@ -18,8 +18,8 @@ class a {
   static get() {
     if (null == a.cached) {
       var e, t;
-      let n = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getMainArgvSync) ? true : module.call(exports);
-      null != require && require.length > 1 && require.shift(), a.cached = null != require ? require : []
+      let n = null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getMainArgvSync) ? true : e.call(t);
+      null != n && n.length > 1 && n.shift(), a.cached = null != n ? n : []
     }
     return a.cached
   }

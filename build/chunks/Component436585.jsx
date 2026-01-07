@@ -79,5 +79,5 @@ let c = "social-layer-storefront-product-details-modal",
   };
 
 function d() {
-  (0, Chunk481060.nfh)(c) && (0, Chunk481060.Mr3)(c)
+  (0, i.nfh)(c) && (0, i.Mr3)(c)
 }

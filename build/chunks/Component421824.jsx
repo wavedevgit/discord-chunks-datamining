@@ -19,31 +19,31 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m() {
-  if (Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.ClipsReminderNotification) || Chunk522474.Z.getWindowOpen(Chunk981631.KJ3.ACTIVITY_POPOUT)) return null;
+  if (c.Z.isNotificationDisabled(h.n0.ClipsReminderNotification) || o.Z.getWindowOpen(p.KJ3.ACTIVITY_POPOUT)) return null;
   let {
     trackView: e,
     trackClick: t
-  } = (0, Chunk620954.Rg)(Chunk987650.n0.ClipsReminderNotification, {
-    notif_type: Chunk987650.n0.ClipsReminderNotification
-  }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), m = (0, Chunk341569.LI)();
-  if (null == require || !m) return null;
-  let g = Chunk13140.BB(require.shortcut, true);
+  } = (0, d.Rg)(h.n0.ClipsReminderNotification, {
+    notif_type: h.n0.ClipsReminderNotification
+  }), n = a.ZP.getKeybindForAction(p.kg4.SAVE_CLIP), m = (0, l.LI)();
+  if (null == n || !m) return null;
+  let g = s.BB(n.shortcut, true);
   return {
-    title: Chunk388032.intl.format(Chunk388032.t.S5uhCN, {
+    title: f.intl.format(f.t.S5uhCN, {
       keybind: g,
       keybindHook: (e, t) => (0, i.jsx)(u.t, {
         keybind: g.split("+")
       }, t)
     }),
-    icon: (0, Chunk54381.jsx)(Chunk481060.AlX, {
+    icon: (0, i.jsx)(r.AlX, {
       size: "lg",
       color: "currentColor"
     }),
     onNotificationShow: () => {
-      module()
+      e()
     },
     onDismissClick: () => {
-      exports("dismiss")
+      t("dismiss")
     }
   }
 }

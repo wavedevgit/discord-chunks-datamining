@@ -35,7 +35,7 @@ var c = function() {
   function e(t) {
     o(this, e), s(this, "isDisposed", false), s(this, "action", true), this.action = (0, n.mf)(t) ? t : n.ZT
   }
-  return a(module, [{
+  return a(e, [{
     key: "dispose",
     value: function() {
       this.isDisposed || (this.action(), this.isDisposed = true)
@@ -55,18 +55,18 @@ var c = function() {
     value: function(t) {
       return new e(t)
     }
-  }]), module
+  }]), e
 }();
 s(c, "empty", {
   dispose: Chunk675082.ZT
 });
 var u = function() {
     function e() {
-      o(this, module), s(this, "isDisposed", false), s(this, "disposables", true);
-      for (var t = arguments.length, r = Array(exports), n = 0; Chunk675082 < exports; Chunk675082++) require[Chunk675082] = arguments[Chunk675082];
-      this.disposables = require
+      o(this, e), s(this, "isDisposed", false), s(this, "disposables", true);
+      for (var t = arguments.length, r = Array(t), n = 0; n < t; n++) r[n] = arguments[n];
+      this.disposables = r
     }
-    return a(module, [{
+    return a(e, [{
       key: "add",
       value: function(e) {
         this.isDisposed ? e.dispose() : this.disposables.push(e)
@@ -85,9 +85,9 @@ var u = function() {
       key: "clear",
       value: function() {
         if (!this.isDisposed) {
-          for (var e = this.disposables.length, t = Array(module), r = 0; require < module; require++) exports[require] = this.disposables[require];
+          for (var e = this.disposables.length, t = Array(e), r = 0; r < e; r++) t[r] = this.disposables[r];
           this.disposables = [];
-          for (var n = 0; Chunk675082 < module; Chunk675082++) exports[Chunk675082].dispose()
+          for (var n = 0; n < e; n++) t[n].dispose()
         }
       }
     }, {
@@ -95,18 +95,18 @@ var u = function() {
       value: function() {
         if (!this.isDisposed) {
           this.isDisposed = true;
-          for (var e = this.disposables.length, t = Array(module), r = 0; require < module; require++) exports[require] = this.disposables[require];
+          for (var e = this.disposables.length, t = Array(e), r = 0; r < e; r++) t[r] = this.disposables[r];
           this.disposables = [];
-          for (var n = 0; Chunk675082 < module; Chunk675082++) exports[Chunk675082].dispose()
+          for (var n = 0; n < e; n++) t[n].dispose()
         }
       }
-    }]), module
+    }]), e
   }(),
   d = function() {
     function e() {
-      o(this, module), s(this, "isDisposed", false), s(this, "current", true)
+      o(this, e), s(this, "isDisposed", false), s(this, "current", true)
     }
-    return a(module, [{
+    return a(e, [{
       key: "getDisposable",
       value: function() {
         return this.current
@@ -127,8 +127,8 @@ var u = function() {
         if (!this.isDisposed) {
           this.isDisposed = true;
           var e = this.current;
-          this.current = true, module && module.dispose()
+          this.current = true, e && e.dispose()
         }
       }
-    }]), module
+    }]), e
   }()

@@ -48,29 +48,29 @@ let d = {
     }
   },
   clearPendingWidgets() {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "WIDGET_PENDING_CLEAR"
     })
   },
   async fetchSuggestedGames() {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "WIDGET_SUGGESTED_FETCH_START"
     });
     try {
       var e, t, n, i, o, s;
-      let u = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.USER_PROFILE_SUGGESTED_GAMES,
+      let u = await r.tn.get({
+        url: c.ANM.USER_PROFILE_SUGGESTED_GAMES,
         rejectWithError: true
       });
-      ((null == (e = Chunk388032.body) ? true : module.suggested_games) == null || (null == (t = Chunk388032.body) ? true : exports.suggested_wishlist_games) == null) && Chunk960048.Z.captureMessage("Suggested games or wishlist games not found"), Chunk570140.Z.dispatch({
+      ((null == (e = u.body) ? true : e.suggested_games) == null || (null == (t = u.body) ? true : t.suggested_wishlist_games) == null) && l.Z.captureMessage("Suggested games or wishlist games not found"), a.Z.dispatch({
         type: "WIDGET_SUGGESTED_FETCH_SUCCESS",
-        suggestedGamesIds: null != (o = null == (n = Chunk388032.body) ? true : require.suggested_games) ? Chunk594174 : [],
-        suggestedWishlistGamesIds: null != (s = null == (i = Chunk388032.body) ? true : Chunk780384.suggested_wishlist_games) ? Chunk585483 : []
+        suggestedGamesIds: null != (o = null == (n = u.body) ? true : n.suggested_games) ? o : [],
+        suggestedWishlistGamesIds: null != (s = null == (i = u.body) ? true : i.suggested_wishlist_games) ? s : []
       })
     } catch (e) {
-      throw Chunk570140.Z.dispatch({
+      throw a.Z.dispatch({
         type: "WIDGET_SUGGESTED_FETCH_FAILURE"
-      }), Chunk960048.Z.captureException(module), module
+      }), l.Z.captureException(e), e
     }
   },
   removeGameFromSuggestedGames(e) {
@@ -80,6 +80,6 @@ let d = {
     })
   },
   notifyUnsavedWidgets() {
-    Chunk585483.S.dispatch(Chunk981631.CkL.SHAKE_PROFILE_MODAL), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), Chunk780384.uv.announce("".concat(Chunk388032.intl.string(Chunk388032.t.GP7JLE), " ").concat(Chunk388032.intl.string(Chunk388032.t.gKoO1D)))
+    s.S.dispatch(c.CkL.SHAKE_PROFILE_MODAL), s.S.dispatch(c.CkL.EMPHASIZE_NOTICE), i.uv.announce("".concat(u.intl.string(u.t.GP7JLE), " ").concat(u.intl.string(u.t.gKoO1D)))
   }
 }

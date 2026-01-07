@@ -49,7 +49,7 @@ let w = new Chunk710845.Z("ConnectionStore"),
   k = null;
 
 function U() {
-  return Chunk955132.Wb.isClosed() ? (w.verbose("Socket is reconnecting because of starting new session"), Chunk955132.Wb.connect()) : (w.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
+  return I.Wb.isClosed() ? (w.verbose("Socket is reconnecting because of starting new session"), I.Wb.connect()) : (w.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
 }
 
 function G(e) {
@@ -58,8 +58,8 @@ function G(e) {
 
 function Z() {
   return w.verbose("session refresh dispatched", {
-    isEstablished: Chunk955132.Wb.isSessionEstablished()
-  }), !!Chunk955132.Wb.isSessionEstablished() && (Chunk955132.Wb.close(), Chunk955132.Wb.connect())
+    isEstablished: I.Wb.isSessionEstablished()
+  }), !!I.Wb.isSessionEstablished() && (I.Wb.close(), I.Wb.connect())
 }
 async function F(e) {
   x = Date.now(), L = e.sessionId, I.RR.handleConnectionOpen();
@@ -99,7 +99,7 @@ function Y(e) {
 }
 
 function W() {
-  Chunk955132.GC.update()
+  I.GC.update()
 }
 
 function K(e) {
@@ -170,11 +170,11 @@ function $(e) {
 }
 
 function ee() {
-  return Chunk955132.GC.update(), false
+  return I.GC.update(), false
 }
 
 function et() {
-  return Chunk955132.RR.update(), false
+  return I.RR.update(), false
 }
 
 function en(e) {
@@ -239,11 +239,11 @@ function el(e) {
 
 function ec() {
   let e = eu();
-  Chunk959457.Z.getAllActiveStreamKeys().filter(t => t !== e).forEach(e => el(e))
+  O.Z.getAllActiveStreamKeys().filter(t => t !== e).forEach(e => el(e))
 }
 
 function eu() {
-  return Chunk959457.Z.getAllActiveStreamKeys().find(e => (0, u.my)(e).ownerId === p.default.getId())
+  return O.Z.getAllActiveStreamKeys().find(e => (0, u.my)(e).ownerId === p.default.getId())
 }
 
 function ed(e) {
@@ -284,7 +284,7 @@ function e_(e) {
 }
 
 function em() {
-  return Chunk955132.Wb.expeditedHeartbeat(5e3, "user clicked on notification", true), false
+  return I.Wb.expeditedHeartbeat(5e3, "user clicked on notification", true), false
 }
 
 function eh(e) {
@@ -308,19 +308,19 @@ function eE(e) {
 }
 class eb extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk523746.Z, Chunk592125.Z, Chunk131951.Z, Chunk19780.Z, Chunk936349.Z, Chunk944486.Z, Chunk885110.Z, Chunk959457.Z, Chunk581883.Z), this.syncWith([Chunk131951.Z], ee), this.syncWith([Chunk885110.Z], et)
+    this.waitFor(p.default, _.Z, m.Z, h.Z, g.Z, E.Z, b.Z, y.Z, O.Z, f.Z), this.syncWith([h.Z], ee), this.syncWith([y.Z], et)
   }
   getSocket() {
-    return Chunk955132.Wb
+    return I.Wb
   }
   isTryingToConnect() {
-    return !Chunk955132.Wb.isClosed()
+    return !I.Wb.isClosed()
   }
   isConnected() {
-    return Chunk955132.Wb.isSessionEstablished()
+    return I.Wb.isSessionEstablished()
   }
   isConnectedOrOverlay() {
-    return Chunk955132.Wb.isSessionEstablished() || __OVERLAY__
+    return I.Wb.isSessionEstablished() || __OVERLAY__
   }
   lastTimeConnectedChanged() {
     return x

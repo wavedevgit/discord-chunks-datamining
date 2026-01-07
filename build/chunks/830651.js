@@ -52,38 +52,38 @@ var c = {
 function u() {
   var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c,
     t = arguments.length > 1 ? arguments[1] : true,
-    n = exports.payload;
-  switch (exports.type) {
-    case Chunk964742.qu:
-      return s(s({}, module), {}, {
-        itemType: require.itemType,
-        item: require.item,
-        sourceId: require.sourceId,
-        isSourcePublic: require.isSourcePublic,
+    n = t.payload;
+  switch (t.type) {
+    case r.qu:
+      return s(s({}, e), {}, {
+        itemType: n.itemType,
+        item: n.item,
+        sourceId: n.sourceId,
+        isSourcePublic: n.isSourcePublic,
         dropResult: null,
         didDrop: false
       });
-    case Chunk964742.js:
-      return s(s({}, module), {}, {
+    case r.js:
+      return s(s({}, e), {}, {
         isSourcePublic: true
       });
-    case Chunk964742.$T:
-      return s(s({}, module), {}, {
-        targetIds: require.targetIds
+    case r.$T:
+      return s(s({}, e), {}, {
+        targetIds: n.targetIds
       });
-    case Chunk40284.IS:
-      if (false === module.targetIds.indexOf(require.targetId)) return module;
-      return s(s({}, module), {}, {
-        targetIds: (0, Chunk144459.zu)(module.targetIds, require.targetId)
+    case i.IS:
+      if (false === e.targetIds.indexOf(n.targetId)) return e;
+      return s(s({}, e), {}, {
+        targetIds: (0, a.zu)(e.targetIds, n.targetId)
       });
-    case Chunk964742.rp:
-      return s(s({}, module), {}, {
-        dropResult: require.dropResult,
+    case r.rp:
+      return s(s({}, e), {}, {
+        dropResult: n.dropResult,
         didDrop: true,
         targetIds: []
       });
-    case Chunk964742.Bs:
-      return s(s({}, module), {}, {
+    case r.Bs:
+      return s(s({}, e), {}, {
         itemType: null,
         item: null,
         sourceId: null,
@@ -93,6 +93,6 @@ function u() {
         targetIds: []
       });
     default:
-      return module
+      return e
   }
 }

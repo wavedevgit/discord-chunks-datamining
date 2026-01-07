@@ -21,20 +21,20 @@ function l(e, t, n) {
 let c = 5e3;
 class u extends Chunk147913.Z {
   preloadInbox() {
-    Chunk948154.Z.loadMoreInbox({
+    a.Z.loadMoreInbox({
       preload: true,
-      loadingTrigger: Chunk982183.X.AUTO_LOAD
+      loadingTrigger: s.X.AUTO_LOAD
     })
   }
   _terminate() {
     this.throttledPreloadInbox.cancel()
   }
   constructor() {
-    super(), l(this, "throttledPreloadInbox", true), l(this, "stores", new Map().set(Chunk787879.Z, () => {
-      !Chunk787879.Z.hasPreloaded && Chunk787879.Z.canLoadMore({
+    super(), l(this, "throttledPreloadInbox", true), l(this, "stores", new Map().set(o.Z, () => {
+      !o.Z.hasPreloaded && o.Z.canLoadMore({
         preload: true
       }) && this.throttledPreloadInbox()
-    })), this.throttledPreloadInbox = (0, Chunk392711.throttle)(this.preloadInbox, c)
+    })), this.throttledPreloadInbox = (0, r.throttle)(this.preloadInbox, c)
   }
 }
 let d = new u

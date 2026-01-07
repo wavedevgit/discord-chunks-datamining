@@ -17,42 +17,42 @@ var Chunk54381 = require("./54381.js"),
 
 function h() {
   var e, t;
-  let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    h = (0, Chunk410030.ZP)(),
-    f = (0, Chunk780384.wj)(h),
-    g = (0, Chunk347896.Z)(),
+  let n = (0, l.e7)([o.Z], () => o.Z.useReducedMotion),
+    h = (0, s.ZP)(),
+    f = (0, i.wj)(h),
+    g = (0, c.Z)(),
     y = null == g ? true : g.planSelectionBanner,
     {
       claimableRewards: j
-    } = (0, Chunk987209.wD)();
+    } = (0, u.wD)();
   if (null == y || null == j) return null;
-  let v = null == (e = y.getBackgroundImageUrl) ? true : module.call(y, f),
-    b = (0, Chunk717401.Yr)(v),
-    O = null == (t = y.gradientConfig) ? true : exports.call(y, {
+  let v = null == (e = y.getBackgroundImageUrl) ? true : e.call(y, f),
+    b = (0, d.Yr)(v),
+    O = null == (t = y.gradientConfig) ? true : t.call(y, {
       isDarkMode: f,
       isAndroid: false
     }),
-    S = (0, Chunk717401.Tl)(O, {
+    S = (0, d.Tl)(O, {
       colorStops: [0, 12, 100]
     }),
-    x = (0, Chunk717401.$q)(b, S, {
+    x = (0, d.$q)(b, S, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk325117.promotionalFooterBanner,
+  return (0, r.jsxs)("div", {
+    className: m.promotionalFooterBanner,
     style: x,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk325117.avatar,
-      children: (0, Chunk54381.jsx)(Chunk897942.Z, {
+    children: [(0, r.jsx)("div", {
+      className: m.avatar,
+      children: (0, r.jsx)(p.Z, {
         claimableRewards: j,
-        maxRewardImageSrc: y.getImageUrl(f, require),
-        size: Chunk481060.EFr.SIZE_40,
+        maxRewardImageSrc: y.getImageUrl(f, n),
+        size: a.EFr.SIZE_40,
         imageScaling: 1.25
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
-      className: Chunk325117.bannerText,
+      className: m.bannerText,
       color: "always-white",
       children: y.desktopBannerText(j.length)
     })]

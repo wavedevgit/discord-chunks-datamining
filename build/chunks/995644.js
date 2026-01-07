@@ -19,15 +19,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk921356 = require("./921356.js"),
   Chunk388032 = require("./388032.jsx");
 let N = (0, Chunk509613.k4)(Chunk313789.n.ACCOUNT_AUTHENTICATION_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.pKSjEj),
+  useTitle: () => I.intl.string(I.t.pKSjEj),
   useNotice: function() {
-    return (0, Chunk442837.e7)([Chunk594174.default], () => {
+    return (0, i.e7)([u.default], () => {
       var t, e;
-      return null != (e = null == (t = Chunk594174.default.getCurrentUser()) ? true : module.mfaEnabled) && exports
+      return null != (e = null == (t = u.default.getCurrentUser()) ? true : t.mfaEnabled) && e
     }) ? {
-      type: Chunk970013.v.STRONGLY_DISCOURAGED_CUSTOM,
-      notice: Chunk562436.Z
+      type: s.v.STRONGLY_DISCOURAGED_CUSTOM,
+      notice: a.Z
     } : null
   },
-  buildLayout: () => [Chunk341968.W, Chunk968021.M, Chunk921356.a, Chunk442639.g, Chunk857314.D, Chunk716856.o, Chunk743725.c, Chunk374509.g]
+  buildLayout: () => [c.W, _.M, g.a, S.g, o.D, T.o, E.c, d.g]
 })

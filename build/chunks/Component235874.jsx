@@ -118,23 +118,23 @@ class y extends(r = Chunk473749.Component) {
       spacing: S = 8,
       clickTrap: I = false
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk930295.H, {
+    return (0, i.jsx)(l.H, {
       ref: this.ref,
       targetElementRef: this.props.targetElementRef,
       preload: f,
       position: y,
-      align: null != Chunk473749 ? Chunk473749 : b(y),
+      align: null != a ? a : b(y),
       autoInvert: O,
-      fixed: Chunk793030,
+      fixed: o,
       nudgeAlignIntoViewport: v,
-      useRawTargetDimensions: Chunk493773,
+      useRawTargetDimensions: s,
       renderPopout: this.renderPopout,
       spacing: S,
-      shouldShow: null != g && exports,
-      onRequestOpen: require,
+      shouldShow: null != g && t,
+      onRequestOpen: n,
       onRequestClose: r,
-      onShiftClick: Chunk126306,
-      positionKey: Chunk74492,
+      onShiftClick: c,
+      positionKey: u,
       popoutKey: d,
       disablePointerEvents: p,
       ignoreModalClicks: _,
@@ -142,7 +142,7 @@ class y extends(r = Chunk473749.Component) {
       useMouseEnter: h,
       layerContext: E,
       clickTrap: I,
-      children: module
+      children: e
     })
   }
   constructor(...e) {

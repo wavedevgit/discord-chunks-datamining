@@ -61,16 +61,16 @@ class I extends Chunk473749.PureComponent {
       currentUser: e,
       host: t
     } = this.props;
-    return module.id === (null == exports ? true : exports.id)
+    return e.id === (null == t ? true : t.id)
   }
   renderTitle() {
-    return (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk115530.Z, {
-        children: this.isHost() ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6UJ7mh"], {
+    return (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(h.Z, {
+        children: this.isHost() ? _.intl.formatToPlainString(_.t["6UJ7mh"], {
           count: this.props.party.length
-        }) : Chunk388032.intl.string(Chunk388032.t.RZufbH)
-      }), (0, Chunk54381.jsx)(Chunk345243.Z, {
-        children: Chunk388032.intl.string(Chunk388032.t["0ZHLIi"])
+        }) : _.intl.string(_.t.RZufbH)
+      }), (0, r.jsx)(m.Z, {
+        children: _.intl.string(_.t["0ZHLIi"])
       })]
     })
   }
@@ -78,35 +78,35 @@ class I extends Chunk473749.PureComponent {
     let {
       onStopListening: e
     } = this.props;
-    return this.isHost() ? null : (0, Chunk54381.jsx)(Chunk870569.Z, {
-      tooltipText: Chunk388032.intl.string(Chunk388032.t.LeZSpz),
-      onClick: module,
-      icon: Chunk481060.Dio
+    return this.isHost() ? null : (0, r.jsx)(g.Z, {
+      tooltipText: _.intl.string(_.t.LeZSpz),
+      onClick: e,
+      icon: s.Dio
     })
   }
   renderHelpIcon() {
-    return this.isHost() ? (0, Chunk54381.jsx)(Chunk870569.Z, {
-      tooltipText: Chunk388032.intl.string(Chunk388032.t.U7N2Hs),
+    return this.isHost() ? (0, r.jsx)(g.Z, {
+      tooltipText: _.intl.string(_.t.U7N2Hs),
       onClick: () => {
-        window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.SPOTIFY_CONNECTION), "_blank")
+        window.open(f.Z.getArticleURL(b.BhN.SPOTIFY_CONNECTION), "_blank")
       },
-      icon: Chunk481060.d3s
+      icon: s.d3s
     }) : null
   }
   render() {
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk139661.listeningAlong,
-      children: [this.renderTitle(), (0, Chunk54381.jsx)(Chunk600164.Z, {
-        justify: Chunk600164.Z.Justify.END,
-        className: Chunk139661.party,
-        children: (0, Chunk54381.jsx)(Chunk237583.Z, {
+    return (0, r.jsxs)("div", {
+      className: E.listeningAlong,
+      children: [this.renderTitle(), (0, r.jsx)(u.Z, {
+        justify: u.Z.Justify.END,
+        className: E.party,
+        children: (0, r.jsx)(p.Z, {
           users: this.props.party,
           max: this.isHost() ? 5 : 4,
           renderUser: this.renderPartyMember,
           renderMoreUsers: this.renderPartyMemberOverflow
         })
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk139661.icons,
+      }), (0, r.jsxs)("div", {
+        className: E.icons,
         children: [this.renderHelpIcon(), this.renderStopListeningButton()]
       })]
     })

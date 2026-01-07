@@ -59,12 +59,12 @@ let _ = e => {
     }
   },
   m = () => {
-    let e = (0, Chunk442837.e7)([Chunk451478.Z], () => Chunk451478.Z.isFocused()),
-      t = (0, Chunk110924.Z)(module),
-      n = module !== exports;
+    let e = (0, o.e7)([l.Z], () => l.Z.isFocused()),
+      t = (0, s.Z)(e),
+      n = e !== t;
     return {
-      focused: module,
-      focusedChanged: require
+      focused: e,
+      focusedChanged: n
     }
   },
   h = Chunk473749.memo(function(e) {

@@ -22,7 +22,7 @@ var Chunk610394 = require("./610394.js");
 
 function f() {
   let [e = PopoutWindowStore] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [PopoutWindowStore];
-  return module.getWindowVisible(OVERLAY_V3_KEY)
+  return e.getWindowVisible(OVERLAY_V3_KEY)
 }
 require("./340101.js"), require("./757744.js"), require("./501787.js");
 
@@ -44,31 +44,31 @@ function _(e, t) {
 
 function m() {
   var e, t;
-  let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk594190.ZP,
-    r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk293273.Z,
-    i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk317381.ZP,
-    s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : Chunk812206.Z,
-    f = arguments.length > 4 && true !== arguments[4] ? arguments[4] : Chunk610394.Z,
-    p = arguments.length > 5 && true !== arguments[5] ? arguments[5] : (0, Chunk850405.e)(),
-    _ = Chunk902704.getCurrentEmbeddedActivity(),
+  let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c.ZP,
+    r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.Z,
+    i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a.ZP,
+    s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : l.Z,
+    f = arguments.length > 4 && true !== arguments[4] ? arguments[4] : d.Z,
+    p = arguments.length > 5 && true !== arguments[5] ? arguments[5] : (0, o.e)(),
+    _ = i.getCurrentEmbeddedActivity(),
     m = null == _ ? true : _.applicationId,
-    h = null == m ? true : Chunk426419.getApplication(m);
+    h = null == m ? true : s.getApplication(m);
   if (null != _ && null != h && p) return {
     id: _.applicationId,
     altId: true,
     name: h.name
   };
   let g = f.getTargetPID(),
-    E = require.getGameForPID(g),
-    b = Chunk442837.getActivityForPID(g);
+    E = n.getGameForPID(g),
+    b = r.getActivityForPID(g);
   return (null == E || null == E.id || null == E.name) && (null == b || null == b.application_id) ? true : {
-    id: null != (e = null == E ? true : E.id) ? module : null == b ? true : b.application_id,
+    id: null != (e = null == E ? true : E.id) ? e : null == b ? true : b.application_id,
     altId: null == b ? true : b.application_id,
-    name: null != (t = null == E ? true : E.name) ? exports : null == b ? true : b.name
+    name: null != (t = null == E ? true : E.name) ? t : null == b ? true : b.name
   }
 }
 
 function h() {
-  let e = (0, Chunk426419.P)();
-  return (0, Chunk442837.e7)([Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, Chunk610394.Z], () => m(Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, Chunk610394.Z, module), [module], Chunk902704.Z)
+  let e = (0, s.P)();
+  return (0, r.e7)([c.ZP, u.Z, a.ZP, l.Z, d.Z], () => m(c.ZP, u.Z, a.ZP, l.Z, d.Z, e), [e], i.Z)
 }

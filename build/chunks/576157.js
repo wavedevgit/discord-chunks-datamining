@@ -12,18 +12,18 @@ var Chunk473749 = require("./473749.js"),
   Chunk921944 = require("./921944.js");
 
 function c() {
-  let e = (0, Chunk266454.Nj)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE);
-  return Chunk473749.useEffect(() => {
-    if (!module) return (0, Chunk605236.kk)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE), () => {
-      (0, Chunk211644.gE)({
-        content: Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE
+  let e = (0, o.Nj)(i.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE);
+  return r.useEffect(() => {
+    if (!e) return (0, s.kk)(i.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE), () => {
+      (0, a.gE)({
+        content: i.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE
       }, false)
     }
-  }, [module]), {
-    shouldShowNewBadge: !module,
-    markNewBadgeAsDismissed: Chunk473749.useCallback(() => {
-      (0, Chunk266454.Q3)(Chunk704215.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE, {
-        dismissAction: Chunk921944.L.TAKE_ACTION
+  }, [e]), {
+    shouldShowNewBadge: !e,
+    markNewBadgeAsDismissed: r.useCallback(() => {
+      (0, o.Q3)(i.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE, {
+        dismissAction: l.L.TAKE_ACTION
       })
     }, [])
   }

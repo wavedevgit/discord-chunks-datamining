@@ -15,11 +15,11 @@ function s(e, t) {
 }
 
 function l() {
-  let e = (0, Chunk399606.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildIds()),
-    t = (0, Chunk399606.e7)([Chunk763296.Z], () => Chunk763296.Z.getSounds());
-  return (0, Chunk473749.useMemo)(() => s(module, exports), [module, exports])
+  let e = (0, i.Wu)([a.Z], () => a.Z.getGuildIds()),
+    t = (0, i.e7)([o.Z], () => o.Z.getSounds());
+  return (0, r.useMemo)(() => s(e, t), [e, t])
 }
 
 function c() {
-  return s(Chunk430824.Z.getGuildIds(), Chunk763296.Z.getSounds())
+  return s(a.Z.getGuildIds(), o.Z.getSounds())
 }

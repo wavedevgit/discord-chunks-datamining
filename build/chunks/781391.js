@@ -41,7 +41,7 @@ function s(e) {
 }
 
 function l() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "CLEAR_THEME_OVERRIDE"
   })
 }

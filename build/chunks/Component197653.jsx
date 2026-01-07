@@ -53,9 +53,9 @@ let a = Chunk473749.createContext(null),
   };
 
 function s() {
-  let e = Chunk473749.useContext(a);
-  if (null == module) throw Error("Cannot use the ComponentLayoutLimitContext system when not within the context");
-  return module
+  let e = i.useContext(a);
+  if (null == e) throw Error("Cannot use the ComponentLayoutLimitContext system when not within the context");
+  return e
 }
 
 function l(e) {
@@ -68,16 +68,16 @@ function l(e) {
 
 function c() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    t = Chunk473749.useRef(null),
-    [n, r] = Chunk473749.useState(0),
-    [a, o] = Chunk473749.useState(0);
-  return Chunk473749.useLayoutEffect(() => {
-    if (null == exports.current) return;
+    t = i.useRef(null),
+    [n, r] = i.useState(0),
+    [a, o] = i.useState(0);
+  return i.useLayoutEffect(() => {
+    if (null == t.current) return;
     let n = new ResizeObserver(() => {
-      let n = exports.current.getBoundingClientRect().width,
-        i = getComputedStyle(exports.current);
-      Chunk54381(require + (parseFloat(Chunk473749.marginLeft) + parseFloat(Chunk473749.marginRight))), module && o(require - (parseFloat(Chunk473749.paddingLeft) + parseFloat(Chunk473749.paddingRight) + parseFloat(Chunk473749.borderLeftWidth) + parseFloat(Chunk473749.borderRightWidth)))
+      let n = t.current.getBoundingClientRect().width,
+        i = getComputedStyle(t.current);
+      r(n + (parseFloat(i.marginLeft) + parseFloat(i.marginRight))), e && o(n - (parseFloat(i.paddingLeft) + parseFloat(i.paddingRight) + parseFloat(i.borderLeftWidth) + parseFloat(i.borderRightWidth)))
     });
-    return require.observe(exports.current), () => require.disconnect()
-  }, [module]), [exports, require, a]
+    return n.observe(t.current), () => n.disconnect()
+  }, [e]), [t, n, a]
 }

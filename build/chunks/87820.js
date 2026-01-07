@@ -9,7 +9,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk695346 = require("./695346.js");
 
 function o() {
-  let e = Chunk695346.xq.useSetting(),
-    t = Chunk473749.useMemo(() => (0, Chunk88658.bL)(module), [module]);
-  return exports.mutualGuilds && !exports.all
+  let e = a.xq.useSetting(),
+    t = r.useMemo(() => (0, i.bL)(e), [e]);
+  return t.mutualGuilds && !t.all
 }

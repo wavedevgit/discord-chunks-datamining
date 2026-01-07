@@ -26,30 +26,30 @@ let I = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: () => ({
       variant: "details",
-      applicationId: Chunk804919.L.LEAGUE_OF_LEGENDS
+      applicationId: u.L.LEAGUE_OF_LEGENDS
     }),
-    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.xJtdIm)
+    getAriaLabel: () => N.intl.string(N.t.xJtdIm)
   },
   [Chunk296009.l.CURRENT_GAMES]: {
     placeholder: () => ({
       variant: "details",
-      applicationId: Chunk804919.L.VALORANT
+      applicationId: u.L.VALORANT
     }),
-    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.Ae8tRi)
+    getAriaLabel: () => N.intl.string(N.t.Ae8tRi)
   },
   [Chunk296009.l.PLAYED_GAMES]: {
     placeholder: () => ({
       variant: "grid",
-      applicationIds: [Chunk804919.L.PEAK, Chunk804919.L.BATTLEFIELD_6, Chunk804919.L.REPO, Chunk804919.L.BALDURS_GATE_3]
+      applicationIds: [u.L.PEAK, u.L.BATTLEFIELD_6, u.L.REPO, u.L.BALDURS_GATE_3]
     }),
-    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t["pBR+4j"])
+    getAriaLabel: () => N.intl.string(N.t["pBR+4j"])
   },
   [Chunk296009.l.WANT_TO_PLAY_GAMES]: {
     placeholder: () => ({
       variant: "grid",
-      applicationIds: [Chunk804919.L.MARVEL_RIVALS, Chunk804919.L.WORLD_OF_WARCRAFT, Chunk804919.L.RUST, Chunk804919.L.SILKSONG]
+      applicationIds: [u.L.MARVEL_RIVALS, u.L.WORLD_OF_WARCRAFT, u.L.RUST, u.L.SILKSONG]
     }),
-    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.NtoBi1)
+    getAriaLabel: () => N.intl.string(N.t.NtoBi1)
   },
   [Chunk296009.l.APPLICATION]: {
     placeholder: e => ({

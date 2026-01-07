@@ -19,18 +19,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk592286 = require("./592286.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk161752 = require("./161752.js");
-let v = () => (0, Chunk54381.jsx)(Chunk796027.Z, {
+let v = () => (0, r.jsx)(s.Z, {
     submitting: false,
-    message: Chunk388032.intl.string(Chunk388032.t["8g514U"]),
+    message: g.intl.string(g.t["8g514U"]),
     onReset: () => {
-      (0, Chunk266395.PE)(false)
+      (0, f.PE)(false)
     },
-    onResetText: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+    onResetText: g.intl.string(g.t["ETE/oC"]),
     onSave: () => {
-      (0, Chunk266395.PE)(false), (0, Chunk481060.Mr3)(Chunk592286.Pn)
+      (0, f.PE)(false), (0, u.Mr3)(h.Pn)
     },
-    onSaveText: Chunk388032.intl.string(Chunk388032.t["Xt+Uab"]),
-    onSaveButtonColor: Chunk755721.Tt.RED
+    onSaveText: g.intl.string(g.t["Xt+Uab"]),
+    onSaveButtonColor: c.Tt.RED
   }),
   j = e => {
     let {

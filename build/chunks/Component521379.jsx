@@ -23,17 +23,17 @@ function d(e, t, n) {
 Chunk442837.ZP.initialize();
 class h extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
-    (0, Chunk108427.e)("account_revert")
+    (0, c.e)("account_revert")
   }
   render() {
     let {
       token: e
     } = this.props.match.params;
-    return (0, Chunk54381.jsx)(Chunk388905.ZP, {
+    return (0, i.jsx)(l.ZP, {
       style: {
         padding: 0
       },
-      children: (0, Chunk54381.jsx)(Chunk559786.Z, function(e) {
+      children: (0, i.jsx)(u.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -46,7 +46,7 @@ class h extends(r = Chunk473749.PureComponent) {
         return e
       }({
         width: 464,
-        token: module
+        token: e
       }, this.props))
     })
   }

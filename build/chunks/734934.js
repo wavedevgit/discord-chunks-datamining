@@ -17,9 +17,9 @@ var Chunk381499 = require("./381499.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p() {
-  let e = Chunk695346.QZ.useSetting(),
-    t = Chunk695346.fv.useSetting();
-  return module && ("0" === exports || new Date(Number(exports)).getTime() - new Date().getTime() > 0)
+  let e = o.QZ.useSetting(),
+    t = o.fv.useSetting();
+  return e && ("0" === t || new Date(Number(t)).getTime() - new Date().getTime() > 0)
 }
 
 function _(e, t) {

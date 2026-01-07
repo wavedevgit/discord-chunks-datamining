@@ -129,10 +129,10 @@ function C(e) {
 }
 
 function A() {
-  let e = v.fontSize !== Chunk981631.yqN.FONT_SIZE_DEFAULT,
-    t = v.zoom !== Chunk981631.yqN.ZOOM_DEFAULT;
-  if (!module && !exports) returnfalse;
-  (v = m({}, v)).fontSize !== Chunk981631.yqN.FONT_SIZE_DEFAULT && (v.fontSize = Chunk981631.yqN.FONT_SIZE_DEFAULT), v.zoom !== Chunk981631.yqN.ZOOM_DEFAULT && (v.zoom = Chunk981631.yqN.ZOOM_DEFAULT, Chunk12647.Z.setZoomFactor(v.zoom))
+  let e = v.fontSize !== f.yqN.FONT_SIZE_DEFAULT,
+    t = v.zoom !== f.yqN.ZOOM_DEFAULT;
+  if (!e && !t) returnfalse;
+  (v = m({}, v)).fontSize !== f.yqN.FONT_SIZE_DEFAULT && (v.fontSize = f.yqN.FONT_SIZE_DEFAULT), v.zoom !== f.yqN.ZOOM_DEFAULT && (v.zoom = f.yqN.ZOOM_DEFAULT, d.Z.setZoomFactor(v.zoom))
 }
 
 function N() {
@@ -275,30 +275,30 @@ class J extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     this.waitFor(u.Z), this.waitFor(l.Z), isNaN((v = m({}, O, null != e ? e : null)).fontSize) && (v.fontSize = f.yqN.FONT_SIZE_DEFAULT), 0 > p.fP.indexOf(null != v.messageGroupSpacing ? v.messageGroupSpacing : false) && (v.messageGroupSpacing = null)
   }
   get fontScale() {
-    return v.fontSize / Chunk981631.yqN.FONT_SIZE_DEFAULT * 100
+    return v.fontSize / f.yqN.FONT_SIZE_DEFAULT * 100
   }
   get fontSize() {
     return v.fontSize
   }
   get isFontScaledUp() {
-    return v.fontSize > Chunk981631.yqN.FONT_SIZE_DEFAULT
+    return v.fontSize > f.yqN.FONT_SIZE_DEFAULT
   }
   get isFontScaledDown() {
-    return v.fontSize < Chunk981631.yqN.FONT_SIZE_DEFAULT
+    return v.fontSize < f.yqN.FONT_SIZE_DEFAULT
   }
   get fontScaleClass() {
     var e;
-    let t = null != (e = S[this.fontSize]) ? module : "";
-    return this.isFontScaledUp ? "a11y-font-scaled-up ".concat(exports) : this.isFontScaledDown ? "a11y-font-scaled-down ".concat(exports) : "".concat(exports)
+    let t = null != (e = S[this.fontSize]) ? e : "";
+    return this.isFontScaledUp ? "a11y-font-scaled-up ".concat(t) : this.isFontScaledDown ? "a11y-font-scaled-down ".concat(t) : "".concat(t)
   }
   get zoom() {
     return v.zoom
   }
   get isZoomedIn() {
-    return v.zoom > Chunk981631.yqN.ZOOM_DEFAULT
+    return v.zoom > f.yqN.ZOOM_DEFAULT
   }
   get isZoomedOut() {
-    return v.zoom < Chunk981631.yqN.ZOOM_DEFAULT
+    return v.zoom < f.yqN.ZOOM_DEFAULT
   }
   get keyboardModeEnabled() {
     return v.keyboardModeEnabled
@@ -325,15 +325,15 @@ class J extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return v.keyboardNavigationExplainerModalSeen
   }
   get messageGroupSpacing() {
-    return null != v.messageGroupSpacing ? v.messageGroupSpacing : Chunk695346.jU.getSetting() ? Chunk959517.c8 : Chunk959517.pq
+    return null != v.messageGroupSpacing ? v.messageGroupSpacing : c.jU.getSetting() ? p.c8 : p.pq
   }
   get isMessageGroupSpacingIncreased() {
-    let e = Chunk695346.jU.getSetting() ? Chunk959517.c8 : Chunk959517.pq;
-    return this.messageGroupSpacing > module
+    let e = c.jU.getSetting() ? p.c8 : p.pq;
+    return this.messageGroupSpacing > e
   }
   get isMessageGroupSpacingDecreased() {
-    let e = Chunk695346.jU.getSetting() ? Chunk959517.c8 : Chunk959517.pq;
-    return this.messageGroupSpacing < module
+    let e = c.jU.getSetting() ? p.c8 : p.pq;
+    return this.messageGroupSpacing < e
   }
   get isSubmitButtonEnabled() {
     return v.submitButtonEnabled
@@ -348,7 +348,7 @@ class J extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return v.prefersReducedMotion
   }
   get useReducedMotion() {
-    if (Chunk661247.Z.active) returntrue;
+    if (l.Z.active) returntrue;
     switch (v.prefersReducedMotion) {
       case "no-preference":
         returnfalse;
@@ -399,13 +399,13 @@ _(J, "displayName", "AccessibilityStore"), _(J, "persistKey", "AccessibilityStor
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",
-    r = Chunk433517.K.get(module) || 100,
-    i = Chunk433517.K.get(exports) || Chunk981631.yqN.ZOOM_DEFAULT,
-    o = Chunk433517.K.get(require) || false;
-  return Chunk433517.K.remove(module), Chunk433517.K.remove(exports), Chunk433517.K.remove(require), {
+    r = a.K.get(e) || 100,
+    i = a.K.get(t) || f.yqN.ZOOM_DEFAULT,
+    o = a.K.get(n) || false;
+  return a.K.remove(e), a.K.remove(t), a.K.remove(n), {
     fontScale: r,
-    zoom: Chunk442837,
-    colorblindMode: Chunk780384,
+    zoom: i,
+    colorblindMode: o,
     keyboardModeEnabled: false
   }
 }, e => {

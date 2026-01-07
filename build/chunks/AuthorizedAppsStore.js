@@ -96,7 +96,7 @@ function O(e) {
 }
 class v extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk757266.Z, Chunk375954.Z)
+    this.waitFor(o.Z, s.Z, l.Z)
   }
   getNewestTokenForApplication(e) {
     var t;

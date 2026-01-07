@@ -30,19 +30,19 @@ class f extends Chunk442837.ZP.Store {
   }
   async refresh() {
     var e, t;
-    let n = await (null == (t = Chunk287328.Z.database()) || null == (e = exports.fsInfo()) ? true : module.catch(e => c.warn("couldn't get fs info", e)));
-    if (null != require) {
-      let e = require.fs.available < 256 * u || require.fs.available < 3 * require.database.used || require.fs.available < 2 * require.database.total,
-        t = require.fs.available > 768 * u && require.fs.available > 4 * require.database.used && require.fs.available > 4 * require.database.total,
-        r = !!module || !exports && null;
-      null != Chunk442837 && this.isLowDisk !== Chunk442837 && (this.isLowDisk = Chunk442837, this.emitChange())
+    let n = await (null == (t = s.Z.database()) || null == (e = t.fsInfo()) ? true : e.catch(e => c.warn("couldn't get fs info", e)));
+    if (null != n) {
+      let e = n.fs.available < 256 * u || n.fs.available < 3 * n.database.used || n.fs.available < 2 * n.database.total,
+        t = n.fs.available > 768 * u && n.fs.available > 4 * n.database.used && n.fs.available > 4 * n.database.total,
+        r = !!e || !t && null;
+      null != r && this.isLowDisk !== r && (this.isLowDisk = r, this.emitChange())
     }
   }
   constructor() {
-    super(Chunk570140.Z, {
+    super(i.Z, {
       APP_STATE_UPDATE: e => this.handleAppStateUpdate(e),
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-    }), l(this, "isLowDisk", false), this.refresh(), this.waitFor(Chunk287328.Z), setInterval(() => this.refresh(), d)
+    }), l(this, "isLowDisk", false), this.refresh(), this.waitFor(s.Z), setInterval(() => this.refresh(), d)
   }
 }
 let p = new f

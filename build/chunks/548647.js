@@ -12,11 +12,11 @@ var Chunk473749 = require("./473749.js"),
   Chunk800530 = require("./800530.js"),
   Chunk981631 = require("./981631.js");
 let x = () => {
-  let n = (0, Chunk442837.e7)([Chunk236289.Z], () => Chunk236289.Z.getAppealClassificationId()),
-    t = (0, Chunk613734.YG)(null != module ? module : Chunk981631.lds),
-    e = (0, Chunk451284.P)(),
-    x = (0, Chunk442837.e7)([Chunk236289.Z], () => Chunk236289.Z.getIsDsaEligible());
-  return Chunk473749.useCallback(i => {
+  let n = (0, a.e7)([l.Z], () => l.Z.getAppealClassificationId()),
+    t = (0, o.YG)(null != n ? n : d.lds),
+    e = (0, r.P)(),
+    x = (0, a.e7)([l.Z], () => l.Z.getIsDsaEligible());
+  return i.useCallback(i => {
     s.default.track(d.rMx.SAFETY_HUB_ACTION, {
       action: i,
       account_standing: e.state,
@@ -25,5 +25,5 @@ let x = () => {
       is_dsa_eligible: x,
       violation_type: t.violationType
     })
-  }, [require.state, module, exports, x])
+  }, [e.state, n, t, x])
 }

@@ -111,7 +111,7 @@ class ep extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.setState({
       initialized: true
-    }), (0, Chunk113544.Q5)(this.getVisibleChannels)
+    }), (0, k.Q5)(this.getVisibleChannels)
   }
   componentWillUnmount() {
     this.updateChannelListScroll.cancel()
@@ -170,7 +170,7 @@ class ep extends(r = Chunk473749.PureComponent) {
     let {
       guildChannels: e
     } = this.props, t = this._list;
-    return null != exports && exports.getItems().some(n => {
+    return null != t && t.getItems().some(n => {
       if ("row" !== n.type) returnfalse;
       let {
         section: r,
@@ -197,17 +197,17 @@ class ep extends(r = Chunk473749.PureComponent) {
       guildChannels: a,
       guildChannelsVersion: o
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk135445.positionedContainer,
-      children: (0, Chunk54381.jsx)(Chunk950969.Z, {
+    return (0, i.jsx)("div", {
+      className: ec.positionedContainer,
+      children: (0, i.jsx)(et.Z, {
         ref: this.unreadTopRef,
-        textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT3),
-        textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LJ"]),
-        hide: null == module && (r || null != exports || null != require),
-        className: Chunk135445.unreadTop,
-        barClassName: Chunk135445.unreadBar,
-        guildId: Chunk473749,
-        guildChannels: Chunk392711,
+        textUnread: es.intl.string(es.t.FCRiT3),
+        textMention: es.intl.string(es.t["8zH0LJ"]),
+        hide: null == e && (r || null != t || null != n),
+        className: ec.unreadTop,
+        barClassName: ec.unreadBar,
+        guildId: l,
+        guildChannels: a,
         guildChannelsVersion: o,
         isVisible: this.isChannelVisible,
         onJumpTo: this.jumpToChannelWithMentionsAndUnreads,
@@ -224,17 +224,17 @@ class ep extends(r = Chunk473749.PureComponent) {
       bottomMention: r,
       isUnreadVisible: l
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk950969.Z, {
+    return (0, i.jsx)(et.Z, {
       reverse: true,
       ref: this.unreadBottomRef,
-      textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT3),
-      textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LJ"]),
-      hide: null == r && Chunk473749,
-      className: Chunk135445.unreadBottom,
-      barClassName: Chunk135445.unreadBar,
-      guildId: module,
-      guildChannels: exports,
-      guildChannelsVersion: require,
+      textUnread: es.intl.string(es.t.FCRiT3),
+      textMention: es.intl.string(es.t["8zH0LJ"]),
+      hide: null == r && l,
+      className: ec.unreadBottom,
+      barClassName: ec.unreadBar,
+      guildId: e,
+      guildChannels: t,
+      guildChannelsVersion: n,
       isVisible: this.isChannelVisible,
       onJumpTo: this.jumpToChannelWithMentionsAndUnreads,
       onCalculate: this.handleUnreadCalculate
@@ -247,11 +247,11 @@ class ep extends(r = Chunk473749.PureComponent) {
       selectedGuildId: n,
       density: r
     } = this.props, l = {};
-    require === Chunk981631.I_8 && (Chunk473749["data-favorites"] = true);
+    n === ea.I_8 && (l["data-favorites"] = true);
     let a = this.context,
       {
         ref: o
-      } = Chunk392711,
+      } = a,
       s = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
@@ -266,11 +266,11 @@ class ep extends(r = Chunk473749.PureComponent) {
           for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
-      }(Chunk392711, ["ref"]),
+      }(a, ["ref"]),
       c = 0;
-    null != exports && (c = Chunk327530.Q0);
-    let u = "compact" === r ? 8 : Chunk327530.$k;
-    return (0, Chunk54381.jsx)(Chunk481060.Wdt, {
+    null != t && (c = el.Q0);
+    let u = "compact" === r ? 8 : el.$k;
+    return (0, i.jsx)(d.Wdt, {
       children: t => (0, i.jsx)(d.aVo, ed({
         ref: this.setListRef,
         className: ec.scroller,
@@ -299,7 +299,7 @@ class ep extends(r = Chunk473749.PureComponent) {
       guildChannelsVersion: t,
       showNewUnreadsBar: n
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk313201.FG, {
+    return (0, i.jsx)(y.FG, {
       children: r => (0, i.jsx)(d.y5t, {
         component: (0, i.jsx)(d.nn4, {
           children: (0, i.jsx)(d.H, {

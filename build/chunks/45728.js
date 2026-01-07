@@ -36,7 +36,7 @@ class i {
   }
   resolvedOptions() {
     let e = this.formatter.resolvedOptions();
-    return u() && (this.resolvedHourCycle || (this.resolvedHourCycle = d(module.locale, this.options)), module.hourCycle = this.resolvedHourCycle, module.hour12 = "h11" === this.resolvedHourCycle || "h12" === this.resolvedHourCycle), "ethiopic-amete-alem" === module.calendar && (module.calendar = "ethioaa"), module
+    return u() && (this.resolvedHourCycle || (this.resolvedHourCycle = d(e.locale, this.options)), e.hourCycle = this.resolvedHourCycle, e.hour12 = "h11" === this.resolvedHourCycle || "h12" === this.resolvedHourCycle), "ethiopic-amete-alem" === e.calendar && (e.calendar = "ethioaa"), e
   }
   constructor(e, t = {}) {
     this.formatter = o(e, t), this.options = t

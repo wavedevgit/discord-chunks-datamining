@@ -15,20 +15,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  let e = Chunk695346.I0.useSetting(),
+  let e = l.I0.useSetting(),
     {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)(),
-    n = Chunk473749.useCallback(e => {
+    } = (0, o.ZP)(),
+    n = i.useCallback(e => {
       (0, c.Z)("stream_previews_disabled", e, l.I0.getSetting(), t), l.I0.updateSetting(e)
-    }, [exports]);
-  return (0, Chunk54381.jsx)(Chunk921801.F, {
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
-    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["1CzWUK"]),
-      description: Chunk388032.intl.string(Chunk388032.t.jTNPHM),
-      checked: module,
-      onChange: require
+    }, [t]);
+  return (0, r.jsx)(s.F, {
+    setting: u.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
+    children: (0, r.jsx)(a.rsf, {
+      label: d.intl.string(d.t["1CzWUK"]),
+      description: d.intl.string(d.t.jTNPHM),
+      checked: e,
+      onChange: n
     })
   })
 }

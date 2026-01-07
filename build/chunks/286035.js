@@ -9,13 +9,13 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function i() {
-  Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
+  r.Z.wait(() => r.Z.dispatch({
     type: "DOMAIN_MIGRATION_START"
   }))
 }
 
 function a() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "DOMAIN_MIGRATION_FAILURE"
   })
 }

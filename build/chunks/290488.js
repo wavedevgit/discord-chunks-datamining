@@ -7,7 +7,7 @@ function i() {
   return null != r ? r : r = (async () => {
     let {
       default: e
-    } = await require.e("20353").then(require.t.bind(require, 62994, 23)), t = new module({
+    } = await n.e("20353").then(n.t.bind(n, 62994, 23)), t = new e({
       params: {
         logProcessStats: false,
         useSharedArrayBuffer: false,
@@ -20,7 +20,7 @@ function i() {
         }
       }
     });
-    return await exports.init(), exports
+    return await t.init(), t
   })()
 }
 require.d(exports, {

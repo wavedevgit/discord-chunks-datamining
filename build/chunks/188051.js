@@ -10,8 +10,8 @@ var Chunk481060 = require("./481060.js"),
 let o = {
   binds: ["mod+alt+shift+w"],
   comboKeysBindGlobal: true,
-  action: () => ((0, Chunk423932.Z)({
-    source: Chunk407383.I.KEYBIND,
-    onClose: Chunk481060.pTH
+  action: () => ((0, i.Z)({
+    source: a.I.KEYBIND,
+    onClose: r.pTH
   }), false)
 }

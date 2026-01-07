@@ -15,31 +15,31 @@ o.resetWarningCache = r, module.exports = function() {
   }
 
   function t() {
-    return module
+    return e
   }
-  module.isRequired = module;
+  e.isRequired = e;
   var n = {
-    array: module,
-    bigint: module,
-    bool: module,
-    func: module,
-    number: module,
-    object: module,
-    string: module,
-    symbol: module,
-    any: module,
-    arrayOf: exports,
-    element: module,
-    elementType: module,
-    instanceOf: exports,
-    node: module,
-    objectOf: exports,
-    oneOf: exports,
-    oneOfType: exports,
-    shape: exports,
-    exact: exports,
+    array: e,
+    bigint: e,
+    bool: e,
+    func: e,
+    number: e,
+    object: e,
+    string: e,
+    symbol: e,
+    any: e,
+    arrayOf: t,
+    element: e,
+    elementType: e,
+    instanceOf: t,
+    node: e,
+    objectOf: t,
+    oneOf: t,
+    oneOfType: t,
+    shape: t,
+    exact: t,
     checkPropTypes: o,
     resetWarningCache: r
   };
-  return require.PropTypes = require, require
+  return n.PropTypes = n, n
 }

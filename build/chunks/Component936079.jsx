@@ -34,46 +34,46 @@ function O(e, t, n) {
 
 function v() {
   let e = window.require("electron").remote.getCurrentWindow();
-  Chunk998502.ZP.minimize = () => module.minimize(), Chunk998502.ZP.maximize = () => {
-    module.isMaximized() ? module.unmaximize() : module.maximize()
-  }, Chunk998502.ZP.close = () => module.close()
+  g.ZP.minimize = () => e.minimize(), g.ZP.maximize = () => {
+    e.isMaximized() ? e.unmaximize() : e.maximize()
+  }, g.ZP.close = () => e.close()
 }
 let S = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
-  focused: Chunk451478.Z.isFocused()
+  focused: p.Z.isFocused()
 }))(Chunk151851.Z);
 class I extends Chunk473749.PureComponent {
   getPlatform() {
     var e;
-    let t = null == (e = o().os) ? true : module.family;
-    return null != exports && /^win/i.test(exports) ? Chunk358085.PlatformTypes.WINDOWS : null != exports && /darwin|os x/i.test(exports) ? Chunk358085.PlatformTypes.OSX : Chunk358085.PlatformTypes.LINUX
+    let t = null == (e = o().os) ? true : e.family;
+    return null != t && /^win/i.test(t) ? h.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? h.PlatformTypes.OSX : h.PlatformTypes.LINUX
   }
   componentDidMount() {
     v()
   }
   render() {
-    let e = (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsxs)("p", {
-        children: [Chunk388032.intl.string(Chunk388032.t["4tRjHC"]), " ", (0, Chunk54381.jsx)(Chunk596454.Z, {
-          src: Chunk176354.ZP.getURL(Chunk336317.Z.convert.fromCodePoint("1f44c")),
+    let e = (0, r.jsx)("div", {
+      children: (0, r.jsxs)("p", {
+        children: [y.intl.string(y.t["4tRjHC"]), " ", (0, r.jsx)(d.Z, {
+          src: _.ZP.getURL(c.Z.convert.fromCodePoint("1f44c")),
           emojiName: ":ok_hand:",
           animated: false
         })]
       })
     });
-    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk131271.ql, {
-        children: (0, Chunk54381.jsx)("html", {
-          className: (0, Chunk481060.QeD)(Chunk981631.BRd.DARK)
+    return (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(s.ql, {
+        children: (0, r.jsx)("html", {
+          className: (0, u.QeD)(b.BRd.DARK)
         })
-      }), (0, Chunk54381.jsx)(S, {
+      }), (0, r.jsx)(S, {
         type: this.getPlatform()
-      }), (0, Chunk54381.jsx)(Chunk406128.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t["3h+n+8"]),
-        note: module,
-        action: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, r.jsx)(E.Z, {
+        title: y.intl.string(y.t["3h+n+8"]),
+        note: e,
+        action: (0, r.jsx)(u.Button, {
           size: "md",
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t["1WjMbC"]),
+          text: y.intl.string(y.t["1WjMbC"]),
           onClick: this.handleDownload
         })
       })]

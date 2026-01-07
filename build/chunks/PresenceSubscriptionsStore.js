@@ -17,8 +17,8 @@ let p = {},
   f = {},
   h = new Chunk846519.sW(3e3, function() {
     let e = [];
-    for (let [t, n] of Object.entries(f)) module.push(require), p[exports] = require, delete f[exports];
-    0 !== module.length && Chunk278323.Z.subscribeActivities(module)
+    for (let [t, n] of Object.entries(f)) e.push(n), p[t] = n, delete f[t];
+    0 !== e.length && s.Z.subscribeActivities(e)
   });
 
 function m(e) {
@@ -31,7 +31,7 @@ function g() {
 }
 class b extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk158776.Z)
+    this.waitFor(c.Z)
   }
   isSubscribed(e) {
     return m(e)

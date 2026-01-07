@@ -26,10 +26,10 @@ class i {
   get range() {
     if (true === this.formatted) {
       this.formatted = "";
-      for (let e = 0; module < this.set.length; module++) {
-        module > 0 && (this.formatted += "||");
-        let t = this.set[module];
-        for (let e = 0; module < exports.length; module++) module > 0 && (this.formatted += " "), this.formatted += exports[module].toString().trim()
+      for (let e = 0; e < this.set.length; e++) {
+        e > 0 && (this.formatted += "||");
+        let t = this.set[e];
+        for (let e = 0; e < t.length; e++) e > 0 && (this.formatted += " "), this.formatted += t[e].toString().trim()
       }
     }
     return this.formatted
@@ -80,8 +80,17 @@ let a = new(require("./147567.js")),
   Chunk721919 = require("./721919.js"),
   Chunk13556 = require("./13556.js"),
   Chunk40231 = require("./40231.js"),
-  Chunk646664 = require("./646664.js"),
-  Chunk942177 = require("./942177.js"),
+  {
+    safeRe: u,
+    t: d,
+    comparatorTrimReplace: f,
+    tildeTrimReplace: p,
+    caretTrimReplace: _
+  } = require("./646664.js"),
+  {
+    FLAG_INCLUDE_PRERELEASE: m,
+    FLAG_LOOSE: h
+  } = require("./942177.js"),
   g = e => "<0.0.0-0" === e.value,
   E = e => "" === e.value,
   b = (e, t) => {

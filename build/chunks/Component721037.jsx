@@ -73,25 +73,25 @@ class U extends Chunk473749.PureComponent {
       activityPIPWindow: p,
       chatOpen: _,
       callChatSidebarWidth: m
-    } = this.props, h = document.body.style.getPropertyValue("--custom-guild-sidebar-width"), b = "" !== Chunk113036 ? parseInt(Chunk113036, 10) : Chunk981631.PrS, y = Chunk866885.width - Chunk238246 - (Chunk591472 ? Chunk857096 : 0), O = null != Chunk950796, v = !Chunk358221 && Chunk210887 && Chunk591472 && Chunk928518 < Chunk354459.oo;
-    return (0, Chunk54381.jsxs)(Chunk522501._X, {
-      children: [(0, Chunk54381.jsx)(Chunk241915.Z, {
+    } = this.props, h = document.body.style.getPropertyValue("--custom-guild-sidebar-width"), b = "" !== h ? parseInt(h, 10) : P.PrS, y = d.width - b - (_ ? m : 0), O = null != p, v = !f && O && _ && y < w.oo;
+    return (0, r.jsxs)(E._X, {
+      children: [(0, r.jsx)(g.Z, {
         pictureInPictureComponents: j,
-        selectedPIPWindow: module,
-        pipWindows: exports,
-        pipWidth: require,
-        maxX: Chunk473749,
-        maxY: Chunk442837,
-        dockedRect: Chunk317381,
-        theme: Chunk519938,
+        selectedPIPWindow: e,
+        pipWindows: t,
+        pipWidth: n,
+        maxX: i,
+        maxY: a,
+        dockedRect: s,
+        theme: o,
         onWindowMove: this.handleWindowMove,
         onWindowResize: this.handleWindowResize,
-        appContext: Chunk988980,
-        roundCorners: Chunk16609,
+        appContext: l,
+        roundCorners: c,
         resizeConfig: M,
-        getDockedRectPositionY: Chunk917107
-      }), (0, Chunk54381.jsx)(Chunk522501.mK, {
-        className: Chunk740492 ? Chunk684692.belowSidebar : true
+        getDockedRectPositionY: u
+      }), (0, r.jsx)(E.mK, {
+        className: v ? x.belowSidebar : true
       })]
     })
   }

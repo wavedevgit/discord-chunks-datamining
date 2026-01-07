@@ -155,13 +155,13 @@ function g(e) {
 }
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk433355.ZP, Chunk944486.Z), Chunk433355.ZP.addChangeListener(() => {
-      let e = Chunk944486.Z.getChannelId();
-      if (null == module) return d = {}, true;
-      let t = Chunk433355.ZP.getCurrentSidebarChannelId(module);
-      if (null != exports && exports in d) returnfalse;
-      d = module in d ? {
-        [module]: d[module]
+    this.waitFor(o.ZP, s.Z), o.ZP.addChangeListener(() => {
+      let e = s.Z.getChannelId();
+      if (null == e) return d = {}, true;
+      let t = o.ZP.getCurrentSidebarChannelId(e);
+      if (null != t && t in d) returnfalse;
+      d = e in d ? {
+        [e]: d[e]
       } : {}
     })
   }

@@ -10,14 +10,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_STREAMER_MODE, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.TGNg6T),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["4nXLnE"]),
+  useTitle: () => a.intl.string(a.t.TGNg6T),
+  useSubtitle: () => a.intl.string(a.t["4nXLnE"]),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk246946.Z], () => {
+    return (0, i.e7)([u.Z], () => {
       let {
         enabled: t
-      } = Chunk246946.Z.getSettings();
-      return module
+      } = u.Z.getSettings();
+      return t
     })
   },
   setValue: function(t) {

@@ -29,19 +29,19 @@ class _ extends Chunk473749.PureComponent {
       children: t,
       pageSize: n,
       onClick: i
-    } = this.props, l = require === Chunk843445.b.LARGE;
-    return (0, Chunk54381.jsx)(Chunk755721.zx, {
-      size: Chunk120356 ? Chunk755721.zx.Sizes.MIN : Chunk755721.zx.Sizes.LARGE,
-      fullWidth: !Chunk120356,
-      color: module ? Chunk175496.tabSelectedColor : Chunk175496.tabNotSelectedColor,
+    } = this.props, l = n === f.b.LARGE;
+    return (0, r.jsx)(o.zx, {
+      size: l ? o.zx.Sizes.MIN : o.zx.Sizes.LARGE,
+      fullWidth: !l,
+      color: e ? h.tabSelectedColor : h.tabNotSelectedColor,
       className: a()({
-        [Chunk175496.tabPageLarge]: Chunk120356,
-        [Chunk175496.tabPageSmall]: !Chunk120356,
-        [Chunk175496.tabSelected]: module,
-        [Chunk175496.tabNotSelected]: !module
+        [h.tabPageLarge]: l,
+        [h.tabPageSmall]: !l,
+        [h.tabSelected]: e,
+        [h.tabNotSelected]: !e
       }),
-      onClick: Chunk473749,
-      children: exports
+      onClick: i,
+      children: t
     })
   }
 }
@@ -62,23 +62,23 @@ class E extends Chunk473749.PureComponent {
       systemRequirements: t
     } = this.props, {
       selectedOperatingSystem: n
-    } = this.state, i = Object.keys(exports);
-    return 1 === Chunk473749.length ? null : (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      className: Chunk175496.tabs,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk175496.separator
-      }), Chunk473749.map(t => (0, r.jsx)(_, {
+    } = this.state, i = Object.keys(t);
+    return 1 === i.length ? null : (0, r.jsxs)(c.Z, {
+      className: h.tabs,
+      children: [(0, r.jsx)("div", {
+        className: h.separator
+      }), i.map(t => (0, r.jsx)(_, {
         active: t === n,
         onClick: () => this.handleSelectOperatingSystem(t),
         pageSize: e,
         children: function(e) {
           switch (e) {
             case g.TaA.WINDOWS:
-              return h.intl.string(h.t["0/xHFO"]);
+              return m.intl.string(m.t["0/xHFO"]);
             case g.TaA.MACOS:
-              return h.intl.string(h.t.E4u4n5);
+              return m.intl.string(m.t.E4u4n5);
             case g.TaA.LINUX:
-              return h.intl.string(h.t.tcawo3)
+              return m.intl.string(m.t.tcawo3)
           }
         }(t)
       }, t))]
@@ -87,47 +87,47 @@ class E extends Chunk473749.PureComponent {
   renderRequirementsSection(e, t) {
     if (null == e) return null;
     let n = [{
-      key: h.intl.string(h.t["0TcHzv"]),
+      key: m.intl.string(m.t["0TcHzv"]),
       value: e.operating_system_version
     }, {
-      key: h.intl.string(h.t.eOX6Hq),
+      key: m.intl.string(m.t.eOX6Hq),
       value: e.cpu
     }, {
-      key: h.intl.string(h.t["+WJ5XQ"]),
-      value: null != e.ram ? h.intl.formatToPlainString(h.t.RNRSl6, {
+      key: m.intl.string(m.t["+WJ5XQ"]),
+      value: null != e.ram ? m.intl.formatToPlainString(m.t.RNRSl6, {
         size: (0, u.BU)(1e3 * e.ram, {
           showDecimalForGB: false
         })
       }) : null
     }, {
-      key: h.intl.string(h.t["+3s/V/"]),
+      key: m.intl.string(m.t["+3s/V/"]),
       value: e.gpu
     }, {
-      key: h.intl.string(h.t["L+x5wB"]),
+      key: m.intl.string(m.t["L+x5wB"]),
       value: null != e.disk ? (0, u.BU)(1e3 * e.disk, {
         showDecimalForGB: false
       }) : null
     }, {
-      key: h.intl.string(h.t["Ghp2/B"]),
+      key: m.intl.string(m.t["Ghp2/B"]),
       value: e.sound_card
     }, {
-      key: h.intl.string(h.t["+w6nJg"]),
+      key: m.intl.string(m.t["+w6nJg"]),
       value: e.network
     }, {
-      key: h.intl.string(h.t.Au3Vbp),
+      key: m.intl.string(m.t.Au3Vbp),
       value: e.notes
     }].map((e, t) => {
       let n = null != e.value ? e.value.trim() : null;
       return null == n || 0 === n.length ? null : (0, r.jsxs)("div", {
-        className: m.requirement,
+        className: h.requirement,
         children: [(0, r.jsxs)("span", {
-          className: m.requirementKey,
+          className: h.requirementKey,
           children: [e.key, ":"]
         }), n]
       }, t)
     }).filter(d.lm);
     return (0, r.jsxs)("div", {
-      className: m.requirements,
+      className: h.requirements,
       children: [(0, r.jsx)(s.Z, {
         tag: "h4",
         children: t
@@ -139,16 +139,16 @@ class E extends Chunk473749.PureComponent {
       minimum: e,
       recommended: t
     } = this.props.systemRequirements[this.state.selectedOperatingSystem];
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk175496.requirementsContainer,
-      children: [this.renderRequirementsSection(module, Chunk388032.intl.string(Chunk388032.t.QCCMXE)), this.renderRequirementsSection(exports, Chunk388032.intl.string(Chunk388032.t.He39wq))]
+    return (0, r.jsxs)("div", {
+      className: h.requirementsContainer,
+      children: [this.renderRequirementsSection(e, m.intl.string(m.t.QCCMXE)), this.renderRequirementsSection(t, m.intl.string(m.t.He39wq))]
     })
   }
   render() {
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, r.jsxs)("div", {
       className: this.props.className,
-      children: [(0, Chunk54381.jsx)(Chunk770146.Z, {
-        children: Chunk388032.intl.string(Chunk388032.t.IkOAol)
+      children: [(0, r.jsx)(s.Z, {
+        children: m.intl.string(m.t.IkOAol)
       }), this.renderTabs(), this.renderBody()]
     })
   }

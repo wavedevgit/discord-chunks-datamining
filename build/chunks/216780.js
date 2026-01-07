@@ -17,7 +17,7 @@ let l = 0;
 function c() {
   return {
     id: l,
-    name: Chunk388032.intl.string(Chunk388032.t.E407b7)
+    name: s.intl.string(s.t.E407b7)
   }
 }
 

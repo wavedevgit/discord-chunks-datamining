@@ -12,16 +12,16 @@ var Chunk779618 = require("./779618.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.yXvykv),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.YP3ujk),
+  useTitle: () => T.intl.string(T.t.yXvykv),
+  useSubtitle: () => T.intl.string(T.t.YP3ujk),
   useValue: Chunk341569.nq,
   setValue: t => s._Q({
     enabled: t,
     trackAnalytics: true
   }),
   usePredicate: () => {
-    let t = (0, Chunk358085.isWindows)(),
-      e = (0, Chunk779618.Z)(Chunk131951.Z);
-    return module && exports
+    let t = (0, a.isWindows)(),
+      e = (0, i.Z)(r.Z);
+    return t && e
   }
 })

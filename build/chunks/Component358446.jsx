@@ -19,16 +19,16 @@ var Chunk704215 = require("./704215.js"),
   Chunk849356 = require("./849356.js");
 
 function p() {
-  let e = (0, Chunk809357.Z)({
+  let e = (0, c.Z)({
       location: "Overlay",
       options: {
         autoTrackExposure: false
       }
     }),
-    [t, n] = (0, Chunk706140.cv)(module ? [Chunk704215.z.OVERLAY_KEYBIND_NOTIFICATION] : []);
+    [t, n] = (0, l.cv)(e ? [r.z.OVERLAY_KEYBIND_NOTIFICATION] : []);
   return {
-    showKeybindIndicators: null != exports && module,
-    dismissKeybindNotification: require
+    showKeybindIndicators: null != t && e,
+    dismissKeybindNotification: n
   }
 }
 

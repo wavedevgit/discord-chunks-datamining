@@ -65,11 +65,11 @@ function C(e, t) {
 }
 
 function h() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk388032.intl.string(Chunk388032.t["gnsna/"]);
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : T.intl.string(T.t["gnsna/"]);
   return [{
-    rowType: Chunk71080.aC.EMPTY_STATE,
-    colorString: Chunk981631.Pbq,
-    name: module,
+    rowType: I.aC.EMPTY_STATE,
+    colorString: p.Pbq,
+    name: e,
     disabled: true,
     id: "EMPTY_STATE"
   }]

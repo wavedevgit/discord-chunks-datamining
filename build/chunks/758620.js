@@ -10,9 +10,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_GAME_SIGNALS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.iV6KcI),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["dJ2tX+"]),
-  useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().clipSignals.enableGameSignals),
+  useTitle: () => a.intl.string(a.t.iV6KcI),
+  useSubtitle: () => a.intl.string(a.t["dJ2tX+"]),
+  useValue: () => (0, i.e7)([l.Z], () => l.Z.getSettings().clipSignals.enableGameSignals),
   setValue: t => {
     var e, n;
     let i = l.Z.getSettings().clipSignals;

@@ -39,13 +39,13 @@ class h extends(i = Chunk473749.Component) {
       visible: e,
       inlineSpecs: t
     } = this.props;
-    null == exports && this.show(module)
+    null == t && this.show(e)
   }
   componentWillUnmount() {
     let {
       inlineSpecs: e
     } = this.props;
-    null == module && this.show(false)
+    null == e && this.show(false)
   }
   componentDidUpdate(e) {
     let {
@@ -103,16 +103,16 @@ class h extends(i = Chunk473749.Component) {
       windowFocused: a,
       position: o,
       autoInvert: s
-    } = this.props, c = Chunk10401.Z.getData()[exports];
-    return null != module && null != Chunk451478 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [require, i && (0, Chunk54381.jsx)(Chunk5560.V, f({
-        autoInvert: Chunk260300,
-        position: Chunk442837,
-        tutorialId: exports,
-        tutorialDefinition: Chunk451478,
-        focused: Chunk374470
-      }, module))]
-    }) : Chunk473749.Children.only(require)
+    } = this.props, c = d.Z.getData()[t];
+    return null != e && null != c ? (0, r.jsxs)(r.Fragment, {
+      children: [n, i && (0, r.jsx)(u.V, f({
+        autoInvert: s,
+        position: o,
+        tutorialId: t,
+        tutorialDefinition: c,
+        focused: a
+      }, e))]
+    }) : l.Children.only(n)
   }
 }
 

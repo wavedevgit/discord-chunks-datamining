@@ -18,14 +18,14 @@ function p(e, t) {
 }
 
 function m() {
-  let e = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getClips()),
-    t = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getPendingClips()),
-    n = (0, Chunk52436.f)();
-  return Chunk473749.useMemo(() => {
-    let l = [...exports, ...module],
+  let e = (0, c.e7)([u.Z], () => u.Z.getClips()),
+    t = (0, c.e7)([u.Z], () => u.Z.getPendingClips()),
+    n = (0, d.f)();
+  return l.useMemo(() => {
+    let l = [...t, ...e],
       r = new Map,
       a = [];
-    for (let e of Chunk473749) {
+    for (let e of l) {
       let t = function(e, t) {
         var n, l, r, a;
         if (t.selectedUserIds.size > 0 && !Array.from(t.selectedUserIds).every(t => e.users.includes(t))) returnfalse;
@@ -44,20 +44,20 @@ function m() {
           if (n !== t.selectedActivity && l !== t.selectedActivity) returnfalse
         }
         return (null === t.selectedYear || s()(o.default.extractTimestamp(e.id)).year() === t.selectedYear) && true
-      }(module, require);
-      if (exports && Chunk913527.push(module), null == module.applicationId) continue;
-      let l = Chunk658722.get(module.applicationId);
-      null == Chunk473749 ? Chunk658722.set(module.applicationId, {
-        clips: [module],
-        filteredClips: exports ? [module] : [],
-        mostRecentClipId: module.id,
-        name: module.applicationName
-      }) : (Chunk473749.clips.push(module), exports && Chunk473749.filteredClips.push(module), module.id > Chunk473749.mostRecentClipId && (Chunk473749.mostRecentClipId = module.id))
+      }(e, n);
+      if (t && a.push(e), null == e.applicationId) continue;
+      let l = r.get(e.applicationId);
+      null == l ? r.set(e.applicationId, {
+        clips: [e],
+        filteredClips: t ? [e] : [],
+        mostRecentClipId: e.id,
+        name: e.applicationName
+      }) : (l.clips.push(e), t && l.filteredClips.push(e), e.id > l.mostRecentClipId && (l.mostRecentClipId = e.id))
     }
-    let c = p(Chunk913527, require.sortOrder),
-      u = p(Chunk913527.filter(e => e.isFavorite), require.sortOrder);
+    let c = p(a, n.sortOrder),
+      u = p(a.filter(e => e.isFavorite), n.sortOrder);
     return {
-      clipsByGame: Array.from(Chunk658722.entries()).map(e => {
+      clipsByGame: Array.from(r.entries()).map(e => {
         let [t, l] = e;
         return {
           applicationId: t,
@@ -67,9 +67,9 @@ function m() {
           filteredClips: p(l.filteredClips, n.sortOrder)
         }
       }).sort((e, t) => t.mostRecentClipId.localeCompare(e.mostRecentClipId)),
-      allClips: Chunk473749,
-      filteredClips: Chunk442837,
-      favoriteClips: Chunk435064
+      allClips: l,
+      filteredClips: c,
+      favoriteClips: u
     }
-  }, [module, exports, require])
+  }, [e, t, n])
 }

@@ -19,8 +19,8 @@ var Chunk4313 = require("./4313.js"),
   };
 
 function f() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  return !exports.some(function(e) {
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  return !t.some(function(e) {
     return !(e && "function" == typeof e.getBoundingClientRect)
   })
 }

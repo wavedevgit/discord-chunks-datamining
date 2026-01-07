@@ -19,14 +19,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk478411 = require("./478411.js");
 
 function L() {
-  return (0, Chunk54381.jsx)(Chunk297700.Z, {
-    className: Chunk616145.verifiedIcon,
-    children: (0, Chunk54381.jsx)("div", {
-      className: Chunk616145.verifiedCheckContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.kmB, {
+  return (0, r.jsx)(c.Z, {
+    className: m.verifiedIcon,
+    children: (0, r.jsx)("div", {
+      className: m.verifiedCheckContainer,
+      children: (0, r.jsx)(s.kmB, {
         size: "xs",
         color: "currentColor",
-        className: Chunk616145.verifiedCheck
+        className: m.verifiedCheck
       })
     })
   })

@@ -16,24 +16,24 @@ var Chunk684342 = require("./684342.js"),
   },
   c = function() {
     function e() {}
-    return module.connect = function(e, t) {
+    return e.connect = function(e, t) {
       var n = new a.r(e, t);
       o.C.push(n), s.set(e, n)
-    }, module.observe = function(e, t, n) {
+    }, e.observe = function(e, t, n) {
       if (s.has(e)) {
         var a = s.get(e);
         0 > l(a.observationTargets, t) && (a.observationTargets.push(new i.Q(t, n && n.box)), (0, r.t)(1), r.p.schedule())
       }
-    }, module.unobserve = function(e, t) {
+    }, e.unobserve = function(e, t) {
       if (s.has(e)) {
         var n = s.get(e),
           i = l(n.observationTargets, t);
         i >= 0 && (n.observationTargets.splice(i, 1), (0, r.t)(false))
       }
-    }, module.disconnect = function(e) {
+    }, e.disconnect = function(e) {
       if (s.has(e)) {
         var t = s.get(e);
         o.C.splice(o.C.indexOf(t), 1), s.delete(e), (0, r.t)(-t.observationTargets.length)
       }
-    }, module
+    }, e
   }()

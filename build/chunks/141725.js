@@ -47,22 +47,22 @@ var l = {
 function c() {
   var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : l,
     t = arguments.length > 1 ? arguments[1] : true,
-    n = exports.payload;
-  switch (exports.type) {
-    case Chunk964742.TL:
-    case Chunk964742.qu:
+    n = t.payload;
+  switch (t.type) {
+    case r.TL:
+    case r.qu:
       return {
-        initialSourceClientOffset: require.sourceClientOffset, initialClientOffset: require.clientOffset, clientOffset: require.clientOffset
+        initialSourceClientOffset: n.sourceClientOffset, initialClientOffset: n.clientOffset, clientOffset: n.clientOffset
       };
-    case Chunk964742.$T:
-      if ((0, Chunk304832.YJ)(module.clientOffset, require.clientOffset)) return module;
-      return o(o({}, module), {}, {
-        clientOffset: require.clientOffset
+    case r.$T:
+      if ((0, i.YJ)(e.clientOffset, n.clientOffset)) return e;
+      return o(o({}, e), {}, {
+        clientOffset: n.clientOffset
       });
-    case Chunk964742.Bs:
-    case Chunk964742.rp:
+    case r.Bs:
+    case r.rp:
       return l;
     default:
-      return module
+      return e
   }
 }

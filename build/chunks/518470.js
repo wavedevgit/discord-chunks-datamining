@@ -8,9 +8,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l() {
-  return Chunk473749.useMemo(() => [{
+  return r.useMemo(() => [{
     value: null,
-    label: Chunk388032.intl.string(Chunk388032.t.zHfL6o)
+    label: i.intl.string(i.t.zHfL6o)
   }, {
     value: 10,
     label: "10"

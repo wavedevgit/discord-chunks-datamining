@@ -28,12 +28,12 @@ class m extends Chunk473749.PureComponent {
     o.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
   }
   render() {
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk103918.container,
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk103918.sliderContainer,
-        children: (0, Chunk54381.jsx)(Chunk481060.iRW, {
-          label: Chunk388032.intl.string(Chunk388032.t.OVovCb),
+    return (0, i.jsx)("div", {
+      className: p.container,
+      children: (0, i.jsx)("div", {
+        className: p.sliderContainer,
+        children: (0, i.jsx)(s.iRW, {
+          label: h.intl.string(h.t.OVovCb),
           mini: true,
           initialValue: this.initialValue,
           defaultValue: this.initialValue,
@@ -43,7 +43,7 @@ class m extends Chunk473749.PureComponent {
           onValueChange: this.handleUpdateBackgroundOpacity,
           asValueChanges: this.handlePreviewBackgroundOpacity,
           markers: g,
-          onMarkerRender: Chunk981631.dG4,
+          onMarkerRender: f.dG4,
           equidistant: true,
           stickToMarkers: true,
           "aria-labelledby": b
@@ -64,5 +64,5 @@ class m extends Chunk473749.PureComponent {
   }
 }
 let y = Chunk442837.ZP.connectStores([Chunk237997.default], () => ({
-  opacity: Chunk237997.default.getTextWidgetOpacity()
+  opacity: c.default.getTextWidgetOpacity()
 }))(m)

@@ -13,37 +13,37 @@ var Chunk54381 = require("./54381.js"),
   Chunk963182 = require("./963182.js");
 
 function u() {
-  return (0, Chunk54381.jsx)(Chunk481060.Ttm, {
-    className: Chunk963182.container,
-    children: (0, Chunk54381.jsx)(m, {})
+  return (0, a.jsx)(s.Ttm, {
+    className: d.container,
+    children: (0, a.jsx)(m, {})
   })
 }
 
 function m() {
-  let e = Chunk473749.useCallback(() => {
-      (0, Chunk675478.Z1)(Chunk704215.z.NITRO_TENURE_BADGE_LEVEL_UP)
+  let e = r.useCallback(() => {
+      (0, c.Z1)(l.z.NITRO_TENURE_BADGE_LEVEL_UP)
     }, []),
     {
       lastDismissedAtMs: t
-    } = (0, Chunk605236.Fo)(Chunk704215.z.NITRO_TENURE_BADGE_LEVEL_UP),
-    n = null != exports ? new Date(exports) : null;
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
-      className: Chunk963182.header,
+    } = (0, o.Fo)(l.z.NITRO_TENURE_BADGE_LEVEL_UP),
+    n = null != t ? new Date(t) : null;
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)(i.X6q, {
+      className: d.header,
       variant: "heading-lg/semibold",
       children: "Tenure Badges"
-    }), (0, Chunk54381.jsxs)("p", {
-      children: ["Level Up DC:\xa0", null != require && (0, Chunk54381.jsxs)("b", {
-        children: ["Dismissed (", require.toLocaleDateString(), ")"]
-      }), null == require && (0, Chunk54381.jsx)("b", {
+    }), (0, a.jsxs)("p", {
+      children: ["Level Up DC:\xa0", null != n && (0, a.jsxs)("b", {
+        children: ["Dismissed (", n.toLocaleDateString(), ")"]
+      }), null == n && (0, a.jsx)("b", {
         children: "Not Dismissed"
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk963182.tenureBadgeControls,
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    }), (0, a.jsx)("div", {
+      className: d.tenureBadgeControls,
+      children: (0, a.jsx)(s.Button, {
         variant: "primary",
         text: "Reset Level Up DC",
-        onClick: module
+        onClick: e
       })
     })]
   })

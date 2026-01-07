@@ -61,7 +61,7 @@ function g(e, t) {
 }
 let E = "overlayKeybindExperimentPreviousKeybindSettings",
   b = new Chunk579092.Yd("OverlayKeybindExperimentManager"),
-  y = (0, Chunk663042.U)(() => Chunk433517.K.get(E, {}));
+  y = (0, Chunk663042.U)(() => o.K.get(E, {}));
 
 function O() {
   return y.getState()
@@ -93,10 +93,10 @@ function C(e) {
 }
 
 function A() {
-  let e = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK, true);
-  if (null == module) returntrue;
-  let t = (0, Chunk556296.vN)();
-  return (0, Chunk13140.m3)(module.shortcut, exports.shortcut)
+  let e = u.ZP.getKeybindForAction(p.kg4.TOGGLE_OVERLAY_INPUT_LOCK, true);
+  if (null == e) returntrue;
+  let t = (0, u.vN)();
+  return (0, d.m3)(e.shortcut, t.shortcut)
 }
 class N extends Chunk147913.Z {
   constructor(...e) {

@@ -5,8 +5,8 @@ var Chunk72689 = require("./72689.js"),
   i = Object.prototype.hasOwnProperty,
   a = Array.isArray,
   o = function() {
-    for (var e = [], t = 0; exports < 256; ++exports) module.push("%" + ((exports < 16 ? "0" : "") + exports.toString(16)).toUpperCase());
-    return module
+    for (var e = [], t = 0; t < 256; ++t) e.push("%" + ((t < 16 ? "0" : "") + t.toString(16)).toUpperCase());
+    return e
   }(),
   s = function(e) {
     for (; e.length > 1;) {

@@ -89,10 +89,10 @@ function G(e) {
 function Z() {
   let e = [];
   for (let t in i) {
-    let n = i[exports];
-    for (let r in require) module.push(i[exports][r])
+    let n = i[t];
+    for (let r in n) e.push(i[t][r])
   }
-  return module
+  return e
 }
 
 function F(e) {
@@ -365,10 +365,10 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
   }
   getLastActiveStream() {
     var e;
-    return (0, Chunk139656.Z)(Chunk131951.Z) && null != (e = Array.from(r.values()).pop()) ? module : null
+    return (0, h.Z)(v.Z) && null != (e = Array.from(r.values()).pop()) ? e : null
   }
   getAllActiveStreams() {
-    return (0, Chunk139656.Z)(Chunk131951.Z) ? Array.from(r.values()) : []
+    return (0, h.Z)(v.Z) ? Array.from(r.values()) : []
   }
   getAllActiveStreamsForChannel(e) {
     return (0, h.Z)(v.Z) ? Array.from(r.values()).filter(t => t.channelId === e) : []
@@ -384,9 +384,9 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
     return null != (t = this.getActiveStreamForStreamKey(n)) ? t : null
   }
   getCurrentUserActiveStream() {
-    let e = Chunk944486.Z.getVoiceChannelId(),
-      t = Chunk592125.Z.getChannel(module);
-    return null == exports ? null : this.getActiveStreamForUser(Chunk314897.default.getId(), exports.getGuildId())
+    let e = T.Z.getVoiceChannelId(),
+      t = y.Z.getChannel(e);
+    return null == t ? null : this.getActiveStreamForUser(b.default.getId(), t.getGuildId())
   }
   getActiveStreamForUser(e, t) {
     var n;
@@ -395,11 +395,11 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
   }
   getStreamerActiveStreamMetadata() {
     var e;
-    let t = Chunk944486.Z.getVoiceChannelId(),
-      n = Chunk592125.Z.getChannel(exports);
-    if (null == require) return null;
-    let r = this.getActiveStreamForUser(Chunk314897.default.getId(), require.getGuildId());
-    return null == r ? null : null != (e = o[(0, Chunk569545.V9)(r)]) ? module : null
+    let t = T.Z.getVoiceChannelId(),
+      n = y.Z.getChannel(t);
+    if (null == n) return null;
+    let r = this.getActiveStreamForUser(b.default.getId(), n.getGuildId());
+    return null == r ? null : null != (e = o[(0, _.V9)(r)]) ? e : null
   }
   getStreamerActiveStreamMetadataForStream(e) {
     var t;
@@ -433,7 +433,7 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
     return (0, h.Z)(v.Z) && null != (t = a[e]) ? t : null
   }
   getAllApplicationStreams() {
-    return (0, Chunk139656.Z)(Chunk131951.Z) ? Z().filter(e => null != e && er(e.streamType, e.channelId)) : []
+    return (0, h.Z)(v.Z) ? Z().filter(e => null != e && er(e.streamType, e.channelId)) : []
   }
   getAllApplicationStreamsForChannel(e) {
     return (0, h.Z)(v.Z) ? Z().filter(t => null != t && t.channelId === e && er(t.streamType, t.channelId)) : []
@@ -448,7 +448,7 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
     return j
   }
   getStreamingState() {
-    return (0, Chunk139656.Z)(Chunk131951.Z) ? {
+    return (0, h.Z)(v.Z) ? {
       activeStreams: Array.from(r.entries()),
       streamsByUserAndGuild: i,
       rtcStreams: a,

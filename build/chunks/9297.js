@@ -12,15 +12,15 @@ var Chunk473749 = require("./473749.js"),
   Chunk616211 = require("./616211.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.k4)(Chunk313789.n.VOICE_SECURITY_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.WWaFn5),
+  useTitle: () => T.intl.string(T.t.WWaFn5),
   useNotice: function() {
-    return Chunk473749.useMemo(() => ({
-      type: Chunk970013.v.INLINE_NOTICE,
+    return i.useMemo(() => ({
+      type: u.v.INLINE_NOTICE,
       noticeType: "info",
-      useText: () => Chunk388032.intl.format(Chunk388032.t["/6sFWa"], {
-        helpArticle: (0, Chunk630759.uV)()
+      useText: () => T.intl.format(T.t["/6sFWa"], {
+        helpArticle: (0, l.uV)()
       })
     }), [])
   },
-  buildLayout: () => [Chunk612039.E, Chunk616211.n]
+  buildLayout: () => [a.E, o.n]
 })

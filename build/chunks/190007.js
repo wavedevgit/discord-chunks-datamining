@@ -49,7 +49,7 @@ function m(e) {
 }
 
 function b() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET"
   })
 }

@@ -119,12 +119,12 @@ function R() {
 }
 
 function w() {
-  if (r === Chunk706454.default.locale) returnfalse;
-  r = Chunk706454.default.locale, R()
+  if (r === s.default.locale) returnfalse;
+  r = s.default.locale, R()
 }
 class D extends(i = Chunk442837.yh) {
   initialize() {
-    this.waitFor(Chunk706454.default, Chunk77498.Z), this.syncWith([Chunk706454.default], w), r = Chunk706454.default.locale
+    this.waitFor(s.default, c.Z), this.syncWith([s.default], w), r = s.default.locale
   }
   get(e) {
     return _.get(e)

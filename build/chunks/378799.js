@@ -132,9 +132,9 @@ let E = new g;
 async function b() {
   var e;
   if (__OVERLAY__) return E = new g, false;
-  if ((null == (e = navigator.keyboard) ? true : module.getLayoutMap) != null) try {
+  if ((null == (e = navigator.keyboard) ? true : e.getLayoutMap) != null) try {
     let e = await navigator.keyboard.getLayoutMap();
-    return E = new g(Object.fromEntries(module.entries())), true
+    return E = new g(Object.fromEntries(e.entries())), true
   } catch (e) {
     E = new g
   }
@@ -170,7 +170,7 @@ let S = "keyboard-layout-map";
 
 function I() {
   var e;
-  return null != (e = Chunk433517.K.get(S)) ? module : null
+  return null != (e = a.K.get(S)) ? e : null
 }
 
 function T(e) {
@@ -211,17 +211,17 @@ class C {
     let e = {};
     for (let [n, r] of Object.entries(this.keyMap)) {
       var t;
-      module[Chunk921738] = null != (t = module[Chunk921738]) ? exports : [], module[Chunk921738].push({
-        keyCode: Chunk921738,
-        key: require,
-        code: this.findCodeFromKeyboardLayoutMap(require, true)
+      e[r] = null != (t = e[r]) ? t : [], e[r].push({
+        keyCode: r,
+        key: n,
+        code: this.findCodeFromKeyboardLayoutMap(n, true)
       })
     }
-    return module
+    return e
   }
   _initializeInternalLayoutMap() {
     let e = y();
-    this._internalKeyLayoutMap = new Map(Array.from(module.entries())), this._setCachedKeyLayoutMapEntries()
+    this._internalKeyLayoutMap = new Map(Array.from(e.entries())), this._setCachedKeyLayoutMapEntries()
   }
   _hasExactMatch(e) {
     if (null == e.keyCode) returnfalse;
@@ -388,13 +388,13 @@ function w() {
 }
 async function D() {
   var e;
-  await b(), null == (e = w()) || module.reset()
+  await b(), null == (e = w()) || e.reset()
 }
 
 function x() {
   var e, t;
   let n = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return require ? y() : null != (t = null == (e = w()) ? true : module.getLayoutMap()) ? exports : y()
+  return n ? y() : null != (t = null == (e = w()) ? true : e.getLayoutMap()) ? t : y()
 }
 
 function L(e) {

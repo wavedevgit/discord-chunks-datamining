@@ -15,7 +15,7 @@ var l, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk71080 = require("./71080.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +31,7 @@ function b(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -67,13 +67,13 @@ function P(e) {
 }
 
 function x() {
-  if (C = Chunk388610.Z.getChannel(), S = Chunk388610.Z.getCategory(), null == C) returnfalse;
+  if (C = p.Z.getChannel(), S = p.Z.getCategory(), null == C) returnfalse;
   let e = C.getGuildId();
-  I = y = P(C), null == y[T] && (T = module), i = null != S, r = Chunk700785.o4(C, S), N = null, v = false, O = Chunk981631.QZA.CLOSED, E.clear()
+  I = y = P(C), null == y[T] && (T = e), i = null != S, r = d.o4(C, S), N = null, v = false, O = g.QZA.CLOSED, E.clear()
 }
 class A extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk388610.Z, Chunk592125.Z)
+    this.waitFor(p.Z, f.Z)
   }
   hasChanges() {
     return v
@@ -112,7 +112,7 @@ class A extends(l = Chunk442837.ZP.Store) {
     return j
   }
 }
-m(A, "displayName", "ChannelSettingsPermissionsStore");
+h(A, "displayName", "ChannelSettingsPermissionsStore");
 let Z = new A(Chunk570140.Z, {
   CHANNEL_SETTINGS_SET_SECTION: function(e) {
     let {
@@ -147,10 +147,10 @@ let Z = new A(Chunk570140.Z, {
     }
   },
   CHANNEL_SETTINGS_INIT: function() {
-    Chunk388610.Z.getSection() === Chunk981631.CoT.PERMISSIONS && x()
+    p.Z.getSection() === g.CoT.PERMISSIONS && x()
   },
   CHANNEL_SETTINGS_CLOSE: function() {
-    O = Chunk981631.QZA.CLOSED, y = null, I = null, C = null, S = null, v = false, E.clear(), T = null, N = null
+    O = g.QZA.CLOSED, y = null, I = null, C = null, S = null, v = false, E.clear(), T = null, N = null
   },
   CHANNEL_UPDATES: function(e) {
     let {
@@ -172,7 +172,7 @@ let Z = new A(Chunk570140.Z, {
     return n
   },
   CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING: function() {
-    O = Chunk981631.QZA.SUBMITTING
+    O = g.QZA.SUBMITTING
   },
   CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS: function(e) {
     let {
@@ -184,6 +184,6 @@ let Z = new A(Chunk570140.Z, {
     let {
       advancedMode: t
     } = e;
-    j = t, c.K.set(h.kf, t)
+    j = t, c.K.set(m.kf, t)
   }
 })

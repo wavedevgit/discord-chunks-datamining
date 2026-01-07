@@ -114,15 +114,15 @@ class L {
     return this.participantByIndex.values(e, true)
   }
   rebuild() {
-    let e = Chunk592125.Z.getChannel(this.channelId);
-    if (null == module || module.type === Chunk981631.d4z.GUILD_TEXT || (this.call = Chunk523746.Z.getCall(this.channelId), module.isPrivate() && (null == this.call || this.call.unavailable))) returnfalse;
-    let t = new Set(module.isGuildVocalOrThread() ? Object.keys(Chunk979651.Z.getVoiceStatesForChannel(module.id)) : module.recipients);
-    return exports.add(Chunk314897.default.getId()), this.guildRingingUsers.size > 0 && (t = new Set([...exports, ...this.guildRingingUsers])), Chunk199902.Z.getAllActiveStreamsForChannel(this.channelId).forEach(e => {
+    let e = f.Z.getChannel(this.channelId);
+    if (null == e || e.type === v.d4z.GUILD_TEXT || (this.call = d.Z.getCall(this.channelId), e.isPrivate() && (null == this.call || this.call.unavailable))) returnfalse;
+    let t = new Set(e.isGuildVocalOrThread() ? Object.keys(g.Z.getVoiceStatesForChannel(e.id)) : e.recipients);
+    return t.add(u.default.getId()), this.guildRingingUsers.size > 0 && (t = new Set([...t, ...this.guildRingingUsers])), c.Z.getAllActiveStreamsForChannel(this.channelId).forEach(e => {
       let {
         ownerId: n
       } = e;
       return t.add(n)
-    }), this.participantByIndex.clear(), this.participants = {}, exports.forEach(e => this.updateParticipant(e)), this.updateEmbeddedActivities(), true
+    }), this.participantByIndex.clear(), this.participants = {}, t.forEach(e => this.updateParticipant(e)), this.updateEmbeddedActivities(), true
   }
   getParticipant(e) {
     var t;
@@ -176,9 +176,9 @@ class L {
     t ? this.poppedOutParticipants.add(e) : this.poppedOutParticipants.delete(e)
   }
   _getEmbeddedActivities() {
-    let e = Chunk317381.ZP.getEmbeddedActivitiesForChannel(this.channelId),
-      t = Chunk317381.ZP.getSelfEmbeddedActivityForChannel(this.channelId);
-    return null == exports ? module : (0, Chunk392711.uniqBy)([...module, exports], e => e.compositeInstanceId)
+    let e = o.ZP.getEmbeddedActivitiesForChannel(this.channelId),
+      t = o.ZP.getSelfEmbeddedActivityForChannel(this.channelId);
+    return null == t ? e : (0, r.uniqBy)([...e, t], e => e.compositeInstanceId)
   }
   _getParticipantsForEmbeddedActivities() {
     return this._getEmbeddedActivities().map((e, t) => {

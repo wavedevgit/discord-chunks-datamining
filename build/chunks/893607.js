@@ -37,18 +37,18 @@ let p = {
     let {
       name: e = "guildId",
       optional: t = false
-    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = l.map(Chunk392711.escapeRegExp).join("|");
-    return f(module, "".concat(require, "|\\d+"), {
-      optional: exports
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = l.map(r.escapeRegExp).join("|");
+    return f(e, "".concat(n, "|\\d+"), {
+      optional: t
     })
   },
   channelId() {
     let {
       name: e = "channelId",
       optional: t = false
-    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = [...Chunk176505.Vg].map(Chunk392711.escapeRegExp).join("|");
-    return f(module, "".concat(require, "|\\d+"), {
-      optional: exports
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = [...o.Vg].map(r.escapeRegExp).join("|");
+    return f(e, "".concat(n, "|\\d+"), {
+      optional: t
     })
   }
 }

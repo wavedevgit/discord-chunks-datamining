@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk621054 = require("./621054.js");
 let S = [Chunk911969.yU.CHAT],
   O = () => {
-    (0, Chunk481060.Mr3)(Chunk333861.s)
+    (0, a.Mr3)(v.s)
   };
 
 function P(e) {

@@ -58,27 +58,27 @@ class E extends Chunk98597.ZP {
       connectChannelDragSource: i,
       connectDragPreview: l,
       canReorderChannel: o
-    } = this.props, s = (0, Chunk54381.jsx)("li", {
+    } = this.props, s = (0, r.jsx)("li", {
       className: a()(this.getClassName(), {
-        [Chunk642915.disabled]: this.isDisabled()
+        [v.disabled]: this.isDisabled()
       }),
-      "data-dnd-name": module.name,
-      children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
-        className: Chunk642915.iconVisibility,
-        channel: module,
-        selected: exports,
+      "data-dnd-name": e.name,
+      children: (0, r.jsxs)(m.ZP, {
+        className: v.iconVisibility,
+        channel: e,
+        selected: t,
         onClick: this.handleClick,
         onMouseDown: x,
         onContextMenu: this.handleContextMenu,
-        connectDragPreview: Chunk442837 ? Chunk120356 : null,
-        "aria-label": (0, Chunk201895.ZP)({
-          channel: module
+        connectDragPreview: o ? l : null,
+        "aria-label": (0, d.ZP)({
+          channel: e
         }),
-        resolvedUnreadSetting: Chunk490897.i.ONLY_MENTIONS,
+        resolvedUnreadSetting: O.i.ONLY_MENTIONS,
         children: [this.renderInviteButton(), this.renderEditButton()]
       })
     });
-    return Chunk442837 ? require(Chunk473749(Chunk493683)) : Chunk493683
+    return o ? n(i(s)) : s
   }
   constructor(...e) {
     super(...e), j(this, "handleContextMenu", e => {

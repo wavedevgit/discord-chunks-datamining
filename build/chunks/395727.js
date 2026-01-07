@@ -21,13 +21,13 @@ function c(e, t, n) {
 }
 class u extends Chunk317770.Z {
   _initialize() {
-    Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), Chunk998502.ZP.on("MODULE_INSTALLED", (e, t, n) => this.processModuleEvents()), Chunk998502.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
+    a.isPlatformEmbedded && (o.ZP.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), o.ZP.on("MODULE_INSTALLED", (e, t, n) => this.processModuleEvents()), o.ZP.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
       this._handleHistoryResponse(t)
     }), this.processModuleEvents())
   }
   _terminate() {}
   processModuleEvents() {
-    Chunk998502.ZP.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
+    o.ZP.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
   }
   _handleHistoryResponse(e) {
     if (null == e) return;

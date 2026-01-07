@@ -42,58 +42,58 @@ function g(e) {
 let E = +Chunk70956.Z.Millis.MINUTE;
 class b extends Chunk147913.Z {
   _initialize() {
-    __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(Chunk606304.Z, () => this._handleSpeakingStoreChanged()).set(Chunk19780.Z, () => this._handleRTCConnectionStoreChanged()), this._reset())
+    __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(d.Z, () => this._handleSpeakingStoreChanged()).set(c.Z, () => this._handleRTCConnectionStoreChanged()), this._reset())
   }
   _reset() {
     this._currentUserSpeaking = false, this._anyoneElseSpeaking = false, null != this._reportInterval && (this._reportInterval.stop(), this._reportInterval = null)
   }
   _trackStartSpeaking() {
     if (this._currentUserSpeaking) {
-      let e = Chunk19780.Z.getChannelId(),
-        t = Chunk19780.Z.getGuildId();
-      (0, Chunk367907.yw)(Chunk981631.rMx.START_SPEAKING, g({
-        mode: Chunk131951.Z.getMode(),
-        priority: Chunk606304.Z.isCurrentUserPrioritySpeaking(),
-        channel: module,
-        server: exports,
-        channel_id: module,
-        guild_id: exports,
-        rtc_connection_id: Chunk19780.Z.getRTCConnectionId(),
-        media_session_id: Chunk19780.Z.getMediaSessionId(),
-        voice_state_count: Chunk938475.ZP.countVoiceStatesForChannel(this._voiceChannelId)
-      }, this.getGameMetadata(), Chunk19780.Z.getPacketStats()))
+      let e = c.Z.getChannelId(),
+        t = c.Z.getGuildId();
+      (0, _.yw)(m.rMx.START_SPEAKING, g({
+        mode: l.Z.getMode(),
+        priority: d.Z.isCurrentUserPrioritySpeaking(),
+        channel: e,
+        server: t,
+        channel_id: e,
+        guild_id: t,
+        rtc_connection_id: c.Z.getRTCConnectionId(),
+        media_session_id: c.Z.getMediaSessionId(),
+        voice_state_count: f.ZP.countVoiceStatesForChannel(this._voiceChannelId)
+      }, this.getGameMetadata(), c.Z.getPacketStats()))
     }
   }
   _trackStartListening() {
-    if (Chunk131951.Z.isDeaf() || !this._anyoneElseSpeaking) return;
-    let e = Chunk19780.Z.getChannelId(),
-      t = Chunk19780.Z.getGuildId();
-    (0, Chunk367907.yw)(Chunk981631.rMx.START_LISTENING, g({
-      mute: Chunk131951.Z.isMute(),
-      anyone_priority: Chunk606304.Z.isAnyonePrioritySpeaking(),
-      channel: module,
-      server: exports,
-      channel_id: module,
-      guild_id: exports,
-      rtc_connection_id: Chunk19780.Z.getRTCConnectionId(),
-      media_session_id: Chunk19780.Z.getMediaSessionId(),
-      voice_state_count: Chunk938475.ZP.countVoiceStatesForChannel(this._voiceChannelId)
+    if (l.Z.isDeaf() || !this._anyoneElseSpeaking) return;
+    let e = c.Z.getChannelId(),
+      t = c.Z.getGuildId();
+    (0, _.yw)(m.rMx.START_LISTENING, g({
+      mute: l.Z.isMute(),
+      anyone_priority: d.Z.isAnyonePrioritySpeaking(),
+      channel: e,
+      server: t,
+      channel_id: e,
+      guild_id: t,
+      rtc_connection_id: c.Z.getRTCConnectionId(),
+      media_session_id: c.Z.getMediaSessionId(),
+      voice_state_count: f.ZP.countVoiceStatesForChannel(this._voiceChannelId)
     }, this.getGameMetadata()))
   }
   _terminate() {
-    this._reset(), Chunk606304.Z.removeChangeListener(this._handleSpeakingStoreChanged), Chunk19780.Z.removeChangeListener(this._handleRTCConnectionStoreChanged)
+    this._reset(), d.Z.removeChangeListener(this._handleSpeakingStoreChanged), c.Z.removeChangeListener(this._handleRTCConnectionStoreChanged)
   }
   getGameMetadata() {
-    let e = Chunk885110.Z.findActivity(e => e.type === m.IIU.PLAYING),
-      t = Chunk594190.ZP.getCurrentGameForAnalytics();
+    let e = u.Z.findActivity(e => e.type === m.IIU.PLAYING),
+      t = o.ZP.getCurrentGameForAnalytics();
     return {
-      game_platform: (0, Chunk603113.Z)(module),
-      game_name: null != module ? module.name : null,
-      game_exe_name: null != exports ? exports.exeName : null,
-      game_id: null != module ? module.application_id : null,
-      game_distributor: null != exports ? exports.distributor : null,
-      game_distributor_game_id: null != exports ? exports.sku : null,
-      game_metadata: null != exports ? (0, Chunk509003.sD)(exports) : null
+      game_platform: (0, a.Z)(e),
+      game_name: null != e ? e.name : null,
+      game_exe_name: null != t ? t.exeName : null,
+      game_id: null != e ? e.application_id : null,
+      game_distributor: null != t ? t.distributor : null,
+      game_distributor_game_id: null != t ? t.sku : null,
+      game_metadata: null != t ? (0, s.sD)(t) : null
     }
   }
   constructor(...e) {

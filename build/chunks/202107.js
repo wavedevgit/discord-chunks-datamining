@@ -51,8 +51,8 @@ function d(e, t) {
 let f = 1e4,
   p = null,
   _ = () => {
-    let e = Chunk271383.ZP.getCommunicationDisabledUserMap();
-    Object.keys(module).forEach(t => {
+    let e = a.ZP.getCommunicationDisabledUserMap();
+    Object.keys(e).forEach(t => {
       let n = t,
         r = (0, a.O5)(n),
         i = (0, a.V6)(n),

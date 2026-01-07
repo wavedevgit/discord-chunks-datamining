@@ -26,8 +26,8 @@ class c extends(r = Chunk473749.PureComponent) {
       totalPageCount: e,
       maxVisiblePages: t,
       selectedPage: n
-    } = this.props, r = Math.ceil(exports / 2), i = Math.floor(exports / 2), a = [1, module], [o, s] = a = require <= r ? [1, exports] : require > module - Chunk473749 ? [module - exports + 1, module] : [require - r + 1, require + Chunk473749];
-    return [Math.max(o, 1), Math.min(s, module)]
+    } = this.props, r = Math.ceil(t / 2), i = Math.floor(t / 2), a = [1, e], [o, s] = a = n <= r ? [1, t] : n > e - i ? [e - t + 1, e] : [n - r + 1, n + i];
+    return [Math.max(o, 1), Math.min(s, e)]
   }
   getPageList() {
     let {
@@ -37,13 +37,13 @@ class c extends(r = Chunk473749.PureComponent) {
     } = this.props, [r, i] = this.getNeighborBounds(), a = {
       type: "BACK",
       key: "back",
-      disabled: 1 === exports,
+      disabled: 1 === t,
       selected: false,
       navigateToPage: this.handleBackward
     }, s = {
       type: "NEXT",
       key: "next",
-      disabled: exports === module,
+      disabled: t === e,
       selected: false,
       navigateToPage: this.handleForward
     }, l = [], c = [];
@@ -55,15 +55,15 @@ class c extends(r = Chunk473749.PureComponent) {
     }, {
       type: "GAP",
       key: "left-gap"
-    }], r += 2), Chunk473749 < module && (c = [{
+    }], r += 2), i < e && (c = [{
       type: "GAP",
       key: "right-gap"
-    }], require || c.push({
+    }], n || c.push({
       type: "PAGE",
-      key: "page-".concat(module),
-      targetPage: module,
-      navigateToPage: () => this.handleJump(module)
-    }), i -= 2), [Chunk392711, ...l, ...o().range(r, Chunk473749 + 1).map(e => ({
+      key: "page-".concat(e),
+      targetPage: e,
+      navigateToPage: () => this.handleJump(e)
+    }), i -= 2), [a, ...l, ...o().range(r, i + 1).map(e => ({
       type: "PAGE",
       key: "page-".concat(e),
       targetPage: e,
@@ -77,9 +77,9 @@ class c extends(r = Chunk473749.PureComponent) {
       totalPageCount: e,
       children: t
     } = this.props;
-    return exports({
+    return t({
       pages: this.getPageList(),
-      hasMultiplePages: module > 1
+      hasMultiplePages: e > 1
     })
   }
   constructor(...e) {

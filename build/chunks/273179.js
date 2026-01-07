@@ -11,6 +11,6 @@ var Chunk100527 = require("./100527.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.ON)(Chunk313789.n.OVERLAY_BUG_REPORTER_SETTING, {
   Component: Chunk794704.BP,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["z4/l+V"])],
-  usePredicate: () => (0, Chunk32300.T_)(Chunk100527.Z.USER_SETTINGS)
+  useSearchTerms: () => [a.intl.string(a.t["z4/l+V"])],
+  usePredicate: () => (0, l.T_)(i.Z.USER_SETTINGS)
 })

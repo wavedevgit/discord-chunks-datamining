@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [g, h] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [g, m] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -43,7 +43,7 @@ function N(e) {
       N(false)
     }
   }, [t.id, l]), Z = i.useCallback(e => {
-    e && !g && (h(true), null == o || o(t.id))
+    e && !g && (m(true), null == o || o(t.id))
   }, [t.id, g, o]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
@@ -161,7 +161,7 @@ function N(e) {
           className: I.guildDetails,
           children: [(0, r.jsxs)("div", {
             className: I.title,
-            children: [(0, r.jsx)(m.Z, {
+            children: [(0, r.jsx)(h.Z, {
               className: I.guildBadge,
               guild: t,
               tooltipColor: c.aML.Colors.PRIMARY
@@ -228,13 +228,13 @@ function P(e) {
     index: n,
     onClick: l,
     onView: a
-  } = e, o = i.useRef(null == t), s = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(h.Z, {
+  } = e, o = i.useRef(null == t), s = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(m.Z, {
     state: n,
     cleanUp: i,
     children: (0, r.jsx)(g.Z, {
       className: I.placeholder
     })
-  }, e) : (0, r.jsx)(h.Z, {
+  }, e) : (0, r.jsx)(m.Z, {
     state: n,
     cleanUp: i,
     animate: o.current,

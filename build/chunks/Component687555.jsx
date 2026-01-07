@@ -56,27 +56,27 @@ function Z(e) {
 }
 
 function F() {
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk639236.title,
-      children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
+      className: v.title,
+      children: (0, r.jsx)(x.Heading, {
         variant: "heading-xl/bold",
-        children: Chunk388032.intl.string(Chunk388032.t["PFp+aJ"])
+        children: y.intl.string(y.t["PFp+aJ"])
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk639236.description,
+    }), (0, r.jsx)(x.Text, {
+      className: v.description,
       variant: "text-md/medium",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t.eBIGB4)
+      children: y.intl.string(y.t.eBIGB4)
     })]
   })
 }
 
 function O() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk639236.erroredContent,
-    children: (0, Chunk54381.jsx)(Chunk481060.Eep, {
-      src: Chunk334202,
+  return (0, r.jsx)("div", {
+    className: v.erroredContent,
+    children: (0, r.jsx)(x.Eep, {
+      src: w,
       width: 225,
       height: 160
     })

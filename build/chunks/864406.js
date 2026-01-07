@@ -12,29 +12,29 @@ let o = Symbol.for("react-aria.i18n.locale");
 function s() {
   let e = "undefined" != typeof window && window[o] || "undefined" != typeof navigator && (navigator.language || navigator.userLanguage) || "en-US";
   try {
-    Intl.DateTimeFormat.supportedLocalesOf([module])
+    Intl.DateTimeFormat.supportedLocalesOf([e])
   } catch {
     e = "en-US"
   }
   return {
-    locale: module,
-    direction: (0, Chunk160871.d)(module) ? "rtl" : "ltr"
+    locale: e,
+    direction: (0, r.d)(e) ? "rtl" : "ltr"
   }
 }
 let l = s(),
   c = new Set;
 
 function u() {
-  for (let e of (l = s(), c)) module(l)
+  for (let e of (l = s(), c)) e(l)
 }
 
 function d() {
-  let e = (0, Chunk112683.Av)(),
-    [t, n] = (0, Chunk473749.useState)(l);
-  return ((0, Chunk473749.useEffect)(() => (0 === c.size && window.addEventListener("languagechange", u), c.add(require), () => {
-    c.delete(require), 0 === c.size && window.removeEventListener("languagechange", u)
-  }), []), module) ? {
+  let e = (0, a.Av)(),
+    [t, n] = (0, i.useState)(l);
+  return ((0, i.useEffect)(() => (0 === c.size && window.addEventListener("languagechange", u), c.add(n), () => {
+    c.delete(n), 0 === c.size && window.removeEventListener("languagechange", u)
+  }), []), e) ? {
     locale: "en-US",
     direction: "ltr"
-  } : exports
+  } : t
 }

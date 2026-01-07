@@ -90,13 +90,13 @@ function A(e, t) {
 
 function N() {
   var e, t, n;
-  return A(null != (t = Chunk581883.Z.getGuildFolders()) ? exports : [], null != (n = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? require : [])
+  return A(null != (t = d.Z.getGuildFolders()) ? t : [], null != (n = null == (e = d.Z.settings.guildFolders) ? true : e.guildPositions) ? n : [])
 }
 
 function P() {
   var e, t;
-  let n = Chunk581883.Z.getGuildFolders();
-  return !(null != r && a()(r, require)) && A(null != (r = require) ? r : [], null != (t = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? exports : [])
+  let n = d.Z.getGuildFolders();
+  return !(null != r && a()(r, n)) && A(null != (r = n) ? r : [], null != (t = null == (e = d.Z.settings.guildFolders) ? true : e.guildPositions) ? t : [])
 }
 
 function R(e) {
@@ -195,7 +195,7 @@ function M(e) {
 }
 
 function k() {
-  for (let e of I.allNodes()) module.type === Chunk727258.eD.FOLDER && module.expanded && U(module, false)
+  for (let e of I.allNodes()) e.type === c.eD.FOLDER && e.expanded && U(e, false)
 }
 
 function U(e, t) {
@@ -220,7 +220,7 @@ let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   B = (0, Chunk251625.oH)((e, t) => e.root.children.map(C));
 class V extends Chunk750041.Z {
   initialize() {
-    this.waitFor(Chunk430824.Z, Chunk9156.ZP, Chunk581883.Z, Chunk486472.Z, Chunk41776.Z, Chunk664915.Z, Chunk937111.Z)
+    this.waitFor(g.Z, b.ZP, d.Z, m.Z, u.Z, _.Z, l.Z)
   }
   getGuildsTree() {
     return I
@@ -269,9 +269,9 @@ class V extends Chunk750041.Z {
       GUILD_FOLDER_COLLAPSE: k
     }), O(this, "loadCache", () => {
       let e = this.readSnapshot(V.LATEST_SNAPSHOT_VERSION),
-        t = null == module ? true : module.tree;
-      if (null != exports)
-        for (let e of ((I = new Chunk727258.g8).loadSnapshot(exports), I.allNodes())) module.type === Chunk727258.eD.FOLDER && (module.expanded = Chunk664915.Z.isFolderExpanded(module.id))
+        t = null == e ? true : e.tree;
+      if (null != t)
+        for (let e of ((I = new c.g8).loadSnapshot(t), I.allNodes())) e.type === c.eD.FOLDER && (e.expanded = _.Z.isFolderExpanded(e.id))
     })
   }
 }

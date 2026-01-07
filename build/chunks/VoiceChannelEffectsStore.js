@@ -24,8 +24,8 @@ let p = [],
   v = [],
   h = 10 * Chunk70956.Z.Millis.SECOND,
   E = (0, Chunk392711.debounce)(() => {
-    let e = (0, Chunk963838.cX)(m);
-    Chunk780384.uv.announce(module, "polite"), m = []
+    let e = (0, d.cX)(m);
+    c.uv.announce(e, "polite"), m = []
   }, 500);
 class _ extends(i = Chunk442837.ZP.Store) {
   get recentlyUsedEmojis() {
@@ -76,10 +76,10 @@ let y = new _(Chunk570140.Z, {
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;
-    if ((v = [module, ...v].slice(0, 20)).length >= 20) {
+    if ((v = [e, ...v].slice(0, 20)).length >= 20) {
       let t = v[v.length - 1],
-        n = module.getTime() - exports.getTime();
-      require < h && (r = new Date(module.getTime() + h - require))
+        n = e.getTime() - t.getTime();
+      n < h && (r = new Date(e.getTime() + h - n))
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {

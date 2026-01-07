@@ -44,7 +44,7 @@ class d extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     })
   }
   constructor() {
-    super(Chunk570140.Z, {
+    super(a.Z, {
       SET_NATIVE_PERMISSION: e => this.handleSetNativePermission(e)
     })
   }

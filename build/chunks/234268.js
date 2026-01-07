@@ -4,5 +4,5 @@
 var Chunk535213 = require("./535213.js"),
   Chunk383252 = require("./383252.js");
 module.exports = function() {
-  return Chunk535213(), "function" == typeof Promise.allSettled ? Promise.allSettled : Chunk383252
+  return r(), "function" == typeof Promise.allSettled ? Promise.allSettled : i
 }

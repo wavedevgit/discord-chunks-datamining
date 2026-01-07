@@ -10,10 +10,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk505649 = require("./505649.js");
 
 function s() {
-  let e = (0, Chunk442837.e7)([Chunk975060.Z], () => Chunk975060.Z.error),
-    [t, n] = (0, Chunk442837.Wu)([Chunk505649.Z], () => [Chunk505649.Z.error, Chunk505649.Z.isAwaitingAuthentication]);
+  let e = (0, r.e7)([a.Z], () => a.Z.error),
+    [t, n] = (0, r.Wu)([o.Z], () => [o.Z.error, o.Z.isAwaitingAuthentication]);
   return {
-    paymentError: null != exports ? exports : module,
-    paymentAuthenticationState: require ? Chunk176919.wr.PENDING : null != exports ? Chunk176919.wr.ERROR : Chunk176919.wr.NONE
+    paymentError: null != t ? t : e,
+    paymentAuthenticationState: n ? i.wr.PENDING : null != t ? i.wr.ERROR : i.wr.NONE
   }
 }

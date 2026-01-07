@@ -23,7 +23,7 @@ function o(e) {
 }
 
 function s() {
-  return [o(Chunk65154.h7.AUDIO_INPUT), o(Chunk65154.h7.AUDIO_OUTPUT), o(Chunk65154.h7.VIDEO_INPUT)]
+  return [o(r.h7.AUDIO_INPUT), o(r.h7.AUDIO_OUTPUT), o(r.h7.VIDEO_INPUT)]
 }
 
 function l(e, t) {
@@ -69,15 +69,15 @@ function c() {
   })
 }
 async function u() {
-  return l(await c(), Chunk65154.h7.AUDIO_INPUT)
+  return l(await c(), r.h7.AUDIO_INPUT)
 }
 async function d() {
-  return l(await c(), Chunk65154.h7.AUDIO_OUTPUT)
+  return l(await c(), r.h7.AUDIO_OUTPUT)
 }
 async function f() {
-  return l(await c(), Chunk65154.h7.VIDEO_INPUT)
+  return l(await c(), r.h7.VIDEO_INPUT)
 }
 async function p() {
   let e = await c();
-  return [l(module, Chunk65154.h7.AUDIO_INPUT), l(module, Chunk65154.h7.AUDIO_OUTPUT), l(module, Chunk65154.h7.VIDEO_INPUT)]
+  return [l(e, r.h7.AUDIO_INPUT), l(e, r.h7.AUDIO_OUTPUT), l(e, r.h7.VIDEO_INPUT)]
 }

@@ -53,38 +53,38 @@ class I extends Chunk473749.PureComponent {
       currentUser: n,
       togglingSMS: i
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk805244.Z, {
-        backupCodes: module,
-        currentUser: require,
-        hasTOTPEnabled: exports
-      }), module.length > 0 && (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(m.Z, {
+        backupCodes: e,
+        currentUser: n,
+        hasTOTPEnabled: t
+      }), e.length > 0 && (0, r.jsxs)(l.Kqy, {
         gap: 16,
-        children: [(0, Chunk54381.jsx)(Chunk616495.Z, {
-          backupCodes: module
-        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
-      }), exports && (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.ACCOUNT_SMS_BACKUP,
-        children: (0, Chunk54381.jsx)(Chunk867289.Z, {
-          currentUser: require,
-          togglingSMS: Chunk473749
+        children: [(0, r.jsx)(h.Z, {
+          backupCodes: e
+        }), (0, r.jsx)(l.izJ, {})]
+      }), t && (0, r.jsx)(c.F, {
+        setting: O.s6.ACCOUNT_SMS_BACKUP,
+        children: (0, r.jsx)(E.Z, {
+          currentUser: n,
+          togglingSMS: i
         })
-      }), (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.ACCOUNT_SECURITY_KEYS,
-        children: (0, Chunk54381.jsx)(Chunk778764.Z, {})
+      }), (0, r.jsx)(c.F, {
+        setting: O.s6.ACCOUNT_SECURITY_KEYS,
+        children: (0, r.jsx)(u.Z, {})
       })]
     })
   }
   renderDisabled() {
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk905935.Z, {}), (0, Chunk54381.jsx)(Chunk778764.Z, {})]
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(u.Z, {})]
     })
   }
   render() {
     let {
       currentUser: e
     } = this.props;
-    return Chunk287880.uZ ? module.verified ? module.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, Chunk54381.jsx)(Chunk453706.Z, {}) : (0, Chunk54381.jsx)(Chunk217801.Z, {})
+    return _.uZ ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(y.Z, {}) : (0, r.jsx)(b.Z, {})
   }
 }
 

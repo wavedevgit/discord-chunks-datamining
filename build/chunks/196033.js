@@ -54,20 +54,20 @@ function h(e, t) {
   }), e
 }
 let g = () => {
-  let e = (0, Chunk619899.zL)(Chunk281598.jE.UPSELL_BANNER),
-    t = (0, Chunk619899.zL)(Chunk281598.jE.UPSELL_BANNER_POPOUT),
-    n = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.EDIT_PROFILE_SETTINGS)),
-    p = Chunk473749.useMemo(() => null != require ? require : {
-      asset: Chunk78230,
-      popoutAsset: Chunk513767,
-      title: Chunk388032.intl.string(Chunk388032.t.QZVVBh),
-      body: Chunk388032.intl.string(Chunk388032.t.sajmAq),
+  let e = (0, l.zL)(c.jE.UPSELL_BANNER),
+    t = (0, l.zL)(c.jE.UPSELL_BANNER_POPOUT),
+    n = (0, o.e7)([s.Z], () => s.Z.getMarketingBySurface(i.K.EDIT_PROFILE_SETTINGS)),
+    p = r.useMemo(() => null != n ? n : {
+      asset: f,
+      popoutAsset: d,
+      title: u.intl.string(u.t.QZVVBh),
+      body: u.intl.string(u.t.sajmAq),
       version: 0,
       revertTextColor: false
-    }, [require]);
-  return Chunk473749.useMemo(() => h(_({}, p), {
-    type: Chunk264181.Z.BANNER,
-    asset: null != module ? module : p.asset,
-    popoutAsset: null != exports ? exports : p.popoutAsset
-  }), [module, exports, p])
+    }, [n]);
+  return r.useMemo(() => h(_({}, p), {
+    type: a.Z.BANNER,
+    asset: null != e ? e : p.asset,
+    popoutAsset: null != t ? t : p.popoutAsset
+  }), [e, t, p])
 }

@@ -42,13 +42,13 @@ async function p(e, t) {
 }
 
 function _() {
-  Chunk550385.oq.getState().activePanel === Chunk550385.wh.APPLICATION_TEST_MODE_DEBUG && (0, Chunk550385.Ll)(), Chunk570140.Z.dispatch({
+  l.oq.getState().activePanel === l.wh.APPLICATION_TEST_MODE_DEBUG && (0, l.Ll)(), i.Z.dispatch({
     type: "DEVELOPER_TEST_MODE_RESET"
   })
 }
 
 function m() {
-  Chunk550385.oq.getState().activePanel === Chunk550385.wh.APPLICATION_TEST_MODE_DEBUG && (0, Chunk550385.Ll)(), Chunk570140.Z.dispatch({
+  l.oq.getState().activePanel === l.wh.APPLICATION_TEST_MODE_DEBUG && (0, l.Ll)(), i.Z.dispatch({
     type: "DEVELOPER_TEST_MODE_RESET_ERROR"
   })
 }

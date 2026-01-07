@@ -44,9 +44,9 @@ class l {
     return this.database.execute({
       type: "kv.get_many",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module),
-      ordering: null == exports ? true : exports.ordering,
-      limit: null == exports ? true : exports.limit
+      key: (0, i.d)(this.prefix, e),
+      ordering: null == t ? true : t.ordering,
+      limit: null == t ? true : t.limit
     }, this.defaultDebugTag)
   }
   getRange(e, t, n) {
@@ -65,7 +65,7 @@ class l {
     return this.database.execute({
       type: "kv.get_kv_entries",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module)
+      key: (0, i.d)(this.prefix, e)
     }, this.defaultDebugTag)
   }
   getMapEntries() {
@@ -73,7 +73,7 @@ class l {
     return this.database.execute({
       type: "kv.get_map_entries",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module)
+      key: (0, i.d)(this.prefix, e)
     }, this.defaultDebugTag)
   }
   getChildIds() {
@@ -81,7 +81,7 @@ class l {
     return this.database.execute({
       type: "kv.get_child_ids",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module)
+      key: (0, i.d)(this.prefix, e)
     }, this.defaultDebugTag)
   }
   getParentId() {
@@ -89,7 +89,7 @@ class l {
     return this.database.execute({
       type: "kv.get_parent_id",
       table: this.tableId,
-      key: (0, Chunk218521.m)(this.prefix, module)
+      key: (0, i.m)(this.prefix, e)
     }, this.defaultDebugTag)
   }
   put(e) {
@@ -120,7 +120,7 @@ class l {
     return this.database.execute({
       type: "kv.delete_many",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module)
+      key: (0, i.d)(this.prefix, e)
     }, this.defaultDebugTag)
   }
   deleteRange(e, t) {
@@ -139,9 +139,9 @@ class l {
     return this.database.execute({
       type: "kv.delete_generation",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module),
-      generation: require,
-      comparer: exports
+      key: (0, i.d)(this.prefix, e),
+      generation: n,
+      comparer: t
     }, this.defaultDebugTag)
   }
   transaction(e, t) {
@@ -156,9 +156,9 @@ class l {
     return this.database.executeSync({
       type: "kv.get_many",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module),
-      ordering: null == exports ? true : exports.ordering,
-      limit: null == exports ? true : exports.limit
+      key: (0, i.d)(this.prefix, e),
+      ordering: null == t ? true : t.ordering,
+      limit: null == t ? true : t.limit
     })
   }
   getMapEntriesSyncUnsafe() {
@@ -166,7 +166,7 @@ class l {
     return this.database.executeSync({
       type: "kv.get_map_entries",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module)
+      key: (0, i.d)(this.prefix, e)
     })
   }
   constructor(e, t, n, r) {
@@ -206,7 +206,7 @@ class c {
     this.transaction.add({
       type: "kv.delete_many",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module)
+      key: (0, i.d)(this.prefix, e)
     })
   }
   deleteRange(e, t) {
@@ -225,9 +225,9 @@ class c {
     this.transaction.add({
       type: "kv.delete_generation",
       table: this.tableId,
-      key: (0, Chunk218521.d)(this.prefix, module),
-      generation: require,
-      comparer: exports
+      key: (0, i.d)(this.prefix, e),
+      generation: n,
+      comparer: t
     })
   }
   constructor(e, t, n) {

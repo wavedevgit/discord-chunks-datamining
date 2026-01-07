@@ -141,7 +141,7 @@ function k(e, t) {
 }
 let U = {
   init() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", w), Chunk570140.Z.subscribe("LOGOUT", w), Chunk570140.Z.subscribe("STREAM_DELETE", w), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    f.Z.subscribe("CONNECTION_OPEN", w), f.Z.subscribe("LOGOUT", w), f.Z.subscribe("STREAM_DELETE", w), f.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -150,7 +150,7 @@ let U = {
         context: o
       } = e;
       null == a || o !== v.Yn.STREAM || i !== h.default.getId() || __OVERLAY__ || (w(), r = a, D(a, t, n, i))
-    }), Chunk570140.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
+    }), f.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t
       } = e;

@@ -9,5 +9,5 @@ var Chunk51596 = require("./51596.js"),
 let a = {
   binds: ["mod+k", "mod+t"],
   comboKeysBindGlobal: true,
-  action: () => (Chunk819640.Z.hasLayers() || (0, Chunk51596.$Z)(), false)
+  action: () => (i.Z.hasLayers() || (0, r.$Z)(), false)
 }

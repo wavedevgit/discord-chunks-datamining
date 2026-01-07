@@ -12,8 +12,8 @@ var Chunk780384 = require("./780384.js"),
 function a() {
   let {
     theme: e
-  } = (0, Chunk780384.TC)();
-  return module
+  } = (0, r.TC)();
+  return e
 }
 
 function o() {

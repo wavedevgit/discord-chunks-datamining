@@ -29,8 +29,8 @@ let s = {
     }))
   },
   disable() {
-    Chunk544891.tn.post({
-      url: Chunk981631.ANM.MFA_TOTP_DISABLE,
+    r.tn.post({
+      url: o.ANM.MFA_TOTP_DISABLE,
       oldFormErrors: true,
       rejectWithError: false
     }).then(e => {
@@ -45,10 +45,10 @@ let s = {
       })
     })
   },
-  enableSMS: () => (Chunk570140.Z.dispatch({
+  enableSMS: () => (i.Z.dispatch({
     type: "MFA_SMS_TOGGLE"
-  }), Chunk544891.tn.post({
-    url: Chunk981631.ANM.MFA_SMS_ENABLE,
+  }), r.tn.post({
+    url: o.ANM.MFA_SMS_ENABLE,
     oldFormErrors: true,
     rejectWithError: false
   }).then(e => (i.Z.dispatch({
@@ -113,7 +113,7 @@ let s = {
     })
   },
   clearBackupCodes() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "MFA_CLEAR_BACKUP_CODES"
     })
   }

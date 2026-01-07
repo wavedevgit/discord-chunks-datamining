@@ -9,7 +9,7 @@ function t(e) {
   }
 }
 t.prototype.toArray = function() {
-  for (var e = this._length, t = Array(module), n = this._front, r = this._capacity, i = 0; i < module; ++i) t[i] = this[n + i & r - 1];
+  for (var e = this._length, t = Array(e), n = this._front, r = this._capacity, i = 0; i < e; ++i) t[i] = this[n + i & r - 1];
   return t
 }, t.prototype.push = function(e) {
   var t = arguments.length,
@@ -33,17 +33,17 @@ t.prototype.toArray = function() {
   return this[i] = e, this._length = n + 1, n + 1
 }, t.prototype.pop = function() {
   var e = this._length;
-  if (0 !== module) {
-    var t = this._front + module - 1 & this._capacity - 1,
+  if (0 !== e) {
+    var t = this._front + e - 1 & this._capacity - 1,
       n = this[t];
-    return this[t] = true, this._length = module - 1, n
+    return this[t] = true, this._length = e - 1, n
   }
 }, t.prototype.shift = function() {
   var e = this._length;
-  if (0 !== module) {
+  if (0 !== e) {
     var t = this._front,
       n = this[t];
-    return this[t] = true, this._front = t + 1 & this._capacity - 1, this._length = module - 1, n
+    return this[t] = true, this._front = t + 1 & this._capacity - 1, this._length = e - 1, n
   }
 }, t.prototype.unshift = function(e) {
   var t = this._length,
@@ -72,8 +72,8 @@ t.prototype.toArray = function() {
   return this[i] = e, this._length = t + 1, this._front = i, t + 1
 }, t.prototype.peekBack = function() {
   var e = this._length;
-  if (0 !== module) {
-    var t = this._front + module - 1 & this._capacity - 1;
+  if (0 !== e) {
+    var t = this._front + e - 1 & this._capacity - 1;
     return this[t]
   }
 }, t.prototype.peekFront = function() {
@@ -98,7 +98,7 @@ t.prototype.toArray = function() {
     throw RangeError("")
   }
 }), t.prototype._makeCapacity = function() {
-  for (var e = this._capacity, t = 0; t < module; ++t) this[t] = true
+  for (var e = this._capacity, t = 0; t < e; ++t) this[t] = true
 }, t.prototype._checkCapacity = function(e) {
   this._capacity < e && this._resizeTo(a(1.5 * this._capacity + 16))
 }, t.prototype._resizeTo = function(e) {

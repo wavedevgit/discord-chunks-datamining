@@ -15,21 +15,21 @@ var Chunk704215 = require("./704215.js"),
   Chunk195794 = require("./195794.js");
 let d = "Xbox two way upsell",
   f = () => {
-    let e = Chunk63063.Z.getArticleURL(Chunk981631.BhN.XBOX_CONNECTION);
-    return (0, Chunk54381.jsx)(Chunk249881.t, {
-      title: Chunk388032.intl.string(Chunk388032.t["2okkZV"]),
-      body: Chunk388032.intl.format(Chunk388032.t.OnERSS, {
-        help_article: module
+    let e = o.Z.getArticleURL(l.BhN.XBOX_CONNECTION);
+    return (0, r.jsx)(s.t, {
+      title: c.intl.string(c.t["2okkZV"]),
+      body: c.intl.format(c.t.OnERSS, {
+        help_article: e
       }),
-      img: (0, Chunk54381.jsx)("img", {
-        src: Chunk195794,
+      img: (0, r.jsx)("img", {
+        src: u,
         width: "auto",
         height: "45",
         alt: ""
       }),
-      newIndicatorDismissibleContent: Chunk704215.z.XBOX_ONE_WAY_RECONNECT,
-      onClick: () => (0, Chunk231757.Z)({
-        platformType: Chunk981631.ABu.XBOX,
+      newIndicatorDismissibleContent: i.z.XBOX_ONE_WAY_RECONNECT,
+      onClick: () => (0, a.Z)({
+        platformType: l.ABu.XBOX,
         location: d
       })
     })

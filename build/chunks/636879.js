@@ -17,7 +17,7 @@ function r(t, e, i) {
 let a = class {
   initialize() {
     this.particles = [], this.wind.initialize(), this.loadInTimer = setTimeout(() => {
-      for (let t = 0; module < 75; module++) this.particles.push(new Chunk342412.Z)
+      for (let t = 0; t < 75; t++) this.particles.push(new s.Z)
     }, 250)
   }
   terminate() {
@@ -33,6 +33,6 @@ let a = class {
     this.isFilled = true
   }
   constructor() {
-    r(this, "particles", []), r(this, "wind", new Chunk722734.Z), r(this, "alpha", 0), r(this, "isFilled", false), r(this, "loadInTimer", null)
+    r(this, "particles", []), r(this, "wind", new n.Z), r(this, "alpha", 0), r(this, "isFilled", false), r(this, "loadInTimer", null)
   }
 }

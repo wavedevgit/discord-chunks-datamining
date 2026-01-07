@@ -13,7 +13,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 
 function s() {
-  return Chunk233857.Z.isLoading || Chunk233857.Z.isLoadingNextPage
+  return i.Z.isLoading || i.Z.isLoadingNextPage
 }
 
 function o(e, t) {

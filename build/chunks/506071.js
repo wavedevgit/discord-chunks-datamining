@@ -12,6 +12,6 @@ var Chunk473749 = require("./473749.js"),
 function s() {
   let {
     windowId: e
-  } = Chunk473749.useContext(Chunk728285.ZP);
-  return (0, Chunk442837.e7)([Chunk451478.Z], () => Chunk451478.Z.isFocused(module), [module])
+  } = r.useContext(a.ZP);
+  return (0, i.e7)([o.Z], () => o.Z.isFocused(e), [e])
 }

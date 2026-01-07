@@ -20,10 +20,10 @@ let u = {
     skuId: "Shop"
   },
   p = () => {
-    let e = (0, Chunk399606.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
-      [t, n] = (0, Chunk399606.Wu)([Chunk597688.Z], () => [Chunk597688.Z.categories, Chunk597688.Z.products]);
-    return (0, Chunk473749.useMemo)(() => {
-      let r = (0, Chunk884697.iC)(module, exports).reduce((t, r) => {
+    let e = (0, l.e7)([s.Z], () => s.Z.purchases),
+      [t, n] = (0, l.Wu)([a.Z], () => [a.Z.categories, a.Z.products]);
+    return (0, i.useMemo)(() => {
+      let r = (0, o.iC)(e, t).reduce((t, r) => {
         let i = e.get(r.skuId);
         return (null != i ? (0, o.qS)(i) : (0, o.G1)(n.get(r.skuId))) ? t.premium_purchase.push(r) : null != i ? t.purchase.push(r) : t.preview.push(r), t
       }, {
@@ -35,22 +35,22 @@ let u = {
         section: "purchase",
         items: [u, m, ...r.purchase],
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t.VqmVqE)
+        header: c.intl.string(c.t.VqmVqE)
       }, {
         section: "premium_purchase",
         items: r.premium_purchase,
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t.TiLCgw)
+        header: c.intl.string(c.t.TiLCgw)
       }, {
         section: "preview",
         items: r.preview,
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t["1vbbee"])
+        header: c.intl.string(c.t["1vbbee"])
       }].filter(e => {
         let {
           items: t
         } = e;
         return t.length > 0
       })
-    }, [exports, require, module])
+    }, [t, n, e])
   }

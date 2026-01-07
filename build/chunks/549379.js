@@ -7,10 +7,10 @@ var Chunk894694 = require("./894694.js"),
   Chunk663879 = require("./663879.js");
 class a {
   start() {
-    Chunk663879.Z.registerCallback(this.handleTrigger.bind(this))
+    r.Z.registerCallback(this.handleTrigger.bind(this))
   }
   stop() {
-    Chunk663879.Z.unregisterCallback()
+    r.Z.unregisterCallback()
   }
   getState() {
     return null

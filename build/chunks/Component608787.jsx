@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   GI: () => u,
-  Jt: () => Chunk252117.Jt,
+  Jt: () => a.Jt,
   Un: () => c,
-  wE: () => Chunk252117.wE
+  wE: () => a.wE
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,12 +34,12 @@ function s(e) {
 }
 let l = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "transparent";
-  return () => (0, Chunk54381.jsx)("div", {
+  return () => (0, r.jsx)("div", {
     style: {
       position: "absolute",
       width: "100%",
       height: "100%",
-      backgroundColor: module
+      backgroundColor: e
     }
   })
 };

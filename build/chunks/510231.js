@@ -17,8 +17,8 @@ function u(e) {
 }
 
 function d() {
-  let e = (0, Chunk442837.e7)([Chunk77498.Z], () => Chunk77498.Z.games),
-    t = Chunk473749.useMemo(() => a()(module).filter(e => (0, o.pZ)(e)).map(e => ({
+  let e = (0, l.e7)([c.Z], () => c.Z.games),
+    t = r.useMemo(() => a()(e).filter(e => (0, o.pZ)(e)).map(e => ({
       value: e.id,
       label: e.name
     })).sortBy(e => {
@@ -26,13 +26,13 @@ function d() {
         value: t
       } = e;
       return u(t)
-    }).reverse().value(), [module]),
-    n = Chunk473749.useCallback((e, t) => u(t.item.value) - u(e.item.value), []);
+    }).reverse().value(), [e]),
+    n = r.useCallback((e, t) => u(t.item.value) - u(e.item.value), []);
   return {
-    options: exports,
-    matchSorterOptions: Chunk473749.useMemo(() => ({
-      baseSort: require,
+    options: t,
+    matchSorterOptions: r.useMemo(() => ({
+      baseSort: n,
       keys: ["label"]
-    }), [require])
+    }), [n])
   }
 }

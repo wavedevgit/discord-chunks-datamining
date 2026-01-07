@@ -47,23 +47,23 @@ class O extends Chunk473749.Component {
     let {
       channel: e
     } = this.props;
-    if (module.isMultiUserDM()) return null;
-    let t = null != module.topic && module.topic.length > 0;
-    return null != module.linkedLobby || exports ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk984370.Z.Divider, {}), (0, Chunk54381.jsxs)("div", {
-        className: a()(Chunk296343.topic, Chunk296343.expandable, Chunk960324.markup),
+    if (e.isMultiUserDM()) return null;
+    let t = null != e.topic && e.topic.length > 0;
+    return null != e.linkedLobby || t ? (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(d.Z.Divider, {}), (0, r.jsxs)("div", {
+        className: a()(p.topic, p.expandable, g.markup),
         onMouseDown: this.onMouseDown,
         onMouseMove: this.onMouseMove,
         onMouseUp: this.onMouseUp,
         onContextMenu: this.handleContextMenu,
         onClick: this.handleClick,
-        children: [(0, Chunk54381.jsx)(Chunk481060.P3F, {
+        children: [(0, r.jsx)(s.P3F, {
           onClick: this.handleClick,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.mKwsSp),
-          className: Chunk296343.topicClickTarget
-        }), null == module.linkedLobby || exports ? Chunk454585.Z.parseTopic(module.topic, true, {
-          channelId: module.id
-        }) : Chunk388032.intl.string(Chunk388032.t["XJVlf/"])]
+          "aria-label": h.intl.string(h.t.mKwsSp),
+          className: p.topicClickTarget
+        }), null == e.linkedLobby || t ? u.Z.parseTopic(e.topic, true, {
+          channelId: e.id
+        }) : h.intl.string(h.t["XJVlf/"])]
       })]
     }) : null
   }

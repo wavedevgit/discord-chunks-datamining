@@ -59,13 +59,13 @@ function m(e) {
 }
 
 function h() {
-  let e = (0, Chunk442837.e7)([Chunk269647.Z], () => Chunk269647.Z.shouldShowWarning(), []),
-    t = Chunk473749.useRef(null);
+  let e = (0, a.e7)([u.Z], () => u.Z.shouldShowWarning(), []),
+    t = i.useRef(null);
 
   function n() {
-    null !== exports.current && ((0, Chunk481060.Mr3)(exports.current), exports.current = null)
+    null !== t.current && ((0, s.Mr3)(t.current), t.current = null)
   }
-  return Chunk473749.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(m, _({}, e))) : require(), () => {
-    require()
-  }), [module]), null
+  return i.useEffect(() => (e ? t.current = (0, s.h7j)(e => (0, r.jsx)(m, _({}, e))) : n(), () => {
+    n()
+  }), [e]), null
 }

@@ -33,12 +33,12 @@ class _ extends Chunk473749.PureComponent {
         backgroundColor: t
       }
     } = this;
-    return (0, Chunk54381.jsx)("div", {
+    return (0, i.jsx)("div", {
       style: {
-        height: module,
-        backgroundColor: exports
+        height: e,
+        backgroundColor: t
       },
-      className: Chunk356362.gif
+      className: u.gif
     })
   }
   constructor(...e) {
@@ -61,9 +61,9 @@ class m extends(r = Chunk473749.Component) {
       }
     } = this;
     return {
-      width: "".concat(100 / module, "%"),
+      width: "".concat(100 / e, "%"),
       transform: [{
-        translateY: exports.interpolate({
+        translateY: t.interpolate({
           inputRange: [0, 1],
           outputRange: ["0px", "1px"]
         })
@@ -74,12 +74,12 @@ class m extends(r = Chunk473749.Component) {
     let {
       blocks: e
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk748780.Z.div, {
-      className: Chunk356362.column,
+    return (0, i.jsxs)(l.Z.div, {
+      className: u.column,
       style: this.getAnimatedStyle(),
-      children: [module.map((e, t) => (0, i.jsx)(_, {
+      children: [e.map((e, t) => (0, i.jsx)(_, {
         height: e
-      }, t)), module.map((e, t) => (0, i.jsx)(_, {
+      }, t)), e.map((e, t) => (0, i.jsx)(_, {
         height: e
       }, "alt".concat(t)))]
     })
@@ -132,9 +132,9 @@ class g extends Chunk473749.PureComponent {
       columns: e,
       renderColumn: t
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk356362.container,
-      children: Array(module).fill(null).map((n, r) => t(e, r))
+    return (0, i.jsx)("div", {
+      className: u.container,
+      children: Array(e).fill(null).map((n, r) => t(e, r))
     })
   }
 }

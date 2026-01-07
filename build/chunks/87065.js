@@ -10,11 +10,11 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.ON)(Chunk313789.n.BILLING_PAYMENT_METHODS, {
     Component: Chunk443702.wu,
-    useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.W26xGQ)]
+    useSearchTerms: () => [r.intl.string(r.t.W26xGQ)]
   }),
   o = (0, Chunk509613.k4)(Chunk313789.n.BILLING_PAYMENT_METHODS_CATEGORY, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.W26xGQ),
-    useTitleTrailingIcon: () => Chunk793030.mBM,
-    useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.h6V3uK),
+    useTitle: () => r.intl.string(r.t.W26xGQ),
+    useTitleTrailingIcon: () => i.mBM,
+    useSubtitle: () => r.intl.string(r.t.h6V3uK),
     buildLayout: () => [a]
   })

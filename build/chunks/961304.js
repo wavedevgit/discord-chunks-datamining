@@ -26,11 +26,11 @@ var u = function(e) {
 class d extends Chunk47770.Z {
   play() {
     var e;
-    null == (e = this.audioElement) || module.play()
+    null == (e = this.audioElement) || e.play()
   }
   destroy() {
     var e;
-    null == (e = this.audioElement) || module.pause(), null != this.videoStreamId && (0, Chunk376398.jC)(this.videoStreamId), null != this.streamSourceNode && (this.streamSourceNode.disconnect(), this.streamSourceNode = null), null != this.levelNode && (this.levelNode.disconnect(), this.levelNode.port.postMessage("close"), this.levelNode = null), this.setSpeakingFlags(Chunk65154.Dg.NONE), this.removeAllListeners()
+    null == (e = this.audioElement) || e.pause(), null != this.videoStreamId && (0, o.jC)(this.videoStreamId), null != this.streamSourceNode && (this.streamSourceNode.disconnect(), this.streamSourceNode = null), null != this.levelNode && (this.levelNode.disconnect(), this.levelNode.port.postMessage("close"), this.levelNode = null), this.setSpeakingFlags(s.Dg.NONE), this.removeAllListeners()
   }
   addTrack(e) {
     if (this.stream.getTracks().includes(e)) return this.stream.getTracks().length;
@@ -69,7 +69,7 @@ class d extends Chunk47770.Z {
     this._mute = e || false, this.updateAudioElement()
   }
   get priority() {
-    return (this._speakingFlags & Chunk65154.Dg.PRIORITY) === Chunk65154.Dg.PRIORITY
+    return (this._speakingFlags & s.Dg.PRIORITY) === s.Dg.PRIORITY
   }
   get volume() {
     return this._volume
@@ -85,10 +85,10 @@ class d extends Chunk47770.Z {
   }
   updateAudioElement() {
     let e = this.audioElement;
-    if (null != module) {
-      module.muted = this._mute, module.volume = this._volume / 100;
+    if (null != e) {
+      e.muted = this._mute, e.volume = this._volume / 100;
       let t = this.sinkId;
-      null != exports && Chunk740197.ZA && module.setSinkId(exports)
+      null != t && a.ZA && e.setSinkId(t)
     }
   }
   constructor(e, t) {

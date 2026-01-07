@@ -5,5 +5,5 @@ var Chunk390976 = require("./390976.js"),
   Chunk365088 = require("./365088.js"),
   Chunk691808 = require("./691808.js");
 module.exports = function() {
-  return Chunk691808(Chunk390976, Chunk365088, arguments)
+  return a(r, i, arguments)
 }

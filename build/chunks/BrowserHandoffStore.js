@@ -29,11 +29,11 @@ let E = "BrowserHandoffStore",
   y = new Chunk846519.V7;
 
 function O() {
-  null != r && null != i && (window.open("".concat(r, "&key=").concat(i)), Chunk12647.Z.focus(null, true))
+  null != r && null != i && (window.open("".concat(r, "&key=").concat(i)), _.Z.focus(null, true))
 }
 
 function v() {
-  i = null, y.stop(), b = false, Chunk433517.K.set(E, b)
+  i = null, y.stop(), b = false, c.K.set(E, b)
 }
 
 function S(e) {
@@ -64,10 +64,10 @@ function A() {
 }
 class N extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    false !== Chunk433517.K.get(E) && (b = Chunk358085.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
+    false !== c.K.get(E) && (b = m.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
   isHandoffAvailable() {
-    return !Chunk374023.s.isDisallowPopupsSet() && b
+    return !h.s.isDisallowPopupsSet() && b
   }
   get user() {
     return a

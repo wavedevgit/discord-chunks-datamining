@@ -62,14 +62,14 @@ function y(e, t) {
 let O = 2700,
   v = "> -# *",
   S = {
-    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t["fEUP/i"]),
-    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBC8),
-    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71F)
+    [Chunk228168.n_.AVATAR]: () => m.intl.string(m.t["fEUP/i"]),
+    [Chunk228168.n_.STATUS]: () => m.intl.string(m.t.TKdBC8),
+    [Chunk228168.n_.ACTIVITY]: () => m.intl.string(m.t.bSe71F)
   },
   I = {
-    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fV),
-    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS7"]),
-    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSj)
+    [Chunk228168.n_.AVATAR]: () => m.intl.string(m.t.xvN0fV),
+    [Chunk228168.n_.STATUS]: () => m.intl.string(m.t["C/vzS7"]),
+    [Chunk228168.n_.ACTIVITY]: () => m.intl.string(m.t.ObfsSj)
   };
 
 function T(e) {

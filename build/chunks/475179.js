@@ -33,7 +33,7 @@ function c(e) {
 }
 let u = {
   rebuildRTCActiveChannels() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "CHANNEL_RTC_ACTIVE_CHANNELS"
     })
   },

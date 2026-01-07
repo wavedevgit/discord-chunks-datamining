@@ -40,24 +40,24 @@ async function E() {
   if (null != window.navigator.mediaDevices) try {
     var e;
     let t = await window.navigator.mediaDevices.enumerateDevices(),
-      n = Chunk131951.Z.getOutputDevices(),
-      r = i()(require).sortBy(e => e.index).findIndex(e => e.id === l.Z.getOutputDeviceId()),
-      o = require[Chunk131951.Z.getOutputDeviceId()];
-    if (null == Chunk22382) {
+      n = l.Z.getOutputDevices(),
+      r = i()(n).sortBy(e => e.index).findIndex(e => e.id === l.Z.getOutputDeviceId()),
+      o = n[l.Z.getOutputDeviceId()];
+    if (null == o) {
       m = f;
       return
     }
-    let s = exports.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
-      c = Chunk747071[Chunk392711];
-    if (h(Chunk22382.name, null != (e = null == Chunk358085 ? true : Chunk358085.label) ? module : "")) {
-      m = Chunk358085.deviceId;
+    let s = t.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
+      c = s[r];
+    if (h(o.name, null != (e = null == c ? true : c.label) ? e : "")) {
+      m = c.deviceId;
       return
     }
-    if (c = i()(Chunk747071).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == Chunk358085 || (0, Chunk856901.stringSimilarity)(Chunk358085.label, Chunk22382.name) < p) {
+    if (c = i()(s).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == c || (0, a.stringSimilarity)(c.label, o.name) < p) {
       m = f;
       return
     }
-    m = Chunk358085.deviceId
+    m = c.deviceId
   } catch (e) {
     m = f
   }
@@ -82,7 +82,7 @@ let b = class {
   }
   pause() {
     var e;
-    null == (e = this._audio) || module.then(e => e.pause())
+    null == (e = this._audio) || e.then(e => e.pause())
   }
   stop() {
     this.destroyAudio()
@@ -103,7 +103,7 @@ let b = class {
   }
   ensureAudio() {
     var e;
-    return this._audio = null != (e = this._audio) ? module : new Promise((e, t) => {
+    return this._audio = null != (e = this._audio) ? e : new Promise((e, t) => {
       let r = new Audio;
       r.src = n(451343)("./".concat(this.name, ".mp3")), r.onloadeddata = () => {
         r.volume = Math.min(l.Z.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && r.setSinkId(this.outputChannel === u.w.DEFAULT ? f : m), e(r)

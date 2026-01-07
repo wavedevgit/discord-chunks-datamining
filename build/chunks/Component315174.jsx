@@ -126,10 +126,10 @@ function _(e) {
 }
 
 function I() {
-  return (0, Chunk54381.jsx)(Chunk481060.r7p, {
+  return (0, r.jsx)(d.r7p, {
     size: "custom",
     color: "currentColor",
-    className: Chunk371412.favoritesIcon,
+    className: x.favoritesIcon,
     height: 20,
     width: 20
   })

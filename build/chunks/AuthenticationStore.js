@@ -75,9 +75,9 @@ function et(e) {
 function en() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  if (U = Chunk433517.K.get(w), Z = null != (e = Chunk433517.K.get(D)) ? module : null, null != Q) return Q;
-  let n = null != U ? U : Chunk213919.getToken();
-  !(0, Chunk703656.m1)() || !exports && null != require || Chunk117240.Z.isHandoffAvailable() || er({
+  if (U = u.K.get(w), Z = null != (e = u.K.get(D)) ? e : null, null != Q) return Q;
+  let n = null != U ? U : o.getToken();
+  !(0, b.m1)() || !t && null != n || T.Z.isHandoffAvailable() || er({
     withGuildExperiments: true
   })
 }
@@ -121,7 +121,7 @@ function er(e) {
 }
 
 function ei() {
-  G = U, U = null, Chunk433517.K.remove(w)
+  G = U, U = null, u.K.remove(w)
 }
 
 function ea(e, t) {
@@ -133,7 +133,7 @@ function eo(e) {
 }
 
 function es() {
-  return et("removeAuthToken called."), Chunk213919.removeAnalyticsToken(), Chunk213919.removeToken()
+  return et("removeAuthToken called."), o.removeAnalyticsToken(), o.removeToken()
 }
 
 function el(e) {
@@ -151,7 +151,7 @@ function ec(e) {
 }
 
 function eu() {
-  B = Chunk981631.u34.NONE
+  B = A.u34.NONE
 }
 
 function ed(e) {
@@ -181,16 +181,16 @@ function e_(e) {
 
 function em() {
   let e = [];
-  null != K && module.push({
+  null != K && e.push({
     type: "webauthn",
     challenge: K
-  }), z && module.push({
+  }), z && e.push({
     type: "totp"
-  }), q && module.push({
+  }), q && e.push({
     type: "backup"
-  }), W && module.push({
+  }), W && e.push({
     type: "sms"
-  }), ee = module
+  }), ee = e
 }
 
 function eh(e) {
@@ -206,7 +206,7 @@ function eh(e) {
 }
 
 function eg() {
-  B = Chunk981631.u34.LOGGING_IN_MFA
+  B = A.u34.LOGGING_IN_MFA
 }
 
 function eE(e) {
@@ -309,8 +309,8 @@ function eP(e) {
 }
 
 function eR() {
-  V = true, ew(), Chunk570140.Z.wait(() => {
-    (0, Chunk703656.uL)(Chunk981631.Z5c.REGISTER)
+  V = true, ew(), d.Z.wait(() => {
+    (0, b.uL)(A.Z5c.REGISTER)
   })
 }
 
@@ -325,11 +325,11 @@ function ew(e) {
 }
 
 function eD() {
-  B = Chunk981631.u34.FORGOT_PASSWORD
+  B = A.u34.FORGOT_PASSWORD
 }
 
 function ex() {
-  B = Chunk981631.u34.NONE
+  B = A.u34.NONE
 }
 
 function eL(e) {
@@ -347,12 +347,12 @@ function ej(e) {
 }
 
 function eM() {
-  X = null, B = Chunk981631.u34.NONE, ew(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
+  X = null, B = A.u34.NONE, ew(), setImmediate(() => (0, b.uL)(A.Z5c.DEFAULT_LOGGED_OUT))
 }
 class ek extends(a = Chunk442837.ZP.Store) {
   initialize() {
     var e;
-    L = Chunk433517.K.get(x), Z = null != (e = Chunk433517.K.get(D)) ? module : null, null == Chunk213919.getToken() && (en(), (null == Z || 0 === Z.length) && (0, Chunk872780.kI)(null)), this.addChangeListener(() => (0, Chunk670890.u)(L))
+    L = u.K.get(x), Z = null != (e = u.K.get(D)) ? e : null, null == o.getToken() && (en(), (null == Z || 0 === Z.length) && (0, E.kI)(null)), this.addChangeListener(() => (0, m.u)(L))
   }
   getLoginStatus() {
     return B
@@ -370,19 +370,19 @@ class ek extends(a = Chunk442837.ZP.Store) {
     return k
   }
   getToken() {
-    return (0, Chunk449934.LP)()
+    return (0, S.LP)()
   }
   isAuthenticated() {
-    return (0, Chunk449934.$8)()
+    return (0, S.$8)()
   }
   getFingerprint() {
     return U
   }
   getInstallationForTracking() {
-    return Chunk625143.Z.canUseInstallationId() ? Z : null
+    return y.Z.canUseInstallationId() ? Z : null
   }
   getAnalyticsToken() {
-    return null != F ? F : Chunk213919.getAnalyticsToken()
+    return null != F ? F : o.getAnalyticsToken()
   }
   getMFATicket() {
     return Y
@@ -394,7 +394,7 @@ class ek extends(a = Chunk442837.ZP.Store) {
     return i
   }
   hasTOTPEnabled() {
-    return H.includes(Chunk911969.Pi.TOTP)
+    return H.includes(f.Pi.TOTP)
   }
   getCredentials() {
     if (null == r) throw Error("no credentials");

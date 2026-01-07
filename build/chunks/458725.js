@@ -194,9 +194,9 @@ function d(e) {
   return l[e]
 }! function() {
   let e = Object.values(l).map(e => e.errorCode),
-    t = new Set(module);
-  if (module.length !== exports.size) {
-    let t = module.filter((t, n) => e.indexOf(t) !== n),
+    t = new Set(e);
+  if (e.length !== t.size) {
+    let t = e.filter((t, n) => e.indexOf(t) !== n),
       n = Object.entries(l).filter(e => {
         let [n, r] = e;
         return t.includes(r.errorCode)
@@ -204,6 +204,6 @@ function d(e) {
         let [t, n] = e;
         return "".concat(t, ": ").concat(n.errorCode)
       });
-    throw Error("Duplicate AV error codes found:\n".concat(require.join("\n")))
+    throw Error("Duplicate AV error codes found:\n".concat(n.join("\n")))
   }
 }()

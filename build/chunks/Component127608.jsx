@@ -29,18 +29,18 @@ function a(e) {
 
 function o() {
   function e() {
-    (0, Chunk481060.ZDy)(async () => {
+    (0, r.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([require.e("32996"), require.e("74023")]).then(require.bind(require, 431583));
+      } = await Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583));
       return t => (0, i.jsx)(e, a({
         source: "Screenshare Unavailable"
       }, t))
     })
-  }(0, Chunk481060.ZDy)(async () => {
+  }(0, r.ZDy)(async () => {
     let {
       default: t
-    } = await require.e("67753").then(require.bind(require, 873809));
+    } = await n.e("67753").then(n.bind(n, 873809));
     return n => {
       var r, o;
       return (0, i.jsx)(t, (r = a({}, n), o = o = {

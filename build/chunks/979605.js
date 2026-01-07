@@ -50,8 +50,8 @@ module.exports = n, n.prototype.forEach = function(e, t) {
   t && (delete this._data[t._index], this._data.size--)
 }, n.prototype.clear = function() {
   var e = Object.create(null);
-  module.size = 0, Object.defineProperty(this, "_data", {
-    value: module,
+  e.size = 0, Object.defineProperty(this, "_data", {
+    value: e,
     enumerable: false,
     configurable: true,
     writable: false

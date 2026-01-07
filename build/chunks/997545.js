@@ -205,15 +205,15 @@ class x extends Chunk839548.Z {
     }), this.on("newListener", this.handleNewListenerNative)
   }
   destroy() {
-    this.conn.destroy(), Object.keys(this.localSpeakingFlags).filter(e => e !== this.userId).forEach(e => this.emit(h.Sh.Speaking, e, v.Dg.NONE, this.remoteAudioSSRCs[e])), this.setConnectionState(Chunk149396.$j.DISCONNECTED), super.destroy()
+    this.conn.destroy(), Object.keys(this.localSpeakingFlags).filter(e => e !== this.userId).forEach(e => this.emit(h.Sh.Speaking, e, v.Dg.NONE, this.remoteAudioSSRCs[e])), this.setConnectionState(v.$j.DISCONNECTED), super.destroy()
   }
   setCodecs(e, t, n) {
     this.conn.setTransportOptions(this.getCodecOptions(e, t, n)), this.videoEncoderFallbackPending && (this.videoEncoderFallbackPending = false)
   }
   getStats() {
-    return this.connectionState === Chunk149396.$j.DISCONNECTED ? Promise.resolve(null) : (0, Chunk420994.timeout)(new Promise(e => {
+    return this.connectionState === v.$j.DISCONNECTED ? Promise.resolve(null) : (0, d.timeout)(new Promise(e => {
       null != this.conn.getFilteredStats ? this.conn.getFilteredStats(O.QP.ALL, t => e((0, y.Z)(this.mediaEngineConnectionId, t, this.remoteVideoSinkWants, this.localVideoSinkWants))) : null != this.conn.getStats ? this.conn.getStats(t => e((0, y.Z)(this.mediaEngineConnectionId, t, this.remoteVideoSinkWants, this.localVideoSinkWants))) : (0, b.zS)().getStats(t => e((0, y.Z)(this.mediaEngineConnectionId, t, this.remoteVideoSinkWants, this.localVideoSinkWants)))
-    }), Chunk198274.T).catch(e => {
+    }), _.T).catch(e => {
       if (!(e instanceof d.TimeoutError)) throw e
     })
   }
@@ -281,7 +281,7 @@ class x extends Chunk839548.Z {
   }
   wasRemoteDisconnected() {
     var e, t;
-    null == (e = (t = this.conn).wasRemoteDisconnected) || module.call(exports)
+    null == (e = (t = this.conn).wasRemoteDisconnected) || e.call(t)
   }
   setLocalVideoDisabled(e, t) {
     this.disabledLocalVideos[e] = t, this.emit(h.Sh.LocalVideoDisabled, e, t)
@@ -645,10 +645,10 @@ class x extends Chunk839548.Z {
     let e = false;
     if (this.hasDesktopSource() && this.videoStreamParameters.length > 0) {
       var t;
-      e = (null == (t = this.videoStreamParameters[0].maxResolution) ? true : exports.type) === Chunk149396.uA.SOURCE
+      e = (null == (t = this.videoStreamParameters[0].maxResolution) ? true : t.type) === v.uA.SOURCE
     }
     this.conn.setTransportOptions(this.applyQualityConstraints({
-      encodingVideoDegradationPreference: this.hasDesktopSource() ? module ? this.sourceDesktopDegradationPreference : this.desktopDegradationPreference : this.videoDegradationPreference
+      encodingVideoDegradationPreference: this.hasDesktopSource() ? e ? this.sourceDesktopDegradationPreference : this.desktopDegradationPreference : this.videoDegradationPreference
     }).constraints), this.conn.setVideoBroadcast(this.selfVideo)
   }
   chooseEncryptionMode(e, t) {
@@ -673,11 +673,11 @@ class x extends Chunk839548.Z {
   }
   createInputModeOptions() {
     switch (this.inputMode) {
-      case Chunk149396.pM.VOICE_ACTIVITY:
+      case v.pM.VOICE_ACTIVITY:
         return {
-          vadThreshold: this.vadThreshold, vadAutoThreshold: this.vadAutoThreshold ? Chunk916057.a.VERY_AGGRESSIVE : Chunk916057.a.DISABLED, vadUseKrisp: this.vadUseKrisp, vadLeading: this.vadLeading, vadTrailing: this.vadTrailing, vadKrispActivationThreshold: this.vadKrispActivationThreshold, vadDuringPreProcess: this.vadDuringPreProcess
+          vadThreshold: this.vadThreshold, vadAutoThreshold: this.vadAutoThreshold ? E.a.VERY_AGGRESSIVE : E.a.DISABLED, vadUseKrisp: this.vadUseKrisp, vadLeading: this.vadLeading, vadTrailing: this.vadTrailing, vadKrispActivationThreshold: this.vadKrispActivationThreshold, vadDuringPreProcess: this.vadDuringPreProcess
         };
-      case Chunk149396.pM.PUSH_TO_TALK:
+      case v.pM.PUSH_TO_TALK:
         return {
           pttReleaseDelay: this.pttReleaseDelay
         };
@@ -765,7 +765,7 @@ class x extends Chunk839548.Z {
   getConnectionTransportOptions() {
     let e = C(I({
       selfMute: this.selfMute,
-      inputMode: Chunk149396.GO[this.inputMode],
+      inputMode: v.GO[this.inputMode],
       inputModeOptions: this.createInputModeOptions(),
       minimumJitterBufferLevel: this.minimumJitterBufferLevel,
       postponeDecodeLevel: this.postponeDecodeLevel
@@ -773,15 +773,15 @@ class x extends Chunk839548.Z {
       fec: true,
       packetLossRate: .3,
       qos: this.qos,
-      prioritySpeakerDucking: Chunk149396.jg,
+      prioritySpeakerDucking: v.jg,
       encodingVoiceBitRate: this.voiceBitrate,
-      callBitRate: Chunk149396.$A,
-      callMinBitRate: Chunk149396.mN,
-      callMaxBitRate: Chunk149396.mC,
+      callBitRate: v.$A,
+      callMinBitRate: v.mN,
+      callMaxBitRate: v.mC,
       encodingVideoDegradationPreference: this.videoDegradationPreference,
       reconnectInterval: this.reconnectInterval
     });
-    return (0, Chunk992774.eJ)(Chunk149396.eR.VIDEO_EFFECTS) && this.context === Chunk149396.Yn.STREAM && (module.enableVideoEffects = true), this.experimentFlags.has(Chunk65154.V8.MUTE_BEFORE_PROCESSING) && (module.muteBeforeProcessing = true), this.experimentFlags.has(Chunk65154.V8.PTT_BEFORE_PROCESSING) && (module.pttBeforeProcessing = true), this.experimentFlags.has(Chunk65154.V8.SKIP_ENCODE) && (module.skipEncode = true), module
+    return (0, b.eJ)(v.eR.VIDEO_EFFECTS) && this.context === v.Yn.STREAM && (e.enableVideoEffects = true), this.experimentFlags.has(O.V8.MUTE_BEFORE_PROCESSING) && (e.muteBeforeProcessing = true), this.experimentFlags.has(O.V8.PTT_BEFORE_PROCESSING) && (e.pttBeforeProcessing = true), this.experimentFlags.has(O.V8.SKIP_ENCODE) && (e.skipEncode = true), e
   }
   setStream(e) {
     throw Error("Method not implemented.")

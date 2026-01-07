@@ -8,5 +8,5 @@ var Chunk399606 = require("./399606.js"),
   Chunk314897 = require("./314897.js");
 
 function a() {
-  return (0, Chunk399606.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated())
+  return (0, r.e7)([i.default], () => i.default.isAuthenticated())
 }

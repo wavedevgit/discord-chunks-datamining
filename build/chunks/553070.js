@@ -5,8 +5,8 @@ var Chunk861538 = require("./861538.js"),
   Chunk117973 = require("./117973.js");
 module.exports = function() {
   this.size = 0, this.__data__ = {
-    hash: new Chunk861538,
-    map: new(Chunk117973 || Chunk900624),
-    string: new Chunk861538
+    hash: new r,
+    map: new(a || i),
+    string: new r
   }
 }

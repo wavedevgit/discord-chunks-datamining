@@ -7,5 +7,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk949599 = require("./949599.js");
 let u = (0, Chunk509613.k4)(Chunk313789.n.CHAT_SPOILERS_CATEGORY, {
-  buildLayout: () => [Chunk949599.X]
+  buildLayout: () => [s.X]
 })

@@ -39,13 +39,13 @@ class b extends(r = Chunk442837.ZP.Store) {
   async updateState() {
     try {
       var e, t, n;
-      this.logEvent(await (null === Chunk998502.ZP || true === Chunk998502.ZP || null == (n = Chunk998502.ZP.getDiscordUtils) || null == (t = require.call(Chunk998502.ZP)) || null == (e = exports.runWarpCommand) ? true : module.call(exports, "status")))
+      this.logEvent(await (null === d.ZP || true === d.ZP || null == (n = d.ZP.getDiscordUtils) || null == (t = n.call(d.ZP)) || null == (e = t.runWarpCommand) ? true : e.call(t, "status")))
     } catch (e) {}
   }
   addListener() {
     try {
       var e, t, n;
-      null === Chunk998502.ZP || true === Chunk998502.ZP || null == (n = Chunk998502.ZP.getDiscordUtils) || null == (t = require.call(Chunk998502.ZP)) || null == (e = exports.onWarpEvent) || module.call(exports, e => this.logEvent(e))
+      null === d.ZP || true === d.ZP || null == (n = d.ZP.getDiscordUtils) || null == (t = n.call(d.ZP)) || null == (e = t.onWarpEvent) || e.call(t, e => this.logEvent(e))
     } catch (e) {}
   }
   async runCommand(e) {
@@ -89,10 +89,10 @@ class b extends(r = Chunk442837.ZP.Store) {
   async configureExceptions() {
     try {
       let t = await this.runCommand("tunnel", "host", "list");
-      if ((null == exports ? true : exports.mode) === "exclude")
+      if ((null == t ? true : t.mode) === "exclude")
         for (let n of E) {
           var e;
-          (null == exports || null == (e = exports.hosts) ? true : module.indexOf(require)) === false && await this.runCommand("tunnel", "host", "add", require)
+          (null == t || null == (e = t.hosts) ? true : e.indexOf(n)) === false && await this.runCommand("tunnel", "host", "add", n)
         }
     } catch (e) {}
   }
@@ -108,7 +108,7 @@ class b extends(r = Chunk442837.ZP.Store) {
     return g
   }
   get clientEnabled() {
-    return (0, Chunk818710.nI)() && Chunk299886.H.getConfig({
+    return (0, i.nI)() && l.H.getConfig({
       location: "WarpClientStore"
     }).enabled
   }
@@ -132,7 +132,7 @@ class b extends(r = Chunk442837.ZP.Store) {
       let e = this.runCommand("disconnect");
       return h = {
         status: "DisconnectCommandSent"
-      }, await module
+      }, await e
     }
     return this.clientEnabled
   }

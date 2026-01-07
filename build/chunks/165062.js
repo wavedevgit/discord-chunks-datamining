@@ -10,8 +10,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let s = (0, Chunk442837.Kb)(Chunk54613.Z, {
   getQueryId: Chunk981631.McO.USER_COUNTRY_CODE,
-  get: () => Chunk54613.Z.getCountryCode(),
+  get: () => a.Z.getCountryCode(),
   load: async () => {
-    await Chunk893776.Z.getLocationMetadata()
+    await i.Z.getLocationMetadata()
   }
 })

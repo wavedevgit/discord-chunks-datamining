@@ -20,9 +20,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk517319 = require("./517319.js");
 
 function g() {
-  let e = (0, Chunk915009.LN)(),
-    t = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.USAGE_STATISTICS)),
-    n = Chunk473749.useCallback(e => {
+  let e = (0, s.LN)(),
+    t = (0, a.e7)([l.Z], () => l.Z.hasConsented(_.pjP.USAGE_STATISTICS)),
+    n = i.useCallback(e => {
       e ? (0, o.g)([_.pjP.USAGE_STATISTICS], []).catch(f.S) : (0, f.V)({
         header: m.intl.string(m.t.OdPCbN),
         body: m.intl.string(m.t.MGWabA),
@@ -31,17 +31,17 @@ function g() {
         onConfirm: () => (0, o.g)([], [_.pjP.USAGE_STATISTICS]).catch(f.S)
       })
     }, []);
-  return (0, Chunk54381.jsx)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_DATA_IMPROVE_DISCORD_V2,
-    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t.XuADY2),
-      note: Chunk388032.intl.format(Chunk388032.t["igTSG/"], {
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_PRIVACY_CONTROLS)
+  return (0, r.jsx)(u.U, {
+    setting: p.s6.PRIVACY_DATA_IMPROVE_DISCORD_V2,
+    children: (0, r.jsx)(d.ZP, {
+      title: m.intl.string(m.t.XuADY2),
+      note: m.intl.format(m.t["igTSG/"], {
+        helpdeskArticle: c.Z.getArticleURL(_.BhN.DATA_PRIVACY_CONTROLS)
       }),
-      value: exports,
-      onChange: require,
-      disabled: module,
-      tooltipText: module ? Chunk388032.intl.string(Chunk517319.default["6Af/cw"]) : true
+      value: t,
+      onChange: n,
+      disabled: e,
+      tooltipText: e ? m.intl.string(h.default["6Af/cw"]) : true
     })
   })
 }

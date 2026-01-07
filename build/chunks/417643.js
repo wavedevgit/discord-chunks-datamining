@@ -85,7 +85,7 @@ let Chunk139761 = require("./139761.js");
   toJSON() {
     let t = this.trigger();
     return Object.assign({}, this.data, {
-      trigger: "number" == typeof module ? module : (0, Chunk139761.toJSON)(module),
+      trigger: "number" == typeof t ? t : (0, n.toJSON)(t),
       x: this.x()
     })
   }
@@ -93,8 +93,8 @@ let Chunk139761 = require("./139761.js");
     let t = "BEGIN:VALARM\r\n";
     if (!this.data.type) throw Error("No value for `type` in ICalAlarm given!");
     if (!this.data.trigger) throw Error("No value for `trigger` in ICalAlarm given!");
-    if (t += "ACTION:" + this.data.type.toUpperCase() + "\r\n", "number" == typeof this.data.trigger && this.data.trigger > 0 ? t += "TRIGGER;RELATED=END:" + (0, Chunk139761.toDurationString)(this.data.trigger) + "\r\n" : "number" == typeof this.data.trigger ? t += "TRIGGER:" + (0, Chunk139761.toDurationString)(this.data.trigger) + "\r\n" : t += "TRIGGER;VALUE=DATE-TIME:" + (0, Chunk139761.formatDate)(this.event.timezone(), this.data.trigger) + "\r\n", this.data.repeat && !this.data.interval) throw Error("No value for `interval` in ICalAlarm given, but required for `repeat`!");
+    if (t += "ACTION:" + this.data.type.toUpperCase() + "\r\n", "number" == typeof this.data.trigger && this.data.trigger > 0 ? t += "TRIGGER;RELATED=END:" + (0, n.toDurationString)(this.data.trigger) + "\r\n" : "number" == typeof this.data.trigger ? t += "TRIGGER:" + (0, n.toDurationString)(this.data.trigger) + "\r\n" : t += "TRIGGER;VALUE=DATE-TIME:" + (0, n.formatDate)(this.event.timezone(), this.data.trigger) + "\r\n", this.data.repeat && !this.data.interval) throw Error("No value for `interval` in ICalAlarm given, but required for `repeat`!");
     if (this.data.repeat && (t += "REPEAT:" + this.data.repeat + "\r\n"), this.data.interval && !this.data.repeat) throw Error("No value for `repeat` in ICalAlarm given, but required for `interval`!");
-    return this.data.interval && (t += "DURATION:" + (0, Chunk139761.toDurationString)(this.data.interval) + "\r\n"), "audio" === this.data.type && this.data.attach && this.data.attach.mime ? t += "ATTACH;FMTTYPE=" + this.data.attach.mime + ":" + this.data.attach.uri + "\r\n" : "audio" === this.data.type && this.data.attach ? t += "ATTACH;VALUE=URI:" + this.data.attach.uri + "\r\n" : "audio" === this.data.type && (t += "ATTACH;VALUE=URI:Basso\r\n"), "display" === this.data.type && this.data.description ? t += "DESCRIPTION:" + (0, Chunk139761.escape)(this.data.description) + "\r\n" : "display" === this.data.type && (t += "DESCRIPTION:" + (0, Chunk139761.escape)(this.event.summary()) + "\r\n"), t += (0, Chunk139761.generateCustomAttributes)(this.data), t += "END:VALARM\r\n"
+    return this.data.interval && (t += "DURATION:" + (0, n.toDurationString)(this.data.interval) + "\r\n"), "audio" === this.data.type && this.data.attach && this.data.attach.mime ? t += "ATTACH;FMTTYPE=" + this.data.attach.mime + ":" + this.data.attach.uri + "\r\n" : "audio" === this.data.type && this.data.attach ? t += "ATTACH;VALUE=URI:" + this.data.attach.uri + "\r\n" : "audio" === this.data.type && (t += "ATTACH;VALUE=URI:Basso\r\n"), "display" === this.data.type && this.data.description ? t += "DESCRIPTION:" + (0, n.escape)(this.data.description) + "\r\n" : "display" === this.data.type && (t += "DESCRIPTION:" + (0, n.escape)(this.event.summary()) + "\r\n"), t += (0, n.generateCustomAttributes)(this.data), t += "END:VALARM\r\n"
   }
 }

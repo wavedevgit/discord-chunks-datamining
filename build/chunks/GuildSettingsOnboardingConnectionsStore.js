@@ -23,16 +23,16 @@ let d = [],
   g = [];
 
 function f() {
-  let e = Chunk999382.Z.getGuildId();
-  if (null == module) {
+  let e = s.Z.getGuildId();
+  if (null == e) {
     d = [], g = [], u = false;
     return
   }
-  d = [...Chunk45966.Z.getConnections(module)], g = [], u = false
+  d = [...a.Z.getConnections(e)], g = [], u = false
 }
 class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk45966.Z, Chunk999382.Z)
+    this.waitFor(a.Z, s.Z)
   }
   getEditedConnections() {
     return d
@@ -44,10 +44,10 @@ class m extends(r = Chunk442837.ZP.Store) {
     return u
   }
   hasChanges() {
-    let e = Chunk999382.Z.getGuildId();
-    if (null == module) returnfalse;
-    let t = Chunk45966.Z.getConnections(module);
-    return d.length !== exports.length || d.some((e, n) => {
+    let e = s.Z.getGuildId();
+    if (null == e) returnfalse;
+    let t = a.Z.getConnections(e);
+    return d.length !== t.length || d.some((e, n) => {
       let r = t[n];
       return null == r || e.connection_type !== r.connection_type || e.application_id !== r.application_id || e.provider_id !== r.provider_id || e.description !== r.description
     })
@@ -105,15 +105,15 @@ let b = new m(Chunk570140.Z, {
     d = [...t], g = (0, o.rZ)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET: function() {
-    let e = Chunk999382.Z.getGuildId();
-    if (null == module) {
+    let e = s.Z.getGuildId();
+    if (null == e) {
       d = [], g = [];
       return
     }
-    d = [...Chunk45966.Z.getConnections(module)], g = []
+    d = [...a.Z.getConnections(e)], g = []
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT: function() {
-    u = true, g = (0, Chunk290511.rZ)(d)
+    u = true, g = (0, o.rZ)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: function(e) {
     let {

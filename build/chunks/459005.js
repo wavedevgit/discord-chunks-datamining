@@ -64,7 +64,7 @@ let c = Object.freeze({
   });
 class p {
   reset() {
-    this._timeTracking = (0, Chunk392711.cloneDeep)(c), this._timingStats = (0, Chunk392711.cloneDeep)(u), this._measurements = (0, Chunk392711.cloneDeep)(d), this._eventCounts = (0, Chunk392711.cloneDeep)(f)
+    this._timeTracking = (0, r.cloneDeep)(c), this._timingStats = (0, r.cloneDeep)(u), this._measurements = (0, r.cloneDeep)(d), this._eventCounts = (0, r.cloneDeep)(f)
   }
   clearTime(e) {
     this._timeTracking[e] = null
@@ -112,9 +112,9 @@ class p {
     return a({}, Object.entries(this._eventCounts).reduce((e, t) => {
       let [n, r] = t;
       return e["count_".concat(n)] = "".concat(r), e
-    }, {}), module, exports)
+    }, {}), e, t)
   }
   constructor() {
-    i(this, "_timeTracking", (0, Chunk392711.cloneDeep)(c)), i(this, "_timingStats", (0, Chunk392711.cloneDeep)(u)), i(this, "_measurements", (0, Chunk392711.cloneDeep)(d)), i(this, "_eventCounts", (0, Chunk392711.cloneDeep)(f)), i(this, "_enabled", false)
+    i(this, "_timeTracking", (0, r.cloneDeep)(c)), i(this, "_timingStats", (0, r.cloneDeep)(u)), i(this, "_measurements", (0, r.cloneDeep)(d)), i(this, "_eventCounts", (0, r.cloneDeep)(f)), i(this, "_enabled", false)
   }
 }

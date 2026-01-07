@@ -19,39 +19,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk49898 = require("./49898.js"),
   Chunk10531 = require("./10531.js");
 let _ = function() {
-  let e = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments),
-    t = Chunk836768.Z.useField("selectedTab"),
+  let e = (0, a.e7)([s.Z], () => s.Z.hasLoadedExperiments),
+    t = g.Z.useField("selectedTab"),
     n = function(e) {
       switch (e) {
-        case m.GlobalDiscoveryTab.SERVERS:
+        case h.GlobalDiscoveryTab.SERVERS:
           return (0, r.jsx)(u.Z, {});
-        case m.GlobalDiscoveryTab.APPS:
+        case h.GlobalDiscoveryTab.APPS:
           return (0, r.jsx)(c.default, {});
-        case m.GlobalDiscoveryTab.QUESTS:
+        case h.GlobalDiscoveryTab.QUESTS:
           return (0, r.jsx)(d.Z, {
             topLevelRoute: false
           });
         default:
           (0, p.vE)(e)
       }
-    }(exports),
-    _ = (0, Chunk828700.TH)();
-  return Chunk473749.useEffect(() => {
+    }(t),
+    _ = (0, l.TH)();
+  return i.useEffect(() => {
     let e = _.pathname,
-      t = (0, Chunk766219.I)(module);
-    exports !== Chunk836768.Z.getField("selectedTab") && Chunk836768.Z.setState({
-      selectedTab: exports
+      t = (0, m.I)(e);
+    t !== g.Z.getField("selectedTab") && g.Z.setState({
+      selectedTab: t
     })
-  }, [_.pathname]), Chunk473749.useEffect(() => {
-    module && (0, Chunk571457.RI)({
-      selectedTab: exports
+  }, [_.pathname]), i.useEffect(() => {
+    e && (0, f.RI)({
+      selectedTab: t
     })
-  }, [exports, module]), (0, Chunk54381.jsxs)("section", {
-    className: Chunk10531.container,
-    children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
-      location: (0, Chunk766219.s)(exports)
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk10531.dragRegion
-    }), require]
+  }, [t, e]), (0, r.jsxs)("section", {
+    className: b.container,
+    children: [(0, r.jsx)(o.yY, {
+      location: (0, m.s)(t)
+    }), (0, r.jsx)("div", {
+      className: b.dragRegion
+    }), n]
   })
 }

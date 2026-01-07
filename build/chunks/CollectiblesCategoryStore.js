@@ -107,22 +107,22 @@ let h = new Map,
     O = h, v = g, C = y, i = true, N = false, P = new Set, r = true, a = true, D = {}, x = 0
   },
   V = () => {
-    if (!Chunk353926.Z.hasLoadedExperiments) return;
+    if (!u.Z.hasLoadedExperiments) return;
     let {
       giftRecommendationAlgorithm: e
-    } = Chunk109213.G.getCurrentConfig({
+    } = d.G.getCurrentConfig({
       location: "CollectiblesCategoryStore handleExperimentChange"
     }, {
       autoTrackExposure: false
     });
-    module !== A && (i = true), A = module
+    e !== A && (i = true), A = e
   },
   H = e => {
     x = e.skipNumCategories
   };
 class Y extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk706454.default], B), this.syncWith([Chunk353926.Z], V)
+    this.syncWith([f.default], B), this.syncWith([u.Z], V)
   }
   get isFetchingCategories() {
     return N

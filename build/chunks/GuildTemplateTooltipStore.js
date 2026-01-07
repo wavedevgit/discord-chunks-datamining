@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 130734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -63,7 +63,7 @@ class g extends(r = Chunk442837.ZP.Store) {
   }
 }
 o(g, "displayName", "GuildTemplateTooltipStore");
-let h = new g(Chunk570140.Z, {
+let m = new g(Chunk570140.Z, {
   GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
     let {
       guildTemplate: t
@@ -73,7 +73,7 @@ let h = new g(Chunk570140.Z, {
     })
   },
   GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE: function() {
-    Chunk433517.K.set(u, true), p = true
+    l.K.set(u, true), p = true
   },
   GUILD_TEMPLATE_SYNC_SUCCESS: function(e) {
     d = c(s({}, d), {

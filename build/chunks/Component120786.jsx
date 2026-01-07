@@ -22,23 +22,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk73909 = require("./73909.js"),
   Chunk479656 = require("./479656.js");
 let y = () => {
-    let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk226880.assetContainer,
-      children: module ? (0, Chunk54381.jsx)("img", {
-        src: Chunk73909.Z,
-        className: Chunk226880.orbAsset,
+    let e = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+    return (0, r.jsx)("div", {
+      className: h.assetContainer,
+      children: e ? (0, r.jsx)("img", {
+        src: E.Z,
+        className: h.orbAsset,
         alt: "Orb"
-      }) : (0, Chunk54381.jsxs)(Chunk70097.Z, {
+      }) : (0, r.jsxs)(d.Z, {
         autoPlay: true,
         loop: true,
-        className: Chunk226880.orbAsset,
-        children: [(0, Chunk54381.jsx)("source", {
-          src: Chunk479656.Z,
+        className: h.orbAsset,
+        children: [(0, r.jsx)("source", {
+          src: b.Z,
           type: "video/webm"
-        }), (0, Chunk54381.jsx)("img", {
-          src: Chunk73909.Z,
-          className: Chunk226880.orbAsset,
+        }), (0, r.jsx)("img", {
+          src: E.Z,
+          className: h.orbAsset,
           alt: "Orb"
         })]
       })

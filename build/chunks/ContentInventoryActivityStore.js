@@ -71,21 +71,21 @@ function I() {
     t = Array.from(E.keys()),
     n = new Set,
     r = new Set;
-  for (let t of Chunk146282.Z.getFeeds().values()) {
+  for (let t of d.Z.getFeeds().values()) {
     let {
       updatedKeys: i,
       matchedKeys: a
-    } = O(require.size > 0 ? exports.entries.filter(e => !n.has(b(e.content))) : exports.entries);
-    for (let e of Chunk392711) require.add(module);
-    for (let e of a) r.add(module);
-    e = module || Chunk392711.size > 0
+    } = O(n.size > 0 ? t.entries.filter(e => !n.has(b(e.content))) : t.entries);
+    for (let e of i) n.add(e);
+    for (let e of a) r.add(e);
+    e = e || i.size > 0
   }
-  for (let n of a().difference(exports, [...r])) E.delete(require), e = true;
-  return module
+  for (let n of a().difference(t, [...r])) E.delete(n), e = true;
+  return e
 }
 class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk146282.Z, Chunk158776.Z), this.syncWith([Chunk158776.Z], I)
+    this.waitFor(d.Z, u.Z), this.syncWith([u.Z], I)
   }
   getMatchingActivity(e) {
     return (0, _.n2)(e) ? null : E.get(b(e))

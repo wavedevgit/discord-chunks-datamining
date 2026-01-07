@@ -59,7 +59,7 @@ class b extends Chunk473749.PureComponent {
     }, m)).start(e)
   }
   getStyle() {
-    return Chunk748780.Z.accelerate({
+    return o.Z.accelerate({
       transform: [{
         translateX: this._animated.interpolate({
           inputRange: [0, 1],
@@ -69,9 +69,9 @@ class b extends Chunk473749.PureComponent {
     })
   }
   render() {
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+    return (0, i.jsx)(o.Z.div, {
       style: this.getStyle(),
-      className: Chunk272392.item,
+      className: d.item,
       children: this.props.children
     })
   }

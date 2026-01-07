@@ -45,12 +45,12 @@ async function O() {
   var e, t, n;
   try {
     let n = y();
-    if (m === require || !Chunk987650.iP) return;
-    let r = await (null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getGpuProcessId) ? true : module.call(exports));
+    if (m === n || !d.iP) return;
+    let r = await (null === o.Z || true === o.Z || null == (t = o.Z.processUtils) || null == (e = t.getGpuProcessId) ? true : e.call(t));
     if (null == r) return;
-    Chunk998502.ZP.SetGPUBoostEnabledByPid(r, require) && (m = require), P.emitChange()
+    l.ZP.SetGPUBoostEnabledByPid(r, n) && (m = n), P.emitChange()
   } catch (e) {
-    (null == (n = module.message) ? true : require.includes("IPC method called after context was released")) && b(), p.error("Error during GPU boost request flush:", module)
+    (null == (n = e.message) ? true : n.includes("IPC method called after context was released")) && b(), p.error("Error during GPU boost request flush:", e)
   }
 }
 
@@ -75,7 +75,7 @@ function T(e) {
 }
 
 function C() {
-  Chunk998502.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && g(Chunk837268.zS.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED, true), g(Chunk837268.zS.OVERLAY_RENDERING, true)
+  l.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && g(c.zS.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED, true), g(c.zS.OVERLAY_RENDERING, true)
 }
 
 function A() {
@@ -83,7 +83,7 @@ function A() {
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk509140.Z)
+    this.waitFor(u.Z)
   }
   getGPUBoostRequests() {
     return _

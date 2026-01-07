@@ -138,8 +138,8 @@ class g extends Chunk836560.EventEmitter {
       t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     null != this.updateTimeout && clearTimeout(this.updateTimeout);
     let n = this;
-    this.nextUpdateQueryChanged = this.nextUpdateQueryChanged || module, this.nextUpdateContextChanged = this.nextUpdateContextChanged || exports, this.updateTimeout = setTimeout(() => {
-      require.updateResults(this.nextUpdateQueryChanged, this.nextUpdateContextChanged), this.nextUpdateQueryChanged = false, this.nextUpdateContextChanged = false, this.updateTimeout = true
+    this.nextUpdateQueryChanged = this.nextUpdateQueryChanged || e, this.nextUpdateContextChanged = this.nextUpdateContextChanged || t, this.updateTimeout = setTimeout(() => {
+      n.updateResults(this.nextUpdateQueryChanged, this.nextUpdateContextChanged), this.nextUpdateQueryChanged = false, this.nextUpdateContextChanged = false, this.updateTimeout = true
     }, 0)
   }
   updateResults() {
@@ -147,10 +147,10 @@ class g extends Chunk836560.EventEmitter {
     let r, i, d = arguments.length > 0 && true !== arguments[0] && arguments[0],
       f = arguments.length > 1 && true !== arguments[1] && arguments[1];
     if (null == this.props.editorRef.current) return;
-    let p = (0, Chunk152089.FW)(this.props, this.state),
+    let p = (0, u.FW)(this.props, this.state),
       _ = this.props.editorRef.current.getSlateEditor();
-    null != _ && (i = null != (r = Chunk887490.bN.getSelectedParentOfType(_, m)) ? Chunk887490.bN.getTextFromRange(_, Chunk887490.bN.range(_, Chunk836560[1])) : null);
-    let h = (0, Chunk152089.fZ)({
+    null != _ && (i = null != (r = o.bN.getSelectedParentOfType(_, m)) ? o.bN.getTextFromRange(_, o.bN.range(_, r[1])) : null);
+    let h = (0, u.fZ)({
         channel: this.props.channel,
         guild: this.props.guild,
         options: p,
@@ -158,36 +158,36 @@ class g extends Chunk836560.EventEmitter {
         currentWordIsAtStart: this.props.currentWordIsAtStart,
         textValue: this.props.textValue,
         optionText: this.props.optionText,
-        parentAutocompleteInputType: null == Chunk836560 ? true : Chunk836560[0].type,
-        parentAutocompleteInputValue: Chunk555573
+        parentAutocompleteInputType: null == r ? true : r[0].type,
+        parentAutocompleteInputValue: i
       }),
-      g = p.commands !== Chunk590921.L8.DISABLED ? (0, Chunk152089.py)(this.props.activeCommandOption, this.props.currentWord) : null;
+      g = p.commands !== c.L8.DISABLED ? (0, u.py)(this.props.activeCommandOption, this.props.currentWord) : null;
     if (null == h && null != g) h = g;
     else if (null == h || null != g && h.type !== g.type) return void this.clearQuery();
     let {
       type: E,
       typeInfo: b,
       query: y
-    } = h, O = f || d && ((null == (e = this.state.query) ? true : module.queryText) !== y || (null == (t = this.state.query) ? true : exports.typeInfo) !== b), v = Chunk695346.fq.getSetting();
+    } = h, O = f || d && ((null == (e = this.state.query) ? true : e.queryText) !== y || (null == (t = this.state.query) ? true : t.typeInfo) !== b), v = l.fq.getSetting();
     p.allowStickers = p.allowStickers ? v : p.allowStickers;
-    let S = Chunk695346.eR.getSetting();
+    let S = l.eR.getSetting();
     p.allowSoundmoji = p.allowSoundmoji ? S : p.allowSoundmoji;
     let {
       results: I,
       metadata: T
     } = b.queryResults(this.props.channel, this.props.guild, y, p, O), C = 0;
-    for (let e of Object.values(I)) Array.isArray(module) && (C += module.length);
+    for (let e of Object.values(I)) Array.isArray(e) && (C += e.length);
     let A = true === I.isLoading,
       N = this.shouldShow(C, A, b),
       P = this.state.selectedIndex;
     !N || A ? P = null : null != P && P >= C && (P = C - 1);
-    let R = null != this.props.guild && Chunk627050.N.getCurrentConfig({
+    let R = null != this.props.guild && s.N.getCurrentConfig({
       guildId: this.props.guild.id,
       location: "mention autocomplete"
     }, {
       autoTrackExposure: true
     }).enabled;
-    N && !this.state.isVisible && (0, Chunk376918.a7)(E, this.props.channel, T, R), this.setState({
+    N && !this.state.isVisible && (0, a.a7)(E, this.props.channel, T, R), this.setState({
       query: {
         type: E,
         typeInfo: b,
@@ -200,7 +200,7 @@ class g extends Chunk836560.EventEmitter {
       isVisible: N,
       selectedIndex: P,
       hadInitialResults: true,
-      isInitialAfterError: true !== this.state.hadInitialResults && null != (n = null == Chunk836560 ? true : Chunk836560[0].error) && require
+      isInitialAfterError: true !== this.state.hadInitialResults && null != (n = null == r ? true : r[0].error) && n
     })
   }
   shouldShow(e, t, n) {

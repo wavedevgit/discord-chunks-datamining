@@ -23,7 +23,7 @@ let s = {
 class u extends(i = Chunk442837.ZP.PersistedStore) {
   initialize() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : s;
-    n = module
+    n = e
   }
   getState() {
     return n

@@ -23,31 +23,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk196152 = require("./196152.js");
 
 function y() {
-  let e = (0, Chunk181211.Z)(),
-    t = (0, Chunk846488.e)(),
-    n = (0, Chunk451284.P)(),
-    y = (0, Chunk802429.i)();
-  (0, Chunk493773.ZP)(() => {
-    Chunk103879.yq()
+  let e = (0, _.Z)(),
+    t = (0, p.e)(),
+    n = (0, d.P)(),
+    y = (0, f.i)();
+  (0, s.ZP)(() => {
+    u.yq()
   });
-  let O = Chunk473749.useRef(require);
-  return (Chunk473749.useEffect(() => {
-    O.current = require
-  }), Chunk473749.useEffect(() => {
-    exports && (Chunk626135.default.track(Chunk981631.rMx.SAFETY_HUB_VIEWED, {
+  let O = i.useRef(n);
+  return (i.useEffect(() => {
+    O.current = n
+  }), i.useEffect(() => {
+    t && (c.default.track(g.rMx.SAFETY_HUB_VIEWED, {
       account_standing: O.current.state
-    }), Chunk797614.Z.increment({
-      name: Chunk286379.V.SAFETY_HUB_VIEW
+    }), l.Z.increment({
+      name: a.V.SAFETY_HUB_VIEW
     }))
-  }, [exports]), module) ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : null != y ? (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-    color: Chunk481060.DM8.DANGER,
-    className: Chunk196152.nagbar,
-    children: [Chunk388032.intl.string(Chunk388032.t.TDRvqs), (0, Chunk54381.jsx)(Chunk481060.EyT, {
-      onClick: () => Chunk103879.yq(),
-      children: Chunk388032.intl.string(Chunk388032.t.R1AN4F)
+  }, [t]), e) ? (0, r.jsx)(o.$jN, {}) : null != y ? (0, r.jsxs)(o.qXd, {
+    color: o.DM8.DANGER,
+    className: b.nagbar,
+    children: [E.intl.string(E.t.TDRvqs), (0, r.jsx)(o.EyT, {
+      onClick: () => u.yq(),
+      children: E.intl.string(E.t.R1AN4F)
     })]
-  }) : (0, Chunk54381.jsxs)("div", {
-    className: Chunk196152.container,
-    children: [(0, Chunk54381.jsx)(Chunk811085.Z, {}), (0, Chunk54381.jsx)(Chunk967254.N, {})]
+  }) : (0, r.jsxs)("div", {
+    className: b.container,
+    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(h.N, {})]
   })
 }

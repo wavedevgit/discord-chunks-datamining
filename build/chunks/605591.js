@@ -11,23 +11,23 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function u() {
-  return (0, Chunk442837.Wu)([Chunk643327.Z, Chunk594174.default, Chunk158776.Z, Chunk699516.Z], () => {
-    let e = Chunk643327.Z.getGroups(),
+  return (0, r.Wu)([i.Z, o.default, l.Z, s.Z], () => {
+    let e = i.Z.getGroups(),
       t = [];
-    for (let n of module) {
+    for (let n of e) {
       let e = [];
-      for (let t of require.userIds) {
-        let n = Chunk594174.default.getUser(exports);
-        if (null == require || !Chunk699516.Z.isFriend(exports)) continue;
-        let r = Chunk158776.Z.getActivities(exports),
-          i = Chunk699516.Z.getNickname(exports);
-        module.push({
-          user: require,
-          activities: Chunk442837,
-          nickname: Chunk643327
+      for (let t of n.userIds) {
+        let n = o.default.getUser(t);
+        if (null == n || !s.Z.isFriend(t)) continue;
+        let r = l.Z.getActivities(t),
+          i = s.Z.getNickname(t);
+        e.push({
+          user: n,
+          activities: r,
+          nickname: i
         })
       }
-      module.sort((e, t) => {
+      e.sort((e, t) => {
         var n, r;
         let i = l.Z.getStatus(e.user.id),
           s = l.Z.getStatus(t.user.id),
@@ -37,12 +37,12 @@ function u() {
         let c = (null != (n = e.user.globalName) ? n : e.user.username).toLowerCase(),
           d = (null != (r = t.user.globalName) ? r : t.user.username).toLowerCase();
         return c.localeCompare(d)
-      }), exports.push({
-        id: require.id,
-        name: require.name,
-        users: module
+      }), t.push({
+        id: n.id,
+        name: n.name,
+        users: e
       })
     }
-    return exports
+    return t
   })
 }

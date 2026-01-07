@@ -44,7 +44,7 @@ function u(e) {
 }
 
 function d() {
-  let e = Chunk473749.useContext(c);
-  if (null == module) throw Error("useNoticeContext must be used within a NoticeProvider");
-  return module
+  let e = i.useContext(c);
+  if (null == e) throw Error("useNoticeContext must be used within a NoticeProvider");
+  return e
 }

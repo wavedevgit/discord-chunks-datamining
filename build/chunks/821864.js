@@ -17,7 +17,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 
 function l() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "INTEGRATION_PERMISSION_SETTINGS_CLEAR"
   })
 }

@@ -19,28 +19,28 @@ function u() {
     originalGuild: t,
     submitting: n,
     errors: u
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), g = Chunk473749.useMemo(() => (0, Chunk203377.LG)(u), [u]), f = Chunk473749.useCallback(async () => {
-    if (null == module) return Promise.resolve();
+  } = (0, a.cj)([c.Z], () => c.Z.getProps()), g = i.useMemo(() => (0, d.LG)(u), [u]), f = i.useCallback(async () => {
+    if (null == e) return Promise.resolve();
     let n = {
-      systemChannelFlags: module.systemChannelFlags,
-      systemChannelId: module.systemChannelId,
-      afkChannelId: module.afkChannelId,
-      afkTimeout: module.afkTimeout,
-      defaultMessageNotifications: module.defaultMessageNotifications
+      systemChannelFlags: e.systemChannelFlags,
+      systemChannelId: e.systemChannelId,
+      afkChannelId: e.afkChannelId,
+      afkTimeout: e.afkTimeout,
+      defaultMessageNotifications: e.defaultMessageNotifications
     };
-    if ((0, Chunk843991.O)(new Set(module.features), new Set(exports.features)) || (require.features = module.features), Chunk999382.Z.hasChanges() && await Chunk434404.Z.saveGuild(module.id, require), Chunk999382.Z.widgetHasChanges()) {
+    if ((0, l.O)(new Set(e.features), new Set(t.features)) || (n.features = e.features), c.Z.hasChanges() && await o.Z.saveGuild(e.id, n), c.Z.widgetHasChanges()) {
       let {
         enabled: t,
         channelId: n
-      } = Chunk999382.Z.getWidget();
-      await Chunk434404.Z.updateEmbed(module.id, exports, require)
+      } = c.Z.getWidget();
+      await o.Z.updateEmbed(e.id, t, n)
     }
     return Promise.resolve()
-  }, [module, exports]), m = Chunk473749.useCallback(() => {
-    null != module && Chunk434404.Z.init(module.id)
-  }, [module]);
-  return (0, Chunk54381.jsx)(Chunk796027.Z, {
-    submitting: require,
+  }, [e, t]), m = i.useCallback(() => {
+    null != e && o.Z.init(e.id)
+  }, [e]);
+  return (0, r.jsx)(s.Z, {
+    submitting: n,
     errorMessage: g,
     onSave: f,
     onReset: m

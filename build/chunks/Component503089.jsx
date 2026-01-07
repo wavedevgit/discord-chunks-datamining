@@ -130,11 +130,11 @@ class P extends Chunk473749.PureComponent {
       section: t
     } = this.props, {
       notice: n
-    } = null != (e = this.getPredicateSections().find(e => t === e.section)) ? module : {};
-    return null != require && require.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (Chunk585483.S.dispatch(Chunk981631.CkL.SHAKE_APP, {
+    } = null != (e = this.getPredicateSections().find(e => t === e.section)) ? e : {};
+    return null != n && n.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (p.S.dispatch(g.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + A, C), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = T, true)
+    }), this._intensity = Math.min(this._intensity + A, C), p.S.dispatch(g.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = T, true)
   }
   renderSidebar(e) {
     let {
@@ -198,31 +198,31 @@ class P extends Chunk473749.PureComponent {
       title: i,
       onClose: a,
       hideSidebar: o
-    } = this.props, s = this.getPredicateSections(), l = Chunk481060.find(e => e.section === n);
-    if (null == Chunk213609 || null == require) return null;
-    let u = null != (e = "string" == typeof Chunk213609.label ? Chunk213609.label : Chunk213609.ariaLabel) ? module : Chunk473749;
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
-        location: Chunk473749,
-        subsection: Chunk243778
-      }), (0, Chunk54381.jsx)(Chunk493544.ZP, {
-        sidebarTheme: exports,
+    } = this.props, s = this.getPredicateSections(), l = s.find(e => e.section === n);
+    if (null == l || null == n) return null;
+    let u = null != (e = "string" == typeof l.label ? l.label : l.ariaLabel) ? e : i;
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(c.yY, {
+        location: i,
+        subsection: u
+      }), (0, r.jsx)(h.ZP, {
+        sidebarTheme: t,
         scrollerRef: this.scrollerRef,
-        section: require,
-        sidebar: this.renderSidebar(Chunk481060),
-        content: (0, Chunk54381.jsx)(N, {
-          section: Chunk213609,
+        section: n,
+        sidebar: this.renderSidebar(s),
+        content: (0, r.jsx)(N, {
+          section: l,
           setPreventNavigation: this.setPreventNavigation,
           scrollerRef: this.scrollerRef
         }),
         mobileSidebarOpen: this.state.sidebarOpen,
-        hideSidebar: Chunk692547,
+        hideSidebar: o,
         toggleSidebar: () => this.setState({
           sidebarOpen: true
         }),
-        contentType: Chunk213609.type,
-        notice: this.renderNotice(Chunk213609),
-        closeAction: null != Chunk990547 ? this.handleClose : true
+        contentType: l.type,
+        notice: this.renderNotice(l),
+        closeAction: null != a ? this.handleClose : true
       })]
     })
   }

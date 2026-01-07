@@ -165,49 +165,49 @@ class eh extends(r = Chunk473749.PureComponent) {
         reactionRef: N,
         tooltipPositionKey: R
       } = this.state,
-      w = Chunk436774 ? Chunk378369 : Chunk860302,
+      w = y ? er : en,
       D = {
         transform: [{
           scale: this.scale
         }],
         opacity: this.opacity
       },
-      L = Chunk120356 ? r : require;
-    if (Chunk120356 && null != Chunk473749) {
+      L = o ? r : n;
+    if (o && null != a) {
       var j;
       let {
         accentColor: n,
         backgroundColor: r,
         opacity: i
-      } = Chunk473749, o = null != (j = (0, Chunk866442.wK)(null != r ? r : "", Chunk54381)) ? Chunk695346 : "";
-      this.isMe() && (Chunk222677.borderColor = r), Chunk222677.background = Chunk120356, e = require, t = require
+      } = a, o = null != (j = (0, f.wK)(null != r ? r : "", i)) ? j : "";
+      this.isMe() && (D.borderColor = r), D.background = o, e = n, t = n
     }
-    let M = null == Chunk33154 ? true : Chunk33154.getBoundingClientRect(),
-      k = null != Chunk56314 && null != Chunk592125,
-      U = null == Chunk56314;
-    return (0, Chunk54381.jsx)(Chunk481060.yRy, {
+    let M = null == N ? true : N.getBoundingClientRect(),
+      k = null != I && null != M,
+      U = null == I;
+    return (0, i.jsx)(m.yRy, {
       targetElementRef: {
-        current: Chunk33154
+        current: N
       },
-      shouldShow: Chunk944386,
-      "aria-label": null != Chunk305325 && Chunk305325,
+      shouldShow: C,
+      "aria-label": null != A && A,
       renderPopout: this.renderTooltip,
       nudgeAlignIntoViewport: true,
       position: "top",
       align: "center",
-      positionKey: Chunk767714,
-      children: () => (0, Chunk54381.jsx)("div", {
+      positionKey: R,
+      children: () => (0, i.jsx)("div", {
         onMouseEnter: this.handleEnter,
         onMouseLeave: this.handleLeave,
         ref: this.handleSetReactionRef,
-        children: (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-          className: s()(Chunk659215.reaction, Chunk367907, {
-            [Chunk659215.reactionMe]: this.isMe(),
-            [Chunk659215.reactionReadOnly]: Chunk772848 && !Chunk442837 && !Chunk607070 && !Chunk846519,
-            [Chunk659215.shakeReaction]: Chunk906411 && null == Chunk56314
+        children: (0, i.jsx)(d.Z.div, {
+          className: s()(w.reaction, b, {
+            [w.reactionMe]: this.isMe(),
+            [w.reactionReadOnly]: u && !p && !g && !_,
+            [w.shakeReaction]: S && null == I
           }),
-          style: Chunk222677,
-          children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
+          style: D,
+          children: (0, i.jsx)(m.yRy, {
             targetElementRef: this.upsellPopoutTargetRef,
             renderPopout: this.renderLurkerModeUpsellPopout,
             position: "top",

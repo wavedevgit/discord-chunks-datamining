@@ -12,33 +12,33 @@ var Chunk828700 = require("./828700.js"),
 
 function P() {
   let c = new URLSearchParams(location.search),
-    I = module.get("q"),
-    _ = module.get("category_id");
-  return module.delete("page"), (0, Chunk54381.jsxs)(Chunk828700.rs, {
-    children: [null != require && null == exports ? (0, Chunk54381.jsx)(Chunk828700.l_, {
-      path: Chunk981631.Z5c.APPLICATION_DIRECTORY_SEARCH,
-      to: "".concat(Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY("".concat(require)))
-    }) : (0, Chunk54381.jsx)(Chunk828700.l_, {
-      path: Chunk981631.Z5c.APPLICATION_DIRECTORY_SEARCH,
-      to: "".concat(Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH, "?").concat(module.toString())
-    }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-      path: Chunk981631.Z5c.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(":applicationId", ":skuId"),
-      to: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")
-    }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-      path: Chunk981631.Z5c.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", Chunk688357.c.STORE),
-      to: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", Chunk979007.GlobalDiscoveryAppsSections.STORE)
-    }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-      path: Chunk981631.Z5c.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", Chunk688357.c.PREMIUM_DEPRECATED),
-      to: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", Chunk979007.GlobalDiscoveryAppsSections.STORE)
-    }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-      path: Chunk981631.Z5c.APPLICATION_DIRECTORY_PROFILE(":applicationId"),
+    I = c.get("q"),
+    _ = c.get("category_id");
+  return c.delete("page"), (0, a.jsxs)(t.rs, {
+    children: [null != _ && null == I ? (0, a.jsx)(t.l_, {
+      path: E.Z5c.APPLICATION_DIRECTORY_SEARCH,
+      to: "".concat(E.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY("".concat(_)))
+    }) : (0, a.jsx)(t.l_, {
+      path: E.Z5c.APPLICATION_DIRECTORY_SEARCH,
+      to: "".concat(E.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH, "?").concat(c.toString())
+    }), (0, a.jsx)(t.l_, {
+      path: E.Z5c.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(":applicationId", ":skuId"),
+      to: E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")
+    }), (0, a.jsx)(t.l_, {
+      path: E.Z5c.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", R.c.STORE),
+      to: E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", O.GlobalDiscoveryAppsSections.STORE)
+    }), (0, a.jsx)(t.l_, {
+      path: E.Z5c.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", R.c.PREMIUM_DEPRECATED),
+      to: E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", O.GlobalDiscoveryAppsSections.STORE)
+    }), (0, a.jsx)(t.l_, {
+      path: E.Z5c.APPLICATION_DIRECTORY_PROFILE(":applicationId"),
       to: {
-        pathname: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"),
+        pathname: E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"),
         search: location.search
       }
-    }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-      path: Chunk981631.Z5c.APPLICATION_DIRECTORY,
-      to: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS
+    }), (0, a.jsx)(t.l_, {
+      path: E.Z5c.APPLICATION_DIRECTORY,
+      to: E.Z5c.GLOBAL_DISCOVERY_APPS
     })]
   })
 }

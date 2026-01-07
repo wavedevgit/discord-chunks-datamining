@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 316173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,38 +15,38 @@ var Chunk54381 = require("./54381.js"),
   Chunk820254 = require("./820254.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk187794 = require("./187794.js");
-let h = "isHideDevBanner",
-  m = () => {
+let m = "isHideDevBanner",
+  h = () => {
     var e;
-    let [t, n] = (0, Chunk473749.useState)((null == (e = Chunk433517.K.get(h, "false")) ? true : module.toString()) === "true"), l = (0, Chunk442837.e7)([Chunk304761.C], () => {
+    let [t, n] = (0, i.useState)((null == (e = s.K.get(m, "false")) ? true : e.toString()) === "true"), l = (0, o.e7)([u.C], () => {
       var e;
-      return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
+      return (0, d.fD)() ? null == (e = u.C.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     });
-    if (exports) return null;
-    let m = () => {
-        Chunk433517.K.set(h, true), require(true)
+    if (t) return null;
+    let h = () => {
+        s.K.set(m, true), n(true)
       },
-      b = () => (0, Chunk54381.jsx)(Chunk481060.P3F, {
-        onClick: m,
-        className: Chunk187794.closeButton,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.WAI6xu),
-        children: (0, Chunk54381.jsx)(Chunk481060.Dio, {
+      b = () => (0, r.jsx)(c.P3F, {
+        onClick: h,
+        className: g.closeButton,
+        "aria-label": f.intl.string(f.t.WAI6xu),
+        children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
-          className: Chunk187794.closeIcon
+          className: g.closeIcon
         })
       });
-    return null != Chunk120356 ? (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk187794.devBanner, Chunk187794.buildOverride),
-      children: [(0, Chunk54381.jsx)(Chunk820254.Z, {
-        className: Chunk187794.icon
-      }), Chunk388032.intl.string(Chunk388032.t.Wj3LW4), (0, Chunk54381.jsx)(b, {})]
-    }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk187794.devBanner, Chunk187794.staging),
-      children: [(0, Chunk54381.jsx)(Chunk820254.Z, {
-        className: Chunk187794.icon
-      }), Chunk388032.intl.format(Chunk388032.t.uyrfYF, {
-        buildNumber: "483489"
-      }), (0, Chunk54381.jsx)(b, {})]
+    return null != l ? (0, r.jsxs)("div", {
+      className: a()(g.devBanner, g.buildOverride),
+      children: [(0, r.jsx)(p.Z, {
+        className: g.icon
+      }), f.intl.string(f.t.Wj3LW4), (0, r.jsx)(b, {})]
+    }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, r.jsxs)("div", {
+      className: a()(g.devBanner, g.staging),
+      children: [(0, r.jsx)(p.Z, {
+        className: g.icon
+      }), f.intl.format(f.t.uyrfYF, {
+        buildNumber: "483493"
+      }), (0, r.jsx)(b, {})]
     }) : null
   }

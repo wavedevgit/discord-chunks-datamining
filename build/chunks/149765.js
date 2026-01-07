@@ -118,7 +118,7 @@ class p {
     return this.parts.forEach((t, n) => {
       let r = d(t.toString());
       for (let t = 0; t < 4; t++) e[t + 4 * n] = r[3 - t] || 0
-    }), this.str = i().fromArray(module, 16).toString()
+    }), this.str = i().fromArray(e, 16).toString()
   }
   toJSON() {
     return this.toString()
@@ -146,36 +146,36 @@ let m = _ ? function(e) {
   b = _ ? function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : E;
-    return module & exports
+    return e & t
   } : function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : E;
-    return module.and(exports)
+    return e.and(t)
   },
   y = _ ? function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : E;
-    return module | exports
+    return e | t
   } : function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : E;
-    return module.or(exports)
+    return e.or(t)
   },
   O = _ ? function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : E;
-    return module ^ exports
+    return e ^ t
   } : function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : E;
-    return module.xor(exports)
+    return e.xor(t)
   },
   v = _ ? function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E;
-    return ~module
+    return ~e
   } : function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E;
-    return module.not()
+    return e.not()
   },
   S = _ ? function(e, t) {
     return e === t
@@ -184,10 +184,10 @@ let m = _ ? function(e) {
   };
 
 function I() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  let r = exports[0];
-  for (let e = 1; module < exports.length; module++) r = y(Chunk654861, exports[module]);
-  return Chunk654861
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  let r = t[0];
+  for (let e = 1; e < t.length; e++) r = y(r, t[e]);
+  return r
 }
 
 function T(e, t) {

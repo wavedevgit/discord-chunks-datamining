@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk702529 = require("./702529.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.k4)(Chunk313789.n.SUBSCRIPTIONS_CATEGORY, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.trSpHX), Chunk388032.intl.string(Chunk388032.t["2GKrvn"])],
-  buildLayout: () => [Chunk702529.t]
+  useSearchTerms: () => [u.intl.string(u.t.trSpHX), u.intl.string(u.t["2GKrvn"])],
+  buildLayout: () => [s.t]
 })

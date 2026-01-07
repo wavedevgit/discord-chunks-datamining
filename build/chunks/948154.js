@@ -132,16 +132,16 @@ let C = {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
     var {
       preload: t = false
-    } = module, n = E(module, ["preload"]);
-    if (!Chunk787879.Z.canLoadMore({
-        preload: exports
+    } = e, n = E(e, ["preload"]);
+    if (!p.Z.canLoadMore({
+        preload: t
       })) returnfalse;
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START",
-      preload: exports
+      preload: t
     }), S(g({
-      preload: exports
-    }, require))
+      preload: t
+    }, n))
   },
   inboxItemClick: function(e) {
     let {

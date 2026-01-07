@@ -91,6 +91,6 @@ class f {
     })
   }
   constructor() {
-    if (!(0, Chunk668757.X6)()) throw Error("Libdiscore is not loaded")
+    if (!(0, i.X6)()) throw Error("Libdiscore is not loaded")
   }
 }

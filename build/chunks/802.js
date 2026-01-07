@@ -10,6 +10,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk861509 = require("./861509.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_OVERVIEW_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["/dp6yY"]),
-  buildLayout: () => [Chunk832783.r, Chunk861509.S, Chunk95689.m]
+  useTitle: () => a.intl.string(a.t["/dp6yY"]),
+  buildLayout: () => [s.r, r.S, u.m]
 })

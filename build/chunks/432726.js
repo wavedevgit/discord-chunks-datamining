@@ -11,12 +11,12 @@ var Chunk509613 = require("./509613.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_ALLOW_GAME_FRIEND_DMS_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.XpBObB),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.oZsHTD, {
-    helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SLAYER_GAME_FRIENDS)
+  useTitle: () => o.intl.string(o.t.XpBObB),
+  useSubtitle: () => o.intl.format(o.t.oZsHTD, {
+    helpdeskArticle: l.Z.getArticleURL(a.BhN.SLAYER_GAME_FRIENDS)
   }),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["Uv/eTx"])],
-  useValue: () => Chunk695346._j.useSetting(),
+  useSearchTerms: () => [o.intl.string(o.t["Uv/eTx"])],
+  useValue: () => s._j.useSetting(),
   setValue: t => s._j.updateSetting(t),
   usePredicate: Chunk817774.W
 })

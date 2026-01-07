@@ -17,8 +17,8 @@ let f = {
   binds: (() => {
     let e = 10,
       t = [];
-    for (let n = 1; require < module; require++) exports.push("mod+".concat(require));
-    return exports
+    for (let n = 1; n < e; n++) t.push("mod+".concat(n));
+    return t
   })(),
   comboKeysBindGlobal: true,
   action(e, t) {

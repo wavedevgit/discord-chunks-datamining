@@ -6,9 +6,9 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js");
 let i = () => {
-  let [e, t] = (0, Chunk473749.useState)(null);
-  return (0, Chunk473749.useEffect)(() => {
+  let [e, t] = (0, r.useState)(null);
+  return (0, r.useEffect)(() => {
     var e;
-    (null == (e = window) ? true : module.EyeDropper) != null && exports(new window.EyeDropper)
-  }, []), module
+    (null == (e = window) ? true : e.EyeDropper) != null && t(new window.EyeDropper)
+  }, []), e
 }

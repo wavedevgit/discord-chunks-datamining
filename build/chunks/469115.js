@@ -25,7 +25,7 @@ let l = [{
       stop: 93.07
     }],
     angle: 180,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.kCdS4d),
+    getName: () => s.intl.string(s.t.kCdS4d),
     midpointPercentage: 27
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -39,7 +39,7 @@ let l = [{
       stop: 67.09
     }],
     angle: 180,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.S4UnEz),
+    getName: () => s.intl.string(s.t.S4UnEz),
     midpointPercentage: 27
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -59,7 +59,7 @@ let l = [{
       stop: 73.12
     }],
     angle: 148.71,
-    getName: () => Chunk388032.intl.string(Chunk388032.t["48xnKc"]),
+    getName: () => s.intl.string(s.t["48xnKc"]),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -76,7 +76,7 @@ let l = [{
       stop: 68.78
     }],
     angle: 38.08,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.G4HsBJ),
+    getName: () => s.intl.string(s.t.G4HsBJ),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -93,7 +93,7 @@ let l = [{
       stop: 76.04
     }],
     angle: 154.19,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.NAt885),
+    getName: () => s.intl.string(s.t.NAt885),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -107,7 +107,7 @@ let l = [{
       stop: 94.28
     }],
     angle: 180.14,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.godtzA),
+    getName: () => s.intl.string(s.t.godtzA),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -127,7 +127,7 @@ let l = [{
       stop: 96.23
     }],
     angle: 179.52,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.hlS2xq),
+    getName: () => s.intl.string(s.t.hlS2xq),
     midpointPercentage: 27
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -144,7 +144,7 @@ let l = [{
       stop: 52.11
     }],
     angle: 38.99,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.abMn9y),
+    getName: () => s.intl.string(s.t.abMn9y),
     midpointPercentage: 50
   }],
   c = Chunk231338.BR.DARK,
@@ -160,7 +160,7 @@ let l = [{
       stop: 71.25
     }],
     angle: 141.68,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.JKDra4),
+    getName: () => s.intl.string(s.t.JKDra4),
     midpointPercentage: 35
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -183,7 +183,7 @@ let l = [{
       stop: 76.45
     }],
     angle: 128.92,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.kwc8Us),
+    getName: () => s.intl.string(s.t.kwc8Us),
     midpointPercentage: 15
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -206,7 +206,7 @@ let l = [{
       stop: 83.54
     }],
     angle: 162.27,
-    getName: () => Chunk388032.intl.string(Chunk388032.t["TeA/j8"]),
+    getName: () => s.intl.string(s.t["TeA/j8"]),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -220,7 +220,7 @@ let l = [{
       stop: 72
     }],
     angle: 64.92,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.blIucj),
+    getName: () => s.intl.string(s.t.blIucj),
     midpointPercentage: 30
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -234,7 +234,7 @@ let l = [{
       stop: 61.92
     }],
     angle: 48.17,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.O1yOXG),
+    getName: () => s.intl.string(s.t.O1yOXG),
     midpointPercentage: 24
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -248,7 +248,7 @@ let l = [{
       stop: 74.62
     }],
     angle: 170.82,
-    getName: () => Chunk388032.intl.string(Chunk388032.t["1swi9s"]),
+    getName: () => s.intl.string(s.t["1swi9s"]),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -262,7 +262,7 @@ let l = [{
       stop: 85.99
     }],
     angle: 180,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.So2Wuh),
+    getName: () => s.intl.string(s.t.So2Wuh),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -279,7 +279,7 @@ let l = [{
       stop: 96.35
     }],
     angle: 179.14,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.a22o48),
+    getName: () => s.intl.string(s.t.a22o48),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -299,7 +299,7 @@ let l = [{
       stop: 73.12
     }],
     angle: 148.71,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.Bf294R),
+    getName: () => s.intl.string(s.t.Bf294R),
     midpointPercentage: 61
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -316,7 +316,7 @@ let l = [{
       stop: 100
     }],
     angle: 180,
-    getName: () => Chunk388032.intl.string(Chunk388032.t["p+XCta"]),
+    getName: () => s.intl.string(s.t["p+XCta"]),
     midpointPercentage: 50
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -333,7 +333,7 @@ let l = [{
       stop: 80.72
     }],
     angle: 161.03,
-    getName: () => Chunk388032.intl.string(Chunk388032.t["d5Ar+j"]),
+    getName: () => s.intl.string(s.t["d5Ar+j"]),
     midpointPercentage: 32
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -356,7 +356,7 @@ let l = [{
       stop: 92.5
     }],
     angle: 239.16,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.Je1FWC),
+    getName: () => s.intl.string(s.t.Je1FWC),
     midpointPercentage: 34
   }, {
     type: Chunk824988.r.BACKGROUND_GRADIENT_PRESET,
@@ -370,7 +370,7 @@ let l = [{
       stop: 60.35
     }],
     angle: 69.98,
-    getName: () => Chunk388032.intl.string(Chunk388032.t["Z+Un40"]),
+    getName: () => s.intl.string(s.t["Z+Un40"]),
     midpointPercentage: 50
   }],
   d = {
@@ -385,7 +385,7 @@ let l = [{
       stop: 64.54
     }],
     angle: 47.61,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.Mfoe3p),
+    getName: () => s.intl.string(s.t.Mfoe3p),
     midpointPercentage: 50
   },
   f = [...l, ...u, d, {
@@ -400,8 +400,8 @@ let l = [{
       stop: 96
     }],
     angle: 180,
-    getName: () => Chunk388032.intl.string(Chunk388032.t.mFinbb),
+    getName: () => s.intl.string(s.t.mFinbb),
     midpointPercentage: 50
   }];
-[...u, ...l], Chunk824988.r.STANDARD_BACKGROUND_THEME, Chunk824988.r.STANDARD_BACKGROUND_THEME, Chunk231338.BR.LIGHT, Chunk824988.r.STANDARD_BACKGROUND_THEME, Chunk231338.BR.MIDNIGHT, Chunk824988.r.STANDARD_BACKGROUND_THEME, () => Chunk388032.intl.string(Chunk388032.t.zlvNOj);
+[...u, ...l], Chunk824988.r.STANDARD_BACKGROUND_THEME, Chunk824988.r.STANDARD_BACKGROUND_THEME, Chunk231338.BR.LIGHT, Chunk824988.r.STANDARD_BACKGROUND_THEME, Chunk231338.BR.MIDNIGHT, Chunk824988.r.STANDARD_BACKGROUND_THEME, () => s.intl.string(s.t.zlvNOj);
 let p = (0, Chunk392711.keyBy)(f, "id")

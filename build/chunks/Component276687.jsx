@@ -15,15 +15,15 @@ var Chunk442837 = require("./442837.js"),
 let d = () => {
   let {
     guild: e
-  } = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps()), {
+  } = (0, i.e7)([a.Z], () => a.Z.getProps()), {
     submitting: t,
     welcomeSettings: n
-  } = (0, Chunk442837.e7)([Chunk575258.Z], () => Chunk575258.Z.getSettingsProps());
-  return null == module ? null : (0, Chunk54381.jsx)(Chunk796027.Z, {
-    onSave: () => (0, Chunk524329.Es)(module.id, require),
-    onReset: Chunk524329.Xb,
-    submitting: exports,
-    onSaveText: Chunk388032.intl.string(Chunk388032.t["7NqTJn"]),
-    message: Chunk388032.intl.string(Chunk388032.t["Z0/Wme"])
+  } = (0, i.e7)([o.Z], () => o.Z.getSettingsProps());
+  return null == e ? null : (0, r.jsx)(l.Z, {
+    onSave: () => (0, s.Es)(e.id, n),
+    onReset: s.Xb,
+    submitting: t,
+    onSaveText: c.intl.string(c.t["7NqTJn"]),
+    message: c.intl.string(c.t["Z0/Wme"])
   })
 }

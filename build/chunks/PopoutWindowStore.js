@@ -244,8 +244,8 @@ function z(e) {
 
 function q() {
   for (let e of Object.keys(P)) {
-    let t = P[module];
-    null != exports && K(exports)
+    let t = P[e];
+    null != t && K(t)
   }
 }
 

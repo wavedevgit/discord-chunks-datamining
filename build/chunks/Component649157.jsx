@@ -15,11 +15,11 @@ var Chunk36361 = require("./36361.jsx"),
 function c() {
   let {
     node: e
-  } = (0, Chunk131051.ZP)(Chunk590814.L, "");
-  return (0, Chunk54381.jsx)(Chunk273313.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.KyFVyi),
-    children: (0, Chunk54381.jsx)(Chunk36361.Z, {
-      node: module
-    }, module.key)
+  } = (0, a.ZP)(s.L, "");
+  return (0, r.jsx)(o.Z, {
+    title: l.intl.string(l.t.KyFVyi),
+    children: (0, r.jsx)(i.Z, {
+      node: e
+    }, e.key)
   })
 }

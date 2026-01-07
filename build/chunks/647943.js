@@ -25,10 +25,10 @@ class l {
   }
   tag() {
     let e = this.uint32(),
-      t = module >>> 3,
-      n = 7 & module;
-    if (exports <= 0 || require < 0 || require > 5) throw Error("illegal tag: field no " + exports + " wire type " + require);
-    return [exports, require]
+      t = e >>> 3,
+      n = 7 & e;
+    if (t <= 0 || n < 0 || n > 5) throw Error("illegal tag: field no " + t + " wire type " + n);
+    return [t, n]
   }
   skip(e) {
     let t = this.pos;
@@ -63,21 +63,21 @@ class l {
   }
   sint32() {
     let e = this.uint32();
-    return module >>> 1 ^ -(1 & module)
+    return e >>> 1 ^ -(1 & e)
   }
   int64() {
-    return new Chunk69122.M(...this.varint64())
+    return new i.M(...this.varint64())
   }
   uint64() {
-    return new Chunk69122.p(...this.varint64())
+    return new i.p(...this.varint64())
   }
   sint64() {
-    let [e, t] = this.varint64(), n = -(1 & module);
-    return e = (module >>> 1 | (1 & exports) << 31) ^ require, t = exports >>> 1 ^ require, new Chunk69122.M(module, exports)
+    let [e, t] = this.varint64(), n = -(1 & e);
+    return e = (e >>> 1 | (1 & t) << 31) ^ n, t = t >>> 1 ^ n, new i.M(e, t)
   }
   bool() {
     let [e, t] = this.varint64();
-    return 0 !== module || 0 !== exports
+    return 0 !== e || 0 !== t
   }
   fixed32() {
     return this.view.getUint32((this.pos += 4) - 4, true)
@@ -86,10 +86,10 @@ class l {
     return this.view.getInt32((this.pos += 4) - 4, true)
   }
   fixed64() {
-    return new Chunk69122.p(this.sfixed32(), this.sfixed32())
+    return new i.p(this.sfixed32(), this.sfixed32())
   }
   sfixed64() {
-    return new Chunk69122.M(this.sfixed32(), this.sfixed32())
+    return new i.M(this.sfixed32(), this.sfixed32())
   }
   float() {
     return this.view.getFloat32((this.pos += 4) - 4, true)
@@ -100,7 +100,7 @@ class l {
   bytes() {
     let e = this.uint32(),
       t = this.pos;
-    return this.pos += module, this.assertBounds(), this.buf.subarray(exports, exports + module)
+    return this.pos += e, this.assertBounds(), this.buf.subarray(t, t + e)
   }
   string() {
     return this.textDecoder.decode(this.bytes())

@@ -24,35 +24,35 @@ function x() {
   var e;
   let {
     editStateId: t
-  } = (0, Chunk727843.N)(), [n, l] = Chunk290348.TT(exports), [x, j] = Chunk290348.F2(exports), v = (0, Chunk584825.oC)(exports), {
+  } = (0, g.N)(), [n, l] = f.TT(t), [x, j] = f.F2(t), v = (0, d.oC)(t), {
     options: O
-  } = (0, Chunk22902.Z)(null != (e = null == v ? true : v.active_trial) ? module : null), C = (0, Chunk518470.Z)(), y = null != require, N = Chunk473749.useCallback(e => {
+  } = (0, b.Z)(null != (e = null == v ? true : v.active_trial) ? e : null), C = (0, m.Z)(), y = null != n, N = i.useCallback(e => {
     let t = O.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
-  }, [Chunk512722, O]), E = (0, Chunk723047.mY)(), I = (0, Chunk313201.Dt)(), S = (0, Chunk313201.Dt)();
-  return (0, Chunk54381.jsxs)(Chunk783454.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["6anton"]),
-    description: Chunk388032.intl.string(Chunk388032.t.urVijS),
-    children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["+hTmdb"]),
+  }, [l, O]), E = (0, u.mY)(), I = (0, c.Dt)(), S = (0, c.Dt)();
+  return (0, r.jsxs)(p.Z, {
+    title: h.intl.string(h.t["6anton"]),
+    description: h.intl.string(h.t.urVijS),
+    children: [(0, r.jsx)(o.rsf, {
+      label: h.intl.string(h.t["+hTmdb"]),
       checked: y,
       onChange: e => N(e),
       disabled: E
-    }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-      label: Chunk388032.intl.string(Chunk388032.t.m1KuWd),
-      description: Chunk388032.intl.string(Chunk388032.t.NB9NLF),
+    }), (0, r.jsx)(s.y6, {
+      label: h.intl.string(h.t.m1KuWd),
+      description: h.intl.string(h.t.NB9NLF),
       "aria-labelledby": I,
       options: O,
-      placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BU),
-      value: require,
-      onChange: Chunk512722,
+      placeholder: h.intl.string(h.t.WZG1BU),
+      value: n,
+      onChange: l,
       maxVisibleItems: 5,
       isDisabled: !y || E
-    }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+    }), (0, r.jsx)(o.LZC, {
       size: 24
-    }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-      label: Chunk388032.intl.string(Chunk388032.t["/JD9oe"]),
-      description: Chunk388032.intl.string(Chunk388032.t.Cg5eBm),
+    }), (0, r.jsx)(s.y6, {
+      label: h.intl.string(h.t["/JD9oe"]),
+      description: h.intl.string(h.t.Cg5eBm),
       "aria-labelledby": S,
       options: C,
       value: x,

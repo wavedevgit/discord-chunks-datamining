@@ -21,30 +21,30 @@ class c {
   initialize() {
     var e;
     let t = {
-      debug: null != (e = this.config.debug) && module,
+      debug: null != (e = this.config.debug) && e,
       disableCookies: true,
       respectDoNotTrack: true,
-      data: Chunk82328.v.mapDiscordToMuxMetadata(this.config, this.sessionId)
+      data: l.v.mapDiscordToMuxMetadata(this.config, this.sessionId)
     };
-    null != this.hlsInstance && (exports.hlsjs = this.hlsInstance, exports.Hls = this.hlsInstance.constructor);
+    null != this.hlsInstance && (t.hlsjs = this.hlsInstance, t.Hls = this.hlsInstance.constructor);
     try {
-      Chunk841992.Z.monitor(this.videoElement, exports), this.isMonitoring = true
+      r.Z.monitor(this.videoElement, t), this.isMonitoring = true
     } catch (e) {
-      s.error("Error creating Mux monitor", module), this.isMonitoring = false
+      s.error("Error creating Mux monitor", e), this.isMonitoring = false
     }
   }
   endSession() {
     if (this.isMonitoring) try {
-      "function" == typeof Chunk841992.Z.destroyMonitor && Chunk841992.Z.destroyMonitor(this.videoElement), this.isMonitoring = false
+      "function" == typeof r.Z.destroyMonitor && r.Z.destroyMonitor(this.videoElement), this.isMonitoring = false
     } catch (e) {
-      s.error("Error ending Mux session", module)
+      s.error("Error ending Mux session", e)
     }
   }
   destroy() {
     if (this.isMonitoring) try {
-      "function" == typeof Chunk841992.Z.destroyMonitor && Chunk841992.Z.destroyMonitor(this.videoElement), this.isMonitoring = false
+      "function" == typeof r.Z.destroyMonitor && r.Z.destroyMonitor(this.videoElement), this.isMonitoring = false
     } catch (e) {
-      s.error("Error destroying Mux monitor", module)
+      s.error("Error destroying Mux monitor", e)
     }
   }
   getSessionId() {

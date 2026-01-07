@@ -14,7 +14,7 @@ class c extends Chunk495852.C {
   now() {
     let e = this.create(),
       t = Date.now();
-    return module.seconds = Chunk69122.M.from(Math.floor(exports / 1e3)).toString(), module.nanos = exports % 1e3 * 1e6, module
+    return e.seconds = s.M.from(Math.floor(t / 1e3)).toString(), e.nanos = t % 1e3 * 1e6, e
   }
   toDate(e) {
     return new Date(1e3 * s.M.from(e.seconds).toNumber() + Math.ceil(e.nanos / 1e6))

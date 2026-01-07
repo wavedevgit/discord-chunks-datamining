@@ -155,17 +155,17 @@ function tr(e, t) {
   }), e
 }
 let ti = (0, Chunk663993.Un)({
-  createPromise: () => Promise.all([require.e("22173"), require.e("193")]).then(require.bind(require, 346975)),
+  createPromise: () => Promise.all([n.e("22173"), n.e("193")]).then(n.bind(n, 346975)),
   webpackId: 346975,
-  renderLoader: () => (0, Chunk54381.jsx)("div", {
-    className: Chunk978966.loader,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  renderLoader: () => (0, r.jsx)("div", {
+    className: te.loader,
+    children: (0, r.jsx)(g.$jN, {})
   }),
   name: "ForumChannel"
 });
 class tl extends Chunk473749.PureComponent {
   componentDidMount() {
-    (0, Chunk108427.e)("guild_channel")
+    (0, eT.e)("guild_channel")
   }
   componentDidUpdate(e) {
     null != this.props.channel && null != e.channel && this.props.channel.id !== e.channel.id && this.state.topicExpanded && this.setState({
@@ -215,31 +215,31 @@ class tl extends Chunk473749.PureComponent {
       showCall: e,
       channelIsContentGated: t
     } = this.props;
-    return !exports && module
+    return !t && e
   }
   renderCall() {
     let {
       channel: e
     } = this.props;
-    if (o()(null != module, "Missing channel in Channel.renderCall"), !this.shouldRenderCall()) return null;
-    switch (module.type) {
-      case Chunk981631.d4z.GUILD_STAGE_VOICE:
-        return (0, Chunk54381.jsx)(Chunk504185.Z, {
-          channel: module,
-          popoutType: Chunk598006.P.NO_POPOUT
-        }, module.id);
-      case Chunk981631.d4z.GUILD_VOICE:
-      case Chunk981631.d4z.DM:
-      case Chunk981631.d4z.GROUP_DM:
-      case Chunk981631.d4z.PUBLIC_THREAD:
-      case Chunk981631.d4z.PRIVATE_THREAD:
+    if (o()(null != e, "Missing channel in Channel.renderCall"), !this.shouldRenderCall()) return null;
+    switch (e.type) {
+      case e4.d4z.GUILD_STAGE_VOICE:
+        return (0, r.jsx)(eC.Z, {
+          channel: e,
+          popoutType: R.P.NO_POPOUT
+        }, e.id);
+      case e4.d4z.GUILD_VOICE:
+      case e4.d4z.DM:
+      case e4.d4z.GROUP_DM:
+      case e4.d4z.PUBLIC_THREAD:
+      case e4.d4z.PRIVATE_THREAD:
         let t = this.props.height - 200;
-        return (0, Chunk54381.jsx)(Chunk677601.Z, {
-          channel: module,
+        return (0, r.jsx)(w.Z, {
+          channel: e,
           renderExternalHeader: this.renderHeaderBar,
-          maxHeight: exports,
-          popoutType: Chunk598006.P.NO_POPOUT
-        }, "call-".concat(module.id));
+          maxHeight: t,
+          popoutType: R.P.NO_POPOUT
+        }, "call-".concat(e.id));
       default:
         return null
     }
@@ -248,10 +248,10 @@ class tl extends Chunk473749.PureComponent {
     let {
       channel: e
     } = this.props, t = this.shouldRenderCall();
-    if (o()(null != module, "Missing channel in Channel.renderEmbeddedActivityPanel"), exports) return null;
+    if (o()(null != e, "Missing channel in Channel.renderEmbeddedActivityPanel"), t) return null;
     let n = this.props.height - 200;
-    return (0, Chunk54381.jsx)(Chunk82888.Z, {
-      maxHeight: require,
+    return (0, r.jsx)(_.Z, {
+      maxHeight: n,
       renderExternalHeader: this.renderHeaderBar
     })
   }
@@ -262,41 +262,41 @@ class tl extends Chunk473749.PureComponent {
       needSubscriptionToAccess: n,
       channelIsContentGated: i
     } = this.props;
-    if (o()(null != module, "Missing channel in Channel.renderChat"), require) return (o()(null != exports, "premium channels must exist within a guild"), null == module ? true : module.isRoleSubscriptionTemplatePreviewChannel()) ? (0, Chunk54381.jsx)(Chunk826763.Z, {
-      guildId: exports.id
-    }) : (0, Chunk54381.jsx)(Chunk730647.l, {
-      guildId: exports.id,
-      children: (0, Chunk54381.jsx)(Chunk180216.Z, {
-        channelId: module.id,
-        guildId: exports.id
+    if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), null == e ? true : e.isRoleSubscriptionTemplatePreviewChannel()) ? (0, r.jsx)(Q.Z, {
+      guildId: t.id
+    }) : (0, r.jsx)(q.l, {
+      guildId: t.id,
+      children: (0, r.jsx)(X.Z, {
+        channelId: e.id,
+        guildId: t.id
       })
     });
-    if (Chunk473749) return (0, Chunk54381.jsx)(Chunk271172.Z, {
-      guild: exports,
-      channelId: module.id
+    if (i) return (0, r.jsx)(ew.Z, {
+      guild: t,
+      channelId: e.id
     });
-    if (module.isGuildVocal()) return null;
-    if (module.isDirectory()) return o()(null != exports, "directory channels must exist within a guild"), (0, Chunk54381.jsx)(Chunk201493.Z, {
-      channel: module,
-      guild: exports
+    if (e.isGuildVocal()) return null;
+    if (e.isDirectory()) return o()(null != t, "directory channels must exist within a guild"), (0, r.jsx)(k.Z, {
+      channel: e,
+      guild: t
     });
-    if (module.isForumLikeChannel()) {
-      o()(null != exports, "forum channels must exist within a guild");
+    if (e.isForumLikeChannel()) {
+      o()(null != t, "forum channels must exist within a guild");
       let n = {
         isThreadSidebarFloating: this.state.isThreadSidebarFloating,
         threadSidebarWidth: this.state.threadSidebarWidth
       };
-      return (0, Chunk54381.jsx)(ti, {
-        channel: module,
-        guild: exports,
-        sidebarState: require
-      }, module.id)
+      return (0, r.jsx)(ti, {
+        channel: e,
+        guild: t,
+        sidebarState: n
+      }, e.id)
     }
-    return (0, Chunk54381.jsx)(Chunk287746.Z, {
-      channel: module,
-      guild: exports,
-      chatInputType: Chunk541716.Ie.NORMAL
-    }, null != exports ? exports.id : "home")
+    return (0, r.jsx)(eK.Z, {
+      channel: e,
+      guild: t,
+      chatInputType: A.Ie.NORMAL
+    }, null != t ? t.id : "home")
   }
   renderSidebar() {
     let {
@@ -309,39 +309,39 @@ class tl extends Chunk473749.PureComponent {
       showActivityPanel: s,
       showFramePanel: c
     } = this.props;
-    if (o()(null != module, "Missing channel in Channel.renderSidebar"), __OVERLAY__ || Chunk473749);
-    else if (Chunk120356 === Chunk981631.ULH.PROFILE && module.isPrivate() && !a && !Chunk512722 && !Chunk392711) return (0, Chunk54381.jsx)(Chunk402130.Z, {
-      channel: module
-    }, "private-channel-profile-".concat(module.id));
-    else if (Chunk120356 === Chunk981631.ULH.MEMBERS) switch (module.type) {
-      case Chunk981631.d4z.GROUP_DM:
-        return (0, Chunk54381.jsx)(Chunk471760.Z, {
-          channel: module
-        }, "private-channel-recipients-".concat(module.id));
-      case Chunk981631.d4z.GUILD_DIRECTORY:
-      case Chunk981631.d4z.GUILD_FORUM:
-      case Chunk981631.d4z.GUILD_MEDIA:
-      case Chunk981631.d4z.GUILD_ANNOUNCEMENT:
-      case Chunk981631.d4z.GUILD_TEXT:
+    if (o()(null != e, "Missing channel in Channel.renderSidebar"), __OVERLAY__ || i);
+    else if (l === e4.ULH.PROFILE && e.isPrivate() && !a && !s && !c) return (0, r.jsx)(eR.Z, {
+      channel: e
+    }, "private-channel-profile-".concat(e.id));
+    else if (l === e4.ULH.MEMBERS) switch (e.type) {
+      case e4.d4z.GROUP_DM:
+        return (0, r.jsx)(ef.Z, {
+          channel: e
+        }, "private-channel-recipients-".concat(e.id));
+      case e4.d4z.GUILD_DIRECTORY:
+      case e4.d4z.GUILD_FORUM:
+      case e4.d4z.GUILD_MEDIA:
+      case e4.d4z.GUILD_ANNOUNCEMENT:
+      case e4.d4z.GUILD_TEXT:
         var d;
-        let u = true === Chunk981631.TPd.GUILD_THREADS_ONLY.has(module.type) ? module.id : null != (d = module.guild_id) ? d : module.id;
-        return (0, Chunk54381.jsx)(Chunk335615.Z, {
-          channel: module
-        }, "channel-members-".concat(Chunk828700));
-      case Chunk981631.d4z.ANNOUNCEMENT_THREAD:
-        if (null != exports) return (0, Chunk54381.jsx)(Chunk335615.Z, {
-          channel: exports
-        }, "channel-members-".concat(exports.id));
+        let u = true === e4.TPd.GUILD_THREADS_ONLY.has(e.type) ? e.id : null != (d = e.guild_id) ? d : e.id;
+        return (0, r.jsx)(eX.Z, {
+          channel: e
+        }, "channel-members-".concat(u));
+      case e4.d4z.ANNOUNCEMENT_THREAD:
+        if (null != t) return (0, r.jsx)(eX.Z, {
+          channel: t
+        }, "channel-members-".concat(t.id));
         break;
-      case Chunk981631.d4z.PUBLIC_THREAD:
-      case Chunk981631.d4z.PRIVATE_THREAD:
-        if (!module.isArchivedThread() && null != require) return (0, Chunk54381.jsx)(Chunk457868.Z, {
-          channel: module,
-          guild: require
-        }, "channel-members-".concat(module.id))
-    } else if (Chunk120356 === Chunk981631.ULH.SEARCH) return (0, Chunk54381.jsx)(Chunk673676.Z, {
-      guildId: null == require ? true : require.id,
-      channelId: module.id
+      case e4.d4z.PUBLIC_THREAD:
+      case e4.d4z.PRIVATE_THREAD:
+        if (!e.isArchivedThread() && null != n) return (0, r.jsx)(O.Z, {
+          channel: e,
+          guild: n
+        }, "channel-members-".concat(e.id))
+    } else if (l === e4.ULH.SEARCH) return (0, r.jsx)(eO.Z, {
+      guildId: null == n ? true : n.id,
+      channelId: e.id
     });
     return null
   }
@@ -355,25 +355,25 @@ class tl extends Chunk473749.PureComponent {
       isUnavailable: s,
       showRealNameModal: o
     } = this.props;
-    return null == module || null == exports || Chunk512722 || Chunk473749 || (o && (0, Chunk481060.ZDy)(async () => {
+    return null == e || null == t || s || i || (o && (0, g.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("53900").then(require.bind(require, 784280));
+      } = await n.e("53900").then(n.bind(n, 784280));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         guildId: t
       }))
     }, {
-      onCloseCallback: () => Chunk445384.Z.viewPrompt(Chunk440493.r.REAL_NAME_PROMPT, exports),
+      onCloseCallback: () => z.Z.viewPrompt(e9.r.REAL_NAME_PROMPT, t),
       modalKey: "Guild Hub Real Name Modal"
-    }), Chunk120356 && (0, Chunk481060.ZDy)(async () => {
+    }), l && (0, g.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("90542").then(require.bind(require, 184782));
+      } = await n.e("90542").then(n.bind(n, 184782));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         guildId: t
       }))
     }, {
-      onCloseCallback: () => (0, Chunk524329.y0)(exports, a),
+      onCloseCallback: () => (0, eA.y0)(t, a),
       modalKey: "Guild Welcome Screen Modal"
     })), null
   }
@@ -386,64 +386,64 @@ class tl extends Chunk473749.PureComponent {
       width: a,
       channelIsContentGated: s
     } = this.props;
-    if (null == Chunk120356 && null == Chunk473749) return null;
-    if (require === Chunk981631.ULH.SIDEBAR_CHAT && null != Chunk473749) {
-      if (Chunk512722) return null;
-      switch (Chunk473749.type) {
-        case Chunk897473.tI.CREATE_THREAD:
-          if (null == exports ? true : exports.isForumLikeChannel()) return null;
-          e = (0, Chunk54381.jsx)(Chunk657218.Z, {
-            parentChannelId: Chunk473749.parentChannelId,
-            parentMessageId: Chunk473749.parentMessageId,
-            location: Chunk473749.location
+    if (null == l && null == i) return null;
+    if (n === e4.ULH.SIDEBAR_CHAT && null != i) {
+      if (s) return null;
+      switch (i.type) {
+        case ej.tI.CREATE_THREAD:
+          if (null == t ? true : t.isForumLikeChannel()) return null;
+          e = (0, r.jsx)(eI.Z, {
+            parentChannelId: i.parentChannelId,
+            parentMessageId: i.parentMessageId,
+            location: i.location
           });
           break;
-        case Chunk897473.tI.VIEW_THREAD:
-          let n = (null == exports ? true : exports.isForumLikeChannel()) ? Chunk588322.Z : Chunk900157.Z;
-          e = (0, Chunk54381.jsx)(require, {
-            channelId: Chunk473749.channelId
+        case ej.tI.VIEW_THREAD:
+          let n = (null == t ? true : t.isForumLikeChannel()) ? H.Z : eP.Z;
+          e = (0, r.jsx)(n, {
+            channelId: i.channelId
           });
           break;
-        case Chunk897473.tI.VIEW_MOD_REPORT:
-          e = (0, Chunk54381.jsx)(Chunk900157.Z, {
-            channelId: Chunk473749.channelId,
-            baseChannelId: Chunk473749.baseChannelId
+        case ej.tI.VIEW_MOD_REPORT:
+          e = (0, r.jsx)(eP.Z, {
+            channelId: i.channelId,
+            baseChannelId: i.baseChannelId
           });
           break;
-        case Chunk897473.tI.VIEW_CHANNEL:
-        case Chunk897473.tI.VIEW_MESSAGE_REQUEST:
+        case ej.tI.VIEW_CHANNEL:
+        case ej.tI.VIEW_MESSAGE_REQUEST:
         default:
           return null
       }
     }
-    if (null != Chunk120356 && null == module)
-      if (Chunk120356.type !== Chunk897473.jL.GUILD_MEMBER_MOD_VIEW) return null;
+    if (null != l && null == e)
+      if (l.type !== ej.jL.GUILD_MEMBER_MOD_VIEW) return null;
       else {
         let {
           guildId: e,
           userId: t,
           moderatorReportId: n
-        } = Chunk120356.details;
-        return (0, Chunk54381.jsx)("div", {
+        } = l.details;
+        return (0, r.jsx)("div", {
           style: {
-            width: Chunk981631.$Y6
+            width: e4.$Y6
           },
-          className: Chunk978966.guildSidebar,
-          children: (0, Chunk54381.jsx)(Chunk613464.Z, {
-            guildId: module,
-            userId: exports,
-            moderatorReportId: require,
-            onClose: () => Chunk6025.Z.closeGuildSidebar(module)
+          className: te.guildSidebar,
+          children: (0, r.jsx)(W.Z, {
+            guildId: e,
+            userId: t,
+            moderatorReportId: n,
+            onClose: () => ex.Z.closeGuildSidebar(e)
           })
         })
-      } if (null == module) return null;
-    let o = (null == exports ? true : exports.type) != null && Chunk981631.TPd.GUILD_THREADS_ONLY.has(exports.type) ? 528 : 450,
-      c = a - Chunk981631.PrS - o;
-    return c += Chunk697309.qO, (0, Chunk54381.jsx)(Chunk325708.Z, {
-      sidebarType: (null == exports ? true : exports.type) != null && Chunk981631.TPd.GUILD_THREADS_ONLY.has(exports.type) ? Chunk325708.y.PostSidebar : Chunk325708.y.ThreadSidebar,
-      maxWidth: Chunk392711,
+      } if (null == e) return null;
+    let o = (null == t ? true : t.type) != null && e4.TPd.GUILD_THREADS_ONLY.has(t.type) ? 528 : 450,
+      c = a - e4.PrS - o;
+    return c += y.qO, (0, r.jsx)(eQ.Z, {
+      sidebarType: (null == t ? true : t.type) != null && e4.TPd.GUILD_THREADS_ONLY.has(t.type) ? eQ.y.PostSidebar : eQ.y.ThreadSidebar,
+      maxWidth: c,
       onWidthChange: this.handleThreadSidebarResize,
-      children: module
+      children: e
     })
   }
   render() {
@@ -461,34 +461,34 @@ class tl extends Chunk473749.PureComponent {
       threadSidebarWidth: u,
       isThreadSidebarFloating: p
     } = this.state, h = this.shouldRenderCall();
-    if (Chunk473749) return (0, Chunk54381.jsx)(Chunk992744.Z, {});
-    if (null == module) return (0, Chunk54381.jsx)(Chunk923029.Z, {
+    if (i) return (0, r.jsx)(eJ.Z, {});
+    if (null == e) return (0, r.jsx)(e$.Z, {
       channelId: this.props.channelId
     });
-    let f = Chunk512722 === Chunk981631.ULH.SIDEBAR_CHAT,
-      g = null != Chunk392711 && !Chunk952265,
-      m = !module.isForumLikeChannel() && !o,
-      b = null == exports ? true : exports.name;
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
-        location: Chunk239091,
-        subsection: null != require ? require : true
-      }), (0, Chunk54381.jsxs)("div", {
-        "data-has-border": module.type !== Chunk981631.d4z.GUILD_VOICE,
-        className: a()(Chunk978966.chat, {
-          [Chunk978966.threadSidebarOpen]: Chunk952265 || Chunk481060,
-          [Chunk978966.threadSidebarFloating]: Chunk952265 && Chunk442837
+    let f = s === e4.ULH.SIDEBAR_CHAT,
+      g = null != c && !f,
+      m = !e.isForumLikeChannel() && !o,
+      b = null == t ? true : t.name;
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(M.yY, {
+        location: b,
+        subsection: null != n ? n : true
+      }), (0, r.jsxs)("div", {
+        "data-has-border": e.type !== e4.d4z.GUILD_VOICE,
+        className: a()(te.chat, {
+          [te.threadSidebarOpen]: f || g,
+          [te.threadSidebarFloating]: f && p
         }),
-        children: [Chunk475179 ? (0, Chunk54381.jsx)(Chunk561472.Z, {
+        children: [m ? (0, r.jsx)(x.Z, {
           style: {
-            right: Chunk952265 ? Chunk828700 : true
+            right: f ? u : true
           },
-          className: Chunk978966.uploadArea,
-          channel: module,
-          draftType: Chunk703558.d.ChannelMessage
-        }) : null, Chunk704215 || d ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, Chunk54381.jsxs)("div", {
-          className: a()(Chunk978966.content, {
-            [Chunk978966.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
+          className: te.uploadArea,
+          channel: e,
+          draftType: eU.d.ChannelMessage
+        }) : null, h || d ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, r.jsxs)("div", {
+          className: a()(te.content, {
+            [te.noChat]: l === e4.AEg.NO_CHAT
           }),
           children: [this.renderChat(), this.renderSidebar()]
         })]

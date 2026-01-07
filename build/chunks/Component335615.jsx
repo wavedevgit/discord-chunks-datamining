@@ -282,7 +282,7 @@ class el extends Chunk473749.Component {
     return e.channel.id !== this.props.channel.id || e.version !== this.props.version || e.groups.length !== this.props.groups.length
   }
   componentDidMount() {
-    this.updateSubscription(), this.trackMemberListViewed(), this._areActivitiesExperimentallyHidden = (0, Chunk493324.$)("ChannelMembers")
+    this.updateSubscription(), this.trackMemberListViewed(), this._areActivitiesExperimentallyHidden = (0, v.$)("ChannelMembers")
   }
   componentDidUpdate(e) {
     e.channel.id !== this.props.channel.id && this.updateSubscription(), this.trackMemberListViewed(), this.updateMaxContentFeedRowSeen()
@@ -302,7 +302,7 @@ class el extends Chunk473749.Component {
   }
   getDimensions() {
     let e = this._list;
-    if (null == module) return {
+    if (null == e) return {
       y: 0,
       height: 0,
       rowHeight: 0
@@ -310,14 +310,14 @@ class el extends Chunk473749.Component {
     let {
       offsetHeight: t,
       scrollTop: n
-    } = module.getScrollerState(), {
+    } = e.getScrollerState(), {
       rowHeight: r
-    } = this.props, i = Math.floor(exports / Chunk54381);
+    } = this.props, i = Math.floor(t / r);
     return this.getContentFeedAdjustedDimensions({
-      height: exports,
-      rowHeight: Chunk54381,
-      rowsVisible: Chunk473749,
-      y: require
+      height: t,
+      rowHeight: r,
+      rowsVisible: i,
+      y: n
     })
   }
   render() {
@@ -327,7 +327,7 @@ class el extends Chunk473749.Component {
       channel: n,
       sectionHeight: i
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.Wdt, {
+    return (0, r.jsx)(h.Wdt, {
       children: l => (0, r.jsx)(Z.FG, {
         children: s => (0, r.jsx)("aside", {
           className: a()(q.membersWrap, q.hiddenMembers),

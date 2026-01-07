@@ -12,18 +12,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.Em)(Chunk313789.n.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
   fieldLayout: "horizontal",
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.swsWWC),
-  useValue: () => (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.getDisplayUserMode()),
+  useTitle: () => o.intl.string(o.t.swsWWC),
+  useValue: () => (0, i.e7)([u.default], () => u.default.getDisplayUserMode()),
   setValue: t => {
     l.Z.setDisplayUserMode(t)
   },
   useOptions: () => [{
     id: "always",
-    label: Chunk388032.intl.string(Chunk388032.t.nBmDrT),
-    value: Chunk981631.OYC.ALWAYS
+    label: o.intl.string(o.t.nBmDrT),
+    value: a.OYC.ALWAYS
   }, {
     id: "speaking",
-    label: Chunk388032.intl.string(Chunk388032.t["2OvIZY"]),
-    value: Chunk981631.OYC.ONLY_WHILE_SPEAKING
+    label: o.intl.string(o.t["2OvIZY"]),
+    value: a.OYC.ONLY_WHILE_SPEAKING
   }]
 })

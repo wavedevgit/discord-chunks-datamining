@@ -28,9 +28,9 @@ function d(e) {
     numMinutes: Math.floor(60 * t)
   })
 }
-let f = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
+let f = () => (0, a.zu)(i.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
   p = () => {
-    (0, Chunk266454.Q3)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
+    (0, a.Q3)(i.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
   },
   _ = e => {
     let {
@@ -44,12 +44,12 @@ let f = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE
     return n && r && a
   },
   m = () => {
-    (0, Chunk266454.Q3)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER)
+    (0, a.Q3)(i.z.REFERRAL_PROGRAM_POPOVER)
   },
-  h = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER),
+  h = () => (0, a.zu)(i.z.REFERRAL_PROGRAM_POPOVER),
   g = () => {
-    let e = (0, Chunk533525.b)(false),
+    let e = (0, c.b)(false),
       t = h(),
-      n = (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getReferralsRemaining());
-    return module && false === exports && null !== require && require > 0
+      n = (0, r.e7)([l.Z], () => l.Z.getReferralsRemaining());
+    return e && false === t && null !== n && n > 0
   }

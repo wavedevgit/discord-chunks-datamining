@@ -17,10 +17,10 @@ module.exports = function() {
   function e(e) {
     r(this, "_defaultDir", true), r(this, "_lastDir", true), e ? a.isStrong(e) || o(false) : e = a.getGlobalDir(), this._defaultDir = e, this.reset()
   }
-  var t = module.prototype;
-  return exports.reset = function() {
+  var t = e.prototype;
+  return t.reset = function() {
     this._lastDir = this._defaultDir
-  }, exports.getDirection = function(e) {
+  }, t.getDirection = function(e) {
     return this._lastDir = i.getDirection(e, this._lastDir), this._lastDir
-  }, module
+  }, e
 }()

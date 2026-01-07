@@ -281,10 +281,10 @@ function Y(e, t, n) {
     }
   })
 }
-let W = () => (0, Chunk54381.jsx)(Chunk481060.Fbu, {
+let W = () => (0, r.jsx)(f.Fbu, {
   size: "xxs",
   color: "currentColor",
-  className: Chunk549578.executedCommandSeparator
+  className: L.executedCommandSeparator
 });
 
 function K(e) {

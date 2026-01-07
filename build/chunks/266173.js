@@ -94,16 +94,16 @@ class N {
     }), m(this, "getWidgetSetting", e => this._widgetSettings[e]), m(this, "hasWidgetSetting", e => null != this._widgetSettings[e]), m(this, "setNotificationSetting", (e, t) => {
       var n;
       this._notificationSettings[e] = h({}, null != (n = this._notificationSettings[e]) ? n : {}, t), __OVERLAY__ || i.K.set(b, this._notificationSettings)
-    }), m(this, "hasNotificationSetting", e => null != this._notificationSettings[e]), m(this, "getNotificationSetting", e => this._notificationSettings[e]), this._widgetSettings = Chunk433517.K.get(y, {}), this._notificationSettings = Chunk433517.K.get(b, {}), __OVERLAY__ && (this._widgetSettings = {}, this._notificationSettings = {})
+    }), m(this, "hasNotificationSetting", e => null != this._notificationSettings[e]), m(this, "getNotificationSetting", e => this._notificationSettings[e]), this._widgetSettings = i.K.get(y, {}), this._notificationSettings = i.K.get(b, {}), __OVERLAY__ && (this._widgetSettings = {}, this._notificationSettings = {})
   }
 }
 class P {
   constructor() {
     m(this, "_defaultWidgetPinned", {}), m(this, "initializeAllDefaultWidgetConfigs", () => {
-      for (let e of Object.keys(Chunk981631.Odu)) {
-        let t = module,
-          n = Chunk355863.Z.getWidgetConfig(exports);
-        null != require && null == this._defaultWidgetPinned[exports] && (this._defaultWidgetPinned[exports] = require.defaultSettings.pinned)
+      for (let e of Object.keys(_.Odu)) {
+        let t = e,
+          n = l.Z.getWidgetConfig(t);
+        null != n && null == this._defaultWidgetPinned[t] && (this._defaultWidgetPinned[t] = n.defaultSettings.pinned)
       }
     }), m(this, "overrideDefaultWidgetPinned", async (e, t) => {
       if (__OVERLAY__) return;
@@ -176,7 +176,7 @@ class R {
 }
 
 function w() {
-  return Object.values(Chunk486016.i)
+  return Object.values(u.i)
 }
 let D = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]),
   x = "overlay-negative-widget-experiment-bucket";
@@ -185,7 +185,7 @@ class L extends Chunk147913.Z {
     var e, t;
     super(), e = this, m(this, "_settings", new R), m(this, "_hasInitialized", false), m(this, "_isProcessing", false), m(this, "_appliedExperimentBucket", "control"), m(this, "setAppliedExperimentBucket", e => {
       this._appliedExperimentBucket = e, i.K.set(x, e)
-    }), m(this, "getRawAppliedExperimentBucket", () => (0, Chunk32300.hb)("applied-experiment-bucket")), m(this, "getWidgetExperimentSettings", e => {
+    }), m(this, "getRawAppliedExperimentBucket", () => (0, d.hb)("applied-experiment-bucket")), m(this, "getWidgetExperimentSettings", e => {
       let {
         voiceWidgetDefaultUnpinned: t,
         videoWidgetDefaultUnpinned: n,
@@ -200,13 +200,13 @@ class L extends Chunk147913.Z {
         {
           widgetsToOverride: n,
           widgetsToRestore: r
-        } = module.getWidgetExperimentSettings(exports);
-      for (let t of Object.values(Chunk981631.Odu)) module._settings.initializeWidget(exports);
-      for (let t of Chunk579092) await module._settings.restoreWidget(exports);
-      for (let t of require) await module._settings.unpinWidget(exports);
-      require.size > 0 && I.info("Experiment Override: Widgets", {
-        widgetsToRestore: Chunk579092,
-        widgetsToOverride: require
+        } = e.getWidgetExperimentSettings(t);
+      for (let t of Object.values(_.Odu)) e._settings.initializeWidget(t);
+      for (let t of r) await e._settings.restoreWidget(t);
+      for (let t of n) await e._settings.unpinWidget(t);
+      n.size > 0 && I.info("Experiment Override: Widgets", {
+        widgetsToRestore: r,
+        widgetsToOverride: n
       })
     }), m(this, "getNotificationExperimentSettings", e => {
       let {
@@ -272,7 +272,7 @@ class L extends Chunk147913.Z {
       EXPERIMENT_OVERRIDE_BUCKET: this.handleExperimentOverrideBucket,
       OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: this.handleSetNotificationDisabledSetting,
       LAYOUT_SET_PINNED: this.handleSetPinned
-    }), this._appliedExperimentBucket = null != (t = Chunk433517.K.get(x)) ? exports : "control"
+    }), this._appliedExperimentBucket = null != (t = i.K.get(x)) ? t : "control"
   }
 }
 let j = new L

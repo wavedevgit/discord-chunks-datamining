@@ -53,11 +53,13 @@ let m = false,
   });
 
 function g() {
-  if (Chunk585483.S.hasSubscribers(Chunk981631.CkL.MODAL_CLOSE)) {
-    letChunk952265 = require("./952265.js");
-    if (!module()) returnfalse
+  if (l.S.hasSubscribers(u.CkL.MODAL_CLOSE)) {
+    let {
+      doesTopModalAllowNavigation: e
+    } = n(952265);
+    if (!e()) returnfalse
   }
-  return require("./574254.js").Z.close(), true
+  return n(574254).Z.close(), true
 }
 
 function E(e, t) {
@@ -91,7 +93,7 @@ function y(e, t, n, r) {
 }
 
 function O() {
-  return null != i && Chunk143816.H.has(i)
+  return null != i && c.H.has(i)
 }
 
 function v(e, t, n) {

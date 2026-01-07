@@ -82,7 +82,7 @@ async function m(e) {
 }
 
 function h() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "USER_PROFILE_MODAL_CLOSE"
   })
 }

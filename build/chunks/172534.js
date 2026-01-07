@@ -132,11 +132,11 @@ class l extends Chunk266310.V {
   }
   getFirstKey() {
     var e, t;
-    return null != (t = null == (e = (0, Chunk746047.l8)(this.body.childNodes)) ? true : module.key) ? exports : null
+    return null != (t = null == (e = (0, r.l8)(this.body.childNodes)) ? true : e.key) ? t : null
   }
   getLastKey() {
     var e, t;
-    return null != (t = null == (e = (0, Chunk746047.s)(this.body.childNodes)) ? true : module.key) ? exports : null
+    return null != (t = null == (e = (0, r.s)(this.body.childNodes)) ? true : e.key) ? t : null
   }
   getItem(e) {
     var t;

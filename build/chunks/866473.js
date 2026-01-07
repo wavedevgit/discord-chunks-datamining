@@ -10,22 +10,22 @@ var Chunk440849 = require("./440849.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.J9)(Chunk313789.n.ANIMATE_STICKERS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["6NtAuJ"]),
+  useTitle: () => a.intl.string(a.t["6NtAuJ"]),
   useSubtitle: () => {
     var t;
-    return null != (t = (0, Chunk440849.J)("animateStickers")) ? module : Chunk388032.intl.string(Chunk388032.t.GRa6U7)
+    return null != (t = (0, i.J)("animateStickers")) ? t : a.intl.string(a.t.GRa6U7)
   },
   useOptions: () => [{
-    name: Chunk388032.intl.string(Chunk388032.t["Xp+X2U"]),
-    value: Chunk611480.yr.ALWAYS_ANIMATE
+    name: a.intl.string(a.t["Xp+X2U"]),
+    value: r.yr.ALWAYS_ANIMATE
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.IlLT7e),
-    desc: Chunk388032.intl.string(Chunk388032.t.bIW9Tl),
-    value: Chunk611480.yr.ANIMATE_ON_INTERACTION
+    name: a.intl.string(a.t.IlLT7e),
+    desc: a.intl.string(a.t.bIW9Tl),
+    value: r.yr.ANIMATE_ON_INTERACTION
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.IGu8x3),
-    value: Chunk611480.yr.NEVER_ANIMATE
+    name: a.intl.string(a.t.IGu8x3),
+    value: r.yr.NEVER_ANIMATE
   }],
-  useValue: () => Chunk695346.Wp.useSetting(),
+  useValue: () => s.Wp.useSetting(),
   setValue: t => s.Wp.updateSetting(t)
 })

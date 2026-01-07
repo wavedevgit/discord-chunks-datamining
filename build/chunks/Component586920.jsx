@@ -25,30 +25,30 @@ let h = () => {
     confettiCanvas: h,
     churnUserDiscountOffer: g,
     discountedPrice: E
-  } = (0, Chunk594135.a)(), b = (0, Chunk473749.useRef)(null), [y, O] = (0, Chunk473749.useState)(false), v = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-  if ((0, Chunk473749.useEffect)(() => {
+  } = (0, u.a)(), b = (0, i.useRef)(null), [y, O] = (0, i.useState)(false), v = (0, o.e7)([s.Z], () => s.Z.useReducedMotion);
+  if ((0, i.useEffect)(() => {
       null !== b.current && null !== E && O(true)
     }, [b, E]), null === g) return null;
-  let S = require === Chunk474936.PremiumTypes.TIER_2;
-  return (0, Chunk54381.jsxs)("div", {
+  let S = n === d.PremiumTypes.TIER_2;
+  return (0, r.jsxs)("div", {
     ref: b,
-    children: [(0, Chunk54381.jsx)(Chunk793030.ExpressiveModal, {
+    children: [(0, r.jsx)(a.ExpressiveModal, {
       graphic: {
         type: "image",
-        src: S ? Chunk7449.Z : Chunk997892
+        src: S ? m.Z : _
       },
       gradientColor: S ? "nitro-pink" : "nitro-green",
-      transitionState: module,
-      title: Chunk388032.intl.string(Chunk388032.t.PZSyRk),
-      onClose: async () => exports(),
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk201007.offerDetailContainer,
-        children: (0, Chunk54381.jsx)(Chunk10508.o, {
-          offerState: Chunk10508.w.APPLIED,
+      transitionState: e,
+      title: f.intl.string(f.t.PZSyRk),
+      onClose: async () => t(),
+      children: (0, r.jsx)("div", {
+        className: p.offerDetailContainer,
+        children: (0, r.jsx)(c.o, {
+          offerState: c.w.APPLIED,
           userDiscountOffer: g
         })
       })
-    }), !v && y && (0, Chunk54381.jsx)(Chunk530618.Z, {
+    }), !v && y && (0, r.jsx)(l.Z, {
       confettiTarget: b.current,
       confettiCanvas: h,
       confettiVelocityMultiplier: .75

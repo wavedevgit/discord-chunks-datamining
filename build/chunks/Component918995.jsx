@@ -22,21 +22,21 @@ class s extends Chunk473749.Component {
     let {
       transitionState: e
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk233787.C, {
-      transitionState: module,
+    return (0, n.jsx)(c.C, {
+      transitionState: e,
       onClose: async () => await this.cancel(),
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.Nn0Px8),
-      title: Chunk388032.intl.string(Chunk388032.t.Nn0Px8),
-      premiumModalType: Chunk233787.C.Types.UNCLAIMED,
+      "aria-label": l.intl.string(l.t.Nn0Px8),
+      title: l.intl.string(l.t.Nn0Px8),
+      premiumModalType: c.C.Types.UNCLAIMED,
       primary: {
         onClick: this.claimAccount,
-        label: Chunk388032.intl.string(Chunk388032.t.fiNVin)
+        label: l.intl.string(l.t.fiNVin)
       },
       secondary: {
         onClick: this.cancel,
-        label: Chunk388032.intl.string(Chunk388032.t.oEAioF)
+        label: l.intl.string(l.t.oEAioF)
       },
-      children: Chunk388032.intl.string(Chunk388032.t["7btfmI"])
+      children: l.intl.string(l.t["7btfmI"])
     })
   }
   constructor(...e) {

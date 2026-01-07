@@ -27,29 +27,29 @@ class l {
       effectiveConnectionSpeedBuckets: {},
       connectionTypeBuckets: {}
     };
-    return Object.values(Chunk981631.IWh).forEach(t => {
+    return Object.values(a.IWh).forEach(t => {
       e.connectionTypeBuckets[t] = 0
-    }), Object.values(Chunk981631.IyS).forEach(t => {
+    }), Object.values(a.IyS).forEach(t => {
       e.effectiveConnectionSpeedBuckets[t] = 0
-    }), module
+    }), e
   }
   getStats() {
     let {
       _networkStats: e
     } = this;
     return {
-      duration_connection_type_wifi: s(module.connectionTypeBuckets[Chunk981631.IWh.WIFI]),
-      duration_connection_type_cellular: s(module.connectionTypeBuckets[Chunk981631.IWh.CELLULAR]),
-      duration_connection_type_ethernet: s(module.connectionTypeBuckets[Chunk981631.IWh.ETHERNET]),
-      duration_connection_type_bluetooth: s(module.connectionTypeBuckets[Chunk981631.IWh.BLUETOOTH]),
-      duration_connection_type_other: s(module.connectionTypeBuckets[Chunk981631.IWh.OTHER]),
-      duration_connection_type_unknown: s(module.connectionTypeBuckets[Chunk981631.IWh.UNKNOWN]),
-      duration_connection_type_none: s(module.connectionTypeBuckets[Chunk981631.IWh.NONE]),
-      duration_effective_connection_speed_2g: s(module.effectiveConnectionSpeedBuckets[Chunk981631.IyS.TWO_G]),
-      duration_effective_connection_speed_3g: s(module.effectiveConnectionSpeedBuckets[Chunk981631.IyS.THREE_G]),
-      duration_effective_connection_speed_4g: s(module.effectiveConnectionSpeedBuckets[Chunk981631.IyS.FOUR_G]),
-      duration_effective_connection_speed_5g: s(module.effectiveConnectionSpeedBuckets[Chunk981631.IyS.FIVE_G]),
-      duration_effective_connection_speed_unknown: s(module.effectiveConnectionSpeedBuckets[Chunk981631.IyS.UNKNOWN])
+      duration_connection_type_wifi: s(e.connectionTypeBuckets[a.IWh.WIFI]),
+      duration_connection_type_cellular: s(e.connectionTypeBuckets[a.IWh.CELLULAR]),
+      duration_connection_type_ethernet: s(e.connectionTypeBuckets[a.IWh.ETHERNET]),
+      duration_connection_type_bluetooth: s(e.connectionTypeBuckets[a.IWh.BLUETOOTH]),
+      duration_connection_type_other: s(e.connectionTypeBuckets[a.IWh.OTHER]),
+      duration_connection_type_unknown: s(e.connectionTypeBuckets[a.IWh.UNKNOWN]),
+      duration_connection_type_none: s(e.connectionTypeBuckets[a.IWh.NONE]),
+      duration_effective_connection_speed_2g: s(e.effectiveConnectionSpeedBuckets[a.IyS.TWO_G]),
+      duration_effective_connection_speed_3g: s(e.effectiveConnectionSpeedBuckets[a.IyS.THREE_G]),
+      duration_effective_connection_speed_4g: s(e.effectiveConnectionSpeedBuckets[a.IyS.FOUR_G]),
+      duration_effective_connection_speed_5g: s(e.effectiveConnectionSpeedBuckets[a.IyS.FIVE_G]),
+      duration_effective_connection_speed_unknown: s(e.effectiveConnectionSpeedBuckets[a.IyS.UNKNOWN])
     }
   }
   incrementNetworkStats(e) {
@@ -60,6 +60,6 @@ class l {
     r === a.IWh.WIMAX && (r = a.IWh.WIFI), this._networkStats.effectiveConnectionSpeedBuckets[n] += t, this._networkStats.connectionTypeBuckets[r] += t, this._lastSampleTimestamp = e
   }
   constructor() {
-    o(this, "_networkStats", true), o(this, "_lastSampleTimestamp", true), this._networkStats = this._initStats(), this._lastSampleTimestamp = (0, Chunk379649.zO)()
+    o(this, "_networkStats", true), o(this, "_lastSampleTimestamp", true), this._networkStats = this._initStats(), this._lastSampleTimestamp = (0, r.zO)()
   }
 }

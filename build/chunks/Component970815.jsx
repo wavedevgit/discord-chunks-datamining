@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A4: () => E,
-  b6: () => Chunk317257.b
+  b6: () => c.b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,9 +37,9 @@ function _(e) {
   }
   return e
 }
-let m = () => (0, Chunk54381.jsx)("img", {
-    className: Chunk663261.notificationBadge,
-    src: require("./808824.js"),
+let m = () => (0, r.jsx)("img", {
+    className: f.notificationBadge,
+    src: n(808824),
     alt: ""
   }),
   h = "balance-widget-pill",

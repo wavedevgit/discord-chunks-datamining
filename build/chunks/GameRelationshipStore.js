@@ -57,7 +57,7 @@ function y() {
       if (s.Z.isSpam(a) || s.Z.isIgnored(a)) return;
       e += 1
     }
-  }), g = module, E = exports, b = require
+  }), g = e, E = t, b = n
 }
 
 function O(e) {
@@ -94,7 +94,7 @@ function C(e) {
 }
 class A extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk699516.Z)
+    this.waitFor(s.Z)
   }
   getPendingIncomingCount() {
     return g

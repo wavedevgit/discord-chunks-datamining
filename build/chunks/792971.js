@@ -11,15 +11,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.VOICE_QUALITY_OF_SERVICE_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.uancuJ),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.I1Eoqq),
+  useTitle: () => o.intl.string(o.t.uancuJ),
+  useSubtitle: () => o.intl.string(o.t.I1Eoqq),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getQoS())
+    return (0, i.e7)([u.Z], () => u.Z.getQoS())
   },
   setValue: function(t) {
     l.Z.setQoS(t)
   },
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.QOS))
+    return (0, i.e7)([u.Z], () => u.Z.supports(a.AN.QOS))
   }
 })

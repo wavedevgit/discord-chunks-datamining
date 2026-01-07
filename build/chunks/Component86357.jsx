@@ -113,12 +113,12 @@ class O extends(r = Chunk473749.PureComponent) {
       sku: t,
       hasEntitlementBranch: n
     } = this.props;
-    if (require) return 5;
-    if (module) return 1;
-    if (!exports.available) return 4;
-    if (exports.premium) return 3;
-    if (exports.isOnSale) return 2;
-    else if (null != exports.getPrice()) return 4;
+    if (n) return 5;
+    if (e) return 1;
+    if (!t.available) return 4;
+    if (t.premium) return 3;
+    if (t.isOnSale) return 2;
+    else if (null != t.getPrice()) return 4;
     return null
   }
   renderGeneric(e, t) {
@@ -214,18 +214,18 @@ class O extends(r = Chunk473749.PureComponent) {
   }
   render() {
     let e = this.getState();
-    if (null == module) return null;
+    if (null == e) return null;
     switch (this.props.type) {
       case 1:
-        return this.renderDirectoryHero(module);
+        return this.renderDirectoryHero(e);
       case 2:
-        return this.renderGeneric(module, Chunk777681.directoryTilePrice);
+        return this.renderGeneric(e, d.directoryTilePrice);
       case 3:
-        return this.renderGeneric(module, Chunk777681.directorySearchPrice);
+        return this.renderGeneric(e, d.directorySearchPrice);
       case 4:
-        return this.renderListing(module);
+        return this.renderListing(e);
       case 5:
-        return this.renderGeneric(module, Chunk777681.embedPrice);
+        return this.renderGeneric(e, d.embedPrice);
       default:
         throw Error("Invalid Price Unit Type")
     }

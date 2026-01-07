@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js");
 let c = () => {
-  let e = Chunk473749.useRef(true);
-  return Chunk473749.useEffect(() => () => {
-    module.current = false
-  }, []), Chunk473749.useCallback(() => module.current, [])
+  let e = r.useRef(true);
+  return r.useEffect(() => () => {
+    e.current = false
+  }, []), r.useCallback(() => e.current, [])
 }

@@ -11,7 +11,7 @@ let a = {
     binds: ["mod+return"],
     comboKeysBindGlobal: true,
     action() {
-      if (Chunk585483.S.hasSubscribers(Chunk981631.CkL.CALL_ACCEPT)) return Chunk585483.S.dispatch(Chunk981631.CkL.CALL_ACCEPT), false
+      if (r.S.hasSubscribers(i.CkL.CALL_ACCEPT)) return r.S.dispatch(i.CkL.CALL_ACCEPT), false
     }
   },
   o = {

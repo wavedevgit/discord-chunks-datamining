@@ -23,41 +23,41 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk813671 = require("./813671.js");
 let y = () => {
-    (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.default)()
+    (0, d.XO)(d.wh.APP_ICON), (0, m.default)()
   },
   O = () => {
     let {
       analyticsLocations: e
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), t = (0, Chunk442837.e7)([Chunk737604.Z], () => Chunk737604.Z.isUpsellPreview), n = (0, Chunk526665.gN)("UserSettingsAppearanceInAppIcon");
-    (0, Chunk493773.ZP)(() => {
-      exports && Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: Chunk474936.cd.APP_ICON_UPSELL,
-        location_stack: module
+    } = (0, l.ZP)(s.Z.USER_SETTINGS), t = (0, i.e7)([c.Z], () => c.Z.isUpsellPreview), n = (0, _.gN)("UserSettingsAppearanceInAppIcon");
+    (0, o.ZP)(() => {
+      t && p.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: g.cd.APP_ICON_UPSELL,
+        location_stack: e
       })
     });
-    let d = () => (0, Chunk54381.jsxs)("div", {
-      className: Chunk813671.tryItOutButtons,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
-        variant: exports ? "secondary" : "primary",
-        text: Chunk388032.intl.string(Chunk388032.t["hb/wE0"]),
+    let d = () => (0, r.jsxs)("div", {
+      className: b.tryItOutButtons,
+      children: [(0, r.jsx)(a.Button, {
+        variant: t ? "secondary" : "primary",
+        text: E.intl.string(E.t["hb/wE0"]),
         onClick: () => y()
-      }), exports ? (0, Chunk54381.jsx)(Chunk638212.Z, {
-        subscriptionTier: Chunk474936.Si.TIER_2,
-        defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7D),
+      }), t ? (0, r.jsx)(f.Z, {
+        subscriptionTier: g.Si.TIER_2,
+        defaultTextOverride: E.intl.string(E.t.mr4K7D),
         premiumModalAnalyticsLocation: {
-          object: Chunk981631.qAy.BUTTON_CTA,
-          objectType: Chunk981631.AnalyticsObjectTypes.BUY
+          object: h.qAy.BUTTON_CTA,
+          objectType: h.AnalyticsObjectTypes.BUY
         },
         fullWidth: true
       }) : null]
     });
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk813671.selectionGroup,
-      children: [(0, Chunk54381.jsx)(Chunk539873.Z, {
-        disabled: exports,
-        renderCTAButtons: Chunk550385
-      }), !require && (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk813671.divider
+    return (0, r.jsxs)("div", {
+      className: b.selectionGroup,
+      children: [(0, r.jsx)(u.Z, {
+        disabled: t,
+        renderCTAButtons: d
+      }), !n && (0, r.jsx)(a.izJ, {
+        className: b.divider
       })]
     })
   }

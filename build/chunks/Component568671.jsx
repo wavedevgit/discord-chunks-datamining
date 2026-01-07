@@ -36,21 +36,21 @@ function d(e) {
 }
 
 function f() {
-  let e = Chunk388032.intl.string(Chunk517319.default["8SLtqb"]),
+  let e = c.intl.string(l.default["8SLtqb"]),
     t = () => {
-      (0, Chunk481060.ZDy)(async () => {
+      (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([require.e("93132"), require.e("48168")]).then(require.bind(require, 978305));
+        } = await Promise.all([n.e("93132"), n.e("48168")]).then(n.bind(n, 978305));
         return t => (0, r.jsx)(e, d({}, t))
-      }), Chunk626135.default.track(Chunk981631.rMx.FAMILY_CENTER_ACTION, {
-        action: Chunk292352.YC.ShowQRCodeModal
+      }), a.default.track(s.rMx.FAMILY_CENTER_ACTION, {
+        action: o.YC.ShowQRCodeModal
       })
     };
-  return (0, Chunk54381.jsx)(Chunk481060.Button, {
-    icon: Chunk481060.IkH,
+  return (0, r.jsx)(i.Button, {
+    icon: i.IkH,
     variant: "primary",
-    text: module,
-    onClick: exports
+    text: e,
+    onClick: t
   })
 }

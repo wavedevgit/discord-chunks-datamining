@@ -27,15 +27,15 @@ var Chunk54381 = require("./54381.js"),
 let Chunk575703 = require("./575703.js");
 
 function w() {
-  let e, t = (0, Chunk828700.TH)(),
-    [n, d] = Chunk473749.useState(() => {
-      if (exports.pathname === Chunk981631.Z5c.ACTIVATE_HANDOFF) {
+  let e, t = (0, i.TH)(),
+    [n, d] = r.useState(() => {
+      if (t.pathname === y.Z5c.ACTIVATE_HANDOFF) {
         let {
           user_code: e
-        } = Chunk593473.parse(window.location.search);
+        } = o.parse(window.location.search);
         return {
           type: "handoff",
-          code: module
+          code: e
         }
       }
       return {
@@ -43,84 +43,84 @@ function w() {
         usePrefilledCode: true
       }
     }),
-    w = (0, Chunk399606.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments);
-  Chunk473749.useEffect(() => {
-    Chunk314897.default.isAuthenticated() && !w && Chunk893776.Z.getExperiments()
-  }, [w]), (0, Chunk702493.Z)(), (0, Chunk643366.Y)(require);
-  let N = Chunk473749.useCallback(() => {
-      Chunk77987({
+    w = (0, s.e7)([f.Z], () => f.Z.hasLoadedExperiments);
+  r.useEffect(() => {
+    h.default.isAuthenticated() && !w && c.Z.getExperiments()
+  }, [w]), (0, l.Z)(), (0, x.Y)(n);
+  let N = r.useCallback(() => {
+      d({
         type: "user-code-input"
       })
-    }, [Chunk77987]),
-    E = Chunk473749.useCallback(e => {
+    }, [d]),
+    E = r.useCallback(e => {
       d({
         type: "authorization",
         userCodeData: e
       })
-    }, [Chunk77987]),
-    T = Chunk473749.useCallback(e => {
+    }, [d]),
+    T = r.useCallback(e => {
       d({
         type: "success",
         userCodeData: e
       })
-    }, [Chunk77987]),
-    O = Chunk473749.useCallback(e => {
+    }, [d]),
+    O = r.useCallback(e => {
       d({
         type: "error",
         userCodeData: e
       })
-    }, [Chunk77987]),
+    }, [d]),
     k = true;
-  switch (require.type) {
+  switch (n.type) {
     case "handoff":
-      e = (0, Chunk54381.jsx)(Chunk581690.c, {
-        code: require.code
+      e = (0, a.jsx)(m.c, {
+        code: n.code
       }), k = false;
       break;
     case "user-code-input":
-      e = (0, Chunk54381.jsx)(Chunk521937.v, {
-        usePrefilledCode: require.usePrefilledCode || false,
+      e = (0, a.jsx)(C.v, {
+        usePrefilledCode: n.usePrefilledCode || false,
         onUserCodeAccepted: E
       });
       break;
     case "authorization":
-      e = (0, Chunk54381.jsx)(Chunk94628.B, {
-        data: require.userCodeData,
+      e = (0, a.jsx)(g.B, {
+        data: n.userCodeData,
         onDenied: N,
         onError: O,
         onSuccess: T
       }), k = false;
       break;
     case "success":
-      e = (0, Chunk54381.jsx)(Chunk902928.u, {
-        onComplete: () => (0, Chunk703656.uL)(Chunk981631.Z5c.ME),
-        data: require.userCodeData
+      e = (0, a.jsx)(v.u, {
+        onComplete: () => (0, p.uL)(y.Z5c.ME),
+        data: n.userCodeData
       });
       break;
     case "error":
-      e = (0, Chunk54381.jsx)(Chunk659154.c, {
+      e = (0, a.jsx)(b.c, {
         onTryAgain: N
       });
       break;
     default:
       e = null
   }
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk487659.activatePage,
-    children: [(0, Chunk54381.jsx)("img", {
-      className: Chunk487659.artwork,
-      src: Chunk575703,
+  return (0, a.jsxs)("div", {
+    className: j.activatePage,
+    children: [(0, a.jsx)("img", {
+      className: j.artwork,
+      src: _,
       alt: ""
-    }), (0, Chunk54381.jsx)(Chunk133853.Z, {
+    }), (0, a.jsx)(u.Z, {
       show: true,
-      className: Chunk487659.logo
-    }), k ? (0, Chunk54381.jsx)("div", {
-      className: Chunk487659.content,
-      children: module
-    }) : module]
+      className: j.logo
+    }), k ? (0, a.jsx)("div", {
+      className: j.content,
+      children: e
+    }) : e]
   })
 }
 let N = (0, Chunk77987.e)(w),
   E = function() {
-    return (0, Chunk828700.TH)().pathname !== Chunk981631.Z5c.ACTIVATE_HANDOFF ? (0, Chunk54381.jsx)(N, {}) : (0, Chunk54381.jsx)(w, {})
+    return (0, i.TH)().pathname !== y.Z5c.ACTIVATE_HANDOFF ? (0, a.jsx)(N, {}) : (0, a.jsx)(w, {})
   }

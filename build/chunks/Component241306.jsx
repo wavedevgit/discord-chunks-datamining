@@ -16,33 +16,33 @@ function u() {
   let {
     currentGame: e,
     planId: n
-  } = (0, Chunk343312.JL)(), t = (0, Chunk162190.Z)(null == module ? true : module.gameId, "cover");
-  if (null == module) return null;
-  let u = null == module ? true : module.plans.find(e => e.id === n);
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk879125.container,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk879125.content,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk879125.headerContainer,
-        children: [(0, Chunk54381.jsx)("img", {
-          src: null != require ? require : "",
-          className: Chunk879125.image,
-          alt: module.name
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk879125.header,
-          children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
+  } = (0, s.JL)(), t = (0, d.Z)(null == e ? true : e.gameId, "cover");
+  if (null == e) return null;
+  let u = null == e ? true : e.plans.find(e => e.id === n);
+  return (0, r.jsxs)("div", {
+    className: c.container,
+    children: [(0, r.jsxs)("div", {
+      className: c.content,
+      children: [(0, r.jsxs)("div", {
+        className: c.headerContainer,
+        children: [(0, r.jsx)("img", {
+          src: null != t ? t : "",
+          className: c.image,
+          alt: e.name
+        }), (0, r.jsxs)("div", {
+          className: c.header,
+          children: [(0, r.jsx)(a.X6q, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: module.name
-          }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+            children: e.name
+          }), (0, r.jsx)(a.xvT, {
             variant: "text-md/medium",
             color: "text-subtle",
             children: null == u ? true : u.name
           })]
         })]
-      }), null != u && (0, Chunk54381.jsx)("div", {
-        className: Chunk879125.statsGrid,
+      }), null != u && (0, r.jsx)("div", {
+        className: c.statsGrid,
         children: u.specifications.map((e, n) => {
           var t;
           return (0, r.jsxs)(i.Fragment, {
@@ -62,14 +62,14 @@ function u() {
             })]
           }, n)
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk879125.poweredBy,
-        children: (0, Chunk54381.jsx)(Chunk296643.Z, {})
+      }), (0, r.jsx)("div", {
+        className: c.poweredBy,
+        children: (0, r.jsx)(o.Z, {})
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk879125.imageBackground,
-      children: (0, Chunk54381.jsx)(Chunk441494.b, {
-        imageUrl: null != require ? require : ""
+    }), (0, r.jsx)("div", {
+      className: c.imageBackground,
+      children: (0, r.jsx)(l.b, {
+        imageUrl: null != t ? t : ""
       })
     })]
   })

@@ -100,7 +100,7 @@ l.prototype._shouldRetry = function(e, t) {
 }, l.prototype.abort = function() {
   if (this._aborted) return this;
   if (this._aborted = true, this.xhr && this.xhr.abort(), this.req) {
-    if (Chunk620633.gte(Chunk444675.version, "v13.0.0") && Chunk620633.lt(Chunk444675.version, "v14.0.0")) throw Error("Superagent does not work in v13 properly with abort() due to Node.js core changes");
+    if (i.gte(r.version, "v13.0.0") && i.lt(r.version, "v14.0.0")) throw Error("Superagent does not work in v13 properly with abort() due to Node.js core changes");
     this.req.abort()
   }
   return this.clearTimeout(), this.emit("abort"), this
@@ -147,11 +147,11 @@ l.prototype._shouldRetry = function(e, t) {
   return this._sort = true === e || e, this
 }, l.prototype._finalizeQueryString = function() {
   let e = this._query.join("&");
-  if (module && (this.url += (this.url.includes("?") ? "&" : "?") + module), this._query.length = 0, this._sort) {
+  if (e && (this.url += (this.url.includes("?") ? "&" : "?") + e), this._query.length = 0, this._sort) {
     let e = this.url.indexOf("?");
-    if (module >= 0) {
-      let t = this.url.slice(module + 1).split("&");
-      "function" == typeof this._sort ? exports.sort(this._sort) : exports.sort(), this.url = this.url.slice(0, module) + "?" + exports.join("&")
+    if (e >= 0) {
+      let t = this.url.slice(e + 1).split("&");
+      "function" == typeof this._sort ? t.sort(this._sort) : t.sort(), this.url = this.url.slice(0, e) + "?" + t.join("&")
     }
   }
 }, l.prototype._appendQueryString = () => {
@@ -163,8 +163,8 @@ l.prototype._shouldRetry = function(e, t) {
 }, l.prototype._setTimeouts = function() {
   let e = this;
   this._timeout && !this._timer && (this._timer = setTimeout(() => {
-    module._timeoutError("Timeout of ", module._timeout, "ETIME")
+    e._timeoutError("Timeout of ", e._timeout, "ETIME")
   }, this._timeout)), this._responseTimeout && !this._responseTimeoutTimer && (this._responseTimeoutTimer = setTimeout(() => {
-    module._timeoutError("Response timeout of ", module._responseTimeout, "ETIMEDOUT")
+    e._timeoutError("Response timeout of ", e._responseTimeout, "ETIMEDOUT")
   }, this._responseTimeout))
 }

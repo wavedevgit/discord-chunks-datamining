@@ -10,8 +10,8 @@ var Chunk288047 = require("./288047.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.FRIEND_ONLINE_NOTIFICATIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.sQQgFj),
+  useTitle: () => a.intl.string(a.t.sQQgFj),
   useValue: Chunk695346.JY.useSetting,
   setValue: Chunk891353.N,
-  usePredicate: () => (0, Chunk288047.ZQ)("FriendOnlineNotifications").showSettingsToggle
+  usePredicate: () => (0, i.ZQ)("FriendOnlineNotifications").showSettingsToggle
 })

@@ -14,9 +14,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.Em)(Chunk313789.n.VOICE_AUDIO_SUBSYSTEM_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.wVBHr0),
+  useTitle: () => c.intl.string(c.t.wVBHr0),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAudioSubsystem())
+    return (0, l.e7)([r.Z], () => r.Z.getAudioSubsystem())
   },
   setValue: function(t) {
     (0, T.Z)(c.intl.string(c.t.uY7AcQ), c.intl.string(c.t.gBqik6), () => s.Z.setAudioSubsystem(t))
@@ -26,14 +26,14 @@ let E = (0, Chunk509613.Em)(Chunk313789.n.VOICE_AUDIO_SUBSYSTEM_SETTING, {
       legacyAudioSubsystemSupported: t,
       experimentalAudioSubsystemSupported: e,
       automaticAudioSubsystemSupported: n
-    } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-      legacyAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.LEGACY_AUDIO_SUBSYSTEM),
-      experimentalAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
-      automaticAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
+    } = (0, l.cj)([r.Z], () => ({
+      legacyAudioSubsystemSupported: r.Z.supports(S.AN.LEGACY_AUDIO_SUBSYSTEM),
+      experimentalAudioSubsystemSupported: r.Z.supports(S.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
+      automaticAudioSubsystemSupported: r.Z.supports(S.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
     }));
-    return Chunk473749.useMemo(() => (0, Chunk208113.z)(module, exports, require), [require, exports, module])
+    return i.useMemo(() => (0, o.z)(t, e, n), [n, e, t])
   },
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.shouldOfferManualSubsystemSelection())
+    return (0, l.e7)([r.Z], () => r.Z.shouldOfferManualSubsystemSelection())
   }
 })

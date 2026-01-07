@@ -24,10 +24,10 @@ function c() {
     text: ","
   }, {
     id: s,
-    text: Chunk388032.intl.string(Chunk388032.t.gHp0C4)
+    text: i.intl.string(i.t.gHp0C4)
   }, {
     id: l,
-    text: Chunk388032.intl.string(Chunk388032.t.SO93uu)
+    text: i.intl.string(i.t.SO93uu)
   }].forEach(e => {
     let {
       id: t,

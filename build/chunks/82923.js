@@ -60,7 +60,7 @@ class d {
   async start() {
     for (let e of (this.stopped = false, this.animations)) {
       if (this.stopped) return;
-      await module.start()
+      await e.start()
     }
   }
   stop() {

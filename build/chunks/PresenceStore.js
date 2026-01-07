@@ -461,7 +461,7 @@ function er(e) {
 }
 class ei extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk106301.Z, Chunk594174.default)
+    this.waitFor(h.default, d.Z, g.default)
   }
   setCurrentUserOnConnectionOpen(e, t) {
     v[h.default.getId()] = e, M(h.default.getId(), [...t].sort(L))
@@ -526,7 +526,7 @@ class ei extends(r = Chunk442837.ZP.Store) {
     return A[e]
   }
   getUserIds() {
-    return Chunk709054.default.keys(S)
+    return m.default.keys(S)
   }
   isMobileOnline(e) {
     let t = C[e];

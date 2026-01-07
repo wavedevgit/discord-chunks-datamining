@@ -12,13 +12,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk921356 = require("./921356.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_ENABLE_MFA_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.m0FidJ)],
+  useSearchTerms: () => [T.intl.string(T.t.m0FidJ)],
   usePredicate: function() {
-    let t = (0, Chunk968021.Y)(),
-      e = (0, Chunk921356.O)();
-    return (0, Chunk442837.e7)([Chunk594174.default], () => {
-      let n = Chunk594174.default.getCurrentUser();
-      return null != require && !require.mfaEnabled && !module && !exports
+    let t = (0, a.Y)(),
+      e = (0, o.O)();
+    return (0, i.e7)([s.default], () => {
+      let n = s.default.getCurrentUser();
+      return null != n && !n.mfaEnabled && !t && !e
     })
   },
   Component: Chunk905935.Z

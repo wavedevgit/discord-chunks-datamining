@@ -36,14 +36,14 @@ var u = function() {
       key: "reconnect",
       value: function() {
         var t = this.didHandlerIdChange() || this.didDropTargetChange() || this.didOptionsChange();
-        module && this.disconnectDropTarget();
+        t && this.disconnectDropTarget();
         var n = this.dropTarget;
         if (this.handlerId) {
-          if (!exports) {
-            this.lastConnectedDropTarget = exports;
+          if (!n) {
+            this.lastConnectedDropTarget = n;
             return
           }
-          module && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDropTarget = exports, this.lastConnectedDropTargetOptions = this.dropTargetOptions, this.unsubscribeDropTarget = this.backend.connectDropTarget(this.handlerId, exports, this.dropTargetOptions))
+          t && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDropTarget = n, this.lastConnectedDropTargetOptions = this.dropTargetOptions, this.unsubscribeDropTarget = this.backend.connectDropTarget(this.handlerId, n, this.dropTargetOptions))
         }
       }
     }, {
@@ -72,7 +72,7 @@ var u = function() {
     }, {
       key: "didOptionsChange",
       value: function() {
-        return !(0, Chunk521548.w)(this.lastConnectedDropTargetOptions, this.dropTargetOptions)
+        return !(0, r.w)(this.lastConnectedDropTargetOptions, this.dropTargetOptions)
       }
     }, {
       key: "disconnectDropTarget",
@@ -95,5 +95,5 @@ var u = function() {
         var r = n[e];
         r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(t, r.key, r)
       }
-    }(exports.prototype, module), exports
+    }(n.prototype, t), n
 }()

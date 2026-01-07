@@ -36,7 +36,7 @@ function I(e) {
   });
   return (0, r.jsx)(p.Gt, {
     value: i,
-    children: (0, r.jsx)(h.Z, (t = function(e) {
+    children: (0, r.jsx)(m.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -68,8 +68,8 @@ function I(e) {
   })
 }
 let C = Chunk473749.memo(function() {
-  let e = Chunk473749.useRef(null);
-  (0, Chunk393238.PM)(module, e => {
+  let e = i.useRef(null);
+  (0, u.PM)(e, e => {
     let {
       height: t
     } = e;
@@ -77,26 +77,26 @@ let C = Chunk473749.memo(function() {
   }, []);
   let {
     isSorting: t
-  } = (0, Chunk316243.Z)();
-  return (0, Chunk54381.jsx)("section", {
-    ref: module,
-    className: a()(Chunk566888.panels, {
-      [Chunk566888.disablePointersWhileSorting]: exports
+  } = (0, f.Z)();
+  return (0, r.jsx)("section", {
+    ref: e,
+    className: a()(y.panels, {
+      [y.disablePointersWhileSorting]: t
     }),
-    "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
-    children: (0, Chunk54381.jsxs)(Chunk793030.JcV, {
-      containerRef: module,
-      children: [(0, Chunk54381.jsx)(Chunk316173.Z, {}), (0, Chunk54381.jsx)(Chunk210724.Z, {}), (0, Chunk54381.jsx)(Chunk235555.Z, {}), (0, Chunk54381.jsx)(Chunk410575.Z, {
-        section: Chunk981631.jXE.ACTIVITY_PANEL,
-        children: (0, Chunk54381.jsx)(I, {
-          className: Chunk566888.activityPanel
+    "aria-label": v.intl.string(v.t.StREWK),
+    children: (0, r.jsxs)(o.JcV, {
+      containerRef: e,
+      children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(c.Z, {
+        section: O.jXE.ACTIVITY_PANEL,
+        children: (0, r.jsx)(I, {
+          className: y.activityPanel
         })
-      }), (0, Chunk54381.jsx)(Chunk410575.Z, {
-        section: Chunk981631.jXE.RTC_CONNECTION_PANEL,
-        children: (0, Chunk54381.jsx)(Chunk746508.Z, {})
-      }), (0, Chunk54381.jsx)(Chunk410575.Z, {
-        section: Chunk981631.jXE.ACCOUNT_PANEL,
-        children: (0, Chunk54381.jsx)(Chunk720734.Z, {})
+      }), (0, r.jsx)(c.Z, {
+        section: O.jXE.RTC_CONNECTION_PANEL,
+        children: (0, r.jsx)(b.Z, {})
+      }), (0, r.jsx)(c.Z, {
+        section: O.jXE.ACCOUNT_PANEL,
+        children: (0, r.jsx)(g.Z, {})
       })]
     })
   })

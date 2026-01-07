@@ -44,19 +44,19 @@ var g = function(e) {
 }({});
 class E extends Chunk839548.Z {
   interact() {
-    for (let e of (this.interacted = true, Object.keys(this.outputs))) this.outputs[module].play();
+    for (let e of (this.interacted = true, Object.keys(this.outputs))) this.outputs[e].play();
     this.input.resumeAudio()
   }
   destroy() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    for (let e of (super.destroy(), Object.keys(this.outputs))) this.destroyOutput(module);
-    this.input.destroy(module)
+    for (let e of (super.destroy(), Object.keys(this.outputs))) this.destroyOutput(e);
+    this.input.destroy(e)
   }
   async getStats() {
-    if (!Chunk436620.Fo) return null;
+    if (!_.Fo) return null;
     let e = await this.getRawStats(),
       t = null !== this.input.getVideoStreamId();
-    return (0, Chunk450279.Z)(module, this.getUserIdBySsrc, this.remoteVideoSinkWants, this.localVideoSinkWants, exports)
+    return (0, f.Z)(e, this.getUserIdBySsrc, this.remoteVideoSinkWants, this.localVideoSinkWants, t)
   }
   setNoiseCancellationDuringProcessing(e) {}
   setNoiseCancellationAfterProcessing(e) {}
@@ -140,7 +140,7 @@ class E extends Chunk839548.Z {
     (t & i) === i ? this.wantsPriority.add(e) : this.wantsPriority.delete(e), this.wantsPriority.size !== r && this.recalculatePrioritySpeakers()
   }
   clearAllSpeaking() {
-    for (let e in this.localSpeakingFlags) delete this.localSpeakingFlags[module], null != this.outputs[module] && this.outputs[module].setSpeakingFlags(Chunk65154.Dg.NONE)
+    for (let e in this.localSpeakingFlags) delete this.localSpeakingFlags[e], null != this.outputs[e] && this.outputs[e].setSpeakingFlags(p.Dg.NONE)
   }
   setOutputVolume(e) {
     for (let t of (this.outputVolume = e, Object.keys(this.outputs))) this.outputs[t].volume = this.computeLocalVolume(t)
@@ -179,7 +179,7 @@ class E extends Chunk839548.Z {
   }
   hasDesktopSource() {
     var e;
-    return null == (e = this.input) ? true : module.hasDesktopSource()
+    return null == (e = this.input) ? true : e.hasDesktopSource()
   }
   createOutput(e, t) {
     if (t.discordIsTearingDown) return void this.logger.info("BaseWebRTCConnection.createOutput: ignoring track being torn down: ".concat(t.id));

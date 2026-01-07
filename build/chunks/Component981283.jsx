@@ -37,13 +37,13 @@ function f(e) {
 }
 class p extends Chunk20528.Z {
   _initialize() {
-    super._initialize(), Chunk960861.ZP.initializeIfNeeded()
+    super._initialize(), c.ZP.initializeIfNeeded()
   }
   platformShowStreamFull() {
-    (0, Chunk481060.ZDy)(async () => {
+    (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("63757").then(require.bind(require, 309690));
+      } = await n.e("63757").then(n.bind(n, 309690));
       return t => (0, r.jsx)(e, f({}, t))
     })
   }

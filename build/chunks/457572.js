@@ -38,20 +38,20 @@ function d() {
   var e;
   let {
     enabled: t
-  } = Chunk2818.Z.getCurrentConfig({
+  } = o.Z.getCurrentConfig({
     location: "MessageRemindersNotificationManager"
   }, {
     autoTrackExposure: false
   });
-  if (!exports) return;
+  if (!t) return;
   null != c && clearTimeout(c);
-  let n = Chunk768943.Z.getMessageReminders().find(e => null != e.saveData.dueAt && e.saveData.dueAt > new Date);
-  if ((null == require || null == (e = require.saveData) ? true : module.dueAt) == null) {
+  let n = s.Z.getMessageReminders().find(e => null != e.saveData.dueAt && e.saveData.dueAt > new Date);
+  if ((null == n || null == (e = n.saveData) ? true : e.dueAt) == null) {
     c = null;
     return
   }
-  let r = Date.now() + Chunk70956.Z.Millis.WEEK;
-  require.saveData.dueAt.getTime() > Chunk570140 || (c = setTimeout(() => u(require), require.saveData.dueAt.getTime() - Date.now()))
+  let r = Date.now() + a.Z.Millis.WEEK;
+  n.saveData.dueAt.getTime() > r || (c = setTimeout(() => u(n), n.saveData.dueAt.getTime() - Date.now()))
 }
 class f extends Chunk147913.Z {
   constructor(...e) {

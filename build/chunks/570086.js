@@ -18,13 +18,13 @@ var Chunk98405 = require("./98405.js"),
   g = Chunk154028("Error"),
   E = Chunk154028(h),
   b = function() {
-    Chunk170322(this, y);
+    c(this, y);
     var e = arguments.length,
-      t = Chunk759319(module < 1 ? true : arguments[0]),
-      n = Chunk759319(module < 2 ? true : arguments[1], "Error"),
-      r = new E(exports, require),
-      i = new g(exports);
-    return Chunk127849.name = h, s(Chunk98405, "stack", Chunk530575(1, Chunk742850(Chunk127849.stack, 1))), Chunk176682(Chunk98405, this, b), Chunk98405
+      t = d(e < 1 ? true : arguments[0]),
+      n = d(e < 2 ? true : arguments[1], "Error"),
+      r = new E(t, n),
+      i = new g(t);
+    return i.name = h, s(r, "stack", o(1, p(i.stack, 1))), u(r, this, b), r
   },
   y = b.prototype = E.prototype,
   O = "stack" in new g(h),

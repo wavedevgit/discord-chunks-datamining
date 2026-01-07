@@ -136,13 +136,13 @@ class C extends(i = Chunk473749.Component) {
     return !(0, c.Z)(t, this.state) || !(0, c.Z)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, c.Z)(e.anchor, this.props.anchor) || !(0, c.Z)(e.size, this.props.size) || !(0, c.Z)(e.minSize, this.props.minSize) || !(0, c.Z)(e.container, this.props.container)
   }
   componentDidMount() {
-    this.setDOMPositions(b(this.props.anchor)), this.setDOMSize(v(this.props.size, this.props.minSize.width, this.props.minSize.height)), Chunk585483.S.subscribe(Chunk981631.CkL.OVERLAY_V3_SHOW_WIDGETS, this.handleShowUI)
+    this.setDOMPositions(b(this.props.anchor)), this.setDOMSize(v(this.props.size, this.props.minSize.width, this.props.minSize.height)), d.S.subscribe(p.CkL.OVERLAY_V3_SHOW_WIDGETS, this.handleShowUI)
   }
   componentDidUpdate(e, t) {
     null == t.operation && ((0, c.Z)(this.props.anchor, e.anchor) || this.setDOMPositions(b(this.props.anchor)), (0, c.Z)(this.props.size, e.size) || this.setDOMSize(v(this.props.size, this.props.minSize.width, this.props.minSize.height)))
   }
   componentWillUnmount() {
-    this.handleOperationEnd(), Chunk585483.S.unsubscribe(Chunk981631.CkL.OVERLAY_V3_SHOW_WIDGETS, this.handleShowUI)
+    this.handleOperationEnd(), d.S.unsubscribe(p.CkL.OVERLAY_V3_SHOW_WIDGETS, this.handleShowUI)
   }
   handleResizeMouseDown(e, t) {
     let {
@@ -299,50 +299,50 @@ class C extends(i = Chunk473749.Component) {
       resizeX: t,
       active: n
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [module ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: s()(Chunk731292.resizeNorth, {
-            [Chunk731292.resizeNSCursor]: require
+    return (0, l.jsxs)(l.Fragment, {
+      children: [e ? (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)("div", {
+          className: s()(f.resizeNorth, {
+            [f.resizeNSCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH")
-        }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk731292.resizeSouth, {
-            [Chunk731292.resizeNSCursor]: require
+        }), (0, l.jsx)("div", {
+          className: s()(f.resizeSouth, {
+            [f.resizeNSCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH")
         })]
-      }) : null, exports ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: s()(Chunk731292.resizeEast, {
-            [Chunk731292.resizeEWCursor]: require
+      }) : null, t ? (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)("div", {
+          className: s()(f.resizeEast, {
+            [f.resizeEWCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_EAST")
-        }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk731292.resizeWest, {
-            [Chunk731292.resizeEWCursor]: require
+        }), (0, l.jsx)("div", {
+          className: s()(f.resizeWest, {
+            [f.resizeEWCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_WEST")
         })]
-      }) : null, exports && module ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: s()(Chunk731292.resizeNorthWest, {
-            [Chunk731292.resizeNWSECursor]: require
+      }) : null, t && e ? (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)("div", {
+          className: s()(f.resizeNorthWest, {
+            [f.resizeNWSECursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH_WEST")
-        }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk731292.resizeNorthEast, {
-            [Chunk731292.resizeNESWCursor]: require
+        }), (0, l.jsx)("div", {
+          className: s()(f.resizeNorthEast, {
+            [f.resizeNESWCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH_EAST")
-        }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk731292.resizeSouthWest, {
-            [Chunk731292.resizeNESWCursor]: require
+        }), (0, l.jsx)("div", {
+          className: s()(f.resizeSouthWest, {
+            [f.resizeNESWCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH_WEST")
-        }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk731292.resizeSouthEast, {
-            [Chunk731292.resizeNWSECursor]: require
+        }), (0, l.jsx)("div", {
+          className: s()(f.resizeSouthEast, {
+            [f.resizeNWSECursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH_EAST")
         })]
@@ -356,12 +356,12 @@ class C extends(i = Chunk473749.Component) {
         anchor: t
       },
       setLockExtras: n
-    } = this, i = null == module ? true : module(require);
-    return null != i ? (0, Chunk54381.jsx)("div", {
+    } = this, i = null == e ? true : e(n);
+    return null != i ? (0, l.jsx)("div", {
       className: s()({
-        [Chunk731292.extras]: true,
-        [Chunk731292.extrasBottomOriented]: null != exports.bottom,
-        [Chunk731292.extrasRightOriented]: null != exports.right
+        [f.extras]: true,
+        [f.extrasBottomOriented]: null != t.bottom,
+        [f.extrasRightOriented]: null != t.right
       }),
       children: i
     }) : null
@@ -380,14 +380,14 @@ class C extends(i = Chunk473749.Component) {
         operation: o
       }
     } = this;
-    return g({}, exports, {
-      minWidth: require.width,
-      minHeight: require.height,
+    return g({}, t, {
+      minWidth: n.width,
+      minHeight: n.height,
       borderWidth: r,
       padding: i,
-      borderRadius: Chunk54381 + r + i,
-      zIndex: null != Chunk473749 ? 1e3 : true,
-      visibility: module ? "hidden" : true
+      borderRadius: l + r + i,
+      zIndex: null != o ? 1e3 : true,
+      visibility: e ? "hidden" : true
     })
   }
   renderChildren() {
@@ -407,17 +407,17 @@ class C extends(i = Chunk473749.Component) {
         anchorLeftOverride: u
       }
     } = this;
-    return module({
+    return e({
       dragStart: this.handleOperationStart,
       dragOperation: this.state.operation,
-      anchorTop: null != s ? s : null != Chunk473749.top,
-      anchorLeft: null != Chunk554916 ? Chunk554916 : null != Chunk473749.left,
-      size: Chunk54381,
-      padding: require,
+      anchorTop: null != s ? s : null != o.top,
+      anchorLeft: null != u ? u : null != o.left,
+      size: l,
+      padding: n,
       borderWidth: i,
-      setLockExtras: Chunk120356,
+      setLockExtras: a,
       locked: r,
-      hidden: exports,
+      hidden: t,
       showEmpty: this.state.lockExtras
     })
   }
@@ -435,18 +435,18 @@ class C extends(i = Chunk473749.Component) {
         lockExtras: a
       }
     } = this;
-    return (0, Chunk54381.jsxs)(Chunk554916.animated.div, {
+    return (0, l.jsxs)(u.animated.div, {
       ref: this.ref,
       style: this.getInlineStyles(),
       className: s()({
-        [Chunk731292.wrapper]: true,
-        [Chunk731292.operation]: Chunk473749,
-        [Chunk731292.unlocked]: !require,
-        [Chunk731292.forceShowExtras]: r && require,
-        [Chunk731292.lockExtras]: Chunk120356
+        [f.wrapper]: true,
+        [f.operation]: o,
+        [f.unlocked]: !n,
+        [f.forceShowExtras]: r && n,
+        [f.lockExtras]: a
       }, i),
       onMouseDown: this.handleMouseDown,
-      onClick: null != module ? () => module(exports) : true,
+      onClick: null != e ? () => e(t) : true,
       children: [this.renderChildren(), this.renderResizeHandles(), this.renderExtras()]
     })
   }

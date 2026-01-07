@@ -248,7 +248,7 @@ function K(e) {
 }
 
 function z() {
-  for (let e of (A = {}, N = new Set, Y(null), Object.values(Chunk430824.Z.getGuildIds()))) Y(module)
+  for (let e of (A = {}, N = new Set, Y(null), Object.values(_.Z.getGuildIds()))) Y(e)
 }
 
 function q(e) {
@@ -276,8 +276,8 @@ function X(e) {
 }
 
 function J() {
-  let e = Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId());
-  return null != module && V(module.getGuildId(), [module.id])
+  let e = p.Z.getChannel(E.Z.getChannelId());
+  return null != e && V(e.getGuildId(), [e.id])
 }
 
 function $(e) {
@@ -422,7 +422,7 @@ function eh(e) {
 }
 
 function eg() {
-  for (let e in A) A[module].ncMentionCount = 0
+  for (let e in A) A[e].ncMentionCount = 0
 }
 
 function eE(e) {
@@ -443,11 +443,11 @@ function eb(e) {
 }
 class ey extends Chunk750041.Z {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk944486.Z, Chunk306680.ZP, Chunk496675.Z, Chunk314897.default, Chunk594174.default, Chunk9156.ZP, Chunk601070.Z, Chunk569471.Z, Chunk455199.ZP)
+    this.waitFor(p.Z, E.Z, g.ZP, h.Z, f.default, y.default, b.ZP, s.Z, l.Z, o.ZP)
   }
   loadCache() {
     let e = this.readSnapshot(ey.LATEST_SNAPSHOT_VERSION);
-    null != module && (A = module.guilds, N = new Set(module.unreadGuilds))
+    null != e && (A = e.guilds, N = new Set(e.unreadGuilds))
   }
   takeSnapshot() {
     return {
@@ -512,7 +512,7 @@ class ey extends Chunk750041.Z {
   getPrivateChannelMentionCount() {
     var e;
     let t = A[C];
-    return null != (e = null == exports ? true : exports.highImportanceMentionCount) ? module : 0
+    return null != (e = null == t ? true : t.highImportanceMentionCount) ? e : 0
   }
   getMentionCountForPrivateChannel(e) {
     var t, n;

@@ -112,7 +112,7 @@ function y(e, t) {
 }
 
 function O() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })
 }
@@ -197,28 +197,28 @@ function x(e) {
   }, e)), E(m.QP.PRESET)
 }
 async function L() {
-  if (null == Chunk621853.Z.applicationWidgetApplicationConfigs || !(Chunk621853.Z.applicationWidgetApplicationConfigs.length > 0)) {
-    Chunk570140.Z.dispatch({
+  if (null == f.Z.applicationWidgetApplicationConfigs || !(f.Z.applicationWidgetApplicationConfigs.length > 0)) {
+    a.Z.dispatch({
       type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_START"
     });
     try {
-      let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS,
+      let e = await i.tn.get({
+        url: _.ANM.USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS,
         rejectWithError: true
       });
-      Chunk570140.Z.dispatch({
+      a.Z.dispatch({
         type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_SUCCESS",
-        applicationConfigs: module.body.application_configs
+        applicationConfigs: e.body.application_configs
       })
     } catch (e) {
-      throw Chunk570140.Z.dispatch({
+      throw a.Z.dispatch({
         type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_FAILURE"
-      }), Chunk960048.Z.captureException(module), module
+      }), d.Z.captureException(e), e
     }
   }
 }
 let j = (0, Chunk442837.Kb)(Chunk621853.Z, {
   getQueryId: Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_CONFIGS,
-  get: () => Chunk621853.Z.applicationWidgetApplicationConfigs,
+  get: () => f.Z.applicationWidgetApplicationConfigs,
   load: () => L()
 })

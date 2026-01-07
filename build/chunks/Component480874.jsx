@@ -29,34 +29,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk932376 = require("./932376.js");
 
 function N() {
-  let e = Chunk473749.useRef(null),
-    t = (0, Chunk727813.Z)(),
-    n = (0, Chunk355350.w)(),
-    l = (0, Chunk26373.V)(),
-    N = (0, Chunk183126.N)(),
-    j = (0, Chunk209613.Z)("message-requests-spam-list"),
+  let e = i.useRef(null),
+    t = (0, E.Z)(),
+    n = (0, O.w)(),
+    l = (0, h.V)(),
+    N = (0, u.N)(),
+    j = (0, p.Z)("message-requests-spam-list"),
     {
       channelId: P
-    } = (0, Chunk488634._)(),
-    x = Chunk473749.useCallback(() => {
-      (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["EDYbS+"]), Chunk481060.ToastType.FAILURE))
+    } = (0, _._)(),
+    x = i.useCallback(() => {
+      (0, c.showToast)((0, c.createToast)(S.intl.string(S.t["EDYbS+"]), c.ToastType.FAILURE))
     }, []),
     {
       rejectAll: A
-    } = (0, Chunk486622.m)({
+    } = (0, b.m)({
       onError: x
     }),
-    Z = Chunk473749.useCallback(() => {
-      A(exports.map(e => e.channel.id))
-    }, [exports, A]);
-  (0, Chunk493773.ZP)(() => {
-    Chunk626135.default.track(Chunk981631.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
-      num_spam_message_requests: require
-    }), Chunk797614.Z.increment({
-      name: Chunk286379.V.SPAM_MESSAGE_REQUEST_VIEW
+    Z = i.useCallback(() => {
+      A(t.map(e => e.channel.id))
+    }, [t, A]);
+  (0, d.ZP)(() => {
+    m.default.track(C.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
+      num_spam_message_requests: n
+    }), g.Z.increment({
+      name: s.V.SPAM_MESSAGE_REQUEST_VIEW
     })
   });
-  let w = Chunk473749.useCallback(e => {
+  let w = i.useCallback(e => {
       var n, i;
       let {
         row: o
@@ -71,31 +71,31 @@ function N() {
         user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [exports, Chunk120356, P]),
-    L = Chunk473749.useCallback(() => (0, Chunk54381.jsxs)(Chunk82295.Z, {
-      className: Chunk932376.sectionTitle,
-      children: [Chunk388032.intl.format(Chunk388032.t.C79Edh, {
-        count: require
-      }), N && require > 0 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk932376.titleDivider,
+    }, [t, l, P]),
+    L = i.useCallback(() => (0, r.jsxs)(f.Z, {
+      className: T.sectionTitle,
+      children: [S.intl.format(S.t.C79Edh, {
+        count: n
+      }), N && n > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(c.Text, {
+          className: T.titleDivider,
           variant: "eyebrow",
           color: "text-default",
           tag: "span",
           children: "•"
-        }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
+        }), (0, r.jsx)(c.Avr, {
           textVariant: "text-sm/normal",
-          text: Chunk388032.intl.string(Chunk388032.t.p6t7RC),
+          text: S.intl.string(S.t.p6t7RC),
           onClick: Z,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RC)
+          "aria-label": S.intl.string(S.t.p6t7RC)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [require, Z, N]);
-  return 0 === exports.length ? (0, Chunk54381.jsx)(Chunk307947.Z, {
-    section: Chunk687683.pS.SPAM
-  }) : (0, Chunk54381.jsx)(Chunk91192.bG, {
+    }, "message-requests-spam-title"), [n, Z, N]);
+  return 0 === t.length ? (0, r.jsx)(v.Z, {
+    section: I.pS.SPAM
+  }) : (0, r.jsx)(o.bG, {
     navigator: j,
-    children: (0, Chunk54381.jsx)(Chunk91192.SJ, {
+    children: (0, r.jsx)(o.SJ, {
       children: n => {
         var {
           ref: i,

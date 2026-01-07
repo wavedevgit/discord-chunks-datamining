@@ -25,7 +25,7 @@ class i extends(n = Chunk473749.PureComponent) {
         data: o,
         track: c,
         trackOutboundLink: d
-      } = require,
+      } = a,
       u = function(e, t) {
         if (null == e) return {};
         var a, n, r = function(e, t) {
@@ -40,8 +40,8 @@ class i extends(n = Chunk473749.PureComponent) {
           for (n = 0; n < s.length; n++) a = s[n], !(t.indexOf(a) >= 0) && Object.prototype.propertyIsEnumerable.call(e, a) && (r[a] = e[a])
         }
         return r
-      }(require, ["tag", "children", "eventName", "data", "track", "trackOutboundLink"]);
-    return null == n ? null : (0, Chunk54381.jsx)(n, (e = function(e) {
+      }(a, ["tag", "children", "eventName", "data", "track", "trackOutboundLink"]);
+    return null == n ? null : (0, r.jsx)(n, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(a);
@@ -54,17 +54,17 @@ class i extends(n = Chunk473749.PureComponent) {
       return e
     }({}, u), t = t = {
       onClick: this.handleClick,
-      children: Chunk473749
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+      children: s
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var a = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var n = Object.getOwnPropertySymbols(e);
         a.push.apply(a, n)
       }
       return a
-    })(Object(exports)).forEach(function(a) {
+    })(Object(t)).forEach(function(a) {
       Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
-    }), module))
+    }), e))
   }
   constructor(...e) {
     super(...e), l(this, "handleClick", e => {

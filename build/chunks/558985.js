@@ -23,7 +23,7 @@ class d extends(r = Chunk473749.Component) {
   componentDidMount() {
     if (this.props.active) {
       let e = this.getVisibilityObserver();
-      module.observe(this, this.props.innerRef), this.isVisible = module.isVisible(this), this.props.onChange(this.isVisible)
+      e.observe(this, this.props.innerRef), this.isVisible = e.isVisible(this), this.props.onChange(this.isVisible)
     }
   }
   componentDidUpdate(e) {
@@ -39,16 +39,16 @@ class d extends(r = Chunk473749.Component) {
       rootMargin: e,
       threshold: t
     } = this.props;
-    return "".concat(this.elementId, " ").concat(module, " ").concat(exports)
+    return "".concat(this.elementId, " ").concat(e, " ").concat(t)
   }
   getVisibilityObserver() {
     let e = this.getVisibilityObserverId(),
-      t = u.get(module);
-    if (!exports) throw Error("Visibility sensor with id ".concat(module, " not found."));
-    return exports
+      t = u.get(e);
+    if (!t) throw Error("Visibility sensor with id ".concat(e, " not found."));
+    return t
   }
   render() {
-    return Chunk473749.Children.only(this.props.children)
+    return i.Children.only(this.props.children)
   }
   constructor(e) {
     super(e), s(this, "elementId", true), s(this, "isVisible", false);

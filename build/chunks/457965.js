@@ -3,7 +3,7 @@
 var Chunk480751 = require("./480751.js");
 module.exports = function() {
   try {
-    var e = Chunk480751(Object, "defineProperty");
-    return module({}, "", {}), module
+    var e = r(Object, "defineProperty");
+    return e({}, "", {}), e
   } catch (e) {}
 }()

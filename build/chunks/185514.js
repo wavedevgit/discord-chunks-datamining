@@ -19,33 +19,33 @@ var Chunk140492 = require("./140492.js"),
 let d = {
     binds: ["alt+down"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk140492.Z)(), false)
+    action: () => ((0, r.Z)(), false)
   },
   f = {
     binds: ["alt+up"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk140492.Z)(false), false)
+    action: () => ((0, r.Z)(false), false)
   },
   p = {
     binds: ["mod+alt+right"],
     comboKeysBindGlobal: true,
     action() {
       let e;
-      if (null != Chunk914010.Z.getGuildId()) e = Chunk981631.ME;
+      if (null != l.Z.getGuildId()) e = u.ME;
       else {
-        let t = Chunk914010.Z.getLastSelectedGuildId();
-        null != exports && (e = exports, (0, Chunk475468.K)(exports, Chunk944486.Z.getChannelId(exports)))
+        let t = l.Z.getLastSelectedGuildId();
+        null != t && (e = t, (0, i.K)(t, s.Z.getChannelId(t)))
       }
-      return null != module && (0, Chunk769654.X)(module), false
+      return null != e && (0, o.X)(e), false
     }
   },
   _ = {
     binds: (0, Chunk358085.isMac)() ? ["mod+["] : ["alt+left"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk891304.Hm)("keybind"), false)
+    action: () => ((0, a.Hm)("keybind"), false)
   },
   m = {
     binds: (0, Chunk358085.isMac)() ? ["mod+]"] : ["alt+right"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk891304.TL)("keybind"), false)
+    action: () => ((0, a.TL)("keybind"), false)
   }

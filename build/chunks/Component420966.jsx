@@ -19,9 +19,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk235778 = require("./235778.js");
 
 function b() {
-  let [e, t] = Chunk473749.useState(true);
+  let [e, t] = i.useState(true);
   return {
-    scrolledToTop: module,
+    scrolledToTop: e,
     handleScroll: function(e) {
       t(0 === e.currentTarget.scrollTop)
     }

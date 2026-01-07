@@ -16,23 +16,23 @@ var Chunk54381 = require("./54381.js"),
 let g = () => {
   let {
     guild: e
-  } = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps()), [t, n] = Chunk473749.useState(0);
-  switch (Chunk473749.useEffect(() => {
-      null != module && Chunk570140.Z.wait(() => {
-        (0, Chunk524329.RM)(module.id).then(() => {
-          require("./1.js")
+  } = (0, l.e7)([d.Z], () => d.Z.getProps()), [t, n] = i.useState(0);
+  switch (i.useEffect(() => {
+      null != e && s.Z.wait(() => {
+        (0, o.RM)(e.id).then(() => {
+          n(1)
         })
       })
-    }, [module]), exports) {
+    }, [e]), t) {
     case 0:
-      return (0, Chunk54381.jsx)(Chunk481060.$jN, {
-        type: Chunk481060.$jN.Type.SPINNING_CIRCLE
+      return (0, r.jsx)(a.$jN, {
+        type: a.$jN.Type.SPINNING_CIRCLE
       });
     case 1:
-      return (0, Chunk54381.jsx)(Chunk263155.Z, {
-        guild: module
+      return (0, r.jsx)(u.Z, {
+        guild: e
       });
     default:
-      return (0, Chunk823379.vE)(exports)
+      return (0, c.vE)(t)
   }
 }

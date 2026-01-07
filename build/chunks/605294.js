@@ -509,8 +509,8 @@ class M {
   clone() {
     var e, t;
     let n = new M;
-    for (let r of this.traverse()) require.addTreeNode(Chunk159447.scopeRef, null != (t = null == (e = Chunk159447.parent) ? true : module.scopeRef) ? exports : null, Chunk159447.nodeToRestore);
-    return require
+    for (let r of this.traverse()) n.addTreeNode(r.scopeRef, null != (t = null == (e = r.parent) ? true : e.scopeRef) ? t : null, r.nodeToRestore);
+    return n
   }
   constructor() {
     this.fastMap = new Map, this.root = new k({

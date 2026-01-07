@@ -148,20 +148,20 @@ function Q(e, t, n, r) {
 }
 
 function X() {
-  let e = new Set(Chunk594190.ZP.getRunningVerifiedApplicationIds()),
+  let e = new Set(p.ZP.getRunningVerifiedApplicationIds()),
     t = {},
     n = new Set,
-    r = Chunk594190.ZP.getGamesSeen(false, false).map(e => {
+    r = p.ZP.getGamesSeen(false, false).map(e => {
       let n = g.Z.getGameByGameData(e);
       return null != n ? (t[n.id] = e.lastFocused * I.Z.Millis.SECOND, n.id) : null
     }),
-    i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
-    a = [...r.map(r => Q(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, M) && (M = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(M).map(e => e.application).slice(0, L)), true)
+    i = Object.values(E.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(C.lm),
+    a = [...r.map(r => Q(r, n, t, e)).filter(C.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
+  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(a, M) && (M = a, N.isPlatformEmbedded && P.ZP.setSystemTrayApplications(V(M).map(e => e.application).slice(0, L)), true)
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk812206.Z, Chunk77498.Z, Chunk592745.Z, Chunk594190.ZP, Chunk417363.Z, Chunk941128.Z, Chunk283595.Z, Chunk230307.Z, Chunk246946.Z, Chunk757266.Z], X, 200), this.syncWith([Chunk799777.Z, Chunk706454.default], () => true)
+    this.syncWith([f.Z, g.Z, _.Z, p.ZP, v.Z, S.Z, E.Z, y.Z, b.Z, h.Z], X, 200), this.syncWith([O.Z, m.default], () => true)
   }
   get applicationFilterQuery() {
     return k
@@ -179,7 +179,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return H(this.libraryApplicationViewItems, k)
   }
   get sortedFilteredLibraryApplicationViewItems() {
-    return Y(this.filteredLibraryApplicationViewItems, Chunk799777.Z.sortKey, Chunk799777.Z.sortDirection, Chunk706454.default.locale)
+    return Y(this.filteredLibraryApplicationViewItems, O.Z.sortKey, O.Z.sortDirection, m.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
     return W(M)

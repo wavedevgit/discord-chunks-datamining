@@ -51,11 +51,11 @@ function c() {
   var e;
   let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
     n = arguments.length > 1 ? arguments[1] : true;
-  return l(o({}, require), {
+  return l(o({}, n), {
     tags: o({
       source: __OVERLAY__ ? "overlay" : "legacy-overlay",
-      overlayMethod: "".concat(null == exports ? null : Chunk837268.gl[null != exports ? exports : Chunk837268.gl.Disabled])
-    }, null != (e = null == require ? true : require.tags) ? module : {})
+      overlayMethod: "".concat(null == t ? null : i.gl[null != t ? t : i.gl.Disabled])
+    }, null != (e = null == n ? true : n.tags) ? e : {})
   })
 }
 

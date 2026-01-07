@@ -21,7 +21,7 @@ class u extends(a = Chunk442837.ZP.Store) {
   }
   get shouldFetch() {
     var e;
-    return Date.now() - (null != (e = c.lastFetchedAt) ? module : 0) > 3e5 && !c.isFetching
+    return Date.now() - (null != (e = c.lastFetchedAt) ? e : 0) > 3e5 && !c.isFetching
   }
   getAvatars() {
     return o

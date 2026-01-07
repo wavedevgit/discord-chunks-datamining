@@ -114,9 +114,9 @@ class U extends Chunk473749.PureComponent {
       },
       ref: a
     } = this;
-    if (module !== Chunk377108.EO.VIDEO || null == Chunk120356) return;
-    let o = Chunk473749.getElement();
-    o.oncanplay = this.handleCanPlay, o.src = exports, o.width = require, o.height = Chunk54381, Chunk120356.appendChild(o), this._video = o
+    if (e !== u.EO.VIDEO || null == a) return;
+    let o = i.getElement();
+    o.oncanplay = this.handleCanPlay, o.src = t, o.width = n, o.height = r, a.appendChild(o), this._video = o
   }
   componentDidUpdate(e) {
     let {
@@ -134,7 +134,7 @@ class U extends Chunk473749.PureComponent {
       imagePool: n,
       videoPool: r
     } = this.props;
-    null != module && (this._image = null, require.poolElement(module)), null != exports && (this._video = null, Chunk54381.poolElement(exports))
+    null != e && (this._image = null, n.poolElement(e)), null != t && (this._video = null, r.poolElement(t))
   }
   renderGIF() {
     let {
@@ -146,11 +146,11 @@ class U extends Chunk473749.PureComponent {
     } = this.props, {
       loaded: i
     } = this.state;
-    return Chunk473749 ? (0, Chunk54381.jsx)("img", {
-      src: k(module),
-      width: exports,
-      height: require,
-      className: Chunk83292.gif,
+    return i ? (0, r.jsx)("img", {
+      src: k(e),
+      width: t,
+      height: n,
+      className: S.gif,
       alt: ""
     }) : null
   }
@@ -166,19 +166,19 @@ class U extends Chunk473749.PureComponent {
       color: s,
       loaded: l
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
+    return (0, r.jsxs)(f.P3F, {
       tabIndex: false,
       innerRef: e => {
         this.ref = e
       },
-      className: Chunk83292.result,
-      "data-focused": Chunk120356,
+      className: S.result,
+      "data-focused": a,
       "data-selected": o,
       onClick: this.handleClick,
       style: T({
-        backgroundColor: l ? true : Chunk392711
-      }, Chunk473749),
-      children: [L(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
+        backgroundColor: l ? true : s
+      }, i),
+      children: [L(n) ? null : this.renderGIF(), null != t ? t(e) : null]
     })
   }
   constructor(e) {
@@ -213,7 +213,7 @@ class G extends Chunk473749.PureComponent {
       resultType: e,
       data: t
     } = this.props;
-    module === Chunk981631.wI2.FAVORITES && ((0, Chunk68405.t1)(Chunk981631.wI2.FAVORITES), (0, Chunk68405.hM)(exports, Chunk981631.wI2.FAVORITES, {
+    e === O.wI2.FAVORITES && ((0, p.t1)(O.wI2.FAVORITES), (0, p.hM)(t, O.wI2.FAVORITES, {
       limit: null
     }))
   }
@@ -258,20 +258,20 @@ class G extends Chunk473749.PureComponent {
     })
   }
   renderEmptyFavorites() {
-    return (0, Chunk54381.jsx)(Chunk481060.Ttm, {
-      className: Chunk83292.results,
+    return (0, r.jsx)(f.Ttm, {
+      className: S.results,
       fade: true,
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk83292.emptyHints,
-        children: [this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t["3gyw4Z"]), true), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.yThUi4)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.MeP0SF)), Array.from({
+      children: (0, r.jsxs)("div", {
+        className: S.emptyHints,
+        children: [this.renderEmptyFavorite(v.intl.string(v.t["3gyw4Z"]), true), this.renderEmptyFavorite(v.intl.string(v.t.yThUi4)), this.renderEmptyFavorite(v.intl.string(v.t.MeP0SF)), Array.from({
           length: 15
         }).map((e, t) => (0, r.jsx)(i.Fragment, {
           children: this.renderEmptyFavorite()
-        }, t)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t["5u99Xb"])), Array.from({
+        }, t)), this.renderEmptyFavorite(v.intl.string(v.t["5u99Xb"])), Array.from({
           length: 16
         }).map((e, t) => (0, r.jsx)(i.Fragment, {
           children: this.renderEmptyFavorite()
-        }, t)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.o6CLL4))]
+        }, t)), this.renderEmptyFavorite(v.intl.string(v.t.o6CLL4))]
       })
     })
   }
@@ -282,20 +282,20 @@ class G extends Chunk473749.PureComponent {
       query: n,
       resultType: i
     } = this.props;
-    return 0 === module.length && exports === require && Chunk473749 !== Chunk981631.wI2.TRENDING_GIFS ? Chunk473749 === Chunk981631.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, Chunk54381.jsx)(Chunk788911.Z, {
-      message: Chunk388032.intl.string(Chunk388032.t["5dX4UM"]),
-      className: Chunk83292.noResults
-    }) : (0, Chunk54381.jsx)(Chunk527429.Z, {
+    return 0 === e.length && t === n && i !== O.wI2.TRENDING_GIFS ? i === O.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, r.jsx)(m.Z, {
+      message: v.intl.string(v.t["5dX4UM"]),
+      className: S.noResults
+    }) : (0, r.jsx)(_.Z, {
       getItemGrid: this.getItemGrid,
       getCoordsMap: this.getCoordsMap,
       onFocus: this.handleFocus,
       onSelect: this.handleSelect,
-      children: (0, Chunk54381.jsx)(Chunk990233.Z, {
+      children: (0, r.jsx)(y.Z, {
         desiredItemWidth: 200,
         maxColumns: 8,
         children: this.renderContent
       })
-    }, exports)
+    }, t)
   }
   constructor(...e) {
     super(...e), I(this, "_masonryRef", i.createRef()), I(this, "prevResultQuery", null), I(this, "state", {
@@ -440,11 +440,11 @@ class G extends Chunk473749.PureComponent {
 function Z() {
   let {
     renderWindow: e
-  } = Chunk473749.useContext(Chunk728285.ZP), t = module.document, [n] = Chunk473749.useState(() => new Chunk944611.w(() => exports.createElement("img"), e => {
+  } = i.useContext(h.ZP), t = e.document, [n] = i.useState(() => new c.w(() => t.createElement("img"), e => {
     e.onload = null, e.src = ""
-  })), [r] = Chunk473749.useState(() => new Chunk944611.w(() => {
-    let e = exports.createElement("video");
-    return module.className = Chunk83292.gif, module.autoplay = true, module.loop = true, module.muted = true, module.preload = "auto", module.controls = false, module
+  })), [r] = i.useState(() => new c.w(() => {
+    let e = t.createElement("video");
+    return e.className = S.gif, e.autoplay = true, e.loop = true, e.muted = true, e.preload = "auto", e.controls = false, e
   }, e => {
     e.src = "", e.oncanplay = null;
     let {
@@ -453,8 +453,8 @@ function Z() {
     null != t && t.removeChild(e)
   }));
   return {
-    imagePool: require,
-    videoPool: Chunk54381
+    imagePool: n,
+    videoPool: r
   }
 }
 let F = function(e) {

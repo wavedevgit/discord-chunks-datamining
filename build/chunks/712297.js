@@ -54,14 +54,14 @@ function m(e, t) {
 }
 
 function h() {
-  let [e, t] = Chunk473749.useState({});
+  let [e, t] = r.useState({});
   return {
-    previewErrorsById: module,
-    setErrorById: Chunk473749.useCallback((e, n) => {
+    previewErrorsById: e,
+    setErrorById: r.useCallback((e, n) => {
       t(t => m(p({}, t), {
         [e]: n
       }))
-    }, [exports])
+    }, [t])
   }
 }
 

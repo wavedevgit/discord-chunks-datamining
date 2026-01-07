@@ -15,10 +15,10 @@ let s = "data-jump-section",
   c = Chunk473749.createContext(l);
 
 function u() {
-  let e = Chunk473749.useContext(c);
-  return Chunk473749.useMemo(() => ({
-    [s]: module
-  }), [module])
+  let e = r.useContext(c);
+  return r.useMemo(() => ({
+    [s]: e
+  }), [e])
 }
 
 function d(e) {

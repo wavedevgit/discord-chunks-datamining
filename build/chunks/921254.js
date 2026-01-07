@@ -25,14 +25,14 @@ var s = function() {
     function e(e) {
       this.id = e.id, this.position = e.position, this.velocity = e.velocity, this.rotation = e.rotation, this.dragCoefficient = e.dragCoefficient, this.airResistanceArea = e.airResistanceArea, this.size = e.size, this.opacity = e.opacity, this.spriteX = e.spriteX, this.spriteY = e.spriteY, this.spriteWidth = e.spriteWidth, this.spriteHeight = e.spriteHeight, this._lastUpdatedAt = Date.now()
     }
-    return module.prototype.getNewForces = function(e, t) {
+    return e.prototype.getNewForces = function(e, t) {
       var n = e.wind * t,
         r = -e.gravity * t;
       return {
         x: n + o(this.dragCoefficient.x, this.velocity.x, this.airResistanceArea.x, e.density),
         y: r + o(this.dragCoefficient.y, this.velocity.y, this.airResistanceArea.y, e.density)
       }
-    }, module.prototype.update = function(e) {
+    }, e.prototype.update = function(e) {
       var t = Date.now(),
         n = (t - this._lastUpdatedAt) / 100;
       this.rotation.update(n), this.dragCoefficient.update(n);
@@ -40,7 +40,7 @@ var s = function() {
         i = r.x,
         a = r.y;
       this.velocity.update(n), this.velocity.x += i, this.velocity.y += a, this.position.update(n), this.position.x += this.velocity.x * n, this.position.y += this.velocity.y * n, this.size.update(n), this.opacity.update(n), this.opacity.value = Math.max(this.opacity.value, 0), this._lastUpdatedAt = t
-    }, module.prototype.previewPositionUpdate = function(e, t) {
+    }, e.prototype.previewPositionUpdate = function(e, t) {
       var n = t / 100,
         r = this.velocity.previewUpdate(n),
         i = this.getNewForces(e, n),
@@ -49,25 +49,25 @@ var s = function() {
       r.x += a, r.y += o;
       var s = this.position.previewUpdate(n);
       return s.x += r.x * n, s.y += r.y * n, s
-    }, module.prototype.draw = function(e, t) {
+    }, e.prototype.draw = function(e, t) {
       t.save(), t.globalAlpha = this.opacity.value, t.setTransform((new DOMMatrix).translateSelf(this.position.x * n.g.devicePixelRatio, this.position.y * n.g.devicePixelRatio).rotateSelf(this.rotation.x, this.rotation.y, this.rotation.z)), t.drawImage(e, this.spriteX, this.spriteY, this.spriteWidth, this.spriteHeight, -this.width / 2 * n.g.devicePixelRatio, -this.height / 2 * n.g.devicePixelRatio, this.width * n.g.devicePixelRatio, this.height * n.g.devicePixelRatio), t.restore()
-    }, module.prototype.shouldDestroy = function(e, t) {
+    }, e.prototype.shouldDestroy = function(e, t) {
       return this.opacity.value < 0 || t.gravity >= 0 && this.velocity.y < 0 && this.position.y + this.height < 0 || t.gravity <= 0 && this.velocity.y > 0 && this.position.y - this.height > e.height || t.wind >= 0 && this.velocity.x > 0 && this.position.x - this.width > e.width || t.wind <= 0 && this.velocity.x < 0 && this.position.x + this.width < 0
-    }, Object.defineProperty(module.prototype, "width", {
+    }, Object.defineProperty(e.prototype, "width", {
       get: function() {
         return this.size.x
       },
       enumerable: false,
       configurable: true
-    }), Object.defineProperty(module.prototype, "height", {
+    }), Object.defineProperty(e.prototype, "height", {
       get: function() {
         return this.size.y
       },
       enumerable: false,
       configurable: true
-    }), module.prototype.addForce = function(e) {
+    }), e.prototype.addForce = function(e) {
       this.velocity.x += e.x, this.velocity.y += e.y
-    }, module
+    }, e
   }(),
   l = {
     velocity: {
@@ -234,14 +234,14 @@ var m = function(e) {
     function e(e, t, n) {
       this._x = e, this._y = n ? e : t
     }
-    return module.prototype.update = function(e) {
+    return e.prototype.update = function(e) {
       this._x.update(e), this._y.update(e)
-    }, module.prototype.previewUpdate = function(e) {
+    }, e.prototype.previewUpdate = function(e) {
       return {
         x: this._x.previewUpdate(e),
         y: this._y.previewUpdate(e)
       }
-    }, Object.defineProperty(module.prototype, "x", {
+    }, Object.defineProperty(e.prototype, "x", {
       get: function() {
         return this._x.value
       },
@@ -250,7 +250,7 @@ var m = function(e) {
       },
       enumerable: false,
       configurable: true
-    }), Object.defineProperty(module.prototype, "y", {
+    }), Object.defineProperty(e.prototype, "y", {
       get: function() {
         return this._y.value
       },
@@ -259,7 +259,7 @@ var m = function(e) {
       },
       enumerable: false,
       configurable: true
-    }), module
+    }), e
   }(),
   g = function(e) {
     function t(t, n, r, i) {
@@ -508,18 +508,18 @@ function P(e, t, n, r, i) {
 }
 
 function R() {
-  var e = Chunk473749.useRef(false),
-    t = Chunk473749.useRef({}),
-    n = Chunk473749.useCallback(function(e) {
+  var e = r.useRef(false),
+    t = r.useRef({}),
+    n = r.useCallback(function(e) {
       for (var n in t.current) t.current[n](e)
     }, []);
-  return Chunk473749.useEffect(function() {
+  return r.useEffect(function() {
     return function() {
-      return require(false)
+      return n(false)
     }
-  }, [require]), Chunk473749.useMemo(function() {
+  }, [n]), r.useMemo(function() {
     return {
-      isReady: module.current,
+      isReady: e.current,
       addReadyListener: function(n) {
         var r = (0, i.Z)();
         return t.current[r] = n, e.current && n(e.current), r
@@ -531,7 +531,7 @@ function R() {
         e.current = t, n(t)
       }
     }
-  }, [require])
+  }, [n])
 }
 var w = Chunk473749.forwardRef(function(e, t) {
     var o = e.className,

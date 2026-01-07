@@ -23,8 +23,8 @@ let o = false,
   });
 
 function l() {
-  let e = (0, Chunk748521.F)()((0, Chunk690775.XR)(e => s)),
-    t = () => module.getState(),
+  let e = (0, i.F)()((0, r.XR)(e => s)),
+    t = () => e.getState(),
     n = (t, n, r) => {
       (0, a.j)(() => e.setState({
         inspectedExpressionPosition: {
@@ -50,14 +50,14 @@ function l() {
       }))
     },
     u = () => {
-      (0, Chunk731965.j)(() => module.setState(s))
+      (0, a.j)(() => e.setState(s))
     },
     d = (t, n) => e.subscribe(t, n);
   return {
-    useStore: module,
-    getState: exports,
+    useStore: e,
+    getState: t,
     subscribe: d,
-    setInspectedExpressionPosition: require,
+    setInspectedExpressionPosition: n,
     setActiveCategoryIndex: o,
     setSearchPlaceholder: l,
     resetStoreState: u,

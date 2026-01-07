@@ -11,16 +11,16 @@ var Chunk473749 = require("./473749.js"),
   Chunk695676 = require("./695676.js");
 
 function l() {
-  let e = (0, Chunk442837.e7)([Chunk541099.Z], () => Chunk541099.Z.initialState(), []),
-    t = (0, Chunk835473.q)(null == module ? true : module.applicationId);
-  return Chunk473749.useMemo(() => {
-    if (null == module) return;
+  let e = (0, i.e7)([o.Z], () => o.Z.initialState(), []),
+    t = (0, a.q)(null == e ? true : e.applicationId);
+  return r.useMemo(() => {
+    if (null == e) return;
     let n = [{
-      type: Chunk695676.gc.HOME
+      type: s.gc.HOME
     }];
-    return null != module.applicationId && null != exports && require.push({
-      type: Chunk695676.gc.APPLICATION,
-      application: exports
-    }), require
-  }, [module, exports])
+    return null != e.applicationId && null != t && n.push({
+      type: s.gc.APPLICATION,
+      application: t
+    }), n
+  }, [e, t])
 }

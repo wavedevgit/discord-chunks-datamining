@@ -36,7 +36,7 @@ function I(e) {
 
 function Z() {
   if (!v) returnfalse;
-  let e = Chunk592125.Z.getChannel(_);
+  let e = h.Z.getChannel(_);
   if (0 === x.trim().length) return null != i && i.clearQuery(), E = function(e) {
     let t = b.Z.getFriendIDs(),
       n = C.default.getCurrentUser();
@@ -47,12 +47,12 @@ function Z() {
         comparator: f.ZP.getName(n)
       }), e
     }, []).sort(N)
-  }(module), true;
-  let t = null != module ? module.recipients : [];
+  }(e), true;
+  let t = null != e ? e.recipients : [];
   if (null != i) {
     var n;
-    let e = Chunk594174.default.getCurrentUser(),
-      r = null != (n = null == module ? true : module.isStaff()) && require;
+    let e = C.default.getCurrentUser(),
+      r = null != (n = null == e ? true : e.isStaff()) && n;
     i.setQuery({
       query: x,
       filters: {
@@ -60,23 +60,23 @@ function Z() {
         staff: r,
         provisional: false
       },
-      blacklist: exports,
+      blacklist: t,
       boosters: function() {
-        let e = Chunk580005.Z.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof d.mn && e.isDM()),
-          t = Math.max(...module.map(e => {
+        let e = g.Z.getFrequentlyWithoutFetchingLatest().filter(e => e instanceof d.mn && e.isDM()),
+          t = Math.max(...e.map(e => {
             let {
               id: t
             } = e;
             return g.Z.getScoreWithoutFetchingLatest(t)
           })),
           n = {};
-        return module.forEach(e => {
+        return e.forEach(e => {
           let i = g.Z.getScoreWithoutFetchingLatest(e.id),
             r = e.getRecipientId(),
             l = .2 * !!b.Z.isFriend(r),
             a = .1 * (null != h.Z.getDMFromUserId(r));
           n[r] = 1 + i / t + l + a
-        }), require
+        }), n
       }()
     })
   }
@@ -86,7 +86,7 @@ function Z() {
 function T() {
   if (!v) returnfalse;
   let e = j;
-  return (j = Chunk699516.Z.getFriendCount() > 0) !== module
+  return (j = b.Z.getFriendCount() > 0) !== e
 }
 
 function N(e, t) {
@@ -120,7 +120,7 @@ function A(e) {
 }
 
 function w() {
-  return null != i && (i.destroy(), i = null), Chunk279779.Z.getUserSearchContext(A, 1e3)
+  return null != i && (i.destroy(), i = null), s.Z.getUserSearchContext(A, 1e3)
 }
 
 function M(e) {
@@ -138,7 +138,7 @@ function D() {
 }
 class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk480294.Z, Chunk353926.Z, Chunk580005.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
+    this.waitFor(h.Z, m.Z, c.Z, g.Z, b.Z, u.Z, C.default), this.syncWith([C.default, h.Z], Z), this.syncWith([b.Z], T)
   }
   getResults() {
     return E

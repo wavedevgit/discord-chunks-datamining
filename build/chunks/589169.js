@@ -9,15 +9,15 @@ var Chunk657871 = require("./657871.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.qs)(Chunk313789.n.CHAT_TEXT_BOX_MENTION_SUGGESTIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.uXQ2xT),
+  useTitle: () => r.intl.string(r.t.uXQ2xT),
   useValue: Chunk695346.HV.useSetting,
   setValue: Chunk695346.HV.updateSetting,
   usePredicate: () => {
     let {
       enabled: t
-    } = (0, Chunk657871.zM)("MentionSuggestionsSettings", {
+    } = (0, i.zM)("MentionSuggestionsSettings", {
       autoTrackExposure: false
     });
-    return module
+    return t
   }
 })

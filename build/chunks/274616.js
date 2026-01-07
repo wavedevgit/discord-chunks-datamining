@@ -15,11 +15,11 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js");
 let d = 50;
 async function f() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk283595.Z.entitledBranchIds;
-  if (!(0, Chunk804739.Q)() || 0 === module.length) return [];
-  let t = i().chunk(module, d);
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : l.Z.entitledBranchIds;
+  if (!(0, c.Q)() || 0 === e.length) return [];
+  let t = i().chunk(e, d);
   try {
-    let e = exports.map(async e => (await a.tn.post({
+    let e = t.map(async e => (await a.tn.post({
         url: u.ANM.APPLICATION_BRANCHES,
         body: {
           branch_ids: e
@@ -27,16 +27,16 @@ async function f() {
         oldFormErrors: true,
         rejectWithError: true
       })).body.map(s.Z.createFromServer)),
-      n = await Promise.all(module),
-      r = i().flatten(require);
-    return Chunk570140.Z.dispatch({
+      n = await Promise.all(e),
+      r = i().flatten(n);
+    return o.Z.dispatch({
       type: "APPLICATION_BRANCHES_FETCH_SUCCESS",
-      branches: Chunk392711
-    }), Chunk392711
+      branches: r
+    }), r
   } catch (t) {
-    return Chunk570140.Z.dispatch({
+    return o.Z.dispatch({
       type: "APPLICATION_BRANCHES_FETCH_FAIL",
-      branchIds: module
+      branchIds: e
     }), []
   }
 }

@@ -14,10 +14,10 @@ var Chunk481060 = require("./481060.js"),
 function a() {
   let {
     analyticsLocations: t
-  } = (0, Chunk906732.ZP)();
-  return [(0, Chunk54381.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk821564.Z)(module)
-  }, "input-mode-items"), (0, Chunk54381.jsxs)(Chunk481060.kSQ, {
-    children: [(0, Chunk453925.Z)(module), (0, Chunk632304.Z)(module)]
+  } = (0, i.ZP)();
+  return [(0, r.jsx)(l.kSQ, {
+    children: (0, u.Z)(t)
+  }, "input-mode-items"), (0, r.jsxs)(l.kSQ, {
+    children: [(0, o.Z)(t), (0, c.Z)(t)]
   }, "input-output")]
 }

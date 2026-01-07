@@ -10,17 +10,17 @@ var Chunk473749 = require("./473749.js"),
   Chunk131085 = require("./131085.js");
 
 function i() {
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-    t = (0, Chunk442837.e7)([Chunk905128.Z], () => {
+  let e = (0, a.e7)([s.Z], () => s.Z.getGuild()),
+    t = (0, a.e7)([o.Z], () => {
       var t;
-      return null == (t = Chunk905128.Z.getStateForGuild(null == module ? true : module.id)) ? true : exports.allPowerups
+      return null == (t = o.Z.getStateForGuild(null == e ? true : e.id)) ? true : t.allPowerups
     });
-  return (0, Chunk473749.useMemo)(() => {
-    let n = Chunk131085.QV.map(e => ({
+  return (0, r.useMemo)(() => {
+    let n = l.QV.map(e => ({
         kind: e
       })),
       r = [];
-    return (null == module ? true : module.features) == null || Object.keys(Chunk131085.Ct).forEach(a => {
+    return (null == e ? true : e.features) == null || Object.keys(l.Ct).forEach(a => {
       let s = l.Ct[a],
         o = l.AC[a],
         i = null == t ? true : t[o],
@@ -31,8 +31,8 @@ function i() {
         }));
       e.features.has(a) ? n.push(...d) : r.push(...d)
     }), {
-      unlockedBadges: require,
-      lockedBadges: Chunk473749
+      unlockedBadges: n,
+      lockedBadges: r
     }
-  }, [null == module ? true : module.features, exports])
+  }, [null == e ? true : e.features, t])
 }

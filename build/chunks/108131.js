@@ -35,11 +35,11 @@ e = require.nmd(module),
             i ^= 255 & e[a], i = (65535 & i) * 0x5bd1e995 + (((i >>> 16) * 0x5bd1e995 & 65535) << 16)
         }
         return i ^= i >>> 13, i = (65535 & i) * 0x5bd1e995 + (((i >>> 16) * 0x5bd1e995 & 65535) << 16), (i ^= i >>> 15) >>> 0
-      }, i.v3 = r, true !== module) module.exports = i;
+      }, i.v3 = r, true !== e) e.exports = i;
     else {
-      let e = exports.murmur;
+      let e = t.murmur;
       i.noConflict = function() {
-        return exports.murmur = module, i
-      }, exports.murmur = i
+        return t.murmur = e, i
+      }, t.murmur = i
     }
   }()

@@ -86,15 +86,15 @@ function L(e) {
 }
 
 function B() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk3083.ukTeenDisclaimer,
-    children: [(0, Chunk54381.jsx)(Chunk481060.d3s, {
+  return (0, r.jsxs)("div", {
+    className: R.ukTeenDisclaimer,
+    children: [(0, r.jsx)(s.d3s, {
       size: "xs"
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["7blcz6"]),
+    }), (0, r.jsx)(s.Text, {
+      "aria-label": Z.intl.string(Z.t["7blcz6"]),
       variant: "text-xs/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t["7blcz6"])
+      children: Z.intl.string(Z.t["7blcz6"])
     })]
   })
 }

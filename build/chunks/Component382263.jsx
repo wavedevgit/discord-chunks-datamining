@@ -45,7 +45,7 @@ let O = {
   }({}, e)),
   options: {
     isLargeModal: true,
-    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
+    useBreadcrumbLabel: () => v.intl.string(v.t["W685+b"])
   }
 };
 

@@ -25,12 +25,12 @@ function u(e) {
 function d() {
   let {
     ensureFresh: e = false
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = (0, Chunk261744.Z)() === Chunk293810.PY.SUBSCRIBED, n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getActiveGuildSubscriptions()), d = Chunk473749.useRef(false);
-  return Chunk473749.useEffect(() => {
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = (0, s.Z)() === l.PY.SUBSCRIBED, n = (0, i.e7)([o.Z], () => o.Z.getActiveGuildSubscriptions()), d = r.useRef(false);
+  return r.useEffect(() => {
     u({
-      ensureFresh: module,
-      hasRoleSubscriptions: exports,
+      ensureFresh: e,
+      hasRoleSubscriptions: t,
       hasFetched: d.current
-    }) && (d.current = true, Chunk355467.jg())
-  }, [module, exports]), null != require ? require : c
+    }) && (d.current = true, a.jg())
+  }, [e, t]), null != n ? n : c
 }

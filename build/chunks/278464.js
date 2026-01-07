@@ -9,12 +9,12 @@ var Chunk828700 = require("./828700.js"),
   Chunk981631 = require("./981631.js");
 
 function o() {
-  let e = (0, Chunk905423.Z)(e => e.guildId),
+  let e = (0, l.Z)(e => e.guildId),
     {
       pathname: t
-    } = (0, Chunk828700.TH)(),
-    n = exports.startsWith(Chunk981631.Z5c.GUILD_DISCOVERY) || exports.startsWith(Chunk981631.Z5c.GLOBAL_DISCOVERY),
-    o = exports.startsWith(Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION("")),
-    s = (0, Chunk370774.D)();
-  return null == module && !(require || o || s)
+    } = (0, r.TH)(),
+    n = t.startsWith(a.Z5c.GUILD_DISCOVERY) || t.startsWith(a.Z5c.GLOBAL_DISCOVERY),
+    o = t.startsWith(a.Z5c.GUILD_MEMBER_VERIFICATION("")),
+    s = (0, i.D)();
+  return null == e && !(n || o || s)
 }

@@ -172,7 +172,7 @@ var _ = function() {
       "function" == typeof t.dragDrop && ("INPUT" === t.tagName || "SELECT" === t.tagName || "TEXTAREA" === t.tagName || t.isContentEditable || (e.preventDefault(), t.dragDrop()))
     }), this.options = new s.r(n, o), this.actions = t.getActions(), this.monitor = t.getMonitor(), this.registry = t.getRegistry(), this.enterLeaveCounter = new r.e(this.isNodeInDocument)
   }
-  return f(module, [{
+  return f(e, [{
     key: "profile",
     value: function() {
       var e, t;
@@ -181,10 +181,10 @@ var _ = function() {
         sourcePreviewNodeOptions: this.sourcePreviewNodeOptions.size,
         sourceNodeOptions: this.sourceNodeOptions.size,
         sourceNodes: this.sourceNodes.size,
-        dragStartSourceIds: (null == (e = this.dragStartSourceIds) ? true : module.length) || 0,
+        dragStartSourceIds: (null == (e = this.dragStartSourceIds) ? true : e.length) || 0,
         dropTargetIds: this.dropTargetIds.length,
         dragEnterTargetIds: this.dragEnterTargetIds.length,
-        dragOverTargetIds: (null == (t = this.dragOverTargetIds) ? true : exports.length) || 0
+        dragOverTargetIds: (null == (t = this.dragOverTargetIds) ? true : t.length) || 0
       }
     }
   }, {
@@ -206,16 +206,16 @@ var _ = function() {
     key: "setup",
     value: function() {
       var e = this.rootElement;
-      if (true !== module) {
-        if (module.__isReactDndBackendSetUp) throw Error("Cannot have two HTML5 backends at the same time.");
-        module.__isReactDndBackendSetUp = true, this.addEventListeners(module)
+      if (true !== e) {
+        if (e.__isReactDndBackendSetUp) throw Error("Cannot have two HTML5 backends at the same time.");
+        e.__isReactDndBackendSetUp = true, this.addEventListeners(e)
       }
     }
   }, {
     key: "teardown",
     value: function() {
       var e, t = this.rootElement;
-      true !== exports && (exports.__isReactDndBackendSetUp = false, this.removeEventListeners(this.rootElement), this.clearCurrentDragSourceNode(), this.asyncEndDragFrameId && (null == (e = this.window) || module.cancelAnimationFrame(this.asyncEndDragFrameId)))
+      true !== t && (t.__isReactDndBackendSetUp = false, this.removeEventListeners(this.rootElement), this.clearCurrentDragSourceNode(), this.asyncEndDragFrameId && (null == (e = this.window) || e.cancelAnimationFrame(this.asyncEndDragFrameId)))
     }
   }, {
     key: "connectDragPreview",
@@ -274,10 +274,10 @@ var _ = function() {
     key: "getCurrentSourceNodeOptions",
     value: function() {
       var e = this.monitor.getSourceId(),
-        t = this.sourceNodeOptions.get(module);
+        t = this.sourceNodeOptions.get(e);
       return c({
         dropEffect: this.altKeyPressed ? "copy" : "move"
-      }, exports || {})
+      }, t || {})
     }
   }, {
     key: "getCurrentDropEffect",
@@ -292,13 +292,13 @@ var _ = function() {
         anchorX: .5,
         anchorY: .5,
         captureDraggingState: false
-      }, this.sourcePreviewNodeOptions.get(module) || {})
+      }, this.sourcePreviewNodeOptions.get(e) || {})
     }
   }, {
     key: "isDraggingNativeItem",
     value: function() {
       var e = this.monitor.getItemType();
-      return Object.keys(Chunk778882).some(function(t) {
+      return Object.keys(o).some(function(t) {
         return o[t] === e
       })
     }
@@ -324,7 +324,7 @@ var _ = function() {
       if (this.currentDragSourceNode) {
         if (this.currentDragSourceNode = null, this.rootElement) {
           var e;
-          null == (e = this.window) || module.clearTimeout(this.mouseMoveTimeoutTimer || true), this.rootElement.removeEventListener("mousemove", this.endDragIfSourceWasRemovedFromDOM, true)
+          null == (e = this.window) || e.clearTimeout(this.mouseMoveTimeoutTimer || true), this.rootElement.removeEventListener("mousemove", this.endDragIfSourceWasRemovedFromDOM, true)
         }
         return this.mouseMoveTimeoutTimer = null, true
       }
@@ -350,5 +350,5 @@ var _ = function() {
     value: function(e, t) {
       this.dropTargetIds.unshift(t)
     }
-  }]), module
+  }]), e
 }()

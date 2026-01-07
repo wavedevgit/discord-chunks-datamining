@@ -104,29 +104,29 @@ function v(e) {
 
 function m() {
   return v([{
-    variant: Chunk531578.$7.SELF,
-    value: Chunk531578.T_.COULD_NOT_CONNECT,
-    label: Chunk388032.intl.string(Chunk40207.default.gMHKDJ)
+    variant: o.$7.SELF,
+    value: o.T_.COULD_NOT_CONNECT,
+    label: u.intl.string(s.default.gMHKDJ)
   }, {
-    value: Chunk531578.T_.HIGH_TTC,
-    variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk40207.default.y06Ayn)
+    value: o.T_.HIGH_TTC,
+    variant: o.$7.SELF,
+    label: u.intl.string(s.default.y06Ayn)
   }, {
-    value: Chunk531578.T_.HIGH_LATENCY,
-    variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk40207.default.y5k8Jq)
+    value: o.T_.HIGH_LATENCY,
+    variant: o.$7.SELF,
+    label: u.intl.string(s.default.y5k8Jq)
   }, {
-    value: Chunk531578.T_.ROBOT_VOICE,
-    variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk40207.default.f2914v)
+    value: o.T_.ROBOT_VOICE,
+    variant: o.$7.SOMEONE,
+    label: u.intl.string(s.default.f2914v)
   }, {
-    value: Chunk531578.T_.DESYNC,
-    variant: Chunk531578.$7.UNSPECIFIED,
-    label: Chunk388032.intl.string(Chunk40207.default["zk+QL1"])
+    value: o.T_.DESYNC,
+    variant: o.$7.UNSPECIFIED,
+    label: u.intl.string(s.default["zk+QL1"])
   }, {
-    value: Chunk531578.T_.CUTTING,
-    variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk40207.default.K5vYQA)
+    value: o.T_.CUTTING,
+    variant: o.$7.SOMEONE,
+    label: u.intl.string(s.default.K5vYQA)
   }])
 }
 
@@ -192,29 +192,29 @@ function E(e) {
 
 function p() {
   return v([{
-    value: Chunk531578.ct.NO_VIDEO,
-    variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk40207.default["Bh+02d"])
+    value: o.ct.NO_VIDEO,
+    variant: o.$7.SELF,
+    label: u.intl.string(s.default["Bh+02d"])
   }, {
-    value: Chunk531578.ct.NO_VIDEO,
-    variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk40207.default["R+wqwU"])
+    value: o.ct.NO_VIDEO,
+    variant: o.$7.SOMEONE,
+    label: u.intl.string(s.default["R+wqwU"])
   }, {
-    value: Chunk531578.ct.FREEZING_OR_HITCHING,
-    variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk40207.default["8I/GUL"])
+    value: o.ct.FREEZING_OR_HITCHING,
+    variant: o.$7.SOMEONE,
+    label: u.intl.string(s.default["8I/GUL"])
   }, {
-    value: Chunk531578.ct.BLURRY_OR_PIXELATED,
-    variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk40207.default.k7Idoz)
+    value: o.ct.BLURRY_OR_PIXELATED,
+    variant: o.$7.SOMEONE,
+    label: u.intl.string(s.default.k7Idoz)
   }, {
-    value: Chunk531578.ct.UNABLE_TO_ENABLE_DEVICE,
-    variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk40207.default.QbC6La)
+    value: o.ct.UNABLE_TO_ENABLE_DEVICE,
+    variant: o.$7.SELF,
+    label: u.intl.string(s.default.QbC6La)
   }, {
-    value: Chunk531578.ct.DESYNC,
-    variant: Chunk531578.$7.UNSPECIFIED,
-    label: Chunk388032.intl.string(Chunk40207.default.vRDE5O)
+    value: o.ct.DESYNC,
+    variant: o.$7.UNSPECIFIED,
+    label: u.intl.string(s.default.vRDE5O)
   }])
 }
 
@@ -322,8 +322,8 @@ function g(e) {
 
 function _() {
   return v([{
-    value: Chunk531578.s_.TOXIC_OR_INAPPROPRIATE,
-    variant: Chunk531578.$7.OTHERS,
-    label: Chunk388032.intl.string(Chunk40207.default.PLBRzF)
+    value: o.s_.TOXIC_OR_INAPPROPRIATE,
+    variant: o.$7.OTHERS,
+    label: u.intl.string(s.default.PLBRzF)
   }])
 }

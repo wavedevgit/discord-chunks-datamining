@@ -71,125 +71,125 @@ function k(e, t) {
   }), e
 }
 let G = Chunk473749.memo(function() {
-  return (0, Chunk54381.jsxs)("svg", {
+  return (0, i.jsxs)("svg", {
     width: "184",
     height: "428",
     viewBox: "0 0 184 428",
-    className: Chunk668626.empty,
-    children: [(0, Chunk54381.jsx)("rect", {
+    className: D.empty,
+    children: [(0, i.jsx)("rect", {
       x: 40,
       y: 6,
       width: 144,
       height: 20,
       rx: 10
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 16,
       r: 16
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 50,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .9
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 60,
       r: 16,
       opacity: .9
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 94,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .8
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 104,
       r: 16,
       opacity: .8
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 138,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .7
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 148,
       r: 16,
       opacity: .7
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 182,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .6
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 192,
       r: 16,
       opacity: .6
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 226,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .5
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 236,
       r: 16,
       opacity: .5
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 270,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .4
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 280,
       r: 16,
       opacity: .4
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 314,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .3
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 324,
       r: 16,
       opacity: .3
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 358,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .2
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 368,
       r: 16,
       opacity: .2
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, i.jsx)("rect", {
       x: 40,
       y: 402,
       width: 144,
       height: 20,
       rx: 10,
       opacity: .1
-    }), (0, Chunk54381.jsx)("circle", {
+    }), (0, i.jsx)("circle", {
       cx: 16,
       cy: 412,
       r: 16,
@@ -223,7 +223,7 @@ class U extends(r = Chunk473749.Component) {
       selectedChannelId: e,
       homeLink: t
     } = this.props;
-    null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
+    null != e && null != t && t.indexOf(e) >= 0 && this.scrollToChannel(e), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
     return !(0, d.Z)(this.props, e, ["children"])
@@ -256,7 +256,7 @@ class U extends(r = Chunk473749.Component) {
     } = this.props, {
       preRenderedChildren: n
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk91192.SJ, {
+    return (0, i.jsx)(s.SJ, {
       children: r => {
         var {
           ref: l,

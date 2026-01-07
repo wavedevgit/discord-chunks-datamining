@@ -32,9 +32,9 @@ function d(e) {
 
 function f() {
   return null == a && (a = (async () => {
-    await Chunk128813.mX();
-    let e = Chunk128813.Qw();
-    module.installLogCallback(s, l, c, u, d), await module.initLibdiscore()
+    await i.mX();
+    let e = i.Qw();
+    e.installLogCallback(s, l, c, u, d), await e.initLibdiscore()
   })()), a
 }
 

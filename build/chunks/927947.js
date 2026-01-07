@@ -9,6 +9,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk782129 = require("./782129.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.k4)(Chunk313789.n.STREAMING_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.KDdjou),
-  buildLayout: () => [Chunk185016.n, Chunk782129.E]
+  useTitle: () => r.intl.string(r.t.KDdjou),
+  buildLayout: () => [s.n, u.E]
 })

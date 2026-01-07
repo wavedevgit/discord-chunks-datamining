@@ -17,17 +17,19 @@ function l() {
     analyticsLocation: l,
     analyticsLocations: c
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  return (0, Chunk473749.useCallback)(() => {
-    null != module && (0, Chunk18438.Fq)(module);
+  return (0, r.useCallback)(() => {
+    null != e && (0, i.Fq)(e);
     {
-      letChunk518596 = require("./518596.jsx");
-      exports(Chunk313789.n.PROFILE_PANEL, {
-        section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
-        subsection: null != module ? Chunk526761.NB.GUILD : Chunk526761.NB.USER_PROFILE,
+      let {
+        openUserSettings: t
+      } = n(518596);
+      t(a.n.PROFILE_PANEL, {
+        section: o.oAB.PROFILE_CUSTOMIZATION,
+        subsection: null != e ? s.NB.GUILD : s.NB.USER_PROFILE,
         analyticsLocation: l,
         analyticsLocations: c
       })
     }
-  }, [module, exports, l, c])
+  }, [e, t, l, c])
 }
 require("./778825.js"), require("./663389.js")

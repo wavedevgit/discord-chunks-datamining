@@ -7,5 +7,5 @@ var Chunk51596 = require("./51596.js");
 let i = {
   binds: ["mod+k", "mod+t"],
   comboKeysBindGlobal: true,
-  action: () => ((0, Chunk51596.$Z)("KEYBIND", ""), false)
+  action: () => ((0, r.$Z)("KEYBIND", ""), false)
 }

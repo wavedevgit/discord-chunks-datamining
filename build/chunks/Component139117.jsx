@@ -17,25 +17,25 @@ var Chunk120356 = require("./120356.js"),
   Chunk826529 = require("./826529.js");
 
 function p() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
-  switch (module) {
-    case Chunk565138.Z.Sizes.SMOL:
-      return Chunk826529.size16;
-    case Chunk565138.Z.Sizes.MINI:
-      return Chunk826529.size20;
-    case Chunk565138.Z.Sizes.SMALLER:
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : d.Z.Sizes.SMALLER;
+  switch (e) {
+    case d.Z.Sizes.SMOL:
+      return f.size16;
+    case d.Z.Sizes.MINI:
+      return f.size20;
+    case d.Z.Sizes.SMALLER:
     default:
-      return Chunk826529.size24
+      return f.size24
   }
 }
 
 function _() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
-  switch (module) {
-    case Chunk565138.Z.Sizes.SMOL:
-    case Chunk565138.Z.Sizes.MINI:
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : d.Z.Sizes.SMALLER;
+  switch (e) {
+    case d.Z.Sizes.SMOL:
+    case d.Z.Sizes.MINI:
       return "text-xxs/semibold";
-    case Chunk565138.Z.Sizes.SMALLER:
+    case d.Z.Sizes.SMALLER:
     default:
       return "text-xs/medium"
   }

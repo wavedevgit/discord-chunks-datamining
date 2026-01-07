@@ -17,9 +17,9 @@ function a(e, t, n) {
 }
 class o extends Chunk147913.Z {
   _initialize() {
-    if ((0, Chunk668757.X6)()) {
+    if ((0, r.X6)()) {
       let e = "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/bad-hash-delta");
-      (0, Chunk668757.pf)(module);
+      (0, r.pf)(e);
       return
     }
   }

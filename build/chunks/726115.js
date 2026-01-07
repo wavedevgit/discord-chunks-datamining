@@ -207,8 +207,8 @@ function v(e) {
 
 function S() {
   var e;
-  let [t] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [Chunk706454.default], n = (0, Chunk128449.Cf)(), r = exports.locale;
-  return (null != (e = require.find(e => e.code === r)) ? module : require[0]).code
+  let [t] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [i.default], n = (0, l.Cf)(), r = t.locale;
+  return (null != (e = n.find(e => e.code === r)) ? e : n[0]).code
 }
 async function I(e) {
   let {
@@ -231,5 +231,5 @@ async function I(e) {
 }
 
 function T() {
-  return (0, Chunk772848.Z)().replace(/-/g, "")
+  return (0, r.Z)().replace(/-/g, "")
 }

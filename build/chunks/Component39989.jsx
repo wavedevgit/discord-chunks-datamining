@@ -20,13 +20,13 @@ let m = [{
     private_browsing_perk: Chunk704088.U
   },
   f = () => {
-    let [e, t] = Chunk473749.useState("private_browsing_perk"), n = Chunk473749.useMemo(() => p[module], [module]);
-    return (0, Chunk54381.jsxs)("div", {
-      className: l()(Chunk663618.panel, Chunk902012.container),
-      children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
-        className: Chunk902012.tabBar,
-        selectedItem: module,
-        onItemSelect: exports,
+    let [e, t] = r.useState("private_browsing_perk"), n = r.useMemo(() => p[e], [e]);
+    return (0, a.jsxs)("div", {
+      className: l()(d.panel, u.container),
+      children: [(0, a.jsx)(o.njP, {
+        className: u.tabBar,
+        selectedItem: e,
+        onItemSelect: t,
         look: "brand",
         type: "top",
         orientation: "horizontal",
@@ -34,10 +34,10 @@ let m = [{
           id: e.id,
           children: e.name
         }, e.id))
-      }), (0, Chunk54381.jsx)(Chunk793030.w0Z, {
-        children: (0, Chunk54381.jsx)("div", {
-          className: Chunk902012.content,
-          children: (0, Chunk54381.jsx)(require, {})
+      }), (0, a.jsx)(s.w0Z, {
+        children: (0, a.jsx)("div", {
+          className: u.content,
+          children: (0, a.jsx)(n, {})
         })
       })]
     })

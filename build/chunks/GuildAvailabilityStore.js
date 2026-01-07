@@ -46,13 +46,13 @@ function m(e) {
 }
 class h extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z)
+    this.waitFor(s.Z)
   }
   isUnavailable(e) {
     return null != e && u.has(e)
   }
   get totalGuilds() {
-    return Chunk430824.Z.getGuildCount() + u.size
+    return s.Z.getGuildCount() + u.size
   }
   get totalUnavailableGuilds() {
     return u.size

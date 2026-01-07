@@ -19,42 +19,42 @@ let p = () => {
     message: e,
     channel: t,
     updateMessageText: n
-  } = (0, Chunk135102.C$)(), p = (0, Chunk442837.e7)([Chunk703558.Z], () => Chunk703558.Z.getDraft(module.channel_id, Chunk703558.d.ChannelMessage)), [g, h] = Chunk473749.useState(() => (0, Chunk752305.eK)(p)), {
+  } = (0, d.C$)(), p = (0, o.e7)([u.Z], () => u.Z.getDraft(e.channel_id, u.d.ChannelMessage)), [g, h] = a.useState(() => (0, s.eK)(p)), {
     textValue: m,
     richValue: y
   } = g;
-  (0, Chunk473749.useEffect)(() => {
-    require(m)
-  }, [require, m]);
-  let O = Chunk473749.useCallback((t, n, r) => {
+  (0, a.useEffect)(() => {
+    n(m)
+  }, [n, m]);
+  let O = a.useCallback((t, n, r) => {
       h({
         textValue: n,
         richValue: r
       }), l.Z.saveDraft(e.channel_id, n, u.d.ChannelMessage)
-    }, [module]),
-    [C, j] = Chunk473749.useState(false),
-    _ = Chunk473749.useCallback(() => j(true), []),
-    w = Chunk473749.useCallback(() => j(false), []);
-  (0, Chunk473749.useEffect)(() => () => {
-    Chunk430742.Z.clearDraft(module.channel_id, Chunk703558.d.ChannelMessage)
-  }, [module]);
+    }, [e]),
+    [C, j] = a.useState(false),
+    _ = a.useCallback(() => j(true), []),
+    w = a.useCallback(() => j(false), []);
+  (0, a.useEffect)(() => () => {
+    l.Z.clearDraft(e.channel_id, u.d.ChannelMessage)
+  }, [e]);
   let v = async () => ({
     shouldClear: true,
     shouldRefocus: false
   });
-  return (0, Chunk54381.jsx)(Chunk893718.ZP, {
-    innerClassName: Chunk31877.messageInput,
+  return (0, r.jsx)(i.ZP, {
+    innerClassName: f.messageInput,
     onChange: O,
-    placeholder: Chunk388032.intl.string(Chunk388032.t.ZroO3G),
-    channel: exports,
+    placeholder: b.intl.string(b.t.ZroO3G),
+    channel: t,
     textValue: m,
     richValue: y,
-    type: Chunk541716.Ie.SHARE_CUSTOM_CLIENT_THEME_INPUT,
+    type: c.Ie.SHARE_CUSTOM_CLIENT_THEME_INPUT,
     onBlur: w,
     onFocus: _,
     focused: C,
     onSubmit: v,
-    parentModalKey: Chunk135102.tj,
+    parentModalKey: d.tj,
     autoCompletePosition: "bottom",
     emojiPickerCloseOnModalOuterClick: true,
     disableThemedBackground: true

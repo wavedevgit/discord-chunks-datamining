@@ -106,7 +106,7 @@ e = require.nmd(module),
           if (r in t && e.call(this, t[r], r, t)) returntrue;
         returnfalse
       },
-      I = exports.momentProperties = [];
+      I = t.momentProperties = [];
 
     function T(e, t) {
       var n, r, i;
@@ -188,7 +188,7 @@ e = require.nmd(module),
     function G(e) {
       null != e && this.set(e)
     }
-    exports.suppressDeprecationWarnings = false, exports.deprecationHandler = null, b = Object.keys ? Object.keys : function(e) {
+    t.suppressDeprecationWarnings = false, t.deprecationHandler = null, b = Object.keys ? Object.keys : function(e) {
       var t, n = [];
       for (t in e) d(e, t) && n.push(t);
       return n
@@ -414,7 +414,7 @@ e = require.nmd(module),
     }
     eu("Y", 0, 0, function() {
       var e = this.year();
-      return module <= 9999 ? "" + module : "+" + module
+      return e <= 9999 ? "" + e : "+" + e
     }), eu(0, ["YY", 2], 0, function() {
       return this.year() % 100
     }), eu(0, ["YYYY", 4], 0, "year"), eu(0, ["YYYYY", 5], 0, "year"), eu(0, ["YYYYYY", 6, true], 0, "year"), $("year", "y"), er("year", 1), ex("Y", eA), ex("YY", ey, eh), ex("YYYY", eI, eE), ex("YYYYY", eT, eb), ex("YYYYYY", eT, eb), eU(["YYYYY", "YYYYYY"], eF), eU("YYYY", function(e, n) {
@@ -423,7 +423,7 @@ e = require.nmd(module),
       n[eF] = t.parseTwoDigitYear(e)
     }), eU("Y", function(e, t) {
       t[eF] = parseInt(e, 10)
-    }), exports.parseTwoDigitYear = function(e) {
+    }), t.parseTwoDigitYear = function(e) {
       return R(e) + (R(e) > 68 ? 1900 : 2e3)
     };
     var eJ = e0("FullYear", true);
@@ -554,9 +554,9 @@ e = require.nmd(module),
       var t, n, r = [],
         i = [],
         a = [];
-      for (t = 0; exports < 12; exports++) n = p([2e3, exports]), r.push(this.monthsShort(require, "")), i.push(this.months(require, "")), a.push(this.months(require, "")), a.push(this.monthsShort(require, ""));
-      for (r.sort(module), i.sort(module), a.sort(module), t = 0; exports < 12; exports++) r[exports] = eM(r[exports]), i[exports] = eM(i[exports]);
-      for (t = 0; exports < 24; exports++) a[exports] = eM(a[exports]);
+      for (t = 0; t < 12; t++) n = p([2e3, t]), r.push(this.monthsShort(n, "")), i.push(this.months(n, "")), a.push(this.months(n, "")), a.push(this.monthsShort(n, ""));
+      for (r.sort(e), i.sort(e), a.sort(e), t = 0; t < 12; t++) r[t] = eM(r[t]), i[t] = eM(i[t]);
+      for (t = 0; t < 24; t++) a[t] = eM(a[t]);
       this._monthsRegex = RegExp("^(" + a.join("|") + ")", "i"), this._monthsShortRegex = this._monthsRegex, this._monthsStrictRegex = RegExp("^(" + i.join("|") + ")", "i"), this._monthsShortStrictRegex = RegExp("^(" + r.join("|") + ")", "i")
     }
 
@@ -732,8 +732,8 @@ e = require.nmd(module),
         s = [],
         l = [],
         c = [];
-      for (t = 0; exports < 7; exports++) n = p([2e3, 1]).day(exports), r = this.weekdaysMin(require, ""), i = this.weekdaysShort(require, ""), a = this.weekdays(require, ""), o.push(r), s.push(i), l.push(a), c.push(r), c.push(i), c.push(a);
-      for (o.sort(module), s.sort(module), l.sort(module), c.sort(module), t = 0; exports < 7; exports++) s[exports] = eM(s[exports]), l[exports] = eM(l[exports]), c[exports] = eM(c[exports]);
+      for (t = 0; t < 7; t++) n = p([2e3, 1]).day(t), r = this.weekdaysMin(n, ""), i = this.weekdaysShort(n, ""), a = this.weekdays(n, ""), o.push(r), s.push(i), l.push(a), c.push(r), c.push(i), c.push(a);
+      for (o.sort(e), s.sort(e), l.sort(e), c.sort(e), t = 0; t < 7; t++) s[t] = eM(s[t]), l[t] = eM(l[t]), c[t] = eM(c[t]);
       this._weekdaysRegex = RegExp("^(" + c.join("|") + ")", "i"), this._weekdaysShortRegex = this._weekdaysRegex, this._weekdaysMinRegex = this._weekdaysRegex, this._weekdaysStrictRegex = RegExp("^(" + l.join("|") + ")", "i"), this._weekdaysShortStrictRegex = RegExp("^(" + s.join("|") + ")", "i"), this._weekdaysMinStrictRegex = RegExp("^(" + o.join("|") + ")", "i")
     }
 
@@ -1101,16 +1101,16 @@ e = require.nmd(module),
     function nN(e, t, n, r) {
       return nA(e, t, n, r, false)
     }
-    exports.createFromInputFallback = x("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.", function(e) {
+    t.createFromInputFallback = x("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.", function(e) {
       e._d = new Date(e._i + (e._useUTC ? " UTC" : ""))
-    }), exports.ISO_8601 = function() {}, exports.RFC_2822 = function() {};
+    }), t.ISO_8601 = function() {}, t.RFC_2822 = function() {};
     var nP = x("moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/", function() {
         var e = nN.apply(null, arguments);
-        return this.isValid() && module.isValid() ? module < this ? this : module : g()
+        return this.isValid() && e.isValid() ? e < this ? this : e : g()
       }),
       nR = x("moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/", function() {
         var e = nN.apply(null, arguments);
-        return this.isValid() && module.isValid() ? module > this ? this : module : g()
+        return this.isValid() && e.isValid() ? e > this ? this : e : g()
       });
 
     function nw(e, t) {
@@ -1122,12 +1122,12 @@ e = require.nmd(module),
 
     function nD() {
       var e = [].slice.call(arguments, 0);
-      return nw("isBefore", module)
+      return nw("isBefore", e)
     }
 
     function nx() {
       var e = [].slice.call(arguments, 0);
-      return nw("isAfter", module)
+      return nw("isAfter", e)
     }
     var nL = function() {
         return Date.now ? Date.now() : +new Date
@@ -1229,7 +1229,7 @@ e = require.nmd(module),
       if (null != this._tzm) this.utcOffset(this._tzm, false, true);
       else if ("string" == typeof this._i) {
         var e = nH(eN, this._i);
-        null != module ? this.utcOffset(module) : this.utcOffset(0, true)
+        null != e ? this.utcOffset(e) : this.utcOffset(0, true)
       }
       return this
     }
@@ -1245,9 +1245,9 @@ e = require.nmd(module),
     function n0() {
       if (!s(this._isDSTShifted)) return this._isDSTShifted;
       var e = {};
-      if (T(module, this), (e = nT(module))._a) {
-        var t = module._isUTC ? p(module._a) : nN(module._a);
-        this._isDSTShifted = this.isValid() && w(module._a, exports.toArray()) > 0
+      if (T(e, this), (e = nT(e))._a) {
+        var t = e._isUTC ? p(e._a) : nN(e._a);
+        this._isDSTShifted = this.isValid() && w(e._a, t.toArray()) > 0
       } else this._isDSTShifted = false;
       return this._isDSTShifted
     }
@@ -1263,7 +1263,7 @@ e = require.nmd(module),
     function n2() {
       return !!this.isValid() && this._isUTC && 0 === this._offset
     }
-    exports.updateOffset = function() {};
+    t.updateOffset = function() {};
     var n4 = /^(\-|\+)?(?:(\d*)[. ])?(\d+)\:(\d+)(?:\:(\d+)(\.\d*)?)?$/,
       n5 = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/;
 
@@ -1434,11 +1434,11 @@ e = require.nmd(module),
       var e = "moment",
         t = "";
       this.isLocal() || (e = 0 === this.utcOffset() ? "moment.utc" : "moment.parseZone", t = "Z");
-      var n = "[" + module + '("]',
+      var n = "[" + e + '("]',
         r = 0 <= this.year() && 9999 >= this.year() ? "YYYY" : "YYYYYY",
         i = "-MM-DD[T]HH:mm:ss.SSS",
-        a = exports + '[")]';
-      return this.format(require + r + i + a)
+        a = t + '[")]';
+      return this.format(n + r + i + a)
     }
 
     function rE(e) {
@@ -1473,7 +1473,7 @@ e = require.nmd(module),
       var t;
       return true === e ? this._locale._abbr : (null != (t = t6(e)) && (this._locale = t), this)
     }
-    exports.defaultFormat = "YYYY-MM-DDTHH:mm:ssZ", exports.defaultFormatUtc = "YYYY-MM-DDTHH:mm:ss[Z]";
+    t.defaultFormat = "YYYY-MM-DDTHH:mm:ssZ", t.defaultFormatUtc = "YYYY-MM-DDTHH:mm:ss[Z]";
     var rI = x("moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.", function(e) {
       return true === e ? this.localeData() : this.locale(e)
     });
@@ -1522,19 +1522,19 @@ e = require.nmd(module),
 
     function rw() {
       var e = this;
-      return [module.year(), module.month(), module.date(), module.hour(), module.minute(), module.second(), module.millisecond()]
+      return [e.year(), e.month(), e.date(), e.hour(), e.minute(), e.second(), e.millisecond()]
     }
 
     function rD() {
       var e = this;
       return {
-        years: module.year(),
-        months: module.month(),
-        date: module.date(),
-        hours: module.hours(),
-        minutes: module.minutes(),
-        seconds: module.seconds(),
-        milliseconds: module.milliseconds()
+        years: e.year(),
+        months: e.month(),
+        date: e.date(),
+        hours: e.hours(),
+        minutes: e.minutes(),
+        seconds: e.seconds(),
+        milliseconds: e.milliseconds()
       }
     }
 
@@ -1582,7 +1582,7 @@ e = require.nmd(module),
 
     function rB() {
       var e = this.localeData()._week;
-      return tg(this.year(), module.dow, module.doy)
+      return tg(this.year(), e.dow, e.doy)
     }
 
     function rV(e, t, n, r, i) {
@@ -1723,12 +1723,12 @@ e = require.nmd(module),
           n = 1 === R(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th";
         return e + n
       }
-    }), exports.lang = x("moment.lang is deprecated. Use moment.locale instead.", t4), exports.langData = x("moment.langData is deprecated. Use moment.localeData instead.", t6);
+    }), t.lang = x("moment.lang is deprecated. Use moment.locale instead.", t4), t.langData = x("moment.langData is deprecated. Use moment.localeData instead.", t6);
     var ii = Math.abs;
 
     function ia() {
       var e = this._data;
-      return this._milliseconds = ii(this._milliseconds), this._days = ii(this._days), this._months = ii(this._months), module.milliseconds = ii(module.milliseconds), module.seconds = ii(module.seconds), module.minutes = ii(module.minutes), module.hours = ii(module.hours), module.months = ii(module.months), module.years = ii(module.years), this
+      return this._milliseconds = ii(this._milliseconds), this._days = ii(this._days), this._months = ii(this._months), e.milliseconds = ii(e.milliseconds), e.seconds = ii(e.seconds), e.minutes = ii(e.minutes), e.hours = ii(e.hours), e.months = ii(e.months), e.years = ii(e.years), this
     }
 
     function io(e, t, n, r) {
@@ -1753,7 +1753,7 @@ e = require.nmd(module),
         o = this._days,
         s = this._months,
         l = this._data;
-      return a >= 0 && o >= 0 && s >= 0 || a <= 0 && o <= 0 && s <= 0 || (a += 864e5 * ic(ip(s) + o), o = 0, s = 0), l.milliseconds = a % 1e3, l.seconds = (e = P(a / 1e3)) % 60, l.minutes = (t = P(module / 60)) % 60, l.hours = (n = P(exports / 60)) % 24, o += P(require / 24), s += i = P(id(o)), o -= ic(ip(i)), r = P(s / 12), s %= 12, l.days = o, l.months = s, l.years = r, this
+      return a >= 0 && o >= 0 && s >= 0 || a <= 0 && o <= 0 && s <= 0 || (a += 864e5 * ic(ip(s) + o), o = 0, s = 0), l.milliseconds = a % 1e3, l.seconds = (e = P(a / 1e3)) % 60, l.minutes = (t = P(e / 60)) % 60, l.hours = (n = P(t / 60)) % 24, o += P(n / 24), s += i = P(id(o)), o -= ic(ip(i)), r = P(s / 12), s %= 12, l.days = o, l.months = s, l.years = r, this
     }
 
     function id(e) {
@@ -1879,13 +1879,13 @@ e = require.nmd(module),
       var e, t, n = iV(this._milliseconds) / 1e3,
         r = iV(this._days),
         i = iV(this._months);
-      e = P(require / 60), t = P(module / 60), n %= 60, e %= 60;
+      e = P(n / 60), t = P(e / 60), n %= 60, e %= 60;
       var a = P(i / 12),
         o = i %= 12,
         s = r,
-        l = exports,
-        c = module,
-        u = require ? require.toFixed(3).replace(/\.?0+$/, "") : "",
+        l = t,
+        c = e,
+        u = n ? n.toFixed(3).replace(/\.?0+$/, "") : "",
         d = this.asSeconds();
       if (!d) return "P0D";
       var f = d < 0 ? "-" : "",
@@ -1899,7 +1899,7 @@ e = require.nmd(module),
       n._d = new Date(1e3 * parseFloat(e, 10))
     }), eU("x", function(e, t, n) {
       n._d = new Date(R(e))
-    }), exports.version = "2.22.2", r(nN), exports.fn = r0, exports.min = nD, exports.max = nx, exports.now = nL, exports.utc = p, exports.unix = r1, exports.months = r7, exports.isDate = c, exports.locale = t4, exports.invalid = g, exports.duration = n8, exports.isMoment = N, exports.weekdays = ie, exports.parseZone = r3, exports.localeData = t6, exports.isDuration = nZ, exports.monthsShort = r9, exports.weekdaysMin = ir, exports.defineLocale = t5, exports.updateLocale = t8, exports.locales = t7, exports.weekdaysShort = it, exports.normalizeUnits = ee, exports.relativeTimeRounding = iZ, exports.relativeTimeThreshold = iF, exports.calendarFormat = ri, exports.prototype = r0, exports.HTML5_FMT = {
+    }), t.version = "2.22.2", r(nN), t.fn = r0, t.min = nD, t.max = nx, t.now = nL, t.utc = p, t.unix = r1, t.months = r7, t.isDate = c, t.locale = t4, t.invalid = g, t.duration = n8, t.isMoment = N, t.weekdays = ie, t.parseZone = r3, t.localeData = t6, t.isDuration = nZ, t.monthsShort = r9, t.weekdaysMin = ir, t.defineLocale = t5, t.updateLocale = t8, t.locales = t7, t.weekdaysShort = it, t.normalizeUnits = ee, t.relativeTimeRounding = iZ, t.relativeTimeThreshold = iF, t.calendarFormat = ri, t.prototype = r0, t.HTML5_FMT = {
       DATETIME_LOCAL: "YYYY-MM-DDTHH:mm",
       DATETIME_LOCAL_SECONDS: "YYYY-MM-DDTHH:mm:ss",
       DATETIME_LOCAL_MS: "YYYY-MM-DDTHH:mm:ss.SSS",
@@ -1909,5 +1909,5 @@ e = require.nmd(module),
       TIME_MS: "HH:mm:ss.SSS",
       WEEK: "YYYY-[W]WW",
       MONTH: "YYYY-MM"
-    }, exports
+    }, t
   })

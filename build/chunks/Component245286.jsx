@@ -117,16 +117,16 @@ function S(e) {
 }
 
 function P() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk767254.emptySearchResultsContainer,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: h.emptySearchResultsContainer,
+    children: [(0, r.jsx)(i.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      children: Chunk388032.intl.string(Chunk388032.t.zihbmv)
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: v.intl.string(v.t.zihbmv)
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: Chunk388032.intl.string(Chunk388032.t.XclvsB)
+      children: v.intl.string(v.t.XclvsB)
     })]
   })
 }

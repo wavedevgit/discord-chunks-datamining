@@ -49,5 +49,5 @@ let b = e => {
     })
   },
   y = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
-    user: Chunk594174.default.getCurrentUser()
+    user: p.default.getCurrentUser()
   }))((0, Chunk666743.Z)(b))

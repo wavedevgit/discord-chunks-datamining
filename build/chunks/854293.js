@@ -22,8 +22,8 @@ var r, i = "basil",
     return l.test(e) || c.test(e)
   },
   f = function() {
-    for (var e = document.querySelectorAll('script[src^="'.concat(o, '"]')), t = 0; exports < module.length; exports++) {
-      var n = module[exports];
+    for (var e = document.querySelectorAll('script[src^="'.concat(o, '"]')), t = 0; t < e.length; t++) {
+      var n = e[t];
       if (d(n.src)) return n
     }
     return null
@@ -90,7 +90,7 @@ var r, i = "basil",
   },
   S = false,
   I = function() {
-    for (var e = arguments.length, t = Array(module), n = 0; n < module; n++) exports[n] = arguments[n];
+    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     S = true;
     var i = Date.now();
     return y(r).then(function(e) {

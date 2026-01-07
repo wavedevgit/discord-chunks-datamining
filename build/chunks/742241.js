@@ -40,7 +40,7 @@ var i = false,
         key: "canDrop",
         value: function() {
           if (!this.targetId) returnfalse;
-          (0, Chunk573654.k)(!i, "You may not call monitor.canDrop() inside your canDrop() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target-monitor");
+          (0, r.k)(!i, "You may not call monitor.canDrop() inside your canDrop() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target-monitor");
           try {
             return i = true, this.internalMonitor.canDropOnTarget(this.targetId)
           } finally {
@@ -103,5 +103,5 @@ var i = false,
           var r = n[e];
           r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(t, r.key, r)
         }
-      }(exports.prototype, module), exports
+      }(n.prototype, t), n
   }()

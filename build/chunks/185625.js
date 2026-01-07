@@ -175,8 +175,8 @@ async function N(e, t, n) {
   })).body
 }
 async function P() {
-  return await Chunk544891.tn.get({
-    url: Chunk981631.ANM.DSA_CAPABILITIES,
+  return await s.tn.get({
+    url: p.ANM.DSA_CAPABILITIES,
     rejectWithError: false
   })
 }

@@ -17,18 +17,18 @@ class E extends(n = Chunk442837.ZP.Store) {
     return u
   }
   getDiscoveryCategories() {
-    let e = Chunk128449.L3.map(e => _.find(t => t.categoryId === e)).filter(Chunk823379.lm);
+    let e = s.L3.map(e => _.find(t => t.categoryId === e)).filter(l.lm);
     return [{
-      categoryId: Chunk128449.Hk,
-      name: Chunk388032.intl.string(Chunk388032.t.Ym2Ri6)
-    }, ...module]
+      categoryId: s.Hk,
+      name: c.intl.string(c.t.Ym2Ri6)
+    }, ...e]
   }
   getClanDiscoveryCategories() {
-    let e = Chunk128449.L3.map(e => _.find(t => t.categoryId === e)).filter(Chunk823379.lm);
+    let e = s.L3.map(e => _.find(t => t.categoryId === e)).filter(l.lm);
     return [{
-      categoryId: Chunk128449.Hk,
-      name: Chunk388032.intl.string(Chunk388032.t.QToH29)
-    }, ...module]
+      categoryId: s.Hk,
+      name: c.intl.string(c.t.QToH29)
+    }, ...e]
   }
   getAllCategories() {
     return _

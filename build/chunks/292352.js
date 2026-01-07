@@ -64,49 +64,49 @@ var g = function(e) {
 let I = new Map([
     [3, {
       priority: 100,
-      tooltipHeader: () => Chunk388032.intl.string(Chunk517319.default.kvTgWP),
+      tooltipHeader: () => o.intl.string(a.default.kvTgWP),
       tooltipDescription: e => e ? o.intl.string(a.default.w4wmnb) : o.intl.string(a.default.foTzbd),
       sectionHeader: e => o.intl.formatToPlainString(a.default["4T3zWT"], {
         count: e
       }),
       sectionDescription: e => e ? o.intl.string(a.default.w4wmnb) : o.intl.string(a.default.foTzbd),
       timestampFormatter: () => ({
-        today: Chunk388032.intl.string(Chunk517319.default.fLBUx7),
-        yesterday: Chunk388032.intl.string(Chunk517319.default.cHHgxI),
-        days: Chunk517319.default.qvKjp8
+        today: o.intl.string(a.default.fLBUx7),
+        yesterday: o.intl.string(a.default.cHHgxI),
+        days: a.default.qvKjp8
       })
     }],
     [5, {
       priority: 200,
-      tooltipHeader: () => Chunk388032.intl.string(Chunk517319.default.D7Sngz),
+      tooltipHeader: () => o.intl.string(a.default.D7Sngz),
       tooltipDescription: e => e ? o.intl.string(a.default.aiAhnQ) : o.intl.string(a.default["4ufgdz"]),
       sectionHeader: e => o.intl.formatToPlainString(a.default["0GE4Ni"], {
         count: e
       }),
       sectionDescription: e => e ? o.intl.string(a.default.aiAhnQ) : o.intl.string(a.default["4ufgdz"]),
       timestampFormatter: () => ({
-        today: Chunk388032.intl.string(Chunk517319.default.IHd5cZ),
-        yesterday: Chunk388032.intl.string(Chunk517319.default.wOsfxv),
-        days: Chunk517319.default.oCk8c4
+        today: o.intl.string(a.default.IHd5cZ),
+        yesterday: o.intl.string(a.default.wOsfxv),
+        days: a.default.oCk8c4
       })
     }],
     [1, {
       priority: 300,
-      tooltipHeader: () => Chunk388032.intl.string(Chunk517319.default.kIcKAj),
+      tooltipHeader: () => o.intl.string(a.default.kIcKAj),
       tooltipDescription: e => e ? o.intl.string(a.default.BkVb1X) : o.intl.string(a.default.mpHHfa),
       sectionHeader: e => o.intl.formatToPlainString(a.default["TEvo+H"], {
         count: e
       }),
       sectionDescription: e => e ? o.intl.string(a.default.BkVb1X) : o.intl.string(a.default.mpHHfa),
       timestampFormatter: () => ({
-        today: Chunk388032.intl.string(Chunk517319.default.JUHIYZ),
-        yesterday: Chunk388032.intl.string(Chunk517319.default.GiswUW),
-        days: Chunk517319.default["fwQgE/"]
+        today: o.intl.string(a.default.JUHIYZ),
+        yesterday: o.intl.string(a.default.GiswUW),
+        days: a.default["fwQgE/"]
       })
     }],
     [2, {
       priority: 400,
-      tooltipHeader: () => Chunk388032.intl.string(Chunk517319.default.uav9Bh),
+      tooltipHeader: () => o.intl.string(a.default.uav9Bh),
       tooltipDescription: e => e ? o.intl.string(a.default.LVNgTD) : o.intl.string(a.default.TA8GFt),
       sectionHeader: e => o.intl.formatToPlainString(a.default["7feG7T"], {
         count: e
@@ -115,7 +115,7 @@ let I = new Map([
     }],
     [4, {
       priority: 500,
-      tooltipHeader: () => Chunk388032.intl.string(Chunk517319.default.CcrbCw),
+      tooltipHeader: () => o.intl.string(a.default.CcrbCw),
       tooltipDescription: e => e ? o.intl.string(a.default.BLgIrk) : o.intl.string(a.default.sSJauZ),
       sectionHeader: e => o.intl.formatToPlainString(a.default.rcPInc, {
         count: e
@@ -124,16 +124,16 @@ let I = new Map([
     }],
     [6, {
       priority: 175,
-      tooltipHeader: () => Chunk388032.intl.string(Chunk517319.default.eo4Fxh),
-      tooltipDescription: () => Chunk388032.intl.string(Chunk517319.default["O/AElu"]),
+      tooltipHeader: () => o.intl.string(a.default.eo4Fxh),
+      tooltipDescription: () => o.intl.string(a.default["O/AElu"]),
       sectionHeader: e => o.intl.formatToPlainString(a.default.eGFWUd, {
         count: e
       }),
-      sectionDescription: () => Chunk388032.intl.string(Chunk517319.default["O/AElu"])
+      sectionDescription: () => o.intl.string(a.default["O/AElu"])
     }],
     [7, {
       priority: 150,
-      tooltipHeader: () => Chunk388032.intl.string(Chunk517319.default.NMYKsh),
+      tooltipHeader: () => o.intl.string(a.default.NMYKsh),
       tooltipDescription: e => e ? o.intl.string(a.default.cqIdqZ) : o.intl.string(a.default["85PtWu"]),
       sectionHeader: e => o.intl.formatToPlainString(a.default.FPViWL, {
         amount: e
@@ -142,18 +142,18 @@ let I = new Map([
     }]
   ]),
   T = () => ({
-    seconds: Chunk388032.intl.string(Chunk517319.default.CJdoee),
-    minutes: Chunk517319.default.InzMn3,
-    hours: Chunk517319.default.ErkYCI,
-    yesterday: Chunk388032.intl.string(Chunk517319.default.GvfssA),
-    days: Chunk517319.default.pWig18,
-    date: Chunk517319.default.MP3khg
+    seconds: o.intl.string(a.default.CJdoee),
+    minutes: a.default.InzMn3,
+    hours: a.default.ErkYCI,
+    yesterday: o.intl.string(a.default.GvfssA),
+    days: a.default.pWig18,
+    date: a.default.MP3khg
   }),
   C = () => ({
-    seconds: Chunk388032.intl.string(Chunk517319.default.Bqsamd),
-    minutes: Chunk517319.default.kX3wJg,
-    hours: Chunk517319.default.J18GbG,
-    yesterday: Chunk388032.intl.string(Chunk517319.default.Ln9zMn),
-    days: Chunk517319.default.WRtySz,
-    date: Chunk517319.default.Y3ZYtM
+    seconds: o.intl.string(a.default.Bqsamd),
+    minutes: a.default.kX3wJg,
+    hours: a.default.J18GbG,
+    yesterday: o.intl.string(a.default.Ln9zMn),
+    days: a.default.WRtySz,
+    date: a.default.Y3ZYtM
   })

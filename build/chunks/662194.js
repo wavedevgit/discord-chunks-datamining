@@ -54,7 +54,7 @@ let p = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ]
     },
-    handler: () => (0, Chunk852926._X)()
+    handler: () => (0, c._X)()
   },
   [Chunk981631.Etm.SET_VOICE_SETTINGS]: {
     scope: {

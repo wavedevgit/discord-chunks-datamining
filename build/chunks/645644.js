@@ -86,28 +86,28 @@ class x {
   }
   constructor() {
     C(this, "actions", {
-      [Chunk987650.bv.Viewed]: 0,
-      [Chunk987650.bv.Clicked]: 0
+      [T.bv.Viewed]: 0,
+      [T.bv.Clicked]: 0
     })
   }
 }
 class L {
   static makeEmptyGroupAnalytics() {
     return {
-      [Chunk987650.Vk.Nudge]: 0,
-      [Chunk987650.Vk.TextChat]: 0,
-      [Chunk987650.Vk.VoiceCall]: 0,
-      [Chunk987650.Vk.Activity]: 0,
-      [Chunk987650.Vk.Clips]: 0,
-      [Chunk987650.Vk.Other]: 0
+      [T.Vk.Nudge]: 0,
+      [T.Vk.TextChat]: 0,
+      [T.Vk.VoiceCall]: 0,
+      [T.Vk.Activity]: 0,
+      [T.Vk.Clips]: 0,
+      [T.Vk.Other]: 0
     }
   }
   static makeCounters() {
     let e = {},
-      t = Object.values(Chunk987650.n0);
-    for (let n of exports) module[require] = new x;
-    if (Object.keys(module).length !== exports.length) throw Error("NotificationAnalytics: Failed to make counters");
-    return module
+      t = Object.values(T.n0);
+    for (let n of t) e[n] = new x;
+    if (Object.keys(e).length !== t.length) throw Error("NotificationAnalytics: Failed to make counters");
+    return e
   }
   increment(e, t) {
     let n = this.groupCounters[t];
@@ -120,23 +120,23 @@ class L {
     i.increment(t)
   }
   getAnalytics() {
-    let e = this.groupCounters[Chunk987650.bv.Viewed],
-      t = this.groupCounters[Chunk987650.bv.Clicked];
+    let e = this.groupCounters[T.bv.Viewed],
+      t = this.groupCounters[T.bv.Clicked];
     return {
-      notices_viewed: this.actionCounters[Chunk987650.bv.Viewed],
-      notices_clicked: this.actionCounters[Chunk987650.bv.Clicked],
-      notice_nudge_viewed: module[Chunk987650.Vk.Nudge],
-      notice_text_chat_viewed: module[Chunk987650.Vk.TextChat],
-      notice_voice_call_viewed: module[Chunk987650.Vk.VoiceCall],
-      notice_activity_viewed: module[Chunk987650.Vk.Activity],
-      notice_clips_viewed: module[Chunk987650.Vk.Clips],
-      notice_other_viewed: module[Chunk987650.Vk.Other],
-      notice_nudge_clicked: exports[Chunk987650.Vk.Nudge],
-      notice_text_chat_clicked: exports[Chunk987650.Vk.TextChat],
-      notice_voice_call_clicked: exports[Chunk987650.Vk.VoiceCall],
-      notice_activity_clicked: exports[Chunk987650.Vk.Activity],
-      notice_clips_clicked: exports[Chunk987650.Vk.Clips],
-      notice_other_clicked: exports[Chunk987650.Vk.Other]
+      notices_viewed: this.actionCounters[T.bv.Viewed],
+      notices_clicked: this.actionCounters[T.bv.Clicked],
+      notice_nudge_viewed: e[T.Vk.Nudge],
+      notice_text_chat_viewed: e[T.Vk.TextChat],
+      notice_voice_call_viewed: e[T.Vk.VoiceCall],
+      notice_activity_viewed: e[T.Vk.Activity],
+      notice_clips_viewed: e[T.Vk.Clips],
+      notice_other_viewed: e[T.Vk.Other],
+      notice_nudge_clicked: t[T.Vk.Nudge],
+      notice_text_chat_clicked: t[T.Vk.TextChat],
+      notice_voice_call_clicked: t[T.Vk.VoiceCall],
+      notice_activity_clicked: t[T.Vk.Activity],
+      notice_clips_clicked: t[T.Vk.Clips],
+      notice_other_clicked: t[T.Vk.Other]
     }
   }
   getCounterAnalytics(e) {
@@ -147,11 +147,11 @@ class L {
   }
   constructor() {
     C(this, "actionCounters", {
-      [Chunk987650.bv.Viewed]: 0,
-      [Chunk987650.bv.Clicked]: 0
+      [T.bv.Viewed]: 0,
+      [T.bv.Clicked]: 0
     }), C(this, "groupCounters", {
-      [Chunk987650.bv.Viewed]: L.makeEmptyGroupAnalytics(),
-      [Chunk987650.bv.Clicked]: L.makeEmptyGroupAnalytics()
+      [T.bv.Viewed]: L.makeEmptyGroupAnalytics(),
+      [T.bv.Clicked]: L.makeEmptyGroupAnalytics()
     }), C(this, "counters", L.makeCounters())
   }
 }
@@ -160,7 +160,7 @@ class j {
     return {
       initialized: false,
       pinnedToggledCount: 0,
-      visibleDuration: new Chunk379649.G9,
+      visibleDuration: new i.G9,
       pinned: false
     }
   }
@@ -181,12 +181,12 @@ class j {
     let e = this.types[0],
       t = this.types[1];
     return {
-      widget_voice_pin_toggle_count: module.pinnedToggledCount,
-      widget_voice_visible_duration: module.visibleDuration.elapsed().asMilliseconds(),
-      widget_voice_pinned: module.pinned,
-      widget_text_pin_toggle_count: exports.pinnedToggledCount,
-      widget_text_visible_duration: exports.visibleDuration.elapsed().asMilliseconds(),
-      widget_text_pinned: exports.pinned
+      widget_voice_pin_toggle_count: e.pinnedToggledCount,
+      widget_voice_visible_duration: e.visibleDuration.elapsed().asMilliseconds(),
+      widget_voice_pinned: e.pinned,
+      widget_text_pin_toggle_count: t.pinnedToggledCount,
+      widget_text_visible_duration: t.visibleDuration.elapsed().asMilliseconds(),
+      widget_text_pinned: t.pinned
     }
   }
   constructor() {
@@ -199,55 +199,55 @@ class j {
 class M {
   update() {
     let e = this.game,
-      t = Chunk998502.ZP.GetWindowFullscreenTypeByPid(module.pid, module.name, module.fullscreenType);
-    if (exports !== this.lastscreenType) {
-      if (!(exports in this.counters)) {
-        let n = Chunk371651.default.getTrackedGameByPid(module.pid);
-        D.error("ScreenTypeAnalytics: Unknown screen type for ".concat(this.game.name, ": ").concat(exports), {
+      t = b.ZP.GetWindowFullscreenTypeByPid(e.pid, e.name, e.fullscreenType);
+    if (t !== this.lastscreenType) {
+      if (!(t in this.counters)) {
+        let n = p.default.getTrackedGameByPid(e.pid);
+        D.error("ScreenTypeAnalytics: Unknown screen type for ".concat(this.game.name, ": ").concat(t), {
           rawGame: this.game,
-          overlayTrackedGame: require
+          overlayTrackedGame: n
         });
         return
       }
-      this.counters[exports].start(), null != this.lastscreenType && this.counters[this.lastscreenType].stop(), this.lastscreenType = exports
+      this.counters[t].start(), null != this.lastscreenType && this.counters[this.lastscreenType].stop(), this.lastscreenType = t
     }
   }
   getAnalytics() {
     var e, t, n;
     let r = e => this.counters[e].elapsed().asMilliseconds(),
       i = {
-        [Chunk593472.Jx.UNKNOWN]: Chunk772848(Chunk593472.Jx.UNKNOWN),
-        [Chunk593472.Jx.WINDOWED]: Chunk772848(Chunk593472.Jx.WINDOWED),
-        [Chunk593472.Jx.MAXIMIZED]: Chunk772848(Chunk593472.Jx.MAXIMIZED),
-        [Chunk593472.Jx.BORDERLESS_FULLSCREEN]: Chunk772848(Chunk593472.Jx.BORDERLESS_FULLSCREEN),
-        [Chunk593472.Jx.FULLSCREEN]: Chunk772848(Chunk593472.Jx.FULLSCREEN),
-        [Chunk593472.Jx.MINIMIZED]: Chunk772848(Chunk593472.Jx.MINIMIZED)
+        [o.Jx.UNKNOWN]: r(o.Jx.UNKNOWN),
+        [o.Jx.WINDOWED]: r(o.Jx.WINDOWED),
+        [o.Jx.MAXIMIZED]: r(o.Jx.MAXIMIZED),
+        [o.Jx.BORDERLESS_FULLSCREEN]: r(o.Jx.BORDERLESS_FULLSCREEN),
+        [o.Jx.FULLSCREEN]: r(o.Jx.FULLSCREEN),
+        [o.Jx.MINIMIZED]: r(o.Jx.MINIMIZED)
       },
-      a = Object.entries(Chunk379649).sort((e, t) => {
+      a = Object.entries(i).sort((e, t) => {
         let [n, r] = e, [i, a] = t;
         return a - r
       })[0],
-      s = parseInt(Chunk570140[0], 10),
-      l = isNaN(Chunk147913) ? Chunk593472.Jx.UNKNOWN : Chunk147913;
-    isNaN(Chunk147913) && D.error("ScreenTypeAnalytics: Unknown most used screen type: ".concat(Chunk570140), Chunk379649);
-    let c = Chunk938038.c.getGameDisplayMode(null != (e = this.game.name) ? module : this.game.id);
-    Chunk938038.c.setGameDisplayMode(null != (t = this.game.name) ? exports : this.game.id, Chunk579806);
+      s = parseInt(a[0], 10),
+      l = isNaN(s) ? o.Jx.UNKNOWN : s;
+    isNaN(s) && D.error("ScreenTypeAnalytics: Unknown most used screen type: ".concat(a), i);
+    let c = S.c.getGameDisplayMode(null != (e = this.game.name) ? e : this.game.id);
+    S.c.setGameDisplayMode(null != (t = this.game.name) ? t : this.game.id, l);
     let u = {
-      screentype_unknown_duration: Chunk379649[Chunk593472.Jx.UNKNOWN],
-      screentype_windowed_duration: Chunk379649[Chunk593472.Jx.WINDOWED],
-      screentype_maximized_duration: Chunk379649[Chunk593472.Jx.MAXIMIZED],
-      screentype_borderless_fullscreen_duration: Chunk379649[Chunk593472.Jx.BORDERLESS_FULLSCREEN],
-      screentype_fullscreen_duration: Chunk379649[Chunk593472.Jx.FULLSCREEN],
-      screentype_minimized_duration: Chunk379649[Chunk593472.Jx.MINIMIZED]
+      screentype_unknown_duration: i[o.Jx.UNKNOWN],
+      screentype_windowed_duration: i[o.Jx.WINDOWED],
+      screentype_maximized_duration: i[o.Jx.MAXIMIZED],
+      screentype_borderless_fullscreen_duration: i[o.Jx.BORDERLESS_FULLSCREEN],
+      screentype_fullscreen_duration: i[o.Jx.FULLSCREEN],
+      screentype_minimized_duration: i[o.Jx.MINIMIZED]
     };
-    return P(A({}, Chunk581567), {
-      screentype_global_supported_duration: Chunk581567.screentype_windowed_duration + Chunk581567.screentype_maximized_duration + Chunk581567.screentype_borderless_fullscreen_duration,
-      screentype_global_unsupported_duration: Chunk581567.screentype_fullscreen_duration,
-      screentype_initial: Chunk593472.Jx[this.game.fullscreenType],
-      screentype_most_used: Chunk593472.Jx[Chunk579806],
-      screentype_most_used_previous: null == Chunk710845 ? null : Chunk593472.Jx[Chunk710845],
-      screentype_last: Chunk593472.Jx[null != (n = this.lastscreenType) ? require : Chunk593472.Jx.UNKNOWN],
-      game_display_mode_is_adjustment_supported: Chunk998502.ZP.GameDisplayModeIsGameSupported(this.game.name)
+    return P(A({}, u), {
+      screentype_global_supported_duration: u.screentype_windowed_duration + u.screentype_maximized_duration + u.screentype_borderless_fullscreen_duration,
+      screentype_global_unsupported_duration: u.screentype_fullscreen_duration,
+      screentype_initial: o.Jx[this.game.fullscreenType],
+      screentype_most_used: o.Jx[l],
+      screentype_most_used_previous: null == c ? null : o.Jx[c],
+      screentype_last: o.Jx[null != (n = this.lastscreenType) ? n : o.Jx.UNKNOWN],
+      game_display_mode_is_adjustment_supported: b.ZP.GameDisplayModeIsGameSupported(this.game.name)
     })
   }
   destroy() {
@@ -269,7 +269,7 @@ function k() {
   try {
     return crypto.randomUUID()
   } catch (e) {
-    return D.error("OverlayUsageStatsManager: Failed to generate UUID", module), (0, Chunk772848.Z)()
+    return D.error("OverlayUsageStatsManager: Failed to generate UUID", e), (0, r.Z)()
   }
 }
 class U {
@@ -368,38 +368,38 @@ class U {
     n || (this.overlayState = e, this.overlayStateReason = t), this.overlayStateRaw = e, this.overlayStateRawReason = t
   }
   getSettingMethod() {
-    return null == this.overlayMethod ? Chunk837268.gl[Chunk837268.gl.Disabled] : Chunk837268.gl[this.overlayMethod]
+    return null == this.overlayMethod ? f.gl[f.gl.Disabled] : f.gl[this.overlayMethod]
   }
   async getAnalytics() {
     var e, t, n, r, i, a, o, s, c;
-    let p = null != (n = this.overlayMethod) ? require : Chunk837268.gl.Disabled,
+    let p = null != (n = this.overlayMethod) ? n : f.gl.Disabled,
       m = {
-        setting_is_enabled: Chunk808506.default.enabled,
+        setting_is_enabled: h.default.enabled,
         setting_method: this.getSettingMethod(),
-        setting_display_user: Chunk237997.default.getDisplayUserMode(),
-        setting_display_name: Chunk237997.default.getDisplayNameMode(),
-        setting_avatar_size: Chunk237997.default.getAvatarSizeMode(),
-        setting_notification_position: Chunk237997.default.getNotificationPositionMode(),
-        setting_chat_notification: Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat) ? "DISABLED" : "ENABLED"
+        setting_display_user: g.default.getDisplayUserMode(),
+        setting_display_name: g.default.getDisplayNameMode(),
+        setting_avatar_size: g.default.getAvatarSizeMode(),
+        setting_notification_position: g.default.getNotificationPositionMode(),
+        setting_chat_notification: _.Z.isNotificationDisabled(T.n0.TextChat) ? "DISABLED" : "ENABLED"
       },
-      E = (0, Chunk594190.b6)(this.game),
-      b = (0, Chunk581567.G8)(this.game),
-      y = null != (r = this.overlayMethodStats) ? Chunk772848 : this.buildOverlayMethodStats(Chunk371651, this.game),
-      O = null != Chunk145597.any_other_method ? Chunk837268.gl[Chunk145597.any_other_method] : null,
-      v = null != Chunk145597.current_method ? Chunk837268.gl[Chunk145597.current_method] : null,
-      S = Chunk626135.enabledLegacy || Chunk626135.enabledOOP;
+      E = (0, d.b6)(this.game),
+      b = (0, u.G8)(this.game),
+      y = null != (r = this.overlayMethodStats) ? r : this.buildOverlayMethodStats(p, this.game),
+      O = null != y.any_other_method ? f.gl[y.any_other_method] : null,
+      v = null != y.current_method ? f.gl[y.current_method] : null,
+      S = E.enabledLegacy || E.enabledOOP;
     return {
       usage: P(A(P(A({
         event_uuid: this.uuid,
         overlay_usage_stats_version: R
-      }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), Chunk449224), {
-        overlay_status_game_enabled: Chunk938038,
-        overlay_status_game_source: Chunk626135.source,
-        game_name: null != (i = Chunk998502.gameName) ? Chunk379649 : null,
-        game_id: null != (a = Chunk998502.gameId) ? Chunk570140 : null,
-        game_exe: null != (o = Chunk998502.exe) ? Chunk593472 : null,
+      }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), m), {
+        overlay_status_game_enabled: S,
+        overlay_status_game_source: E.source,
+        game_name: null != (i = b.gameName) ? i : null,
+        game_id: null != (a = b.gameId) ? a : null,
+        game_exe: null != (o = b.exe) ? o : null,
         game_elevated: this.game.elevated,
-        game_is_launcher: null != (s = this.game.isLauncher) && Chunk147913,
+        game_is_launcher: null != (s = this.game.isLauncher) && s,
         game_duration: this.gameTimer.elapsed().asMilliseconds(),
         game_focused_duration: this.gameFocusedTimer.elapsed().asMilliseconds(),
         game_focused_change_count: this.gameFocusChangedCount,
@@ -410,7 +410,7 @@ class U {
         soundboard_shown_duration: this.soundboardShownTimer.elapsed().asMilliseconds(),
         soundboard_shown_count: this.soundboardShownCount,
         soundboard_keep_open_count: this.soundboardKeepOpenCount,
-        hardware_display_count: null != (c = await (null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.hardware) || null == (e = exports.getDisplayCount) ? true : module.call(exports))) ? Chunk710845 : null,
+        hardware_display_count: null != (c = await (null === l.Z || true === l.Z || null == (t = l.Z.hardware) || null == (e = t.getDisplayCount) ? true : e.call(t))) ? c : null,
         message_ack_count: this.overlayMessageAckCount,
         message_created_count: this.overlayMessageCreateCount,
         desktop_message_ack_count: this.desktopMessageAckCount,
@@ -420,10 +420,10 @@ class U {
         rtc_connection_duration: this.rtcConnectionTimer.elapsed().asMilliseconds(),
         mute_toggled_count: this.muteToggledCount,
         overlay_successfully_shown: this._successfullyShown
-      }), Chunk145597), {
-        original_method: Chunk837268.gl[Chunk145597.original_method],
-        any_other_method: Chunk830917,
-        current_method: Chunk554174,
+      }), y), {
+        original_method: f.gl[y.original_method],
+        any_other_method: O,
+        current_method: v,
         last_overlay_state: this.overlayState,
         last_overlay_state_raw: this.overlayStateRaw,
         last_overlay_state_reason: this.overlayStateReason,
@@ -436,10 +436,10 @@ class U {
     e ? (this.unlockedTimer.stop(), ++this.uiLockedCount) : (this.unlockedTimer.start(), ++this.uiUnlockedCount)
   }
   static gameSetAllUnfocused() {
-    for (let e of Object.values(U.gamesByPid)) module.gameFocusedTimer.stop()
+    for (let e of Object.values(U.gamesByPid)) e.gameFocusedTimer.stop()
   }
   static incrementConcurrentGameCount() {
-    for (let e of Object.values(U.gamesByPid)) ++module.gameConcurrentGameCount
+    for (let e of Object.values(U.gamesByPid)) ++e.gameConcurrentGameCount
   }
   gameSetFocused(e) {
     this.gameFocusedTimer.toggle(e), e && ++this.gameFocusChangedCount
@@ -448,7 +448,7 @@ class U {
     this.soundboardShownTimer.toggle(e), e && (++this.soundboardShownCount, t && ++this.soundboardKeepOpenCount)
   }
   static handleMuteToggled() {
-    for (let e of Object.values(U.gamesByPid)) ++module.muteToggledCount
+    for (let e of Object.values(U.gamesByPid)) ++e.muteToggledCount
   }
   static desktopSetFocused(e) {
     if (e !== U.desktopMainWindowHasFocus) {
@@ -475,12 +475,12 @@ class U {
 }
 
 function G() {
-  let e = Chunk808506.default.getFocusedPID();
-  if (null == module || module === Chunk145597.UNSET_PID || !Chunk371651.default.isOverlayOOPEnabledForPid(module)) return null;
-  let t = Chunk371651.default.getTrackedGameByPid(module);
-  return null == exports || null == exports.gameName || null == exports.applicationId || exports.state !== Chunk837268.mM.OVERLAY_RENDERING ? null : {
-    gameName: exports.gameName,
-    gameId: exports.applicationId
+  let e = h.default.getFocusedPID();
+  if (null == e || e === y.UNSET_PID || !p.default.isOverlayOOPEnabledForPid(e)) return null;
+  let t = p.default.getTrackedGameByPid(e);
+  return null == t || null == t.gameName || null == t.applicationId || t.state !== f.mM.OVERLAY_RENDERING ? null : {
+    gameName: t.gameName,
+    gameId: t.applicationId
   }
 }
 
@@ -657,7 +657,7 @@ class et {
   }
 }
 w && !__OVERLAY__ && setInterval(async () => {
-  for (let e of Object.values(U.debug.gamesByName)) D.verbose("Game analytics", await module.getAnalytics())
+  for (let e of Object.values(U.debug.gamesByName)) D.verbose("Game analytics", await e.getAnalytics())
 }, 5e3);
 class en extends Chunk147913.Z {
   constructor(...e) {

@@ -23,12 +23,12 @@ function _() {
 }
 
 function m() {
-  return Chunk358085.isPlatformEmbedded && ((0, Chunk358085.isMac)() || (0, Chunk358085.isWindows)() && "arm64" !== Chunk998502.ZP.architecture)
+  return d.isPlatformEmbedded && ((0, d.isMac)() || (0, d.isWindows)() && "arm64" !== f.ZP.architecture)
 }
 async function h() {
   if (null == r) {
-    if (!m()) return void new Chunk710845.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
-    await Chunk998502.ZP.ensureModule("discord_cloudsync"), (r = new(Chunk998502.ZP.getCloudSync())).on("state", e => a.Z.dispatch({
+    if (!m()) return void new o.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
+    await f.ZP.ensureModule("discord_cloudsync"), (r = new(f.ZP.getCloudSync())).on("state", e => a.Z.dispatch({
       type: "GAME_CLOUD_SYNC_UPDATE",
       state: e
     }))

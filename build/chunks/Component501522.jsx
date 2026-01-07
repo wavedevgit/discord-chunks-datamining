@@ -33,10 +33,10 @@ class i extends Chunk473749.Component {
       className: e,
       render: t
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
+    return (0, n.jsx)("div", {
       ref: this.scrollRef,
-      className: module,
-      children: exports(this.scrollTo, this.getScrollTop)
+      className: e,
+      children: t(this.scrollTo, this.getScrollTop)
     })
   }
   constructor(...e) {

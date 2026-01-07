@@ -33,22 +33,22 @@ var Chunk54381 = require("./54381.js"),
 let k = Chunk566006.O.VOTE;
 
 function P() {
-  let e = (0, Chunk410030.ZP)();
-  return (0, Chunk54381.jsxs)(Chunk481060.ubH, {
-    theme: module,
-    children: [(0, Chunk54381.jsx)(Chunk481060.oxh, {
-      darkSrc: Chunk144452,
-      lightSrc: Chunk144452,
+  let e = (0, h.ZP)();
+  return (0, n.jsxs)(d.ubH, {
+    theme: e,
+    children: [(0, n.jsx)(d.oxh, {
+      darkSrc: I,
+      lightSrc: I,
       width: 106,
       height: 100,
       style: {
         marginBottom: 10
       }
-    }), (0, Chunk54381.jsx)(Chunk481060.OZU, {
-      note: Chunk388032.intl.string(Chunk388032.t.bwytdh),
-      noteClassName: Chunk620564.emptyText,
-      className: Chunk620564.emptyTitle,
-      children: Chunk388032.intl.string(Chunk388032.t.vhQK3o)
+    }), (0, n.jsx)(d.OZU, {
+      note: Z.intl.string(Z.t.bwytdh),
+      noteClassName: y.emptyText,
+      className: y.emptyTitle,
+      children: Z.intl.string(Z.t.vhQK3o)
     })]
   })
 }

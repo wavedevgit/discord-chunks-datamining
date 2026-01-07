@@ -94,7 +94,7 @@ function v(e, t) {
 }
 
 function S() {
-  Chunk570140.Z.dispatch({
+  l.Z.dispatch({
     type: "TOGGLE_TOPICS_BAR"
   })
 }
@@ -125,26 +125,26 @@ function C(e, t) {
 async function A() {
   var e;
   let t, n;
-  if (!Chunk765104.Z.shouldFetchChannelAffinities()) return Promise.resolve(null);
+  if (!_.Z.shouldFetchChannelAffinities()) return Promise.resolve(null);
   let r = Date.now();
-  Chunk570140.Z.dispatch({
+  l.Z.dispatch({
     type: "REQUEST_CHANNEL_AFFINITIES",
-    requestedAt: Chunk473749
+    requestedAt: r
   });
   try {
-    n = await Chunk544891.tn.get({
+    n = await s.tn.get({
       url: "/users/@me/affinities/channels",
       rejectWithError: false
     })
   } catch (e) {
-    t = new Chunk881052.Hx(module)
+    t = new c.Hx(e)
   }
-  let i = null == require || null == (e = require.body) ? true : module.channel_affinities;
-  Chunk570140.Z.dispatch({
+  let i = null == n || null == (e = n.body) ? true : e.channel_affinities;
+  l.Z.dispatch({
     type: "RECEIVE_CHANNEL_AFFINITIES",
-    affinities: Chunk392711,
-    error: null != exports ? exports : true,
-    requestedAt: Chunk473749,
+    affinities: i,
+    error: null != t ? t : true,
+    requestedAt: r,
     receivedAt: Date.now()
   })
 }
@@ -199,17 +199,17 @@ async function N(e) {
 
 function P() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
-    t = (0, Chunk399606.e7)([Chunk38618.Z], () => Chunk38618.Z.isConnected()),
-    n = Chunk473749.useMemo(() => module.join(","), [module]);
-  Chunk473749.useEffect(() => {
-    exports && module();
+    t = (0, o.e7)([d.Z], () => d.Z.isConnected()),
+    n = r.useMemo(() => e.join(","), [e]);
+  r.useEffect(() => {
+    t && e();
     async function e() {
       try {
         await A()
       } catch (e) {}
-      await N(require.split(","))
+      await N(n.split(","))
     }
-  }, [require, exports])
+  }, [n, t])
 }
 async function R(e) {
   try {

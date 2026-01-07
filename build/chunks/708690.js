@@ -44,7 +44,7 @@ let r = {
     })
   },
   close() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE"
     })
   }

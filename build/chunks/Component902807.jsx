@@ -17,7 +17,7 @@ class d extends Chunk473749.Component {
     let n = this.props,
       {
         icon: i
-      } = require,
+      } = n,
       l = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
@@ -32,8 +32,8 @@ class d extends Chunk473749.Component {
           for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
-      }(require, ["icon"]);
-    return (0, Chunk54381.jsx)(Chunk473749, (e = function(e) {
+      }(n, ["icon"]);
+    return (0, r.jsx)(i, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -52,18 +52,18 @@ class d extends Chunk473749.Component {
       return e
     }({
       size: "md"
-    }, Chunk120356), t = t = {
+    }, l), t = t = {
       color: "currentColor"
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(exports)).forEach(function(n) {
+    })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), module))
+    }), e))
   }
 }
 let u = (0, Chunk554916.animated)(d),

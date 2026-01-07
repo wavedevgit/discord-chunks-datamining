@@ -6,7 +6,7 @@ var Chunk520846 = require("./520846.js");
 Object.defineProperty(exports, "Hue", {
   enumerable: true,
   get: function() {
-    return a(Chunk520846).default
+    return a(n).default
   }
 }), require("./689058.js");
 var Chunk858154 = require("./858154.js");
@@ -19,6 +19,6 @@ function a(e) {
 Object.defineProperty(exports, "Saturation", {
   enumerable: true,
   get: function() {
-    return a(Chunk858154).default
+    return a(o).default
   }
 }), require("./998234.js"), require("./683722.js")

@@ -29,7 +29,7 @@ let c = {
 };
 
 function u() {
-  let [e, t] = (0, Chunk473749.useState)(""), [n, l] = (0, Chunk473749.useState)("server-order"), u = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), d = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), f = u.map(e => d[e]), p = Chunk695346.CW.useSetting(), [_, m] = (0, Chunk473749.useState)(p), h = async e => {
+  let [e, t] = (0, r.useState)(""), [n, l] = (0, r.useState)("server-order"), u = (0, i.e7)([s.ZP], () => s.ZP.getFlattenedGuildIds()), d = (0, i.e7)([o.Z], () => o.Z.getGuilds()), f = u.map(e => d[e]), p = a.CW.useSetting(), [_, m] = (0, r.useState)(p), h = async e => {
     m(e);
     try {
       await a.CW.updateSetting(e)
@@ -44,15 +44,15 @@ function u() {
     t ? r.delete(n) : r.add(n), h([...r])
   }, E = e => _.includes(e), b = 0 !== _.length, y = () => {
     b ? h([]) : h(u)
-  }, [O, v] = (0, Chunk473749.useState)(() => c[require](f, p)), S = O.map(e => d[e.id]).filter(Boolean);
+  }, [O, v] = (0, r.useState)(() => c[n](f, p)), S = O.map(e => d[e.id]).filter(Boolean);
   return {
-    guilds: "" === module ? S : S.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
-    sortOrder: require,
-    searchQuery: module,
+    guilds: "" === e ? S : S.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
+    sortOrder: n,
+    searchQuery: e,
     setSortOrder: e => {
       v(c[e](f, p)), l(e)
     },
-    setSearchQuery: exports,
+    setSearchQuery: t,
     onToggleActivityRestrictedGuild: g,
     isActivityRestricted: E,
     hasActivityRestrictedGuilds: b,

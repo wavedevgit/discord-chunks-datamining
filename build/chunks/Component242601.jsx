@@ -135,23 +135,23 @@ class eu extends Chunk473749.PureComponent {
   }
   componentDidMount() {
     var e;
-    this.setAnimatedValue(0), Chunk570140.Z.subscribe("LAYER_PUSH", this.closeAllHeaderNotices), this.historyUnlisten = Chunk304445.Z.addRouteChangeListener(this.handleHistoryChange);
+    this.setAnimatedValue(0), p.Z.subscribe("LAYER_PUSH", this.closeAllHeaderNotices), this.historyUnlisten = Z.Z.addRouteChangeListener(this.handleHistoryChange);
     let {
       location: t
-    } = Chunk304445.Z.getHistory();
-    (null == (e = exports.state) ? true : module.shouldShowSubscribeTooltip) && this.showTimeout.start(1e3, () => this.setState({
+    } = Z.Z.getHistory();
+    (null == (e = t.state) ? true : e.shouldShowSubscribeTooltip) && this.showTimeout.start(1e3, () => this.setState({
       shouldShowSubscribeTooltip: true
     }))
   }
   componentWillUnmount() {
-    this.showTimeout.stop(), this.state.controller.dispose(), this.historyUnlisten(), Chunk570140.Z.unsubscribe("LAYER_PUSH", this.closeAllHeaderNotices)
+    this.showTimeout.stop(), this.state.controller.dispose(), this.historyUnlisten(), p.Z.unsubscribe("LAYER_PUSH", this.closeAllHeaderNotices)
   }
   getGuildBannerHash() {
     let {
       guild: e,
       hasChannelNotice: t
     } = this.props;
-    return null == module || exports ? null : module.banner
+    return null == e || t ? null : e.banner
   }
   renderGuildHeaderNotices(e) {
     let {
@@ -270,26 +270,26 @@ class eu extends Chunk473749.PureComponent {
         guild: n,
         selectedChannel: i,
         enableStudyGroup: l
-      } = module,
-      a = eo(module, ["isUnavailable", "guild", "selectedChannel", "enableStudyGroup"]);
-    if (exports || null == require) return (0, Chunk54381.jsx)(Chunk591190.Z, {
-      withBannerPadding: null != require && null != this.getGuildBannerHash()
+      } = e,
+      a = eo(e, ["isUnavailable", "guild", "selectedChannel", "enableStudyGroup"]);
+    if (t || null == n) return (0, r.jsx)(J.Z, {
+      withBannerPadding: null != n && null != this.getGuildBannerHash()
     });
     {
-      if (require.features.has(Chunk981631.GuildFeatures.HUB) && !Chunk554916) return (0, Chunk54381.jsx)("div", {
-        className: Chunk289033.hubContainer,
-        children: (0, Chunk54381.jsx)(Chunk258871.Z, {
-          guild: require,
-          channel: null != Chunk473749 ? Chunk473749 : Chunk984933.ZP.getDefaultChannel(require.id)
+      if (n.features.has(X.GuildFeatures.HUB) && !l) return (0, r.jsx)("div", {
+        className: er.hubContainer,
+        children: (0, r.jsx)(P.Z, {
+          guild: n,
+          channel: null != i ? i : k.ZP.getDefaultChannel(n.id)
         })
       });
-      let e = require.id === Chunk647086._ ? Chunk373274.j : Chunk373274.E;
-      return (0, Chunk54381.jsx)(module, ea(el({
-        guild: require
-      }, Chunk55160), {
+      let e = n.id === et._ ? W.j : W.E;
+      return (0, r.jsx)(e, ea(el({
+        guild: n
+      }, a), {
         guildBanner: this.getGuildBannerHash(),
         hasGuildSubheader: this.state.hasGuildSubheader,
-        onScroll: null != require && (null != this.getGuildBannerHash() || (0, Chunk598056.Z)(require)) ? this.pinBannerOrGuildInfo : null
+        onScroll: null != n && (null != this.getGuildBannerHash() || (0, Y.Z)(n)) ? this.pinBannerOrGuildInfo : null
       }))
     }
   }
@@ -298,14 +298,14 @@ class eu extends Chunk473749.PureComponent {
     let {
       guild: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("nav", {
-      className: Chunk289033.container,
+    return (0, r.jsxs)("nav", {
+      className: er.container,
       onContextMenu: this.handleContextMenu,
-      "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.nj5gAZ, {
-        guildName: null != (e = null == exports ? true : exports.name) ? module : ""
+      "aria-label": en.intl.formatToPlainString(en.t.nj5gAZ, {
+        guildName: null != (e = null == t ? true : t.name) ? e : ""
       }),
-      children: [null != exports && this.renderGuildHeader(this.state.hasGuildSubheader), null != exports && (0, Chunk54381.jsx)(Chunk156978.Z, {
-        guild: exports,
+      children: [null != t && this.renderGuildHeader(this.state.hasGuildSubheader), null != t && (0, r.jsx)(Q.Z, {
+        guild: t,
         setHasSubheader: e => this.setState({
           hasGuildSubheader: e
         })
@@ -460,16 +460,16 @@ function ed(e) {
     } = (0, j.s)(u),
     Y = (0, E.ZP)(e => e.currentlyShown.has(s.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
     [W, q] = i.useState(!Y),
-    K = (0, h.Z)(n),
+    K = (0, m.Z)(n),
     {
       analyticsLocations: Q
-    } = (0, b.ZP)(m.Z.GUILD_HEADER);
+    } = (0, b.ZP)(h.Z.GUILD_HEADER);
   i.useEffect(() => {
     n !== K && q(!Y)
   }, [n, K, Y]);
   let [J, et] = (0, E.ZP)(e => [$.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ee.R.GUILD_HEADER_TOOLTIPS)], a.X), en = (0, _.Z)(u), er = (0, d.s9z)(d.JQI), ei = (0, o.e7)([G.Z], () => G.Z.hasLayers()), el = (0, o.e7)([L.Z], () => L.Z.shouldShow(es)), ea = (0, S.Z)(n), eo = (null == u ? true : u.features.has(X.GuildFeatures.HUB)) === true, ec = P && (null == u ? true : u.features.has(X.GuildFeatures.DISCOVERABLE)) === true, ed = (0, o.e7)([N.Z, G.Z], () => null != u && null != w && P && !G.Z.hasLayers() && N.Z.shouldShowGuildTemplateDirtyTooltip(n)), ep = (0, o.e7)([R.Z], () => R.Z.getChannel(c)), {
     isPopoutOpen: ef
-  } = (0, y.y)(), eg = null != (t = null == u ? true : u.features.has(X.GuildFeatures.COMMUNITY)) && t, eh = z.ZP.isNewUser(w), em = W && !eh;
+  } = (0, y.y)(), eg = null != (t = null == u ? true : u.features.has(X.GuildFeatures.COMMUNITY)) && t, em = z.ZP.isNewUser(w), eh = W && !em;
   (0, I.Z)(u);
   let eb = (0, O.Nj)(s.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     e_ = (0, x.Z)(n),
@@ -506,7 +506,7 @@ function ed(e) {
     canShowCoachMarkAtBottom: W,
     headerAnalyticsLocations: Q,
     isTutorialHighlightDismissed: eb,
-    shouldRenderBurstCoachmark: em,
+    shouldRenderBurstCoachmark: eh,
     shouldRenderGuildPowerupPerkCoachmark: false === ey
   })
 }

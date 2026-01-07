@@ -14,28 +14,28 @@ var Chunk818710 = require("./818710.js"),
   Chunk60995 = require("./60995.js"),
   Chunk981631 = require("./981631.js");
 let d = async () => {
-  if (!(0, Chunk818710.nI)()) return Chunk5900._n.UNKNOWN;
+  if (!(0, r.nI)()) return l._n.UNKNOWN;
   try {
     switch ((await f()).account.type.toLowerCase()) {
       case "unlimited":
       case "discord":
-        return Chunk5900._n.INSTALLED;
+        return l._n.INSTALLED;
       case "team":
-        return Chunk5900._n.ZERO_TRUST;
+        return l._n.ZERO_TRUST;
       default:
-        return Chunk5900._n.EXISTING_INSTALLATION
+        return l._n.EXISTING_INSTALLATION
     }
   } catch (e) {
-    if (module instanceof Error && "Failed to locate warp-cli" === module.message || module instanceof Error && _(module.message)) return Chunk5900._n.NOT_INSTALLED;
-    if (module instanceof Object && "code" in module && "MissingRegistration" === module.code) return Chunk5900._n.WAITING_FOR_TERMS;
-    return Chunk626135.default.track(Chunk981631.rMx.PREMIUM_FEATURE_ERROR, {
-      error_message: module instanceof Error ? module.message : JSON.stringify(module),
-      error_source: Chunk323183.D.PRIVATE_BROWSING_PERK_INSTALLATION_STATUS
-    }), Chunk960048.Z.captureException(module instanceof Error ? module : Error(JSON.stringify(module)), {
+    if (e instanceof Error && "Failed to locate warp-cli" === e.message || e instanceof Error && _(e.message)) return l._n.NOT_INSTALLED;
+    if (e instanceof Object && "code" in e && "MissingRegistration" === e.code) return l._n.WAITING_FOR_TERMS;
+    return i.default.track(u.rMx.PREMIUM_FEATURE_ERROR, {
+      error_message: e instanceof Error ? e.message : JSON.stringify(e),
+      error_source: s.D.PRIVATE_BROWSING_PERK_INSTALLATION_STATUS
+    }), a.Z.captureException(e instanceof Error ? e : Error(JSON.stringify(e)), {
       tags: {
-        source: Chunk323183.D.PRIVATE_BROWSING_PERK_INSTALLATION_STATUS
+        source: s.D.PRIVATE_BROWSING_PERK_INSTALLATION_STATUS
       }
-    }), Chunk5900._n.ERROR
+    }), l._n.ERROR
   }
 }, f = () => new Promise(async (e, t) => {
   try {
@@ -47,5 +47,5 @@ let d = async () => {
     t(e)
   }
 }), p = async () => {
-  await (0, Chunk60995._)(true), await Chunk998502.ZP.getDiscordUtils().installWarp()
+  await (0, c._)(true), await o.ZP.getDiscordUtils().installWarp()
 }, _ = e => e.includes("Unexpected token") || e.includes("Cannot read properties of undefined") || e.includes("Unexpected end of JSON input")

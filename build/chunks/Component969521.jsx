@@ -8,12 +8,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk818710 = require("./818710.js"),
   Chunk159691 = require("./159691.js");
 let r = () => {
-    let t = (0, Chunk818710.Ij)(),
-      e = (0, Chunk473749.useMemo)(() => a(module), [module]);
-    return (0, Chunk54381.jsx)(Chunk159691.zxk, {
+    let t = (0, s.Ij)(),
+      e = (0, l.useMemo)(() => a(t), [t]);
+    return (0, i.jsx)(u.zxk, {
       text: "Get the Discord App",
       onClick: () => {
-        window.location.href = "https://discord.com/api/download?platform=" + exports
+        window.location.href = "https://discord.com/api/download?platform=" + e
       }
     })
   },

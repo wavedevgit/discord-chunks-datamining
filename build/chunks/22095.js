@@ -143,38 +143,38 @@ async function x(e) {
   })
 }
 async function L() {
-  await Chunk544891.tn.del({
-    url: Chunk981631.ANM.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
+  await i.tn.del({
+    url: T.ANM.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
     rejectWithError: false
   })
 }
 async function j() {
-  if (!Chunk616022.Z.isFetchingCurrentQuests) {
-    Chunk570140.Z.dispatch({
+  if (!E.Z.isFetchingCurrentQuests) {
+    a.Z.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
     });
     try {
-      let e = await Chunk544891.tn.get({
-          url: Chunk981631.ANM.QUESTS_CURRENT_QUESTS,
+      let e = await i.tn.get({
+          url: T.ANM.QUESTS_CURRENT_QUESTS,
           rejectWithError: false
         }),
-        t = module.body.quests.filter(e => (0, S.Qe)(e)).map(e => (0, S.WP)(e)),
-        n = module.body.quest_enrollment_blocked_until,
-        r = exports.filter(e => {
+        t = e.body.quests.filter(e => (0, S.Qe)(e)).map(e => (0, S.WP)(e)),
+        n = e.body.quest_enrollment_blocked_until,
+        r = t.filter(e => {
           var t;
           return (null == (t = e.userStatus) ? true : t.claimedAt) != null || e.config.rewardsConfig.platforms.length > 0
         }),
-        o = module.body.excluded_quests.map(e => (0, S.Qr)(e));
-      Chunk570140.Z.dispatch({
+        o = e.body.excluded_quests.map(e => (0, S.Qr)(e));
+      a.Z.dispatch({
         type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
-        quests: Chunk990547,
-        excludedQuests: Chunk479531,
-        questEnrollmentBlockedUntil: require
+        quests: r,
+        excludedQuests: o,
+        questEnrollmentBlockedUntil: n
       })
     } catch (e) {
-      Chunk570140.Z.dispatch({
+      a.Z.dispatch({
         type: "QUESTS_FETCH_CURRENT_QUESTS_FAILURE",
-        error: new Chunk479531.Z(module)
+        error: new o.Z(e)
       })
     }
   }
@@ -454,23 +454,23 @@ function z(e, t) {
   })
 }
 async function q() {
-  if (!Chunk616022.Z.isFetchingClaimedQuests) {
-    Chunk570140.Z.dispatch({
+  if (!E.Z.isFetchingClaimedQuests) {
+    a.Z.dispatch({
       type: "QUESTS_FETCH_CLAIMED_QUESTS_BEGIN"
     });
     try {
-      let e = (await Chunk544891.tn.get({
-        url: Chunk981631.ANM.QUESTS_CLAIMED_QUESTS,
+      let e = (await i.tn.get({
+        url: T.ANM.QUESTS_CLAIMED_QUESTS,
         rejectWithError: false
       })).body.quests.map(e => (0, S.hQ)(e));
-      Chunk570140.Z.dispatch({
+      a.Z.dispatch({
         type: "QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS",
-        quests: module
+        quests: e
       })
     } catch (e) {
-      Chunk570140.Z.dispatch({
+      a.Z.dispatch({
         type: "QUESTS_FETCH_CLAIMED_QUESTS_FAILURE",
-        error: new Chunk479531.Z(module)
+        error: new o.Z(e)
       })
     }
   }
@@ -642,31 +642,31 @@ async function er(e) {
 }
 let ei = 5 * Chunk70956.Z.Millis.MINUTE;
 async function ea() {
-  if (Chunk616022.Z.isFetchingQuestHomeTakeover()) return;
-  let e = Chunk616022.Z.getLastFetchedQuestHomeTakeover();
-  if (!(null != module && Date.now() - module <= ei)) {
-    Chunk570140.Z.dispatch({
+  if (E.Z.isFetchingQuestHomeTakeover()) return;
+  let e = E.Z.getLastFetchedQuestHomeTakeover();
+  if (!(null != e && Date.now() - e <= ei)) {
+    a.Z.dispatch({
       type: "QUESTS_FETCH_QUEST_HOME_TAKEOVER_BEGIN"
     });
     try {
-      let e = [Chunk49436.rO.QUEST_HOME_BANNER],
-        t = await Chunk544891.tn.get({
-          url: Chunk981631.ANM.QUEST_PLACEMENT,
+      let e = [b.rO.QUEST_HOME_BANNER],
+        t = await i.tn.get({
+          url: T.ANM.QUEST_PLACEMENT,
           query: {
-            placements: module,
-            platform: Chunk49436.QN.WEB
+            placements: e,
+            platform: b.QN.WEB
           },
           rejectWithError: false
         });
-      Chunk570140.Z.dispatch({
+      a.Z.dispatch({
         type: "QUESTS_FETCH_QUEST_HOME_TAKEOVER_SUCCESS",
-        takeover: (0, Chunk552943.t6)(exports.body)
+        takeover: (0, S.t6)(t.body)
       })
     } catch (e) {
-      throw Chunk570140.Z.dispatch({
+      throw a.Z.dispatch({
         type: "QUESTS_FETCH_QUEST_HOME_TAKEOVER_FAILURE",
-        error: new Chunk479531.Z(module)
-      }), module
+        error: new o.Z(e)
+      }), e
     }
   }
 }

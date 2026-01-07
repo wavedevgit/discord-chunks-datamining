@@ -33,19 +33,19 @@ class s {
     let e = {
       games: this.games
     };
-    Chunk433517.K.set(s.storageKey, module)
+    r.K.set(s.storageKey, e)
   }
   static load() {
     return null == s._loaded && (s._loaded = s.loadInternal()), s._loaded
   }
   static loadInternal() {
-    let e = Chunk433517.K.get(s.storageKey);
-    if (null != module) {
+    let e = r.K.get(s.storageKey);
+    if (null != e) {
       var t;
-      return new s(null != (t = module.games) ? exports : {})
+      return new s(null != (t = e.games) ? t : {})
     }
     let n = new s({});
-    return require.save(), require
+    return n.save(), n
   }
   static getGameSettings(e) {
     var t;
@@ -84,14 +84,14 @@ class s {
   }
   static clearOldGameSettings() {
     let e = s.load();
-    if (null == module.games) return;
+    if (null == e.games) return;
     let t = Date.now() - 31536e6;
-    for (let n in module.games) module.games[require].date < exports && delete module.games[require];
-    module.save()
+    for (let n in e.games) e.games[n].date < t && delete e.games[n];
+    e.save()
   }
   static reset() {
     let e = s.load();
-    module.games = {}, module.save()
+    e.games = {}, e.save()
   }
   static isTestMode() {
     return !!window.__GAME_DISPLAY_MODE_TEST_MODE__

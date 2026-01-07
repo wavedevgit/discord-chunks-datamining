@@ -20,7 +20,7 @@ class i {
   flush() {
     for (; this.queue.length > 0;) {
       var e;
-      null == (e = this.queue.shift()) || module()
+      null == (e = this.queue.shift()) || e()
     }
   }
   constructor() {

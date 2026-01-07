@@ -47,7 +47,7 @@ let L = new Set,
   M = false;
 
 function k() {
-  Chunk89892.Z.forEach(e => {
+  u.Z.forEach(e => {
     u.Z.commit(e.mutate({
       ready: false,
       loadingMore: false
@@ -261,7 +261,7 @@ function ee(e) {
 }
 
 function et() {
-  Chunk89892.Z.forEach(e => {
+  u.Z.forEach(e => {
     let {
       channelId: t
     } = e;
@@ -271,9 +271,9 @@ function et() {
 
 function en() {
   let e = false;
-  return Chunk89892.Z.forEach(t => {
+  return u.Z.forEach(t => {
     u.Z.commit(t.reset(t.map(t => (t.blocked !== N.Z.isBlockedForMessage(t) && (e = true, t = t.set("blocked", N.Z.isBlockedForMessage(t))), t.ignored !== N.Z.isIgnoredForMessage(t) && (e = true, t = t.set("ignored", N.Z.isIgnoredForMessage(t))), t))))
-  }), module
+  }), e
 }
 
 function er(e) {
@@ -351,7 +351,7 @@ function eu(e) {
 }
 
 function ed() {
-  Chunk89892.Z.forEach(e => {
+  u.Z.forEach(e => {
     u.Z.clear(e.channelId)
   }), L.clear()
 }
@@ -376,7 +376,7 @@ function e_(e) {
 }
 class em extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk796974.Z, Chunk984933.ZP, Chunk271383.ZP, Chunk430824.Z, Chunk160404.Z, Chunk706454.default, Chunk496675.Z, Chunk699516.Z, Chunk944486.Z, Chunk914010.Z, Chunk594174.default), this.syncWith([Chunk160404.Z], () => {})
+    this.waitFor(O.default, v.Z, S.Z, I.ZP, T.ZP, C.Z, m.Z, b.default, A.Z, N.Z, P.Z, R.Z, w.default), this.syncWith([m.Z], () => {})
   }
   getMessages(e) {
     if (m.Z.hasViewingRoles()) {

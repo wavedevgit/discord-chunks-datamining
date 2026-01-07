@@ -27,14 +27,14 @@ let c = new Chunk579092.Yd("LibdiscoreExperiments"),
 class f {
   getEnabledFeatureName() {
     let e = this.getCachedConfig();
-    return true === module || module.treatmentId <= 0 ? null : "".concat(this.id, ":").concat(module.treatmentId)
+    return true === e || e.treatmentId <= 0 ? null : "".concat(this.id, ":").concat(e.treatmentId)
   }
   getCachedConfig() {
     if (this.cachedConfig === d)
-      if ((0, Chunk668757.X6)()) try {
-        this.cachedConfig = (0, Chunk668757.Md)().getConfig(this.id)
+      if ((0, a.X6)()) try {
+        this.cachedConfig = (0, a.Md)().getConfig(this.id)
       } catch (e) {
-        this.cachedConfig = true, c.error("Error getting experiment config", module)
+        this.cachedConfig = true, c.error("Error getting experiment config", e)
       } else this.cachedConfig = true;
     return this.cachedConfig
   }
@@ -65,7 +65,7 @@ class p extends f {
   }
   getCachedEnabled() {
     let e = this.getCachedConfig();
-    return null != module && 1 === module.treatmentId
+    return null != e && 1 === e.treatmentId
   }
   constructor(e, t) {
     super(e), l(this, "label", true), this.label = t
@@ -76,7 +76,7 @@ class _ extends f {
     let e = this.getCachedConfig(),
       t = (() => {
         var t;
-        switch (null != (t = null == module ? true : module.treatmentId) ? exports : false) {
+        switch (null != (t = null == e ? true : e.treatmentId) ? t : false) {
           case 1:
             return "typescript-libdiscore-dual-read";
           case 2:
@@ -85,11 +85,11 @@ class _ extends f {
             return "typescript"
         }
       })();
-    return (0, Chunk750179.k)(exports)
+    return (0, s.k)(t)
   }
   getEnabledFeatureName() {
     let e = this.getCachedBridgedStoreMode();
-    return "typescript" === module ? null : "".concat(this.type, "Store[").concat(this.storeName, ",").concat(module, "]")
+    return "typescript" === e ? null : "".concat(this.type, "Store[").concat(this.storeName, ",").concat(e, "]")
   }
   getLabel() {
     return "libdiscore '".concat(this.storeName, "' Migration")
@@ -124,7 +124,7 @@ class m extends f {
   }
   getMetricsSampleRate() {
     let e = this.getCachedConfig();
-    switch (null == module ? true : module.treatmentId) {
+    switch (null == e ? true : e.treatmentId) {
       case 1:
         return .01;
       case 2:
@@ -140,7 +140,7 @@ class m extends f {
   }
   shouldCollectMetrics() {
     let e = this.getMetricsSampleRate();
-    return 0 !== module && (1 === module || !(this.emissionsCount >= this.MAX_EMISSIONS_PER_APP_LAUNCH) && Math.random() < module)
+    return 0 !== e && (1 === e || !(this.emissionsCount >= this.MAX_EMISSIONS_PER_APP_LAUNCH) && Math.random() < e)
   }
   constructor(...e) {
     super(...e), l(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), l(this, "emissionsCount", 0)

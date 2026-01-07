@@ -35,7 +35,7 @@ var Chunk526167 = require("./526167.js"),
 
 function R() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return module ? Chunk235731 : Chunk621554
+  return e ? P : i
 }
 let w = {
   DEFAULT_AVATARS: [Chunk328756, Chunk639525, Chunk131812, Chunk265174, Chunk926425, Chunk844049],
@@ -48,6 +48,6 @@ let w = {
   },
   DEFAULT_CHANNEL_ICON: Chunk669730,
   canUseWebp: function() {
-    return Chunk526167.og()
+    return r.og()
   }
 }

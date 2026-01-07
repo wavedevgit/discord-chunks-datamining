@@ -11,9 +11,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_RESOLUTION, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.aFudZJ),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.nIrkW5),
-  useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().clipsQuality.resolution),
+  useTitle: () => o.intl.string(o.t.aFudZJ),
+  useSubtitle: () => o.intl.string(o.t.nIrkW5),
+  useValue: () => (0, i.e7)([l.Z], () => l.Z.getSettings().clipsQuality.resolution),
   setValue: t => {
     let {
       clipsQuality: e
@@ -25,31 +25,31 @@ let T = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_RESOLUTION, {
   },
   useOptions: () => [{
     id: "480p",
-    value: Chunk37113.LY.RESOLUTION_480,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-      resolution: Chunk37113.LY.RESOLUTION_480
+    value: a.LY.RESOLUTION_480,
+    label: o.intl.formatToPlainString(o.t.TEOC0I, {
+      resolution: a.LY.RESOLUTION_480
     })
   }, {
     id: "720p",
-    value: Chunk37113.LY.RESOLUTION_720,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-      resolution: Chunk37113.LY.RESOLUTION_720
+    value: a.LY.RESOLUTION_720,
+    label: o.intl.formatToPlainString(o.t.TEOC0I, {
+      resolution: a.LY.RESOLUTION_720
     })
   }, {
     id: "1080p",
-    value: Chunk37113.LY.RESOLUTION_1080,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-      resolution: Chunk37113.LY.RESOLUTION_1080
+    value: a.LY.RESOLUTION_1080,
+    label: o.intl.formatToPlainString(o.t.TEOC0I, {
+      resolution: a.LY.RESOLUTION_1080
     })
   }, {
     id: "1440p",
-    value: Chunk37113.LY.RESOLUTION_1440,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-      resolution: Chunk37113.LY.RESOLUTION_1440
+    value: a.LY.RESOLUTION_1440,
+    label: o.intl.formatToPlainString(o.t.TEOC0I, {
+      resolution: a.LY.RESOLUTION_1440
     })
   }, {
     id: "source",
-    value: Chunk37113.LY.RESOLUTION_SOURCE,
-    label: Chunk388032.intl.string(Chunk388032.t.XjXqzh)
+    value: a.LY.RESOLUTION_SOURCE,
+    label: o.intl.string(o.t.XjXqzh)
   }]
 })

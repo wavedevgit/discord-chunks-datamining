@@ -36,23 +36,23 @@ function _(e, t, n) {
 }
 
 function Z() {
-  let e = Chunk237997.default.getNotificationPositionMode(),
-    t = module !== Chunk981631._vf.DISABLED,
-    n = Chunk556296.ZP.getOverlayKeybind(),
-    i = Chunk556296.ZP.getOverlayChatKeybind();
-  Chunk13245.Z.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, {
+  let e = h.default.getNotificationPositionMode(),
+    t = e !== O._vf.DISABLED,
+    n = f.ZP.getOverlayKeybind(),
+    i = f.ZP.getOverlayChatKeybind();
+  l.Z.track(O.rMx.OVERLAY_SETTINGS_UPDATED, {
     enabled: true,
-    notifications_enabled: exports,
-    notifications_position: exports ? module : null,
-    text_notifications_mode: Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat) ? "DISABLED" : "ENABLED",
-    text_opacity_slider: Chunk237997.default.getTextWidgetOpacity(),
-    hotkey: null != require ? (0, Chunk13140.BB)(require.shortcut) : null,
-    text_activation_hotkey: null != Chunk54381 ? (0, Chunk13140.BB)(Chunk54381.shortcut) : null
+    notifications_enabled: t,
+    notifications_position: t ? e : null,
+    text_notifications_mode: y.Z.isNotificationDisabled(v.n0.TextChat) ? "DISABLED" : "ENABLED",
+    text_opacity_slider: h.default.getTextWidgetOpacity(),
+    hotkey: null != n ? (0, g.BB)(n.shortcut) : null,
+    text_activation_hotkey: null != i ? (0, g.BB)(i.shortcut) : null
   })
 }
 class j extends Chunk473749.PureComponent {
   componentDidMount() {
-    Chunk13245.Z.track(Chunk981631.rMx.SETTINGS_PANE_VIEWED, {
+    l.Z.track(O.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "overlay",
       destination_pane: "OVERLAY SETTINGS",
       origin_pane: null
@@ -80,24 +80,24 @@ class j extends Chunk473749.PureComponent {
     l.Z.setDisplayUserMode(t)
   }
   renderHeader() {
-    return (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      direction: Chunk600164.Z.Direction.VERTICAL,
+    return (0, i.jsxs)(c.Z, {
+      direction: c.Z.Direction.VERTICAL,
       grow: 0,
       shrink: 0,
-      className: Chunk512080.header,
-      children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      className: x.header,
+      children: [(0, i.jsxs)(c.Z, {
+        children: [(0, i.jsx)(o.Heading, {
           variant: "heading-md/semibold",
-          className: Chunk512080.headerTitle,
-          children: Chunk388032.intl.string(Chunk388032.t["35G2Mq"])
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk512080.headerClose,
-          children: (0, Chunk54381.jsx)(Chunk481060.hU, {
+          className: x.headerTitle,
+          children: E.intl.string(E.t["35G2Mq"])
+        }), (0, i.jsx)("div", {
+          className: x.headerClose,
+          children: (0, i.jsx)(o.hU, {
             variant: "icon-only",
             size: "md",
-            icon: Chunk481060.Dio,
+            icon: o.Dio,
             onClick: this.props.onClose,
-            "aria-label": Chunk388032.intl.string(Chunk388032.t.cpT0Cq)
+            "aria-label": E.intl.string(E.t.cpT0Cq)
           })
         })]
       }), this.renderTabBar()]
@@ -106,32 +106,32 @@ class j extends Chunk473749.PureComponent {
   renderTabBar() {
     let {
       selectedSection: e
-    } = this.state, t = Chunk906467.Z.isDeveloper ? (0, Chunk54381.jsx)(Chunk481060.njP.Item, {
+    } = this.state, t = u.Z.isDeveloper ? (0, i.jsx)(o.njP.Item, {
       id: "DEVELOPER",
-      className: Chunk512080.tabBarItem,
+      className: x.tabBarItem,
       children: "Developer"
     }) : null;
-    return (0, Chunk54381.jsxs)(Chunk481060.njP, {
-      selectedItem: module,
+    return (0, i.jsxs)(o.njP, {
+      selectedItem: e,
       type: "top",
-      className: Chunk512080.__invalid_tabBar,
+      className: x.__invalid_tabBar,
       onItemSelect: this.handleSelectSection,
-      children: [(0, Chunk54381.jsx)(Chunk481060.njP.Item, {
+      children: [(0, i.jsx)(o.njP.Item, {
         id: "GENERAL",
-        className: Chunk512080.tabBarItem,
-        children: Chunk388032.intl.string(Chunk388032.t["0FYxxw"])
-      }), (0, Chunk54381.jsx)(Chunk481060.njP.Item, {
+        className: x.tabBarItem,
+        children: E.intl.string(E.t["0FYxxw"])
+      }), (0, i.jsx)(o.njP.Item, {
         id: "VOICE",
-        className: Chunk512080.tabBarItem,
-        children: Chunk388032.intl.string(Chunk388032.t["3WeSiE"])
-      }), exports]
+        className: x.tabBarItem,
+        children: E.intl.string(E.t["3WeSiE"])
+      }), t]
     })
   }
   renderBody() {
     let e, {
       selectedSection: t
     } = this.state;
-    switch (exports) {
+    switch (t) {
       case "DEVELOPER":
         e = this.renderDeveloperSettings();
         break;
@@ -141,10 +141,10 @@ class j extends Chunk473749.PureComponent {
       default:
         e = this.renderGeneralSettings()
     }
-    return (0, Chunk54381.jsx)(Chunk481060.h21, {
-      className: Chunk512080.content,
-      children: module
-    }, exports)
+    return (0, i.jsx)(o.h21, {
+      className: x.content,
+      children: e
+    }, t)
   }
   renderGeneralSettings() {
     let {
@@ -152,27 +152,27 @@ class j extends Chunk473749.PureComponent {
       shouldShowKeybindIndicators: t,
       showKeybindIndicators: n,
       shouldShowInviteNotification: r
-    } = this.props, a = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), s = module !== Chunk981631._vf.DISABLED;
-    return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.IQv8Eo),
-        children: (0, Chunk54381.jsx)(Chunk212632.Z, {
-          position: module,
+    } = this.props, a = !y.Z.isNotificationDisabled(v.n0.TextChat), s = e !== O._vf.DISABLED;
+    return (0, i.jsxs)(o.C3N, {
+      children: [(0, i.jsx)(o.gNt, {
+        label: E.intl.string(E.t.IQv8Eo),
+        children: (0, i.jsx)(d.Z, {
+          position: e,
           onChange: this.handleChangeNotificationPositionMode
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.Fy5kPp),
-        checked: Chunk442837 && Chunk199849,
+      }), (0, i.jsx)(o.rsf, {
+        label: E.intl.string(E.t.Fy5kPp),
+        checked: a && s,
         onChange: this.handleToggleTextChatNotifications,
-        disabled: !Chunk199849
-      }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["f+c48/"]),
-        description: Chunk388032.intl.string(Chunk388032.t.W9DVVf),
-        checked: Chunk473749,
+        disabled: !s
+      }), (0, i.jsx)(o.rsf, {
+        label: E.intl.string(E.t["f+c48/"]),
+        description: E.intl.string(E.t.W9DVVf),
+        checked: r,
         onChange: this.handleToggleInviteNotification
-      }), require && (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.XZTl9r),
-        checked: exports,
+      }), n && (0, i.jsx)(o.rsf, {
+        label: E.intl.string(E.t.XZTl9r),
+        checked: t,
         onChange: e => l.Z.setShowKeybindIndicators(e)
       })]
     })
@@ -183,57 +183,57 @@ class j extends Chunk473749.PureComponent {
       displayNameMode: t,
       displayUserMode: n
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    return (0, i.jsxs)(o.Kqy, {
       gap: 20,
-      children: [(0, Chunk54381.jsx)(Chunk481060.FXm, {
-        label: Chunk388032.intl.string(Chunk388032.t.dnvZSg),
+      children: [(0, i.jsx)(o.FXm, {
+        label: E.intl.string(E.t.dnvZSg),
         onChange: e => this.handleChangeAvatarSizeMode({
           value: e
         }),
         options: [{
-          value: Chunk981631.ipw.LARGE,
-          name: Chunk388032.intl.string(Chunk388032.t.YcOxtr)
+          value: O.ipw.LARGE,
+          name: E.intl.string(E.t.YcOxtr)
         }, {
-          value: Chunk981631.ipw.SMALL,
-          name: Chunk388032.intl.string(Chunk388032.t.BKIKqx)
+          value: O.ipw.SMALL,
+          name: E.intl.string(E.t.BKIKqx)
         }],
-        value: module
-      }), (0, Chunk54381.jsx)(Chunk481060.FXm, {
-        label: Chunk388032.intl.string(Chunk388032.t.J0dpcB),
+        value: e
+      }), (0, i.jsx)(o.FXm, {
+        label: E.intl.string(E.t.J0dpcB),
         onChange: e => this.handleChangeDisplayNameMode({
           value: e
         }),
         options: [{
-          value: Chunk981631.wC$.ALWAYS,
-          name: Chunk388032.intl.string(Chunk388032.t.nBmDrT)
+          value: O.wC$.ALWAYS,
+          name: E.intl.string(E.t.nBmDrT)
         }, {
-          value: Chunk981631.wC$.ONLY_WHILE_SPEAKING,
-          name: Chunk388032.intl.string(Chunk388032.t["2OvIZY"])
+          value: O.wC$.ONLY_WHILE_SPEAKING,
+          name: E.intl.string(E.t["2OvIZY"])
         }, {
-          value: Chunk981631.wC$.NEVER,
-          name: Chunk388032.intl.string(Chunk388032.t.ekjlPL)
+          value: O.wC$.NEVER,
+          name: E.intl.string(E.t.ekjlPL)
         }],
-        value: exports
-      }), (0, Chunk54381.jsx)(Chunk481060.FXm, {
-        label: Chunk388032.intl.string(Chunk388032.t.swsWWC),
+        value: t
+      }), (0, i.jsx)(o.FXm, {
+        label: E.intl.string(E.t.swsWWC),
         onChange: e => this.handleChangeDisplayUserMode({
           value: e
         }),
         options: [{
-          value: Chunk981631.OYC.ALWAYS,
-          name: Chunk388032.intl.string(Chunk388032.t.nBmDrT)
+          value: O.OYC.ALWAYS,
+          name: E.intl.string(E.t.nBmDrT)
         }, {
-          value: Chunk981631.OYC.ONLY_WHILE_SPEAKING,
-          name: Chunk388032.intl.string(Chunk388032.t["2OvIZY"])
+          value: O.OYC.ONLY_WHILE_SPEAKING,
+          name: E.intl.string(E.t["2OvIZY"])
         }],
-        value: require
+        value: n
       })]
     })
   }
   renderDeveloperSettings() {
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk478411.marginBottom20,
-      children: (0, Chunk54381.jsx)(Chunk199849.y6, {
+    return (0, i.jsx)("div", {
+      className: S.marginBottom20,
+      children: (0, i.jsx)(s.y6, {
         label: "Crashes",
         value: true,
         options: [{
@@ -260,9 +260,9 @@ class j extends Chunk473749.PureComponent {
     })
   }
   render() {
-    return (0, Chunk54381.jsxs)(Chunk481060.VqE, {
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["35G2Mq"]),
-      className: Chunk512080.container,
+    return (0, i.jsxs)(o.VqE, {
+      "aria-label": E.intl.string(E.t["35G2Mq"]),
+      className: x.container,
       children: [this.renderHeader(), this.renderBody()]
     })
   }

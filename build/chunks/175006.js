@@ -9,6 +9,6 @@ var Chunk594174 = require("./594174.js"),
   Chunk474936 = require("./474936.js");
 
 function o() {
-  let e = Chunk594174.default.getCurrentUser();
-  return (0, Chunk111361.I5)(module, Chunk474936.PremiumTypes.TIER_2)
+  let e = r.default.getCurrentUser();
+  return (0, i.I5)(e, a.PremiumTypes.TIER_2)
 }

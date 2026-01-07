@@ -14,16 +14,16 @@ var Chunk481060 = require("./481060.js"),
   Chunk38920 = require("./38920.js");
 
 function u() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk942016.__invalid_getCrunchyrollApp,
-    children: (0, Chunk54381.jsx)("div", {
-      className: Chunk942016.__invalid_getCrunchyrollAppBody,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, o.jsx)("div", {
+    className: d.__invalid_getCrunchyrollApp,
+    children: (0, o.jsx)("div", {
+      className: d.__invalid_getCrunchyrollAppBody,
+      children: (0, o.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: (0, Chunk54381.jsx)(Chunk481060.eee, {
-          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CRUNCHYROLL_CONNECTION),
-          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+        children: (0, o.jsx)(i.eee, {
+          href: r.Z.getArticleURL(s.BhN.CRUNCHYROLL_CONNECTION),
+          children: l.intl.string(l.t.hvVgAZ)
         })
       })
     })

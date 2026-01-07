@@ -124,16 +124,16 @@ var D = function(e) {
 }({});
 class x extends Chunk47770.Z {
   createWebSocket() {
-    this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = (0, Chunk379649.zO)(), this.helloTimeout = setTimeout(() => {
-      let e = (0, Chunk379649.zO)() - this.connectionStartTime;
-      this.handleClose(false, 0, "The connection timed out after ".concat(module, " ms - did not receive OP_HELLO in time."))
+    this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = (0, s.zO)(), this.helloTimeout = setTimeout(() => {
+      let e = (0, s.zO)() - this.connectionStartTime;
+      this.handleClose(false, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time."))
     }, y);
     let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(E));
-    module.binaryType = "arraybuffer", module.onopen = () => {
+    e.binaryType = "arraybuffer", e.onopen = () => {
       1 === this.connectionState ? this.emit("connect") : 5 === this.connectionState && this.doResumeOrClose(), this.connectionState = 4;
-      let e = (0, Chunk379649.zO)() - this.connectionStartTime;
-      this.logger.info("[CONNECTED] ".concat(this.url, " in ").concat(module, " ms")), this.emit("ping", Math.round(module / 2))
-    }, module.onmessage = e => {
+      let e = (0, s.zO)() - this.connectionStartTime;
+      this.logger.info("[CONNECTED] ".concat(this.url, " in ").concat(e, " ms")), this.emit("ping", Math.round(e / 2))
+    }, e.onmessage = e => {
       let {
         op: t,
         seq: n,
@@ -221,7 +221,7 @@ class x extends Chunk47770.Z {
         default:
           this.logger.info("Unhandled op ".concat(t))
       }
-    }, module.onerror = () => this.handleClose(false, 0, "An error with the websocket occurred"), module.onclose = e => {
+    }, e.onerror = () => this.handleClose(false, 0, "An error with the websocket occurred"), e.onclose = e => {
       let {
         wasClean: t,
         code: n,
@@ -256,13 +256,13 @@ class x extends Chunk47770.Z {
     this.sendHeartbeat()
   }
   doResumeOrClose() {
-    let e = (0, Chunk379649.zO)();
-    null !== this.serverId && null !== this.channelId && null !== this.token && null !== this.sessionId && this.resumable && (null == this.lastHeartbeatAckTime || module - this.lastHeartbeatAckTime <= v) ? (this.doResume(), this.lastHeartbeatAckTime = module) : this.disconnect(false, 4801, "Cannot resume connection.")
+    let e = (0, s.zO)();
+    null !== this.serverId && null !== this.channelId && null !== this.token && null !== this.sessionId && this.resumable && (null == this.lastHeartbeatAckTime || e - this.lastHeartbeatAckTime <= v) ? (this.doResume(), this.lastHeartbeatAckTime = e) : this.disconnect(false, 4801, "Cannot resume connection.")
   }
   doResume() {
     var e, t, n, r;
-    let i = null != (e = this.lastRecvSeqNum) ? module : false;
-    this.logger.info("[RESUME] resuming session. serverId=".concat(null != (t = this.serverId) ? exports : "", " channelId=").concat(null != (n = this.channelId) ? require : "", " sessionId=").concat(null != (r = this.sessionId) ? Chunk512722 : "", " seqAck=").concat(i)), this.emit("resuming"), this.connectionState = 3, this.send(7, {
+    let i = null != (e = this.lastRecvSeqNum) ? e : false;
+    this.logger.info("[RESUME] resuming session. serverId=".concat(null != (t = this.serverId) ? t : "", " channelId=").concat(null != (n = this.channelId) ? n : "", " sessionId=").concat(null != (r = this.sessionId) ? r : "", " seqAck=").concat(i)), this.emit("resuming"), this.connectionState = 3, this.send(7, {
       token: this.token,
       session_id: this.sessionId,
       server_id: this.serverId,
@@ -335,7 +335,7 @@ class x extends Chunk47770.Z {
   handleHeartbeatTimeout() {
     this.cleanupWebSocket(e => e.close(4e3));
     let e = this.backoff.fail(() => this.reconnect(false, 4800, "Heartbeat timeout."));
-    this.logger.warn("[HEARTBEAT ACK TIMEOUT] reconnecting in ".concat((module / 1e3).toFixed(2), " seconds."))
+    this.logger.warn("[HEARTBEAT ACK TIMEOUT] reconnecting in ".concat((e / 1e3).toFixed(2), " seconds."))
   }
   startHeartbeater() {
     i()(null != this.heartbeatInterval, "RTCControlSocket: Heartbeat interval should never null here."), this.logger.info("Starting heartbeat with interval: ".concat(this.heartbeatInterval)), null !== this.heartbeater && clearInterval(this.heartbeater), this.heartbeatAck = true, this.heartbeater = setInterval(() => {
@@ -345,12 +345,12 @@ class x extends Chunk47770.Z {
   sendHeartbeat() {
     if (this.serverVersion >= A) {
       var e;
-      let t = null != (e = this.lastRecvSeqNum) ? module : false;
-      this.logger.info("Sending heartbeat with last received sequence number: ".concat(exports)), this.send(3, {
-        t: (0, Chunk379649.zO)(),
-        seq_ack: exports
+      let t = null != (e = this.lastRecvSeqNum) ? e : false;
+      this.logger.info("Sending heartbeat with last received sequence number: ".concat(t)), this.send(3, {
+        t: (0, s.zO)(),
+        seq_ack: t
       })
-    } else this.logger.info("Sending heartbeat"), this.send(3, (0, Chunk379649.zO)())
+    } else this.logger.info("Sending heartbeat"), this.send(3, (0, s.zO)())
   }
   stopHeartbeater() {
     null !== this.heartbeater && (clearInterval(this.heartbeater), this.heartbeater = null), null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null)
@@ -394,7 +394,7 @@ class x extends Chunk47770.Z {
   }
   resetBackoff() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "";
-    return this.backoff.fails > 0 && null == this.webSocket && (this.logger.info("Connection backoff reset ".concat("" !== module ? "for reason: " + module : "")), this.backoff.succeed(), this.reconnect(false, 4802, "Reset backoff."), true)
+    return this.backoff.fails > 0 && null == this.webSocket && (this.logger.info("Connection backoff reset ".concat("" !== e ? "for reason: " + e : "")), this.backoff.succeed(), this.reconnect(false, 4802, "Reset backoff."), true)
   }
   close() {
     this.logger.info("CLOSE"), this.cleanupWebSocket(e => e.close(4e3)), this.cleanupState(), this.connectionState = 0, this.emit("disconnect", true, 1e3, "Force Close")

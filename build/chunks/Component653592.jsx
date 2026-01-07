@@ -15,7 +15,7 @@ var Chunk51251 = require("./51251.js"),
 let l = [Chunk51251.g, Chunk951366.$L, Chunk299889.j];
 
 function c() {
-  return (0, Chunk54381.jsx)(Chunk156142.Playground, {
+  return (0, r.jsx)(s.Playground, {
     configs: l
   })
 }

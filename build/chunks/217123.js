@@ -17,30 +17,30 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let g = (0, Chunk509613.wf)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
+    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
     StronglyDiscouragedCustomComponent: Chunk949493.Z,
-    usePredicate: () => !(0, Chunk526665.gN)("ContentAndSocialPanel"),
+    usePredicate: () => !(0, r.gN)("ContentAndSocialPanel"),
     buildLayout: () => []
   }),
   I = (0, Chunk509613.ZH)(Chunk313789.n.CONTENT_AND_SOCIAL_MAIN_TAB, {
-    getTitle: () => Chunk388032.intl.string(Chunk388032.t["/7xJCF"]),
-    buildLayout: () => [Chunk318092.v, Chunk883626.M, Chunk563092._, Chunk735901.f]
+    getTitle: () => _.intl.string(_.t["/7xJCF"]),
+    buildLayout: () => [T.v, E.M, S._, c.f]
   }),
   N = (0, Chunk509613.ZH)(Chunk313789.n.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
     initialize: () => {
-      Chunk384275.Z.fetch()
+      l.Z.fetch()
     },
-    getTitle: () => Chunk388032.intl.string(Chunk388032.t.YpCiMt),
-    buildLayout: () => [Chunk568246.k]
+    getTitle: () => _.intl.string(_.t.YpCiMt),
+    buildLayout: () => [o.k]
   }),
   A = (0, Chunk509613.wf)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
-    usePredicate: () => (0, Chunk526665.gN)("ContentAndSocialPanel"),
+    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
+    usePredicate: () => (0, r.gN)("ContentAndSocialPanel"),
     buildLayout: () => [I, N]
   }),
   O = (0, Chunk509613.m7)(Chunk313789.n.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("ContentAndSocialPanel") ? true : Chunk726985.s6.CONTENT_SOCIAL,
+    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
+    getLegacySearchKey: () => (0, r.Gl)("ContentAndSocialPanel") ? true : d.s6.CONTENT_SOCIAL,
     icon: Chunk657707.lZ8,
-    buildLayout: () => (0, Chunk526665.Gl)("ContentAndSocialPanel") ? [A] : [g]
+    buildLayout: () => (0, r.Gl)("ContentAndSocialPanel") ? [A] : [g]
   })

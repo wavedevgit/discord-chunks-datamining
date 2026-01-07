@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk173957 = require("./173957.js");
-let S = Chunk473749.lazy(() => require.e("89792").then(require.bind(require, 711635)));
+let S = Chunk473749.lazy(() => n.e("89792").then(n.bind(n, 711635)));
 
 function I(e) {
   let t = (b.TC.indexOf(e) + 1) % b.TC.length,

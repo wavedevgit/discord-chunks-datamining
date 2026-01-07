@@ -99,16 +99,16 @@ class h extends Chunk473749.Component {
         onVolumeChange: L,
         onMute: j,
         disableArrowKeySeek: M,
-        alt: k = Chunk388032.intl.string(Chunk388032.t.FlNoSV)
-      } = module,
-      U = _(module, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
-    return (0, Chunk54381.jsx)(Chunk124347.ZP, p(d({
+        alt: k = c.intl.string(c.t.FlNoSV)
+      } = e,
+      U = _(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
+    return (0, r.jsx)(o.ZP, p(d({
       alt: k,
-      className: Chunk473749,
+      className: i,
       src: f
     }, U), {
-      minWidth: Chunk640108.ZP.minWidth,
-      minHeight: Chunk640108.ZP.minHeight,
+      minWidth: s.ZP.minWidth,
+      minHeight: s.ZP.minHeight,
       shouldLink: false,
       shouldAnimate: false,
       mediaLayoutType: I,

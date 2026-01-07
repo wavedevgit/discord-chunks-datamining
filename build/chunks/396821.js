@@ -108,7 +108,7 @@ let f = (0, require("./663042.js").U)(() => ({
   _ = () => {
     let e = f;
     return {
-      toolsCache: module.getState().toolsCache,
+      toolsCache: e.getState().toolsCache,
       setToolsCache: (t, n, r) => {
         e.setState(e => ({
           toolsCache: o(i({}, e.toolsCache), {

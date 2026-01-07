@@ -26,7 +26,7 @@ class s {
     return s.load().oopEnabled
   }
   static DEV_clearAllSavedSettings() {
-    for (let e of Object.values(o)) Chunk433517.K.remove(module);
+    for (let e of Object.values(o)) r.K.remove(e);
     this._loaded = null
   }
   static DEV_saveSettingsForVersion(e) {
@@ -42,7 +42,7 @@ class s {
       legacyEnabled: this.legacyEnabled,
       oopEnabled: this.oopEnabled
     };
-    Chunk433517.K.set("OverlayStore6", module)
+    r.K.set("OverlayStore6", e)
   }
   static load() {
     return null == s._loaded && (s._loaded = s.loadInternal()), s._loaded
@@ -50,8 +50,8 @@ class s {
   static serialize() {
     let e = this.load();
     return {
-      legacyEnabled: module.legacyEnabled,
-      oopEnabled: module.oopEnabled
+      legacyEnabled: e.legacyEnabled,
+      oopEnabled: e.oopEnabled
     }
   }
   static fromSerialized(e) {
@@ -60,34 +60,34 @@ class s {
   }
   static loadInternal() {
     var e, t, n, a, o;
-    let l = Chunk433517.K.get("OverlayStore");
+    let l = r.K.get("OverlayStore");
     if (null != l) {
-      let e = new s("boolean" == typeof l.enabled ? l.enabled : Chunk987650.iP, Chunk987650.iP);
-      return module.save(), Chunk433517.K.remove("OverlayStore"), module
+      let e = new s("boolean" == typeof l.enabled ? l.enabled : i.iP, i.iP);
+      return e.save(), r.K.remove("OverlayStore"), e
     }
-    let c = Chunk433517.K.get("overlayEnabled");
+    let c = r.K.get("overlayEnabled");
     if (null != c) {
-      let e = new s("boolean" == typeof c ? c : Chunk987650.iP, Chunk987650.iP);
-      return module.save(), Chunk433517.K.remove("overlayEnabled"), module
+      let e = new s("boolean" == typeof c ? c : i.iP, i.iP);
+      return e.save(), r.K.remove("overlayEnabled"), e
     }
-    let u = Chunk433517.K.get("OverlayStore3");
+    let u = r.K.get("OverlayStore3");
     if (null != u) {
-      let t = new s(null != (e = u.enabled || u.legacyEnabled) ? module : Chunk987650.iP, Chunk987650.iP);
-      return exports.save(), Chunk433517.K.remove("OverlayStore3"), exports
+      let t = new s(null != (e = u.enabled || u.legacyEnabled) ? e : i.iP, i.iP);
+      return t.save(), r.K.remove("OverlayStore3"), t
     }
-    let d = Chunk433517.K.get("OverlayStore4");
+    let d = r.K.get("OverlayStore4");
     if (null != d) {
-      let e = new s(d.legacyEnabled || Chunk987650.iP, null != (t = d.oopEnabled) ? exports : Chunk987650.iP);
-      return module.save(), Chunk433517.K.remove("OverlayStore4"), module
+      let e = new s(d.legacyEnabled || i.iP, null != (t = d.oopEnabled) ? t : i.iP);
+      return e.save(), r.K.remove("OverlayStore4"), e
     }
-    let f = Chunk433517.K.get("OverlayStore5");
+    let f = r.K.get("OverlayStore5");
     if (null != f) {
-      let e = new s(null != (n = f.legacyEnabled) ? require : Chunk987650.iP, f.oopEnabled || Chunk987650.iP);
-      return module.save(), Chunk433517.K.remove("OverlayStore5"), module
+      let e = new s(null != (n = f.legacyEnabled) ? n : i.iP, f.oopEnabled || i.iP);
+      return e.save(), r.K.remove("OverlayStore5"), e
     }
-    let p = Chunk433517.K.get("OverlayStore6");
-    if (null != p) return new s(null != (a = p.legacyEnabled) ? a : Chunk987650.iP, null != (o = p.oopEnabled) ? o : Chunk987650.iP);
-    let _ = new s(Chunk987650.iP, Chunk987650.iP);
+    let p = r.K.get("OverlayStore6");
+    if (null != p) return new s(null != (a = p.legacyEnabled) ? a : i.iP, null != (o = p.oopEnabled) ? o : i.iP);
+    let _ = new s(i.iP, i.iP);
     return _.save(), _
   }
   constructor(e, t) {

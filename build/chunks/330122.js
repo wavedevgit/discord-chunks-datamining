@@ -24,8 +24,8 @@ function l(e) {
 }
 
 function c() {
-  let e = Chunk451478.Z.getFocusedWindowId();
-  return null == module ? null : s(module)
+  let e = a.Z.getFocusedWindowId();
+  return null == e ? null : s(e)
 }
 
 function u(e, t) {

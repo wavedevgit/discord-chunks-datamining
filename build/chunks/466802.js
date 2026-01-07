@@ -14,23 +14,23 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
-    usePredicate: () => !(0, Chunk526665.gN)("LegacyNitroPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkog),
+    usePredicate: () => !(0, r.gN)("LegacyNitroPanel"),
+    useTitle: () => c.intl.string(c.t.Ipxkog),
     StronglyDiscouragedCustomComponent: Chunk748717.Z,
     buildLayout: () => []
   }),
   d = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
-    usePredicate: () => (0, Chunk526665.gN)("NitroPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkog),
-    buildLayout: () => [Chunk112121.I]
+    usePredicate: () => (0, r.gN)("NitroPanel"),
+    useTitle: () => c.intl.string(c.t.Ipxkog),
+    buildLayout: () => [T.I]
   }),
   _ = (0, Chunk509613.m7)(Chunk313789.n.NITRO_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkog),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("NitroPanel") ? true : Chunk726985.s6.PREMIUM,
+    useTitle: () => c.intl.string(c.t.Ipxkog),
+    getLegacySearchKey: () => (0, r.Gl)("NitroPanel") ? true : S.s6.PREMIUM,
     icon: Chunk657707.SrA,
     trailing: {
       type: Chunk970013.W.STRONGLY_DISCOURAGED_CUSTOM,
       useCustomDecoration: (t, e) => (0, o.x)(e)
     },
-    buildLayout: () => (0, Chunk526665.Gl)("NitroPanel") ? [d] : [E]
+    buildLayout: () => (0, r.Gl)("NitroPanel") ? [d] : [E]
   })

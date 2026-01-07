@@ -11,6 +11,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk636452 = require("./636452.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.k4)(Chunk313789.n.CAMERA_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.uje3P9),
-  buildLayout: () => [Chunk636452.J, Chunk647916.W, Chunk880940.R, Chunk295647.j]
+  useTitle: () => o.intl.string(o.t.uje3P9),
+  buildLayout: () => [a.J, u.W, r.R, s.j]
 })

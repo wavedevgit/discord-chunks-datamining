@@ -79,7 +79,7 @@ function S(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let I = Chunk473749.lazy(() => Promise.all([require.e("66382"), require.e("28102")]).then(require.bind(require, 534828))),
+let I = Chunk473749.lazy(() => Promise.all([n.e("66382"), n.e("28102")]).then(n.bind(n, 534828))),
   T = 7,
   C = () => Promise.resolve();
 
@@ -162,12 +162,12 @@ class P extends Chunk473749.PureComponent {
       disabled: i,
       allowBlackCustomColor: a
     } = this.props;
-    return (0, Chunk54381.jsx)(N, {
+    return (0, r.jsx)(N, {
       isDefault: true,
-      color: module,
-      isSelected: module === require || 0 === require && !Chunk120356,
-      onClick: exports,
-      disabled: Chunk473749
+      color: e,
+      isSelected: e === n || 0 === n && !a,
+      onClick: t,
+      disabled: i
     })
   }
 }
@@ -180,12 +180,12 @@ class R extends Chunk473749.PureComponent {
       "aria-label": i,
       presets: a
     } = this.props;
-    return (0, Chunk54381.jsx)(N, {
+    return (0, r.jsx)(N, {
       isCustom: true,
-      color: module,
-      isSelected: exports === module && !Chunk120356.includes(module),
-      disabled: require,
-      "aria-label": Chunk473749
+      color: e,
+      isSelected: t === e && !a.includes(e),
+      disabled: n,
+      "aria-label": i
     })
   }
 }

@@ -49,11 +49,11 @@ class y {
   _generateTimeOptions() {
     this.options = [], this._index = {};
     let e = i()(m),
-      t = i()(module).add(1, "day"),
-      n = i()(module);
-    for (; require < exports;) {
-      let e = this._createNewOption(require.clone());
-      this.options.push(module), this._index[module.value.unix()] = module.value, require.add(this.intervalInMinutes, "minutes")
+      t = i()(e).add(1, "day"),
+      n = i()(e);
+    for (; n < t;) {
+      let e = this._createNewOption(n.clone());
+      this.options.push(e), this._index[e.value.unix()] = e.value, n.add(this.intervalInMinutes, "minutes")
     }
   }
   _createNewOption(e) {

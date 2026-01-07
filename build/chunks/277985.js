@@ -17,10 +17,10 @@ class a {
     return r.ve
   }
   getMaxAttachmentsCount() {
-    return Chunk302463.pt
+    return r.pt
   }
   getMaxTotalAttachmentSize() {
-    return Chunk302463.S5
+    return r.S5
   }
   get shouldReactNativeCompressUploads() {
     returnfalse

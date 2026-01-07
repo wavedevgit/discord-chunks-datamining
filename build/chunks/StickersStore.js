@@ -26,13 +26,13 @@ function _(e, t, n) {
 let m = 2,
   h = async () => {
     if (0 !== m) return;
-    let e = Chunk287328.Z.database();
-    if (null == module) return;
+    let e = s.Z.database();
+    if (null == e) return;
     m = 2;
-    let t = await (0, Chunk86670.gs)("StickerStore.loadSavedGuildStickers", () => Chunk135273.Z.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => Chunk856472.Z.getAsync(module)));
-    null != exports && Chunk570140.Z.dispatch({
+    let t = await (0, l.gs)("StickerStore.loadSavedGuildStickers", () => i.Z.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => c.Z.getAsync(e)));
+    null != t && o.Z.dispatch({
       type: "CACHED_STICKERS_LOADED",
-      stickers: exports
+      stickers: t
     })
   }, g = e => {
     let {
@@ -54,7 +54,7 @@ let y = () => {
 };
 class O extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk93093.Z, Chunk149694.Z, Chunk430824.Z, Chunk737406.Z), this.syncWith([Chunk149694.Z, Chunk737406.Z], () => true)
+    this.waitFor(u.Z, f.Z, d.Z, p.Z), this.syncWith([f.Z, p.Z], () => true)
   }
   get isLoaded() {
     return 0 !== m
@@ -63,13 +63,13 @@ class O extends(r = Chunk442837.ZP.Store) {
     return m
   }
   getStickerMetadataArrays() {
-    return h(), [Chunk149694.Z.getStickerMetadataMap(), Chunk737406.Z.getStickerMetadataMap()]
+    return h(), [f.Z.getStickerMetadataMap(), p.Z.getStickerMetadataMap()]
   }
   get hasLoadedStickerPacks() {
-    return Chunk737406.Z.hasLoadedStickerPacks
+    return p.Z.hasLoadedStickerPacks
   }
   get isFetchingStickerPacks() {
-    return Chunk737406.Z.isFetchingStickerPacks
+    return p.Z.isFetchingStickerPacks
   }
   getStickerById(e) {
     var t;
@@ -79,19 +79,19 @@ class O extends(r = Chunk442837.ZP.Store) {
     return p.Z.getStickerPack(e)
   }
   getPremiumPacks() {
-    return Chunk737406.Z.getPremiumPacks()
+    return p.Z.getPremiumPacks()
   }
   isPremiumPack(e) {
     return p.Z.isPremiumPack(e)
   }
   getRawStickersByGuild() {
-    return Chunk149694.Z.getAllGuildStickers()
+    return f.Z.getAllGuildStickers()
   }
   getAllGuildStickers() {
-    return h(), Chunk149694.Z.getAllGuildStickers()
+    return h(), f.Z.getAllGuildStickers()
   }
   getAllPackStickers() {
-    return Chunk737406.Z.getAllPackStickers()
+    return p.Z.getAllPackStickers()
   }
   getStickersByGuildId(e) {
     return h(), f.Z.getStickersByGuildId(e)

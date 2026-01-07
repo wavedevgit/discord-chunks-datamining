@@ -18,7 +18,7 @@ class c extends Chunk473749.Component {
       selectedSkuId: n,
       onChange: i
     } = this.props;
-    null == exports || 0 === exports.length ? (0, Chunk16084.uE)(module, false) : 1 === exports.length && null == require && Chunk54381(exports[0].id)
+    null == t || 0 === t.length ? (0, a.uE)(e, false) : 1 === t.length && null == n && i(t[0].id)
   }
   componentDidUpdate() {
     let {
@@ -26,7 +26,7 @@ class c extends Chunk473749.Component {
       selectedSkuId: t,
       onChange: n
     } = this.props;
-    null != module && 1 === module.length && null == exports && require(module[0].id)
+    null != e && 1 === e.length && null == t && n(e[0].id)
   }
   render() {
     let {
@@ -34,18 +34,18 @@ class c extends Chunk473749.Component {
       selectedSkuId: t,
       className: n,
       label: r
-    } = this.props, l = null != module && 0 === module.length;
-    return (0, Chunk54381.jsx)(Chunk199849.y6, {
-      label: Chunk473749,
-      options: null != module ? module.map(e => ({
+    } = this.props, l = null != e && 0 === e.length;
+    return (0, i.jsx)(s.y6, {
+      label: r,
+      options: null != e ? e.map(e => ({
         label: e.name,
         value: e.id
       })) : [],
-      placeholder: Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.hKcgP5) : Chunk388032.intl.string(Chunk388032.t.QV60Uq),
-      value: exports,
+      placeholder: l ? u.intl.string(u.t.hKcgP5) : u.intl.string(u.t.QV60Uq),
+      value: t,
       onChange: this.handleChange,
-      className: require,
-      isDisabled: Chunk442837
+      className: n,
+      isDisabled: l
     })
   }
   constructor(...e) {

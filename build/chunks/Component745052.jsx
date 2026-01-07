@@ -90,27 +90,27 @@ function er(e, t) {
 }
 
 function ei() {
-  let e = Chunk473749.useRef(null),
-    t = (0, Chunk899740.q)(),
-    n = (0, Chunk177033.Z)(),
-    l = (0, Chunk26373.K)(),
-    c = (0, Chunk183126.N)(),
-    u = Chunk473749.useCallback(() => {
-      (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["EDYbS+"]), Chunk481060.ToastType.FAILURE))
+  let e = i.useRef(null),
+    t = (0, V.q)(),
+    n = (0, F.Z)(),
+    l = (0, G.K)(),
+    c = (0, m.N)(),
+    u = i.useCallback(() => {
+      (0, p.showToast)((0, p.createToast)($.intl.string($.t["EDYbS+"]), p.ToastType.FAILURE))
     }, []),
     {
       rejectAll: d
-    } = (0, Chunk486622.m)({
-      onError: Chunk704215
+    } = (0, H.m)({
+      onError: u
     }),
-    f = (0, Chunk209613.Z)("message-requests-list"),
+    f = (0, b.Z)("message-requests-list"),
     {
       channelId: g
-    } = (0, Chunk488634._)(),
-    m = Chunk473749.useCallback(() => {
-      Chunk907862(require.map(e => e.channel.id))
-    }, [require, Chunk907862]),
-    _ = Chunk473749.useCallback(e => {
+    } = (0, B._)(),
+    h = i.useCallback(() => {
+      d(n.map(e => e.channel.id))
+    }, [n, d]),
+    _ = i.useCallback(e => {
       var t, i;
       let {
         row: o
@@ -125,33 +125,33 @@ function ei() {
         user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [Chunk120356, require, Chunk112724]),
-    E = Chunk473749.useCallback(() => (0, Chunk54381.jsxs)(Chunk82295.Z, {
-      className: Chunk439700.sectionTitle,
-      children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWY, {
-        count: exports
-      }) : Chunk388032.intl.string(Chunk388032.t.flPU6g), Chunk442837 && exports > 0 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk439700.titleDivider,
+    }, [l, n, g]),
+    E = i.useCallback(() => (0, r.jsxs)(O.Z, {
+      className: ee.sectionTitle,
+      children: [t > 0 ? $.intl.formatToPlainString($.t.rA4iWY, {
+        count: t
+      }) : $.intl.string($.t.flPU6g), c && t > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(p.Text, {
+          className: ee.titleDivider,
           variant: "eyebrow",
           color: "text-default",
           tag: "span",
           children: "•"
-        }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
-          onClick: Chunk493773,
+        }), (0, r.jsx)(p.Avr, {
+          onClick: h,
           textVariant: "text-sm/normal",
-          text: Chunk388032.intl.string(Chunk388032.t.p6t7RC),
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RC)
+          text: $.intl.string($.t.p6t7RC),
+          "aria-label": $.intl.string($.t.p6t7RC)
         })]
       }) : null]
-    }, "title"), [exports, Chunk493773, Chunk442837]);
-  return (require.length !== exports && Chunk797614.Z.increment({
-    name: Chunk286379.V.MESSAGE_REQUEST_COUNT_DRIFT
-  }), 0 === require.length) ? (0, Chunk54381.jsx)(Chunk307947.Z, {
-    section: Chunk687683.pS.REQUESTS
-  }) : (0, Chunk54381.jsx)(Chunk91192.bG, {
-    navigator: Chunk150063,
-    children: (0, Chunk54381.jsx)(Chunk91192.SJ, {
+    }, "title"), [t, h, c]);
+  return (n.length !== t && S.Z.increment({
+    name: s.V.MESSAGE_REQUEST_COUNT_DRIFT
+  }), 0 === n.length) ? (0, r.jsx)(Y.Z, {
+    section: K.pS.REQUESTS
+  }) : (0, r.jsx)(o.bG, {
+    navigator: f,
+    children: (0, r.jsx)(o.SJ, {
       children: t => {
         var {
           ref: i,
@@ -271,7 +271,7 @@ let es = (0, Chunk112724.Z)(function(e) {
   let {
     width: t
   } = e, n = (0, V.q)();
-  (0, m.ZP)(() => {
+  (0, h.ZP)(() => {
     f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.Z.increment({
@@ -285,14 +285,14 @@ let es = (0, Chunk112724.Z)(function(e) {
       let e = w.ZP.getSidebarState(w.uZ);
       return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
-    h = null == g ? true : g.channelId,
+    m = null == g ? true : g.channelId,
     b = null != g,
-    _ = (0, k.T)(h),
-    E = (0, M.J)(h),
+    _ = (0, k.T)(m),
+    E = (0, M.J)(m),
     O = i.useRef(null);
   i.useEffect(() => {
-    null != h && !_ && E && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
-  }, [h, E, b, _]);
+    null != m && !_ && E && b && ((0, T.Kh)(m), N.Z.closeChannelSidebar(w.uZ))
+  }, [m, E, b, _]);
   let [y, I] = i.useState(K.pS.REQUESTS), A = e => {
     I(e)
   };

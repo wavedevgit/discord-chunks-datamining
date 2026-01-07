@@ -67,10 +67,10 @@ class N extends Chunk473749.PureComponent {
   }
   logShownEventIfNeeded() {
     let e = this.props.activity.application_id;
-    null != module && false === D.indexOf(module) && (Chunk626135.default.track(Chunk981631.rMx.SHOW_TUTORIAL, {
+    null != e && false === D.indexOf(e) && (I.default.track(x.rMx.SHOW_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
-      application_id: module
-    }), D.push(module))
+      application_id: e
+    }), D.push(e))
   }
   componentWillUnmount() {
     null !== this.timeout && clearTimeout(this.timeout)
@@ -79,15 +79,15 @@ class N extends Chunk473749.PureComponent {
     let {
       activity: e
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk747212.activityInviteEducation, {
-        [Chunk747212.activityInviteEducationFadeIn]: this.state.fadeIn
+    return (0, i.jsxs)("div", {
+      className: o()(P.activityInviteEducation, {
+        [P.activityInviteEducationFadeIn]: this.state.fadeIn
       }),
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk747212.activityInviteEducationArrow
-      }), (0, Chunk54381.jsx)("span", {
-        children: Chunk388032.intl.format(Chunk388032.t["i/MoCt"], {
-          game: module.name,
+      children: [(0, i.jsx)("div", {
+        className: P.activityInviteEducationArrow
+      }), (0, i.jsx)("span", {
+        children: w.intl.format(w.t["i/MoCt"], {
+          game: e.name,
           dismissOnClick: this.handleDismissInviteEducation
         })
       })]

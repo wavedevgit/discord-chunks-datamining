@@ -89,9 +89,9 @@ class d extends(r = Chunk473749.PureComponent) {
       mirror: e,
       className: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk192231.video, exports, {
-        [Chunk192231.mirror]: module
+    return (0, i.jsxs)("div", {
+      className: s()(l.video, t, {
+        [l.mirror]: e
       }),
       onDoubleClick: this.handleDoubleClick,
       onContextMenu: this.handleContextMenu,

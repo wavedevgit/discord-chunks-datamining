@@ -4,5 +4,5 @@
 var r = "undefined" != typeof Symbol && Symbol,
   Chunk247131 = require("./247131.js");
 module.exports = function() {
-  return "function" == typeof r && "function" == typeof Symbol && "symbol" == typeof r("foo") && "symbol" == typeof Symbol("bar") && Chunk247131()
+  return "function" == typeof r && "function" == typeof Symbol && "symbol" == typeof r("foo") && "symbol" == typeof Symbol("bar") && i()
 }

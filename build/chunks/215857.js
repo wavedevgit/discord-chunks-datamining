@@ -32,7 +32,7 @@ var s = function() {
   function e(t, n) {
     r(this, e), o(this, "ownerDocument", null), o(this, "globalContext", true), o(this, "optionsArgs", true), this.globalContext = t, this.optionsArgs = n
   }
-  return a(module, [{
+  return a(e, [{
     key: "window",
     get: function() {
       return this.globalContext ? this.globalContext : "undefined" != typeof window ? window : true
@@ -41,13 +41,13 @@ var s = function() {
     key: "document",
     get: function() {
       var e;
-      return null != (e = this.globalContext) && module.document ? this.globalContext.document : this.window ? this.window.document : true
+      return null != (e = this.globalContext) && e.document ? this.globalContext.document : this.window ? this.window.document : true
     }
   }, {
     key: "rootElement",
     get: function() {
       var e;
-      return (null == (e = this.optionsArgs) ? true : module.rootElement) || this.window
+      return (null == (e = this.optionsArgs) ? true : e.rootElement) || this.window
     }
-  }]), module
+  }]), e
 }()

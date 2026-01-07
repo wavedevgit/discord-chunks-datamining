@@ -494,7 +494,7 @@ function em(e) {
 }
 class eh extends Chunk750041.Z {
   initialize() {
-    this.waitFor(Chunk771845.ZP), this.syncWith([Chunk706454.default], ep)
+    this.waitFor(_.ZP), this.syncWith([l.default], ep)
   }
   isFetchingProfile(e, t) {
     let n = C.get(e);
@@ -540,13 +540,13 @@ class eh extends Chunk750041.Z {
     return null != (r = null == i || null == (n = i.wishlistSettings) ? true : n[t]) ? r : null
   }
   takeSnapshot() {
-    let e = Chunk314897.default.getId(),
-      t = w.get(module);
-    return null != exports ? {
+    let e = u.default.getId(),
+      t = w.get(e);
+    return null != t ? {
       version: eh.LATEST_SNAPSHOT_VERSION,
       data: [{
-        userId: module,
-        profile: exports
+        userId: e,
+        profile: t
       }]
     } : {
       version: eh.LATEST_SNAPSHOT_VERSION,
@@ -587,7 +587,7 @@ class eh extends Chunk750041.Z {
       LOGOUT: K
     }), O(this, "loadCache", () => {
       let e = this.readSnapshot(eh.LATEST_SNAPSHOT_VERSION);
-      null != module && module.forEach(e => {
+      null != e && e.forEach(e => {
         let {
           userId: t,
           profile: n

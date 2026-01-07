@@ -89,12 +89,12 @@ class m extends Chunk473749.PureComponent {
       spec: t,
       className: n
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: require,
-      children: (0, Chunk54381.jsx)(Chunk481060.C3N, {
-        label: exports.title,
-        description: null != (e = (0, Chunk208884._u)(exports.description)) ? module : true,
-        children: exports.permissions.map(this.renderComponent, this)
+    return (0, i.jsx)("div", {
+      className: n,
+      children: (0, i.jsx)(o.C3N, {
+        label: t.title,
+        description: null != (e = (0, s._u)(t.description)) ? e : true,
+        children: t.permissions.map(this.renderComponent, this)
       })
     })
   }

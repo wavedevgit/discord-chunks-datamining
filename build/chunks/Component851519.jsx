@@ -14,16 +14,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk329013 = require("./329013.jsx"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.ON)(Chunk313789.n.APPEARANCE_CLIENT_THEMES, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.Ksh3ik), Chunk388032.intl.string(Chunk388032.t["0EzVst"]), Chunk388032.intl.string(Chunk388032.t.OCOOiI)],
+  useSearchTerms: () => [c.intl.string(c.t.Ksh3ik), c.intl.string(c.t["0EzVst"]), c.intl.string(c.t.OCOOiI)],
   Component: () => {
-    let t = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useForcedColors);
-    return (0, Chunk54381.jsx)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.Ksh3ik),
-      children: module ? (0, Chunk54381.jsx)(Chunk481060.M14, {
+    let t = (0, l.e7)([u.Z], () => u.Z.useForcedColors);
+    return (0, i.jsx)(s.C3N, {
+      label: c.intl.string(c.t.Ksh3ik),
+      children: t ? (0, i.jsx)(s.M14, {
         type: "info",
-        children: (0, Chunk627845.b)() ? (0, Chunk54381.jsx)(Chunk501348.hU, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZP)
-      }) : (0, Chunk54381.jsxs)("div", {
-        children: [(0, Chunk54381.jsx)(Chunk501348.n6, {}), (0, Chunk54381.jsx)(Chunk329013.i, {})]
+        children: (0, r.b)() ? (0, i.jsx)(T.hU, {}) : c.intl.string(c.t.AUMSZP)
+      }) : (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(T.n6, {}), (0, i.jsx)(S.i, {})]
       })
     })
   }

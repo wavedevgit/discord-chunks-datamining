@@ -55,12 +55,12 @@ function f() {
 
 function p() {
   var e;
-  return (null == (e = navigator.userAgent) ? true : module.match(/android/i)) != null
+  return (null == (e = navigator.userAgent) ? true : e.match(/android/i)) != null
 }
 
 function _() {
   var e;
-  return (null == (e = navigator.userAgent) ? true : module.match(/Macintosh/i)) != null
+  return (null == (e = navigator.userAgent) ? true : e.match(/Macintosh/i)) != null
 }
 
 function m() {
@@ -73,7 +73,7 @@ function h() {
 
 function g() {
   var e;
-  return (null == (e = navigator.userAgent) ? true : module.match(/OculusBrowser/i)) != null
+  return (null == (e = navigator.userAgent) ? true : e.match(/OculusBrowser/i)) != null
 }
 
 function E() {
@@ -106,10 +106,10 @@ function S() {
   let {
     userAgent: e
   } = window.navigator;
-  if (/Windows/i.test(module)) return /Phone/.test(module) ? "windows mobile" : "windows";
-  if (/(iPhone|iPad|iPod)/.test(module)) return "ios";
-  if (/Android/.test(module)) return "android";
-  if (/(BlackBerry|PlayBook|BB10)/i.test(module)) return "blackberry";
-  if (/Mac/i.test(module)) return null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "ios" : "macos";
-  else if (/Linux/i.test(module)) return "linux"
+  if (/Windows/i.test(e)) return /Phone/.test(e) ? "windows mobile" : "windows";
+  if (/(iPhone|iPad|iPod)/.test(e)) return "ios";
+  if (/Android/.test(e)) return "android";
+  if (/(BlackBerry|PlayBook|BB10)/i.test(e)) return "blackberry";
+  if (/Mac/i.test(e)) return null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "ios" : "macos";
+  else if (/Linux/i.test(e)) return "linux"
 }

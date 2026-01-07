@@ -7,6 +7,6 @@ require.d(exports, {
 var Chunk863750 = require("./863750.js");
 
 function i() {
-  return Chunk863750.Z.get("enable_recently_active")
+  return r.Z.get("enable_recently_active")
 }
 require("./238428.js")

@@ -22,7 +22,7 @@ let o = {
     })
   },
   clearMentions() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "CLEAR_MENTIONS"
     })
   },
@@ -85,7 +85,7 @@ let o = {
     })
   },
   setRecentMentionsStale() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "SET_RECENT_MENTIONS_STALE"
     })
   }

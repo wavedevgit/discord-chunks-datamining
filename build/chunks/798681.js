@@ -36,11 +36,11 @@ class f extends Chunk47770.Z {
     this.incomingVideoEnabled = e, t && (this.logger.info("Incoming video enabled changed, incomingVideoEnabled = ".concat(this.incomingVideoEnabled)), this.lastEnabledChange = performance.now(), this.emit("incoming-video-enabled-changed", this.incomingVideoEnabled))
   }
   constructor() {
-    super(), u(this, "disableVideoTimer", new Chunk846519.V7), u(this, "discordVisible", true), u(this, "incomingVideoEnabled", true), u(this, "lastEnabledChange", performance.now()), u(this, "logger", new Chunk710845.Z("WindowVisibilityVideoManager")), u(this, "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", 30 * Chunk70956.Z.Millis.SECOND), u(this, "update", () => {
-      this.discordVisible !== (0, Chunk27414.Z)() && (this.discordVisible = (0, Chunk27414.Z)(), this.emit("window-visibility-changed", this.discordVisible), this.discordVisible ? (this.disableVideoTimer.stop(), this.setIncomingVideoEnabled(true)) : this.disableVideoTimer.start(this.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS, () => {
+    super(), u(this, "disableVideoTimer", new i.V7), u(this, "discordVisible", true), u(this, "incomingVideoEnabled", true), u(this, "lastEnabledChange", performance.now()), u(this, "logger", new o.Z("WindowVisibilityVideoManager")), u(this, "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", 30 * l.Z.Millis.SECOND), u(this, "update", () => {
+      this.discordVisible !== (0, c.Z)() && (this.discordVisible = (0, c.Z)(), this.emit("window-visibility-changed", this.discordVisible), this.discordVisible ? (this.disableVideoTimer.stop(), this.setIncomingVideoEnabled(true)) : this.disableVideoTimer.start(this.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS, () => {
         this.setIncomingVideoEnabled(false)
       }))
-    }), Chunk570140.Z.subscribe("WINDOW_VISIBILITY_CHANGE", this.update), Chunk570140.Z.subscribe("APP_STATE_UPDATE", this.update), Chunk646047.Z.addOnPipModeChangedListener(this.update)
+    }), a.Z.subscribe("WINDOW_VISIBILITY_CHANGE", this.update), a.Z.subscribe("APP_STATE_UPDATE", this.update), s.Z.addOnPipModeChangedListener(this.update)
   }
 }
 let p = new f

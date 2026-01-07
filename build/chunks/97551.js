@@ -7,5 +7,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk195349 = require("./195349.js");
 let u = (0, Chunk509613.k4)(Chunk313789.n.PROFILE_CATEGORY, {
-  buildLayout: () => [Chunk195349.w]
+  buildLayout: () => [s.w]
 })

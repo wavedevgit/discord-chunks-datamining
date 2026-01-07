@@ -2,10 +2,10 @@
 /** chunk id: 520379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  Manager: () => Chunk579995.dK,
-  Popper: () => Chunk475158.r,
-  Reference: () => Chunk478283.s,
-  usePopper: () => Chunk222957.D
+  Manager: () => i.dK,
+  Popper: () => r.r,
+  Reference: () => a.s,
+  usePopper: () => o.D
 });
 var Chunk475158 = require("./475158.js"),
   Chunk579995 = require("./579995.js"),

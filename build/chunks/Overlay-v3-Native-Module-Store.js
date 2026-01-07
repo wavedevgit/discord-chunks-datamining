@@ -31,20 +31,20 @@ let _ = new Chunk579092.Yd("OverlayV3NativeModuleStore"),
   y = null,
   O = (() => {
     async function e() {
-      S(), g = Chunk242297._.getInstance();
+      S(), g = d._.getInstance();
       try {
         await g.initialize(), m = true
       } catch (e) {
-        (0, Chunk932404.bs)(null, "module_initialization_failed", {
-          error: module
-        }), m = false, (0, Chunk932404.PV)(Chunk145597.UNSET_PID, module, {
+        (0, u.bs)(null, "module_initialization_failed", {
+          error: e
+        }), m = false, (0, u.PV)(l.UNSET_PID, e, {
           crashType: "native"
         })
       } finally {
         P.emitChange()
       }
     }
-    return () => (null == y && (y = module()), y)
+    return () => (null == y && (y = e()), y)
   })();
 
 function v(e) {
@@ -52,7 +52,7 @@ function v(e) {
 }
 
 function S() {
-  !__OVERLAY__ && Chunk987650.iP && (b = null, E = false, _.verbose("Maybe Enable Overlay"), v(Chunk454991.v.oopEnabled))
+  !__OVERLAY__ && f.iP && (b = null, E = false, _.verbose("Maybe Enable Overlay"), v(c.v.oopEnabled))
 }
 
 function I(e) {
@@ -79,7 +79,7 @@ function A() {
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk353926.Z)
+    this.waitFor(s.Z)
   }
   get isModuleLoading() {
     return null != y
@@ -88,7 +88,7 @@ class N extends(r = Chunk442837.ZP.Store) {
     return h
   }
   get isSupported() {
-    return Chunk987650.iP
+    return f.iP
   }
   get isModuleLoaded() {
     return m

@@ -71,50 +71,50 @@ class m extends(r = Chunk473749.PureComponent) {
       singleLine: a = false
     } = this.props, {
       now: o
-    } = this.state, l = (exports - module) / 1e3, d = Math.max(Math.min((Chunk120356 - module) / 1e3, Chunk846519), 0);
-    return Chunk473749 ? (0, Chunk54381.jsxs)("div", {
-      className: s()(require, {
-        [Chunk70309.themed]: r
-      }, Chunk70309.singleLineContainer),
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk70309.textLeftInSingleLine,
+    } = this.state, l = (t - e) / 1e3, d = Math.max(Math.min((o - e) / 1e3, l), 0);
+    return a ? (0, i.jsxs)("div", {
+      className: s()(n, {
+        [u.themed]: r
+      }, u.singleLineContainer),
+      children: [(0, i.jsx)("div", {
+        className: u.textLeftInSingleLine,
         children: _({
           time: d,
           padLargestUnit: true
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk70309.barInSingleLine,
-        children: (0, Chunk54381.jsx)(f, {
-          percentage: d / Chunk846519,
+      }), (0, i.jsx)("div", {
+        className: u.barInSingleLine,
+        children: (0, i.jsx)(f, {
+          percentage: d / l,
           isSingleLine: true
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk70309.textRight,
+      }), (0, i.jsx)("div", {
+        className: u.textRight,
         children: _({
-          time: Chunk846519,
+          time: l,
           padLargestUnit: true
         })
       })]
-    }) : (0, Chunk54381.jsxs)("div", {
-      className: s()(require, {
-        [Chunk70309.themed]: r
+    }) : (0, i.jsxs)("div", {
+      className: s()(n, {
+        [u.themed]: r
       }),
-      children: [(0, Chunk54381.jsx)(f, {
-        percentage: d / Chunk846519,
+      children: [(0, i.jsx)(f, {
+        percentage: d / l,
         isSingleLine: false
-      }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-        children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
+      }), (0, i.jsxs)(c.Z, {
+        children: [(0, i.jsx)(c.Z.Child, {
           grow: 1,
-          className: Chunk70309.textLeft,
+          className: u.textLeft,
           children: _({
             time: d,
             padLargestUnit: false
           })
-        }), (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
+        }), (0, i.jsx)(c.Z.Child, {
           grow: 0,
-          className: Chunk70309.textRight,
+          className: u.textRight,
           children: _({
-            time: Chunk846519,
+            time: l,
             padLargestUnit: false
           })
         })]

@@ -9,5 +9,5 @@ var Chunk585483 = require("./585483.js"),
 let a = {
   binds: ["mod+shift+b"],
   comboKeysBindGlobal: true,
-  action: () => (Chunk585483.S.dispatch(Chunk981631.CkL.TOGGLE_SOUNDBOARD), false)
+  action: () => (r.S.dispatch(i.CkL.TOGGLE_SOUNDBOARD), false)
 }

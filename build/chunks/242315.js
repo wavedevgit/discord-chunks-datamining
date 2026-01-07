@@ -7,7 +7,7 @@ require.d(exports, {
 class r {
   *[Symbol.iterator]() {
     let e = this.firstChild;
-    for (; module;) yield module, e = module.nextSibling
+    for (; e;) yield e, e = e.nextSibling
   }
   get firstChild() {
     return this._firstChild
@@ -41,14 +41,14 @@ class r {
   }
   get isConnected() {
     var e;
-    return (null == (e = this.parentNode) ? true : module.isConnected) || false
+    return (null == (e = this.parentNode) ? true : e.isConnected) || false
   }
   invalidateChildIndices(e) {
     (null == this._minInvalidChildIndex || !this._minInvalidChildIndex.isConnected || e.index < this._minInvalidChildIndex.index) && (this._minInvalidChildIndex = e, this.ownerDocument.markDirty(this))
   }
   updateChildIndices() {
     let e = this._minInvalidChildIndex;
-    for (; module;) module.index = module.previousSibling ? module.previousSibling.index + 1 : 0, e = module.nextSibling;
+    for (; e;) e.index = e.previousSibling ? e.previousSibling.index + 1 : 0, e = e.nextSibling;
     this._minInvalidChildIndex = null
   }
   appendChild(e) {
@@ -65,23 +65,23 @@ class r {
   removeEventListener() {}
   get previousVisibleSibling() {
     let e = this.previousSibling;
-    for (; module && module.isHidden;) e = module.previousSibling;
-    return module
+    for (; e && e.isHidden;) e = e.previousSibling;
+    return e
   }
   get nextVisibleSibling() {
     let e = this.nextSibling;
-    for (; module && module.isHidden;) e = module.nextSibling;
-    return module
+    for (; e && e.isHidden;) e = e.nextSibling;
+    return e
   }
   get firstVisibleChild() {
     let e = this.firstChild;
-    for (; module && module.isHidden;) e = module.nextSibling;
-    return module
+    for (; e && e.isHidden;) e = e.nextSibling;
+    return e
   }
   get lastVisibleChild() {
     let e = this.lastChild;
-    for (; module && module.isHidden;) e = module.previousSibling;
-    return module
+    for (; e && e.isHidden;) e = e.previousSibling;
+    return e
   }
   constructor(e) {
     this._firstChild = null, this._lastChild = null, this._previousSibling = null, this._nextSibling = null, this._parentNode = null, this._minInvalidChildIndex = null, this.ownerDocument = e
@@ -96,7 +96,7 @@ class i extends r {
   }
   get level() {
     var e;
-    return this.parentNode instanceof i ? this.parentNode.level + +((null == (e = this.node) ? true : module.type) === "item") : 0
+    return this.parentNode instanceof i ? this.parentNode.level + +((null == (e = this.node) ? true : e.type) === "item") : 0
   }
   getMutableNode() {
     return null == this.node ? null : (this.isMutated || (this.node = this.node.clone(), this.isMutated = true), this.ownerDocument.markDirty(this), this.node)
@@ -105,9 +105,9 @@ class i extends r {
     var e, t, n, r, a, o, s, l, c, u, d, f, p, _, m;
     let h = this.nextVisibleSibling,
       g = this.getMutableNode();
-    if (null != g && (g.index = this.index, g.level = this.level, g.parentKey = this.parentNode instanceof i && null != (c = null == (e = this.parentNode.node) ? true : module.key) ? c : null, g.prevKey = null != (u = null == (n = this.previousVisibleSibling) || null == (t = require.node) ? true : exports.key) ? u : null, g.nextKey = null != (d = null == h || null == (r = h.node) ? true : r.key) ? d : null, g.hasChildNodes = !!this.firstChild, g.firstChildKey = null != (f = null == (o = this.firstVisibleChild) || null == (a = o.node) ? true : a.key) ? f : null, g.lastChildKey = null != (p = null == (l = this.lastVisibleChild) || null == (s = l.node) ? true : s.key) ? p : null, (null != g.colSpan || null != g.colIndex) && h)) {
+    if (null != g && (g.index = this.index, g.level = this.level, g.parentKey = this.parentNode instanceof i && null != (c = null == (e = this.parentNode.node) ? true : e.key) ? c : null, g.prevKey = null != (u = null == (n = this.previousVisibleSibling) || null == (t = n.node) ? true : t.key) ? u : null, g.nextKey = null != (d = null == h || null == (r = h.node) ? true : r.key) ? d : null, g.hasChildNodes = !!this.firstChild, g.firstChildKey = null != (f = null == (o = this.firstVisibleChild) || null == (a = o.node) ? true : a.key) ? f : null, g.lastChildKey = null != (p = null == (l = this.lastVisibleChild) || null == (s = l.node) ? true : s.key) ? p : null, (null != g.colSpan || null != g.colIndex) && h)) {
       let e = (null != (_ = g.colIndex) ? _ : g.index) + (null != (m = g.colSpan) ? m : 1);
-      null != h.node && module !== h.node.colIndex && (h.getMutableNode().colIndex = module)
+      null != h.node && e !== h.node.colIndex && (h.getMutableNode().colIndex = e)
     }
   }
   setProps(e, t, n, r, i) {
@@ -124,7 +124,7 @@ class i extends r {
     let e = this;
     return {
       get display() {
-        return module.isHidden ? "none" : ""
+        return e.isHidden ? "none" : ""
       },
       set display(value) {
         let r = "none" === value;
@@ -174,16 +174,16 @@ class a extends r {
     return this.inSubscription ? this.collection.clone() : (this.queuedRender = false, this.updateCollection(), this.collection)
   }
   updateCollection() {
-    for (let e of this.dirtyNodes) module instanceof i && (!module.isConnected || module.isHidden) ? this.removeNode(module) : module.updateChildIndices();
-    for (let e of this.dirtyNodes) module instanceof i ? (module.isConnected && !module.isHidden && (module.updateNode(), this.addNode(module)), module.node && this.dirtyNodes.delete(module), module.isMutated = false) : this.dirtyNodes.delete(module);
+    for (let e of this.dirtyNodes) e instanceof i && (!e.isConnected || e.isHidden) ? this.removeNode(e) : e.updateChildIndices();
+    for (let e of this.dirtyNodes) e instanceof i ? (e.isConnected && !e.isHidden && (e.updateNode(), this.addNode(e)), e.node && this.dirtyNodes.delete(e), e.isMutated = false) : this.dirtyNodes.delete(e);
     if (this.nextCollection) {
       var e, t, n, r, a, o;
-      this.nextCollection.commit(null != (a = null == (t = this.firstVisibleChild) || null == (e = exports.node) ? true : module.key) ? a : null, null != (o = null == (r = this.lastVisibleChild) || null == (n = r.node) ? true : require.key) ? o : null, this.isSSR), this.isSSR || (this.collection = this.nextCollection, this.nextCollection = null)
+      this.nextCollection.commit(null != (a = null == (t = this.firstVisibleChild) || null == (e = t.node) ? true : e.key) ? a : null, null != (o = null == (r = this.lastVisibleChild) || null == (n = r.node) ? true : n.key) ? o : null, this.isSSR), this.isSSR || (this.collection = this.nextCollection, this.nextCollection = null)
     }
   }
   queueUpdate() {
     if (0 !== this.dirtyNodes.size && !this.queuedRender) {
-      for (let e of (this.queuedRender = true, this.inSubscription = true, this.subscriptions)) module();
+      for (let e of (this.queuedRender = true, this.inSubscription = true, this.subscriptions)) e();
       this.inSubscription = false
     }
   }

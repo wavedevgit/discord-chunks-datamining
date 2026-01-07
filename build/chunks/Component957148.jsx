@@ -57,7 +57,7 @@ function p() {
 function _() {
   let e = Date.now(),
     t = p();
-  return null != exports && module - exports < u
+  return null != t && e - t < u
 }
 
 function m() {
@@ -69,7 +69,7 @@ function m() {
 
 function h() {
   let e = Date.now();
-  f.add(module)
+  f.add(e)
 }
 
 function g(e, t) {

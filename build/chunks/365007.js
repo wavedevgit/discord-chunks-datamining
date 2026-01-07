@@ -57,8 +57,8 @@ function d(e, t) {
   }), e
 }
 async function f() {
-  return (await Chunk544891.tn.post({
-    url: Chunk981631.ANM.WEBAUTHN_CONDITIONAL_UI_CHALLENGE,
+  return (await i.tn.post({
+    url: s.ANM.WEBAUTHN_CONDITIONAL_UI_CHALLENGE,
     headers: {
       authorization: ""
     },
@@ -69,19 +69,19 @@ async function p() {
   let {
     challenge: e,
     ticket: t
-  } = (await Chunk544891.tn.post({
-    url: Chunk981631.ANM.WEBAUTHN_PASSWORDLESS_CHALLENGE,
+  } = (await i.tn.post({
+    url: s.ANM.WEBAUTHN_PASSWORDLESS_CHALLENGE,
     rejectWithError: false
   })).body;
   return {
-    challenge: module,
-    ticket: exports
+    challenge: e,
+    ticket: t
   }
 }
 
 function _() {
-  Chunk544891.tn.get({
-    url: Chunk981631.ANM.MFA_WEBAUTHN_CREDENTIALS,
+  i.tn.get({
+    url: s.ANM.MFA_WEBAUTHN_CREDENTIALS,
     rejectWithError: true
   }).then(e => {
     if (null != e.body) {
@@ -136,14 +136,14 @@ async function g() {
       ticket: e,
       challenge: t
     }
-  } = await Chunk544891.tn.post({
-    url: Chunk981631.ANM.MFA_WEBAUTHN_CREDENTIALS,
+  } = await i.tn.post({
+    url: s.ANM.MFA_WEBAUTHN_CREDENTIALS,
     body: {},
     rejectWithError: false
   });
   return {
-    ticket: module,
-    challenge: exports
+    ticket: e,
+    challenge: t
   }
 }
 async function E(e, t, n) {
@@ -169,13 +169,13 @@ async function E(e, t, n) {
 }
 
 function b() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "WEBAUTHN_TRIGGER_REGISTER"
   })
 }
 
 function y() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "WEBAUTHN_CLEAR_REGISTER_TRIGGER"
   })
 }

@@ -38,8 +38,8 @@ async function c(e) {
 }
 async function u() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-    t = Chunk41776.Z.lurkingGuildIds();
-  if (0 === exports.length || !(null == module || !exports.includes(module))) return;
-  let n = [module, Chunk19780.Z.getGuildId()].filter(Chunk823379.lm);
-  await c(require)
+    t = s.Z.lurkingGuildIds();
+  if (0 === t.length || !(null == e || !t.includes(e))) return;
+  let n = [e, a.Z.getGuildId()].filter(o.lm);
+  await c(n)
 }

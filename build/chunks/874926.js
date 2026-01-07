@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function i() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "APP_ICON_EDITOR_RESET"
   })
 }

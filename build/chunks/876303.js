@@ -10,7 +10,7 @@ Chunk220159({
   target: "Object",
   stat: true,
   forced: Chunk779688(function() {
-    Chunk709583(1)
+    i(1)
   }),
   sham: !Chunk336769
 }, {

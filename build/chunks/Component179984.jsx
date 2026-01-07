@@ -79,19 +79,19 @@ function F(e, t) {
   }), e
 }
 let B = () => {
-    let e = (0, Chunk346497.W)();
-    return (0, Chunk54381.jsx)(Chunk382791.Cy, {
-      text: module,
-      className: Chunk948295.bogoPillWithSparkles,
-      colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+    let e = (0, N.W)();
+    return (0, r.jsx)(P.Cy, {
+      text: e,
+      className: x.bogoPillWithSparkles,
+      colorOptions: P.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
-  V = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk948295.mostPopularPill,
-    children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk948295.mostPopularText,
+  V = () => (0, r.jsx)("div", {
+    className: x.mostPopularPill,
+    children: (0, r.jsx)(u.Heading, {
+      className: x.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
-      children: Chunk388032.intl.string(Chunk388032.t["o/oRJB"])
+      children: D.intl.string(D.t["o/oRJB"])
     })
   }),
   H = e => {

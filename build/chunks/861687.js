@@ -123,11 +123,11 @@ let eI = 0,
 
 function eA() {
   let e = [],
-    t = (0, Chunk379649.zO)();
-  for (let n of eT) module.push(ep(ed({}, require), {
-    t: exports - require.t
+    t = (0, _.zO)();
+  for (let n of eT) e.push(ep(ed({}, n), {
+    t: t - n.t
   }));
-  return JSON.stringify(module)
+  return JSON.stringify(e)
 }
 class eN extends Chunk47770.Z {
   recordEvent(e) {
@@ -138,7 +138,7 @@ class eN extends Chunk47770.Z {
   }
   get quality() {
     let e = this.getLastPing();
-    return this.state !== Chunk981631.hes.RTC_CONNECTED || true === module ? Chunk981631.IE4.UNKNOWN : module > eg || null != this._outboundLossRate && this._outboundLossRate > eb ? Chunk981631.IE4.BAD : module > eE || null != this._outboundLossRate && this._outboundLossRate > ey ? Chunk981631.IE4.AVERAGE : Chunk981631.IE4.FINE
+    return this.state !== es.hes.RTC_CONNECTED || true === e ? es.IE4.UNKNOWN : e > eg || null != this._outboundLossRate && this._outboundLossRate > eb ? es.IE4.BAD : e > eE || null != this._outboundLossRate && this._outboundLossRate > ey ? es.IE4.AVERAGE : es.IE4.FINE
   }
   get endpoint() {
     return this._endpoint
@@ -184,11 +184,11 @@ class eN extends Chunk47770.Z {
   }
   destroy() {
     var e, t, n, r, i, a, o, s;
-    if (this.logger.info("Destroy RTCConnection"), Chunk931619.Z.removeOnlineCallback(this._handleNetworkOnline), Chunk931619.Z.removeOfflineCallback(this._handleNetworkOffline), (0, Chunk358085.isDesktop)() && (null == (o = (s = this).powerMonitorListener) || o.call(Chunk108131)), this.recordEvent({
+    if (this.logger.info("Destroy RTCConnection"), H.Z.removeOnlineCallback(this._handleNetworkOnline), H.Z.removeOfflineCallback(this._handleNetworkOffline), (0, Y.isDesktop)() && (null == (o = (s = this).powerMonitorListener) || o.call(s)), this.recordEvent({
         c: 1
-      }), Chunk798681.w.off(Chunk798681.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), Chunk798681.w.off(Chunk798681.e.WindowVisibilityChanged, this.windowVisibilityChanged), this._backoff.cancel(), this._cleanupSocket(), null == (e = this._voiceQuality) || module.stop(), null == (t = this._voiceQuality) || exports.removeAllListeners(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, null == (n = this._systemResponsiveness) || require.stop(), this._systemResponsiveness = null, this._noiseCancellationError = 0, null == (r = this._voiceDuration) || Chunk654861.stop(), this._voiceDuration = null, null == (i = this._videoQuality) || i.stop(), this._videoQuality = null, this._videoHealthManager = null, this._secureFramesState = null, null == (a = this._localMediaSinkWantsManager) || Chunk954955.reset(), null != this._connection) {
+      }), eo.w.off(eo.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), eo.w.off(eo.e.WindowVisibilityChanged, this.windowVisibilityChanged), this._backoff.cancel(), this._cleanupSocket(), null == (e = this._voiceQuality) || e.stop(), null == (t = this._voiceQuality) || t.removeAllListeners(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, null == (n = this._systemResponsiveness) || n.stop(), this._systemResponsiveness = null, this._noiseCancellationError = 0, null == (r = this._voiceDuration) || r.stop(), this._voiceDuration = null, null == (i = this._videoQuality) || i.stop(), this._videoQuality = null, this._videoHealthManager = null, this._secureFramesState = null, null == (a = this._localMediaSinkWantsManager) || a.reset(), null != this._connection) {
       let e = this._connection;
-      this._connection = null, module.destroy()
+      this._connection = null, e.destroy()
     }
     this.removeAllListeners(), this._destroyed = true
   }
@@ -213,11 +213,11 @@ class eN extends Chunk47770.Z {
   }
   getAveragePing() {
     let e = this._pings.slice(0, Math.min(this._pings.length, eh));
-    return 0 === module.length || null == this._socket ? 0 : module.reduce((e, t) => e + t.value, 0) / module.length
+    return 0 === e.length || null == this._socket ? 0 : e.reduce((e, t) => e + t.value, 0) / e.length
   }
   getLastPing() {
     var e;
-    return null == (e = this._pings[this._pings.length - 1]) ? true : module.value
+    return null == (e = this._pings[this._pings.length - 1]) ? true : e.value
   }
   getOutboundLossRate() {
     return this._outboundLossRate
@@ -239,8 +239,8 @@ class eN extends Chunk47770.Z {
     return this.rtcWorkerVersion
   }
   getDuration() {
-    let e = this._connectCompletedTime > 0 ? (0, Chunk379649.zO)() - this._connectCompletedTime : 0;
-    return module > 0 ? module : 0
+    let e = this._connectCompletedTime > 0 ? (0, _.zO)() - this._connectCompletedTime : 0;
+    return e > 0 ? e : 0
   }
   getDurationSeconds() {
     return this.getDuration() / 1e3
@@ -250,7 +250,7 @@ class eN extends Chunk47770.Z {
   }
   getPacketStats() {
     var e;
-    return null == (e = this._voiceQuality) ? true : module.getPacketStats()
+    return null == (e = this._voiceQuality) ? true : e.getPacketStats()
   }
   getCreatedTime() {
     return this._createdTime
@@ -286,7 +286,7 @@ class eN extends Chunk47770.Z {
   }
   getOutboundStats() {
     let e = this.getOrCreateVideoQuality();
-    return null != module ? module.getOutboundStats() : null
+    return null != e ? e.getOutboundStats() : null
   }
   getInboundStats(e) {
     let t = this.getOrCreateVideoQuality();
@@ -312,7 +312,7 @@ class eN extends Chunk47770.Z {
   resetBackoff() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
       t = this._socket;
-    null != exports && exports.resetBackoff(module) && this._backoff.cancel()
+    null != t && t.resetBackoff(e) && this._backoff.cancel()
   }
   setSelectedParticipant(e) {
     var t;
@@ -351,21 +351,21 @@ class eN extends Chunk47770.Z {
   }
   getNextChannelId() {
     var e;
-    return null != (e = this._nextChannelId) ? module : this._channelId
+    return null != (e = this._nextChannelId) ? e : this._channelId
   }
   get channelId() {
     return this._channelId
   }
   get trueServerId() {
     var e, t;
-    return null != (t = null != (e = this.streamServerId) ? module : this.guildId) ? exports : this.channelId
+    return null != (t = null != (e = this.streamServerId) ? e : this.guildId) ? t : this.channelId
   }
   get trueChannelId() {
     return null == this.streamServerId ? this.channelId : null != this.streamChannelId ? this.streamChannelId : i()(this.streamServerId).prev().toString()
   }
   _cleanupSocket() {
     let e = this._socket;
-    null != module && (module.close(), module.removeAllListeners(), this._socket = null)
+    null != e && (e.close(), e.removeAllListeners(), this._socket = null)
   }
   _chooseExperiments(e) {
     let t = [];
@@ -739,21 +739,21 @@ class eN extends Chunk47770.Z {
   }
   getOrCreateVideoQuality() {
     if (null != this._connection && null == this._videoQuality) {
-      this._videoQuality = new Chunk53114.S(this._connection), this._videoQuality.updateCallUserIdsCount(this._userIds.size), this._videoQuality.start();
+      this._videoQuality = new er.S(this._connection), this._videoQuality.updateCallUserIdsCount(this._userIds.size), this._videoQuality.start();
       let {
         featureEnabled: e,
         windowLength: t,
         allowedPoorFpsRatio: n,
         fpsThreshold: r,
         backoffTimeSec: i
-      } = Chunk824096.y.defaultConfig;
-      if (module) {
-        this._videoHealthManager = new Chunk824096.y(exports, require, Chunk654861, i), null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.videoHealthManager = this._videoHealthManager);
+      } = en.y.defaultConfig;
+      if (e) {
+        this._videoHealthManager = new en.y(t, n, r, i), null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.videoHealthManager = this._videoHealthManager);
         let e = (e, t, n) => {
           var r, i;
           (null == (r = this._localMediaSinkWantsManager) ? true : r.shouldReceiveFromUser(e)) && (null == (i = this._videoHealthManager) || i.updateFps(e, t, n))
         };
-        this._videoQuality.on(Chunk53114.d.FpsUpdate, module)
+        this._videoQuality.on(er.d.FpsUpdate, e)
       }
     }
     return this._videoQuality
@@ -846,12 +846,12 @@ class eN extends Chunk47770.Z {
     this._outboundLossRate = e, this.emit(Q.z.OutboundLossRate, e)
   }
   _getAnalyticsProperties() {
-    let e = Chunk592125.Z.getChannel(this.channelId),
-      t = null == module ? true : module.type;
+    let e = M.Z.getChannel(this.channelId),
+      t = null == e ? true : e.type;
     return {
       guild_id: this.guildId,
       channel_id: this.channelId,
-      channel_type: exports,
+      channel_type: t,
       rtc_connection_id: this.getRTCConnectionId(),
       context: this.context,
       voice_backend_version: this.voiceVersion,
@@ -1053,7 +1053,7 @@ class eN extends Chunk47770.Z {
   }
   _sendMLSKeyPackage() {
     var e;
-    null == (e = this._connection) || module.getMLSKeyPackage(e => {
+    null == (e = this._connection) || e.getMLSKeyPackage(e => {
       var t;
       this.logger.info("Got MLS key package, sending to RTC server"), null == (t = this._socket) || t.sendMLSKeyPackage(e)
     })
@@ -1213,22 +1213,22 @@ class eN extends Chunk47770.Z {
   }
   getInputDeviceName() {
     var e;
-    let t = Chunk131951.Z.getInputDeviceId();
-    return null == (e = Chunk131951.Z.getInputDevices()[exports]) ? true : module.name
+    let t = k.Z.getInputDeviceId();
+    return null == (e = k.Z.getInputDevices()[t]) ? true : e.name
   }
   getOutputDeviceName() {
     var e;
-    let t = Chunk131951.Z.getOutputDeviceId();
-    return null == (e = Chunk131951.Z.getOutputDevices()[exports]) ? true : module.name
+    let t = k.Z.getOutputDeviceId();
+    return null == (e = k.Z.getOutputDevices()[t]) ? true : e.name
   }
   getVideoDeviceName() {
     var e;
-    let t = Chunk131951.Z.getVideoDeviceId();
-    return null == (e = Chunk131951.Z.getVideoDevices()[exports]) ? true : module.name
+    let t = k.Z.getVideoDeviceId();
+    return null == (e = k.Z.getVideoDevices()[t]) ? true : e.name
   }
   getInputDeviceSampleRate() {
     var e, t;
-    return null != (t = null == (e = this._voiceQuality) ? true : module.getAudioDeviceStats().input_device_session_sample_rate) ? exports : null
+    return null != (t = null == (e = this._voiceQuality) ? true : e.getAudioDeviceStats().input_device_session_sample_rate) ? t : null
   }
   constructor({
     userId: e,

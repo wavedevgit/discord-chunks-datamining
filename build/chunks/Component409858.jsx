@@ -104,14 +104,14 @@ class et extends Chunk473749.Component {
       giftCode: i,
       emojiName: r
     } = this.props;
-    null == module && null != exports && Chunk728345.ZP.fetchApplication(exports.applicationId);
-    let l = null != require || null != Chunk54381.giftStyle,
-      s = (0, Chunk884697.mO)(Chunk54381),
-      a = null != Chunk473749 ? Chunk176354.ZP.getURL(Chunk473749) : true;
+    null == e && null != t && b.ZP.fetchApplication(t.applicationId);
+    let l = null != n || null != i.giftStyle,
+      s = (0, O.mO)(i),
+      a = null != r ? G.ZP.getURL(r) : true;
     this.setState({
-      isCustomGift: Chunk120356,
+      isCustomGift: l,
       isCollectiblesGift: s,
-      emojiURL: Chunk979554,
+      emojiURL: a,
       opened: s
     }), this.trackStepAnalytics()
   }
@@ -126,16 +126,16 @@ class et extends Chunk473749.Component {
       opened: l,
       isCustomGift: s
     } = this.state;
-    return (0, Chunk669079.TO)(module, require, {
-      error: Chunk54381,
-      accepted: Chunk473749,
-      accepting: exports,
-      opened: Chunk120356,
+    return (0, L.TO)(e, n, {
+      error: i,
+      accepted: r,
+      accepting: t,
+      opened: l,
       isCustomGift: s
     })
   }
   get buttonText() {
-    return (0, Chunk669079.L2)(this.step, this.props.giftCode, {
+    return (0, L.L2)(this.step, this.props.giftCode, {
       isCustomGift: this.state.isCustomGift
     })
   }
@@ -149,43 +149,43 @@ class et extends Chunk473749.Component {
       subscriptionPlan: r,
       collectiblesItemType: l
     } = this.props;
-    if (module && this.step === Chunk981631.wZ8.ERROR) return Chunk388032.intl.formatToMarkdownString(Chunk388032.t.JUvC0s, {});
-    if (module && !require)
-      if (!exports) return Chunk388032.intl.formatToPlainString(Chunk388032.t.xHzRub, {
-        recipientDisplayName: Chunk51144.ZP.getName(Chunk594174.default.getCurrentUser())
+    if (e && this.step === V.wZ8.ERROR) return W.intl.formatToMarkdownString(W.t.JUvC0s, {});
+    if (e && !n)
+      if (!t) return W.intl.formatToPlainString(W.t.xHzRub, {
+        recipientDisplayName: H.ZP.getName(R.default.getCurrentUser())
       });
       else {
-        let e = Chunk594174.default.getUser(Chunk54381.userId),
-          t = Chunk51144.ZP.getName(module);
-        if (null != Chunk120356) switch (Chunk120356) {
-          case Chunk979554.Z.AVATAR_DECORATION:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.SKduyh, {
-              sender: exports
+        let e = R.default.getUser(i.userId),
+          t = H.ZP.getName(e);
+        if (null != l) switch (l) {
+          case a.Z.AVATAR_DECORATION:
+            return W.intl.formatToPlainString(W.t.SKduyh, {
+              sender: t
             });
-          case Chunk979554.Z.PROFILE_EFFECT:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t["1w42T2"], {
-              sender: exports
+          case a.Z.PROFILE_EFFECT:
+            return W.intl.formatToPlainString(W.t["1w42T2"], {
+              sender: t
             });
-          case Chunk979554.Z.NAMEPLATE:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.vFiQlU, {
-              sender: exports
+          case a.Z.NAMEPLATE:
+            return W.intl.formatToPlainString(W.t.vFiQlU, {
+              sender: t
             });
           default:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.U4Ko2y, {
-              sender: exports
+            return W.intl.formatToPlainString(W.t.U4Ko2y, {
+              sender: t
             })
         }
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t["0UR0u4"], {
-          sender: exports,
-          timeInterval: (null == Chunk473749 ? true : Chunk473749.interval) === Chunk474936.rV.MONTH ? Chunk388032.intl.string(Chunk388032.t.FPybU7) : Chunk388032.intl.string(Chunk388032.t.tfqrhj)
+        return W.intl.formatToPlainString(W.t["0UR0u4"], {
+          sender: t,
+          timeInterval: (null == r ? true : r.interval) === B.rV.MONTH ? W.intl.string(W.t.FPybU7) : W.intl.string(W.t.tfqrhj)
         })
-      } return null == this.props.sku ? null : (0, Chunk669079.dQ)(this.step, this.props.giftCode, this.props.sku)
+      } return null == this.props.sku ? null : (0, L.dQ)(this.step, this.props.giftCode, this.props.sku)
   }
   get secondHeaderText() {
     if (!this.state.isCustomGift || this.state.opened || this.state.accepted) return null;
-    let e = Chunk594174.default.getUser(this.props.giftCode.userId);
-    return Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4Wz, {
-      sender: Chunk51144.ZP.getName(module)
+    let e = R.default.getUser(this.props.giftCode.userId);
+    return W.intl.formatToPlainString(W.t.DDO4Wz, {
+      sender: H.ZP.getName(e)
     })
   }
   get bodyText() {
@@ -195,22 +195,22 @@ class et extends Chunk473749.Component {
       libraryApplication: n,
       subscriptionPlan: i
     } = this.props;
-    if (null == module) return null;
+    if (null == e) return null;
     let {
       error: r,
       accepted: l,
       isCustomGift: s,
       opened: a
     } = this.state;
-    return !Chunk979554 && s ? null : (0, Chunk669079.iM)({
+    return !a && s ? null : (0, L.iM)({
       step: this.step,
-      sku: module,
-      libraryApplication: require,
-      error: Chunk473749,
-      accepted: Chunk120356,
-      accepting: exports,
+      sku: e,
+      libraryApplication: n,
+      error: r,
+      accepted: l,
+      accepting: t,
       onGoToLibrary: this.handleGoToLibrary,
-      subscriptionPlan: Chunk54381
+      subscriptionPlan: i
     })
   }
   get errorMessage() {
@@ -221,7 +221,7 @@ class et extends Chunk473749.Component {
       error: n,
       accepted: i
     } = this.state;
-    return (0, Chunk669079.e$)(module, require, Chunk54381, exports, this.handleGoToLibrary)
+    return (0, L.e$)(e, n, i, t, this.handleGoToLibrary)
   }
   get handleClick() {
     let {
@@ -229,14 +229,14 @@ class et extends Chunk473749.Component {
       onClose: t
     } = this.props;
     switch (this.step) {
-      case Chunk981631.wZ8.ERROR:
-        return exports;
-      case Chunk981631.wZ8.SUCCESS:
-        if (__OVERLAY__ || null != module.subscriptionPlanId) return exports;
+      case V.wZ8.ERROR:
+        return t;
+      case V.wZ8.SUCCESS:
+        if (__OVERLAY__ || null != e.subscriptionPlanId) return t;
         return this.handleGoToLibrary;
-      case Chunk981631.wZ8.OPEN:
+      case V.wZ8.OPEN:
         return this.handleOpen;
-      case Chunk981631.wZ8.CONFIRM:
+      case V.wZ8.CONFIRM:
       default:
         return this.handleAccept
     }
@@ -252,16 +252,16 @@ class et extends Chunk473749.Component {
     } = this.props, {
       isCustomGift: s
     } = this.state;
-    Chunk626135.default.track(Chunk981631.rMx.GIFT_ACCEPT_STEP, {
+    D.default.track(V.rMx.GIFT_ACCEPT_STEP, {
       to_step: this.step,
-      location_stack: Chunk120356,
+      location_stack: l,
       has_custom_message: s,
-      is_custom_message_edited: s && exports !== Chunk388032.intl.string(Chunk388032.t.ZkOo1U),
-      gift_style: module.giftStyle,
-      gift_code: module.code,
-      emoji_name: require,
-      sound_id: Chunk54381,
-      product_line: null == Chunk473749 ? true : Chunk473749.productLine
+      is_custom_message_edited: s && t !== W.intl.string(W.t.ZkOo1U),
+      gift_style: e.giftStyle,
+      gift_code: e.code,
+      emoji_name: n,
+      sound_id: i,
+      product_line: null == r ? true : r.productLine
     })
   }
   render() {
@@ -278,111 +278,111 @@ class et extends Chunk473749.Component {
       emojiName: f,
       soundId: p,
       isThemeDark: m
-    } = this.props, h = Chunk594174.default.getUser(Chunk473749.userId), {
+    } = this.props, h = R.default.getUser(r.userId), {
       isCustomGift: b,
       isCollectiblesGift: g,
       accepted: y,
       opened: O,
       emojiURL: j
-    } = this.state, v = Chunk594174.default.getCurrentUser(), S = this.step === Chunk981631.wZ8.ERROR, x = (null == Chunk473749 ? true : Chunk473749.userId) != null && null != Chunk832149 && (null == Chunk832149 ? true : Chunk832149.id) != null && Chunk473749.userId === Chunk832149.id;
+    } = this.state, v = R.default.getCurrentUser(), S = this.step === V.wZ8.ERROR, x = (null == r ? true : r.userId) != null && null != v && (null == v ? true : v.id) != null && r.userId === v.id;
     switch (this.step) {
-      case Chunk981631.wZ8.ERROR:
-        null == Chunk780384 || Chunk780384(Chunk473749, false);
+      case V.wZ8.ERROR:
+        null == c || c(r, false);
         break;
-      case Chunk981631.wZ8.SUCCESS:
-        null == Chunk780384 || Chunk780384(Chunk473749, true)
+      case V.wZ8.SUCCESS:
+        null == c || c(r, true)
     }
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, i.jsxs)("div", {
       ref: this.modalRef,
-      children: [(0, Chunk54381.jsxs)(Chunk481060.Y0X, {
+      children: [(0, i.jsxs)(u.Y0X, {
         "data-migration-pending": true,
-        transitionState: Chunk979554,
-        size: Chunk481060.CgR.SMALL,
-        className: Chunk655225.modal,
-        "aria-labelledby": Chunk120356,
+        transitionState: a,
+        size: u.CgR.SMALL,
+        className: Y.modal,
+        "aria-labelledby": l,
         parentComponent: "GiftCodeModal",
-        children: [null != Chunk473749.giftStyle && !Chunk728345 && !Chunk812206 && (0, Chunk54381.jsx)(Chunk981632.Z, {
+        children: [null != r.giftStyle && !b && !g && (0, i.jsx)(z.Z, {
           defaultAnimationState: this.getDefaultAnimationStatus(),
           idleAnimationState: this.getIdleAnimationStatus(),
-          giftStyle: Chunk473749.giftStyle,
-          className: Chunk655225.seasonalGiftIcon
-        }), !Chunk728345 && (0, Chunk54381.jsx)("div", {
-          className: Chunk655225.backSplash
-        }), !Chunk812206 && (0, Chunk54381.jsx)(Chunk481060.olH, {
+          giftStyle: r.giftStyle,
+          className: Y.seasonalGiftIcon
+        }), !b && (0, i.jsx)("div", {
+          className: Y.backSplash
+        }), !g && (0, i.jsx)(u.olH, {
           "data-migration-pending": true,
-          onClick: require,
-          className: Chunk655225.closeButton
-        }), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
+          onClick: n,
+          className: Y.closeButton
+        }), (0, i.jsxs)(u.hzk, {
           "data-migration-pending": true,
           className: s()({
-            [Chunk655225.content]: !Chunk728345,
-            [Chunk655225.contentCustomGift]: Chunk728345
+            [Y.content]: !b,
+            [Y.contentCustomGift]: b
           }),
-          children: [!Chunk812206 && (null == Chunk473749.giftStyle || Chunk728345 && Chunk597688) ? (0, Chunk54381.jsx)(Chunk925329.Z, {
-            size: Chunk925329.A.LARGE,
-            game: module,
-            skuId: Chunk473749.skuId
-          }) : null, Chunk745510 && (0, Chunk54381.jsx)("img", {
+          children: [!g && (null == r.giftStyle || b && y) ? (0, i.jsx)(w.Z, {
+            size: w.A.LARGE,
+            game: e,
+            skuId: r.skuId
+          }) : null, S && (0, i.jsx)("img", {
             alt: "",
-            src: Chunk100527 ? Chunk167969 : Chunk557256
-          }), (0, Chunk54381.jsxs)(Chunk481060.Heading, {
-            id: Chunk120356,
+            src: m ? $ : q
+          }), (0, i.jsxs)(u.Heading, {
+            id: l,
             className: s()({
-              [Chunk655225.customGiftHeader]: Chunk728345 && !Chunk597688,
-              [Chunk655225.header]: !Chunk728345 || Chunk597688
+              [Y.customGiftHeader]: b && !y,
+              [Y.header]: !b || y
             }),
             variant: "heading-sm/semibold",
-            children: [(0, Chunk54381.jsx)("div", {
+            children: [(0, i.jsx)("div", {
               className: s()({
-                [Chunk655225.customGiftHeaderText]: Chunk728345
+                [Y.customGiftHeaderText]: b
               }),
               children: this.firstHeaderText
-            }), (0, Chunk54381.jsx)("div", {
+            }), (0, i.jsx)("div", {
               children: this.secondHeaderText
             })]
-          }), !(Chunk728345 && !Chunk597688) && (0, Chunk54381.jsx)(Chunk481060.Text, {
-            className: Chunk655225.body,
+          }), !(b && !y) && (0, i.jsx)(u.Text, {
+            className: Y.body,
             variant: "text-sm/normal",
             children: this.bodyText
-          }), Chunk728345 && !Chunk812206 && null != Chunk473749.giftStyle && !Chunk597688 && !Chunk745510 && (0, Chunk54381.jsx)(Chunk981632.Z, {
+          }), b && !g && null != r.giftStyle && !y && !S && (0, i.jsx)(z.Z, {
             defaultAnimationState: this.getDefaultAnimationStatus(),
             idleAnimationState: this.getIdleAnimationStatus(),
-            className: Chunk655225.giftAnimation,
-            giftStyle: Chunk473749.giftStyle
-          }), this.state.opened && !Chunk745510 && Chunk812206 && (0, Chunk54381.jsx)(Chunk551425.Z, {
-            giftCode: Chunk473749
-          }), Chunk745510 && (0, Chunk54381.jsx)(Chunk481060.Text, {
-            className: Chunk655225.body,
+            className: Y.giftAnimation,
+            giftStyle: r.giftStyle
+          }), this.state.opened && !S && g && (0, i.jsx)(P.Z, {
+            giftCode: r
+          }), S && (0, i.jsx)(u.Text, {
+            className: Y.body,
             variant: "text-md/normal",
             children: this.errorMessage
-          }), Chunk728345 && this.state.opened && !this.state.accepted && !Chunk745510 && null != Chunk533307 && "" !== Chunk533307 && !Chunk313201 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-            children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-              id: Chunk120356,
+          }), b && this.state.opened && !this.state.accepted && !S && null != d && "" !== d && !x && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(u.Heading, {
+              id: l,
               variant: "heading-md/semibold",
-              children: Chunk388032.intl.format(Chunk388032.t.DDO4Wz, {
-                sender: Chunk51144.ZP.getName(Chunk906732)
+              children: W.intl.format(W.t.DDO4Wz, {
+                sender: H.ZP.getName(h)
               })
-            }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-              className: Chunk655225.customMessage,
+            }), (0, i.jsx)(u.Text, {
+              className: Y.customMessage,
               variant: "text-md/semibold",
-              children: Chunk533307
+              children: d
             })]
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          }), (0, i.jsx)(u.Button, {
             variant: "primary",
             text: this.buttonText,
-            loading: exports,
+            loading: t,
             onClick: () => {
               this.trackStepAnalytics(), this.handleClick()
             }
           })]
         })]
-      }), null != Chunk473749.giftStyle && !Chunk442837 && this.step !== Chunk981631.wZ8.ERROR && !Chunk597688 && !exports && Chunk884697 && (null == Chunk410030 || null == Chunk583434 ? (0, Chunk54381.jsx)(X, {
-        openedGift: Chunk884697 && !Chunk597688 && !exports
-      }) : (0, Chunk54381.jsx)(Chunk715627.Z, {
+      }), null != r.giftStyle && !o && this.step !== V.wZ8.ERROR && !y && !t && O && (null == f || null == j ? (0, i.jsx)(X, {
+        openedGift: O && !y && !t
+      }) : (0, i.jsx)(F.Z, {
         confettiTarget: this.modalRef.current,
-        emojiURL: Chunk583434
-      })), !Chunk597688 && !exports && Chunk884697 && null != Chunk607070 && (0, Chunk54381.jsx)(ee, {
-        soundId: Chunk607070,
+        emojiURL: j
+      })), !y && !t && O && null != p && (0, i.jsx)(ee, {
+        soundId: p,
         step: this.step
       })]
     })

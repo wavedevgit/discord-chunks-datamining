@@ -43,19 +43,19 @@ function h(e) {
 }
 
 function x() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk794558.emptyState,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk794558.emptyStateIcon,
-      children: (0, Chunk54381.jsx)(Chunk481060.VL1, {
+  return (0, r.jsxs)("div", {
+    className: p.emptyState,
+    children: [(0, r.jsx)("div", {
+      className: p.emptyStateIcon,
+      children: (0, r.jsx)(s.VL1, {
         size: "md",
         color: "currentColor"
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk794558.channelName,
+    }), (0, r.jsx)(s.Text, {
+      className: p.channelName,
       variant: "text-md/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t.Qj6O91)
+      children: b.intl.string(b.t.Qj6O91)
     })]
   })
 }
@@ -74,8 +74,8 @@ function j(e) {
 }
 
 function v() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk794558.divider
+  return (0, r.jsx)("div", {
+    className: p.divider
   })
 }
 

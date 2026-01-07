@@ -12,18 +12,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.Em)(Chunk313789.n.OVERLAY_VOICE_WIDGET_AVATAR_SIZE, {
   fieldLayout: "horizontal",
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.dnvZSg),
-  useValue: () => (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.getAvatarSizeMode()),
+  useTitle: () => o.intl.string(o.t.dnvZSg),
+  useValue: () => (0, i.e7)([u.default], () => u.default.getAvatarSizeMode()),
   setValue: t => {
     l.Z.setAvatarSizeMode(t)
   },
   useOptions: () => [{
     id: "large",
-    label: Chunk388032.intl.string(Chunk388032.t.YcOxtr),
-    value: Chunk981631.ipw.LARGE
+    label: o.intl.string(o.t.YcOxtr),
+    value: a.ipw.LARGE
   }, {
     id: "small",
-    label: Chunk388032.intl.string(Chunk388032.t.BKIKqx),
-    value: Chunk981631.ipw.SMALL
+    label: o.intl.string(o.t.BKIKqx),
+    value: a.ipw.SMALL
   }]
 })

@@ -33,130 +33,130 @@ var Chunk54381 = require("./54381.js"),
   Chunk331867 = require("./331867.js");
 let P = function() {
   var e, t, n, P;
-  (0, Chunk388032.useSyncMessages)(Chunk551199.messagesLoader);
-  let w = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-    Z = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
+  (0, _.useSyncMessages)(S.messagesLoader);
+  let w = (0, a.e7)([h.Z], () => h.Z.getGuild()),
+    Z = (0, a.e7)([h.Z], () => h.Z.getGuildProfile()),
     {
       fetchGuildProfile: R,
       fetchStatus: D
-    } = (0, Chunk65361.u)(null == w ? true : w.id);
-  if (Chunk473749.useEffect(() => {
-      (0, Chunk266454.Q3)(Chunk704215.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE, {
-        dismissAction: Chunk921944.L.AUTO
+    } = (0, g.u)(null == w ? true : w.id);
+  if (i.useEffect(() => {
+      (0, d.Q3)(s.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE, {
+        dismissAction: E.L.AUTO
       })
-    }, []), Chunk473749.useEffect(() => {
-      D === Chunk314852.a.NOT_FETCHED && R()
-    }, [R, D]), D !== Chunk314852.a.FETCHED) return (0, Chunk54381.jsx)("div", {
-    className: Chunk331867.spinnerContainer,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+    }, []), i.useEffect(() => {
+      D === u.a.NOT_FETCHED && R()
+    }, [R, D]), D !== u.a.FETCHED) return (0, r.jsx)("div", {
+    className: T.spinnerContainer,
+    children: (0, r.jsx)(o.$jN, {})
   });
   if (null == w || null == Z) return null;
-  let A = Chunk580685.Y.VISIBLE.has(Z.visibility),
-    L = (0, Chunk731722.up)(w),
+  let A = l.Y.VISIBLE.has(Z.visibility),
+    L = (0, f.up)(w),
     k = !L || (null == Z ? true : Z.tag) == null,
-    G = null != (e = Z.badge) ? module : Chunk131085.QV["0"],
-    M = null != (t = Z.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
-    U = null != (n = Z.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
-    B = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk196902.Z, {
-        className: Chunk331867.section,
+    G = null != (e = Z.badge) ? e : I.QV["0"],
+    M = null != (t = Z.badgeColorPrimary) ? t : I.Ek["0"].primary,
+    U = null != (n = Z.badgeColorSecondary) ? n : I.Ek["0"].secondary,
+    B = (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(v.Z, {
+        className: T.section,
         guildId: w.id,
         isDisabled: k,
         tag: null != (P = Z.tag) ? P : "",
         badge: G,
         primaryColor: M,
         secondaryColor: U
-      }), (0, Chunk54381.jsx)(Chunk910494.Z, {
-        className: Chunk331867.section,
+      }), (0, r.jsx)(j.Z, {
+        className: T.section,
         selectedBadge: G,
         guildId: w.id
-      }), (0, Chunk54381.jsx)(Chunk423087.Z, {
-        className: Chunk331867.section,
+      }), (0, r.jsx)(O.Z, {
+        className: T.section,
         guildId: w.id,
         badge: G,
         primaryColor: M,
         secondaryColor: U
       })]
     });
-  return (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk331867.title,
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(o.Heading, {
+      className: T.title,
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk551199.default.mf2OwH)
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk331867.container,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk331867.leftContent,
-        children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk331867.descriptionContainer,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: _.intl.string(S.default.mf2OwH)
+    }), (0, r.jsxs)("div", {
+      className: T.container,
+      children: [(0, r.jsxs)("div", {
+        className: T.leftContent,
+        children: [(0, r.jsxs)("div", {
+          className: T.descriptionContainer,
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: Chunk388032.intl.format(Chunk551199.default["655Uny"], {
+            children: _.intl.format(S.default["655Uny"], {
               onClickServerProfile: () => {
-                Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE)
+                p.Z.setSection(N.pNK.PROFILE)
               },
               onClickApplyToJoin: () => {
-                Chunk434404.Z.setSection(Chunk981631.pNK.ACCESS)
+                p.Z.setSection(N.pNK.ACCESS)
               }
             })
-          }), !A && (0, Chunk54381.jsx)(Chunk494620.Z, {
-            className: Chunk331867.privateProfileWarning,
-            children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+          }), !A && (0, r.jsx)(b.Z, {
+            className: T.privateProfileWarning,
+            children: (0, r.jsx)(o.Text, {
               variant: "text-xs/medium",
-              children: Chunk388032.intl.format(Chunk551199.default.CRbkIz, {
-                onClickEditSetting: () => Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE, Chunk981631.KsC.PROFILE_VISIBILITY)
+              children: _.intl.format(S.default.CRbkIz, {
+                onClickEditSetting: () => p.Z.setSection(N.pNK.PROFILE, N.KsC.PROFILE_VISIBILITY)
               })
             })
           })]
-        }), L ? (0, Chunk54381.jsxs)("div", {
-          className: Chunk331867.enableSwitchContainer,
-          children: [(0, Chunk54381.jsx)("label", {
+        }), L ? (0, r.jsxs)("div", {
+          className: T.enableSwitchContainer,
+          children: [(0, r.jsx)("label", {
             htmlFor: "enable-server-tag",
-            children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+            children: (0, r.jsx)(o.Text, {
               variant: "text-md/semibold",
               color: "text-strong",
-              children: Chunk388032.intl.string(Chunk551199.default["1zams8"])
+              children: _.intl.string(S.default["1zams8"])
             })
-          }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+          }), (0, r.jsx)(o.rsf, {
             id: "enable-server-tag",
             checked: !k,
             onChange: () => {
               if (k) {
                 var e;
-                Chunk434404.Z.updateGuildProfile(w.id, {
-                  tag: null != (e = Z.tag) ? module : "",
+                p.Z.updateGuildProfile(w.id, {
+                  tag: null != (e = Z.tag) ? e : "",
                   badge: G,
                   badgeColorPrimary: M,
                   badgeColorSecondary: U
                 })
-              } else Chunk434404.Z.updateGuildProfile(w.id, {
+              } else p.Z.updateGuildProfile(w.id, {
                 tag: null
               })
             }
           })]
-        }) : (0, Chunk54381.jsx)("div", {
-          className: Chunk331867.boostingLinkContainer,
-          children: (0, Chunk54381.jsx)(Chunk465682.v, {
+        }) : (0, r.jsx)("div", {
+          className: T.boostingLinkContainer,
+          children: (0, r.jsx)(x.v, {
             onClick: () => {
-              (0, Chunk441536.Z)(w.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), Chunk434404.Z.close()
+              (0, m.Z)(w.id, c.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), p.Z.close()
             }
           })
-        }), k ? (0, Chunk54381.jsx)(Chunk481060.nuw, {
-          children: (0, Chunk54381.jsx)("div", {
-            className: Chunk331867.disabledForm,
+        }), k ? (0, r.jsx)(o.nuw, {
+          children: (0, r.jsx)("div", {
+            className: T.disabledForm,
             children: B
           })
         }) : B]
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk331867.sidebarContainer,
-        children: [(0, Chunk54381.jsx)(Chunk978088.Z, {
+      }), (0, r.jsxs)("div", {
+        className: T.sidebarContainer,
+        children: [(0, r.jsx)(y.Z, {
           guildId: w.id,
           tag: Z.tag,
           badge: G,
           primaryColor: M,
           secondaryColor: U
-        }), !k && (0, Chunk54381.jsx)(Chunk582066.Z, {
+        }), !k && (0, r.jsx)(C.Z, {
           guildId: w.id
         })]
       })]

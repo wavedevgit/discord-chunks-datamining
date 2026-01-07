@@ -10,13 +10,13 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 class s extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+    r.Z.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+    r.Z.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
   destroy() {
-    Chunk570140.Z.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+    r.Z.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
   constructor(...e) {
     super(...e),

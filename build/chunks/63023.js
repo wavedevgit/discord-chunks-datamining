@@ -17,7 +17,7 @@ class i {
       if (this._queue.length > 0 && this._tokenCount > 0) {
         this._tokenCount--, null == this._intervalID && (this._intervalID = setInterval(() => this._iterate(), this._intervalPeriod));
         let e = this._queue.shift();
-        null == module || module(), this._processQueue()
+        null == e || e(), this._processQueue()
       }
     }, 0)
   }

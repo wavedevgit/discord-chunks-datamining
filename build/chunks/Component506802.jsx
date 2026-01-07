@@ -214,9 +214,9 @@ class M extends(r = Chunk473749.Component) {
         if (null == (e = this.props.targetElementRef.current)) return
       } else {
         var t;
-        if (e = null == (t = this.siblingDomRef.current) ? true : exports.previousElementSibling, !(0, Chunk374470.kK)(module)) throw Error("VoidTooltip cannot find DOM node")
+        if (e = null == (t = this.siblingDomRef.current) ? true : t.previousElementSibling, !(0, d.kK)(e)) throw Error("VoidTooltip cannot find DOM node")
       }
-      this.domElementRef.current = module, this.hasDomElement = true, this.forceUpdate()
+      this.domElementRef.current = e, this.hasDomElement = true, this.forceUpdate()
     }
   }
   componentWillUnmount() {
@@ -228,8 +228,8 @@ class M extends(r = Chunk473749.Component) {
       text: n,
       "aria-label": r
     } = this.props;
-    if (null == require) return exports(N);
-    "string" == typeof r ? e = r : "string" == typeof require && false !== r && (e = require);
+    if (null == n) return t(N);
+    "string" == typeof r ? e = r : "string" == typeof n && false !== r && (e = n);
     let o = {
       onClick: this.handleClick,
       onMouseEnter: this.handleMouseEnter,
@@ -238,8 +238,8 @@ class M extends(r = Chunk473749.Component) {
       onFocus: this.handleFocus,
       onBlur: this.handleBlur
     };
-    return null != module && (Chunk120356["aria-label"] = module), (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [exports(Chunk120356), true === this.props.targetElementRef && (0, Chunk54381.jsx)("span", {
+    return null != e && (o["aria-label"] = e), (0, i.jsxs)(a.Fragment, {
+      children: [t(o), true === this.props.targetElementRef && (0, i.jsx)("span", {
         ref: this.siblingDomRef,
         style: {
           display: "none"
@@ -268,24 +268,24 @@ class M extends(r = Chunk473749.Component) {
       hideOnClick: _,
       tooltipPointerClassName: m,
       dataMeticulousIgnore: h
-    } = this.props, g = (Chunk873546.tq || Chunk873546.Em) && true === Chunk846519 && Chunk377527, E = false !== Chunk554916 && !Chunk314910 || true === Chunk554916, b = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, y = null;
-    return y = module instanceof Function ? b ? module() : null : module, (0, Chunk54381.jsx)(j, {
-      disableTooltipPointerEvents: Chunk343978,
+    } = this.props, g = (u.tq || u.Em) && true === p && _, E = false !== c && !g || true === c, b = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, y = null;
+    return y = e instanceof Function ? b ? e() : null : e, (0, i.jsx)(j, {
+      disableTooltipPointerEvents: E,
       targetElementRef: this.domElementRef,
       tooltipStyle: s,
-      tooltipClassName: Chunk120356,
-      tooltipContentClassName: Chunk24156,
-      tooltipPointerClassName: Chunk481060,
-      align: exports,
-      position: require,
+      tooltipClassName: o,
+      tooltipContentClassName: l,
+      tooltipPointerClassName: m,
+      align: t,
+      position: n,
       color: r,
-      spacing: Chunk473749,
+      spacing: a,
       isVisible: b,
-      onAnimationRest: Chunk374470,
-      onNonAccessibleClick: Chunk314910 ? this.handleClick : true,
-      allowOverflow: Chunk793030,
+      onAnimationRest: d,
+      onNonAccessibleClick: g ? this.handleClick : true,
+      allowOverflow: f,
       positionKeyStemOverride: this.props.positionKeyStemOverride,
-      dataMeticulousIgnore: Chunk607070,
+      dataMeticulousIgnore: h,
       children: y
     })
   }
@@ -294,11 +294,11 @@ class M extends(r = Chunk473749.Component) {
       delay: e,
       overflowOnly: t
     } = this.props;
-    if (exports) {
+    if (t) {
       let e = this.domElementRef.current;
-      if (null == module || (0, Chunk374470.kK)(module, HTMLElement) && module.offsetWidth >= module.scrollWidth) return
+      if (null == e || (0, d.kK)(e, HTMLElement) && e.offsetWidth >= e.scrollWidth) return
     }
-    null != module ? this.showTimeout.start(module, () => this.toggleShow(true), false) : this.toggleShow(true)
+    null != e ? this.showTimeout.start(e, () => this.toggleShow(true), false) : this.toggleShow(true)
   }
   hide() {
     this.showTimeout.stop(), this.toggleShow(false)

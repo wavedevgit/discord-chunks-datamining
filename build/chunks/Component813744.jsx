@@ -17,34 +17,34 @@ var Chunk442837 = require("./442837.js"),
 
 function f() {
   var e;
-  let t = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isIdleStatusIndicatorEnabled),
-    n = (0, Chunk442837.e7)([Chunk594174.default], () => {
+  let t = (0, i.e7)([s.default], () => s.default.isIdleStatusIndicatorEnabled),
+    n = (0, i.e7)([c.default], () => {
       var e, t;
-      return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports
+      return null != (t = null == (e = c.default.getCurrentUser()) ? true : e.isStaff()) && t
     }),
-    [f, p] = (0, Chunk442837.Wu)([Chunk517100.Z], () => [Chunk517100.Z.isIdle(), Chunk517100.Z.isAFK()]),
+    [f, p] = (0, i.Wu)([l.Z], () => [l.Z.isIdle(), l.Z.isAFK()]),
     _ = [];
-  return f || p || _.push("ACTIVE"), f && _.push("IDLE"), p && _.push("AFK"), require && exports ? (0, Chunk54381.jsx)(Chunk314910.ZP, {
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk956266.container,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk956266.status,
-        children: [(0, Chunk54381.jsx)(Chunk481060.qbd, {
-          status: _.includes("ACTIVE") ? Chunk231338.Sk.ONLINE : Chunk231338.Sk.IDLE,
-          className: Chunk956266.statusIndicator
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return f || p || _.push("ACTIVE"), f && _.push("IDLE"), p && _.push("AFK"), n && t ? (0, r.jsx)(o.ZP, {
+    children: (0, r.jsxs)("div", {
+      className: d.container,
+      children: [(0, r.jsxs)("div", {
+        className: d.status,
+        children: [(0, r.jsx)(a.qbd, {
+          status: _.includes("ACTIVE") ? u.Sk.ONLINE : u.Sk.IDLE,
+          className: d.statusIndicator
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: "IDLE STATUS:"
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk956266.statusText,
-          children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+        }), (0, r.jsx)("div", {
+          className: d.statusText,
+          children: (0, r.jsx)(a.Text, {
             variant: "text-md/bold",
             children: _.join(" + ")
           })
         })]
-      }), f && (0, Chunk54381.jsxs)(Chunk481060.Text, {
+      }), f && (0, r.jsxs)(a.Text, {
         variant: "text-md/normal",
-        children: ["Idle since:", " ", new Date(null != (e = Chunk517100.Z.getIdleSince()) ? module : 0).toLocaleDateString(true, {
+        children: ["Idle since:", " ", new Date(null != (e = l.Z.getIdleSince()) ? e : 0).toLocaleDateString(true, {
           year: "numeric",
           day: "numeric",
           month: "numeric",

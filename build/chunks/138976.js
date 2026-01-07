@@ -11,12 +11,12 @@ let o = {
   binds: ["shift+pageup"],
   comboKeysBindGlobal: true,
   action() {
-    let e = Chunk944486.Z.getChannelId();
-    if (null != module) {
-      let t = Chunk306680.ZP.ackMessageId(module);
-      null != exports && Chunk306680.ZP.getOldestUnreadTimestamp(module) > 0 && Chunk904245.Z.jumpToMessage({
-        channelId: module,
-        messageId: exports,
+    let e = a.Z.getChannelId();
+    if (null != e) {
+      let t = i.ZP.ackMessageId(e);
+      null != t && i.ZP.getOldestUnreadTimestamp(e) > 0 && r.Z.jumpToMessage({
+        channelId: e,
+        messageId: t,
         offset: 1,
         context: "Keyboard Shortcut"
       })

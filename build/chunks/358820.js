@@ -68,7 +68,7 @@ function I(e, t) {
 let T = new Chunk710845.Z("VoiceFilterActionCreators"),
   C = 1e3,
   A = (0, Chunk392711.debounce)(() => {
-    Chunk570140.Z.dispatch({
+    s.Z.dispatch({
       type: "VOICE_FILTER_LAGGING"
     })
   }, C, {
@@ -209,22 +209,22 @@ async function x(e) {
   return (0, o.dZ)(i) && await (0, E.A)(i), r
 }
 async function L() {
-  if (!Chunk709706.Z.isNativeModuleLoaded()) return void T.info("Voice Filter catalog refresh ignored, module not loaded.");
+  if (!h.Z.isNativeModuleLoaded()) return void T.info("Voice Filter catalog refresh ignored, module not loaded.");
   if (!N) try {
     N = true;
-    let e = Chunk998502.ZP.getVoiceFilters(),
-      t = await D(module),
-      n = null == Chunk709706.Z.getCatalogLastFetchTime() ? await x(exports) : true;
-    await Chunk570140.Z.dispatch({
+    let e = _.ZP.getVoiceFilters(),
+      t = await D(e),
+      n = null == h.Z.getCatalogLastFetchTime() ? await x(t) : true;
+    await s.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_SUCCESS",
-      catalog: exports,
-      initialModelState: require
+      catalog: t,
+      initialModelState: n
     })
   } catch (e) {
-    T.warn("Failed to refresh voice filters catalog: ".concat(module.message)), Chunk626135.default.track(Chunk981631.rMx.VOICE_FILTER_ERROR, {
+    T.warn("Failed to refresh voice filters catalog: ".concat(e.message)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
       error_message: "Failed to refresh voice filters catalog",
-      cause: (0, Chunk460366.X)(module)
-    }), Chunk960048.Z.captureException(module), await Chunk570140.Z.dispatch({
+      cause: (0, d.X)(e)
+    }), p.Z.captureException(e), await s.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_FAILED"
     })
   } finally {
@@ -233,37 +233,37 @@ async function L() {
 }
 
 function j() {
-  Chunk570140.Z.dispatch({
+  s.Z.dispatch({
     type: "VOICE_FILTER_DOWNLOAD_CANCELED"
   })
 }
 async function M() {
-  if (!(Chunk709706.Z.isNativeModuleLoaded() || Chunk709706.Z.isNativeModuleLoading()) && !__OVERLAY__) {
-    if (!(0, Chunk358085.isWindows)() && !(0, Chunk358085.isMac)()) return void Chunk570140.Z.dispatch({
+  if (!(h.Z.isNativeModuleLoaded() || h.Z.isNativeModuleLoading()) && !__OVERLAY__) {
+    if (!(0, f.isWindows)() && !(0, f.isMac)()) return void s.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
-      state: Chunk750180.O.UNSUPPORTED
+      state: g.O.UNSUPPORTED
     });
     try {
-      Chunk570140.Z.dispatch({
+      s.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
-        state: Chunk750180.O.LOADING
-      }), await Chunk998502.ZP.ensureModule("discord_voice_filters");
-      let t = Chunk998502.ZP.getVoiceFilters();
-      await exports.setupResources(), true !== exports.setVoiceFilterLaggingCallback && await exports.setVoiceFilterLaggingCallback(A), true !== exports.setVoiceFilterReadyCallback && await exports.setVoiceFilterReadyCallback(e => {
+        state: g.O.LOADING
+      }), await _.ZP.ensureModule("discord_voice_filters");
+      let t = _.ZP.getVoiceFilters();
+      await t.setupResources(), true !== t.setVoiceFilterLaggingCallback && await t.setVoiceFilterLaggingCallback(A), true !== t.setVoiceFilterReadyCallback && await t.setVoiceFilterReadyCallback(e => {
         s.Z.dispatch({
           type: "VOICE_FILTER_READY",
           name: e
         })
-      }), await Chunk570140.Z.dispatch({
+      }), await s.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
-        state: Chunk750180.O.LOADED
+        state: g.O.LOADED
       }), await L();
-      let n = Chunk131951.Z.getMostRecentlyRequestedVoiceFilter();
-      if (null != require) {
+      let n = c.Z.getMostRecentlyRequestedVoiceFilter();
+      if (null != n) {
         var e;
-        (null == (e = Chunk709706.Z.getVoiceFilter(require)) ? true : module.available) !== true ? (0, Chunk743498.v6)(null) : (0, Chunk743498.v6)(require)
+        (null == (e = h.Z.getVoiceFilter(n)) ? true : e.available) !== true ? (0, m.v6)(null) : (0, m.v6)(n)
       }
-      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceFiltersFailed, e => {
+      c.Z.getMediaEngine().on(a.aB.VoiceFiltersFailed, e => {
         T.warn("Voice Filters failed in process: ".concat(e)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
           error_message: "Voice Filters failed in process",
           cause: (0, d.X)(Error(e))
@@ -272,12 +272,12 @@ async function M() {
         }))
       })
     } catch (e) {
-      T.warn("Failed to load Voice Filters module: ".concat(module.message)), Chunk626135.default.track(Chunk981631.rMx.VOICE_FILTER_ERROR, {
+      T.warn("Failed to load Voice Filters module: ".concat(e.message)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
         error_message: "Failed to load Voice Filters module",
-        cause: (0, Chunk460366.X)(module)
-      }), Chunk960048.Z.captureException(module), Chunk570140.Z.dispatch({
+        cause: (0, d.X)(e)
+      }), p.Z.captureException(e), s.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
-        state: Chunk750180.O.FAILED
+        state: g.O.FAILED
       })
     }
   }

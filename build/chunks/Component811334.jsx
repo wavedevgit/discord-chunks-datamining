@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
 let f = Chunk473749.createContext({
     isPremiumRebrand: false
   }),
-  p = () => Chunk473749.useContext(f).isPremiumRebrand;
+  p = () => i.useContext(f).isPremiumRebrand;
 
 function _(e) {
   let {

@@ -10,18 +10,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk200988 = require("./200988.js");
 
 function o() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk200988.container,
-    children: [(0, Chunk54381.jsx)("img", {
+  return (0, r.jsxs)("div", {
+    className: s.container,
+    children: [(0, r.jsx)("img", {
       src: "https://cdn.discordapp.com/assets/content/a72233587aaf964fc327663677974641a235719ad6445da58f931094cb799f66.png",
-      alt: Chunk388032.intl.string(Chunk388032.t.oezC3x),
-      className: Chunk200988.img
-    }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+      alt: a.intl.string(a.t.oezC3x),
+      className: s.img
+    }), (0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.oezC3x)
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: a.intl.string(a.t.oezC3x)
+    }), (0, r.jsx)(l.Text, {
       variant: "text-md/medium",
-      children: Chunk388032.intl.string(Chunk388032.t["Tc/Ndl"])
+      children: a.intl.string(a.t["Tc/Ndl"])
     })]
   })
 }

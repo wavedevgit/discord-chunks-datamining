@@ -10,7 +10,7 @@ var Chunk4646 = require("./4646.js"),
 try {
   r = require(Object(function() {
     var e = Error("Cannot find module '@shopify/react-native-skia'");
-    throw module.code = "MODULE_NOT_FOUND", module
+    throw e.code = "MODULE_NOT_FOUND", e
   }())).Skia
 } catch (e) {
   r = null

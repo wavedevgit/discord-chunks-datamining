@@ -67,8 +67,8 @@ function m(e) {
 
 function h() {
   var e;
-  let t = (0, Chunk919570.GR)();
-  return null == exports ? null : null != (e = f.get(exports)) ? module : null
+  let t = (0, l.GR)();
+  return null == t ? null : null != (e = f.get(t)) ? e : null
 }
 
 function g(e) {
@@ -77,7 +77,7 @@ function g(e) {
 
 function E() {
   let e = h();
-  return null != module ? module.appContext : null
+  return null != e ? e.appContext : null
 }
 
 function b(e) {
@@ -93,10 +93,10 @@ function b(e) {
 }
 
 function y() {
-  return Chunk473749.useContext(d).appContext
+  return i.useContext(d).appContext
 }
 
 function O() {
-  return Chunk473749.useContext(d).windowDispatch
+  return i.useContext(d).windowDispatch
 }
 let v = d

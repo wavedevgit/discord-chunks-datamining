@@ -19,33 +19,33 @@ let p = 387,
   _ = 218;
 
 function m() {
-  let e = Chunk131951.Z.getCameraComponent(),
-    t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getVideoDeviceId()),
-    n = Chunk106388.Z.useField("previewEnabled"),
-    m = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
-  return ((0, Chunk493773.zq)(() => {
-    Chunk106388.Z.setState({
+  let e = c.Z.getCameraComponent(),
+    t = (0, i.e7)([c.Z], () => c.Z.getVideoDeviceId()),
+    n = u.Z.useField("previewEnabled"),
+    m = (0, i.e7)([c.Z], () => c.Z.isVideoAvailable());
+  return ((0, s.zq)(() => {
+    u.Z.setState({
       previewEnabled: false
     })
-  }), require) ? (0, Chunk54381.jsx)("div", {
-    className: Chunk79414.cameraWrapper,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk79414.camera,
-      children: [(0, Chunk54381.jsx)(module, {
-        deviceId: exports,
+  }), n) ? (0, r.jsx)("div", {
+    className: f.cameraWrapper,
+    children: (0, r.jsxs)("div", {
+      className: f.camera,
+      children: [(0, r.jsx)(e, {
+        deviceId: t,
         width: p,
         height: _,
-        disabled: !require
-      }), (0, Chunk54381.jsx)(Chunk747545.S, {})]
+        disabled: !n
+      }), (0, r.jsx)(l.S, {})]
     })
-  }) : (0, Chunk54381.jsx)("div", {
-    className: Chunk79414.cameraWrapper,
-    children: (0, Chunk54381.jsx)(Chunk28664.u, {
-      text: m ? null : Chunk388032.intl.string(Chunk388032.t["8jSzSe"]),
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+  }) : (0, r.jsx)("div", {
+    className: f.cameraWrapper,
+    children: (0, r.jsx)(a.u, {
+      text: m ? null : d.intl.string(d.t["8jSzSe"]),
+      children: (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.JIf4v7),
-        onClick: () => Chunk106388.Z.setState({
+        text: d.intl.string(d.t.JIf4v7),
+        onClick: () => u.Z.setState({
           previewEnabled: true
         }),
         disabled: !m

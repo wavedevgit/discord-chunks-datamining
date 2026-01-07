@@ -56,8 +56,8 @@ function B(e) {
 }
 
 function F() {
-  return Chunk473749.useEffect(() => {
-    Chunk284298.j.trigger()
+  return r.useEffect(() => {
+    p.j.trigger()
   }, []), null
 }
 
@@ -312,18 +312,18 @@ function G(e) {
   })
 }
 let V = 12633 == require.j ? function() {
-  let e = (0, Chunk659302.DH)(),
+  let e = (0, O.DH)(),
     {
       enabled: t
-    } = Chunk937797.nj.getConfig({
-      location: Chunk324805.dr.QUESTS_BAR
+    } = j.nj.getConfig({
+      location: L.dr.QUESTS_BAR
     });
-  return null == module ? null : (0, Chunk54381.jsx)(Chunk455357.x8, {
-    source: Chunk324805.dr.QUESTS_BAR,
-    questId: module.id,
-    listenForSourceError: exports,
-    children: (0, Chunk54381.jsx)(G, {
-      quest: module
+  return null == e ? null : (0, a.jsx)(E.x8, {
+    source: L.dr.QUESTS_BAR,
+    questId: e.id,
+    listenForSourceError: t,
+    children: (0, a.jsx)(G, {
+      quest: e
     })
-  }, module.id)
+  }, e.id)
 } : null

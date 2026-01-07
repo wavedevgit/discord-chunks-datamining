@@ -16,34 +16,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk808006 = require("./808006.js");
-let g = () => (0, Chunk51596.$Z)("DM_SEARCH"),
+let g = () => (0, l.$Z)("DM_SEARCH"),
   b = Chunk473749.memo(function() {
-    let e = (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.isLocked((0, Chunk145597.getPID)()) ? "true" : "false"),
-      t = (0, Chunk905423.Z)(e => {
+    let e = (0, a.e7)([d.default], () => d.default.isLocked((0, u.getPID)()) ? "true" : "false"),
+      t = (0, c.Z)(e => {
         let {
           channelId: t
         } = e;
         return t
       });
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk808006.privateChannels,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk808006.searchBar,
-        children: (0, Chunk54381.jsx)("button", {
+    return (0, i.jsxs)("div", {
+      className: p.privateChannels,
+      children: [(0, i.jsx)("div", {
+        className: p.searchBar,
+        children: (0, i.jsx)("button", {
           type: "button",
-          className: Chunk808006.searchBarComponent,
+          className: p.searchBarComponent,
           onClick: g,
-          children: Chunk388032.intl.string(Chunk388032.t.LzcpeZ)
+          children: h.intl.string(h.t.LzcpeZ)
         })
-      }), (0, Chunk54381.jsx)(Chunk831218.Z, {
+      }), (0, i.jsx)(s.Z, {
         padding: 8,
-        theme: Chunk981631.BRd.DARK,
-        version: module,
-        selectedChannelId: exports
-      }), (0, Chunk54381.jsx)("section", {
-        className: Chunk808006.panels,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
-        children: (0, Chunk54381.jsx)(Chunk840780.Z, {
+        theme: f.BRd.DARK,
+        version: e,
+        selectedChannelId: t
+      }), (0, i.jsx)("section", {
+        className: p.panels,
+        "aria-label": h.intl.string(h.t.StREWK),
+        children: (0, i.jsx)(o.Z, {
           guildId: null
         })
       })]

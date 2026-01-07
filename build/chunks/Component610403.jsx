@@ -16,16 +16,16 @@ var Chunk399606 = require("./399606.js"),
   Chunk674563 = require("./674563.js");
 
 function g() {
-  let e = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-    t = (0, Chunk352981.y)(null == module ? true : module.id, "guild_product_settings"),
+  let e = (0, i.e7)([s.Z], () => s.Z.getGuild()),
+    t = (0, o.y)(null == e ? true : e.id, "guild_product_settings"),
     {
       application: n,
       loading: g
-    } = (0, Chunk725803.Z)(null == module ? true : module.id, Chunk674563.wW.GUILD_ROLE_SUBSCRIPTIONS),
-    f = null != require && (null == module ? true : module.features.has(Chunk981631.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true;
-  return (0, Chunk54381.jsx)("main", {
-    children: null == module || !exports || g ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : (0, Chunk54381.jsx)(Chunk469351.t, {
-      guildId: module.id,
+    } = (0, a.Z)(null == e ? true : e.id, u.wW.GUILD_ROLE_SUBSCRIPTIONS),
+    f = null != n && (null == e ? true : e.features.has(d.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true;
+  return (0, r.jsx)("main", {
+    children: null == e || !t || g ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(c.t, {
+      guildId: e.id,
       hasValidApplication: f
     })
   })

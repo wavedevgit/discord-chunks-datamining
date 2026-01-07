@@ -47,14 +47,14 @@ function y(e) {
 
 function I() {
   var e, t;
-  let n = (e = ["grayscale(", ")"], exports || (t = module.slice(0)), Object.freeze(Object.defineProperties(module, {
+  let n = (e = ["grayscale(", ")"], t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, {
     raw: {
-      value: Object.freeze(exports)
+      value: Object.freeze(t)
     }
   })));
   return I = function() {
-    return require
-  }, require
+    return n
+  }, n
 }
 let S = {
     SMALL: {
@@ -152,20 +152,20 @@ let S = {
       children: v
     })
   },
-  A = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk128792.paginationVideoOverlay,
-    children: (0, Chunk54381.jsx)(Chunk283756.Z, {
+  A = () => (0, r.jsx)("div", {
+    className: j.paginationVideoOverlay,
+    children: (0, r.jsx)(b.Z, {
       inactive: true,
-      className: Chunk128792.paginationVideoPlayPill,
-      renderLinkComponent: Chunk524444.iT
+      className: j.paginationVideoPlayPill,
+      renderLinkComponent: x.iT
     })
   });
 class L extends(a = Chunk473749.PureComponent) {
   componentDidMount() {
-    Chunk585483.S.subscribe(Chunk981631.CkL.CAROUSEL_PREV, this.manualPrevious), Chunk585483.S.subscribe(Chunk981631.CkL.CAROUSEL_NEXT, this.manualNext)
+    v.S.subscribe(C.CkL.CAROUSEL_PREV, this.manualPrevious), v.S.subscribe(C.CkL.CAROUSEL_NEXT, this.manualNext)
   }
   componentWillUnmount() {
-    Chunk585483.S.unsubscribe(Chunk981631.CkL.CAROUSEL_PREV, this.manualPrevious), Chunk585483.S.unsubscribe(Chunk981631.CkL.CAROUSEL_NEXT, this.manualNext)
+    v.S.unsubscribe(C.CkL.CAROUSEL_PREV, this.manualPrevious), v.S.unsubscribe(C.CkL.CAROUSEL_NEXT, this.manualNext)
   }
   getStyle(e, t) {
     let n = t.interpolate({
@@ -208,25 +208,25 @@ class L extends(a = Chunk473749.PureComponent) {
       animate: n,
       hoveringPreviousItem: a,
       hoveringNextItem: i
-    } = this.state, l = (0, Chunk54381.jsx)(Chunk519160.ZP, {
-      items: module,
+    } = this.state, l = (0, r.jsx)(f.ZP, {
+      items: e,
       itemSize: this.getItemSize(),
       renderItem: this.renderItem,
-      currentIndex: exports,
-      animate: require,
+      currentIndex: t,
+      animate: n,
       edgeItems: 2
     });
-    return module.length <= 1 ? Chunk120356 : (0, Chunk54381.jsxs)("div", {
-      className: Chunk128792.carouselButtonsContainer,
-      children: [Chunk120356, (0, Chunk54381.jsx)(Chunk44488.am, {
+    return e.length <= 1 ? l : (0, r.jsxs)("div", {
+      className: j.carouselButtonsContainer,
+      children: [l, (0, r.jsx)(h.am, {
         onClick: this.manualPrevious,
-        className: s()(Chunk128792.arrow, {
-          [Chunk128792.arrowHovered]: a
+        className: s()(j.arrow, {
+          [j.arrowHovered]: a
         })
-      }), (0, Chunk54381.jsx)(Chunk44488.Pz, {
+      }), (0, r.jsx)(h.Pz, {
         onClick: this.manualNext,
-        className: s()(Chunk128792.arrow, {
-          [Chunk128792.arrowHovered]: Chunk473749
+        className: s()(j.arrow, {
+          [j.arrowHovered]: i
         })
       })]
     })
@@ -245,22 +245,22 @@ class L extends(a = Chunk473749.PureComponent) {
       playingVideo: l,
       hasInteracted: s
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk679056.Z, {
+    return (0, r.jsxs)(m.Z, {
       pauseOnHover: true,
       onInterval: this.autoNext,
-      interval: require,
-      className: exports,
-      disable: Chunk120356 || s || a,
-      children: [this.renderCarousel(), (0, Chunk54381.jsx)("div", {
-        className: Chunk128792.pagination,
-        children: (0, Chunk54381.jsx)(Chunk44488.ZP, {
+      interval: n,
+      className: t,
+      disable: l || s || a,
+      children: [this.renderCarousel(), (0, r.jsx)("div", {
+        className: j.pagination,
+        children: (0, r.jsx)(h.ZP, {
           renderItem: this.renderPaginationItem,
           scrollToPadding: 85,
-          items: module,
-          selectedIndex: Chunk473749,
+          items: e,
+          selectedIndex: i,
           onSetItem: e => this.setItem(e, true),
-          paginationContainerClass: Chunk128792.scroller,
-          align: module.length < 6 ? Chunk44488.ZP.Align.LEFT : Chunk44488.ZP.Align.CENTER
+          paginationContainerClass: j.scroller,
+          align: e.length < 6 ? h.ZP.Align.LEFT : h.ZP.Align.CENTER
         })
       })]
     })

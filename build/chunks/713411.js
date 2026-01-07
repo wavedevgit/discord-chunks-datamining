@@ -23,16 +23,16 @@ var r, Chunk179122 = require("./179122.js"),
     return e = null, t
   },
   b = function() {
-    var e, t = Chunk809290("iframe"),
+    var e, t = c("iframe"),
       n = "java" + _ + ":";
-    return exports.style.display = "none", Chunk620394.appendChild(exports), exports.src = String(require), (e = exports.contentWindow.document).open(), module.write(g("document.F=Object")), module.close(), module.F
+    return t.style.display = "none", l.appendChild(t), t.src = String(n), (e = t.contentWindow.document).open(), e.write(g("document.F=Object")), e.close(), e.F
   },
   y = function() {
     try {
       r = new ActiveXObject("htmlfile")
     } catch (e) {}
     y = "undefined" != typeof document ? document.domain && r ? E(r) : b() : E(r);
-    for (var e = Chunk344894.length; module--;) delete y[p][Chunk344894[module]];
+    for (var e = o.length; e--;) delete y[p][o[e]];
     return y()
   };
 Chunk485073[m] = true, module.exports = Object.create || function(e, t) {

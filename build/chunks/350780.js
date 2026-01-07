@@ -2,8 +2,8 @@
 /** chunk id: 350780, original params: e,t,n (module,exports,re quire) **/
 var Chunk608282 = require("./608282.js"),
   i = function() {
-    var e = /[^.]+$/.exec(Chunk608282 && Chunk608282.keys && Chunk608282.keys.IE_PROTO || "");
-    return module ? "Symbol(src)_1." + module : ""
+    var e = /[^.]+$/.exec(r && r.keys && r.keys.IE_PROTO || "");
+    return e ? "Symbol(src)_1." + e : ""
   }();
 module.exports = function(e) {
   return !!i && i in e

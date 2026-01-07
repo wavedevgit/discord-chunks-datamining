@@ -7,5 +7,5 @@ var Chunk442837 = require("./442837.js"),
   Chunk333984 = require("./333984.js");
 
 function l() {
-  return (0, Chunk442837.e7)([Chunk333984.Z], () => Chunk333984.Z.getSpamChannelsCount())
+  return (0, r.e7)([i.Z], () => i.Z.getSpamChannelsCount())
 }

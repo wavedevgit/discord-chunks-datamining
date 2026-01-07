@@ -15,8 +15,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk804665 = require("./804665.js");
-let v = () => (0, Chunk54381.jsx)("div", {
-  className: Chunk804665.separator
+let v = () => (0, t.jsx)("div", {
+  className: g.separator
 });
 
 function j(e) {
@@ -58,7 +58,7 @@ function h(e) {
 }
 let E = () => {
   var e;
-  let l = Chunk695346.G6.useSetting(),
+  let l = u.G6.useSetting(),
     {
       nickname: n,
       dmsAllowed: o,
@@ -68,39 +68,39 @@ let E = () => {
       setShowActivity: _,
       guildId: I,
       inviteCode: N
-    } = (0, Chunk978986.XW)(),
-    f = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable,
-    S = Chunk473749.useCallback(() => {
-      Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+    } = (0, c.XW)(),
+    f = null == (e = r.Z.getProps().invite) ? true : e.is_nickname_changeable,
+    S = i.useCallback(() => {
+      d.default.track(m.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
         guild_id: I,
         invite_code: N
       })
     }, [I, N]);
-  return (0, Chunk54381.jsxs)(Chunk590149.Z, {
-    icon: (0, Chunk54381.jsx)(Chunk481060.ewm, {
+  return (0, t.jsxs)(s.Z, {
+    icon: (0, t.jsx)(a.ewm, {
       size: "refresh_sm"
     }),
-    title: Chunk388032.intl.string(Chunk388032.t["A5wHQ/"]),
-    subtitle: Chunk388032.intl.string(Chunk388032.t.UKCSEd),
+    title: x.intl.string(x.t["A5wHQ/"]),
+    subtitle: x.intl.string(x.t.UKCSEd),
     onOpen: S,
     maxHeight: f ? 220 : 130,
-    children: [f && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(j, {
-        label: Chunk388032.intl.string(Chunk388032.t.me1lRk),
-        children: (0, Chunk54381.jsx)(Chunk481060.oil, {
-          placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
-          maxLength: Chunk981631.l$U,
-          value: require,
+    children: [f && (0, t.jsxs)(t.Fragment, {
+      children: [(0, t.jsx)(j, {
+        label: x.intl.string(x.t.me1lRk),
+        children: (0, t.jsx)(a.oil, {
+          placeholder: x.intl.string(x.t["09Q8yp"]),
+          maxLength: m.l$U,
+          value: n,
           onChange: E
         })
-      }), (0, Chunk54381.jsx)(v, {})]
-    }), (0, Chunk54381.jsx)(h, {
-      label: Chunk388032.intl.string(Chunk388032.t["/2ed37"]),
-      checked: Chunk51331,
+      }), (0, t.jsx)(v, {})]
+    }), (0, t.jsx)(h, {
+      label: x.intl.string(x.t["/2ed37"]),
+      checked: o,
       onChange: p
-    }), (0, Chunk54381.jsx)(v, {}), exports && (0, Chunk54381.jsx)(h, {
-      label: Chunk388032.intl.string(Chunk388032.t.bN4m1G),
-      checked: Chunk804665,
+    }), (0, t.jsx)(v, {}), l && (0, t.jsx)(h, {
+      label: x.intl.string(x.t.bN4m1G),
+      checked: g,
       onChange: _
     })]
   })

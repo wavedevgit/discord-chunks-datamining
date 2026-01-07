@@ -275,377 +275,377 @@ function eY(e) {
 }
 let eW = Chunk473749.memo(function() {
   var e, t;
-  let a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    l = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    c = (0, Chunk442837.e7)([Chunk933429.ZP], () => Chunk933429.ZP.getNotice()),
+  let a = (0, u.e7)([eg.default], () => eg.default.getCurrentUser()),
+    l = (0, u.e7)([eh.Z], () => eh.Z.getGuildId()),
+    c = (0, u.e7)([ey.ZP], () => ey.ZP.getNotice()),
     {
       analyticsLocations: g
-    } = (0, Chunk906732.ZP)(),
-    A = (0, Chunk281956.J)(Chunk209739),
+    } = (0, R.ZP)(),
+    A = (0, W.J)(l),
     {
       windowsMuteAndZeroVolumeDetectionEnabled: P
-    } = (0, Chunk647085.U)({
+    } = (0, J.U)({
       location: "AppNotice"
     });
-  Chunk473749.useEffect(() => {
-    (null == c ? true : c.type) != null && eH(c.type, Chunk209739)
-  }, [null == c ? true : c.type, Chunk209739]), Chunk473749.useEffect(() => {
-    if (null != c && c.type === Chunk981631.kVF.SURVEY && null != c.metadata) {
+  i.useEffect(() => {
+    (null == c ? true : c.type) != null && eH(c.type, l)
+  }, [null == c ? true : c.type, l]), i.useEffect(() => {
+    if (null != c && c.type === eT.kVF.SURVEY && null != c.metadata) {
       let {
         metadata: e
-      } = c, t = Chunk353926.Z.getUserExperimentDescriptor(module.id);
-      null != exports && (0, Chunk492435.W9)(module.id, exports), (async () => {
+      } = c, t = F.Z.getUserExperimentDescriptor(e.id);
+      null != t && (0, Z.W9)(e.id, t), (async () => {
         var e, t;
-        (null == (e = c.metadata) ? true : module.id) != null && await (0, Chunk491428.g8)(null == (t = c.metadata) ? true : exports.id)
+        (null == (e = c.metadata) ? true : e.id) != null && await (0, S.g8)(null == (t = c.metadata) ? true : t.id)
       })()
     }
   }, [c]);
-  let G = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT),
-    [ef, eO] = Chunk473749.useState(""),
-    [eC, eD] = Chunk473749.useState(null),
-    [eL, eM] = Chunk473749.useState(null);
-  if (Chunk473749.useEffect(() => {
-      if ((0, Chunk358085.isWindows)() && Chunk100527) {
-        let e = null == Chunk458725 ? true : Chunk458725.guid;
-        null != module && (Chunk626135(module), Chunk998502.ZP.ensureModule("discord_voice").then(() => {
+  let G = (0, $.p6)(eP.h7.AUDIO_INPUT),
+    [ef, eO] = i.useState(""),
+    [eC, eD] = i.useState(null),
+    [eL, eM] = i.useState(null);
+  if (i.useEffect(() => {
+      if ((0, eS.isWindows)() && P) {
+        let e = null == G ? true : G.guid;
+        null != e && (eO(e), eI.ZP.ensureModule("discord_voice").then(() => {
           try {
             var t, n, r, i;
-            let a = (0, Chunk992774.zS)();
-            null == Chunk913527 || null == (n = Chunk913527.getDeviceOSMuted) || null == (t = require.call(Chunk913527, module)) || exports.then(e => eD(e)), null == Chunk913527 || null == (i = Chunk913527.getDeviceOSVolume) || null == (r = Chunk473749.call(Chunk913527, module)) || Chunk54381.then(e => eM(e))
+            let a = (0, d.zS)();
+            null == a || null == (n = a.getDeviceOSMuted) || null == (t = n.call(a, e)) || t.then(e => eD(e)), null == a || null == (i = a.getDeviceOSVolume) || null == (r = i.call(a, e)) || r.then(e => eM(e))
           } catch (e) {}
         }).catch())
       }
-    }, [Chunk100527, null == Chunk458725 ? true : Chunk458725.guid]), null == c) return null;
-  let eU = null != c.type ? Chunk933429.zD[c.type] : null,
-    eG = null != c.type ? Chunk933429.o[c.type] : null,
-    eW = null != c.type ? Chunk933429.nA[c.type] : null,
-    eK = Chunk933429.m9[c.type];
-  if (null != eU) return (0, Chunk54381.jsx)(Chunk132144.W, {
+    }, [P, null == G ? true : G.guid]), null == c) return null;
+  let eU = null != c.type ? ey.zD[c.type] : null,
+    eG = null != c.type ? ey.o[c.type] : null,
+    eW = null != c.type ? ey.nA[c.type] : null,
+    eK = ey.m9[c.type];
+  if (null != eU) return (0, r.jsx)(k.W, {
     dismissibleContent: eU,
     noticeType: c.type
   });
-  if (null != eG) return (0, Chunk54381.jsx)(Chunk131130.q, {
+  if (null != eG) return (0, r.jsx)(U.q, {
     dismissibleContent: eG,
     noticeType: c.type
   });
-  if (null != eW) return (0, Chunk54381.jsx)(Chunk196068.c, {
+  if (null != eW) return (0, r.jsx)(M.c, {
     dismissibleContent: eW
   });
-  if (null != eK) return (0, Chunk54381.jsx)(Chunk749277.A, {
+  if (null != eK) return (0, r.jsx)(j.A, {
     dismissibleContent: eK,
     noticeType: c.type
   });
-  let ez = null == (e = c.metadata) ? true : module.premiumType;
+  let ez = null == (e = c.metadata) ? true : e.premiumType;
   switch (c.type) {
-    case Chunk981631.kVF.LURKING_GUILD:
-      return (0, Chunk54381.jsx)(Chunk859428.Z, {});
-    case Chunk981631.kVF.PENDING_MEMBER:
-      return (0, Chunk54381.jsx)(Chunk574650.Z, {});
-    case Chunk981631.kVF.INVITED_TO_SPEAK:
-      return (0, Chunk54381.jsx)(Chunk852923.Z, {});
-    case Chunk981631.kVF.GUILD_RAID_NOTIFICATION:
+    case eT.kVF.LURKING_GUILD:
+      return (0, r.jsx)(X.Z, {});
+    case eT.kVF.PENDING_MEMBER:
+      return (0, r.jsx)(K.Z, {});
+    case eT.kVF.INVITED_TO_SPEAK:
+      return (0, r.jsx)(el.Z, {});
+    case eT.kVF.GUILD_RAID_NOTIFICATION:
       let {
         dismissUntil: eq
       } = c.metadata;
-      return (0, Chunk54381.jsx)(Chunk506357.Z, {
+      return (0, r.jsx)(B.Z, {
         onDismiss: () => eY(eq)
       });
-    case Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE:
+    case eT.kVF.WIN32_DEPRECATED_MESSAGE:
       let {
         dismissUntil: eQ
       } = c.metadata;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(eQ),
           noticeType: c.type
-        }), Chunk388032.intl.format(Chunk388032.t["08KQ1P"], {
-          helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN32_DEPRECATE)
+        }), eR.intl.format(eR.t["08KQ1P"], {
+          helpCenterLink: ev.Z.getArticleURL(eT.BhN.WIN32_DEPRECATE)
         })]
       });
-    case Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE:
+    case eT.kVF.WIN7_8_DEPRECATED_MESSAGE:
       let {
         dismissUntil: eX
       } = c.metadata;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(eX),
           noticeType: c.type
-        }), Chunk388032.intl.format(Chunk388032.t["8Je+dX"], {
-          helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN7_8_DEPRECATE)
+        }), eR.intl.format(eR.t["8Je+dX"], {
+          helpCenterLink: ev.Z.getArticleURL(eT.BhN.WIN7_8_DEPRECATE)
         })]
       });
-    case Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE:
+    case eT.kVF.MACOS_19_DEPRECATED_MESSAGE:
       let {
         dismissUntil: eJ
       } = c.metadata;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(eJ),
           noticeType: c.type
-        }), Chunk388032.intl.format(Chunk388032.t.q8VPLo, {
-          helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MACOS_19_DEPRECATE)
+        }), eR.intl.format(eR.t.q8VPLo, {
+          helpCenterLink: ev.Z.getArticleURL(eT.BhN.MACOS_19_DEPRECATE)
         })]
       });
-    case Chunk981631.kVF.GENERIC:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DEFAULT,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+    case eT.kVF.GENERIC:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DEFAULT,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
           noticeType: c.type
-        }), c.message, null != c.buttonText ? (0, Chunk54381.jsx)(Chunk481060.NoS, {
+        }), c.message, null != c.buttonText ? (0, r.jsx)(f.NoS, {
           onClick: c.callback,
           noticeType: c.type,
           children: c.buttonText
         }) : null]
       });
-    case Chunk981631.kVF.LAUNCH_GAME_FAILURE:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+    case eT.kVF.LAUNCH_GAME_FAILURE:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DANGER,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
           noticeType: c.type
-        }), c.message, null != c.buttonText ? (0, Chunk54381.jsx)(Chunk481060.NoS, {
+        }), c.message, null != c.buttonText ? (0, r.jsx)(f.NoS, {
           onClick: c.callback,
           noticeType: c.type,
           children: c.buttonText
         }) : null]
       });
-    case Chunk981631.kVF.VOICE_DISABLED:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+    case eT.kVF.VOICE_DISABLED:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => {
-            Chunk195500.Z.clearRemoteDisconnectVoiceChannelId(), eY()
+            E.Z.clearRemoteDisconnectVoiceChannelId(), eY()
           },
           noticeType: c.type
-        }), Chunk388032.intl.string(Chunk388032.t.bOQ3jV), (0, Chunk54381.jsx)(Chunk481060.NoS, {
+        }), eR.intl.string(eR.t.bOQ3jV), (0, r.jsx)(f.NoS, {
           onClick: () => {
-            let e = Chunk19780.Z.getRemoteDisconnectVoiceChannelId();
-            null != module && null != Chunk592125.Z.getChannel(module) && Chunk287734.default.selectVoiceChannel(module)
+            let e = em.Z.getRemoteDisconnectVoiceChannelId();
+            null != e && null != ep.Z.getChannel(e) && b.default.selectVoiceChannel(e)
           },
           noticeType: c.type,
-          children: Chunk388032.intl.string(Chunk388032.t.vD60Pv)
+          children: eR.intl.string(eR.t.vD60Pv)
         })]
       });
-    case Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DEFAULT,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+    case eT.kVF.VOICE_CONNECTED_LAST_SESSION:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DEFAULT,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => {
-            Chunk195500.Z.clearLastSessionVoiceChannelId(), eY()
+            E.Z.clearLastSessionVoiceChannelId(), eY()
           },
           noticeType: c.type
-        }), Chunk388032.intl.string(Chunk388032.t.jY2lUA), (0, Chunk54381.jsx)(Chunk481060.NoS, {
+        }), eR.intl.string(eR.t.jY2lUA), (0, r.jsx)(f.NoS, {
           onClick: () => {
-            let e = Chunk19780.Z.getLastSessionVoiceChannelId();
-            null != module && null != Chunk592125.Z.getChannel(module) && Chunk287734.default.selectVoiceChannel(module)
+            let e = em.Z.getLastSessionVoiceChannelId();
+            null != e && null != ep.Z.getChannel(e) && b.default.selectVoiceChannel(e)
           },
           noticeType: c.type,
-          children: Chunk388032.intl.string(Chunk388032.t.vD60Pv)
+          children: eR.intl.string(eR.t.vD60Pv)
         })]
       });
-    case Chunk981631.kVF.SPOTIFY_AUTO_PAUSED:
-      let e$ = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY);
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+    case eT.kVF.SPOTIFY_AUTO_PAUSED:
+      let e$ = N.Z.get(eT.ABu.SPOTIFY);
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DANGER,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
           noticeType: c.type
-        }), (0, Chunk54381.jsx)("img", {
+        }), (0, r.jsx)("img", {
           alt: "",
-          className: Chunk710930.platformIcon,
+          className: ew.platformIcon,
           src: e$.icon.whiteSVG
-        }), Chunk388032.intl.string(Chunk388032.t.D8Cp76), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
-            section: Chunk981631.oAB.VOICE
+        }), eR.intl.string(eR.t.D8Cp76), (0, r.jsx)(f.NoS, {
+          onClick: () => (0, ed.openUserSettings)(eu.n.VOICE_AND_VIDEO_PANEL, {
+            section: eT.oAB.VOICE
           }),
           noticeType: c.type,
-          children: Chunk388032.intl.string(Chunk388032.t.NiTd0e)
-        }), (0, Chunk54381.jsx)(Chunk481060.eee, {
-          className: Chunk710930.textLinkSmall,
-          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SPOTIFY_AUTO_PAUSED),
+          children: eR.intl.string(eR.t.NiTd0e)
+        }), (0, r.jsx)(f.eee, {
+          className: ew.textLinkSmall,
+          href: ev.Z.getArticleURL(eT.BhN.SPOTIFY_AUTO_PAUSED),
           target: "_blank",
-          children: Chunk388032.intl.string(Chunk388032.t.CiqAIU)
+          children: eR.intl.string(eR.t.CiqAIU)
         })]
       });
-    case Chunk981631.kVF.UNCLAIMED_ACCOUNT:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DEFAULT,
-        children: [Chunk388032.intl.string(Chunk388032.t["f+Zaol"]), (0, Chunk54381.jsx)(Chunk481060.NoS, {
+    case eT.kVF.UNCLAIMED_ACCOUNT:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DEFAULT,
+        children: [eR.intl.string(eR.t["f+Zaol"]), (0, r.jsx)(f.NoS, {
           noticeType: c.type,
-          onClick: () => Chunk579806 && null != Chunk209739 ? (0, Chunk305325.hk)(Chunk209739) : Chunk391650.j(),
-          children: Chunk388032.intl.string(Chunk388032.t.fiNVin)
+          onClick: () => A && null != l ? (0, Y.hk)(l) : D.j(),
+          children: eR.intl.string(eR.t.fiNVin)
         })]
       });
-    case Chunk981631.kVF.UNVERIFIED_ACCOUNT:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DEFAULT,
-        children: [Chunk388032.intl.string(Chunk388032.t["3sWbf3"]), (0, Chunk54381.jsx)(Chunk481060.NoS, {
+    case eT.kVF.UNVERIFIED_ACCOUNT:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DEFAULT,
+        children: [eR.intl.string(eR.t["3sWbf3"]), (0, r.jsx)(f.NoS, {
           noticeType: c.type,
           onClick: () => {
-            Chunk893776.Z.verifyResend(), Chunk668781.Z.show({
-              title: Chunk388032.intl.string(Chunk388032.t.LykQYk),
-              body: Chunk388032.intl.format(Chunk388032.t.azKEPy, {
-                email: null == Chunk913527 ? true : Chunk913527.email
+            m.Z.verifyResend(), p.Z.show({
+              title: eR.intl.string(eR.t.LykQYk),
+              body: eR.intl.format(eR.t.azKEPy, {
+                email: null == a ? true : a.email
               }),
-              cancelText: Chunk388032.intl.string(Chunk388032.t.Vm8akB),
-              onCancel: Chunk391650.j
+              cancelText: eR.intl.string(eR.t.Vm8akB),
+              onCancel: D.j
             })
           },
-          children: Chunk388032.intl.string(Chunk388032.t.WnX4J2)
+          children: eR.intl.string(eR.t.WnX4J2)
         })]
       });
-    case Chunk981631.kVF.SCHEDULED_MAINTENANCE:
+    case eT.kVF.SCHEDULED_MAINTENANCE:
       if (null == c.metadata) return null;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DEFAULT,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => Chunk205355.Z.ackScheduledMaintenance(),
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DEFAULT,
+        children: [(0, r.jsx)(f.RyX, {
+          onClick: () => y.Z.ackScheduledMaintenance(),
           noticeType: c.type
-        }), Chunk388032.intl.format(Chunk388032.t["yb96S+"], c.metadata), (0, Chunk54381.jsx)(Chunk481060.u3T, {
-          href: "".concat(Chunk981631.yXt.STATUS, "/incidents/").concat(c.metadata.id),
+        }), eR.intl.format(eR.t["yb96S+"], c.metadata), (0, r.jsx)(f.u3T, {
+          href: "".concat(eT.yXt.STATUS, "/incidents/").concat(c.metadata.id),
           noticeType: c.type,
-          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+          children: eR.intl.string(eR.t.hvVgAZ)
         })]
       });
-    case Chunk981631.kVF.NO_INPUT_DETECTED:
-      if ((0, Chunk647085.q)({
+    case eT.kVF.NO_INPUT_DETECTED:
+      if ((0, J.q)({
           location: "AppNotice.trueTriggerPoint"
-        }), (0, Chunk358085.isWindows)() && Chunk100527) {
-        if (true === Chunk70722) return (0, Chunk54381.jsx)(eZ, {
-          deviceGuid: Chunk475808,
+        }), (0, eS.isWindows)() && P) {
+        if (true === eC) return (0, r.jsx)(eZ, {
+          deviceGuid: ef,
           noticeType: c.type
         });
-        else if (0 === eL) return (0, Chunk54381.jsx)(eF, {
-          deviceGuid: Chunk475808,
+        else if (0 === eL) return (0, r.jsx)(eF, {
+          deviceGuid: ef,
           noticeType: c.type
         })
       }
-      if (!Chunk131951.Z.supports(Chunk65154.AN.LOOPBACK)) return (0, Chunk54381.jsx)(eB, {
+      if (!e_.Z.supports(eP.AN.LOOPBACK)) return (0, r.jsx)(eB, {
         noticeType: c.type
       });
-      return (0, Chunk54381.jsx)(eV, {
+      return (0, r.jsx)(eV, {
         noticeType: c.type
       });
-    case Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED:
-      return (0, Chunk54381.jsx)(ek, {
+    case eT.kVF.NO_INPUT_DEVICES_DETECTED:
+      return (0, r.jsx)(ek, {
         noticeType: c.type
       });
-    case Chunk981631.kVF.HARDWARE_MUTE:
+    case eT.kVF.HARDWARE_MUTE:
       if (null == c.metadata) return null;
       let {
         vendor: e0, model: e1
       } = c.metadata;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [Chunk388032.intl.format(Chunk388032.t.qoDex7, {
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DANGER,
+        children: [eR.intl.format(eR.t.qoDex7, {
           vendorName: e0.name,
           modelName: e1.name
-        }), (0, Chunk54381.jsx)(Chunk481060.RyX, {
+        }), (0, r.jsx)(f.RyX, {
           noticeType: c.type,
           onClick: () => {
-            Chunk846027.Z.setEnableHardwareMuteNotice(false), eY()
+            _.Z.setEnableHardwareMuteNotice(false), eY()
           }
-        }), (0, Chunk54381.jsx)(Chunk481060.u3T, {
+        }), (0, r.jsx)(f.u3T, {
           href: e1.url,
           target: "_blank",
           rel: "noreferrer noopener",
           noticeType: c.type,
-          children: Chunk388032.intl.string(Chunk388032.t["Yl/Riu"])
+          children: eR.intl.string(eR.t["Yl/Riu"])
         })]
       });
-    case Chunk981631.kVF.STREAMER_MODE:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.STREAMER_MODE,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+    case eT.kVF.STREAMER_MODE:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.STREAMER_MODE,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
-          noticeType: Chunk981631.kVF.STREAMER_MODE
-        }), Chunk388032.intl.string(Chunk388032.t.iEgBXp), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          onClick: () => Chunk223245.Z.setEnabled(false),
-          noticeType: Chunk981631.kVF.STREAMER_MODE,
-          children: Chunk388032.intl.string(Chunk388032.t.R9GHya)
+          noticeType: eT.kVF.STREAMER_MODE
+        }), eR.intl.string(eR.t.iEgBXp), (0, r.jsx)(f.NoS, {
+          onClick: () => v.Z.setEnabled(false),
+          noticeType: eT.kVF.STREAMER_MODE,
+          children: eR.intl.string(eR.t.R9GHya)
         })]
       });
-    case Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
+    case eT.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
       if (null == c.metadata) return null;
       let {
         skuId: e3, applicationId: e2
-      } = c.metadata, e4 = Chunk55563.Z.get(e3), e5 = Chunk812206.Z.getApplication(e2);
+      } = c.metadata, e4 = eE.Z.get(e3), e5 = w.Z.getApplication(e2);
       if (null == e4 || null == e5) return null;
       let e8 = {
-        page: Chunk981631.ZY5.IN_APP
+        page: eT.ZY5.IN_APP
       };
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.PREMIUM_TIER_1,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => Chunk117266.Z(e4.id),
-          noticeType: Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK
-        }), (0, Chunk54381.jsx)(Chunk481060.SrA, {
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.PREMIUM_TIER_1,
+        children: [(0, r.jsx)(f.RyX, {
+          onClick: () => h.Z(e4.id),
+          noticeType: eT.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK
+        }), (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk710930.premiumIcon
-        }), Chunk388032.intl.format(Chunk388032.t["g3MU/+"], {
+          className: ew.premiumIcon
+        }), eR.intl.format(eR.t["g3MU/+"], {
           applicationName: e5.name,
           skuName: e4.name
-        }), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
-          onClick: () => (0, Chunk72924.S)({
+        }), (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK,
+          onClick: () => (0, T.S)({
             applicationId: e5.id,
             skuId: e4.id,
             openPremiumPaymentModal: () => {
-              (0, Chunk963249.Z)({
+              (0, ee.Z)({
                 initialPlanId: null,
-                subscriptionTier: Chunk474936.Si.TIER_2,
-                analyticsLocations: Chunk254854,
+                subscriptionTier: eA.Si.TIER_2,
+                analyticsLocations: g,
                 analyticsObject: e8
               })
             },
-            analyticsLocations: Chunk254854,
+            analyticsLocations: g,
             analyticsLocationObject: e8,
-            context: __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP
-          }).then(() => Chunk117266.Z(e4.id)),
-          children: Chunk388032.intl.string(Chunk388032.t.KEwPYx)
+            context: __OVERLAY__ ? eT.IlC.OVERLAY : eT.IlC.APP
+          }).then(() => h.Z(e4.id)),
+          children: eR.intl.string(eR.t.KEwPYx)
         })]
       });
-    case Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL: {
+    case eT.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL: {
       if (null == c.metadata) return null;
       let {
         skuId: e,
         applicationId: t
-      } = c.metadata, n = Chunk55563.Z.get(module), i = Chunk812206.Z.getApplication(exports);
-      if (null == require || null == Chunk473749) return null;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.PREMIUM_TIER_1,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+      } = c.metadata, n = eE.Z.get(e), i = w.Z.getApplication(t);
+      if (null == n || null == i) return null;
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.PREMIUM_TIER_1,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
-          noticeType: Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL
-        }), (0, Chunk54381.jsx)(Chunk481060.SrA, {
+          noticeType: eT.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL
+        }), (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk710930.premiumIcon
-        }), Chunk388032.intl.format(Chunk388032.t.LquIKC, {
-          applicationName: Chunk473749.name,
-          skuName: require.name
-        }), (0, Chunk54381.jsx)(Chunk481060.EyT, {
-          children: (0, Chunk54381.jsx)(Chunk319498.rU, {
+          className: ew.premiumIcon
+        }), eR.intl.format(eR.t.LquIKC, {
+          applicationName: i.name,
+          skuName: n.name
+        }), (0, r.jsx)(f.EyT, {
+          children: (0, r.jsx)(s.rU, {
             onClick: () => eY(),
             to: {
-              pathname: Chunk981631.Z5c.APPLICATION_STORE_LISTING_SKU(require.id),
+              pathname: eT.Z5c.APPLICATION_STORE_LISTING_SKU(n.id),
               state: {
                 scrollRestoration: false
               }
             },
-            children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+            children: eR.intl.string(eR.t.hvVgAZ)
           })
         })]
       })
     }
-    case Chunk981631.kVF.SURVEY: {
+    case eT.kVF.SURVEY: {
       let e = c.metadata;
-      if (null == module) return null;
+      if (null == e) return null;
       let {
         key: t,
         prompt: n,
@@ -653,132 +653,132 @@ let eW = Chunk473749.memo(function() {
         url: a,
         embedded: o,
         id: s
-      } = module;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.CUSTOM,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          noticeType: Chunk981631.kVF.SURVEY,
+      } = e;
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.CUSTOM,
+        children: [(0, r.jsx)(f.RyX, {
+          noticeType: eT.kVF.SURVEY,
           onClick: () => {
-            (0, Chunk491428.hZ)(exports, true)
+            (0, S.hZ)(t, true)
           }
-        }), require, (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.SURVEY,
+        }), n, (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.SURVEY,
           onClick: () => {
-            o ? (0, Chunk126916.q)(Chunk319498) : window.open(Chunk913527, "_blank"), (0, Chunk491428.hZ)(exports, false)
+            o ? (0, er.q)(s) : window.open(a, "_blank"), (0, S.hZ)(t, false)
           },
-          children: Chunk473749
+          children: i
         })]
       })
     }
-    case Chunk981631.kVF.CORRUPT_INSTALLATION:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [Chunk388032.intl.string(Chunk388032.t["ugxmk/"]), (0, Chunk54381.jsx)(Chunk481060.u3T, {
-          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CORRUPT_INSTALLATION),
+    case eT.kVF.CORRUPT_INSTALLATION:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DANGER,
+        children: [eR.intl.string(eR.t["ugxmk/"]), (0, r.jsx)(f.u3T, {
+          href: ev.Z.getArticleURL(eT.BhN.CORRUPT_INSTALLATION),
           target: "_blank",
           noticeType: c.type,
-          children: Chunk388032.intl.string(Chunk388032.t["6ik4Xk"])
+          children: eR.intl.string(eR.t["6ik4Xk"])
         })]
       });
-    case Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+    case eT.kVF.VIDEO_UNSUPPORTED_BROWSER:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
-          noticeType: Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER
-        }), Chunk388032.intl.string(Chunk388032.t.wVjKGi), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER,
+          noticeType: eT.kVF.VIDEO_UNSUPPORTED_BROWSER
+        }), eR.intl.string(eR.t.wVjKGi), (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.VIDEO_UNSUPPORTED_BROWSER,
           onClick: () => {
-            (0, Chunk481060.ZDy)(async () => {
+            (0, f.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([require.e("32996"), require.e("74023")]).then(require.bind(require, 431583));
+              } = await Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583));
               return t => (0, r.jsx)(e, ex({
                 source: "Video unsupported browser"
               }, t))
             })
           },
-          children: Chunk388032.intl.string(Chunk388032.t["1WjMbC"])
+          children: eR.intl.string(eR.t["1WjMbC"])
         })]
       });
-    case Chunk981631.kVF.DISPATCH_ERROR:
+    case eT.kVF.DISPATCH_ERROR:
       if (null == c.metadata) return null;
       let {
         error: e6
       } = c.metadata;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DANGER,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
-          noticeType: Chunk981631.kVF.DISPATCH_ERROR
-        }), null == e6 ? true : e6.displayMessage, (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.DISPATCH_ERROR,
-          onClick: () => (0, Chunk481060.ZDy)(async () => {
+          noticeType: eT.kVF.DISPATCH_ERROR
+        }), null == e6 ? true : e6.displayMessage, (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.DISPATCH_ERROR,
+          onClick: () => (0, f.ZDy)(async () => {
             let {
               default: e
-            } = await require.e("20212").then(require.bind(require, 915194));
+            } = await n.e("20212").then(n.bind(n, 915194));
             return t => (0, r.jsx)(e, ex({}, t))
           }),
-          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+          children: eR.intl.string(eR.t.hvVgAZ)
         })]
       });
-    case Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS:
+    case eT.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS:
       if (null == c.metadata) return null;
       let {
         progress: e7, total: e9, name: te
       } = c.metadata;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DEFAULT,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DEFAULT,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => eY(),
-          noticeType: Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS
-        }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-          justify: Chunk600164.Z.Justify.CENTER,
-          children: [null != te ? Chunk388032.intl.formatToPlainString(Chunk388032.t["pHj+z4"], {
+          noticeType: eT.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS
+        }), (0, r.jsxs)(x.Z, {
+          justify: x.Z.Justify.CENTER,
+          children: [null != te ? eR.intl.formatToPlainString(eR.t["pHj+z4"], {
             name: "".concat(te),
             progress: e7,
             total: e9
-          }) : Chunk388032.intl.formatToPlainString(Chunk388032.t["lHZn+A"], {
+          }) : eR.intl.formatToPlainString(eR.t["lHZn+A"], {
             progress: e7,
             total: e9
-          }), (0, Chunk54381.jsx)(Chunk481060.$jN, {
-            type: Chunk481060.$jN.Type.PULSING_ELLIPSIS,
-            className: Chunk710930.ellipsis
+          }), (0, r.jsx)(f.$jN, {
+            type: f.$jN.Type.PULSING_ELLIPSIS,
+            className: ew.ellipsis
           })]
         })]
       });
-    case Chunk981631.kVF.APPLICATION_TEST_MODE:
+    case eT.kVF.APPLICATION_TEST_MODE:
       if (null == c.metadata) return null;
-      if (null != Chunk695103.Z.testModeEmbeddedApplicationId) return (0, Chunk54381.jsx)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-          justify: Chunk600164.Z.Justify.CENTER,
-          align: Chunk600164.Z.Align.CENTER,
-          children: [(0, Chunk54381.jsx)("div", {
-            children: Chunk388032.intl.format(Chunk388032.t["1qxVe4"], {
+      if (null != eb.Z.testModeEmbeddedApplicationId) return (0, r.jsx)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: (0, r.jsxs)(x.Z, {
+          justify: x.Z.Justify.CENTER,
+          align: x.Z.Align.CENTER,
+          children: [(0, r.jsx)("div", {
+            children: eR.intl.format(eR.t["1qxVe4"], {
               applicationName: c.metadata.applicationName
             })
-          }), (0, Chunk54381.jsx)(Chunk481060.RyX, {
-            onClick: Chunk401430.mc,
-            noticeType: Chunk981631.kVF.APPLICATION_TEST_MODE
+          }), (0, r.jsx)(f.RyX, {
+            onClick: I.mc,
+            noticeType: eT.kVF.APPLICATION_TEST_MODE
           })]
         })
       });
-      return (0, Chunk54381.jsx)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-          justify: Chunk600164.Z.Justify.CENTER,
-          align: Chunk600164.Z.Align.CENTER,
-          children: [(0, Chunk54381.jsx)("div", {
-            children: Chunk388032.intl.format(Chunk388032.t.Fv5HrE, {
+      return (0, r.jsx)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: (0, r.jsxs)(x.Z, {
+          justify: x.Z.Justify.CENTER,
+          align: x.Z.Align.CENTER,
+          children: [(0, r.jsx)("div", {
+            children: eR.intl.format(eR.t.Fv5HrE, {
               applicationName: c.metadata.applicationName
             })
-          }), (0, Chunk54381.jsx)(Chunk69499.Z, {
-            dropdownSize: Chunk69499.E.DropdownSizes.SMALL,
-            className: Chunk710930.testModeSKUSelector,
-            color: Chunk69499.E.Colors.WHITE,
-            look: Chunk69499.E.Looks.OUTLINED,
-            size: Chunk69499.E.Sizes.MIN,
+          }), (0, r.jsx)(C.Z, {
+            dropdownSize: C.E.DropdownSizes.SMALL,
+            className: ew.testModeSKUSelector,
+            color: C.E.Colors.WHITE,
+            look: C.E.Looks.OUTLINED,
+            size: C.E.Sizes.MIN,
             onSKUSelect: e => O.yt(e.id, {
               analyticsSource: {
                 page: null,
@@ -787,42 +787,42 @@ let eW = Chunk473749.memo(function() {
               }
             }),
             applicationId: c.metadata.applicationId,
-            children: Chunk388032.intl.string(Chunk388032.t.Q5ZgpK)
-          }), (0, Chunk54381.jsx)(Chunk481060.RyX, {
-            onClick: Chunk401430.mc,
-            noticeType: Chunk981631.kVF.APPLICATION_TEST_MODE
+            children: eR.intl.string(eR.t.Q5ZgpK)
+          }), (0, r.jsx)(f.RyX, {
+            onClick: I.mc,
+            noticeType: eT.kVF.APPLICATION_TEST_MODE
           })]
         })
       });
-    case Chunk981631.kVF.VIEWING_ROLES:
-      return (0, Chunk54381.jsx)(Chunk918658.Z, {});
-    case Chunk981631.kVF.PREMIUM_UNCANCEL:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: ez === Chunk474936.PremiumTypes.TIER_1 ? Chunk481060.DM8.PREMIUM_TIER_1 : ez === Chunk474936.PremiumTypes.TIER_0 ? Chunk481060.DM8.PREMIUM_TIER_0 : Chunk481060.DM8.PREMIUM_TIER_2,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          noticeType: Chunk981631.kVF.PREMIUM_UNCANCEL,
+    case eT.kVF.VIEWING_ROLES:
+      return (0, r.jsx)(Q.Z, {});
+    case eT.kVF.PREMIUM_UNCANCEL:
+      return (0, r.jsxs)(f.qXd, {
+        color: ez === eA.PremiumTypes.TIER_1 ? f.DM8.PREMIUM_TIER_1 : ez === eA.PremiumTypes.TIER_0 ? f.DM8.PREMIUM_TIER_0 : f.DM8.PREMIUM_TIER_2,
+        children: [(0, r.jsx)(f.RyX, {
+          noticeType: eT.kVF.PREMIUM_UNCANCEL,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+            eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd)
           }
-        }), (0, Chunk54381.jsx)(Chunk481060.SrA, {
+        }), (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk710930.premiumIcon
-        }), ez === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.fXv4wm, {
+          className: ew.premiumIcon
+        }), ez === eA.PremiumTypes.TIER_1 ? eR.intl.formatToPlainString(eR.t.fXv4wm, {
           daysLeft: c.metadata.daysLeft
-        }) : ez === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ZOHZMr, {
+        }) : ez === eA.PremiumTypes.TIER_0 ? eR.intl.formatToPlainString(eR.t.ZOHZMr, {
           daysLeft: c.metadata.daysLeft
-        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.outyHh, {
+        }) : eR.intl.formatToPlainString(eR.t.outyHh, {
           daysLeft: c.metadata.daysLeft
-        }), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.PREMIUM_UNCANCEL,
+        }), (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.PREMIUM_UNCANCEL,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk481060.ZDy)(async () => {
+            eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd), (0, f.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([require.e("84992"), require.e("91723")]).then(require.bind(require, 561623));
+              } = await Promise.all([n.e("84992"), n.e("91723")]).then(n.bind(n, 561623));
               return t => (0, r.jsx)(e, ej(ex({}, t), {
                 daysLeft: c.metadata.daysLeft,
                 premiumType: ez,
@@ -831,230 +831,230 @@ let eW = Chunk473749.memo(function() {
               }))
             })
           },
-          children: ez === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.string(Chunk388032.t.BkbUPM) : ez === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.string(Chunk388032.t.Px978X) : Chunk388032.intl.string(Chunk388032.t.LW5tCE)
+          children: ez === eA.PremiumTypes.TIER_1 ? eR.intl.string(eR.t.BkbUPM) : ez === eA.PremiumTypes.TIER_0 ? eR.intl.string(eR.t.Px978X) : eR.intl.string(eR.t.LW5tCE)
         })]
       });
-    case Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
+    case eT.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
       let {
         daysPastDue: tt, dismissUntil: tn
       } = c.metadata;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
           noticeType: c.type,
           onClick: () => {
             eY(tn)
           }
-        }), Chunk388032.intl.format(Chunk388032.t.zxU0Kp, {
+        }), eR.intl.format(eR.t.zxU0Kp, {
           daysPastDue: tt
-        }), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
+        }), (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT,
           onClick: () => {
-            eY(tn), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
-              section: Chunk981631.oAB.SUBSCRIPTIONS
+            eY(tn), (0, ed.openUserSettings)(eu.n.SUBSCRIPTIONS_PANEL, {
+              section: eT.oAB.SUBSCRIPTIONS
             })
           },
-          children: Chunk388032.intl.string(Chunk388032.t.q8rxeS)
+          children: eR.intl.string(eR.t.q8rxeS)
         })]
       });
-    case Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT,
+    case eT.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DANGER,
+        children: [(0, r.jsx)(f.RyX, {
+          noticeType: eT.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+            eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd)
           }
-        }), Chunk388032.intl.string(Chunk388032.t.LlZaoX), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT,
+        }), eR.intl.string(eR.t.LlZaoX), (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
-              section: Chunk981631.oAB.SUBSCRIPTIONS
+            eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd), (0, ed.openUserSettings)(eu.n.SUBSCRIPTIONS_PANEL, {
+              section: eT.oAB.SUBSCRIPTIONS
             })
           },
-          children: Chunk388032.intl.string(Chunk388032.t["Zpd+Yq"])
+          children: eR.intl.string(eR.t["Zpd+Yq"])
         })]
       });
-    case Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT,
+    case eT.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
+          noticeType: eT.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+            eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd)
           }
-        }), Chunk388032.intl.string(Chunk388032.t["30YfCr"]), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT,
+        }), eR.intl.string(eR.t["30YfCr"]), (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
-              section: Chunk981631.oAB.SUBSCRIPTIONS
+            eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd), (0, ed.openUserSettings)(eu.n.SUBSCRIPTIONS_PANEL, {
+              section: eT.oAB.SUBSCRIPTIONS
             })
           },
-          children: Chunk388032.intl.string(Chunk388032.t.U5pKWA)
+          children: eR.intl.string(eR.t.U5pKWA)
         })]
       });
-    case Chunk981631.kVF.PREMIUM_MISSING_PAYMENT:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          noticeType: Chunk981631.kVF.PREMIUM_MISSING_PAYMENT,
+    case eT.kVF.PREMIUM_MISSING_PAYMENT:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
+          noticeType: eT.kVF.PREMIUM_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
+            eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd)
           }
-        }), ez === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.b6QUvf, {
+        }), ez === eA.PremiumTypes.TIER_1 ? eR.intl.formatToPlainString(eR.t.b6QUvf, {
           daysLeft: c.metadata.daysLeft
-        }) : ez === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["tURZ/M"], {
+        }) : ez === eA.PremiumTypes.TIER_0 ? eR.intl.formatToPlainString(eR.t["tURZ/M"], {
           daysLeft: c.metadata.daysLeft
-        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.AyC74I, {
+        }) : eR.intl.formatToPlainString(eR.t.AyC74I, {
           daysLeft: c.metadata.daysLeft
-        }), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.PREMIUM_MISSING_PAYMENT,
+        }), (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.PREMIUM_MISSING_PAYMENT,
           onClick: () => {
             var e, t;
-            eY(null == (t = c.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
-              section: Chunk981631.oAB.SUBSCRIPTIONS
+            eY(null == (t = c.metadata) || null == (e = t.premiumSubscription) ? true : e.currentPeriodEnd), (0, ed.openUserSettings)(eu.n.SUBSCRIPTIONS_PANEL, {
+              section: eT.oAB.SUBSCRIPTIONS
             })
           },
-          children: ez === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.string(Chunk388032.t.lboF5O) : ez === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.string(Chunk388032.t["4UPwOq"]) : Chunk388032.intl.string(Chunk388032.t["P/VvGb"])
+          children: ez === eA.PremiumTypes.TIER_1 ? eR.intl.string(eR.t.lboF5O) : ez === eA.PremiumTypes.TIER_0 ? eR.intl.string(eR.t["4UPwOq"]) : eR.intl.string(eR.t["P/VvGb"])
         })]
       });
-    case Chunk981631.kVF.BACK_TO_PREVIOUS_SCREEN:
-      return (0, Chunk54381.jsx)(Chunk665302.h, {
-        buttonText: null != (t = c.buttonText) ? exports : Chunk388032.intl.string(Chunk388032.t["/g10LC"]),
+    case eT.kVF.BACK_TO_PREVIOUS_SCREEN:
+      return (0, r.jsx)(z.h, {
+        buttonText: null != (t = c.buttonText) ? t : eR.intl.string(eR.t["/g10LC"]),
         onGoBack: c.callback,
         onDismiss: () => eY(),
         showCloseButton: true
       });
-    case Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE:
-      return (0, Chunk54381.jsx)(Chunk236069.Z, {
-        guildId: Chunk209739,
-        analyticsLocations: Chunk254854
+    case eT.kVF.AUTOMOD_QUARANTINED_USER_PROFILE:
+      return (0, r.jsx)(H.Z, {
+        guildId: l,
+        analyticsLocations: g
       });
-    case Chunk981631.kVF.QUARANTINED:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [Chunk388032.intl.string(Chunk388032.t.DVFJYf), (0, Chunk54381.jsx)(Chunk481060.u3T, {
-          href: Chunk610674.Z,
+    case eT.kVF.QUARANTINED:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DANGER,
+        children: [eR.intl.string(eR.t.DVFJYf), (0, r.jsx)(f.u3T, {
+          href: eN.Z,
           target: "_blank",
           noticeType: c.type,
-          children: Chunk388032.intl.string(Chunk388032.t.kvHdFN)
-        }), (0, Chunk54381.jsx)(Chunk481060.eee, {
-          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUARANTINE),
+          children: eR.intl.string(eR.t.kvHdFN)
+        }), (0, r.jsx)(f.eee, {
+          href: ev.Z.getArticleURL(eT.BhN.QUARANTINE),
           target: "_blank",
-          className: Chunk710930.quarantineLearnMoreLink,
-          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+          className: ew.quarantineLearnMoreLink,
+          children: eR.intl.string(eR.t.hvVgAZ)
         })]
       });
-    case Chunk981631.kVF.BLOCKED_BY_PROXY:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [Chunk388032.intl.string(Chunk388032.t.Ugijzi), (0, Chunk54381.jsx)(Chunk481060.u3T, {
-          href: "".concat(Chunk981631.yXt.STATUS),
+    case eT.kVF.BLOCKED_BY_PROXY:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [eR.intl.string(eR.t.Ugijzi), (0, r.jsx)(f.u3T, {
+          href: "".concat(eT.yXt.STATUS),
           noticeType: c.type,
-          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
-        }), (0, Chunk54381.jsx)(Chunk481060.RyX, {
+          children: eR.intl.string(eR.t.hvVgAZ)
+        }), (0, r.jsx)(f.RyX, {
           onClick: () => eY(),
-          noticeType: Chunk981631.kVF.BLOCKED_BY_PROXY
+          noticeType: eT.kVF.BLOCKED_BY_PROXY
         })]
       });
-    case Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION:
+    case eT.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION:
       let {
         dismissUntil: tr, decisionId: ti
       } = c.metadata;
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.WARNING,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          noticeType: Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION,
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.WARNING,
+        children: [(0, r.jsx)(f.RyX, {
+          noticeType: eT.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION,
           onClick: () => {
-            null != Chunk209739 && (0, Chunk36459.T9)(Chunk209739), eY(tr)
+            null != l && (0, V.T9)(l), eY(tr)
           }
-        }), Chunk388032.intl.string(Chunk388032.t.B8ruyY), (0, Chunk54381.jsx)(Chunk481060.EyT, {
+        }), eR.intl.string(eR.t.B8ruyY), (0, r.jsx)(f.EyT, {
           onClick: () => {
-            null != Chunk209739 && (0, Chunk36459.UE)(Chunk209739, ti, () => {
-              eY(tr), (0, Chunk36459.T9)(Chunk209739)
+            null != l && (0, V.UE)(l, ti, () => {
+              eY(tr), (0, V.T9)(l)
             })
           },
-          children: Chunk388032.intl.string(Chunk388032.t.oX14El)
-        }), null != Chunk209739 ? (0, Chunk54381.jsx)(Chunk481060.EyT, {
-          onClick: () => Chunk434404.Z.open(Chunk209739, Chunk981631.pNK.GUILD_AUTOMOD, true, Chunk981631.KsC.AUTOMOD_MENTION_SPAM),
-          children: Chunk388032.intl.string(Chunk388032.t["1R7QIx"])
+          children: eR.intl.string(eR.t.oX14El)
+        }), null != l ? (0, r.jsx)(f.EyT, {
+          onClick: () => q.Z.open(l, eT.pNK.GUILD_AUTOMOD, true, eT.KsC.AUTOMOD_MENTION_SPAM),
+          children: eR.intl.string(eR.t["1R7QIx"])
         }) : null]
       });
-    case Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.BRAND,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          noticeType: Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR,
+    case eT.kVF.SAFETY_USER_SENTIMENT_NAGBAR:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.BRAND,
+        children: [(0, r.jsx)(f.RyX, {
+          noticeType: eT.kVF.SAFETY_USER_SENTIMENT_NAGBAR,
           onClick: () => {
-            Chunk523255.hZ(), eY()
+            ea.hZ(), eY()
           }
-        }), Chunk388032.intl.string(Chunk388032.t.I1nKfO), (0, Chunk54381.jsx)(Chunk481060.NoS, {
-          noticeType: Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR,
+        }), eR.intl.string(eR.t.I1nKfO), (0, r.jsx)(f.NoS, {
+          noticeType: eT.kVF.SAFETY_USER_SENTIMENT_NAGBAR,
           onClick: () => {
-            (0, Chunk481060.ZDy)(async () => {
+            (0, f.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([require.e("26860"), require.e("52432")]).then(require.bind(require, 349994));
+              } = await Promise.all([n.e("26860"), n.e("52432")]).then(n.bind(n, 349994));
               return t => (0, r.jsx)(e, ex({}, t))
-            }), Chunk523255.hZ(), eY()
+            }), ea.hZ(), eY()
           },
-          children: Chunk388032.intl.string(Chunk388032.t.l5xYnH)
+          children: eR.intl.string(eR.t.l5xYnH)
         })]
       });
-    case Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING:
+    case eT.kVF.PREMIUM_TIER_2_TRIAL_ENDING:
       let ta = o()().add(5, "days").toDate();
-      return (0, Chunk54381.jsx)(Chunk246965.Z, {
+      return (0, r.jsx)(en.Z, {
         dismissCurrentNotice: () => {
-          (0, Chunk266454.Q3)(Chunk933429.m9[Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]), eY(ta)
+          (0, L.Q3)(ey.m9[eT.kVF.PREMIUM_TIER_2_TRIAL_ENDING]), eY(ta)
         },
-        subscriptionTier: Chunk474936.Si.TIER_2
+        subscriptionTier: eA.Si.TIER_2
       });
-    case Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING:
+    case eT.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING:
       let to = o()().add(5, "days").toDate();
-      return (0, Chunk54381.jsx)(Chunk535278.Z, {
+      return (0, r.jsx)(et.Z, {
         dismissCurrentNotice: () => {
           eY(to)
         },
-        subscriptionTier: Chunk474936.Si.TIER_2
+        subscriptionTier: eA.Si.TIER_2
       });
-    case Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.DANGER,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          noticeType: Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION,
+    case eT.kVF.QUESTS_PROGRESS_INTERRUPTION:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.DANGER,
+        children: [(0, r.jsx)(f.RyX, {
+          noticeType: eT.kVF.QUESTS_PROGRESS_INTERRUPTION,
           onClick: () => {
             var e;
-            (null == (e = c.metadata) ? true : module.streamKey) != null && (0, Chunk22095.nE)(c.metadata.streamKey)
+            (null == (e = c.metadata) ? true : e.streamKey) != null && (0, ei.nE)(c.metadata.streamKey)
           }
-        }), Chunk388032.intl.string(Chunk388032.t.rOx44m)]
+        }), eR.intl.string(eR.t.rOx44m)]
       });
-    case Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR:
-      return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-        color: Chunk481060.DM8.BRAND,
-        children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
+    case eT.kVF.BLOCK_USER_FEEDBACK_NAGBAR:
+      return (0, r.jsxs)(f.qXd, {
+        color: f.DM8.BRAND,
+        children: [(0, r.jsx)(f.RyX, {
           onClick: () => {
             var e;
-            eY(null == (e = c.metadata) ? true : module.dismissUntil)
+            eY(null == (e = c.metadata) ? true : e.dismissUntil)
           },
-          noticeType: Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR
-        }), Chunk388032.intl.string(Chunk388032.t["0klLS7"]), (0, Chunk54381.jsx)(Chunk481060.NoS, {
+          noticeType: eT.kVF.BLOCK_USER_FEEDBACK_NAGBAR
+        }), eR.intl.string(eR.t["0klLS7"]), (0, r.jsx)(f.NoS, {
           onClick: () => {
             var e;
-            (0, Chunk496729.Z)(), eY(null == (e = c.metadata) ? true : module.dismissUntil)
+            (0, es.Z)(), eY(null == (e = c.metadata) ? true : e.dismissUntil)
           },
-          noticeType: Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR,
-          children: Chunk388032.intl.string(Chunk388032.t.e4y2VM)
+          noticeType: eT.kVF.BLOCK_USER_FEEDBACK_NAGBAR,
+          children: eR.intl.string(eR.t.e4y2VM)
         })]
       });
-    case Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR:
-      return (0, Chunk54381.jsx)(Chunk101879.Z, {});
-    case Chunk981631.kVF.SYSTEM_SERVICE_WARNING:
-      return (0, Chunk54381.jsx)(Chunk957030.Z, {});
+    case eT.kVF.IGNORE_USER_FEEDBACK_NAGBAR:
+      return (0, r.jsx)(eo.Z, {});
+    case eT.kVF.SYSTEM_SERVICE_WARNING:
+      return (0, r.jsx)(ec.Z, {});
     default:
       return null
   }
@@ -1063,9 +1063,9 @@ let eW = Chunk473749.memo(function() {
 function eK() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTICE);
-  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: module,
-    children: (0, Chunk54381.jsx)(eW, {})
+  } = (0, R.ZP)(P.Z.NOTICE);
+  return (0, r.jsx)(R.Gt, {
+    value: e,
+    children: (0, r.jsx)(eW, {})
   })
 }

@@ -35,14 +35,14 @@ t.prototype.clear = function() {
   return t
 }, t.prototype.min = function() {
   var e = this._root;
-  if (null === module) return null;
-  for (; null !== module.left;) e = module.left;
-  return module.data
+  if (null === e) return null;
+  for (; null !== e.left;) e = e.left;
+  return e.data
 }, t.prototype.max = function() {
   var e = this._root;
-  if (null === module) return null;
-  for (; null !== module.right;) e = module.right;
-  return module.data
+  if (null === e) return null;
+  for (; null !== e.right;) e = e.right;
+  return e.data
 }, t.prototype.iterator = function() {
   return new n(this)
 }, t.prototype.each = function(e) {
@@ -61,7 +61,7 @@ t.prototype.clear = function() {
       else {
         this._cursor = null;
         break
-      } while (this._cursor.right === module);
+      } while (this._cursor.right === e);
   else this._ancestors.push(this._cursor), this._minNode(this._cursor.right);
   return null !== this._cursor ? this._cursor.data : null
 }, n.prototype.prev = function() {
@@ -74,7 +74,7 @@ t.prototype.clear = function() {
       else {
         this._cursor = null;
         break
-      } while (this._cursor.left === module);
+      } while (this._cursor.left === e);
   else this._ancestors.push(this._cursor), this._maxNode(this._cursor.left);
   return null !== this._cursor ? this._cursor.data : null
 }, n.prototype._minNode = function(e) {

@@ -130,7 +130,7 @@ let u = {
     })
   },
   clickedNotification() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "NOTIFICATION_CLICK"
     })
   }

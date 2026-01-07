@@ -57,16 +57,16 @@ let g = {},
 
 function b() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk944486.Z.getChannelId(),
-    n = Chunk592125.Z.getChannel(exports);
-  if (null != require && null == require.getGuildId() && null != exports && (null == g[exports] || module)) {
+    t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.Z.getChannelId(),
+    n = c.Z.getChannel(t);
+  if (null != n && null == n.getGuildId() && null != t && (null == g[t] || e)) {
     var r;
-    return g[exports] = null != (r = g[exports]) ? r : {
-      channelId: exports,
+    return g[t] = null != (r = g[t]) ? r : {
+      channelId: t,
       ringing: []
-    }, Chunk570140.Z.dispatch({
+    }, l.Z.dispatch({
       type: "CALL_CONNECT",
-      channelId: exports
+      channelId: t
     }), true
   }
   returnfalse
@@ -182,7 +182,7 @@ function R(e) {
 }
 class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk944486.Z, Chunk914010.Z)
+    this.waitFor(c.Z, u.Z, d.Z)
   }
   getCall(e) {
     return g[e]

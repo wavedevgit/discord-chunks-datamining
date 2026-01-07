@@ -18,17 +18,17 @@ class i {
       let {
         queue: e
       } = this;
-      for (; this.index < module.length;) {
+      for (; this.index < e.length;) {
         let t = this.index;
-        if (this.index++, module[exports].call(), this.index > this.capacity) {
-          for (let t = 0, n = module.length - this.index; exports < require; exports++) module[exports] = module[exports + this.index];
-          module.length -= this.index, this.index = 0
+        if (this.index++, e[t].call(), this.index > this.capacity) {
+          for (let t = 0, n = e.length - this.index; t < n; t++) e[t] = e[t + this.index];
+          e.length -= this.index, this.index = 0
         }
       }
-      module.length = 0, this.index = 0, this.flushing = false
+      e.length = 0, this.index = 0, this.flushing = false
     }, this.registerPendingError = e => {
       this.pendingErrors.push(e), this.requestErrorThrow()
-    }, this.requestFlush = (0, Chunk726074.tX)(this.flush), this.requestErrorThrow = (0, Chunk726074.as)(() => {
+    }, this.requestFlush = (0, r.tX)(this.flush), this.requestErrorThrow = (0, r.as)(() => {
       if (this.pendingErrors.length) throw this.pendingErrors.shift()
     })
   }

@@ -18,10 +18,10 @@ var Chunk570140 = require("./570140.js"),
 let m = new Chunk710845.Z("NativeDispatchUtils");
 
 function h() {
-  return null != r ? Promise.resolve(r) : (0, Chunk358085.isDesktop)() ? Promise.all([Chunk998502.ZP.ensureModule("discord_dispatch"), Chunk998502.ZP.ensureModule("discord_modules")]).then(() => {
-    Chunk998502.ZP.requireModule("discord_modules");
-    let e = Chunk998502.ZP.getDispatch();
-    return null != module ? (r = module, module) : Promise.reject(Error("dispatch not found"))
+  return null != r ? Promise.resolve(r) : (0, d.isDesktop)() ? Promise.all([f.ZP.ensureModule("discord_dispatch"), f.ZP.ensureModule("discord_modules")]).then(() => {
+    f.ZP.requireModule("discord_modules");
+    let e = f.ZP.getDispatch();
+    return null != e ? (r = e, e) : Promise.reject(Error("dispatch not found"))
   }) : Promise.reject(Error("not desktop client"))
 }
 
@@ -66,7 +66,7 @@ let O = {
     null == i && h().then(e => {
       let c = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "483489"
+          build_number: "483493"
         },
         u = l.default.getCurrentUser();
       null != u && (c.user_id = u.id, c.user_name = u.tag, null != u.email && (c.email = u.email));
@@ -107,7 +107,7 @@ let O = {
   },
   destroy() {
     let e = g();
-    null != module && true !== module.destroy && (module.destroy(), i = null)
+    null != e && true !== e.destroy && (e.destroy(), i = null)
   },
   setTargetManifest(e) {
     let {
@@ -167,13 +167,13 @@ let O = {
   },
   pause() {
     let e = g();
-    null != module && module.command(JSON.stringify({
+    null != e && e.command(JSON.stringify({
       command: "Pause"
     }), b)
   },
   resume() {
     let e = g();
-    null != module && module.command(JSON.stringify({
+    null != e && e.command(JSON.stringify({
       command: "Resume"
     }), b)
   },

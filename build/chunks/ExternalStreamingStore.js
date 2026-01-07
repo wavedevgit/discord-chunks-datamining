@@ -69,10 +69,10 @@ async function w(e, t) {
 }
 class D {
   start() {
-    this._started || (this._started = true, Chunk553795.Z.isFetching() ? Chunk457330.Z.fetch() : this._check())
+    this._started || (this._started = true, p.Z.isFetching() ? c.Z.fetch() : this._check())
   }
   stop() {
-    this._started = false, C = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), Chunk570140.Z.dispatch({
+    this._started = false, C = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.Z.dispatch({
       type: "STREAMING_UPDATE",
       stream: null
     })
@@ -158,12 +158,12 @@ class D {
   }
   _check() {
     if (!this._started) return;
-    let e = Chunk553795.Z.getAccounts();
-    if (null == module) return;
+    let e = p.Z.getAccounts();
+    if (null == e) return;
     null != this._nextCheck && clearTimeout(this._nextCheck);
-    let t = [Chunk981631.ABu.TWITCH],
+    let t = [m.ABu.TWITCH],
       n = Date.now();
-    T <= require && (exports.push(Chunk981631.ABu.YOUTUBE), T = require + y), Promise.allSettled(module.filter(e => t.includes(e.type)).map(e => e.type === m.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    T <= n && (t.push(m.ABu.YOUTUBE), T = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === m.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? true : t.value;
@@ -185,7 +185,7 @@ class D {
 let x = new D;
 
 function L() {
-  Chunk246946.Z.enabled ? x.start() : x.stop()
+  _.Z.enabled ? x.start() : x.stop()
 }
 
 function j(e) {
@@ -195,7 +195,7 @@ function j(e) {
 }
 class M extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    L(), this.waitFor(Chunk553795.Z, Chunk246946.Z), this.syncWith([Chunk246946.Z], L)
+    L(), this.waitFor(p.Z, _.Z), this.syncWith([_.Z], L)
   }
   getStream() {
     return I

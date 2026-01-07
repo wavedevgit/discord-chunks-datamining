@@ -20,25 +20,25 @@ var Chunk54381 = require("./54381.js"),
 
 function h() {
   var e;
-  let t = null == (e = (0, Chunk682578.J)()) || module,
-    n = (0, Chunk519207.q3)(),
-    h = (0, Chunk622822.xi)(),
-    g = (0, Chunk81643.Jm)(),
-    E = Chunk473749.useMemo(() => (!h || !!g) && !exports, [h, exports, g]),
-    b = Chunk473749.useCallback(e => {
+  let t = null == (e = (0, d.J)()) || e,
+    n = (0, c.q3)(),
+    h = (0, l.xi)(),
+    g = (0, s.Jm)(),
+    E = i.useMemo(() => (!h || !!g) && !t, [h, t, g]),
+    b = i.useCallback(e => {
       if (h && e) return void a.Z.showAgeVerificationGetStartedModal({
         entryPoint: o.cU.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS
       });
       u.DC.updateSetting(e)
     }, [h]);
-  return (0, Chunk54381.jsx)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_IOS_V2,
-    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t["L+yTsa"]),
-      value: require,
+  return (0, r.jsx)(f.U, {
+    setting: _.s6.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_IOS_V2,
+    children: (0, r.jsx)(p.ZP, {
+      title: m.intl.string(m.t["L+yTsa"]),
+      value: n,
       onChange: b,
       disabled: E,
-      note: Chunk388032.intl.string(Chunk388032.t.hiM8pU)
+      note: m.intl.string(m.t.hiM8pU)
     })
   })
 }

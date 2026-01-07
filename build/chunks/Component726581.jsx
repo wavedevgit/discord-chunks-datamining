@@ -28,7 +28,7 @@ class O extends Chunk473749.Component {
         className: E.sectionContent,
         children: [e.map(e => (0, r.jsx)("div", {
           className: E.unit,
-          children: (0, r.jsx)(m.Z, {
+          children: (0, r.jsx)(h.Z, {
             reason: e,
             hidePersonalInformation: n
           })
@@ -45,9 +45,9 @@ class O extends Chunk473749.Component {
     let {
       storeListing: e
     } = this.props;
-    return null != module.staffNotes ? {
-      type: Chunk4962.Z.Types.STAFF_NOTES,
-      staffNotes: module.staffNotes
+    return null != e.staffNotes ? {
+      type: b.Z.Types.STAFF_NOTES,
+      staffNotes: e.staffNotes
     } : null
   }
   render() {
@@ -58,16 +58,16 @@ class O extends Chunk473749.Component {
       hidePersonalInformation: i,
       className: l
     } = this.props;
-    if (0 === module.length && 0 === exports.length && null == require.staffNotes) return null;
+    if (0 === e.length && 0 === t.length && null == n.staffNotes) return null;
     let o = this.getReviewToRender();
-    return (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk142882.root, Chunk120356),
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk142882.header,
-        children: Chunk388032.intl.string(Chunk388032.t.qABFpX)
-      }), this.renderReasons(module, exports, Chunk473749), null != Chunk442837 ? (0, Chunk54381.jsx)(Chunk4962.Z, {
-        data: Chunk442837,
-        className: Chunk142882.review
+    return (0, r.jsxs)("div", {
+      className: a()(E.root, l),
+      children: [(0, r.jsx)("div", {
+        className: E.header,
+        children: _.intl.string(_.t.qABFpX)
+      }), this.renderReasons(e, t, i), null != o ? (0, r.jsx)(b.Z, {
+        data: o,
+        className: E.review
       }) : null]
     })
   }
@@ -77,8 +77,8 @@ let v = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk594174.default, Chunk55
     sku: t
   } = e;
   return {
-    socialReasons: (0, h.Gg)(t.id, f.Z, d.default, c.Z, p.Z),
-    nonSocialReasons: (0, h.Ww)(t.id, f.Z, g.Z),
+    socialReasons: (0, m.Gg)(t.id, f.Z, d.default, c.Z, p.Z),
+    nonSocialReasons: (0, m.Ww)(t.id, f.Z, g.Z),
     hidePersonalInformation: u.Z.hidePersonalInformation
   }
 })(O)

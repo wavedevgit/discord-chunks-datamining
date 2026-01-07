@@ -24,32 +24,32 @@ function f(e, t, n) {
 }
 
 function p() {
-  return (0, Chunk875527.wt)({
+  return (0, d.wt)({
     location: "VoiceFilterLoopbackManager",
     autoTrackExposure: false
   })
 }
 
 function _() {
-  if (!p() || !Chunk131951.Z.getVoiceFilterPlaybackEnabled() || !Chunk19780.Z.isConnected() || null == Chunk131951.Z.getActiveVoiceFilter()) returnfalse;
-  let e = Chunk19780.Z.getChannelId(),
-    t = null != module ? Chunk592125.Z.getChannel(module) : null,
+  if (!p() || !l.Z.getVoiceFilterPlaybackEnabled() || !c.Z.isConnected() || null == l.Z.getActiveVoiceFilter()) returnfalse;
+  let e = c.Z.getChannelId(),
+    t = null != e ? s.Z.getChannel(e) : null,
     {
       mute: n,
       selfMute: r,
       suppress: i
-    } = (0, Chunk294629.b)({
-      channel: exports
+    } = (0, o.b)({
+      channel: t
     });
-  return !(require || Chunk846027 || Chunk147913)
+  return !(n || r || i)
 }
 class m extends Chunk147913.Z {
   handleExperimentStateChange() {
-    !p() && Chunk131951.Z.getVoiceFilterPlaybackEnabled() && (0, Chunk743498._j)(false)
+    !p() && l.Z.getVoiceFilterPlaybackEnabled() && (0, u._j)(false)
   }
   updateLoopbackState() {
     let e = _();
-    module !== Chunk131951.Z.getLoopbackReasons().has("voice_filter") && Chunk846027.Z.setLoopback("voice_filter", module)
+    e !== l.Z.getLoopbackReasons().has("voice_filter") && r.Z.setLoopback("voice_filter", e)
   }
   constructor(...e) {
     super(...e), f(this, "actions", {

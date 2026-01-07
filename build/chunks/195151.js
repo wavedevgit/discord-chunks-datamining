@@ -11,9 +11,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.ENABLE_CUSTOM_CURSOR, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["+Isihb"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.nNZ1Tz),
-  useValue: () => (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.enableCustomCursor),
+  useTitle: () => o.intl.string(o.t["+Isihb"]),
+  useSubtitle: () => o.intl.string(o.t.nNZ1Tz),
+  useValue: () => (0, i.e7)([s.Z], () => s.Z.enableCustomCursor),
   setValue: t => (0, l.HU)(t),
-  usePredicate: () => (0, Chunk296812.A)("EnableCustomCursorSetting")
+  usePredicate: () => (0, u.A)("EnableCustomCursorSetting")
 })

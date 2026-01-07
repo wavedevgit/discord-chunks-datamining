@@ -35,17 +35,17 @@ function f(e) {
   return e
 }
 let p = () => {
-  let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isInteractionRequired(), []),
-    t = Chunk473749.useRef(null);
+  let e = (0, o.e7)([c.Z], () => c.Z.isInteractionRequired(), []),
+    t = i.useRef(null);
 
   function n() {
-    null !== exports.current && ((0, Chunk481060.Mr3)(exports.current), exports.current = null)
+    null !== t.current && ((0, s.Mr3)(t.current), t.current = null)
   }
 
   function d() {
-    Chunk846027.Z.interact()
+    l.Z.interact()
   }
-  return Chunk473749.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(a.Modal, f({
+  return i.useEffect(() => (e ? t.current = (0, s.h7j)(e => (0, r.jsx)(a.Modal, f({
     title: u.intl.string(u.t.dLLxC2),
     subtitle: u.intl.string(u.t["64lmtw"]),
     actions: [{
@@ -54,7 +54,7 @@ let p = () => {
         d(), e.onClose()
       }
     }]
-  }, e))) : require(), () => {
-    require()
-  }), [module]), null
+  }, e))) : n(), () => {
+    n()
+  }), [e]), null
 }

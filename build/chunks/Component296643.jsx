@@ -16,14 +16,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk688913 = require("./688913.js");
 
 function f() {
-  let e = (0, Chunk410030.ZP)();
-  return (0, Chunk54381.jsx)(Chunk793030.xvT, {
+  let e = (0, r.ZP)();
+  return (0, l.jsx)(a.xvT, {
     variant: "text-sm/medium",
-    className: Chunk638929.text,
-    children: Chunk388032.intl.format(Chunk914820.default.fcJiY8, {
-      provider: (0, Chunk54381.jsx)("img", {
-        className: Chunk638929.image,
-        src: module !== Chunk231338.BR.LIGHT ? Chunk688913 : Chunk737413,
+    className: d.text,
+    children: c.intl.format(o.default.fcJiY8, {
+      provider: (0, l.jsx)("img", {
+        className: d.image,
+        src: e !== u.BR.LIGHT ? v : m,
         alt: "Shockbyte"
       })
     })
@@ -33,6 +33,6 @@ function f() {
 function g() {
   let {
     gameProvider: e
-  } = (0, Chunk343312.JL)();
-  return module === Chunk763600.Z.SHOCKBYTE ? (0, Chunk54381.jsx)(f, {}) : null
+  } = (0, s.JL)();
+  return e === i.Z.SHOCKBYTE ? (0, l.jsx)(f, {}) : null
 }

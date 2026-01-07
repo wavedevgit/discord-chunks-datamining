@@ -45,6 +45,6 @@ class a {
     return this.emitter.listenerCount(e)
   }
   constructor() {
-    i(this, "emitter", new Chunk836560.EventEmitter)
+    i(this, "emitter", new r.EventEmitter)
   }
 }

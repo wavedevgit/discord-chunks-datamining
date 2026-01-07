@@ -9,19 +9,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s() {
-  return (0, Chunk54381.jsxs)(Chunk819557.z, {
-    children: [(0, Chunk54381.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t.fjFJFV),
-      description: Chunk388032.intl.string(Chunk388032.t["8SIMPz"]),
-      icon: Chunk481060.owK
-    }), (0, Chunk54381.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t.QCrmqS),
-      description: Chunk388032.intl.string(Chunk388032.t.TKDMoN),
-      icon: Chunk481060.owK
-    }), (0, Chunk54381.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t["lkm/a8"]),
-      description: Chunk388032.intl.string(Chunk388032.t["8j3qaC"]),
-      icon: Chunk481060.aNP
+  return (0, r.jsxs)(o.z, {
+    children: [(0, r.jsx)(o.q, {
+      title: l.intl.string(l.t.fjFJFV),
+      description: l.intl.string(l.t["8SIMPz"]),
+      icon: i.owK
+    }), (0, r.jsx)(o.q, {
+      title: l.intl.string(l.t.QCrmqS),
+      description: l.intl.string(l.t.TKDMoN),
+      icon: i.owK
+    }), (0, r.jsx)(o.q, {
+      title: l.intl.string(l.t["lkm/a8"]),
+      description: l.intl.string(l.t["8j3qaC"]),
+      icon: i.aNP
     })]
   })
 }

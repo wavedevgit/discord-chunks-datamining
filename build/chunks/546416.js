@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk594190 = require("./594190.js");
 
 function i() {
-  let e = Chunk594190.ZP.getCurrentGameForAnalytics();
+  let e = r.ZP.getCurrentGameForAnalytics();
   return {
-    game_name: null != module ? module.name : null,
-    game_id: null != module ? module.id : null
+    game_name: null != e ? e.name : null,
+    game_id: null != e ? e.id : null
   }
 }

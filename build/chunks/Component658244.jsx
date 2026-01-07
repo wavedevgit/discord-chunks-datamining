@@ -74,16 +74,16 @@ class u extends Chunk473749.PureComponent {
     let {
       party: e,
       header: t
-    } = this.props, n = module.map(e => this.renderUser(e));
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk914096.userList,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk914096.header,
-        children: exports
-      }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
-        className: Chunk914096.content,
+    } = this.props, n = e.map(e => this.renderUser(e));
+    return (0, r.jsxs)("div", {
+      className: c.userList,
+      children: [(0, r.jsx)("div", {
+        className: c.header,
+        children: t
+      }), (0, r.jsx)(l.zJl, {
+        className: c.content,
         fade: true,
-        children: require
+        children: n
       })]
     })
   }

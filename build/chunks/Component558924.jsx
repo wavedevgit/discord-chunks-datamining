@@ -114,7 +114,7 @@ let C = e => {
       })]
     })
   },
-  I = () => (0, Chunk54381.jsx)(Chunk481060.IGR, {
-    color: Chunk692547.Z.colors.BACKGROUND_BRAND.css,
-    text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
+  I = () => (0, l.jsx)(d.IGR, {
+    color: s.Z.colors.BACKGROUND_BRAND.css,
+    text: y.intl.string(y.t.y2b7CA)
   })

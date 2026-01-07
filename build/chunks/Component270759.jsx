@@ -31,10 +31,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk221534 = require("./221534.js");
 
 function P() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk221534.inviteToolbar,
-    children: (0, Chunk54381.jsx)(Chunk518311.Z, {
-      tooltip: Chunk388032.intl.string(Chunk388032.t["HfOgA/"]),
+  return (0, r.jsx)("div", {
+    className: j.inviteToolbar,
+    children: (0, r.jsx)(b.Z, {
+      tooltip: N.intl.string(N.t["HfOgA/"]),
       location: "PeoplePageHeaderToolbar-CreateDMButton"
     })
   })
@@ -59,7 +59,7 @@ let x = function(e) {
       section: A,
       rows: Z
     } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
-    w = (0, s.e7)([h.Z], () => h.Z.getSuggestionCount()),
+    w = (0, s.e7)([m.Z], () => m.Z.getSuggestionCount()),
     L = i.useMemo(() => Z.getRelationshipCounts(), [Z]);
   i.useEffect(() => {
     null != t && p.Z.setInitialSection(t), 0 === L[S.OGo.FRIEND] && 0 === L[S.OGo.PENDING_INCOMING] && 0 === L[S.OGo.PENDING_OUTGOING] && 0 === L[S.OGo.BLOCKED] && p.Z.transitionToSection(S.pJs.ADD_FRIEND)
@@ -130,19 +130,19 @@ let x = function(e) {
       location: N.intl.string(N.t.TdEu5X)
     }), (0, r.jsx)(c.f6W, {
       theme: b,
-      children: e => (0, r.jsxs)(m.Z, {
+      children: e => (0, r.jsxs)(h.Z, {
         className: e,
         toolbar: (0, r.jsx)(P, {}),
         role: "navigation",
         "aria-labelledby": D,
         scrollable: true,
-        children: [(0, r.jsx)(m.Z.Icon, {
+        children: [(0, r.jsx)(h.Z.Icon, {
           icon: c.iFz,
           "aria-hidden": true
-        }), (0, r.jsx)(m.Z.Title, {
+        }), (0, r.jsx)(h.Z.Title, {
           id: D,
           children: N.intl.string(N.t.TdEu5X)
-        }), (0, r.jsx)(m.Z.Divider, {}), (0, r.jsx)(c.njP, {
+        }), (0, r.jsx)(h.Z.Divider, {}), (0, r.jsx)(c.njP, {
           "aria-label": N.intl.string(N.t.TdEu5X),
           selectedItem: A,
           type: "top-pill",

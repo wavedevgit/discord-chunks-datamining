@@ -38,12 +38,12 @@ let d = 30,
   _ = {
     getActiveErrors: () => {
       var e, t, n, o, c, _;
-      if ((null != (c = null == (e = Chunk19780.Z.getRTCConnection()) ? true : module.getDurationSeconds()) ? c : 0) < d || performance.now() - Chunk131951.Z.getLastAudioInputDeviceChangeTimestamp() < f) return;
-      let m = null != (_ = null == (n = Chunk450109.Z.getConnectionStats(null == (o = Chunk19780.Z.getRTCConnection()) ? true : Chunk70956.getMediaEngineConnectionId())) || null == (t = require.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : exports.sampleRateMismatchPercent) ? _ : 0;
+      if ((null != (c = null == (e = a.Z.getRTCConnection()) ? true : e.getDurationSeconds()) ? c : 0) < d || performance.now() - i.Z.getLastAudioInputDeviceChangeTimestamp() < f) return;
+      let m = null != (_ = null == (n = r.Z.getConnectionStats(null == (o = a.Z.getRTCConnection()) ? true : o.getMediaEngineConnectionId())) || null == (t = n.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : t.sampleRateMismatchPercent) ? _ : 0;
       if (Math.abs(m) > p) return [u({
-        type: Chunk458725.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
+        type: s.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
         audioCaptureSampleRateMismatchPercent: m
-      }, (0, Chunk442741.Y9)())]
+      }, (0, l.Y9)())]
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId, ":").concat(e.audioInputDeviceName)
   }

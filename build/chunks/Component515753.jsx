@@ -162,20 +162,20 @@ let ef = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       })
     }))
   },
-  eg = () => (0, Chunk54381.jsx)(Chunk481060.r7p, {
+  eg = () => (0, r.jsx)(h.r7p, {
     size: "xs",
     color: "currentColor",
-    className: Chunk102599.favoriteIcon
+    className: es.favoriteIcon
   }),
-  ey = () => (0, Chunk54381.jsx)(Chunk481060.kZF, {
+  ey = () => (0, r.jsx)(h.kZF, {
     size: "xs",
     color: "currentColor",
-    className: Chunk102599.favoriteIcon
+    className: es.favoriteIcon
   }),
-  eb = () => (0, Chunk54381.jsx)(Chunk481060.t6m, {
+  eb = () => (0, r.jsx)(h.t6m, {
     size: "xs",
     color: "currentColor",
-    className: Chunk102599.favoriteIcon
+    className: es.favoriteIcon
   }),
   eh = e => {
     var {

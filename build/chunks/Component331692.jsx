@@ -67,19 +67,19 @@ let _ = {
       })
     },
     close() {
-      Chunk570140.Z.dispatch({
+      s.Z.dispatch({
         type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE"
       })
     },
     success() {
-      Chunk570140.Z.dispatch({
+      s.Z.dispatch({
         type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS"
       })
     },
     start_verification_check() {
-      Chunk570140.Z.dispatch({
+      s.Z.dispatch({
         type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL"
-      }), setTimeout(() => (0, Chunk103879._w)(), Chunk800530.TX)
+      }), setTimeout(() => (0, l._w)(), a.TX)
     }
   },
   E = _

@@ -13,7 +13,7 @@ class s extends Chunk727916.Z {
     super()
   }
   innerPattern() {
-    return RegExp(`il y a\\s*(${Chunk765682.km})(?=(?:\\W|$))`, "i")
+    return RegExp(`il y a\\s*(${r.km})(?=(?:\\W|$))`, "i")
   }
   innerExtract(e, t) {
     let n = (0, r.RA)(t[1]),

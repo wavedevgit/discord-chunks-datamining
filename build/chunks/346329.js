@@ -4,7 +4,7 @@
 require.r(exports), require.d(exports, {
   installApplication: () => f,
   performDefaultLibraryApplicationAction: () => m,
-  playApplication: () => Chunk696748.a,
+  playApplication: () => i.a,
   repairApplication: () => _,
   updateApplication: () => p
 });

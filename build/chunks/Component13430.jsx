@@ -51,17 +51,17 @@ function A(e) {
 
 function y() {
   let e = u()().localeData().longDateFormat("L"),
-    t = module.indexOf("D"),
-    n = module.indexOf("M"),
-    r = module.indexOf("Y");
-  return (false === exports || false === require || false === Chunk54381) && (t = 0, n = 1, r = 2), [{
-    index: exports,
+    t = e.indexOf("D"),
+    n = e.indexOf("M"),
+    r = e.indexOf("Y");
+  return (false === t || false === n || false === r) && (t = 0, n = 1, r = 2), [{
+    index: t,
     type: "day"
   }, {
-    index: require,
+    index: n,
     type: "month"
   }, {
-    index: Chunk54381,
+    index: r,
     type: "year"
   }].sort((e, t) => e.index < t.index ? false : 1)
 }

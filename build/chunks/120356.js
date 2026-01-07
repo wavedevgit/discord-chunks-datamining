@@ -7,9 +7,9 @@
   function n() {
     for (var e = "", t = 0; t < arguments.length; t++) {
       var n = arguments[t];
-      n && (e = i(module, r(n)))
+      n && (e = i(e, r(n)))
     }
-    return module
+    return e
   }
 
   function r(e) {
@@ -25,7 +25,7 @@
   function i(e, t) {
     return t ? e ? e + " " + t : e + t : e
   }
-  module.exports ? (n.default = n, module.exports = n) : "function" == typeof define && "object" == typeof define.amd && define.amd ? define("classnames", [], function() {
+  e.exports ? (n.default = n, e.exports = n) : "function" == typeof define && "object" == typeof define.amd && define.amd ? define("classnames", [], function() {
     return n
   }) : window.classNames = n
 }()

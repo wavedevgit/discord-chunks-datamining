@@ -11,15 +11,15 @@ var Chunk473749 = require("./473749.js"),
     return e[e.DEMO = 0] = "DEMO", e[e.COLLECTIBLES_PREVIEW = 1] = "COLLECTIBLES_PREVIEW", e[e.GUILD_TAG_COACHMARK_ASSET = 2] = "GUILD_TAG_COACHMARK_ASSET", e[e.ACCOUNT_LINK_DISPLAY = 3] = "ACCOUNT_LINK_DISPLAY", e[e.GAME_SERVER_GAME_INSTRUCTIONS_ASSET = 4] = "GAME_SERVER_GAME_INSTRUCTIONS_ASSET", e[e.APPLICATION_IMAGE_HEADER = 5] = "APPLICATION_IMAGE_HEADER", e[e.SOCIAL_LAYER_SKU_PREVIEW = 6] = "SOCIAL_LAYER_SKU_PREVIEW", e[e.GUILD_POWERUPS_COACHMARK_ASSET = 7] = "GUILD_POWERUPS_COACHMARK_ASSET", e[e.BADGE_IMAGE_WITH_PROGRESS_CIRCLE = 8] = "BADGE_IMAGE_WITH_PROGRESS_CIRCLE", e
   }({});
 let a = {
-    0: () => Promise.resolve().then(require.bind(require, 564172)),
-    1: () => require.e("96887").then(require.bind(require, 669636)),
-    2: () => require.e("8124").then(require.bind(require, 413915)),
-    3: () => require.e("72261").then(require.bind(require, 718717)),
-    4: () => require.e("99726").then(require.bind(require, 839427)),
-    5: () => require.e("11909").then(require.bind(require, 255111)),
-    6: () => require.e("30474").then(require.bind(require, 995348)),
-    7: () => require.e("21844").then(require.bind(require, 492391)),
-    8: () => require.e("84735").then(require.bind(require, 558592))
+    0: () => Promise.resolve().then(n.bind(n, 564172)),
+    1: () => n.e("96887").then(n.bind(n, 669636)),
+    2: () => n.e("8124").then(n.bind(n, 413915)),
+    3: () => n.e("72261").then(n.bind(n, 718717)),
+    4: () => n.e("99726").then(n.bind(n, 839427)),
+    5: () => n.e("11909").then(n.bind(n, 255111)),
+    6: () => n.e("30474").then(n.bind(n, 995348)),
+    7: () => n.e("21844").then(n.bind(n, 492391)),
+    8: () => n.e("84735").then(n.bind(n, 558592))
   },
   o = {
     0: Chunk473749.lazy(a[0]),

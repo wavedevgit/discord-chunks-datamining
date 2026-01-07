@@ -14,16 +14,16 @@ function l() {
   let {
     enabled: e,
     cameraUnavailable: t
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => {
+  } = (0, a.cj)([o.Z], () => {
     var e, t;
-    let n = null == (t = null == (e = i()(Chunk131951.Z.getVideoDevices()).values().first()) ? true : module.disabled) || exports;
+    let n = null == (t = null == (e = i()(o.Z.getVideoDevices()).values().first()) ? true : e.disabled) || t;
     return {
-      enabled: Chunk131951.Z.isVideoEnabled(),
-      cameraUnavailable: require || !Chunk131951.Z.supports(Chunk65154.AN.VIDEO)
+      enabled: o.Z.isVideoEnabled(),
+      cameraUnavailable: n || !o.Z.supports(s.AN.VIDEO)
     }
   });
   return {
-    enabled: module,
-    cameraUnavailable: exports
+    enabled: e,
+    cameraUnavailable: t
   }
 }

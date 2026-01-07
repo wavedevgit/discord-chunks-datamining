@@ -25,16 +25,16 @@ function h(e, t, n) {
 }
 
 function g() {
-  let e = Chunk594190.ZP.getRunningDiscordApplicationIds();
+  let e = u.ZP.getRunningDiscordApplicationIds();
   for (let t of a.filter(t => !e.includes(t))) {
-    let e = Chunk283595.Z.getActiveLibraryApplication(exports);
-    null != module && Chunk570140.Z.wait(() => {
+    let e = d.Z.getActiveLibraryApplication(t);
+    null != e && l.Z.wait(() => {
       try {
-        Chunk372123.Z(module.id, module.branchId)
+        c.Z(e.id, e.branchId)
       } catch (e) {}
     })
   }
-  return a = module, false
+  return a = e, false
 }
 
 function E(e) {
@@ -88,7 +88,7 @@ function v(e) {
 }
 class S extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk283595.Z, Chunk594190.ZP), Chunk358085.isPlatformEmbedded && Chunk209492.S(), r = {}, i = new Set, a = []
+    this.waitFor(d.Z, u.ZP), p.isPlatformEmbedded && _.S(), r = {}, i = new Set, a = []
   }
   getState(e, t) {
     return r[(0, f.Tu)(e, t)]

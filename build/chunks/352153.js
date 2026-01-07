@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 352153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => h
+  a: () => m
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,11 +16,11 @@ var Chunk473749 = require("./473749.js"),
   Chunk390536 = require("./390536.js"),
   Chunk11543 = require("./11543.js");
 
-function h(e) {
+function m(e) {
   let {
     showDot: t,
     notificationItem: n
-  } = e, [h, m] = r.useState(false), {
+  } = e, [m, h] = r.useState(false), {
     unreadItems: b,
     readItems: _,
     allUnreadItemsHydrated: E
@@ -61,7 +61,7 @@ function h(e) {
       let {
         viewableItems: t
       } = e;
-      if (t.some(e => "end" === e.item.data.kind) && m(true), 0 === t.length) return;
+      if (t.some(e => "end" === e.item.data.kind) && h(true), 0 === t.length) return;
       S(t);
       let n = [],
         r = (0, d.FJ)(t),
@@ -78,7 +78,7 @@ function h(e) {
         id: e.id,
         type: (0, u.v$)(e)
       })), O)
-    }, [O, m]),
+    }, [O, h]),
     A = r.useCallback(e => {
       let {
         viewableItems: t
@@ -211,7 +211,7 @@ function h(e) {
     loading: v,
     version: O,
     visibleItemIds: C,
-    endVisible: h,
+    endVisible: m,
     isRefreshing: y,
     handleOnRefresh: L,
     stickyHeaderIndices: D,

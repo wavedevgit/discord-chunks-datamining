@@ -217,7 +217,7 @@ let k = [],
   Z = [];
 class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk819553.ZP, Chunk160404.Z)
+    this.waitFor(c.Z, p.ZP, l.Z)
   }
   getOnboardingPromptsForOnboarding(e) {
     var t, n;

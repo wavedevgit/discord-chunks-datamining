@@ -14,19 +14,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk656872 = require("./656872.js");
 let d = [{
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_USING_ENOUGH",
-  nameGetter: () => Chunk388032.intl.string(Chunk388032.t["+RZgNV"])
+  nameGetter: () => u.intl.string(u.t["+RZgNV"])
 }, {
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_TOO_EXPENSIVE",
-  nameGetter: () => Chunk388032.intl.string(Chunk388032.t.kgPXgv)
+  nameGetter: () => u.intl.string(u.t.kgPXgv)
 }, {
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_WORTH",
-  nameGetter: () => Chunk388032.intl.string(Chunk388032.t.vujsUK)
+  nameGetter: () => u.intl.string(u.t.vujsUK)
 }, {
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_SURE_HOW_TO_USE",
-  nameGetter: () => Chunk388032.intl.string(Chunk388032.t.AYAOLF)
+  nameGetter: () => u.intl.string(u.t.AYAOLF)
 }, {
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER",
-  nameGetter: () => Chunk388032.intl.string(Chunk388032.t.wZLu3Y)
+  nameGetter: () => u.intl.string(u.t.wZLu3Y)
 }];
 
 function _(t) {

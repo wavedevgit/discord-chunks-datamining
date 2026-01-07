@@ -26,13 +26,13 @@ class s extends Chunk473749.PureComponent {
       mimeType: m,
       onPlay: h
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk640108.ZP, {
-      src: module,
-      fileName: require,
-      fileSize: (0, Chunk403182.Ng)(exports),
-      fileSizeBytes: exports,
-      type: Chunk640108.ZP.Types.AUDIO,
-      className: Chunk473749,
+    return (0, r.jsx)(o.ZP, {
+      src: e,
+      fileName: n,
+      fileSize: (0, a.Ng)(t),
+      fileSizeBytes: t,
+      type: o.ZP.Types.AUDIO,
+      className: i,
       playable: s,
       volume: l,
       onMute: _,

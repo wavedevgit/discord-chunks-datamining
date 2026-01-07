@@ -9,15 +9,15 @@ var n, Chunk388032 = require("./388032.jsx"),
 
 function c() {
   return [{
-    label: Chunk388032.intl.string(Chunk388032.t.cigGCe),
+    label: o.intl.string(o.t.cigGCe),
     code: 2,
     value: "I couldn't find what I was looking for"
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t.ZyXA0q),
+    label: o.intl.string(o.t.ZyXA0q),
     code: 3,
     value: "I found the language confusing"
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t.emlT91),
+    label: o.intl.string(o.t.emlT91),
     code: 1,
     value: "Other"
   }]

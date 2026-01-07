@@ -27,27 +27,27 @@ let _ = 5 * Chunk70956.Z.Millis.MINUTE,
   m = .5 * Chunk70956.Z.Millis.MINUTE;
 
 function h() {
-  return Chunk290505.Z.getCurrentConfig({
+  return c.Z.getCurrentConfig({
     location: "FriendOnlineTimer"
   }).useOnlineTimer
 }
 
 function g() {
-  return Chunk290505.Z.getCurrentConfig({
+  return c.Z.getCurrentConfig({
     location: "FriendOnlineTimer"
   }).useTestTimerDuration ? m : _
 }
 async function E() {
   if (h()) try {
-    await Chunk544891.tn.post({
-      url: Chunk981631.ANM.USER_MEANINGFULLY_ONLINE,
+    await r.tn.post({
+      url: d.ANM.USER_MEANINGFULLY_ONLINE,
       rejectWithError: true
-    }), Chunk570140.Z.dispatch({
+    }), i.Z.dispatch({
       type: "FRIEND_ONLINE_TIMER_REPORTED",
       timestampMs: Date.now()
     })
   } catch (e) {
-    Chunk960048.Z.captureException(module, {
+    l.Z.captureException(e, {
       tags: {
         app_context: "session_timer"
       }

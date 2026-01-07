@@ -45,33 +45,33 @@ let S = new Set([Chunk480916.cU.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, Chunk4809
   T = e => I.has(e);
 
 function C() {
-  let e = Chunk594174.default.getCurrentUser();
-  return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.VERIFIED_ADULT
+  let e = p.default.getCurrentUser();
+  return (null == e ? true : e.ageVerificationStatus) !== o.F$.VERIFIED_ADULT
 }
 
 function A() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-  return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.VERIFIED_ADULT
+  let e = (0, i.e7)([p.default], () => p.default.getCurrentUser());
+  return (null == e ? true : e.ageVerificationStatus) !== o.F$.VERIFIED_ADULT
 }
 
 function N() {
-  let e = Chunk594174.default.getCurrentUser();
-  return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_TEEN
+  let e = p.default.getCurrentUser();
+  return (null == e ? true : e.ageVerificationStatus) === o.F$.VERIFIED_TEEN
 }
 
 function P() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-  return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_TEEN
+  let e = (0, i.e7)([p.default], () => p.default.getCurrentUser());
+  return (null == e ? true : e.ageVerificationStatus) === o.F$.VERIFIED_TEEN
 }
 
 function R() {
-  let e = Chunk594174.default.getCurrentUser();
-  return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_ADULT
+  let e = p.default.getCurrentUser();
+  return (null == e ? true : e.ageVerificationStatus) === o.F$.VERIFIED_ADULT
 }
 
 function w() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-  return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_ADULT
+  let e = (0, i.e7)([p.default], () => p.default.getCurrentUser());
+  return (null == e ? true : e.ageVerificationStatus) === o.F$.VERIFIED_ADULT
 }
 var D = function(e) {
     return e.CTAS = "ctas", e.CONTENT_TYPE = "content_type", e
@@ -88,13 +88,13 @@ function L(e, t) {
 }
 
 function j() {
-  let e = Chunk594174.default.getCurrentUser();
-  return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.UNVERIFIED && (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.CLIENT_ONLY_PENDING
+  let e = p.default.getCurrentUser();
+  return (null == e ? true : e.ageVerificationStatus) !== o.F$.UNVERIFIED && (null == e ? true : e.ageVerificationStatus) !== o.F$.CLIENT_ONLY_PENDING
 }
 
 function M() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-  return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.UNVERIFIED && (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.CLIENT_ONLY_PENDING
+  let e = (0, i.e7)([p.default], () => p.default.getCurrentUser());
+  return (null == e ? true : e.ageVerificationStatus) !== o.F$.UNVERIFIED && (null == e ? true : e.ageVerificationStatus) !== o.F$.CLIENT_ONLY_PENDING
 }
 
 function k(e) {

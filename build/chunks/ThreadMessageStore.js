@@ -294,17 +294,17 @@ function z(e) {
 
 function q() {
   for (let e in v) {
-    let t = v[module];
-    if (null != exports && null != exports.mostRecentMessage) {
-      let n = Chunk375954.Z.getMessage(module, exports.mostRecentMessage.id);
-      if (null == require) continue;
-      exports.mostRecentMessage = require
+    let t = v[e];
+    if (null != t && null != t.mostRecentMessage) {
+      let n = p.Z.getMessage(e, t.mostRecentMessage.id);
+      if (null == n) continue;
+      t.mostRecentMessage = n
     }
   }
 }
 class Q extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk375954.Z)
+    this.waitFor(f.Z, p.Z)
   }
   getCount(e) {
     var t, n;

@@ -164,16 +164,16 @@ function v(e) {
 }
 
 function S() {
-  let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
-    t = Chunk473749.useMemo(() => module.filter(e => u.Z.isSupported(e.type)), [module]),
-    [n, o] = Chunk473749.useState([]),
-    c = Chunk473749.useCallback(e => l.Z.refresh(e.type, e.id).finally(() => {
+  let e = (0, a.e7)([m.Z], () => m.Z.getAccounts()),
+    t = i.useMemo(() => e.filter(e => u.Z.isSupported(e.type)), [e]),
+    [n, o] = i.useState([]),
+    c = i.useCallback(e => l.Z.refresh(e.type, e.id).finally(() => {
       o(t => [...t, e.id])
     }), []);
-  return 0 === exports.length ? null : (0, Chunk54381.jsx)(Chunk481060.C3N, {
-    className: Chunk649324.container,
-    label: Chunk388032.intl.string(Chunk388032.t.aw0GVS),
-    children: exports.map(e => (0, r.jsx)(v, {
+  return 0 === t.length ? null : (0, r.jsx)(s.C3N, {
+    className: y.container,
+    label: b.intl.string(b.t.aw0GVS),
+    children: t.map(e => (0, r.jsx)(v, {
       account: e,
       handleRefresh: c,
       refreshedAccountIds: n

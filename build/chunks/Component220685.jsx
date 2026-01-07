@@ -160,20 +160,20 @@ let N = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
   };
 
 function _() {
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-    t = (0, Chunk730647.f)(),
-    n = (0, Chunk584825.qi)(null == module ? true : module.id).some(e => e.published);
-  return null != module && exports ? (0, Chunk54381.jsx)(S, {
-    guild: module,
-    canEnable: require
-  }) : (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  let e = (0, c.e7)([h.Z], () => h.Z.getGuild()),
+    t = (0, j.f)(),
+    n = (0, v.qi)(null == e ? true : e.id).some(e => e.published);
+  return null != e && t ? (0, r.jsx)(S, {
+    guild: e,
+    canEnable: n
+  }) : (0, r.jsx)(g.$jN, {})
 }
 
 function T() {
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
-  return (0, Chunk54381.jsx)(Chunk730647.l, {
-    guildId: null == module ? true : module.id,
+  let e = (0, c.e7)([h.Z], () => h.Z.getGuild());
+  return (0, r.jsx)(j.l, {
+    guildId: null == e ? true : e.id,
     refetchOnMount: true,
-    children: (0, Chunk54381.jsx)(_, {})
+    children: (0, r.jsx)(_, {})
   })
 }

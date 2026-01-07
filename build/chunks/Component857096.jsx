@@ -111,11 +111,11 @@ function I(e) {
 let T = () => {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.FRAME_PIP), t = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
-  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: module,
-    children: (0, Chunk54381.jsx)(I, {
-      isLoading: !exports
+  } = (0, d.ZP)(u.Z.FRAME_PIP), t = (0, o.e7)([g.Z], () => g.Z.isFrameActive());
+  return (0, r.jsx)(d.Gt, {
+    value: e,
+    children: (0, r.jsx)(I, {
+      isLoading: !t
     })
   })
 }

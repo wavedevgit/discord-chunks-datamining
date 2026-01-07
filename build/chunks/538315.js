@@ -11,7 +11,7 @@ var r = Array.prototype.slice,
 o.shim = function() {
   return Object.keys ? ! function() {
     var e = Object.keys(arguments);
-    return module && module.length === arguments.length
+    return e && e.length === arguments.length
   }(1, 2) && (Object.keys = function(e) {
     return i(e) ? s(r.call(e)) : s(e)
   }) : Object.keys = o, Object.keys || o

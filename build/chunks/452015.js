@@ -8,7 +8,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.qs)(Chunk313789.n.CHAT_INLINE_MEDIA_LINKS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.U47N1p),
+  useTitle: () => u.intl.string(u.t.U47N1p),
   useValue: Chunk695346.RS.useSetting,
   setValue: Chunk695346.RS.updateSetting
 })

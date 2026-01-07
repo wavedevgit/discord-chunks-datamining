@@ -39,68 +39,68 @@ function h(e) {
 }
 
 function g() {
-  let e = Chunk695346.G6.useSetting(),
-    t = Chunk695346.no.useSetting(),
+  let e = c.G6.useSetting(),
+    t = c.no.useSetting(),
     n = e => {
       c.no.updateSetting(e)
     },
     s = [{
-      value: Chunk524437.GI.ACTIVITY_STATUS_ON,
-      name: Chunk388032.intl.string(Chunk388032.t.UzGMH9)
+      value: i.GI.ACTIVITY_STATUS_ON,
+      name: p.intl.string(p.t.UzGMH9)
     }, {
-      value: Chunk524437.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
-      name: Chunk388032.intl.string(Chunk418924.default["/sAeRY"])
+      value: i.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
+      name: p.intl.string(_.default["/sAeRY"])
     }, {
-      value: Chunk524437.GI.ACTIVITY_STATUS_OFF,
-      name: Chunk388032.intl.string(Chunk418924.default.m3oL7Q)
+      value: i.GI.ACTIVITY_STATUS_OFF,
+      name: p.intl.string(_.default.m3oL7Q)
     }];
-  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-    label: Chunk388032.intl.string(Chunk418924.default.TG0QsS),
-    description: Chunk388032.intl.string(Chunk418924.default.OO17Lg),
-    children: [(0, Chunk54381.jsx)(Chunk481060.FXm, {
-      label: Chunk388032.intl.string(Chunk418924.default["/LHVbt"]),
-      options: Chunk921801,
-      value: exports,
+  return (0, r.jsxs)(a.C3N, {
+    label: p.intl.string(_.default.TG0QsS),
+    description: p.intl.string(_.default.OO17Lg),
+    children: [(0, r.jsx)(a.FXm, {
+      label: p.intl.string(_.default["/LHVbt"]),
+      options: s,
+      value: t,
       onChange: e => n(e)
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk827186.myServersContainer,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk827186.myServersHeaderContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-          className: Chunk827186.myServersTitle,
+    }), (0, r.jsxs)("div", {
+      className: m.myServersContainer,
+      children: [(0, r.jsxs)("div", {
+        className: m.myServersHeaderContainer,
+        children: [(0, r.jsx)(a.Heading, {
+          className: m.myServersTitle,
           variant: "heading-md/medium",
           color: "text-strong",
-          children: Chunk388032.intl.string(Chunk388032.t.TqdOvC)
-        }), !module && (0, Chunk54381.jsx)("div", {
-          className: Chunk827186.myServersIgnoredWarning,
-          children: (0, Chunk54381.jsx)(Chunk481060.M14, {
+          children: p.intl.string(p.t.TqdOvC)
+        }), !e && (0, r.jsx)("div", {
+          className: m.myServersIgnoredWarning,
+          children: (0, r.jsx)(a.M14, {
             type: "warning",
-            children: Chunk388032.intl.string(Chunk418924.default["xxI0/W"])
+            children: p.intl.string(_.default["xxI0/W"])
           })
         })]
-      }), (0, Chunk54381.jsx)(Chunk940276.Z, {})]
+      }), (0, r.jsx)(o.Z, {})]
     })]
   })
 }
 
 function E() {
-  let e = Chunk695346.cP.useSetting(),
-    t = Chunk695346.Ou.useSetting();
-  return (0, Chunk54381.jsx)(Chunk921801.F, {
-    setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
-    children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk418924.default["5rYBAQ"]),
-      children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk418924.default.khuuzv),
-        description: Chunk388032.intl.string(Chunk418924.default["8EWsJ8"]),
+  let e = c.cP.useSetting(),
+    t = c.Ou.useSetting();
+  return (0, r.jsx)(s.F, {
+    setting: d.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
+    children: (0, r.jsxs)(a.C3N, {
+      label: p.intl.string(_.default["5rYBAQ"]),
+      children: [(0, r.jsx)(a.rsf, {
+        label: p.intl.string(_.default.khuuzv),
+        description: p.intl.string(_.default["8EWsJ8"]),
         id: "allow-friends-to-join-my-game",
-        checked: module,
+        checked: e,
         onChange: e => c.cP.updateSetting(e)
-      }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk418924.default.Uz5Ipi),
-        description: Chunk388032.intl.string(Chunk418924.default.CZI2Gb),
+      }), (0, r.jsx)(a.rsf, {
+        label: p.intl.string(_.default.Uz5Ipi),
+        description: p.intl.string(_.default.CZI2Gb),
         id: "allow-vc-join-without-request",
-        checked: exports,
+        checked: t,
         onChange: e => c.Ou.updateSetting(e)
       })]
     })
@@ -108,36 +108,36 @@ function E() {
 }
 
 function b() {
-  let e = Chunk695346.G6.useSetting(),
-    t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk418924.default.UQ9RHJ) : Chunk388032.intl.string(Chunk388032.t.oKqC4t);
-  return (0, Chunk54381.jsx)(Chunk921801.F, {
-    setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS,
-    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  let e = c.G6.useSetting(),
+    t = l.isPlatformEmbedded ? p.intl.string(_.default.UQ9RHJ) : p.intl.string(p.t.oKqC4t);
+  return (0, r.jsx)(s.F, {
+    setting: d.s6.ACTIVITY_PRIVACY_STATUS,
+    children: (0, r.jsxs)(a.Kqy, {
       gap: 32,
-      children: [(0, Chunk54381.jsx)("div", {
-        children: Chunk388032.intl.string(Chunk418924.default.t2YsrV)
-      }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk418924.default.WhdCGP),
-        description: exports,
+      children: [(0, r.jsx)("div", {
+        children: p.intl.string(_.default.t2YsrV)
+      }), (0, r.jsx)(a.rsf, {
+        label: p.intl.string(_.default.WhdCGP),
+        description: t,
         id: "share-my-activity",
-        checked: module,
-        onChange: Chunk695346.G6.updateSetting
+        checked: e,
+        onChange: c.G6.updateSetting
       })]
     })
   })
 }
 
 function y() {
-  return (0, Chunk54381.jsx)(Chunk921801.F, {
-    setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
-    children: (0, Chunk54381.jsx)(Chunk481060.Zbd, {
-      type: Chunk481060.Zbd.Types.PRIMARY,
-      className: Chunk827186.privacyTermsCard,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsx)(s.F, {
+    setting: d.s6.ACTIVITY_PRIVACY_TOS,
+    children: (0, r.jsx)(a.Zbd, {
+      type: a.Zbd.Types.PRIMARY,
+      className: m.privacyTermsCard,
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.xvCsx4, {
-          termsLink: Chunk981631.EYA.TERMS,
-          privacyLink: Chunk981631.EYA.PRIVACY
+        children: p.intl.format(p.t.xvCsx4, {
+          termsLink: f.EYA.TERMS,
+          privacyLink: f.EYA.PRIVACY
         })
       })
     })

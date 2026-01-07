@@ -129,7 +129,7 @@ class S extends Chunk473749.PureComponent {
       isPreviewingInGame: a,
       isActiveRegion: s
     } = this.props;
-    if (null == module || null == exports) return null;
+    if (null == e || null == t) return null;
     let {
       id: o,
       pinned: l,
@@ -137,34 +137,34 @@ class S extends Chunk473749.PureComponent {
       size: u,
       anchor: f,
       minSize: p
-    } = module, g = (0, Chunk434529.w_)(Chunk237997, require), b = (0, Chunk434529.KR)(Chunk451478, require), {
+    } = e, g = (0, h.w_)(u, n), b = (0, h.KR)(f, n), {
       resizeX: y,
       resizeY: v,
       dragAnywhere: O
-    } = exports, E = (0, Chunk906037.eM)({
-      locked: Chunk473749,
-      isPreviewingInGame: Chunk442837,
-      pinned: Chunk26229
+    } = t, E = (0, m.eM)({
+      locked: r,
+      isPreviewingInGame: a,
+      pinned: l
     }), x = {
       minX: 0,
       minY: 0,
-      maxX: require.width,
-      maxY: require.height
-    }, S = this.renderWidget(module, Chunk990673, Chunk382790);
-    return null == S ? null : (0, Chunk54381.jsx)(Chunk552062.Z, {
-      id: Chunk13245,
-      size: Chunk382790,
-      anchor: Chunk990673,
+      maxX: n.width,
+      maxY: n.height
+    }, S = this.renderWidget(e, b, g);
+    return null == S ? null : (0, i.jsx)(c.Z, {
+      id: o,
+      size: g,
+      anchor: b,
       container: x,
-      minSize: Chunk145597,
+      minSize: p,
       hidden: !E,
-      resizeX: Chunk430036,
-      resizeY: Chunk839434,
+      resizeX: y,
+      resizeY: v,
       style: {
-        zIndex: Chunk355863
+        zIndex: d
       },
-      dragAnywhere: Chunk981631,
-      active: !Chunk473749 || Chunk765250,
+      dragAnywhere: O,
+      active: !r || s,
       onUpdate: this.handleUpdate,
       onClick: this.handleFocus,
       onDragStart: this.handleDragStart,
@@ -252,8 +252,8 @@ function Z(e, t) {
 let j = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
   var e;
   return {
-    layout: null != (e = Chunk355863.Z.getLayout(Chunk145597.OVERLAY_LAYOUT_ID)) ? module : true,
-    layoutSize: Chunk451478.Z.windowSize(),
+    layout: null != (e = d.Z.getLayout(p.OVERLAY_LAYOUT_ID)) ? e : true,
+    layoutSize: f.Z.windowSize(),
     renderWidget: Z
   }
 })(Chunk26229.Z)

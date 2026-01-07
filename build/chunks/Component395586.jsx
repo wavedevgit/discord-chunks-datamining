@@ -11,9 +11,9 @@ var Chunk54381 = require("./54381.js"),
 let a = Chunk473749.createContext(true);
 
 function s() {
-  let e = Chunk473749.useContext(a);
-  if (null == module) throw Error("useCreatorMonetizationSettingsDisabled must be used within a CreatorMonetizationSettingsDisabledContext");
-  return module
+  let e = i.useContext(a);
+  if (null == e) throw Error("useCreatorMonetizationSettingsDisabled must be used within a CreatorMonetizationSettingsDisabledContext");
+  return e
 }
 
 function o(e) {

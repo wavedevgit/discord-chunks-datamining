@@ -13,17 +13,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk278593 = require("./278593.js");
 
 function d() {
-  return (0, Chunk54381.jsxs)("header", {
-    className: Chunk278593.header,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, r.jsxs)("header", {
+    className: u.header,
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
-      className: Chunk278593.title,
-      children: Chunk388032.intl.string(Chunk388032.t.w5uwoI)
-    }), (0, Chunk54381.jsx)(Chunk115849.Z, {})]
+      className: u.title,
+      children: c.intl.string(c.t.w5uwoI)
+    }), (0, r.jsx)(a.Z, {})]
   })
 }
 let p = function() {
-  return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-    children: [(0, Chunk54381.jsx)(d, {}), (0, Chunk645792.b)() && (0, Chunk54381.jsx)(Chunk787642.Z, {})]
+  return (0, r.jsxs)(i.Fragment, {
+    children: [(0, r.jsx)(d, {}), (0, o.b)() && (0, r.jsx)(s.Z, {})]
   })
 }

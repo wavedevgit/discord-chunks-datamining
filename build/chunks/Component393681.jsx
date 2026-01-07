@@ -47,26 +47,26 @@ class U extends Chunk473749.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    (0, Chunk484459.Z)(module.id, module.getAvatarURL(true, 80))
+    (0, h.Z)(e.id, e.getAvatarURL(true, 80))
   }
   componentWillUnmount() {
-    Chunk816814.Z.clearBackupCodes(), (0, Chunk809206.Zy)()
+    c.Z.clearBackupCodes(), (0, u.Zy)()
   }
   renderSecuritySettings() {
     let {
       backupCodes: e,
       currentUser: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      className: Chunk335094.userSettingsSecurity,
-      label: Chunk388032.intl.string(Chunk388032.t.pKSjEj),
-      children: [exports.mfaEnabled ? (0, Chunk54381.jsx)(Chunk562436.Z, {}) : null, (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.ACCOUNT_CHANGE_PASSWORD,
-        children: (0, Chunk54381.jsx)(Chunk354255.Z, {})
-      }), (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        children: (0, Chunk54381.jsx)(Chunk730820.Z, {
-          backupCodes: module
+    return (0, r.jsxs)(l.C3N, {
+      className: M.userSettingsSecurity,
+      label: j.intl.string(j.t.pKSjEj),
+      children: [t.mfaEnabled ? (0, r.jsx)(A.Z, {}) : null, (0, r.jsx)(_.F, {
+        setting: x.s6.ACCOUNT_CHANGE_PASSWORD,
+        children: (0, r.jsx)(N.Z, {})
+      }), (0, r.jsx)(_.F, {
+        setting: x.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
+        children: (0, r.jsx)(C.Z, {
+          backupCodes: e
         })
       })]
     })
@@ -77,21 +77,21 @@ class U extends Chunk473749.PureComponent {
       userTeamsLoading: t,
       userTeams: n
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.l09, {
-      children: [(0, Chunk54381.jsxs)(Chunk921801.F, {
-        setting: Chunk726985.s6.ACCOUNT_PROFILE,
-        children: [this.props.shouldRenderPomeloWarning && (0, Chunk54381.jsx)(Chunk499311.Z, {}), (0, Chunk54381.jsx)(Chunk732521.Z, {
+    return (0, r.jsxs)(l.l09, {
+      children: [(0, r.jsxs)(_.F, {
+        setting: x.s6.ACCOUNT_PROFILE,
+        children: [this.props.shouldRenderPomeloWarning && (0, r.jsx)(P.Z, {}), (0, r.jsx)(w.Z, {
           currentUser: this.props.currentUser
-        }), (0, Chunk54381.jsx)(Chunk2719.Z, {})]
-      }), (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
+        }), (0, r.jsx)(D.Z, {})]
+      }), (0, r.jsx)(_.F, {
+        setting: x.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
         children: this.renderSecuritySettings()
-      }), (0, Chunk54381.jsxs)(Chunk921801.F, {
-        setting: Chunk726985.s6.ACCOUNT_REMOVAL,
-        children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk47863.Z, {
-          currentUser: module,
-          userTeamsLoading: exports,
-          userTeams: require
+      }), (0, r.jsxs)(_.F, {
+        setting: x.s6.ACCOUNT_REMOVAL,
+        children: [(0, r.jsx)(l.izJ, {}), (0, r.jsx)(R.Z, {
+          currentUser: e,
+          userTeamsLoading: t,
+          userTeams: n
         })]
       })]
     })
@@ -100,60 +100,60 @@ class U extends Chunk473749.PureComponent {
     let {
       subsection: e
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk10298.N, {
-      header: Chunk388032.intl.string(Chunk388032.t["JAIM/m"]),
-      children: (0, Chunk54381.jsx)(Chunk526156.Z, {
-        parentSetting: Chunk726985.s6.ACCOUNT,
-        settingsSection: Chunk981631.oAB.ACCOUNT,
-        panelClassName: Chunk335094.tabPanel,
+    return (0, r.jsx)(I.N, {
+      header: j.intl.string(j.t["JAIM/m"]),
+      children: (0, r.jsx)(T.Z, {
+        parentSetting: x.s6.ACCOUNT,
+        settingsSection: L.oAB.ACCOUNT,
+        panelClassName: M.tabPanel,
         onTabChange: e => {
           O.default.track(L.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === x.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
-        defaultTabIndex: "ACCOUNT_STANDING" === module ? 1 : true,
+        defaultTabIndex: "ACCOUNT_STANDING" === e ? 1 : true,
         tabs: [{
-          title: Chunk388032.intl.string(Chunk388032.t.Am9YHi),
+          title: j.intl.string(j.t.Am9YHi),
           component: () => this.renderSecuritySettingsRedesign(),
-          setting: Chunk726985.s6.ACCOUNT_SECURITY_TAB
+          setting: x.s6.ACCOUNT_SECURITY_TAB
         }, {
-          title: Chunk388032.intl.string(Chunk388032.t["Vov/9o"]),
-          component: Chunk518560.Z,
-          setting: Chunk726985.s6.PRIVACY_AND_SAFETY_STANDING
+          title: j.intl.string(j.t["Vov/9o"]),
+          component: p.Z,
+          setting: x.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })
     })
   }
   render() {
-    return this.props.hide ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : this.renderUnhidden()
+    return this.props.hide ? (0, r.jsx)(d.Z, {}) : this.renderUnhidden()
   }
 }
 let G = () => {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => {
-      let e = Chunk594174.default.getCurrentUser();
-      return o()(null != module, "ConnectedUserAccountSettings: currentUser cannot be undefined"), module
+  let e = (0, s.e7)([y.default], () => {
+      let e = y.default.getCurrentUser();
+      return o()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
     }),
-    t = (0, Chunk442837.e7)([Chunk325067.Z], () => Chunk325067.Z.getBackupCodes()),
-    n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
-    i = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    a = (0, Chunk332473.b)(),
-    l = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    c = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
+    t = (0, s.e7)([g.Z], () => g.Z.getBackupCodes()),
+    n = (0, s.e7)([E.Z], () => E.Z.hidePersonalInformation),
+    i = (0, s.e7)([S.Z], () => S.Z.theme),
+    a = (0, f.b)(),
+    l = (0, s.e7)([v.default], () => v.default.locale),
+    c = (0, s.e7)([b.Z], () => b.Z.getSubsection()),
     {
       teams: u,
       loading: d
-    } = (0, Chunk577275.Z)({
+    } = (0, m.Z)({
       refreshOnDepChange: true
     });
-  return (0, Chunk54381.jsx)(U, {
-    theme: Chunk473749,
-    currentUser: module,
-    backupCodes: exports,
-    hide: require,
-    shouldRenderPomeloWarning: Chunk512722,
-    locale: Chunk481060,
-    subsection: Chunk816814,
-    userTeams: Chunk809206,
-    userTeamsLoading: Chunk497321
+  return (0, r.jsx)(U, {
+    theme: i,
+    currentUser: e,
+    backupCodes: t,
+    hide: n,
+    shouldRenderPomeloWarning: a,
+    locale: l,
+    subsection: c,
+    userTeams: u,
+    userTeamsLoading: d
   })
 }

@@ -3,12 +3,12 @@
 "use strict";
 var Chunk461648 = require("./461648.js"),
   i = function() {
-    return !!Chunk461648
+    return !!r
   };
 i.hasArrayLengthDefineBug = function() {
-  if (!Chunk461648) return null;
+  if (!r) return null;
   try {
-    return 1 !== Chunk461648([], "length", {
+    return 1 !== r([], "length", {
       value: 1
     }).length
   } catch (e) {

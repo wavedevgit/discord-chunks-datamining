@@ -25,17 +25,17 @@ function f() {
 }
 
 function h() {
-  let e = (0, Chunk399606.e7)([Chunk673125.Z], () => Chunk673125.Z.getDrawMode()),
-    t = (null == module ? true : module.type) === Chunk984063.W.LINE,
-    n = Chunk473749.useRef(null),
+  let e = (0, l.e7)([s.Z], () => s.Z.getDrawMode()),
+    t = (null == e ? true : e.type) === c.W.LINE,
+    n = r.useRef(null),
     h = () => {
-      exports ? (0, Chunk125268.Bo)(null) : (0, Chunk125268.Bo)({
-        type: Chunk984063.W.LINE
+      t ? (0, o.Bo)(null) : (0, o.Bo)({
+        type: c.W.LINE
       })
     };
-  return (0, Chunk54381.jsx)(Chunk304388.Z, {
+  return (0, i.jsx)(d.Z, {
     renderPopout: () => null,
-    popoutTargetRef: require,
+    popoutTargetRef: n,
     children: e => {
       var r, l, o = f({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);

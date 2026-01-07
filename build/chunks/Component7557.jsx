@@ -24,9 +24,9 @@ class f extends(r = Chunk473749.PureComponent) {
     let {
       className: e
     } = this.props;
-    return (0, Chunk54381.jsx)("input", {
+    return (0, a.jsx)("input", {
       ref: this.setCodeBlockRef,
-      className: l()(Chunk87266.input, module),
+      className: l()(u.input, e),
       maxLength: 1,
       value: null != this.props.code ? this.props.code : true,
       autoFocus: this.props.autoFocus,
@@ -36,11 +36,11 @@ class f extends(r = Chunk473749.PureComponent) {
   }
   focus() {
     var e;
-    null == (e = this._codeBlockRef) || module.focus()
+    null == (e = this._codeBlockRef) || e.focus()
   }
   blur() {
     var e;
-    null == (e = this._codeBlockRef) || module.blur()
+    null == (e = this._codeBlockRef) || e.blur()
   }
   constructor(...e) {
     super(...e), d(this, "_codeBlockRef", true), d(this, "setCodeBlockRef", e => {
@@ -72,20 +72,20 @@ class p extends(i = Chunk473749.PureComponent) {
     } = this.props, {
       codes: n
     } = this.state, r = [];
-    for (let e = 0; module < require.length; module++) module === require.length / 2 && r.push((0, Chunk54381.jsx)("div", {
-      className: Chunk87266.spacer
-    }, "spacer")), r.push((0, Chunk54381.jsx)(f, {
+    for (let e = 0; e < n.length; e++) e === n.length / 2 && r.push((0, a.jsx)("div", {
+      className: u.spacer
+    }, "spacer")), r.push((0, a.jsx)(f, {
       ref: t => this.setCodeBlockRef(e, t),
-      code: require[module],
-      autoFocus: 0 === module,
+      code: n[e],
+      autoFocus: 0 === e,
       onChange: t => this.handleChange(e, t),
       onKeyDown: t => this.handleKeyDown(e, t),
-      className: exports
-    }, module));
-    return (0, Chunk54381.jsx)(Chunk600164.Z, {
-      align: Chunk600164.Z.Align.CENTER,
-      justify: Chunk600164.Z.Justify.CENTER,
-      className: module,
+      className: t
+    }, e));
+    return (0, a.jsx)(c.Z, {
+      align: c.Z.Align.CENTER,
+      justify: c.Z.Justify.CENTER,
+      className: e,
       children: r
     })
   }
@@ -116,11 +116,11 @@ class p extends(i = Chunk473749.PureComponent) {
     let {
       codes: e
     } = this.state, t = "";
-    for (let n = 0; require < module.length; require++) {
-      if (isNaN(parseInt(module[require]))) return require;
-      t += module[require]
+    for (let n = 0; n < e.length; n++) {
+      if (isNaN(parseInt(e[n]))) return n;
+      t += e[n]
     }
-    return exports
+    return t
   }
   submit(e) {
     let {

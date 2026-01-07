@@ -13,20 +13,20 @@ var Chunk532812 = require("./532812.js"),
   Chunk682578 = require("./682578.js");
 let l = (e, t, n, r) => (!t || !!r) && false !== n && null != e && e,
   c = () => {
-    let e = Chunk695346.xM.useSetting(),
-      t = (0, Chunk81643.l6)(),
-      n = (0, Chunk682578.J)();
-    return l(module, (0, Chunk532812.H)("useViewNsfwCommandsOrDefault"), require, exports)
+    let e = o.xM.useSetting(),
+      t = (0, i.l6)(),
+      n = (0, s.J)();
+    return l(e, (0, r.H)("useViewNsfwCommandsOrDefault"), n, t)
   },
   u = () => {
-    let e = Chunk695346.DC.useSetting(),
-      t = (0, Chunk81643.l6)(),
-      n = (0, Chunk682578.J)();
-    return l(module, (0, Chunk532812.H)("useViewNsfwGuildsOrDefault"), require, exports)
+    let e = o.DC.useSetting(),
+      t = (0, i.l6)(),
+      n = (0, s.J)();
+    return l(e, (0, r.H)("useViewNsfwGuildsOrDefault"), n, t)
   },
   d = () => {
-    let e = Chunk695346.xM.getSetting(),
-      t = (0, Chunk81643.kJ)(),
-      n = Chunk594174.default.getCurrentUser();
-    return l(module, (0, Chunk532812.S)("getViewNsfwCommandsOrDefault"), null == require ? true : require.nsfwAllowed, exports)
+    let e = o.xM.getSetting(),
+      t = (0, i.kJ)(),
+      n = a.default.getCurrentUser();
+    return l(e, (0, r.S)("getViewNsfwCommandsOrDefault"), null == n ? true : n.nsfwAllowed, t)
   }

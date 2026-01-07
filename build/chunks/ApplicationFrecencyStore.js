@@ -100,8 +100,8 @@ function I(e) {
 
 function T() {
   var e, t;
-  let n = null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.applicationFrecency) ? true : module.applications) ? exports : {};
-  y.overwriteHistory(a().mapValues(require, e => g(m({}, e), {
+  let n = null != (t = null == (e = d.Z.frecencyWithoutFetchingLatest.applicationFrecency) ? true : e.applications) ? t : {};
+  y.overwriteHistory(a().mapValues(n, e => g(m({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), b.pendingUsages)
 }

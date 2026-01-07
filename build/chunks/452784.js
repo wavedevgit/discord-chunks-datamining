@@ -9,11 +9,11 @@ var Chunk657707 = require("./657707.js"),
   Chunk590814 = require("./590814.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.wf)(Chunk313789.n.LANGUAGE_AND_TIME_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.KyFVyi),
-    buildLayout: () => [Chunk590814.L]
+    useTitle: () => r.intl.string(r.t.KyFVyi),
+    buildLayout: () => [u.L]
   }),
   o = (0, Chunk509613.m7)(Chunk313789.n.LANGUAGE_AND_TIME_SIDEBAR_ITEM, {
     icon: Chunk657707.os0,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.KyFVyi),
+    useTitle: () => r.intl.string(r.t.KyFVyi),
     buildLayout: () => [a]
   })

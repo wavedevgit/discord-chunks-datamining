@@ -30,7 +30,7 @@ var g = ((s = {}).MEMBER = "MEMBER", s.ROLE = "ROLE", s.CHANNEL = "CHANNEL", s.U
 class b extends(r = Chunk473749.Component) {
   componentDidMount() {
     let e = this.containerRef.current;
-    null != module && (this.previousHeight = module.offsetHeight)
+    null != e && (this.previousHeight = e.offsetHeight)
   }
   componentDidUpdate(e) {
     let {
@@ -41,12 +41,12 @@ class b extends(r = Chunk473749.Component) {
   }
   handleHeightChange() {
     let e = this.containerRef.current;
-    if (null == module) return;
-    let t = module.offsetHeight,
-      n = exports - this.previousHeight;
-    if (0 !== require) {
+    if (null == e) return;
+    let t = e.offsetHeight,
+      n = t - this.previousHeight;
+    if (0 !== n) {
       var r, s;
-      this.previousHeight = exports, null == (r = (s = this.props).onHeightChange) || r.call(s, require)
+      this.previousHeight = t, null == (r = (s = this.props).onHeightChange) || r.call(s, n)
     }
   }
   handleKeyDownGrid(e) {
@@ -128,7 +128,7 @@ class b extends(r = Chunk473749.Component) {
     let {
       autoFocus: e,
       query: t,
-      placeholder: n = Chunk388032.intl.string(Chunk388032.t.LzcpeZ),
+      placeholder: n = p.intl.string(p.t.LzcpeZ),
       themeOverride: r,
       disabled: s,
       size: a,
@@ -139,7 +139,7 @@ class b extends(r = Chunk473749.Component) {
       inputProps: b,
       focusAfterReady: v
     } = this.props, m = false, y = [];
-    return null != Chunk295907 && Chunk295907.length > 0 && ("string" == typeof Chunk295907[0] ? Chunk295907.forEach((e, t) => y.push((0, l.jsxs)(c.eee, {
+    return null != u && u.length > 0 && ("string" == typeof u[0] ? u.forEach((e, t) => y.push((0, l.jsxs)(c.eee, {
       focusProps: {
         offset: 4
       },
@@ -151,7 +151,7 @@ class b extends(r = Chunk473749.Component) {
         className: f.close,
         "aria-label": p.intl.string(p.t.N86XcP)
       })]
-    }, t))) : (m = true, Chunk295907.forEach((e, t) => y.push((0, l.jsxs)(c.eee, {
+    }, t))) : (m = true, u.forEach((e, t) => y.push((0, l.jsxs)(c.eee, {
       className: o()(f.tag, f.richTag),
       onClick: this.handleRemoveTag.bind(this, t),
       children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, l.jsx)(c.qEK, {
@@ -172,10 +172,10 @@ class b extends(r = Chunk473749.Component) {
         className: f.close,
         "aria-label": p.intl.string(p.t.N86XcP)
       })]
-    }, t))))), (0, Chunk54381.jsx)(Chunk481060.tEY, {
+    }, t))))), (0, l.jsx)(c.tEY, {
       focusTarget: this.ref,
       ringTarget: this.containerRef,
-      children: (0, Chunk54381.jsx)(Chunk481060.f6W, {
+      children: (0, l.jsx)(c.f6W, {
         theme: r,
         children: r => (0, l.jsx)("div", {
           ref: this.containerRef,

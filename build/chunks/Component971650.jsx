@@ -107,19 +107,19 @@ class P extends Chunk473749.PureComponent {
     })
   }
   renderPasskeyCTASection() {
-    return Chunk15980.Z.hasCredentials ? null : (0, Chunk54381.jsxs)(x, {
-      label: Chunk388032.intl.string(Chunk388032.t.xMDCHa),
-      text: Chunk388032.intl.string(Chunk388032.t.okgGTu),
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    return b.Z.hasCredentials ? null : (0, r.jsxs)(x, {
+      label: O.intl.string(O.t.xMDCHa),
+      text: O.intl.string(O.t.okgGTu),
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/normal",
-        className: Chunk671146.sectionBody,
-        children: Chunk388032.intl.format(Chunk388032.t.OeGXVv, {
-          learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SETTING_UP_TWO_FACTOR)
+        className: j.sectionBody,
+        children: O.intl.format(O.t.OeGXVv, {
+          learnMoreLink: y.Z.getArticleURL(g.BhN.SETTING_UP_TWO_FACTOR)
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, r.jsx)(d.Button, {
         variant: "active",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.NIFmCJ),
+        text: O.intl.string(O.t.NIFmCJ),
         onClick: this.handleAddPasskey
       })]
     })
@@ -128,34 +128,34 @@ class P extends Chunk473749.PureComponent {
     let {
       isTotp: t
     } = this.props;
-    return module ? this.renderTotp() : this.renderWebAuthn()
+    return t ? this.renderTotp() : this.renderWebAuthn()
   }
   renderTotp() {
     let {
       transitionState: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk775086.Modal, {
-      onClose: () => this.handleCloseModal(Chunk388032.intl.string(Chunk388032.t.WJFPHJ)),
-      transitionState: module,
-      title: Chunk388032.intl.string(Chunk388032.t.Awk3Gw),
-      subtitle: Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {}),
+    return (0, r.jsxs)(l.Modal, {
+      onClose: () => this.handleCloseModal(O.intl.string(O.t.WJFPHJ)),
+      transitionState: t,
+      title: O.intl.string(O.t.Awk3Gw),
+      subtitle: O.intl.format(O.t["/Nhi8R"], {}),
       actions: [],
-      children: [this.renderPasskeyCTASection(), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk671146.divider
-      }), this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogh, {}))]
+      children: [this.renderPasskeyCTASection(), (0, r.jsx)(d.izJ, {
+        className: j.divider
+      }), this.renderBackupCodesSection(O.intl.format(O.t.M0Dogh, {}))]
     })
   }
   renderWebAuthn() {
     let {
       transitionState: t
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk775086.Modal, {
-      onClose: () => this.handleCloseModal(Chunk388032.intl.string(Chunk388032.t.aoNIXB)),
-      transitionState: module,
-      title: Chunk388032.intl.string(Chunk388032.t["7wPZln"]),
-      subtitle: Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {}),
+    return (0, r.jsx)(l.Modal, {
+      onClose: () => this.handleCloseModal(O.intl.string(O.t.aoNIXB)),
+      transitionState: t,
+      title: O.intl.string(O.t["7wPZln"]),
+      subtitle: O.intl.format(O.t["/Nhi8R"], {}),
       actions: [],
-      children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.p59QLQ, {}))
+      children: this.renderBackupCodesSection(O.intl.format(O.t.p59QLQ, {}))
     })
   }
   constructor(...t) {
@@ -193,10 +193,10 @@ class P extends Chunk473749.PureComponent {
   }
 }
 let S = Chunk442837.ZP.connectStores([Chunk594174.default, Chunk325067.Z], () => {
-  let t = Chunk594174.default.getCurrentUser();
-  return s()(null != module, "MFAEnableSuccess: currentUser cannot be undefined"), {
-    currentUser: module,
-    backupCodes: Chunk325067.Z.getBackupCodes(),
-    hasSeenBackupPrompt: Chunk325067.Z.hasSeenBackupPrompt
+  let t = m.default.getCurrentUser();
+  return s()(null != t, "MFAEnableSuccess: currentUser cannot be undefined"), {
+    currentUser: t,
+    backupCodes: f.Z.getBackupCodes(),
+    hasSeenBackupPrompt: f.Z.hasSeenBackupPrompt
   }
 })(P)

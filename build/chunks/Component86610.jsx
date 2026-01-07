@@ -83,14 +83,14 @@ class T {
     let {
       UnifiedCheckoutCustomHeader: e
     } = this.tenantCheckoutFlowConfig;
-    if (null != module) return (t, n, i) => (0, r.jsx)(e, {
+    if (null != e) return (t, n, i) => (0, r.jsx)(e, {
       plan: t,
       onClose: n,
       step: i
     })
   }
   getPredicateStepConfig() {
-    return this.checkoutFlow === Chunk733579.G.COLLECTIBLES_CHECKOUT ? Chunk961830.WA : this.checkoutFlow === Chunk733579.G.ORB_CHECKOUT ? {
+    return this.checkoutFlow === u.G.COLLECTIBLES_CHECKOUT ? l.WA : this.checkoutFlow === u.G.ORB_CHECKOUT ? {
       key: null,
       renderStep: e => (0, r.jsx)(m.I, {
         paymentModalStepProps: e,
@@ -138,15 +138,15 @@ class T {
     } : true
   }
   getReviewStepConfig() {
-    let e = this.getUnifiedStepDefinition(Chunk409813.h8.REVIEW);
-    return (0, Chunk508869._)(module) ? Chunk961830.wo : {
-      key: Chunk409813.h8.REVIEW,
+    let e = this.getUnifiedStepDefinition(o.h8.REVIEW);
+    return (0, d._)(e) ? l.wo : {
+      key: o.h8.REVIEW,
       renderStep: t => (0, r.jsx)(h.z, {
         paymentModalStepProps: t,
         unifiedStepDefinition: e
       }),
       options: {
-        useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
+        useBreadcrumbLabel: () => E.intl.string(E.t.QBnNHq)
       }
     }
   }

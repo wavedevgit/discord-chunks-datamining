@@ -12,16 +12,16 @@ var Chunk857595 = require("./857595.js"),
   Chunk388032 = require("./388032.jsx");
 let T = t => "".concat(t.toFixed(0), "px"),
   S = (0, Chunk509613.UO)(Chunk313789.n.APPEARANCE_MESSAGE_GROUP_SPACING, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Q6lKkg),
-    useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.p7eUrb),
+    useTitle: () => o.intl.string(o.t.Q6lKkg),
+    useSubtitle: () => o.intl.string(o.t.p7eUrb),
     markers: Chunk959517.fP,
     stickToMarkers: true,
     minValue: Chunk959517.fP["0"],
     maxValue: Chunk959517.fP[Chunk959517.fP.length - 1],
     getInitialValue: () => {
-      let t = Chunk607070.Z.messageGroupSpacing,
-        e = Chunk695346.jU.getSetting();
-      return null != module ? module : exports ? Chunk959517.c8 : Chunk959517.pq
+      let t = l.Z.messageGroupSpacing,
+        e = u.jU.getSetting();
+      return null != t ? t : e ? a.c8 : a.pq
     },
     onValueRender: T,
     onMarkerRender: T,

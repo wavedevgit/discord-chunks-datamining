@@ -335,12 +335,12 @@ function ee(e) {
 }
 
 function et() {
-  return (0, Chunk54381.jsx)(Chunk28664.u, {
-    text: Chunk388032.intl.string(Chunk388032.t.CfTySQ),
-    children: (0, Chunk54381.jsx)("div", {
-      className: Chunk279839.devShelfBadge,
-      children: (0, Chunk54381.jsx)(Chunk880448.Z, {
-        className: Chunk279839.devShelfIcon
+  return (0, r.jsx)(l.u, {
+    text: Z.intl.string(Z.t.CfTySQ),
+    children: (0, r.jsx)("div", {
+      className: F.devShelfBadge,
+      children: (0, r.jsx)(P.Z, {
+        className: F.devShelfIcon
       })
     })
   })

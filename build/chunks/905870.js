@@ -56,18 +56,18 @@ let y = 1048576,
   H = +Chunk70956.Z.Millis.MINUTE;
 
 function Y() {
-  return Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)()
+  return p.isPlatformEmbedded && (0, p.isWindows)()
 }
 class W extends Chunk147913.Z {
   _initialize() {}
   _terminate() {
-    Y() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, clearInterval(this._checkIntervalV8), this._checkIntervalV8 = null, Chunk848479.Z.disablePerfMemoryHooks(), Chunk848479.Z.disablePAMemoryProfiler(), Chunk848479.Z.disableProfilingV8Heap())
+    Y() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, clearInterval(this._checkIntervalV8), this._checkIntervalV8 = null, _.Z.disablePerfMemoryHooks(), _.Z.disablePAMemoryProfiler(), _.Z.disableProfilingV8Heap())
   }
   handlePostConnectionOpen() {
     var e, t;
     if (!Y()) return;
-    let n = null == (e = (t = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : module.call(exports);
-    "development" !== require && "canary" !== require && (this._supportedNativeChannel = false), clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = setInterval(async () => {
+    let n = null == (e = (t = o.Z.remoteApp).getReleaseChannel) ? true : e.call(t);
+    "development" !== n && "canary" !== n && (this._supportedNativeChannel = false), clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = setInterval(async () => {
       await this.trackNativeHeapPerformanceStats()
     }, O), this._supportedNativeChannel && (clearInterval(this._checkIntervalPA), this._checkIntervalPA = setInterval(async () => {
       await this.trackPartitionAllocPerformanceStats()
@@ -77,13 +77,13 @@ class W extends Chunk147913.Z {
   }
   async trackNativeHeapPerformanceStats() {
     var e, t;
-    let n = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
-    if (null == require) return;
-    let r = null != (t = null == (e = require.renderer) ? true : module.wss_priv_kb) ? exports : 0;
-    !this._nativeHeapHooksInstalled && this._supportedNativeChannel && Chunk268146 > v && Chunk848479.Z.enablePerfMemoryHooks({
+    let n = _.Z.getMemoryUsageElectronProcessTypeDetails();
+    if (null == n) return;
+    let r = null != (t = null == (e = n.renderer) ? true : e.wss_priv_kb) ? t : 0;
+    !this._nativeHeapHooksInstalled && this._supportedNativeChannel && r > v && _.Z.enablePerfMemoryHooks({
       allocationThresholdKB: T,
       enableCallStackTracking: C
-    }) && (this._nativeHeapHooksInstalled = true), this._nativeHeapHooksInstalled && await this.trackNativeHeapHookStats(Chunk268146), this.doRestartIfNeeded(Chunk268146)
+    }) && (this._nativeHeapHooksInstalled = true), this._nativeHeapHooksInstalled && await this.trackNativeHeapHookStats(r), this.doRestartIfNeeded(r)
   }
   async trackNativeHeapHookStats(e) {
     if (e < S) return;
@@ -171,92 +171,92 @@ class W extends Chunk147913.Z {
   }
   trackPartitionAllocPerformanceStats() {
     var e, t, n;
-    let r = Chunk848479.Z.getPartitionAllocatorStats();
-    if (null == Chunk268146) return;
-    let i = null != (e = Chunk268146.total_alloc_kb) ? module : 0;
-    if (!this._paHeapHooksInstalled && Chunk433517 > P) {
-      let e = Chunk848479.Z.enablePAMemoryProfiler({
+    let r = _.Z.getPartitionAllocatorStats();
+    if (null == r) return;
+    let i = null != (e = r.total_alloc_kb) ? e : 0;
+    if (!this._paHeapHooksInstalled && i > P) {
+      let e = _.Z.enablePAMemoryProfiler({
         allocationThresholdKB: D,
         enableCallStackTracking: x
       });
-      null != module && module && (this._paHeapHooksInstalled = true)
+      null != e && e && (this._paHeapHooksInstalled = true)
     }
     if (this._paHeapHooksInstalled) {
-      if (Chunk433517 < R) return;
-      let e = Chunk848479.Z.getPerfAttributedPAMemory();
-      if (null == module) return;
+      if (i < R) return;
+      let e = _.Z.getPerfAttributedPAMemory();
+      if (null == e) return;
       let r = [],
         a = [],
         o = [],
         s = [],
-        l = Object.entries(module);
-      for (let [e, i] of(Chunk517100.sort((e, t) => {
+        l = Object.entries(e);
+      for (let [e, i] of(l.sort((e, t) => {
           var n, r;
           let [, i] = e, [, a] = t;
           return (null != (n = null == a ? true : a.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
-        }), Chunk517100.slice(0, 10))) null != Chunk433517 && (Chunk268146.push(module), Chunk147913.push(null != (t = Chunk433517.total_allocation_kb) ? exports : 0), Chunk579806.push(null != (n = Chunk433517.allocation_count) ? require : 0), Chunk703558.push(""));
+        }), l.slice(0, 10))) null != i && (r.push(e), a.push(null != (t = i.total_allocation_kb) ? t : 0), o.push(null != (n = i.allocation_count) ? n : 0), s.push(""));
       let c = {
         memory_type: "part_alloc",
-        module_name: Chunk268146,
-        allocation_total_size_kb: Chunk147913,
-        allocation_count: Chunk579806,
-        module_version: Chunk703558,
+        module_name: r,
+        allocation_total_size_kb: a,
+        allocation_count: o,
+        module_version: s,
         events_dropped: true
       };
-      if (Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, Chunk131951), x) {
-        let e = Chunk517100.slice(0, 3).map(e => e[0]),
+      if (d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, c), x) {
+        let e = l.slice(0, 3).map(e => e[0]),
           t = 3;
-        for (let n of module.map(e => _.Z.getPerfAttributedPAMemoryCallstacks({
+        for (let n of e.map(e => _.Z.getPerfAttributedPAMemoryCallstacks({
             typeName: e
           })).filter(e => null != e).flatMap(e => e).sort((e, t) => {
             var n, r;
             return (null != (n = t.total_alloc_kb) ? n : 0) - (null != (r = e.total_alloc_kb) ? r : 0)
-          }).slice(0, exports).filter(e => {
+          }).slice(0, t).filter(e => {
             var t;
             return (null != (t = e.total_alloc_kb) ? t : 0) > w
           })) {
           let e = {
             memory_type: "part_alloc",
-            module_name: require.type_name,
-            callstack_allocation_total_size_kb: require.total_alloc_kb,
-            callstack_frame_module_names: require.frame_module_names,
-            callstack_frame_module_codeids: require.frame_module_codeids,
-            callstack_frame_relative_offsets: require.frame_rel_offsets,
+            module_name: n.type_name,
+            callstack_allocation_total_size_kb: n.total_alloc_kb,
+            callstack_frame_module_names: n.frame_module_names,
+            callstack_frame_module_codeids: n.frame_module_codeids,
+            callstack_frame_relative_offsets: n.frame_rel_offsets,
             events_dropped: true
           };
-          Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, module)
+          d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, e)
         }
       }
     }
   }
   trackV8HeapAlloc() {
     var e, t, n, r, i, a, o, s, l;
-    let c = Chunk848479.Z.getMemoryHeapStats();
-    if (null == Chunk131951) return;
-    let u = null != (e = Chunk131951.usedHeapSize) ? module : 0;
-    if (!this._v8ProfilerRunning && Chunk19780 >= j && (Chunk848479.Z.enableProfilingV8Heap({
+    let c = _.Z.getMemoryHeapStats();
+    if (null == c) return;
+    let u = null != (e = c.usedHeapSize) ? e : 0;
+    if (!this._v8ProfilerRunning && u >= j && (_.Z.enableProfilingV8Heap({
         allocationThresholdKB: k,
         sampleIntervalBytes: 65536,
         stackDepth: 64
       }), this._v8ProfilerRunning = true), this._v8ProfilerRunning) {
-      if (Chunk19780 < M) return;
-      let e = Chunk848479.Z.getProfilerV8MemoryCallstacks();
-      if (null != module) {
+      if (u < M) return;
+      let e = _.Z.getProfilerV8MemoryCallstacks();
+      if (null != e) {
         let c = 3,
-          u = module.map(e => {
+          u = e.map(e => {
             var t, n;
             return {
               callstack: e,
               totalSize: null != (n = null == (t = e.frame_alloc_size) ? true : t.reduce((e, t) => e + t, 0)) ? n : 0
             }
           });
-        for (let e of (Chunk19780.sort((e, t) => t.totalSize - e.totalSize), Chunk19780.slice(0, Chunk131951).map(e => e.callstack))) {
-          let c = null != (s = null == (t = module.frame_script_name) ? true : exports.length) ? Chunk703558 : 0;
-          if (null == Chunk131951 || Chunk131951 !== (null == (n = module.frame_name) ? true : require.length) || Chunk131951 !== (null == (r = module.frame_line) ? true : Chunk268146.length) || Chunk131951 !== (null == (i = module.frame_col) ? true : Chunk433517.length)) continue;
+        for (let e of (u.sort((e, t) => t.totalSize - e.totalSize), u.slice(0, c).map(e => e.callstack))) {
+          let c = null != (s = null == (t = e.frame_script_name) ? true : t.length) ? s : 0;
+          if (null == c || c !== (null == (n = e.frame_name) ? true : n.length) || c !== (null == (r = e.frame_line) ? true : r.length) || c !== (null == (i = e.frame_col) ? true : i.length)) continue;
           let u = {
             memory_type: "v8_heap",
-            callstack_allocation_total_size_kb: Math.floor((null != (l = null == (a = module.frame_alloc_size) ? true : Chunk147913.reduce((e, t) => e + t, 0)) ? Chunk517100 : 0) / 1024),
-            callstack_frame_module_names: null == (o = module.frame_script_name) ? true : Chunk579806.map((t, n) => {
+            callstack_allocation_total_size_kb: Math.floor((null != (l = null == (a = e.frame_alloc_size) ? true : a.reduce((e, t) => e + t, 0)) ? l : 0) / 1024),
+            callstack_frame_module_names: null == (o = e.frame_script_name) ? true : o.map((t, n) => {
               var r, i, a, o, s, l;
               let c = null != (o = null == (r = e.frame_name) ? true : r[n]) ? o : "",
                 u = null != (s = null == (i = e.frame_line) ? true : i[n]) ? s : 0,
@@ -264,7 +264,7 @@ class W extends Chunk147913.Z {
               return c.length > 0 ? "at ".concat(c, " (").concat(t, ":").concat(u, ":").concat(d, ")") : "at ".concat(t, ":").concat(u, ":").concat(d)
             })
           };
-          Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, Chunk19780)
+          d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, u)
         }
       }
     }

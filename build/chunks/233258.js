@@ -63,7 +63,7 @@ var Chunk220159 = require("./220159.js"),
     e && delete V[r], $(t, r, n), e && t !== V && $(V, r, e)
   },
   ts = Chunk181794 && Chunk779688(function() {
-    return 7 !== Chunk425184($({}, "a", {
+    return 7 !== g($({}, "a", {
       get: function() {
         return $(this, "a", {
           value: 7
@@ -122,9 +122,9 @@ var Chunk220159 = require("./220159.js"),
     }), e
   };
 !Chunk969493 && (Chunk342930(H = (K = function() {
-  if (Chunk658538(H, this)) throw new q("Symbol is not a constructor");
-  var t = arguments.length && true !== arguments[0] ? Chunk565130(arguments[0]) : true,
-    r = Chunk290619(module),
+  if (l(H, this)) throw new q("Symbol is not a constructor");
+  var t = arguments.length && true !== arguments[0] ? x(arguments[0]) : true,
+    r = D(t),
     n = function(t) {
       var e = true === this ? o : this;
       e === V && i(n, te, t), p(e, G) && p(e[G], r) && (e[G][r] = false);
@@ -136,10 +136,10 @@ var Chunk220159 = require("./220159.js"),
         tu(e, r, u)
       }
     };
-  return Chunk181794 && ti && ts(V, exports, {
+  return c && ti && ts(V, r, {
     configurable: true,
-    set: require
-  }), tc(exports, module)
+    set: n
+  }), tc(r, t)
 })[B], "toString", function() {
   return J(this).tag
 }), Chunk342930(K, "withoutSetter", function(t) {

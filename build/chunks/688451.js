@@ -398,20 +398,20 @@ var ee = new(function() {
         }) : [a, r, i]
       }, "boolean" == typeof(null == e ? true : e.useProxies) && this.setUseProxies(e.useProxies), "boolean" == typeof(null == e ? true : e.autoFreeze) && this.setAutoFreeze(e.autoFreeze)
     }
-    var t = module.prototype;
-    return exports.createDraft = function(e) {
+    var t = e.prototype;
+    return t.createDraft = function(e) {
       a(e) || r(8), i(e) && (e = M(e));
       var t = T(this),
         n = j(this, e, true);
       return n[W].C = true, I(t), n
-    }, exports.finishDraft = function(e, t) {
+    }, t.finishDraft = function(e, t) {
       var n = (e && e[W]).A;
       return v(n, t), A(true, n)
-    }, exports.setAutoFreeze = function(e) {
+    }, t.setAutoFreeze = function(e) {
       this.D = e
-    }, exports.setUseProxies = function(e) {
+    }, t.setUseProxies = function(e) {
       e && !V && r(20), this.O = e
-    }, exports.applyPatches = function(e, t) {
+    }, t.applyPatches = function(e, t) {
       for (n = t.length - 1; n >= 0; n--) {
         var n, r = t[n];
         if (0 === r.path.length && "replace" === r.op) {
@@ -424,7 +424,7 @@ var ee = new(function() {
       return i(e) ? a(e, t) : this.produce(e, function(e) {
         return a(e, t)
       })
-    }, module
+    }, e
   }()),
   et = ee.produce,
   en = (ee.produceWithPatches.bind(ee), ee.setAutoFreeze.bind(ee), ee.setUseProxies.bind(ee), ee.applyPatches.bind(ee), ee.createDraft.bind(ee)),

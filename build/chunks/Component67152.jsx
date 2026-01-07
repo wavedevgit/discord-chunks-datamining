@@ -89,29 +89,29 @@ let N = e => {
     })
   },
   P = () => {
-    let e = (0, Chunk54381.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.q3PkL5),
-      children: (0, Chunk54381.jsx)(Chunk481060.d3s, {
+    let e = (0, r.jsx)(d.u, {
+      text: C.intl.string(C.t.q3PkL5),
+      children: (0, r.jsx)(u.d3s, {
         size: "xs",
         color: "currentColor",
-        className: Chunk729124.amountDisclaimer
+        className: y.amountDisclaimer
       })
     });
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [Chunk388032.intl.string(Chunk388032.t["/MWnxs"]), " ", module]
+    return (0, r.jsxs)(r.Fragment, {
+      children: [C.intl.string(C.t["/MWnxs"]), " ", e]
     })
   },
   w = () => {
-    let e = (0, Chunk54381.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.cIGvZI),
-      children: (0, Chunk54381.jsx)(Chunk481060.d3s, {
+    let e = (0, r.jsx)(d.u, {
+      text: C.intl.string(C.t.cIGvZI),
+      children: (0, r.jsx)(u.d3s, {
         size: "xs",
         color: "currentColor",
-        className: Chunk729124.statusDisclaimer
+        className: y.statusDisclaimer
       })
     });
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [Chunk388032.intl.string(Chunk388032.t.oypxxw), " ", module]
+    return (0, r.jsxs)(r.Fragment, {
+      children: [C.intl.string(C.t.oypxxw), " ", e]
     })
   },
   Z = [{
@@ -138,7 +138,7 @@ let N = e => {
   }, {
     key: "period",
     cellClassName: Chunk729124.periodColumn,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.fThnXa),
+    renderHeader: () => C.intl.string(C.t.fThnXa),
     render(e, t) {
       let {
         expandedRows: n
@@ -154,7 +154,7 @@ let N = e => {
   }, {
     key: "amount",
     cellClassName: a()(Chunk729124.amountColumn, Chunk729124.cellAlignRight),
-    renderHeader: () => (0, Chunk54381.jsx)(P, {}),
+    renderHeader: () => (0, r.jsx)(P, {}),
     render(e, t) {
       let {
         expandedRows: n
@@ -173,7 +173,7 @@ let N = e => {
   }, {
     key: "status",
     cellClassName: a()(Chunk729124.statusColumn, Chunk729124.cellAlignRight),
-    renderHeader: () => (0, Chunk54381.jsx)(w, {}),
+    renderHeader: () => (0, r.jsx)(w, {}),
     render(e) {
       let {
         ppgStatus: t,

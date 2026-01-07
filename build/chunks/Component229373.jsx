@@ -12,20 +12,20 @@ let s = () => {
   let {
     searchText: e,
     updateSearchText: t
-  } = (0, Chunk135102.C$)(), n = Chunk473749.useRef(null);
-  return (0, Chunk473749.useEffect)(() => {
-    null !== require.current && "" === module && require.current.focus()
-  }, [module, require]), (0, Chunk54381.jsx)(Chunk481060.E1j, {
-    ref: require,
-    query: module,
+  } = (0, l.C$)(), n = a.useRef(null);
+  return (0, a.useEffect)(() => {
+    null !== n.current && "" === e && n.current.focus()
+  }, [e, n]), (0, r.jsx)(o.E1j, {
+    ref: n,
+    query: e,
     onChange: e => {
       t(e)
     },
     onClear: () => {
-      exports("")
+      t("")
     },
-    placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
+    placeholder: c.intl.string(c.t["5h0QOP"]),
+    "aria-label": c.intl.string(c.t["5h0QOP"]),
     autoFocus: true
   })
 }

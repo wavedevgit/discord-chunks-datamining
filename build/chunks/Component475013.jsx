@@ -33,18 +33,18 @@ function N(e) {
 let E = () => {
   let {
     guild: e
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), t = (0, Chunk442837.e7)([Chunk103576.Z], () => Chunk103576.Z.formState), n = (0, Chunk442837.e7)([Chunk103576.Z], () => Chunk103576.Z.errorMessage);
-  return (0, Chunk54381.jsx)(Chunk796027.Z, {
-    errorMessage: require,
+  } = (0, s.cj)([b.Z], () => b.Z.getProps()), t = (0, s.e7)([h.Z], () => h.Z.formState), n = (0, s.e7)([h.Z], () => h.Z.errorMessage);
+  return (0, r.jsx)(o.Z, {
+    errorMessage: n,
     onSave: () => {
-      if (null == module) return;
+      if (null == e) return;
       let {
         id: t
-      } = module, n = Chunk103576.Z.editedRoleIds.map(e => h.Z.getRole(e)).filter(Chunk823379.lm), r = Chunk103576.Z.getSortDeltas(), i = null, l = null;
-      Chunk103576.Z.hasRoleConfigurationChanges && (l = Chunk103576.Z.editedRoleIdsForConfigurations, i = Chunk103576.Z.getEditedRoleConnectionConfigurationsMap()), (0, Chunk84058.Gf)(exports, require, Chunk54381, Chunk512722, Chunk473749)
+      } = e, n = h.Z.editedRoleIds.map(e => h.Z.getRole(e)).filter(f.lm), r = h.Z.getSortDeltas(), i = null, l = null;
+      h.Z.hasRoleConfigurationChanges && (l = h.Z.editedRoleIdsForConfigurations, i = h.Z.getEditedRoleConnectionConfigurationsMap()), (0, p.Gf)(t, n, r, l, i)
     },
-    submitting: exports === Chunk981631.QZA.SUBMITTING,
-    onReset: Chunk84058.S1
+    submitting: t === y.QZA.SUBMITTING,
+    onReset: p.S1
   })
 };
 

@@ -20,40 +20,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk883381 = require("./883381.js");
 let E = () => {
-    let e = (0, Chunk631885.ZM)(),
-      t = (0, Chunk780985.cz)(),
+    let e = (0, f.ZM)(),
+      t = (0, d.cz)(),
       {
         selectTeenUser: n
-      } = (0, Chunk985002.G)({}),
+      } = (0, c.G)({}),
       a = e => {
         n(e)
       },
-      u = module.map(e => ({
+      u = e.map(e => ({
         label: e,
         value: e
       })),
-      _ = Chunk473749.useCallback(e => (0, r.jsx)(p.I, {
+      _ = i.useCallback(e => (0, r.jsx)(p.I, {
         userId: e.value,
         avatarSize: l.EFr.SIZE_24,
         hideUserTag: true
       }), []);
-    return 0 === module.length ? null : (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk883381.teenSelector, {
-        [Chunk883381.grow]: module.length > 1
+    return 0 === e.length ? null : (0, r.jsx)("div", {
+      className: o()(g.teenSelector, {
+        [g.grow]: e.length > 1
       }),
-      children: module.length > 1 ? (0, Chunk54381.jsx)(Chunk199849.B6, {
-        renderOptionLabel: Chunk292352,
+      children: e.length > 1 ? (0, r.jsx)(s.B6, {
+        renderOptionLabel: _,
         renderOptionValue: e => {
           let [t] = e;
           return _(t)
         },
         serialize: e => e,
-        select: Chunk120356,
+        select: a,
         isSelected: e => e === (null == t ? true : t.id),
-        options: Chunk841409
-      }) : (0, Chunk54381.jsx)(Chunk87792.I, {
-        userId: module[0],
-        avatarSize: Chunk481060.EFr.SIZE_24,
+        options: u
+      }) : (0, r.jsx)(p.I, {
+        userId: e[0],
+        avatarSize: l.EFr.SIZE_24,
         hideUserTag: true
       })
     })
@@ -62,40 +62,40 @@ let E = () => {
     let {
       selectedTab: e,
       handleTabChange: t
-    } = (0, Chunk841409.Z)(), n = Chunk473749.useCallback(() => {
-      exports(Chunk292352.dG.ACTIVITY)
-    }, [exports]);
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    } = (0, u.Z)(), n = i.useCallback(() => {
+      t(_.dG.ACTIVITY)
+    }, [t]);
+    return (0, r.jsxs)(l.Kqy, {
       gap: 32,
-      children: [(0, Chunk54381.jsxs)(Chunk481060.P3F, {
-        className: Chunk883381.backButton,
-        onClick: require,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.ybUZql),
-        children: [(0, Chunk54381.jsx)(Chunk481060.j9r, {
+      children: [(0, r.jsxs)(l.P3F, {
+        className: g.backButton,
+        onClick: n,
+        "aria-label": h.intl.string(h.t.ybUZql),
+        children: [(0, r.jsx)(l.j9r, {
           size: "sm",
-          color: Chunk481060.TVs.colors.INTERACTIVE_TEXT_DEFAULT
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          color: l.TVs.colors.INTERACTIVE_TEXT_DEFAULT
+        }), (0, r.jsx)(l.Text, {
           variant: "eyebrow",
           color: "text-default",
-          children: Chunk388032.intl.string(Chunk388032.t["13/7kX"])
+          children: h.intl.string(h.t["13/7kX"])
         })]
-      }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      }), (0, r.jsxs)(l.Kqy, {
         direction: "horizontal",
         align: "center",
         justify: "space-between",
-        children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+        children: [(0, r.jsxs)(l.Kqy, {
           gap: 4,
-          className: Chunk883381.titleContainer,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+          className: g.titleContainer,
+          children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: Chunk388032.intl.string(Chunk517319.default.RZqaJn)
-          }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+            children: h.intl.string(m.default.RZqaJn)
+          }), (0, r.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             color: "text-strong",
-            children: Chunk388032.intl.string(module === Chunk292352.dG.CONTENT_AND_SOCIAL ? Chunk388032.t["+o1pDZ"] : Chunk388032.t.OAuOHD)
+            children: h.intl.string(e === _.dG.CONTENT_AND_SOCIAL ? h.t["+o1pDZ"] : h.t.OAuOHD)
           })]
-        }), (0, Chunk54381.jsx)(E, {})]
+        }), (0, r.jsx)(E, {})]
       })]
     })
   }

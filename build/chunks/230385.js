@@ -165,7 +165,7 @@ class S extends Chunk147913.Z {
     })
   }
   handleVoiceFilterDownloadCanceled() {
-    Chunk998502.ZP.stopVoiceFilterDownloads()
+    c.ZP.stopVoiceFilterDownloads()
   }
   constructor(...e) {
     super(...e), h(this, "actions", {

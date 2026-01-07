@@ -27,21 +27,21 @@ var Chunk54381 = require("./54381.js"),
 let y = (0, Chunk313201.hQ)();
 
 function O() {
-  let [e, t] = Chunk473749.useState(false), [n, r] = Chunk473749.useState(false);
+  let [e, t] = i.useState(false), [n, r] = i.useState(false);
 
   function a(e, n) {
     t(e), r((n & m.Dg.VOICE) === m.Dg.VOICE)
   }
-  return Chunk473749.useEffect(() => {
-    let e = new Chunk846519.V7;
-    return module.start(1e3, () => {
-      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, Chunk120356), module.stop()
+  return i.useEffect(() => {
+    let e = new c.V7;
+    return e.start(1e3, () => {
+      _.Z.getMediaEngine().on(l.aB.VoiceActivity, a), e.stop()
     }), () => {
-      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, Chunk120356), module.stop()
+      _.Z.getMediaEngine().removeListener(l.aB.VoiceActivity, a), e.stop()
     }
   }, []), {
-    volume: module,
-    isSpeaking: require
+    volume: e,
+    isSpeaking: n
   }
 }
 
@@ -121,19 +121,19 @@ function I() {
   let {
     threshold: e,
     autoThreshold: t
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-    threshold: Chunk131951.Z.getModeOptions().threshold,
-    autoThreshold: Chunk131951.Z.getModeOptions().autoThreshold
+  } = (0, s.cj)([_.Z], () => ({
+    threshold: _.Z.getModeOptions().threshold,
+    autoThreshold: _.Z.getModeOptions().autoThreshold
   })), {
     inputMode: n,
     automaticVADSupported: i
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-    inputMode: Chunk131951.Z.getMode(),
-    automaticVADSupported: Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_VAD)
+  } = (0, s.cj)([_.Z], () => ({
+    inputMode: _.Z.getMode(),
+    automaticVADSupported: _.Z.supports(m.AN.AUTOMATIC_VAD)
   })), {
     volume: a,
     isSpeaking: o
-  } = O(), l = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isEnabled());
+  } = O(), l = (0, s.e7)([_.Z], () => _.Z.isEnabled());
 
   function c(e, t) {
     f.Z.setMode(n, {
@@ -141,29 +141,29 @@ function I() {
       autoThreshold: t
     })
   }
-  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-    label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
-    className: Chunk948913.sensitivity,
-    children: [Chunk473749 && (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
-      checked: exports,
+  return (0, r.jsxs)(d.C3N, {
+    label: h.intl.string(h.t["sqUm+k"]),
+    className: g.sensitivity,
+    children: [i && (0, r.jsx)(d.rsf, {
+      label: h.intl.string(h.t.I1Zuq0),
+      checked: t,
       onChange: t => c(e, t)
-    }), exports ? (0, Chunk54381.jsxs)("section", {
-      className: Chunk948913.inputSensitivityToggle,
-      children: [(0, Chunk54381.jsx)(v, {
+    }), t ? (0, r.jsxs)("section", {
+      className: g.inputSensitivityToggle,
+      children: [(0, r.jsx)(v, {
         isSpeaking: o
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)(d.Text, {
         variant: "text-md/normal",
-        className: Chunk478411.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.W3K5Im)
+        className: b.marginBottom8,
+        children: h.intl.string(h.t.W3K5Im)
       })]
-    }) : (0, Chunk54381.jsx)(S, {
-      volume: Chunk120356
-    }), !Chunk46973 && (0, Chunk54381.jsx)(Chunk481060.Wn, {
-      messageType: Chunk481060.QYI.WARNING,
-      className: Chunk478411.marginBottom8,
-      children: Chunk388032.intl.format(Chunk388032.t["O13I+O"], {
-        onEnableClick: () => Chunk846027.Z.enable(true)
+    }) : (0, r.jsx)(S, {
+      volume: a
+    }), !l && (0, r.jsx)(d.Wn, {
+      messageType: d.QYI.WARNING,
+      className: b.marginBottom8,
+      children: h.intl.format(h.t["O13I+O"], {
+        onEnableClick: () => f.Z.enable(true)
       })
     })]
   })

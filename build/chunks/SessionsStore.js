@@ -28,24 +28,24 @@ function f(e) {
 }
 class p extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default)
+    this.waitFor(l.default)
   }
   getSessions() {
     return d
   }
   getSession() {
-    let e = Chunk314897.default.getSessionId();
-    return null != module ? this.getSessionById(module) : null
+    let e = l.default.getSessionId();
+    return null != e ? this.getSessionById(e) : null
   }
   getRemoteActivities() {
-    let e = Chunk314897.default.getSessionId(),
+    let e = l.default.getSessionId(),
       t = a().find(d, t => t.active && t.sessionId !== e);
-    return null != exports ? exports.activities : u
+    return null != t ? t.activities : u
   }
   getHiddenActivities() {
-    let e = Chunk314897.default.getSessionId(),
+    let e = l.default.getSessionId(),
       t = a().find(d, t => t.active && t.sessionId !== e);
-    return null != exports && null != exports.hiddenActivities ? exports.hiddenActivities : u
+    return null != t && null != t.hiddenActivities ? t.hiddenActivities : u
   }
   getSessionById(e) {
     return d[e]

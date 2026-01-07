@@ -70,7 +70,7 @@ let S = new Chunk710845.Z("PaymentRequest"),
   });
 class T extends Chunk473749.Component {
   componentDidMount() {
-    (0, Chunk358085.isDesktop)() || (this.disableWallets = I.filter(e => e !== this.paymentRequestWallet).sort(), (0, Chunk622999.d2)().then(e => {
+    (0, p.isDesktop)() || (this.disableWallets = I.filter(e => e !== this.paymentRequestWallet).sort(), (0, _.d2)().then(e => {
       this.initPaymentRequest(e)
     }))
   }
@@ -83,18 +83,18 @@ class T extends Chunk473749.Component {
       paymentRequest: e,
       canMakePaymentResult: t
     } = this.state;
-    if (null == module) {
+    if (null == e) {
       let e = "Payment request is not ready";
-      return this.logInfo(module), {
+      return this.logInfo(e), {
         available: false,
-        errorMessage: module
+        errorMessage: e
       }
     }
-    if (null == exports) {
+    if (null == t) {
       let e = "Payment request is unavailable or has not been set up in this browser. ";
-      return this.logInfo(module, "Stripe canMakePaymentResult: ", exports), {
+      return this.logInfo(e, "Stripe canMakePaymentResult: ", t), {
         available: false,
-        errorMessage: module
+        errorMessage: e
       }
     }
     return {
@@ -127,7 +127,7 @@ class T extends Chunk473749.Component {
     f.default.track(e, i)
   }
   onValidPaymentRequest() {
-    this.trackAnalyticsEvent(Chunk981631.rMx.PAYMENT_REQUEST_LOADED), true !== this.props.onValidPaymentRequest && this.props.onValidPaymentRequest()
+    this.trackAnalyticsEvent(h.rMx.PAYMENT_REQUEST_LOADED), true !== this.props.onValidPaymentRequest && this.props.onValidPaymentRequest()
   }
   renderButton(e) {
     var {
@@ -149,33 +149,33 @@ class T extends Chunk473749.Component {
     }, i), h.HeQ.PAYMENT_REQUEST)
   }
   renderConnectorView() {
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, r.jsxs)("div", {
       className: this.props.className,
-      children: [(0, Chunk54381.jsx)(Chunk219929.ZP, {
-        type: Chunk219929.ZP.Types.PAYMENT_REQUEST,
-        size: Chunk219929.Uy.MEDIUM,
-        className: Chunk930858.paymentRequestIcon
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: [(0, r.jsx)(u.ZP, {
+        type: u.ZP.Types.PAYMENT_REQUEST,
+        size: u.Uy.MEDIUM,
+        className: E.paymentRequestIcon
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
-        className: Chunk930858.connectionInstructions,
-        children: Chunk388032.intl.string(Chunk388032.t.f19PPV)
+        className: E.connectionInstructions,
+        children: g.intl.string(g.t.f19PPV)
       })]
     })
   }
   renderMain() {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
-      iconType: Chunk219929.ZP.Types.PAYMENT_REQUEST,
-      buttonText: Chunk388032.intl.string(Chunk388032.t.f19PPV),
-      loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
+      iconType: u.ZP.Types.PAYMENT_REQUEST,
+      buttonText: g.intl.string(g.t.f19PPV),
+      loading: !(0, p.isDesktop)() && this.state.submitting
     })
   }
   render() {
-    if ((0, Chunk358085.isDesktop)()) return this.renderMain();
+    if ((0, p.isDesktop)()) return this.renderMain();
     if (this.state.submitting) return this.props.loadingComponent;
     let {
       available: e
     } = this.validatePaymentRequest();
-    return module ? this.renderMain() : null
+    return e ? this.renderMain() : null
   }
   constructor(...e) {
     super(...e), b(this, "initialState", {
@@ -241,18 +241,18 @@ class C extends T {
       paymentRequest: e,
       canMakePaymentResult: t
     } = this.state;
-    if (null == module) {
+    if (null == e) {
       let e = "Payment request is not ready";
-      return this.logInfo(module), {
+      return this.logInfo(e), {
         available: false,
-        errorMessage: module
+        errorMessage: e
       }
     }
-    if (null == exports || !exports.googlePay) {
+    if (null == t || !t.googlePay) {
       let e = "Google Pay is unavailable or has not been set up in this browser. ";
-      return this.logInfo(module, "Stripe canMakePaymentResult: ", exports), {
+      return this.logInfo(e, "Stripe canMakePaymentResult: ", t), {
         available: false,
-        errorMessage: module
+        errorMessage: e
       }
     }
     return {
@@ -261,24 +261,24 @@ class C extends T {
     }
   }
   renderConnectorView() {
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, r.jsxs)("div", {
       className: this.props.className,
-      children: [(0, Chunk54381.jsx)(Chunk219929.ZP, {
-        type: Chunk219929.ZP.Types.G_PAY,
-        size: Chunk219929.Uy.MEDIUM,
-        className: Chunk930858.paymentRequestIcon
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: [(0, r.jsx)(u.ZP, {
+        type: u.ZP.Types.G_PAY,
+        size: u.Uy.MEDIUM,
+        className: E.paymentRequestIcon
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
-        className: Chunk930858.connectionInstructions,
-        children: Chunk388032.intl.string(Chunk388032.t.ueoGef)
+        className: E.connectionInstructions,
+        children: g.intl.string(g.t.ueoGef)
       })]
     })
   }
   renderMain() {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
-      iconType: Chunk219929.ZP.Types.G_PAY,
-      buttonText: Chunk388032.intl.string(Chunk388032.t.p2jr2E),
-      loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
+      iconType: u.ZP.Types.G_PAY,
+      buttonText: g.intl.string(g.t.p2jr2E),
+      loading: !(0, p.isDesktop)() && this.state.submitting
     })
   }
   constructor(...e) {
@@ -291,18 +291,18 @@ class A extends T {
       paymentRequest: e,
       canMakePaymentResult: t
     } = this.state;
-    if (null == module) {
+    if (null == e) {
       let e = "Payment request is not ready";
-      return this.logInfo(module), {
+      return this.logInfo(e), {
         available: false,
-        errorMessage: module
+        errorMessage: e
       }
     }
-    if (null == exports || !exports.applePay) {
+    if (null == t || !t.applePay) {
       let e = "Apple Pay is unavailable or has not been set up in this browser. ";
-      return this.logInfo(module, "Stripe canMakePaymentResult: ", exports), {
+      return this.logInfo(e, "Stripe canMakePaymentResult: ", t), {
         available: false,
-        errorMessage: module
+        errorMessage: e
       }
     }
     return {
@@ -311,24 +311,24 @@ class A extends T {
     }
   }
   renderConnectorView() {
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, r.jsxs)("div", {
       className: this.props.className,
-      children: [(0, Chunk54381.jsx)(Chunk219929.ZP, {
-        type: Chunk219929.ZP.Types.APPLE,
-        size: Chunk219929.Uy.MEDIUM,
-        className: o()(Chunk930858.paymentRequestIcon, Chunk930858.appleConnectorIcon)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: [(0, r.jsx)(u.ZP, {
+        type: u.ZP.Types.APPLE,
+        size: u.Uy.MEDIUM,
+        className: o()(E.paymentRequestIcon, E.appleConnectorIcon)
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
-        className: Chunk930858.connectionInstructions,
-        children: Chunk388032.intl.string(Chunk388032.t.iv8pQV)
+        className: E.connectionInstructions,
+        children: g.intl.string(g.t.iv8pQV)
       })]
     })
   }
   renderMain() {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
-      iconType: Chunk219929.ZP.Types.APPLE_LIGHT,
-      buttonText: Chunk388032.intl.string(Chunk388032.t.xdGS1o),
-      loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
+      iconType: u.ZP.Types.APPLE_LIGHT,
+      buttonText: g.intl.string(g.t.xdGS1o),
+      loading: !(0, p.isDesktop)() && this.state.submitting
     })
   }
   constructor(...e) {

@@ -57,10 +57,10 @@ let A = {
 };
 
 function N() {
-  (0, Chunk952265.openModalLazy)(async () => {
+  (0, a.openModalLazy)(async () => {
     let {
       default: e
-    } = await require.e("87549").then(require.bind(require, 913962));
+    } = await n.e("87549").then(n.bind(n, 913962));
     return t => (0, r.jsx)(e, C({}, t))
   })
 }

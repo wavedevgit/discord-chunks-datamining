@@ -112,18 +112,18 @@ function Q(e, t, n) {
 
 function X() {
   var e, t, n, o, s, l = Array(S + 1);
-  for (o = 0, n = 0; Chunk754793 < g - 1; Chunk754793++)
-    for (e = 0, G[Chunk754793] = require; module < 1 << R[Chunk754793]; module++) U[require++] = Chunk754793;
-  for (U[require - 1] = Chunk754793, s = 0, o = 0; Chunk754793 < 16; Chunk754793++)
-    for (e = 0, Z[Chunk754793] = s; module < 1 << w[Chunk754793]; module++) k[s++] = Chunk754793;
-  for (s >>= 7; Chunk754793 < y; Chunk754793++)
-    for (e = 0, Z[Chunk754793] = s << 7; module < 1 << w[Chunk754793] - 7; module++) k[256 + s++] = Chunk754793;
-  for (t = 0; exports <= S; exports++) l[exports] = 0;
-  for (e = 0; module <= 143;) j[2 * module + 1] = 8, module++, l[8]++;
-  for (; module <= 255;) j[2 * module + 1] = 9, module++, l[9]++;
-  for (; module <= 279;) j[2 * module + 1] = 7, module++, l[7]++;
-  for (; module <= 287;) j[2 * module + 1] = 8, module++, l[8]++;
-  for (Q(j, b + 1, l), e = 0; module < y; module++) M[2 * module + 1] = 5, M[2 * module] = K(module, 5);
+  for (o = 0, n = 0; o < g - 1; o++)
+    for (e = 0, G[o] = n; e < 1 << R[o]; e++) U[n++] = o;
+  for (U[n - 1] = o, s = 0, o = 0; o < 16; o++)
+    for (e = 0, Z[o] = s; e < 1 << w[o]; e++) k[s++] = o;
+  for (s >>= 7; o < y; o++)
+    for (e = 0, Z[o] = s << 7; e < 1 << w[o] - 7; e++) k[256 + s++] = o;
+  for (t = 0; t <= S; t++) l[t] = 0;
+  for (e = 0; e <= 143;) j[2 * e + 1] = 8, e++, l[8]++;
+  for (; e <= 255;) j[2 * e + 1] = 9, e++, l[9]++;
+  for (; e <= 279;) j[2 * e + 1] = 7, e++, l[7]++;
+  for (; e <= 287;) j[2 * e + 1] = 8, e++, l[8]++;
+  for (Q(j, b + 1, l), e = 0; e < y; e++) M[2 * e + 1] = 5, M[2 * e] = K(e, 5);
   r = new F(j, R, E + 1, b, S), i = new F(M, w, 0, y, S), a = new F([], D, 0, O, T)
 }
 

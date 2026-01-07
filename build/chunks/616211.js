@@ -9,10 +9,10 @@ var Chunk921157 = require("./921157.js"),
   Chunk266132 = require("./266132.jsx"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.ON)(Chunk313789.n.USERS_VERIFIED_KEYS_LIST_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["5b3FNI"])],
+  useSearchTerms: () => [r.intl.string(r.t["5b3FNI"])],
   usePredicate: function() {
-    let t = (0, Chunk921157.s)();
-    return null != module && module.length > 0
+    let t = (0, i.s)();
+    return null != t && t.length > 0
   },
   Component: Chunk266132.Z
 })

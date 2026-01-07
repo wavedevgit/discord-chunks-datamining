@@ -18,12 +18,12 @@ function o(e, t, n) {
 }
 class s extends Chunk147913.Z {
   handleFocusParticipant() {
-    let e = Chunk19780.Z.getChannelId();
-    if (null != module) {
+    let e = i.Z.getChannelId();
+    if (null != e) {
       var t, n;
-      let r = Chunk358221.Z.getSelectedParticipantId(module),
-        o = Chunk358221.Z.getVideoParticipants(module);
-      null == (n = Chunk19780.Z.getRTCConnection()) || require.setSelectedParticipant(null == (t = o.find(e => e.id === r && !e.localVideoDisabled)) ? true : exports.id)
+      let r = a.Z.getSelectedParticipantId(e),
+        o = a.Z.getVideoParticipants(e);
+      null == (n = i.Z.getRTCConnection()) || n.setSelectedParticipant(null == (t = o.find(e => e.id === r && !e.localVideoDisabled)) ? true : t.id)
     }
   }
   constructor(...e) {

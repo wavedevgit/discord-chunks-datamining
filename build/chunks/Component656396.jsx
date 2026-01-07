@@ -160,12 +160,12 @@ function E(e) {
 }
 
 function Z() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk560911.spinnerWrapper,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      type: Chunk481060.$jN.Type.SPINNING_CIRCLE,
-      className: Chunk560911.spinner,
-      itemClassName: Chunk560911.spinnerPath
+  return (0, r.jsx)("div", {
+    className: C.spinnerWrapper,
+    children: (0, r.jsx)(d.$jN, {
+      type: d.$jN.Type.SPINNING_CIRCLE,
+      className: C.spinner,
+      itemClassName: C.spinnerPath
     })
   })
 }
@@ -195,12 +195,12 @@ function P(e) {
 }
 
 function T() {
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(d.Text, {
       variant: "text-md/medium",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t.uixzLf)
-    }), (0, Chunk54381.jsx)(Z, {})]
+      children: v.intl.string(v.t.uixzLf)
+    }), (0, r.jsx)(Z, {})]
   })
 }
 

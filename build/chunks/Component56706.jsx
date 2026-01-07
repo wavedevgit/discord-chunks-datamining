@@ -15,71 +15,71 @@ var Chunk54381 = require("./54381.js"),
   Chunk533477 = require("./533477.js");
 
 function p() {
-  let [e, t] = Chunk473749.useState(30), n = Chunk473749.useCallback(() => {
-    Chunk570140.Z.dispatch({
+  let [e, t] = r.useState(30), n = r.useCallback(() => {
+    l.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
-      state: Chunk750180.O.LOADING
+      state: s.O.LOADING
     })
   }, []);
-  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk663618.panel,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk533477.panelInner,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk533477.panelHeader,
+  return (0, a.jsx)(i.zJl, {
+    className: u.panel,
+    children: (0, a.jsxs)("div", {
+      className: m.panelInner,
+      children: [(0, a.jsx)(i.Text, {
+        className: m.panelHeader,
         variant: "text-lg/bold",
         children: "Voice Filters"
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk533477.panelRow,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, a.jsxs)("div", {
+        className: m.panelRow,
+        children: [(0, a.jsx)(i.Text, {
           variant: "text-md/normal",
           children: "Set number of seconds remaining in countdown"
-        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
+        }), (0, a.jsx)(i.oil, {
           defaultValue: 30,
           onChange: e => {
             t(parseInt(e))
           }
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)(i.Button, {
           variant: "primary",
           size: "sm",
           text: "Set",
-          onClick: () => void Chunk570140.Z.dispatch({
+          onClick: () => void l.Z.dispatch({
             type: "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME",
-            timeInSeconds: module
+            timeInSeconds: e
           })
         })]
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk533477.panelRow,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, a.jsxs)("div", {
+        className: m.panelRow,
+        children: [(0, a.jsx)(i.Text, {
           variant: "text-md/normal",
           children: "Reset to API values"
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)(i.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset",
           onClick: () => {
-            (0, Chunk358820.wV)()
+            (0, o.wV)()
           }
         })]
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk533477.panelRow,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, a.jsxs)("div", {
+        className: m.panelRow,
+        children: [(0, a.jsx)(i.Text, {
           variant: "text-md/normal",
           children: "Pretend the native module is loading so when you close your app it'll look as if it crashed on load"
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)(i.Button, {
           variant: "primary",
           size: "sm",
           text: "Pretend",
-          onClick: require
+          onClick: n
         })]
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk533477.panelRow,
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)("div", {
+        className: m.panelRow,
+        children: (0, a.jsx)(i.Button, {
           variant: "primary",
           size: "sm",
           text: "Open voice filters panel",
           onClick: () => {
-            Chunk585483.S.dispatch(Chunk981631.CkL.OPEN_VOICE_FILTER_POPOUT)
+            c.S.dispatch(d.CkL.OPEN_VOICE_FILTER_POPOUT)
           }
         })
       })]

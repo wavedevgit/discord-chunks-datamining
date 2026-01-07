@@ -10,10 +10,10 @@ var Chunk399606 = require("./399606.js"),
   Chunk981631 = require("./981631.js");
 
 function s() {
-  let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().mfaLevel);
+  let e = (0, r.e7)([l.default], () => l.default.getCurrentUser()),
+    t = (0, r.e7)([i.Z], () => i.Z.getProps().mfaLevel);
   return {
-    isUserMFAEnabled: (null == module ? true : module.mfaEnabled) === true,
-    isModerationMFAEnabled: exports === Chunk981631.BpS.ELEVATED
+    isUserMFAEnabled: (null == e ? true : e.mfaEnabled) === true,
+    isModerationMFAEnabled: t === a.BpS.ELEVATED
   }
 }

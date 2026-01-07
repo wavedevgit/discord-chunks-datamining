@@ -20,17 +20,17 @@ function f() {
     vanityURLCode: e,
     hasChanges: t,
     errorDetails: n
-  } = (0, Chunk442837.cj)([Chunk566084.Z], () => ({
-    vanityURLCode: Chunk566084.Z.vanityURLCode,
-    hasChanges: Chunk566084.Z.hasChanges(),
-    errorDetails: Chunk566084.Z.errorDetails
+  } = (0, l.cj)([d.Z], () => ({
+    vanityURLCode: d.Z.vanityURLCode,
+    hasChanges: d.Z.hasChanges(),
+    errorDetails: d.Z.errorDetails
   })), {
     guild: f,
     submitting: m,
     errors: b,
     hasChanges: p
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), h = Chunk473749.useMemo(() => null != require ? (0, Chunk196961.i)(null == require ? true : require.code) : (0, Chunk203377.LG)(b), [b, require]), x = Chunk473749.useCallback(async () => {
-    if (null != f && (exports && await (0, Chunk736617.en)(f.id, module, {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), h = i.useMemo(() => null != n ? (0, u.i)(null == n ? true : n.code) : (0, g.LG)(b), [b, n]), x = i.useCallback(async () => {
+    if (null != f && (t && await (0, c.en)(f.id, e, {
         throwErr: true
       }), p)) {
       let e = {
@@ -38,14 +38,14 @@ function f() {
         banner: f.banner,
         splash: f.splash
       };
-      await Chunk434404.Z.saveGuild(f.id, module, {
+      await s.Z.saveGuild(f.id, e, {
         throwErr: true
       })
     }
-  }, [f, p, exports, module]), j = Chunk473749.useCallback(() => {
-    null != f && (Chunk434404.Z.init(f.id), (0, Chunk736617.H7)())
+  }, [f, p, t, e]), j = i.useCallback(() => {
+    null != f && (s.Z.init(f.id), (0, c.H7)())
   }, [f]);
-  return (0, Chunk54381.jsx)(Chunk796027.Z, {
+  return (0, r.jsx)(a.Z, {
     submitting: m,
     errorMessage: h,
     onSave: x,

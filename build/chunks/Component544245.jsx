@@ -34,7 +34,7 @@ function p() {
     h = m.useField("isUploading"),
     x = m.useField("isSuccess"),
     b = m.useField("errorMessage"),
-    g = Chunk473749.useCallback(async () => {
+    g = r.useCallback(async () => {
       let {
         includeFrecency: e,
         includeFriends: t,
@@ -44,19 +44,19 @@ function p() {
         includeUserSearchWorkerState: i,
         isUploading: s
       } = m.getState();
-      if (!Chunk972959) try {
+      if (!s) try {
         m.setState({
           isUploading: true,
           errorMessage: null,
           isSuccess: false
-        }), exports && (0, Chunk620481.lG)(), require && (0, Chunk620481.mo)(), Chunk54381 && (0, Chunk620481.FB)(), module && (0, Chunk620481.Sr)(), Chunk473749 && (0, Chunk620481.OC)(), Chunk481060 && (0, Chunk620481.Jt)(), await (0, Chunk729345.E)(Chunk981631.GU0.WEB_APP), m.setState({
+        }), t && (0, c.lG)(), n && (0, c.mo)(), a && (0, c.FB)(), e && (0, c.Sr)(), r && (0, c.OC)(), i && (0, c.Jt)(), await (0, o.E)(u.GU0.WEB_APP), m.setState({
           isSuccess: true,
           errorMessage: null
         })
       } catch (t) {
-        let e = new Chunk881052.Hx(exports);
+        let e = new l.Hx(t);
         m.setState({
-          errorMessage: module.getAnyErrorMessage()
+          errorMessage: e.getAnyErrorMessage()
         })
       } finally {
         m.setState({
@@ -64,52 +64,52 @@ function p() {
         })
       }
     }, []);
-  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+  return (0, a.jsxs)(i.C3N, {
     label: "Debug Logs Snapshot",
     description: "Uploading a snapshot of the client state can help us figure out what exactly is wrong with your search. You can opt out of uploading certain logs, but it may make it more difficult to debug your issue.",
-    children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
+    children: [(0, a.jsx)(i.rsf, {
       label: "Frecency",
       description: "Frecency is a measure of how often you visit a guild or channel. Includes frecency scores for guilds and channels along with the guild or channel IDs.",
-      checked: module,
+      checked: e,
       onChange: () => m.setState({
-        includeFrecency: !module
+        includeFrecency: !e
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+    }), (0, a.jsx)(i.rsf, {
       label: "Friends",
       description: "Includes all Discord Friend usernames, global names, and nicknames.",
-      checked: exports,
+      checked: t,
       onChange: () => m.setState({
-        includeFriends: !exports
+        includeFriends: !t
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+    }), (0, a.jsx)(i.rsf, {
       label: "DMs",
       description: "Includes recipient user ids, usernames, global names, nicknames for all DMs. Does NOT include any message data.",
-      checked: require,
+      checked: n,
       onChange: () => m.setState({
-        includeDMs: !require
+        includeDMs: !n
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+    }), (0, a.jsx)(i.rsf, {
       label: "Group DMs",
       description: "Includes recipient user ids, usernames, global names, nicknames, and custom channel names for all Group DMs. Does NOT include any message data.",
-      checked: Chunk972959,
+      checked: s,
       onChange: () => m.setState({
-        includeGDMs: !Chunk972959
+        includeGDMs: !s
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+    }), (0, a.jsx)(i.rsf, {
       label: "Quick Switcher Results",
       description: "Includes the current QuickSwitcher query and results. If you include this, please ensure the QuickSwitcher is open when you click to Upload Snapshot Logs.",
       checked: p,
       onChange: () => m.setState({
         includeQuickSwitcherState: !p
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+    }), (0, a.jsx)(i.rsf, {
       label: "User Search Worker",
       description: "Includes all users that your client knows about. For each user, includes the user id, username, nickname, and any guild nicknames.",
       checked: f,
       onChange: () => m.setState({
         includeUserSearchWorkerState: !f
       })
-    }), (0, Chunk54381.jsx)(Chunk608934.a, {
+    }), (0, a.jsx)(d.a, {
       isUploading: h,
       isSuccess: x,
       errorMessage: b,

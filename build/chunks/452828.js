@@ -55,23 +55,23 @@ let l = Object.freeze({
 });
 
 function c() {
-  let e = (0, Chunk473749.useRef)(null),
-    t = (0, Chunk473749.useRef)(l),
-    n = (0, Chunk473749.useCallback)(() => {
+  let e = (0, r.useRef)(null),
+    t = (0, r.useRef)(l),
+    n = (0, r.useCallback)(() => {
       let {
         current: n
-      } = module, {
+      } = e, {
         dirty: r
-      } = exports.current;
-      if (null == require || 0 === Chunk473749) return exports.current;
-      if (1 === Chunk473749) {
+      } = t.current;
+      if (null == n || 0 === r) return t.current;
+      if (1 === r) {
         let {
           scrollTop: e,
           scrollLeft: r
-        } = require;
-        exports.current = s(a({}, exports.current), {
-          scrollTop: module,
-          scrollLeft: Chunk473749,
+        } = n;
+        t.current = s(a({}, t.current), {
+          scrollTop: e,
+          scrollLeft: r,
           dirty: 0
         })
       } else {
@@ -82,10 +82,10 @@ function c() {
           scrollWidth: a,
           offsetHeight: o,
           offsetWidth: s
-        } = require;
-        exports.current = {
-          scrollTop: module,
-          scrollLeft: Chunk473749,
+        } = n;
+        t.current = {
+          scrollTop: e,
+          scrollLeft: r,
           scrollHeight: i,
           scrollWidth: a,
           offsetHeight: o,
@@ -93,11 +93,11 @@ function c() {
           dirty: 0
         }
       }
-      return exports.current
+      return t.current
     }, []);
   return {
-    scrollerRef: module,
-    scrollerState: exports,
-    getScrollerState: require
+    scrollerRef: e,
+    scrollerState: t,
+    getScrollerState: n
   }
 }

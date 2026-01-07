@@ -30,7 +30,7 @@ class a {
   update() {
     this.currentVolume = i(this.analyser, this.fftBins), this.speakingHistory[this.speakingHistoryIndex] && this.speakingCounter--;
     let e = this.currentVolume > this.threshold;
-    this.speakingHistory[this.speakingHistoryIndex] = module, module && this.speakingCounter++, ++this.speakingHistoryIndex === this.speakingHistory.length && (this.speakingHistoryIndex = 0), this.speakingCounter > 0 ? this.silentFrames = 0 : this.silentFrames++
+    this.speakingHistory[this.speakingHistoryIndex] = e, e && this.speakingCounter++, ++this.speakingHistoryIndex === this.speakingHistory.length && (this.speakingHistoryIndex = 0), this.speakingCounter > 0 ? this.silentFrames = 0 : this.silentFrames++
   }
   constructor(e, t, n, i = .1, a = 10) {
     r(this, "threshold", true), r(this, "currentVolume", 0), r(this, "analyser", true), r(this, "interval", true), r(this, "fftBins", true), r(this, "source", true), r(this, "speakingHistory", true), r(this, "speakingHistoryIndex", 0), r(this, "speakingCounter", 0), r(this, "silenceThreshold", true), r(this, "silentFrames", true), r(this, "onProcess", null);

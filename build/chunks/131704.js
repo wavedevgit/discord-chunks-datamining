@@ -237,35 +237,35 @@ let eE = Object.freeze({});
 class eb extends eh {
   get permissionOverwrites() {
     var e;
-    return null != (e = this.permissionOverwrites_) ? module : eE
+    return null != (e = this.permissionOverwrites_) ? e : eE
   }
   get topic() {
     var e;
-    return null != (e = this.topic_) ? module : ""
+    return null != (e = this.topic_) ? e : ""
   }
   get position() {
     var e;
-    return null != (e = this.position_) ? module : 0
+    return null != (e = this.position_) ? e : 0
   }
   get bitrate() {
     var e;
-    return null != (e = this.bitrate_) ? module : Chunk981631.epw
+    return null != (e = this.bitrate_) ? e : h.epw
   }
   get userLimit() {
     var e;
-    return null != (e = this.userLimit_) ? module : 0
+    return null != (e = this.userLimit_) ? e : 0
   }
   get nsfw() {
     var e;
-    return null != (e = this.nsfw_) && module
+    return null != (e = this.nsfw_) && e
   }
   get rateLimitPerUser() {
     var e;
-    return null != (e = this.rateLimitPerUser_) ? module : 0
+    return null != (e = this.rateLimitPerUser_) ? e : 0
   }
   get flags() {
     var e;
-    return null != (e = this.flags_) ? module : 0
+    return null != (e = this.flags_) ? e : 0
   }
   toJS() {
     return b({}, this)
@@ -282,7 +282,7 @@ class eb extends eh {
     return null != t ? new this.constructor(t) : this
   }
   computeLurkerPermissionsAllowList() {
-    if (this.isGuildStageVoice() && Chunk427679.Z.isPublic(this.id)) return Chunk146085.L_
+    if (this.isGuildStageVoice() && _.Z.isPublic(this.id)) return p.L_
   }
   isNSFW() {
     return this.nsfw
@@ -294,40 +294,40 @@ class eb extends eh {
     return j(this.type)
   }
   isGroupDM() {
-    return this.type === Chunk981631.d4z.GROUP_DM
+    return this.type === h.d4z.GROUP_DM
   }
   isMultiUserDM() {
     return k(this.type)
   }
   isDM() {
-    return this.type === Chunk981631.d4z.DM
+    return this.type === h.d4z.DM
   }
   isSystemDM() {
     returnfalse
   }
   isArchivedThread() {
     var e;
-    return this.isThread() && (null == (e = this.threadMetadata) ? true : module.archived) === true
+    return this.isThread() && (null == (e = this.threadMetadata) ? true : e.archived) === true
   }
   isLockedThread() {
     var e;
-    return this.isThread() && (null == (e = this.threadMetadata) ? true : module.locked) === true
+    return this.isThread() && (null == (e = this.threadMetadata) ? true : e.locked) === true
   }
   isScheduledForDeletion() {
-    return this.hasFlag(Chunk176505.zZ.IS_SCHEDULED_FOR_DELETION)
+    return this.hasFlag(g.zZ.IS_SCHEDULED_FOR_DELETION)
   }
   isArchivedLockedThread() {
     var e, t;
-    return H.has(this.type) && (null == (e = this.threadMetadata) ? true : module.archived) === true && (null == (t = this.threadMetadata) ? true : exports.locked) === true
+    return H.has(this.type) && (null == (e = this.threadMetadata) ? true : e.archived) === true && (null == (t = this.threadMetadata) ? true : t.locked) === true
   }
   isForumPost() {
-    return this.type === Chunk981631.d4z.PUBLIC_THREAD && null != this.parentChannelThreadType && Chunk981631.TPd.GUILD_THREADS_ONLY.has(this.parentChannelThreadType)
+    return this.type === h.d4z.PUBLIC_THREAD && null != this.parentChannelThreadType && h.TPd.GUILD_THREADS_ONLY.has(this.parentChannelThreadType)
   }
   isRingable() {
-    return Chunk981631.TPd.CALLABLE.has(this.type) || this.type === Chunk981631.d4z.GUILD_VOICE
+    return h.TPd.CALLABLE.has(this.type) || this.type === h.d4z.GUILD_VOICE
   }
   isCategory() {
-    return this.type === Chunk981631.d4z.GUILD_CATEGORY
+    return this.type === h.d4z.GUILD_CATEGORY
   }
   isVocal() {
     return F(this.type)
@@ -339,13 +339,13 @@ class eb extends eh {
     return this.isGuildVocal() || this.isVocalThread()
   }
   isGuildVoice() {
-    return this.type === Chunk981631.d4z.GUILD_VOICE
+    return this.type === h.d4z.GUILD_VOICE
   }
   isGuildVoiceOrThread() {
     return this.isGuildVoice() || this.isVocalThread()
   }
   isGuildStageVoice() {
-    return this.type === Chunk981631.d4z.GUILD_STAGE_VOICE
+    return this.type === h.d4z.GUILD_STAGE_VOICE
   }
   isListenModeCapable() {
     return this.isGuildStageVoice()
@@ -354,32 +354,32 @@ class eb extends eh {
     return K(this.type)
   }
   isAnnouncementThread() {
-    return this.type === Chunk981631.d4z.ANNOUNCEMENT_THREAD
+    return this.type === h.d4z.ANNOUNCEMENT_THREAD
   }
   isVocalThread() {
-    return this.type === Chunk981631.d4z.PUBLIC_THREAD || this.type === Chunk981631.d4z.PRIVATE_THREAD
+    return this.type === h.d4z.PUBLIC_THREAD || this.type === h.d4z.PRIVATE_THREAD
   }
   isActiveThread() {
     var e;
-    return this.isThread() && (null == (e = this.threadMetadata) ? true : module.archived) !== true
+    return this.isThread() && (null == (e = this.threadMetadata) ? true : e.archived) !== true
   }
   isDirectory() {
-    return this.type === Chunk981631.d4z.GUILD_DIRECTORY
+    return this.type === h.d4z.GUILD_DIRECTORY
   }
   isForumLikeChannel() {
     return this.isForumChannel() || this.isMediaChannel()
   }
   isForumChannel() {
-    return this.type === Chunk981631.d4z.GUILD_FORUM
+    return this.type === h.d4z.GUILD_FORUM
   }
   isMediaChannel() {
-    return this.type === Chunk981631.d4z.GUILD_MEDIA
+    return this.type === h.d4z.GUILD_MEDIA
   }
   isMediaPost() {
-    return this.type === Chunk981631.d4z.PUBLIC_THREAD && this.parentChannelThreadType === Chunk981631.d4z.GUILD_MEDIA
+    return this.type === h.d4z.PUBLIC_THREAD && this.parentChannelThreadType === h.d4z.GUILD_MEDIA
   }
   isRoleSubscriptionTemplatePreviewChannel() {
-    return this.hasFlag(Chunk176505.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL)
+    return this.hasFlag(g.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL)
   }
   isOwner(e) {
     return this.ownerId === e
@@ -392,17 +392,17 @@ class eb extends eh {
   }
   getDefaultSortOrder() {
     var e;
-    return null != (e = this.defaultSortOrder) ? module : Chunk683860.z.LATEST_ACTIVITY
+    return null != (e = this.defaultSortOrder) ? e : c.z.LATEST_ACTIVITY
   }
   getDefaultLayout() {
-    return this.isMediaChannel() ? Chunk313361.X.GRID : null == this.defaultForumLayout || this.defaultForumLayout === Chunk313361.X.DEFAULT ? Chunk313361.X.LIST : this.defaultForumLayout
+    return this.isMediaChannel() ? s.X.GRID : null == this.defaultForumLayout || this.defaultForumLayout === s.X.DEFAULT ? s.X.LIST : this.defaultForumLayout
   }
   getDefaultTagSetting() {
     var e;
-    return null != (e = this.defaultTagSetting) ? module : Chunk697988.z.MATCH_SOME
+    return null != (e = this.defaultTagSetting) ? e : l.z.MATCH_SOME
   }
   isModeratorReportChannel() {
-    return this.hasFlag(Chunk176505.zZ.IS_MODERATOR_REPORT_CHANNEL)
+    return this.hasFlag(g.zZ.IS_MODERATOR_REPORT_CHANNEL)
   }
   get accessPermissions() {
     return e_(this.type)
@@ -658,7 +658,7 @@ class eL extends eb {
   }
   isSystemDM() {
     let e = this.rawRecipients[0];
-    return this.type === Chunk981631.d4z.DM && null != module && true === module.system
+    return this.type === h.d4z.DM && null != e && true === e.system
   }
   getRecipientId() {
     return this.recipients[0]

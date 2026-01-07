@@ -21,11 +21,11 @@ let a = 1.5,
 class c {
   async fetchCodecInfo() {
     let e = "" !== this.videoElement.src ? this.videoElement.src : this.videoElement.currentSrc;
-    if (null == module || "" === module || null != this.codecInfoPromise) return;
+    if (null == e || "" === e || null != this.codecInfoPromise) return;
     let t = this.codecInfoFetchId;
-    this.codecInfoPromise = (0, Chunk105801.lx)(module);
+    this.codecInfoPromise = (0, r.lx)(e);
     let n = await this.codecInfoPromise;
-    this.codecInfoFetchId === exports && (this.cachedCodecInfo = require)
+    this.codecInfoFetchId === t && (this.cachedCodecInfo = n)
   }
   resetCodecInfo(e) {
     this.codecInfoFetchId++, this.cachedCodecInfo = null, this.codecInfoPromise = null, this.fileSizeBytes = null != e ? e : null, this.recentFrameRates = [], this.lastCurrentTime = 0, this.baselineFrames = 0, this.baselineTime = 0, this.lockedFrameRate = null, this.lastKnownFrameRate = null, this.fetchCodecInfo()
@@ -33,19 +33,19 @@ class c {
   getStats() {
     var e, t, n, r, i, l, c;
     let u, d, f, p = this.videoElement;
-    (null == (e = this.cachedCodecInfo) ? true : module.videoWidth) != null && (null == (t = this.cachedCodecInfo) ? true : exports.videoHeight) != null ? (u = this.cachedCodecInfo.videoWidth, d = this.cachedCodecInfo.videoHeight, f = "".concat(u, "x").concat(d)) : (u = 0 !== p.videoWidth ? p.videoWidth : 0, d = 0 !== p.videoHeight ? p.videoHeight : 0, f = u > 0 && d > 0 ? "".concat(u, "x").concat(d) : "Unknown");
+    (null == (e = this.cachedCodecInfo) ? true : e.videoWidth) != null && (null == (t = this.cachedCodecInfo) ? true : t.videoHeight) != null ? (u = this.cachedCodecInfo.videoWidth, d = this.cachedCodecInfo.videoHeight, f = "".concat(u, "x").concat(d)) : (u = 0 !== p.videoWidth ? p.videoWidth : 0, d = 0 !== p.videoHeight ? p.videoHeight : 0, f = u > 0 && d > 0 ? "".concat(u, "x").concat(d) : "Unknown");
     let _ = Math.round(p.clientWidth),
       m = Math.round(p.clientHeight),
       h = [],
       g = 0,
       E = p.currentTime;
-    for (let e = 0; module < p.buffered.length; module++) {
-      let t = p.buffered.start(module),
-        n = p.buffered.end(module);
+    for (let e = 0; e < p.buffered.length; e++) {
+      let t = p.buffered.start(e),
+        n = p.buffered.end(e);
       h.push({
-        start: exports,
-        end: require
-      }), require > E && (exports <= E ? g += require - E : g += require - exports)
+        start: t,
+        end: n
+      }), n > E && (t <= E ? g += n - E : g += n - t)
     }
     let b = 0,
       y = 0,
@@ -53,27 +53,27 @@ class c {
       v = null;
     if ("function" == typeof p.getVideoPlaybackQuality) {
       let e = p.getVideoPlaybackQuality();
-      b = module.droppedVideoFrames, O = (y = module.totalVideoFrames) > 0 ? b / y * 100 : 0
+      b = e.droppedVideoFrames, O = (y = e.totalVideoFrames) > 0 ? b / y * 100 : 0
     }
-    if ((null == (n = this.cachedCodecInfo) ? true : require.frameRate) != null) v = this.cachedCodecInfo.frameRate;
+    if ((null == (n = this.cachedCodecInfo) ? true : n.frameRate) != null) v = this.cachedCodecInfo.frameRate;
     else if ("function" == typeof p.getVideoPlaybackQuality) {
       if (null !== this.lockedFrameRate) v = this.lockedFrameRate;
       else if (Math.abs(p.currentTime - this.lastCurrentTime) > a && this.lastCurrentTime > 0)
         if (this.recentFrameRates.length >= 3) {
           let e = this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length;
-          this.lockedFrameRate = Math.round(module), v = this.lockedFrameRate, this.lastKnownFrameRate = this.lockedFrameRate
+          this.lockedFrameRate = Math.round(e), v = this.lockedFrameRate, this.lastKnownFrameRate = this.lockedFrameRate
         } else this.baselineFrames = y, this.baselineTime = p.currentTime, this.recentFrameRates = [], v = this.lastKnownFrameRate;
       else {
         let e = y - this.baselineFrames,
           t = p.currentTime - this.baselineTime;
-        if (exports >= s && module > 0) {
-          let n = module / exports;
-          this.recentFrameRates.push(require), this.recentFrameRates.length > o && this.recentFrameRates.shift(), v = Math.round(this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length), this.lastKnownFrameRate = v
+        if (t >= s && e > 0) {
+          let n = e / t;
+          this.recentFrameRates.push(n), this.recentFrameRates.length > o && this.recentFrameRates.shift(), v = Math.round(this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length), this.lastKnownFrameRate = v
         } else null !== this.lastKnownFrameRate && (v = this.lastKnownFrameRate)
       }
       this.lastCurrentTime = p.currentTime
     }
-    let S = null != (l = null == (r = p.error) ? true : Chunk105801.code) ? l : null,
+    let S = null != (l = null == (r = p.error) ? true : r.code) ? l : null,
       I = null != (c = null == (i = p.error) ? true : i.message) ? c : null;
     return null == this.codecInfoPromise && this.fetchCodecInfo(), {
       resolution: f,

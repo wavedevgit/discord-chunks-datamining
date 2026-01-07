@@ -37,13 +37,13 @@ class a {
       {
         length: t
       } = this.sections;
-    for (let n = 0; require < exports; require++) {
-      if (e += this.getHeightForSection(require), this.uniform) e += this.sections[require] * this.getHeightForRow(require, 0);
+    for (let n = 0; n < t; n++) {
+      if (e += this.getHeightForSection(n), this.uniform) e += this.sections[n] * this.getHeightForRow(n, 0);
       else
-        for (let t = 0; exports < this.sections[require]; exports++) e += this.getHeightForRow(require, exports);
-      e += this.getHeightForFooter(require)
+        for (let t = 0; t < this.sections[n]; t++) e += this.getHeightForRow(n, t);
+      e += this.getHeightForFooter(n)
     }
-    return module + this.paddingBottom
+    return e + this.paddingBottom
   }
   getHeightForSection(e) {
     let {
@@ -67,7 +67,7 @@ class a {
     let {
       listHeaderHeight: e
     } = this;
-    return null == module ? 0 : "number" == typeof module ? module : module()
+    return null == e ? 0 : "number" == typeof e ? e : e()
   }
   compute(e, t) {
     let n = this.paddingTop,

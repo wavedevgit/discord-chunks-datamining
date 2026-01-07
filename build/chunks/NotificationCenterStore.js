@@ -68,7 +68,7 @@ class g extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getTab() {
     var e;
-    return null != (e = p.tab) ? module : Chunk497089.b1.ForYou
+    return null != (e = p.tab) ? e : c.b1.ForYou
   }
   isLocalItemAcked(e) {
     return null != e.local_id && (null != p.localItemAcks[e.local_id] || s.default.age(e.id) > h)

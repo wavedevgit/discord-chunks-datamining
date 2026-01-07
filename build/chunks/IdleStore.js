@@ -35,26 +35,26 @@ let b = Date.now(),
   I = false;
 
 function T() {
-  return v || S || (0, Chunk358085.isAndroid)() && I
+  return v || S || (0, _.isAndroid)() && I
 }
 
 function C() {
-  let e = Chunk695346.CM.getSetting();
-  0 === module || null != r || Date.now() - b > Math.min(module * Chunk70956.Z.Millis.SECOND, Chunk981631.OSm) || T() ? O || Chunk570140.Z.dispatch({
+  let e = f.CM.getSetting();
+  0 === e || null != r || Date.now() - b > Math.min(e * p.Z.Millis.SECOND, h.OSm) || T() ? O || l.Z.dispatch({
     type: "AFK",
     afk: true
-  }) : O && Chunk570140.Z.dispatch({
+  }) : O && l.Z.dispatch({
     type: "AFK",
     afk: false
   })
 }
 
 function A() {
-  Date.now() - b > Chunk981631.OSm || T() ? y || Chunk570140.Z.dispatch({
+  Date.now() - b > h.OSm || T() ? y || l.Z.dispatch({
     type: "IDLE",
     idle: true,
     idleSince: b
-  }) : y && Chunk570140.Z.dispatch({
+  }) : y && l.Z.dispatch({
     type: "IDLE",
     idle: false
   })
@@ -75,9 +75,9 @@ function P() {
     }
     N(), setTimeout(P, 10 * p.Z.Millis.SECOND)
   };
-  if ((null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.remotePowerMonitor) ? true : module.getSystemIdleTimeMs) != null) {
-    let e = Chunk579806.Z.remotePowerMonitor.getSystemIdleTimeMs();
-    module instanceof Promise ? module.then(exports) : exports(module)
+  if ((null === u.Z || true === u.Z || null == (e = u.Z.remotePowerMonitor) ? true : e.getSystemIdleTimeMs) != null) {
+    let e = u.Z.remotePowerMonitor.getSystemIdleTimeMs();
+    e instanceof Promise ? e.then(t) : t(e)
   }
 }
 
@@ -90,14 +90,14 @@ if (!__OVERLAY__) {
   Chunk358085.isPlatformEmbedded && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remotePowerMonitor) != null ? (P(), Chunk579806.Z.remotePowerMonitor.on("resume", () => {
     v = false, R(false)
   }), Chunk579806.Z.remotePowerMonitor.on("suspend", () => {
-    v = true, R(true), Chunk287734.default.disconnect()
+    v = true, R(true), c.default.disconnect()
   }), Chunk579806.Z.remotePowerMonitor.on("lock-screen", () => {
     S = true, R(true)
   }), Chunk579806.Z.remotePowerMonitor.on("unlock-screen", () => {
     S = false, R(false)
   })) : setInterval(N, 30 * Chunk70956.Z.Millis.SECOND);
   let e = o()(() => {
-    Chunk491966.Z.getConfig({
+    d.Z.getConfig({
       location: "handleGenericInput"
     }).generic_inputs && j({})
   }, 500);
@@ -139,14 +139,14 @@ function j(e) {
 }
 
 function M() {
-  if (!Chunk491966.Z.getConfig({
+  if (!d.Z.getConfig({
       location: "handleSettingsProtoUpdate"
     }).settings_updates) returnfalse;
   j({})
 }
 class k extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default)
+    this.waitFor(m.default)
   }
   isIdle() {
     return y

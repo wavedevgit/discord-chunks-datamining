@@ -35,7 +35,7 @@ class f {
 }
 d.push(class extends f {
   static canUse() {
-    return (0, Chunk988348.N)()
+    return (0, o.N)()
   }
   getAlgorithm() {
     return "zstd-stream"
@@ -131,7 +131,7 @@ d.push(class extends f {
     this.close(), this._socketId = e._socketId, (0, o.N)() ? (0, i.isAndroid)() ? null == c || c.enableZstdStreamSupport(this._socketId) : l.DCDCompressionManager.enableZstdStreamSupport(this._socketId, 0) : (0, i.isAndroid)() ? null == c || c.enableZlibStreamSupport(this._socketId) : l.DCDCompressionManager.enableZlibStreamSupport(this._socketId)
   }
   getAlgorithm() {
-    return (0, Chunk988348.N)() ? "zstd-stream" : "zlib-stream"
+    return (0, o.N)() ? "zstd-stream" : "zlib-stream"
   }
   usesLegacyCompression() {
     returnfalse
@@ -142,7 +142,7 @@ d.push(class extends f {
   }
   close() {
     let e = this._socketId;
-    this._socketId = null, null !== module && ((0, Chunk358085.isAndroid)() ? null == c || c.disableZlibStreamSupport(module) : l.DCDCompressionManager.disableZlibStreamSupport(module))
+    this._socketId = null, null !== e && ((0, i.isAndroid)() ? null == c || c.disableZlibStreamSupport(e) : l.DCDCompressionManager.disableZlibStreamSupport(e))
   }
   constructor(e) {
     super(e), s(this, "_socketId", true), this._socketId = null

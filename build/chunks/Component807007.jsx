@@ -39,7 +39,7 @@ function O(e, t, n) {
 }
 class w extends Chunk473749.PureComponent {
   componentDidMount() {
-    Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
+    N.default.track(v.rMx.OPEN_MODAL, {
       type: "Follow Channel Modal",
       num_guild_permissions: Object.keys(this.props.guilds).length,
       location: "Chat Input Blocker - Follow Channel"
@@ -63,18 +63,18 @@ class w extends Chunk473749.PureComponent {
     } = this.state, {
       onClose: r
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+    return (0, l.jsxs)(c.ButtonGroup, {
       direction: "horizontal-reverse",
-      children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+      children: [(0, l.jsx)(c.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t["3aOv+h"]),
-        loading: require,
+        text: M.intl.string(M.t["3aOv+h"]),
+        loading: n,
         onClick: this.handleFollow,
-        disabled: null == module || null == exports
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        disabled: null == e || null == t
+      }), (0, l.jsx)(c.Button, {
         variant: "secondary",
-        text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
-        onClick: Chunk473749
+        text: M.intl.string(M.t["ETE/oC"]),
+        onClick: r
       })]
     })
   }
@@ -86,7 +86,7 @@ class w extends Chunk473749.PureComponent {
       selectedGuildId: n,
       selectedChannelId: r,
       errorMessage: a
-    } = this.state, i = Chunk709054.default.keys(module).map(t => {
+    } = this.state, i = Z.default.keys(e).map(t => {
       let {
         guild: n
       } = e[t];
@@ -95,7 +95,7 @@ class w extends Chunk473749.PureComponent {
         label: n.name,
         guild: n
       }
-    }), s = exports.map(e => {
+    }), s = t.map(e => {
       let {
         channel: t,
         category: n
@@ -106,14 +106,14 @@ class w extends Chunk473749.PureComponent {
         channel: t,
         category: n
       }
-    }), d = 0 === i.length, h = Chunk570140 ? Chunk388032.intl.string(Chunk388032.t["6b6QoF"]) : Chunk388032.intl.string(Chunk388032.t.Z0quyN);
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    }), d = 0 === i.length, h = d ? M.intl.string(M.t["6b6QoF"]) : M.intl.string(M.t.Z0quyN);
+    return (0, l.jsxs)(c.Kqy, {
       gap: 16,
-      children: [(0, Chunk54381.jsx)(Chunk668339.d, {
-        label: Chunk388032.intl.string(Chunk388032.t.xFn72s),
-        value: require,
+      children: [(0, l.jsx)(o.d, {
+        label: M.intl.string(M.t.xFn72s),
+        value: n,
         options: i,
-        isDisabled: Chunk570140,
+        isDisabled: d,
         onChange: this.handleGuildSelect,
         renderOptionPrefix: e => (function(e) {
           if (null == e) return null;
@@ -125,11 +125,11 @@ class w extends Chunk473749.PureComponent {
             size: p.Z.Sizes.MINI
           })
         })(e)
-      }), (0, Chunk54381.jsx)(Chunk668339.d, {
-        label: Chunk388032.intl.string(Chunk388032.t.PDn2fR),
-        value: Chunk473749,
-        options: Chunk442837,
-        isDisabled: 0 === Chunk442837.length,
+      }), (0, l.jsx)(o.d, {
+        label: M.intl.string(M.t.PDn2fR),
+        value: r,
+        options: s,
+        isDisabled: 0 === s.length,
         onChange: this.handleChannelSelect,
         renderOptionPrefix: e => (function(e) {
           if (null == e) return null;
@@ -142,11 +142,11 @@ class w extends Chunk473749.PureComponent {
             className: S.icon
           })
         })(e)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, l.jsx)(c.Text, {
         variant: "text-sm/normal",
-        color: Chunk570140 || null != Chunk120356 ? "text-feedback-critical" : "text-muted",
-        className: Chunk481073.bottomMargin,
-        children: null != Chunk120356 ? Chunk120356 : Chunk528963
+        color: d || null != a ? "text-feedback-critical" : "text-muted",
+        className: S.bottomMargin,
+        children: null != a ? a : h
       })]
     })
   }
@@ -156,24 +156,24 @@ class w extends Chunk473749.PureComponent {
         nsfw: e
       }
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk481073.body,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    return (0, l.jsxs)("div", {
+      className: S.body,
+      children: [(0, l.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
         id: this.state.headerId,
-        children: Chunk388032.intl.string(Chunk388032.t.mvPFbA)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: M.intl.string(M.t.mvPFbA)
+      }), (0, l.jsx)(c.Text, {
         color: "text-muted",
-        className: i()(Chunk481073.topMargin, {
-          [Chunk481073.formMargin]: !module
+        className: i()(S.topMargin, {
+          [S.formMargin]: !e
         }),
         variant: "text-sm/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.kbpkxJ)
-      }), module ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: i()(Chunk481073.formMargin, Chunk481073.topMargin),
+        children: M.intl.string(M.t.kbpkxJ)
+      }), e ? (0, l.jsx)(c.Text, {
+        className: i()(S.formMargin, S.topMargin),
         color: "text-feedback-critical",
         variant: "text-sm/normal",
-        children: Chunk388032.intl.string(Chunk388032.t["DrNm/5"])
+        children: M.intl.string(M.t["DrNm/5"])
       }) : null]
     })
   }
@@ -183,26 +183,26 @@ class w extends Chunk473749.PureComponent {
       guildToFollow: t,
       channelNameToFollow: n,
       channel: r
-    } = this.props, a = null != (e = (0, Chunk471445.KS)(Chunk473749)) ? module : Chunk481060.MqZ;
-    return (0, Chunk54381.jsxs)(Chunk481060.xBx, {
-      className: Chunk481073.header,
-      children: [(0, Chunk54381.jsx)(Chunk565138.Z, {
-        guild: exports,
-        size: Chunk565138.Z.Sizes.LARGE
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk481073.channelContainer,
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk481073.channel,
-          children: [(0, Chunk54381.jsx)(Chunk120356, {
+    } = this.props, a = null != (e = (0, g.KS)(r)) ? e : c.MqZ;
+    return (0, l.jsxs)(c.xBx, {
+      className: S.header,
+      children: [(0, l.jsx)(p.Z, {
+        guild: t,
+        size: p.Z.Sizes.LARGE
+      }), (0, l.jsx)("div", {
+        className: S.channelContainer,
+        children: (0, l.jsxs)("div", {
+          className: S.channel,
+          children: [(0, l.jsx)(a, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: Chunk481073.channelIcon
-          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+            className: S.channelIcon
+          }), (0, l.jsx)(c.Text, {
             variant: "text-md/medium",
-            className: Chunk481073.channelName,
-            children: require
+            className: S.channelName,
+            children: n
           })]
         })
       })]
@@ -212,14 +212,14 @@ class w extends Chunk473749.PureComponent {
     let {
       transitionState: e
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
-      transitionState: module,
+    return (0, l.jsxs)(c.Y0X, {
+      transitionState: e,
       "aria-labelledby": this.state.headerId,
       parentComponent: "FollowModal",
-      children: [this.renderHeader(), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
-        className: Chunk481073.content,
+      children: [this.renderHeader(), (0, l.jsxs)(c.hzk, {
+        className: S.content,
         children: [this.renderBody(), this.renderForm()]
-      }), (0, Chunk54381.jsx)(Chunk481060.mzw, {
+      }), (0, l.jsx)(c.mzw, {
         children: this.renderFooter()
       })]
     })

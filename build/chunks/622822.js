@@ -91,8 +91,8 @@ let C = new Date("06/16/2020"),
   N = new Set([Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED]);
 
 function P() {
-  let e = Chunk594174.default.getCurrentUser();
-  return null != module && Chunk709054.default.extractTimestamp(module.id) > C.getTime() && null == module.nsfwAllowed
+  let e = _.default.getCurrentUser();
+  return null != e && h.default.extractTimestamp(e.id) > C.getTime() && null == e.nsfwAllowed
 }
 
 function R(e) {
@@ -131,19 +131,19 @@ function M(e) {
 }
 
 function k() {
-  let e = (0, Chunk128064.c_)("age-gate-utils"),
-    t = (0, Chunk453679.u)("age-gate-utils"),
-    n = (0, Chunk312870.U)("age-gate-utils"),
-    r = (0, Chunk81643.sf)();
-  return (module || exports || require) && Chunk442837
+  let e = (0, l.c_)("age-gate-utils"),
+    t = (0, o.u)("age-gate-utils"),
+    n = (0, c.U)("age-gate-utils"),
+    r = (0, s.sf)();
+  return (e || t || n) && r
 }
 
 function U() {
-  let e = (0, Chunk128064.pY)("age-gate-utils"),
-    t = (0, Chunk453679.z)("age-gate-utils"),
-    n = (0, Chunk312870.s)("age-gate-utils"),
-    r = (0, Chunk81643.L5)();
-  return (module || exports || require) && Chunk442837
+  let e = (0, l.pY)("age-gate-utils"),
+    t = (0, o.z)("age-gate-utils"),
+    n = (0, c.s)("age-gate-utils"),
+    r = (0, s.L5)();
+  return (e || t || n) && r
 }
 
 function G(e) {
@@ -236,10 +236,10 @@ function Z(e) {
   }
 }
 let F = () => {
-    let e = Chunk594174.default.getCurrentUser();
-    if (null == module) returnfalse;
+    let e = _.default.getCurrentUser();
+    if (null == e) returnfalse;
     let t = k();
-    returntrue !== module.nsfwAllowed || exports
+    returntrue !== e.nsfwAllowed || t
   },
   B = e => {
     if (!F() || null == e) returnfalse;
@@ -306,18 +306,18 @@ function X(e) {
 }
 
 function J() {
-  let e = Chunk594174.default.getCurrentUser();
-  return null != module && null == module.nsfwAllowed
+  let e = _.default.getCurrentUser();
+  return null != e && null == e.nsfwAllowed
 }
 
 function $() {
-  let e = (0, Chunk532812.S)("age-gate-utils"),
-    t = (0, Chunk81643.sf)();
-  return module && exports
+  let e = (0, a.S)("age-gate-utils"),
+    t = (0, s.sf)();
+  return e && t
 }
 
 function ee() {
-  let e = (0, Chunk532812.H)("age-gate-utils"),
-    t = (0, Chunk81643.L5)();
-  return module && exports
+  let e = (0, a.H)("age-gate-utils"),
+    t = (0, s.L5)();
+  return e && t
 }

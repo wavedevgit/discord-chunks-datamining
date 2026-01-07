@@ -166,20 +166,20 @@ class E extends(r = Chunk473749.PureComponent) {
       right: u,
       bottom: d
     } = this.position, f = {
-      pointerEvents: require ? "none" : "auto",
+      pointerEvents: n ? "none" : "auto",
       position: "absolute",
       top: l,
       left: c,
       bottom: d,
       right: u
     };
-    return (0, Chunk54381.jsx)("div", {
+    return (0, i.jsx)("div", {
       ref: this.draggableRef,
-      className: exports,
+      className: t,
       onMouseDown: this.handleMouseDown,
       style: f,
-      children: Chunk473749.cloneElement(Chunk473749.Children.only(module), {
-        flipped: "RIGHT" === Chunk981631,
+      children: a.cloneElement(a.Children.only(e), {
+        flipped: "RIGHT" === o,
         verticalFlipped: "BOTTOM" === r,
         checkBounds: this.checkBounds,
         atTopEdge: s

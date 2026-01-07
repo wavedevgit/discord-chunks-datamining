@@ -24,12 +24,12 @@ let d = new Chunk710845.Z("NonGuildVersions");
 class f {
   async getCommittedVersions() {
     try {
-      let e = Chunk287328.Z.nonGuildVersions();
-      if (null == module) return {};
-      let t = (await module.getMany()).map(e => [e.id, "version" in e ? e.version : e.versionString]);
-      return Object.fromEntries(null != exports ? exports : [])
+      let e = c.Z.nonGuildVersions();
+      if (null == e) return {};
+      let t = (await e.getMany()).map(e => [e.id, "version" in e ? e.version : e.versionString]);
+      return Object.fromEntries(null != t ? t : [])
     } catch (e) {
-      return d.warn("couldn't load guild versions", module), {}
+      return d.warn("couldn't load guild versions", e), {}
     }
   }
   handleConnectionOpen(e, t) {
@@ -43,17 +43,17 @@ class f {
     if (u(this, "actions", {
         CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
         BACKGROUND_SYNC: (e, t) => this.handleConnectionOpen(e, t)
-      }), !(0, Chunk768433.O)()) return;
-    Chunk914010.Z.addChangeListener(i().throttle(() => {
+      }), !(0, a.O)()) return;
+    s.Z.addChangeListener(i().throttle(() => {
       var e;
-      null == (e = Chunk287328.Z.database()) || module.transaction(e => {
+      null == (e = c.Z.database()) || e.transaction(e => {
         let t = s.Z.getGuildId();
         null == t || isNaN(Number(t)) ? c.Z.nonGuildVersionsTransaction(e).delete("initial_guild_id") : c.Z.nonGuildVersionsTransaction(e).put({
           id: "initial_guild_id",
           versionString: t
         })
       })
-    }, 10 * Chunk70956.Z.Millis.SECOND))
+    }, 10 * l.Z.Millis.SECOND))
   }
 }
 let p = new f

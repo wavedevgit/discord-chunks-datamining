@@ -68,7 +68,7 @@ let f = {},
   };
 class g extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(s.default)
   }
   get state() {
     return f

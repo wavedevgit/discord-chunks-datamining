@@ -17,7 +17,7 @@ var Chunk98405 = require("./98405.js"),
         writable: false
       }).push()
     } catch (e) {
-      return module instanceof TypeError
+      return e instanceof TypeError
     }
   };
 Chunk98405({

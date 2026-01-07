@@ -23,10 +23,10 @@ let c = [require("./742738.js").Z],
 function d() {
   let e = [];
   for (let t of c) {
-    let n = exports.getActivity();
-    null != require && module.push(require)
+    let n = t.getActivity();
+    null != n && e.push(n)
   }
-  return !a()(module, u) && (u = module, true)
+  return !a()(e, u) && (u = e, true)
 }
 class f extends(r = Chunk442837.ZP.Store) {
   initialize() {

@@ -47,7 +47,7 @@ let c = {
   [Chunk981631.Etm.GET_GUILDS]: {
     scope: Chunk243814.x.RPC,
     handler: () => ({
-      guilds: Chunk430824.Z.getGuildsArray().map(e => {
+      guilds: l.Z.getGuildsArray().map(e => {
         var t;
         return {
           id: e.id,

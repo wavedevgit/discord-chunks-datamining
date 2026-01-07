@@ -9,10 +9,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk430824 = require("./430824.js");
 
 function o() {
-  let [e, t] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [Chunk937111.Z, Chunk430824.Z], n = module.computeGuildIds(), r = exports.getGuilds();
-  return require.filter(e => null == r[e])
+  let [e, t] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [i.Z, a.Z], n = e.computeGuildIds(), r = t.getGuilds();
+  return n.filter(e => null == r[e])
 }
 
 function s() {
-  return (0, Chunk442837.Wu)([Chunk937111.Z, Chunk430824.Z], () => o([Chunk937111.Z, Chunk430824.Z]))
+  return (0, r.Wu)([i.Z, a.Z], () => o([i.Z, a.Z]))
 }

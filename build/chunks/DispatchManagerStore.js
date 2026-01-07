@@ -46,7 +46,7 @@ function w() {
     paused: I,
     userActions: Array.from(N)
   };
-  Chunk433517.K.set(O, module)
+  s.K.set(O, e)
 }
 
 function D(e, t) {
@@ -55,19 +55,19 @@ function D(e, t) {
 
 function x() {
   let e = v[0];
-  if (null != module) {
+  if (null != e) {
     let {
       comboId: t,
       action: n
-    } = module, {
+    } = e, {
       applicationId: r,
       branchId: i
-    } = (0, Chunk780570.CP)(exports);
-    if (!D(r, Chunk392711)) {
-      let e = Chunk314897.default.getToken(),
-        t = Chunk314897.default.getId();
-      if (null == module) throw Error("missing user token");
-      P = !Chunk830168.Z.setCurrentTask(r, Chunk392711, require, exports, module)
+    } = (0, p.CP)(t);
+    if (!D(r, i)) {
+      let e = d.default.getToken(),
+        t = d.default.getId();
+      if (null == e) throw Error("missing user token");
+      P = !_.Z.setCurrentTask(r, i, n, t, e)
     }
   }
 }
@@ -184,9 +184,9 @@ function H(e) {
 }
 
 function Y() {
-  let e = Chunk314897.default.getToken(),
-    t = Chunk314897.default.getId();
-  null != module && Chunk830168.Z.setCredentials(exports, module)
+  let e = d.default.getToken(),
+    t = d.default.getId();
+  null != e && _.Z.setCredentials(t, e)
 }
 
 function W(e) {
@@ -213,17 +213,17 @@ function W(e) {
 }
 
 function K() {
-  for (let e of Chunk594190.ZP.getRunningDiscordApplicationIds()) Chunk51025.al(module, module);
-  let e = Chunk594190.ZP.getVisibleGame();
-  return I || null == module || module.pid === R || Chunk51025.wO(), R = null == module ? null : module.pid, false
+  for (let e of u.ZP.getRunningDiscordApplicationIds()) c.al(e, e);
+  let e = u.ZP.getVisibleGame();
+  return I || null == e || e.pid === R || c.wO(), R = null == e ? null : e.pid, false
 }
 
 function z() {
-  (0, Chunk358085.isDesktop)() && Y()
+  (0, m.isDesktop)() && Y()
 }
 
 function q() {
-  Chunk433517.K.remove(O), (0, Chunk358085.isDesktop)() && Chunk830168.Z.pause()
+  s.K.remove(O), (0, m.isDesktop)() && _.Z.pause()
 }
 
 function Q(e) {
@@ -235,12 +235,12 @@ function Q(e) {
 class X extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
-    let t = null != (e = Chunk433517.K.get(O)) ? module : {
+    let t = null != (e = s.K.get(O)) ? e : {
       queue: null,
       paused: null,
       userActions: null
     };
-    null != exports.queue && (v = Q(exports.queue)), null != exports.paused && (I = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
+    null != t.queue && (v = Q(t.queue)), null != t.paused && (I = t.paused), null != t.userActions && (N = new Map(Array.from(t.userActions))), this.waitFor(h.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(f.Z, d.default, h.Z)
   }
   get activeItems() {
     return v.map(e => {
@@ -251,7 +251,7 @@ class X extends(r = Chunk442837.ZP.Store) {
     })
   }
   get finishedItems() {
-    return S.map(Chunk780570.CP)
+    return S.map(p.CP)
   }
   get paused() {
     return I

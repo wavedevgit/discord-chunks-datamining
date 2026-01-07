@@ -84,31 +84,31 @@ class y extends Chunk47770.Z {
   }
   seamlessUpdate() {
     let e = this.getQuality();
-    if (0 === module && this.isReceiving()) {
+    if (0 === e && this.isReceiving()) {
       this.reset(), this.stopStreams();
       return
     }
     switch (this.switchState) {
       case 0:
-        b(false === this.pendingSSRC, "Ready state should not have a pendingSSRC"), this.shouldSeamlessTransition(module) ? (this.logger.info("Starting seamless transition to ".concat(100 === module ? "HQ" : "LQ", " (ssrc ").concat(100 === module ? this.hqSSRC : this.lqSSRC, ")")), this.pendingSSRC = 100 === module ? this.hqSSRC : this.lqSSRC, this.switchState = 2, this.requestBoth()) : (this.logger.info("Starting non-seamless transition to ".concat(100 === module ? "HQ" : "LQ", " (ssrc ").concat(100 === module ? this.hqSSRC : this.lqSSRC, ")")), this.pendingSSRC = 100 === module ? this.hqSSRC : this.lqSSRC, this.switchState = 1, 100 === module ? this.requestHQ() : this.requestLQ());
+        b(false === this.pendingSSRC, "Ready state should not have a pendingSSRC"), this.shouldSeamlessTransition(e) ? (this.logger.info("Starting seamless transition to ".concat(100 === e ? "HQ" : "LQ", " (ssrc ").concat(100 === e ? this.hqSSRC : this.lqSSRC, ")")), this.pendingSSRC = 100 === e ? this.hqSSRC : this.lqSSRC, this.switchState = 2, this.requestBoth()) : (this.logger.info("Starting non-seamless transition to ".concat(100 === e ? "HQ" : "LQ", " (ssrc ").concat(100 === e ? this.hqSSRC : this.lqSSRC, ")")), this.pendingSSRC = 100 === e ? this.hqSSRC : this.lqSSRC, this.switchState = 1, 100 === e ? this.requestHQ() : this.requestLQ());
         break;
       case 2:
-        b(false !== this.pendingSSRC, "PendingSeamless state should have a pendingSSRC"), 60 === module && this.pendingHQ() ? (this.logger.info("Cancelling seamless transition from LQ to HQ, re-requesting LQ (ssrc ".concat(this.lqSSRC, ")")), this.switchState = 0, this.pendingSSRC = false, this.requestLQ()) : 100 === module && this.pendingLQ() && (this.logger.info("Cancelling seamless transition from HQ to LQ, re-requesting HQ (ssrc ".concat(this.hqSSRC, ")")), this.switchState = 0, this.pendingSSRC = false, this.requestHQ());
+        b(false !== this.pendingSSRC, "PendingSeamless state should have a pendingSSRC"), 60 === e && this.pendingHQ() ? (this.logger.info("Cancelling seamless transition from LQ to HQ, re-requesting LQ (ssrc ".concat(this.lqSSRC, ")")), this.switchState = 0, this.pendingSSRC = false, this.requestLQ()) : 100 === e && this.pendingLQ() && (this.logger.info("Cancelling seamless transition from HQ to LQ, re-requesting HQ (ssrc ".concat(this.hqSSRC, ")")), this.switchState = 0, this.pendingSSRC = false, this.requestHQ());
         break;
       case 1:
-        b(false !== this.pendingSSRC, "Pending state should have a pendingSSRC"), 60 === module && this.pendingHQ() ? (this.logger.info("Cancelling seamless transition from LQ to HQ, re-requesting LQ (ssrc ".concat(this.lqSSRC, ")")), this.pendingSSRC = this.lqSSRC, this.requestLQ()) : 100 === module && this.pendingLQ() && (this.logger.info("Cancelling seamless transition from HQ to LQ, re-requesting HQ (ssrc ".concat(this.hqSSRC, ")")), this.pendingSSRC = this.hqSSRC, this.requestHQ());
+        b(false !== this.pendingSSRC, "Pending state should have a pendingSSRC"), 60 === e && this.pendingHQ() ? (this.logger.info("Cancelling seamless transition from LQ to HQ, re-requesting LQ (ssrc ".concat(this.lqSSRC, ")")), this.pendingSSRC = this.lqSSRC, this.requestLQ()) : 100 === e && this.pendingLQ() && (this.logger.info("Cancelling seamless transition from HQ to LQ, re-requesting HQ (ssrc ".concat(this.hqSSRC, ")")), this.pendingSSRC = this.hqSSRC, this.requestHQ());
         break;
       case 3:
-        b(this.isReceiving(), "Should be receiving a stream in Finalizing state"), this.logger.info("Finalizing seamless transition to ".concat(100 === module ? "HQ" : "LQ")), 100 === module ? this.requestHQ() : 60 === module && this.requestLQ(), this.switchState = 0, this.pendingSSRC = false
+        b(this.isReceiving(), "Should be receiving a stream in Finalizing state"), this.logger.info("Finalizing seamless transition to ".concat(100 === e ? "HQ" : "LQ")), 100 === e ? this.requestHQ() : 60 === e && this.requestLQ(), this.switchState = 0, this.pendingSSRC = false
     }
   }
   directUpdate() {
     let e = this.getQuality();
-    if (0 === module && this.isReceiving()) {
+    if (0 === e && this.isReceiving()) {
       this.reset(), this.stopStreams();
       return
     }
-    this.logger.info("Starting direct transition to ".concat(100 === module ? "HQ" : "LQ", " (ssrc ").concat(100 === module ? this.hqSSRC : this.lqSSRC, ")")), 60 === module ? this.requestLQ() : this.requestHQ()
+    this.logger.info("Starting direct transition to ".concat(100 === e ? "HQ" : "LQ", " (ssrc ").concat(100 === e ? this.hqSSRC : this.lqSSRC, ")")), 60 === e ? this.requestLQ() : this.requestHQ()
   }
   singleCastUpdate() {
     b(1 === this.videoStreams.length, "singleCastUpdate should only be called when there is exactly one video stream"), b(0 === this.switchState, "Switch state should not be set for non-simulcast streams"), b(false === this.pendingSSRC, "Pending SSRC should not be set for non-simulcast streams"), this.incomingVideoEnabled ? this.requestDefaultStream() : this.stopDefaultStream()
@@ -155,49 +155,49 @@ class y extends Chunk47770.Z {
   requestDefaultStream() {
     b(1 === this.videoStreams.length, "requestDefaultStream should only be called when there is exactly one video stream");
     let e = {};
-    module[this.videoStreams[0].ssrc] = 100;
+    e[this.videoStreams[0].ssrc] = 100;
     let t = [this.videoStreams[0].ssrc];
-    this.request(module, exports)
+    this.request(e, t)
   }
   stopDefaultStream() {
     b(1 === this.videoStreams.length, "stopDefaultStream should only be called when there is exactly one video stream");
     let e = {};
-    module[this.videoStreams[0].ssrc] = 0;
+    e[this.videoStreams[0].ssrc] = 0;
     let t = [];
-    this.request(module, exports)
+    this.request(e, t)
   }
   requestBoth() {
     b(2 === this.videoStreams.length, "requestBoth should only be called when there are two video streams"), b(true !== this.videoStreams.find(e => e.ssrc === this.hqSSRC), "requestBoth called with invalid hqSSRC"), b(true !== this.videoStreams.find(e => e.ssrc === this.lqSSRC), "requestBoth called with invalid lqSSRC");
     let e = {};
-    module[this.lqSSRC] = 60, module[this.hqSSRC] = 100;
+    e[this.lqSSRC] = 60, e[this.hqSSRC] = 100;
     let t = [this.lqSSRC, this.hqSSRC];
-    this.request(module, exports), setTimeout(() => {
+    this.request(e, t), setTimeout(() => {
       2 === this.switchState && (this.logger.warn("Seamless transition timeout, forcing switch"), this.reset(), this.update())
     }, 2e3)
   }
   requestHQ() {
     b(2 === this.videoStreams.length, "requestHQ should only be called when there are two video streams"), b(true !== this.videoStreams.find(e => e.ssrc === this.hqSSRC), "requestHQ called with invalid hqSSRC"), b(true !== this.videoStreams.find(e => e.ssrc === this.lqSSRC), "requestHQ called with invalid lqSSRC");
     let e = {};
-    module[this.lqSSRC] = 0, module[this.hqSSRC] = 100;
+    e[this.lqSSRC] = 0, e[this.hqSSRC] = 100;
     let t = [this.hqSSRC];
-    this.request(module, exports)
+    this.request(e, t)
   }
   requestLQ() {
     b(2 === this.videoStreams.length, "requestLQ should only be called when there are two video streams"), b(true !== this.videoStreams.find(e => e.ssrc === this.hqSSRC), "requestLQ called with invalid hqSSRC"), b(true !== this.videoStreams.find(e => e.ssrc === this.lqSSRC), "requestLQ called with invalid lqSSRC");
     let e = {};
-    module[this.lqSSRC] = 60, module[this.hqSSRC] = 0;
+    e[this.lqSSRC] = 60, e[this.hqSSRC] = 0;
     let t = [this.lqSSRC];
-    this.request(module, exports)
+    this.request(e, t)
   }
   stopStreams() {
     b(2 === this.videoStreams.length, "stopStreams should only be called when there are two video streams"), b(true !== this.videoStreams.find(e => e.ssrc === this.hqSSRC), "stopStreams called with invalid hqSSRC"), b(true !== this.videoStreams.find(e => e.ssrc === this.lqSSRC), "stopStreams called with invalid lqSSRC"), b(false === this.pendingSSRC, "pendingSSRC should be reset before stopping streams");
     let e = {};
-    module[this.lqSSRC] = 0, module[this.hqSSRC] = 0;
+    e[this.lqSSRC] = 0, e[this.hqSSRC] = 0;
     let t = [];
-    this.request(module, exports)
+    this.request(e, t)
   }
   getQuality() {
-    return this.incomingVideoEnabled ? this.debugQualityOverride === Chunk65154.Z.LOW ? 60 : this.debugQualityOverride === Chunk65154.Z.HIGH || this.isOneToOneCall() ? 100 : this.downgraded && this.senderSupportsSimulcast() ? 60 : 100 : 0
+    return this.incomingVideoEnabled ? this.debugQualityOverride === p.Z.LOW ? 60 : this.debugQualityOverride === p.Z.HIGH || this.isOneToOneCall() ? 100 : this.downgraded && this.senderSupportsSimulcast() ? 60 : 100 : 0
   }
   setVideoSize(e, t, n) {
     this.streamId === e && (!((0, d.isAndroid)() || (0, d.isIOS)()) || (0, l.w)("GoLiveQualityManager").enabled) && (null != t && (this.resolutionWidth = t.width, this.resolutionHeight = t.height), null != n && (this.zoom = n), this.delayedUpdate())

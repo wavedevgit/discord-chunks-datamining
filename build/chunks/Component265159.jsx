@@ -49,10 +49,10 @@ function c(e, t) {
 }
 
 function u() {
-  (0, Chunk481060.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await require.e("38047").then(require.bind(require, 975863));
+    } = await n.e("38047").then(n.bind(n, 975863));
     return t => (0, r.jsx)(e, c(s({}, t), {
       source: {
         page: a.ZY5.USER_SETTINGS,

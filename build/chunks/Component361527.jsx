@@ -20,13 +20,13 @@ function s(e) {
 function c() {
   let {
     gameId: e
-  } = (0, Chunk51632.D)();
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk469426.gameProfileContainer,
-    children: [(0, Chunk54381.jsxs)(Chunk793030.xvT, {
+  } = (0, l.D)();
+  return (0, a.jsxs)("div", {
+    className: o.gameProfileContainer,
+    children: [(0, a.jsxs)(i.xvT, {
       variant: "text-lg/normal",
-      children: ["Game Profile - gameId: ", module]
-    }), (0, Chunk54381.jsx)(Chunk254625.d, {
+      children: ["Game Profile - gameId: ", e]
+    }), (0, a.jsx)(r.d, {
       title: "Example Section"
     })]
   })

@@ -56,21 +56,21 @@ function s(e, t, n) {
 }
 
 function l() {
-  Chunk473749.useEffect(() => {
+  r.useEffect(() => {
     let e = document.querySelectorAll("[data-settings-panel-scroller]");
-    if (0 === module.length) return;
-    let t = module[0];
-    if (null == exports) return;
+    if (0 === e.length) return;
+    let t = e[0];
+    if (null == t) return;
     let n = a().debounce(() => {
-      Chunk996435.Z.setState({
+      o.Z.setState({
         disableSidebarCategoryAutoSelect: false
       })
     }, 50);
-    return exports.addEventListener("scroll", require), () => {
-      exports.removeEventListener("scroll", require), null == require || require.cancel()
+    return t.addEventListener("scroll", n), () => {
+      t.removeEventListener("scroll", n), null == n || n.cancel()
     }
-  }, []), Chunk473749.useEffect(() => () => {
-    Chunk996435.Z.setState({
+  }, []), r.useEffect(() => () => {
+    o.Z.setState({
       disableSidebarCategoryAutoSelect: false
     })
   }, [])

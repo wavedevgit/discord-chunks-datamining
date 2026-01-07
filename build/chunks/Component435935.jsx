@@ -105,22 +105,22 @@ class v extends(r = Chunk473749.PureComponent) {
         basis: s,
         style: c,
         wrap: d
-      } = module,
-      p = m(module, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
+      } = e,
+      p = m(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
       h = f({
         style: f({
           flexGrow: i,
           flexShrink: r,
-          flexBasis: Chunk120356
-        }, Chunk575953),
-        className: require === Chunk901195.flexChild ? require : l()(Chunk901195.flexChild, require)
+          flexBasis: s
+        }, c),
+        className: n === u.flexChild ? n : l()(u.flexChild, n)
       }, p);
-    if (!d && "string" != typeof exports && 1 === Chunk473749.Children.count(exports)) {
-      let e = Chunk473749.Children.only(exports);
-      return h.style = f({}, h.style, module.props.style), h.className = l()(module.props.className, require), Chunk473749.cloneElement(module, h)
+    if (!d && "string" != typeof t && 1 === o.Children.count(t)) {
+      let e = o.Children.only(t);
+      return h.style = f({}, h.style, e.props.style), h.className = l()(e.props.className, n), o.cloneElement(e, h)
     }
-    return (0, Chunk54381.jsx)("div", _(f({}, h), {
-      children: exports
+    return (0, a.jsx)("div", _(f({}, h), {
+      children: t
     }))
   }
 }
@@ -144,18 +144,18 @@ class S extends(i = Chunk473749.PureComponent) {
         basis: p,
         style: h,
         gutter: g
-      } = module,
-      E = m(module, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
+      } = e,
+      E = m(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
       b = f({
-        flexShrink: Chunk575953,
+        flexShrink: c,
         flexGrow: d,
         flexBasis: p
       }, h);
-    return (0, Chunk54381.jsx)("div", _(f({
+    return (0, a.jsx)("div", _(f({
       style: b,
-      className: l()(Chunk901195.flex, r, i, Chunk473749, Chunk120356, g, require)
+      className: l()(u.flex, r, i, o, s, g, n)
     }, E), {
-      children: exports
+      children: t
     }))
   }
 }

@@ -7,8 +7,8 @@ var Chunk224706 = require("./224706.js"),
   Chunk594190 = require("./594190.js"),
   Chunk823379 = require("./823379.js");
 async function l() {
-  let e = Chunk594190.ZP.getRunningGames();
-  return (await Promise.all(module.map(async e => {
+  let e = i.ZP.getRunningGames();
+  return (await Promise.all(e.map(async e => {
     let t;
     if (null == e.name) return null;
     try {
@@ -24,5 +24,5 @@ async function l() {
       name: i,
       url: "data:image/bmp;base64,".concat(s)
     } : null
-  }))).filter(Chunk823379.lm)
+  }))).filter(s.lm)
 }

@@ -51,12 +51,12 @@ function C() {
     setPauseDuration: i,
     pauseDuration: l,
     premiumSubscription: u
-  } = (0, Chunk594135.a)(), d = Chunk473749.useCallback(t => {
+  } = (0, E.a)(), d = r.useCallback(t => {
     let {
       value: e
     } = t;
     i(e)
-  }, [Chunk913527]), O = Chunk481060.status === Chunk981631.O0b.PAUSED ? Chunk388032.intl.string(Chunk388032.t.Lp9WoG) : Chunk388032.intl.string(Chunk388032.t.eSR83U), S = function(t) {
+  }, [i]), O = u.status === p.O0b.PAUSED ? b.intl.string(b.t.Lp9WoG) : b.intl.string(b.t.eSR83U), S = function(t) {
     let e = t.status === p.O0b.PAUSED ? b.t.o3upfT : b.t.dBXZEm,
       {
         durations: n,
@@ -79,31 +79,31 @@ function C() {
       radioBarClassName: y.cancelText,
       radioItemIconClassName: y.cancelText
     }), r
-  }(Chunk481060);
-  return (0, Chunk493773.ZP)(() => {
-    S.length < 1 || Chunk913527(S[0].value)
-  }), (0, Chunk54381.jsx)(Chunk793030.Modal, {
-    transitionState: module,
-    title: Chunk388032.intl.string(Chunk388032.t["f3nnB/"]),
-    subtitle: Chunk74538,
+  }(u);
+  return (0, m.ZP)(() => {
+    S.length < 1 || i(S[0].value)
+  }), (0, a.jsx)(s.Modal, {
+    transitionState: t,
+    title: b.intl.string(b.t["f3nnB/"]),
+    subtitle: O,
     onClose: async () => {
-      await exports()
+      await e()
     },
     actions: [{
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
-      onClick: exports
+      text: b.intl.string(b.t.h9tkAK),
+      onClick: e
     }, {
       variant: "primary",
       disabled: null === l,
-      text: Chunk388032.intl.string(Chunk388032.t["3PatSz"]),
+      text: b.intl.string(b.t["3PatSz"]),
       onClick: () => {
-        0 === l ? require(Chunk45474.R.WHAT_YOU_LOSE) : require(Chunk45474.R.PAUSE_CONFIRM)
+        0 === l ? n(_.R.WHAT_YOU_LOSE) : n(_.R.PAUSE_CONFIRM)
       }
     }],
-    children: (0, Chunk54381.jsx)(Chunk755721.Gu, {
+    children: (0, a.jsx)(c.Gu, {
       options: S,
-      onChange: Chunk355467,
+      onChange: d,
       value: l
     })
   })
@@ -118,62 +118,62 @@ function P() {
     analyticsLocation: o,
     setStep: c,
     analyticsLocations: d
-  } = (0, Chunk594135.a)(), [m, O] = Chunk473749.useState(false), [f, C] = Chunk473749.useState(false);
-  if (null == require) return void Chunk755721(Chunk45474.R.PAUSE_SELECT);
+  } = (0, E.a)(), [m, O] = r.useState(false), [f, C] = r.useState(false);
+  if (null == n) return void c(_.R.PAUSE_SELECT);
   let P = null,
-    T = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED].includes(Chunk913527.status) ? Chunk913527.currentPeriodStart : Chunk913527.currentPeriodEnd,
-    v = l()(T).add(require, "days").toDate();
-  switch (Chunk913527.status) {
-    case Chunk981631.O0b.PAST_DUE:
-      P = Chunk388032.intl.format(Chunk388032.t["xaS18/"], {
-        pauseDuration: require,
+    T = [p.O0b.PAST_DUE, p.O0b.PAUSED].includes(i.status) ? i.currentPeriodStart : i.currentPeriodEnd,
+    v = l()(T).add(n, "days").toDate();
+  switch (i.status) {
+    case p.O0b.PAST_DUE:
+      P = b.intl.format(b.t["xaS18/"], {
+        pauseDuration: n,
         resumeDate: v
       });
       break;
-    case Chunk981631.O0b.PAUSED:
-      P = Chunk388032.intl.format(Chunk388032.t.Vur3Fc, {
+    case p.O0b.PAUSED:
+      P = b.intl.format(b.t.Vur3Fc, {
         resumeDate: v
       });
       break;
     default:
-      P = Chunk388032.intl.format(Chunk388032.t.W85vFA, {
+      P = b.intl.format(b.t.W85vFA, {
         pauseDate: T,
         resumeDate: v,
-        pauseDuration: require
+        pauseDuration: n
       })
   }
-  return (0, Chunk54381.jsxs)(Chunk793030.Modal, {
-    title: Chunk388032.intl.string(Chunk388032.t.AnMG5x),
-    transitionState: module,
+  return (0, a.jsxs)(s.Modal, {
+    title: b.intl.string(b.t.AnMG5x),
+    transitionState: t,
     actions: [{
-      text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
+      text: b.intl.string(b.t.h9tkAK),
       variant: "primary",
-      onClick: exports
+      onClick: e
     }, {
-      text: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
+      text: b.intl.string(b.t["cY+Oob"]),
       variant: "critical-primary",
-      disabled: Chunk296848 || null == require,
+      disabled: f || null == n,
       onClick: async () => {
         await S({
-          premiumSubscription: Chunk913527,
-          pauseDuration: require,
+          premiumSubscription: i,
+          pauseDuration: n,
           setIsCancelling: C,
-          setHasError: Chunk74538,
-          onClose: exports,
-          analyticsLocations: Chunk355467,
-          analyticsLocation: Chunk99945
+          setHasError: O,
+          onClose: e,
+          analyticsLocations: d,
+          analyticsLocation: o
         })
       }
     }],
     onClose: async () => {
-      await exports()
+      await e()
     },
-    children: [Chunk493773 ? (0, Chunk54381.jsx)(Chunk481060.Wn, {
-      messageType: Chunk481060.QYI.ERROR,
-      className: Chunk278900.errorBlock,
-      children: Chunk388032.intl.string(Chunk388032.t["5mlOCW"])
-    }) : null, (0, Chunk54381.jsx)("div", {
-      className: Chunk278900.body,
+    children: [m ? (0, a.jsx)(u.Wn, {
+      messageType: u.QYI.ERROR,
+      className: y.errorBlock,
+      children: b.intl.string(b.t["5mlOCW"])
+    }) : null, (0, a.jsx)("div", {
+      className: y.body,
       children: P
     })]
   })

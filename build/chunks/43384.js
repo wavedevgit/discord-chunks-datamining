@@ -9,9 +9,9 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.BILLING_TRANSACTION_HISTORY, {
     Component: Chunk443702.v0,
-    useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.obLrcK)]
+    useSearchTerms: () => [u.intl.string(u.t.obLrcK)]
   }),
   a = (0, Chunk509613.k4)(Chunk313789.n.BILLING_TRANSACTION_HISTORY_CATEGORY, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.obLrcK),
+    useTitle: () => u.intl.string(u.t.obLrcK),
     buildLayout: () => [r]
   })

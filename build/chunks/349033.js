@@ -85,7 +85,7 @@ class l {
     for (let e in this._rules.forEach(e => {
         var t;
         return null == (t = e.cache) ? true : t.clear()
-      }), this._followers) this._followers[module].forEach(e => {
+      }), this._followers) this._followers[e].forEach(e => {
       var t;
       return null == (t = e.cache) ? true : t.clear()
     })
@@ -114,7 +114,7 @@ class c {
   }
   getMatch() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0;
-    return this.match[module]
+    return this.match[e]
   }
   setData(e, t) {
     null == this._data && (this._data = new Map), this._data.set(e, t)

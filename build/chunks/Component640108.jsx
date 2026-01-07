@@ -166,7 +166,7 @@ class Q extends(r = Chunk473749.Component) {
     } = this.state;
     return {
       transform: [{
-        translateY: module.interpolate({
+        translateY: e.interpolate({
           inputRange: [0, 1],
           outputRange: ["0%", "100%"]
         })
@@ -182,33 +182,33 @@ class Q extends(r = Chunk473749.Component) {
       onPlay: i,
       disabled: o
     } = this.props;
-    return module ? (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      className: Chunk889350.videoButton,
+    return e ? (0, a.jsx)(_.P3F, {
+      className: j.videoButton,
       onClick: r,
-      tabIndex: Chunk473749 ? false : 0,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.ZcgDJX),
-      children: (0, Chunk54381.jsx)(Chunk481060.fpf, {
+      tabIndex: o ? false : 0,
+      "aria-label": L.intl.string(L.t.ZcgDJX),
+      children: (0, a.jsx)(_.fpf, {
         size: "xs",
         color: "currentColor",
-        className: Chunk889350.controlIcon
+        className: j.controlIcon
       }, "pause")
-    }) : null != exports && exports === require ? (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      className: Chunk889350.videoButton,
+    }) : null != t && t === n ? (0, a.jsx)(_.P3F, {
+      className: j.videoButton,
       onClick: i,
-      tabIndex: Chunk473749 ? false : 0,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.hsvh0i),
-      children: (0, Chunk54381.jsx)(Chunk181058.Z, {
-        className: Chunk889350.controlIcon
+      tabIndex: o ? false : 0,
+      "aria-label": L.intl.string(L.t.hsvh0i),
+      children: (0, a.jsx)(y.Z, {
+        className: j.controlIcon
       }, "replay")
-    }) : (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      className: Chunk889350.videoButton,
+    }) : (0, a.jsx)(_.P3F, {
+      className: j.videoButton,
       onClick: i,
-      tabIndex: Chunk473749 ? false : 0,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.RscU7I),
-      children: (0, Chunk54381.jsx)(Chunk481060.o1U, {
+      tabIndex: o ? false : 0,
+      "aria-label": L.intl.string(L.t.RscU7I),
+      children: (0, a.jsx)(_.o1U, {
         size: "xs",
         color: "currentColor",
-        className: Chunk889350.controlIcon
+        className: j.controlIcon
       }, "play")
     })
   }
@@ -228,41 +228,41 @@ class Q extends(r = Chunk473749.Component) {
       width: p,
       volume: _,
       type: m
-    } = this.props, h = "string" == typeof Chunk283693 || Chunk283693 > 250;
-    return (0, Chunk54381.jsxs)(Chunk748780.Z.div, {
-      className: Chunk70097 === Y.VIDEO ? Chunk889350.videoControls : Chunk889350.audioControls,
+    } = this.props, h = "string" == typeof p || p > 250;
+    return (0, a.jsxs)(d.Z.div, {
+      className: m === Y.VIDEO ? j.videoControls : j.audioControls,
       onClick: e => e.stopPropagation(),
       onDoubleClick: e => e.stopPropagation(),
       style: this.getAnimatedStyle(),
-      children: [this.renderPlayIcon(), Chunk167080 ? (0, Chunk54381.jsx)(q, {
-        current: require,
+      children: [this.renderPlayIcon(), h ? (0, a.jsx)(q, {
+        current: n,
         duration: r
-      }) : null, (0, Chunk54381.jsx)(Chunk540026.Z, {
-        buffers: module,
+      }) : null, (0, a.jsx)(C.Z, {
+        buffers: e,
         value: null != r ? r : 0,
-        onDrag: Chunk473749,
-        onDragEnd: Chunk120356,
+        onDrag: o,
+        onDragEnd: s,
         onDragStart: l,
-        type: Chunk540026.Z.Types.DURATION,
+        type: C.Z.Types.DURATION,
         ref: this.setDurationRef
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk727829.flex,
-        children: (0, Chunk54381.jsx)(Chunk793148.Z, {
+      }), (0, a.jsx)("div", {
+        className: M.flex,
+        children: (0, a.jsx)(w.Z, {
           ref: this.setVolumeButtonRef,
           muted: i,
-          value: Chunk481060,
+          value: _,
           minValue: 0,
           maxValue: 1,
           currentWindow: window,
           onValueChange: e => o(e, C.Z.Types.VOLUME),
-          onToggleMute: Chunk392711,
+          onToggleMute: c,
           onVolumeShow: u,
-          onVolumeHide: Chunk374470,
-          iconClassName: Chunk889350.controlIcon,
+          onVolumeHide: f,
+          iconClassName: j.controlIcon,
           iconColor: "currentColor",
-          sliderWrapperClassName: Chunk889350.volumeSliderWrapper
+          sliderWrapperClassName: j.volumeSliderWrapper
         })
-      }), exports]
+      }), t]
     })
   }
   constructor(...e) {
@@ -314,7 +314,7 @@ class J extends Chunk473749.Component {
   pop() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     this.setState({
-      play: module
+      play: e
     }, this.popAnimation)
   }
   getAnimatedStyle() {
@@ -322,13 +322,13 @@ class J extends Chunk473749.Component {
       opacity: e,
       scale: t
     } = this.state;
-    return Chunk748780.Z.accelerate({
-      opacity: module.interpolate({
+    return d.Z.accelerate({
+      opacity: e.interpolate({
         inputRange: [0, 1],
         outputRange: [0, .8]
       }),
       transform: [{
-        scale: exports.interpolate({
+        scale: t.interpolate({
           inputRange: [0, 1],
           outputRange: [1, 2]
         })
@@ -338,12 +338,12 @@ class J extends Chunk473749.Component {
   render() {
     let {
       play: e
-    } = this.state, t = module ? Chunk481060.o1U : Chunk481060.fpf;
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: Chunk889350.playPausePop,
+    } = this.state, t = e ? _.o1U : _.fpf;
+    return (0, a.jsx)(d.Z.div, {
+      className: j.playPausePop,
       style: this.getAnimatedStyle(),
-      children: (0, Chunk54381.jsx)(exports, {
-        className: Chunk889350.playPausePopIcon
+      children: (0, a.jsx)(t, {
+        className: j.playPausePopIcon
       })
     })
   }
@@ -394,7 +394,7 @@ class ee {
     return performance.now() - this.stateTime
   }
   sendEvent() {
-    this.analyticsEnabled && (null == this.errorCode && null == this.errorMessage && false === this.metadata.hasValidFrame && (this.errorCode = 4, this.errorMessage = "No valid video frames detected - codec may be unsupported"), Chunk626135.default.track(Chunk981631.rMx.MEDIA_PLAY_FINISHED, {
+    this.analyticsEnabled && (null == this.errorCode && null == this.errorMessage && false === this.metadata.hasValidFrame && (this.errorCode = 4, this.errorMessage = "No valid video frames detected - codec may be unsupported"), O.default.track(D.rMx.MEDIA_PLAY_FINISHED, {
       play_time_sec: this.playTimeSec,
       play_wall_time_ms: this.playWallTimeMs,
       first_play_waiting_ms: this.firstPlayWaitingMs,
@@ -406,9 +406,9 @@ class ee {
       mime_type: this.metadata.mimeType,
       file_size: this.metadata.fileSize,
       file_duration_sec: this.metadata.fileDurationSec,
-      connection_type: Chunk866960.Z.getType(),
-      effective_connection_speed: Chunk866960.Z.getEffectiveConnectionSpeed(),
-      service_provider: Chunk866960.Z.getServiceProvider(),
+      connection_type: b.Z.getType(),
+      effective_connection_speed: b.Z.getEffectiveConnectionSpeed(),
+      service_provider: b.Z.getServiceProvider(),
       error_message: this.errorMessage,
       error_code: this.errorCode
     })), this.playTimeSec = 0, this.playWallTimeMs = 0, this.firstPlayWaitingMs = 0, this.stallCount = 0, this.stallMs = 0, this.seekCount = 0, this.seekWaitingMs = 0, this.playbackStartTime = true, this.lastPlayingTime = true, this.moveToState("not_started")
@@ -557,15 +557,15 @@ class et extends(i = Chunk473749.PureComponent) {
       type: r,
       src: i
     } = this.props;
-    if (r === Y.VIDEO && (Chunk156077.ZP.addChangeListener(this.handleStatsStoreChange), this._hasStatsListener = true, Chunk156077.ZP.isVideoStatsEnabled(i) && !this.state.showStats)) try {
+    if (r === Y.VIDEO && (T.ZP.addChangeListener(this.handleStatsStoreChange), this._hasStatsListener = true, T.ZP.isVideoStatsEnabled(i) && !this.state.showStats)) try {
       this.toggleStats()
     } catch (e) {
-      Chunk156077.ZP.setVideoStats(i, false)
+      T.ZP.setVideoStats(i, false)
     }
     let {
       current: a
     } = this.mediaRef;
-    null != Chunk54381 && (exports && (Chunk54381.muted = exports), module && (this.play(true), this.handleUIUpdate()), Chunk54381.volume = require)
+    null != a && (t && (a.muted = t), e && (this.play(true), this.handleUIUpdate()), a.volume = n)
   }
   componentDidUpdate(e, t) {
     let {
@@ -601,13 +601,13 @@ class et extends(i = Chunk473749.PureComponent) {
     l && !t.fullscreen && null != m ? ((0, I.Dj)(m), m.addEventListener(I.NO, this.handleFullScreenExit)) : !l && t.fullscreen && null != m && (m.removeEventListener(I.NO, this.handleFullScreenExit), (0, I.Pr)(m, m.ownerDocument)), u === C.Z.Types.DURATION && t.dragging !== C.Z.Types.DURATION && s ? p.pause() : u !== C.Z.Types.DURATION && t.dragging === C.Z.Types.DURATION && s && p.play(), c !== t.muted && (p.muted = c, null == i || i(c)), d !== t.volume && (p.volume = d, null == r || r(d))
   }
   componentWillUnmount() {
-    this._unmounted = true, null != this._statsCollector && (this._statsCollector.destroy(), this._statsCollector = null), this._hasStatsListener && (Chunk156077.ZP.removeChangeListener(this.handleStatsStoreChange), this._hasStatsListener = false, this.props.type === Y.VIDEO && Chunk156077.ZP.clearVideoStats(this.props.src));
+    this._unmounted = true, null != this._statsCollector && (this._statsCollector.destroy(), this._statsCollector = null), this._hasStatsListener && (T.ZP.removeChangeListener(this.handleStatsStoreChange), this._hasStatsListener = false, this.props.type === Y.VIDEO && T.ZP.clearVideoStats(this.props.src));
     let {
       current: e
     } = this.mediaRef;
-    if (null == module) return;
-    let t = (0, Chunk228488.fn)(module.parentNode, module);
-    null != exports && (exports.removeEventListener(Chunk228488.NO, this.handleFullScreenExit), (0, Chunk228488.Pr)(exports))
+    if (null == e) return;
+    let t = (0, I.fn)(e.parentNode, e);
+    null != t && (t.removeEventListener(I.NO, this.handleFullScreenExit), (0, I.Pr)(t))
   }
   play() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
@@ -621,28 +621,28 @@ class et extends(i = Chunk473749.PureComponent) {
       } = this.mediaRef;
     if (null != i) {
       let a = {};
-      if ("function" == typeof require) {
-        let e = require();
-        module !== this.state.volume && (i.volume = module, Chunk54381.volume = module)
+      if ("function" == typeof n) {
+        let e = n();
+        e !== this.state.volume && (i.volume = e, a.volume = e)
       }
       if ("function" == typeof r) {
         let e = r();
-        module !== this.state.muted && (i.muted = module, Chunk54381.muted = module)
+        e !== this.state.muted && (i.muted = e, a.muted = e)
       }
-      this.setState(Chunk54381), i.play(), null == exports || exports(module, i.currentTime * Chunk70956.Z.Millis.SECOND, i.duration * Chunk70956.Z.Millis.SECOND)
+      this.setState(a), i.play(), null == t || t(e, i.currentTime * v.Z.Millis.SECOND, i.duration * v.Z.Millis.SECOND)
     }
   }
   getWidth() {
     let {
       width: e
     } = this.props;
-    return "100%" === module ? module : Math.max(module, et.minWidth)
+    return "100%" === e ? e : Math.max(e, et.minWidth)
   }
   getHeight() {
     let {
       height: e
     } = this.props;
-    return "100%" === module ? module : Math.max(module, et.minHeight)
+    return "100%" === e ? e : Math.max(e, et.minHeight)
   }
   updateValue(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
@@ -663,8 +663,8 @@ class et extends(i = Chunk473749.PureComponent) {
     let {
       dragging: e,
       fullscreen: t
-    } = this.state, n = exports ? B : F, r = Math.max(0, Date.now() - this._lastMove) > require;
-    r !== this.state.hideControls && null == module && this.setState({
+    } = this.state, n = t ? B : F, r = Math.max(0, Date.now() - this._lastMove) > n;
+    r !== this.state.hideControls && null == e && this.setState({
       hideControls: r
     })
   }
@@ -680,26 +680,26 @@ class et extends(i = Chunk473749.PureComponent) {
       playing: s,
       fullscreen: l
     } = this.state, c = this.getWidth(), u = this.getHeight();
-    return r ? (0, Chunk54381.jsx)(Chunk70097.Z, {
-      alt: module,
-      className: Chunk889350.video,
+    return r ? (0, a.jsx)(m.Z, {
+      alt: e,
+      className: j.video,
       controls: false,
       height: u,
-      poster: require,
-      width: Chunk392711,
+      poster: n,
+      width: c,
       responsive: i && !l,
-      mediaLayoutType: Chunk473749,
+      mediaLayoutType: o,
       playsInline: true,
-      autoPlay: Chunk120356
-    }) : (0, Chunk54381.jsx)(Chunk70097.Z, {
-      alt: module,
-      className: Chunk889350.video,
+      autoPlay: s
+    }) : (0, a.jsx)(m.Z, {
+      alt: e,
+      className: j.video,
       controls: false,
       playsInline: true,
-      autoPlay: Chunk120356,
+      autoPlay: s,
       height: u,
       responsive: i && !l,
-      mediaLayoutType: l ? Chunk217702.hV.STATIC : Chunk473749,
+      mediaLayoutType: l ? x.hV.STATIC : o,
       onClick: this.handleVideoClick,
       onEnded: this.handleEnded,
       onError: this.handleError,
@@ -711,16 +711,16 @@ class et extends(i = Chunk473749.PureComponent) {
       onTimeUpdate: this._analytics.onTimeUpdate,
       onLoadedMetadata: this.handleLoaded,
       onProgress: this.handleBuffer,
-      poster: require,
+      poster: n,
       preload: this.state.preload,
       ref: this.mediaRef,
-      width: Chunk392711,
-      src: exports
+      width: c,
+      src: t
     })
   }
   renderAudio() {
-    return (0, Chunk54381.jsx)("audio", {
-      className: Chunk889350.audio,
+    return (0, a.jsx)("audio", {
+      className: j.audio,
       controls: false,
       onClick: this.handleVideoClick,
       onEnded: this.handleEnded,
@@ -728,7 +728,7 @@ class et extends(i = Chunk473749.PureComponent) {
       onProgress: this.handleBuffer,
       preload: this.state.preload,
       ref: this.mediaRef,
-      children: (0, Chunk54381.jsx)("source", {
+      children: (0, a.jsx)("source", {
         src: this.props.src
       })
     })
@@ -759,14 +759,14 @@ class et extends(i = Chunk473749.PureComponent) {
         dragging: b
       }
     } = this, y = this.getWidth();
-    return Chunk374470 || require || exports === Y.AUDIO ? (0, Chunk54381.jsx)(Q, {
-      buffers: Chunk392711,
+    return f || n || t === Y.AUDIO ? (0, a.jsx)(Q, {
+      buffers: c,
       currentTime: u,
-      duration: Chunk748780,
-      volume: (0, Chunk36703.P)(Chunk818083, 1),
-      hide: exports === Y.VIDEO && Chunk283693,
-      muted: Chunk481060,
-      autoPlay: require,
+      duration: d,
+      volume: (0, S.P)(g, 1),
+      hide: t === Y.VIDEO && p,
+      muted: _,
+      autoPlay: n,
       onDrag: this.handleDrag,
       onDragEnd: this.handleDragEnd,
       onDragStart: this.handleDragStart,
@@ -774,24 +774,24 @@ class et extends(i = Chunk473749.PureComponent) {
       onPlay: () => this.setPlay(true),
       onToggleMuted: this.toggleMuted,
       onVolumeShow: i,
-      onVolumeHide: Chunk473749,
+      onVolumeHide: o,
       onControlsShow: l,
-      onControlsHide: Chunk120356,
-      playing: Chunk70097,
-      dragging: Chunk866960,
-      type: exports,
+      onControlsHide: s,
+      playing: m,
+      dragging: b,
+      type: t,
       ref: this.controlsRef,
-      width: Chunk167080 ? window.screen.width : Chunk181058,
+      width: h ? window.screen.width : y,
       disabled: !r,
-      children: exports === Y.VIDEO ? (0, Chunk54381.jsx)(Chunk268353.Z, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["2nM3Pk"]),
-        className: Chunk889350.videoButton,
-        iconClassName: Chunk889350.controlIcon,
+      children: t === Y.VIDEO ? (0, a.jsx)(E.Z, {
+        "aria-label": L.intl.string(L.t["2nM3Pk"]),
+        className: j.videoButton,
+        iconClassName: j.controlIcon,
         guestWindow: window,
         onClick: this.toggleFullscreen,
-        node: (0, Chunk228488.fn)(null == module ? true : module.parentNode, module)
+        node: (0, I.fn)(null == e ? true : e.parentNode, e)
       }) : null
-    }) : (0, Chunk54381.jsx)(Chunk455813.Z, {
+    }) : (0, a.jsx)(A.Z, {
       onPlay: this.handleVideoClick,
       inactive: !r
     })
@@ -805,17 +805,17 @@ class et extends(i = Chunk473749.PureComponent) {
       playable: i,
       mimeType: o
     } = this.props;
-    return null == module || null == exports ? null : r === Y.AUDIO ? (0, Chunk54381.jsx)(X, {
-      fileName: module,
-      fileSize: exports,
-      src: require,
+    return null == e || null == t ? null : r === Y.AUDIO ? (0, a.jsx)(X, {
+      fileName: e,
+      fileSize: t,
+      src: n,
       disabled: !i,
-      mimeType: Chunk473749,
+      mimeType: o,
       hideDownloadButton: true
     }) : null
   }
   renderPlayPausePop() {
-    return (0, Chunk54381.jsx)(J, {
+    return (0, a.jsx)(J, {
       ref: this.playPausePopRef
     })
   }
@@ -827,12 +827,12 @@ class et extends(i = Chunk473749.PureComponent) {
     } = this.props, {
       fullscreen: r
     } = this.state, i = this.getWidth();
-    return r ? W : exports === Y.AUDIO ? {
+    return r ? W : t === Y.AUDIO ? {
       width: true,
       height: "auto"
-    } : module ? true : {
+    } : e ? true : {
       width: i,
-      height: require
+      height: n
     }
   }
   render() {
@@ -850,52 +850,52 @@ class et extends(i = Chunk473749.PureComponent) {
       fullscreen: d,
       hideControls: f,
       playing: p
-    } = this.state, m = Chunk889350.wrapperPaused;
-    if (exports === Y.AUDIO ? m = Chunk889350.wrapperAudio : Chunk374470 ? m = Chunk889350.wrapperControlsHidden : Chunk283693 && (m = Chunk889350.wrapperPlaying), r && exports === Y.VIDEO) {
+    } = this.state, m = j.wrapperPaused;
+    if (t === Y.AUDIO ? m = j.wrapperAudio : f ? m = j.wrapperControlsHidden : p && (m = j.wrapperPlaying), r && t === Y.VIDEO) {
       let t = this.getWidth();
-      return (0, Chunk54381.jsxs)("div", {
-        className: l()(Chunk70097, {
-          [Chunk889350.wrapperMediaMosaic]: Chunk392711 === Chunk217702.hV.MOSAIC
+      return (0, a.jsxs)("div", {
+        className: l()(m, {
+          [j.wrapperMediaMosaic]: c === x.hV.MOSAIC
         }),
-        style: Chunk120356 ? true : {
-          width: exports,
-          height: module
+        style: s ? true : {
+          width: t,
+          height: e
         },
         onKeyDown: this.handleKeyDown,
         tabIndex: 0,
-        children: [this.renderMetadata(), this.renderVideo(), (0, Chunk54381.jsx)("div", {
-          className: Chunk889350.playCenter,
-          children: (0, Chunk54381.jsx)(Chunk283756.Z, {
-            className: Chunk889350.__invalid_playButton,
-            externalURL: require,
-            renderLinkComponent: Chunk473749
+        children: [this.renderMetadata(), this.renderVideo(), (0, a.jsx)("div", {
+          className: j.playCenter,
+          children: (0, a.jsx)(N.Z, {
+            className: j.__invalid_playButton,
+            externalURL: n,
+            renderLinkComponent: o
           })
         })]
       })
     }
-    return (0, Chunk54381.jsxs)("div", {
-      className: l()(Chunk70097, Chunk889350.newMosaicStyle, i, {
-        [Chunk889350.wrapperMediaMosaic]: Chunk392711 === Chunk217702.hV.MOSAIC
+    return (0, a.jsxs)("div", {
+      className: l()(m, j.newMosaicStyle, i, {
+        [j.wrapperMediaMosaic]: c === x.hV.MOSAIC
       }),
-      "data-fullscreen": Chunk748780,
+      "data-fullscreen": d,
       onMouseEnter: this.handleMouseEnter,
       onMouseLeave: this.handleMouseLeave,
-      onMouseMove: Chunk283693 ? this.handleMouseMove : true,
+      onMouseMove: p ? this.handleMouseMove : true,
       onKeyDown: this.handleKeyDown,
       tabIndex: 0,
       style: this.getMediaStyle(),
-      children: [this.renderMetadata(), exports === Y.AUDIO ? this.renderAudio() : this.renderVideo(), (0, Chunk54381.jsx)(Chunk481060.f6W, {
-        theme: Chunk981631.BRd.MIDNIGHT,
+      children: [this.renderMetadata(), t === Y.AUDIO ? this.renderAudio() : this.renderVideo(), (0, a.jsx)(_.f6W, {
+        theme: D.BRd.MIDNIGHT,
         children: e => (0, a.jsx)("div", {
           className: e,
           children: this.renderControls()
         })
-      }), exports === Y.VIDEO ? this.renderPlayPausePop() : null, null != u ? (0, Chunk54381.jsx)("div", {
+      }), t === Y.VIDEO ? this.renderPlayPausePop() : null, null != u ? (0, a.jsx)("div", {
         className: l()({
-          [Chunk889350.overlayContentHidden]: Chunk283693 || Chunk748780
+          [j.overlayContentHidden]: p || d
         }),
         children: u()
-      }) : null, exports === Y.VIDEO && this.state.showStats && null != this.state.videoStats ? (0, Chunk54381.jsx)(Chunk428940._, {
+      }) : null, t === Y.VIDEO && this.state.showStats && null != this.state.videoStats ? (0, a.jsx)(R._, {
         stats: this.state.videoStats,
         onClose: this.toggleStats
       }) : null]
@@ -905,29 +905,29 @@ class et extends(i = Chunk473749.PureComponent) {
     let {
       current: e
     } = this.mediaRef;
-    if (null == module || !(0, Chunk374470.kK)(module, HTMLVideoElement)) return;
+    if (null == e || !(0, f.kK)(e, HTMLVideoElement)) return;
     if (this.props.type !== Y.VIDEO) {
       this._analytics.metadata.hasValidFrame = true;
       return
     }
     if (null != this._analytics.metadata.hasValidFrame) return;
-    let t = module.videoHeight,
-      n = module.currentTime,
-      r = module.readyState;
-    if (0 === exports && r >= 2) return void setTimeout(() => {
-      if (null == module) return;
-      let t = module.videoHeight,
-        r = module.currentTime;
-      if (0 === exports && r > require + .5) {
+    let t = e.videoHeight,
+      n = e.currentTime,
+      r = e.readyState;
+    if (0 === t && r >= 2) return void setTimeout(() => {
+      if (null == e) return;
+      let t = e.videoHeight,
+        r = e.currentTime;
+      if (0 === t && r > n + .5) {
         this._analytics.metadata.hasValidFrame = false;
         return
       }
-      if (exports > 0) {
+      if (t > 0) {
         this._analytics.metadata.hasValidFrame = true;
         return
       }
     }, 1500);
-    if (exports > 0) {
+    if (t > 0) {
       this._analytics.metadata.hasValidFrame = true;
       return
     }

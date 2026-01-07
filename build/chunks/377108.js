@@ -97,7 +97,7 @@ class c extends Chunk495852.C {
       no: 1,
       name: "versions",
       kind: "message",
-      T: () => Chunk397696.L
+      T: () => s.L
     }, {
       no: 2,
       name: "favorite_gifs",

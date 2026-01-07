@@ -17,37 +17,37 @@ let d = (0, Chunk972959.H)(() => ({
 
 function u() {
   let e = d.useField("error"),
-    t = Chunk473749.useCallback(() => {
+    t = r.useCallback(() => {
       let e = d.getField("urlString");
-      if (null == module || "" === module) return void d.setState({
+      if (null == e || "" === e) return void d.setState({
         error: "URL is required"
       });
-      let t = (0, Chunk722589.default)(module);
-      if (null == exports) return void d.setState({
+      let t = (0, o.default)(e);
+      if (null == t) return void d.setState({
         error: "String did not match expected format"
       });
-      (0, Chunk518596.openUserSettingsFromParsedUrl)({
-        match: exports,
+      (0, c.openUserSettingsFromParsedUrl)({
+        match: t,
         urlOrigin: "devtools"
       })
     }, []);
-  return (0, Chunk54381.jsxs)(Chunk793030.C3N, {
+  return (0, a.jsxs)(i.C3N, {
     label: "Settings Deep Link Tool",
-    children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
+    children: [(0, a.jsx)(l.oil, {
       label: "URL",
       placeholder: "e.g. /settings/appearance",
       onChange: e => d.setState({
         urlString: e,
         error: null
       })
-    }), (0, Chunk54381.jsx)(Chunk793030.zxk, {
+    }), (0, a.jsx)(i.zxk, {
       variant: "primary",
-      onClick: exports,
+      onClick: t,
       text: "Open User Settings for URL"
-    }), null != module && (0, Chunk54381.jsx)(Chunk793030.xvT, {
+    }), null != e && (0, a.jsx)(i.xvT, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      children: module
+      children: e
     })]
   })
 }

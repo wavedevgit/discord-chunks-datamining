@@ -64,52 +64,52 @@ function b() {
     roleStyle: n,
     highContrastMode: m,
     switchIconsEnabled: g
-  } = (0, Chunk442837.cj)([Chunk607070.Z], () => ({
-    saturation: Chunk607070.Z.saturation,
-    useReducedMotion: Chunk607070.Z.useReducedMotion,
-    roleStyle: Chunk607070.Z.roleStyle,
-    highContrastMode: Chunk607070.Z.isHighContrastModeEnabled,
-    switchIconsEnabled: Chunk607070.Z.isSwitchIconsEnabled
-  })), b = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.displayNameStylesEnabled), y = (0, Chunk877371.A)("useAccessibilityItems"), O = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.hdrDynamicRange), v = (0, Chunk651123.z)("useAccessibilityItems"), S = [{
-    name: Chunk388032.intl.string(Chunk388032.t.D5Fma9),
+  } = (0, i.cj)([s.Z], () => ({
+    saturation: s.Z.saturation,
+    useReducedMotion: s.Z.useReducedMotion,
+    roleStyle: s.Z.roleStyle,
+    highContrastMode: s.Z.isHighContrastModeEnabled,
+    switchIconsEnabled: s.Z.isSwitchIconsEnabled
+  })), b = (0, i.e7)([s.Z], () => s.Z.displayNameStylesEnabled), y = (0, c.A)("useAccessibilityItems"), O = (0, i.e7)([d.ZP], () => d.ZP.hdrDynamicRange), v = (0, l.z)("useAccessibilityItems"), S = [{
+    name: p.intl.string(p.t.D5Fma9),
     value: "no-limit"
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.ldcGIH),
+    name: p.intl.string(p.t.ldcGIH),
     value: "standard"
   }], I = [{
-    name: Chunk388032.intl.string(Chunk388032.t.YEOEi6),
+    name: p.intl.string(p.t.YEOEi6),
     value: "username"
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.mQaro3),
+    name: p.intl.string(p.t.mQaro3),
     value: "dot"
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.Ji2EVJ),
+    name: p.intl.string(p.t.Ji2EVJ),
     value: "hidden"
   }];
 
   function T() {
-    Chunk626135.default.track(Chunk981631.rMx.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
+    u.default.track(f.rMx.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
       enabled: !b
-    }), (0, Chunk857595.X2)(!b)
+    }), (0, o.X2)(!b)
   }
-  let C = [(0, Chunk54381.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk54381.jsx)(Chunk481060.S89, {
+  let C = [(0, r.jsx)(a.kSQ, {
+    children: (0, r.jsx)(a.S89, {
       id: "reduced-motion",
-      label: Chunk388032.intl.string(Chunk388032.t.b3XBzg),
-      checked: exports,
-      action: () => (0, Chunk857595.Zt)(exports ? "no-preference" : "reduce")
+      label: p.intl.string(p.t.b3XBzg),
+      checked: t,
+      action: () => (0, o.Zt)(t ? "no-preference" : "reduce")
     })
-  }, "reduced-motion"), (0, Chunk54381.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk54381.jsx)(Chunk481060.S89, {
+  }, "reduced-motion"), (0, r.jsx)(a.kSQ, {
+    children: (0, r.jsx)(a.S89, {
       id: "high-contrast",
-      label: Chunk388032.intl.string(Chunk388032.t.aZlePv),
+      label: p.intl.string(p.t.aZlePv),
       checked: m,
-      action: () => (0, Chunk857595.vW)(m ? Chunk607070.X.DEFAULT : Chunk607070.X.HIGH)
+      action: () => (0, o.vW)(m ? s.X.DEFAULT : s.X.HIGH)
     })
-  }, "high-contrast"), (0, Chunk54381.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk54381.jsx)(Chunk481060.II_, {
+  }, "high-contrast"), (0, r.jsx)(a.kSQ, {
+    children: (0, r.jsx)(a.II_, {
       id: "input",
-      label: Chunk388032.intl.string(Chunk388032.t["5PWWCY"]),
+      label: p.intl.string(p.t["5PWWCY"]),
       control: (t, n) => (0, r.jsx)(a._wy, E(h({}, t), {
         ref: n,
         value: 100 * e,
@@ -118,10 +118,10 @@ function b() {
       }))
     })
   }, "input")];
-  return v && C.push((0, Chunk54381.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk54381.jsx)(Chunk481060.sNh, {
+  return v && C.push((0, r.jsx)(a.kSQ, {
+    children: (0, r.jsx)(a.sNh, {
       id: "hdr-dynamic-range",
-      label: Chunk388032.intl.string(Chunk388032.t.nemtgW),
+      label: p.intl.string(p.t.nemtgW),
       children: S.map(e => {
         let {
           name: t,
@@ -136,10 +136,10 @@ function b() {
         }, n)
       })
     })
-  }, "hdr-dynamic-range")), C.push((0, Chunk54381.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk54381.jsx)(Chunk481060.sNh, {
+  }, "hdr-dynamic-range")), C.push((0, r.jsx)(a.kSQ, {
+    children: (0, r.jsx)(a.sNh, {
       id: "role-colors",
-      label: Chunk388032.intl.string(Chunk388032.t.uSOPWm),
+      label: p.intl.string(p.t.uSOPWm),
       children: I.map(e => {
         let {
           name: t,
@@ -154,19 +154,19 @@ function b() {
         }, i)
       })
     })
-  }, "role-colors"), (0, Chunk54381.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk54381.jsx)(Chunk481060.S89, {
+  }, "role-colors"), (0, r.jsx)(a.kSQ, {
+    children: (0, r.jsx)(a.S89, {
       id: "display-name-styles",
-      label: Chunk388032.intl.string(Chunk143525.default["2gFUEw"]),
+      label: p.intl.string(_.default["2gFUEw"]),
       checked: b,
       action: T
     })
-  }, "display-name-styles")), y && C.push((0, Chunk54381.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk54381.jsx)(Chunk481060.S89, {
+  }, "display-name-styles")), y && C.push((0, r.jsx)(a.kSQ, {
+    children: (0, r.jsx)(a.S89, {
       id: "switch-icons",
-      label: Chunk388032.intl.string(Chunk388032.t["S3z+pV"]),
+      label: p.intl.string(p.t["S3z+pV"]),
       checked: g,
-      action: () => (0, Chunk857595.ky)(!g)
+      action: () => (0, o.ky)(!g)
     })
   }, "switch-icons")), C
 }

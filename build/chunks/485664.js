@@ -14,15 +14,15 @@ var Chunk473749 = require("./473749.js"),
 let c = new Set(["US"]),
   u = new Set(["en-US", "es-ES"]),
   d = () => {
-    let e = (0, Chunk880257.Z)(),
-      t = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getUserCountry()),
-      n = (0, Chunk399606.e7)([Chunk706454.default], () => Chunk706454.default.locale);
-    return Chunk473749.useEffect(() => {
-      null == exports && (0, Chunk823162.hi)()
-    }, [exports]), !module && null != exports && c.has(exports.alpha2) && u.has(require)
+    let e = (0, l.Z)(),
+      t = (0, i.e7)([s.Z], () => s.Z.getUserCountry()),
+      n = (0, i.e7)([o.default], () => o.default.locale);
+    return r.useEffect(() => {
+      null == t && (0, a.hi)()
+    }, [t]), !e && null != t && c.has(t.alpha2) && u.has(n)
   },
   f = () => {
-    let e = (0, Chunk880257.Z)(),
+    let e = (0, l.Z)(),
       t = d();
-    return !module && !exports
+    return !e && !t
   }

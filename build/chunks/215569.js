@@ -83,7 +83,7 @@ class p extends(r = Chunk473749.Component) {
       children: e
     } = this.state;
     if (this.props.transitionAppear)
-      for (let t in module) module[exports] && this.performAppear(exports)
+      for (let t in e) e[t] && this.performAppear(t)
   }
   componentWillUnmount() {
     this._isMounted = false, this._keyChildMapping = {}, this.state.children = {}
@@ -157,15 +157,15 @@ class p extends(r = Chunk473749.Component) {
     } = this.props, {
       children: n
     } = this.state, r = [];
-    for (let t in require) {
-      let a = require[exports];
-      null != Chunk830483 && Chunk473749.isValidElement(Chunk830483) && r.push(Chunk473749.cloneElement(null == module ? Chunk830483 : module(Chunk830483), {
+    for (let t in n) {
+      let a = n[t];
+      null != a && i.isValidElement(a) && r.push(i.cloneElement(null == e ? a : e(a), {
         ref: e => this.addChildRef(t, e),
-        key: exports
+        key: t
       }))
     }
     let a = s({}, this.props);
-    return Object.keys(p.defaultProps).forEach(e => delete a[e]), Chunk473749.createElement(exports, Chunk830483, r)
+    return Object.keys(p.defaultProps).forEach(e => delete a[e]), i.createElement(t, a, r)
   }
   constructor(e) {
     super(e), o(this, "_currentlyTransitioningKeys", true), o(this, "_keysToEnter", true), o(this, "_keysToLeave", true), o(this, "_isMounted", true), o(this, "_keyChildMapping", {}), o(this, "addChildRef", (e, t) => {

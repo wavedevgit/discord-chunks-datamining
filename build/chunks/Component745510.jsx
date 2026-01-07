@@ -58,7 +58,7 @@ let p = 20,
     createConfettiAt: () => true,
     createMultipleConfetti: () => [],
     createMultipleConfettiAt: () => [],
-    addClickListener: () => Chunk981631.dG4,
+    addClickListener: () => l.dG4,
     removeClickListener: Chunk981631.dG4
   },
   m = Chunk473749.createContext(_);

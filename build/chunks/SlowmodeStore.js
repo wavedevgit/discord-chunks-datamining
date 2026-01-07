@@ -111,7 +111,7 @@ function S() {
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk496675.Z)
+    this.waitFor(c.Z, u.Z)
   }
   getSlowmodeCooldownGuess(e, t) {
     let n = _[null != t ? t : 0][e];

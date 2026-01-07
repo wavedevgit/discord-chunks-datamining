@@ -14,14 +14,14 @@ let s = Object.freeze({
       popoutPosition: "right",
       highPriority: true,
       textAlign: Chunk350707.iu.CENTER,
-      media: () => (0, Chunk54381.jsx)(Chunk482641.Z, {})
+      media: () => (0, i.jsx)(l.Z, {})
     },
     "writing-messages": {
       popoutPosition: "top",
       highPriority: true,
       textAlign: Chunk350707.iu.CENTER,
       spacing: 10,
-      media: () => (0, Chunk54381.jsx)(Chunk613725.Z, {})
+      media: () => (0, i.jsx)(a.Z, {})
     },
     "direct-messages": {
       popoutPosition: "right"
@@ -34,7 +34,7 @@ let s = Object.freeze({
       popoutPosition: "right",
       textAlign: Chunk350707.iu.CENTER,
       spacing: 8,
-      media: () => (0, Chunk54381.jsx)(Chunk113570.Z, {})
+      media: () => (0, i.jsx)(r.Z, {})
     },
     "instant-invite": {
       popoutPosition: "right",

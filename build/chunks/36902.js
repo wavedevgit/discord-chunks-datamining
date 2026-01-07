@@ -20,19 +20,19 @@ function s(e, t, n) {
 let l = 1e3;
 class c {
   start() {
-    this.connection.on(Chunk46973.Sh.Stats, this.sampleStats)
+    this.connection.on(a.Sh.Stats, this.sampleStats)
   }
   stop() {
-    this.connection.off(Chunk46973.Sh.Stats, this.sampleStats)
+    this.connection.off(a.Sh.Stats, this.sampleStats)
   }
   getPttQueueLatencyStats() {
     let e = this.pttQueueLatencyHistogram.getReport([50, 95]);
     return {
-      ptt_queue_latency_max: module.max,
-      ptt_queue_latency_mean: module.mean,
-      ptt_queue_latency_p50: module.percentiles["50"],
-      ptt_queue_latency_p95: module.percentiles["95"],
-      ptt_queue_latency_samples: module.samples
+      ptt_queue_latency_max: e.max,
+      ptt_queue_latency_mean: e.mean,
+      ptt_queue_latency_p50: e.percentiles["50"],
+      ptt_queue_latency_p95: e.percentiles["95"],
+      ptt_queue_latency_samples: e.samples
     }
   }
   constructor(e) {

@@ -8,19 +8,19 @@ var r = function() {
   function e(e, t, n, r) {
     return this.x = e, this.y = t, this.width = n, this.height = r, this.top = this.y, this.left = this.x, this.bottom = this.top + this.height, this.right = this.left + this.width, Object.freeze(this)
   }
-  return module.prototype.toJSON = function() {
+  return e.prototype.toJSON = function() {
     var e = this;
     return {
-      x: module.x,
-      y: module.y,
-      top: module.top,
-      right: module.right,
-      bottom: module.bottom,
-      left: module.left,
-      width: module.width,
-      height: module.height
+      x: e.x,
+      y: e.y,
+      top: e.top,
+      right: e.right,
+      bottom: e.bottom,
+      left: e.left,
+      width: e.width,
+      height: e.height
     }
-  }, module.fromRect = function(t) {
+  }, e.fromRect = function(t) {
     return new e(t.x, t.y, t.width, t.height)
-  }, module
+  }, e
 }()

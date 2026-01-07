@@ -76,12 +76,12 @@ class b extends(r = Chunk473749.PureComponent) {
       {
         appContext: t,
         isWindowFocused: n
-      } = module,
-      r = g(module, ["appContext", "isWindowFocused"]);
-    return (0, Chunk54381.jsx)(Chunk124347.ZP, h(_({}, r), {
+      } = e,
+      r = g(e, ["appContext", "isWindowFocused"]);
+    return (0, i.jsx)(c.ZP, h(_({}, r), {
       onZoom: this.onZoom,
       onMouseEnter: this.onMouseEnter,
-      shouldAnimate: require
+      shouldAnimate: n
     }))
   }
   constructor(...e) {

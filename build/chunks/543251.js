@@ -18,9 +18,9 @@ function n(e, t) {
 }
 module.exports = function() {
   function e() {
-    n(this, module)
+    n(this, e)
   }
-  return t(module, [{
+  return t(e, [{
     key: "__attach",
     value: function() {}
   }, {
@@ -45,5 +45,5 @@ module.exports = function() {
     value: function() {
       return []
     }
-  }]), module
+  }]), e
 }()

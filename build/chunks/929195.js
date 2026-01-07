@@ -9,7 +9,7 @@ var Chunk773567 = require("./773567.js"),
   Chunk727916 = require("./727916.js");
 class o extends Chunk727916.Z {
   innerPattern() {
-    return RegExp(`(?:en|por|durante|de|dentro de)\\s*(${Chunk773567.km})(?=\\W|$)`, "i")
+    return RegExp(`(?:en|por|durante|de|dentro de)\\s*(${r.km})(?=\\W|$)`, "i")
   }
   innerExtract(e, t) {
     let n = (0, r.RA)(t[1]);

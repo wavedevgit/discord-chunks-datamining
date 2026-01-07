@@ -11,73 +11,73 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["yR/d2T"]),
-    useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.RiIiPw),
-    useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
+    useTitle: () => o.intl.string(o.t["yR/d2T"]),
+    useSubtitle: () => o.intl.string(o.t.RiIiPw),
+    useValue: () => (0, i.e7)([r.Z], () => {
       let {
         hidePersonalInformation: t
-      } = Chunk246946.Z.getSettings();
-      return module
+      } = r.Z.getSettings();
+      return t
     }),
     setValue: t => l.Z.update({
       hidePersonalInformation: t
     })
   }),
   S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.uWBOri),
-    useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
+    useTitle: () => o.intl.string(o.t.uWBOri),
+    useValue: () => (0, i.e7)([r.Z], () => {
       let {
         hideInstantInvites: t
-      } = Chunk246946.Z.getSettings();
-      return module
+      } = r.Z.getSettings();
+      return t
     }),
     setValue: t => l.Z.update({
       hideInstantInvites: t
     })
   }),
   c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.OrqYDP),
-    useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
+    useTitle: () => o.intl.string(o.t.OrqYDP),
+    useValue: () => (0, i.e7)([r.Z], () => {
       let {
         disableSounds: t
-      } = Chunk246946.Z.getSettings();
-      return module
+      } = r.Z.getSettings();
+      return t
     }),
     setValue: t => l.Z.update({
       disableSounds: t
     })
   }),
   E = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.sUAbLd),
-    useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
+    useTitle: () => o.intl.string(o.t.sUAbLd),
+    useValue: () => (0, i.e7)([r.Z], () => {
       let {
         disableNotifications: t
-      } = Chunk246946.Z.getSettings();
-      return module
+      } = r.Z.getSettings();
+      return t
     }),
     setValue: t => l.Z.update({
       disableNotifications: t
     })
   }),
   d = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["iA81+a"]),
-    useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.P4vj0h),
-    useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
+    useTitle: () => o.intl.string(o.t["iA81+a"]),
+    useSubtitle: () => o.intl.string(o.t.P4vj0h),
+    useValue: () => (0, i.e7)([r.Z], () => {
       let {
         enableContentProtection: t
-      } = Chunk246946.Z.getSettings();
-      return module
+      } = r.Z.getSettings();
+      return t
     }),
     setValue: t => l.Z.update({
       enableContentProtection: t
     }),
     usePredicate: () => {
       var t, e, n;
-      return null != (n = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.window) || null == (t = exports.supportsContentProtection) ? true : module.call(exports)) && require
+      return null != (n = null === s.Z || true === s.Z || null == (e = s.Z.window) || null == (t = e.supportsContentProtection) ? true : t.call(e)) && n
     }
   }),
   _ = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.UtW8R6),
+    useTitle: () => o.intl.string(o.t.UtW8R6),
     variant: "separators",
     buildLayout: () => [T, S, c, E, d]
   })

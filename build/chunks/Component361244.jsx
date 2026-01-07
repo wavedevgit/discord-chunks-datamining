@@ -9,5 +9,5 @@ require("./473749.js");
 var Chunk627869 = require("./627869.jsx");
 
 function a() {
-  return (0, Chunk54381.jsx)(Chunk627869.Z, {})
+  return (0, r.jsx)(i.Z, {})
 }

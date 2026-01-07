@@ -81,9 +81,9 @@ function D(e) {
 }
 
 function x() {
-  let e = Object.values(Chunk314884.Z.boostSlots),
-    t = o().sortBy(module.filter(e => !(0, I.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
-  return null != exports ? exports.id : null
+  let e = Object.values(O.Z.boostSlots),
+    t = o().sortBy(e.filter(e => !(0, I.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
+  return null != t ? t.id : null
 }
 async function L(e, t, n, r) {
   let i = null != r ? r : x();

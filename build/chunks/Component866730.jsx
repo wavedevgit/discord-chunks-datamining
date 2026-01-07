@@ -46,12 +46,12 @@ let m = e => {
   }];
 
 function h() {
-  let e = (0, Chunk442837.e7)([Chunk713284.Z], () => Chunk713284.Z.getDCFEvents()),
-    t = (0, Chunk211644.ZP)(e => e.candidates),
-    n = (0, Chunk211644.ZP)(e => e.lastWinnerTime),
-    r = 0 !== require ? i()(require).fromNow() : "n/a",
-    h = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
-    x = module.map(e => {
+  let e = (0, l.e7)([o.Z], () => o.Z.getDCFEvents()),
+    t = (0, c.ZP)(e => e.candidates),
+    n = (0, c.ZP)(e => e.lastWinnerTime),
+    r = 0 !== n ? i()(n).fromNow() : "n/a",
+    h = (0, c.ZP)(e => e.recentlyShown[0]),
+    x = e.map(e => {
       let {
         eventType: t,
         dismissibleContent: n
@@ -62,26 +62,26 @@ function h() {
         dismissibleContent: n
       }
     }),
-    b = Array.from(exports.keys()).map(e => ({
+    b = Array.from(t.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk135970.panelContainer,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk135970.info,
-      children: ["Last winner time: ", Chunk913527]
-    }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsxs)("div", {
-      className: Chunk135970.info,
-      children: ["Last winner: ", null != h ? Chunk704215.z[h] : "None"]
-    }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)("div", {
-      className: Chunk135970.candidatesTableContainer,
-      children: (0, Chunk54381.jsx)(Chunk681619.Z, {
-        className: Chunk135970.candidatesTable,
+  return (0, a.jsxs)("div", {
+    className: u.panelContainer,
+    children: [(0, a.jsxs)("div", {
+      className: u.info,
+      children: ["Last winner time: ", r]
+    }), (0, a.jsx)("br", {}), (0, a.jsxs)("div", {
+      className: u.info,
+      children: ["Last winner: ", null != h ? s.z[h] : "None"]
+    }), (0, a.jsx)("br", {}), (0, a.jsx)("div", {
+      className: u.candidatesTableContainer,
+      children: (0, a.jsx)(d.Z, {
+        className: u.candidatesTable,
         columns: f,
         data: b
       })
-    }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk681619.Z, {
+    }), (0, a.jsx)("br", {}), (0, a.jsx)(d.Z, {
       columns: p,
       data: x
     })]

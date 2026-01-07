@@ -112,18 +112,18 @@ function T(e) {
 class C extends Chunk473749.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk54381.jsx)(T, {
+    return this.props.upload.item.platform !== d.ow.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(T, {
       file: this.props.upload.item.file
-    }) : (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk297747.fileIcon, {
-        [Chunk297747[null != (e = this.props.upload.classification) ? module : ""]]: true
+    }) : (0, r.jsx)("div", {
+      className: o()(E.fileIcon, {
+        [E[null != (e = this.props.upload.classification) ? e : ""]]: true
       })
     })
   }
 }
 class A extends Chunk473749.Component {
   componentDidMount() {
-    Chunk358085.isPlatformEmbedded && Chunk998502.ZP.focus()
+    _.isPlatformEmbedded && m.ZP.focus()
   }
   shouldComponentUpdate(e) {
     return null != e.upload
@@ -143,27 +143,27 @@ class A extends Chunk473749.Component {
     } = this.props, {
       hasSpoiler: a
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk793030.Modal, {
-      transitionState: exports,
-      onClose: Chunk473749,
-      title: Chunk388032.intl.string(Chunk388032.t.Y8ujqr),
+    return (0, r.jsxs)(s.Modal, {
+      transitionState: t,
+      onClose: i,
+      title: g.intl.string(g.t.Y8ujqr),
       actions: [{
         variant: "secondary",
-        text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+        text: g.intl.string(g.t["ETE/oC"]),
         onClick: this.cancel
       }, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t["TY+auE"]),
+        text: g.intl.string(g.t["TY+auE"]),
         onClick: this.handleSubmit
       }],
-      children: [(0, Chunk54381.jsx)(C, {
-        upload: module
-      }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      children: [(0, r.jsx)(C, {
+        upload: e
+      }), (0, r.jsxs)(l.Kqy, {
         gap: 24,
-        children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+        children: [(0, r.jsxs)(l.Kqy, {
           gap: 16,
-          children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
-            label: Chunk388032.intl.string(Chunk388032.t.ILJuBq),
+          children: [(0, r.jsx)(l.oil, {
+            label: g.intl.string(g.t.ILJuBq),
             value: this.state.filename,
             onChange: e => this.setState({
               filename: e
@@ -171,9 +171,9 @@ class A extends Chunk473749.Component {
             onKeyDown: e => {
               if (e.which === h.yXg.ENTER) return this.handleSubmit()
             }
-          }), module.isImage ? (0, Chunk54381.jsx)(Chunk481060.oil, {
-            label: Chunk388032.intl.string(Chunk388032.t.eOB2eR),
-            placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jn),
+          }), e.isImage ? (0, r.jsx)(l.oil, {
+            label: g.intl.string(g.t.eOB2eR),
+            placeholder: g.intl.string(g.t.RNH1jn),
             value: this.state.description,
             onChange: e => this.setState({
               description: e
@@ -182,12 +182,12 @@ class A extends Chunk473749.Component {
               if (e.which === h.yXg.ENTER) return this.handleSubmit()
             }
           }) : null]
-        }), true !== require && (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
-          checked: Chunk120356,
+        }), true !== n && (0, r.jsx)(l.Checkbox, {
+          checked: a,
           onChange: e => this.setState({
             hasSpoiler: e
           }),
-          label: Chunk388032.intl.string(Chunk388032.t["gsI+xC"])
+          label: g.intl.string(g.t["gsI+xC"])
         })]
       })]
     })

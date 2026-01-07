@@ -12,23 +12,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk516604 = require("./516604.js"),
   Chunk261906 = require("./261906.js");
 let d = () => {
-    let e = (0, Chunk885006.Z)(),
-      t = Chunk473749.useMemo(() => ({
-        w: module.width,
-        h: module.height
-      }), [module]),
-      r = (0, Chunk516604.Z)(exports);
-    return (0, Chunk317568.Z)(), (0, Chunk54381.jsx)("div", {
-      className: Chunk261906.canvasWrapper,
+    let e = (0, l.Z)(),
+      t = a.useMemo(() => ({
+        w: e.width,
+        h: e.height
+      }), [e]),
+      r = (0, s.Z)(t);
+    return (0, c.Z)(), (0, n.jsx)("div", {
+      className: o.canvasWrapper,
       id: "simple-confetti-canvas",
-      children: (0, Chunk54381.jsx)(Chunk597846.z, {
-        playing: require.playing,
-        size: exports,
+      children: (0, n.jsx)(i.z, {
+        playing: r.playing,
+        size: t,
         useClockOptions: {
-          minInterval: require.tickRate,
+          minInterval: r.tickRate,
           droppedFramesCallbackThreshold: 10,
           droppedFramesResetTime: 2e3,
-          droppedFramesCallback: require.improvePerformance
+          droppedFramesCallback: r.improvePerformance
         },
         drawCallback: (e, t) => {
           r.update(t), r.draw(e)
@@ -36,4 +36,4 @@ let d = () => {
       })
     })
   },
-  f = () => (0, Chunk111810.kf)("ConfettiCanvasComponent") ? (0, Chunk54381.jsx)(d, {}) : null
+  f = () => (0, u.kf)("ConfettiCanvasComponent") ? (0, n.jsx)(d, {}) : null

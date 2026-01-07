@@ -10,10 +10,10 @@ var Chunk666383 = require("./666383.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.FRIEND_ANNIVERSARY_NOTIFICATIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.NjOMvh),
+  useTitle: () => a.intl.string(a.t.NjOMvh),
   useBadge: () => "beta",
   useValue: Chunk695346.vc.useSetting,
   setValue: Chunk666383.$,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.hi4dSk)],
-  usePredicate: () => (0, Chunk522558.i)("FriendAnniversaryNotifications")
+  useSearchTerms: () => [a.intl.string(a.t.hi4dSk)],
+  usePredicate: () => (0, l.i)("FriendAnniversaryNotifications")
 })

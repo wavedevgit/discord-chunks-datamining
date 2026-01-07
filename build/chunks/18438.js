@@ -93,7 +93,7 @@ function l(e) {
 }
 
 function c() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM"
   })
 }
@@ -155,25 +155,25 @@ function g(e) {
 }
 
 function E() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
   })
 }
 
 function b() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })
 }
 
 function y() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
 function O() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
   })
 }

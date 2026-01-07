@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 644679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,10 +24,10 @@ function p(e, t, n) {
 let f = "CollectiblesExpiryModal";
 class g extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), Chunk570140.Z.subscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal)
+    l.Z.subscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), l.Z.subscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), Chunk570140.Z.unsubscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal), null != this.timeout && (clearTimeout(this.timeout), this.timeout = null)
+    l.Z.unsubscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), l.Z.unsubscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal), null != this.timeout && (clearTimeout(this.timeout), this.timeout = null)
   }
   constructor(...e) {
     super(...e), p(this, "timeout", null), p(this, "handleMaybeOpenModal", () => {
@@ -40,9 +40,9 @@ class g extends Chunk317770.Z {
       let l = s.default.getCurrentUser(),
         a = o.Z.getState(),
         g = null == l || null == (e = l.avatarDecoration) ? true : e.skuId,
-        h = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt,
-        m = null != g && u.Hl.includes(g);
-      return null != l && !m && !!(null != h && 1e3 * h < Date.now()) && a !== d.hes.RTC_CONNECTED && ((0, i.Mr3)(f), (0, i.ZDy)(async () => {
+        m = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt,
+        h = null != g && u.Hl.includes(g);
+      return null != l && !h && !!(null != m && 1e3 * m < Date.now()) && a !== d.hes.RTC_CONNECTED && ((0, i.Mr3)(f), (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("77370").then(n.bind(n, 83950));
@@ -77,4 +77,4 @@ class g extends Chunk317770.Z {
     })
   }
 }
-let h = new g
+let m = new g

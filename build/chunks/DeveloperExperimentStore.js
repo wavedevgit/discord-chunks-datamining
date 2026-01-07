@@ -23,11 +23,11 @@ function d(e, t, n) {
 let f = "production" === Chunk48541.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === Chunk48541.C.STAGING;
 
 function p() {
-  f = (0, Chunk168232.QI)(Chunk594174.default.getCurrentUser())
+  f = (0, o.QI)(l.default.getCurrentUser())
 }
 class _ extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default, Chunk430824.Z), Object.defineProperties(this, {
+    this.waitFor(l.default, s.Z), Object.defineProperties(this, {
       isDeveloper: {
         configurable: false,
         get: () => f,
@@ -41,7 +41,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
       name: "discord_dev_testing",
       revision: 1,
       override: true,
-      bucket: Chunk987338.NZ.TREATMENT_1
+      bucket: c.NZ.TREATMENT_1
     } : null
   }
   constructor(...e) {

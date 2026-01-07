@@ -139,8 +139,8 @@ let e_ = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
   };
 
 function eg() {
-  let e = (0, Chunk410030.ZP)();
-  return (0, Chunk780384.wj)(module) ? eh : em
+  let e = (0, h.ZP)();
+  return (0, f.wj)(e) ? eh : em
 }
 
 function eE(e) {
@@ -409,16 +409,16 @@ function eS(e) {
 let eI = () => {
   let e = eg().screenShareItemVisual,
     t = () => {
-      window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.STREAM_QUALITY_SETTINGS)), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
+      window.open(U.Z.getArticleURL(z.BhN.STREAM_QUALITY_SETTINGS)), M.default.track(z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "screen_share"
       })
     };
-  return (0, Chunk54381.jsx)(eE, {
-    description: Chunk388032.intl.format(Chunk388032.t.wK04T1, {}),
-    onLearnMore: exports,
-    renderVisual: () => (0, Chunk54381.jsx)("img", {
+  return (0, r.jsx)(eE, {
+    description: q.intl.format(q.t.wK04T1, {}),
+    onLearnMore: t,
+    renderVisual: () => (0, r.jsx)("img", {
       alt: "",
-      src: module
+      src: e
     })
   })
 };
@@ -443,7 +443,7 @@ function eT(e) {
 let eC = Chunk473749.createContext({
     isPremiumRebrand: false
   }),
-  eA = () => Chunk473749.useContext(eC).isPremiumRebrand;
+  eA = () => i.useContext(eC).isPremiumRebrand;
 
 function eN(e) {
   let {

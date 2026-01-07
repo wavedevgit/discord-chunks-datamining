@@ -29,18 +29,18 @@ function a(e) {
 }
 let s = {
   open() {
-    (0, Chunk481060.ZDy)(async () => {
-      if (Chunk639774.f.getConfig({
+    (0, i.ZDy)(async () => {
+      if (l.f.getConfig({
           location: "EnableCommunityModalActionCreators"
         }).enabled) {
         let {
           default: e
-        } = await Promise.all([require.e("57486"), require.e("43339")]).then(require.bind(require, 87026));
+        } = await Promise.all([n.e("57486"), n.e("43339")]).then(n.bind(n, 87026));
         return t => (0, r.jsx)(e, a({}, t))
       } {
         let {
           default: e
-        } = await require.e("51218").then(require.bind(require, 848972));
+        } = await n.e("51218").then(n.bind(n, 848972));
         return t => (0, r.jsx)(e, a({}, t))
       }
     })

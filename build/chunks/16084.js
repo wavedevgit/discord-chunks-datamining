@@ -265,22 +265,22 @@ async function A(e, t, n) {
 async function N() {
   try {
     let e = {
-        purchase_token: (0, Chunk936101.d)()
+        purchase_token: (0, _.d)()
       },
-      t = await Chunk544891.tn.post({
-        url: Chunk981631.ANM.STORE_EMAIL_RESEND_PAYMENT_VERIFICATION,
-        body: module,
+      t = await i.tn.post({
+        url: g.ANM.STORE_EMAIL_RESEND_PAYMENT_VERIFICATION,
+        body: e,
         oldFormErrors: true,
         rejectWithError: false
       });
-    return b({}, exports.body)
+    return b({}, t.body)
   } catch (e) {
-    throw module instanceof Chunk881052.HF ? module : new Chunk881052.HF(module)
+    throw e instanceof o.HF ? e : new o.HF(e)
   }
 }
 
 function P() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "SKU_PURCHASE_CLEAR_ERROR"
   })
 }

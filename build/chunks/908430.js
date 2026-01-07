@@ -10,13 +10,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk615006 = require("./615006.js");
 
 function o() {
-  let e = Chunk473749.useRef(new Map),
-    t = (0, Chunk399606.e7)([Chunk615006.Z], () => Chunk615006.Z.getUserDiscounts());
-  Chunk473749.useEffect(() => {
-    let n = module.current,
+  let e = r.useRef(new Map),
+    t = (0, l.e7)([s.Z], () => s.Z.getUserDiscounts());
+  r.useEffect(() => {
+    let n = e.current,
       r = Date.now(),
       l = [];
-    return exports.forEach(e => {
+    return t.forEach(e => {
       if (null == e.expiresAt) return;
       let t = e.expiresAt.getTime() - r;
       if (t <= 0) l.push(e.discountId);
@@ -29,11 +29,11 @@ function o() {
         }, t);
         n.set(e.discountId, r)
       }
-    }), Chunk399606.length > 0 && Chunk570140.Z.dispatch({
+    }), l.length > 0 && a.Z.dispatch({
       type: "COLLECTIBLES_USER_DISCOUNTS_EXPIRED",
-      discountIds: Chunk399606
+      discountIds: l
     }), () => {
-      require.forEach(e => clearTimeout(e)), require.clear()
+      n.forEach(e => clearTimeout(e)), n.clear()
     }
-  }, [exports])
+  }, [t])
 }

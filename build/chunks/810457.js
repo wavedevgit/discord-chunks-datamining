@@ -54,22 +54,22 @@ class l {
     }), "id"), this._isSorted = true)
   }
   maybeTruncate() {
-    let e = Chunk982183.AQ * (this._channelIds.size + 1) * 1.5;
-    if (this._messages.length <= module) return;
+    let e = o.AQ * (this._channelIds.size + 1) * 1.5;
+    if (this._messages.length <= e) return;
     let t = {};
-    for (let e of this._messages) Chunk709054.default.age(module.id) > Chunk982183.ib || (null == exports[module.channelId] && (exports[module.channelId] = {
+    for (let e of this._messages) a.default.age(e.id) > o.ib || (null == t[e.channelId] && (t[e.channelId] = {
       mentions: [],
       messages: []
-    }), module.kind === Chunk982183.fL.MENTION ? exports[module.channelId].mentions.push(module) : exports[module.channelId].messages.push(module));
+    }), e.kind === o.fL.MENTION ? t[e.channelId].mentions.push(e) : t[e.channelId].messages.push(e));
     let n = [];
-    Object.values(exports).forEach(e => {
+    Object.values(t).forEach(e => {
       let t = [...e.mentions, ...e.messages].sort((e, t) => a.default.compare(e.id, t.id)).slice(-o.AQ),
         r = new Set,
         i = [];
       for (let e of t) r.add(e.id), i.push(e);
       for (let t of e.mentions) r.has(t.id) || i.push(t);
       n.push(...i)
-    }), this._messages = require, this._isSorted = false
+    }), this._messages = n, this._isSorted = false
   }
   constructor() {
     s(this, "_messages", []), s(this, "_isSorted", true), s(this, "_channelIds", new Set)

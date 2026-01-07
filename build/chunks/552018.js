@@ -1509,12 +1509,12 @@ class et extends Chunk495852.C {
       no: 2,
       name: "minor",
       kind: "message",
-      T: () => Chunk381499.yC
+      T: () => s.yC
     }, {
       no: 3,
       name: "build",
       kind: "message",
-      T: () => Chunk381499.wA
+      T: () => s.wA
     }])
   }
 }
@@ -1659,12 +1659,12 @@ class es extends Chunk495852.C {
       no: 1,
       name: "min_age_years",
       kind: "message",
-      T: () => Chunk381499.yC
+      T: () => s.yC
     }, {
       no: 2,
       name: "max_age_years",
       kind: "message",
-      T: () => Chunk381499.yC
+      T: () => s.yC
     }])
   }
 }

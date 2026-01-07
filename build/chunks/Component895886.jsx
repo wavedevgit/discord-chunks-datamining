@@ -31,10 +31,10 @@ function o(e) {
 }
 
 function s() {
-  (0, Chunk952265.openModalLazy)(async () => {
+  (0, i.openModalLazy)(async () => {
     let {
       default: e
-    } = await require.e("98137").then(require.bind(require, 397013));
+    } = await n.e("98137").then(n.bind(n, 397013));
     return t => (0, r.jsx)(e, o({}, t))
   })
 }

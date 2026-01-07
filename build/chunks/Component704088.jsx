@@ -135,7 +135,7 @@ let _ = e => {
     })
   },
   S = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [T, O] = Chunk473749.useState(5e3), [N, P] = Chunk473749.useState(false), w = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = r.useState(false), [n, s] = r.useState(false), [S, E] = r.useState(false), [T, O] = r.useState(5e3), [N, P] = r.useState(false), w = r.useRef(null), I = (0, l.e7)([v.default], () => v.default.getCurrentUser()), k = (0, h.u)(), [R] = r.useState(() => (0, x.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: k
     })), {
@@ -153,176 +153,176 @@ let _ = e => {
       setGetWarpInstallationStatus: W,
       perkAvailableToUser: H,
       setPerkAvailableToUser: q
-    } = (0, Chunk663042.o)(R), K = Chunk473749.useCallback(async () => (L(Chunk5900.Ij.INITIALIZING), exports(setTimeout(() => {
-      L(Chunk5900.Ij.CONNECTED)
-    }, 1e3)), true), [L, exports]);
-    Chunk473749.useEffect(() => {
+    } = (0, i.o)(R), K = r.useCallback(async () => (L(p.Ij.INITIALIZING), t(setTimeout(() => {
+      L(p.Ij.CONNECTED)
+    }, 1e3)), true), [L, t]);
+    r.useEffect(() => {
       M(K)
     }, [K, M]);
-    let Y = Chunk473749.useCallback(async () => Chunk5900._n.INSTALLING, []);
-    Chunk473749.useEffect(() => {
+    let Y = r.useCallback(async () => p._n.INSTALLING, []);
+    r.useEffect(() => {
       q(k)
-    }, [k, q]), Chunk473749.useEffect(() => {
+    }, [k, q]), r.useEffect(() => {
       W(Y)
     }, [W, Y]);
-    let Q = Chunk473749.useCallback(async () => (clearTimeout(module), L(Chunk5900.Ij.DISCONNECTED), true), [module, L]),
-      X = Chunk473749.useCallback(() => new Promise((e, t) => {
+    let Q = r.useCallback(async () => (clearTimeout(e), L(p.Ij.DISCONNECTED), true), [e, L]),
+      X = r.useCallback(() => new Promise((e, t) => {
         D(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
         }, T))
-      }), [S, T, D, Chunk544891]);
-    Chunk473749.useEffect(() => {
-      V && A !== Chunk5900._n.UNKNOWN && D(Chunk5900._n.UNKNOWN)
-    }, [V, D, A]), Chunk473749.useEffect(() => {
+      }), [S, T, D, s]);
+    r.useEffect(() => {
+      V && A !== p._n.UNKNOWN && D(p._n.UNKNOWN)
+    }, [V, D, A]), r.useEffect(() => {
       U(Q)
-    }, [Q, U]), Chunk473749.useEffect(() => {
+    }, [Q, U]), r.useEffect(() => {
       B(X)
-    }, [X, B]), Chunk473749.useEffect(() => {
-      A !== Chunk5900._n.INSTALLING && clearTimeout(require)
-    }, [require, A]), Chunk473749.useEffect(() => {
-      if (A !== Chunk5900._n.INSTALLED && Z !== Chunk5900.Ij.INITIALIZING) return void L(Chunk5900.Ij.INITIALIZING)
+    }, [X, B]), r.useEffect(() => {
+      A !== p._n.INSTALLING && clearTimeout(n)
+    }, [n, A]), r.useEffect(() => {
+      if (A !== p._n.INSTALLED && Z !== p.Ij.INITIALIZING) return void L(p.Ij.INITIALIZING)
     }, [A, Z, L]);
     let {
       enabled: J
-    } = Chunk299886.H.useConfig({
+    } = f.H.useConfig({
       location: "private_browsing_perk_settings_page"
     });
-    return J ? (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
+    return J ? (0, a.jsxs)("div", {
+      children: [(0, a.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
         style: {
           marginTop: "16px"
         },
         children: "Private Browsing Perk Components"
-      }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
-        children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
+      }), (0, a.jsxs)(b.$0, {
+        children: [(0, a.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
           children: "Configure Private Browsing Perk State"
-        }), (0, Chunk54381.jsxs)(Chunk261538.pg, {
-          children: [(0, Chunk54381.jsxs)(Chunk261538.BZ, {
-            children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
+        }), (0, a.jsxs)(b.pg, {
+          children: [(0, a.jsxs)(b.BZ, {
+            children: [(0, a.jsx)(c.xvT, {
               variant: "text-md/semibold",
               children: "Is Nitro"
-            }), (0, Chunk54381.jsx)("div", {
+            }), (0, a.jsx)("div", {
               style: {
                 width: "45px"
               },
-              children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
+              children: (0, a.jsx)(c.rsf, {
                 onChange: () => {
-                  H ? (0, Chunk535664.C)(null, I) : (0, Chunk535664.C)(Chunk474936.F_, I)
+                  H ? (0, m.C)(null, I) : (0, m.C)(C.F_, I)
                 },
                 checked: H
               })
             })]
-          }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
-            children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
+          }), (0, a.jsxs)(b.BZ, {
+            children: [(0, a.jsx)(c.xvT, {
               variant: "text-md/semibold",
               children: "Is Web"
-            }), (0, Chunk54381.jsx)("div", {
+            }), (0, a.jsx)("div", {
               style: {
                 width: "45px"
               },
-              children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
+              children: (0, a.jsx)(c.rsf, {
                 onChange: () => F(!V),
                 checked: V
               })
             })]
-          }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
-            children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
+          }), (0, a.jsxs)(b.BZ, {
+            children: [(0, a.jsx)(c.xvT, {
               variant: "text-md/semibold",
               children: "Is Supported Platform"
-            }), (0, Chunk54381.jsx)("div", {
+            }), (0, a.jsx)("div", {
               style: {
                 width: "45px"
               },
-              children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
+              children: (0, a.jsx)(c.rsf, {
                 onChange: () => G(!z),
                 checked: z
               })
             })]
-          }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
-            children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
+          }), (0, a.jsxs)(b.BZ, {
+            children: [(0, a.jsx)(c.xvT, {
               variant: "text-md/semibold",
               children: "Installation Status"
-            }), (0, Chunk54381.jsx)(Chunk199849.B6, {
+            }), (0, a.jsx)(o.B6, {
               select: e => D(e),
               isSelected: e => e === A,
               serialize: e => "".concat(e),
               disabled: V,
               options: [{
                 label: "Unknown",
-                value: Chunk5900._n.UNKNOWN
+                value: p._n.UNKNOWN
               }, {
                 label: "Not Installed",
-                value: Chunk5900._n.NOT_INSTALLED
+                value: p._n.NOT_INSTALLED
               }, {
                 label: "Installed",
-                value: Chunk5900._n.INSTALLED
+                value: p._n.INSTALLED
               }, {
                 label: "Installing",
-                value: Chunk5900._n.INSTALLING
+                value: p._n.INSTALLING
               }, {
                 label: "Accept Terms",
-                value: Chunk5900._n.WAITING_FOR_TERMS
+                value: p._n.WAITING_FOR_TERMS
               }, {
                 label: "Existing Installation",
-                value: Chunk5900._n.EXISTING_INSTALLATION
+                value: p._n.EXISTING_INSTALLATION
               }, {
                 label: "Unsupported (ZeroTrust)",
-                value: Chunk5900._n.ZERO_TRUST
+                value: p._n.ZERO_TRUST
               }, {
                 label: "Installing Timeout",
-                value: Chunk5900._n.INSTALLING_TIMEOUT
+                value: p._n.INSTALLING_TIMEOUT
               }, {
                 label: "Error",
-                value: Chunk5900._n.ERROR
+                value: p._n.ERROR
               }],
-              popoutLayerContext: Chunk246992.O$
+              popoutLayerContext: j.O$
             })]
-          }), A === Chunk5900._n.INSTALLED && (0, Chunk54381.jsxs)(Chunk261538.BZ, {
-            children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
+          }), A === p._n.INSTALLED && (0, a.jsxs)(b.BZ, {
+            children: [(0, a.jsx)(c.xvT, {
               variant: "text-md/semibold",
               children: "Connection Status"
-            }), (0, Chunk54381.jsx)(Chunk199849.B6, {
+            }), (0, a.jsx)(o.B6, {
               select: e => L(e),
               isSelected: e => e === Z,
               serialize: e => "".concat(e),
               options: [{
                 label: "Initializing",
-                value: Chunk5900.Ij.INITIALIZING
+                value: p.Ij.INITIALIZING
               }, {
                 label: "Connected",
-                value: Chunk5900.Ij.CONNECTED
+                value: p.Ij.CONNECTED
               }, {
                 label: "Disconnected",
-                value: Chunk5900.Ij.DISCONNECTED
+                value: p.Ij.DISCONNECTED
               }, {
                 label: "Error",
-                value: Chunk5900.Ij.ERROR
+                value: p.Ij.ERROR
               }],
-              popoutLayerContext: Chunk246992.O$
+              popoutLayerContext: j.O$
             })]
           })]
-        }), A === Chunk5900._n.NOT_INSTALLED && (0, Chunk54381.jsxs)(Chunk261538.pg, {
-          children: [(0, Chunk54381.jsxs)(Chunk261538.BZ, {
-            children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
+        }), A === p._n.NOT_INSTALLED && (0, a.jsxs)(b.pg, {
+          children: [(0, a.jsxs)(b.BZ, {
+            children: [(0, a.jsx)(c.xvT, {
               variant: "text-md/semibold",
               children: "Install with error"
-            }), (0, Chunk54381.jsx)("div", {
+            }), (0, a.jsx)("div", {
               style: {
                 width: "45px"
               },
-              children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
+              children: (0, a.jsx)(c.rsf, {
                 onChange: () => E(!S),
                 checked: S
               })
             })]
-          }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
-            children: [(0, Chunk54381.jsx)(Chunk159691.xvT, {
+          }), (0, a.jsxs)(b.BZ, {
+            children: [(0, a.jsx)(c.xvT, {
               variant: "text-md/semibold",
               children: "Install time"
-            }), (0, Chunk54381.jsx)(Chunk199849.B6, {
+            }), (0, a.jsx)(o.B6, {
               select: e => O(e),
               isSelected: e => e === T,
               serialize: e => "".concat(e),
@@ -345,27 +345,27 @@ let _ = e => {
                 label: "10 minutes",
                 value: 6e5
               }],
-              popoutLayerContext: Chunk246992.O$
+              popoutLayerContext: j.O$
             })]
           })]
         })]
-      }), (0, Chunk54381.jsxs)(Chunk773275.xz.Provider, {
+      }), (0, a.jsxs)(x.xz.Provider, {
         value: R,
-        children: [(0, Chunk54381.jsxs)(Chunk261538.$0, {
-          children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
+        children: [(0, a.jsxs)(b.$0, {
+          children: [(0, a.jsx)(c.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk Settings Component"
-          }), (0, Chunk54381.jsx)(Chunk868802.M, {})]
-        }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
-          children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
+          }), (0, a.jsx)(g.M, {})]
+        }), (0, a.jsxs)(b.$0, {
+          children: [(0, a.jsx)(c.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk Exit Modal Upsell"
-          }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
+          }), (0, a.jsx)(c.zxk, {
             text: "Show exit modal",
             onClick: () => {
               P(true)
             }
-          }), N && (0, Chunk54381.jsx)(Chunk720553.default, {
+          }), N && (0, a.jsx)(u.default, {
             url: "https://www.discord.com",
             trustUrl: () => false,
             onCancel: () => P(false),
@@ -374,29 +374,29 @@ let _ = e => {
             onClose: async () => {
               P(false)
             },
-            transitionState: Chunk481060.Dvm.ENTERED
+            transitionState: d.Dvm.ENTERED
           })]
-        }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
-          children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
+        }), (0, a.jsxs)(b.$0, {
+          children: [(0, a.jsx)(c.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk License Extension Task"
-          }), (0, Chunk54381.jsx)(_, {
+          }), (0, a.jsx)(_, {
             onSuccess: () => {
               var e;
-              null == (e = w.current) || module.refresh()
+              null == (e = w.current) || e.refresh()
             }
           })]
-        }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
-          children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
+        }), (0, a.jsxs)(b.$0, {
+          children: [(0, a.jsx)(c.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"
-          }), (0, Chunk54381.jsx)(y, {
+          }), (0, a.jsx)(y, {
             ref: w
           })]
         })]
       })]
-    }) : (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsx)(Chunk159691.X6q, {
+    }) : (0, a.jsx)("div", {
+      children: (0, a.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
         style: {
           marginTop: "16px"

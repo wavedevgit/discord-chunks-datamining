@@ -10,7 +10,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk418924 = require("./418924.js");
 let o = (0, Chunk509613.k4)(Chunk313789.n.ACTIVITY_PRIVACY_GAME_JOINING_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk418924.default["5rYBAQ"]),
-  buildLayout: () => [Chunk528218.y, Chunk720382.E],
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.VOszPA)]
+  useTitle: () => r.intl.string(a.default["5rYBAQ"]),
+  buildLayout: () => [s.y, u.E],
+  useSearchTerms: () => [r.intl.string(r.t.VOszPA)]
 })

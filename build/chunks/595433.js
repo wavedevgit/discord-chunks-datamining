@@ -8,9 +8,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js");
 
 function i() {
-  let [e, t] = Chunk473749.useState(true);
+  let [e, t] = a.useState(true);
   return {
-    transitions: (0, Chunk481060.Yzy)(module, {
+    transitions: (0, r.Yzy)(e, {
       keys: e => e ? "shown" : "hidden",
       config: l,
       from: {
@@ -24,7 +24,7 @@ function i() {
       },
       unique: true
     }),
-    setVisible: exports
+    setVisible: t
   }
 }
 let l = {

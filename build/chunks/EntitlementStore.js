@@ -123,7 +123,7 @@ function Z(e) {
 }
 class F extends(r = Chunk442837.yh) {
   initialize() {
-    this.syncWith([Chunk283595.Z], () => true)
+    this.syncWith([u.Z], () => true)
   }
   get(e) {
     return h[e]
@@ -205,7 +205,7 @@ class F extends(r = Chunk442837.yh) {
       includeEnded: t = false,
       excludeReverseTrial: n = false
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, r = [], i = new Date;
-    return null == (e = this.getForApplication(Chunk474936.CL)) || module.forEach(e => {
+    return null == (e = this.getForApplication(_.CL)) || e.forEach(e => {
       let a = null != e.endsAt && e.endsAt < i,
         o = e.sourceType === p.kNB.REVERSE_TRIAL && n;
       e.type !== p.qc2.FRACTIONAL_REDEMPTION || a && !t || o || r.push(e)
@@ -217,15 +217,15 @@ class F extends(r = Chunk442837.yh) {
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
     return this.getFractionalPremium({
       includeEnded: false,
-      excludeReverseTrial: module
+      excludeReverseTrial: e
     }).length > 0
   }
   getUnactivatedFractionalPremiumUnits() {
     var e;
     let t = [];
-    return null == (e = this.getForApplication(Chunk474936.CL)) || module.forEach(e => {
+    return null == (e = this.getForApplication(_.CL)) || e.forEach(e => {
       o.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
-    }), exports
+    }), t
   }
 }
 m(F, "displayName", "EntitlementStore");

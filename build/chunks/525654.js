@@ -7,9 +7,9 @@ e = require.nmd(module), (function() {
       object: true
     },
     i = r[typeof window] && window || this,
-    a = r[typeof exports] && exports,
-    o = r.object && module && !module.nodeType && module,
-    s = a && o && "object" == typeof require.g && require.g;
+    a = r[typeof t] && t,
+    o = r.object && e && !e.nodeType && e,
+    s = a && o && "object" == typeof n.g && n.g;
   s && (s.global === s || s.window === s || s.self === s) && (i = s);
   var l = 0x1fffffffffffff,
     c = /\bOpera/,

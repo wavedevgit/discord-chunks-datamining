@@ -14,22 +14,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk143525 = require("./143525.js");
 let E = (0, Chunk509613.qs)(Chunk313789.n.DISPLAY_NAME_STYLES, {
-  useTitle: () => Chunk388032.intl.string(Chunk143525.default["2gFUEw"]),
+  useTitle: () => S.intl.string(c.default["2gFUEw"]),
   useSubtitle: () => {
     let {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)();
-    return Chunk388032.intl.format(Chunk143525.default.L8U56h, {
+    } = (0, u.ZP)();
+    return S.intl.format(c.default.L8U56h, {
       onClickOpenModal() {
-        (0, Chunk829716.I)({
-          analyticsLocations: module
+        (0, a.I)({
+          analyticsLocations: t
         })
       }
     })
   },
-  useValue: () => (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.displayNameStylesEnabled),
+  useValue: () => (0, i.e7)([s.Z], () => s.Z.displayNameStylesEnabled),
   setValue: t => (0, l.X2)(t),
-  usePredicate: () => (0, Chunk272157.i)({
+  usePredicate: () => (0, r.i)({
     location: "DisplayNameStylesSetting"
   })
 })

@@ -56,10 +56,10 @@ class p extends(r = Chunk442837.ZP.Store) {
     return "".concat(this.getClass().displayName, "-snapshot")
   }
   clear() {
-    Chunk433517.K.remove(this.persistKey)
+    s.K.remove(this.persistKey)
   }
   save() {
-    Chunk433517.K.set(this.persistKey, this.takeSnapshot())
+    s.K.set(this.persistKey, this.takeSnapshot())
   }
   readSnapshot(e) {
     let t = s.K.get(this.persistKey);

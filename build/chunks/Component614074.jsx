@@ -15,51 +15,51 @@ let S = () => {
     let {
       isWeb: t,
       installationStatus: e
-    } = (0, Chunk773275.xf)(), n = (0, Chunk473749.useMemo)(() => {
-      if (module) return Chunk388032.intl.string(Chunk472057.default.KN6HOb);
-      switch (exports) {
-        case Chunk5900._n.ERROR:
-          return Chunk388032.intl.string(Chunk472057.default.cjqyz7);
-        case Chunk5900._n.INSTALLING_TIMEOUT:
-          return Chunk388032.intl.string(Chunk472057.default.an5PuY);
-        case Chunk5900._n.NOT_INSTALLED:
-        case Chunk5900._n.UNKNOWN:
-          return Chunk388032.intl.string(Chunk472057.default.KN6HOb);
-        case Chunk5900._n.INSTALLING:
-          return Chunk388032.intl.string(Chunk472057.default.lYWqUK);
-        case Chunk5900._n.WAITING_FOR_TERMS:
-        case Chunk5900._n.READY_FOR_LICENSE:
-          return Chunk388032.intl.string(Chunk472057.default.NSVz3Y);
-        case Chunk5900._n.EXISTING_INSTALLATION:
-          return Chunk388032.intl.string(Chunk472057.default.FgL0HB);
-        case Chunk5900._n.ZERO_TRUST:
-          return Chunk388032.intl.string(Chunk472057.default["7zgDRR"]);
-        case Chunk5900._n.INSTALLED:
-          return (0, Chunk54381.jsx)(c, {})
+    } = (0, r.xf)(), n = (0, l.useMemo)(() => {
+      if (t) return a.intl.string(o.default.KN6HOb);
+      switch (e) {
+        case u._n.ERROR:
+          return a.intl.string(o.default.cjqyz7);
+        case u._n.INSTALLING_TIMEOUT:
+          return a.intl.string(o.default.an5PuY);
+        case u._n.NOT_INSTALLED:
+        case u._n.UNKNOWN:
+          return a.intl.string(o.default.KN6HOb);
+        case u._n.INSTALLING:
+          return a.intl.string(o.default.lYWqUK);
+        case u._n.WAITING_FOR_TERMS:
+        case u._n.READY_FOR_LICENSE:
+          return a.intl.string(o.default.NSVz3Y);
+        case u._n.EXISTING_INSTALLATION:
+          return a.intl.string(o.default.FgL0HB);
+        case u._n.ZERO_TRUST:
+          return a.intl.string(o.default["7zgDRR"]);
+        case u._n.INSTALLED:
+          return (0, i.jsx)(c, {})
       }
-    }, [module, exports]);
-    return (0, Chunk54381.jsx)(Chunk793030.X6q, {
+    }, [t, e]);
+    return (0, i.jsx)(s.X6q, {
       variant: "heading-md/semibold",
-      children: require
+      children: n
     })
   },
   c = () => {
-    switch ((0, Chunk773275.xf)(t => t.connectionStatus)) {
-      case Chunk5900.Ij.INITIALIZING:
-        return (0, Chunk54381.jsxs)("span", {
-          className: Chunk977701.connectedStatus,
-          children: [Chunk388032.intl.string(Chunk472057.default["00vkCU"]), " ", (0, Chunk54381.jsx)("span", {
-            children: (0, Chunk54381.jsx)(Chunk793030.$jN, {
-              type: Chunk793030.RAz.SPINNING_CIRCLE,
-              className: Chunk977701.spinner
+    switch ((0, r.xf)(t => t.connectionStatus)) {
+      case u.Ij.INITIALIZING:
+        return (0, i.jsxs)("span", {
+          className: T.connectedStatus,
+          children: [a.intl.string(o.default["00vkCU"]), " ", (0, i.jsx)("span", {
+            children: (0, i.jsx)(s.$jN, {
+              type: s.RAz.SPINNING_CIRCLE,
+              className: T.spinner
             })
           })]
         });
-      case Chunk5900.Ij.CONNECTED:
-        return Chunk388032.intl.string(Chunk472057.default.FBu3XJ);
-      case Chunk5900.Ij.DISCONNECTED:
-        return Chunk388032.intl.string(Chunk472057.default["9V78nW"]);
-      case Chunk5900.Ij.ERROR:
-        return Chunk388032.intl.string(Chunk472057.default.i4ZzK6)
+      case u.Ij.CONNECTED:
+        return a.intl.string(o.default.FBu3XJ);
+      case u.Ij.DISCONNECTED:
+        return a.intl.string(o.default["9V78nW"]);
+      case u.Ij.ERROR:
+        return a.intl.string(o.default.i4ZzK6)
     }
   }

@@ -11,27 +11,27 @@ var Chunk473749 = require("./473749.js"),
   Chunk905753 = require("./905753.js");
 
 function c() {
-  let e = (0, Chunk442837.cj)([Chunk905753.Z], () => {
+  let e = (0, l.cj)([s.Z], () => {
       var e;
-      return Object.values(null != (e = Chunk905753.Z.getCommands()) ? module : {})
+      return Object.values(null != (e = s.Z.getCommands()) ? e : {})
     }),
-    [t, n] = Chunk473749.useState(""),
-    c = Chunk473749.useMemo(() => module.filter(e => {
+    [t, n] = i.useState(""),
+    c = i.useMemo(() => e.filter(e => {
       var t;
       return (null == e.integration_types || e.integration_types.includes(r.Y.GUILD_INSTALL)) && (null == e.contexts || (null == (t = e.contexts) ? true : t.includes(a.D.GUILD)))
-    }), [module]),
-    u = Chunk473749.useMemo(() => [...c].sort((e, t) => {
+    }), [e]),
+    u = i.useMemo(() => [...c].sort((e, t) => {
       let n = a.yU.CHAT + 1,
         i = (t.type > n ? n : t.type) - (e.type > n ? n : e.type);
       return 0 !== i ? i : e.untranslatedName.localeCompare(t.untranslatedName)
     }), [c]),
-    m = Chunk473749.useMemo(() => exports.startsWith("/") ? u.filter(e => e.type === a.yU.CHAT) : u, [exports, u]),
-    b = Chunk473749.useMemo(() => exports.startsWith("/") ? exports.substring(1) : exports, [exports]);
+    m = i.useMemo(() => t.startsWith("/") ? u.filter(e => e.type === a.yU.CHAT) : u, [t, u]),
+    b = i.useMemo(() => t.startsWith("/") ? t.substring(1) : t, [t]);
   return {
-    query: exports,
-    results: Chunk473749.useMemo(() => (0, Chunk282923.B)(m, d, b), [m, b]),
-    setQuery: require,
-    unfilteredCount: module.length
+    query: t,
+    results: i.useMemo(() => (0, o.B)(m, d, b), [m, b]),
+    setQuery: n,
+    unfilteredCount: e.length
   }
 }
 

@@ -466,17 +466,17 @@ function ez() {
     t = new Map(T);
   l.forEach((n, r) => {
     true !== t.get(r) && ((0, Z.zi)(n) ? (t.set(r, true), e = true) : t.has(r) || t.set(r, false))
-  }), module && (T = exports, e2.emitChange())
+  }), e && (T = t, e2.emitChange())
 }
 
 function eq() {
   ez();
-  let e = (0, Chunk862657.UE)(Array.from(l.values()));
-  if (null == module) return;
-  let t = Math.max(ee, module - Date.now() + 2e3);
-  exports > et || (q = setTimeout(() => {
+  let e = (0, Z.UE)(Array.from(l.values()));
+  if (null == e) return;
+  let t = Math.max(ee, e - Date.now() + 2e3);
+  t > et || (q = setTimeout(() => {
     eq()
-  }, exports))
+  }, t))
 }
 
 function eQ() {

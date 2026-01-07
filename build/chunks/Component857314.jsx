@@ -17,31 +17,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
-  return (0, Chunk442837.e7)([Chunk594174.default], () => {
-    let t = Chunk594174.default.getCurrentUser();
-    return null != module && module.mfaEnabled
+  return (0, l.e7)([a.default], () => {
+    let t = a.default.getCurrentUser();
+    return null != t && t.mfaEnabled
   })
 }
 let _ = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
   useSearchTerms: function() {
-    let t = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),
-      e = [Chunk388032.intl.string(Chunk388032.t.m0FidJ), Chunk388032.intl.string(Chunk388032.t.xZEzbu)];
-    return module ? exports.push(Chunk388032.intl.string(Chunk388032.t["D+aE7g"])) : exports.push(Chunk388032.intl.string(Chunk388032.t.cDgKte)), exports
+    let t = (0, l.e7)([u.default], () => u.default.hasTOTPEnabled()),
+      e = [E.intl.string(E.t.m0FidJ), E.intl.string(E.t.xZEzbu)];
+    return t ? e.push(E.intl.string(E.t["D+aE7g"])) : e.push(E.intl.string(E.t.cDgKte)), e
   },
   usePredicate: function() {
-    let t = (0, Chunk968021.Y)(),
-      e = (0, Chunk921356.O)(),
+    let t = (0, S.Y)(),
+      e = (0, c.O)(),
       n = d();
-    return !module && !exports && require
+    return !t && !e && n
   },
   Component: function() {
-    let t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-      e = (0, Chunk442837.e7)([Chunk325067.Z], () => Chunk325067.Z.getBackupCodes()),
-      n = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled());
-    return null == module ? null : (0, Chunk54381.jsx)(Chunk805244.Z, {
-      backupCodes: exports,
-      currentUser: module,
-      hasTOTPEnabled: require
+    let t = (0, l.e7)([a.default], () => a.default.getCurrentUser()),
+      e = (0, l.e7)([r.Z], () => r.Z.getBackupCodes()),
+      n = (0, l.e7)([u.default], () => u.default.hasTOTPEnabled());
+    return null == t ? null : (0, i.jsx)(T.Z, {
+      backupCodes: e,
+      currentUser: t,
+      hasTOTPEnabled: n
     })
   }
 })

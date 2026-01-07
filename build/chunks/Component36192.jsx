@@ -27,24 +27,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk713791 = require("./713791.js");
 
 function O() {
-  return (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
-    className: Chunk713791.description,
-    children: Chunk388032.intl.string(Chunk388032.t.zZp618)
+    className: y.description,
+    children: b.intl.string(b.t.zZp618)
   })
 }
 
 function v() {
   let {
     currentSession: e
-  } = (0, Chunk136097.h)();
-  return null == module ? (0, Chunk54381.jsx)("div", {
-    className: Chunk713791.loading,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
-  }) : (0, Chunk54381.jsx)(Chunk481060.C3N, {
-    label: Chunk388032.intl.string(Chunk388032.t.LLS19o),
-    children: (0, Chunk54381.jsx)(T, {
-      session: module,
+  } = (0, d.h)();
+  return null == e ? (0, r.jsx)("div", {
+    className: y.loading,
+    children: (0, r.jsx)(l.$jN, {})
+  }) : (0, r.jsx)(l.C3N, {
+    label: b.intl.string(b.t.LLS19o),
+    children: (0, r.jsx)(T, {
+      session: e,
       current: true
     })
   })
@@ -54,11 +54,11 @@ function S() {
   let {
     currentSession: e,
     otherSessions: t
-  } = (0, Chunk136097.h)(), n = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), [a, o] = Chunk473749.useState(new Set);
-  return null == module && 0 === exports.length || 0 === exports.length && (null == require ? true : require.mfaEnabled) || !(exports.length > 0) && (null == require ? true : require.mfaEnabled) ? null : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.xx1MWc),
-      children: [exports.map(e => (0, r.jsx)(T, {
+  } = (0, d.h)(), n = (0, s.e7)([f.default], () => f.default.getCurrentUser()), [a, o] = i.useState(new Set);
+  return null == e && 0 === t.length || 0 === t.length && (null == n ? true : n.mfaEnabled) || !(t.length > 0) && (null == n ? true : n.mfaEnabled) ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)(l.C3N, {
+      label: b.intl.string(b.t.xx1MWc),
+      children: [t.map(e => (0, r.jsx)(T, {
         session: e,
         useChecks: a.size > 0,
         checked: a.has(e.id_hash),
@@ -66,21 +66,21 @@ function S() {
           let n = new Set(a);
           t ? n.add(e.id_hash) : n.delete(e.id_hash), o(n)
         }
-      }, e.id_hash)), (null == require ? true : require.mfaEnabled) ? null : (0, Chunk54381.jsx)(C, {})]
-    }), exports.length > 0 ? (0, Chunk54381.jsx)(Chunk481060.gNt, {
-      label: Chunk120356.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRO) : Chunk388032.intl.string(Chunk388032.t.Vij32M),
-      description: Chunk388032.intl.string(Chunk388032.t.OTXyaf),
-      children: (0, Chunk54381.jsx)("div", {
+      }, e.id_hash)), (null == n ? true : n.mfaEnabled) ? null : (0, r.jsx)(C, {})]
+    }), t.length > 0 ? (0, r.jsx)(l.gNt, {
+      label: a.size > 0 ? b.intl.string(b.t.mMEmRO) : b.intl.string(b.t.Vij32M),
+      description: b.intl.string(b.t.OTXyaf),
+      children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk713791.logOutAllButton,
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+        className: y.logOutAllButton,
+        children: (0, r.jsx)(l.Button, {
           variant: "critical-secondary",
           size: "sm",
-          text: Chunk120356.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLj"], {
-            count: Chunk120356.size
-          }) : Chunk388032.intl.string(Chunk388032.t.cLmmeY),
+          text: a.size > 0 ? b.intl.formatToPlainString(b.t["83CPLj"], {
+            count: a.size
+          }) : b.intl.string(b.t.cLmmeY),
           onClick: () => {
-            Chunk120356.size > 0 ? (0, Chunk43015.L$)(Array.from(Chunk120356)) : (0, Chunk43015.L$)(exports.map(e => e.id_hash))
+            a.size > 0 ? (0, u.L$)(Array.from(a)) : (0, u.L$)(t.map(e => e.id_hash))
           }
         })
       })
@@ -89,14 +89,14 @@ function S() {
 }
 
 function I() {
-  return Chunk473749.useEffect(() => ((0, Chunk43015.fw)(), () => {
-    (0, Chunk43015.$Z)()
-  }), []), (0, Chunk54381.jsxs)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
-    children: [(0, Chunk54381.jsx)(O, {}), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  return i.useEffect(() => ((0, u.fw)(), () => {
+    (0, u.$Z)()
+  }), []), (0, r.jsxs)(h.N, {
+    header: b.intl.string(b.t["+1h0k/"]),
+    children: [(0, r.jsx)(O, {}), (0, r.jsxs)(l.Kqy, {
       gap: 24,
-      className: Chunk713791.sessions,
-      children: [(0, Chunk54381.jsx)(v, {}), (0, Chunk54381.jsx)(S, {})]
+      className: y.sessions,
+      children: [(0, r.jsx)(v, {}), (0, r.jsx)(S, {})]
     })]
   })
 }
@@ -171,32 +171,32 @@ function T(e) {
 }
 
 function C() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: o()(Chunk713791.session, Chunk713791.legacySession),
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk713791.sessionIcon,
-      children: (0, Chunk54381.jsx)(Chunk460562.Z, {
+  return (0, r.jsxs)("div", {
+    className: o()(y.session, y.legacySession),
+    children: [(0, r.jsx)("div", {
+      className: y.sessionIcon,
+      children: (0, r.jsx)(p.Z, {
         width: "32",
         height: "32"
       })
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk713791.sessionInfo,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsxs)("div", {
+      className: y.sessionInfo,
+      children: [(0, r.jsx)(l.Text, {
         variant: "eyebrow",
-        className: Chunk713791.sessionInfoRow,
+        className: y.sessionInfoRow,
         color: "text-muted",
-        children: (0, Chunk54381.jsx)("span", {
-          children: Chunk388032.intl.string(Chunk388032.t.iUa0sn)
+        children: (0, r.jsx)("span", {
+          children: b.intl.string(b.t.iUa0sn)
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
-        className: Chunk713791.sessionInfoRow,
+        className: y.sessionInfoRow,
         color: "text-muted",
-        children: (0, Chunk54381.jsx)("span", {
-          children: Chunk388032.intl.format(Chunk388032.t["044+8i"], {
-            onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.ACCOUNT_PANEL, {
-              section: Chunk981631.oAB.ACCOUNT,
-              analyticsLocations: [Chunk100527.Z.USER_SETTINGS_SESSIONS]
+        children: (0, r.jsx)("span", {
+          children: b.intl.format(b.t["044+8i"], {
+            onClick: () => (0, g.openUserSettings)(m.n.ACCOUNT_PANEL, {
+              section: E.oAB.ACCOUNT,
+              analyticsLocations: [c.Z.USER_SETTINGS_SESSIONS]
             })
           })
         })

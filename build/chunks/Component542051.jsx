@@ -192,14 +192,14 @@ class y extends(r = Chunk473749.PureComponent) {
       query: e,
       focusedIndex: t,
       navId: n
-    } = this.props, r = "" === module.trim();
-    return (0, Chunk54381.jsxs)(Chunk481060.u2D, {
-      className: Chunk129420.container,
+    } = this.props, r = "" === e.trim();
+    return (0, i.jsxs)(l.u2D, {
+      className: f.container,
       onMouseDown: E,
       role: "listbox",
-      id: require,
+      id: n,
       tabIndex: false,
-      "aria-activedescendant": "".concat(require, "-").concat(exports),
+      "aria-activedescendant": "".concat(n, "-").concat(t),
       children: [this.renderQuery(r), this.renderSearchInSelectedChannelAutocomplete(), this.renderResults(r)]
     })
   }

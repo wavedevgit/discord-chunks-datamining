@@ -122,15 +122,15 @@ function T(e, t) {
 }
 
 function C() {
-  let e = Chunk314897.default.getId();
-  if (null == module || Chunk486472.Z.totalUnavailableGuilds > 0) return;
-  let t = O(module);
-  for (let e in exports) null == Chunk592125.Z.getChannel(module) && delete exports[module]
+  let e = u.default.getId();
+  if (null == e || f.Z.totalUnavailableGuilds > 0) return;
+  let t = O(e);
+  for (let e in t) null == d.Z.getChannel(e) && delete t[e]
 }
 
 function A() {
-  let e = Chunk314897.default.getId();
-  return module in b || (b[module] = {}), C(), false
+  let e = u.default.getId();
+  return e in b || (b[e] = {}), C(), false
 }
 
 function N() {
@@ -181,10 +181,10 @@ function D(e) {
 }
 
 function x() {
-  for (let [e, t] of Chunk709054.default.entries(b))
-    for (let [n, r] of Chunk709054.default.entries(exports)) {
+  for (let [e, t] of c.default.entries(b))
+    for (let [n, r] of c.default.entries(t)) {
       let t = r[0];
-      null != exports && ("" === exports.draft || "" === exports.draft.trim()) && T(require, 0, module)
+      null != t && ("" === t.draft || "" === t.draft.trim()) && T(n, 0, e)
     }
 }
 class L extends(r = Chunk442837.ZP.PersistedStore) {

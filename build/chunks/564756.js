@@ -10,8 +10,8 @@ var Chunk442837 = require("./442837.js"),
 
 function o() {
   var e, t, n, o, s, l, c;
-  let u = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
-    d = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getFetchState()),
-    f = [Chunk612776.ij.WELCOME];
-  return d !== Chunk5888.p.SUCCESS || null == u.messages || (f.push(Chunk612776.ij.MESSAGES), f.push(Chunk612776.ij.EMOJIS), f.push(Chunk612776.ij.VOICE), (null != (s = null == (e = u.guilds) ? true : module.guilds.length) ? s : 0) > 0 && f.push(Chunk612776.ij.GUILDS), (null != (l = null == (t = u.users) ? true : exports.length) ? l : 0) > 0 && null != u.sidekick && null != u.sidekick.user && (null == (n = u.users) ? true : require[0].id) !== u.sidekick.user.id && (f.push(Chunk612776.ij.FRIENDS_INTRO), f.push(Chunk612776.ij.FRIENDS_TRANSITION)), null != u.sidekick && null != u.sidekick.user && (f.push(Chunk612776.ij.FRIENDS_BEST), f.push(Chunk612776.ij.FRIENDS_LEAVE)), (null != (c = null == (o = u.applications) ? true : o.applications.length) ? c : 0) > 0 && f.push(Chunk612776.ij.GAMING), f.push(Chunk612776.ij.QUESTS), f.push(Chunk612776.ij.END_REWARD), f.push(Chunk612776.ij.END_CLAIM), f.push(Chunk612776.ij.END_SUMMARY)), f
+  let u = (0, r.e7)([i.Z], () => i.Z.getCheckpointData()),
+    d = (0, r.e7)([i.Z], () => i.Z.getFetchState()),
+    f = [a.ij.WELCOME];
+  return d !== i.p.SUCCESS || null == u.messages || (f.push(a.ij.MESSAGES), f.push(a.ij.EMOJIS), f.push(a.ij.VOICE), (null != (s = null == (e = u.guilds) ? true : e.guilds.length) ? s : 0) > 0 && f.push(a.ij.GUILDS), (null != (l = null == (t = u.users) ? true : t.length) ? l : 0) > 0 && null != u.sidekick && null != u.sidekick.user && (null == (n = u.users) ? true : n[0].id) !== u.sidekick.user.id && (f.push(a.ij.FRIENDS_INTRO), f.push(a.ij.FRIENDS_TRANSITION)), null != u.sidekick && null != u.sidekick.user && (f.push(a.ij.FRIENDS_BEST), f.push(a.ij.FRIENDS_LEAVE)), (null != (c = null == (o = u.applications) ? true : o.applications.length) ? c : 0) > 0 && f.push(a.ij.GAMING), f.push(a.ij.QUESTS), f.push(a.ij.END_REWARD), f.push(a.ij.END_CLAIM), f.push(a.ij.END_SUMMARY)), f
 }

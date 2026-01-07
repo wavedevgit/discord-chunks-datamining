@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function s() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "PROXY_BLOCKED_REQUEST"
   })
 }

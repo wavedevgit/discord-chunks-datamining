@@ -246,13 +246,13 @@ function Z(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === Z.type ? (0, r.jsx)(h.BC, {
+        }) : "embed" === Z.type ? (0, r.jsx)(m.BC, {
           className: a()(T.video, w),
           allowFullScreen: false,
           href: Z.href,
           thumbnail: Z.thumbnail,
           video: Z.embed,
-          provider: m.pn.YOUTUBE,
+          provider: h.pn.YOUTUBE,
           maxWidth: Z.embed.width,
           maxHeight: Z.embed.height,
           renderVideoComponent: O.lV,

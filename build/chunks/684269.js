@@ -9,14 +9,14 @@ let l = [Chunk875425.FO.MINUTES_30, Chunk875425.FO.HOURS_1, Chunk875425.FO.HOURS
 
 function a() {
   var e;
-  let t = Chunk695346.Ok.getSetting();
-  if (null == exports || "" === exports.expiresAtMs) return Chunk875425.FO.TODAY;
-  let n = Number(exports.expiresAtMs);
-  if (isNaN(require)) return Chunk875425.FO.TODAY;
-  if (0 === require) return Chunk875425.FO.DONT_CLEAR;
+  let t = r.Ok.getSetting();
+  if (null == t || "" === t.expiresAtMs) return i.FO.TODAY;
+  let n = Number(t.expiresAtMs);
+  if (isNaN(n)) return i.FO.TODAY;
+  if (0 === n) return i.FO.DONT_CLEAR;
   let a = new Date,
-    o = new Date(require);
-  if (a.getFullYear() !== o.getFullYear() || a.getMonth() !== o.getMonth() || a.getDate() !== o.getDate()) return Chunk875425.FO.TODAY;
-  let u = Number(require) - Date.now();
-  return null != (e = l.find(e => u <= e)) ? module : Chunk875425.FO.TODAY
+    o = new Date(n);
+  if (a.getFullYear() !== o.getFullYear() || a.getMonth() !== o.getMonth() || a.getDate() !== o.getDate()) return i.FO.TODAY;
+  let u = Number(n) - Date.now();
+  return null != (e = l.find(e => u <= e)) ? e : i.FO.TODAY
 }

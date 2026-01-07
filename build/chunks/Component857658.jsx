@@ -25,13 +25,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk202560 = require("./202560.js");
 
 function v() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk202560.loader,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  return (0, r.jsx)("div", {
+    className: O.loader,
+    children: (0, r.jsx)(_.$jN, {})
   })
 }
 let S = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("66382"), require.e("35855")]).then(require.bind(require, 164267)),
+    createPromise: () => Promise.all([n.e("66382"), n.e("35855")]).then(n.bind(n, 164267)),
     webpackId: 164267,
     name: "CustomThemeColorPickerControlV2",
     renderLoader: v

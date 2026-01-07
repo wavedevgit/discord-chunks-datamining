@@ -43,8 +43,8 @@ function g(e) {
 }
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    let e = Chunk433517.K.get(d);
-    null != module && a().forEach(module, (e, t) => {
+    let e = s.K.get(d);
+    null != e && a().forEach(e, (e, t) => {
       e.forEach(e => {
         "audioinput" === e.type && e.hardwareMute && (e.hardwareMute = false)
       }), h(t, e)

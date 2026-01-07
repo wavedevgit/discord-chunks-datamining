@@ -54,7 +54,7 @@ function p(e, t) {
 }
 
 function _() {
-  return Chunk237997.default.isLocked(Chunk610394.Z.getTargetPID()) ? Chunk981631.Sbl.LOCKED_OVERLAY : Chunk981631.Sbl.UNLOCKED_OVERLAY
+  return a.default.isLocked(s.Z.getTargetPID()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
 }
 
 function m(e, t) {
@@ -76,8 +76,8 @@ function m(e, t) {
 }
 
 function h() {
-  let e = Chunk556296.ZP.getOverlayKeybind();
-  return null != module ? (0, Chunk13140.BB)(module.shortcut, true) : "???"
+  let e = i.ZP.getOverlayKeybind();
+  return null != e ? (0, o.BB)(e.shortcut, true) : "???"
 }
 
 function g() {

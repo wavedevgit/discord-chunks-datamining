@@ -39,7 +39,7 @@ class d {
   }
   isVisible() {
     let e = this.seenIntervals[this.seenIntervals.length - 1];
-    return (null == module ? true : module.startTimeMillis) != null && (null == module ? true : module.endTimeMillis) == null
+    return (null == e ? true : e.startTimeMillis) != null && (null == e ? true : e.endTimeMillis) == null
   }
   computeSeenTimeDestructive(e) {
     let t = 0,

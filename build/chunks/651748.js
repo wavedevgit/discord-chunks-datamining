@@ -12,7 +12,7 @@ class o extends Chunk629821._ {
     super(e)
   }
   patternFlags() {
-    return Chunk150816.f.flags
+    return a.f.flags
   }
   primaryPatternLeftBoundary() {
     return "(^|\\s|T|(?:[^\\p{L}\\p{N}_]))"
@@ -24,7 +24,7 @@ class o extends Chunk629821._ {
     return `(?:(?:в|с)\\s*)??`
   }
   primarySuffix() {
-    return `(?:\\s*(?:утра|вечера|после полудня))?(?!\\/)${Chunk150816.f.rightBoundary}`
+    return `(?:\\s*(?:утра|вечера|после полудня))?(?!\\/)${a.f.rightBoundary}`
   }
   extractPrimaryTimeComponents(e, t) {
     let n = super.extractPrimaryTimeComponents(e, t);

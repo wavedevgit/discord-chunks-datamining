@@ -92,7 +92,7 @@ function p(e) {
 }
 
 function _() {
-  return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t, n) => {
+  return r.useMemo(() => (0, i.once)((e, t, n) => {
     s.default.track(l.rMx.FORWARD_ADD_RECIPIENT, {
       channel_id: e,
       message_id: t,
@@ -102,7 +102,7 @@ function _() {
 }
 
 function m() {
-  return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t) => {
+  return r.useMemo(() => (0, i.once)((e, t) => {
     s.default.track(l.rMx.FORWARD_EDIT_SEARCH, {
       channel_id: e,
       message_id: t
@@ -111,7 +111,7 @@ function m() {
 }
 
 function h() {
-  return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t) => {
+  return r.useMemo(() => (0, i.once)((e, t) => {
     s.default.track(l.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,
       message_id: t

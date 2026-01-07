@@ -17,7 +17,7 @@ function p(e, t, n) {
   let i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     p = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments),
     f = (0, l.e7)([s.Z], () => s.Z.skipNumCategories),
-    [g, h, m, b, _, E, O, v] = (0, l.Wu)([c.Z], () => {
+    [g, m, h, b, _, E, O, v] = (0, l.Wu)([c.Z], () => {
       var t, n;
       return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getHasKnownStaleData(e), c.Z.getShopHomeConfigOverride()]
     }),
@@ -58,12 +58,12 @@ function p(e, t, n) {
     }, [t, v, f]),
     I = (0, r.useMemo)(() => !(0, o.oc)(b, y), [b, y]),
     C = (0, u.J)(g, null != E && E, i),
-    S = (0, r.useMemo)(() => !C && Date.now() - h < 6e5, [h, C]);
+    S = (0, r.useMemo)(() => !C && Date.now() - m < 6e5, [m, C]);
   return (0, r.useEffect)(() => {
     if (!p || E) return;
-    let t = Date.now() - m < 6e5;
+    let t = Date.now() - h < 6e5;
     (null == _ || !t) && (I || !S || O) && (0, o.Ov)(e, y, n)
-  }, [p, E, _, m, S, O, I, y, e, n]), {
+  }, [p, E, _, h, S, O, I, y, e, n]), {
     isFetchingShopHome: E,
     fetchShopHomeError: _,
     shopBlocks: g,

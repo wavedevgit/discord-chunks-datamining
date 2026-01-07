@@ -3,13 +3,13 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  AnalyticsActionHandlers: () => Chunk699407.X,
-  ImpressionGroups: () => Chunk20281.A,
-  ImpressionNames: () => Chunk525769.z,
-  ImpressionTypes: () => Chunk20281.n,
-  NetworkActionNames: () => Chunk525769.a,
-  analyticsTrackingStoreMaker: () => Chunk699407.l,
-  encodeProperties: () => Chunk947486.Z,
+  AnalyticsActionHandlers: () => b.X,
+  ImpressionGroups: () => y.A,
+  ImpressionNames: () => O.z,
+  ImpressionTypes: () => y.n,
+  NetworkActionNames: () => O.a,
+  analyticsTrackingStoreMaker: () => b.l,
+  encodeProperties: () => E.Z,
   extendSuperProperties: () => z,
   getCampaignParams: () => x,
   getDevice: () => U,
@@ -136,20 +136,20 @@ function x(e) {
 
 function L() {
   let e = document.referrer;
-  return 0 === module.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === module.search("https?://(.*)bing.com") ? "bing" : 0 === module.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === module.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
+  return 0 === e.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === e.search("https?://(.*)bing.com") ? "bing" : 0 === e.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === e.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
 }
 
 function j() {
   let e = {},
     t = document.referrer,
     n = L(),
-    r = "yahoo" !== require ? "q" : "p";
-  if (null != require) {
-    module.search_engine = require;
-    let i = D(exports, r);
-    i.length > 0 && (module.mp_keyword = i)
+    r = "yahoo" !== n ? "q" : "p";
+  if (null != n) {
+    e.search_engine = n;
+    let i = D(t, r);
+    i.length > 0 && (e.mp_keyword = i)
   }
-  return module
+  return e
 }
 
 function M() {
@@ -159,18 +159,18 @@ function M() {
   } = window.navigator, {
     opera: n
   } = window;
-  if (require) return /Mini/.test(module) ? "Opera Mini" : "Opera";
-  if (/(BlackBerry|PlayBook|BB10)/i.test(module)) return "BlackBerry";
-  if (/FBIOS/.test(module)) return "Facebook Mobile";
-  if (/CriOS/.test(module)) return "Chrome iOS";
-  if (/Apple/.test(exports)) return /Mobile/.test(module) || null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "Mobile Safari" : "Safari";
-  else if (/Android/.test(module)) return /Chrome/.test(module) ? "Android Chrome" : "Android Mobile";
-  else if (/Edge/.test(module)) return "Edge";
-  else if (/Chrome/.test(module)) return "Chrome";
-  else if (/Konqueror/.test(module)) return "Konqueror";
-  else if (/Firefox/.test(module)) return "Firefox";
-  else if (/MSIE|Trident\//.test(module)) return "Internet Explorer";
-  else if (/Gecko/.test(module)) return "Mozilla";
+  if (n) return /Mini/.test(e) ? "Opera Mini" : "Opera";
+  if (/(BlackBerry|PlayBook|BB10)/i.test(e)) return "BlackBerry";
+  if (/FBIOS/.test(e)) return "Facebook Mobile";
+  if (/CriOS/.test(e)) return "Chrome iOS";
+  if (/Apple/.test(t)) return /Mobile/.test(e) || null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "Mobile Safari" : "Safari";
+  else if (/Android/.test(e)) return /Chrome/.test(e) ? "Android Chrome" : "Android Mobile";
+  else if (/Edge/.test(e)) return "Edge";
+  else if (/Chrome/.test(e)) return "Chrome";
+  else if (/Konqueror/.test(e)) return "Konqueror";
+  else if (/Firefox/.test(e)) return "Firefox";
+  else if (/MSIE|Trident\//.test(e)) return "Internet Explorer";
+  else if (/Gecko/.test(e)) return "Mozilla";
   else return ""
 }
 
@@ -178,12 +178,12 @@ function k() {
   let {
     userAgent: e
   } = window.navigator;
-  if (/Windows/i.test(module)) return /Phone/.test(module) ? "Windows Mobile" : "Windows";
-  if (/(iPhone|iPad|iPod)/.test(module)) return "iOS";
-  if (/Android/.test(module)) return "Android";
-  if (/(BlackBerry|PlayBook|BB10)/i.test(module)) return "BlackBerry";
-  if (/Mac/i.test(module)) return null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "iOS" : "Mac OS X";
-  else if (/Linux/i.test(module)) return "Linux";
+  if (/Windows/i.test(e)) return /Phone/.test(e) ? "Windows Mobile" : "Windows";
+  if (/(iPhone|iPad|iPod)/.test(e)) return "iOS";
+  if (/Android/.test(e)) return "Android";
+  if (/(BlackBerry|PlayBook|BB10)/i.test(e)) return "BlackBerry";
+  if (/Mac/i.test(e)) return null != window.navigator.maxTouchPoints && window.navigator.maxTouchPoints > 2 ? "iOS" : "Mac OS X";
+  else if (/Linux/i.test(e)) return "Linux";
   else return ""
 }
 
@@ -191,22 +191,22 @@ function U() {
   let {
     userAgent: e
   } = window.navigator;
-  if (/(BlackBerry|PlayBook|BB10)/i.test(module)) return "BlackBerry";
-  if (/Windows Phone/i.test(module)) return "Windows Phone";
-  if (/Android/.test(module)) return "Android";
-  if (/iPhone/.test(module)) return "iPhone";
-  if (/iPad/.test(module)) return "iPad";
+  if (/(BlackBerry|PlayBook|BB10)/i.test(e)) return "BlackBerry";
+  if (/Windows Phone/i.test(e)) return "Windows Phone";
+  if (/Android/.test(e)) return "Android";
+  if (/iPhone/.test(e)) return "iPhone";
+  if (/iPad/.test(e)) return "iPad";
   else return ""
 }
 
 function G() {
   let e = document.referrer.split("/");
-  return module.length >= 3 ? module[2] : ""
+  return e.length >= 3 ? e[2] : ""
 }
 
 function Z() {
   let e = {};
-  return module.os = k(), module.browser = M(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
+  return e.os = k(), e.browser = M(), e.device = U(), e.system_locale = (0, p.qf)(), e.has_client_mods = (0, f.e)(), e
 }
 
 function F() {
@@ -215,13 +215,13 @@ function F() {
     browser_user_agent: window.navigator.userAgent || "",
     browser_version: d().version || ""
   }), {
-    os_version: null != (t = null === d() || true === d() || null == (e = d().os) ? true : module.version) ? exports : ""
+    os_version: null != (t = null === d() || true === d() || null == (e = d().os) ? true : e.version) ? t : ""
   })
 }
 
 function B() {
   let e = {};
-  return module.referrer = document.referrer, module.referring_domain = G(), e = S({}, module, x(window.location.href), j())
+  return e.referrer = document.referrer, e.referring_domain = G(), e = S({}, e, x(window.location.href), j())
 }
 
 function V(e, t) {
@@ -230,12 +230,12 @@ function V(e, t) {
 }
 
 function H() {
-  let e = Chunk433517.K.get(C);
-  null == module && (e = Z(), Chunk433517.K.set(C, module));
-  let t = Chunk433517.K.get(A);
-  null == exports && (t = B(), Chunk433517.K.set(A, exports));
-  let n = Chunk298444.x.get(A);
-  return null == require && (n = V(B(), "_current"), Chunk298444.x.set(A, require)), S({}, module, F(), exports, require)
+  let e = _.K.get(C);
+  null == e && (e = Z(), _.K.set(C, e));
+  let t = _.K.get(A);
+  null == t && (t = B(), _.K.set(A, t));
+  let n = m.x.get(A);
+  return null == n && (n = V(B(), "_current"), m.x.set(A, n)), S({}, e, F(), t, n)
 }
 
 function Y() {
@@ -249,11 +249,11 @@ function W() {
   var e, t;
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
-  r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("483489", 10);
-  isNaN(i) || (require.client_build_number = i);
-  let a = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? true : module.call(exports);
-  return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
+  r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
+  let i = parseInt("483493", 10);
+  isNaN(i) || (n.client_build_number = i);
+  let a = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? true : e.call(t);
+  return isNaN(a) || (n.native_build_number = a), n.client_event_source = Y(), n.has_client_mods = (0, f.e)(), n.client_launch_id = g.s, n
 }
 
 function K(e) {

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350724 = require("./350724.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk473749.PureComponent {
+class h extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.memoizedMode ? {
       memoizedMode: e.mode,
@@ -32,14 +32,14 @@ class m extends Chunk473749.PureComponent {
     } : null
   }
   handleDownloadApps() {
-    (0, Chunk481060.h7j)(e => (0, r.jsx)(c.default, function(e) {
+    (0, a.h7j)(e => (0, r.jsx)(c.default, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          h(e, t, n[t])
+          m(e, t, n[t])
         })
       }
       return e
@@ -50,20 +50,20 @@ class m extends Chunk473749.PureComponent {
   render() {
     switch (this.props.mode) {
       case "UPDATE_AVAILABLE":
-        return (0, Chunk54381.jsx)(Chunk665149.JO, {
-          tooltip: Chunk388032.intl.string(Chunk388032.t["zp9d/4"]),
-          foreground: Chunk350724.downloadArrow,
-          background: Chunk350724.cloud,
-          icon: Chunk481060._8t,
+        return (0, r.jsx)(p.JO, {
+          tooltip: f.intl.string(f.t["zp9d/4"]),
+          foreground: g.downloadArrow,
+          background: g.cloud,
+          icon: a._8t,
           className: this.props.className
         });
       case "UPDATE_MANUALLY":
       case "UPDATE_DOWNLOADED":
-        return (0, Chunk54381.jsx)(Chunk665149.JO, {
-          tooltip: Chunk388032.intl.string(Chunk388032.t.u18OXF),
-          foreground: Chunk350724.updateIconForeground,
+        return (0, r.jsx)(p.JO, {
+          tooltip: f.intl.string(f.t.u18OXF),
+          foreground: g.updateIconForeground,
           onClick: this.handleInstallDownload,
-          icon: Chunk481060._8t,
+          icon: a._8t,
           className: this.props.className
         });
       default:
@@ -71,10 +71,10 @@ class m extends Chunk473749.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), m(this, "state", {
       memoizedMode: this.props.mode,
       clicked: false
-    }), h(this, "handleInstallDownload", () => {
+    }), m(this, "handleInstallDownload", () => {
       d.Z.isConnected() ? o.Z.show({
         title: f.intl.string(f.t.tiu1ly),
         body: f.intl.string(f.t["zK+lqW"]),
@@ -83,7 +83,7 @@ class m extends Chunk473749.PureComponent {
         confirmText: f.intl.string(f.t["QDX/qu"]),
         confirmVariant: "critical-primary"
       }) : this.doUpdate()
-    }), h(this, "doUpdate", () => {
+    }), m(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: true
       }), (0, s.Q)())
@@ -91,5 +91,5 @@ class m extends Chunk473749.PureComponent {
   }
 }
 let b = Chunk442837.ZP.connectStores([Chunk91372.Z], () => ({
-  mode: Chunk91372.Z.getState()
-}))(m)
+  mode: u.Z.getState()
+}))(h)

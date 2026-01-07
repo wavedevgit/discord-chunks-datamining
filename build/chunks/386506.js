@@ -53,12 +53,12 @@ async function f(e) {
   }
 }
 async function p() {
-  let e = await Chunk544891.tn.del({
-    url: (0, Chunk865427.pU)(l),
+  let e = await i.tn.del({
+    url: (0, s.pU)(l),
     oldFormErrors: true,
     rejectWithError: false
   });
-  return await r(module), module
+  return await r(e), e
 }
 
 function _(e) {

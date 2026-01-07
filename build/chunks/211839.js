@@ -12,11 +12,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.ON)(Chunk313789.n.SESSIONS_OTHER_SESSIONS_SETTING, {
   Component: Chunk36192.Vy,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["+1h0k/"])],
+  useSearchTerms: () => [o.intl.string(o.t["+1h0k/"])],
   usePredicate: () => {
     let {
       otherSessions: t
-    } = (0, Chunk136097.h)(), e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-    return module.length > 0 || !(null == exports ? true : exports.mfaEnabled)
+    } = (0, l.h)(), e = (0, i.e7)([u.default], () => u.default.getCurrentUser());
+    return t.length > 0 || !(null == e ? true : e.mfaEnabled)
   }
 })

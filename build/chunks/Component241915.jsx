@@ -97,7 +97,7 @@ class C extends(r = Chunk473749.PureComponent) {
   }
   componentWillUnmount() {
     var e;
-    null == (e = this._resizeObserver) || module.disconnect()
+    null == (e = this._resizeObserver) || e.disconnect()
   }
   getPosition(e) {
     let t = this._innerDivRef.current;
@@ -169,12 +169,12 @@ class C extends(r = Chunk473749.PureComponent) {
       edgeOffsetLeft: t,
       edgeOffsetRight: n
     } = this.props;
-    switch (module) {
-      case Chunk981631.VD2.TOP_LEFT:
-      case Chunk981631.VD2.BOTTOM_LEFT:
-        return -exports;
+    switch (e) {
+      case f.VD2.TOP_LEFT:
+      case f.VD2.BOTTOM_LEFT:
+        return -t;
       default:
-        return require
+        return n
     }
   }
   getYOffset() {
@@ -183,12 +183,12 @@ class C extends(r = Chunk473749.PureComponent) {
       edgeOffsetTop: t,
       edgeOffsetBottom: n
     } = this.props;
-    switch (module) {
-      case Chunk981631.VD2.TOP_LEFT:
-      case Chunk981631.VD2.TOP_RIGHT:
-        return -exports;
+    switch (e) {
+      case f.VD2.TOP_LEFT:
+      case f.VD2.TOP_RIGHT:
+        return -t;
       default:
-        return require
+        return n
     }
   }
   getWidth() {
@@ -196,10 +196,10 @@ class C extends(r = Chunk473749.PureComponent) {
     let {
       width: n
     } = this.props;
-    return null != (t = null != (e = this._width) ? module : require) ? exports : Chunk354459.l8[Chunk354459.cL.VIDEO]
+    return null != (t = null != (e = this._width) ? e : n) ? t : p.l8[p.cL.VIDEO]
   }
   get inPopout() {
-    return this.props.appContext === Chunk981631.IlC.POPOUT
+    return this.props.appContext === f.IlC.POPOUT
   }
   render() {
     let {
@@ -212,36 +212,36 @@ class C extends(r = Chunk473749.PureComponent) {
       position: l,
       resizeConfig: c
     } = this.props, d = this.getWidth(), f = {};
-    return null != require ? f = {
-      transform: "translate3d(".concat(require.x, ", ").concat(require.y, ", 0)"),
-      width: require.width,
-      height: require.height
-    } : null != Chunk347469 && (f = {
-      width: Chunk522501,
+    return null != n ? f = {
+      transform: "translate3d(".concat(n.x, ", ").concat(n.y, ", 0)"),
+      width: n.width,
+      height: n.height
+    } : null != c && (f = {
+      width: d,
       transition: this.state.isResizing ? "none" : "width 0.2s ease-in-out"
-    }), (0, Chunk54381.jsxs)(Chunk689425.Z, {
+    }), (0, i.jsxs)(u.Z, {
       dragAnywhere: true,
       ref: this.handleSetDraggableRef,
-      className: s()(Chunk684692.pictureInPictureWindow, Chunk120356, {
-        [Chunk684692.hidden]: r,
-        [Chunk684692.borderRadius]: Chunk473749
+      className: s()(_.pictureInPictureWindow, o, {
+        [_.hidden]: r,
+        [_.borderRadius]: a
       }),
-      maxX: module,
-      maxY: exports,
-      disabled: null != require,
+      maxX: e,
+      maxY: t,
+      disabled: null != n,
       onDragStart: this.handleDragStart,
       onDrag: this.handleDrag,
       onDragEnd: this.handleDragEnd,
-      children: [(0, Chunk54381.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         ref: this.handleSetInnerDivRef,
-        style: Chunk981631,
+        style: f,
         children: this.props.children
-      }), null != Chunk347469 ? (0, Chunk54381.jsx)(T, {
+      }), null != c ? (0, i.jsx)(T, {
         onResize: this.handleResize,
         onResizeEnd: this.handleResizeEnd,
         resizableNode: this._innerDivRef,
-        resizeConfig: Chunk347469,
-        position: Chunk392711
+        resizeConfig: c,
+        position: l
       }) : null]
     })
   }

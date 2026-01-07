@@ -80,9 +80,9 @@ class L extends Chunk98597.ZP {
     let {
       channelInfo: e
     } = this.props;
-    return null == module ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk642915.channelInfo,
-      children: module
+    return null == e ? null : (0, r.jsx)("div", {
+      className: A.channelInfo,
+      children: e
     })
   }
   render() {
@@ -107,54 +107,54 @@ class L extends Chunk98597.ZP {
       resolvedUnreadSetting: C,
       withGuildIcon: x,
       enableActivities: E
-    } = this.props, S = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, _ = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk54381.jsx)("li", {
+    } = this.props, S = E && null != j && j.length > 0, _ = (0, b.D)(O), I = (0, r.jsx)("li", {
       className: a()(this.getClassName(), {
-        [Chunk642915.disabled]: this.isDisabled(),
-        [Chunk642915.selected]: require
+        [A.disabled]: this.isDisabled(),
+        [A.selected]: n
       }),
-      "data-dnd-name": module.name,
-      onMouseEnter: Chunk493683 || Chunk594174 ? this.handleMouseEnter : true,
-      onMouseLeave: Chunk493683 || Chunk594174 ? this.handleMouseLeave : true,
-      children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
+      "data-dnd-name": e.name,
+      onMouseEnter: c || S ? this.handleMouseEnter : true,
+      onMouseLeave: c || S ? this.handleMouseLeave : true,
+      children: (0, r.jsx)(s.yRy, {
         targetElementRef: this.channelItemRef,
         position: "right",
         renderPopout: this.renderPopout,
         onRequestClose: this.handleClosePopout,
-        shouldShow: Chunk493683 && this.state.shouldShowThreadsPopout || Chunk594174 && this.state.shouldShowActivities,
-        children: () => (0, Chunk54381.jsxs)(Chunk473403.ZP, {
+        shouldShow: c && this.state.shouldShowThreadsPopout || S && this.state.shouldShowActivities,
+        children: () => (0, r.jsxs)(N.ZP, {
           ref: this.channelItemRef,
-          className: Chunk642915.iconVisibility,
-          channel: module,
-          guild: exports,
-          selected: !Chunk22082 && require,
-          muted: Chunk473749,
-          unread: Chunk120356,
-          mentionCount: Chunk239091,
-          hasActiveThreads: Chunk442837,
-          subtitle: null == Chunk109446 ? true : Chunk109446.subtitle,
-          subtitleColor: null == Chunk109446 ? true : Chunk109446.color,
+          className: A.iconVisibility,
+          channel: e,
+          guild: t,
+          selected: !y && n,
+          muted: i,
+          unread: l,
+          mentionCount: u,
+          hasActiveThreads: o,
+          subtitle: null == _ ? true : _.subtitle,
+          subtitleColor: null == _ ? true : _.color,
           onMouseDown: this.handleMouseDown,
           onContextMenu: this.handleContextMenu,
-          connectDragPreview: Chunk622822 ? Chunk619915 : null,
-          isFavoriteSuggestion: Chunk22082,
-          channelTypeOverride: Chunk592125 ? Chunk981631.d4z.GUILD_TEXT : true,
-          resolvedUnreadSetting: Chunk496675,
-          withGuildIcon: Chunk306680,
-          "aria-label": (0, Chunk201895.ZP)({
-            channel: module,
-            unread: Chunk120356,
-            mentionCount: Chunk239091,
-            isSubscriptionGated: Chunk66999
+          connectDragPreview: p ? h : null,
+          isFavoriteSuggestion: y,
+          channelTypeOverride: v ? w.d4z.GUILD_TEXT : true,
+          resolvedUnreadSetting: C,
+          withGuildIcon: x,
+          "aria-label": (0, g.ZP)({
+            channel: e,
+            unread: l,
+            mentionCount: u,
+            isSubscriptionGated: m
           }),
-          children: [Chunk22082 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+          children: [y && (0, r.jsxs)(r.Fragment, {
             children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-          }), !Chunk22082 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+          }), !y && (0, r.jsxs)(r.Fragment, {
             children: [this.renderChannelInfo(), this.renderInviteButton(), this.renderEditButton()]
           })]
         })
       })
     });
-    return Chunk622822 ? Chunk146773(Chunk595519(Chunk98597)) : Chunk98597
+    return p ? d(f(I)) : I
   }
   constructor(...e) {
     super(...e), R(this, "state", {

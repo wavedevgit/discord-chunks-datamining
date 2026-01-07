@@ -8,8 +8,8 @@ require.d(exports, {
 });
 var Chunk373228 = require("./373228.js"),
   Chunk388032 = require("./388032.jsx");
-let a = () => [Chunk388032.intl.string(Chunk388032.t.b6wEe6), Chunk388032.intl.string(Chunk388032.t.i8o9hX)],
-  o = () => [Chunk388032.intl.string(Chunk388032.t.vqnToc), Chunk388032.intl.string(Chunk388032.t["9yh+dM"])],
+let a = () => [i.intl.string(i.t.b6wEe6), i.intl.string(i.t.i8o9hX)],
+  o = () => [i.intl.string(i.t.vqnToc), i.intl.string(i.t["9yh+dM"])],
   s = [{
     id: "781323471249604648",
     format_type: Chunk373228.u3.APNG,

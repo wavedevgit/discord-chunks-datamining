@@ -66,19 +66,19 @@ function S() {
 }
 
 function b() {
-  let e = null != C && null != C.application_id ? Chunk293273.Z.getApplicationActivity(C.application_id) : null;
-  if (null != C && (null == module || null == module.party || null == module.party.id)) return S()
+  let e = null != C && null != C.application_id ? f.Z.getApplicationActivity(C.application_id) : null;
+  if (null != C && (null == e || null == e.party || null == e.party.id)) return S()
 }
 class v extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk293273.Z, Chunk158776.Z, Chunk55589.Z, Chunk594174.default)
+    this.waitFor(c.Z, d.Z, f.Z, g.Z, E.Z, p.default)
   }
   getActivity() {
     return C
   }
   getQuery() {
     var e;
-    return null != (e = null == l ? true : l.query) ? module : ""
+    return null != (e = null == l ? true : l.query) ? e : ""
   }
   getResults() {
     return m

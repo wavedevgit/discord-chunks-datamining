@@ -27,7 +27,7 @@ function f(e) {
 }
 class p extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    Chunk931619.Z.getNetworkInformation().then(f), Chunk931619.Z.addChangeCallback(f)
+    o.Z.getNetworkInformation().then(f), o.Z.addChangeCallback(f)
   }
   getType() {
     return c

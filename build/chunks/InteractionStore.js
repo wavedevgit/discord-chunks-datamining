@@ -62,7 +62,7 @@ let E = 5 * Chunk70956.Z.Millis.MINUTE,
 function I() {
   y = {}, O = {}, v = {}, S = {}, setInterval(() => {
     let e = Date.now();
-    for (let [t, n] of Object.entries(S)) module - require.insertedAt > b && delete S[exports]
+    for (let [t, n] of Object.entries(S)) e - n.insertedAt > b && delete S[t]
   }, E)
 }
 
@@ -205,7 +205,7 @@ function k(e) {
 }
 class U extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z)
+    this.waitFor(u.default, d.Z)
   }
   getInteraction(e) {
     let t = O[e.id];
@@ -214,10 +214,10 @@ class U extends(a = Chunk442837.ZP.Store) {
   getMessageInteractionStates() {
     let e = {};
     for (let [t, n] of Object.entries(y)) {
-      let r = v[exports];
-      null != r && (module[r] = require.state)
+      let r = v[t];
+      null != r && (e[r] = n.state)
     }
-    return module
+    return e
   }
   canQueueInteraction(e, t) {
     let n = O[e];

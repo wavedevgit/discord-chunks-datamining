@@ -18,26 +18,26 @@ function u(e, t) {
 }
 
 function d() {
-  let e = Chunk199902.Z.getStreamerActiveStreamMetadata(),
-    t = Chunk594190.ZP.getVisibleGame(),
-    n = null != exports ? Chunk594190.ZP.getGameOrTransformedSubgameForPID(exports.pid) : null,
-    r = u(module, require),
-    i = Chunk812206.Z.getApplication(Chunk348327);
+  let e = l.Z.getStreamerActiveStreamMetadata(),
+    t = c.ZP.getVisibleGame(),
+    n = null != t ? c.ZP.getGameOrTransformedSubgameForPID(t.pid) : null,
+    r = u(e, n),
+    i = o.Z.getApplication(r);
   return {
-    runningGame: null != require ? require : true,
+    runningGame: null != n ? n : true,
     runningGameApplication: null != i ? i : true
   }
 }
 
 function f() {
-  let e = (0, Chunk442837.e7)([Chunk199902.Z], () => Chunk199902.Z.getStreamerActiveStreamMetadata()),
-    t = (0, Chunk442837.e7)([Chunk594190.ZP], () => {
-      let e = Chunk594190.ZP.getVisibleGame();
-      return null != module ? Chunk594190.ZP.getGameOrTransformedSubgameForPID(module.pid) : null
+  let e = (0, a.e7)([l.Z], () => l.Z.getStreamerActiveStreamMetadata()),
+    t = (0, a.e7)([c.ZP], () => {
+      let e = c.ZP.getVisibleGame();
+      return null != e ? c.ZP.getGameOrTransformedSubgameForPID(e.pid) : null
     }, [], i()),
-    [n] = (0, Chunk835473.Z)([u(module, exports)]);
+    [n] = (0, s.Z)([u(e, t)]);
   return {
-    runningGame: null != exports ? exports : true,
-    runningGameApplication: null != require ? require : true
+    runningGame: null != t ? t : true,
+    runningGameApplication: null != n ? n : true
   }
 }

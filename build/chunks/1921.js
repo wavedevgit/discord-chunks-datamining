@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.SYNC_REDUCED_MOTION, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["+Dx+HD"]),
-  useValue: () => (0, Chunk442837.e7)([Chunk607070.Z], () => "auto" === Chunk607070.Z.rawPrefersReducedMotion),
+  useTitle: () => a.intl.string(a.t["+Dx+HD"]),
+  useValue: () => (0, i.e7)([s.Z], () => "auto" === s.Z.rawPrefersReducedMotion),
   setValue: t => (0, l.Zt)(t ? "auto" : s.Z.systemPrefersReducedMotion)
 })

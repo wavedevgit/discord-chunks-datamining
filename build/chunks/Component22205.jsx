@@ -41,9 +41,9 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 let w = o().throttle(() => {
-    Chunk797614.Z.increment({
-      name: Chunk286379.V.APP_CRASHED,
-      tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
+    h.Z.increment({
+      name: u.V.APP_CRASHED,
+      tags: ["reason:".concat(l.v.UNHANDLED_JS_ERROR), "level:".concat(c.c.FATAL)]
     }, true)
   }, 100, {
     trailing: false
@@ -163,37 +163,37 @@ class L extends Chunk473749.PureComponent {
       error: n,
       showError: i
     } = this.state;
-    return null != require ? Chunk473749 ? (0, Chunk54381.jsx)(Chunk333031.Z, {
-      className: Chunk249993.errorClickNotification,
-      children: (0, Chunk54381.jsx)(x, {
-        error: require,
+    return null != n ? i ? (0, r.jsx)(S.Z, {
+      className: P.errorClickNotification,
+      children: (0, r.jsx)(x, {
+        error: n,
         onLock: () => {
           var e;
-          let t = null != (e = this.pid) ? module : Chunk610394.Z.getTargetPID();
-          Chunk13245.Z.setInputLocked(true, exports), this.setState({
+          let t = null != (e = this.pid) ? e : I.Z.getTargetPID();
+          _.Z.setInputLocked(true, t), this.setState({
             showError: false
           })
         },
         onDisable: () => {
-          let e = Chunk610394.Z.getFocusedRunningGame();
-          null != module && Chunk224706.Z.toggleOverlay(module, false, false)
+          let e = I.Z.getFocusedRunningGame();
+          null != e && p.Z.toggleOverlay(e, false, false)
         },
         onCrashDisabled: () => {
           var e;
-          let t = null != (e = this.pid) ? module : Chunk610394.Z.getTargetPID();
-          Chunk13245.Z.updateOverlayState(exports, Chunk837268.mM.OVERLAY_CRASHED_DISABLED, "OOPOverlayErrorBoundary"), this.setState({
+          let t = null != (e = this.pid) ? e : I.Z.getTargetPID();
+          _.Z.updateOverlayState(t, v.mM.OVERLAY_CRASHED_DISABLED, "OOPOverlayErrorBoundary"), this.setState({
             showError: false
           })
         },
         onReload: () => {
-          Chunk13245.Z.setReloadOverlay(Chunk610394.Z.getTargetPID()), this.setState({
+          _.Z.setReloadOverlay(I.Z.getTargetPID()), this.setState({
             showError: false
           })
         }
       })
-    }) : null : (0, Chunk54381.jsx)("div", {
-      className: exports,
-      children: module
+    }) : null : (0, r.jsx)("div", {
+      className: t,
+      children: e
     })
   }
   constructor(...e) {

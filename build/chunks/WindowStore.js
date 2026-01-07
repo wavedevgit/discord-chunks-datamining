@@ -120,32 +120,32 @@ function O(e) {
 }
 class v extends(r = Chunk442837.ZP.Store) {
   isFocused() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, Chunk830917.UU)();
-    return m(module).focused
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
+    return m(e).focused
   }
   isAppFocused() {
     return null != this.getFocusedWindowId()
   }
   isVisible() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, Chunk830917.UU)();
-    return m(module).visible
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
+    return m(e).visible
   }
   getFocusedWindowId() {
     let e = null;
     return _.forEach((t, n) => {
       t.focused && (e = n)
-    }), module
+    }), e
   }
   getLastFocusedWindowId() {
     return p
   }
   isElementFullScreen() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, Chunk830917.UU)();
-    return m(module).isElementFullscreen
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
+    return m(e).isElementFullscreen
   }
   windowSize() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, Chunk830917.UU)();
-    return m(module).windowSize
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, l.UU)();
+    return m(e).windowSize
   }
 }
 c(v, "displayName", "WindowStore");

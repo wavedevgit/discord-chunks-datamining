@@ -33,7 +33,7 @@ class u extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getLastUsedCommandId() {
     let e = Date.now();
-    return null == l.lastUsedTimeMs || null == l.lastUsedCommandId ? null : (module > l.lastUsedTimeMs + s && (l.lastUsedCommandId = null, l.lastUsedTimeMs = null), l.lastUsedCommandId)
+    return null == l.lastUsedTimeMs || null == l.lastUsedCommandId ? null : (e > l.lastUsedTimeMs + s && (l.lastUsedCommandId = null, l.lastUsedTimeMs = null), l.lastUsedCommandId)
   }
 }
 o(u, "displayName", "AppLauncherLastUsedCommandStore"), o(u, "persistKey", "AppLauncherLastUsedCommandStore"), new u(Chunk570140.Z, {

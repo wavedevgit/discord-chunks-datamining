@@ -15,12 +15,12 @@ function o() {
     animatedComponentProps: t,
     recalculateAnimationPositions: n,
     mountPoints: o
-  } = Chunk473749.useContext(Chunk444134.xo), {
+  } = r.useContext(l.xo), {
     isExpanded: c
-  } = Chunk473749.useContext(Chunk526188.A);
-  return Chunk473749.useEffect(() => {
-    require()
-  }, [require, c]), (0, Chunk54381.jsx)("div", {
+  } = r.useContext(s.A);
+  return r.useEffect(() => {
+    n()
+  }, [n, c]), (0, a.jsx)("div", {
     style: {
       overflow: "hidden",
       pointerEvents: "none",
@@ -31,7 +31,7 @@ function o() {
       height: "100%",
       zIndex: 5
     },
-    children: exports.map(t => {
+    children: t.map(t => {
       let {
         id: n,
         collapsedLeft: r,

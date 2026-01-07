@@ -41,21 +41,21 @@ function h(e) {
 }
 
 function g() {
-  let e, t, n, r, a, o = Chunk131951.Z.getGoLiveSource(),
-    s = Chunk361291.Z.getState().preset;
-  if (null != Chunk371651 && (e = Chunk371651.quality.resolution, t = Chunk371651.quality.frameRate, null != Chunk371651.desktopSource)) {
+  let e, t, n, r, a, o = c.Z.getGoLiveSource(),
+    s = l.Z.getState().preset;
+  if (null != o && (e = o.quality.resolution, t = o.quality.frameRate, null != o.desktopSource)) {
     var u, d;
-    n = Chunk371651.desktopSource.soundshareSession;
-    let e = null != Chunk371651.desktopSource.sourcePid ? Chunk594190.ZP.getGameForPID(Chunk371651.desktopSource.sourcePid) : null;
-    r = null != (u = null == module ? true : module.name) ? Chunk19780 : null, a = null != (d = null == module ? true : module.id) ? Chunk449224 : null
+    n = o.desktopSource.soundshareSession;
+    let e = null != o.desktopSource.sourcePid ? i.ZP.getGameForPID(o.desktopSource.sourcePid) : null;
+    r = null != (u = null == e ? true : e.name) ? u : null, a = null != (d = null == e ? true : e.id) ? d : null
   }
   return {
-    video_input_resolution: module,
-    video_input_frame_rate: exports,
-    soundshare_session: require,
-    share_game_name: Chunk579806,
-    share_game_id: Chunk837268,
-    quality_preset: Chunk388627
+    video_input_resolution: e,
+    video_input_frame_rate: t,
+    soundshare_session: n,
+    share_game_name: r,
+    share_game_id: a,
+    quality_preset: s
   }
 }
 async function E(e, t) {

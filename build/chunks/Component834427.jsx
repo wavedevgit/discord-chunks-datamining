@@ -37,20 +37,20 @@ class c extends(r = Chunk473749.Component) {
       "aria-hidden": o,
       id: c
     } = this.props, u = "";
-    return this.props.filters && (u = this.props.filters.map(e => e.extensions.map(e => ".".concat(e)).join(",")).join(",")), (0, Chunk54381.jsx)("input", {
+    return this.props.filters && (u = this.props.filters.map(e => e.extensions.map(e => ".".concat(e)).join(",")).join(",")), (0, i.jsx)("input", {
       id: c,
-      style: l(module),
-      className: require || s,
-      disabled: module,
+      style: l(e),
+      className: n || s,
+      disabled: e,
       type: "file",
-      tabIndex: exports,
+      tabIndex: t,
       onMouseDown: this.handleBrowserInputMouseDown,
       onChange: this.props.onChange,
       onClick: this.props.onClick,
       multiple: this.props.multiple,
       accept: u,
       name: r,
-      "aria-label": Chunk473749,
+      "aria-label": a,
       "aria-hidden": o || true,
       ref: e => {
         this._input = e

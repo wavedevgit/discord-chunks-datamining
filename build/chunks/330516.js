@@ -18,58 +18,58 @@ function o(e, t, n) {
 }
 class s {
   get displayMessage() {
-    if (null == this.code) return Chunk388032.intl.string(Chunk388032.t["5NMPSS"]);
+    if (null == this.code) return a.intl.string(a.t["5NMPSS"]);
     let {
       path: e
     } = this.context;
     switch (this.code) {
-      case Chunk186901.ff.DISK_LOW:
+      case i.ff.DISK_LOW:
         let {
           available: t, required: n
-        } = this.context, o = (0, Chunk424218.BU)(exports, {
+        } = this.context, o = (0, r.BU)(t, {
           useKibibytes: true
-        }), s = (0, Chunk424218.BU)(require, {
+        }), s = (0, r.BU)(n, {
           useKibibytes: true
         });
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t["2DR5dl"], {
+        return a.intl.formatToPlainString(a.t["2DR5dl"], {
           required: s,
           available: o
         });
-      case Chunk186901.ff.POST_INSTALL_FAILED:
+      case i.ff.POST_INSTALL_FAILED:
         let {
           name: l
         } = this.context;
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t.hP0B3A, {
+        return a.intl.formatToPlainString(a.t.hP0B3A, {
           name: l
         });
-      case Chunk186901.ff.FILE_NAME_TOO_LONG:
-        return Chunk388032.intl.string(Chunk388032.t["FWht5+"]);
-      case Chunk186901.ff.POST_INSTALL_CANCELLED:
-        return Chunk388032.intl.string(Chunk388032.t["9CNxFJ"]);
-      case Chunk186901.ff.IO_PERMISSION_DENIED:
-        return Chunk388032.intl.string(Chunk388032.t["PJx5+Z"]);
-      case Chunk186901.ff.NO_MANIFESTS:
-        return Chunk388032.intl.string(Chunk388032.t.gLM395);
-      case Chunk186901.ff.NOT_ENTITLED:
-        return Chunk388032.intl.string(Chunk388032.t.TLCR43);
-      case Chunk186901.ff.NOT_DIRECTORY:
-      case Chunk186901.ff.DISK_PERMISSION_DENIED:
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t.EjWbO6, {
-          path: module
+      case i.ff.FILE_NAME_TOO_LONG:
+        return a.intl.string(a.t["FWht5+"]);
+      case i.ff.POST_INSTALL_CANCELLED:
+        return a.intl.string(a.t["9CNxFJ"]);
+      case i.ff.IO_PERMISSION_DENIED:
+        return a.intl.string(a.t["PJx5+Z"]);
+      case i.ff.NO_MANIFESTS:
+        return a.intl.string(a.t.gLM395);
+      case i.ff.NOT_ENTITLED:
+        return a.intl.string(a.t.TLCR43);
+      case i.ff.NOT_DIRECTORY:
+      case i.ff.DISK_PERMISSION_DENIED:
+        return a.intl.formatToPlainString(a.t.EjWbO6, {
+          path: e
         });
-      case Chunk186901.ff.INVALID_DRIVE:
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t["08L2TG"], {
-          path: module
+      case i.ff.INVALID_DRIVE:
+        return a.intl.formatToPlainString(a.t["08L2TG"], {
+          path: e
         });
-      case Chunk186901.ff.APPLICATION_LOCK_FAILED:
-        return Chunk388032.intl.string(Chunk388032.t.RDYCUV);
-      case Chunk186901.ff.DISK_FULL:
-        return Chunk388032.intl.string(Chunk388032.t.mojtDJ);
-      case Chunk186901.ff.API_ERROR:
-      case Chunk186901.ff.MAX_REQUEST_RETRIES_EXCEEDED:
-        return Chunk388032.intl.string(Chunk388032.t.OXD41D);
+      case i.ff.APPLICATION_LOCK_FAILED:
+        return a.intl.string(a.t.RDYCUV);
+      case i.ff.DISK_FULL:
+        return a.intl.string(a.t.mojtDJ);
+      case i.ff.API_ERROR:
+      case i.ff.MAX_REQUEST_RETRIES_EXCEEDED:
+        return a.intl.string(a.t.OXD41D);
       default:
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t.r477WB, {
+        return a.intl.formatToPlainString(a.t.r477WB, {
           code: "".concat(this.code)
         })
     }

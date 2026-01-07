@@ -32,13 +32,13 @@ var Chunk544891 = require("./544891.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_INIT"
   })
 }
 
 function p() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_CLOSE"
   })
 }
@@ -185,37 +185,37 @@ function S(e) {
 }
 
 function I() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
 function T() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
 function C() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
 function A() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })
 }
 
 function N() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED"
   })
 }
 
 function P() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })
 }

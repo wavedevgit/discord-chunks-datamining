@@ -214,8 +214,8 @@ function ec(e) {
 }
 
 function eu() {
-  return (0, Chunk54381.jsx)(Chunk788911.Z, {
-    message: Chunk388032.intl.string(Chunk388032.t.bgDdNK)
+  return (0, r.jsx)(d.Z, {
+    message: z.intl.string(z.t.bgDdNK)
   })
 }
 

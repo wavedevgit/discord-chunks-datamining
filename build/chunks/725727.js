@@ -27,17 +27,17 @@ function h(e, t, n, a) {
 }
 
 function g() {
-  let e = (0, Chunk442837.e7)([Chunk1844.Z], () => Chunk1844.Z.lastFetchedActivePromotions),
-    t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    n = (0, Chunk775412._O)(),
-    g = (0, Chunk442837.e7)([Chunk431.Z], () => Chunk431.Z.hasAnyUnexpiredOffer()),
-    E = (0, Chunk695349.W)(),
-    [b, y] = Chunk473749.useState(false),
-    [O, v] = Chunk473749.useState([]);
-  Chunk473749.useEffect(() => {
-    (null != module || E) && Chunk570140.Z.wait(() => Chunk748770.ZP.markOutboundPromotionsSeen())
-  }, [module, E]);
-  let S = Chunk473749.useCallback(e => {
+  let e = (0, i.e7)([_.Z], () => _.Z.lastFetchedActivePromotions),
+    t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
+    n = (0, c._O)(),
+    g = (0, i.e7)([s.Z], () => s.Z.hasAnyUnexpiredOffer()),
+    E = (0, u.W)(),
+    [b, y] = r.useState(false),
+    [O, v] = r.useState([]);
+  r.useEffect(() => {
+    (null != e || E) && a.Z.wait(() => p.ZP.markOutboundPromotionsSeen())
+  }, [e, E]);
+  let S = r.useCallback(e => {
       v(t => t.some(t => {
         let {
           promotion: n
@@ -45,20 +45,20 @@ function g() {
         return n.id === e.promotion.id
       }) ? t : [...t, e])
     }, []),
-    I = Chunk74538.ZP.isPremiumExactly(exports, Chunk474936.PremiumTypes.TIER_2),
-    T = Chunk163684.g.useExperiment({
+    I = l.ZP.isPremiumExactly(t, m.PremiumTypes.TIER_2),
+    T = d.g.useExperiment({
       location: "useOutboundPromotions"
     }, {
       autoTrackExposure: false,
       disable: I
     }).enabled || I;
-  Chunk473749.useEffect(() => {
-    Chunk570140.Z.wait(() => {
-      T && (null == module || E) && Chunk748770.ZP.fetchActivePromotions()
+  r.useEffect(() => {
+    a.Z.wait(() => {
+      T && (null == e || E) && p.ZP.fetchActivePromotions()
     })
-  }, [module, T, E]), Chunk473749.useEffect(() => {
-    Chunk570140.Z.wait(() => {
-      (0, Chunk518638.t8)().then(e => {
+  }, [e, T, E]), r.useEffect(() => {
+    a.Z.wait(() => {
+      (0, f.t8)().then(e => {
         v(e), y(true)
       }).catch(() => {
         v([]), y(true)
@@ -70,8 +70,8 @@ function g() {
       code: e,
       promotion: t
     }
-    of O) C[exports.id] = module;
-  let A = h(require, g, E, C),
+    of O) C[t.id] = e;
+  let A = h(n, g, E, C),
     N = new Set(A.map(e => {
       let {
         id: t
@@ -79,7 +79,7 @@ function g() {
       return t
     }));
   return {
-    promotionsLoaded: b && (!T || null != module || E),
+    promotionsLoaded: b && (!T || null != e || E),
     activeOutboundPromotions: A,
     claimedEndedOutboundPromotions: O.filter(e => {
       let {
@@ -95,19 +95,19 @@ function g() {
 }
 
 function E() {
-  let e = (0, Chunk442837.e7)([Chunk1844.Z], () => Chunk1844.Z.lastSeenOutboundPromotionStartDate),
-    t = (0, Chunk775412._O)(),
-    n = h(exports, (0, Chunk442837.e7)([Chunk431.Z], () => Chunk431.Z.hasAnyUnexpiredOffer()), (0, Chunk695349.W)(), {});
-  return Chunk473749.useMemo(() => null == module ? require : require.filter(t => {
+  let e = (0, i.e7)([_.Z], () => _.Z.lastSeenOutboundPromotionStartDate),
+    t = (0, c._O)(),
+    n = h(t, (0, i.e7)([s.Z], () => s.Z.hasAnyUnexpiredOffer()), (0, u.W)(), {});
+  return r.useMemo(() => null == e ? n : n.filter(t => {
     let {
       startDate: n
     } = t;
     return new Date(n) > new Date(e)
-  }), [require, module]).filter(e => (0, f.ZC)(e))
+  }), [n, e]).filter(e => (0, f.ZC)(e))
 }
 
 function b() {
   return {
-    promotion: (0, Chunk442837.e7)([Chunk1844.Z], () => Chunk1844.Z.bogoPromotion)
+    promotion: (0, i.e7)([_.Z], () => _.Z.bogoPromotion)
   }
 }

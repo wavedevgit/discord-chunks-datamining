@@ -17,30 +17,30 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p() {
-  let e = Chunk695346.tU.useSetting(),
+  let e = s.tU.useSetting(),
     {
       enableViewerClipping: t
-    } = Chunk441167.Z.useExperiment({
+    } = o.Z.useExperiment({
       location: "Clips Settings"
     }, {
       autoTrackExposure: false
     }),
     {
       viewerClipsEnabled: n
-    } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
-    p = (0, Chunk779618.Z)(Chunk131951.Z);
-  return (0, Chunk54381.jsxs)(Chunk481060.l09, {
-    children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.AGDDkH),
-      description: Chunk388032.intl.string(Chunk388032.t["wW9/zQ"]),
-      checked: module,
+    } = (0, i.cj)([c.Z], () => c.Z.getSettings()),
+    p = (0, u.Z)(l.Z);
+  return (0, r.jsxs)(a.l09, {
+    children: [(0, r.jsx)(a.rsf, {
+      label: f.intl.string(f.t.AGDDkH),
+      description: f.intl.string(f.t["wW9/zQ"]),
+      checked: e,
       onChange: e => d.yg({
         allowVoiceRecording: e
       })
-    }), exports && p && (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.NWw7kY),
-      description: Chunk388032.intl.string(Chunk388032.t["0vjy8N"]),
-      checked: require,
+    }), t && p && (0, r.jsx)(a.rsf, {
+      label: f.intl.string(f.t.NWw7kY),
+      description: f.intl.string(f.t["0vjy8N"]),
+      checked: n,
       onChange: e => d.yl({
         enabled: e,
         trackAnalytics: true

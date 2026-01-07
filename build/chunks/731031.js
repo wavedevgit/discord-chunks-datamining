@@ -39,23 +39,23 @@ function _(e) {
 let m = 20 * Chunk70956.Z.Millis.SECOND,
   h = {
     getActiveErrors: () => {
-      let e = Chunk199902.Z.getCurrentUserActiveStream();
-      if (null == module || module.state === Chunk981631.jm8.PAUSED || 0 === Chunk199902.Z.getViewerIds(module).length) return null;
-      let t = (0, Chunk569545.V9)(module),
-        n = Chunk959457.Z.getRTCConnection(exports);
-      if (null == require) return null;
-      let s = require.getMediaEngineConnectionId();
-      if (null == Chunk70956) return null;
-      let p = Chunk959457.Z.getLastNonZeroRemoteVideoSinkWantsTime(exports);
-      if (null != p && performance.now() - p < m || !require.hasActiveRemoteWants()) return null;
-      let h = Chunk358221.Z.getParticipant(module.channelId, (0, Chunk569545.V9)(module));
+      let e = a.Z.getCurrentUserActiveStream();
+      if (null == e || e.state === f.jm8.PAUSED || 0 === a.Z.getViewerIds(e).length) return null;
+      let t = (0, i.V9)(e),
+        n = o.Z.getRTCConnection(t);
+      if (null == n) return null;
+      let s = n.getMediaEngineConnectionId();
+      if (null == s) return null;
+      let p = o.Z.getLastNonZeroRemoteVideoSinkWantsTime(t);
+      if (null != p && performance.now() - p < m || !n.hasActiveRemoteWants()) return null;
+      let h = r.Z.getParticipant(e.channelId, (0, i.V9)(e));
       if (null == h) return null;
-      let g = (0, Chunk150457.hj)(Chunk70956, module.ownerId);
+      let g = (0, d.hj)(s, e.ownerId);
       if (null == g) return null;
-      let E = (0, Chunk557457.Wc)(h);
-      return null == E ? null : g.short.frameRate < (0, Chunk150457.dj)(E.maxFrameRate) || g.long.frameRate < (0, Chunk150457.dj)(E.maxFrameRate) ? [_({
-        type: Chunk458725.u.STREAM_SEND_LOW_FPS
-      }, (0, Chunk442741.rT)((0, Chunk569545.V9)(module)))] : null
+      let E = (0, l.Wc)(h);
+      return null == E ? null : g.short.frameRate < (0, d.dj)(E.maxFrameRate) || g.long.frameRate < (0, d.dj)(E.maxFrameRate) ? [_({
+        type: c.u.STREAM_SEND_LOW_FPS
+      }, (0, u.rT)((0, i.V9)(e)))] : null
     },
     makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
   }

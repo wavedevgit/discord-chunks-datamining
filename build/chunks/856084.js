@@ -35,6 +35,6 @@ module.exports = {
   setGlobalDir: u,
   initGlobalDir: d,
   getGlobalDir: function() {
-    return o || this.initGlobalDir(), o || Chunk581079(false), o
+    return o || this.initGlobalDir(), o || r(false), o
   }
 }

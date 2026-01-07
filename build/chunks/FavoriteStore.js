@@ -35,23 +35,23 @@ function p(e) {
 
 function _() {
   var e, t, n;
-  f = null != (n = null == (e = Chunk581883.Z.settings.favorites) ? true : module.muted) && require, d = {};
-  let r = null == (t = Chunk581883.Z.settings.favorites) ? true : exports.favoriteChannels;
+  f = null != (n = null == (e = s.Z.settings.favorites) ? true : e.muted) && n, d = {};
+  let r = null == (t = s.Z.settings.favorites) ? true : t.favoriteChannels;
   if (null == r) returnfalse;
   for (let e in r) {
-    let t = r[module];
-    d[module] = {
-      id: module,
-      nickname: "" !== exports.nickname ? exports.nickname : null,
-      type: exports.type,
-      order: exports.position,
-      parentId: "0" !== exports.parentId ? exports.parentId : null
+    let t = r[e];
+    d[e] = {
+      id: e,
+      nickname: "" !== t.nickname ? t.nickname : null,
+      type: t.type,
+      order: t.position,
+      parentId: "0" !== t.parentId ? t.parentId : null
     }
   }
 }
 class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk581883.Z), _(), this.syncWith([Chunk581883.Z], _)
+    this.waitFor(s.Z), _(), this.syncWith([s.Z], _)
   }
   getFavoriteChannels() {
     return d

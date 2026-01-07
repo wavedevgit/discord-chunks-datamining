@@ -88,21 +88,21 @@ function W(e) {
 }
 
 function K() {
-  for (let e of L) ei(module);
+  for (let e of L) ei(e);
   ea()
 }
 
 function z() {
   let e = [],
-    t = Chunk944486.Z.getChannelId();
-  null != exports && module.push(exports);
-  let n = Chunk944486.Z.getVoiceChannelId();
-  null == require || module.includes(require) || module.push(require);
-  let r = Chunk258609.default.getRemoteSessionId(),
-    i = Chunk979651.Z.getVoiceStateForSession(Chunk314897.default.getId(), r);
-  (null == Chunk512722 ? true : Chunk512722.channelId) != null && module.push(null == Chunk512722 ? true : Chunk512722.channelId), s().difference(L, module).forEach(ei);
-  let a = s().difference(module, L);
-  return L = module, a
+    t = y.Z.getChannelId();
+  null != t && e.push(t);
+  let n = y.Z.getVoiceChannelId();
+  null == n || e.includes(n) || e.push(n);
+  let r = f.default.getRemoteSessionId(),
+    i = I.Z.getVoiceStateForSession(h.default.getId(), r);
+  (null == i ? true : i.channelId) != null && e.push(null == i ? true : i.channelId), s().difference(L, e).forEach(ei);
+  let a = s().difference(e, L);
+  return L = e, a
 }
 
 function q(e) {
@@ -241,7 +241,7 @@ function ec() {
 }
 
 function eu() {
-  Chunk158776.Z.getUserIds().forEach(e => Q(e))
+  b.Z.getUserIds().forEach(e => Q(e))
 }
 
 function ed(e) {
@@ -616,7 +616,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = V[e]) && t
   }
   isFullscreenInContext() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk981631.IlC.APP;
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : A.IlC.APP;
     return Object.values(G).some(t => t[e] === A.AEg.FULL_SCREEN)
   }
   getStageStreamSize(e) {

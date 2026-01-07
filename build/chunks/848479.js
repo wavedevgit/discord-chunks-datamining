@@ -21,78 +21,78 @@ let l = new Chunk710845.Z("ProcessUtilsElectron");
 class c extends Chunk77450.h {
   setupReportingTimer() {
     var e, t;
-    let n = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.processUtils) ? true : module.setMemoryInformation;
-    if (null == require) return void l.log("setMemoryInformation not available.");
+    let n = null === r.Z || true === r.Z || null == (e = r.Z.processUtils) ? true : e.setMemoryInformation;
+    if (null == n) return void l.log("setMemoryInformation not available.");
 
     function i(e) {
       return Math.ceil(e / 1024)
-    }(null == (t = performance.memory) ? true : exports.usedJSHeapSize) == null && l.error("usedJSHeapSize is not available."), setInterval(() => {
+    }(null == (t = performance.memory) ? true : t.usedJSHeapSize) == null && l.error("usedJSHeapSize is not available."), setInterval(() => {
       var e, t, r;
-      let a = null != (t = null == (e = performance.memory) ? true : module.usedJSHeapSize) ? exports : 0;
-      require({
-        memoryUsageKB: null != (r = this.lastMemoryUsageKB) ? Chunk579806 : 0,
-        usedJSHeapSizeKB: Chunk710845(Chunk77450)
+      let a = null != (t = null == (e = performance.memory) ? true : e.usedJSHeapSize) ? t : 0;
+      n({
+        memoryUsageKB: null != (r = this.lastMemoryUsageKB) ? r : 0,
+        usedJSHeapSizeKB: i(a)
       })
     }, 1e4)
   }
   getProcessUptime() {
     var e, t;
-    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getProcessUptime) ? true : module.call(exports)
+    return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getProcessUptime) ? true : e.call(t)
   }
   getCurrentCPUUsagePercent() {
     var e, t;
-    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCurrentCPUUsagePercent) ? true : module.call(exports)
+    return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getCurrentCPUUsagePercent) ? true : e.call(t)
   }
   getCumulativeCPUUsage() {
     var e, t;
-    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCumulativeCPUUsage) ? true : module.call(exports)
+    return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getCumulativeCPUUsage) ? true : e.call(t)
   }
   getCurrentMemoryUsageKB() {
     let e = c.getCurrentMemoryUsageKBCore();
-    return this.lastMemoryUsageKB = module, module
+    return this.lastMemoryUsageKB = e, e
   }
   static getCurrentMemoryUsageKBCore() {
     try {
-      let e = Chunk998502.ZP.getDiscordMemoryUsage();
-      if (null == module) return 0;
-      let t = Object.values(module).reduce((e, t) => e + t, 0);
-      return Math.ceil(exports / 1024)
+      let e = o.ZP.getDiscordMemoryUsage();
+      if (null == e) return 0;
+      let t = Object.values(e).reduce((e, t) => e + t, 0);
+      return Math.ceil(t / 1024)
     } catch (e) {
       return 0
     }
   }
   getMemoryUsageDetails() {
-    return Chunk998502.ZP.getDiscordMemoryUsage()
+    return o.ZP.getDiscordMemoryUsage()
   }
   getMemoryUsageElectronRenderer() {
     try {
-      return Chunk998502.ZP.getDiscordMemoryUsageElectronRenderer()
+      return o.ZP.getDiscordMemoryUsageElectronRenderer()
     } catch (e) {
       return null
     }
   }
   getMemoryPrivateUsageElectronRenderer() {
     try {
-      return Chunk998502.ZP.getDiscordMemoryPrivateUsageElectronRenderer()
+      return o.ZP.getDiscordMemoryPrivateUsageElectronRenderer()
     } catch (e) {
       return null
     }
   }
   getMemoryUsageElectronRendererUsedHeapSize() {
     var e, t;
-    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getUsedHeapSize) ? true : module.call(exports)
+    return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getUsedHeapSize) ? true : e.call(t)
   }
   getMemoryHeapStats() {
     var e, t;
-    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getHeapStats) ? true : module.call(exports)
+    return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getHeapStats) ? true : e.call(t)
   }
   getBlinkMemoryInfo() {
     var e, t;
-    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getBlinkMemoryInfo) ? true : module.call(exports)
+    return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getBlinkMemoryInfo) ? true : e.call(t)
   }
   getMemoryUsageElectronProcessTypeDetails() {
     try {
-      return Chunk998502.ZP.getDiscordMemoryUsageElectronProcessTypeDetails()
+      return o.ZP.getDiscordMemoryUsageElectronProcessTypeDetails()
     } catch (e) {
       return null
     }
@@ -106,14 +106,14 @@ class c extends Chunk77450.h {
   }
   disablePerfMemoryHooks() {
     try {
-      return Chunk998502.ZP.disablePerfMemoryHooks()
+      return o.ZP.disablePerfMemoryHooks()
     } catch (e) {
       return null
     }
   }
   getPerfAttributedMemory() {
     try {
-      return Chunk998502.ZP.getPerfAttributedMemory()
+      return o.ZP.getPerfAttributedMemory()
     } catch (e) {
       return null
     }
@@ -127,7 +127,7 @@ class c extends Chunk77450.h {
   }
   getPerfAttributedMemoryStats() {
     try {
-      return Chunk998502.ZP.getPerfAttributedMemoryStats()
+      return o.ZP.getPerfAttributedMemoryStats()
     } catch (e) {
       return null
     }
@@ -145,9 +145,9 @@ class c extends Chunk77450.h {
   disablePAMemoryProfiler() {
     try {
       var e;
-      let t = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.processUtils) ? true : module.disablePAMemoryProfiler;
-      if (true === exports) return null;
-      return exports(), true
+      let t = null === r.Z || true === r.Z || null == (e = r.Z.processUtils) ? true : e.disablePAMemoryProfiler;
+      if (true === t) return null;
+      return t(), true
     } catch (e) {
       return null
     }
@@ -155,7 +155,7 @@ class c extends Chunk77450.h {
   getPerfAttributedPAMemory() {
     try {
       var e, t;
-      return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getPerfAttributedPAMemory) ? true : module.call(exports)
+      return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getPerfAttributedPAMemory) ? true : e.call(t)
     } catch (e) {
       return null
     }
@@ -171,7 +171,7 @@ class c extends Chunk77450.h {
   getPartitionAllocatorStats() {
     try {
       var e, t;
-      return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getPartitionAllocatorStats) ? true : module.call(exports)
+      return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getPartitionAllocatorStats) ? true : e.call(t)
     } catch (e) {
       return null
     }
@@ -187,7 +187,7 @@ class c extends Chunk77450.h {
   disableProfilingV8Heap() {
     try {
       var e, t;
-      return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.disableProfilingV8Heap) ? true : module.call(exports)
+      return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.disableProfilingV8Heap) ? true : e.call(t)
     } catch (e) {
       return
     }
@@ -195,14 +195,14 @@ class c extends Chunk77450.h {
   getProfilerV8MemoryCallstacks() {
     try {
       var e, t;
-      return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getProfilerV8MemoryCallstacks) ? true : module.call(exports)
+      return null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getProfilerV8MemoryCallstacks) ? true : e.call(t)
     } catch (e) {
       return null
     }
   }
   constructor() {
     var e, t;
-    super(), s(this, "lastMemoryUsageKB", true), this.cpuCoreCount = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCPUCoreCount) ? true : module.call(exports), this.setupReportingTimer()
+    super(), s(this, "lastMemoryUsageKB", true), this.cpuCoreCount = null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getCPUCoreCount) ? true : e.call(t), this.setupReportingTimer()
   }
 }
 let u = new c

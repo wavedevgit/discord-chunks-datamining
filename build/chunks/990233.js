@@ -37,7 +37,7 @@ let l = (0, require("./112724.jsx").Z)((i = class extends(r = Chunk473749.Compon
     } = this.props, {
       columns: r
     } = this.state;
-    return require(r, module, exports)
+    return n(r, e, t)
   }
   constructor(...e) {
     super(...e), o(this, "state", {

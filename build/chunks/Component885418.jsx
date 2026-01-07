@@ -42,41 +42,41 @@ function _(e) {
 }
 
 function m() {
-  let e = (0, Chunk865066.O9)(),
-    [t, n] = Chunk473749.useState(false),
-    [c, m] = Chunk473749.useState(() => (0, Chunk865066.aL)()),
-    h = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getSystemServiceStatus("input-service")),
-    g = Chunk473749.useCallback(async () => {
-      require(true), Chunk823379 ? await (0, Chunk865066.OK)("windows-settings") : await (0, Chunk865066.sU)("windows-settings"), require(false), m((0, Chunk865066.aL)())
-    }, [Chunk823379]);
-  if (!module) return null;
+  let e = (0, l.O9)(),
+    [t, n] = i.useState(false),
+    [c, m] = i.useState(() => (0, l.aL)()),
+    h = (0, a.e7)([s.ZP], () => s.ZP.getSystemServiceStatus("input-service")),
+    g = i.useCallback(async () => {
+      n(true), c ? await (0, l.OK)("windows-settings") : await (0, l.sU)("windows-settings"), n(false), m((0, l.aL)())
+    }, [c]);
+  if (!e) return null;
   let E = "running" === h.state;
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk46667.systemServiceContainer,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk46667.systemServiceTextContainer,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: p.systemServiceContainer,
+    children: [(0, r.jsxs)("div", {
+      className: p.systemServiceTextContainer,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        children: Chunk388032.intl.string(Chunk388032.t.roHq80)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: f.intl.string(f.t.roHq80)
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
-        children: Chunk388032.intl.format(Chunk388032.t["8CAL+D"], {
-          helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SYSTEM_SERVICE)
+        children: f.intl.format(f.t["8CAL+D"], {
+          helpCenterLink: u.Z.getArticleURL(d.BhN.SYSTEM_SERVICE)
         })
-      }), Chunk823379 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), c ? (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: E ? "text-feedback-positive" : "text-feedback-warning",
-        children: E ? Chunk388032.intl.string(Chunk388032.t.KHVMkW) : Chunk388032.intl.format(Chunk388032.t["5Rlr0b"], {
+        children: E ? f.intl.string(f.t.KHVMkW) : f.intl.format(f.t["5Rlr0b"], {
           status: _(h)
         })
       }) : null]
-    }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-      variant: Chunk823379 ? "critical-secondary" : "primary",
-      loading: exports,
+    }), (0, r.jsx)(o.Button, {
+      variant: c ? "critical-secondary" : "primary",
+      loading: t,
       onClick: g,
-      text: Chunk823379 ? Chunk388032.intl.string(Chunk388032.t.pAwbdL) : Chunk388032.intl.string(Chunk388032.t["1iI46O"])
+      text: c ? f.intl.string(f.t.pAwbdL) : f.intl.string(f.t["1iI46O"])
     })]
   })
 }

@@ -44,9 +44,9 @@ class g extends(r = Chunk442837.ZP.PersistedStore) {
 d(g, "displayName", "GuildProgressStore"), d(g, "persistKey", "GuildProgressStore"), new g(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     let e = [];
-    Chunk709054.default.keys(p).forEach(t => {
+    c.default.keys(p).forEach(t => {
       p[t].has(u.Rg.COMPLETED) && e.push(t)
-    }), module.forEach(e => f(e, u.Rg.DISMISSED))
+    }), e.forEach(e => f(e, u.Rg.DISMISSED))
   },
   GUILD_PROGRESS_INITIALIZE: function(e) {
     let {

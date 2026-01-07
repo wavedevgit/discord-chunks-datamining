@@ -29,70 +29,70 @@ let f = [{
 }];
 
 function h() {
-  let [e, t] = Chunk473749.useState(null), [n, h] = Chunk473749.useState(0), [x, b] = Chunk473749.useState(1e3), [g, v] = Chunk473749.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+  let [e, t] = r.useState(null), [n, h] = r.useState(0), [x, b] = r.useState(1e3), [g, v] = r.useState(0), j = (0, i.e7)([d.Z], () => {
     var t;
-    return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
-  }), C = Object.entries(Chunk531578.nw), y = C.slice(C.length / 2).map(e => {
+    return null === e ? null : null != (t = d.Z.getFeedbackConfig(m.nw[e])) ? t : c.R[m.nw[e]]
+  }), C = Object.entries(m.nw), y = C.slice(C.length / 2).map(e => {
     let [t] = e;
     return {
       label: t,
       value: t
     }
-  }), _ = Chunk473749.useMemo(() => null != module && g >= 0 && g <= 100 && require >= 0, [module, g, require]);
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk746234.container,
-    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  }), _ = r.useMemo(() => null != e && g >= 0 && g <= 100 && n >= 0, [e, g, n]);
+  return (0, a.jsx)("div", {
+    className: p.container,
+    children: (0, a.jsxs)(s.Kqy, {
       gap: 32,
-      children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
+      children: [(0, a.jsx)(l.y6, {
         label: "Feedback Survey",
         options: y,
-        value: module,
+        value: e,
         onChange: e => {
           t(e)
         },
-        popoutLayerContext: Chunk246992.O$,
+        popoutLayerContext: u.O$,
         placeholder: "Select Feedback Survey"
-      }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+      }), (0, a.jsxs)(s.C3N, {
         label: "Override Survey Cooldown",
-        children: [null != j && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: [null != j && (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(s.Text, {
             variant: "text-sm/semibold",
             children: "Current cooldown"
-          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          }), (0, a.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: "".concat(j.cooldown / 1e3, " second(s) or")
-          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          }), (0, a.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: "".concat(j.cooldown / 6e4, " minute(s) or")
-          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          }), (0, a.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: "".concat(j.cooldown / 36e5, " hour(s) or")
-          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          }), (0, a.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: "".concat(j.cooldown / 864e5, " day(s)")
           })]
-        }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+        }), (0, a.jsxs)(s.Kqy, {
           direction: "horizontal",
           align: "end",
-          children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
+          children: [(0, a.jsx)(s.oil, {
             label: "Override cooldown",
             min: 0,
-            value: require.toString(),
+            value: n.toString(),
             type: "number",
             placeholder: "Duration length",
             onChange: e => h(parseFloat(e))
-          }), (0, Chunk54381.jsx)(Chunk199849.y6, {
+          }), (0, a.jsx)(l.y6, {
             options: f,
             value: x,
             onChange: e => {
               b(e)
             },
-            popoutLayerContext: Chunk246992.O$
+            popoutLayerContext: u.O$
           })]
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.C3N, {
+      }), (0, a.jsx)(s.izJ, {}), (0, a.jsx)(s.C3N, {
         label: "Override Survey Chance",
-        children: (0, Chunk54381.jsx)(Chunk481060.oil, {
+        children: (0, a.jsx)(s.oil, {
           label: "Override chance",
           description: null != j ? "Current chance: ".concat(100 * j.chance, "%") : true,
           helperText: "As a percentage",
@@ -102,39 +102,39 @@ function h() {
           type: "number",
           onChange: e => v(parseFloat(e))
         })
-      }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsxs)(s.ButtonGroup, {
+        children: [(0, a.jsx)(s.Button, {
           variant: "critical-primary",
           text: "Clear Override",
-          onClick: () => void(null != j && Chunk570140.Z.dispatch({
+          onClick: () => void(null != j && o.Z.dispatch({
             type: "FEEDBACK_OVERRIDE_CLEAR",
             feedbackType: j.feedbackType
           })),
           disabled: !_
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)(s.Button, {
           variant: "primary",
           text: "Update",
-          onClick: () => void(null != j && Chunk570140.Z.dispatch({
+          onClick: () => void(null != j && o.Z.dispatch({
             type: "FEEDBACK_OVERRIDE_SET",
             feedbackType: j.feedbackType,
-            cooldown: require * x,
+            cooldown: n * x,
             chance: g / 100
           })),
           disabled: !_
         })]
-      }), null == module && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), null == e && (0, a.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: need to select a survey"
-      }), !(require >= 0) && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), !(n >= 0) && (0, a.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: cooldown needs to be a number greater than 0"
-      }), !(g >= 0 && g <= 100) && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), !(g >= 0 && g <= 100) && (0, a.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: chance needs to be a number between 0 and 100"
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, a.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: "Clear override resets a feedback survey to its default values"
       })]

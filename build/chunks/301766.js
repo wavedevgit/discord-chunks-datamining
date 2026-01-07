@@ -47,13 +47,13 @@ class o extends Chunk81825.Z {
   }
   get premiumSubscriptionType() {
     switch (this.skuId) {
-      case Chunk474936.Si.LEGACY:
-      case Chunk474936.Si.TIER_2:
-        return Chunk474936.PremiumTypes.TIER_2;
-      case Chunk474936.Si.TIER_1:
-        return Chunk474936.PremiumTypes.TIER_1;
-      case Chunk474936.Si.TIER_0:
-        return Chunk474936.PremiumTypes.TIER_0;
+      case i.Si.LEGACY:
+      case i.Si.TIER_2:
+        return i.PremiumTypes.TIER_2;
+      case i.Si.TIER_1:
+        return i.PremiumTypes.TIER_1;
+      case i.Si.TIER_0:
+        return i.PremiumTypes.TIER_0;
       default:
         return null
     }
@@ -78,7 +78,7 @@ class o extends Chunk81825.Z {
       tax_inclusive: this.taxInclusive,
       currency: this.currency,
       price: this.price,
-      prices: module,
+      prices: e,
       price_tier: this.price
     }
   }

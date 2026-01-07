@@ -67,15 +67,15 @@ function g(e, t) {
   })
 }
 let E = {
-  fetch: () => Chunk544891.tn.get({
-    url: Chunk981631.ANM.CONNECTIONS,
+  fetch: () => i.tn.get({
+    url: d.ANM.CONNECTIONS,
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => a.Z.dispatch({
     type: "USER_CONNECTIONS_UPDATE",
     local: true,
     accounts: e.body
-  }), () => Chunk570140.Z.dispatch({
+  }), () => a.Z.dispatch({
     type: "USER_CONNECTIONS_UPDATE",
     local: true,
     accounts: []

@@ -32,7 +32,7 @@ var s = function() {
   function e(t) {
     r(this, e), o(this, "item", true), o(this, "config", true), this.config = t, this.item = {}, this.initializeExposedProperties()
   }
-  return a(module, [{
+  return a(e, [{
     key: "initializeExposedProperties",
     value: function() {
       var e = this;
@@ -79,5 +79,5 @@ var s = function() {
   }, {
     key: "endDrag",
     value: function() {}
-  }]), module
+  }]), e
 }()

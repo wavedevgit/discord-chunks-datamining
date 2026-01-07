@@ -17,23 +17,23 @@ function d() {
     selectedTab: e,
     isPhantomPreview: t,
     handlePreviewDismiss: r
-  } = (0, Chunk847033.m)();
-  return exports ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk250210.previewNotice,
-      children: [(0, Chunk54381.jsx)(Chunk481060.kZF, {
+  } = (0, l.m)();
+  return t ? (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsxs)("div", {
+      className: a.previewNotice,
+      children: [(0, n.jsx)(o.kZF, {
         size: "xs",
         color: "currentColor"
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
-        className: Chunk250210.previewNoticeText,
-        children: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.F4Z0nV) : Chunk388032.intl.string(Chunk388032.t.pzTFpM)
+        className: a.previewNoticeText,
+        children: e === c.y.GUILD_PRODUCTS_PREVIEW ? s.intl.string(s.t.F4Z0nV) : s.intl.string(s.t.pzTFpM)
       })]
-    }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
-      text: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.YF35pV) : Chunk388032.intl.string(Chunk388032.t.r30bky),
+    }), (0, n.jsx)(i.zxk, {
+      text: e === c.y.GUILD_PRODUCTS_PREVIEW ? s.intl.string(s.t.YF35pV) : s.intl.string(s.t.r30bky),
       size: "sm",
       variant: "secondary",
-      onClick: require
+      onClick: r
     })]
   }) : null
 }

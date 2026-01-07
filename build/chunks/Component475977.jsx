@@ -21,58 +21,58 @@ let h = () => {
   var e;
   let {
     analyticsLocations: t
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = Chunk473749.useRef(null), {
+  } = (0, s.ZP)(o.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = i.useRef(null), {
     asset: h,
     popoutAsset: g,
     title: E,
     body: b,
     version: y,
     revertTextColor: O
-  } = (0, Chunk196033.W)(), v = Chunk473749.useContext(Chunk924052.Tx), S = null != (e = null == v ? true : v.navigateWithValidation) ? module : e => e();
-  Chunk473749.useEffect(() => {
-    Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: Chunk474936.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
-      location_stack: exports,
+  } = (0, d.W)(), v = i.useContext(l.Tx), S = null != (e = null == v ? true : v.navigateWithValidation) ? e : e => e();
+  i.useEffect(() => {
+    c.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: p.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+      location_stack: t,
       version: y
     })
-  }, [exports, y]);
+  }, [t, y]);
   let I = () => {
-    S(() => (0, Chunk335131.mK)({
-      analyticsLocations: exports,
-      analyticsSource: Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
+    S(() => (0, u.mK)({
+      analyticsLocations: t,
+      analyticsSource: o.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
     }))
   };
-  return (0, Chunk54381.jsxs)("div", {
-    ref: require,
-    className: Chunk200471.container,
+  return (0, r.jsxs)("div", {
+    ref: n,
+    className: m.container,
     style: {
       backgroundImage: "url(".concat(h, ")")
     },
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk200471.artContainer,
+    children: [(0, r.jsx)("div", {
+      className: m.artContainer,
       "aria-hidden": true,
       role: "presentation",
-      children: (0, Chunk54381.jsx)("img", {
+      children: (0, r.jsx)("img", {
         src: g,
-        className: Chunk200471.art,
+        className: m.art,
         alt: ""
       })
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk200471.mainColumn,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, r.jsxs)("div", {
+      className: m.mainColumn,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/extrabold",
         color: O ? "text-overlay-dark" : "currentColor",
-        className: Chunk200471.title,
+        className: m.title,
         children: E
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: O ? "text-overlay-dark" : "currentColor",
         children: b
       })]
-    }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+    }), (0, r.jsx)(a.Button, {
       onClick: I,
       variant: "overlay-primary",
-      text: Chunk388032.intl.string(Chunk388032.t.fYfGgK)
+      text: _.intl.string(_.t.fYfGgK)
     })]
   })
 }

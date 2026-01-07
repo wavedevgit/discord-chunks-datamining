@@ -23,6 +23,6 @@ var Chunk351196 = require("./351196.js"),
       }
     })
   } catch (e) {
-    return 8 === module
+    return 8 === e
   }
 }())

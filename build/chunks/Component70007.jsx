@@ -58,9 +58,9 @@ function c(e) {
 }
 
 function u() {
-  let e = Chunk473749.useContext(f);
-  if (null == module) throw Error("useThemeContext must be used within a ThemeContext.Provider");
-  return module
+  let e = i.useContext(f);
+  if (null == e) throw Error("useThemeContext must be used within a ThemeContext.Provider");
+  return e
 }
 let d = c({
     theme: "light",

@@ -20,7 +20,7 @@ function p() {
 }
 class f extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z, Chunk810788.Z), this.syncWith([Chunk810788.Z], p)
+    this.waitFor(s.Z, o.Z), this.syncWith([o.Z], p)
   }
   channelNoticePredicate(e) {
     return !!e.features.has(c.GuildFeatures.LINKED_TO_HUB) && !u

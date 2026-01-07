@@ -70,165 +70,165 @@ function w(e, t) {
 }
 
 function D() {
-  let e = (0, Chunk341569.nq)(),
-    t = (0, Chunk341569.z8)(),
-    n = (0, Chunk358085.isWindows)(),
+  let e = (0, O.nq)(),
+    t = (0, O.z8)(),
+    n = (0, h.isWindows)(),
     {
       remindersEnabled: a,
       clipsLength: N,
       clipsQuality: R
-    } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
-    D = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
-    x = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-    L = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)),
-    j = (0, Chunk779618.Z)(Chunk131951.Z),
+    } = (0, s.cj)([E.Z], () => E.Z.getSettings()),
+    D = (0, s.e7)([E.Z], () => E.Z.getHardwareClassification()),
+    x = (0, s.e7)([m.ZP], () => m.ZP.getKeybindForAction(I.kg4.SAVE_CLIP, true)),
+    L = (0, s.e7)([m.ZP], () => m.ZP.getKeybindForAction(I.kg4.SAVE_SCREENSHOT, true)),
+    j = (0, y.Z)(_.Z),
     {
       showClipsHeaderEntrypoint: M
-    } = Chunk924557.NV.useExperiment({
+    } = g.NV.useExperiment({
       location: "clips_recording_settings"
     }, {
       autoTrackExposure: false
     }),
-    k = (0, Chunk924557.PP)();
+    k = (0, g.PP)();
   o()(null != x, "Save clip keybind unset"), o()(null != L, "Save screenshot keybind unset");
-  let U = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    G = Chunk473749.useMemo(() => [{
-      value: Chunk356659.OT.SECONDS_30,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv/3"], {
+  let U = (0, s.e7)([f.default], () => f.default.locale),
+    G = i.useMemo(() => [{
+      value: S.OT.SECONDS_30,
+      label: C.intl.formatToPlainString(C.t["bTFv/3"], {
         count: 30
       })
     }, {
-      value: Chunk356659.OT.MINUTES_1,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
+      value: S.OT.MINUTES_1,
+      label: C.intl.formatToPlainString(C.t.ICo9Nk, {
         count: 1
       })
     }, {
-      value: Chunk356659.OT.MINUTES_2,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
+      value: S.OT.MINUTES_2,
+      label: C.intl.formatToPlainString(C.t.ICo9Nk, {
         count: 2
       })
     }], [U]),
-    Z = Chunk473749.useMemo(() => [{
-      value: Chunk37113.LY.RESOLUTION_480,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-        resolution: Chunk37113.LY.RESOLUTION_480
+    Z = i.useMemo(() => [{
+      value: T.LY.RESOLUTION_480,
+      label: C.intl.formatToPlainString(C.t.TEOC0I, {
+        resolution: T.LY.RESOLUTION_480
       })
     }, {
-      value: Chunk37113.LY.RESOLUTION_720,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-        resolution: Chunk37113.LY.RESOLUTION_720
+      value: T.LY.RESOLUTION_720,
+      label: C.intl.formatToPlainString(C.t.TEOC0I, {
+        resolution: T.LY.RESOLUTION_720
       })
     }, {
-      value: Chunk37113.LY.RESOLUTION_1080,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-        resolution: Chunk37113.LY.RESOLUTION_1080
+      value: T.LY.RESOLUTION_1080,
+      label: C.intl.formatToPlainString(C.t.TEOC0I, {
+        resolution: T.LY.RESOLUTION_1080
       })
     }, {
-      value: Chunk37113.LY.RESOLUTION_1440,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-        resolution: Chunk37113.LY.RESOLUTION_1440
+      value: T.LY.RESOLUTION_1440,
+      label: C.intl.formatToPlainString(C.t.TEOC0I, {
+        resolution: T.LY.RESOLUTION_1440
       })
     }, {
-      value: Chunk37113.LY.RESOLUTION_SOURCE,
-      label: Chunk388032.intl.string(Chunk388032.t.XjXqzh)
+      value: T.LY.RESOLUTION_SOURCE,
+      label: C.intl.string(C.t.XjXqzh)
     }], [U]),
-    F = Chunk473749.useMemo(() => [{
-      value: Chunk37113.ws.FPS_15,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-        fps: Chunk37113.ws.FPS_15
+    F = i.useMemo(() => [{
+      value: T.ws.FPS_15,
+      label: C.intl.formatToPlainString(C.t.Qb44XH, {
+        fps: T.ws.FPS_15
       })
     }, {
-      value: Chunk37113.ws.FPS_30,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-        fps: Chunk37113.ws.FPS_30
+      value: T.ws.FPS_30,
+      label: C.intl.formatToPlainString(C.t.Qb44XH, {
+        fps: T.ws.FPS_30
       })
     }, {
-      value: Chunk37113.ws.FPS_60,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-        fps: Chunk37113.ws.FPS_60
+      value: T.ws.FPS_60,
+      label: C.intl.formatToPlainString(C.t.Qb44XH, {
+        fps: T.ws.FPS_60
       })
     }], [U]),
-    B = Chunk473749.useCallback(e => {
+    B = i.useCallback(e => {
       u.Z.setKeybind(w(P({}, x), {
         shortcut: e
       }))
     }, [x]),
-    V = Chunk473749.useCallback(e => {
+    V = i.useCallback(e => {
       u.Z.setKeybind(w(P({}, L), {
         shortcut: e
       }))
     }, [L]);
-  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-    children: [(0, Chunk54381.jsx)(Chunk494620.Z, {
-      children: Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])
-    }), D === Chunk894694.xH.BELOW_MINIMUM ? (0, Chunk54381.jsx)(Chunk494620.Z, {
-      look: Chunk494620.z.WARNING,
-      children: Chunk388032.intl.string(Chunk388032.t.SIxrIF)
-    }) : null, (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.h8rgrK),
-      description: Chunk388032.intl.string(Chunk388032.t["4Qw3NO"]),
-      checked: exports,
+  return (0, r.jsxs)(c.C3N, {
+    children: [(0, r.jsx)(p.Z, {
+      children: C.intl.string(C.t["Z+MfqT"])
+    }), D === b.xH.BELOW_MINIMUM ? (0, r.jsx)(p.Z, {
+      look: p.z.WARNING,
+      children: C.intl.string(C.t.SIxrIF)
+    }) : null, (0, r.jsx)(c.rsf, {
+      label: C.intl.string(C.t.h8rgrK),
+      description: C.intl.string(C.t["4Qw3NO"]),
+      checked: t,
       onChange: e => v.em({
         clipsEnabled: e,
         trackAnalytics: true
       })
-    }), require && j && (0, Chunk54381.jsx)(Chunk54381.Fragment, {
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.yXvykv),
-        description: Chunk388032.intl.string(Chunk388032.t.YP3ujk),
-        checked: module,
+    }), n && j && (0, r.jsx)(r.Fragment, {
+      children: (0, r.jsx)(c.rsf, {
+        label: C.intl.string(C.t.yXvykv),
+        description: C.intl.string(C.t.YP3ujk),
+        checked: e,
         onChange: e => v._Q({
           enabled: e,
           trackAnalytics: true
         })
       })
-    }), M && (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["3zwNf6"]),
-      description: Chunk388032.intl.string(Chunk388032.t.m4Cjj9),
-      checked: Chunk512722,
+    }), M && (0, r.jsx)(c.rsf, {
+      label: C.intl.string(C.t["3zwNf6"]),
+      description: C.intl.string(C.t.m4Cjj9),
+      checked: a,
       onChange: e => v.N0(e)
-    }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-      onChange: Chunk39604.eU,
-      label: Chunk388032.intl.string(Chunk388032.t.OgfUio),
-      description: Chunk388032.intl.string(Chunk388032.t.H7j4tY),
+    }), (0, r.jsx)(l.y6, {
+      onChange: v.eU,
+      label: C.intl.string(C.t.OgfUio),
+      description: C.intl.string(C.t.H7j4tY),
       value: N,
       options: G
-    }), (0, Chunk54381.jsx)(Chunk199849.y6, {
+    }), (0, r.jsx)(l.y6, {
       onChange: e => v.yi({
         resolution: e,
         frameRate: R.frameRate
       }),
-      label: Chunk388032.intl.string(Chunk388032.t.aFudZJ),
-      description: Chunk388032.intl.string(Chunk388032.t.nIrkW5),
+      label: C.intl.string(C.t.aFudZJ),
+      description: C.intl.string(C.t.nIrkW5),
       value: R.resolution,
       options: Z
-    }), (0, Chunk54381.jsx)(Chunk199849.y6, {
+    }), (0, r.jsx)(l.y6, {
       onChange: e => v.yi({
         resolution: R.resolution,
         frameRate: e
       }),
-      label: Chunk388032.intl.string(Chunk388032.t["2wScL1"]),
-      description: Chunk388032.intl.string(Chunk388032.t["Rf9+fy"]),
+      label: C.intl.string(C.t["2wScL1"]),
+      description: C.intl.string(C.t["Rf9+fy"]),
       value: R.frameRate,
       options: F
-    }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t.pf54EU),
-      description: Chunk388032.intl.string(Chunk388032.t["QyB/jK"]),
+    }), (0, r.jsx)(c.gNt, {
+      label: C.intl.string(C.t.pf54EU),
+      description: C.intl.string(C.t["QyB/jK"]),
       layout: "horizontal",
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk263753.keyRecorder,
-        children: (0, Chunk54381.jsx)(Chunk825209.Z, {
+      children: (0, r.jsx)("div", {
+        className: A.keyRecorder,
+        children: (0, r.jsx)(d.Z, {
           defaultValue: x.shortcut,
           onChange: B
         })
       })
-    }), k && (0, Chunk54381.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t["0U/hj7"]),
-      description: Chunk388032.intl.string(Chunk388032.t["5zxkdo"]),
+    }), k && (0, r.jsx)(c.gNt, {
+      label: C.intl.string(C.t["0U/hj7"]),
+      description: C.intl.string(C.t["5zxkdo"]),
       layout: "horizontal",
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk263753.keyRecorder,
-        children: (0, Chunk54381.jsx)(Chunk825209.Z, {
+      children: (0, r.jsx)("div", {
+        className: A.keyRecorder,
+        children: (0, r.jsx)(d.Z, {
           defaultValue: L.shortcut,
           onChange: V
         })

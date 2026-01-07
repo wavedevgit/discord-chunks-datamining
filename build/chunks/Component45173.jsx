@@ -83,13 +83,13 @@ function O(e) {
               color: y
             },
             className: b.display,
-            children: m.intl.string(h.default["CdU/PF"])
+            children: h.intl.string(m.default["CdU/PF"])
           }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             style: {
               color: y
             },
-            children: m.intl.string(h.default["M/LvW0"])
+            children: h.intl.string(m.default["M/LvW0"])
           }), (0, r.jsx)(a.P3F, {
             className: b.dismissButton,
             onClick: () => O(g.L.DISMISS),
@@ -101,7 +101,7 @@ function O(e) {
               style: {
                 color: y
               },
-              children: m.intl.string(m.t.WAI6xu)
+              children: h.intl.string(h.t.WAI6xu)
             })
           })]
         }), (0, r.jsx)(p.Z, {

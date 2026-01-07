@@ -13,7 +13,7 @@ Chunk98405({
   enumerable: true,
   dontCallGetSet: true,
   forced: Chunk621523(function() {
-    return Chunk507604 && 1 !== Object.getOwnPropertyDescriptor(Chunk127849, "queueMicrotask").value.length
+    return c && 1 !== Object.getOwnPropertyDescriptor(i, "queueMicrotask").value.length
   })
 }, {
   queueMicrotask: function(e) {

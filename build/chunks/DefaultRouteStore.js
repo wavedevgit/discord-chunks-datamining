@@ -40,26 +40,26 @@ function p(e) {
 class _ extends(r = Chunk442837.ZP.PersistedStore) {
   initialize() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c;
-    u = null != module ? module : c
+    u = null != e ? e : c
   }
   get defaultRoute() {
-    return Chunk981631.Z5c.ME
+    return s.Z5c.ME
   }
   get lastNonVoiceRoute() {
     var e;
-    return null != (e = u.lastViewedNonVoicePath) ? module : Chunk981631.Z5c.ME
+    return null != (e = u.lastViewedNonVoicePath) ? e : s.Z5c.ME
   }
   get fallbackRoute() {
-    return Chunk981631.Z5c.ME
+    return s.Z5c.ME
   }
   getState() {
     return u
   }
 }
 l(_, "displayName", "DefaultRouteStore"), l(_, "persistKey", "DefaultRouteStore"), l(_, "migrations", [() => {
-  let e = Chunk433517.K.get(d, null);
-  return Chunk433517.K.remove(d), {
-    lastViewedPath: module
+  let e = a.K.get(d, null);
+  return a.K.remove(d), {
+    lastViewedPath: e
   }
 }]);
 let m = new _(Chunk570140.Z, {

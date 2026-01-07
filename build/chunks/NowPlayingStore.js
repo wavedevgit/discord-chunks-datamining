@@ -101,17 +101,17 @@ function I(e) {
 
 function S() {
   let e, t = false;
-  return Chunk752048.Z.shouldFetch() || f || (h = {}, O = {}, e = false, Chunk158776.Z.getUserIds().forEach(t => {
+  return o.Z.shouldFetch() || f || (h = {}, O = {}, e = false, a.Z.getUserIds().forEach(t => {
     let n = u.default.getUser(t);
     null != n && (e = I({
       user: n,
       activities: a.Z.getActivities(t)
     }) || e)
-  }), t = module), f = !Chunk752048.Z.shouldFetch(), exports
+  }), t = e), f = !o.Z.shouldFetch(), t
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk158776.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk752048.Z], S)
+    this.waitFor(a.Z, o.Z, u.default), this.syncWith([o.Z], S)
   }
   get games() {
     return h

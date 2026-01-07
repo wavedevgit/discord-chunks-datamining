@@ -113,14 +113,14 @@ class ef extends Chunk473749.PureComponent {
       location: l,
       fetchStoreListing: a
     } = this.props;
-    if (null != Chunk120356.state) {
+    if (null != l.state) {
       let {
         analyticsSource: e,
         analyticsProperties: t
-      } = Chunk120356.state;
-      this._analyticsSource = module, this._extraAnalyticsProperties = exports
-    } else this._analyticsSource = Chunk981631.SaU;
-    (null == exports || exports.isSlimDirectoryVersion()) && a(), null != module && (require || Chunk473749 || (0, Chunk496929.yD)(module.applicationId), Chunk54381 && Chunk570140.Z.wait(() => (0, Chunk659429.$)(module.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
+      } = l.state;
+      this._analyticsSource = e, this._extraAnalyticsProperties = t
+    } else this._analyticsSource = ea.SaU;
+    (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, h.yD)(e.applicationId), r && g.Z.wait(() => (0, m.$)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentDidUpdate(e) {
     let {
@@ -138,7 +138,7 @@ class ef extends Chunk473749.PureComponent {
         slug: a
       }), (t !== e.locale || i !== e.skuId) && s(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
-      g.Z.wait(() => (0, h.$)(n.applicationId))
+      g.Z.wait(() => (0, m.$)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentWillUnmount() {
@@ -149,9 +149,9 @@ class ef extends Chunk473749.PureComponent {
         loadDate: t
       }
     } = this.props;
-    null != exports && Chunk626135.default.track(Chunk981631.rMx.STORE_LISTING_EXITED, {
-      load_id: module,
-      duration_ms: Date.now() - exports
+    null != t && B.default.track(ea.rMx.STORE_LISTING_EXITED, {
+      load_id: e,
+      duration_ms: Date.now() - t
     })
   }
   replaceUrlWithSlug() {}
@@ -162,20 +162,20 @@ class ef extends Chunk473749.PureComponent {
       hasFetchedNews: n,
       analyticsContext: r
     } = this.props;
-    if (this._trackedViewed || null == module || null == exports || null == exports.description || !(this.isChannelType || require)) return;
-    let i = exports.carouselItems.reduce((e, t) => (null != t.assetId ? e.images++ : e.videos++, e), {
+    if (this._trackedViewed || null == e || null == t || null == t.description || !(this.isChannelType || n)) return;
+    let i = t.carouselItems.reduce((e, t) => (null != t.assetId ? e.images++ : e.videos++, e), {
       images: 0,
       videos: 0
     });
-    Chunk626135.default.track(Chunk981631.rMx.STORE_LISTING_VIEWED, ed(ep(ed({}, this._extraAnalyticsProperties), {
-      load_id: Chunk54381.loadId,
-      has_description: null != exports.description && exports.description.length > 0,
-      has_staff_review: null != exports.staffNotes,
-      carousel_image_count: Chunk473749.images,
-      carousel_video_count: Chunk473749.videos,
-      location: Chunk54381.location.page,
+    B.default.track(ea.rMx.STORE_LISTING_VIEWED, ed(ep(ed({}, this._extraAnalyticsProperties), {
+      load_id: r.loadId,
+      has_description: null != t.description && t.description.length > 0,
+      has_staff_review: null != t.staffNotes,
+      carousel_image_count: i.images,
+      carousel_video_count: i.videos,
+      location: r.location.page,
       source: this._analyticsSource
-    }), (0, Chunk100159.Z)(module, true))), this._trackedViewed = true
+    }), (0, j.Z)(e, true))), this._trackedViewed = true
   }
   renderHeader(e, t) {
     let {
@@ -333,34 +333,34 @@ class ef extends Chunk473749.PureComponent {
       storeListing: t,
       application: n
     } = this.props;
-    if (null == module || null == exports || null == require) return null;
+    if (null == e || null == t || null == n) return null;
     let i = [],
-      l = require.getSplashURL(1024);
-    null != Chunk120356 && Chunk473749.push(Chunk120356), null != exports.headerLogoLightTheme && Chunk473749.unshift((0, Chunk73346._W)(require.id, exports.headerLogoLightTheme, 1024, "jpg"));
-    let a = Chunk606081.Z.Product({
-        name: module.name,
-        description: null != module.summary && "" !== module.summary ? module.summary : exports.tagline,
-        image: Chunk606081.Z.Product.Image(Chunk473749),
-        sku: module.id
+      l = n.getSplashURL(1024);
+    null != l && i.push(l), null != t.headerLogoLightTheme && i.unshift((0, z._W)(n.id, t.headerLogoLightTheme, 1024, "jpg"));
+    let a = T.Z.Product({
+        name: e.name,
+        description: null != e.summary && "" !== e.summary ? e.summary : t.tagline,
+        image: T.Z.Product.Image(i),
+        sku: e.id
       }),
-      o = module.getPrice();
-    if (null != Chunk95015) {
+      o = e.getPrice();
+    if (null != o) {
       let {
         amount: e,
         currency: t
-      } = Chunk95015;
-      a.offers = Chunk606081.Z.Offer({
-        priceCurrency: exports.toUpperCase(),
-        price: (0, Chunk937615.T4)(module, exports, {
+      } = o;
+      a.offers = T.Z.Offer({
+        priceCurrency: t.toUpperCase(),
+        price: (0, F.T4)(e, t, {
           style: "decimal"
         })
       })
     }
-    let s = Chunk606081.Z.ItemPage({
+    let s = T.Z.ItemPage({
       mainEntity: a
     });
-    return (0, Chunk54381.jsx)(Chunk606081.Z, {
-      data: Chunk442837
+    return (0, r.jsx)(T.Z, {
+      data: s
     })
   }
   renderSmall(e, t, n) {
@@ -395,43 +395,43 @@ class ef extends Chunk473749.PureComponent {
       matureAgree: l,
       isAuthenticated: a
     } = this.props;
-    if (null == module || null == exports || null == require || require.isSlimDirectoryVersion()) return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [this.renderHeader(module, exports), (0, Chunk54381.jsx)(Chunk600164.Z, {
-        align: Chunk600164.Z.Align.CENTER,
-        justify: Chunk600164.Z.Justify.CENTER,
-        children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
-          className: Chunk97713.spinner
+    if (null == e || null == t || null == n || n.isSlimDirectoryVersion()) return (0, r.jsxs)(i.Fragment, {
+      children: [this.renderHeader(e, t), (0, r.jsx)(S.Z, {
+        align: S.Z.Align.CENTER,
+        justify: S.Z.Justify.CENTER,
+        children: (0, r.jsx)(f.$jN, {
+          className: ec.spinner
         })
       })]
     });
-    if (!Chunk120356 && exports.showAgeGate) {
-      let n = a ? null : (0, Chunk54381.jsx)("div", {
-        className: Chunk97713.gatedListing,
+    if (!l && t.showAgeGate) {
+      let n = a ? null : (0, r.jsx)("div", {
+        className: ec.gatedListing,
         children: this.renderListing()
       });
-      return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
-          location: module.name
-        }), this.renderJsonLD(), this.renderHeader(module, exports), (0, Chunk54381.jsx)(Chunk119520.Z, {
-          game: module
-        }), require]
+      return (0, r.jsxs)(i.Fragment, {
+        children: [(0, r.jsx)(N.yY, {
+          location: e.name
+        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)(X.Z, {
+          game: e
+        }), n]
       })
     }
-    return a ? (0, Chunk54381.jsxs)("div", {
-      className: Chunk97713.listingWrapper,
-      children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
-        location: module.name
-      }), this.renderJsonLD(), (0, Chunk54381.jsx)(Chunk410575.Z, {
-        section: Chunk981631.jXE.NAVIGATION,
-        children: this.renderHeader(module, exports)
-      }), (0, Chunk54381.jsx)(Chunk410575.Z, {
-        section: Chunk981631.jXE.BODY,
+    return a ? (0, r.jsxs)("div", {
+      className: ec.listingWrapper,
+      children: [(0, r.jsx)(N.yY, {
+        location: e.name
+      }), this.renderJsonLD(), (0, r.jsx)(_.Z, {
+        section: ea.jXE.NAVIGATION,
+        children: this.renderHeader(e, t)
+      }), (0, r.jsx)(_.Z, {
+        section: ea.jXE.BODY,
         children: this.renderListing()
       })]
-    }) : (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
-        location: module.name
-      }), this.renderJsonLD(), this.renderHeader(module, exports), this.renderListing()]
+    }) : (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(N.yY, {
+        location: e.name
+      }), this.renderJsonLD(), this.renderHeader(e, t), this.renderListing()]
     })
   }
   constructor(...e) {

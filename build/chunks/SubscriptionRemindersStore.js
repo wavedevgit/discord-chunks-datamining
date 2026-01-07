@@ -36,11 +36,11 @@ function p(e) {
 }
 class _ extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(c.default)
   }
   shouldShowReactivateNotice() {
-    let e = Chunk594174.default.getCurrentUser();
-    return !(0, Chunk74538.I5)(module) && f
+    let e = c.default.getCurrentUser();
+    return !(0, u.I5)(e) && f
   }
 }
 d(_, "displayName", "SubscriptionRemindersStore");

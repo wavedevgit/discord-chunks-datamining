@@ -160,8 +160,8 @@ function A(e) {
 }
 
 function N() {
-  let e = Chunk594174.default.getCurrentUser();
-  return null != module && module.isStaff()
+  let e = a.default.getCurrentUser();
+  return null != e && e.isStaff()
 }
 let P = {
   getName: g,

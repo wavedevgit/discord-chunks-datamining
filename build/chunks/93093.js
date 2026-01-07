@@ -38,13 +38,13 @@ class o extends Chunk442837.ZP.Store {
     true !== e.guild.unavailable && this.guildIds.delete(e.guild.id)
   }
   constructor() {
-    super(Chunk570140.Z, {
+    super(i.Z, {
       CACHE_LOADED: e => this.handleCacheLoaded(e),
       CACHE_LOADED_LAZY: e => this.handleCacheLoadedLazy(e),
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),
       GUILD_CREATE: e => this.handleGuildCreate(e),
       GUILD_DELETE: e => this.handleGuildDelete(e)
-    }, Chunk570140.c.Early), a(this, "guildIds", new Set)
+    }, i.c.Early), a(this, "guildIds", new Set)
   }
 }
 let s = new o

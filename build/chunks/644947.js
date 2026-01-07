@@ -73,11 +73,11 @@ function p(e) {
 
 function _() {
   let e = true;
-  for (let [t, n] of Object.entries(d.getState().captchaServeVolume)) Chunk797614.Z.distribution({
-    name: Chunk286379.V.CAPTCHA_SERVE_VOLUME_DISTRIBUTION,
-    tags: ["user_flow:".concat(exports)]
-  }, require, module);
-  (0, Chunk731965.j)(() => d.setState({
+  for (let [t, n] of Object.entries(d.getState().captchaServeVolume)) o.Z.distribution({
+    name: i.V.CAPTCHA_SERVE_VOLUME_DISTRIBUTION,
+    tags: ["user_flow:".concat(t)]
+  }, n, e);
+  (0, a.j)(() => d.setState({
     captchaServeVolume: {}
   }))
 }

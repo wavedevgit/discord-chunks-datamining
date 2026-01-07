@@ -103,8 +103,8 @@ let h = e => {
   };
 
 function E() {
-  return (0, Chunk54381.jsx)("hr", {
-    className: Chunk992802.divider
+  return (0, r.jsx)("hr", {
+    className: c.divider
   })
 }
 let b = e => {

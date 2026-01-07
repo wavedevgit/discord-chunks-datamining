@@ -137,33 +137,33 @@ function I(e) {
 }
 
 function T() {
-  let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getBlockedIDs());
-  return (0, Chunk54381.jsx)(I, {
-    setting: Chunk726985.s6.BLOCKED_USERS,
-    userIds: module,
+  let e = (0, s.Wu)([f.Z], () => f.Z.getBlockedIDs());
+  return (0, r.jsx)(I, {
+    setting: g.s6.BLOCKED_USERS,
+    userIds: e,
     listType: "blocked"
   })
 }
 
 function C() {
-  let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getIgnoredIDs());
-  return (0, Chunk54381.jsx)(I, {
-    setting: Chunk726985.s6.IGNORED_USERS,
-    userIds: module,
+  let e = (0, s.Wu)([f.Z], () => f.Z.getIgnoredIDs());
+  return (0, r.jsx)(I, {
+    setting: g.s6.IGNORED_USERS,
+    userIds: e,
     listType: "ignored"
   })
 }
 
 function A() {
-  return (0, Chunk54381.jsxs)(Chunk838436.U, {
-    setting: Chunk726985.s6.RESTRICTED_USERS,
-    scrollPosition: Chunk526761.FY.RESTRICTED_ACCOUNTS,
+  return (0, r.jsxs)(m.U, {
+    setting: g.s6.RESTRICTED_USERS,
+    scrollPosition: h.FY.RESTRICTED_ACCOUNTS,
     scrollHighlightDelay: 900,
-    children: [(0, Chunk54381.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t["3wRort"]),
-      description: Chunk388032.intl.format(Chunk388032.t["0aNQo9"], {
-        helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
+    children: [(0, r.jsx)(m.H, {
+      header: b.intl.string(b.t["3wRort"]),
+      description: b.intl.format(b.t["0aNQo9"], {
+        helpArticle: _.Z.getArticleURL(E.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)(C, {})]
+    }), (0, r.jsx)(T, {}), (0, r.jsx)(C, {})]
   })
 }

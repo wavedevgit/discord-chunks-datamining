@@ -3,7 +3,7 @@
 "use strict";
 module.exports = function() {
   var e = this;
-  module.instances.forEach(function(e) {
+  e.instances.forEach(function(e) {
     e.reset()
   })
 }

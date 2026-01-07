@@ -3,5 +3,5 @@
 "use strict";
 var Chunk247131 = require("./247131.js");
 module.exports = function() {
-  return Chunk247131() && !!Symbol.toStringTag
+  return r() && !!Symbol.toStringTag
 }

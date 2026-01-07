@@ -38,17 +38,17 @@ function S() {
       id: t,
       distributor: n
     }
-    of Chunk594190.ZP.getRunningGames())
-    if (null != exports && require !== Chunk981631.GQo.DISCORD)
+    of p.ZP.getRunningGames())
+    if (null != t && n !== g.GQo.DISCORD)
       for (let {
           skuId: n,
           applicationId: r
         }
-        of Chunk981631.Lg6) r !== exports || v.includes(require) || null == O[require] && (Chunk580130.Z.applicationIdsFetched.has(r) || Chunk580130.Z.applicationIdsFetching.has(r) || null != Chunk580130.Z.getForSku(require) || Chunk496929.yD(r), O[require] = {
-        skuId: require,
+        of g.Lg6) r !== t || v.includes(n) || null == O[n] && (m.Z.applicationIdsFetched.has(r) || m.Z.applicationIdsFetching.has(r) || null != m.Z.getForSku(n) || c.yD(r), O[n] = {
+        skuId: n,
         applicationId: r
       }, e = true);
-  return module && I(), module
+  return e && I(), e
 }
 
 function I() {
@@ -58,23 +58,23 @@ function I() {
       applicationId: n
     }
     of a().values(O)) {
-    if (v.includes(exports)) continue;
-    let r = Chunk812206.Z.getApplication(require);
+    if (v.includes(t)) continue;
+    let r = f.Z.getApplication(n);
     if (null == r) {
-      Chunk812206.Z.isFetchingApplication(require) || Chunk812206.Z.didFetchingApplicationFail(require) || Chunk728345.ZP.fetchApplication(require);
+      f.Z.isFetchingApplication(n) || f.Z.didFetchingApplicationFail(n) || d.ZP.fetchApplication(n);
       continue
     }
-    let i = Chunk55563.Z.get(exports);
-    if (null == Chunk392711) {
-      Chunk55563.Z.isFetching(exports) || Chunk55563.Z.didFetchingSkuFail(exports) || Chunk16084.$N(r.id, exports);
+    let i = h.Z.get(t);
+    if (null == i) {
+      h.Z.isFetching(t) || h.Z.didFetchingSkuFail(t) || u.$N(r.id, t);
       continue
     }
-    Chunk580130.Z.applicationIdsFetching.has(r.id) || Chunk580130.Z.isEntitledToSku(Chunk594174.default.getCurrentUser(), exports, r.id, r.id) || !Chunk392711.available ? null != y[exports] && (delete y[exports], e = true) : (y[exports] = {
-      skuId: exports,
-      applicationId: require
+    m.Z.applicationIdsFetching.has(r.id) || m.Z.isEntitledToSku(_.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = true) : (y[t] = {
+      skuId: t,
+      applicationId: n
     }, e = true)
   }
-  return module
+  return e
 }
 
 function T(e) {
@@ -91,7 +91,7 @@ function C() {
 class A extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(Chunk812206.Z, Chunk580130.Z, Chunk594190.ZP, Chunk55563.Z, Chunk594174.default), v = null != (e = Chunk433517.K.get(b)) ? module : v
+    this.waitFor(f.Z, m.Z, p.ZP, h.Z, _.default), v = null != (e = s.K.get(b)) ? e : v
   }
   getDetectedOffPlatformPremiumPerks() {
     return a().values(y)

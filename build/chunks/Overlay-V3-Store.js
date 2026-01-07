@@ -89,7 +89,7 @@ function H(e) {
 let Y = (0, Chunk575140.r4)();
 
 function W() {
-  Y = (0, Chunk575140.r4)()
+  Y = (0, O.r4)()
 }
 
 function K(e, t) {
@@ -130,20 +130,20 @@ function z(e) {
 
 function q() {
   try {
-    for (let e of R) null == D || D.untrackGame(module);
-    R.clear(), (0, Chunk932404.bs)(null, "clearTrackedGames"), Z = {}, F = {}, w.clear(), P.verbose("Cleared all tracked games")
+    for (let e of R) null == D || D.untrackGame(e);
+    R.clear(), (0, _.bs)(null, "clearTrackedGames"), Z = {}, F = {}, w.clear(), P.verbose("Cleared all tracked games")
   } catch (e) {
-    P.error("Error clearing tracked games:", module), (0, Chunk932404.PV)(Chunk145597.UNSET_PID, module, {
+    P.error("Error clearing tracked games:", e), (0, _.PV)(d.UNSET_PID, e, {
       crashType: "native"
     })
   }
 }
 async function Q() {
-  if (!Chunk509140.Z.isOverlayEnabled) return void q();
+  if (!y.Z.isOverlayEnabled) return void q();
   await ei();
-  let e = new Set(Chunk594190.ZP.getRunningGames().filter(e => l.ZP.getOverlayEnabledForGame(e)).map(e => e.pid));
-  for (let t of new Set([...R].filter(t => !e.has(t)))) z(exports);
-  for (let e of R) K(module)
+  let e = new Set(l.ZP.getRunningGames().filter(e => l.ZP.getOverlayEnabledForGame(e)).map(e => e.pid));
+  for (let t of new Set([...R].filter(t => !e.has(t)))) z(t);
+  for (let e of R) K(e)
 }
 
 function X(e) {
@@ -153,7 +153,7 @@ function X(e) {
 
 function J() {
   var e;
-  null != k && M === k && null != D && (k = null, (0, Chunk932404.PY)(M, "renderer_window_refreshing_finished"), null == (e = D.readyToShow) || module.call(D, M), Chunk13245.Z.updateOverlayState(M, Chunk837268.mM.OVERLAY_RENDERING, "checkPopoutRefresh"), P.verbose("Showing overlay v3 for pid ".concat(M)))
+  null != k && M === k && null != D && (k = null, (0, _.PY)(M, "renderer_window_refreshing_finished"), null == (e = D.readyToShow) || e.call(D, M), o.Z.updateOverlayState(M, f.mM.OVERLAY_RENDERING, "checkPopoutRefresh"), P.verbose("Showing overlay v3 for pid ".concat(M)))
 }
 
 function $(e, t) {
@@ -207,7 +207,7 @@ function er(e) {
   }
 }
 async function ei() {
-  Chunk509140.Z.isModuleLoaded || Chunk509140.Z.isModuleLoading || await (0, Chunk932404.Nk)(), D = await (0, Chunk886189.H)()
+  y.Z.isModuleLoaded || y.Z.isModuleLoading || await (0, _.Nk)(), D = await (0, v.H)()
 }
 async function ea(e) {
   e.overlayMethod === f.gl.OutOfProcess || e.overlayMethod === f.gl.OutOfProcessLimitedInteraction ? (await ei(), K(e.pid, e.overlayMethod)) : z(e.pid), eI.emitChange()
@@ -249,7 +249,7 @@ function ec(e) {
 }
 
 function eu() {
-  ee(), null != U && H(U), U = null, j = null, (0, Chunk145597.setPID)(Chunk145597.UNSET_PID), W()
+  ee(), null != U && H(U), U = null, j = null, (0, d.setPID)(d.UNSET_PID), W()
 }
 
 function ed(e) {
@@ -293,7 +293,7 @@ function em() {
   var e;
   Y = N(C({}, Y), {
     showInactiveCalled: true
-  }), null == D || null == (e = D.onNativePopoutShowInactiveSuccess) || module.call(D)
+  }), null == D || null == (e = D.onNativePopoutShowInactiveSuccess) || e.call(D)
 }
 
 function eh() {
@@ -329,7 +329,7 @@ function ey(e) {
 }
 
 function eO() {
-  D = Chunk509140.Z.getNativeModule(), Q()
+  D = y.Z.getNativeModule(), Q()
 }
 
 function ev() {
@@ -337,7 +337,7 @@ function ev() {
 }
 class eS extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk355863.Z, Chunk381367.Z, Chunk670785.Z, Chunk76623.Z, Chunk322155.Z, Chunk338949.Z, Chunk509140.Z, Chunk594190.ZP)
+    this.waitFor(c.default, u.Z, m.Z, h.Z, g.Z, E.Z, b.Z, y.Z, l.ZP)
   }
   isOverlayV3EnabledForPID(e) {
     return R.has(e)
@@ -361,7 +361,7 @@ class eS extends(r = Chunk442837.ZP.Store) {
     return null != t && t.pinned
   }
   getTargetPID() {
-    return Chunk987650.y3 && (j === Chunk145597.UNSET_PID || null == j) ? Chunk145597.DEV_PID : null != j ? j : Chunk145597.UNSET_PID
+    return S.y3 && (j === d.UNSET_PID || null == j) ? d.DEV_PID : null != j ? j : d.UNSET_PID
   }
   getFocusedPID() {
     return x
@@ -377,7 +377,7 @@ class eS extends(r = Chunk442837.ZP.Store) {
   }
   getFocusedRunningGame() {
     var e;
-    return null == x ? null : null != (e = Chunk594190.ZP.getGameOrTransformedSubgameForPID(x)) ? module : null
+    return null == x ? null : null != (e = l.ZP.getGameOrTransformedSubgameForPID(x)) ? e : null
   }
   getPopoutInitializationStages() {
     return Y

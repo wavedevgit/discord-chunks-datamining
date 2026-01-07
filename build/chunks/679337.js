@@ -17,10 +17,10 @@ class a {
     return i.mBz
   }
   getMaxAttachmentsCount() {
-    return Chunk981631.dN1
+    return i.dN1
   }
   getMaxTotalAttachmentSize() {
-    return Chunk861990.zz
+    return r.zz
   }
   get shouldReactNativeCompressUploads() {
     returntrue

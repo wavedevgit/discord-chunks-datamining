@@ -15,33 +15,33 @@ var Chunk481060 = require("./481060.js"),
   Chunk309389 = require("./309389.js");
 let d = () => {
   let e = {
-    section: Chunk981631.jXE.REVERSE_TRIAL_BANNER
+    section: s.jXE.REVERSE_TRIAL_BANNER
   };
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk29642.banner,
-    children: [(0, Chunk54381.jsx)(Chunk382791.mn, {
-      text: Chunk388032.intl.string(Chunk388032.t.qYKftX),
-      className: Chunk29642.pill
-    }), (0, Chunk54381.jsx)("img", {
-      src: Chunk309389,
+  return (0, r.jsxs)("div", {
+    className: c.banner,
+    children: [(0, r.jsx)(o.mn, {
+      text: l.intl.string(l.t.qYKftX),
+      className: c.pill
+    }), (0, r.jsx)("img", {
+      src: u,
       width: 64,
       height: 64,
       alt: "",
-      className: Chunk29642.bannerArt
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk29642.bodyContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+      className: c.bannerArt
+    }), (0, r.jsx)("div", {
+      className: c.bodyContainer,
+      children: (0, r.jsx)(i.Text, {
         color: "text-subtle",
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.uu1WAa, {
+        children: l.intl.format(l.t.uu1WAa, {
           weeks: 1
         })
       })
-    }), (0, Chunk54381.jsx)(Chunk767714.Z, {
-      premiumModalAnalyticsLocation: module,
+    }), (0, r.jsx)(a.Z, {
+      premiumModalAnalyticsLocation: e,
       showGradient: true,
-      className: Chunk29642.promoNitroButton,
-      shinyButtonClassName: Chunk29642.buttonGradient
+      className: c.promoNitroButton,
+      shinyButtonClassName: c.buttonGradient
     })]
   })
 }

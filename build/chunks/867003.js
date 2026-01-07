@@ -23,9 +23,9 @@ let p = 3 * Chunk70956.Z.Millis.DAY,
   _ = Chunk70956.Z.Millis.WEEK,
   m = Chunk70956.Z.Millis.DAYS_30,
   h = () => {
-    if (!(0, Chunk869031.nZ)("block_user_feedback_utils")) returnfalse;
-    let e = Chunk699516.Z.getSinces();
-    return Object.keys(module).some(t => {
+    if (!(0, l.nZ)("block_user_feedback_utils")) returnfalse;
+    let e = a.Z.getSinces();
+    return Object.keys(e).some(t => {
       let n = t,
         r = Date.now() - Date.parse(e[n]);
       return a.Z.isBlocked(n) && r > _ && r < m
@@ -43,17 +43,17 @@ let p = 3 * Chunk70956.Z.Millis.DAY,
     let {
       enabled: e,
       shouldGetShorterIgnoreDuration: t
-    } = (0, Chunk982863.C$)("ignore_user_feedback_utils");
-    if (!module) returnfalse;
+    } = (0, u.C$)("ignore_user_feedback_utils");
+    if (!e) returnfalse;
     let {
       isDismissed: n
-    } = (0, Chunk605236.Fo)(Chunk704215.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
-      cooldownDurationMs: Chunk987562.pv
+    } = (0, i.Fo)(r.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
+      cooldownDurationMs: d.pv
     });
-    if (require) returnfalse;
-    let o = exports ? p : _,
-      s = Chunk711758.Z.getIgnoreTimestamps();
-    return Object.keys(Chunk70956).some(e => {
+    if (n) returnfalse;
+    let o = t ? p : _,
+      s = c.Z.getIgnoreTimestamps();
+    return Object.keys(s).some(e => {
       let t = e,
         n = Date.now() - Number(s[t]);
       return a.Z.isIgnored(t) && n > o && n < m

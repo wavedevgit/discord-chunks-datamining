@@ -9,8 +9,8 @@ var Chunk440849 = require("./440849.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.qs)(Chunk313789.n.ANIMATE_GIFS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.Iayoh5),
-  useSubtitle: () => (0, Chunk440849.J)("gifAutoPlay"),
-  useValue: () => Chunk695346.QK.useSetting(),
+  useTitle: () => r.intl.string(r.t.Iayoh5),
+  useSubtitle: () => (0, i.J)("gifAutoPlay"),
+  useValue: () => s.QK.useSetting(),
   setValue: t => s.QK.updateSetting(t)
 })

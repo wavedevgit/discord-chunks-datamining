@@ -10,13 +10,13 @@ var Chunk857595 = require("./857595.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.UO)(Chunk313789.n.SATURATION, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["5PWWCY"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["0PbE/H"]),
+  useTitle: () => a.intl.string(a.t["5PWWCY"]),
+  useSubtitle: () => a.intl.string(a.t["0PbE/H"]),
   markers: Chunk981631.yqN.SATURATION_INCREMENTS,
   onMarkerRender: t => 100 * t % 2 == 0 ? "".concat(100 * t, "%") : true,
   stickToMarkers: true,
   minValue: 0,
   maxValue: 1,
-  getInitialValue: () => Chunk607070.Z.saturation,
+  getInitialValue: () => l.Z.saturation,
   setValue: t => (0, i.o2)(t)
 })

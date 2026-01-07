@@ -16,20 +16,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk921356 = require("./921356.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.uHAJ5v)],
+  useSearchTerms: () => [d.intl.string(d.t.uHAJ5v)],
   usePredicate: function() {
-    let t = (0, Chunk968021.Y)(),
-      e = (0, Chunk921356.O)(),
-      n = (0, Chunk857314.N)(),
-      i = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled());
-    return !module && !exports && require && Chunk54381
+    let t = (0, c.Y)(),
+      e = (0, E.O)(),
+      n = (0, S.N)(),
+      i = (0, l.e7)([u.default], () => u.default.hasTOTPEnabled());
+    return !t && !e && n && i
   },
   Component: function() {
-    let t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-      e = (0, Chunk442837.e7)([Chunk325067.Z], () => Chunk325067.Z.togglingSMS);
-    return null == module ? null : (0, Chunk54381.jsx)(Chunk867289.Z, {
-      currentUser: module,
-      togglingSMS: exports
+    let t = (0, l.e7)([a.default], () => a.default.getCurrentUser()),
+      e = (0, l.e7)([r.Z], () => r.Z.togglingSMS);
+    return null == t ? null : (0, i.jsx)(T.Z, {
+      currentUser: t,
+      togglingSMS: e
     })
   }
 })

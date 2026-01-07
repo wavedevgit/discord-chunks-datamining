@@ -212,37 +212,37 @@ function S() {
   let {
     pendingState: e,
     dirtyState: t
-  } = (0, Chunk442837.cj)([Chunk658666.Z], () => ({
-    pendingState: Chunk658666.Z.pendingState,
-    dirtyState: Chunk658666.Z.dirtyState
+  } = (0, l.cj)([x.Z], () => ({
+    pendingState: x.Z.pendingState,
+    dirtyState: x.Z.dirtyState
   })), {
     settingsGuild: n,
     settingsMetadata: i,
     originalGuild: s,
     guildProfile: o
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => {
+  } = (0, l.cj)([p.Z], () => {
     let {
       guild: e,
       guildMetadata: t,
       originalGuild: n,
       profile: r
-    } = Chunk999382.Z.getProps();
+    } = p.Z.getProps();
     return {
-      settingsGuild: module,
-      settingsMetadata: exports,
-      originalGuild: require,
-      guildProfile: Chunk54381
+      settingsGuild: e,
+      settingsMetadata: t,
+      originalGuild: n,
+      guildProfile: r
     }
   });
-  return null == module || null == require ? null : module.joinType === Chunk384632.A.DISCOVERABLE && module.settingsView === Chunk386885.U.INELIGIBLE ? (0, Chunk54381.jsx)(Chunk796027.Z, {
-    message: Chunk388032.intl.string(Chunk388032.t.TEXwRt),
-    onReset: () => Chunk434404.Z.init(require.id, Chunk981631.pNK.ACCESS)
-  }) : (0, Chunk54381.jsx)(I, {
-    pendingState: module,
-    dirtyState: exports,
-    originalGuild: Chunk481060,
-    settingsGuild: require,
-    settingsMetadata: Chunk473749,
-    settingsProfile: Chunk881052
+  return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === v.U.INELIGIBLE ? (0, r.jsx)(a.Z, {
+    message: y.intl.string(y.t.TEXwRt),
+    onReset: () => b.Z.init(n.id, O.pNK.ACCESS)
+  }) : (0, r.jsx)(I, {
+    pendingState: e,
+    dirtyState: t,
+    originalGuild: s,
+    settingsGuild: n,
+    settingsMetadata: i,
+    settingsProfile: o
   })
 }

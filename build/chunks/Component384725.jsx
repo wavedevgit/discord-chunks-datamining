@@ -39,7 +39,7 @@ let l = {
     })
   },
   close() {
-    Chunk570140.Z.dispatch({
+    o.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_CLOSE"
     })
   }

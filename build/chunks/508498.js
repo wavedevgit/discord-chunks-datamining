@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
 function i() {
   let {
     search: e
-  } = (0, Chunk828700.TH)(), t = (0, Chunk828700.UO)(), n = Chunk473749.useMemo(() => new URLSearchParams(module), [module]).get("source"), i = null != require ? parseInt(require, 10) : null;
+  } = (0, l.TH)(), t = (0, l.UO)(), n = r.useMemo(() => new URLSearchParams(e), [e]).get("source"), i = null != n ? parseInt(n, 10) : null;
   return function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -32,14 +32,14 @@ function i() {
     }
     return e
   }({
-    onClose: Chunk473749.useCallback(() => {
+    onClose: r.useCallback(() => {
       if (0 === i) {
-        (0, Chunk703656.op)(), (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS);
+        (0, s.op)(), (0, a.jN)(o.S9g.USER_SETTINGS);
         return
       }
-      if ((0, Chunk703656.uv)()) return void(0, Chunk703656.op)();
-      (0, Chunk703656.uL)(Chunk981631.Z5c.APP)
+      if ((0, s.uv)()) return void(0, s.op)();
+      (0, s.uL)(o.Z5c.APP)
     }, [i]),
     source: i
-  }, exports)
+  }, t)
 }

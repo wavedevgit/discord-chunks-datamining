@@ -110,9 +110,9 @@ let y = "default",
     }
   };
 async function j() {
-  if (L.clipsSettings.storageLocation !== y || null == Chunk579806.Z || null == Chunk579806.Z.remoteApp) return;
-  let e = await Chunk579806.Z.remoteApp.getPath("documents");
-  L.clipsSettings.storageLocation = module, ec.emitChange()
+  if (L.clipsSettings.storageLocation !== y || null == s.Z || null == s.Z.remoteApp) return;
+  let e = await s.Z.remoteApp.getPath("documents");
+  L.clipsSettings.storageLocation = e, ec.emitChange()
 }
 
 function M(e) {
@@ -404,7 +404,7 @@ class el extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return L.hardwareClassificationVersion
   }
   getIsAtMaxSaveClipOperations() {
-    return I >= Chunk356659.Kw
+    return I >= p.Kw
   }
   getLastClipsError() {
     return N

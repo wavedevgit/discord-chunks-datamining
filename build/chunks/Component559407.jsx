@@ -10,11 +10,11 @@ require("./473749.js"), require("./24696.js");
 let i = "cash-app-pay-container";
 
 function a() {
-  return (0, Chunk54381.jsx)("div", {
+  return (0, r.jsx)("div", {
     id: i
   })
 }
 
 function o() {
-  return (0, Chunk54381.jsx)(a, {})
+  return (0, r.jsx)(a, {})
 }

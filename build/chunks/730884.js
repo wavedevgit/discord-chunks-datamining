@@ -18,7 +18,7 @@ d("fill", function(e) {
   var e = 0;
   return new Int8Array(2).fill({
     valueOf: function() {
-      return module++
+      return e++
     }
-  }), 1 !== module
+  }), 1 !== e
 }))

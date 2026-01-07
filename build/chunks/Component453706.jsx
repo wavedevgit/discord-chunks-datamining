@@ -10,11 +10,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o() {
-  return (0, Chunk54381.jsx)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t.EPVq00),
-    children: (0, Chunk54381.jsx)(Chunk481060.Wn, {
-      messageType: Chunk481060.QYI.WARNING,
-      children: Chunk388032.intl.string(Chunk388032.t.uggF7o)
+  return (0, r.jsx)(i.gNt, {
+    label: a.intl.string(a.t.EPVq00),
+    children: (0, r.jsx)(i.Wn, {
+      messageType: i.QYI.WARNING,
+      children: a.intl.string(a.t.uggF7o)
     })
   })
 }

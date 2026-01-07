@@ -32,7 +32,7 @@ let m = 2,
   },
   g = true,
   E = () => {
-    (g = !Chunk74538.ZP.canUsePremiumAppIcons(Chunk594174.default.getCurrentUser())) && b(Chunk997945.aH.DEFAULT)
+    (g = !c.ZP.canUsePremiumAppIcons(s.default.getCurrentUser())) && b(u.aH.DEFAULT)
   },
   b = e => {
     if (h.client.desktop = e, !g) {
@@ -54,7 +54,7 @@ function y(e) {
 
 function O() {
   g && (h.client = {
-    desktop: Chunk997945.aH.DEFAULT,
+    desktop: u.aH.DEFAULT,
     coachmarkImpressions: m
   })
 }
@@ -77,7 +77,7 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getCurrentDesktopIcon() {
     var e;
-    return null == h || null == (e = h.client) ? true : module.desktop
+    return null == h || null == (e = h.client) ? true : e.desktop
   }
 }
 _(S, "displayName", "AppIconPersistedStoreState"), _(S, "persistKey", "AppIconPersistedStoreState");

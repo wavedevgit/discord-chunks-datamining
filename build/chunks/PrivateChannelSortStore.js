@@ -70,7 +70,7 @@ function T(e) {
 }
 
 function C() {
-  v.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
+  v.clear(), Object.values(p.Z.getMutablePrivateChannels()).forEach(e => {
     v.set(e.id, T(e))
   })
 }
@@ -115,8 +115,8 @@ function w(e) {
 }
 
 function D() {
-  let e = Chunk592125.Z.getMutablePrivateChannels();
-  for (let t in module) v.set(exports, T(module[exports]))
+  let e = p.Z.getMutablePrivateChannels();
+  for (let t in e) v.set(t, T(e[t]))
 }
 let x = (() => {
   let e = [],
@@ -125,22 +125,22 @@ let x = (() => {
   return () => {
     let r = v.values("FAVORITE"),
       i = v.values("DEFAULT");
-    return (module !== r || exports !== Chunk913527) && (n = [], r.forEach(e => {
+    return (e !== r || t !== i) && (n = [], r.forEach(e => {
       let {
         channelId: t
       } = e;
       return n.push(t)
-    }), e = r, Chunk913527.forEach(e => {
+    }), e = r, i.forEach(e => {
       let {
         channelId: t
       } = e;
       return n.push(t)
-    }), t = Chunk913527), require
+    }), t = i), n
   }
 })();
 class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk355298.Z, Chunk306680.ZP, Chunk333984.Z, Chunk9156.ZP, Chunk594174.default), this.syncWith([Chunk9156.ZP, Chunk355298.Z], C)
+    this.waitFor(p.Z, _.Z, u.Z, m.ZP, d.Z, h.ZP, g.default), this.syncWith([h.ZP, u.Z], C)
   }
   getPrivateChannelIds() {
     return x()
@@ -156,7 +156,7 @@ class L extends(r = Chunk442837.ZP.Store) {
         lastMessageId: r
       } = t;
       e[n] = r
-    }), module
+    }), e
   }
 }
 b(L, "displayName", "PrivateChannelSortStore");

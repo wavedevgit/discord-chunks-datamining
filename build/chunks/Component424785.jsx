@@ -86,13 +86,13 @@ class Y extends Chunk98597.ZP {
     let {
       voiceStates: t
     } = this.props;
-    return null != (e = null == exports ? true : exports.length) ? module : 0
+    return null != (e = null == t ? true : t.length) ? e : 0
   }
   isFull() {
     let {
       channel: e
     } = this.props;
-    return (0, Chunk934415.rY)(module, Chunk979651.Z, Chunk430824.Z)
+    return (0, D.rY)(e, R.Z, N.Z)
   }
   getModeClass() {
     let {
@@ -100,11 +100,11 @@ class Y extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk642915.containerUserOver;
-    if (null != exports)
-      if (module > exports) return Chunk642915.containerDragAfter;
-      else return Chunk642915.containerDragBefore;
-    return Chunk642915.containerDefault
+    if (n) return V.containerUserOver;
+    if (null != t)
+      if (e > t) return V.containerDragAfter;
+      else return V.containerDragBefore;
+    return V.containerDefault
   }
   renderVoiceUsers() {
     let {
@@ -114,13 +114,13 @@ class Y extends Chunk98597.ZP {
       speakerVoiceStates: i,
       numAudience: l
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk207055.Z, {
-      channel: module,
-      voiceStates: Chunk473749,
-      collapsed: exports,
-      tabIndex: require,
-      location: Chunk981631.Sbl.GUILD_CHANNEL_LIST,
-      numAudience: Chunk120356
+    return (0, r.jsx)(G.Z, {
+      channel: e,
+      voiceStates: i,
+      collapsed: t,
+      tabIndex: n,
+      location: U.Sbl.GUILD_CHANNEL_LIST,
+      numAudience: l
     })
   }
   renderChannelInfo() {
@@ -147,55 +147,55 @@ class Y extends Chunk98597.ZP {
       isFavoriteSuggestion: j
     } = this.props, {
       shouldShowGuildVerificationPopout: C
-    } = this.state, x = this.getVoiceStatesCount(), E = (0, Chunk54381.jsxs)("li", {
+    } = this.state, x = this.getVoiceStatesCount(), E = (0, r.jsxs)("li", {
       className: a()(this.getModeClass(), {
-        [Chunk642915.disabled]: this.isDisabled()
+        [V.disabled]: this.isDisabled()
       }),
-      "data-dnd-name": module.name,
-      children: [(0, Chunk54381.jsx)(Chunk481060.yRy, {
+      "data-dnd-name": e.name,
+      children: [(0, r.jsx)(u.yRy, {
         targetElementRef: this.channelItemRef,
         position: "right",
         renderPopout: this.renderPopout,
         onRequestClose: this.closeGuildVerificationPopout,
-        shouldShow: Chunk431328,
-        children: () => (0, Chunk54381.jsx)(Chunk28664.u, {
+        shouldShow: C,
+        children: () => (0, r.jsx)(c.u, {
           text: this.getTooltipText(),
-          children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
+          children: (0, r.jsxs)(k.ZP, {
             ref: this.channelItemRef,
-            className: Chunk642915.iconVisibility,
+            className: V.iconVisibility,
             iconClassName: a()({
-              [Chunk257516.iconLive]: null != Chunk888651
+              [H.iconLive]: null != p
             }),
-            channel: module,
-            selected: !Chunk922482 && exports,
-            connected: require,
-            unread: require ? Chunk66999 : true,
-            resolvedUnreadSetting: Chunk378844,
-            mentionCount: Chunk359110,
-            locked: Chunk473749,
+            channel: e,
+            selected: !j && t,
+            connected: n,
+            unread: n ? y : true,
+            resolvedUnreadSetting: O,
+            mentionCount: v,
+            locked: i,
             onClick: () => {
               this.handleClick()
             },
             onContextMenu: e => {
               this.handleContextMenu(e)
             },
-            connectDragPreview: Chunk475179,
+            connectDragPreview: d,
             subtitle: this.renderSubtitle(),
-            isFavoriteSuggestion: Chunk922482,
-            "aria-label": (0, Chunk201895.ZP)({
-              channel: module,
-              unread: Chunk66999,
-              mentionCount: Chunk359110,
-              userCount: Chunk501655,
-              isSubscriptionGated: Chunk305325,
-              needSubscriptionToAccess: Chunk281956
+            isFavoriteSuggestion: j,
+            "aria-label": (0, g.ZP)({
+              channel: e,
+              unread: y,
+              mentionCount: v,
+              userCount: x,
+              isSubscriptionGated: b,
+              needSubscriptionToAccess: m
             }),
-            children: [Chunk922482 && this.renderAcceptSuggestionButton(), Chunk922482 && this.renderRemoveSuggestionButton(), !Chunk922482 && this.renderOpenChatButton(), !Chunk922482 && this.renderInviteButton(), !Chunk922482 && this.renderEditButton(), !Chunk922482 && this.renderChannelInfo()]
+            children: [j && this.renderAcceptSuggestionButton(), j && this.renderRemoveSuggestionButton(), !j && this.renderOpenChatButton(), !j && this.renderInviteButton(), !j && this.renderEditButton(), !j && this.renderChannelInfo()]
           })
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk146773 && (E = Chunk194983(Chunk427679)), Chunk239091 && (E = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
+    return h && (E = s(E)), f && (E = l(o(E))), E
   }
   constructor(...e) {
     super(...e), W(this, "channelItemRef", i.createRef()), W(this, "state", {

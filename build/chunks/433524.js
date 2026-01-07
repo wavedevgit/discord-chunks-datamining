@@ -12,7 +12,7 @@ Chunk507604 && Chunk923646 && Chunk573078(l, "dotAll", {
   configurable: true,
   get: function() {
     if (this !== l) {
-      if ("RegExp" === Chunk796138(this)) return !!s(this).dotAll;
+      if ("RegExp" === a(this)) return !!s(this).dotAll;
       throw new c("Incompatible receiver, RegExp required")
     }
   }

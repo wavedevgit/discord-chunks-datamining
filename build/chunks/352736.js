@@ -27,8 +27,8 @@ let O = {
     "365975655608745985": "https://www.pokecord.com/getting-started",
     "512412940897484800": "http://jameslantz.net/smilebot"
   },
-  v = () => [Chunk388032.t["0cuj7l"], Chunk388032.t["MuW+CN"], Chunk388032.t.osqpHX, Chunk388032.t["5ToSh2"], Chunk388032.t.JEB8ps, Chunk388032.t.pkOV5T, Chunk388032.t["kRb1J+"], Chunk388032.t["EmKLY+"], Chunk388032.t.rPtBnb, Chunk388032.t["5B/ekS"], Chunk388032.t.ESNC3Y, Chunk388032.t.Iw6d8w, Chunk388032.t["WecSZ/"]],
-  S = () => [Chunk388032.t.Jm6e0x, Chunk388032.t.MGRnRT, Chunk388032.t.EXOEGh, Chunk388032.t["5uCTFN"], Chunk388032.t.rl45Qo, Chunk388032.t.Bh9zpQ, Chunk388032.t.RdEy1J, Chunk388032.t.qcdp00, Chunk388032.t.F7w2Ru, Chunk388032.t.gSyOgK, Chunk388032.t.uYgqv7, Chunk388032.t["b/1SBX"], Chunk388032.t.LhebZF];
+  v = () => [y.t["0cuj7l"], y.t["MuW+CN"], y.t.osqpHX, y.t["5ToSh2"], y.t.JEB8ps, y.t.pkOV5T, y.t["kRb1J+"], y.t["EmKLY+"], y.t.rPtBnb, y.t["5B/ekS"], y.t.ESNC3Y, y.t.Iw6d8w, y.t["WecSZ/"]],
+  S = () => [y.t.Jm6e0x, y.t.MGRnRT, y.t.EXOEGh, y.t["5uCTFN"], y.t.rl45Qo, y.t.Bh9zpQ, y.t.RdEy1J, y.t.qcdp00, y.t.F7w2Ru, y.t.gSyOgK, y.t.uYgqv7, y.t["b/1SBX"], y.t.LhebZF];
 
 function I(e) {
   let t = S(),

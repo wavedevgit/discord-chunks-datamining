@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk606093 = require("./606093.js");
 
 function i() {
-  let e = Chunk606093.n,
-    t = module.crypto || module.msCrypto,
+  let e = r.n,
+    t = e.crypto || e.msCrypto,
     n = () => 16 * Math.random();
   try {
-    if (exports && exports.randomUUID) return exports.randomUUID().replace(/-/g, "");
-    exports && exports.getRandomValues && (n = () => {
+    if (t && t.randomUUID) return t.randomUUID().replace(/-/g, "");
+    t && t.getRandomValues && (n = () => {
       let e = new Uint8Array(1);
-      return exports.getRandomValues(module), module[0]
+      return t.getRandomValues(e), e[0]
     })
   } catch (e) {}
   return "10000000100040008000100000000000".replace(/[018]/g, e => (e ^ (15 & n()) >> e / 4).toString(16))

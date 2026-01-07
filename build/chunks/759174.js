@@ -31,11 +31,11 @@ class l {
   }
   indexes() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    if (module) return this.valueIndexes;
-    if (!module && this.dirty) {
+    if (e) return this.valueIndexes;
+    if (!e && this.dirty) {
       let e = {};
-      for (let [t, n] of Object.entries(this.valueIndexes)) module[exports] = [...require];
-      this.valueIndexesForGetter = module, this.dirty = false
+      for (let [t, n] of Object.entries(this.valueIndexes)) e[t] = [...n];
+      this.valueIndexesForGetter = e, this.dirty = false
     }
     return this.valueIndexesForGetter
   }

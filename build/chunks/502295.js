@@ -16,12 +16,12 @@ let i = Object.freeze({
 });
 
 function a() {
-  let e = (0, Chunk473749.useRef)(null),
-    t = (0, Chunk473749.useCallback)(() => {
+  let e = (0, r.useRef)(null),
+    t = (0, r.useCallback)(() => {
       let {
         current: t
-      } = module;
-      if (null != exports) {
+      } = e;
+      if (null != t) {
         let {
           scrollTop: e,
           scrollLeft: n,
@@ -29,11 +29,11 @@ function a() {
           scrollWidth: i,
           offsetHeight: a,
           offsetWidth: o
-        } = exports;
+        } = t;
         return {
-          scrollTop: module,
-          scrollLeft: require,
-          scrollHeight: Chunk473749,
+          scrollTop: e,
+          scrollLeft: n,
+          scrollHeight: r,
           scrollWidth: i,
           offsetHeight: a,
           offsetWidth: o,
@@ -43,7 +43,7 @@ function a() {
       return i
     }, []);
   return {
-    scrollerRef: module,
-    getScrollerState: exports
+    scrollerRef: e,
+    getScrollerState: t
   }
 }

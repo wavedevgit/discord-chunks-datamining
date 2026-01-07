@@ -59,5 +59,5 @@ function l() {
   }, {
     autoTrackExposure: true
   });
-  return module
+  return e
 }

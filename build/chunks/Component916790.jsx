@@ -232,8 +232,8 @@ let A = [{
   };
 
 function Z() {
-  let e = Chunk473749.useRef(null),
-    [t, n] = Chunk473749.useState(""),
+  let e = r.useRef(null),
+    [t, n] = r.useState(""),
     i = function(e) {
       let [t, n] = r.useState(e.logs);
       return r.useEffect(() => {
@@ -244,54 +244,54 @@ function Z() {
           e.off("log", t)
         }
       }, [e]), t
-    }(Chunk570140.Z.actionLogger),
-    s = Chunk473749.useMemo(() => Chunk120356.map(e => ({
+    }(f.Z.actionLogger),
+    s = r.useMemo(() => i.map(e => ({
       key: e.id.toString(),
       actionLog: e
-    })).toReversed(), [Chunk120356]),
-    [c, d] = Chunk473749.useState(Chunk299608),
-    [m, h] = Chunk473749.useState(Chunk299608),
-    [x, g] = Chunk473749.useState(false),
-    [v, j] = Chunk473749.useState(),
-    C = Chunk473749.useCallback(e => {
+    })).toReversed(), [i]),
+    [c, d] = r.useState(s),
+    [m, h] = r.useState(s),
+    [x, g] = r.useState(false),
+    [v, j] = r.useState(),
+    C = r.useCallback(e => {
       h(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk886118 ? Chunk913527 : Chunk299608, Chunk428530, D);
-  let y = Chunk473749.useCallback(e => {
+  (0, b.BO)(t, x ? c : s, C, D);
+  let y = r.useCallback(e => {
       d(s), g(e)
-    }, [Chunk299608]),
-    _ = exports.trim().length > 0,
-    E = Chunk473749.useMemo(() => Chunk975775 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk975775, Chunk886118, Chunk913527]),
-    T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
-  return (0, Chunk54381.jsxs)("div", {
-    ref: module,
-    className: l()(Chunk663618.panel, Chunk461015.panel),
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk461015.toolbar,
-      children: [(0, Chunk54381.jsx)(Chunk28664.u, {
-        text: Chunk981631,
-        children: (0, Chunk54381.jsx)(Chunk481060.hU, {
+    }, [s]),
+    _ = t.trim().length > 0,
+    E = r.useMemo(() => _ ? m : x ? c : s, [s, m, _, x, c]),
+    T = x ? "Enable Event Tracking" : "Pause Event Tracking";
+  return (0, a.jsxs)("div", {
+    ref: e,
+    className: l()(N.panel, O.panel),
+    children: [(0, a.jsxs)("div", {
+      className: O.toolbar,
+      children: [(0, a.jsx)(u.u, {
+        text: T,
+        children: (0, a.jsx)(p.hU, {
           size: "sm",
-          variant: Chunk886118 ? "primary" : "active",
-          icon: Chunk886118 ? Chunk481060.o1U : Chunk481060.fpf,
-          "aria-label": Chunk981631,
-          onClick: () => Chunk257785(!Chunk886118)
+          variant: x ? "primary" : "active",
+          icon: x ? p.o1U : p.fpf,
+          "aria-label": T,
+          onClick: () => y(!x)
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.E1j, {
+      }), (0, a.jsx)(p.E1j, {
         size: "sm",
-        query: exports,
-        onChange: require,
-        onClear: () => require(""),
+        query: t,
+        onChange: n,
+        onClear: () => n(""),
         placeholder: "Search by action name"
       })]
-    }), (0, Chunk54381.jsx)(Chunk681619.Z, {
+    }), (0, a.jsx)(S.Z, {
       columns: A,
-      data: Chunk621060,
-      selectedRowKey: null == Chunk572004 ? true : Chunk572004.id.toString(),
+      data: E,
+      selectedRowKey: null == v ? true : v.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk572004 && (0, Chunk54381.jsx)(R, {
-      actionLog: Chunk572004,
-      initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
+    }), null != v && (0, a.jsx)(R, {
+      actionLog: v,
+      initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]
   })
 }

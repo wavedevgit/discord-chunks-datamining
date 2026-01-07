@@ -47,15 +47,15 @@ function f() {
   var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     t = arguments.length > 1 ? arguments[1] : true;
   return {
-    dirtyHandlerIds: (0, Chunk97820.u)(module.dirtyHandlerIds, {
-      type: exports.type,
-      payload: u(u({}, exports.payload), {}, {
-        prevTargetIds: (0, Chunk144459.U2)(module, "dragOperation.targetIds", [])
+    dirtyHandlerIds: (0, o.u)(e.dirtyHandlerIds, {
+      type: t.type,
+      payload: u(u({}, t.payload), {}, {
+        prevTargetIds: (0, l.U2)(e, "dragOperation.targetIds", [])
       })
     }),
-    dragOffset: (0, Chunk141725.u)(module.dragOffset, exports),
-    refCount: (0, Chunk164441.u)(module.refCount, exports),
-    dragOperation: (0, Chunk830651.u)(module.dragOperation, exports),
-    stateId: (0, Chunk43266.u)(module.stateId)
+    dragOffset: (0, r.u)(e.dragOffset, t),
+    refCount: (0, a.u)(e.refCount, t),
+    dragOperation: (0, i.u)(e.dragOperation, t),
+    stateId: (0, s.u)(e.stateId)
   }
 }

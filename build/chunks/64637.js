@@ -5,7 +5,7 @@ var Chunk507604 = require("./507604.js"),
   Chunk621523 = require("./621523.js"),
   Chunk809290 = require("./809290.js");
 module.exports = !Chunk507604 && !Chunk621523(function() {
-  return 7 !== Object.defineProperty(Chunk809290("div"), "a", {
+  return 7 !== Object.defineProperty(a("div"), "a", {
     get: function() {
       return 7
     }

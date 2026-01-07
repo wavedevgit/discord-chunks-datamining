@@ -12,7 +12,7 @@ var Chunk473749 = require("./473749.js"),
 let s = e => Math.round(4 * e) / 4,
   o = () => {
     let e = Math.random();
-    return module < .15 ? (0, Chunk392711.random)(.8, 1) : module < .8 ? (0, Chunk392711.random)(1, 1.3) : (0, Chunk392711.random)(1.3, 1.75)
+    return e < .15 ? (0, a.random)(.8, 1) : e < .8 ? (0, a.random)(1, 1.3) : (0, a.random)(1.3, 1.75)
   },
   d = (e, t) => e.position.y > t.h || e.position.x < false || e.position.x > t.w,
   f = e => {

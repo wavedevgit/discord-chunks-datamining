@@ -32,12 +32,12 @@ function c(e) {
   }
   return e
 }
-let u = new Chunk365311.Z(() => (0, Chunk481060.ZDy)(async () => {
+let u = new Chunk365311.Z(() => (0, i.ZDy)(async () => {
   let {
     default: e
-  } = await require.e("37971").then(require.bind(require, 848548));
+  } = await n.e("37971").then(n.bind(n, 848548));
   return t => (0, r.jsx)(e, c({}, t))
 }, {
-  modalKey: Chunk37812._,
-  onCloseRequest: Chunk981631.VqG
+  modalKey: o._,
+  onCloseRequest: s.VqG
 }))

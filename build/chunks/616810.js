@@ -18,10 +18,10 @@ function o(e, t, n) {
 }
 class s extends Chunk928801.Z {
   getInitialState() {
-    return Chunk885110.Z.getLocalPresence()
+    return a.Z.getLocalPresence()
   }
   getNextState() {
-    return Chunk885110.Z.getLocalPresence()
+    return a.Z.getLocalPresence()
   }
   shouldCommit() {
     return this.socket.isSessionEstablished()
@@ -37,7 +37,7 @@ class s extends Chunk928801.Z {
   }
   handleConnectionOpen() {
     let e = !this.switchingAccounts;
-    this.update({}, module), this.switchingAccounts = false
+    this.update({}, e), this.switchingAccounts = false
   }
   handleAccountSwitch() {
     this.switchingAccounts = true, this.reset(), this.emitPresenceUpdate(this.getState())

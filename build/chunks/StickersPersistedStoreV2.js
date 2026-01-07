@@ -64,7 +64,7 @@ let E = 20,
     numFrequentlyItems: E
   }),
   y = () => {
-    Chunk926491.Z.isLoaded && b.compute()
+    d.Z.isLoaded && b.compute()
   },
   O = e => {
     let {
@@ -83,9 +83,9 @@ let E = 20,
 
 function S() {
   var e;
-  let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.stickerFrecency) ? true : module.stickers;
-  if (null == exports) returnfalse;
-  b.overwriteHistory(a().mapValues(exports, e => h(_({}, e), {
+  let t = null == (e = c.Z.frecencyWithoutFetchingLatest.stickerFrecency) ? true : e.stickers;
+  if (null == t) returnfalse;
+  b.overwriteHistory(a().mapValues(t, e => h(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), g.pendingUsages)
 }

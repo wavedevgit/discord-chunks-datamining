@@ -134,7 +134,7 @@ class u extends Chunk495852.C {
       no: 2,
       name: "button_action",
       kind: "enum",
-      T: () => ["discord_protos.premium_marketing.v1.ButtonAction", Chunk740111.Wc, "BUTTON_ACTION_"]
+      T: () => ["discord_protos.premium_marketing.v1.ButtonAction", s.Wc, "BUTTON_ACTION_"]
     }])
   }
 }

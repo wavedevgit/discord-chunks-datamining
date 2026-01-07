@@ -13,18 +13,18 @@ var Chunk473749 = require("./473749.js"),
   Chunk517157 = require("./517157.js");
 
 function d() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = (0, Chunk517157.Z)(null == module ? true : module.id),
-    n = exports.some(e => o.Ki.includes(e.type)),
-    d = (0, Chunk172416.Un)({
+  let e = (0, a.e7)([l.default], () => l.default.getCurrentUser()),
+    t = (0, u.Z)(null == e ? true : e.id),
+    n = t.some(e => o.Ki.includes(e.type)),
+    d = (0, s.Un)({
       location: "useAvailableWidgetTypes"
     }),
-    f = (0, Chunk880421.k)({
+    f = (0, c.k)({
       location: "useAvailableWidgetTypes"
     }),
-    g = d || require;
-  return Chunk473749.useMemo(() => {
-    let e = new Set(exports.map(e => e.type));
-    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!f) && (!o.Ki.includes(t) || !!g) && !e.has(t))
-  }, [exports, g, f])
+    g = d || n;
+  return r.useMemo(() => {
+    let e = new Set(t.map(e => e.type));
+    return Object.values(i.l).filter(t => (t !== i.l.APPLICATION || !!f) && (!o.Ki.includes(t) || !!g) && !e.has(t))
+  }, [t, g, f])
 }

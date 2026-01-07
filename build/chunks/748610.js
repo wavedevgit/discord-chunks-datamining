@@ -195,12 +195,12 @@ let E = {
     })
   },
   clearSearchRecentMessages: function() {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "SEARCH_RECENT_MESSAGES_CLEAR"
     })
   },
   clearAllSearchMesssages: function() {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "SEARCH_MESSAGES_CLEAR_ALL"
     })
   },
@@ -231,7 +231,7 @@ let E = {
     })
   },
   markSearchTokensRefreshed: function() {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "SEARCH_TOKENS_REFRESHED"
     })
   }

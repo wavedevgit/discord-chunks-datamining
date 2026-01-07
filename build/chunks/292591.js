@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.cUMdH0),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["6EjbvA"]),
+  useTitle: () => T.intl.string(T.t.cUMdH0),
+  useSubtitle: () => T.intl.string(T.t["6EjbvA"]),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAutomaticGainControl())
+    return (0, i.e7)([r.Z], () => r.Z.getAutomaticGainControl())
   },
   setValue: function(t) {
     l.Z.setAutomaticGainControl(t, {
@@ -24,12 +24,12 @@ let S = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, 
     })
   },
   useDisabled: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z, Chunk463395.Z], () => {
-      let t = Chunk131951.Z.getInputDeviceId();
-      return Chunk463395.Z.hasAutomaticGainControl(module)
+    return (0, i.e7)([r.Z, u.Z], () => {
+      let t = r.Z.getInputDeviceId();
+      return u.Z.hasAutomaticGainControl(t)
     })
   },
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isAutomaticGainControlSupported() && Chunk131951.Z.isInputProfileCustom())
+    return (0, i.e7)([r.Z], () => r.Z.isAutomaticGainControlSupported() && r.Z.isInputProfileCustom())
   }
 })

@@ -24,11 +24,11 @@ function p() {
 }
 
 function f() {
-  let e = (0, Chunk399606.e7)([Chunk673125.Z], () => !Chunk673125.Z.visibleOverlayCanvas),
-    t = Chunk473749.useRef(null);
-  return (0, Chunk54381.jsx)(Chunk304388.Z, {
+  let e = (0, l.e7)([s.Z], () => !s.Z.visibleOverlayCanvas),
+    t = r.useRef(null);
+  return (0, i.jsx)(u.Z, {
     renderPopout: () => null,
-    popoutTargetRef: exports,
+    popoutTargetRef: t,
     children: n => {
       var r, l, s = p({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);

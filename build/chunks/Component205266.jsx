@@ -15,21 +15,21 @@ var Chunk704215 = require("./704215.js"),
   Chunk359734 = require("./359734.js");
 let d = "PS two way upsell",
   f = () => {
-    let e = Chunk63063.Z.getArticleURL(Chunk981631.BhN.PS_CONNECTION);
-    return (0, Chunk54381.jsx)(Chunk249881.t, {
-      title: Chunk388032.intl.string(Chunk388032.t.v20wwm),
-      body: Chunk388032.intl.format(Chunk388032.t.lTZBit, {
-        help_article: module
+    let e = o.Z.getArticleURL(l.BhN.PS_CONNECTION);
+    return (0, r.jsx)(s.t, {
+      title: c.intl.string(c.t.v20wwm),
+      body: c.intl.format(c.t.lTZBit, {
+        help_article: e
       }),
-      img: (0, Chunk54381.jsx)("img", {
-        src: Chunk359734,
+      img: (0, r.jsx)("img", {
+        src: u,
         width: "82",
         height: "auto",
         alt: ""
       }),
-      newIndicatorDismissibleContent: Chunk704215.z.PS_ONE_WAY_RECONNECT,
-      onClick: () => (0, Chunk231757.Z)({
-        platformType: Chunk981631.ABu.PLAYSTATION,
+      newIndicatorDismissibleContent: i.z.PS_ONE_WAY_RECONNECT,
+      onClick: () => (0, a.Z)({
+        platformType: l.ABu.PLAYSTATION,
         location: d
       })
     })

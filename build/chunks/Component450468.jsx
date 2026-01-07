@@ -51,12 +51,12 @@ function v(e) {
 }
 
 function S() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk65439.body,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk65439.uncancelImage
-    }), (0, Chunk54381.jsx)("div", {
-      children: Chunk388032.intl.string(Chunk388032.t.G27uHe)
+  return (0, r.jsxs)("div", {
+    className: y.body,
+    children: [(0, r.jsx)("div", {
+      className: y.uncancelImage
+    }), (0, r.jsx)("div", {
+      children: b.intl.string(b.t.G27uHe)
     })]
   })
 }

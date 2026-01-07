@@ -140,7 +140,7 @@ class E {
     let e = Math.round(this.red).toString(16),
       t = Math.round(this.green).toString(16),
       n = Math.round(this.blue).toString(16);
-    return "#" + (this.red > 15.5 ? module : "0" + module) + (this.green > 15.5 ? exports : "0" + exports) + (this.blue > 15.5 ? require : "0" + require)
+    return "#" + (this.red > 15.5 ? e : "0" + e) + (this.green > 15.5 ? t : "0" + t) + (this.blue > 15.5 ? n : "0" + n)
   }
   static parseString(e) {
     return e.match(g) ? this.parseColorFnString(e) : e.match(h) ? this.parseHexString(e) : true
@@ -185,7 +185,7 @@ class E {
     let e = this.red / 255,
       t = this.green / 255,
       n = this.blue / 255;
-    return .2126 * (module <= .03928 ? module / 12.92 : Math.pow((module + .055) / 1.055, 2.4)) + .7152 * (exports <= .03928 ? exports / 12.92 : Math.pow((exports + .055) / 1.055, 2.4)) + .0722 * (require <= .03928 ? require / 12.92 : Math.pow((require + .055) / 1.055, 2.4))
+    return .2126 * (e <= .03928 ? e / 12.92 : Math.pow((e + .055) / 1.055, 2.4)) + .7152 * (t <= .03928 ? t / 12.92 : Math.pow((t + .055) / 1.055, 2.4)) + .0722 * (n <= .03928 ? n / 12.92 : Math.pow((n + .055) / 1.055, 2.4))
   }
 }
 
@@ -304,12 +304,12 @@ class C {
       let n = O(this.targetAncestry);
       t = {
         ...this.makePositionFromDOMRect(this.targetElement.getBoundingClientRect()),
-        zIndex: null != (e = this.zIndex) ? module : this.getNextZIndexForAncestry(this.targetAncestry),
-        [v]: y(require, this.themeOptions),
+        zIndex: null != (e = this.zIndex) ? e : this.getNextZIndexForAncestry(this.targetAncestry),
+        [v]: y(n, this.themeOptions),
         [S]: this.getBorderRadius(this.targetAncestry)
       }
     }
-    return exports
+    return t
   }
 }
 let A = new C;
@@ -338,7 +338,7 @@ let R = false,
 function x() {
   if (!R) return;
   let e = null == r ? true : r.getStyle();
-  null == module || P(module, D) ? null != w && cancelAnimationFrame(w) : (D = module, null == r || r.invalidate()), w = requestAnimationFrame(x)
+  null == e || P(e, D) ? null != w && cancelAnimationFrame(w) : (D = e, null == r || r.invalidate()), w = requestAnimationFrame(x)
 }
 let L = false,
   j = {
@@ -371,13 +371,13 @@ function M(e) {
 }
 
 function k() {
-  let e = Chunk473749.useContext(N),
-    [, t] = Chunk473749.useState({});
-  return Chunk473749.useEffect(() => (module.invalidate = () => exports({}), () => {
-    module.invalidate = () => null
-  }), [module]), j.ringsEnabled && module.visible ? (0, Chunk54381.jsx)("div", {
-    className: d("focus-rings-ring", module.className),
-    style: module.getStyle()
+  let e = a.useContext(N),
+    [, t] = a.useState({});
+  return a.useEffect(() => (e.invalidate = () => t({}), () => {
+    e.invalidate = () => null
+  }), [e]), j.ringsEnabled && e.visible ? (0, o.jsx)("div", {
+    className: d("focus-rings-ring", e.className),
+    style: e.getStyle()
   }) : null
 }
 let U = "u" > typeof window && (null == (i = window.document) ? true : i.createElement) != null ? Chunk473749.useLayoutEffect : Chunk473749.useEffect;

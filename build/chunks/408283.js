@@ -9,5 +9,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.KEYBINDS_SETTING, {
   Component: Chunk389650.Z,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.T9DA2K)]
+  useSearchTerms: () => [u.intl.string(u.t.T9DA2K)]
 })

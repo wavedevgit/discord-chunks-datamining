@@ -13,13 +13,13 @@ var Chunk54381 = require("./54381.js"),
 function s() {
   let {
     trackUserProfileEditAction: e
-  } = (0, Chunk785717.KZ)(), t = Chunk473749.useCallback(() => {
-    module({
+  } = (0, l.KZ)(), t = i.useCallback(() => {
+    e({
       action: "PRESS_ADD_WIDGET"
-    }), (0, Chunk481060.ZDy)(async () => {
+    }), (0, a.ZDy)(async () => {
       let {
         default: t
-      } = await require.e("38576").then(require.bind(require, 925170));
+      } = await n.e("38576").then(n.bind(n, 925170));
       return n => {
         var i, a;
         return (0, r.jsx)(t, (i = function(e) {
@@ -55,17 +55,17 @@ function s() {
     }, {
       stackingBehavior: "stack"
     })
-  }, [module]);
-  return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
-    className: Chunk232907.addWidgetButton,
-    onClick: exports,
-    children: [(0, Chunk54381.jsx)(Chunk481060.qJs, {
+  }, [e]);
+  return (0, r.jsxs)(a.P3F, {
+    className: c.addWidgetButton,
+    onClick: t,
+    children: [(0, r.jsx)(a.qJs, {
       size: "sm",
       color: "currentColor"
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t["lBG2s/"])
+      children: o.intl.string(o.t["lBG2s/"])
     })]
   })
 }

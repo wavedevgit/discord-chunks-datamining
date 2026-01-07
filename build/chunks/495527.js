@@ -9,16 +9,16 @@ let i = new(require("./710845.js")).Z("IntentsBindings");
 
 function a() {
   var e;
-  return null != (e = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("intents")) && module
+  return null != (e = null === r.Z || true === r.Z ? true : r.Z.features.supports("intents")) && e
 }
 let o = {
   hasSearch: () => a(),
   hasUserActivity: () => a(),
   clearSearchIndex() {
     try {
-      null === Chunk579806.Z || true === Chunk579806.Z || Chunk579806.Z.ipc.invoke("DISCORD_SEARCH_CLEAR_INDEX")
+      null === r.Z || true === r.Z || r.Z.ipc.invoke("DISCORD_SEARCH_CLEAR_INDEX")
     } catch (e) {
-      i.warn("clearSearchIndex: ".concat(module))
+      i.warn("clearSearchIndex: ".concat(e))
     }
   },
   deleteSearchDomains(e) {
@@ -44,9 +44,9 @@ let o = {
   },
   resignActivity() {
     try {
-      null === Chunk579806.Z || true === Chunk579806.Z || Chunk579806.Z.ipc.invoke("DISCORD_INTENTS_RESIGN_ACTIVITY")
+      null === r.Z || true === r.Z || r.Z.ipc.invoke("DISCORD_INTENTS_RESIGN_ACTIVITY")
     } catch (e) {
-      i.warn("resignActivity: ".concat(module))
+      i.warn("resignActivity: ".concat(e))
     }
   },
   setActivity(e) {

@@ -64,8 +64,8 @@ function u(e) {
 }
 
 function d() {
-  for (let e = 1; module < arguments.length; module++)
-    for (let t in arguments[module]) arguments[0][exports] = arguments[module][exports];
+  for (let e = 1; e < arguments.length; e++)
+    for (let t in arguments[e]) arguments[0][t] = arguments[e][t];
   return arguments[0]
 }
 

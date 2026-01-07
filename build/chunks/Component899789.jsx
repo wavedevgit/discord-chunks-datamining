@@ -25,12 +25,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk470682 = require("./470682.js");
 
 function h() {
-  return (0, Chunk54381.jsx)(Chunk494620.Z, {
-    className: Chunk470682.maxInstancesWarning,
-    children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, l.jsx)(c.Z, {
+    className: E.maxInstancesWarning,
+    children: (0, l.jsx)(u.Text, {
       variant: "text-sm/medium",
-      children: Chunk388032.intl.formatToPlainString(Chunk914820.default.xta2U9, {
-        maxInstances: Chunk619733.YX
+      children: j.intl.formatToPlainString(x.default.xta2U9, {
+        maxInstances: _.YX
       })
     })
   })
@@ -45,46 +45,46 @@ function S() {
     setGameServerInstance: c,
     setCurrentGame: S,
     onNext: y
-  } = (0, Chunk343312.JL)();
-  (0, Chunk578756.cq)(module, null == Chunk120356 ? "create" : "edit");
-  let O = Chunk473749.useCallback(e => {
+  } = (0, b.JL)();
+  (0, m.cq)(e, null == a ? "create" : "edit");
+  let O = i.useCallback(e => {
       S(e), y()
     }, [S, y]),
-    k = Chunk473749.useCallback(e => {
+    k = i.useCallback(e => {
       c(e), y()
-    }, [Chunk494620, y]),
-    I = require.length >= Chunk619733.YX,
-    C = require.length > 0,
-    P = (0, Chunk639777.Z)(module);
-  return 0 === Object.values(exports).length ? (0, Chunk54381.jsx)("div", {
-    className: Chunk470682.loadingContainer,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      type: Chunk481060.RAz.SPINNING_CIRCLE
+    }, [c, y]),
+    I = t.length >= _.YX,
+    C = t.length > 0,
+    P = (0, d.Z)(e);
+  return 0 === Object.values(n).length ? (0, l.jsx)("div", {
+    className: E.loadingContainer,
+    children: (0, l.jsx)(u.$jN, {
+      type: u.RAz.SPINNING_CIRCLE
     })
-  }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [C && (0, Chunk54381.jsxs)("div", {
-      className: Chunk470682.gameSection,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  }) : (0, l.jsxs)(l.Fragment, {
+    children: [C && (0, l.jsxs)("div", {
+      className: E.gameSection,
+      children: [(0, l.jsx)(u.Heading, {
         variant: "heading-md/semibold",
-        children: Chunk388032.intl.string(Chunk914820.default.BOWmmT)
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk470682.gameInstanceContainer,
-        children: require.map((n, t) => (0, l.jsx)(v.Z, {
+        children: j.intl.string(x.default.BOWmmT)
+      }), (0, l.jsx)("div", {
+        className: E.gameInstanceContainer,
+        children: t.map((n, t) => (0, l.jsx)(v.Z, {
           guildId: e,
           gameInstance: n,
           onClick: k
         }, "instance-".concat(n.id, "-").concat(t)))
-      }), I && (0, Chunk54381.jsx)(h, {})]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: r()(Chunk470682.gameSection, {
-        [Chunk470682.disabled]: I
+      }), I && (0, l.jsx)(h, {})]
+    }), (0, l.jsxs)("div", {
+      className: r()(E.gameSection, {
+        [E.disabled]: I
       }),
-      children: [C && (0, Chunk54381.jsx)(Chunk481060.Heading, {
+      children: [C && (0, l.jsx)(u.Heading, {
         variant: "heading-md/semibold",
-        children: Chunk388032.intl.string(Chunk914820.default.NIwDqW)
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk470682.gameContainer,
-        children: Object.values(exports).map((n, t) => (0, l.jsx)(s.u, {
+        children: j.intl.string(x.default.NIwDqW)
+      }), (0, l.jsx)("div", {
+        className: E.gameContainer,
+        children: Object.values(n).map((n, t) => (0, l.jsx)(s.u, {
           asContainer: true,
           text: n.disabled ? j.intl.formatToPlainString(x.default.uVpJYf, {
             gameName: n.name
@@ -99,18 +99,18 @@ function S() {
           })
         }, "game-".concat(n.id, "-").concat(t)))
       })]
-    }), (0, Chunk54381.jsxs)(Chunk30910.o2, {
-      step: Chunk619733.EK.SELECT_GAME,
-      className: Chunk470682.footerContainer,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk470682.warningContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.d3s, {
+    }), (0, l.jsxs)(p.o2, {
+      step: _.EK.SELECT_GAME,
+      className: E.footerContainer,
+      children: [(0, l.jsxs)("div", {
+        className: E.warningContainer,
+        children: [(0, l.jsx)(u.d3s, {
           size: "sm"
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        }), (0, l.jsx)(u.Text, {
           variant: "text-sm/medium",
-          children: Chunk388032.intl.string(Chunk914820.default["5DjxXm"])
+          children: j.intl.string(x.default["5DjxXm"])
         })]
-      }), (0, Chunk54381.jsx)(Chunk296643.Z, {})]
+      }), (0, l.jsx)(g.Z, {})]
     })]
   })
 }

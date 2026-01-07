@@ -6,11 +6,11 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js");
 
 function i() {
-  let [e, t] = (0, Chunk473749.useState)(window.innerWidth >= 1132);
-  return (0, Chunk473749.useEffect)(() => {
+  let [e, t] = (0, r.useState)(window.innerWidth >= 1132);
+  return (0, r.useEffect)(() => {
     let e = () => {
-      exports(window.innerWidth >= 1132)
+      t(window.innerWidth >= 1132)
     };
-    return module(), window.addEventListener("resize", module), () => window.removeEventListener("resize", module)
-  }, []), module
+    return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
+  }, []), e
 }

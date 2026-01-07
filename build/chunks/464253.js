@@ -132,15 +132,15 @@ class h {
         this._onCapturePaused(true);
         break;
       case "verbatim-source":
-        null != this.streamKey && this._onStreamEnd(this.streamKey, module);
+        null != this.streamKey && this._onStreamEnd(this.streamKey, e);
         break;
       default:
         var t;
-        throw Error("unknown streaming mode: ".concat(null != (t = this.mode) ? exports : "(none)"))
+        throw Error("unknown streaming mode: ".concat(null != (t = this.mode) ? t : "(none)"))
     }
   }
   constructor() {
-    m(this, "director", true), m(this, "applications", true), m(this, "streamKey", true), m(this, "mode", true), this.mode = null, this.applications = [], this.director = new Chunk252759.a(e => this._onDirectorAction(e)), Chunk570140.Z.subscribe("STREAM_START", e => {
+    m(this, "director", true), m(this, "applications", true), m(this, "streamKey", true), m(this, "mode", true), this.mode = null, this.applications = [], this.director = new s.a(e => this._onDirectorAction(e)), r.Z.subscribe("STREAM_START", e => {
       let {
         streamType: t,
         guildId: n,
@@ -156,28 +156,28 @@ class h {
         ownerId: c
       });
       null == i != (null == a) ? (null != i && this._onStreamApplication(f, i, null == l || l), null != a && this._onStreamDirectSource(f, a, s, l)) : new o.Z("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(i, ", source-id: ").concat(a, ")"))
-    }), Chunk570140.Z.subscribe("STREAM_DELETE", e => {
+    }), r.Z.subscribe("STREAM_DELETE", e => {
       let {
         streamKey: t
       } = e;
       this._onStreamKilled(t)
-    }), Chunk570140.Z.subscribe("STREAM_STOP", e => {
+    }), r.Z.subscribe("STREAM_STOP", e => {
       let {
         streamKey: t
       } = e;
       this._onStreamEnd(t)
-    }), Chunk570140.Z.subscribe("RUNNING_GAMES_CHANGE", e => {
+    }), r.Z.subscribe("RUNNING_GAMES_CHANGE", e => {
       let {
         games: t
       } = e;
       this._onGameDetectionUpdate(t)
-    }), Chunk570140.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
+    }), r.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t,
         context: n
       } = e;
       n === _.Yn.STREAM && this._onCapturePaused(t === p.FQ1.PAUSED)
-    }), Chunk570140.Z.subscribe("MEDIA_ENGINE_SET_GO_LIVE_SOURCE", e => {
+    }), r.Z.subscribe("MEDIA_ENGINE_SET_GO_LIVE_SOURCE", e => {
       var t;
       let {
         settings: n,

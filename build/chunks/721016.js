@@ -448,12 +448,12 @@ eL.prototype = {
     return "" !== this.username || "" !== this.password
   },
   isSpecial: function() {
-    return Chunk185698(em, this.scheme)
+    return h(em, this.scheme)
   },
   shortenPath: function() {
     var e = this.path,
-      t = module.length;
-    exports && ("file" !== this.scheme || 1 !== exports || !ey(module[0], true)) && module.length--
+      t = e.length;
+    t && ("file" !== this.scheme || 1 !== t || !ey(e[0], true)) && e.length--
   },
   serialize: function() {
     var e = this.scheme,
@@ -464,8 +464,8 @@ eL.prototype = {
       a = this.path,
       i = this.query,
       s = this.fragment,
-      c = module + ":";
-    return null !== r ? (c += "//", this.includesCredentials() && (c += exports + (require ? ":" + require : "") + "@"), c += el(r), null !== Chunk220159 && (c += ":" + Chunk220159)) : "file" === module && (c += "//"), c += this.cannotBeABaseURL ? Chunk181794[0] : Chunk181794.length ? "/" + M(Chunk181794, "/") : "", null !== Chunk91345 && (c += "?" + Chunk91345), null !== Chunk424353 && (c += "#" + Chunk424353), Chunk324474
+      c = e + ":";
+    return null !== r ? (c += "//", this.includesCredentials() && (c += t + (n ? ":" + n : "") + "@"), c += el(r), null !== o && (c += ":" + o)) : "file" === e && (c += "//"), c += this.cannotBeABaseURL ? a[0] : a.length ? "/" + M(a, "/") : "", null !== i && (c += "?" + i), null !== s && (c += "#" + s), c
   },
   setHref: function(e) {
     var t = this.parse(e);
@@ -475,12 +475,12 @@ eL.prototype = {
   getOrigin: function() {
     var e = this.scheme,
       t = this.port;
-    if ("blob" === module) try {
-      return new eV(module.path[0]).origin
+    if ("blob" === e) try {
+      return new eV(e.path[0]).origin
     } catch (e) {
       return "null"
     }
-    return "file" !== module && this.isSpecial() ? module + "://" + el(this.host) + (null !== exports ? ":" + exports : "") : "null"
+    return "file" !== e && this.isSpecial() ? e + "://" + el(this.host) + (null !== t ? ":" + t : "") : "null"
   },
   getProtocol: function() {
     return this.scheme + ":"
@@ -511,35 +511,35 @@ eL.prototype = {
   getHost: function() {
     var e = this.host,
       t = this.port;
-    return null === module ? "" : null === exports ? el(module) : el(module) + ":" + exports
+    return null === e ? "" : null === t ? el(e) : el(e) + ":" + t
   },
   setHost: function(e) {
     this.cannotBeABaseURL || this.parse(e, eP)
   },
   getHostname: function() {
     var e = this.host;
-    return null === module ? "" : el(module)
+    return null === e ? "" : el(e)
   },
   setHostname: function(e) {
     this.cannotBeABaseURL || this.parse(e, eA)
   },
   getPort: function() {
     var e = this.port;
-    return null === module ? "" : Chunk565130(module)
+    return null === e ? "" : b(e)
   },
   setPort: function(e) {
     this.cannotHaveUsernamePasswordPort() || ("" === (e = b(e)) ? this.port = null : this.parse(e, eR))
   },
   getPathname: function() {
     var e = this.path;
-    return this.cannotBeABaseURL ? module[0] : module.length ? "/" + M(module, "/") : ""
+    return this.cannotBeABaseURL ? e[0] : e.length ? "/" + M(e, "/") : ""
   },
   setPathname: function(e) {
     this.cannotBeABaseURL || (this.path = [], this.parse(e, eI))
   },
   getSearch: function() {
     var e = this.query;
-    return module ? "?" + module : ""
+    return e ? "?" + e : ""
   },
   setSearch: function(e) {
     "" === (e = b(e)) ? this.query = null: ("?" === O(e, 0) && (e = U(e, 1)), this.query = "", this.parse(e, eB)), this.searchParams.update()
@@ -549,7 +549,7 @@ eL.prototype = {
   },
   getHash: function() {
     var e = this.fragment;
-    return module ? "#" + module : ""
+    return e ? "#" + e : ""
   },
   setHash: function(e) {
     if ("" === (e = b(e))) {

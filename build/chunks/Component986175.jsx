@@ -100,7 +100,7 @@ function v(e) {
 }
 
 function S() {
-  return (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsx)(u.Text, {
     variant: "text-sm/normal",
     color: "text-subtle",
     children: "Lost access to your radness? Talk to your radness provider to refresh your aura."

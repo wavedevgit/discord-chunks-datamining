@@ -46,14 +46,14 @@ class m extends(r = Chunk473749.PureComponent) {
       className: a,
       iconClassName: o
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      className: s()(Chunk84329.note, p[exports], Chunk473749),
-      align: Chunk600164.Z.Align.CENTER,
-      children: [(0, Chunk54381.jsx)(module, {
-        className: s()(Chunk84329.icon, _[r], Chunk120356),
+    return (0, i.jsxs)(l.Z, {
+      className: s()(c.note, p[t], a),
+      align: l.Z.Align.CENTER,
+      children: [(0, i.jsx)(e, {
+        className: s()(c.icon, _[r], o),
         color: "currentColor"
-      }), (0, Chunk54381.jsx)("div", {
-        children: require
+      }), (0, i.jsx)("div", {
+        children: n
       })]
     })
   }

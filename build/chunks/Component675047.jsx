@@ -27,43 +27,43 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function I() {
-  return (0, Chunk54381.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.WWaFn5),
-    description: Chunk388032.intl.format(Chunk388032.t["/6sFWa"], {
-      helpArticle: (0, Chunk630759.uV)()
+  return (0, r.jsxs)(b.Z, {
+    title: S.intl.string(S.t.WWaFn5),
+    description: S.intl.format(S.t["/6sFWa"], {
+      helpArticle: (0, l.uV)()
     }),
-    webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-    children: [(0, Chunk54381.jsx)(Chunk230341.Z, {}), (0, Chunk54381.jsx)(Chunk266132.Z, {})]
+    webSetting: v.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
+    children: [(0, r.jsx)(E.Z, {}), (0, r.jsx)(O.Z, {})]
   })
 }
 
 function T() {
-  return (0, Chunk54381.jsx)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.BG7QsQ),
-    webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
-    children: (0, Chunk54381.jsx)(Chunk623196.Z, {})
+  return (0, r.jsx)(b.Z, {
+    title: S.intl.string(S.t.BG7QsQ),
+    webSetting: v.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
+    children: (0, r.jsx)(f.Z, {})
   })
 }
 
 function C() {
-  let e = (0, Chunk526665.BK)("UserSettingsDataAndPrivacy");
-  return (0, Chunk54381.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.SRZyHg),
-    webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
-    children: [(0, Chunk54381.jsx)(Chunk402583.Z, {}), (0, Chunk54381.jsx)(Chunk940021.Z, {}), (0, Chunk54381.jsx)(Chunk265390.Z, {}), (0, Chunk54381.jsx)(Chunk883382.Z, {}), module && (0, Chunk54381.jsx)(Chunk902451.Z, {}), (0, Chunk54381.jsx)(Chunk993315.Z, {})]
+  let e = (0, u.BK)("UserSettingsDataAndPrivacy");
+  return (0, r.jsxs)(b.Z, {
+    title: S.intl.string(S.t.SRZyHg),
+    webSetting: v.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
+    children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.Z, {}), e && (0, r.jsx)(s.Z, {}), (0, r.jsx)(p.Z, {})]
   })
 }
 
 function A() {
-  return (0, Chunk493773.ZP)(() => {
-    (0, Chunk924628.I)(), (0, Chunk398826.A)()
-  }), (0, Chunk54381.jsx)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t.OAuOHD),
-    notice: (0, Chunk54381.jsx)(Chunk441007.Z, {
-      page: Chunk441007.N.DATA_AND_PRIVACY
+  return (0, o.ZP)(() => {
+    (0, a.I)(), (0, c.A)()
+  }), (0, r.jsx)(d.N, {
+    header: S.intl.string(S.t.OAuOHD),
+    notice: (0, r.jsx)(y.Z, {
+      page: y.N.DATA_AND_PRIVACY
     }),
-    children: (0, Chunk54381.jsxs)(Chunk481060.l09, {
-      children: [(0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)(I, {})]
+    children: (0, r.jsxs)(i.l09, {
+      children: [(0, r.jsx)(C, {}), (0, r.jsx)(T, {}), (0, r.jsx)(I, {})]
     })
   })
 }

@@ -129,18 +129,18 @@ function k(e) {
 }
 
 function G() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk399255.emptyRoles,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk499899.dragSpacing
-    }), (0, Chunk54381.jsx)(Chunk481060.BFJ, {
+  return (0, r.jsxs)("div", {
+    className: Z.emptyRoles,
+    children: [(0, r.jsx)("div", {
+      className: R.dragSpacing
+    }), (0, r.jsx)(g.BFJ, {
       size: "md",
       color: "currentColor"
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk399255.emptyRolesText,
+    }), (0, r.jsx)(g.Text, {
+      className: Z.emptyRolesText,
       variant: "text-md/semibold",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t["vR7M+y"])
+      children: w.intl.string(w.t["vR7M+y"])
     })]
   })
 }

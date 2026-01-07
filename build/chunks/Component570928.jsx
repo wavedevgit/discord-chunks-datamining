@@ -75,19 +75,19 @@ class m extends(r = Chunk473749.PureComponent) {
         hoverText: r,
         className: a,
         forceHover: o
-      } = module,
-      c = p(module, ["tag", "children", "hoverText", "className", "forceHover"]);
-    return (0, Chunk54381.jsxs)("div", f(u({}, c), {
-      className: s()(Chunk473749, Chunk970146.hoverRoll, {
-        [Chunk970146.disabled]: null == r,
-        [Chunk970146.forceHover]: Chunk120356
+      } = e,
+      c = p(e, ["tag", "children", "hoverText", "className", "forceHover"]);
+    return (0, i.jsxs)("div", f(u({}, c), {
+      className: s()(a, l.hoverRoll, {
+        [l.disabled]: null == r,
+        [l.forceHover]: o
       }),
-      children: [(0, Chunk54381.jsx)(exports, {
-        className: Chunk970146.hovered,
+      children: [(0, i.jsx)(t, {
+        className: l.hovered,
         children: r
-      }), (0, Chunk54381.jsx)(exports, {
-        className: Chunk970146.default,
-        children: require
+      }), (0, i.jsx)(t, {
+        className: l.default,
+        children: n
       })]
     }))
   }

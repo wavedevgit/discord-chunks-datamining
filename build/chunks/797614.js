@@ -52,16 +52,16 @@ function f(e, t) {
 let p = new Set(["darwin", "linux", "win32", "ios", "android"]);
 
 function _() {
-  if ((0, Chunk358085.isWeb)()) return "web";
+  if ((0, a.isWeb)()) return "web";
   {
-    let e = (0, Chunk358085.getPlatformName)();
-    return p.has(module) ? module : null
+    let e = (0, a.getPlatformName)();
+    return p.has(e) ? e : null
   }
 }
 
 function m() {
-  let e = Chunk747268.Z;
-  return null != module && Chunk404097.e.ALL.has(module) ? module : null
+  let e = o.Z;
+  return null != e && r.e.ALL.has(e) ? e : null
 }
 let h = 12e4,
   g = 100;
@@ -98,13 +98,13 @@ class E {
   _flush() {
     if (this._metrics.length > 0) {
       let e = [...this._metrics];
-      Chunk544891.tn.post({
-        url: Chunk981631.ANM.METRICS_V2,
+      i.tn.post({
+        url: l.ANM.METRICS_V2,
         body: {
-          metrics: module,
+          metrics: e,
           client_info: {
-            built_at: "1767806185468",
-            build_number: "483489"
+            built_at: "1767806786983",
+            build_number: "483493"
           }
         },
         retries: 1,

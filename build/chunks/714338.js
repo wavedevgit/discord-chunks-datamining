@@ -81,7 +81,7 @@ let T = {
   },
   disableTemp() {
     let e = f.pop();
-    null != module && (d = module), this.disable(), this.enable()
+    null != e && (d = e), this.disable(), this.enable()
   },
   disable() {
     p && (p = false, y.forEach(e => e()), y = [], _.reset())

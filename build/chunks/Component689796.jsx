@@ -17,10 +17,10 @@ class d extends Chunk473749.PureComponent {
       contentRating: e,
       contentRatingAgency: t
     } = this.props.sku;
-    return null == module || null == exports ? null : (0, Chunk54381.jsx)(Chunk77878.Z, {
-      className: Chunk387885.rating,
-      agency: exports,
-      rating: module.rating
+    return null == e || null == t ? null : (0, r.jsx)(l.Z, {
+      className: u.rating,
+      agency: t,
+      rating: e.rating
     })
   }
   render() {
@@ -31,73 +31,73 @@ class d extends Chunk473749.PureComponent {
       },
       className: n
     } = this.props;
-    if (null == module || null == exports) return null;
+    if (null == e || null == t) return null;
     let i = {
-        [Chunk981631.aIt.ESRB]: {
-          1: Chunk388032.intl.string(Chunk388032.t.ErVezT),
-          2: Chunk388032.intl.string(Chunk388032.t.xLyerM),
-          3: Chunk388032.intl.string(Chunk388032.t.UmB6j4),
-          4: Chunk388032.intl.string(Chunk388032.t.NHOQIx),
-          5: Chunk388032.intl.string(Chunk388032.t.U6xTOx),
-          6: Chunk388032.intl.string(Chunk388032.t["51xJIw"]),
-          7: Chunk388032.intl.string(Chunk388032.t.uayp6o),
-          8: Chunk388032.intl.string(Chunk388032.t.c1GtKm),
-          9: Chunk388032.intl.string(Chunk388032.t.Hz8vrY),
-          10: Chunk388032.intl.string(Chunk388032.t.qSyzdd),
-          11: Chunk388032.intl.string(Chunk388032.t.K68q8V),
-          12: Chunk388032.intl.string(Chunk388032.t.Yb0n6M),
-          13: Chunk388032.intl.string(Chunk388032.t.IIFZqn),
-          14: Chunk388032.intl.string(Chunk388032.t["NZ/JGV"]),
-          15: Chunk388032.intl.string(Chunk388032.t["5qETTQ"]),
-          16: Chunk388032.intl.string(Chunk388032.t.kJGLz1),
-          17: Chunk388032.intl.string(Chunk388032.t.cB2QRG),
-          18: Chunk388032.intl.string(Chunk388032.t["g9SiE+"]),
-          19: Chunk388032.intl.string(Chunk388032.t.Xe0T58),
-          20: Chunk388032.intl.string(Chunk388032.t["4k6sY/"]),
-          21: Chunk388032.intl.string(Chunk388032.t.cxFiDC),
-          22: Chunk388032.intl.string(Chunk388032.t.YvpQK9),
-          23: Chunk388032.intl.string(Chunk388032.t.i2gbpb),
-          24: Chunk388032.intl.string(Chunk388032.t["LooT/V"]),
-          25: Chunk388032.intl.string(Chunk388032.t["/AIXhm"]),
-          26: Chunk388032.intl.string(Chunk388032.t.oo09H9),
-          27: Chunk388032.intl.string(Chunk388032.t.XCUBez),
-          28: Chunk388032.intl.string(Chunk388032.t.g6dipd),
-          29: Chunk388032.intl.string(Chunk388032.t.YYGUqs),
-          30: Chunk388032.intl.string(Chunk388032.t.WsqFnB),
-          31: Chunk388032.intl.string(Chunk388032.t.zePEol),
-          32: Chunk388032.intl.string(Chunk388032.t.bGErw4),
-          33: Chunk388032.intl.string(Chunk388032.t.imoY95),
-          34: Chunk388032.intl.string(Chunk388032.t["Z+VBdp"]),
-          35: Chunk388032.intl.string(Chunk388032.t.eBgo0A),
-          36: Chunk388032.intl.string(Chunk388032.t["6SVTt7"]),
-          37: Chunk388032.intl.string(Chunk388032.t["8Lme6b"]),
-          38: Chunk388032.intl.string(Chunk388032.t.ettX4D),
-          39: Chunk388032.intl.string(Chunk388032.t.nnVZF7),
-          40: Chunk388032.intl.string(Chunk388032.t.TWlbXv),
-          41: Chunk388032.intl.string(Chunk388032.t["CAGgE/"]),
-          42: Chunk388032.intl.string(Chunk388032.t["jRZf+d"]),
-          43: Chunk388032.intl.string(Chunk388032.t["4Vg0mm"])
+        [s.aIt.ESRB]: {
+          1: c.intl.string(c.t.ErVezT),
+          2: c.intl.string(c.t.xLyerM),
+          3: c.intl.string(c.t.UmB6j4),
+          4: c.intl.string(c.t.NHOQIx),
+          5: c.intl.string(c.t.U6xTOx),
+          6: c.intl.string(c.t["51xJIw"]),
+          7: c.intl.string(c.t.uayp6o),
+          8: c.intl.string(c.t.c1GtKm),
+          9: c.intl.string(c.t.Hz8vrY),
+          10: c.intl.string(c.t.qSyzdd),
+          11: c.intl.string(c.t.K68q8V),
+          12: c.intl.string(c.t.Yb0n6M),
+          13: c.intl.string(c.t.IIFZqn),
+          14: c.intl.string(c.t["NZ/JGV"]),
+          15: c.intl.string(c.t["5qETTQ"]),
+          16: c.intl.string(c.t.kJGLz1),
+          17: c.intl.string(c.t.cB2QRG),
+          18: c.intl.string(c.t["g9SiE+"]),
+          19: c.intl.string(c.t.Xe0T58),
+          20: c.intl.string(c.t["4k6sY/"]),
+          21: c.intl.string(c.t.cxFiDC),
+          22: c.intl.string(c.t.YvpQK9),
+          23: c.intl.string(c.t.i2gbpb),
+          24: c.intl.string(c.t["LooT/V"]),
+          25: c.intl.string(c.t["/AIXhm"]),
+          26: c.intl.string(c.t.oo09H9),
+          27: c.intl.string(c.t.XCUBez),
+          28: c.intl.string(c.t.g6dipd),
+          29: c.intl.string(c.t.YYGUqs),
+          30: c.intl.string(c.t.WsqFnB),
+          31: c.intl.string(c.t.zePEol),
+          32: c.intl.string(c.t.bGErw4),
+          33: c.intl.string(c.t.imoY95),
+          34: c.intl.string(c.t["Z+VBdp"]),
+          35: c.intl.string(c.t.eBgo0A),
+          36: c.intl.string(c.t["6SVTt7"]),
+          37: c.intl.string(c.t["8Lme6b"]),
+          38: c.intl.string(c.t.ettX4D),
+          39: c.intl.string(c.t.nnVZF7),
+          40: c.intl.string(c.t.TWlbXv),
+          41: c.intl.string(c.t["CAGgE/"]),
+          42: c.intl.string(c.t["jRZf+d"]),
+          43: c.intl.string(c.t["4Vg0mm"])
         },
-        [Chunk981631.aIt.PEGI]: {
-          1: Chunk388032.intl.string(Chunk388032.t.VcO2U3),
-          2: Chunk388032.intl.string(Chunk388032.t.wt264z),
-          3: Chunk388032.intl.string(Chunk388032.t["5yzEJa"]),
-          4: Chunk388032.intl.string(Chunk388032.t["NBQZX/"]),
-          5: Chunk388032.intl.string(Chunk388032.t["4UG90a"]),
-          6: Chunk388032.intl.string(Chunk388032.t.Cf5CtK),
-          7: Chunk388032.intl.string(Chunk388032.t.ai9C3Q)
+        [s.aIt.PEGI]: {
+          1: c.intl.string(c.t.VcO2U3),
+          2: c.intl.string(c.t.wt264z),
+          3: c.intl.string(c.t["5yzEJa"]),
+          4: c.intl.string(c.t["NBQZX/"]),
+          5: c.intl.string(c.t["4UG90a"]),
+          6: c.intl.string(c.t.Cf5CtK),
+          7: c.intl.string(c.t.ai9C3Q)
         }
       },
-      l = module.descriptors.map(e => i[t][e]).join(", ");
-    return (0, Chunk54381.jsxs)("div", {
-      className: require,
-      children: [(0, Chunk54381.jsx)(Chunk770146.Z, {
-        children: Chunk388032.intl.string(Chunk388032.t.q9Zqgl)
-      }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-        className: Chunk387885.content,
-        children: [this.renderContentRatingImage(), (0, Chunk54381.jsx)("div", {
-          className: Chunk387885.__invalid_info,
-          children: Chunk77878
+      l = e.descriptors.map(e => i[t][e]).join(", ");
+    return (0, r.jsxs)("div", {
+      className: n,
+      children: [(0, r.jsx)(a.Z, {
+        children: c.intl.string(c.t.q9Zqgl)
+      }), (0, r.jsxs)(o.Z, {
+        className: u.content,
+        children: [this.renderContentRatingImage(), (0, r.jsx)("div", {
+          className: u.__invalid_info,
+          children: l
         })]
       })]
     })

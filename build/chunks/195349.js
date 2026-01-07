@@ -9,5 +9,5 @@ var Chunk564344 = require("./564344.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.PROFILE_SETTING, {
   Component: Chunk564344.Z,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["vi7f+q"]), Chunk388032.intl.string(Chunk388032.t.Ip9nBS), Chunk388032.intl.string(Chunk388032.t["2p07FR"]), Chunk388032.intl.string(Chunk388032.t["7vhiqk"]), Chunk388032.intl.string(Chunk388032.t.kPHroX), Chunk388032.intl.string(Chunk388032.t.lqaIxI), Chunk388032.intl.string(Chunk388032.t.Vgdusv), Chunk388032.intl.string(Chunk388032.t.DMeO2X)]
+  useSearchTerms: () => [u.intl.string(u.t["vi7f+q"]), u.intl.string(u.t.Ip9nBS), u.intl.string(u.t["2p07FR"]), u.intl.string(u.t["7vhiqk"]), u.intl.string(u.t.kPHroX), u.intl.string(u.t.lqaIxI), u.intl.string(u.t.Vgdusv), u.intl.string(u.t.DMeO2X)]
 })

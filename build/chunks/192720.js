@@ -29,16 +29,16 @@ async function u(e) {
     })).ok) returntrue
 }
 async function d() {
-  if (!Chunk768943.Z.getIsStale()) return Promise.resolve();
-  let e = (await Chunk544891.tn.get({
-    url: Chunk981631.ANM.GET_SAVED_MESSAGES,
+  if (!o.Z.getIsStale()) return Promise.resolve();
+  let e = (await r.tn.get({
+    url: l.ANM.GET_SAVED_MESSAGES,
     rejectWithError: false
   })).body.results.map(e => ({
     message: null != e.message ? (0, a.e5)(e.message) : null,
     saveData: (0, s.vL)(e.save_data)
   }));
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "SAVED_MESSAGES_UPDATE",
-    savedMessages: module
+    savedMessages: e
   })
 }

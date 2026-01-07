@@ -19,13 +19,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216476 = require("./216476.js");
 let N = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_SCREENSHOT_KEYBIND, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["0U/hj7"]), Chunk388032.intl.string(Chunk388032.t["5zxkdo"])],
+  useSearchTerms: () => [g.intl.string(g.t["0U/hj7"]), g.intl.string(g.t["5zxkdo"])],
   usePredicate: Chunk924557.PP,
   Component: () => {
-    let t = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-      e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true));
-    u()(null != module, "Save clip keybind unset"), u()(null != exports, "Save screenshot keybind unset");
-    let n = Chunk473749.useCallback(t => {
+    let t = (0, r.e7)([E.ZP], () => E.ZP.getKeybindForAction(_.kg4.SAVE_CLIP, true)),
+      e = (0, r.e7)([E.ZP], () => E.ZP.getKeybindForAction(_.kg4.SAVE_SCREENSHOT, true));
+    u()(null != t, "Save clip keybind unset"), u()(null != e, "Save screenshot keybind unset");
+    let n = l.useCallback(t => {
       var n, i;
       o.Z.setKeybind((n = function(t) {
         for (var e = 1; e < arguments.length; e++) {
@@ -56,16 +56,16 @@ let N = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_SCREENSHOT_KEYBIND, {
       })(Object(i)).forEach(function(t) {
         Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(i, t))
       }), n))
-    }, [exports]);
-    return (0, Chunk54381.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t["0U/hj7"]),
-      description: Chunk388032.intl.string(Chunk388032.t["5zxkdo"]),
+    }, [e]);
+    return (0, i.jsx)(a.gNt, {
+      label: g.intl.string(g.t["0U/hj7"]),
+      description: g.intl.string(g.t["5zxkdo"]),
       layout: "horizontal",
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk216476.keyRecorder,
-        children: (0, Chunk54381.jsx)(Chunk825209.Z, {
-          defaultValue: exports.shortcut,
-          onChange: require
+      children: (0, i.jsx)("div", {
+        className: I.keyRecorder,
+        children: (0, i.jsx)(T.Z, {
+          defaultValue: e.shortcut,
+          onChange: n
         })
       })
     })

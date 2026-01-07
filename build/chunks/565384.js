@@ -68,7 +68,7 @@ function _() {
   let e = {};
   return c.getState().impressions.forEach(t => {
     t.type === i.ImpressionTypes.PAGE ? e.page = t.name : e.section = t.name
-  }), module
+  }), e
 }
 
 function m() {

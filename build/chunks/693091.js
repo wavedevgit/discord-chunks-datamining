@@ -40,7 +40,7 @@ class p {
   }
   cleanUp() {
     var e;
-    null == (e = this.resizeObserver) || module.disconnect(), this.resizeObserver = true, this.listeners.clear()
+    null == (e = this.resizeObserver) || e.disconnect(), this.resizeObserver = true, this.listeners.clear()
   }
   queueCompute() {
     this.queuedCompute || (this.queuedCompute = true, Promise.resolve().then(() => this.computeLayout()))
@@ -51,24 +51,24 @@ class p {
     let t = 0,
       n = 0;
     for (let r of this.items) {
-      let i = this.listeners.get(Chunk473749.notification.id);
-      if (null == Chunk481060) continue;
+      let i = this.listeners.get(r.notification.id);
+      if (null == i) continue;
       let {
         offsetHeight: a
-      } = Chunk481060.element;
-      (Chunk481060.top !== exports || Chunk481060.height !== Chunk710845 || Chunk481060.index !== require) && (e = true), Chunk481060.top = exports, Chunk481060.height = Chunk710845, Chunk481060.index = require, 0 === exports && (this.matchHeight !== Chunk710845 && (e = true), this.matchHeight = Chunk710845), t += Chunk710845 + 8, require++
+      } = i.element;
+      (i.top !== t || i.height !== a || i.index !== n) && (e = true), i.top = t, i.height = a, i.index = n, 0 === t && (this.matchHeight !== a && (e = true), this.matchHeight = a), t += a + 8, n++
     }
-    module && this.broadcastLayoutUpdates()
+    e && this.broadcastLayoutUpdates()
   }
   broadcastLayoutUpdates() {
     for (let e of this.items) {
-      let t = this.listeners.get(module.notification.id);
-      null != exports && exports.callback({
+      let t = this.listeners.get(e.notification.id);
+      null != t && t.callback({
         locked: this.locked,
         matchHeight: this.matchHeight,
-        height: exports.height,
-        top: exports.top,
-        index: exports.index
+        height: t.height,
+        top: t.top,
+        index: t.index
       })
     }
   }

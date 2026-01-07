@@ -206,5 +206,5 @@ function D(e, t) {
 }
 
 function x() {
-  return window.location.pathname.startsWith(Chunk981631.Z5c.QUEST_HOME)
+  return window.location.pathname.startsWith(u.Z5c.QUEST_HOME)
 }

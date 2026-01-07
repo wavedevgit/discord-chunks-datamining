@@ -10,5 +10,5 @@ var Chunk106939 = require("./106939.jsx"),
   Chunk517319 = require("./517319.js");
 let a = (0, Chunk509613.ON)(Chunk313789.n.FAMILY_CENTER_SETTING, {
   Component: Chunk106939.M,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk517319.default.RZqaJn), Chunk388032.intl.string(Chunk517319.default.bdBmqy), Chunk388032.intl.string(Chunk517319.default["gVWG+6"]), Chunk388032.intl.string(Chunk517319.default.ahKIJO), Chunk388032.intl.string(Chunk517319.default["8SLtqb"])]
+  useSearchTerms: () => [u.intl.string(r.default.RZqaJn), u.intl.string(r.default.bdBmqy), u.intl.string(r.default["gVWG+6"]), u.intl.string(r.default.ahKIJO), u.intl.string(r.default["8SLtqb"])]
 })

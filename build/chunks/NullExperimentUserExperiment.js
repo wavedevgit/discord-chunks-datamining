@@ -24,6 +24,6 @@ function i() {
   return r.useExperiment({
     location: "a9e81b_1"
   }, {
-    autoTrackExposure: module
+    autoTrackExposure: e
   })
 }

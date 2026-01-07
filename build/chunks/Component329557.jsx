@@ -14,13 +14,13 @@ var Chunk481060 = require("./481060.js"),
 let u = "QUICK_SWITCHER_MODAL_KEY";
 class d extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("QUICKSWITCHER_SHOW", this.handleShow), Chunk570140.Z.subscribe("QUICKSWITCHER_HIDE", this.handleHide)
+    l.Z.subscribe("QUICKSWITCHER_SHOW", this.handleShow), l.Z.subscribe("QUICKSWITCHER_HIDE", this.handleHide)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("QUICKSWITCHER_SHOW", this.handleShow), Chunk570140.Z.unsubscribe("QUICKSWITCHER_HIDE", this.handleHide)
+    l.Z.unsubscribe("QUICKSWITCHER_SHOW", this.handleShow), l.Z.unsubscribe("QUICKSWITCHER_HIDE", this.handleHide)
   }
   handleShow() {
-    Chunk823385.Z.isOpen() && !(0, Chunk481060.nfh)(u) && (0, Chunk481060.h7j)(e => (0, r.jsx)(c.Z, function(e) {
+    s.Z.isOpen() && !(0, i.nfh)(u) && (0, i.h7j)(e => (0, r.jsx)(c.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -40,11 +40,11 @@ class d extends Chunk317770.Z {
     }({}, e)), {
       modalKey: u,
       instant: true,
-      onCloseCallback: Chunk51596.Cp
+      onCloseCallback: o.Cp
     })
   }
   handleHide() {
-    (0, Chunk481060.Mr3)(u)
+    (0, i.Mr3)(u)
   }
 }
 let f = new d

@@ -9,16 +9,16 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let o = {
   fetch() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "USER_AUTHORIZED_APPS_REQUEST"
-    }), Chunk544891.tn.get({
-      url: Chunk981631.ANM.OAUTH2_TOKENS,
+    }), r.tn.get({
+      url: a.ANM.OAUTH2_TOKENS,
       oldFormErrors: true,
       rejectWithError: true
     }).then(e => i.Z.dispatch({
       type: "USER_AUTHORIZED_APPS_UPDATE",
       tokens: e.body
-    }), () => Chunk570140.Z.dispatch({
+    }), () => i.Z.dispatch({
       type: "USER_AUTHORIZED_APPS_UPDATE",
       tokens: []
     }))

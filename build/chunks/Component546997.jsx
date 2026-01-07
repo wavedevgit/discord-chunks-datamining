@@ -37,35 +37,35 @@ function m() {
     supportsExperimentalSoundshare: n,
     supportsHookSoundshare: a,
     useSystemScreensharePicker: l
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-    videoHook: Chunk131951.Z.getVideoHook(),
-    experimentalSoundshare: Chunk131951.Z.getExperimentalSoundshare(),
-    supportsExperimentalSoundshare: Chunk131951.Z.supportsExperimentalSoundshare(),
-    supportsHookSoundshare: Chunk131951.Z.supportsHookSoundshare(),
-    useSystemScreensharePicker: Chunk131951.Z.getUseSystemScreensharePicker()
+  } = (0, i.cj)([u.Z], () => ({
+    videoHook: u.Z.getVideoHook(),
+    experimentalSoundshare: u.Z.getExperimentalSoundshare(),
+    supportsExperimentalSoundshare: u.Z.supportsExperimentalSoundshare(),
+    supportsHookSoundshare: u.Z.supportsHookSoundshare(),
+    useSystemScreensharePicker: u.Z.getUseSystemScreensharePicker()
   }));
-  return (0, Chunk54381.jsxs)(Chunk921801.F, {
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-    children: [(0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK,
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.GmWk2E),
-        description: Chunk388032.intl.string(Chunk388032.t["Fj/xn1"]),
-        checked: module,
+  return (0, r.jsxs)(c.F, {
+    setting: f.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
+    children: [(0, r.jsx)(c.F, {
+      setting: f.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK,
+      children: (0, r.jsx)(o.rsf, {
+        label: p.intl.string(p.t.GmWk2E),
+        description: p.intl.string(p.t["Fj/xn1"]),
+        checked: e,
         onChange: e => s.Z.setVideoHook(e)
       })
-    }), require && Chunk248514 && (0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["4I0qzZ"]),
-        checked: exports,
+    }), n && a && (0, r.jsx)(c.F, {
+      setting: f.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
+      children: (0, r.jsx)(o.rsf, {
+        label: p.intl.string(p.t["4I0qzZ"]),
+        checked: t,
         onChange: e => s.Z.setExperimentalSoundshare(e)
       })
-    }), (0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.ie1mgY),
-        checked: Chunk579806,
+    }), (0, r.jsx)(c.F, {
+      setting: f.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
+      children: (0, r.jsx)(o.rsf, {
+        label: p.intl.string(p.t.ie1mgY),
+        checked: l,
         onChange: _
       })
     })]

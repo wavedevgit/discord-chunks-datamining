@@ -18,7 +18,7 @@ let S = (0, Chunk972959.H)(() => ({
 
 function c() {
   let t = S.getField("currentPlayingSound");
-  null == module || module.stop(), S.setState({
+  null == t || t.stop(), S.setState({
     currentPlayingSound: null
   })
 }

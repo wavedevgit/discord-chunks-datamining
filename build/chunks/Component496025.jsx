@@ -29,14 +29,14 @@ var Chunk54381 = require("./54381.js"),
 
 function T() {
   var e;
-  let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
-    [n, i] = Chunk473749.useState(exports.length > 0 ? exports[0].channelId : true),
+  let t = (0, c.Wu)([v.Z], () => v.Z.getSortedChannels()[1]),
+    [n, i] = r.useState(t.length > 0 ? t[0].channelId : true),
     {
       selectedChannel: l,
       options: m
-    } = (0, Chunk442837.cj)([Chunk592125.Z, Chunk594174.default, Chunk699516.Z], () => ({
-      selectedChannel: Chunk592125.Z.getChannel(require),
-      options: exports.map(e => {
+    } = (0, c.cj)([x.Z, g.default, b.Z], () => ({
+      selectedChannel: x.Z.getChannel(n),
+      options: t.map(e => {
         let t = x.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
@@ -44,25 +44,25 @@ function T() {
         }
       })
     })),
-    j = Chunk473749.useCallback(() => {
+    j = r.useCallback(() => {
       var e;
       if (null == l || !l.isPrivate()) return;
-      let t = (0, Chunk95015.x9)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
-      Chunk258732.Z.updatePrivateChannelRecipientFlags(l.id, exports)
+      let t = (0, o.x9)(null != (e = l.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+      h.Z.updatePrivateChannelRecipientFlags(l.id, t)
     }, [l]),
-    C = null != l && !!l.isPrivate() && (0, Chunk95015.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    C = null != l && !!l.isPrivate() && (0, o.yE)(null != (e = l.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)(u.Text, {
       variant: "text-md/semibold",
       children: "In-Game NUX Message for DMs"
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk769633.inGameNuxContainer,
-      children: [(0, Chunk54381.jsx)(Chunk668339.d, {
-        wrapperClassName: Chunk769633.search,
-        options: Chunk493683,
+    }), (0, a.jsxs)("div", {
+      className: S.inGameNuxContainer,
+      children: [(0, a.jsx)(d.d, {
+        wrapperClassName: S.search,
+        options: m,
         placeholder: "Select DM",
-        value: require,
-        onChange: Chunk120356,
+        value: n,
+        onChange: i,
         renderOptionPrefix: e => {
           if (null == e) return null;
           let t = x.Z.getChannel(e.value);
@@ -72,34 +72,34 @@ function T() {
             size: u.EFr.SIZE_16
           })
         },
-        popoutLayerContext: Chunk246992.O$
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        popoutLayerContext: y.O$
+      }), (0, a.jsx)(u.Button, {
         variant: "primary",
         size: "sm",
-        text: Chunk432877 ? "Clear NUX Flag" : "Set NUX Flag",
-        onClick: Chunk98357,
-        disabled: null == require
+        text: C ? "Clear NUX Flag" : "Set NUX Flag",
+        onClick: j,
+        disabled: null == n
       })]
     })]
   })
 }
 
 function O() {
-  let e = Chunk473749.useCallback(() => {
-    Chunk493683.Z.openPrivateChannel({
-      recipientIds: [Chunk37812.I]
+  let e = r.useCallback(() => {
+    m.Z.openPrivateChannel({
+      recipientIds: [_.I]
     })
   }, []);
-  return (0, Chunk54381.jsx)(Chunk481060.Button, {
+  return (0, a.jsx)(u.Button, {
     variant: "primary",
     size: "sm",
     text: "Open System DM",
-    onClick: module
+    onClick: e
   })
 }
 
 function N() {
-  let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
+  let e = (0, c.e7)([C.ZP], () => C.ZP.allByCategory(C.zU.MESSAGING), [], c.pF).map(e => {
     let [t, n, {
       label: r
     }] = e;
@@ -110,12 +110,12 @@ function N() {
       onChange: e => (0, j.Z)(t, e)
     }, t)
   });
-  return (0, Chunk54381.jsxs)("div", {
-    className: l()(Chunk663618.panel, Chunk769633.panel),
-    children: [module, (0, Chunk54381.jsx)("div", {
-      className: Chunk769633.divider
-    }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)("div", {
-      className: Chunk769633.divider
-    }), (0, Chunk54381.jsx)(O, {})]
+  return (0, a.jsxs)("div", {
+    className: l()(E.panel, S.panel),
+    children: [e, (0, a.jsx)("div", {
+      className: S.divider
+    }), (0, a.jsx)(T, {}), (0, a.jsx)("div", {
+      className: S.divider
+    }), (0, a.jsx)(O, {})]
   })
 }

@@ -194,10 +194,10 @@ class f extends Chunk81825.Z {
   canRedeemTrial() {
     let {
       enabled: e
-    } = Chunk770555.Z.getCurrentConfig({
+    } = a.Z.getCurrentConfig({
       location: "3a6d55_1"
     });
-    return this.paymentGateway === Chunk981631.gg$.ADYEN && this.type === Chunk981631.HeQ.CASH_APP ? module : !Chunk981631.H0J.has(this.type)
+    return this.paymentGateway === s.gg$.ADYEN && this.type === s.HeQ.CASH_APP ? e : !s.H0J.has(this.type)
   }
   constructor(e) {
     var t, n, r, i;

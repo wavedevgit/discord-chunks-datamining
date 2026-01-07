@@ -39,7 +39,7 @@ class a {
   }
   delay() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    this._timeout.start(this._delay, this._handler, module)
+    this._timeout.start(this._delay, this._handler, e)
   }
   cancel() {
     this._timeout.stop()

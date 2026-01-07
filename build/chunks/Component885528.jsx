@@ -159,10 +159,10 @@ let w = e => {
       })]
     })
   },
-  I = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+  I = () => (0, i.jsx)(r.Text, {
     variant: "text-md/normal",
     color: "text-muted",
-    children: Chunk388032.intl.string(Chunk388032.t["I2H0/E"])
+    children: A.intl.string(A.t["I2H0/E"])
   }),
   k = e => (0, i.jsx)(r.Text, {
     variant: "text-md/normal",

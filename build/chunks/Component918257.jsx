@@ -16,20 +16,20 @@ var Chunk906732 = require("./906732.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  let e = (0, Chunk242291.pI)(),
+  let e = (0, o.pI)(),
     {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)();
+    } = (0, i.ZP)();
 
   function n(n) {
     e = (0, l.A)(n), (0, a.xz)(e, t)
   }
-  return (0, Chunk54381.jsx)(Chunk674343.Z, {
-    description: Chunk388032.intl.format(Chunk388032.t.BPbGq7, {
-      helpCenterArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
+  return (0, r.jsx)(c.Z, {
+    description: d.intl.format(d.t.BPbGq7, {
+      helpCenterArticle: s.Z.getArticleURL(u.BhN.SOUNDBOARD)
     }),
-    label: Chunk388032.intl.string(Chunk388032.t.kbFsAD),
-    volume: module,
-    onVolumeChange: require
+    label: d.intl.string(d.t.kbFsAD),
+    volume: e,
+    onVolumeChange: n
   })
 }

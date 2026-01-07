@@ -9,8 +9,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk154784 = require("./154784.jsx"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.ON)(Chunk313789.n.CAMERA_BACKGROUND_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.lZTUPs)],
-  Component: () => (0, Chunk54381.jsx)(Chunk154784.Z, {
+  useSearchTerms: () => [r.intl.string(r.t.lZTUPs)],
+  Component: () => (0, i.jsx)(u.Z, {
     isRedesign: true
   })
 })

@@ -11,8 +11,8 @@ var Chunk787695 = require("./787695.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.ON)(Chunk313789.n.GIFT_QUEST_NOTICES_SETTING, {
   Component: Chunk387747.rX,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.JALI2K)],
-  usePredicate: () => (0, Chunk787695.Z)({
-    location: Chunk324805.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+  useSearchTerms: () => [a.intl.string(a.t.JALI2K)],
+  usePredicate: () => (0, i.Z)({
+    location: r.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   })
 })

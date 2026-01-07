@@ -10,20 +10,20 @@ var Chunk570140 = require("./570140.js"),
   Chunk998502 = require("./998502.js");
 
 function o() {
-  if (!(0, Chunk358085.isDesktop)()) throw Error("Attempted to observe candidate games on a non-desktop platform");
-  Chunk998502.ZP.setCandidateGamesCallback(e => {
+  if (!(0, i.isDesktop)()) throw Error("Attempted to observe candidate games on a non-desktop platform");
+  a.ZP.setCandidateGamesCallback(e => {
     r.Z.dispatch({
       type: "CANDIDATE_GAMES_CHANGE",
       games: e
     })
-  }), Chunk570140.Z.dispatch({
+  }), r.Z.dispatch({
     type: "GAME_DETECTION_WATCH_CANDIDATE_GAMES_START"
   })
 }
 
 function s() {
-  if (!(0, Chunk358085.isDesktop)()) throw Error("Attempted to stop observing candidate games on a non-desktop platform");
-  Chunk998502.ZP.clearCandidateGamesCallback(), Chunk570140.Z.dispatch({
+  if (!(0, i.isDesktop)()) throw Error("Attempted to stop observing candidate games on a non-desktop platform");
+  a.ZP.clearCandidateGamesCallback(), r.Z.dispatch({
     type: "GAME_DETECTION_WATCH_CANDIDATE_GAMES_STOP"
   })
 }

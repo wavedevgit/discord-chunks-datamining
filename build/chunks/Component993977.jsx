@@ -60,7 +60,7 @@ function v(e) {
           children: e.libraryApplication.getBranchedName(e.application)
         }), null != t ? (0, r.jsx)("div", {
           className: _.applicationSubText,
-          children: m.EOG[t]
+          children: h.EOG[t]
         }) : null]
       }), (0, r.jsx)(o.P3F, {
         className: _.restoreButton,
@@ -90,7 +90,7 @@ class y extends Chunk473749.PureComponent {
     u.Pe.updateSetting(e)
   }
   trackRestoreApplication(e, t) {
-    p.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, O({
+    p.default.track(h.rMx.APPLICATION_SETTINGS_UPDATED, O({
       hidden_enabled: t
     }, e.getAnalyticsData()))
   }
@@ -100,50 +100,50 @@ class y extends Chunk473749.PureComponent {
       installShortcutDesktop: t,
       installShortcutStartMenu: n
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk375951.body,
-      children: [(0, Chunk804739.Q)() ? (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    return (0, r.jsxs)("div", {
+      className: _.body,
+      children: [(0, f.Q)() ? (0, r.jsxs)(o.Kqy, {
         gap: 16,
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["9ID+Kh"]),
-          description: Chunk388032.intl.string(Chunk388032.t.vT61N0),
-          checked: exports,
+        children: [(0, r.jsx)(o.rsf, {
+          label: b.intl.string(b.t["9ID+Kh"]),
+          description: b.intl.string(b.t.vT61N0),
+          checked: t,
           onChange: this.handleToggleShortcutDesktop
-        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.vNpUMz),
-          description: Chunk388032.intl.string(Chunk388032.t.cpYp0H),
-          checked: require,
+        }), (0, r.jsx)(o.izJ, {}), (0, r.jsx)(o.rsf, {
+          label: b.intl.string(b.t.vNpUMz),
+          description: b.intl.string(b.t.cpYp0H),
+          checked: n,
           onChange: this.handleToggleShortcutStartMenu
-        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk34305.Z, {})]
-      }) : null, (0, Chunk54381.jsx)(v, {
+        }), (0, r.jsx)(o.izJ, {}), (0, r.jsx)(m.Z, {})]
+      }) : null, (0, r.jsx)(v, {
         restoreApplication: this.handleRestoreHiddenLibraryApplication,
-        applicationViewItems: module
+        applicationViewItems: e
       })]
     })
   }
   render() {
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk957657.Z, {
-        currentRoute: Chunk981631.Z5c.APPLICATION_LIBRARY_SETTINGS
-      }), (0, Chunk54381.jsx)(Chunk481060.w0Z, {
-        className: Chunk375951.scroller,
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(g.Z, {
+        currentRoute: h.Z5c.APPLICATION_LIBRARY_SETTINGS
+      }), (0, r.jsx)(o.w0Z, {
+        className: _.scroller,
         children: this.renderBody()
       })]
     })
   }
   constructor(...e) {
     super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
-      let t = l.x9(e.getFlags(), m.eHb.HIDDEN);
-      s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, l.yE(t, m.eHb.HIDDEN))
+      let t = l.x9(e.getFlags(), h.eHb.HIDDEN);
+      s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, l.yE(t, h.eHb.HIDDEN))
     })
   }
 }
 
 function I() {
   let e = {
-    installShortcutDesktop: Chunk695346.Xc.useSetting(),
-    installShortcutStartMenu: Chunk695346.Pe.useSetting(),
-    hiddenLibraryApplicationViewItems: (0, Chunk442837.e7)([Chunk490983.Z], () => Chunk490983.Z.hiddenLibraryApplicationViewItems)
+    installShortcutDesktop: u.Xc.useSetting(),
+    installShortcutStartMenu: u.Pe.useSetting(),
+    hiddenLibraryApplicationViewItems: (0, a.e7)([d.Z], () => d.Z.hiddenLibraryApplicationViewItems)
   };
-  return (0, Chunk54381.jsx)(y, O({}, module))
+  return (0, r.jsx)(y, O({}, e))
 }

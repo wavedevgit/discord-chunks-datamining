@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
 let a = "popover-portal";
 
 function o() {
-  return (0, Chunk54381.jsx)("div", {
+  return (0, r.jsx)("div", {
     id: a
   })
 }

@@ -15,13 +15,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
-  let e = Chunk695346.qF.useSetting();
-  return (0, Chunk54381.jsx)(Chunk921801.F, {
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
-    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["3Ppr1h"]),
-      description: Chunk388032.intl.string(Chunk388032.t.WNbX4O),
-      checked: module,
+  let e = s.qF.useSetting();
+  return (0, r.jsx)(a.F, {
+    setting: l.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
+    children: (0, r.jsx)(i.rsf, {
+      label: u.intl.string(u.t["3Ppr1h"]),
+      description: u.intl.string(u.t.WNbX4O),
+      checked: e,
       onChange: e => {
         s.qF.updateSetting(e), o.default.track(c.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e

@@ -31,8 +31,8 @@ let c = e => {
   u = 2592e6,
   d = e => null != e && Date.now() - e.createdAt.getTime() > u,
   f = () => {
-    let e = Chunk835913.E.now();
-    Chunk675478.hW.updateAsync("userContent", t => {
+    let e = a.E.now();
+    o.hW.updateAsync("userContent", t => {
       t.safetyUserSentimentNoticeDismissedAt = e
-    }, Chunk675478.fy.INFREQUENT_USER_ACTION)
+    }, o.fy.INFREQUENT_USER_ACTION)
   }

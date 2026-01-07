@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function i() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "ACTIVITY_SYNC_STOP"
   })
 }

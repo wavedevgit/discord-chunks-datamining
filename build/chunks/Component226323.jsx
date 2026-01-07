@@ -67,27 +67,27 @@ let x = {
     serverDeaf: {
       icon: Chunk481060.Vm4,
       colorize: true,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.btxSdB)
+      getStatus: () => T.intl.string(T.t.btxSdB)
     },
     serverMute: {
       icon: Chunk481060.v0G,
       colorize: true,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.uLddbQ)
+      getStatus: () => T.intl.string(T.t.uLddbQ)
     },
     deaf: {
       icon: Chunk481060.wE8,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.NjmiOL)
+      getStatus: () => T.intl.string(T.t.NjmiOL)
     },
     mute: {
       icon: Chunk481060.nRN,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.tjtv3P)
+      getStatus: () => T.intl.string(T.t.tjtv3P)
     },
     localMute: {
       icon: Chunk481060.v0G,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t["9F+xJU"])
+      getStatus: () => T.intl.string(T.t["9F+xJU"])
     }
   };
 
@@ -96,7 +96,7 @@ function Z(e) {
   let p = i.useRef(null),
     {
       parentAnalyticsLocation: f
-    } = (0, h.ZP)(),
+    } = (0, m.ZP)(),
     {
       channel: v,
       user: Z,
@@ -171,10 +171,10 @@ function Z(e) {
     })
   }
   let q = (0, o.e7)([I.Z], () => I.Z.getVoiceVolume(Z.id)),
-    K = (0, m._)({
+    K = (0, h._)({
       isSpeaking: U,
       voiceDb: q,
-      spreadDirection: m.h.INSET_ONLY,
+      spreadDirection: h.h.INSET_ONLY,
       maxInnerSpreadRadius: 5
     });
   return (0, r.jsx)(O.Z, {
@@ -222,8 +222,8 @@ function w(e) {
     channel: n,
     className: l
   } = e, [u, d] = i.useState(false), g = (0, o.e7)([v.default], () => v.default.getId()), {
-    containerRef: h,
-    maxVisibleAvatars: m
+    containerRef: m,
+    maxVisibleAvatars: h
   } = function(e) {
     let [t, n] = i.useState(7), r = (0, f.Z)(() => {
       let t = null == l ? true : l.current;
@@ -245,7 +245,7 @@ function w(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, g, m), E = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(s.u, {
+  }(t, g, h), E = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(s.u, {
     text: O,
     ariaHidden: true,
     children: (0, r.jsx)(c.hU, {
@@ -262,7 +262,7 @@ function w(e) {
     className: a()(N.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
-      ref: h,
+      ref: m,
       className: a()(N.voiceUsers, !u && N.collapsed),
       role: "group",
       "aria-label": T.intl.string(T.t["/ZgaVU"]),

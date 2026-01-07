@@ -30,73 +30,73 @@ let E = () => {
     churnUserDiscountOffer: O,
     discountedPrice: v,
     fullPrice: S
-  } = (0, Chunk594135.a)(), [I, T] = (0, Chunk473749.useState)(false), [C, A] = (0, Chunk473749.useState)(false), N = async () => {
+  } = (0, d.a)(), [I, T] = (0, i.useState)(false), [C, A] = (0, i.useState)(false), N = async () => {
     if (null === O) return void A(true);
     T(true), A(false);
     try {
-      await y(), b(Chunk45474.R.DISCOUNT_APPLIED)
+      await y(), b(u.R.DISCOUNT_APPLIED)
     } catch (e) {
       A(true), T(false)
     }
   };
-  if (null === O || null === v) return (0, Chunk54381.jsx)("div", {
-    className: Chunk201007.spinnerContainer,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  if (null === O || null === v) return (0, r.jsx)("div", {
+    className: m.spinnerContainer,
+    children: (0, r.jsx)(o.$jN, {})
   });
-  let P = require === Chunk474936.PremiumTypes.TIER_2,
+  let P = n === f.PremiumTypes.TIER_2,
     R = [{
-      text: Chunk388032.intl.string(Chunk388032.t.zl7LZp),
-      onClick: () => exports(),
+      text: _.intl.string(_.t.zl7LZp),
+      onClick: () => t(),
       variant: "secondary",
       disabled: I
     }, {
-      text: Chunk388032.intl.string(Chunk388032.t.CKSuZJ),
+      text: _.intl.string(_.t.CKSuZJ),
       onClick: () => N(),
       variant: "primary",
-      icon: Chunk481060.SrA,
+      icon: o.SrA,
       loading: I,
       disabled: I
     }];
-  return (0, Chunk54381.jsxs)(Chunk793030.ExpressiveModal, {
+  return (0, r.jsxs)(a.ExpressiveModal, {
     graphic: {
       type: "image",
-      src: P ? Chunk942257.Z : Chunk997892
+      src: P ? g.Z : h
     },
     gradientColor: P ? "nitro-pink" : "nitro-green",
-    transitionState: module,
-    title: E.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.string(Chunk388032.t["2Otzti"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu4, {
+    transitionState: e,
+    title: E.status === p.O0b.CANCELED ? _.intl.string(_.t["2Otzti"]) : "".concat(_.intl.format(_.t.q9Vxu4, {
       percent: O.discount.amount
     })),
     actions: R,
-    onClose: async () => exports(),
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk201007.offerDetailContainer,
-      children: (0, Chunk54381.jsx)(Chunk10508.o, {
+    onClose: async () => t(),
+    children: [(0, r.jsx)("div", {
+      className: m.offerDetailContainer,
+      children: (0, r.jsx)(c.o, {
         userDiscountOffer: O,
-        offerState: Chunk10508.w.CONFIRMING
+        offerState: c.w.CONFIRMING
       })
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk201007.legalContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsx)("div", {
+      className: m.legalContainer,
+      children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-subtle",
-        children: E.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysK, {
+        children: E.status === p.O0b.CANCELED ? _.intl.format(_.t.mY3ysK, {
           discountedPrice: v,
-          billingPeriod: (0, Chunk74538.JP)(O.discount.user_usage_limit_interval),
+          billingPeriod: (0, l.JP)(O.discount.user_usage_limit_interval),
           numMonths: O.discount.user_usage_limit,
           fullPrice: S,
-          paidURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
-        }) : Chunk388032.intl.format(Chunk388032.t.hrGTjG, {
+          paidURL: s.Z.getArticleURL(p.BhN.PAID_TERMS)
+        }) : _.intl.format(_.t.hrGTjG, {
           discountedPrice: v,
-          billingPeriod: (0, Chunk74538.JP)(O.discount.user_usage_limit_interval),
+          billingPeriod: (0, l.JP)(O.discount.user_usage_limit_interval),
           numMonths: O.discount.user_usage_limit,
           fullPrice: S,
-          helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
+          helpdeskArticle: s.Z.getArticleURL(p.BhN.PAID_TERMS)
         })
       })
-    }), C ? (0, Chunk54381.jsx)(Chunk793030.M14, {
+    }), C ? (0, r.jsx)(a.M14, {
       type: "critical",
-      children: Chunk388032.intl.string(Chunk388032.t["5mlOCW"])
+      children: _.intl.string(_.t["5mlOCW"])
     }) : null]
   })
 }

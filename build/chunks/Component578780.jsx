@@ -68,10 +68,10 @@ let x = [{
   }))
 }, {
   key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
-  renderStep: () => (0, Chunk54381.jsx)(Chunk380898.Z, {})
+  renderStep: () => (0, r.jsx)(d.Z, {})
 }, {
   key: Chunk409813.h8.AWAITING_AUTHENTICATION,
-  renderStep: () => (0, Chunk54381.jsx)(Chunk793541.Z, {})
+  renderStep: () => (0, r.jsx)(b.Z, {})
 }, {
   key: Chunk409813.h8.REVIEW,
   renderStep: e => (0, r.jsx)(p.lZ, v({}, e))

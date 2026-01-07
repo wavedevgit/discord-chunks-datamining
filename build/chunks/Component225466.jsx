@@ -18,19 +18,19 @@ var Chunk54381 = require("./54381.js"),
 let _ = 1e3;
 
 function m() {
-  let e = (0, Chunk473749.useContext)(Chunk324060.Q),
-    t = (0, Chunk481060.dQu)(module.primaryColor).hex(),
-    n = (0, Chunk473749.useRef)(null),
+  let e = (0, i.useContext)(c.Q),
+    t = (0, s.dQu)(e.primaryColor).hex(),
+    n = (0, i.useRef)(null),
     {
       volume: m,
       isMuted: h
-    } = (0, Chunk442837.cj)([Chunk5888.Z], () => ({
-      volume: Chunk5888.Z.volume,
-      isMuted: Chunk5888.Z.isMuted
+    } = (0, o.cj)([u.Z], () => ({
+      volume: u.Z.volume,
+      isMuted: u.Z.isMuted
     })),
-    [g, E] = (0, Chunk473749.useState)(false),
-    [b, y] = (0, Chunk473749.useState)(false),
-    O = (0, Chunk473749.useRef)(false),
+    [g, E] = (0, i.useState)(false),
+    [b, y] = (0, i.useState)(false),
+    O = (0, i.useRef)(false),
     v = h ? 0 : 100 * m,
     S = g || b,
     I = e => {
@@ -38,48 +38,48 @@ function m() {
         y(false)
       }, _)
     };
-  (0, Chunk473749.useEffect)(() => {
-    null != require.current && (require.current.volume = m)
+  (0, i.useEffect)(() => {
+    null != n.current && (n.current.volume = m)
   }, [m]);
-  let T = h ? Chunk481060.OyP : v > 90 ? Chunk481060.gj8 : Chunk481060.X2j;
-  return (0, Chunk54381.jsxs)("div", {
+  let T = h ? s.OyP : v > 90 ? s.gj8 : s.X2j;
+  return (0, r.jsxs)("div", {
     onMouseEnter: () => E(true),
     onMouseLeave: () => E(false),
-    className: Chunk730307.container,
-    children: [(0, Chunk54381.jsx)(Chunk481060.P3F, {
-      onClick: Chunk515970.$t,
-      className: Chunk756916.closeButton,
+    className: d.container,
+    children: [(0, r.jsx)(s.P3F, {
+      onClick: l.$t,
+      className: f.closeButton,
       style: {
-        color: exports,
+        color: t,
         borderLeft: S ? 0 : true
       },
-      children: (0, Chunk54381.jsx)(T, {
-        colorClass: Chunk554445.iconColor,
-        color: exports
+      children: (0, r.jsx)(T, {
+        colorClass: p.iconColor,
+        color: t
       })
-    }), S ? (0, Chunk54381.jsx)("div", {
-      className: Chunk730307.sliderContainer,
+    }), S ? (0, r.jsx)("div", {
+      className: d.sliderContainer,
       style: {
-        borderColor: exports
+        borderColor: t
       },
-      children: (0, Chunk54381.jsx)(Chunk481060.iRW, {
+      children: (0, r.jsx)(s.iRW, {
         initialValue: v,
         minValue: 0,
         maxValue: 100,
         asValueChanges: I,
-        grabberClassName: Chunk730307.grabber,
+        grabberClassName: d.grabber,
         fillStyles: {
-          backgroundColor: exports,
+          backgroundColor: t,
           transition: "background-color 0.5s ease"
         }
       })
-    }) : null, (0, Chunk54381.jsx)("audio", {
-      ref: require,
+    }) : null, (0, r.jsx)("audio", {
+      ref: n,
       autoPlay: true,
       loop: true,
       muted: h,
-      children: (0, Chunk54381.jsx)("source", {
-        src: Chunk221233.Z
+      children: (0, r.jsx)("source", {
+        src: a.Z
       })
     })]
   })

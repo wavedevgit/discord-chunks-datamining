@@ -27,8 +27,8 @@ function s() {
 Object.create && (r.prototype = Object.create(null), new r().__proto__ || (n = false)), s.prototype.eventNames = function() {
   var e, r, i = [];
   if (0 === this._eventsCount) return i;
-  for (r in e = this._events) t.call(module, r) && i.push(n ? r.slice(1) : r);
-  return Object.getOwnPropertySymbols ? i.concat(Object.getOwnPropertySymbols(module)) : i
+  for (r in e = this._events) t.call(e, r) && i.push(n ? r.slice(1) : r);
+  return Object.getOwnPropertySymbols ? i.concat(Object.getOwnPropertySymbols(e)) : i
 }, s.prototype.listeners = function(e) {
   var t = n ? n + e : e,
     r = this._events[t];

@@ -21,19 +21,19 @@ function u(e, t, n) {
 }
 async function d() {
   var e;
-  if ((null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.app) ? true : module.getPreferredSystemLanguages) != null) {
-    let e = await Chunk579806.Z.app.getPreferredSystemLanguages().then(e => e[0]);
-    if (null != module && "" !== module) return module
+  if ((null === s.Z || true === s.Z || null == (e = s.Z.app) ? true : e.getPreferredSystemLanguages) != null) {
+    let e = await s.Z.app.getPreferredSystemLanguages().then(e => e[0]);
+    if (null != e && "" !== e) return e
   }
-  return Chunk388032.systemLocale
+  return c.systemLocale
 }
 let f = Chunk388032.intl.currentLocale,
   p = Chunk388032.systemLocale;
 
 function _() {
   var e, t;
-  let n = null == (t = Chunk581883.Z.settings.localization) || null == (e = exports.locale) ? true : module.value;
-  return null != require && "" !== require && require !== f && (f = require, (0, Chunk241601._2)(f), true)
+  let n = null == (t = l.Z.settings.localization) || null == (e = t.locale) ? true : e.value;
+  return null != n && "" !== n && n !== f && (f = n, (0, o._2)(f), true)
 }
 
 function m(e) {
@@ -44,7 +44,7 @@ d().then(e => {
 });
 class h extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk581883.Z), _(), (0, Chunk241601._2)(f)
+    this.waitFor(l.Z), _(), (0, o._2)(f)
   }
   get locale() {
     return f

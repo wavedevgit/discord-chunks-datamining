@@ -81,15 +81,15 @@ class E extends(r = Chunk473749.PureComponent) {
       rendererSettings: s
     } = this.props, [l, {
       default: c
-    }] = await Promise.all([module(), Promise.resolve().then(require.t.bind(require, 500923, 23))]);
-    null != this.animationRef && (this.animation = Chunk213305.loadAnimation({
+    }] = await Promise.all([e(), Promise.resolve().then(n.t.bind(n, 500923, 23))]);
+    null != this.animationRef && (this.animation = c.loadAnimation({
       container: this.animationRef,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: Chunk150677,
+      animationData: l,
       rendererSettings: s
-    }), this.animation.addEventListener("loopComplete", this.handleLoopComplete), this.animation.addEventListener("complete", this.handleComplete), this.animation.addEventListener("enterFrame", this.handleEnterFrame), this.playScene(exports), (r && !Chunk473749 || Chunk54381 || Chunk120356) && this.animation.pause())
+    }), this.animation.addEventListener("loopComplete", this.handleLoopComplete), this.animation.addEventListener("complete", this.handleComplete), this.animation.addEventListener("enterFrame", this.handleEnterFrame), this.playScene(t), (r && !a || i || o) && this.animation.pause())
   }
   componentWillUnmount() {
     this.isUnmounted = true, null != this.animation && (this.animation.destroy(), this.animation = true)
@@ -109,7 +109,7 @@ class E extends(r = Chunk473749.PureComponent) {
     let {
       sceneSegments: e
     } = this.props;
-    returntrue === module[this.currentScene].shouldForcePlayAfter
+    returntrue === e[this.currentScene].shouldForcePlayAfter
   }
   playScene(e) {
     if (this.isUnmounted) return;
@@ -124,9 +124,9 @@ class E extends(r = Chunk473749.PureComponent) {
     }
   }
   render() {
-    return (0, Chunk54381.jsx)("div", {
+    return (0, i.jsx)("div", {
       ref: this.handleSetRef,
-      className: s()(this.props.className, Chunk200981.wrapper)
+      className: s()(this.props.className, d.wrapper)
     })
   }
   constructor(...e) {

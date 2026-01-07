@@ -10,12 +10,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk351402 = require("./351402.js");
 
 function s() {
-  let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), l = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk742280.M.EEA_COUNTRIES.has(Chunk351402.Z.ipCountryCodeWithFallback));
+  let [e, t] = r.useState(false), [n, s] = r.useState(false), l = (0, a.e7)([o.Z], () => i.M.EEA_COUNTRIES.has(o.Z.ipCountryCodeWithFallback));
   return {
-    hasViewedPurchaseTerms: module,
-    setHasViewedPurchaseTerms: exports,
+    hasViewedPurchaseTerms: e,
+    setHasViewedPurchaseTerms: t,
     showWithdrawalWaiver: l,
-    hasAcceptedWithdrawalWaiver: !l || require,
+    hasAcceptedWithdrawalWaiver: !l || n,
     setHasAcceptedWithdrawalWaiver: s
   }
 }

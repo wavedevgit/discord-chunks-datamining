@@ -84,11 +84,11 @@ let S = async (e, t) => {
   }), n
 }, I = async function() {
   let {
-    locale: e = Chunk706454.default.locale
+    locale: e = c.default.locale
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  if (Chunk926491.Z.isFetchingStickerPacks || Chunk926491.Z.hasLoadedStickerPacks) return;
-  Chunk570140.Z.wait(() => {
-    Chunk570140.Z.dispatch({
+  if (_.Z.isFetchingStickerPacks || _.Z.hasLoadedStickerPacks) return;
+  o.Z.wait(() => {
+    o.Z.dispatch({
       type: "STICKER_PACKS_FETCH_START"
     })
   });
@@ -96,16 +96,16 @@ let S = async (e, t) => {
     body: {
       sticker_packs: t
     }
-  } = await Chunk544891.tn.get({
-    url: Chunk981631.ANM.STICKER_PACKS,
+  } = await a.tn.get({
+    url: h.ANM.STICKER_PACKS,
     query: {
-      locale: module
+      locale: e
     },
     rejectWithError: false
   });
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "STICKER_PACKS_FETCH_SUCCESS",
-    packs: exports
+    packs: t
   })
 }, T = async e => {
   let {

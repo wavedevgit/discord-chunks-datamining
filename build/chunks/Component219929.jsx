@@ -99,11 +99,11 @@ class p extends(r = Chunk473749.PureComponent) {
       className: n,
       size: r
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: s()(r, Chunk166651[exports], require, {
-        [Chunk166651.flipped]: module
+    return (0, i.jsx)("div", {
+      className: s()(r, l[t], n, {
+        [l.flipped]: e
       }),
-      children: exports
+      children: t
     })
   }
 }

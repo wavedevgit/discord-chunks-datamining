@@ -22,10 +22,10 @@ function c(e, t, n) {
 let u = null;
 
 function d() {
-  if (!(0, Chunk668757.X6)()) return;
+  if (!(0, r.X6)()) return;
   let e = {};
-  for (let t of Chunk894276.Re) module[exports.id] = exports.getCurrentConfig();
-  null != u && (0, Chunk902704.Z)(u, module) || ((0, Chunk668757.Md)().flushToCache(JSON.stringify(module)), u = module)
+  for (let t of l.Re) e[t.id] = t.getCurrentConfig();
+  null != u && (0, i.Z)(u, e) || ((0, r.Md)().flushToCache(JSON.stringify(e)), u = e)
 }
 
 function f(e) {
@@ -47,7 +47,7 @@ function f(e) {
 }
 
 function p() {
-  Chunk894276.Re.forEach(e => {
+  l.Re.forEach(e => {
     e.setExperiment(f(e))
   })
 }

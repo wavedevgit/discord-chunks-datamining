@@ -22,7 +22,7 @@ let s = new Chunk579092.Yd("LibDaveManager"),
   };
 
 function f() {
-  return ("Firefox" !== i().name || !(Chunk436620.Zb < 142)) && Chunk436620.WS && "function" == typeof RTCRtpSender && ("transform" in RTCRtpSender.prototype || "createEncodedStreams" in RTCRtpSender.prototype)
+  return ("Firefox" !== i().name || !(o.Zb < 142)) && o.WS && "function" == typeof RTCRtpSender && ("transform" in RTCRtpSender.prototype || "createEncodedStreams" in RTCRtpSender.prototype)
 }
 
 function p() {

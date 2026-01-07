@@ -88,10 +88,10 @@ function b(e) {
 function y() {
   let {
     showDeviceSelectionImprovements: e
-  } = (0, Chunk568001.M)({
+  } = (0, f.M)({
     location: "getDefaultDevicePrefix"
   });
-  return module ? (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.n4dQ2c) : (0, Chunk358085.isMac)() ? Chunk388032.intl.string(Chunk388032.t.aYrsiB) : Chunk388032.intl.string(Chunk388032.t.Q3YKwS) : Chunk388032.intl.string(Chunk388032.t.bBvAEH)
+  return e ? (0, u.isWindows)() ? _.intl.string(_.t.n4dQ2c) : (0, u.isMac)() ? _.intl.string(_.t.aYrsiB) : _.intl.string(_.t.Q3YKwS) : _.intl.string(_.t.bBvAEH)
 }
 
 function O(e, t) {

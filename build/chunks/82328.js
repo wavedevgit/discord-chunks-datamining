@@ -29,7 +29,7 @@ class r {
   static getAppVersion() {
     try {
       var e;
-      return (e = "483489", true !== module) ? module : "unknown"
+      return (e = "483493", true !== e) ? e : "unknown"
     } catch (e) {
       return "unknown"
     }
@@ -37,7 +37,7 @@ class r {
   static getBuildChannel() {
     try {
       var e, t;
-      return null != (t = null == (e = window.GLOBAL_ENV) ? true : module.RELEASE_CHANNEL) ? exports : "stable"
+      return null != (t = null == (e = window.GLOBAL_ENV) ? true : e.RELEASE_CHANNEL) ? t : "stable"
     } catch (e) {
       return "stable"
     }

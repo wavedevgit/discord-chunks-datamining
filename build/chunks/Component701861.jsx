@@ -63,7 +63,7 @@ function A(e) {
       applicationId: l ? n : null,
       location: "Friends"
     })
-  }, [n, l, t.id]), h = i.useCallback(() => {
+  }, [n, l, t.id]), m = i.useCallback(() => {
     let e = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
     c.Z.show({
       title: j.intl.formatToPlainString(j.t.fPLvZd, {
@@ -77,13 +77,13 @@ function A(e) {
       cancelText: j.intl.string(j.t["ETE/oC"]),
       onConfirm: g
     })
-  }, [g, l, t]), m = (0, o.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), _ = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
+  }, [g, l, t]), h = (0, o.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), _ = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": j.intl.string(j.t.liqwPJ),
     onClose: d.Zy,
     onSelect: a,
-    children: [!_ && m ? (0, r.jsx)(s.sNh, {
+    children: [!_ && h ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
       label: j.intl.string(j.t.oCqlGG),
       action: f
@@ -94,7 +94,7 @@ function A(e) {
     }), (0, r.jsx)(s.sNh, {
       id: "remove-friend",
       label: v,
-      action: h,
+      action: m,
       color: "danger"
     })]
   })
@@ -117,29 +117,29 @@ class Z extends Chunk473749.PureComponent {
       isGameRelationship: o,
       giftIntentType: c,
       hasFriendAnniversarySection: u,
-      sectionIndex: h
+      sectionIndex: m
     } = this.props, {
-      isActiveRow: m
+      isActiveRow: h
     } = this.state;
-    return (0, Chunk522558.i)(Chunk100527.Z.FRIENDS_LIST) && Chunk668781 === Chunk474936.hX.FRIEND_ANNIVERSARY && Chunk493683 && 0 === Chunk703656 ? (0, Chunk54381.jsx)(Chunk762500.Z, {
+    return (0, f.i)(p.Z.FRIENDS_LIST) && c === T.hX.FRIEND_ANNIVERSARY && u && 0 === m ? (0, r.jsx)(g.Z, {
       ref: this.peopleListItemRef,
-      isFocused: exports,
-      isActive: Chunk592125,
-      recipientUser: module,
-      onOtherHover: () => Chunk592125 ? null : (0, Chunk239091.Zy)(),
+      isFocused: t,
+      isActive: h,
+      recipientUser: e,
+      onOtherHover: () => h ? null : (0, d.Zy)(),
       onClick: this.handleOpenPrivateChannel,
-      giftIntentType: Chunk668781,
-      status: Chunk392711,
-      activities: require,
-      applicationStream: Chunk473749,
+      giftIntentType: c,
+      status: l,
+      activities: n,
+      applicationStream: i,
       isMobile: a,
-      isGameRelationship: Chunk442837
-    }) : (0, Chunk54381.jsx)(Chunk417183.Z, {
+      isGameRelationship: o
+    }) : (0, r.jsx)(y.Z, {
       ref: this.peopleListItemRef,
-      isFocused: exports,
-      isActive: Chunk592125,
-      user: module,
-      onOtherHover: () => Chunk592125 ? null : (0, Chunk239091.Zy)(),
+      isFocused: t,
+      isActive: h,
+      user: e,
+      onOtherHover: () => h ? null : (0, d.Zy)(),
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
         className: P.listItemContents,
@@ -182,8 +182,8 @@ class Z extends Chunk473749.PureComponent {
         user: t
       } = this.props;
       e.stopPropagation();
-      let n = a().find(m.Z.getMutablePrivateChannels(), e => e.type === S.d4z.DM && e.getRecipientId() === t.id);
-      null != n ? (0, h.uL)(S.Z5c.CHANNEL(S.ME, n.id)) : u.Z.openPrivateChannel({
+      let n = a().find(h.Z.getMutablePrivateChannels(), e => e.type === S.d4z.DM && e.getRecipientId() === t.id);
+      null != n ? (0, m.uL)(S.Z5c.CHANNEL(S.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })
     }), x(this, "handleOpenActionsMenu", e => {

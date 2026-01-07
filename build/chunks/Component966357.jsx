@@ -16,26 +16,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-    t = null == module ? true : module.id,
-    n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProfileError()),
-    f = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
-    m = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
-    b = Chunk473749.useMemo(() => (null == require ? true : require.status) === 429 ? Chunk388032.intl.string(Chunk551199.default["bFRS/s"]) : null == require ? true : require.getAnyErrorMessage(), [require]),
-    p = Chunk473749.useCallback(() => {
-      if (null == module || null == f) return;
+  let e = (0, l.e7)([d.Z], () => d.Z.getGuild()),
+    t = null == e ? true : e.id,
+    n = (0, l.e7)([d.Z], () => d.Z.getProfileError()),
+    f = (0, l.e7)([d.Z], () => d.Z.getGuildProfile()),
+    m = (0, l.e7)([o.Z], () => o.Z.getIsUpdating(t)),
+    b = i.useMemo(() => (null == n ? true : n.status) === 429 ? g.intl.string(u.default["bFRS/s"]) : null == n ? true : n.getAnyErrorMessage(), [n]),
+    p = i.useCallback(() => {
+      if (null == e || null == f) return;
       let t = {
         tag: f.tag,
         badge: f.badge,
         badgeColorPrimary: f.badgeColorPrimary,
         badgeColorSecondary: f.badgeColorSecondary
       };
-      (0, Chunk699553.pV)(module.id, exports)
-    }, [module, f]),
-    h = Chunk473749.useCallback(() => {
-      null != exports && Chunk434404.Z.init(exports)
-    }, [exports]);
-  return (0, Chunk54381.jsx)(Chunk796027.Z, {
+      (0, s.pV)(e.id, t)
+    }, [e, f]),
+    h = i.useCallback(() => {
+      null != t && c.Z.init(t)
+    }, [t]);
+  return (0, r.jsx)(a.Z, {
     submitting: m,
     errorMessage: b,
     onSave: p,

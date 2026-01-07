@@ -43,7 +43,7 @@ let y = 4,
 
 function P() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0;
-  return Math.random() * (module + 1) * O
+  return Math.random() * (e + 1) * O
 }
 
 function R(e, t) {
@@ -74,19 +74,19 @@ function D(e) {
 
 function x() {
   var e;
-  let t = null != (e = C.get(v)) ? module : 0;
-  if (exports > 0 && exports <= y || (D(v), !w(v))) return;
-  let n = Chunk146282.Z.getFeed(v);
-  if ((null == require ? true : require.refresh_stale_inbox_after_ms) != null && null == A) return;
-  let r = (null == require ? true : require.expired_at) == null ? 0 : new Date(require.expired_at).getTime() - Date.now(),
-    a = Math.max(0, null == A ? 0 : new Date(A).getTime() - Date.now(), Chunk392711) + (exports > 0 ? P() : 0);
+  let t = null != (e = C.get(v)) ? e : 0;
+  if (t > 0 && t <= y || (D(v), !w(v))) return;
+  let n = h.Z.getFeed(v);
+  if ((null == n ? true : n.refresh_stale_inbox_after_ms) != null && null == A) return;
+  let r = (null == n ? true : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
+    a = Math.max(0, null == A ? 0 : new Date(A).getTime() - Date.now(), r) + (t > 0 ? P() : 0);
   R(v, {
     loading: false,
-    nextFetchDate: new Date(Date.now() + Chunk570140)
+    nextFetchDate: new Date(Date.now() + a)
   }), I.set(v, setTimeout(() => L({
     feedId: v,
-    feature: Chunk126313.L.INBOX
-  }), Chunk570140))
+    feature: i.L.INBOX
+  }), a))
 }
 async function L(e) {
   let {
@@ -171,8 +171,8 @@ function Z(e) {
 
 function F() {
   L({
-    feedId: Chunk206583.YN.GLOBAL_FEED,
-    feature: Chunk126313.L.GAME_PROFILE
+    feedId: g.YN.GLOBAL_FEED,
+    feature: i.L.GAME_PROFILE
   })
 }
 class B extends Chunk147913.Z {

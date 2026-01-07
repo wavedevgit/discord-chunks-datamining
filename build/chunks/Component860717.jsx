@@ -346,18 +346,18 @@ function q(e) {
 
 function Y() {
   let e = function() {
-      let e = Chunk473749.useContext(Q);
-      if (null == module) throw Error("ApplicationWidgetContext provider not found");
-      return module
+      let e = i.useContext(Q);
+      if (null == e) throw Error("ApplicationWidgetContext provider not found");
+      return e
     }(),
     {
       game: t
-    } = J(module.widget);
-  return null == exports ? null : (0, Chunk54381.jsx)(Chunk919498.F, {
-    className: Chunk440653.socialProof,
-    applicationId: exports.id,
-    guildId: module.guildId,
-    channelId: module.channelId
+    } = J(e.widget);
+  return null == t ? null : (0, r.jsx)(D.F, {
+    className: N.socialProof,
+    applicationId: t.id,
+    guildId: e.guildId,
+    channelId: e.channelId
   })
 }
 

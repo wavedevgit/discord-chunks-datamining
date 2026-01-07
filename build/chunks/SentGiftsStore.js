@@ -41,7 +41,7 @@ class c extends(r = Chunk442837.ZP.PersistedStore) {
   }
   cleanupExpiredGifts() {
     let e = new Date;
-    for (let [t, n] of Object.entries(s.sentGifts)) new Date(require.expiresAt) < module && delete s.sentGifts[exports]
+    for (let [t, n] of Object.entries(s.sentGifts)) new Date(n.expiresAt) < e && delete s.sentGifts[t]
   }
 }
 

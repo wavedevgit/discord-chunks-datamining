@@ -133,10 +133,10 @@ function k() {
   let {
     defaultStats: n,
     streamStats: i
-  } = (0, Chunk442837.e7)([Chunk226961.ZP], () => ({
-    defaultStats: Chunk226961.ZP.getAllStats(Chunk65154.Yn.DEFAULT),
-    streamStats: Chunk226961.ZP.getAllStats(Chunk65154.Yn.STREAM)
-  }), [], Chunk442837.pF), l = (0, Chunk442837.e7)([Chunk19780.Z, Chunk592125.Z], () => Chunk592125.Z.getChannel(Chunk19780.Z.getChannelId())), m = null == (e = require.concat(Chunk392711).find(e => null != e.screenshare)) ? true : module.screenshare, y = null == (t = Chunk392711.find(e => null != e.clips)) ? true : exports.clips, E = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), b = (0, Chunk984802.Ll)(), D = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.getSection()), j = function(e) {
+  } = (0, o.e7)([v.ZP], () => ({
+    defaultStats: v.ZP.getAllStats(S.Yn.DEFAULT),
+    streamStats: v.ZP.getAllStats(S.Yn.STREAM)
+  }), [], o.pF), l = (0, o.e7)([g.Z, f.Z], () => f.Z.getChannel(g.Z.getChannelId())), m = null == (e = n.concat(i).find(e => null != e.screenshare)) ? true : e.screenshare, y = null == (t = i.find(e => null != e.clips)) ? true : t.clips, E = (0, o.e7)([h.Z], () => h.Z.theme), b = (0, p.Ll)(), D = (0, o.e7)([v.ZP], () => v.ZP.getSection()), j = function(e) {
     let {
       defaultStats: t,
       streamStats: n,
@@ -180,21 +180,21 @@ function k() {
       })
     }, ...d, ...m, ...p, ...h]
   }({
-    defaultStats: require,
-    streamStats: Chunk392711,
-    videoStreams: (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.getVideoStreams()),
-    screenshare: Chunk600164,
-    clips: Chunk271383,
+    defaultStats: n,
+    streamStats: i,
+    videoStreams: (0, o.e7)([v.ZP], () => v.ZP.getVideoStreams()),
+    screenshare: m,
+    clips: y,
     channel: l,
-    connectionState: (0, Chunk442837.e7)([Chunk19780.Z], () => Chunk19780.Z.getState())
+    connectionState: (0, o.e7)([g.Z], () => g.Z.getState())
   });
-  return Chunk473749.useEffect(() => () => {
-    Chunk304680.xv()
-  }, []), (0, Chunk54381.jsx)(Chunk503089.ZP, {
-    theme: Chunk594174,
-    sidebarTheme: Chunk51144,
-    section: Chunk189648,
-    onSetSection: Chunk304680.zc,
-    sections: Chunk499848
+  return a.useEffect(() => () => {
+    c.xv()
+  }, []), (0, r.jsx)(d.ZP, {
+    theme: E,
+    sidebarTheme: b,
+    section: D,
+    onSetSection: c.zc,
+    sections: j
   })
 }

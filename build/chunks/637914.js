@@ -109,21 +109,21 @@ var a, Chunk50153 = require("./50153.js"),
     function e(e, t) {
       i(this, "characterList", g()), i(this, "currentBlockType", "unstyled"), i(this, "currentDepth", 0), i(this, "currentEntity", null), i(this, "currentText", ""), i(this, "wrapper", null), i(this, "blockConfigs", []), i(this, "contentBlocks", []), i(this, "entityMap", u), i(this, "blockTypeMap", true), i(this, "disambiguate", true), this.clear(), this.blockTypeMap = e, this.disambiguate = t
     }
-    var t = module.prototype;
-    return exports.clear = function() {
-      this.characterList = g(), this.blockConfigs = [], this.currentBlockType = "unstyled", this.currentDepth = 0, this.currentEntity = null, this.currentText = "", this.entityMap = Chunk364918, this.wrapper = null, this.contentBlocks = []
-    }, exports.addDOMNode = function(e) {
+    var t = e.prototype;
+    return t.clear = function() {
+      this.characterList = g(), this.blockConfigs = [], this.currentBlockType = "unstyled", this.currentDepth = 0, this.currentEntity = null, this.currentText = "", this.entityMap = u, this.wrapper = null, this.contentBlocks = []
+    }, t.addDOMNode = function(e) {
       var t;
       return this.contentBlocks = [], this.currentDepth = 0, (t = this.blockConfigs).push.apply(t, this._toBlockConfigs([e], b())), this._trimCurrentText(), "" !== this.currentText && this.blockConfigs.push(this._makeBlockConfig()), this
-    }, exports.getContentBlocks = function() {
+    }, t.getContentBlocks = function() {
       return 0 === this.contentBlocks.length && (I ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
         contentBlocks: this.contentBlocks,
         entityMap: this.entityMap
       }
-    }, exports._makeBlockConfig = function() {
+    }, t._makeBlockConfig = function() {
       var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
         t = r({
-          key: module.key || Chunk703579(),
+          key: e.key || p(),
           type: this.currentBlockType,
           text: this.currentText,
           characterList: this.characterList,
@@ -133,9 +133,9 @@ var a, Chunk50153 = require("./50153.js"),
           prevSibling: null,
           nextSibling: null,
           childConfigs: []
-        }, module);
-      return this.characterList = g(), this.currentBlockType = "unstyled", this.currentText = "", exports
-    }, exports._toBlockConfigs = function(e, t) {
+        }, e);
+      return this.characterList = g(), this.currentBlockType = "unstyled", this.currentText = "", t
+    }, t._toBlockConfigs = function(e, t) {
       for (var n = [], r = 0; r < e.length; r++) {
         var i = e[r],
           a = i.nodeName.toLowerCase();
@@ -184,29 +184,29 @@ var a, Chunk50153 = require("./50153.js"),
         U.has(a) && (m = m.add(U.get(a))), m = V(i, m), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), m))
       }
       return n
-    }, exports._appendText = function(e, t) {
+    }, t._appendText = function(e, t) {
       this.currentText += e;
       var n, r = o.create({
         style: t,
         entity: this.currentEntity
       });
       this.characterList = (n = this.characterList).push.apply(n, Array(e.length).fill(r))
-    }, exports._trimCurrentText = function() {
+    }, t._trimCurrentText = function() {
       var e = this.currentText.length,
-        t = module - this.currentText.trimLeft().length,
+        t = e - this.currentText.trimLeft().length,
         n = this.currentText.trimRight().length,
         r = this.characterList.findEntry(function(e) {
           return null !== e.getEntity()
         });
-      (t = true !== r ? Math.min(exports, r[0]) : exports) > (n = true !== (r = this.characterList.reverse().findEntry(function(e) {
+      (t = true !== r ? Math.min(t, r[0]) : t) > (n = true !== (r = this.characterList.reverse().findEntry(function(e) {
         return null !== e.getEntity()
-      })) ? Math.max(require, module - r[0]) : require) ? (this.currentText = "", this.characterList = g()) : (this.currentText = this.currentText.slice(exports, require), this.characterList = this.characterList.slice(exports, require))
-    }, exports._addTextNode = function(e, t) {
+      })) ? Math.max(n, e - r[0]) : n) ? (this.currentText = "", this.characterList = g()) : (this.currentText = this.currentText.slice(t, n), this.characterList = this.characterList.slice(t, n))
+    }, t._addTextNode = function(e, t) {
       var n = e.textContent;
       "" === n.trim() && "pre" !== this.wrapper && (n = " "), "pre" !== this.wrapper && (n = (n = n.replace(P, "")).replace(N, C)), this._appendText(n, t)
-    }, exports._addBreakNode = function(e, t) {
+    }, t._addBreakNode = function(e, t) {
       O(e) && this._appendText("\n", t)
-    }, exports._addImgNode = function(e, t) {
+    }, t._addImgNode = function(e, t) {
       if (S(e)) {
         var n = e,
           r = {};
@@ -215,7 +215,7 @@ var a, Chunk50153 = require("./50153.js"),
           t && (r[e] = t)
         }), this.currentEntity = this.entityMap.__create("IMAGE", "IMMUTABLE", r), m("draftjs_fix_paste_for_img") ? "presentation" !== n.getAttribute("role") && this._appendText("\uD83D\uDCF7", t) : this._appendText("\uD83D\uDCF7", t), this.currentEntity = null
       }
-    }, exports._addAnchorNode = function(e, t, n) {
+    }, t._addAnchorNode = function(e, t, n) {
       if (y(e)) {
         var r = e,
           i = {};
@@ -224,19 +224,19 @@ var a, Chunk50153 = require("./50153.js"),
           t && (i[e] = t)
         }), i.url = new d(r.href).toString(), this.currentEntity = this.entityMap.__create("LINK", "MUTABLE", i || {}), t.push.apply(t, this._toBlockConfigs(Array.from(e.childNodes), n)), this.currentEntity = null
       }
-    }, exports._toContentBlocks = function(e) {
+    }, t._toContentBlocks = function(e) {
       for (var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null, n = e.length - 1, i = 0; i <= n; i++) {
         var a = e[i];
         a.parent = t, a.prevSibling = i > 0 ? e[i - 1].key : null, a.nextSibling = i < n ? e[i + 1].key : null, a.children = g(a.childConfigs.map(function(e) {
           return e.key
         })), this.contentBlocks.push(new l(r({}, a))), this._toContentBlocks(a.childConfigs, a.key)
       }
-    }, exports._hoistContainersInBlockConfigs = function(e) {
+    }, t._hoistContainersInBlockConfigs = function(e) {
       var t = this;
       return g(e).flatMap(function(e) {
         return "unstyled" !== e.type || "" !== e.text ? [e] : t._hoistContainersInBlockConfigs(e.childConfigs)
       })
-    }, exports._toFlatContentBlocks = function(e) {
+    }, t._toFlatContentBlocks = function(e) {
       var t = this;
       this._hoistContainersInBlockConfigs(e).forEach(function(e) {
         var n = t._extractTextFromBlockConfigs(e.childConfigs),
@@ -247,7 +247,7 @@ var a, Chunk50153 = require("./50153.js"),
           characterList: e.characterList.concat(a)
         })))
       })
-    }, exports._extractTextFromBlockConfigs = function(e) {
+    }, t._extractTextFromBlockConfigs = function(e) {
       for (var t = e.length - 1, n = "", r = g(), i = 0; i <= t; i++) {
         var a = e[i];
         n += a.text, r = r.concat(a.characterList), "" !== n && "unstyled" !== a.type && (n += "\n", r = r.push(r.last()));
@@ -258,7 +258,7 @@ var a, Chunk50153 = require("./50153.js"),
         text: n,
         characterList: r
       }
-    }, module
+    }, e
   }();
 module.exports = function(e) {
   var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : _,

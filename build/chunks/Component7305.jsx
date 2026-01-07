@@ -187,57 +187,57 @@ let H = function() {
       key: null,
       renderStep: e => (0, r.jsx)(S.I, F({}, e))
     }, {
-      key: Chunk409813.h8.SKU_SELECT,
+      key: v.h8.SKU_SELECT,
       renderStep: e => (0, r.jsx)(M.q, F({}, e)),
       options: {
         renderHeader: false,
         hideSlider: true,
-        isDynamicModal: !module,
-        isLargeModal: module
+        isDynamicModal: !e,
+        isLargeModal: e
       }
     }, {
-      key: Chunk409813.h8.WHAT_YOU_LOSE,
+      key: v.h8.WHAT_YOU_LOSE,
       renderStep: e => (0, r.jsx)(_.x, F({}, e)),
       options: {
         renderHeader: false,
         hideSlider: true
       }
     }, {
-      key: Chunk409813.h8.PLAN_SELECT,
+      key: v.h8.PLAN_SELECT,
       renderStep: e => (0, r.jsx)(N.x, F({}, e)),
       options: {
         renderHeader: true,
         useBreadcrumbLabel: e => (0, C.Fv)(e) ? null : Z.intl.string(Z.t["r+SebU"]),
-        sectionHeaderText: () => Chunk388032.intl.string(Chunk388032.t.UKbp1N)
+        sectionHeaderText: () => Z.intl.string(Z.t.UKbp1N)
       }
     }, {
-      key: Chunk409813.h8.ADD_PAYMENT_STEPS,
+      key: v.h8.ADD_PAYMENT_STEPS,
       renderStep: e => (0, r.jsx)(U, F({}, e)),
       options: {
         renderHeader: true,
         useBreadcrumbLabel: e => (0, C.Fv)(e) ? null : Z.intl.string(Z.t.Sb6wI1)
       }
     }, {
-      key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
-      renderStep: () => (0, Chunk54381.jsx)(Chunk380898.Z, {})
+      key: v.h8.AWAITING_PURCHASE_TOKEN_AUTH,
+      renderStep: () => (0, r.jsx)(E.Z, {})
     }, {
-      key: Chunk409813.h8.AWAITING_AUTHENTICATION,
-      renderStep: () => (0, Chunk54381.jsx)(Chunk793541.Z, {})
+      key: v.h8.AWAITING_AUTHENTICATION,
+      renderStep: () => (0, r.jsx)(P.Z, {})
     }, {
-      key: Chunk409813.h8.REVIEW,
+      key: v.h8.REVIEW,
       renderStep: e => (0, r.jsx)(w.lZ, F({}, e)),
       options: {
         renderHeader: true,
         useBreadcrumbLabel: e => (0, C.Fv)(e) ? Z.intl.string(Z.t.UKbp1N) : Z.intl.string(Z.t.QBnNHq)
       }
     }, {
-      key: Chunk409813.h8.CONFIRM,
+      key: v.h8.CONFIRM,
       renderStep: e => (0, r.jsx)(T.b, F({}, e))
     }, {
-      key: Chunk409813.h8.SELECT_FREE_SKU,
+      key: v.h8.SELECT_FREE_SKU,
       renderStep: e => (0, r.jsx)(k.S, F({}, e)),
       options: {
-        bodyClassName: Chunk400005.selectFreeSku,
+        bodyClassName: D.selectFreeSku,
         isMediumModal: true
       }
     }]

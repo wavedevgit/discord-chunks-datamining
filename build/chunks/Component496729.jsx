@@ -31,19 +31,19 @@ function o(e) {
 }
 
 function s() {
-  (0, Chunk481060.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([require.e("26860"), require.e("47672"), require.e("11228")]).then(require.bind(require, 180970));
+    } = await Promise.all([n.e("26860"), n.e("47672"), n.e("11228")]).then(n.bind(n, 180970));
     return t => (0, r.jsx)(e, o({}, t))
   })
 }
 
 function l() {
-  (0, Chunk481060.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([require.e("26860"), require.e("47672"), require.e("17880")]).then(require.bind(require, 746147));
+    } = await Promise.all([n.e("26860"), n.e("47672"), n.e("17880")]).then(n.bind(n, 746147));
     return t => (0, r.jsx)(e, o({}, t))
   })
 }

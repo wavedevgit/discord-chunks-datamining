@@ -102,13 +102,13 @@ function O() {
   let {
     experiments: e,
     overridesInfo: t
-  } = (0, Chunk493075.sI)(), {
+  } = (0, d.sI)(), {
     experiments: n,
     overridesInfo: a
-  } = (0, Chunk667344.Qb)(), l = Chunk473749.useMemo(() => {
-    let r = g({}, module, require),
-      i = g({}, exports, Chunk658722);
-    return (0, Chunk878209.Tc)((0, Chunk878209.Cg)(Chunk54381), Chunk473749).map(e => {
+  } = (0, u.Qb)(), l = i.useMemo(() => {
+    let r = g({}, e, n),
+      i = g({}, t, a);
+    return (0, _.Tc)((0, _.Cg)(r), i).map(e => {
       let {
         id: t,
         experiment: n
@@ -120,26 +120,26 @@ function O() {
         system: n.system
       }
     })
-  }, [module, exports, require, Chunk658722]), [c, f] = Chunk473749.useState(""), [p, h] = Chunk473749.useState([]);
-  Chunk473749.useEffect(() => {
-    if (0 === Chunk492435.trim().length) return void h(Chunk922699);
-    h(Chunk922699.filter(e => o()(c, e.experiment.title.toLowerCase())))
-  }, [Chunk922699, Chunk492435]);
-  let E = Chunk473749.useMemo(() => Chunk922699.filter(e => {
+  }, [e, t, n, a]), [c, f] = i.useState(""), [p, h] = i.useState([]);
+  i.useEffect(() => {
+    if (0 === c.trim().length) return void h(l);
+    h(l.filter(e => o()(c, e.experiment.title.toLowerCase())))
+  }, [l, c]);
+  let E = i.useMemo(() => l.filter(e => {
       let {
         currentBucket: t
       } = e;
       return null != t
-    }), [Chunk922699]),
-    O = Chunk473749.useMemo(() => Chunk572004.filter(e => {
+    }), [l]),
+    O = i.useMemo(() => p.filter(e => {
       let {
         currentBucket: t
       } = e;
       return null == t
-    }), [Chunk572004]),
-    v = Chunk473749.useMemo(() => E.map(y), [E]),
-    S = Chunk473749.useMemo(() => O.map(y), [O]),
-    I = (0, Chunk54381.jsx)(Chunk481060.II_, {
+    }), [p]),
+    v = i.useMemo(() => E.map(y), [E]),
+    S = i.useMemo(() => O.map(y), [O]),
+    I = (0, r.jsx)(s.II_, {
       id: "experiments-search",
       control: (e, t) => (0, r.jsx)(s.ne, b(g({}, e), {
         query: c,
@@ -148,10 +148,10 @@ function O() {
         placeholder: m.intl.string(m.t["5h0QOP"])
       }))
     }, "experiments-search");
-  return v.length > 0 ? [(0, Chunk54381.jsx)(Chunk481060.kSQ, {
+  return v.length > 0 ? [(0, r.jsx)(s.kSQ, {
     label: "Overridden Experiments",
     children: v
-  }, "overridden-group"), (0, Chunk54381.jsx)(Chunk481060.Clw, {}, "separator-2"), (0, Chunk54381.jsxs)(Chunk481060.sNh, {
+  }, "overridden-group"), (0, r.jsx)(s.Clw, {}, "separator-2"), (0, r.jsxs)(s.sNh, {
     id: "other-experiments",
     label: "Other Experiments",
     children: [I, S]

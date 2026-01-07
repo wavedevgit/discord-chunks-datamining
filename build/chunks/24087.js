@@ -43,20 +43,20 @@ function f(e, t) {
 function p() {
   let {
     sortingStrategy: e
-  } = (0, Chunk771784.q3)("useSoundOrganizer"), t = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.getAllTopSoundsForGuilds()), n = (0, Chunk442837.e7)([Chunk178106.Z], () => Chunk178106.Z.frecentlyPlayedSounds), a = Chunk473749.useRef(require).current, c = Chunk473749.useCallback(e => {
+  } = (0, l.q3)("useSoundOrganizer"), t = (0, i.e7)([s.Z], () => s.Z.getAllTopSoundsForGuilds()), n = (0, i.e7)([o.Z], () => o.Z.frecentlyPlayedSounds), a = r.useRef(n).current, c = r.useCallback(e => {
     if (0 === e.length) return e;
     let n = e[0].guildId;
     if (!e.every(e => e.guildId === n)) return e;
     let r = t.get(n);
     return null == r ? u(e) : f(e, r.map(e => e.soundId))
-  }, [exports]), p = Chunk473749.useCallback(e => f(e, a.map(e => e.soundId)), [Chunk709054]);
+  }, [t]), p = r.useCallback(e => f(e, a.map(e => e.soundId)), [a]);
   if (__OVERLAY__) return u;
-  switch (module) {
-    case Chunk771784.du.TOP_SOUNDS:
+  switch (e) {
+    case l.du.TOP_SOUNDS:
       return c;
-    case Chunk771784.du.RECENTLY_USED_BY_USER:
+    case l.du.RECENTLY_USED_BY_USER:
       return p;
-    case Chunk771784.du.NEWEST_CREATION_DATE:
+    case l.du.NEWEST_CREATION_DATE:
       return d;
     default:
       return u

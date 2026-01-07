@@ -156,7 +156,7 @@ function P(e) {
 }
 class R extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default)
+    this.waitFor(u.default)
   }
   getTypingUsers(e) {
     return y(e)

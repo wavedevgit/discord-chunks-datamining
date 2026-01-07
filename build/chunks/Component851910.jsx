@@ -65,7 +65,7 @@ let p = [6, 10, 9, 16, 8],
           getHeights: () => (function() {
             let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 2,
               t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 2;
-            return [, , , , , ].fill(0).map(() => exports + E(0, module))
+            return [, , , , , ].fill(0).map(() => t + E(0, e))
           })(),
           getAnimationDelay: () => E(8, 16),
           getStateDuration: () => E(8, 24),

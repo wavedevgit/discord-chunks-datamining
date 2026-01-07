@@ -16,29 +16,29 @@ var Chunk481060 = require("./481060.js"),
 
 function d() {
   let e = () => {
-    (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY), (0, Chunk342386.default)()
+    (0, a.uL)(s.Z5c.GUILD_DISCOVERY), (0, o.default)()
   };
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk947099.emptyState,
-    children: [(0, Chunk54381.jsx)("img", {
-      src: Chunk322221,
+  return (0, r.jsxs)("div", {
+    className: c.emptyState,
+    children: [(0, r.jsx)("img", {
+      src: u,
       alt: "",
-      className: Chunk947099.image
-    }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk947099.topSpacing,
+      className: c.image
+    }), (0, r.jsx)(i.Heading, {
+      className: c.topSpacing,
       variant: "heading-lg/extrabold",
-      children: Chunk388032.intl.string(Chunk388032.t.Z1OZCV)
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk947099.topSpacing,
+      children: l.intl.string(l.t.Z1OZCV)
+    }), (0, r.jsx)(i.Text, {
+      className: c.topSpacing,
       variant: "text-md/normal",
-      children: Chunk388032.intl.string(Chunk388032.t.ZSt4Tt)
-    }), (0, Chunk54381.jsx)("div", {
+      children: l.intl.string(l.t.ZSt4Tt)
+    }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk947099.topSpacing,
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      className: c.topSpacing,
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.jQ3pqt),
-        onClick: module
+        text: l.intl.string(l.t.jQ3pqt),
+        onClick: e
       })
     })]
   })

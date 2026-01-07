@@ -36,7 +36,7 @@ function j(e) {
   var t;
   let {
     guild: n
-  } = e, [p, g] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), h = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
+  } = e, [p, g] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), m = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
     let {
       dismissibleContentType: t,
       store: r
@@ -44,7 +44,7 @@ function j(e) {
     returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !T.has(t)
   }).map(e => e.dismissibleContentType), [n, p]);
   return (0, r.jsx)(c.ZP, {
-    contentTypes: h,
+    contentTypes: m,
     groupName: S.R.CHANNEL_NOTICES,
     children: e => {
       let {
@@ -118,11 +118,11 @@ let P = e => {
         guild: t
       });
     case I.R.COMMANDS_MIGRATION:
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(m.Z, {
         guild: t
       });
     case I.R.APPLICATION_SUBSCRIPTION_EXPIRATION:
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(h.Z, {
         guild: t
       });
     case I.R.HUB_STUDY_ROOM:

@@ -603,7 +603,7 @@ class eP extends(i = Chunk442837.ZP.PersistedStore) {
     return Y.get(e)
   }
   getConnectedActivityChannelId() {
-    if (null != r) return (0, Chunk16609.p)(r)
+    if (null != r) return (0, E.p)(r)
   }
   getConnectedActivityLocation() {
     return r
@@ -617,7 +617,7 @@ class eP extends(i = Chunk442837.ZP.PersistedStore) {
   getCurrentEmbeddedActivity() {
     var e;
     let t = this.getConnectedActivityLocation();
-    return null != (e = this.getSelfEmbeddedActivityForLocation(exports)) ? module : true
+    return null != (e = this.getSelfEmbeddedActivityForLocation(t)) ? e : true
   }
   isProxyTicketRefreshing(e) {
     return G.has(e)

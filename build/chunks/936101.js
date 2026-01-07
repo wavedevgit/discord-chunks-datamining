@@ -12,17 +12,17 @@ let o = "purchase_token",
   s = 60 * Chunk70956.Z.Millis.DAY;
 
 function l() {
-  let e = Chunk433517.K.get(o);
-  if (null != module && module.expires >= Date.now()) return module.purchaseToken;
-  let t = (0, Chunk772848.Z)();
-  return Chunk433517.K.set(o, {
-    purchaseToken: exports,
+  let e = i.K.get(o);
+  if (null != e && e.expires >= Date.now()) return e.purchaseToken;
+  let t = (0, r.Z)();
+  return i.K.set(o, {
+    purchaseToken: t,
     expires: Date.now() + s
-  }), exports
+  }), t
 }
 async function c() {
   let e = new Uint8Array(l().split("").map(e => e.charCodeAt(0)));
   return btoa(String.fromCharCode(...new Uint8Array(await window.crypto.subtle.digest({
     name: "SHA-256"
-  }, module))))
+  }, e))))
 }

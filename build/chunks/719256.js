@@ -21,10 +21,10 @@ function u(e, t, n) {
 }
 class d extends Chunk317770.Z {
   _initialize() {
-    __OVERLAY__ || (Chunk570140.Z.subscribe("SHARED_CANVAS_DRAW_LINE_POINT", this._handleDrawLinePoint), Chunk570140.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleVoiceChannelEffectReceived))
+    __OVERLAY__ || (i.Z.subscribe("SHARED_CANVAS_DRAW_LINE_POINT", this._handleDrawLinePoint), i.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleVoiceChannelEffectReceived))
   }
   _terminate() {
-    __OVERLAY__ || (Chunk570140.Z.unsubscribe("SHARED_CANVAS_DRAW_LINE_POINT", this._handleDrawLinePoint), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleVoiceChannelEffectReceived), this.lineBatchTimer.stop())
+    __OVERLAY__ || (i.Z.unsubscribe("SHARED_CANVAS_DRAW_LINE_POINT", this._handleDrawLinePoint), i.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleVoiceChannelEffectReceived), this.lineBatchTimer.stop())
   }
   _handleVoiceChannelEffectReceived(e) {
     var t;

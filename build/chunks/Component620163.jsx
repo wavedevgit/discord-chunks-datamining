@@ -99,40 +99,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk517319 = require("./517319.js"),
   Chunk472057 = require("./472057.js"),
   Chunk256529 = require("./256529.js");
-let eZ = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE, Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE],
+let eZ = () => [a.z.CLIENT_THEMES_SETTINGS_BADGE, a.z.DEKSTOP_CUSTOM_APP_ICON_BADGE, a.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE],
   eF = () => {
     let e = eZ(),
-      [t] = (0, Chunk243778.US)(module);
-    return exports === Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE || exports === Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE ? (0, Chunk54381.jsx)(Chunk481060.lBU, {
-      text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
-    }) : exports === Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
-      text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
+      [t] = (0, O.US)(e);
+    return t === a.z.CLIENT_THEMES_SETTINGS_BADGE || t === a.z.DEKSTOP_CUSTOM_APP_ICON_BADGE ? (0, r.jsx)(l.lBU, {
+      text: eL.intl.string(eL.t.y2b7CA)
+    }) : t === a.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE ? (0, r.jsx)(l.IGR, {
+      text: eL.intl.string(eL.t.y2b7CA)
     }) : null
   },
   eB = () => {
     let e = [];
-    return (0, Chunk172416.hL)("SettingsRendererConfig") && module.push(Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE), Chunk594928.JH.getCurrentConfig({
+    return (0, U.hL)("SettingsRendererConfig") && e.push(a.z.WIDGETS_USER_SETTINGS_NEW_BADGE), v.JH.getCurrentConfig({
       location: "SettingsRendererConfig"
-    }).enabled && module.push(Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE), module
+    }).enabled && e.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE), e
   },
   eV = () => {
     let e = eB(),
-      [t] = (0, Chunk243778.US)(module);
-    return exports === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE || exports === Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
-      text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
+      [t] = (0, O.US)(e);
+    return t === a.z.DISPLAY_NAME_STYLES_NEW_BADGE || t === a.z.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, r.jsx)(l.IGR, {
+      text: eL.intl.string(eL.t.y2b7CA)
     }) : null
   },
   eH = () => {
     let e = [];
-    return Chunk299886.H.getConfig({
+    return j.H.getConfig({
       location: "SettingsRendererConfig"
-    }).enabled && module.push(Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE_V2), module
+    }).enabled && e.push(a.z.NITRO_PRIVACY_PERK_NEW_BADGE_V2), e
   },
   eY = () => {
     let e = eH(),
-      [t] = (0, Chunk243778.US)(module);
-    return Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE_V2 === exports ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
-      text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
+      [t] = (0, O.US)(e);
+    return a.z.NITRO_PRIVACY_PERK_NEW_BADGE_V2 === t ? (0, r.jsx)(l.IGR, {
+      text: eL.intl.string(eL.t.y2b7CA)
     }) : null
   },
   eW = Chunk200645.Z,

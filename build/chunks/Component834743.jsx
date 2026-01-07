@@ -20,15 +20,15 @@ class f extends Chunk473749.PureComponent {
       memberCount: t,
       markAsDismissed: n
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk82950.Z, {
-      guild: module,
-      onDismissed: () => require(Chunk921944.L.UNKNOWN),
+    return (0, r.jsx)(a.Z, {
+      guild: e,
+      onDismissed: () => n(u.L.UNKNOWN),
       onClick: this.handleButtonClick,
-      message: null == exports || exports < 30 ? Chunk388032.intl.string(Chunk388032.t.hlitVQ) : Chunk388032.intl.string(Chunk388032.t.XHtaDD),
-      cta: Chunk388032.intl.string(Chunk388032.t["vqb+H1"]),
-      trackingSource: Chunk981631.PsQ.GUILD_SUBSCRIPTION_NOTICE,
-      type: Chunk981631.vID.GUILD_BOOSTING,
-      image: Chunk241626,
+      message: null == t || t < 30 ? d.intl.string(d.t.hlitVQ) : d.intl.string(d.t.XHtaDD),
+      cta: d.intl.string(d.t["vqb+H1"]),
+      trackingSource: c.PsQ.GUILD_SUBSCRIPTION_NOTICE,
+      type: c.vID.GUILD_BOOSTING,
+      image: p,
       imageMarginX: 26
     })
   }

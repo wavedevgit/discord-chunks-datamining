@@ -46,27 +46,27 @@ function d(e) {
 }
 
 function f() {
-  let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-  return (0, Chunk54381.jsxs)("div", {
+  let e = (0, o.e7)([s.Z], () => s.Z.useReducedMotion);
+  return (0, r.jsxs)("div", {
     style: {
       display: "flex",
       flexDirection: "row",
       gap: 12,
       padding: 4
     },
-    className: l()(Chunk972237.wrapper, {
-      [Chunk972237.noAnimation]: module
+    className: l()(c.wrapper, {
+      [c.noAnimation]: e
     }),
-    children: [(0, Chunk54381.jsx)("div", {
-      className: l()(Chunk972237.avatar, Chunk972237.loadingAnimation)
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk972237.lineContainer,
-      children: [(0, Chunk54381.jsx)(d, {
-        className: l()(Chunk972237.lineMedium, Chunk972237.loadingAnimation)
-      }), (0, Chunk54381.jsx)(d, {
-        className: l()(Chunk972237.lineShort, Chunk972237.loadingAnimation)
-      }), (0, Chunk54381.jsx)(d, {
-        className: l()(Chunk972237.lineLong, Chunk972237.loadingAnimation)
+    children: [(0, r.jsx)("div", {
+      className: l()(c.avatar, c.loadingAnimation)
+    }), (0, r.jsxs)("div", {
+      className: c.lineContainer,
+      children: [(0, r.jsx)(d, {
+        className: l()(c.lineMedium, c.loadingAnimation)
+      }), (0, r.jsx)(d, {
+        className: l()(c.lineShort, c.loadingAnimation)
+      }), (0, r.jsx)(d, {
+        className: l()(c.lineLong, c.loadingAnimation)
       })]
     })]
   })

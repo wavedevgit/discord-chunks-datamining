@@ -20,25 +20,25 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let A = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
+    useTitle: () => N.intl.string(N.t["iHH+ky"]),
     initialize: () => {
-      (0, Chunk93262.w)()
+      (0, l.w)()
     },
-    buildLayout: () => [Chunk142751.D, Chunk601414.l, Chunk490555.G, Chunk157177.K, Chunk781060.t, Chunk658091.R]
+    buildLayout: () => [_.D, c.l, g.G, E.K, d.t, S.R]
   }),
   O = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
+    useTitle: () => N.intl.string(N.t["iHH+ky"]),
     StronglyDiscouragedCustomComponent: Chunk501348.ZP,
     buildLayout: () => []
   }),
   C = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("AppearanceSidebarItem") ? true : Chunk726985.s6.APPEARANCE,
+    useTitle: () => N.intl.string(N.t["iHH+ky"]),
+    getLegacySearchKey: () => (0, a.Gl)("AppearanceSidebarItem") ? true : I.s6.APPEARANCE,
     icon: Chunk657707.V3v,
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163.$Z,
       stronglyDiscouragedBadgeComponent: Chunk620163.c$
     },
-    buildLayout: () => (0, Chunk526665.Gl)("AppearanceSidebarItem") ? [A] : [O]
+    buildLayout: () => (0, a.Gl)("AppearanceSidebarItem") ? [A] : [O]
   })

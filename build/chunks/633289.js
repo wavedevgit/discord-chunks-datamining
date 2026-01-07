@@ -14,7 +14,7 @@ class l extends Chunk299021.Z {
     this.waitFor(o.default), this.loadStoredState(e, (0, a._S)())
   }
   constructor() {
-    super(Chunk570140.Z, {
+    super(i.Z, {
       CONNECTION_OPEN: e => this.setExperimentAssignments(e.apexExperiments),
       CONNECTION_OPEN_STATE_UPDATE: e => this.setExperimentAssignments(e.apexExperiments),
       APEX_EXPERIMENT_OVERRIDE_CREATE: e => this.createOverride(e.experimentName, e.variantId),
@@ -28,9 +28,9 @@ class l extends Chunk299021.Z {
       APEX_EXPERIMENTS_FETCH_SUCCESS: e => this.handleFetchSuccess(e.unitId, e.experiments),
       APEX_EXPERIMENTS_FETCH_FAILURE: e => this.handleFetchFailure(e.unitId),
       LOGOUT: e => this.handleLogout(e.isSwitchingAccount)
-    }, Chunk570140.c.Early), this.track = function() {
-      for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-      return Chunk626135.default.track(...exports)
+    }, i.c.Early), this.track = function() {
+      for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+      return s.default.track(...t)
     }, this.surface = "discord_app"
   }
 }

@@ -36,30 +36,30 @@ class _ extends(r = Chunk473749.Component) {
       childrenClassName: r,
       doNotAnimate: a
     } = this.props;
-    return "2" === module ? (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk173680.multiplePlaceholder, Chunk173680.multiplePlaceholderAnimated, require),
-      children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: s()(Chunk173680.placeholderAvatar, p[exports], Chunk173680.avatarMasked)
-        }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk173680.placeholderAvatar, p[exports], Chunk173680.avatarMasked)
-        }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk173680.placeholderAvatar, p[exports])
+    return "2" === e ? (0, i.jsxs)("div", {
+      className: s()(u.multiplePlaceholder, u.multiplePlaceholderAnimated, n),
+      children: [(0, i.jsxs)(c.Z, {
+        children: [(0, i.jsx)("div", {
+          className: s()(u.placeholderAvatar, p[t], u.avatarMasked)
+        }), (0, i.jsx)("div", {
+          className: s()(u.placeholderAvatar, p[t], u.avatarMasked)
+        }), (0, i.jsx)("div", {
+          className: s()(u.placeholderAvatar, p[t])
         })]
-      }), (0, Chunk54381.jsx)(Chunk600164.Z, {
+      }), (0, i.jsx)(c.Z, {
         grow: 1,
-        className: Chunk173680.mulitplePlaceholderUsername,
+        className: u.mulitplePlaceholderUsername,
         style: {
           maxWidth: this.placeholderMaxWidth
         }
       })]
-    }) : (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      className: s()(Chunk173680.placeholder, !Chunk473749 && Chunk173680.placeholderAnimated, require),
-      children: [(0, Chunk54381.jsx)("div", {
-        className: s()(Chunk173680.placeholderAvatar, p[exports], r)
-      }), (0, Chunk54381.jsx)(Chunk600164.Z, {
+    }) : (0, i.jsxs)(c.Z, {
+      className: s()(u.placeholder, !a && u.placeholderAnimated, n),
+      children: [(0, i.jsx)("div", {
+        className: s()(u.placeholderAvatar, p[t], r)
+      }), (0, i.jsx)(c.Z, {
         grow: 1,
-        className: s()(Chunk173680.placeholderUsername, r),
+        className: s()(u.placeholderUsername, r),
         style: {
           maxWidth: this.placeholderMaxWidth
         }

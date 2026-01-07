@@ -51,7 +51,7 @@ let _ = {
     d.Z.isSupported() && (null != e && d.Z.getMediaEngine().interact(), (0, f.h)(e, o, t, n, r))
   },
   disconnect() {
-    let e = Chunk258609.default.getRemoteSessionId();
-    null != module && Chunk254238._(module), (0, Chunk700615.ur)() ? this.selectVoiceChannel(null) : (this.selectVoiceChannel(null), Chunk788983.close(Chunk981631.KJ3.CHANNEL_CALL_POPOUT))
+    let e = o.default.getRemoteSessionId();
+    null != e && a._(e), (0, c.ur)() ? this.selectVoiceChannel(null) : (this.selectVoiceChannel(null), s.close(p.KJ3.CHANNEL_CALL_POPOUT))
   }
 }

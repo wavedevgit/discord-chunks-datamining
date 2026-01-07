@@ -101,10 +101,10 @@ class h extends Chunk473749.PureComponent {
     let {
       form: e,
       className: t
-    } = this.props, n = module.map(this.renderFormRow);
-    return (0, Chunk54381.jsx)("div", {
-      className: exports,
-      children: require
+    } = this.props, n = e.map(this.renderFormRow);
+    return (0, r.jsx)("div", {
+      className: t,
+      children: n
     })
   }
   constructor(...e) {

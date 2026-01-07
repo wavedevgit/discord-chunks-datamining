@@ -14,7 +14,7 @@ let s = ">=10.0.22000",
   c = "{E5323777-F976-4f5b-9B55-B94699C46E44}";
 
 function u() {
-  return !!(0, Chunk358085.isWindows)() && !!Chunk358085.isPlatformEmbedded && i().satisfies(Chunk579806.Z.os.release, s)
+  return !!(0, o.isWindows)() && !!o.isPlatformEmbedded && i().satisfies(a.Z.os.release, s)
 }
 
 function d(e) {

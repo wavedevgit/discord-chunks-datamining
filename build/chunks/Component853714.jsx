@@ -228,7 +228,7 @@ function M(e) {
 G.displayName = "AuditLogClickWrap";
 class U extends Chunk473749.PureComponent {
   componentDidMount() {
-    (0, Chunk480137.bY)(this.props.guildId), document.addEventListener("click", this.handleOutsideClick)
+    (0, g.bY)(this.props.guildId), document.addEventListener("click", this.handleOutsideClick)
   }
   componentWillUnmount() {
     document.removeEventListener("click", this.handleOutsideClick)
@@ -238,18 +238,18 @@ class U extends Chunk473749.PureComponent {
   }
   isScrollerAtBottom() {
     var e;
-    return (null == (e = this._scrollerRef) ? true : module.isScrolledToBottom()) || false
+    return (null == (e = this._scrollerRef) ? true : e.isScrolledToBottom()) || false
   }
   fixScroll() {
     let e = this._scrollerRef;
-    if (null == module) return;
+    if (null == e) return;
     let t = this.getRects(),
       n = this._prevRects;
-    if (null == exports.expanded || null == exports.lastExpanded || null == require.expanded || exports.expanded.top < exports.lastExpanded.top) return;
-    let r = require.expanded.height - exports.lastExpanded.height,
-      i = module.getScrollerState().scrollTop - Chunk54381;
-    module.scrollTo({
-      to: Chunk473749
+    if (null == t.expanded || null == t.lastExpanded || null == n.expanded || t.expanded.top < t.lastExpanded.top) return;
+    let r = n.expanded.height - t.lastExpanded.height,
+      i = e.getScrollerState().scrollTop - r;
+    e.scrollTo({
+      to: i
     })
   }
   getRects() {
@@ -259,30 +259,30 @@ class U extends Chunk473749.PureComponent {
     };
     if (null != this._lastExpandedRef) {
       let t = this._lastExpandedRef;
-      (0, Chunk374470.kK)(exports) && (module.lastExpanded = exports.getBoundingClientRect())
+      (0, o.kK)(t) && (e.lastExpanded = t.getBoundingClientRect())
     }
     if (null != this._expandedRef) {
       let t = this._expandedRef;
-      (0, Chunk374470.kK)(exports) && (module.expanded = exports.getBoundingClientRect())
+      (0, o.kK)(t) && (e.expanded = t.getBoundingClientRect())
     }
-    return module
+    return e
   }
   renderHeader() {
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk517308.customHeader,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)("div", {
+        className: Z.customHeader,
+        children: [(0, r.jsx)(u.Heading, {
           variant: "heading-lg/semibold",
-          children: Chunk388032.intl.string(Chunk388032.t.SPWLyT)
+          children: w.intl.string(w.t.SPWLyT)
         }), this.renderHeaderDropdowns()]
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk517308.divider
+      }), (0, r.jsx)(u.izJ, {
+        className: Z.divider
       })]
     })
   }
   renderSpinner() {
-    return (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      type: Chunk481060.$jN.Type.SPINNING_CIRCLE
+    return (0, r.jsx)(u.$jN, {
+      type: u.$jN.Type.SPINNING_CIRCLE
     })
   }
   renderContent() {
@@ -299,34 +299,34 @@ class U extends Chunk473749.PureComponent {
       guildId: d,
       guild: g
     } = this.props;
-    if (a) return (0, Chunk54381.jsx)(Chunk497321.Z, {});
-    if (Chunk374470 || Chunk91192) return this.renderSpinner();
-    if (0 === Chunk473749.length) {
-      let e = Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.tzkaD7) : Chunk388032.intl.string(Chunk388032.t.lNuYhh),
-        t = Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.Ww5Tjy) : Chunk388032.intl.string(Chunk388032.t["RHhk+P"]);
-      return (0, Chunk54381.jsxs)(Chunk481060.ubH, {
-        theme: Chunk120356,
-        className: Chunk517308.empty,
-        children: [(0, Chunk54381.jsx)(Chunk481060.oxh, {
-          darkSrc: require("./28269.js"),
-          lightSrc: require("./357115.js"),
+    if (a) return (0, r.jsx)(m.Z, {});
+    if (o || s) return this.renderSpinner();
+    if (0 === i.length) {
+      let e = c ? w.intl.string(w.t.tzkaD7) : w.intl.string(w.t.lNuYhh),
+        t = c ? w.intl.string(w.t.Ww5Tjy) : w.intl.string(w.t["RHhk+P"]);
+      return (0, r.jsxs)(u.ubH, {
+        theme: l,
+        className: Z.empty,
+        children: [(0, r.jsx)(u.oxh, {
+          darkSrc: n(28269),
+          lightSrc: n(357115),
           width: 272,
           height: 130
-        }), (0, Chunk54381.jsx)(Chunk481060.OZU, {
-          note: module,
+        }), (0, r.jsx)(u.OZU, {
+          note: e,
           style: {
             maxWidth: 300
           },
-          children: exports
+          children: t
         })]
       })
     }
-    return (0, Chunk54381.jsx)(M, {
-      logs: Chunk473749,
-      guildId: Chunk333200,
-      guild: Chunk480137,
-      expandedId: module,
-      lastExpandedId: exports,
+    return (0, r.jsx)(M, {
+      logs: i,
+      guildId: d,
+      guild: g,
+      expandedId: e,
+      lastExpandedId: t,
       setExpandedRef: this.handleSetExpandedRef,
       setLastExpandedRef: this.handleSetLastExpandedRef,
       onHeaderClick: this.handleHeaderClick,
@@ -340,20 +340,20 @@ class U extends Chunk473749.PureComponent {
       hide: t,
       isLoading: n
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk306174.customColumn,
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk306174.customContainer,
-        children: (0, Chunk54381.jsx)(Chunk481060.yWw, {
-          className: a()(Chunk306174.customScroller, Chunk517308.scroller),
+    return (0, r.jsx)("div", {
+      className: R.customColumn,
+      children: (0, r.jsx)("div", {
+        className: R.customContainer,
+        children: (0, r.jsx)(u.yWw, {
+          className: a()(R.customScroller, Z.scroller),
           onScroll: this.handleOnScroll,
           ref: this.handleSetScrollerRef,
-          children: (0, Chunk54381.jsx)("div", {
-            className: Chunk517308.content,
+          children: (0, r.jsx)("div", {
+            className: Z.content,
             ref: this._contentRef,
-            children: (0, Chunk54381.jsxs)(Chunk481060.JcV, {
+            children: (0, r.jsxs)(u.JcV, {
               containerRef: this._contentRef,
-              children: [this.renderHeader(), this.renderContent(), this.renderLoadMore(), !module || exports || require ? null : this.renderSpinner()]
+              children: [this.renderHeader(), this.renderContent(), this.renderLoadMore(), !e || t || n ? null : this.renderSpinner()]
             })
           })
         })
@@ -525,23 +525,23 @@ class U extends Chunk473749.PureComponent {
   }
 }
 let B = Chunk442837.ZP.connectStores([Chunk233857.Z, Chunk999382.Z, Chunk430824.Z, Chunk210887.Z, Chunk246946.Z, Chunk594174.default], () => {
-  let e = Chunk999382.Z.getGuildId(),
-    t = Chunk430824.Z.getGuild(module),
-    n = Chunk233857.Z.logs;
+  let e = E.Z.getGuildId(),
+    t = v.Z.getGuild(e),
+    n = S.Z.logs;
   return {
-    guildId: module,
-    guild: exports,
-    moderators: Chunk233857.Z.userIds.map(e => C.default.getUser(e)).filter(Chunk823379.lm),
-    isInitialLoading: Chunk233857.Z.isInitialLoading,
-    isLoading: Chunk233857.Z.isLoading,
-    isLoadingNextPage: Chunk233857.Z.isLoadingNextPage,
-    showLoadMore: Chunk233857.Z.groupedFetchCount > 2,
-    hasError: Chunk233857.Z.hasError,
-    hasOlderLogs: Chunk233857.Z.hasOlderLogs,
-    logs: null != require && null != exports ? Chunk909746._$(require, exports) : [],
-    actionFilter: Chunk233857.Z.actionFilter,
-    userIdFilter: Chunk233857.Z.userIdFilter,
-    theme: Chunk210887.Z.theme,
-    hide: Chunk246946.Z.enabled
+    guildId: e,
+    guild: t,
+    moderators: S.Z.userIds.map(e => C.default.getUser(e)).filter(y.lm),
+    isInitialLoading: S.Z.isInitialLoading,
+    isLoading: S.Z.isLoading,
+    isLoadingNextPage: S.Z.isLoadingNextPage,
+    showLoadMore: S.Z.groupedFetchCount > 2,
+    hasError: S.Z.hasError,
+    hasOlderLogs: S.Z.hasOlderLogs,
+    logs: null != n && null != t ? I._$(n, t) : [],
+    actionFilter: S.Z.actionFilter,
+    userIdFilter: S.Z.userIdFilter,
+    theme: p.Z.theme,
+    hide: O.Z.enabled
   }
 })(U)

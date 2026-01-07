@@ -5,6 +5,6 @@ var r = require("./134533.js")(),
   Chunk834889 = require("./834889.js"),
   Chunk98570 = require("./98570.js");
 module.exports = function() {
-  var e = Chunk98570();
-  return String.prototype.trim !== module && (r ? Chunk834889(String.prototype, "trim", module, true) : Chunk834889(String.prototype, "trim", module)), module
+  var e = a();
+  return String.prototype.trim !== e && (r ? i(String.prototype, "trim", e, true) : i(String.prototype, "trim", e)), e
 }

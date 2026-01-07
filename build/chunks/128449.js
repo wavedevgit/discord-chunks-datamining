@@ -83,7 +83,7 @@ let S = [1, 2, 3, 5, 6],
   I = ["en-GB"];
 
 function T() {
-  return (0, Chunk388032.getLanguages)().filter(e => !I.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
+  return (0, i.getLanguages)().filter(e => !I.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
     name: i.intl.string(i.t.LQLMGP)
   }) : e)
 }

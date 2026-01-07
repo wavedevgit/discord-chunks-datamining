@@ -21,17 +21,17 @@ var Chunk127849 = require("./127849.js"),
     h(new m(2), {})
   })),
   E = !!h && !Chunk621523(function() {
-    if (Chunk287353) return Chunk287353 < 74;
-    if (Chunk358932) return Chunk358932 < 67;
-    if (Chunk635464) returntrue;
-    if (Chunk920542) return Chunk920542 < 602;
+    if (d) return d < 74;
+    if (c) return c < 67;
+    if (u) returntrue;
+    if (f) return f < 602;
     var e, t, n = new m(516),
       r = Array(516);
-    for (e = 0; module < 516; module++) t = module % 4, require[module] = 515 - module, Chunk127849[module] = module - 2 * exports + 3;
-    for (h(require, function(e, t) {
+    for (e = 0; e < 516; e++) t = e % 4, n[e] = 515 - e, r[e] = e - 2 * t + 3;
+    for (h(n, function(e, t) {
         return (e / 4 | 0) - (t / 4 | 0)
-      }), e = 0; module < 516; module++)
-      if (require[module] !== Chunk127849[module]) returntrue
+      }), e = 0; e < 516; e++)
+      if (n[e] !== r[e]) returntrue
   }),
   b = function(e) {
     return function(t, n) {

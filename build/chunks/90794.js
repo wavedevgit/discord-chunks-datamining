@@ -10,6 +10,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk436623 = require("./436623.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.k4)(Chunk313789.n.SOUNDBOARD_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.ABjMWI),
-  buildLayout: () => [Chunk388404.$, Chunk436623.A, Chunk277087.C]
+  useTitle: () => a.intl.string(a.t.ABjMWI),
+  buildLayout: () => [u.$, r.A, s.C]
 })

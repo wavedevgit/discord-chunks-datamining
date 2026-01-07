@@ -56,15 +56,15 @@ let y = [{
 function P() {
   if (null == j || !T(j)) returnfalse;
   let e = Z(j);
-  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > v) returnfalse;
+  if (e.lastActionTime > Date.now() - p.Z.Millis.DAY && e.viewDuration > v) returnfalse;
   let t = Date.now();
-  module.lastActionTime = exports, module.viewDuration += exports - S, S = exports
+  e.lastActionTime = t, e.viewDuration += t - S, S = t
 }
 
 function I() {
-  return 0 !== _ && (clearInterval(_), _ = 0), Chunk9156.ZP.useNewNotifications && (_ = setInterval(() => {
+  return 0 !== _ && (clearInterval(_), _ = 0), d.ZP.useNewNotifications && (_ = setInterval(() => {
     P() && w.emitChange()
-  }, 15 * Chunk70956.Z.Millis.SECOND)), false
+  }, 15 * p.Z.Millis.SECOND)), false
 }
 
 function Z(e) {
@@ -119,12 +119,12 @@ C(A, "displayName", "UnreadSettingNoticeStore2"), C(A, "persistKey", "UnreadSett
 let w = new A(Chunk570140.Z, {
     CHANNEL_SELECT: function() {
       let e = P();
-      return j = Chunk944486.Z.getChannelId(), S = Date.now(), module
+      return j = u.Z.getChannelId(), S = Date.now(), e
     },
     CONNECTION_OPEN: function() {
-      j = Chunk944486.Z.getChannelId(), S = Date.now(), I();
+      j = u.Z.getChannelId(), S = Date.now(), I();
       let e = Date.now() - x;
-      Chunk709054.default.forEach(O.channels, (t, n) => {
+      f.default.forEach(O.channels, (t, n) => {
         let {
           lastActionTime: i
         } = t;

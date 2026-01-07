@@ -18,11 +18,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216476 = require("./216476.js");
 let I = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_KEYBIND, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.pf54EU), Chunk388032.intl.string(Chunk388032.t["QyB/jK"])],
+  useSearchTerms: () => [_.intl.string(_.t.pf54EU), _.intl.string(_.t["QyB/jK"])],
   Component: () => {
-    let t = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true));
-    u()(null != module, "Save clip keybind unset");
-    let e = Chunk473749.useCallback(e => {
+    let t = (0, r.e7)([c.ZP], () => c.ZP.getKeybindForAction(d.kg4.SAVE_CLIP, true));
+    u()(null != t, "Save clip keybind unset");
+    let e = l.useCallback(e => {
       var n, i;
       o.Z.setKeybind((n = function(t) {
         for (var e = 1; e < arguments.length; e++) {
@@ -53,16 +53,16 @@ let I = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_KEYBIND, {
       })(Object(i)).forEach(function(t) {
         Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(i, t))
       }), n))
-    }, [module]);
-    return (0, Chunk54381.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t.pf54EU),
-      description: Chunk388032.intl.string(Chunk388032.t["QyB/jK"]),
+    }, [t]);
+    return (0, i.jsx)(a.gNt, {
+      label: _.intl.string(_.t.pf54EU),
+      description: _.intl.string(_.t["QyB/jK"]),
       layout: "horizontal",
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk216476.keyRecorder,
-        children: (0, Chunk54381.jsx)(Chunk825209.Z, {
-          defaultValue: module.shortcut,
-          onChange: exports
+      children: (0, i.jsx)("div", {
+        className: g.keyRecorder,
+        children: (0, i.jsx)(T.Z, {
+          defaultValue: t.shortcut,
+          onChange: e
         })
       })
     })

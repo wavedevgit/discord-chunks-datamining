@@ -99,31 +99,31 @@ let u = Chunk473749.createContext(null),
     }), [p, n, r, o, s, l, c, d, f])
   },
   p = () => {
-    let e = Chunk473749.useContext(u),
+    let e = i.useContext(u),
       {
         analyticsLocations: t
-      } = (0, Chunk906732.ZP)();
+      } = (0, o.ZP)();
     return {
-      context: module,
-      trackUserProfileAction: Chunk473749.useCallback(n => {
+      context: e,
+      trackUserProfileAction: i.useCallback(n => {
         null != e && (0, s.pQ)(c({
           analyticsLocations: t
         }, e, n))
-      }, [module, exports]),
-      trackUserProfileEditAction: Chunk473749.useCallback(n => {
+      }, [e, t]),
+      trackUserProfileEditAction: i.useCallback(n => {
         null != e && (0, s.Of)(c({
           analyticsLocations: t
         }, e, n))
-      }, [module, exports]),
-      trackUserProfileEditSaved: Chunk473749.useCallback(n => {
+      }, [e, t]),
+      trackUserProfileEditSaved: i.useCallback(n => {
         null != e && (0, s.V1)(c({
           analyticsLocations: t
         }, e, n))
-      }, [module, exports]),
-      trackUserProfileWishlistAction: Chunk473749.useCallback(n => {
+      }, [e, t]),
+      trackUserProfileWishlistAction: i.useCallback(n => {
         null != e && (0, s.Er)(c({
           analyticsLocations: t
         }, e, n))
-      }, [module, exports])
+      }, [e, t])
     }
   }

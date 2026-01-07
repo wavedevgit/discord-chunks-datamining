@@ -13,5 +13,5 @@ let a = false,
   c = null;
 
 function u() {
-  return a ? s : (0, Chunk358085.isAndroid)() ? o : l
+  return a ? s : (0, i.isAndroid)() ? o : l
 }

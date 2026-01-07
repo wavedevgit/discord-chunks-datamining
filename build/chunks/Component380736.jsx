@@ -271,19 +271,19 @@ let P = {
 };
 
 function R() {
-  let [e, t] = Chunk473749.useState(false), [n, r] = Chunk473749.useState(false), a = (0, Chunk481060.q_F)({
-    scale: module ? .975 : 1,
+  let [e, t] = i.useState(false), [n, r] = i.useState(false), a = (0, c.q_F)({
+    scale: e ? .975 : 1,
     config: P,
     onRest: () => {
-      exports(false), setTimeout(() => {
-        Chunk54381(false)
+      t(false), setTimeout(() => {
+        r(false)
       }, 300)
     }
   });
   return {
-    clickSpring: require ? Chunk120356 : true,
-    handleMouseClick: Chunk473749.useCallback(() => {
-      Chunk54381(true), exports(true)
+    clickSpring: n ? a : true,
+    handleMouseClick: i.useCallback(() => {
+      r(true), t(true)
     }, [])
   }
 }

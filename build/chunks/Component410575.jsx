@@ -51,7 +51,7 @@ class f extends(r = Chunk473749.Component) {
     let {
       context: e
     } = this.props;
-    return null != module ? this.renderProvider(module) : (0, Chunk54381.jsx)(Chunk626135.AnalyticsContext.Consumer, {
+    return null != e ? this.renderProvider(e) : (0, i.jsx)(s.AnalyticsContext.Consumer, {
       children: e => this.renderProvider(e)
     })
   }

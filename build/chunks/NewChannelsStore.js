@@ -107,14 +107,14 @@ function R(e) {
 }
 
 function w() {
-  Chunk709054.default.keys(O).forEach(e => {
+  g.default.keys(O).forEach(e => {
     let t = O[e];
     O[e] = new Set([...t].filter(t => !m.ZP.isChannelOrParentOptedIn(e, t)))
   })
 }
 class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk984933.ZP, Chunk271383.ZP, Chunk430824.Z, Chunk306680.ZP, Chunk9156.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], w)
+    this.waitFor(c.default, u.Z, d.ZP, f.ZP, p.Z, _.ZP, m.ZP, l.Z), this.syncWith([m.ZP], w)
   }
   getNewChannelIds(e) {
     var t;

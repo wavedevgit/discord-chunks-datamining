@@ -10,11 +10,11 @@ var Chunk928518 = require("./928518.js"),
   Chunk501787 = require("./501787.js");
 
 function s() {
-  for (let e of Chunk928518.Z.getWindowKeys())
-    if (module.startsWith(Chunk981631.KJ3.CALL_TILE_POPOUT) && Chunk928518.Z.getWindowVisible(module)) returntrue;
+  for (let e of r.Z.getWindowKeys())
+    if (e.startsWith(a.KJ3.CALL_TILE_POPOUT) && r.Z.getWindowVisible(e)) returntrue;
   returnfalse
 }
 
 function l() {
-  return Chunk451478.Z.isVisible() || Chunk928518.Z.getWindowVisible(Chunk981631.KJ3.CHANNEL_CALL_POPOUT) || Chunk928518.Z.getWindowVisible(Chunk981631.KJ3.ACTIVITY_POPOUT) || Chunk928518.Z.getWindowVisible(Chunk501787.$J) || s()
+  return i.Z.isVisible() || r.Z.getWindowVisible(a.KJ3.CHANNEL_CALL_POPOUT) || r.Z.getWindowVisible(a.KJ3.ACTIVITY_POPOUT) || r.Z.getWindowVisible(o.$J) || s()
 }

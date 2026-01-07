@@ -51,8 +51,8 @@ function T(e) {
 let C = Chunk473749.createContext(true);
 
 function A() {
-  let e = Chunk473749.useContext(C);
-  return o()(null != module, "must use useGuildShopDisplayContext within a GuildShopDisplayContextProvider"), module
+  let e = i.useContext(C);
+  return o()(null != e, "must use useGuildShopDisplayContext within a GuildShopDisplayContextProvider"), e
 }
 
 function N(e) {

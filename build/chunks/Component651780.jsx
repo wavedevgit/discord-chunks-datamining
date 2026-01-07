@@ -90,45 +90,45 @@ let P = e => {
 };
 
 function w() {
-  Chunk473749.useEffect(() => {
-    Chunk570140.Z.wait(() => {
-      (0, Chunk355467.tZ)(), (0, Chunk821849.Y2)()
+  i.useEffect(() => {
+    s.Z.wait(() => {
+      (0, o.tZ)(), (0, d.Y2)()
     })
   }, []);
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-    t = (0, Chunk442837.e7)([Chunk899667.Z], () => null != module ? Chunk899667.Z.getAppliedGuildBoostsForGuild(module.id) : null),
-    n = (0, Chunk15640.V)();
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  let e = (0, l.e7)([N.Z], () => N.Z.getGuild()),
+    t = (0, l.e7)([v.Z], () => null != e ? v.Z.getAppliedGuildBoostsForGuild(e.id) : null),
+    n = (0, f.V)();
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.nLovSZ)
-      }), null != exports && null != module ? (0, Chunk54381.jsx)(T, {
-        appliedGuildBoosts: exports,
-        guildId: module.id
-      }) : null, (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk874176.titleBlurb,
+        children: I.intl.string(I.t.nLovSZ)
+      }), null != t && null != e ? (0, r.jsx)(T, {
+        appliedGuildBoosts: t,
+        guildId: e.id
+      }) : null, (0, r.jsx)(a.Text, {
+        className: S.titleBlurb,
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.hLOkp9, {
-          helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_SUBSCRIPTIONS)
+        children: I.intl.format(I.t.hLOkp9, {
+          helpdeskArticle: y.Z.getArticleURL(E.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
-    }), null != module && (0, Chunk54381.jsx)(Chunk174604.Z, {
-      guild: module,
+    }), null != e && (0, r.jsx)(h.Z, {
+      guild: e,
       onButtonClick: function() {
-        null != module && ((0, Chunk37234.xf)(), (0, Chunk441536.Z)(module.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_PREMIUM))
+        null != e && ((0, c.xf)(), (0, p.Z)(e.id, g.Z.GUILD_POWERUPS_GUILD_SETTINGS_PREMIUM))
       }
-    }), (0, Chunk54381.jsx)(Chunk399829.Z, {
-      tiers: (0, Chunk267642.cP)(null != module && module.features.has(Chunk981631.GuildFeatures.COMMUNITY) && module.maxStageVideoChannelUsers >= Chunk981631.B9o),
+    }), (0, r.jsx)(x.Z, {
+      tiers: (0, C.cP)(null != e && e.features.has(E.GuildFeatures.COMMUNITY) && e.maxStageVideoChannelUsers >= E.B9o),
       renderTier: P
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk874176.divider
-    }), require ? (0, Chunk54381.jsx)(Chunk404270.Z, {}) : null, require ? (0, Chunk54381.jsx)(Chunk774380.Z, {
-      onOpenPremiumClick: () => void Chunk626135.default.track(Chunk981631.rMx.PREMIUM_PROMOTION_OPENED, {
+    }), (0, r.jsx)("div", {
+      className: S.divider
+    }), n ? (0, r.jsx)(b.Z, {}) : null, n ? (0, r.jsx)(m.Z, {
+      onOpenPremiumClick: () => void O.default.track(E.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {
-          page: Chunk981631.ZY5.GUILD_SETTINGS,
-          section: Chunk981631.jXE.NITRO_CROSS_PROMO_FROM_BOOSTING,
-          object: Chunk981631.qAy.BUTTON_CTA
+          page: E.ZY5.GUILD_SETTINGS,
+          section: E.jXE.NITRO_CROSS_PROMO_FROM_BOOSTING,
+          object: E.qAy.BUTTON_CTA
         }
       })
     }) : null]

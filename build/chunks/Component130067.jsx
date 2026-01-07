@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => N,
-  _: () => Chunk794347._
+  _: () => h._
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,7 +54,7 @@ class A extends Chunk473749.PureComponent {
     this._initTimeout.start(1e3, this.setupVoiceActivity)
   }
   componentWillUnmount() {
-    this._initTimeout.stop(), this._silenceTimeout.stop(), this._micTestStop(), Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, this.handleVoiceActivity)
+    this._initTimeout.stop(), this._silenceTimeout.stop(), this._micTestStop(), g.Z.getMediaEngine().removeListener(u.aB.VoiceActivity, this.handleVoiceActivity)
   }
   _micTestStart() {
     let {
@@ -69,18 +69,18 @@ class A extends Chunk473749.PureComponent {
       location: l,
       isDeafened: c
     } = this.props, u = false;
-    module && !Chunk442837 && (Chunk846027.Z.toggleSelfDeaf(), u = true), Chunk846027.Z.setLoopback("mic_test", true), this._micTestStartTime = Date.now(), this.setState({
+    e && !c && (_.Z.toggleSelfDeaf(), u = true), _.Z.setLoopback("mic_test", true), this._micTestStartTime = Date.now(), this.setState({
       isMicTesting: true,
       isDetectingInput: true,
-      didDeafenUser: Chunk46973
-    }), Chunk626135.default.track(Chunk981631.rMx.MIC_TESTING_STARTED, {
-      input_device_name: exports,
-      input_device_volume: require,
-      output_device_name: Chunk54381,
-      output_device_volume: Chunk473749,
-      input_mode: Chunk120356,
+      didDeafenUser: u
+    }), b.default.track(y.rMx.MIC_TESTING_STARTED, {
+      input_device_name: t,
+      input_device_volume: n,
+      output_device_name: r,
+      output_device_volume: i,
+      input_mode: a,
       input_sensitivity_is_automatic: o,
-      input_sensitivity_threshold: Math.round(Chunk392711),
+      input_sensitivity_threshold: Math.round(s),
       location: l
     })
   }
@@ -92,10 +92,10 @@ class A extends Chunk473749.PureComponent {
       isVoiceConnected: n,
       isDeafened: r
     } = this.props;
-    exports && (require && Chunk54381 && module && Chunk846027.Z.toggleSelfDeaf(), Chunk846027.Z.setLoopback("mic_test", false), this.setState({
+    t && (n && r && e && _.Z.toggleSelfDeaf(), _.Z.setLoopback("mic_test", false), this.setState({
       isMicTesting: false,
       didDeafenUser: false
-    }), null != this._micTestStartTime && Chunk626135.default.track(Chunk981631.rMx.MIC_TESTING_STOPPED, {
+    }), null != this._micTestStartTime && b.default.track(y.rMx.MIC_TESTING_STOPPED, {
       testing_duration: Math.round((Date.now() - this._micTestStartTime) / 1e3)
     }))
   }
@@ -107,11 +107,11 @@ class A extends Chunk473749.PureComponent {
       isMicTesting: n,
       isDetectingInput: i
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk481060.Text, {
+    return (0, r.jsx)(p.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
-      className: Chunk740218.micTestCaption,
-      children: require ? Chunk473749 ? module : exports : null
+      className: v.micTestCaption,
+      children: n ? i ? e : t : null
     })
   }
   render() {
@@ -131,50 +131,50 @@ class A extends Chunk473749.PureComponent {
     } = this.props, {
       isMicTesting: g,
       volume: E
-    } = this.state, b = module && !Chunk131951 ? Chunk388032.intl.string(Chunk388032.t["9viE2A"]) : null;
-    Chunk131951 && module && !Chunk442837 && this._micTestStop();
-    let y = Chunk392711.length >= Chunk120356.length ? Chunk392711 : Chunk120356;
-    return (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk740218.container, Chunk393238),
-      children: (0, Chunk54381.jsx)(Chunk481060.gNt, {
-        label: null != exports ? exports : true,
-        hideLabel: Chunk846027,
-        description: Chunk846027 ? null : require,
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk740218.micTest,
-          children: [!Chunk846027 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-            children: [(0, Chunk54381.jsxs)("div", {
-              className: Chunk740218.buttonSizer,
+    } = this.state, b = e && !g ? O.intl.string(O.t["9viE2A"]) : null;
+    g && e && !c && this._micTestStop();
+    let y = s.length >= a.length ? s : a;
+    return (0, r.jsx)("div", {
+      className: o()(v.container, m),
+      children: (0, r.jsx)(p.gNt, {
+        label: null != t ? t : true,
+        hideLabel: _,
+        description: _ ? null : n,
+        children: (0, r.jsxs)("div", {
+          className: v.micTest,
+          children: [!_ && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsxs)("div", {
+              className: v.buttonSizer,
               "aria-hidden": true,
-              children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
-                buttonRef: Chunk846519,
+              children: [(0, r.jsx)(p.Button, {
+                buttonRef: d,
                 size: "sm",
                 variant: l,
-                text: Chunk981631
-              }), (0, Chunk54381.jsx)("div", {
-                className: Chunk740218.buttonSizerSpacer
+                text: y
+              }), (0, r.jsx)("div", {
+                className: v.buttonSizerSpacer
               })]
-            }), (0, Chunk54381.jsx)(Chunk28664.u, {
-              text: Chunk626135,
-              children: (0, Chunk54381.jsx)("div", {
-                className: Chunk740218.buttonWrapper,
-                style: null != Chunk46973 ? {
-                  minWidth: Chunk46973
+            }), (0, r.jsx)(f.u, {
+              text: b,
+              children: (0, r.jsx)("div", {
+                className: v.buttonWrapper,
+                style: null != u ? {
+                  minWidth: u
                 } : {
                   visibility: "hidden"
                 },
-                children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+                children: (0, r.jsx)(p.Button, {
                   size: "sm",
                   variant: l,
-                  text: Chunk131951 ? Chunk392711 : Chunk120356,
+                  text: g ? s : a,
                   onClick: this.handleToggleMicTest,
                   fullWidth: true
                 })
               })
             })]
-          }), (0, Chunk54381.jsx)(Chunk794347.Z, {
-            progress: Chunk131951 || Chunk846027 ? Chunk19780 + 100 : 0,
-            notchBackground: Chunk473749,
+          }), (0, r.jsx)(h.Z, {
+            progress: g || _ ? E + 100 : 0,
+            notchBackground: i,
             notchClassName: this.props.notchClassName,
             children: this.renderCaption()
           })]

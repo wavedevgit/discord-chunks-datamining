@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk594174 = require("./594174.js");
 let i = () => {
   var e;
-  return (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed) === false
+  return (null == (e = r.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
 }

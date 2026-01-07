@@ -252,13 +252,13 @@ class el extends Chunk473749.PureComponent {
     let {
       _input: e
     } = this;
-    null != module && module.select();
+    null != e && e.select();
     let {
       guildId: t,
       applications: n,
       canCreateStoreChannel: i
     } = this.props;
-    Chunk54381 && null == require && Chunk749210.Z.fetchApplications(exports), Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.OPEN_MODAL, {
+    i && null == n && f.Z.fetchApplications(t), I.ZP.trackWithMetadata(X.rMx.OPEN_MODAL, {
       type: "Create Channel"
     })
   }
@@ -271,7 +271,7 @@ class el extends Chunk473749.PureComponent {
   }
   getGuildId() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props;
-    return module.guildId
+    return e.guildId
   }
   canSubmit() {
     let {
@@ -285,30 +285,30 @@ class el extends Chunk473749.PureComponent {
       name: s,
       submitting: a
     } = this.state;
-    return !Chunk512722 && require !== Chunk481060.Dvm.EXITING && "" !== s && "" !== s.trim() && (!Chunk54381 || !!(0, Chunk605436.nT)(Chunk473749, module, exports)) && (Chunk473749 !== Chunk981631.d4z.GUILD_STORE || null != Chunk120356)
+    return !a && n !== m.Dvm.EXITING && "" !== s && "" !== s.trim() && (!i || !!(0, y.nT)(r, e, t)) && (r !== X.d4z.GUILD_STORE || null != l)
   }
   getIconComponent() {
     let {
       isPrivate: e,
       channelType: t
     } = this.state;
-    switch (exports) {
-      case Chunk981631.d4z.GUILD_TEXT:
-        return module ? Chunk481060.W4G : Chunk481060.VL1;
-      case Chunk981631.d4z.GUILD_FORUM:
-        return Chunk481060.Mmi;
-      case Chunk981631.d4z.GUILD_MEDIA:
-        return Chunk481060.XBm;
-      case Chunk981631.d4z.GUILD_VOICE:
-        return module ? Chunk481060.gjC : Chunk481060.gj8;
-      case Chunk981631.d4z.GUILD_STORE:
-        return Chunk481060.lO_;
-      case Chunk981631.d4z.GUILD_ANNOUNCEMENT:
-        return Chunk481060.MqZ;
-      case Chunk981631.d4z.GUILD_STAGE_VOICE:
-        return Chunk481060.ewx;
+    switch (t) {
+      case X.d4z.GUILD_TEXT:
+        return e ? m.W4G : m.VL1;
+      case X.d4z.GUILD_FORUM:
+        return m.Mmi;
+      case X.d4z.GUILD_MEDIA:
+        return m.XBm;
+      case X.d4z.GUILD_VOICE:
+        return e ? m.gjC : m.gj8;
+      case X.d4z.GUILD_STORE:
+        return m.lO_;
+      case X.d4z.GUILD_ANNOUNCEMENT:
+        return m.MqZ;
+      case X.d4z.GUILD_STAGE_VOICE:
+        return m.ewx;
       default:
-        return (0, Chunk131704.zi)(exports) ? Chunk481060.VL1 : Chunk231338.Vq
+        return (0, D.zi)(t) ? m.VL1 : Q.Vq
     }
   }
   getHelperText() {
@@ -317,9 +317,9 @@ class el extends Chunk473749.PureComponent {
       channelType: t,
       guildId: r
     } = this.props;
-    return null != module ? Chunk388032.intl.format(Chunk388032.t.s2ZzZZ, {
-      name: (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z, true)
-    }) : exports === Chunk981631.d4z.GUILD_FORUM ? Chunk388032.intl.format(Chunk388032.t.tbVWyR, {
+    return null != e ? K.intl.format(K.t.s2ZzZZ, {
+      name: (0, F.F6)(e, H.default, B.Z, true)
+    }) : t === X.d4z.GUILD_FORUM ? K.intl.format(K.t.tbVWyR, {
       forumUpsellHook: (e, t) => (0, i.jsx)(m.eee, {
         onClick: () => (0, m.ZDy)(async () => {
           let {
@@ -341,14 +341,14 @@ class el extends Chunk473749.PureComponent {
         errors: n,
         channelType: r
       } = this.state;
-    (null == require ? true : require.name) != null && (e = Array.isArray(require.name) ? require.name.join(", ") : require.name);
-    let l = Chunk473749 === Chunk981631.d4z.GUILD_CATEGORY,
-      s = Chunk120356 ? Chunk388032.intl.string(Chunk388032.t.OCAkGP) : Chunk388032.intl.string(Chunk388032.t.PVbHDl),
+    (null == n ? true : n.name) != null && (e = Array.isArray(n.name) ? n.name.join(", ") : n.name);
+    let l = r === X.d4z.GUILD_CATEGORY,
+      s = l ? K.intl.string(K.t.OCAkGP) : K.intl.string(K.t.PVbHDl),
       a = this.getIconComponent();
-    return (0, Chunk54381.jsx)(Chunk481060.oil, {
+    return (0, i.jsx)(m.oil, {
       label: s,
       helperText: this.getHelperText(),
-      error: module,
+      error: e,
       value: this.state.name,
       onChange: this.handleNameChange,
       inputRef: this.setInputRef,
@@ -362,14 +362,14 @@ class el extends Chunk473749.PureComponent {
           default:
             return K.intl.string(K.t["bw/b8E"])
         }
-      }(Chunk473749),
-      leading: Chunk120356 ? true : Chunk512722,
+      }(r),
+      leading: l ? true : a,
       trailing: {
         type: "emoji",
-        button: (0, Chunk54381.jsx)(er, {
+        button: (0, i.jsx)(er, {
           onEmojiPicked: this.insertEmojiAtPosition,
           isPrivateChannel: this.state.isPrivate,
-          guildId: exports
+          guildId: t
         })
       },
       autoFocus: true,
@@ -392,10 +392,10 @@ class el extends Chunk473749.PureComponent {
       channelType: a,
       isPrivate: o
     } = this.state;
-    if (null != module || Chunk512722 === Chunk981631.d4z.GUILD_CATEGORY) return;
-    let u = null != exports && exports.length > 0;
-    return (0, Chunk54381.jsx)(Chunk793030.Eep, {
-      label: Chunk388032.intl.string(Chunk388032.t["7ZcXG2"]),
+    if (null != e || a === X.d4z.GUILD_CATEGORY) return;
+    let u = null != t && t.length > 0;
+    return (0, i.jsx)(d.Eep, {
+      label: K.intl.string(K.t["7ZcXG2"]),
       options: function(e) {
         let {
           isPrivate: t,
@@ -442,12 +442,12 @@ class el extends Chunk473749.PureComponent {
         }), s
       }({
         isPrivate: o,
-        showStoreChannelOption: require && Chunk392711,
-        showAnnouncementChannelOption: Chunk473749,
-        canCreateStageChannel: Chunk120356,
+        showStoreChannelOption: n && u,
+        showAnnouncementChannelOption: r,
+        canCreateStageChannel: l,
         canCreateMediaChannel: s
       }),
-      value: Chunk512722,
+      value: a,
       onChange: this.handleTypeChange
     })
   }
@@ -461,42 +461,42 @@ class el extends Chunk473749.PureComponent {
       showBranches: l,
       hasBranches: s
     } = this.state;
-    if (null == module || 0 === module.length) throw Error("Unexpected empty applications");
-    return (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
-        label: Chunk388032.intl.string(Chunk388032.t.vPIW2L),
-        options: module.map(e => ({
+    if (null == e || 0 === e.length) throw Error("Unexpected empty applications");
+    return (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(g.y6, {
+        label: K.intl.string(K.t.vPIW2L),
+        options: e.map(e => ({
           label: e.name,
           value: e.id
         })),
-        placeholder: Chunk388032.intl.string(Chunk388032.t["3XfCPX"]),
-        value: exports,
+        placeholder: K.intl.string(K.t["3XfCPX"]),
+        value: t,
         onChange: this.handleApplicationChange,
-        className: Chunk238365.storeChannelOptionSelector
-      }), null != exports ? (0, Chunk54381.jsx)(Chunk620123.Z, {
-        label: Chunk388032.intl.string(Chunk388032.t.XNIWFj),
-        applicationId: exports,
+        className: J.storeChannelOptionSelector
+      }), null != t ? (0, i.jsx)(O.Z, {
+        label: K.intl.string(K.t.XNIWFj),
+        applicationId: t,
         onChange: this.handleSKUChange,
-        selectedSkuId: require,
-        className: Chunk238365.storeChannelOptionSelector
-      }, exports) : null, null != exports && s ? (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["3e9mH5"]),
-        description: Chunk388032.intl.format(Chunk388032.t.UVXL1R, {
-          devPortalUrl: Chunk981631.EYA.API_DOCS_GAME_AND_SERVER_MANAGEMENT
+        selectedSkuId: n,
+        className: J.storeChannelOptionSelector
+      }, t) : null, null != t && s ? (0, i.jsx)(m.rsf, {
+        label: K.intl.string(K.t["3e9mH5"]),
+        description: K.intl.format(K.t.UVXL1R, {
+          devPortalUrl: X.EYA.API_DOCS_GAME_AND_SERVER_MANAGEMENT
         }),
-        icon: Chunk481060._m8,
+        icon: m._m8,
         onChange: this.handleShowBranchesToggle,
-        checked: Chunk120356
-      }) : null, null != exports ? (0, Chunk54381.jsx)(Chunk332063.Z, {
-        label: Chunk120356 ? Chunk388032.intl.string(Chunk388032.t.o7DqF3) : true,
-        applicationId: exports,
+        checked: l
+      }) : null, null != t ? (0, i.jsx)(b.Z, {
+        label: l ? K.intl.string(K.t.o7DqF3) : true,
+        applicationId: t,
         onChange: this.handleBranchChange,
-        selectedBranchId: Chunk473749,
-        hide: !Chunk120356,
-        includeMaster: Chunk120356,
+        selectedBranchId: r,
+        hide: !l,
+        includeMaster: l,
         onHasBranchesChange: this.handleHasBranchesChange,
-        className: Chunk238365.storeChannelOptionSelector
-      }, exports) : null]
+        className: J.storeChannelOptionSelector
+      }, t) : null]
     })
   }
   renderPrivacyOptions() {
@@ -506,15 +506,15 @@ class el extends Chunk473749.PureComponent {
       channelType: t,
       isPrivate: n
     } = this.state;
-    if (null != module || exports === Chunk981631.d4z.GUILD_ANNOUNCEMENT) return null;
-    let r = exports === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t.lEPAZ5) : Chunk388032.intl.string(Chunk388032.t.aUI70g),
-      l = exports === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t.RQUk61) : Chunk388032.intl.string(Chunk388032.t.YguuKq);
-    return (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk473749,
-      description: Chunk120356,
-      icon: Chunk481060.mBM,
+    if (null != e || t === X.d4z.GUILD_ANNOUNCEMENT) return null;
+    let r = t === X.d4z.GUILD_CATEGORY ? K.intl.string(K.t.lEPAZ5) : K.intl.string(K.t.aUI70g),
+      l = t === X.d4z.GUILD_CATEGORY ? K.intl.string(K.t.RQUk61) : K.intl.string(K.t.YguuKq);
+    return (0, i.jsx)(m.rsf, {
+      label: r,
+      description: l,
+      icon: m.mBM,
       onChange: this.handlePrivacyChange,
-      checked: require
+      checked: n
     })
   }
   renderError(e) {
@@ -563,30 +563,30 @@ class el extends Chunk473749.PureComponent {
         onClose: c,
         channelType: h
       } = this.props,
-      p = null != o ? Chunk388032.intl.string(Chunk388032.t.dEaPc4) : Chunk473749 === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["ISN+NM"]) : Chunk388032.intl.string(Chunk388032.t["fUYU+j"]);
-    if (null != Chunk392711) {
-      let n = Chunk592125.Z.getChannel(Chunk392711);
-      t = Chunk388032.intl.format(Chunk388032.t.L1zJgb, {
-        categoryName: null != (e = null == require ? true : require.name) ? module : ""
+      p = null != o ? K.intl.string(K.t.dEaPc4) : r === X.d4z.GUILD_CATEGORY ? K.intl.string(K.t["ISN+NM"]) : K.intl.string(K.t["fUYU+j"]);
+    if (null != u) {
+      let n = Z.Z.getChannel(u);
+      t = K.intl.format(K.t.L1zJgb, {
+        categoryName: null != (e = null == n ? true : n.name) ? e : ""
       })
     }
-    n = Chunk442837 === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["ISN+NM"]) : Chunk388032.intl.string(Chunk388032.t["fUYU+j"]);
-    let g = Chunk120356 || Chunk473749 === Chunk981631.d4z.GUILD_STAGE_VOICE;
-    return (0, Chunk54381.jsx)("form", {
+    n = h === X.d4z.GUILD_CATEGORY ? K.intl.string(K.t["ISN+NM"]) : K.intl.string(K.t["fUYU+j"]);
+    let g = l || r === X.d4z.GUILD_STAGE_VOICE;
+    return (0, i.jsx)("form", {
       onSubmit: this.handleSubmit,
-      children: (0, Chunk54381.jsx)(Chunk793030.Modal, {
-        transitionState: Chunk512722,
+      children: (0, i.jsx)(d.Modal, {
+        transitionState: a,
         onClose: c,
-        title: Chunk692547,
-        subtitle: exports,
+        title: p,
+        subtitle: t,
         preview: this.renderError(),
         actions: [{
           variant: "secondary",
-          text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+          text: K.intl.string(K.t["ETE/oC"]),
           onClick: c
-        }, Chunk199849 ? {
+        }, g ? {
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t.PDTjLN),
+          text: K.intl.string(K.t.PDTjLN),
           type: "button",
           onClick: () => {
             this.setState({
@@ -598,15 +598,15 @@ class el extends Chunk473749.PureComponent {
           variant: "primary",
           type: "submit",
           disabled: !this.canSubmit(),
-          text: require
+          text: n
         }],
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk238365.createChannelContent,
-          children: [this.renderType(), this.renderName(), Chunk442837 === Chunk981631.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, Chunk54381.jsx)(Chunk636816.Z, {
+        children: (0, i.jsxs)("div", {
+          className: J.createChannelContent,
+          children: [this.renderType(), this.renderName(), h === X.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, i.jsx)(Y.Z, {
             guildId: s,
-            channelType: Chunk473749,
-            className: Chunk238365.channelTypeDescription
-          }), Chunk473749 === Chunk981631.d4z.GUILD_STAGE_VOICE ? null : this.renderPrivacyOptions()]
+            channelType: r,
+            className: J.channelTypeDescription
+          }), r === X.d4z.GUILD_STAGE_VOICE ? null : this.renderPrivacyOptions()]
         })
       })
     })
@@ -625,20 +625,20 @@ class el extends Chunk473749.PureComponent {
         slide: "CHANNEL_INFO"
       })
     }, o = this.canSubmit();
-    return (0, Chunk54381.jsx)("form", {
+    return (0, i.jsx)("form", {
       onSubmit: this.handleSubmit,
-      children: (0, Chunk54381.jsx)(ei, {
-        onClose: Chunk120356,
+      children: (0, i.jsx)(ei, {
+        onClose: l,
         transitionState: s,
-        channelType: exports,
+        channelType: t,
         iconComponent: this.getIconComponent(),
         error: this.renderError(true),
-        name: module,
-        guildId: Chunk473749,
-        onBack: Chunk512722,
+        name: e,
+        guildId: r,
+        onBack: a,
         canSubmit: o,
         onMembersChange: this.handlePermissionOverwriteChange,
-        pendingPermissionOverwrites: require
+        pendingPermissionOverwrites: n
       })
     })
   }
@@ -646,7 +646,7 @@ class el extends Chunk473749.PureComponent {
     let {
       slide: e
     } = this.state;
-    return "CHANNEL_INFO" === module ? this.renderCreateChannelModal() : this.renderAddMemberSlideContent()
+    return "CHANNEL_INFO" === e ? this.renderCreateChannelModal() : this.renderAddMemberSlideContent()
   }
   constructor(e) {
     super(e), $(this, "headerId", (0, x.hQ)()), $(this, "_input", true), $(this, "setInputRef", e => {

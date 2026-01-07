@@ -76,10 +76,10 @@ let g = {
     [Chunk206583.kG.PLAYSTATION]: Chunk374129.Z
   },
   E = {
-    [Chunk206583.kG.SPOTIFY]: () => Chunk388032.intl.string(Chunk388032.t["0ZB/XE"]),
-    [Chunk206583.kG.CRUNCHYROLL]: () => Chunk388032.intl.string(Chunk388032.t.jdJYXw),
-    [Chunk206583.kG.XBOX]: () => Chunk388032.intl.string(Chunk388032.t.Nfvo72),
-    [Chunk206583.kG.PLAYSTATION]: () => Chunk388032.intl.string(Chunk388032.t.fFl4jo)
+    [Chunk206583.kG.SPOTIFY]: () => u.intl.string(u.t["0ZB/XE"]),
+    [Chunk206583.kG.CRUNCHYROLL]: () => u.intl.string(u.t.jdJYXw),
+    [Chunk206583.kG.XBOX]: () => u.intl.string(u.t.Nfvo72),
+    [Chunk206583.kG.PLAYSTATION]: () => u.intl.string(u.t.fFl4jo)
   };
 
 function b(e) {

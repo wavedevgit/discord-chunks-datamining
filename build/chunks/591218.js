@@ -22,7 +22,7 @@ function c(e, t, n) {
 let u = new Chunk106617.Z;
 class d extends Chunk836560.EventEmitter {
   destroy() {
-    null != this.stream && (u.release(this.stream), this.stream = null), null != this.streamId && (0, Chunk376398.jC)(this.streamId), this.destroyed = true
+    null != this.stream && (u.release(this.stream), this.stream = null), null != this.streamId && (0, o.jC)(this.streamId), this.destroyed = true
   }
   getStreamId() {
     return this.streamId

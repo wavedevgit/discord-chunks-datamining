@@ -32,30 +32,30 @@ let h = e => e / 400,
   E = (0, Chunk460181.tu)("stage_waiting", "stage_waiting", h(Chunk131951.Z.getOutputVolume()));
 
 function b() {
-  let e = Chunk944486.Z.getVoiceChannelId();
-  if (null == module) {
+  let e = l.Z.getVoiceChannelId();
+  if (null == e) {
     E.stop(), g = false;
     return
   }
-  let t = Chunk592125.Z.getChannel(module);
-  if (!(null == exports ? true : exports.isGuildStageVoice()) || Chunk131951.Z.isSelfDeaf()) {
+  let t = o.Z.getChannel(e);
+  if (!(null == t ? true : t.isGuildStageVoice()) || s.Z.isSelfDeaf()) {
     E.stop(), g = false;
     return
   }
-  if (Chunk754277.Z.shouldPlay()) {
-    E.volume = h(Chunk131951.Z.getOutputVolume()), E.loop(), g = true;
+  if (_.Z.shouldPlay()) {
+    E.volume = h(s.Z.getOutputVolume()), E.loop(), g = true;
     return
   }
-  if (Chunk427679.Z.isLive(module)) {
+  if (p.Z.isLive(e)) {
     E.stop(), g = false;
     return
   }
-  if (Chunk754277.Z.isMuted()) {
+  if (_.Z.isMuted()) {
     E.pause(), g = false;
     return
   }
-  let n = null != Object.values(Chunk979651.Z.getVoiceStatesForChannel(module)).find(e => !e.suppress && !e.isVoiceMuted());
-  require || g ? require && (E.pause(), g = false) : (E.volume = h(Chunk131951.Z.getOutputVolume()), E.loop(), g = true)
+  let n = null != Object.values(c.Z.getVoiceStatesForChannel(e)).find(e => !e.suppress && !e.isVoiceMuted());
+  n || g ? n && (E.pause(), g = false) : (E.volume = h(s.Z.getOutputVolume()), E.loop(), g = true)
 }
 
 function y(e) {

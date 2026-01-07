@@ -17,11 +17,11 @@ var Chunk536285 = require("./536285.js"),
   Chunk186901 = require("./186901.js");
 
 function u() {
-  Chunk536285.default.connect()
+  r.default.connect()
 }
 
 function d() {
-  Chunk536285.default.disconnect()
+  r.default.disconnect()
 }
 
 function f(e, t) {

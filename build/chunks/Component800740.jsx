@@ -35,9 +35,9 @@ class T extends Chunk473749.PureComponent {
     let {
       autoThreshold: e
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
-      checked: module,
+    return (0, l.jsx)(o.rsf, {
+      label: x.intl.string(x.t.I1Zuq0),
+      checked: e,
       onChange: this.handleAutoThresholdChange
     })
   }
@@ -46,19 +46,19 @@ class T extends Chunk473749.PureComponent {
       autoThreshold: e,
       threshold: t
     } = this.props;
-    if (!module) return (0, Chunk54381.jsx)(Chunk481060.iRW, {
-      initialValue: exports + 100,
+    if (!e) return (0, l.jsx)(o.iRW, {
+      initialValue: t + 100,
       onValueRender: this.handleValueRender,
       onValueChange: this.handleSensitivityChange,
-      label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
+      label: x.intl.string(x.t["sqUm+k"]),
       hideLabel: true
     })
   }
   render() {
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk478411.marginBottom20,
-      children: (0, Chunk54381.jsxs)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
+    return (0, l.jsx)("div", {
+      className: m.marginBottom20,
+      children: (0, l.jsxs)(o.gNt, {
+        label: x.intl.string(x.t["sqUm+k"]),
         role: "group",
         children: [this.renderAutomaticVADToggle(), this.renderSlider()]
       })

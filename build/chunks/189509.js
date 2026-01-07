@@ -10,6 +10,6 @@ var Chunk607070 = require("./607070.js"),
 let o = {
   binds: ["return"],
   action() {
-    if (!Chunk607070.Z.keyboardModeEnabled && Chunk585483.S.hasSubscribers(Chunk981631.CkL.MODAL_SUBMIT)) return Chunk585483.S.dispatch(Chunk981631.CkL.MODAL_SUBMIT), false
+    if (!r.Z.keyboardModeEnabled && i.S.hasSubscribers(a.CkL.MODAL_SUBMIT)) return i.S.dispatch(a.CkL.MODAL_SUBMIT), false
   }
 }

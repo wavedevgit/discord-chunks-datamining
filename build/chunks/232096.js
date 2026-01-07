@@ -21,12 +21,12 @@ function a() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
     t = document.createElement("div"),
     n = document.createElement("div");
-  for (let [e, n] of r) exports.style[module] = require;
-  for (let [e, t] of i) require.style[module] = exports;
-  exports.appendChild(require), document.body.appendChild(exports), exports.className = module;
+  for (let [e, n] of r) t.style[e] = n;
+  for (let [e, t] of i) n.style[e] = t;
+  t.appendChild(n), document.body.appendChild(t), t.className = e;
   let a = {
-    width: exports.offsetWidth - exports.clientWidth,
-    height: exports.offsetHeight - exports.clientHeight
+    width: t.offsetWidth - t.clientWidth,
+    height: t.offsetHeight - t.clientHeight
   };
-  return document.body.removeChild(exports), a
+  return document.body.removeChild(t), a
 }

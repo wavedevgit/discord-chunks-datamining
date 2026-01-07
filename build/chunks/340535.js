@@ -4,12 +4,12 @@
 var Chunk286233 = require("./286233.js"),
   Chunk352346 = require("./352346.js");
 module.exports = function() {
-  var e = Chunk352346();
-  return Chunk286233(Array.prototype, {
-    map: module
+  var e = i();
+  return r(Array.prototype, {
+    map: e
   }, {
     map: function() {
-      return Array.prototype.map !== module
+      return Array.prototype.map !== e
     }
-  }), module
+  }), e
 }

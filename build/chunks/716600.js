@@ -8,5 +8,5 @@ var Chunk442837 = require("./442837.js"),
   Chunk317381 = require("./317381.js");
 
 function a() {
-  return (0, Chunk442837.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getCurrentEmbeddedActivity())
+  return (0, r.e7)([i.ZP], () => i.ZP.getCurrentEmbeddedActivity())
 }

@@ -270,33 +270,33 @@ let ee = (e, t, i) => {
       headingText: e,
       headingTop: t
     } = eo();
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)("img", {
-        src: Chunk578478,
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("img", {
+        src: q,
         alt: "",
-        className: Chunk521020.headerArtV2
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk521020.containerV2,
+        className: W.headerArtV2
+      }), (0, r.jsx)("div", {
+        className: W.containerV2,
         "data-testid": "subscriber-nitro-home-hero-header",
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk521020.contentV2,
-          children: [exports, (0, Chunk54381.jsx)(Chunk481060.Heading, {
+        children: (0, r.jsxs)("div", {
+          className: W.contentV2,
+          children: [t, (0, r.jsx)(u.Heading, {
             variant: "display-lg",
             color: "always-white",
-            className: Chunk521020.header,
-            children: module
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk521020.premiumSubscribeButton,
-            children: (0, Chunk54381.jsx)(Chunk736519.Z, {
-              look: Chunk755721.iL.FILLED,
-              color: Chunk755721.Tt.BRAND,
+            className: W.header,
+            children: e
+          }), (0, r.jsx)("div", {
+            className: W.premiumSubscribeButton,
+            children: (0, r.jsx)(R.Z, {
+              look: c.iL.FILLED,
+              color: c.Tt.BRAND,
               textOptions: {
-                textOverride: Chunk388032.intl.string(Chunk388032.t["3KomGa"])
+                textOverride: Y.intl.string(Y.t["3KomGa"])
               },
-              className: Chunk521020.button
+              className: W.button
             })
-          }), (0, Chunk54381.jsx)(Chunk647277._, {
-            className: Chunk521020.referralBanner
+          }), (0, r.jsx)(P._, {
+            className: W.referralBanner
           })]
         })
       })]

@@ -12,12 +12,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.ON)(Chunk313789.n.APPEARANCE_REDIRECT, {
     useSearchTerms: () => [],
-    Component: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+    Component: () => (0, i.jsx)(l.Text, {
       variant: "text-md/normal",
-      children: Chunk388032.intl.format(Chunk388032.t.DHpTjT, {
+      children: o.intl.format(o.t.DHpTjT, {
         onAppearanceClick() {
-          (0, Chunk518596.openUserSettings)(Chunk313789.n.APPEARANCE_PANEL, {
-            section: Chunk981631.oAB.APPEARANCE
+          (0, r.openUserSettings)(u.n.APPEARANCE_PANEL, {
+            section: a.oAB.APPEARANCE
           })
         }
       })

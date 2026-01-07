@@ -24,5 +24,5 @@ module.exports = function() {
       e || (e = s()), e.set(t, n)
     }
   };
-  return exports
+  return t
 }

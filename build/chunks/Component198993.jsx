@@ -45,7 +45,7 @@ class p extends(o = Chunk473749.PureComponent) {
       {
         className: r,
         text: t
-      } = module,
+      } = e,
       n = function(e, r) {
         if (null == e) return {};
         var t, n, o = function(e, r) {
@@ -60,16 +60,16 @@ class p extends(o = Chunk473749.PureComponent) {
           for (n = 0; n < s.length; n++) t = s[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
         }
         return o
-      }(module, ["className", "text"]);
-    return (0, Chunk54381.jsx)("div", {
+      }(e, ["className", "text"]);
+    return (0, l.jsx)("div", {
       style: {
         width: n.size,
         height: n.size,
         backgroundColor: n.bgColor
       },
-      className: c()(Chunk18598.qrCodeContainer, exports),
-      children: (0, Chunk54381.jsx)(Chunk112342.default, C({
-        value: require,
+      className: c()(f.qrCodeContainer, r),
+      children: (0, l.jsx)(d.default, C({
+        value: t,
         level: "M"
       }, n))
     })
@@ -84,14 +84,14 @@ class v extends(s = Chunk473749.PureComponent) {
   render() {
     let {
       overlaySize: e
-    } = this.props, r = x[null != module ? module : "SIZE_40"];
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk18598.qrCodeOverlayContainer,
-      children: [(0, Chunk54381.jsx)(p, C({}, this.props)), (0, Chunk54381.jsx)("div", {
-        className: Chunk18598.qrCodeOverlay,
-        children: (0, Chunk54381.jsx)("img", {
-          className: Chunk18598[exports],
-          src: Chunk515695,
+    } = this.props, r = x[null != e ? e : "SIZE_40"];
+    return (0, l.jsxs)("div", {
+      className: f.qrCodeOverlayContainer,
+      children: [(0, l.jsx)(p, C({}, this.props)), (0, l.jsx)("div", {
+        className: f.qrCodeOverlay,
+        children: (0, l.jsx)("img", {
+          className: f[r],
+          src: m,
           alt: ""
         })
       })]

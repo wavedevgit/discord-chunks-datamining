@@ -42,13 +42,13 @@ function A(e) {
 }
 
 function N() {
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_SOUNDBOARD,
-      children: [(0, Chunk54381.jsx)(Chunk918257.Z, {}), (0, Chunk54381.jsx)(Chunk970813.Z, {})]
-    }), (0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
-      children: (0, Chunk54381.jsx)(P, {})
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)(d.F, {
+      setting: v.s6.VOICE_AND_VIDEO_SOUNDBOARD,
+      children: [(0, r.jsx)(y.Z, {}), (0, r.jsx)(O.Z, {})]
+    }), (0, r.jsx)(d.F, {
+      setting: v.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
+      children: (0, r.jsx)(P, {})
     })]
   })
 }
@@ -56,15 +56,15 @@ function N() {
 function P() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), [t, n] = Chunk473749.useState(Chunk710111.hY), s = (0, Chunk893663.tT)(exports), d = A(Chunk596454), E = (null == Chunk596454 ? true : Chunk596454.type) === Chunk893663.zx.GLOBAL, y = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.hasFetchedAllSounds()) && null != Chunk596454 && null == Chunk921801;
-  Chunk473749.useEffect(() => {
-    Chunk918257 && (0, Chunk242291.tt)({
-      location: module
+  } = (0, l.ZP)(), [t, n] = i.useState(I.hY), s = (0, m.tT)(t), d = A(s), E = (null == s ? true : s.type) === m.zx.GLOBAL, y = (0, a.e7)([p.Z], () => p.Z.hasFetchedAllSounds()) && null != s && null == d;
+  i.useEffect(() => {
+    y && (0, _.tt)({
+      location: e
     })
-  }, [Chunk918257, module]), Chunk473749.useEffect(() => {
-    (0, Chunk208049.w)()
+  }, [y, e]), i.useEffect(() => {
+    (0, f.w)()
   }, []);
-  let O = Chunk473749.useCallback((e, t) => {
+  let O = i.useCallback((e, t) => {
     let {
       inDropdown: n
     } = t;
@@ -72,42 +72,42 @@ function P() {
       guildId: e.value
     }) : null
   }, []);
-  return (0, Chunk54381.jsx)(Chunk738486.Z, {
-    children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.nzUc3B),
-      description: Chunk388032.intl.format(Chunk388032.t.u9RWmv, {
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
+  return (0, r.jsx)(b.Z, {
+    children: (0, r.jsxs)(o.C3N, {
+      label: T.intl.string(T.t.nzUc3B),
+      description: T.intl.format(T.t.u9RWmv, {
+        helpdeskArticle: g.Z.getArticleURL(S.BhN.SOUNDBOARD)
       }),
-      children: [(0, Chunk54381.jsx)(Chunk856768.Z, {
-        guildId: exports,
-        className: Chunk395510.guildSelector,
+      children: [(0, r.jsx)(c.Z, {
+        guildId: t,
+        className: C.guildSelector,
         globalOption: {
-          label: Chunk388032.intl.string(Chunk388032.t["CpEUP/"]),
-          value: Chunk710111.hY
+          label: T.intl.string(T.t["CpEUP/"]),
+          value: I.hY
         },
         onChange: e => {
           n(null == e ? I.hY : e.id)
         },
-        renderOptionSuffix: Chunk970813,
+        renderOptionSuffix: O,
         hideDivider: true
-      }), (0, Chunk54381.jsxs)(Chunk993413.Z, {
-        title: Chunk388032.intl.format(Chunk388032.t.I2TsYN, {
-          nitroWheelHook: () => (0, Chunk54381.jsx)(Chunk481060.SrA, {
+      }), (0, r.jsxs)(u.Z, {
+        title: T.intl.format(T.t.I2TsYN, {
+          nitroWheelHook: () => (0, r.jsx)(o.SrA, {
             size: "md",
             color: "currentColor",
-            className: Chunk395510.nitroWheel
+            className: C.nitroWheel
           })
         }),
-        children: [(0, Chunk54381.jsx)(Chunk331642.Z, {
-          sound: Chunk921801,
-          isGlobal: Chunk581883,
+        children: [(0, r.jsx)(h.Z, {
+          sound: d,
+          isGlobal: E,
           onSelect: n => {
             null == n ? (0, _.aC)(t, e) : (0, _.SZ)(t, n, e)
           }
-        }), Chunk918257 && (0, Chunk54381.jsx)(Chunk481060.Wn, {
-          className: Chunk395510.notice,
-          messageType: Chunk481060.QYI.WARNING,
-          children: Chunk388032.intl.string(Chunk388032.t.WkPsFR)
+        }), y && (0, r.jsx)(o.Wn, {
+          className: C.notice,
+          messageType: o.QYI.WARNING,
+          children: T.intl.string(T.t.WkPsFR)
         })]
       })]
     })

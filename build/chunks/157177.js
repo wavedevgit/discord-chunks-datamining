@@ -10,7 +10,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk921599 = require("./921599.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.k4)(Chunk313789.n.APPEARANCE_MESSAGE_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ed/sA"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.u9N6Qh),
-  buildLayout: () => [Chunk152977.w, Chunk943058.K, Chunk921599.K]
+  useTitle: () => a.intl.string(a.t["2ed/sA"]),
+  useSubtitle: () => a.intl.string(a.t.u9N6Qh),
+  buildLayout: () => [u.w, s.K, r.K]
 })

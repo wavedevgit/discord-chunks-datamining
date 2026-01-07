@@ -21,8 +21,10 @@ function o(e, t) {
 }
 
 function s() {
-  if (!(0, Chunk435749.A)()) return void a.clear();
-  letChunk672513 = require("./672513.js");
-  for (let [t, n] of a) Chunk626135.default.track(exports, module(exports, require));
+  if (!(0, i.A)()) return void a.clear();
+  let {
+    default: e
+  } = n(672513);
+  for (let [t, n] of a) r.default.track(t, e(t, n));
   a.clear()
 }

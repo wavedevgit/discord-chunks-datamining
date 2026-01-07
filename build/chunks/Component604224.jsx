@@ -24,34 +24,34 @@ var Chunk442837 = require("./442837.js"),
 function E() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)([Chunk100527.Z.USER_SETTINGS_VOICE_AND_VIDEO]), t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), n = [{
-    title: Chunk388032.intl.string(Chunk388032.t.K3lovD),
-    component: Chunk674116.Z,
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE_TAB,
-    subsection: Chunk526761.CO
+  } = (0, o.ZP)([a.Z.USER_SETTINGS_VOICE_AND_VIDEO]), t = (0, i.e7)([s.Z], () => s.Z.getSubsection()), n = [{
+    title: g.intl.string(g.t.K3lovD),
+    component: f.Z,
+    setting: m.s6.VOICE_AND_VIDEO_VOICE_TAB,
+    subsection: _.CO
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.FlNoSV),
-    component: Chunk167540.Z,
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_TAB,
-    subsection: Chunk526761.gP
+    title: g.intl.string(g.t.FlNoSV),
+    component: d.Z,
+    setting: m.s6.VOICE_AND_VIDEO_VIDEO_TAB,
+    subsection: _.gP
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.ABjMWI),
-    component: Chunk314394.Z,
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB,
-    subsection: Chunk526761.GA
+    title: g.intl.string(g.t.ABjMWI),
+    component: u.Z,
+    setting: m.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB,
+    subsection: _.GA
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.OFpL3c),
-    component: Chunk754367.Z,
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_DEBUG_TAB
-  }], E = require.findIndex(e => null != e.subsection && e.subsection === t);
-  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: module,
-    children: (0, Chunk54381.jsx)(Chunk10298.N, {
-      header: Chunk388032.intl.string(Chunk388032.t.B1fFpf),
-      children: (0, Chunk54381.jsx)(Chunk526156.Z, {
-        parentSetting: Chunk726985.s6.VOICE_AND_VIDEO,
-        settingsSection: Chunk981631.oAB.VOICE,
-        tabs: require,
+    title: g.intl.string(g.t.OFpL3c),
+    component: p.Z,
+    setting: m.s6.VOICE_AND_VIDEO_DEBUG_TAB
+  }], E = n.findIndex(e => null != e.subsection && e.subsection === t);
+  return (0, r.jsx)(o.Gt, {
+    value: e,
+    children: (0, r.jsx)(l.N, {
+      header: g.intl.string(g.t.B1fFpf),
+      children: (0, r.jsx)(c.Z, {
+        parentSetting: m.s6.VOICE_AND_VIDEO,
+        settingsSection: h.oAB.VOICE,
+        tabs: n,
         defaultTabIndex: E > false ? E : true
       })
     })

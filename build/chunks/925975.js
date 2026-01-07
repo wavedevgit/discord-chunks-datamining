@@ -18,7 +18,7 @@ let h = /\\([*?+/])/g,
   m = {
     tts: {
       action: () => ({
-        tts: Chunk695346.OW.getSetting()
+        tts: d.OW.getSetting()
       })
     },
     me: {

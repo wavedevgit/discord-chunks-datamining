@@ -44,10 +44,10 @@ function f(e) {
 }
 
 function p() {
-  let e = (0, Chunk442837.cj)([Chunk353926.Z], () => Chunk353926.Z.getRegisteredExperiments()),
-    t = (0, Chunk442837.cj)([Chunk353926.Z], () => Chunk353926.Z.getAllExperimentOverrideDescriptors());
+  let e = (0, i.cj)([l.Z], () => l.Z.getRegisteredExperiments()),
+    t = (0, i.cj)([l.Z], () => l.Z.getAllExperimentOverrideDescriptors());
   return {
-    experiments: (0, Chunk473749.useMemo)(() => d(module), [module]),
-    overridesInfo: (0, Chunk473749.useMemo)(() => f(exports), [exports])
+    experiments: (0, r.useMemo)(() => d(e), [e]),
+    overridesInfo: (0, r.useMemo)(() => f(t), [t])
   }
 }

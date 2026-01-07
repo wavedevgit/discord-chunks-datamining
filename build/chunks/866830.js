@@ -13,26 +13,26 @@ function l(e) {
 
 function i() {
   return {
-    [Chunk273504.jj.BLOCK_MESSAGE]: {
-      type: Chunk273504.jj.BLOCK_MESSAGE,
+    [r.jj.BLOCK_MESSAGE]: {
+      type: r.jj.BLOCK_MESSAGE,
       metadata: {
         customMessage: true
       }
     },
-    [Chunk273504.jj.FLAG_TO_CHANNEL]: {
-      type: Chunk273504.jj.FLAG_TO_CHANNEL,
+    [r.jj.FLAG_TO_CHANNEL]: {
+      type: r.jj.FLAG_TO_CHANNEL,
       metadata: {
         channelId: true
       }
     },
-    [Chunk273504.jj.USER_COMMUNICATION_DISABLED]: {
-      type: Chunk273504.jj.USER_COMMUNICATION_DISABLED,
+    [r.jj.USER_COMMUNICATION_DISABLED]: {
+      type: r.jj.USER_COMMUNICATION_DISABLED,
       metadata: {
         durationSeconds: 60
       }
     },
-    [Chunk273504.jj.QUARANTINE_USER]: {
-      type: Chunk273504.jj.QUARANTINE_USER,
+    [r.jj.QUARANTINE_USER]: {
+      type: r.jj.QUARANTINE_USER,
       metadata: {}
     }
   }

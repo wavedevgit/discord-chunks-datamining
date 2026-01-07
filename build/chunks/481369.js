@@ -21,8 +21,8 @@ let u = "no_text_activity",
   };
 
 function p() {
-  let e = (0, Chunk399606.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getCurrentEmbeddedActivity()),
-    t = (0, Chunk399606.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getActivityPanelMode()),
-    n = (0, Chunk16609.p)(null == module ? true : module.location);
-  return true === module || (0, Chunk917107.Z)(require, Chunk592125.Z) ? d[u] : d[exports]
+  let e = (0, i.e7)([r.ZP], () => r.ZP.getCurrentEmbeddedActivity()),
+    t = (0, i.e7)([r.ZP], () => r.ZP.getActivityPanelMode()),
+    n = (0, l.p)(null == e ? true : e.location);
+  return true === e || (0, a.Z)(n, o.Z) ? d[u] : d[t]
 }

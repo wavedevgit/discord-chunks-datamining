@@ -23,36 +23,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk948864 = require("./948864.js");
 let O = [{
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.NK5ySJ),
+    getOs: () => y.intl.string(y.t.NK5ySJ),
     icon: Chunk948864.apple,
-    url: () => (0, Chunk361207.w4)("osx", false),
+    url: () => (0, j.w4)("osx", false),
     platformKey: 0
   }, {
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.OvKGE6),
+    getOs: () => y.intl.string(y.t.OvKGE6),
     icon: Chunk948864.windows,
-    url: () => (0, Chunk361207.w4)("win", false),
+    url: () => (0, j.w4)("win", false),
     platformKey: 1
   }, {
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.dJB4PN),
+    getOs: () => y.intl.string(y.t.dJB4PN),
     icon: Chunk948864.linux,
     url: [{
-      url: () => (0, Chunk361207.w4)("linux", false, "deb"),
-      getText: () => Chunk388032.intl.string(Chunk388032.t.Sodsus)
+      url: () => (0, j.w4)("linux", false, "deb"),
+      getText: () => y.intl.string(y.t.Sodsus)
     }, {
-      url: () => (0, Chunk361207.w4)("linux", false, "tar.gz"),
-      getText: () => Chunk388032.intl.string(Chunk388032.t.G3U6IV)
+      url: () => (0, j.w4)("linux", false, "tar.gz"),
+      getText: () => y.intl.string(y.t.G3U6IV)
     }],
     platformKey: 2
   }],
   w = [{
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.wCVyNT),
+    getOs: () => y.intl.string(y.t.wCVyNT),
     icon: Chunk948864.ios,
-    url: () => Chunk981631.fzT.IOS,
+    url: () => h.fzT.IOS,
     platformKey: 3
   }, {
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.wuQpJD),
+    getOs: () => y.intl.string(y.t.wuQpJD),
     icon: Chunk948864.android,
-    url: () => Chunk981631.fzT.ANDROID,
+    url: () => h.fzT.ANDROID,
     platformKey: 4
   }],
   _ = e => {

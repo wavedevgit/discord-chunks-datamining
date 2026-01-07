@@ -35,8 +35,8 @@ let h = {
     })
   },
   hideHubUpsell() {
-    (0, Chunk266454.Q3)(Chunk704215.z.HUB_BACK_TO_SCHOOL_UPSELL, {
-      dismissAction: Chunk921944.L.AUTO
+    (0, c.Q3)(o.z.HUB_BACK_TO_SCHOOL_UPSELL, {
+      dismissAction: C.L.AUTO
     })
   }
 }

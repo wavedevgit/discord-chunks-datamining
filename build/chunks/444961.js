@@ -15,31 +15,31 @@ var Chunk846519 = require("./846519.js"),
   Chunk70956 = require("./70956.js"),
   Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
-let h = new Chunk846519.V7,
-  m = new Chunk846519.V7;
+let m = new Chunk846519.V7,
+  h = new Chunk846519.V7;
 class b extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("IDLE", this.handleIdleUpdate)
+    i.Z.subscribe("IDLE", this.handleIdleUpdate)
   }
   _terminate() {
-    h.stop(), m.stop(), Chunk570140.Z.unsubscribe("IDLE", this.handleIdleUpdate)
+    m.stop(), h.stop(), i.Z.unsubscribe("IDLE", this.handleIdleUpdate)
   }
   handleIdleUpdate() {
-    let e = Chunk517100.Z.getIdleSince();
-    if (!Chunk358085.isPlatformEmbedded) return;
-    for (let e of (h.stop(), m.stop(), Chunk199902.Z.getAllActiveStreams()))
-      if (module.state !== Chunk981631.jm8.ENDED) return;
-    if (null == module) return;
-    let t = Chunk19780.Z.getChannelId();
-    if (null == exports) return;
-    m.start(18e6, () => {
-      Chunk287734.default.selectVoiceChannel(null)
+    let e = u.Z.getIdleSince();
+    if (!f.isPlatformEmbedded) return;
+    for (let e of (m.stop(), h.stop(), o.Z.getAllActiveStreams()))
+      if (e.state !== g.jm8.ENDED) return;
+    if (null == e) return;
+    let t = d.Z.getChannelId();
+    if (null == t) return;
+    h.start(18e6, () => {
+      l.default.selectVoiceChannel(null)
     });
-    let n = Chunk430824.Z.getGuild(Chunk19780.Z.getGuildId());
-    if (null == require || null == require.afkChannelId || require.afkChannelId === exports || null == require.afkTimeout) return;
-    let r = Chunk592125.Z.getChannel(exports);
-    null != Chunk846519 && (Chunk846519.isGuildStageVoice() || h.start(module + require.afkTimeout * Chunk70956.Z.Millis.SECOND - Date.now(), () => {
-      null != (n = Chunk430824.Z.getGuild(Chunk19780.Z.getGuildId())) && null != require.afkChannelId && Chunk287734.default.selectVoiceChannel(require.afkChannelId)
+    let n = c.Z.getGuild(d.Z.getGuildId());
+    if (null == n || null == n.afkChannelId || n.afkChannelId === t || null == n.afkTimeout) return;
+    let r = s.Z.getChannel(t);
+    null != r && (r.isGuildStageVoice() || m.start(e + n.afkTimeout * p.Z.Millis.SECOND - Date.now(), () => {
+      null != (n = c.Z.getGuild(d.Z.getGuildId())) && null != n.afkChannelId && l.default.selectVoiceChannel(n.afkChannelId)
     }))
   }
 }

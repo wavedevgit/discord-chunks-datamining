@@ -18,6 +18,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk518517 = require("./518517.js"),
   Chunk388032 = require("./388032.jsx");
 let I = (0, Chunk509613.k4)(Chunk313789.n.CLIPS_RECORDING_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.iIwmV5),
-  buildLayout: () => [Chunk301763.n, Chunk836133.y, Chunk39408.h, Chunk936890.r, Chunk518517.b, Chunk196561.G, Chunk287454.G, Chunk40727.N, Chunk440331.k, Chunk154869.$, Chunk987143.A]
+  useTitle: () => g.intl.string(g.t.iIwmV5),
+  buildLayout: () => [o.n, u.y, E.h, d.r, _.b, a.G, T.G, s.N, r.k, S.$, c.A]
 })

@@ -15,7 +15,7 @@ var Chunk691593 = require("./691593.js"),
   };
 l.prototype = {
   getIterator: function() {
-    return Chunk899781(Chunk921413(Chunk517522(this.keys, this.set)))
+    return s(o(i(this.keys, this.set)))
   },
   includes: function(t) {
     return i(this.has, this.set, t)

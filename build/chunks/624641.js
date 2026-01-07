@@ -140,10 +140,10 @@ function _(e) {
 
 function m() {
   let e = window.event;
-  return (null == module ? true : module.key) === "Enter"
+  return (null == e ? true : e.key) === "Enter"
 }
 
 function h() {
   let e = window.event;
-  return (null == module ? true : module.key) === " " || (null == module ? true : module.code) === "Space"
+  return (null == e ? true : e.key) === " " || (null == e ? true : e.code) === "Space"
 }

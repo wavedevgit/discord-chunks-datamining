@@ -16,11 +16,11 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk418924 = require("./418924.js");
 let _ = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk418924.default.WhdCGP),
-  useSubtitle: () => Chunk388032.intl.string(Chunk418924.default.UQ9RHJ),
+  useTitle: () => E.intl.string(d.default.WhdCGP),
+  useSubtitle: () => E.intl.string(d.default.UQ9RHJ),
   useValue: () => {
-    let t = (0, Chunk639814.is)();
-    return !Chunk695346.SE.useSetting().includes(module)
+    let t = (0, o.is)();
+    return !u.SE.useSetting().includes(t)
   },
   setValue: t => {
     let e = a.xu.getState().selectedGuildId,
@@ -31,5 +31,5 @@ let _ = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVIT
       guild_id: e
     })
   },
-  usePredicate: () => (0, Chunk639814.is)() !== Chunk997950.Th
+  usePredicate: () => (0, o.is)() !== a.Th
 })

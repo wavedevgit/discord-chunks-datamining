@@ -20,51 +20,51 @@ var Chunk399606 = require("./399606.js"),
   Chunk495781 = require("./495781.js");
 
 function g() {
-  let e = Chunk695346.QK.useSetting(),
-    t = (0, Chunk506071.n)(),
-    r = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    o = exports && module && !require ? (0, Chunk357352.b)("server_products/storefront/question-mark.gif") : (0, Chunk357352.b)("server_products/storefront/question-mark.png");
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk495781.previewListingCard,
-    children: [(0, Chunk54381.jsx)(Chunk623488.Z, {
+  let e = a.QK.useSetting(),
+    t = (0, u.n)(),
+    r = (0, i.e7)([l.Z], () => l.Z.useReducedMotion),
+    o = t && e && !r ? (0, c.b)("server_products/storefront/question-mark.gif") : (0, c.b)("server_products/storefront/question-mark.png");
+  return (0, n.jsxs)("div", {
+    className: j.previewListingCard,
+    children: [(0, n.jsx)(s.Z, {
       role: true,
       ctaComponent: null,
-      imageUrl: (0, Chunk357352.b)("server_products/storefront/preview-thumbnail.png"),
-      name: Chunk388032.intl.string(Chunk388032.t.U2hvDo),
-      description: Chunk388032.intl.string(Chunk388032.t["w/TNGT"]),
-      formattedPrice: (0, Chunk937615.T4)(0, Chunk981631.pKx.USD, {
+      imageUrl: (0, c.b)("server_products/storefront/preview-thumbnail.png"),
+      name: b.intl.string(b.t.U2hvDo),
+      description: b.intl.string(b.t["w/TNGT"]),
+      formattedPrice: (0, d.T4)(0, f.pKx.USD, {
         localeMatcher: "best fit",
         style: "currency",
         maximumSignificantDigits: 1
       }),
       shouldShowFullDescriptionButton: false,
-      productType: Chunk388032.intl.string(Chunk388032.t.ih4QMU),
+      productType: b.intl.string(b.t.ih4QMU),
       onTapCard: () => null,
       hideRoleTag: true,
       lineClamp: 3,
       thumbnailHeight: 197,
       cardWidth: 332,
       descriptionTextVariant: "text-xs/normal"
-    }), (0, Chunk54381.jsx)("img", {
-      className: Chunk495781.questionMark,
+    }), (0, n.jsx)("img", {
+      className: j.questionMark,
       alt: "",
-      src: Chunk481060
+      src: o
     })]
   })
 }
 
 function O() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk495781.learnMoreTipContainer,
-    children: [(0, Chunk54381.jsx)(Chunk481060.d3s, {
+  return (0, n.jsxs)("div", {
+    className: j.learnMoreTipContainer,
+    children: [(0, n.jsx)(o.d3s, {
       size: "md",
       color: "currentColor",
-      className: Chunk495781.infoCircle
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      className: j.infoCircle
+    }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: Chunk388032.intl.format(Chunk388032.t.umfZ8q, {
-        learnMoreLink: Chunk629481.P4
+      children: b.intl.format(b.t.umfZ8q, {
+        learnMoreLink: p.P4
       })
     })]
   })

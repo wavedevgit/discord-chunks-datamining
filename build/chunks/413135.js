@@ -264,7 +264,7 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
           return 42
         }
       };
-    return Object.setPrototypeOf(exports, Uint8Array.prototype), Object.setPrototypeOf(module, exports), 42 === module.foo()
+    return Object.setPrototypeOf(t, Uint8Array.prototype), Object.setPrototypeOf(e, t), 42 === e.foo()
   } catch (e) {
     returnfalse
   }
@@ -328,29 +328,29 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
   return r
 }, c.byteLength = y, c.prototype._isBuffer = true, c.prototype.swap16 = function() {
   var e = this.length;
-  if (module % 2 != 0) throw RangeError("Buffer size must be a multiple of 16-bits");
-  for (var t = 0; exports < module; t += 2) v(this, exports, exports + 1);
+  if (e % 2 != 0) throw RangeError("Buffer size must be a multiple of 16-bits");
+  for (var t = 0; t < e; t += 2) v(this, t, t + 1);
   return this
 }, c.prototype.swap32 = function() {
   var e = this.length;
-  if (module % 4 != 0) throw RangeError("Buffer size must be a multiple of 32-bits");
-  for (var t = 0; exports < module; t += 4) v(this, exports, exports + 3), v(this, exports + 1, exports + 2);
+  if (e % 4 != 0) throw RangeError("Buffer size must be a multiple of 32-bits");
+  for (var t = 0; t < e; t += 4) v(this, t, t + 3), v(this, t + 1, t + 2);
   return this
 }, c.prototype.swap64 = function() {
   var e = this.length;
-  if (module % 8 != 0) throw RangeError("Buffer size must be a multiple of 64-bits");
-  for (var t = 0; exports < module; t += 8) v(this, exports, exports + 7), v(this, exports + 1, exports + 6), v(this, exports + 2, exports + 5), v(this, exports + 3, exports + 4);
+  if (e % 8 != 0) throw RangeError("Buffer size must be a multiple of 64-bits");
+  for (var t = 0; t < e; t += 8) v(this, t, t + 7), v(this, t + 1, t + 6), v(this, t + 2, t + 5), v(this, t + 3, t + 4);
   return this
 }, c.prototype.toString = function() {
   var e = this.length;
-  return 0 === module ? "" : 0 == arguments.length ? D(this, 0, module) : O.apply(this, arguments)
+  return 0 === e ? "" : 0 == arguments.length ? D(this, 0, e) : O.apply(this, arguments)
 }, c.prototype.toLocaleString = c.prototype.toString, c.prototype.equals = function(e) {
   if (!c.isBuffer(e)) throw TypeError("Argument must be a Buffer");
   return this === e || 0 === c.compare(this, e)
 }, c.prototype.inspect = function() {
   var e = "",
-    n = exports.INSPECT_MAX_BYTES;
-  return e = this.toString("hex", 0, require).replace(/(.{2})/g, "$1 ").trim(), this.length > require && (e += " ... "), "<Buffer " + module + ">"
+    n = t.INSPECT_MAX_BYTES;
+  return e = this.toString("hex", 0, n).replace(/(.{2})/g, "$1 ").trim(), this.length > n && (e += " ... "), "<Buffer " + e + ">"
 }, o && (c.prototype[o] = c.prototype.inspect), c.prototype.compare = function(e, t, n, r, i) {
   if (X(e, Uint8Array) && (e = c.from(e, e.offset, e.byteLength)), !c.isBuffer(e)) throw TypeError('The "target" argument must be one of type Buffer or Uint8Array. Received type ' + typeof e);
   if (true === t && (t = 0), true === n && (n = e ? e.length : 0), true === r && (r = 0), true === i && (i = this.length), t < 0 || n > e.length || r < 0 || i > this.length) throw RangeError("out of range index");
@@ -685,7 +685,7 @@ function J(e) {
   return e != e
 }
 var $ = function() {
-  for (var e = "0123456789abcdef", t = Array(256), n = 0; require < 16; ++require)
-    for (var r = 16 * require, i = 0; Chunk250683 < 16; ++Chunk250683) exports[r + Chunk250683] = module[require] + module[Chunk250683];
-  return exports
+  for (var e = "0123456789abcdef", t = Array(256), n = 0; n < 16; ++n)
+    for (var r = 16 * n, i = 0; i < 16; ++i) t[r + i] = e[n] + e[i];
+  return t
 }()

@@ -282,13 +282,13 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     return null == t || Date.now() - t > D
   }
   loadTrackedExposures() {
-    let e = Chunk433517.K.get(R);
-    if (null == module || module.version !== w) return {};
-    let t = module.exposures,
+    let e = l.K.get(R);
+    if (null == e || e.version !== w) return {};
+    let t = e.exposures,
       n = Date.now(),
       r = false;
-    for (let e in exports) require - exports[module] > D && (delete exports[module], r = true);
-    return r && this.saveTrackedExposures(exports), exports
+    for (let e in t) n - t[e] > D && (delete t[e], r = true);
+    return r && this.saveTrackedExposures(t), t
   }
   saveTrackedExposures(e) {
     try {

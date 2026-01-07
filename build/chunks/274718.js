@@ -9,5 +9,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.NITRO_SETTING, {
   Component: Chunk748717.Z,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.Ipxkog)]
+  useSearchTerms: () => [u.intl.string(u.t.Ipxkog)]
 })

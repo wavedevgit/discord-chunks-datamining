@@ -12,13 +12,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function u() {
-  let e = Chunk695346.G6.useSetting(),
-    t = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus());
-  (0, Chunk473749.useEffect)(() => {
-    Chunk626135.default.track(Chunk981631.rMx.RUNNING_GAME_CARD_STATE_CHANGED, {
-      show_current_game: module,
-      status: exports,
-      rtc_popout_available: !module || exports === Chunk481060.Skl.INVISIBLE
+  let e = a.G6.useSetting(),
+    t = (0, i.e7)([o.Z], () => o.Z.getStatus());
+  (0, r.useEffect)(() => {
+    s.default.track(c.rMx.RUNNING_GAME_CARD_STATE_CHANGED, {
+      show_current_game: e,
+      status: t,
+      rtc_popout_available: !e || t === l.Skl.INVISIBLE
     })
-  }, [module, exports])
+  }, [e, t])
 }

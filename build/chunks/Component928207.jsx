@@ -20,7 +20,7 @@ var Chunk828700 = require("./828700.js"),
   Chunk474936 = require("./474936.js"),
   Chunk845761 = require("./845761.js");
 let _ = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
-  user: Chunk594174.default.getCurrentUser()
+  user: f.default.getCurrentUser()
 }))((0, Chunk666743.Z)((0, Chunk730749.Z)(e => {
   let {
     isAuthenticated: t,
@@ -39,10 +39,10 @@ let _ = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
           className: b.spinner
         })
       }) : (0, r.jsx)(p.Z, {
-        entrypoint: m.EZ.ApplicationStoreHome
+        entrypoint: h.EZ.ApplicationStoreHome
       })
     })]
   }) : (0, r.jsx)(i.l_, {
-    to: h.Z5c.LOGIN
+    to: m.Z5c.LOGIN
   })
 })))

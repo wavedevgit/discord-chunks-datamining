@@ -9,9 +9,9 @@ var Chunk509613 = require("./509613.js"),
   Chunk206583 = require("./206583.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.k4)(Chunk313789.n.REGISTERED_GAMES_ADDED_GAMES_CATEGORY, {
-  buildLayout: () => [Chunk227826.t],
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.jCOdvx),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.KPA3m9, {
-    igdbLink: Chunk206583.$f
+  buildLayout: () => [s.t],
+  useTitle: () => r.intl.string(r.t.jCOdvx),
+  useSubtitle: () => r.intl.format(r.t.KPA3m9, {
+    igdbLink: u.$f
   })
 })

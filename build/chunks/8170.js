@@ -28,7 +28,7 @@ class a extends Chunk492733.kb {
   }
   digest() {
     let e = new Uint8Array(this.oHash.outputLen);
-    return this.digestInto(module), module
+    return this.digestInto(e), e
   }
   _cloneInto(e) {
     e || (e = Object.create(Object.getPrototypeOf(this), {}));

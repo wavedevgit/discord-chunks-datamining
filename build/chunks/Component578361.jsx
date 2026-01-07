@@ -57,7 +57,7 @@ class _ extends Chunk473749.PureComponent {
     }, this.props.springSettings)).start(e)
   }
   getStyle() {
-    let e = Chunk748780.Z.accelerate({
+    let e = s.Z.accelerate({
       transform: [{
         translateX: this._animated.interpolate({
           inputRange: [0, 1],
@@ -65,15 +65,15 @@ class _ extends Chunk473749.PureComponent {
         })
       }]
     });
-    return this.props.fadeInOut && (module.opacity = this._animated.interpolate({
+    return this.props.fadeInOut && (e.opacity = this._animated.interpolate({
       inputRange: [false, 0, 1],
       outputRange: [0, 1, 0]
-    })), module
+    })), e
   }
   render() {
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+    return (0, r.jsx)(s.Z.div, {
       style: this.getStyle(),
-      className: Chunk210423.item,
+      className: c.item,
       children: this.props.children
     })
   }

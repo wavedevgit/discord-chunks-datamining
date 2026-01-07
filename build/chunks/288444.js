@@ -26,18 +26,18 @@ let p = 3,
   _ = 18e4;
 
 function m() {
-  let e = Chunk979651.Z.getCurrentClientVoiceChannelId(null);
-  if (null == module) returnfalse;
-  let t = Chunk592125.Z.getChannel(module);
-  return !(null == exports || !exports.isPrivate() || exports.recipients.length > 1 || Chunk938475.ZP.countVoiceStatesForChannel(module) > 1) && null == Chunk317381.ZP.getSelfEmbeddedActivityForChannel(module)
+  let e = c.Z.getCurrentClientVoiceChannelId(null);
+  if (null == e) returnfalse;
+  let t = l.Z.getChannel(e);
+  return !(null == t || !t.isPrivate() || t.recipients.length > 1 || u.ZP.countVoiceStatesForChannel(e) > 1) && null == s.ZP.getSelfEmbeddedActivityForChannel(e)
 }
 
 function h() {
   if (!m()) return;
-  let e = Chunk979651.Z.getCurrentClientVoiceChannelId(null);
-  null != module && (Chunk904245.Z.sendBotMessage(module, Chunk388032.intl.formatToPlainString(Chunk388032.t.XYof5G, {
+  let e = c.Z.getCurrentClientVoiceChannelId(null);
+  null != e && (i.Z.sendBotMessage(e, d.intl.formatToPlainString(d.t.XYof5G, {
     number: p
-  })), Chunk287734.default.selectVoiceChannel(null))
+  })), a.default.selectVoiceChannel(null))
 }
 class g extends Chunk147913.Z {
   constructor(...e) {

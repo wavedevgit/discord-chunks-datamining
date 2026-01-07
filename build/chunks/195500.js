@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 let i = {
   clearRemoteDisconnectVoiceChannelId() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID"
     })
   },
   clearLastSessionVoiceChannelId() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "CLEAR_LAST_SESSION_VOICE_CHANNEL_ID"
     })
   }

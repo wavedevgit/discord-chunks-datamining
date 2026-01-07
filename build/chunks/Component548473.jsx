@@ -82,23 +82,23 @@ function C(e) {
 }
 
 function y() {
-  let e = C(Chunk787117);
-  return (0, Chunk54381.jsx)("div", {
-    className: s()(Chunk576085.leftArt, Chunk576085.altFloat),
-    children: (0, Chunk54381.jsx)("div", {
-      ref: module,
-      className: Chunk576085.grillingIsland
+  let e = C(x);
+  return (0, l.jsx)("div", {
+    className: s()(b.leftArt, b.altFloat),
+    children: (0, l.jsx)("div", {
+      ref: e,
+      className: b.grillingIsland
     })
   })
 }
 
 function P() {
-  let e = C(Chunk535170);
-  return (0, Chunk54381.jsx)("div", {
-    className: s()(Chunk576085.rightArt, Chunk576085.altFloat),
-    children: (0, Chunk54381.jsx)("div", {
-      ref: module,
-      className: Chunk576085.waffleIsland
+  let e = C(_);
+  return (0, l.jsx)("div", {
+    className: s()(b.rightArt, b.altFloat),
+    children: (0, l.jsx)("div", {
+      ref: e,
+      className: b.waffleIsland
     })
   })
 }

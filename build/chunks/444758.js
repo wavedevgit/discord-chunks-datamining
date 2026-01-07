@@ -178,8 +178,8 @@ function x(e) {
 
 function L() {
   return A({
-    name: Chunk388032.intl.string(Chunk388032.t.zLZPmk).toLowerCase(),
-    type: Chunk981631.d4z.UNKNOWN,
+    name: y.intl.string(y.t.zLZPmk).toLowerCase(),
+    type: b.d4z.UNKNOWN,
     iconType: "text"
   }, "italics")
 }

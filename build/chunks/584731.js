@@ -24,7 +24,7 @@ let d = false / 0,
   f = new Chunk710845.Z("MessagePreviewStore");
 class p extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk375954.Z)
+    this.waitFor(s.Z, l.Z)
   }
   isLatest(e, t) {
     var n;
@@ -112,7 +112,7 @@ class p extends Chunk442837.ZP.Store {
     this.guilds.clear()
   }
   constructor() {
-    super(Chunk570140.Z, {
+    super(i.Z, {
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),
       GUILD_CREATE: e => this.handleGuildCreate(e),
       GUILD_DELETE: e => this.handleGuildDelete(e),

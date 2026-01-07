@@ -21,7 +21,7 @@ var Chunk580983 = require("./580983.js"),
   y = function() {
     var e = /a/,
       t = /b*/g;
-    return Chunk580983(_, module, "a"), Chunk580983(_, exports, "a"), 0 !== module.lastIndex || 0 !== exports.lastIndex
+    return r(_, e, "a"), r(_, t, "a"), 0 !== e.lastIndex || 0 !== t.lastIndex
   }(),
   O = Chunk751954.BROKEN_CARET,
   v = true !== /()??/.exec("")[1];

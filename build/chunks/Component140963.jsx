@@ -65,8 +65,8 @@ class v extends Chunk473749.PureComponent {
       let {
         value: t
       } = this.props;
-      null == (e = this._ref) || module.setSelection(exports.length, exports.length)
-    }), this.focus()), null != Chunk998698.Z.getActiveCommand(this.props.channel.id) && Chunk555573.Po({
+      null == (e = this._ref) || e.setSelection(t.length, t.length)
+    }), this.focus()), null != u.Z.getActiveCommand(this.props.channel.id) && c.Po({
       channelId: this.props.channel.id,
       command: null,
       section: null
@@ -77,7 +77,7 @@ class v extends Chunk473749.PureComponent {
   }
   getCurrentWord() {
     let e = this._ref;
-    if (null == module) return {
+    if (null == e) return {
       word: null,
       fullWord: null,
       isAtStart: false
@@ -85,27 +85,27 @@ class v extends Chunk473749.PureComponent {
     let {
       value: t
     } = this.props;
-    if (0 === exports.trim().length) return {
+    if (0 === t.trim().length) return {
       word: null,
       fullWord: null,
       isAtStart: false
     };
-    let n = module.selectionStart,
-      r = module.selectionEnd;
-    for (; require > 0 && !O.test(exports[require - 1]);) require--;
-    let i = module.selectionEnd;
-    for (; Chunk473749 < exports.length && !O.test(exports[Chunk473749]);) Chunk473749++;
+    let n = e.selectionStart,
+      r = e.selectionEnd;
+    for (; n > 0 && !O.test(t[n - 1]);) n--;
+    let i = e.selectionEnd;
+    for (; i < t.length && !O.test(t[i]);) i++;
     return {
-      word: exports.slice(require, Chunk54381),
-      fullWord: exports.slice(require, Chunk473749),
-      isAtStart: 0 === require
+      word: t.slice(n, r),
+      fullWord: t.slice(n, i),
+      isAtStart: 0 === n
     }
   }
   blur() {
     let {
       _ref: e
     } = this;
-    null != module && module.blur()
+    null != e && e.blur()
   }
   submit(e) {
     return e.preventDefault(), this.props.onSubmit(this.props.value)
@@ -155,9 +155,9 @@ class v extends Chunk473749.PureComponent {
   }
   hasOpenCodeBlock() {
     let e = this._ref;
-    if (null == module) returnfalse;
-    let t = this.props.value.slice(0, module.selectionStart).match(/```/g);
-    return null != exports && exports.length > 0 && exports.length % 2 != 0
+    if (null == e) returnfalse;
+    let t = this.props.value.slice(0, e.selectionStart).match(/```/g);
+    return null != t && t.length > 0 && t.length % 2 != 0
   }
   render() {
     let {
@@ -175,21 +175,21 @@ class v extends Chunk473749.PureComponent {
       "aria-expanded": h,
       "aria-activedescendant": g
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk459273.d9, {
-        event: Chunk981631.CkL.GLOBAL_CLIPBOARD_PASTE,
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(d.d9, {
+        event: m.CkL.GLOBAL_CLIPBOARD_PASTE,
         handler: this.handleGlobalPaste
-      }), (0, Chunk54381.jsx)(Chunk481060.lcI, {
+      }), (0, r.jsx)(s.lcI, {
         ref: this.handleSetRef,
-        className: o()(Chunk239091, Chunk358085),
-        id: Chunk555573,
+        className: o()(l, f),
+        id: c,
         rows: 1,
         fontWidthEstimate: 6,
-        placeholder: require,
-        disabled: exports || Chunk998698,
-        required: Chunk473749,
+        placeholder: n,
+        disabled: t || u,
+        required: i,
         onChange: this.handleOnChange,
-        onResize: Chunk120356,
+        onResize: a,
         onKeyPress: this.handleKeyPress,
         onKeyDown: this.handleKeyDown,
         onKeyUp: this.handleKeyUp,
@@ -198,10 +198,10 @@ class v extends Chunk473749.PureComponent {
         onPaste: this.handlePaste,
         onClick: this.handleClick,
         onContextMenu: this.handleContextMenu,
-        value: exports ? "" : module,
+        value: t ? "" : e,
         tabIndex: 0,
-        spellCheck: Chunk62883,
-        "aria-controls": Chunk752305,
+        spellCheck: p,
+        "aria-controls": _,
         "aria-expanded": h,
         "aria-activedescendant": g,
         "aria-haspopup": "listbox",

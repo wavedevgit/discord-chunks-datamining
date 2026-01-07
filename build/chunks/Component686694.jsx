@@ -49,19 +49,19 @@ class E extends(s = Chunk473749.Component) {
     this.pause(), this.unbindEvents(), this.children.forEach(t => t.terminate())
   }
   bindEvents() {
-    window.addEventListener("resize", this.resizeCanvas, false), window.addEventListener("blur", this.delayedPause, false), window.addEventListener("focus", this.play, false), document.addEventListener("visibilitychange", this.handleVisibilityChange, false), Chunk585483.S.subscribe(Chunk981631.CkL.WAVE_EMPHASIZE, this.handleWaveEmphasize)
+    window.addEventListener("resize", this.resizeCanvas, false), window.addEventListener("blur", this.delayedPause, false), window.addEventListener("focus", this.play, false), document.addEventListener("visibilitychange", this.handleVisibilityChange, false), d.S.subscribe(v.CkL.WAVE_EMPHASIZE, this.handleWaveEmphasize)
   }
   unbindEvents() {
-    window.removeEventListener("resize", this.resizeCanvas, false), window.removeEventListener("blur", this.delayedPause, false), window.removeEventListener("focus", this.play, false), document.removeEventListener("visibilitychange", this.handleVisibilityChange, false), Chunk585483.S.unsubscribe(Chunk981631.CkL.WAVE_EMPHASIZE, this.handleWaveEmphasize)
+    window.removeEventListener("resize", this.resizeCanvas, false), window.removeEventListener("blur", this.delayedPause, false), window.removeEventListener("focus", this.play, false), document.removeEventListener("visibilitychange", this.handleVisibilityChange, false), d.S.unsubscribe(v.CkL.WAVE_EMPHASIZE, this.handleWaveEmphasize)
   }
   advanceTransitionalState() {
     let {
       waveState: t
     } = this.props;
-    (module === Chunk898625.hO.INITIAL || module === Chunk898625.hO.FILLING) && this.updateWaveState(module + 1)
+    (t === g.hO.INITIAL || t === g.hO.FILLING) && this.updateWaveState(t + 1)
   }
   waveFill() {
-    this._isPlaying ? this.children.forEach(t => t.fill()) : this.updateWaveState(Chunk898625.hO.FILLED)
+    this._isPlaying ? this.children.forEach(t => t.fill()) : this.updateWaveState(g.hO.FILLED)
   }
   updateAnimation(t) {
     this.children.forEach(e => e.update(t))
@@ -72,7 +72,7 @@ class E extends(s = Chunk473749.Component) {
     } = this.props, {
       canvasContext: e
     } = this;
-    null != exports && (exports.fillStyle = module, exports.fillRect(0, 0, this.width, this.height), this.children.forEach(t => t.render(e)))
+    null != e && (e.fillStyle = t, e.fillRect(0, 0, this.width, this.height), this.children.forEach(t => t.render(e)))
   }
   render() {
     let {
@@ -80,7 +80,7 @@ class E extends(s = Chunk473749.Component) {
       hideFallback: e,
       embedded: i
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.Sfi.Consumer, {
+    return (0, n.jsx)(c.Sfi.Consumer, {
       children: s => {
         let {
           reducedMotion: r

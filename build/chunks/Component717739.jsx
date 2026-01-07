@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk79522 = require("./79522.js"),
   Chunk836236 = require("./836236.js");
-let o = () => (0, Chunk54381.jsx)("div", {
-  className: Chunk79522.container,
-  children: (0, Chunk54381.jsx)("div", {
-    children: (0, Chunk54381.jsx)("img", {
-      src: Chunk836236.Z,
+let o = () => (0, r.jsx)("div", {
+  className: i.container,
+  children: (0, r.jsx)("div", {
+    children: (0, r.jsx)("img", {
+      src: a.Z,
       alt: "",
-      className: Chunk79522.image
+      className: i.image
     })
   })
 })

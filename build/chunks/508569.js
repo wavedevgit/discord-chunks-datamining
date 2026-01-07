@@ -56,7 +56,7 @@ class y {
     this.dispatchMultiple(t)
   }
   unpauseDispatchQueue() {
-    for (let e of (this.paused = false, this.queue)) this.maybePreload(module);
+    for (let e of (this.paused = false, this.queue)) this.maybePreload(e);
     this.flush()
   }
   receiveDispatch(e, t, n) {

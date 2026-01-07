@@ -15,7 +15,7 @@ function i(e) {
 }
 
 function a() {
-  Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
+  r.Z.wait(() => r.Z.dispatch({
     type: "NEW_PAYMENT_SOURCE_CLEAR_ERROR"
   }))
 }

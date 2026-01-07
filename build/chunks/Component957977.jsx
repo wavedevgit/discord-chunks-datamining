@@ -219,19 +219,19 @@ function T() {
     orientation: e = "vertical",
     isDisabled: t = false,
     labelledBy: n
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, r = Chunk473749.useRef(null), a = Chunk473749.useMemo(() => (0, Chunk372817.E)({
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, r = i.useRef(null), a = i.useMemo(() => (0, s.E)({
     getFocusableElements() {
-      let e = Chunk54381.current;
-      return null != module ? Array.from(module.querySelectorAll('[role="radio"]')) : []
+      let e = r.current;
+      return null != e ? Array.from(e.querySelectorAll('[role="radio"]')) : []
     },
     getActiveElement() {
       var e;
-      return null == (e = Chunk54381.current) ? true : module.ownerDocument.activeElement
+      return null == (e = r.current) ? true : e.ownerDocument.activeElement
     }
   }), []);
   return {
     role: "radiogroup",
-    onKeyDown: Chunk473749.useCallback(async t => {
+    onKeyDown: i.useCallback(async t => {
       if (null == r.current) return;
       let n = "vertical" === e ? p.vn.ARROW_UP : p.vn.ARROW_LEFT,
         i = "vertical" === e ? p.vn.ARROW_DOWN : p.vn.ARROW_RIGHT;
@@ -251,11 +251,11 @@ function T() {
           return null == e ? true : e.focus()
         }
       }
-    }, [Chunk120356, module]),
-    ref: Chunk54381,
-    "aria-labelledby": require,
-    "aria-orientation": module,
-    "aria-disabled": exports
+    }, [a, e]),
+    ref: r,
+    "aria-labelledby": n,
+    "aria-orientation": e,
+    "aria-disabled": t
   }
 }
 

@@ -122,7 +122,7 @@ let {
 
 function k() {
   var e, t;
-  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : M
+  return null != (t = null == (e = i.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : e.stickerIds) ? t : M
 }
 
 function U(e) {

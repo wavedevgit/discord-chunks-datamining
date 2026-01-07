@@ -29,7 +29,7 @@ class a {
   }
   start() {
     var e, t;
-    this.animating = true, this.vel = 0, this.last = null, this.nodeWindow = this.getNodeWindow(), this.nextTick = null != (t = null == (e = this.nodeWindow) ? true : module.requestAnimationFrame(this.update)) ? exports : false
+    this.animating = true, this.vel = 0, this.last = null, this.nodeWindow = this.getNodeWindow(), this.nextTick = null != (t = null == (e = this.nodeWindow) ? true : e.requestAnimationFrame(this.update)) ? t : false
   }
   getUpdates(e, t) {
     let n = (-this.tension * (t - this.target) + -this.friction * e) / this.mass;

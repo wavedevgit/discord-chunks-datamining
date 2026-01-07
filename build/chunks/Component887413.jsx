@@ -52,25 +52,25 @@ function p(e, t) {
 }
 
 function _() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk981631.IlC.POPOUT;
-  module !== Chunk981631.IlC.APP && (0, Chunk481060.ZDy)(async () => {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c.IlC.POPOUT;
+  e !== c.IlC.APP && (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await require.e("47552").then(require.bind(require, 520977));
+    } = await n.e("47552").then(n.bind(n, 520977));
     return n => (0, r.jsx)(t, p(d({}, n), {
       contextKey: e
     }))
   }, {
-    contextKey: (0, Chunk481060.VnL)(module)
+    contextKey: (0, i.VnL)(e)
   })
 }
 
 function m() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk981631.IlC.APP,
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c.IlC.APP,
     t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = null != module ? module : (0, Chunk728285.GB)();
-  if (require !== Chunk981631.IlC.APP && null != require) {
-    if (Chunk451478.Z.isFocused()) return;
-    exports ? Chunk358085.isPlatformEmbedded ? Chunk998502.ZP.focus() : window.focus() : _(module)
+    n = null != e ? e : (0, l.GB)();
+  if (n !== c.IlC.APP && null != n) {
+    if (a.Z.isFocused()) return;
+    t ? o.isPlatformEmbedded ? s.ZP.focus() : window.focus() : _(e)
   }
 }

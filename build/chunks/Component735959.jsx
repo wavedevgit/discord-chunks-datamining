@@ -18,71 +18,71 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function x() {
-  let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    [t, n] = Chunk473749.useState(),
-    l = (0, Chunk354012.runtimeHashMessageKey)(null != exports ? exports : ""),
-    x = Chunk473749.useMemo(() => Chunk388032.t[Chunk913527], [Chunk913527]);
-  return (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsxs)(Chunk665149.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk665149.ZP.Icon, {
-        icon: Chunk481060.os0,
+  let e = (0, c.e7)([m.default], () => m.default.locale),
+    [t, n] = r.useState(),
+    l = (0, i.runtimeHashMessageKey)(null != t ? t : ""),
+    x = r.useMemo(() => h.t[l], [l]);
+  return (0, a.jsxs)("div", {
+    children: [(0, a.jsxs)(u.ZP, {
+      children: [(0, a.jsx)(u.ZP.Icon, {
+        icon: d.os0,
         tooltip: "Locale"
-      }), (0, Chunk54381.jsx)(Chunk665149.ZP.Title, {
+      }), (0, a.jsx)(u.ZP.Title, {
         children: "Locale"
       })]
-    }), (0, Chunk54381.jsxs)(Chunk257785.E, {
-      children: [(0, Chunk54381.jsx)(Chunk257785.Z9, {
+    }), (0, a.jsxs)(f.E, {
+      children: [(0, a.jsx)(f.Z9, {
         name: "Active System",
         children: "@discord/intl"
-      }), (0, Chunk54381.jsx)(Chunk257785.Z9, {
+      }), (0, a.jsx)(f.Z9, {
         name: "App",
-        children: module
-      }), (0, Chunk54381.jsx)(Chunk257785.Z9, {
+        children: e
+      }), (0, a.jsx)(f.Z9, {
         name: "System",
-        children: Chunk388032.systemLocale
-      }), (0, Chunk54381.jsx)(Chunk257785.Z9, {
+        children: h.systemLocale
+      }), (0, a.jsx)(f.Z9, {
         name: "@discord/intl",
-        children: Chunk388032.intl.currentLocale
-      }), (0, Chunk54381.jsx)(Chunk257785.Z9, {
+        children: h.intl.currentLocale
+      }), (0, a.jsx)(f.Z9, {
         name: "common i18n",
-        children: Chunk330711.Z.getLocale()
-      }), (0, Chunk54381.jsx)(Chunk257785.Z9, {
+        children: o.Z.getLocale()
+      }), (0, a.jsx)(f.Z9, {
         name: "Moment",
         children: s().locale()
       })]
-    }), (0, Chunk54381.jsxs)(Chunk665149.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk665149.ZP.Icon, {
-        icon: Chunk481060.os0,
+    }), (0, a.jsxs)(u.ZP, {
+      children: [(0, a.jsx)(u.ZP.Icon, {
+        icon: d.os0,
         tooltip: "Messages"
-      }), (0, Chunk54381.jsx)(Chunk665149.ZP.Title, {
+      }), (0, a.jsx)(u.ZP.Title, {
         children: "New System Messages"
       })]
-    }), (0, Chunk54381.jsx)(Chunk257785.E, {
-      children: (0, Chunk54381.jsx)(Chunk257785.Z9, {
+    }), (0, a.jsx)(f.E, {
+      children: (0, a.jsx)(f.Z9, {
         name: "Unique Rendered Main Messages",
-        children: Object.keys(Chunk388032.t).length
+        children: Object.keys(h.t).length
       })
-    }), (0, Chunk54381.jsx)("div", {
+    }), (0, a.jsx)("div", {
       style: {
         margin: 16
       },
-      children: (0, Chunk54381.jsx)(Chunk481060.oil, {
+      children: (0, a.jsx)(d.oil, {
         onChange: function(e) {
           n(e)
         },
         name: "Message name",
         placeholder: "Find a message"
       })
-    }), (0, Chunk54381.jsxs)(Chunk257785.E, {
-      children: [(0, Chunk54381.jsx)(Chunk257785.Z9, {
+    }), (0, a.jsxs)(f.E, {
+      children: [(0, a.jsx)(f.Z9, {
         name: "Hashed key",
-        children: Chunk913527
-      }), (0, Chunk54381.jsx)(Chunk257785.Z9, {
+        children: l
+      }), (0, a.jsx)(f.Z9, {
         name: "Exists?",
         children: null != x ? "yes" : "no"
       })]
-    }), (0, Chunk54381.jsx)(Chunk428530.Z, {
-      data: null == x ? true : x(module)
+    }), (0, a.jsx)(p.Z, {
+      data: null == x ? true : x(e)
     })]
   })
 }

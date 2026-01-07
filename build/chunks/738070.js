@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk273927 = require("./273927.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.CONTENT_AND_SOCIAL_IGNORED_USERS, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["93ZDWE"])],
+  useSearchTerms: () => [u.intl.string(u.t["93ZDWE"])],
   Component: Chunk273927.yo
 })

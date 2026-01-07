@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function l() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "SPELLCHECK_TOGGLE"
   })
 }

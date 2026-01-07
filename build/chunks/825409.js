@@ -23,7 +23,7 @@ let l = "en-US";
 
 function c() {
   let e;
-  return null != (e = (Array.isArray(navigator.languages) ? navigator.languages[0] : null) || navigator.language || navigator.browserLanguage || navigator.userLanguage) ? module : ""
+  return null != (e = (Array.isArray(navigator.languages) ? navigator.languages[0] : null) || navigator.language || navigator.browserLanguage || navigator.userLanguage) ? e : ""
 }
 class u {
   getMessages() {
@@ -124,7 +124,7 @@ class p extends Chunk836560.EventEmitter {
   }
   getDefaultLocale() {
     var e, t, n;
-    let r = null != (e = c()) ? module : l,
+    let r = null != (e = c()) ? e : l,
       i = this._languages.filter(e => {
         let {
           enabled: t
@@ -136,9 +136,9 @@ class p extends Chunk836560.EventEmitter {
         } = e;
         return t
       });
-    if (Chunk400053.includes(Chunk836560)) return Chunk836560;
-    let a = Chunk836560.split("-");
-    return Chunk400053.includes(a[0]) ? a[0] : "zh" === a[0] && a.length > 1 && "Hant" === a[1] ? null != (t = Chunk400053.find(e => "zh-TW" === e)) ? exports : l : null != (n = Chunk400053.find(e => e.split("-")[0] === a[0])) ? require : l
+    if (i.includes(r)) return r;
+    let a = r.split("-");
+    return i.includes(a[0]) ? a[0] : "zh" === a[0] && a.length > 1 && "Hant" === a[1] ? null != (t = i.find(e => "zh-TW" === e)) ? t : l : null != (n = i.find(e => e.split("-")[0] === a[0])) ? n : l
   }
   _loadMessagesForLocale(e) {
     let t = this._fetchMessages(e);

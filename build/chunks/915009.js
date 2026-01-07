@@ -24,58 +24,58 @@ var Chunk473749 = require("./473749.js"),
   Chunk631885 = require("./631885.js"),
   Chunk484710 = require("./484710.js");
 let g = () => {
-    let e = (0, Chunk652262.F)(),
-      t = Chunk722687.sx.useControlledSetting(null == module ? true : module.id);
-    return null == module ? null : {
-      explicitContentNonFriendDm: (0, Chunk800651.bE)({
-        teenId: null == module ? true : module.id,
-        setting: null == exports ? true : exports.explicitContentNonFriendDm
+    let e = (0, _.F)(),
+      t = l.sx.useControlledSetting(null == e ? true : e.id);
+    return null == e ? null : {
+      explicitContentNonFriendDm: (0, p.bE)({
+        teenId: null == e ? true : e.id,
+        setting: null == t ? true : t.explicitContentNonFriendDm
       }),
-      explicitContentFriendDm: (0, Chunk800651.bE)({
-        teenId: null == module ? true : module.id,
-        setting: null == exports ? true : exports.explicitContentFriendDm,
+      explicitContentFriendDm: (0, p.bE)({
+        teenId: null == e ? true : e.id,
+        setting: null == t ? true : t.explicitContentFriendDm,
         isFriend: true
       }),
-      explicitContentGuilds: Chunk524437.Q4.BLUR
+      explicitContentGuilds: a.Q4.BLUR
     }
   },
   E = () => {
-    let e = (0, Chunk652262.F)(),
-      t = Chunk722687.up.useControlledSetting(null == module ? true : module.id);
-    if (null == module) return null;
+    let e = (0, _.F)(),
+      t = l.up.useControlledSetting(null == e ? true : e.id);
+    if (null == e) return null;
     let {
       goreContentNonFriendDm: n,
       goreContentFriendDm: r
-    } = null != exports ? exports : {};
+    } = null != t ? t : {};
     return {
-      goreContentNonFriendDm: (0, Chunk800651.n6)(require) ? require : (0, Chunk925513.zR)({
+      goreContentNonFriendDm: (0, p.n6)(n) ? n : (0, o.zR)({
         isDm: true
       }),
-      goreContentFriendDm: (0, Chunk800651.n6)(Chunk473749) ? Chunk473749 : (0, Chunk925513.zR)({
+      goreContentFriendDm: (0, p.n6)(r) ? r : (0, o.zR)({
         isDm: true,
         isFriend: true
       }),
-      goreContentGuilds: Chunk524437.Q4.BLUR
+      goreContentGuilds: a.Q4.BLUR
     }
   },
   b = () => {
-    let e = (0, Chunk652262.F)(),
-      t = Chunk722687.Ov.useControlledSetting(null == module ? true : module.id),
-      n = Chunk722687.vV.useControlledSetting(null == module ? true : module.id);
-    return null != require ? require : !!exports || exports
+    let e = (0, _.F)(),
+      t = l.Ov.useControlledSetting(null == e ? true : e.id),
+      n = l.vV.useControlledSetting(null == e ? true : e.id);
+    return null != n ? n : !!t || t
   };
 
 function y() {
-  let e = (0, Chunk652262.F)(),
-    t = Chunk722687.vB.useControlledSetting(null == module ? true : module.id),
-    n = Chunk473749.useMemo(() => (0, Chunk88658.bL)(exports), [exports]);
-  return require.mutualGuilds && !require.all
+  let e = (0, _.F)(),
+    t = l.vB.useControlledSetting(null == e ? true : e.id),
+    n = r.useMemo(() => (0, u.bL)(t), [t]);
+  return n.mutualGuilds && !n.all
 }
 
 function O() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = (0, Chunk631885.AZ)();
-  return (null == module ? true : module.nsfwAllowed) === false && exports
+  let e = (0, i.e7)([c.default], () => c.default.getCurrentUser()),
+    t = (0, m.AZ)();
+  return (null == e ? true : e.nsfwAllowed) === false && t
 }
 
 function v(e) {

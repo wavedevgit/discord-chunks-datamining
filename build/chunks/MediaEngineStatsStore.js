@@ -123,7 +123,7 @@ function S(e, t) {
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk959457.Z)
+    this.waitFor(s.default, l.Z)
   }
   getConnectionStats(e) {
     return S(e, 0)

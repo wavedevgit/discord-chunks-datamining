@@ -40,11 +40,11 @@ function l() {
         endsParent: true
       }
     },
-    t = [...u("foreground", i, ["38", "39"], true), ...u("background", a, ["48", "49"], true), ...u("style", r, [], false), module];
-  return d(exports), {
+    t = [...u("foreground", i, ["38", "39"], true), ...u("background", a, ["48", "49"], true), ...u("style", r, [], false), e];
+  return d(t), {
     contains: [{
       begin: s,
-      contains: exports
+      contains: t
     }]
   }
 }

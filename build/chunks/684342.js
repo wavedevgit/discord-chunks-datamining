@@ -25,10 +25,10 @@ var Chunk468343 = require("./468343.js"),
     function e() {
       var e = this;
       this.stopped = true, this.listener = function() {
-        return module.schedule()
+        return e.schedule()
       }
     }
-    return module.prototype.run = function(e) {
+    return e.prototype.run = function(e) {
       var t = this;
       d || (d = true, (0, a.p)(function() {
         var n = false;
@@ -39,25 +39,25 @@ var Chunk468343 = require("./468343.js"),
           n ? t.run(60) : e ? t.run(e - 1) : t.start()
         }
       }))
-    }, module.prototype.schedule = function() {
+    }, e.prototype.schedule = function() {
       this.stop(), this.run(l)
-    }, module.prototype.observe = function() {
+    }, e.prototype.observe = function() {
       var e = this,
         t = function() {
-          return module.observer && module.observer.observe(document.body, c)
+          return e.observer && e.observer.observe(document.body, c)
         };
-      document.body ? exports() : Chunk559972.C.addEventListener("DOMContentLoaded", exports)
-    }, module.prototype.start = function() {
+      document.body ? t() : i.C.addEventListener("DOMContentLoaded", t)
+    }, e.prototype.start = function() {
       var e = this;
       this.stopped && (this.stopped = false, this.observer = new MutationObserver(this.listener), this.observe(), u.forEach(function(t) {
         return i.C.addEventListener(t, e.listener, true)
       }))
-    }, module.prototype.stop = function() {
+    }, e.prototype.stop = function() {
       var e = this;
       this.stopped || (this.observer && this.observer.disconnect(), u.forEach(function(t) {
         return i.C.removeEventListener(t, e.listener, true)
       }), this.stopped = true)
-    }, module
+    }, e
   }()),
   p = function(e) {
     !o && e > 0 && f.start(), (o += e) || f.stop()

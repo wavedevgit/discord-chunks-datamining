@@ -8,5 +8,5 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function u() {
-  return (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()) === Chunk981631.I_8
+  return (0, r.e7)([i.Z], () => i.Z.getGuildId()) === l.I_8
 }

@@ -44,12 +44,12 @@ class s {
   update() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = this.getNextState(o({}, this.state, module));
-    if (exports) this.dirty = !i()(require, this.getInitialState());
+      n = this.getNextState(o({}, this.state, e));
+    if (t) this.dirty = !i()(n, this.getInitialState());
     else
-      for (let e of Object.keys(require)) this.dirty = this.dirty || !i()(this.state[module], require[module]);
+      for (let e of Object.keys(n)) this.dirty = this.dirty || !i()(this.state[e], n[e]);
     let r = this.dirty && this.shouldCommit();
-    return (Chunk348327 || this.alwaysUpdateState) && (this.state = require), !!Chunk348327 && (this.dirty = false, this.didCommit(this.state), true)
+    return (r || this.alwaysUpdateState) && (this.state = n), !!r && (this.dirty = false, this.didCommit(this.state), true)
   }
   forceUpdate() {
     this.dirty = false, this.didCommit(this.state)

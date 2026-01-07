@@ -61,38 +61,38 @@ function U(e, t) {
   }), e
 }
 let L = Chunk473749.memo(function() {
-    return (0, Chunk54381.jsx)(Chunk28664.u, {
+    return (0, r.jsx)(o.u, {
       "data-pending-richtooltip-migration": true,
-      text: Chunk388032.intl.string(Chunk388032.t["vu/MiQ"]),
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+      text: C.intl.string(C.t["vu/MiQ"]),
+      children: (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
-        className: Chunk530887.unknownInvite,
-        children: Chunk388032.intl.string(Chunk388032.t.yobFdm)
+        className: b.unknownInvite,
+        children: C.intl.string(C.t.yobFdm)
       })
     })
   }),
   M = Chunk473749.memo(function() {
-    return (0, Chunk54381.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.OrCp9h),
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    return (0, r.jsx)(o.u, {
+      text: C.intl.string(C.t.OrCp9h),
+      children: (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
-        className: Chunk530887.unknownInvite,
-        children: Chunk388032.intl.string(Chunk388032.t["4upToT"])
+        className: b.unknownInvite,
+        children: C.intl.string(C.t["4upToT"])
       })
     })
   }),
   x = {
     [Chunk327999.gq.UNSPECIFIED]: {
       type: Chunk327999.gq.UNSPECIFIED,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.DvMBkS),
+      getJoinTypeLabel: () => C.intl.string(C.t.DvMBkS),
       icon: null,
       hasTooltip: false
     },
     [Chunk327999.gq.BOT]: {
       type: Chunk327999.gq.BOT,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.HumZAi),
+      getJoinTypeLabel: () => C.intl.string(C.t.HumZAi),
       icon: (0, Chunk54381.jsx)(Chunk481060.wGt, {
         size: "custom",
         color: "currentColor",
@@ -104,7 +104,7 @@ let L = Chunk473749.memo(function() {
     },
     [Chunk327999.gq.INTEGRATION]: {
       type: Chunk327999.gq.INTEGRATION,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.gmCUFw),
+      getJoinTypeLabel: () => C.intl.string(C.t.gmCUFw),
       icon: (0, Chunk54381.jsx)(Chunk481060.tYf, {
         size: "custom",
         color: "currentColor",
@@ -115,7 +115,7 @@ let L = Chunk473749.memo(function() {
     },
     [Chunk327999.gq.DISCOVERY]: {
       type: Chunk327999.gq.DISCOVERY,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t["Ql/e9Y"]),
+      getJoinTypeLabel: () => C.intl.string(C.t["Ql/e9Y"]),
       icon: (0, Chunk54381.jsx)(Chunk481060.Jmo, {
         size: "custom",
         color: "currentColor",
@@ -126,7 +126,7 @@ let L = Chunk473749.memo(function() {
     },
     [Chunk327999.gq.HUB]: {
       type: Chunk327999.gq.HUB,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.Op8B3O),
+      getJoinTypeLabel: () => C.intl.string(C.t.Op8B3O),
       icon: (0, Chunk54381.jsx)(Chunk481060.aVH, {
         size: "custom",
         color: "currentColor",
@@ -170,7 +170,7 @@ let L = Chunk473749.memo(function() {
     },
     [Chunk327999.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL]: {
       type: Chunk327999.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t["9/ZreX"]),
+      getJoinTypeLabel: () => C.intl.string(C.t["9/ZreX"]),
       icon: (0, Chunk54381.jsx)(Chunk481060.iWm, {
         size: "custom",
         color: "currentColor",

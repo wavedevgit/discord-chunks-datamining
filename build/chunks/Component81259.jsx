@@ -12,22 +12,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk551556 = require("./551556.jsx"),
   Chunk991119 = require("./991119.js");
-let d = () => (0, Chunk54381.jsx)(Chunk551556.Z, {
+let d = () => (0, r.jsx)(c.Z, {
     width: 13,
     height: 13,
-    backgroundColor: Chunk692547.Z.colors.TEXT_FEEDBACK_POSITIVE.css
+    backgroundColor: s.Z.colors.TEXT_FEEDBACK_POSITIVE.css
   }),
-  f = () => (0, Chunk54381.jsx)(Chunk481060.k$p, {
+  f = () => (0, r.jsx)(l.k$p, {
     size: "custom",
     width: 13,
     height: 13,
-    color: Chunk692547.Z.colors.TEXT_FEEDBACK_CRITICAL.css
+    color: s.Z.colors.TEXT_FEEDBACK_CRITICAL.css
   }),
-  m = () => (0, Chunk54381.jsx)(Chunk481060.k$p, {
+  m = () => (0, r.jsx)(l.k$p, {
     size: "custom",
     width: 13,
     height: 13,
-    color: Chunk692547.Z.colors.TEXT_FEEDBACK_WARNING.css
+    color: s.Z.colors.TEXT_FEEDBACK_WARNING.css
   });
 
 function g(e) {

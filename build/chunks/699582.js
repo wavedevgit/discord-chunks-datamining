@@ -7,7 +7,7 @@ var r, Chunk863714 = require("./863714.js"),
   s = function() {
     var e = {};
     try {
-      return Object.defineProperty(module, "a", {}), "a" in module
+      return Object.defineProperty(e, "a", {}), "a" in e
     } catch (e) {
       returnfalse
     }
@@ -563,7 +563,7 @@ function V(e, t, n, r, i) {
 function H() {
   var e = arguments[0],
     t = arguments[1];
-  return this && this !== o ? Y(eE(this), module, exports) : new o.NumberFormat(module, exports)
+  return this && this !== o ? Y(eE(this), e, t) : new o.NumberFormat(e, t)
 }
 
 function Y(e, t, n) {
@@ -617,15 +617,15 @@ function W(e) {
 
 function K() {
   var e = this != null && "object" == typeof this && eb(this);
-  if (!module || !module["[[initializedNumberFormat]]"]) throw TypeError("`this` value for format() is not an initialized Intl.NumberFormat object.");
-  if (true === module["[[boundFormat]]"]) {
+  if (!e || !e["[[initializedNumberFormat]]"]) throw TypeError("`this` value for format() is not an initialized Intl.NumberFormat object.");
+  if (true === e["[[boundFormat]]"]) {
     var t = function(e) {
         return z(this, Number(e))
       },
-      n = E.call(exports, this);
-    module["[[boundFormat]]"] = require
+      n = E.call(t, this);
+    e["[[boundFormat]]"] = n
   }
-  return module["[[boundFormat]]"]
+  return e["[[boundFormat]]"]
 }
 
 function z(e, t) {
@@ -740,7 +740,7 @@ var X = {
 function J() {
   var e = arguments[0],
     t = arguments[1];
-  return this && this !== o ? $(eE(this), module, exports) : new o.DateTimeFormat(module, exports)
+  return this && this !== o ? $(eE(this), e, t) : new o.DateTimeFormat(e, t)
 }
 
 function $(e, t, n) {
@@ -791,13 +791,13 @@ u(o.NumberFormat.prototype, "resolvedOptions", {
       n = ["locale", "numberingSystem", "style", "currency", "currencyDisplay", "minimumIntegerDigits", "minimumFractionDigits", "maximumFractionDigits", "minimumSignificantDigits", "maximumSignificantDigits", "useGrouping"],
       r = this != null && "object" == typeof this && eb(this);
     if (!r || !r["[[initializedNumberFormat]]"]) throw TypeError("`this` value for resolvedOptions() is not an initialized Intl.NumberFormat object.");
-    for (var i = 0, a = require.length; Chunk863714 < Chunk635535; Chunk863714++) c.call(r, e = "[[" + require[Chunk863714] + "]]") && (exports[require[Chunk863714]] = {
-      value: r[module],
+    for (var i = 0, a = n.length; i < a; i++) c.call(r, e = "[[" + n[i] + "]]") && (t[n[i]] = {
+      value: r[e],
       writable: true,
       configurable: true,
       enumerable: true
     });
-    return f({}, exports)
+    return f({}, t)
   }
 }), u(o, "DateTimeFormat", {
   configurable: true,
@@ -864,16 +864,16 @@ function ea(e, t) {
 
 function eo() {
   var e = this != null && "object" == typeof this && eb(this);
-  if (!module || !module["[[initializedDateTimeFormat]]"]) throw TypeError("`this` value for format() is not an initialized Intl.DateTimeFormat object.");
-  if (true === module["[[boundFormat]]"]) {
+  if (!e || !e["[[initializedDateTimeFormat]]"]) throw TypeError("`this` value for format() is not an initialized Intl.DateTimeFormat object.");
+  if (true === e["[[boundFormat]]"]) {
     var t = function() {
         var e = Number(0 == arguments.length ? Date.now() : arguments[0]);
-        return es(this, module)
+        return es(this, e)
       },
-      n = E.call(exports, this);
-    module["[[boundFormat]]"] = require
+      n = E.call(t, this);
+    e["[[boundFormat]]"] = n
   }
-  return module["[[boundFormat]]"]
+  return e["[[boundFormat]]"]
 }
 
 function es(e, t) {
@@ -954,13 +954,13 @@ b.DateTimeFormat = {
       n = ["locale", "calendar", "numberingSystem", "timeZone", "hour12", "weekday", "era", "year", "month", "day", "hour", "minute", "second", "timeZoneName"],
       r = this != null && "object" == typeof this && eb(this);
     if (!r || !r["[[initializedDateTimeFormat]]"]) throw TypeError("`this` value for resolvedOptions() is not an initialized Intl.DateTimeFormat object.");
-    for (var i = 0, a = require.length; Chunk863714 < Chunk635535; Chunk863714++) c.call(r, e = "[[" + require[Chunk863714] + "]]") && (exports[require[Chunk863714]] = {
-      value: r[module],
+    for (var i = 0, a = n.length; i < a; i++) c.call(r, e = "[[" + n[i] + "]]") && (t[n[i]] = {
+      value: r[e],
       writable: true,
       configurable: true,
       enumerable: true
     });
-    return f({}, exports)
+    return f({}, t)
   }
 });
 var ec = o.__localeSensitiveProtos = {
@@ -1021,13 +1021,13 @@ function em() {
 function eh() {
   for (var e = /[.?*+^$[\]\\(){}|-]/g, t = RegExp.lastMatch || "", n = RegExp.multiline ? "m" : "", r = {
       input: RegExp.input
-    }, i = new em, a = false, o = {}, s = 1; s <= 9; s++) a = (o["$" + s] = RegExp["$" + s]) || Chunk635535;
-  if (t = exports.replace(module, "\\$&"), Chunk635535)
+    }, i = new em, a = false, o = {}, s = 1; s <= 9; s++) a = (o["$" + s] = RegExp["$" + s]) || a;
+  if (t = t.replace(e, "\\$&"), a)
     for (var s = 1; s <= 9; s++) {
       var l = o["$" + s];
-      l ? (l = l.replace(module, "\\$&"), t = exports.replace(l, "(" + l + ")")) : t = "()" + exports, m.call(Chunk863714, exports.slice(0, exports.indexOf("(") + 1)), t = exports.slice(exports.indexOf("(") + 1)
+      l ? (l = l.replace(e, "\\$&"), t = t.replace(l, "(" + l + ")")) : t = "()" + t, m.call(i, t.slice(0, t.indexOf("(") + 1)), t = t.slice(t.indexOf("(") + 1)
     }
-  return r.exp = new RegExp(h.call(Chunk863714, "") + exports, require), r
+  return r.exp = new RegExp(h.call(i, "") + t, n), r
 }
 
 function eg(e) {
@@ -1052,27 +1052,27 @@ ec.Number.toLocaleString = function() {
 }, ec.Date.toLocaleString = function() {
   if ("[object Date]" !== Object.prototype.toString.call(this)) throw TypeError("`this` value must be a Date instance for Date.prototype.toLocaleString()");
   var e = +this;
-  if (isNaN(module)) return "Invalid Date";
+  if (isNaN(e)) return "Invalid Date";
   var t = arguments[0],
     n = arguments[1],
-    n = en(require, "any", "all");
-  return es(new J(exports, require), module)
+    n = en(n, "any", "all");
+  return es(new J(t, n), e)
 }, ec.Date.toLocaleDateString = function() {
   if ("[object Date]" !== Object.prototype.toString.call(this)) throw TypeError("`this` value must be a Date instance for Date.prototype.toLocaleDateString()");
   var e = +this;
-  if (isNaN(module)) return "Invalid Date";
+  if (isNaN(e)) return "Invalid Date";
   var t = arguments[0],
     n = arguments[1],
-    n = en(require, "date", "date");
-  return es(new J(exports, require), module)
+    n = en(n, "date", "date");
+  return es(new J(t, n), e)
 }, ec.Date.toLocaleTimeString = function() {
   if ("[object Date]" !== Object.prototype.toString.call(this)) throw TypeError("`this` value must be a Date instance for Date.prototype.toLocaleTimeString()");
   var e = +this;
-  if (isNaN(module)) return "Invalid Date";
+  if (isNaN(e)) return "Invalid Date";
   var t = arguments[0],
     n = arguments[1],
-    n = en(require, "time", "time");
-  return es(new J(exports, require), module)
+    n = en(n, "time", "time");
+  return es(new J(t, n), e)
 }, u(o, "__applyLocaleSensitivePrototypes", {
   writable: true,
   configurable: true,
@@ -1085,10 +1085,10 @@ ec.Number.toLocaleString = function() {
         writable: true,
         configurable: true,
         value: ec.Date.toLocaleString
-      }), ec.Date) c.call(ec.Date, module) && u(Date.prototype, module, {
+      }), ec.Date) c.call(ec.Date, e) && u(Date.prototype, e, {
       writable: true,
       configurable: true,
-      value: ec.Date[module]
+      value: ec.Date[e]
     })
   }
 }), u(o, "__addLocaleData", {

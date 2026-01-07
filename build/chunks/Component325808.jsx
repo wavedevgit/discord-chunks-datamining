@@ -128,29 +128,29 @@ function S(e, t) {
 function I() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()), n = [{
-    value: Chunk981631.pM4.VOICE_ACTIVITY,
-    name: Chunk388032.intl.string(Chunk388032.t.cHCEOJ)
+  } = (0, c.ZP)(), t = (0, a.e7)([u.Z], () => u.Z.getMode()), n = [{
+    value: h.pM4.VOICE_ACTIVITY,
+    name: g.intl.string(g.t.cHCEOJ)
   }, {
-    value: Chunk981631.pM4.PUSH_TO_TALK,
-    name: y ? Chunk388032.intl.string(Chunk388032.t["1AINrB"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVL)
-  }], s = Chunk473749.useCallback(t => {
+    value: h.pM4.PUSH_TO_TALK,
+    name: y ? g.intl.string(g.t["1AINrB"]) : g.intl.string(g.t.Q8gkVL)
+  }], s = i.useCallback(t => {
     let {
       value: n
     } = t;
     S(n, e)
-  }, [module]);
-  return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  }, [e]);
+  return (0, r.jsxs)(o.Kqy, {
     gap: 20,
-    children: [(0, Chunk54381.jsx)(Chunk481060.FXm, {
-      label: Chunk388032.intl.string(Chunk388032.t["pS+K2L"]),
+    children: [(0, r.jsx)(o.FXm, {
+      label: g.intl.string(g.t["pS+K2L"]),
       onChange: e => s({
         value: e
       }),
-      options: require,
-      value: exports
-    }), exports === Chunk981631.pM4.PUSH_TO_TALK && (0, Chunk54381.jsx)(v, {
-      inputMode: exports
+      options: n,
+      value: t
+    }), t === h.pM4.PUSH_TO_TALK && (0, r.jsx)(v, {
+      inputMode: t
     })]
   })
 }

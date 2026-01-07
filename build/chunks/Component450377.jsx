@@ -245,29 +245,29 @@ function A() {
   let {
     guild: e,
     mfaLevel: t
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps(), []), n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled, []);
-  return null == module ? null : require ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk876549.headerContainer,
+  } = (0, o.cj)([O.Z], () => O.Z.getProps(), []), n = (0, o.e7)([p.Z], () => p.Z.enabled, []);
+  return null == e ? null : n ? (0, r.jsx)(d.Z, {}) : (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(c.Heading, {
+      className: S.headerContainer,
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t["suhY+Y"])
-    }), (0, Chunk54381.jsx)(Chunk723136.z, {
-      guild: module
-    }), (0, Chunk54381.jsx)(R, {
-      guild: module
-    }), (0, Chunk54381.jsx)(P, {
-      guild: module
-    }), (0, Chunk54381.jsx)(D, {
-      guild: module,
-      mfaLevel: exports
-    }), (0, Chunk54381.jsx)(w, {
-      guild: module
-    }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-      className: Chunk876549.divider
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk876549.setupContainer,
-      children: (0, Chunk54381.jsx)(Chunk181339.w, {
-        guild: module
+      children: I.intl.string(I.t["suhY+Y"])
+    }), (0, r.jsx)(C.z, {
+      guild: e
+    }), (0, r.jsx)(R, {
+      guild: e
+    }), (0, r.jsx)(P, {
+      guild: e
+    }), (0, r.jsx)(D, {
+      guild: e,
+      mfaLevel: t
+    }), (0, r.jsx)(w, {
+      guild: e
+    }), (0, r.jsx)(c.izJ, {
+      className: S.divider
+    }), (0, r.jsx)("div", {
+      className: S.setupContainer,
+      children: (0, r.jsx)(N.w, {
+        guild: e
       })
     })]
   })

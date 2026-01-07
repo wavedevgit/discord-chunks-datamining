@@ -67,14 +67,14 @@ function b(e) {
 class y extends(i = Chunk442837.ZP.Store) {
   initialize() {
     var e;
-    let t = null != (e = Chunk433517.K.get(f)) ? module : {};
-    if (Array.isArray(exports)) p = new Set(null != exports ? Array.from(exports) : null), _ = new Set;
+    let t = null != (e = o.K.get(f)) ? e : {};
+    if (Array.isArray(t)) p = new Set(null != t ? Array.from(t) : null), _ = new Set;
     else {
       let {
         trustedDomains: e,
         trustedProtocols: n
-      } = exports;
-      p = new Set(null != module ? Array.from(module) : null), _ = new Set(null != require ? Array.from(require) : null)
+      } = t;
+      p = new Set(null != e ? Array.from(e) : null), _ = new Set(null != n ? Array.from(n) : null)
     }
   }
   isTrustedDomain(e) {

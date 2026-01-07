@@ -99,10 +99,10 @@ let G = e => {
     let {
       noCache: e,
       includeUnpublished: t
-    } = (0, Chunk81136.Z)();
-    return (0, Chunk364111.E)(Chunk215023.AW.HOME, {
-      noCache: module,
-      includeUnpublished: exports,
+    } = (0, x.Z)();
+    return (0, T.E)(Z.AW.HOME, {
+      noCache: e,
+      includeUnpublished: t,
       includeBundles: true
     }, true, true), null
   },
@@ -117,22 +117,22 @@ let G = e => {
       onMouseLeave: u,
       children: d
     } = e, f = U(e, ["selected", "locationState", "icon", "onClick", "collectibleShopTab", "onMouseEnter", "onMouseLeave", "children"]);
-    let h = (0, o.JA)("shop"),
-      m = b.Z.HOME_PAGE_SHOP_TAB,
+    let m = (0, o.JA)("shop"),
+      h = b.Z.HOME_PAGE_SHOP_TAB,
       {
         analyticsLocations: E
-      } = (0, _.ZP)(m),
+      } = (0, _.ZP)(h),
       [O, v] = i.useState(false),
       y = i.useCallback(() => {
         true !== a && a(), true !== s && (0, C.mK)({
           tab: s,
           analyticsLocations: E,
-          analyticsSource: m
+          analyticsSource: h
         }), v(true), (0, C.Sm)({
-          analyticsSource: m,
+          analyticsSource: h,
           analyticsLocations: E
         })
-      }, [m, E, a, v, s]),
+      }, [h, E, a, v, s]),
       I = w.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [O && (0, r.jsx)(H, {}), (0, r.jsx)(g.Qj, k(M({
@@ -141,7 +141,7 @@ let G = e => {
         icon: null != l ? l : p.EOn,
         text: R.intl.string(R.t.pWG4ze),
         locationState: n
-      }, h, f), {
+      }, m, f), {
         onMouseEnter: c,
         onMouseLeave: u,
         onClick: y,
@@ -194,13 +194,13 @@ let G = e => {
         displayOptions: C
       } = e,
       T = U(e, ["displayOptions"]);
-    let N = (0, s.e7)([m.Z], () => m.Z.useReducedMotion),
+    let N = (0, s.e7)([h.Z], () => h.Z.useReducedMotion),
       [j, P] = i.useState(0),
       [x, A] = i.useState(false),
       [Z, w] = i.useState(false),
       L = i.useRef(null),
       H = i.useRef(null),
-      V = (0, h.ZP)(),
+      V = (0, m.ZP)(),
       Y = (0, d.wj)(V),
       W = (0, S.p)({
         location: "CollectiblesShopButton"
@@ -298,16 +298,16 @@ let G = e => {
     let c = i.useRef(null),
       u = i.useRef(null),
       [p, f] = i.useState(false),
-      g = (0, h.ZP)(),
-      m = (0, d.wj)(g),
+      g = (0, m.ZP)(),
+      h = (0, d.wj)(g),
       b = (0, S.p)({
         location: "CollectiblesShopButton"
       }),
       _ = b.useNewHoverStyle ? D.marketingButtonBackgroundNew : D.marketingButtonBackground,
       E = l.entryPointBackgroundAssets,
       O = l.entrypointBackgroundStyle,
-      v = m ? null == E ? true : E.srcDarkHovered : null == E ? true : E.srcLightHovered,
-      y = m ? null == O || null == (t = O.hovered) ? true : t.dark : null == O || null == (n = O.hovered) ? true : n.light;
+      v = h ? null == E ? true : E.srcDarkHovered : null == E ? true : E.srcLightHovered,
+      y = h ? null == O || null == (t = O.hovered) ? true : t.dark : null == O || null == (n = O.hovered) ? true : n.light;
     return i.useEffect(() => {
       if (null == v || "" === v) return void f(false);
       let e = () => {

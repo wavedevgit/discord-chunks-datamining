@@ -40,13 +40,13 @@ class u extends Chunk836560.EventEmitter {
   check() {
     let e = l() > i,
       t = c() > i,
-      n = module ? "vertical" : "horizontal";
-    if (!(exports && module) && (module || exports)) {
+      n = e ? "vertical" : "horizontal";
+    if (!(t && e) && (e || t)) {
       let e = s.open;
       s = {
         open: true,
-        orientation: require
-      }, module && s.orientation === require || this.emit("changed", s)
+        orientation: n
+      }, e && s.orientation === n || this.emit("changed", s)
     } else s.open && (s.open = false, this.emit("changed", s))
   }
   constructor() {

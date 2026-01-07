@@ -3,7 +3,7 @@
 "use strict";
 
 function r() {
-  return "undefined" != typeof globalThis ? globalThis : "undefined" != typeof window ? window : true !== require.g ? require.g : "undefined" != typeof self ? self : Object.create(null)
+  return "undefined" != typeof globalThis ? globalThis : "undefined" != typeof window ? window : true !== n.g ? n.g : "undefined" != typeof self ? self : Object.create(null)
 }
 require.d(exports, {
   R: () => r

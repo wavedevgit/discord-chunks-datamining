@@ -42,8 +42,8 @@ class s {
     let e = this.getScope().clone();
     return this._stack.push({
       client: this.getClient(),
-      scope: module
-    }), module
+      scope: e
+    }), e
   }
   _popScope() {
     return !(this._stack.length <= 1) && !!this._stack.pop()
@@ -51,9 +51,9 @@ class s {
 }
 
 function l() {
-  let e = (0, Chunk732418.c)(),
-    t = (0, Chunk732418.q)(module);
-  return exports.stack = exports.stack || new s((0, Chunk898491.X)(), (0, Chunk898491.T)())
+  let e = (0, o.c)(),
+    t = (0, o.q)(e);
+  return t.stack = t.stack || new s((0, i.X)(), (0, i.T)())
 }
 
 function c(e) {

@@ -17,21 +17,21 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p() {
-  let e = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
-    t = Chunk197344.Z.useHolidaySoundpack();
-  a()(null != exports, "should not render this without a holiday soundpack");
+  let e = (0, o.e7)([c.Z], () => c.Z.getSoundpack()),
+    t = u.Z.useHolidaySoundpack();
+  a()(null != t, "should not render this without a holiday soundpack");
   let n = [{
-    value: Chunk871465.Y.CLASSIC,
-    label: Chunk388032.intl.string(Chunk388032.t.p3Hg5W)
+    value: d.Y.CLASSIC,
+    label: f.intl.string(f.t.p3Hg5W)
   }, {
-    value: exports.soundpack,
-    label: Chunk388032.intl.string(exports.soundpackLabel)
+    value: t.soundpack,
+    label: f.intl.string(t.soundpackLabel)
   }];
-  return (0, Chunk54381.jsx)(Chunk199849.y6, {
-    label: Chunk388032.intl.string(Chunk388032.t.fgSHf8),
-    onChange: Chunk716364.c,
-    value: module,
-    options: require,
-    maxVisibleItems: require.length
+  return (0, r.jsx)(s.y6, {
+    label: f.intl.string(f.t.fgSHf8),
+    onChange: l.c,
+    value: e,
+    options: n,
+    maxVisibleItems: n.length
   })
 }

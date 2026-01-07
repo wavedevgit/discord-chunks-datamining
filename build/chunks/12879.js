@@ -13,7 +13,7 @@ var e, o, i, Chunk779688 = require("./779688.js"),
   h = false;
 [].keys && ("next" in (i = [].keys()) ? (o = Chunk709583(Chunk709583(i))) !== Object.prototype && (e = o) : h = true), !Chunk829575(e) || Chunk779688(function() {
   var t = {};
-  return e[y].call(module) !== module
+  return e[y].call(t) !== t
 }) ? e = {} : Chunk253462 && (e = Chunk425184(e)), Chunk971428(e[y]) || Chunk342930(e, y, function() {
   return this
 }), module.exports = {

@@ -28,7 +28,7 @@ class a {
     let {
       stores: e
     } = this;
-    module.forEach(e => e.removeReactChangeListener(this.handleStoreChange))
+    e.forEach(e => e.removeReactChangeListener(this.handleStoreChange))
   }
   constructor(e, t) {
     i(this, "stores", true), i(this, "changeCallback", true), i(this, "storeVersionHandled", true), i(this, "handleStoreChange", () => {

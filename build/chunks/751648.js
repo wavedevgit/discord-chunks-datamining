@@ -13,26 +13,26 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let c = new Chunk710845.Z("VirtualCurrencyActionCreators");
 async function u() {
-  Chunk570140.Z.wait(() => {
-    Chunk570140.Z.dispatch({
+  i.Z.wait(() => {
+    i.Z.dispatch({
       type: "VIRTUAL_CURRENCY_BALANCE_FETCH"
     })
   });
   try {
-    let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.VIRTUAL_CURRENCY_USER_BALANCE,
+    let e = await r.tn.get({
+        url: l.ANM.VIRTUAL_CURRENCY_USER_BALANCE,
         rejectWithError: false
       }),
-      t = module.body.balance;
-    return Chunk570140.Z.dispatch({
+      t = e.body.balance;
+    return i.Z.dispatch({
       type: "VIRTUAL_CURRENCY_BALANCE_FETCH_SUCCESS",
-      balance: exports
-    }), module.body
+      balance: t
+    }), e.body
   } catch (t) {
-    let e = exports instanceof Chunk881052.HF ? exports : new Chunk881052.HF(exports);
-    Chunk570140.Z.dispatch({
+    let e = t instanceof a.HF ? t : new a.HF(t);
+    i.Z.dispatch({
       type: "VIRTUAL_CURRENCY_BALANCE_FETCH_FAIL",
-      error: module
+      error: e
     })
   }
 }

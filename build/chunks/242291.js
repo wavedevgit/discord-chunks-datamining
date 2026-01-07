@@ -39,8 +39,8 @@ var Chunk399606 = require("./399606.js"),
 
 function C() {
   var e;
-  let t = Chunk695346.kU.getSetting();
-  return null != (e = null == exports ? true : exports.volume) ? module : 100
+  let t = s.kU.getSetting();
+  return null != (e = null == t ? true : t.volume) ? e : 100
 }
 
 function A(e, t) {
@@ -72,7 +72,7 @@ function w(e, t) {
 
 function D() {
   var e, t;
-  return Object.values(null != (t = null == (e = Chunk581883.Z.settings.guilds) ? true : module.guilds) ? exports : {}).some(e => null != e.joinSound)
+  return Object.values(null != (t = null == (e = c.Z.settings.guilds) ? true : e.guilds) ? t : {}).some(e => null != e.joinSound)
 }
 async function x(e) {
   let t = _.default.getCurrentUser(),

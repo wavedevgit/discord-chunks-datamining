@@ -78,7 +78,7 @@ function k(e, t) {
   }), e
 }
 let U = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
-    theme: Chunk210887.Z.theme
+    theme: T.Z.theme
   }))(Chunk481060.ubH),
   G = (0, Chunk358085.isWindows)(),
   Z = 18,
@@ -388,16 +388,16 @@ function V(e) {
 }
 
 function H() {
-  return (0, Chunk54381.jsx)("div", {
-    className: o()(Chunk727829.flexCenter, Chunk675433.notDetected, Chunk675433.activeGame),
-    children: (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk675433.gameNameLastPlayed, Chunk727829.vertical),
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk675433.gameName,
-        children: Chunk388032.intl.string(Chunk388032.t.H68X9x)
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk675433.lastPlayed,
-        children: Chunk388032.intl.string(Chunk388032.t.T5Ilmw)
+  return (0, r.jsx)("div", {
+    className: o()(D.flexCenter, R.notDetected, R.activeGame),
+    children: (0, r.jsxs)("div", {
+      className: o()(R.gameNameLastPlayed, D.vertical),
+      children: [(0, r.jsx)("div", {
+        className: R.gameName,
+        children: P.intl.string(P.t.H68X9x)
+      }), (0, r.jsx)("div", {
+        className: R.lastPlayed,
+        children: P.intl.string(P.t.T5Ilmw)
       })]
     })
   })
@@ -418,35 +418,35 @@ function Y(e) {
   })
 }
 let W = (0, Chunk251625.oH)(function() {
-    for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-    return new Set(exports.map(e => e.exePath))
+    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+    return new Set(t.map(e => e.exePath))
   }),
   K = () => {
-    let e = (0, Chunk442837.Wu)([Chunk594190.ZP], () => Chunk594190.ZP.getGamesSeen(false)),
+    let e = (0, s.Wu)([m.ZP], () => m.ZP.getGamesSeen(false)),
       {
         runningGame: t,
         overrideExePaths: n
-      } = (0, Chunk442837.cj)([Chunk594190.ZP], () => ({
-        runningGame: Chunk594190.ZP.getVisibleGame(),
-        overrideExePaths: W(...Chunk594190.ZP.getOverrides())
+      } = (0, s.cj)([m.ZP], () => ({
+        runningGame: m.ZP.getVisibleGame(),
+        overrideExePaths: W(...m.ZP.getOverrides())
       }));
-    Chunk473749.useEffect(() => ((0, Chunk320724.Ky)(), Chunk320724.P7), []);
-    let a = Chunk473749.useMemo(() => module.reduce((e, t) => ((0, b.le)(t) && e.push(t), e), []), [module]);
-    return null != exports ? (0, Chunk54381.jsx)(V, {
-      rawGame: exports,
-      isOverride: require.has(exports.exePath),
+    i.useEffect(() => ((0, h.Ky)(), h.P7), []);
+    let a = i.useMemo(() => e.reduce((e, t) => ((0, b.le)(t) && e.push(t), e), []), [e]);
+    return null != t ? (0, r.jsx)(V, {
+      rawGame: t,
+      isOverride: n.has(t.exePath),
       nowPlaying: true,
-      subgames: exports.id === Chunk817788.eB ? Chunk120356 : true
-    }, (0, Chunk594190.rH)(exports)) : (0, Chunk54381.jsx)(H, {})
+      subgames: t.id === E.eB ? a : true
+    }, (0, m.rH)(t)) : (0, r.jsx)(H, {})
   },
   z = () => {
-    let e = Chunk473749.useRef(null);
-    return (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk675433.nowPlayingAdd, Chunk478411.marginReset),
-      children: [(0, Chunk54381.jsx)("span", {
-        children: Chunk388032.intl.string(Chunk388032.t.xwhoqM)
-      }), (0, Chunk54381.jsx)(Chunk481060.yRy, {
-        targetElementRef: module,
+    let e = i.useRef(null);
+    return (0, r.jsxs)("div", {
+      className: o()(R.nowPlayingAdd, x.marginReset),
+      children: [(0, r.jsx)("span", {
+        children: P.intl.string(P.t.xwhoqM)
+      }), (0, r.jsx)(d.yRy, {
+        targetElementRef: e,
         renderPopout: e => {
           let {
             closePopout: t

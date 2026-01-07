@@ -58,22 +58,22 @@ let u = {
     })
   },
   close() {
-    let e = (0, Chunk978986.e7)(),
-      t = (0, Chunk978986._J)();
-    if ((0, Chunk978986.NQ)()) {
-      let i = (0, Chunk978986.y)(),
-        n = (0, Chunk978986.h6)(),
-        a = (0, Chunk978986.U1)(),
-        r = (0, Chunk978986.aP)();
-      Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
-        invite_code: module,
-        guild_id: exports,
-        nickname_present: null != require && require.length > 0,
-        dms_allowed: Chunk570140,
-        activity_status_shown: Chunk447543,
-        changed_from_default: Chunk18438
+    let e = (0, l.e7)(),
+      t = (0, l._J)();
+    if ((0, l.NQ)()) {
+      let i = (0, l.y)(),
+        n = (0, l.h6)(),
+        a = (0, l.U1)(),
+        r = (0, l.aP)();
+      c.default.track(f.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+        invite_code: e,
+        guild_id: t,
+        nickname_present: null != i && i.length > 0,
+        dms_allowed: n,
+        activity_status_shown: a,
+        changed_from_default: r
       })
-    }(0, Chunk978986.oE)(), Chunk570140.Z.dispatch({
+    }(0, l.oE)(), n.Z.dispatch({
       type: "INVITE_MODAL_CLOSE"
     })
   }

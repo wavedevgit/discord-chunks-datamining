@@ -76,67 +76,67 @@ let D = (0, Chunk972959.H)(() => ({
 }));
 
 function x() {
-  let e = (0, Chunk53432.Z)(),
-    t = (0, Chunk606669.Z)(),
-    n = (0, Chunk74869.Z)(),
+  let e = (0, b.Z)(),
+    t = (0, E.Z)(),
+    n = (0, y.Z)(),
     a = D.useField("controlsLayout"),
-    o = Chunk473749.useMemo(() => (0, Chunk54381.jsxs)(Chunk828214.kS, {
+    o = i.useMemo(() => (0, r.jsxs)(u.kS, {
       label: "Controls",
-      children: [(0, Chunk54381.jsx)(Chunk828214.k5, {
+      children: [(0, r.jsx)(u.k5, {
         id: "controls-right",
         group: "controls-layout",
         label: "Right Side",
         action: () => D.setState({
           controlsLayout: "right"
         }),
-        checked: "right" === Chunk657707
-      }), (0, Chunk54381.jsx)(Chunk828214.k5, {
+        checked: "right" === a
+      }), (0, r.jsx)(u.k5, {
         id: "controls-bottom",
         group: "controls-layout",
         label: "Bottom",
         action: () => D.setState({
           controlsLayout: "bottom"
         }),
-        checked: "bottom" === Chunk657707
-      }), (0, Chunk54381.jsx)(Chunk828214.k5, {
+        checked: "bottom" === a
+      }), (0, r.jsx)(u.k5, {
         id: "controls-hidden",
         group: "controls-layout",
         label: "Hidden",
         action: () => D.setState({
           controlsLayout: "hidden"
         }),
-        checked: "hidden" === Chunk657707
+        checked: "hidden" === a
       })]
-    }, "controls-layout"), [Chunk657707]);
-  return (0, Chunk54381.jsxs)(Chunk830447.v, {
-    onSelect: Chunk231338.dG,
+    }, "controls-layout"), [a]);
+  return (0, r.jsxs)(c.v, {
+    onSelect: T.dG,
     navId: "playground-settings-menu",
-    onClose: Chunk231338.dG,
+    onClose: T.dG,
     "aria-label": "Playground Settings",
-    children: [(0, Chunk54381.jsx)(Chunk828214.sN, {
+    children: [(0, r.jsx)(u.sN, {
       id: "appearance",
-      label: Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
-      children: [...module.filter(e => null != e), Chunk793030]
-    }), (0, Chunk54381.jsx)(Chunk828214.sN, {
+      label: C.intl.string(C.t["iHH+ky"]),
+      children: [...e.filter(e => null != e), o]
+    }), (0, r.jsx)(u.sN, {
       id: "accessibility",
-      label: Chunk388032.intl.string(Chunk388032.t.G0neg7),
-      children: exports.filter(e => null != e)
-    }), (0, Chunk54381.jsx)(Chunk828214.sN, {
+      label: C.intl.string(C.t.G0neg7),
+      children: t.filter(e => null != e)
+    }), (0, r.jsx)(u.sN, {
       id: "experiments",
       label: "Experiments",
-      children: require.filter(e => null != e)
+      children: n.filter(e => null != e)
     })]
   })
 }
 
 function L() {
-  let e = Chunk473749.useRef(null);
-  return (0, Chunk54381.jsx)(Chunk235874.y, {
-    targetElementRef: module,
-    renderPopout: () => (0, Chunk54381.jsx)(x, {}),
+  let e = i.useRef(null);
+  return (0, r.jsx)(f.y, {
+    targetElementRef: e,
+    renderPopout: () => (0, r.jsx)(x, {}),
     position: "bottom",
     align: "center",
-    animation: Chunk235874.y.Animation.SCALE,
+    animation: f.y.Animation.SCALE,
     onRequestClose: () => {},
     children: t => (0, r.jsx)(m.hU, w(P({
       size: "sm",

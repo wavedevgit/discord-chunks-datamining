@@ -77,8 +77,8 @@ function U(e, t) {
 }
 
 function G() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk138851.dot
+  return (0, r.jsx)("div", {
+    className: L.dot
   })
 }
 

@@ -52,24 +52,24 @@ async function m() {
 async function g() {
   let e = Array.from(p).slice(0, 25);
   try {
-    let t = await Chunk544891.tn.get({
-      url: Chunk981631.ANM.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA,
+    let t = await a.tn.get({
+      url: d.ANM.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA,
       query: {
-        channel_ids: module
+        channel_ids: e
       },
       rejectWithError: true
     });
-    Chunk570140.Z.dispatch({
+    o.Z.dispatch({
       type: "LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS",
-      requestedChannelIds: module,
-      supplementalData: exports.body
+      requestedChannelIds: e,
+      supplementalData: t.body
     })
   } catch (t) {
-    Chunk570140.Z.dispatch({
+    o.Z.dispatch({
       type: "LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR",
-      requestedChannelIds: module
+      requestedChannelIds: e
     })
   } finally {
-    for (let t of module) p.delete(exports)
+    for (let t of e) p.delete(t)
   }
 }

@@ -17,10 +17,10 @@ function a(e) {
 }
 class o extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CHANNEL_DELETE", a)
+    r.Z.subscribe("CHANNEL_DELETE", a)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CHANNEL_DELETE", a)
+    r.Z.unsubscribe("CHANNEL_DELETE", a)
   }
 }
 let s = new o

@@ -11,10 +11,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk314897 = require("./314897.js");
 
 function l() {
-  let [e, t] = (0, Chunk442837.Wu)([Chunk314897.default], () => [Chunk314897.default.isAuthenticated(), null != Chunk314897.default.getAnalyticsToken()]), n = (0, Chunk110924.Z)(module);
-  Chunk473749.useEffect(() => {
-    require || !module || exports || Chunk232567.k({
+  let [e, t] = (0, i.Wu)([s.default], () => [s.default.isAuthenticated(), null != s.default.getAnalyticsToken()]), n = (0, o.Z)(e);
+  r.useEffect(() => {
+    n || !e || t || a.k({
       withAnalyticsToken: true
     })
-  }, [require, module, exports])
+  }, [n, e, t])
 }

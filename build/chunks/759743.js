@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_PHRASES, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.JIze0o)],
-  usePredicate: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().clipSignals).enablePhraseSignals,
+  useSearchTerms: () => [a.intl.string(a.t.JIze0o)],
+  usePredicate: () => (0, i.e7)([l.Z], () => l.Z.getSettings().clipSignals).enablePhraseSignals,
   Component: Chunk627869.j
 })

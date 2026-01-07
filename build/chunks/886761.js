@@ -9,6 +9,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk676032 = require("./676032.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.k4)(Chunk313789.n.CHAT_INPUT, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.onqU6o),
-  buildLayout: () => [Chunk676032.q, Chunk700069._]
+  useTitle: () => r.intl.string(r.t.onqU6o),
+  buildLayout: () => [u.q, s._]
 })

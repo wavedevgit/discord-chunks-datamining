@@ -16,118 +16,118 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 let l = [{
     Icon: Chunk481060.dz2,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.kpMomJ)
+    getText: () => s.intl.string(s.t.kpMomJ)
   }, {
     Icon: Chunk481060.dz2,
-    getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLT, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2, {
+    getText: () => s.intl.formatToPlainString(s.t.p8QVLT, {
+      maxUploadPremium: (0, a.v9)(o.PremiumTypes.TIER_2, {
         useSpace: false
       })
     })
   }, {
     Icon: Chunk481060.dz2,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.W180bY)
+    getText: () => s.intl.string(s.t.W180bY)
   }, {
     Icon: Chunk481060.dz2,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.zTk8Ul)
+    getText: () => s.intl.string(s.t.zTk8Ul)
   }],
   c = [{
     Icon: Chunk481060.Ucv,
     getText: function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "en-US";
-      return Chunk388032.intl.formatToPlainString(Chunk388032.t["T9RTr/"], {
-        numBoosts: Chunk474936.cb,
-        percentageOff: (0, Chunk930153.T3)(module, Chunk474936.Rr / 100)
+      return s.intl.formatToPlainString(s.t["T9RTr/"], {
+        numBoosts: o.cb,
+        percentageOff: (0, i.T3)(e, o.Rr / 100)
       })
     }
   }, {
     Icon: Chunk481060.rG2,
-    getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLT, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2, {
+    getText: () => s.intl.formatToPlainString(s.t.p8QVLT, {
+      maxUploadPremium: (0, a.v9)(o.PremiumTypes.TIER_2, {
         useSpace: false
       })
     })
   }, {
     Icon: Chunk481060.EO4,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.KjrZ8Z)
+    getText: () => s.intl.string(s.t.KjrZ8Z)
   }, {
     Icon: Chunk481060.hGI,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.W180bY)
+    getText: () => s.intl.string(s.t.W180bY)
   }, {
     Icon: Chunk481060.kYE,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.CNIZfy)
+    getText: () => s.intl.string(s.t.CNIZfy)
   }],
   u = [{
     Icon: Chunk481060.rG2,
-    getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLT, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2, {
+    getText: () => s.intl.formatToPlainString(s.t.p8QVLT, {
+      maxUploadPremium: (0, a.v9)(o.PremiumTypes.TIER_2, {
         useSpace: false
       })
     })
   }, {
     Icon: Chunk481060.EO4,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.KjrZ8Z)
+    getText: () => s.intl.string(s.t.KjrZ8Z)
   }, {
     Icon: Chunk481060.Pt5,
-    getText: () => Chunk388032.intl.string(Chunk388032.t["taMwg/"])
+    getText: () => s.intl.string(s.t["taMwg/"])
   }, {
     Icon: Chunk481060.hGI,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.W180bY)
+    getText: () => s.intl.string(s.t.W180bY)
   }, {
     Icon: Chunk481060.kYE,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.CNIZfy)
+    getText: () => s.intl.string(s.t.CNIZfy)
   }],
   d = [{
     Icon: Chunk481060.rG2,
-    getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLT, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2, {
+    getText: () => s.intl.formatToPlainString(s.t.p8QVLT, {
+      maxUploadPremium: (0, a.v9)(o.PremiumTypes.TIER_2, {
         useSpace: false
       })
     })
   }, {
     Icon: Chunk481060.EO4,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.KjrZ8Z)
+    getText: () => s.intl.string(s.t.KjrZ8Z)
   }, {
     Icon: Chunk481060.Pt5,
-    getText: () => Chunk388032.intl.string(Chunk388032.t["taMwg/"])
+    getText: () => s.intl.string(s.t["taMwg/"])
   }, {
     Icon: Chunk481060.hGI,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.W180bY)
+    getText: () => s.intl.string(s.t.W180bY)
   }, {
     Icon: Chunk481060.Ucv,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.cdfuUU)
+    getText: () => s.intl.string(s.t.cdfuUU)
   }, {
     Icon: Chunk481060.kYE,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.CNIZfy)
+    getText: () => s.intl.string(s.t.CNIZfy)
   }],
   f = [{
     Icon: Chunk481060.dz2,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.KjrZ8Z)
+    getText: () => s.intl.string(s.t.KjrZ8Z)
   }, {
     Icon: Chunk481060.dz2,
-    getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLT, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_0, {
+    getText: () => s.intl.formatToPlainString(s.t.p8QVLT, {
+      maxUploadPremium: (0, a.v9)(o.PremiumTypes.TIER_0, {
         useSpace: false
       })
     })
   }, {
     Icon: Chunk481060.dz2,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.Uukj4o)
+    getText: () => s.intl.string(s.t.Uukj4o)
   }],
   p = [{
     Icon: Chunk481060.rG2,
-    getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLT, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_0, {
+    getText: () => s.intl.formatToPlainString(s.t.p8QVLT, {
+      maxUploadPremium: (0, a.v9)(o.PremiumTypes.TIER_0, {
         useSpace: false
       })
     })
   }, {
     Icon: Chunk481060.EO4,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.KjrZ8Z)
+    getText: () => s.intl.string(s.t.KjrZ8Z)
   }, {
     Icon: Chunk481060.Pt5,
-    getText: () => Chunk388032.intl.string(Chunk388032.t["taMwg/"])
+    getText: () => s.intl.string(s.t["taMwg/"])
   }, {
     Icon: Chunk481060.SrA,
-    getText: () => Chunk388032.intl.string(Chunk388032.t["8ukxAW"])
+    getText: () => s.intl.string(s.t["8ukxAW"])
   }]

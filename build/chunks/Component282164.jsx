@@ -15,29 +15,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 class f extends Chunk473749.PureComponent {
   componentDidMount() {
-    null != this.props.paypalClient && Chunk873115.f6()
+    null != this.props.paypalClient && s.f6()
   }
   componentWillUnmount() {
-    Chunk873115.Nj().then(() => Chunk873115.Dz())
+    s.Nj().then(() => s.Dz())
   }
   render() {
     let {
       braintreeEmail: e,
       paypalClient: t
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.oil, {
-      label: Chunk388032.intl.string(Chunk388032.t.QQBAos),
+    return (0, r.jsx)(o.oil, {
+      label: d.intl.string(d.t.QQBAos),
       leading: {
         type: "image",
-        src: (0, Chunk219929.hx)(Chunk219929.ZP.Types.PAYPAL)
+        src: (0, l.hx)(l.ZP.Types.PAYPAL)
       },
-      value: module,
+      value: e,
       readOnly: true,
-      placeholder: null == exports ? Chunk388032.intl.string(Chunk388032.t.dte2M9) : Chunk388032.intl.string(Chunk388032.t.hopw7X)
+      placeholder: null == t ? d.intl.string(d.t.dte2M9) : d.intl.string(d.t.hopw7X)
     })
   }
 }
 let p = Chunk442837.ZP.connectStores([Chunk618541.Z, Chunk975060.Z], () => ({
-  braintreeEmail: Chunk975060.Z.braintreeEmail,
-  paypalClient: Chunk618541.Z.getPayPalClient()
+  braintreeEmail: u.Z.braintreeEmail,
+  paypalClient: c.Z.getPayPalClient()
 }))(f)

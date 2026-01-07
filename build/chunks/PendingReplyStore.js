@@ -145,7 +145,7 @@ function S(e) {
 }
 
 function I() {
-  Chunk709054.default.keys(_).forEach(e => {
+  l.default.keys(_).forEach(e => {
     null == o.Z.getChannel(e) && delete _[e]
   })
 }
@@ -156,13 +156,13 @@ function T() {
 class C extends(r = Chunk442837.ZP.PersistedStore) {
   getState() {
     let e = {};
-    for (let [t, n] of Chunk709054.default.entries(p)) module[exports] = {
-      channelId: exports,
-      messageId: require.message.id,
-      shouldMention: require.shouldMention,
-      showMentionToggle: require.showMentionToggle
+    for (let [t, n] of l.default.entries(p)) e[t] = {
+      channelId: t,
+      messageId: n.message.id,
+      shouldMention: n.shouldMention,
+      showMentionToggle: n.showMentionToggle
     };
-    return u({}, _, module)
+    return u({}, _, e)
   }
   initialize(e) {
     this.waitFor(s.Z, o.Z), _ = null != e ? e : {}

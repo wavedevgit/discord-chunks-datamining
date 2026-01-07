@@ -33,32 +33,32 @@ class f extends(r = Chunk473749.Component) {
       colorOverride: n,
       background: r,
       ringColorOverrideClassName: a
-    } = this.props, o = Math.min(Math.max(exports, 0), 100), c = (d - module) / 2, u = c * Math.PI * 2;
-    return (0, Chunk54381.jsxs)("svg", {
+    } = this.props, o = Math.min(Math.max(t, 0), 100), c = (d - e) / 2, u = c * Math.PI * 2;
+    return (0, i.jsxs)("svg", {
       viewBox: "0 0 ".concat(d, " ").concat(d),
-      className: Chunk218446.circle,
-      children: [(0, Chunk54381.jsx)("circle", {
-        className: true !== Chunk473749 ? Chunk473749 : Chunk218446.circleBackgroundAlt,
+      className: l.circle,
+      children: [(0, i.jsx)("circle", {
+        className: true !== a ? a : l.circleBackgroundAlt,
         cx: d / 2,
         cy: d / 2,
         r: d / 2
-      }), (0, Chunk54381.jsx)("circle", {
-        className: s()(Chunk218446.circleBackground, r),
+      }), (0, i.jsx)("circle", {
+        className: s()(l.circleBackground, r),
         cx: d / 2,
         cy: d / 2,
-        r: (d - 2 * module) / 2
-      }), (0, Chunk54381.jsx)("circle", {
-        className: Chunk218446.circleProgress,
+        r: (d - 2 * e) / 2
+      }), (0, i.jsx)("circle", {
+        className: l.circleProgress,
         cx: d / 2,
         cy: d / 2,
         r: c,
-        strokeWidth: "".concat(module, "px"),
+        strokeWidth: "".concat(e, "px"),
         strokeLinecap: "round",
         transform: "rotate(-90 ".concat(d / 2, " ").concat(d / 2, ")"),
-        stroke: null != require ? require : "currentColor",
+        stroke: null != n ? n : "currentColor",
         style: {
           strokeDasharray: u,
-          strokeDashoffset: (1 - Chunk120356 / 100) * u
+          strokeDashoffset: (1 - o / 100) * u
         }
       })]
     })
@@ -68,11 +68,11 @@ class f extends(r = Chunk473749.Component) {
       className: e,
       children: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk218446.progressCircle, module),
-      children: [this.renderCircle(), null != exports ? (0, Chunk54381.jsx)("div", {
-        className: s()(Chunk218446.circleOverlay, this.props.overlayClassName),
-        children: exports
+    return (0, i.jsxs)("div", {
+      className: s()(l.progressCircle, e),
+      children: [this.renderCircle(), null != t ? (0, i.jsx)("div", {
+        className: s()(l.circleOverlay, this.props.overlayClassName),
+        children: t
       }) : null]
     })
   }

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 751586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  UN: () => h,
+  UN: () => m,
   Ui: () => g
 });
 var Chunk54381 = require("./54381.js"),
@@ -19,25 +19,25 @@ var Chunk54381 = require("./54381.js"),
 function g() {
   return [{
     value: "quest_bar",
-    label: Chunk388032.intl.string(Chunk388032.t.rjVPdM)
+    label: f.intl.string(f.t.rjVPdM)
   }, {
     value: "share_embed",
-    label: Chunk388032.intl.string(Chunk388032.t["D/gSWS"])
+    label: f.intl.string(f.t["D/gSWS"])
   }, {
     value: "home_card",
-    label: Chunk388032.intl.string(Chunk388032.t["5wnpF3"])
+    label: f.intl.string(f.t["5wnpF3"])
   }, {
     value: "channel_call_header",
-    label: Chunk388032.intl.string(Chunk388032.t.gWinpQ)
+    label: f.intl.string(f.t.gWinpQ)
   }, {
     value: "members_list",
-    label: Chunk388032.intl.string(Chunk388032.t.wpYima)
+    label: f.intl.string(f.t.wpYima)
   }, {
     value: "activity_panel",
-    label: Chunk388032.intl.string(Chunk388032.t.L2mlUb)
+    label: f.intl.string(f.t.L2mlUb)
   }]
 }
-let h = e => {
+let m = e => {
   let {
     questId: t,
     selectedSections: n

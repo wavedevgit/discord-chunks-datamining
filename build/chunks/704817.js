@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk330711 = require("./330711.js");
 
 function i() {
-  return Chunk330711.Z.Messages.DYNAMIC_LINKS_IOS_APP_PREVIEW_DESCRIPTION
+  return r.Z.Messages.DYNAMIC_LINKS_IOS_APP_PREVIEW_DESCRIPTION
 }

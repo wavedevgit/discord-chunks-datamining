@@ -12,14 +12,14 @@ let a = null,
   o = null;
 
 function s() {
-  return null == a && (a = new Chunk86610.J({
-    checkoutFlow: Chunk733579.G.ORB_CHECKOUT
+  return null == a && (a = new i.J({
+    checkoutFlow: r.G.ORB_CHECKOUT
   })), a
 }
 
 function l() {
-  return null == o && (o = new Chunk86610.J({
-    checkoutFlow: Chunk733579.G.COLLECTIBLES_CHECKOUT
+  return null == o && (o = new i.J({
+    checkoutFlow: r.G.COLLECTIBLES_CHECKOUT
   })), o
 }
 Chunk733579.G.ORB_CHECKOUT, Chunk733579.G.COLLECTIBLES_CHECKOUT

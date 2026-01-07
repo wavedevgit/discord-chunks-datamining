@@ -25,7 +25,7 @@ class s extends Chunk147913.Z {
     if (!o) return;
     o = false;
     let e = new Date().getTimezoneOffset();
-    Chunk695346.rN.getSetting() !== module && setImmediate(() => Chunk695346.rN.updateSetting(module))
+    i.rN.getSetting() !== e && setImmediate(() => i.rN.updateSetting(e))
   }
   constructor(...e) {
     super(...e), a(this, "actions", {

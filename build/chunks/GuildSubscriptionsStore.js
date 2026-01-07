@@ -177,7 +177,7 @@ function B(e) {
 }
 
 function V() {
-  return A(Chunk914010.Z.getGuildId(), Chunk944486.Z.getChannelId())
+  return A(v.Z.getGuildId(), O.Z.getChannelId())
 }
 
 function H(e) {
@@ -195,20 +195,20 @@ function Y(e) {
 }
 
 function W() {
-  let e = Chunk768419.Z.getSyncingWith();
-  if (null == module) null != r && (T.unsubscribeUser(r.guildId, r.userId), r = null);
+  let e = d.Z.getSyncingWith();
+  if (null == e) null != r && (T.unsubscribeUser(r.guildId, r.userId), r = null);
   else {
     let {
       userId: t
-    } = module;
-    if (null != r && r.userId === exports || Chunk699516.Z.isFriend(exports)) returnfalse;
-    let n = Chunk271383.ZP.memberOf(exports);
-    if (0 === require.length) returnfalse;
-    let [i] = require;
+    } = e;
+    if (null != r && r.userId === t || y.Z.isFriend(t)) returnfalse;
+    let n = g.ZP.memberOf(t);
+    if (0 === n.length) returnfalse;
+    let [i] = n;
     r = {
       guildId: i,
-      userId: exports
-    }, T.subscribeUser(i, exports)
+      userId: t
+    }, T.subscribeUser(i, t)
   }
   returnfalse
 }
@@ -222,7 +222,7 @@ function K(e) {
 }
 class z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk433355.ZP, Chunk592125.Z, Chunk353926.Z, Chunk486472.Z, Chunk271383.ZP, Chunk430824.Z, Chunk19780.Z, Chunk699516.Z, Chunk944486.Z, Chunk914010.Z, Chunk768419.Z), this.syncWith([Chunk768419.Z], W), this.syncWith([Chunk433355.ZP], V)
+    this.waitFor(f.default, _.ZP, m.Z, u.Z, h.Z, g.ZP, E.Z, b.Z, y.Z, O.Z, v.Z, d.Z), this.syncWith([d.Z], W), this.syncWith([_.ZP], V)
   }
   getSubscribedThreadIds() {
     return T.getSubscribedThreadIds()

@@ -17,20 +17,20 @@ var Chunk915009 = require("./915009.js"),
   Chunk517319 = require("./517319.js");
 
 function p() {
-  let e = Chunk695346.JT.useSetting(),
-    t = Chunk695346.bh.useSetting(),
-    n = (0, Chunk915009.LN)();
-  return (0, Chunk54381.jsx)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_DATA_QUESTS_3P,
-    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t.CyLYKZ),
-      note: Chunk388032.intl.format(Chunk388032.t["2QFDU/"], {
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
+  let e = o.JT.useSetting(),
+    t = o.bh.useSetting(),
+    n = (0, i.LN)();
+  return (0, r.jsx)(s.U, {
+    setting: c.s6.PRIVACY_DATA_QUESTS_3P,
+    children: (0, r.jsx)(l.ZP, {
+      title: d.intl.string(d.t.CyLYKZ),
+      note: d.intl.format(d.t["2QFDU/"], {
+        helpdeskArticle: a.Z.getArticleURL(u.BhN.QUESTS_PRIVACY_CONTROLS)
       }),
-      value: !module,
+      value: !e,
       onChange: e => o.JT.updateSetting(!e),
-      disabled: exports || require,
-      tooltipText: require ? Chunk388032.intl.string(Chunk517319.default["6Af/cw"]) : true
+      disabled: t || n,
+      tooltipText: n ? d.intl.string(f.default["6Af/cw"]) : true
     })
   })
 }

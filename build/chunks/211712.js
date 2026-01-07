@@ -20,8 +20,8 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.POP,
         colors: [959694]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t["TFc+iF"]),
-      getHeaderSrc: () => require("./25833.js").Z,
+      getName: () => a.intl.string(a.t["TFc+iF"]),
+      getHeaderSrc: () => n(25833).Z,
       getBannerSrc: e => e ? n(875730).Z : n(385579).Z
     },
     cyberpunk: {
@@ -33,8 +33,8 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.NEON,
         colors: [2949343]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t["4g+5bq"]),
-      getHeaderSrc: () => require("./271001.js").Z,
+      getName: () => a.intl.string(a.t["4g+5bq"]),
+      getHeaderSrc: () => n(271001).Z,
       getBannerSrc: e => e ? n(371812).Z : n(632750).Z
     },
     shadow_realm: {
@@ -46,8 +46,8 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.TOON,
         colors: [0xff0000]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t.ycg1xj),
-      getHeaderSrc: () => require("./926506.js").Z,
+      getName: () => a.intl.string(a.t.ycg1xj),
+      getHeaderSrc: () => n(926506).Z,
       getBannerSrc: e => e ? n(840970).Z : n(675202).Z
     },
     starlit_dream: {
@@ -59,8 +59,8 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.TOON,
         colors: [3343795]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t["9WLHvr"]),
-      getHeaderSrc: () => require("./181778.js").Z,
+      getName: () => a.intl.string(a.t["9WLHvr"]),
+      getHeaderSrc: () => n(181778).Z,
       getBannerSrc: e => e ? n(764644).Z : n(604203).Z
     },
     neon_space: {
@@ -72,8 +72,8 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.NEON,
         colors: [28737]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t.UdNuqi),
-      getHeaderSrc: () => require("./727521.js").Z,
+      getName: () => a.intl.string(a.t.UdNuqi),
+      getHeaderSrc: () => n(727521).Z,
       getBannerSrc: e => e ? n(48248).Z : n(145386).Z
     }
   },

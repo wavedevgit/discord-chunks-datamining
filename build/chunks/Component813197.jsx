@@ -23,7 +23,7 @@ function c(e, t, n) {
 
 function u() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t["Sp2NF+"]),
+    name: l.intl.string(l.t["Sp2NF+"]),
     extensions: ["jpg", "jpeg", "jfif", "png", "gif", "webp", "avif"]
   }]
 }
@@ -55,7 +55,7 @@ class p extends(r = Chunk473749.PureComponent) {
   }
   activateUploadDialogue() {
     var e;
-    null == (e = this._ref.current) || module.activateUploadDialogue()
+    null == (e = this._ref.current) || e.activateUploadDialogue()
   }
   render() {
     let {
@@ -66,16 +66,16 @@ class p extends(r = Chunk473749.PureComponent) {
       "aria-label": a,
       filters: s
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk53281.Z, {
+    return (0, i.jsx)(o.Z, {
       ref: this._ref,
       onClick: this.props.onClick,
       onChange: this.handleFileChange,
-      filters: null != Chunk869783 ? Chunk869783 : u(),
-      multiple: module,
-      disabled: exports,
-      className: require,
+      filters: null != s ? s : u(),
+      multiple: e,
+      disabled: t,
+      className: n,
       tabIndex: r,
-      "aria-label": Chunk473749
+      "aria-label": a
     })
   }
   constructor(...e) {

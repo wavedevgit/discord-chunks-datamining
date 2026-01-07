@@ -206,12 +206,12 @@ class h extends m {
   }
   getMaxParticipants() {
     var e, t;
-    return null != (t = null != (e = this.maxParticipants) ? module : p[this.id]) ? exports : 0
+    return null != (t = null != (e = this.maxParticipants) ? e : p[this.id]) ? t : 0
   }
   supportsIntegrationTypes() {
-    for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
+    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     let r = this.integrationTypesConfig;
-    return null != Chunk480189 && exports.every(e => e in r)
+    return null != r && t.every(e => e in r)
   }
   get destinationSkuId() {
     return null != this.storeListingSkuId ? this.storeListingSkuId : this.primarySkuId

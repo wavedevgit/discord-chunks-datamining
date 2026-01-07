@@ -90,18 +90,18 @@ class v extends(r = Chunk473749.PureComponent) {
         className: t,
         shineSize: n,
         shinePaused: r
-      } = module,
-      a = g(module, ["className", "shineSize", "shinePaused"]);
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, h(_({}, Chunk473749), {
-      className: s()(Chunk587425.shineContainer, exports, {
-        [Chunk587425.shinePaused]: r
+      } = e,
+      a = g(e, ["className", "shineSize", "shinePaused"]);
+    return (0, i.jsx)(l.Z.div, h(_({}, a), {
+      className: s()(f.shineContainer, t, {
+        [f.shinePaused]: r
       }),
-      children: (0, Chunk54381.jsx)(Chunk600164.Z, {
-        align: Chunk600164.Z.Align.CENTER,
-        justify: Chunk600164.Z.Justify.CENTER,
-        className: y[require],
-        children: (0, Chunk54381.jsx)("div", {
-          className: O[require]
+      children: (0, i.jsx)(u.Z, {
+        align: u.Z.Align.CENTER,
+        justify: u.Z.Justify.CENTER,
+        className: y[n],
+        children: (0, i.jsx)("div", {
+          className: O[n]
         })
       })
     }))

@@ -16,14 +16,14 @@ var Chunk442837 = require("./442837.js"),
 
 function g() {
   return [{
-    setting: Chunk981631.bL.ALL_MESSAGES,
-    label: Chunk388032.intl.string(Chunk388032.t["n/bTaY"])
+    setting: u.bL.ALL_MESSAGES,
+    label: d.intl.string(d.t["n/bTaY"])
   }, {
-    setting: Chunk981631.bL.ONLY_MENTIONS,
-    label: Chunk388032.intl.format(Chunk388032.t.L2hmYy, {})
+    setting: u.bL.ONLY_MENTIONS,
+    label: d.intl.format(d.t.L2hmYy, {})
   }, {
-    setting: Chunk981631.bL.NO_MESSAGES,
-    label: Chunk388032.intl.string(Chunk388032.t.CtVGyQ)
+    setting: u.bL.NO_MESSAGES,
+    label: d.intl.string(d.t.CtVGyQ)
   }]
 }
 

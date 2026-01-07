@@ -13,9 +13,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk566006 = require("./566006.js");
 
 function d() {
-  let e = Chunk695346.Yk.useSetting(),
-    t = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-  Chunk473749.useEffect(() => {
+  let e = s.Yk.useSetting(),
+    t = (0, r.e7)([a.Z], () => a.Z.useReducedMotion);
+  i.useEffect(() => {
     function n(n) {
       let {
         messageId: i,
@@ -31,8 +31,8 @@ function d() {
         key: c.I.EXTERNAL
       })
     }
-    return Chunk570140.Z.subscribe("MESSAGE_REACTION_ADD", require), () => {
-      Chunk570140.Z.unsubscribe("MESSAGE_REACTION_ADD", require)
+    return l.Z.subscribe("MESSAGE_REACTION_ADD", n), () => {
+      l.Z.unsubscribe("MESSAGE_REACTION_ADD", n)
     }
-  }, [module, exports])
+  }, [e, t])
 }

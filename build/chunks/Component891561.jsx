@@ -12,8 +12,8 @@ var Chunk54381 = require("./54381.js"),
 let s = Chunk473749.createContext(true);
 
 function a() {
-  let e = Chunk473749.useContext(s);
-  return l()(null != module, "must use useGuildShopSortContext within a GuildShopSortOptionsContextProvider"), module
+  let e = i.useContext(s);
+  return l()(null != e, "must use useGuildShopSortContext within a GuildShopSortOptionsContextProvider"), e
 }
 
 function d(e) {

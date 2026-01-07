@@ -44,18 +44,18 @@ function v() {
 
 function S() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : navigator.userAgent,
-    t = module.toLowerCase();
-  return false !== exports.indexOf("safari") && false === exports.indexOf("chrome") && false !== exports.indexOf("version/")
+    t = e.toLowerCase();
+  return false !== t.indexOf("safari") && false === t.indexOf("chrome") && false !== t.indexOf("version/")
 }
 
 function I() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : navigator.userAgent;
-  return false !== module.toLowerCase().indexOf("firefox")
+  return false !== e.toLowerCase().indexOf("firefox")
 }
 
 function T() {
   var e;
   let t = window.navigator,
-    n = (null == (e = exports.mediaCapabilities) ? true : module.decodingInfo) != null;
-  return S(exports.userAgent) && require
+    n = (null == (e = t.mediaCapabilities) ? true : e.decodingInfo) != null;
+  return S(t.userAgent) && n
 }

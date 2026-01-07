@@ -182,29 +182,29 @@ function B(e) {
 }
 
 function V() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+  let e = (0, c.e7)([E.default], () => E.default.getCurrentUser()),
     {
       avatarDecoration: t
-    } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk187842.contentSectionInnerClaim,
-    children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
+    } = (0, c.e7)([v.Z], () => v.Z.getCheckpointData());
+  return (0, r.jsxs)("div", {
+    className: j.contentSectionInnerClaim,
+    children: [(0, r.jsx)(P.Z, {
       variant: "eyebrow",
-      children: Chunk388032.intl.string(Chunk638398.default["4R3VzK"])
-    }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+      children: x.intl.string(D.default["4R3VzK"])
+    }), (0, r.jsx)(P.Z, {
       variant: "heading-lg/medium",
-      className: Chunk187842.claimSubtitle,
-      children: Chunk388032.intl.string(Chunk638398.default["94azAy"])
-    }), null != module && (0, Chunk54381.jsx)(Chunk204418.Z, {
-      user: module,
+      className: j.claimSubtitle,
+      children: x.intl.string(D.default["94azAy"])
+    }), null != e && (0, r.jsx)(_.Z, {
+      user: e,
       guildId: null,
-      avatarDecorationOverride: exports
-    }), (0, Chunk54381.jsx)(Chunk829468.Z, {
-      className: Chunk187842.claimButton
-    }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+      avatarDecorationOverride: t
+    }), (0, r.jsx)(C.Z, {
+      className: j.claimButton
+    }), (0, r.jsx)(P.Z, {
       variant: "heading-sm/medium",
-      children: Chunk388032.intl.format(Chunk388032.t.eZSTa5, {
-        date: new Date("2026-01-15").toLocaleDateString(Chunk388032.intl.currentLocale, {
+      children: x.intl.format(x.t.eZSTa5, {
+        date: new Date("2026-01-15").toLocaleDateString(x.intl.currentLocale, {
           month: "long",
           day: "numeric",
           year: "numeric",

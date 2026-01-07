@@ -14,21 +14,21 @@ var Chunk974352 = require("./974352.js"),
 let u = 100;
 class d {
   constructor() {
-    this._notifyingListeners = false, this._scopeListeners = [], this._eventProcessors = [], this._breadcrumbs = [], this._attachments = [], this._user = {}, this._tags = {}, this._extra = {}, this._contexts = {}, this._sdkProcessingMetadata = {}, this._propagationContext = (0, Chunk974352.Q)()
+    this._notifyingListeners = false, this._scopeListeners = [], this._eventProcessors = [], this._breadcrumbs = [], this._attachments = [], this._user = {}, this._tags = {}, this._extra = {}, this._contexts = {}, this._sdkProcessingMetadata = {}, this._propagationContext = (0, r.Q)()
   }
   clone() {
     let e = new d;
-    return module._breadcrumbs = [...this._breadcrumbs], module._tags = {
+    return e._breadcrumbs = [...this._breadcrumbs], e._tags = {
       ...this._tags
-    }, module._extra = {
+    }, e._extra = {
       ...this._extra
-    }, module._contexts = {
+    }, e._contexts = {
       ...this._contexts
-    }, module._user = this._user, module._level = this._level, module._session = this._session, module._transactionName = this._transactionName, module._fingerprint = this._fingerprint, module._eventProcessors = [...this._eventProcessors], module._requestSession = this._requestSession, module._attachments = [...this._attachments], module._sdkProcessingMetadata = {
+    }, e._user = this._user, e._level = this._level, e._session = this._session, e._transactionName = this._transactionName, e._fingerprint = this._fingerprint, e._eventProcessors = [...this._eventProcessors], e._requestSession = this._requestSession, e._attachments = [...this._attachments], e._sdkProcessingMetadata = {
       ...this._sdkProcessingMetadata
-    }, module._propagationContext = {
+    }, e._propagationContext = {
       ...this._propagationContext
-    }, module._client = this._client, module._lastEventId = this._lastEventId, (0, Chunk354023.D)(module, (0, Chunk354023.Y)(this)), module
+    }, e._client = this._client, e._lastEventId = this._lastEventId, (0, c.D)(e, (0, c.Y)(this)), e
   }
   setClient(e) {
     this._client = e
@@ -134,7 +134,7 @@ class d {
     }, s && Object.keys(s).length && (this._user = s), c && (this._level = c), u.length && (this._fingerprint = u), d && (this._propagationContext = d), r && (this._requestSession = r), this
   }
   clear() {
-    return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = true, this._transactionName = true, this._fingerprint = true, this._requestSession = true, this._session = true, (0, Chunk354023.D)(this, true), this._attachments = [], this._propagationContext = (0, Chunk974352.Q)(), this._notifyScopeListeners(), this
+    return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = true, this._transactionName = true, this._fingerprint = true, this._requestSession = true, this._session = true, (0, c.D)(this, true), this._attachments = [], this._propagationContext = (0, r.Q)(), this._notifyScopeListeners(), this
   }
   addBreadcrumb(e, t) {
     let n = "number" == typeof t ? t : u;
@@ -172,7 +172,7 @@ class d {
       propagationContext: this._propagationContext,
       sdkProcessingMetadata: this._sdkProcessingMetadata,
       transactionName: this._transactionName,
-      span: (0, Chunk354023.Y)(this)
+      span: (0, c.Y)(this)
     }
   }
   setSDKProcessingMetadata(e) {

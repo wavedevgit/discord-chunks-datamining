@@ -15,7 +15,7 @@ var Chunk220159 = require("./220159.js"),
   f = [].push,
   m = Chunk779688(function() {
     function e() {}
-    return !(p(function() {}, [], module) instanceof module)
+    return !(p(function() {}, [], e) instanceof e)
   }),
   y = !Chunk779688(function() {
     p(function() {})

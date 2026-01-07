@@ -16,52 +16,52 @@ var Chunk678916 = require("./678916.js"),
   Chunk434423 = require("./434423.js"),
   Chunk882360 = require("./882360.js");
 let _ = () => ({
-  [Chunk678916.dp.OPTION_1]: {
-    id: Chunk678916.dp.OPTION_1,
-    source: Chunk65543.Z,
-    name: Chunk388032.intl.string(Chunk388032.t.SHUTBj)
+  [r.dp.OPTION_1]: {
+    id: r.dp.OPTION_1,
+    source: l.Z,
+    name: a.intl.string(a.t.SHUTBj)
   },
-  [Chunk678916.dp.OPTION_2]: {
-    id: Chunk678916.dp.OPTION_2,
-    source: Chunk861097.Z,
-    name: Chunk388032.intl.string(Chunk388032.t.UxTcIq)
+  [r.dp.OPTION_2]: {
+    id: r.dp.OPTION_2,
+    source: u.Z,
+    name: a.intl.string(a.t.UxTcIq)
   },
-  [Chunk678916.dp.OPTION_3]: {
-    id: Chunk678916.dp.OPTION_3,
-    source: Chunk593998.Z,
-    name: Chunk388032.intl.string(Chunk388032.t.HFBsc8)
+  [r.dp.OPTION_3]: {
+    id: r.dp.OPTION_3,
+    source: d.Z,
+    name: a.intl.string(a.t.HFBsc8)
   },
-  [Chunk678916.dp.OPTION_4]: {
-    id: Chunk678916.dp.OPTION_4,
-    source: Chunk434423.Z,
-    name: Chunk388032.intl.string(Chunk388032.t["/Dl3+Z"])
+  [r.dp.OPTION_4]: {
+    id: r.dp.OPTION_4,
+    source: f.Z,
+    name: a.intl.string(a.t["/Dl3+Z"])
   },
-  [Chunk678916.dp.OPTION_7]: {
-    id: Chunk678916.dp.OPTION_7,
-    source: Chunk221062.Z,
-    name: Chunk388032.intl.string(Chunk388032.t["PM+DU1"]),
+  [r.dp.OPTION_7]: {
+    id: r.dp.OPTION_7,
+    source: o.Z,
+    name: a.intl.string(a.t["PM+DU1"]),
     isVideo: true,
-    hotspotLocation: Chunk190378.v.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW
+    hotspotLocation: i.v.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW
   },
-  [Chunk678916.dp.OPTION_8]: {
-    id: Chunk678916.dp.OPTION_8,
-    source: Chunk432673.Z,
-    name: Chunk388032.intl.string(Chunk388032.t["3zoBh1"]),
+  [r.dp.OPTION_8]: {
+    id: r.dp.OPTION_8,
+    source: s.Z,
+    name: a.intl.string(a.t["3zoBh1"]),
     isVideo: true,
-    hotspotLocation: Chunk190378.v.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW
+    hotspotLocation: i.v.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW
   },
-  [Chunk678916.dp.OPTION_9]: {
-    id: Chunk678916.dp.OPTION_9,
-    source: Chunk288224.Z,
-    name: Chunk388032.intl.string(Chunk388032.t["1gKhX9"]),
+  [r.dp.OPTION_9]: {
+    id: r.dp.OPTION_9,
+    source: c.Z,
+    name: a.intl.string(a.t["1gKhX9"]),
     isVideo: true,
-    hotspotLocation: Chunk190378.v.ANIMATED_VIDEO_BG_HACKER_DEN_NEW
+    hotspotLocation: i.v.ANIMATED_VIDEO_BG_HACKER_DEN_NEW
   },
-  [Chunk678916.dp.OPTION_10]: {
-    id: Chunk678916.dp.OPTION_10,
-    source: Chunk882360.Z,
-    name: Chunk388032.intl.string(Chunk388032.t.TSTgyL),
+  [r.dp.OPTION_10]: {
+    id: r.dp.OPTION_10,
+    source: p.Z,
+    name: a.intl.string(a.t.TSTgyL),
     isVideo: true,
-    hotspotLocation: Chunk190378.v.ANIMATED_VIDEO_BG_WUMPICE_NEW
+    hotspotLocation: i.v.ANIMATED_VIDEO_BG_WUMPICE_NEW
   }
 })

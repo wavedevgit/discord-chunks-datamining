@@ -11,18 +11,18 @@ var Chunk481060 = require("./481060.js"),
   Chunk110739 = require("./110739.js"),
   Chunk133988 = require("./133988.js");
 let c = () => {
-  let e = [Chunk388032.t.E1NP2x, Chunk388032.t.kpMomJ, Chunk388032.t.xT1Vfn, Chunk388032.t.myyAEr, Chunk388032.t.zTk8Ul];
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk110739.container,
-    children: [(0, Chunk54381.jsx)("img", {
-      src: Chunk133988.Z,
+  let e = [l.t.E1NP2x, l.t.kpMomJ, l.t.xT1Vfn, l.t.myyAEr, l.t.zTk8Ul];
+  return (0, r.jsxs)("div", {
+    className: o.container,
+    children: [(0, r.jsx)("img", {
+      src: s.Z,
       alt: "",
-      className: Chunk110739.headerAsset
-    }), (0, Chunk54381.jsx)(Chunk483444.Z, {
+      className: o.headerAsset
+    }), (0, r.jsx)(a.Z, {
       color: "white"
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk110739.benefits,
-      children: module.map((e, t) => (0, r.jsxs)("div", {
+    }), (0, r.jsx)("div", {
+      className: o.benefits,
+      children: e.map((e, t) => (0, r.jsxs)("div", {
         className: o.benefitRow,
         children: [(0, r.jsx)(i.kmB, {
           color: i.TVs.colors.WHITE

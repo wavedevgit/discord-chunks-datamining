@@ -13,7 +13,7 @@ var Chunk544891 = require("./544891.js"),
 
 function c() {
   let e = new Date().getMinutes();
-  return "x=".concat(Math.floor(module / 5))
+  return "x=".concat(Math.floor(e / 5))
 }
 let u = {
   lockChangeLog(e) {
@@ -51,9 +51,9 @@ let u = {
     })
   },
   fetchChangelogConfig() {
-    let e = Chunk596401.Vw.DESKTOP;
-    return Chunk544891.tn.get({
-      url: "https://cdn.discordapp.com/changelogs/config_".concat(module, ".json?").concat(c()),
+    let e = l.Vw.DESKTOP;
+    return r.tn.get({
+      url: "https://cdn.discordapp.com/changelogs/config_".concat(e, ".json?").concat(c()),
       rejectWithError: true
     })
   },

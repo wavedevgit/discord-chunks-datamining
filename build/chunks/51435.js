@@ -15,31 +15,31 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
-    buildLayout: () => [Chunk984975.u]
+    buildLayout: () => [T.u]
   }),
   _ = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
-    buildLayout: () => [Chunk105429.T]
+    buildLayout: () => [S.T]
   }),
   g = (0, Chunk509613.wf)(Chunk313789.n.CONNECTIONS_PANEL, {
-    usePredicate: () => !(0, Chunk526665.gN)("LegacyConnectionsPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
+    usePredicate: () => !(0, a.gN)("LegacyConnectionsPanel"),
+    useTitle: () => E.intl.string(E.t["3fe7U5"]),
     hideInStreamerMode: true,
     StronglyDiscouragedCustomComponent: Chunk327192.ZP,
     buildLayout: () => []
   }),
   I = (0, Chunk509613.wf)(Chunk313789.n.CONNECTIONS_PANEL, {
-    usePredicate: () => (0, Chunk526665.gN)("ConnectionsPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
+    usePredicate: () => (0, a.gN)("ConnectionsPanel"),
+    useTitle: () => E.intl.string(E.t["3fe7U5"]),
     hideInStreamerMode: true,
     buildLayout: () => [d, _]
   }),
   N = (0, Chunk509613.m7)(Chunk313789.n.CONNECTIONS_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("ConnectionsPanel") ? true : Chunk726985.s6.CONNECTIONS,
+    useTitle: () => E.intl.string(E.t["3fe7U5"]),
+    getLegacySearchKey: () => (0, a.Gl)("ConnectionsPanel") ? true : c.s6.CONNECTIONS,
     icon: Chunk657707.xPt,
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
-      getDismissibleContentTypes: () => [Chunk704215.z.NEW_CRUNCHYROLL_CONNECTION]
+      getDismissibleContentTypes: () => [l.z.NEW_CRUNCHYROLL_CONNECTION]
     },
-    buildLayout: () => (0, Chunk526665.Gl)("ConnectionsPanel") ? [I] : [g]
+    buildLayout: () => (0, a.Gl)("ConnectionsPanel") ? [I] : [g]
   })

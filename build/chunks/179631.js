@@ -15,5 +15,5 @@ function o() {
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {
     fallback: true
   };
-  return module ? Promise.resolve(Chunk342825.f) : Promise.reject("Cannot get device state on web")
+  return e ? Promise.resolve(i.f) : Promise.reject("Cannot get device state on web")
 }

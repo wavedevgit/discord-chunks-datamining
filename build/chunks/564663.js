@@ -8,7 +8,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.qs)(Chunk313789.n.CHAT_THREADS_SPLIT_VIEW, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.AInv5m),
+  useTitle: () => u.intl.string(u.t.AInv5m),
   useValue: Chunk695346.vF.useSetting,
   setValue: Chunk695346.vF.updateSetting
 })

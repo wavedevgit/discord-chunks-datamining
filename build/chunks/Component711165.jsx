@@ -38,26 +38,26 @@ let Z = {
 };
 
 function w() {
-  return Chunk473749.useEffect(() => {
-    (0, Chunk45251.kg)()
-  }, []), (0, Chunk54381.jsx)(T, {})
+  return i.useEffect(() => {
+    (0, b.kg)()
+  }, []), (0, r.jsx)(T, {})
 }
 
 function T() {
-  let e = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.getScheduledMessagesForInbox(), []),
-    t = Chunk473749.useMemo(() => Object.values(module).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? false : 1), [module]),
-    n = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.loading, []),
-    l = Chunk473749.useRef(null),
-    a = (0, Chunk724757.Z)("scheduled-messages", Chunk120356);
-  return require ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
-    className: Chunk217337.loadingPlaceholder
-  }) : 0 === exports.length ? (0, Chunk54381.jsx)(Chunk240126.Z, {
-    Icon: Chunk481060.T39,
-    header: Chunk388032.intl.string(Chunk388032.t.aJQZfZ),
-    tip: Chunk388032.intl.string(Chunk388032.t.rCN4pN)
-  }) : (0, Chunk54381.jsx)(Chunk91192.bG, {
+  let e = (0, d.e7)([m.Z], () => m.Z.getScheduledMessagesForInbox(), []),
+    t = i.useMemo(() => Object.values(e).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? false : 1), [e]),
+    n = (0, d.e7)([m.Z], () => m.Z.loading, []),
+    l = i.useRef(null),
+    a = (0, h.Z)("scheduled-messages", l);
+  return n ? (0, r.jsx)(f.$jN, {
+    className: N.loadingPlaceholder
+  }) : 0 === t.length ? (0, r.jsx)(_.Z, {
+    Icon: f.T39,
+    header: P.intl.string(P.t.aJQZfZ),
+    tip: P.intl.string(P.t.rCN4pN)
+  }) : (0, r.jsx)(c.bG, {
     navigator: a,
-    children: (0, Chunk54381.jsx)(Chunk91192.SJ, {
+    children: (0, r.jsx)(c.SJ, {
       children: e => {
         var n, i, {
             ref: a

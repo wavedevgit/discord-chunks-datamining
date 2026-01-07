@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk283066 = require("./283066.js"),
   Chunk474936 = require("./474936.js");
 let a = () => {
-  let e = (0, Chunk283066.Z)({
+  let e = (0, r.Z)({
       location: "useGiftStyles"
     }),
-    t = Chunk474936.QI;
-  return module && (t = [Chunk474936.Cj.STANDARD_BOX]), exports
+    t = i.QI;
+  return e && (t = [i.Cj.STANDARD_BOX]), t
 }

@@ -15,39 +15,39 @@ var Chunk524437 = require("./524437.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
-  let e = (0, Chunk652262.M)(),
-    t = (0, Chunk915009.xf)(),
+  let e = (0, c.M)(),
+    t = (0, l.xf)(),
     n = [{
-      value: Chunk524437.Q4.BLUR,
-      label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
+      value: i.Q4.BLUR,
+      label: u.intl.string(u.t.S49Uad)
     }, {
-      value: Chunk524437.Q4.BLOCK,
-      label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
+      value: i.Q4.BLOCK,
+      label: u.intl.string(u.t["D/157Y"])
     }];
-  if (null == exports || null == module) return null;
+  if (null == t || null == e) return null;
   let d = t => {
       (0, s.zj)(e, t)
     },
     {
       explicitContentFriendDm: f,
       explicitContentNonFriendDm: p
-    } = exports;
-  return (0, Chunk54381.jsxs)(Chunk400313.n, {
-    description: Chunk388032.intl.string(Chunk388032.t.Wnojv1),
-    children: [(0, Chunk54381.jsx)(Chunk947707.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
+    } = t;
+  return (0, r.jsxs)(a.n, {
+    description: u.intl.string(u.t.Wnojv1),
+    children: [(0, r.jsx)(o.Z, {
+      title: u.intl.string(u.t["+uI23H"]),
       value: f,
       onChange: e => d({
         explicitContentFriendDm: e
       }),
-      options: require
-    }), (0, Chunk54381.jsx)(Chunk947707.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
+      options: n
+    }), (0, r.jsx)(o.Z, {
+      title: u.intl.string(u.t["Yh+HX1"]),
       value: p,
       onChange: e => d({
         explicitContentNonFriendDm: e
       }),
-      options: require
+      options: n
     })]
   })
 }

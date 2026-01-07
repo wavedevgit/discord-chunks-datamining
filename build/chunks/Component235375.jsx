@@ -65,7 +65,7 @@ let v = l().defaultRules.link,
   };
 
 function I() {
-  Chunk626135.default.track(Chunk981631.rMx.PREMIUM_PROMOTION_OPENED, {
+  m.default.track(h.rMx.PREMIUM_PROMOTION_OPENED, {
     location: S
   })
 }

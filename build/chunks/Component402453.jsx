@@ -66,8 +66,8 @@ let o = {
   s = Chunk473749.createContext(o);
 
 function l() {
-  let e = Chunk473749.useContext(s);
-  return module === o && console.warn("useManaContext must be used within a ManaContext.Provider"), module
+  let e = i.useContext(s);
+  return e === o && console.warn("useManaContext must be used within a ManaContext.Provider"), e
 }
 
 function c(e) {

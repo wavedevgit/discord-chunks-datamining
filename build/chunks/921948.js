@@ -4,7 +4,7 @@
 
 function r() {
   var e;
-  return null != (e = window.devicePixelRatio) ? module : 1
+  return null != (e = window.devicePixelRatio) ? e : 1
 }
 require.d(exports, {
   Z: () => r

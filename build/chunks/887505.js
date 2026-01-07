@@ -56,14 +56,14 @@ function m(e, t) {
 let h = () => {
     let {
       enabled: e
-    } = (0, Chunk844718.VL)({
+    } = (0, i.VL)({
       location: "getBaseAnalyticsEventData"
     });
     return {
-      payment_type: Chunk981631.Zuq[Chunk981631.GZQ.ONE_TIME],
+      payment_type: c.Zuq[c.GZQ.ONE_TIME],
       is_gift: false,
       eligible_for_trial: false,
-      payment_modal_version: module ? "v2" : Chunk545006.g
+      payment_modal_version: e ? "v2" : u.g
     }
   },
   g = (e, t) => {

@@ -27,15 +27,15 @@ let O = {
       [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VIDEO_WRITE]
     },
     handler() {
-      let e = Chunk131951.Z.isVideoEnabled();
-      null != (0, Chunk736045.Z)() && (module ? Chunk846027.Z.setVideoEnabled(false) : (0, Chunk173507.Z)(() => Chunk846027.Z.setVideoEnabled(true), Chunk981631.IlC.APP))
+      let e = f.Z.isVideoEnabled();
+      null != (0, b.Z)() && (e ? a.Z.setVideoEnabled(false) : (0, d.Z)(() => a.Z.setVideoEnabled(true), E.IlC.APP))
     }
   },
   [Chunk981631.Etm.TOGGLE_SCREENSHARE]: {
     scope: {
       [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_SCREENSHARE_WRITE]
     },
-    validation: e => (0, m.Z)(e).optional().keys({
+    validation: e => (0, h.Z)(e).optional().keys({
       pid: e.number().optional().min(0)
     }),
     handler(e) {
@@ -44,9 +44,9 @@ let O = {
           pid: t
         }
       } = e, i = p.Z.getCurrentUserActiveStream(), a = p.Z.getStreamerActiveStreamMetadata(), d = (0, u.Z)(c.ZP, g.Z), f = (0, b.Z)();
-      null != f && (null != t && null != a && a.pid !== t && (0, h.isWindows)() ? (0, o.WH)(f.guild_id, f.id, {
+      null != f && (null != t && null != a && a.pid !== t && (0, m.isWindows)() ? (0, o.WH)(f.guild_id, f.id, {
         pid: t
-      }) : null != i ? (0, o.L6)(false) : null != t && (0, h.isWindows)() ? (0, o.WH)(f.guild_id, f.id, {
+      }) : null != i ? (0, o.L6)(false) : null != t && (0, m.isWindows)() ? (0, o.WH)(f.guild_id, f.id, {
         pid: t
       }) : null != d ? (0, o.WH)(f.guild_id, f.id, {
         pid: d.pid

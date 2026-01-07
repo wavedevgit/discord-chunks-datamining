@@ -12,20 +12,20 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c() {
-  let e = Chunk695346.dN.useSetting(),
-    t = Chunk695346.R$.useSetting();
-  return module ? null : (0, Chunk54381.jsx)(Chunk481060.S89, {
+  let e = r.dN.useSetting(),
+    t = r.R$.useSetting();
+  return e ? null : (0, l.jsx)(i.S89, {
     id: "preview-markdown-toggle",
-    label: Chunk388032.intl.string(Chunk388032.t.sHJ9wZ),
+    label: s.intl.string(s.t.sHJ9wZ),
     action: () => {
-      let e = !exports;
-      Chunk626135.default.track(Chunk981631.rMx.PREVIEW_MARKDOWN_TOGGLED, {
-        enabled: module,
+      let e = !t;
+      a.default.track(o.rMx.PREVIEW_MARKDOWN_TOGGLED, {
+        enabled: e,
         location: {
-          section: Chunk981631.jXE.SETTINGS_CONTEXT_MENU
+          section: o.jXE.SETTINGS_CONTEXT_MENU
         }
-      }), Chunk695346.R$.updateSetting(module)
+      }), r.R$.updateSetting(e)
     },
-    checked: exports
+    checked: t
   })
 }

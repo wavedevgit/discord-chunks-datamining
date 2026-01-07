@@ -65,35 +65,35 @@ class M extends Chunk473749.PureComponent {
       targetType: t,
       action: n,
       themeOverride: l
-    } = this.props, i = null != Chunk473749 ? Chunk876334["themeOverride".concat((0, Chunk624138.De)(Chunk473749))] : null, s = a()(Chunk876334.icon, D[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk876334.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk876334.autoModerationBlockMessage : ({
-      [Chunk981631.KFR.ALL]: Chunk876334.targetAll,
-      [Chunk981631.KFR.GUILD]: Chunk876334.targetGuild,
-      [Chunk981631.KFR.CHANNEL]: Chunk876334.targetChannel,
-      [Chunk981631.KFR.CHANNEL_OVERWRITE]: Chunk876334.targetChannel,
-      [Chunk981631.KFR.USER]: Chunk876334.targetMember,
-      [Chunk981631.KFR.ROLE]: Chunk876334.targetRole,
-      [Chunk981631.KFR.ONBOARDING_PROMPT]: Chunk876334.targetOnboarding,
-      [Chunk981631.KFR.GUILD_ONBOARDING]: Chunk876334.targetOnboarding,
-      [Chunk981631.KFR.HOME_SETTINGS]: Chunk876334.targetOnboarding,
-      [Chunk981631.KFR.INTEGRATION]: Chunk876334.targetIntegration,
-      [Chunk981631.KFR.INVITE]: Chunk876334.targetInvite,
-      [Chunk981631.KFR.WEBHOOK]: Chunk876334.targetWebhook,
-      [Chunk981631.KFR.EMOJI]: Chunk876334.targetEmoji,
-      [Chunk981631.KFR.STICKER]: Chunk876334.targetSticker,
-      [Chunk981631.KFR.STAGE_INSTANCE]: Chunk876334.targetStageInstance,
-      [Chunk981631.KFR.GUILD_SCHEDULED_EVENT]: Chunk876334.targetGuildScheduledEvent,
-      [Chunk981631.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION]: Chunk876334.targetGuildScheduledEvent,
-      [Chunk981631.KFR.THREAD]: Chunk876334.thread,
-      [Chunk981631.KFR.APPLICATION_COMMAND]: Chunk876334.applicationCommand,
-      [Chunk981631.KFR.AUTO_MODERATION_RULE]: Chunk876334.autoModerationRule,
-      [Chunk981631.KFR.GUILD_HOME]: Chunk876334.targetGuildHome,
-      [Chunk981631.KFR.GUILD_SOUNDBOARD]: Chunk876334.targetGuildSoundboard,
-      [Chunk981631.KFR.VOICE_CHANNEL_STATUS]: Chunk876334.targetChannel,
-      [Chunk981631.KFR.GUILD_MEMBER_VERIFICATION]: Chunk876334.targetMember,
-      [Chunk981631.KFR.GUILD_PROFILE]: Chunk876334.targetGuild
-    })[exports], Chunk120356);
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk392711
+    } = this.props, i = null != l ? C["themeOverride".concat((0, h.De)(l))] : null, s = a()(C.icon, D[e], n === S.rsA.MESSAGE_DELETE ? C.targetMessage : n === S.rsA.AUTO_MODERATION_BLOCK_MESSAGE || n === S.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || n === S.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || n === S.rsA.AUTO_MODERATION_QUARANTINE_USER ? C.autoModerationBlockMessage : ({
+      [S.KFR.ALL]: C.targetAll,
+      [S.KFR.GUILD]: C.targetGuild,
+      [S.KFR.CHANNEL]: C.targetChannel,
+      [S.KFR.CHANNEL_OVERWRITE]: C.targetChannel,
+      [S.KFR.USER]: C.targetMember,
+      [S.KFR.ROLE]: C.targetRole,
+      [S.KFR.ONBOARDING_PROMPT]: C.targetOnboarding,
+      [S.KFR.GUILD_ONBOARDING]: C.targetOnboarding,
+      [S.KFR.HOME_SETTINGS]: C.targetOnboarding,
+      [S.KFR.INTEGRATION]: C.targetIntegration,
+      [S.KFR.INVITE]: C.targetInvite,
+      [S.KFR.WEBHOOK]: C.targetWebhook,
+      [S.KFR.EMOJI]: C.targetEmoji,
+      [S.KFR.STICKER]: C.targetSticker,
+      [S.KFR.STAGE_INSTANCE]: C.targetStageInstance,
+      [S.KFR.GUILD_SCHEDULED_EVENT]: C.targetGuildScheduledEvent,
+      [S.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION]: C.targetGuildScheduledEvent,
+      [S.KFR.THREAD]: C.thread,
+      [S.KFR.APPLICATION_COMMAND]: C.applicationCommand,
+      [S.KFR.AUTO_MODERATION_RULE]: C.autoModerationRule,
+      [S.KFR.GUILD_HOME]: C.targetGuildHome,
+      [S.KFR.GUILD_SOUNDBOARD]: C.targetGuildSoundboard,
+      [S.KFR.VOICE_CHANNEL_STATUS]: C.targetChannel,
+      [S.KFR.GUILD_MEMBER_VERIFICATION]: C.targetMember,
+      [S.KFR.GUILD_PROFILE]: C.targetGuild
+    })[t], i);
+    return (0, r.jsx)("div", {
+      className: s
     })
   }
 }

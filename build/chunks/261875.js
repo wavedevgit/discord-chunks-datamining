@@ -23,7 +23,7 @@ let u = new Chunk710845.Z("DatabaseManager"),
   d = false;
 class f extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(Chunk314897.default), this.carefullySpeculativelyOpen(Chunk115522.n()), this.handleAuthenticationStoreChanged(), Chunk314897.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
+    this.waitFor(s.default), this.carefullySpeculativelyOpen(l.n()), this.handleAuthenticationStoreChanged(), s.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
   }
   databaseName(e) {
     return _(e)
@@ -58,17 +58,17 @@ class f extends Chunk442837.ZP.Store {
     e.preventWritingCachesAgainThisSession && (this.preventWritingCachesAgainThisSession = true), this.replaceDisableAllDatabases("DatabaseManager (".concat(e.reason, ")"))
   }
   handleConnectionOpen() {
-    let e = Chunk314897.default.getId(),
-      t = this.databases.get(module),
-      n = null == exports ? true : exports.state();
-    null == exports && require !== Chunk348326.hi.Open && this.remove(module), this.carefullyOpenDatabase(module)
+    let e = s.default.getId(),
+      t = this.databases.get(e),
+      n = null == t ? true : t.state();
+    null == t && n !== i.hi.Open && this.remove(e), this.carefullyOpenDatabase(e)
   }
   handleAuthenticationStoreChanged() {
-    let e = Chunk314897.default.getId(),
+    let e = s.default.getId(),
       t = this.activeUserId;
-    if (module !== exports) {
-      let n = this.databases.get(exports);
-      u.verbose("active user changed (now: ".concat(module, ", was: ").concat(exports, ", was: ").concat(require, ")")), null == require || require.close(), Chunk115522.I(module), this.activeUserId = module, this.databases.delete(exports)
+    if (e !== t) {
+      let n = this.databases.get(t);
+      u.verbose("active user changed (now: ".concat(e, ", was: ").concat(t, ", was: ").concat(n, ")")), null == n || n.close(), l.I(e), this.activeUserId = e, this.databases.delete(t)
     }
   }
   async carefullySpeculativelyOpen(e) {
@@ -79,12 +79,12 @@ class f extends Chunk442837.ZP.Store {
     }
   }
   constructor() {
-    super(Chunk570140.Z, {
+    super(a.Z, {
       CLEAR_CACHES: e => this.handleClearCaches(e),
       CONNECTION_CLOSED: () => this.handleAuthenticationStoreChanged(),
       CONNECTION_OPEN: () => this.handleConnectionOpen(),
       LOGOUT: () => this.handleAuthenticationStoreChanged()
-    }, Chunk570140.c.Early), c(this, "databases", new Map), c(this, "activeUserId", null), c(this, "preventWritingCachesAgainThisSession", false)
+    }, a.c.Early), c(this, "databases", new Map), c(this, "activeUserId", null), c(this, "preventWritingCachesAgainThisSession", false)
   }
 }
 

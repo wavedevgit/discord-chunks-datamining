@@ -64,7 +64,7 @@ let M = {
   renderStep: e => (0, r.jsx)(G, j({}, e)),
   options: {
     isLargeModal: true,
-    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
+    useBreadcrumbLabel: () => w.intl.string(w.t["W685+b"])
   }
 };
 

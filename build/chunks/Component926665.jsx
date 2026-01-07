@@ -23,29 +23,29 @@ let b = "https://dis.gd/Amazon-Music-Connection",
 function x() {
   let {
     type: e
-  } = (0, Chunk828700.UO)(), a = (0, Chunk656649.vJ)(module), s = (0, Chunk169382.l)().get("error-code"), r = Chunk473749.useCallback(() => {
+  } = (0, i.UO)(), a = (0, m.vJ)(e), s = (0, u.l)().get("error-code"), r = l.useCallback(() => {
     window.close()
-  }, []), x = Chunk473749.useMemo(() => {
-    switch (exports) {
-      case Chunk981631.ABu.AMAZON_MUSIC:
-        return (0, Chunk54381.jsx)("div", {
-          className: t()(Chunk86105.message, Chunk86105.details),
-          children: Chunk873546.tq ? Chunk388032.intl.format(Chunk388032.t["0EikXi"], {
-            link: () => (0, Chunk54381.jsx)(Chunk481060.eee, {
+  }, []), x = l.useMemo(() => {
+    switch (a) {
+      case g.ABu.AMAZON_MUSIC:
+        return (0, n.jsx)("div", {
+          className: t()(v.message, v.details),
+          children: o.tq ? h.intl.format(h.t["0EikXi"], {
+            link: () => (0, n.jsx)(c.eee, {
               href: b,
               children: b
             })
-          }) : Chunk388032.intl.format(Chunk388032.t.hKHZhO, {
-            link: () => (0, Chunk54381.jsx)(Chunk481060.eee, {
+          }) : h.intl.format(h.t.hKHZhO, {
+            link: () => (0, n.jsx)(c.eee, {
               href: b,
               children: b
             })
           })
         });
-      case Chunk981631.ABu.YOUTUBE:
-        if (require === Chunk981631.evJ.UNKNOWN_ACCOUNT.toString()) return (0, Chunk54381.jsx)("div", {
-          className: t()(Chunk86105.message, Chunk86105.details),
-          children: Chunk388032.intl.format(Chunk388032.t.nQPJdL, {
+      case g.ABu.YOUTUBE:
+        if (s === g.evJ.UNKNOWN_ACCOUNT.toString()) return (0, n.jsx)("div", {
+          className: t()(v.message, v.details),
+          children: h.intl.format(h.t.nQPJdL, {
             link: "https://support.google.com/youtube/answer/1646861"
           })
         });
@@ -53,27 +53,27 @@ function x() {
       default:
         return null
     }
-  }, [require, exports]);
-  if (null == exports) return null;
-  let j = Chunk726542.Z.get(exports);
-  return (0, Chunk54381.jsxs)(Chunk656649.UV, {
-    platformType: exports,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: t()(Chunk86105.message, Chunk86105.error),
-      children: Chunk388032.intl.format(Chunk388032.t.E62dXo, {
+  }, [s, a]);
+  if (null == a) return null;
+  let j = f.Z.get(a);
+  return (0, n.jsxs)(m.UV, {
+    platformType: a,
+    children: [(0, n.jsx)("div", {
+      className: t()(v.message, v.error),
+      children: h.intl.format(h.t.E62dXo, {
         name: j.name
       })
-    }), (0, Chunk54381.jsx)("div", {
-      className: t()(Chunk86105.message, Chunk86105.details),
-      children: Chunk388032.intl.string(Chunk388032.t.Ra6lcp)
-    }), x, p ? (0, Chunk54381.jsx)(Chunk755721.zx, {
-      className: Chunk86105.btn,
-      onClick: Chunk120356,
-      children: Chunk388032.intl.string(Chunk388032.t.i4jeWR)
-    }) : null, null != require ? (0, Chunk54381.jsx)("div", {
-      className: t()(Chunk86105.message, Chunk86105.errorDetails),
-      children: Chunk388032.intl.format(Chunk388032.t.LElyIL, {
-        errorCode: require
+    }), (0, n.jsx)("div", {
+      className: t()(v.message, v.details),
+      children: h.intl.string(h.t.Ra6lcp)
+    }), x, p ? (0, n.jsx)(d.zx, {
+      className: v.btn,
+      onClick: r,
+      children: h.intl.string(h.t.i4jeWR)
+    }) : null, null != s ? (0, n.jsx)("div", {
+      className: t()(v.message, v.errorDetails),
+      children: h.intl.format(h.t.LElyIL, {
+        errorCode: s
       })
     }) : null]
   })

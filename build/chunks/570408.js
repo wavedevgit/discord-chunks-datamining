@@ -11,7 +11,7 @@ let o = {
   binds: ["mod+f"],
   comboKeysBindGlobal: true,
   action() {
-    if (!Chunk819640.Z.hasLayers()) return Chunk585483.S.dispatch(Chunk981631.CkL.FOCUS_SEARCH, {
+    if (!r.Z.hasLayers()) return i.S.dispatch(a.CkL.FOCUS_SEARCH, {
       prefillCurrentChannel: true
     }), false
   }

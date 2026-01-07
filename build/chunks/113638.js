@@ -23,7 +23,7 @@ class i {
   ensureLoaded() {
     if (this.loaded || this.loading || true === this.param) return;
     let e = this.param;
-    this.loading = true, this.loader(module).then(t => {
+    this.loading = true, this.loader(e).then(t => {
       e === this.param && (this.val = t, this.loading = false, this.loaded = true)
     })
   }

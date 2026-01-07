@@ -307,37 +307,37 @@ function eY(e, t) {
 let eW = {
     [Chunk981631.evJ.EMAIL_VERIFICATION_REQUIRED]: {
       messageName: "BOT_REQUIRES_EMAIL_VERIFICATION",
-      messageGetter: () => Chunk388032.intl.string(Chunk388032.t.k1Cjqr)
+      messageGetter: () => eR.intl.string(eR.t.k1Cjqr)
     },
     [Chunk981631.evJ.GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED]: {
       messageName: "GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED",
-      messageGetter: () => Chunk388032.intl.string(Chunk388032.t.Z5SUuv)
+      messageGetter: () => eR.intl.string(eR.t.Z5SUuv)
     },
     [Chunk981631.evJ.INVALID_MESSAGE_SEND_USER]: {
       messageName: "BOT_DM_SEND_FAILED_WITH_HELP_LINK",
-      messageGetter: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.CTMXwL, {
-        helpUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DM_COULD_NOT_BE_DELIVERED)
+      messageGetter: () => eR.intl.formatToPlainString(eR.t.CTMXwL, {
+        helpUrl: eO.Z.getArticleURL(eC.BhN.DM_COULD_NOT_BE_DELIVERED)
       })
     },
     [Chunk981631.evJ.RATE_LIMIT_DM_OPEN]: {
       messageName: "BOT_DM_RATE_LIMITED",
-      messageGetter: () => Chunk388032.intl.string(Chunk388032.t.E8nbNb)
+      messageGetter: () => eR.intl.string(eR.t.E8nbNb)
     },
     [Chunk981631.evJ.SEND_MESSAGE_TEMPORARILY_DISABLED]: {
       messageName: "BOT_DM_SEND_MESSAGE_TEMPORARILY_DISABLED",
-      messageGetter: () => Chunk388032.intl.string(Chunk388032.t.aRUbah)
+      messageGetter: () => eR.intl.string(eR.t.aRUbah)
     },
     [Chunk981631.evJ.SLOWMODE_RATE_LIMITED]: {
       messageName: "BOT_DM_SEND_MESSAGE_TEMPORARILY_DISABLED",
-      messageGetter: () => Chunk388032.intl.string(Chunk388032.t.aRUbah)
+      messageGetter: () => eR.intl.string(eR.t.aRUbah)
     },
     [Chunk981631.evJ.INVALID_MESSAGE_SEND_GAME_FRIEND_DM]: {
       messageName: "BOT_DM_SEND_MESSAGE_INVALID_FOR_GAME_FRIEND",
-      messageGetter: () => Chunk388032.intl.string(Chunk388032.t["/meGhR"])
+      messageGetter: () => eR.intl.string(eR.t["/meGhR"])
     },
     [Chunk981631.evJ.INVALID_MESSAGE_SEND_PROVISIONAL_ACCOUNT_OFFLINE]: {
       messageName: "BOT_DM_SEND_MESSAGE_INVALID_OFFLINE_PROVISIONAL_ACCOUNT",
-      messageGetter: () => Chunk388032.intl.string(Chunk388032.t.Oc1Zjw)
+      messageGetter: () => eR.intl.string(eR.t.Oc1Zjw)
     }
   },
   eK = {

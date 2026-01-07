@@ -25,60 +25,60 @@ var Chunk54381 = require("./54381.js"),
   Chunk146473 = require("./146473.js");
 
 function C() {
-  let e, t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId()),
-    n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
-    C = (0, Chunk442837.e7)([Chunk392885.Z], () => Chunk392885.Z.getCurrentPage());
-  if (Chunk473749.useEffect(() => {
-      (0, Chunk266454.Q3)(Chunk704215.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
-        dismissAction: Chunk921944.L.AUTO
+  let e, t = (0, l.e7)([g.Z], () => g.Z.getGuildId()),
+    n = (0, l.e7)([u.Z], () => u.Z.getGuild(t)),
+    C = (0, l.e7)([m.Z], () => m.Z.getCurrentPage());
+  if (i.useEffect(() => {
+      (0, o.Q3)(a.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
+        dismissAction: j.L.AUTO
       })
-    }, []), null == require) return null;
-  let y = (0, Chunk598622.Q)(require);
+    }, []), null == n) return null;
+  let y = (0, x.Q)(n);
   switch (C) {
-    case Chunk740903.u.OVERVIEW:
-      e = (0, Chunk54381.jsx)(Chunk464610.Z, {
-        guild: require
+    case b.u.OVERVIEW:
+      e = (0, r.jsx)(p.Z, {
+        guild: n
       });
       break;
-    case Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION:
-      e = (0, Chunk54381.jsx)(Chunk733629.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t["53eF5o"]),
-        settings: y[Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION]
+    case b.u.CAPTCHA_AND_RAID_PROTECTION:
+      e = (0, r.jsx)(h.Z, {
+        title: v.intl.string(v.t["53eF5o"]),
+        settings: y[b.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
-    case Chunk740903.u.DM_AND_SPAM_PROTECTION:
-      e = (0, Chunk54381.jsx)(Chunk733629.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t.O0SfFy),
-        settings: y[Chunk740903.u.DM_AND_SPAM_PROTECTION]
+    case b.u.DM_AND_SPAM_PROTECTION:
+      e = (0, r.jsx)(h.Z, {
+        title: v.intl.string(v.t.O0SfFy),
+        settings: y[b.u.DM_AND_SPAM_PROTECTION]
       });
       break;
-    case Chunk740903.u.AUTOMOD:
-      e = (0, Chunk54381.jsx)(Chunk874993.Z, {
-        guildId: require.id
+    case b.u.AUTOMOD:
+      e = (0, r.jsx)(c.Z, {
+        guildId: n.id
       });
       break;
-    case Chunk740903.u.PERMISSIONS:
-      e = (0, Chunk54381.jsx)(Chunk733629.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t.BXoNiT),
-        settings: y[Chunk740903.u.PERMISSIONS]
+    case b.u.PERMISSIONS:
+      e = (0, r.jsx)(h.Z, {
+        title: v.intl.string(v.t.BXoNiT),
+        settings: y[b.u.PERMISSIONS]
       })
   }
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [C !== Chunk740903.u.OVERVIEW && (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      className: Chunk146473.back,
+  return (0, r.jsxs)(r.Fragment, {
+    children: [C !== b.u.OVERVIEW && (0, r.jsx)(s.P3F, {
+      className: O.back,
       onClick: () => {
-        (0, Chunk84613.K)(Chunk740903.u.OVERVIEW)
+        (0, f.K)(b.u.OVERVIEW)
       },
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk146473.backButton,
-        children: [(0, Chunk54381.jsx)(Chunk768762.Z, {
-          direction: Chunk768762.Z.Directions.LEFT
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: (0, r.jsxs)("div", {
+        className: O.backButton,
+        children: [(0, r.jsx)(d.Z, {
+          direction: d.Z.Directions.LEFT
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",
-          children: Chunk388032.intl.string(Chunk388032.t["13/7kX"])
+          children: v.intl.string(v.t["13/7kX"])
         })]
       })
-    }), module]
+    }), e]
   })
 }

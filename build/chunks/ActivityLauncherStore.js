@@ -99,7 +99,7 @@ function O() {
       return null != t
     }),
     t = false;
-  return module.forEach(e => {
+  return e.forEach(e => {
     var n, r;
     let {
       applicationId: i,
@@ -109,11 +109,11 @@ function O() {
       applicationId: i,
       remotePartyId: a
     }), t = true)
-  }), exports
+  }), t
 }
 class v extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk293273.Z, Chunk885110.Z], O)
+    this.syncWith([s.Z, l.Z], O)
   }
   getState(e, t) {
     var n;

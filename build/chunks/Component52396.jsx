@@ -60,8 +60,8 @@ function E(e, t) {
 let b = Chunk473749.createContext(true);
 
 function y() {
-  let e = Chunk473749.useContext(b);
-  return o()(null != module, "useEntryDataContext must be used within a EntryDataContextProvider"), module
+  let e = i.useContext(b);
+  return o()(null != e, "useEntryDataContext must be used within a EntryDataContextProvider"), e
 }
 
 function O(e) {

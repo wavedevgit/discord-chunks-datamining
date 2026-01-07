@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function i() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE"
   })
 }

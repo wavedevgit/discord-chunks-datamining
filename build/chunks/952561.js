@@ -10,6 +10,6 @@ var Chunk835473 = require("./835473.js"),
 function a() {
   let {
     fetchesApplication: e = true
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = (0, Chunk716600.Z)(), [n] = (0, Chunk835473.Z)(null == exports ? [] : [exports.applicationId], module);
-  return null != require ? require : true
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = (0, i.Z)(), [n] = (0, r.Z)(null == t ? [] : [t.applicationId], e);
+  return null != n ? n : true
 }

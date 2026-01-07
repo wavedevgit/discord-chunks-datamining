@@ -17,10 +17,10 @@ function c() {
     userId: t,
     guildId: n,
     pendingDisplayNameStyles: c
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, u = (0, Chunk181430.Y)({
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, u = (0, l.Y)({
     location: "useDisplayNameStyles"
-  }), d = (0, Chunk442837.e7)([Chunk594174.default], () => null != exports ? Chunk594174.default.getUser(exports) : Chunk594174.default.getCurrentUser()), f = (0, Chunk473749.useContext)(Chunk372900.Z);
-  null == require && (n = f);
-  let p = (0, Chunk442837.e7)([Chunk271383.ZP], () => null != require && null != d ? Chunk271383.ZP.getMember(require, d.id) : null);
-  return u ? true !== c ? null === c && null != require ? null == d ? true : d.displayNameStyles : c : null != (e = null == p ? true : p.displayNameStyles) ? module : null == d ? true : d.displayNameStyles : null
+  }), d = (0, i.e7)([s.default], () => null != t ? s.default.getUser(t) : s.default.getCurrentUser()), f = (0, r.useContext)(a.Z);
+  null == n && (n = f);
+  let p = (0, i.e7)([o.ZP], () => null != n && null != d ? o.ZP.getMember(n, d.id) : null);
+  return u ? true !== c ? null === c && null != n ? null == d ? true : d.displayNameStyles : c : null != (e = null == p ? true : p.displayNameStyles) ? e : null == d ? true : d.displayNameStyles : null
 }

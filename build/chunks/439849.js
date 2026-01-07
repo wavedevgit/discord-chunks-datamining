@@ -38,14 +38,14 @@ function _(e) {
 async function m() {
   if (null != r) return r;
   try {
-    await Chunk998502.ZP.ensureModule("discord_game_utils"), r = await Chunk998502.ZP.requireModule("discord_game_utils")
+    await c.ZP.ensureModule("discord_game_utils"), r = await c.ZP.requireModule("discord_game_utils")
   } catch (e) {
-    new Chunk710845.Z("GamesActionCreators").error("could not load discord_game_utils", module)
+    new s.Z("GamesActionCreators").error("could not load discord_game_utils", e)
   }
-  if ((0, Chunk358085.isWindows)()) {
-    let e = Chunk579806.Z.process.env;
-    p(module.LOCALAPPDATA), p(module["PROGRAMFILES(X86)"]), p(module.PROGRAMFILES), p(module.PROGRAMW6432), p(module.PROGRAMDATA), p("/games/"), p("/steamlibrary/steamapps/common/")
-  } else(0, Chunk358085.isMac)() ? p("/Applications") : (0, Chunk358085.isLinux)() && (p("/app/bin"), p("/usr/bin"), p("/usr/local/bin"));
-  let e = Chunk579806.Z.remoteApp.getPath;
-  return p(await module("home")), p(await module("appData")), p(await module("desktop")), p(await module("documents")), p(await module("downloads")), (u = a().uniq(u)).sort((e, t) => t.length - e.length), r
+  if ((0, l.isWindows)()) {
+    let e = o.Z.process.env;
+    p(e.LOCALAPPDATA), p(e["PROGRAMFILES(X86)"]), p(e.PROGRAMFILES), p(e.PROGRAMW6432), p(e.PROGRAMDATA), p("/games/"), p("/steamlibrary/steamapps/common/")
+  } else(0, l.isMac)() ? p("/Applications") : (0, l.isLinux)() && (p("/app/bin"), p("/usr/bin"), p("/usr/local/bin"));
+  let e = o.Z.remoteApp.getPath;
+  return p(await e("home")), p(await e("appData")), p(await e("desktop")), p(await e("documents")), p(await e("downloads")), (u = a().uniq(u)).sort((e, t) => t.length - e.length), r
 }

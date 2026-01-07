@@ -102,7 +102,7 @@ function T(e) {
 }
 
 function C() {
-  g !== Chunk944486.Z.getVoiceChannelId() && (E = false), S() && (E = true), g = Chunk944486.Z.getVoiceChannelId()
+  g !== c.Z.getVoiceChannelId() && (E = false), S() && (E = true), g = c.Z.getVoiceChannelId()
 }
 
 function A() {
@@ -110,7 +110,7 @@ function A() {
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk131951.Z, Chunk944486.Z, Chunk581883.Z, Chunk594174.default), this.syncWith([Chunk944486.Z, Chunk131951.Z], C)
+    this.waitFor(l.Z, c.Z, s.Z, u.default), this.syncWith([c.Z, l.Z], C)
   }
   get videoFilterAssets() {
     return b

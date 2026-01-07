@@ -160,9 +160,9 @@ function A(e, t) {
 }
 
 function N() {
-  let e = Chunk314897.default.getId(),
-    t = Chunk885110.Z.getActivities();
-  return b(Chunk981631.ME, module, exports)
+  let e = l.default.getId(),
+    t = u.Z.getActivities();
+  return b(d.ME, e, t)
 }
 
 function P(e) {
@@ -190,7 +190,7 @@ function R(e) {
 }
 class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk885110.Z], N), this.waitFor(Chunk314897.default, Chunk699516.Z, Chunk885110.Z)
+    this.syncWith([u.Z], N), this.waitFor(l.default, c.Z, u.Z)
   }
   getParty(e) {
     return null != e && m.has(e) ? m.get(e) : null

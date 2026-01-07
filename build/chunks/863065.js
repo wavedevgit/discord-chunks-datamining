@@ -21,15 +21,15 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 async function u() {
-  if (!Chunk358085.isPlatformEmbedded) returnfalse;
-  let e = await Chunk654769.Z.hasPermission();
-  return Chunk998502.ZP.shouldDisplayNotifications() && module
+  if (!a.isPlatformEmbedded) returnfalse;
+  let e = await s.Z.hasPermission();
+  return o.ZP.shouldDisplayNotifications() && e
 }
 class d extends Chunk147913.Z {
   async handlePostConnectionOpen() {
     let e = await u();
-    Chunk626135.default.track(Chunk981631.rMx.NOTIFICATION_PERMISSION_STATUS, {
-      os_enabled: module
+    i.default.track(l.rMx.NOTIFICATION_PERMISSION_STATUS, {
+      os_enabled: e
     })
   }
   constructor(...e) {

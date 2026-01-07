@@ -13,17 +13,17 @@ var Chunk139232 = require("./139232.js"),
     function e(e, t, n, r) {
       this.hour = e, this.minute = t, this.second = n, this.millisecond = r || 0
     }
-    return module.prototype.getHours = function() {
+    return e.prototype.getHours = function() {
       return this.hour
-    }, module.prototype.getMinutes = function() {
+    }, e.prototype.getMinutes = function() {
       return this.minute
-    }, module.prototype.getSeconds = function() {
+    }, e.prototype.getSeconds = function() {
       return this.second
-    }, module.prototype.getMilliseconds = function() {
+    }, e.prototype.getMilliseconds = function() {
       return this.millisecond
-    }, module.prototype.getTime = function() {
+    }, e.prototype.getTime = function() {
       return (60 * this.hour * 60 + 60 * this.minute + this.second) * 1e3 + this.millisecond
-    }, module
+    }, e
   }(),
   l = function(e) {
     function t(t, n, r, i, a, o, s) {

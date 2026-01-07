@@ -130,13 +130,13 @@ function ea(e) {
 }
 
 function eo() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk598484.developerShelfControlsContainer,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk598484.developerShelfControlsLabel,
+  return (0, r.jsxs)("div", {
+    className: Q.developerShelfControlsContainer,
+    children: [(0, r.jsx)(m.Text, {
+      className: Q.developerShelfControlsLabel,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t.tZ3FNs)
-    }), (0, Chunk54381.jsx)(Chunk427996.W, {
+      children: q.intl.string(q.t.tZ3FNs)
+    }), (0, r.jsx)(O.W, {
       hideSearch: true
     })]
   })
@@ -553,13 +553,13 @@ function e_(e) {
 }
 
 function em() {
-  let e = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.onlyShowPreviewAppCollections),
-    t = Chunk568100.Z.getCurrentConfig({
+  let e = (0, _.e7)([R.default], () => R.default.onlyShowPreviewAppCollections),
+    t = C.Z.getCurrentConfig({
       location: "App Launcher Home (Web)"
     }, {
       autoTrackExposure: false
     }).enabled;
-  return module ? Chunk535655.E.PREVIEW : exports ? Chunk535655.E.NON_STAFF_PREVIEW : Chunk535655.E.ACTIVE
+  return e ? s.E.PREVIEW : t ? s.E.NON_STAFF_PREVIEW : s.E.ACTIVE
 }
 
 function eh(e) {

@@ -11,8 +11,8 @@ var Chunk125900 = require("./125900.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.CHAT_SOUNDMOJI_AUTOCOMPLETE, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["CtYr+U"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.hrSIhN),
+  useTitle: () => o.intl.string(o.t["CtYr+U"]),
+  useSubtitle: () => o.intl.string(o.t.hrSIhN),
   useValue: Chunk695346.eR.useSetting,
   setValue: t => {
     s.default.track(a.rMx.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
@@ -22,7 +22,7 @@ let T = (0, Chunk509613.qs)(Chunk313789.n.CHAT_SOUNDMOJI_AUTOCOMPLETE, {
       }
     }), u.eR.updateSetting(t)
   },
-  usePredicate: () => (0, Chunk125900.dX)({
+  usePredicate: () => (0, i.dX)({
     location: "SoundmojiAutocomplete"
   })
 })

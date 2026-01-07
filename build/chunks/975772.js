@@ -18,14 +18,14 @@ let d = 12096e5,
     let {
       enabled: e,
       forceNotice: t
-    } = Chunk670087.j.useExperiment({
+    } = c.j.useExperiment({
       location: "useShouldShowPriceDecreaseNotice"
-    }), n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription());
-    if ((0, Chunk266454.Nj)(Chunk704215.z.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE) || new Date < f && !exports || null == require || null != require.createdAt && require.createdAt > f && !exports) returnfalse;
-    let r = require.currentPeriodStart,
-      i = require.currentPeriodEnd,
+    }), n = (0, a.e7)([l.Z], () => l.Z.getPremiumTypeSubscription());
+    if ((0, s.Nj)(o.z.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE) || new Date < f && !t || null == n || null != n.createdAt && n.createdAt > f && !t) returnfalse;
+    let r = n.currentPeriodStart,
+      i = n.currentPeriodEnd,
       p = i <= new Date(Date.now() + d) && i > new Date;
-    return Chunk913527 > f ? ((0, Chunk266454.Q3)(Chunk704215.z.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE, {
-      dismissAction: Chunk921944.L.AUTO_DISMISS
-    }), false) : !!p && module
+    return r > f ? ((0, s.Q3)(o.z.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE, {
+      dismissAction: u.L.AUTO_DISMISS
+    }), false) : !!p && e
   }

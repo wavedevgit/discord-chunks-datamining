@@ -23,21 +23,21 @@ function E() {
     quest: g,
     sourceQuestContent: O,
     onClose: h
-  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), {
+  } = o.useContext(f.VideoQuestModalContext), {
     enabled: C
-  } = Chunk937797.EO.useConfig({
-    location: Chunk324805.dr.VIDEO_MODAL
-  }), b = (0, Chunk968843.tP)(g), S = null != (0, Chunk115179.LM)(g.config), _ = (0, Chunk969227.D)({
+  } = c.EO.useConfig({
+    location: p.dr.VIDEO_MODAL
+  }), b = (0, u.tP)(g), S = null != (0, d.LM)(g.config), _ = (0, m.D)({
     quest: g,
-    questContent: Chunk49436.jn.QUEST_HOME_DESKTOP,
+    questContent: s.jn.QUEST_HOME_DESKTOP,
     sourceQuestContent: O,
-    onClick: (0, Chunk115179.Bg)(g.config) || (0, Chunk115179.xN)(g.config) && (null == (e = g.userStatus) ? true : module.claimedAt) != null ? h : true,
+    onClick: (0, d.Bg)(g.config) || (0, d.xN)(g.config) && (null == (e = g.userStatus) ? true : e.claimedAt) != null ? h : true,
     shouldShowShopIfAlreadyClaimed: true
-  }), y = (null == (t = g.userStatus) ? true : exports.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), x = (null == (n = g.userStatus) ? true : require.completedAt) == null && C ? b ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
-  return (0, Chunk54381.jsx)(Chunk28664.u, {
+  }), y = (null == (t = g.userStatus) ? true : t.claimedAt) != null ? S ? v.intl.string(v.t.WYchde) : v.intl.string(v.t.vTgCWx) : v.intl.string(v.t.cfY4PE), x = (null == (n = g.userStatus) ? true : n.completedAt) == null && C ? b ? v.intl.string(v.t.NJ6Bnm) : v.intl.string(v.t.USNO1K) : true;
+  return (0, r.jsx)(i.u, {
     text: x,
-    children: (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    children: (0, r.jsx)("div", {
+      children: (0, r.jsx)(a.Button, {
         variant: C ? "secondary" : "primary",
         fullWidth: true,
         icon: ((e, t) => {

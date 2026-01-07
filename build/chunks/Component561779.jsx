@@ -167,10 +167,10 @@ class S extends(r = Chunk473749.PureComponent) {
       "aria-describedby": Z
     } = this.props, {
       fieldProps: F
-    } = (0, Chunk793030.XF_)(this.props), B = 0;
-    y ? null != Chunk120356 && (null != c ? B = Chunk120356[c] : null != Chunk392711 && (B = Chunk120356[Chunk392711])) : B = this.scaleValue(exports), B = Math.min(Math.max(B, 0), 100);
+    } = (0, f.XF_)(this.props), B = 0;
+    y ? null != o && (null != c ? B = o[c] : null != l && (B = o[l])) : B = this.scaleValue(t), B = Math.min(Math.max(B, 0), 100);
     let V = "".concat(B, "%"),
-      H = null != Chunk120356 && null != Chunk473749 ? Chunk120356.map((e, t) => {
+      H = null != o && null != a ? o.map((e, t) => {
         let n = a[t],
           r = null != N && N === n,
           o = this.renderMark(n);
@@ -193,9 +193,9 @@ class S extends(r = Chunk473749.PureComponent) {
           })
         }, t)
       }) : null,
-      Y = null != R ? R(exports) : "".concat(B.toFixed(0), "%"),
-      W = null != (e = null == D ? true : D(exports)) ? module : true;
-    return (0, Chunk54381.jsx)(Chunk793030.gNt, b(g({}, F), {
+      Y = null != R ? R(t) : "".concat(B.toFixed(0), "%"),
+      W = null != (e = null == D ? true : D(t)) ? e : true;
+    return (0, i.jsx)(f.gNt, b(g({}, F), {
       children: e => (0, i.jsx)(I, {
         active: n,
         keyboardFocused: r && _.Z.keyboardModeEnabled,
@@ -275,7 +275,7 @@ class S extends(r = Chunk473749.PureComponent) {
   }
   reset() {
     var e, t, n, r;
-    null == (t = this.containerRef.current) || null == (e = exports.ownerDocument) || module.removeEventListener("mousemove", this.handleMouseMove, true), null == (r = this.containerRef.current) || null == (n = r.ownerDocument) || require.removeEventListener("mouseup", this.handleMouseUp, true)
+    null == (t = this.containerRef.current) || null == (e = t.ownerDocument) || e.removeEventListener("mousemove", this.handleMouseMove, true), null == (r = this.containerRef.current) || null == (n = r.ownerDocument) || n.removeEventListener("mouseup", this.handleMouseUp, true)
   }
   scaleValue(e) {
     return 100 * (e - this.state.min) / this.state.range
@@ -285,11 +285,11 @@ class S extends(r = Chunk473749.PureComponent) {
   }
   focus() {
     var e;
-    null == (e = this.containerRef.current) || module.focus()
+    null == (e = this.containerRef.current) || e.focus()
   }
   blur() {
     var e;
-    null == (e = this.containerRef.current) || module.blur()
+    null == (e = this.containerRef.current) || e.blur()
   }
   moveStaggered(e) {
     let t, {

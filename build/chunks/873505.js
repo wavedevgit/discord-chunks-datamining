@@ -20,7 +20,7 @@ function o(e) {
 class s {
   isAttached() {
     var e;
-    return null == (e = this.node) ? true : module.isConnected
+    return null == (e = this.node) ? true : e.isConnected
   }
   createLog(e) {
     let t = document.createElement("div");

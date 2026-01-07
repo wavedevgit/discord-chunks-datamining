@@ -16,31 +16,31 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function d() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk210887.Z,
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : s.Z,
     {
       darkSidebar: t
-    } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk740492.ZP,
+    } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : l.ZP,
     {
       gradientPreset: n
-    } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk514361.Z,
+    } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.Z,
     r = arguments.length > 3 ? arguments[3] : true,
     a = arguments.length > 4 ? arguments[4] : true,
-    c = null != Chunk442837.customUserThemeSettings || Chunk233398;
-  return (0, Chunk780384.ap)(module.theme) && exports && null == require && !Chunk695346
+    c = null != r.customUserThemeSettings || a;
+  return (0, i.ap)(e.theme) && t && null == n && !c
 }
 
 function f() {
-  let e = Chunk695346.L1.getSetting(),
-    t = Chunk233398.Ig.getState().isEditorActive();
-  return d(Chunk210887.Z, Chunk740492.ZP, Chunk514361.Z, module, exports)
+  let e = c.L1.getSetting(),
+    t = a.Ig.getState().isEditorActive();
+  return d(s.Z, l.ZP, o.Z, e, t)
 }
 
 function p() {
-  let e = Chunk695346.L1.useSetting(),
-    t = (0, Chunk233398.Ig)(e => e.isEditorActive());
-  return (0, Chunk442837.e7)([Chunk210887.Z, Chunk740492.ZP, Chunk514361.Z], () => d(Chunk210887.Z, Chunk740492.ZP, Chunk514361.Z, module, exports))
+  let e = c.L1.useSetting(),
+    t = (0, a.Ig)(e => e.isEditorActive());
+  return (0, r.e7)([s.Z, l.ZP, o.Z], () => d(s.Z, l.ZP, o.Z, e, t))
 }
 
 function _() {
-  return p() ? Chunk981631.BRd.DARK : true
+  return p() ? u.BRd.DARK : true
 }

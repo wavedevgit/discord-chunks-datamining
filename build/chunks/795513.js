@@ -26,11 +26,11 @@ class l {
     return this.hasSuccessfullyConnected ? Promise.resolve(true) : this.doesDatabaseVersionMatchJsConstants()
   }
   async doesDatabaseVersionMatchJsConstants() {
-    let e = Chunk287328.Z.forceResyncVersion();
-    if (null == module) returnfalse;
-    let t = await module.get(Chunk870078.LH),
-      n = null == exports ? true : exports.version;
-    return require === Chunk870078.pL || (s.info("KVStore version mismatch: ".concat(require, " vs ").concat(Chunk870078.pL)), false)
+    let e = i.Z.forceResyncVersion();
+    if (null == e) returnfalse;
+    let t = await e.get(a.LH),
+      n = null == t ? true : t.version;
+    return n === a.pL || (s.info("KVStore version mismatch: ".concat(n, " vs ").concat(a.pL)), false)
   }
   handleClear() {
     this.hasSuccessfullyConnected = false

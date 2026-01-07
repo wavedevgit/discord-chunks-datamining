@@ -21,12 +21,12 @@ let l = new Chunk710845.Z("GuildVersions");
 class c {
   async getCommittedVersions() {
     try {
-      let e = Chunk287328.Z.guildVersions();
-      if (null == module) return {};
-      let t = (await module.getMany()).map(e => [e.id, e.version]);
-      return Object.fromEntries(null != exports ? exports : [])
+      let e = o.Z.guildVersions();
+      if (null == e) return {};
+      let t = (await e.getMany()).map(e => [e.id, e.version]);
+      return Object.fromEntries(null != t ? t : [])
     } catch (e) {
-      return l.warn("couldn't load guild versions", module), {}
+      return l.warn("couldn't load guild versions", e), {}
     }
   }
   remove(e, t) {

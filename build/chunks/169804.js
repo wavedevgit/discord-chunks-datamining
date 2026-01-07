@@ -12,14 +12,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.qs)(Chunk313789.n.SYNC_PROFILE_THEMES, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["sSY+mD"]),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.u6UjrL, {
+  useTitle: () => T.intl.string(T.t["sSY+mD"]),
+  useSubtitle: () => T.intl.format(T.t.u6UjrL, {
     onThemeClick() {
-      (0, Chunk518596.openUserSettings)(Chunk313789.n.APPEARANCE_PANEL, {
-        section: Chunk981631.oAB.APPEARANCE
+      (0, a.openUserSettings)(r.n.APPEARANCE_PANEL, {
+        section: o.oAB.APPEARANCE
       })
     }
   }),
-  useValue: () => (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.syncProfileThemeWithUserTheme),
-  setValue: () => (0, Chunk857595.Uv)()
+  useValue: () => (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme),
+  setValue: () => (0, l.Uv)()
 })

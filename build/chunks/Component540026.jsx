@@ -52,14 +52,14 @@ class m extends(r = Chunk473749.Component) {
       previewWidth: e,
       animatedProgress: t
     } = this.state;
-    this._previewId = module.addListener(this.handlePreviewChange), this._progressId = exports.addListener(this.handleAnimatedChange)
+    this._previewId = e.addListener(this.handlePreviewChange), this._progressId = t.addListener(this.handleAnimatedChange)
   }
   componentWillUnmount() {
     let {
       previewWidth: e,
       animatedProgress: t
     } = this.state;
-    module.removeListener(this._previewId), exports.removeListener(this._progressId), window.removeEventListener("mouseup", this.handleDragEnd, false), window.removeEventListener("mousemove", this.handleDragMove, false)
+    e.removeListener(this._previewId), t.removeListener(this._progressId), window.removeEventListener("mouseup", this.handleDragEnd, false), window.removeEventListener("mousemove", this.handleDragMove, false)
   }
   componentDidUpdate(e, t) {
     let {
@@ -104,19 +104,19 @@ class m extends(r = Chunk473749.Component) {
       dragging: a,
       previewWidth: o,
       animatedProgress: u
-    } = this.state, d = Chunk473749 ? u : Chunk120356;
-    return (0, Chunk54381.jsx)("div", {
-      className: s()(require, exports === p.VOLUME ? Chunk192350.vertical : Chunk192350.horizontal),
-      children: (0, Chunk54381.jsx)("div", {
-        className: s()(r, Chunk473749 ? Chunk192350.mediaBarInteractionDragging : Chunk192350.mediaBarInteraction, exports === p.VOLUME ? Chunk192350.mediaBarInteractionVolume : null),
+    } = this.state, d = a ? u : o;
+    return (0, i.jsx)("div", {
+      className: s()(n, t === p.VOLUME ? c.vertical : c.horizontal),
+      children: (0, i.jsx)("div", {
+        className: s()(r, a ? c.mediaBarInteractionDragging : c.mediaBarInteraction, t === p.VOLUME ? c.mediaBarInteractionVolume : null),
         onMouseDown: this.handleDragStart,
         onMouseMove: this.handleMouseMove,
         ref: e => {
           this.wrapper = e
         },
-        children: (0, Chunk54381.jsxs)("div", {
-          className: s()(Chunk192350.mediaBarWrapper, exports === p.VOLUME ? Chunk192350.mediaBarWrapperVolume : null),
-          children: [null != module ? module.map((e, t) => {
+        children: (0, i.jsxs)("div", {
+          className: s()(c.mediaBarWrapper, t === p.VOLUME ? c.mediaBarWrapperVolume : null),
+          children: [null != e ? e.map((e, t) => {
             let [n, r] = e;
             return (0, i.jsx)("div", {
               className: c.buffer,
@@ -125,28 +125,28 @@ class m extends(r = Chunk473749.Component) {
                 left: "".concat(100 * n, "%")
               }
             }, t)
-          }) : null, exports === p.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-            className: Chunk192350.mediaBarPreview,
+          }) : null, t === p.DURATION ? (0, i.jsx)(l.Z.div, {
+            className: c.mediaBarPreview,
             style: {
-              width: Chunk120356.interpolate({
+              width: o.interpolate({
                 inputRange: [0, 1],
                 outputRange: ["0%", "100%"]
               })
             }
-          }) : null, (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-            className: Chunk192350.mediaBarProgress,
+          }) : null, (0, i.jsx)(l.Z.div, {
+            className: c.mediaBarProgress,
             style: {
               width: u.interpolate({
                 inputRange: [0, 1],
                 outputRange: ["0%", "100%"]
               })
             },
-            children: (0, Chunk54381.jsx)("span", {
-              className: Chunk192350.mediaBarGrabber
+            children: (0, i.jsx)("span", {
+              className: c.mediaBarGrabber
             })
-          }), exports === p.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+          }), t === p.DURATION ? (0, i.jsx)(l.Z.div, {
             ref: this.setBubbleRef,
-            className: Chunk192350.bubble,
+            className: c.bubble,
             style: {
               left: d.interpolate({
                 inputRange: [0, 1],

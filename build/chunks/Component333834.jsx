@@ -68,32 +68,32 @@ let T = [Chunk982183.KZ.UNREAD, Chunk982183.KZ.TODAY, Chunk982183.KZ.YESTERDAY, 
 function A() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTIFICATIONS_INBOX);
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk347344.emptyStateContainer,
-    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  } = (0, p.ZP)(h.Z.NOTIFICATIONS_INBOX);
+  return (0, r.jsx)("div", {
+    className: N.emptyStateContainer,
+    children: (0, r.jsxs)(d.Kqy, {
       gap: 24,
       align: "center",
-      children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      children: [(0, r.jsxs)(d.Kqy, {
         gap: 16,
         align: "center",
-        children: [(0, Chunk54381.jsx)(Chunk481060.xx7, {
+        children: [(0, r.jsx)(d.xx7, {
           size: "custom",
           height: 40,
           width: 40,
-          color: Chunk481060.TVs.colors.BACKGROUND_MOD_STRONG
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          color: d.TVs.colors.BACKGROUND_MOD_STRONG
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           style: {
             textAlign: "center"
           },
-          children: Chunk388032.intl.string(Chunk975114.default["O+racd"])
+          children: P.intl.string(I.default["O+racd"])
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, r.jsx)(d.Button, {
         variant: "secondary",
-        onClick: () => (0, Chunk370774.j4)(module),
-        text: Chunk388032.intl.string(Chunk975114.default.klSpfs)
+        onClick: () => (0, C.j4)(e),
+        text: P.intl.string(I.default.klSpfs)
       })]
     })
   })

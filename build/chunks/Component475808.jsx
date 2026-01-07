@@ -56,5 +56,5 @@ function d(e) {
 }
 
 function f() {
-  (0, Chunk481060.h7j)(e => (0, r.jsx)(d, u({}, e)))
+  (0, o.h7j)(e => (0, r.jsx)(d, u({}, e)))
 }

@@ -120,9 +120,9 @@ function w(e, t) {
 }
 
 function D() {
-  let e = Chunk287328.Z.database(),
-    t = (0, Chunk768433.O)() ? Chunk406966.Z.getCommittedVersions() : Promise.resolve({});
-  return Promise.all([exports, (0, Chunk768433.O)() ? Chunk591526.Z.getGuildIds() : Promise.resolve(new Set), null != module ? Chunk795513.Z.okAsync(module) : Promise.resolve(false)]).then(e => {
+  let e = s.Z.database(),
+    t = (0, f.O)() ? l.Z.getCommittedVersions() : Promise.resolve({});
+  return Promise.all([t, (0, f.O)() ? u.Z.getGuildIds() : Promise.resolve(new Set), null != e ? c.Z.okAsync(e) : Promise.resolve(false)]).then(e => {
     let [t, n, r] = e;
     return {
       guildVersions: t,

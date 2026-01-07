@@ -70,7 +70,7 @@ class b extends Chunk473749.PureComponent {
       offsetY: l,
       style: u
     } = this.props;
-    return (0, Chunk54381.jsx)(E, {
+    return (0, r.jsx)(E, {
       children: p => (0, r.jsx)(c.Z.Child, {
         grow: 0,
         className: o()(d.image, f.marginBottom40),

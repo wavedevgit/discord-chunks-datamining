@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function n() {
-  Chunk570140.Z.dispatch({
+  l.Z.dispatch({
     type: "APPLICATION_STORE_ACCEPT_STORE_TERMS"
   })
 }

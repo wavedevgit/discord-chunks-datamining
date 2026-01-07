@@ -39,5 +39,5 @@ function o() {
     loadAudioFromFile: e.loadAudioFromFile,
     maxVolume: e.maxVolume,
     setMaxVolume: e.setMaxVolume
-  }), Chunk55160.X)
+  }), l.X)
 }

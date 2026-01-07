@@ -24,9 +24,9 @@ function m(e, t, n) {
 let h = (null != (a = null == (i = window) || null == (r = i.location) ? true : r.pathname) ? a : "").startsWith(Chunk981631.Z5c.ACTIVITIES) ? Chunk981631.Z5c.ACTIVITIES : null;
 
 function g() {
-  let e = Chunk55589.Z.getPrivateChannelIds(),
-    t = Chunk944486.Z.getChannelId(Chunk981631.ME);
-  (null != exports || null != module[0]) && (h = Chunk981631.Z5c.CHANNEL(Chunk981631.ME, null != exports ? exports : module[0]))
+  let e = p.Z.getPrivateChannelIds(),
+    t = f.Z.getChannelId(_.ME);
+  (null != t || null != e[0]) && (h = _.Z5c.CHANNEL(_.ME, null != t ? t : e[0]))
 }
 
 function E(e) {
@@ -38,8 +38,8 @@ function E(e) {
 }
 
 function b() {
-  if (null == h || !h.startsWith(Chunk981631.Z5c.APPLICATION_STORE)) returnfalse;
-  h = Chunk981631.Z5c.APPLICATION_STORE
+  if (null == h || !h.startsWith(_.Z5c.APPLICATION_STORE)) returnfalse;
+  h = _.Z5c.APPLICATION_STORE
 }
 
 function y(e) {
@@ -72,10 +72,10 @@ function v(e) {
 }
 class S extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk896797.Z, Chunk55589.Z, Chunk944486.Z, Chunk430824.Z, Chunk592125.Z)
+    this.waitFor(u.Z, p.Z, f.Z, d.Z, c.Z)
   }
   getHomeLink() {
-    return null != h ? h : Chunk896797.Z.fallbackRoute
+    return null != h ? h : u.Z.fallbackRoute
   }
 }
 m(S, "displayName", "AppViewStore");

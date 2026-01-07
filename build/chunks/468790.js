@@ -38,5 +38,5 @@ h.sham = true, module.exports = !a || Chunk779688(function() {
   var t;
   return y(y.call) || !y(Object) || !y(function() {
     t = true
-  }) || module
+  }) || t
 }) ? h : y

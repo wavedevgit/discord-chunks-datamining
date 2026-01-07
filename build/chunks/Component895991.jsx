@@ -32,33 +32,33 @@ function v(e, t, n) {
 }
 class y extends Chunk473749.PureComponent {
   componentDidMount() {
-    Chunk150063.Y(Chunk981631.Z5c.APPLICATION_LIBRARY), (0, Chunk3570.T)(Chunk186901.jE.LIBRARY), Chunk570140.Z.wait(() => (0, Chunk274616.o)()), (0, Chunk827837.N)(), null != this._scrollToOnMount && null != this._scrollerRef.current && this.scrollToRow(this._scrollToOnMount, this._scrollToPadding)
+    c.Y(_.Z5c.APPLICATION_LIBRARY), (0, f.T)(E.jE.LIBRARY), s.Z.wait(() => (0, u.o)()), (0, d.N)(), null != this._scrollToOnMount && null != this._scrollerRef.current && this.scrollToRow(this._scrollToOnMount, this._scrollToPadding)
   }
   renderToolbar() {
-    return (0, Chunk54381.jsx)(Chunk237919.Z, {})
+    return (0, r.jsx)(g.Z, {})
   }
   render() {
     let {
       includeUpdatesInScroller: e
-    } = this.state, t = (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsx)(Chunk410575.Z, {
-        section: Chunk981631.jXE.LIBRARY_INSTALL_MODULE,
-        children: (0, Chunk54381.jsx)(Chunk530151.Z, {
+    } = this.state, t = (0, r.jsx)("div", {
+      children: (0, r.jsx)(p.Z, {
+        section: _.jXE.LIBRARY_INSTALL_MODULE,
+        children: (0, r.jsx)(b.Z, {
           onHeightTallerThanHalfViewportChange: this.handleHeightTallerThanHalfViewportChange
         })
       })
     });
-    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk957657.Z, {
-        currentRoute: Chunk981631.Z5c.APPLICATION_LIBRARY,
+    return (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(m.Z, {
+        currentRoute: _.Z5c.APPLICATION_LIBRARY,
         renderToolbar: this.renderToolbar
-      }), module ? null : exports, (0, Chunk54381.jsxs)(Chunk481060.yWw, {
-        className: a()(Chunk575959.container, Chunk575959.scroller),
+      }), e ? null : t, (0, r.jsxs)(o.yWw, {
+        className: a()(O.container, O.scroller),
         ref: this._scrollerRef,
-        children: [module ? exports : null, (0, Chunk54381.jsx)(Chunk410575.Z, {
-          section: Chunk981631.jXE.LIBRARY_APPLICATION_LIST,
-          children: (0, Chunk54381.jsx)(Chunk665307.Z, {
-            stickyHeader: !module,
+        children: [e ? t : null, (0, r.jsx)(p.Z, {
+          section: _.jXE.LIBRARY_APPLICATION_LIST,
+          children: (0, r.jsx)(h.Z, {
+            stickyHeader: !e,
             scrollToRow: this.scrollToRow
           })
         })]

@@ -59,7 +59,7 @@ function y(e, t) {
 }
 class O extends Chunk81825.Z {
   get createdAt() {
-    return new Date(Chunk709054.default.extractTimestamp(this.id))
+    return new Date(_.default.extractTimestamp(this.id))
   }
   hasVerifiedEmailOrPhone() {
     returntrue === this.verified || null != this.phone
@@ -133,50 +133,50 @@ class O extends Chunk81825.Z {
   }
   hasHadPremium() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-      t = this.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_0),
-      n = this.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_1),
-      r = this.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_2);
-    switch (module) {
-      case Chunk474936.PremiumTypes.TIER_0:
-        return exports;
-      case Chunk474936.PremiumTypes.TIER_1:
-        return require;
-      case Chunk474936.PremiumTypes.TIER_2:
-        return Chunk149765;
+      t = this.hasPurchasedFlag(h.in.PREMIUM_TIER_0),
+      n = this.hasPurchasedFlag(h.in.PREMIUM_TIER_1),
+      r = this.hasPurchasedFlag(h.in.PREMIUM_TIER_2);
+    switch (e) {
+      case h.PremiumTypes.TIER_0:
+        return t;
+      case h.PremiumTypes.TIER_1:
+        return n;
+      case h.PremiumTypes.TIER_2:
+        return r;
       default:
-        return exports || require || Chunk149765
+        return t || n || r
     }
   }
   hadPremiumSubscription() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
-    return !(0, Chunk111361.I5)(this) && this.hasHadPremium(module)
+    return !(0, p.I5)(this) && this.hasHadPremium(e)
   }
   hasFreePremium() {
-    return this.isStaff() || this.hasFlag(Chunk981631.xW$.PARTNER) || this.isStaffPersonal()
+    return this.isStaff() || this.hasFlag(m.xW$.PARTNER) || this.isStaffPersonal()
   }
   isPremiumWithPremiumGroup() {
     var e;
-    return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : module.premiumSource) === Chunk813820.d3.SUBSCRIPTION_GROUP
+    return (0, p.I5)(this, h.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : e.premiumSource) === a.d3.SUBSCRIPTION_GROUP
   }
   isPremiumWithFractionalPremiumOnly() {
     var e, t, n;
-    return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && ((null == (e = this.premiumState) ? true : module.premiumSubscriptionType) === Chunk813820.W$.NONE_UNSPECIFIED || (null == (t = this.premiumState) ? true : exports.premiumSubscriptionType) === Chunk813820.W$.BOOST_ONLY) && (null == (n = this.premiumState) ? true : require.premiumSource) === Chunk813820.d3.FRACTIONAL_NITRO
+    return (0, p.I5)(this, h.PremiumTypes.TIER_2) && ((null == (e = this.premiumState) ? true : e.premiumSubscriptionType) === a.W$.NONE_UNSPECIFIED || (null == (t = this.premiumState) ? true : t.premiumSubscriptionType) === a.W$.BOOST_ONLY) && (null == (n = this.premiumState) ? true : n.premiumSource) === a.d3.FRACTIONAL_NITRO
   }
   isFractionalPremiumWithNoSubscription() {
     var e;
-    return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : module.premiumSource) === Chunk813820.d3.FRACTIONAL_NITRO && this.premiumState.premiumSubscriptionType !== Chunk813820.W$.TIER_2
+    return (0, p.I5)(this, h.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : e.premiumSource) === a.d3.FRACTIONAL_NITRO && this.premiumState.premiumSubscriptionType !== a.W$.TIER_2
   }
   hasUrgentMessages() {
-    return this.hasFlag(Chunk981631.xW$.HAS_UNREAD_URGENT_MESSAGES)
+    return this.hasFlag(m.xW$.HAS_UNREAD_URGENT_MESSAGES)
   }
   isNonUserBot() {
-    return this.isSystemUser() || this.bot && this.discriminator === Chunk981631.fo$
+    return this.isSystemUser() || this.bot && this.discriminator === m.fo$
   }
   isLocalBot() {
-    return this.bot && this.id === Chunk981631.LAt
+    return this.bot && this.id === m.LAt
   }
   isVerifiedBot() {
-    return this.isSystemUser() || this.isLocalBot() || this.hasFlag(Chunk981631.xW$.VERIFIED_BOT)
+    return this.isSystemUser() || this.isLocalBot() || this.hasFlag(m.xW$.VERIFIED_BOT)
   }
   isSystemUser() {
     returntrue === this.system
@@ -188,13 +188,13 @@ class O extends Chunk81825.Z {
     return "0" === this.discriminator
   }
   isPremiumGroupMember() {
-    return this.isPremiumWithPremiumGroup() && this.premiumGroupRole === Chunk813820.bF.MEMBER
+    return this.isPremiumWithPremiumGroup() && this.premiumGroupRole === a.bF.MEMBER
   }
   isPremiumGroupPrimary() {
-    return this.isPremiumWithPremiumGroup() && this.premiumGroupRole === Chunk813820.bF.PRIMARY
+    return this.isPremiumWithPremiumGroup() && this.premiumGroupRole === a.bF.PRIMARY
   }
   get isProvisional() {
-    return this.hasFlag(Chunk981631.xW$.PROVISIONAL_ACCOUNT)
+    return this.hasFlag(m.xW$.PROVISIONAL_ACCOUNT)
   }
   get avatarDecoration() {
     return this.avatarDecorationData
@@ -204,11 +204,11 @@ class O extends Chunk81825.Z {
   }
   get nameplate() {
     var e;
-    return (0, Chunk4242.Pb)(null == (e = this.collectibles) ? true : module.nameplate)
+    return (0, u.Pb)(null == (e = this.collectibles) ? true : e.nameplate)
   }
   get premiumGroupRole() {
     var e, t;
-    return null != (t = null == (e = this.premiumState) ? true : module.premiumSubscriptionGroupRole) ? exports : Chunk813820.bF.UNSPECIFIED
+    return null != (t = null == (e = this.premiumState) ? true : e.premiumSubscriptionGroupRole) ? t : a.bF.UNSPECIFIED
   }
   constructor(e) {
     var t, n, i, a, o, s, u, f, p, _, h, E, b, y, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M, k, U, G, Z;

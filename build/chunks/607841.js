@@ -30,29 +30,29 @@ function E(e, t, n) {
 }
 
 function b() {
-  return Chunk403011.Z.getCurrentConfig({
+  return h.Z.getCurrentConfig({
     location: "NativeIntentsManager"
   }, {
     autoTrackExposure: true,
-    disable: !Chunk495527.Z.hasSearch()
+    disable: !m.Z.hasSearch()
   }).searchEnabled
 }
 
 function y() {
-  return Chunk403011.Z.getCurrentConfig({
+  return h.Z.getCurrentConfig({
     location: "NativeIntentsManager"
   }, {
     autoTrackExposure: true,
-    disable: !Chunk495527.Z.hasSearch()
+    disable: !m.Z.hasSearch()
   }).clearEnabled
 }
 
 function O() {
-  return Chunk403011.Z.getCurrentConfig({
+  return h.Z.getCurrentConfig({
     location: "NativeIntentsManager"
   }, {
     autoTrackExposure: true,
-    disable: !Chunk495527.Z.hasUserActivity()
+    disable: !m.Z.hasUserActivity()
   }).activityEnabled
 }
 
@@ -168,17 +168,17 @@ function A(e) {
 
 function N() {
   if (!b()) return;
-  let e = Chunk430824.Z.getGuildsArray().map(e => T(e)),
+  let e = s.Z.getGuildsArray().map(e => T(e)),
     t = [],
-    n = Chunk592125.Z.getMutablePrivateChannels();
-  for (let e in require) {
-    let r = require[module];
-    exports.push(S(Chunk147913))
+    n = o.Z.getMutablePrivateChannels();
+  for (let e in n) {
+    let r = n[e];
+    t.push(S(r))
   }
-  module.push({
-    id: Chunk981631.ME,
-    items: exports
-  }), Chunk495527.Z.indexDomains(module)
+  e.push({
+    id: g.ME,
+    items: t
+  }), m.Z.indexDomains(e)
 }
 
 function P(e) {
@@ -213,10 +213,10 @@ function R(e) {
 }
 class w extends Chunk147913.Z {
   handleInit() {
-    A(Chunk944486.Z.getCurrentlySelectedChannelId()), y() && Chunk495527.Z.clearSearchIndex(), b() && N()
+    A(u.Z.getCurrentlySelectedChannelId()), y() && m.Z.clearSearchIndex(), b() && N()
   }
   handleLogout() {
-    y() && Chunk495527.Z.clearSearchIndex()
+    y() && m.Z.clearSearchIndex()
   }
   handleChannelSelect(e) {
     let {

@@ -10,7 +10,7 @@ var Chunk473749 = require("./473749.js"),
 function a() {
   let {
     reducedMotion: e
-  } = Chunk473749.useContext(Chunk793030.Sfi), {
+  } = r.useContext(i.Sfi), {
     isOpen: t,
     setIsOpen: n,
     refs: a,
@@ -18,13 +18,13 @@ function a() {
     getReferenceProps: s,
     getFloatingProps: l,
     context: c
-  } = (0, Chunk793030.ON0)({
+  } = (0, i.ON0)({
     placement: "bottom",
     matchReferenceWidth: true,
-    transform: module.enabled
+    transform: e.enabled
   }), {
     styles: u
-  } = (0, Chunk793030.Y_D)(c, {
+  } = (0, i.Y_D)(c, {
     common: {
       transformOrigin: "top center"
     },
@@ -35,12 +35,12 @@ function a() {
     duration: 100
   });
   return {
-    isOpen: exports,
-    setIsOpen: require,
+    isOpen: t,
+    setIsOpen: n,
     refs: a,
     floatingStyles: o,
     getReferenceProps: s,
     getFloatingProps: l,
-    transitionStyles: module.enabled ? {} : u
+    transitionStyles: e.enabled ? {} : u
   }
 }

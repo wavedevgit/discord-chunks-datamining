@@ -16,44 +16,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk867182 = require("./867182.js");
 class p extends Chunk473749.PureComponent {
   componentDidMount() {
-    null != this.props.venmoClient && Chunk873115.by()
+    null != this.props.venmoClient && s.by()
   }
   componentWillUnmount() {
-    Chunk873115.RS().then(() => Chunk873115.ib())
+    s.RS().then(() => s.ib())
   }
   render() {
     let {
       venmoUsername: e,
       className: t,
       venmoClient: n
-    } = this.props, i = null != module && "" !== module;
-    return (0, Chunk54381.jsxs)("div", {
-      className: exports,
-      children: [(0, Chunk54381.jsx)(Chunk219929.ZP, {
-        type: Chunk219929.ZP.Types.VENMO,
-        size: Chunk219929.Uy.MEDIUM,
-        className: Chunk867182.venmoIcon
-      }), Chunk473749 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-          variant: module.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
-          className: Chunk867182.connectionInstructions,
-          children: Chunk388032.intl.format(Chunk388032.t.DowIre, {
-            venmoUsername: module
+    } = this.props, i = null != e && "" !== e;
+    return (0, r.jsxs)("div", {
+      className: t,
+      children: [(0, r.jsx)(l.ZP, {
+        type: l.ZP.Types.VENMO,
+        size: l.Uy.MEDIUM,
+        className: f.venmoIcon
+      }), i ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(o.Heading, {
+          variant: e.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
+          className: f.connectionInstructions,
+          children: d.intl.format(d.t.DowIre, {
+            venmoUsername: e
           })
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
-          className: Chunk867182.connectionInstructions,
-          children: Chunk388032.intl.string(Chunk388032.t.kmEvnR)
+          className: f.connectionInstructions,
+          children: d.intl.string(d.t.kmEvnR)
         })]
-      }) : (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }) : (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        className: Chunk867182.connectionInstructions,
-        children: null == require ? Chunk388032.intl.string(Chunk388032.t["2ouZDU"]) : Chunk388032.intl.string(Chunk388032.t.mIL6Jb)
+        className: f.connectionInstructions,
+        children: null == n ? d.intl.string(d.t["2ouZDU"]) : d.intl.string(d.t.mIL6Jb)
       })]
     })
   }
 }
 let _ = Chunk442837.ZP.connectStores([Chunk618541.Z, Chunk975060.Z], () => ({
-  venmoUsername: Chunk975060.Z.venmoUsername,
-  venmoClient: Chunk618541.Z.getVenmoClient()
+  venmoUsername: u.Z.venmoUsername,
+  venmoClient: c.Z.getVenmoClient()
 }))(p)

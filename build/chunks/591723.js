@@ -112,7 +112,7 @@ var O = function() {
   function e(t) {
     c(this, e), this.types = new Map, this.dragSources = new Map, this.dropTargets = new Map, this.pinnedSourceId = null, this.pinnedSource = null, this.store = t
   }
-  return d(module, [{
+  return d(e, [{
     key: "addSource",
     value: function(e, t) {
       (0, s.sM)(e), (0, s.up)(t);
@@ -184,7 +184,7 @@ var O = function() {
   }, {
     key: "unpinSource",
     value: function() {
-      (0, Chunk573654.k)(this.pinnedSource, "No source is pinned at the time."), this.pinnedSourceId = null, this.pinnedSource = null
+      (0, r.k)(this.pinnedSource, "No source is pinned at the time."), this.pinnedSourceId = null, this.pinnedSource = null
     }
   }, {
     key: "addHandler",
@@ -192,5 +192,5 @@ var O = function() {
       var r = E(e);
       return this.types.set(r, t), e === o.t.SOURCE ? this.dragSources.set(r, n) : e === o.t.TARGET && this.dropTargets.set(r, n), r
     }
-  }]), module
+  }]), e
 }()

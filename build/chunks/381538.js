@@ -13,7 +13,7 @@ module.exports = ! function() {
   try {
     if (!Object.assign) returnfalse;
     var e = new String("abc");
-    if (module[5] = "de", "5" === Object.getOwnPropertyNames(module)[0]) returnfalse;
+    if (e[5] = "de", "5" === Object.getOwnPropertyNames(e)[0]) returnfalse;
     for (var t = {}, n = 0; n < 10; n++) t["_" + String.fromCharCode(n)] = n;
     var r = Object.getOwnPropertyNames(t).map(function(e) {
       return t[e]

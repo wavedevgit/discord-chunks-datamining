@@ -106,7 +106,7 @@ function j(e) {
     fireOnMount: true
   }), R = (0, c.e7)([b.Z], () => b.Z.quests);
   return i.useEffect(() => {
-    h.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)), {
+    m.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, h.mH)(_.jn.QUEST_HOME_TAKEOVER)), {
       quest_id: t.campaignId,
       is_targeted: false
     }))
@@ -155,12 +155,12 @@ function j(e) {
           }), (0, r.jsxs)(u.ButtonGroup, {
             children: [(0, r.jsx)(u.Button, {
               onClick: () => {
-                (0, f.Z)(t.ctaSponsorUrl.url), h.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
+                (0, f.Z)(t.ctaSponsorUrl.url), m.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
-                  cta_name: m.jZ.OPEN_GAME_LINK,
+                  cta_name: h.jZ.OPEN_GAME_LINK,
                   click_id: (0, s.Z)(),
                   is_targeted: false
-                }, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)))
+                }, (0, h.mH)(_.jn.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: t.ctaSponsorUrl.title,
@@ -173,12 +173,12 @@ function j(e) {
                   (0, E.navigateToQuestHome)({
                     questId: e.questId
                   })
-                }), h.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
+                }), m.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
-                  cta_name: m.jZ.LEARN_MORE,
+                  cta_name: h.jZ.LEARN_MORE,
                   click_id: (0, s.Z)(),
                   is_targeted: false
-                }, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)))
+                }, (0, h.mH)(_.jn.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: e.title,
@@ -194,8 +194,8 @@ function j(e) {
 }
 
 function P() {
-  return (0, Chunk54381.jsx)("div", {
-    className: a()(Chunk550601.wrapper, Chunk550601.contentWrapper, Chunk550601.contentWrapperLoading),
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  return (0, r.jsx)("div", {
+    className: a()(C.wrapper, C.contentWrapper, C.contentWrapperLoading),
+    children: (0, r.jsx)(u.$jN, {})
   })
 }

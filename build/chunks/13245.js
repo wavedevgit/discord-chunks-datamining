@@ -72,10 +72,10 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       })
     },
     overlayMounted() {
-      for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-      Chunk570140.Z.dispatch({
+      for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+      i.Z.dispatch({
         type: "OVERLAY_MOUNTED",
-        nudges: exports
+        nudges: t
       })
     },
     setFocusedPID(e, t) {
@@ -116,7 +116,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       })
     },
     clearTrackedPids() {
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "OVERLAY_RENDER_DEBUG_CLEAR_TRACKED_PIDS"
       })
     },
@@ -209,13 +209,13 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       })
     },
     disableExternalLinkAlert() {
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "OVERLAY_DISABLE_EXTERNAL_LINK_ALERT"
       })
     },
     startSession() {
       if (!__OVERLAY__) return void v.error("Attempting to start an overlay session outside of the overlay context");
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "OVERLAY_START_SESSION"
       })
     },
@@ -226,7 +226,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       })
     },
     deactivateAllRegions() {
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "OVERLAY_DEACTIVATE_ALL_REGIONS"
       })
     },

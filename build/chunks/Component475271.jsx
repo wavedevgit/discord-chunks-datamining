@@ -85,6 +85,6 @@ let c = {
     })
   },
   useIsCaptchaModalOpen: function() {
-    return (0, Chunk481060.s9z)(e => (0, a.DEQ)(e, s.A))
+    return (0, a.s9z)(e => (0, a.DEQ)(e, s.A))
   }
 }

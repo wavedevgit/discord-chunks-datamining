@@ -46,7 +46,7 @@ class w extends Chunk473749.Component {
     let {
       guildId: e
     } = this.props;
-    null != module && (0, Chunk179360.C0)(module), window.addEventListener("resize", this.measure)
+    null != e && (0, f.C0)(e), window.addEventListener("resize", this.measure)
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.measure)
@@ -87,18 +87,18 @@ class w extends Chunk473749.Component {
     })
   }
   renderTierNone() {
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk391847.tierDefaultUnlocked,
+    return (0, r.jsxs)("div", {
+      className: _.tierDefaultUnlocked,
       ref: this.defaultTierRef,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: [(0, r.jsx)(g.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        children: Chunk388032.intl.string(Chunk388032.t["76OoX8"])
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: S.intl.string(S.t["76OoX8"])
+      }), (0, r.jsx)(g.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        className: Chunk391847.tierDefaultUnlockedDescription,
-        children: Chunk388032.intl.string(Chunk388032.t.DaYNQQ)
+        className: _.tierDefaultUnlockedDescription,
+        children: S.intl.string(S.t.DaYNQQ)
       })]
     })
   }
@@ -108,19 +108,19 @@ class w extends Chunk473749.Component {
       uniqueSubscriberCount: t,
       guildId: n
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, r.jsxs)("div", {
       ref: this.defaultTierRef,
-      className: Chunk391847.subscribers,
-      children: [(0, Chunk54381.jsx)(Chunk237583.Z, {
-        guildId: null != require ? require : true,
-        users: module,
+      className: _.subscribers,
+      children: [(0, r.jsx)(j.Z, {
+        guildId: null != n ? n : true,
+        users: e,
         renderUser: this.renderSubscriber,
         renderMoreUsers: this.renderMoreSubscribers,
         max: 5
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk391847.subscriberCount,
-        children: Chunk388032.intl.format(Chunk388032.t["0r7snZ"], {
-          count: exports
+      }), (0, r.jsx)("div", {
+        className: _.subscriberCount,
+        children: S.intl.format(S.t["0r7snZ"], {
+          count: t
         })
       })]
     })
@@ -133,14 +133,14 @@ class w extends Chunk473749.Component {
       uniqueSubscriberCount: i,
       tiers: l
     } = this.props;
-    return null == require ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      type: Chunk481060.$jN.Type.SPINNING_CIRCLE
-    }) : null == module ? null : (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk391847.content,
-        children: [this.renderProgressBar(Chunk120356), (0, Chunk54381.jsxs)("div", {
-          className: Chunk391847.tiers,
-          children: [0 === Chunk473749 ? this.renderTierNone() : this.renderSubscribers(), Chunk120356.map((r, i, l) => t({
+    return null == n ? (0, r.jsx)(g.$jN, {
+      type: g.$jN.Type.SPINNING_CIRCLE
+    }) : null == e ? null : (0, r.jsx)("div", {
+      children: (0, r.jsxs)("div", {
+        className: _.content,
+        children: [this.renderProgressBar(l), (0, r.jsxs)("div", {
+          className: _.tiers,
+          children: [0 === i ? this.renderTierNone() : this.renderSubscribers(), l.map((r, i, l) => t({
             tier: r,
             tiers: l,
             tierIndex: i,
@@ -252,20 +252,20 @@ class w extends Chunk473749.Component {
 }
 let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.Z, Chunk899667.Z, Chunk594174.default, Chunk271383.ZP], () => {
   var e, t;
-  let n = Chunk999382.Z.getGuildId(),
-    r = null != (t = null == (e = Chunk430824.Z.getGuild(require)) ? true : module.premiumTier) ? exports : Chunk981631.Eu4.NONE,
-    i = (0, Chunk151494.I)(require),
-    l = null != require ? Chunk899667.Z.getAppliedGuildBoostsForGuild(require) : null,
-    a = o()(null != Chunk120356 ? Chunk120356 : []).uniqBy(e => e.userId),
+  let n = b.Z.getGuildId(),
+    r = null != (t = null == (e = C.Z.getGuild(n)) ? true : e.premiumTier) ? t : I.Eu4.NONE,
+    i = (0, h.I)(n),
+    l = null != n ? v.Z.getAppliedGuildBoostsForGuild(n) : null,
+    a = o()(null != l ? l : []).uniqBy(e => e.userId),
     s = a.map(e => ({
       user: y.default.getUser(e.userId),
       nick: O.ZP.getNick(n, e.userId)
     })).filter(e => null != e.user).value();
   return {
-    guildId: require,
-    currentTier: Chunk54381,
-    levelSubscriptionCount: Chunk473749,
-    subscribers: Chunk392711,
+    guildId: n,
+    currentTier: r,
+    levelSubscriptionCount: i,
+    subscribers: s,
     uniqueSubscriberCount: a.size()
   }
 })(w)

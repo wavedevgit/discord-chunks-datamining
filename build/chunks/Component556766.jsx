@@ -74,30 +74,30 @@ function C() {
 }
 
 function A() {
-  let e = (0, Chunk442837.Wu)([Chunk340895.Z, Chunk944486.Z, Chunk317381.ZP], () => Chunk340895.Z.getIncomingCalls().filter(e => {
+  let e = (0, l.Wu)([g.Z, m.Z, u.ZP], () => g.Z.getIncomingCalls().filter(e => {
       let {
         channel: t
       } = e, n = m.Z.getChannelId() === t.id, r = null == t.guild_id && n, i = u.ZP.getConnectedActivityChannelId() === t.id && m.Z.getVoiceChannelId() !== t.id && u.ZP.getActivityPanelMode() === E.Ez.PANEL;
       return !r || i
     })),
-    t = (0, Chunk442837.e7)([Chunk340895.Z], () => Chunk340895.Z.hasIncomingCalls()),
-    n = (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.isSoundDisabled("call_ringing")),
-    a = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.disableSounds),
-    o = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
-    y = Chunk473749.useRef(false),
-    v = (0, Chunk35387.Z)(() => {
+    t = (0, l.e7)([g.Z], () => g.Z.hasIncomingCalls()),
+    n = (0, l.e7)([_.Z], () => _.Z.isSoundDisabled("call_ringing")),
+    a = (0, l.e7)([h.Z], () => h.Z.disableSounds),
+    o = (0, l.e7)([p.Z], () => p.Z.getSoundpack()),
+    y = i.useRef(false),
+    v = (0, s.Z)(() => {
       let e = "call_ringing";
-      return o === Chunk871465.Y.CLASSIC ? (0, Chunk460181.tu)(C(), module) : (0, Chunk460181.uk)("call_ringing", o)
+      return o === b.Y.CLASSIC ? (0, f.tu)(C(), e) : (0, f.uk)("call_ringing", o)
     }, [o]);
-  return Chunk473749.useEffect(() => () => {
+  return i.useEffect(() => () => {
     v.stop()
-  }, [v]), Chunk473749.useEffect(() => {
-    if (Chunk392711 || require) {
+  }, [v]), i.useEffect(() => {
+    if (a || n) {
       y.current && (v.stop(), y.current = false);
       return
     }
-    exports && !y.current ? (v.loop(), y.current = true) : !exports && y.current && (v.stop(), y.current = false)
-  }, [require, Chunk392711, exports, v]), (0, Chunk481060.Yzy)(module, {
+    t && !y.current ? (v.loop(), y.current = true) : !t && y.current && (v.stop(), y.current = false)
+  }, [n, a, t, v]), (0, c.Yzy)(e, {
     keys: e => {
       var t;
       return null == (t = e.channel) ? true : t.id

@@ -14,16 +14,16 @@ var Chunk990547 = require("./990547.js"),
     CONNECTION_OPEN: e => r.AnalyticsActionHandlers.handleConnectionOpen(e),
     OVERLAY_INITIALIZE: e => r.AnalyticsActionHandlers.handleConnectionOpen(e),
     CURRENT_USER_UPDATE: e => r.AnalyticsActionHandlers.handleConnectionOpen(e),
-    CONNECTION_CLOSED: () => Chunk990547.AnalyticsActionHandlers.handleConnectionClosed(),
-    FINGERPRINT: () => Chunk990547.AnalyticsActionHandlers.handleFingerprint(),
+    CONNECTION_CLOSED: () => r.AnalyticsActionHandlers.handleConnectionClosed(),
+    FINGERPRINT: () => r.AnalyticsActionHandlers.handleFingerprint(),
     TRACK: e => r.AnalyticsActionHandlers.handleTrack(e)
   },
   TRACKING_URL: Chunk981631.ANM.TRACK,
   waitFor: [Chunk314897.default],
   getFingerprint: Chunk314897.default.getFingerprint,
-  getSessionId: () => (0, Chunk912471.Gg)().then(e => ({
+  getSessionId: () => (0, o.Gg)().then(e => ({
     sessionId: null == e ? true : e.uuid
   })),
-  getLaunchSignature: () => Chunk626135.launchSignature,
+  getLaunchSignature: () => s.launchSignature,
   scheduleWhenIdle: Chunk761699.f
 })

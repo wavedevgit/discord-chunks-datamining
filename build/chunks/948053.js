@@ -59,30 +59,30 @@ let d = {
       isReloading: t,
       forceRefresh: n
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-    if ((0, Chunk613928.rK)("fetchDehydrated")) {
-      exports && Chunk570140.Z.dispatch({
+    if ((0, s.rK)("fetchDehydrated")) {
+      t && i.Z.dispatch({
         type: "ICYMI_SET_REFRESHING",
         refreshing: true
       });
       try {
         let l = Date.now(),
-          a = await Chunk544891.tn.get({
-            url: Chunk981631.ANM.GRAVITY_ITEMS_DEHYDRATED,
+          a = await r.tn.get({
+            url: c.ANM.GRAVITY_ITEMS_DEHYDRATED,
             query: {
-              refresh: require
+              refresh: n
             },
             rejectWithError: false
           });
-        await Chunk570140.Z.dispatch({
+        await i.Z.dispatch({
           type: "LOAD_ICYMI_DEHYDRATED",
-          items: Chunk960048.body.items,
-          loadId: Chunk960048.body.load_id,
-          startTime: Chunk695346,
-          isReloading: exports,
-          isInitialLoad: module
+          items: a.body.items,
+          loadId: a.body.load_id,
+          startTime: l,
+          isReloading: t,
+          isInitialLoad: e
         })
       } catch (e) {
-        Chunk960048.Z.captureException(module)
+        a.Z.captureException(e)
       }
     }
   },
@@ -180,52 +180,52 @@ let d = {
     }
   },
   async getGuildChannelScores() {
-    if ((0, Chunk613928.rK)("guildChannelScores")) try {
-      let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.GRAVITY_CUSTOM_SCORES,
+    if ((0, s.rK)("guildChannelScores")) try {
+      let e = await r.tn.get({
+        url: c.ANM.GRAVITY_CUSTOM_SCORES,
         rejectWithError: false
       });
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "LOAD_ICYMI_CUSTOM_SCORES",
-        scores: module.body
+        scores: e.body
       })
     } catch (e) {
-      Chunk960048.Z.captureException(module)
+      a.Z.captureException(e)
     }
   },
   async getRecommendedGuilds() {
-    if ((0, Chunk613928.rK)("recommendedGuilds")) try {
-      let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.GRAVITY_RECOMMENDED_GUILDS,
+    if ((0, s.rK)("recommendedGuilds")) try {
+      let e = await r.tn.get({
+        url: c.ANM.GRAVITY_RECOMMENDED_GUILDS,
         rejectWithError: false
       });
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "LOAD_ICYMI_RECOMMENDED_GUILDS",
-        guilds: module.body.guilds
+        guilds: e.body.guilds
       })
     } catch (e) {
-      Chunk960048.Z.captureException(module)
+      a.Z.captureException(e)
     }
   },
   async getMediaForCurrentStatus() {
-    if (!(0, Chunk613928.rK)("mediaForCurrentStatus")) return;
-    let e = Chunk695346.Ok.getSetting();
-    if (null != module && null != module.createdAtMs) try {
-      let t = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.GRAVITY_ATTACHMENTS,
+    if (!(0, s.rK)("mediaForCurrentStatus")) return;
+    let e = l.Ok.getSetting();
+    if (null != e && null != e.createdAtMs) try {
+      let t = await r.tn.get({
+        url: c.ANM.GRAVITY_ATTACHMENTS,
         rejectWithError: false
       });
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "LOAD_ICYMI_CURRENT_STATUS_MEDIA",
-        attachments: exports.body.attachments,
-        createdAtMs: Number(module.createdAtMs)
+        attachments: t.body.attachments,
+        createdAtMs: Number(e.createdAtMs)
       })
     } catch (e) {
-      Chunk960048.Z.captureException(module)
+      a.Z.captureException(e)
     }
   },
   reloadICYMITab() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "RELOAD_ICYMI"
     })
   },
@@ -236,12 +236,12 @@ let d = {
     })
   },
   openICYMITab() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "ICYMI_TAB_OPENED"
     })
   },
   closeICYMITab() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "ICYMI_TAB_CLOSED"
     })
   },
@@ -270,13 +270,13 @@ let d = {
     type: "SET_ICYMI_FILTERS",
     filters: e
   }),
-  giveFeedback: () => Chunk570140.Z.dispatch({
+  giveFeedback: () => i.Z.dispatch({
     type: "ICYMI_FEEDBACK_GIVEN"
   }),
-  clearReadStates: () => Chunk570140.Z.dispatch({
+  clearReadStates: () => i.Z.dispatch({
     type: "CLEAR_ICYMI_READ_STATES"
   }),
-  addedRecommendedGuild: () => Chunk570140.Z.dispatch({
+  addedRecommendedGuild: () => i.Z.dispatch({
     type: "ICYMI_JOINED_RECOMMENDED_GUILD"
   }),
   setVideosMuted(e) {
@@ -300,9 +300,9 @@ let d = {
   },
   takeSurvey() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Date.now();
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "ICYMI_TAKE_SURVEY",
-      takenAt: module
+      takenAt: e
     })
   },
   itemInteracted(e, t, n) {

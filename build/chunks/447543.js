@@ -377,10 +377,10 @@ let eS = {
       error: e
     }), e
   })),
-  revokeFriendInvites: () => (Chunk570140.Z.dispatch({
+  revokeFriendInvites: () => (_.Z.dispatch({
     type: "FRIEND_INVITE_REVOKE_REQUEST"
-  }), Chunk544891.tn.del({
-    url: Chunk981631.ANM.FRIEND_INVITES,
+  }), d.tn.del({
+    url: ee.ANM.FRIEND_INVITES,
     context: {
       location
     },

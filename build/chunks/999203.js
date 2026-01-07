@@ -4,7 +4,7 @@
 require.d(exports, {
   PQ: () => p,
   ZP: () => h,
-  e3: () => Chunk639745.e3
+  e3: () => f.e3
 });
 var Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
@@ -18,50 +18,50 @@ var Chunk473749 = require("./473749.js"),
   Chunk639745 = require("./639745.js");
 let p = "data-client-themes",
   _ = () => {
-    let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
-    return Chunk473749.useMemo(() => {
-      if (null == module) return null;
-      let t = Chunk514361.Z.getLinearGradient();
-      return null == exports ? null : (0, Chunk639745.yf)(module, exports)
-    }, [module])
+    let e = (0, s.e7)([d.Z], () => d.Z.gradientPreset);
+    return r.useMemo(() => {
+      if (null == e) return null;
+      let t = d.Z.getLinearGradient();
+      return null == t ? null : (0, f.yf)(e, t)
+    }, [e])
   };
 
 function m() {
-  let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
+  let e = (0, s.e7)([l.Z], () => l.Z.theme),
     {
       colors: t,
       chassisMixAmount: n,
       gradientAngle: i,
       setAll: a
-    } = (0, Chunk233398.Ig)(),
-    d = (0, Chunk442837.e7)([Chunk581883.Z], () => {
+    } = (0, u.Ig)(),
+    d = (0, s.e7)([c.Z], () => {
       var e, t;
-      return null == (t = Chunk581883.Z.settings.appearance) || null == (e = exports.clientThemeSettings) ? true : module.customUserThemeSettings
+      return null == (t = c.Z.settings.appearance) || null == (e = t.clientThemeSettings) ? true : e.customUserThemeSettings
     }),
-    p = Chunk473749.useRef(true);
-  return Chunk473749.useEffect(() => {
-    if (!(0, Chunk392711.isEqual)(Chunk514361, p.current)) {
+    p = r.useRef(true);
+  return r.useEffect(() => {
+    if (!(0, o.isEqual)(d, p.current)) {
       var e, t, n;
-      p.current = Chunk514361, a({
-        colors: null != (e = null == Chunk514361 ? true : Chunk514361.colors) ? module : [],
-        gradientAngle: null != (t = null == Chunk514361 ? true : Chunk514361.gradientAngle) ? exports : 0,
-        chassisMixAmount: null != (n = null == Chunk514361 ? true : Chunk514361.baseMix) ? require : Chunk233398.BH
+      p.current = d, a({
+        colors: null != (e = null == d ? true : d.colors) ? e : [],
+        gradientAngle: null != (t = null == d ? true : d.gradientAngle) ? t : 0,
+        chassisMixAmount: null != (n = null == d ? true : d.baseMix) ? n : u.BH
       })
     }
-  }, [Chunk514361, a]), Chunk473749.useMemo(() => 0 === exports.length ? null : (0, Chunk639745.gj)(exports, Chunk120356, require, module), [exports, require, Chunk120356, module])
+  }, [d, a]), r.useMemo(() => 0 === t.length ? null : (0, f.gj)(t, i, n, e), [t, n, i, e])
 }
 
 function h() {
   let e = _(),
     t = m();
-  return null != exports ? {
-    clientThemesCSS: exports,
-    clientThemesClassName: a()(Chunk639745.e3, Chunk639745.pX)
-  } : null === module ? {
+  return null != t ? {
+    clientThemesCSS: t,
+    clientThemesClassName: a()(f.e3, f.pX)
+  } : null === e ? {
     clientThemesCSS: "",
     clientThemesClassName: ""
   } : {
-    clientThemesCSS: module,
-    clientThemesClassName: Chunk639745.e3
+    clientThemesCSS: e,
+    clientThemesClassName: f.e3
   }
 }

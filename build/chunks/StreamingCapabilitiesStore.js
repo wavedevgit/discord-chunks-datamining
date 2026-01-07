@@ -15,7 +15,7 @@ let g = false,
   f = false;
 class m extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    !Chunk358085.isPlatformEmbedded || __OVERLAY__ || Chunk998502.ZP.getGPUDriverVersions().then(e => {
+    !s.isPlatformEmbedded || __OVERLAY__ || u.ZP.getGPUDriverVersions().then(e => {
       g = (0, c.Z)(e), Z = (0, o.Z)(e), f = (0, d.Z)(e), this.emitChange()
     })
   }

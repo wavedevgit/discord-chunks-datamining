@@ -58,16 +58,16 @@ async function m() {
     outOfProcessOverlay: true,
     focusable: false
   };
-  (0, Chunk765250.te)(Chunk757744.$S, Chunk355863.Z.getDefaultLayout(Chunk757744.$S, Chunk757744.HN), Chunk757744.HN);
-  let t = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("53870"), require.e("37472"), require.e("90508"), require.e("43342"), require.e("39206"), require.e("48615"), require.e("60831"), require.e("83243"), require.e("50751"), require.e("29709"), require.e("84983"), require.e("13368")]).then(require.bind(require, 989373)),
+  (0, o.te)(c.$S, l.Z.getDefaultLayout(c.$S, c.HN), c.HN);
+  let t = (0, i.Un)({
+    createPromise: () => Promise.all([n.e("53870"), n.e("37472"), n.e("90508"), n.e("43342"), n.e("39206"), n.e("48615"), n.e("60831"), n.e("83243"), n.e("50751"), n.e("29709"), n.e("84983"), n.e("13368")]).then(n.bind(n, 989373)),
     webpackId: 989373,
     name: "AppOverlay"
   });
-  await Chunk788983.open(Chunk501787.$J, e => (0, r.jsx)(t, {
+  await s.open(u.$J, e => (0, r.jsx)(t, {
     withTitleBar: false,
     windowKey: e
-  }), module)
+  }), e)
 }
 
 function h(e, t) {

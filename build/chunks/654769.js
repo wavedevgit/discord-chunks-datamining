@@ -82,10 +82,10 @@ if (M && !k) {
 let G = new Chunk710845.Z("NotificationUtils"),
   Z = M && U || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
 async function F() {
-  if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) try {
-    return await Chunk998502.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
+  if (null === c.Z || true === c.Z ? true : c.Z.features.supports("notifications")) try {
+    return await R.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
   } catch (e) {
-    G.warn("Fetching native notification settings failed with error: ", module)
+    G.warn("Fetching native notification settings failed with error: ", e)
   }
   return null
 }
@@ -103,7 +103,7 @@ function V(e) {
 }
 async function H() {
   let e = await F();
-  return (null == module ? true : module.authorizationStatus) === "authorized" && (null == module ? true : module.sound) === true
+  return (null == e ? true : e.authorizationStatus) === "authorized" && (null == e ? true : e.sound) === true
 }
 
 function Y(e, t) {
@@ -127,7 +127,7 @@ let K = a().throttle(W, 1e3, {
 });
 
 function z() {
-  Chunk998502.ZP.flashFrame(false)
+  R.ZP.flashFrame(false)
 }
 M && (window.addEventListener("focus", z), Chunk998502.ZP.on("MAIN_WINDOW_FOCUS", z));
 let q = window.Notification;
@@ -141,7 +141,7 @@ if (k) {
       e()
     }
     close() {
-      null != module[this.id] && (delete module[this.id], Chunk998502.ZP.send("NOTIFICATION_CLOSE", this.id), this.onclose())
+      null != e[this.id] && (delete e[this.id], R.ZP.send("NOTIFICATION_CLOSE", this.id), this.onclose())
     }
     constructor(t, {
       body: n,
@@ -199,16 +199,16 @@ function X(e) {
   })
 }
 async function J() {
-  if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) {
+  if (null === c.Z || true === c.Z ? true : c.Z.features.supports("notifications")) {
     let e = await F();
-    return (null == module ? true : module.authorizationStatus) === "authorized" || (null == module ? true : module.authorizationStatus) === "provisional"
+    return (null == e ? true : e.authorizationStatus) === "authorized" || (null == e ? true : e.authorizationStatus) === "provisional"
   }
   return null != q && "granted" === q.permission
 }
 async function $() {
-  if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) {
+  if (null === c.Z || true === c.Z ? true : c.Z.features.supports("notifications")) {
     var e;
-    return (null == (e = await F()) ? true : module.authorizationStatus) !== "undetermined"
+    return (null == (e = await F()) ? true : e.authorizationStatus) !== "undetermined"
   }
   return null != q && "default" !== q.permission
 }

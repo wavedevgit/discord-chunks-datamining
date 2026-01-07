@@ -14,7 +14,7 @@ let T = Chunk313789.n.NOTIFICATIONS_ADVANCED_ACCORDION,
   S = (0, Chunk509613.CB)(T, {
     useTitle: t => t ? o.intl.string(o.t.RyimDk) : o.intl.string(o.t.CUICbO),
     useCollapsedSubtitle: function() {
-      return (0, Chunk323472.u)(T, {
+      return (0, i.u)(T, {
         formatter: t => {
           let {
             title: e,
@@ -24,9 +24,9 @@ let T = Chunk313789.n.NOTIFICATIONS_ADVANCED_ACCORDION,
         }
       })
     },
-    buildLayout: () => [Chunk291011.i, Chunk392231.F, Chunk271524.l]
+    buildLayout: () => [u.i, r.F, a.l]
   }),
   c = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_ADVANCED_CATEGORY, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["31DySj"]),
+    useTitle: () => o.intl.string(o.t["31DySj"]),
     buildLayout: () => [S]
   })

@@ -14,21 +14,21 @@ let c = function() {
   let {
     resetOnboardingExperience: e,
     resetQuestStatus: t
-  } = (0, Chunk52647.Z)();
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk295710.container,
-    children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+  } = (0, l.Z)();
+  return (0, a.jsx)("div", {
+    className: o.container,
+    children: (0, a.jsxs)(r.C3N, {
       label: "Virtual Currency Configuration",
       description: "Click the button below to reset your onboarding state for Virtual Currency.",
-      children: [(0, Chunk54381.jsx)("div", {
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      children: [(0, a.jsx)("div", {
+        children: (0, a.jsx)(r.Button, {
           text: "Reset Onboarding State",
           onClick: () => {
-            module(), exports(), (0, Chunk703656.uL)(Chunk981631.Z5c.APP)
+            e(), t(), (0, i.uL)(s.Z5c.APP)
           }
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.Wn, {
-        messageType: Chunk481060.QYI.INFO,
+      }), (0, a.jsx)(r.Wn, {
+        messageType: r.QYI.INFO,
         children: "Your may have to refresh your client after being redirected to the main application in order to see these"
       })]
     })

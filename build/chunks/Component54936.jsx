@@ -18,15 +18,15 @@ var Chunk120356 = require("./120356.js"),
 let p = {
   [Chunk981631.TaA.WINDOWS]: {
     icon: Chunk723851.Z,
-    getLabel: () => Chunk388032.intl.string(Chunk388032.t["0/xHFO"])
+    getLabel: () => d.intl.string(d.t["0/xHFO"])
   },
   [Chunk981631.TaA.MACOS]: {
     icon: Chunk732559.Z,
-    getLabel: () => Chunk388032.intl.string(Chunk388032.t.E4u4n5)
+    getLabel: () => d.intl.string(d.t.E4u4n5)
   },
   [Chunk981631.TaA.LINUX]: {
     icon: Chunk910111.Z,
-    getLabel: () => Chunk388032.intl.string(Chunk388032.t.tcawo3)
+    getLabel: () => d.intl.string(d.t.tcawo3)
   }
 };
 

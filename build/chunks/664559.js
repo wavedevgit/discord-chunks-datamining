@@ -9,22 +9,22 @@ var Chunk473749 = require("./473749.js"),
   Chunk429828 = require("./429828.js");
 
 function o() {
-  return Chunk768943.Z.getSavedMessages().map(e => e.saveData)
+  return i.Z.getSavedMessages().map(e => e.saveData)
 }
 
 function s() {
-  let [e, t] = Chunk473749.useState(o), n = Chunk473749.useRef(Chunk768943.Z.getIsStale());
-  return Chunk473749.useEffect(() => {
-    let e = Chunk768943.Z.getLastChanged();
+  let [e, t] = r.useState(o), n = r.useRef(i.Z.getIsStale());
+  return r.useEffect(() => {
+    let e = i.Z.getLastChanged();
 
     function r() {
-      let r = Chunk768943.Z.getLastChanged();
-      if (module !== Chunk473749) {
-        if (e = Chunk473749, require.current && !Chunk768943.Z.getIsStale()) {
-          require.current = false, exports(o());
+      let r = i.Z.getLastChanged();
+      if (e !== r) {
+        if (e = r, n.current && !i.Z.getIsStale()) {
+          n.current = false, t(o());
           return
         }
-        exports(e => {
+        t(e => {
           let t = [...e],
             n = new Map(i.Z.getSavedMessages().map(e => [e.saveData.messageId, e]));
           for (let r of e) n.has(r.messageId) ? n.delete(r.messageId) : t.splice(t.indexOf(r), 1);
@@ -33,8 +33,8 @@ function s() {
         })
       }
     }
-    return Chunk768943.Z.addChangeListener(Chunk473749), () => {
-      Chunk768943.Z.removeChangeListener(Chunk473749)
+    return i.Z.addChangeListener(r), () => {
+      i.Z.removeChangeListener(r)
     }
-  }, []), (0, Chunk429828.Z)(), module
+  }, []), (0, a.Z)(), e
 }

@@ -33,7 +33,7 @@ function s(e) {
 }
 
 function u() {
-  let e = Chunk473749.useContext(c);
-  if (null == module) throw Error("useGameWidgetExpandCollapse must be used within a GameWidgetExpandCollapseContextProvider");
-  return module
+  let e = i.useContext(c);
+  if (null == e) throw Error("useGameWidgetExpandCollapse must be used within a GameWidgetExpandCollapseContextProvider");
+  return e
 }

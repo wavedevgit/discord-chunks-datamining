@@ -114,5 +114,5 @@ function y(e) {
 }
 
 function O() {
-  return true !== require.g ? require.g : window
+  return true !== n.g ? n.g : window
 }

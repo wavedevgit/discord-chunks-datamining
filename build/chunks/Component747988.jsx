@@ -25,41 +25,41 @@ function g(t, e, i) {
 }
 class m extends Chunk473749.Component {
   componentDidMount() {
-    Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
-      type: Chunk981631.jXE.PAYMENT_AUTHENTICATION_MODAL
+    l.default.track(h.rMx.OPEN_MODAL, {
+      type: h.jXE.PAYMENT_AUTHENTICATION_MODAL
     })
   }
   componentWillUnmount() {
-    Chunk626135.default.track(Chunk981631.rMx.MODAL_DISMISSED, {
-      type: Chunk981631.jXE.PAYMENT_AUTHENTICATION_MODAL
+    l.default.track(h.rMx.MODAL_DISMISSED, {
+      type: h.jXE.PAYMENT_AUTHENTICATION_MODAL
     })
   }
   getTitle() {
     let {
       step: t
     } = this.state;
-    switch (module) {
+    switch (t) {
       case 0:
-        return Chunk388032.intl.string(Chunk388032.t.N65ZrW);
+        return p.intl.string(p.t.N65ZrW);
       case 2:
-        return Chunk388032.intl.string(Chunk388032.t.DPgrRk);
+        return p.intl.string(p.t.DPgrRk);
       case 3:
-        return Chunk388032.intl.string(Chunk388032.t.xypuIv);
+        return p.intl.string(p.t.xypuIv);
       default:
-        return Chunk388032.intl.string(Chunk388032.t.uEoQdA)
+        return p.intl.string(p.t.uEoQdA)
     }
   }
   getImageStyle() {
     let {
       step: t
     } = this.state;
-    switch (module) {
+    switch (t) {
       case 0:
-        return Chunk78678.authenticationRequiredImage;
+        return d.authenticationRequiredImage;
       case 2:
-        return Chunk78678.authenticationSuccessImage;
+        return d.authenticationSuccessImage;
       default:
-        return Chunk78678.authenticationFailImage
+        return d.authenticationFailImage
     }
   }
   getMessage() {
@@ -68,20 +68,20 @@ class m extends Chunk473749.Component {
     } = this.state, {
       pendingPayment: e
     } = this.props;
-    switch (module) {
+    switch (t) {
       case 0:
-        return Chunk388032.intl.format(Chunk388032.t.RoxWET, {
-          price: (0, Chunk937615.T4)(exports.amount, exports.currency),
-          item: exports.description
+        return p.intl.format(p.t.RoxWET, {
+          price: (0, o.T4)(e.amount, e.currency),
+          item: e.description
         });
       case 2:
-        return Chunk388032.intl.string(Chunk388032.t.PZskfs);
+        return p.intl.string(p.t.PZskfs);
       case 3:
-        return Chunk388032.intl.format(Chunk388032.t["j0tI/b"], {
-          item: exports.description
+        return p.intl.format(p.t["j0tI/b"], {
+          item: e.description
         });
       default:
-        return Chunk388032.intl.string(Chunk388032.t.BAr3rB)
+        return p.intl.string(p.t.BAr3rB)
     }
   }
   renderButtons() {
@@ -89,17 +89,17 @@ class m extends Chunk473749.Component {
       step: t,
       isAwaitingAuthentication: e
     } = this.state;
-    return 0 === module ? [{
-      text: Chunk388032.intl.string(Chunk388032.t["2NeVoY"]),
+    return 0 === t ? [{
+      text: p.intl.string(p.t["2NeVoY"]),
       onClick: this.cancelPayment,
       variant: "secondary"
     }, {
-      text: Chunk388032.intl.string(Chunk388032.t.VAqBoE),
+      text: p.intl.string(p.t.VAqBoE),
       onClick: this.handleAuthenticate,
       variant: "primary",
-      loading: exports
+      loading: e
     }] : [{
-      text: Chunk388032.intl.string(Chunk388032.t.cpT0Cq),
+      text: p.intl.string(p.t.cpT0Cq),
       onClick: this.close,
       variant: "primary"
     }]
@@ -108,15 +108,15 @@ class m extends Chunk473749.Component {
     let {
       transitionState: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk793030.Modal, {
-      transitionState: module,
+    return (0, a.jsxs)(s.Modal, {
+      transitionState: t,
       "aria-label": this.getTitle(),
       title: this.getTitle(),
       onClose: this.close,
       actions: this.renderButtons(),
-      children: [(0, Chunk54381.jsx)("div", {
+      children: [(0, a.jsx)("div", {
         className: this.getImageStyle()
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         children: this.getMessage()
       })]

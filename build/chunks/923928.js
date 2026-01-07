@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 let i = {
   clearVADWarning() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "PERMISSION_CLEAR_VAD_WARNING"
     })
   },
   clearSuppressWarning() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "PERMISSION_CLEAR_SUPPRESS_WARNING",
-      forever: module
+      forever: e
     })
   },
   clearPTTAdminWarning() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "PERMISSION_CLEAR_PTT_ADMIN_WARNING"
     })
   },
@@ -30,7 +30,7 @@ let i = {
     })
   },
   clearElevatedProcess() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "PERMISSION_CLEAR_ELEVATED_PROCESS"
     })
   },

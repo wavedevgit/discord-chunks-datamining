@@ -87,7 +87,7 @@ function E(e) {
 }
 
 function b() {
-  for (let e in m) _.lastSeenNewlyAddedEmojiIds[module] = m[module]
+  for (let e in m) _.lastSeenNewlyAddedEmojiIds[e] = m[e]
 }
 
 function y() {

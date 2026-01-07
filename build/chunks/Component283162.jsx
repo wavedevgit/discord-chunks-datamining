@@ -22,65 +22,65 @@ function h() {
     personaForceFaeFail: e,
     personaForceIdVerificationFail: t,
     personaDisableModularPilotTestTemplate: n
-  } = (0, Chunk442837.cj)([Chunk857192.default], () => ({
-    personaForceFaeFail: Chunk857192.default.personaForceFaeFail,
-    personaForceIdVerificationFail: Chunk857192.default.personaForceIdVerificationFail,
-    personaDisableModularPilotTestTemplate: Chunk857192.default.personaDisableModularPilotTestTemplate
+  } = (0, l.cj)([m.default], () => ({
+    personaForceFaeFail: m.default.personaForceFaeFail,
+    personaForceIdVerificationFail: m.default.personaForceIdVerificationFail,
+    personaDisableModularPilotTestTemplate: m.default.personaDisableModularPilotTestTemplate
   }));
-  return (0, Chunk54381.jsxs)("div", {
-    className: i()(Chunk663618.panel, Chunk408602.container),
-    children: [(0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, a.jsxs)("div", {
+    className: i()(f.panel, p.container),
+    children: [(0, a.jsxs)("div", {
+      children: [(0, a.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         children: "Quick Actions"
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
+      }), (0, a.jsx)(s.izJ, {
         gap: 16
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk408602.contentContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsxs)("div", {
+        className: p.contentContainer,
+        children: [(0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           text: "Launch Age Verification Test Tool",
-          onClick: () => (0, Chunk963886.E)(),
+          onClick: () => (0, u.E)(),
           fullWidth: true
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           text: "Launch Age Verification Modal",
-          onClick: () => Chunk168107.Z.showAgeVerificationGetStartedModal({
-            entryPoint: Chunk480916.cU.DEV_TOOLS_QUICK_ACTIONS
+          onClick: () => c.Z.showAgeVerificationGetStartedModal({
+            entryPoint: d.cU.DEV_TOOLS_QUICK_ACTIONS
           }),
           fullWidth: true
         })]
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, a.jsxs)("div", {
+      children: [(0, a.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         children: "Persona Configurations"
-      }), (0, Chunk54381.jsx)("div", {
+      }), (0, a.jsx)("div", {
         children: "Note: this only works for generated test users"
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
+      }), (0, a.jsx)(s.izJ, {
         gap: 16
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk408602.contentContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
+      }), (0, a.jsxs)("div", {
+        className: p.contentContainer,
+        children: [(0, a.jsx)(s.rsf, {
           label: "Disable Modular Pilot Test Template",
           description: "Use actual pilot template (skips age override screen) for Persona age verification testing",
-          checked: require,
+          checked: n,
           onChange: e => (0, o.y)({
             personaDisableModularPilotTestTemplate: e
           })
-        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+        }), (0, a.jsx)(s.rsf, {
           label: "Force FAE to Fail",
           description: "Force Facial Age Estimation to fail for testing with Persona",
-          checked: module,
+          checked: e,
           onChange: e => (0, o.y)({
             personaForceFaeFail: e
           })
-        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+        }), (0, a.jsx)(s.rsf, {
           label: "Force ID Verification to Fail",
           description: "Force ID verification to fail for testing with Persona",
-          checked: exports,
+          checked: t,
           onChange: e => (0, o.y)({
             personaForceIdVerificationFail: e
           })

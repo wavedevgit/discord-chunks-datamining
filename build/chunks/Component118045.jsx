@@ -128,8 +128,8 @@ function N(e) {
 }
 
 function P() {
-  let e = (0, Chunk473749.useContext)(Chunk324060.Q),
-    t = (0, Chunk481060.dQu)(module.primaryColor).hex(),
+  let e = (0, i.useContext)(f.Q),
+    t = (0, c.dQu)(e.primaryColor).hex(),
     {
       applications: {
         totalGamesPlayed: n,
@@ -138,46 +138,46 @@ function P() {
         totalGamesPlayed: 0,
         applications: []
       }
-    } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
-  return (0, Chunk54381.jsxs)(Chunk198358.Z, {
+    } = (0, l.e7)([p.Z], () => p.Z.getCheckpointData());
+  return (0, r.jsxs)(h.Z, {
     verticalFlow: true,
-    className: Chunk998018.container,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk554445.title,
-      children: [(0, Chunk54381.jsx)(Chunk793030.iWm, {
+    className: S.container,
+    children: [(0, r.jsxs)("div", {
+      className: v.title,
+      children: [(0, r.jsx)(s.iWm, {
         size: "refresh_sm",
-        color: exports,
-        colorClass: Chunk554445.iconColor
-      }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+        color: t,
+        colorClass: v.iconColor
+      }), (0, r.jsx)(g.Z, {
         variant: "eyebrow",
-        className: Chunk554445.eyebrow,
-        children: Chunk388032.intl.string(Chunk638398.default.dW6EBf)
+        className: v.eyebrow,
+        children: O.intl.string(y.default.dW6EBf)
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk998018.header,
-      children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
+    }), (0, r.jsxs)("div", {
+      className: S.header,
+      children: [(0, r.jsx)(g.Z, {
         variant: "display-lg",
-        className: Chunk998018.display,
-        children: Chunk388032.intl.string(Chunk388032.t.URyqtP)
-      }), (0, Chunk54381.jsxs)("div", {
-        children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
+        className: S.display,
+        children: O.intl.string(O.t.URyqtP)
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(g.Z, {
           variant: "heading-xxl/medium",
-          className: Chunk998018.subtitle,
-          children: Chunk388032.intl.format(Chunk638398.default.gzlOml, {
-            numGames: require,
+          className: S.subtitle,
+          children: O.intl.format(y.default.gzlOml, {
+            numGames: n,
             gamesHook: (e, t) => (0, r.jsx)(g.Z, {
               variant: "heading-xxl/medium",
               className: S.inline,
               children: e
             }, t)
           })
-        }), (0, Chunk54381.jsx)(Chunk909397.o, {
-          slide: Chunk612776.yD.GAMING
+        }), (0, r.jsx)(m.o, {
+          slide: b.yD.GAMING
         })]
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk998018.games,
-      children: Chunk120356.map((e, t) => (0, r.jsx)(N, A(T({}, e), {
+    }), (0, r.jsx)("div", {
+      className: S.games,
+      children: a.map((e, t) => (0, r.jsx)(N, A(T({}, e), {
         index: t
       }), "game-".concat(t)))
     })]

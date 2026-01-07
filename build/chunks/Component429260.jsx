@@ -39,8 +39,8 @@ function S(e) {
 }
 
 function E() {
-  return (0, Chunk54381.jsx)(Chunk243778.ZP, {
-    contentTypes: [Chunk704215.z.REPORT_TO_MOD_NEW_TAG],
+  return (0, r.jsx)(d.ZP, {
+    contentTypes: [l.z.REPORT_TO_MOD_NEW_TAG],
     children: e => {
       let {
         visibleContent: t

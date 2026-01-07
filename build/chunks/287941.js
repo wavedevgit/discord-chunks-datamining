@@ -15,7 +15,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 let d = () => {
     let e = true;
-    return require("./451478.js").Z.isFocused()
+    return n(451478).Z.isFocused()
   },
   f = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {

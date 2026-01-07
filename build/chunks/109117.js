@@ -56,17 +56,17 @@ function g(e, t) {
 async function E() {
   var e;
   if (__OVERLAY__) return;
-  let t = null == _ || null == (e = _.processUtils) ? true : module.getLastCrash;
-  if ((0, Chunk358085.isDesktop)() && Chunk998502.ZP.on("CRASH_REPORTER_NEW_CRASH", g), null == exports) return void console.log("AppCrashedFatalReport: getLastCrash not supported.");
-  let n = await exports(),
+  let t = null == _ || null == (e = _.processUtils) ? true : e.getLastCrash;
+  if ((0, l.isDesktop)() && c.ZP.on("CRASH_REPORTER_NEW_CRASH", g), null == t) return void console.log("AppCrashedFatalReport: getLastCrash not supported.");
+  let n = await t(),
     {
       didCrashReporterSeeCrash: r,
       didCrashOrUncleanExit: a
-    } = b(Chunk433517.K.get(m, {}), require),
-    o = O(Chunk268146, Chunk131951, require);
-  Chunk626135.default.track(Chunk981631.rMx.APP_NATIVE_CRASH, Chunk594174), Chunk433517.K.set(m, {
-    lastId: null == require ? true : require.id
-  }), Chunk131951 && setTimeout(async () => await y(), 1e4)
+    } = b(i.K.get(m, {}), n),
+    o = O(r, a, n);
+  s.default.track(d.rMx.APP_NATIVE_CRASH, o), i.K.set(m, {
+    lastId: null == n ? true : n.id
+  }), a && setTimeout(async () => await y(), 1e4)
 }
 
 function b(e, t) {
@@ -81,8 +81,8 @@ function b(e, t) {
 }
 async function y() {
   var e, t;
-  if (null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports) try {
-    await Chunk131951.Z.getMediaEngine().writeAudioDebugState(), await (0, Chunk729345.E)(Chunk981631.GU0.RTC), console.log("Successfully uploaded debug files")
+  if (null != (t = null == (e = o.default.getCurrentUser()) ? true : e.isStaff()) && t) try {
+    await a.Z.getMediaEngine().writeAudioDebugState(), await (0, u.E)(d.GU0.RTC), console.log("Successfully uploaded debug files")
   } catch (e) {
     console.log("Failed to upload debug files")
   }

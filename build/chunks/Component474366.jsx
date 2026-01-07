@@ -112,9 +112,9 @@ function S(e) {
 }
 
 function N() {
-  let e = Chunk473749.useRef(null);
-  return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-    className: Chunk5929.container,
+  let e = r.useRef(null);
+  return (0, a.jsxs)(o.Kqy, {
+    className: T.container,
     direction: "vertical",
     align: "center",
     justify: "center",
@@ -122,24 +122,24 @@ function N() {
       top: 24,
       bottom: 24
     },
-    ref: module,
-    children: [(0, Chunk54381.jsx)(Chunk481060.l22, {
+    ref: e,
+    children: [(0, a.jsx)(o.l22, {
       size: "custom",
       width: 48,
       height: 48
-    }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    }), (0, a.jsxs)(o.Kqy, {
       direction: "vertical",
       align: "center",
       justify: "center",
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-        className: Chunk5929.header,
+      children: [(0, a.jsx)(o.Heading, {
+        className: T.header,
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk792389.default.h6QNky)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk5929.text,
+        children: y.intl.string(C.default.h6QNky)
+      }), (0, a.jsx)(o.Text, {
+        className: T.text,
         variant: "text-md/medium",
         color: "text-subtle",
-        children: Chunk388032.intl.format(Chunk792389.default["8N4c58"], {
+        children: y.intl.format(C.default["8N4c58"], {
           airhornHook: t => (0, a.jsx)(S, {
             containerRef: e,
             text: t

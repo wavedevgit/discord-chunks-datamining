@@ -14,10 +14,10 @@ var Chunk445794 = require("./445794.js"),
 function l() {
   let {
     selectedSkuId: e
-  } = (0, Chunk563132.JL)();
-  return (0, Chunk445794.N3)({
-    skuId: module
-  }) ? (0, Chunk54381.jsx)(Chunk658114.Z, {
-    message: Chunk388032.intl.format(Chunk388032.t.fsOXXO, {})
+  } = (0, a.JL)();
+  return (0, i.N3)({
+    skuId: e
+  }) ? (0, r.jsx)(o.Z, {
+    message: s.intl.format(s.t.fsOXXO, {})
   }) : null
 }

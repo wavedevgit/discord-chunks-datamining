@@ -11,7 +11,7 @@ var Chunk181794 = require("./181794.js"),
   u = Chunk764908([].push),
   d = Chunk181794 && Chunk779688(function() {
     var e = Object.create(null);
-    return module[2] = 2, !l(module, 2)
+    return e[2] = 2, !l(e, 2)
   }),
   p = function(e) {
     return function(t) {

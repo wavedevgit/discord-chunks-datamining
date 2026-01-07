@@ -23,11 +23,11 @@ class s extends Chunk147913.Z {
 }
 
 function l() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "SELF_PRESENCE_STORE_UPDATE",
-    status: Chunk885110.Z.getStatus(),
-    activities: Chunk885110.Z.getActivities(true),
-    hiddenActivities: Chunk885110.Z.getHiddenActivities()
+    status: a.Z.getStatus(),
+    activities: a.Z.getActivities(true),
+    hiddenActivities: a.Z.getHiddenActivities()
   })
 }
 let c = new s

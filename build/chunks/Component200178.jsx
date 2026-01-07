@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk445212 = require("./445212.js");
 
 function p() {
-  let [e, t] = Chunk473749.useState(""), n = (0, Chunk442837.e7)([Chunk389458.Z], () => Chunk389458.Z.getAllWordsSorted().map((e, t) => {
+  let [e, t] = r.useState(""), n = (0, s.e7)([d.Z], () => d.Z.getAllWordsSorted().map((e, t) => {
     let [n, a] = e;
     return {
       word: n,
@@ -23,59 +23,59 @@ function p() {
       value: a,
       idx: t
     }
-  }), [], Chunk442837.pF), i = Chunk473749.useMemo(() => 0 === module.length ? require : require.filter(t => {
+  }), [], s.pF), i = r.useMemo(() => 0 === e.length ? n : n.filter(t => {
     let {
       word: n
     } = t;
     return n.toLowerCase().startsWith(e.toLowerCase())
-  }), [require, module]), p = Chunk473749.useCallback(() => {
-    Chunk570140.Z.dispatch({
+  }), [n, e]), p = r.useCallback(() => {
+    c.Z.dispatch({
       type: "DEV_TOOLS_WORD_FREQUENCY_RESET"
     })
   }, []);
-  return (0, Chunk54381.jsxs)("div", {
-    className: l()(Chunk663618.panel, Chunk445212.panel),
-    children: [require.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
+  return (0, a.jsxs)("div", {
+    className: l()(u.panel, m.panel),
+    children: [n.length > 0 && (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsxs)(o.Text, {
         variant: "text-md/semibold",
-        className: Chunk445212.sectionTitle,
-        children: ["Word Frequencies (", Chunk120356.length, " unique words)"]
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        className: m.sectionTitle,
+        children: ["Word Frequencies (", i.length, " unique words)"]
+      }), (0, a.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: "This is a list of the most common short words found in messages sent and received by this client. They're ignored by the mention suggestions experiment to avoid distracting suggestions. These statistics are stored locally only."
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk445212.headerSection,
-        children: [(0, Chunk54381.jsx)(Chunk481060.E1j, {
+      }), (0, a.jsxs)("div", {
+        className: m.headerSection,
+        children: [(0, a.jsx)(o.E1j, {
           size: "sm",
-          query: module,
-          onChange: exports,
-          onClear: () => exports(""),
+          query: e,
+          onChange: t,
+          onClear: () => t(""),
           placeholder: "Filter by words starting with..."
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)(o.Button, {
           variant: "secondary",
           size: "sm",
           text: "Clear Statistics",
           onClick: p
         })]
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk445212.resultsSection,
-        children: (0, Chunk54381.jsx)(Chunk481060.zJl, {
-          className: Chunk445212.resultsContainer,
-          children: (0, Chunk54381.jsxs)("div", {
-            className: Chunk445212.resultsTable,
-            children: [(0, Chunk54381.jsxs)("div", {
-              className: l()(Chunk663618.tableHeader, Chunk445212.tableHeader),
-              children: [(0, Chunk54381.jsx)("div", {
-                className: Chunk445212.indexColumn,
+      }), (0, a.jsx)("div", {
+        className: m.resultsSection,
+        children: (0, a.jsx)(o.zJl, {
+          className: m.resultsContainer,
+          children: (0, a.jsxs)("div", {
+            className: m.resultsTable,
+            children: [(0, a.jsxs)("div", {
+              className: l()(u.tableHeader, m.tableHeader),
+              children: [(0, a.jsx)("div", {
+                className: m.indexColumn,
                 children: "Index"
-              }), (0, Chunk54381.jsx)("div", {
-                className: Chunk445212.wordColumn,
+              }), (0, a.jsx)("div", {
+                className: m.wordColumn,
                 children: "Word"
-              }), (0, Chunk54381.jsx)("div", {
-                className: Chunk445212.valueColumn,
+              }), (0, a.jsx)("div", {
+                className: m.valueColumn,
                 children: "Count"
               })]
-            }), Chunk120356.map(e => {
+            }), i.map(e => {
               let {
                 word: t,
                 value: n,
@@ -107,19 +107,19 @@ function p() {
           })
         })
       })]
-    }), 0 === require.length && (0, Chunk54381.jsx)("div", {
-      className: Chunk445212.emptyState,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), 0 === n.length && (0, a.jsx)("div", {
+      className: m.emptyState,
+      children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: "Load messages in a channel to see word frequency analysis."
       })
-    }), require.length > 0 && 0 === Chunk120356.length && module.length > 0 && (0, Chunk54381.jsx)("div", {
-      className: Chunk445212.emptyState,
-      children: (0, Chunk54381.jsxs)(Chunk481060.Text, {
+    }), n.length > 0 && 0 === i.length && e.length > 0 && (0, a.jsx)("div", {
+      className: m.emptyState,
+      children: (0, a.jsxs)(o.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: ['No words found starting with "', module, '".']
+        children: ['No words found starting with "', e, '".']
       })
     })]
   })

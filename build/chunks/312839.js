@@ -63,6 +63,6 @@ function u(e, t) {
 }
 
 function f() {
-  let e = Chunk556296.ZP.getOverlayKeybind();
-  return null != module ? (0, Chunk13140.BB)(module.shortcut, true).split(" + ") : ["???"]
+  let e = r.ZP.getOverlayKeybind();
+  return null != e ? (0, s.BB)(e.shortcut, true).split(" + ") : ["???"]
 }

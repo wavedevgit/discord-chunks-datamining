@@ -15,13 +15,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
-  let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getQoS());
-  return (0, Chunk54381.jsx)(Chunk921801.F, {
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_QOS,
-    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["3CqDxp"]),
-      description: Chunk388032.intl.string(Chunk388032.t.I1Eoqq),
-      checked: module,
+  let e = (0, i.e7)([l.Z], () => l.Z.getQoS());
+  return (0, r.jsx)(s.F, {
+    setting: c.s6.VOICE_AND_VIDEO_ADVANCED_QOS,
+    children: (0, r.jsx)(a.rsf, {
+      label: u.intl.string(u.t["3CqDxp"]),
+      description: u.intl.string(u.t.I1Eoqq),
+      checked: e,
       onChange: e => o.Z.setQoS(e)
     })
   })

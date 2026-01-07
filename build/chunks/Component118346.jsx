@@ -14,54 +14,54 @@ var Chunk54381 = require("./54381.js"),
   Chunk888327 = require("./888327.js");
 
 function d() {
-  let [e, t] = Chunk473749.useState(false), [n, i] = Chunk473749.useState(false), [o, d] = Chunk473749.useState(false);
-  Chunk473749.useEffect(() => {
+  let [e, t] = l.useState(false), [n, i] = l.useState(false), [o, d] = l.useState(false);
+  l.useEffect(() => {
     let e;
-    return require && (e = setTimeout(() => {
-      Chunk28664(false)
+    return n && (e = setTimeout(() => {
+      i(false)
     }, 2e3)), () => {
-      null != module && clearTimeout(module)
+      null != e && clearTimeout(e)
     }
-  }, [require]);
+  }, [n]);
   let m = async () => {
-    if (!module) {
-      exports(true);
+    if (!e) {
+      t(true);
       try {
-        await Chunk893776.Z.verifyResend(), Chunk28664(true), d(true)
+        await s.Z.verifyResend(), i(true), d(true)
       } catch (e) {} finally {
-        exports(false)
+        t(false)
       }
     }
   };
-  return require ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-    className: Chunk888327.verifyConfirmText,
+  return n ? (0, r.jsx)(a.Text, {
+    className: u.verifyConfirmText,
     variant: "text-sm/normal",
     color: "text-feedback-positive",
-    children: Chunk388032.intl.string(Chunk388032.t.H3Q7U8)
-  }) : (0, Chunk54381.jsx)(Chunk481060.Button, {
+    children: c.intl.string(c.t.H3Q7U8)
+  }) : (0, r.jsx)(a.Button, {
     variant: "primary",
     size: "sm",
-    text: Chunk489813 ? Chunk388032.intl.string(Chunk388032.t.WnX4J2) : Chunk388032.intl.string(Chunk388032.t["13ofGu"]),
-    loading: module,
+    text: o ? c.intl.string(c.t.WnX4J2) : c.intl.string(c.t["13ofGu"]),
+    loading: e,
     onClick: m
   })
 }
 
 function m() {
-  return (0, Chunk54381.jsx)(Chunk489813.PU, {
-    className: Chunk888327.editableRequirementContainer,
-    icon: Chunk481060._XJ,
-    text: Chunk388032.intl.string(Chunk388032.t.c6EUJI),
-    footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TY"]),
+  return (0, r.jsx)(o.PU, {
+    className: u.editableRequirementContainer,
+    icon: a._XJ,
+    text: c.intl.string(c.t.c6EUJI),
+    footnote: c.intl.string(c.t["jMh+TY"]),
     meetsRequirement: false,
-    children: (0, Chunk54381.jsx)(Chunk28664.u, {
+    children: (0, r.jsx)(i.u, {
       asContainer: true,
-      text: Chunk388032.intl.string(Chunk388032.t.mGlP30),
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      text: c.intl.string(c.t.mGlP30),
+      children: (0, r.jsx)(a.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,
-        text: Chunk388032.intl.string(Chunk388032.t["13ofGu"])
+        text: c.intl.string(c.t["13ofGu"])
       })
     })
   })

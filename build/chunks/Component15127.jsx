@@ -38,7 +38,7 @@ let l = Chunk473749.createContext({
 });
 
 function c() {
-  return Chunk473749.useContext(l)
+  return i.useContext(l)
 }
 
 function u(e) {

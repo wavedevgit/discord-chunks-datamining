@@ -18,6 +18,6 @@ function o(e) {
 }
 
 function s() {
-  let e = Chunk115130.Z.getState();
-  return module.useActivityUrlOverride && null != module.activityUrlOverride && "" !== module.activityUrlOverride
+  let e = i.Z.getState();
+  return e.useActivityUrlOverride && null != e.activityUrlOverride && "" !== e.activityUrlOverride
 }

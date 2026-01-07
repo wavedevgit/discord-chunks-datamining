@@ -20,14 +20,14 @@ class o extends Chunk473749.Component {
       pageSize: l,
       location: o
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk613311.Z, {
-      inputSkuId: module,
-      applicationId: exports,
+    return (0, r.jsx)(a.Z, {
+      inputSkuId: e,
+      applicationId: t,
       fetchStoreListing: this.fetchStoreListing,
-      slug: require,
-      storeListingId: Chunk473749,
+      slug: n,
+      storeListingId: i,
       location: o,
-      pageSize: Chunk558381
+      pageSize: l
     })
   }
   constructor(...e) {

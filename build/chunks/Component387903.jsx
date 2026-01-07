@@ -94,8 +94,8 @@ let q = {
   },
   Q = (0, Chunk438139.Z)(class extends Chunk473749.PureComponent {
     render() {
-      return (0, Chunk54381.jsx)("div", {
-        className: Chunk738435.timestamp,
+      return (0, i.jsx)("div", {
+        className: B.timestamp,
         children: this.props.message
       })
     }
@@ -128,16 +128,16 @@ class $ extends(r = Chunk473749.PureComponent) {
       activity: e,
       activityGuild: t
     } = this.props;
-    return null != exports && (null == module ? true : module.type) !== Chunk981631.IIU.PLAYING && (null == module ? true : module.type) !== Chunk981631.IIU.WATCHING && (null == module ? true : module.type) !== Chunk981631.IIU.LISTENING && (null == module ? true : module.type) !== Chunk981631.IIU.HANG_STATUS ? {
-      type: Chunk981631.IIU.PLAYING,
-      name: Chunk388032.intl.string(Chunk388032.t.eXan7B)
-    } : module
+    return null != t && (null == e ? true : e.type) !== Z.IIU.PLAYING && (null == e ? true : e.type) !== Z.IIU.WATCHING && (null == e ? true : e.type) !== Z.IIU.LISTENING && (null == e ? true : e.type) !== Z.IIU.HANG_STATUS ? {
+      type: Z.IIU.PLAYING,
+      name: F.intl.string(F.t.eXan7B)
+    } : e
   }
   getTypeClass(e, t) {
     return (0, w.l)(B, e, this.props.type, t)
   }
   isStreamerOnTypeActivityFeed() {
-    return (0, Chunk420660.Z)(this.activity) && "ActivityFeed" === this.props.type
+    return (0, k.Z)(this.activity) && "ActivityFeed" === this.props.type
   }
   renderHeader(e) {
     let t, {
@@ -197,11 +197,11 @@ class $ extends(r = Chunk473749.PureComponent) {
     })
   }
   renderXboxImage() {
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk738435.assets,
-      children: (0, Chunk54381.jsx)("img", {
+    return (0, i.jsx)("div", {
+      className: B.assets,
+      children: (0, i.jsx)("img", {
         alt: "",
-        src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.customPNG,
+        src: h.Z.get(Z.ABu.XBOX).icon.customPNG,
         className: s()(this.getTypeClass("assetsLargeImage", "Xbox"))
       })
     })
@@ -515,37 +515,37 @@ class $ extends(r = Chunk473749.PureComponent) {
         onOpenGameProfileModal: l
       } = this.props,
       c = this.activity;
-    if (null == c || c.type === Chunk981631.IIU.CUSTOM_STATUS) return null;
-    let u = "ActivityFeed" === exports,
-      d = "StreamPreview" === exports,
+    if (null == c || c.type === Z.IIU.CUSTOM_STATUS) return null;
+    let u = "ActivityFeed" === t,
+      d = "StreamPreview" === t,
       f = false;
-    (0, Chunk802856.Z)(c) ? (e = this.renderXboxImage(), f = true) : null == (e = this.renderImage(c)) && (f = null != (e = this.renderGameImage(c)));
+    (0, M.Z)(c) ? (e = this.renderXboxImage(), f = true) : null == (e = this.renderImage(c)) && (f = null != (e = this.renderGameImage(c)));
     let _ = this.renderName(c),
       m = this.renderDetails(c),
-      h = this.renderState(c, Chunk473749),
+      h = this.renderState(c, a),
       E = this.renderTimePlayed(c),
       b = this.renderChannelDetails(c),
-      y = null != require ? require() : null,
+      y = null != n ? n() : null,
       O = this.renderTimeBar(c),
-      v = ![module, Chunk438139, Chunk410030, Chunk726542, Chunk686546, Chunk168524, Chunk810568].some(e => null != e);
-    return (0, Chunk54381.jsxs)("div", {
+      v = ![e, _, m, h, E, O, y].some(e => null != e);
+    return (0, i.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
-      children: [this.renderHeader(Chunk565138), (0, Chunk54381.jsx)("div", {
-        className: s()(Chunk780384 ? Chunk738435.bodyAlignCenter : Chunk738435.bodyNormal),
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk738435.activityDetails,
-          children: [module, this.isStreamerOnTypeActivityFeed() ? null : (0, Chunk54381.jsxs)(Chunk600164.Z.Child, {
-            className: s()((0, Chunk153066.l)(Chunk738435, "content", Chunk780384 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
-            children: [(0, Chunk54381.jsxs)(Chunk481060.P3F, {
-              className: s()(null != Chunk512722 && Chunk738435.openGameProfile),
-              onClick: null != Chunk512722 ? e => {
+      children: [this.renderHeader(v), (0, i.jsx)("div", {
+        className: s()(f ? B.bodyAlignCenter : B.bodyNormal),
+        children: (0, i.jsxs)("div", {
+          className: B.activityDetails,
+          children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, i.jsxs)(g.Z.Child, {
+            className: s()((0, w.l)(B, "content", f ? "GameImage" : null != e ? "Images" : "NoImages", t)),
+            children: [(0, i.jsxs)(p.P3F, {
+              className: s()(null != l && B.openGameProfile),
+              onClick: null != l ? e => {
                 l(e), null == o || o()
               } : true,
-              children: [Chunk438139, Chunk410030, Chunk726542, Chunk686546]
-            }), Chunk925329, Chunk194983 ? null : Chunk168524, Chunk95015 ? Chunk810568 : null]
+              children: [_, m, h, E]
+            }), b, d ? null : O, u ? y : null]
           })]
         })
-      }), Chunk194983 ? Chunk810568 : null, (0, Chunk54381.jsx)(J, {
+      }), d ? y : null, (0, i.jsx)(J, {
         activity: c
       })]
     })

@@ -16,8 +16,8 @@ function i(e, t, n) {
 }
 class a {
   _load() {
-    let e = Chunk298444.x.get(this._key);
-    null != module && (this._set = new Set(module))
+    let e = r.x.get(this._key);
+    null != e && (this._set = new Set(e))
   }
   values() {
     return this._set
@@ -32,7 +32,7 @@ class a {
   }
   _persist() {
     let e = Array.from(this._set.values());
-    Chunk298444.x.set(this._key, module)
+    r.x.set(this._key, e)
   }
   add(e) {
     this._set.add(e), requestIdleCallback(() => {

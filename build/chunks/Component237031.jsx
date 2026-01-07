@@ -85,5 +85,5 @@ let d = "collectibles shop product details modal",
     })
   },
   p = () => {
-    (0, Chunk481060.Mr3)(d)
+    (0, i.Mr3)(d)
   }

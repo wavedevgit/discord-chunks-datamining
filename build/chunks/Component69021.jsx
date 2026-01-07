@@ -67,207 +67,207 @@ function f() {
     preventPopoutClose: w,
     onlyShowPreviewAppCollections: _,
     disableAppCollectionsCache: x
-  } = (0, Chunk442837.cj)([Chunk857192.default, Chunk594174.default, Chunk906467.Z], () => {
+  } = (0, i.cj)([c.default, u.default, s.Z], () => {
     var e;
     return {
-      layoutDebuggingEnabled: Chunk857192.default.layoutDebuggingEnabled,
-      isStaff: (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) === true,
-      isDeveloper: Chunk906467.Z.isDeveloper,
-      isLoggingGatewayEvents: Chunk857192.default.isLoggingGatewayEvents,
-      isLoggingOverlayEvents: Chunk857192.default.isLoggingOverlayEvents,
-      isLoggingAnalyticsEvents: Chunk857192.default.isLoggingAnalyticsEvents,
-      isAnalyticsDebuggerEnabled: Chunk857192.default.isAnalyticsDebuggerEnabled,
-      isTracingRequests: Chunk857192.default.isTracingRequests,
-      isForcedCanary: Chunk857192.default.isForcedCanary,
-      isSourceMapsEnabled: Chunk857192.default.sourceMapsEnabled,
-      isIdleStatusIndicatorEnabled: Chunk857192.default.isIdleStatusIndicatorEnabled,
-      isAxeEnabled: Chunk857192.default.isAxeEnabled,
-      preventPopoutClose: Chunk857192.default.preventPopoutClose,
-      onlyShowPreviewAppCollections: Chunk857192.default.onlyShowPreviewAppCollections,
-      disableAppCollectionsCache: Chunk857192.default.disableAppCollectionsCache
+      layoutDebuggingEnabled: c.default.layoutDebuggingEnabled,
+      isStaff: (null == (e = u.default.getCurrentUser()) ? true : e.isStaff()) === true,
+      isDeveloper: s.Z.isDeveloper,
+      isLoggingGatewayEvents: c.default.isLoggingGatewayEvents,
+      isLoggingOverlayEvents: c.default.isLoggingOverlayEvents,
+      isLoggingAnalyticsEvents: c.default.isLoggingAnalyticsEvents,
+      isAnalyticsDebuggerEnabled: c.default.isAnalyticsDebuggerEnabled,
+      isTracingRequests: c.default.isTracingRequests,
+      isForcedCanary: c.default.isForcedCanary,
+      isSourceMapsEnabled: c.default.sourceMapsEnabled,
+      isIdleStatusIndicatorEnabled: c.default.isIdleStatusIndicatorEnabled,
+      isAxeEnabled: c.default.isAxeEnabled,
+      preventPopoutClose: c.default.preventPopoutClose,
+      onlyShowPreviewAppCollections: c.default.onlyShowPreviewAppCollections,
+      disableAppCollectionsCache: c.default.disableAppCollectionsCache
     }
   }), {
     horizontalSpacing: D,
     verticalSpacing: T,
     maxHorizontalSpacing: C,
     maxVerticalSpacing: m
-  } = (0, Chunk482215.i)(), {
+  } = (0, o.i)(), {
     setHorizontalSpacing: L,
     setVerticalSpacing: R
-  } = Chunk482215.i.getState(), Z = Chunk695346.zY.useSetting(), k = [];
-  return exports && require && (k.push((0, Chunk54381.jsx)(Chunk481060.sNh, {
+  } = o.i.getState(), Z = d.zY.useSetting(), k = [];
+  return t && n && (k.push((0, l.jsx)(a.sNh, {
     id: "overrides",
     label: "Overrides",
     action: () => {
-      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
-        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
-        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB
+      (0, b.openUserSettings)(g.n.DEVELOPER_OPTIONS_PANEL, {
+        section: O.oAB.DEVELOPER_OPTIONS,
+        subsection: p.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB
       })
     }
-  }, "overrides")), k.push((0, Chunk54381.jsx)(Chunk481060.sNh, {
+  }, "overrides")), k.push((0, l.jsx)(a.sNh, {
     id: "manual-triggers",
     label: "Manual Triggers",
     action: () => {
-      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
-        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
-        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB
+      (0, b.openUserSettings)(g.n.DEVELOPER_OPTIONS_PANEL, {
+        section: O.oAB.DEVELOPER_OPTIONS,
+        subsection: p.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB
       })
     }
-  }, "manual-triggers")), k.push((0, Chunk54381.jsxs)(Chunk481060.sNh, {
+  }, "manual-triggers")), k.push((0, l.jsxs)(a.sNh, {
     id: "developer-flags",
     label: "Developer Flags",
     action: () => {
-      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
-        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
-        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_FLAGS_TAB
+      (0, b.openUserSettings)(g.n.DEVELOPER_OPTIONS_PANEL, {
+        section: O.oAB.DEVELOPER_OPTIONS,
+        subsection: p.s6.DEVELOPER_OPTIONS_FLAGS_TAB
       })
     },
-    children: [(0, Chunk54381.jsx)(Chunk481060.S89, {
+    children: [(0, l.jsx)(a.S89, {
       id: "tracing-requests",
       label: "Tracing Requests",
       checked: h,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           trace: !h
         })
       }
-    }, "tracing-requests"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "tracing-requests"), (0, l.jsx)(a.S89, {
       id: "forced-canary",
       label: "Forced Canary",
       checked: j,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           canary: !j
         })
       }
-    }, "forced-canary"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "forced-canary"), (0, l.jsx)(a.S89, {
       id: "always-deliver",
       label: "Ads auto-targeting",
       checked: Z,
       action: () => {
-        Chunk695346.zY.updateSetting(!Z)
+        d.zY.updateSetting(!Z)
       }
-    }, "always-deliver"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "always-deliver"), (0, l.jsx)(a.S89, {
       id: "source-maps",
       label: "Source Maps",
       checked: A,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           sourceMapsEnabled: !A
         })
       }
-    }, "source-maps"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "source-maps"), (0, l.jsx)(a.S89, {
       id: "idle-status",
       label: "Idle Status Indicator",
       checked: N,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           idleStatusIndicatorEnabled: !N
         })
       }
-    }, "idle-status"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "idle-status"), (0, l.jsx)(a.S89, {
       id: "accessibility-auditing",
       label: "Accessibility Auditing",
       checked: I,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           axeEnabled: !I
         })
       }
-    }, "accessibility-auditing"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "accessibility-auditing"), (0, l.jsx)(a.S89, {
       id: "prevent-popout-close",
       label: "Prevent Popouts From Closing",
       checked: w,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           preventPopoutClose: !w
         })
       }
-    }, "prevent-popout-close"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "prevent-popout-close"), (0, l.jsx)(a.S89, {
       id: "preview-collections",
       label: "Preview Unpublished Collections",
       checked: _,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           onlyShowPreviewAppCollections: !_
         })
       }
-    }, "preview-collections"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "preview-collections"), (0, l.jsx)(a.S89, {
       id: "disable-collections-cache",
       label: "Disable Collections Cache",
       checked: x,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           disableAppCollectionsCache: !x
         })
       }
     }, "disable-collections-cache")]
-  }, "developer-flags")), k.push((0, Chunk54381.jsxs)(Chunk481060.sNh, {
+  }, "developer-flags")), k.push((0, l.jsxs)(a.sNh, {
     id: "logging",
     label: "Logging",
     action: () => {
-      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
-        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
-        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_LOGGING_TAB
+      (0, b.openUserSettings)(g.n.DEVELOPER_OPTIONS_PANEL, {
+        section: O.oAB.DEVELOPER_OPTIONS,
+        subsection: p.s6.DEVELOPER_OPTIONS_LOGGING_TAB
       })
     },
-    children: [(0, Chunk54381.jsx)(Chunk481060.S89, {
+    children: [(0, l.jsx)(a.S89, {
       id: "gateway-events",
       label: "Gateway Events",
       checked: f,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           logGatewayEvents: !f
         })
       }
-    }, "gateway-events"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "gateway-events"), (0, l.jsx)(a.S89, {
       id: "overlay-events",
       label: "Overlay RPC Events",
       checked: S,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           logOverlayEvents: !S
         })
       }
-    }, "overlay-events"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "overlay-events"), (0, l.jsx)(a.S89, {
       id: "analytics-events",
       label: "Analytics Events",
       checked: v,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           logAnalyticsEvents: !v
         })
       }
-    }, "analytics-events"), (0, Chunk54381.jsx)(Chunk481060.S89, {
+    }, "analytics-events"), (0, l.jsx)(a.S89, {
       id: "analytics-debugger",
       label: "Analytics Debugger",
       checked: P,
       action: () => {
-        (0, Chunk179658.y)({
+        (0, r.y)({
           analyticsDebuggerEnabled: !P
         })
       }
     }, "analytics-debugger")]
-  }, "logging")), k.push((0, Chunk54381.jsx)(Chunk481060.sNh, {
+  }, "logging")), k.push((0, l.jsx)(a.sNh, {
     id: "design-tools",
     label: "Design Tools",
     action: () => {
-      (0, Chunk518596.openUserSettings)(Chunk313789.n.DEVELOPER_OPTIONS_PANEL, {
-        section: Chunk981631.oAB.DEVELOPER_OPTIONS,
-        subsection: Chunk726985.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB
+      (0, b.openUserSettings)(g.n.DEVELOPER_OPTIONS_PANEL, {
+        section: O.oAB.DEVELOPER_OPTIONS,
+        subsection: p.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB
       })
     },
-    children: (0, Chunk54381.jsx)(Chunk481060.S89, {
+    children: (0, l.jsx)(a.S89, {
       id: "layout-debugging",
       label: "Enable Layout Debugging",
-      checked: module,
+      checked: e,
       action: () => {
-        (0, Chunk179658.y)({
-          layoutDebuggingEnabled: !module
+        (0, r.y)({
+          layoutDebuggingEnabled: !e
         })
       }
     }, "layout-debugging")
-  }, "design-tools")), module && (k.push((0, Chunk54381.jsx)(Chunk481060.II_, {
+  }, "design-tools")), e && (k.push((0, l.jsx)(a.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
     control: (e, t) => (0, l.jsx)(a._wy, y(E({}, e), {
@@ -279,7 +279,7 @@ function f() {
       renderValue: e => "".concat(Math.round(e), "px"),
       "aria-label": "Horizontal Spacing"
     }))
-  }, "horizontal-spacing")), k.push((0, Chunk54381.jsx)(Chunk481060.II_, {
+  }, "horizontal-spacing")), k.push((0, l.jsx)(a.II_, {
     id: "vertical-spacing",
     label: "Vertical Spacing",
     control: (e, t) => (0, l.jsx)(a._wy, y(E({}, e), {

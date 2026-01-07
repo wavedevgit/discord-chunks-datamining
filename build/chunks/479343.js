@@ -15,21 +15,21 @@ let S = (0, Chunk509613.qs)(Chunk313789.n.OVERLAY_LIMITED_INTERACTION_OVERRIDE_S
   usePredicate: () => {
     let {
       runningGameApplication: t
-    } = (0, Chunk137920.Z)();
-    return (null == module ? true : module.id) != null
+    } = (0, l.Z)();
+    return (null == t ? true : t.id) != null
   },
   useDisabled: () => {
     let {
       runningGame: t
-    } = (0, Chunk137920.Z)();
-    return null != module && (0, Chunk829907.H8)(module.pid)
+    } = (0, l.Z)();
+    return null != t && (0, s.H8)(t.pid)
   },
   useValue: () => {
     let {
       runningGame: t,
       runningGameApplication: e
-    } = (0, Chunk137920.Z)(), n = null == exports ? true : exports.id, r = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.isLimitedInteractionOverrideEnabled(require)), a = null != module && (0, Chunk829907.H8)(module.pid);
-    return Chunk932404 || Chunk509613
+    } = (0, l.Z)(), n = null == e ? true : e.id, r = (0, i.e7)([u.Z], () => u.Z.isLimitedInteractionOverrideEnabled(n)), a = null != t && (0, s.H8)(t.pid);
+    return r || a
   },
   setValue: t => {
     let {
@@ -37,6 +37,6 @@ let S = (0, Chunk509613.qs)(Chunk313789.n.OVERLAY_LIMITED_INTERACTION_OVERRIDE_S
     } = (0, l.S)();
     null != e && (0, r.rI)(e.id, t)
   },
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.wgVQND),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["5SsyF5"])
+  useTitle: () => T.intl.string(T.t.wgVQND),
+  useSubtitle: () => T.intl.string(T.t["5SsyF5"])
 })

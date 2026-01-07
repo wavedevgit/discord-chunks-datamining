@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk869051 = require("./869051.js");
 
 function o() {
-  return (0, Chunk54381.jsx)(Chunk481060.$jN, {
-    className: Chunk869051.spinner
+  return (0, r.jsx)(i.$jN, {
+    className: a.spinner
   })
 }

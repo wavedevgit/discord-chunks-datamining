@@ -97,13 +97,13 @@ class en extends Chunk98597.ZP {
     let {
       voiceStates: t
     } = this.props;
-    return null != (e = null == exports ? true : exports.length) ? module : 0
+    return null != (e = null == t ? true : t.length) ? e : 0
   }
   isFull() {
     let {
       channel: e
     } = this.props;
-    return (0, Chunk934415.rY)(module, Chunk979651.Z, Chunk430824.Z)
+    return (0, F.rY)(e, B.Z, M.Z)
   }
   getModeClass() {
     let {
@@ -111,11 +111,11 @@ class en extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk642915.containerUserOver;
-    if (null != exports)
-      if (module > exports) return Chunk642915.containerDragAfter;
-      else return Chunk642915.containerDragBefore;
-    return Chunk642915.containerDefault
+    if (n) return J.containerUserOver;
+    if (null != t)
+      if (e > t) return J.containerDragAfter;
+      else return J.containerDragBefore;
+    return J.containerDefault
   }
   renderSubtitle() {
     var e;
@@ -123,16 +123,16 @@ class en extends Chunk98597.ZP {
       channel: t,
       connected: n,
       showEmptyChannelTopic: i
-    } = this.props, l = null == (e = (0, Chunk873696.D)(this.props.subtitle)) ? true : module.subtitle, {
+    } = this.props, l = null == (e = (0, x.D)(this.props.subtitle)) ? true : e.subtitle, {
       hovered: a
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk653577.Z, {
+    return (0, r.jsx)(K.Z, {
       onClick: this.handleVoiceStatusClick,
-      channel: exports,
-      connected: require,
-      subtitle: Chunk120356,
+      channel: t,
+      connected: n,
+      subtitle: l,
       hovered: a,
-      showEmptyChannelTopic: Chunk473749
+      showEmptyChannelTopic: i
     })
   }
   renderVoiceUsers() {
@@ -143,23 +143,23 @@ class en extends Chunk98597.ZP {
       withGuildIcon: i,
       tabIndex: l
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk207055.Z, {
-      channel: module,
-      collapsed: require,
+    return (0, r.jsx)(Y.Z, {
+      channel: e,
+      collapsed: n,
       collapsedMax: 6,
-      voiceStates: exports,
-      withGuildIcon: Chunk473749,
-      tabIndex: Chunk120356,
-      location: Chunk981631.Sbl.GUILD_CHANNEL_LIST
+      voiceStates: t,
+      withGuildIcon: i,
+      tabIndex: l,
+      location: q.Sbl.GUILD_CHANNEL_LIST
     })
   }
   renderChannelInfo() {
     let {
       channelInfo: e
     } = this.props;
-    return null == module ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk642915.channelInfo,
-      children: module
+    return null == e ? null : (0, r.jsx)("div", {
+      className: J.channelInfo,
+      children: e
     })
   }
   render() {
@@ -191,44 +191,44 @@ class en extends Chunk98597.ZP {
     } = this.props, {
       shouldShowActivities: Z,
       shouldShowGuildVerificationPopout: w
-    } = this.state, T = Chunk554747 || Chunk378844, R = this.getVoiceStatesCount(), D = (0, Chunk54381.jsxs)("li", {
+    } = this.state, T = P || N, R = this.getVoiceStatesCount(), D = (0, r.jsxs)("li", {
       ref: this.ref,
       className: a()(this.getModeClass(), {
-        [Chunk642915.disabled]: this.isDisabled(),
-        [Chunk642915.voiceChannelHighlightContainer]: Chunk554747
+        [J.disabled]: this.isDisabled(),
+        [J.voiceChannelHighlightContainer]: P
       }),
-      "data-dnd-name": module.name,
-      children: [Chunk554747 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk642915.voiceChannelHighlightBorder
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk642915.voiceChannelHighlightGlow
+      "data-dnd-name": e.name,
+      children: [P && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)("div", {
+          className: J.voiceChannelHighlightBorder
+        }), (0, r.jsx)("div", {
+          className: J.voiceChannelHighlightGlow
         })]
-      }), (0, Chunk54381.jsx)("div", {
+      }), (0, r.jsx)("div", {
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
-        children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
+        children: (0, r.jsx)(u.yRy, {
           targetElementRef: this.channelItemRef,
           position: "right",
           renderPopout: this.renderPopout,
           onRequestClose: this.closeGuildVerificationPopout,
-          shouldShow: Chunk574176 && !Chunk475179 && !Chunk239091 && !Chunk763624 || Chunk763624,
-          children: () => (0, Chunk54381.jsx)(Chunk28664.u, {
+          shouldShow: Z && !d && !f && !w || w,
+          children: () => (0, r.jsx)(c.u, {
             text: this.getTooltipText(),
-            children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
+            children: (0, r.jsxs)(W.ZP, {
               ref: this.channelItemRef,
-              className: Chunk642915.iconVisibility,
+              className: J.iconVisibility,
               iconClassName: a()({
-                [Chunk642915.iconLive]: Chunk557135 || Chunk66999 || Chunk359110
+                [J.iconLive]: C || I || T
               }),
-              hasActiveEvent: Chunk557135,
-              channel: module,
-              selected: !Chunk305325 && exports,
-              connected: require,
-              unread: require ? Chunk473749 : true,
-              resolvedUnreadSetting: Chunk120356,
-              mentionCount: Chunk442837,
-              locked: Chunk846519,
+              hasActiveEvent: C,
+              channel: e,
+              selected: !S && t,
+              connected: n,
+              unread: n ? i : true,
+              resolvedUnreadSetting: l,
+              mentionCount: o,
+              locked: s,
               subtitle: this.renderSubtitle(),
               onClick: () => {
                 this.handleClick()
@@ -236,24 +236,24 @@ class en extends Chunk98597.ZP {
               onContextMenu: e => {
                 this.handleContextMenu(e)
               },
-              connectDragPreview: Chunk117358,
-              isFavoriteSuggestion: Chunk305325,
-              "aria-label": (0, Chunk201895.ZP)({
-                channel: module,
-                unread: Chunk473749,
-                mentionCount: Chunk442837,
-                userCount: Chunk695346,
-                embeddedActivitiesCount: Chunk873696.length,
-                isSubscriptionGated: Chunk446226
+              connectDragPreview: b,
+              isFavoriteSuggestion: S,
+              "aria-label": (0, O.ZP)({
+                channel: e,
+                unread: i,
+                mentionCount: o,
+                userCount: R,
+                embeddedActivitiesCount: x.length,
+                isSubscriptionGated: E
               }),
-              "aria-describedby": (0, Chunk718589.Z)({
-                channel: module,
-                embeddedApps: Chunk873696
+              "aria-describedby": (0, v.Z)({
+                channel: e,
+                embeddedApps: x
               }),
-              withGuildIcon: Chunk281956,
-              children: [Chunk305325 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+              withGuildIcon: _,
+              children: [S && (0, r.jsxs)(r.Fragment, {
                 children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-              }), !Chunk305325 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+              }), !S && (0, r.jsxs)(r.Fragment, {
                 children: [this.renderOpenChatButton(), this.renderInviteButton(), this.renderEditButton(), this.renderChannelInfo()]
               })]
             })
@@ -261,13 +261,13 @@ class en extends Chunk98597.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk168611 && (D = Chunk619915(Chunk592125)), Chunk526139 && (D = Chunk146773(Chunk888651(Chunk592125))), Chunk933557 && (D = (0, Chunk54381.jsx)(Chunk155409.Z, {
+    return y && (D = g(D)), m && (D = h(p(D))), j && (D = (0, r.jsx)(A.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
       offsetX: false,
-      children: Chunk592125
-    })), Chunk592125
+      children: D
+    })), D
   }
   constructor(...e) {
     super(...e), $(this, "state", {

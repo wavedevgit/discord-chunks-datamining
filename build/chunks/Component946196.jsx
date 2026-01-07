@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk47343 = require("./47343.js");
 
 function p() {
-  let e = (0, Chunk442837.e7)([Chunk709706.Z], () => Chunk709706.Z.getError());
-  return module ? (0, Chunk54381.jsx)(m, {
-    error: module
+  let e = (0, l.e7)([s.Z], () => s.Z.getError());
+  return e ? (0, r.jsx)(m, {
+    error: e
   }) : null
 }
 let m = e => {

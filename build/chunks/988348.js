@@ -15,12 +15,12 @@ function a() {
 function o() {
   if (null == window.DiscordNative || true === window.Uint8Array || true === window.TextDecoder) returnfalse;
   try {
-    let e = Chunk998502.ZP.requireModule("discord_zstd");
-    if (null == module) returnfalse;
+    let e = r.ZP.requireModule("discord_zstd");
+    if (null == e) returnfalse;
     returntrue
   } catch (e) {
-    if (module.message.includes("Cannot find")) return Chunk998502.ZP.ensureModule("discord_zstd").catch(e => {}), false;
-    throw module
+    if (e.message.includes("Cannot find")) return r.ZP.ensureModule("discord_zstd").catch(e => {}), false;
+    throw e
   }
 }
 
@@ -28,6 +28,6 @@ function s() {
   if (!a()) return;
   let {
     createContext: e
-  } = Chunk998502.ZP.requireModule("discord_zstd");
-  return module()
+  } = r.ZP.requireModule("discord_zstd");
+  return e()
 }

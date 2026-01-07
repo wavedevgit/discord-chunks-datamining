@@ -119,17 +119,17 @@ let h = {
     })
   },
   y = () => {
-    let e = (0, Chunk848984.u)(),
-      [t] = (0, Chunk473749.useState)(() => g({
-        install: Chunk998054.f,
-        connect: async () => await Chunk646834.Z.connect(),
-        disconnect: async () => await Chunk646834.Z.disconnect(),
-        perkAvailableToUser: module
+    let e = (0, d.u)(),
+      [t] = (0, i.useState)(() => g({
+        install: c.f,
+        connect: async () => await l.Z.connect(),
+        disconnect: async () => await l.Z.disconnect(),
+        perkAvailableToUser: e
       })),
-      n = (0, Chunk663042.o)(exports, e => e.setPerkAvailableToUser);
-    return (0, Chunk473749.useEffect)(() => {
-      require(module)
-    }, [module, require]), exports
+      n = (0, o.o)(t, e => e.setPerkAvailableToUser);
+    return (0, i.useEffect)(() => {
+      n(e)
+    }, [e, n]), t
   };
 
 function O(e) {

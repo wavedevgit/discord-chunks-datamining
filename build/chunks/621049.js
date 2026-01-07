@@ -3,5 +3,5 @@
 "use strict";
 module.exports = !require("./621523.js")(function() {
   var e = (function() {}).bind();
-  return "function" != typeof module || module.hasOwnProperty("prototype")
+  return "function" != typeof e || e.hasOwnProperty("prototype")
 })

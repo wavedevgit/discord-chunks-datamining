@@ -386,13 +386,13 @@ function z(e, t) {
 }
 
 function q() {
-  (0, Chunk532428.WK)(), V.reset(), i()(Chunk532428.ZP).forOwn((e, t) => V.addRule(v({
+  (0, E.WK)(), V.reset(), i()(E.ZP).forOwn((e, t) => V.addRule(v({
     type: t
   }, e))), H.reset();
-  let e = (0, Chunk532428.mh)();
-  i()(module).forOwn((e, t) => H.addRule(v({
+  let e = (0, E.mh)();
+  i()(e).forOwn((e, t) => H.addRule(v({
     type: t
-  }, e))), Chunk748610.Z.markSearchTokensRefreshed()
+  }, e))), h.Z.markSearchTokensRefreshed()
 }
 
 function Q(e) {
@@ -431,7 +431,7 @@ function J(e) {
 
 function $() {
   var e, t;
-  return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports
+  return null != (t = null == (e = p.default.getCurrentUser()) ? true : e.isStaff()) && t
 }
 
 function ee(e) {

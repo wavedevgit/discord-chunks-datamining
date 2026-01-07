@@ -32,7 +32,7 @@ function l(e) {
 }
 class c extends Chunk429091.d {
   serializeAllGuildRoles() {
-    return this.mapPartitions(Chunk539600.an)
+    return this.mapPartitions(a.an)
   }
   getUnsafeMutableRoles(e) {
     return this.getPartition(e)

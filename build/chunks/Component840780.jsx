@@ -130,20 +130,20 @@ class eN extends Chunk473749.PureComponent {
     async function t() {
       let {
         default: e
-      } = await require.e("5217").then(require.t.bind(require, 801048, 19));
-      return module
+      } = await n.e("5217").then(n.t.bind(n, 801048, 19));
+      return e
     }
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk436323.sparkleContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.Fmz, {
-        importData: exports,
-        shouldAnimate: !module,
-        className: Chunk436323.sparkles
+    return (0, r.jsx)("div", {
+      className: eE.sparkleContainer,
+      children: (0, r.jsx)(p.Fmz, {
+        importData: t,
+        shouldAnimate: !e,
+        className: eE.sparkles
       })
     })
   }
   renderActions() {
-    return (0, Chunk54381.jsx)(Chunk339144.J, eI(e_({}, this.props), {
+    return (0, r.jsx)(eb.J, eI(e_({}, this.props), {
       inviteButtonRef: this.inviteButtonRef
     }))
   }
@@ -163,10 +163,10 @@ class eN extends Chunk473749.PureComponent {
       accountLinkButtonRef: m,
       startAuthorization: y,
       didStartAuthorization: O
-    } = this.props, v = (0, Chunk339144.y)(Chunk473749, Chunk120356, a), j = [];
-    return require ? null : (module && Chunk438139 ? Chunk730749 && null == a ? Chunk110924.push(Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS) : Chunk110924.push(Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : Chunk570140 && null != Chunk473749 && Chunk110924.push(Chunk704215.z.ACCOUNT_LINK_PROMPT), (0, Chunk54381.jsx)(Chunk243778.ZP, {
-      contentTypes: Chunk110924,
-      groupName: Chunk921944.R.ACCOUNT_NAME_ZONE,
+    } = this.props, v = (0, eb.y)(i, l, a), j = [];
+    return n ? null : (e && O ? v && null == a ? j.push(d.z.ACCOUNT_LINK_INVITE_FRIENDS) : j.push(d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : g && null != i && j.push(d.z.ACCOUNT_LINK_PROMPT), (0, r.jsx)(L.ZP, {
+      contentTypes: j,
+      groupName: ev.R.ACCOUNT_NAME_ZONE,
       bypassAutoDismiss: true,
       children: e => {
         let {
@@ -255,13 +255,13 @@ class eN extends Chunk473749.PureComponent {
       isForceShowSharingPopout: i,
       setIsForceShowSharingPopout: l
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk441248.k, {
-      isStreaming: module,
-      application: exports,
-      game: require,
-      onClickNotSharing: () => Chunk120356(true),
-      isForceShowSharingPopout: Chunk473749,
-      setIsForceShowSharingPopout: Chunk120356,
+    return (0, r.jsx)(em.k, {
+      isStreaming: e,
+      application: t,
+      game: n,
+      onClickNotSharing: () => l(true),
+      isForceShowSharingPopout: i,
+      setIsForceShowSharingPopout: l,
       ref: this.accountLinkUpsellTargetRef,
       popoutTargetRef: this.activityPopoutTargetRef
     })
@@ -274,30 +274,30 @@ class eN extends Chunk473749.PureComponent {
     } = this.props, {
       title: i,
       sanitizedTitle: l
-    } = (0, Chunk914923.Z)(exports);
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk436323.gameWrapper,
+    } = (0, H.Z)(t);
+    return (0, r.jsxs)("div", {
+      className: eE.gameWrapper,
       ref: this.accountLinkUpsellTargetRef,
-      children: [module ? (0, Chunk54381.jsx)(Chunk165393.Z, {
-        title: Chunk120356,
-        icon: null == exports ? true : exports.sourceIcon
-      }) : (0, Chunk54381.jsx)(Chunk194082.ZP, {
-        look: Chunk194082.ZP.Looks.GRAY,
-        size: Chunk194082.ZP.Sizes.SMALL,
-        className: Chunk436323.liveIndicator
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk436323.info,
-        children: [(0, Chunk54381.jsx)(Chunk115530.Z, {
-          children: Chunk473749
-        }), null != require && (0, Chunk54381.jsxs)("div", {
-          className: Chunk436323.perksDemoContainer,
-          children: [(0, Chunk54381.jsx)(Chunk481060.SrA, {
+      children: [e ? (0, r.jsx)(W.Z, {
+        title: l,
+        icon: null == t ? true : t.sourceIcon
+      }) : (0, r.jsx)(R.ZP, {
+        look: R.ZP.Looks.GRAY,
+        size: R.ZP.Sizes.SMALL,
+        className: eE.liveIndicator
+      }), (0, r.jsxs)("div", {
+        className: eE.info,
+        children: [(0, r.jsx)(eg.Z, {
+          children: i
+        }), null != n && (0, r.jsxs)("div", {
+          className: eE.perksDemoContainer,
+          children: [(0, r.jsx)(p.SrA, {
             size: "xxs",
-            color: Chunk436774.JX.PREMIUM_TIER_2
-          }), (0, Chunk54381.jsx)(Chunk759198.Z, {
-            className: Chunk436323.perksDemoText,
+            color: M.JX.PREMIUM_TIER_2
+          }), (0, r.jsx)(Q.Z, {
+            className: eE.perksDemoText,
             variant: "text-xxs/semibold",
-            children: require
+            children: n
           })]
         })]
       })]
@@ -313,49 +313,49 @@ class eN extends Chunk473749.PureComponent {
       isForceShowSharingPopout: o,
       setIsForceShowSharingPopout: s
     } = this.props;
-    if (null == require || null == exports) return null;
+    if (null == n || null == t) return null;
     let c = {
-        start: require.connectedSince
+        start: n.connectedSince
       },
-      u = Chunk120356;
-    null != a && null != Chunk473749 ? (e = Chunk981631.Z5c.CHANNEL(a.id, Chunk473749.id), u = "".concat(Chunk442837, " / ").concat(a.name)) : null != Chunk473749 && (e = Chunk981631.Z5c.CHANNEL(Chunk981631.ME, Chunk473749.id));
-    let d = (0, Chunk54381.jsx)(Chunk690221.Z, {
-        href: module,
+      u = l;
+    null != a && null != i ? (e = ey.Z5c.CHANNEL(a.id, i.id), u = "".concat(u, " / ").concat(a.name)) : null != i && (e = ey.Z5c.CHANNEL(ey.ME, i.id));
+    let d = (0, r.jsx)(K.Z, {
+        href: e,
         onClick: this.handleChannelLinkClick,
-        children: (0, Chunk54381.jsx)(Chunk345243.Z, {
-          className: Chunk436323.channel,
-          children: Chunk442837
+        children: (0, r.jsx)(ep.Z, {
+          className: eE.channel,
+          children: u
         })
       }),
-      f = (0, Chunk54381.jsx)(Chunk690221.Z, {
-        href: module,
+      f = (0, r.jsx)(K.Z, {
+        href: e,
         onClick: this.handleApplicationLinkClick,
-        children: (0, Chunk54381.jsx)(Chunk115530.Z, {
-          className: Chunk436323.underlineOnHover,
-          children: exports.name
+        children: (0, r.jsx)(eg.Z, {
+          className: eE.underlineOnHover,
+          children: t.name
         })
       }),
-      h = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
-          className: Chunk436323.gameIcon,
-          game: exports,
-          size: Chunk925329.A.SMALL,
+      h = (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(B.Z, {
+          className: eE.gameIcon,
+          game: t,
+          size: B.A.SMALL,
           ref: this.accountLinkUpsellTargetRef
-        }), (0, Chunk54381.jsx)(Chunk736409.j, {
+        }), (0, r.jsx)(I.j, {
           popoutTargetRef: this.activityPopoutTargetRef,
-          isForceShowSharingPopout: Chunk512722,
+          isForceShowSharingPopout: o,
           setIsForceShowSharingPopout: s,
-          children: (0, Chunk54381.jsxs)("div", {
-            className: Chunk436323.info,
-            children: [Chunk198168, null != Chunk473749 && (0, Chunk131704.Qm)(Chunk473749.type) ? Chunk704215 : (0, Chunk54381.jsx)(eP, {
-              timestamps: Chunk907331
+          children: (0, r.jsxs)("div", {
+            className: eE.info,
+            children: [f, null != i && (0, J.Qm)(i.type) ? d : (0, r.jsx)(eP, {
+              timestamps: c
             })]
           })
         })]
       });
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk436323.gameWrapper,
-      children: Chunk907862
+    return (0, r.jsx)("div", {
+      className: eE.gameWrapper,
+      children: h
     })
   }
   renderFrame() {
@@ -363,37 +363,37 @@ class eN extends Chunk473749.PureComponent {
       application: e,
       frame: t
     } = this.props;
-    if (null == exports || null == module) return null;
+    if (null == t || null == e) return null;
     let n = {
-        start: exports.connectedSince
+        start: t.connectedSince
       },
-      i = (0, Chunk54381.jsx)(Chunk481060.P3F, {
+      i = (0, r.jsx)(p.P3F, {
         onClick: this.handleFrameLinkClick,
         onMouseDown: e => {
           e.stopPropagation()
         },
-        className: Chunk436323.frameApplicationNameTitleClickable,
-        children: (0, Chunk54381.jsx)(Chunk115530.Z, {
-          className: Chunk436323.underlineOnHover,
-          children: module.name
+        className: eE.frameApplicationNameTitleClickable,
+        children: (0, r.jsx)(eg.Z, {
+          className: eE.underlineOnHover,
+          children: e.name
         })
       }),
-      l = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
-          className: Chunk436323.gameIcon,
-          game: module,
-          size: Chunk925329.A.SMALL,
+      l = (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(B.Z, {
+          className: eE.gameIcon,
+          game: e,
+          size: B.A.SMALL,
           ref: this.accountLinkUpsellTargetRef
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk436323.info,
-          children: [Chunk473749, (0, Chunk54381.jsx)(eP, {
-            timestamps: require
+        }), (0, r.jsxs)("div", {
+          className: eE.info,
+          children: [i, (0, r.jsx)(eP, {
+            timestamps: n
           })]
         })]
       });
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk436323.gameWrapper,
-      children: Chunk120356
+    return (0, r.jsx)("div", {
+      className: eE.gameWrapper,
+      children: l
     })
   }
   render() {
@@ -408,7 +408,7 @@ class eN extends Chunk473749.PureComponent {
       activity: c,
       className: u
     } = this.props;
-    if (!Chunk120356 && (!(0, Chunk339144.y)(s, Chunk907331, exports) && ! function(e) {
+    if (!l && (!(0, eb.y)(s, c, t) && ! function(e) {
         let {
           application: t,
           frame: n
@@ -416,15 +416,15 @@ class eN extends Chunk473749.PureComponent {
         return null != t && null != n && n.applicationId === t.id
       }({
         application: s,
-        frame: require
-      }) && !module || null == Chunk473749 && null == exports && null == require)) return null;
-    let d = () => null == Chunk473749 || Chunk120356 && (null == Chunk512722 ? true : Chunk512722.pid) == null ? null != exports ? this.renderEmbeddedActivity() : null != require ? this.renderFrame() : this.renderScreenshare() : this.renderGame();
-    return (0, Chunk54381.jsx)("div", {
-      className: a()(Chunk436323.panel, Chunk442837),
+        frame: n
+      }) && !e || null == i && null == t && null == n)) return null;
+    let d = () => null == i || l && (null == o ? true : o.pid) == null ? null != t ? this.renderEmbeddedActivity() : null != n ? this.renderFrame() : this.renderScreenshare() : this.renderGame();
+    return (0, r.jsx)("div", {
+      className: a()(eE.panel, u),
       ref: this.activityPopoutTargetRef,
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk436323.body,
-        children: [Chunk704215(), this.renderActions(), this.renderAccountLinkPopover()]
+      children: (0, r.jsxs)("div", {
+        className: eE.body,
+        children: [d(), this.renderActions(), this.renderAccountLinkPopover()]
       })
     })
   }

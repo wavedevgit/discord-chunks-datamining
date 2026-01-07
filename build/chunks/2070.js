@@ -9,7 +9,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk728345 = require("./728345.js");
 
 function a() {
-  let [e, t] = Chunk473749.useState(false), [n, a] = Chunk473749.useState(), s = Chunk473749.useRef(null);
+  let [e, t] = r.useState(false), [n, a] = r.useState(), s = r.useRef(null);
   return {
     createGuildApplication: async (e, n, r, o) => {
       a(true);
@@ -29,7 +29,7 @@ function a() {
         t(false)
       }
     },
-    submitting: module,
-    error: require
+    submitting: e,
+    error: n
   }
 }

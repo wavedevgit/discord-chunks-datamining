@@ -9,13 +9,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk663618 = require("./663618.js");
 
 function s() {
-  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk663618.panel,
-    children: (0, Chunk54381.jsx)("div", {
+  return (0, a.jsx)(r.zJl, {
+    className: l.panel,
+    children: (0, a.jsx)("div", {
       style: {
         padding: "var(--space-8)"
       },
-      children: (0, Chunk54381.jsx)(Chunk649157.Z, {})
+      children: (0, a.jsx)(i.Z, {})
     })
   })
 }

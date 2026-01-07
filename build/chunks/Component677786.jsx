@@ -17,15 +17,15 @@ function d() {
   let {
     hasConsented: e,
     updateConsent: t
-  } = (0, Chunk915009.aR)(Chunk981631.pjP.USAGE_STATISTICS);
-  return (0, Chunk54381.jsx)(Chunk838436.U, {
-    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk517319.default.HjstRR),
-      note: Chunk388032.intl.format(Chunk517319.default.Z5yJZy, {
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_PRIVACY_CONTROLS)
+  } = (0, s.aR)(l.pjP.USAGE_STATISTICS);
+  return (0, r.jsx)(i.U, {
+    children: (0, r.jsx)(a.ZP, {
+      title: u.intl.string(c.default.HjstRR),
+      note: u.intl.format(c.default.Z5yJZy, {
+        helpdeskArticle: o.Z.getArticleURL(l.BhN.DATA_PRIVACY_CONTROLS)
       }),
-      value: module,
-      onChange: exports
+      value: e,
+      onChange: t
     })
   })
 }

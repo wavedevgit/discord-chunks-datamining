@@ -22,9 +22,9 @@ function o(e, t, n) {
 }
 var s = function() {
   function e() {
-    i(this, module)
+    i(this, e)
   }
-  return o(module, [{
+  return o(e, [{
     key: "run",
     value: function(e, t, n, i) {
       var a = this.parse(e, t, n, i);
@@ -38,5 +38,5 @@ var s = function() {
     value: function(e, t, n) {
       returntrue
     }
-  }]), module
+  }]), e
 }()

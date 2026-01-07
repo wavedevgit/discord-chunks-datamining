@@ -11,7 +11,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk354012 = require("./354012.js");
 
 function a() {
-  let e = require("./532154.js").Z;
+  let e = n(532154).Z;
   return o().filter(e => {
     let {
       enabled: t
@@ -38,7 +38,7 @@ function a() {
 }
 
 function o() {
-  return require("./515297.js")
+  return n(515297)
 }
 
 function s(e, t) {

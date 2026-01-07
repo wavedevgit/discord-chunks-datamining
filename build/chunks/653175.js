@@ -69,12 +69,12 @@ let g = (e, t) => {
   },
   E = () => {
     var e;
-    let t = (0, Chunk932724.P)(Chunk594174.default.getCurrentUser());
+    let t = (0, a.P)(f.default.getCurrentUser());
     return {
-      video_device_name: null == (e = Chunk131951.Z.getVideoDevices()[Chunk131951.Z.getVideoDeviceId()]) ? true : module.name,
-      video_hardware_scaling_enabled: Chunk131951.Z.getHardwareEncoding(),
-      video_effect_type: (0, Chunk647177.TA)(exports),
-      video_effect_detail: (0, Chunk647177.V$)(exports)
+      video_device_name: null == (e = c.Z.getVideoDevices()[c.Z.getVideoDeviceId()]) ? true : e.name,
+      video_hardware_scaling_enabled: c.Z.getHardwareEncoding(),
+      video_effect_type: (0, s.TA)(t),
+      video_effect_detail: (0, s.V$)(t)
     }
   };
 

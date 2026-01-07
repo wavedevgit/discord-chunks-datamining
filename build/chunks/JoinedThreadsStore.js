@@ -212,7 +212,7 @@ function D(e) {
 }
 class x extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default)
+    this.waitFor(u.default)
   }
   hasJoined(e) {
     return e in m

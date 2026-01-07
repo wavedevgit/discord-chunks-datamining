@@ -4,7 +4,7 @@
 
 function r() {
   let e = window;
-  return null != module.jQuery || null != module.$ || null != module.BetterDiscord || null != module.BdApi || null != module.rambox
+  return null != e.jQuery || null != e.$ || null != e.BetterDiscord || null != e.BdApi || null != e.rambox
 }
 require.d(exports, {
   e: () => r

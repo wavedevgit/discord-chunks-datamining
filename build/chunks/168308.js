@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk358085 = require("./358085.js");
 
 function o() {
-  return Chunk358085.isPlatformEmbedded
+  return a.isPlatformEmbedded
 }
 
 function s(e) {
@@ -18,5 +18,5 @@ function s(e) {
 }
 
 function l() {
-  return s((0, Chunk442837.e7)([Chunk509140.Z], () => Chunk509140.Z.isSupported))
+  return s((0, r.e7)([i.Z], () => i.Z.isSupported))
 }

@@ -106,7 +106,7 @@ class J {
     return null != t && !!(t.roles.some(t => e.roles.includes(t)) || (0, y.yH)(e))
   }
   emojiIds() {
-    return Chunk709054.default.keys(this._emojiMap)
+    return j.default.keys(this._emojiMap)
   }
   get emojis() {
     return null == this._emojis && (this._emojis = Object.values(this._emojiMap)), this._emojis
@@ -146,18 +146,18 @@ function ec(e) {
 function eu() {
   if (ed(), null == eo)
     for (let e in eo = {}, ea)
-      for (let t of ea[module].emojiIds()) eo[exports] = module;
+      for (let t of ea[e].emojiIds()) eo[t] = e;
   return eo
 }
 async function ed() {
   if (0 !== er) return;
-  let e = Chunk287328.Z.database();
-  if (null == module) return;
+  let e = _.Z.database();
+  if (null == e) return;
   er = 2;
-  let t = await (0, Chunk86670.gs)("EmojiStore.loadSavedEmojis", () => Chunk135273.Z.timeAsync("\uD83D\uDCBE", "loadSavedEmojis", () => Chunk489033.Z.getAsync(module)));
-  er = 3, null != exports && Chunk570140.Z.dispatch({
+  let t = await (0, m.gs)("EmojiStore.loadSavedEmojis", () => u.Z.timeAsync("\uD83D\uDCBE", "loadSavedEmojis", () => h.Z.getAsync(e)));
+  er = 3, null != t && f.Z.dispatch({
     type: "CACHED_EMOJIS_LOADED",
-    emojis: exports
+    emojis: t
   })
 }
 
@@ -233,18 +233,18 @@ class eh {
   }
   getFrequentlyUsedEmojisWithoutFetchingLatest() {
     if (null != this.frequentlyUsed) return this.frequentlyUsed;
-    let e = eg.frequently.map(e => null != e.id ? this.getById(e.id) : G.ZP.getByName(e.name)).filter(Chunk823379.lm),
-      t = (0, Chunk856985.Z)(module);
-    return this.frequentlyUsed = [...exports.values()], this.frequentlyUsed
+    let e = eg.frequently.map(e => null != e.id ? this.getById(e.id) : G.ZP.getByName(e.name)).filter(x.lm),
+      t = (0, F.Z)(e);
+    return this.frequentlyUsed = [...t.values()], this.frequentlyUsed
   }
   rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest() {
     if (null != this.frequentlyUsedReactionEmojis && null != this.frequentlyUsedReactionNamesAndIds) return {
       frequentlyUsedReactionEmojis: this.frequentlyUsedReactionEmojis,
       frequentlyUsedReactionNamesAndIds: this.frequentlyUsedReactionNamesAndIds
     };
-    let e = eE.frequently.map(e => null != e.id ? this.getById(e.id) : G.ZP.getByName(e.name)).filter(Chunk823379.lm),
-      t = (0, Chunk856985.Z)(module);
-    return this.frequentlyUsedReactionEmojis = [...exports.values()], this.frequentlyUsedReactionNamesAndIds = new Set(exports.keys()), {
+    let e = eE.frequently.map(e => null != e.id ? this.getById(e.id) : G.ZP.getByName(e.name)).filter(x.lm),
+      t = (0, F.Z)(e);
+    return this.frequentlyUsedReactionEmojis = [...t.values()], this.frequentlyUsedReactionNamesAndIds = new Set(t.keys()), {
       frequentlyUsedReactionEmojis: this.frequentlyUsedReactionEmojis,
       frequentlyUsedReactionNamesAndIds: this.frequentlyUsedReactionNamesAndIds
     }
@@ -267,11 +267,11 @@ class eh {
       favorites: this.favorites,
       favoriteNamesAndIds: this.favoriteNamesAndIds
     };
-    let n = (null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteEmojis) ? true : module.emojis) ? exports : []).map(e => {
+    let n = (null != (t = null == (e = I.Z.frecencyWithoutFetchingLatest.favoriteEmojis) ? true : e.emojis) ? t : []).map(e => {
         var t;
         return null != (t = this.getById(e)) ? t : G.ZP.getByName(e)
-      }).filter(Chunk823379.lm),
-      r = (0, Chunk856985.Z)(require);
+      }).filter(x.lm),
+      r = (0, F.Z)(n);
     return this.favorites = [...r.values()], this.favoriteNamesAndIds = new Set(r.keys()), {
       favorites: this.favorites,
       favoriteNamesAndIds: this.favoriteNamesAndIds
@@ -283,7 +283,7 @@ class eh {
   getEmojiInPriorityOrderWithoutFetchingLatest() {
     let e = this.getFrequentlyUsedReactionEmojisWithoutFetchingLatest(),
       t = new Set;
-    return this.favoriteEmojisWithoutFetchingLatest.concat(module).filter(e => !t.has(e) && (t.add(e), true))
+    return this.favoriteEmojisWithoutFetchingLatest.concat(e).filter(e => !t.has(e) && (t.add(e), true))
   }
   getTopEmojiWithoutFetchingLatest(e) {
     if (null == this.topEmojis) {
@@ -462,16 +462,16 @@ function ex(e, t) {
 
 function eL() {
   var e, t, n, r, i, a;
-  let o = null == (t = Chunk581883.Z.settings.textAndImages) || null == (e = exports.diversitySurrogate) ? true : module.value;
-  null != Chunk392711 && Chunk633302.ZP.setDefaultDiversitySurrogate(Chunk392711), eh.reset();
-  let l = Chunk581883.Z.frecencyWithoutFetchingLatest,
-    c = null != (i = null == (n = Chunk913527.emojiFrecency) ? true : require.emojis) ? Chunk512722 : {},
-    u = null != (a = null == (r = Chunk913527.emojiReactionFrecency) ? true : r.emojis) ? a : {};
+  let o = null == (t = I.Z.settings.textAndImages) || null == (e = t.diversitySurrogate) ? true : e.value;
+  null != o && G.ZP.setDefaultDiversitySurrogate(o), eh.reset();
+  let l = I.Z.frecencyWithoutFetchingLatest,
+    c = null != (i = null == (n = l.emojiFrecency) ? true : n.emojis) ? i : {},
+    u = null != (a = null == (r = l.emojiReactionFrecency) ? true : r.emojis) ? a : {};
   eg.overwriteHistory(s().mapValues(c, e => q(K({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), X.pendingUsages), eE.overwriteHistory(s().mapValues(Chunk135273, e => q(K({}, e), {
+  })), X.pendingUsages), eE.overwriteHistory(s().mapValues(u, e => q(K({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), X.emojiReactionPendingUsages), ex(c, Chunk135273)
+  })), X.emojiReactionPendingUsages), ex(c, u)
 }
 
 function ej(e) {
@@ -571,7 +571,7 @@ class eB extends(r = Chunk442837.ZP.PersistedStore) {
   }
   get diversitySurrogate() {
     var e;
-    return null != (e = Chunk633302.ZP.getDefaultDiversitySurrogate()) ? module : ""
+    return null != (e = G.ZP.getDefaultDiversitySurrogate()) ? e : ""
   }
   get emojiFrecencyWithoutFetchingLatest() {
     return eg
@@ -676,7 +676,7 @@ class eB extends(r = Chunk442837.ZP.PersistedStore) {
     return es.get(e)
   }
   hasUsableEmojiInAnyGuild() {
-    return ed(), Chunk709054.default.keys(ea).some(e => ea[e].usableEmojis.length > 0)
+    return ed(), j.default.keys(ea).some(e => ea[e].usableEmojis.length > 0)
   }
   hasFavoriteEmojis(e) {
     let t = eh.get(e);

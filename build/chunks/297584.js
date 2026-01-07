@@ -15,7 +15,7 @@ class s {
   prepare() {
     if (!this.fields) {
       let e = this.info.fields ? this.info.fields.concat() : [];
-      this.fields = module.sort((e, t) => e.no - t.no)
+      this.fields = e.sort((e, t) => e.no - t.no)
     }
   }
   write(e, t, n) {

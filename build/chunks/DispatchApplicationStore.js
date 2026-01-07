@@ -295,7 +295,7 @@ function X(e) {
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default)
+    this.waitFor(u.default)
   }
   getState(e, t) {
     return A[(0, _.Tu)(e, t)]

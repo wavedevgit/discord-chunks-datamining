@@ -25,7 +25,7 @@ var Chunk772848 = require("./772848.js"),
   u = function(e) {
     return e.FullProfile = "full_profile", e.MiniProfile = "mini_profile", e
   }({});
-let d = () => (0, Chunk772848.Z)(),
+let d = () => (0, r.Z)(),
   f = e => {
     let {
       viewId: t,

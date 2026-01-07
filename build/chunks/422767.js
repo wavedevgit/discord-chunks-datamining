@@ -11,10 +11,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk569550 = require("./569550.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.VOICE_SWITCH_CHANNEL_ALERT_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.jrWHD3),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.YCCMkJ),
+  useTitle: () => o.intl.string(o.t.jrWHD3),
+  useSubtitle: () => o.intl.string(o.t.YCCMkJ),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk740492.ZP], () => !Chunk740492.ZP.disableVoiceChannelChangeAlert)
+    return (0, i.e7)([u.ZP], () => !u.ZP.disableVoiceChannelChangeAlert)
   },
   setValue: function(t) {
     (0, a.Z)("switch_channel_warning_enabled", t, !u.ZP.disableVoiceChannelChangeAlert), l.ZP.updatedUnsyncedSettings({

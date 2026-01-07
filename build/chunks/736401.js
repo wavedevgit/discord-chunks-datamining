@@ -23,20 +23,20 @@ let u = 6048e5,
   d = "lastSawPomelo";
 
 function f() {
-  Chunk433517.K.set(d, Date.now())
+  r.K.set(d, Date.now())
 }
 
 function p() {
-  if (!Chunk918505.w8.getCurrentConfig({
+  if (!o.w8.getCurrentConfig({
       location: "b9eb97_1"
     }, {
       autoTrackExposure: false
     }).enabled) returnfalse;
-  let e = Chunk594174.default.getCurrentUser();
-  if (null == module || module.hasUniqueUsername() || !module.hasVerifiedEmailOrPhone()) returnfalse;
+  let e = a.default.getCurrentUser();
+  if (null == e || e.hasUniqueUsername() || !e.hasVerifiedEmailOrPhone()) returnfalse;
   let t = d,
-    n = Chunk433517.K.get(exports);
-  return !(null != require && Date.now() - require < u)
+    n = r.K.get(t);
+  return !(null != n && Date.now() - n < u)
 }
 class _ extends Chunk147913.Z {
   constructor(...e) {

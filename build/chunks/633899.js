@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk857614 = require("./857614.js");
 let a = function() {
-  var e = (0, Chunk857614.default)({
+  var e = (0, o.default)({
     default: {
       picker: {
         width: "12px",
@@ -18,7 +18,7 @@ let a = function() {
       }
     }
   });
-  return Chunk473749.createElement("div", {
-    style: module.picker
+  return n.createElement("div", {
+    style: e.picker
   })
 }

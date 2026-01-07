@@ -18,17 +18,17 @@ let f = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
 
 function p() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    [t, n] = Chunk473749.useState(false),
-    r = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    o = Chunk473749.useMemo(() => {
-      let n = exports || !Chunk54381 && !module;
-      return (0, Chunk426563.j)(require)
-    }, [exports, Chunk54381, module]);
+    [t, n] = i.useState(false),
+    r = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
+    o = i.useMemo(() => {
+      let n = t || !r && !e;
+      return (0, l.j)(n)
+    }, [t, r, e]);
   return {
-    avatarSrc: Chunk481060,
+    avatarSrc: o,
     eventHandlers: {
-      onMouseEnter: Chunk473749.useCallback(() => require(true), []),
-      onMouseLeave: Chunk473749.useCallback(() => require(false), [])
+      onMouseEnter: i.useCallback(() => n(true), []),
+      onMouseLeave: i.useCallback(() => n(false), [])
     }
   }
 }

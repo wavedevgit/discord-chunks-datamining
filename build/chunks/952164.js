@@ -26,7 +26,7 @@ function s(e, t, n) {
 }
 
 function l() {
-  window.open(Chunk616922.C7.PREMIUM_SITE)
+  window.open(o.C7.PREMIUM_SITE)
 }
 
 function c(e) {

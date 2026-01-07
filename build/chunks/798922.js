@@ -17,34 +17,34 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let g = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_DESCRIPTION_CATEGORY, {
-    buildLayout: () => [Chunk572161.Z]
+    buildLayout: () => [E.Z]
   }),
   I = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_CATEGORY, {
-    buildLayout: () => [Chunk830031.P, Chunk211839.m],
-    initialize: () => ((0, Chunk43015.fw)(), () => {
-      (0, Chunk43015.$Z)()
+    buildLayout: () => [S.P, c.m],
+    initialize: () => ((0, s.fw)(), () => {
+      (0, s.$Z)()
     })
   }),
   N = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
-    usePredicate: () => !(0, Chunk526665.gN)("LegacySessionsPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
+    usePredicate: () => !(0, o.gN)("LegacySessionsPanel"),
+    useTitle: () => _.intl.string(_.t["+1h0k/"]),
     hideInStreamerMode: true,
     StronglyDiscouragedCustomComponent: Chunk36192.ZP,
     buildLayout: () => []
   }),
   A = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
-    usePredicate: () => (0, Chunk526665.gN)("SessionsPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
+    usePredicate: () => (0, o.gN)("SessionsPanel"),
+    useTitle: () => _.intl.string(_.t["+1h0k/"]),
     hideInStreamerMode: true,
     buildLayout: () => [g, I]
   }),
   O = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("SessionsPanel") ? true : Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
+    useTitle: () => _.intl.string(_.t["+1h0k/"]),
+    getLegacySearchKey: () => (0, o.Gl)("SessionsPanel") ? true : d.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     icon: Chunk657707.dW3,
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
-      getDismissibleContentTypes: () => [Chunk704215.z.AUTH_SESSIONS_NEW]
+      getDismissibleContentTypes: () => [l.z.AUTH_SESSIONS_NEW]
     },
-    buildLayout: () => (0, Chunk526665.Gl)("SessionsPanel") ? [A] : [N]
+    buildLayout: () => (0, o.Gl)("SessionsPanel") ? [A] : [N]
   })

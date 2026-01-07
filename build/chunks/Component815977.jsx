@@ -38,9 +38,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk477242 = require("./477242.js");
 
 function A() {
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId());
-  return null == module ? null : (0, Chunk54381.jsx)(L, {
-    guildId: module
+  let e = (0, s.e7)([b.Z], () => b.Z.getGuildId());
+  return null == e ? null : (0, r.jsx)(L, {
+    guildId: e
   })
 }
 

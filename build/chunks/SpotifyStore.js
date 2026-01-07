@@ -100,12 +100,12 @@ let M = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
 
 function eu() {
   for (let e in ea) {
-    let t = ea[module];
-    if (!exports.connected || null == eo[module]) continue;
-    let n = eo[module].find(e => e.is_active);
-    if (null != require) return {
-      socket: exports,
-      device: require
+    let t = ea[e];
+    if (!t.connected || null == eo[e]) continue;
+    let n = eo[e].find(e => e.is_active);
+    if (null != n) return {
+      socket: t,
+      device: n
     }
   }
 }
@@ -149,17 +149,17 @@ class em {
     this._requestedDisconnect = true, this.backoff.cancel();
     try {
       var e;
-      null == (e = this.socket) || module.close()
+      null == (e = this.socket) || e.close()
     } catch (e) {}
   }
   ping() {
     var e;
-    this.connected && (null == (e = this.socket) || module.send(JSON.stringify({
+    this.connected && (null == (e = this.socket) || e.send(JSON.stringify({
       type: X
     })))
   }
   handleOpen() {
-    $.info("WS Connected"), this.backoff.succeed(), this.pingInterval.start(G, () => this.ping()), (0, Chunk781518.Ai)(this.accountId, this.accessToken), (0, Chunk781518.PW)(this.accountId, this.accessToken)
+    $.info("WS Connected"), this.backoff.succeed(), this.pingInterval.start(G, () => this.ping()), (0, P.Ai)(this.accountId, this.accessToken), (0, P.PW)(this.accountId, this.accessToken)
   }
   handleMessage(e) {
     let {
@@ -188,7 +188,7 @@ class em {
       let e = this.backoff.fail(() => {
         this._requestedDisconnect || this.connect()
       });
-      $.info("WS Disconnected. Next retry in ".concat(Math.round(module), "ms"))
+      $.info("WS Disconnected. Next retry in ".concat(Math.round(e), "ms"))
     } catch (e) {}
   }
   handleEvent(e) {
@@ -264,43 +264,43 @@ function eb(e, t, n) {
 }
 
 function ey() {
-  Chunk626135.default.track(Chunk981631.rMx.SPOTIFY_LISTEN_ALONG_ENDED, {
+  T.default.track(w.rMx.SPOTIFY_LISTEN_ALONG_ENDED, {
     party_id: null != i ? i.partyId : null,
     other_user_id: null != i ? i.userId : null
   });
   let e = null != i ? i.trackId : null;
   i = null, $.info("Listen along stopped");
   let t = eu();
-  if (null == exports) return;
+  if (null == t) return;
   let {
     socket: n
-  } = exports, r = es[require.accountId];
-  null != r && r.track.id === module && (0, Chunk781518.wO)(require.accountId, require.accessToken)
+  } = t, r = es[n.accountId];
+  null != r && r.track.id === e && (0, P.wO)(n.accountId, n.accessToken)
 }
 
 function eO() {
   let e = Object.keys(ea),
-    t = Chunk553795.Z.getAccounts().filter(e => {
+    t = y.Z.getAccounts().filter(e => {
       let {
         type: t
       } = e;
       return t === w.ABu.SPOTIFY
     });
-  if (null == exports) returnfalse;
-  let n = exports.map(e => {
+  if (null == t) returnfalse;
+  let n = t.map(e => {
     let {
       id: t
     } = e;
     return t
   });
-  for (let t of module) require.includes(exports) || eg(exports);
+  for (let t of e) n.includes(t) || eg(t);
   let i = false;
-  for (let n of exports)
-    if (null != r && r.account.id === require.id && (r.account = require, i = true), !module.includes(require.id)) {
-      if (null != require.accessToken) {
-        eh(require.id, require.accessToken);
+  for (let n of t)
+    if (null != r && r.account.id === n.id && (r.account = n, i = true), !e.includes(n.id)) {
+      if (null != n.accessToken) {
+        eh(n.id, n.accessToken);
         continue
-      }(0, Chunk781518.hP)(require.id)
+      }(0, P.hP)(n.id)
     } return i
 }
 
@@ -428,27 +428,27 @@ function eR() {
   if (null == i || null == eu()) returnfalse;
   let {
     userId: e
-  } = i, t = ep(module);
-  if (null == exports) return en.start(B, () => {
-    null != i && i.userId === module && (0, Chunk524331.Z)()
+  } = i, t = ep(e);
+  if (null == t) return en.start(B, () => {
+    null != i && i.userId === e && (0, h.Z)()
   }), false;
   en.stop();
   let {
     sync_id: n,
     timestamps: r,
     party: a
-  } = exports, o = null != require && i.trackId !== require, s = null != r && i.startTime !== r.start;
-  return o || Chunk392711 ? eb(module, exports, false) : null != a && a.id !== i.partyId && (i.partyId = a.id, true)
+  } = t, o = null != n && i.trackId !== n, s = null != r && i.startTime !== r.start;
+  return o || s ? eb(e, t, false) : null != a && a.id !== i.partyId && (i.partyId = a.id, true)
 }
 
 function ew() {
   if (null == r) return;
   let e = eu();
-  if (null == module) return;
+  if (null == e) return;
   let {
     socket: t
-  } = module;
-  el = true, (0, Chunk781518.wO)(exports.accountId, exports.accessToken), Chunk626135.default.track(Chunk981631.rMx.SPOTIFY_AUTO_PAUSED), $.info("Playback auto paused")
+  } = e;
+  el = true, (0, P.wO)(t.accountId, t.accessToken), T.default.track(w.rMx.SPOTIFY_AUTO_PAUSED), $.info("Playback auto paused")
 }
 
 function eD(e) {
@@ -591,7 +591,7 @@ function eU(e, t) {
 }
 class eG extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk553795.Z, Chunk517100.Z, Chunk158776.Z, Chunk594190.ZP, Chunk606304.Z, Chunk979651.Z), this.syncWith([Chunk158776.Z], () => eR()), (0, Chunk781518.k1)()
+    this.waitFor(b.default, y.Z, O.Z, v.Z, E.ZP, S.Z, I.Z), this.syncWith([v.Z], () => eR()), (0, P.k1)()
   }
   hasConnectedAccount() {
     return Object.keys(ea).length > 0
@@ -602,15 +602,15 @@ class eG extends(o = Chunk442837.ZP.Store) {
   getPlayableComputerDevices() {
     let e = [];
     for (let t in ea) {
-      let n = ea[exports];
-      if (!require.connected || null == eo[exports]) continue;
-      let r = eo[exports].find(e => !e.is_restricted && e.type === Y);
-      null != r && module.push({
-        socket: require,
+      let n = ea[t];
+      if (!n.connected || null == eo[t]) continue;
+      let r = eo[t].find(e => !e.is_restricted && e.type === Y);
+      null != r && e.push({
+        socket: n,
         device: r
       })
     }
-    return module
+    return e
   }
   canPlay(e) {
     let {
@@ -635,7 +635,7 @@ class eG extends(o = Chunk442837.ZP.Store) {
     return es[e]
   }
   shouldShowActivity() {
-    return null != r && r.account.showActivity && !Chunk517100.Z.isIdle()
+    return null != r && r.account.showActivity && !O.Z.isIdle()
   }
   getActivity() {
     let e, t, n;
@@ -653,42 +653,42 @@ class eG extends(o = Chunk442837.ZP.Store) {
       startTime: f,
       context: p
     } = r, _ = a.slice(0, W);
-    a.length > 0 && (e = Chunk586902.map(e => {
+    a.length > 0 && (e = _.map(e => {
       let {
         name: t
       } = e;
       return t.replace(/;/g, "")
     }).join("; "));
     let m = {},
-      h = null != o.image ? (0, Chunk81063.f)(Chunk981631.ABu.SPOTIFY, o.image.url) : null;
-    null != o.image && null != Chunk524331 && (Chunk726542.large_image = Chunk524331), o.type !== J && (Chunk726542.large_text = o.name), null != Chunk570140 && (t = Chunk570140.uri), n = null != i && null != i.partyId ? i.partyId : "".concat(Chunk616922.lS).concat(Chunk314897.default.getId());
-    let g = Chunk392711.length > q ? Chunk392711.substring(0, q - 3) + "..." : Chunk392711,
+      h = null != o.image ? (0, C.f)(w.ABu.SPOTIFY, o.image.url) : null;
+    null != o.image && null != h && (m.large_image = h), o.type !== J && (m.large_text = o.name), null != p && (t = p.uri), n = null != i && null != i.partyId ? i.partyId : "".concat(R.lS).concat(b.default.getId());
+    let g = s.length > q ? s.substring(0, q - 3) + "..." : s,
       E = {
-        context_uri: exports,
+        context_uri: t,
         album_id: o.id,
-        artist_ids: Chunk586902.map(e => {
+        artist_ids: _.map(e => {
           let {
             id: t
           } = e;
           return t
         }),
-        type: Chunk902704,
+        type: d,
         button_urls: []
       },
       y = {
         name: M.name,
-        assets: Chunk726542,
-        details: Chunk710845,
-        state: module,
+        assets: m,
+        details: g,
+        state: e,
         timestamps: {
-          start: Chunk846519,
-          end: Chunk846519 + Chunk261470
+          start: f,
+          end: f + c
         },
         party: {
-          id: require
+          id: n
         }
       };
-    return Chunk442837 || (Chunk553795.sync_id = l, Chunk553795.flags = Chunk981631.xjy.PLAY | Chunk981631.xjy.SYNC, Chunk553795.metadata = Chunk594190), Chunk553795
+    return u || (y.sync_id = l, y.flags = w.xjy.PLAY | w.xjy.SYNC, y.metadata = E), y
   }
 }
 D(eG, "displayName", "SpotifyStore");

@@ -52,53 +52,53 @@ class g extends Chunk473749.Component {
       reason: e,
       className: t
     } = this.props;
-    if (module.type === Chunk981631.AzA.RECENT_RELEASE_DATE) return (0, Chunk54381.jsx)(f, {
-      className: exports,
-      circle: (0, Chunk54381.jsx)(p, {
-        IconComponent: Chunk481060.Que
+    if (e.type === c.AzA.RECENT_RELEASE_DATE) return (0, r.jsx)(f, {
+      className: t,
+      circle: (0, r.jsx)(p, {
+        IconComponent: o.Que
       }),
-      smallHeader: Chunk388032.intl.string(Chunk388032.t.u81aYY),
-      text: (0, Chunk55935.vc)(module.releaseDate, "LL")
+      smallHeader: u.intl.string(u.t.u81aYY),
+      text: (0, s.vc)(e.releaseDate, "LL")
     });
-    if (module.type === Chunk981631.AzA.RELEASE_DATE) return (0, Chunk54381.jsx)(f, {
-      className: exports,
-      circle: (0, Chunk54381.jsx)(p, {
-        IconComponent: Chunk481060.Que
+    if (e.type === c.AzA.RELEASE_DATE) return (0, r.jsx)(f, {
+      className: t,
+      circle: (0, r.jsx)(p, {
+        IconComponent: o.Que
       }),
-      smallHeader: Chunk388032.intl.string(Chunk388032.t.qpwaNY),
-      text: (0, Chunk55935.vc)(module.releaseDate, "LL")
+      smallHeader: u.intl.string(u.t.qpwaNY),
+      text: (0, s.vc)(e.releaseDate, "LL")
     });
-    if (module.type === Chunk981631.AzA.EARLY_ACCESS)
-      if (null != module.releaseDate) return (0, Chunk54381.jsx)(f, {
-        className: exports,
-        circle: (0, Chunk54381.jsx)(p, {
-          IconComponent: Chunk481060.d$P,
-          className: Chunk764451.earlyAccess
+    if (e.type === c.AzA.EARLY_ACCESS)
+      if (null != e.releaseDate) return (0, r.jsx)(f, {
+        className: t,
+        circle: (0, r.jsx)(p, {
+          IconComponent: o.d$P,
+          className: d.earlyAccess
         }),
-        smallHeader: Chunk388032.intl.string(Chunk388032.t.HYys0s),
-        text: (0, Chunk55935.vc)(module.releaseDate, "LL")
+        smallHeader: u.intl.string(u.t.HYys0s),
+        text: (0, s.vc)(e.releaseDate, "LL")
       });
-      else return (0, Chunk54381.jsx)(f, {
-        className: exports,
-        circle: (0, Chunk54381.jsx)(p, {
-          IconComponent: Chunk481060.d$P,
-          className: Chunk764451.earlyAccess
+      else return (0, r.jsx)(f, {
+        className: t,
+        circle: (0, r.jsx)(p, {
+          IconComponent: o.d$P,
+          className: d.earlyAccess
         }),
-        text: Chunk388032.intl.string(Chunk388032.t.HYys0s)
+        text: u.intl.string(u.t.HYys0s)
       });
-    return module.type === Chunk981631.AzA.FLAVOR_TEXT ? (0, Chunk54381.jsx)(f, {
-      circle: (0, Chunk54381.jsx)(p, {
-        IconComponent: Chunk481060.dz2
+    return e.type === c.AzA.FLAVOR_TEXT ? (0, r.jsx)(f, {
+      circle: (0, r.jsx)(p, {
+        IconComponent: o.dz2
       }),
-      text: module.flavorText,
-      className: exports
-    }) : module.type === Chunk981631.AzA.HAS_FREE_PREMIUM_CONTENT ? (0, Chunk54381.jsx)(f, {
-      className: exports,
-      circle: (0, Chunk54381.jsx)(p, {
-        IconComponent: Chunk481060.SrA,
-        className: Chunk764451.premiumCircle
+      text: e.flavorText,
+      className: t
+    }) : e.type === c.AzA.HAS_FREE_PREMIUM_CONTENT ? (0, r.jsx)(f, {
+      className: t,
+      circle: (0, r.jsx)(p, {
+        IconComponent: o.SrA,
+        className: d.premiumCircle
       }),
-      text: Chunk388032.intl.string(Chunk388032.t.R9SwVl)
+      text: u.intl.string(u.t.R9SwVl)
     }) : null
   }
 }

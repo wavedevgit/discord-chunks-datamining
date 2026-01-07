@@ -293,11 +293,11 @@ let w = ["bytes"],
 class j {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, L.unregister(this), module
+    return this.__wbg_ptr = 0, L.unregister(this), e
   }
   free() {
     let e = this.__destroy_into_raw();
-    r.__wbg_blockeddomainsstore_free(module, 0)
+    r.__wbg_blockeddomainsstore_free(e, 0)
   }
   static isBlockedDomain(e) {
     let t, n = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
@@ -318,11 +318,11 @@ let M = "undefined" == typeof FinalizationRegistry ? {
 class k {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, M.unregister(this), module
+    return this.__wbg_ptr = 0, M.unregister(this), e
   }
   free() {
     let e = this.__destroy_into_raw();
-    r.__wbg_experimentcacher_free(module, 0)
+    r.__wbg_experimentcacher_free(e, 0)
   }
   static getConfig(e) {
     let t = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
@@ -343,11 +343,11 @@ let U = "undefined" == typeof FinalizationRegistry ? {
 class G {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, U.unregister(this), module
+    return this.__wbg_ptr = 0, U.unregister(this), e
   }
   free() {
     let e = this.__destroy_into_raw();
-    r.__wbg_intounderlyingbytesource_free(module, 0)
+    r.__wbg_intounderlyingbytesource_free(e, 0)
   }
   get autoAllocateChunkSize() {
     return r.intounderlyingbytesource_autoAllocateChunkSize(this.__wbg_ptr) >>> 0
@@ -363,7 +363,7 @@ class G {
   }
   cancel() {
     let e = this.__destroy_into_raw();
-    r.intounderlyingbytesource_cancel(module)
+    r.intounderlyingbytesource_cancel(e)
   }
 }
 let Z = "undefined" == typeof FinalizationRegistry ? {
@@ -373,11 +373,11 @@ let Z = "undefined" == typeof FinalizationRegistry ? {
 class F {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, Z.unregister(this), module
+    return this.__wbg_ptr = 0, Z.unregister(this), e
   }
   free() {
     let e = this.__destroy_into_raw();
-    r.__wbg_intounderlyingsink_free(module, 0)
+    r.__wbg_intounderlyingsink_free(e, 0)
   }
   abort(e) {
     let t = this.__destroy_into_raw();
@@ -385,7 +385,7 @@ class F {
   }
   close() {
     let e = this.__destroy_into_raw();
-    return r.intounderlyingsink_close(module)
+    return r.intounderlyingsink_close(e)
   }
   write(e) {
     return r.intounderlyingsink_write(this.__wbg_ptr, e)
@@ -398,18 +398,18 @@ let B = "undefined" == typeof FinalizationRegistry ? {
 class V {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, B.unregister(this), module
+    return this.__wbg_ptr = 0, B.unregister(this), e
   }
   free() {
     let e = this.__destroy_into_raw();
-    r.__wbg_intounderlyingsource_free(module, 0)
+    r.__wbg_intounderlyingsource_free(e, 0)
   }
   pull(e) {
     return r.intounderlyingsource_pull(this.__wbg_ptr, e)
   }
   cancel() {
     let e = this.__destroy_into_raw();
-    r.intounderlyingsource_cancel(module)
+    r.intounderlyingsource_cancel(e)
   }
 }
 let H = "undefined" == typeof FinalizationRegistry ? {
@@ -424,11 +424,11 @@ class Y {
   }
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, H.unregister(this), module
+    return this.__wbg_ptr = 0, H.unregister(this), e
   }
   free() {
     let e = this.__destroy_into_raw();
-    r.__wbg_wasmcacheableexperimentconfig_free(module, 0)
+    r.__wbg_wasmcacheableexperimentconfig_free(e, 0)
   }
   get treatmentId() {
     return r.__wbg_get_wasmcacheableexperimentconfig_treatmentId(this.__wbg_ptr)
@@ -771,23 +771,23 @@ function e1(e) {
 }
 
 function e3() {
-  let e = true === require.g ? null : require.g;
-  return d(module) ? 0 : c(module)
+  let e = true === n.g ? null : n.g;
+  return d(e) ? 0 : c(e)
 }
 
 function e2() {
   let e = "undefined" == typeof globalThis ? null : globalThis;
-  return d(module) ? 0 : c(module)
+  return d(e) ? 0 : c(e)
 }
 
 function e4() {
   let e = "undefined" == typeof self ? null : self;
-  return d(module) ? 0 : c(module)
+  return d(e) ? 0 : c(e)
 }
 
 function e5() {
   let e = "undefined" == typeof window ? null : window;
-  return d(module) ? 0 : c(module)
+  return d(e) ? 0 : c(e)
 }
 
 function e8(e) {
@@ -852,8 +852,8 @@ function tl(e, t) {
 
 function tc() {
   let e = r.__wbindgen_export_2,
-    t = module.grow(4);
-  module.set(0, true), module.set(exports + 0, true), module.set(exports + 1, null), module.set(exports + 2, true), module.set(exports + 3, false)
+    t = e.grow(4);
+  e.set(0, true), e.set(t + 0, true), e.set(t + 1, null), e.set(t + 2, true), e.set(t + 3, false)
 }
 
 function tu(e) {

@@ -14,13 +14,13 @@ class s extends Chunk473749.PureComponent {
       className: e,
       sku: t
     } = this.props;
-    return null == exports.legalNotice ? null : (0, Chunk54381.jsxs)("div", {
-      className: module,
-      children: [(0, Chunk54381.jsx)(Chunk770146.Z, {
-        children: Chunk388032.intl.string(Chunk388032.t.m8OiMv)
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk138970.content,
-        children: exports.legalNotice
+    return null == t.legalNotice ? null : (0, r.jsxs)("div", {
+      className: e,
+      children: [(0, r.jsx)(l.Z, {
+        children: a.intl.string(a.t.m8OiMv)
+      }), (0, r.jsx)("div", {
+        className: o.content,
+        children: t.legalNotice
       })]
     })
   }

@@ -24,9 +24,9 @@ let l = e => {
     })
   },
   c = () => {
-    let e = (0, Chunk533525.b)(),
-      t = (0, Chunk266454.Nj)(Chunk704215.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
-    return module && !exports
+    let e = (0, a.b)(),
+      t = (0, i.Nj)(r.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
+    return e && !t
   },
   u = e => {
     let {

@@ -60,11 +60,11 @@ class g extends Chunk473749.PureComponent {
       totpSecret: o,
       code: h,
       isVerifying: g
-    } = this.state, m = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, x = (0, Chunk287880.U0)(null != m ? m : "", Chunk816814), b = (0, Chunk54381.jsx)("form", {
+    } = this.state, m = null == (e = l.default.getCurrentUser()) ? true : e.email, x = (0, d.U0)(null != m ? m : "", o), b = (0, r.jsx)("form", {
       onSubmit: this.handleActivate,
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk416094.inputContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
+      children: (0, r.jsxs)("div", {
+        className: p.inputContainer,
+        children: [(0, r.jsx)(a.oil, {
           value: h,
           placeholder: "000 000",
           maxLength: 7,
@@ -73,62 +73,62 @@ class g extends Chunk473749.PureComponent {
           error: this.state.error,
           autoFocus: true,
           fullWidth: true
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, r.jsx)(a.Button, {
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t["/a5+YV"]),
+          text: u.intl.string(u.t["/a5+YV"]),
           type: "submit",
           loading: g
         })]
       })
     });
-    return (0, Chunk54381.jsxs)(Chunk775086.Modal, {
-      title: Chunk388032.intl.string(Chunk388032.t.cDgKte),
-      subtitle: Chunk388032.intl.string(Chunk388032.t["7NGwtH"]),
-      transitionState: exports,
-      onClose: Chunk473749,
+    return (0, r.jsxs)(i.Modal, {
+      title: u.intl.string(u.t.cDgKte),
+      subtitle: u.intl.string(u.t["7NGwtH"]),
+      transitionState: t,
+      onClose: s,
       actions: [],
-      children: [(0, Chunk54381.jsx)(f, {
-        image: (0, Chunk54381.jsx)("img", {
+      children: [(0, r.jsx)(f, {
+        image: (0, r.jsx)("img", {
           alt: "",
-          src: require("./340061.js"),
+          src: n(340061),
           width: 100,
           height: 100
         }),
-        label: Chunk388032.intl.string(Chunk388032.t["9E74Dx"]),
-        text: Chunk388032.intl.format(Chunk388032.t.A7Aehw, {
+        label: u.intl.string(u.t["9E74Dx"]),
+        text: u.intl.format(u.t.A7Aehw, {
           googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en",
           authyURL: "https://www.authy.com/"
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk416094.divider
-      }), (0, Chunk54381.jsx)(f, {
-        image: (0, Chunk54381.jsx)(Chunk198993.ZP, {
+      }), (0, r.jsx)(a.izJ, {
+        className: p.divider
+      }), (0, r.jsx)(f, {
+        image: (0, r.jsx)(c.ZP, {
           text: x
         }),
-        label: Chunk388032.intl.string(Chunk388032.t["91InF1"]),
-        text: Chunk388032.intl.string(Chunk388032.t.hFeBkl),
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk416094.topSpacing,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+        label: u.intl.string(u.t["91InF1"]),
+        text: u.intl.string(u.t.hFeBkl),
+        children: (0, r.jsxs)("div", {
+          className: p.topSpacing,
+          children: [(0, r.jsx)(a.Heading, {
             variant: "heading-sm/semibold",
-            className: Chunk416094.headerSpacing,
-            children: Chunk388032.intl.string(Chunk388032.t["76IPwr"])
-          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+            className: p.headerSpacing,
+            children: u.intl.string(u.t["76IPwr"])
+          }), (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
-            className: Chunk416094.secret,
+            className: p.secret,
             selectable: true,
-            children: Chunk816814
+            children: o
           })]
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk416094.divider
-      }), (0, Chunk54381.jsx)(f, {
-        image: (0, Chunk54381.jsx)("img", {
+      }), (0, r.jsx)(a.izJ, {
+        className: p.divider
+      }), (0, r.jsx)(f, {
+        image: (0, r.jsx)("img", {
           alt: "",
-          src: require("./308777.js")
+          src: n(308777)
         }),
-        label: Chunk388032.intl.string(Chunk388032.t["SaD/LY"]),
-        text: Chunk388032.intl.string(Chunk388032.t.vI1zic),
+        label: u.intl.string(u.t["SaD/LY"]),
+        text: u.intl.string(u.t.vI1zic),
         children: b
       })]
     })

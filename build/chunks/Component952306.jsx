@@ -47,16 +47,16 @@ let c = {
   openClaimAccountModal: function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
       t = arguments.length > 1 ? arguments[1] : true;
-    (0, Chunk481060.ZDy)(async () => {
+    (0, i.ZDy)(async () => {
       let {
         default: t
-      } = await require.e("60827").then(require.bind(require, 324239));
+      } = await n.e("60827").then(n.bind(n, 324239));
       return n => (0, r.jsx)(t, l({
         claimRequired: e
       }, n))
     }, {
-      onCloseRequest: module ? Chunk231338.dG : null,
-      onCloseCallback: exports
+      onCloseRequest: e ? o.dG : null,
+      onCloseCallback: t
     })
   }
 }

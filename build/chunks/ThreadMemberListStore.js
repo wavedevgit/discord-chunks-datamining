@@ -245,14 +245,14 @@ function L(e) {
 }
 class j extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk797316.Z, Chunk158776.Z, Chunk885110.Z, Chunk594174.default), this.syncWith([Chunk797316.Z], () => {
-      let e = Chunk797316.Z.getSubscribedThreadIds(),
+    this.waitFor(l.Z, c.ZP, u.Z, d.Z, f.Z, p.default), this.syncWith([u.Z], () => {
+      let e = u.Z.getSubscribedThreadIds(),
         t = false;
-      for (let n in y) module.has(require) || (delete y[require], t = true);
-      return exports
-    }), this.syncWith([Chunk885110.Z], () => {
+      for (let n in y) e.has(n) || (delete y[n], t = true);
+      return t
+    }), this.syncWith([f.Z], () => {
       var e;
-      return N(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id)
+      return N(null == (e = p.default.getCurrentUser()) ? true : e.id)
     })
   }
   getMemberListVersion(e) {

@@ -8,7 +8,7 @@ let r = function() {
   function e(e, t) {
     this.minDate = null, this.maxDate = null, this._result = [], this.total = 0, this.method = e, this.args = t, "between" === e ? (this.maxDate = t.inc ? t.before : new Date(t.before.getTime() - 1), this.minDate = t.inc ? t.after : new Date(t.after.getTime() + 1)) : "before" === e ? this.maxDate = t.inc ? t.dt : new Date(t.dt.getTime() - 1) : "after" === e && (this.minDate = t.inc ? t.dt : new Date(t.dt.getTime() + 1))
   }
-  return module.prototype.accept = function(e) {
+  return e.prototype.accept = function(e) {
     ++this.total;
     var t = this.minDate && e < this.minDate,
       n = this.maxDate && e > this.maxDate;
@@ -19,18 +19,18 @@ let r = function() {
       if (n) returnfalse
     } else if ("after" === this.method) return !!t || (this.add(e), false);
     return this.add(e)
-  }, module.prototype.add = function(e) {
+  }, e.prototype.add = function(e) {
     return this._result.push(e), true
-  }, module.prototype.getValue = function() {
+  }, e.prototype.getValue = function() {
     var e = this._result;
     switch (this.method) {
       case "all":
       case "between":
-        return module;
+        return e;
       default:
-        return module.length ? module[module.length - 1] : null
+        return e.length ? e[e.length - 1] : null
     }
-  }, module.prototype.clone = function() {
-    return new module(this.method, this.args)
-  }, module
+  }, e.prototype.clone = function() {
+    return new e(this.method, this.args)
+  }, e
 }()

@@ -36,11 +36,11 @@ let m = 750,
   I = false;
 class T extends Chunk750041.Z {
   initialize() {
-    this.waitFor(Chunk592125.Z), this.waitFor(Chunk944486.Z), this.waitFor(Chunk650774.Z), this.syncWith([Chunk368321.Z], () => true), this.syncWith([Chunk944486.Z], C)
+    this.waitFor(r.Z), this.waitFor(o.Z), this.waitFor(i.Z), this.syncWith([s.Z], () => true), this.syncWith([o.Z], C)
   }
   loadCache() {
     let e = this.readSnapshot(T.LATEST_SNAPSHOT_VERSION);
-    null != module && (I = true, T.mergeSnapshot(module))
+    null != e && (I = true, T.mergeSnapshot(e))
   }
   canEvictOrphans() {
     return I
@@ -50,11 +50,11 @@ class T extends Chunk750041.Z {
     return null != t && (0, d.p)(t) ? E : null != t && v.has(e) ? b : y
   }
   getSaveableChannels() {
-    let e = Chunk592125.Z.getChannelIds(null).map(e => ({
+    let e = r.Z.getChannelIds(null).map(e => ({
       guildId: null,
       channelId: e
     }));
-    return Chunk368321.Z.isLowDisk ? null != O ? [...module, O] : module : [...module, ...v.values()]
+    return s.Z.isLowDisk ? null != O ? [...e, O] : e : [...e, ...v.values()]
   }
   takeSnapshot() {
     return {
@@ -94,8 +94,8 @@ class T extends Chunk750041.Z {
   }
   static dropUnreachableChannels() {
     for (let e of v.keys()) {
-      let t = Chunk592125.Z.getBasicChannel(module);
-      (0, Chunk989263.v)(exports) || T.deleteChannel(module)
+      let t = r.Z.getBasicChannel(e);
+      (0, f.v)(t) || T.deleteChannel(e)
     }
   }
   static deleteUnreadableGuildChannels(e) {
@@ -120,12 +120,12 @@ class T extends Chunk750041.Z {
 }
 
 function C() {
-  let e = Chunk944486.Z.getChannelId();
-  null != module && T.recordChannel(module)
+  let e = o.Z.getChannelId();
+  null != e && T.recordChannel(e)
 }
 
 function A() {
-  T.dropUnreachableChannels(), T.replaceLru((0, Chunk872261.J)(v, m + g))
+  T.dropUnreachableChannels(), T.replaceLru((0, p.J)(v, m + g))
 }
 
 function N(e) {

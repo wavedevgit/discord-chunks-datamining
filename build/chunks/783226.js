@@ -11,7 +11,7 @@ Chunk220159({
   target: "Date",
   proto: true,
   forced: require("./779688.js")(function() {
-    return null !== new Date(NaN).toJSON() || 1 !== Chunk517522(Date.prototype.toJSON, {
+    return null !== new Date(NaN).toJSON() || 1 !== o(Date.prototype.toJSON, {
       toISOString: function() {
         return 1
       }

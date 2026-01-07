@@ -223,23 +223,23 @@ class e6 extends(r = Chunk473749.Component) {
       channel: t,
       ctaButtonType: n
     } = this.props, r = null;
-    switch (require) {
-      case Chunk594173.aD.MARK_AS_FALSE_POSITIVE:
-        r = (0, Chunk54381.jsx)(Chunk674611.Z, {
-          messageId: module.id,
-          channelId: exports.id
+    switch (n) {
+      case eS.aD.MARK_AS_FALSE_POSITIVE:
+        r = (0, i.jsx)(D.Z, {
+          messageId: e.id,
+          channelId: t.id
         });
         break;
-      case Chunk594173.aD.AGE_VERIFICATION_RETRY:
-        r = (0, Chunk54381.jsx)(Chunk183431.Z, {
-          channelId: exports.id
+      case eS.aD.AGE_VERIFICATION_RETRY:
+        r = (0, i.jsx)(E.Z, {
+          channelId: t.id
         });
         break;
       default:
         return null
     }
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk253108.ctaButtonContainer,
+    return (0, i.jsx)("div", {
+      className: eq.ctaButtonContainer,
       children: r
     })
   }
@@ -545,28 +545,28 @@ class e6 extends(r = Chunk473749.Component) {
       channel: e,
       message: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.SR, {
+    return (0, i.jsxs)(p.SR, {
       dismissable: true,
-      header: Chunk388032.intl.string(Chunk388032.t.VL1KOk),
-      confirmText: Chunk388032.intl.string(Chunk388032.t.YEHppG),
-      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+      header: ez.intl.string(ez.t.VL1KOk),
+      confirmText: ez.intl.string(ez.t.YEHppG),
+      cancelText: ez.intl.string(ez.t["ETE/oC"]),
       onCancel: () => this.setState({
         showSuppressModal: false
       }),
       onConfirm: () => {
-        Chunk904245.Z.suppressEmbeds(module.id, exports.id), this.setState({
+        _.Z.suppressEmbeds(e.id, t.id), this.setState({
           showSuppressModal: false
         })
       },
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: [(0, i.jsx)(p.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        className: Chunk253108.confirmText,
-        children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fo"])
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        className: eq.confirmText,
+        children: ez.intl.string(ez.t["vXZ+Fo"])
+      }), (0, i.jsx)(p.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t["5j2by3"])
+        children: ez.intl.string(ez.t["5j2by3"])
       })]
     })
   }
@@ -577,29 +577,29 @@ class e6 extends(r = Chunk473749.Component) {
     } = this.props, {
       attachmentToDelete: n
     } = this.state;
-    return null == require ? void this.setState({
+    return null == n ? void this.setState({
       showRemoveAttachmentModal: false
-    }) : (0, Chunk54381.jsx)(Chunk481060.SR, {
+    }) : (0, i.jsx)(p.SR, {
       dismissable: true,
-      header: Chunk388032.intl.string(Chunk388032.t.CbTIEo),
-      confirmText: Chunk388032.intl.string(Chunk388032.t.kFwAsa),
-      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+      header: ez.intl.string(ez.t.CbTIEo),
+      confirmText: ez.intl.string(ez.t.kFwAsa),
+      cancelText: ez.intl.string(ez.t["ETE/oC"]),
       onCancel: () => this.setState({
         showRemoveAttachmentModal: false,
         attachmentToDelete: null
       }),
       onConfirm: () => {
-        let r = exports.attachments.filter(e => e.id !== n.id);
-        Chunk904245.Z.patchMessageAttachments(module.id, exports.id, r), this.setState({
+        let r = t.attachments.filter(e => e.id !== n.id);
+        _.Z.patchMessageAttachments(e.id, t.id, r), this.setState({
           showRemoveAttachmentModal: false,
           attachmentToDelete: null
         })
       },
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: (0, i.jsx)(p.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        className: Chunk253108.confirmText,
-        children: Chunk388032.intl.string(Chunk388032.t.faHmO3)
+        className: eq.confirmText,
+        children: ez.intl.string(ez.t.faHmO3)
       })
     })
   }
@@ -682,11 +682,11 @@ class e6 extends(r = Chunk473749.Component) {
     } = this.props, {
       showSuppressModal: a,
       showRemoveAttachmentModal: o
-    } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderAttachments(exports), f = this.renderCtaButton(), p = this.renderEmbeds(exports), _ = this.renderActivityInvite(exports), m = this.renderReactions(exports), h = this.renderPublishBump(exports), g = this.renderEphemeralAccessories(exports), E = this.renderStickersAccessories(exports), b = this.renderThreadAccessories(exports), y = this.renderComponentAccessories(exports), O = this.renderThreadRoleMentionWarning(exports), v = this.renderEmbeddedApplicationInstanceEmbed(exports), S = this.renderInteractionPremiumUpsell(exports), I = this.renderMediaPostEmbeds(exports), T = this.renderSafetyPolicyNotice(exports), C = this.renderSafetySystemNotification(exports), A = this.renderMediaObscureNotice(exports), N = this.renderPoll(exports, require), P = this.renderForwardedMessage(exports), R = this.renderReportedMessage(exports), w = this.renderShareClientTheme(exports);
-    return null == Chunk95015 && null == Chunk377108 && null == Chunk481060 && null == Chunk904245 && null == Chunk637374 && null == Chunk442837 && null == Chunk626799 && null == Chunk624367 && null == Chunk183431 && null == Chunk421474 && null == Chunk603270 && null == Chunk162297 && null == Chunk234431 && null == Chunk446411 && null == Chunk36129 && null != Chunk222709 && null == Chunk247206 && null == Chunk629710 && null == Chunk262777 && null == Chunk761538 ? null : (0, Chunk54381.jsxs)("div", {
-      id: (0, Chunk453687.bX)(exports),
-      className: s()(module, Chunk253108.container),
-      children: [Chunk262777, Chunk629710, Chunk234431, Chunk247206, Chunk761538, Chunk95015, Chunk442837, Chunk446411, Chunk377108, Chunk902704, Chunk481060, Chunk161314, Chunk904245, Chunk183431, Chunk603270, Chunk162297, Chunk222709, Chunk275726, Chunk637374, Chunk626799, Chunk624367, Chunk473749 && this.renderSuppressConfirmModal(), Chunk120356 && this.renderRemoveAttachmentConfirmModal(), Chunk421474, Chunk36129, Chunk960904]
+    } = this.state, l = this.renderEditedTag(t, r), c = this.renderCodedLinks(t), u = this.renderGiftCodes(t), d = this.renderAttachments(t), f = this.renderCtaButton(), p = this.renderEmbeds(t), _ = this.renderActivityInvite(t), m = this.renderReactions(t), h = this.renderPublishBump(t), g = this.renderEphemeralAccessories(t), E = this.renderStickersAccessories(t), b = this.renderThreadAccessories(t), y = this.renderComponentAccessories(t), O = this.renderThreadRoleMentionWarning(t), v = this.renderEmbeddedApplicationInstanceEmbed(t), S = this.renderInteractionPremiumUpsell(t), I = this.renderMediaPostEmbeds(t), T = this.renderSafetyPolicyNotice(t), C = this.renderSafetySystemNotification(t), A = this.renderMediaObscureNotice(t), N = this.renderPoll(t, n), P = this.renderForwardedMessage(t), R = this.renderReportedMessage(t), w = this.renderShareClientTheme(t);
+    return null == c && null == d && null == p && null == _ && null == m && null == u && null == h && null == g && null == E && null == b && null == y && null == v && null == O && null == I && null == T && null != S && null == N && null == P && null == R && null == w ? null : (0, i.jsxs)("div", {
+      id: (0, eM.bX)(t),
+      className: s()(e, eq.container),
+      children: [R, P, O, N, w, c, u, I, d, f, p, A, _, E, y, v, S, l, m, h, g, a && this.renderSuppressConfirmModal(), o && this.renderRemoveAttachmentConfirmModal(), b, T, C]
     })
   }
   constructor(...e) {

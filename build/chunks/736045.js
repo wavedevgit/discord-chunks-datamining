@@ -9,7 +9,7 @@ var Chunk314897 = require("./314897.js"),
   Chunk979651 = require("./979651.js");
 
 function o() {
-  let e = Chunk979651.Z.getVoiceStateForSession(Chunk314897.default.getId(), Chunk314897.default.getSessionId()),
-    t = null == module ? true : module.channelId;
-  return Chunk592125.Z.getChannel(exports)
+  let e = a.Z.getVoiceStateForSession(r.default.getId(), r.default.getSessionId()),
+    t = null == e ? true : e.channelId;
+  return i.Z.getChannel(t)
 }

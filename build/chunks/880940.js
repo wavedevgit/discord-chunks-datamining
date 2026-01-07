@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk973465 = require("./973465.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.CAMERA_SELECTION_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.FsQ3OR)],
+  useSearchTerms: () => [u.intl.string(u.t.FsQ3OR)],
   Component: Chunk973465.Z
 })

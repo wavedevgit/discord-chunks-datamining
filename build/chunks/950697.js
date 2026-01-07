@@ -17,22 +17,22 @@ class a {
       t = [],
       n = [];
     for (let r of this.fields)
-      if (Chunk36056.oneof) require.includes(Chunk36056.oneof) || (require.push(Chunk36056.oneof), module.push(Chunk36056.oneof), exports.push(Chunk36056.oneof));
-      else switch (exports.push(Chunk36056.localName), Chunk36056.kind) {
+      if (r.oneof) n.includes(r.oneof) || (n.push(r.oneof), e.push(r.oneof), t.push(r.oneof));
+      else switch (t.push(r.localName), r.kind) {
         case "scalar":
         case "enum":
-          (!Chunk36056.opt || Chunk36056.repeat) && module.push(Chunk36056.localName);
+          (!r.opt || r.repeat) && e.push(r.localName);
           break;
         case "message":
-          Chunk36056.repeat && module.push(Chunk36056.localName);
+          r.repeat && e.push(r.localName);
           break;
         case "map":
-          module.push(Chunk36056.localName)
+          e.push(r.localName)
       }
     this.data = {
-      req: module,
-      known: exports,
-      oneofs: Object.values(require)
+      req: e,
+      known: t,
+      oneofs: Object.values(n)
     }
   }
   is(e, t, n = false) {

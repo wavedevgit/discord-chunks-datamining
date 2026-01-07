@@ -478,29 +478,29 @@ function ef(e) {
 }
 async function ep() {
   try {
-    Chunk570140.Z.dispatch({
+    l.Z.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_START"
     });
-    let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.APPLICATIONS_WITH_ASSETS,
+    let e = await o.tn.get({
+        url: ee.ANM.APPLICATIONS_WITH_ASSETS,
         query: {
           with_team_applications: true
         },
         oldFormErrors: true,
         rejectWithError: true
       }),
-      t = module.body.applications,
-      n = exports.map(e => x.ZP.createFromServer(e));
-    Chunk570140.Z.dispatch({
+      t = e.body.applications,
+      n = t.map(e => x.ZP.createFromServer(e));
+    l.Z.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS",
-      applications: require,
-      assets: module.body.assets
-    }), Chunk570140.Z.dispatch({
+      applications: n,
+      assets: e.body.assets
+    }), l.Z.dispatch({
       type: "APPLICATIONS_FETCH_SUCCESS",
-      applications: exports
+      applications: t
     })
   } catch (e) {
-    Chunk570140.Z.dispatch({
+    l.Z.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL"
     })
   }
@@ -639,9 +639,9 @@ async function eE(e) {
 }
 
 function eb() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk921944.L.INDIRECT_ACTION;
-  (0, Chunk605236.wH)(Chunk704215.z.ACTIVITIES_VOICE_LAUNCHER_BADGE, Math.floor(new Date().getTime() / 1e3), {
-    dismissAction: module
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : en.L.INDIRECT_ACTION;
+  (0, S.wH)(s.z.ACTIVITIES_VOICE_LAUNCHER_BADGE, Math.floor(new Date().getTime() / 1e3), {
+    dismissAction: e
   })
 }
 async function ey(e) {
@@ -672,7 +672,7 @@ function ev(e) {
 }
 
 function eS() {
-  eO(Chunk918559.Ez.ACTIVITY_POPOUT_WINDOW), Chunk570140.Z.dispatch({
+  eO($.Ez.ACTIVITY_POPOUT_WINDOW), l.Z.dispatch({
     type: "ACTIVITY_POPOUT_WINDOW_OPEN"
   })
 }

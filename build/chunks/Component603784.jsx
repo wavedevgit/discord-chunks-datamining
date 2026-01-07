@@ -67,18 +67,18 @@ class P extends Chunk473749.PureComponent {
       user: e,
       onContextMenu: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("span", {
-      onContextMenu: exports,
-      className: Chunk876334.userHook,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    return (0, r.jsxs)("span", {
+      onContextMenu: t,
+      className: S.userHook,
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/normal",
-        children: Chunk51144.ZP.getUserTag(module, {
+        children: O.ZP.getUserTag(e, {
           mode: "username"
         })
-      }), "0" !== module.discriminator && (0, Chunk54381.jsxs)(Chunk481060.Text, {
+      }), "0" !== e.discriminator && (0, r.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: Chunk876334.discrim,
-        children: ["#", module.discriminator]
+        className: S.discrim,
+        children: ["#", e.discriminator]
       })]
     })
   }
@@ -238,7 +238,7 @@ let w = Chunk473749.forwardRef((e, t) => {
 });
 w.displayName = "GuildSettingsAuditLogEntry";
 let Z = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
-  theme: Chunk210887.Z.theme
+  theme: b.Z.theme
 }), {
   forwardRef: true
 })(w)

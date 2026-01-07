@@ -38,9 +38,9 @@ let h = new Chunk710845.Z("SteamEventsManager"),
   },
   m = class {
     initialize() {
-      if (this.isInitialized || !this.config.enabled || !(0, Chunk358085.isWindows)()) return;
-      let e = Chunk594174.default.getCurrentUser();
-      (0, Chunk168232.QI)(module) && (h.info("Initializing Steam Events Manager"), this.startPolling(), this.isInitialized = true)
+      if (this.isInitialized || !this.config.enabled || !(0, r.isWindows)()) return;
+      let e = l.default.getCurrentUser();
+      (0, a.QI)(e) && (h.info("Initializing Steam Events Manager"), this.startPolling(), this.isInitialized = true)
     }
     destroy() {
       this.isInitialized && (h.info("Destroying Steam Game Events Manager"), this.stopPolling(), this.trackedProcesses.clear(), this.isInitialized = false)
@@ -55,10 +55,10 @@ let h = new Chunk710845.Z("SteamEventsManager"),
     }
     async checkForSteamProcess() {
       try {
-        let e = await Chunk887278.u2();
-        null != module && module > 0 ? this.handleSteamProcessDiscovered(module) : this.handleNoSteamProcessFound()
+        let e = await n.u2();
+        null != e && e > 0 ? this.handleSteamProcessDiscovered(e) : this.handleNoSteamProcessFound()
       } catch (e) {
-        h.error("Error checking for Steam game events process", module)
+        h.error("Error checking for Steam game events process", e)
       }
     }
     handleSteamProcessDiscovered(e) {

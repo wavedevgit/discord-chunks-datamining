@@ -76,23 +76,23 @@ function I(e) {
 }
 
 function Z() {
-  return (0, Chunk54381.jsx)(I, {
-    children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, l.jsx)(I, {
+    children: (0, l.jsx)(c.Heading, {
       color: "text-strong",
       variant: "heading-xl/semibold",
-      className: Chunk184494.title,
-      children: Chunk388032.intl.string(Chunk388032.t.hW0mBR)
+      className: _.title,
+      children: j.intl.string(j.t.hW0mBR)
     })
   })
 }
 
 function C() {
-  return (0, Chunk54381.jsx)(I, {
-    children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, l.jsx)(I, {
+    children: (0, l.jsx)(c.Heading, {
       color: "text-default",
       variant: "heading-md/semibold",
-      className: Chunk184494.errorTitle,
-      children: Chunk388032.intl.string(Chunk388032.t.obChXk)
+      className: _.errorTitle,
+      children: j.intl.string(j.t.obChXk)
     })
   })
 }

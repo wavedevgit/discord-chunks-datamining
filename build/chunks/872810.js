@@ -220,6 +220,6 @@ function F(e, t) {
 
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-    t = Chunk199902.Z.getCurrentUserActiveStream();
-  null != exports && M((0, Chunk569545.V9)(exports), module)
+    t = _.Z.getCurrentUserActiveStream();
+  null != t && M((0, u.V9)(t), e)
 }

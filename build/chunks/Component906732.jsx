@@ -30,11 +30,11 @@ function d(e, t) {
 }
 
 function f() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  let [r, a] = Chunk473749.useState(exports), s = Chunk473749.useContext(c), l = Chunk473749.useMemo(() => d(Chunk392711, Chunk54381), [Chunk54381, Chunk392711]), u = Chunk473749.useMemo(() => d(Chunk392711, Chunk54381.slice(0, Chunk54381.length - 1)), [Chunk54381, Chunk392711]);
-  return Chunk473749.useEffect(() => {
-    o()(exports, Chunk54381) || Chunk348327(exports)
-  }, [exports, Chunk54381]), {
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  let [r, a] = i.useState(t), s = i.useContext(c), l = i.useMemo(() => d(s, r), [r, s]), u = i.useMemo(() => d(s, r.slice(0, r.length - 1)), [r, s]);
+  return i.useEffect(() => {
+    o()(t, r) || a(t)
+  }, [t, r]), {
     analyticsLocations: l,
     sourceAnalyticsLocations: u,
     parentAnalyticsLocation: u[u.length - 1],

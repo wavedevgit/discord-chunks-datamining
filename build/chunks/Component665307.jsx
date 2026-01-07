@@ -90,7 +90,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
   },
   k = [{
     key: Chunk981631.iEv.NAME,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.dBfWfc),
+    renderHeader: () => P.intl.string(P.t.dBfWfc),
     sort: true,
     cellClassName: Chunk901740.nameCell,
     bodyCellClassName: Chunk901740.nameBodyCell,
@@ -117,7 +117,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     })
   }, {
     key: Chunk981631.iEv.PLATFORM,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.YR4cHH),
+    renderHeader: () => P.intl.string(P.t.YR4cHH),
     sort: true,
     cellClassName: Chunk901740.platformCell,
     bodyCellClassName: Chunk901740.textCell,
@@ -130,7 +130,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     }
   }, {
     key: Chunk981631.iEv.LAST_PLAYED,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.FDDyjS),
+    renderHeader: () => P.intl.string(P.t.FDDyjS),
     sort: true,
     cellClassName: Chunk901740.lastPlayedCell,
     bodyCellClassName: Chunk901740.textCell,
@@ -237,7 +237,7 @@ class G extends(r = Chunk473749.PureComponent) {
     let {
       fetched: e
     } = this.props;
-    module && (this.handleHighlightedApplicationKey(), this.trackViewed())
+    e && (this.handleHighlightedApplicationKey(), this.trackViewed())
   }
   componentWillUnmount() {
     this._didUnmount = true
@@ -247,14 +247,14 @@ class G extends(r = Chunk473749.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (g.Z.wait(h.Zy), this.props.scrollToRow(e, L))
+      null != e && (g.Z.wait(m.Zy), this.props.scrollToRow(e, L))
     }
   }
   handleHighlightedApplicationKey() {
     let {
       highlightedApplicationKey: e
     } = this.state;
-    null != module && null != this._rowRefs[module] && (this.props.scrollToRow(this._rowRefs[module], L), new Chunk846519.V7().start(R, () => {
+    null != e && null != this._rowRefs[e] && (this.props.scrollToRow(this._rowRefs[e], L), new u.V7().start(R, () => {
       this._didUnmount || this.setState({
         highlightedApplicationKey: null
       })
@@ -276,65 +276,65 @@ class G extends(r = Chunk473749.PureComponent) {
         analyticsContext: t,
         applicationViewItems: n
       } = this.props;
-    for (let t of require) {
-      switch (exports.libraryApplication.getDistributor()) {
-        case Chunk981631.GQo.DISCORD:
-          module.num_applications_discord++;
+    for (let t of n) {
+      switch (t.libraryApplication.getDistributor()) {
+        case j.GQo.DISCORD:
+          e.num_applications_discord++;
           break;
-        case Chunk981631.GQo.STEAM:
-          module.num_applications_steam++;
+        case j.GQo.STEAM:
+          e.num_applications_steam++;
           break;
-        case Chunk981631.GQo.BATTLENET:
-          module.num_applications_battlenet++;
+        case j.GQo.BATTLENET:
+          e.num_applications_battlenet++;
           break;
-        case Chunk981631.GQo.TWITCH:
-          module.num_applications_twitch++;
+        case j.GQo.TWITCH:
+          e.num_applications_twitch++;
           break;
-        case Chunk981631.GQo.UPLAY:
-          module.num_applications_uplay++;
+        case j.GQo.UPLAY:
+          e.num_applications_uplay++;
           break;
-        case Chunk981631.GQo.ORIGIN:
-          module.num_applications_origin++;
+        case j.GQo.ORIGIN:
+          e.num_applications_origin++;
           break;
-        case Chunk981631.GQo.GOG:
-          module.num_applications_gog++;
+        case j.GQo.GOG:
+          e.num_applications_gog++;
           break;
-        case Chunk981631.GQo.EPIC:
-          module.num_applications_epic++
+        case j.GQo.EPIC:
+          e.num_applications_epic++
       }
-      module.num_applications_total++
+      e.num_applications_total++
     }
-    Chunk626135.default.track(Chunk981631.rMx.LIBRARY_VIEWED, w(Z({}, module), {
-      load_id: exports.loadId
+    C.default.track(j.rMx.LIBRARY_VIEWED, w(Z({}, e), {
+      load_id: t.loadId
     }))
   }
   handleSort(e, t) {
-    m.fS(e, t)
+    h.fS(e, t)
   }
   renderImportHelp() {
     let e, {
         applicationViewItems: t,
         filterQuery: n
       } = this.props,
-      r = exports.length > 0;
-    return r ? null : (e = "" !== require ? Chunk388032.intl.format(Chunk388032.t["4Q1TAr"], {
-      query: require
-    }) : Chunk388032.intl.string(Chunk388032.t["0Y+0PY"]), (0, Chunk54381.jsxs)("div", {
-      className: r ? Chunk901740.emptyStateSmall : Chunk901740.emptyStateLarge,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk901740.emptyWumpus
-      }), (0, Chunk54381.jsx)(Chunk600164.Z, {
+      r = t.length > 0;
+    return r ? null : (e = "" !== n ? P.intl.format(P.t["4Q1TAr"], {
+      query: n
+    }) : P.intl.string(P.t["0Y+0PY"]), (0, i.jsxs)("div", {
+      className: r ? x.emptyStateSmall : x.emptyStateLarge,
+      children: [(0, i.jsx)("div", {
+        className: x.emptyWumpus
+      }), (0, i.jsx)(_.Z, {
         grow: 0,
         shrink: +!!r,
-        direction: Chunk600164.Z.Direction.VERTICAL,
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk901740.emptyStateText,
-          children: [(0, Chunk54381.jsx)("div", {
-            className: Chunk901740.emptyStateHeader,
-            children: Chunk388032.intl.string(Chunk388032.t.Lw8X2j)
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk901740.emptyStateDescription,
-            children: module
+        direction: _.Z.Direction.VERTICAL,
+        children: (0, i.jsxs)("div", {
+          className: x.emptyStateText,
+          children: [(0, i.jsx)("div", {
+            className: x.emptyStateHeader,
+            children: P.intl.string(P.t.Lw8X2j)
+          }), (0, i.jsx)("div", {
+            className: x.emptyStateDescription,
+            children: e
           })]
         })
       })]
@@ -351,24 +351,24 @@ class G extends(r = Chunk473749.PureComponent) {
       overflowMenuRowKey: o,
       highlightedApplicationKey: s
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [require.length > 0 ? (0, Chunk54381.jsx)(Chunk167533.Z, {
+    return (0, i.jsxs)(l.Fragment, {
+      children: [n.length > 0 ? (0, i.jsx)(E.Z, {
         columns: k,
-        data: require,
+        data: n,
         sortData: false,
         rowComponent: U,
-        className: Chunk901740.table,
-        headerClassName: Chunk120356 ? Chunk901740.stickyHeader : Chunk901740.header,
-        headerCellClassName: Chunk901740.headerCell,
-        sortedHeaderCellClassName: Chunk901740.headerCellSorted,
-        bodyCellClassName: Chunk901740.bodyCell,
-        rowClassName: Chunk901740.row,
-        sortKey: module,
-        sortDirection: exports,
-        stickyHeader: Chunk120356,
+        className: x.table,
+        headerClassName: a ? x.stickyHeader : x.header,
+        headerCellClassName: x.headerCell,
+        sortedHeaderCellClassName: x.headerCellSorted,
+        bodyCellClassName: x.bodyCell,
+        rowClassName: x.row,
+        sortKey: e,
+        sortDirection: t,
+        stickyHeader: a,
         rowProps: {
           activeRowKey: null != o ? o : r,
-          highlightedApplicationKey: Chunk828700,
+          highlightedApplicationKey: s,
           onMouseEnter: this.handleRowMouseEnter,
           onMouseLeave: this.handleRowMouseLeave,
           onContextMenu: this.handleApplicationContextMenu,
@@ -379,8 +379,8 @@ class G extends(r = Chunk473749.PureComponent) {
           onContextMenu: this.handleApplicationContextMenu,
           setActiveRowKey: this.setActiveRowKey,
           clearActiveRowKey: this.clearActiveRowKey,
-          sortKey: module,
-          sortDirection: exports
+          sortKey: e,
+          sortDirection: t
         },
         onSort: this.handleSort
       }) : null, this.renderImportHelp()]
@@ -399,9 +399,9 @@ class G extends(r = Chunk473749.PureComponent) {
         overflowMenuRowKey: null
       })
     }), A(this, "handleRowMouseEnter", e => {
-      this.props.isNavigatingByKeyboard || m.wX(e.key)
+      this.props.isNavigatingByKeyboard || h.wX(e.key)
     }), A(this, "handleRowMouseLeave", () => {
-      this.props.isNavigatingByKeyboard || m.wX(null)
+      this.props.isNavigatingByKeyboard || h.wX(null)
     }), A(this, "setRowRef", (e, t) => {
       this._rowRefs[t] = e
     }), A(this, "handleApplicationContextMenu", (e, t) => {
@@ -409,7 +409,7 @@ class G extends(r = Chunk473749.PureComponent) {
       let {
         analyticsContext: r
       } = this.props;
-      (0, h.jW)(e, async () => {
+      (0, m.jW)(e, async () => {
         let {
           default: e
         } = await n.e("98335").then(n.bind(n, 485292));

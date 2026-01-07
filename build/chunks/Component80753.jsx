@@ -13,48 +13,48 @@ var Chunk54381 = require("./54381.js"),
   Chunk915312 = require("./915312.js");
 
 function u() {
-  let [e, t] = Chunk473749.useState(false), i = (0, Chunk915312.LL)(), {
+  let [e, t] = r.useState(false), i = (0, d.LL)(), {
     reporting: u
-  } = Chunk481637.Z.useExperiment({
+  } = o.Z.useExperiment({
     location: "be7a1c_1"
   }, {
     autoTrackExposure: false
   });
-  return (Chunk473749.useEffect(() => {
-    if (u && module && null != require) return require.forEach(e => {
+  return (r.useEffect(() => {
+    if (u && e && null != i) return i.forEach(e => {
       e.elements.forEach(e => {
         e.setAttribute(a.OF, "")
       })
     }), () => {
-      require.forEach(e => {
+      i.forEach(e => {
         e.elements.forEach(e => {
           e.removeAttribute(a.OF)
         })
       })
     }
-  }, [require, u, module]), u && null != require && 0 !== require.length) ? (0, Chunk54381.jsxs)("div", {
+  }, [i, u, e]), u && null != i && 0 !== i.length) ? (0, n.jsxs)("div", {
     style: {
-      backgroundColor: Chunk692547.Z.colors.BACKGROUND_FEEDBACK_CRITICAL.css,
-      color: Chunk692547.Z.colors.TEXT_FEEDBACK_CRITICAL.css,
+      backgroundColor: s.Z.colors.BACKGROUND_FEEDBACK_CRITICAL.css,
+      color: s.Z.colors.TEXT_FEEDBACK_CRITICAL.css,
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
       padding: "8px 12px"
     },
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: [(0, n.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "text-feedback-critical",
       children: "Accessibility compliance issue(s) detected, check in-app DevTools"
-    }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+    }), (0, n.jsxs)(c.ButtonGroup, {
       direction: "horizontal",
       size: "sm",
-      children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+      children: [(0, n.jsx)(c.Button, {
         text: "Open DevTools",
-        onClick: Chunk31336.SO,
+        onClick: l.SO,
         variant: "critical-secondary"
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        onClick: () => exports(!module),
-        text: "".concat(module ? "Hide" : "Show", " Overlays"),
+      }), (0, n.jsx)(c.Button, {
+        onClick: () => t(!e),
+        text: "".concat(e ? "Hide" : "Show", " Overlays"),
         variant: "critical-primary"
       })]
     })]

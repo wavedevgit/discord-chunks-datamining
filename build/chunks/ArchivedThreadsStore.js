@@ -41,7 +41,7 @@ let y = 25,
   P = Chunk697988.z.MATCH_SOME;
 
 function R() {
-  O = false, v = true, S = false, I = false, T = null, C = Chunk683860.z.LATEST_ACTIVITY, r = new Set, N = 0, A = [], P = Chunk697988.z.MATCH_SOME
+  O = false, v = true, S = false, I = false, T = null, C = l.z.LATEST_ACTIVITY, r = new Set, N = 0, A = [], P = s.z.MATCH_SOME
 }
 
 function w(e, t) {
@@ -74,9 +74,9 @@ function L(e) {
 function j() {
   if (null == T) returnfalse;
   let e = !S,
-    t = Chunk592125.Z.getChannel(A[A.length - 1]),
-    n = null == exports ? null : w(exports, C);
-  A = o()(Chunk592125.Z.getAllThreadsForParent(T)).filter(e => e.isArchivedThread()).filter(t => {
+    t = m.Z.getChannel(A[A.length - 1]),
+    n = null == t ? null : w(t, C);
+  A = o()(m.Z.getAllThreadsForParent(T)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
       var i, a;
       if (P === s.z.MATCH_SOME) {
@@ -125,7 +125,7 @@ function Z(e) {
 let F = [];
 class B extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk569471.Z, Chunk306680.ZP)
+    this.waitFor(m.Z, E.Z, h.ZP)
   }
   get canLoadMore() {
     return S && !O && !I

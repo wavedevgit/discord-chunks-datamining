@@ -48,55 +48,55 @@ function d(t) {
 function o() {
   return [{
     value: "missing_expected_result",
-    label: Chunk388032.intl.string(Chunk388032.t["4DEniX"])
+    label: a.intl.string(a.t["4DEniX"])
   }, {
     value: "no_results",
-    label: Chunk388032.intl.string(Chunk388032.t.jlh29e)
+    label: a.intl.string(a.t.jlh29e)
   }, {
     value: "required_multiple_searches",
-    label: Chunk388032.intl.string(Chunk388032.t.TpGBIB)
+    label: a.intl.string(a.t.TpGBIB)
   }, {
     value: "buried_expected_result",
-    label: Chunk388032.intl.string(Chunk388032.t.Zh6bNN)
+    label: a.intl.string(a.t.Zh6bNN)
   }, {
     value: "irrelevant_results",
-    label: Chunk388032.intl.string(Chunk388032.t.WCiDBF)
+    label: a.intl.string(a.t.WCiDBF)
   }, {
     value: "inadequate_filters",
-    label: Chunk388032.intl.string(Chunk388032.t.mf36b7)
+    label: a.intl.string(a.t.mf36b7)
   }, {
     value: "hard_to_scan_results",
-    label: Chunk388032.intl.string(Chunk388032.t.ECI0Of)
+    label: a.intl.string(a.t.ECI0Of)
   }, {
     value: i,
-    label: Chunk388032.intl.string(Chunk388032.t.oxbtmN)
+    label: a.intl.string(a.t.oxbtmN)
   }]
 }
 
 function v() {
   return [{
     value: "looking_for_known_answer",
-    label: Chunk388032.intl.string(Chunk388032.t["Str6/o"])
+    label: a.intl.string(a.t["Str6/o"])
   }, {
     value: "looking_for_unknown_answer",
-    label: Chunk388032.intl.string(Chunk388032.t.DePZNY)
+    label: a.intl.string(a.t.DePZNY)
   }, {
     value: "message_from_specific_author",
-    label: Chunk388032.intl.string(Chunk388032.t["sGKG/Y"])
+    label: a.intl.string(a.t["sGKG/Y"])
   }, {
     value: "images_and_files_results",
-    label: Chunk388032.intl.string(Chunk388032.t.DYLXHx)
+    label: a.intl.string(a.t.DYLXHx)
   }, {
     value: "link_results",
-    label: Chunk388032.intl.string(Chunk388032.t.a1ZtE8)
+    label: a.intl.string(a.t.a1ZtE8)
   }, {
     value: "specific_topic",
-    label: Chunk388032.intl.string(Chunk388032.t.EIHXbc)
+    label: a.intl.string(a.t.EIHXbc)
   }, {
     value: "navigation_results",
-    label: Chunk388032.intl.string(Chunk388032.t["6wKpiV"])
+    label: a.intl.string(a.t["6wKpiV"])
   }, {
     value: i,
-    label: Chunk388032.intl.string(Chunk388032.t.RBmOLj)
+    label: a.intl.string(a.t.RBmOLj)
   }]
 }

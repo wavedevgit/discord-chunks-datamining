@@ -14,9 +14,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk330349 = require("./330349.js"),
   Chunk724994 = require("./724994.js");
 let f = () => {
-  let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = null != module && Chunk74538.ZP.canUseCollectibles(module);
-  return (0, Chunk473749.useCallback)(e => null == e || 0 === e.length ? e : e.filter(e => {
+  let e = (0, l.e7)([a.default], () => a.default.getCurrentUser()),
+    t = null != e && s.ZP.canUseCollectibles(e);
+  return (0, r.useCallback)(e => null == e || 0 === e.length ? e : e.filter(e => {
     let {
       isPurchased: n
     } = (0, d.U)(o.Z, e);
@@ -35,5 +35,5 @@ let f = () => {
       let l = (0, i.ql)(t, r);
       return e + (null != (n = null == l ? true : l.amount) ? n : 0)
     }, 0)), l.amount < a
-  }), [exports])
+  }), [t])
 }

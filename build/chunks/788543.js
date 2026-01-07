@@ -9,5 +9,5 @@ var r = "ResizeObserver loop completed with undelivered notifications.",
     var e;
     "function" == typeof ErrorEvent ? e = new ErrorEvent("error", {
       message: r
-    }) : ((e = document.createEvent("Event")).initEvent("error", false, false), module.message = r), window.dispatchEvent(module)
+    }) : ((e = document.createEvent("Event")).initEvent("error", false, false), e.message = r), window.dispatchEvent(e)
   }

@@ -19,38 +19,38 @@ class o extends Chunk473749.Component {
       role: i,
       className: o
     } = this.props;
-    if (null == module) throw Error("Missing 'to' route prop in TrackLink component");
-    let c = "string" == typeof module ? module : module.pathname,
-      d = "string" == typeof module ? "" : module.hash,
-      u = "string" == typeof module ? "" : module.search;
-    return require ? (0, Chunk54381.jsx)(Chunk50628.OL, {
+    if (null == e) throw Error("Missing 'to' route prop in TrackLink component");
+    let c = "string" == typeof e ? e : e.pathname,
+      d = "string" == typeof e ? "" : e.hash,
+      u = "string" == typeof e ? "" : e.search;
+    return a ? (0, n.jsx)(l.OL, {
       className: o,
-      tabIndex: Chunk539528,
+      tabIndex: s,
       onClick: this.handleOnClick,
       to: {
         pathname: c,
         hash: d,
         search: u,
         state: {
-          previousLinkLocation: exports
+          previousLinkLocation: t
         }
       },
-      role: Chunk54111,
-      children: Chunk473749
-    }) : (0, Chunk54381.jsx)(Chunk50628.rU, {
+      role: i,
+      children: r
+    }) : (0, n.jsx)(l.rU, {
       className: o,
-      tabIndex: Chunk539528,
+      tabIndex: s,
       onClick: this.handleOnClick,
       to: {
         pathname: c,
         hash: d,
         search: u,
         state: {
-          previousLinkLocation: exports
+          previousLinkLocation: t
         }
       },
-      role: Chunk54111,
-      children: Chunk473749
+      role: i,
+      children: r
     })
   }
   constructor(...e) {

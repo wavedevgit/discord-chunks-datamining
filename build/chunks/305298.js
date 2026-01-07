@@ -13,7 +13,7 @@ let s = {
 };
 
 function c() {
-  let [e, n] = Chunk473749.useState(false), [t, c] = Chunk473749.useState(null);
+  let [e, n] = i.useState(false), [t, c] = i.useState(null);
   return [async function(e, t) {
     let {
       onSuccess: i = s.onSuccess,
@@ -27,7 +27,7 @@ function c() {
     }
     n(false)
   }, {
-    loading: module,
-    error: require
+    loading: e,
+    error: t
   }]
 }

@@ -11,8 +11,8 @@ var Chunk592125 = require("./592125.js"),
   Chunk981631 = require("./981631.js");
 
 function s() {
-  let e = Chunk944486.Z.getVoiceChannelId();
-  return l(Chunk592125.Z.getChannel(module))
+  let e = a.Z.getVoiceChannelId();
+  return l(r.Z.getChannel(e))
 }
 
 function l(e) {

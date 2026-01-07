@@ -18,9 +18,9 @@ function n(e, t) {
 }
 module.exports = function() {
   function e() {
-    n(this, module)
+    n(this, e)
   }
-  return t(module, [{
+  return t(e, [{
     key: "start",
     value: function(e, t, n, r) {}
   }, {
@@ -32,5 +32,5 @@ module.exports = function() {
       var t = this.__onEnd;
       this.__onEnd = null, t && t(e)
     }
-  }]), module
+  }]), e
 }()

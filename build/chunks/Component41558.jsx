@@ -40,14 +40,14 @@ function c(e) {
   })
 }
 c.buttonTypes = l, c.Loading = function() {
-  let e = Chunk473749.useMemo(() => ({
+  let e = i.useMemo(() => ({
     width: "".concat(10 + 20 * Math.random(), "%")
   }), []);
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk194370.loadingHeader,
-    style: module,
-    children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk194370.hidden,
+  return (0, r.jsx)("div", {
+    className: s.loadingHeader,
+    style: e,
+    children: (0, r.jsx)(a.Text, {
+      className: s.hidden,
       variant: "text-md/medium",
       color: "text-strong",
       children: "_"

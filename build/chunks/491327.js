@@ -34,12 +34,12 @@ let y = {
         },
         socket: n
       } = e, r = u.Z.getChannel(t);
-      if (null == r) throw new m.Z({
+      if (null == r) throw new h.Z({
         errorCode: v.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       if (r.isPrivate()) {
         let e = n.authorization.scopes;
-        if (!e.includes(l.x.RPC) && !e.includes(l.x.DM_CHANNELS_READ)) throw new m.Z({
+        if (!e.includes(l.x.RPC) && !e.includes(l.x.DM_CHANNELS_READ)) throw new h.Z({
           errorCode: v.lTL.INVALID_PERMISSIONS
         }, "Invalid scope")
       }
@@ -56,7 +56,7 @@ let y = {
       } = e, n = i().values(u.Z.loadAllGuildAndPrivateChannelsFromDisk());
       if (t) {
         let e = d.Z.getGuild(t);
-        if (null == e) throw new m.Z({
+        if (null == e) throw new h.Z({
           errorCode: v.lTL.INVALID_GUILD
         }, "Invalid guild id: ".concat(t));
         n = n.filter(t => {
@@ -88,7 +88,7 @@ let y = {
     },
     handler(e) {
       let t = (0, E.Z)();
-      if (null == t) throw new m.Z({
+      if (null == t) throw new h.Z({
         errorCode: v.lTL.INVALID_CHANNEL
       }, "Invalid channel");
       return {
@@ -117,28 +117,28 @@ let y = {
       } = e;
       if (!r) return o.default.selectVoiceChannel(null), null;
       let _ = f.Z.getVoiceChannelId();
-      if (null != _ && _ !== r && false === l) throw new m.Z({
+      if (null != _ && _ !== r && false === l) throw new h.Z({
         errorCode: v.lTL.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
       return t.storeWait(n, () => u.Z.getChannel(r), i).catch(() => {
-        throw new m.Z({
+        throw new h.Z({
           errorCode: v.lTL.SELECT_CHANNEL_TIMED_OUT
         }, "Request to select voice channel timed out.")
       }).then(e => {
-        if (null == e) throw new m.Z({
+        if (null == e) throw new h.Z({
           errorCode: v.lTL.INVALID_CHANNEL
         }, "Invalid channel id: ".concat(r));
-        if (!(0, c.vd)(e.type)) throw new m.Z({
+        if (!(0, c.vd)(e.type)) throw new h.Z({
           errorCode: v.lTL.INVALID_CHANNEL
         }, "Channel is not a voice channel");
         return Promise.all([Promise.resolve(e), (0, b.T5)(e, (0, b.zM)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
         if (n.guild_id) {
-          if ((0, h.rY)(t, g.Z, d.Z)) throw new m.Z({
+          if ((0, m.rY)(t, g.Z, d.Z)) throw new h.Z({
             errorCode: v.lTL.INVALID_CHANNEL
           }, "Channel is full");
-          if (!p.Z.can(v.Plq.CONNECT, t)) throw new m.Z({
+          if (!p.Z.can(v.Plq.CONNECT, t)) throw new h.Z({
             errorCode: v.lTL.INVALID_PERMISSIONS
           }, "Connect permission required to join channel")
         }
@@ -173,20 +173,20 @@ let y = {
         }
       } = e;
       return r ? t.storeWait(n, () => u.Z.getChannel(r), i).catch(() => {
-        throw new m.Z({
+        throw new h.Z({
           errorCode: v.lTL.SELECT_CHANNEL_TIMED_OUT
         }, "Request to select text channel timed out.")
       }).then(e => {
-        if (null == e) throw new m.Z({
+        if (null == e) throw new h.Z({
           errorCode: v.lTL.INVALID_CHANNEL
         }, "Invalid channel id: ".concat(r));
-        if (!(0, c.Qm)(e.type)) throw new m.Z({
+        if (!(0, c.Qm)(e.type)) throw new h.Z({
           errorCode: v.lTL.INVALID_CHANNEL
         }, "Channel is not a text channel");
         return Promise.all([Promise.resolve(e), (0, b.T5)(e, (0, b.zM)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
-        if (n.guild_id && !p.Z.can(v.Plq.VIEW_CHANNEL, t)) throw new m.Z({
+        if (n.guild_id && !p.Z.can(v.Plq.VIEW_CHANNEL, t)) throw new h.Z({
           errorCode: v.lTL.INVALID_CHANNEL
         }, "No permission to see channel");
         return n.guild_id ? (0, s.dL)(v.Z5c.CHANNEL(n.guild_id, t.id)) : o.default.selectPrivateChannel(t.id), n
@@ -216,7 +216,7 @@ let y = {
         return i
       }(e.args, ["channel_id"]);
       return a.ZP.createInvite(t, n, "RPC").catch(() => {
-        throw new m.Z({
+        throw new h.Z({
           errorCode: v.lTL.INVALID_PERMISSIONS
         }, "Unable to generate an invite for ".concat(t, ". Does this user have permissions?"))
       })

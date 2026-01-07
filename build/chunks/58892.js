@@ -34,57 +34,57 @@ class a {
   firstChild() {
     let e = this.currentNode,
       t = this.nextNode();
-    return (0, Chunk297808.bE)(module, exports) ? (exports && (this.currentNode = exports), exports) : (this.currentNode = module, null)
+    return (0, r.bE)(e, t) ? (t && (this.currentNode = t), t) : (this.currentNode = e, null)
   }
   lastChild() {
     let e = this._walkerStack[0].lastChild();
-    return module && (this.currentNode = module), module
+    return e && (this.currentNode = e), e
   }
   nextNode() {
     let e = this._walkerStack[0].nextNode();
-    if (module) {
-      if (module.shadowRoot) {
+    if (e) {
+      if (e.shadowRoot) {
         var t;
         let n;
-        if ("function" == typeof this.filter ? n = this.filter(module) : (null == (t = this.filter) ? true : exports.acceptNode) && (n = this.filter.acceptNode(module)), require === NodeFilter.FILTER_ACCEPT) return this.currentNode = module, module;
+        if ("function" == typeof this.filter ? n = this.filter(e) : (null == (t = this.filter) ? true : t.acceptNode) && (n = this.filter.acceptNode(e)), n === NodeFilter.FILTER_ACCEPT) return this.currentNode = e, e;
         let r = this.nextNode();
-        return Chunk297808 && (this.currentNode = Chunk297808), Chunk297808
+        return r && (this.currentNode = r), r
       }
-      return module && (this.currentNode = module), module
+      return e && (this.currentNode = e), e
     }
     if (!(this._walkerStack.length > 1)) return null;
     {
       this._walkerStack.shift();
       let e = this.nextNode();
-      return module && (this.currentNode = module), module
+      return e && (this.currentNode = e), e
     }
   }
   previousNode() {
     let e = this._walkerStack[0];
-    if (module.currentNode === module.root) {
-      if (this._currentSetFor.has(module) && (this._currentSetFor.delete(module), this._walkerStack.length > 1)) {
+    if (e.currentNode === e.root) {
+      if (this._currentSetFor.has(e) && (this._currentSetFor.delete(e), this._walkerStack.length > 1)) {
         this._walkerStack.shift();
         let e = this.previousNode();
-        return module && (this.currentNode = module), module
+        return e && (this.currentNode = e), e
       }
       return null
     }
-    let t = module.previousNode();
-    if (exports) {
-      if (exports.shadowRoot) {
+    let t = e.previousNode();
+    if (t) {
+      if (t.shadowRoot) {
         var n;
         let e;
-        if ("function" == typeof this.filter ? e = this.filter(exports) : (null == (n = this.filter) ? true : require.acceptNode) && (e = this.filter.acceptNode(exports)), module === NodeFilter.FILTER_ACCEPT) return exports && (this.currentNode = exports), exports;
+        if ("function" == typeof this.filter ? e = this.filter(t) : (null == (n = this.filter) ? true : n.acceptNode) && (e = this.filter.acceptNode(t)), e === NodeFilter.FILTER_ACCEPT) return t && (this.currentNode = t), t;
         let r = this.lastChild();
-        return Chunk297808 && (this.currentNode = Chunk297808), Chunk297808
+        return r && (this.currentNode = r), r
       }
-      return exports && (this.currentNode = exports), exports
+      return t && (this.currentNode = t), t
     }
     if (!(this._walkerStack.length > 1)) return null;
     {
       this._walkerStack.shift();
       let e = this.previousNode();
-      return module && (this.currentNode = module), module
+      return e && (this.currentNode = e), e
     }
   }
   nextSibling() {

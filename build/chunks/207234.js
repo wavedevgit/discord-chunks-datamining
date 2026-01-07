@@ -17,24 +17,24 @@ var Chunk392711 = require("./392711.js"),
 let f = () => {
     let {
       notificationCenterVariant: e
-    } = (0, Chunk821020.Ag)({
+    } = (0, o.Ag)({
       location: "TOGGLE_INBOX"
     });
-    if ("sidebar" !== module) return;
-    let t = Chunk944486.Z.getChannelId(),
-      n = Chunk592125.Z.getChannel(exports);
-    return window.location.pathname.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv)) && null != require ? (0, Chunk475468.K)(require.guild_id, exports) : (0, Chunk475468.z)(Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != exports ? exports : true))
+    if ("sidebar" !== e) return;
+    let t = c.Z.getChannelId(),
+      n = s.Z.getChannel(t);
+    return window.location.pathname.startsWith(d.Z5c.CHANNEL(d.STv)) && null != n ? (0, a.K)(n.guild_id, t) : (0, a.z)(d.Z5c.CHANNEL(d.STv, null != t ? t : true))
   },
   p = {
     binds: ["mod+i"],
     comboKeysBindGlobal: true,
-    action: () => !(Chunk819640.Z.getLayers().length > 0) && (f(), Chunk585483.S.dispatch(Chunk981631.CkL.TOGGLE_INBOX), false)
+    action: () => !(l.Z.getLayers().length > 0) && (f(), u.S.dispatch(d.CkL.TOGGLE_INBOX), false)
   },
   _ = {
     binds: ["mod+shift+e"],
     comboKeysBindGlobal: true,
     action: i().debounce(() => {
-      if (Chunk585483.S.hasSubscribers(Chunk981631.CkL.MARK_TOP_INBOX_CHANNEL_READ)) return Chunk585483.S.dispatch(Chunk981631.CkL.MARK_TOP_INBOX_CHANNEL_READ), false
+      if (u.S.hasSubscribers(d.CkL.MARK_TOP_INBOX_CHANNEL_READ)) return u.S.dispatch(d.CkL.MARK_TOP_INBOX_CHANNEL_READ), false
     }, 100, {
       leading: true
     })

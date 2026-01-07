@@ -74,8 +74,8 @@ class M extends Chunk473749.PureComponent {
       guildId: e
     } = this.props, {
       scrollTop: t
-    } = Chunk796974.Z.getGuildDimensions(module);
-    this.setAnimatedValue(null != exports ? exports : 0)
+    } = y.Z.getGuildDimensions(e);
+    this.setAnimatedValue(null != t ? t : 0)
   }
   componentDidUpdate(e) {
     let {
@@ -136,7 +136,7 @@ class M extends Chunk473749.PureComponent {
     let n = this.props,
       {
         onDragStart: r
-      } = require,
+      } = n,
       a = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
@@ -151,29 +151,29 @@ class M extends Chunk473749.PureComponent {
           for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
         return r
-      }(require, ["onDragStart"]),
+      }(n, ["onDragStart"]),
       {
         guild: s
-      } = Chunk554916,
+      } = a,
       {
         controller: l,
         renderBanner: c,
         bannerVisible: d,
         communityInfoVisible: g
       } = this.state,
-      b = (null == Chunk442837 ? true : Chunk442837.id) === Chunk647086._ ? Chunk373274.j : Chunk373274.E;
-    return (0, Chunk54381.jsxs)(Chunk711553.Z, {
-      header: null != Chunk442837 ? (0, Chunk54381.jsx)(Chunk315174.ZP, {
-        guild: Chunk442837,
-        controller: Chunk619915,
-        renderBanner: Chunk554747,
-        bannerVisible: Chunk598056,
-        className: Chunk139901.guildHeader,
-        headerClassName: Chunk139901.guildHeaderInner,
-        onMouseDown: Chunk473749,
+      b = (null == s ? true : s.id) === D._ ? u.j : u.E;
+    return (0, i.jsxs)(T.Z, {
+      header: null != s ? (0, i.jsx)(f.ZP, {
+        guild: s,
+        controller: l,
+        renderBanner: c,
+        bannerVisible: d,
+        className: R.guildHeader,
+        headerClassName: R.guildHeaderInner,
+        onMouseDown: r,
         disableBannerAnimation: false,
-        communityInfoVisible: Chunk905423,
-        children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
+        communityInfoVisible: g,
+        children: (0, i.jsx)(o.yRy, {
           targetElementRef: this.settingsIconRef,
           position: "right",
           renderPopout: this.renderSettings,
@@ -184,29 +184,29 @@ class M extends Chunk473749.PureComponent {
           }, e))
         })
       }) : null,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk139901.channelList,
-        children: null != Chunk442837 ? (0, Chunk54381.jsx)(Chunk680089, (e = L({}, Chunk554916), t = t = {
-          guild: Chunk442837,
+      children: [(0, i.jsx)("div", {
+        className: R.channelList,
+        children: null != s ? (0, i.jsx)(b, (e = L({}, a), t = t = {
+          guild: s,
           disableManageChannels: true,
-          onScroll: null != Chunk442837 && null != Chunk442837.banner ? this.handleScroll : null
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+          onScroll: null != s && null != s.banner ? this.handleScroll : null
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
             n.push.apply(n, i)
           }
           return n
-        })(Object(exports)).forEach(function(n) {
+        })(Object(t)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-        }), module)) : (0, Chunk54381.jsx)(Chunk591190.Z, {
+        }), e)) : (0, i.jsx)(h.Z, {
           withBannerPadding: false
         })
-      }), null != Chunk442837 && (0, Chunk54381.jsx)("section", {
-        className: Chunk139901.panels,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
-        children: (0, Chunk54381.jsx)(Chunk840780.Z, {
-          guildId: Chunk442837.id
+      }), null != s && (0, i.jsx)("section", {
+        className: R.panels,
+        "aria-label": k.intl.string(k.t.StREWK),
+        children: (0, i.jsx)(p.Z, {
+          guildId: s.id
         })
       })]
     })

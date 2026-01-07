@@ -15,8 +15,8 @@ let o = 3e3,
 function l() {
   let {
     guildStore: e
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = null != module ? module : Chunk430824.Z, n = exports.getGuild(Chunk558921.y), i = (null == require ? true : require.joinedAt) instanceof Date && Date.now() - require.joinedAt.getTime() <= s;
-  return 1 === exports.getGuildCount() && Chunk914010
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = null != e ? e : r.Z, n = t.getGuild(a.y), i = (null == n ? true : n.joinedAt) instanceof Date && Date.now() - n.joinedAt.getTime() <= s;
+  return 1 === t.getGuildCount() && i
 }
 
 function c(e) {

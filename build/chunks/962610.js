@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk569550 = require("./569550.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["0CEP6e"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["kBXuW+"]),
+  useTitle: () => T.intl.string(T.t["0CEP6e"]),
+  useSubtitle: () => T.intl.string(T.t["kBXuW+"]),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled)
+    return (0, i.e7)([u.default], () => u.default.isStreamInfoOverlayEnabled)
   },
   setValue: function(t) {
     let e = u.default.isStreamInfoOverlayEnabled;
@@ -24,6 +24,6 @@ let S = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
     })
   },
   usePredicate: function() {
-    return Chunk695346.Sb.useSetting()
+    return r.Sb.useSetting()
   }
 })

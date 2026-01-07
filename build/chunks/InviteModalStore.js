@@ -55,11 +55,11 @@ function N() {
 }
 class T extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk701190.Z, Chunk496675.Z, Chunk699516.Z, Chunk594174.default)
+    this.waitFor(a.default, f.Z, O.ZP, g.Z, b.Z, v.Z, p.Z, y.default)
   }
   isOpen() {
-    let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(j && C.length > 0 && E === module)
+    let e = __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP;
+    return !!(j && C.length > 0 && E === e)
   }
   getProps() {
     return {
@@ -155,7 +155,7 @@ let Z = new T(Chunk570140.Z, {
   INVITE_MODAL_CLOSE: function() {
     if (r = null, _ = false, C.length > 0) {
       let [, e] = C.shift();
-      null != module && module()
+      null != e && e()
     }
   },
   INVITE_ACCEPT: function() {

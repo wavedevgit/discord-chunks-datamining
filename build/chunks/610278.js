@@ -20,39 +20,39 @@ function f(e) {
 }
 
 function g() {
-  let e = Chunk591472.Z.getConnectedFrame();
-  if (null == module) {
+  let e = u.Z.getConnectedFrame();
+  if (null == e) {
     let e = p;
-    null != module && Chunk366050.Z.isOpen(module) && (Chunk570140.Z.wait(() => Chunk519938.xv(module)), p = null);
+    null != e && c.Z.isOpen(e) && (r.Z.wait(() => i.xv(e)), p = null);
     return
   }
-  var t = f(module);
-  if (Chunk366050.Z.isOpen(exports)) returnfalse;
+  var t = f(e);
+  if (c.Z.isOpen(t)) returnfalse;
   if (null != p) {
     let e = p;
-    Chunk570140.Z.wait(() => Chunk519938.xv(module))
+    r.Z.wait(() => i.xv(e))
   }
-  return Chunk570140.Z.wait(() => Chunk519938.bA(exports, Chunk981631.NYg.FRAME, {})), void(p = exports)
+  return r.Z.wait(() => i.bA(t, d.NYg.FRAME, {})), void(p = t)
 }
 
-function h() {
-  if ((0, Chunk958185.Z)({
-      LayerStore: Chunk819640.Z,
-      PopoutWindowStore: Chunk928518.Z
+function m() {
+  if ((0, a.Z)({
+      LayerStore: s.Z,
+      PopoutWindowStore: o.Z
     })) {
     let e = p;
-    null != module && Chunk366050.Z.isOpen(module) && Chunk570140.Z.wait(() => Chunk519938.Cp(module));
+    null != e && c.Z.isOpen(e) && r.Z.wait(() => i.Cp(e));
     return
   }
   let e = p;
-  null != module && Chunk366050.Z.isOpen(module) && Chunk570140.Z.wait(() => Chunk519938.$Z(module))
+  null != e && c.Z.isOpen(e) && r.Z.wait(() => i.$Z(e))
 }
-class m extends Chunk317770.Z {
+class h extends Chunk317770.Z {
   _initialize() {
-    Chunk591472.Z.addChangeListener(g), Chunk819640.Z.addChangeListener(h)
+    u.Z.addChangeListener(g), s.Z.addChangeListener(m)
   }
   _terminate() {
-    Chunk591472.Z.removeChangeListener(g), Chunk819640.Z.removeChangeListener(h)
+    u.Z.removeChangeListener(g), s.Z.removeChangeListener(m)
   }
 }
-let b = new m
+let b = new h

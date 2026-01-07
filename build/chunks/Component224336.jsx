@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk116174 = require("./116174.js");
 
 function l() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk116174.divider
+  return (0, r.jsx)("div", {
+    className: i.divider
   })
 }

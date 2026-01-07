@@ -24,7 +24,7 @@ class l extends Chunk232869.VR {
       G: o,
       H: s
     } = this;
-    return [module, exports, require, Chunk232869, Chunk492733, a, o, s]
+    return [e, t, n, r, i, a, o, s]
   }
   set(e, t, n, r, i, a, o, s) {
     this.A = 0 | e, this.B = 0 | t, this.C = 0 | n, this.D = 0 | r, this.E = 0 | i, this.F = 0 | a, this.G = 0 | o, this.H = 0 | s

@@ -25,7 +25,7 @@ let E = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), E = (0, Chunk811847.B)("CollectiblesSortSelect"), v = require(), S = Chunk473749.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== i.E.RELEVANCE || v), [v]), _ = Chunk473749.useCallback(e => {
+  } = (0, f.S)(), a = (0, d.sp)(), E = (0, g.B)("CollectiblesSortSelect"), v = n(), S = l.useMemo(() => b.aP.filter(e => e.sortType !== i.E.RELEVANCE || v), [v]), _ = l.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -46,7 +46,7 @@ let E = () => {
       label: m.intl.string(m.t.Y68e5p),
       value: "popularity"
     }
-  }, []), x = Chunk473749.useCallback(e => ({
+  }, []), x = l.useCallback(e => ({
     recent: {
       sortType: i.E.RECENCY,
       sortDirection: o.F.DESC
@@ -67,7 +67,7 @@ let E = () => {
       sortType: i.E.RELEVANCE,
       sortDirection: o.F.DESC
     }
-  })[e], []), O = Chunk473749.useCallback(e => {
+  })[e], []), O = l.useCallback(e => {
     let n = _(x(e));
     u.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == a ? true : a.sessionId,
@@ -78,19 +78,19 @@ let E = () => {
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
     }), t(x(e))
-  }, [Chunk120356, _, x, exports]), y = _(module);
-  return (0, Chunk54381.jsx)("div", {
-    className: s()(Chunk259163.container, {
-      [Chunk868090.customCursors]: E
+  }, [a, _, x, t]), y = _(e);
+  return (0, r.jsx)("div", {
+    className: s()(h.container, {
+      [C.customCursors]: E
     }),
-    children: (0, Chunk54381.jsx)(Chunk199849.B6, {
+    children: (0, r.jsx)(c.B6, {
       options: S.map(_),
       select: O,
       isSelected: e => e === y.value,
       serialize: e => e,
       popoutWidth: 224,
       popoutClassName: s()({
-        [Chunk868090.customCursors]: E
+        [C.customCursors]: E
       })
     })
   })

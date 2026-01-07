@@ -22,7 +22,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 let O = new Set(["Blink", "Gecko", "WebKit"]),
   v = Chunk981631.dG4;
-if (Chunk358085.isPlatformEmbedded) v = e => m.ZP.setBadge(e);
+if (Chunk358085.isPlatformEmbedded) v = e => h.ZP.setBadge(e);
 else if (O.has(o().layout)) {
   let e = new(l())({
     animation: "none"
@@ -35,26 +35,26 @@ else if (O.has(o().layout)) {
 }
 
 function y() {
-  let e = (0, Chunk442837.e7)([Chunk340895.Z], () => Chunk340895.Z.hasIncomingCalls()),
-    t = (0, Chunk442837.e7)([Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
-      let e = Chunk888369.default.getTotalMentionCount(),
-        t = (0, Chunk849862.m$)([Chunk699516.Z, Chunk91896.Z]),
-        n = Chunk888369.default.hasAnyUnread(),
-        r = Chunk292959.Z.getDisableUnreadBadge(),
-        i = module + exports;
-      return 0 === Chunk166516 && require && !Chunk473749 && (i = false), Chunk166516
+  let e = (0, s.e7)([g.Z], () => g.Z.hasIncomingCalls()),
+    t = (0, s.e7)([d.default, f.Z, p.Z, c.Z], () => {
+      let e = d.default.getTotalMentionCount(),
+        t = (0, u.m$)([f.Z, c.Z]),
+        n = d.default.hasAnyUnread(),
+        r = p.Z.getDisableUnreadBadge(),
+        i = e + t;
+      return 0 === i && n && !r && (i = false), i
     });
-  Chunk473749.useEffect(() => {
-    if (!module) return;
-    let t = Chunk998502.ZP.bounceDock("critical"),
-      n = (0, Chunk252618.EM)({
-        messages: [Chunk388032.intl.string(Chunk388032.t["fk1/bX"])],
+  r.useEffect(() => {
+    if (!e) return;
+    let t = h.ZP.bounceDock("critical"),
+      n = (0, b.EM)({
+        messages: [E.intl.string(E.t["fk1/bX"])],
         count: 50
       });
     return () => {
-      null == exports || exports(), require()
+      null == t || t(), n()
     }
-  }, [module]), Chunk473749.useEffect(() => {
-    v(exports)
-  }, [exports]), Chunk473749.useEffect(() => () => v(0), [])
+  }, [e]), r.useEffect(() => {
+    v(t)
+  }, [t]), r.useEffect(() => () => v(0), [])
 }

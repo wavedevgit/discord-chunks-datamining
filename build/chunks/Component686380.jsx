@@ -91,60 +91,60 @@ let M = "???",
   };
 class U extends Chunk473749.Component {
   getSystemMessageHeader() {
-    let e = Chunk594174.default.getUser(this.trialOffer.user_id);
-    if (this.isSender) return Chunk388032.intl.format(Chunk388032.t["4/EMxl"], {
-      receiver: null == module ? true : module.username
+    let e = m.default.getUser(this.trialOffer.user_id);
+    if (this.isSender) return P.intl.format(P.t["4/EMxl"], {
+      receiver: null == e ? true : e.username
     });
-    let t = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      n = (null == exports ? true : exports.username) !== true ? exports.username : "";
-    return Chunk388032.intl.format(Chunk388032.t.yisueA, {
-      sender: require,
-      helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM)
+    let t = m.default.getUser(this.trialOffer.referrer_id),
+      n = (null == t ? true : t.username) !== true ? t.username : "";
+    return P.intl.format(P.t.yisueA, {
+      sender: n,
+      helpdeskArticle: b.Z.getArticleURL(N.BhN.REFERRAL_PROGRAM)
     })
   }
   getTitleText() {
-    let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-      t = null != module ? module.username : M,
-      n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      r = null != require ? require.username : M;
-    return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t["Mptau/"], {
-      username: exports
-    }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf4"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxK"], {
-      userName: Chunk54381
-    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.IiWKwg, {
-      senderUserName: Chunk54381,
-      recipientUserName: exports
+    let e = m.default.getUser(this.trialOffer.user_id),
+      t = null != e ? e.username : M,
+      n = m.default.getUser(this.trialOffer.referrer_id),
+      r = null != n ? n.username : M;
+    return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? P.intl.formatToPlainString(P.t["Mptau/"], {
+      username: t
+    }) : this.offerExpired ? this.isSender ? P.intl.string(P.t["9SNdf4"]) : P.intl.formatToPlainString(P.t["H0+MxK"], {
+      userName: r
+    }) : P.intl.formatToPlainString(P.t.IiWKwg, {
+      senderUserName: r,
+      recipientUserName: t
     })
   }
   getBodyText() {
-    return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? Chunk388032.intl.format(Chunk388032.t.LwCwT9, {
-      helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM)
-    }) : this.offerExpired ? null : Chunk388032.intl.string(Chunk388032.t.lQLlOb)
+    return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? P.intl.format(P.t.LwCwT9, {
+      helpdeskArticle: b.Z.getArticleURL(N.BhN.REFERRAL_PROGRAM)
+    }) : this.offerExpired ? null : P.intl.string(P.t.lQLlOb)
   }
   renderActions() {
-    let e = this.currentUser.id !== this.trialOffer.user_id || (0, Chunk74538.I5)(this.currentUser) || !this.currentUser.verified || (0, Chunk786397.B)(this.trialOffer),
+    let e = this.currentUser.id !== this.trialOffer.user_id || (0, y.I5)(this.currentUser) || !this.currentUser.verified || (0, C.B)(this.trialOffer),
       t = this.renderExpirationDate();
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk218977.buttonContainer,
-      children: [(0, Chunk54381.jsx)("div", {
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    return (0, r.jsxs)("div", {
+      className: R.buttonContainer,
+      children: [(0, r.jsx)("div", {
+        children: (0, r.jsx)(c.Button, {
           variant: "primary",
-          disabled: module,
+          disabled: e,
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t.O0etsF),
+          text: P.intl.string(P.t.O0etsF),
           onClick: () => {
-            (0, Chunk963249.Z)({
+            (0, _.Z)({
               initialPlanId: null,
-              subscriptionTier: Chunk474936.Si.TIER_2,
+              subscriptionTier: A.Si.TIER_2,
               analyticsLocations: this.analyticsLocations,
               trialId: this.trialOffer.trial_id,
               referralTrialOfferId: this.trialOffer.id
             })
           }
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk218977.metadata,
-        children: exports
+      }), (0, r.jsx)("div", {
+        className: R.metadata,
+        children: t
       })]
     })
   }
@@ -153,116 +153,116 @@ class U extends Chunk473749.Component {
       trialOffer: e,
       trialEndsAt: t
     } = this.props;
-    if (true !== module.redeemed_at && !this.isSender && null !== exports) return Chunk388032.intl.formatToPlainString(Chunk388032.t.nP0ivR, {
-      date: (0, Chunk55935.vc)(o()(exports), "LL")
+    if (true !== e.redeemed_at && !this.isSender && null !== t) return P.intl.formatToPlainString(P.t.nP0ivR, {
+      date: (0, E.vc)(o()(t), "LL")
     });
-    if (this.recipientHasNitro || true === module.expires_at) return null;
-    let n = o()(module.expires_at);
-    return this.offerExpired ? Chunk388032.intl.formatToPlainString(Chunk388032.t.PuSHfU, {
-      date: (0, Chunk55935.vc)(o()(require), "LL")
-    }) : (0, Chunk93237.F6)(require.valueOf())
+    if (this.recipientHasNitro || true === e.expires_at) return null;
+    let n = o()(e.expires_at);
+    return this.offerExpired ? P.intl.formatToPlainString(P.t.PuSHfU, {
+      date: (0, E.vc)(o()(n), "LL")
+    }) : (0, v.F6)(n.valueOf())
   }
   renderMedia() {
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk218977.referral
+    return (0, r.jsx)("div", {
+      className: R.referral
     })
   }
   render() {
     let e = () => {
-        let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-          t = null != module ? module.username : M,
-          n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-          r = null != require ? require.username : M;
+        let e = m.default.getUser(this.trialOffer.user_id),
+          t = null != e ? e.username : M,
+          n = m.default.getUser(this.trialOffer.referrer_id),
+          r = null != n ? n.username : M;
         if (this.isSender)
           if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
-            headerText: Chunk388032.intl.formatToPlainString(Chunk388032.t.qABVhL, {
-              recipient: exports
+            headerText: P.intl.formatToPlainString(P.t.qABVhL, {
+              recipient: t
             }),
-            bodyText: Chunk388032.intl.formatToPlainString(Chunk388032.t.u7hyDx, {
-              helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM)
+            bodyText: P.intl.formatToPlainString(P.t.u7hyDx, {
+              helpdeskArticle: b.Z.getArticleURL(N.BhN.REFERRAL_PROGRAM)
             })
           };
           else return {
-            headerText: Chunk388032.intl.string(Chunk388032.t.LAGZfq),
-            bodyText: Chunk388032.intl.formatToPlainString(Chunk388032.t["0gnFLC"], {
-              recipient: exports
+            headerText: P.intl.string(P.t.LAGZfq),
+            bodyText: P.intl.formatToPlainString(P.t["0gnFLC"], {
+              recipient: t
             })
           };
         return this.offerExpired ? {
-          headerText: Chunk388032.intl.string(Chunk388032.t.nYvpUl),
-          bodyText: Chunk388032.intl.formatToPlainString(Chunk388032.t.wJdBEZ, {
-            sender: Chunk54381
+          headerText: P.intl.string(P.t.nYvpUl),
+          bodyText: P.intl.formatToPlainString(P.t.wJdBEZ, {
+            sender: r
           })
         } : {
-          headerText: Chunk388032.intl.string(Chunk388032.t.HtTvXA),
-          bodyText: Chunk388032.intl.formatToPlainString(Chunk388032.t.wOQByA, {
-            sender: Chunk54381
+          headerText: P.intl.string(P.t.HtTvXA),
+          bodyText: P.intl.formatToPlainString(P.t.wOQByA, {
+            sender: r
           })
         }
       },
-      t = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk740594.Z, {
-          subscriptionTier: Chunk474936.Si.TIER_2,
-          buttonTextOverride: Chunk388032.intl.string(Chunk388032.t.O0etsF),
+      t = (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(T.Z, {
+          subscriptionTier: A.Si.TIER_2,
+          buttonTextOverride: P.intl.string(P.t.O0etsF),
           size: "md",
           variantOverride: "expressive"
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-subtle",
           children: this.renderExpirationDate()
         })]
       }),
-      n = (0, Chunk54381.jsx)(Chunk481060.Button, {
+      n = (0, r.jsx)(c.Button, {
         variant: "primary",
         disabled: false,
         size: "md",
         onClick: () => k({
           analyticsLocations: [],
-          startingScreen: this.referralsSent.size === Chunk796634.Q ? Chunk656139.SelectFriendsModalScreens.REMINDER : Chunk656139.SelectFriendsModalScreens.SELECT_FRIENDS
+          startingScreen: this.referralsSent.size === S.Q ? I.SelectFriendsModalScreens.REMINDER : I.SelectFriendsModalScreens.SELECT_FRIENDS
         }),
-        text: Chunk388032.intl.string(Chunk388032.t.Lm2nFc)
+        text: P.intl.string(P.t.Lm2nFc)
       }),
-      i = this.isSender ? require : exports,
-      a = (0, Chunk54381.jsx)(Chunk481060.Eep, {
-        src: Chunk746838.Z,
+      i = this.isSender ? n : t,
+      a = (0, r.jsx)(c.Eep, {
+        src: w.Z,
         height: 84,
         width: 144,
-        className: Chunk218977.imgDMEmbedXP
+        className: R.imgDMEmbedXP
       }),
       {
         headerText: o,
         bodyText: s
-      } = module();
-    return (0, Chunk54381.jsxs)(Chunk834129.Z, {
-      className: Chunk218977.systemMessageContainerDMEmbedXP,
-      iconNode: (0, Chunk54381.jsx)(Chunk481060.SrA, {
+      } = e();
+    return (0, r.jsxs)(p.Z, {
+      className: R.systemMessageContainerDMEmbedXP,
+      iconNode: (0, r.jsx)(c.SrA, {
         size: "md",
         color: "currentColor"
       }),
-      iconContainerClassName: Chunk218977.systemMessageContainerIcon,
+      iconContainerClassName: R.systemMessageContainerIcon,
       compact: this.compact,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-strong",
         children: this.getSystemMessageHeader()
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk218977.containerDMEmbedXP,
-        children: [Chunk913527, (0, Chunk54381.jsxs)("div", {
-          className: Chunk218977.contentDMEmbedXP,
-          children: [(0, Chunk54381.jsxs)("div", {
-            className: Chunk218977.contentTextDMEmbedXP,
-            children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, r.jsxs)("div", {
+        className: R.containerDMEmbedXP,
+        children: [a, (0, r.jsxs)("div", {
+          className: R.contentDMEmbedXP,
+          children: [(0, r.jsxs)("div", {
+            className: R.contentTextDMEmbedXP,
+            children: [(0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",
               color: "text-strong",
               children: o
-            }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+            }), (0, r.jsx)(c.Text, {
               variant: "text-md/medium",
               color: "text-subtle",
-              children: Chunk873546
+              children: s
             })]
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk218977.buttonContainerDMEmbedXP,
-            children: Chunk473749
+          }), (0, r.jsx)("div", {
+            className: R.buttonContainerDMEmbedXP,
+            children: i
           })]
         })]
       })]

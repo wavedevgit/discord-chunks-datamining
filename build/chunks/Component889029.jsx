@@ -51,31 +51,31 @@ function b() {
     disableSounds: y,
     disableNotifications: O,
     enableContentProtection: v
-  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), S = () => (0, Chunk54381.jsxs)(Chunk481060.Zbd, {
-    type: Chunk481060.Zbd.Types.PRIMARY,
-    className: Chunk268622.noticeCard,
-    children: [(0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  } = (0, i.cj)([l.Z], () => E({}, l.Z.getSettings())), S = () => (0, r.jsxs)(a.Zbd, {
+    type: a.Zbd.Types.PRIMARY,
+    className: h.noticeCard,
+    children: [(0, r.jsxs)("div", {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk388032.t.bxGbHL)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: m.intl.string(m.t.bxGbHL)
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t["4rmZnx"], {
-          streamkitURL: Chunk981631.EYA.STREAMKIT
+        children: m.intl.format(m.t["4rmZnx"], {
+          streamkitURL: _.EYA.STREAMKIT
         })
       })]
-    }), (0, Chunk54381.jsx)("img", {
-      src: require("./560264.js"),
+    }), (0, r.jsx)("img", {
+      src: n(560264),
       width: 184,
       height: 110,
       alt: "",
-      className: Chunk268622.noticeImage
+      className: h.noticeImage
     })]
   }), I = () => {
-    if (Chunk358085.isPlatformEmbedded) return (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["PKDAJ/"]),
-      description: Chunk388032.intl.string(Chunk388032.t.ZPi4lM),
-      checked: exports,
+    if (c.isPlatformEmbedded) return (0, r.jsx)(a.rsf, {
+      label: m.intl.string(m.t["PKDAJ/"]),
+      description: m.intl.string(m.t.ZPi4lM),
+      checked: t,
       onChange: e => T("autoToggle", e)
     })
   }, T = (e, t) => {
@@ -83,70 +83,70 @@ function b() {
       [e]: t
     })
   }, C = () => {
-    (0, Chunk518596.openUserSettings)(Chunk313789.n.KEYBINDS_PANEL, {
-      section: Chunk981631.oAB.KEYBINDS
+    (0, f.openUserSettings)(u.n.KEYBINDS_PANEL, {
+      section: _.oAB.KEYBINDS
     })
   };
-  return (0, Chunk54381.jsx)(Chunk273313.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.S5GfOW),
-    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  return (0, r.jsx)(d.Z, {
+    title: m.intl.string(m.t.S5GfOW),
+    children: (0, r.jsxs)(a.Kqy, {
       gap: 24,
-      children: [(0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.STREAMER_MODE_INTEGRATIONS,
+      children: [(0, r.jsx)(s.F, {
+        setting: p.s6.STREAMER_MODE_INTEGRATIONS,
         children: S()
-      }), (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.STREAMER_MODE_ENABLE,
-        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      }), (0, r.jsx)(s.F, {
+        setting: p.s6.STREAMER_MODE_ENABLE,
+        children: (0, r.jsxs)(a.Kqy, {
           gap: 16,
-          children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.p9ZAJZ),
-            description: Chunk388032.intl.format(Chunk388032.t.MLVL2M, {
+          children: [(0, r.jsx)(a.rsf, {
+            label: m.intl.string(m.t.p9ZAJZ),
+            description: m.intl.format(m.t.MLVL2M, {
               onClick: C
             }),
-            checked: module,
+            checked: e,
             onChange: e => T("enabled", e)
-          }), I(), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
+          }), I(), (0, r.jsx)(a.izJ, {})]
         })
-      }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-        label: Chunk388032.intl.string(Chunk388032.t["+1H47t"]),
-        className: Chunk268622.sectionLabel,
-        children: [(0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
-          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.UpQziA),
-            description: Chunk388032.intl.string(Chunk388032.t["+9Lra7"]),
+      }), (0, r.jsxs)(a.C3N, {
+        label: m.intl.string(m.t["+1H47t"]),
+        className: h.sectionLabel,
+        children: [(0, r.jsx)(s.F, {
+          setting: p.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
+          children: (0, r.jsx)(a.rsf, {
+            label: m.intl.string(m.t.UpQziA),
+            description: m.intl.string(m.t["+9Lra7"]),
             checked: b,
             onChange: e => T("hidePersonalInformation", e)
           })
-        }), (0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
-          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.q7WNGv),
-            description: Chunk388032.intl.string(Chunk388032.t.m7mS2U),
+        }), (0, r.jsx)(s.F, {
+          setting: p.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
+          children: (0, r.jsx)(a.rsf, {
+            label: m.intl.string(m.t.q7WNGv),
+            description: m.intl.string(m.t.m7mS2U),
             checked: g,
             onChange: e => T("hideInstantInvites", e)
           })
-        }), (0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.STREAMER_MODE_DISABLE_SOUNDS,
-          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.o56OZu),
-            description: Chunk388032.intl.string(Chunk388032.t.eAkaik),
+        }), (0, r.jsx)(s.F, {
+          setting: p.s6.STREAMER_MODE_DISABLE_SOUNDS,
+          children: (0, r.jsx)(a.rsf, {
+            label: m.intl.string(m.t.o56OZu),
+            description: m.intl.string(m.t.eAkaik),
             checked: y,
             onChange: e => T("disableSounds", e)
           })
-        }), (0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
-          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.qmYiYd),
-            description: Chunk388032.intl.string(Chunk388032.t["ZAmpQ/"]),
+        }), (0, r.jsx)(s.F, {
+          setting: p.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
+          children: (0, r.jsx)(a.rsf, {
+            label: m.intl.string(m.t.qmYiYd),
+            description: m.intl.string(m.t["ZAmpQ/"]),
             checked: O,
             onChange: e => T("disableNotifications", e)
           })
-        }), (0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
-          children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t["iA81+a"]),
-            description: Chunk388032.intl.string(Chunk388032.t.P4vj0h),
+        }), (0, r.jsx)(s.F, {
+          setting: p.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
+          children: (0, r.jsx)(a.rsf, {
+            label: m.intl.string(m.t["iA81+a"]),
+            description: m.intl.string(m.t.P4vj0h),
             checked: v,
             onChange: e => T("enableContentProtection", e)
           })

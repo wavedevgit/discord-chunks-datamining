@@ -54,7 +54,7 @@ class s {
   }
   addImportLogDetail() {
     let e = a();
-    module - this.lastImportDuration > 25 && (this.addDetail("JS Imports", Math.ceil(module) + "ms"), this.lastImportDuration = module)
+    e - this.lastImportDuration > 25 && (this.addDetail("JS Imports", Math.ceil(e) + "ms"), this.lastImportDuration = e)
   }
   markWithDelta(e, t) {
     let n = this.logs[this.logs.length - 1];

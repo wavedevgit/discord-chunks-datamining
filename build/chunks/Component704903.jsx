@@ -33,23 +33,23 @@ class g extends(s = Chunk473749.PureComponent) {
       email: s,
       password: i
     } = this.state;
-    if (!module) return [{
-      text: Chunk388032.intl.string(Chunk388032.t.v740sh),
+    if (!t) return [{
+      text: d.intl.string(d.t.v740sh),
       variant: "primary",
       onClick: this.handleVerify,
-      loading: require,
-      disabled: 0 === s.length || 0 === Chunk54381.length
+      loading: n,
+      disabled: 0 === s.length || 0 === i.length
     }];
     let l = [{
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t.WnX4J2),
+      text: d.intl.string(d.t.WnX4J2),
       onClick: this.handleResendEmail
     }];
-    return exports && Chunk473749.push({
-      text: Chunk388032.intl.string(Chunk388032.t.Vm8akB),
+    return e && l.push({
+      text: d.intl.string(d.t.Vm8akB),
       variant: "primary",
       onClick: this.handleChangeEmailClick
-    }), Chunk473749
+    }), l
   }
   renderInputs() {
     let {
@@ -59,25 +59,25 @@ class g extends(s = Chunk473749.PureComponent) {
       email: n,
       password: s
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk481060.Kqy, {
+    return (0, i.jsx)(o.Kqy, {
       gap: 40,
       padding: {
         bottom: 8
       },
-      children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      children: (0, i.jsxs)(o.Kqy, {
         gap: 20,
-        children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
-          label: Chunk388032.intl.string(Chunk388032.t.dI4d4S),
-          value: require,
-          error: module,
+        children: [(0, i.jsx)(o.oil, {
+          label: d.intl.string(d.t.dI4d4S),
+          value: n,
+          error: t,
           onChange: this.handleEmailChange,
           onKeyPress: this.handleKeyPress,
           autoFocus: true
-        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
-          label: Chunk388032.intl.string(Chunk388032.t["CIGa+7"]),
+        }), (0, i.jsx)(o.oil, {
+          label: d.intl.string(d.t["CIGa+7"]),
           type: "password",
           value: s,
-          error: exports,
+          error: e,
           onChange: this.handlePasswordChange,
           onKeyPress: this.handleKeyPress
         })]
@@ -93,15 +93,15 @@ class g extends(s = Chunk473749.PureComponent) {
         canResend: s,
         transitionState: l
       } = this.props;
-    return t = exports && null != require ? Chunk388032.intl.format(Chunk388032.t.JqLgQL, {
-      email: require
-    }) : s ? Chunk388032.intl.string(Chunk388032.t.tSXg8O) : Chunk388032.intl.string(Chunk388032.t.KW5DEh), (0, Chunk54381.jsx)(Chunk159691.Ioy, {
-      transitionState: Chunk473749,
-      title: Chunk388032.intl.string(Chunk388032.t["1MPz27"]),
-      subtitle: module,
+    return t = e && null != n ? d.intl.format(d.t.JqLgQL, {
+      email: n
+    }) : s ? d.intl.string(d.t.tSXg8O) : d.intl.string(d.t.KW5DEh), (0, i.jsx)(r.Ioy, {
+      transitionState: l,
+      title: d.intl.string(d.t["1MPz27"]),
+      subtitle: t,
       graphic: {
         type: "image",
-        src: Chunk213376.Z
+        src: u.Z
       },
       onClose: this.props.onClose,
       actions: this.getActions(),

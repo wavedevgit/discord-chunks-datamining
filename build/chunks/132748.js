@@ -12,59 +12,59 @@ let s = [{
   tier: Chunk981631.Eu4.TIER_1,
   perks: [{
     perkIcon: Chunk267642.Ro.EMOJI,
-    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.Tlz0x1, {
-      numEmojiSlots: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.emoji
+    getCopy: () => o.intl.formatToPlainString(o.t.Tlz0x1, {
+      numEmojiSlots: a.HO[i.Eu4.TIER_1].limits.emoji
     })
   }, {
     perkIcon: Chunk267642.Ro.SOUNDBOARD,
-    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t["v+MIfo"], {
-      numSoundboardSlots: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.soundboardSounds
+    getCopy: () => o.intl.formatToPlainString(o.t["v+MIfo"], {
+      numSoundboardSlots: a.HO[i.Eu4.TIER_1].limits.soundboardSounds
     }),
     isNew: true
   }, {
     perkIcon: Chunk267642.Ro.ANIMATED,
-    getCopy: () => Chunk388032.intl.string(Chunk388032.t.PbAyub)
+    getCopy: () => o.intl.string(o.t.PbAyub)
   }, {
     perkIcon: Chunk267642.Ro.AUDIO,
-    getCopy: () => Chunk388032.intl.string(Chunk388032.t["WH+OeI"])
+    getCopy: () => o.intl.string(o.t["WH+OeI"])
   }]
 }, {
   tier: Chunk981631.Eu4.TIER_2,
   perks: [{
     perkIcon: Chunk267642.Ro.STREAM,
-    getCopy: () => Chunk388032.intl.string(Chunk388032.t.y4ft4D)
+    getCopy: () => o.intl.string(o.t.y4ft4D)
   }, {
     perkIcon: Chunk267642.Ro.UPLOAD,
-    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
-      uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8j)
+    getCopy: () => o.intl.formatToPlainString(o.t.aFRl53, {
+      uploadSizeLimit: o.intl.string(o.t.M6qV8j)
     })
   }, {
     perkIcon: Chunk267642.Ro.CUSTOM_ROLE_ICON,
-    getCopy: () => Chunk388032.intl.string(Chunk388032.t["6PV6Qc"])
+    getCopy: () => o.intl.string(o.t["6PV6Qc"])
   }, {
     perkIcon: Chunk267642.Ro.CUSTOMIZATION,
-    getCopy: () => Chunk388032.intl.string(Chunk388032.t["1a5rjl"])
+    getCopy: () => o.intl.string(o.t["1a5rjl"])
   }]
 }, {
   tier: Chunk981631.Eu4.TIER_3,
   perks: [{
     perkIcon: Chunk267642.Ro.VANITY,
-    getCopy: () => Chunk388032.intl.string(Chunk388032.t.adNGjW)
+    getCopy: () => o.intl.string(o.t.adNGjW)
   }, {
     perkIcon: Chunk267642.Ro.UPLOAD,
-    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
-      uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8D)
+    getCopy: () => o.intl.formatToPlainString(o.t.aFRl53, {
+      uploadSizeLimit: o.intl.string(o.t.yMOW8D)
     })
   }, {
     perkIcon: Chunk267642.Ro.AUDIO,
-    getCopy: () => Chunk388032.intl.string(Chunk388032.t.Tsljqo)
+    getCopy: () => o.intl.string(o.t.Tsljqo)
   }, {
     perkIcon: Chunk267642.Ro.ANIMATED,
-    getCopy: () => Chunk388032.intl.string(Chunk388032.t.nRKlmC)
+    getCopy: () => o.intl.string(o.t.nRKlmC)
   }, {
     perkIcon: Chunk267642.Ro.STAGE_VIDEO,
-    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.hsZ88d, {
-      numStageSeats: Chunk981631.RcX
+    getCopy: () => o.intl.formatToPlainString(o.t.hsZ88d, {
+      numStageSeats: i.RcX
     })
   }]
 }]

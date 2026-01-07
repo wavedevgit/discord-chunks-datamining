@@ -50,11 +50,11 @@ function u(e, t) {
 }
 
 function d() {
-  return (0, Chunk54381.jsx)(Chunk481060.Button, {
+  return (0, r.jsx)(i.Button, {
     variant: "primary",
     size: "sm",
-    text: Chunk388032.intl.string(Chunk388032.t["FRep5/"]),
-    onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(a.default, u(l({}, e), {
+    text: o.intl.string(o.t["FRep5/"]),
+    onClick: () => (0, i.h7j)(e => (0, r.jsx)(a.default, u(l({}, e), {
       onSuccess: e.onClose
     })))
   })

@@ -19,10 +19,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk787630 = require("./787630.js");
-let E = () => [Chunk388032.intl.string(Chunk388032.t["EgWTY+"]), Chunk388032.intl.string(Chunk388032.t.umBn5f), Chunk388032.intl.string(Chunk388032.t.dG1wD1), Chunk388032.intl.string(Chunk388032.t.SesI4S), Chunk388032.intl.string(Chunk388032.t.RnMLvl)],
+let E = () => [h.intl.string(h.t["EgWTY+"]), h.intl.string(h.t.umBn5f), h.intl.string(h.t.dG1wD1), h.intl.string(h.t.SesI4S), h.intl.string(h.t.RnMLvl)],
   b = () => {
     var e;
-    return null != (e = l().sample(E())) ? module : Chunk388032.intl.string(Chunk388032.t["EgWTY+"])
+    return null != (e = l().sample(E())) ? e : h.intl.string(h.t["EgWTY+"])
   };
 
 function y(e) {

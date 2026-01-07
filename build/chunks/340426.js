@@ -16,16 +16,16 @@ function s() {
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
     premiumGroupMembership: n,
     isFetchingMembership: s
-  } = (0, Chunk442837.cj)([Chunk643281.Z], () => ({
-    premiumGroupMembership: Chunk643281.Z.getMembership(),
-    isFetchingMembership: Chunk643281.Z.isFetchingMembership()
+  } = (0, i.cj)([o.Z], () => ({
+    premiumGroupMembership: o.Z.getMembership(),
+    isFetchingMembership: o.Z.isFetchingMembership()
   }));
-  return (0, Chunk473749.useEffect)(() => {
-    exports && (module && Chunk643281.Z.hasFetchedMembership() || Chunk570140.Z.dispatch({
+  return (0, r.useEffect)(() => {
+    t && (e && o.Z.hasFetchedMembership() || a.Z.dispatch({
       type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST"
     }))
-  }, [exports, module]), {
-    premiumGroupMembership: require,
+  }, [t, e]), {
+    premiumGroupMembership: n,
     isLoading: s
   }
 }

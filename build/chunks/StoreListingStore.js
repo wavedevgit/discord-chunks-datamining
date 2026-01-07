@@ -82,12 +82,12 @@ function S() {
 }
 
 function I() {
-  if (r === Chunk706454.default.locale) returnfalse;
-  S(), r = Chunk706454.default.locale
+  if (r === s.default.locale) returnfalse;
+  S(), r = s.default.locale
 }
 class T extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], I), r = Chunk706454.default.locale
+    this.waitFor(s.default), this.syncWith([s.default], I), r = s.default.locale
   }
   get(e) {
     return d[e]

@@ -23,15 +23,15 @@ let u = "SpellcheckStore",
   f = new Set;
 
 function p() {
-  Chunk433517.K.set(u, {
+  a.K.set(u, {
     enabled: d,
     learnedWords: f
   })
 }
 class _ extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    let e = Chunk433517.K.get(u);
-    null != module && (d = module.enabled, f = new Set(module.learnedWords), (0, Chunk601993.gL)(d), (0, Chunk601993.fG)(f)), (0, Chunk241601.Ql)(Chunk601993._2)
+    let e = a.K.get(u);
+    null != e && (d = e.enabled, f = new Set(e.learnedWords), (0, l.gL)(d), (0, l.fG)(f)), (0, s.Ql)(l._2)
   }
   isEnabled() {
     return d
@@ -43,7 +43,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
 c(_, "displayName", "SpellcheckStore");
 let m = new _(Chunk570140.Z, {
   SPELLCHECK_TOGGLE() {
-    d = !d, (0, Chunk601993.gL)(d), p()
+    d = !d, (0, l.gL)(d), p()
   },
   SPELLCHECK_LEARN_WORD(e) {
     let {

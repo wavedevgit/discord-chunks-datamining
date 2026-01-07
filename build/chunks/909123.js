@@ -27,16 +27,16 @@ function m(e, t, n) {
 }
 class h extends Chunk147913.Z {
   handleSelectedGuildChange() {
-    let e = Chunk914010.Z.getGuildId();
-    if (null == module || module === Chunk647086._ || module === Chunk981631.I_8) return;
-    let t = Chunk430824.Z.getGuild(module);
-    null != exports && (Chunk158638.sT.trackExposure({
-      guildId: exports.id,
+    let e = s.Z.getGuildId();
+    if (null == e || e === _._ || e === p.I_8) return;
+    let t = a.Z.getGuild(e);
+    null != t && (d.sT.trackExposure({
+      guildId: t.id,
       location: "GuildPowerupsManager"
-    }), Chunk755458.u7.trackExposure({
-      guildId: exports.id,
+    }), l.u7.trackExposure({
+      guildId: t.id,
       location: "GuildPowerupsManager"
-    }), (0, Chunk639777.D)(Chunk496675.Z, exports) && (Chunk905128.Z.shouldFetchCatalogForGuild(module) && (0, Chunk713081.Sn)(module), Chunk905128.Z.shouldFetchPowerupsForGuild(module) && (0, Chunk713081.BN)(module)))
+    }), (0, f.D)(o.Z, t) && (u.Z.shouldFetchCatalogForGuild(e) && (0, c.Sn)(e), u.Z.shouldFetchPowerupsForGuild(e) && (0, c.BN)(e)))
   }
   handleEntitlementUpdate(e) {
     let {

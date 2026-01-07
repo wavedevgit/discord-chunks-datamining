@@ -9,8 +9,8 @@ var Chunk793030 = require("./793030.js"),
 require("./865052.js"), require("./884221.js");
 let a = {
   init() {
-    Chunk607070.Z.addChangeListener(() => {
-      Chunk607070.Z.keyboardModeEnabled ? (Chunk793030.dxT.setRingsEnabled(true), Chunk793030.dxT.enableAnimationTracking()) : (Chunk793030.dxT.setRingsEnabled(false), Chunk793030.dxT.disableAnimationTracking())
+    i.Z.addChangeListener(() => {
+      i.Z.keyboardModeEnabled ? (r.dxT.setRingsEnabled(true), r.dxT.enableAnimationTracking()) : (r.dxT.setRingsEnabled(false), r.dxT.disableAnimationTracking())
     })
   }
 }

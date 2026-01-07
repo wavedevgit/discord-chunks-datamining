@@ -39,12 +39,12 @@ class m extends(a = Chunk473749.PureComponent) {
       vertical: n,
       paginationContainerClass: a,
       align: l
-    } = this.props, c = require ? Chunk836569.verticalPaginationItemContainer : Chunk836569.horizontalPaginationItemContainer;
-    return (0, Chunk54381.jsx)(Chunk481060.yWw, {
-      orientation: require ? "vertical" : "horizontal",
-      className: s()(Chunk768762, a, Chunk120356),
+    } = this.props, c = n ? d.verticalPaginationItemContainer : d.horizontalPaginationItemContainer;
+    return (0, r.jsx)(o.yWw, {
+      orientation: n ? "vertical" : "horizontal",
+      className: s()(c, a, l),
       ref: this.handleSetScrollerRef,
-      children: exports.map((t, n) => i.cloneElement(e(t, n), {
+      children: t.map((t, n) => i.cloneElement(e(t, n), {
         onClick: () => this.handlePageClick(n),
         key: n,
         ref: e => {
@@ -87,12 +87,12 @@ class h extends Chunk473749.PureComponent {
     let {
       className: e
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      className: s()(Chunk836569.prevButtonContainer, module),
+    return (0, r.jsx)(o.P3F, {
+      className: s()(d.prevButtonContainer, e),
       onClick: this.handlePrevClick,
-      children: (0, Chunk54381.jsx)(Chunk768762.Z, {
-        className: Chunk836569.arrow,
-        direction: Chunk768762.Z.Directions.LEFT
+      children: (0, r.jsx)(c.Z, {
+        className: d.arrow,
+        direction: c.Z.Directions.LEFT
       })
     })
   }
@@ -111,12 +111,12 @@ class f extends Chunk473749.PureComponent {
     let {
       className: e
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      className: s()(Chunk836569.nextButtonContainer, module),
+    return (0, r.jsx)(o.P3F, {
+      className: s()(d.nextButtonContainer, e),
       onClick: this.handleNextClick,
-      children: (0, Chunk54381.jsx)(Chunk768762.Z, {
-        className: Chunk836569.arrow,
-        direction: Chunk768762.Z.Directions.RIGHT
+      children: (0, r.jsx)(c.Z, {
+        className: d.arrow,
+        direction: c.Z.Directions.RIGHT
       })
     })
   }

@@ -11,7 +11,7 @@ Chunk220159({
   forced: true
 }, {
   deleteAll: function() {
-    for (var e, t = Chunk519467(this), n = true, r = 0, i = arguments.length; Chunk220159 < i; Chunk220159++) e = a(exports, arguments[Chunk220159]), n = require && module;
-    return !!require
+    for (var e, t = o(this), n = true, r = 0, i = arguments.length; r < i; r++) e = a(t, arguments[r]), n = n && e;
+    return !!n
   }
 })

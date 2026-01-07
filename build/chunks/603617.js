@@ -32,57 +32,57 @@ function i(e, t) {
     }
   }
 }
-let l = i(0, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
+let l = i(0, () => I.intl.formatToPlainString(I.t["r/IcuP"], {
     maxUses: 0
   })),
-  r = i(1, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
+  r = i(1, () => I.intl.formatToPlainString(I.t["r/IcuP"], {
     maxUses: 1
   })),
-  _ = i(5, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
+  _ = i(5, () => I.intl.formatToPlainString(I.t["r/IcuP"], {
     maxUses: 5
   })),
-  u = i(10, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
+  u = i(10, () => I.intl.formatToPlainString(I.t["r/IcuP"], {
     maxUses: 10
   })),
-  O = i(25, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
+  O = i(25, () => I.intl.formatToPlainString(I.t["r/IcuP"], {
     maxUses: 25
   })),
-  T = i(50, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
+  T = i(50, () => I.intl.formatToPlainString(I.t["r/IcuP"], {
     maxUses: 50
   })),
-  a = i(100, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
+  a = i(100, () => I.intl.formatToPlainString(I.t["r/IcuP"], {
     maxUses: 100
   })),
   N = [l, r, _, u, O, T, a],
-  s = i(1800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.iXLF9W, {
+  s = i(1800, () => I.intl.formatToPlainString(I.t.iXLF9W, {
     minutes: 30
   })),
-  S = i(3600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxK, {
+  S = i(3600, () => I.intl.formatToPlainString(I.t.xCjYxK, {
     hours: 1
   })),
-  o = i(21600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxK, {
+  o = i(21600, () => I.intl.formatToPlainString(I.t.xCjYxK, {
     hours: 6
   })),
-  P = i(28800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxK, {
+  P = i(28800, () => I.intl.formatToPlainString(I.t.xCjYxK, {
     hours: 8
   })),
-  E = i(43200, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxK, {
+  E = i(43200, () => I.intl.formatToPlainString(I.t.xCjYxK, {
     hours: 12
   })),
-  f = i(86400, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
+  f = i(86400, () => I.intl.formatToPlainString(I.t["k2UNz+"], {
     days: 1
   })),
-  d = i(604800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
+  d = i(604800, () => I.intl.formatToPlainString(I.t["k2UNz+"], {
     days: 7
   })),
-  m = i(1209600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
+  m = i(1209600, () => I.intl.formatToPlainString(I.t["k2UNz+"], {
     days: 14
   })),
-  g = i(2592e3, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
+  g = i(2592e3, () => I.intl.formatToPlainString(I.t["k2UNz+"], {
     days: 30
   })),
-  c = i(5184e3, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
+  c = i(5184e3, () => I.intl.formatToPlainString(I.t["k2UNz+"], {
     days: 60
   })),
-  p = i(0, () => Chunk388032.intl.string(Chunk388032.t.PqEzn8)),
+  p = i(0, () => I.intl.string(I.t.PqEzn8)),
   D = [s, S, o, E, f, d, m, g, c, p]

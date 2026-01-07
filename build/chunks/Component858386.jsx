@@ -57,13 +57,13 @@ function h(e, t) {
 let g = "LOGIN_REQUIRED_ACTIONS_MODAL_KEY";
 class E extends Chunk147913.Z {
   handleConnectionOpen() {
-    let e = Chunk594174.default.getCurrentUser();
-    if (null == module || Chunk374023.s.isDisallowPopupsSet()) return;
-    let t = Chunk344532.Z.requiredActionsIncludes(module.id, [Chunk981631.ane.UPDATE_PASSWORD]);
-    Chunk344532.Z.wasLoginAttemptedInSession(module.id) && exports ? (0, Chunk481060.ZDy)(async () => {
+    let e = s.default.getCurrentUser();
+    if (null == e || c.s.isDisallowPopupsSet()) return;
+    let t = u.Z.requiredActionsIncludes(e.id, [d.ane.UPDATE_PASSWORD]);
+    u.Z.wasLoginAttemptedInSession(e.id) && t ? (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.resolve().then(require.bind(require, 194530));
+      } = await Promise.resolve().then(n.bind(n, 194530));
       return function(t) {
         let n = async () => {
           await t.onClose(), a.Z.logout("login_required_account_manager", d.Z5c.LOGIN)
@@ -78,9 +78,9 @@ class E extends Chunk147913.Z {
       }
     }, {
       modalKey: g,
-      onCloseRequest: Chunk231338.Vq,
+      onCloseRequest: f.Vq,
       instant: true
-    }) : exports && Chunk893776.Z.logout("login_required_account_manager", Chunk981631.Z5c.LOGIN)
+    }) : t && a.Z.logout("login_required_account_manager", d.Z5c.LOGIN)
   }
   constructor(...e) {
     super(...e), p(this, "actions", {

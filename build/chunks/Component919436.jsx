@@ -136,18 +136,18 @@ class M extends(r = Chunk473749.PureComponent) {
       opacity: n,
       height: r,
       scale: i
-    } = exports.springs;
+    } = t.springs;
     return {
-      opacity: require,
-      height: r.to([0, 1], [0, module]),
-      transform: Chunk54381.to([0, 1], [.5, 1]).to(e => "scale(".concat(e, ")"))
+      opacity: n,
+      height: r.to([0, 1], [0, e]),
+      transform: i.to([0, 1], [.5, 1]).to(e => "scale(".concat(e, ")"))
     }
   }
   getChannelIcon() {
     let {
       channel: e
-    } = this.props, t = module.type === Chunk981631.d4z.DM ? Chunk594174.default.getUser(module.getRecipientId()) : null;
-    return null != exports ? exports.getAvatarURL(true, 48, false) : (0, Chunk43267.x)(module)
+    } = this.props, t = e.type === P.d4z.DM ? O.default.getUser(e.getRecipientId()) : null;
+    return null != t ? t.getAvatarURL(true, 48, false) : (0, f.x)(e)
   }
   render() {
     let {
@@ -165,59 +165,59 @@ class M extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       hovered: g,
       animating: b
-    } = this.state, m = module.isMultiUserDM() && null == module.icon, y = () => (0, Chunk54381.jsx)(Chunk481060.LYs, T({
-      to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
+    } = this.state, m = e.isMultiUserDM() && null == e.icon, y = () => (0, i.jsx)(c.LYs, T({
+      to: P.Z5c.CHANNEL(P.ME, e.id),
       onMouseEnter: () => this.setState({
         hovered: true
       }),
       onMouseLeave: () => this.setState({
         hovered: false
       }),
-      selected: require || Chunk199902,
-      ariaLabel: null != exports ? Chunk388032.intl.formatToPlainString(Chunk388032.t.hKarnZ, {
+      selected: n || g,
+      ariaLabel: null != t ? N.intl.formatToPlainString(N.t.hKarnZ, {
         mentions: r,
-        name: exports
+        name: t
       }) : "",
       onContextMenu: this.handleContextMenu,
-      icon: Chunk306680 ? true : this.getChannelIcon(),
-      backgroundStyle: Chunk306680 ? "on-hover" : "always",
-      children: Chunk306680 ? (0, Chunk54381.jsx)(Chunk266076.Z, {
-        channel: module,
-        size: Chunk481060.EFr.SIZE_40,
-        facepileSizeOverride: Chunk481060.EFr.SIZE_32,
+      icon: m ? true : this.getChannelIcon(),
+      backgroundStyle: m ? "on-hover" : "always",
+      children: m ? (0, i.jsx)(p.Z, {
+        channel: e,
+        size: c.EFr.SIZE_40,
+        facepileSizeOverride: c.EFr.SIZE_32,
         "aria-hidden": true
       }) : true
-    }, Chunk43267)), O = (0, Chunk54381.jsx)(Chunk481060.aRk, {
+    }, f)), O = (0, i.jsx)(c.aRk, {
       rounded: true,
       selected: false,
-      lowerBadge: r > 0 ? (0, Chunk674552.Ne)(r, true, true) : null,
-      upperBadge: (0, Chunk674552.Or)({
-        audio: Chunk473749,
-        video: Chunk91192,
-        screenshare: Chunk442837,
-        isCurrentUserConnected: Chunk239091
+      lowerBadge: r > 0 ? (0, I.Ne)(r, true, true) : null,
+      upperBadge: (0, I.Or)({
+        audio: l,
+        video: o,
+        screenshare: s,
+        isCurrentUserConnected: u
       }),
       lowerBadgeSize: {
-        width: (0, Chunk481060.OVM)(r)
+        width: (0, c.OVM)(r)
       },
-      children: Chunk944486()
-    }), v = Chunk933557 ? (0, Chunk54381.jsx)(Chunk455172.Z, {
-      channel: module,
-      children: Chunk594174
-    }) : (0, Chunk54381.jsx)(Chunk662146.Z, {
-      text: null != exports ? exports : "",
-      selected: require,
-      children: Chunk594174
+      children: y()
+    }), v = h ? (0, i.jsx)(E.Z, {
+      channel: e,
+      children: O
+    }) : (0, i.jsx)(_.Z, {
+      text: null != t ? t : "",
+      selected: n,
+      children: O
     });
-    return (0, Chunk54381.jsx)(Chunk554916.animated.div, {
+    return (0, i.jsx)(a.animated.div, {
       style: this.getAnimatedStyle(),
-      children: (0, Chunk54381.jsxs)(Chunk682662.H, {
-        children: [(0, Chunk54381.jsx)(Chunk276952.Z, {
-          hovered: !Chunk19780 && Chunk199902,
-          selected: !Chunk19780 && require,
-          unread: !Chunk19780 && Chunk358221,
-          className: Chunk729074.pill
-        }), Chunk938475]
+      children: (0, i.jsxs)(S.H, {
+        children: [(0, i.jsx)(x.Z, {
+          hovered: !b && g,
+          selected: !b && n,
+          unread: !b && d,
+          className: Z.pill
+        }), v]
       })
     })
   }

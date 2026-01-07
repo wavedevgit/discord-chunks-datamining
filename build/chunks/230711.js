@@ -40,14 +40,14 @@ let f = {
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
         openWithoutBackstack: false
       };
-    Chunk570140.Z.dispatch(d({
+    a.Z.dispatch(d({
       type: "USER_SETTINGS_MODAL_OPEN",
-      section: module,
-      subsection: exports
-    }, require)), (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS)
+      section: e,
+      subsection: t
+    }, n)), (0, s.jN)(l.S9g.USER_SETTINGS)
   },
   close() {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_MODAL_CLOSE"
     })
   },
@@ -79,12 +79,12 @@ let f = {
     })
   },
   submitComplete() {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_MODAL_SUBMIT_COMPLETE"
     })
   },
   reset() {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_MODAL_RESET"
     })
   },

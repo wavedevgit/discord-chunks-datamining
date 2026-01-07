@@ -29,15 +29,15 @@ async function m(e) {
 }
 
 function h() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = Chunk78839.Z.getPremiumTypeSubscription(),
-    n = null != exports && !exports.isBoostOnly,
-    l = (0, Chunk442837.e7)([Chunk580130.Z], () => Chunk580130.Z.getReverseTrialEntitlement(false));
-  return (0, Chunk493773.ZP)(() => {
-    null != module && (0, Chunk111361.I5)(module) && !require && (Chunk580130.Z.fetchedAllEntitlements || Chunk580130.Z.fetchingAllEntitlements || (0, Chunk496929.p0)({
-      entitlementType: Chunk981631.qc2.FRACTIONAL_REDEMPTION
+  let e = (0, r.e7)([o.default], () => o.default.getCurrentUser()),
+    t = s.Z.getPremiumTypeSubscription(),
+    n = null != t && !t.isBoostOnly,
+    l = (0, r.e7)([c.Z], () => c.Z.getReverseTrialEntitlement(false));
+  return (0, a.ZP)(() => {
+    null != e && (0, u.I5)(e) && !n && (c.Z.fetchedAllEntitlements || c.Z.fetchingAllEntitlements || (0, i.p0)({
+      entitlementType: p.qc2.FRACTIONAL_REDEMPTION
     }))
-  }), require ? null : Chunk431
+  }), n ? null : l
 }
 
 function g() {

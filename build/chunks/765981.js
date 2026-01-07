@@ -28,7 +28,7 @@ var s = function() {
       r.backend && (e && !r.isSetUp ? (r.backend.setup(), r.isSetUp = true) : !e && r.isSetUp && (r.backend.teardown(), r.isSetUp = false))
     }, this.store = t, this.monitor = n, t.subscribe(this.handleRefCountChange)
   }
-  return o(module, [{
+  return o(e, [{
     key: "receiveBackend",
     value: function(e) {
       this.backend = e
@@ -61,7 +61,7 @@ var s = function() {
           true !== o && t(o)
         }
       }
-      var i = (0, Chunk263016.W1)(this);
+      var i = (0, r.W1)(this);
       return Object.keys(i).reduce(function(e, t) {
         var r = i[t];
         return e[t] = n(r), e
@@ -72,5 +72,5 @@ var s = function() {
     value: function(e) {
       this.store.dispatch(e)
     }
-  }]), module
+  }]), e
 }()

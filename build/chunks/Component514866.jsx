@@ -25,38 +25,38 @@ var Chunk120356 = require("./120356.js"),
   Chunk478411 = require("./478411.js");
 
 function y() {
-  let e = Chunk594174.default.getCurrentUser(),
-    t = null == module ? true : module.isStaff(),
-    r = Chunk695346.Rt.useSetting();
-  return (0, Chunk54381.jsxs)(Chunk481060.Ttm, {
-    children: [(0, Chunk54381.jsx)("div", {
-      className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom20),
-      children: (0, Chunk54381.jsx)(Chunk306052.g, {
+  let e = b.default.getCurrentUser(),
+    t = null == e ? true : e.isStaff(),
+    r = f.Rt.useSetting();
+  return (0, a.jsxs)(s.Ttm, {
+    children: [(0, a.jsx)("div", {
+      className: i()(j.buttonsContainer, C.marginBottom20),
+      children: (0, a.jsx)(h.g, {
         isDevTools: true
       })
-    }), (0, Chunk54381.jsx)("div", {
-      className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    }), (0, a.jsx)("div", {
+      className: i()(j.buttonsContainer, C.marginBottom8),
+      children: (0, a.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch Vibing Wumpus",
-        onClick: () => (0, Chunk423932.Z)({
-          source: Chunk407383.I.KEYBIND
+        onClick: () => (0, p.Z)({
+          source: v.I.KEYBIND
         })
       })
-    }), (0, Chunk54381.jsx)("div", {
-      className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    }), (0, a.jsx)("div", {
+      className: i()(j.buttonsContainer, C.marginBottom8),
+      children: (0, a.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch Safety Tools Modal",
         onClick: () => (() => {
-          let e = Chunk944486.Z.getChannelId(),
-            t = null != module ? module : "21154681615024128";
-          (0, Chunk481060.ZDy)(async () => {
+          let e = x.Z.getChannelId(),
+            t = null != e ? e : "21154681615024128";
+          (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([require.e("37031"), require.e("89650"), require.e("30332")]).then(require.bind(require, 611446));
+            } = await Promise.all([n.e("37031"), n.e("89650"), n.e("30332")]).then(n.bind(n, 611446));
             return n => (0, a.jsx)(e, function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -81,56 +81,56 @@ function y() {
               warningType: m.pj.INAPPROPRIATE_CONVERSATION_TIER_2
             }, n))
           }, {
-            modalKey: Chunk134612.X_
+            modalKey: g.X_
           })
         })()
       })
-    }), exports && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)("div", {
-        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    }), t && (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)("div", {
+        className: i()(j.buttonsContainer, C.marginBottom8),
+        children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           text: "Launch Clicker Game",
-          onClick: () => (0, Chunk840767.Z)("devtools")
+          onClick: () => (0, d.Z)("devtools")
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)("div", {
+        className: i()(j.buttonsContainer, C.marginBottom8),
+        children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           text: "Launch Captcha Test Tool",
-          onClick: () => (0, Chunk110478.N)()
+          onClick: () => (0, o.N)()
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)("div", {
+        className: i()(j.buttonsContainer, C.marginBottom8),
+        children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset Hang Status State",
-          onClick: Chunk906605.YU
+          onClick: u.YU
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)("div", {
+        className: i()(j.buttonsContainer, C.marginBottom8),
+        children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           text: "Force libdiscore Crash",
-          onClick: Chunk668757.$R
+          onClick: l.$R
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)("div", {
+        className: i()(j.buttonsContainer, C.marginBottom8),
+        children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset to fake checkpoint",
-          onClick: () => (0, Chunk515970.pg)(true)
+          onClick: () => (0, c.pg)(true)
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom20),
-        children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
+      }), (0, a.jsx)("div", {
+        className: i()(j.buttonsContainer, C.marginBottom20),
+        children: (0, a.jsx)(s.rsf, {
           label: "Ignore profile speedbump disabled",
-          checked: Chunk120356,
+          checked: r,
           onChange: e => f.Rt.updateSetting(e)
         })
       })]

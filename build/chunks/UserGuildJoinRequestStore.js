@@ -195,7 +195,7 @@ function N() {
 }
 class P extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(o.default)
   }
   getRequest(e) {
     return d[e]

@@ -16,9 +16,9 @@ var Chunk98405 = require("./98405.js"),
 if (Chunk507604 && Chunk880181(p) && (!("description" in _) || true !== p().description)) {
   var m = {},
     h = function() {
-      var e = arguments.length < 1 || true === arguments[0] ? true : Chunk382698(arguments[0]),
-        t = Chunk568033(_, this) ? new p(module) : true === module ? p() : p(module);
-      return "" === module && (m[exports] = true), exports
+      var e = arguments.length < 1 || true === arguments[0] ? true : u(arguments[0]),
+        t = c(_, this) ? new p(e) : true === e ? p() : p(e);
+      return "" === e && (m[t] = true), t
     };
   Chunk190289(h, p), h.prototype = _, _.constructor = h;
   var g = "Symbol(description detection)" === String(p("description detection")),
@@ -31,10 +31,10 @@ if (Chunk507604 && Chunk880181(p) && (!("description" in _) || true !== p().desc
     configurable: true,
     get: function() {
       var e = E(this);
-      if (Chunk77025(m, module)) return "";
-      var t = b(module),
-        n = g ? v(exports, 7, false) : O(exports, y, "$1");
-      return "" === require ? true : require
+      if (s(m, e)) return "";
+      var t = b(e),
+        n = g ? v(t, 7, false) : O(t, y, "$1");
+      return "" === n ? true : n
     }
   }), Chunk98405({
     global: true,

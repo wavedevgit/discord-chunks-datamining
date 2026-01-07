@@ -107,9 +107,9 @@ let k = e => {
     })
   },
   G = () => {
-    Chunk668781.Z.show({
-      title: Chunk388032.intl.string(Chunk388032.t.ZZlox4),
-      body: Chunk388032.intl.string(Chunk388032.t.ZUEGFn)
+    A.Z.show({
+      title: R.intl.string(R.t.ZZlox4),
+      body: R.intl.string(R.t.ZUEGFn)
     })
   };
 
@@ -489,7 +489,7 @@ let B = {
     })
   },
   collapseAllFolders() {
-    Chunk570140.Z.dispatch({
+    o.Z.dispatch({
       type: "GUILD_FOLDER_COLLAPSE"
     })
   },

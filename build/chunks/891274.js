@@ -46,7 +46,7 @@ function u(e) {
 }
 class d extends Chunk147913.Z {
   constructor() {
-    super(), (0, Chunk728675.Z)(this, u)
+    super(), (0, o.Z)(this, u)
   }
 }
 let f = new d

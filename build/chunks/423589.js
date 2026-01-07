@@ -18,23 +18,23 @@ var Chunk95015 = require("./95015.js"),
 
 function f() {
   return [{
-    label: Chunk388032.intl.string(Chunk388032.t["8ot6gv"]),
-    value: Chunk969943.Oe.MINUTES_15
+    label: d.intl.string(d.t["8ot6gv"]),
+    value: s.Oe.MINUTES_15
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t.UMWBZr),
-    value: Chunk969943.Oe.HOURS_1
+    label: d.intl.string(d.t.UMWBZr),
+    value: s.Oe.HOURS_1
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t.QmYWtu),
-    value: Chunk969943.Oe.HOURS_3
+    label: d.intl.string(d.t.QmYWtu),
+    value: s.Oe.HOURS_3
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t.EpAXPC),
-    value: Chunk969943.Oe.HOURS_8
+    label: d.intl.string(d.t.EpAXPC),
+    value: s.Oe.HOURS_8
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t["755t4q"]),
-    value: Chunk969943.Oe.HOURS_24
+    label: d.intl.string(d.t["755t4q"]),
+    value: s.Oe.HOURS_24
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t.r3LawO),
-    value: Chunk969943.Oe.ALWAYS
+    label: d.intl.string(d.t.r3LawO),
+    value: s.Oe.ALWAYS
   }]
 }
 let _ = {

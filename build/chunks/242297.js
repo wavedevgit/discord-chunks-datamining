@@ -80,14 +80,14 @@ class I {
     return null != this.modulePromise || (this.modulePromise = this.loadOutOfProcessOverlayModule()), this.modulePromise
   }
   async loadOutOfProcessOverlayModule() {
-    if (!Chunk987650.iP) return void E.error("Attempted to load overlay on an unsupported platform.");
+    if (!m.iP) return void E.error("Attempted to load overlay on an unsupported platform.");
     E.info("Loading Out of Process Overlay Module");
     try {
-      await Chunk998502.ZP.ensureModule("discord_desktop_overlay");
-      let e = Chunk998502.ZP.requireModule("discord_desktop_overlay");
-      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.bs)(null, "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), S(this.module), (0, Chunk932404.U9)(), E.info("OverlayV3 Module Loaded")
+      await o.ZP.ensureModule("discord_desktop_overlay");
+      let e = o.ZP.requireModule("discord_desktop_overlay");
+      e.init(), e.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = e, (0, d.bs)(null, "module_loaded"), (0, s.setOutOfProcessSupport)(true), S(this.module), (0, d.U9)(), E.info("OverlayV3 Module Loaded")
     } catch (e) {
-      throw E.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), (0, Chunk932404.UK)(module), this.module = null, this.modulePromise = null, module
+      throw E.error("failed loading overlay module", e), (0, s.setOutOfProcessSupport)(false), (0, d.UK)(e), this.module = null, this.modulePromise = null, e
     }
   }
   async createOutOfProcessOverlayHostWindow(e) {
@@ -134,13 +134,13 @@ class I {
     }) : this.lastAssociatedPID = e, null != n ? n : ""
   }
   destroyOutOfProcessOverlayHostWindow() {
-    E.verbose("Destroying OOP host window"), (0, Chunk932404.bs)(this.lastAssociatedPID, "host_window_destroyed");
+    E.verbose("Destroying OOP host window"), (0, d.bs)(this.lastAssociatedPID, "host_window_destroyed");
     try {
       var e, t;
-      null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.window) || module.close(Chunk501787.$J), null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.window) || exports.setBackgroundThrottling(true), Chunk503522.Z.resetWindowState(false)
+      null === r.Z || true === r.Z || null == (e = r.Z.window) || e.close(h.$J), null === r.Z || true === r.Z || null == (t = r.Z.window) || t.setBackgroundThrottling(true), c.Z.resetWindowState(false)
     } catch (e) {
-      E.error("Error closing overlay window:", module)
-    }(0, Chunk932404.Hi)(this.lastAssociatedPID), this.lastAssociatedPID = null
+      E.error("Error closing overlay window:", e)
+    }(0, d.Hi)(this.lastAssociatedPID), this.lastAssociatedPID = null
   }
   refreshOutOfProcessOverlayHostWindow(e) {
     E.verbose("Refreshing OOP host window for pid ".concat(e)), (0, d.bs)(e, "host_window_refreshing_started", {
@@ -148,7 +148,7 @@ class I {
     }), (0, d.nV)(e, this.lastAssociatedPID), this.lastAssociatedPID = e
   }
   async openOverlayPopout() {
-    return await (0, Chunk398269.f)(), await this.getWindowWithRetry()
+    return await (0, _.f)(), await this.getWindowWithRetry()
   }
   async getWithRetry(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 500,
@@ -170,19 +170,19 @@ class I {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 100,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 3;
     return await this.getWithRetry(() => {
-      let e = Chunk928518.Z.getWindow(Chunk501787.$J);
-      if (null == module) throw Error("Overlay popout window not found");
-      return Promise.resolve(module)
-    }, module, exports)
+      let e = a.Z.getWindow(h.$J);
+      if (null == e) throw Error("Overlay popout window not found");
+      return Promise.resolve(e)
+    }, e, t)
   }
   async getNativeWindowHandleWithRetry() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 500,
       t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 3;
     return await this.getWithRetry(async () => {
       var e;
-      let t = await (null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.window) ? true : module.getNativeHandle(Chunk501787.$J));
-      return null != exports ? (0, Chunk575140.rd)(exports) : null
-    }, module, exports)
+      let t = await (null === r.Z || true === r.Z || null == (e = r.Z.window) ? true : e.getNativeHandle(h.$J));
+      return null != t ? (0, f.rd)(t) : null
+    }, e, t)
   }
   getNativeBreadcrumbs(e, t) {
     var n, r;
@@ -198,11 +198,11 @@ class I {
   }
   version() {
     var e, t;
-    return null != (t = null == (e = this.module) ? true : module.version) ? exports : 0
+    return null != (t = null == (e = this.module) ? true : e.version) ? t : 0
   }
   onNativePopoutShowInactiveSuccess() {
     var e, t;
-    null == (t = this.module) || null == (e = exports.onPopoutShowInactive) || module.call(exports)
+    null == (t = this.module) || null == (e = t.onPopoutShowInactive) || e.call(t)
   }
   setRenderingWindowHandle(e, t) {
     var n, r;

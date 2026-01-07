@@ -267,50 +267,50 @@ class S extends(i = Chunk473749.Component) {
       resizeX: t,
       active: n
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [module ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: l()(Chunk343273.resizeNorth, {
-            [Chunk343273.resizeNSCursor]: require
+    return (0, a.jsxs)(s.Fragment, {
+      children: [e ? (0, a.jsxs)(s.Fragment, {
+        children: [(0, a.jsx)("div", {
+          className: l()(f.resizeNorth, {
+            [f.resizeNSCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH")
-        }), (0, Chunk54381.jsx)("div", {
-          className: l()(Chunk343273.resizeSouth, {
-            [Chunk343273.resizeNSCursor]: require
+        }), (0, a.jsx)("div", {
+          className: l()(f.resizeSouth, {
+            [f.resizeNSCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH")
         })]
-      }) : null, exports ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: l()(Chunk343273.resizeEast, {
-            [Chunk343273.resizeEWCursor]: require
+      }) : null, t ? (0, a.jsxs)(s.Fragment, {
+        children: [(0, a.jsx)("div", {
+          className: l()(f.resizeEast, {
+            [f.resizeEWCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_EAST")
-        }), (0, Chunk54381.jsx)("div", {
-          className: l()(Chunk343273.resizeWest, {
-            [Chunk343273.resizeEWCursor]: require
+        }), (0, a.jsx)("div", {
+          className: l()(f.resizeWest, {
+            [f.resizeEWCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_WEST")
         })]
-      }) : null, exports && module ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: l()(Chunk343273.resizeNorthWest, {
-            [Chunk343273.resizeNWSECursor]: require
+      }) : null, t && e ? (0, a.jsxs)(s.Fragment, {
+        children: [(0, a.jsx)("div", {
+          className: l()(f.resizeNorthWest, {
+            [f.resizeNWSECursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH_WEST")
-        }), (0, Chunk54381.jsx)("div", {
-          className: l()(Chunk343273.resizeNorthEast, {
-            [Chunk343273.resizeNESWCursor]: require
+        }), (0, a.jsx)("div", {
+          className: l()(f.resizeNorthEast, {
+            [f.resizeNESWCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_NORTH_EAST")
-        }), (0, Chunk54381.jsx)("div", {
-          className: l()(Chunk343273.resizeSouthWest, {
-            [Chunk343273.resizeNESWCursor]: require
+        }), (0, a.jsx)("div", {
+          className: l()(f.resizeSouthWest, {
+            [f.resizeNESWCursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH_WEST")
-        }), (0, Chunk54381.jsx)("div", {
-          className: l()(Chunk343273.resizeSouthEast, {
-            [Chunk343273.resizeNWSECursor]: require
+        }), (0, a.jsx)("div", {
+          className: l()(f.resizeSouthEast, {
+            [f.resizeNWSECursor]: n
           }),
           onMouseDown: e => this.handleResizeMouseDown(e, "RESIZE_SOUTH_EAST")
         })]
@@ -333,20 +333,20 @@ class S extends(i = Chunk473749.Component) {
         operationStarted: d
       }
     } = this;
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, a.jsxs)("div", {
       ref: this.ref,
-      style: p({}, Chunk120356, Chunk473749, r, null != Chunk902704 ? {
+      style: p({}, o, s, r, null != c ? {
         zIndex: 1e3
-      } : true, exports ? {
+      } : true, t ? {
         visibility: "hidden"
       } : true),
       className: l()({
-        [Chunk343273.wrapper]: true,
-        [Chunk343273.operation]: Chunk434529
+        [f.wrapper]: true,
+        [f.operation]: d
       }),
       onMouseDown: this.handleMouseDown,
-      onClick: null != require ? () => require(i) : true,
-      children: [module(this.handleOperationStart), this.renderResizeHandles()]
+      onClick: null != n ? () => n(i) : true,
+      children: [e(this.handleOperationStart), this.renderResizeHandles()]
     })
   }
   constructor(e) {

@@ -9,7 +9,7 @@ var Chunk846027 = require("./846027.js");
 let i = {
     binds: ["mod+shift+m"],
     comboKeysBindGlobal: true,
-    action: () => (Chunk846027.Z.toggleSelfMute({
+    action: () => (r.Z.toggleSelfMute({
       usedKeybind: true,
       location: "Default Keybind"
     }), false)
@@ -17,7 +17,7 @@ let i = {
   a = {
     binds: ["mod+shift+d"],
     comboKeysBindGlobal: true,
-    action: () => (Chunk846027.Z.toggleSelfDeaf({
+    action: () => (r.Z.toggleSelfDeaf({
       usedKeybind: true,
       location: "Default Keybind"
     }), false)

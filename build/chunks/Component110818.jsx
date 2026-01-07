@@ -62,7 +62,7 @@ class E extends(r = Chunk473749.PureComponent) {
     }
   }
   importDefault() {
-    return require.e("92668").then(require.t.bind(require, 92668, 19)).then(e => {
+    return n.e("92668").then(n.t.bind(n, 92668, 19)).then(e => {
       let {
         default: t
       } = e;
@@ -78,12 +78,12 @@ class E extends(r = Chunk473749.PureComponent) {
       pause: i,
       pauseWhileUnfocused: a
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.kci, {
-      className: u()(Chunk115164.sequencedAnimation, module),
+    return (0, s.jsx)(p.kci, {
+      className: u()(_.sequencedAnimation, e),
       importData: this.importDefault,
-      nextScene: i ? "idle" : exports,
+      nextScene: i ? "idle" : t,
       sceneSegments: g,
-      onScenePlay: require,
+      onScenePlay: n,
       onSceneComplete: r,
       pauseWhileUnfocused: a,
       pause: i
@@ -129,7 +129,7 @@ class O extends(i = Chunk473749.PureComponent) {
     }
   }
   importDefault() {
-    return require.e("45884").then(require.t.bind(require, 35065, 19)).then(e => {
+    return n.e("45884").then(n.t.bind(n, 35065, 19)).then(e => {
       let {
         default: t
       } = e;
@@ -145,12 +145,12 @@ class O extends(i = Chunk473749.PureComponent) {
       pause: i,
       pauseWhileUnfocused: a
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.kci, {
-      className: u()(Chunk115164.sequencedAnimation, module),
+    return (0, s.jsx)(p.kci, {
+      className: u()(_.sequencedAnimation, e),
       importData: this.importDefault,
-      nextScene: i ? "idle" : exports,
+      nextScene: i ? "idle" : t,
       sceneSegments: y,
-      onScenePlay: require,
+      onScenePlay: n,
       onSceneComplete: r,
       pauseWhileUnfocused: a,
       pause: i
@@ -215,13 +215,13 @@ class I extends Chunk473749.PureComponent {
     let {
       className: e
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk115164.panningAnimation,
-      children: [(0, Chunk54381.jsx)(Chunk748780.Z.div, {
-        className: module,
+    return (0, s.jsxs)("div", {
+      className: _.panningAnimation,
+      children: [(0, s.jsx)(f.Z.div, {
+        className: e,
         style: this.getStyle(false)
-      }), (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-        className: module,
+      }), (0, s.jsx)(f.Z.div, {
+        className: e,
         style: this.getStyle(true)
       })]
     })
@@ -270,7 +270,7 @@ class A extends(a = Chunk473749.PureComponent) {
     this.didUnmount = true
   }
   importData() {
-    return require.e("89506").then(require.t.bind(require, 88032, 19)).then(e => {
+    return n.e("89506").then(n.t.bind(n, 88032, 19)).then(e => {
       let {
         default: t
       } = e;
@@ -298,11 +298,11 @@ class A extends(a = Chunk473749.PureComponent) {
     this.animateIdleLoopBackground(), this.animateIdleLoopForeground()
   }
   animateBoostStart() {
-    Chunk748780.Z.parallel([Chunk748780.Z.timing(this.foregroundAnimation.y, {
+    f.Z.parallel([f.Z.timing(this.foregroundAnimation.y, {
       toValue: T.BOOST_START.toValue,
       duration: T.BOOST_START.duration,
       delay: T.BOOST_START.delay
-    }), Chunk748780.Z.timing(this.backgroundAnimation.y, {
+    }), f.Z.timing(this.backgroundAnimation.y, {
       toValue: T.BOOST_START.toValue,
       duration: T.BOOST_START.duration * C,
       delay: T.BOOST_START.delay
@@ -315,32 +315,32 @@ class A extends(a = Chunk473749.PureComponent) {
       pause: n,
       onSceneComplete: r
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: u()(Chunk115164.tier2Animation, module),
-      children: [require ? (0, Chunk54381.jsxs)("div", {
-        className: Chunk115164.panningAnimation,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk115164.tier2Background
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk115164.tier2Foreground
+    return (0, s.jsxs)("div", {
+      className: u()(_.tier2Animation, e),
+      children: [n ? (0, s.jsxs)("div", {
+        className: _.panningAnimation,
+        children: [(0, s.jsx)("div", {
+          className: _.tier2Background
+        }), (0, s.jsx)("div", {
+          className: _.tier2Foreground
         })]
-      }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(I, {
-          className: Chunk115164.tier2Background,
+      }) : (0, s.jsxs)(s.Fragment, {
+        children: [(0, s.jsx)(I, {
+          className: _.tier2Background,
           animation: this.backgroundAnimation
-        }), (0, Chunk54381.jsx)(I, {
-          className: Chunk115164.tier2Foreground,
+        }), (0, s.jsx)(I, {
+          className: _.tier2Foreground,
           animation: this.foregroundAnimation
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.kci, {
-        className: Chunk115164.sequencedAnimation,
+      }), (0, s.jsx)(p.kci, {
+        className: _.sequencedAnimation,
         importData: this.importData,
-        nextScene: require ? "idle_loop" : exports,
+        nextScene: n ? "idle_loop" : t,
         sceneSegments: S,
         onScenePlay: this.handleScenePlay,
         onSceneComplete: r,
         pauseWhileUnfocused: false,
-        pause: require
+        pause: n
       })]
     })
   }
@@ -526,7 +526,7 @@ class L extends(o = Chunk473749.PureComponent) {
     }
   }
   importData() {
-    return require.e("75564").then(require.t.bind(require, 134072, 19)).then(e => {
+    return n.e("75564").then(n.t.bind(n, 134072, 19)).then(e => {
       let {
         default: t
       } = e;
@@ -542,19 +542,19 @@ class L extends(o = Chunk473749.PureComponent) {
       onSceneComplete: i,
       pauseWhileUnfocused: a
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: u()(Chunk115164.guildWrapper, module),
-      children: [(0, Chunk54381.jsx)(Chunk481060.kci, {
-        className: Chunk115164.guildBackground,
+    return (0, s.jsxs)("div", {
+      className: u()(_.guildWrapper, e),
+      children: [(0, s.jsx)(p.kci, {
+        className: _.guildBackground,
         importData: this.importData,
-        nextScene: require ? "idle" : exports,
+        nextScene: n ? "idle" : t,
         sceneSegments: P,
         onScenePlay: r,
         onSceneComplete: i,
         pauseWhileUnfocused: a,
-        pause: require
-      }), (0, Chunk54381.jsx)(x, {
-        animate: !require && "stars" === exports
+        pause: n
+      }), (0, s.jsx)(x, {
+        animate: !n && "stars" === t
       })]
     })
   }

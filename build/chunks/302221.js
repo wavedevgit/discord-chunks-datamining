@@ -169,29 +169,29 @@ function y(e, t, n) {
   return f(E(e, t, n))
 }
 u(l({}, {
-  "#1abc9c": () => Chunk388032.intl.string(Chunk388032.t.fBawRj),
-  "#2ecc71": () => Chunk388032.intl.string(Chunk388032.t.hvv3QR),
-  "#3498db": () => Chunk388032.intl.string(Chunk388032.t.JwX6Jd),
-  "#9b59b6": () => Chunk388032.intl.string(Chunk388032.t.H3xljj),
-  "#e91e63": () => Chunk388032.intl.string(Chunk388032.t.X9izyR),
-  "#11806a": () => Chunk388032.intl.string(Chunk388032.t.Kw7K2z),
-  "#1f8b4c": () => Chunk388032.intl.string(Chunk388032.t.z5AZKW),
-  "#206694": () => Chunk388032.intl.string(Chunk388032.t.JqBqKz),
-  "#71368a": () => Chunk388032.intl.string(Chunk388032.t.edPgnK),
-  "#ad1457": () => Chunk388032.intl.string(Chunk388032.t.ti7gsS),
-  "#f1c40f": () => Chunk388032.intl.string(Chunk388032.t["H9jz+S"]),
-  "#e67e22": () => Chunk388032.intl.string(Chunk388032.t.UmsfHL),
-  "#e74c3c": () => Chunk388032.intl.string(Chunk388032.t.GoDlAC),
-  "#95a5a6": () => Chunk388032.intl.string(Chunk388032.t["9GpDYK"]),
-  "#607d8b": () => Chunk388032.intl.string(Chunk388032.t.lwrNQG),
-  "#c27c0e": () => Chunk388032.intl.string(Chunk388032.t.Lf10GG),
-  "#a84300": () => Chunk388032.intl.string(Chunk388032.t["H+AjY7"]),
-  "#992d22": () => Chunk388032.intl.string(Chunk388032.t.XTkdex),
-  "#979c9f": () => Chunk388032.intl.string(Chunk388032.t.Ve0Lip),
-  "#546e7a": () => Chunk388032.intl.string(Chunk388032.t.BwbOAO),
-  "#99aab5": () => Chunk388032.intl.string(Chunk388032.t["/po5rJ"])
+  "#1abc9c": () => o.intl.string(o.t.fBawRj),
+  "#2ecc71": () => o.intl.string(o.t.hvv3QR),
+  "#3498db": () => o.intl.string(o.t.JwX6Jd),
+  "#9b59b6": () => o.intl.string(o.t.H3xljj),
+  "#e91e63": () => o.intl.string(o.t.X9izyR),
+  "#11806a": () => o.intl.string(o.t.Kw7K2z),
+  "#1f8b4c": () => o.intl.string(o.t.z5AZKW),
+  "#206694": () => o.intl.string(o.t.JqBqKz),
+  "#71368a": () => o.intl.string(o.t.edPgnK),
+  "#ad1457": () => o.intl.string(o.t.ti7gsS),
+  "#f1c40f": () => o.intl.string(o.t["H9jz+S"]),
+  "#e67e22": () => o.intl.string(o.t.UmsfHL),
+  "#e74c3c": () => o.intl.string(o.t.GoDlAC),
+  "#95a5a6": () => o.intl.string(o.t["9GpDYK"]),
+  "#607d8b": () => o.intl.string(o.t.lwrNQG),
+  "#c27c0e": () => o.intl.string(o.t.Lf10GG),
+  "#a84300": () => o.intl.string(o.t["H+AjY7"]),
+  "#992d22": () => o.intl.string(o.t.XTkdex),
+  "#979c9f": () => o.intl.string(o.t.Ve0Lip),
+  "#546e7a": () => o.intl.string(o.t.BwbOAO),
+  "#99aab5": () => o.intl.string(o.t["/po5rJ"])
 }), {
-  "#5865f2": () => Chunk388032.intl.string(Chunk388032.t["Cn/LJ4"])
+  "#5865f2": () => o.intl.string(o.t["Cn/LJ4"])
 });
 let O = 30,
   v = 80,

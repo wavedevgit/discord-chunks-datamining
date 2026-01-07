@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 6809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,30 +15,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969373 = require("./969373.js");
-let h = function() {
+let m = function() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), n = Chunk473749.useRef(null);
-  Chunk473749.useEffect(() => {
-    null == require.current && (require.current = exports)
-  }, [exports]);
-  let h = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.LIGHT),
-    m = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.DARKER),
-    b = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.MIDNIGHT),
-    _ = Chunk473749.useMemo(() => [{
-      theme: Chunk981631.BRd.LIGHT,
-      label: Chunk388032.t.K2sFfo,
-      color: h.hex()
-    }, {
-      theme: Chunk981631.BRd.DARKER,
-      label: Chunk388032.t.b8Cei3,
+  } = (0, c.ZP)(), t = (0, l.e7)([d.Z], () => d.Z.theme), n = i.useRef(null);
+  i.useEffect(() => {
+    null == n.current && (n.current = t)
+  }, [t]);
+  let m = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.LIGHT),
+    h = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.DARKER),
+    b = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.MIDNIGHT),
+    _ = i.useMemo(() => [{
+      theme: p.BRd.LIGHT,
+      label: f.t.K2sFfo,
       color: m.hex()
     }, {
-      theme: Chunk981631.BRd.MIDNIGHT,
-      label: Chunk388032.t.Do4ZJx,
+      theme: p.BRd.DARKER,
+      label: f.t.b8Cei3,
+      color: h.hex()
+    }, {
+      theme: p.BRd.MIDNIGHT,
+      label: f.t.Do4ZJx,
       color: b.hex()
-    }], [h, m, b]),
-    E = Chunk473749.useCallback(t => {
+    }], [m, h, b]),
+    E = i.useCallback(t => {
       (0, u.Yk)({
         isPersisted: true,
         analyticsLocations: e,
@@ -46,14 +46,14 @@ let h = function() {
       }), (0, s.ZI)({
         theme: t
       })
-    }, [module]),
-    O = Chunk473749.useCallback(() => {
-      null != require.current && E(require.current)
+    }, [e]),
+    O = i.useCallback(() => {
+      null != n.current && E(n.current)
     }, [E]);
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk969373.themeSection,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk969373.themeSelector,
+  return (0, r.jsx)("div", {
+    className: g.themeSection,
+    children: (0, r.jsxs)("div", {
+      className: g.themeSelector,
       children: [_.map(e => (0, r.jsxs)("button", {
         type: "button",
         className: g.themeOption,
@@ -68,10 +68,10 @@ let h = function() {
           className: g.themeLabel,
           children: f.intl.string(e.label)
         })]
-      }, e.theme)), (0, Chunk54381.jsx)(Chunk481060.hU, {
+      }, e.theme)), (0, r.jsx)(o.hU, {
         onClick: O,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.yBZMsQ),
-        icon: Chunk481060.DuK,
+        "aria-label": f.intl.string(f.t.yBZMsQ),
+        icon: o.DuK,
         variant: "secondary"
       })]
     })

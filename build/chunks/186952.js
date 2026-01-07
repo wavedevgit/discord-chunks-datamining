@@ -22,45 +22,45 @@ let o = Math.min(4, Math.ceil(navigator.hardwareConcurrency / 2)),
   u = new Map,
   c = new Map,
   v = (0, Chunk170830.G)(async () => {
-    for (let i = 0; module < o; module++) {
-      let i = new Worker(new URL("/assets/" + require.u("94703"), require.b));
+    for (let i = 0; i < o; i++) {
+      let i = new Worker(new URL("/assets/" + e.u("94703"), e.b));
       d.push({
-        worker: module,
+        worker: i,
         numActive: 0
       })
     }
   }),
   I = (0, Chunk170830.G)(async () => {
-    s = (await require.e("57961").then(require.bind(require, 8048))).default
+    s = (await e.e("57961").then(e.bind(e, 8048))).default
   });
 h ? v() : I();
 class w {
   get workerIndex() {
     let i = u.get(this.canvasId);
-    if (null == module) {
+    if (null == i) {
       let s = c.get(this.assetUrl);
       if (null != s) i = s;
       else {
         var t, e;
-        let s = null != (e = null == (t = d[0]) ? true : exports.numActive) ? require : 0;
-        for (let [t, e] of d.entries()) require.numActive <= s && (s = require.numActive, i = exports);
-        c.set(this.assetUrl, module)
+        let s = null != (e = null == (t = d[0]) ? true : t.numActive) ? e : 0;
+        for (let [t, e] of d.entries()) e.numActive <= s && (s = e.numActive, i = t);
+        c.set(this.assetUrl, i)
       }
-      u.set(this.canvasId, module), d[module].numActive++
+      u.set(this.canvasId, i), d[i].numActive++
     }
-    return module
+    return i
   }
   get worker() {
     let i = this.workerIndex;
-    if (null == d[module]) throw Error("No worker in pool at index ".concat(module));
-    return d[module].worker
+    if (null == d[i]) throw Error("No worker in pool at index ".concat(i));
+    return d[i].worker
   }
   async drop() {
     var i, t, e, s;
     if (await this.initializationPromise, h) {
-      null == (i = this.worker) || module.removeEventListener("message", this.handleMessage), null == (t = this.worker) || exports.removeEventListener("error", this.handleError), null == (e = this.worker) || require.postMessage({
+      null == (i = this.worker) || i.removeEventListener("message", this.handleMessage), null == (t = this.worker) || t.removeEventListener("error", this.handleError), null == (e = this.worker) || e.postMessage({
         canvasId: this.canvasId,
-        type: Chunk647425.u.DROP
+        type: a.u.DROP
       });
       let s = u.get(this.canvasId);
       if (null == s) throw Error("No worker index assigned for asset ".concat(this.canvasId));

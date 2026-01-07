@@ -58,7 +58,7 @@ class g extends(r = Chunk473749.PureComponent) {
         height: e
       } = this._measureRef.current.getBoundingClientRect();
       this.setState({
-        targetHeight: module,
+        targetHeight: e,
         baseHeight: this.props.getBaseHeight()
       })
     }
@@ -76,9 +76,9 @@ class g extends(r = Chunk473749.PureComponent) {
       animationProgress: e,
       targetHeight: t
     } = this.state;
-    module.setValue(2), this.setState({
+    e.setValue(2), this.setState({
       animationState: 3,
-      baseHeight: exports
+      baseHeight: t
     })
   }
   componentWillEnter(e) {
@@ -123,33 +123,33 @@ class g extends(r = Chunk473749.PureComponent) {
     let {
       reducedMotion: e
     } = this.context;
-    if (module.enabled) return null;
+    if (e.enabled) return null;
     let {
       animationMotionType: t
     } = this.props, {
       animationProgress: n,
       animationState: r
     } = this.state, i = (1 === r ? false : 1) * this.direction;
-    switch (exports) {
+    switch (t) {
       case "slide":
         return {
           transform: [{
-            translateX: require.interpolate({
+            translateX: n.interpolate({
               inputRange: [0, 2],
               outputRange: ["".concat(150 * i, "%"), "0%"],
               extrapolate: "clamp",
-              easing: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.ease)
+              easing: c.Z.Easing.inOut(c.Z.Easing.ease)
             })
           }]
         };
       case "lift":
         return {
           transform: [{
-            translateY: require.interpolate({
+            translateY: n.interpolate({
               inputRange: [0, 2],
               outputRange: ["".concat(10 * i, "%"), "0%"],
               extrapolate: "clamp",
-              easing: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.ease)
+              easing: c.Z.Easing.inOut(c.Z.Easing.ease)
             })
           }]
         };
@@ -166,27 +166,27 @@ class g extends(r = Chunk473749.PureComponent) {
       animationState: i,
       baseHeight: a,
       targetHeight: o
-    } = this.state, s = null != (e = this.props.sideMargin) ? module : 0, l = null != (t = this.props.verticalMargin) ? exports : 0, u = 1 === i, d = 0 === i;
+    } = this.state, s = null != (e = this.props.sideMargin) ? e : 0, l = null != (t = this.props.verticalMargin) ? t : 0, u = 1 === i, d = 0 === i;
     return h(_({}, {
-      overflow: Chunk215569 || Chunk793030 ? "hidden" : "visible",
-      position: Chunk793030 ? "absolute" : true,
-      top: Chunk793030 ? l : true,
-      left: Chunk793030 ? Chunk120356 : true,
-      right: Chunk793030 ? Chunk120356 : true,
-      bottom: Chunk793030 ? l : true
+      overflow: d || u ? "hidden" : "visible",
+      position: u ? "absolute" : true,
+      top: u ? l : true,
+      left: u ? s : true,
+      right: u ? s : true,
+      bottom: u ? l : true
     }, this.getMotionAnimation()), {
       opacity: r.interpolate({
         inputRange: [0, 2],
         outputRange: [0, 1],
         extrapolate: "clamp",
-        easing: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.ease)
+        easing: c.Z.Easing.inOut(c.Z.Easing.ease)
       }),
-      height: Chunk215569 ? r.interpolate({
+      height: d ? r.interpolate({
         inputRange: [0, 1],
-        outputRange: [Chunk54381, Chunk473749],
+        outputRange: [a, o],
         extrapolate: "clamp",
-        easing: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.ease)
-      }) : require ? "100%" : "auto"
+        easing: c.Z.Easing.inOut(c.Z.Easing.ease)
+      }) : n ? "100%" : "auto"
     })
   }
   render() {
@@ -198,21 +198,21 @@ class g extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       animationState: i
     } = this.state;
-    return module ? (0, Chunk54381.jsx)("div", {
+    return e ? (0, a.jsx)("div", {
       ref: this._measureRef,
-      className: l()(Chunk297421.measurementFill, exports, {
-        [l()(Chunk297421.measurementFillStatic, r)]: 3 === i
+      className: l()(f.measurementFill, t, {
+        [l()(f.measurementFillStatic, r)]: 3 === i
       }),
-      children: (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-        className: l()(Chunk297421.animatedNode, require),
+      children: (0, a.jsx)(c.Z.div, {
+        className: l()(f.animatedNode, n),
         style: this.getAnimatedStyle(),
         children: this.props.children
       })
-    }) : (0, Chunk54381.jsx)("div", {
+    }) : (0, a.jsx)("div", {
       ref: this._measureRef,
-      className: l()(Chunk297421.measurement, exports),
-      children: (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-        className: l()(Chunk297421.animatedNode, require),
+      className: l()(f.measurement, t),
+      children: (0, a.jsx)(c.Z.div, {
+        className: l()(f.animatedNode, n),
         style: this.getAnimatedStyle(),
         children: this.props.children
       })
@@ -242,7 +242,7 @@ class E extends(i = Chunk473749.Component) {
       step: e,
       steps: t
     } = this.props;
-    this.prevStep = module, this.prevSteps = exports
+    this.prevStep = e, this.prevSteps = t
   }
   render() {
     let {
@@ -258,22 +258,22 @@ class E extends(i = Chunk473749.Component) {
       fillParent: p,
       animationMotionType: _
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk215569.W, {
+    return (0, a.jsx)(d.W, {
       component: "div",
-      className: l()(Chunk297421.transitionGroup, require),
-      children: (0, Chunk54381.jsx)(g, {
+      className: l()(f.transitionGroup, n),
+      children: (0, a.jsx)(g, {
         fillParent: p,
-        sideMargin: Chunk120356,
+        sideMargin: s,
         animationMotionType: null != _ ? _ : "slide",
-        verticalMargin: Chunk748780,
+        verticalMargin: c,
         getDirection: this.getDirection,
         getBaseHeight: this.getBaseHeight,
         className: r,
         animatedNodeClassName: i,
-        staticClassName: Chunk473749,
+        staticClassName: o,
         setHeight: this.setHeight,
-        children: Chunk793030
-      }, null != module ? module : "".concat(exports))
+        children: u
+      }, null != e ? e : "".concat(t))
     })
   }
   constructor(...e) {

@@ -32,23 +32,23 @@ function E(e) {
 }
 
 function b() {
-  let e, t = Chunk19780.Z.getChannelId(),
+  let e, t = d.Z.getChannelId(),
     n = false;
-  if (null == exports) e = true;
+  if (null == t) e = true;
   else {
-    let r = Chunk592125.Z.getChannel(exports),
-      i = Chunk979651.Z.getVoiceState(null == r ? true : r.getGuildId(), Chunk314897.default.getId());
-    n = Chunk131951.Z.getMode() === Chunk981631.pM4.VOICE_ACTIVITY;
-    let a = (0, Chunk383451.f)({
+    let r = l.Z.getChannel(t),
+      i = f.Z.getVoiceState(null == r ? true : r.getGuildId(), s.default.getId());
+    n = c.Z.getMode() === p.pM4.VOICE_ACTIVITY;
+    let a = (0, o.f)({
       location: "doPTT",
       autoTrackExposure: false
-    }).enableLatching && Chunk131951.Z.getModeOptions().pttLatchingEnabled;
-    e = !(require || Chunk570140) || null == r || r.isPrivate() || r.isGuildStageVoice() || Chunk496675.Z.can(Chunk981631.Plq.USE_VAD, r) || E(Chunk442837)
+    }).enableLatching && c.Z.getModeOptions().pttLatchingEnabled;
+    e = !(n || a) || null == r || r.isPrivate() || r.isGuildStageVoice() || u.Z.can(p.Plq.USE_VAD, r) || E(i)
   }
-  let r = module || !require,
-    i = module || require;
-  if (m === module && h === Chunk442837) returnfalse;
-  g = r, m = r, h = Chunk442837, Chunk570140.Z.dispatch({
+  let r = e || !n,
+    i = e || n;
+  if (m === e && h === i) returnfalse;
+  g = r, m = r, h = i, a.Z.dispatch({
     type: "SET_VAD_PERMISSION",
     hasPermission: m,
     hasLatchPermission: h
@@ -76,7 +76,7 @@ function v() {
 }
 class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk131951.Z, Chunk496675.Z, Chunk19780.Z, Chunk979651.Z)
+    this.waitFor(s.default, l.Z, c.Z, u.Z, d.Z, f.Z)
   }
   shouldShowWarning() {
     return !g

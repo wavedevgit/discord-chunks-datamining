@@ -36,10 +36,10 @@ let f = false,
 
 function g() {
   if (m) {
-    Chunk433517.K.remove(Chunk231338.B1), Chunk433517.K.remove(Chunk231338.XM);
+    a.K.remove(o.B1), a.K.remove(o.XM);
     return
   }
-  null != i ? Chunk433517.K.set(Chunk231338.B1, i) : Chunk433517.K.remove(Chunk231338.B1), Chunk433517.K.set(Chunk231338.XM, _)
+  null != i ? a.K.set(o.B1, i) : a.K.remove(o.B1), a.K.set(o.XM, _)
 }
 
 function E(e) {
@@ -61,12 +61,12 @@ function b(e) {
 
 function y() {
   if (h) return;
-  i = Chunk433517.K.get(Chunk231338.B1), _ = Chunk433517.K.get(Chunk231338.XM) || {};
+  i = a.K.get(o.B1), _ = a.K.get(o.XM) || {};
   let {
     decryptedToken: e,
     wasEncrypted: t
   } = E(i);
-  f = exports, r = module, p = c(Object.entries(_).map(e => {
+  f = t, r = e, p = c(Object.entries(_).map(e => {
     let [t, n] = e, {
       decryptedToken: r,
       wasEncrypted: i

@@ -55,7 +55,7 @@ async function g(e) {
 }
 class E extends Chunk147913.Z {
   handleRunningGamesChange() {
-    g(Chunk944486.Z.getVoiceChannelId())
+    g(u.Z.getVoiceChannelId())
   }
   handleVoiceChannelSelect(e) {
     let {

@@ -26,6 +26,6 @@ let a = ["#7d8187", "#18191c", "#8fa2df", "#4f545c"],
       t.beginPath(), t.globalAlpha = e * this.depth / 4, t.arc(this.x, this.y, this.size, 0, n.uo, true), t.fillStyle = this.color, t.fill(), t.globalAlpha = 1
     }
     constructor() {
-      r(this, "size", (0, Chunk684827.M)(2, 3)), r(this, "depth", (0, Chunk684827.M)(1, 4)), r(this, "positionMultiplier", this.depth / 4), r(this, "color", a[4 - this.depth]), r(this, "offscreenX", Chunk898625.pg + this.size), r(this, "offscreenY", Chunk898625.pg + this.size), r(this, "x", (0, Chunk684827.M)(-this.size, this.offscreenX)), r(this, "y", (0, Chunk684827.M)(-this.size, this.offscreenY))
+      r(this, "size", (0, s.M)(2, 3)), r(this, "depth", (0, s.M)(1, 4)), r(this, "positionMultiplier", this.depth / 4), r(this, "color", a[4 - this.depth]), r(this, "offscreenX", n.pg + this.size), r(this, "offscreenY", n.pg + this.size), r(this, "x", (0, s.M)(-this.size, this.offscreenX)), r(this, "y", (0, s.M)(-this.size, this.offscreenY))
     }
   }

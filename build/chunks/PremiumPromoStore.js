@@ -24,11 +24,11 @@ let d = 10,
   p = false;
 
 function _() {
-  return p !== (p = Chunk699516.Z.getFriendIDs().length >= d && Chunk709054.default.extractTimestamp(Chunk314897.default.getId()) < Date.now() - f)
+  return p !== (p = c.Z.getFriendIDs().length >= d && s.default.extractTimestamp(l.default.getId()) < Date.now() - f)
 }
 class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk699516.Z, Chunk314897.default)
+    this.waitFor(c.Z, l.default)
   }
   isEligible() {
     return p

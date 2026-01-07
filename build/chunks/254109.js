@@ -74,14 +74,14 @@ function _(e) {
 
 function m() {
   let e = p.getState();
-  Chunk626135.default.track(Chunk981631.rMx.MEDIA_VIEWER_SESSION_COMPLETED, l({
-    source: module.source,
-    guild_id: module.guildId,
-    channel_id: module.channelId,
-    channel_type: module.channelType,
-    number_media_items: module.numMediaItems,
-    has_media_options: module.hasMediaOptions
-  }, module.incrementableActions)), (0, Chunk731965.j)(() => p.setState(l({}, f)))
+  a.default.track(o.rMx.MEDIA_VIEWER_SESSION_COMPLETED, l({
+    source: e.source,
+    guild_id: e.guildId,
+    channel_id: e.channelId,
+    channel_type: e.channelType,
+    number_media_items: e.numMediaItems,
+    has_media_options: e.hasMediaOptions
+  }, e.incrementableActions)), (0, i.j)(() => p.setState(l({}, f)))
 }
 
 function h(e) {

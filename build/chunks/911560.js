@@ -19,11 +19,11 @@ let _ = {},
   m = false;
 
 function h() {
-  m || (m = true, Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
+  m || (m = true, a.Z.subscribe("CONNECTION_OPEN", () => {
     _ = {};
-    let e = Chunk944486.Z.getChannelId(),
-      t = Chunk592125.Z.getChannel(module);
-    null != module && null == exports && g(module)
+    let e = d.Z.getChannelId(),
+      t = u.Z.getChannel(e);
+    null != e && null == t && g(e)
   }))
 }
 

@@ -30,11 +30,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk196637 = require("./196637.js");
 
 function S() {
-  return (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsx)(o.Text, {
     tag: "span",
     variant: "text-xs/bold",
     color: "text-feedback-critical",
-    className: Chunk196637.required,
+    className: I.required,
     children: "*"
   })
 }
@@ -337,8 +337,8 @@ function Z(e) {
 }
 
 function R() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk196637.divider
+  return (0, r.jsx)("div", {
+    className: I.divider
   })
 }
 

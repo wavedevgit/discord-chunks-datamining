@@ -41,54 +41,54 @@ function b() {
   let {
     debugTrackedData: e,
     impressions: t
-  } = (0, Chunk565384.Xo)(e => ({
+  } = (0, m.Xo)(e => ({
     debugTrackedData: e.debugTrackedData,
     impressions: e.impressions
-  }), Chunk55160.X), n = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isAnalyticsDebuggerEnabled), a = (0, Chunk442837.e7)([Chunk906467.Z], () => Chunk906467.Z.isDeveloper), [E, b] = Chunk473749.useState(false), y = null != module ? module : {}, {
+  }), s.X), n = (0, l.e7)([f.default], () => f.default.isAnalyticsDebuggerEnabled), a = (0, l.e7)([d.Z], () => d.Z.isDeveloper), [E, b] = i.useState(false), y = null != e ? e : {}, {
     name: O
   } = y, v = g(y, ["name"]), S = null != O;
-  return Chunk120356 && require ? (0, Chunk54381.jsx)(Chunk314910.ZP, {
-    children: (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk654414.container, {
-        [Chunk654414.containerMinimized]: E,
-        [Chunk654414.notTracked]: !S
+  return a && n ? (0, r.jsx)(u.ZP, {
+    children: (0, r.jsxs)("div", {
+      className: o()(h.container, {
+        [h.containerMinimized]: E,
+        [h.notTracked]: !S
       }),
-      children: [(0, Chunk54381.jsx)(Chunk481060.P3F, {
-        className: Chunk654414.minimizeButton,
+      children: [(0, r.jsx)(c.P3F, {
+        className: h.minimizeButton,
         onClick: () => {
           b(!E)
         },
-        children: E ? (0, Chunk54381.jsx)(Chunk835225.Z, {}) : (0, Chunk54381.jsx)(Chunk117795.Z, {})
-      }), (0, Chunk54381.jsxs)("div", {
-        className: o()(Chunk654414.content, {
-          [Chunk654414.contentMinimized]: E
+        children: E ? (0, r.jsx)(p.Z, {}) : (0, r.jsx)(_.Z, {})
+      }), (0, r.jsxs)("div", {
+        className: o()(h.content, {
+          [h.contentMinimized]: E
         }),
-        children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
-          className: o()(Chunk654414.label, {
-            [Chunk654414.notTracked]: !S
+        children: [(0, r.jsxs)(c.Text, {
+          className: o()(h.label, {
+            [h.notTracked]: !S
           }),
           variant: "text-xxs/normal",
-          children: [S ? (0, Chunk54381.jsx)(Chunk481060.owK, {
+          children: [S ? (0, r.jsx)(c.owK, {
             size: "md",
             color: "currentColor",
-            className: Chunk654414.iconTracked
-          }) : (0, Chunk54381.jsx)(Chunk481060.k$p, {
+            className: h.iconTracked
+          }) : (0, r.jsx)(c.k$p, {
             size: "md",
             color: "currentColor",
-            className: Chunk654414.iconNotTracked
+            className: h.iconNotTracked
           }), null != O ? O : "(untracked)"]
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk654414.current,
+        }), (0, r.jsx)("div", {
+          className: h.current,
           children: JSON.stringify(v, true, 2)
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: o()(Chunk654414.label, {
-            [Chunk654414.notTracked]: !S
+        }), (0, r.jsx)(c.Text, {
+          className: o()(h.label, {
+            [h.notTracked]: !S
           }),
           variant: "text-xxs/normal",
           children: "impressions stack"
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk654414.stack,
-          children: JSON.stringify(exports, true, 2)
+        }), (0, r.jsx)("div", {
+          className: h.stack,
+          children: JSON.stringify(t, true, 2)
         })]
       })]
     })

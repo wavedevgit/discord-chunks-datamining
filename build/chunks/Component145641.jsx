@@ -19,8 +19,8 @@ let g = function(e) {
     rows: t,
     renderRow: n,
     renderSection: g,
-    footer: h,
-    sectionFilter: m,
+    footer: m,
+    sectionFilter: h,
     renderSectionFooter: b
   } = e, _ = e => {
     let {
@@ -33,8 +33,8 @@ let g = function(e) {
   }, E = i.useCallback((e, n) => {
     var r;
     let i = null == (r = t[e]) ? true : r[n];
-    return m === d.pJs.ALL && (null == i ? true : i.giftIntentType) === p.hX.FRIEND_ANNIVERSARY && 0 === e ? u.fJ : u.NV
-  }, [t, m]), O = i.useCallback(e => {
+    return h === d.pJs.ALL && (null == i ? true : i.giftIntentType) === p.hX.FRIEND_ANNIVERSARY && 0 === e ? u.fJ : u.NV
+  }, [t, h]), O = i.useCallback(e => {
     let {
       section: t
     } = e;
@@ -118,7 +118,7 @@ let g = function(e) {
             footerHeight: y,
             sections: P,
             className: f.peopleList
-          }, n)), h]
+          }, n)), m]
         })
       }
     })

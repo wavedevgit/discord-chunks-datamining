@@ -23,10 +23,10 @@ var Chunk98405 = require("./98405.js"),
   v = /^[\uD800-\uDBFF]$/,
   S = /^[\uDC00-\uDFFF]$/,
   I = !Chunk504290 || Chunk621523(function() {
-    var e = Chunk154028("Symbol")("stringify detection");
-    return "[null]" !== m([module]) || "{}" !== m({
-      a: module
-    }) || "{}" !== m(Object(module))
+    var e = i("Symbol")("stringify detection");
+    return "[null]" !== m([e]) || "{}" !== m({
+      a: e
+    }) || "{}" !== m(Object(e))
   }),
   T = Chunk621523(function() {
     return '"\udf06\ud834"' !== m("\uDF06\uD834") || '"\udead"' !== m("\uDEAD")

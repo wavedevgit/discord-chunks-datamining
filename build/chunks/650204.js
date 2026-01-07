@@ -6,13 +6,13 @@ var Chunk710845 = require("./710845.js"),
 let a = new Chunk710845.Z("libdiscore");
 !async function() {
   try {
-    __OVERLAY__ || await (0, Chunk511495.e)()
+    __OVERLAY__ || await (0, i.e)()
   } catch (e) {
-    a.error("Failed to initialize libdiscore", module)
+    a.error("Failed to initialize libdiscore", e)
   }
   try {
-    require("./750081.jsx")
+    n(750081)
   } finally {
-    require("./998502.js").ZP.indexLoadedAsync()
+    n(998502).ZP.indexLoadedAsync()
   }
 }()

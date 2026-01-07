@@ -16,13 +16,13 @@ function i(e) {
 }
 
 function a() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "LAYER_POP"
   })
 }
 
 function o() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "LAYER_POP_ALL"
   })
 }

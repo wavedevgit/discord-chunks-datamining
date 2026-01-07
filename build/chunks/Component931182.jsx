@@ -15,28 +15,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk679560 = require("./679560.js");
 
 function f() {
-  let e = (0, Chunk925513.v6)(),
+  let e = (0, i.v6)(),
     t = [{
       setting: "SEXUALLY_EXPLICIT_MEDIA_REDACTION",
-      title: Chunk388032.intl.string(Chunk388032.t.GYpoAq),
-      component: () => (0, Chunk54381.jsx)(Chunk291511.P, {}),
+      title: u.intl.string(u.t.GYpoAq),
+      component: () => (0, r.jsx)(l.P, {}),
       orientation: "vertical"
     }, {
       setting: "GORE_MEDIA_REDACTION",
-      title: Chunk388032.intl.string(Chunk388032.t["16/3Bi"]),
-      component: () => (0, Chunk54381.jsx)(Chunk295822.I, {}),
+      title: u.intl.string(u.t["16/3Bi"]),
+      component: () => (0, r.jsx)(c.I, {}),
       orientation: "vertical"
     }];
-  return (0, Chunk54381.jsxs)(Chunk838436.U, {
-    children: [(0, Chunk54381.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t["Hj/But"]),
-      description: Chunk388032.intl.format(Chunk388032.t["H/Icz+"], {
-        learnMoreLink: Chunk63063.Z.getArticleURL(module)
+  return (0, r.jsxs)(o.U, {
+    children: [(0, r.jsx)(o.H, {
+      header: u.intl.string(u.t["Hj/But"]),
+      description: u.intl.format(u.t["H/Icz+"], {
+        learnMoreLink: s.Z.getArticleURL(e)
       })
-    }), (0, Chunk54381.jsx)(Chunk526156.z, {
-      tabs: exports,
+    }), (0, r.jsx)(a.z, {
+      tabs: t,
       orientation: "vertical",
-      tabsClassName: Chunk679560.tabs
+      tabsClassName: d.tabs
     })]
   })
 }

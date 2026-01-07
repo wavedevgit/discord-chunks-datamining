@@ -8,6 +8,6 @@ var Chunk287734 = require("./287734.js"),
   Chunk37812 = require("./37812.js");
 
 function s() {
-  let t = Chunk592125.Z.getDMFromUserId(Chunk37812.I);
-  null != module && Chunk287734.default.selectPrivateChannel(module)
+  let t = r.Z.getDMFromUserId(l.I);
+  null != t && e.default.selectPrivateChannel(t)
 }

@@ -85,8 +85,8 @@ let N = new Chunk710845.Z("ChannelStore"),
   W = false;
 class K {
   static loadAllMissingChannels() {
-    let e = Chunk430824.Z.getGuildIds().filter(e => !Z.has(e));
-    return this.loadGuildIds(module)
+    let e = O.Z.getGuildIds().filter(e => !Z.has(e));
+    return this.loadGuildIds(e)
   }
   static loadGuildFromChannelId(e) {
     var t;
@@ -433,9 +433,9 @@ function eR(e) {
 }
 
 function ew() {
-  for (let e in G = {}, Chunk853856.Z.getFavoriteChannels()) {
-    let t = Chunk853856.Z.getCategoryRecord(module);
-    null != exports && (G[module] = exports)
+  for (let e in G = {}, h.Z.getFavoriteChannels()) {
+    let t = h.Z.getCategoryRecord(e);
+    null != t && (G[e] = t)
   }
 }
 
@@ -444,7 +444,7 @@ function eD() {
 }
 class ex extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk458772.Z, Chunk853856.Z, Chunk430824.Z, Chunk594174.default), this.syncWith([Chunk853856.Z], ew)
+    this.waitFor(y.default, f.Z, h.Z, O.Z, v.default), this.syncWith([h.Z], ew)
   }
   hasChannel(e) {
     return null != X(e)
@@ -456,7 +456,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
     if (null != e) return J(e)
   }
   loadAllGuildAndPrivateChannelsFromDisk() {
-    for (let e of Chunk430824.Z.getGuildIds()) z(module, 1, "loadAllGuildAndPrivateChannelsFromDisk");
+    for (let e of O.Z.getGuildIds()) z(e, 1, "loadAllGuildAndPrivateChannelsFromDisk");
     return T({}, R, D)
   }
   getChannelIds(e) {
@@ -491,7 +491,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
     return M
   }
   getDMUserIds() {
-    return Chunk709054.default.keys(M)
+    return b.default.keys(M)
   }
   getPrivateChannelsVersion() {
     return k
@@ -511,9 +511,9 @@ class ex extends(r = Chunk442837.ZP.Store) {
   }
   getDebugInfo() {
     return {
-      loadedGuildIds: Array.from(Z).sort(Chunk709054.default.compare),
-      pendingGuildLoads: Object.keys(F).sort(Chunk709054.default.compare),
-      guildSizes: Object.keys(w).sort(Chunk709054.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
+      loadedGuildIds: Array.from(Z).sort(b.default.compare),
+      pendingGuildLoads: Object.keys(F).sort(b.default.compare),
+      guildSizes: Object.keys(w).sort(b.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
     }
   }
 }

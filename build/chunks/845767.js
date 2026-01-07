@@ -8,16 +8,16 @@ var Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js");
 class a extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), Chunk570140.Z.subscribe("LOGOUT", this._maybeStopDevSession)
+    r.Z.subscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), r.Z.subscribe("LOGOUT", this._maybeStopDevSession)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), Chunk570140.Z.unsubscribe("LOGOUT", this._maybeStopDevSession)
+    r.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), r.Z.unsubscribe("LOGOUT", this._maybeStopDevSession)
   }
   _maybeStartDevSession() {
     if (null == window.DiscordDevSession || true !== window.__METICULOUS_ENABLED) return;
     let e = "production" === window.GLOBAL_ENV.PROJECT_ENV,
-      t = Chunk594174.default.getCurrentUser();
-    if (!((null == exports ? true : exports.email) == null || module && exports.isStaff())) exports.username.startsWith("mtcls") || !module ? window.DiscordDevSession.start() : window.DiscordDevSession.stop()
+      t = l.default.getCurrentUser();
+    if (!((null == t ? true : t.email) == null || e && t.isStaff())) t.username.startsWith("mtcls") || !e ? window.DiscordDevSession.start() : window.DiscordDevSession.stop()
   }
   _maybeStopDevSession() {
     null != window.DiscordDevSession && window.DiscordDevSession.started && window.DiscordDevSession.stop()

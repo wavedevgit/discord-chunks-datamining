@@ -26,6 +26,6 @@ let I = (0, Chunk509613.CB)(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION
     return (0, l.u)(t, {
       limit: e ? 3 : 2
     })
-  })(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION),
-  buildLayout: () => [Chunk292591.f, Chunk754680.i, Chunk894470.v, Chunk956853.G, Chunk422767.n, Chunk51397.b, Chunk919723.D, Chunk792971.a]
+  })(r.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION),
+  buildLayout: () => [a.f, c.i, T.v, _.G, S.n, o.b, E.D, d.a]
 })

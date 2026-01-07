@@ -89,25 +89,25 @@ function H(e) {
 }
 
 function Y() {
-  return l()((0, Chunk612226.Rv)()).filter(e => e.description !== M.intl.string(M.t.HnNtEI)).groupBy(e => e.group).value()
+  return l()((0, E.Rv)()).filter(e => e.description !== M.intl.string(M.t.HnNtEI)).groupBy(e => e.group).value()
 }
 class W extends Chunk473749.PureComponent {
   renderMessage() {
     let {
       keybind: e
-    } = this.props, t = Chunk13140.BB(module.shortcut);
-    return Chunk714338.Z.hasBind(exports) ? (0, Chunk54381.jsx)(Chunk481060.Wn, {
-      messageType: Chunk481060.QYI.ERROR,
-      children: Chunk388032.intl.string(Chunk388032.t["7lQlw3"])
-    }) : Chunk295907.Sp.has(exports) ? (0, Chunk54381.jsx)(Chunk481060.Wn, {
-      messageType: Chunk481060.QYI.ERROR,
-      children: Chunk388032.intl.format(Chunk388032.t.MOIaNd, {
-        keyboardNavArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.KEYBOARD_NAVIGATION)
+    } = this.props, t = R.BB(e.shortcut);
+    return b.Z.hasBind(t) ? (0, r.jsx)(p.Wn, {
+      messageType: p.QYI.ERROR,
+      children: M.intl.string(M.t["7lQlw3"])
+    }) : j.Sp.has(t) ? (0, r.jsx)(p.Wn, {
+      messageType: p.QYI.ERROR,
+      children: M.intl.format(M.t.MOIaNd, {
+        keyboardNavArticle: N.Z.getArticleURL(L.BhN.KEYBOARD_NAVIGATION)
       })
-    }) : (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }) : (0, r.jsx)(p.Text, {
       variant: "text-md/normal",
-      className: Chunk125612.keybindMessage,
-      children: this.props.keybindDescriptions[module.action]
+      className: k.keybindMessage,
+      children: this.props.keybindDescriptions[e.action]
     })
   }
   render() {
@@ -115,49 +115,49 @@ class W extends Chunk473749.PureComponent {
       managed: e,
       enabled: t
     } = this.props.keybind;
-    return (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk125612.keybindGroup, {
-        [Chunk579480.card]: !this.props.isUserSettingsRedesignEnabled
+    return (0, r.jsxs)("div", {
+      className: o()(k.keybindGroup, {
+        [U.card]: !this.props.isUserSettingsRedesignEnabled
       }),
-      children: [!module && !this.props.isUserSettingsRedesignEnabled && (0, Chunk54381.jsx)(Chunk225433.Z, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmB),
-        className: Chunk125612.removeKeybindFloating,
+      children: [!e && !this.props.isUserSettingsRedesignEnabled && (0, r.jsx)(m.Z, {
+        "aria-label": M.intl.string(M.t.qEHmmB),
+        className: k.removeKeybindFloating,
         onClick: this.handleDeleteKeybind
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk125612.keybindGroupContent,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk125612.item,
-          children: (0, Chunk54381.jsx)(Chunk199849.y6, {
-            label: Chunk388032.intl.string(Chunk388032.t.UUpAD6),
+      }), (0, r.jsxs)("div", {
+        className: k.keybindGroupContent,
+        children: [(0, r.jsx)("div", {
+          className: k.item,
+          children: (0, r.jsx)(d.y6, {
+            label: M.intl.string(M.t.UUpAD6),
             value: this.props.keybind.action,
             options: this.props.keybindActionTypes,
             onChange: this.handleActionChanged,
-            isDisabled: module
+            isDisabled: e
           })
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk125612.item,
-          children: (0, Chunk54381.jsx)(Chunk481060.gNt, {
-            label: Chunk388032.intl.string(Chunk388032.t["1La4tC"]),
-            children: (0, Chunk54381.jsx)(Chunk825209.Z, {
+        }), (0, r.jsx)("div", {
+          className: k.item,
+          children: (0, r.jsx)(p.gNt, {
+            label: M.intl.string(M.t["1La4tC"]),
+            children: (0, r.jsx)(h.Z, {
               defaultValue: this.props.keybind.shortcut,
               onChange: this.handleShortcutChange
             })
           })
-        }), !module && this.props.isUserSettingsRedesignEnabled && (0, Chunk54381.jsx)("div", {
-          className: Chunk125612.removeKeybind,
-          children: (0, Chunk54381.jsx)(Chunk481060.hU, {
+        }), !e && this.props.isUserSettingsRedesignEnabled && (0, r.jsx)("div", {
+          className: k.removeKeybind,
+          children: (0, r.jsx)(p.hU, {
             variant: "icon-only",
             onClick: this.handleDeleteKeybind,
-            icon: Chunk481060.XHJ,
-            "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmB)
+            icon: p.XHJ,
+            "aria-label": M.intl.string(M.t.qEHmmB)
           })
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk125612.switch,
-          children: (0, Chunk54381.jsx)(Chunk681715.u, {
-            text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
-            children: (0, Chunk54381.jsx)("div", {
-              children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-                checked: exports,
+        }), (0, r.jsx)("div", {
+          className: k.switch,
+          children: (0, r.jsx)(f.u, {
+            text: M.intl.string(M.t.uCD7qK),
+            children: (0, r.jsx)("div", {
+              children: (0, r.jsx)(p.rsf, {
+                checked: t,
                 onChange: this.handleEnableDisable
               })
             })
@@ -170,7 +170,7 @@ class W extends Chunk473749.PureComponent {
     let {
       action: e
     } = this.props.keybind;
-    return module === Chunk981631.kg4.SWITCH_TO_VOICE_CHANNEL ? (0, Chunk54381.jsx)(Chunk659947.Z, {
+    return e === L.kg4.SWITCH_TO_VOICE_CHANNEL ? (0, r.jsx)(D.Z, {
       keybind: this.props.keybind
     }) : true
   }
@@ -203,74 +203,74 @@ class K extends Chunk473749.PureComponent {
       allowSoundboard: n,
       enableClips: r,
       enableScreenshotKeybind: i
-    } = this.props, a = Chunk577153.Z.getCurrentConfig({
+    } = this.props, a = v.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: false
     }).separateKeybind ? [{
-      value: Chunk981631.kg4.VAD_PRIORITY,
-      label: Chunk388032.intl.string(Chunk388032.t["49d6Nd"])
+      value: L.kg4.VAD_PRIORITY,
+      label: M.intl.string(M.t["49d6Nd"])
     }] : [], o = [{
-      value: Chunk981631.kg4.UNASSIGNED,
-      label: Chunk388032.intl.string(Chunk388032.t["0Uh579"])
+      value: L.kg4.UNASSIGNED,
+      label: M.intl.string(M.t["0Uh579"])
     }, {
-      value: Chunk981631.kg4.PUSH_TO_TALK,
-      label: Chunk388032.intl.string(Chunk388032.t.Y5lgTP)
+      value: L.kg4.PUSH_TO_TALK,
+      label: M.intl.string(M.t.Y5lgTP)
     }, {
-      value: Chunk981631.kg4.PUSH_TO_TALK_PRIORITY,
-      label: Chunk388032.intl.string(Chunk388032.t.DkSwJ2)
+      value: L.kg4.PUSH_TO_TALK_PRIORITY,
+      label: M.intl.string(M.t.DkSwJ2)
     }, {
-      value: Chunk981631.kg4.PUSH_TO_MUTE,
-      label: Chunk388032.intl.string(Chunk388032.t.hSCRqd)
-    }, ...Chunk120356, {
-      value: Chunk981631.kg4.TOGGLE_MUTE,
-      label: Chunk388032.intl.string(Chunk388032.t.PlkYKD)
+      value: L.kg4.PUSH_TO_MUTE,
+      label: M.intl.string(M.t.hSCRqd)
+    }, ...a, {
+      value: L.kg4.TOGGLE_MUTE,
+      label: M.intl.string(M.t.PlkYKD)
     }, {
-      value: Chunk981631.kg4.TOGGLE_DEAFEN,
-      label: Chunk388032.intl.string(Chunk388032.t.NvGq1K)
+      value: L.kg4.TOGGLE_DEAFEN,
+      label: M.intl.string(M.t.NvGq1K)
     }, {
-      value: Chunk981631.kg4.TOGGLE_VOICE_MODE,
-      label: Chunk388032.intl.string(Chunk388032.t.Wa5H9S)
+      value: L.kg4.TOGGLE_VOICE_MODE,
+      label: M.intl.string(M.t.Wa5H9S)
     }, {
-      value: Chunk981631.kg4.TOGGLE_STREAMER_MODE,
-      label: Chunk388032.intl.string(Chunk388032.t.BK0Ncc)
+      value: L.kg4.TOGGLE_STREAMER_MODE,
+      label: M.intl.string(M.t.BK0Ncc)
     }];
-    return (0, Chunk365023.l)() && o.push({
-      value: Chunk981631.kg4.TOGGLE_CAMERA,
-      label: Chunk388032.intl.string(Chunk388032.t.hf8JVT)
-    }), module && (o.push({
-      value: Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
-      label: Chunk388032.intl.string(Chunk388032.t.VsAZcC)
+    return (0, S.l)() && o.push({
+      value: L.kg4.TOGGLE_CAMERA,
+      label: M.intl.string(M.t.hf8JVT)
+    }), e && (o.push({
+      value: L.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
+      label: M.intl.string(M.t.VsAZcC)
     }), o.push({
-      value: Chunk981631.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
-      label: Chunk388032.intl.string(Chunk388032.t.hurHWo)
-    })), exports && ((0, Chunk358085.isWindows)() || Chunk131951.Z.getUseSystemScreensharePicker()) && o.push({
-      value: Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING,
-      label: Chunk388032.intl.string(Chunk388032.t.ybdjJD)
-    }), (0, Chunk358085.isDesktop)() && (o.push({
-      value: Chunk981631.kg4.NAVIGATE_BACK,
-      label: Chunk388032.intl.string(Chunk388032.t.gRSaOa)
+      value: L.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
+      label: M.intl.string(M.t.hurHWo)
+    })), t && ((0, P.isWindows)() || C.Z.getUseSystemScreensharePicker()) && o.push({
+      value: L.kg4.TOGGLE_GO_LIVE_STREAMING,
+      label: M.intl.string(M.t.ybdjJD)
+    }), (0, P.isDesktop)() && (o.push({
+      value: L.kg4.NAVIGATE_BACK,
+      label: M.intl.string(M.t.gRSaOa)
     }, {
-      value: Chunk981631.kg4.NAVIGATE_FORWARD,
-      label: Chunk388032.intl.string(Chunk388032.t.zOXpjU)
+      value: L.kg4.NAVIGATE_FORWARD,
+      label: M.intl.string(M.t.zOXpjU)
     }, {
-      value: Chunk981631.kg4.SWITCH_TO_VOICE_CHANNEL,
-      label: Chunk388032.intl.string(Chunk388032.t.ty7Lxy)
+      value: L.kg4.SWITCH_TO_VOICE_CHANNEL,
+      label: M.intl.string(M.t.ty7Lxy)
     }, {
-      value: Chunk981631.kg4.DISCONNECT_FROM_VOICE_CHANNEL,
-      label: Chunk388032.intl.string(Chunk388032.t.CV7mT7)
-    }), require && o.push({
-      value: Chunk981631.kg4.SOUNDBOARD,
-      label: Chunk388032.intl.string(Chunk388032.t.yPH4xm)
+      value: L.kg4.DISCONNECT_FROM_VOICE_CHANNEL,
+      label: M.intl.string(M.t.CV7mT7)
+    }), n && o.push({
+      value: L.kg4.SOUNDBOARD,
+      label: M.intl.string(M.t.yPH4xm)
     }, {
-      value: Chunk981631.kg4.SOUNDBOARD_HOLD,
-      label: Chunk388032.intl.string(Chunk388032.t["1xFbP/"])
-    }), Chunk54381 && (o.push({
-      value: Chunk981631.kg4.SAVE_CLIP,
-      label: Chunk388032.intl.string(Chunk388032.t.U4URzP)
-    }), Chunk473749 && o.push({
-      value: Chunk981631.kg4.SAVE_SCREENSHOT,
-      label: Chunk388032.intl.string(Chunk388032.t["+WloFH"])
+      value: L.kg4.SOUNDBOARD_HOLD,
+      label: M.intl.string(M.t["1xFbP/"])
+    }), r && (o.push({
+      value: L.kg4.SAVE_CLIP,
+      label: M.intl.string(M.t.U4URzP)
+    }), i && o.push({
+      value: L.kg4.SAVE_SCREENSHOT,
+      label: M.intl.string(M.t["+WloFH"])
     }))), o
   }
   get keybindDescriptions() {
@@ -280,20 +280,20 @@ class K extends Chunk473749.PureComponent {
       enableClips: n,
       enableScreenshotKeybind: r
     } = this.props, i = {
-      [Chunk981631.kg4.UNASSIGNED]: Chunk388032.intl.string(Chunk388032.t.rvlNLv),
-      [Chunk981631.kg4.PUSH_TO_MUTE]: Chunk388032.intl.string(Chunk388032.t.xtESim),
-      [Chunk981631.kg4.PUSH_TO_TALK]: Chunk388032.intl.string(Chunk388032.t.wTcBSy),
-      [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: Chunk388032.intl.string(Chunk388032.t.FhHvWH),
-      [Chunk981631.kg4.TOGGLE_MUTE]: Chunk388032.intl.string(Chunk388032.t.X2fbUm),
-      [Chunk981631.kg4.TOGGLE_DEAFEN]: Chunk388032.intl.string(Chunk388032.t.MjREZV),
-      [Chunk981631.kg4.TOGGLE_VOICE_MODE]: Chunk388032.intl.string(Chunk388032.t.snm5YW),
-      [Chunk981631.kg4.TOGGLE_STREAMER_MODE]: Chunk388032.intl.string(Chunk388032.t.YszLLx)
+      [L.kg4.UNASSIGNED]: M.intl.string(M.t.rvlNLv),
+      [L.kg4.PUSH_TO_MUTE]: M.intl.string(M.t.xtESim),
+      [L.kg4.PUSH_TO_TALK]: M.intl.string(M.t.wTcBSy),
+      [L.kg4.PUSH_TO_TALK_PRIORITY]: M.intl.string(M.t.FhHvWH),
+      [L.kg4.TOGGLE_MUTE]: M.intl.string(M.t.X2fbUm),
+      [L.kg4.TOGGLE_DEAFEN]: M.intl.string(M.t.MjREZV),
+      [L.kg4.TOGGLE_VOICE_MODE]: M.intl.string(M.t.snm5YW),
+      [L.kg4.TOGGLE_STREAMER_MODE]: M.intl.string(M.t.YszLLx)
     };
-    return Chunk577153.Z.getCurrentConfig({
+    return v.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: false
-    }).separateKeybind && (Chunk473749[Chunk981631.kg4.VAD_PRIORITY] = Chunk388032.intl.string(Chunk388032.t.rSe8IZ)), (0, Chunk365023.l)() && (Chunk473749[Chunk981631.kg4.TOGGLE_CAMERA] = Chunk388032.intl.string(Chunk388032.t.v1JBtL)), module && (Chunk473749[Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = Chunk388032.intl.string(Chunk388032.t.IoP5vc)), exports && (0, Chunk358085.isWindows)() && (Chunk473749[Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING] = Chunk388032.intl.string(Chunk388032.t.s4C238)), (0, Chunk358085.isDesktop)() && (Chunk473749[Chunk981631.kg4.NAVIGATE_BACK] = Chunk388032.intl.string(Chunk388032.t.nKDlEt), Chunk473749[Chunk981631.kg4.NAVIGATE_FORWARD] = Chunk388032.intl.string(Chunk388032.t.DK0FFk), Chunk473749[Chunk981631.kg4.SOUNDBOARD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t["5wJefL"]) : Chunk388032.intl.string(Chunk388032.t.gzjsSP), Chunk473749[Chunk981631.kg4.SOUNDBOARD_HOLD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.RRkZc9) : Chunk388032.intl.string(Chunk388032.t.laNlTl), require && (Chunk473749[Chunk981631.kg4.SAVE_CLIP] = Chunk388032.intl.string(Chunk388032.t.z3Wbam), Chunk54381 && (Chunk473749[Chunk981631.kg4.SAVE_SCREENSHOT] = Chunk388032.intl.string(Chunk388032.t.m0zd57)))), Chunk473749
+    }).separateKeybind && (i[L.kg4.VAD_PRIORITY] = M.intl.string(M.t.rSe8IZ)), (0, S.l)() && (i[L.kg4.TOGGLE_CAMERA] = M.intl.string(M.t.v1JBtL)), e && (i[L.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = M.intl.string(M.t.IoP5vc)), t && (0, P.isWindows)() && (i[L.kg4.TOGGLE_GO_LIVE_STREAMING] = M.intl.string(M.t.s4C238)), (0, P.isDesktop)() && (i[L.kg4.NAVIGATE_BACK] = M.intl.string(M.t.nKDlEt), i[L.kg4.NAVIGATE_FORWARD] = M.intl.string(M.t.DK0FFk), i[L.kg4.SOUNDBOARD] = (0, P.isWindows)() ? M.intl.string(M.t["5wJefL"]) : M.intl.string(M.t.gzjsSP), i[L.kg4.SOUNDBOARD_HOLD] = (0, P.isWindows)() ? M.intl.string(M.t.RRkZc9) : M.intl.string(M.t.laNlTl), n && (i[L.kg4.SAVE_CLIP] = M.intl.string(M.t.z3Wbam), r && (i[L.kg4.SAVE_SCREENSHOT] = M.intl.string(M.t.m0zd57)))), i
   }
   renderKeybinds(e) {
     return e.map((t, n) => (0, r.jsxs)(i.Fragment, {
@@ -309,15 +309,15 @@ class K extends Chunk473749.PureComponent {
     if (0 === e.length) return null
   }
   renderKeybindWarning() {
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk125612.warning,
-      children: [(0, Chunk54381.jsx)(Chunk481060.d3s, {
+    return (0, r.jsxs)("div", {
+      className: k.warning,
+      children: [(0, r.jsx)(p.d3s, {
         size: "xs",
-        color: Chunk692547.Z.colors.ICON_SUBTLE
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        color: u.Z.colors.ICON_SUBTLE
+      }), (0, r.jsx)(p.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: Chunk388032.intl.string(Chunk388032.t.NoKjWP)
+        children: M.intl.string(M.t.NoKjWP)
       })]
     })
   }
@@ -326,54 +326,54 @@ class K extends Chunk473749.PureComponent {
       enableClips: e,
       enableScreenshotKeybind: t
     } = this.props, n = l()(this.props.keybinds).reject(e => e.managed && ![L.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, L.kg4.SAVE_CLIP, L.kg4.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === L.kg4.SAVE_CLIP || t.action === L.kg4.SAVE_SCREENSHOT)).reject(e => !t && e.action === L.kg4.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === L.kg4.SOUNDBOARD || e.action === L.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value(), a = Y();
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk273313.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t.T9DA2K),
-        children: Chunk358085.isPlatformEmbedded ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-          children: [(0, Chunk54381.jsxs)("div", {
-            className: Chunk125612.ctaContainer,
-            children: [this.renderKeybindWarning(), (0, Chunk54381.jsx)("div", {
-              className: Chunk125612.addButton,
-              children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(x.Z, {
+        title: M.intl.string(M.t.T9DA2K),
+        children: P.isPlatformEmbedded ? (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsxs)("div", {
+            className: k.ctaContainer,
+            children: [this.renderKeybindWarning(), (0, r.jsx)("div", {
+              className: k.addButton,
+              children: (0, r.jsx)(p.Button, {
                 size: "md",
                 onClick: this.handleAddKeybind,
-                text: Chunk388032.intl.string(Chunk388032.t.zk6Xbs),
+                text: M.intl.string(M.t.zk6Xbs),
                 variant: "primary"
               })
             })]
-          }), (0, Chunk54381.jsx)(Chunk825655.Z, {
-            className: Chunk125612.systemServiceUpsell,
+          }), (0, r.jsx)(T.Z, {
+            className: k.systemServiceUpsell,
             sourcePage: "keybinds"
-          }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), this.renderKeybinds(require), this.renderEmpty(require)]
-        }) : (0, Chunk54381.jsx)(Chunk481060.Wn, {
-          messageType: Chunk481060.QYI.INFO,
-          className: Chunk125612.browserNotice,
-          children: Chunk388032.intl.format(Chunk388032.t.mPi3F3, {
-            downloadLink: Chunk981631.EYA.DOWNLOAD
+          }), (0, r.jsx)(p.izJ, {}), this.renderKeybinds(n), this.renderEmpty(n)]
+        }) : (0, r.jsx)(p.Wn, {
+          messageType: p.QYI.INFO,
+          className: k.browserNotice,
+          children: M.intl.format(M.t.mPi3F3, {
+            downloadLink: L.EYA.DOWNLOAD
           })
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk478411.marginBottom60
-      }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      }), (0, r.jsx)(p.izJ, {
+        className: G.marginBottom60
+      }), (0, r.jsxs)(p.Kqy, {
         gap: 48,
-        children: [(0, Chunk54381.jsx)(Chunk481060.C3N, {
-          label: Chunk388032.intl.string(Chunk388032.t.Lz5KHI),
-          children: (0, Chunk54381.jsx)("div", {
-            className: Chunk125612.defaultKeybindGroup,
-            children: (0, Chunk54381.jsxs)("div", {
-              className: Chunk125612.defaultKeybind,
-              children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: [(0, r.jsx)(p.C3N, {
+          label: M.intl.string(M.t.Lz5KHI),
+          children: (0, r.jsx)("div", {
+            className: k.defaultKeybindGroup,
+            children: (0, r.jsxs)("div", {
+              className: k.defaultKeybind,
+              children: [(0, r.jsx)(p.Text, {
                 variant: "text-md/normal",
-                children: Chunk388032.intl.string(Chunk388032.t.sMWLBj)
-              }), (0, Chunk54381.jsx)("div", {
-                className: Chunk125612.defaultKeybindShortcutGroup,
-                children: (0, Chunk54381.jsx)(Chunk481060.M2$, {
-                  shortcut: Chunk721383._.binds["0"]
+                children: M.intl.string(M.t.sMWLBj)
+              }), (0, r.jsx)("div", {
+                className: k.defaultKeybindShortcutGroup,
+                children: (0, r.jsx)(p.M2$, {
+                  shortcut: g._.binds["0"]
                 })
               })]
             })
           })
-        }), (0, Chunk54381.jsx)(H, {
+        }), (0, r.jsx)(H, {
           children: e => (0, r.jsx)(r.Fragment, {
             children: e.map((e, t) => {
               let n = (0, E.UD)(e),
@@ -414,22 +414,22 @@ class K extends Chunk473749.PureComponent {
 }
 
 function z() {
-  Chunk473749.useEffect(() => (Chunk660216.Z.enableAll(false), () => {
-    Chunk660216.Z.enableAll(true)
+  i.useEffect(() => (_.Z.enableAll(false), () => {
+    _.Z.enableAll(true)
   }), []);
-  let e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getState()),
-    t = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)),
-    n = (0, Chunk442837.e7)([Chunk509140.Z], () => Chunk509140.Z.isSupported),
-    a = (0, Chunk924557.w9)(),
-    o = (0, Chunk924557.PP)(),
-    s = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
-  return (0, Chunk54381.jsx)(K, {
-    keybinds: module,
-    canGoLive: exports,
-    overlaySupported: require,
-    allowSoundboard: (0, Chunk358085.isWindows)(),
-    enableClips: Chunk120356,
+  let e = (0, c.e7)([A.ZP], () => A.ZP.getState()),
+    t = (0, c.e7)([C.Z], () => (0, O.Z)(C.Z)),
+    n = (0, c.e7)([I.Z], () => I.Z.isSupported),
+    a = (0, y.w9)(),
+    o = (0, y.PP)(),
+    s = (0, w.wy)("UserSettingsKeybindsConnected");
+  return (0, r.jsx)(K, {
+    keybinds: e,
+    canGoLive: t,
+    overlaySupported: n,
+    allowSoundboard: (0, P.isWindows)(),
+    enableClips: a,
     enableScreenshotKeybind: o,
-    isUserSettingsRedesignEnabled: Chunk392711
+    isUserSettingsRedesignEnabled: s
   })
 }

@@ -47,10 +47,10 @@ function O(e) {
 }
 
 function v() {
-  let e = Chunk430824.Z.getGuildsArray(),
+  let e = u.Z.getGuildsArray(),
     t = new Set;
-  for (let n of module) require.features.has(Chunk981631.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && exports.add(require.id);
-  return y = exports, exports
+  for (let n of e) n.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && t.add(n.id);
+  return y = t, t
 }
 
 function S() {
@@ -105,7 +105,7 @@ function A(e) {
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk594174.default, Chunk271383.ZP)
+    this.waitFor(u.Z, c.Z, d.default, l.ZP)
   }
   getGuildIdsWithPurchasableRoles() {
     return null == y ? v() : y

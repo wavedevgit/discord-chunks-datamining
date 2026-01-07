@@ -65,7 +65,7 @@ function v(e) {
 }
 
 function S() {
-  u = Chunk981631.QZA.CLOSED, m = null, h = null, d = null, f = {}, p = {}, E = null, b = [], y = null
+  u = s.QZA.CLOSED, m = null, h = null, d = null, f = {}, p = {}, E = null, b = [], y = null
 }
 
 function I(e) {
@@ -97,27 +97,27 @@ function A(e) {
 }
 
 function N() {
-  u = Chunk981631.QZA.SUBMITTING
+  u = s.QZA.SUBMITTING
 }
 
 function P() {
-  let e = Chunk594174.default.getCurrentUser();
-  R(), null != module && (h = c({}, m = {
-    [Chunk981631.oAB.ACCOUNT]: {
-      userId: module.id,
-      username: module.username,
-      discriminator: module.discriminator,
-      email: module.email,
-      avatar: module.avatar,
+  let e = o.default.getCurrentUser();
+  R(), null != e && (h = c({}, m = {
+    [s.oAB.ACCOUNT]: {
+      userId: e.id,
+      username: e.username,
+      discriminator: e.discriminator,
+      email: e.email,
+      avatar: e.avatar,
       password: "",
       newPassword: null,
-      claimed: module.isClaimed()
+      claimed: e.isClaimed()
     }
   }))
 }
 
 function R() {
-  u = Chunk981631.QZA.OPEN, _ = {}
+  u = s.QZA.OPEN, _ = {}
 }
 
 function w(e) {
@@ -127,7 +127,7 @@ function w(e) {
 }
 class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(o.default)
   }
   getSection() {
     return d
@@ -148,7 +148,7 @@ class D extends(r = Chunk442837.ZP.Store) {
     return _
   }
   getSubmitting() {
-    return u === Chunk981631.QZA.SUBMITTING
+    return u === s.QZA.SUBMITTING
   }
   getSettings() {
     return h

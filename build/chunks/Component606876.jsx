@@ -13,73 +13,73 @@ var Chunk54381 = require("./54381.js"),
   Chunk617186 = require("./617186.js");
 
 function u() {
-  let [e, t] = Chunk473749.useState("");
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk617186.container,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk617186.demo,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk617186.previewCard,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk617186.avatar,
-          children: (0, Chunk54381.jsx)(Chunk481060.gw7, {
+  let [e, t] = a.useState("");
+  return (0, r.jsxs)("div", {
+    className: d.container,
+    children: [(0, r.jsxs)("div", {
+      className: d.demo,
+      children: [(0, r.jsxs)("div", {
+        className: d.previewCard,
+        children: [(0, r.jsx)("div", {
+          className: d.avatar,
+          children: (0, r.jsx)(s.gw7, {
             size: "custom",
             width: 24,
             height: 24
           })
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk617186.previewCardMessage,
-          children: [(0, Chunk54381.jsxs)("div", {
-            className: Chunk617186.messageHeaderSkeleton,
-            children: [(0, Chunk54381.jsx)("div", {
-              className: Chunk617186.usernameSkeleton
-            }), (0, Chunk54381.jsx)("div", {
-              className: Chunk617186.timestampSkeleton
+        }), (0, r.jsxs)("div", {
+          className: d.previewCardMessage,
+          children: [(0, r.jsxs)("div", {
+            className: d.messageHeaderSkeleton,
+            children: [(0, r.jsx)("div", {
+              className: d.usernameSkeleton
+            }), (0, r.jsx)("div", {
+              className: d.timestampSkeleton
             })]
-          }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk617186.previewCardUrl,
-            children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+          }), (0, r.jsxs)("div", {
+            className: d.previewCardUrl,
+            children: [(0, r.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-muted",
-              className: Chunk617186.baseUrl,
-              children: "".concat(Chunk203377.mf, "/")
-            }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+              className: d.baseUrl,
+              children: "".concat(l.mf, "/")
+            }), (0, r.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-link",
-              className: Chunk617186.vanityCode,
-              children: module
+              className: d.vanityCode,
+              children: e
             })]
-          }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk617186.messageEmbed,
-            children: [(0, Chunk54381.jsx)("div", {
-              className: Chunk617186.messageEmbedHeaderSkeleton
-            }), (0, Chunk54381.jsxs)("div", {
-              className: Chunk617186.messageEmbedContent,
-              children: [(0, Chunk54381.jsx)("div", {
-                className: Chunk617186.messageEmbedContentIconSkeleton
-              }), (0, Chunk54381.jsxs)("div", {
-                className: Chunk617186.messageEmbedContentLines,
-                children: [(0, Chunk54381.jsx)("div", {
-                  className: Chunk617186.messageEmbedContenPrimaryLineSkeleton
-                }), (0, Chunk54381.jsx)("div", {
-                  className: Chunk617186.messageEmbedContentSecondaryLineSkeleton
+          }), (0, r.jsxs)("div", {
+            className: d.messageEmbed,
+            children: [(0, r.jsx)("div", {
+              className: d.messageEmbedHeaderSkeleton
+            }), (0, r.jsxs)("div", {
+              className: d.messageEmbedContent,
+              children: [(0, r.jsx)("div", {
+                className: d.messageEmbedContentIconSkeleton
+              }), (0, r.jsxs)("div", {
+                className: d.messageEmbedContentLines,
+                children: [(0, r.jsx)("div", {
+                  className: d.messageEmbedContenPrimaryLineSkeleton
+                }), (0, r.jsx)("div", {
+                  className: d.messageEmbedContentSecondaryLineSkeleton
                 })]
-              }), (0, Chunk54381.jsx)("div", {
-                className: Chunk617186.messageEmbedContentActionSkeleton
+              }), (0, r.jsx)("div", {
+                className: d.messageEmbedContentActionSkeleton
               })]
             })]
           })]
         })]
-      }), (0, Chunk54381.jsx)(Chunk790359.Z, {
+      }), (0, r.jsx)(o.Z, {
         autoFocus: true,
-        value: module,
-        onChange: exports
+        value: e,
+        onChange: t
       })]
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      className: Chunk617186.disclaimer,
-      children: Chunk388032.intl.string(Chunk556970.default.u5iNbz)
+      className: d.disclaimer,
+      children: c.intl.string(i.default.u5iNbz)
     })]
   })
 }

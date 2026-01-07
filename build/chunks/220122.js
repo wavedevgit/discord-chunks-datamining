@@ -20,12 +20,12 @@ var Chunk356659 = require("./356659.js"),
 let m = "CLIPS_IN_CALL_WARNING";
 class h extends Chunk474639.Z {
   showClipsToast() {
-    (0, Chunk481060.showToast)({
+    (0, r.showToast)({
       id: m,
-      message: Chunk388032.intl.string(Chunk388032.t["d+41qJ"]),
-      type: Chunk481060.ToastType.CLIP,
+      message: _.intl.string(_.t["d+41qJ"]),
+      type: r.ToastType.CLIP,
       options: {
-        duration: Chunk356659.G$
+        duration: p.G$
       }
     })
   }
@@ -51,20 +51,20 @@ class h extends Chunk474639.Z {
     null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), p.jp) : this.fireClipsInitEvent())
   }
   fireClipsInitEvent() {
-    if (!(0, Chunk341569.LI)() || null != Chunk199902.Z.getCurrentUserActiveStream()) return;
-    let e = Chunk594190.ZP.getVisibleGame();
-    if ((null == module ? true : module.pid) == null || (null == module ? true : module.windowHandle) == null || null == module.name || "" === module.name) return;
-    let t = Chunk435064.Z.getSettings();
-    Chunk570140.Z.dispatch({
+    if (!(0, d.LI)() || null != o.Z.getCurrentUserActiveStream()) return;
+    let e = a.ZP.getVisibleGame();
+    if ((null == e ? true : e.pid) == null || (null == e ? true : e.windowHandle) == null || null == e.name || "" === e.name) return;
+    let t = c.Z.getSettings();
+    i.Z.dispatch({
       type: "CLIPS_INIT",
-      sourceId: "window:".concat(null == module ? true : module.windowHandle),
-      applicationName: module.name,
-      quality: exports.clipsQuality
+      sourceId: "window:".concat(null == e ? true : e.windowHandle),
+      applicationName: e.name,
+      quality: t.clipsQuality
     })
   }
   loadClipsFromStorage() {
-    let e = Chunk435064.Z.getSettings().storageLocation;
-    "" !== module && Chunk39604.jv(module).catch(e => {
+    let e = c.Z.getSettings().storageLocation;
+    "" !== e && f.jv(e).catch(e => {
       p.jF.error("Failed to load clips directory on connection open", e)
     })
   }

@@ -47,7 +47,7 @@ function l(e, t) {
 }
 let c = () => {};
 require.g.__timingFunction = () => performance.now();
-let u = null == require.g.__getTotalRequireTime ? () => 0 : () => require.g.__getTotalRequireTime();
+let u = null == require.g.__getTotalRequireTime ? () => 0 : () => n.g.__getTotalRequireTime();
 
 function d(e, t) {
   if (0 === t || null == t) return null;
@@ -68,16 +68,16 @@ class f {
     return this.end_ > 0
   }
   recordStart() {
-    0 === this.start_ && this.recordStart_(), Chunk135273.Z.mark(this.emoji, "Start ".concat(this.name)), c()
+    0 === this.start_ && this.recordStart_(), r.Z.mark(this.emoji, "Start ".concat(this.name)), c()
   }
   recordStart_() {
-    this.start_ = Date.now(), this.startNumImports = Chunk586444.dp(), this.startImportTime = u()
+    this.start_ = Date.now(), this.startNumImports = i.dp(), this.startImportTime = u()
   }
   recordEnd() {
-    0 === this.end_ && 0 !== this.start_ ? (this.recordEnd_(), Chunk135273.Z.mark(this.emoji, "Finish ".concat(this.name), this.end_ - this.start_)) : Chunk135273.Z.mark(this.emoji, "Finish ".concat(this.name)), c()
+    0 === this.end_ && 0 !== this.start_ ? (this.recordEnd_(), r.Z.mark(this.emoji, "Finish ".concat(this.name), this.end_ - this.start_)) : r.Z.mark(this.emoji, "Finish ".concat(this.name)), c()
   }
   recordEnd_() {
-    this.end_ = Date.now(), this.endNumImports = Chunk586444.dp(), this.endImportTime = u()
+    this.end_ = Date.now(), this.endNumImports = i.dp(), this.endImportTime = u()
   }
   set(e, t) {
     0 === this.start_ && (this.start_ = e, this.end_ = e + t, this.endNumImports = i.dp(), this.endImportTime = u()), r.Z.mark(this.emoji, this.name, t), c()
@@ -118,13 +118,13 @@ class p {
   }
   record() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Date.now();
-    if (0 === this.time_) this.recordState_(module);
+    if (0 === this.time_) this.recordState_(e);
     else if (!this.onlyOnce) {
       if (this.alwaysRecord) {
-        this.recordState_(module), c();
+        this.recordState_(e), c();
         return
       }
-      Chunk135273.Z.mark(this.emoji, this.name)
+      r.Z.mark(this.emoji, this.name)
     }
     c()
   }

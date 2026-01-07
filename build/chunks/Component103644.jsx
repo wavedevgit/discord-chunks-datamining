@@ -11,13 +11,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.ON)(Chunk313789.n.SOUNDS_HOLIDAY_NOTICE, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.fgSHf8)],
-  usePredicate: () => null != Chunk197344.Z.useHolidaySoundpack(),
-  Component: () => (0, Chunk54381.jsx)(Chunk793030.xvT, {
+  useSearchTerms: () => [o.intl.string(o.t.fgSHf8)],
+  usePredicate: () => null != s.Z.useHolidaySoundpack(),
+  Component: () => (0, i.jsx)(l.xvT, {
     variant: "text-md/normal",
     color: "text-subtle",
-    children: Chunk388032.intl.format(Chunk388032.t.Eup6Wv, {
-      onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.NOTIFICATIONS_SOUNDS_CATEGORY)
+    children: o.intl.format(o.t.Eup6Wv, {
+      onClick: () => (0, a.openUserSettings)(r.n.NOTIFICATIONS_SOUNDS_CATEGORY)
     })
   })
 })

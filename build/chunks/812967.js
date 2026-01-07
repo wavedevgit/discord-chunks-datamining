@@ -9,9 +9,9 @@ var Chunk663993 = require("./663993.js"),
 let a = async () => {
   let {
     default: e
-  } = await (0, Chunk663993.wE)({
-    createPromise: () => require.e("85441").then(require.t.bind(require, 826753, 23)),
+  } = await (0, r.wE)({
+    createPromise: () => n.e("85441").then(n.t.bind(n, 826753, 23)),
     webpackId: 826753
   });
-  return module
+  return e
 }, o = new Chunk65856.Z(a)

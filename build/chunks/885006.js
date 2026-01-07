@@ -7,20 +7,20 @@ var Chunk473749 = require("./473749.js");
 
 function i() {
   arguments.length > 0 && true !== arguments[0] && arguments[0];
-  let [e, t] = Chunk473749.useState(function() {
+  let [e, t] = a.useState(function() {
     var e, t;
     return arguments.length > 0 && true !== arguments[0] && arguments[0], {
-      width: null != (e = window.innerWidth) ? module : 1080,
-      height: null != (t = window.innerHeight) ? exports : 1080
+      width: null != (e = window.innerWidth) ? e : 1080,
+      height: null != (t = window.innerHeight) ? t : 1080
     }
   }());
-  return Chunk473749.useLayoutEffect(() => {
+  return a.useLayoutEffect(() => {
     function e() {
-      exports({
+      t({
         width: window.innerWidth,
         height: window.innerHeight
       })
     }
-    return module(), window.addEventListener("resize", module), () => window.removeEventListener("resize", module)
-  }, []), module
+    return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
+  }, []), e
 }

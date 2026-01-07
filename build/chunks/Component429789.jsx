@@ -18,27 +18,27 @@ function d() {
     attenuation: e,
     attenuateWhileSpeakingSelf: t,
     attenuateWhileSpeakingOthers: n
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-    attenuation: Chunk131951.Z.getAttenuation(),
-    attenuateWhileSpeakingSelf: Chunk131951.Z.getAttenuateWhileSpeakingSelf(),
-    attenuateWhileSpeakingOthers: Chunk131951.Z.getAttenuateWhileSpeakingOthers()
+  } = (0, i.cj)([l.Z], () => ({
+    attenuation: l.Z.getAttenuation(),
+    attenuateWhileSpeakingSelf: l.Z.getAttenuateWhileSpeakingSelf(),
+    attenuateWhileSpeakingOthers: l.Z.getAttenuateWhileSpeakingOthers()
   }));
-  return (0, Chunk54381.jsxs)(Chunk921801.F, {
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
-    children: [(0, Chunk54381.jsx)(Chunk481060.iRW, {
-      label: Chunk388032.intl.string(Chunk388032.t.oSdBvW),
-      description: Chunk388032.intl.string(Chunk388032.t["0A/8Rt"]),
-      initialValue: module,
+  return (0, r.jsxs)(s.F, {
+    setting: c.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
+    children: [(0, r.jsx)(a.iRW, {
+      label: u.intl.string(u.t.oSdBvW),
+      description: u.intl.string(u.t["0A/8Rt"]),
+      initialValue: e,
       onValueChange: e => {
         o.Z.setAttenuation(e, t, n)
       }
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["9dHxRY"]),
-      checked: exports,
+    }), (0, r.jsx)(a.rsf, {
+      label: u.intl.string(u.t["9dHxRY"]),
+      checked: t,
       onChange: t => o.Z.setAttenuation(e, t, n)
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.SMt0Gr),
-      checked: require,
+    }), (0, r.jsx)(a.rsf, {
+      label: u.intl.string(u.t.SMt0Gr),
+      checked: n,
       onChange: n => o.Z.setAttenuation(e, t, n)
     })]
   })

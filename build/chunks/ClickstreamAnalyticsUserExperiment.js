@@ -26,5 +26,5 @@ function i() {
   } = r.getCurrentConfig({
     location: "clickstream"
   });
-  return module
+  return e
 }

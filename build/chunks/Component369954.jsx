@@ -49,87 +49,87 @@ let O = e => {
     })
   },
   v = () => {
-    let e = (0, Chunk631885.ZM)(),
+    let e = (0, m.ZM)(),
       t = () => {
-        (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
-          recipientIds: module
+        (0, d.default)(), s.Z.openPrivateChannel({
+          recipientIds: e
         })
       },
       n = () => {
-        Chunk230711.Z.setSection(Chunk981631.oAB.CONTENT_AND_SOCIAL)
+        l.Z.setSection(g.oAB.CONTENT_AND_SOCIAL)
       };
-    return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+    return (0, r.jsxs)(a.Kqy, {
       justify: "space-between",
       direction: "horizontal",
       align: "center",
       gap: 32,
-      children: [(0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+      children: [(0, r.jsxs)(a.Kqy, {
         direction: "vertical",
         gap: 4,
-        children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
+        children: [(0, r.jsx)(a.xvT, {
           variant: "text-sm/semibold",
-          children: Chunk388032.intl.string(Chunk517319.default.ahKIJO)
-        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+          children: b.intl.string(E.default.ahKIJO)
+        }), (0, r.jsx)(a.xvT, {
           variant: "text-md/medium",
           color: "text-muted",
-          children: Chunk388032.intl.format(Chunk517319.default.X9rW0j, {
+          children: b.intl.format(E.default.X9rW0j, {
             openSettingsHook: (e, t) => (0, r.jsx)(o.eee, {
               onClick: n,
               children: e
             }, t)
           })
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        text: Chunk388032.intl.formatToPlainString(Chunk517319.default.ggcjPR, {
-          count: module.length
+      }), (0, r.jsx)(o.Button, {
+        text: b.intl.formatToPlainString(E.default.ggcjPR, {
+          count: e.length
         }),
-        onClick: exports,
+        onClick: t,
         variant: "secondary",
         size: "sm"
       })]
     })
   },
   S = () => {
-    let e = (0, Chunk780985.cz)(),
-      t = (0, Chunk780985.$r)(),
+    let e = (0, _.cz)(),
+      t = (0, _.$r)(),
       {
         handleTabChange: n
-      } = (0, Chunk841409.Z)();
-    Chunk473749.useEffect(() => {
-      (null == module ? true : module.id) != null && exports && Chunk260722.ZP.fetchTeenSettingsAndConsents(null == module ? true : module.id)
-    }, [null == module ? true : module.id, exports]);
+      } = (0, p.Z)();
+    i.useEffect(() => {
+      (null == e ? true : e.id) != null && t && f.ZP.fetchTeenSettingsAndConsents(null == e ? true : e.id)
+    }, [null == e ? true : e.id, t]);
     let o = e => {
       n(e)
     };
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)(a.Kqy, {
         direction: "vertical",
         gap: 4,
-        children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
+        children: [(0, r.jsx)(a.xvT, {
           variant: "text-sm/semibold",
-          children: Chunk388032.intl.string(Chunk517319.default.ahKIJO)
-        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+          children: b.intl.string(E.default.ahKIJO)
+        }), (0, r.jsx)(a.xvT, {
           variant: "text-md/medium",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk517319.default.Sv236e)
+          children: b.intl.string(E.default.Sv236e)
         })]
-      }), (0, Chunk54381.jsx)(O, {
-        title: Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
-        buttonText: Chunk388032.intl.string(Chunk388032.t.bt75uw),
-        onButtonPress: () => Chunk481060(Chunk292352.dG.CONTENT_AND_SOCIAL)
-      }), (0, Chunk54381.jsx)(Chunk511010.Z, {
-        className: Chunk837842.divider
-      }), (0, Chunk54381.jsx)(O, {
-        title: Chunk388032.intl.string(Chunk388032.t.OAuOHD),
-        buttonText: Chunk388032.intl.string(Chunk388032.t.bt75uw),
-        onButtonPress: () => Chunk481060(Chunk292352.dG.DATA_AND_PRIVACY)
+      }), (0, r.jsx)(O, {
+        title: b.intl.string(b.t["+o1pDZ"]),
+        buttonText: b.intl.string(b.t.bt75uw),
+        onButtonPress: () => o(h.dG.CONTENT_AND_SOCIAL)
+      }), (0, r.jsx)(c.Z, {
+        className: y.divider
+      }), (0, r.jsx)(O, {
+        title: b.intl.string(b.t.OAuOHD),
+        buttonText: b.intl.string(b.t.bt75uw),
+        onButtonPress: () => o(h.dG.DATA_AND_PRIVACY)
       })]
     })
   },
   I = () => {
-    let e = (0, Chunk981312.U)();
-    return 0 === (0, Chunk631885.ZM)().length ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk837842.container,
-      children: module ? (0, Chunk54381.jsx)(v, {}) : (0, Chunk54381.jsx)(S, {})
+    let e = (0, u.U)();
+    return 0 === (0, m.ZM)().length ? null : (0, r.jsx)("div", {
+      className: y.container,
+      children: e ? (0, r.jsx)(v, {}) : (0, r.jsx)(S, {})
     })
   }

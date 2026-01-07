@@ -28,16 +28,16 @@ function f(e) {
 
 function h() {
   let e = window.getSelection();
-  if (null == module) return {
+  if (null == e) return {
     selection: null,
     rangeStartContainer: null,
     rangeStartOffset: null
   };
-  let t = module.getRangeAt(0);
+  let t = e.getRangeAt(0);
   return {
-    selection: module,
-    rangeStartContainer: exports.startContainer,
-    rangeStartOffset: exports.startOffset
+    selection: e,
+    rangeStartContainer: t.startContainer,
+    rangeStartOffset: t.startOffset
   }
 }
 
@@ -55,27 +55,27 @@ class g extends Chunk473749.PureComponent {
       channel: l,
       onCancel: a,
       children: o
-    } = this.props, s = (0, Chunk54381.jsx)("div", {
-      className: Chunk122083.operations,
-      children: Chunk388032.intl.format(Chunk388032.t.wDsPXs, {
-        onCancel: () => Chunk925975(Chunk911969.id),
+    } = this.props, s = (0, i.jsx)("div", {
+      className: d.operations,
+      children: u.intl.format(u.t.wDsPXs, {
+        onCancel: () => a(l.id),
         onSave: this.onClickSave
       })
     });
-    return (0, Chunk54381.jsxs)("div", {
-      className: module,
+    return (0, i.jsxs)("div", {
+      className: e,
       ref: this.node,
       onContextMenu: f,
-      children: [Chunk957730({
-        textValue: exports,
-        richValue: require,
-        message: Chunk473749,
-        channel: Chunk911969,
+      children: [o({
+        textValue: t,
+        richValue: n,
+        message: r,
+        channel: l,
         onChange: this.onChange,
         onSubmit: this.onSubmit,
         onKeyDown: this.onKeyDown,
-        renderLeftAccessories: () => Chunk981631
-      }), Chunk981631]
+        renderLeftAccessories: () => s
+      }), s]
     })
   }
   constructor(...e) {

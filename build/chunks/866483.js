@@ -34,7 +34,7 @@ function u() {
 
 function d() {
   let e = [...a ? r : [], ...o.keys()].sort();
-  return module.length > 0 ? module.join(",") : i
+  return e.length > 0 ? e.join(",") : i
 }
 
 function f(e) {

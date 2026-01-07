@@ -288,7 +288,7 @@ class tc extends Chunk473749.PureComponent {
     let {
       copiedStreak: e
     } = this.state;
-    return module >= 10
+    return e >= 10
   }
   componentDidUpdate(e) {
     let {
@@ -306,10 +306,10 @@ class tc extends Chunk473749.PureComponent {
   renderCopiedSuccess() {
     let {
       copiedStreak: e
-    } = this.state, t = [Chunk388032.intl.string(Chunk388032.t.MSaeTe), Chunk388032.intl.string(Chunk388032.t.UmrCw7), Chunk388032.intl.string(Chunk388032.t.gKE0Jq), Chunk388032.intl.string(Chunk388032.t["4DSKbi"]), Chunk388032.intl.string(Chunk388032.t["+8ENdT"]), Chunk388032.intl.string(Chunk388032.t.GlWHv8), Chunk388032.intl.string(Chunk388032.t.hIzxU9), Chunk388032.intl.string(Chunk388032.t["26uMPL"]), Chunk388032.intl.string(Chunk388032.t.uFs7R2), Chunk388032.intl.string(Chunk388032.t.bLXdcY), Chunk388032.intl.string(Chunk388032.t.gPg9fS)], n = Math.min(Math.max(0, module - 1), exports.length - 1);
-    return (0, Chunk54381.jsx)(Chunk481060.UkV, {
+    } = this.state, t = [e9.intl.string(e9.t.MSaeTe), e9.intl.string(e9.t.UmrCw7), e9.intl.string(e9.t.gKE0Jq), e9.intl.string(e9.t["4DSKbi"]), e9.intl.string(e9.t["+8ENdT"]), e9.intl.string(e9.t.GlWHv8), e9.intl.string(e9.t.hIzxU9), e9.intl.string(e9.t["26uMPL"]), e9.intl.string(e9.t.uFs7R2), e9.intl.string(e9.t.bLXdcY), e9.intl.string(e9.t.gPg9fS)], n = Math.min(Math.max(0, e - 1), t.length - 1);
+    return (0, a.jsx)(x.UkV, {
       isShaking: this.isCopiedStreakGodlike,
-      children: exports[require]
+      children: t[n]
     })
   }
   renderStatus() {
@@ -324,43 +324,43 @@ class tc extends Chunk473749.PureComponent {
       voiceActivityStatusEnabled: s,
       voiceChannel: o
     } = this.props;
-    if (null == Chunk473749) return null;
-    if ((0, Chunk326255.Z)({
-        activities: exports,
-        status: Chunk120356,
-        applicationStream: require,
-        voiceChannel: Chunk392711 ? o : true
-      })) return (0, Chunk54381.jsx)(Chunk570928.Z, {
+    if (null == r) return null;
+    if ((0, _.Z)({
+        activities: t,
+        status: i,
+        applicationStream: n,
+        voiceChannel: s ? o : true
+      })) return (0, a.jsx)(T.Z, {
       hoverText: l,
-      forceHover: module,
-      children: (0, Chunk54381.jsx)(Chunk747017.Z, {
-        user: Chunk473749,
-        activities: exports,
-        applicationStream: require,
-        voiceChannel: Chunk392711 ? o : true,
-        textClassName: Chunk484036.activityStatusText,
+      forceHover: e,
+      children: (0, a.jsx)(S.Z, {
+        user: r,
+        activities: t,
+        applicationStream: n,
+        voiceChannel: s ? o : true,
+        textClassName: te.activityStatusText,
         hideTooltip: true
       })
     });
-    let c = null == exports ? true : exports.find(e => {
+    let c = null == t ? true : t.find(e => {
       let {
         type: t
       } = e;
       return t === e7.IIU.CUSTOM_STATUS
     });
-    return null != Chunk374470 ? (0, Chunk54381.jsx)(Chunk570928.Z, {
+    return null != c ? (0, a.jsx)(T.Z, {
       hoverText: l,
-      forceHover: module,
-      children: (0, Chunk54381.jsx)(Chunk427217.Z, {
-        activity: Chunk374470,
-        emojiClassName: Chunk484036.emoji,
-        className: Chunk484036.customStatus
+      forceHover: e,
+      children: (0, a.jsx)(V.Z, {
+        activity: c,
+        emojiClassName: te.emoji,
+        className: te.customStatus
       })
-    }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk473749.hasUniqueUsername() ? (0, Chunk54381.jsx)(Chunk570928.Z, {
+    }) : null != i && i !== e7.Skl.UNKNOWN && r.hasUniqueUsername() ? (0, a.jsx)(T.Z, {
       hoverText: l,
-      forceHover: module,
-      children: (0, Chunk54381.jsx)(Chunk963056.Z, {
-        text: Chunk51144.ZP.humanizeStatus(Chunk120356)
+      forceHover: e,
+      children: (0, a.jsx)(E.Z, {
+        text: eQ.ZP.humanizeStatus(i)
       })
     }) : l
   }
@@ -402,8 +402,8 @@ class tc extends Chunk473749.PureComponent {
       isQuestBarEmpty: r,
       isListenAlongVisible: i
     } = this.props, s = this.state.hovered;
-    return null == module ? null : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Wdt, {
+    return null == e ? null : (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(x.Wdt, {
         children: e => (0, a.jsxs)("div", {
           ref: this.containerRef,
           className: l()(te.container, {
@@ -430,7 +430,7 @@ class tc extends Chunk473749.PureComponent {
             dismissTooltips: this.dismissTooltips
           }))]
         })
-      }), (0, Chunk54381.jsx)(Chunk427347.Z, {})]
+      }), (0, a.jsx)(Q.Z, {})]
     })
   }
   constructor(...e) {
@@ -718,157 +718,157 @@ function tu(e) {
 
 function tm() {
   var e;
-  let t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    n = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId()),
-    r = Chunk660230.K.useConfig({
+  let t = (0, d.e7)([eU.default], () => eU.default.getCurrentUser()),
+    n = (0, d.e7)([eP.default], () => eP.default.getId()),
+    r = eJ.K.useConfig({
       location: "AccountConnected"
     }).transitionAccountPanel,
     {
       activities: i,
       streaming: l,
       status: s
-    } = (0, Chunk442837.cj)([Chunk885110.Z], () => {
-      let e = Chunk885110.Z.getActivities();
+    } = (0, d.cj)([eZ.Z], () => {
+      let e = eZ.Z.getActivities();
       return {
-        activities: module,
-        streaming: null != module.find(e => {
+        activities: e,
+        streaming: null != e.find(e => {
           let {
             type: t
           } = e;
           return t === e7.IIU.STREAMING
         }),
-        status: Chunk885110.Z.getStatus()
+        status: eZ.Z.getStatus()
       }
     }),
-    c = (0, Chunk442837.e7)([Chunk199902.Z], () => Chunk199902.Z.getAnyStreamForUser(require)),
-    m = (0, Chunk586902.Z)({
-      userId: require
+    c = (0, d.e7)([eN.Z], () => eN.Z.getAnyStreamForUser(n)),
+    m = (0, v.Z)({
+      userId: n
     }),
-    p = (0, Chunk442837.e7)([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPTTLatched()),
-    f = (0, Chunk442837.e7)([Chunk606304.Z], () => Chunk606304.Z.getVoiceVolume(require)),
-    h = Chunk51144.ZP.useUserTag(exports, {
+    p = (0, d.e7)([eL.Z], () => eL.Z.isCurrentUserPTTLatched()),
+    f = (0, d.e7)([eL.Z], () => eL.Z.getVoiceVolume(n)),
+    h = eQ.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    b = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
-    g = (0, Chunk442837.e7)([Chunk19780.Z, Chunk592125.Z], () => {
-      let e = Chunk19780.Z.getChannelId();
-      return null != module ? Chunk592125.Z.getChannel(module) : null
+    b = (0, d.e7)([eM.Z], () => eM.Z.hidePersonalInformation),
+    g = (0, d.e7)([eA.Z, ew.Z], () => {
+      let e = eA.Z.getChannelId();
+      return null != e ? ew.Z.getChannel(e) : null
     }),
     {
       mute: j,
       selfMute: C,
       suppress: _
-    } = (0, Chunk294629.Z)(Chunk410575),
+    } = (0, eb.Z)(g),
     {
       selfDeaf: S,
       deaf: E
-    } = (0, Chunk879815.Z)(Chunk410575),
-    T = (0, Chunk442837.e7)([Chunk304761.C], () => {
+    } = (0, ex.Z)(g),
+    T = (0, d.e7)([k.C], () => {
       var e;
-      return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
+      return (0, R.fD)() ? null == (e = k.C.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     }),
-    I = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    D = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
-    Z = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
-    L = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
-    M = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk659580 || Chunk374023.s.isDisallowPopupsSet() || Chunk628581,
-    U = (0, Chunk332473.b)(),
-    B = (0, Chunk442837.e7)([Chunk258609.default], () => null != Chunk258609.default.getAwaitingRemoteSessionInfo()),
-    F = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    G = null == exports ? true : exports.avatarDecoration,
-    V = (0, Chunk541638.R)(exports, null != Chunk522651 ? Chunk522651 : true),
-    z = (0, Chunk676742.Z)(Chunk473749 ? Chunk427217 : Chunk795318),
-    H = Chunk5192.ZP.useName(null != Chunk522651 ? Chunk522651 : true, null, exports),
-    q = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
+    I = (0, d.e7)([eB.Z], () => eB.Z.getPremiumTypeSubscription()),
+    D = (0, d.e7)([eR.Z], () => eR.Z.getSpeakingWhileMuted()),
+    Z = (0, d.e7)([A.Z], () => A.Z.isFullscreenInContext()),
+    L = (0, d.e7)([ek.Z], () => ek.Z.hasLayers()),
+    M = (0, x.s9z)(x.JQI) || L || eY.s.isDisallowPopupsSet() || Z,
+    U = (0, ea.b)(),
+    B = (0, d.e7)([Y.default], () => null != Y.default.getAwaitingRemoteSessionInfo()),
+    F = (0, d.e7)([eD.Z], () => eD.Z.getGuildId()),
+    G = null == t ? true : t.avatarDecoration,
+    V = (0, P.R)(t, null != F ? F : true),
+    z = (0, w.Z)(r ? V : G),
+    H = eK.ZP.useName(null != F ? F : true, null, t),
+    q = null != (e = eQ.ZP.useName(t)) ? e : "",
     {
       voiceActivityStatusEnabled: K
-    } = (0, Chunk468363.U)({
+    } = (0, y.U)({
       location: "Account"
     }),
-    Q = Chunk594928.JH.useExperiment({
+    Q = W.JH.useExperiment({
       location: "Account"
     }).enabled,
-    X = (0, Chunk494424.c)(exports, "Account"),
-    J = Chunk299886.H.useConfig({
+    X = (0, ei.c)(t, "Account"),
+    J = el.H.useConfig({
       location: "Account"
     }).enabled,
     {
       analyticsLocations: ee
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.ACCOUNT),
-    et = (0, Chunk850020.K)({
-      user: exports,
-      guildId: Chunk473749 && null != Chunk522651 ? Chunk522651 : true
+    } = (0, N.ZP)(O.Z.ACCOUNT),
+    et = (0, $.K)({
+      user: t,
+      guildId: r && null != F ? F : true
     }),
     {
       isQuestBarEmpty: en,
       hasLoadedQuestBar: er
-    } = (0, Chunk659302.Ws)({
-      location: Chunk324805.dr.CONFLICT_CHECKS
+    } = (0, eo.Ws)({
+      location: e6.dr.CONFLICT_CHECKS
     }),
-    es = (0, Chunk442837.e7)([Chunk768419.Z, Chunk594174.default, Chunk831506.Z], () => {
-      let e, t = Chunk768419.Z.getSyncingWith(),
-        n = Chunk768419.Z.getActivity(),
+    es = (0, d.e7)([ec.Z, eU.default, eI.Z], () => {
+      let e, t = ec.Z.getSyncingWith(),
+        n = ec.Z.getActivity(),
         a = [];
-      if (null != exports ? e = exports.partyId : null != require && null != require.party && null != require.party.id && (e = require.party.id), null != module) {
+      if (null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e) {
         var r;
-        a = o()(Array.from(null != (r = Chunk831506.Z.getParty(module)) ? Chunk473749 : [])).map(e => eU.default.getUser(e)).filter(Chunk823379.lm).value()
+        a = o()(Array.from(null != (r = eI.Z.getParty(e)) ? r : [])).map(e => eU.default.getUser(e)).filter(eq.lm).value()
       }
-      return Chunk54381.length > 1
+      return a.length > 1
     }),
-    eu = (0, Chunk172416.Un)({
+    eu = (0, ed.Un)({
       location: "AccountConnected"
     }),
     em = {
       avatar: [],
       settings: []
     };
-  !Chunk855844 && (Chunk427347 && Chunk670188.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk72897 && Chunk670188.avatar.push(Chunk704215.z.TENURE_BADGE_CHURN_REMINDER), Chunk184301 && Chunk670188.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK), Chunk78933 && Chunk670188.settings.push(Chunk704215.z.NITRO_PRIVACY_PERK_BETA_COACHMARK));
+  !M && (Q && em.avatar.push(u.z.DISPLAY_NAME_STYLES_COACHMARK), X && em.avatar.push(u.z.TENURE_BADGE_CHURN_REMINDER), eu && em.avatar.push(u.z.WIDGETS_RTC_UPSELL_COACHMARK), J && em.settings.push(u.z.NITRO_PRIVACY_PERK_BETA_COACHMARK));
   let {
     shouldShowTooltip: ep,
     dismissTooltip: ef
-  } = tu(Chunk65154.h7.AUDIO_INPUT), {
+  } = tu(e2.h7.AUDIO_INPUT), {
     shouldShowTooltip: eh,
     dismissTooltip: eg
-  } = tu(Chunk65154.h7.AUDIO_OUTPUT);
-  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: Chunk379839,
-    children: (0, Chunk54381.jsx)(tc, {
-      currentUser: exports,
-      username: Chunk473749 ? Chunk386725 : Chunk821795,
-      transitionAccountPanel: Chunk473749,
-      activities: Chunk120356,
-      applicationStream: Chunk374470,
-      voiceChannel: Chunk410575,
-      dismissibleContents: Chunk670188,
-      userTag: Chunk930295,
-      hidePrivateData: Chunk239091,
-      occluded: Chunk855844,
-      premiumSubscription: Chunk1585,
-      selfDeaf: Chunk747017,
-      selfMute: Chunk980591,
-      serverDeaf: Chunk963056,
-      serverMute: Chunk493773,
-      speaking: Chunk846519,
-      voiceDb: Chunk789639,
-      speakingWhileMuted: Chunk571250,
-      latched: Chunk400354 && null != Chunk410575,
-      status: Chunk392711,
+  } = tu(e2.h7.AUDIO_OUTPUT);
+  return (0, a.jsx)(N.Gt, {
+    value: ee,
+    children: (0, a.jsx)(tc, {
+      currentUser: t,
+      username: r ? H : q,
+      transitionAccountPanel: r,
+      activities: i,
+      applicationStream: c,
+      voiceChannel: g,
+      dismissibleContents: em,
+      userTag: h,
+      hidePrivateData: b,
+      occluded: M,
+      premiumSubscription: I,
+      selfDeaf: S,
+      selfMute: C,
+      serverDeaf: E,
+      serverMute: j,
+      speaking: m,
+      voiceDb: f,
+      speakingWhileMuted: D,
+      latched: p && null != g,
+      status: s,
       streaming: l,
-      suppress: Chunk326255,
-      webBuildOverride: Chunk570928,
-      awaitingRemote: Chunk575175,
-      isEligibleForPomelo: Chunk55311,
-      voiceActivityStatusEnabled: Chunk892567,
-      nameplate: Chunk359135,
-      selectedGuildId: Chunk522651,
-      avatarDecoration: Chunk243778,
-      isQuestBarEmpty: Chunk516817,
-      hasLoadedQuestBar: Chunk963590,
-      isListenAlongVisible: Chunk375720,
-      shouldShowInputDeviceChangedTooltip: Chunk313789,
-      shouldShowOutputDeviceChangedTooltip: Chunk518596,
-      dismissInputDeviceChangedTooltip: Chunk846071,
-      dismissOutputDeviceChangedTooltip: Chunk875527
+      suppress: _,
+      webBuildOverride: T,
+      awaitingRemote: B,
+      isEligibleForPomelo: U,
+      voiceActivityStatusEnabled: K,
+      nameplate: et,
+      selectedGuildId: F,
+      avatarDecoration: z,
+      isQuestBarEmpty: en,
+      hasLoadedQuestBar: er,
+      isListenAlongVisible: es,
+      shouldShowInputDeviceChangedTooltip: ep,
+      shouldShowOutputDeviceChangedTooltip: eh,
+      dismissInputDeviceChangedTooltip: ef,
+      dismissOutputDeviceChangedTooltip: eg
     })
   })
 }

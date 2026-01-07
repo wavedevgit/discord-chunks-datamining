@@ -8,5 +8,5 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function a() {
-  return (0, Chunk442837.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildsArray().filter(e => e.features.has(l.GuildFeatures.HUB)))
+  return (0, r.Wu)([i.Z], () => i.Z.getGuildsArray().filter(e => e.features.has(l.GuildFeatures.HUB)))
 }

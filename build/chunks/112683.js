@@ -61,5 +61,5 @@ function _(e) {
 }
 
 function m() {
-  return "function" == typeof Chunk473749.useSyncExternalStore ? Chunk473749.useSyncExternalStore(_, f, p) : (0, Chunk473749.useContext)(o)
+  return "function" == typeof r.useSyncExternalStore ? r.useSyncExternalStore(_, f, p) : (0, r.useContext)(o)
 }

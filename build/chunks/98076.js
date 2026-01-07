@@ -38,9 +38,9 @@ function c() {
       disable: () => {
         e = false
       },
-      isEnabled: () => module
+      isEnabled: () => e
     };
-  return Chunk975318.X ? o.forEach(n => {
+  return r.X ? o.forEach(n => {
     t[n] = (...t) => {
       e && l(() => {
         i.n.console[n](`${a}[${n}]:`, ...t)
@@ -48,6 +48,6 @@ function c() {
     }
   }) : o.forEach(e => {
     t[e] = () => true
-  }), exports
+  }), t
 }
 let u = (0, Chunk606093.Y)("logger", c)

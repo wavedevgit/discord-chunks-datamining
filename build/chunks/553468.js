@@ -19,9 +19,9 @@ function i(e, t) {
 var Chunk500124 = require("./500124.js"),
   o = function() {
     function e() {
-      i(this, module)
+      i(this, e)
     }
-    return r(module, null, [{
+    return r(e, null, [{
       key: "step0",
       value: function(e) {
         return +(e > 0)
@@ -77,7 +77,7 @@ var Chunk500124 = require("./500124.js"),
       key: "elastic",
       value: function() {
         var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
-          t = module * Math.PI;
+          t = e * Math.PI;
         return function(e) {
           return 1 - Math.pow(Math.cos(e * Math.PI / 2), 3) * Math.cos(e * t)
         }
@@ -119,7 +119,7 @@ var Chunk500124 = require("./500124.js"),
           return t < .5 ? e(2 * t) / 2 : 1 - e((1 - t) * 2) / 2
         }
       }
-    }]), module
+    }]), e
   }(),
   s = o.bezier(.42, 0, 1, 1);
 module.exports = o

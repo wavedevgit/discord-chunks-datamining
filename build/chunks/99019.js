@@ -9,6 +9,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk234582 = require("./234582.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.k4)(Chunk313789.n.CHAT_EMOJI_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.sMOuuS),
-  buildLayout: () => [Chunk234582.n, Chunk826856.e]
+  useTitle: () => r.intl.string(r.t.sMOuuS),
+  buildLayout: () => [u.n, s.e]
 })

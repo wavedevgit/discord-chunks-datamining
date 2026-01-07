@@ -18,9 +18,9 @@ var Chunk570140 = require("./570140.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m() {
-  let e = Chunk979651.Z.getVoiceStateForUser(Chunk314897.default.getId()),
-    t = Chunk592125.Z.getChannel(null == module ? true : module.channelId);
-  return Chunk314897.default.getSessionId() === (null == module ? true : module.sessionId) && null != exports && exports.type !== Chunk981631.d4z.GUILD_STAGE_VOICE ? exports.id : null
+  let e = c.Z.getVoiceStateForUser(s.default.getId()),
+    t = l.Z.getChannel(null == e ? true : e.channelId);
+  return s.default.getSessionId() === (null == e ? true : e.sessionId) && null != t && t.type !== p.d4z.GUILD_STAGE_VOICE ? t.id : null
 }
 async function h(e, t) {
   if (e) {
@@ -48,7 +48,7 @@ async function h(e, t) {
 }
 let g = {
   clearUploadedKeyVersions: function() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "SECURE_FRAMES_UPLOADED_KEY_VERSION_CLEAR"
     })
   },

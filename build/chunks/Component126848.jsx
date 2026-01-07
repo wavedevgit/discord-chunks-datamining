@@ -26,25 +26,25 @@ var Chunk54381 = require("./54381.js"),
 
 function O() {
   let e, t = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    n = (0, Chunk639119.N)(),
-    a = (0, Chunk622909.N)(),
-    o = (0, Chunk367074.Vi)(),
-    l = null != (0, Chunk347896.Z)(),
-    c = o || Chunk692547,
-    u = (null == require ? true : require.trial_id) === Chunk474936.a7,
+    n = (0, m.N)(),
+    a = (0, _.N)(),
+    o = (0, f.Vi)(),
+    l = null != (0, p.Z)(),
+    c = o || l,
+    u = (null == n ? true : n.trial_id) === b.a7,
     y = [];
-  Chunk481060 && Chunk836374.push(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE);
-  let [O, v] = (0, Chunk243778.US)(Chunk836374, true, true);
-  return Chunk473749.useEffect(() => {
-    true === exports && O === Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE && v(Chunk921944.L.AUTO_DISMISS)
-  }, [v, exports, O]), Chunk481060 ? e = (0, Chunk54381.jsx)(Chunk655525.Z, {}) : null != Chunk120356 ? e = (0, Chunk54381.jsx)(Chunk924540.GN, {
-    isTabSelected: exports,
-    userDiscount: Chunk120356,
+  c && y.push(s.z.BOGO_2025_NITRO_TAB_BADGE);
+  let [O, v] = (0, d.US)(y, true, true);
+  return i.useEffect(() => {
+    true === t && O === s.z.BOGO_2025_NITRO_TAB_BADGE && v(E.L.AUTO_DISMISS)
+  }, [v, t, O]), c ? e = (0, r.jsx)(h.Z, {}) : null != a ? e = (0, r.jsx)(g.GN, {
+    isTabSelected: t,
+    userDiscount: a,
     includesAmountOff: false
-  }) : null == require || Chunk436774 || (e = (0, Chunk54381.jsx)(Chunk924540.$H, {
-    isTabSelected: exports,
-    trialOffer: require
-  })), module
+  }) : null == n || u || (e = (0, r.jsx)(g.$H, {
+    isTabSelected: t,
+    trialOffer: n
+  })), e
 }
 
 function v(e) {

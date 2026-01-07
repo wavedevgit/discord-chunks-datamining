@@ -3,5 +3,5 @@
 "use strict";
 module.exports = function() {
   var e = this;
-  return module.callbacks = {}, module.directMap = {}, this
+  return e.callbacks = {}, e.directMap = {}, this
 }

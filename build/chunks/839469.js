@@ -13,31 +13,31 @@ var Chunk473749 = require("./473749.js"),
   Chunk991346 = require("./991346.js"),
   Chunk726985 = require("./726985.js");
 let u = (0, Chunk972959.H)(() => ({
-  searchResults: Chunk726985.QF,
+  searchResults: c.QF,
   hasSearchResults: false
 }));
 
 function d() {
-  let e = Chunk996733.Z.useField("query"),
-    t = (0, Chunk991346.Pt)(),
-    n = Chunk473749.useRef(new Chunk170401.Z((0, Chunk991346.ji)(exports))),
-    a = Chunk473749.useCallback(async e => {
+  let e = s.Z.useField("query"),
+    t = (0, l.Pt)(),
+    n = r.useRef(new o.Z((0, l.ji)(t))),
+    a = r.useCallback(async e => {
       let t = await n.current.search(e.trim());
       u.setState({
         searchResults: t,
         hasSearchResults: true
       })
     }, []);
-  Chunk473749.useEffect(() => {
-    "" === module || module.length < 2 ? u.resetState() : Chunk972959(module)
-  }, [module, Chunk972959]), (0, Chunk493773.ZP)(() => () => {
-    u.resetState(), Chunk996733.Z.setState({
+  r.useEffect(() => {
+    "" === e || e.length < 2 ? u.resetState() : a(e)
+  }, [e, a]), (0, i.ZP)(() => () => {
+    u.resetState(), s.Z.setState({
       query: ""
     })
   });
   let c = u.useField("searchResults");
   return {
     hasSearchResults: u.useField("hasSearchResults"),
-    searchResults: Chunk726985
+    searchResults: c
   }
 }

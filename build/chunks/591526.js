@@ -23,12 +23,12 @@ class o {
   static async getGuildIds() {
     try {
       var e;
-      let t = Chunk287328.Z.channels();
-      if (null == exports) return new Set;
-      let n = (null != (e = await exports.getGuildIds()) ? module : []).filter(e => null !== e && "string" == typeof e);
-      return new Set(require)
+      let t = i.Z.channels();
+      if (null == t) return new Set;
+      let n = (null != (e = await t.getGuildIds()) ? e : []).filter(e => null !== e && "string" == typeof e);
+      return new Set(n)
     } catch (e) {
-      return a.warn("couldn't get guild ids", module), new Set
+      return a.warn("couldn't get guild ids", e), new Set
     }
   }
 }

@@ -25,25 +25,25 @@ var Chunk54381 = require("./54381.js"),
 function S() {
   return [{
     value: 0,
-    label: Chunk388032.intl.string(Chunk388032.t["4obaMS"])
+    label: M.intl.string(M.t["4obaMS"])
   }, {
-    value: +Chunk70956.Z.Seconds.HOUR,
-    label: Chunk388032.intl.string(Chunk388032.t.RKpitY)
+    value: +v.Z.Seconds.HOUR,
+    label: M.intl.string(M.t.RKpitY)
   }, {
-    value: 6 * Chunk70956.Z.Seconds.HOUR,
-    label: Chunk388032.intl.string(Chunk388032.t["8WfJZ8"])
+    value: 6 * v.Z.Seconds.HOUR,
+    label: M.intl.string(M.t["8WfJZ8"])
   }, {
-    value: 12 * Chunk70956.Z.Seconds.HOUR,
-    label: Chunk388032.intl.string(Chunk388032.t.p1up7u)
+    value: 12 * v.Z.Seconds.HOUR,
+    label: M.intl.string(M.t.p1up7u)
   }, {
-    value: +Chunk70956.Z.Seconds.DAY,
-    label: Chunk388032.intl.string(Chunk388032.t.XuVkkD)
+    value: +v.Z.Seconds.DAY,
+    label: M.intl.string(M.t.XuVkkD)
   }, {
-    value: 3 * Chunk70956.Z.Seconds.DAY,
-    label: Chunk388032.intl.string(Chunk388032.t["gMcDS+"])
+    value: 3 * v.Z.Seconds.DAY,
+    label: M.intl.string(M.t["gMcDS+"])
   }, {
-    value: 7 * Chunk70956.Z.Seconds.DAY,
-    label: Chunk388032.intl.string(Chunk388032.t.FA7IUk)
+    value: 7 * v.Z.Seconds.DAY,
+    label: M.intl.string(M.t.FA7IUk)
   }]
 }
 let m = S()[1].value,

@@ -339,27 +339,27 @@ function A(e) {
 }
 
 function N() {
-  return (0, Chunk54381.jsx)("div", {
-    className: o()(Chunk564546.menu, Chunk564546.loader, Chunk564546.flexible),
-    children: (0, Chunk54381.jsx)(Chunk793030.$jN, {})
+  return (0, r.jsx)("div", {
+    className: o()(E.menu, E.loader, E.flexible),
+    children: (0, r.jsx)(u.$jN, {})
   })
 }
 
 function P() {
   let e = "♫ (つ｡◕‿‿◕｡)つ ♪",
     t = "♫ ⊂(｡◕‿‿◕｡⊂) ♪",
-    [n, a] = Chunk473749.useState(module);
-  return Chunk473749.useEffect(() => {
-    if (Chunk607070.Z.useReducedMotion) return;
+    [n, a] = i.useState(e);
+  return i.useEffect(() => {
+    if (f.Z.useReducedMotion) return;
     let n = setInterval(() => {
-      Chunk120356(n => n === e ? t : e)
+      a(n => n === e ? t : e)
     }, 700);
-    return () => clearInterval(require)
-  }, []), (0, Chunk54381.jsx)("div", {
+    return () => clearInterval(n)
+  }, []), (0, r.jsx)("div", {
     style: {
       width: "100%",
       textAlign: "center"
     },
-    children: require
+    children: n
   })
 }

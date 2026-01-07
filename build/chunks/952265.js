@@ -89,8 +89,8 @@ let h = require("./338305.jsx").Z,
   g = [Chunk602091.z1, Chunk602091.u1];
 
 function E() {
-  let e = (0, Chunk728285.GB)();
-  return null != module ? b(module) : Chunk602091.z1
+  let e = (0, s.GB)();
+  return null != e ? b(e) : l.z1
 }
 
 function b(e) {
@@ -270,15 +270,15 @@ function P(e) {
 
 function R() {
   let e = y.getState();
-  for (let t in module)
-    for (let n of module[exports]) S(require.key, exports)
+  for (let t in e)
+    for (let n of e[t]) S(n.key, t)
 }
 
 function w() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E(),
-    t = y.getState()[module];
-  if (null != exports)
-    for (let n of exports) S(require.key, module)
+    t = y.getState()[e];
+  if (null != t)
+    for (let n of t) S(n.key, e)
 }
 
 function D(e, t) {
@@ -298,11 +298,11 @@ function L(e, t) {
 function j() {
   let e = y.getState(),
     t = E();
-  if (exports !== Chunk602091.z1 && null != module[exports] && module[exports].length > 0) returnfalse;
-  let n = module[Chunk602091.z1];
-  if (null != require && require.length > 0) {
+  if (t !== l.z1 && null != e[t] && e[t].length > 0) returnfalse;
+  let n = e[l.z1];
+  if (null != n && n.length > 0) {
     var r, i;
-    return null != (i = null == (r = require.at(false)) ? true : Chunk97613.allowsNavigation) && i
+    return null != (i = null == (r = n.at(false)) ? true : r.allowsNavigation) && i
   }
   returntrue
 }

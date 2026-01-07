@@ -10,6 +10,6 @@ var Chunk473749 = require("./473749.js"),
 function a() {
   let {
     headingId: e
-  } = Chunk473749.useContext(Chunk793030.tCf);
-  return "modal-heading-id" === module ? true : module
+  } = r.useContext(i.tCf);
+  return "modal-heading-id" === e ? true : e
 }

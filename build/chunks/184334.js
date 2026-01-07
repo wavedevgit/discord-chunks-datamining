@@ -72,14 +72,14 @@ class s {
   resolvedOptions() {
     let e = this.numberFormatter.resolvedOptions();
     return i || null == this.options.signDisplay || (e = {
-      ...module,
+      ...e,
       signDisplay: this.options.signDisplay
     }), a || "unit" !== this.options.style || (e = {
-      ...module,
+      ...e,
       style: "unit",
       unit: this.options.unit,
       unitDisplay: this.options.unitDisplay
-    }), module
+    }), e
   }
   constructor(e, t = {}) {
     this.numberFormatter = l(e, t), this.options = t

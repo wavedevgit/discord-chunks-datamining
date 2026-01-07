@@ -236,8 +236,8 @@ let g = {
       onSetResponse: e,
       setSearchError: t,
       setIsFetchingResults: n
-    } = (0, Chunk149705.a)();
-    Chunk473749.useEffect(() => {
+    } = (0, c.a)();
+    r.useEffect(() => {
       let r = r => {
         let l = async () => {
           n(true);
@@ -265,8 +265,8 @@ let g = {
         };
         0 !== r.limit && l()
       };
-      Chunk473749(E(C.getState()));
-      let l = C.subscribe(E, Chunk473749, {
+      r(E(C.getState()));
+      let l = C.subscribe(E, r, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
         a = C.subscribe(e => e.hasFilters(), (e, t) => {
@@ -278,7 +278,7 @@ let g = {
           }
         });
       return () => {
-        Chunk663042(), Chunk690775()
+        l(), a()
       }
-    }, [module, exports, require])
+    }, [e, t, n])
   }

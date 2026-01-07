@@ -9,6 +9,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk418924 = require("./418924.js");
 let a = (0, Chunk509613.ON)(Chunk313789.n.ACTIVITY_PRIVACY_PER_SERVER_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk418924.default.TG0QsS)],
+  useSearchTerms: () => [u.intl.string(r.default.TG0QsS)],
   Component: Chunk309739.ZL
 })

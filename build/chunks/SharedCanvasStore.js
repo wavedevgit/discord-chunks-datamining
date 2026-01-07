@@ -50,7 +50,7 @@ function E(e) {
 }
 class _ extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(o.default)
   }
   get visibleOverlayCanvas() {
     return v

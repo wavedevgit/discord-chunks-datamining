@@ -17,9 +17,9 @@ var s = function() {
   function e() {
     this.all = false, this.before = [], this.after = [], this.between = []
   }
-  return module.prototype._cacheAdd = function(e, t, n) {
+  return e.prototype._cacheAdd = function(e, t, n) {
     t && (t = t instanceof Date ? (0, i.d9)(t) : (0, i.L1)(t)), "all" === e ? this.all = t : (n._value = t, this[e].push(n))
-  }, module.prototype._cacheGet = function(e, t) {
+  }, e.prototype._cacheGet = function(e, t) {
     var n = false,
       s = t ? Object.keys(t) : [],
       l = function(e) {
@@ -44,5 +44,5 @@ var s = function() {
       n = f.getValue(), this._cacheAdd(e, n, t)
     }
     return (0, a.kJ)(n) ? (0, i.L1)(n) : n instanceof Date ? (0, i.d9)(n) : n
-  }, module
+  }, e
 }()

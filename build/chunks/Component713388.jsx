@@ -87,33 +87,33 @@ function h(e) {
 let x = Chunk473749.createContext(null);
 
 function b() {
-  let [e, t] = Chunk473749.useState(false), {
+  let [e, t] = r.useState(false), {
     legacySettingDirectory: n
-  } = (0, Chunk617810.q)(), {
+  } = (0, d.q)(), {
     node: s
-  } = (0, Chunk131051.ZP)(Chunk920952.E, ""), c = (0, Chunk131051.ZA)();
-  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+  } = (0, l.ZP)(o.E, ""), c = (0, l.ZA)();
+  return (0, a.jsxs)(i.C3N, {
     label: "Settings Tree",
-    children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
+    children: [(0, a.jsx)(i.rsf, {
       label: "Bypass Predicates",
       description: "Forces all migrated settings to be visible.",
-      checked: Chunk206412,
-      onChange: Chunk131051.go
-    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      checked: module,
+      checked: c,
+      onChange: l.go
+    }), (0, a.jsx)(i.rsf, {
+      checked: e,
       onChange: e => t(e),
       label: "Show Legacy Settings Tree"
-    }), (0, Chunk54381.jsx)(x.Provider, {
-      value: require,
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk478152.tree,
-        children: [module && (0, Chunk54381.jsx)(f, {
+    }), (0, a.jsx)(x.Provider, {
+      value: n,
+      children: (0, a.jsxs)("div", {
+        className: u.tree,
+        children: [e && (0, a.jsx)(f, {
           setting: "root",
           depth: 1
-        }, "root"), !module && (0, Chunk54381.jsx)(h, {
-          setting: Chunk28682,
+        }, "root"), !e && (0, a.jsx)(h, {
+          setting: s,
           depth: 1
-        }, Chunk28682.key)]
+        }, s.key)]
       })
     })]
   })

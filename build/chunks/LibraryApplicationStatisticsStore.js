@@ -24,9 +24,9 @@ let u = {},
   p = 36e5;
 
 function _() {
-  Chunk627050.d.getCurrentConfig({
+  s.d.getCurrentConfig({
     location: "LibraryApplicationStatisticsStore.handleConnectionOpen"
-  }).enabled && (0, Chunk827837.N)()
+  }).enabled && (0, o.N)()
 }
 
 function m() {

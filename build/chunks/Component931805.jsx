@@ -32,14 +32,14 @@ function u(e) {
 }
 
 function g() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk984380.rowContainer,
-    children: [(0, Chunk54381.jsx)("div", {
-      children: Chunk388032.intl.string(Chunk388032.t.AKcFUj)
-    }), (0, Chunk54381.jsx)(Chunk481060.rgF, {
+  return (0, r.jsxs)("div", {
+    className: d.rowContainer,
+    children: [(0, r.jsx)("div", {
+      children: c.intl.string(c.t.AKcFUj)
+    }), (0, r.jsx)(i.rgF, {
       size: "xs",
       color: "currentColor",
-      className: Chunk984380.linkIcon
+      className: d.linkIcon
     })]
   })
 }

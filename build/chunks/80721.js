@@ -20,27 +20,27 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js");
 let u = 10;
 async function d() {
-  Chunk570140.Z.dispatch({
+  o.Z.dispatch({
     type: "PREMIUM_GROUP_MEMBERSHIP_FETCH_START"
   });
   try {
-    let e = (await Chunk544891.tn.get({
-      url: Chunk981631.ANM.PREMIUM_GROUP_MEMBERSHIP,
+    let e = (await a.tn.get({
+      url: c.ANM.PREMIUM_GROUP_MEMBERSHIP,
       rejectWithError: true
     })).body;
-    return null != module ? Chunk570140.Z.dispatch({
+    return null != e ? o.Z.dispatch({
       type: "PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS",
       membership: {
-        subscriptionId: module.subscription_id,
-        memberType: module.member_type,
-        subscriptionStatus: module.subscription_status,
-        currentPeriodEnd: new Date(module.current_period_end)
+        subscriptionId: e.subscription_id,
+        memberType: e.member_type,
+        subscriptionStatus: e.subscription_status,
+        currentPeriodEnd: new Date(e.current_period_end)
       }
-    }) : Chunk570140.Z.dispatch({
+    }) : o.Z.dispatch({
       type: "PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND"
-    }), module
+    }), e
   } catch (e) {
-    return Chunk570140.Z.dispatch({
+    return o.Z.dispatch({
       type: "PREMIUM_GROUP_MEMBERSHIP_FETCH_FAILURE"
     }), null
   }

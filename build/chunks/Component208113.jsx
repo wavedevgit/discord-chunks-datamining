@@ -44,19 +44,19 @@ function m() {
     legacyAudioSubsystemSupported: t,
     experimentalAudioSubsystemSupported: n,
     automaticAudioSubsystemSupported: m
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-    audioSubsystem: Chunk131951.Z.getAudioSubsystem(),
-    legacyAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.LEGACY_AUDIO_SUBSYSTEM),
-    experimentalAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
-    automaticAudioSubsystemSupported: Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
+  } = (0, i.cj)([l.Z], () => ({
+    audioSubsystem: l.Z.getAudioSubsystem(),
+    legacyAudioSubsystemSupported: l.Z.supports(d.AN.LEGACY_AUDIO_SUBSYSTEM),
+    experimentalAudioSubsystemSupported: l.Z.supports(d.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
+    automaticAudioSubsystemSupported: l.Z.supports(d.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
   }));
-  return (0, Chunk54381.jsx)(Chunk921801.F, {
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
-    children: (0, Chunk54381.jsx)(Chunk199849.y6, {
-      label: Chunk388032.intl.string(Chunk388032.t.wVBHr0),
-      className: Chunk478411.marginBottom20,
-      value: module,
-      options: _(exports, require, m),
+  return (0, r.jsx)(s.F, {
+    setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
+    children: (0, r.jsx)(a.y6, {
+      label: f.intl.string(f.t.wVBHr0),
+      className: p.marginBottom20,
+      value: e,
+      options: _(t, n, m),
       onChange: e => {
         let t = () => o.Z.setAudioSubsystem(e);
         (0, c.Z)(f.intl.string(f.t.uY7AcQ), f.intl.string(f.t.gBqik6), t)

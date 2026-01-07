@@ -84,42 +84,42 @@ function s(e, t, n) {
 
 function c() {
   var e, t;
-  let n = (0, Chunk442837.e7)([Chunk144725.Z], () => Chunk144725.Z.getUnreadDisplayItems()),
-    c = (0, Chunk442837.e7)([Chunk144725.Z], () => Chunk144725.Z.getReadDisplayItems()),
-    u = (0, Chunk442837.e7)([Chunk144725.Z], () => Chunk144725.Z.getNextIndexToHydrate()),
-    d = (0, Chunk442837.cj)([Chunk144725.Z], () => Chunk144725.Z.getHydratedItems()),
-    p = (0, Chunk442837.e7)([Chunk144725.Z], () => Chunk144725.Z.getMissingItems());
-  Chunk473749.useEffect(() => {
+  let n = (0, i.e7)([a.Z], () => a.Z.getUnreadDisplayItems()),
+    c = (0, i.e7)([a.Z], () => a.Z.getReadDisplayItems()),
+    u = (0, i.e7)([a.Z], () => a.Z.getNextIndexToHydrate()),
+    d = (0, i.cj)([a.Z], () => a.Z.getHydratedItems()),
+    p = (0, i.e7)([a.Z], () => a.Z.getMissingItems());
+  r.useEffect(() => {
     let e = Date.now() + c.length;
-    Chunk948053.Z.ackGravityItems(c.map(t => ({
+    l.Z.ackGravityItems(c.map(t => ({
       id: t.id,
       timestamp: e--
     }), true))
   }, [c]);
   let f = [],
     g = [],
-    h = 0;
-  for (let t = 0; exports < require.length && !(h >= u); exports++) {
-    let r = require[exports];
-    if (h++, p[Chunk473749.id]) continue;
-    let i = d[Chunk473749.id];
-    if (null == Chunk442837 && Chunk473749.type === Chunk797394.Ni.MESSAGE && (null == (e = Chunk473749.data.message_context) ? true : module.reference_message_id) != null && (i = d[Chunk473749.data.message_id]), null != Chunk442837) {
-      let e = s(Chunk473749, Chunk442837, true);
-      null != module && f.push(module)
+    m = 0;
+  for (let t = 0; t < n.length && !(m >= u); t++) {
+    let r = n[t];
+    if (m++, p[r.id]) continue;
+    let i = d[r.id];
+    if (null == i && r.type === o.Ni.MESSAGE && (null == (e = r.data.message_context) ? true : e.reference_message_id) != null && (i = d[r.data.message_id]), null != i) {
+      let e = s(r, i, true);
+      null != e && f.push(e)
     }
   }
-  for (let e = 0; module < c.length && !(h >= u); module++) {
-    let n = c[module];
-    if (h++, p[require.id]) continue;
-    let r = d[require.id];
-    if (null == Chunk473749 && require.type === Chunk797394.Ni.MESSAGE && (null == (t = require.data.message_context) ? true : exports.reference_message_id) != null && (r = d[require.data.message_id]), null != Chunk473749) {
-      let e = s(require, Chunk473749, false);
-      null != module && g.push(module)
+  for (let e = 0; e < c.length && !(m >= u); e++) {
+    let n = c[e];
+    if (m++, p[n.id]) continue;
+    let r = d[n.id];
+    if (null == r && n.type === o.Ni.MESSAGE && (null == (t = n.data.message_context) ? true : t.reference_message_id) != null && (r = d[n.data.message_id]), null != r) {
+      let e = s(n, r, false);
+      null != e && g.push(e)
     }
   }
   return {
     unreadItems: f,
     readItems: g,
-    allUnreadItemsHydrated: u >= require.length
+    allUnreadItemsHydrated: u >= n.length
   }
 }

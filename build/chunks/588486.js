@@ -223,7 +223,7 @@ class E extends Chunk495852.C {
       no: 3,
       name: "created_at",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => c.E
     }, {
       no: 4,
       name: "creator_id",
@@ -238,7 +238,7 @@ class E extends Chunk495852.C {
       no: 6,
       name: "edited_at",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => c.E
     }, {
       no: 7,
       name: "editor_id",
@@ -258,12 +258,12 @@ class E extends Chunk495852.C {
       no: 10,
       name: "hypothesis",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => l.Gm
     }, {
       no: 11,
       name: "tech_spec_link",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => l.Gm
     }, {
       no: 12,
       name: "revision",
@@ -290,7 +290,7 @@ class E extends Chunk495852.C {
       name: "rules",
       kind: "message",
       repeat: 1,
-      T: () => Chunk552018.$9
+      T: () => s.$9
     }, {
       no: 18,
       name: "phase",
@@ -368,7 +368,7 @@ class E extends Chunk495852.C {
       no: 31,
       name: "expected_end_date",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => c.E
     }, {
       no: 32,
       name: "is_automated_change",
@@ -378,7 +378,7 @@ class E extends Chunk495852.C {
       no: 33,
       name: "archive_at",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => c.E
     }])
   }
 }
@@ -468,7 +468,7 @@ class b extends Chunk495852.C {
       no: 6,
       name: "configuration",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => l.Gm
     }])
   }
 }

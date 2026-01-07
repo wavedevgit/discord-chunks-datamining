@@ -9,5 +9,5 @@ let i = 32768,
   a = 1734653;
 
 function o() {
-  return (0, Chunk638214.P)() ? a | i : a
+  return (0, r.P)() ? a | i : a
 }

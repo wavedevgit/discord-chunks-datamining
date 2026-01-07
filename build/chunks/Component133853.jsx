@@ -35,9 +35,9 @@ class p extends(a = Chunk473749.Component) {
       reducedMotion: t
     } = this.context;
     return {
-      opacity: module,
-      transform: exports.enabled ? true : [{
-        translateY: module.interpolate({
+      opacity: e,
+      transform: t.enabled ? true : [{
+        translateY: e.interpolate({
           inputRange: [0, 1],
           outputRange: ["-100px", "0px"]
         })
@@ -47,11 +47,11 @@ class p extends(a = Chunk473749.Component) {
     }
   }
   render() {
-    return (0, Chunk54381.jsx)(Chunk748780.Z.a, {
-      href: Chunk981631.Z5c.INDEX,
+    return (0, r.jsx)(c.Z.a, {
+      href: d.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",
-      className: s()(Chunk827954.logo, this.props.className),
+      className: s()(u.logo, this.props.className),
       style: this.getAnimatedStyle()
     })
   }

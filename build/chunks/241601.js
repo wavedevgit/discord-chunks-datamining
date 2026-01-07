@@ -96,5 +96,5 @@ function _(e) {
 
 function m() {
   let e = c(e => e.localeData);
-  return null != module ? module : Chunk150924.default
+  return null != e ? e : a.default
 }

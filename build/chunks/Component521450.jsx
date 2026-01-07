@@ -20,60 +20,60 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk223336 = require("./223336.js");
 let E = () => {
-  let e = Chunk695346.Ex.useSetting(),
+  let e = d.Ex.useSetting(),
     {
       categories: t,
       initialized: n
-    } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
+    } = (0, s.cj)([u.Z], () => u.Z.getEmailSettings());
 
   function E(e) {
     (0, c.pR)(_.$Z.FAMILY_CENTER_DIGEST, e)
   }
-  return Chunk473749.useEffect(() => {
-    null == require && (0, Chunk960412.Y7)()
-  }, [require]), (0, Chunk54381.jsx)("div", {
-    className: Chunk223336.container,
-    children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk517319.default.USIXU7),
-      children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-        checked: module,
-        description: Chunk388032.intl.string(Chunk517319.default["5MdB3j"]),
-        onChange: Chunk695346.Ex.updateSetting,
-        label: Chunk388032.intl.string(Chunk517319.default.zkEceS)
-      }), module ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
-        className: Chunk223336.enableCard,
-        type: Chunk481060.Zbd.Types.CUSTOM,
+  return i.useEffect(() => {
+    null == n && (0, c.Y7)()
+  }, [n]), (0, r.jsx)("div", {
+    className: g.container,
+    children: (0, r.jsxs)(l.C3N, {
+      label: h.intl.string(m.default.USIXU7),
+      children: [(0, r.jsx)(l.rsf, {
+        checked: e,
+        description: h.intl.string(m.default["5MdB3j"]),
+        onChange: d.Ex.updateSetting,
+        label: h.intl.string(m.default.zkEceS)
+      }), e ? (0, r.jsx)(l.Zbd, {
+        className: g.enableCard,
+        type: l.Zbd.Types.CUSTOM,
         outline: true,
-        children: (0, Chunk54381.jsxs)(Chunk435935.k, {
-          justify: Chunk435935.k.Justify.END,
-          children: [(0, Chunk54381.jsx)(Chunk435935.k.Child, {
-            children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: (0, r.jsxs)(o.k, {
+          justify: o.k.Justify.END,
+          children: [(0, r.jsx)(o.k.Child, {
+            children: (0, r.jsx)(l.Text, {
               variant: "text-sm/semibold",
               color: "text-default",
-              children: Chunk388032.intl.string(Chunk517319.default.xAVm7K)
+              children: h.intl.string(m.default.xAVm7K)
             })
-          }), (0, Chunk54381.jsx)(Chunk481060.P3F, {
-            children: (0, Chunk54381.jsx)(Chunk319498.rU, {
-              onClick: Chunk342386.default,
+          }), (0, r.jsx)(l.P3F, {
+            children: (0, r.jsx)(a.rU, {
+              onClick: f.default,
               to: {
-                pathname: Chunk981631.Z5c.FAMILY_CENTER,
+                pathname: p.Z5c.FAMILY_CENTER,
                 state: {
                   scrollRestoration: false
                 }
               },
-              children: Chunk388032.intl.string(Chunk517319.default.cUIXFY)
+              children: h.intl.string(m.default.cUIXFY)
             })
-          }), (0, Chunk54381.jsx)(Chunk481060.G2e, {
-            icon: Chunk481060.ZSh,
-            className: Chunk223336.arrow,
+          }), (0, r.jsx)(l.G2e, {
+            icon: l.ZSh,
+            className: g.arrow,
             disableColor: true
           })]
         })
-      }) : null, (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        checked: !!exports[Chunk930441.$Z.FAMILY_CENTER_DIGEST],
-        description: Chunk388032.intl.string(Chunk517319.default.y34S46),
+      }) : null, (0, r.jsx)(l.rsf, {
+        checked: !!t[_.$Z.FAMILY_CENTER_DIGEST],
+        description: h.intl.string(m.default.y34S46),
         onChange: E,
-        label: Chunk388032.intl.string(Chunk517319.default.irvJKR)
+        label: h.intl.string(m.default.irvJKR)
       })]
     })
   })

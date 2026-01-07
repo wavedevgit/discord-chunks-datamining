@@ -8,7 +8,7 @@ var Chunk940151 = require("./940151.js"),
   s = function() {
     try {
       var e = a && a.require && a.require("util").types;
-      if (module) return module;
+      if (e) return e;
       return o && o.binding && o.binding("util")
     } catch (e) {}
   }();

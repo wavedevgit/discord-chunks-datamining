@@ -12,7 +12,7 @@ if ("undefined" != typeof HTMLTemplateElement) {
     configurable: true,
     enumerable: true,
     get: function() {
-      return this.dataset.reactAriaHidden ? this.content.firstChild : module.call(this)
+      return this.dataset.reactAriaHidden ? this.content.firstChild : e.call(this)
     }
   })
 }

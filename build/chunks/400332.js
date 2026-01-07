@@ -10,5 +10,5 @@ var Chunk819640 = require("./819640.js"),
 let o = {
   binds: ["mod+s"],
   comboKeysBindGlobal: true,
-  action: () => !(Chunk819640.Z.getLayers().length > 0) && (Chunk585483.S.dispatchToLastSubscribed(Chunk981631.CkL.TOGGLE_STICKER_PICKER), false)
+  action: () => !(r.Z.getLayers().length > 0) && (i.S.dispatchToLastSubscribed(a.CkL.TOGGLE_STICKER_PICKER), false)
 }

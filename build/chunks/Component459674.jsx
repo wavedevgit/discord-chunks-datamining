@@ -16,13 +16,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  let e = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.disableVoiceChannelChangeAlert);
-  return (0, Chunk54381.jsx)(Chunk921801.F, {
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
-    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.e7LIiY),
-      description: Chunk388032.intl.string(Chunk388032.t.YCCMkJ),
-      checked: !module,
+  let e = (0, i.e7)([l.ZP], () => l.ZP.disableVoiceChannelChangeAlert);
+  return (0, r.jsx)(s.F, {
+    setting: u.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
+    children: (0, r.jsx)(a.rsf, {
+      label: d.intl.string(d.t.e7LIiY),
+      description: d.intl.string(d.t.YCCMkJ),
+      checked: !e,
       onChange: t => {
         (0, c.Z)("switch_channel_warning_enabled", t, !e), o.ZP.updatedUnsyncedSettings({
           disableVoiceChannelChangeAlert: !t

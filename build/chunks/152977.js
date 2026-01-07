@@ -10,16 +10,16 @@ var Chunk857595 = require("./857595.js"),
   Chunk501348 = require("./501348.jsx"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.J9)(Chunk313789.n.APPEARANCE_MESSAGE_DISPLAY_MODE, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.nKRoPv),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.QntEEG),
+  useTitle: () => a.intl.string(a.t.nKRoPv),
+  useSubtitle: () => a.intl.string(a.t.QntEEG),
   useOptions: () => [{
-    name: Chunk388032.intl.string(Chunk388032.t.Jqj4cZ),
-    value: Chunk501348.pe.COZY
+    name: a.intl.string(a.t.Jqj4cZ),
+    value: r.pe.COZY
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t["1JNcPS"]),
-    value: Chunk501348.pe.COMPACT
+    name: a.intl.string(a.t["1JNcPS"]),
+    value: r.pe.COMPACT
   }],
-  useValue: () => Chunk695346.jU.useSetting() ? Chunk501348.pe.COMPACT : Chunk501348.pe.COZY,
+  useValue: () => s.jU.useSetting() ? r.pe.COMPACT : r.pe.COZY,
   setValue: t => {
     s.jU.updateSetting(t === r.pe.COMPACT), (0, i.ZZ)()
   }

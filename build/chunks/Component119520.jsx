@@ -26,18 +26,18 @@ class d extends Chunk473749.PureComponent {
         name: e
       }
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk759731.matureListing,
-      children: (0, Chunk54381.jsx)(Chunk986035.Z, {
-        modalType: Chunk480916.it.NSFW_APP_LISTING,
+    return (0, r.jsx)("div", {
+      className: c.matureListing,
+      children: (0, r.jsx)(o.Z, {
+        modalType: a.it.NSFW_APP_LISTING,
         onAgree: this.handleAgree,
         onDisagree: this.handleDisagree,
-        title: Chunk388032.intl.formatToPlainString(Chunk388032.t.n5PGEY, {
-          name: module
+        title: s.intl.formatToPlainString(s.t.n5PGEY, {
+          name: e
         }),
-        description: Chunk388032.intl.string(Chunk388032.t["bJx/aL"]),
-        agreement: Chunk388032.intl.string(Chunk388032.t.odZq8d),
-        disagreement: Chunk388032.intl.string(Chunk388032.t.hieTsG)
+        description: s.intl.string(s.t["bJx/aL"]),
+        agreement: s.intl.string(s.t.odZq8d),
+        disagreement: s.intl.string(s.t.hieTsG)
       })
     })
   }

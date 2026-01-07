@@ -8,5 +8,5 @@ var Chunk63063 = require("./63063.js");
 let i = {
   binds: ["mod+shift+h", "f1"],
   comboKeysBindGlobal: true,
-  action: () => (window.open(Chunk63063.w), false)
+  action: () => (window.open(r.w), false)
 }

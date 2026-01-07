@@ -118,7 +118,7 @@ if (M && Chunk961050(N) !== R && Chunk769827(N, R), Chunk507604 && !Chunk77025(R
   for (r in k = true, Chunk573078(R, x, {
       configurable: true,
       get: function() {
-        return Chunk434431(this) ? this[L] : true
+        return u(this) ? this[L] : true
       }
     }), U) Chunk127849[r] && Chunk436207(Chunk127849[r], L, r);
 module.exports = {

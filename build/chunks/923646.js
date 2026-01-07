@@ -5,5 +5,5 @@ var Chunk621523 = require("./621523.js"),
   i = require("./127849.js").RegExp;
 module.exports = Chunk621523(function() {
   var e = i(".", "s");
-  return !(module.dotAll && module.test("\n") && "s" === module.flags)
+  return !(e.dotAll && e.test("\n") && "s" === e.flags)
 })

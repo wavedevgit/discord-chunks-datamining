@@ -51,7 +51,7 @@ function m() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [n, m] = Chunk290348.R7(module);
+  } = (0, a.N)(), [n, m] = s.R7(e);
 
   function b(e, t) {
     let {
@@ -69,10 +69,10 @@ function m() {
     };
     null != t ? s[t] = o : s.push(o), m(s)
   }
-  let p = (0, Chunk723047.mY)();
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk861345.p, {
-      benefits: require,
+  let p = (0, l.mY)();
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(c.p, {
+      benefits: n,
       onEdit: function(e) {
         (0, i.h7j)(i => (0, r.jsx)(o.DI, f(g({}, i), {
           guildId: t,
@@ -89,18 +89,18 @@ function m() {
           [i] = r.splice(e, 1);
         r.splice(t, 0, i), m(r)
       },
-      guildId: exports
-    }), require.length > 0 ? (0, Chunk54381.jsx)(Chunk481060.LZC, {
+      guildId: t
+    }), n.length > 0 ? (0, r.jsx)(i.LZC, {
       size: 8
-    }) : null, (0, Chunk54381.jsx)(Chunk861345.s, {
+    }) : null, (0, r.jsx)(c.s, {
       onClick: function() {
-        (0, Chunk481060.h7j)(e => (0, r.jsx)(o.DI, f(g({}, e), {
+        (0, i.h7j)(e => (0, r.jsx)(o.DI, f(g({}, e), {
           guildId: t,
           onSave: e => b(e)
         })))
       },
       disabled: p,
-      children: Chunk388032.intl.string(Chunk388032.t["6dwqo0"])
+      children: u.intl.string(u.t["6dwqo0"])
     })]
   })
 }

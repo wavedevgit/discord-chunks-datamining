@@ -4,7 +4,7 @@
   var n = this,
     r = n.humanize,
     i = {};
-  module.exports && (t = module.exports = i), exports.humanize = i, i.noConflict = function() {
+  e.exports && (t = e.exports = i), t.humanize = i, i.noConflict = function() {
     return n.humanize = r, this
   }, i.pad = function(e, t, n, r) {
     if (e += "", n ? n.length > 1 && (n = n.charAt(0)) : n = " ", "right" == (r = true === r ? "left" : "right"))

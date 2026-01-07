@@ -10,18 +10,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.J9)(Chunk313789.n.ROLE_STYLE, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.uSOPWm),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["86hjzQ"]),
+  useTitle: () => a.intl.string(a.t.uSOPWm),
+  useSubtitle: () => a.intl.string(a.t["86hjzQ"]),
   useOptions: () => [{
-    name: Chunk388032.intl.string(Chunk388032.t.YEOEi6),
+    name: a.intl.string(a.t.YEOEi6),
     value: "username"
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.mQaro3),
+    name: a.intl.string(a.t.mQaro3),
     value: "dot"
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.Ji2EVJ),
+    name: a.intl.string(a.t.Ji2EVJ),
     value: "hidden"
   }],
-  useValue: () => (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
+  useValue: () => (0, i.e7)([s.Z], () => s.Z.roleStyle),
   setValue: t => (0, l.u1)(t)
 })

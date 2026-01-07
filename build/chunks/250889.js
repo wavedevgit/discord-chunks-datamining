@@ -10,7 +10,7 @@ var Chunk726542 = require("./726542.js"),
 let a = "xbox:";
 class o extends Chunk973616.ZP {
   getIconURL() {
-    return Chunk726542.Z.get("xbox").icon.lightPNG
+    return r.Z.get("xbox").icon.lightPNG
   }
   constructor(e) {
     super(e), this.id = "".concat(a).concat(e.name), this.name = e.name

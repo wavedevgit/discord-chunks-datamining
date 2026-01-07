@@ -49,7 +49,7 @@ class _ extends(r = Chunk473749.PureComponent) {
       initialX: e,
       initialY: t
     } = this.props;
-    this.setPosition(module, exports)
+    this.setPosition(e, t)
   }
   componentWillUnmount() {
     this._removeListeners()
@@ -78,7 +78,7 @@ class _ extends(r = Chunk473749.PureComponent) {
   }
   grabDimensions() {
     let e = this._ref.current.refs.node;
-    (0, Chunk374470.kK)(module) && (this._height = module.clientHeight, this._width = module.clientWidth)
+    (0, l.kK)(e) && (this._height = e.clientHeight, this._width = e.clientWidth)
   }
   translate(e, t) {
     let {
@@ -97,26 +97,26 @@ class _ extends(r = Chunk473749.PureComponent) {
     } = this.state, {
       className: n,
       children: r
-    } = this.props, a = [0, 1], o = ["0px", "1px"], l = Chunk748780.Z.accelerate(d({
-      pointerEvents: module ? "none" : "auto",
-      cursor: module ? "grabbing" : "grab",
+    } = this.props, a = [0, 1], o = ["0px", "1px"], l = s.Z.accelerate(d({
+      pointerEvents: e ? "none" : "auto",
+      cursor: e ? "grabbing" : "grab",
       transform: [{
-        translateX: exports.x.interpolate({
-          inputRange: Chunk473749,
-          outputRange: Chunk24156
+        translateX: t.x.interpolate({
+          inputRange: a,
+          outputRange: o
         })
       }, {
-        translateY: exports.y.interpolate({
-          inputRange: Chunk473749,
-          outputRange: Chunk24156
+        translateY: t.y.interpolate({
+          inputRange: a,
+          outputRange: o
         })
       }]
     }, this.props.style));
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+    return (0, i.jsx)(s.Z.div, {
       ref: this._ref,
-      className: require,
+      className: n,
       onMouseDown: this.handleMouseDown,
-      style: Chunk374470,
+      style: l,
       onDragStart: this.handleHTMLDragStart,
       children: r
     })

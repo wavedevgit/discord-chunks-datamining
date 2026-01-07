@@ -12,19 +12,19 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 
 function a() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "VIBING_WUMPUS_PLAY_MUSIC"
   })
 }
 
 function s() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "VIBING_WUMPUS_STOP_MUSIC"
   })
 }
 
 function o() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "VIBING_WUMPUS_PAUSE_MUSIC"
   })
 }

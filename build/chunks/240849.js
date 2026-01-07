@@ -16,9 +16,9 @@ function c(e, t) {
 }
 class u {
   initialize() {
-    (0, Chunk358085.isDesktop)() && (Chunk998502.ZP.on("NAVIGATE_BACK", (e, t) => {
+    (0, a.isDesktop)() && (o.ZP.on("NAVIGATE_BACK", (e, t) => {
       c(t, l.qX.Back) && (0, r.Hm)("native")
-    }), Chunk998502.ZP.on("NAVIGATE_FORWARD", (e, t) => {
+    }), o.ZP.on("NAVIGATE_FORWARD", (e, t) => {
       c(t, l.qX.Forward) && (0, r.TL)("native")
     }))
   }

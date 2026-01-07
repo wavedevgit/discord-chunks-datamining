@@ -4,5 +4,5 @@
 var Chunk85712 = require("./85712.js"),
   Chunk872715 = require("./872715.js");
 module.exports = Chunk85712 ? ({}).toString : function() {
-  return "[object " + Chunk872715(this) + "]"
+  return "[object " + o(this) + "]"
 }

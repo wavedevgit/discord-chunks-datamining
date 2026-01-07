@@ -20,57 +20,57 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g() {
-  let e = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.getIsSubmitDisabled()),
-    t = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.getErrors()),
-    [n, g] = Chunk473749.useState(false),
-    E = Chunk473749.useMemo(() => (null == exports ? true : exports.message) != null ? null == exports ? true : exports.message : Object.keys(null != exports ? exports : {}).length > 0 ? Chunk388032.intl.string(Chunk388032.t["84MExs"]) : null, [exports]),
-    b = Chunk473749.useCallback(async () => {
+  let e = (0, a.e7)([f.Z], () => f.Z.getIsSubmitDisabled()),
+    t = (0, a.e7)([f.Z], () => f.Z.getErrors()),
+    [n, g] = i.useState(false),
+    E = i.useMemo(() => (null == t ? true : t.message) != null ? null == t ? true : t.message : Object.keys(null != t ? t : {}).length > 0 ? h.intl.string(h.t["84MExs"]) : null, [t]),
+    b = i.useCallback(async () => {
       var e, t, n, r, i;
       g(true);
-      let a = Chunk25990.Z.getAllPending(),
-        o = (0, Chunk164946.ED)(Chunk442837),
-        h = (0, Chunk164946.g9)(Chunk442837),
-        E = (0, Chunk164946.jE)(Chunk442837),
+      let a = f.Z.getAllPending(),
+        o = (0, c.ED)(a),
+        h = (0, c.g9)(a),
+        E = (0, c.jE)(a),
         b = true;
-      if (Object.keys(Chunk796027).length > 0) {
-        let r = await (0, Chunk809206.Mn)(Chunk796027);
-        if (b = b && null != (t = null == Chunk54381 ? true : Chunk54381.ok) && exports, null == Chunk54381 ? true : Chunk54381.ok) {
-          let e = Chunk54381.body;
-          true !== Chunk442837.pendingAvatar && (0, Chunk330055.Z)({
-            avatarHash: module.avatar,
-            avatarId: Chunk796027.avatarId,
-            avatarAssetOrigin: null == (n = Chunk442837.pendingAvatar) ? true : require.assetOrigin
-          }), (0, Chunk809206.si)()
-        } else(null == Chunk54381 || null == (e = Chunk54381.body) ? true : module.username) != null && (0, Chunk155433.P)()
+      if (Object.keys(o).length > 0) {
+        let r = await (0, s.Mn)(o);
+        if (b = b && null != (t = null == r ? true : r.ok) && t, null == r ? true : r.ok) {
+          let e = r.body;
+          true !== a.pendingAvatar && (0, d.Z)({
+            avatarHash: e.avatar,
+            avatarId: o.avatarId,
+            avatarAssetOrigin: null == (n = a.pendingAvatar) ? true : n.assetOrigin
+          }), (0, s.si)()
+        } else(null == r || null == (e = r.body) ? true : e.username) != null && (0, m.P)()
       }
-      if (Object.keys(Chunk388032).length > 0) {
-        let e = await (0, Chunk350327.Z)(Chunk388032);
-        b = b && null != (r = null == module ? true : module.ok) && Chunk54381, (null == module ? true : module.ok) ? (0, Chunk350327.pG)() : (0, Chunk647699.r)()
+      if (Object.keys(h).length > 0) {
+        let e = await (0, u.Z)(h);
+        b = b && null != (r = null == e ? true : e.ok) && r, (null == e ? true : e.ok) ? (0, u.pG)() : (0, _.r)()
       }
-      if (true !== Chunk442837.pendingLegacyUsernameDisabled) try {
-        await Chunk695346.R_.updateSetting(Chunk442837.pendingLegacyUsernameDisabled), (0, Chunk809206.iR)()
+      if (true !== a.pendingLegacyUsernameDisabled) try {
+        await p.R_.updateSetting(a.pendingLegacyUsernameDisabled), (0, s.iR)()
       } catch (e) {
-        (0, Chunk647699.r)(), b = false
+        (0, _.r)(), b = false
       }
       if (Object.keys(E).length > 0) {
         let {
           primaryGuildId: e
         } = E;
-        if (true !== module) {
-          let t = await (0, Chunk321114.c)(module, null !== module);
-          b = b && null != (i = null == exports ? true : exports.ok) && Chunk473749, (null == exports ? true : exports.ok) ? (0, Chunk809206.OU)() : (0, Chunk647699.r)()
+        if (true !== e) {
+          let t = await (0, l.c)(e, null !== e);
+          b = b && null != (i = null == t ? true : t.ok) && i, (null == t ? true : t.ok) ? (0, s.OU)() : (0, _.r)()
         }
       }
-      b && (0, Chunk809206.b9)(), g(false)
+      b && (0, s.b9)(), g(false)
     }, []),
-    y = Chunk473749.useCallback(() => {
-      (0, Chunk809206.W3)()
+    y = i.useCallback(() => {
+      (0, s.W3)()
     }, []);
-  return (0, Chunk54381.jsx)(Chunk796027.Z, {
-    submitting: require,
+  return (0, r.jsx)(o.Z, {
+    submitting: n,
     onSave: b,
     onReset: y,
-    disabled: module,
+    disabled: e,
     errorMessage: null != E ? E : true
   })
 }

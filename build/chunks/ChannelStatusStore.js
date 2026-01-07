@@ -41,7 +41,7 @@ function _(e) {
 }
 class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk38618.Z)
+    this.waitFor(s.Z)
   }
   getChannelStatus(e) {
     var t;

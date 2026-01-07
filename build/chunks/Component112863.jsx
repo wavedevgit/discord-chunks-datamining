@@ -16,28 +16,28 @@ var Chunk481060 = require("./481060.js"),
 
 function d() {
   let e = () => {
-    (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY), (0, Chunk342386.default)()
+    (0, a.uL)(s.Z5c.GUILD_DISCOVERY), (0, o.default)()
   };
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk246854.wrapper,
-    children: [(0, Chunk54381.jsx)("img", {
-      className: Chunk246854.icon,
+  return (0, r.jsxs)("div", {
+    className: c.wrapper,
+    children: [(0, r.jsx)("img", {
+      className: c.icon,
       alt: "",
-      src: Chunk286359
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk246854.info,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      src: u
+    }), (0, r.jsxs)("div", {
+      className: c.info,
+      children: [(0, r.jsx)(i.Text, {
         variant: "text-lg/bold",
-        children: Chunk388032.intl.string(Chunk388032.t.ZHNSYf)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: l.intl.string(l.t.ZHNSYf)
+      }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.kCj5ps)
+        children: l.intl.string(l.t.kCj5ps)
       })]
-    }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+    }), (0, r.jsx)(i.Button, {
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t.JFlifp),
-      onClick: module
+      text: l.intl.string(l.t.JFlifp),
+      onClick: e
     })]
   })
 }

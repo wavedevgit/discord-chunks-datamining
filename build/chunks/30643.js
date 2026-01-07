@@ -55,8 +55,8 @@ let j = N({}, Chunk576027.A, Chunk443952.Z, Chunk266572.Z, Chunk121826.Z, Chunk7
     stores: [Chunk237997.default],
     transports: [Chunk188861.Z],
     registerTransportsForEmbeddedPlatform: function() {
-      Chunk998502.ZP.ensureModule("discord_rpc").then(() => {
-        for (let e of [require("./178318.js").Z, require("./967351.js").Z]) Chunk812967.Z.registerTransport(module)
+      i.ZP.ensureModule("discord_rpc").then(() => {
+        for (let e of [n(178318).Z, n(967351).Z]) o.Z.registerTransport(e)
       })
     }
   }

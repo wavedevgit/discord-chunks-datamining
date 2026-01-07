@@ -37,15 +37,15 @@ function d(e) {
 }
 
 function u() {
-  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk663618.panel,
-    children: (0, Chunk54381.jsx)(Chunk481060.C3N, {
+  return (0, a.jsx)(l.zJl, {
+    className: c.panel,
+    children: (0, a.jsx)(l.C3N, {
       label: "Hotspots",
       description: "All the 'hotspots' in app, and their current status. Use the select menu to override them on or off.",
-      className: Chunk2968.hotspotsSection,
-      children: (0, Chunk54381.jsx)(Chunk481060.Kqy, {
+      className: o.hotspotsSection,
+      children: (0, a.jsx)(l.Kqy, {
         gap: 20,
-        children: Object.keys(Chunk536442.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(d, {
+        children: Object.keys(s.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(d, {
           hotspotLocation: e
         }, e))
       })

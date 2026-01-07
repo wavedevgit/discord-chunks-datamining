@@ -36,7 +36,7 @@ function g(e) {
 }
 class f extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk999382.Z)
+    this.waitFor(s.Z)
   }
   getCurrentPage() {
     return d
@@ -49,8 +49,8 @@ class f extends(i = Chunk442837.ZP.Store) {
 }) : f[r] = "GuildSettingsSafetyStore";
 let m = new f(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: function() {
-    if (Chunk999382.Z.getGuildId() === u) returnfalse;
-    u = Chunk999382.Z.getGuildId()
+    if (s.Z.getGuildId() === u) returnfalse;
+    u = s.Z.getGuildId()
   },
   GUILD_SETTINGS_SET_SECTION: g,
   GUILD_SETTINGS_SAFETY_SET_SUBSECTION: g,

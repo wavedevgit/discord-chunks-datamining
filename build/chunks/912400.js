@@ -13,29 +13,29 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.k4)(Chunk313789.n.AUTHORIZED_APPS_CATEGORY, {
-    buildLayout: () => [Chunk134287.Z],
-    initialize: () => (Chunk384275.Z.fetch(), () => {
-      Chunk795594.JJ.setState({
+    buildLayout: () => [o.Z],
+    initialize: () => (l.Z.fetch(), () => {
+      a.JJ.setState({
         searchQuery: ""
       })
     })
   }),
   E = (0, Chunk509613.wf)(Chunk313789.n.AUTHORIZED_APPS_PANEL, {
-    usePredicate: () => !(0, Chunk526665.gN)("LegacyAuthorizedAppsPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["f6kk+r"]),
+    usePredicate: () => !(0, r.gN)("LegacyAuthorizedAppsPanel"),
+    useTitle: () => S.intl.string(S.t["f6kk+r"]),
     hideInStreamerMode: true,
     StronglyDiscouragedCustomComponent: Chunk795594.ZP,
     buildLayout: () => []
   }),
   d = (0, Chunk509613.wf)(Chunk313789.n.AUTHORIZED_APPS_PANEL, {
-    usePredicate: () => (0, Chunk526665.gN)("AuthorizedAppsPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["f6kk+r"]),
+    usePredicate: () => (0, r.gN)("AuthorizedAppsPanel"),
+    useTitle: () => S.intl.string(S.t["f6kk+r"]),
     hideInStreamerMode: true,
     buildLayout: () => [c]
   }),
   _ = (0, Chunk509613.m7)(Chunk313789.n.AUTHORIZED_APPS_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["f6kk+r"]),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("AuthorizedAppsPanel") ? true : Chunk726985.s6.AUTHORIZED_APPS,
+    useTitle: () => S.intl.string(S.t["f6kk+r"]),
+    getLegacySearchKey: () => (0, r.Gl)("AuthorizedAppsPanel") ? true : T.s6.AUTHORIZED_APPS,
     icon: Chunk657707.jje,
-    buildLayout: () => (0, Chunk526665.Gl)("AuthorizedAppsPanel") ? [d] : [E]
+    buildLayout: () => (0, r.Gl)("AuthorizedAppsPanel") ? [d] : [E]
   })

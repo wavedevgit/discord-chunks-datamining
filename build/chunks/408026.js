@@ -32,6 +32,6 @@ function c(e) {
 }
 let u = {
   initialize() {
-    Chunk570140.Z.subscribe("UNVERIFIED_GAME_UPDATE", s), Chunk570140.Z.subscribe("GAME_ICON_UPDATE", c)
+    r.Z.subscribe("UNVERIFIED_GAME_UPDATE", s), r.Z.subscribe("GAME_ICON_UPDATE", c)
   }
 }

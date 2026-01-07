@@ -9,9 +9,9 @@ var Chunk835473 = require("./835473.js"),
 function n() {
   let {
     data: e
-  } = (0, Chunk350327.uV)(), a = null == module ? true : module[0], l = (0, Chunk835473.q)(null == exports ? true : exports.application_id);
+  } = (0, t.uV)(), a = null == e ? true : e[0], l = (0, i.q)(null == a ? true : a.application_id);
   return {
-    config: exports,
-    application: require
+    config: a,
+    application: l
   }
 }

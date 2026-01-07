@@ -33,93 +33,93 @@ function S(e) {
 }
 async function E() {
   let e = function() {
-      let e = Chunk594174.default.getCurrentUser();
-      return Chunk74538.ZP.canUseClientThemes(module) ? Object.keys(Chunk469115.qt).map(e => Number(e)) : []
+      let e = b.default.getCurrentUser();
+      return g.ZP.canUseClientThemes(e) ? Object.keys(j.qt).map(e => Number(e)) : []
     }(),
-    t = module.length > 0 && Math.random() > .7;
+    t = e.length > 0 && Math.random() > .7;
   try {
-    if (exports) {
-      let t, a = [...module, null],
-        r = S(Chunk473749);
-      if (null != Chunk524437) {
+    if (t) {
+      let t, a = [...e, null],
+        r = S(a);
+      if (null != r) {
         var n;
-        let e = Chunk469115.qt[Chunk524437];
-        t = null != (n = null == module ? true : module.theme) ? require : Chunk981631.BRd.DARK
-      } else t = S([Chunk981631.BRd.DARK, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT]);
-      await Chunk153867.ZI({
-        theme: exports,
-        backgroundGradientPresetId: null != Chunk524437 ? Chunk524437 : true,
+        let e = j.qt[r];
+        t = null != (n = null == e ? true : e.theme) ? n : v.BRd.DARK
+      } else t = S([v.BRd.DARK, v.BRd.DARKER, v.BRd.MIDNIGHT]);
+      await l.ZI({
+        theme: t,
+        backgroundGradientPresetId: null != r ? r : true,
         customUserThemeSettings: true
-      }, Chunk675478.fy.INFREQUENT_USER_ACTION)
+      }, h.fy.INFREQUENT_USER_ACTION)
     } else {
       let e = S(y);
-      await Chunk153867.ZI({
-        theme: module,
+      await l.ZI({
+        theme: e,
         backgroundGradientPresetId: true,
         customUserThemeSettings: true
-      }, Chunk675478.fy.INFREQUENT_USER_ACTION)
+      }, h.fy.INFREQUENT_USER_ACTION)
     }
   } catch (e) {}
 }
 async function T() {
-  let e = Chunk1870.Z.purchases,
-    t = (0, Chunk884697.Ad)(module),
-    n = (0, Chunk884697.jT)(module),
-    a = exports.length > 0,
-    r = require.length > 0;
-  if (Chunk473749 || Chunk524437) try {
-    if (Chunk473749) {
-      let e = S([...exports, null]);
-      (0, Chunk150039.PO)(module)
+  let e = c.Z.purchases,
+    t = (0, d.Ad)(e),
+    n = (0, d.jT)(e),
+    a = t.length > 0,
+    r = n.length > 0;
+  if (a || r) try {
+    if (a) {
+      let e = S([...t, null]);
+      (0, u.PO)(e)
     }
-    if (Chunk524437) {
-      let e = S([...require, null]);
-      (0, Chunk150039.Wh)(module)
+    if (r) {
+      let e = S([...n, null]);
+      (0, u.Wh)(e)
     }
-    let e = Chunk25990.Z.getAllPending(),
-      l = (0, Chunk164946.ED)(module);
-    await (0, Chunk809206.Mn)(Chunk153867).finally(Chunk809206.si)
+    let e = x.Z.getAllPending(),
+      l = (0, m.ED)(e);
+    await (0, i.Mn)(l).finally(i.si)
   } catch (e) {}
 }
 
 function O() {
   try {
-    let e = S(Chunk981631.yqN.FONT_SIZES);
-    (0, Chunk857595.oL)(module);
-    let t = S(Chunk959517.fP);
-    (0, Chunk857595.ZZ)(exports);
+    let e = S(v.yqN.FONT_SIZES);
+    (0, s.oL)(e);
+    let t = S(C.fP);
+    (0, s.ZZ)(t);
     let n = S(_);
-    Chunk695346.YC.updateSetting(require)
+    f.YC.updateSetting(n)
   } catch (e) {}
 }
 
 function N() {
-  Chunk473749.useEffect(() => {
+  a.useEffect(() => {
     var e, t, n, a, r;
-    let g = Chunk594174.default.getCurrentUser(),
-      v = Chunk695346.L1.getSetting(),
-      j = Chunk1870.Z.purchases,
-      C = (0, Chunk884697.Ad)(Chunk469115),
-      y = (0, Chunk884697.jT)(Chunk469115),
-      _ = Chunk210887.Z.theme,
-      S = Chunk981631.backgroundGradientPresetId,
-      E = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
-      T = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-      O = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk473749 : null,
-      N = null != T && null != (r = y.find(e => e.skuId === T)) ? Chunk524437 : null,
-      P = Chunk607070.Z.fontSize,
-      w = Chunk607070.Z.messageGroupSpacing,
-      I = Chunk695346.YC.getSetting();
+    let g = b.default.getCurrentUser(),
+      v = f.L1.getSetting(),
+      j = c.Z.purchases,
+      C = (0, d.Ad)(j),
+      y = (0, d.jT)(j),
+      _ = p.Z.theme,
+      S = v.backgroundGradientPresetId,
+      E = null == g || null == (e = g.avatarDecoration) ? true : e.skuId,
+      T = null == g || null == (n = g.collectibles) || null == (t = n.nameplate) ? true : t.skuId,
+      O = null != E && null != (a = C.find(e => e.skuId === E)) ? a : null,
+      N = null != T && null != (r = y.find(e => e.skuId === T)) ? r : null,
+      P = o.Z.fontSize,
+      w = o.Z.messageGroupSpacing,
+      I = f.YC.getSetting();
     return () => {
       try {
-        Chunk153867.ZI({
+        l.ZI({
           theme: _,
           backgroundGradientPresetId: null != S ? S : true,
           customUserThemeSettings: true
-        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk150039.PO)(O), (0, Chunk150039.Wh)(N);
-        let e = Chunk25990.Z.getAllPending(),
-          t = (0, Chunk164946.ED)(module);
-        (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(P), (0, Chunk857595.ZZ)(w), Chunk695346.YC.updateSetting(I)
+        }, h.fy.INFREQUENT_USER_ACTION), (0, u.PO)(O), (0, u.Wh)(N);
+        let e = x.Z.getAllPending(),
+          t = (0, m.ED)(e);
+        (0, i.Mn)(t).finally(i.si), (0, s.oL)(P), (0, s.ZZ)(w), f.YC.updateSetting(I)
       } catch (e) {}
     }
   }, [])

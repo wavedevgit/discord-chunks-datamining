@@ -116,8 +116,8 @@ function w(e) {
 function D() {
   var e;
   if (!j()) return;
-  let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
-  T.overwriteHistory(w(null != exports ? exports : {}), S)
+  let t = null == (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : e.playedSounds;
+  T.overwriteHistory(w(null != t ? t : {}), S)
 }
 
 function x(e) {
@@ -131,14 +131,14 @@ function x(e) {
 }
 
 function L() {
-  return (0, Chunk164878.v)({
+  return (0, p.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false
   }).canSeeRecentlyHeard
 }
 
 function j() {
-  return (0, Chunk771784.Lq)("soundboard_event_store")
+  return (0, h.Lq)("soundboard_event_store")
 }
 class M extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {

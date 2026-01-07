@@ -63,7 +63,7 @@ let v = (0, Chunk460181.uk)("call_calling", Chunk474873.Z.getSoundpack());
 var S = new WeakMap;
 class I extends Chunk147913.Z {
   _initialize() {
-    this.stores = new Map().set(Chunk523746.Z, this.handleRingUpdate).set(Chunk292959.Z, this.handleRingUpdate).set(Chunk246946.Z, this.handleRingUpdate).set(Chunk979651.Z, this.handleRingUpdate).set(Chunk358221.Z, this.handleChannelRTCStoreChange).set(Chunk474873.Z, this.handleSoundpackUpdate)
+    this.stores = new Map().set(o.Z, this.handleRingUpdate).set(l.Z, this.handleRingUpdate).set(u.Z, this.handleRingUpdate).set(d.Z, this.handleRingUpdate).set(p.Z, this.handleChannelRTCStoreChange).set(a.Z, this.handleSoundpackUpdate)
   }
   constructor(...e) {
     super(...e), b(this, S, {

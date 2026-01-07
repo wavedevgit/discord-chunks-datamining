@@ -87,7 +87,7 @@ let m = "__DEBUG_PROFILE_EFFECTS_STORE",
       profileEffects: t
     } = e;
     return Object.values(t)
-  }, Chunk55160.X),
+  }, a.X),
   y = e => {
     let t = E(t => null != e ? t.profileEffects[e] : null),
       n = i.useRef([]);

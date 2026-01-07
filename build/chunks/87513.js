@@ -7,5 +7,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk163966 = require("./163966.js");
 let u = (0, Chunk509613.k4)(Chunk313789.n.ACTIVITY_PRIVACY_TERMS_CATEGORY, {
-  buildLayout: () => [Chunk163966.T]
+  buildLayout: () => [s.T]
 })

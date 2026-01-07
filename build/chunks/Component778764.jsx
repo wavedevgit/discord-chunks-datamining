@@ -287,18 +287,18 @@ function w() {
     credentials: e,
     hasFetchedCredentials: t,
     hasPendingRegisterTrigger: n
-  } = (0, Chunk442837.cj)([Chunk15980.Z], () => ({
-    hasFetchedCredentials: Chunk15980.Z.hasFetchedCredentials(),
-    credentials: Chunk15980.Z.getCredentials(),
-    hasPendingRegisterTrigger: Chunk15980.Z.hasPendingRegisterTrigger()
+  } = (0, o.cj)([y.Z], () => ({
+    hasFetchedCredentials: y.Z.hasFetchedCredentials(),
+    credentials: y.Z.getCredentials(),
+    hasPendingRegisterTrigger: y.Z.hasPendingRegisterTrigger()
   }));
-  Chunk473749.useEffect(() => {
-    exports || Chunk365007.hL()
-  }, [exports]), Chunk473749.useEffect(() => () => {
-    Chunk15980.Z.hasPendingRegisterTrigger() && Chunk365007.vg()
+  i.useEffect(() => {
+    t || b.hL()
+  }, [t]), i.useEffect(() => () => {
+    y.Z.hasPendingRegisterTrigger() && b.vg()
   }, []);
-  let [a, l] = Chunk473749.useState(false), c = Chunk473749.useCallback(() => {
-    Chunk239091(true), Chunk365007.startRegisterWebAuthnCredential().then(e => {
+  let [a, l] = i.useState(false), c = i.useCallback(() => {
+    l(true), b.startRegisterWebAuthnCredential().then(e => {
       let {
         ticket: t,
         challenge: n
@@ -310,25 +310,25 @@ function w() {
     }).catch(e => {
       e.message !== S.intl.string(S.t.N2yb9a) && g.Z.captureException(e)
     }).finally(() => {
-      Chunk239091(false)
+      l(false)
     })
   }, []);
-  return Chunk473749.useEffect(() => {
-    require && !Chunk849055 && (Chunk365007.vg(), Chunk136097())
-  }, [require, Chunk849055, Chunk136097]), (0, Chunk54381.jsxs)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t.y7SXYX),
-    description: Chunk388032.intl.string(Chunk388032.t.TMukAN),
-    children: [module.length > 0 && (0, Chunk54381.jsx)("div", {
-      className: Chunk689471.credentialList,
-      children: module.map(x)
-    }), (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+  return i.useEffect(() => {
+    n && !a && (b.vg(), c())
+  }, [n, a, c]), (0, r.jsxs)(s.gNt, {
+    label: S.intl.string(S.t.y7SXYX),
+    description: S.intl.string(S.t.TMukAN),
+    children: [e.length > 0 && (0, r.jsx)("div", {
+      className: I.credentialList,
+      children: e.map(x)
+    }), (0, r.jsx)("div", {
+      children: (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.vrOCCk),
-        onClick: Chunk136097,
-        loading: Chunk849055,
-        disabled: !Chunk287880.Ae
+        text: S.intl.string(S.t.vrOCCk),
+        onClick: c,
+        loading: a,
+        disabled: !m.Ae
       })
     })]
   })

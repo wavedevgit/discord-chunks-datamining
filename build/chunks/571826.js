@@ -137,11 +137,11 @@ function g(e) {
 }
 
 function E() {
-  Chunk626135.default.track(Chunk981631.rMx.E2EE_SETTINGS_USER_DELETE)
+  o.default.track(s.rMx.E2EE_SETTINGS_USER_DELETE)
 }
 
 function b() {
-  Chunk626135.default.track(Chunk981631.rMx.E2EE_SETTINGS_DEVICE_DELETE)
+  o.default.track(s.rMx.E2EE_SETTINGS_DEVICE_DELETE)
 }
 
 function y(e) {

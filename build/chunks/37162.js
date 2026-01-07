@@ -5,5 +5,5 @@ var Chunk779688 = require("./779688.js"),
   Chunk132812 = require("./132812.js");
 module.exports = !Chunk779688(function() {
   var e = Error("a");
-  return !("stack" in module) || (Object.defineProperty(module, "stack", Chunk132812(1, 7)), 7 !== module.stack)
+  return !("stack" in e) || (Object.defineProperty(e, "stack", o(1, 7)), 7 !== e.stack)
 })

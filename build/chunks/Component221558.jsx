@@ -131,16 +131,16 @@ function A(e) {
 }
 
 function N() {
-  let e = (0, Chunk473749.useContext)(Chunk324060.Q),
-    t = (0, Chunk481060.dQu)(module.primaryColor).hex(),
+  let e = (0, i.useContext)(p.Q),
+    t = (0, u.dQu)(e.primaryColor).hex(),
     {
       guilds: {
         guilds: n
       } = {
         guilds: []
       }
-    } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
-    a = (0, Chunk473749.useMemo)(() => require.map(e => {
+    } = (0, l.e7)([_.Z], () => _.Z.getCheckpointData()),
+    a = (0, i.useMemo)(() => n.map(e => {
       let {
         guild: t,
         numMessagesSent: n,
@@ -156,45 +156,45 @@ function N() {
         guild: t
       } = e;
       return null != t
-    }), [require]),
-    o = Chunk120356.length > 0 ? Chunk120356[0].guild : null;
-  return (0, Chunk54381.jsx)(Chunk198358.Z, {
+    }), [n]),
+    o = a.length > 0 ? a[0].guild : null;
+  return (0, r.jsx)(E.Z, {
     verticalFlow: true,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk115750.container,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk554445.title,
-        children: [(0, Chunk54381.jsx)(Chunk793030.QTo, {
+    children: (0, r.jsxs)("div", {
+      className: T.container,
+      children: [(0, r.jsxs)("div", {
+        className: I.title,
+        children: [(0, r.jsx)(s.QTo, {
           size: "refresh_sm",
-          color: exports,
-          colorClass: Chunk554445.iconColor
-        }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+          color: t,
+          colorClass: I.iconColor
+        }), (0, r.jsx)(b.Z, {
           variant: "eyebrow",
-          className: Chunk554445.eyebrow,
-          children: Chunk388032.intl.string(Chunk638398.default.mAroeJ)
+          className: I.eyebrow,
+          children: S.intl.string(v.default.mAroeJ)
         })]
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk115750.header,
-        children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
+      }), (0, r.jsxs)("div", {
+        className: T.header,
+        children: [(0, r.jsx)(b.Z, {
           variant: "display-lg",
-          className: Chunk115750.display,
-          children: Chunk388032.intl.string(Chunk388032.t["7hB4kg"])
-        }), (0, Chunk54381.jsxs)("div", {
-          children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
+          className: T.display,
+          children: S.intl.string(S.t["7hB4kg"])
+        }), (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(b.Z, {
             variant: "heading-xxl/medium",
-            className: Chunk115750.subtitle,
-            children: Chunk388032.intl.string(Chunk638398.default.Q0EMOP)
-          }), (0, Chunk54381.jsx)(Chunk909397.o, {
-            slide: Chunk612776.yD.GUILDS
+            className: T.subtitle,
+            children: S.intl.string(v.default.Q0EMOP)
+          }), (0, r.jsx)(g.o, {
+            slide: O.yD.GUILDS
           })]
         })]
-      }), null != o && (0, Chunk54381.jsx)(C, {
+      }), null != o && (0, r.jsx)(C, {
         guild: o,
-        checkpointGuild: Chunk120356[0],
-        primaryColor: exports
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk115750.guilds,
-        children: Chunk120356.map((e, n) => {
+        checkpointGuild: a[0],
+        primaryColor: t
+      }), (0, r.jsx)("div", {
+        className: T.guilds,
+        children: a.map((e, n) => {
           let {
             guild: i
           } = e;

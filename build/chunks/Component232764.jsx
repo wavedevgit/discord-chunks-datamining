@@ -15,124 +15,124 @@ var Chunk481060 = require("./481060.js"),
   Chunk207555 = require("./207555.js");
 
 function o() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk207555.container,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: s.container,
+    children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/semibold",
       color: "text-default",
-      className: Chunk207555.stepHeader,
-      children: Chunk388032.intl.format(Chunk388032.t.tCQ3H8, {
+      className: s.stepHeader,
+      children: a.intl.format(a.t.tCQ3H8, {
         number: 1
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      className: Chunk207555.header,
-      children: Chunk388032.intl.string(Chunk388032.t.e6spZv)
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      className: s.header,
+      children: a.intl.string(a.t.e6spZv)
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t["8ega11"])
-    }), (0, Chunk54381.jsx)("div", {
+      children: a.intl.string(a.t["8ega11"])
+    }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk207555.button,
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      className: s.button,
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.TbzK3w),
-        onClick: () => (0, Chunk983135.Nb)("Safety Check")
+        text: a.intl.string(a.t.TbzK3w),
+        onClick: () => (0, l.Nb)("Safety Check")
       })
     })]
   })
 }
 
 function c() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk207555.container,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: s.container,
+    children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/semibold",
       color: "text-default",
-      className: Chunk207555.stepHeader,
-      children: Chunk388032.intl.format(Chunk388032.t.tCQ3H8, {
+      className: s.stepHeader,
+      children: a.intl.format(a.t.tCQ3H8, {
         number: 2
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      className: Chunk207555.header,
-      children: Chunk388032.intl.string(Chunk388032.t.nRE3tc)
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      className: s.header,
+      children: a.intl.string(a.t.nRE3tc)
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t.y08PCJ)
-    }), (0, Chunk54381.jsx)("div", {
+      children: a.intl.string(a.t.y08PCJ)
+    }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk207555.button,
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      className: s.button,
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.TbzK3w),
-        onClick: () => (0, Chunk983135.Nb)("Default Channels")
+        text: a.intl.string(a.t.TbzK3w),
+        onClick: () => (0, l.Nb)("Default Channels")
       })
     })]
   })
 }
 
 function d() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk207555.container,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: s.container,
+    children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/semibold",
       color: "text-default",
-      className: Chunk207555.stepHeader,
-      children: Chunk388032.intl.format(Chunk388032.t.tCQ3H8, {
+      className: s.stepHeader,
+      children: a.intl.format(a.t.tCQ3H8, {
         number: 3
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      className: Chunk207555.header,
-      children: Chunk388032.intl.string(Chunk388032.t.VkaI6l)
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      className: s.header,
+      children: a.intl.string(a.t.VkaI6l)
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t.TVGk1c)
-    }), (0, Chunk54381.jsx)("div", {
+      children: a.intl.string(a.t.TVGk1c)
+    }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk207555.button,
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      className: s.button,
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.TbzK3w),
-        onClick: () => (0, Chunk983135.Nb)("Customization Questions")
+        text: a.intl.string(a.t.TbzK3w),
+        onClick: () => (0, l.Nb)("Customization Questions")
       })
     })]
   })
 }
 
 function u() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk207555.container,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: s.container,
+    children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/semibold",
       color: "text-default",
-      className: Chunk207555.stepHeader,
-      children: Chunk388032.intl.format(Chunk388032.t.tCQ3H8, {
+      className: s.stepHeader,
+      children: a.intl.format(a.t.tCQ3H8, {
         number: 4
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      className: Chunk207555.header,
-      children: Chunk388032.intl.string(Chunk388032.t["3SM68F"])
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      className: s.header,
+      children: a.intl.string(a.t["3SM68F"])
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t["eamP2+"])
-    }), (0, Chunk54381.jsx)("div", {
+      children: a.intl.string(a.t["eamP2+"])
+    }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk207555.button,
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      className: s.button,
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.TbzK3w),
-        onClick: () => (0, Chunk983135.Nb)("Home Settings")
+        text: a.intl.string(a.t.TbzK3w),
+        onClick: () => (0, l.Nb)("Home Settings")
       })
     })]
   })

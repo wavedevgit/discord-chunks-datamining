@@ -81,8 +81,8 @@ class m extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     let {
       confettiLocation: e,
       shakeLocation: t
-    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = null == module || f.confettiEnabled && f.confettiEnabledLocations[module], r = null == exports || f.screenshakeEnabled && f.screenshakeEnabledLocations[exports];
-    return this.settingsVisible && !u && f.enabled && require && r
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = null == e || f.confettiEnabled && f.confettiEnabledLocations[e], r = null == t || f.screenshakeEnabled && f.screenshakeEnabledLocations[t];
+    return this.settingsVisible && !u && f.enabled && n && r
   }
   get shakeIntensity() {
     return this.isEnabled() ? f.shakeIntensity : 0

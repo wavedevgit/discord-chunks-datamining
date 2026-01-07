@@ -13,27 +13,27 @@ var Chunk442837 = require("./442837.js"),
   Chunk435064 = require("./435064.js");
 
 function s() {
-  let e = (0, Chunk924557.w2)(),
-    t = Chunk435064.Z.getState().clipsSettings.clipsEnabled;
-  return module && exports
+  let e = (0, a.w2)(),
+    t = o.Z.getState().clipsSettings.clipsEnabled;
+  return e && t
 }
 
 function l() {
-  let e = (0, Chunk924557.w9)(),
-    t = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getState().clipsSettings.clipsEnabled);
-  return module && exports
+  let e = (0, a.w9)(),
+    t = (0, r.e7)([o.Z], () => o.Z.getState().clipsSettings.clipsEnabled);
+  return e && t
 }
 
 function c() {
   let e = s(),
-    t = (0, Chunk358085.isWindows)(),
-    n = Chunk435064.Z.getState().clipsSettings.decoupledClipsEnabled;
-  return module && exports && require
+    t = (0, i.isWindows)(),
+    n = o.Z.getState().clipsSettings.decoupledClipsEnabled;
+  return e && t && n
 }
 
 function u() {
   let e = l(),
-    t = (0, Chunk358085.isWindows)(),
-    n = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getState().clipsSettings.decoupledClipsEnabled);
-  return module && exports && require
+    t = (0, i.isWindows)(),
+    n = (0, r.e7)([o.Z], () => o.Z.getState().clipsSettings.decoupledClipsEnabled);
+  return e && t && n
 }

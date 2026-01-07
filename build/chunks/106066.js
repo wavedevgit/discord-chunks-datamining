@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk695346 = require("./695346.js");
 
 function i() {
-  return Chunk695346.Sb.useSetting()
+  return r.Sb.useSetting()
 }

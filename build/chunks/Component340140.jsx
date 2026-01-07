@@ -30,30 +30,30 @@ class g extends Chunk473749.PureComponent {
     } = this.props, {
       problem: r
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk159691.u_l, {
-      title: Chunk388032.intl.string(Chunk388032.t.qnJ9W3),
-      subtitle: Chunk388032.intl.string(Chunk388032.t["7vw0h+"]),
+    return (0, l.jsxs)(a.u_l, {
+      title: b.intl.string(b.t.qnJ9W3),
+      subtitle: b.intl.string(b.t["7vw0h+"]),
       actions: [{
-        text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+        text: b.intl.string(b.t["ETE/oC"]),
         variant: "secondary",
-        onClick: require
+        onClick: e
       }, {
-        text: Chunk388032.intl.string(Chunk388032.t.E48BIc),
+        text: b.intl.string(b.t.E48BIc),
         variant: "primary",
         onClick: this.handleSubmit,
-        disabled: null == Chunk473749
+        disabled: null == r
       }],
-      onClose: require,
-      transitionState: exports,
-      children: [(0, Chunk54381.jsx)(Chunk648159.Z, {}), (0, Chunk54381.jsx)(Chunk199849.y6, {
-        label: Chunk388032.intl.string(Chunk388032.t["6Y1t5P"]),
-        placeholder: Chunk388032.intl.string(Chunk388032.t.U0kGk6),
-        options: (0, Chunk538211.Z)({
-          isStreamer: module,
+      onClose: e,
+      transitionState: n,
+      children: [(0, l.jsx)(c.Z, {}), (0, l.jsx)(i.y6, {
+        label: b.intl.string(b.t["6Y1t5P"]),
+        placeholder: b.intl.string(b.t.U0kGk6),
+        options: (0, o.Z)({
+          isStreamer: t,
           isEndStream: false
         }),
         onChange: this.handleChanged,
-        value: Chunk473749,
+        value: r,
         maxVisibleItems: 4
       })]
     })

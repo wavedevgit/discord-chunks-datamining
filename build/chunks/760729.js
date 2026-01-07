@@ -25,8 +25,8 @@ let o = [{
   },
   analyticsType: "@Everyone Warning",
   animation: {
-    dark: () => require.e("83323").then(require.t.bind(require, 510465, 19)),
-    light: () => require.e("36052").then(require.t.bind(require, 570227, 19))
+    dark: () => n.e("83323").then(n.t.bind(n, 510465, 19)),
+    light: () => n.e("36052").then(n.t.bind(n, 570227, 19))
   }
 }, {
   check: e => !!i.Jn9.test(e) && {

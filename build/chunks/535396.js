@@ -65,62 +65,62 @@ let d = "1340102344645283891",
   ],
   b = new Set([Chunk494497.IN, Chunk494497.If, Chunk494497.A$, Chunk494497.MB, Chunk494497.Vk]),
   y = () => ({
-    [Chunk981631.GuildFeatures.VIDEO_BITRATE_ENHANCED]: {
-      perkIcon: Chunk267642.Ro.STREAM,
-      description: Chunk388032.intl.string(Chunk388032.t.y4ft4D)
+    [l.GuildFeatures.VIDEO_BITRATE_ENHANCED]: {
+      perkIcon: a.Ro.STREAM,
+      description: c.intl.string(c.t.y4ft4D)
     },
-    [Chunk981631.GuildFeatures.AUDIO_BITRATE_128_KBPS]: {
-      perkIcon: Chunk267642.Ro.AUDIO,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZE, {
-        bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.bitrate / 1e3
+    [l.GuildFeatures.AUDIO_BITRATE_128_KBPS]: {
+      perkIcon: a.Ro.AUDIO,
+      description: c.intl.formatToPlainString(c.t.zoT1ZE, {
+        bitrate: s.HO[l.Eu4.TIER_1].limits.bitrate / 1e3
       })
     },
-    [Chunk981631.GuildFeatures.INVITE_SPLASH]: {
-      perkIcon: Chunk267642.Ro.CUSTOMIZATION,
-      description: Chunk388032.intl.string(Chunk388032.t.Qwlpov)
+    [l.GuildFeatures.INVITE_SPLASH]: {
+      perkIcon: a.Ro.CUSTOMIZATION,
+      description: c.intl.string(c.t.Qwlpov)
     },
-    [Chunk981631.GuildFeatures.ANIMATED_ICON]: {
-      perkIcon: Chunk267642.Ro.ANIMATED,
-      description: Chunk388032.intl.string(Chunk388032.t.PbAyub)
+    [l.GuildFeatures.ANIMATED_ICON]: {
+      perkIcon: a.Ro.ANIMATED,
+      description: c.intl.string(c.t.PbAyub)
     },
-    [Chunk981631.GuildFeatures.AUDIO_BITRATE_256_KBPS]: {
-      perkIcon: Chunk267642.Ro.AUDIO,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZE, {
-        bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.bitrate / 1e3
+    [l.GuildFeatures.AUDIO_BITRATE_256_KBPS]: {
+      perkIcon: a.Ro.AUDIO,
+      description: c.intl.formatToPlainString(c.t.zoT1ZE, {
+        bitrate: s.HO[l.Eu4.TIER_2].limits.bitrate / 1e3
       })
     },
-    [Chunk981631.GuildFeatures.ROLE_ICONS]: {
-      perkIcon: Chunk267642.Ro.CUSTOM_ROLE_ICON,
-      description: Chunk388032.intl.string(Chunk388032.t["6PV6Qc"])
+    [l.GuildFeatures.ROLE_ICONS]: {
+      perkIcon: a.Ro.CUSTOM_ROLE_ICON,
+      description: c.intl.string(c.t["6PV6Qc"])
     },
-    [Chunk981631.GuildFeatures.MAX_FILE_SIZE_50_MB]: {
-      perkIcon: Chunk267642.Ro.UPLOAD,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
-        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8j)
+    [l.GuildFeatures.MAX_FILE_SIZE_50_MB]: {
+      perkIcon: a.Ro.UPLOAD,
+      description: c.intl.formatToPlainString(c.t.aFRl53, {
+        uploadSizeLimit: c.intl.string(c.t.M6qV8j)
       })
     },
-    [Chunk981631.GuildFeatures.BANNER]: {
-      perkIcon: Chunk267642.Ro.CUSTOMIZATION,
-      description: Chunk388032.intl.string(Chunk388032.t["1a5rjl"])
+    [l.GuildFeatures.BANNER]: {
+      perkIcon: a.Ro.CUSTOMIZATION,
+      description: c.intl.string(c.t["1a5rjl"])
     },
-    [Chunk981631.GuildFeatures.ANIMATED_BANNER]: {
-      perkIcon: Chunk267642.Ro.ANIMATED,
-      description: Chunk388032.intl.string(Chunk388032.t["1+Vmh9"])
+    [l.GuildFeatures.ANIMATED_BANNER]: {
+      perkIcon: a.Ro.ANIMATED,
+      description: c.intl.string(c.t["1+Vmh9"])
     },
-    [Chunk981631.GuildFeatures.AUDIO_BITRATE_384_KBPS]: {
-      perkIcon: Chunk267642.Ro.AUDIO,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZE, {
-        bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.bitrate / 1e3
+    [l.GuildFeatures.AUDIO_BITRATE_384_KBPS]: {
+      perkIcon: a.Ro.AUDIO,
+      description: c.intl.formatToPlainString(c.t.zoT1ZE, {
+        bitrate: s.HO[l.Eu4.TIER_3].limits.bitrate / 1e3
       })
     },
-    [Chunk981631.GuildFeatures.VANITY_URL]: {
-      perkIcon: Chunk267642.Ro.VANITY,
-      description: Chunk388032.intl.string(Chunk388032.t["5XZKy/"])
+    [l.GuildFeatures.VANITY_URL]: {
+      perkIcon: a.Ro.VANITY,
+      description: c.intl.string(c.t["5XZKy/"])
     },
-    [Chunk981631.GuildFeatures.MAX_FILE_SIZE_100_MB]: {
-      perkIcon: Chunk267642.Ro.UPLOAD,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
-        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8D)
+    [l.GuildFeatures.MAX_FILE_SIZE_100_MB]: {
+      perkIcon: a.Ro.UPLOAD,
+      description: c.intl.formatToPlainString(c.t.aFRl53, {
+        uploadSizeLimit: c.intl.string(c.t.yMOW8D)
       })
     }
   }),

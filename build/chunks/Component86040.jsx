@@ -43,16 +43,16 @@ let c = e => {
       })
     })
   },
-  u = () => (0, Chunk54381.jsx)("div", {
-    children: (0, Chunk54381.jsx)(Chunk481060.mzw, {
-      justify: Chunk600164.Z.Justify.BETWEEN,
-      align: Chunk600164.Z.Align.CENTER,
+  u = () => (0, r.jsx)("div", {
+    children: (0, r.jsx)(a.mzw, {
+      justify: o.Z.Justify.BETWEEN,
+      align: o.Z.Align.CENTER,
       "data-migration-pending": true,
-      children: (0, Chunk54381.jsx)(Chunk159691.zxk, {
+      children: (0, r.jsx)(i.zxk, {
         "data-testid": "continue",
         variant: "primary",
         disabled: true,
-        text: Chunk388032.intl.string(Chunk388032.t.g8vPzy)
+        text: s.intl.string(s.t.g8vPzy)
       })
     })
   })

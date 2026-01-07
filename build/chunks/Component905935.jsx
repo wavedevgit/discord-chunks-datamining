@@ -11,14 +11,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s() {
-  return (0, Chunk54381.jsx)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t.EPVq00),
-    description: Chunk388032.intl.string(Chunk388032.t["8aDa1t"]),
-    children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+  return (0, r.jsx)(i.gNt, {
+    label: o.intl.string(o.t.EPVq00),
+    description: o.intl.string(o.t["8aDa1t"]),
+    children: (0, r.jsx)(i.Button, {
       variant: "primary",
       size: "sm",
-      text: Chunk388032.intl.string(Chunk388032.t.cDgKte),
-      onClick: Chunk202858.ZP.enableMFA
+      text: o.intl.string(o.t.cDgKte),
+      onClick: a.ZP.enableMFA
     })
   })
 }

@@ -8,8 +8,8 @@ var Chunk509613 = require("./509613.js"),
   Chunk797525 = require("./797525.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.qs)(Chunk313789.n.OS_MINIMIZE_TO_TRAY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.abLFes),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["mVuX+j"]),
-  useValue: () => Chunk797525.Vh.useState(t => t.minimizeToTray),
+  useTitle: () => u.intl.string(u.t.abLFes),
+  useSubtitle: () => u.intl.string(u.t["mVuX+j"]),
+  useValue: () => s.Vh.useState(t => t.minimizeToTray),
   setValue: Chunk797525.t8
 })

@@ -40,29 +40,29 @@ let Z = "dismissedCommunityFeaturesUpsell",
         guild: t,
         submitting: n,
         errors: i
-      } = (0, Chunk442837.cj)([Chunk999382.Z], () => ({
-        submitting: Chunk999382.Z.isSubmitting(),
-        guild: Chunk999382.Z.getGuild(),
-        errors: Chunk999382.Z.getErrors()
+      } = (0, a.cj)([E.Z], () => ({
+        submitting: E.Z.isSubmitting(),
+        guild: E.Z.getGuild(),
+        errors: E.Z.getErrors()
       })),
-      l = Object.keys(Chunk473749),
-      s = Chunk345074.length > 0 ? Chunk345074[0] : null;
-    return e = "rules_channel_id" === Chunk544891 ? Chunk388032.intl.string(Chunk388032.t["7IrBYt"]) : null != Chunk544891 ? Chunk473749[Chunk544891] : true, (0, Chunk54381.jsx)(Chunk796027.Z, {
-      submitting: require,
+      l = Object.keys(i),
+      s = l.length > 0 ? l[0] : null;
+    return e = "rules_channel_id" === s ? T.intl.string(T.t["7IrBYt"]) : null != s ? i[s] : true, (0, r.jsx)(c.Z, {
+      submitting: n,
       onReset: () => {
-        null != exports && Chunk434404.Z.init(exports.id)
+        null != t && N.Z.init(t.id)
       },
       onSave: () => {
-        null != exports && Chunk434404.Z.saveGuild(exports.id, {
-          rulesChannelId: exports.rulesChannelId,
-          preferredLocale: exports.preferredLocale,
-          safetyAlertsChannelId: exports.safetyAlertsChannelId,
-          publicUpdatesChannelId: exports.publicUpdatesChannelId,
-          description: exports.description,
-          features: exports.features
+        null != t && N.Z.saveGuild(t.id, {
+          rulesChannelId: t.rulesChannelId,
+          preferredLocale: t.preferredLocale,
+          safetyAlertsChannelId: t.safetyAlertsChannelId,
+          publicUpdatesChannelId: t.publicUpdatesChannelId,
+          description: t.description,
+          features: t.features
         })
       },
-      errorMessage: module
+      errorMessage: e
     })
   },
   D = e => {
@@ -175,20 +175,20 @@ let Z = "dismissedCommunityFeaturesUpsell",
     })
   },
   A = () => {
-    let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
+    let e = (0, a.e7)([E.Z], () => E.Z.getGuild()),
       {
         canManageGuild: t,
         isGuildAdmin: n
-      } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
-        canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, module),
-        isGuildAdmin: Chunk496675.Z.can(Chunk981631.Plq.ADMINISTRATOR, module)
+      } = (0, a.cj)([O.Z], () => ({
+        canManageGuild: O.Z.can(_.Plq.MANAGE_GUILD, e),
+        isGuildAdmin: O.Z.can(_.Plq.ADMINISTRATOR, e)
       })),
-      s = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
-      c = Chunk473749.useMemo(Chunk929834.jb, []),
-      f = true !== Chunk433517.K.get(Z);
-    if (null == module) return null;
+      s = (0, a.e7)([x.ZP], () => null != e ? x.ZP.getChannels(e.id) : null),
+      c = i.useMemo(S.jb, []),
+      f = true !== o.K.get(Z);
+    if (null == e) return null;
     let b = [];
-    null != Chunk544891 && Chunk544891[Chunk984933.sH].forEach(e => {
+    null != s && s[x.sH].forEach(e => {
       let {
         channel: t
       } = e;
@@ -198,10 +198,10 @@ let Z = "dismissedCommunityFeaturesUpsell",
       })
     });
     let h = () => {
-        if (null == module) return;
-        let t = new Set(module.features);
-        exports.delete(Chunk981631.GuildFeatures.COMMUNITY), exports.delete(Chunk981631.GuildFeatures.DISCOVERABLE), exports.delete(Chunk981631.GuildFeatures.PREVIEW_ENABLED), Chunk434404.Z.updateGuild({
-          features: exports,
+        if (null == e) return;
+        let t = new Set(e.features);
+        t.delete(_.GuildFeatures.COMMUNITY), t.delete(_.GuildFeatures.DISCOVERABLE), t.delete(_.GuildFeatures.PREVIEW_ENABLED), N.Z.updateGuild({
+          features: t,
           rulesChannelId: null,
           publicUpdatesChannelId: null
         })
@@ -211,115 +211,115 @@ let Z = "dismissedCommunityFeaturesUpsell",
           description: e
         })
       };
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    return (0, r.jsxs)(m.Kqy, {
       gap: 24,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      children: [(0, r.jsx)(m.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.nRtNqn)
-      }), Chunk755721 ? (0, Chunk54381.jsx)(D, {
-        discoveryEnabled: module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE),
-        onboardingEnabled: module.features.has(Chunk981631.GuildFeatures.GUILD_ONBOARDING),
-        guild: module
-      }) : null, (0, Chunk54381.jsx)(Chunk668339.d, {
+        children: T.intl.string(T.t.nRtNqn)
+      }), f ? (0, r.jsx)(D, {
+        discoveryEnabled: e.features.has(_.GuildFeatures.DISCOVERABLE),
+        onboardingEnabled: e.features.has(_.GuildFeatures.GUILD_ONBOARDING),
+        guild: e
+      }) : null, (0, r.jsx)(d.d, {
         layout: "horizontal-responsive",
-        label: Chunk388032.intl.string(Chunk388032.t["otcXP/"]),
-        description: Chunk388032.intl.string(Chunk388032.t.BtwmYB),
-        value: module.rulesChannelId,
-        options: Chunk493773,
+        label: T.intl.string(T.t["otcXP/"]),
+        description: T.intl.string(T.t.BtwmYB),
+        value: e.rulesChannelId,
+        options: b,
         onChange: e => {
           N.Z.updateGuild({
             rulesChannelId: e
           })
         },
-        isDisabled: !exports
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk668339.d, {
+        isDisabled: !t
+      }), (0, r.jsx)(m.izJ, {}), (0, r.jsx)(d.d, {
         layout: "horizontal-responsive",
-        label: Chunk388032.intl.string(Chunk388032.t.vAyDGU),
-        description: Chunk388032.intl.string(Chunk388032.t.ZFeonu),
-        value: module.publicUpdatesChannelId,
-        options: Chunk493773,
+        label: T.intl.string(T.t.vAyDGU),
+        description: T.intl.string(T.t.ZFeonu),
+        value: e.publicUpdatesChannelId,
+        options: b,
         onChange: e => {
           N.Z.updateGuild({
             publicUpdatesChannelId: e
           })
         },
-        isDisabled: !require
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk668339.d, {
+        isDisabled: !n
+      }), (0, r.jsx)(m.izJ, {}), (0, r.jsx)(d.d, {
         layout: "horizontal-responsive",
-        label: Chunk388032.intl.string(Chunk388032.t.sMkYE8),
-        description: Chunk388032.intl.string(Chunk388032.t.htioQo),
-        value: module.safetyAlertsChannelId,
-        options: Chunk493773,
+        label: T.intl.string(T.t.sMkYE8),
+        description: T.intl.string(T.t.htioQo),
+        value: e.safetyAlertsChannelId,
+        options: b,
         onChange: e => {
           N.Z.updateGuild({
             safetyAlertsChannelId: e
           })
         },
-        isDisabled: !exports
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk668339.d, {
+        isDisabled: !t
+      }), (0, r.jsx)(m.izJ, {}), (0, r.jsx)(d.d, {
         layout: "horizontal-responsive",
-        label: Chunk388032.intl.string(Chunk388032.t.pO60fy),
-        description: Chunk388032.intl.string(Chunk388032.t.aIR73T),
-        value: module.preferredLocale,
-        options: Chunk796027,
+        label: T.intl.string(T.t.pO60fy),
+        description: T.intl.string(T.t.aIR73T),
+        value: e.preferredLocale,
+        options: c,
         onChange: e => {
           N.Z.updateGuild({
             preferredLocale: e
           })
         },
-        isDisabled: !exports
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (() => {
+        isDisabled: !t
+      }), (0, r.jsx)(m.izJ, {}), (() => {
         var n;
-        if (null != module) return (0, Chunk54381.jsx)(Chunk481060.Kx8, {
-          label: Chunk388032.intl.string(Chunk388032.t["RSfm+i"]),
-          description: Chunk388032.intl.string(Chunk388032.t["/B6PRw"]),
-          value: null != (n = module.description) ? require : "",
-          placeholder: Chunk388032.intl.string(Chunk388032.t.Nvfowl),
-          onChange: Chunk650774,
-          maxLength: Chunk345074.Us,
-          disabled: !exports
+        if (null != e) return (0, r.jsx)(m.Kx8, {
+          label: T.intl.string(T.t["RSfm+i"]),
+          description: T.intl.string(T.t["/B6PRw"]),
+          value: null != (n = e.description) ? n : "",
+          placeholder: T.intl.string(T.t.Nvfowl),
+          onChange: j,
+          maxLength: l.Us,
+          disabled: !t
         })
-      })(), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.c1BmbC),
-        description: Chunk388032.intl.string(Chunk388032.t.aQzVF8),
+      })(), (0, r.jsx)(m.izJ, {}), (0, r.jsx)(m.gNt, {
+        label: T.intl.string(T.t.c1BmbC),
+        description: T.intl.string(T.t.aQzVF8),
         layout: "horizontal",
-        children: (0, Chunk54381.jsx)(Chunk28664.u, {
-          text: require ? null : Chunk388032.intl.string(Chunk388032.t["pjG+T3"]),
-          "aria-label": require ? true : Chunk388032.intl.string(Chunk388032.t["pjG+T3"]),
-          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+        children: (0, r.jsx)(g.u, {
+          text: n ? null : T.intl.string(T.t["pjG+T3"]),
+          "aria-label": n ? true : T.intl.string(T.t["pjG+T3"]),
+          children: (0, r.jsx)(m.Button, {
             variant: "critical-primary",
             size: "sm",
-            text: Chunk388032.intl.string(Chunk388032.t.c1BmbC),
+            text: T.intl.string(T.t.c1BmbC),
             onClick: () => {
-              module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) && module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk248514.Z)({
-                title: Chunk388032.intl.string(Chunk388032.t.iBnVHc),
-                subtitle: Chunk388032.intl.string(Chunk388032.t["P+Sh8V"]),
-                confirmText: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
-                cancelText: Chunk388032.intl.string(Chunk388032.t.oEAioF),
-                onConfirm: Chunk769654
-              }) : module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) ? (0, Chunk248514.Z)({
-                title: Chunk388032.intl.string(Chunk388032.t.iBnVHc),
-                subtitle: Chunk388032.intl.string(Chunk388032.t["eMx/uZ"]),
-                confirmText: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
-                cancelText: Chunk388032.intl.string(Chunk388032.t.oEAioF),
-                onConfirm: Chunk769654
-              }) : module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk248514.Z)({
-                title: Chunk388032.intl.string(Chunk388032.t.iBnVHc),
-                subtitle: Chunk388032.intl.string(Chunk388032.t.l1wLeX),
-                confirmText: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
-                cancelText: Chunk388032.intl.string(Chunk388032.t.oEAioF),
-                onConfirm: Chunk769654
-              }) : Chunk769654()
+              e.features.has(_.GuildFeatures.DISCOVERABLE) && e.features.has(_.GuildFeatures.PARTNERED) ? (0, u.Z)({
+                title: T.intl.string(T.t.iBnVHc),
+                subtitle: T.intl.string(T.t["P+Sh8V"]),
+                confirmText: T.intl.string(T.t["cY+Oob"]),
+                cancelText: T.intl.string(T.t.oEAioF),
+                onConfirm: h
+              }) : e.features.has(_.GuildFeatures.DISCOVERABLE) ? (0, u.Z)({
+                title: T.intl.string(T.t.iBnVHc),
+                subtitle: T.intl.string(T.t["eMx/uZ"]),
+                confirmText: T.intl.string(T.t["cY+Oob"]),
+                cancelText: T.intl.string(T.t.oEAioF),
+                onConfirm: h
+              }) : e.features.has(_.GuildFeatures.PARTNERED) ? (0, u.Z)({
+                title: T.intl.string(T.t.iBnVHc),
+                subtitle: T.intl.string(T.t.l1wLeX),
+                confirmText: T.intl.string(T.t["cY+Oob"]),
+                cancelText: T.intl.string(T.t.oEAioF),
+                onConfirm: h
+              }) : h()
             },
-            disabled: !require
+            disabled: !n
           })
         })
       })]
     })
   },
   L = () => {
-    let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
-    return null == module ? null : module.features.has(Chunk981631.GuildFeatures.COMMUNITY) ? (0, Chunk54381.jsx)(A, {}) : (0, Chunk54381.jsx)(Chunk906512.Z, {
-      guild: module
+    let e = (0, a.e7)([E.Z], () => E.Z.getGuild());
+    return null == e ? null : e.features.has(_.GuildFeatures.COMMUNITY) ? (0, r.jsx)(A, {}) : (0, r.jsx)(I.Z, {
+      guild: e
     })
   }

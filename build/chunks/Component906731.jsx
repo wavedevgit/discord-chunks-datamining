@@ -16,18 +16,18 @@ let s = {
     component: function() {
       let {
         resetOnboardingExperience: e
-      } = (0, Chunk52647.Z)();
-      return (0, Chunk54381.jsxs)("div", {
-        className: Chunk570810.verticalContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      } = (0, a.Z)();
+      return (0, r.jsxs)("div", {
+        className: o.verticalContainer,
+        children: [(0, r.jsx)(i.Text, {
           variant: "text-md/normal",
           color: "text-feedback-info",
           style: {
             marginBottom: "8px"
           },
           children: "Use this to reset your user's DCF Orb Onboarding state."
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-          onClick: () => module(),
+        }), (0, r.jsx)(i.Button, {
+          onClick: () => e(),
           text: "Reset Announcement Modal State"
         })]
       })

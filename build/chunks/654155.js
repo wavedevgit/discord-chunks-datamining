@@ -18,7 +18,7 @@ class a {
   start() {
     this.isPolling || (this.isPolling = true, this.pollIntervalId = setInterval(() => {
       this.poll()
-    }, Chunk597796.G))
+    }, n.G))
   }
   stop() {
     this.isPolling && (this.isPolling = false, null != this.pollIntervalId && (clearInterval(this.pollIntervalId), this.pollIntervalId = null), this.eventPoller.reset())

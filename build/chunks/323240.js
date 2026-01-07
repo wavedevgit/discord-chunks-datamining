@@ -49,5 +49,5 @@ module.exports = function() {
       }), s(e, t, n)
     }
   };
-  return exports
+  return t
 }

@@ -15,20 +15,20 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk888327 = require("./888327.js");
 
 function d() {
-  return (0, Chunk54381.jsx)(Chunk489813.PU, {
-    className: Chunk888327.editableRequirementContainer,
-    icon: Chunk481060.AtH,
-    text: Chunk388032.intl.string(Chunk388032.t.woMjLV),
-    footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TY"]),
+  return (0, r.jsx)(s.PU, {
+    className: u.editableRequirementContainer,
+    icon: i.AtH,
+    text: c.intl.string(c.t.woMjLV),
+    footnote: c.intl.string(c.t["jMh+TY"]),
     meetsRequirement: false,
-    children: (0, Chunk54381.jsx)(Chunk28664.u, {
+    children: (0, r.jsx)(l.u, {
       asContainer: true,
-      text: Chunk388032.intl.string(Chunk388032.t.mGlP30),
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      text: c.intl.string(c.t.mGlP30),
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,
-        text: Chunk388032.intl.string(Chunk388032.t["13ofGu"])
+        text: c.intl.string(c.t["13ofGu"])
       })
     })
   })

@@ -64,33 +64,33 @@ function j() {
   let {
     guild: t,
     submitting: n
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => ({
-    guild: Chunk999382.Z.getGuild(),
-    submitting: Chunk999382.Z.isSubmitting()
-  })), c = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.KICK_MEMBERS, exports)), x = false, j = null;
-  return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (x = true, j = (0, Chunk54381.jsx)(Chunk481060.Text, {
+  } = (0, l.cj)([g.Z], () => ({
+    guild: g.Z.getGuild(),
+    submitting: g.Z.isSubmitting()
+  })), c = (0, l.e7)([d.Z], () => d.Z.can(p.Plq.KICK_MEMBERS, t)), x = false, j = null;
+  return c || (null == (e = f.default.editedIntegration) ? true : e.expire_behavior) !== i.l.KICK || (x = true, j = (0, r.jsx)(s.Text, {
     color: "text-feedback-critical",
     variant: "text-md/normal",
-    children: Chunk388032.intl.string(Chunk388032.t["mrO/ZQ"])
-  })), (0, Chunk54381.jsx)(Chunk796027.Z, {
-    submitting: require,
+    children: h.intl.string(h.t["mrO/ZQ"])
+  })), (0, r.jsx)(a.Z, {
+    submitting: n,
     disabled: x,
     errorMessage: j,
     onReset: () => {
-      Chunk139387.Z.init(), Chunk821864.Ui(), null != exports && Chunk434404.Z.init(exports.id)
+      o.Z.init(), m.Ui(), null != t && u.Z.init(t.id)
     },
     onSave: () => {
-      if (null != exports) {
-        if (null != Chunk145260.default.editedIntegration) Chunk139387.Z.saveIntegration(exports.id, Chunk145260.default.editedIntegration);
-        else if (null != Chunk145260.default.editedWebhook) Chunk139387.Z.saveWebhook(exports.id, Chunk145260.default.editedWebhook);
-        else if (null != Chunk145260.default.editedCommandId) {
-          let e = Chunk145260.default.getSectionId(),
-            n = Chunk905753.Z.getEditedApplication();
-          if (null == module || null == require) return;
-          Chunk139387.Z.saveApplicationPermissions(module, exports.id, Object.values(require))
+      if (null != t) {
+        if (null != f.default.editedIntegration) o.Z.saveIntegration(t.id, f.default.editedIntegration);
+        else if (null != f.default.editedWebhook) o.Z.saveWebhook(t.id, f.default.editedWebhook);
+        else if (null != f.default.editedCommandId) {
+          let e = f.default.getSectionId(),
+            n = b.Z.getEditedApplication();
+          if (null == e || null == n) return;
+          o.Z.saveApplicationPermissions(e, t.id, Object.values(n))
         }
-        Chunk999382.Z.hasChanges() && Chunk434404.Z.saveGuild(exports.id, {
-          features: exports.features
+        g.Z.hasChanges() && u.Z.saveGuild(t.id, {
+          features: t.features
         })
       }
     }

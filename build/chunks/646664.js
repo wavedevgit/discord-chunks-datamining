@@ -1,6 +1,10 @@
 /** Chunk was on web.js **/
 /** chunk id: 646664, original params: e,t,n (module,exports,re quire) **/
-letChunk942177 = require("./942177.js"), Chunk13556 = require("./13556.js"), s = (t = module.exports = {}).re = [], l = exports.safeRe = [], c = exports.src = [], u = exports.t = {}, d = 0, f = "[a-zA-Z0-9-]", p = [
+let {
+  MAX_SAFE_COMPONENT_LENGTH: r,
+  MAX_SAFE_BUILD_LENGTH: i,
+  MAX_LENGTH: a
+} = require("./942177.js"), Chunk13556 = require("./13556.js"), s = (t = module.exports = {}).re = [], l = exports.safeRe = [], c = exports.src = [], u = exports.t = {}, d = 0, f = "[a-zA-Z0-9-]", p = [
   ["\\s", 1],
   ["\\d", a],
   [f, i]

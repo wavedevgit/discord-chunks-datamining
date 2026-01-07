@@ -17,30 +17,30 @@ function f() {
   let {
     trackUserProfileAction: e,
     trackUserProfileEditAction: t
-  } = (0, Chunk785717.KZ)(), n = Chunk473749.useRef(false), f = (0, Chunk810473.Z)(), g = Chunk473749.useMemo(() => {
+  } = (0, l.KZ)(), n = i.useRef(false), f = (0, o.Z)(), g = i.useMemo(() => {
     let e = new Set(f);
-    return Chunk247397.rR.filter(t => e.has(t))
+    return s.rR.filter(t => e.has(t))
   }, [f]);
-  return Chunk473749.useEffect(() => {
-    require.current || (module({
+  return i.useEffect(() => {
+    n.current || (e({
       action: "VIEW_WIDGETS_EMPTY_STATE"
-    }), require.current = true)
-  }, [module]), (0, Chunk54381.jsxs)("div", {
-    className: Chunk875699.empty,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk875699.textContainer,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), n.current = true)
+  }, [e]), (0, r.jsxs)("div", {
+    className: d.empty,
+    children: [(0, r.jsxs)("div", {
+      className: d.textContainer,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/medium",
         color: "text-strong",
-        children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: u.intl.string(u.t["oqalC+"])
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: Chunk388032.intl.string(Chunk388032.t.O9SQ1c)
+        children: u.intl.string(u.t.O9SQ1c)
       })]
-    }), (0, Chunk54381.jsx)("ul", {
-      className: Chunk875699.widgetGrid,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSA"]),
+    }), (0, r.jsx)("ul", {
+      className: d.widgetGrid,
+      "aria-label": u.intl.string(u.t["+EIBSA"]),
       children: g.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(c.Z, {
           widgetType: e,

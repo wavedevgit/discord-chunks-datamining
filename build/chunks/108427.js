@@ -70,15 +70,15 @@ class _ {
     var e, t, n;
     if (window.__TTI_COMPLETED) return;
     window.__TTI_COMPLETED = true;
-    let r = null == (n = window.location) || null == (t = require.pathname) || null == (e = exports.split("/")) ? true : module[1];
+    let r = null == (n = window.location) || null == (t = n.pathname) || null == (e = t.split("/")) ? true : e[1];
     requestIdleCallback(() => {
       let e = p();
-      Chunk218543.Z.firstRenderAfterReadyPayload.record();
-      let t = Chunk218543.Z.serializeWebPerfStartupMetrics(module);
-      Chunk626135.default.track(Chunk981631.rMx.APP_WEB_PERF_STARTUP_METRICS, u({
+      s.Z.firstRenderAfterReadyPayload.record();
+      let t = s.Z.serializeWebPerfStartupMetrics(e);
+      a.default.track(l.rMx.APP_WEB_PERF_STARTUP_METRICS, u({
         load_id: this.loadId,
-        url_root_path: Chunk772848
-      }, exports))
+        url_root_path: r
+      }, t))
     })
   }
   trackAppUIViewed(e) {
@@ -91,7 +91,7 @@ class _ {
     }
   }
   constructor() {
-    c(this, "loadId", (0, Chunk772848.Z)()), c(this, "appUIViewed", false)
+    c(this, "loadId", (0, r.Z)()), c(this, "appUIViewed", false)
   }
 }
 let m = new _;
@@ -107,9 +107,9 @@ function g() {
 function E() {
   var e, t, n;
   let r = "--campaign-id=";
-  for (let a of null != (n = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getMainArgvSync) ? true : module.call(exports)) ? require : [])
-    if (Chunk626135.startsWith(Chunk772848)) return {
-      referrer: Chunk626135.substr(Chunk772848.length)
+  for (let a of null != (n = null === i.Z || true === i.Z || null == (t = i.Z.processUtils) || null == (e = t.getMainArgvSync) ? true : e.call(t)) ? n : [])
+    if (a.startsWith(r)) return {
+      referrer: a.substr(r.length)
     };
   return {}
 }
@@ -132,5 +132,5 @@ function b() {
       i = null != n.decodedBodySize ? n.decodedBodySize : n.encodedBodySize,
       a = n.transferSize;
     null != i && null != r && (e = true, t.total_compressed_byte_size += r, t.total_uncompressed_byte_size += i, null != a && (t.total_uncompressed_byte_size += a), "resource" === n.entryType && ("script" === n.initiatorType && null != n.name && null != n.name.match(/\.js/) && (t.js_compressed_byte_size += r, t.js_uncompressed_byte_size += i, null != a && (t.js_uncompressed_byte_size += a)), "link" === n.initiatorType && null != n.name && null != n.name.match(/\.css/) && (t.css_compressed_byte_size += r, t.css_uncompressed_byte_size += i, null != a && (t.css_uncompressed_byte_size += a))))
-  }), module ? exports : {}
+  }), e ? t : {}
 }

@@ -23,16 +23,16 @@ class g extends Chunk473749.PureComponent {
     let {
       tier: e
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk745844.tierPill,
-      children: [(0, Chunk54381.jsx)(Chunk297700.Z, {
-        className: Chunk745844.tierPillStar,
-        children: (0, Chunk54381.jsx)(Chunk471885.Z, {
-          tier: module,
+    return (0, r.jsxs)("div", {
+      className: h.tierPill,
+      children: [(0, r.jsx)(c.Z, {
+        className: h.tierPillStar,
+        children: (0, r.jsx)(u.Z, {
+          tier: e,
           color: "currentColor",
-          className: Chunk745844.tierPillGem
+          className: h.tierPillGem
         })
-      }), (0, Chunk267642.nW)(module)]
+      }), (0, f.nW)(e)]
     })
   }
 }

@@ -14,16 +14,16 @@ var Chunk493683 = require("./493683.js"),
   Chunk517319 = require("./517319.js");
 
 function u() {
-  let e = (0, Chunk631885.ZM)(),
+  let e = (0, a.ZM)(),
     t = () => {
-      (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
-        recipientIds: module
+      (0, s.default)(), i.Z.openPrivateChannel({
+        recipientIds: e
       })
     };
-  return (0, Chunk54381.jsx)(Chunk907995.f, {
-    label: Chunk517319.default.i284fU,
-    labelHook: exports,
-    noticeType: Chunk484710.nq.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
-    count: module.length
+  return (0, r.jsx)(o.f, {
+    label: c.default.i284fU,
+    labelHook: t,
+    noticeType: l.nq.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
+    count: e.length
   })
 }

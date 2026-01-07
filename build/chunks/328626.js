@@ -8,12 +8,12 @@ require.d(exports, {
 var r, Chunk473749 = require("./473749.js"),
   a = ((r = {}).MOUNTED = "mounted", r.SORT_OUT = "sort-out", r.SORT_IN = "sort-in", r.SHUFFLE_OUT = "shuffle-out", r.SHUFFLE_IN = "shuffle-in", r.FINISHED = "finished", r);
 let s = () => {
-  let [e, t] = Chunk473749.useState("mounted"), [n, r] = Chunk473749.useState(false), a = Chunk473749.useRef(null);
-  return Chunk473749.useEffect(() => {
-    require && "finished" === module && (null !== a.current && a.current.focus(), r(false))
-  }, [module, require]), {
-    animationPhase: module,
-    startAnimation: Chunk473749.useCallback(e => {
+  let [e, t] = l.useState("mounted"), [n, r] = l.useState(false), a = l.useRef(null);
+  return l.useEffect(() => {
+    n && "finished" === e && (null !== a.current && a.current.focus(), r(false))
+  }, [e, n]), {
+    animationPhase: e,
+    startAnimation: l.useCallback(e => {
       let {
         isShuffling: n,
         onOutroComplete: l,

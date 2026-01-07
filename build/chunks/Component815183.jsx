@@ -10,25 +10,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk583901 = require("./583901.jsx"),
   Chunk231338 = require("./231338.js");
 let c = function() {
-  let e = (0, Chunk410030.ZP)();
-  return (0, Chunk54381.jsx)(Chunk481060.gNt, {
+  let e = (0, l.ZP)();
+  return (0, a.jsx)(r.gNt, {
     label: "Theme",
-    children: (0, Chunk54381.jsxs)("div", {
+    children: (0, a.jsxs)("div", {
       style: {
         display: "flex",
         justifyContent: "space-between"
       },
-      children: [(0, Chunk54381.jsx)(Chunk583901.bD, {
-        theme: Chunk231338.BR.LIGHT,
-        isSelected: module === Chunk231338.BR.LIGHT,
-        onSelect: () => (0, Chunk153867.ZI)({
-          theme: Chunk231338.BR.LIGHT
+      children: [(0, a.jsx)(s.bD, {
+        theme: o.BR.LIGHT,
+        isSelected: e === o.BR.LIGHT,
+        onSelect: () => (0, i.ZI)({
+          theme: o.BR.LIGHT
         })
-      }), (0, Chunk54381.jsx)(Chunk583901.bD, {
-        theme: Chunk231338.BR.DARK,
-        isSelected: module === Chunk231338.BR.DARK,
-        onSelect: () => (0, Chunk153867.ZI)({
-          theme: Chunk231338.BR.DARK
+      }), (0, a.jsx)(s.bD, {
+        theme: o.BR.DARK,
+        isSelected: e === o.BR.DARK,
+        onSelect: () => (0, i.ZI)({
+          theme: o.BR.DARK
         })
       })]
     })

@@ -74,7 +74,7 @@ function E(e) {
     }
   })
 }
-let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+let v = () => (0, a.e7)([c.Z, u.Z], () => null != c.Z.error ? "shop load fetch categories error: ".concat(c.Z.error.message) : null != u.Z.claimError ? "shop load claim error: ".concat(u.Z.claimError.message) : null != u.Z.fetchError ? "shop load fetch purchase error: ".concat(u.Z.fetchError.message) : true),
   S = e => {
     let t = (0, a.e7)([o.default], () => o.default.getCurrentUser()),
       {

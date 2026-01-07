@@ -34,14 +34,14 @@ let c = "https://discordapp.onelink.me",
 function d() {
   var e, t;
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
-    r = RegExp("(".concat(require.join("|"), ")"), "ig"),
-    a = (null === i() || true === i() || null == (e = i().ua) ? true : module.match(Chunk264344)) != null,
-    o = (null === i() || true === i() ? true : i().name) === "Safari" && !Chunk772848;
-  return (null === i() || true === i() || null == (t = i().os) ? true : exports.family) !== "iOS" || Chunk511266
+    r = RegExp("(".concat(n.join("|"), ")"), "ig"),
+    a = (null === i() || true === i() || null == (e = i().ua) ? true : e.match(r)) != null,
+    o = (null === i() || true === i() ? true : i().name) === "Safari" && !a;
+  return (null === i() || true === i() || null == (t = i().os) ? true : t.family) !== "iOS" || o
 }
 
 function f() {
-  return (0, Chunk772848.Z)()
+  return (0, a.Z)()
 }
 
 function p(e) {

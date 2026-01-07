@@ -47,41 +47,41 @@ function v(e) {
 let S = 1e3;
 
 function I() {
-  let [e, t] = Chunk473749.useState(false), O = (0, Chunk481060.VXO)(Chunk596401.Xd), I = Chunk473749.useMemo(() => [Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [T, C] = (0, Chunk243778.US)(I), A = T === Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
-  Chunk473749.useLayoutEffect(() => {
-    null != N && Chunk709054.default.age(N) < Chunk70956.Z.Millis.DAY && (0, Chunk266454.Q3)(Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
+  let [e, t] = i.useState(false), O = (0, l.VXO)(E.Xd), I = i.useMemo(() => [o.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [T, C] = (0, p.US)(I), A = T === o.z.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, a.e7)([m.default], () => m.default.getId());
+  i.useLayoutEffect(() => {
+    null != N && g.default.age(N) < h.Z.Millis.DAY && (0, f.Q3)(o.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
-      t = "true" === Chunk433517.K.get(module);
-    !A || exports || Chunk210887.Z.theme !== Chunk231338.BR.DARK || null != Chunk514361.Z.gradientPreset || exports || (Chunk433517.K.set(module, "true"), (0, Chunk153867.ZI)({
-      theme: Chunk231338.BR.DARKER
+      t = "true" === s.K.get(e);
+    !A || t || _.Z.theme !== y.BR.DARK || null != d.Z.gradientPreset || t || (s.K.set(e, "true"), (0, u.ZI)({
+      theme: y.BR.DARKER
     }))
-  }, [A, N]), Chunk473749.useLayoutEffect(() => {
+  }, [A, N]), i.useLayoutEffect(() => {
     function e() {
-      exports(true)
+      t(true)
     }
-    return Chunk570140.Z.subscribe("CHANGE_LOG_RESOLVED", module), () => {
-      Chunk570140.Z.unsubscribe("CHANGE_LOG_RESOLVED", module)
+    return c.Z.subscribe("CHANGE_LOG_RESOLVED", e), () => {
+      c.Z.unsubscribe("CHANGE_LOG_RESOLVED", e)
     }
   }, []);
-  let P = Chunk473749.useCallback(() => {
-    (0, Chunk481060.ZDy)(async () => {
+  let P = i.useCallback(() => {
+    (0, l.ZDy)(async () => {
       let {
         DesktopRefreshOnboardingModal: e
-      } = await require.e("49910").then(require.bind(require, 239191));
+      } = await n.e("49910").then(n.bind(n, 239191));
       return t => (0, r.jsx)(e, v({}, t))
     }, {
-      backdropStyle: Chunk481060.fCB.TOP_RADIAL,
+      backdropStyle: l.fCB.TOP_RADIAL,
       onCloseCallback: () => {
-        C(Chunk921944.L.USER_DISMISS)
+        C(b.L.USER_DISMISS)
       }
     })
   }, [C]);
-  Chunk473749.useEffect(() => {
-    if (A && !O && module) {
+  i.useEffect(() => {
+    if (A && !O && e) {
       let e = setTimeout(() => {
         P()
       }, S);
-      return () => clearTimeout(module)
+      return () => clearTimeout(e)
     }
-  }, [module, O, A, P])
+  }, [e, O, A, P])
 }

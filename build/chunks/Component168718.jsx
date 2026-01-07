@@ -49,9 +49,9 @@ class m extends Chunk473749.Component {
     } = this.props, {
       layerContainerElement: n
     } = this.state;
-    return (0, Chunk54381.jsx)(module.Provider, {
-      value: this.getContextValue(require),
-      children: exports
+    return (0, r.jsx)(e.Provider, {
+      value: this.getContextValue(n),
+      children: t
     })
   }
   constructor(...e) {

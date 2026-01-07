@@ -132,12 +132,12 @@ class N extends Chunk473749.PureComponent {
     var e, t;
     let {
       editor: n
-    } = this.props, r = Chunk887490.bN.isEditorEmpty(require) && null == require.composition;
-    if (Chunk54381 !== this.state.showPlaceholder && this.setState({
-        showPlaceholder: Chunk54381
-      }), null == (e = (t = this.props).onChange) || module.call(exports, Chunk887490.bN.richValue(require)), false === this.props.canFocus) {
-      let e = Chunk685578.F3.findDocumentOrShadowRoot(require).getSelection();
-      null != module && this.isSelectionPartiallyInside(module) && (null == module || module.removeAllRanges())
+    } = this.props, r = h.bN.isEditorEmpty(n) && null == n.composition;
+    if (r !== this.state.showPlaceholder && this.setState({
+        showPlaceholder: r
+      }), null == (e = (t = this.props).onChange) || e.call(t, h.bN.richValue(n)), false === this.props.canFocus) {
+      let e = s.F3.findDocumentOrShadowRoot(n).getSelection();
+      null != e && this.isSelectionPartiallyInside(e) && (null == e || e.removeAllRanges())
     }
   }
   handleKeyDown(e) {
@@ -191,36 +191,36 @@ class N extends Chunk473749.PureComponent {
     this.state.showPlaceholder && this.setState({
       showPlaceholder: false
     });
-    let i = null != require.selection && Chunk887490.M8.isCollapsed(require.selection) ? Chunk887490.bN.leaf(require, require.selection.anchor.path) : null;
-    if (null == Chunk473749) {
-      require.composition = Chunk54381;
+    let i = null != n.selection && h.M8.isCollapsed(n.selection) ? h.bN.leaf(n, n.selection.anchor.path) : null;
+    if (null == i) {
+      n.composition = r;
       return
     }
-    if (null != (null != require.selection && Chunk887490.M8.isCollapsed(require.selection) ? Chunk887490.bN.above(require, {
-        at: Chunk473749[1],
+    if (null != (null != n.selection && h.M8.isCollapsed(n.selection) ? h.bN.above(n, {
+        at: i[1],
         match: e => h.bN.isInline(n, e),
         mode: "lowest"
-      }) : null) && (Chunk54381.startedInsideInline = true), Chunk887490.bN.isEditorEmpty(require)) {
-      Chunk436660.Q.insertNodes(require, {
+      }) : null) && (r.startedInsideInline = true), h.bN.isEditorEmpty(n)) {
+      m.Q.insertNodes(n, {
         text: "\uFEFF"
       }, {
         select: true
-      }), Chunk54381.insertedPrefix = true, require.composition = Chunk54381;
+      }), r.insertedPrefix = true, n.composition = r;
       return
     }
-    let a = Chunk685578.F3.findDocumentOrShadowRoot(this.props.editor).getSelection(),
-      o = (null != (e = null == Chunk120356 ? true : Chunk120356.rangeCount) ? module : 0) > 0 ? null == Chunk120356 ? true : Chunk120356.getRangeAt(0) : null;
-    if (null == (null != o ? Chunk887490.bN.toSlateRange(require, o, {
+    let a = s.F3.findDocumentOrShadowRoot(this.props.editor).getSelection(),
+      o = (null != (e = null == a ? true : a.rangeCount) ? e : 0) > 0 ? null == a ? true : a.getRangeAt(0) : null;
+    if (null == (null != o ? h.bN.toSlateRange(n, o, {
         exactMatch: true,
         suppressThrow: true
       }) : null) && null != o) {
-      let e = Chunk887490.bN.toSlateRange(require, o, {
+      let e = h.bN.toSlateRange(n, o, {
         exactMatch: false,
         suppressThrow: true
       });
-      require.selection = null, null != module ? Chunk436660.Q.select(require, module) : Chunk436660.Q.select(require, null != (t = require.selection) ? exports : Chunk887490.bN.end(require, []))
+      n.selection = null, null != e ? m.Q.select(n, e) : m.Q.select(n, null != (t = n.selection) ? t : h.bN.end(n, []))
     }
-    require.composition = Chunk54381
+    n.composition = r
   }
   handleCompositionEnd(e) {
     let {
@@ -350,21 +350,21 @@ class N extends Chunk473749.PureComponent {
         onKeyUp: g,
         renderExtraElement: E,
         renderExtraLeaf: b
-      } = module,
-      v = C(module, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "decorate", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "renderExtraElement", "renderExtraLeaf"]);
-    return (0, Chunk54381.jsxs)("div", {
+      } = e,
+      v = C(e, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "decorate", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "renderExtraElement", "renderExtraLeaf"]);
+    return (0, r.jsxs)("div", {
       ref: this.containerRef,
-      className: Chunk473749,
-      children: [this.state.showPlaceholder ? (0, Chunk54381.jsx)("div", {
-        className: o()(Chunk889863.placeholder, require),
+      className: i,
+      children: [this.state.showPlaceholder ? (0, r.jsx)("div", {
+        className: o()(y.placeholder, n),
         "aria-hidden": true,
-        children: Chunk728285
-      }) : null, (0, Chunk54381.jsx)(Chunk685578.mH, {
-        editor: exports,
+        children: c
+      }) : null, (0, r.jsx)(s.mH, {
+        editor: t,
         value: [...this.state.initialValue],
-        children: (0, Chunk54381.jsx)(Chunk685578.CX, T(S({}, v), {
-          className: o()(Chunk960324.markup, Chunk889863.editor, require),
-          decorate: Chunk358085,
+        children: (0, r.jsx)(s.CX, T(S({}, v), {
+          className: o()(O.markup, y.editor, n),
+          decorate: u,
           renderElement: this.renderElement,
           renderLeaf: this.renderLeaf,
           onFocusCapture: this.handleFocusCapture,
@@ -376,10 +376,10 @@ class N extends Chunk473749.PureComponent {
           onCompositionStart: this.handleCompositionStart,
           onCompositionEnd: this.handleCompositionEnd,
           onPasteCapture: this.handlePasteCapture,
-          autoFocus: Chunk239091 && false !== Chunk120356,
+          autoFocus: l && false !== a,
           autoCorrect: "off",
-          "data-can-focus": false !== Chunk120356,
-          "aria-label": Chunk728285,
+          "data-can-focus": false !== a,
+          "aria-label": c,
           "aria-multiline": true
         }))
       })]

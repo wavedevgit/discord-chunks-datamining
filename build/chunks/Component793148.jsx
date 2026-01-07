@@ -35,7 +35,7 @@ class _ extends(r = Chunk473749.PureComponent) {
       value: t,
       maxValue: n
     } = this.props, r = this._mediaBar.current;
-    null != r && (module ? r.setGrabber(0) : r.setGrabber(exports / require))
+    null != r && (e ? r.setGrabber(0) : r.setGrabber(t / n))
   }
   render() {
     let {
@@ -55,9 +55,9 @@ class _ extends(r = Chunk473749.PureComponent) {
       hovered: b,
       focused: y,
       dragging: O
-    } = this.state, v = Chunk481060.gj8;
-    return f || h === _ ? v = Chunk481060.OyP : h < m / 2 && (v = Chunk481060.X2j), (0, Chunk54381.jsxs)("div", {
-      className: s()(require, Chunk397813.container),
+    } = this.state, v = l.gj8;
+    return f || h === _ ? v = l.OyP : h < m / 2 && (v = l.X2j), (0, i.jsxs)("div", {
+      className: s()(n, d.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
           hovered: true
@@ -74,9 +74,9 @@ class _ extends(r = Chunk473749.PureComponent) {
         focused: false
       }),
       onKeyDown: this.handleKeyDown,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: s()(Chunk397813.volumeButtonSlider, r, {
-          [Chunk397813.sliderVisible]: b || y || O
+      children: [(0, i.jsx)("div", {
+        className: s()(d.volumeButtonSlider, r, {
+          [d.sliderVisible]: b || y || O
         }),
         onMouseEnter: () => {
           clearTimeout(this._hoverTimeout), this.setState({
@@ -88,23 +88,23 @@ class _ extends(r = Chunk473749.PureComponent) {
             hovered: false
           }), p)
         },
-        children: (0, Chunk54381.jsx)(Chunk540026.Z, {
-          sliderClassName: Chunk473749,
-          type: Chunk540026.Z.Types.VOLUME,
+        children: (0, i.jsx)(c.Z, {
+          sliderClassName: a,
+          type: c.Z.Types.VOLUME,
           value: h / m,
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,
-          currentWindow: Chunk120356,
+          currentWindow: o,
           ref: this._mediaBar
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.P3F, {
-        className: Chunk397813.volumeButton,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["19lt24"]),
+      }), (0, i.jsx)(l.P3F, {
+        className: d.volumeButton,
+        "aria-label": u.intl.string(u.t["19lt24"]),
         onClick: this.handleToggleMute,
-        children: (0, Chunk54381.jsx)(v, {
-          color: exports,
-          className: module
+        children: (0, i.jsx)(v, {
+          color: t,
+          className: e
         })
       })]
     })

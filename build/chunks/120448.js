@@ -3,7 +3,7 @@
 "use strict";
 module.exports = function() {
   var e = this,
-    Chunk562255 = require("./562255.js"),
-    r = module.element;
-  module.eventHandler = require("./925965.js").bind(module), Chunk562255(r, "keypress", module.eventHandler), Chunk562255(r, "keydown", module.eventHandler), Chunk562255(r, "keyup", module.eventHandler)
+    t = n(562255),
+    r = e.element;
+  e.eventHandler = n(925965).bind(e), t(r, "keypress", e.eventHandler), t(r, "keydown", e.eventHandler), t(r, "keyup", e.eventHandler)
 }

@@ -25,7 +25,7 @@ let l = {
 };
 class c extends Chunk836560.EventEmitter {
   stop() {
-    for (let e of (this.pc1.close(), this.pc2.close(), this.input.destroy(), Object.keys(this.outputs))) this.destroyOutput(module)
+    for (let e of (this.pc1.close(), this.pc2.close(), this.input.destroy(), Object.keys(this.outputs))) this.destroyOutput(e)
   }
   setAudioSource(e) {
     this.input.setSource(e)

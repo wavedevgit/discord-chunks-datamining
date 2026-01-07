@@ -22,7 +22,7 @@ class i {
   }
   dequeue() {
     let e = this._queue.shift();
-    return null == module ? true : module.run
+    return null == e ? true : e.run
   }
   filter(e) {
     return this._queue.filter(t => t.priority === e.priority).map(e => e.run)

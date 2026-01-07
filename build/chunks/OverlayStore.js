@@ -740,11 +740,11 @@ E(z, "displayName", "LayoutStore"), E(z, "persistKey", "LayoutStore"), E(z, "mig
     positions: t,
     sizes: n,
     v: r
-  } = b({}, Chunk433517.K.get("OverlayStore"));
-  if (5 === r && module) {
+  } = b({}, u.K.get("OverlayStore"));
+  if (5 === r && e) {
     let r = v,
       i = [],
-      a = module.map(e => {
+      a = e.map(e => {
         let a = null != t ? t[e] : null,
           o = null != n ? n[e] : null,
           s = {
@@ -772,7 +772,7 @@ E(z, "displayName", "LayoutStore"), E(z, "persistKey", "LayoutStore"), E(z, "mig
       };
     return {
       layouts: [
-        [r, Chunk392711]
+        [r, o]
       ],
       widgets: i
     }

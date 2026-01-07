@@ -11,21 +11,21 @@ var Chunk473749 = require("./473749.js"),
   Chunk333984 = require("./333984.js");
 
 function c() {
-  let e = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getPrivateChannelsVersion()),
-    t = (0, Chunk442837.Wu)([Chunk592125.Z, Chunk333984.Z], () => {
-      let e = Chunk592125.Z.getMutablePrivateChannels(),
-        t = Array.from(Chunk333984.Z.getSpamChannelIds()).map(t => e[t]).filter(e => null != e);
-      return (0, Chunk900255.x)(exports)
-    }, [module]),
-    n = (0, Chunk442837.cj)([Chunk594174.default], () => {
+  let e = (0, i.e7)([l.Z], () => l.Z.getPrivateChannelsVersion()),
+    t = (0, i.Wu)([l.Z, s.Z], () => {
+      let e = l.Z.getMutablePrivateChannels(),
+        t = Array.from(s.Z.getSpamChannelIds()).map(t => e[t]).filter(e => null != e);
+      return (0, o.x)(t)
+    }, [e]),
+    n = (0, i.cj)([a.default], () => {
       let e = {};
-      return exports.forEach(t => {
+      return t.forEach(t => {
         let n = a.default.getUser(t.recipients[0]);
         null != n && (e[t.id] = n)
-      }), module
-    }, [exports]);
-  return Chunk473749.useMemo(() => exports.map(e => ({
+      }), e
+    }, [t]);
+  return r.useMemo(() => t.map(e => ({
     channel: e,
     user: n[e.id]
-  })), [exports, require])
+  })), [t, n])
 }

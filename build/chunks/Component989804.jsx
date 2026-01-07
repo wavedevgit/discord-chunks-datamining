@@ -25,58 +25,58 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let x = Chunk473749.forwardRef(function() {
-    Chunk45493.Z.trackExposure({
+    f.Z.trackExposure({
       location: "cd25e4_1"
     });
-    let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-      t = (0, Chunk984802.Ll)(),
+    let e = (0, o.e7)([E.Z], () => E.Z.theme),
+      t = (0, S.Ll)(),
       {
         section: n,
         subsection: x,
         analyticsLocation: y,
         analyticsLocations: A
-      } = (0, Chunk442837.cj)([Chunk663389.Z], () => {
-        let e = Chunk663389.Z.getSection(),
-          t = Chunk663389.Z.getSubsection();
+      } = (0, o.cj)([b.Z], () => {
+        let e = b.Z.getSection(),
+          t = b.Z.getSubsection();
         return {
-          section: module,
-          subsection: exports,
-          analyticsLocation: Chunk663389.Z.getAnalyticsLocation(),
-          analyticsLocations: Chunk663389.Z.getAnalyticsLocations()
+          section: e,
+          subsection: t,
+          analyticsLocation: b.Z.getAnalyticsLocation(),
+          analyticsLocations: b.Z.getAnalyticsLocations()
         }
       }),
-      j = (0, Chunk110924.Z)(require),
-      P = (0, Chunk110924.Z)(x),
+      j = (0, u.Z)(n),
+      P = (0, u.Z)(x),
       {
         analyticsLocations: T
-      } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS);
-    Chunk473749.useEffect(() => {
-      null != require && (require !== j || x !== P) && (0, Chunk88658.QB)({
-        destinationPane: require,
+      } = (0, Z.ZP)(d.Z.USER_SETTINGS);
+    a.useEffect(() => {
+      null != n && (n !== j || x !== P) && (0, p.QB)({
+        destinationPane: n,
         originPane: null != j ? j : null,
         source: y,
         subsection: x,
         locationStack: A
       })
-    }, [require, j, x, P, y, A]);
+    }, [n, j, x, P, y, A]);
     let {
       hasSearchResults: w,
       searchResults: C
-    } = (0, Chunk839469.F)(), v = (0, Chunk991346.VO)(), G = (0, Chunk991346.q8)(C), R = Chunk473749.useMemo(() => w ? G : v, [w, G, v]), U = (0, Chunk332473.b)(), B = (0, Chunk968843.iO)(), F = Chunk473749.useCallback(e => {
+    } = (0, _.F)(), v = (0, L.VO)(), G = (0, L.q8)(C), R = a.useMemo(() => w ? G : v, [w, G, v]), U = (0, g.b)(), B = (0, h.iO)(), F = a.useCallback(e => {
       l.Z.setSection(e)
     }, []);
-    return (0, Chunk54381.jsx)(Chunk906732.Gt, {
+    return (0, i.jsx)(Z.Gt, {
       value: T,
-      children: (0, Chunk54381.jsx)(Chunk410575.Z, {
+      children: (0, i.jsx)(c.Z, {
         root: true,
-        page: Chunk981631.ZY5.USER_SETTINGS,
-        children: (0, Chunk54381.jsx)(Chunk503089.ZP, {
-          theme: module,
-          title: Chunk388032.intl.string(Chunk388032.t.cduTBL),
-          sidebarTheme: exports,
-          section: require,
+        page: m.ZY5.USER_SETTINGS,
+        children: (0, i.jsx)(r.ZP, {
+          theme: e,
+          title: k.intl.string(k.t.cduTBL),
+          sidebarTheme: t,
+          section: n,
           onSetSection: F,
-          onClose: Chunk37234.xf,
+          onClose: s.xf,
           sections: R,
           isEligibleForPomelo: U,
           questsForBadge: B,
@@ -86,12 +86,12 @@ let x = Chunk473749.forwardRef(function() {
     })
   }),
   y = Chunk473749.forwardRef(function() {
-    let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getAnalyticsLocations()),
+    let e = (0, o.e7)([b.Z], () => b.Z.getAnalyticsLocations()),
       {
         analyticsLocations: t
-      } = (0, Chunk906732.ZP)(module);
-    return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-      value: exports,
-      children: (0, Chunk54381.jsx)(x, {})
+      } = (0, Z.ZP)(e);
+    return (0, i.jsx)(Z.Gt, {
+      value: t,
+      children: (0, i.jsx)(x, {})
     })
   })

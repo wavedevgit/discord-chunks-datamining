@@ -37,31 +37,31 @@ function f(e) {
 let p = 5 * Chunk70956.Z.Millis.MINUTE;
 
 function _() {
-  return Chunk358085.isPlatformEmbedded
+  return s.isPlatformEmbedded
 }
 async function m() {
   var e, t, n, r, a, o, s, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M, k;
-  let U = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
+  let U = l.Z.getMemoryUsageElectronProcessTypeDetails();
   if (null == U) return null;
-  let G = [null != (y = null == (e = U.unknown) ? true : module.wss_priv_kb) ? y : false, null != (O = null == (t = U.main) ? true : exports.wss_priv_kb) ? O : false, null != (v = null == (n = U.renderer) ? true : require.wss_priv_kb) ? v : false, null != (S = null == (r = U.gpu) ? true : Chunk147913.wss_priv_kb) ? S : false, null != (I = null == (a = U.crashpad) ? true : Chunk626135.wss_priv_kb) ? I : false, null != (T = null == (o = U.utility) ? true : Chunk70956.wss_priv_kb) ? T : false],
+  let G = [null != (y = null == (e = U.unknown) ? true : e.wss_priv_kb) ? y : false, null != (O = null == (t = U.main) ? true : t.wss_priv_kb) ? O : false, null != (v = null == (n = U.renderer) ? true : n.wss_priv_kb) ? v : false, null != (S = null == (r = U.gpu) ? true : r.wss_priv_kb) ? S : false, null != (I = null == (a = U.crashpad) ? true : a.wss_priv_kb) ? I : false, null != (T = null == (o = U.utility) ? true : o.wss_priv_kb) ? T : false],
     Z = {
       electron_process_memory_private: G,
-      electron_process_memory_private_and_shared: [null != (C = null == (s = U.unknown) ? true : Chunk358085.wss_kb) ? C : false, null != (A = null == (c = U.main) ? true : Chunk998502.wss_kb) ? A : false, null != (N = null == (u = U.renderer) ? true : Chunk981631.wss_kb) ? N : false, null != (P = null == (d = U.gpu) ? true : d.wss_kb) ? P : false, null != (R = null == (f = U.crashpad) ? true : f.wss_kb) ? R : false, null != (w = null == (p = U.utility) ? true : p.wss_kb) ? w : false],
+      electron_process_memory_private_and_shared: [null != (C = null == (s = U.unknown) ? true : s.wss_kb) ? C : false, null != (A = null == (c = U.main) ? true : c.wss_kb) ? A : false, null != (N = null == (u = U.renderer) ? true : u.wss_kb) ? N : false, null != (P = null == (d = U.gpu) ? true : d.wss_kb) ? P : false, null != (R = null == (f = U.crashpad) ? true : f.wss_kb) ? R : false, null != (w = null == (p = U.utility) ? true : p.wss_kb) ? w : false],
       electron_process_type_count: [null != (D = null == (_ = U.unknown) ? true : _.proc_count) ? D : 0, null != (x = null == (m = U.main) ? true : m.proc_count) ? x : 0, null != (L = null == (h = U.renderer) ? true : h.proc_count) ? L : 0, null != (j = null == (g = U.gpu) ? true : g.proc_count) ? j : 0, null != (M = null == (E = U.crashpad) ? true : E.proc_count) ? M : 0, null != (k = null == (b = U.utility) ? true : b.proc_count) ? k : 0]
     },
-    F = await (0, Chunk704806.q)();
+    F = await (0, i.q)();
   return null != F && (null != F.cpu_memory && (Z.system_memory_total = F.cpu_memory / 1024), null != F.cpu_memory_avail && (Z.system_memory_available = F.cpu_memory_avail / 1024)), Z
 }
 
 function h() {
-  let e = Chunk848479.Z.getMemoryHeapStats(),
-    t = Chunk848479.Z.getBlinkMemoryInfo(),
+  let e = l.Z.getMemoryHeapStats(),
+    t = l.Z.getBlinkMemoryInfo(),
     n = null;
-  null != module && (n = [module.totalHeapSize, module.totalHeapSizeExecutable, module.totalPhysicalSize, module.totalAvailableSize, module.usedHeapSize, module.heapSizeLimit, module.mallocedMemory, module.peakMallocedMemory]);
+  null != e && (n = [e.totalHeapSize, e.totalHeapSizeExecutable, e.totalPhysicalSize, e.totalAvailableSize, e.usedHeapSize, e.heapSizeLimit, e.mallocedMemory, e.peakMallocedMemory]);
   let r = null;
-  return null != exports && (r = [exports.allocated, exports.total]), {
-    v8_heap_stats: require,
-    blink_memory_stats: Chunk147913
+  return null != t && (r = [t.allocated, t.total]), {
+    v8_heap_stats: n,
+    blink_memory_stats: r
   }
 }
 async function g() {
@@ -70,26 +70,26 @@ async function g() {
     gpu_dedicated_memory: [],
     gpu_renderer_used_memory: []
   };
-  if (!Chunk358085.isPlatformEmbedded || !(0, Chunk358085.isWindows)()) return Chunk704806;
+  if (!s.isPlatformEmbedded || !(0, s.isWindows)()) return i;
   try {
-    if (await Chunk998502.ZP.ensureModule("discord_media"), (null == (r = Chunk998502.ZP.requireModule("discord_media")) ? true : Chunk147913.getMemoryUsageBlob) == null) return Chunk704806
+    if (await c.ZP.ensureModule("discord_media"), (null == (r = c.ZP.requireModule("discord_media")) ? true : r.getMemoryUsageBlob) == null) return i
   } catch (e) {
-    return Chunk704806
+    return i
   }
   let a = [],
     o = [],
-    l = await Chunk147913.getMemoryUsageBlob(),
+    l = await r.getMemoryUsageBlob(),
     u = new Set;
-  for (let r of null != (n = null == Chunk848479 || null == (t = Chunk848479[0]) || null == (e = exports.data) ? true : module.gpus) ? require : [])
-    if (!(!Chunk147913.luid || 0 === Chunk147913.luid || Chunk981631.has(Chunk147913.luid)))
-      if (Chunk981631.add(Chunk147913.luid), null != Chunk147913.memory ? Chunk626135.push(Chunk147913.memory / 1024) : Chunk626135.push(false), null != Chunk147913.memory_usage) {
+  for (let r of null != (n = null == l || null == (t = l[0]) || null == (e = t.data) ? true : e.gpus) ? n : [])
+    if (!(!r.luid || 0 === r.luid || u.has(r.luid)))
+      if (u.add(r.luid), null != r.memory ? a.push(r.memory / 1024) : a.push(false), null != r.memory_usage) {
         let e = 0;
-        for (let t of Chunk147913.memory_usage) exports.memory_usage && (e += exports.memory_usage / 1024);
-        Chunk70956.push(module)
-      } else Chunk70956.push(false);
+        for (let t of r.memory_usage) t.memory_usage && (e += t.memory_usage / 1024);
+        o.push(e)
+      } else o.push(false);
   return {
-    gpu_dedicated_memory: Chunk626135,
-    gpu_renderer_used_memory: Chunk70956
+    gpu_dedicated_memory: a,
+    gpu_renderer_used_memory: o
   }
 }
 class E extends Chunk147913.Z {
@@ -104,9 +104,9 @@ class E extends Chunk147913.Z {
   }
   async trackPerfAnalytics() {
     let e = await m();
-    if (null == module) return;
-    let t = f({}, module, h(), await g());
-    Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_HEARTBEAT, exports)
+    if (null == e) return;
+    let t = f({}, e, h(), await g());
+    a.default.track(u.rMx.DESKTOP_PERF_HEARTBEAT, t)
   }
   constructor(...e) {
     super(...e), d(this, "_heartbeatAnalyticsInterval", null), d(this, "actions", {

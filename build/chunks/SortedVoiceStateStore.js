@@ -178,7 +178,7 @@ class R {
   processPending() {
     if (null != this._pending) {
       let e = this._pending;
-      this._pending = true, module.forEach(e => this.updateVoiceState(e))
+      this._pending = true, e.forEach(e => this.updateVoiceState(e))
     }
   }
   constructor(e) {
@@ -265,8 +265,8 @@ function G(e) {
 
 function Z() {
   S = {};
-  let e = Chunk979651.Z.getAllVoiceStates();
-  Chunk709054.default.keys(module).forEach(t => {
+  let e = _.Z.getAllVoiceStates();
+  m.default.keys(e).forEach(t => {
     Object.keys(e[t]).forEach(e => {
       I(null != t ? t : g.ME).updateVoiceState(e)
     })
@@ -274,7 +274,7 @@ function Z() {
 }
 class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    Z(), this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk271383.ZP, Chunk594174.default, Chunk979651.Z), this.syncWith([Chunk594174.default], M)
+    Z(), this.waitFor(u.default, d.Z, f.ZP, p.default, _.Z), this.syncWith([p.default], M)
   }
   getVoiceStates(e) {
     return I(null != e ? e : g.ME).getVoiceStates()

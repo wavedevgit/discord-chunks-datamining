@@ -20,13 +20,13 @@ function m() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [, m] = Chunk290348.p9(module, exports), [b, p] = Chunk290348.Ek(module, exports), h = Chunk290348.qs(module, exports);
+  } = (0, a.N)(), [, m] = s.p9(e, t), [b, p] = s.Ek(e, t), h = s.qs(e, t);
 
   function x() {
-    (0, Chunk481060.ZDy)(async () => {
+    (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("63635").then(require.bind(require, 660727));
+      } = await n.e("63635").then(n.bind(n, 660727));
       return n => {
         var i, l;
         return (0, r.jsx)(e, (i = function(e) {
@@ -69,53 +69,53 @@ function m() {
       }
     })
   }
-  let j = (0, Chunk723047.mY)();
-  return (0, Chunk54381.jsx)(Chunk783454.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["Ah+sQ9"]),
-    description: Chunk388032.intl.string(Chunk388032.t.ixbWiB),
-    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  let j = (0, l.mY)();
+  return (0, r.jsx)(o.Z, {
+    title: g.intl.string(g.t["Ah+sQ9"]),
+    description: g.intl.string(g.t.ixbWiB),
+    children: (0, r.jsxs)(i.Kqy, {
       direction: "vertical",
       gap: 24,
-      children: [(0, Chunk54381.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t["6OUqDa"]),
+      children: [(0, r.jsx)(i.gNt, {
+        label: g.intl.string(g.t["6OUqDa"]),
         disabled: j,
-        children: (0, Chunk54381.jsx)(Chunk619326.Z, {
+        children: (0, r.jsx)(d.Z, {
           value: b,
           onChange: p,
           disabled: j
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t["zn8/AX"]),
+      }), (0, r.jsx)(i.gNt, {
+        label: g.intl.string(g.t["zn8/AX"]),
         disabled: j,
-        description: Chunk388032.intl.string(Chunk388032.t.AqHUrU),
-        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+        description: g.intl.string(g.t.AqHUrU),
+        children: (0, r.jsxs)(i.Kqy, {
           direction: "horizontal",
           gap: 16,
-          children: [(0, Chunk54381.jsx)(Chunk553204.Z, {
+          children: [(0, r.jsx)(u.Z, {
             role: h,
-            "aria-label": Chunk388032.intl.string(Chunk388032.t.mD1oGB),
+            "aria-label": g.intl.string(g.t.mD1oGB),
             onClick: x,
             disabled: j
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          }), (0, r.jsx)(i.Button, {
             variant: "secondary",
             onClick: x,
             disabled: j,
-            text: Chunk388032.intl.string(Chunk388032.t.mD1oGB)
+            text: g.intl.string(g.t.mD1oGB)
           })]
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.Rny, {
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk357923.previewContainer,
+      }), (0, r.jsx)(i.Rny, {
+        children: (0, r.jsxs)("div", {
+          className: f.previewContainer,
           "aria-hidden": true,
-          children: [(0, Chunk54381.jsx)(Chunk893729.Z, {
-            guildId: exports,
+          children: [(0, r.jsx)(c.Z, {
+            guildId: t,
             role: h,
-            className: Chunk357923.messageContainer,
+            className: f.messageContainer,
             theme: "light"
-          }), (0, Chunk54381.jsx)(Chunk893729.Z, {
-            guildId: exports,
+          }), (0, r.jsx)(c.Z, {
+            guildId: t,
             role: h,
-            className: Chunk357923.messageContainer,
+            className: f.messageContainer,
             theme: "dark"
           })]
         })

@@ -35,26 +35,26 @@ function c(e) {
 function u() {
   let e = {};
   {
-    let C = Chunk848479.Z.getMemoryUsageElectronRenderer();
-    null != C && (module.client_heartbeat_renderer_memory = C);
-    let A = Chunk848479.Z.getMemoryUsageElectronRendererUsedHeapSize();
-    null != A && (module.client_heartbeat_renderer_memory_used_heap = A);
-    let N = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
+    let C = s.Z.getMemoryUsageElectronRenderer();
+    null != C && (e.client_heartbeat_renderer_memory = C);
+    let A = s.Z.getMemoryUsageElectronRendererUsedHeapSize();
+    null != A && (e.client_heartbeat_renderer_memory_used_heap = A);
+    let N = s.Z.getMemoryUsageElectronProcessTypeDetails();
     if (null != N) {
       var t, n, r, i, a, o, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T;
-      module.electron_process_memory_private = [null != (_ = null == (t = N.unknown) ? true : exports.wss_priv_kb) ? _ : false, null != (m = null == (n = N.main) ? true : require.wss_priv_kb) ? m : false, null != (h = null == (r = N.renderer) ? true : Chunk903772.wss_priv_kb) ? h : false, null != (g = null == (i = N.gpu) ? true : Chunk581567.wss_priv_kb) ? g : false, null != (E = null == (a = N.crashpad) ? true : Chunk594190.wss_priv_kb) ? E : false, null != (b = null == (o = N.utility) ? true : Chunk709706.wss_priv_kb) ? b : false], module.electron_process_memory_private_and_shared = [null != (y = null == (l = N.unknown) ? true : l.wss_kb) ? y : false, null != (O = null == (c = N.main) ? true : c.wss_kb) ? O : false, null != (v = null == (u = N.renderer) ? true : u.wss_kb) ? v : false, null != (S = null == (d = N.gpu) ? true : d.wss_kb) ? S : false, null != (I = null == (f = N.crashpad) ? true : f.wss_kb) ? I : false, null != (T = null == (p = N.utility) ? true : p.wss_kb) ? T : false]
+      e.electron_process_memory_private = [null != (_ = null == (t = N.unknown) ? true : t.wss_priv_kb) ? _ : false, null != (m = null == (n = N.main) ? true : n.wss_priv_kb) ? m : false, null != (h = null == (r = N.renderer) ? true : r.wss_priv_kb) ? h : false, null != (g = null == (i = N.gpu) ? true : i.wss_priv_kb) ? g : false, null != (E = null == (a = N.crashpad) ? true : a.wss_priv_kb) ? E : false, null != (b = null == (o = N.utility) ? true : o.wss_priv_kb) ? b : false], e.electron_process_memory_private_and_shared = [null != (y = null == (l = N.unknown) ? true : l.wss_kb) ? y : false, null != (O = null == (c = N.main) ? true : c.wss_kb) ? O : false, null != (v = null == (u = N.renderer) ? true : u.wss_kb) ? v : false, null != (S = null == (d = N.gpu) ? true : d.wss_kb) ? S : false, null != (I = null == (f = N.crashpad) ? true : f.wss_kb) ? I : false, null != (T = null == (p = N.utility) ? true : p.wss_kb) ? T : false]
     }
   }
-  return module
+  return e
 }
 
 function d() {
   let e = {};
   {
-    let t = Chunk594190.ZP.getCurrentGameForAnalytics();
-    null != exports && (module.client_heartbeat_current_game_id = exports.id, module.client_heartbeat_current_game_name = exports.name, module.client_heartbeat_current_game_executable = (0, Chunk581567.N6)(exports.exePath), module.client_heartbeat_current_game_distributor = exports.distributor, module.uses_client_mods = (0, Chunk903772.e)()), Chunk709706.Z.isNativeModuleLoaded() && (module.voice_filters_native_module_loaded = true)
+    let t = a.ZP.getCurrentGameForAnalytics();
+    null != t && (e.client_heartbeat_current_game_id = t.id, e.client_heartbeat_current_game_name = t.name, e.client_heartbeat_current_game_executable = (0, i.N6)(t.exePath), e.client_heartbeat_current_game_distributor = t.distributor, e.uses_client_mods = (0, r.e)()), o.Z.isNativeModuleLoaded() && (e.voice_filters_native_module_loaded = true)
   }
-  return module
+  return e
 }
 
 function f() {

@@ -38,7 +38,7 @@ class _ extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   getPreferredRegion() {
     var e, t;
-    return null != (t = null == (e = d.preferredRegions) ? true : module[0]) ? exports : null
+    return null != (t = null == (e = d.preferredRegions) ? true : e[0]) ? t : null
   }
   getPreferredRegions() {
     return d.preferredRegions

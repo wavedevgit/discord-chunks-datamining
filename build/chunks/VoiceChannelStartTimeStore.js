@@ -24,7 +24,7 @@ function p(e) {
 }
 class g extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk38618.Z)
+    this.waitFor(s.Z)
   }
   getStartTime(e) {
     var t;

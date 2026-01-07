@@ -18,7 +18,7 @@ function a(e, t, n) {
 function o() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "listbox",
     t = arguments.length > 1 ? arguments[1] : true;
-  return "".concat(module, "-option-").concat(exports)
+  return "".concat(e, "-option-").concat(t)
 }
 require.d(exports, {
   _s: () => i,

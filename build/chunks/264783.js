@@ -9,29 +9,29 @@ var Chunk473749 = require("./473749.js"),
   Chunk695346 = require("./695346.js");
 
 function o() {
-  let [e, t] = Chunk473749.useState("cozy");
-  return Chunk473749.useEffect(() => {
+  let [e, t] = r.useState("cozy");
+  return r.useEffect(() => {
     let e = window.matchMedia("(min-width: 1024px) and (min-height: 820px)"),
       n = e => {
         t(e.matches ? "cozy" : "compact")
       };
-    return module.addEventListener("change", require), () => {
-      module.removeEventListener("change", require)
+    return e.addEventListener("change", n), () => {
+      e.removeEventListener("change", n)
     }
-  }, []), module
+  }, []), e
 }
 
 function s() {
-  let e = Chunk695346.YC.useSetting(),
+  let e = a.YC.useSetting(),
     t = o();
-  switch (module) {
-    case Chunk524437.Pi.RESPONSIVE:
-      return exports;
-    case Chunk524437.Pi.COZY:
+  switch (e) {
+    case i.Pi.RESPONSIVE:
+      return t;
+    case i.Pi.COZY:
       return "cozy";
-    case Chunk524437.Pi.DEFAULT:
+    case i.Pi.DEFAULT:
       return "default";
-    case Chunk524437.Pi.COMPACT:
+    case i.Pi.COMPACT:
       return "compact";
     default:
       return "default"

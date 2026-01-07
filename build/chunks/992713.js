@@ -31,10 +31,10 @@ let E = 2e3,
   b = new Chunk710845.Z("EntityVersionsManager");
 class y extends Chunk147913.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", v)
+    o.Z.subscribe("CONNECTION_OPEN", v)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", v)
+    o.Z.unsubscribe("CONNECTION_OPEN", v)
   }
   constructor(...e) {
     super(...e), g(this, "actions", {
@@ -53,7 +53,7 @@ function O(e) {
 }
 
 function v() {
-  Chunk662896.Z.getAll().then(e => {
+  l.Z.getAll().then(e => {
     e.forEach(e => I(e))
   })
 }

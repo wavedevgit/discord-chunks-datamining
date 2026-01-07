@@ -86,19 +86,19 @@ function K(e, t) {
   }), e
 }
 let $ = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
-  let e = Chunk388610.Z.getChannel();
+  let e = R.Z.getChannel();
   return {
-    submitting: Chunk277053.Z.formState === Chunk981631.QZA.SUBMITTING,
+    submitting: I.Z.formState === Y.QZA.SUBMITTING,
     onReset() {
-      (0, Chunk741361.S1)()
+      (0, x.S1)()
     },
     onSave() {
-      if (null == module) return;
-      let t = Chunk277053.Z.editedPermissionIds.reduce((e, t) => {
+      if (null == e) return;
+      let t = I.Z.editedPermissionIds.reduce((e, t) => {
         let n = I.Z.getPermissionOverwrite(t);
         return null != n && e.push(n), e
       }, []);
-      (0, Chunk741361.hw)(module.id, exports)
+      (0, x.hw)(e.id, t)
     }
   }
 })(Chunk796027.Z);
@@ -307,28 +307,28 @@ function ei(e) {
 }
 
 function el() {
-  let e = Chunk473749.useRef(null),
+  let e = l.useRef(null),
     {
       channel: t,
       permissionOverwrites: r,
       selectedOverwriteId: a
-    } = (0, Chunk442837.cj)([Chunk277053.Z], () => Chunk277053.Z),
-    s = null == exports ? true : exports.getGuildId(),
+    } = (0, u.cj)([I.Z], () => I.Z),
+    s = null == t ? true : t.getGuildId(),
     {
       guild: c,
       sortedGuildRoles: d
-    } = (0, Chunk442837.cj)([Chunk430824.Z, Chunk485386.Z], () => {
-      let e = null != Chunk392711 ? Chunk430824.Z.getGuild(Chunk392711) : true,
-        t = null != module ? Chunk485386.Z.getSortedRoles(module.id) : true;
+    } = (0, u.cj)([A.Z, M.Z], () => {
+      let e = null != s ? A.Z.getGuild(s) : true,
+        t = null != e ? M.Z.getSortedRoles(e.id) : true;
       return {
-        guild: module,
-        sortedGuildRoles: exports
+        guild: e,
+        sortedGuildRoles: t
       }
-    }, [Chunk392711]),
-    h = (0, Chunk188857.Z)(Chunk392711, Chunk120356),
-    g = (0, Chunk410030.ZP)(),
-    Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
-    N = Chunk473749.useCallback((e, l) => {
+    }, [s]),
+    h = (0, z.Z)(s, r),
+    g = (0, C.ZP)(),
+    Z = (0, u.e7)([O.Z], () => O.Z.roleStyle),
+    N = l.useCallback((e, l) => {
       if (null == t) return null;
       (0, j.jW)(e, async () => {
         let {
@@ -353,8 +353,8 @@ function el() {
           }
         }))
       })
-    }, [exports, Chunk149765]);
-  if (null == Chunk149765 || null == Chunk793030 || null == exports || null == Chunk120356) return null;
+    }, [t, c]);
+  if (null == c || null == d || null == t || null == r) return null;
   let E = e => {
       let {
         position: n,
@@ -377,8 +377,8 @@ function el() {
         deny: H.Hn
       }).then(() => (0, x.Aj)(e))
     };
-  null != Chunk120356 && null == Chunk120356[Chunk149765.id] && (Chunk120356[Chunk149765.id] = Chunk700785.we(Chunk149765.id));
-  let P = Chunk793030.filter(e => {
+  null != r && null == r[c.id] && (r[c.id] = H.we(c.id));
+  let P = d.filter(e => {
       var t;
       return (null == (t = r[e.id]) ? true : t.type) === y.BN.ROLE
     }).map(e => (0, i.jsx)(v.Z, {
@@ -396,7 +396,7 @@ function el() {
       }),
       children: e.name
     }, "".concat(a, "-").concat(e.id))),
-    R = o()(Chunk796027).sortBy(e => e.username.toLowerCase()).map(e => {
+    R = o()(h).sortBy(e => e.username.toLowerCase()).map(e => {
       let t = e.getAvatarURL(c.id, 24);
       return (0, i.jsx)(v.Z, {
         id: e.id,
@@ -424,18 +424,18 @@ function el() {
         })
       }, "".concat(a, "-").concat(e.id))
     }).value();
-  return (0, Chunk54381.jsx)(Chunk325476.ZP.Sidebar, {
-    className: Chunk360485.layoutStyle,
+  return (0, i.jsx)(S.ZP.Sidebar, {
+    className: J.layoutStyle,
     scrollable: true,
-    children: (0, Chunk54381.jsxs)(Chunk481060.njP, {
-      onItemSelect: Chunk741361.Aj,
+    children: (0, i.jsxs)(f.njP, {
+      onItemSelect: x.Aj,
       selectedItem: a,
       orientation: "vertical",
       children: [(() => {
-        let t = (0, Chunk780384.wj)(Chunk496600) ? require("./521715.js") : require("./299603.js");
-        return (0, Chunk54381.jsx)(Chunk481060.yRy, {
-          targetElementRef: module,
-          renderPopout: Chunk722252,
+        let t = (0, m.wj)(g) ? n(521715) : n(299603);
+        return (0, i.jsx)(f.yRy, {
+          targetElementRef: e,
+          renderPopout: E,
           position: "bottom",
           autoInvert: false,
           clickTrap: true,
@@ -454,19 +454,19 @@ function el() {
             })
           }))
         })
-      })(), Chunk598077, Chunk388610, (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.njP.Separator, {
+      })(), P, R, (0, i.jsxs)(l.Fragment, {
+        children: [(0, i.jsx)(f.njP.Separator, {
           style: {
             marginTop: 20,
             marginBottom: 14
           }
-        }), (0, Chunk54381.jsx)(Chunk481060.eee, {
-          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PERMISSIONS_TUTORIAL),
+        }), (0, i.jsx)(f.eee, {
+          href: U.Z.getArticleURL(Y.BhN.PERMISSIONS_TUTORIAL),
           target: "_blank",
-          children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+          children: (0, i.jsx)(f.Text, {
             variant: "text-sm/normal",
             color: "text-link",
-            children: Chunk388032.intl.string(Chunk388032.t.pfoA83)
+            children: q.intl.string(q.t.pfoA83)
           })
         })]
       })]
@@ -479,13 +479,13 @@ function er() {
     channel: e,
     permissionOverwrites: t,
     selectedOverwriteId: n
-  } = (0, Chunk442837.cj)([Chunk277053.Z], () => Chunk277053.Z);
-  if (null == (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null) || null == module || null == exports || null == require) return null;
-  let l = exports[require];
-  return (0, Chunk54381.jsxs)(Chunk325476.ZP, {
-    className: Chunk360485.container,
-    children: [(0, Chunk54381.jsx)(el, {}), (0, Chunk54381.jsx)(ee, {
-      overwrite: Chunk473749
+  } = (0, u.cj)([I.Z], () => I.Z);
+  if (null == (0, u.e7)([A.Z], () => null != e ? A.Z.getGuild(e.getGuildId()) : null) || null == e || null == t || null == n) return null;
+  let l = t[n];
+  return (0, i.jsxs)(S.ZP, {
+    className: J.container,
+    children: [(0, i.jsx)(el, {}), (0, i.jsx)(ee, {
+      overwrite: l
     })]
   })
 }

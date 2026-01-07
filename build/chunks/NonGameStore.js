@@ -60,7 +60,7 @@ class O extends(i = Chunk442837.ZP.PersistedStore) {
     null != e && (null != e.etag && (_ = e.etag), null == (t = e.nonGames) || t.forEach(e => p.set(e.id, e)))
   }
   getState() {
-    return (0, Chunk358085.isDesktop)() ? {
+    return (0, u.isDesktop)() ? {
       etag: _,
       nonGames: p.values()
     } : {

@@ -9,13 +9,13 @@ var Chunk805666 = require("./805666.js"),
   Chunk732418 = require("./732418.js");
 
 function a() {
-  let e = (0, Chunk732418.c)();
-  return (0, Chunk805666.G)(module).getCurrentScope()
+  let e = (0, i.c)();
+  return (0, r.G)(e).getCurrentScope()
 }
 
 function o() {
-  let e = (0, Chunk732418.c)();
-  return (0, Chunk805666.G)(module).getIsolationScope()
+  let e = (0, i.c)();
+  return (0, r.G)(e).getIsolationScope()
 }
 
 function s() {

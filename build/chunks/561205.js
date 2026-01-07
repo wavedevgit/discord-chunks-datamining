@@ -7,6 +7,6 @@ var Chunk317381 = require("./317381.js"),
   Chunk592125 = require("./592125.js");
 
 function l() {
-  let e = Chunk317381.ZP.getConnectedActivityChannelId();
-  return Chunk592125.Z.getChannel(module)
+  let e = r.ZP.getConnectedActivityChannelId();
+  return i.Z.getChannel(e)
 }

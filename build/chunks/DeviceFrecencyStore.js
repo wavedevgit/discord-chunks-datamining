@@ -100,7 +100,7 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     })
   }
   reset() {
-    [Chunk65154.h7.AUDIO_INPUT, Chunk65154.h7.AUDIO_OUTPUT, Chunk65154.h7.VIDEO_INPUT].forEach(e => {
+    [f.h7.AUDIO_INPUT, f.h7.AUDIO_OUTPUT, f.h7.VIDEO_INPUT].forEach(e => {
       y[e].reset(), O[e] = {}
     })
   }
@@ -127,9 +127,9 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getState() {
     return {
-      [Chunk65154.h7.AUDIO_INPUT]: v[Chunk65154.h7.AUDIO_INPUT].usageHistory,
-      [Chunk65154.h7.AUDIO_OUTPUT]: v[Chunk65154.h7.AUDIO_OUTPUT].usageHistory,
-      [Chunk65154.h7.VIDEO_INPUT]: v[Chunk65154.h7.VIDEO_INPUT].usageHistory
+      [f.h7.AUDIO_INPUT]: v[f.h7.AUDIO_INPUT].usageHistory,
+      [f.h7.AUDIO_OUTPUT]: v[f.h7.AUDIO_OUTPUT].usageHistory,
+      [f.h7.VIDEO_INPUT]: v[f.h7.VIDEO_INPUT].usageHistory
     }
   }
   getDeviceIdsSortedByFrecency(e) {
@@ -137,26 +137,26 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getUsageStats() {
     let e = {
-      [Chunk65154.h7.AUDIO_INPUT]: [],
-      [Chunk65154.h7.AUDIO_OUTPUT]: [],
-      [Chunk65154.h7.VIDEO_INPUT]: []
+      [f.h7.AUDIO_INPUT]: [],
+      [f.h7.AUDIO_OUTPUT]: [],
+      [f.h7.VIDEO_INPUT]: []
     };
-    return [Chunk65154.h7.AUDIO_INPUT, Chunk65154.h7.AUDIO_OUTPUT].forEach(t => {
+    return [f.h7.AUDIO_INPUT, f.h7.AUDIO_OUTPUT].forEach(t => {
       this.isSampling(t) && (this.stopSampling(t), this.startSampling(t)), e[t] = Object.entries(O[t])
     }), {
-      duration_input_device_used_ids: module[Chunk65154.h7.AUDIO_INPUT].map(e => {
+      duration_input_device_used_ids: e[f.h7.AUDIO_INPUT].map(e => {
         let [t, n] = e;
         return t
       }),
-      duration_input_device_used_ms: module[Chunk65154.h7.AUDIO_INPUT].map(e => {
+      duration_input_device_used_ms: e[f.h7.AUDIO_INPUT].map(e => {
         let [t, n] = e;
         return n
       }),
-      duration_output_device_used_ids: module[Chunk65154.h7.AUDIO_OUTPUT].map(e => {
+      duration_output_device_used_ids: e[f.h7.AUDIO_OUTPUT].map(e => {
         let [t, n] = e;
         return t
       }),
-      duration_output_device_used_ms: module[Chunk65154.h7.AUDIO_OUTPUT].map(e => {
+      duration_output_device_used_ms: e[f.h7.AUDIO_OUTPUT].map(e => {
         let [t, n] = e;
         return n
       })

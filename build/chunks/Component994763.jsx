@@ -65,7 +65,7 @@ class Z extends Chunk473749.PureComponent {
     L(this.props.section, null, this.props.analyticsLocation)
   }
   componentWillUnmount() {
-    Chunk434404.Z.close()
+    p.Z.close()
   }
   componentDidUpdate(e) {
     let {
@@ -113,43 +113,43 @@ class Z extends Chunk473749.PureComponent {
       guildMetadata: C,
       permissionMigrationAvailable: m
     } = this.props;
-    if (null == Chunk100527) return null;
-    let v = (0, Chunk896007.vE)({
-        guild: Chunk100527,
-        isGuildAdmin: Chunk367907,
-        canManageGuild: Chunk906732,
-        canViewAuditLog: Chunk456268,
-        canManageRoles: Chunk745752,
-        canManageGuildExpressions: Chunk45966,
-        canManageWebhooks: Chunk526120,
-        canUnlinkChannels: Chunk751189,
-        canManageBans: Chunk409059,
-        canAccessMembersPage: Chunk163400,
-        canViewGuildAnalytics: Chunk194201,
-        isOwner: Chunk984802,
-        isOwnerWithRequiredMfaLevel: Chunk210887,
-        showDirtyGuildTemplateIndicator: Chunk524329,
-        memberCount: Chunk995532,
-        onboardingStep: Chunk984933,
-        onboardingEnabled: Chunk650774,
-        welcomeScreenEmpty: Chunk496675,
-        guildMetadata: Chunk999382,
-        section: Chunk442837,
-        permissionMigrationAvailable: Chunk359191
+    if (null == o) return null;
+    let v = (0, R.vE)({
+        guild: o,
+        isGuildAdmin: a,
+        canManageGuild: c,
+        canViewAuditLog: d,
+        canManageRoles: E,
+        canManageGuildExpressions: I,
+        canManageWebhooks: _,
+        canUnlinkChannels: S,
+        canManageBans: N,
+        canAccessMembersPage: g,
+        canViewGuildAnalytics: f,
+        isOwner: T,
+        isOwnerWithRequiredMfaLevel: G,
+        showDirtyGuildTemplateIndicator: h,
+        memberCount: A,
+        onboardingStep: D,
+        onboardingEnabled: b,
+        welcomeScreenEmpty: M,
+        guildMetadata: C,
+        section: r,
+        permissionMigrationAvailable: m
       }),
-      L = (null == (n = Chunk981631.find(e => e.section === r)) || null == (e = exports.predicate) ? true : module.call(exports)) !== false,
-      w = (0, Chunk978946.r)();
-    return (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk503089.ZP, {
-        theme: require,
-        sidebarTheme: Chunk473749,
-        section: L && null != Chunk442837 ? Chunk442837 : w,
-        onSetSection: Chunk434404.Z.setSection,
-        onClose: Chunk37234.xf,
-        title: "" !== Chunk100527.name ? Chunk100527.name : Chunk388032.intl.string(Chunk388032.t["154/bL"]),
-        sections: Chunk981631
-      }), (0, Chunk54381.jsx)(Chunk918658.d, {
-        guildId: Chunk100527.id
+      L = (null == (n = v.find(e => e.section === r)) || null == (e = n.predicate) ? true : e.call(n)) !== false,
+      w = (0, P.r)();
+    return (0, l.jsxs)("div", {
+      children: [(0, l.jsx)(u.ZP, {
+        theme: t,
+        sidebarTheme: i,
+        section: L && null != r ? r : w,
+        onSetSection: p.Z.setSection,
+        onClose: s.xf,
+        title: "" !== o.name ? o.name : U.intl.string(U.t["154/bL"]),
+        sections: v
+      }), (0, l.jsx)(O.d, {
+        guildId: o.id
       })]
     })
   }
@@ -163,36 +163,36 @@ function y() {
     analyticsLocation: a,
     guildMetadata: O,
     isGuildMetadataLoaded: R
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), {
+  } = (0, r.cj)([C.Z], () => C.Z.getProps()), {
     analyticsLocations: P
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS), U = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), L = (0, Chunk984802.Ll)(), y = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != Chunk37234 ? Chunk984933.ZP.getChannels(Chunk37234.id).SELECTABLE : null, [Chunk37234]), j = (0, Chunk442837.cj)([Chunk496675.Z], () => null != Chunk37234 ? Chunk496675.Z.getGuildPermissionProps(Chunk37234) : w), B = null == Chunk37234 ? true : Chunk37234.id, x = (0, Chunk442837.e7)([Chunk496675.Z], () => null != Chunk37234 && Chunk496675.Z.canAccessGuildSettings(Chunk37234));
-  Chunk473749.useEffect(() => {
-    Chunk896007 || null == B || (0, Chunk456268.aC)(B)
-  }, [Chunk896007, B]);
-  let W = null != (e = null == Chunk37234 ? true : Chunk37234.features.has(Chunk981631.GuildFeatures.COMMUNITY)) && module;
-  Chunk473749.useEffect(() => {
-    null != B && W && ((0, Chunk745752.eM)(B), (0, Chunk524329.RM)(B))
-  }, [B, W]), Chunk473749.useEffect(() => {
-    null != B && (0, Chunk526120.cP)(B)
+  } = (0, c.ZP)(o.Z.GUILD_SETTINGS), U = (0, r.e7)([G.Z], () => G.Z.theme), L = (0, T.Ll)(), y = (0, r.e7)([D.ZP], () => null != s ? D.ZP.getChannels(s.id).SELECTABLE : null, [s]), j = (0, r.cj)([M.Z], () => null != s ? M.Z.getGuildPermissionProps(s) : w), B = null == s ? true : s.id, x = (0, r.e7)([M.Z], () => null != s && M.Z.canAccessGuildSettings(s));
+  i.useEffect(() => {
+    R || null == B || (0, d.aC)(B)
+  }, [R, B]);
+  let W = null != (e = null == s ? true : s.features.has(v.GuildFeatures.COMMUNITY)) && e;
+  i.useEffect(() => {
+    null != B && W && ((0, E.eM)(B), (0, h.RM)(B))
+  }, [B, W]), i.useEffect(() => {
+    null != B && (0, _.cP)(B)
   }, [B]);
-  let H = (0, Chunk442837.e7)([Chunk409059.Z], () => {
+  let H = (0, r.e7)([N.Z], () => {
       var e;
-      return (null == Chunk37234 ? true : Chunk37234.id) != null && (null == (e = Chunk409059.Z.getForGuild(Chunk37234.id)) ? true : module.isDirty) === true
-    }, [Chunk37234]),
-    F = (0, Chunk442837.e7)([Chunk650774.Z], () => Chunk650774.Z.getMemberCount(null == Chunk37234 ? true : Chunk37234.id), [Chunk37234]);
-  Chunk473749.useEffect(() => {
-    null != B && j.canManageGuild && Chunk751189.Z.loadTemplatesForGuild(B)
-  }, [B, j.canManageGuild]), Chunk473749.useEffect(() => {
-    x || Chunk434404.Z.close()
+      return (null == s ? true : s.id) != null && (null == (e = N.Z.getForGuild(s.id)) ? true : e.isDirty) === true
+    }, [s]),
+    F = (0, r.e7)([b.Z], () => b.Z.getMemberCount(null == s ? true : s.id), [s]);
+  i.useEffect(() => {
+    null != B && j.canManageGuild && S.Z.loadTemplatesForGuild(B)
+  }, [B, j.canManageGuild]), i.useEffect(() => {
+    x || p.Z.close()
   }, [x]);
-  let K = (0, Chunk442837.e7)([Chunk359191.Z], () => Chunk359191.Z.getCurrentPage()),
-    k = (0, Chunk442837.e7)([Chunk45966.Z], () => null != B && Chunk45966.Z.getEnabled(B)),
-    V = (0, Chunk442837.e7)([Chunk995532.Z], () => null != B && Chunk995532.Z.isEmpty(B)),
-    Y = (0, Chunk163400.F)(B).length > 0,
-    q = (0, Chunk194201.Z)(Chunk37234);
-  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: Chunk978946,
-    children: (0, Chunk54381.jsx)(Z, (n = function(e) {
+  let K = (0, r.e7)([m.Z], () => m.Z.getCurrentPage()),
+    k = (0, r.e7)([I.Z], () => null != B && I.Z.getEnabled(B)),
+    V = (0, r.e7)([A.Z], () => null != B && A.Z.isEmpty(B)),
+    Y = (0, g.F)(B).length > 0,
+    q = (0, f.Z)(s);
+  return (0, l.jsx)(c.Gt, {
+    value: P,
+    children: (0, l.jsx)(Z, (n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           l = Object.keys(t);
@@ -210,13 +210,13 @@ function y() {
       }
       return e
     }({
-      guild: Chunk37234,
-      section: Chunk503089,
-      theme: Chunk388032,
+      guild: s,
+      section: u,
+      theme: U,
       sidebarTheme: L,
       channels: y,
       showDirtyGuildTemplateIndicator: H,
-      analyticsLocation: Chunk367907,
+      analyticsLocation: a,
       memberCount: F
     }, j), t = t = {
       canUnlinkChannels: Y,
@@ -224,17 +224,17 @@ function y() {
       onboardingStep: K,
       onboardingEnabled: k,
       welcomeScreenEmpty: V,
-      guildMetadata: Chunk918658,
+      guildMetadata: O,
       permissionMigrationAvailable: q
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(exports, Object.getOwnPropertyDescriptors(require)) : (function(e, n) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var l = Object.getOwnPropertySymbols(e);
         t.push.apply(t, l)
       }
       return t
-    })(Object(require)).forEach(function(e) {
+    })(Object(t)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e))
-    }), exports))
+    }), n))
   })
 }

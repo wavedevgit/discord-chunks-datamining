@@ -62,7 +62,7 @@ function E(e) {
 }
 
 function p() {
-  for (let e of Object.keys(h)) clearTimeout(h[module]);
+  for (let e of Object.keys(h)) clearTimeout(h[e]);
   h = {}, f = {}
 }
 
@@ -71,7 +71,7 @@ function v() {
 }
 class T extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk979651.Z, Chunk914010.Z)
+    this.waitFor(s.Z, o.Z)
   }
   getAnimationStyle(e) {
     var t, n;

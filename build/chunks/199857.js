@@ -38,7 +38,7 @@ function S(e, t) {
 class I extends Chunk912095.Z {
   destroy() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    super.destroy(module), "closed" !== this.signalingState && this.pc.close()
+    super.destroy(e), "closed" !== this.signalingState && this.pc.close()
   }
   setCodecs(e, t, n) {
     var r, i, a, o;
@@ -228,23 +228,23 @@ class I extends Chunk912095.Z {
   }
   parseLocalDescription() {
     let e = this.pc.localDescription;
-    if (null == module) throw Error("localDescription is null");
-    let t = module.sdp,
+    if (null == e) throw Error("localDescription is null");
+    let t = e.sdp,
       {
         outboundStreams: n,
         codecs: r,
         audioSSRC: i,
         videoSSRC: a,
         rtxSSRC: o
-      } = (0, Chunk649318.Nl)(exports, this.experimentFlags.has(Chunk65154.V8.BROWSER_HEVC)),
-      s = (0, Chunk649318.nX)(exports);
+      } = (0, h.Nl)(t, this.experimentFlags.has(g.V8.BROWSER_HEVC)),
+      s = (0, h.nX)(t);
     return {
-      sdp: exports,
-      outboundStreams: require,
+      sdp: t,
+      outboundStreams: n,
       codecs: r,
-      audioSSRC: Chunk74514,
+      audioSSRC: i,
       videoSSRC: a,
-      rtxSSRC: Chunk117806,
+      rtxSSRC: o,
       extensions: s
     }
   }
@@ -344,11 +344,11 @@ class I extends Chunk912095.Z {
     this.unassignedStreams.audio.unshift(...o), this.unassignedStreams.video.unshift(...s), (this.unassignedStreams.audio.length > 0 || this.unassignedStreams.video.length > 0) && (this.negotiationNeeded = true, this.logger.info("Renegotiating: Streams left unassigned after negotiation - renegotiate")), this.negotiating = false, this.negotiationNeeded && this.handleNegotiationNeeded()
   }
   setConnected() {
-    this.input.reset(), this.setConnectionState(Chunk65154.$j.CONNECTED), this.on(Chunk46973.Sh.Stats, this.handleStats), this.input.on(Chunk886848.G.VoiceActivity, this.handleVoiceActivity)
+    this.input.reset(), this.setConnectionState(g.$j.CONNECTED), this.on(d.Sh.Stats, this.handleStats), this.input.on(_.G.VoiceActivity, this.handleVoiceActivity)
   }
   async handleNegotiationNeeded() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    if (!module && (this.negotiating || null == this.sdp)) {
+    if (!e && (this.negotiating || null == this.sdp)) {
       this.negotiationNeeded = true;
       return
     }
@@ -358,11 +358,11 @@ class I extends Chunk912095.Z {
       r = s()(this.users);
     this.unassignedStreams.audio = [], this.unassignedStreams.video = [];
     let i = this.pc,
-      o = await Chunk74514.createOffer(this.makeOfferAnswerOptions());
+      o = await i.createOffer(this.makeOfferAnswerOptions());
     try {
-      await Chunk74514.setLocalDescription(Chunk117806)
+      await i.setLocalDescription(o)
     } catch (e) {
-      this.logger.warn("Failed to set local offer: ".concat(module, ", type: ").concat(Chunk117806.type, ", sdp: ").concat(Chunk117806.sdp)), this.emit(Chunk46973.Sh.SdpError, "setLocalDescription", module.message, Chunk117806.type)
+      this.logger.warn("Failed to set local offer: ".concat(e, ", type: ").concat(o.type, ", sdp: ").concat(o.sdp)), this.emit(d.Sh.SdpError, "setLocalDescription", e.message, o.type)
     }
     let {
       sdp: l,
@@ -373,11 +373,11 @@ class I extends Chunk912095.Z {
       rtxSSRC: _,
       extensions: m
     } = this.parseLocalDescription();
-    if (this.codecs = Chunk579092, this.extensions = Chunk586021, Chunk912095 !== this.audioSSRC || Chunk405475 !== this.videoSSRC) {
+    if (this.codecs = u, this.extensions = m, f !== this.audioSSRC || p !== this.videoSSRC) {
       var E;
-      null == (E = this.daveSessionManager) || Chunk436620.updateSsrcs(this.userId, Chunk912095, [Chunk405475])
+      null == (E = this.daveSessionManager) || E.updateSsrcs(this.userId, f, [p])
     }
-    this.audioSSRC = Chunk912095, this.videoSSRC = Chunk405475, this.videoReady = Chunk405475 > 0 && Chunk886848 > 0, (this.videoStreamParameters[0].ssrc !== Chunk405475 || this.videoStreamParameters[0].rtxSsrc !== Chunk886848 || this.videoReady) && (this.videoStreamParameters[0].ssrc = 0 === Chunk405475 ? this.videoStreamParameters[0].ssrc : Chunk405475, this.videoStreamParameters[0].rtxSsrc = 0 === Chunk886848 ? this.videoStreamParameters[0].rtxSsrc : Chunk886848, this.videoStreamParameters[0].active = this.videoReady, this.emit(Chunk46973.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, Chunk405475, Chunk886848, this.videoStreamParameters)), null == this.sdp ? this.emit(Chunk46973.Sh.Connected, "webrtc", (0, Chunk649318.sc)(Chunk264344, this.experimentFlags.has(Chunk65154.V8.BROWSER_HEVC))) : this.setRemoteAnswer(c, exports, require, r)
+    this.audioSSRC = f, this.videoSSRC = p, this.videoReady = p > 0 && _ > 0, (this.videoStreamParameters[0].ssrc !== p || this.videoStreamParameters[0].rtxSsrc !== _ || this.videoReady) && (this.videoStreamParameters[0].ssrc = 0 === p ? this.videoStreamParameters[0].ssrc : p, this.videoStreamParameters[0].rtxSsrc = 0 === _ ? this.videoStreamParameters[0].rtxSsrc : _, this.videoStreamParameters[0].active = this.videoReady, this.emit(d.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, p, _, this.videoStreamParameters)), null == this.sdp ? this.emit(d.Sh.Connected, "webrtc", (0, h.sc)(l, this.experimentFlags.has(g.V8.BROWSER_HEVC))) : this.setRemoteAnswer(c, t, n, r)
   }
   constructor(e) {
     var t;

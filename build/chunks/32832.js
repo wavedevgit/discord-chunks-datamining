@@ -14,34 +14,34 @@ var Chunk292556 = require("./292556.js"),
   Chunk388032 = require("./388032.jsx");
 require("./530049.js");
 let S = {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
+    useTitle: () => T.intl.string(T.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
-    useDisabledMessage: () => (0, Chunk734934.p)() ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true
+    useDisabledMessage: () => (0, s.p)() ? T.intl.string(T.t.cIRG0s) : true
   },
   c = {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
+    useTitle: () => T.intl.string(T.t.XBrJT6),
     sound: "call_ringing"
   },
   E = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV9),
-    useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel() && !Chunk292959.Z.getDisableAllSounds()),
+    useTitle: () => T.intl.string(T.t.TzjwV9),
+    useValue: () => (0, i.e7)([r.Z], () => r.Z.getNotifyMessagesInSelectedChannel() && !r.Z.getDisableAllSounds()),
     setValue: t => l.default.setNotifyMessagesInSelectedChannel(t),
-    useDisabled: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds())
+    useDisabled: () => (0, i.e7)([r.Z], () => r.Z.getDisableAllSounds())
   }),
   d = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOd"]),
-    useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.EAKdPr),
-    useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
+    useTitle: () => T.intl.string(T.t["2ZhCOd"]),
+    useSubtitle: () => T.intl.string(T.t.EAKdPr),
+    useValue: () => (0, i.e7)([r.Z], () => r.Z.getDisableAllSounds()),
     setValue: t => l.default.toggleDisableAllSounds(t)
   }),
   _ = (0, Chunk509613.Uc)(Chunk313789.n.NOTIFICATION_SOUNDS_FIELD_SET, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.ONU22R),
+    useTitle: () => T.intl.string(T.t.ONU22R),
     variant: "separators",
     initialize: function() {
       return () => {
-        (0, Chunk407458.WY)()
+        (0, o.WY)()
       }
     },
-    buildLayout: () => [(0, Chunk407458.j$)(S), E, (0, Chunk407458.j$)(c), d]
+    buildLayout: () => [(0, o.j$)(S), E, (0, o.j$)(c), d]
   })

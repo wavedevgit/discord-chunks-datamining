@@ -53,7 +53,7 @@ function A(e) {
 }
 class N extends(u = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk496675.Z, Chunk823385.Z, Chunk699516.Z, Chunk752048.Z)
+    this.waitFor(m.Z, S.Z, h.Z, f.Z, p.Z)
   }
   getInviteSuggestionRows() {
     return _

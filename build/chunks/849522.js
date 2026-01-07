@@ -14,5 +14,5 @@ function s(e) {
 }
 
 function l() {
-  return (0, Chunk442837.e7)([Chunk594174.default], () => s(Chunk594174.default))
+  return (0, r.e7)([i.default], () => s(i.default))
 }

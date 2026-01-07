@@ -5,7 +5,7 @@ require.d(exports, {
   A_: () => I,
   Ok: () => N,
   U4: () => T,
-  Ye: () => Chunk814391.Z,
+  Ye: () => m.Z,
   ZJ: () => A,
   q: () => C
 }), require("./997841.js");
@@ -84,19 +84,19 @@ function S(e, t) {
 require("./388032.jsx");
 
 function I() {
-  (0, Chunk367907.yw)(Chunk981631.rMx.THREAD_BROWSER_TAB_CHANGED)
+  (0, s.yw)(g.rMx.THREAD_BROWSER_TAB_CHANGED)
 }
 
 function T() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "Modal";
-  (0, Chunk367907.yw)(Chunk981631.rMx.OPEN_MODAL, {
+  (0, s.yw)(g.rMx.OPEN_MODAL, {
     type: "Thread Browser",
-    location_section: module
+    location_section: e
   })
 }
 
 function C() {
-  Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, {
+  d.default.track(g.rMx.OPEN_POPOUT, {
     type: "Active Threads Popout"
   })
 }

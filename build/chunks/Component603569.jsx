@@ -18,23 +18,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk517319 = require("./517319.js");
 let I = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
-    usePredicate: () => !(0, Chunk526665.gN)("LegacyFamilyCenterPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk517319.default.RZqaJn),
+    usePredicate: () => !(0, c.gN)("LegacyFamilyCenterPanel"),
+    useTitle: () => _.intl.string(g.default.RZqaJn),
     StronglyDiscouragedCustomComponent: Chunk106939.M,
     buildLayout: () => []
   }),
   N = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
-    usePredicate: () => (0, Chunk526665.gN)("FamilyCenterPanel"),
-    useTitle: () => Chunk388032.intl.string(Chunk517319.default.RZqaJn),
-    buildLayout: () => [Chunk231582.W]
+    usePredicate: () => (0, c.gN)("FamilyCenterPanel"),
+    useTitle: () => _.intl.string(g.default.RZqaJn),
+    buildLayout: () => [E.W]
   }),
   A = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk517319.default.RZqaJn),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("FamilyCenterPanel") ? true : Chunk726985.s6.PRIVACY_FAMILY_CENTER,
+    useTitle: () => _.intl.string(g.default.RZqaJn),
+    getLegacySearchKey: () => (0, c.Gl)("FamilyCenterPanel") ? true : d.s6.PRIVACY_FAMILY_CENTER,
     icon: Chunk657707.BFJ,
     trailing: {
       type: Chunk970013.W.STRONGLY_DISCOURAGED_CUSTOM,
-      getDismissibleContentTypes: () => [Chunk704215.z.FAMILY_CENTER_NEW_BADGE],
+      getDismissibleContentTypes: () => [s.z.FAMILY_CENTER_NEW_BADGE],
       useCustomDecoration: function(t) {
         let e = (0, r.gU)();
         return t === s.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(u.IGR, {
@@ -44,5 +44,5 @@ let I = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
         }) : null
       }
     },
-    buildLayout: () => (0, Chunk526665.Gl)("FamilyCenterPanel") ? [N] : [I]
+    buildLayout: () => (0, c.Gl)("FamilyCenterPanel") ? [N] : [I]
   })

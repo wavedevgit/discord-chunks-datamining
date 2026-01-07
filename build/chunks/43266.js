@@ -4,7 +4,7 @@
 
 function r() {
   var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0;
-  return module + 1
+  return e + 1
 }
 require.d(exports, {
   u: () => r

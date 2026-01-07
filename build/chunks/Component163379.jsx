@@ -33,12 +33,12 @@ function s(e) {
 
 function l() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  !module && (0, Chunk481060.$sL)() || (0, Chunk481060.ZDy)(async () => {
+  !e && (0, i.$sL)() || (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await require.e("91236").then(require.bind(require, 477621));
+    } = await n.e("91236").then(n.bind(n, 477621));
     return t => (0, r.jsx)(e, s({}, t))
   }, {
-    modalKey: Chunk596401.Xd
+    modalKey: a.Xd
   })
 }

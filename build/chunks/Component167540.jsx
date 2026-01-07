@@ -23,22 +23,22 @@ var Chunk100527 = require("./100527.js"),
   Chunk388032 = require("./388032.jsx");
 
 function b() {
-  let e = Chunk131951.Z.supports(Chunk65154.AN.SIDECHAIN_COMPRESSION),
+  let e = o.Z.supports(g.AN.SIDECHAIN_COMPRESSION),
     {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)([Chunk100527.Z.USER_SETTINGS_VIDEO_TAB]);
-  return (0, Chunk54381.jsxs)(Chunk906732.Gt, {
-    value: exports,
-    children: [(0, Chunk54381.jsxs)(Chunk603963.Z, {
-      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO,
-      children: [(0, Chunk54381.jsxs)(Chunk738486.Z, {
-        children: [(0, Chunk54381.jsx)(Chunk359138.Z, {}), (0, Chunk54381.jsx)(Chunk417420.Z, {}), (0, Chunk54381.jsx)(Chunk973465.Z, {})]
-      }), (0, Chunk54381.jsx)(Chunk154784.Z, {})]
-    }), (0, Chunk54381.jsx)(Chunk603963.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.KDdjou),
-      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
-      children: (0, Chunk54381.jsxs)(Chunk738486.Z, {
-        children: [(0, Chunk54381.jsx)(Chunk520384.Z, {}), module && (0, Chunk54381.jsx)(Chunk186934.Z, {}), (0, Chunk54381.jsx)(Chunk546997.Z, {})]
+    } = (0, a.ZP)([i.Z.USER_SETTINGS_VIDEO_TAB]);
+  return (0, r.jsxs)(a.Gt, {
+    value: t,
+    children: [(0, r.jsxs)(s.Z, {
+      webSetting: h.s6.VOICE_AND_VIDEO_VIDEO,
+      children: [(0, r.jsxs)(l.Z, {
+        children: [(0, r.jsx)(c.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsx)(d.Z, {})]
+      }), (0, r.jsx)(m.Z, {})]
+    }), (0, r.jsx)(s.Z, {
+      title: E.intl.string(E.t.KDdjou),
+      webSetting: h.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
+      children: (0, r.jsxs)(l.Z, {
+        children: [(0, r.jsx)(_.Z, {}), e && (0, r.jsx)(p.Z, {}), (0, r.jsx)(f.Z, {})]
       })
     })]
   })

@@ -94,46 +94,46 @@ class I extends Chunk473749.PureComponent {
       visibleReactionsCount: C
     } = this.props, {
       disableTransitionAppear: A
-    } = this.state, N = v ? Chunk378369 : Chunk860302, P = C > 0;
+    } = this.state, N = v ? h : m, P = C > 0;
     if (!P && !y) return null;
     let R = y || P;
-    return (0, Chunk54381.jsxs)(Chunk215569.W, {
+    return (0, r.jsxs)(s.W, {
       component: "div",
       className: o()(N.reactions, b),
       transitionAppear: !A,
       role: "group",
       transitionLeave: false,
-      id: (0, Chunk453687.bY)(module),
+      id: (0, d.bY)(e),
       onMouseEnter: () => this.setState({
         isHovered: true
       }),
       onMouseLeave: () => this.setState({
         isHovered: false
       }),
-      children: [(0, Chunk54381.jsx)(Chunk434624.l, {
+      children: [(0, r.jsx)(f.l, {
         reactions: T,
-        message: module,
-        readOnly: require,
-        isLurking: Chunk473749,
-        isGuest: Chunk120356,
-        isPendingMember: Chunk566006,
+        message: e,
+        readOnly: n,
+        isLurking: i,
+        isGuest: a,
+        isPendingMember: c,
         isForumToolbar: g,
         useChatFontScaling: v,
         className: O
-      }), I > 0 && (0, Chunk54381.jsx)(Chunk481060.P3F, {
+      }), I > 0 && (0, r.jsx)(l.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, p.op)(E, e)
         },
         className: o()(N.reaction, O, N.remainingReactions),
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs4),
-        children: (0, Chunk54381.jsxs)(Chunk481060.Text, {
+        "aria-label": _.intl.string(_.t.lfIHs4),
+        children: (0, r.jsxs)(l.Text, {
           className: N.reactionInner,
           variant: "text-sm/normal",
           children: ["+", I]
         })
-      }), !exports && !S && (0, Chunk54381.jsx)(Chunk490597.X, {
+      }), !t && !S && (0, r.jsx)(u.X, {
         tabIndex: R || this.state.isHovered ? 0 : false,
-        message: module,
+        message: e,
         channel: E,
         useChatFontScaling: v,
         isHovered: this.state.isHovered,

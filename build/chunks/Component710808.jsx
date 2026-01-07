@@ -72,16 +72,16 @@ function w(e, t) {
   }), e
 }
 async function D() {
-  let e = await Chunk579806.Z.fileManager.getLogPath();
-  Chunk579806.Z.fileManager.showItemInFolder(module)
+  let e = await p.Z.fileManager.getLogPath();
+  p.Z.fileManager.showItemInFolder(e)
 }
 
 function x() {
-  let e = Chunk388032.intl.string(Chunk388032.t["fKBB8+"]),
-    t = Chunk388032.intl.string(Chunk388032.t.BvyxE7);
-  (0, Chunk885387.Z)({
-    title: module,
-    subtitle: exports
+  let e = C.intl.string(C.t["fKBB8+"]),
+    t = C.intl.string(C.t.BvyxE7);
+  (0, o.Z)({
+    title: e,
+    subtitle: t
   })
 }
 
@@ -147,78 +147,78 @@ async function M(e) {
 }
 
 function k() {
-  let [e, t] = Chunk473749.useState(false), {
+  let [e, t] = i.useState(false), {
     debugLogging: n,
     aecDumpEnabled: o
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-    aecDumpSupported: Chunk131951.Z.isAecDumpSupported(),
-    debugLogging: Chunk131951.Z.getDebugLogging(),
-    aecDumpEnabled: Chunk131951.Z.getAecDump(),
-    supportsConnectionReplay: Chunk131951.Z.supports(Chunk65154.AN.CONNECTION_REPLAY)
-  })), s = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled), l = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection()), p = Chunk473749.useCallback(async () => {
+  } = (0, a.cj)([b.Z], () => ({
+    aecDumpSupported: b.Z.isAecDumpSupported(),
+    debugLogging: b.Z.getDebugLogging(),
+    aecDumpEnabled: b.Z.getAecDump(),
+    supportsConnectionReplay: b.Z.supports(T.AN.CONNECTION_REPLAY)
+  })), s = (0, a.e7)([E.default], () => E.default.isStreamInfoOverlayEnabled), l = (0, a.e7)([y.ZP], () => y.ZP.shouldRecordNextConnection()), p = i.useCallback(async () => {
     await M({
-      onUploadStart: () => exports(true)
+      onUploadStart: () => t(true)
     })
   }, []);
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["0CEP6e"]),
-        description: Chunk388032.intl.string(Chunk388032.t["kBXuW+"]),
-        checked: Chunk248514,
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(g.F, {
+      setting: S.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
+      children: (0, r.jsx)(c.rsf, {
+        label: C.intl.string(C.t["0CEP6e"]),
+        description: C.intl.string(C.t["kBXuW+"]),
+        checked: s,
         onChange: e => {
           (0, v.Z)("stream_info_overlay_enabled", e, s), (0, d.y)({
             isStreamInfoOverlayEnabled: e
           })
         }
       })
-    }), (0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["r6K+TL"]),
-        description: Chunk388032.intl.string(Chunk388032.t["xl9+I6"]),
-        checked: Chunk885387,
+    }), (0, r.jsx)(g.F, {
+      setting: S.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
+      children: (0, r.jsx)(c.rsf, {
+        label: C.intl.string(C.t["r6K+TL"]),
+        description: C.intl.string(C.t["xl9+I6"]),
+        checked: o,
         onChange: e => u.Z.setAecDump(e)
       })
-    }), (0, Chunk54381.jsxs)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
-      children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.U4FgFK),
-        description: Chunk388032.intl.string(Chunk388032.t.Lm72RU),
-        checked: Chunk755721,
+    }), (0, r.jsxs)(g.F, {
+      setting: S.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
+      children: [(0, r.jsx)(c.rsf, {
+        label: C.intl.string(C.t.U4FgFK),
+        description: C.intl.string(C.t.Lm72RU),
+        checked: l,
         onChange: e => f.TC(e)
-      }), (0, Chunk54381.jsx)(Chunk600164.Z, {
-        className: Chunk478411.marginBottom20,
-        children: (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
+      }), (0, r.jsx)(_.Z, {
+        className: A.marginBottom20,
+        children: (0, r.jsx)(_.Z.Child, {
           grow: 0,
           shrink: 0,
-          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+          children: (0, r.jsx)(c.Button, {
             variant: "primary",
             size: "sm",
-            text: Chunk388032.intl.string(Chunk388032.t.nJnOHO),
-            onClick: () => Chunk304680.z4()
+            text: C.intl.string(C.t.nJnOHO),
+            onClick: () => f.z4()
           })
         })
       })]
-    }), (0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
-      children: (0, Chunk54381.jsxs)("div", {
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["726JHL"]),
-          description: Chunk388032.intl.string(Chunk388032.t["/7ak9Q"]),
-          checked: require,
+    }), (0, r.jsx)(g.F, {
+      setting: S.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
+      children: (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(c.rsf, {
+          label: C.intl.string(C.t["726JHL"]),
+          description: C.intl.string(C.t["/7ak9Q"]),
+          checked: n,
           onChange: j
-        }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+        }), (0, r.jsxs)(c.ButtonGroup, {
           size: "sm",
-          children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+          children: [(0, r.jsx)(c.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t["3UB9ad"]),
-            disabled: module,
-            onClick: Chunk579806
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+            text: C.intl.string(C.t["3UB9ad"]),
+            disabled: e,
+            onClick: p
+          }), (0, r.jsx)(c.Button, {
             variant: "secondary",
-            text: Chunk388032.intl.string(Chunk388032.t.nuPtYi),
+            text: C.intl.string(C.t.nuPtYi),
             onClick: D
           })]
         })]

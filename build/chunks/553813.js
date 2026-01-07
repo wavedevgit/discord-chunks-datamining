@@ -3,7 +3,7 @@
 var r, Chunk444675 = require("./444675.js");
 t = module.exports = y, r = "object" == typeof Chunk444675 && Chunk444675.env && Chunk444675.env.NODE_DEBUG && /\bsemver\b/i.test(Chunk444675.env.NODE_DEBUG) ? function() {
   var e = Array.prototype.slice.call(arguments, 0);
-  module.unshift("SEMVER"), console.log.apply(console, module)
+  e.unshift("SEMVER"), console.log.apply(console, e)
 } : function() {}, exports.SEMVER_SPEC_VERSION = "2.0.0";
 var a = 256,
   o = Number.MAX_SAFE_INTEGER || 0x1fffffffffffff,

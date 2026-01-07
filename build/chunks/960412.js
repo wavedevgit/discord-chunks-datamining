@@ -53,10 +53,10 @@ function f(e, t) {
 }
 async function p() {
   try {
-    let e = await Chunk573261.Z.get({
-      url: Chunk981631.ANM.EMAIL_SETTINGS,
+    let e = await o.Z.get({
+      url: l.ANM.EMAIL_SETTINGS,
       trackedActionData: {
-        event: Chunk990547.NetworkActionNames.EMAIL_SETTINGS_FETCH,
+        event: r.NetworkActionNames.EMAIL_SETTINGS_FETCH,
         properties: e => {
           var t;
           let n = null == e || null == (t = e.body) ? true : t.initialized;
@@ -67,12 +67,12 @@ async function p() {
       },
       rejectWithError: true
     });
-    return Chunk570140.Z.dispatch({
+    return a.Z.dispatch({
       type: "EMAIL_SETTINGS_FETCH_SUCCESS",
-      settings: module.body
-    }), module.body
+      settings: e.body
+    }), e.body
   } catch (e) {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "EMAIL_SETTINGS_FETCH_FAILURE"
     })
   }
@@ -114,23 +114,23 @@ async function _(e, t) {
   }
 }
 async function m() {
-  let e = Chunk930441.M0.reduce((e, t) => f(u({}, e), {
+  let e = s.M0.reduce((e, t) => f(u({}, e), {
     [t]: false
   }), {});
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "EMAIL_SETTINGS_UPDATE",
-    updates: module
+    updates: e
   });
   try {
-    let t = await Chunk573261.Z.patch({
-      url: Chunk981631.ANM.EMAIL_SETTINGS,
+    let t = await o.Z.patch({
+      url: l.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
-          categories: module
+          categories: e
         }
       },
       trackedActionData: {
-        event: Chunk990547.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
+        event: r.NetworkActionNames.EMAIL_SETTINGS_UPDATE,
         properties: {
           category: "marketing",
           value: false
@@ -138,12 +138,12 @@ async function m() {
       },
       rejectWithError: true
     });
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
-      settings: exports.body
+      settings: t.body
     })
   } catch (e) {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_FAILURE"
     })
   }

@@ -37,7 +37,7 @@ class f extends Chunk473749.PureComponent {
         skuId: a,
         onStoreListingSelect: o,
         currentStoreListingId: c
-      } = require,
+      } = n,
       p = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
@@ -52,9 +52,9 @@ class f extends Chunk473749.PureComponent {
           for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
-      }(require, ["storeListings", "primaryStoreListing", "skuId", "onStoreListingSelect", "currentStoreListingId"]),
-      f = +(null != Chunk442837);
-    return (f += Chunk473749.length) < 2 ? null : (0, Chunk54381.jsx)(Chunk585237.Z, (e = function(e) {
+      }(n, ["storeListings", "primaryStoreListing", "skuId", "onStoreListingSelect", "currentStoreListingId"]),
+      f = +(null != l);
+    return (f += i.length) < 2 ? null : (0, r.jsx)(s.Z, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -70,17 +70,17 @@ class f extends Chunk473749.PureComponent {
       onDropdownClick: this.handleContextMenu,
       onContextMenu: this.handleContextMenu
     }, p), t = t = {
-      children: Chunk388032.intl.string(Chunk388032.t.hElye1)
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+      children: u.intl.string(u.t.hElye1)
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(exports)).forEach(function(n) {
+    })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), module))
+    }), e))
   }
   constructor(...e) {
     super(...e), d(this, "renderContextMenu", () => {

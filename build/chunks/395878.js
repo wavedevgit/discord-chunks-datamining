@@ -11,5 +11,5 @@ var Chunk475468 = require("./475468.js"),
 let s = {
   binds: ["mod+shift+t"],
   comboKeysBindGlobal: true,
-  action: () => (null != Chunk914010.Z.getGuildId() && (0, Chunk475468.K)(Chunk981631.ME), Chunk585483.S.safeDispatch(Chunk981631.CkL.TOGGLE_DM_CREATE), false)
+  action: () => (null != i.Z.getGuildId() && (0, r.K)(o.ME), a.S.safeDispatch(o.CkL.TOGGLE_DM_CREATE), false)
 }

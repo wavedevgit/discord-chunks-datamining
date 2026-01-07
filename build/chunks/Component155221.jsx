@@ -74,113 +74,113 @@ function L(e, t) {
 }
 require("./928518.js"), require("./972830.js"), require("./704806.js");
 let j = (0, Chunk663993.Un)({
-    createPromise: () => require.e("47620").then(require.bind(require, 576184)),
+    createPromise: () => n.e("47620").then(n.bind(n, 576184)),
     webpackId: 576184,
     name: "UnsupportedBrowser"
   }),
   M = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("32996"), require.e("74023")]).then(require.bind(require, 431583)),
+    createPromise: () => Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583)),
     webpackId: 431583,
     name: "DownloadApps"
   }),
   k = (0, Chunk663993.Un)({
-    createPromise: () => require.e("81226").then(require.bind(require, 484097)),
+    createPromise: () => n.e("81226").then(n.bind(n, 484097)),
     webpackId: 484097,
     name: "InviteProxy"
   }),
   U = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("800"), require.e("30556")]).then(require.bind(require, 675207)),
+    createPromise: () => Promise.all([n.e("800"), n.e("30556")]).then(n.bind(n, 675207)),
     webpackId: 675207,
     name: "VerifyConnectedAccount"
   }),
   G = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("800"), require.e("3809")]).then(require.bind(require, 301001)),
+    createPromise: () => Promise.all([n.e("800"), n.e("3809")]).then(n.bind(n, 301001)),
     webpackId: 301001,
     name: "VerifyConnectedAccountSuccess"
   }),
   Z = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("800"), require.e("1544")]).then(require.bind(require, 926665)),
+    createPromise: () => Promise.all([n.e("800"), n.e("1544")]).then(n.bind(n, 926665)),
     webpackId: 926665,
     name: "VerifyConnectedAccountError"
   }),
   F = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("800"), require.e("67127")]).then(require.bind(require, 832462)),
+    createPromise: () => Promise.all([n.e("800"), n.e("67127")]).then(n.bind(n, 832462)),
     webpackId: 832462,
     name: "LinkConnectedAccount"
   }),
   B = (0, Chunk663993.Un)({
-    createPromise: () => require.e("46455").then(require.bind(require, 924339)),
+    createPromise: () => n.e("46455").then(n.bind(n, 924339)),
     webpackId: 924339,
     name: "LinkAuthorize"
   }),
   V = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("93132"), require.e("69773")]).then(require.bind(require, 197528)),
+    createPromise: () => Promise.all([n.e("93132"), n.e("69773")]).then(n.bind(n, 197528)),
     webpackId: 197528,
     name: "ActivateDevice"
   }),
   H = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("53870"), require.e("57804"), require.e("50448"), require.e("82821"), require.e("37472"), require.e("72748"), require.e("23706"), require.e("49894"), require.e("90508"), require.e("49049"), require.e("6915"), require.e("33285"), require.e("63575"), require.e("89250"), require.e("62856"), require.e("38697"), require.e("15718"), require.e("43342"), require.e("39206"), require.e("93375"), require.e("91315"), require.e("24358"), require.e("38342"), require.e("91689"), require.e("41700"), require.e("48615"), require.e("22516"), require.e("37220"), require.e("76844"), require.e("22173"), require.e("83203"), require.e("30634"), require.e("95546"), require.e("13873"), require.e("40184"), require.e("77069"), require.e("60831"), require.e("51333"), require.e("83243"), require.e("77803"), require.e("5410"), require.e("6043"), require.e("67000"), require.e("92504"), require.e("29709"), require.e("74969"), require.e("13532"), require.e("32996"), require.e("1272")]).then(require.bind(require, 457094)),
+    createPromise: () => Promise.all([n.e("53870"), n.e("57804"), n.e("50448"), n.e("82821"), n.e("37472"), n.e("72748"), n.e("23706"), n.e("49894"), n.e("90508"), n.e("49049"), n.e("6915"), n.e("33285"), n.e("63575"), n.e("89250"), n.e("62856"), n.e("38697"), n.e("15718"), n.e("43342"), n.e("39206"), n.e("93375"), n.e("91315"), n.e("24358"), n.e("38342"), n.e("91689"), n.e("41700"), n.e("48615"), n.e("22516"), n.e("37220"), n.e("76844"), n.e("22173"), n.e("83203"), n.e("30634"), n.e("95546"), n.e("13873"), n.e("40184"), n.e("77069"), n.e("60831"), n.e("51333"), n.e("83243"), n.e("77803"), n.e("5410"), n.e("6043"), n.e("67000"), n.e("92504"), n.e("29709"), n.e("74969"), n.e("13532"), n.e("32996"), n.e("1272")]).then(n.bind(n, 457094)),
     webpackId: 457094,
     name: "ViewsWithMainInterface",
     memo: true,
     id: 457094
   }),
   Y = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("93132"), require.e("52030"), require.e("13873"), require.e("10778"), require.e("12581"), require.e("41619"), require.e("13532"), require.e("27978")]).then(require.bind(require, 822699)),
+    createPromise: () => Promise.all([n.e("93132"), n.e("52030"), n.e("13873"), n.e("10778"), n.e("12581"), n.e("41619"), n.e("13532"), n.e("27978")]).then(n.bind(n, 822699)),
     webpackId: 822699,
     name: "ViewsWithAuth"
   }),
   W = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("12581"), require.e("96858")]).then(require.bind(require, 285773)),
+    createPromise: () => Promise.all([n.e("12581"), n.e("96858")]).then(n.bind(n, 285773)),
     webpackId: 285773,
     name: "ViewsWithOAuth2"
   }),
   K = (0, Chunk663993.Un)({
-    createPromise: () => require.e("57047").then(require.bind(require, 549652)),
+    createPromise: () => n.e("57047").then(n.bind(n, 549652)),
     webpackId: 549652,
     name: "BrowserHandoff"
   }),
   z = (0, Chunk663993.Un)({
-    createPromise: () => require.e("71747").then(require.bind(require, 573276)),
+    createPromise: () => n.e("71747").then(n.bind(n, 573276)),
     webpackId: 573276,
     name: "MobileWebHandoffFallback"
   }),
   q = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("53870"), require.e("57804"), require.e("37472"), require.e("72748"), require.e("90508"), require.e("49049"), require.e("6915"), require.e("33285"), require.e("63575"), require.e("89250"), require.e("62856"), require.e("38697"), require.e("15718"), require.e("43342"), require.e("39206"), require.e("93375"), require.e("91315"), require.e("24358"), require.e("38342"), require.e("41700"), require.e("48615"), require.e("37220"), require.e("76844"), require.e("22173"), require.e("83203"), require.e("95546"), require.e("13873"), require.e("40184"), require.e("60831"), require.e("51333"), require.e("67000"), require.e("63141")]).then(require.bind(require, 290161)),
+    createPromise: () => Promise.all([n.e("53870"), n.e("57804"), n.e("37472"), n.e("72748"), n.e("90508"), n.e("49049"), n.e("6915"), n.e("33285"), n.e("63575"), n.e("89250"), n.e("62856"), n.e("38697"), n.e("15718"), n.e("43342"), n.e("39206"), n.e("93375"), n.e("91315"), n.e("24358"), n.e("38342"), n.e("41700"), n.e("48615"), n.e("37220"), n.e("76844"), n.e("22173"), n.e("83203"), n.e("95546"), n.e("13873"), n.e("40184"), n.e("60831"), n.e("51333"), n.e("67000"), n.e("63141")]).then(n.bind(n, 290161)),
     webpackId: 290161,
     name: "Overlay"
   }),
   Q = (0, Chunk663993.Un)({
-    createPromise: () => require.e("75347").then(require.bind(require, 430075)),
+    createPromise: () => n.e("75347").then(n.bind(n, 430075)),
     webpackId: 430075,
     name: "SuspendedUserSafetyHubPage"
   }),
   X = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("78374"), require.e("10125")]).then(require.bind(require, 630107)),
+    createPromise: () => Promise.all([n.e("78374"), n.e("10125")]).then(n.bind(n, 630107)),
     webpackId: 630107,
     name: "QuestsLandingPage"
   }),
   J = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("78374"), require.e("41734")]).then(require.bind(require, 792459)),
+    createPromise: () => Promise.all([n.e("78374"), n.e("41734")]).then(n.bind(n, 792459)),
     webpackId: 792459,
     name: "QuestPreviewLandingPage"
   }),
   $ = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("800"), require.e("58131")]).then(require.bind(require, 531338)),
+    createPromise: () => Promise.all([n.e("800"), n.e("58131")]).then(n.bind(n, 531338)),
     webpackId: 531338,
     name: "ConnectionsAuthorizeContinue"
   }),
   ee = (0, Chunk663993.Un)({
-    createPromise: () => require.e("78449").then(require.bind(require, 684572)),
+    createPromise: () => n.e("78449").then(n.bind(n, 684572)),
     webpackId: 684572,
     name: "ApplicationDirectoryRoutes"
   }),
   et = (0, Chunk663993.Un)({
-    createPromise: () => require.e("20501").then(require.bind(require, 332116)),
+    createPromise: () => n.e("20501").then(n.bind(n, 332116)),
     webpackId: 332116,
     name: "ApplicationDirectoryGlobalDiscoveryRoutes"
   }),
-  en = () => (0, Chunk54381.jsx)(H, {}),
+  en = () => (0, r.jsx)(H, {}),
   er = new Set([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")]);
 
 function ei(e, t) {
@@ -191,10 +191,10 @@ class ea extends Chunk473749.Component {
     let {
       isAuthenticated: e
     } = this.props;
-    Chunk998502.ZP.cleanupDisplaySleep(), Chunk137412.Z.initialize(), Chunk218543.Z.wasAuthenticated = module
+    A.ZP.cleanupDisplaySleep(), b.Z.initialize(), O.Z.wasAuthenticated = e
   }
   componentWillUnmount() {
-    Chunk137412.Z.terminate()
+    b.Z.terminate()
   }
   render() {
     let e, {
@@ -202,62 +202,62 @@ class ea extends Chunk473749.Component {
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
     } = this.props;
-    return e = require === Chunk554608.P.IN_PROGRESS ? null : Chunk436620.KO ? Chunk358085.isPlatformEmbedded ? (0, Chunk54381.jsxs)(Chunk828700.rs, {
-      children: [exports ? null : (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: Chunk981631.Z5c.ACCOUNT_STANDING,
+    return e = n === g.P.IN_PROGRESS ? null : R.KO ? C.isPlatformEmbedded ? (0, r.jsxs)(o.rs, {
+      children: [t ? null : (0, r.jsx)(o.AW, {
+        path: N.Z5c.ACCOUNT_STANDING,
         component: Q
-      }), (0, Chunk54381.jsx)(Chunk828700.AW, {
+      }), (0, r.jsx)(o.AW, {
         exact: true,
-        path: Chunk981631.Z5c.INDEX,
-        render: () => (0, Chunk54381.jsx)(Chunk799656.Z, {})
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
+        path: N.Z5c.INDEX,
+        render: () => (0, r.jsx)(p.Z, {})
+      }), (0, r.jsx)(_.Z, {
         exact: true,
-        path: Chunk981631.Z5c.APPS,
+        path: N.Z5c.APPS,
         component: M
-      }), (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: ei([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.RESET], Chunk188785.a),
+      }), (0, r.jsx)(o.AW, {
+        path: ei([N.Z5c.LOGIN, N.Z5c.REGISTER, N.Z5c.INVITE(":inviteCode"), N.Z5c.INVITE_LOGIN(":inviteCode"), N.Z5c.GIFT_CODE(":giftCode"), N.Z5c.GIFT_CODE_LOGIN(":giftCode"), N.Z5c.RESET], P.a),
         component: Y
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.INVITE_PROXY(y.Hw.channelId()),
         component: k
-      }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-        from: Chunk981631.Z5c.INVITE(""),
-        to: Chunk981631.Z5c.LOGIN
-      }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-        from: Chunk981631.Z5c.GIFT_CODE(""),
-        to: Chunk981631.Z5c.LOGIN
-      }), (0, Chunk54381.jsx)(Chunk828700.AW, {
+      }), (0, r.jsx)(o.l_, {
+        from: N.Z5c.INVITE(""),
+        to: N.Z5c.LOGIN
+      }), (0, r.jsx)(o.l_, {
+        from: N.Z5c.GIFT_CODE(""),
+        to: N.Z5c.LOGIN
+      }), (0, r.jsx)(o.AW, {
         render: en
       })]
-    }) : (0, Chunk54381.jsxs)(Chunk828700.rs, {
-      children: [(0, Chunk54381.jsx)(Chunk765717.Z, {
+    }) : (0, r.jsxs)(o.rs, {
+      children: [(0, r.jsx)(_.Z, {
         exact: true,
-        path: Chunk981631.Z5c.INDEX,
-        render: () => (0, Chunk54381.jsx)(Chunk799656.Z, {})
-      }), (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: ei([Chunk981631.Z5c.LOGIN_ONE_TIME, Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.BILLING_PREFIX, Chunk981631.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS, Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, Chunk981631.Z5c.RESET, Chunk981631.Z5c.REPORT, Chunk981631.Z5c.REPORT_SECOND_LOOK, Chunk981631.Z5c.ACCOUNT_REVERT(":token")], Chunk188785.a),
+        path: N.Z5c.INDEX,
+        render: () => (0, r.jsx)(p.Z, {})
+      }), (0, r.jsx)(o.AW, {
+        path: ei([N.Z5c.LOGIN_ONE_TIME, N.Z5c.LOGIN, N.Z5c.LOGIN_HANDOFF, N.Z5c.REGISTER, N.Z5c.BILLING_PREFIX, N.Z5c.BILLING_PROMOTION_REDEMPTION(":code"), N.Z5c.INVITE(":inviteCode"), N.Z5c.INVITE_LOGIN(":inviteCode"), N.Z5c.GIFT_CODE(":giftCode"), N.Z5c.GIFT_CODE_LOGIN(":giftCode"), N.Z5c.GUILD_TEMPLATE(":guildTemplateCode"), N.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), N.Z5c.DISABLE_EMAIL_NOTIFICATIONS, N.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, N.Z5c.RESET, N.Z5c.REPORT, N.Z5c.REPORT_SECOND_LOOK, N.Z5c.ACCOUNT_REVERT(":token")], P.a),
         component: Y
-      }), exports ? null : (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: Chunk981631.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
+      }), t ? null : (0, r.jsx)(o.AW, {
+        path: N.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         component: Y
-      }), exports ? null : (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
+      }), t ? null : (0, r.jsx)(o.AW, {
+        path: N.Z5c.CHANNEL(y.Hw.guildId(), y.Hw.channelId({
           optional: true
         }), ":messageId?"),
         component: Y
-      }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-        from: Chunk981631.Z5c.INVITE(""),
-        to: Chunk981631.Z5c.LOGIN
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
+      }), (0, r.jsx)(o.l_, {
+        from: N.Z5c.INVITE(""),
+        to: N.Z5c.LOGIN
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.INVITE_PROXY(y.Hw.channelId()),
         component: k
-      }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-        from: Chunk981631.Z5c.GIFT_CODE(""),
-        to: Chunk981631.Z5c.LOGIN
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.QUESTS(":questId"),
+      }), (0, r.jsx)(o.l_, {
+        from: N.Z5c.GIFT_CODE(""),
+        to: N.Z5c.LOGIN
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.QUESTS(":questId"),
         component: X,
-        impressionName: Chunk990547.ImpressionNames.QUESTS_LANDING_PAGE,
+        impressionName: s.ImpressionNames.QUESTS_LANDING_PAGE,
         impressionProperties: e => {
           let {
             computedMatch: t
@@ -266,105 +266,105 @@ class ea extends Chunk473749.Component {
             quest_id: t.params.questId
           }
         }
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.QUEST_PREVIEW(":questId"),
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.QUEST_PREVIEW(":questId"),
         component: J
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.HANDOFF,
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.HANDOFF,
         component: K
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.MOBILE_WEB_HANDOFF,
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.MOBILE_WEB_HANDOFF,
         component: z
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.CONNECTION_LINK(":type"),
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.CONNECTION_LINK(":type"),
         component: F
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
         component: B
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.ACTIVATE,
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.ACTIVATE,
         component: V
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.ACTIVATE_HANDOFF,
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.ACTIVATE_HANDOFF,
         component: V
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.CONNECTIONS_AUTHORIZE_CONTINUE(":type"),
         component: $
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.CONNECTIONS_SUCCESS(":type"),
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.CONNECTIONS_SUCCESS(":type"),
         component: G
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.CONNECTIONS_ERROR(":type"),
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.CONNECTIONS_ERROR(":type"),
         component: Z
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.CONNECTIONS(":type"),
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.CONNECTIONS(":type"),
         component: U
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.DOWNLOAD_QR_CODE_REDIRECT,
         render: () => {
           var e, t, n;
-          let r = null == (e = Chunk626135.default.getSuperProperties()) ? true : module.os,
-            i = (0, Chunk664751.parse)((null != (n = window.location.search) ? require : "").substr(1)),
-            o = null == (t = Chunk473749.referring_location) ? true : exports.toString();
-          return ("iOS" === Chunk54381 || "Android" === Chunk54381) && Chunk626135.default.track(Chunk981631.rMx.DOWNLOAD_APP, {
-            platform: Chunk54381,
+          let r = null == (e = S.default.getSuperProperties()) ? true : e.os,
+            i = (0, a.parse)((null != (n = window.location.search) ? n : "").substr(1)),
+            o = null == (t = i.referring_location) ? true : t.toString();
+          return ("iOS" === r || "Android" === r) && S.default.track(N.rMx.DOWNLOAD_APP, {
+            platform: r,
             ptb: false,
             released: true,
-            has_e_mail: "true" === Chunk473749.has_e_mail,
-            referring_location: Chunk828700,
+            has_e_mail: "true" === i.has_e_mail,
+            referring_location: o,
             qr_code: true
-          }), window.location.href = (0, Chunk361207.Gn)(null != Chunk828700 && "" !== Chunk828700 ? Chunk828700 : "qr_code", Chunk54381), null
+          }), window.location.href = (0, I.Gn)(null != o && "" !== o ? o : "qr_code", r), null
         }
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.OPEN_APP_FROM_EMAIL,
+      }), (0, r.jsx)(_.Z, {
+        path: N.Z5c.OPEN_APP_FROM_EMAIL,
         render: () => {
           var e, t;
-          let n = null == (e = Chunk626135.default.getSuperProperties()) ? true : module.os,
-            i = (0, Chunk690032.o)(null != (t = window.location.search) ? exports : "");
-          if ("iOS" !== require && "Android" !== require) return (0, Chunk54381.jsx)(Chunk828700.l_, {
-            to: null != Chunk473749.desktop ? "".concat(Chunk473749.desktop.pathname).concat(Chunk473749.desktop.search) : Chunk981631.Z5c.APP
+          let n = null == (e = S.default.getSuperProperties()) ? true : e.os,
+            i = (0, T.o)(null != (t = window.location.search) ? t : "");
+          if ("iOS" !== n && "Android" !== n) return (0, r.jsx)(o.l_, {
+            to: null != i.desktop ? "".concat(i.desktop.pathname).concat(i.desktop.search) : N.Z5c.APP
           });
           {
-            let e = (0, Chunk361207.Gn)("app_open_from_email", require, Chunk473749.mobile),
-              t = (0, Chunk271579.zS)(module);
-            null != exports && Chunk626135.default.track(Chunk981631.rMx.DEEP_LINK_CLICKED, {
-              fingerprint: (0, Chunk756647.K)(exports.fingerprint),
-              attempt_id: exports.attemptId,
-              source: exports.utmSource,
-              destination: null != Chunk473749.mobile ? Chunk473749.mobile.toString() : null
-            }), window.location.href = module
+            let e = (0, I.Gn)("app_open_from_email", n, i.mobile),
+              t = (0, c.zS)(e);
+            null != t && S.default.track(N.rMx.DEEP_LINK_CLICKED, {
+              fingerprint: (0, u.K)(t.fingerprint),
+              attempt_id: t.attemptId,
+              source: t.utmSource,
+              destination: null != i.mobile ? i.mobile.toString() : null
+            }), window.location.href = e
           }
         }
-      }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-        from: Chunk981631.Z5c.CONNECT_AUTHORIZE,
+      }), (0, r.jsx)(o.l_, {
+        from: N.Z5c.CONNECT_AUTHORIZE,
         to: L(D({}, location), {
-          pathname: Chunk981631.Z5c.OAUTH2_AUTHORIZE
+          pathname: N.Z5c.OAUTH2_AUTHORIZE
         })
-      }), (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: [Chunk981631.Z5c.OAUTH2_AUTHORIZED, Chunk981631.Z5c.OAUTH2_AUTHORIZE, Chunk981631.Z5c.OAUTH2_ERROR, Chunk981631.Z5c.OAUTH2_WHITELIST_ACCEPT],
+      }), (0, r.jsx)(o.AW, {
+        path: [N.Z5c.OAUTH2_AUTHORIZED, N.Z5c.OAUTH2_AUTHORIZE, N.Z5c.OAUTH2_ERROR, N.Z5c.OAUTH2_WHITELIST_ACCEPT],
         component: W
-      }), exports ? null : (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: [Chunk981631.Z5c.ACCOUNT_STANDING],
+      }), t ? null : (0, r.jsx)(o.AW, {
+        path: [N.Z5c.ACCOUNT_STANDING],
         component: Q
-      }), exports ? null : (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: [Chunk981631.Z5c.APPLICATION_DIRECTORY],
+      }), t ? null : (0, r.jsx)(o.AW, {
+        path: [N.Z5c.APPLICATION_DIRECTORY],
         component: ee
-      }), exports ? null : (0, Chunk54381.jsx)(Chunk828700.AW, {
-        path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS],
+      }), t ? null : (0, r.jsx)(o.AW, {
+        path: [N.Z5c.GLOBAL_DISCOVERY_APPS],
         component: et
-      }), (0, Chunk54381.jsx)(Chunk828700.AW, {
+      }), (0, r.jsx)(o.AW, {
         render: en
-      }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-        from: Chunk981631.Z5c.ACCOUNT_REVERT(""),
-        to: Chunk981631.Z5c.LOGIN
+      }), (0, r.jsx)(o.l_, {
+        from: N.Z5c.ACCOUNT_REVERT(""),
+        to: N.Z5c.LOGIN
       })]
-    }) : (0, Chunk54381.jsx)(Chunk828700.rs, {
-      children: (0, Chunk54381.jsx)(Chunk765717.Z, {
+    }) : (0, r.jsx)(o.rs, {
+      children: (0, r.jsx)(_.Z, {
         component: j
       })
-    }), (0, Chunk54381.jsxs)(Chunk329816.Z, {
-      skipsSettingDefaultPageTitle: Chunk473749,
-      children: [module, Chunk358085.isPlatformEmbedded && (require === Chunk554608.P.NOT_STARTED || require === Chunk554608.P.IN_PROGRESS) && true !== Chunk433517.K.get(Chunk719711.SV) ? (0, Chunk54381.jsx)(Chunk83949.Z, {}) : null]
+    }), (0, r.jsxs)(h.Z, {
+      skipsSettingDefaultPageTitle: i,
+      children: [e, C.isPlatformEmbedded && (n === g.P.NOT_STARTED || n === g.P.IN_PROGRESS) && true !== f.K.get(l.SV) ? (0, r.jsx)(E.Z, {}) : null]
     })
   }
 }
@@ -372,9 +372,9 @@ class ea extends Chunk473749.Component {
 function eo() {
   let {
     pathname: e
-  } = (0, Chunk828700.TH)();
-  return null != (0, Chunk828700.LX)(module, {
-    path: Chunk981631.Z5c.APPLICATION_DIRECTORY
+  } = (0, o.TH)();
+  return null != (0, o.LX)(e, {
+    path: N.Z5c.APPLICATION_DIRECTORY
   })
 }
 
@@ -385,8 +385,8 @@ function es(e) {
   }))
 }
 let el = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk554608.Z], () => ({
-  isAuthenticated: Chunk314897.default.isAuthenticated(),
-  migrationStatus: Chunk554608.Z.getMigrationStatus()
+  isAuthenticated: v.default.isAuthenticated(),
+  migrationStatus: g.Z.getMigrationStatus()
 }), {
   forwardRef: true
 })(es)

@@ -10,12 +10,12 @@ let s = null,
   c = null;
 
 function u() {
-  let e = Chunk41776.Z.mostRecentLurkedGuildId();
-  null != module ? (s = module, c = null) : (c = null != s ? s : null, s = null)
+  let e = o.Z.mostRecentLurkedGuildId();
+  null != e ? (s = e, c = null) : (c = null != s ? s : null, s = null)
 }
 class d extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk41776.Z], u)
+    this.syncWith([o.Z], u)
   }
   shouldShowPopout(e) {
     return c === e

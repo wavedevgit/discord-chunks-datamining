@@ -123,18 +123,18 @@ let ey = new eb,
   eO = 30 * Chunk70956.Z.Millis.DAY;
 
 function ev() {
-  return Chunk709054.default.fromTimestamp(Date.now() - eO)
+  return G.default.fromTimestamp(Date.now() - eO)
 }
 let eS = 0,
   eI = 0,
   eT = null;
 
 function eC() {
-  eS = Date.now() - 7 * Chunk70956.Z.Millis.DAY, eI = Date.now() - 3 * Chunk70956.Z.Millis.DAY, clearTimeout(eT), eT = setTimeout(() => {
-    Chunk570140.Z.dispatch({
+  eS = Date.now() - 7 * M.Z.Millis.DAY, eI = Date.now() - 3 * M.Z.Millis.DAY, clearTimeout(eT), eT = setTimeout(() => {
+    p.Z.dispatch({
       type: "DECAY_READ_STATES"
     })
-  }, +Chunk70956.Z.Millis.HOUR)
+  }, +M.Z.Millis.HOUR)
 }
 
 function eA(e) {
@@ -251,10 +251,10 @@ class eM {
   static getMentionChannelIds() {
     let e = [];
     for (let t of eM._mentionChannels) {
-      let n = eM.getIfExists(exports);
-      null != require && require.canHaveMentions() ? module.push(exports) : eM._mentionChannels.delete(exports)
+      let n = eM.getIfExists(t);
+      null != n && n.canHaveMentions() ? e.push(t) : eM._mentionChannels.delete(t)
     }
-    return module
+    return e
   }
   static getValue(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : ei.W.CHANNEL,
@@ -390,7 +390,7 @@ class eM {
   }
   get unreadCount() {
     var e;
-    return null != (e = this._unreadCount) ? module : 0
+    return null != (e = this._unreadCount) ? e : 0
   }
   set unreadCount(e) {
     (true === this._unreadCount || 0 === this._unreadCount || 0 === e) && this.incrementGuildUnreadsSentinel(), this._unreadCount = e
@@ -413,26 +413,26 @@ class eM {
     } else null != this.flags && 0 !== this.flags && (this.flags = false & this.flags)
   }
   guessAckMessageId() {
-    let e = Chunk375954.Z.getMessages(this.channelId);
-    if (null != this.ackMessageId || !this.isPrivate() || module.hasMoreAfter) return this.ackMessageId;
+    let e = K.Z.getMessages(this.channelId);
+    if (null != this.ackMessageId || !this.isPrivate() || e.hasMoreAfter) return this.ackMessageId;
     if (!this.hasMentions()) return this.lastMessageId;
     let t = null,
       n = this.mentionCount,
-      r = Chunk594174.default.getCurrentUser();
-    return module.forEach(e => {
+      r = J.default.getCurrentUser();
+    return e.forEach(e => {
       if (n > 0 && e.author.id !== (null == r ? true : r.id)) --n;
       else if (0 === n) return t = e.id, false
-    }, this, true), exports
+    }, this, true), t
   }
   get guildId() {
     if (null != this._guildId) return this._guildId;
-    let e = Chunk592125.Z.getChannel(this.channelId);
-    return this._guildId = null != module ? module.getGuildId() : null
+    let e = B.Z.getChannel(this.channelId);
+    return this._guildId = null != e ? e.getGuildId() : null
   }
   isPrivate() {
-    if (this.type !== Chunk490897.W.CHANNEL) returnfalse;
-    let e = Chunk592125.Z.getChannel(this.channelId);
-    return null != module && module.isPrivate()
+    if (this.type !== ei.W.CHANNEL) returnfalse;
+    let e = B.Z.getChannel(this.channelId);
+    return null != e && e.isPrivate()
   }
   rebuildChannelState(e) {
     var t, n;
@@ -469,16 +469,16 @@ class eM {
     }), this.lastMessageId = o, this.mentionCount = s
   }
   canTrackUnreads() {
-    if (this.type !== Chunk490897.W.CHANNEL) returntrue;
+    if (this.type !== ei.W.CHANNEL) returntrue;
     if (this._isThread && !this._isActiveThread || this._isResourceChannel) returnfalse;
-    let e = Chunk592125.Z.getBasicChannel(this.channelId);
-    return null != module && ("basicPermissions" in module ? Chunk386438.Z.has(module.basicPermissions, Chunk981631.S7T.VIEW_CHANNEL) : !Chunk430198.Z.isChannelGated(this.guildId, this.channelId) || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, module))
+    let e = B.Z.getBasicChannel(this.channelId);
+    return null != e && ("basicPermissions" in e ? j.Z.has(e.basicPermissions, ee.S7T.VIEW_CHANNEL) : !g.Z.isChannelGated(this.guildId, this.channelId) || z.Z.can(ee.Plq.VIEW_CHANNEL, e))
   }
   canBeUnread() {
-    return !(this._isThread && !this._isJoinedThread || (0, Chunk869404.h3)(this.channelId, [Chunk355298.Z, Chunk333984.Z]) || !this._isThread && (0, Chunk398758.r1)(this._guildId) && (this._lastMessageTimestamp < eS || !Chunk9156.ZP.isChannelOrParentOptedIn(this._guildId, this.channelId) && !this.hasRecentlyVisitedAndRead() && !this.hasMentions())) && this.canTrackUnreads()
+    return !(this._isThread && !this._isJoinedThread || (0, S.h3)(this.channelId, [v.Z, I.Z]) || !this._isThread && (0, A.r1)(this._guildId) && (this._lastMessageTimestamp < eS || !X.ZP.isChannelOrParentOptedIn(this._guildId, this.channelId) && !this.hasRecentlyVisitedAndRead() && !this.hasMentions())) && this.canTrackUnreads()
   }
   canHaveMentions() {
-    return !(0 === this.mentionCount || this._isThread && !this._isJoinedThread || (0, Chunk869404.h3)(this.channelId, [Chunk355298.Z, Chunk333984.Z]) || (0, Chunk398758.r1)(this._guildId) && this._lastMessageTimestamp < eS) && this.canTrackUnreads()
+    return !(0 === this.mentionCount || this._isThread && !this._isJoinedThread || (0, S.h3)(this.channelId, [v.Z, I.Z]) || (0, A.r1)(this._guildId) && this._lastMessageTimestamp < eS) && this.canTrackUnreads()
   }
   getGuildChannelUnreadState(e, t, n, r, i) {
     if (t && (this._lastMessageTimestamp < eS || !X.ZP.isChannelRecordOrParentOptedIn(e) && !this.hasRecentlyVisitedAndRead() && this.mentionCount <= 0)) return {
@@ -511,7 +511,7 @@ class eM {
     return this.getAckTimestamp() < this._lastMessageTimestamp
   }
   hasRecentlyVisitedAndRead() {
-    return this._lastMessageTimestamp > 0 && null != this._ackMessageId && this.getAckTimestamp() > eI && Chunk581883.Z.getGuildRecentsDismissedAt(this._guildId) < this.getAckTimestamp()
+    return this._lastMessageTimestamp > 0 && null != this._ackMessageId && this.getAckTimestamp() > eI && x.Z.getGuildRecentsDismissedAt(this._guildId) < this.getAckTimestamp()
   }
   isForumPostUnread() {
     return !!this._isActiveThread && this.hasUnread()
@@ -527,17 +527,17 @@ class eM {
   }
   ackPins() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
-    if (this.type !== Chunk490897.W.CHANNEL || !this.canTrackUnreads()) returnfalse;
-    if (null == module) {
+    if (this.type !== ei.W.CHANNEL || !this.canTrackUnreads()) returnfalse;
+    if (null == e) {
       if (this.lastPinTimestamp === this.ackPinTimestamp) returnfalse;
-      this._persisted = true, ex(() => Chunk544891.tn.post({
-        url: Chunk981631.ANM.PINS_ACK(this.channelId),
+      this._persisted = true, ex(() => u.tn.post({
+        url: ee.ANM.PINS_ACK(this.channelId),
         oldFormErrors: true,
         rejectWithError: true
       }))
     }
-    let t = eA(module);
-    return this.ackPinTimestamp = 0 !== exports ? exports : this.lastPinTimestamp, true
+    let t = eA(e);
+    return this.ackPinTimestamp = 0 !== t ? t : this.lastPinTimestamp, true
   }
   ack(e) {
     let {
@@ -556,12 +556,14 @@ class eM {
     }, l || a ? 0 : 3e3)), this.outgoingAck = t), true)
   }
   takeSnapshot() {
-    letChunk888369 = require("./888369.js"), t = this.guildId;
+    let {
+      default: e
+    } = n(888369), t = this.guildId;
     return {
       unread: this.hasUnread(),
       mentionCount: this.mentionCount,
-      guildUnread: null == exports ? null : module.hasUnread(exports),
-      guildMentionCount: null == exports ? null : module.getMentionCount(exports),
+      guildUnread: null == t ? null : e.hasUnread(t),
+      guildMentionCount: null == t ? null : e.getMentionCount(t),
       takenAt: Date.now()
     }
   }
@@ -603,9 +605,9 @@ class eM {
     })
   }
   recalculateFlags() {
-    if (this.type !== Chunk490897.W.CHANNEL) return;
-    let e = Chunk592125.Z.getChannel(this.channelId);
-    if (null != module) return module.isThread() ? 2 : +(null != module.guild_id)
+    if (this.type !== ei.W.CHANNEL) return;
+    let e = B.Z.getChannel(this.channelId);
+    if (null != e) return e.isThread() ? 2 : +(null != e.guild_id)
   }
   _nonChannelAck() {
     let e, {
@@ -613,22 +615,22 @@ class eM {
       channelId: n,
       type: r
     } = this;
-    if (null != exports) {
+    if (null != t) {
       switch (r) {
-        case Chunk490897.W.GUILD_HOME:
-        case Chunk490897.W.GUILD_EVENT:
-        case Chunk490897.W.GUILD_ONBOARDING_QUESTION:
-          e = Chunk981631.ANM.GUILD_FEATURE_ACK(require, exports, r);
+        case ei.W.GUILD_HOME:
+        case ei.W.GUILD_EVENT:
+        case ei.W.GUILD_ONBOARDING_QUESTION:
+          e = ee.ANM.GUILD_FEATURE_ACK(n, t, r);
           break;
-        case Chunk490897.W.NOTIFICATION_CENTER:
-        case Chunk490897.W.MESSAGE_REQUESTS:
-          e = Chunk981631.ANM.USER_NON_CHANNEL_ACK(exports, r);
+        case ei.W.NOTIFICATION_CENTER:
+        case ei.W.MESSAGE_REQUESTS:
+          e = ee.ANM.USER_NON_CHANNEL_ACK(t, r);
           break;
         default:
           return
       }
-      this._persisted = true, ex(() => Chunk544891.tn.post({
-        url: module,
+      this._persisted = true, ex(() => u.tn.post({
+        url: e,
         body: {},
         oldFormErrors: true,
         rejectWithError: true
@@ -638,28 +640,28 @@ class eM {
   delete() {
     var e;
     let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-      n = Chunk592125.Z.getBasicChannel(this.channelId);
+      n = B.Z.getBasicChannel(this.channelId);
     es.log("Deleting ReadState", this.channelId, this.type, {
-      remote: exports,
+      remote: t,
       persisted: this._persisted,
-      channelMissing: null == require,
+      channelMissing: null == n,
       isOld: eq(this, ev()),
-      validType: null != require && Chunk131704.AW.has(require.type),
-      readableType: null != require && (0, Chunk131704.Em)(require.type),
+      validType: null != n && L.AW.has(n.type),
+      readableType: null != n && (0, L.Em)(n.type),
       oldThreadCutoff: ev(),
       mentionCount: this.mentionCount,
       channelId: this.channelId,
       ackMessageId: this._ackMessageId,
       lastMessageId: this._lastMessageId
-    }), exports && this._persisted && Chunk544891.tn.del({
-      url: Chunk981631.ANM.CHANNEL_ACK(this.channelId),
+    }), t && this._persisted && u.tn.del({
+      url: ee.ANM.CHANNEL_ACK(this.channelId),
       body: {
         version: el,
         read_state_type: this.type
       },
       oldFormErrors: true,
       rejectWithError: true
-    }), null == (e = eM._readStates.get(this.type)) || module.delete(this.channelId), eM._mentionChannels.delete(this.channelId)
+    }), null == (e = eM._readStates.get(this.type)) || e.delete(this.channelId), eM._mentionChannels.delete(this.channelId)
   }
   shouldDeleteReadState(e) {
     if (0 !== H.Z.totalUnavailableGuilds) returnfalse;
@@ -673,33 +675,33 @@ class eM {
   getAckTimestamp() {
     let e, t;
     if (0 !== this._ackMessageTimestamp && !isNaN(this._ackMessageTimestamp)) return this._ackMessageTimestamp;
-    if (this._isThread) return this._ackMessageTimestamp = eW(this.guildId, this.channelId), this._ackMessageId = Chunk709054.default.fromTimestamp(this._ackMessageTimestamp), this._ackMessageTimestamp;
-    if (this.type === Chunk490897.W.GUILD_EVENT || this.type === Chunk490897.W.GUILD_ONBOARDING_QUESTION) e = Chunk430824.Z.getGuild(this.channelId);
-    else if ((0, Chunk176505.AB)(this.channelId)) e = Chunk430824.Z.getGuild(this.guildId);
+    if (this._isThread) return this._ackMessageTimestamp = eW(this.guildId, this.channelId), this._ackMessageId = G.default.fromTimestamp(this._ackMessageTimestamp), this._ackMessageTimestamp;
+    if (this.type === ei.W.GUILD_EVENT || this.type === ei.W.GUILD_ONBOARDING_QUESTION) e = Y.Z.getGuild(this.channelId);
+    else if ((0, en.AB)(this.channelId)) e = Y.Z.getGuild(this.guildId);
     else {
-      let t = Chunk592125.Z.getChannel(this.channelId);
-      if (null != exports) {
-        let n = exports.getGuildId();
-        e = Chunk430824.Z.getGuild(require)
+      let t = B.Z.getChannel(this.channelId);
+      if (null != t) {
+        let n = t.getGuildId();
+        e = Y.Z.getGuild(n)
       }
     }
-    return null != module ? isNaN(t = eK(module)) && (t = Chunk709054.default.extractTimestamp(this.channelId)) : t = Chunk709054.default.extractTimestamp(this.channelId), this._ackMessageTimestamp = exports, exports
+    return null != e ? isNaN(t = eK(e)) && (t = G.default.extractTimestamp(this.channelId)) : t = G.default.extractTimestamp(this.channelId), this._ackMessageTimestamp = t, t
   }
   get oldestUnreadTimestamp() {
-    return null != this.oldestUnreadMessageId ? Chunk709054.default.extractTimestamp(this.oldestUnreadMessageId) : 0
+    return null != this.oldestUnreadMessageId ? G.default.extractTimestamp(this.oldestUnreadMessageId) : 0
   }
   syncThreadSettings() {
     this._isThread = true;
-    let e = Chunk592125.Z.getChannel(this.channelId);
-    if (null == module) return es.warn("syncThreadSettings called with channel not in memory ".concat(this.channelId)), false;
+    let e = B.Z.getChannel(this.channelId);
+    if (null == e) return es.warn("syncThreadSettings called with channel not in memory ".concat(this.channelId)), false;
     let t = this.guildId,
-      n = null != exports && Chunk344185.Z.isActive(exports, module.parent_id, this.channelId),
-      r = Chunk569471.Z.hasJoined(this.channelId);
-    return (this._isActiveThread !== require || this._isJoinedThread !== r) && (this._isActiveThread = require, this._isJoinedThread = r, true)
+      n = null != t && P.Z.isActive(t, e.parent_id, this.channelId),
+      r = R.Z.hasJoined(this.channelId);
+    return (this._isActiveThread !== n || this._isJoinedThread !== r) && (this._isActiveThread = n, this._isJoinedThread = r, true)
   }
   recordLastViewedTime() {
-    let e = Math.ceil((Date.now() - Chunk709054.DISCORD_EPOCH) / Chunk70956.Z.Millis.DAY);
-    module !== this.lastViewed && (this.lastViewed = module, this.canTrackUnreads() && !this.hasUnread() && this.ack({
+    let e = Math.ceil((Date.now() - G.DISCORD_EPOCH) / M.Z.Millis.DAY);
+    e !== this.lastViewed && (this.lastViewed = e, this.canTrackUnreads() && !this.hasUnread() && this.ack({
       force: true,
       trackAnalytics: false
     }))
@@ -1266,13 +1268,13 @@ function tS(e) {
 }
 
 function tI() {
-  let e = Chunk433355.ZP.getCurrentSidebarChannelId(ef),
+  let e = F.ZP.getCurrentSidebarChannelId(ef),
     t = false;
-  return ep !== module ? (t = tA(ep), ep = module) : t = eX({
-    section: Chunk981631.jXE.CHANNEL,
-    object: Chunk981631.qAy.ACK_CHANNEL_SECTION_STORE_UPDATE,
-    objectType: Chunk981631.AnalyticsObjectTypes.ACK_AUTOMATIC
-  }, module) || exports, exports
+  return ep !== e ? (t = tA(ep), ep = e) : t = eX({
+    section: ee.jXE.CHANNEL,
+    object: ee.qAy.ACK_CHANNEL_SECTION_STORE_UPDATE,
+    objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
+  }, e) || t, t
 }
 
 function tT(e) {
@@ -1573,11 +1575,11 @@ function tJ(e) {
 }
 class t$ extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    Chunk796974.Z, Chunk594174.default, Chunk430824.Z, Chunk486472.Z, Chunk592125.Z, Chunk944486.Z, Chunk375954.Z, Chunk496675.Z, Chunk358221.Z, Chunk344185.Z, Chunk569471.Z, Chunk433355.ZP, Chunk924301.ZP, Chunk353926.Z, Chunk430198.Z, Chunk9156.ZP, Chunk451478.Z, Chunk140155.Z, Chunk355298.Z, Chunk581883.Z, Chunk333984.Z, this.waitFor(Chunk344185.Z, Chunk314897.default, Chunk358221.Z, Chunk433355.ZP, Chunk592125.Z, Chunk796974.Z, Chunk317381.ZP, Chunk430198.Z, Chunk486472.Z, Chunk924301.ZP, Chunk430824.Z, Chunk517100.Z, Chunk569471.Z, Chunk375954.Z, Chunk140155.Z, Chunk496675.Z, Chunk699516.Z, Chunk944486.Z, Chunk9156.ZP, Chunk581883.Z, Chunk594174.default, Chunk451478.Z), this.syncWith([Chunk433355.ZP], tI)
+    V.Z, J.default, Y.Z, H.Z, B.Z, Q.Z, K.Z, z.Z, m.Z, P.Z, R.Z, F.ZP, y.ZP, b.Z, g.Z, X.ZP, $.Z, C.Z, v.Z, x.Z, I.Z, this.waitFor(P.Z, Z.default, m.Z, F.ZP, B.Z, V.Z, _.ZP, g.Z, H.Z, y.ZP, Y.Z, W.Z, R.Z, K.Z, C.Z, z.Z, q.Z, Q.Z, X.ZP, x.Z, J.default, $.Z), this.syncWith([F.ZP], tI)
   }
   getReadStatesByChannel() {
     var e;
-    return null != (e = eM._readStates.get(Chunk490897.W.CHANNEL)) ? module : new Map
+    return null != (e = eM._readStates.get(ei.W.CHANNEL)) ? e : new Map
   }
   getForDebugging(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : ei.W.CHANNEL;

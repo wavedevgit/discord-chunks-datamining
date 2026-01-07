@@ -65,7 +65,7 @@ let g = [{
     return n.favorites.length > 0 && (e.favoriteStickers = a.Lt.create(), e.favoriteStickers.stickerIds = i().uniq(n.favorites).slice(0, u.oX), r = true), i().size(n.usageHistory) > 0 && (e.stickerFrecency = a.ls.create(), e.stickerFrecency.stickers = (0, c.tU)(n.usageHistory, 100), r = true), r
   },
   cleanup() {
-    Chunk433517.K.remove("StickersPersistedStore")
+    o.K.remove("StickersPersistedStore")
   }
 }, {
   version: 4,
@@ -80,7 +80,7 @@ let g = [{
     return null != t.favorites && t.favorites.length > 0 && (e.favoriteEmojis = a.ND.create(), e.favoriteEmojis.emojis = i().uniq(t.favorites).slice(0, u.oX), n = true), i().size(t.usageHistory) > 0 && (e.emojiFrecency = a.PL.create(), e.emojiFrecency.emojis = (0, c.tU)(t.usageHistory, 100), n = true), n
   },
   cleanup() {
-    Chunk433517.K.remove("EmojiStore"), Chunk433517.K.remove("EmojiUsageHistory"), Chunk433517.K.remove("EmojiDiversitySurrogate")
+    o.K.remove("EmojiStore"), o.K.remove("EmojiUsageHistory"), o.K.remove("EmojiDiversitySurrogate")
   }
 }, {
   version: 6,
@@ -123,7 +123,7 @@ let g = [{
     return i().size(t.usageHistory) > 0 && (e.applicationCommandFrecency = a.YI.create(), e.applicationCommandFrecency.applicationCommands = (0, c.tU)(t.usageHistory, 500), n = true), n
   },
   cleanup() {
-    Chunk433517.K.remove("ApplicationCommandFrecency")
+    o.K.remove("ApplicationCommandFrecency")
   }
 }, {
   version: 8,
@@ -141,7 +141,7 @@ let g = [{
     }), n = true), n
   },
   cleanup() {
-    Chunk433517.K.remove("SoundboardFavoriteStore")
+    o.K.remove("SoundboardFavoriteStore")
   }
 }, {
   version: 9,
@@ -152,7 +152,7 @@ let g = [{
     return e.guildAndChannelFrecency = a.lG.create(), e.guildAndChannelFrecency.guildAndChannels = (0, c.tU)(t, 100), true
   },
   cleanup() {
-    Chunk433517.K.remove(p)
+    o.K.remove(p)
   }
 }, {
   version: 10,

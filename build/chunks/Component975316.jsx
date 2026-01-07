@@ -44,14 +44,14 @@ function h() {
   let {
     channel: e,
     submitting: t
-  } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getProps()), n = (0, Chunk442837.e7)([Chunk533947.Z], () => Chunk533947.Z.editedWebhook), s = (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null, [module]);
-  return (0, Chunk54381.jsx)(Chunk796027.Z, {
-    submitting: exports,
+  } = (0, l.cj)([c.Z], () => c.Z.getProps()), n = (0, l.e7)([o.Z], () => o.Z.editedWebhook), s = (0, l.e7)([d.Z], () => null != e ? d.Z.getGuild(e.getGuildId()) : null, [e]);
+  return (0, i.jsx)(r.Z, {
+    submitting: t,
     onReset: () => {
-      Chunk139387.Z.init()
+      a.Z.init()
     },
     onSave: () => {
-      null != Chunk490655 && null != require && Chunk139387.Z.saveWebhook(Chunk490655.id, require)
+      null != s && null != n && a.Z.saveWebhook(s.id, n)
     }
   })
 }

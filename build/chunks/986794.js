@@ -12,6 +12,6 @@ let i = {
   },
   a = Chunk473749.createContext(i),
   o = () => {
-    let e = Chunk473749.useContext(a);
-    return null == module ? i : module
+    let e = r.useContext(a);
+    return null == e ? i : e
   }

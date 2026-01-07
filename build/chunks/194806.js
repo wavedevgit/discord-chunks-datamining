@@ -59,7 +59,7 @@ class d {
   }
   close() {
     var e;
-    this.lastState = Chunk503461.hi.Closed, null == (e = this.raw) || module.close(), this.raw = null, Chunk350167.r.removeCompletionCallback(this.databaseStateCallback)
+    this.lastState = o.hi.Closed, null == (e = this.raw) || e.close(), this.raw = null, a.r.removeCompletionCallback(this.databaseStateCallback)
   }
   disable(e) {
     return null == this.raw ? Promise.resolve() : (this.lastState = o.hi.Disabled, this.execute({
@@ -108,12 +108,12 @@ class d {
     })
   }
   instantaneousState() {
-    return null == this.raw ? Chunk503461.hi.Closed : this.lastState = this.executeSync({
+    return null == this.raw ? o.hi.Closed : this.lastState = this.executeSync({
       type: "db.state"
     })
   }
   async instantaneousStateAsync() {
-    return null == this.raw ? Chunk503461.hi.Closed : this.lastState = await this.execute({
+    return null == this.raw ? o.hi.Closed : this.lastState = await this.execute({
       type: "db.state"
     })
   }
@@ -138,7 +138,7 @@ class f {
     this.operations.push(e)
   }
   complete() {
-    for (let e of this.operations) module.handle = 0;
+    for (let e of this.operations) e.handle = 0;
     return this.operations
   }
   toString() {

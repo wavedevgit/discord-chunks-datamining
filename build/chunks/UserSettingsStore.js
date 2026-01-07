@@ -42,7 +42,7 @@ let h = (window.innerWidth - Chunk981631.PrS) / 2,
   E = null;
 
 function b() {
-  return null == E && (E = Math.max((window.innerWidth - Chunk981631.PrS) * .4, Chunk981631.$Y6)), E
+  return null == E && (E = Math.max((window.innerWidth - d.PrS) * .4, d.$Y6)), E
 }
 let y = {};
 
@@ -69,8 +69,8 @@ function T() {
 
 function C() {
   var e;
-  let t = Chunk442837.ZP.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
-  return null != (e = null == exports ? true : exports.darkSidebar) && module
+  let t = o.ZP.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
+  return null != (e = null == t ? true : t.darkSidebar) && e
 }
 class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
@@ -82,101 +82,101 @@ class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   get displayCompactAvatars() {
     var e;
-    return null != (e = y.displayCompactAvatars) && module
+    return null != (e = y.displayCompactAvatars) && e
   }
   get lowQualityImageMode() {
     var e;
-    return null != (e = y.lowQualityImageMode) && module
+    return null != (e = y.lowQualityImageMode) && e
   }
   get videoUploadQuality() {
     var e;
-    return null != (e = y.videoUploadQuality) ? module : g
+    return null != (e = y.videoUploadQuality) ? e : g
   }
   get dataSavingMode() {
     var e, t;
-    return null != (t = null != (e = y.dataSavingMode) ? module : y.lowQualityImageMode) && exports
+    return null != (t = null != (e = y.dataSavingMode) ? e : y.lowQualityImageMode) && t
   }
   get expressionPickerWidth() {
     var e;
-    return null != (e = y.expressionPickerWidth) ? module : Chunk957825._j.MIN
+    return null != (e = y.expressionPickerWidth) ? e : f._j.MIN
   }
   get messageRequestSidebarWidth() {
     var e;
-    return null != (e = y.messageRequestSidebarWidth) ? module : Chunk981631.R7I
+    return null != (e = y.messageRequestSidebarWidth) ? e : d.R7I
   }
   get threadSidebarWidth() {
     var e;
-    return null != (e = y.threadSidebarWidth) ? module : Chunk981631.$Y6
+    return null != (e = y.threadSidebarWidth) ? e : d.$Y6
   }
   get postSidebarWidth() {
     var e;
-    return null != (e = y.postSidebarWidth) ? module : h
+    return null != (e = y.postSidebarWidth) ? e : h
   }
   get callChatSidebarWidth() {
     var e;
-    return null != (e = y.callChatSidebarWidth) ? module : Chunk981631.$Y6
+    return null != (e = y.callChatSidebarWidth) ? e : d.$Y6
   }
   get homeSidebarWidth() {
     var e;
-    return null != (e = y.homeSidebarWidth) ? module : b()
+    return null != (e = y.homeSidebarWidth) ? e : b()
   }
   get callParticipantsSidebarWidth() {
     var e;
-    return null != (e = y.callParticipantsSidebarWidth) ? module : Chunk36645.at
+    return null != (e = y.callParticipantsSidebarWidth) ? e : c.at
   }
   get callHeaderHeight() {
     return y.callHeaderHeight
   }
   get useSystemTheme() {
     var e;
-    return null != (e = y.useSystemTheme) ? module : Chunk874893.KW.UNSET
+    return null != (e = y.useSystemTheme) ? e : u.KW.UNSET
   }
   get activityPanelHeight() {
     return y.activityPanelHeight
   }
   get disableVoiceChannelChangeAlert() {
     var e;
-    return null != (e = y.disableVoiceChannelChangeAlert) && module
+    return null != (e = y.disableVoiceChannelChangeAlert) && e
   }
   get disableEmbeddedActivityPopOutAlert() {
     var e;
-    return null != (e = y.disableEmbeddedActivityPopOutAlert) && module
+    return null != (e = y.disableEmbeddedActivityPopOutAlert) && e
   }
   get disableActivityHardwareAccelerationPrompt() {
     var e;
-    return null != (e = y.disableActivityHardwareAccelerationPrompt) && module
+    return null != (e = y.disableActivityHardwareAccelerationPrompt) && e
   }
   get disableInviteWithTextChannelActivityLaunch() {
     var e;
-    return null != (e = y.disableInviteWithTextChannelActivityLaunch) && module
+    return null != (e = y.disableInviteWithTextChannelActivityLaunch) && e
   }
   get disableHideSelfStreamAndVideoConfirmationAlert() {
     var e;
-    return null != (e = y.disableHideSelfStreamAndVideoConfirmationAlert) && module
+    return null != (e = y.disableHideSelfStreamAndVideoConfirmationAlert) && e
   }
   get pushUpsellUserSettingsDismissed() {
     var e;
-    return null != (e = y.pushUpsellDismissed) && module
+    return null != (e = y.pushUpsellDismissed) && e
   }
   get disableActivityHostLeftNitroUpsell() {
     var e;
-    return null != (e = y.disableActivityHostLeftNitroUpsell) && module
+    return null != (e = y.disableActivityHostLeftNitroUpsell) && e
   }
   get disableCallUserConfirmationPrompt() {
     var e;
-    return null != (e = y.disableCallUserConfirmationPrompt) && module
+    return null != (e = y.disableCallUserConfirmationPrompt) && e
   }
   get disableApplicationSubscriptionCancellationSurvey() {
     var e;
-    return null != (e = y.disableApplicationSubscriptionCancellationSurvey) && module
+    return null != (e = y.disableApplicationSubscriptionCancellationSurvey) && e
   }
   get darkSidebar() {
     var e;
-    return null != (e = y.darkSidebar) && module
+    return null != (e = y.darkSidebar) && e
   }
   get saveCameraUploadsToDevice() {
     var e;
-    return null == (e = y.saveCameraUploadsToDevice) || module
+    return null == (e = y.saveCameraUploadsToDevice) || e
   }
   isVisualRefreshDisabled(e) {
     var t;
@@ -184,16 +184,16 @@ class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   get listDensity() {
     var e;
-    return null != (e = y.listDensity) ? module : Chunk969943.fx.COZY
+    return null != (e = y.listDensity) ? e : p.fx.COZY
   }
   get hdrDynamicRange() {
     var e;
-    return null != (e = y.hdrDynamicRange) ? module : "no-limit"
+    return null != (e = y.hdrDynamicRange) ? e : "no-limit"
   }
 }
 _(A, "displayName", "UnsyncedUserSettingsStore"), _(A, "persistKey", "UnsyncedUserSettingsStore"), _(A, "migrations", [() => {
-  let e = Chunk433517.K.get("UserSettingsStore");
-  return Chunk433517.K.remove("UserSettingsStore"), a().pick(module, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
+  let e = s.K.get("UserSettingsStore");
+  return s.K.remove("UserSettingsStore"), a().pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
 }, e => {
   delete e.disableVisualRefresh
 }]);

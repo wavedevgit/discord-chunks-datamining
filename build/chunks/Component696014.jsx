@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
 let l = 2;
 
 function c() {
-  let [e, t] = Chunk473749.useState(false);
+  let [e, t] = i.useState(false);
 
   function n(e) {
     let {
@@ -34,7 +34,7 @@ function c() {
     })
   }
   return {
-    isTruncated: module,
-    ExpandableTextContainer: Chunk473749.memo(require)
+    isTruncated: e,
+    ExpandableTextContainer: i.memo(n)
   }
 }

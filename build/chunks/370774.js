@@ -58,8 +58,8 @@ function y(e) {
 function O() {
   let {
     pathname: e
-  } = (0, Chunk828700.TH)();
-  return module.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv))
+  } = (0, i.TH)();
+  return e.startsWith(E.Z5c.CHANNEL(E.STv))
 }
 
 function v(e) {
@@ -75,19 +75,19 @@ function v(e) {
 }
 
 function S() {
-  let e = (0, Chunk442837.Wu)([Chunk787879.Z], () => {
+  let e = (0, a.Wu)([h.Z], () => {
       var e;
-      return null != (e = Chunk787879.Z.getNotifyingChannelIds()) ? module : []
+      return null != (e = h.Z.getNotifyingChannelIds()) ? e : []
     }),
-    t = (0, Chunk442837.Wu)([Chunk306680.ZP], () => module.filter(e => _.ZP.hasUnread(e)), [module]),
-    n = (0, Chunk442837.Wu)([Chunk455199.ZP], () => {
+    t = (0, a.Wu)([_.ZP], () => e.filter(e => _.ZP.hasUnread(e)), [e]),
+    n = (0, a.Wu)([o.ZP], () => {
       var e;
-      return null != (e = Chunk455199.ZP.getSettingsFilteredMentions()) ? module : []
+      return null != (e = o.ZP.getSettingsFilteredMentions()) ? e : []
     });
   return {
-    unreadRecentMentionsCount: (0, Chunk442837.e7)([Chunk306680.ZP, Chunk592125.Z, Chunk430824.Z], () => {
+    unreadRecentMentionsCount: (0, a.e7)([_.ZP, f.Z, p.Z], () => {
       var e, t;
-      return null != (t = null == require || null == (e = require.filter(e => {
+      return null != (t = null == n || null == (e = n.filter(e => {
         let t = f.Z.getBasicChannel(e.channel_id);
         return null != t && b({
           messageId: e.id,
@@ -96,9 +96,9 @@ function S() {
           ReadStateStore_: _.ZP,
           GuildStore_: p.Z
         })
-      })) ? true : module.length) ? exports : 0
-    }, [require]),
-    unreadChannelIds: exports
+      })) ? true : e.length) ? t : 0
+    }, [n]),
+    unreadChannelIds: t
   }
 }
 
@@ -106,10 +106,10 @@ function I() {
   let {
     enabled: e,
     inInbox: t
-  } = Chunk2818.Z.useExperiment({
+  } = s.Z.useExperiment({
     location: "NotificationsInboxUtils"
-  }), n = (0, Chunk442837.e7)([Chunk768943.Z], () => Chunk768943.Z.getSavedMessageCount());
-  return module && exports && (require > 0 || (0, Chunk175006.Z)())
+  }), n = (0, a.e7)([l.Z], () => l.Z.getSavedMessageCount());
+  return e && t && (n > 0 || (0, c.Z)())
 }
 
 function T(e, t) {

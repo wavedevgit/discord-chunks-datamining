@@ -156,10 +156,10 @@ let b = {
     })
   },
   clearSettingsOverride() {
-    for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-    Chunk570140.Z.dispatch({
+    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+    o.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_CLEAR",
-      settings: exports
+      settings: t
     })
   },
   updateLocale: e => f.hW.updateAsync("localization", t => {

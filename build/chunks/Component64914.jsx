@@ -49,11 +49,11 @@ function v(e) {
 let S = "AppHardwareAcceleration";
 
 function I() {
-  if ((0, Chunk947851.Y)("DesktopNativeUtils")) {
-    let e = Chunk433517.K.get(S);
-    if ("boolean" == typeof module) return module
+  if ((0, u.Y)("DesktopNativeUtils")) {
+    let e = o.K.get(S);
+    if ("boolean" == typeof e) return e
   }
-  return Chunk998502.ZP.getEnableHardwareAcceleration()
+  return p.ZP.getEnableHardwareAcceleration()
 }
 
 function T(e) {
@@ -61,7 +61,7 @@ function T(e) {
 }
 
 function C() {
-  let [e] = Chunk473749.useState(() => I()), t = Chunk473749.useCallback(e => {
+  let [e] = i.useState(() => I()), t = i.useCallback(e => {
     let t = e ? y.intl.format(y.t.LYXRxL, {}) : y.intl.format(y.t.uDP3Kz, {});
     (0, s.Z)({
       title: y.intl.string(y.t.aqpAvn),
@@ -70,65 +70,65 @@ function C() {
       onConfirm: () => T(e)
     })
   }, []);
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["eOC/F2"]),
-      description: Chunk388032.intl.string(Chunk388032.t.Afc7l6),
-      checked: module,
-      onChange: exports
-    }), !module && (0, Chunk54381.jsx)(Chunk494620.Z, {
-      look: Chunk494620.z.WARNING,
-      children: Chunk388032.intl.string(Chunk388032.t.j7S6IX)
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(l.rsf, {
+      label: y.intl.string(y.t["eOC/F2"]),
+      description: y.intl.string(y.t.Afc7l6),
+      checked: e,
+      onChange: t
+    }), !e && (0, r.jsx)(m.Z, {
+      look: m.z.WARNING,
+      children: y.intl.string(y.t.j7S6IX)
     })]
   })
 }
 
 function A() {
-  let e = Chunk695346.bm.useSetting(),
-    t = Chunk695346.Sb.useSetting(),
-    n = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId),
-    o = Chunk473749.useCallback(e => {
+  let e = _.bm.useSetting(),
+    t = _.Sb.useSetting(),
+    n = (0, a.e7)([f.Z], () => f.Z.testModeApplicationId),
+    o = i.useCallback(e => {
       _.bm.updateSetting(!e)
     }, []),
-    s = Chunk473749.useCallback(e => {
+    s = i.useCallback(e => {
       e ? (0, l.h7j)(e => (0, r.jsx)(h.Z, v({}, e))) : c.mc()
     }, []);
-  return (0, Chunk54381.jsx)(Chunk273313.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
-    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  return (0, r.jsx)(g.Z, {
+    title: y.intl.string(y.t["8/udY0"]),
+    children: (0, r.jsxs)(l.Kqy, {
       gap: 16,
-      children: [(0, Chunk54381.jsxs)(Chunk921801.F, {
-        setting: Chunk726985.s6.SETTINGS_ADVANCED_DEVELOPER_MODE,
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.ObIb1Q),
-          description: Chunk388032.intl.format(Chunk388032.t["CY6q/Q"], {
-            apiDocsUrl: Chunk981631.EYA.API_DOCS
+      children: [(0, r.jsxs)(d.F, {
+        setting: E.s6.SETTINGS_ADVANCED_DEVELOPER_MODE,
+        children: [(0, r.jsx)(l.rsf, {
+          label: y.intl.string(y.t.ObIb1Q),
+          description: y.intl.format(y.t["CY6q/Q"], {
+            apiDocsUrl: b.EYA.API_DOCS
           }),
-          checked: exports,
-          onChange: Chunk695346.Sb.updateSetting
-        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
-      }), (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
-        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+          checked: t,
+          onChange: _.Sb.updateSetting
+        }), (0, r.jsx)(l.izJ, {})]
+      }), (0, r.jsx)(d.F, {
+        setting: E.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
+        children: (0, r.jsxs)(l.Kqy, {
           gap: 16,
-          children: [(0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
+          children: [(0, r.jsx)(C, {}), (0, r.jsx)(l.izJ, {})]
         })
-      }), (0, Chunk54381.jsxs)(Chunk921801.F, {
-        setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.fi3UQN),
-          description: Chunk388032.intl.string(Chunk388032.t["8mYp37"]),
-          checked: !module,
-          onChange: Chunk433517
-        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
-      }), (0, Chunk54381.jsxs)(Chunk921801.F, {
-        setting: Chunk726985.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.erOqlh),
-          description: Chunk388032.intl.string(Chunk388032.t["52hMnD"]),
-          checked: null != require,
-          onChange: Chunk248514
-        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
+      }), (0, r.jsxs)(d.F, {
+        setting: E.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
+        children: [(0, r.jsx)(l.rsf, {
+          label: y.intl.string(y.t.fi3UQN),
+          description: y.intl.string(y.t["8mYp37"]),
+          checked: !e,
+          onChange: o
+        }), (0, r.jsx)(l.izJ, {})]
+      }), (0, r.jsxs)(d.F, {
+        setting: E.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
+        children: [(0, r.jsx)(l.rsf, {
+          label: y.intl.string(y.t.erOqlh),
+          description: y.intl.string(y.t["52hMnD"]),
+          checked: null != n,
+          onChange: s
+        }), (0, r.jsx)(l.izJ, {})]
       })]
     })
   })

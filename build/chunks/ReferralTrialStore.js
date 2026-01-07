@@ -138,10 +138,10 @@ function V() {
 }
 class H extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default), this.syncWith([Chunk594174.default], N)
+    this.waitFor(s.default), this.syncWith([s.default], N)
   }
   checkAndFetchReferralsRemaining() {
-    null == f && !m && b < d && (null == y || y < Date.now()) && (0, Chunk281494.C$)()
+    null == f && !m && b < d && (null == y || y < Date.now()) && (0, l.C$)()
   }
   getReferralsRemaining() {
     return this.checkAndFetchReferralsRemaining(), f

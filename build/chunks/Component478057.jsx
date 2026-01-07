@@ -13,22 +13,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js");
 
 function d() {
-  if (!(0, Chunk442837.e7)([Chunk594174.default], () => {
+  if (!(0, i.e7)([c.default], () => {
       var e, t;
-      return (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) === true || (null == (t = Chunk594174.default.getCurrentUser()) ? true : exports.isStaffPersonal()) === true
+      return (null == (e = c.default.getCurrentUser()) ? true : e.isStaff()) === true || (null == (t = c.default.getCurrentUser()) ? true : t.isStaffPersonal()) === true
     })) return null;
-  let e = Chunk653592.componentPlaygroundConfigs.flatMap(e => e.collections);
-  return (0, Chunk54381.jsx)(Chunk481060.sNh, {
+  let e = o.componentPlaygroundConfigs.flatMap(e => e.collections);
+  return (0, l.jsx)(a.sNh, {
     id: "playgrounds",
     label: "Playgrounds",
     action: () => {
-      Chunk156142.PlaygroundStore.setState({
+      s.PlaygroundStore.setState({
         selectedCollection: null,
         selectedStory: null
-      }), (0, Chunk37234.jN)(Chunk981631.S9g.COMPONENT_PLAYGROUND)
+      }), (0, r.jN)(u.S9g.COMPONENT_PLAYGROUND)
     },
-    children: (0, Chunk54381.jsx)(Chunk481060.kSQ, {
-      children: module.map(e => (0, l.jsx)(a.sNh, {
+    children: (0, l.jsx)(a.kSQ, {
+      children: e.map(e => (0, l.jsx)(a.sNh, {
         id: "".concat(e.id, "-playground"),
         label: e.name,
         action: () => {

@@ -57,7 +57,7 @@ function C(e) {
     channel: n,
     otherUser: l,
     active: u
-  } = e, m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, i.e7)([g.Z], () => null == l ? null : g.Z.getNickname(l.id)), C = !m && u, S = (0, b.c)(n), {
+  } = e, h = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, i.e7)([g.Z], () => null == l ? null : g.Z.getNickname(l.id)), C = !h && u, S = (0, b.c)(n), {
     avatarDecorationSrc: T
   } = (0, p.Z)({
     user: l,
@@ -81,7 +81,7 @@ function C(e) {
           showAccountIdentifier: true,
           className: v.tagContainer,
           usernameClass: v.username,
-          discriminatorClass: null != h.ZP.getGlobalName(l) ? v.globalName : v.discriminator
+          discriminatorClass: null != m.ZP.getGlobalName(l) ? v.globalName : v.discriminator
         }), (0, r.jsx)(a.Text, {
           className: v.timestampWithPreview,
           color: "text-muted",

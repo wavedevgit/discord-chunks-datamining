@@ -18,11 +18,11 @@ function a(e, t, n) {
 let o = "formGuidelinesStorageKey";
 class s extends Chunk147913.Z {
   _initialize() {
-    let e = Chunk433517.K.get(o);
-    null != module && (this.seenForumGuidelines = new Set(module))
+    let e = r.K.get(o);
+    null != e && (this.seenForumGuidelines = new Set(e))
   }
   _terminate() {
-    Chunk433517.K.set(o, this.seenForumGuidelines)
+    r.K.set(o, this.seenForumGuidelines)
   }
   markAsSeen(e) {
     this.seenForumGuidelines.add(e), r.K.set(o, this.seenForumGuidelines)

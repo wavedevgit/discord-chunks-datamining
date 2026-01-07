@@ -27,9 +27,9 @@ function u(e) {
 }
 
 function d() {
-  Chunk627050.d.getCurrentConfig({
+  o.d.getCurrentConfig({
     location: "GameMentionSettingsStore"
-  }).enabled && (0, Chunk406763.Q)()
+  }).enabled && (0, s.Q)()
 }
 
 function f() {

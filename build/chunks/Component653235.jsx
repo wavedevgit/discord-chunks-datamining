@@ -81,7 +81,7 @@ function P(e) {
 }
 class R extends Chunk473749.PureComponent {
   componentDidMount() {
-    0 === this.props.trendingCategories.length && (0, Chunk68405.Tg)()
+    0 === this.props.trendingCategories.length && (0, p.Tg)()
   }
   getData() {
     return this.memoizedData(this.state.favoritesTile, this.props.trendingCategories, this.props.hideFavoritesTile)
@@ -107,12 +107,12 @@ class R extends Chunk473749.PureComponent {
     })
   }
   render() {
-    return (0, Chunk54381.jsx)(Chunk527429.Z, {
+    return (0, r.jsx)(_.Z, {
       getItemGrid: this.getItemGrid,
       getCoordsMap: this.getCoordsMap,
       onFocus: this.handleFocus,
       onSelect: this.handleSelect,
-      children: (0, Chunk54381.jsx)(Chunk990233.Z, {
+      children: (0, r.jsx)(E.Z, {
         desiredItemWidth: 200,
         maxColumns: 6,
         children: this.renderContent

@@ -55,15 +55,15 @@ function d(e) {
 }
 
 function f() {
-  (0, Chunk473749.useEffect)(() => {
-    (0, Chunk872780.e$)(Chunk588486.dR.APP)
+  (0, r.useEffect)(() => {
+    (0, s.e$)(a.dR.APP)
   }, []);
-  let e = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getExperimentsMetadata()),
-    t = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getRegisteredExperiments()),
-    n = (0, Chunk473749.useMemo)(() => u(module, exports), [module, exports]),
-    o = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getClientOverrides());
+  let e = (0, i.e7)([l.Z], () => l.Z.getExperimentsMetadata()),
+    t = (0, i.e7)([l.Z], () => l.Z.getRegisteredExperiments()),
+    n = (0, r.useMemo)(() => u(e, t), [e, t]),
+    o = (0, i.e7)([l.Z], () => l.Z.getClientOverrides());
   return {
-    experiments: require,
-    overridesInfo: (0, Chunk473749.useMemo)(() => d(Chunk492435), [Chunk492435])
+    experiments: n,
+    overridesInfo: (0, r.useMemo)(() => d(o), [o])
   }
 }

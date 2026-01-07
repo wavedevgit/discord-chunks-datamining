@@ -33,7 +33,7 @@ class h extends(i = Chunk473749.PureComponent) {
         src: n,
         srcHover: i,
         className: r
-      } = module,
+      } = e,
       a = function(e, t) {
         if (null == e) return {};
         var n, i, l = function(e, t) {
@@ -48,12 +48,12 @@ class h extends(i = Chunk473749.PureComponent) {
           for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
         }
         return l
-      }(module, ["size", "src", "srcHover", "className"]),
+      }(e, ["size", "src", "srcHover", "className"]),
       {
         hovered: u
       } = this.state,
       h = this.getMode();
-    return (0, Chunk54381.jsx)("button", function(e) {
+    return (0, l.jsx)("button", function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -65,15 +65,15 @@ class h extends(i = Chunk473749.PureComponent) {
       }
       return e
     }({
-      className: s()((0, Chunk153066.l)(Chunk173609, "iconButton", h), Chunk473749, exports),
+      className: s()((0, o.l)(c, "iconButton", h), r, t),
       style: {
-        backgroundImage: "url('".concat(u && null != i ? i : require, "')")
+        backgroundImage: "url('".concat(u && null != i ? i : n, "')")
       },
       onMouseEnter: this.handleHover,
       onFocus: this.handleHover,
       onMouseLeave: this.handleBlur,
       onBlur: this.handleBlur
-    }, Chunk120356))
+    }, a))
   }
   constructor(...e) {
     super(...e), d(this, "state", {

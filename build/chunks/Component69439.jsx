@@ -28,12 +28,12 @@ var Chunk54381 = require("./54381.js"),
 let E = [{
   value: Chunk324805.cd.DESKTOP,
   get label() {
-    return Chunk388032.intl.string(Chunk388032.t["QXc01+"])
+    return _.intl.string(_.t["QXc01+"])
   }
 }, {
   value: Chunk324805.cd.CONSOLE,
   get label() {
-    return Chunk388032.intl.string(Chunk388032.t["8lAfuB"])
+    return _.intl.string(_.t["8lAfuB"])
   }
 }];
 

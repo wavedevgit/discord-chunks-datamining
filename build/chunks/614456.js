@@ -17,7 +17,7 @@ class c {
   prepare() {
     var e;
     if (true === this.fMap)
-      for (let t of (this.fMap = {}, null != (e = this.info.fields) ? module : [])) this.fMap[exports.name] = exports, this.fMap[exports.jsonName] = exports, this.fMap[exports.localName] = exports
+      for (let t of (this.fMap = {}, null != (e = this.info.fields) ? e : [])) this.fMap[t.name] = t, this.fMap[t.jsonName] = t, this.fMap[t.localName] = t
   }
   assert(e, t, n) {
     if (!e) {

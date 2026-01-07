@@ -9,18 +9,18 @@ var Chunk570140 = require("./570140.js"),
   Chunk804739 = require("./804739.js");
 
 function o() {
-  if (!(0, Chunk804739.Q)()) return;
-  let e = Chunk314897.default.getToken(),
-    t = Chunk314897.default.getId();
-  if (null == module) throw Error("missing user token");
-  Chunk51025.S1(module, exports)
+  if (!(0, a.Q)()) return;
+  let e = l.default.getToken(),
+    t = l.default.getId();
+  if (null == e) throw Error("missing user token");
+  i.S1(e, t)
 }
 
 function s() {
-  Chunk51025.ob()
+  i.ob()
 }
 let c = {
   init() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", o), Chunk570140.Z.subscribe("LOGOUT", s)
+    r.Z.subscribe("CONNECTION_OPEN", o), r.Z.subscribe("LOGOUT", s)
   }
 }

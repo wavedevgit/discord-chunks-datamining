@@ -66,18 +66,18 @@ class f extends(i = Chunk473749.PureComponent) {
     let e = this.props,
       {
         scrollable: t
-      } = module,
-      n = g(module, ["scrollable"]);
-    return exports ? (0, Chunk54381.jsx)("aside", {
-      className: Chunk781466.sidebarScrollable,
-      children: (0, Chunk54381.jsx)(Chunk481060.Ttm, {
+      } = e,
+      n = g(e, ["scrollable"]);
+    return t ? (0, l.jsx)("aside", {
+      className: u.sidebarScrollable,
+      children: (0, l.jsx)(c.Ttm, {
         fade: true,
-        className: Chunk781466.scroller,
-        children: (0, Chunk54381.jsx)(Chunk600164.Z.Child, p(b({}, require), {
+        className: u.scroller,
+        children: (0, l.jsx)(d.Z.Child, p(b({}, n), {
           wrap: true
         }))
       })
-    }) : (0, Chunk54381.jsx)(Chunk600164.Z.Child, p(b({}, require), {
+    }) : (0, l.jsx)(d.Z.Child, p(b({}, n), {
       wrap: true
     }))
   }
@@ -92,17 +92,17 @@ class h extends Chunk473749.PureComponent {
     let e = this.props,
       {
         className: t
-      } = module,
-      n = g(module, ["className"]);
-    return (0, Chunk54381.jsx)(Chunk600164.Z.Child, b({
-      className: s()(Chunk781466.content, exports),
+      } = e,
+      n = g(e, ["className"]);
+    return (0, l.jsx)(d.Z.Child, b({
+      className: s()(u.content, t),
       wrap: true
-    }, require))
+    }, n))
   }
 }
 class x extends(r = Chunk473749.PureComponent) {
   render() {
-    return (0, Chunk54381.jsx)(Chunk600164.Z, b({}, this.props))
+    return (0, l.jsx)(d.Z, b({}, this.props))
   }
 }
 m(x, "defaultProps", {

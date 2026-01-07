@@ -370,19 +370,19 @@ let V = e => {
     let {
       entitlement: e,
       numPotions: t
-    } = (0, Chunk576645.t6)(Chunk317951.D1);
-    if (null == exports || 0 === exports) return null;
-    let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4ci;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk730306.remaining,
-      children: [(0, Chunk54381.jsx)(Chunk481060.l22, {
+    } = (0, A.t6)(S.D1);
+    if (null == t || 0 === t) return null;
+    let n = (null == e ? true : e.type) === N.qc2.DEVELOPER_GIFT ? R.t["b+P6ra"] : R.t.RiQ4ci;
+    return (0, r.jsxs)("div", {
+      className: w.remaining,
+      children: [(0, r.jsx)(u.l22, {
         color: "currentColor",
-        className: Chunk730306.shootingStar
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        className: w.shootingStar
+      }), (0, r.jsx)(u.Text, {
         color: "none",
         variant: "text-sm/semibold",
-        children: Chunk388032.intl.formatToPlainString(require, {
-          numPotions: exports
+        children: R.intl.formatToPlainString(n, {
+          numPotions: t
         })
       })]
     })
@@ -429,24 +429,24 @@ let V = e => {
       })
     })
   },
-  q = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk730306.anomaly,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk730306.error,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Eep, {
-        src: Chunk99713,
+  q = () => (0, r.jsx)("div", {
+    className: w.anomaly,
+    children: (0, r.jsxs)("div", {
+      className: w.error,
+      children: [(0, r.jsx)(u.Eep, {
+        src: D,
         width: U,
         height: k
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)(u.Text, {
         variant: "text-md/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.oKJdSs)
+        children: R.intl.string(R.t.oKJdSs)
       })]
     })
   }),
-  Q = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk730306.anomaly,
-    children: (0, Chunk54381.jsx)("div", {
-      className: Chunk730306.spinner,
-      children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  Q = () => (0, r.jsx)("div", {
+    className: w.anomaly,
+    children: (0, r.jsx)("div", {
+      className: w.spinner,
+      children: (0, r.jsx)(u.$jN, {})
     })
   })

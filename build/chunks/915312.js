@@ -50,25 +50,25 @@ function h() {
     var t, n;
     return null != (n = null == (t = e.check) ? true : t.violations) ? n : null
   });
-  if (null == module) return [];
+  if (null == e) return [];
   let t = [];
   for (let {
       instances: n,
       rule: r
     }
-    of module.values())
-    for (let [e, a] of require.entries()) {
-      let n = Chunk663042.map(e => e.element),
-        l = Chunk663042[0].message;
-      exports.push({
-        key: module,
-        title: Chunk473749.metadata.description,
-        description: Chunk473749.metadata.help,
-        id: Chunk473749.id,
-        tags: Chunk473749.tags,
-        elements: require,
-        message: Chunk731965
+    of e.values())
+    for (let [e, a] of n.entries()) {
+      let n = a.map(e => e.element),
+        l = a[0].message;
+      t.push({
+        key: e,
+        title: r.metadata.description,
+        description: r.metadata.help,
+        id: r.id,
+        tags: r.tags,
+        elements: n,
+        message: l
       })
     }
-  return exports
+  return t
 }

@@ -79,20 +79,20 @@ class b extends Chunk473749.PureComponent {
       renderValue: n,
       className: i
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      className: o()(Chunk833741.quickSelect, Chunk473749),
-      align: Chunk600164.Z.Align.CENTER,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk833741.quickSelectLabel,
-        children: module
-      }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-        align: Chunk600164.Z.Align.CENTER,
-        className: Chunk833741.quickSelectClick,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk833741.quickSelectValue,
-          children: null != require ? require(exports) : exports.label
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk833741.quickSelectArrow
+    return (0, r.jsxs)(u.Z, {
+      className: o()(f.quickSelect, i),
+      align: u.Z.Align.CENTER,
+      children: [(0, r.jsx)("div", {
+        className: f.quickSelectLabel,
+        children: e
+      }), (0, r.jsxs)(u.Z, {
+        align: u.Z.Align.CENTER,
+        className: f.quickSelectClick,
+        children: [(0, r.jsx)("div", {
+          className: f.quickSelectValue,
+          children: null != n ? n(t) : t.label
+        }), (0, r.jsx)("div", {
+          className: f.quickSelectArrow
         })]
       })]
     })
@@ -105,8 +105,8 @@ class y extends Chunk473749.PureComponent {
       renderOption: t,
       option: n
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk91192.mh, {
-      id: require.key,
+    return (0, r.jsx)(s.mh, {
+      id: n.key,
       children: i => (0, r.jsx)(c.P3F, h(_({
         focusProps: {
           enabled: false

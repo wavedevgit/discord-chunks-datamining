@@ -67,20 +67,20 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk234798.comparisonTablePill,
-    children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk234798.mostPopularText,
+let w = () => (0, r.jsx)("div", {
+    className: v.comparisonTablePill,
+    children: (0, r.jsx)(c.Heading, {
+      className: v.mostPopularText,
       variant: "text-xs/bold",
-      children: Chunk388032.intl.string(Chunk388032.t.TR2B4T)
+      children: O.intl.string(O.t.TR2B4T)
     })
   }),
-  D = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk234798.comparisonTablePill,
-    children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk234798.mostPopularText,
+  D = () => (0, r.jsx)("div", {
+    className: v.comparisonTablePill,
+    children: (0, r.jsx)(c.Heading, {
+      className: v.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
-      children: Chunk388032.intl.string(Chunk388032.t.IBYG5U)
+      children: O.intl.string(O.t.IBYG5U)
     })
   }),
   x = e => {
@@ -192,28 +192,28 @@ let w = () => (0, Chunk54381.jsx)("div", {
       alt: a
     })
   },
-  U = () => (0, Chunk54381.jsx)("thead", {
-    children: (0, Chunk54381.jsxs)("tr", {
-      className: o()(Chunk234798.headerRow, Chunk234798.topBorderRadius),
-      children: [(0, Chunk54381.jsx)("th", {
+  U = () => (0, r.jsx)("thead", {
+    children: (0, r.jsxs)("tr", {
+      className: o()(v.headerRow, v.topBorderRadius),
+      children: [(0, r.jsx)("th", {
         scope: "col",
-        className: Chunk234798.headerLabelCell,
-        children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-          className: Chunk234798.__invalid_textColor,
+        className: v.headerLabelCell,
+        children: (0, r.jsx)(c.Heading, {
+          className: v.__invalid_textColor,
           variant: "heading-xl/semibold",
-          children: Chunk388032.intl.string(Chunk388032.t.XXENra)
+          children: O.intl.string(O.t.XXENra)
         })
-      }), (0, Chunk54381.jsx)("th", {
+      }), (0, r.jsx)("th", {
         scope: "col",
-        className: Chunk234798.headerCell,
-        children: (0, Chunk54381.jsx)(k, {
-          premiumType: Chunk474936.PremiumTypes.TIER_0
+        className: v.headerCell,
+        children: (0, r.jsx)(k, {
+          premiumType: y.PremiumTypes.TIER_0
         })
-      }), (0, Chunk54381.jsx)("th", {
+      }), (0, r.jsx)("th", {
         scope: "col",
-        className: o()(Chunk234798.headerCell, Chunk234798.topBorderRadius),
-        children: (0, Chunk54381.jsx)(k, {
-          premiumType: Chunk474936.PremiumTypes.TIER_2
+        className: o()(v.headerCell, v.topBorderRadius),
+        children: (0, r.jsx)(k, {
+          premiumType: y.PremiumTypes.TIER_2
         })
       })]
     })

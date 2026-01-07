@@ -27,35 +27,35 @@ function j(e) {
 }
 
 function v() {
-  let e = (0, Chunk410030.ZP)(),
+  let e = (0, a.ZP)(),
     t = {
-      backgroundColor: (0, Chunk780384.wj)(module) ? "#2e3638" : "var(--background-base-low)"
+      backgroundColor: (0, i.wj)(e) ? "#2e3638" : "var(--background-base-low)"
     };
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk180991.earningsPreviewContainer,
-    style: exports,
-    children: [(0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: c.earningsPreviewContainer,
+    style: t,
+    children: [(0, r.jsxs)("div", {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: Chunk388032.intl.string(Chunk388032.t.TXPK7B)
-      }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+        children: o.intl.string(o.t.TXPK7B)
+      }), (0, r.jsx)(l.LZC, {
         size: 8
-      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, r.jsx)(l.Heading, {
         variant: "heading-md/bold",
-        className: j(module),
-        children: Chunk388032.intl.string(Chunk388032.t.LdjJG5)
+        className: j(e),
+        children: o.intl.string(o.t.LdjJG5)
       })]
-    }), (0, Chunk54381.jsx)("img", {
-      className: Chunk180991.roundAvatar,
-      src: Chunk487703,
-      alt: Chunk388032.intl.string(Chunk388032.t.NgjpTL)
+    }), (0, r.jsx)("img", {
+      className: c.roundAvatar,
+      src: b,
+      alt: o.intl.string(o.t.NgjpTL)
     })]
   })
 }
 
 function O() {
-  let e = (0, Chunk410030.ZP)();
+  let e = (0, a.ZP)();
 
   function t(e) {
     var t, n;
@@ -100,49 +100,49 @@ function O() {
       }), t)
     })
   }
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk180991.avatarGridContainer,
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["P2B/0W"]),
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk180991.avatarCard,
-      children: [(0, Chunk54381.jsx)(exports, {
+  return (0, r.jsxs)("div", {
+    className: c.avatarGridContainer,
+    "aria-label": o.intl.string(o.t["P2B/0W"]),
+    children: [(0, r.jsxs)("div", {
+      className: c.avatarCard,
+      children: [(0, r.jsx)(t, {
         length: 24
-      }), (0, Chunk54381.jsx)("img", {
-        className: Chunk180991.roundAvatar,
-        src: (0, Chunk780384.wj)(module) ? Chunk934961 : Chunk568294,
+      }), (0, r.jsx)("img", {
+        className: c.roundAvatar,
+        src: (0, i.wj)(e) ? d : u,
         alt: ""
-      }), (0, Chunk54381.jsx)(exports, {
+      }), (0, r.jsx)(t, {
         horizontal: true,
         length: 12
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk180991.avatarCard,
-      children: [(0, Chunk54381.jsx)(exports, {
+    }), (0, r.jsxs)("div", {
+      className: c.avatarCard,
+      children: [(0, r.jsx)(t, {
         length: 24
-      }), (0, Chunk54381.jsx)("img", {
-        className: Chunk180991.roundAvatar,
-        src: Chunk867861,
+      }), (0, r.jsx)("img", {
+        className: c.roundAvatar,
+        src: g,
         alt: ""
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk180991.avatarCard,
-      children: [(0, Chunk54381.jsx)(exports, {
+    }), (0, r.jsxs)("div", {
+      className: c.avatarCard,
+      children: [(0, r.jsx)(t, {
         length: 12
-      }), (0, Chunk54381.jsx)("img", {
-        className: Chunk180991.roundAvatar,
-        src: Chunk860790,
+      }), (0, r.jsx)("img", {
+        className: c.roundAvatar,
+        src: f,
         alt: ""
-      }), (0, Chunk54381.jsx)(exports, {
+      }), (0, r.jsx)(t, {
         horizontal: true,
         length: 12
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk180991.avatarCard,
-      children: [(0, Chunk54381.jsx)(exports, {
+    }), (0, r.jsxs)("div", {
+      className: c.avatarCard,
+      children: [(0, r.jsx)(t, {
         length: 12
-      }), (0, Chunk54381.jsx)("img", {
-        className: Chunk180991.roundAvatar,
-        src: Chunk268953,
+      }), (0, r.jsx)("img", {
+        className: c.roundAvatar,
+        src: m,
         alt: ""
       })]
     })]
@@ -150,77 +150,77 @@ function O() {
 }
 
 function C() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk180991.earningBenefitCard,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: c.earningBenefitCard,
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t["9CdmS8"])
-    }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+      children: o.intl.string(o.t["9CdmS8"])
+    }), (0, r.jsx)(l.LZC, {
       size: 32
-    }), (0, Chunk54381.jsx)(v, {}), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+    }), (0, r.jsx)(v, {}), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, Chunk54381.jsx)(O, {})]
+    }), (0, r.jsx)(O, {})]
   })
 }
 
 function y() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk180991.followerBenefitCard,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk180991.followerBenefitText,
+  return (0, r.jsxs)("div", {
+    className: c.followerBenefitCard,
+    children: [(0, r.jsx)(l.Text, {
+      className: c.followerBenefitText,
       variant: "text-md/normal",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t.qsKRUQ)
-    }), (0, Chunk54381.jsx)("img", {
-      className: Chunk180991.roleSubscriptionSocial,
-      src: Chunk431712,
-      alt: Chunk388032.intl.string(Chunk388032.t.yTPprb)
-    }), (0, Chunk54381.jsx)("img", {
-      className: Chunk180991.roleSubscriptionLanyardIllo,
-      src: Chunk334364,
-      alt: Chunk388032.intl.string(Chunk388032.t["+gd9QQ"])
+      children: o.intl.string(o.t.qsKRUQ)
+    }), (0, r.jsx)("img", {
+      className: c.roleSubscriptionSocial,
+      src: x,
+      alt: o.intl.string(o.t.yTPprb)
+    }), (0, r.jsx)("img", {
+      className: c.roleSubscriptionLanyardIllo,
+      src: h,
+      alt: o.intl.string(o.t["+gd9QQ"])
     })]
   })
 }
 
 function N() {
-  let e = (0, Chunk410030.ZP)();
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk180991.revenueShareBenefitCard,
-    children: [(0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsxs)(Chunk481060.Heading, {
-        className: j(module),
+  let e = (0, a.ZP)();
+  return (0, r.jsxs)("div", {
+    className: c.revenueShareBenefitCard,
+    children: [(0, r.jsxs)("div", {
+      children: [(0, r.jsxs)(l.Heading, {
+        className: j(e),
         style: {
           fontSize: "50px",
           lineHeight: "52px"
         },
         variant: "heading-xxl/extrabold",
-        children: [Chunk293810.NT, "%"]
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: [s.NT, "%"]
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: Chunk388032.intl.string(Chunk388032.t.AewsXD)
+        children: o.intl.string(o.t.AewsXD)
       })]
-    }), (0, Chunk54381.jsx)("img", {
-      className: Chunk180991.roleSubscriptionEarningIllo,
-      src: Chunk458050,
-      alt: Chunk388032.intl.string(Chunk388032.t.fD9Wv1)
+    }), (0, r.jsx)("img", {
+      className: c.roleSubscriptionEarningIllo,
+      src: p,
+      alt: o.intl.string(o.t.fD9Wv1)
     })]
   })
 }
 
 function E() {
-  return (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      children: Chunk388032.intl.string(Chunk388032.t["1QHJaW"])
-    }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+      children: o.intl.string(o.t["1QHJaW"])
+    }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk180991.creatorBenefitsContainer,
-      children: [(0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)(y, {}), (0, Chunk54381.jsx)(N, {})]
+    }), (0, r.jsxs)("div", {
+      className: c.creatorBenefitsContainer,
+      children: [(0, r.jsx)(C, {}), (0, r.jsx)(y, {}), (0, r.jsx)(N, {})]
     })]
   })
 }

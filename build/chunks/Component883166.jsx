@@ -47,9 +47,9 @@ function p(e) {
 }
 
 function _() {
-  let e = (0, Chunk473749.useRef)(null),
-    t = (0, Chunk481060.q_F)({
-      ref: module,
+  let e = (0, i.useRef)(null),
+    t = (0, o.q_F)({
+      ref: e,
       from: {
         transform: "translate3d(0, 50px, 0)",
         opacity: 0
@@ -66,10 +66,10 @@ function _() {
     {
       addSpringRef: n,
       removeSpringRef: r
-    } = (0, Chunk473749.useContext)(f);
-  return (0, Chunk473749.useEffect)(() => (require(module), () => {
-    Chunk54381(module)
-  }), [require, Chunk54381]), exports
+    } = (0, i.useContext)(f);
+  return (0, i.useEffect)(() => (n(e), () => {
+    r(e)
+  }), [n, r]), t
 }
 
 function m(e) {
@@ -87,21 +87,21 @@ function m(e) {
 }
 
 function h() {
-  let e = (0, Chunk473749.useRef)(new Set),
-    [t, n] = (0, Chunk473749.useState)([]),
-    r = exports.map((e, n) => t.length <= 1 ? -c : Math.max(0, p(n / (t.length - 1) * d, u) - c));
-  (0, Chunk554916.useChain)(exports, Chunk54381);
-  let o = (0, Chunk473749.useCallback)(t => {
+  let e = (0, i.useRef)(new Set),
+    [t, n] = (0, i.useState)([]),
+    r = t.map((e, n) => t.length <= 1 ? -c : Math.max(0, p(n / (t.length - 1) * d, u) - c));
+  (0, a.useChain)(t, r);
+  let o = (0, i.useCallback)(t => {
     e.current.add(t)
   }, []);
-  (0, Chunk473749.useEffect)(() => {
-    setImmediate(() => require(Array.from(module.current)))
+  (0, i.useEffect)(() => {
+    setImmediate(() => n(Array.from(e.current)))
   }, []);
-  let s = (0, Chunk473749.useCallback)(t => {
+  let s = (0, i.useCallback)(t => {
     e.current.delete(t)
   }, []);
-  return (0, Chunk473749.useMemo)(() => ({
-    addSpringRef: Chunk481060,
+  return (0, i.useMemo)(() => ({
+    addSpringRef: o,
     removeSpringRef: s
-  }), [Chunk481060, s])
+  }), [o, s])
 }

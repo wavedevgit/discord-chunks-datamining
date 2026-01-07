@@ -11,7 +11,7 @@ let a = false,
   o = null,
   s = {
     init() {
-      Chunk570140.Z.subscribe("CONNECTION_OPEN", e => {
+      l.Z.subscribe("CONNECTION_OPEN", e => {
         let {
           pendingPayments: t
         } = e;

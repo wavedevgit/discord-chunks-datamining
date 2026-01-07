@@ -25,8 +25,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk231338 = require("./231338.js");
 
 function b() {
-  Chunk473749.useEffect(() => {
-    (0, Chunk91159.A_)()
+  r.useEffect(() => {
+    (0, x.A_)()
   }, [])
 }
 

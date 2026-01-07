@@ -31,7 +31,7 @@ function C(e) {
 }
 class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk926958.Z, Chunk392885.Z, Chunk999382.Z), this.syncWith([Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk926958.Z, Chunk392885.Z], () => true)
+    this.waitFor(s.Z, g.Z, b.Z, m.Z, f.Z, d.Z, c.Z), this.syncWith([s.Z, g.Z, b.Z, m.Z, f.Z, d.Z], () => true)
   }
   isEducationUpsellDismissed(e) {
     return j.has(e)
@@ -41,32 +41,32 @@ class y extends(r = Chunk442837.ZP.Store) {
   }
   hasChanges() {
     if (null == O) returnfalse;
-    let e = Chunk45966.Z.isAdvancedMode(O);
-    if (v === Chunk84658.PG.DEFAULT_CHANNELS)
-      if (module) return Chunk889369.Z.hasChanges() || Chunk208665.Z.hasChanges();
-      else return Chunk889369.Z.hasChanges();
-    return v === Chunk84658.PG.CUSTOMIZATION_QUESTIONS ? Chunk208665.Z.hasChanges() || Chunk926958.Z.hasChanges() : v === Chunk84658.PG.HOME_SETTINGS ? Chunk969632.Z.hasChanges() : v === Chunk84658.PG.CONNECTIONS && Chunk926958.Z.hasChanges()
+    let e = s.Z.isAdvancedMode(O);
+    if (v === p.PG.DEFAULT_CHANNELS)
+      if (e) return g.Z.hasChanges() || b.Z.hasChanges();
+      else return g.Z.hasChanges();
+    return v === p.PG.CUSTOMIZATION_QUESTIONS ? b.Z.hasChanges() || f.Z.hasChanges() : v === p.PG.HOME_SETTINGS ? m.Z.hasChanges() : v === p.PG.CONNECTIONS && f.Z.hasChanges()
   }
   hasConfiguredAnythingForCurrentStep() {
     if (null == O) returnfalse;
-    if (v === Chunk84658.PG.SAFETY_CHECK) returntrue;
-    if (v === Chunk84658.PG.DEFAULT_CHANNELS) return Chunk889369.Z.editedDefaultChannelIds.size > 0;
-    if (v === Chunk84658.PG.CUSTOMIZATION_QUESTIONS) return Chunk208665.Z.editedOnboardingPrompts.length > 0 || Chunk926958.Z.getEditedConnections().length > 0;
-    if (v === Chunk84658.PG.HOME_SETTINGS) return !(0, Chunk734893.av)(Chunk969632.Z.getSettings());
-    if (v === Chunk84658.PG.CONNECTIONS) return Chunk926958.Z.getEditedConnections().length > 0;
+    if (v === p.PG.SAFETY_CHECK) returntrue;
+    if (v === p.PG.DEFAULT_CHANNELS) return g.Z.editedDefaultChannelIds.size > 0;
+    if (v === p.PG.CUSTOMIZATION_QUESTIONS) return b.Z.editedOnboardingPrompts.length > 0 || f.Z.getEditedConnections().length > 0;
+    if (v === p.PG.HOME_SETTINGS) return !(0, o.av)(m.Z.getSettings());
+    if (v === p.PG.CONNECTIONS) return f.Z.getEditedConnections().length > 0;
     returnfalse
   }
   hasErrors() {
-    return v === Chunk84658.PG.CUSTOMIZATION_QUESTIONS && null != Chunk208665.Z.errors.find(e => null != e)
+    return v === p.PG.CUSTOMIZATION_QUESTIONS && null != b.Z.errors.find(e => null != e)
   }
   showNotice() {
     if (null == O) returnfalse;
-    if ((0, Chunk142961.C)(O)) return this.hasChanges();
-    let e = Chunk392885.Z.getCurrentPage();
-    return (v !== Chunk84658.PG.SAFETY_CHECK || module === Chunk740903.u.OVERVIEW) && null != v && v !== Chunk84658.PG.LANDING
+    if ((0, h.C)(O)) return this.hasChanges();
+    let e = d.Z.getCurrentPage();
+    return (v !== p.PG.SAFETY_CHECK || e === u.u.OVERVIEW) && null != v && v !== p.PG.LANDING
   }
   canCloseEarly() {
-    return null == O || !this.hasErrors() && (!(0, Chunk142961.C)(O) || !this.hasChanges())
+    return null == O || !this.hasErrors() && (!(0, h.C)(O) || !this.hasChanges())
   }
 }(i = "displayName") in y ? Object.defineProperty(y, i, {
   value: "GuildSettingsOnboardingStore",

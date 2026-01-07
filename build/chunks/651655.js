@@ -35,7 +35,7 @@ class s {
         message: t,
         success: n,
         logId: r
-      } = module,
+      } = e,
       i = (t, i) => {
         if (this.logger.log("Finished draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.draining = false, null == t) {
           setImmediate(() => this._drainIfNecessary());
@@ -52,7 +52,7 @@ class s {
           }, n)
         }
       };
-    this.logger.log("Draining message from queue LogId:".concat(Chunk427786, " QueueLength: ").concat(this.queue.length)), this.drain(exports, i)
+    this.logger.log("Draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.drain(t, i)
   }
   constructor(e = o, t = 100) {
     a(this, "logger", true), a(this, "defaultRetryAfter", true), a(this, "queue", true), a(this, "timeout", true), a(this, "draining", true), this.logger = e, this.defaultRetryAfter = t, this.queue = new(i()), this.timeout = null, this.draining = false

@@ -28,9 +28,9 @@ let E = Chunk473749.createContext({
 });
 
 function b() {
-  let e = Chunk473749.useContext(E);
-  if (true === module) throw Error("useRootElementContext must be used within a RootElementContextProvider");
-  return module
+  let e = i.useContext(E);
+  if (true === e) throw Error("useRootElementContext must be used within a RootElementContextProvider");
+  return e
 }
 
 function y(e) {

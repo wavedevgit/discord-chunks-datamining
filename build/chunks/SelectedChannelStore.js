@@ -76,14 +76,14 @@ function Z(e) {
 }
 
 function F() {
-  __OVERLAY__ || Chunk433517.K.set(x, {
+  __OVERLAY__ || m.K.set(x, {
     selectedChannelId: a,
     selectedVoiceChannelId: s,
     lastChannelFollowingDestination: o,
     lastConnectedTime: l,
     selectedChannelIds: M,
     mostRecentSelectedTextChannelIds: U,
-    knownThreadIds: f()(M).values().concat(f().values(U)).filter(Chunk823379.lm).uniq().filter(e => {
+    knownThreadIds: f()(M).values().concat(f().values(U)).filter(b.lm).uniq().filter(e => {
       let t = O.Z.getBasicChannel(e);
       return G.has(e) || null != t && E.Ec.has(t.type)
     }).value()
@@ -113,15 +113,15 @@ function H(e) {
 
 function Y() {
   let e = false,
-    t = Chunk430824.Z.getGuildsArray();
+    t = S.Z.getGuildsArray();
   return f().each(M, (t, n) => {
     null != t && (O.Z.hasChannel(t) || t === a || G.has(t) || (0, N.ME)(t)) || (delete M[n], delete k[n], e = true)
   }), f().each(U, (t, n) => {
     null != t && (O.Z.hasChannel(t) || G.has(t)) || (delete U[n], e = true)
-  }), exports.forEach(e => {
+  }), t.forEach(e => {
     let t = M[e.id];
     null == U[e.id] && V(e.id, t)
-  }), null != l && Date.now() - l >= L && (s = null, e = true), module
+  }), null != l && Date.now() - l >= L && (s = null, e = true), e
 }
 
 function W(e) {
@@ -247,7 +247,7 @@ function er(e) {
 }
 
 function ei() {
-  M = {}, a = null, i = true, U = {}, o = {}, s = null, Chunk433517.K.remove(x)
+  M = {}, a = null, i = true, U = {}, o = {}, s = null, m.K.remove(x)
 }
 
 function ea(e) {
@@ -266,7 +266,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
   initialize() {
     if (!__OVERLAY__) {
       var e, t;
-      let n = null != (e = Chunk433517.K.get(x)) ? module : {
+      let n = null != (e = m.K.get(x)) ? e : {
         selectedChannelId: a,
         selectedVoiceChannelId: s,
         lastChannelFollowingDestination: o,
@@ -274,11 +274,11 @@ class eo extends(u = Chunk442837.ZP.Store) {
         selectedChannelIds: M,
         mostRecentSelectedTextChannelIds: U
       };
-      null != require.knownThreadIds && (G = new Set(require.knownThreadIds)), s = require.selectedVoiceChannelId, o = require.lastChannelFollowingDestination, l = require.lastConnectedTime, U = null != (t = require.mostRecentSelectedTextChannelIds) ? exports : {}, null != require.selectedChannelIds && (M = D(R({}, require.selectedChannelIds), {
+      null != n.knownThreadIds && (G = new Set(n.knownThreadIds)), s = n.selectedVoiceChannelId, o = n.lastChannelFollowingDestination, l = n.lastConnectedTime, U = null != (t = n.mostRecentSelectedTextChannelIds) ? t : {}, null != n.selectedChannelIds && (M = D(R({}, n.selectedChannelIds), {
         null: null
       }))
     }
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk984933.ZP, Chunk430824.Z, Chunk131951.Z, Chunk496675.Z, Chunk914010.Z)
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(y.default, O.Z, v.ZP, S.Z, I.Z, T.Z, C.Z)
   }
   getChannelId(e) {
     var t, n;
@@ -287,7 +287,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
     return r ? null != (n = M[i]) ? n : B(i) : M[i]
   }
   getVoiceChannelId() {
-    return Chunk131951.Z.isSupported() ? s : null
+    return I.Z.isSupported() ? s : null
   }
   getMostRecentSelectedTextChannelId(e) {
     var t;

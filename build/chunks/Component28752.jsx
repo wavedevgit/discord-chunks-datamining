@@ -221,17 +221,17 @@ function S(e) {
 }
 
 function I() {
-  let e = Chunk473749.useRef(null),
-    [t, n] = Chunk473749.useState(null),
-    [r, a] = Chunk473749.useState(null);
-  return Chunk473749.useLayoutEffect(() => {
-    let t = module.current;
-    if (null === exports || 0 === exports.clientHeight) return;
-    let r = parseInt(getComputedStyle(exports).lineHeight);
-    isNaN(Chunk54381) || (require(Chunk54381), Chunk373793(Math.floor(exports.clientHeight / Chunk54381)))
+  let e = i.useRef(null),
+    [t, n] = i.useState(null),
+    [r, a] = i.useState(null);
+  return i.useLayoutEffect(() => {
+    let t = e.current;
+    if (null === t || 0 === t.clientHeight) return;
+    let r = parseInt(getComputedStyle(t).lineHeight);
+    isNaN(r) || (n(r), a(Math.floor(t.clientHeight / r)))
   }, []), {
-    ref: module,
-    lineHeight: exports,
-    lineCount: Chunk54381
+    ref: e,
+    lineHeight: t,
+    lineCount: r
   }
 }

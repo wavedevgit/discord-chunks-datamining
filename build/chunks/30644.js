@@ -11,13 +11,13 @@ var Chunk818710 = require("./818710.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_AUTO_STREAMER_MODE, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.IxjaoF),
+  useTitle: () => o.intl.string(o.t.IxjaoF),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk246946.Z], () => {
+    return (0, l.e7)([r.Z], () => {
       let {
         autoToggle: t
-      } = Chunk246946.Z.getSettings();
-      return module
+      } = r.Z.getSettings();
+      return t
     })
   },
   setValue: function(t) {
@@ -26,6 +26,6 @@ let T = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_AUTO_STREAMER_MODE, {
     })
   },
   usePredicate: function() {
-    return Chunk818710.FB
+    return i.FB
   }
 })

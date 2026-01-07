@@ -8,7 +8,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk192720 = require("./192720.js");
 
 function a() {
-  Chunk473749.useEffect(() => {
-    (0, Chunk192720.sE)()
+  r.useEffect(() => {
+    (0, i.sE)()
   }, [])
 }

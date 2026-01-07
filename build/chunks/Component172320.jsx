@@ -16,16 +16,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_PROFILE_SETTING, {
     useSearchTerms: function() {
-      let t = [Chunk388032.intl.string(Chunk388032.t.LYju5J), Chunk388032.intl.string(Chunk388032.t["9AjdkD"]), Chunk388032.intl.string(Chunk388032.t["+JkHPw"]), Chunk388032.intl.string(Chunk388032.t.oP5zGA), Chunk388032.intl.string(Chunk388032.t.Ulqq6K)];
-      return (0, Chunk128064.pY)("AccountProfileSetting") && (module.push(Chunk388032.intl.string(Chunk388032.t["/52UYy"])), module.push(Chunk388032.intl.string(Chunk388032.t.sK0dmH)), module.push(Chunk388032.intl.string(Chunk388032.t.XxRj7f)), module.push(Chunk388032.intl.string(Chunk388032.t.yNGjyK)), module.push(Chunk388032.intl.string(Chunk388032.t.KPGVWl))), module
+      let t = [E.intl.string(E.t.LYju5J), E.intl.string(E.t["9AjdkD"]), E.intl.string(E.t["+JkHPw"]), E.intl.string(E.t.oP5zGA), E.intl.string(E.t.Ulqq6K)];
+      return (0, a.pY)("AccountProfileSetting") && (t.push(E.intl.string(E.t["/52UYy"])), t.push(E.intl.string(E.t.sK0dmH)), t.push(E.intl.string(E.t.XxRj7f)), t.push(E.intl.string(E.t.yNGjyK)), t.push(E.intl.string(E.t.KPGVWl))), t
     },
     Component: function() {
-      let t = (0, Chunk332473.b)(),
-        e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-      return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [module && (0, Chunk54381.jsx)(Chunk499311.Z, {}), null != exports && (0, Chunk54381.jsx)(Chunk732521.Z, {
-          currentUser: exports
-        }), (0, Chunk54381.jsx)(Chunk2719.Z, {})]
+      let t = (0, s.b)(),
+        e = (0, l.e7)([r.default], () => r.default.getCurrentUser());
+      return (0, i.jsxs)(i.Fragment, {
+        children: [t && (0, i.jsx)(T.Z, {}), null != e && (0, i.jsx)(S.Z, {
+          currentUser: e
+        }), (0, i.jsx)(c.Z, {})]
       })
     }
   }),

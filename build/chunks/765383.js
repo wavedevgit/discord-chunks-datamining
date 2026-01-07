@@ -80,13 +80,13 @@ class h extends Chunk147913.Z {
       }
   }
   handleChannelSelect() {
-    for (let e of Object.values(this.currentlyVisibleMessageTimers)) clearTimeout(module);
+    for (let e of Object.values(this.currentlyVisibleMessageTimers)) clearTimeout(e);
     this.currentlyVisibleMessageTimers = {}, this.viewsInCurrentChannel.clear(), this.drainBuffer()
   }
   drainBuffer() {
     for (let e of this.batchBuffer) {
-      let t = m(module);
-      Chunk626135.default.track(exports.event, exports.properties)
+      let t = m(e);
+      o.default.track(t.event, t.properties)
     }
     this.batchBuffer = [], null != this.batchTimerId && (clearTimeout(this.batchTimerId), this.batchTimerId = null)
   }

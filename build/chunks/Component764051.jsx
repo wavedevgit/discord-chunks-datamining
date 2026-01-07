@@ -22,24 +22,24 @@ let p = {
   f = function() {
     let {
       task: e
-    } = (0, Chunk132392.T)(), t = module.flow_context.tasks.findIndex(t => t.task_type === e.task_type);
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    } = (0, l.T)(), t = e.flow_context.tasks.findIndex(t => t.task_type === e.task_type);
+    return (0, a.jsxs)(r.Kqy, {
       direction: "vertical",
       justify: "space-between",
-      padding: Chunk345262.h,
-      className: Chunk373349.container,
-      children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      padding: c.h,
+      className: m.container,
+      children: [(0, a.jsxs)(r.Kqy, {
         direction: "vertical",
         justify: "space-between",
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+        children: [(0, a.jsx)(r.Heading, {
           variant: "display-md",
-          className: Chunk373349.title,
-          children: Chunk388032.intl.string(Chunk693473.default["/OpRAP"])
-        }), (0, Chunk54381.jsx)(Chunk481060.Kqy, {
+          className: m.title,
+          children: u.intl.string(d.default["/OpRAP"])
+        }), (0, a.jsx)(r.Kqy, {
           direction: "vertical",
           justify: "space-between",
           gap: 0,
-          children: module.flow_context.tasks.map((e, n) => {
+          children: e.flow_context.tasks.map((e, n) => {
             var r;
             return (0, a.jsx)(i.q, {
               title: null != (r = p[e.task_type]) ? r : "",
@@ -50,11 +50,11 @@ let p = {
             }, e.task_type)
           })
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        children: Chunk388032.intl.format(Chunk693473.default["0DHxym"], {
-          handleLogOut: () => (0, Chunk210825.R)("safety_flows_sidebar")
+        children: u.intl.format(d.default["0DHxym"], {
+          handleLogOut: () => (0, o.R)("safety_flows_sidebar")
         })
       })]
     })

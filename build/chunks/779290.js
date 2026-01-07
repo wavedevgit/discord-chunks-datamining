@@ -15,14 +15,14 @@ function o() {
     fetch: n = true
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
     premiumGroupMembership: o
-  } = (0, Chunk340426.Z)({
-    useCachedData: exports,
-    fetch: require
+  } = (0, a.Z)({
+    useCachedData: t,
+    fetch: n
   }), {
     premiumGroupMembers: s
-  } = (0, Chunk591085.Z)(null != (e = null == o ? true : o.subscriptionId) ? module : null, {
-    useCachedData: exports,
-    fetch: require
+  } = (0, i.Z)(null != (e = null == o ? true : o.subscriptionId) ? e : null, {
+    useCachedData: t,
+    fetch: n
   });
-  return (null == s ? true : s.primary) != null ? (0, Chunk51144.XM)(null == s ? true : s.primary) : null
+  return (null == s ? true : s.primary) != null ? (0, r.XM)(null == s ? true : s.primary) : null
 }

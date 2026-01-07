@@ -71,15 +71,15 @@ let I = function(e, t, n) {
     })
   },
   _ = () => {
-    let [e, t] = Chunk473749.useState(false), n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId());
-    return (0, Chunk54381.jsx)("div", {
+    let [e, t] = i.useState(false), n = (0, s.e7)([h.Z], () => h.Z.getGuildId());
+    return (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk700374.developerPortalCta,
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      className: N.developerPortalCta,
+      children: (0, r.jsx)(c.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.Uskgxx),
+        text: y.intl.string(y.t.Uskgxx),
         onClick: () => {
-          exports(true), (function(e) {
+          t(true), (function(e) {
             p.default.track(O.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
               guild_id: e
             });
@@ -98,70 +98,70 @@ let I = function(e, t, n) {
             }, () => {
               window.open(t)
             })
-          })(require).then(() => {
-            exports(false)
+          })(n).then(() => {
+            t(false)
           })
         },
-        loading: module
+        loading: e
       })
     })
   },
   T = () => {
-    let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId()),
-      t = (0, Chunk442837.e7)([Chunk650774.Z], () => Chunk650774.Z.getMemberCount(module)),
-      n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)),
-      l = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+    let e = (0, s.e7)([h.Z], () => h.Z.getGuildId()),
+      t = (0, s.e7)([f.Z], () => f.Z.getMemberCount(e)),
+      n = (0, s.e7)([m.Z], () => m.Z.getGuild(e)),
+      l = (0, s.e7)([g.default], () => g.default.locale),
       {
         analytics: a,
         errorCode: o
-      } = (0, Chunk442837.cj)([Chunk743676.Z], () => ({
-        analytics: null != module ? Chunk743676.Z.getOverviewAnalytics(module) : null,
-        errorCode: Chunk743676.Z.getError()
+      } = (0, s.cj)([j.Z], () => ({
+        analytics: null != e ? j.Z.getOverviewAnalytics(e) : null,
+        errorCode: j.Z.getError()
       })),
-      p = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
-      T = null == exports || null == require || null != exports && exports < 500 && null != require && !require.features.has(Chunk981631.GuildFeatures.PARTNERED) && !require.features.has(Chunk981631.GuildFeatures.VERIFIED);
-    Chunk473749.useEffect(() => {
-      null == module || T || ((0, Chunk798528.Vk)(module), (0, Chunk798528.SR)(module), (0, Chunk798528.xl)(module))
-    }, [module, T]), Chunk473749.useEffect(() => {
-      (0, Chunk142497.Kw)(Chunk190378.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
+      p = (0, s.e7)([b.Z], () => b.Z.getSettings().enabled),
+      T = null == t || null == n || null != t && t < 500 && null != n && !n.features.has(O.GuildFeatures.PARTNERED) && !n.features.has(O.GuildFeatures.VERIFIED);
+    i.useEffect(() => {
+      null == e || T || ((0, x.Vk)(e), (0, x.SR)(e), (0, x.xl)(e))
+    }, [e, T]), i.useEffect(() => {
+      (0, u.Kw)(C.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
-    let P = null != Chunk640358 ? (0, Chunk54381.jsx)("div", {
-      className: Chunk700374.__invalid_guildAnalyticsOverviewWrapper,
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk700374.overviewData,
-        children: [(0, Chunk54381.jsx)(Chunk795145.Z, E({
-          title: Chunk388032.intl.string(Chunk388032.t.i0NorT),
-          tooltipText: Chunk388032.intl.string(Chunk388032.t.KiRbLJ)
-        }, I(Chunk640358.visitors, Chunk640358.visitorsChange, Chunk772848))), (0, Chunk54381.jsx)(Chunk795145.Z, E({
-          title: Chunk388032.intl.string(Chunk388032.t.DDAHdQ),
-          tooltipText: Chunk388032.intl.string(Chunk388032.t.HxWUkU)
-        }, I(Chunk640358.communicators, Chunk640358.communicatorsChange, Chunk772848))), (0, Chunk54381.jsx)(Chunk795145.Z, E({
-          title: Chunk388032.intl.string(Chunk388032.t.hYeOqC)
-        }, I(Chunk640358.newMembers, Chunk640358.newMembersChange, Chunk772848))), (0, Chunk54381.jsx)(Chunk795145.Z, E({
-          title: Chunk388032.intl.string(Chunk388032.t.jj7OPw),
-          tooltipText: Chunk388032.intl.string(Chunk388032.t.MQCslz)
-        }, I(Chunk640358.pctRetained, Chunk640358.pctRetainedChange, Chunk772848, true)))]
+    let P = null != a ? (0, r.jsx)("div", {
+      className: N.__invalid_guildAnalyticsOverviewWrapper,
+      children: (0, r.jsxs)("div", {
+        className: N.overviewData,
+        children: [(0, r.jsx)(v.Z, E({
+          title: y.intl.string(y.t.i0NorT),
+          tooltipText: y.intl.string(y.t.KiRbLJ)
+        }, I(a.visitors, a.visitorsChange, l))), (0, r.jsx)(v.Z, E({
+          title: y.intl.string(y.t.DDAHdQ),
+          tooltipText: y.intl.string(y.t.HxWUkU)
+        }, I(a.communicators, a.communicatorsChange, l))), (0, r.jsx)(v.Z, E({
+          title: y.intl.string(y.t.hYeOqC)
+        }, I(a.newMembers, a.newMembersChange, l))), (0, r.jsx)(v.Z, E({
+          title: y.intl.string(y.t.jj7OPw),
+          tooltipText: y.intl.string(y.t.MQCslz)
+        }, I(a.pctRetained, a.pctRetainedChange, l, true)))]
       })
     }) : null;
-    return (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    return (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t["0wWfUG"])
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: y.intl.string(y.t["0wWfUG"])
+      }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.NIZ60a, {})
-      }), S(Chunk544891, T), (0, Chunk54381.jsxs)("div", {
-        className: Chunk700374.developerPortalCtaWrapper,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk700374.placeholderImage
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk700374.developerPortalCtaText,
+        children: y.intl.format(y.t.NIZ60a, {})
+      }), S(o, T), (0, r.jsxs)("div", {
+        className: N.developerPortalCtaWrapper,
+        children: [(0, r.jsx)("div", {
+          className: N.placeholderImage
+        }), (0, r.jsx)(c.Text, {
+          className: N.developerPortalCtaText,
           variant: "text-sm/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.A5vswv)
-        }), (0, Chunk54381.jsx)(_, {})]
-      }), Chunk626135 ? (0, Chunk54381.jsx)("div", {
-        className: Chunk700374.streamerMode,
-        children: (0, Chunk54381.jsx)(Chunk497321.Z, {})
+          children: y.intl.string(y.t.A5vswv)
+        }), (0, r.jsx)(_, {})]
+      }), p ? (0, r.jsx)("div", {
+        className: N.streamerMode,
+        children: (0, r.jsx)(d.Z, {})
       }) : P]
     })
   }

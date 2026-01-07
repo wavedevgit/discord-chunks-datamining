@@ -58,11 +58,11 @@ class p {
     let {
       resolution: e,
       fps: t
-    } = Chunk361291.Z.getState();
-    this._targetResolution = module, this._targetFPS = exports, this._statInterval.start(d, this._sampleStats), this._lastLayoutChanged = (0, Chunk379649.zO)()
+    } = a.Z.getState();
+    this._targetResolution = e, this._targetFPS = t, this._statInterval.start(d, this._sampleStats), this._lastLayoutChanged = (0, r.zO)()
   }
   stop() {
-    this._statInterval.stop(), this._streamEnd = (0, Chunk379649.zO)(), this._incrementLayout(this._lastLayout, (this._streamEnd - this._lastLayoutChanged) / 1e3)
+    this._statInterval.stop(), this._streamEnd = (0, r.zO)(), this._incrementLayout(this._lastLayout, (this._streamEnd - this._lastLayoutChanged) / 1e3)
   }
   autoQualityChange() {
     this._automaticQualityChanges += 1
@@ -78,20 +78,20 @@ class p {
   getStats() {
     let e = {
       num_layout_changes: this._layoutChanges,
-      duration_layout_fullscreen: f(this._layoutBuckets[Chunk981631.hVg.FULL_SCREEN]),
-      duration_layout_theatre: f(this._layoutBuckets[Chunk981631.hVg.THEATRE]),
-      duration_layout_pip: f(this._layoutBuckets[Chunk981631.hVg.PIP]),
-      duration_layout_popout: f(this._layoutBuckets[Chunk981631.hVg.POPOUT]),
-      duration_layout_portrait: f(this._layoutBuckets[Chunk981631.hVg.PORTRAIT]),
-      duration_layout_landscape: f(this._layoutBuckets[Chunk981631.hVg.LANDSCAPE]),
-      duration_layout_minimized: f(this._layoutBuckets[Chunk981631.hVg.MINIMIZED])
+      duration_layout_fullscreen: f(this._layoutBuckets[o.hVg.FULL_SCREEN]),
+      duration_layout_theatre: f(this._layoutBuckets[o.hVg.THEATRE]),
+      duration_layout_pip: f(this._layoutBuckets[o.hVg.PIP]),
+      duration_layout_popout: f(this._layoutBuckets[o.hVg.POPOUT]),
+      duration_layout_portrait: f(this._layoutBuckets[o.hVg.PORTRAIT]),
+      duration_layout_landscape: f(this._layoutBuckets[o.hVg.LANDSCAPE]),
+      duration_layout_minimized: f(this._layoutBuckets[o.hVg.MINIMIZED])
     };
-    return this._isSender ? u(l({}, module), {
+    return this._isSender ? u(l({}, e), {
       target_fps: this._targetFPS,
       target_resolution_height: this._targetResolution,
       stream_settings_changed: this._streamSettingsChanged,
       num_auto_quality_changes: this._automaticQualityChanges
-    }) : module
+    }) : e
   }
   constructor(e, t) {
     s(this, "_statInterval", true), s(this, "_isSender", true), s(this, "_streamEnd", true), s(this, "_targetResolution", 0), s(this, "_targetFPS", 0), s(this, "_streamSettingsChanged", false), s(this, "_lastLayout", true), s(this, "_lastLayoutChanged", 0), s(this, "_layoutChanges", 0), s(this, "_layoutBuckets", true), s(this, "_automaticQualityChanges", 0), s(this, "_incrementLayout", (e, t) => {

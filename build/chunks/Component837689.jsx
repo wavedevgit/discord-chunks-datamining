@@ -40,10 +40,10 @@ function N(e, t, n) {
 let j = "PremiumServerDriveAnnouncementModal";
 class P extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), Chunk570140.Z.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess)
+    s.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), s.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), s.Z.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), Chunk570140.Z.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess)
+    s.Z.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), s.Z.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), s.Z.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess)
   }
   constructor(...e) {
     super(...e), N(this, "handleActivePromotionsFetchSuccess", e => {
@@ -92,7 +92,7 @@ class P extends Chunk317770.Z {
         userTrialOffer: n
       } : {}
     }), N(this, "mayShowAnnouncementModal", async () => {
-      if (await (0, b.l2)(), h.s.isDisallowPopupsSet()) return;
+      if (await (0, b.l2)(), m.s.isDisallowPopupsSet()) return;
       let e = this.getOfferFromStore(),
         t = v.Z.getCurrentConfig({
           location: "announcementManager"
@@ -108,7 +108,7 @@ class P extends Chunk317770.Z {
           upsellType: T.cd.REVERSE_TRIAL_FOLLOWUP_UPSELL
         }), (null == l || l.verified) && !(0, o.$sL)() && !i.tq && !n) {
         for (let t of (await (0, y.He)(e)))
-          if (await this.maybeOpenServerDriveAnnouncementModal("", m.default.fromTimestamp(Date.now()), t, false)) break
+          if (await this.maybeOpenServerDriveAnnouncementModal("", h.default.fromTimestamp(Date.now()), t, false)) break
       }
     })
   }

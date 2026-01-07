@@ -14,12 +14,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.qs)(Chunk313789.n.DATA_USAGE_STATISTICS_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.XuADY2),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t["igTSG/"], {
-    helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_PRIVACY_CONTROLS)
+  useTitle: () => c.intl.string(c.t.XuADY2),
+  useSubtitle: () => c.intl.format(c.t["igTSG/"], {
+    helpdeskArticle: a.Z.getArticleURL(S.BhN.DATA_PRIVACY_CONTROLS)
   }),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.USAGE_STATISTICS))
+    return (0, i.e7)([r.Z], () => r.Z.hasConsented(S.pjP.USAGE_STATISTICS))
   },
   setValue: function(t) {
     t ? (0, l.g)([S.pjP.USAGE_STATISTICS], []).catch(T.S) : (0, T.V)({
@@ -30,6 +30,6 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.DATA_USAGE_STATISTICS_SETTING, {
       onConfirm: () => (0, l.g)([], [S.pjP.USAGE_STATISTICS]).catch(T.S)
     })
   },
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.XuADY2)],
+  useSearchTerms: () => [c.intl.string(c.t.XuADY2)],
   useDisabled: Chunk915009.LN
 })

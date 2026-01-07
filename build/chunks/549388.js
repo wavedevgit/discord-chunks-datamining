@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function i() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "AUTO_UPDATER_QUIT_AND_INSTALL"
   })
 }

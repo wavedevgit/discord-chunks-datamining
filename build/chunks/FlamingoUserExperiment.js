@@ -49,7 +49,7 @@ let l = new Set(["943265993613008967"]),
       }
     }]
   }),
-  u = () => (0, Chunk358085.isWindows)() || (0, Chunk358085.isMac)();
+  u = () => (0, s.isWindows)() || (0, s.isMac)();
 
 function d(e) {
   let {

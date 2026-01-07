@@ -75,7 +75,7 @@ let L = 25,
 
 function M() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t["Sp2NF+"]),
+    name: N.intl.string(N.t["Sp2NF+"]),
     extensions: ["jpg", "jpeg", "png", "gif", "mp4"]
   }]
 }
@@ -218,15 +218,15 @@ function G(e) {
 }
 
 function Z() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk859554.customBackgroundTooltip,
-    children: [(0, Chunk54381.jsx)(Chunk481060.SrA, {
+  return (0, r.jsxs)("div", {
+    className: P.customBackgroundTooltip,
+    children: [(0, r.jsx)(c.SrA, {
       size: "md",
       color: "currentColor",
-      className: Chunk859554.customBackgroundTooltipIcon
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      className: P.customBackgroundTooltipIcon
+    }), (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["T+yRY3"])
+      children: N.intl.string(N.t["T+yRY3"])
     })]
   })
 }

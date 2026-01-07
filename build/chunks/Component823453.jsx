@@ -40,16 +40,16 @@ function b(e) {
 }
 
 function y() {
-  let [e, t] = Chunk473749.useState([]);
-  return Chunk473749.useEffect(() => {
-    Promise.all(Chunk316792.L.map(e => n(959598)("./".concat(e, ".woff2")).then(e => {
+  let [e, t] = i.useState([]);
+  return i.useEffect(() => {
+    Promise.all(u.L.map(e => n(959598)("./".concat(e, ".woff2")).then(e => {
       let {
         default: t
       } = e;
       return t
     }))).then(e => t(e))
-  }, []), (0, Chunk54381.jsx)(Chunk54381.Fragment, {
-    children: module.map((e, t) => (0, r.jsx)("link", {
+  }, []), (0, r.jsx)(r.Fragment, {
+    children: e.map((e, t) => (0, r.jsx)("link", {
       rel: "preload",
       href: e,
       as: "font",

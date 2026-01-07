@@ -23,8 +23,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk898216 = require("./898216.js");
 let N = function() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk706454.default.locale;
-  return "https://".concat(Chunk981631.xr4, "/hc/").concat(module.toLowerCase(), "/requests/new?ticket_form_id=360000168511")
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.default.locale;
+  return "https://".concat(h.xr4, "/hc/").concat(e.toLowerCase(), "/requests/new?ticket_form_id=360000168511")
 };
 
 function j(e) {

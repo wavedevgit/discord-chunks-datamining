@@ -9,10 +9,10 @@ var Chunk544891 = require("./544891.js"),
 let a = {
   fetchTeams() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return Chunk544891.tn.get({
-      url: Chunk981631.ANM.TEAMS,
+    return r.tn.get({
+      url: i.ANM.TEAMS,
       query: {
-        include_payout_account_status: module
+        include_payout_account_status: e
       },
       rejectWithError: false
     })

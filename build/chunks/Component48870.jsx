@@ -10,12 +10,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk321159 = require("./321159.js");
 
 function s() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk321159.container,
-    children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsx)("div", {
+    className: o.container,
+    children: (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      children: Chunk388032.intl.string(Chunk388032.t.zksHZO)
+      children: a.intl.string(a.t.zksHZO)
     })
   })
 }

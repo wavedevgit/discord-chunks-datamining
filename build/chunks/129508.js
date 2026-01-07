@@ -34,7 +34,7 @@ class l {
   }
   getFilterString() {
     let e = ["brightness", "contrast", "grayscale", "invert", "opacity", "saturate", "sepia"];
-    return ["blur(".concat(this.filter.blur, "px)"), "hue-rotate(".concat(this.filter.hueRotation, "deg)"), ...module.map(e => "".concat(e, "(").concat(this.filter[e], ")"))].join(" ")
+    return ["blur(".concat(this.filter.blur, "px)"), "hue-rotate(".concat(this.filter.hueRotation, "deg)"), ...e.map(e => "".concat(e, "(").concat(this.filter[e], ")"))].join(" ")
   }
   getLoadedImage(e) {
     i()(null != this.assetMap, "DiscordCanvas: An AssetStore has not been initialized.");

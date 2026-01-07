@@ -44,7 +44,7 @@ let a = (0, Chunk818083.B)({
 function o() {
   return {
     autoTrackExposure: true,
-    disable: !(0, Chunk358085.isDesktop)()
+    disable: !(0, i.isDesktop)()
   }
 }
 

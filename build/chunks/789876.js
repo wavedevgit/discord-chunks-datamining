@@ -4,7 +4,7 @@
   "function" == typeof define && define.amd ? define([], t) : e.exports ? e.exports = t() : window.idleCallbackShim = t()
 }(function() {
   "use strict";
-  var e, t, r, i, a = "undefined" != typeof window ? window : (require.g, require.g),
+  var e, t, r, i, a = "undefined" != typeof window ? window : (n.g, n.g),
     o = a.cancelRequestAnimationFrame && a.requestAnimationFrame || setTimeout,
     s = a.cancelRequestAnimationFrame || clearTimeout,
     l = [],
@@ -22,7 +22,7 @@
       },
       timeRemaining: function() {
         var e = d - (Date.now() - m);
-        return module < 0 ? 0 : module
+        return e < 0 ? 0 : e
       }
     },
     E = b(function() {
@@ -57,13 +57,13 @@
   }
 
   function I() {
-    u || (t = p - (Date.now() - m), e = Date.now(), u = true, f && exports < f && (t = f), exports > 9 ? r = setTimeout(S, exports) : (t = 0, S()))
+    u || (t = p - (Date.now() - m), e = Date.now(), u = true, f && t < f && (t = f), t > 9 ? r = setTimeout(S, t) : (t = 0, S()))
   }
 
   function T() {
     var n, i, a, o = d > 9 ? 9 : 1;
-    if (m = Date.now(), u = false, r = null, c > 2 || m - exports - 50 < module)
-      for (i = 0, a = l.length; i < a && g.timeRemaining() > o; i++) n = l.shift(), h++, require && require(g);
+    if (m = Date.now(), u = false, r = null, c > 2 || m - t - 50 < e)
+      for (i = 0, a = l.length; i < a && g.timeRemaining() > o; i++) n = l.shift(), h++, n && n(g);
     l.length ? I() : c = 0
   }
 

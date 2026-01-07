@@ -113,17 +113,17 @@ let m = (e, t) => {
   },
   g = () => {
     var e;
-    let t = (0, Chunk241986.Z)({
+    let t = (0, c.Z)({
         location: "PremiumGroupPurchase"
       }),
-      n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumSubscription());
-    return !!exports && (null == require || Chunk474936.No.has(null != (e = require.premiumPlanIdFromItems) ? module : "") && !require.isPurchasedExternally)
+      n = (0, r.e7)([s.Z], () => s.Z.getPremiumSubscription());
+    return !!t && (null == n || u.No.has(null != (e = n.premiumPlanIdFromItems) ? e : "") && !n.isPurchasedExternally)
   },
   E = () => {
-    let e = (0, Chunk241986.Z)({
+    let e = (0, c.Z)({
         location: "PremiumGroupPurchase"
       }),
       t = g(),
-      n = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-    return !!module && !!exports && (null == require || !require.isPremiumWithPremiumGroup())
+      n = (0, r.e7)([o.default], () => o.default.getCurrentUser());
+    return !!e && !!t && (null == n || !n.isPremiumWithPremiumGroup())
   }

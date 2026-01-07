@@ -49,7 +49,7 @@ class o {
   upstreamItems() {
     if (this.canUpstreamItems()) {
       for (let [e, t] of this.extended.entries())
-        if (this.primary.put(module, exports), this.extended.delete(module), !this.canUpstreamItems()) break
+        if (this.primary.put(e, t), this.extended.delete(e), !this.canUpstreamItems()) break
     }
   }
   canUpstreamItems() {
@@ -65,13 +65,13 @@ class o {
     return this.primary.values()
   }
   allEntries() {
-    return Chunk689320.t(this.extended.entries(), this.primary.entries())
+    return r.t(this.extended.entries(), this.primary.entries())
   }
   allKeys() {
-    return Chunk689320.t(this.extended.keys(), this.primary.keys())
+    return r.t(this.extended.keys(), this.primary.keys())
   }
   allValues() {
-    return Chunk689320.t(this.extended.values(), this.primary.values())
+    return r.t(this.extended.values(), this.primary.values())
   }
   constructor(e, t) {
     a(this, "primary", true), a(this, "extended", true), this.primary = new i.S(e), this.extended = new i.S(t)

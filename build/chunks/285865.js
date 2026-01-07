@@ -6,12 +6,12 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 let i = {
   closeSidebar() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "MOBILE_WEB_SIDEBAR_CLOSE"
     })
   },
   openSidebar() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "MOBILE_WEB_SIDEBAR_OPEN"
     })
   }

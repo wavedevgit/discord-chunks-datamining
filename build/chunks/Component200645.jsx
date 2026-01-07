@@ -23,9 +23,9 @@ function u(e, t, n) {
 class d extends Chunk473749.PureComponent {
   async componentDidMount() {
     this.setState({
-      openOnStartup: await Chunk998502.ZP.getOpenOnStart(),
-      startMinimized: await Chunk998502.ZP.getSetting("START_MINIMIZED", false),
-      minimizeToTray: await Chunk998502.ZP.getSetting("MINIMIZE_TO_TRAY", true)
+      openOnStartup: await s.ZP.getOpenOnStart(),
+      startMinimized: await s.ZP.getSetting("START_MINIMIZED", false),
+      minimizeToTray: await s.ZP.getSetting("MINIMIZE_TO_TRAY", true)
     })
   }
   render() {
@@ -33,31 +33,31 @@ class d extends Chunk473749.PureComponent {
       openOnStartup: e,
       startMinimized: t,
       minimizeToTray: n
-    } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTW"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZov);
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    } = this.state, i = (0, o.isLinux)() ? c.intl.string(c.t["7pPjTW"]) : c.intl.string(c.t.ZkDZov);
+    return (0, r.jsxs)(a.Kqy, {
       gap: 16,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
-        children: Chunk473749
-      }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.WQm4p1),
-          description: Chunk388032.intl.string(Chunk388032.t["s/cQrU"]),
-          checked: module,
+        children: i
+      }), (0, r.jsxs)(a.C3N, {
+        children: [(0, r.jsx)(a.rsf, {
+          label: c.intl.string(c.t.WQm4p1),
+          description: c.intl.string(c.t["s/cQrU"]),
+          checked: e,
           onChange: this.handleToggleOpenOnStartup
-        }), (0, Chunk358085.isWindows)() ? (0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.n7Yjes),
-          description: Chunk388032.intl.string(Chunk388032.t.o2FSjB),
-          checked: !!module && exports,
-          disabled: !module,
+        }), (0, o.isWindows)() ? (0, r.jsx)(a.rsf, {
+          label: c.intl.string(c.t.n7Yjes),
+          description: c.intl.string(c.t.o2FSjB),
+          checked: !!e && t,
+          disabled: !e,
           onChange: this.handleToggleStartMinimized
-        }) : null, (0, Chunk54381.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.abLFes),
-          description: Chunk388032.intl.string(Chunk388032.t["mVuX+j"]),
-          checked: require,
+        }) : null, (0, r.jsx)(a.rsf, {
+          label: c.intl.string(c.t.abLFes),
+          description: c.intl.string(c.t["mVuX+j"]),
+          checked: n,
           onChange: this.handleToggleMinimizeToTray
-        }), (0, Chunk54381.jsx)(Chunk885418.s, {})]
+        }), (0, r.jsx)(l.s, {})]
       })]
     })
   }

@@ -146,73 +146,73 @@ class b extends Chunk495852.C {
       name: "announcement_modal_variant_1",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk740111.xY
+      T: () => E.xY
     }, {
       no: 4,
       name: "premium_tab",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk214611.C
+      T: () => g.C
     }, {
       no: 5,
       name: "marketing_page_banner",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk990830.w
+      T: () => h.w
     }, {
       no: 6,
       name: "payment_modal_banner",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk999755.j
+      T: () => m.j
     }, {
       no: 7,
       name: "mobile_bottom_sheet",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk922122.g
+      T: () => _.g
     }, {
       no: 8,
       name: "gift_icon",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk631536.O
+      T: () => p.O
     }, {
       no: 9,
       name: "gift_icon_coachmark",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk497504.h
+      T: () => f.h
     }, {
       no: 10,
       name: "gift_plan_selection_card_banner",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk698587.C
+      T: () => d.C
     }, {
       no: 11,
       name: "gift_customization_banner",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk828186.m
+      T: () => u.m
     }, {
       no: 12,
       name: "billing_settings_nitro_gift_banner",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk279882.V
+      T: () => c.V
     }, {
       no: 13,
       name: "gift_reminder_nagbar",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk323407.p
+      T: () => l.p
     }, {
       no: 14,
       name: "gift_reminder_coachmark",
       kind: "message",
       oneof: "properties",
-      T: () => Chunk359295.r
+      T: () => s.r
     }, {
       no: 3,
       name: "content_identifier",

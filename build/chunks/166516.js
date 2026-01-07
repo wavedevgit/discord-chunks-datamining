@@ -412,5 +412,5 @@
   };
   "undefined" != typeof define && define.amd ? define([], function() {
     return e
-  }) : module.exports ? module.exports = e : this.Favico = e
+  }) : t.exports ? t.exports = e : this.Favico = e
 }()

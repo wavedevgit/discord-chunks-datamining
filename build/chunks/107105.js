@@ -9,11 +9,11 @@ var r, Chunk358085 = require("./358085.js"),
   a = ((r = {})[r.UNHANDLED = false] = "UNHANDLED", r[r.NOMINAL = 0] = "NOMINAL", r[r.FAIR = 1] = "FAIR", r[r.SERIOUS = 2] = "SERIOUS", r[r.CRITICAL = 3] = "CRITICAL", r);
 
 function o() {
-  var e = Chunk75060.Z.getRawThermalState();
-  if (null == module) return false;
-  if ((0, Chunk358085.isIOS)()) return module;
-  if (!(0, Chunk358085.isAndroid)()) return false;
-  switch (module) {
+  var e = l.Z.getRawThermalState();
+  if (null == e) return false;
+  if ((0, i.isIOS)()) return e;
+  if (!(0, i.isAndroid)()) return false;
+  switch (e) {
     case 0:
       return 0;
     case 1:

@@ -45,8 +45,8 @@ function u(e) {
 }
 
 function d() {
-  return Chunk544891.tn.get({
-    url: Chunk981631.ANM.SETTINGS_CONSENT,
+  return r.tn.get({
+    url: a.ANM.SETTINGS_CONSENT,
     oldFormErrors: true,
     rejectWithError: false
   }).then(c, e => Promise.reject(Error(e.body.message)))

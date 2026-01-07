@@ -15,30 +15,30 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function u() {
-  let e = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hideInstantInvites),
+  let e = (0, l.e7)([c.Z], () => c.Z.hideInstantInvites),
     {
       channel: t,
       guild: n
-    } = (0, Chunk442837.cj)([Chunk388610.Z, Chunk430824.Z], () => {
+    } = (0, l.cj)([a.Z, s.Z], () => {
       let {
         channel: e
-      } = Chunk388610.Z.getProps(), t = null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null;
+      } = a.Z.getProps(), t = null != e ? s.Z.getGuild(e.getGuildId()) : null;
       return {
-        channel: module,
-        guild: exports
+        channel: e,
+        guild: t
       }
     }, []),
-    u = (0, Chunk442837.e7)([Chunk496675.Z], () => null != exports && Chunk496675.Z.can(Chunk981631.Plq.CREATE_INSTANT_INVITE, exports), [exports]),
+    u = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.CREATE_INSTANT_INVITE, t), [t]),
     {
       invites: h,
       loading: g
-    } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getInvites(), []);
-  return (0, Chunk54381.jsx)(Chunk270394.Z, {
+    } = (0, l.cj)([a.Z], () => a.Z.getInvites(), []);
+  return (0, i.jsx)(r.Z, {
     invites: h,
     loading: g,
-    guild: require,
-    channel: exports,
+    guild: n,
+    channel: t,
     canCreateInvites: u,
-    hide: module
+    hide: e
   })
 }

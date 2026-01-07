@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $2: () => h,
-  $Q: () => Chunk380696.$,
+  $Q: () => a.$,
   CD: () => f,
   GD: () => l,
   LL: () => i,

@@ -89,19 +89,19 @@ class T extends(r = Chunk473749.PureComponent) {
     let e = this.props,
       {
         scrollerRef: t
-      } = module,
-      n = O(module, ["scrollerRef"]);
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk306174.customContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060._2F, y(E({}, require), {
-        className: s()(Chunk306174.customScroller, Chunk306174.contentRegionScroller),
-        ref: exports
+      } = e,
+      n = O(e, ["scrollerRef"]);
+    return (0, i.jsx)("div", {
+      className: h.customContainer,
+      children: (0, i.jsx)(f._2F, y(E({}, n), {
+        className: s()(h.customScroller, h.contentRegionScroller),
+        ref: t
       }))
     })
   }
   render() {
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk306174.customColumn,
+    return (0, i.jsx)("div", {
+      className: h.customColumn,
       children: this.renderContent()
     })
   }

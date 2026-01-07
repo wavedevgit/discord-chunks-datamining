@@ -9,6 +9,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk305314 = require("./305314.jsx"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.k4)(Chunk313789.n.APPEARANCE_SCALING_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["0Yh+ZX"]),
-  buildLayout: () => [Chunk788391.S, Chunk305314.L]
+  useTitle: () => r.intl.string(r.t["0Yh+ZX"]),
+  buildLayout: () => [s.S, u.L]
 })

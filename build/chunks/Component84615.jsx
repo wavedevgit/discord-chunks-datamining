@@ -116,12 +116,12 @@ let T = {
 function A() {
   let {
     reducedMotion: e
-  } = Chunk473749.useContext(Chunk481060.Sfi), t = module.enabled ? C : T, n = S(e => e.fullScreenLayers), a = require.map(e => ({
+  } = i.useContext(f.Sfi), t = e.enabled ? C : T, n = S(e => e.fullScreenLayers), a = n.map(e => ({
     item: e,
     nodeRef: i.createRef()
   }));
-  return (0, Chunk54381.jsx)(Chunk757275.Z, {
-    children: Chunk97613.map(e => {
+  return (0, r.jsx)(s.Z, {
+    children: a.map(e => {
       let {
         item: i,
         nodeRef: a

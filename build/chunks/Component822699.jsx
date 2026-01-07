@@ -151,29 +151,29 @@ class eA extends Chunk473749.PureComponent {
       hasLoadedExperiments: t,
       isAuthenticated: n
     } = this.props;
-    null != module && (!exports && require && Chunk893776.Z.getExperiments(true), Chunk626135.default.track(Chunk981631.rMx.INVITE_OPENED, {
-      invite_code: (0, Chunk264229.jX)(module),
-      load_time: Chunk625054.Z.getTimeSinceNavigationStart()
+    null != e && (!t && n && d.Z.getExperiments(true), L.default.track(er.rMx.INVITE_OPENED, {
+      invite_code: (0, y.jX)(e),
+      load_time: M.Z.getTimeSinceNavigationStart()
     }, {
       flush: true
-    })), (exports || Chunk188785.a) && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), Chunk126399.Z.initialize(), (0, Chunk108427.t)()
+    })), (t || ei.a) && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), g.Z.initialize(), (0, T.t)()
   }
   componentDidUpdate(e) {
     var t, n;
     e.hasLoadedExperiments || !this.props.hasLoadedExperiments || ei.a || this.resolveInvite(), (null == (t = e.invite) ? true : t.state) !== (null == (n = this.props.invite) ? true : n.state) && this.maybeFetchApplicationSplash()
   }
   componentWillUnmount() {
-    Chunk126399.Z.terminate()
+    g.Z.terminate()
   }
   maybeFetchApplicationSplash() {
     let {
       invite: e
     } = this.props;
-    if ((null == module ? true : module.state) === Chunk981631.r2o.RESOLVED) {
+    if ((null == e ? true : e.state) === er.r2o.RESOLVED) {
       let {
         target_application: t
-      } = module;
-      null != exports && (0, Chunk81063.hR)(exports.id, ["embedded_splash"]).then(e => {
+      } = e;
+      null != t && (0, D.hR)(t.id, ["embedded_splash"]).then(e => {
         let [t] = e;
         return this.setState({
           backgroundId: t
@@ -185,28 +185,28 @@ class eA extends Chunk473749.PureComponent {
     let {
       inviteKey: e
     } = this.props;
-    if (null == module) return;
+    if (null == e) return;
     let {
       invite: t
-    } = await Chunk447543.ZP.resolveInvite(module, Chunk981631.Usc.INVITE);
-    null != exports && ((0, Chunk267394.A)(exports), null != exports.type && Chunk245335.xf.has(exports.type) && Chunk447543.ZP.openNativeAppModal(module))
+    } = await f.ZP.resolveInvite(e, er.Usc.INVITE);
+    null != t && ((0, x.A)(t), null != t.type && es.xf.has(t.type) && f.ZP.openNativeAppModal(e))
   }
   resolveGuildTemplate() {
     let {
       guildTemplateCode: e
     } = this.props;
-    null != module && (Chunk626135.default.track(Chunk981631.rMx.GUILD_TEMPLATE_OPENED, {
-      guild_template_code: module,
-      load_time: Chunk625054.Z.getTimeSinceNavigationStart()
+    null != e && (L.default.track(er.rMx.GUILD_TEMPLATE_OPENED, {
+      guild_template_code: e,
+      load_time: M.Z.getTimeSinceNavigationStart()
     }, {
       flush: true
-    }), Chunk962220.Z.resolveGuildTemplate(module), Chunk962220.Z.openNativeAppModal(module))
+    }), I.Z.resolveGuildTemplate(e), I.Z.openNativeAppModal(e))
   }
   resolveGiftCode() {
     let {
       giftCode: e
     } = this.props;
-    null != module && Chunk533307.Z.resolveGiftCode(module, true, true).then(t => {
+    null != e && h.Z.resolveGiftCode(e, true, true).then(t => {
       null != t && null == t.giftCode.promotion && u.Z.wait(() => h.Z.openNativeGiftCodeModal(e))
     })
   }
@@ -217,41 +217,41 @@ class eA extends Chunk473749.PureComponent {
     } = this.state, {
       inviteKey: n
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk721751.Z, {
-      splash: module,
-      children: [(0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.LOGIN_HANDOFF,
+    return (0, r.jsxs)(U.Z, {
+      splash: e,
+      children: [(0, r.jsx)(p.Z, {
+        path: er.Z5c.LOGIN_HANDOFF,
         render: e => (0, r.jsx)(eu, eo(el({}, e), {
           redirectTo: t
         }))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.LOGIN_ONE_TIME,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.LOGIN_ONE_TIME,
         render: e => (0, r.jsx)(eT, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        impressionName: Chunk990547.ImpressionNames.USER_LOGIN,
-        path: Chunk981631.Z5c.LOGIN,
+      }), (0, r.jsx)(p.Z, {
+        impressionName: a.ImpressionNames.USER_LOGIN,
+        path: er.Z5c.LOGIN,
         render: e => (0, r.jsx)(ec, eo(el({}, e), {
           redirectTo: t
         }))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        impressionName: Chunk990547.ImpressionNames.USER_REGISTRATION,
-        path: Chunk981631.Z5c.REGISTER,
+      }), (0, r.jsx)(p.Z, {
+        impressionName: a.ImpressionNames.USER_REGISTRATION,
+        path: er.Z5c.REGISTER,
         render: e => ei.a ? (0, r.jsx)(ed, eo(el({}, e), {
           redirectTo: t,
           inviteKey: n
         })) : (0, r.jsx)(em, eo(el({}, e), {
           redirectTo: t
         }))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"),
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.GIFT_CODE_LOGIN(":giftCode"),
         render: e => (0, r.jsx)(ef, el({
           login: true
         }, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.GIFT_CODE(":giftCode"),
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.GIFT_CODE(":giftCode"),
         render: e => (0, r.jsx)(ef, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: [Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.INVITE(":inviteCode")],
+      }), (0, r.jsx)(p.Z, {
+        path: [er.Z5c.INVITE_LOGIN(":inviteCode"), er.Z5c.INVITE(":inviteCode")],
         render: e => {
           let {
             match: {
@@ -273,8 +273,8 @@ class eA extends Chunk473749.PureComponent {
             login: n === er.Z5c.INVITE_LOGIN(":inviteCode")
           })
         }
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: [Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), Chunk981631.Z5c.GUILD_TEMPLATE(":guildTemplateCode")],
+      }), (0, r.jsx)(p.Z, {
+        path: [er.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), er.Z5c.GUILD_TEMPLATE(":guildTemplateCode")],
         render: e => {
           let {
             match: {
@@ -295,61 +295,61 @@ class eA extends Chunk473749.PureComponent {
             login: n === er.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")
           })
         }
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.VERIFY,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.VERIFY,
         render: e => (0, r.jsx)(e_, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.VERIFY_HUB_EMAIL,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.VERIFY_HUB_EMAIL,
         render: e => (0, r.jsx)(eI, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.VERIFY_REQUEST,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.VERIFY_REQUEST,
         render: e => (0, r.jsx)(eE, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
         render: e => (0, r.jsx)(eb, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
         render: e => (0, r.jsx)(ej, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.AUTHORIZE_IP,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.AUTHORIZE_IP,
         render: e => (0, r.jsx)(ep, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.REJECT_IP,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.REJECT_IP,
         render: e => (0, r.jsx)(ev, el({
           source: er.Z5c.REJECT_IP
         }, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.REJECT_MFA,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.REJECT_MFA,
         render: e => (0, r.jsx)(ev, el({
           source: er.Z5c.REJECT_MFA
         }, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.AUTHORIZE_PAYMENT,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.AUTHORIZE_PAYMENT,
         render: e => (0, r.jsx)(ex, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.RESET,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.RESET,
         render: e => (0, r.jsx)(ev, el({
           source: er.Z5c.RESET
         }, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         render: e => (0, r.jsx)(eS, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.CHANNELS_GAME_SHOP(Chunk893607.Hw.guildId(), ":pageIndex", ":skuId", ":slug?"),
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.CHANNELS_GAME_SHOP(O.Hw.guildId(), ":pageIndex", ":skuId", ":slug?"),
         render: e => (0, r.jsx)(ey, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.CHANNEL(O.Hw.guildId(), O.Hw.channelId({
           optional: true
         }), ":messageId?"),
         render: e => (0, r.jsx)(eN, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.REPORT,
-        render: () => (0, Chunk54381.jsx)(Chunk594961.KS, {})
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.REPORT_SECOND_LOOK,
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.REPORT,
+        render: () => (0, r.jsx)(A.KS, {})
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.REPORT_SECOND_LOOK,
         render: e => (0, r.jsx)(eC, el({}, e))
-      }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-        path: Chunk981631.Z5c.ACCOUNT_REVERT(":token"),
+      }), (0, r.jsx)(p.Z, {
+        path: er.Z5c.ACCOUNT_REVERT(":token"),
         render: e => (0, r.jsx)(eO, el({}, e))
       })]
     })

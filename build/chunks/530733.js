@@ -77,7 +77,7 @@ function k(e) {
 
 function C() {
   var e, t, n, r, o, a, s, c;
-  for (i.sort(l); e = i.shift();) module.__d && (t = i.length, r = true, o = true, s = (a = (n = module).__v).__e, (c = require.__P) && (r = [], (o = f({}, a)).__v = a.__v + 1, A(c, a, o, require.__n, true !== c.ownerSVGElement, null != a.__h ? [s] : null, r, null == s ? _(a) : s, a.__h), R(r, a), a.__e != s && function e(t) {
+  for (i.sort(l); e = i.shift();) e.__d && (t = i.length, r = true, o = true, s = (a = (n = e).__v).__e, (c = n.__P) && (r = [], (o = f({}, a)).__v = a.__v + 1, A(c, a, o, n.__n, true !== c.ownerSVGElement, null != a.__h ? [s] : null, r, null == s ? _(a) : s, a.__h), R(r, a), a.__e != s && function e(t) {
     var n, r;
     if (null != (t = t.__) && null != t.__c) {
       for (t.__e = t.__c.base = null, n = 0; n < t.__k.length; n++)
@@ -86,7 +86,7 @@ function C() {
           break
         } return e(t)
     }
-  }(a)), i.length > exports && i.sort(l));
+  }(a)), i.length > t && i.sort(l));
   C.__r = 0
 }
 

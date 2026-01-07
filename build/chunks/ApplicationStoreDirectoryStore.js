@@ -52,7 +52,7 @@ function h(e) {
 }
 class g extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk55563.Z, Chunk551428.Z)
+    this.waitFor(s.Z, l.Z)
   }
   hasStorefront(e) {
     return u.has(e)

@@ -15,12 +15,12 @@ function t() {
 
 function s() {
   if (null == window.GLOBAL_ENV.DEV_SESSION_KEY) return void console.log("Meticulous token not found");
-  (0, Chunk846428.Rl)({
+  (0, n.Rl)({
     recordingToken: window.GLOBAL_ENV.DEV_SESSION_KEY,
     isProduction: false
   }), null != window.DiscordDevSession && (window.DiscordDevSession.started = true), console.log("Meticulous session recording started")
 }
 
 function r() {
-  (0, Chunk846428.rk)(), null != window.DiscordDevSession && (window.DiscordDevSession.started = false)
+  (0, n.rk)(), null != window.DiscordDevSession && (window.DiscordDevSession.started = false)
 }

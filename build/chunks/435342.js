@@ -10,6 +10,6 @@ var Chunk211242 = require("./211242.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.ON)(Chunk313789.n.GIFT_BLOCKED_PAYMENTS_SETTING, {
   Component: Chunk89057.c8,
-  usePredicate: () => (0, Chunk211242.Q)(),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.vwMEHS)]
+  usePredicate: () => (0, i.Q)(),
+  useSearchTerms: () => [r.intl.string(r.t.vwMEHS)]
 })

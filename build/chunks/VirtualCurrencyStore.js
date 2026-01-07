@@ -101,7 +101,7 @@ class s extends(r = Chunk442837.ZP.Store) {
     this._onboardingModalOpenedPrior = false
   }
   constructor() {
-    super(Chunk570140.Z, {
+    super(a.Z, {
       VIRTUAL_CURRENCY_REDEEM_START: e => this.handleRedeemVirtualCurrencyStart(e),
       VIRTUAL_CURRENCY_REDEEM_SUCCESS: e => this.handleRedeemVirtualCurrencySuccess(e),
       VIRTUAL_CURRENCY_REDEEM_FAIL: e => this.handleRedeemVirtualCurrencyFail(e),

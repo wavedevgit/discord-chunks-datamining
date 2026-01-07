@@ -35,7 +35,7 @@ var a = false,
       }, {
         key: "canDrag",
         value: function() {
-          (0, Chunk573654.k)(!a, "You may not call monitor.canDrag() inside your canDrag() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, r.k)(!a, "You may not call monitor.canDrag() inside your canDrag() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
             return a = true, this.internalMonitor.canDragSource(this.sourceId)
           } finally {
@@ -46,7 +46,7 @@ var a = false,
         key: "isDragging",
         value: function() {
           if (!this.sourceId) returnfalse;
-          (0, Chunk573654.k)(!l, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, r.k)(!l, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
             return l = true, this.internalMonitor.isDraggingSource(this.sourceId)
           } finally {
@@ -149,5 +149,5 @@ var a = false,
           var r = t[n];
           r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
         }
-      }(exports.prototype, module), exports
+      }(t.prototype, e), t
   }()

@@ -11,13 +11,13 @@ var r, i, Chunk442837 = require("./442837.js"),
 let u = null;
 
 function d() {
-  let e = Chunk594174.default.getCurrentUser();
-  if (null == module || module.mfaEnabled === u) returnfalse;
-  u = module.mfaEnabled
+  let e = s.default.getCurrentUser();
+  if (null == e || e.mfaEnabled === u) returnfalse;
+  u = e.mfaEnabled
 }
 class p extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default, Chunk984933.ZP), this.syncWith([Chunk594174.default, Chunk984933.ZP], d)
+    this.waitFor(s.default, o.ZP), this.syncWith([s.default, o.ZP], d)
   }
   isVisible(e) {
     return null != e && e.mfaLevel === c.BpS.ELEVATED && false === u && o.ZP.hasElevatedPermissions(e.id)

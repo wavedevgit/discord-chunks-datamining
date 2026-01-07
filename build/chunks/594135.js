@@ -27,4 +27,4 @@ let o = Chunk473749.createContext({
     pauseDuration: null,
     setPauseDuration: () => {}
   }),
-  s = () => Chunk473749.useContext(o)
+  s = () => r.useContext(o)

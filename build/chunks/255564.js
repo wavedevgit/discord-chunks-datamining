@@ -37,14 +37,14 @@ class u {
   }
   get gameWidgets() {
     var e;
-    return null == (e = this._userProfile.widgets) ? true : module.filter(Chunk836197.Wc)
+    return null == (e = this._userProfile.widgets) ? true : e.filter(o.Wc)
   }
   get primaryColor() {
     var e, t;
-    return null != (t = null == (e = this.themeColors) ? true : module[0]) ? exports : this.accentColor
+    return null != (t = null == (e = this.themeColors) ? true : e[0]) ? t : this.accentColor
   }
   get canUsePremiumProfileCustomization() {
-    return Chunk74538.ZP.isPremiumAtLeast(this.premiumType, Chunk474936.PremiumTypes.TIER_2)
+    return a.ZP.isPremiumAtLeast(this.premiumType, s.PremiumTypes.TIER_2)
   }
   get canEditThemes() {
     return this.canUsePremiumProfileCustomization
@@ -57,22 +57,22 @@ class u {
   }
   hasThemeColors() {
     var e, t;
-    return (null == (e = this.themeColors) ? true : module[0]) != null || (null == (t = this.themeColors) ? true : exports[1]) != null
+    return (null == (e = this.themeColors) ? true : e[0]) != null || (null == (t = this.themeColors) ? true : t[1]) != null
   }
   hasPremiumCustomization() {
     return this.isUsingGuildMemberBanner() || this.isUsingGuildMemberBio() || null != this.banner || this.hasThemeColors() || null != this.popoutAnimationParticleType
   }
   isUsingGuildMemberBanner() {
     var e;
-    return (null == (e = this._guildMemberProfile) ? true : module.banner) != null
+    return (null == (e = this._guildMemberProfile) ? true : e.banner) != null
   }
   isUsingGuildMemberBio() {
     var e, t;
-    return (null == (e = this._guildMemberProfile) ? true : module.bio) != null && (null == (t = this._guildMemberProfile) ? true : exports.bio) !== ""
+    return (null == (e = this._guildMemberProfile) ? true : e.bio) != null && (null == (t = this._guildMemberProfile) ? true : t.bio) !== ""
   }
   isUsingGuildMemberPronouns() {
     var e, t;
-    return (null == (e = this._guildMemberProfile) ? true : module.pronouns) != null && (null == (t = this._guildMemberProfile) ? true : exports.pronouns) !== ""
+    return (null == (e = this._guildMemberProfile) ? true : e.pronouns) != null && (null == (t = this._guildMemberProfile) ? true : t.pronouns) !== ""
   }
   getBannerURL(e) {
     let {
@@ -118,7 +118,7 @@ class u {
   }
   getBadges() {
     var e, t, n;
-    return [...null != (t = this._userProfile.badges) ? exports : [], ...null != (n = null == (e = this._guildMemberProfile) ? true : module.badges) ? require : []]
+    return [...null != (t = this._userProfile.badges) ? t : [], ...null != (n = null == (e = this._guildMemberProfile) ? true : e.badges) ? n : []]
   }
   getLegacyUsername() {
     return this._userProfile.legacyUsername

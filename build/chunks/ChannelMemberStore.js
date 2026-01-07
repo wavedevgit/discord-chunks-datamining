@@ -135,10 +135,10 @@ function j(e) {
 }
 class M {
   updateOwnerId() {
-    let e = Chunk430824.Z.getGuild(this.guildId);
-    if (null == module) returnfalse;
-    let t = Chunk700785.iJ(module);
-    return this.ownerId !== exports && (this.ownerId = exports, true)
+    let e = b.Z.getGuild(this.guildId);
+    if (null == e) returnfalse;
+    let t = f.iJ(e);
+    return this.ownerId !== t && (this.ownerId = t, true)
   }
   setGroups(e) {
     let t = 0;
@@ -198,9 +198,9 @@ class M {
   }
   rebuildMembers() {
     let e = Object.keys(this.members);
-    for (let t = 0; exports < module.length; exports++) {
-      let n = module[exports];
-      this.rebuildMember(require)
+    for (let t = 0; t < e.length; t++) {
+      let n = e[t];
+      this.rebuildMember(n)
     }
   }
   constructor(e, t) {
@@ -297,15 +297,15 @@ function H(e) {
 let Y = [];
 
 function W() {
-  let e = Chunk199902.Z.getAllApplicationStreams(),
-    t = Y.concat(module);
-  Y = module, exports.forEach(e => {
+  let e = p.Z.getAllApplicationStreams(),
+    t = Y.concat(e);
+  Y = e, t.forEach(e => {
     U.forEach(null, t => t.rebuildMember(e.ownerId))
   })
 }
 
 function K() {
-  let e = Chunk314897.default.getId();
+  let e = _.default.getId();
   U.forEach(null, t => t.rebuildMember(e))
 }
 
@@ -314,7 +314,7 @@ function z() {
 }
 class q extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default, Chunk430824.Z, Chunk485386.Z, Chunk592125.Z, Chunk271383.ZP, Chunk158776.Z, Chunk885110.Z, Chunk314897.default, Chunk650774.Z, Chunk199902.Z, Chunk353926.Z), this.syncWith([Chunk885110.Z], K), this.syncWith([Chunk199902.Z], W)
+    this.waitFor(v.default, b.Z, E.Z, m.Z, g.ZP, y.Z, O.Z, _.default, h.Z, p.Z, d.Z), this.syncWith([O.Z], K), this.syncWith([p.Z], W)
   }
   getProps(e, t) {
     let n = U.get(e, L(t));

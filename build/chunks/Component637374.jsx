@@ -106,15 +106,15 @@ class z extends Chunk473749.PureComponent {
     let {
       width: e
     } = this.props;
-    return module >= Chunk568836.aL
+    return e >= f.aL
   }
   handleViewInventory() {
-    (0, Chunk518596.openUserSettings)(Chunk313789.n.GIFT_PANEL, {
-      section: Chunk981631.oAB.INVENTORY
+    (0, C.openUserSettings)(T.n.GIFT_PANEL, {
+      section: G.oAB.INVENTORY
     })
   }
   render() {
-    return (0, Chunk54381.jsx)(Chunk568836.$G, {
+    return (0, r.jsx)(f.$G, {
       isHorizontal: this.isHorizontal,
       renderTitle: this.renderTitle,
       renderTagline: this.renderTagline,
@@ -147,8 +147,8 @@ class q extends Chunk473749.Component {
         location: e
       }
     } = this.props;
-    return W(H({}, module), {
-      section: Chunk981631.jXE.GIFT_CODE_EMBED
+    return W(H({}, e), {
+      section: G.jXE.GIFT_CODE_EMBED
     })
   }
   renderActions(e) {
@@ -203,7 +203,7 @@ class q extends Chunk473749.Component {
     let {
       type: e
     } = this.props;
-    return module === Chunk981631.uaV.CUSTOM_GIFT
+    return e === G.uaV.CUSTOM_GIFT
   }
   renderTitle(e) {
     let {
@@ -281,10 +281,10 @@ class q extends Chunk473749.Component {
     }) : F.intl.string(F.t.Jdnjjj)
   }
   renderPromotionActions() {
-    return (0, Chunk54381.jsx)(Chunk481060.Button, {
+    return (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
-      text: Chunk388032.intl.string(Chunk388032.t["71nuwc"]),
+      text: F.intl.string(F.t["71nuwc"]),
       onClick: this.handleClaimPromotion
     })
   }
@@ -294,17 +294,17 @@ class q extends Chunk473749.Component {
       width: t,
       sku: n
     } = this.props;
-    if (null == module) return null;
-    let i = null != module.giftStyle && !(0, Chunk164670.K$)(require);
-    return (0, Chunk54381.jsx)(Chunk626799.$, {
-      skuId: module.skuId,
+    if (null == e) return null;
+    let i = null != e.giftStyle && !(0, S.K$)(n);
+    return (0, r.jsx)(U.$, {
+      skuId: e.skuId,
       onEmbedClick: this.handleEmbedClick,
-      analyticsSection: Chunk981631.jXE.GIFT_CODE_EMBED,
-      renderCustomActions: () => this.renderActions(module),
-      renderCustomTitle: () => this.renderTitle(module),
-      renderCustomTagline: () => this.renderBody(module),
-      renderCustomMedia: Chunk473749 ? () => this.renderCustomGiftBox(module) : true,
-      width: exports
+      analyticsSection: G.jXE.GIFT_CODE_EMBED,
+      renderCustomActions: () => this.renderActions(e),
+      renderCustomTitle: () => this.renderTitle(e),
+      renderCustomTagline: () => this.renderBody(e),
+      renderCustomMedia: i ? () => this.renderCustomGiftBox(e) : true,
+      width: t
     })
   }
   render() {
@@ -314,25 +314,25 @@ class q extends Chunk473749.Component {
       width: n,
       isSelfGift: i
     } = this.props;
-    if (null != module && null != module.promotion) return (0, Chunk54381.jsx)(Chunk626799.$, {
-      skuId: module.skuId,
+    if (null != e && null != e.promotion) return (0, r.jsx)(U.$, {
+      skuId: e.skuId,
       onEmbedClick: this.handleClaimPromotion,
-      analyticsSection: Chunk981631.jXE.GIFT_CODE_EMBED,
+      analyticsSection: G.jXE.GIFT_CODE_EMBED,
       renderCustomActions: () => this.renderPromotionActions(),
-      renderCustomTitle: () => Chunk388032.intl.string(Chunk388032.t.X4p5uH),
-      renderCustomTagline: () => Chunk388032.intl.string(Chunk388032.t.VIuwD7),
-      width: require
+      renderCustomTitle: () => F.intl.string(F.t.X4p5uH),
+      renderCustomTagline: () => F.intl.string(F.t.VIuwD7),
+      width: n
     });
-    if (null == module || module.revoked)
-      if (exports) return (0, Chunk54381.jsx)(z, {
-        isSelfGift: Chunk473749,
-        width: require
+    if (null == e || e.revoked)
+      if (t) return (0, r.jsx)(z, {
+        isSelfGift: i,
+        width: n
       });
-      else return (0, Chunk54381.jsx)(Chunk568836.OR, {
-        isHorizontal: require >= Chunk568836.aL
+      else return (0, r.jsx)(f.OR, {
+        isHorizontal: n >= f.aL
       });
-    return (0, Chunk884697.mO)(module) ? (0, Chunk54381.jsx)("div", {
-      className: Chunk609626.collectiblesEmbedWrapper,
+    return (0, g.mO)(e) ? (0, r.jsx)("div", {
+      className: B.collectiblesEmbedWrapper,
       children: this.renderEmbed()
     }) : this.renderEmbed()
   }

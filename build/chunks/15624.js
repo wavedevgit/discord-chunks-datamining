@@ -16,7 +16,7 @@ function a() {
 let o = {
   canUIRequestGatewaySocket: i,
   getState: function() {
-    return Chunk451478.Z.isAppFocused() ? "focused" : "unfocused"
+    return r.Z.isAppFocused() ? "focused" : "unfocused"
   },
   useCanUIRequestGatewaySocket: a
 }

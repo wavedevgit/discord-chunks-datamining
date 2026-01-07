@@ -111,7 +111,7 @@ let eh = 30 * Chunk70956.Z.Millis.MINUTE,
 
 function ef() {
   if (es && null == ea.find(e => e.status === J._1z.FOCUSED))
-    for (let e of (es = false, ea = [...ea, ...eu], eu = [], ea.length > 40 && (ea.length = 40), ea)) module.timer.start()
+    for (let e of (es = false, ea = [...ea, ...eu], eu = [], ea.length > 40 && (ea.length = 40), ea)) e.timer.start()
 }
 
 function em() {
@@ -193,16 +193,16 @@ function eE(e) {
 }
 
 function ev() {
-  if (Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.NowPlayingNotification)) returnfalse;
-  let e = Chunk649974.Z.usersPlaying,
+  if (k.Z.isNotificationDisabled(X.n0.NowPlayingNotification)) returnfalse;
+  let e = S.Z.usersPlaying,
     t = new Set,
     n = function() {
       let e = [];
-      for (let t in ec) module.push(...Object.keys(ec[exports]).map(e => e));
-      return module
+      for (let t in ec) e.push(...Object.keys(ec[t]).map(e => e));
+      return e
     }(),
     i = false;
-  for (let [n, r] of Object.entries(module)) i = i || function(e, t) {
+  for (let [n, r] of Object.entries(e)) i = i || function(e, t) {
     var n;
     if (!I.Z.isFriend(e)) returnfalse;
     let i = t.gameId;
@@ -236,20 +236,20 @@ function ev() {
       type: M.kL.GENERIC,
       priority: M.Tu.NORMAL
     })), true
-  }(require, Chunk512722), exports.add(require);
+  }(n, r), t.add(n);
   let r = new Set;
-  for (let e of require) exports.has(module) || Chunk512722.add(module);
-  let l = Chunk610394.Z.isOverlayV3EnabledForPID(Chunk610394.Z.getTargetPID()) || null != Chunk610394.Z.getFocusedPID();
-  for (let e of Chunk512722)
+  for (let e of n) t.has(e) || r.add(e);
+  let l = L.Z.isOverlayV3EnabledForPID(L.Z.getTargetPID()) || null != L.Z.getFocusedPID();
+  for (let e of r)
     if (! function(e) {
         let t = x.Z.getActivities(e);
         if (0 === t.length) returnfalse;
         let n = (0, V.pL)();
         return null != n && null != t.find(e => e.application_id === n.id)
-      }(module) && !l) {
+      }(e) && !l) {
       for (let t in ec) {
-        let n = ec[exports][module];
-        null != require && (require.lastSentTimestamp = null)
+        let n = ec[t][e];
+        null != n && (n.lastSentTimestamp = null)
       }
       i = true
     } return i
@@ -282,13 +282,13 @@ function ex(e, t) {
 }
 class ej extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk199902.Z, Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk435064.Z, Chunk375954.Z, Chunk292959.Z, Chunk649974.Z, Chunk371651.default, Chunk624864.Z, Chunk610394.Z, Chunk158776.Z, Chunk19780.Z, Chunk699516.Z, Chunk944486.Z, Chunk885110.Z, Chunk246946.Z, Chunk594174.default, Chunk979651.Z), this.syncWith([Chunk649974.Z], ev),
+    this.waitFor(O.Z, y.default, c.Z, E.Z, d.Z, v.Z, b.Z, S.Z, R.default, k.Z, L.Z, x.Z, j.Z, I.Z, C.Z, Z.Z, N.Z, w.default, T.Z), this.syncWith([S.Z], ev),
       function() {
-        let e = Chunk944486.Z.getVoiceChannelId(),
-          t = Chunk314897.default.getId(),
-          n = Chunk19780.Z.getMediaSessionId();
-        if (null != module && null != require)
-          for (let i of Chunk358221.Z.getStreamParticipants(module)) i.user.id !== exports && (eS[ex(i.user.id, require)] = Date.now())
+        let e = C.Z.getVoiceChannelId(),
+          t = y.default.getId(),
+          n = j.Z.getMediaSessionId();
+        if (null != e && null != n)
+          for (let i of c.Z.getStreamParticipants(e)) i.user.id !== t && (eS[ex(i.user.id, n)] = Date.now())
       }()
   }
   getNotifications() {
@@ -445,7 +445,7 @@ let eI = new ej(Chunk570140.Z, {
     "manual" === e.clipMethod && ey((0, W.f)(q.intl.string(q.t.NBMK9m)))
   },
   CLIPS_SAVE_CLIP_ERROR: function() {
-    ey((0, Chunk421824.f)(Chunk388032.intl.string(Chunk388032.t["1ZbZuh"])))
+    ey((0, W.f)(q.intl.string(q.t["1ZbZuh"])))
   },
   STREAM_START: function(e) {
     let t = (0, W.y)();

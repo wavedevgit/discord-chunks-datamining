@@ -53,7 +53,7 @@ function s() {
     autoTrackExposure: false
   }), {
     defaultBillingCountryCode: n
-  } = (0, Chunk847903.Z)();
-  return module || exports && "RU" === require
+  } = (0, i.Z)();
+  return e || t && "RU" === n
 }
 let l = a

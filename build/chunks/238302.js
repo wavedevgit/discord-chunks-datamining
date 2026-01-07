@@ -14,13 +14,13 @@ let i = e => {
     })
   },
   a = () => {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "UPDATE_BACKGROUND_GRADIENT_PRESET",
       presetId: null
     })
   },
   o = () => {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "RESET_PREVIEW_CLIENT_THEME"
     })
   }

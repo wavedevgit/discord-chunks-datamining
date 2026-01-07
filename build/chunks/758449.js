@@ -60,7 +60,7 @@ class u extends Chunk81825.Z {
   }
   isExpired() {
     let e = this.maxAge;
-    return !!(module > 0 && i()(this.createdAt).add(module, "seconds").isBefore(Date.now())) || false
+    return !!(e > 0 && i()(this.createdAt).add(e, "seconds").isBefore(Date.now())) || false
   }
   getExpiresAt() {
     return this.maxAge > 0 ? i()(this.createdAt).add(this.maxAge, "seconds").toDate() : 1 / 0

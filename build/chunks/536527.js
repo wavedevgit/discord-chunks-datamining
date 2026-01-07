@@ -19,18 +19,18 @@ let d = (0, Chunk972959.H)(() => ({
     updateTimeout: null
   })),
   _ = (0, Chunk509613.qs)(Chunk313789.n.SYNC_FORCED_COLORS, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.cguiec),
-    useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.GwEVE2, {
-      learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.FORCED_COLORS)
+    useTitle: () => E.intl.string(E.t.cguiec),
+    useSubtitle: () => E.intl.format(E.t.GwEVE2, {
+      learnMoreLink: T.Z.getArticleURL(c.BhN.FORCED_COLORS)
     }),
     useValue: () => {
       var t;
-      let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.syncForcedColors);
-      return (0, Chunk493773.ZP)(() => {
+      let e = (0, i.e7)([r.Z], () => r.Z.syncForcedColors);
+      return (0, l.ZP)(() => {
         d.setState({
-          syncEnabled: Chunk607070.Z.syncForcedColors
+          syncEnabled: r.Z.syncForcedColors
         })
-      }), null != (t = d.useState(t => t.syncEnabled)) ? module : exports
+      }), null != (t = d.useState(t => t.syncEnabled)) ? t : e
     },
     setValue: t => {
       let {
@@ -56,5 +56,5 @@ let d = (0, Chunk972959.H)(() => ({
         updateTimeout: n
       })
     },
-    usePredicate: () => (0, Chunk627845.b)()
+    usePredicate: () => (0, a.b)()
   })

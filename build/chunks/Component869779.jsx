@@ -54,7 +54,7 @@ class k extends Chunk473749.PureComponent {
     D(this.props.section, null, this.props.analyticsLocation)
   }
   componentWillUnmount() {
-    Chunk570140.Z.wait(() => (0, Chunk787014.xv)())
+    s.Z.wait(() => (0, o.xv)())
   }
   componentDidUpdate(e) {
     let {
@@ -83,12 +83,12 @@ class k extends Chunk473749.PureComponent {
       canManageWebhooks: b,
       canUnlinkChannel: x
     } = this.props;
-    return null == Chunk473749 ? null : (0, Chunk54381.jsx)(Chunk503089.ZP, {
-      theme: module,
-      sidebarTheme: exports,
-      section: null != require ? require : Chunk981631.CoT.OVERVIEW,
-      onSetSection: Chunk787014.zc,
-      onClose: Chunk37234.xf,
+    return null == l ? null : (0, i.jsx)(d.ZP, {
+      theme: e,
+      sidebarTheme: t,
+      section: null != n ? n : M.CoT.OVERVIEW,
+      onSetSection: o.zc,
+      onClose: c.xf,
       sections: function(e) {
         let {
           channel: t,
@@ -173,13 +173,13 @@ class k extends Chunk473749.PureComponent {
           predicate: () => s && !t.isModeratorReportChannel()
         }]
       }({
-        channel: Chunk473749,
-        category: Chunk442837,
-        canManageRoles: Chunk570140,
-        canManageChannels: Chunk367907,
-        canDeleteChannels: Chunk685929,
-        canManageWebhooks: Chunk984802,
-        canUnlinkChannel: Chunk665906
+        channel: l,
+        category: r,
+        canManageRoles: s,
+        canManageChannels: h,
+        canDeleteChannels: p,
+        canManageWebhooks: b,
+        canUnlinkChannel: x
       })
     })
   }
@@ -189,29 +189,29 @@ function B() {
   let {
     channel: e,
     analyticsLocation: t
-  } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getProps()), n = (0, Chunk442837.e7)([Chunk388610.Z], () => Chunk388610.Z.getFormState()), l = (0, Chunk442837.e7)([Chunk388610.Z], () => Chunk388610.Z.getSection()), a = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), s = (0, Chunk984802.Ll)(), o = (0, Chunk665906.C7)(module), c = (0, Chunk665906.Xb)(module), {
+  } = (0, r.cj)([O.Z], () => O.Z.getProps()), n = (0, r.e7)([O.Z], () => O.Z.getFormState()), l = (0, r.e7)([O.Z], () => O.Z.getSection()), a = (0, r.e7)([j.Z], () => j.Z.theme), s = (0, b.Ll)(), o = (0, x.C7)(e), c = (0, x.Xb)(e), {
     canManageChannels: d,
     canManageRoles: u,
     canManageWebhooks: h,
     canUnlinkChannel: g
-  } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
-    canManageChannels: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_CHANNELS, module),
-    canManageRoles: null != module && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_ROLES, module),
-    canManageWebhooks: null != module && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, module),
-    canUnlinkChannel: (0, Chunk685929.C)(module, Chunk496675.Z)
-  })), m = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(null == module ? true : module.parent_id));
-  return (0, Chunk54381.jsx)(k, {
-    channel: module,
-    category: Chunk471445,
-    canManageChannels: (null == module ? true : module.isThread()) ? Chunk787014 : Chunk503089,
-    canDeleteChannels: (null == module ? true : module.isThread()) ? Chunk37234 : Chunk503089,
-    canManageRoles: Chunk493544,
-    canManageWebhooks: Chunk367907,
-    canUnlinkChannel: Chunk933557,
-    formState: require,
-    theme: Chunk481060,
-    sidebarTheme: Chunk570140,
-    section: Chunk473749,
-    analyticsLocation: exports
+  } = (0, r.cj)([S.Z], () => ({
+    canManageChannels: S.Z.can(M.Plq.MANAGE_CHANNELS, e),
+    canManageRoles: null != e && S.Z.can(M.Plq.MANAGE_ROLES, e),
+    canManageWebhooks: null != e && S.Z.can(M.Plq.MANAGE_WEBHOOKS, e),
+    canUnlinkChannel: (0, p.C)(e, S.Z)
+  })), m = (0, r.e7)([Z.Z], () => Z.Z.getChannel(null == e ? true : e.parent_id));
+  return (0, i.jsx)(k, {
+    channel: e,
+    category: m,
+    canManageChannels: (null == e ? true : e.isThread()) ? o : d,
+    canDeleteChannels: (null == e ? true : e.isThread()) ? c : d,
+    canManageRoles: u,
+    canManageWebhooks: h,
+    canUnlinkChannel: g,
+    formState: n,
+    theme: a,
+    sidebarTheme: s,
+    section: l,
+    analyticsLocation: t
   })
 }

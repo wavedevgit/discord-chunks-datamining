@@ -7,5 +7,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk793961 = require("./793961.js");
 let u = (0, Chunk509613.k4)(Chunk313789.n.CHAT_MESSAGE_SEARCH_CATEGORY, {
-  buildLayout: () => [Chunk793961.D]
+  buildLayout: () => [s.D]
 })

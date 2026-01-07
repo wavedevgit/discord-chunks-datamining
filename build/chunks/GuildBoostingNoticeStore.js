@@ -9,7 +9,7 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 class c extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk496675.Z), this.syncWith([Chunk496675.Z], Chunk981631.dG4)
+    this.waitFor(o.Z), this.syncWith([o.Z], s.dG4)
   }
   channelNoticePredicate(e, t) {
     return Date.now() - t >= s.Hqc && o.Z.can(s.Plq.MANAGE_GUILD, e)

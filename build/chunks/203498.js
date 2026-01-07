@@ -11,10 +11,10 @@ function i() {
     createGuildApplication: e,
     submitting: t,
     error: n
-  } = (0, Chunk2070.Z)();
+  } = (0, r.Z)();
   return {
     enableGuildMonetizationForTeam: (t, n, r) => e(t, n, r, "guildcr".concat(t.id)),
-    submitting: exports,
-    error: require
+    submitting: t,
+    error: n
   }
 }

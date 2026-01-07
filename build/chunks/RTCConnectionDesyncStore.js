@@ -67,9 +67,9 @@ function S(e) {
 
 function I() {
   var e;
-  let t = Chunk19780.Z.getChannelId();
-  if (null == exports) returnfalse;
-  let n = null == (e = Chunk592125.Z.getChannel(exports)) ? true : module.getGuildId(),
+  let t = f.Z.getChannelId();
+  if (null == t) returnfalse;
+  let n = null == (e = d.Z.getChannel(t)) ? true : e.getGuildId(),
     r = false;
   return O.forEach(e => {
     if (null != _.Z.getVoiceStateForChannel(t, e)) return void O.delete(e);
@@ -131,7 +131,7 @@ function R(e) {
 }
 class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk979651.Z, Chunk594174.default, Chunk592125.Z, Chunk19780.Z), this.syncWith([Chunk594174.default], I)
+    this.waitFor(_.Z, p.default, d.Z, f.Z), this.syncWith([p.default], I)
   }
   get desyncedVoiceStatesCount() {
     return b.size()

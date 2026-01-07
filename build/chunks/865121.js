@@ -14,8 +14,8 @@ let T = (0, Chunk509613.m7)(Chunk313789.n.LEGACY_SETTINGS_SIDEBAR_ITEM, {
   useTitle: () => "Open Legacy Settings",
   icon: Chunk657707.ewm,
   onClick: () => {
-    (0, Chunk342386.default)(), Chunk230711.Z.open()
+    (0, o.default)(), l.Z.open()
   },
-  usePredicate: () => (0, Chunk526665.NT)("LegacySettingsSidebarItem") || Chunk906467.Z.isDeveloper,
+  usePredicate: () => (0, a.NT)("LegacySettingsSidebarItem") || u.Z.isDeveloper,
   buildLayout: () => []
 })

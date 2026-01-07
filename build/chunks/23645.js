@@ -22,7 +22,7 @@ class l extends Chunk473749.Component {
     let {
       fileContents: e
     } = this.props;
-    return "function" == typeof module && (e = module()), module
+    return "function" == typeof e && (e = e()), e
   }
   downloadNative(e, t) {
     a.Z.fileManager.saveWithDialog(e, t)
@@ -36,8 +36,8 @@ class l extends Chunk473749.Component {
   render() {
     let {
       children: e
-    } = this.props, t = Chunk473749.Children.only(module);
-    return Chunk473749.cloneElement(exports, {
+    } = this.props, t = r.Children.only(e);
+    return r.cloneElement(t, {
       onClick: this.handleFileDownload
     })
   }

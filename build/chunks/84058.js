@@ -26,7 +26,7 @@ function r(e) {
 }
 
 function l() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_INIT"
   })
 }

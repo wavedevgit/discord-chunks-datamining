@@ -37,11 +37,11 @@ class p extends(r = Chunk473749.PureComponent) {
       direction: e,
       className: t
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.wj7, {
+    return (0, i.jsx)(l.wj7, {
       size: "md",
       color: "currentColor",
-      className: s()(exports, {
-        [f[module]]: true
+      className: s()(t, {
+        [f[e]]: true
       })
     })
   }

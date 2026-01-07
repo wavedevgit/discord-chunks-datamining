@@ -26,7 +26,7 @@ class o {
   }
   getDateWithAdjustedTimezone() {
     let e = new Date(this.instant);
-    return null !== this.timezoneOffset && module.setMinutes(module.getMinutes() - this.getSystemTimezoneAdjustmentMinute(this.instant)), module
+    return null !== this.timezoneOffset && e.setMinutes(e.getMinutes() - this.getSystemTimezoneAdjustmentMinute(this.instant)), e
   }
   getSystemTimezoneAdjustmentMinute(e, t) {
     (!e || 0 > e.getTime()) && (e = new Date);
@@ -79,9 +79,9 @@ class s {
   }
   clone() {
     let e = new s(this.reference);
-    for (let t in module.knownValues = {}, module.impliedValues = {}, this.knownValues) module.knownValues[exports] = this.knownValues[exports];
-    for (let t in this.impliedValues) module.impliedValues[exports] = this.impliedValues[exports];
-    return module
+    for (let t in e.knownValues = {}, e.impliedValues = {}, this.knownValues) e.knownValues[t] = this.knownValues[t];
+    for (let t in this.impliedValues) e.impliedValues[t] = this.impliedValues[t];
+    return e
   }
   isOnlyDate() {
     return !this.isCertain("hour") && !this.isCertain("minute") && !this.isCertain("second")
@@ -97,7 +97,7 @@ class s {
   }
   isValidDate() {
     let e = this.dateWithoutTimezoneAdjustment();
-    return module.getFullYear() === this.get("year") && module.getMonth() === this.get("month") - 1 && module.getDate() === this.get("day") && (null == this.get("hour") || module.getHours() == this.get("hour")) && (null == this.get("minute") || module.getMinutes() == this.get("minute"))
+    return e.getFullYear() === this.get("year") && e.getMonth() === this.get("month") - 1 && e.getDate() === this.get("day") && (null == this.get("hour") || e.getHours() == this.get("hour")) && (null == this.get("minute") || e.getMinutes() == this.get("minute"))
   }
   toString() {
     return `[ParsingComponents {
@@ -108,8 +108,8 @@ class s {
   }
   date() {
     let e = this.dateWithoutTimezoneAdjustment(),
-      t = this.reference.getSystemTimezoneAdjustmentMinute(module, this.get("timezoneOffset"));
-    return new Date(module.getTime() + 6e4 * exports)
+      t = this.reference.getSystemTimezoneAdjustmentMinute(e, this.get("timezoneOffset"));
+    return new Date(e.getTime() + 6e4 * t)
   }
   addTag(e) {
     return this._tags.add(e), this
@@ -123,7 +123,7 @@ class s {
   }
   dateWithoutTimezoneAdjustment() {
     let e = new Date(this.get("year"), this.get("month") - 1, this.get("day"), this.get("hour"), this.get("minute"), this.get("second"), this.get("millisecond"));
-    return module.setFullYear(this.get("year")), module
+    return e.setFullYear(this.get("year")), e
   }
 }
 class l {
@@ -138,7 +138,7 @@ class l {
   }
   clone() {
     let e = new l(this.reference, this.index, this.text);
-    return module.start = this.start ? this.start.clone() : null, module.end = this.end ? this.end.clone() : null, module
+    return e.start = this.start ? this.start.clone() : null, e.end = this.end ? this.end.clone() : null, e
   }
   date() {
     return this.start.date()
@@ -152,11 +152,11 @@ class l {
   tags() {
     let e = new Set(this.start.tags());
     if (this.end)
-      for (let t of this.end.tags()) module.add(exports);
-    return module
+      for (let t of this.end.tags()) e.add(t);
+    return e
   }
   toString() {
     let e = Array.from(this.tags()).sort();
-    return `[ParsingResult {index: ${this.index}, text: '${this.text}', tags: ${JSON.stringify(module)} ...}]`
+    return `[ParsingResult {index: ${this.index}, text: '${this.text}', tags: ${JSON.stringify(e)} ...}]`
   }
 }

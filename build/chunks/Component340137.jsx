@@ -46,7 +46,7 @@ function N(e) {
     onClick: l,
     selectedOverride: o = false,
     popoutProps: s,
-    ref: h,
+    ref: m,
     focusSectionProps: b
   } = e, [O, v] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
     backForwardButtons: x,
@@ -63,7 +63,7 @@ function N(e) {
     badgeType: R
   } = (0, E.h6)({
     isSelected: j
-  }), D = (0, m.isDesktop)() && x, M = (0, g.A)(), k = (0, m.isMac)() ? C[M] : D ? S[M] : T[M];
+  }), D = (0, h.isDesktop)() && x, M = (0, g.A)(), k = (0, h.isMac)() ? C[M] : D ? S[M] : T[M];
   return (0, r.jsxs)(d.Kqy, {
     gap: 0,
     direction: "horizontal",
@@ -92,7 +92,7 @@ function N(e) {
         }
         return e
       }({
-        innerRef: h,
+        innerRef: m,
         className: a()(I.clickableContainer, {
           [I.withHoverHighlight]: Z
         })
@@ -137,18 +137,18 @@ function N(e) {
 function j() {
   let {
     focusSectionProps: e
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk473749.useRef(null), {
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = i.useRef(null), {
     notificationCenterVariant: n
-  } = (0, Chunk821020.pN)({
+  } = (0, b.pN)({
     location: "NotificationsInboxButton"
-  }), l = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()), a = Chunk473749.useMemo(() => Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != Chunk120356 ? Chunk120356 : true), [Chunk120356]), c = (0, Chunk128008.mv)();
-  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk54381.jsx)(N, {
+  }), l = (0, s.e7)([m.Z], () => m.Z.getChannelId()), a = i.useMemo(() => v.Z5c.CHANNEL(v.STv, null != l ? l : true), [l]), c = (0, E.mv)();
+  return n === b.jP.SIDEBAR ? (0, r.jsx)(N, {
     onClick: () => {
-      Chunk212605(), (0, Chunk948789.uL)(a)
+      c(), (0, o.uL)(a)
     },
-    focusSectionProps: module
-  }) : require === Chunk821020.jP.POPOUT ? (0, Chunk54381.jsx)(Chunk961040.Z, {
-    targetElementRef: exports,
+    focusSectionProps: e
+  }) : n === b.jP.POPOUT ? (0, r.jsx)(O.Z, {
+    targetElementRef: t,
     popoutPosition: "bottom",
     popoutAlign: "left",
     spacing: 2,

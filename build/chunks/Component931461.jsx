@@ -16,26 +16,26 @@ var Chunk168107 = require("./168107.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
-  let e = (0, Chunk925513.v6)(),
+  let e = (0, o.v6)(),
     t = () => {
-      window.open(Chunk63063.Z.getArticleURL(module), "_blank")
+      window.open(l.Z.getArticleURL(e), "_blank")
     };
-  return (0, Chunk54381.jsx)(Chunk907995.f, {
-    label: Chunk388032.t.EUo0yj,
-    labelHook: exports,
-    noticeType: Chunk484710.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
+  return (0, r.jsx)(s.f, {
+    label: u.t.EUo0yj,
+    labelHook: t,
+    noticeType: c.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
   })
 }
 
 function f() {
   let e = () => {
-    Chunk168107.Z.showAgeVerificationGetStartedModal({
-      entryPoint: Chunk480916.cU.CONTENT_AND_SOCIAL_NOTICE
+    i.Z.showAgeVerificationGetStartedModal({
+      entryPoint: a.cU.CONTENT_AND_SOCIAL_NOTICE
     })
   };
-  return (0, Chunk54381.jsx)(Chunk907995.f, {
-    label: Chunk388032.t.OX4ybh,
-    labelHook: module,
-    noticeType: Chunk484710.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
+  return (0, r.jsx)(s.f, {
+    label: u.t.OX4ybh,
+    labelHook: e,
+    noticeType: c.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
   })
 }

@@ -9,5 +9,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk400639 = require("./400639.js"),
   Chunk50052 = require("./50052.js");
 let a = (0, Chunk509613.k4)(Chunk313789.n.STREAMER_MODE_CATEGORY, {
-  buildLayout: () => [Chunk400639.E, Chunk30644.u, Chunk50052.Q]
+  buildLayout: () => [u.E, s.u, r.Q]
 })

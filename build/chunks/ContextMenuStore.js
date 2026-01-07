@@ -41,7 +41,7 @@ class p extends(r = Chunk442837.ZP.Store) {
     return c
   }
   close() {
-    return !!this.isOpen() && (Chunk585483.S.dispatch(Chunk981631.CkL.CONTEXT_MENU_CLOSE), true)
+    return !!this.isOpen() && (o.S.dispatch(s.CkL.CONTEXT_MENU_CLOSE), true)
   }
 }
 l(p, "displayName", "ContextMenuStore");

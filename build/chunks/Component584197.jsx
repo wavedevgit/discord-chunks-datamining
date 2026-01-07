@@ -19,11 +19,11 @@ let E = () => {
     setConnectionStatus: e,
     connect: n,
     disconnect: E
-  } = (0, Chunk773275.xf)(), d = [Chunk5900.Ij.CONNECTED, Chunk5900.Ij.INITIALIZING].includes(module), _ = (0, Chunk473749.useCallback)(() => d ? (exports(Chunk5900.Ij.DISCONNECTED), (0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_TOGGLED, {
+  } = (0, S.xf)(), d = [T.Ij.CONNECTED, T.Ij.INITIALIZING].includes(t), _ = (0, l.useCallback)(() => d ? (e(T.Ij.DISCONNECTED), (0, u.j)(c.rMx.NITRO_WARP_TOGGLED, {
     is_connecting: false
-  }), E()) : ((0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_TOGGLED, {
+  }), E()) : ((0, u.j)(c.rMx.NITRO_WARP_TOGGLED, {
     is_connecting: true
-  }), exports(Chunk5900.Ij.INITIALIZING), require().then(t => {
+  }), e(T.Ij.INITIALIZING), n().then(t => {
     t || e(T.Ij.DISCONNECTED)
   }).catch(t => {
     a.Z.captureException(t, {
@@ -34,9 +34,9 @@ let E = () => {
       error_message: t instanceof Error ? t.message : JSON.stringify(t),
       error_source: o.D.PRIVATE_BROWSING_PERK_CONNECT
     }), e(T.Ij.DISCONNECTED)
-  })), [d, E, require, exports]);
-  return (0, Chunk54381.jsx)("div", {
-    children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
+  })), [d, E, n, e]);
+  return (0, i.jsx)("div", {
+    children: (0, i.jsx)(s.rsf, {
       onChange: _,
       checked: d
     })

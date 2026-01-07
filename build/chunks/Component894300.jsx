@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c() {
-  (0, Chunk865066.sU)("overlay-settings")
+  (0, o.sU)("overlay-settings")
 }
 
 function u(e) {

@@ -15,6 +15,6 @@ t.prototype = {
   },
   get: function() {
     var e = this.head;
-    if (module) return null === (this.head = module.next) && (this.tail = null), module.item
+    if (e) return null === (this.head = e.next) && (this.tail = null), e.item
   }
 }, module.exports = t

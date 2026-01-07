@@ -11,9 +11,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.APPEARANCE_DISPLAY_COMPACT_AVATARS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["//vhWi"]),
-  usePredicate: () => Chunk695346.jU.useSetting(),
-  useValue: () => !(0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.displayCompactAvatars),
+  useTitle: () => o.intl.string(o.t["//vhWi"]),
+  usePredicate: () => r.jU.useSetting(),
+  useValue: () => !(0, i.e7)([u.ZP], () => u.ZP.displayCompactAvatars),
   setValue: t => {
     l.ZP.updatedUnsyncedSettings({
       displayCompactAvatars: !t

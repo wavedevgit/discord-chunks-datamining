@@ -32,7 +32,7 @@ function h(e) {
 class g extends Chunk912095.Z {
   destroy() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    super.destroy(module), this.pc.close()
+    super.destroy(e), this.pc.close()
   }
   setCodecs(e, t, n) {
     var r, i, a;

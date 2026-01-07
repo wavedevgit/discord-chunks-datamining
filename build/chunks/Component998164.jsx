@@ -50,24 +50,24 @@ function b(e, t) {
 let p = [];
 
 function h() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk551952.actionItemContainer,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk551952.actionItem,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk551952.actionItemEmojiWrapper,
-        children: (0, Chunk54381.jsx)(Chunk481060.snC, {
+  return (0, r.jsx)("div", {
+    className: f.actionItemContainer,
+    children: (0, r.jsxs)("div", {
+      className: f.actionItem,
+      children: [(0, r.jsx)("div", {
+        className: f.actionItemEmojiWrapper,
+        children: (0, r.jsx)(a.snC, {
           size: "custom",
           color: "currentColor",
           height: 20,
           width: 22
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk551952.actionItemText,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)("div", {
+        className: f.actionItemText,
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: Chunk388032.intl.string(Chunk388032.t["K/i3iQ"])
+          children: g.intl.string(g.t["K/i3iQ"])
         })
       })]
     })

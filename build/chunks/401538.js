@@ -11,23 +11,23 @@ function a() {
   return [{
     type: "voiceChannel",
     name: "ml-audio-classification",
-    isEnabled: Chunk924557.NS,
-    importHandler: () => require.e("18683").then(require.bind(require, 372878))
+    isEnabled: r.NS,
+    importHandler: () => n.e("18683").then(n.bind(n, 372878))
   }, {
     type: "voiceChannel",
     name: "distributed-clipping",
-    isEnabled: Chunk924557.NS,
-    importHandler: () => require.e("7279").then(require.bind(require, 549379))
+    isEnabled: r.NS,
+    importHandler: () => n.e("7279").then(n.bind(n, 549379))
   }, {
     type: "application",
     name: "steam-timeline",
-    isEnabled: Chunk924557.NS,
-    importHandler: () => require.e("49947").then(require.bind(require, 656791))
+    isEnabled: r.NS,
+    importHandler: () => n.e("49947").then(n.bind(n, 656791))
   }, {
     type: "application",
     name: "league-of-legends",
-    applicationId: Chunk597796.D,
-    isEnabled: Chunk924557.NS,
-    importHandler: () => require.e("93234").then(require.bind(require, 654155))
+    applicationId: i.D,
+    isEnabled: r.NS,
+    importHandler: () => n.e("93234").then(n.bind(n, 654155))
   }]
 }

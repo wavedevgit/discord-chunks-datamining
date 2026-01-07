@@ -19,10 +19,10 @@ function s(e, t, n) {
 }
 class l extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
+    i.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
+    i.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
   }
   constructor(...e) {
     super(...e), s(this, "handleConnectionOpen", e => {

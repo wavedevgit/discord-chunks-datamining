@@ -35,16 +35,16 @@ class p {
     }), this._pending.clear();
     let t = [],
       n = [];
-    module.forEach(e => {
+    e.forEach(e => {
       c.Z.didFetchingApplicationFail(e) ? n.push(e) : t.push(e)
-    }), exports.length > 0 && a().chunk(exports, d).forEach(e => {
+    }), t.length > 0 && a().chunk(t, d).forEach(e => {
       l.ZP.fetchApplications(e, false)
-    }), require.length > 0 && a().chunk(require, d).forEach(e => {
+    }), n.length > 0 && a().chunk(n, d).forEach(e => {
       l.ZP.fetchApplications(e, true)
     })
   }
   constructor() {
-    u(this, "_lastFetchedAttempted", new Map), u(this, "_pending", new Set), u(this, "_flushHandler", new Chunk846519.sW(32, () => this._flush()))
+    u(this, "_lastFetchedAttempted", new Map), u(this, "_pending", new Set), u(this, "_flushHandler", new s.sW(32, () => this._flush()))
   }
 }
 let _ = new p;

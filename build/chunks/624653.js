@@ -9,9 +9,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk231338 = require("./231338.js");
 
 function a() {
-  let e = Chunk473749.useContext(o);
-  if (null == module) throw Error("useModalContext must be used within a ModalContext.Provider");
-  return module
+  let e = r.useContext(o);
+  if (null == e) throw Error("useModalContext must be used within a ModalContext.Provider");
+  return e
 }
 let o = Chunk473749.createContext({
   dismissable: true,

@@ -13,18 +13,18 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.wf)(Chunk313789.n.WINDOWS_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.ZkDZov),
-    buildLayout: () => [Chunk775793.R]
+    useTitle: () => S.intl.string(S.t.ZkDZov),
+    buildLayout: () => [o.R]
   }),
   E = (0, Chunk509613.wf)(Chunk313789.n.WINDOWS_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.ZkDZov),
+    useTitle: () => S.intl.string(S.t.ZkDZov),
     StronglyDiscouragedCustomComponent: Chunk200645.Z,
     buildLayout: () => []
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.WINDOWS_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.ZkDZov),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("WindowsPanel") ? true : Chunk726985.s6.WINDOW_SETTINGS,
+    useTitle: () => S.intl.string(S.t.ZkDZov),
+    getLegacySearchKey: () => (0, r.Gl)("WindowsPanel") ? true : T.s6.WINDOW_SETTINGS,
     icon: Chunk657707.pzj,
-    usePredicate: () => Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)(),
-    buildLayout: () => [(0, Chunk526665.Gl)("WindowsPanel") ? c : E]
+    usePredicate: () => s.isPlatformEmbedded && (0, s.isWindows)(),
+    buildLayout: () => [(0, r.Gl)("WindowsPanel") ? c : E]
   })

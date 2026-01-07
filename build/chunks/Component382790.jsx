@@ -44,24 +44,24 @@ class E extends(i = Chunk473749.PureComponent) {
       locked: t,
       contained: n,
       className: i
-    } = this.props, a = null != module ? (0, Chunk54381.jsx)(Chunk178528.Z, {
-      guildId: module,
+    } = this.props, a = null != e ? (0, r.jsx)(h.Z, {
+      guildId: e,
       onDragStart: this.onDragStart
-    }, module) : (0, Chunk54381.jsx)(Chunk711553.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
+    }, e) : (0, r.jsx)(b.Z, {
+      title: m.intl.string(m.t.YUU0RF),
       renderSettings: O,
       onDragStart: this.onDragStart,
-      children: (0, Chunk54381.jsx)(Chunk483962.Z, {})
-    }), s = require ? "div" : Chunk518084.ZP;
-    return (0, Chunk54381.jsxs)(Chunk120356, {
-      className: o()(Chunk546753.base, {
-        [Chunk546753.widget]: !require
+      children: (0, r.jsx)(g.Z, {})
+    }), s = n ? "div" : f.ZP;
+    return (0, r.jsxs)(s, {
+      className: o()(y.base, {
+        [y.widget]: !n
       }, i),
-      children: [(0, Chunk54381.jsx)(Chunk416568.Z, {
+      children: [(0, r.jsx)(d.Z, {
         isOverlay: true,
         disableAppDownload: true,
-        isVisible: !exports
-      }), Chunk473749]
+        isVisible: !t
+      }), a]
     })
   }
   constructor(...e) {
@@ -77,5 +77,5 @@ v(E, "defaultProps", {
   contained: false
 });
 let x = Chunk442837.ZP.connectStores([Chunk914010.Z], () => ({
-  selectedGuildId: Chunk914010.Z.getGuildId()
+  selectedGuildId: u.Z.getGuildId()
 }))(E)

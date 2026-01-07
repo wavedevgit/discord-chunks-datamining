@@ -48,7 +48,7 @@ function O(e) {
 }
 
 function v() {
-  (0, Chunk239091.Zy)(), (0, Chunk895886.default)()
+  (0, m.Zy)(), (0, l.default)()
 }
 
 function S(e, t, n) {
@@ -187,48 +187,48 @@ let I = {
       rejectWithError: false
     }),
     fetchRelationships() {
-      Chunk544891.tn.get({
-        url: Chunk981631.ANM.USER_RELATIONSHIPS(),
+      r.tn.get({
+        url: h.ANM.USER_RELATIONSHIPS(),
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => a.Z.dispatch({
         type: "LOAD_RELATIONSHIPS_SUCCESS",
         relationships: e.body
-      }), () => Chunk570140.Z.dispatch({
+      }), () => a.Z.dispatch({
         type: "LOAD_RELATIONSHIPS_FAILURE"
       }))
     },
     confirmClearPendingRelationships(e) {
       (0, s.Z)(e)
     },
-    clearPendingRelationships: () => Chunk544891.tn.del({
-      url: Chunk981631.ANM.USER_RELATIONSHIPS(),
+    clearPendingRelationships: () => r.tn.del({
+      url: h.ANM.USER_RELATIONSHIPS(),
       query: {
-        relationship_type: Chunk981631.OGo.PENDING_INCOMING
+        relationship_type: h.OGo.PENDING_INCOMING
       },
       rejectWithError: false
     }).then(() => {
-      Chunk570140.Z.dispatch({
+      a.Z.dispatch({
         type: "RELATIONSHIP_PENDING_INCOMING_REMOVED"
       })
     }).catch(() => {
-      Chunk780384.uv.announce(Chunk388032.intl.string(Chunk388032.t.n6Jo3E))
+      i.uv.announce(E.intl.string(E.t.n6Jo3E))
     }),
-    clearPendingSpamAndIgnored: () => Chunk544891.tn.del({
-      url: Chunk981631.ANM.USER_RELATIONSHIPS(),
+    clearPendingSpamAndIgnored: () => r.tn.del({
+      url: h.ANM.USER_RELATIONSHIPS(),
       query: {
-        relationship_type: Chunk981631.OGo.PENDING_INCOMING
+        relationship_type: h.OGo.PENDING_INCOMING
       },
       body: {
-        filters: [Chunk858380.G.SPAM, Chunk858380.G.IGNORED]
+        filters: [g.G.SPAM, g.G.IGNORED]
       },
       rejectWithError: false
     }).then(() => {
-      Chunk570140.Z.dispatch({
+      a.Z.dispatch({
         type: "RELATIONSHIP_PENDING_INCOMING_REMOVED"
       })
     }).catch(() => {
-      Chunk780384.uv.announce(Chunk388032.intl.string(Chunk388032.t.n6Jo3E))
+      i.uv.announce(E.intl.string(E.t.n6Jo3E))
     }),
     ignoreUser: (e, t, n) => r.tn.put({
       url: h.ANM.IGNORE_USER(e),

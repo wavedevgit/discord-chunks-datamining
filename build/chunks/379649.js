@@ -24,7 +24,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = () => Math.floor(Chunk643191.v0 + Chunk643191.Sv.now()),
+let s = () => Math.floor(a.v0 + a.Sv.now()),
   l = new class {
     now() {
       return s()
@@ -67,14 +67,14 @@ class u {
   elapsed() {
     if (null == this.startTime) return c.fromMilliseconds(this.timePassed);
     let e = this.timestampProducer.now() - this.startTime;
-    return c.fromMilliseconds(this.timePassed + module)
+    return c.fromMilliseconds(this.timePassed + e)
   }
   isRunning() {
     return null != this.startTime
   }
   static startNew() {
     let e = new u;
-    return module.start(), module
+    return e.start(), e
   }
   constructor(e = l) {
     o(this, "timestampProducer", true), o(this, "startTime", true), o(this, "timePassed", true), this.timestampProducer = e, this.startTime = true, this.timePassed = 0

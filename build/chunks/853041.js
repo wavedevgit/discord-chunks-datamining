@@ -9,6 +9,6 @@ var Chunk442837 = require("./442837.js"),
 function l() {
   return {
     value: 0,
-    showDot: (0, Chunk442837.e7)([Chunk144725.Z], () => Chunk144725.Z.hasNewContent(), [])
+    showDot: (0, r.e7)([i.Z], () => i.Z.hasNewContent(), [])
   }
 }

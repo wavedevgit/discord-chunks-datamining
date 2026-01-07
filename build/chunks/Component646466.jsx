@@ -53,56 +53,56 @@ let h = Chunk473749.createContext({
     value: null
   },
   v = () => {
-    (0, Chunk481060.nfh)(Chunk637443.g) ? (0, Chunk481060.Mr3)(Chunk637443.g) : (0, Chunk481060.ZDy)(async () => {
+    (0, l.nfh)(o.g) ? (0, l.Mr3)(o.g) : (0, l.ZDy)(async () => {
       let {
         ShopAssetsPreviewInstructionModal: e
-      } = await Promise.resolve().then(require.bind(require, 637443));
+      } = await Promise.resolve().then(n.bind(n, 637443));
       return t => (0, a.jsx)(e, f({}, t))
     }, {
-      modalKey: Chunk637443.g,
-      onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.g)
+      modalKey: o.g,
+      onCloseRequest: () => (0, l.Mr3)(o.g)
     })
   },
   j = () => {
-    (0, Chunk481060.nfh)(Chunk637443.c) ? (0, Chunk481060.Mr3)(Chunk637443.c) : (0, Chunk481060.ZDy)(async () => {
+    (0, l.nfh)(o.c) ? (0, l.Mr3)(o.c) : (0, l.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
-      } = await Promise.resolve().then(require.bind(require, 637443));
+      } = await Promise.resolve().then(n.bind(n, 637443));
       return t => (0, a.jsx)(e, f({}, t))
     }, {
-      modalKey: Chunk637443.c,
-      onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.c)
+      modalKey: o.c,
+      onCloseRequest: () => (0, l.Mr3)(o.c)
     })
   },
   C = () => {
-    let e = (0, Chunk373071.lb)(),
+    let e = (0, s.lb)(),
       {
         previewProfileEffectSkuId: t,
         setPreviewProfileEffectSkuId: n
-      } = (0, Chunk619899.N9)(),
-      o = Chunk473749.useMemo(() => [b, ...module.map(e => ({
+      } = (0, c.N9)(),
+      o = r.useMemo(() => [b, ...e.map(e => ({
         label: e.name,
         value: e.skuId
-      }))], [module]);
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk414648.previewSelector,
-      children: [(0, Chunk54381.jsx)(Chunk481060.LZC, {
+      }))], [e]);
+    return (0, a.jsxs)("div", {
+      className: p.previewSelector,
+      children: [(0, a.jsx)(l.LZC, {
         size: 16
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk414648.headingContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, a.jsxs)("div", {
+        className: p.headingContainer,
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-md/bold",
           children: "Preview Profile Effect"
-        }), (0, Chunk54381.jsx)(Chunk481060.hU, {
+        }), (0, a.jsx)(l.hU, {
           variant: "icon-only",
           size: "sm",
           onClick: j,
-          icon: Chunk481060.idN,
+          icon: l.idN,
           "aria-label": "Open PFX preview instructions"
         })]
-      }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-        options: Chunk637443,
-        value: exports,
+      }), (0, a.jsx)(i.y6, {
+        options: o,
+        value: t,
         maxVisibleItems: 30,
         onChange: e => n(e)
       })]
@@ -112,22 +112,22 @@ let h = Chunk473749.createContext({
     let {
       previewAvatarDecorationSkuId: e,
       setPreviewAvatarDecorationSkuId: t
-    } = (0, Chunk619899.N9)(), {
+    } = (0, c.N9)(), {
       avatarDecorationAssets: n
-    } = (0, Chunk619899.xq)(), s = Chunk473749.useMemo(() => [g, ...require.map(e => ({
+    } = (0, c.xq)(), s = r.useMemo(() => [g, ...n.map(e => ({
       label: e.name,
       value: e.name
-    }))], [require]);
-    return 0 === require.length ? null : (0, Chunk54381.jsxs)("div", {
-      className: Chunk414648.previewSelector,
-      children: [(0, Chunk54381.jsx)(Chunk481060.LZC, {
+    }))], [n]);
+    return 0 === n.length ? null : (0, a.jsxs)("div", {
+      className: p.previewSelector,
+      children: [(0, a.jsx)(l.LZC, {
         size: 16
-      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, a.jsx)(l.Heading, {
         variant: "heading-md/bold",
         children: "Preview Avatar Decorations"
-      }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-        options: Chunk373071,
-        value: module,
+      }), (0, a.jsx)(i.y6, {
+        options: s,
+        value: e,
         maxVisibleItems: 30,
         onChange: e => t(e)
       })]
@@ -216,44 +216,44 @@ let h = Chunk473749.createContext({
       validationComplete: n,
       warnings: i,
       errors: s
-    } = (0, Chunk206878.g)(), o = Object.entries(Chunk373071), c = Object.entries(Chunk199849), d = Chunk637443.length > 0, u = Chunk619899.length > 0, {
+    } = (0, m.g)(), o = Object.entries(s), c = Object.entries(i), d = o.length > 0, u = c.length > 0, {
       setDropHandler: f
-    } = Chunk473749.useContext(h), x = Chunk473749.useCallback(n => {
+    } = r.useContext(h), x = r.useCallback(n => {
       t(), e(n)
-    }, [module, exports]);
-    return Chunk473749.useEffect(() => {
+    }, [e, t]);
+    return r.useEffect(() => {
       f(x)
-    }, [x, f]), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [require ? (0, Chunk54381.jsxs)("div", {
-        className: Chunk414648.validationSummary,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    }, [x, f]), (0, a.jsxs)(a.Fragment, {
+      children: [n ? (0, a.jsxs)("div", {
+        className: p.validationSummary,
+        children: [(0, a.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: Chunk18868 ? "text-feedback-critical" : "text-default",
-          children: "".concat(Chunk637443.length, " errors")
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          color: d ? "text-feedback-critical" : "text-default",
+          children: "".concat(o.length, " errors")
+        }), (0, a.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: Chunk281598 ? "text-feedback-warning" : "text-default",
-          children: "".concat(Chunk619899.length, " warnings")
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          color: u ? "text-feedback-warning" : "text-default",
+          children: "".concat(c.length, " warnings")
+        }), (0, a.jsx)(l.Button, {
           variant: "primary",
           size: "sm",
-          onClick: exports,
+          onClick: t,
           text: "Reset"
         })]
-      }) : (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }) : (0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Drop asset folder to validate."
-      }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+      }), (0, a.jsx)(l.LZC, {
         size: 16
-      }), Chunk18868 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), d && (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-lg/bold",
           children: "Errors"
-        }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+        }), (0, a.jsx)(l.LZC, {
           size: 8
-        }), (0, Chunk54381.jsx)("ul", {
-          className: Chunk414648.validationIssuesList,
-          children: Chunk637443.map((e, t) => {
+        }), (0, a.jsx)("ul", {
+          className: p.validationIssuesList,
+          children: o.map((e, t) => {
             let [n, r] = e;
             return (0, a.jsxs)("li", {
               children: [(0, a.jsx)(l.Text, {
@@ -273,15 +273,15 @@ let h = Chunk473749.createContext({
             }, "".concat(n, "-").concat(t))
           })
         })]
-      }), Chunk281598 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), u && (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-lg/bold",
           children: "Warnings"
-        }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+        }), (0, a.jsx)(l.LZC, {
           size: 8
-        }), (0, Chunk54381.jsx)("ul", {
-          className: Chunk414648.validationIssuesList,
-          children: Object.entries(Chunk199849).map((e, t) => {
+        }), (0, a.jsx)("ul", {
+          className: p.validationIssuesList,
+          children: Object.entries(i).map((e, t) => {
             let [n, r] = e;
             return (0, a.jsxs)("li", {
               children: [(0, a.jsx)(l.Text, {
@@ -309,64 +309,64 @@ let h = Chunk473749.createContext({
       previewEnabled: e,
       setPreviewEnabled: t,
       clearAssets: n
-    } = (0, Chunk619899.N9)(), {
+    } = (0, c.N9)(), {
       ignoredFilenames: i,
       clearAssets: s,
       clearIgnoredFilenames: o,
       processAndUpsertAssets: d
-    } = (0, Chunk281598.hm)(), {
+    } = (0, u.hm)(), {
       setDropHandler: m
-    } = Chunk473749.useContext(h), f = Chunk473749.useCallback(e => {
+    } = r.useContext(h), f = r.useCallback(e => {
       n(), d(e)
-    }, [Chunk18868, require]);
-    return Chunk473749.useEffect(() => {
-      Chunk206878(f)
-    }, [f, Chunk206878]), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    }, [d, n]);
+    return r.useEffect(() => {
+      m(f)
+    }, [f, m]), (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk414648.previewToggleContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          checked: module,
+      }), (0, a.jsxs)("div", {
+        className: p.previewToggleContainer,
+        children: [(0, a.jsx)(l.rsf, {
+          checked: e,
           onChange: e => t(e)
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        }), (0, a.jsx)(l.Text, {
           variant: "text-md/normal",
           children: "Enable Preview"
-        }), (0, Chunk54381.jsx)(Chunk481060.hU, {
+        }), (0, a.jsx)(l.hU, {
           variant: "icon-only",
           size: "sm",
           onClick: v,
-          icon: Chunk481060.idN,
+          icon: l.idN,
           "aria-label": "Open preview instructions"
         })]
-      }), (0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)(y, {}), (0, Chunk54381.jsx)(_, {
-        clearAssets: Chunk373071,
-        clearIgnoredFiles: Chunk637443
-      }), (0, Chunk54381.jsx)(S, {
-        ignoredFiles: Chunk199849,
-        handleClearIgnoredFiles: Chunk637443
+      }), (0, a.jsx)(C, {}), (0, a.jsx)(y, {}), (0, a.jsx)(_, {
+        clearAssets: s,
+        clearIgnoredFiles: o
+      }), (0, a.jsx)(S, {
+        ignoredFiles: i,
+        handleClearIgnoredFiles: o
       })]
     })
   },
   O = () => {
-    let [e, t] = Chunk473749.useState("preview");
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk414648.container,
-      children: [(0, Chunk54381.jsx)(Chunk481060.sY7, {
+    let [e, t] = r.useState("preview");
+    return (0, a.jsxs)("div", {
+      className: p.container,
+      children: [(0, a.jsx)(l.sY7, {
         options: x,
-        value: module,
+        value: e,
         onChange: e => {
           let {
             value: n
           } = e;
           return t(n)
         },
-        className: Chunk414648.panelModeControl,
-        optionClassName: Chunk414648.panelModeControlOption
-      }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+        className: p.panelModeControl,
+        optionClassName: p.panelModeControlOption
+      }), (0, a.jsx)(l.LZC, {
         size: 8
-      }), "preview" === module && (0, Chunk54381.jsx)(T, {}), "validate" === module && (0, Chunk54381.jsx)(E, {}), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+      }), "preview" === e && (0, a.jsx)(T, {}), "validate" === e && (0, a.jsx)(E, {}), (0, a.jsx)(l.LZC, {
         size: 16
       })]
     })

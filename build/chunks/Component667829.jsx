@@ -74,16 +74,16 @@ function j(e, t) {
 }
 new Chunk710845.Z("ChannelEditor.tsx");
 let M = function() {
-    for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
+    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
   k = 1e3;
 class U extends Chunk473749.Component {
   _getEditorWindow() {
     var e, t, n, r, i;
-    let a = null == (i = this.ref) || null == (r = Chunk473749.current) || null == (n = Chunk54381.getSlateEditor) || null == (t = require.call(Chunk54381)) || null == (e = exports.windowContext) ? true : module.renderWindow;
-    if (null == this._cachedEditorWindow || this._cachedEditorWindow !== Chunk120356) {
-      if (null != this._cachedEditorWindow && null == Chunk120356) return null;
-      this._cachedEditorWindow = null != Chunk120356 ? Chunk120356 : window
+    let a = null == (i = this.ref) || null == (r = i.current) || null == (n = r.getSlateEditor) || null == (t = n.call(r)) || null == (e = t.windowContext) ? true : e.renderWindow;
+    if (null == this._cachedEditorWindow || this._cachedEditorWindow !== a) {
+      if (null != this._cachedEditorWindow && null == a) return null;
+      this._cachedEditorWindow = null != a ? a : window
     }
     return this._cachedEditorWindow
   }
@@ -101,11 +101,11 @@ class U extends Chunk473749.Component {
   }
   componentWillUnmount() {
     var e, t;
-    this.saveCurrentText(), null == (e = (t = this)._unsubscribe) || module.call(exports), window.removeEventListener("beforeunload", this.handleBeforeUnload), document.removeEventListener("selectionchange", this.handleSelectionChange), this._focusBlurQueue = null, this._unsubscribe = null, this._cachedEditorWindow = null, null != this._initTimeoutId && clearTimeout(this._initTimeoutId)
+    this.saveCurrentText(), null == (e = (t = this)._unsubscribe) || e.call(t), window.removeEventListener("beforeunload", this.handleBeforeUnload), document.removeEventListener("selectionchange", this.handleSelectionChange), this._focusBlurQueue = null, this._unsubscribe = null, this._cachedEditorWindow = null, null != this._initTimeoutId && clearTimeout(this._initTimeoutId)
   }
   blur() {
     let e = this.ref.current;
-    null != module && module.blur()
+    null != e && e.blur()
   }
   submit(e) {
     var t;
@@ -144,12 +144,12 @@ class U extends Chunk473749.Component {
     this.setState({
       focused: true,
       submitting: false
-    }), Chunk430742.Z.saveDraft(module.id, "", exports.drafts.type)
+    }), d.Z.saveDraft(e.id, "", t.drafts.type)
   }
   getCurrentWord() {
     var e;
     let t = this.ref.current;
-    return null != (e = null == exports ? true : exports.getCurrentWord()) ? module : {
+    return null != (e = null == t ? true : t.getCurrentWord()) ? e : {
       word: null,
       isAtStart: false
     }
@@ -169,27 +169,27 @@ class U extends Chunk473749.Component {
   getCurrentCommandOption() {
     var e, t;
     let n = this.ref.current;
-    return null != (t = null == require || null == (e = require.getCurrentCommandOption) ? true : module.call(require)) ? exports : null
+    return null != (t = null == n || null == (e = n.getCurrentCommandOption) ? true : e.call(n)) ? t : null
   }
   getCurrentCommandOptionValue() {
     var e, t;
     let n = this.ref.current;
-    return null != (t = null == require || null == (e = require.getCurrentCommandOptionValue) ? true : module.call(require)) ? exports : []
+    return null != (t = null == n || null == (e = n.getCurrentCommandOptionValue) ? true : e.call(n)) ? t : []
   }
   getCommandOptionValues() {
     var e, t;
     let n = this.ref.current;
-    return null != (t = null == require || null == (e = require.getCommandOptionValues) ? true : module.call(require)) ? exports : {}
+    return null != (t = null == n || null == (e = n.getCommandOptionValues) ? true : e.call(n)) ? t : {}
   }
   getFirstText() {
     var e;
     let t = this.ref.current;
-    return null != (e = null == exports ? true : exports.getFirstText()) ? module : null
+    return null != (e = null == t ? true : t.getFirstText()) ? e : null
   }
   getSlateEditor() {
     var e, t;
     let n = this.ref.current;
-    return null != (t = null == require || null == (e = require.getSlateEditor) ? true : module.call(require)) ? exports : null
+    return null != (t = null == n || null == (e = n.getSlateEditor) ? true : e.call(n)) ? t : null
   }
   fixFocus(e) {
     e.focused && !this.props.focused ? this.blur() : !e.focused && this.props.focused && this.focus()
@@ -206,7 +206,7 @@ class U extends Chunk473749.Component {
       isPreviewing: n,
       showValueWhenDisabled: r
     } = this.props;
-    return module && !require ? Chunk54381 ? "" : Chunk388032.intl.string(Chunk388032.t.IYKTTc) : exports
+    return e && !n ? r ? "" : R.intl.string(R.t.IYKTTc) : t
   }
   render() {
     var e, t, n, i, a, s;
@@ -240,18 +240,18 @@ class U extends Chunk473749.Component {
       submitting: V,
       popup: H
     } = this.state, Y = {
-      channel: Chunk710845,
-      className: o()(Chunk925994, Chunk72775.textArea, {
-        [Chunk72775.textAreaSlate]: Chunk403182,
-        [Chunk72775.textAreaDisabled]: Chunk430742 || V
+      channel: g,
+      className: o()(N, w.textArea, {
+        [w.textAreaSlate]: y,
+        [w.textAreaDisabled]: d || V
       }),
-      id: Chunk388032,
+      id: R,
       placeholder: this.getPlaceholder(),
       required: D,
       accessibilityLabel: F,
-      disabled: Chunk430742 || false,
+      disabled: d || false,
       submitting: V,
-      isEdit: Chunk117530 === Chunk541716.Ie.EDIT,
+      isEdit: E === v.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
       onPaste: this.handlePaste,
@@ -261,49 +261,49 @@ class U extends Chunk473749.Component {
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
       allowNewLines: M,
-      onChange: Chunk166459,
-      onResize: Chunk911969,
-      onKeyDown: Chunk531643,
-      onSubmit: Chunk476326,
+      onChange: f,
+      onResize: _,
+      onKeyDown: p,
+      onSubmit: m,
       textAreaPaddingClassName: o()({
-        [Chunk72775.textAreaForPostCreation]: Chunk117530 === Chunk541716.Ie.CREATE_FORUM_POST,
-        [Chunk72775.textAreaCustomGift]: Chunk117530 === Chunk541716.Ie.CUSTOM_GIFT,
-        [Chunk72775.textAreaForUserProfile]: Chunk117530 === Chunk541716.Ie.USER_PROFILE,
-        [Chunk72775.textAreaForOverlayInlineReply]: Chunk117530 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
+        [w.textAreaForPostCreation]: E === v.Ie.CREATE_FORUM_POST,
+        [w.textAreaCustomGift]: E === v.Ie.CUSTOM_GIFT,
+        [w.textAreaForUserProfile]: E === v.Ie.USER_PROFILE,
+        [w.textAreaForOverlayInlineReply]: E === v.Ie.OVERLAY_INLINE_REPLY
       }),
-      spellcheckEnabled: Chunk137058,
-      useNewSlashCommands: Chunk30465,
+      spellcheckEnabled: O,
+      useNewSlashCommands: I,
       isEditorIdle: k,
       currentAutocompleteType: U,
-      disableAutoFocus: Chunk873546.tq || null != (n = Chunk117530.disableAutoFocus) && require,
-      disableEnterToSubmit: null != (i = null == (e = Chunk117530.submit) ? true : module.disableEnterToSubmit) && Chunk473749,
-      "aria-controls": null != (a = H.id) ? Chunk120356 : true,
+      disableAutoFocus: u.tq || null != (n = E.disableAutoFocus) && n,
+      disableEnterToSubmit: null != (i = null == (e = E.submit) ? true : e.disableEnterToSubmit) && i,
+      "aria-controls": null != (a = H.id) ? a : true,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== H.id || true,
-      "aria-activedescendant": null != (s = H.activeDescendant) ? Chunk392711 : true,
+      "aria-activedescendant": null != (s = H.activeDescendant) ? s : true,
       "aria-invalid": l.length > L,
       "aria-describedby": G,
       "aria-labelledby": Z,
       "aria-autocomplete": "list"
-    }, W = Chunk403182 ? (0, Chunk54381.jsx)(Chunk4484.Z, j(x({
+    }, W = y ? (0, r.jsx)(A.Z, j(x({
       ref: this.ref
     }, Y), {
-      type: Chunk117530,
-      value: Chunk430742 && !B ? (0, Chunk752305.JM)("") : Chunk729594,
-      canUseCommands: null == (t = Chunk117530.commands) ? true : exports.enabled,
-      canOnlyUseTextCommands: Chunk330122,
-      onSubmitFailure: Chunk998698
-    })) : (0, Chunk54381.jsx)(Chunk140963.Z, j(x({
+      type: E,
+      value: d && !B ? (0, S.JM)("") : c,
+      canUseCommands: null == (t = E.commands) ? true : t.enabled,
+      canOnlyUseTextCommands: T,
+      onSubmitFailure: h
+    })) : (0, r.jsx)(C.Z, j(x({
       ref: this.ref
     }, Y), {
-      value: Chunk430742 && !B ? "" : l
+      value: d && !B ? "" : l
     }));
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk459273.d9, {
-        event: Chunk981631.CkL.INSERT_TEXT,
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(b.d9, {
+        event: P.CkL.INSERT_TEXT,
         handler: this.handleInsertText
-      }), (0, Chunk54381.jsx)(Chunk459273.d9, {
-        event: Chunk981631.CkL.CLEAR_TEXT,
+      }), (0, r.jsx)(b.d9, {
+        event: P.CkL.CLEAR_TEXT,
         handler: this.handleClearText
       }), W]
     })

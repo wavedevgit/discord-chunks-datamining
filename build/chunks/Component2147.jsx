@@ -134,15 +134,15 @@ let ep = (0, Chunk313201.hQ)(),
     let {
       channel: e,
       submitting: t
-    } = Chunk388610.Z.getProps();
+    } = z.Z.getProps();
     return {
-      channel: module,
-      submitting: exports,
+      channel: e,
+      submitting: t,
       onReset() {
-        null != module && (0, Chunk787014.S1)(module.id)
+        null != e && (0, x.S1)(e.id)
       },
       onSave() {
-        if (null == module) return;
+        if (null == e) return;
         let {
           name: t,
           type: n,
@@ -163,29 +163,29 @@ let ep = (0, Chunk313201.hQ)(),
           defaultSortOrder: b,
           defaultForumLayout: j,
           defaultTagSetting: v
-        } = module;
-        module.isThread() && (t = (0, Chunk456077.Z)(exports, true)), (0, Chunk787014.wk)(module.id, {
-          name: exports,
-          type: require,
-          topic: Chunk54381,
-          bitrate: Chunk473749,
-          userLimit: Chunk120356,
+        } = e;
+        e.isThread() && (t = (0, U.Z)(t, true)), (0, x.wk)(e.id, {
+          name: t,
+          type: n,
+          topic: i,
+          bitrate: l,
+          userLimit: r,
           nsfw: a,
-          flags: Chunk913527,
+          flags: s,
           rateLimitPerUser: o,
-          defaultThreadRateLimitPerUser: Chunk313361,
-          autoArchiveDuration: null == Chunk697988 ? true : Chunk697988.autoArchiveDuration,
-          locked: null == Chunk697988 ? true : Chunk697988.locked,
-          invitable: null == Chunk697988 ? true : Chunk697988.invitable,
-          defaultAutoArchiveDuration: Chunk683860,
-          template: Chunk95015,
-          rtcRegion: Chunk442837,
-          videoQualityMode: Chunk796027,
-          defaultReactionEmoji: Chunk199849,
-          availableTags: Chunk780384,
-          defaultSortOrder: Chunk481060,
-          defaultForumLayout: Chunk771340,
-          defaultTagSetting: Chunk410575
+          defaultThreadRateLimitPerUser: c,
+          autoArchiveDuration: null == d ? true : d.autoArchiveDuration,
+          locked: null == d ? true : d.locked,
+          invitable: null == d ? true : d.invitable,
+          defaultAutoArchiveDuration: u,
+          template: h,
+          rtcRegion: g,
+          videoQualityMode: m,
+          defaultReactionEmoji: f,
+          availableTags: p,
+          defaultSortOrder: b,
+          defaultForumLayout: j,
+          defaultTagSetting: v
         })
       }
     }
@@ -246,7 +246,7 @@ function eS(e) {
 }
 class eN extends Chunk473749.PureComponent {
   componentDidMount() {
-    null == this.props.regions && null != this.props.guild && Chunk771340.Z.fetchRegions(this.props.guild.id)
+    null == this.props.regions && null != this.props.guild && j.Z.fetchRegions(this.props.guild.id)
   }
   componentDidUpdate(e) {
     var t, n, i, l;
@@ -611,8 +611,8 @@ class eN extends Chunk473749.PureComponent {
     let {
       channel: e
     } = this.props;
-    return null != module && null != module.guild_id && Chunk131704.vg.has(module.type) && (module.isGuildVocal() || Chunk665906.tM.getCurrentConfig({
-      guildId: module.guild_id,
+    return null != e && null != e.guild_id && H.vg.has(e.type) && (e.isGuildVocal() || B.tM.getCurrentConfig({
+      guildId: e.guild_id,
       location: "9b50bd_1"
     }).enabled)
   }
@@ -711,11 +711,11 @@ class eN extends Chunk473749.PureComponent {
       channelName: t,
       guild: n
     } = this.props;
-    return null == module || null == exports || null == require ? null : (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t["/dp6yY"]),
-      children: [this.renderChannelInfo(module, exports), this.showVoiceSettings() ? (0, Chunk54381.jsx)(Chunk481060.izJ, {
+    return null == e || null == t || null == n ? null : (0, i.jsxs)(b.C3N, {
+      label: ed.intl.string(ed.t["/dp6yY"]),
+      children: [this.renderChannelInfo(e, t), this.showVoiceSettings() ? (0, i.jsx)(b.izJ, {
         gap: 24
-      }) : null, this.renderVoiceBitrate(module, require), this.renderVideoQualityMode(module), this.renderUserLimit(module), this.renderRegionOverride(module), this.renderJuiceImage(module)]
+      }) : null, this.renderVoiceBitrate(e, n), this.renderVideoQualityMode(e), this.renderUserLimit(e), this.renderRegionOverride(e), this.renderJuiceImage(e)]
     })
   }
   handleSubmit() {
@@ -931,38 +931,38 @@ function eE() {
     channel: t,
     submitting: n,
     subsection: r
-  } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getProps()), a = (0, Chunk442837.e7)([Chunk903223.Z], () => {
+  } = (0, g.cj)([z.Z], () => z.Z.getProps()), a = (0, g.e7)([J.Z], () => {
     var e;
-    return Chunk903223.Z.getRegions(null != (e = null == exports ? true : exports.getGuildId()) ? module : null)
-  }), s = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), o = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(null == exports ? true : exports.getGuildId())), c = (0, Chunk665906.C7)(exports), d = (0, Chunk665906.Xb)(exports), {
+    return J.Z.getRegions(null != (e = null == t ? true : t.getGuildId()) ? e : null)
+  }), s = (0, g.e7)([V.Z], () => V.Z.theme), o = (0, g.e7)([Y.Z], () => Y.Z.getGuild(null == t ? true : t.getGuildId())), c = (0, B.C7)(t), d = (0, B.Xb)(t), {
     canManageChannels: u,
     canSendMessages: h
-  } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
-    canManageChannels: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_CHANNELS, exports),
-    canSendMessages: Chunk496675.Z.can(Chunk981631.Plq.SEND_MESSAGES, exports)
-  })), m = (0, Chunk933557.ZP)(exports), f = Chunk314897.default.getId(), p = (0, Chunk109434.v)(), b = null == exports ? true : exports.id, x = (0, Chunk902840.ts)(exports, false, true), j = Chunk129865.Z.useExperiment({
-    guildId: null == exports ? true : exports.guild_id,
+  } = (0, g.cj)([q.Z], () => ({
+    canManageChannels: q.Z.can(er.Plq.MANAGE_CHANNELS, t),
+    canSendMessages: q.Z.can(er.Plq.SEND_MESSAGES, t)
+  })), m = (0, Z.ZP)(t), f = W.default.getId(), p = (0, A.v)(), b = null == t ? true : t.id, x = (0, C.ts)(t, false, true), j = y.Z.useExperiment({
+    guildId: null == t ? true : t.guild_id,
     location: "ChannelSettingsOverview"
-  }).enabled, v = Chunk473749.useCallback(e => {
+  }).enabled, v = l.useCallback(e => {
     null != b && p.getState().setLayoutType(b, e)
-  }, [Chunk481060, Chunk780384]);
-  return (0, Chunk54381.jsx)(eN, {
-    errors: module,
-    channel: exports,
-    channelName: Chunk796027,
-    submitting: require,
+  }, [b, p]);
+  return (0, i.jsx)(eN, {
+    errors: e,
+    channel: t,
+    channelName: m,
+    submitting: n,
     regions: a,
-    theme: Chunk913527,
+    theme: s,
     guild: o,
-    canManageChannels: (null == exports ? true : exports.isThread()) ? Chunk313361 : Chunk683860,
-    canSendMessages: Chunk95015,
-    isThreadModerator: Chunk697988,
-    canManageThread: Chunk313361,
-    subsection: Chunk120356,
-    isForumPost: null != exports && exports.isForumPost(),
-    isOwner: null == exports ? true : exports.isOwner(Chunk199849),
-    handleSetDefaultLayout: Chunk410575,
-    showChannelSummariesSettings: Chunk787014,
-    showAdvancedSlowModeSetting: Chunk771340
+    canManageChannels: (null == t ? true : t.isThread()) ? c : u,
+    canSendMessages: h,
+    isThreadModerator: d,
+    canManageThread: c,
+    subsection: r,
+    isForumPost: null != t && t.isForumPost(),
+    isOwner: null == t ? true : t.isOwner(f),
+    handleSetDefaultLayout: v,
+    showChannelSummariesSettings: x,
+    showAdvancedSlowModeSetting: j
   })
 }

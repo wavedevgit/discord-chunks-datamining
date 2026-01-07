@@ -26,21 +26,21 @@ var Chunk220159 = require("./220159.js"),
   g = module.exports = {
     enable: function() {
       g.enable = function() {}, y = true;
-      var t = Chunk777985.f,
-        r = Chunk764908([].splice),
+      var t = f.f,
+        r = o([].splice),
         n = {};
-      require[h] = 1, module(require).length && (Chunk777985.f = function(n) {
+      n[h] = 1, t(n).length && (f.f = function(n) {
         for (var e = t(n), o = 0, i = e.length; o < i; o++)
           if (e[o] === h) {
             r(e, o, 1);
             break
           } return e
-      }, Chunk220159({
+      }, e({
         target: "Object",
         stat: true,
         forced: true
       }, {
-        getOwnPropertyNames: Chunk206804.f
+        getOwnPropertyNames: a.f
       }))
     },
     fastKey: function(t, r) {

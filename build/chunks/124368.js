@@ -34,13 +34,13 @@ var d = function(e) {
 function f() {
   return [{
     setting: u.ALL_MESSAGES,
-    label: Chunk388032.intl.string(Chunk388032.t["n/bTaY"])
+    label: i.intl.string(i.t["n/bTaY"])
   }, {
     setting: u.ONLY_MENTIONS,
-    label: Chunk388032.intl.format(Chunk388032.t.L2hmYy, {})
+    label: i.intl.format(i.t.L2hmYy, {})
   }, {
     setting: u.NO_MESSAGES,
-    label: Chunk388032.intl.string(Chunk388032.t.CtVGyQ)
+    label: i.intl.string(i.t.CtVGyQ)
   }]
 }
 var p = function(e) {

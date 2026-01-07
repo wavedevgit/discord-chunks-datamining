@@ -25,19 +25,19 @@ var Chunk209739 = require("./209739.js"),
 function v() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
-  if (!(0, Chunk74299.Z)(Chunk131951.Z) || null != Chunk199902.Z.getCurrentUserActiveStream()) returnfalse;
-  let n = Chunk944486.Z.getVoiceChannelId(),
-    r = Chunk592125.Z.getChannel(require);
-  if (null == Chunk209739) returnfalse;
-  let v = Chunk209739.getGuildId();
-  if (!(0, Chunk102172.JL)(Chunk209739, Chunk430824.Z, Chunk496675.Z, false)) returnfalse;
-  if (Chunk131951.Z.getUseSystemScreensharePicker())(0, Chunk358085.isMac)() && i().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.jR) ? (0, Chunk299570.T)() : (0, Chunk299570.T)("window");
+  if (!(0, b.Z)(d.Z) || null != s.Z.getCurrentUserActiveStream()) returnfalse;
+  let n = f.Z.getVoiceChannelId(),
+    r = c.Z.getChannel(n);
+  if (null == r) returnfalse;
+  let v = r.getGuildId();
+  if (!(0, h.JL)(r, u.Z, p.Z, false)) returnfalse;
+  if (d.Z.getUseSystemScreensharePicker())(0, m.isMac)() && i().satisfies(null === a.Z || true === a.Z ? true : a.Z.os.release, O.jR) ? (0, _.T)() : (0, _.T)("window");
   else {
-    let n = (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z);
-    if (null == require || require.isLauncher && !module) returnfalse;
-    (0, Chunk872810.WH)(v, Chunk209739.id, {
-      pid: require.pid,
-      analyticsLocations: exports
+    let n = (0, E.Z)(o.ZP, g.Z);
+    if (null == n || n.isLauncher && !e) returnfalse;
+    (0, l.WH)(v, r.id, {
+      pid: n.pid,
+      analyticsLocations: t
     })
   }
   returntrue

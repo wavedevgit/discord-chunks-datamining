@@ -57,7 +57,7 @@ function b(e, t) {
   }), e
 }
 let y = {
-  label: () => Chunk388032.intl.string(Chunk388032.t["32u1Dx"]),
+  label: () => _.intl.string(_.t["32u1Dx"]),
   value: Chunk997950.Th
 };
 
@@ -65,29 +65,29 @@ function O() {
   let {
     selectedGuildId: e,
     setSelectedGuildId: t
-  } = (0, Chunk997950.xu)(), n = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), _ = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), {
+  } = (0, f.xu)(), n = (0, a.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()), _ = (0, a.e7)([c.Z], () => c.Z.getGuilds()), {
     hideGuildOptions: h,
     hideGlobalOption: E
-  } = (0, Chunk816108.b)(), O = require[0];
-  Chunk473749.useEffect(() => {
-    E && h || (module === Chunk997950.Th && module !== O && E && exports(O), module !== Chunk997950.Th && h && exports(Chunk997950.Th))
-  }, [module, exports, E, h, O]);
+  } = (0, p.b)(), O = n[0];
+  i.useEffect(() => {
+    E && h || (e === f.Th && e !== O && E && t(O), e !== f.Th && h && t(f.Th))
+  }, [e, t, E, h, O]);
   let v = e => {
       t(e)
     },
-    S = Chunk473749.useMemo(() => {
-      let e = h ? [] : require.map(e => {
+    S = i.useMemo(() => {
+      let e = h ? [] : n.map(e => {
         let t = _[e];
         return null == t ? null : {
           label: t.name,
           value: t.id
         }
-      }).filter(Chunk823379.lm);
-      return E || module.unshift(b(g({}, y), {
+      }).filter(d.lm);
+      return E || e.unshift(b(g({}, y), {
         label: y.label()
-      })), module
-    }, [h, require, E, Chunk388032]),
-    I = Chunk473749.useCallback(e => {
+      })), e
+    }, [h, n, E, _]),
+    I = i.useCallback(e => {
       let t = (null == e ? true : e.label) === y.label() && (null == e ? true : e.value) === y.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {
         className: m.clydeIconContainer,
@@ -103,11 +103,11 @@ function O() {
         size: l.Z.Sizes.SMALLER,
         active: true
       })
-    }, [Chunk388032]);
-  return (0, Chunk54381.jsx)(Chunk668339.d, {
-    wrapperClassName: Chunk913498.searchableSelect,
+    }, [_]);
+  return (0, r.jsx)(o.d, {
+    wrapperClassName: m.searchableSelect,
     onChange: v,
-    value: module,
+    value: e,
     options: S,
     renderOptionPrefix: I
   })

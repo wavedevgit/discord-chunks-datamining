@@ -57,9 +57,9 @@ let p = "guild-connection-roles";
 function _() {
   return {
     modalKey: p,
-    contextKey: Chunk481060.z1l,
+    contextKey: a.z1l,
     onCloseRequest: () => {
-      (0, Chunk481060.Mr3)(p, Chunk481060.z1l)
+      (0, a.Mr3)(p, a.z1l)
     }
   }
 }

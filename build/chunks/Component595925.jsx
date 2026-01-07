@@ -11,18 +11,18 @@ var Chunk159691 = require("./159691.js"),
   Chunk261538 = require("./261538.jsx");
 
 function o() {
-  return (0, Chunk54381.jsxs)(Chunk261538.E_, {
+  return (0, a.jsxs)(s.E_, {
     label: "Open New Revenue Storybook",
     direction: "vertical",
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-feedback-info",
       style: {
         marginBottom: "8px"
       },
       children: "This section is deprecated. Use button to open the new Revenue Storybook instead."
-    }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
-      onClick: () => (0, Chunk79869.i)(Chunk79869.O.VIRTUAL_CURRENCY),
+    }), (0, a.jsx)(r.zxk, {
+      onClick: () => (0, l.i)(l.O.VIRTUAL_CURRENCY),
       text: "Open New Revenue Storybook"
     })]
   })

@@ -15,13 +15,13 @@ function l() {
   let {
     volume: e,
     onVolumeChange: t
-  } = (0, Chunk824690.Z)();
-  return (0, Chunk722932.X0)({
+  } = (0, a.Z)();
+  return (0, i.X0)({
     location: "UserSettingsSoundmojiVolume"
-  }) ? (0, Chunk54381.jsx)(Chunk674343.Z, {
-    label: Chunk388032.intl.string(Chunk388032.t["2JbvKw"]),
-    description: Chunk388032.intl.string(Chunk388032.t.INenzY),
-    volume: module,
-    onVolumeChange: exports
+  }) ? (0, r.jsx)(o.Z, {
+    label: s.intl.string(s.t["2JbvKw"]),
+    description: s.intl.string(s.t.INenzY),
+    volume: e,
+    onVolumeChange: t
   }) : null
 }

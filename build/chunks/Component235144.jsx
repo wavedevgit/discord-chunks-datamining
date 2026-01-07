@@ -19,44 +19,44 @@ var Chunk54381 = require("./54381.js"),
 function _() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile()), {
+  } = (0, l.ZP)(), t = (0, a.e7)([c.Z], () => c.Z.getActiveInputProfile()), {
     enabledInputProfiles: n
-  } = (0, Chunk846071.G)({
+  } = (0, u.G)({
     location: "UserSettingsInputProfile"
-  }), _ = Chunk473749.useCallback(t => {
+  }), _ = i.useCallback(t => {
     let {
       value: n
     } = t;
     s.Z.setActiveInputProfile(n, {
       analyticsLocations: e
     })
-  }, [module]), m = [{
-    value: Chunk345655._.VOICE_ISOLATION,
-    name: Chunk388032.intl.string(Chunk388032.t.cjPbpT),
-    desc: Chunk388032.intl.string(Chunk388032.t.CzhvnE)
+  }, [e]), m = [{
+    value: d._.VOICE_ISOLATION,
+    name: f.intl.string(f.t.cjPbpT),
+    desc: f.intl.string(f.t.CzhvnE)
   }, {
-    value: Chunk345655._.STUDIO,
-    name: Chunk388032.intl.string(Chunk388032.t.VZPR0R),
-    desc: Chunk388032.intl.string(Chunk388032.t.ZaJksS)
+    value: d._.STUDIO,
+    name: f.intl.string(f.t.VZPR0R),
+    desc: f.intl.string(f.t.ZaJksS)
   }, {
-    value: Chunk345655._.CUSTOM,
-    name: Chunk388032.intl.string(Chunk388032.t["N/PQjv"]),
-    desc: Chunk388032.intl.string(Chunk388032.t.SnBmuY)
+    value: d._.CUSTOM,
+    name: f.intl.string(f.t["N/PQjv"]),
+    desc: f.intl.string(f.t.SnBmuY)
   }].filter(e => {
     let {
       value: t
     } = e;
     return n.includes(t)
   });
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk478411.marginBottom20,
-    children: (0, Chunk54381.jsx)(Chunk481060.FXm, {
-      label: Chunk388032.intl.string(Chunk388032.t.LM3U3k),
+  return (0, r.jsx)("div", {
+    className: p.marginBottom20,
+    children: (0, r.jsx)(o.FXm, {
+      label: f.intl.string(f.t.LM3U3k),
       onChange: e => _({
         value: e
       }),
       options: m,
-      value: null != exports ? exports : Chunk345655._.CUSTOM
+      value: null != t ? t : d._.CUSTOM
     })
   })
 }

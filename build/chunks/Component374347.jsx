@@ -18,42 +18,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk637378 = require("./637378.js");
 
 function f() {
-  let e = (0, Chunk442837.e7)([Chunk277053.Z], () => Chunk277053.Z.advancedMode),
-    [t] = Chunk473749.useState(new Chunk748780.Z.Value(+!!module));
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {
-      className: Chunk637378.advancedModeDivider
-    }), (0, Chunk54381.jsx)(Chunk481060.y5t, {
-      component: (0, Chunk54381.jsx)(Chunk755721.zx, {
-        look: Chunk755721.zx.Looks.BLANK,
-        color: Chunk755721.zx.Colors.TRANSPARENT,
+  let e = (0, a.e7)([u.Z], () => u.Z.advancedMode),
+    [t] = l.useState(new r.Z.Value(+!!e));
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(o.izJ, {
+      className: m.advancedModeDivider
+    }), (0, i.jsx)(o.y5t, {
+      component: (0, i.jsx)(s.zx, {
+        look: s.zx.Looks.BLANK,
+        color: s.zx.Colors.TRANSPARENT,
         onClick: function() {
-          module ? Chunk748780.Z.timing(exports, {
+          e ? r.Z.timing(t, {
             toValue: 0,
             duration: 250
           }).start(() => {
-            (0, Chunk741361.d$)(false)
-          }) : ((0, Chunk741361.d$)(true), Chunk748780.Z.timing(exports, {
+            (0, c.d$)(false)
+          }) : ((0, c.d$)(true), r.Z.timing(t, {
             toValue: 1,
             duration: 250
           }).start())
         },
-        children: (0, Chunk54381.jsxs)(Chunk481060.Text, {
+        children: (0, i.jsxs)(o.Text, {
           variant: "text-lg/semibold",
-          className: Chunk637378.advancedTitle,
-          children: [Chunk388032.intl.string(Chunk388032.t.dYRsrm), (0, Chunk54381.jsx)(Chunk259580.Z, {
-            expanded: module,
-            className: Chunk637378.titleCaret,
+          className: m.advancedTitle,
+          children: [g.intl.string(g.t.dYRsrm), (0, i.jsx)(h.Z, {
+            expanded: e,
+            className: m.titleCaret,
             width: 20,
             height: 20
           })]
         })
       }),
-      children: module && (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+      children: e && (0, i.jsx)(r.Z.div, {
         style: {
-          opacity: exports
+          opacity: t
         },
-        children: (0, Chunk54381.jsx)(Chunk856606.Z, {})
+        children: (0, i.jsx)(d.Z, {})
       })
     })]
   })

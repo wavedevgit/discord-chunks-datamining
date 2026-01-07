@@ -50,10 +50,10 @@ function m(e) {
 }
 
 function y() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk497330.emptyArt,
-    children: (0, Chunk54381.jsx)("img", {
-      src: Chunk505913,
+  return (0, r.jsx)("div", {
+    className: b.emptyArt,
+    children: (0, r.jsx)("img", {
+      src: O,
       width: "189",
       height: "177",
       alt: ""

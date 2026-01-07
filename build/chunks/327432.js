@@ -151,16 +151,16 @@ var h = () => {
     getFragment: () => {
       var {
         selection: t
-      } = module;
-      return exports ? ei.fragment(module, exports) : []
+      } = e;
+      return t ? ei.fragment(e, t) : []
     },
     insertBreak: () => {
-      eY.splitNodes(module, {
+      eY.splitNodes(e, {
         always: true
       })
     },
     insertSoftBreak: () => {
-      eY.splitNodes(module, {
+      eY.splitNodes(e, {
         always: true
       })
     },
@@ -339,7 +339,7 @@ var h = () => {
       returntrue
     }
   };
-  return module
+  return e
 };
 
 function g(e, t) {

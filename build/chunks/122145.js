@@ -12,13 +12,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_EVERYONE_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["7x9dyE"]),
+  useTitle: () => T.intl.string(T.t["7x9dyE"]),
   useValue: () => {
-    let t = Chunk695346.xq.useSetting();
-    return Chunk473749.useMemo(() => (0, Chunk88658.bL)(module), [module]).all
+    let t = r.xq.useSetting();
+    return i.useMemo(() => (0, u.bL)(t), [t]).all
   },
   setValue: t => {
     r.xq.updateSetting(t ? o.HGf : o.HGf & ~o.SOq.NO_RELATION)
   },
-  useDisabled: () => (0, Chunk915009.LN)()
+  useDisabled: () => (0, l.LN)()
 })

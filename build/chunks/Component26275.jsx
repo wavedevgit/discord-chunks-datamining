@@ -21,24 +21,24 @@ function f() {
     onCtxMenuOpen: t,
     onCtxMenuClose: n,
     onCtxMenuSelect: i
-  } = Chunk473749.useContext(Chunk526188.A), f = (0, Chunk968843.B6)(module.config.expiresAt);
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk782589.questAcceptedHeader,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  } = r.useContext(u.A), f = (0, c.B6)(e.config.expiresAt);
+  return (0, a.jsxs)("div", {
+    className: p.questAcceptedHeader,
+    children: [(0, a.jsx)(s.Text, {
       variant: "text-xxs/medium",
-      className: l()(Chunk782589.flex, Chunk782589.headerText),
-      children: Chunk388032.intl.format(Chunk388032.t["pX+fmn"], {
+      className: l()(p.flex, p.headerText),
+      children: m.intl.format(m.t["pX+fmn"], {
         expirationDate: f
       })
-    }), (0, Chunk54381.jsx)(Chunk698716.i, {
-      onOpen: exports,
-      onClose: require,
-      onSelect: Chunk120356,
-      questContent: Chunk49436.jn.QUEST_BAR_V2,
-      quest: module,
+    }), (0, a.jsx)(d.i, {
+      onOpen: t,
+      onClose: n,
+      onSelect: i,
+      questContent: o.jn.QUEST_BAR_V2,
+      quest: e,
       shouldShowDisclosure: false,
       showShareLink: true,
-      sourceQuestContent: Chunk49436.jn.QUEST_BAR_V2,
+      sourceQuestContent: o.jn.QUEST_BAR_V2,
       children: e => {
         var t, n;
         return (0, a.jsx)(s.P3F, (t = function(e) {

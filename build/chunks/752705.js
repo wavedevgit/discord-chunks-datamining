@@ -18,6 +18,6 @@ exports.default = class {
   }
   toString() {
     if (!this.data.name) throw Error("No value for `name` in ICalCategory given!");
-    return (0, Chunk139761.escape)(this.data.name)
+    return (0, i.escape)(this.data.name)
   }
 }

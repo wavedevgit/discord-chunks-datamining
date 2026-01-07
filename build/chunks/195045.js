@@ -10,15 +10,15 @@ var Chunk473749 = require("./473749.js"),
   Chunk785925 = require("./785925.js"),
   Chunk805422 = require("./805422.js");
 let l = () => {
-  let e = (0, Chunk442837.e7)([Chunk805422.Z], () => Chunk805422.Z.assets);
-  return Chunk473749.useEffect(() => {
+  let e = (0, i.e7)([s.Z], () => s.Z.assets);
+  return r.useEffect(() => {
     let t = async () => {
-      let e = await Chunk785925.ZP.getAssets();
-      null != module && Chunk570140.Z.dispatch({
+      let e = await o.ZP.getAssets();
+      null != e && a.Z.dispatch({
         type: "HAVEN_GOT_ASSETS",
-        assets: module.body
+        assets: e.body
       })
     };
-    null == module && exports()
-  }, [module]), module
+    null == e && t()
+  }, [e]), e
 }

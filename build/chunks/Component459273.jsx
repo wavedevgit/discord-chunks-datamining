@@ -30,10 +30,10 @@ class c {
   }
   bumpDispatchPriority() {
     for (let e of this.emitter.eventNames())
-      for (let t of this.emitter.listeners(module)) Chunk585483.S.resubscribe(module, exports)
+      for (let t of this.emitter.listeners(e)) s.S.resubscribe(e, t)
   }
   constructor() {
-    l(this, "emitter", new Chunk836560.EventEmitter)
+    l(this, "emitter", new a.EventEmitter)
   }
 }
 class u {

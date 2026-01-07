@@ -19,7 +19,7 @@ let o = [];
 class s {
   static create() {
     let e = new s;
-    return o.push(module), module.record
+    return o.push(e), e.record
   }
   getTotalBytes() {
     return i().sum(Object.values(this.bytes))

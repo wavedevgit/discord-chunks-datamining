@@ -11,14 +11,14 @@ var Chunk481060 = require("./481060.js"),
 let o = "DOWNLOAD_APPS";
 
 function s() {
-  let e = (0, Chunk481060.s9z)(e => (0, i.DEQ)(e, o));
-  return (0, Chunk54381.jsx)(Chunk603592.Z, {
+  let e = (0, i.s9z)(e => (0, i.DEQ)(e, o));
+  return (0, r.jsx)(l.Z, {
     id: "app-download-button",
     onClick: () => {
-      (0, Chunk481060.ZDy)(async () => {
+      (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([require.e("32996"), require.e("74023")]).then(require.bind(require, 431583));
+        } = await Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583));
         return t => (0, r.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -43,8 +43,8 @@ function s() {
         modalKey: o
       })
     },
-    selected: module,
-    tooltip: Chunk388032.intl.string(Chunk388032.t.Z7jwrJ),
-    icon: Chunk481060._8t
+    selected: e,
+    tooltip: a.intl.string(a.t.Z7jwrJ),
+    icon: i._8t
   })
 }

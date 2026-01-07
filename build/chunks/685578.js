@@ -535,9 +535,9 @@ var y = new WeakMap,
   },
   eD = (0, Chunk473749.createContext)(null),
   ex = () => {
-    var e = (0, Chunk473749.useContext)(eD);
-    if (!module) throw Error("The `useSlateStatic` hook must be used inside the <Slate> component's context.");
-    return module
+    var e = (0, c.useContext)(eD);
+    if (!e) throw Error("The `useSlateStatic` hook must be used inside the <Slate> component's context.");
+    return e
   },
   eL = e => {
     var {
@@ -707,9 +707,9 @@ var y = new WeakMap,
     }), n)
   },
   eB = (0, Chunk473749.createContext)(() => []),
-  eV = () => (0, Chunk473749.useContext)(eB),
+  eV = () => (0, c.useContext)(eB),
   eH = (0, Chunk473749.createContext)(false),
-  eY = () => (0, Chunk473749.useContext)(eH),
+  eY = () => (0, c.useContext)(eH),
   eW = e => {
     for (var {
         decorations: t,
@@ -753,15 +753,15 @@ var y = new WeakMap,
     return f
   },
   eK = (0, Chunk473749.createContext)(false),
-  ez = () => (0, Chunk473749.useContext)(eK),
+  ez = () => (0, c.useContext)(eK),
   eq = (0, Chunk473749.createContext)(null),
   eQ = () => {
-    var e = (0, Chunk473749.useContext)(eq);
-    if (!module) throw Error("The `useSlate` hook must be used inside the <Slate> component's context.");
+    var e = (0, c.useContext)(eq);
+    if (!e) throw Error("The `useSlate` hook must be used inside the <Slate> component's context.");
     var {
       editor: t
-    } = module;
-    return exports
+    } = e;
+    return t
   },
   eX = 3,
   eJ = {
@@ -874,26 +874,26 @@ class e5 extends Chunk473749.Component {
     var e, {
       node: t
     } = this.props;
-    if (!exports.current) throw Error("Failed to attach MutationObserver, `node` is undefined");
-    null == (e = this.mutationObserver) || module.observe(exports.current, e4)
+    if (!t.current) throw Error("Failed to attach MutationObserver, `node` is undefined");
+    null == (e = this.mutationObserver) || e.observe(t.current, e4)
   }
   componentDidMount() {
     var {
       receivedUserInput: e
     } = this.props, t = this.context;
-    this.manager = e2(exports, module), this.mutationObserver = new MutationObserver(this.manager.registerMutations), this.observe()
+    this.manager = e2(t, e), this.mutationObserver = new MutationObserver(this.manager.registerMutations), this.observe()
   }
   getSnapshotBeforeUpdate() {
-    var e, t, n, r, i = null == (e = this.mutationObserver) ? true : module.takeRecords();
-    return null != i && i.length && (null == (r = this.manager) || Chunk653603.registerMutations(i)), null == (t = this.mutationObserver) || exports.disconnect(), null == (n = this.manager) || require.restoreDOM(), null
+    var e, t, n, r, i = null == (e = this.mutationObserver) ? true : e.takeRecords();
+    return null != i && i.length && (null == (r = this.manager) || r.registerMutations(i)), null == (t = this.mutationObserver) || t.disconnect(), null == (n = this.manager) || n.restoreDOM(), null
   }
   componentDidUpdate() {
     var e;
-    null == (e = this.manager) || module.clear(), this.observe()
+    null == (e = this.manager) || e.clear(), this.observe()
   }
   componentWillUnmount() {
     var e;
-    null == (e = this.mutationObserver) || module.disconnect()
+    null == (e = this.mutationObserver) || e.disconnect()
   }
   render() {
     return this.props.children
@@ -1520,10 +1520,10 @@ function tm(e) {
 }
 
 function th() {
-  var e = (0, Chunk473749.useRef)(false);
-  return (0, Chunk473749.useEffect)(() => (module.current = true, () => {
-    module.current = false
-  }), []), module.current
+  var e = (0, c.useRef)(false);
+  return (0, c.useEffect)(() => (e.current = true, () => {
+    e.current = false
+  }), []), e.current
 }
 
 function tg(e, t, n) {
@@ -1580,20 +1580,20 @@ function tv(e) {
 
 function tS() {
   var e = ex(),
-    t = (0, Chunk473749.useRef)(false),
-    n = (0, Chunk473749.useRef)(0),
-    r = (0, Chunk473749.useCallback)(() => {
-      if (!exports.current) {
-        exports.current = true;
-        var r = ey.getWindow(module);
-        Chunk653603.cancelAnimationFrame(require.current), require.current = Chunk653603.requestAnimationFrame(() => {
-          exports.current = false
+    t = (0, c.useRef)(false),
+    n = (0, c.useRef)(0),
+    r = (0, c.useCallback)(() => {
+      if (!t.current) {
+        t.current = true;
+        var r = ey.getWindow(e);
+        r.cancelAnimationFrame(n.current), n.current = r.requestAnimationFrame(() => {
+          t.current = false
         })
       }
     }, []);
-  return (0, Chunk473749.useEffect)(() => () => cancelAnimationFrame(require.current), []), {
-    receivedUserInput: exports,
-    onUserInput: Chunk653603
+  return (0, c.useEffect)(() => () => cancelAnimationFrame(n.current), []), {
+    receivedUserInput: t,
+    onUserInput: r
   }
 }
 var tI = ["autoFocus", "decorate", "onDOMBeforeInput", "placeholder", "readOnly", "renderElement", "renderLeaf", "renderPlaceholder", "scrollSelectionIntoView", "style", "as", "disableDefaultStyles"],
@@ -2308,7 +2308,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
     return null != n ? n : e.defaultPrevented
   },
   tj = (0, Chunk473749.createContext)(false),
-  tM = () => (0, Chunk473749.useContext)(tj);
+  tM = () => (0, c.useContext)(tj);
 
 function tk(e) {
   return e instanceof Error

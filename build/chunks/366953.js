@@ -10,7 +10,7 @@ let i = "recentBuildOverrides";
 
 function a() {
   var e;
-  return (null != (e = Chunk433517.K.get(i)) ? module : []).filter(e => null == e.exp || e.exp > Date.now())
+  return (null != (e = r.K.get(i)) ? e : []).filter(e => null == e.exp || e.exp > Date.now())
 }
 
 function o(e, t) {

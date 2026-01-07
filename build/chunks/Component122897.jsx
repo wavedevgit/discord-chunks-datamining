@@ -17,18 +17,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function _() {
-  let e = (0, Chunk580183.m)(),
-    t = Chunk473749.useMemo(() => (0, Chunk78451.c7)(), []);
-  return (0, Chunk54381.jsxs)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
-    children: [(0, Chunk54381.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t.tiCXaH),
-      description: Chunk388032.intl.format(Chunk388032.t.RvjRRI, {
-        appealLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SAFE_DIRECT_MESSAGING)
+  let e = (0, c.m)(),
+    t = i.useMemo(() => (0, s.c7)(), []);
+  return (0, r.jsxs)(u.U, {
+    setting: d.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
+    children: [(0, r.jsx)(u.H, {
+      header: p.intl.string(p.t.tiCXaH),
+      description: p.intl.format(p.t.RvjRRI, {
+        appealLink: o.Z.getArticleURL(f.BhN.SAFE_DIRECT_MESSAGING)
       })
-    }), (0, Chunk54381.jsx)(Chunk793030.Eep, {
-      value: module,
-      options: exports,
+    }), (0, r.jsx)(a.Eep, {
+      value: e,
+      options: t,
       onChange: e => l.Xr.updateSetting(e)
     })]
   })

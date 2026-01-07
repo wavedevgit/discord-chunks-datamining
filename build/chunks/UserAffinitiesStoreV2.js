@@ -72,7 +72,7 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
     this.syncWith([o.Z], m)
   }
   shouldFetch() {
-    if (!f) return Date.now() - _.lastFetched > Chunk496232.K
+    if (!f) return Date.now() - _.lastFetched > s.K
   }
   isFetching() {
     return f

@@ -24,49 +24,49 @@ function g() {
     embeddedActivity: e,
     channelId: n,
     guildId: t
-  } = (0, Chunk442837.cj)([Chunk317381.ZP], () => {
-    let e = Chunk317381.ZP.getCurrentEmbeddedActivity(),
-      n = (0, Chunk16609.p)(null == module ? true : module.location),
-      t = (0, Chunk16609.j)(null == module ? true : module.location);
+  } = (0, c.cj)([s.ZP], () => {
+    let e = s.ZP.getCurrentEmbeddedActivity(),
+      n = (0, f.p)(null == e ? true : e.location),
+      t = (0, f.j)(null == e ? true : e.location);
     return {
-      embeddedActivity: module,
-      channelId: exports,
-      guildId: require
+      embeddedActivity: e,
+      channelId: n,
+      guildId: t
     }
-  }), g = Chunk473749.useRef(null), v = (0, Chunk110924.Z)(module);
-  Chunk473749.useEffect(() => {
-    null != module ? clearTimeout(g.current) : null != v && null == module && (g.current = window.setTimeout(() => {
-      (0, Chunk788983.close)(Chunk981631.KJ3.ACTIVITY_POPOUT)
+  }), g = o.useRef(null), v = (0, i.Z)(e);
+  o.useEffect(() => {
+    null != e ? clearTimeout(g.current) : null != v && null == e && (g.current = window.setTimeout(() => {
+      (0, u.close)(_.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
-  }, [module, v]);
-  let C = (0, Chunk442837.e7)([Chunk812206.Z], () => {
-      let n = null == module ? true : module.applicationId;
-      return null == exports ? true : Chunk812206.Z.getApplication(exports)
+  }, [e, v]);
+  let C = (0, c.e7)([l.Z], () => {
+      let n = null == e ? true : e.applicationId;
+      return null == n ? true : l.Z.getApplication(n)
     }),
-    x = (0, Chunk426419.P)();
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk350325.container,
-    children: null == module || null == C ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      className: Chunk350325.iframe
-    }) : (0, Chunk54381.jsx)("div", {
-      className: Chunk350325.loadedContentContainer,
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk350325.iframeAndHeaderContainer,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk350325.headerContainer,
-          children: (0, Chunk54381.jsx)(Chunk325749.Z, {
+    x = (0, b.P)();
+  return (0, a.jsx)("div", {
+    className: h.container,
+    children: null == e || null == C ? (0, a.jsx)(r.$jN, {
+      className: h.iframe
+    }) : (0, a.jsx)("div", {
+      className: h.loadedContentContainer,
+      children: (0, a.jsxs)("div", {
+        className: h.iframeAndHeaderContainer,
+        children: [(0, a.jsx)("div", {
+          className: h.headerContainer,
+          children: (0, a.jsx)(m.Z, {
             applicationId: C.id,
-            channelId: exports
+            channelId: n
           })
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk350325.iframeContainer,
-          children: (0, Chunk54381.jsx)(Chunk781780.Z, {
-            channelId: exports,
-            guildId: require,
-            embeddedActivity: module,
+        }), (0, a.jsx)("div", {
+          className: h.iframeContainer,
+          children: (0, a.jsx)(p.Z, {
+            channelId: n,
+            guildId: t,
+            embeddedActivity: e,
             application: C
           })
-        }), x ? (0, Chunk54381.jsx)(Chunk554370.Z, {
+        }), x ? (0, a.jsx)(d.Z, {
           isEmbeddedActivity: true
         }) : null]
       })

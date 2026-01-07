@@ -35,25 +35,25 @@ class _ extends(r = Chunk473749.PureComponent) {
       max: t,
       renderUser: n = this.defaultRenderUser,
       renderMoreUsers: r
-    } = this.props, i = [], a = module.length === exports ? module.length : exports - 1, o = 0;
-    for (; Chunk120356 < Chunk473749 && Chunk120356 < module.length;) {
-      let t = Chunk120356 === module.length - 1;
-      Chunk54381.push(require(module[Chunk120356] || null, exports ? null : Chunk959246.avatarMasked, "user-".concat(Chunk120356), exports)), Chunk120356++
+    } = this.props, i = [], a = e.length === t ? e.length : t - 1, o = 0;
+    for (; o < a && o < e.length;) {
+      let t = o === e.length - 1;
+      i.push(n(e[o] || null, t ? null : u.avatarMasked, "user-".concat(o), t)), o++
     }
-    if (Chunk120356 < module.length) {
-      let t = Math.min(module.length - Chunk120356, 99);
-      Chunk54381.push(r("+".concat(exports), Chunk959246.moreUsers, "more-users", exports))
+    if (o < e.length) {
+      let t = Math.min(e.length - o, 99);
+      i.push(r("+".concat(t), u.moreUsers, "more-users", t))
     }
-    return Chunk54381
+    return i
   }
   renderIcon() {
-    return this.props.icon ? (0, Chunk54381.jsx)("div", {
-      className: Chunk959246.iconContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.gj8, {
+    return this.props.icon ? (0, i.jsx)("div", {
+      className: u.iconContainer,
+      children: (0, i.jsx)(l.gj8, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk959246.foreground,
-        className: Chunk959246.icon
+        colorClass: u.foreground,
+        className: u.icon
       })
     }) : null
   }
@@ -61,8 +61,8 @@ class _ extends(r = Chunk473749.PureComponent) {
     let {
       className: e
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: s()(module, Chunk959246.container),
+    return (0, i.jsxs)("div", {
+      className: s()(e, u.container),
       ref: e => {
         this._ref = e
       },

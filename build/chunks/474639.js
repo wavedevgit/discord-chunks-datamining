@@ -101,10 +101,10 @@ class C extends Chunk147913.Z {
   }
   handleClipsAllowVoiceRecordingUpdate() {
     var e;
-    null == (e = Chunk19780.Z.getUserIds()) || module.forEach(e => this.maybeShowClipsWarning(e))
+    null == (e = f.Z.getUserIds()) || e.forEach(e => this.maybeShowClipsWarning(e))
   }
   handlePostConnectionOpen() {
-    if ((0, Chunk779618.Z)(Chunk131951.Z)) this.applyNativeClipsSettings(), (0, Chunk924557.w2)() && (this.loadClipsFromStorage(), (null == Chunk435064.Z.getHardwareClassification() || null == Chunk435064.Z.getHardwareClassificationForDecoupled() || Chunk435064.Z.getHardwareClassificationVersion() !== Chunk356659.WM) && this.classifyHardwareAndTrack().then(e => {
+    if ((0, y.Z)(d.Z)) this.applyNativeClipsSettings(), (0, g.w2)() && (this.loadClipsFromStorage(), (null == E.Z.getHardwareClassification() || null == E.Z.getHardwareClassificationForDecoupled() || E.Z.getHardwareClassificationVersion() !== v.WM) && this.classifyHardwareAndTrack().then(e => {
       i.Z.dispatch({
         type: "CLIPS_CLASSIFY_HARDWARE",
         classification: e
@@ -134,35 +134,35 @@ class C extends Chunk147913.Z {
         gpuModels: e,
         classification: t
       } = await (async () => {
-        let e = await (0, Chunk704806.q)();
-        if ((null == module ? true : module.gpus) != null) {
-          let t = module.gpus.map(e => e.brand),
-            n = this.classifyHardware(exports);
+        let e = await (0, _.q)();
+        if ((null == e ? true : e.gpus) != null) {
+          let t = e.gpus.map(e => e.brand),
+            n = this.classifyHardware(t);
           return {
-            gpuModels: exports,
-            classification: require
+            gpuModels: t,
+            classification: n
           }
         } {
-          let e = (await Chunk579806.Z.processUtils.getSystemInfo()).gpus.map(e => {
+          let e = (await o.Z.processUtils.getSystemInfo()).gpus.map(e => {
               let {
                 model: t
               } = e;
               return t
             }),
-            t = this.classifyHardware(module);
+            t = this.classifyHardware(e);
           return {
-            gpuModels: module,
-            classification: exports
+            gpuModels: e,
+            classification: t
           }
         }
       })();
-      return Chunk626135.default.track(Chunk981631.rMx.CLIPS_HARDWARE_CLASSIFICATION, {
-        classification: exports,
-        version: Chunk356659.WM,
-        gpu_models: module
-      }), exports
+      return m.default.track(S.rMx.CLIPS_HARDWARE_CLASSIFICATION, {
+        classification: t,
+        version: v.WM,
+        gpu_models: e
+      }), t
     } catch (e) {
-      return Chunk894694.xH.UNKNOWN
+      return b.xH.UNKNOWN
     }
   }
   classifyHardware(e) {

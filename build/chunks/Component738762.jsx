@@ -39,19 +39,19 @@ function f(e) {
       partiedMembers: f
     } = e,
     g = i.useContext(c.AnalyticsContext),
-    h = n.map(e => {
+    m = n.map(e => {
       let {
         user: t
       } = e;
       return t.id
     }),
-    m = 1 === f.length && 1 === n.length,
+    h = 1 === f.length && 1 === n.length,
     b = n.length - f.length > 0;
-  return (m || t) && !b && 0 !== h.length ? (0, r.jsx)(l.sNh, {
+  return (h || t) && !b && 0 !== m.length ? (0, r.jsx)(l.sNh, {
     id: "message",
     action: function() {
       a.Z.openPrivateChannel({
-        recipientIds: h
+        recipientIds: m
       }).then(t => {
         var n, r;
         return o.ZP.trackWithMetadata(u.rMx.ACTIVITY_FEED_DM_VISITED, p({
@@ -68,7 +68,7 @@ function f(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
           }), n),
           channel_id: t,
-          recipient_id: "string" == typeof h ? h : h[0],
+          recipient_id: "string" == typeof m ? m : m[0],
           af_recently_played: false
         }, (0, s.y)(e)))
       })

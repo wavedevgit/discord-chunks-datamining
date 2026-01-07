@@ -46,15 +46,15 @@ function S(e) {
 
 function T() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
-    t = module > 0 ? true : () => {
+    t = e > 0 ? true : () => {
       if (!S(i.listening)) return;
       let e = i.address().port;
-      I.info("Starting on ".concat(module)), Chunk570140.Z.dispatch({
+      I.info("Starting on ".concat(e)), s.Z.dispatch({
         type: "RPC_SERVER_READY",
-        port: module
+        port: e
       })
     };
-  i.listen(Chunk981631.V6Z + module % Chunk981631.frH, "127.0.0.1", exports)
+  i.listen(_.V6Z + e % _.frH, "127.0.0.1", t)
 }
 
 function N(e, t, n) {
@@ -139,7 +139,7 @@ class A extends Chunk836560.EventEmitter {
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
         },
         s = new x(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
-      if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+      if (l)(0, h.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
       }).catch(e => {
@@ -169,7 +169,7 @@ class A extends Chunk836560.EventEmitter {
     }
     I.info("Socket Opened: ".concat(r.id)), e.on("error", e => I.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
       I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), o().remove(C, e => e === r), this.emit("disconnect", r)
-    }), (0, m.em)(r, l, i.get("client_id")).then(() => {
+    }), (0, h.em)(r, l, i.get("client_id")).then(() => {
       C.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {
       let {
@@ -196,12 +196,12 @@ class A extends Chunk836560.EventEmitter {
     let t = 0;
     (i = v.http.createServer()).on("error", e => {
       I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
-    }), i.on("request", this.handleRequest.bind(this)), T(exports);
+    }), i.on("request", this.handleRequest.bind(this)), T(t);
     let n = {
-      instanceId: null != (e = i.instanceId) ? module : 0,
+      instanceId: null != (e = i.instanceId) ? e : 0,
       server: i
     };
-    new v.ws.Server(require).on("connection", e => this.handleConnection(e))
+    new v.ws.Server(n).on("connection", e => this.handleConnection(e))
   }
 }
 let Z = new A

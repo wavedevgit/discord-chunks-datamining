@@ -64,9 +64,9 @@ var g = function(e) {
 }({});
 
 function E() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = (0, Chunk494450.l)(null == module ? true : module.id);
-  return null != exports ? exports : null
+  let e = (0, a.e7)([l.default], () => l.default.getCurrentUser()),
+    t = (0, d.l)(null == e ? true : e.id);
+  return null != t ? t : null
 }
 let b = e => (0, a.e7)([s.Z], () => {
   if (null == e) return null;
@@ -75,24 +75,24 @@ let b = e => (0, a.e7)([s.Z], () => {
 });
 
 function y() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = (0, Chunk111361.M5)(module, Chunk474936.PremiumTypes.TIER_2),
-    n = (0, Chunk442837.e7)([Chunk78839.Z], () => {
-      let e = Chunk78839.Z.getPremiumSubscription();
-      return null != module && exports ? module.premiumSince : null
-    }, [exports]),
-    r = b(null == module ? true : module.id);
-  return null != require ? require : Chunk913527
+  let e = (0, a.e7)([l.default], () => l.default.getCurrentUser()),
+    t = (0, u.M5)(e, f.PremiumTypes.TIER_2),
+    n = (0, a.e7)([c.Z], () => {
+      let e = c.Z.getPremiumSubscription();
+      return null != e && t ? e.premiumSince : null
+    }, [t]),
+    r = b(null == e ? true : e.id);
+  return null != n ? n : r
 }
 let O = () => {
-    let e = Object.values(Chunk474936.vK),
-      t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-      n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription());
-    if (!(0, Chunk111361.M5)(exports, Chunk474936.PremiumTypes.TIER_2) || null == require || null == require.premiumSince) return null;
+    let e = Object.values(f.vK),
+      t = (0, a.e7)([l.default], () => l.default.getCurrentUser()),
+      n = (0, a.e7)([c.Z], () => c.Z.getPremiumTypeSubscription());
+    if (!(0, u.M5)(t, f.PremiumTypes.TIER_2) || null == n || null == n.premiumSince) return null;
     let r = i()(),
-      o = i()(require.premiumSince).add(1, "day"),
-      s = Chunk913527.diff(Chunk291175, "months");
-    return module.reduce((e, t) => {
+      o = i()(n.premiumSince).add(1, "day"),
+      s = r.diff(o, "months");
+    return e.reduce((e, t) => {
       let {
         id: n,
         tenureReqNumMonths: r
@@ -102,30 +102,30 @@ let O = () => {
   },
   v = () => {
     let e = E(),
-      t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription());
-    return null == module || null == exports || null == exports.premiumSince ? null : (0, Chunk291175.RZ)(module, exports.premiumSince)
+      t = (0, a.e7)([c.Z], () => c.Z.getPremiumTypeSubscription());
+    return null == e || null == t || null == t.premiumSince ? null : (0, o.RZ)(e, t.premiumSince)
   },
   S = () => {
     let e = y(),
-      t = Object.values(Chunk474936.vK);
-    if (null == module || null == exports) return null;
-    let n = i()().diff(module, "days"),
-      r = exports[0],
-      a = 30 * Chunk913527.tenureReqNumMonths - require;
-    return Chunk442837 <= 0 ? null : h(_({}, Chunk913527), {
-      daysLeft: Chunk442837,
+      t = Object.values(f.vK);
+    if (null == e || null == t) return null;
+    let n = i()().diff(e, "days"),
+      r = t[0],
+      a = 30 * r.tenureReqNumMonths - n;
+    return a <= 0 ? null : h(_({}, r), {
+      daysLeft: a,
       status: "upcoming"
     })
   },
   I = () => {
-    let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-      t = T(null == module ? true : module.id),
+    let e = (0, a.e7)([l.default], () => l.default.getCurrentUser()),
+      t = T(null == e ? true : e.id),
       n = v(),
       r = S();
-    return null != exports ? h(_({}, exports), {
-      earnedOnDate: require,
+    return null != t ? h(_({}, t), {
+      earnedOnDate: n,
       status: "earned"
-    }) : null != Chunk913527 ? Chunk913527 : null
+    }) : null != r ? r : null
   },
   T = e => {
     let t = (0, d.l)(e);

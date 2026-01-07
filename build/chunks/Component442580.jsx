@@ -16,20 +16,20 @@ class u extends Chunk473749.PureComponent {
     let {
       screenshare: e
     } = this.props;
-    if (null == module) return (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      type: Chunk481060.$jN.Type.SPINNING_CIRCLE
+    if (null == e) return (0, r.jsx)(o.$jN, {
+      type: o.$jN.Type.SPINNING_CIRCLE
     });
-    let t = l().map(module, (e, t) => {
+    let t = l().map(e, (e, t) => {
       if (!(c.al[t] || true === e)) return (0, r.jsx)(c.ck, {
         label: t,
         value: e
       }, t)
     });
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    return (0, r.jsxs)(o.Kqy, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk388032.t["gWbr/U"])
-      }), (0, Chunk481250.VE)(exports)]
+        children: d.intl.string(d.t["gWbr/U"])
+      }), (0, s.VE)(t)]
     })
   }
 }

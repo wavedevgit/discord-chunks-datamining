@@ -50,12 +50,12 @@ function g(e, t) {
 }
 
 function b() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk433461.footer,
-    children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+  return (0, i.jsx)("div", {
+    className: h.footer,
+    children: (0, i.jsx)(r.Button, {
       variant: "active",
       size: "sm",
-      text: Chunk388032.intl.string(Chunk388032.t.U76Ft2),
+      text: f.intl.string(f.t.U76Ft2),
       fullWidth: true
     })
   })

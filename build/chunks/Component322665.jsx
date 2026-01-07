@@ -8,11 +8,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk670837 = require("./670837.js");
 
 function l() {
-  let e = (0, Chunk648113.C)();
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk670837.gradientBackground,
-    children: (0, Chunk54381.jsx)("div", {
-      className: module
+  let e = (0, r.C)();
+  return (0, a.jsx)("div", {
+    className: i.gradientBackground,
+    children: (0, a.jsx)("div", {
+      className: e
     })
   })
 }

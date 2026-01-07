@@ -54,14 +54,14 @@ class o {
     var e;
     return this.focusManager.getNextFocusableElement({
       wrap: false,
-      from: null != (e = this.currentHoveredNode) ? module : true
+      from: null != (e = this.currentHoveredNode) ? e : true
     })
   }
   getPreviousDropTarget() {
     var e;
     return this.focusManager.getPreviousFocusableElement({
       wrap: false,
-      from: null != (e = this.currentHoveredNode) ? module : true
+      from: null != (e = this.currentHoveredNode) ? e : true
     })
   }
   getViableTargets(e) {

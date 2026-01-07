@@ -12,19 +12,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.J9)(Chunk313789.n.TEXT_TO_SPEECH_NOTIFICATIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.JZxxGx),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.HDLtJl),
-  useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getTTSType()),
+  useTitle: () => T.intl.string(T.t.JZxxGx),
+  useSubtitle: () => T.intl.string(T.t.HDLtJl),
+  useValue: () => (0, i.e7)([r.Z], () => r.Z.getTTSType()),
   setValue: t => l.default.setTTSType(t),
   useOptions: () => [{
-    name: Chunk388032.intl.string(Chunk388032.t.B1AGeJ),
-    value: Chunk981631.PrB.ALL_CHANNELS
+    name: T.intl.string(T.t.B1AGeJ),
+    value: o.PrB.ALL_CHANNELS
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.uzZg9e),
-    value: Chunk981631.PrB.SELECTED_CHANNEL
+    name: T.intl.string(T.t.uzZg9e),
+    value: o.PrB.SELECTED_CHANNEL
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.DYO5Oi),
-    value: Chunk981631.PrB.NEVER
+    name: T.intl.string(T.t.DYO5Oi),
+    value: o.PrB.NEVER
   }],
-  usePredicate: () => Chunk419363.Zh
+  usePredicate: () => s.Zh
 })

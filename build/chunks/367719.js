@@ -12,5 +12,5 @@ let s = (0, Chunk468194.Mg)(Chunk477690.Z.GUILD_ROLE_SUBSCRIPTION_CARD_BASIC_INF
   l = (0, Chunk468194.Mg)(Chunk477690.Z.GUILD_ROLE_SUBSCRIPTION_CARD_BASIC_INFO_TIER_IMAGE_SIZE_MOBILE);
 
 function c() {
-  return (0, Chunk131388.Z)(Chunk293810.iP) ? l : s
+  return (0, a.Z)(o.iP) ? l : s
 }

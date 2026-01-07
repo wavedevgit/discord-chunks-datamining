@@ -16,15 +16,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk130081 = require("./130081.js");
 let _ = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["sqUm+k"]), Chunk388032.intl.string(Chunk388032.t.I1Zuq0), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
-  usePredicate: () => (0, Chunk442837.e7)([Chunk131951.Z], () => {
-    let t = Chunk131951.Z.getMode(),
-      e = Chunk131951.Z.isInputProfileCustom();
-    return module === Chunk65154.pM.VOICE_ACTIVITY && exports
+  useSearchTerms: () => [E.intl.string(E.t["sqUm+k"]), E.intl.string(E.t.I1Zuq0), E.intl.string(E.t.nuFtHH)],
+  usePredicate: () => (0, u.e7)([o.Z], () => {
+    let t = o.Z.getMode(),
+      e = o.Z.isInputProfileCustom();
+    return t === c.pM.VOICE_ACTIVITY && e
   }),
   Component: function() {
-    let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getModeOptions().autoThreshold),
-      e = Chunk473749.useCallback(t => {
+    let t = (0, u.e7)([o.Z], () => o.Z.getModeOptions().autoThreshold),
+      e = l.useCallback(t => {
         let e = o.Z.getMode(),
           {
             threshold: n
@@ -34,57 +34,57 @@ let _ = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
           threshold: n
         })
       }, []),
-      n = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_VAD)),
+      n = (0, u.e7)([o.Z], () => o.Z.supports(c.AN.AUTOMATIC_VAD)),
       {
         volume: a,
         isSpeaking: T
-      } = (0, Chunk269876.Kq)(),
-      _ = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isEnabled()),
-      g = Chunk473749.useMemo(() => !_ && (0, Chunk54381.jsx)("div", {
-        className: Chunk130081.noInputDevicesDetectedWarning,
-        children: (0, Chunk54381.jsx)(Chunk793030.M14, {
+      } = (0, S.Kq)(),
+      _ = (0, u.e7)([o.Z], () => o.Z.isEnabled()),
+      g = l.useMemo(() => !_ && (0, i.jsx)("div", {
+        className: d.noInputDevicesDetectedWarning,
+        children: (0, i.jsx)(s.M14, {
           type: "warning",
-          children: Chunk388032.intl.format(Chunk388032.t["O13I+O"], {
-            onEnableClick: () => Chunk846027.Z.enable(true)
+          children: E.intl.format(E.t["O13I+O"], {
+            onEnableClick: () => r.Z.enable(true)
           })
         })
       }), [_]),
-      I = Chunk473749.useMemo(() => module ? Chunk388032.intl.string(Chunk388032.t.JsbzjA) : Chunk388032.intl.string(Chunk388032.t.MLmyMY), [module]),
-      N = Chunk473749.useId(),
-      A = Chunk473749.useId();
-    return require ? (0, Chunk54381.jsxs)("fieldset", {
+      I = l.useMemo(() => t ? E.intl.string(E.t.JsbzjA) : E.intl.string(E.t.MLmyMY), [t]),
+      N = l.useId(),
+      A = l.useId();
+    return n ? (0, i.jsxs)("fieldset", {
       "aria-describedby": A,
-      children: [(0, Chunk54381.jsx)(Chunk793030.nn4, {
+      children: [(0, i.jsx)(s.nn4, {
         tag: "legend",
         id: N,
-        children: Chunk388032.intl.string(Chunk388032.t.GByLar)
-      }), (0, Chunk54381.jsx)(Chunk793030.nn4, {
+        children: E.intl.string(E.t.GByLar)
+      }), (0, i.jsx)(s.nn4, {
         id: A,
         children: I
-      }), (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+      }), (0, i.jsxs)(s.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: [(0, Chunk54381.jsx)(Chunk793030.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.lY6j47),
+        children: [(0, i.jsx)(s.rsf, {
+          label: E.intl.string(E.t.lY6j47),
           description: I,
-          checked: module,
-          onChange: exports
-        }), module ? (0, Chunk54381.jsx)(Chunk269876.NP, {
-          isSpeaking: Chunk313789,
-          className: Chunk130081.autoThresholdSlider,
+          checked: t,
+          onChange: e
+        }), t ? (0, i.jsx)(S.NP, {
+          isSpeaking: T,
+          className: d.autoThresholdSlider,
           ariaDescribedBy: A,
           ariaLabelledBy: N
-        }) : (0, Chunk54381.jsx)(Chunk269876.t8, {
-          volume: Chunk509613,
+        }) : (0, i.jsx)(S.t8, {
+          volume: a,
           ariaDescribedBy: A,
           ariaLabelledBy: N
         }), g]
       })]
-    }) : (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+    }) : (0, i.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 8,
-      children: [(0, Chunk54381.jsx)(Chunk793030.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
+      children: [(0, i.jsx)(s.gNt, {
+        label: E.intl.string(E.t["sqUm+k"]),
         description: I,
         layout: "vertical",
         children: e => t ? (0, i.jsx)(S.NP, {

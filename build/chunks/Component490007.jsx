@@ -26,13 +26,13 @@ let p = [{
   };
 
 function h() {
-  let [e, t] = Chunk473749.useState("virtual-currency"), n = Chunk473749.useMemo(() => f[module], [module]);
-  return (0, Chunk54381.jsxs)("div", {
-    className: l()(Chunk663618.panel, Chunk13408.container),
-    children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
-      className: Chunk13408.tabBar,
-      selectedItem: module,
-      onItemSelect: exports,
+  let [e, t] = r.useState("virtual-currency"), n = r.useMemo(() => f[e], [e]);
+  return (0, a.jsxs)("div", {
+    className: l()(u.panel, m.container),
+    children: [(0, a.jsx)(o.njP, {
+      className: m.tabBar,
+      selectedItem: e,
+      onItemSelect: t,
       look: "brand",
       type: "top",
       orientation: "horizontal",
@@ -40,10 +40,10 @@ function h() {
         id: e.id,
         children: e.name
       }, e.id))
-    }), (0, Chunk54381.jsx)(Chunk793030.w0Z, {
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk13408.content,
-        children: (0, Chunk54381.jsx)(require, {})
+    }), (0, a.jsx)(s.w0Z, {
+      children: (0, a.jsx)("div", {
+        className: m.content,
+        children: (0, a.jsx)(n, {})
       })
     })]
   })

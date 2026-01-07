@@ -12,38 +12,38 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk245315 = require("./245315.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk37857 = require("./37857.js");
-let u = () => (0, Chunk54381.jsxs)(Chunk600164.Z, {
-  align: Chunk600164.Z.Align.CENTER,
-  justify: Chunk600164.Z.Justify.CENTER,
-  direction: Chunk600164.Z.Direction.VERTICAL,
-  className: Chunk37857.popout,
-  children: [(0, Chunk54381.jsx)("img", {
+let u = () => (0, r.jsxs)(o.Z, {
+  align: o.Z.Align.CENTER,
+  justify: o.Z.Justify.CENTER,
+  direction: o.Z.Direction.VERTICAL,
+  className: c.popout,
+  children: [(0, r.jsx)("img", {
     alt: "",
-    src: (0, Chunk245315.QA)(),
-    className: Chunk37857.avatar
-  }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-    align: Chunk600164.Z.Align.CENTER,
-    justify: Chunk600164.Z.Justify.CENTER,
-    className: Chunk37857.nameWrapper,
-    children: [(0, Chunk54381.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.oMx98L),
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk37857.staffBadge
+    src: (0, s.QA)(),
+    className: c.avatar
+  }), (0, r.jsxs)(o.Z, {
+    align: o.Z.Align.CENTER,
+    justify: o.Z.Justify.CENTER,
+    className: c.nameWrapper,
+    children: [(0, r.jsx)(i.u, {
+      text: l.intl.string(l.t.oMx98L),
+      children: (0, r.jsx)("div", {
+        className: c.staffBadge
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk37857.header,
+    }), (0, r.jsx)(a.Heading, {
+      className: c.header,
       variant: "heading-md/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.xfAlNx)
+      children: l.intl.string(l.t.xfAlNx)
     })]
-  }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-    className: Chunk37857.description,
+  }), (0, r.jsx)(a.Text, {
+    className: c.description,
     color: "text-default",
     variant: "text-sm/normal",
-    children: Chunk388032.intl.string(Chunk388032.t.BUZ0sl)
-  }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-    className: Chunk37857.description,
+    children: l.intl.string(l.t.BUZ0sl)
+  }), (0, r.jsx)(a.Text, {
+    className: c.description,
     color: "text-default",
     variant: "text-sm/normal",
-    children: Chunk388032.intl.string(Chunk388032.t.w5beJH)
+    children: l.intl.string(l.t.w5beJH)
   })]
 })

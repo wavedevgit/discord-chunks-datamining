@@ -265,13 +265,13 @@ function k(e) {
 function U() {
   let {
     enableNewRequestBehavior: e
-  } = Chunk704161.Z.useConfig({
+  } = g.Z.useConfig({
     location: "useQuestBarQuest"
-  }), t = (0, Chunk725096.Z)(Chunk49436.Ok.DESKTOP_ACCOUNT_PANEL_AREA), n = (0, Chunk442837.e7)([Chunk616022.Z], () => {
+  }), t = (0, O.Z)(h.Ok.DESKTOP_ACCOUNT_PANEL_AREA), n = (0, o.e7)([m.Z], () => {
     var e, t;
-    return null != (t = null != (e = Chunk616022.Z.questDeliveryOverride) ? module : (0, Chunk862657.PM)(Chunk616022.Z.quests, Chunk616022.Z.questToDeliverForPlacement, Chunk49436.Ok.DESKTOP_ACCOUNT_PANEL_AREA)) ? exports : null
+    return null != (t = null != (e = m.Z.questDeliveryOverride) ? e : (0, S.PM)(m.Z.quests, m.Z.questToDeliverForPlacement, h.Ok.DESKTOP_ACCOUNT_PANEL_AREA)) ? t : null
   });
-  return module ? exports : require
+  return e ? t : n
 }
 
 function G(e) {

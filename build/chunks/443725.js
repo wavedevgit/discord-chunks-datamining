@@ -30,9 +30,9 @@ var Chunk161796 = require("./161796.js"),
   },
   c = function() {
     function e() {
-      a(this, module)
+      a(this, e)
     }
-    return i(module, null, [{
+    return i(e, null, [{
       key: "create",
       value: function(e) {
         if (e.outputRange && "string" == typeof e.outputRange[0]) return p(e);
@@ -51,7 +51,7 @@ var Chunk161796 = require("./161796.js"),
             return u(e, n[o], n[o + 1], t[o], t[o + 1], r, i, a)
           }
       }
-    }]), module
+    }]), e
   }();
 
 function u(e, t, n, r, i, a, o, s) {

@@ -27,25 +27,25 @@ function u(e) {
 }
 
 function d() {
-  let [e, t] = Chunk473749.useState(null), [n, r] = Chunk473749.useState(null), [a, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState(Chunk473749.createRef()), d = Chunk473749.useCallback(e => {
+  let [e, t] = i.useState(null), [n, r] = i.useState(null), [a, o] = i.useState(null), [c, u] = i.useState(i.createRef()), d = i.useCallback(e => {
     t(e.interactionType), r(e.interactionSource), o(e.interactionSourceId)
-  }, []), f = Chunk473749.useCallback(e => {
+  }, []), f = i.useCallback(e => {
     u(e)
-  }, []), p = Chunk473749.useCallback(() => {
+  }, []), p = i.useCallback(() => {
     d({
       interactionType: null,
       interactionSource: null,
       interactionSourceId: null
     })
-  }, [d]), [_, m] = Chunk473749.useState(false), [h, g] = Chunk473749.useState(null), [E] = Chunk473749.useState(new Chunk846519.V7), b = Chunk473749.useCallback(e => {
+  }, [d]), [_, m] = i.useState(false), [h, g] = i.useState(null), [E] = i.useState(new s.V7), b = i.useCallback(e => {
     g(e), m(true), null === e ? E.stop() : E.start(l._1, () => m(false))
   }, [E]);
-  return Chunk473749.useEffect(() => {
+  return i.useEffect(() => {
     E.stop()
-  }, [E]), Chunk473749.useMemo(() => ({
-    interactionType: module,
-    interactionSource: require,
-    interactionSourceId: Chunk512722,
+  }, [E]), i.useMemo(() => ({
+    interactionType: e,
+    interactionSource: n,
+    interactionSourceId: a,
     onInteraction: d,
     setInteractionToast: b,
     resetInteraction: p,
@@ -53,14 +53,14 @@ function d() {
     interactionTypeSent: h,
     interactionPopoutTargetRef: c,
     onInteractionPopoutTargetRefChange: f
-  }), [d, b, require, Chunk512722, _, module, h, p, c, f])
+  }), [d, b, n, a, _, e, h, p, c, f])
 }
 
 function f() {
-  return Chunk473749.useContext(c)
+  return i.useContext(c)
 }
 
 function p() {
   let e = f();
-  return o()(null != module, "must use useUserProfileInteractionContext within a UserProfileInteractionContextProvider"), module
+  return o()(null != e, "must use useUserProfileInteractionContext within a UserProfileInteractionContextProvider"), e
 }

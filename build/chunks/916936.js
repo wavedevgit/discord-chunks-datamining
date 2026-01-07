@@ -9,6 +9,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk643620 = require("./643620.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.k4)(Chunk313789.n.REGISTERED_GAMES_CURRENT_GAME_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["MY9/Oe"]),
-  buildLayout: () => [Chunk643620.f, Chunk909214.V]
+  useTitle: () => r.intl.string(r.t["MY9/Oe"]),
+  buildLayout: () => [u.f, s.V]
 })

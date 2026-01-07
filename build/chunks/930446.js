@@ -16,11 +16,11 @@ function c() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     t = Date.now();
   return null == l || d(l) ? l = {
-    uuid: (0, Chunk772848.Z)(),
-    createdAtTimestamp: exports,
-    lastUsedTimestamp: exports,
-    version: Chunk686325.EI
-  } : (module && (l.lastUsedTimestamp = exports), l)
+    uuid: (0, r.Z)(),
+    createdAtTimestamp: t,
+    lastUsedTimestamp: t,
+    version: o.EI
+  } : (e && (l.lastUsedTimestamp = t), l)
 }
 
 function u() {

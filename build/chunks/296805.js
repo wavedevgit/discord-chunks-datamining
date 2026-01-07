@@ -13,13 +13,13 @@ let s = {
   comboKeysBindGlobal: true,
   action() {
     var e;
-    let t = null != (e = Chunk914010.Z.getGuildId()) ? module : true;
-    (0, Chunk749681.transitionToGlobalDiscovery)({
-      tab: Chunk49898.GlobalDiscoveryTab.APPS,
+    let t = null != (e = a.Z.getGuildId()) ? e : true;
+    (0, r.transitionToGlobalDiscovery)({
+      tab: o.GlobalDiscoveryTab.APPS,
       newSessionState: {
-        guildId: null != exports ? exports : null,
+        guildId: null != t ? t : null,
         entrypoint: {
-          name: Chunk258971.xF.KEYBOARD_SHORTCUT
+          name: i.xF.KEYBOARD_SHORTCUT
         }
       }
     })

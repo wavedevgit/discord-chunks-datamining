@@ -189,7 +189,7 @@ function j(e, t, n) {
 }
 
 function M() {
-  Chunk817190.Z.getSearchStateIds().forEach(e => {
+  b.Z.getSearchStateIds().forEach(e => {
     let t = l.Z.getChannel(e);
     null != t && t.isPrivate() && N({
       type: S.aib.CHANNEL,

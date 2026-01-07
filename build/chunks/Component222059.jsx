@@ -153,38 +153,38 @@ function D(e) {
 }
 
 function M() {
-  let e = (0, Chunk278464.n)(),
-    t = (0, Chunk442837.e7)([Chunk941128.Z, Chunk417363.Z], () => {
-      let e = (0, Chunk339149.E)(Chunk941128.Z.activeItems, Chunk417363.Z),
+  let e = (0, E.n)(),
+    t = (0, a.e7)([C.Z, j.Z], () => {
+      let e = (0, c.E)(C.Z.activeItems, j.Z),
         {
           total: t,
           progress: n
-        } = Chunk780570.lK(module),
-        r = Chunk780570.xI(require, exports);
-      return Chunk54381 > 0 && Chunk54381 < 100
+        } = x.lK(e),
+        r = x.xI(n, t);
+      return r > 0 && r < 100
     }),
-    n = (0, Chunk849862.If)(),
-    i = Object.keys(Chunk474936.nG),
-    l = (0, Chunk975298.Z)(),
+    n = (0, p.If)(),
+    i = Object.keys(Z.nG),
+    l = (0, d.Z)(),
     {
       unviewedTrialCount: o,
       unviewedDiscountCount: s
-    } = (0, Chunk442837.cj)([Chunk431.Z], () => ({
-      unviewedTrialCount: Chunk431.Z.getUnacknowledgedOffers(Chunk473749).length,
-      unviewedDiscountCount: Chunk431.Z.getUnacknowledgedDiscountOffers().length
+    } = (0, a.cj)([O.Z], () => ({
+      unviewedTrialCount: O.Z.getUnacknowledgedOffers(i).length,
+      unviewedDiscountCount: O.Z.getUnacknowledgedDiscountOffers().length
     })),
-    u = Chunk91192.fractionalState === Chunk474936.a$.NONE ? Chunk433517 + Chunk481060 : 0,
-    f = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    g = (0, Chunk899740.q)(),
-    b = require + Chunk864682 + Chunk460181,
-    S = Chunk155409 === Chunk864682 && Chunk864682 > 0 && require + Chunk460181 === 0,
-    _ = Chunk774343.Z.getHomeLink();
-  return Chunk276952 && (_ = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(D, {
-    selected: module,
-    user: Chunk550385,
-    selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),
-    badge: Chunk155409,
-    link: Chunk682662,
-    showProgressBadge: exports
+    u = l.fractionalState === Z.a$.NONE ? o + s : 0,
+    f = (0, a.e7)([y.default], () => y.default.getCurrentUser()),
+    g = (0, h.q)(),
+    b = n + u + g,
+    S = b === u && u > 0 && n + g === 0,
+    _ = v.Z.getHomeLink();
+  return S && (_ = N.Z5c.APPLICATION_STORE), (0, r.jsx)(D, {
+    selected: e,
+    user: f,
+    selectedChannelId: m.Z.getChannelId(N.ME),
+    badge: b,
+    link: _,
+    showProgressBadge: t
   })
 }

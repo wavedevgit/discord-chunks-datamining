@@ -10,8 +10,8 @@ var Chunk925734 = require("./925734.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.PROFILE_UPDATES_NOTIFICATIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.xBLMhQ),
+  useTitle: () => a.intl.string(a.t.xBLMhQ),
   useValue: Chunk695346.a7.useSetting,
   setValue: Chunk801056.A,
-  usePredicate: () => (0, Chunk925734.oW)("user_settings.ProfileUpdatesNotifications").showSettingsToggle
+  usePredicate: () => (0, i.oW)("user_settings.ProfileUpdatesNotifications").showSettingsToggle
 })

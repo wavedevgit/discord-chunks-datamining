@@ -15,30 +15,30 @@ function o() {
 let s = function() {
   let {
     performance: e
-  } = Chunk606093.n;
-  if (!module || !module.now) return o;
-  let t = Date.now() - module.now(),
-    n = true == module.timeOrigin ? exports : module.timeOrigin;
-  return () => (require + module.now()) / a
+  } = i.n;
+  if (!e || !e.now) return o;
+  let t = Date.now() - e.now(),
+    n = true == e.timeOrigin ? t : e.timeOrigin;
+  return () => (n + e.now()) / a
 }();
 (() => {
   let {
     performance: e
-  } = Chunk606093.n;
-  if (!module || !module.now) {
+  } = i.n;
+  if (!e || !e.now) {
     r = "none";
     return
   }
   let t = 36e5,
-    n = module.now(),
+    n = e.now(),
     a = Date.now(),
-    o = module.timeOrigin ? Math.abs(module.timeOrigin + require - a) : exports,
-    s = o < exports,
-    l = module.timing && module.timing.navigationStart,
-    c = "number" == typeof l ? Math.abs(l + require - a) : exports,
-    u = c < exports;
+    o = e.timeOrigin ? Math.abs(e.timeOrigin + n - a) : t,
+    s = o < t,
+    l = e.timing && e.timing.navigationStart,
+    c = "number" == typeof l ? Math.abs(l + n - a) : t,
+    u = c < t;
   if (s || u)
-    if (o <= c) return r = "timeOrigin", module.timeOrigin;
+    if (o <= c) return r = "timeOrigin", e.timeOrigin;
     else return r = "navigationStart";
   return r = "dateNow"
 })()

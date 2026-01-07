@@ -9,6 +9,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk536527 = require("./536527.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.k4)(Chunk313789.n.CONTRAST, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["TYyfO/"]),
-  buildLayout: () => [Chunk91286.k, Chunk536527.r]
+  useTitle: () => r.intl.string(r.t["TYyfO/"]),
+  buildLayout: () => [s.k, u.r]
 })

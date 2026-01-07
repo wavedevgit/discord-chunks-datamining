@@ -41,49 +41,49 @@ function I() {
         month: 0
       }
     }
-  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), I = Chunk473749.useContext(Chunk324060.Q), T = (0, Chunk481060.dQu)(I.primaryColor).hex(), {
+  } = (0, o.e7)([c.Z], () => c.Z.getCheckpointData()), I = i.useContext(l.Q), T = (0, s.dQu)(I.primaryColor).hex(), {
     monthName: C
-  } = (0, Chunk26118.CE)(require, Chunk388032.intl.currentLocale), A = null != exports;
-  return (0, Chunk54381.jsxs)(Chunk198358.Z, {
-    className: Chunk784054.container,
-    children: [(0, Chunk54381.jsx)(Chunk275189.Z, {
-      className: Chunk784054.video,
-      slide: Chunk612776.yD.MESSAGES,
-      videoEntrySrc: Chunk946515.Z,
-      videoLoopSrc: Chunk908574.Z
-    }), (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk554445.title,
-        children: [(0, Chunk54381.jsx)(Chunk793030.kBi, {
+  } = (0, u.CE)(n, b.intl.currentLocale), A = null != t;
+  return (0, r.jsxs)(_.Z, {
+    className: O.container,
+    children: [(0, r.jsx)(d.Z, {
+      className: O.video,
+      slide: g.yD.MESSAGES,
+      videoEntrySrc: v.Z,
+      videoLoopSrc: S.Z
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
+        className: y.title,
+        children: [(0, r.jsx)(a.kBi, {
           size: "refresh_sm",
           color: T,
-          colorClass: Chunk554445.iconColor,
-          className: Chunk554445.titleIcon
-        }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+          colorClass: y.iconColor,
+          className: y.titleIcon
+        }), (0, r.jsx)(m.Z, {
           variant: "eyebrow",
-          className: Chunk554445.eyebrow,
-          children: Chunk388032.intl.format(Chunk638398.default.nPTMHj, {
-            numMessages: module
+          className: y.eyebrow,
+          children: b.intl.format(E.default.nPTMHj, {
+            numMessages: e
           })
         })]
-      }), (0, Chunk54381.jsx)(Chunk947189.Z, {
-        end: module
-      }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+      }), (0, r.jsx)(h.Z, {
+        end: e
+      }), (0, r.jsx)(m.Z, {
         variant: "heading-xxl/medium",
-        className: Chunk784054.subtitle,
-        children: A ? Chunk388032.intl.format(Chunk638398.default.ixvOza, {
-          percent: 100 - exports,
+        className: O.subtitle,
+        children: A ? b.intl.format(E.default.ixvOza, {
+          percent: 100 - t,
           percentHook: (e, t) => (0, r.jsx)(f.Z, {
             children: e
           }, t)
-        }) : Chunk388032.intl.format(Chunk638398.default["Zd+Ej+"], {
+        }) : b.intl.format(E.default["Zd+Ej+"], {
           month: C,
           monthHook: (e, t) => (0, r.jsx)(f.Z, {
             children: e
           }, t)
         })
-      }), (0, Chunk54381.jsx)(Chunk909397.o, {
-        slide: Chunk612776.yD.MESSAGES
+      }), (0, r.jsx)(p.o, {
+        slide: g.yD.MESSAGES
       })]
     })]
   })

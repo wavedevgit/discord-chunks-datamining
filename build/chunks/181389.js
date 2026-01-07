@@ -25,13 +25,13 @@ function s(e, t, n, r) {
 function l() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     t = [];
-  return Object.keys(module).forEach(n => {
+  return Object.keys(e).forEach(n => {
     let r = e[n];
     t.push({
       strategy: (e, t, r) => s(r, e, t, n),
       component: o[r.componentType]
     })
-  }), exports
+  }), t
 }
 
 function c(e, t) {

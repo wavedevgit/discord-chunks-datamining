@@ -424,12 +424,12 @@ function Y(e) {
 }
 
 function W() {
-  return (0, Chunk54381.jsx)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t.ZeDrUf),
-    description: Chunk388032.intl.format(Chunk388032.t["oYc+Gz"], {
-      privacyPolicyUrl: Chunk981631.EYA.PRIVACY
+  return (0, r.jsx)(f.gNt, {
+    label: U.intl.string(U.t.ZeDrUf),
+    description: U.intl.format(U.t["oYc+Gz"], {
+      privacyPolicyUrl: M.EYA.PRIVACY
     }),
-    children: (0, Chunk54381.jsx)(z, {})
+    children: (0, r.jsx)(z, {})
   })
 }
 
@@ -446,32 +446,32 @@ function K(e) {
 
 function z() {
   function e() {
-    Chunk570140.Z.dispatch({
+    p.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
       onComplete: K
     })
   }
-  let t = (0, Chunk122021.fq)();
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk454578.connectionsContainer,
-    children: [exports.slice(0, 10).map(e => (0, r.jsx)(m.Z, {
+  let t = (0, E.fq)();
+  return (0, r.jsxs)("div", {
+    className: G.connectionsContainer,
+    children: [t.slice(0, 10).map(e => (0, r.jsx)(m.Z, {
       type: e.type,
       className: G.__invalid_accountButton,
       innerClassName: G.accountButtonInner
-    }, e.type)), (0, Chunk54381.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.QqTz8b),
-      children: (0, Chunk54381.jsx)("div", {
-        className: o()(Chunk454578.accountAddWrapper, Chunk454578.__invalid_accountButton),
-        children: (0, Chunk54381.jsx)(Chunk481060.tEY, {
-          children: (0, Chunk54381.jsx)("button", {
-            className: o()(Chunk454578.accountAddInner, Chunk454578.accountButtonInner),
+    }, e.type)), (0, r.jsx)(u.u, {
+      text: U.intl.string(U.t.QqTz8b),
+      children: (0, r.jsx)("div", {
+        className: o()(G.accountAddWrapper, G.__invalid_accountButton),
+        children: (0, r.jsx)(f.tEY, {
+          children: (0, r.jsx)("button", {
+            className: o()(G.accountAddInner, G.accountButtonInner),
             type: "button",
-            onClick: module,
-            "aria-label": Chunk388032.intl.string(Chunk388032.t.Zhcj9X),
-            children: (0, Chunk54381.jsx)(Chunk481060.Fbu, {
+            onClick: e,
+            "aria-label": U.intl.string(U.t.Zhcj9X),
+            children: (0, r.jsx)(f.Fbu, {
               color: "currentColor",
               size: "md",
-              "aria-label": Chunk388032.intl.string(Chunk388032.t.QqTz8b)
+              "aria-label": U.intl.string(U.t.QqTz8b)
             })
           })
         })
@@ -515,34 +515,34 @@ function q(e) {
 }
 
 function Q() {
-  let e = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
-    t = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.isFetching()),
-    n = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
-    i = (0, Chunk410030.ZP)(),
-    a = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
-  return module ? null : (0, Chunk54381.jsx)(q, {
-    fetching: exports,
-    accounts: require,
-    theme: Chunk473749,
-    locale: Chunk120356
+  let e = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation),
+    t = (0, l.e7)([I.Z], () => I.Z.isFetching()),
+    n = (0, l.e7)([I.Z], () => I.Z.getAccounts()),
+    i = (0, h.ZP)(),
+    a = (0, l.e7)([P.default], () => P.default.locale);
+  return e ? null : (0, r.jsx)(q, {
+    fetching: t,
+    accounts: n,
+    theme: i,
+    locale: a
   })
 }
 let X = () => {
-  let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.isFetching()),
-    t = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
-    n = (0, Chunk410030.ZP)(),
-    a = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
-  return Chunk473749.useEffect(() => {
-    Chunk457330.Z.fetch()
-  }, []), (0, Chunk54381.jsxs)(Chunk273313.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
-    children: [(0, Chunk54381.jsx)(W, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
+  let e = (0, l.e7)([I.Z], () => I.Z.isFetching()),
+    t = (0, l.e7)([I.Z], () => I.Z.getAccounts()),
+    n = (0, h.ZP)(),
+    a = (0, l.e7)([P.default], () => P.default.locale);
+  return i.useEffect(() => {
+    _.Z.fetch()
+  }, []), (0, r.jsxs)(x.Z, {
+    title: U.intl.string(U.t["3fe7U5"]),
+    children: [(0, r.jsx)(W, {}), (0, r.jsx)(f.izJ, {
       gap: 24
-    }), (0, Chunk54381.jsx)(q, {
-      fetching: module,
-      accounts: exports,
-      theme: require,
-      locale: Chunk120356
+    }), (0, r.jsx)(q, {
+      fetching: e,
+      accounts: t,
+      theme: n,
+      locale: a
     })]
   })
 }

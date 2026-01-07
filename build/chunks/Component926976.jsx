@@ -267,50 +267,50 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
   };
 
 function D() {
-  let e = Chunk473749.useRef(null),
-    [t, n] = Chunk473749.useState(""),
-    i = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [s, o] = Chunk473749.useState(() => Object.keys(R)),
-    [m, p] = Chunk473749.useState(Chunk120816.Z.loggedEvents),
-    f = Chunk473749.useCallback(e => {
+  let e = r.useRef(null),
+    [t, n] = r.useState(""),
+    i = (0, c.e7)([v.Z], () => v.Z.loggedEventsVersion),
+    [s, o] = r.useState(() => Object.keys(R)),
+    [m, p] = r.useState(v.Z.loggedEvents),
+    f = r.useCallback(e => {
       p(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
-  let x = Chunk129861.filter(e => {
+  (0, h.BO)(t, v.Z.loggedEvents, f, A, [i]);
+  let x = m.filter(e => {
       for (let t of s)
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [b, g] = Chunk473749.useState(true),
-    C = Chunk594174.find(e => e.key === b),
+    [b, g] = r.useState(true),
+    C = x.find(e => e.key === b),
     {
       TabBar: P,
       renderSelectedTab: w
-    } = (0, Chunk621060.ZP)({
+    } = (0, S.ZP)({
       tabs: k
     }, []);
-  return (0, Chunk54381.jsxs)("div", {
-    ref: module,
-    className: l()(Chunk663618.panel, Chunk865362.panel),
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk865362.toolbar,
-      children: [(0, Chunk54381.jsx)(Chunk755721.zx, {
-        className: Chunk865362.toolbarButton,
-        look: Chunk755721.zx.Looks.BLANK,
-        size: Chunk755721.zx.Sizes.ICON,
-        onClick: Chunk31336.Zw,
-        children: (0, Chunk54381.jsx)("span", {
-          title: Chunk388032.intl.string(Chunk388032.t.VkKicb),
-          children: (0, Chunk54381.jsx)(Chunk481060.XHJ, {
+  return (0, a.jsxs)("div", {
+    ref: e,
+    className: l()(O.panel, T.panel),
+    children: [(0, a.jsxs)("div", {
+      className: T.toolbar,
+      children: [(0, a.jsx)(d.zx, {
+        className: T.toolbarButton,
+        look: d.zx.Looks.BLANK,
+        size: d.zx.Sizes.ICON,
+        onClick: j.Zw,
+        children: (0, a.jsx)("span", {
+          title: E.intl.string(E.t.VkKicb),
+          children: (0, a.jsx)(u.XHJ, {
             size: "md",
             color: "currentColor",
-            "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicb)
+            "aria-label": E.intl.string(E.t.VkKicb)
           })
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk865362.toolbarDivider
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk865362.filters,
+      }), (0, a.jsx)("div", {
+        className: T.toolbarDivider
+      }), (0, a.jsx)("div", {
+        className: T.filters,
         children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
@@ -322,28 +322,28 @@ function D() {
           }, t)
         })
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk865362.toolbar,
-      children: (0, Chunk54381.jsx)(Chunk481060.E1j, {
+    }), (0, a.jsx)("div", {
+      className: T.toolbar,
+      children: (0, a.jsx)(u.E1j, {
         size: "sm",
-        query: exports,
-        onChange: require,
-        onClear: () => require(""),
+        query: t,
+        onChange: n,
+        onClear: () => n(""),
         placeholder: "Search by event name"
       })
-    }), (0, Chunk54381.jsx)(Chunk681619.Z, {
+    }), (0, a.jsx)(_.Z, {
       columns: N,
-      data: Chunk594174,
-      selectedRowKey: Chunk572004,
+      data: x,
+      selectedRowKey: b,
       onClickRow: e => g(e.key)
-    }), null != Chunk257785 && (0, Chunk54381.jsxs)(Chunk975775.Z, {
-      className: Chunk865362.subPanel,
+    }), null != C && (0, a.jsxs)(y.Z, {
+      className: T.subPanel,
       minHeight: 100,
-      initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk54381.jsx)(P, {}), w({
-        loggedEvent: Chunk257785,
-        onClose: () => Chunk55935(true),
-        filteredEvents: Chunk594174
+      initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
+      children: [(0, a.jsx)(P, {}), w({
+        loggedEvent: C,
+        onClose: () => g(true),
+        filteredEvents: x
       })]
     })]
   })

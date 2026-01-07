@@ -14,21 +14,21 @@ let o = 2,
   s = 2,
   l = () => [{
     value: 1,
-    label: Chunk388032.intl.string(Chunk388032.t["GA/d4I"])
+    label: a.intl.string(a.t["GA/d4I"])
   }, {
     value: 2,
-    label: Chunk388032.intl.string(Chunk388032.t["+rHFej"])
+    label: a.intl.string(a.t["+rHFej"])
   }, {
     value: 4,
-    label: Chunk388032.intl.string(Chunk388032.t["5CNt/M"])
+    label: a.intl.string(a.t["5CNt/M"])
   }, {
     value: 6,
-    label: Chunk388032.intl.string(Chunk388032.t.oQ4PNE)
+    label: a.intl.string(a.t.oQ4PNE)
   }, {
     value: 12,
-    label: Chunk388032.intl.string(Chunk388032.t.LOQ0j6)
+    label: a.intl.string(a.t.LOQ0j6)
   }, {
     value: 24,
-    label: Chunk388032.intl.string(Chunk388032.t["W0+LsV"])
+    label: a.intl.string(a.t["W0+LsV"])
   }],
   c = Chunk149765.$e(Chunk231338.Pl.ADMINISTRATOR, Chunk231338.Pl.MANAGE_GUILD, Chunk231338.Pl.BAN_MEMBERS, Chunk231338.Pl.KICK_MEMBERS, Chunk231338.Pl.MODERATE_MEMBERS)

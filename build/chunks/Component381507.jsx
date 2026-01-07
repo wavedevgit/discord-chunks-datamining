@@ -40,36 +40,36 @@ function h(e) {
   return e
 }
 let g = () => {
-  let e = (0, Chunk105759.Z)(),
+  let e = (0, c.Z)(),
     {
       avatarSrc: t,
       eventHandlers: n
-    } = (0, Chunk518950.Z)({
-      userId: null == module ? true : module.id,
-      size: Chunk268685.EF.SIZE_32,
+    } = (0, s.Z)({
+      userId: null == e ? true : e.id,
+      size: f.EF.SIZE_32,
       animateOnHover: true
     }),
-    m = (0, Chunk410030.Fg)(),
-    g = (0, Chunk780384.ap)(m),
-    E = Chunk51144.ZP.getName(module),
-    b = g ? Chunk898969.Z : Chunk703614.Z;
-  return null == module ? null : (0, Chunk54381.jsxs)("div", {
-    className: Chunk953182.attributionBannerContainer,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk953182.avatarContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.qEK, h({
-        src: exports,
-        "aria-label": module.username,
-        size: Chunk268685.EF.SIZE_32
-      }, require))
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    m = (0, o.Fg)(),
+    g = (0, i.ap)(m),
+    E = l.ZP.getName(e),
+    b = g ? u.Z : d.Z;
+  return null == e ? null : (0, r.jsxs)("div", {
+    className: _.attributionBannerContainer,
+    children: [(0, r.jsx)("div", {
+      className: _.avatarContainer,
+      children: (0, r.jsx)(a.qEK, h({
+        src: t,
+        "aria-label": e.username,
+        size: f.EF.SIZE_32
+      }, n))
+    }), (0, r.jsx)(a.Text, {
       variant: "text-xs/bold",
-      className: Chunk953182.bannerHeader,
-      children: Chunk388032.intl.format(Chunk388032.t.oxhCOl, {
+      className: _.bannerHeader,
+      children: p.intl.format(p.t.oxhCOl, {
         userName: E
       })
-    }), (0, Chunk54381.jsx)(b, {
-      className: Chunk953182.bannerIcon
+    }), (0, r.jsx)(b, {
+      className: _.bannerIcon
     })]
   })
 }

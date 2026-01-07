@@ -25,7 +25,7 @@ let u = [{
   }
 }, {
   key: "affinity",
-  renderHeader: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+  renderHeader: () => (0, a.jsx)(i.Text, {
     variant: "text-sm/semibold",
     children: "COMMUNICATION AFFINITY"
   }),
@@ -38,7 +38,7 @@ let u = [{
   }
 }, {
   key: "vcProbability",
-  renderHeader: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+  renderHeader: () => (0, a.jsx)(i.Text, {
     variant: "text-sm/semibold",
     children: "VOICE AFFINITY"
   }),
@@ -51,7 +51,7 @@ let u = [{
   }
 }, {
   key: "isFriend",
-  renderHeader: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+  renderHeader: () => (0, a.jsx)(i.Text, {
     variant: "text-sm/semibold",
     children: "IS FRIEND"
   }),
@@ -65,7 +65,7 @@ let u = [{
 }];
 
 function m() {
-  let e = (0, Chunk442837.Wu)([Chunk752048.Z, Chunk594174.default], () => Chunk752048.Z.getUserAffinities().map(e => {
+  let e = (0, r.Wu)([l.Z, s.default], () => l.Z.getUserAffinities().map(e => {
     let {
       otherUserId: t,
       communicationProbability: n,
@@ -80,10 +80,10 @@ function m() {
       key: t
     }
   }));
-  return 0 === module.length ? null : (0, Chunk54381.jsx)(Chunk681619.Z, {
-    className: Chunk663618.panel,
+  return 0 === e.length ? null : (0, a.jsx)(o.Z, {
+    className: d.panel,
     columns: u,
-    rowClassName: Chunk439267.row,
-    data: module
+    rowClassName: c.row,
+    data: e
   })
 }

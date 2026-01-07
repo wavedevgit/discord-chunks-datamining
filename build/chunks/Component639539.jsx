@@ -108,31 +108,31 @@ let f = e => {
     })
   },
   b = () => {
-    let [e, t] = Chunk473749.useState(false);
-    Chunk473749.useEffect(() => {
+    let [e, t] = i.useState(false);
+    i.useEffect(() => {
       let e;
       return ! function n() {
         let r = Date.now();
         e = setTimeout(() => {
-          exports(e => !e), require()
-        }, Math.max(100, (Math.floor(Chunk54381 / Chunk70956.Z.Millis.HALF_SECOND) + 1) * Chunk70956.Z.Millis.HALF_SECOND - Chunk54381))
+          t(e => !e), n()
+        }, Math.max(100, (Math.floor(r / u.Z.Millis.HALF_SECOND) + 1) * u.Z.Millis.HALF_SECOND - r))
       }(), () => {
-        clearTimeout(module)
+        clearTimeout(e)
       }
     }, []);
-    let n = (0, Chunk481060.q_F)({
-      opacity: module ? .5 : 1,
+    let n = (0, c.q_F)({
+      opacity: e ? .5 : 1,
       config: {
         duration: 100
       }
     });
-    return (0, Chunk54381.jsxs)(Chunk554916.animated.div, {
-      style: require,
-      className: Chunk65893.colonContainer,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk65893.tinyDot
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk65893.tinyDot
+    return (0, r.jsxs)(s.animated.div, {
+      style: n,
+      className: p.colonContainer,
+      children: [(0, r.jsx)("div", {
+        className: p.tinyDot
+      }), (0, r.jsx)("div", {
+        className: p.tinyDot
       })]
     })
   },

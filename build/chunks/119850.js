@@ -12,14 +12,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk848572 = require("./848572.js"),
   Chunk388032 = require("./388032.jsx");
 let c = () => {
-    let e = null != (0, Chunk848572.y3)(),
-      [t] = (0, Chunk243778.US)(module ? [Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
-    return exports === Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD ? Chunk388032.intl.string(Chunk388032.t["jyYgZ+"]).toLocaleUpperCase() : null
+    let e = null != (0, s.y3)(),
+      [t] = (0, o.US)(e ? [i.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
+    return t === i.z.WHATS_NEW_TENURE_BADGE_REWARD ? l.intl.string(l.t["jyYgZ+"]).toLocaleUpperCase() : null
   },
   u = () => {
-    let e = null != (0, Chunk848572.y3)(),
-      [t] = (0, Chunk243778.US)(module ? [Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
-    return Chunk473749.useCallback(() => {
-      exports === Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD && (0, Chunk266454.Q3)(exports)
-    }, [exports])
+    let e = null != (0, s.y3)(),
+      [t] = (0, o.US)(e ? [i.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
+    return r.useCallback(() => {
+      t === i.z.WHATS_NEW_TENURE_BADGE_REWARD && (0, a.Q3)(t)
+    }, [t])
   }

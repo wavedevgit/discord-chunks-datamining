@@ -11,7 +11,7 @@ var Chunk457330 = require("./457330.js"),
 let a = (0, Chunk509613.ON)(Chunk313789.n.CONNECTIONS_CONNECTED_ACCOUNTS_SETTING, {
   Component: Chunk327192.vq,
   initialize: () => {
-    Chunk457330.Z.fetch()
+    i.Z.fetch()
   },
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["+/hZM/"]), Chunk388032.intl.string(Chunk388032.t.bsbMVz), Chunk388032.intl.string(Chunk388032.t.f7yOAX), Chunk388032.intl.string(Chunk388032.t.FYKGsL), Chunk388032.intl.string(Chunk388032.t["+KCMSi"])]
+  useSearchTerms: () => [r.intl.string(r.t["+/hZM/"]), r.intl.string(r.t.bsbMVz), r.intl.string(r.t.f7yOAX), r.intl.string(r.t.FYKGsL), r.intl.string(r.t["+KCMSi"])]
 })

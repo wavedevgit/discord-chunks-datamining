@@ -17,23 +17,23 @@ var Chunk586072 = require("./586072.js"),
 function a() {
   let {
     isUserEligibleForCreatorMonetization: e
-  } = Chunk586072.bT.useExperiment({
+  } = r.bT.useExperiment({
     location: "e3bb71_1"
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }
 
 function o() {
   let {
     isUserEligibleForCreatorMonetization: e
-  } = Chunk586072.bT.getCurrentConfig({
+  } = r.bT.getCurrentConfig({
     location: "e3bb71_2"
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }
 
 function s(e) {
@@ -123,12 +123,12 @@ function _(e) {
 function m() {
   let {
     enableCreatorMonetizationNagActivateForUser: e
-  } = Chunk586072.aC.getCurrentConfig({
+  } = r.aC.getCurrentConfig({
     location: "e3bb71_11"
   }, {
     autoTrackExposure: true
   });
-  return module
+  return e
 }
 
 function h(e) {

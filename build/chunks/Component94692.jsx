@@ -27,7 +27,7 @@ class f extends Chunk473749.PureComponent {
   fetchAllDirectoryMetadata() {
     let {
       installationPaths: t
-    } = this.props, e = module.map(t => {
+    } = this.props, e = t.map(t => {
       let {
         path: e
       } = t;
@@ -35,7 +35,7 @@ class f extends Chunk473749.PureComponent {
     }), {
       newInstallationPath: s
     } = this.state;
-    for (let t of (null != require && exports.push(require), e = exports.filter(t => !this.fetchedMetadataPaths.has(t)), (0, Chunk325432.ec)(exports), exports)) this.fetchedMetadataPaths.add(module)
+    for (let t of (null != s && e.push(s), e = e.filter(t => !this.fetchedMetadataPaths.has(t)), (0, r.ec)(e), e)) this.fetchedMetadataPaths.add(t)
   }
   componentDidMount() {
     this.fetchAllDirectoryMetadata()
@@ -48,7 +48,7 @@ class f extends Chunk473749.PureComponent {
       installationPaths: t
     } = this.props, {
       newInstallationPath: e
-    } = this.state, s = module.map(t => {
+    } = this.state, s = t.map(t => {
       let {
         path: e,
         label: s
@@ -58,13 +58,13 @@ class f extends Chunk473749.PureComponent {
         label: this.renderLabel(e, s)
       }
     });
-    return null != exports && require.push({
-      value: exports,
-      label: this.renderLabel(exports)
-    }), require.push({
+    return null != e && s.push({
+      value: e,
+      label: this.renderLabel(e)
+    }), s.push({
       value: I,
-      label: Chunk388032.intl.string(Chunk388032.t["cL/rrq"])
-    }), require
+      label: u.intl.string(u.t["cL/rrq"])
+    }), s
   }
   hasEnoughDiskSpace(t) {
     let {
@@ -85,12 +85,12 @@ class f extends Chunk473749.PureComponent {
       value: t,
       installationPathsMetadata: e
     } = this.props;
-    return null != exports[module] && false === exports[module].hasPermission ? (0, Chunk54381.jsx)("div", {
-      className: Chunk971561.error,
-      children: Chunk388032.intl.string(Chunk388032.t.cEUT8B)
-    }) : this.hasEnoughDiskSpace(module) ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk971561.error,
-      children: Chunk388032.intl.string(Chunk388032.t["duXbE/"])
+    return null != e[t] && false === e[t].hasPermission ? (0, l.jsx)("div", {
+      className: c.error,
+      children: u.intl.string(u.t.cEUT8B)
+    }) : this.hasEnoughDiskSpace(t) ? null : (0, l.jsx)("div", {
+      className: c.error,
+      children: u.intl.string(u.t["duXbE/"])
     })
   }
   renderLabel(t, e) {
@@ -110,13 +110,13 @@ class f extends Chunk473749.PureComponent {
       className: e,
       autoFocus: s
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: exports,
-      children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
-        label: Chunk388032.intl.string(Chunk388032.t.WTJuNr),
-        autoFocus: require,
+    return (0, l.jsxs)("div", {
+      className: e,
+      children: [(0, l.jsx)(i.y6, {
+        label: u.intl.string(u.t.WTJuNr),
+        autoFocus: s,
         options: this.getOptions(),
-        value: module,
+        value: t,
         onChange: this.handleChange
       }), this.renderError()]
     })
@@ -142,6 +142,6 @@ class f extends Chunk473749.PureComponent {
   }
 }
 let m = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
-  installationPaths: Chunk391690.Z.installationPaths,
-  installationPathsMetadata: Chunk391690.Z.installationPathsMetadata
+  installationPaths: h.Z.installationPaths,
+  installationPathsMetadata: h.Z.installationPathsMetadata
 }))(f)

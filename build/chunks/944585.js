@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk312413 = require("./312413.js"),
   i = function() {
-    return Chunk312413.C.some(function(e) {
+    return r.C.some(function(e) {
       return e.activeTargets.length > 0
     })
   }

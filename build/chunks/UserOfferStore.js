@@ -109,26 +109,26 @@ function C() {
 let A = () => true;
 
 function N() {
-  return null != Chunk78839.Z.getPremiumTypeSubscription() && (null != b.userDiscountOffers[Chunk474936.dT] ? b.userDiscountOffers = {
-    [Chunk474936.dT]: b.userDiscountOffers[Chunk474936.dT]
-  } : null != b.userDiscountOffers[Chunk474936.dB] ? b.userDiscountOffers = {
-    [Chunk474936.dB]: b.userDiscountOffers[Chunk474936.dB]
+  return null != d.Z.getPremiumTypeSubscription() && (null != b.userDiscountOffers[f.dT] ? b.userDiscountOffers = {
+    [f.dT]: b.userDiscountOffers[f.dT]
+  } : null != b.userDiscountOffers[f.dB] ? b.userDiscountOffers = {
+    [f.dB]: b.userDiscountOffers[f.dB]
   } : b.userDiscountOffers = {}, b.userTrialOffers = {}, true)
 }
 
 function P() {
-  let e = Chunk594174.default.getCurrentUser();
-  !(0, Chunk74538.I5)(module) && Object.keys(b.userDiscountOffers).length > 0 && (0, Chunk937579.Tf)("UserOfferStore", true)
+  let e = l.default.getCurrentUser();
+  !(0, u.I5)(e) && Object.keys(b.userDiscountOffers).length > 0 && (0, s.Tf)("UserOfferStore", true)
 }
 
 function R() {
   var e;
-  let t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id;
-  if (null == exports) returnfalse;
-  let n = Chunk276444.Z.getAllRelevantReferralTrialOffers().filter(e => e.user_id === t);
-  if (require.length > 0) {
-    let e = require[0];
-    return b.userTrialOffers[module.trial_id] = module, true
+  let t = null == (e = l.default.getCurrentUser()) ? true : e.id;
+  if (null == t) returnfalse;
+  let n = o.Z.getAllRelevantReferralTrialOffers().filter(e => e.user_id === t);
+  if (n.length > 0) {
+    let e = n[0];
+    return b.userTrialOffers[e.trial_id] = e, true
   }
   returnfalse
 }
@@ -149,7 +149,7 @@ class w extends(r = Chunk442837.ZP.PersistedStore) {
   }
   isFetchingOffer() {
     var e;
-    return null != (e = b.isFetching) && module
+    return null != (e = b.isFetching) && e
   }
   hasFetchedOffer() {
     return null != b.userOffersLastFetchedAtDate
@@ -178,8 +178,8 @@ class w extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getUnacknowledgedDiscountOffers() {
     var e;
-    let t = Chunk594174.default.getCurrentUser();
-    return (0, Chunk74538.I5)(exports) && !this.canFractionalPremiumUserUseOffer() ? [] : Object.values(null != (e = b.userDiscountOffers) ? module : {}).filter(e => null == e.expires_at && !f.ee.includes(e.discount_id))
+    let t = l.default.getCurrentUser();
+    return (0, u.I5)(t) && !this.canFractionalPremiumUserUseOffer() ? [] : Object.values(null != (e = b.userDiscountOffers) ? e : {}).filter(e => null == e.expires_at && !f.ee.includes(e.discount_id))
   }
   getUnacknowledgedOffers(e) {
     let t = l.default.getCurrentUser();
@@ -192,9 +192,9 @@ class w extends(r = Chunk442837.ZP.PersistedStore) {
     return Object.values(b.userDiscountOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
   }
   canFractionalPremiumUserUseOffer() {
-    return Chunk580130.Z.isFractionalPremiumActive({
+    return c.Z.isFractionalPremiumActive({
       excludeReverseTrial: true
-    }) && null == Chunk78839.Z.getPremiumTypeSubscription()
+    }) && null == d.Z.getPremiumTypeSubscription()
   }
   getReferrer(e) {
     var t;

@@ -10,12 +10,12 @@ var Chunk990547 = require("./990547.js"),
 
 function l() {
   let t = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return Chunk573261.Z.put({
-    url: Chunk981631.ANM.USER_EMAIL,
+  return i.Z.put({
+    url: a.ANM.USER_EMAIL,
     trackedActionData: {
-      event: Chunk990547.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE,
+      event: r.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE,
       properties: {
-        is_resend: module
+        is_resend: t
       }
     },
     rejectWithError: false

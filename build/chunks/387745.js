@@ -102,9 +102,11 @@ function S(e, t) {
 
 function I() {
   {
-    letChunk518596 = require("./518596.jsx");
-    module(Chunk313789.n.CONNECTIONS_PANEL, {
-      section: Chunk981631.oAB.CONNECTIONS
+    let {
+      openUserSettings: e
+    } = n(518596);
+    e(s.n.CONNECTIONS_PANEL, {
+      section: _.oAB.CONNECTIONS
     })
   }
 }

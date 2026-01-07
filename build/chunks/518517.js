@@ -11,18 +11,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_REMINDERS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["3zwNf6"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.m4Cjj9),
-  useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().remindersEnabled),
+  useTitle: () => o.intl.string(o.t["3zwNf6"]),
+  useSubtitle: () => o.intl.string(o.t.m4Cjj9),
+  useValue: () => (0, i.e7)([s.Z], () => s.Z.getSettings().remindersEnabled),
   setValue: t => u.N0(t),
   usePredicate: () => {
     let {
       showClipsHeaderEntrypoint: t
-    } = Chunk924557.NV.useExperiment({
+    } = l.NV.useExperiment({
       location: "clips_recording_settings"
     }, {
       autoTrackExposure: false
     });
-    return module
+    return t
   }
 })

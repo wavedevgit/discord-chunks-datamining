@@ -50,17 +50,17 @@ function I() {
   let {
     experiments: e,
     overridesInfo: t
-  } = (0, Chunk667344.Qb)(), {
+  } = (0, p.Qb)(), {
     experiments: n,
     overridesInfo: a
-  } = (0, Chunk493075.sI)(), o = Chunk473749.useMemo(() => S({}, require, module), [require, module]), s = Chunk473749.useMemo(() => S({}, Chunk392711, exports), [Chunk392711, exports]), [c, u] = Chunk473749.useState(""), d = (0, Chunk878209.Ro)((0, Chunk878209.Tc)((0, Chunk878209.Cg)(o), Chunk442837), Chunk922699);
-  return (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk481060.E1j, {
+  } = (0, m.sI)(), o = i.useMemo(() => S({}, n, e), [n, e]), s = i.useMemo(() => S({}, a, t), [a, t]), [c, u] = i.useState(""), d = (0, b.Ro)((0, b.Tc)((0, b.Cg)(o), s), c);
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(l.E1j, {
       placeholder: "Search experiments",
-      query: Chunk922699,
-      onChange: Chunk492435,
-      onClear: () => Chunk492435("")
-    }), Chunk389494.length > 0 ? Chunk389494.map(e => {
+      query: c,
+      onChange: u,
+      onClear: () => u("")
+    }), d.length > 0 ? d.map(e => {
       let t = "guild" === e.experiment.kind ? C : T;
       return (0, r.jsx)(t, {
         experiment: e.experiment,
@@ -68,9 +68,9 @@ function I() {
         overrideInfo: s[e.id],
         defaultOpen: null != s[e.id]
       }, e.id)
-    }) : (0, Chunk54381.jsx)("div", {
-      className: Chunk563993.emptyState,
-      children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }) : (0, r.jsx)("div", {
+      className: O.emptyState,
+      children: (0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         children: "No Experiments Found"
       })

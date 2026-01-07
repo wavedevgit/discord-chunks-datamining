@@ -22,7 +22,7 @@ class a {
     let {
       action: e
     } = this;
-    this.action = null, null != module && Chunk570140.Z.dispatch(module).catch(t => this.socket.resetSocketOnError({
+    this.action = null, null != e && r.Z.dispatch(e).catch(t => this.socket.resetSocketOnError({
       error: t,
       action: e.type
     }))

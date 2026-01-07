@@ -16,35 +16,35 @@ var Chunk54381 = require("./54381.js"),
   Chunk66737 = require("./66737.js"),
   Chunk525377 = require("./525377.js");
 let g = () => {
-  let e = (0, Chunk410030.ZP)();
-  Chunk473749.useEffect(() => {
-    Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.GUILD_OUTAGE_VIEWED, {})
+  let e = (0, s.ZP)();
+  i.useEffect(() => {
+    o.ZP.trackWithMetadata(d.rMx.GUILD_OUTAGE_VIEWED, {})
   }, []);
-  let t = (0, Chunk780384.wj)(module) ? Chunk66737 : Chunk525377;
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk106653.container,
-    children: [(0, Chunk54381.jsxs)(Chunk984370.Z, {
-      toolbar: (0, Chunk54381.jsx)(Chunk473749.Fragment, {}),
-      children: [(0, Chunk54381.jsx)(Chunk984370.Z.Icon, {
-        icon: Chunk481060.VL1,
+  let t = (0, l.wj)(e) ? h : f;
+  return (0, r.jsxs)("div", {
+    className: p.container,
+    children: [(0, r.jsxs)(c.Z, {
+      toolbar: (0, r.jsx)(i.Fragment, {}),
+      children: [(0, r.jsx)(c.Z.Icon, {
+        icon: a.VL1,
         "aria-hidden": true
-      }), (0, Chunk54381.jsx)(Chunk984370.Z.Title, {
-        children: Chunk388032.intl.string(Chunk388032.t["8LKchl"])
+      }), (0, r.jsx)(c.Z.Title, {
+        children: u.intl.string(u.t["8LKchl"])
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk106653.content,
-      children: [(0, Chunk54381.jsx)("img", {
+    }), (0, r.jsxs)("div", {
+      className: p.content,
+      children: [(0, r.jsx)("img", {
         alt: "",
-        className: Chunk106653.splashImage,
-        src: exports
-      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-        className: Chunk106653.splashHeader,
+        className: p.splashImage,
+        src: t
+      }), (0, r.jsx)(a.Heading, {
+        className: p.splashHeader,
         variant: "heading-lg/medium",
-        children: Chunk388032.intl.string(Chunk388032.t.m9gRVN)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk106653.splashText,
+        children: u.intl.string(u.t.m9gRVN)
+      }), (0, r.jsx)(a.Text, {
+        className: p.splashText,
         variant: "text-md/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.wC3j56)
+        children: u.intl.string(u.t.wC3j56)
       })]
     })]
   })

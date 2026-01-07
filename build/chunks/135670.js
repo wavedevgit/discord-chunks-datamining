@@ -26,7 +26,7 @@ function l(e) {
 }
 class c extends Chunk47770.Z {
   destroy() {
-    this.emit(Chunk46973.aB.Destroy), this.removeAllListeners()
+    this.emit(i.aB.Destroy), this.removeAllListeners()
   }
   interact() {}
   supported() {
@@ -57,7 +57,7 @@ class c extends Chunk47770.Z {
   }
   setVideoInputDevice(e) {}
   getVideoInputDeviceId() {
-    return Chunk65154.Av
+    return a.Av
   }
   setAsyncVideoInputDeviceInit(e) {}
   setAsyncClipsSourceDeinit(e) {}
@@ -68,7 +68,7 @@ class c extends Chunk47770.Z {
     return Promise.reject(Error("getCodecSurvey is not implemented for MediaEngineDummy"))
   }
   getAudioSubsystem() {
-    return Chunk65154.iA.STANDARD
+    return a.iA.STANDARD
   }
   getAudioLayer() {
     return ""

@@ -21,7 +21,7 @@ function c(e, t, n) {
 }
 
 function u() {
-  return (0, Chunk875527.wt)({
+  return (0, o.wt)({
     location: "VoiceFiltersCatalogManager",
     autoTrackExposure: false
   })
@@ -36,28 +36,28 @@ class d extends Chunk147913.Z {
     this._scheduleNextRollover(), this._scheduleRefresh()
   }
   handlePostConnectionOpen() {
-    u() && (0, Chunk358820.wV)()
+    u() && (0, l.wV)()
   }
   _scheduleNextRollover() {
     clearTimeout(this.rolloverTimeout);
-    let e = Chunk709706.Z.getLimitedTimeVoices();
-    if (null == module) return;
-    let t = new Date(module.current_set_end).getTime() - new Date().getTime(),
-      n = new Date(module.next_set_end).getTime() - new Date().getTime();
-    exports > 0 ? this.rolloverTimeout = setTimeout(() => {
-      Chunk570140.Z.dispatch({
+    let e = s.Z.getLimitedTimeVoices();
+    if (null == e) return;
+    let t = new Date(e.current_set_end).getTime() - new Date().getTime(),
+      n = new Date(e.next_set_end).getTime() - new Date().getTime();
+    t > 0 ? this.rolloverTimeout = setTimeout(() => {
+      r.Z.dispatch({
         type: "VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES"
       }), this._scheduleNextRollover()
-    }, exports) : require > 0 && (this.rolloverTimeout = setTimeout(() => {
-      Chunk570140.Z.dispatch({
+    }, t) : n > 0 && (this.rolloverTimeout = setTimeout(() => {
+      r.Z.dispatch({
         type: "VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES"
       })
-    }, require))
+    }, n))
   }
   _scheduleRefresh() {
     clearTimeout(this.refreshTimeout), this.refreshTimeout = setTimeout(() => {
-      (0, Chunk358820.wV)()
-    }, Chunk70956.Z.Millis.DAY)
+      (0, l.wV)()
+    }, a.Z.Millis.DAY)
   }
   constructor(...e) {
     super(...e), c(this, "actions", {

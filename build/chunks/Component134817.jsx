@@ -19,25 +19,25 @@ class m extends Chunk473749.Component {
       transitionState: t,
       onClose: r
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk233787.C, {
-      transitionState: exports,
+    return (0, n.jsx)(c.C, {
+      transitionState: t,
       onClose: async () => {
-        await require(false)
+        await r(false)
       },
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.BNg1ir),
-      title: Chunk388032.intl.string(Chunk388032.t.BNg1ir),
-      premiumModalType: Chunk233787.C.Types.UPGRADE,
+      "aria-label": u.intl.string(u.t.BNg1ir),
+      title: u.intl.string(u.t.BNg1ir),
+      premiumModalType: c.C.Types.UPGRADE,
       primary: {
-        onClick: () => require(true),
-        label: Chunk388032.intl.string(Chunk388032.t.P3etAv)
+        onClick: () => r(true),
+        label: u.intl.string(u.t.P3etAv)
       },
-      children: Chunk74538.ZP.isPremium(module) && !Chunk74538.ZP.canInstallPremiumApplications(module) ? Chunk388032.intl.string(Chunk388032.t.mKA9OJ) : Chunk388032.intl.string(Chunk388032.t.sqSlm4)
+      children: d.ZP.isPremium(e) && !d.ZP.canInstallPremiumApplications(e) ? u.intl.string(u.t.mKA9OJ) : u.intl.string(u.t.sqSlm4)
     })
   }
 }
 let p = Chunk442837.ZP.connectStores([Chunk594174.default], () => {
-  let e = Chunk594174.default.getCurrentUser();
-  return l()(null != module, "PremiumRequiredModal: user cannot be null"), {
-    user: module
+  let e = s.default.getCurrentUser();
+  return l()(null != e, "PremiumRequiredModal: user cannot be null"), {
+    user: e
   }
 })(m)

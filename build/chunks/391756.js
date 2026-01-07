@@ -17,8 +17,8 @@ var Chunk644387 = require("./644387.js"),
         blockSize: 0
       }
     }
-    return module.prototype.isActive = function() {
-      var e = (0, Chunk219845.Y9)(this.target, this.observedBox);
-      return o(this.target) && (this.lastReportedSize = module), this.lastReportedSize.inlineSize !== module.inlineSize || this.lastReportedSize.blockSize !== module.blockSize
-    }, module
+    return e.prototype.isActive = function() {
+      var e = (0, i.Y9)(this.target, this.observedBox);
+      return o(this.target) && (this.lastReportedSize = e), this.lastReportedSize.inlineSize !== e.inlineSize || this.lastReportedSize.blockSize !== e.blockSize
+    }, e
   }()

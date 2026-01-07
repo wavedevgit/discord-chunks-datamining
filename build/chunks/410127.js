@@ -7,9 +7,9 @@ var Chunk593473 = require("./593473.js"),
   Chunk828700 = require("./828700.js"),
   Chunk215023 = require("./215023.js");
 let o = () => {
-  let e = (0, Chunk828700.TH)(),
+  let e = (0, i.TH)(),
     {
       tab: t
-    } = (0, Chunk593473.parse)(module.search);
-  if (Object.values(Chunk215023.AW).includes(exports)) return exports
+    } = (0, r.parse)(e.search);
+  if (Object.values(a.AW).includes(t)) return t
 }

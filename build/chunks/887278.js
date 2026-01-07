@@ -66,15 +66,15 @@ let E = {
 
 function b() {
   var e;
-  return !(null === Chunk998502.ZP || true === Chunk998502.ZP || null == (e = Chunk998502.ZP.isModuleVersionAtLeast) ? true : module.call(Chunk998502.ZP, "discord_hook", E))
+  return !(null === d.ZP || true === d.ZP || null == (e = d.ZP.isModuleVersionAtLeast) ? true : e.call(d.ZP, "discord_hook", E))
 }
 let y = null;
 async function O() {
-  if (!(0, Chunk358085.isWindows)()) return Promise.reject(Error("Hook is only available on Windows"));
+  if (!(0, u.isWindows)()) return Promise.reject(Error("Hook is only available on Windows"));
   if (b()) return Promise.reject(Error("Hook module is too old"));
-  await Chunk998502.ZP.ensureModule("discord_hook");
-  let e = await Chunk998502.ZP.requireModule("discord_hook");
-  return S(module), module
+  await d.ZP.ensureModule("discord_hook");
+  let e = await d.ZP.requireModule("discord_hook");
+  return S(e), e
 }
 async function v() {
   return null != y ? y : y = await O()

@@ -38,17 +38,17 @@ function l(e) {
 }
 
 function c() {
-  return (0, Chunk54381.jsx)(l, {
-    label: Chunk388032.intl.string(Chunk388032.t["I+02Gs"]),
+  return (0, r.jsx)(l, {
+    label: o.intl.string(o.t["I+02Gs"]),
     backgroundColor: "#207B8D",
-    icon: Chunk481060.T$Z
+    icon: a.T$Z
   })
 }
 
 function u() {
-  return (0, Chunk54381.jsx)(l, {
-    label: Chunk388032.intl.string(Chunk388032.t.TgsPaP),
-    icon: Chunk481060.vdY,
-    iconColor: Chunk692547.Z.unsafe_rawColors.PRIMARY_330.css
+  return (0, r.jsx)(l, {
+    label: o.intl.string(o.t.TgsPaP),
+    icon: a.vdY,
+    iconColor: i.Z.unsafe_rawColors.PRIMARY_330.css
   })
 }

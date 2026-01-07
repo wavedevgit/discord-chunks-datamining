@@ -9,5 +9,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_SETTING, {
   Component: Chunk327192.mN,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.ZeDrUf), Chunk388032.intl.string(Chunk388032.t.Zhcj9X), Chunk388032.intl.string(Chunk388032.t.QqTz8b), Chunk388032.intl.string(Chunk388032.t["+/hZM/"]), Chunk388032.intl.string(Chunk388032.t.bsbMVz), Chunk388032.intl.string(Chunk388032.t.f7yOAX), Chunk388032.intl.string(Chunk388032.t.FYKGsL), Chunk388032.intl.string(Chunk388032.t["+KCMSi"])]
+  useSearchTerms: () => [u.intl.string(u.t.ZeDrUf), u.intl.string(u.t.Zhcj9X), u.intl.string(u.t.QqTz8b), u.intl.string(u.t["+/hZM/"]), u.intl.string(u.t.bsbMVz), u.intl.string(u.t.f7yOAX), u.intl.string(u.t.FYKGsL), u.intl.string(u.t["+KCMSi"])]
 })

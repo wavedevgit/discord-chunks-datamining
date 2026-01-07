@@ -160,7 +160,7 @@ class P extends Chunk473749.PureComponent {
       className: n,
       containerStyles: i,
       obscured: a = true,
-      reason: s = Chunk936141.wk.SPOILER,
+      reason: s = m.wk.SPOILER,
       isSingleMosaicItem: l = false,
       obscurityControlClassName: u,
       shouldAgeVerify: d,
@@ -168,7 +168,7 @@ class P extends Chunk473749.PureComponent {
       forceOpaqueObscure: p
     } = this.props, {
       visible: _
-    } = this.state, h = (0, Chunk54381.jsx)(N.Consumer, {
+    } = this.state, h = (0, r.jsx)(N.Consumer, {
       children: h => {
         let g = h || _ || !a;
         return m.Xh.has(s) && !t ? (0, r.jsxs)("div", {
@@ -217,7 +217,7 @@ class P extends Chunk473749.PureComponent {
         })
       }
     });
-    return exports ? this.renderWithTooltip(Chunk823379) : Chunk823379
+    return t ? this.renderWithTooltip(h) : h
   }
   renderObscuredEmbed() {
     let {
@@ -226,14 +226,14 @@ class P extends Chunk473749.PureComponent {
       containerStyles: n,
       isSingleMosaicItem: i,
       obscurityControlClassName: a,
-      reason: s = Chunk936141.wk.SPOILER,
+      reason: s = m.wk.SPOILER,
       shouldAgeVerify: l,
       isVerifiedTeen: u,
       forceOpaqueObscure: d
     } = this.props, {
       visible: f
     } = this.state;
-    return (0, Chunk54381.jsx)(N.Consumer, {
+    return (0, r.jsx)(N.Consumer, {
       children: p => {
         let _ = p || f;
         return m.Xh.has(s) ? (0, r.jsxs)("div", {
@@ -287,7 +287,7 @@ class P extends Chunk473749.PureComponent {
       className: n
     } = this.props, {
       visible: a
-    } = this.state, s = (0, Chunk54381.jsx)(N.Consumer, {
+    } = this.state, s = (0, r.jsx)(N.Consumer, {
       children: s => {
         let l = s || a,
           u = i.Children.toArray(e(l)),
@@ -313,13 +313,13 @@ class P extends Chunk473749.PureComponent {
         })
       }
     });
-    return this.renderWithTooltip(Chunk692547)
+    return this.renderWithTooltip(s)
   }
   render() {
     let {
       type: e = "text"
     } = this.props;
-    switch (module) {
+    switch (e) {
       case "text":
         return this.renderObscuredText();
       case "attachment":
@@ -327,41 +327,41 @@ class P extends Chunk473749.PureComponent {
       case "embed":
         return this.renderObscuredEmbed();
       default:
-        return (0, Chunk823379.vE)(module)
+        return (0, h.vE)(e)
     }
   }
   get ariaLabel() {
     let {
-      reason: e = Chunk936141.wk.SPOILER
+      reason: e = m.wk.SPOILER
     } = this.props;
-    switch (module) {
-      case Chunk936141.wk.SPOILER:
-        return Chunk388032.intl.string(Chunk388032.t["F+x38C"]);
-      case Chunk936141.wk.EXPLICIT_CONTENT:
-      case Chunk936141.wk.GORE_CONTENT:
-      case Chunk936141.wk.SELF_HARM_CONTENT:
-        return Chunk388032.intl.string(Chunk388032.t.mlJ8Vf);
-      case Chunk936141.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return Chunk388032.intl.string(Chunk388032.t.MRdR7z);
+    switch (e) {
+      case m.wk.SPOILER:
+        return g.intl.string(g.t["F+x38C"]);
+      case m.wk.EXPLICIT_CONTENT:
+      case m.wk.GORE_CONTENT:
+      case m.wk.SELF_HARM_CONTENT:
+        return g.intl.string(g.t.mlJ8Vf);
+      case m.wk.POTENTIAL_EXPLICIT_CONTENT:
+        return g.intl.string(g.t.MRdR7z);
       default:
-        return (0, Chunk823379.vE)(module)
+        return (0, h.vE)(e)
     }
   }
   get tooltipText() {
     let {
-      reason: e = Chunk936141.wk.SPOILER
+      reason: e = m.wk.SPOILER
     } = this.props;
-    switch (module) {
-      case Chunk936141.wk.SPOILER:
-        return Chunk388032.intl.string(Chunk388032.t["F+x38C"]);
-      case Chunk936141.wk.EXPLICIT_CONTENT:
-      case Chunk936141.wk.GORE_CONTENT:
-      case Chunk936141.wk.SELF_HARM_CONTENT:
-        return Chunk388032.intl.string(Chunk388032.t.mlJ8Vf);
-      case Chunk936141.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return Chunk388032.intl.string(Chunk388032.t.MRdR7z);
+    switch (e) {
+      case m.wk.SPOILER:
+        return g.intl.string(g.t["F+x38C"]);
+      case m.wk.EXPLICIT_CONTENT:
+      case m.wk.GORE_CONTENT:
+      case m.wk.SELF_HARM_CONTENT:
+        return g.intl.string(g.t.mlJ8Vf);
+      case m.wk.POTENTIAL_EXPLICIT_CONTENT:
+        return g.intl.string(g.t.MRdR7z);
       default:
-        return (0, Chunk823379.vE)(module)
+        return (0, h.vE)(e)
     }
   }
   constructor(...e) {

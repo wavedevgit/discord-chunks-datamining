@@ -10,8 +10,8 @@ var Chunk663993 = require("./663993.js"),
   Chunk981631 = require("./981631.js");
 
 function o() {
-  return (0, Chunk663993.wE)({
-    createPromise: () => require.e("85468").then(require.t.bind(require, 91438, 23)),
+  return (0, r.wE)({
+    createPromise: () => n.e("85468").then(n.t.bind(n, 91438, 23)),
     webpackId: 91438
   }).then(e => {
     let {
@@ -22,10 +22,10 @@ function o() {
 }
 
 function s() {
-  let e = Chunk618541.Z.getClient();
-  return null == module ? o().then(e => e.client.create({
+  let e = i.Z.getClient();
+  return null == e ? o().then(e => e.client.create({
     authorization: a.Ai1.BRAINTREE.KEY
-  }).then(e => l(e)).catch(() => null)) : l(module)
+  }).then(e => l(e)).catch(() => null)) : l(e)
 }
 
 function l(e) {

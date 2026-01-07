@@ -71,14 +71,14 @@ function $(e) {
   }
   return e
 }
-let Q = () => (0, Chunk54381.jsxs)("div", {
-    className: Chunk452379.gameBadge,
-    children: [(0, Chunk54381.jsx)(Chunk481060.YqE, {
+let Q = () => (0, a.jsxs)("div", {
+    className: q.gameBadge,
+    children: [(0, a.jsx)(g.YqE, {
       size: "xxs"
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, a.jsx)(g.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t.kAlUsy)
+      children: V.intl.string(V.t.kAlUsy)
     })]
   }),
   ee = Chunk473749.createContext(true);
@@ -436,19 +436,19 @@ function eo() {
   let {
     enabled: e,
     canToggle: t
-  } = Chunk389430.K.useConfig({
+  } = Z.K.useConfig({
     location: "GameProfileModal"
-  }), n = Chunk473749.useContext(ee);
-  return null != require && module && exports ? (0, Chunk54381.jsx)("div", {
+  }), n = i.useContext(ee);
+  return null != n && e && t ? (0, a.jsx)("div", {
     style: {
       position: "absolute",
       top: 0,
       left: 0,
       transform: "scale(0.5) translate(-50%, -50%)"
     },
-    children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    children: (0, a.jsx)(g.Button, {
       variant: "primary",
-      onClick: () => require.setIsShowingGameProfileV2(e => !e),
+      onClick: () => n.setIsShowingGameProfileV2(e => !e),
       text: "Toggle Game Profile V1 and V2"
     })
   }) : null

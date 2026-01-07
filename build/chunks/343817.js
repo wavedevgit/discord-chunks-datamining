@@ -97,17 +97,17 @@ class u extends Error {
   }
   getAnyErrorMessage() {
     var e, t;
-    return null != (t = null == (e = this.getAnyErrorMessageAndField()) ? true : module.error) ? exports : this.message
+    return null != (t = null == (e = this.getAnyErrorMessageAndField()) ? true : e.error) ? t : this.message
   }
   getAnyErrorMessageAndField() {
     let e = this.errors,
       t = null;
-    for (; null != module;) {
-      if (null != module._errors) return {
-        fieldName: exports,
-        error: module._errors[0].message
+    for (; null != e;) {
+      if (null != e._errors) return {
+        fieldName: t,
+        error: e._errors[0].message
       };
-      t = Object.keys(module)[0], e = module[exports]
+      t = Object.keys(e)[0], e = e[t]
     }
     return null
   }

@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk874893 = require("./874893.js");
 
 function i() {
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? Chunk874893.zd.DARK : Chunk874893.zd.LIGHT
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? r.zd.DARK : r.zd.LIGHT
 }

@@ -11,18 +11,18 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 async function o() {
   var e;
-  let t = await Chunk544891.tn.get({
-    url: Chunk981631.ANM.AUTH_SESSIONS,
+  let t = await r.tn.get({
+    url: a.ANM.AUTH_SESSIONS,
     rejectWithError: false
   });
-  return (null == exports ? true : exports.ok) && (null == (e = exports.body) ? true : module.user_sessions) != null && Chunk570140.Z.dispatch({
+  return (null == t ? true : t.ok) && (null == (e = t.body) ? true : e.user_sessions) != null && i.Z.dispatch({
     type: "FETCH_AUTH_SESSIONS_SUCCESS",
-    sessions: exports.body.user_sessions
-  }), exports
+    sessions: t.body.user_sessions
+  }), t
 }
 
 function s() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "FETCH_AUTH_SESSIONS_SUCCESS",
     sessions: []
   })

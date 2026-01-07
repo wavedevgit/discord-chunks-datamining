@@ -248,19 +248,19 @@ function Z(e) {
 }
 
 function R() {
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild),
-    t = (0, Chunk442837.e7)([Chunk889369.Z], () => Chunk889369.Z.submitting),
-    n = (0, Chunk442837.e7)([Chunk208665.Z], () => Chunk208665.Z.advancedMode);
-  return null == module ? null : (0, Chunk54381.jsx)(Chunk796027.Z, {
+  let e = (0, l.e7)([x.Z], () => x.Z.getProps().guild),
+    t = (0, l.e7)([v.Z], () => v.Z.submitting),
+    n = (0, l.e7)([C.Z], () => C.Z.advancedMode);
+  return null == e ? null : (0, r.jsx)(a.Z, {
     onSave: () => {
-      (0, Chunk743475.DO)(module).then(() => {
-        require && (0, Chunk570961.rS)(module, {
+      (0, j.DO)(e).then(() => {
+        n && (0, O.rS)(e, {
           ignoreDefaultPrompt: true
         }).catch(() => {})
       }).catch(() => {})
     },
-    onReset: Chunk743475.BG,
-    submitting: exports,
-    onSaveText: Chunk388032.intl.string(Chunk388032.t["R3BPH+"])
+    onReset: j.BG,
+    submitting: t,
+    onSaveText: _.intl.string(_.t["R3BPH+"])
   })
 }

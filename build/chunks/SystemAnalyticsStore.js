@@ -53,10 +53,10 @@ let _ = {
   hashes: {}
 };
 async function m() {
-  if (!Chunk358085.isPlatformEmbedded || !(0, Chunk358085.isWindows)()) return [];
-  await Chunk998502.ZP.ensureModule("discord_media");
-  let e = Chunk998502.ZP.requireModule("discord_media");
-  return await module.getSystemAnalyticsBlob() || []
+  if (!l.isPlatformEmbedded || !(0, l.isWindows)()) return [];
+  await c.ZP.ensureModule("discord_media");
+  let e = c.ZP.requireModule("discord_media");
+  return await e.getSystemAnalyticsBlob() || []
 }
 async function h() {
   try {
@@ -66,16 +66,16 @@ async function h() {
         hash: r,
         data: i
       }
-      of exports) {
+      of t) {
       var e;
-      let t = p(d({}, Chunk442837), {
-        gpus: null == (e = Chunk442837.gpus) ? true : module.map(e => JSON.stringify(e))
+      let t = p(d({}, i), {
+        gpus: null == (e = i.gpus) ? true : e.map(e => JSON.stringify(e))
       });
-      Chunk626135.default.track(require, exports), (_ = {
+      s.default.track(n, t), (_ = {
         hashes: d({}, _.hashes)
-      }).hashes[require] = r
+      }).hashes[n] = r
     }
-    exports.length > 0 && b.emitChange()
+    t.length > 0 && b.emitChange()
   } catch (e) {}
 }
 
@@ -94,8 +94,8 @@ class E extends(r = Chunk442837.ZP.PersistedStore) {
   async info() {
     try {
       let e = (await m()).find(e => "hardware_detected" === e.name);
-      if (null == module) return null;
-      return module.data
+      if (null == e) return null;
+      return e.data
     } catch (e) {}
   }
 }

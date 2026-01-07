@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js");
 
 function i() {
-  let [e, t] = Chunk473749.useState(null), n = Chunk473749.useRef(null);
-  return Chunk473749.useEffect(() => {
-    null != module && null != require.current && require.current.scrollIntoView({
+  let [e, t] = r.useState(null), n = r.useRef(null);
+  return r.useEffect(() => {
+    null != e && null != n.current && n.current.scrollIntoView({
       behavior: "smooth"
     })
-  }, [module]), {
-    purchaseError: module,
-    setPurchaseError: exports,
-    purchaseErrorBlockRef: require
+  }, [e]), {
+    purchaseError: e,
+    setPurchaseError: t,
+    purchaseErrorBlockRef: n
   }
 }

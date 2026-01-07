@@ -153,7 +153,7 @@ module.exports = function() {
     },
     copy: function() {
       var e = this;
-      return new s(module.r1, module.r2, module.g1, module.g2, module.b1, module.b2, module.histo)
+      return new s(e.r1, e.r2, e.g1, e.g2, e.b1, e.b2, e.histo)
     },
     avg: function(t) {
       var n = this,
@@ -202,14 +202,14 @@ module.exports = function() {
     },
     forcebw: function() {
       var e = this.vboxes;
-      module.sort(function(e, n) {
+      e.sort(function(e, n) {
         return t.naturalOrder(t.sum(e.color), t.sum(n.color))
       });
-      var n = module[0].color;
-      n[0] < 5 && n[1] < 5 && n[2] < 5 && (module[0].color = [0, 0, 0]);
-      var r = module.length - 1,
-        i = module[r].color;
-      i[0] > 251 && i[1] > 251 && i[2] > 251 && (module[r].color = [255, 255, 255])
+      var n = e[0].color;
+      n[0] < 5 && n[1] < 5 && n[2] < 5 && (e[0].color = [0, 0, 0]);
+      var r = e.length - 1,
+        i = e[r].color;
+      i[0] > 251 && i[1] > 251 && i[2] > 251 && (e[r].color = [255, 255, 255])
     }
   }, {
     quantize: function(e, n) {

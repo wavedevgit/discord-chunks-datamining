@@ -48,10 +48,10 @@ class l extends Chunk836560.EventEmitter {
   }
   createOffer() {
     let e = this.pc;
-    return module.createOffer(this.makeOfferAnswerOptions()).then(t => e.setLocalDescription(this.mungeLocalDescription(t))).then(() => {
-      let t = module.localDescription;
-      if (null == exports) throw Error("localDescription is null");
-      return this.emit("offer", exports), exports
+    return e.createOffer(this.makeOfferAnswerOptions()).then(t => e.setLocalDescription(this.mungeLocalDescription(t))).then(() => {
+      let t = e.localDescription;
+      if (null == t) throw Error("localDescription is null");
+      return this.emit("offer", t), t
     }).catch(t => {
       if ("have-remote-offer" === e.signalingState) return s.error(t), this.createOffer();
       throw t
@@ -59,10 +59,10 @@ class l extends Chunk836560.EventEmitter {
   }
   createAnswer() {
     let e = this.pc;
-    return module.createAnswer(this.makeOfferAnswerOptions()).then(t => e.setLocalDescription(this.mungeLocalDescription(t))).then(() => {
-      let t = module.localDescription;
-      if (null == exports) throw Error("localDescription is null");
-      return this.emit("answer", exports), exports
+    return e.createAnswer(this.makeOfferAnswerOptions()).then(t => e.setLocalDescription(this.mungeLocalDescription(t))).then(() => {
+      let t = e.localDescription;
+      if (null == t) throw Error("localDescription is null");
+      return this.emit("answer", t), t
     }).catch(t => {
       throw s.warn("PeerConnection#createAnswer: Attempted to set local description in state: ".concat(e.signalingState)), t
     })
@@ -83,7 +83,7 @@ class l extends Chunk836560.EventEmitter {
   makeOfferAnswerOptions() {
     return {
       offerToReceiveAudio: true,
-      offerToReceiveVideo: Chunk436620.U8,
+      offerToReceiveVideo: a.U8,
       iceRestart: false
     }
   }

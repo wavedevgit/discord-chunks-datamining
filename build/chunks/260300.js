@@ -31,10 +31,10 @@ let a = {
     })
   },
   suppressAll() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "TUTORIAL_INDICATOR_SUPPRESS_ALL"
-    }), Chunk544891.tn.post({
-      url: Chunk981631.ANM.TUTORIAL_INDICATORS_SUPPRESS,
+    }), i.tn.post({
+      url: l.ANM.TUTORIAL_INDICATORS_SUPPRESS,
       oldFormErrors: true,
       rejectWithError: true
     })

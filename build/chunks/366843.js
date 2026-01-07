@@ -22,16 +22,16 @@ module.exports = Chunk130006(Array, "Array", function(e, t) {
   })
 }, function() {
   var e = _(this),
-    t = module.target,
-    n = module.index++;
-  if (!exports || require >= exports.length) return module.target = null, Chunk682564(true, true);
-  switch (module.kind) {
+    t = e.target,
+    n = e.index++;
+  if (!t || n >= t.length) return e.target = null, c(true, true);
+  switch (e.kind) {
     case "keys":
-      return Chunk682564(require, false);
+      return c(n, false);
     case "values":
-      return Chunk682564(exports[require], false)
+      return c(t[n], false)
   }
-  return Chunk682564([require, exports[require]], false)
+  return c([n, t[n]], false)
 }, "values");
 var m = Chunk933121.Arguments = Chunk933121.Array;
 if (Chunk967333("keys"), Chunk967333("values"), Chunk967333("entries"), !Chunk511696 && Chunk507604 && "values" !== m.name) try {

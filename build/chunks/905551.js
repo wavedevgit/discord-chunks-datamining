@@ -116,7 +116,7 @@ function g(e, t) {
 }
 
 function E() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GAME_SERVER_REGION_PING_STATE_RESET"
   })
 }

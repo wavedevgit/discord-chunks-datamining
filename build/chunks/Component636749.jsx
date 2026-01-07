@@ -18,15 +18,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk141291 = require("./141291.js");
 
 function v() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: c()(Chunk141291.toast, Chunk665283.toast),
-    children: [(0, Chunk54381.jsx)(Chunk481060.b7C, {
-      color: Chunk481060.TVs.colors.TEXT_BRAND
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk141291.__invalid_content,
+  return (0, a.jsxs)("div", {
+    className: c()(_.toast, x.toast),
+    children: [(0, a.jsx)(o.b7C, {
+      color: o.TVs.colors.TEXT_BRAND
+    }), (0, a.jsx)(o.Text, {
+      className: _.__invalid_content,
       color: "text-strong",
       variant: "text-md/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["gd/Yqs"])
+      children: g.intl.string(g.t["gd/Yqs"])
     })]
   })
 }

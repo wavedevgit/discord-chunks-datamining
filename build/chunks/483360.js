@@ -152,7 +152,7 @@ let ey = new Chunk710845.Z("AutocompleteUtils"),
 function eK() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
     t = arguments.length > 1 ? arguments[1] : true;
-  return ej * module * (null != exports ? exports : 1)
+  return ej * e * (null != t ? t : 1)
 }
 
 function ez(e) {

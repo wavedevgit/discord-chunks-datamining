@@ -95,10 +95,10 @@ function o(e, n) {
 }
 let i = function() {
   let e = new Uint32Array(256);
-  for (let n = 256; exports > 0; exports--) {
-    let t = exports << 24;
-    for (let e = 8; module > 0; module--) t = 0x80000000 & require ? 0x4c11db7 ^ require << 1 : require << 1;
-    module[exports] = require
+  for (let n = 256; n > 0; n--) {
+    let t = n << 24;
+    for (let e = 8; e > 0; e--) t = 0x80000000 & t ? 0x4c11db7 ^ t << 1 : t << 1;
+    e[n] = t
   }
-  return module
+  return e
 }()

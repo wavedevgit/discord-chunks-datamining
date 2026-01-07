@@ -14,7 +14,7 @@ var Chunk990547 = require("./990547.js"),
 require("./135200.js");
 var Chunk388032 = require("./388032.jsx");
 let f = {
-  resetSuggestions: () => Chunk570140.Z.dispatch({
+  resetSuggestions: () => a.Z.dispatch({
     type: "POMELO_SUGGESTIONS_RESET"
   }),
   async fetchSuggestionsRegistration(e) {

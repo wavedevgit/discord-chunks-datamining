@@ -8,8 +8,8 @@ var Chunk63063 = require("./63063.js"),
   Chunk388032 = require("./388032.jsx");
 
 function E() {
-  return Chunk388032.intl.format(Chunk388032.t["+ALa7+"], {
-    fullTermsUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CREATOR_TERMS),
-    creatorRevenuePolicyUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CREATOR_POLICY)
+  return a.intl.format(a.t["+ALa7+"], {
+    fullTermsUrl: i.Z.getArticleURL(e.BhN.CREATOR_TERMS),
+    creatorRevenuePolicyUrl: i.Z.getArticleURL(e.BhN.CREATOR_POLICY)
   })
 }

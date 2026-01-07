@@ -23,7 +23,7 @@ function N(e, t, a) {
 }
 class m extends Chunk473749.PureComponent {
   componentDidMount() {
-    this.callChangeLocale(Chunk330711.Z.getLocale())
+    this.callChangeLocale(d.Z.getLocale())
   }
   render() {
     let {
@@ -33,7 +33,7 @@ class m extends Chunk473749.PureComponent {
     } = this.state, {
       className: s
     } = this.props, d = null;
-    return null != exports && (d = exports.sort((e, t) => e.code < t.code ? false : +(e.code > t.code)).map(e => {
+    return null != t && (d = t.sort((e, t) => e.code < t.code ? false : +(e.code > t.code)).map(e => {
       let t = function(e) {
           try {
             return a(621287)("./".concat(e, ".png"))
@@ -51,28 +51,28 @@ class m extends Chunk473749.PureComponent {
           alt: e.name
         }), e.name]
       }, e.code)
-    })), (0, Chunk54381.jsxs)("div", {
-      className: l()(Chunk146371.localePicker, Chunk120356),
+    })), (0, n.jsxs)("div", {
+      className: l()(u.localePicker, s),
       onMouseEnter: this.open,
       onMouseLeave: this.close,
       onClick: this.toggle,
-      children: [(0, Chunk54381.jsxs)(Chunk435935.k, {
-        align: Chunk435935.k.Align.CENTER,
-        className: (0, Chunk982905.l)(Chunk146371, "opener", module ? "Open" : null),
-        children: [(0, Chunk54381.jsx)("span", {
-          className: Chunk146371.line
-        }), (0, Chunk54381.jsx)("img", {
-          className: Chunk146371.localeIcon,
-          src: Chunk431138.r.ICON_TRANSLATE,
+      children: [(0, n.jsxs)(i.k, {
+        align: i.k.Align.CENTER,
+        className: (0, o.l)(u, "opener", e ? "Open" : null),
+        children: [(0, n.jsx)("span", {
+          className: u.line
+        }), (0, n.jsx)("img", {
+          className: u.localeIcon,
+          src: c.r.ICON_TRANSLATE,
           alt: "Choose Locale"
-        }), (0, Chunk54381.jsx)("img", {
-          className: Chunk146371.arrowIcon,
-          src: Chunk431138.r.ICON_ARROW_DOWN,
+        }), (0, n.jsx)("img", {
+          className: u.arrowIcon,
+          src: c.r.ICON_ARROW_DOWN,
           alt: "Open Locale"
         })]
-      }), (0, Chunk54381.jsx)("ul", {
-        className: (0, Chunk982905.l)(Chunk146371, "localeList", module ? "Open" : "Closed"),
-        children: Chunk330711
+      }), (0, n.jsx)("ul", {
+        className: (0, o.l)(u, "localeList", e ? "Open" : "Closed"),
+        children: d
       })]
     })
   }

@@ -10,8 +10,8 @@ var Chunk722932 = require("./722932.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.UO)(Chunk313789.n.SOUNDMOJI_VOLUME_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["2JbvKw"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.INenzY),
+  useTitle: () => a.intl.string(a.t["2JbvKw"]),
+  useSubtitle: () => a.intl.string(a.t.INenzY),
   setValue: function(t) {
     let e = (0, s.A)(t);
     u.AY.updateSetting(e)
@@ -19,14 +19,14 @@ let o = (0, Chunk509613.UO)(Chunk313789.n.SOUNDMOJI_VOLUME_SETTING, {
   minValue: 0,
   maxValue: 100,
   getInitialValue: function() {
-    let t = Chunk695346.AY.getSetting();
-    return (0, Chunk36703.P)(module)
+    let t = u.AY.getSetting();
+    return (0, s.P)(t)
   },
   onValueRender: function(t) {
     return "".concat(t.toFixed(0), "%")
   },
   usePredicate: function() {
-    return (0, Chunk722932.X0)({
+    return (0, i.X0)({
       location: "SoundmojiVolumeSetting"
     })
   }

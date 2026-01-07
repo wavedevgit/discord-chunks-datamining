@@ -19,13 +19,13 @@ var Chunk924628 = require("./924628.js"),
   Chunk613852 = require("./613852.js"),
   Chunk388032 = require("./388032.jsx");
 let N = (0, Chunk509613.k4)(Chunk313789.n.DATA_USAGE_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.SRZyHg),
-  useNotice: () => (0, Chunk915009.LN)() ? {
-    type: Chunk970013.v.STRONGLY_DISCOURAGED_CUSTOM,
-    notice: Chunk116233.Z
+  useTitle: () => I.intl.string(I.t.SRZyHg),
+  useNotice: () => (0, l.LN)() ? {
+    type: u.v.STRONGLY_DISCOURAGED_CUSTOM,
+    notice: o.Z
   } : null,
   initialize: () => {
-    Chunk480294.Z.fetchedConsents || (0, Chunk924628.I)()
+    r.Z.fetchedConsents || (0, i.I)()
   },
-  buildLayout: () => [Chunk613852.Q, Chunk380640.M, Chunk625944.W, Chunk950820.T, Chunk717773.P, Chunk196863.I, Chunk947199.Z]
+  buildLayout: () => [g.Q, _.M, d.W, E.T, T.P, S.I, c.Z]
 })

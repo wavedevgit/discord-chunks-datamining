@@ -77,7 +77,7 @@ class l extends Chunk495852.C {
       no: 4,
       name: "gradient",
       kind: "message",
-      T: () => Chunk7883.p
+      T: () => s.p
     }, {
       no: 5,
       name: "background_asset_url",

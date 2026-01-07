@@ -72,11 +72,11 @@ class a {
   }
   getFirstKey() {
     let e = this.collection.getFirstKey();
-    return this.findNextNonDisabled(module, e => this.collection.getKeyAfter(e))
+    return this.findNextNonDisabled(e, e => this.collection.getKeyAfter(e))
   }
   getLastKey() {
     let e = this.collection.getLastKey();
-    return this.findNextNonDisabled(module, e => this.collection.getKeyBefore(e))
+    return this.findNextNonDisabled(e, e => this.collection.getKeyBefore(e))
   }
   getKeyPageAbove(e) {
     let t = this.ref.current,

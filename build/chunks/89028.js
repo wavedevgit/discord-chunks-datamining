@@ -14,11 +14,11 @@ let o = {
     let {
       enabled: e,
       inInbox: t
-    } = Chunk2818.Z.getCurrentConfig({
+    } = r.Z.getCurrentConfig({
       location: "keybinds"
     }, {
       autoTrackExposure: false
     });
-    if (module && !exports) return Chunk585483.S.dispatch(Chunk981631.CkL.TOGGLE_FOR_LATER), false
+    if (e && !t) return i.S.dispatch(a.CkL.TOGGLE_FOR_LATER), false
   }
 }

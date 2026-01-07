@@ -42,9 +42,9 @@ let P = null,
   w = new Chunk540126.ZP;
 
 function D() {
-  let e = Chunk944486.Z.getChannelId(),
-    t = Chunk944486.Z.getVoiceChannelId();
-  return P = module, R = exports, w.clear()
+  let e = v.Z.getChannelId(),
+    t = v.Z.getVoiceChannelId();
+  return P = e, R = t, w.clear()
 }
 
 function x(e) {
@@ -189,12 +189,12 @@ function X(e) {
 }
 
 function J() {
-  let e = Chunk944486.Z.getChannelId(),
-    t = Chunk944486.Z.getVoiceChannelId(),
-    n = P !== module || R !== exports;
-  return !!require && (a()([P, R, module, exports]).uniq().forEach(e => {
+  let e = v.Z.getChannelId(),
+    t = v.Z.getVoiceChannelId(),
+    n = P !== e || R !== t;
+  return !!n && (a()([P, R, e, t]).uniq().forEach(e => {
     null != e && w.nonPositionalChannelIdUpdate(e) && (n = true)
-  }), P = module, R = exports, true)
+  }), P = e, R = t, true)
 }
 
 function $(e) {
@@ -273,7 +273,7 @@ function el(e) {
 }
 class ec extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk601070.Z, Chunk314897.default, Chunk680089.Z, Chunk592125.Z, Chunk58468.Z, Chunk317381.ZP, Chunk77498.Z, Chunk430198.Z, Chunk924301.ZP, Chunk569471.Z, Chunk496675.Z, Chunk306680.ZP, Chunk944486.Z, Chunk9156.ZP, Chunk581883.Z)
+    this.waitFor(f.Z, m.default, h.Z, g.Z, E.Z, l.ZP, b.Z, u.Z, d.ZP, p.Z, y.Z, O.ZP, v.Z, S.ZP, _.Z)
   }
   getGuild(e, t) {
     var n, r;

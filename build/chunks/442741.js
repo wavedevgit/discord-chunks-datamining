@@ -36,12 +36,12 @@ function u(e) {
 
 function d() {
   var e;
-  let t = Chunk944486.Z.getVoiceChannelId();
+  let t = s.Z.getVoiceChannelId();
   return u({
-    channelId: null != exports ? exports : true,
-    mediaSessionId: null != (e = Chunk19780.Z.getMediaSessionId()) ? module : true,
-    rtcConnectionId: Chunk19780.Z.getRTCConnectionId(),
-    mediaContext: Chunk46973.Yn.DEFAULT
+    channelId: null != t ? t : true,
+    mediaSessionId: null != (e = o.Z.getMediaSessionId()) ? e : true,
+    rtcConnectionId: o.Z.getRTCConnectionId(),
+    mediaContext: r.Yn.DEFAULT
   }, p())
 }
 
@@ -64,8 +64,8 @@ function f(e) {
 function p() {
   var e, t, n;
   return {
-    videoDeviceName: null == (e = Chunk131951.Z.getVideoDevices()[Chunk131951.Z.getVideoDeviceId()]) ? true : module.name,
-    audioInputDeviceName: null == (t = Chunk131951.Z.getInputDevices()[Chunk131951.Z.getInputDeviceId()]) ? true : exports.name,
-    audioOutputDeviceName: null == (n = Chunk131951.Z.getOutputDevices()[Chunk131951.Z.getOutputDeviceId()]) ? true : require.name
+    videoDeviceName: null == (e = a.Z.getVideoDevices()[a.Z.getVideoDeviceId()]) ? true : e.name,
+    audioInputDeviceName: null == (t = a.Z.getInputDevices()[a.Z.getInputDeviceId()]) ? true : t.name,
+    audioOutputDeviceName: null == (n = a.Z.getOutputDevices()[a.Z.getOutputDeviceId()]) ? true : n.name
   }
 }

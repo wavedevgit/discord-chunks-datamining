@@ -159,7 +159,7 @@ let h = e => {
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
   }, R = () => {
-    let [e, t] = Chunk473749.useState(() => ({
+    let [e, t] = r.useState(() => ({
       collectionFiles: [],
       avatarDecorationFiles: [],
       profileEffectFilesMap: {},
@@ -167,7 +167,7 @@ let h = e => {
     })), {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
-    } = (0, Chunk619899.N9)(), a = Chunk473749.useCallback(async e => {
+    } = (0, o.N9)(), a = r.useCallback(async e => {
       let r = await P(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
@@ -179,21 +179,21 @@ let h = e => {
           i(e)
         })
       }))
-    }, [require, Chunk481060]), s = Chunk473749.useCallback(() => {
-      exports(e => u(l({}, e), {
+    }, [n, i]), s = r.useCallback(() => {
+      t(e => u(l({}, e), {
         collectionFiles: [],
         avatarDecorationFiles: [],
         profileEffectFilesMap: {}
       }))
-    }, []), c = Chunk473749.useCallback(() => {
-      exports(e => u(l({}, e), {
+    }, []), c = r.useCallback(() => {
+      t(e => u(l({}, e), {
         ignoredFilenames: []
       }))
     }, []);
     return {
-      ignoredFilenames: module.ignoredFilenames,
+      ignoredFilenames: e.ignoredFilenames,
       clearAssets: s,
       clearIgnoredFilenames: c,
-      processAndUpsertAssets: Chunk406432
+      processAndUpsertAssets: a
     }
   }

@@ -25,36 +25,36 @@ function f() {
     t = p.useField("isUploading"),
     n = p.useField("isSuccess"),
     s = p.useField("errorMessage"),
-    f = Chunk473749.useRef([]),
-    h = Chunk473749.useRef(""),
-    x = Chunk473749.useCallback(() => {
+    f = r.useRef([]),
+    h = r.useRef(""),
+    x = r.useCallback(() => {
       let {
         results: e,
         query: t
-      } = Chunk823385.Z.getProps();
-      (f.current !== module || h.current !== exports) && (f.current = module, h.current = exports, (0, Chunk620481.OC)())
+      } = c.Z.getProps();
+      (f.current !== e || h.current !== t) && (f.current = e, h.current = t, (0, d.OC)())
     }, []);
-  Chunk473749.useEffect(() => {
-    if (module) return Chunk823385.Z.addChangeListener(x), () => Chunk823385.Z.removeChangeListener(x)
-  }, [x, module]);
-  let b = Chunk473749.useCallback(async () => {
+  r.useEffect(() => {
+    if (e) return c.Z.addChangeListener(x), () => c.Z.removeChangeListener(x)
+  }, [x, e]);
+  let b = r.useCallback(async () => {
     let {
       isUploading: e
     } = p.getState();
-    if (!module) try {
+    if (!e) try {
       p.setState({
         isRecording: false,
         isUploading: true,
         errorMessage: null,
         isSuccess: false
-      }), await (0, Chunk729345.E)(Chunk981631.GU0.WEB_APP), p.setState({
+      }), await (0, o.E)(m.GU0.WEB_APP), p.setState({
         isSuccess: true,
         errorMessage: null
       })
     } catch (t) {
-      let e = new Chunk881052.Hx(exports);
+      let e = new l.Hx(t);
       p.setState({
-        errorMessage: module.getAnyErrorMessage()
+        errorMessage: e.getAnyErrorMessage()
       })
     } finally {
       p.setState({
@@ -62,23 +62,23 @@ function f() {
       })
     }
   }, []);
-  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+  return (0, a.jsxs)(i.C3N, {
     label: "Debug Logs Session",
     description: "Click to emit debug logs as you search in the Quick Switcher. Includes your search term and all results. For each result, includes the record id, associated names, and frecency scores.",
-    children: [(0, Chunk54381.jsx)(Chunk481060.Wn, {
-      messageType: Chunk481060.QYI.INFO,
+    children: [(0, a.jsx)(i.Wn, {
+      messageType: i.QYI.INFO,
       children: "When you are done, please remember to upload the logs."
-    }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
-        variant: module ? "critical-primary" : "primary",
+    }), (0, a.jsxs)(i.ButtonGroup, {
+      children: [(0, a.jsx)(i.Button, {
+        variant: e ? "critical-primary" : "primary",
         onClick: () => p.setState({
-          isRecording: !module
+          isRecording: !e
         }),
-        text: module ? "Stop Recording" : "Start Recording"
-      }), (0, Chunk54381.jsx)(Chunk608934.a, {
-        isUploading: exports,
-        isSuccess: require,
-        errorMessage: Chunk972959,
+        text: e ? "Stop Recording" : "Start Recording"
+      }), (0, a.jsx)(u.a, {
+        isUploading: t,
+        isSuccess: n,
+        errorMessage: s,
         onClick: b,
         title: "Upload Session Logs"
       })]

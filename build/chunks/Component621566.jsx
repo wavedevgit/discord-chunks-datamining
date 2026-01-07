@@ -98,53 +98,53 @@ class N extends Chunk473749.Component {
       result: r,
       sending: l
     } = this.props;
-    switch (require.type) {
-      case Chunk212819.h8.GROUP_DM:
-        e = (0, Chunk54381.jsx)(S, {
-          channel: require.data.record
+    switch (r.type) {
+      case c.h8.GROUP_DM:
+        e = (0, s.jsx)(S, {
+          channel: r.data.record
         });
         break;
-      case Chunk212819.h8.TEXT_CHANNEL: {
+      case c.h8.TEXT_CHANNEL: {
         let {
           categoryName: t,
           guildName: l
-        } = require;
-        e = (0, Chunk54381.jsx)(P, {
-          channel: require.data.record,
-          categoryName: exports,
-          guildName: Chunk473749
+        } = r;
+        e = (0, s.jsx)(P, {
+          channel: r.data.record,
+          categoryName: t,
+          guildName: l
         });
         break
       }
-      case Chunk212819.h8.USER: {
+      case c.h8.USER: {
         let {
           data: {
             comparator: t,
             record: l
           },
           status: n
-        } = require;
-        e = (0, Chunk54381.jsx)(C, {
-          comparator: exports,
-          user: Chunk473749,
-          status: Chunk793030
+        } = r;
+        e = (0, s.jsx)(C, {
+          comparator: t,
+          user: l,
+          status: n
         })
       }
     }
-    return t = require.sent ? (0, Chunk54381.jsx)(Chunk481060.Button, {
+    return t = r.sent ? (0, s.jsx)(i.Button, {
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t.i6A1Xw),
+      text: v.intl.string(v.t.i6A1Xw),
       size: "sm",
       disabled: true
-    }) : (0, Chunk54381.jsx)(Chunk481060.Button, {
+    }) : (0, s.jsx)(i.Button, {
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t["6F9ivu"]),
+      text: v.intl.string(v.t["6F9ivu"]),
       size: "sm",
-      loading: Chunk473749
-    }), (0, Chunk54381.jsxs)(Chunk481060.P3F, {
-      className: Chunk761582.resultWrapper,
+      loading: l
+    }), (0, s.jsxs)(i.P3F, {
+      className: T.resultWrapper,
       onClick: this.handleClick,
-      children: [module, exports]
+      children: [e, t]
     })
   }
   constructor(...e) {

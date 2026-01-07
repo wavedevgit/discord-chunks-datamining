@@ -29,49 +29,49 @@ var Chunk54381 = require("./54381.js"),
   Chunk583139 = require("./583139.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let N = () => (0, Chunk54381.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.xVRG4P),
-    webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, Chunk54381.jsx)(Chunk211466.n, {}), (0, Chunk54381.jsx)(Chunk122897.Z, {}), (0, Chunk54381.jsx)(Chunk24400.Z, {}), (0, Chunk54381.jsx)(Chunk924356.Z, {}), (0, Chunk54381.jsx)(Chunk864239.Z, {})]
+let N = () => (0, r.jsxs)(m.Z, {
+    title: A.intl.string(A.t.xVRG4P),
+    webSetting: I.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+    children: [(0, r.jsx)(g.n, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(E.Z, {})]
   }),
-  P = () => (0, Chunk54381.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["y62Z/d"]),
-    webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
-    children: [(0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-      children: (0, Chunk54381.jsx)(Chunk540204.Z, {})
-    }), (0, Chunk54381.jsx)(Chunk988043.Z, {}), (0, Chunk54381.jsx)(Chunk919539.Z, {}), (0, Chunk54381.jsx)(Chunk301812.Z, {}), (0, Chunk54381.jsx)(Chunk190014.Z, {})]
+  P = () => (0, r.jsxs)(m.Z, {
+    title: A.intl.string(A.t["y62Z/d"]),
+    webSetting: I.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+    children: [(0, r.jsx)(a.F, {
+      setting: I.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+      children: (0, r.jsx)(_.Z, {})
+    }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(y.Z, {}), (0, r.jsx)(b.Z, {})]
   }),
-  R = () => (0, Chunk54381.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["1Qn8iV"]),
-    webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-    children: [(0, Chunk54381.jsx)(Chunk694569.Z, {}), (0, Chunk54381.jsx)(Chunk273927.ZP, {})]
+  R = () => (0, r.jsxs)(m.Z, {
+    title: A.intl.string(A.t["1Qn8iV"]),
+    webSetting: I.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+    children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)(h.ZP, {})]
   }),
-  w = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(N, {}), (0, Chunk54381.jsx)(P, {}), (0, Chunk54381.jsx)(R, {})]
+  w = () => (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(N, {}), (0, r.jsx)(P, {}), (0, r.jsx)(R, {})]
   });
 
 function D() {
-  let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
+  let e = (0, i.e7)([o.Z], () => o.Z.getSubsection()),
     t = [{
-      title: Chunk388032.intl.string(Chunk388032.t["/7xJCF"]),
-      component: () => (0, Chunk54381.jsx)(w, {}),
-      setting: Chunk726985.s6.CONTENT_SOCIAL_DISCORD_TAB
+      title: A.intl.string(A.t["/7xJCF"]),
+      component: () => (0, r.jsx)(w, {}),
+      setting: I.s6.CONTENT_SOCIAL_DISCORD_TAB
     }, {
-      title: Chunk388032.intl.string(Chunk388032.t.YpCiMt),
-      component: Chunk901151.Z,
-      setting: Chunk726985.s6.CONTENT_SOCIAL_CONNECTED_GAMES
+      title: A.intl.string(A.t.YpCiMt),
+      component: u.Z,
+      setting: I.s6.CONTENT_SOCIAL_CONNECTED_GAMES
     }];
-  return (0, Chunk54381.jsx)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
-    notice: (0, Chunk54381.jsx)(Chunk441007.Z, {
-      page: Chunk441007.N.CONTENT_AND_SOCIAL
+  return (0, r.jsx)(s.N, {
+    header: A.intl.string(A.t["+o1pDZ"]),
+    notice: (0, r.jsx)(S.Z, {
+      page: S.N.CONTENT_AND_SOCIAL
     }),
-    children: (0, Chunk54381.jsx)(Chunk526156.Z, {
-      parentSetting: Chunk726985.s6.CONTENT_SOCIAL,
-      settingsSection: Chunk981631.oAB.CONTENT_AND_SOCIAL,
-      tabs: exports,
-      defaultTabIndex: module === Chunk583139.C ? 1 : true
+    children: (0, r.jsx)(l.Z, {
+      parentSetting: I.s6.CONTENT_SOCIAL,
+      settingsSection: C.oAB.CONTENT_AND_SOCIAL,
+      tabs: t,
+      defaultTabIndex: e === T.C ? 1 : true
     })
   })
 }

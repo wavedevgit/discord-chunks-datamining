@@ -278,15 +278,15 @@ function F(e) {
 
 function B() {
   var e, t;
-  let n = (0, Chunk828700.TH)();
-  return (0, Chunk54381.jsx)(Chunk787025.G, {
+  let n = (0, l.TH)();
+  return (0, r.jsx)(T.G, {
     removeChildWrapper: true,
-    children: (0, Chunk54381.jsx)(Chunk787025.j, {
-      transitionState: Chunk793030.Dvm.ENTERED,
+    children: (0, r.jsx)(T.j, {
+      transitionState: c.Dvm.ENTERED,
       hideHeader: true,
-      children: (0, Chunk54381.jsx)(U, {
-        guild: null == (e = require.state) ? true : module.guild,
-        application: null == (t = require.state) ? true : exports.application,
+      children: (0, r.jsx)(U, {
+        guild: null == (e = n.state) ? true : e.guild,
+        application: null == (t = n.state) ? true : t.application,
         showsCloseWindowText: true
       })
     })

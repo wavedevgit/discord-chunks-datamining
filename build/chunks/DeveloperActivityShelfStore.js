@@ -100,7 +100,7 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     return f
   }
   getIsEnabled() {
-    return Chunk695346.Sb.getSetting() && m.length > 0
+    return s.Sb.getSetting() && m.length > 0
   }
   getLastUsedObject() {
     return f.lastUsedObject

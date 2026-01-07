@@ -55,20 +55,20 @@ function u(e) {
   if (Array.isArray(e)) return e
 }
 var d = function() {
-  var e = a((0, Chunk473749.useState)(false), 2),
-    t = module[0],
-    n = module[1],
-    o = (0, Chunk473749.useContext)(Chunk767436.L);
-  return (0, Chunk473749.useEffect)(function() {
-    var e, t = null == o || null == (e = o.dragDropManager) ? true : module.getBackend(),
+  var e = a((0, r.useState)(false), 2),
+    t = e[0],
+    n = e[1],
+    o = (0, r.useContext)(i.L);
+  return (0, r.useEffect)(function() {
+    var e, t = null == o || null == (e = o.dragDropManager) ? true : e.getBackend(),
       r = {
         backendChanged: function(e) {
           n(e.previewEnabled())
         }
       };
-    return require(exports.previewEnabled()), exports.previewsList().register(Chunk473749),
+    return n(t.previewEnabled()), t.previewsList().register(r),
       function() {
-        exports.previewsList().unregister(Chunk473749)
+        t.previewsList().unregister(r)
       }
-  }, [o, o.dragDropManager]), exports
+  }, [o, o.dragDropManager]), t
 }

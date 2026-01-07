@@ -84,9 +84,9 @@ class W extends Chunk836560.EventEmitter {
       loadState: e,
       channels: t
     } = this.state;
-    if ("loaded" !== module) return;
+    if ("loaded" !== e) return;
     let n = false,
-      r = exports.map(e => {
+      r = t.map(e => {
         if (e.isFullyLoaded || e.deleted || n) return e;
         if (e.collapsed)
           if (!e.hasLoadedAnything) return B(U({}, e), {
@@ -95,9 +95,9 @@ class W extends Chunk836560.EventEmitter {
           else return e;
         return (e = this.populateInitialStateFromStore(e)).isFullyLoaded || (s()("nsfw" !== e.type, "this channel should already be loaded"), "messages" === e.type && this.loadChannelMessages(e) && (n = true)), e
       });
-    (!require || r.some((e, n) => e !== t[n])) && this.setState({
+    (!n || r.some((e, n) => e !== t[n])) && this.setState({
       channels: r,
-      loadState: require ? this.state.loadState : "done"
+      loadState: n ? this.state.loadState : "done"
     })
   }
   populateInitialStateFromStore(e) {
@@ -296,13 +296,13 @@ function K() {
   let e = function() {
       var e, t;
       let n = {},
-        r = null != (t = null == (e = Chunk581883.Z.settings.guilds) ? true : module.guilds) ? exports : {};
+        r = null != (t = null == (e = E.Z.settings.guilds) ? true : e.guilds) ? t : {};
       for (let e in r)
-        for (let t in r[module].channels) {
-          let i = Chunk592125.Z.getChannel(exports);
-          exports in require && (null == i ? true : i.guild_id) !== module || (require[exports] = r[module].channels[exports].collapsedInInbox)
+        for (let t in r[e].channels) {
+          let i = _.Z.getChannel(t);
+          t in n && (null == i ? true : i.guild_id) !== e || (n[t] = r[e].channels[t].collapsedInInbox)
         }
-      return require
+      return n
     }(),
     t = function(e) {
       let t = [];
@@ -317,15 +317,15 @@ function K() {
           for (let r in a) Y(e, t, n, r)
         })
       }), u().sortBy(t, e => e.sortOrder)
-    }(module),
-    n = u().uniq(exports.map(e => e.guildId)).filter(Chunk823379.lm);
-  return Chunk570140.Z.dispatch({
+    }(e),
+    n = u().uniq(t.map(e => e.guildId)).filter(D.lm);
+  return d.Z.dispatch({
     type: "INBOX_OPEN",
-    guildIds: require
+    guildIds: n
   }), {
-    collapsedChannels: module,
+    collapsedChannels: e,
     loadState: "loaded",
-    channels: exports,
+    channels: t,
     scrollToChannelIndex: null
   }
 }

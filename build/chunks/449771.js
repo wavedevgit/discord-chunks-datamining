@@ -10,9 +10,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.ADVANCED_SHOW_GAME_LIBRARY, {
-  usePredicate: () => (0, Chunk442837.e7)([Chunk283595.Z], () => Chunk283595.Z.hasLibraryApplication()),
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.fi3UQN),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["8mYp37"]),
-  useValue: () => !Chunk695346.bm.useSetting(),
+  usePredicate: () => (0, i.e7)([s.Z], () => s.Z.hasLibraryApplication()),
+  useTitle: () => a.intl.string(a.t.fi3UQN),
+  useSubtitle: () => a.intl.string(a.t["8mYp37"]),
+  useValue: () => !u.bm.useSetting(),
   setValue: t => u.bm.updateSetting(!t)
 })

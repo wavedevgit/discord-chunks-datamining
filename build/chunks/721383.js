@@ -10,5 +10,5 @@ var Chunk481060 = require("./481060.js"),
 let o = {
   binds: ["mod+/", "mod+shift+/"],
   comboKeysBindGlobal: true,
-  action: () => ((0, Chunk481060.nfh)(Chunk285371.J) ? Chunk191980.C() : Chunk191980.$(), false)
+  action: () => ((0, r.nfh)(a.J) ? i.C() : i.$(), false)
 }

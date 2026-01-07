@@ -25,9 +25,9 @@ var Chunk98405 = require("./98405.js"),
   I = Chunk154028("Error"),
   T = Chunk154028(v) || function() {
     try {
-      new(Chunk154028("MessageChannel") || Chunk10693("worker_threads").MessageChannel)().port1.postMessage(new WeakMap)
+      new(i("MessageChannel") || a("worker_threads").MessageChannel)().port1.postMessage(new WeakMap)
     } catch (e) {
-      if (module.name === S && 25 === module.code) return module.constructor
+      if (e.name === S && 25 === e.code) return e.constructor
     }
   }(),
   C = T && T.prototype,
@@ -39,19 +39,19 @@ var Chunk98405 = require("./98405.js"),
     return f(g, e) && g[e].m ? g[e].c : 0
   },
   D = function() {
-    Chunk170322(this, x);
+    p(this, x);
     var e = arguments.length,
-      t = Chunk759319(module < 1 ? true : arguments[0]),
-      n = Chunk759319(module < 2 ? true : arguments[1], "Error"),
-      r = w(require);
+      t = h(e < 1 ? true : arguments[0]),
+      n = h(e < 2 ? true : arguments[1], "Error"),
+      r = w(n);
     if (N(this, {
         type: v,
-        name: require,
-        message: exports,
-        code: Chunk98405
-      }), Chunk507604 || (this.name = require, this.message = exports, this.code = Chunk98405), R) {
-      var i = new I(exports);
-      Chunk154028.name = v, c(this, "stack", Chunk530575(1, Chunk742850(Chunk154028.stack, 1)))
+        name: n,
+        message: t,
+        code: r
+      }), y || (this.name = n, this.message = t, this.code = r), R) {
+      var i = new I(t);
+      i.name = v, c(this, "stack", l(1, E(i.stack, 1)))
     }
   },
   x = D.prototype = Chunk713411(A),
@@ -72,7 +72,7 @@ var M = Chunk621523(function() {
     return !(new T instanceof I)
   }),
   k = M || Chunk621523(function() {
-    return A.toString !== Chunk266101 || "2: 1" !== String(new T(1, 2))
+    return A.toString !== m || "2: 1" !== String(new T(1, 2))
   }),
   U = M || Chunk621523(function() {
     return 25 !== new T(1, "DataCloneError").code
@@ -89,7 +89,7 @@ Chunk98405({
 var F = Chunk154028(v),
   B = F.prototype;
 for (var V in k && (Chunk511696 || T === F) && Chunk556585(B, "toString", Chunk266101), U && Chunk507604 && T === F && Chunk573078(B, "code", L(function() {
-    return w(Chunk179122(this).name)
+    return w(_(this).name)
   })), Chunk17204)
   if (Chunk77025(Chunk17204, V)) {
     var H = Chunk17204[V],

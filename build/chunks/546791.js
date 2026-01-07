@@ -31,9 +31,9 @@ let d = 60,
   _ = 172800,
   m = 604800,
   h = () => ({
-    today: Chunk388032.intl.string(Chunk517319.default.VjIAQQ),
-    yesterday: Chunk388032.intl.string(Chunk517319.default["2a8xHY"]),
-    days: Chunk517319.default.Xt6oND
+    today: u.intl.string(c.default.VjIAQQ),
+    yesterday: u.intl.string(c.default["2a8xHY"]),
+    days: c.default.Xt6oND
   }),
   g = e => e ? {
     today: u.intl.string(c.default["2AtcIs"]),
@@ -75,23 +75,23 @@ let d = 60,
   },
   I = () => {
     let e = T();
-    return 0 === module.size ? [] : Array.from(module.entries()).sort((e, t) => e[1].priority - t[1].priority)
+    return 0 === e.size ? [] : Array.from(e.entries()).sort((e, t) => e[1].priority - t[1].priority)
   },
-  T = () => new Map(Chunk292352.tx),
+  T = () => new Map(l.tx),
   C = e => {
     let t = Math.floor(e / 60),
       n = e % 60;
     return t > 0 ? "".concat(t, "h ").concat(n, "m") : "".concat(n, "m")
   },
   A = () => {
-    if (Chunk914788.Z.getAreLinkedUsersProcessed()) return Chunk914788.Z.getLinkedUsers();
-    Chunk260722.ZP.fetchLinkedUsers()
+    if (s.Z.getAreLinkedUsersProcessed()) return s.Z.getLinkedUsers();
+    o.ZP.fetchLinkedUsers()
   },
-  N = () => Object.values(Chunk914788.Z.getLinkedUsers()).some(e => e.link_status === l.ne.ACTIVE),
+  N = () => Object.values(s.Z.getLinkedUsers()).some(e => e.link_status === l.ne.ACTIVE),
   P = () => {
-    let e = Chunk594174.default.getCurrentUser(),
+    let e = a.default.getCurrentUser(),
       t = N();
-    return (null == module ? true : module.nsfwAllowed) === false && exports
+    return (null == e ? true : e.nsfwAllowed) === false && t
   },
   R = (e, t) => t > 0 && 0 === e ? u.intl.formatToPlainString(c.default["L/Cj7S"], {
     callCount: t

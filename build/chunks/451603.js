@@ -10,7 +10,7 @@ var Chunk430824 = require("./430824.js"),
   Chunk981631 = require("./981631.js");
 
 function s() {
-  let e = Chunk430824.Z.getGuildCount() >= Chunk981631.DZw,
-    t = Chunk74538.ZP.canUseIncreasedGuildCap(Chunk594174.default.getCurrentUser());
-  return module && !exports
+  let e = r.Z.getGuildCount() >= o.DZw,
+    t = a.ZP.canUseIncreasedGuildCap(i.default.getCurrentUser());
+  return e && !t
 }

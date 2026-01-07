@@ -40,18 +40,18 @@ function g(e) {
 }
 
 function E() {
-  let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
+  let e = (0, o.e7)([c.Z], () => c.Z.getAccounts()),
     t = g({
       forUserProfile: false
     }),
-    n = Chunk473749.useMemo(() => {
+    n = r.useMemo(() => {
       let t = new Set;
-      return module.forEach(e => t.add(e.type)), exports
-    }, [module]);
-  return Chunk473749.useMemo(() => a().sortBy(Chunk726542.Z.filter(exports), [e => {
+      return e.forEach(e => t.add(e.type)), t
+    }, [e]);
+  return r.useMemo(() => a().sortBy(s.Z.filter(t), [e => {
     var t;
     return !(m.has(e.type) && Date.now() < (null != (t = m.get(e.type)) ? t : 0) + h)
-  }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [require, exports])
+  }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [n, t])
 }
 
 function b(e) {

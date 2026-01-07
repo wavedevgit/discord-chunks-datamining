@@ -31,7 +31,7 @@ class a {
     }))
   }
   static async list() {
-    return (await Chunk350167.r.executeAsync("database_list", e => r.d.databaseList(e))).map(e => e.data)
+    return (await i.r.executeAsync("database_list", e => r.d.databaseList(e))).map(e => e.data)
   }
   static optimize(e) {
     return i.r.executeAsync("database_optimize", t => r.d.databaseOptimize(t, {

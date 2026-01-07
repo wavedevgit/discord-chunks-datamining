@@ -61,43 +61,43 @@ class y extends Chunk147913.Z {
   updateActiveErrors() {
     var e, t;
     if (__OVERLAY__) return;
-    let n = null != (e = Chunk944486.Z.getVoiceChannelId()) ? module : null,
-      i = null != require && null != (t = Chunk979651.Z.getVoiceStateForChannel(require)) ? exports : null,
-      a = Chunk199902.Z.getAllActiveStreams(),
+    let n = null != (e = s.Z.getVoiceChannelId()) ? e : null,
+      i = null != n && null != (t = l.Z.getVoiceStateForChannel(n)) ? t : null,
+      a = o.Z.getAllActiveStreams(),
       u = new Map;
-    for (let e of Object.values(Chunk990291.C)) {
-      let t = module.getActiveErrors({
-        voiceChannelId: require,
-        voiceState: Chunk147913,
-        activeStreams: Chunk710845
+    for (let e of Object.values(f.C)) {
+      let t = e.getActiveErrors({
+        voiceChannelId: n,
+        voiceState: i,
+        activeStreams: a
       });
-      if (null != exports)
-        for (let e of exports) Chunk754142.set(b(module), module)
+      if (null != t)
+        for (let e of t) u.set(b(e), e)
     }
-    let p = Chunk915525.Z.getActiveErrors();
+    let p = d.Z.getActiveErrors();
     if (!(p instanceof Map)) return void h.error("existingErrors is not a Map: ".concat(p, " type: ").concat(Object.prototype.toString.call(p)));
-    if (0 === Chunk754142.size && 0 === p.size) return;
-    let m = new Set(Chunk754142.keys()),
+    if (0 === u.size && 0 === p.size) return;
+    let m = new Set(u.keys()),
       E = new Set(p.keys());
     if (m.size > E.size)
       for (let e of g(m, E)) {
-        let t = Chunk754142.get(module);
-        null != exports && (0, Chunk458725.kr)(exports)
+        let t = u.get(e);
+        null != t && (0, c.kr)(t)
       }
     if (E.size > m.size)
       for (let e of g(E, m)) {
-        let t = module,
-          n = p.get(exports);
-        if (null != require) {
+        let t = e,
+          n = p.get(t);
+        if (null != n) {
           let {
             type: e
-          } = require, t = _(require, ["type"]);
-          h.info("Error resolved: ".concat(module, " ").concat(JSON.stringify(exports)))
+          } = n, t = _(n, ["type"]);
+          h.info("Error resolved: ".concat(e, " ").concat(JSON.stringify(t)))
         }
       }
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "ACTIVE_AV_ERRORS_CHANGED",
-      activeErrors: Chunk754142
+      activeErrors: u
     })
   }
   handleReportAVError(e) {

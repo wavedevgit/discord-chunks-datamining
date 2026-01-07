@@ -15,23 +15,23 @@ var Chunk626135 = require("./626135.js"),
 require("./295955.js");
 var Chunk981631 = require("./981631.js");
 let c = () => {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN"
-  }), Chunk626135.default.track(Chunk981631.rMx.MEMBERLIST_CONTENT_FEED_HIDDEN, {
-    channel_id: Chunk944486.Z.getChannelId(),
-    guild_id: Chunk914010.Z.getGuildId(),
-    hidden: Chunk71585.Z.hidden
+  }), l.default.track(s.rMx.MEMBERLIST_CONTENT_FEED_HIDDEN, {
+    channel_id: i.Z.getChannelId(),
+    guild_id: r.Z.getGuildId(),
+    hidden: o.Z.hidden
   })
 };
 
 function d() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "GAME_PROFILE_OPEN"
   })
 }
 
 function u() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR"
   })
 }

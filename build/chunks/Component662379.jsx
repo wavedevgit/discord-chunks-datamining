@@ -41,35 +41,35 @@ function u(e) {
 
 function g() {
   let e = [{
-    imageSrc: Chunk174618,
-    description: Chunk388032.intl.string(Chunk388032.t.lT0ZNS)
+    imageSrc: d,
+    description: a.intl.string(a.t.lT0ZNS)
   }, {
-    imageSrc: Chunk961618,
-    description: Chunk388032.intl.string(Chunk388032.t.ihN2Wb)
+    imageSrc: o,
+    description: a.intl.string(a.t.ihN2Wb)
   }, {
-    imageSrc: Chunk217684,
-    description: Chunk388032.intl.string(Chunk388032.t.c8krDQ)
+    imageSrc: c,
+    description: a.intl.string(a.t.c8krDQ)
   }];
-  return (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      children: Chunk388032.intl.string(Chunk388032.t.R9rNIk)
-    }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+      children: a.intl.string(a.t.R9rNIk)
+    }), (0, r.jsx)(i.LZC, {
       size: 24
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk780970.howItWorksContainer,
-      children: module.map(e => (0, r.jsx)(u, {
+    }), (0, r.jsx)("div", {
+      className: s.howItWorksContainer,
+      children: e.map(e => (0, r.jsx)(u, {
         imageSrc: e.imageSrc,
         description: e.description
       }, e.imageSrc))
-    }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
+    }), (0, r.jsx)(i.LZC, {
       size: 24
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      children: Chunk388032.intl.format(Chunk388032.t.oxW30N, {
-        creatorPortalUrl: Chunk293810.C5
+      children: a.intl.format(a.t.oxW30N, {
+        creatorPortalUrl: l.C5
       })
     })]
   })

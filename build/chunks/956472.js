@@ -55,7 +55,7 @@ let d = e => {
     }
   },
   p = () => ({
-    orbPrice: Chunk215023.sT,
+    orbPrice: c.sT,
     fiatPrice: true,
     isOrbExclusive: true
   }),

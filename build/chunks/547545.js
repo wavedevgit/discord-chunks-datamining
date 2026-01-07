@@ -29,10 +29,10 @@ class a {
     null != e && this.announce(this.getName(e, t))
   }
   announceDrop() {
-    this.announce(Chunk388032.intl.string(Chunk388032.t.lMkmz7))
+    this.announce(r.intl.string(r.t.lMkmz7))
   }
   announceCancel() {
-    this.announce(Chunk388032.intl.string(Chunk388032.t["u4d/eC"]))
+    this.announce(r.intl.string(r.t["u4d/eC"]))
   }
   clear() {
     this.announcer.clearAnnouncements()

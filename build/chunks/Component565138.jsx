@@ -114,9 +114,9 @@ class R extends Chunk473749.PureComponent {
       guild: e,
       iconSrc: t
     } = this.props;
-    return null != module.icon || null != exports ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk58776.acronym,
-      children: (0, Chunk601964.gM)(module)
+    return null != e.icon || null != t ? null : (0, i.jsx)("div", {
+      className: y.acronym,
+      children: (0, h.gM)(e)
     })
   }
   renderBadge() {
@@ -127,12 +127,12 @@ class R extends Chunk473749.PureComponent {
       badgeTooltipColor: r,
       badgeTooltipDelay: a
     } = this.props;
-    return module ? (0, Chunk54381.jsx)(Chunk372769.Z, {
-      className: Chunk58776.guildIconBadge,
-      guild: exports,
-      badgeStrokeColor: require,
+    return e ? (0, i.jsx)(m.Z, {
+      className: y.guildIconBadge,
+      guild: t,
+      badgeStrokeColor: n,
       tooltipColor: r,
-      tooltipDelay: Chunk473749
+      tooltipDelay: a
     }) : null
   }
   renderIcon() {
@@ -157,22 +157,22 @@ class R extends Chunk473749.PureComponent {
         "aria-hidden": A,
         lossless: N,
         iconSize: R
-      } = require,
-      w = T(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
-      D = P[Chunk442837],
-      x = null != Chunk372769 ? Chunk481060.P3F : "div",
-      L = (0, Chunk601964.gM)(r);
-    return (0, Chunk54381.jsxs)(x, I(v({
-      className: s()(Chunk58776.icon, Chunk473749, (0, Chunk153066.l)(Chunk58776, "iconSize", Chunk442837), {
-        [null != (e = (0, Chunk153066.l)(Chunk58776, "iconActive", Chunk442837)) ? module : ""]: Chunk319498,
-        [Chunk58776.iconInactive]: !Chunk319498,
-        [Chunk58776.noIcon]: null == r.icon
+      } = n,
+      w = T(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
+      D = P[c],
+      x = null != m ? f.P3F : "div",
+      L = (0, h.gM)(r);
+    return (0, i.jsxs)(x, I(v({
+      className: s()(y.icon, a, (0, b.l)(y, "iconSize", c), {
+        [null != (e = (0, b.l)(y, "iconActive", c)) ? e : ""]: l,
+        [y.iconInactive]: !l,
+        [y.noIcon]: null == r.icon
       }),
       "aria-hidden": A,
       style: null == r.icon ? v({
-        fontSize: (null != (t = D[L.length]) ? exports : D[D.length - 1]) * Chunk681715
-      }, Chunk692547) : Chunk692547,
-      onClick: null != Chunk451478 || null == Chunk372769 ? true : Chunk372769,
+        fontSize: (null != (t = D[L.length]) ? t : D[D.length - 1]) * d
+      }, u) : u,
+      onClick: null != g || null == m ? true : m,
       tabIndex: S
     }, w), {
       children: [this.renderAcronym(), this.renderBadge()]
@@ -184,9 +184,9 @@ class R extends Chunk473749.PureComponent {
       showTooltip: t,
       tooltipPosition: n
     } = this.props;
-    return exports ? (0, Chunk54381.jsx)(Chunk681715.u, {
-      text: module.name,
-      position: require,
+    return t ? (0, i.jsx)(d.u, {
+      text: e.name,
+      position: n,
       "aria-label": false,
       children: this.renderIcon()
     }) : this.renderIcon()
@@ -199,15 +199,15 @@ class R extends Chunk473749.PureComponent {
       tabIndex: r,
       "aria-hidden": a
     } = this.props;
-    return null != module ? (0, Chunk54381.jsx)(Chunk319498.rU, {
-      "aria-hidden": Chunk473749,
+    return null != e ? (0, i.jsx)(l.rU, {
+      "aria-hidden": a,
       to: {
-        pathname: module,
-        state: null != require ? {
-          analyticsSource: require
+        pathname: e,
+        state: null != n ? {
+          analyticsSource: n
         } : null
       },
-      "aria-label": exports.name,
+      "aria-label": t.name,
       tabIndex: r,
       children: this.renderTooltip()
     }) : this.renderTooltip()
@@ -231,7 +231,7 @@ let w = Chunk442837.ZP.connectStores([Chunk451478.Z], e => {
 })((0, Chunk891819.N)(e => (0, i.jsx)(R, v({}, e))));
 class D extends(r = Chunk473749.PureComponent) {
   render() {
-    return (0, Chunk54381.jsx)(w, v({}, this.props))
+    return (0, i.jsx)(w, v({}, this.props))
   }
 }
 O(D, "Sizes", A), O(D, "defaultProps", {

@@ -70,9 +70,9 @@ function d() {
     [{
       isOver: t,
       canDrop: n
-    }, r] = (0, Chunk642007.L)({
+    }, r] = (0, l.L)({
       accept: o,
-      canDrop: () => !module,
+      canDrop: () => !e,
       drop: e => {
         let {
           userId: t,
@@ -86,8 +86,8 @@ function d() {
       })
     });
   return {
-    isOver: exports && require,
-    drop: Chunk473749
+    isOver: t && n,
+    drop: r
   }
 }
 

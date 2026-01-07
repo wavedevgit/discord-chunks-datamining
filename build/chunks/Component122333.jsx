@@ -64,37 +64,37 @@ function x(e, t) {
 }
 
 function A() {
-  null != r && (0, Chunk481060.Mr3)(r)
+  null != r && (0, l.Mr3)(r)
 }
 class Z extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("LOGOUT", A)
+    a.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.subscribe("LOGOUT", A)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.unsubscribe("LOGOUT", A)
+    a.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.unsubscribe("LOGOUT", A)
   }
   handleConnectionOpen() {
     var e;
-    let t, a = Chunk179645.Z.getType();
-    if (null == Chunk570140) return;
-    switch (Chunk570140) {
-      case Chunk701476.M5.INVITE_UNCLAIMED:
-        Chunk390885.Z.flowStart(Chunk630724.MK.INVITE, Chunk630724.EW.NUF_STARTED);
+    let t, a = I.Z.getType();
+    if (null == a) return;
+    switch (a) {
+      case C.M5.INVITE_UNCLAIMED:
+        f.Z.flowStart(j.MK.INVITE, j.EW.NUF_STARTED);
         break;
-      case Chunk701476.M5.ORGANIC_REGISTERED:
-        Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC, Chunk630724.EW.NUF_STARTED);
+      case C.M5.ORGANIC_REGISTERED:
+        f.Z.flowStart(j.MK.ORGANIC, j.EW.NUF_STARTED);
         break;
-      case Chunk701476.M5.MARKETING_UNCLAIMED:
-        Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC_MARKETING, Chunk630724.EW.NUF_STARTED)
+      case C.M5.MARKETING_UNCLAIMED:
+        f.Z.flowStart(j.MK.ORGANIC_MARKETING, j.EW.NUF_STARTED)
     }
     let o = false,
-      A = Chunk914010.Z.getGuildId();
-    if (Chunk570140 === Chunk701476.M5.INVITE_UNCLAIMED) {
-      let e = Chunk430824.Z.getGuild(A);
-      null != module && (0, Chunk983736.Dc)(module) && (o = true, (0, Chunk524329.RM)(module.id))
+      A = _.Z.getGuildId();
+    if (a === C.M5.INVITE_UNCLAIMED) {
+      let e = b.Z.getGuild(A);
+      null != e && (0, d.Dc)(e) && (o = true, (0, g.RM)(e.id))
     }
-    let Z = () => 0 === Chunk486472.Z.totalGuilds && !Chunk358085.isPlatformEmbedded,
-      w = Chunk622822.bN();
+    let Z = () => 0 === h.Z.totalGuilds && !v.isPlatformEmbedded,
+      w = s.bN();
     e = [{
       key: "Unified NUF Modal",
       open: async function(e) {
@@ -140,24 +140,24 @@ class Z extends Chunk317770.Z {
           modalKey: r
         })
       },
-      predicate: () => Z() && !Chunk188785.a
+      predicate: () => Z() && !N.a
     }, {
       key: "New User Age Gate",
-      open: Chunk391650.i,
-      predicate: () => w && !Z() && !Chunk188785.a
+      open: c.i,
+      predicate: () => w && !Z() && !N.a
     }, {
       key: "Claim Account Modal",
       open: e => c.j(v.isPlatformEmbedded, e),
       predicate: () => {
         var e;
-        return !Chunk317770 && null != Chunk594174.default.getCurrentUser() && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a && !(0, Chunk341298.g)()
+        return !o && null != E.default.getCurrentUser() && !(null == (e = E.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a && !(0, p.g)()
       }
     }, {
       key: "Verification Gate with Claim Account",
       open: e => (0, u.hk)(A, null != e ? e : true),
       predicate: () => {
         var e;
-        return Chunk317770 && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a
+        return o && !(null == (e = E.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a
       }
     }, {
       key: "Guild Welcome Modal",
@@ -171,15 +171,15 @@ class Z extends Chunk317770.Z {
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != A && null != Chunk995532.Z.get(A) && Chunk995532.Z.get(A) !== Chunk995532.a
+      predicate: () => null != A && null != m.Z.get(A) && m.Z.get(A) !== m.a
     }], t = () => {
-      Chunk929809.H(), Chunk390885.Z.flowStep(Chunk630724.MK.ANY, Chunk630724.EW.NUF_COMPLETE, true)
-    }, [...module].reverse().forEach(e => {
+      y.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
+    }, [...e].reverse().forEach(e => {
       let n = t;
       t = () => {
         e.predicate() ? e.open(n) : n()
       }
-    }), exports()
+    }), t()
   }
 }
 let w = new Z

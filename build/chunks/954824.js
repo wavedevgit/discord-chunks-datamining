@@ -48,6 +48,6 @@ function c(e, t) {
 let u = {
   launch: function() {
     var e, t;
-    return (null == (e = i().os) ? true : module.family) === "Android" || (null == (t = i().os) ? true : exports.family) === "iOS" ? c : "Gecko" === i().layout ? o : null != i().ua && false !== i().ua.indexOf("Valve Steam GameOverlay") ? l : s
+    return (null == (e = i().os) ? true : e.family) === "Android" || (null == (t = i().os) ? true : t.family) === "iOS" ? c : "Gecko" === i().layout ? o : null != i().ua && false !== i().ua.indexOf("Valve Steam GameOverlay") ? l : s
   }()
 }

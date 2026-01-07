@@ -141,7 +141,7 @@ function L(e) {
 }
 class j extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk271383.ZP, Chunk592125.Z, Chunk430824.Z, Chunk594174.default, Chunk979651.Z, Chunk485386.Z)
+    this.waitFor(c.ZP, l.Z, d.Z, f.default, p.Z, u.Z)
   }
   isSpeaker(e, t) {
     return this.getPermissionsForUser(e, t).speaker

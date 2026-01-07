@@ -45,11 +45,11 @@ var Chunk98405 = require("./98405.js"),
     })
   }, E, function() {
     var e = C(this);
-    if (module.done) return Chunk682564(true, true);
-    var t = module.regexp,
-      o = module.string,
-      a = Chunk820616(exports, require);
-    return null === Chunk98405 ? (module.done = true, Chunk682564(true, true)) : (module.global ? "" === Chunk382698(Chunk98405[0]) && (exports.lastIndex = Chunk857168(require, Chunk554148(exports.lastIndex), module.unicode)) : module.done = true, Chunk682564(Chunk98405, false))
+    if (e.done) return s(true, true);
+    var t = e.regexp,
+      o = e.string,
+      a = O(t, o);
+    return null === a ? (e.done = true, s(true, true)) : (e.global ? "" === c(a[0]) && (t.lastIndex = w(o, d(t.lastIndex), e.unicode)) : e.done = true, s(a, false))
   }),
   R = function(e) {
     var t, o, a, i = u(this),

@@ -45,71 +45,71 @@ function u() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t.PEzffq),
-    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t.nDQy0p),
-    value: Chunk981631.sFg.NONE,
-    disabled: module
+    name: s.intl.string(s.t.PEzffq),
+    desc: e ? s.intl.string(s.t.j9WtHx) : s.intl.string(s.t.nDQy0p),
+    value: o.sFg.NONE,
+    disabled: e
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.SsCK8I),
-    desc: Chunk388032.intl.string(Chunk388032.t["8GCOX6"]),
-    value: Chunk981631.sFg.LOW,
-    color: exports ? true : (0, Chunk900089.Fw)("GREEN_360")
+    name: s.intl.string(s.t.SsCK8I),
+    desc: s.intl.string(s.t["8GCOX6"]),
+    value: o.sFg.LOW,
+    color: t ? true : (0, i.Fw)("GREEN_360")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.WwNoR4),
-    desc: Chunk388032.intl.formatToPlainString(Chunk388032.t.VS14ga, {
-      min: Chunk981631.YeM.ACCOUNT_AGE
+    name: s.intl.string(s.t.WwNoR4),
+    desc: s.intl.formatToPlainString(s.t.VS14ga, {
+      min: o.YeM.ACCOUNT_AGE
     }),
-    value: Chunk981631.sFg.MEDIUM,
-    color: exports ? true : (0, Chunk900089.Fw)("YELLOW_360")
+    value: o.sFg.MEDIUM,
+    color: t ? true : (0, i.Fw)("YELLOW_360")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.I2jMUF),
-    desc: Chunk388032.intl.formatToPlainString(Chunk388032.t["r+b3I4"], {
-      min: Chunk981631.YeM.MEMBER_AGE
+    name: s.intl.string(s.t.I2jMUF),
+    desc: s.intl.formatToPlainString(s.t["r+b3I4"], {
+      min: o.YeM.MEMBER_AGE
     }),
-    value: Chunk981631.sFg.HIGH,
-    color: exports ? true : (0, Chunk900089.Fw)("ORANGE_345")
+    value: o.sFg.HIGH,
+    color: t ? true : (0, i.Fw)("ORANGE_345")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.cJY8w9),
-    desc: Chunk388032.intl.string(Chunk388032.t.PWaKme),
-    value: Chunk981631.sFg.VERY_HIGH,
-    color: exports ? true : (0, Chunk900089.Fw)("RED_400")
+    name: s.intl.string(s.t.cJY8w9),
+    desc: s.intl.string(s.t.PWaKme),
+    value: o.sFg.VERY_HIGH,
+    color: t ? true : (0, i.Fw)("RED_400")
   }]
 }
 
 function d() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t.iHuPE6),
-    desc: Chunk388032.intl.string(Chunk388032.t["Z+yUWF"]),
-    value: Chunk981631.lxg.ALL_MEMBERS,
-    color: (0, Chunk900089.Fw)("RED_400")
+    name: s.intl.string(s.t.iHuPE6),
+    desc: s.intl.string(s.t["Z+yUWF"]),
+    value: o.lxg.ALL_MEMBERS,
+    color: (0, i.Fw)("RED_400")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.ynfFaI),
-    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t["3fRIN4"]),
-    value: Chunk981631.lxg.MEMBERS_WITHOUT_ROLES,
-    disabled: module,
-    color: (0, Chunk900089.Fw)("YELLOW_360")
+    name: s.intl.string(s.t.ynfFaI),
+    desc: e ? s.intl.string(s.t.j9WtHx) : s.intl.string(s.t["3fRIN4"]),
+    value: o.lxg.MEMBERS_WITHOUT_ROLES,
+    disabled: e,
+    color: (0, i.Fw)("YELLOW_360")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.VbSyAx),
-    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t.M6GNsJ),
-    value: Chunk981631.lxg.DISABLED,
-    disabled: module,
-    color: (0, Chunk900089.Fw)("PRIMARY_400")
+    name: s.intl.string(s.t.VbSyAx),
+    desc: e ? s.intl.string(s.t.j9WtHx) : s.intl.string(s.t.M6GNsJ),
+    value: o.lxg.DISABLED,
+    disabled: e,
+    color: (0, i.Fw)("PRIMARY_400")
   }]
 }
 
 function f() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t["4IaoCI"]),
-    desc: Chunk388032.intl.string(Chunk388032.t.TgipjE),
-    value: Chunk524437.Xr.FRIENDS_AND_NON_FRIENDS
+    name: s.intl.string(s.t["4IaoCI"]),
+    desc: s.intl.string(s.t.TgipjE),
+    value: r.Xr.FRIENDS_AND_NON_FRIENDS
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t["6NnX6F"]),
-    desc: Chunk388032.intl.string(Chunk388032.t["+dw1qu"]),
-    value: Chunk524437.Xr.NON_FRIENDS
+    name: s.intl.string(s.t["6NnX6F"]),
+    desc: s.intl.string(s.t["+dw1qu"]),
+    value: r.Xr.NON_FRIENDS
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t["1tiAFz"]),
-    desc: Chunk388032.intl.string(Chunk388032.t.LKTyeA),
-    value: Chunk524437.Xr.DISABLED
+    name: s.intl.string(s.t["1tiAFz"]),
+    desc: s.intl.string(s.t.LKTyeA),
+    value: r.Xr.DISABLED
   }]
 }

@@ -133,54 +133,54 @@ class k extends Chunk476326.ZP {
     return null == t ? null : [parseInt(t[1], 10), parseInt(t[2], 10)]
   }
   retryOpts() {
-    return this.item.platform === Chunk476326.ow.REACT_NATIVE ? {
-      timeout: +Chunk70956.Z.Millis.HOUR,
-      backoff: new Chunk261470.Z(.5 * Chunk70956.Z.Millis.SECOND, 30 * Chunk70956.Z.Millis.MINUTE),
+    return this.item.platform === S.ow.REACT_NATIVE ? {
+      timeout: +b.Z.Millis.HOUR,
+      backoff: new o.Z(.5 * b.Z.Millis.SECOND, 30 * b.Z.Millis.MINUTE),
       retries: 12
     } : {
-      timeout: +Chunk70956.Z.Millis.HOUR,
+      timeout: +b.Z.Millis.HOUR,
       retries: 12,
-      backoff: new Chunk261470.Z
+      backoff: new o.Z
     }
   }
   createAttachmentUrlRetryOpts() {
-    return this.item.platform === Chunk476326.ow.REACT_NATIVE ? {
+    return this.item.platform === S.ow.REACT_NATIVE ? {
       timeout: {
-        response: 30 * Chunk70956.Z.Millis.SECOND,
-        deadline: 30 * Chunk70956.Z.Millis.MINUTE
+        response: 30 * b.Z.Millis.SECOND,
+        deadline: 30 * b.Z.Millis.MINUTE
       },
-      backoff: new Chunk261470.Z(.5 * Chunk70956.Z.Millis.SECOND, 60 * Chunk70956.Z.Millis.SECOND),
+      backoff: new o.Z(.5 * b.Z.Millis.SECOND, 60 * b.Z.Millis.SECOND),
       retries: 8
     } : this.retryOpts()
   }
   supportsResume() {
-    return (this._libdiscoreEnabled || this.item.platform !== Chunk476326.ow.REACT_NATIVE) && this._resumptionEnabled
+    return (this._libdiscoreEnabled || this.item.platform !== S.ow.REACT_NATIVE) && this._resumptionEnabled
   }
   async uploadFileToCloud() {
     let e, t;
     if (null == this.responseUrl) throw Error("_uploadFileToCloud - responseUrl is not set");
-    D.log("Uploading ".concat(this.id), this.item.platform === Chunk476326.ow.REACT_NATIVE ? "filename=".concat(this.item.filename, ", uri=").concat(this.item.uri) : "filename=".concat(this.item.file.name)), this.item.platform === Chunk476326.ow.REACT_NATIVE ? t = null != (e = {
+    D.log("Uploading ".concat(this.id), this.item.platform === S.ow.REACT_NATIVE ? "filename=".concat(this.item.filename, ", uri=").concat(this.item.uri) : "filename=".concat(this.item.file.name)), this.item.platform === S.ow.REACT_NATIVE ? t = null != (e = {
       type: this.item.mimeType,
       uri: this.item.uri,
       name: this.item.filename
-    }).type && "application/json" !== module.type ? module.type : "application/octet-stream" : (e = this.item.file, t = "application/octet-stream");
-    let n = (0, Chunk481981.m)({
+    }).type && "application/json" !== e.type ? e.type : "application/octet-stream" : (e = this.item.file, t = "application/octet-stream");
+    let n = (0, _.m)({
       location: "CloudUpload"
     });
-    if (require.enableNewRetry) return (0, Chunk596956.Z_)(this.item) && (this._uploadHttpClient = new Chunk596956.Qn, this._libdiscoreEnabled = true, D.log("Using libdiscore client for file upload")), this._resumptionEnabled = require.enableResumption, await this.uploadFileWithResumption(this.responseUrl, module, exports);
+    if (n.enableNewRetry) return (0, T.Z_)(this.item) && (this._uploadHttpClient = new T.Qn, this._libdiscoreEnabled = true, D.log("Using libdiscore client for file upload")), this._resumptionEnabled = n.enableResumption, await this.uploadFileWithResumption(this.responseUrl, e, t);
     let r = {
-      "Content-Type": exports
+      "Content-Type": t
     };
     true !== this.contentHash && (r[L] = this.contentHash);
     let i = P({
       url: this.responseUrl,
-      body: module,
+      body: e,
       headers: r,
       signal: this._abortController.signal,
       onRequestProgress: a().throttle(this.createResumeAwareProgressFn(0), 50),
       rejectWithError: false
     }, this.retryOpts());
-    return Chunk544891.tn.put(Chunk392711)
+    return s.tn.put(i)
   }
   async getResumePosition(e) {
     let t = {
@@ -260,7 +260,7 @@ class k extends Chunk476326.ZP {
   }
   async getSize() {
     var e;
-    return null != (e = this.currentSize) ? module : 0
+    return null != (e = this.currentSize) ? e : 0
   }
   async getHash() {
     return arguments.length > 0 && true !== arguments[0] && arguments[0], ""
@@ -282,46 +282,46 @@ class k extends Chunk476326.ZP {
     var e, t, n, i;
     if ("COMPLETED" === this.status) return;
     if (this.setStatus("STARTED"), this.startTime = performance.now(), this.trackUploadStart(), this.isCancelled()) return void this.handleComplete(this.id);
-    if (this.allowOptimization && this.item.platform === Chunk476326.ow.WEB) {
+    if (this.allowOptimization && this.item.platform === S.ow.WEB) {
       let e = await k.tryConvertToWebP(this.item.file, () => this._aborted, this.id);
-      null != module && (null != module.convertedFile && (this.item.file = module.convertedFile, this.currentSize = module.convertedFile.size), null != module.convertedMimeType && (this.uploadAnalytics.convertedMimeType = module.convertedMimeType), null != module.hashTimeMs && (this.uploadAnalytics.timing.hashTimeMs = module.hashTimeMs), null != module.conversionFailureReason && (this.uploadAnalytics.conversionFailureReason = module.conversionFailureReason), this.uploadAnalytics.timing.compressTimeMs = module.compressTimeMs)
+      null != e && (null != e.convertedFile && (this.item.file = e.convertedFile, this.currentSize = e.convertedFile.size), null != e.convertedMimeType && (this.uploadAnalytics.convertedMimeType = e.convertedMimeType), null != e.hashTimeMs && (this.uploadAnalytics.timing.hashTimeMs = e.hashTimeMs), null != e.conversionFailureReason && (this.uploadAnalytics.conversionFailureReason = e.conversionFailureReason), this.uploadAnalytics.timing.compressTimeMs = e.compressTimeMs)
     }
     let a = await r.getUploadPayload(this),
-      o = (0, Chunk983544.F)(this.item.target),
-      l = (0, Chunk171638.G)({
+      o = (0, I.F)(this.item.target),
+      l = (0, d.G)({
         location: "CloudUpload.upload"
       });
     if (null == a.filename || "" === a.filename) {
-      D.error("File does not have a filename.", JSON.stringify(a)), this.handleError(Chunk981631.evJ.INVALID_FILE_ASSET);
+      D.error("File does not have a filename.", JSON.stringify(a)), this.handleError(A.evJ.INVALID_FILE_ASSET);
       return
     }
-    if (Chunk710845.useDetectedFileSize && 0 === this.currentSize && null != this.item.file) try {
-      let e = await (0, Chunk630755.M)(this.item.file);
-      module > 0 && (this.currentSize = module)
+    if (l.useDetectedFileSize && 0 === this.currentSize && null != this.item.file) try {
+      let e = await (0, u.M)(this.item.file);
+      e > 0 && (this.currentSize = e)
     } catch (e) {
       D.warn("Failed to detect file size, proceeding with original", {
         filename: a.filename,
-        error: module instanceof Error ? module.message : String(module)
+        error: e instanceof Error ? e.message : String(e)
       })
     }
-    if (0 === this.currentSize) return void this.handleError(Chunk981631.evJ.ENTITY_EMPTY);
-    if ((null != (e = this.currentSize) ? module : 0) > Chunk261470.getMaxFileSize(this.channelId)) return void this.handleError(Chunk981631.evJ.ENTITY_TOO_LARGE);
-    if (Chunk432877.ZP.get("upload_fail_50") && .5 > Math.random()) return void setTimeout(() => {
+    if (0 === this.currentSize) return void this.handleError(A.evJ.ENTITY_EMPTY);
+    if ((null != (e = this.currentSize) ? e : 0) > o.getMaxFileSize(this.channelId)) return void this.handleError(A.evJ.ENTITY_TOO_LARGE);
+    if (c.ZP.get("upload_fail_50") && .5 > Math.random()) return void setTimeout(() => {
       this.handleError(500)
     }, 1e3);
-    let f = Chunk719755.Z.getCurrentConfig({
+    let f = p.Z.getCurrentConfig({
         location: "CloudUpload"
       }, {
         autoTrackExposure: true
       }),
       _ = null;
-    Chunk928405.enabled;
+    f.enabled;
     try {
       D.log("Requesting upload url for ".concat(this.id));
       let e = await this.trackTime("getUploadUrlTimeMs", async () => {
-        let e = Chunk261470.getCreateAttachmentURL(this.channelId);
-        return await Chunk544891.tn.post(w(P({
-          url: module,
+        let e = o.getCreateAttachmentURL(this.channelId);
+        return await s.tn.post(w(P({
+          url: e,
           body: {
             files: [a]
           }
@@ -329,65 +329,65 @@ class k extends Chunk476326.ZP {
           rejectWithError: false
         }))
       });
-      this.setResponseUrl(module.body.attachments[0].upload_url), this.setUploadedFilename(module.body.attachments[0].upload_filename)
+      this.setResponseUrl(e.body.attachments[0].upload_url), this.setUploadedFilename(e.body.attachments[0].upload_filename)
     } catch (r) {
-      let e = null != (n = null == r || null == (t = r.body) ? true : exports.code) ? require : r.status;
-      module !== Chunk981631.evJ.ENTITY_TOO_LARGE && (D.error("Requesting upload url failed with code ".concat(null != module ? module : JSON.stringify(r.body), " for ").concat(this.id)), Chunk960048.Z.captureException(r)), this.handleError(module);
+      let e = null != (n = null == r || null == (t = r.body) ? true : t.code) ? n : r.status;
+      e !== A.evJ.ENTITY_TOO_LARGE && (D.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), O.Z.captureException(r)), this.handleError(e);
       return
     }
-    if (null != Chunk481981) {
-      let e = await Chunk481981;
-      null != module && (this.contentHash = module)
+    if (null != _) {
+      let e = await _;
+      null != e && (this.contentHash = e)
     }
     try {
       let e = await this.trackTime("uploadTimeMs", async () => await this.uploadFileToCloud());
-      if (Chunk928405.enabled && null != module) {
+      if (f.enabled && null != e) {
         let t = false,
-          n = this.getEtagFromResponse(module);
-        if (null != require && (this.etag = require, t = require === this.contentHash), this.uploadAnalytics.validUploadHash = exports, !exports && Chunk928405.enforced) {
-          let e = "File ".concat(null != (i = this.filename) ? Chunk392711 : this.id, " received incorrect checksum after upload: got ").concat(this.etag, ", expected ").concat(this.contentHash);
-          D.error(module), Chunk960048.Z.captureMessage(module), this.handleError(Chunk981631.evJ.INVALID_FILE_ASSET);
+          n = this.getEtagFromResponse(e);
+        if (null != n && (this.etag = n, t = n === this.contentHash), this.uploadAnalytics.validUploadHash = t, !t && f.enforced) {
+          let e = "File ".concat(null != (i = this.filename) ? i : this.id, " received incorrect checksum after upload: got ").concat(this.etag, ", expected ").concat(this.contentHash);
+          D.error(e), O.Z.captureMessage(e), this.handleError(A.evJ.INVALID_FILE_ASSET);
           return
         }
       }
-      this.trackUploadFinished("COMPLETED"), this.handleComplete(module)
+      this.trackUploadFinished("COMPLETED"), this.handleComplete(e)
     } catch (e) {
-      this.isCancelled() ? this.handleComplete(module) : (D.info("Error: status ".concat(module.status, " for ").concat(this.id)), this.handleError(module))
+      this.isCancelled() ? this.handleComplete(e) : (D.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
     }
   }
   async reactNativeCompressAndExtractData() {
     var e, t;
-    if (!(0, Chunk983544.F)(this.item.target).shouldReactNativeCompressUploads) return this.uploadAnalytics.compressAndExtractDisabled = true, D.log("reactNativeCompressAndExtractData() disabled by upload target"), this;
+    if (!(0, I.F)(this.item.target).shouldReactNativeCompressUploads) return this.uploadAnalytics.compressAndExtractDisabled = true, D.log("reactNativeCompressAndExtractData() disabled by upload target"), this;
     if (true === this.reactNativeFilePrepped) return this.uploadAnalytics.fileAlreadyPrepped = true, D.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id)), this;
     D.log("Starting compression/conversion for ".concat(this.id));
     let n = await this.trackTime("compressTimeMs", async () => {
       var e;
-      return await (0, Chunk510990.Jf)(this, null != (e = this.reactNativeFileIndex) ? module : 0)
+      return await (0, E.Jf)(this, null != (e = this.reactNativeFileIndex) ? e : 0)
     });
-    if (null == require || null == require.file) return D.error("Failed to get compressed file for ".concat(this.id)), this;
-    let r = require.uri,
-      i = require.file.name;
-    if ((0, Chunk476326.rG)(require.file) && (this.uploadAnalytics.imageCompressionQuality = require.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = require.file.videoCompressionQuality, this.uploadAnalytics.imageEncoderType = require.file.imageEncoderType, require.file.isImage && (this.uploadAnalytics.sourceMediaWidth = require.file.sourceWidth, this.uploadAnalytics.sourceMediaHeight = require.file.sourceHeight), true !== require.file.videoMetadata && (this.uploadAnalytics.sourceMediaWidth = require.file.videoMetadata.width, this.uploadAnalytics.sourceMediaHeight = require.file.videoMetadata.height, this.uploadAnalytics.sourceMediaFormat = require.file.videoMetadata.format, this.uploadAnalytics.sourceVideoBitrate = require.file.videoMetadata.bitRate, this.uploadAnalytics.sourceVideoFramerate = require.file.videoMetadata.frameRate, this.uploadAnalytics.videoDurationMs = require.file.videoMetadata.durationMs, this.uploadAnalytics.sourceVideoProfile = require.file.videoMetadata.sourceProfile, this.uploadAnalytics.sourceVideoLevel = require.file.videoMetadata.sourceLevel), true !== require.file.encodingConfig && (this.uploadAnalytics.targetVideoWidth = require.file.encodingConfig.targetWidth, this.uploadAnalytics.targetVideoHeight = require.file.encodingConfig.targetHeight, this.uploadAnalytics.targetVideoBitrate = require.file.encodingConfig.targetBitrate, this.uploadAnalytics.targetVideoCodec = require.file.encodingConfig.useHEVC ? "hvc1" : "avc1", this.uploadAnalytics.targetVideoFramerate = require.file.encodingConfig.frameRate, this.uploadAnalytics.targetVideoIsHdr = require.file.encodingConfig.createHDR, this.uploadAnalytics.hevcIsSupported = require.file.encodingConfig.hevcIsSupported, this.uploadAnalytics.progressUpdateGranularity = require.file.encodingConfig.progressUpdateGranularity), this.uploadAnalytics.psnr = require.file.psnr, this.uploadAnalytics.ssim = require.file.ssim, this.uploadAnalytics.origin = require.file.origin, this.uploadAnalytics.psnrMeasurementLatencyMs = require.file.psnrMeasurementLatencyMs, this.uploadAnalytics.ssimMeasurementLatencyMs = require.file.ssimMeasurementLatencyMs), this.filename = Chunk392711, null == Chunk392711 || null == r || null == require.file.type) throw D.error("Insufficient file data: ".concat({
-      filename: Chunk392711,
+    if (null == n || null == n.file) return D.error("Failed to get compressed file for ".concat(this.id)), this;
+    let r = n.uri,
+      i = n.file.name;
+    if ((0, S.rG)(n.file) && (this.uploadAnalytics.imageCompressionQuality = n.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = n.file.videoCompressionQuality, this.uploadAnalytics.imageEncoderType = n.file.imageEncoderType, n.file.isImage && (this.uploadAnalytics.sourceMediaWidth = n.file.sourceWidth, this.uploadAnalytics.sourceMediaHeight = n.file.sourceHeight), true !== n.file.videoMetadata && (this.uploadAnalytics.sourceMediaWidth = n.file.videoMetadata.width, this.uploadAnalytics.sourceMediaHeight = n.file.videoMetadata.height, this.uploadAnalytics.sourceMediaFormat = n.file.videoMetadata.format, this.uploadAnalytics.sourceVideoBitrate = n.file.videoMetadata.bitRate, this.uploadAnalytics.sourceVideoFramerate = n.file.videoMetadata.frameRate, this.uploadAnalytics.videoDurationMs = n.file.videoMetadata.durationMs, this.uploadAnalytics.sourceVideoProfile = n.file.videoMetadata.sourceProfile, this.uploadAnalytics.sourceVideoLevel = n.file.videoMetadata.sourceLevel), true !== n.file.encodingConfig && (this.uploadAnalytics.targetVideoWidth = n.file.encodingConfig.targetWidth, this.uploadAnalytics.targetVideoHeight = n.file.encodingConfig.targetHeight, this.uploadAnalytics.targetVideoBitrate = n.file.encodingConfig.targetBitrate, this.uploadAnalytics.targetVideoCodec = n.file.encodingConfig.useHEVC ? "hvc1" : "avc1", this.uploadAnalytics.targetVideoFramerate = n.file.encodingConfig.frameRate, this.uploadAnalytics.targetVideoIsHdr = n.file.encodingConfig.createHDR, this.uploadAnalytics.hevcIsSupported = n.file.encodingConfig.hevcIsSupported, this.uploadAnalytics.progressUpdateGranularity = n.file.encodingConfig.progressUpdateGranularity), this.uploadAnalytics.psnr = n.file.psnr, this.uploadAnalytics.ssim = n.file.ssim, this.uploadAnalytics.origin = n.file.origin, this.uploadAnalytics.psnrMeasurementLatencyMs = n.file.psnrMeasurementLatencyMs, this.uploadAnalytics.ssimMeasurementLatencyMs = n.file.ssimMeasurementLatencyMs), this.filename = i, null == i || null == r || null == n.file.type) throw D.error("Insufficient file data: ".concat({
+      filename: i,
       uri: r,
-      type: require.file.type
+      type: n.file.type
     }, " for ").concat(this.id)), Error("Insufficient file data: ".concat({
-      filename: Chunk392711,
+      filename: i,
       uri: r,
-      type: require.file.type
+      type: n.file.type
     }));
-    let a = null == (e = Chunk392711.split(".").pop()) ? true : module.toLowerCase(),
-      o = "jpg" === a || "jpeg" === a ? "image/jpeg" : require.file.type;
-    this.uploadAnalytics.convertedMimeType = Chunk261470;
-    let s = null != (t = require.fileSize) ? exports : (await (0, Chunk861990.Lc)(r)).size;
-    if (this.postCompressionSize = Chunk544891, this.currentSize = Chunk544891, null == Chunk544891) throw D.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
-    D.log("Completed compression and conversion. Output size=".concat(Chunk544891, " bytes; filename=").concat(Chunk392711, "; uri=").concat(r, "; originalMimeType=").concat(this.mimeType, "; mimeType=").concat(Chunk261470, " for ").concat(this.id));
+    let a = null == (e = i.split(".").pop()) ? true : e.toLowerCase(),
+      o = "jpg" === a || "jpeg" === a ? "image/jpeg" : n.file.type;
+    this.uploadAnalytics.convertedMimeType = o;
+    let s = null != (t = n.fileSize) ? t : (await (0, v.Lc)(r)).size;
+    if (this.postCompressionSize = s, this.currentSize = s, null == s) throw D.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
+    D.log("Completed compression and conversion. Output size=".concat(s, " bytes; filename=").concat(i, "; uri=").concat(r, "; originalMimeType=").concat(this.mimeType, "; mimeType=").concat(o, " for ").concat(this.id));
     let l = {
       uri: r,
-      filename: Chunk392711,
-      mimeType: Chunk261470
+      filename: i,
+      mimeType: o
     };
-    return this.item = P({}, this.item, Chunk710845), this.reactNativeFilePrepped = true, this
+    return this.item = P({}, this.item, l), this.reactNativeFilePrepped = true, this
   }
   static async tryConvertToWebP(e, t, n) {
     var r, i, a;
@@ -445,9 +445,9 @@ class k extends Chunk476326.ZP {
   }
   async delete() {
     if (null == this.uploadedFilename) return;
-    let e = (0, Chunk983544.F)(this.item.target).getDeleteUploadURL(this.uploadedFilename);
+    let e = (0, I.F)(this.item.target).getDeleteUploadURL(this.uploadedFilename);
     try {
-      await Chunk544891.tn.del(module)
+      await s.tn.del(e)
     } catch (e) {}
   }
   setResponseUrl(e) {
@@ -464,16 +464,16 @@ class k extends Chunk476326.ZP {
   }
   trackUploadStart() {
     var e;
-    Chunk626135.default.track(Chunk981631.rMx.ATTACHMENT_UPLOAD_STARTED, {
+    g.default.track(A.rMx.ATTACHMENT_UPLOAD_STARTED, {
       file_size: this.currentSize,
-      mime_type: null != (e = this.mimeType) ? module : "unknown",
-      video_upload_quality: Chunk740492.ZP.videoUploadQuality,
-      data_saving_mode: Chunk740492.ZP.dataSavingMode,
-      low_quality_image_mode: Chunk740492.ZP.dataSavingMode,
+      mime_type: null != (e = this.mimeType) ? e : "unknown",
+      video_upload_quality: m.ZP.videoUploadQuality,
+      data_saving_mode: m.ZP.dataSavingMode,
+      low_quality_image_mode: m.ZP.dataSavingMode,
       channel_id: this.channelId,
-      connection_type: Chunk866960.Z.getType(),
-      effective_connection_speed: Chunk866960.Z.getEffectiveConnectionSpeed(),
-      service_provider: Chunk866960.Z.getServiceProvider()
+      connection_type: h.Z.getType(),
+      effective_connection_speed: h.Z.getEffectiveConnectionSpeed(),
+      service_provider: h.Z.getServiceProvider()
     })
   }
   trackUploadFinished(e) {

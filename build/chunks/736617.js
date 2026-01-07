@@ -34,7 +34,7 @@ function o(e) {
 }
 
 function s() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_VANITY_URL_RESET"
   })
 }

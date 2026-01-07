@@ -19,8 +19,8 @@ var Chunk358230 = require("./358230.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 let g = () => {
-  let e = Chunk355298.Z.getMessageRequestsCount() > 0 || Chunk333984.Z.getSpamChannelsCount() > 0;
-  return [Chunk981631.Z5c.FRIENDS, (0, Chunk518929.VZ)("navigateToChannel") ? Chunk981631.Z5c.ICYMI : null, Chunk283595.Z.hasLibraryApplication() && !Chunk695346.bm.getSetting() ? Chunk981631.Z5c.APPLICATION_LIBRARY : null, module ? Chunk981631.Z5c.MESSAGE_REQUESTS : null, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk695346.Ex.getSetting() ? Chunk981631.Z5c.FAMILY_CENTER : null, Chunk981631.Z5c.QUEST_HOME_V2].filter(Chunk823379.lm)
+  let e = o.Z.getMessageRequestsCount() > 0 || s.Z.getSpamChannelsCount() > 0;
+  return [m.Z5c.FRIENDS, (0, a.VZ)("navigateToChannel") ? m.Z5c.ICYMI : null, u.Z.hasLibraryApplication() && !c.bm.getSetting() ? m.Z5c.APPLICATION_LIBRARY : null, e ? m.Z5c.MESSAGE_REQUESTS : null, m.Z5c.APPLICATION_STORE, m.Z5c.COLLECTIBLES_SHOP, c.Ex.getSetting() ? m.Z5c.FAMILY_CENTER : null, m.Z5c.QUEST_HOME_V2].filter(p.lm)
 };
 
 function E(e, t) {
@@ -63,6 +63,6 @@ function S(e, t) {
 
 function I() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
-    t = Chunk905423.Z.getState().guildId;
-  null == exports ? v(module) : S(module, exports)
+    t = l.Z.getState().guildId;
+  null == t ? v(e) : S(e, t)
 }

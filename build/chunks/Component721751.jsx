@@ -74,35 +74,35 @@ class S extends Chunk473749.Component {
   renderDefault() {
     let {
       splash: t
-    } = this.props, e = (0, Chunk54381.jsx)(Chunk605782.Z, {
-      component: Chunk473749.Fragment,
-      children: Chunk473749.Children.map(this.props.children, t => r.cloneElement(t, {
+    } = this.props, e = (0, n.jsx)(d.Z, {
+      component: r.Fragment,
+      children: r.Children.map(this.props.children, t => r.cloneElement(t, {
         transitionTo: m.uL,
         replaceWith: m.dL
       }))
     });
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk785412.characterBackground,
-      children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
+    return (0, n.jsx)("div", {
+      className: w.characterBackground,
+      children: (0, n.jsx)(o.y5t, {
         forceLevel: 1,
-        children: null != module ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-          children: [(0, Chunk54381.jsx)(Chunk133853.Z, {
+        children: null != t ? (0, n.jsxs)(n.Fragment, {
+          children: [(0, n.jsx)(u.Z, {
             show: true,
-            className: Chunk785412.logo
-          }), (0, Chunk54381.jsx)(Chunk568154.h, {
-            splash: module,
-            children: exports
+            className: w.logo
+          }), (0, n.jsx)(p.h, {
+            splash: t,
+            children: e
           })]
-        }) : (0, Chunk54381.jsx)(I, {
-          children: exports
+        }) : (0, n.jsx)(I, {
+          children: e
         })
       })
     })
   }
   renderMobile() {
-    return (0, Chunk54381.jsx)(Chunk605782.Z, {
-      component: Chunk473749.Fragment,
-      children: Chunk473749.Children.map(this.props.children, t => r.cloneElement(t, {
+    return (0, n.jsx)(d.Z, {
+      component: r.Fragment,
+      children: r.Children.map(this.props.children, t => r.cloneElement(t, {
         transitionTo: this.mobileTransitionTo,
         replaceWith: this.mobileReplaceWith
       }))
@@ -112,7 +112,7 @@ class S extends Chunk473749.Component {
     let {
       isMobileWidth: t
     } = this.state, e = navigator.userAgent.includes("GameLauncher");
-    return module || Chunk873546.tq || Chunk873546.Em || exports ? this.renderMobile() : this.renderDefault()
+    return t || h.tq || h.Em || e ? this.renderMobile() : this.renderDefault()
   }
   constructor(t) {
     super(t),

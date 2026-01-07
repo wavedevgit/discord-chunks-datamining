@@ -10,7 +10,7 @@ var Chunk579806 = require("./579806.js");
 
 function i() {
   try {
-    return Chunk579806.Z.nativeModules.requireModule("discord_krisp").getNcModelFilename()
+    return r.Z.nativeModules.requireModule("discord_krisp").getNcModelFilename()
   } catch (e) {
     return Promise.resolve(null)
   }

@@ -4,7 +4,7 @@
 
 function r() {
   let e = "function" == typeof WeakSet,
-    t = module ? new WeakSet : [];
+    t = e ? new WeakSet : [];
   return [function(n) {
     if (e) return !!t.has(n) || (t.add(n), false);
     for (let e = 0; e < t.length; e++)

@@ -15,15 +15,15 @@ var Chunk630759 = require("./630759.js"),
   Chunk47815 = require("./47815.js");
 
 function d() {
-  let e = (0, Chunk921157.s)();
-  return (0, Chunk54381.jsxs)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
-    children: [(0, Chunk54381.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t["5b3FNI"]),
-      description: Chunk388032.intl.format(Chunk388032.t.jrTSWU, {
-        helpArticle: (0, Chunk630759.pL)()
+  let e = (0, a.s)();
+  return (0, r.jsxs)(s.U, {
+    setting: l.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
+    children: [(0, r.jsx)(s.H, {
+      header: c.intl.string(c.t["5b3FNI"]),
+      description: c.intl.format(c.t.jrTSWU, {
+        helpArticle: (0, i.pL)()
       })
-    }), module.map(e => (0, r.jsx)("div", {
+    }), e.map(e => (0, r.jsx)("div", {
       className: u.item,
       children: (0, r.jsx)(o.q, {
         userId: e

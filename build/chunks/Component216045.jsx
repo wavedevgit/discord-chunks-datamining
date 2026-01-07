@@ -99,92 +99,92 @@ function V(e, t) {
 
 function H() {
   var e;
-  let t = (0, Chunk442837.e7)([Chunk594174.default], () => {
-      let e = Chunk594174.default.getCurrentUser();
-      return o()(null != module, "UserSettingsProfileCustomization: user cannot be undefined"), module
+  let t = (0, s.e7)([P.default], () => {
+      let e = P.default.getCurrentUser();
+      return o()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
-    a = (0, Chunk442837.cj)([Chunk25990.Z], () => Chunk25990.Z.getAllPending()),
+    n = (0, s.e7)([A.Z], () => A.Z.hidePersonalInformation),
+    a = (0, s.cj)([N.Z], () => N.Z.getAllPending()),
     {
       pendingBio: U,
       pendingAvatar: Z,
       pendingNameplate: V
-    } = Chunk512722,
-    H = B(Chunk512722, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-    Y = (0, Chunk643879.SD)({
-      userId: exports.id,
+    } = a,
+    H = B(a, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
+    Y = (0, T.SD)({
+      userId: t.id,
       image: Z
     }),
-    W = (0, Chunk150039.Ys)({
+    W = (0, y.Ys)({
       pendingValue: V,
-      userValue: null == exports || null == (e = exports.collectibles) ? true : module.nameplate
+      userValue: null == t || null == (e = t.collectibles) ? true : e.nameplate
     }),
-    K = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.showNotice()),
-    z = (0, Chunk113334.Z)() && null != U ? Chunk957730.ZP.parse(true, U).content : U,
-    q = Chunk74538.ZP.canUsePremiumProfileCustomization(exports),
+    K = (0, s.e7)([N.Z], () => N.Z.showNotice()),
+    z = (0, C.Z)() && null != U ? h.ZP.parse(true, U).content : U,
+    q = w.ZP.canUsePremiumProfileCustomization(t),
     {
       analyticsLocations: Q,
       newestAnalyticsLocation: X
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_USER_PROFILE);
-  Chunk473749.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
-  let [J, $] = Chunk473749.useState(false), {
+    } = (0, _.ZP)(p.Z.USER_SETTINGS_USER_PROFILE);
+  i.useEffect(() => () => u.Z.wait(d.W3), []);
+  let [J, $] = i.useState(false), {
     showRedesign: ee
-  } = Chunk413182.b.useExperiment({
+  } = D.b.useExperiment({
     location: "profile customization"
-  }), et = !q, en = Chunk473749.useRef(null);
-  return require ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)(Chunk906732.Gt, {
+  }), et = !q, en = i.useRef(null);
+  return n ? (0, r.jsx)(f.Z, {}) : (0, r.jsxs)(_.Gt, {
     value: Q,
-    children: [(0, Chunk54381.jsx)(Chunk475977.Z, {}), (0, Chunk54381.jsx)(Chunk296810.Z, {
-      profilePreview: (0, Chunk54381.jsx)(Chunk678135.Z, F(G({
-        user: exports,
+    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(O.Z, {
+      profilePreview: (0, r.jsx)(v.Z, F(G({
+        user: t,
         canUsePremiumCustomization: q,
-        onUpsellClick: Chunk265159.Z,
+        onUpsellClick: x.Z,
         pendingBio: z
       }, H), {
         pendingAvatar: Y
       })),
-      nameplatePreview: (0, Chunk54381.jsx)(Chunk566697.Z, F(G({
-        user: exports,
+      nameplatePreview: (0, r.jsx)(g.Z, F(G({
+        user: t,
         nameplate: W
       }, H), {
-        className: null == W ? Chunk581571.nameplatePreviewPlaceholder : true,
+        className: null == W ? k.nameplatePreviewPlaceholder : true,
         isHighlighted: true
       })),
-      children: (0, Chunk54381.jsx)(Chunk532495.Z, {})
-    }), ee && (0, Chunk54381.jsx)(Chunk610794.Z, {}), (0, Chunk54381.jsx)(Chunk622535.$, {
+      children: (0, r.jsx)(L.Z, {})
+    }), ee && (0, r.jsx)(S.Z, {}), (0, r.jsx)(l.$, {
       innerRef: en,
       onChange: e => $(e),
       threshold: .25,
       active: et,
-      children: (0, Chunk54381.jsx)("div", {
+      children: (0, r.jsx)("div", {
         ref: en,
-        children: (0, Chunk54381.jsx)(Chunk935147.Z, {
-          user: exports,
+        children: (0, r.jsx)(I.Z, {
+          user: t,
           shouldShow: et,
           isVisible: J
         })
       })
-    }), et && !K && (0, Chunk54381.jsx)(Chunk53691.p, {
-      className: Chunk581571.floatingNitroUpsell,
+    }), et && !K && (0, r.jsx)(E.p, {
+      className: k.floatingNitroUpsell,
       showUpsell: et && !J,
-      text: Chunk388032.intl.format(Chunk388032.t.TmfgI2, {
-        onClick: () => (0, Chunk267717.y)({
+      text: M.intl.format(M.t.TmfgI2, {
+        onClick: () => (0, b.y)({
           analyticsSource: X
         })
       }),
       textVariant: "heading-md/medium",
-      button: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      button: (0, r.jsx)(c.Button, {
         variant: "expressive",
         onClick: () => {
           var e;
-          Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_CLICKED, {
+          R.default.track(j.rMx.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
-          }), null == en || null == (e = en.current) || module.scrollIntoView({
+          }), null == en || null == (e = en.current) || e.scrollIntoView({
             behavior: "smooth"
           })
         },
-        text: Chunk388032.intl.string(Chunk388032.t.uw9zI7),
-        icon: Chunk481060.SrA
+        text: M.intl.string(M.t.uw9zI7),
+        icon: c.SrA
       })
     })]
   })

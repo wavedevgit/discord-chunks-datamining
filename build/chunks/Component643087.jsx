@@ -24,7 +24,7 @@ function b(e, t, r) {
   }) : e[t] = r, e
 }
 let f = (0, Chunk663993.Un)({
-  createPromise: () => require.e("4848").then(require.bind(require, 797967)),
+  createPromise: () => r.e("4848").then(r.bind(r, 797967)),
   webpackId: 797967
 });
 class g extends Chunk473749.PureComponent {
@@ -36,33 +36,33 @@ class g extends Chunk473749.PureComponent {
       name: r,
       color: o
     } = this.state;
-    return (0, Chunk54381.jsx)("form", {
+    return (0, n.jsx)("form", {
       onSubmit: this.handleSubmit,
-      children: (0, Chunk54381.jsx)(Chunk159691.u_l, {
-        title: Chunk388032.intl.string(Chunk388032.t.Dx7im5),
+      children: (0, n.jsx)(s.u_l, {
+        title: u.intl.string(u.t.Dx7im5),
         actions: [{
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t.i4jeWR),
+          text: u.intl.string(u.t.i4jeWR),
           type: "submit"
         }],
-        transitionState: module,
-        onClose: exports,
-        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+        transitionState: e,
+        onClose: t,
+        children: (0, n.jsxs)(i.Kqy, {
           gap: 16,
-          children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
-            label: Chunk388032.intl.string(Chunk388032.t.tGRbjA),
-            maxLength: Chunk981631.dYL,
-            value: require,
+          children: [(0, n.jsx)(i.oil, {
+            label: u.intl.string(u.t.tGRbjA),
+            maxLength: h.dYL,
+            value: r,
             onChange: this.handleNameChange,
-            placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVh),
+            placeholder: u.intl.string(u.t.xV9hVh),
             autoFocus: true
-          }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
-            label: Chunk388032.intl.string(Chunk388032.t.xpurRF),
-            children: (0, Chunk54381.jsx)(f, {
-              className: Chunk867972.colorPicker,
-              defaultColor: Chunk126134.Wy,
-              colors: Chunk981631.pmI,
-              value: null != Chunk473749 ? Chunk473749 : Chunk126134.Wy,
+          }), (0, n.jsx)(i.gNt, {
+            label: u.intl.string(u.t.xpurRF),
+            children: (0, n.jsx)(f, {
+              className: d.colorPicker,
+              defaultColor: p.Wy,
+              colors: h.pmI,
+              value: null != o ? o : p.Wy,
               onChange: this.handleColorChange
             })
           })]

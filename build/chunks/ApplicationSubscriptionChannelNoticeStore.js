@@ -29,7 +29,7 @@ function c(e) {
 class u extends(i = Chunk442837.ZP.DeviceSettingsStore) {
   initialize() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : l;
-    r = module
+    r = e
   }
   getUserAgnosticState() {
     return r

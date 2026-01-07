@@ -16,20 +16,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function E() {
-  return (0, Chunk442837.e7)([Chunk594174.default, Chunk131951.Z], () => {
+  return (0, i.e7)([a.default, u.Z], () => {
     var t;
-    let e = Chunk594174.default.getCurrentUser(),
-      n = null != (t = null == exports ? true : exports.isStaff()) && module,
-      i = "canary" === Chunk998502.ZP.releaseChannel || "development" === Chunk998502.ZP.releaseChannel,
-      l = Chunk131951.Z.supports(Chunk65154.AN.CONNECTION_REPLAY);
-    return require && Chunk442837 && Chunk304680
+    let e = a.default.getCurrentUser(),
+      n = null != (t = null == e ? true : e.isStaff()) && t,
+      i = "canary" === o.ZP.releaseChannel || "development" === o.ZP.releaseChannel,
+      l = u.Z.supports(S.AN.CONNECTION_REPLAY);
+    return n && i && l
   })
 }
 let d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.U4FgFK),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.Lm72RU),
+  useTitle: () => c.intl.string(c.t.U4FgFK),
+  useSubtitle: () => c.intl.string(c.t.Lm72RU),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection())
+    return (0, i.e7)([r.ZP], () => r.ZP.shouldRecordNextConnection())
   },
   setValue: Chunk304680.TC,
   usePredicate: E

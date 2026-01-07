@@ -24,18 +24,18 @@ class i {
     var e, t;
     let n = this.ref.current;
     return {
-      width: null != (e = null == require ? true : require.scrollWidth) ? module : 0,
-      height: null != (t = null == require ? true : require.scrollHeight) ? exports : 0
+      width: null != (e = null == n ? true : n.scrollWidth) ? e : 0,
+      height: null != (t = null == n ? true : n.scrollHeight) ? t : 0
     }
   }
   getVisibleRect() {
     var e, t, n, r;
     let i = this.ref.current;
     return {
-      x: null != (e = null == i ? true : i.scrollLeft) ? module : 0,
-      y: null != (t = null == i ? true : i.scrollTop) ? exports : 0,
-      width: null != (n = null == i ? true : i.clientWidth) ? require : 0,
-      height: null != (r = null == i ? true : i.clientHeight) ? Chunk422037 : 0
+      x: null != (e = null == i ? true : i.scrollLeft) ? e : 0,
+      y: null != (t = null == i ? true : i.scrollTop) ? t : 0,
+      width: null != (n = null == i ? true : i.clientWidth) ? n : 0,
+      height: null != (r = null == i ? true : i.clientHeight) ? r : 0
     }
   }
   constructor(e) {

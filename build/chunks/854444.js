@@ -31,31 +31,31 @@ var Chunk473749 = require("./473749.js"),
 let C = [Chunk317381.ZP, Chunk853856.Z, Chunk924301.ZP, Chunk601070.Z, Chunk569471.Z, Chunk680089.Z, Chunk592125.Z, Chunk77498.Z, Chunk496675.Z, Chunk306680.ZP, Chunk944486.Z, Chunk9156.ZP];
 
 function A() {
-  let [e, t] = Chunk473749.useState(() => N());
-  return Chunk473749.useEffect(() => {
-    let e = a().throttle(() => exports(N()), 100);
+  let [e, t] = r.useState(() => N());
+  return r.useEffect(() => {
+    let e = a().throttle(() => t(N()), 100);
     return C.forEach(t => t.addChangeListener(e)), () => C.forEach(t => t.removeChangeListener(e))
-  }, []), module
+  }, []), e
 }
 
 function N() {
-  let e = Chunk853856.Z.getFavoriteChannels(),
-    t = Chunk9156.ZP.isGuildCollapsed(Chunk647086._),
-    n = Chunk944486.Z.getChannelId(),
-    r = Chunk592125.Z.getChannel(require),
-    i = Chunk944486.Z.getVoiceChannelId(),
+  let e = l.Z.getFavoriteChannels(),
+    t = O.ZP.isGuildCollapsed(I._),
+    n = y.Z.getChannelId(),
+    r = m.Z.getChannel(n),
+    i = y.Z.getVoiceChannelId(),
     s = [],
     u = {};
-  for (let t in module) {
-    let n = module[exports],
-      r = Chunk592125.Z.getChannel(require.id);
-    if (null == Chunk473749 || require.type === Chunk524437.Dd.CATEGORY) continue;
-    let i = (0, Chunk846787.r)(module, require, Chunk473749);
-    if (null == require.parentId || !(require.parentId in module)) {
-      Chunk317381.push(Chunk392711);
+  for (let t in e) {
+    let n = e[t],
+      r = m.Z.getChannel(n.id);
+    if (null == r || n.type === o.Dd.CATEGORY) continue;
+    let i = (0, c.r)(e, n, r);
+    if (null == n.parentId || !(n.parentId in e)) {
+      s.push(i);
       continue
     }
-    require.parentId in Chunk924301 || (Chunk924301[require.parentId] = []), Chunk924301[require.parentId].push(Chunk392711)
+    n.parentId in u || (u[n.parentId] = []), u[n.parentId].push(i)
   }
 
   function f(n, o) {
@@ -97,15 +97,15 @@ function N() {
       isMuted: false,
       isCollapsed: false,
       position: 0,
-      getChannelRecords: () => Chunk317381,
-      getShownChannelIds: () => Chunk317381.map(e => e.id),
-      getShownChannelAndThreadIds: () => Chunk317381.map(e => e.id),
-      isEmpty: () => 0 === Chunk317381.length,
+      getChannelRecords: () => s,
+      getShownChannelIds: () => s.map(e => e.id),
+      getShownChannelAndThreadIds: () => s.map(e => e.id),
+      isEmpty: () => 0 === s.length,
       get channelList() {
-        return null == Chunk77498 && (g = Chunk569471(Chunk317381, this)), Chunk77498
+        return null == g && (g = f(s, this)), g
       }
     },
-    A = a()(module).values().filter(e => e.type === o.Dd.CATEGORY).sortBy(e => e.order).map(e => {
+    A = a()(e).values().filter(e => e.type === o.Dd.CATEGORY).sortBy(e => e.order).map(e => {
       var t;
       let {
         id: n,
@@ -137,16 +137,16 @@ function N() {
       getRow: () => null
     };
   return {
-    id: Chunk647086._,
-    hideMutedChannels: exports,
+    id: I._,
+    hideMutedChannels: t,
     favoritesSectionNumber: 1,
     recentsSectionNumber: 2,
     voiceChannelsSectionNumber: false,
     getSections() {
       let e = [];
-      module[Chunk540126.Fq] = 0, module[Chunk540126.wZ] = 0, module[Chunk540126.p2] = 0, module[Chunk540126.PB] = 0, module[Chunk540126.wd] = C.channelList.length;
-      for (let t = 0; exports < A.length; exports++) module[Chunk540126.wF + exports] = Math.max(1, A[exports].channelList.length);
-      return module
+      e[S.Fq] = 0, e[S.wZ] = 0, e[S.p2] = 0, e[S.PB] = 0, e[S.wd] = C.channelList.length;
+      for (let t = 0; t < A.length; t++) e[S.wF + t] = Math.max(1, A[t].channelList.length);
+      return e
     },
     isPlaceholderRow: (e, t) => !(e < S.wF) && 0 === t && 0 === A[e - S.wF].channelList.length,
     getCategoryFromSection: e => e === S.wd ? C : A[e - S.wF],

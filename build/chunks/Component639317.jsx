@@ -74,7 +74,7 @@ let E = "\n  visibility:hidden;\n  overflow:hidden;\n  position:absolute;\n  z-i
 class y extends(i = Chunk473749.PureComponent) {
   componentDidMount() {
     var e, t;
-    null == (e = (t = this.props).onResize) || module.call(exports, true), Promise.resolve().then(() => this.calculateSize())
+    null == (e = (t = this.props).onResize) || e.call(t, true), Promise.resolve().then(() => this.calculateSize())
   }
   componentDidUpdate(e, t) {
     if (this.state.height !== t.height) {
@@ -88,12 +88,12 @@ class y extends(i = Chunk473749.PureComponent) {
   calculateSize() {
     var e;
     let t = this._textArea;
-    if (null == exports) return;
+    if (null == t) return;
     let {
       fontWidthEstimate: n,
       rows: i
-    } = this.props, a = null != (e = this.props.value) ? module : exports.value;
-    if (null != require && false === Chunk54381.indexOf("\n") && Chunk54381.length * require < .8 * exports.offsetWidth) return void this.setState({
+    } = this.props, a = null != (e = this.props.value) ? e : t.value;
+    if (null != n && false === a.indexOf("\n") && a.length * n < .8 * t.offsetWidth) return void this.setState({
       height: true
     });
     null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r));
@@ -102,11 +102,11 @@ class y extends(i = Chunk473749.PureComponent) {
       borderSize: s,
       boxSizing: l,
       sizingStyle: c
-    } = this.calculateNodeStyling(exports);
-    r.setAttribute("style", Chunk58654 + ";" + E), r.value = Chunk54381, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
+    } = this.calculateNodeStyling(t);
+    r.setAttribute("style", c + ";" + E), r.value = a, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
     let u = r.scrollHeight;
-    "border-box" === l ? u += Chunk120356 : "content-box" === l && (u -= Chunk473749), this.setState({
-      height: Chunk793030
+    "border-box" === l ? u += s : "content-box" === l && (u -= o), this.setState({
+      height: u
     })
   }
   calculateNodeStyling(e) {
@@ -128,28 +128,28 @@ class y extends(i = Chunk473749.PureComponent) {
     let {
       _textArea: e
     } = this;
-    null != module && module.blur()
+    null != e && e.blur()
   }
   focus() {
     let {
       _textArea: e
     } = this;
-    null != module && module.focus()
+    null != e && e.focus()
   }
   setSelection(e, t) {
     null != this._textArea && (this._textArea.selectionStart = e, this._textArea.selectionEnd = t)
   }
   get selectionStart() {
     var e, t;
-    return null != (t = null == (e = this._textArea) ? true : module.selectionStart) ? exports : 0
+    return null != (t = null == (e = this._textArea) ? true : e.selectionStart) ? t : 0
   }
   get selectionEnd() {
     var e, t;
-    return null != (t = null == (e = this._textArea) ? true : module.selectionEnd) ? exports : 0
+    return null != (t = null == (e = this._textArea) ? true : e.selectionEnd) ? t : 0
   }
   get value() {
     var e, t;
-    return null != (t = null == (e = this._textArea) ? true : module.value) ? exports : ""
+    return null != (t = null == (e = this._textArea) ? true : e.value) ? t : ""
   }
   render() {
     let e = this.props,
@@ -157,15 +157,15 @@ class y extends(i = Chunk473749.PureComponent) {
         style: t,
         className: n,
         onResize: r
-      } = module,
-      i = h(module, ["style", "className", "onResize"]);
+      } = e,
+      i = h(e, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
-    let o = p({}, this.state, exports);
-    return (0, Chunk54381.jsx)(Chunk793030.tEY, {
-      children: (0, Chunk54381.jsx)("textarea", m(p({}, i), {
-        className: l()(require, Chunk164701.scrollbarGhostHairline),
+    let o = p({}, this.state, t);
+    return (0, a.jsx)(u.tEY, {
+      children: (0, a.jsx)("textarea", m(p({}, i), {
+        className: l()(n, d.scrollbarGhostHairline),
         ref: this.handleSetRef,
-        style: Chunk473749,
+        style: o,
         onChange: this.handleChange
       }))
     })

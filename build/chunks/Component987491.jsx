@@ -254,41 +254,41 @@ let M = Chunk473749.memo(function(e) {
     let e = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       t = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       n = "".concat(Math.floor(25 * Math.random()) + 50, "px");
-    return (0, Chunk54381.jsxs)("tr", {
-      className: i()(Chunk983266.roundedRow, Chunk983266.memberRowContainer),
-      children: [(0, Chunk54381.jsx)("td", {
-        children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk983266.memberNameContainer,
-          children: [(0, Chunk54381.jsx)("div", {
-            className: i()(Chunk929133.placeholderAvatar, Chunk983266.memberAvatar)
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk983266.memberName,
-            children: (0, Chunk54381.jsx)("div", {
-              className: Chunk929133.placeholderText,
+    return (0, l.jsxs)("tr", {
+      className: i()(w.roundedRow, w.memberRowContainer),
+      children: [(0, l.jsx)("td", {
+        children: (0, l.jsxs)("div", {
+          className: w.memberNameContainer,
+          children: [(0, l.jsx)("div", {
+            className: i()(I.placeholderAvatar, w.memberAvatar)
+          }), (0, l.jsx)("div", {
+            className: w.memberName,
+            children: (0, l.jsx)("div", {
+              className: I.placeholderText,
               style: {
-                width: module
+                width: e
               }
             })
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk983266.memberGlobalName,
-            children: (0, Chunk54381.jsx)("div", {
-              className: Chunk929133.placeholderTextSmall,
+          }), (0, l.jsx)("div", {
+            className: w.memberGlobalName,
+            children: (0, l.jsx)("div", {
+              className: I.placeholderTextSmall,
               style: {
-                width: exports
+                width: t
               }
             })
           })]
         })
-      }), (0, Chunk54381.jsx)("td", {
-        className: Chunk983266.mediumCol,
-        children: (0, Chunk54381.jsx)("div", {
-          className: Chunk929133.placeholderText,
+      }), (0, l.jsx)("td", {
+        className: w.mediumCol,
+        children: (0, l.jsx)("div", {
+          className: I.placeholderText,
           style: {
-            width: require
+            width: n
           }
         })
-      }), (0, Chunk54381.jsx)("td", {
-        className: Chunk929133.moreOptionsCol
+      }), (0, l.jsx)("td", {
+        className: I.moreOptionsCol
       })]
     })
   };

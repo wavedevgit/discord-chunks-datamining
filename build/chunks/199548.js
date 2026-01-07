@@ -14,19 +14,19 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
+    useTitle: () => c.intl.string(c.t.Cq98yL),
     StronglyDiscouragedCustomComponent: Chunk309739.ZP,
     buildLayout: () => [],
-    usePredicate: () => !(0, Chunk526665.gN)("ActivityPrivacyPanel")
+    usePredicate: () => !(0, u.gN)("ActivityPrivacyPanel")
   }),
   d = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
-    usePredicate: () => (0, Chunk526665.gN)("ActivityPrivacyPanel"),
-    buildLayout: () => [Chunk418878.v, Chunk330187.b, Chunk87513.o]
+    useTitle: () => c.intl.string(c.t.Cq98yL),
+    usePredicate: () => (0, u.gN)("ActivityPrivacyPanel"),
+    buildLayout: () => [a.v, o.b, T.o]
   }),
   _ = (0, Chunk509613.m7)(Chunk313789.n.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
-    getLegacySearchKey: () => (0, Chunk526665.Gl)("ActivityPrivacyPanel") ? true : Chunk726985.s6.ACTIVITY_PRIVACY,
+    useTitle: () => c.intl.string(c.t.Cq98yL),
+    getLegacySearchKey: () => (0, u.Gl)("ActivityPrivacyPanel") ? true : S.s6.ACTIVITY_PRIVACY,
     icon: Chunk657707.KED,
-    buildLayout: () => (0, Chunk526665.Gl)("ActivityPrivacyPanel") ? [d] : [E]
+    buildLayout: () => (0, u.Gl)("ActivityPrivacyPanel") ? [d] : [E]
   })

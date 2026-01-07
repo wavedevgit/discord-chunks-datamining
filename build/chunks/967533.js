@@ -11,12 +11,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.OVERLAY_SHOW_KEYBIND_INDICATORS_SETTING, {
-  usePredicate: () => (0, Chunk809357.Z)({
+  usePredicate: () => (0, s.Z)({
     location: "overlay_user_settings"
   }),
-  useValue: () => (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.showKeybindIndicators),
+  useValue: () => (0, i.e7)([r.default], () => r.default.showKeybindIndicators),
   setValue: t => {
     l.Z.setShowKeybindIndicators(t)
   },
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.XZTl9r)
+  useTitle: () => o.intl.string(o.t.XZTl9r)
 })

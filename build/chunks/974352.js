@@ -8,7 +8,7 @@ var Chunk431660 = require("./431660.js");
 
 function i() {
   return {
-    traceId: (0, Chunk431660.DM)(),
-    spanId: (0, Chunk431660.DM)().substring(16)
+    traceId: (0, r.DM)(),
+    spanId: (0, r.DM)().substring(16)
   }
 }

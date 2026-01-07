@@ -20,32 +20,32 @@ function f() {
   let {
     trackView: e,
     trackClick: t
-  } = (0, Chunk312839.R)(Chunk987650.n0.ClipsReminderNotification, {
-    notif_type: Chunk987650.n0.ClipsReminderNotification
-  }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), f = (0, Chunk341569.LI)();
-  if (null == require || !f) return null;
-  let h = Chunk13140.BB(require.shortcut, true);
+  } = (0, a.R)(d.n0.ClipsReminderNotification, {
+    notif_type: d.n0.ClipsReminderNotification
+  }), n = s.ZP.getKeybindForAction(c.kg4.SAVE_CLIP), f = (0, l.LI)();
+  if (null == n || !f) return null;
+  let h = o.BB(n.shortcut, true);
   return {
-    title: Chunk388032.intl.format(Chunk388032.t.S5uhCN, {
+    title: u.intl.format(u.t.S5uhCN, {
       keybind: h,
-      keybindHook: () => (0, Chunk54381.jsx)("span", {
+      keybindHook: () => (0, i.jsx)("span", {
         style: {
           display: "inline-block"
         },
-        children: (0, Chunk54381.jsx)(Chunk481060.M2$, {
+        children: (0, i.jsx)(r.M2$, {
           shortcut: h
         })
       })
     }),
-    icon: (0, Chunk54381.jsx)(Chunk481060.AlX, {
+    icon: (0, i.jsx)(r.AlX, {
       size: "xs",
       color: "currentColor"
     }),
     onNotificationShow: () => {
-      module()
+      e()
     },
     onDismissClick: () => {
-      exports("dismiss")
+      t("dismiss")
     }
   }
 }

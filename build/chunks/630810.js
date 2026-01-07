@@ -34,7 +34,7 @@ class h extends Chunk651655.Z {
     }
   }
   constructor() {
-    super(new Chunk710845.Z("InviteQueue"), c)
+    super(new a.Z("InviteQueue"), c)
   }
 }
 let p = new h

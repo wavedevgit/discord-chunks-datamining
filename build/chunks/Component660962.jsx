@@ -48,7 +48,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk179517 = require("./179517.js"),
   Chunk79829 = require("./79829.js");
 let V = (0, Chunk663993.Un)({
-    createPromise: () => require.e("4848").then(require.bind(require, 797967)),
+    createPromise: () => n.e("4848").then(n.bind(n, 797967)),
     webpackId: 797967
   }),
   K = o().debounce((e, t) => (0, _.Uv)(e, t), 200);
@@ -173,18 +173,18 @@ function q(e) {
 }
 
 function X() {
-  let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+  let e = (0, d.e7)([p.Z], () => p.Z.useReducedMotion),
     {
       gradientStyle: t,
       gradientClassname: n
-    } = (0, Chunk481060.JUn)({
-      colorStrings: (0, Chunk606318.DX)(Chunk141006.SK),
-      useReducedMotion: module,
+    } = (0, f.JUn)({
+      colorStrings: (0, C.DX)(M.SK),
+      useReducedMotion: e,
       roleStyle: "username",
       includeConvenienceGlow: true,
       animateGradient: true
     });
-  return (0, Chunk54381.jsx)("span", {
+  return (0, r.jsx)("span", {
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -202,10 +202,10 @@ function X() {
         })
       }
       return e
-    }({}, exports),
-    className: require,
-    "data-text": Chunk388032.intl.string(Chunk556970.default["+/IHLl"]),
-    children: Chunk388032.intl.string(Chunk556970.default["+/IHLl"])
+    }({}, t),
+    className: n,
+    "data-text": U.intl.string(B.default["+/IHLl"]),
+    children: U.intl.string(B.default["+/IHLl"])
   })
 }
 

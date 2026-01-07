@@ -10,8 +10,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let u = {
-  title: () => Chunk388032.intl.string(Chunk388032.t.aTFQKh),
-  description: () => Chunk388032.intl.string(Chunk388032.t.oTbFQg),
+  title: () => s.intl.string(s.t.aTFQKh),
+  description: () => s.intl.string(s.t.oTbFQg),
   canCreateGuild: false,
-  useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk353926.Z, Chunk496675.Z], () => e => e.features.has(o.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && !e.features.has(o.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && r.Z.can(o.Plq.ADMINISTRATOR, e) && (0, a.$F)() && (0, a.hQ)(e.id), [])
+  useIsGuildSupported: () => (0, n.e7)([l.Z, r.Z], () => e => e.features.has(o.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && !e.features.has(o.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && r.Z.can(o.Plq.ADMINISTRATOR, e) && (0, a.$F)() && (0, a.hQ)(e.id), [])
 }

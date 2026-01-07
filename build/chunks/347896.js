@@ -12,8 +12,8 @@ var Chunk473749 = require("./473749.js"),
 function s() {
   let {
     enabled: e
-  } = Chunk2109.ZP.useConfig({
+  } = a.ZP.useConfig({
     location: "useGiftingPromotionConfig"
   });
-  return Chunk473749.useMemo(() => Chunk873546.tq || Chunk873546.Em ? null : module ? Chunk124566.D9 : null, [module])
+  return r.useMemo(() => i.tq || i.Em ? null : e ? o.D9 : null, [e])
 }

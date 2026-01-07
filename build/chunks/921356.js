@@ -13,15 +13,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function T() {
-  let t = (0, Chunk968021.Y)(),
-    e = (0, Chunk442837.e7)([Chunk594174.default], () => {
-      let t = Chunk594174.default.getCurrentUser();
-      return null != module && !module.verified
+  let t = (0, a.Y)(),
+    e = (0, i.e7)([s.default], () => {
+      let t = s.default.getCurrentUser();
+      return null != t && !t.verified
     });
-  return !module && exports
+  return !t && e
 }
 let S = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_UNVERIFIED_USER_NOTICE, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.m0FidJ)],
+  useSearchTerms: () => [o.intl.string(o.t.m0FidJ)],
   usePredicate: T,
   Component: Chunk453706.Z
 })

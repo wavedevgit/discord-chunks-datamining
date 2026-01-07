@@ -11,22 +11,22 @@ var Chunk481060 = require("./481060.js"),
   Chunk433266 = require("./433266.js");
 
 function s() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk433266.wrapper,
-    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-      className: Chunk433266.textContainer,
+  return (0, r.jsx)("div", {
+    className: o.wrapper,
+    children: (0, r.jsxs)(i.Kqy, {
+      className: o.textContainer,
       gap: 16,
       padding: 32,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-xxl/normal",
         color: "text-strong",
-        className: Chunk433266.heading,
-        children: Chunk388032.intl.string(Chunk975114.default["VAK+h9"])
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        className: o.heading,
+        children: a.intl.string(l.default["VAK+h9"])
+      }), (0, r.jsx)(i.Text, {
         variant: "text-lg/normal",
         color: "text-muted",
-        className: Chunk433266.text,
-        children: Chunk388032.intl.string(Chunk975114.default.dcpdhC)
+        className: o.text,
+        children: a.intl.string(l.default.dcpdhC)
       })]
     })
   })

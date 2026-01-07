@@ -22,15 +22,15 @@ let N = Chunk981631.QZA.CLOSED,
   P = {};
 
 function R() {
-  N = Chunk981631.QZA.OPEN, P = {}
+  N = C.QZA.OPEN, P = {}
 }
 
 function w() {
-  N = Chunk981631.QZA.CLOSED, P = {}
+  N = C.QZA.CLOSED, P = {}
 }
 
 function D() {
-  N = Chunk981631.QZA.SUBMITTING, P = {}
+  N = C.QZA.SUBMITTING, P = {}
 }
 
 function x(e) {
@@ -221,7 +221,7 @@ class el extends(v = Chunk442837.ZP.Store) {
     return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== o || true !== i || true !== s || true !== p || true !== _ || true !== m
   }
   getIsSubmitDisabled() {
-    return true !== c && c.length > Chunk981631.tPV
+    return true !== c && c.length > C.tPV
   }
   getPendingAvatar() {
     return r

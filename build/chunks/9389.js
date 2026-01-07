@@ -6,5 +6,5 @@ require.d(exports, {
 var Chunk610697 = require("./610697.js");
 
 function r() {
-  return (0, Chunk610697.Z)()
+  return (0, i.Z)()
 }

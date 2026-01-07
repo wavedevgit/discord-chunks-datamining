@@ -73,8 +73,8 @@ class m {
       l = 0n,
       c = 0n,
       u = 0n;
-    for (this.#o >= 32 ? (l = _((l = p(this.#t, 1n) + p(this.#n, 7n) + p(this.#r, 12n) + p(this.#i, 18n)) ^ p(_(this.#t * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#n * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#r * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#i * i), 31n) * r), l = _(l * r + o)) : l = _(this.#e + s), l += BigInt(this.#o); require <= exports - 8;) u = _(p(_((u = f(module, require)) * i), 31n) * r), l = _(p(l ^ u, 27n) * r + o), n += 8;
-    for (require + 4 <= exports && (l = _(p(l ^ _((u = d(module[require + 1] << 8 | module[require], module[require + 3] << 8 | module[require + 2], 0, 0)) * r), 23n) * i + a), n += 4); require < exports;) l = _(p(l ^ _((u = d(module[require++], 0, 0, 0)) * s), 11n) * r);
+    for (this.#o >= 32 ? (l = _((l = p(this.#t, 1n) + p(this.#n, 7n) + p(this.#r, 12n) + p(this.#i, 18n)) ^ p(_(this.#t * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#n * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#r * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#i * i), 31n) * r), l = _(l * r + o)) : l = _(this.#e + s), l += BigInt(this.#o); n <= t - 8;) u = _(p(_((u = f(e, n)) * i), 31n) * r), l = _(p(l ^ u, 27n) * r + o), n += 8;
+    for (n + 4 <= t && (l = _(p(l ^ _((u = d(e[n + 1] << 8 | e[n], e[n + 3] << 8 | e[n + 2], 0, 0)) * r), 23n) * i + a), n += 4); n < t;) l = _(p(l ^ _((u = d(e[n++], 0, 0, 0)) * s), 11n) * r);
     return c = _(l >> 33n), l = _((l ^ c) * i), c = _(l >> 29n), l = _((l ^ c) * a), c = _(l >> 32n), l = _(l ^ c)
   }
 }

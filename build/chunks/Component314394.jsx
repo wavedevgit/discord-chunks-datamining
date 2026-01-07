@@ -11,8 +11,8 @@ var Chunk603963 = require("./603963.jsx"),
   Chunk726985 = require("./726985.js");
 
 function s() {
-  return (0, Chunk54381.jsx)(Chunk603963.Z, {
-    webSetting: Chunk726985.s6.VOICE_AND_VIDEO_SOUNDS,
-    children: (0, Chunk54381.jsx)(Chunk894939.Z, {})
+  return (0, r.jsx)(i.Z, {
+    webSetting: o.s6.VOICE_AND_VIDEO_SOUNDS,
+    children: (0, r.jsx)(a.Z, {})
   })
 }

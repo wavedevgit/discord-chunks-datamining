@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk303789 = require("./303789.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.k4)(Chunk313789.n.CHAT_STICKERS_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["6NtAuJ"]),
-  buildLayout: () => [Chunk303789.n]
+  useTitle: () => u.intl.string(u.t["6NtAuJ"]),
+  buildLayout: () => [s.n]
 })

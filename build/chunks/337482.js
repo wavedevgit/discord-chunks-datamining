@@ -10,10 +10,10 @@ var Chunk585483 = require("./585483.js"),
 let a = {
     binds: ["pageup"],
     comboKeysBindGlobal: true,
-    action: () => (Chunk585483.S.dispatchToLastSubscribed(Chunk981631.CkL.SCROLL_PAGE_UP), false)
+    action: () => (r.S.dispatchToLastSubscribed(i.CkL.SCROLL_PAGE_UP), false)
   },
   o = {
     binds: ["pagedown"],
     comboKeysBindGlobal: true,
-    action: () => (Chunk585483.S.dispatchToLastSubscribed(Chunk981631.CkL.SCROLL_PAGE_DOWN), false)
+    action: () => (r.S.dispatchToLastSubscribed(i.CkL.SCROLL_PAGE_DOWN), false)
   }

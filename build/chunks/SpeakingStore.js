@@ -31,9 +31,9 @@ let m = new Map,
   y = false;
 
 function O() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT,
-    t = m.get(module);
-  return null == exports && (t = new Map, m.set(module, exports)), exports
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT,
+    t = m.get(e);
+  return null == t && (t = new Map, m.set(e, t)), t
 }
 
 function v(e, t) {
@@ -129,7 +129,7 @@ function P(e) {
 }
 class R extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(Chunk592125.Z, Chunk131951.Z, Chunk19780.Z, Chunk944486.Z)
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(l.Z, c.Z, u.Z, d.Z)
   }
   getSpeakingDuration(e, t) {
     var n, r;
@@ -139,8 +139,8 @@ class R extends(r = Chunk442837.ZP.Store) {
   }
   getSpeakers() {
     var e, t;
-    let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return Array.from(null != (t = null == (e = m.get(require)) ? true : module.keys()) ? exports : []).filter(e => S(n, e, p.Dg.VOICE))
+    let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
+    return Array.from(null != (t = null == (e = m.get(n)) ? true : e.keys()) ? t : []).filter(e => S(n, e, p.Dg.VOICE))
   }
   isSpeaking(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.Yn.DEFAULT;
@@ -155,12 +155,12 @@ class R extends(r = Chunk442837.ZP.Store) {
     return S(t, e, p.Dg.SOUNDSHARE)
   }
   isAnyoneElseSpeaking() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return I(module, Chunk65154.Dg.VOICE, true)
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
+    return I(e, p.Dg.VOICE, true)
   }
   isCurrentUserSpeaking() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return null != h && this.isSpeaking(h, module)
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
+    return null != h && this.isSpeaking(h, e)
   }
   isCurrentUserPTTActive() {
     return y
@@ -169,16 +169,16 @@ class R extends(r = Chunk442837.ZP.Store) {
     return b
   }
   isAnyonePrioritySpeaking() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return I(module, Chunk65154.Dg.VOICE | Chunk65154.Dg.PRIORITY)
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
+    return I(e, p.Dg.VOICE | p.Dg.PRIORITY)
   }
   isCurrentUserPrioritySpeaker() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return null != h && this.isPrioritySpeaker(h, module)
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
+    return null != h && this.isPrioritySpeaker(h, e)
   }
   isCurrentUserPrioritySpeaking() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return null != h && this.isPrioritySpeaker(h, module) && this.isSpeaking(h, module)
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p.Yn.DEFAULT;
+    return null != h && this.isPrioritySpeaker(h, e) && this.isSpeaking(h, e)
   }
   getVoiceVolume(e) {
     var t, n, r;

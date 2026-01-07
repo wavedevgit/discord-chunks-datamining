@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk354255 = require("./354255.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_CHANGE_PASSWORD_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["FRep5/"])],
+  useSearchTerms: () => [u.intl.string(u.t["FRep5/"])],
   Component: Chunk354255.Z
 })

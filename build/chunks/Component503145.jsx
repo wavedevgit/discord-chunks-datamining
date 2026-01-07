@@ -34,17 +34,17 @@ class u extends(r = Chunk473749.Component) {
   stopShaking() {
     null != this.animationFrame && cancelAnimationFrame(this.animationFrame);
     let e = this.ref.current;
-    null != module && (module.style.transform = "")
+    null != e && (e.style.transform = "")
   }
   render() {
     let {
       className: e,
       children: t
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: module,
+    return (0, i.jsx)("div", {
+      className: e,
       ref: this.ref,
-      children: exports
+      children: t
     })
   }
   constructor(...e) {

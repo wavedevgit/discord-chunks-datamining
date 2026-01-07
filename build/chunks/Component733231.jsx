@@ -10,15 +10,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js");
 let o = Chunk473749.createContext(null),
   c = {
-    registerItemRef: () => Chunk231338.dG,
-    registerDragHandleRef: () => Chunk231338.dG,
+    registerItemRef: () => l.dG,
+    registerDragHandleRef: () => l.dG,
     manageFocusOnReorder: Chunk231338.dG,
     manageFocusOnDelete: Chunk231338.dG
   };
 
 function s() {
-  let e = Chunk473749.useContext(o);
-  return null != module ? module : c
+  let e = i.useContext(o);
+  return null != e ? e : c
 }
 
 function u(e) {

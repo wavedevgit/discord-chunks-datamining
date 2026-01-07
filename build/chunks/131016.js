@@ -34,16 +34,16 @@ function l(e) {
 }
 
 function c() {
-  let e, t = Chunk660662.mH[Math.floor(Math.random() * Chunk660662.mH.length)],
-    n = Chunk660662.P$[Math.floor(Math.random() * Chunk660662.P$.length)];
-  if (exports === Chunk522942.m.GRADIENT) {
-    let t = Chunk660662.vK[Math.floor(Math.random() * Chunk660662.vK.length)];
-    e = [exports.start, exports.end]
-  } else e = [Chunk660662.gD[Math.floor(Math.random() * Chunk660662.gD.length)]];
+  let e, t = o.mH[Math.floor(Math.random() * o.mH.length)],
+    n = o.P$[Math.floor(Math.random() * o.P$.length)];
+  if (t === a.m.GRADIENT) {
+    let t = o.vK[Math.floor(Math.random() * o.vK.length)];
+    e = [t.start, t.end]
+  } else e = [o.gD[Math.floor(Math.random() * o.gD.length)]];
   return {
-    fontId: require,
-    effectId: exports,
-    colors: module
+    fontId: n,
+    effectId: t,
+    colors: e
   }
 }
 

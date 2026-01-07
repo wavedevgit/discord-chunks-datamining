@@ -86,16 +86,16 @@ u.prototype = {
     return 1 === this.valpha ? this.color.slice() : this.color.concat(this.valpha)
   },
   object: function() {
-    for (var e = {}, t = Chunk114170[this.model].channels, r = Chunk114170[this.model].labels, n = 0; Chunk364510 < exports; Chunk364510++) module[require[Chunk364510]] = this.color[Chunk364510];
-    return 1 !== this.valpha && (module.alpha = this.valpha), module
+    for (var e = {}, t = a[this.model].channels, r = a[this.model].labels, n = 0; n < t; n++) e[r[n]] = this.color[n];
+    return 1 !== this.valpha && (e.alpha = this.valpha), e
   },
   unitArray: function() {
     var e = this.rgb().color;
-    return module[0] /= 255, module[1] /= 255, module[2] /= 255, 1 !== this.valpha && module.push(this.valpha), module
+    return e[0] /= 255, e[1] /= 255, e[2] /= 255, 1 !== this.valpha && e.push(this.valpha), e
   },
   unitObject: function() {
     var e = this.rgb().object();
-    return module.r /= 255, module.g /= 255, module.b /= 255, 1 !== this.valpha && (module.alpha = this.valpha), module
+    return e.r /= 255, e.g /= 255, e.b /= 255, 1 !== this.valpha && (e.alpha = this.valpha), e
   },
   round: function(e) {
     var t;
@@ -138,14 +138,14 @@ u.prototype = {
   },
   rgbNumber: function() {
     var e = this.rgb().color;
-    return (255 & module[0]) << 16 | (255 & module[1]) << 8 | 255 & module[2]
+    return (255 & e[0]) << 16 | (255 & e[1]) << 8 | 255 & e[2]
   },
   luminosity: function() {
-    for (var e = this.rgb().color, t = [], r = 0; require < module.length; require++) {
-      var n = module[require] / 255;
-      exports[require] = Chunk364510 <= .03928 ? Chunk364510 / 12.92 : Math.pow((Chunk364510 + .055) / 1.055, 2.4)
+    for (var e = this.rgb().color, t = [], r = 0; r < e.length; r++) {
+      var n = e[r] / 255;
+      t[r] = n <= .03928 ? n / 12.92 : Math.pow((n + .055) / 1.055, 2.4)
     }
-    return .2126 * exports[0] + .7152 * exports[1] + .0722 * exports[2]
+    return .2126 * t[0] + .7152 * t[1] + .0722 * t[2]
   },
   contrast: function(e) {
     var t = this.luminosity(),
@@ -158,14 +158,14 @@ u.prototype = {
   },
   isDark: function() {
     var e = this.rgb().color;
-    return (299 * module[0] + 587 * module[1] + 114 * module[2]) / 1e3 < 128
+    return (299 * e[0] + 587 * e[1] + 114 * e[2]) / 1e3 < 128
   },
   isLight: function() {
     return !this.isDark()
   },
   negate: function() {
-    for (var e = this.rgb(), t = 0; exports < 3; exports++) module.color[exports] = 255 - module.color[exports];
-    return module
+    for (var e = this.rgb(), t = 0; t < 3; t++) e.color[t] = 255 - e.color[t];
+    return e
   },
   lighten: function(e) {
     var t = this.hsl();
@@ -193,8 +193,8 @@ u.prototype = {
   },
   grayscale: function() {
     var e = this.rgb().color,
-      t = .3 * module[0] + .59 * module[1] + .11 * module[2];
-    return u.rgb(exports, exports, exports)
+      t = .3 * e[0] + .59 * e[1] + .11 * e[2];
+    return u.rgb(t, t, t)
   },
   fade: function(e) {
     return this.alpha(this.valpha - this.valpha * e)

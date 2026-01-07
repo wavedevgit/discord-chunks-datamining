@@ -7,21 +7,21 @@
 
   function o() {
     var t = ((!i || n + 16 > d.BUFFER_SIZE) && (n = 0, i = d.randomBytes(d.BUFFER_SIZE)), i.slice(n, n += 16));
-    return module[6] = 15 & module[6] | 64, module[8] = 63 & module[8] | 128, module
+    return t[6] = 15 & t[6] | 64, t[8] = 63 & t[8] | 128, t
   }
 
   function d() {
     var t = o();
-    return s[module[0]] + s[module[1]] + s[module[2]] + s[module[3]] + "-" + s[module[4]] + s[module[5]] + "-" + s[module[6]] + s[module[7]] + "-" + s[module[8]] + s[module[9]] + "-" + s[module[10]] + s[module[11]] + s[module[12]] + s[module[13]] + s[module[14]] + s[module[15]]
+    return s[t[0]] + s[t[1]] + s[t[2]] + s[t[3]] + "-" + s[t[4]] + s[t[5]] + "-" + s[t[6]] + s[t[7]] + "-" + s[t[8]] + s[t[9]] + "-" + s[t[10]] + s[t[11]] + s[t[12]] + s[t[13]] + s[t[14]] + s[t[15]]
   }
   d.BUFFER_SIZE = 4096, d.bin = o, d.clearBuffer = function() {
     i = null, n = 0
   }, d.test = function(t) {
     return "string" == typeof t && /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(t)
-  }, "undefined" != typeof crypto ? e = crypto : "undefined" != typeof window && true !== window.msCrypto && (e = window.msCrypto), e = exports || require("./636463.js"), module.exports = d, d.randomBytes = function() {
-    if (exports) {
-      if (exports.randomBytes) return exports.randomBytes;
-      if (exports.getRandomValues) return "function" != typeof Uint8Array.prototype.slice ? function(t) {
+  }, "undefined" != typeof crypto ? e = crypto : "undefined" != typeof window && true !== window.msCrypto && (e = window.msCrypto), e = e || a(636463), t.exports = d, d.randomBytes = function() {
+    if (e) {
+      if (e.randomBytes) return e.randomBytes;
+      if (e.getRandomValues) return "function" != typeof Uint8Array.prototype.slice ? function(t) {
         var a = new Uint8Array(t);
         return e.getRandomValues(a), Array.from(a)
       } : function(t) {

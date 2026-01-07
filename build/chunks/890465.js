@@ -9,7 +9,7 @@ class r {
     try {
       this.task && this.task()
     } catch (e) {
-      this.onError(module)
+      this.onError(e)
     } finally {
       this.task = null, this.release(this)
     }

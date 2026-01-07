@@ -22,22 +22,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk280533 = require("./280533.js");
 
 function g() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk280533.header,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk280533.headerTitle,
-      children: [(0, Chunk54381.jsx)(Chunk777288.Z, {
+  return (0, r.jsxs)("div", {
+    className: f.header,
+    children: [(0, r.jsxs)("div", {
+      className: f.headerTitle,
+      children: [(0, r.jsx)(c.Z, {
         width: 16,
         height: 16
-      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, r.jsx)(s.Heading, {
         variant: "heading-md/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.cf5lgh)
+        children: m.intl.string(m.t.cf5lgh)
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsx)(Chunk481060.M2$, {
+    }), (0, r.jsx)("div", {
+      children: (0, r.jsx)(s.M2$, {
         shortcut: "esc",
-        keyClassName: Chunk280533.keyComboInner,
-        className: Chunk280533.keyComboContainer
+        keyClassName: f.keyComboInner,
+        className: f.keyComboContainer
       })
     })]
   })

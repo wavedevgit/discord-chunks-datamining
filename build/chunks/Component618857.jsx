@@ -60,7 +60,7 @@ function h(e) {
 }
 
 function m() {
-  (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.MXsMRk), Chunk481060.ToastType.SUCCESS))
+  (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.MXsMRk), a.ToastType.SUCCESS))
 }
 
 function g(e) {
@@ -70,7 +70,7 @@ function g(e) {
 }
 
 function b() {
-  (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["JF/LWn"]), Chunk481060.ToastType.SUCCESS))
+  (0, a.showToast)((0, a.createToast)(d.intl.string(d.t["JF/LWn"]), a.ToastType.SUCCESS))
 }
 
 function C(e) {

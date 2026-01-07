@@ -17,17 +17,17 @@ function o(e) {
 let s = {
     binds: ["mod+plus"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk857595.cq)(o(1)), false)
+    action: () => ((0, r.cq)(o(1)), false)
   },
   l = {
     binds: ["mod+minus"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk857595.cq)(o(false)), false)
+    action: () => ((0, r.cq)(o(false)), false)
   },
   c = {
     binds: ["mod+0"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk857595.cq)(Chunk981631.yqN.ZOOM_DEFAULT), false)
+    action: () => ((0, r.cq)(a.yqN.ZOOM_DEFAULT), false)
   },
   u = {
     ZOOM_IN: s,

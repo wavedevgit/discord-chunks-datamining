@@ -77,9 +77,7 @@ function A(e) {
     M = (0, p.p)({
       location: "voice_channel_activities"
     });
-  if (D.length + I.length === 0) return null;
-  let L = false;
-  return (0, r.jsxs)(s.Ttm, {
+  return D.length + I.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
     className: w.container,
     children: [(0, r.jsx)(R, {
       channel: a,
@@ -100,7 +98,7 @@ function A(e) {
         members: n,
         activity: l
       } = e;
-      return M && null != l.application_id && N.RI.has(l.application_id) && !L ? (L = true, (0, r.jsxs)(i.Fragment, {
+      return M && null != l.application_id && N.RI.has(l.application_id) ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(E.Z, {
           presenceActivity: l,
           channel: a,
@@ -114,7 +112,7 @@ function A(e) {
           guildId: a.guild_id,
           channelId: a.id
         })]
-      }, "".concat(t, "-with-gifting-breadcrumb"))) : (0, r.jsx)(E.Z, {
+      }, "".concat(t, "-with-gifting-breadcrumb")) : (0, r.jsx)(E.Z, {
         presenceActivity: l,
         channel: a,
         members: n,

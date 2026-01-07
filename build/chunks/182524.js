@@ -8,7 +8,7 @@ let Chunk820401 = require("./820401.js"),
   i = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".split(""),
   a = (() => {
     let e = new Uint8Array(4);
-    return !((new Uint32Array(module.buffer)[0] = 1) & module[0])
+    return !((new Uint32Array(e.buffer)[0] = 1) & e[0])
   })();
 
 function o(e) {

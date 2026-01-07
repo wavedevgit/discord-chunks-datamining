@@ -243,15 +243,15 @@ var D = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "
 
 function x() {
   var e = new Date,
-    t = [w(module.getHours()), w(module.getMinutes()), w(module.getSeconds())].join(":");
-  return [module.getDate(), D[module.getMonth()], exports].join(" ")
+    t = [w(e.getHours()), w(e.getMinutes()), w(e.getSeconds())].join(":");
+  return [e.getDate(), D[e.getMonth()], t].join(" ")
 }
 
 function L(e, t) {
   return Object.prototype.hasOwnProperty.call(e, t)
 }
 exports.log = function() {
-  console.log("%s - %s", x(), exports.format.apply(exports, arguments))
+  console.log("%s - %s", x(), t.format.apply(t, arguments))
 }, exports.inherits = require("./689118.js"), exports._extend = function(e, t) {
   if (!t || !C(t)) return e;
   for (var n = Object.keys(t), r = n.length; r--;) e[n[r]] = t[n[r]];

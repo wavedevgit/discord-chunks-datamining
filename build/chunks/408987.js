@@ -26,7 +26,7 @@ let s = {
     })
   },
   hideGuildTemplatePromotionTooltip() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE"
     })
   }

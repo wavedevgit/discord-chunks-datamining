@@ -89,8 +89,8 @@ function y(e) {
 }
 
 function O() {
-  let e = (0, Chunk564756.Z)();
-  return (0, Chunk12532.Z)(module).map(e => ({
+  let e = (0, p.Z)();
+  return (0, f.Z)(e).map(e => ({
     slide: e,
     icon: b[e]
   }))

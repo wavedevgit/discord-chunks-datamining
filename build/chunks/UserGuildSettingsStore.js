@@ -205,7 +205,7 @@ function q(e) {
 
 function Q() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  return module instanceof Array ? a().keyBy(module, "channel_id") : module
+  return e instanceof Array ? a().keyBy(e, "channel_id") : e
 }
 
 function X(e) {
@@ -538,7 +538,7 @@ class e_ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getAddedToMessages() {
     var e;
-    return null != (e = j[M]) ? module : U
+    return null != (e = j[M]) ? e : U
   }
   get accountNotificationSettings() {
     return P

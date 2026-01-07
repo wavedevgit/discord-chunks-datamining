@@ -18,60 +18,60 @@ let u = "/users/@me/debug/consumables/",
   };
 
 function p() {
-  let e, [t, n] = (0, Chunk473749.useState)([]),
-    [p, f] = (0, Chunk473749.useState)(null),
-    [h, x] = (0, Chunk473749.useState)(false);
-  return (0, Chunk473749.useEffect)(() => ((async () => {
+  let e, [t, n] = (0, r.useState)([]),
+    [p, f] = (0, r.useState)(null),
+    [h, x] = (0, r.useState)(false);
+  return (0, r.useEffect)(() => ((async () => {
     try {
-      let e = (await Chunk544891.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
-      require(module)
+      let e = (await i.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
+      n(e)
     } catch (e) {
       f("Failed to fetch entitlements")
     }
   })(), () => {
-    require([]), f(null)
-  }), []), (0, Chunk54381.jsx)("div", {
-    className: Chunk462914.panel,
-    children: null != p ? (0, Chunk54381.jsx)(Chunk481060.Text, {
+    n([]), f(null)
+  }), []), (0, a.jsx)("div", {
+    className: d.panel,
+    children: null != p ? (0, a.jsx)(s.Text, {
       variant: "text-md/normal",
       children: p
-    }) : 0 === exports.length ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    }) : 0 === t.length ? (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(s.Text, {
         variant: "text-lg/bold",
         children: "Create Entitlements"
-      }), (0, Chunk54381.jsx)(Chunk755721.zx, {
-        onClick: (e = Chunk317951.D1, async () => {
+      }), (0, a.jsx)(l.zx, {
+        onClick: (e = o.D1, async () => {
           x(true);
           try {
-            let a = await Chunk544891.tn.post({
+            let a = await i.tn.post({
                 url: u,
                 query: {
-                  sku_id: module
+                  sku_id: e
                 },
                 rejectWithError: true
               }),
-              r = new Chunk959546.Z(Chunk54381.body.entitlement);
-            require([...exports, Chunk473749])
+              r = new c.Z(a.body.entitlement);
+            n([...t, r])
           } catch (e) {
             f("Failed to create entitlement")
           } finally {
             x(false)
           }
         }),
-        className: Chunk462914.button,
-        look: Chunk755721.iL.OUTLINED,
-        color: Chunk755721.Tt.PRIMARY,
+        className: d.button,
+        look: l.iL.OUTLINED,
+        color: l.Tt.PRIMARY,
         children: "Create Confetti Entitlement"
-      }), h && (0, Chunk54381.jsx)(Chunk481060.$jN, {})]
-    }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk462914.title,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), h && (0, a.jsx)(s.$jN, {})]
+    }) : (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsxs)("div", {
+        className: d.title,
+        children: [(0, a.jsx)(s.Text, {
           variant: "text-lg/bold",
           children: "Existing Entitlements"
-        }), (0, Chunk54381.jsx)(Chunk481060.hh5, {})]
-      }), (0, Chunk54381.jsx)("ul", {
-        children: exports.map(e => (0, a.jsx)("li", {
+        }), (0, a.jsx)(s.hh5, {})]
+      }), (0, a.jsx)("ul", {
+        children: t.map(e => (0, a.jsx)("li", {
           children: (0, a.jsxs)("div", {
             children: [(0, a.jsx)(s.Text, {
               selectable: true,

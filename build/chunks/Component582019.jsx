@@ -14,17 +14,17 @@ let a = {
     }
   },
   o = () => {
-    let e = Chunk473749.useRef(null),
-      t = Chunk473749.useCallback(() => {
-        null != module.current && module.current.play("all")
+    let e = i.useRef(null),
+      t = i.useCallback(() => {
+        null != e.current && e.current.play("all")
       }, []),
-      o = Chunk473749.useCallback(() => {
-        null != module.current && module.current.play("all")
+      o = i.useCallback(() => {
+        null != e.current && e.current.play("all")
       }, []),
-      c = Chunk473749.useCallback(() => {
-        null != module.current && module.current.stopIfPlaying("all")
+      c = i.useCallback(() => {
+        null != e.current && e.current.stopIfPlaying("all")
       }, []),
-      s = Chunk473749.useCallback(t => {
+      s = i.useCallback(t => {
         var i, o;
         return (0, r.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -60,18 +60,18 @@ let a = {
       }, []);
     return {
       events: {
-        onClick: exports,
+        onClick: t,
         onMouseEnter: o,
         onMouseLeave: c
       },
-      play: exports,
-      getDuration: Chunk473749.useCallback(() => {
+      play: t,
+      getDuration: i.useCallback(() => {
         var t;
-        return null == (t = module.current) ? true : exports.getDuration()
+        return null == (t = e.current) ? true : t.getDuration()
       }, []),
-      getCurrentFrame: Chunk473749.useCallback(() => {
+      getCurrentFrame: i.useCallback(() => {
         var t, n;
-        return null != (n = null == (t = module.current) ? true : exports.getCurrentFrame()) ? require : null
+        return null != (n = null == (t = e.current) ? true : t.getCurrentFrame()) ? n : null
       }, []),
       Component: s
     }

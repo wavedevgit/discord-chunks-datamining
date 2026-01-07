@@ -18,14 +18,14 @@ function c() {
   let {
     hovered: e,
     isAppFocused: t = true
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, [n, c] = Chunk473749.useState(() => l(Date.now())), u = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), d = !exports || u && !module, f = d ? 15 * Chunk70956.Z.Millis.SECOND : Chunk70956.Z.Millis.SECOND;
-  return Chunk473749.useEffect(() => {
-    let e = new Chunk846519.Xp;
-    return module.start(f, () => {
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, [n, c] = r.useState(() => l(Date.now())), u = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), d = !t || u && !e, f = d ? 15 * s.Z.Millis.SECOND : s.Z.Millis.SECOND;
+  return r.useEffect(() => {
+    let e = new a.Xp;
+    return e.start(f, () => {
       c(l(Date.now()))
-    }), () => module.stop()
+    }), () => e.stop()
   }, [f]), {
-    now: require,
+    now: n,
     slowTickMode: d
   }
 }

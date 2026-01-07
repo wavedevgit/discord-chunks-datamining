@@ -214,7 +214,7 @@ function C(e, t, n) {
 }
 
 function A() {
-  return Chunk473749.useEffect(() => {
-    Chunk675478.DZ.loadIfNecessary()
-  }, []), (0, Chunk442837.e7)([Chunk178106.Z], () => Chunk178106.Z.frecentlyPlayedSounds)
+  return r.useEffect(() => {
+    o.DZ.loadIfNecessary()
+  }, []), (0, i.e7)([p.Z], () => p.Z.frecentlyPlayedSounds)
 }

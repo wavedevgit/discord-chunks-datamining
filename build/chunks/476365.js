@@ -40,17 +40,17 @@ let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
   m = function() {
     var e, t, n, a, o;
     let s = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
-      l = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.MODAL_BACKGROUND),
-      c = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.TEXT_STRONG),
-      u = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.INPUT_BACKGROUND_DEFAULT),
-      d = null != (e = Chunk351402.theme) ? module : "flat",
-      f = null != (t = Chunk351402.colorText) ? exports : Chunk947673.hex(),
-      p = null != (n = Chunk351402.colorBackground) ? require : Chunk122289.hex(),
-      _ = null != (a = Chunk351402.inputBackgroundColor) ? Chunk493773 : Chunk720452.hex(),
-      m = null != (o = Chunk351402.tabBackgroundColor) ? Chunk710845 : Chunk720452.hex();
+      l = (0, i.dQu)(i.TVs.colors.MODAL_BACKGROUND),
+      c = (0, i.dQu)(i.TVs.colors.TEXT_STRONG),
+      u = (0, i.dQu)(i.TVs.colors.INPUT_BACKGROUND_DEFAULT),
+      d = null != (e = s.theme) ? e : "flat",
+      f = null != (t = s.colorText) ? t : c.hex(),
+      p = null != (n = s.colorBackground) ? n : l.hex(),
+      _ = null != (a = s.inputBackgroundColor) ? a : u.hex(),
+      m = null != (o = s.tabBackgroundColor) ? o : u.hex();
     return {
-      elementsAppearance: Chunk473749.useMemo(() => ({
-        theme: Chunk637286,
+      elementsAppearance: r.useMemo(() => ({
+        theme: d,
         variables: {
           colorText: f,
           colorBackground: p
@@ -63,9 +63,9 @@ let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
             backgroundColor: m
           }
         }
-      }), [Chunk637286, f, p, _, m]),
+      }), [d, f, p, _, m]),
       elementsAppearanceOptions: {
-        theme: Chunk637286,
+        theme: d,
         colorText: f,
         colorBackground: p,
         inputBackgroundColor: _,

@@ -2,14 +2,14 @@
 /** chunk id: 388032, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  getAvailableLocales: () => Chunk424395.u5,
-  getLanguages: () => Chunk424395.Vb,
+  getAvailableLocales: () => c.u5,
+  getLanguages: () => c.Vb,
   getSystemLocale: () => m,
   initialLocale: () => g,
-  international: () => Chunk589531.Z,
+  international: () => u.Z,
   intl: () => E,
   systemLocale: () => h,
-  t: () => Chunk253185.k,
+  t: () => l.k,
   useSyncMessages: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),

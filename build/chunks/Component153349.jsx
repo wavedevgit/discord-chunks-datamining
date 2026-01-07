@@ -202,18 +202,18 @@ let w = Chunk473749.memo(function(e) {
     })
   }),
   L = Chunk473749.memo(function() {
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk200537.emptyStateContainer,
-      children: [(0, Chunk54381.jsx)(Chunk618896.Z, {}), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk200537.emptyStateTitle,
+    return (0, r.jsxs)("div", {
+      className: T.emptyStateContainer,
+      children: [(0, r.jsx)(E.Z, {}), (0, r.jsx)(u.Text, {
+        className: T.emptyStateTitle,
         variant: "text-lg/semibold",
         color: "text-strong",
-        children: Chunk388032.intl.string(Chunk388032.t["7R24mX"])
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk200537.emptyStateBody,
+        children: P.intl.string(P.t["7R24mX"])
+      }), (0, r.jsx)(u.Text, {
+        className: T.emptyStateBody,
         variant: "text-sm/normal",
         color: "text-default",
-        children: Chunk388032.intl.string(Chunk388032.t.Rpr2s0)
+        children: P.intl.string(P.t.Rpr2s0)
       })]
     })
   });

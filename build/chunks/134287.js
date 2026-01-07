@@ -9,5 +9,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.AUTHORIZED_APPS_LIST_SETTING, {
   Component: Chunk795594.Wg,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["f6kk+r"])]
+  useSearchTerms: () => [u.intl.string(u.t["f6kk+r"])]
 })

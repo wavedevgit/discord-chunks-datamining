@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 545724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,12 +45,12 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = function(e) {
+let m = function(e) {
   let {
     index: t,
     children: l,
-    user: h,
-    channel: m,
+    user: m,
+    channel: h,
     onClick: b,
     isFocused: _,
     isActive: E,
@@ -62,7 +62,7 @@ let h = function(e) {
     I(false)
   };
   return (0, r.jsx)(s.mh, {
-    id: m.id,
+    id: h.id,
     children: e => (0, r.jsx)(c.tEY, {
       offset: {
         left: false,
@@ -74,12 +74,12 @@ let h = function(e) {
           [p.firstItem]: 0 === t
         }),
         onContextMenu: e => {
-          null != h && (S(true), (0, u.jW)(e, async () => {
+          null != m && (S(true), (0, u.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("69220"), n.e("18030")]).then(n.bind(n, 881351));
             return t => (0, r.jsx)(e, g(f({}, t), {
-              user: h
+              user: m
             }))
           }, {
             onClose: () => {

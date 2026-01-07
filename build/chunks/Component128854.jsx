@@ -28,9 +28,9 @@ function o(e, t) {
 let s = Chunk473749.createContext(null);
 
 function l() {
-  let e = Chunk473749.useContext(s);
-  if (null == module) throw Error("Could not find context for useMessageAccessoriesComponentContext.");
-  return module
+  let e = i.useContext(s);
+  if (null == e) throw Error("Could not find context for useMessageAccessoriesComponentContext.");
+  return e
 }
 
 function c(e) {

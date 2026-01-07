@@ -2,8 +2,8 @@
 /** chunk id: 709054, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  DISCORD_EPOCH: () => Chunk67423.cj,
-  SnowflakeSequence: () => Chunk67423.Tk,
+  DISCORD_EPOCH: () => a.cj,
+  SnowflakeSequence: () => a.Tk,
   default: () => s
 });
 var Chunk392711 = require("./392711.js"),

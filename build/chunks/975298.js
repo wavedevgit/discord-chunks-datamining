@@ -120,30 +120,30 @@ function T() {
     forceFetch: false,
     excludeReverseTrial: false,
     excludeReverseTrialFromCountdown: false
-  }, i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), a = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getFractionalPremium({
-    excludeReverseTrial: exports
-  })), s = (0, Chunk442837.e7)([Chunk580130.Z], () => Chunk580130.Z.fetchedAllEntitlements), l = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getUnactivatedFractionalPremiumUnits()), m = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), [h, E] = Chunk473749.useState(S({
-    isFetching: I(module, Chunk512722) || Chunk580130.Z.fetchingAllEntitlements,
+  }, i = (0, c.e7)([f.default], () => f.default.getCurrentUser()), a = (0, c.Wu)([_.Z], () => _.Z.getFractionalPremium({
+    excludeReverseTrial: t
+  })), s = (0, c.e7)([_.Z], () => _.Z.fetchedAllEntitlements), l = (0, c.Wu)([_.Z], () => _.Z.getUnactivatedFractionalPremiumUnits()), m = (0, c.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), [h, E] = r.useState(S({
+    isFetching: I(e, i) || _.Z.fetchingAllEntitlements,
     entitlements: a,
     unactivatedFractionalPremiumUnits: l,
-    currentUser: Chunk512722,
-    premiumSubscription: Chunk122289,
-    fetchedAllEntitlements: Chunk913527,
-    excludeReverseTrialFromCountdown: require
+    currentUser: i,
+    premiumSubscription: m,
+    fetchedAllEntitlements: s,
+    excludeReverseTrialFromCountdown: n
   }));
-  return (0, Chunk493773.ZP)(() => {
-    I(module, Chunk512722) && (0, Chunk496929.p0)({
-      entitlementType: Chunk981631.qc2.FRACTIONAL_REDEMPTION
+  return (0, d.ZP)(() => {
+    I(e, i) && (0, u.p0)({
+      entitlementType: g.qc2.FRACTIONAL_REDEMPTION
     })
-  }), Chunk473749.useEffect(() => {
+  }), r.useEffect(() => {
     let e = S({
       entitlements: a,
       unactivatedFractionalPremiumUnits: l,
-      currentUser: Chunk512722,
-      premiumSubscription: Chunk122289,
-      fetchedAllEntitlements: Chunk913527,
-      excludeReverseTrialFromCountdown: require
+      currentUser: i,
+      premiumSubscription: m,
+      fetchedAllEntitlements: s,
+      excludeReverseTrialFromCountdown: n
     });
-    Chunk474936(t => (0, o.isEqual)(t, e) ? t : e)
-  }, [Chunk512722, a, Chunk122289, l, Chunk913527, require]), Chunk74538
+    E(t => (0, o.isEqual)(t, e) ? t : e)
+  }, [i, a, m, l, s, n]), h
 }

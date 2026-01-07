@@ -135,55 +135,55 @@ let T = [{
   }];
 
 function N() {
-  let [e, t] = Chunk473749.useState(""), n = Chunk473749.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk473749.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk473749.useState(true), h = Chunk658722.find(e => e.key === c), {
+  let [e, t] = r.useState(""), n = r.useRef(null), i = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => i.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [i, e]), [c, d] = r.useState(true), h = s.find(e => e.key === c), {
     TabBar: x,
     renderSelectedTab: v
-  } = (0, Chunk621060.ZP)({
+  } = (0, y.ZP)({
     tabs: O
-  }, []), N = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk473749.useCallback(e => {
+  }, []), N = (0, u.e7)([b.Z], () => b.Z.trackTriggers), P = r.useCallback(e => {
     f.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
   }, []), w = N ? "Stop Tracking" : "Start Tracking";
-  return (0, Chunk54381.jsxs)("div", {
-    ref: require,
-    className: l()(Chunk663618.panel, Chunk865362.panel),
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk865362.toolbar,
-      children: [(0, Chunk54381.jsx)(Chunk681715.u, {
+  return (0, a.jsxs)("div", {
+    ref: n,
+    className: l()(E.panel, S.panel),
+    children: [(0, a.jsxs)("div", {
+      className: S.toolbar,
+      children: [(0, a.jsx)(m.u, {
         text: w,
-        children: (0, Chunk54381.jsx)(Chunk481060.hU, {
+        children: (0, a.jsx)(p.hU, {
           size: "sm",
           variant: N ? "active" : "primary",
-          icon: N ? Chunk481060.fpf : Chunk481060.o1U,
+          icon: N ? p.fpf : p.o1U,
           "aria-label": w,
           onClick: () => P(!N)
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.E1j, {
+      }), (0, a.jsx)(p.E1j, {
         size: "sm",
-        query: module,
-        onChange: exports,
-        onClear: () => exports(""),
+        query: e,
+        onChange: t,
+        onClear: () => t(""),
         placeholder: "Search by experiment id"
-      }), (0, Chunk54381.jsx)(Chunk481060.hU, {
+      }), (0, a.jsx)(p.hU, {
         size: "sm",
         variant: "icon-only",
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicb),
-        icon: Chunk481060.XHJ,
-        onClick: Chunk31336.Zw
+        "aria-label": _.intl.string(_.t.VkKicb),
+        icon: p.XHJ,
+        onClick: g.Zw
       })]
-    }), (0, Chunk54381.jsx)(Chunk681619.Z, {
+    }), (0, a.jsx)(C.Z, {
       columns: T,
-      data: Chunk658722,
-      selectedRowKey: Chunk913527,
+      data: s,
+      selectedRowKey: c,
       onClickRow: e => d(e.key)
-    }), null != Chunk665149 && (0, Chunk54381.jsxs)(Chunk975775.Z, {
-      className: Chunk865362.subPanel,
+    }), null != h && (0, a.jsxs)(j.Z, {
+      className: S.subPanel,
       minHeight: 100,
-      initialHeight: null != require.current ? require.current.clientHeight / 2 : 300,
-      children: [(0, Chunk54381.jsx)(Chunk55935, {}), Chunk257785({
-        loggedTrigger: Chunk665149
+      initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
+      children: [(0, a.jsx)(x, {}), v({
+        loggedTrigger: h
       })]
     })]
   })

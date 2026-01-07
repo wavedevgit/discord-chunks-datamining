@@ -92,12 +92,12 @@ class L extends Chunk473749.PureComponent {
       user: e,
       streamApplication: t
     } = this.props;
-    Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, {
+    y.default.track(T.rMx.OPEN_POPOUT, {
       type: "Stream Preview",
-      other_user_id: module.id,
-      application_id: null != exports ? exports.id : null,
-      application_name: null != exports ? exports.name : null,
-      game_id: null != exports ? exports.id : null,
+      other_user_id: e.id,
+      application_id: null != t ? t.id : null,
+      application_name: null != t ? t.name : null,
+      game_id: null != t ? t.id : null,
       is_streaming: true
     })
   }
@@ -135,40 +135,40 @@ class L extends Chunk473749.PureComponent {
       onAction: a,
       hideTip: s
     } = this.props;
-    return null == require ? null : (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk724506.streamPreviewWrapper, {
-        [Chunk724506.mounted]: Chunk473749
+    return null == n ? null : (0, r.jsx)("div", {
+      className: o()(A.streamPreviewWrapper, {
+        [A.mounted]: i
       }),
-      children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk724506.streamPreview,
-        children: [this.renderPreview(require), (0, Chunk54381.jsxs)("div", {
-          className: Chunk724506.body,
-          children: [null != module ? (0, Chunk54381.jsx)(Chunk350922.Z, {
+      children: (0, r.jsxs)("div", {
+        className: A.streamPreview,
+        children: [this.renderPreview(n), (0, r.jsxs)("div", {
+          className: A.body,
+          children: [null != e ? (0, r.jsx)(c.Z, {
             hideHeader: true,
-            type: Chunk350922.P.STREAM_PREVIEW,
-            activity: module,
-            user: exports,
-            guildId: require.guildId,
-            channelId: require.channelId,
+            type: c.P.STREAM_PREVIEW,
+            activity: e,
+            user: t,
+            guildId: n.guildId,
+            channelId: n.channelId,
             analyticsParams: {
               location: {
-                page: Chunk981631.ZY5.GO_LIVE_MODAL,
-                section: Chunk981631.jXE.STREAM_VIEWER_POPOUT
+                page: T.ZY5.GO_LIVE_MODAL,
+                section: T.jXE.STREAM_VIEWER_POPOUT
               }
             },
-            onAction: Chunk120356
-          }) : (0, Chunk54381.jsx)(Chunk850827.Z, {
-            type: Chunk350922.P.STREAM_PREVIEW,
-            applicationStream: require,
-            user: exports,
-            guildId: require.guildId,
-            channelId: require.channelId,
-            className: Chunk724506.activityActions,
-            onAction: Chunk120356
-          }), !Chunk442837 && (0, Chunk54381.jsx)(Chunk576855.Z, {
-            type: Chunk576855.Z.Types.INLINE,
-            className: Chunk724506.protip,
-            children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t.YRdw70) : Chunk388032.intl.string(Chunk388032.t.CCTgbF)
+            onAction: a
+          }) : (0, r.jsx)(d.Z, {
+            type: c.P.STREAM_PREVIEW,
+            applicationStream: n,
+            user: t,
+            guildId: n.guildId,
+            channelId: n.channelId,
+            className: A.activityActions,
+            onAction: a
+          }), !s && (0, r.jsx)(f.Z, {
+            type: f.Z.Types.INLINE,
+            className: A.protip,
+            children: __OVERLAY__ ? C.intl.string(C.t.YRdw70) : C.intl.string(C.t.CCTgbF)
           })]
         })]
       })

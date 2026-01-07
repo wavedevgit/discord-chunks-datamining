@@ -176,13 +176,13 @@ e4.displayName = "ChannelTextAreaForm";
 class e7 extends Chunk473749.PureComponent {
   focusEditor() {
     var e;
-    null == (e = this.editorRef) || module.focus()
+    null == (e = this.editorRef) || e.focus()
   }
   componentDidMount() {
-    Chunk703558.Z.addChangeListener(this.draftDidChange)
+    ej.Z.addChangeListener(this.draftDidChange)
   }
   componentWillUnmount() {
-    Chunk703558.Z.removeChangeListener(this.draftDidChange)
+    ej.Z.removeChangeListener(this.draftDidChange)
   }
   componentDidUpdate(e, t) {
     let {
@@ -254,62 +254,62 @@ class e7 extends Chunk473749.PureComponent {
       announcementComposerEnabled: g
     } = this.props, {
       contentWarningProps: b
-    } = this.state, C = module.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && Chunk144144 ? (0, Chunk54381.jsx)(Chunk190210.Z, {
+    } = this.state, C = e.type === eK.d4z.GUILD_ANNOUNCEMENT && g ? (0, i.jsx)(D.Z, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
-      focused: exports,
-      className: Chunk978966.channelTextArea,
-      channel: module,
-      placeholder: Chunk106351,
-      accessibilityLabel: Chunk95015,
-      pendingReply: Chunk512722,
-      type: Chunk541716.Ie.CREATE_ANNOUNCEMENT_POST,
+      focused: t,
+      className: eJ.channelTextArea,
+      channel: e,
+      placeholder: u,
+      accessibilityLabel: d,
+      pendingReply: o,
+      type: M.Ie.CREATE_ANNOUNCEMENT_POST,
       onChange: this.handleTextareaChange,
       onSubmit: this.handleSendMessage,
-      onResize: Chunk120356,
-      onFocus: Chunk473749,
-      onBlur: require,
+      onResize: l,
+      onFocus: r,
+      onBlur: n,
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: Chunk127654.d,
+      promptToUpload: ek.d,
       highlighted: a,
       setEditorRef: e => this.editorRef = e
-    }) : (0, Chunk54381.jsx)(Chunk893718.ZP, {
+    }) : (0, i.jsx)(U.ZP, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
-      focused: exports,
-      className: Chunk978966.channelTextArea,
-      channel: module,
-      placeholder: Chunk106351,
-      accessibilityLabel: Chunk95015,
-      pendingReply: Chunk512722,
-      type: Chunk873546,
+      focused: t,
+      className: eJ.channelTextArea,
+      channel: e,
+      placeholder: u,
+      accessibilityLabel: d,
+      pendingReply: o,
+      type: c,
       onChange: this.handleTextareaChange,
       onSubmit: this.handleSendMessage,
-      onResize: Chunk120356,
-      onFocus: Chunk473749,
-      onBlur: require,
+      onResize: l,
+      onFocus: r,
+      onBlur: n,
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: Chunk127654.d,
+      promptToUpload: ek.d,
       highlighted: a,
       setEditorRef: e => this.editorRef = e,
-      pendingScheduledMessage: Chunk904245
+      pendingScheduledMessage: m
     });
-    return (0, Chunk54381.jsx)(Chunk481060.yRy, {
+    return (0, i.jsx)(f.yRy, {
       targetElementRef: this.props.refInstance,
       position: "top",
       onRequestClose: () => {
         var e;
-        null == Chunk166459 || null == (e = Chunk166459.onCancel) || module.call(Chunk166459), this.setState({
+        null == b || null == (e = b.onCancel) || e.call(b), this.setState({
           contentWarningProps: null
         })
       },
-      shouldShow: null != Chunk166459,
+      shouldShow: null != b,
       renderPopout: e => {
         let {
           closePopout: t
@@ -318,12 +318,12 @@ class e7 extends Chunk473749.PureComponent {
           onClose: t
         }, b))
       },
-      children: () => Chunk430742 ? (0, Chunk54381.jsx)(Chunk481060.UkV, {
-        isShaking: Chunk442837 > 0,
-        intensity: Chunk442837,
-        className: Chunk978966.shaker,
-        children: Chunk738619
-      }) : Chunk738619
+      children: () => h ? (0, i.jsx)(f.UkV, {
+        isShaking: p > 0,
+        intensity: p,
+        className: eJ.shaker,
+        children: C
+      }) : C
     })
   }
   constructor(...e) {
@@ -627,13 +627,13 @@ class e8 extends Chunk473749.PureComponent {
     } : null
   }
   componentDidMount() {
-    Chunk585483.S.subscribe(Chunk981631.CkL.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
+    eR.S.subscribe(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
   }
   componentDidUpdate(e) {
     (this.props.isEditing !== e.isEditing || this.props.hasModalOpen !== e.hasModalOpen) && (this.props.isEditing || this.props.hasModalOpen ? this.handleInputBlur() : this.handleInputFocus())
   }
   componentWillUnmount() {
-    Chunk585483.S.unsubscribe(Chunk981631.CkL.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
+    eR.S.unsubscribe(eK.CkL.FOCUS_CHANNEL_TEXT_AREA, this.handleRequestFocus)
   }
   render() {
     var e;
@@ -665,130 +665,130 @@ class e8 extends Chunk473749.PureComponent {
         textAreaFocused: T,
         textAreaHighlighted: N
       } = this.state,
-      A = Chunk95015 === Chunk541716.Ie.SIDEBAR;
-    t = Chunk667204 && require.type === Chunk981631.d4z.GUILD_VOICE ? Chunk388032.t.pnnyFZ : Chunk667204 && require.type === Chunk981631.d4z.GUILD_STAGE_VOICE ? Chunk388032.t.YInSkq : Chunk106351.T.THREADS.has(require.type) ? Chunk388032.t["OkzL+Q"] : Chunk388032.t.UbNmGc;
-    let w = (0, Chunk54381.jsx)("div", {
-        className: Chunk978966.channelBottomBarArea,
-        children: (0, Chunk54381.jsx)(Chunk685722.Z, {})
+      A = d === M.Ie.SIDEBAR;
+    t = A && n.type === eK.d4z.GUILD_VOICE ? eX.t.pnnyFZ : A && n.type === eK.d4z.GUILD_STAGE_VOICE ? eX.t.YInSkq : u.T.THREADS.has(n.type) ? eX.t["OkzL+Q"] : eX.t.UbNmGc;
+    let w = (0, i.jsx)("div", {
+        className: eJ.channelBottomBarArea,
+        children: (0, i.jsx)(eG.Z, {})
       }),
-      R = (0, Chunk54381.jsx)("div", {
-        className: Chunk978966.channelBottomBarArea,
-        children: (0, Chunk54381.jsx)(Chunk155409.Z, {
+      R = (0, i.jsx)("div", {
+        className: eJ.channelBottomBarArea,
+        children: (0, i.jsx)(ey.Z, {
           childRef: this.containerDomRef,
           tutorialId: "writing-messages",
           position: "left",
           offsetX: 75,
-          children: (0, Chunk54381.jsx)(e4, {
+          children: (0, i.jsx)(e4, {
             ref: this.refToChannelTextAreaFormComponent,
             refInstance: this.containerDomRef,
-            focused: Chunk895924,
-            highlighted: Chunk581364,
-            channel: require,
-            guild: Chunk473749,
-            keyboardModeEnabled: Chunk120356,
+            focused: T,
+            highlighted: N,
+            channel: n,
+            guild: r,
+            keyboardModeEnabled: l,
             onFocus: this.handleInputFocus,
             onBlur: this.handleInputBlur,
             onKeyDown: this.handleInputKeyDown,
-            hasModalOpen: Chunk512722,
+            hasModalOpen: o,
             pendingReply: s,
-            threadsAlsoSendToChannel: Chunk873546,
-            chatInputType: Chunk95015,
-            placeholder: Chunk442837,
-            accessibilityLabel: Chunk430742,
-            shakeIntensity: Chunk857595,
-            poggermodeEnabled: Chunk607070,
-            pendingScheduledMessage: Chunk541099,
-            announcementComposerEnabled: Chunk998698
+            threadsAlsoSendToChannel: c,
+            chatInputType: d,
+            placeholder: p,
+            accessibilityLabel: h,
+            shakeIntensity: v,
+            poggermodeEnabled: x,
+            pendingScheduledMessage: j,
+            announcementComposerEnabled: Z
           })
         })
       }),
-      D = Chunk10718 ? Chunk104919 : Chunk752305,
+      D = I ? w : R,
       {
         enabled: L
-      } = Chunk163612.Z.getCurrentConfig({
-        guildId: null == Chunk555573 ? true : Chunk555573.guild_id,
+      } = ev.Z.getCurrentConfig({
+        guildId: null == _ ? true : _.guild_id,
         location: "ChannelChat"
       }),
-      k = Chunk516887 && null != Chunk827498 && null != Chunk555573 && null != Chunk555573.guild_id;
-    return (0, Chunk54381.jsx)(Chunk410575.Z, {
-      page: (0, Chunk934415.mE)(this.props.channel),
-      children: (0, Chunk54381.jsx)(Chunk549006.sW, {
-        children: (0, Chunk54381.jsx)(Chunk146128.BV, {
-          children: (0, Chunk54381.jsxs)(Chunk459273.I3, {
+      k = L && null != S && null != _ && null != _.guild_id;
+    return (0, i.jsx)(y.Z, {
+      page: (0, ew.mE)(this.props.channel),
+      children: (0, i.jsx)(X.sW, {
+        children: (0, i.jsx)(Y.BV, {
+          children: (0, i.jsxs)(eM.I3, {
             ref: this.dispatchGroupRef,
-            children: [(0, Chunk54381.jsx)(Chunk459273.d9, {
-              event: Chunk981631.CkL.TEXTAREA_FOCUS,
+            children: [(0, i.jsx)(eM.d9, {
+              event: eK.CkL.TEXTAREA_FOCUS,
               handler: this.handleInputFocus
-            }), (0, Chunk54381.jsx)(Chunk459273.d9, {
-              event: Chunk981631.CkL.TEXTAREA_BLUR,
+            }), (0, i.jsx)(eM.d9, {
+              event: eK.CkL.TEXTAREA_BLUR,
               handler: this.handleInputBlur
-            }), (0, Chunk54381.jsx)(Chunk459273.d9, {
-              event: Chunk981631.CkL.OPEN_EXPRESSION_PICKER,
+            }), (0, i.jsx)(eM.d9, {
+              event: eK.CkL.OPEN_EXPRESSION_PICKER,
               handler: this.handleOpenExpressionPicker
-            }), (0, Chunk54381.jsx)(Chunk459273.d9, {
-              event: Chunk981631.CkL.OPEN_APP_LAUNCHER,
+            }), (0, i.jsx)(eM.d9, {
+              event: eK.CkL.OPEN_APP_LAUNCHER,
               handler: this.handleOpenAppLauncher
-            }), (0, Chunk54381.jsxs)(e3, {
-              isSidebar: Chunk667204,
-              className: Chunk978966.chatContent,
-              "aria-label": Chunk388032.intl.formatToPlainString(exports, {
-                channelName: require.name
+            }), (0, i.jsxs)(e3, {
+              isSidebar: A,
+              className: eJ.chatContent,
+              "aria-label": eX.intl.formatToPlainString(t, {
+                channelName: n.name
               }),
               onMouseDown: this.handleChatInteract,
               onKeyDown: this.handleKeyDown,
               onFocus: this.handleChatInteract,
-              children: [Chunk974251 && (0, Chunk54381.jsx)(Chunk641861.Z, {
-                recipientUser: Chunk827498,
-                voiceChannel: Chunk555573
-              }), (0, Chunk54381.jsx)(Chunk25007.Z, {
-                channel: require,
-                guild: Chunk473749,
-                narrow: Chunk667204
-              }), (0, Chunk54381.jsxs)(Chunk481060.y5t, {
-                component: (0, Chunk54381.jsx)(Chunk481060.nn4, {
-                  children: (0, Chunk54381.jsx)(Chunk481060.H, {
-                    children: Chunk388032.intl.format(Chunk388032.t.eTzKkx, {
-                      channelName: require.name
+              children: [k && (0, i.jsx)(eq.Z, {
+                recipientUser: S,
+                voiceChannel: _
+              }), (0, i.jsx)(eB.Z, {
+                channel: n,
+                guild: r,
+                narrow: A
+              }), (0, i.jsxs)(f.y5t, {
+                component: (0, i.jsx)(f.nn4, {
+                  children: (0, i.jsx)(f.H, {
+                    children: eX.intl.format(eX.t.eTzKkx, {
+                      channelName: n.name
                     })
                   })
                 }),
-                children: [(0, Chunk54381.jsx)(Chunk400023.Z, {
-                  channel: require,
-                  forceCozy: Chunk367907,
-                  filterAfterTimestamp: Chunk144144,
-                  showingQuarantineBanner: Chunk904245,
-                  typingGradient: Chunk456007
-                }), Chunk367907 ? null : null != (e = this.renderMessageBanner({
-                  channel: require,
-                  showQuarantinedUserBanner: Chunk904245,
-                  guild: Chunk473749,
-                  communicationDisabledUntil: Chunk166459,
-                  showAutomodUserProfileChatBlocker: Chunk499254
-                })) ? module : (0, Chunk54381.jsxs)("form", {
+                children: [(0, i.jsx)(en.Z, {
+                  channel: n,
+                  forceCozy: O,
+                  filterAfterTimestamp: g,
+                  showingQuarantineBanner: m,
+                  typingGradient: P
+                }), O ? null : null != (e = this.renderMessageBanner({
+                  channel: n,
+                  showQuarantinedUserBanner: m,
+                  guild: r,
+                  communicationDisabledUntil: b,
+                  showAutomodUserProfileChatBlocker: E
+                })) ? e : (0, i.jsxs)("form", {
                   ref: this.inputFormRef,
                   onSubmit: e1,
-                  className: a()(Chunk978966.form, {
-                    [Chunk978966.formWithLoadedChatInput]: !Chunk10718
+                  className: a()(eJ.form, {
+                    [eJ.formWithLoadedChatInput]: !I
                   }),
-                  children: [Chunk607070 && (0, Chunk54381.jsx)(Chunk217871.Z, {
-                    channelId: require.id
-                  }), require.isPrivate() ? (0, Chunk54381.jsx)(Chunk199649.Z, {
-                    channel: require,
-                    children: Chunk190210
-                  }) : (0, Chunk54381.jsx)(Chunk1397.Z, {
-                    channel: require,
-                    children: Chunk190210
-                  }), (0, Chunk54381.jsx)(Chunk738619.ZP, {
-                    channel: require,
+                  children: [x && (0, i.jsx)(ea.Z, {
+                    channelId: n.id
+                  }), n.isPrivate() ? (0, i.jsx)(eW.Z, {
+                    channel: n,
+                    children: D
+                  }) : (0, i.jsx)(ez.Z, {
+                    channel: n,
+                    children: D
+                  }), (0, i.jsx)(C.ZP, {
+                    channel: n,
                     isInTextChannel: true
                   })]
-                }), (0, Chunk54381.jsx)(Chunk549006.kw, {})]
+                }), (0, i.jsx)(X.kw, {})]
               })]
             })]
           })
         })
       })
-    }, "messages-".concat(require.id))
+    }, "messages-".concat(n.id))
   }
   constructor(...e) {
     super(...e), eQ(this, "containerDomRef", r.createRef()), eQ(this, "refToChannelTextAreaFormComponent", r.createRef()), eQ(this, "inputFormRef", r.createRef()), eQ(this, "state", {

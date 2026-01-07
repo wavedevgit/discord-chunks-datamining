@@ -12,10 +12,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk407626 = require("./407626.js");
 let o = (0, Chunk509613.ON)(Chunk313789.n.APPEARANCE_ACCESSIBILITY_LINK, {
     useSearchTerms: () => [],
-    Component: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+    Component: () => (0, i.jsx)(l.Text, {
       variant: "text-md/normal",
-      className: Chunk407626.a11yCallout,
-      children: (0, Chunk54381.jsx)(Chunk501348.$w, {})
+      className: a.a11yCallout,
+      children: (0, i.jsx)(r.$w, {})
     })
   }),
   T = (0, Chunk509613.k4)(Chunk313789.n.APPEARANCE_ACCESSIBILITY_LINK_CATEGORY, {

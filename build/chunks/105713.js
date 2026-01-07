@@ -5,7 +5,7 @@
 function r() {
   if (null == Intl.DateTimeFormat) return null;
   let e = Intl.DateTimeFormat();
-  return null == module.resolvedOptions ? null : module.resolvedOptions().timeZone
+  return null == e.resolvedOptions ? null : e.resolvedOptions().timeZone
 }
 require.d(exports, {
   Z: () => r

@@ -61,19 +61,19 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+let I = () => (0, r.jsxs)(o.Kqy, {
     direction: "horizontal",
     gap: 10,
     padding: {
       top: 12,
       bottom: 12
     },
-    className: Chunk12048.header,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    className: b.header,
+    children: [(0, r.jsx)(o.Heading, {
       variant: "display-md",
-      className: Chunk12048.logoHeader,
-      children: (0, Chunk282793.sO)()
-    }), (0, Chunk54381.jsx)(Chunk481060.Cts, {
+      className: b.logoHeader,
+      children: (0, m.sO)()
+    }), (0, r.jsx)(o.Cts, {
       type: "beta",
       variant: "expressive"
     })]

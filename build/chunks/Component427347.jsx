@@ -92,9 +92,9 @@ function v(e) {
 }
 
 function j() {
-  return null == Chunk378364.Z.coachmarkDismissibleContent ? null : (0, Chunk54381.jsx)(v, {
-    dismissibleContent: Chunk378364.Z.coachmarkDismissibleContent,
-    backgroundColor: Chunk378364.Z.coachmarkBackgroundColor,
-    specialTextColor: Chunk378364.Z.coachmarkSpecialTextColor
+  return null == m.Z.coachmarkDismissibleContent ? null : (0, a.jsx)(v, {
+    dismissibleContent: m.Z.coachmarkDismissibleContent,
+    backgroundColor: m.Z.coachmarkBackgroundColor,
+    specialTextColor: m.Z.coachmarkSpecialTextColor
   })
 }

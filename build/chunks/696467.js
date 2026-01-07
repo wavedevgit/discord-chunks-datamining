@@ -30,26 +30,26 @@ let L = (t, e) => {
     })
   },
   P = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["3o2ojh"]),
-    useSubtitle: () => (0, Chunk639814.c_)() ? Chunk388032.intl.format(Chunk388032.t.WpnWLc, {
-      helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MESSAGE_REQUESTS)
-    }) : Chunk388032.intl.format(Chunk388032.t.wkm9a3, {
-      helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MESSAGE_REQUESTS)
+    useTitle: () => f.intl.string(f.t["3o2ojh"]),
+    useSubtitle: () => (0, I.c_)() ? f.intl.format(f.t.WpnWLc, {
+      helpdeskArticle: T.Z.getArticleURL(C.BhN.MESSAGE_REQUESTS)
+    }) : f.intl.format(f.t.wkm9a3, {
+      helpdeskArticle: T.Z.getArticleURL(C.BhN.MESSAGE_REQUESTS)
     }),
     useValue: () => {
-      let t = (0, Chunk639814.is)(),
-        e = (0, Chunk976978.q)(),
-        n = Chunk695346.h2.useSetting().includes(module),
-        i = Chunk695346.mX.useSetting(),
-        l = Chunk695346.zA.useSetting().includes(module);
-      return module === Chunk997950.Th ? !exports && !Chunk755721 : !require && !Chunk168107
+      let t = (0, I.is)(),
+        e = (0, E.q)(),
+        n = d.h2.useSetting().includes(t),
+        i = d.mX.useSetting(),
+        l = d.zA.useSetting().includes(t);
+      return t === g.Th ? !e && !i : !n && !l
     },
     useDisabled: () => {
-      let t = (0, Chunk639814.is)(),
-        e = (0, Chunk915009.LN)(),
-        n = (0, Chunk976978.q)(),
-        i = Chunk695346.h2.useSetting().includes(module);
-      return module === Chunk997950.Th ? require || exports : Chunk755721
+      let t = (0, I.is)(),
+        e = (0, u.LN)(),
+        n = (0, E.q)(),
+        i = d.h2.useSetting().includes(t);
+      return t === g.Th ? n || e : i
     },
     setValue: t => {
       let e = g.xu.getState().selectedGuildId;

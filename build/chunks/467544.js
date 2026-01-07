@@ -11,7 +11,7 @@ var Chunk312413 = require("./312413.js"),
   s = function() {
     var e = 1 / 0,
       t = [];
-    Chunk312413.C.forEach(function(n) {
+    r.C.forEach(function(n) {
       if (0 !== n.activeTargets.length) {
         var r = [];
         n.activeTargets.forEach(function(t) {
@@ -23,6 +23,6 @@ var Chunk312413 = require("./312413.js"),
         }), n.activeTargets.splice(0, n.activeTargets.length)
       }
     });
-    for (var n = 0, s = exports; require < s.length; require++)(0, s[require])();
-    return module
+    for (var n = 0, s = t; n < s.length; n++)(0, s[n])();
+    return e
   }

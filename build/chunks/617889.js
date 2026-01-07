@@ -13,19 +13,19 @@ var Chunk473749 = require("./473749.js"),
 function c() {
   let [{
     spring: e
-  }, t] = (0, Chunk481060.q_F)(() => ({
+  }, t] = (0, n.q_F)(() => ({
     spring: 0
   }), "animate-always");
   return {
-    completionSpring: module,
-    startCompletionAnimation: Chunk473749.useCallback(() => {
-      exports({
+    completionSpring: e,
+    startCompletionAnimation: r.useCallback(() => {
+      t({
         spring: 1
-      }), exports({
+      }), t({
         spring: 0,
         delay: 2e3
       })
-    }, [exports])
+    }, [t])
   }
 }
 
@@ -44,22 +44,22 @@ function i(e, t) {
 }
 let b = () => {
   let e = document.body.style.getPropertyValue("--custom-guild-sidebar-width").slice(0, false);
-  return parseInt("" !== module ? module : "375")
+  return parseInt("" !== e ? e : "375")
 };
 
 function s() {
   return {
     label: ! function() {
-      let [e, t] = Chunk473749.useState(() => 270 > b());
-      return Chunk473749.useEffect(() => {
+      let [e, t] = r.useState(() => 270 > b());
+      return r.useEffect(() => {
         let e = new MutationObserver(() => {
-          exports(270 > b())
+          t(270 > b())
         });
-        return module.observe(document.body, {
+        return e.observe(document.body, {
           attributes: true,
           attributeFilter: ["style"]
-        }), () => module.disconnect()
-      }, [270]), module
+        }), () => e.disconnect()
+      }, [270]), e
     }()
   }
 }

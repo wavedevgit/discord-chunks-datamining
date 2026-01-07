@@ -11,11 +11,11 @@ var Chunk473749 = require("./473749.js"),
 let o = "systemServiceAutoInstall";
 
 function s() {
-  Chunk433517.K.set(o, true)
+  i.K.set(o, true)
 }
 
 function l() {
-  Chunk473749.useEffect(() => {
-    null == Chunk433517.K.get(o) && (s(), (0, Chunk865066.sU)("first-start", false))
+  r.useEffect(() => {
+    null == i.K.get(o) && (s(), (0, a.sU)("first-start", false))
   }, [])
 }

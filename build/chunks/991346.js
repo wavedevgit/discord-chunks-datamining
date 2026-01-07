@@ -123,89 +123,89 @@ function V(e) {
 function H() {
   let {
     shouldMergeGameSettings: e
-  } = Chunk202527.b.useExperiment({
+  } = P.b.useExperiment({
     location: "settings"
   }), {
     showRedesign: t
-  } = Chunk413182.b.useExperiment({
+  } = R.b.useExperiment({
     location: "settings"
   }), n = V({
-    shouldMergeGameSettings: module,
-    showRedesignedThirdPartyAccessSettings: exports
+    shouldMergeGameSettings: e,
+    showRedesignedThirdPartyAccessSettings: t
   });
-  return Chunk473749.useMemo(() => [{
-    header: Chunk388032.intl.string(Chunk388032.t["zkoeq/"]),
-    settings: [...require.map(e => {
+  return r.useMemo(() => [{
+    header: U.intl.string(U.t["zkoeq/"]),
+    settings: [...n.map(e => {
       let {
         settings: t
       } = e;
       return t
-    }).flat(1), Chunk726985.s6.SEARCH_NO_RESULTS]
-  }], [require])
+    }).flat(1), M.s6.SEARCH_NO_RESULTS]
+  }], [n])
 }
 
 function Y() {
   var e, t, n, o;
-  let v = (0, Chunk725727.YO)().length,
-    R = (0, Chunk160913.U)(),
-    j = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSearchParams()),
-    M = (0, Chunk631885.gU)(),
-    U = (0, Chunk168308.bC)(),
-    G = (0, Chunk924557.w9)(),
-    [Z] = (0, Chunk706140.cv)(G ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
+  let v = (0, h.YO)().length,
+    R = (0, m.U)(),
+    j = (0, i.e7)([C.Z], () => C.Z.getSearchParams()),
+    M = (0, _.gU)(),
+    U = (0, L.bC)(),
+    G = (0, c.w9)(),
+    [Z] = (0, u.cv)(G ? [a.z.CLIPS_SETTINGS_BETA_TAG] : []),
     {
       shouldMergeGameSettings: F
-    } = Chunk202527.b.useExperiment({
+    } = P.b.useExperiment({
       location: "settings"
     }),
-    B = null != (n = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && require,
-    V = (0, Chunk237292.y0)({
+    B = null != (n = null == (e = A.default.getCurrentUser()) ? true : e.isStaff()) && n,
+    V = (0, y.y0)({
       location: "settings"
     }),
-    H = (0, Chunk667172.v4)({
+    H = (0, b.v4)({
       location: "settings"
     }),
-    Y = (0, Chunk211242.Q)(),
-    W = (0, Chunk787695.Z)({
-      location: Chunk324805.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+    Y = (0, l.Q)(),
+    W = (0, g.Z)({
+      location: k.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
     }),
-    K = (0, Chunk442837.e7)([Chunk283595.Z], () => Chunk283595.Z.hasLibraryApplication()),
-    z = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),
-    q = Chunk695346.Sb.useSetting(),
-    Q = (0, Chunk610697.Z)(),
-    X = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
-    J = (null == (t = (0, Chunk921157.s)()) ? true : exports.length) > 0,
+    K = (0, i.e7)([S.Z], () => S.Z.hasLibraryApplication()),
+    z = (0, i.e7)([O.default], () => O.default.hasTOTPEnabled()),
+    q = w.Sb.useSetting(),
+    Q = (0, f.Z)(),
+    X = null == (o = (0, p.Z)()) || o,
+    J = (null == (t = (0, E.s)()) ? true : t.length) > 0,
     {
       hasBlockedUsers: $,
       hasIgnoredUsers: ee
-    } = (0, Chunk442837.cj)([Chunk699516.Z], () => ({
-      hasBlockedUsers: Chunk699516.Z.getBlockedIDs().length > 0,
-      hasIgnoredUsers: Chunk699516.Z.getIgnoredIDs().length > 0
+    } = (0, i.cj)([T.Z], () => ({
+      hasBlockedUsers: T.Z.getBlockedIDs().length > 0,
+      hasIgnoredUsers: T.Z.getIgnoredIDs().length > 0
     })),
-    et = (0, Chunk128064.pY)("SettingRendererUtils"),
+    et = (0, N.pY)("SettingRendererUtils"),
     {
       inputMode: en,
       activeInputProfile: er,
       isInputProfileCustom: ei
-    } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-      activeInputProfile: Chunk131951.Z.getActiveInputProfile(),
-      inputMode: Chunk131951.Z.getMode(),
-      isInputProfileCustom: Chunk131951.Z.isInputProfileCustom()
+    } = (0, i.cj)([I.Z], () => ({
+      activeInputProfile: I.Z.getActiveInputProfile(),
+      inputMode: I.Z.getMode(),
+      isInputProfileCustom: I.Z.isInputProfileCustom()
     })),
     {
       enabled: ea
-    } = (0, Chunk657871.zM)("useGenerateUserSettingsSections", {
+    } = (0, d.zM)("useGenerateUserSettingsSections", {
       autoTrackExposure: false
     }),
-    eo = (0, Chunk526665.gj)("useGenerateUserSettingsSections"),
-    es = (0, Chunk651123.z)("useGenerateUserSettingsSections");
-  return Chunk473749.useMemo(() => (0, Chunk620163.iE)({
-    unseenGiftCount: Chunk906467,
-    showPrepaidPaymentPastDueWarning: Chunk413182,
-    searchParams: Chunk839469,
-    numOfPendingFamilyRequests: Chunk726985,
-    isOverlaySupported: Chunk388032,
-    isClipsBetaTagShowing: Z === Chunk704215.z.CLIPS_SETTINGS_BETA_TAG,
+    eo = (0, D.gj)("useGenerateUserSettingsSections"),
+    es = (0, s.z)("useGenerateUserSettingsSections");
+  return r.useMemo(() => (0, x.iE)({
+    unseenGiftCount: v,
+    showPrepaidPaymentPastDueWarning: R,
+    searchParams: j,
+    numOfPendingFamilyRequests: M,
+    isOverlaySupported: U,
+    isClipsBetaTagShowing: Z === a.z.CLIPS_SETTINGS_BETA_TAG,
     shouldMergeGameSettings: F,
     isStaff: B,
     isInappropriateConversationWarningEnabled: V,
@@ -227,7 +227,7 @@ function Y() {
     isChatMentionSuggestionsSettingEnabled: ea,
     isRedesignedNotificationsEnabled: eo,
     isHDRAccessibilitySettingExperimentEnabled: es
-  }), [q, Z, $, ee, K, J, z, Chunk839469, X, W, H, V, Chunk388032, B, Q, Chunk726985, Y, F, Chunk413182, Chunk906467, et, en, er, ei, ea, eo, es])
+  }), [q, Z, $, ee, K, J, z, j, X, W, H, V, U, B, Q, M, Y, F, R, v, et, en, er, ei, ea, eo, es])
 }
 
 function W(e) {
@@ -316,19 +316,19 @@ function Q() {
   let e = Y(),
     {
       shouldMergeGameSettings: t
-    } = Chunk202527.b.useExperiment({
+    } = P.b.useExperiment({
       location: "settings"
     }),
     {
       showRedesign: n
-    } = Chunk413182.b.useExperiment({
+    } = R.b.useExperiment({
       location: "settings"
     }),
-    i = Chunk473749.useMemo(() => V({
-      shouldMergeGameSettings: exports,
-      showRedesignedThirdPartyAccessSettings: require
-    }), [exports, require]);
-  return Chunk473749.useMemo(() => z(Chunk442837, module), [Chunk442837, module])
+    i = r.useMemo(() => V({
+      shouldMergeGameSettings: t,
+      showRedesignedThirdPartyAccessSettings: n
+    }), [t, n]);
+  return r.useMemo(() => z(i, e), [i, e])
 }
 
 function X(e) {

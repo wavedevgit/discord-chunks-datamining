@@ -25,7 +25,7 @@ let c = Object.freeze({
     isSearchSuggestion: false,
     pickerId: function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "uid_";
-      return i()(module)
+      return i()(e)
     }(),
     isNitroLockedSectionVisible: false,
     areOnlyNitroLockedSectionsVisible: false

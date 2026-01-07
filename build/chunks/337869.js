@@ -10,13 +10,13 @@ var Chunk992774 = require("./992774.js"),
   supported() {
     try {
       if (__OVERLAY__);
-      else if (Chunk358085.isPlatformEmbedded) {
-        let e = (0, Chunk992774.zS)();
-        if (null == module.VoiceConnection) throw Error("voe function missing");
+      else if (a.isPlatformEmbedded) {
+        let e = (0, r.zS)();
+        if (null == e.VoiceConnection) throw Error("voe function missing");
         returntrue
       }
     } catch (e) {
-      new Chunk710845.Z("injectMediaEngine").error("Potentially corrupt installation:", module.message)
+      new i.Z("injectMediaEngine").error("Potentially corrupt installation:", e.message)
     }
     returnfalse
   },
@@ -24,6 +24,6 @@ var Chunk992774 = require("./992774.js"),
   setProcessPriority(e) {
     o.ZP.getDiscordUtils().setProcessPriority(e)
   },
-  getVoiceEngine: () => Chunk998502.ZP.getVoiceEngine(),
-  getVoiceFilters: () => Chunk998502.ZP.getVoiceFilters()
+  getVoiceEngine: () => o.ZP.getVoiceEngine(),
+  getVoiceFilters: () => o.ZP.getVoiceFilters()
 })

@@ -17,18 +17,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk399794 = require("./399794.js");
 
 function h() {
-  let [e, t] = (0, Chunk442837.Wu)([Chunk352527.Z], () => [Chunk352527.Z.enabled, Chunk352527.Z.keepOpen]), n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getVoiceChannelId()), h = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(require), [require]), p = null == h ? true : h.getGuildId();
-  return module && null != h ? (0, Chunk54381.jsx)("div", {
-    className: Chunk399794.widget,
-    children: (0, Chunk54381.jsx)(Chunk487029.Z, {
-      width: Chunk710111.FW.width,
-      height: Chunk710111.FW.height,
+  let [e, t] = (0, r.Wu)([a.Z], () => [a.Z.enabled, a.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), h = (0, r.e7)([l.Z], () => l.Z.getChannel(n), [n]), p = null == h ? true : h.getGuildId();
+  return e && null != h ? (0, i.jsx)("div", {
+    className: f.widget,
+    children: (0, i.jsx)(o.Z, {
+      width: u.FW.width,
+      height: u.FW.height,
       guildId: p,
       channel: h,
-      keepOpen: exports,
+      keepOpen: t,
       onClose: function() {
-        let e = (0, Chunk554174.Z)();
-        null != module && (0, Chunk183584.oZ)(module)
+        let e = (0, d.Z)();
+        null != e && (0, s.oZ)(e)
       },
       analyticsSource: "overlay"
     })

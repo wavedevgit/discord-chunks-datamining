@@ -8,5 +8,5 @@ var Chunk127849 = require("./127849.js"),
     return i.slice(0, e.length) === e
   };
 module.exports = function() {
-  return o("Bun/") ? "BUN" : o("Cloudflare-Workers") ? "CLOUDFLARE" : o("Deno/") ? "DENO" : o("Node.js/") ? "NODE" : Chunk127849.Bun && "string" == typeof Bun.version ? "BUN" : Chunk127849.Deno && "object" == typeof Deno.version ? "DENO" : "process" === Chunk796138(Chunk127849.process) ? "NODE" : Chunk127849.window && Chunk127849.document ? "BROWSER" : "REST"
+  return o("Bun/") ? "BUN" : o("Cloudflare-Workers") ? "CLOUDFLARE" : o("Deno/") ? "DENO" : o("Node.js/") ? "NODE" : r.Bun && "string" == typeof Bun.version ? "BUN" : r.Deno && "object" == typeof Deno.version ? "DENO" : "process" === a(r.process) ? "NODE" : r.window && r.document ? "BROWSER" : "REST"
 }()

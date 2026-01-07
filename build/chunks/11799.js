@@ -90,9 +90,9 @@ let f = () => {
     isDesktop: true
   });
   return {
-    initialized: module,
-    loading: exports,
-    items: require.filter(e => "notification-center-item" === e.kind),
+    initialized: e,
+    loading: t,
+    items: n.filter(e => "notification-center-item" === e.kind),
     hasMore: f,
     loadMore: h
   }

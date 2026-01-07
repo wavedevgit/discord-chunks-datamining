@@ -78,12 +78,12 @@ function g() {
 
 function E() {
   let e = {};
-  for (let t of Object.values(p)) module[exports.id] = exports, exports.subscription = Chunk78839.Z.getSubscriptionById(exports.subscriptionId);
-  p = module
+  for (let t of Object.values(p)) e[t.id] = t, t.subscription = o.Z.getSubscriptionById(t.subscriptionId);
+  p = e
 }
 class b extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk78839.Z], E)
+    this.syncWith([o.Z], E)
   }
   get hasFetched() {
     return d

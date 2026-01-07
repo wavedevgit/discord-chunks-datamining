@@ -13,10 +13,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk731994 = require("./731994.js"),
   Chunk796591 = require("./796591.js");
 let m = () => {
-    (0, Chunk481060.ZDy)(async () => {
+    (0, s.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.resolve().then(require.bind(require, 897842));
+      } = await Promise.resolve().then(n.bind(n, 897842));
       return t => (0, a.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -39,7 +39,7 @@ let m = () => {
         help: "Please drop one or more image or video files."
       }, t))
     }, {
-      modalKey: Chunk897842.A
+      modalKey: c.A
     })
   },
   p = e => {

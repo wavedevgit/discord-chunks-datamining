@@ -84,7 +84,7 @@ function R(e) {
 }
 
 function w() {
-  r = null, g = [], E = [], b = null, y = null, O = null, I = Chunk981631.QZA.CLOSED, C = false
+  r = null, g = [], E = [], b = null, y = null, O = null, I = _.QZA.CLOSED, C = false
 }
 let D = s().debounce(() => {
   C && (null != y ? s().isEqual(y, K(y.id)) && (C = false) : null != O && s().isEqual(O, z(O.id)) && (C = false), C || Q.emitChange())
@@ -107,7 +107,7 @@ function L(e) {
 }
 
 function j() {
-  I = Chunk981631.QZA.SUBMITTING, T = {}
+  I = _.QZA.SUBMITTING, T = {}
 }
 
 function M(e) {
@@ -244,7 +244,7 @@ function z(e) {
 }
 class q extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk999382.Z, Chunk855674.Z, Chunk496675.Z)
+    this.waitFor(p.Z, f.Z, d.Z)
   }
   hasChanges() {
     return C
@@ -274,7 +274,7 @@ class q extends(a = Chunk442837.ZP.Store) {
     return T
   }
   getSection() {
-    return null != i ? i : Chunk981631.b4C.OVERVIEW
+    return null != i ? i : _.b4C.OVERVIEW
   }
   getSectionId() {
     return A

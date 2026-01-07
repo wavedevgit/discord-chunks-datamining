@@ -39,23 +39,23 @@ function u(e) {
 function d() {
   return {
     mallow: {
-      name: Chunk388032.intl.string(Chunk388032.t.SbKDHi),
+      name: o.intl.string(o.t.SbKDHi),
       avatarSrc: "https://cdn.discordapp.com/assets/content/6dcafe1231097505560fd098f0e6698990f0082369d34c35d8c3ee9615709f84.png"
     },
     phibi: {
-      name: Chunk388032.intl.string(Chunk388032.t["LMSo+F"]),
+      name: o.intl.string(o.t["LMSo+F"]),
       avatarSrc: "https://cdn.discordapp.com/assets/content/17ae2ee3b8476755370ca9fa4d776d0bb811e50962409a7ae2dedd1b96c95eab.png"
     },
     locke: {
-      name: Chunk388032.intl.string(Chunk388032.t.g5Dumi),
+      name: o.intl.string(o.t.g5Dumi),
       avatarSrc: "https://cdn.discordapp.com/assets/content/a82a9daadc5c7842f183c0f61966b07d3aeeea478b7c8a4b8af48334eb1ce15f.png"
     },
     cherry: {
-      name: Chunk388032.intl.string(Chunk388032.t.p5Z3Ol),
+      name: o.intl.string(o.t.p5Z3Ol),
       avatarSrc: "https://cdn.discordapp.com/assets/content/afc2e8306ce540dccac7da1ca0871684d0bf67e77967ff0f679be84a0a6e51b7.png"
     },
     boom: {
-      name: Chunk388032.intl.string(Chunk388032.t.ncslie),
+      name: o.intl.string(o.t.ncslie),
       avatarSrc: "https://cdn.discordapp.com/assets/content/e264a2b0b8d963edd255c223abf1c0554f00a2f3a38640e509a38bc03d73b606.png"
     }
   }

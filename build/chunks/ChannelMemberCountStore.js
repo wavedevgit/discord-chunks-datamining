@@ -42,7 +42,7 @@ class g extends(r = Chunk442837.ZP.PersistedStore) {
 }
 c(g, "displayName", "ChannelMemberCountStore"), c(g, "persistKey", "channelMemberCounts"), new g(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
-    null != f && Chunk38618.Z.getSocket().requestChannelMemberCount(f.guildId, f.channelId), Chunk709054.default.keys(p).forEach(e => {
+    null != f && a.Z.getSocket().requestChannelMemberCount(f.guildId, f.channelId), s.default.keys(p).forEach(e => {
       null == o.Z.getChannel(e) && delete p[e]
     })
   },

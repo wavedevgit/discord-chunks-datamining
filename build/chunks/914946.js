@@ -81,10 +81,10 @@ function w(e, t) {
 let L = null != (i = null == (r = Chunk591759.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? true : r.host) ? i : "localhost",
   R = function() {
     let e = L.split(":")[0];
-    if (!module.includes(".")) return module;
-    let t = module.split("."),
-      n = exports[exports.length - 1];
-    return /^\d+$/.test(require) ? module : exports.slice(false).join(".")
+    if (!e.includes(".")) return e;
+    let t = e.split("."),
+      n = t[t.length - 1];
+    return /^\d+$/.test(n) ? e : t.slice(false).join(".")
   }(),
   D = new RegExp("^".concat(Chunk226951.Z.escape("https://"), "(?:[a-z]+\\.)?(").concat(Chunk226951.Z.escape(R), "|discordapp.com|discord.com)$")),
   M = +Chunk70956.Z.Millis.MINUTE,
@@ -106,7 +106,7 @@ function H(e) {
 function B(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [A.d4z.GUILD_CATEGORY, ...h.tx].includes(e.type) || n.push(new Promise(t => {
+  return [A.d4z.GUILD_CATEGORY, ...m.tx].includes(e.type) || n.push(new Promise(t => {
     O.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
       limit: A.AQB
@@ -135,7 +135,7 @@ function V(e) {
       channelId: e.channel_id
     }).map(U),
     n = b.Z.getChannel(e.channel_id),
-    r = null != e.author ? new m.Z(e.author) : true,
+    r = null != e.author ? new h.Z(e.author) : true,
     i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
     id: e.id,

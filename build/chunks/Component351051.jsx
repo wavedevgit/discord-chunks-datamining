@@ -11,8 +11,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk408491 = require("./408491.js");
 
 function s() {
-  let e = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.getConnectedFrame());
-  return (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.getFrameLayoutMode()) !== Chunk408491.U.FOCUSED || null == module ? null : (0, Chunk54381.jsx)(Chunk262734.Z, {
-    frame: module
+  let e = (0, i.e7)([l.Z], () => l.Z.getConnectedFrame());
+  return (0, i.e7)([l.Z], () => l.Z.getFrameLayoutMode()) !== o.U.FOCUSED || null == e ? null : (0, r.jsx)(a.Z, {
+    frame: e
   })
 }

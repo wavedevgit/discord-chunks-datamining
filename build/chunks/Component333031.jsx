@@ -65,9 +65,9 @@ class S {
     null != this.zones.get(e) && (null == (t = this.resizeObserver) || t.unobserve(e), this.zones.delete(e), this.elements.delete(e), this.updateZones())
   }
   updateZones() {
-    if (!Chunk358085.isPlatformEmbedded) return;
-    let e = Chunk928518.Z.getWindow(Chunk501787.$J);
-    null != module && Chunk13245.Z.setClickZones(Array.from(this.zones.values()).map(t => {
+    if (!m.isPlatformEmbedded) return;
+    let e = p.Z.getWindow(b.$J);
+    null != e && f.Z.setClickZones(Array.from(this.zones.values()).map(t => {
       let {
         zone: n
       } = t;
@@ -82,7 +82,7 @@ class S {
   }
   cleanUp() {
     var e, t;
-    this.globalUpdate.cancel(), this.zones.clear(), this.elements.clear(), null == (e = this.resizeObserver) || module.disconnect(), null == (t = this.mutationObserver) || exports.disconnect(), this.updateZones()
+    this.globalUpdate.cancel(), this.zones.clear(), this.elements.clear(), null == (e = this.resizeObserver) || e.disconnect(), null == (t = this.mutationObserver) || t.disconnect(), this.updateZones()
   }
   constructor(e) {
     O(this, "resizeObserver", true), O(this, "mutationObserver", true), O(this, "zones", new Map), O(this, "elements", new Set), O(this, "window", true), O(this, "handleResize", () => {

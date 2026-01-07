@@ -16,14 +16,14 @@ var Chunk392711 = require("./392711.js"),
   Chunk186901 = require("./186901.js");
 
 function p() {
-  let e = Chunk317381.ZP.getCurrentEmbeddedActivity();
-  if (null == module) return {
+  let e = l.ZP.getCurrentEmbeddedActivity();
+  if (null == e) return {
     participants: []
   };
-  let t = (0, Chunk16609.j)(module.location),
-    n = (0, Chunk16609.p)(module.location);
+  let t = (0, a.j)(e.location),
+    n = (0, a.p)(e.location);
   return {
-    participants: Array.from(module.userIds, e => {
+    participants: Array.from(e.userIds, e => {
       var r, i;
       let l = o.default.getUser(e);
       if (null == l) return;
@@ -57,7 +57,7 @@ function p() {
       })(Object(i)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r
-    }).filter(Chunk823379.lm)
+    }).filter(s.lm)
   }
 }
 let f = {

@@ -21,9 +21,9 @@ var Chunk410575 = require("./410575.jsx"),
   Chunk981631 = require("./981631.js");
 
 function _() {
-  return (0, Chunk54381.jsx)(Chunk410575.Z, {
-    section: Chunk981631.jXE.LIBRARY_INVENTORY_CODE_REDEMPTION,
-    children: (0, Chunk54381.jsx)(Chunk541540.Z, {})
+  return (0, r.jsx)(i.Z, {
+    section: p.jXE.LIBRARY_INVENTORY_CODE_REDEMPTION,
+    children: (0, r.jsx)(u.Z, {})
   })
 }
 
@@ -54,25 +54,25 @@ function h(e) {
 function g() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_GIFT_INVENTORY);
-  return (0, Chunk54381.jsxs)(Chunk906732.Gt, {
-    value: module,
-    children: [(0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.GIFT_CODE_REDEMPTION,
-      children: (0, Chunk54381.jsx)(_, {})
-    }), (0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.GIFT_INVENTORY_QUESTS,
-      children: (0, Chunk54381.jsx)(m, {
+  } = (0, o.ZP)(a.Z.USER_SETTINGS_GIFT_INVENTORY);
+  return (0, r.jsxs)(o.Gt, {
+    value: e,
+    children: [(0, r.jsx)(c.F, {
+      setting: f.s6.GIFT_CODE_REDEMPTION,
+      children: (0, r.jsx)(_, {})
+    }), (0, r.jsx)(c.F, {
+      setting: f.s6.GIFT_INVENTORY_QUESTS,
+      children: (0, r.jsx)(m, {
         inOldSettings: true
       })
-    }), (0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.GIFT_INVENTORY_LIST,
-      children: (0, Chunk54381.jsx)(h, {
+    }), (0, r.jsx)(c.F, {
+      setting: f.s6.GIFT_INVENTORY_LIST,
+      children: (0, r.jsx)(h, {
         inOldSettings: true
       })
-    }), (0, Chunk54381.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.GIFT_BLOCKED_PAYMENTS,
-      children: (0, Chunk54381.jsx)(Chunk89057.c8, {})
+    }), (0, r.jsx)(c.F, {
+      setting: f.s6.GIFT_BLOCKED_PAYMENTS,
+      children: (0, r.jsx)(s.c8, {})
     })]
   })
 }

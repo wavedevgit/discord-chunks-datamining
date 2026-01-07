@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk71509 = require("./71509.js");
 
-function h(e, t) {
+function m(e, t) {
   let n = false;
   return null == e.userContent && (e.userContent = {
     dismissedContents: new Uint8Array,
@@ -25,8 +25,8 @@ function h(e, t) {
   }), null == e.userContent.dismissedContents && (e.userContent.dismissedContents = new Uint8Array), (0, d.jl)(e.userContent.dismissedContents, t) || (e.userContent.dismissedContents = (0, d.GV)(e.userContent.dismissedContents, t), n = true), n
 }
 
-function m(e, t, n) {
-  return !!c.qc.hasHiddenHotspot(t) && h(e, n)
+function h(e, t, n) {
+  return !!c.qc.hasHiddenHotspot(t) && m(e, n)
 }
 let b = [{
   version: 2,
@@ -49,7 +49,7 @@ let b = [{
     return r
   },
   cleanup() {
-    Chunk433517.K.remove("seenInboxTutorial"), Chunk433517.K.remove("recentsButtonTab2"), Chunk433517.K.remove("unread-messages-collapsed-channels")
+    o.K.remove("seenInboxTutorial"), o.K.remove("recentsButtonTab2"), o.K.remove("unread-messages-collapsed-channels")
   }
 }, {
   version: 3,
@@ -68,10 +68,10 @@ let b = [{
   version: 4,
   run(e) {
     let t = false;
-    return (true === o.K.get("HAS_SEEN_HUB_UPSELL") || c.qc.hasHiddenHotspot(c.v6.HUB_SECOND_EMAIL_CONNECTION_UPSELL)) && (t = h(e, i.z.HUB_WAITLIST_UPSELL)), t
+    return (true === o.K.get("HAS_SEEN_HUB_UPSELL") || c.qc.hasHiddenHotspot(c.v6.HUB_SECOND_EMAIL_CONNECTION_UPSELL)) && (t = m(e, i.z.HUB_WAITLIST_UPSELL)), t
   },
   cleanup() {
-    Chunk433517.K.remove("HAS_SEEN_HUB_UPSELL")
+    o.K.remove("HAS_SEEN_HUB_UPSELL")
   }
 }, {
   version: 5,
@@ -111,59 +111,59 @@ let b = [{
   cleanup() {}
 }, {
   version: 7,
-  run: e => m(e, c.v6.APPLICATION_COMMAND_TOOLTIP, i.z.APPLICATION_COMMAND_TOOLTIP),
+  run: e => h(e, c.v6.APPLICATION_COMMAND_TOOLTIP, i.z.APPLICATION_COMMAND_TOOLTIP),
   cleanup() {}
 }, {
   version: 8,
-  run: e => m(e, c.v6.CHANNEL_BANNER_MEMBER_LIST_NOTICE, i.z.CHANNELINFO_CHANNELBANNER_NOTICE),
+  run: e => h(e, c.v6.CHANNEL_BANNER_MEMBER_LIST_NOTICE, i.z.CHANNELINFO_CHANNELBANNER_NOTICE),
   cleanup() {}
 }, {
   version: 9,
-  run: e => (c.qc.hasHiddenHotspot(c.v6.MULTI_ACCOUNT_TOOLTIP) && o.K.set(g.Ip, "true"), m(e, c.v6.MULTI_ACCOUNT_TOOLTIP, i.z.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
+  run: e => (c.qc.hasHiddenHotspot(c.v6.MULTI_ACCOUNT_TOOLTIP) && o.K.set(g.Ip, "true"), h(e, c.v6.MULTI_ACCOUNT_TOOLTIP, i.z.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
   cleanup() {}
 }, {
   version: 10,
   run(e) {
     var t;
-    let n = m(e, c.v6.HUB_LINK_CHANNEL_NOTICE, i.z.CHANNEL_NOTICE_HUBLINK),
+    let n = h(e, c.v6.HUB_LINK_CHANNEL_NOTICE, i.z.CHANNEL_NOTICE_HUBLINK),
       r = null != (t = o.K.get("channelNotices")) ? t : {};
-    returnfalse === r[f.vID.INVITE] && h(e, i.z.CHANNEL_NOTICE_INVITE) && (n = true), false === r[f.vID.QUICKSWITCHER] && h(e, i.z.CHANNEL_NOTICE_QUICKSWITCHER) && (n = true), false === r[f.vID.GUILD_BOOSTING] && h(e, i.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (n = true), n
+    returnfalse === r[f.vID.INVITE] && m(e, i.z.CHANNEL_NOTICE_INVITE) && (n = true), false === r[f.vID.QUICKSWITCHER] && m(e, i.z.CHANNEL_NOTICE_QUICKSWITCHER) && (n = true), false === r[f.vID.GUILD_BOOSTING] && m(e, i.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (n = true), n
   },
   cleanup() {
-    Chunk433517.K.remove("channelNotices")
+    o.K.remove("channelNotices")
   }
 }, {
   version: 11,
   run(e) {
     let t = false;
-    return m(e, c.v6.GUILD_EVENT_UPSELL, i.z.GUILD_HEADER_EVENT_UPSELL) && (t = true), m(e, c.v6.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, i.z.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = true), t
+    return h(e, c.v6.GUILD_EVENT_UPSELL, i.z.GUILD_HEADER_EVENT_UPSELL) && (t = true), h(e, c.v6.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, i.z.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = true), t
   },
   cleanup() {}
 }, {
   version: 12,
   run(e) {
     let t = false;
-    return o.K.get("hideNag") && h(e, i.z.NAGBAR_NOTICE_DOWNLOAD) && (t = true), o.K.get("hideConnectSpotify") && h(e, i.z.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = true), o.K.get("hideConnectPlayStation") && h(e, i.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = true), t
+    return o.K.get("hideNag") && m(e, i.z.NAGBAR_NOTICE_DOWNLOAD) && (t = true), o.K.get("hideConnectSpotify") && m(e, i.z.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = true), o.K.get("hideConnectPlayStation") && m(e, i.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = true), t
   },
   cleanup() {
-    Chunk433517.K.remove("hideNag"), Chunk433517.K.remove("hideConnectSpotify"), Chunk433517.K.remove("hideConnectPlayStation")
+    o.K.remove("hideNag"), o.K.remove("hideConnectSpotify"), o.K.remove("hideConnectPlayStation")
   }
 }, {
   version: 13,
   run(e) {
     let t = false;
-    return o.K.get("hidePremiumPromo") && h(e, i.z.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = true), o.K.get("hidePremiumTier2TrialEnding") && h(e, i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = true), o.K.get("hidePremiumReactivateNotice") && h(e, i.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = true), t
+    return o.K.get("hidePremiumPromo") && m(e, i.z.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = true), o.K.get("hidePremiumTier2TrialEnding") && m(e, i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = true), o.K.get("hidePremiumReactivateNotice") && m(e, i.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = true), t
   },
   cleanup() {
-    Chunk433517.K.remove("hidePremiumPromo"), Chunk433517.K.remove("hidePremiumTier2TrialEnding"), Chunk433517.K.remove("hidePremiumReactivateNotice")
+    o.K.remove("hidePremiumPromo"), o.K.remove("hidePremiumTier2TrialEnding"), o.K.remove("hidePremiumReactivateNotice")
   }
 }, {
   version: 14,
-  run: e => m(e, c.v6.ACTIVITY_BEB_TUTORIAL, i.z.ACTIVITIES_TUTORIAL_COACH_MARK),
+  run: e => h(e, c.v6.ACTIVITY_BEB_TUTORIAL, i.z.ACTIVITIES_TUTORIAL_COACH_MARK),
   cleanup() {}
 }, {
   version: 15,
-  run: e => m(e, c.v6.NOW_PLAYING_CONSENT_CARD, i.z.NOW_PLAYING_CONSENT_CARD),
+  run: e => h(e, c.v6.NOW_PLAYING_CONSENT_CARD, i.z.NOW_PLAYING_CONSENT_CARD),
   cleanup() {}
 }, {
   version: 16,
@@ -189,13 +189,13 @@ let b = [{
     }), true)
   },
   cleanup() {
-    Chunk433517.K.remove("ExpressionSuggestionsPersistedStore")
+    o.K.remove("ExpressionSuggestionsPersistedStore")
   }
 }, {
   version: 18,
   run(e) {
     let t = false;
-    return m(e, c.v6.GUILD_DELETE_FEEDBACK, i.z.GUILD_DELETE_FEEDBACK) && (t = true), m(e, c.v6.GUILD_LEAVE_FEEDBACK, i.z.GUILD_LEAVE_FEEDBACK) && (t = true), t
+    return h(e, c.v6.GUILD_DELETE_FEEDBACK, i.z.GUILD_DELETE_FEEDBACK) && (t = true), h(e, c.v6.GUILD_LEAVE_FEEDBACK, i.z.GUILD_LEAVE_FEEDBACK) && (t = true), t
   },
   cleanup() {}
 }, {
@@ -203,10 +203,10 @@ let b = [{
   run(e) {
     var t;
     let n = false;
-    return null != (t = o.K.get("forumHelperCardStorageKey")) && t && (n = h(e, i.z.FORUM_CHANNEL_HELPER_CARD)), n
+    return null != (t = o.K.get("forumHelperCardStorageKey")) && t && (n = m(e, i.z.FORUM_CHANNEL_HELPER_CARD)), n
   },
   cleanup() {
-    Chunk433517.K.remove("forumHelperCardStorageKey")
+    o.K.remove("forumHelperCardStorageKey")
   }
 }, {
   version: 20,
@@ -219,7 +219,7 @@ let b = [{
     return e.userContent.lastReceivedChangelogId = t, true
   },
   cleanup() {
-    Chunk433517.K.remove("lastChangeLogId")
+    o.K.remove("lastChangeLogId")
   }
 }, {
   version: 21,

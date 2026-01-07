@@ -50,20 +50,20 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
       partiedMembers: p,
       applicationStreams: f,
       currentActivities: g,
-      voiceChannels: h
-    } = t, m = p.length, b = f.length, _ = g.length, E = h.length > 0, v = i.useCallback(() => {
+      voiceChannels: m
+    } = t, h = p.length, b = f.length, _ = g.length, E = m.length > 0, v = i.useCallback(() => {
       let e = g.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, O.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
       O.default.track(j.rMx.NOW_PLAYING_CARD_HOVERED, {
-        num_users: m,
+        num_users: h,
         num_streams: b,
         num_activities: _,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, _, E, g]), y = i.useMemo(() => s()(v, Z), [v]);
+    }, [h, b, _, E, g]), y = i.useMemo(() => s()(v, Z), [v]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -121,7 +121,7 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  L = a().throttle(() => Chunk93127._(), 3e5);
+  L = a().throttle(() => h._(), 3e5);
 
 function R() {
   let {
@@ -130,21 +130,21 @@ function R() {
     needsRefresh: n,
     fetching: l,
     currentUser: a
-  } = (0, Chunk442837.cj)([Chunk801077.Z, Chunk752048.Z, Chunk594174.default], () => ({
-    nowPlayingCards: Chunk801077.Z.nowPlayingCards,
-    loaded: Chunk801077.Z.loaded,
-    needsRefresh: Chunk752048.Z.shouldFetch(),
-    fetching: Chunk752048.Z.isFetching(),
-    currentUser: Chunk594174.default.getCurrentUser()
-  })), o = (0, Chunk442837.e7)([Chunk616022.Z], () => Chunk616022.Z.quests), s = (0, Chunk968843.Fy)(Array.from(Chunk954955.values()));
-  Chunk473749.useEffect(() => (Chunk570140.Z.wait(() => Chunk225559.L()), () => Chunk570140.Z.wait(() => Chunk225559.v())), [null == a ? true : a.id]), Chunk473749.useEffect(() => {
-    require && !Chunk392711 && L()
-  }, [require, Chunk392711]);
-  let m = Chunk473749.useMemo(() => {
+  } = (0, c.cj)([E.Z, b.Z, _.default], () => ({
+    nowPlayingCards: E.Z.nowPlayingCards,
+    loaded: E.Z.loaded,
+    needsRefresh: b.Z.shouldFetch(),
+    fetching: b.Z.isFetching(),
+    currentUser: _.default.getCurrentUser()
+  })), o = (0, c.e7)([p.Z], () => p.Z.quests), s = (0, f.Fy)(Array.from(o.values()));
+  i.useEffect(() => (d.Z.wait(() => y.L()), () => d.Z.wait(() => y.v())), [null == a ? true : a.id]), i.useEffect(() => {
+    n && !l && L()
+  }, [n, l]);
+  let h = i.useMemo(() => {
       let t = new Map,
         n = new Set,
-        r = (0, Chunk283689.NI)(Chunk954955, Chunk324805.l$);
-      for (let i of module) Chunk473749.party.currentActivities.forEach(e => {
+        r = (0, m.NI)(o, P.l$);
+      for (let i of e) i.party.currentActivities.forEach(e => {
         let {
           activity: l
         } = e;
@@ -152,31 +152,31 @@ function R() {
         let a = (0, g.ZZ)(r, l);
         null == a || n.has(a.id) || (t.set(i.party.id, a), n.add(a.id))
       });
-      return exports
-    }, [module, Chunk954955, s]),
+      return t
+    }, [e, o, s]),
     O = null;
-  return exports ? O = module.length > 0 ? module.map(e => {
+  return t ? O = e.length > 0 ? e.map(e => {
     let {
       party: t
     } = e;
     return (0, r.jsx)(w, {
       party: t,
-      quest: m.get(t.id)
+      quest: h.get(t.id)
     }, t.id)
-  }) : (0, Chunk54381.jsxs)("div", {
-    className: Chunk121748.emptyCard,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  }) : (0, r.jsxs)("div", {
+    className: A.emptyCard,
+    children: [(0, r.jsx)(u.Heading, {
       variant: "heading-md/semibold",
-      className: Chunk121748.emptyHeader,
-      children: Chunk388032.intl.string(Chunk388032.t["ngJ/5u"])
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      className: A.emptyHeader,
+      children: x.intl.string(x.t["ngJ/5u"])
+    }), (0, r.jsx)(u.Text, {
       color: "none",
-      className: Chunk121748.emptyText,
+      className: A.emptyText,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["99ZWxQ"])
+      children: x.intl.string(x.t["99ZWxQ"])
     })]
-  }) : (0, Chunk54381.jsx)("div", {
-    className: Chunk121748.emptyCard,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  }) : (0, r.jsx)("div", {
+    className: A.emptyCard,
+    children: (0, r.jsx)(u.$jN, {})
   })
 }

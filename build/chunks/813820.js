@@ -129,7 +129,7 @@ class E extends Chunk495852.C {
       no: 4,
       name: "avatar",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => s.Gm
     }, {
       no: 5,
       name: "bot",
@@ -144,7 +144,7 @@ class E extends Chunk495852.C {
       no: 8,
       name: "global_name",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => s.Gm
     }, {
       no: 9,
       name: "avatar_decoration_data",
@@ -252,7 +252,7 @@ class b extends Chunk495852.C {
       no: 4,
       name: "avatar_hash",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => s.Gm
     }, {
       no: 5,
       name: "bot",
@@ -267,12 +267,12 @@ class b extends Chunk495852.C {
       no: 7,
       name: "email",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => s.Gm
     }, {
       no: 8,
       name: "phone",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => s.Gm
     }])
   }
 }
@@ -326,12 +326,12 @@ class y extends Chunk495852.C {
       no: 2,
       name: "sku_id",
       kind: "message",
-      T: () => Chunk381499.wA
+      T: () => s.wA
     }, {
       no: 3,
       name: "expires_at",
       kind: "message",
-      T: () => Chunk381499.yC
+      T: () => s.yC
     }])
   }
 }
@@ -398,12 +398,12 @@ class v extends Chunk495852.C {
       no: 3,
       name: "sku_id",
       kind: "message",
-      T: () => Chunk381499.wA
+      T: () => s.wA
     }, {
       no: 4,
       name: "expires_at",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }, {
       no: 5,
       name: "label",
@@ -564,22 +564,22 @@ class N extends Chunk495852.C {
       no: 1,
       name: "identity_guild_id",
       kind: "message",
-      T: () => Chunk381499.wA
+      T: () => s.wA
     }, {
       no: 2,
       name: "identity_enabled",
       kind: "message",
-      T: () => Chunk381499.D5
+      T: () => s.D5
     }, {
       no: 3,
       name: "tag",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => s.Gm
     }, {
       no: 4,
       name: "badge",
       kind: "message",
-      T: () => Chunk381499.Gm
+      T: () => s.Gm
     }])
   }
 }
@@ -625,7 +625,7 @@ class R extends Chunk495852.C {
       no: 1,
       name: "restriction_expiry",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }, {
       no: 2,
       name: "application_id",
@@ -900,12 +900,12 @@ class x extends Chunk495852.C {
       no: 5,
       name: "created_at",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }, {
       no: 6,
       name: "updated_at",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }])
   }
 }
@@ -943,7 +943,7 @@ class j extends Chunk495852.C {
       no: 1,
       name: "limit_expiry",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }])
   }
 }
@@ -1044,7 +1044,7 @@ class G extends Chunk495852.C {
       no: 1,
       name: "flag_expiry",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }])
   }
 }
@@ -1190,7 +1190,7 @@ class W extends Chunk495852.C {
       no: 1,
       name: "restricted_until",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }])
   }
 }
@@ -1228,7 +1228,7 @@ class z extends Chunk495852.C {
       no: 1,
       name: "action_deferred_until",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }])
   }
 }
@@ -1266,7 +1266,7 @@ class Q extends Chunk495852.C {
       no: 1,
       name: "banned_until",
       kind: "message",
-      T: () => Chunk835913.E
+      T: () => l.E
     }])
   }
 }
@@ -1417,7 +1417,7 @@ class ee extends Chunk495852.C {
       no: 3,
       name: "last_mutation_id",
       kind: "message",
-      T: () => Chunk381499.wA
+      T: () => s.wA
     }])
   }
 }

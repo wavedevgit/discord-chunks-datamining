@@ -51,30 +51,30 @@ let h = new Chunk710845.Z("MLNativeModuleManager"),
       return this.state.models
     }
     isNativeModuleLoaded() {
-      return this.state.nativeMLModuleState === Chunk868010.C.LOADED
+      return this.state.nativeMLModuleState === d.C.LOADED
     }
     isNativeModuleLoading() {
-      return this.state.nativeMLModuleState === Chunk868010.C.LOADING
+      return this.state.nativeMLModuleState === d.C.LOADING
     }
     async maybeSetupMLModulePrefetchModels() {
       if (!(this.isNativeModuleLoaded() || this.isNativeModuleLoading()) && !__OVERLAY__) {
-        if (!((0, Chunk358085.isWindows)() || (0, Chunk358085.isMac)())) {
-          this.state.nativeMLModuleState = Chunk868010.C.UNSUPPORTED;
+        if (!((0, l.isWindows)() || (0, l.isMac)())) {
+          this.state.nativeMLModuleState = d.C.UNSUPPORTED;
           return
         }
         try {
-          this.state.nativeMLModuleState = Chunk868010.C.LOADING, await this.refreshMLCatalog(), await this.prefetchMLModels(), await this.loadMLNativeModule()
+          this.state.nativeMLModuleState = d.C.LOADING, await this.refreshMLCatalog(), await this.prefetchMLModels(), await this.loadMLNativeModule()
         } catch (e) {
-          h.warn("Failed to load Clips ML module: ".concat(module.message)), this.state.nativeMLModuleState = Chunk868010.C.FAILED
+          h.warn("Failed to load Clips ML module: ".concat(e.message)), this.state.nativeMLModuleState = d.C.FAILED
         }
       }
     }
     async loadMLNativeModule() {
       try {
         var e, t, o;
-        await Chunk998502.ZP.ensureModule("discord_ml");
-        let a = Chunk998502.ZP.requireModule("discord_ml");
-        await Chunk710845.setupResources(), await Chunk710845.setMLResultCallback(e => {
+        await n.ZP.ensureModule("discord_ml");
+        let a = n.ZP.requireModule("discord_ml");
+        await a.setupResources(), await a.setMLResultCallback(e => {
           let t;
           try {
             t = JSON.parse(e)
@@ -86,27 +86,27 @@ let h = new Chunk710845.Z("MLNativeModuleManager"),
             type: t.type,
             payload: t.payload
           })
-        }), null == (e = this.onMLModuleLoaded) || module.call(this), this.state.nativeMLModuleState = Chunk868010.C.LOADED;
-        let l = Chunk131951.Z.getMediaEngine();
-        Chunk358085.setClipsMLPipelineEnabled(true);
-        let r = null != (o = null == (t = Chunk435064.Z.getSettings()) ? true : exports.mlPipelinesEnabled) ? require : {
+        }), null == (e = this.onMLModuleLoaded) || e.call(this), this.state.nativeMLModuleState = d.C.LOADED;
+        let l = i.Z.getMediaEngine();
+        l.setClipsMLPipelineEnabled(true);
+        let r = null != (o = null == (t = s.Z.getSettings()) ? true : t.mlPipelinesEnabled) ? o : {
           emotionClassifier: true,
           wakeWordDetector: true,
           yellDetector: true,
           whisperTranscription: true
         };
-        Chunk358085.setClipsMLPipelineTypeEnabled("emotion_classifier", Chunk341569.emotionClassifier), Chunk358085.setClipsMLPipelineTypeEnabled("wake_word_detector", Chunk341569.wakeWordDetector), Chunk358085.setClipsMLPipelineTypeEnabled("yell_detector", Chunk341569.yellDetector), Chunk358085.setClipsMLPipelineTypeEnabled("whisper_transcription", Chunk341569.whisperTranscription), h.info("ML native module loaded successfully")
+        l.setClipsMLPipelineTypeEnabled("emotion_classifier", r.emotionClassifier), l.setClipsMLPipelineTypeEnabled("wake_word_detector", r.wakeWordDetector), l.setClipsMLPipelineTypeEnabled("yell_detector", r.yellDetector), l.setClipsMLPipelineTypeEnabled("whisper_transcription", r.whisperTranscription), h.info("ML native module loaded successfully")
       } catch (e) {
-        h.warn("Failed to load Clips ML module: ".concat(module.message)), this.state.nativeMLModuleState = Chunk868010.C.FAILED
+        h.warn("Failed to load Clips ML module: ".concat(e.message)), this.state.nativeMLModuleState = d.C.FAILED
       }
     }
     async refreshMLCatalog() {
       if (!this.mlCatalogRefreshing) try {
         this.mlCatalogRefreshing = true;
         let e = await this.loadMLCatalog();
-        null == this.state.catalogLastFetchTime && await this.scanModelState(module), this.state.models = module.models, this.state.catalogLastFetchTime = new Date, this.state.catalogFetchFailed = false, h.info("ML catalog refreshed successfully")
+        null == this.state.catalogLastFetchTime && await this.scanModelState(e), this.state.models = e.models, this.state.catalogLastFetchTime = new Date, this.state.catalogFetchFailed = false, h.info("ML catalog refreshed successfully")
       } catch (e) {
-        h.warn("Failed to refresh Clips ML catalog: ".concat(module.message)), this.state.catalogFetchFailed = true
+        h.warn("Failed to refresh Clips ML catalog: ".concat(e.message)), this.state.catalogFetchFailed = true
       } finally {
         this.mlCatalogRefreshing = false
       }
@@ -116,11 +116,11 @@ let h = new Chunk710845.Z("MLNativeModuleManager"),
         version: "1.0.0",
         models: {}
       };
-      for (let [t, o] of Chunk323678.lc) module.models[exports] = {
-        url: "https://cdn.discordapp.com/assets/content/".concat(require, ".onnx"),
+      for (let [t, o] of c.lc) e.models[t] = {
+        url: "https://cdn.discordapp.com/assets/content/".concat(o, ".onnx"),
         version: "1.0.0"
       };
-      return h.info("Loaded mock ML catalog with models:", Object.keys(module.models)), Promise.resolve(module)
+      return h.info("Loaded mock ML catalog with models:", Object.keys(e.models)), Promise.resolve(e)
     }
     async scanModelState(e) {
       if (!n.ZP.canCheckMLModelFilesExist()) return;
@@ -140,15 +140,15 @@ let h = new Chunk710845.Z("MLNativeModuleManager"),
       if (__OVERLAY__) return;
       let e = this.state.models,
         t = [];
-      for (let [o, a] of Object.entries(module)) {
-        let e = this.state.modelState[require];
-        (null == module ? true : module.status) !== Chunk868010.l.DOWNLOADED && (null == module ? true : module.status) !== Chunk868010.l.DOWNLOADING && exports.push(this.downloadMLModel({
-          modelId: require,
-          url: Chunk710845.url,
-          fileName: require
+      for (let [o, a] of Object.entries(e)) {
+        let e = this.state.modelState[o];
+        (null == e ? true : e.status) !== d.l.DOWNLOADED && (null == e ? true : e.status) !== d.l.DOWNLOADING && t.push(this.downloadMLModel({
+          modelId: o,
+          url: a.url,
+          fileName: o
         }))
       }
-      h.info("Waiting for ML model downloads", exports), await Promise.all(exports), h.info("Finished downloading all ML models")
+      h.info("Waiting for ML model downloads", t), await Promise.all(t), h.info("Finished downloading all ML models")
     }
     downloadMLModel(e) {
       let {
@@ -200,7 +200,7 @@ let h = new Chunk710845.Z("MLNativeModuleManager"),
     }
     constructor() {
       u(this, "state", {
-        nativeMLModuleState: Chunk868010.C.UNINITIALIZED,
+        nativeMLModuleState: d.C.UNINITIALIZED,
         models: {},
         modelState: {},
         catalogLastFetchTime: true,

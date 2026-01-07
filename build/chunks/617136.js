@@ -192,19 +192,19 @@ function U(e) {
 }
 
 function G() {
-  let e = (0, Chunk915750.WD)();
-  return Chunk473749.useCallback(t => {
+  let e = (0, _.WD)();
+  return r.useCallback(t => {
     j(A(T({}, t), {
       properties: A(T({}, t.properties), {
         impression_id: null == e ? true : e.getId()
       })
     }))
-  }, [module])
+  }, [e])
 }
 
 function Z() {
   let e = G();
-  return Chunk473749.useCallback(t => {
+  return r.useCallback(t => {
     let {
       questId: n,
       questContent: r,
@@ -232,7 +232,7 @@ function Z() {
         sourceQuestContent: d
       })
     })
-  }, [module])
+  }, [e])
 }
 
 function F(e, t) {

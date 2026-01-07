@@ -14,18 +14,18 @@ var Chunk473749 = require("./473749.js"),
   Chunk320851 = require("./320851.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.k4)(Chunk313789.n.SOUNDS_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.MKWyKc),
+  useTitle: () => c.intl.string(c.t.MKWyKc),
   useNotice: function() {
-    let t = (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds());
-    return Chunk473749.useMemo(() => {
-      if (module) return {
-        type: Chunk970013.v.INLINE_NOTICE,
+    let t = (0, l.e7)([r.Z], () => r.Z.getDisableAllSounds());
+    return i.useMemo(() => {
+      if (t) return {
+        type: u.v.INLINE_NOTICE,
         noticeType: "warning",
-        useText: () => Chunk388032.intl.format(Chunk388032.t.fRvixS, {
-          onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.NOTIFICATIONS_SOUNDS_CATEGORY)
+        useText: () => c.intl.format(c.t.fRvixS, {
+          onClick: () => (0, o.openUserSettings)(a.n.NOTIFICATIONS_SOUNDS_CATEGORY)
         })
       }
-    }, [module])
+    }, [t])
   },
-  buildLayout: () => [Chunk320851.J, Chunk103644.X]
+  buildLayout: () => [S.J, T.X]
 })

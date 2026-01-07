@@ -6,10 +6,10 @@ require.d(exports, {
 var Chunk308569 = require("./308569.js"),
   Chunk388032 = require("./388032.jsx");
 let a = {
-  [Chunk308569.pw.DISCORD_EMPLOYEE_ASKED_ME_TO]: () => Chunk388032.intl.string(Chunk388032.t.naBTFO),
-  [Chunk308569.pw.SOMEONE_ASKED_ME_TO]: () => Chunk388032.intl.string(Chunk388032.t.LQ0RUP),
-  [Chunk308569.pw.NEW_EMAIL]: () => Chunk388032.intl.string(Chunk388032.t.oOqQjw),
-  [Chunk308569.pw.SOMETHING_ELSE]: () => Chunk388032.intl.string(Chunk388032.t.p38n1b)
+  [Chunk308569.pw.DISCORD_EMPLOYEE_ASKED_ME_TO]: () => i.intl.string(i.t.naBTFO),
+  [Chunk308569.pw.SOMEONE_ASKED_ME_TO]: () => i.intl.string(i.t.LQ0RUP),
+  [Chunk308569.pw.NEW_EMAIL]: () => i.intl.string(i.t.oOqQjw),
+  [Chunk308569.pw.SOMETHING_ELSE]: () => i.intl.string(i.t.p38n1b)
 };
 
 function l(t) {

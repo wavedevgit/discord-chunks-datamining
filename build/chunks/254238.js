@@ -57,19 +57,19 @@ function y(e, t) {
   })
 }
 async function O() {
-  let e = Chunk258609.default.getAwaitingRemoteSessionInfo(),
-    t = null == module ? true : module.nonce;
-  Chunk570140.Z.dispatch({
+  let e = _.default.getAwaitingRemoteSessionInfo(),
+    t = null == e ? true : e.nonce;
+  o.Z.dispatch({
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(w(module.type, module.deviceId, module.commandId)), null != exports && require.push(A(exports));
+  ((null == e ? true : e.type) === h.ABu.PLAYSTATION || (null == e ? true : e.type) === h.ABu.PLAYSTATION_STAGING) && (null == e ? true : e.commandId) != null && (null == e ? true : e.deviceId) != null && n.push(w(e.type, e.deviceId, e.commandId)), null != t && n.push(A(t));
   try {
-    await Promise.all(require)
+    await Promise.all(n)
   } catch (e) {
-    Chunk668781.Z.show({
-      title: Chunk388032.intl.string(Chunk388032.t.LNhXcL),
-      body: Chunk388032.intl.string(Chunk388032.t.QnKxtP)
+    s.Z.show({
+      title: g.intl.string(g.t.LNhXcL),
+      body: g.intl.string(g.t.QnKxtP)
     })
   }
 }
@@ -122,20 +122,20 @@ function T(e, t, n, r) {
 async function C() {
   let e;
   try {
-    let t = null != Chunk19780.Z.getRTCConnectionId() ? Chunk771649.o.TRANSFER_EXISTING_CALL : Chunk771649.o.CREATE_NEW_CALL;
-    e = (await Chunk544891.tn.post({
-      url: Chunk981631.ANM.CONNECT_REQUEST_CREATE,
+    let t = null != c.Z.getRTCConnectionId() ? i.o.TRANSFER_EXISTING_CALL : i.o.CREATE_NEW_CALL;
+    e = (await a.tn.post({
+      url: h.ANM.CONNECT_REQUEST_CREATE,
       body: {
         analytics_properties: {
-          handoff_type: exports
+          handoff_type: t
         }
       },
       rejectWithError: false
     })).body.nonce
   } catch (e) {
-    Chunk960048.Z.captureException(module)
+    f.Z.captureException(e)
   }
-  return module
+  return e
 }
 
 function A(e) {

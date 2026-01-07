@@ -55,7 +55,7 @@ class o extends(r = Chunk473749.Component) {
       updateInterval: t,
       children: n
     } = this.props;
-    return require(this.state.smoothedDeltaBytes, exports, module)
+    return n(this.state.smoothedDeltaBytes, t, e)
   }
   constructor(e) {
     super(e), a(this, "_interval", new l.Xp), a(this, "update", () => {

@@ -137,36 +137,36 @@ class g extends(r = Chunk473749.PureComponent) {
       color: n,
       formatString: r
     } = this.props, a = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
-    if (null == module) return (0, Chunk54381.jsx)("div", p(d({}, Chunk473749), {
+    if (null == e) return (0, i.jsx)("div", p(d({}, a), {
       style: {
-        color: require,
-        minWidth: this.getMinWidth(exports)
+        color: n,
+        minWidth: this.getMinWidth(t)
       },
-      children: null != r ? r(this.padValue(exports)) : this.padValue(exports)
+      children: null != r ? r(this.padValue(t)) : this.padValue(t)
     }));
-    let o = Math.max(module, exports);
-    return (0, Chunk54381.jsxs)("div", p(d({}, Chunk473749), {
+    let o = Math.max(e, t);
+    return (0, i.jsxs)("div", p(d({}, a), {
       style: {
-        color: require,
+        color: n,
         position: "relative",
         overflow: "hidden"
       },
-      children: [(0, Chunk54381.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         style: {
           visibility: "hidden",
-          minWidth: this.getMinWidth(Chunk392711)
+          minWidth: this.getMinWidth(o)
         },
-        children: this.padValue(Chunk392711)
-      }), (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+        children: this.padValue(o)
+      }), (0, i.jsx)(l.Z.div, {
         style: d({
-          color: require
+          color: n
         }, this.getAnimatedStyle(this.prevAnimate)),
-        children: null != r ? r(this.padValue(module)) : this.padValue(module)
-      }), (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+        children: null != r ? r(this.padValue(e)) : this.padValue(e)
+      }), (0, i.jsx)(l.Z.div, {
         style: d({
-          color: require
+          color: n
         }, this.getAnimatedStyle(this.currAnimate)),
-        children: null != r ? r(this.padValue(exports)) : this.padValue(exports)
+        children: null != r ? r(this.padValue(t)) : this.padValue(t)
       })]
     }))
   }

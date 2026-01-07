@@ -11,14 +11,14 @@ var Chunk473749 = require("./473749.js"),
 
 function s() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    [t, n] = Chunk473749.useState(false),
-    s = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    l = (0, Chunk442837.e7)([Chunk451478.Z], () => Chunk451478.Z.isFocused()),
-    c = !s && !module,
-    u = l && (exports || c);
+    [t, n] = r.useState(false),
+    s = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+    l = (0, i.e7)([o.Z], () => o.Z.isFocused()),
+    c = !s && !e,
+    u = l && (t || c);
   return {
     shouldAnimate: u,
-    onMouseEnter: Chunk473749.useCallback(() => require(true), []),
-    onMouseLeave: Chunk473749.useCallback(() => require(false), [])
+    onMouseEnter: r.useCallback(() => n(true), []),
+    onMouseLeave: r.useCallback(() => n(false), [])
   }
 }

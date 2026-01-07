@@ -9,7 +9,7 @@ var Chunk727916 = require("./727916.js"),
   Chunk150816 = require("./150816.js");
 class a extends Chunk727916.Z {
   patternLeftBoundary() {
-    return Chunk150816.f.leftBoundary
+    return i.f.leftBoundary
   }
   innerPattern(e) {
     return new RegExp(this.innerPatternString(e), i.f.flags)

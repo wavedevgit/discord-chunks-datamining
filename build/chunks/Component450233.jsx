@@ -2,7 +2,7 @@
 /** chunk id: 450233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G: () => g,
-  Z: () => m
+  Z: () => h
 });
 var r, i, l, a, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,7 +12,7 @@ var r, i, l, a, Chunk54381 = require("./54381.js"),
   Chunk855775 = require("./855775.js"),
   Chunk388032 = require("./388032.jsx"),
   g = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
-class h extends(a = Chunk473749.PureComponent) {
+class m extends(a = Chunk473749.PureComponent) {
   getText(e, t) {
     if (429 === e.status) switch (t) {
       case "SHORT":
@@ -28,7 +28,7 @@ class h extends(a = Chunk473749.PureComponent) {
     }
   }
   componentWillUnmount() {
-    null != this.props.purchaseError && Chunk570140.Z.wait(() => Chunk16084.pB())
+    null != this.props.purchaseError && u.Z.wait(() => d.pB())
   }
   render() {
     let {
@@ -36,20 +36,20 @@ class h extends(a = Chunk473749.PureComponent) {
       purchaseError: t,
       messageStyle: n
     } = this.props;
-    return null == exports ? null : (0, Chunk54381.jsx)("div", {
-      className: module,
-      children: this.getText(exports, require)
+    return null == t ? null : (0, o.jsx)("div", {
+      className: e,
+      children: this.getText(t, n)
     })
   }
 }
 l = {
   messageStyle: "LONG"
-}, (i = "defaultProps") in h ? Object.defineProperty(h, i, {
+}, (i = "defaultProps") in m ? Object.defineProperty(m, i, {
   value: l,
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[i] = l;
-let m = Chunk442837.ZP.connectStores([Chunk855775.Z], () => ({
-  purchaseError: Chunk855775.Z.error
-}))(h)
+}) : m[i] = l;
+let h = Chunk442837.ZP.connectStores([Chunk855775.Z], () => ({
+  purchaseError: p.Z.error
+}))(m)

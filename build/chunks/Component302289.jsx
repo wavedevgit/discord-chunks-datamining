@@ -16,24 +16,24 @@ var Chunk120356 = require("./120356.js"),
   Chunk104672 = require("./104672.js"),
   Chunk108319 = require("./108319.js");
 let p = () => {
-  let e = Chunk388032.intl.string(Chunk517319.default.tr8Gni),
-    t = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk517319.default["3xKGSE"]), Chunk388032.intl.string(Chunk517319.default.XbgrG7));
-  return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-    className: a()(Chunk104672.container, Chunk108319.box),
+  let e = u.intl.string(c.default.tr8Gni),
+    t = (0, s.o)(u.intl.string(c.default["3xKGSE"]), u.intl.string(c.default.XbgrG7));
+  return (0, r.jsxs)(o.Kqy, {
+    className: a()(d.container, f.box),
     gap: 24,
     padding: 24,
-    children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    children: [(0, r.jsxs)(o.Kqy, {
       gap: 8,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
-        children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
-          children: module
+        children: (0, r.jsx)(o.y5t, {
+          children: e
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
-        children: exports
+        children: t
       })]
-    }), (0, Chunk54381.jsx)(Chunk130310.Z, {})]
+    }), (0, r.jsx)(l.Z, {})]
   })
 }

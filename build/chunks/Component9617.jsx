@@ -19,25 +19,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk983240 = require("./983240.js");
 let g = () => {
-  let [e, t] = (0, Chunk243778.US)([Chunk704215.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = module === Chunk704215.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, g = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
-  return (0, Chunk54381.jsx)(Chunk993413.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.Jzj9q4),
-    description: Chunk388032.intl.string(Chunk388032.t.lfF1Sp),
-    titleIcon: require ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
-      className: Chunk983240.newBadge,
-      text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
+  let [e, t] = (0, l.US)([a.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === a.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, g = (0, i.e7)([u.default], () => u.default.getId());
+  return (0, r.jsx)(d.Z, {
+    title: m.intl.string(m.t.Jzj9q4),
+    description: m.intl.string(m.t.lfF1Sp),
+    titleIcon: n ? (0, r.jsx)(o.IGR, {
+      className: h.newBadge,
+      text: m.intl.string(m.t.y2b7CA)
     }) : null,
-    borderType: Chunk504983.Y.LIMITED,
-    showBorder: require,
-    hasBackground: require,
-    children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-      text: Chunk388032.intl.string(Chunk388032.t.Geikwq),
+    borderType: f.Y.LIMITED,
+    showBorder: n,
+    hasBackground: n,
+    children: (0, r.jsx)(o.Button, {
+      text: m.intl.string(m.t.Geikwq),
       onClick: () => {
-        require && exports(Chunk921944.L.TAKE_ACTION), (0, Chunk892001.openUserProfileModal)({
+        n && t(p.L.TAKE_ACTION), (0, c.openUserProfileModal)({
           userId: g,
-          sourceAnalyticsLocations: [Chunk100527.Z.USER_SETTINGS_USER_PROFILE],
+          sourceAnalyticsLocations: [s.Z.USER_SETTINGS_USER_PROFILE],
           hideRestrictedProfile: true,
-          tabSection: Chunk228168.oh.WIDGETS
+          tabSection: _.oh.WIDGETS
         })
       },
       size: "sm"

@@ -8,10 +8,10 @@ var Chunk944486 = require("./944486.js"),
 
 function r() {
   var t;
-  let n = null != (t = Chunk944486.Z.getCurrentlySelectedChannelId()) ? module : true;
-  return null != exports && (0, Chunk176505.AB)(exports) ? {
-    channel_static_route: exports
+  let n = null != (t = l.Z.getCurrentlySelectedChannelId()) ? t : true;
+  return null != n && (0, i.AB)(n) ? {
+    channel_static_route: n
   } : {
-    channel_id: exports
+    channel_id: n
   }
 }

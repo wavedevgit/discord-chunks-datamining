@@ -12,9 +12,9 @@ let s = {
   binds: ["mod+shift+u"],
   comboKeysBindGlobal: true,
   action() {
-    let e = Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId());
-    return null == module || module.isManaged() || Chunk585483.S.dispatch(Chunk981631.CkL.UPLOAD_FILE, {
-      channelId: module.id
+    let e = r.Z.getChannel(i.Z.getChannelId());
+    return null == e || e.isManaged() || a.S.dispatch(o.CkL.UPLOAD_FILE, {
+      channelId: e.id
     }), false
   }
 }

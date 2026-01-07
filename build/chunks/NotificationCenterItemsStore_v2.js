@@ -86,7 +86,7 @@ function v() {
     notifCenterItems: [],
     staleNotifCenterItems: [],
     notifCenterIds: new Set,
-    notifCenterLocalItems: module ? y.notifCenterLocalItems : [],
+    notifCenterLocalItems: e ? y.notifCenterLocalItems : [],
     paginationHasMore: true,
     paginationCursor: true,
     notifCenterActive: false,
@@ -340,8 +340,8 @@ class K extends(r = Chunk442837.ZP.PersistedStore) {
       message: null != e.message ? e.message.toJS() : true
     });
     return b(g({}, y), {
-      notifCenterItems: y.notifCenterItems.map(module),
-      staleNotifCenterItems: y.staleNotifCenterItems.map(module)
+      notifCenterItems: y.notifCenterItems.map(e),
+      staleNotifCenterItems: y.staleNotifCenterItems.map(e)
     })
   }
   get loading() {

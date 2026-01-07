@@ -24,7 +24,7 @@ let m = {
     })
   },
   close() {
-    Chunk570140.Z.dispatch({
+    o.Z.dispatch({
       type: "NOTIFICATION_SETTINGS_MODAL_CLOSE"
     })
   },

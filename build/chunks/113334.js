@@ -8,11 +8,11 @@ require.d(exports, {
 var Chunk695346 = require("./695346.js");
 
 function i() {
-  let e = Chunk695346.dN.useSetting(),
-    t = Chunk695346.R$.useSetting();
-  return module || !exports
+  let e = r.dN.useSetting(),
+    t = r.R$.useSetting();
+  return e || !t
 }
 
 function a() {
-  return Chunk695346.dN.getSetting() || !Chunk695346.R$.getSetting()
+  return r.dN.getSetting() || !r.R$.getSetting()
 }

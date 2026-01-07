@@ -9,12 +9,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function i() {
-  let e = (0, Chunk442837.e7)([Chunk522474.Z], () => Chunk522474.Z.getWindow(Chunk981631.KJ3.ACTIVITY_POPOUT)),
-    n = Chunk473749.useMemo(() => null == module ? true : module.window.document, [module]),
-    t = Chunk473749.useMemo(() => null == exports ? true : exports.getElementById("app-mount"), [exports]);
+  let e = (0, o.e7)([c.Z], () => c.Z.getWindow(r.KJ3.ACTIVITY_POPOUT)),
+    n = a.useMemo(() => null == e ? true : e.window.document, [e]),
+    t = a.useMemo(() => null == n ? true : n.getElementById("app-mount"), [n]);
   return {
-    popoutWindow: module,
-    currentDocument: exports,
-    rootNode: require
+    popoutWindow: e,
+    currentDocument: n,
+    rootNode: t
   }
 }

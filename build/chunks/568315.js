@@ -9,11 +9,11 @@ var Chunk106351 = require("./106351.js"),
   Chunk82554 = require("./82554.js"),
   Chunk388032 = require("./388032.jsx");
 let o = {
-  getTitle: () => Chunk388032.intl.string(Chunk388032.t.vJOqMB),
-  getDisabledTitle: () => Chunk388032.intl.string(Chunk388032.t["B5ZvY+"]),
-  getDescription: () => Chunk388032.intl.string(Chunk388032.t["43UEUh"]),
+  getTitle: () => s.intl.string(s.t.vJOqMB),
+  getDisabledTitle: () => s.intl.string(s.t["B5ZvY+"]),
+  getDescription: () => s.intl.string(s.t["43UEUh"]),
   eligibleReportSubtypes: [Chunk82554.i5.SUB_SPAM],
   eligibleChannelTypes: [Chunk106351.d.DM, Chunk106351.d.GROUP_DM],
-  onApply: () => Chunk695346.Xr.updateSetting(Chunk524437.Xr.NON_FRIENDS),
-  predicate: () => Chunk695346.Xr.getSetting() === Chunk524437.Xr.DISABLED
+  onApply: () => i.Xr.updateSetting(l.Xr.NON_FRIENDS),
+  predicate: () => i.Xr.getSetting() === l.Xr.DISABLED
 }

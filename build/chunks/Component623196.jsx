@@ -37,21 +37,21 @@ let y = e => {
 };
 
 function O() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+  let e = (0, s.e7)([u.default], () => u.default.getCurrentUser()),
     {
       currentHarvestType: t,
       awaitingInitialRequest: n
-    } = (0, Chunk442837.cj)([Chunk575356.Z], () => ({
-      currentHarvestType: Chunk575356.Z.harvestType,
-      awaitingInitialRequest: Chunk575356.Z.requestingHarvest
+    } = (0, s.cj)([_.Z], () => ({
+      currentHarvestType: _.Z.harvestType,
+      awaitingInitialRequest: _.Z.requestingHarvest
     })),
-    [a, O] = Chunk473749.useState(false);
-  if (null == module) return null;
-  let v = (0, Chunk88658.$6)(exports, module) || require,
-    S = null != exports && o()().diff(o()(exports.created_at), "days") < Chunk981631.eBq,
+    [a, O] = i.useState(false);
+  if (null == e) return null;
+  let v = (0, f.$6)(t, e) || n,
+    S = null != t && o()().diff(o()(t.created_at), "days") < g.eBq,
     I = v && S,
-    T = module.isStaff(),
-    C = !module.verified,
+    T = e.isStaff(),
+    C = !e.verified,
     A = () => {
       y({
         onConfirm: e => {
@@ -74,42 +74,42 @@ function O() {
         }
       })
     };
-  return (0, Chunk54381.jsxs)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_DATA_REQUEST_V2,
-    children: [(0, Chunk54381.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t.XAHCgJ),
-      description: Chunk388032.intl.format(Chunk388032.t.P3kNfr, {
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GDPR_REQUEST_DATA)
+  return (0, r.jsxs)(m.U, {
+    setting: h.s6.PRIVACY_DATA_REQUEST_V2,
+    children: [(0, r.jsx)(m.H, {
+      header: E.intl.string(E.t.XAHCgJ),
+      description: E.intl.format(E.t.P3kNfr, {
+        helpdeskArticle: d.Z.getArticleURL(g.BhN.GDPR_REQUEST_DATA)
       })
-    }), I ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
-      className: Chunk801860.card,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), I ? (0, r.jsx)(l.Zbd, {
+      className: b.card,
+      children: (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.RNDlV9, {
-          date: o()(exports.created_at).add(Chunk981631.eBq, "days").format("MMMM Do YYYY")
+        children: E.intl.format(E.t.RNDlV9, {
+          date: o()(t.created_at).add(g.eBq, "days").format("MMMM Do YYYY")
         })
       })
-    }) : T ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
-      className: Chunk801860.card,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }) : T ? (0, r.jsx)(l.Zbd, {
+      className: b.card,
+      children: (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.ZPQLH2)
+        children: E.intl.string(E.t.ZPQLH2)
       })
-    }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [C ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
-        className: Chunk801860.card,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [C ? (0, r.jsx)(l.Zbd, {
+        className: b.card,
+        children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.c1f88z)
+          children: E.intl.string(E.t.c1f88z)
         })
-      }) : null, (0, Chunk54381.jsx)("div", {
-        className: Chunk801860.button,
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }) : null, (0, r.jsx)("div", {
+        className: b.button,
+        children: (0, r.jsx)(l.Button, {
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t.dmBSKo),
+          text: E.intl.string(E.t.dmBSKo),
           disabled: v,
           onClick: A,
-          loading: Chunk913527 || require
+          loading: a || n
         })
       })]
     })]

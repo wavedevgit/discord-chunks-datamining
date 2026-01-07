@@ -156,7 +156,7 @@ function U(e, t) {
 }
 
 function G() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "QUICKSWITCHER_HIDE"
   })
 }
@@ -164,18 +164,18 @@ function G() {
 function Z() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
-  k(module), Chunk570140.Z.dispatch(w({
+  k(e), i.Z.dispatch(w({
     type: "QUICKSWITCHER_SHOW"
-  }, M(exports)))
+  }, M(t)))
 }
 
 function F() {
-  U(Chunk981631.rMx.QUICKSWITCHER_CLOSED), G()
+  U(A.rMx.QUICKSWITCHER_CLOSED), G()
 }
 
 function B() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND";
-  Chunk823385.Z.isOpen() ? F() : Z(module)
+  C.Z.isOpen() ? F() : Z(e)
 }
 
 function V(e) {

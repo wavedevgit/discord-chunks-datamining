@@ -20,14 +20,14 @@ let s = false;
 
 function l() {
   var e;
-  let t = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.window) ? true : module.setContentProtection;
-  if (null == exports) return;
-  let n = Chunk246946.Z.enableContentProtection;
-  require !== s && (exports(require), s = require)
+  let t = null === i.Z || true === i.Z || null == (e = i.Z.window) ? true : e.setContentProtection;
+  if (null == t) return;
+  let n = a.Z.enableContentProtection;
+  n !== s && (t(n), s = n)
 }
 class c extends Chunk147913.Z {
   constructor() {
-    l(), super(), o(this, "stores", new Map().set(Chunk246946.Z, l))
+    l(), super(), o(this, "stores", new Map().set(a.Z, l))
   }
 }
 let u = new c

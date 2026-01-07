@@ -38,27 +38,27 @@ function m(e) {
 }
 class f extends Chunk473749.PureComponent {
   componentDidMount() {
-    this.mountedAt = Date.now(), this.maxScrolledPercentage = 0, this.track(Chunk981631.rMx.CHANGE_LOG_OPENED, {}, true)
+    this.mountedAt = Date.now(), this.maxScrolledPercentage = 0, this.track(h.rMx.CHANGE_LOG_OPENED, {}, true)
   }
   componentWillUnmount() {
-    this.track(Chunk981631.rMx.CHANGE_LOG_CLOSED)
+    this.track(h.rMx.CHANGE_LOG_CLOSED)
   }
   render() {
     var e, t;
-    return (0, Chunk54381.jsx)(Chunk554226.Z, (e = m({}, this.props), t = t = {
+    return (0, r.jsx)(c.Z, (e = m({}, this.props), t = t = {
       onClose: this.close,
       onScroll: this.handleScroll,
       track: this.track
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(exports)).forEach(function(n) {
+    })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), module))
+    }), e))
   }
   constructor(...e) {
     var t;

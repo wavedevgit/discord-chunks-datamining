@@ -9,5 +9,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_SETTING, {
   Component: Chunk595242.Z,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["+CbP2v"]), Chunk388032.intl.string(Chunk388032.t.Nn1lJy)]
+  useSearchTerms: () => [u.intl.string(u.t["+CbP2v"]), u.intl.string(u.t.Nn1lJy)]
 })

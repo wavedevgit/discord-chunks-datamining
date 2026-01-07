@@ -127,7 +127,7 @@ class h extends Chunk147913.Z {
     }, t)
   }
   handleSettingsUpdate() {
-    this.timeline.updateLength(Chunk435064.Z.getSettings().clipsLength)
+    this.timeline.updateLength(l.Z.getSettings().clipsLength)
   }
   constructor() {
     super(), p(this, "timeline", true), p(this, "scheduledClipTimeout", null), p(this, "scheduledClipSignal", null), p(this, "lastClipTimestamp", 0), p(this, "actions", {
@@ -137,7 +137,7 @@ class h extends Chunk147913.Z {
       GUILD_SOUNDBOARD_SOUND_PLAY_END: e => this.handleSoundboardPlayEnd(e),
       VOICE_CHANNEL_SELECT: () => this.clear(),
       CLIPS_SETTINGS_UPDATE: () => this.handleSettingsUpdate()
-    }), this.timeline = new Chunk519159.m(Chunk435064.Z.getSettings().clipsLength)
+    }), this.timeline = new c.m(l.Z.getSettings().clipsLength)
   }
 }
 let g = new h

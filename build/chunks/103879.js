@@ -17,22 +17,22 @@ var Chunk544891 = require("./544891.js"),
   Chunk800530 = require("./800530.js"),
   Chunk981631 = require("./981631.js");
 async function d() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "SAFETY_HUB_FETCH_START"
   });
-  let e = Chunk314897.default.getSuspendedUserToken(),
-    t = null != module ? Chunk981631.ANM.SAFETY_HUB_SUSPENDED : Chunk981631.ANM.SAFETY_HUB,
-    n = null != module ? Chunk544891.tn.post({
-      url: exports,
+  let e = o.default.getSuspendedUserToken(),
+    t = null != e ? u.ANM.SAFETY_HUB_SUSPENDED : u.ANM.SAFETY_HUB,
+    n = null != e ? r.tn.post({
+      url: t,
       body: {
-        token: module
+        token: e
       },
       rejectWithError: false
-    }) : Chunk544891.tn.get({
-      url: exports,
+    }) : r.tn.get({
+      url: t,
       rejectWithError: false
     });
-  await require.then(e => {
+  await n.then(e => {
     let {
       body: t
     } = e, {
@@ -190,20 +190,20 @@ async function m(e) {
   })
 }
 async function h() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START"
   });
-  let e = Chunk314897.default.getSuspendedUserToken(),
-    t = Chunk236289.Z.getAgeCheckAttempts(),
-    n = Chunk981631.ANM.SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION,
-    a = Chunk544891.tn.post({
-      url: require,
+  let e = o.default.getSuspendedUserToken(),
+    t = s.Z.getAgeCheckAttempts(),
+    n = u.ANM.SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION,
+    a = r.tn.post({
+      url: n,
       body: {
-        token: module
+        token: e
       },
       rejectWithError: false
     });
-  await Chunk406432.then(e => {
+  await a.then(e => {
     let {
       body: n
     } = e, {

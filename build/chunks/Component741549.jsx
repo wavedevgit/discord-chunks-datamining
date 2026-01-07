@@ -31,8 +31,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk976999 = require("./976999.js");
 
 function N() {
-  let e = (0, Chunk473749.useContext)(Chunk324060.Q),
-    t = (0, Chunk481060.dQu)(module.primaryColor).hex(),
+  let e = (0, i.useContext)(f.Q),
+    t = (0, c.dQu)(e.primaryColor).hex(),
     {
       quests: {
         numOrbs: n,
@@ -41,40 +41,40 @@ function N() {
         numOrbs: 0,
         numCompleted: 0
       }
-    } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
-    N = 0 === Chunk120356,
-    P = require > 0 || 0 === Chunk120356,
+    } = (0, l.e7)([p.Z], () => p.Z.getCheckpointData()),
+    N = 0 === a,
+    P = n > 0 || 0 === a,
     R = () => {
-      (0, Chunk782568.Z)(Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_LEARN_MORE))
+      (0, u.Z)(d.Z.getArticleURL(O.BhN.QUESTS_LEARN_MORE))
     };
-  return (0, Chunk54381.jsxs)(Chunk198358.Z, {
-    className: Chunk469095.container,
-    children: [(0, Chunk54381.jsx)(Chunk275189.Z, {
-      className: Chunk469095.video,
-      slide: Chunk612776.yD.QUESTS,
-      videoEntrySrc: Chunk1222.Z,
-      videoLoopSrc: Chunk976999.Z
-    }), (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: o()(Chunk554445.title, {
-          [Chunk469095.emptyState]: N
+  return (0, r.jsxs)(g.Z, {
+    className: T.container,
+    children: [(0, r.jsx)(_.Z, {
+      className: T.video,
+      slide: y.yD.QUESTS,
+      videoEntrySrc: C.Z,
+      videoLoopSrc: A.Z
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
+        className: o()(I.title, {
+          [T.emptyState]: N
         }),
-        children: [(0, Chunk54381.jsx)(Chunk793030.qDn, {
+        children: [(0, r.jsx)(s.qDn, {
           size: "refresh_sm",
-          color: exports,
-          colorClass: Chunk554445.iconColor,
-          className: Chunk554445.titleIcon
-        }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+          color: t,
+          colorClass: I.iconColor,
+          className: I.titleIcon
+        }), (0, r.jsx)(E.Z, {
           variant: "eyebrow",
-          className: Chunk554445.eyebrow,
-          children: N ? Chunk388032.intl.string(Chunk638398.default.QkdNzt) : Chunk388032.intl.string(Chunk638398.default.qsFkSO)
+          className: I.eyebrow,
+          children: N ? S.intl.string(v.default.QkdNzt) : S.intl.string(v.default.qsFkSO)
         })]
-      }), !N && (0, Chunk54381.jsx)(Chunk947189.Z, {
-        end: Chunk120356
-      }), P && (0, Chunk54381.jsx)(Chunk391876.Z, {
+      }), !N && (0, r.jsx)(b.Z, {
+        end: a
+      }), P && (0, r.jsx)(E.Z, {
         variant: "heading-xxl/medium",
-        className: Chunk469095.subtitle,
-        children: 0 === Chunk120356 ? Chunk388032.intl.format(Chunk638398.default.UYTBoT, {
+        className: T.subtitle,
+        children: 0 === a ? S.intl.format(v.default.UYTBoT, {
           learnMoreHook: (e, t) => (0, r.jsx)(s.P3F, {
             onClick: R,
             className: T.learnMore,
@@ -84,8 +84,8 @@ function N() {
               children: e
             })
           }, t)
-        }) : Chunk388032.intl.format(Chunk638398.default["gd+Olh"], {
-          numOrbs: require,
+        }) : S.intl.format(v.default["gd+Olh"], {
+          numOrbs: n,
           orbsHook: (e, t) => (0, r.jsxs)(m.Z, {
             children: [(0, r.jsx)(s.aQr, {
               className: T.orbsIcon,
@@ -93,8 +93,8 @@ function N() {
             }), e]
           }, t)
         })
-      }), (0, Chunk54381.jsx)(Chunk909397.o, {
-        slide: Chunk612776.yD.QUESTS
+      }), (0, r.jsx)(h.o, {
+        slide: y.yD.QUESTS
       })]
     })]
   })

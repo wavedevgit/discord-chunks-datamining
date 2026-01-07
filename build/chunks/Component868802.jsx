@@ -37,54 +37,54 @@ var Chunk54381 = require("./54381.js"),
   Chunk446818 = require("./446818.js"),
   Chunk932889 = require("./932889.js");
 let M = () => {
-    let t = (0, Chunk511857.a)((0, Chunk410030.ZP)()),
+    let t = (0, a.a)((0, T.ZP)()),
       {
         analyticsLocations: e
-      } = (0, Chunk906732.ZP)(Chunk100527.Z.CF_WARP_SETTINGS);
-    return (0, Chunk473749.useEffect)(() => {
-      Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: Chunk474936.cd.PRIVACY_PERK_SETTINGS,
-        location_stack: exports
+      } = (0, c.ZP)(S.Z.CF_WARP_SETTINGS);
+    return (0, l.useEffect)(() => {
+      f.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: D.cd.PRIVACY_PERK_SETTINGS,
+        location_stack: e
       })
-    }, [exports]), (0, Chunk54381.jsxs)("div", {
-      className: Chunk74186.settingsContainer,
-      children: [(0, Chunk54381.jsxs)(Chunk793030.$1m, {
+    }, [e]), (0, i.jsxs)("div", {
+      className: V.settingsContainer,
+      children: [(0, i.jsxs)(s.$1m, {
         color: "pink",
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk74186.headerContainer,
-          children: (0, Chunk54381.jsxs)("div", {
-            className: Chunk74186.header,
-            children: [(0, Chunk54381.jsxs)("div", {
-              className: Chunk74186.headerLogos,
-              children: [(0, Chunk54381.jsx)(Chunk589072.Z, {
-                color: module ? "black" : "white"
-              }), (0, Chunk54381.jsx)("div", {
-                className: Chunk74186.headerDivider
-              }), (0, Chunk54381.jsx)("img", {
-                src: module ? Chunk446818 : Chunk93109,
+        children: [(0, i.jsx)("div", {
+          className: V.headerContainer,
+          children: (0, i.jsxs)("div", {
+            className: V.header,
+            children: [(0, i.jsxs)("div", {
+              className: V.headerLogos,
+              children: [(0, i.jsx)(C.Z, {
+                color: t ? "black" : "white"
+              }), (0, i.jsx)("div", {
+                className: V.headerDivider
+              }), (0, i.jsx)("img", {
+                src: t ? Z : G,
                 alt: "Cloudflare",
                 width: 103,
                 height: 15
               })]
-            }), (0, Chunk54381.jsx)(Chunk37279.v, {})]
+            }), (0, i.jsx)(g.v, {})]
           })
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk74186.contentContainer,
-          children: [(0, Chunk54381.jsx)("img", {
-            src: Chunk932889,
+        }), (0, i.jsxs)("div", {
+          className: V.contentContainer,
+          children: [(0, i.jsx)("img", {
+            src: h,
             width: "100",
             alt: "Private browsing perk logo"
-          }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk74186.content,
-            children: [(0, Chunk54381.jsx)(Chunk614074.C, {}), (0, Chunk54381.jsx)(Chunk116282.R, {})]
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk74186.contentSpacer
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk74186.ctaContainer,
-            children: (0, Chunk54381.jsx)(U, {})
+          }), (0, i.jsxs)("div", {
+            className: V.content,
+            children: [(0, i.jsx)(R.C, {}), (0, i.jsx)(P.R, {})]
+          }), (0, i.jsx)("div", {
+            className: V.contentSpacer
+          }), (0, i.jsx)("div", {
+            className: V.ctaContainer,
+            children: (0, i.jsx)(U, {})
           })]
         })]
-      }), (0, Chunk54381.jsx)(Chunk868087.p, {})]
+      }), (0, i.jsx)(m.p, {})]
     })
   },
   U = () => {
@@ -92,53 +92,53 @@ let M = () => {
       installationStatus: t,
       isWeb: e,
       setInstallationStatus: n
-    } = (0, Chunk773275.xf)(), l = (0, Chunk612659.m)();
-    if (exports) return (0, Chunk54381.jsx)(Chunk969521.U, {});
-    if (!Chunk473749) return (0, Chunk54381.jsxs)("div", {
-      className: Chunk74186.subscribeBtnContainer,
-      children: [(0, Chunk54381.jsx)(Chunk740594.Z, {
-        buttonTextOverride: Chunk388032.intl.string(Chunk388032.t["8x0jKT"]),
-        subscriptionTier: Chunk474936.Si.TIER_2,
+    } = (0, N.xf)(), l = (0, d.m)();
+    if (e) return (0, i.jsx)(I.U, {});
+    if (!l) return (0, i.jsxs)("div", {
+      className: V.subscribeBtnContainer,
+      children: [(0, i.jsx)(E.Z, {
+        buttonTextOverride: v.intl.string(v.t["8x0jKT"]),
+        subscriptionTier: D.Si.TIER_2,
         fullWidth: true,
         size: "sm",
         premiumModalAnalyticsLocation: {
-          page: Chunk100527.Z.CF_WARP_SETTINGS
+          page: S.Z.CF_WARP_SETTINGS
         }
-      }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
+      }), (0, i.jsx)(r.zxk, {
         variant: "secondary",
-        text: Chunk388032.intl.string(Chunk388032.t.ZnqyZ2),
+        text: v.intl.string(v.t.ZnqyZ2),
         size: "sm",
         onClick: () => {
-          (0, Chunk952265.closeModal)(Chunk518596.USER_SETTINGS_MODAL_KEY), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
+          (0, u.closeModal)(L.USER_SETTINGS_MODAL_KEY), (0, O.uL)(b.Z5c.APPLICATION_STORE)
         }
       })]
     });
-    switch (module) {
-      case Chunk5900._n.ERROR:
-      case Chunk5900._n.NOT_INSTALLED:
-        return (0, Chunk54381.jsx)(Chunk233751.R, {});
-      case Chunk5900._n.INSTALLED:
-        return (0, Chunk54381.jsx)(Chunk584197.n, {});
-      case Chunk5900._n.ZERO_TRUST:
+    switch (t) {
+      case _._n.ERROR:
+      case _._n.NOT_INSTALLED:
+        return (0, i.jsx)(p.R, {});
+      case _._n.INSTALLED:
+        return (0, i.jsx)(A.n, {});
+      case _._n.ZERO_TRUST:
         break;
-      case Chunk5900._n.EXISTING_INSTALLATION:
-        return (0, Chunk54381.jsx)(Chunk159691.zxk, {
+      case _._n.EXISTING_INSTALLATION:
+        return (0, i.jsx)(r.zxk, {
           variant: "primary",
           onClick: () => {
-            (0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_CTA_CLICKED, {
+            (0, o.j)(b.rMx.NITRO_WARP_CTA_CLICKED, {
               is_enable_warp: true
-            }), require(Chunk5900._n.READY_FOR_LICENSE)
+            }), n(_._n.READY_FOR_LICENSE)
           },
-          text: Chunk388032.intl.string(Chunk472057.default.J09UWz)
+          text: v.intl.string(y.default.J09UWz)
         });
-      case Chunk5900._n.INSTALLING:
-      case Chunk5900._n.READY_FOR_LICENSE:
-      case Chunk5900._n.WAITING_FOR_TERMS:
-      case Chunk5900._n.INSTALLING_TIMEOUT:
-        return (0, Chunk54381.jsx)("div", {
-          className: Chunk74186.spinner,
-          children: (0, Chunk54381.jsx)(Chunk793030.$jN, {
-            type: Chunk793030.RAz.SPINNING_CIRCLE
+      case _._n.INSTALLING:
+      case _._n.READY_FOR_LICENSE:
+      case _._n.WAITING_FOR_TERMS:
+      case _._n.INSTALLING_TIMEOUT:
+        return (0, i.jsx)("div", {
+          className: V.spinner,
+          children: (0, i.jsx)(s.$jN, {
+            type: s.RAz.SPINNING_CIRCLE
           })
         })
     }

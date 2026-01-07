@@ -13,8 +13,8 @@ let a = (0, Chunk509613.ON)(Chunk313789.n.OVERLAY_CURRENT_GAME, {
   usePredicate: () => {
     let {
       runningGame: t
-    } = (0, Chunk137920.Z)();
-    return null != module
+    } = (0, i.Z)();
+    return null != t
   },
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["9cb1Uz"])]
+  useSearchTerms: () => [r.intl.string(r.t["9cb1Uz"])]
 })

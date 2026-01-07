@@ -9,8 +9,8 @@ var Chunk304680 = require("./304680.js"),
   Chunk413410 = require("./413410.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.ax)(Chunk313789.n.VOICE_AND_VIDEO_OPEN_CONNECTION_REPLAY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.nJnOHO),
-  useLabel: () => Chunk388032.intl.string(Chunk388032.t["3xjX0U"]),
+  useTitle: () => r.intl.string(r.t.nJnOHO),
+  useLabel: () => r.intl.string(r.t["3xjX0U"]),
   onClick: Chunk304680.z4,
   usePredicate: Chunk413410.B
 })

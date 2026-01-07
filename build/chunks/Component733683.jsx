@@ -45,7 +45,7 @@ class E extends(r = Chunk473749.Component) {
     let {
       tiers: e
     } = this.props;
-    return module[module.length - 1].y + C / 2
+    return e[e.length - 1].y + C / 2
   }
   getProgressHeight(e) {
     let t, {
@@ -71,8 +71,8 @@ class E extends(r = Chunk473749.Component) {
       currentTier: e,
       tiers: t
     } = this.props;
-    for (let n = exports.length - 1; require > 0; require--)
-      if (module >= exports[require].key) return require;
+    for (let n = t.length - 1; n > 0; n--)
+      if (e >= t[n].key) return n;
     return 0
   }
   getTierDisabled(e) {
@@ -90,24 +90,24 @@ class E extends(r = Chunk473749.Component) {
       showForegroundTooltip: n,
       foregroundTooltipY: r
     } = this.state;
-    if (!require || null == this.foregroundTooltipElementRef.current) return null;
-    let l = exports[this.getCurrentTierIndex() + 1],
-      a = null != Chunk473749 ? Chunk473749.numRequired : null,
-      s = null != Chunk120356 ? Chunk120356 - module : null;
-    return (0, Chunk54381.jsxs)(Chunk481060.gqK, {
+    if (!n || null == this.foregroundTooltipElementRef.current) return null;
+    let l = t[this.getCurrentTierIndex() + 1],
+      a = null != l ? l.numRequired : null,
+      s = null != a ? a - e : null;
+    return (0, i.jsxs)(f.gqK, {
       targetElementRef: this.foregroundTooltipElementRef,
       position: "right",
-      color: Chunk481060.aML.Colors.PRIMARY,
-      tooltipClassName: Chunk788555.foregroundTooltip,
-      children: [(0, Chunk54381.jsx)("div", {
-        children: Chunk388032.intl.format(Chunk388032.t.gDsyB9, {
-          numSubscriptions: module
+      color: f.aML.Colors.PRIMARY,
+      tooltipClassName: x.foregroundTooltip,
+      children: [(0, i.jsx)("div", {
+        children: h.intl.format(h.t.gDsyB9, {
+          numSubscriptions: e
         })
-      }), null != s && s > 0 && null != Chunk473749 ? (0, Chunk54381.jsx)("div", {
-        className: Chunk788555.tooltipMuted,
-        children: Chunk388032.intl.format(Chunk388032.t["2U9MDp"], {
+      }), null != s && s > 0 && null != l ? (0, i.jsx)("div", {
+        className: x.tooltipMuted,
+        children: h.intl.format(h.t["2U9MDp"], {
           number: s,
-          tier: Chunk473749.name
+          tier: l.name
         })
       }) : null]
     }, r)
@@ -237,23 +237,23 @@ class E extends(r = Chunk473749.Component) {
       className: e,
       tiers: t
     } = this.props, n = this.getCurrentTierIndex(), r = this.getTotalHeight();
-    return (0, Chunk54381.jsxs)("div", {
-      className: s()(module, Chunk788555.progressBar),
+    return (0, i.jsxs)("div", {
+      className: s()(e, x.progressBar),
       style: {
         height: r
       },
-      children: [(0, Chunk54381.jsxs)("svg", {
+      children: [(0, i.jsxs)("svg", {
         viewBox: "0 0 ".concat(O, " ").concat(r),
         width: O,
         height: r,
-        children: [this.renderProgressMask(r), this.renderProgressBar(r, require)]
-      }), (0, Chunk54381.jsx)("div", {
+        children: [this.renderProgressMask(r), this.renderProgressBar(r, n)]
+      }), (0, i.jsx)("div", {
         ref: this.foregroundTooltipElementRef,
         style: {
           top: this.state.foregroundTooltipY
         },
-        className: Chunk788555.foregroundTooltipPosition
-      }), exports.map((e, t) => this.renderTierMarker(e, t, n)), this.renderForegroundTooltip()]
+        className: x.foregroundTooltipPosition
+      }), t.map((e, t) => this.renderTierMarker(e, t, n)), this.renderForegroundTooltip()]
     })
   }
   constructor(...e) {

@@ -12,6 +12,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk630703 = require("./630703.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.k4)(Chunk313789.n.OVERLAY_VOICE_WIDGET_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.r1TZfh),
-  buildLayout: () => [Chunk630703.Z, Chunk139126.B, Chunk209252.v, Chunk366209.Q, Chunk470516.T]
+  useTitle: () => T.intl.string(T.t.r1TZfh),
+  buildLayout: () => [o.Z, s.B, u.v, r.Q, a.T]
 })

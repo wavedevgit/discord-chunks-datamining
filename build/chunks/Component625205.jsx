@@ -22,14 +22,14 @@ function m() {
   let {
     canSetInputDevice: n,
     canSetOutputDevice: c
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-    canSetInputDevice: Chunk131951.Z.supports(Chunk65154.AN.AUDIO_INPUT_DEVICE),
-    canSetOutputDevice: Chunk131951.Z.supports(Chunk65154.AN.AUDIO_OUTPUT_DEVICE)
-  })), m = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), h = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_OUTPUT), [g, E] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
+  } = (0, a.cj)([l.Z], () => ({
+    canSetInputDevice: l.Z.supports(d.AN.AUDIO_INPUT_DEVICE),
+    canSetOutputDevice: l.Z.supports(d.AN.AUDIO_OUTPUT_DEVICE)
+  })), m = (0, s.p6)(d.h7.AUDIO_INPUT), h = (0, s.p6)(d.h7.AUDIO_OUTPUT), [g, E] = (0, s.Ls)(d.h7.AUDIO_INPUT, {
     location: "UserSettingsDevices"
-  }), [b, y] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_OUTPUT, {
+  }), [b, y] = (0, s.Ls)(d.h7.AUDIO_OUTPUT, {
     location: "UserSettingsDevices"
-  }), O = g.concat(E), v = b.concat(y), S = Chunk473749.useMemo(() => {
+  }), O = g.concat(E), v = b.concat(y), S = i.useMemo(() => {
     let e = _.some(e => {
         var t;
         return null == m || null == (t = m.hardwareId) ? true : t.startsWith(e)
@@ -38,34 +38,34 @@ function m() {
         var t;
         return null == h || null == (t = h.hardwareId) ? true : t.startsWith(e)
       });
-    return module && exports && (null == m ? true : m.containerId) != null && m.containerId === (null == h ? true : h.containerId)
-  }, [m, h]), I = O[0], T = v[0], C = null != (e = null == I ? true : I.disabled) ? module : !require, A = null != (t = null == T ? true : T.disabled) ? exports : !Chunk358085;
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk600402.devices,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk600402.deviceColumns,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk600402.column,
-        children: (0, Chunk54381.jsx)(Chunk670863.j, {
-          label: Chunk388032.intl.string(Chunk388032.t.hHMYbb),
-          deviceType: Chunk65154.h7.AUDIO_INPUT,
+    return e && t && (null == m ? true : m.containerId) != null && m.containerId === (null == h ? true : h.containerId)
+  }, [m, h]), I = O[0], T = v[0], C = null != (e = null == I ? true : I.disabled) ? e : !n, A = null != (t = null == T ? true : T.disabled) ? t : !c;
+  return (0, r.jsxs)("div", {
+    className: p.devices,
+    children: [(0, r.jsxs)("div", {
+      className: p.deviceColumns,
+      children: [(0, r.jsx)("div", {
+        className: p.column,
+        children: (0, r.jsx)(o.j, {
+          label: f.intl.string(f.t.hHMYbb),
+          deviceType: d.h7.AUDIO_INPUT,
           location: "UserSettingsDevices",
           hideDeviceTypeIcon: true,
           isDisabled: C
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk600402.column,
-        children: (0, Chunk54381.jsx)(Chunk670863.j, {
-          label: Chunk388032.intl.string(Chunk388032.t.dl18zb),
-          deviceType: Chunk65154.h7.AUDIO_OUTPUT,
+      }), (0, r.jsx)("div", {
+        className: p.column,
+        children: (0, r.jsx)(o.j, {
+          label: f.intl.string(f.t.dl18zb),
+          deviceType: d.h7.AUDIO_OUTPUT,
           location: "UserSettingsDevices",
           hideDeviceTypeIcon: true,
           isDisabled: A
         })
       })]
-    }), S && (0, Chunk54381.jsx)(Chunk494620.Z, {
-      look: Chunk494620.z.WARNING,
-      children: Chunk388032.intl.string(Chunk388032.t.Ioz3gx)
+    }), S && (0, r.jsx)(u.Z, {
+      look: u.z.WARNING,
+      children: f.intl.string(f.t.Ioz3gx)
     })]
   })
 }

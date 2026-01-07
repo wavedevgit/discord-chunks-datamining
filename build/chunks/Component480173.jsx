@@ -13,14 +13,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk817466 = require("./817466.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk679363 = require("./679363.js");
-let p = Chunk473749.lazy(() => require.e("979").then(require.bind(require, 739859)));
+let p = Chunk473749.lazy(() => n.e("979").then(n.bind(n, 739859)));
 
 function f() {
-  let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    t = (0, Chunk7093.Z)(e => e.shouldRenderTenureLevelUp),
-    n = (0, Chunk817466.Z)();
-  return module || !exports || null == require ? null : (0, Chunk54381.jsx)(h, {
-    levelUpData: require
+  let e = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
+    t = (0, c.Z)(e => e.shouldRenderTenureLevelUp),
+    n = (0, d.Z)();
+  return e || !t || null == n ? null : (0, a.jsx)(h, {
+    levelUpData: n
   })
 }
 

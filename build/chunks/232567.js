@@ -27,11 +27,11 @@ function m() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       withAnalyticsToken: t = false
-    } = module;
-  return Chunk544891.tn.get({
-    url: Chunk981631.ANM.ME,
+    } = e;
+  return o.tn.get({
+    url: p.ANM.ME,
     query: {
-      with_analytics_token: exports
+      with_analytics_token: t
     },
     oldFormErrors: true,
     rejectWithError: false
@@ -45,14 +45,14 @@ function m() {
 function h() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return Chunk573261.Z.patch({
-    url: Chunk981631.ANM.USER_AGREEMENTS,
+  return f.Z.patch({
+    url: p.ANM.USER_AGREEMENTS,
     trackedActionData: {
-      event: Chunk525769.a.USER_ACCEPT_AGREEMENTS
+      event: a.a.USER_ACCEPT_AGREEMENTS
     },
     body: {
-      terms: module,
-      privacy: exports
+      terms: e,
+      privacy: t
     },
     oldFormErrors: true,
     rejectWithError: false

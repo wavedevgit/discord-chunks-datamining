@@ -8,15 +8,15 @@ var Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
 
 function a() {
-  switch ((0, Chunk358085.getPlatform)()) {
-    case Chunk358085.PlatformTypes.WINDOWS:
+  switch ((0, r.getPlatform)()) {
+    case r.PlatformTypes.WINDOWS:
       let e = "x86";
-      if (null != window.DiscordNative && (e = window.DiscordNative.os.arch), "x86" === module || "ia32" === module) return Chunk981631.QR$.WIN32;
-      return Chunk981631.QR$.WIN64;
-    case Chunk358085.PlatformTypes.OSX:
-      return Chunk981631.QR$.MACOS;
-    case Chunk358085.PlatformTypes.LINUX:
-      return Chunk981631.QR$.LINUX;
+      if (null != window.DiscordNative && (e = window.DiscordNative.os.arch), "x86" === e || "ia32" === e) return i.QR$.WIN32;
+      return i.QR$.WIN64;
+    case r.PlatformTypes.OSX:
+      return i.QR$.MACOS;
+    case r.PlatformTypes.LINUX:
+      return i.QR$.LINUX;
     default:
       throw Error("Unsupported build type")
   }

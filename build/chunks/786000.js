@@ -31,72 +31,72 @@ class o {
       let E = await s("eventdata", {
         eventID: this.nextEventId
       });
-      if ((null == (e = E.Events) ? true : module.length) > 0) {
+      if ((null == (e = E.Events) ? true : e.length) > 0) {
         if (this.isFirstPoll) this.isFirstPoll = false;
         else
           for (let e of E.Events) {
             let s;
-            if ("ChampionKill" === module.EventName) {
-              let l = (null != (t = module.KillerName) ? exports : "") === this.activePlayerName,
-                n = (null != (i = module.Assisters) ? require : []).some(e => e === this.activePlayerName);
+            if ("ChampionKill" === e.EventName) {
+              let l = (null != (t = e.KillerName) ? t : "") === this.activePlayerName,
+                n = (null != (i = e.Assisters) ? i : []).some(e => e === this.activePlayerName);
               s = {
                 type: "ChampionKill",
                 timestamp: this.gameTime,
-                killerName: module.KillerName,
-                victimName: module.VictimName,
-                playerIsKiller: Chunk998502,
-                playerIsAssister: Chunk894694,
-                victimIsActivePlayer: module.VictimName === this.activePlayerName
+                killerName: e.KillerName,
+                victimName: e.VictimName,
+                playerIsKiller: l,
+                playerIsAssister: n,
+                victimIsActivePlayer: e.VictimName === this.activePlayerName
               }
-            } else if ("Multikill" === module.EventName) s = {
+            } else if ("Multikill" === e.EventName) s = {
               type: "Multikill",
               timestamp: this.gameTime,
-              killStreak: module.KillStreak || 1,
-              killerName: null != (l = module.KillerName) ? Chunk998502 : "",
-              killerIsActivePlayer: module.KillerName === this.activePlayerName
+              killStreak: e.KillStreak || 1,
+              killerName: null != (l = e.KillerName) ? l : "",
+              killerIsActivePlayer: e.KillerName === this.activePlayerName
             };
-            else if ("TurretKilled" === module.EventName) {
-              let t = (null != (n = module.KillerName) ? Chunk894694 : "") === this.activePlayerName,
-                i = (null != (r = module.Assisters) ? Chunk388032 : []).some(e => e === this.activePlayerName);
+            else if ("TurretKilled" === e.EventName) {
+              let t = (null != (n = e.KillerName) ? n : "") === this.activePlayerName,
+                i = (null != (r = e.Assisters) ? r : []).some(e => e === this.activePlayerName);
               s = {
                 type: "TurretKill",
                 timestamp: this.gameTime,
-                playerHelpedKill: exports || require
+                playerHelpedKill: t || i
               }
-            } else if ("InhibKilled" === module.EventName) {
-              let t = (null != (a = module.KillerName) ? a : "") === this.activePlayerName,
-                i = (null != (o = module.Assisters) ? o : []).some(e => e === this.activePlayerName);
+            } else if ("InhibKilled" === e.EventName) {
+              let t = (null != (a = e.KillerName) ? a : "") === this.activePlayerName,
+                i = (null != (o = e.Assisters) ? o : []).some(e => e === this.activePlayerName);
               s = {
                 type: "InhibitorKill",
                 timestamp: this.gameTime,
-                playerHelpedKill: exports || require
+                playerHelpedKill: t || i
               }
-            } else if ("DragonKill" === module.EventName) {
-              let t = (null != (m = module.KillerName) ? m : "") === this.activePlayerName,
-                i = (null != (p = module.Assisters) ? p : []).some(e => e === this.activePlayerName);
+            } else if ("DragonKill" === e.EventName) {
+              let t = (null != (m = e.KillerName) ? m : "") === this.activePlayerName,
+                i = (null != (p = e.Assisters) ? p : []).some(e => e === this.activePlayerName);
               s = {
                 type: "DragonKill",
                 timestamp: this.gameTime,
-                playerHelpedKill: exports || require,
-                killerName: null != (c = module.KillerName) ? c : "",
-                drakeName: module.DragonType,
-                stolen: (null != (u = module.Stolen) ? u : "") === "True"
+                playerHelpedKill: t || i,
+                killerName: null != (c = e.KillerName) ? c : "",
+                drakeName: e.DragonType,
+                stolen: (null != (u = e.Stolen) ? u : "") === "True"
               }
-            } else if ("BaronKill" === module.EventName) {
-              let t = (null != (v = module.KillerName) ? v : "") === this.activePlayerName,
-                i = (null != (h = module.Assisters) ? h : []).some(e => e === this.activePlayerName);
+            } else if ("BaronKill" === e.EventName) {
+              let t = (null != (v = e.KillerName) ? v : "") === this.activePlayerName,
+                i = (null != (h = e.Assisters) ? h : []).some(e => e === this.activePlayerName);
               s = {
                 type: "BaronKill",
                 timestamp: this.gameTime,
-                playerHelpedKill: exports || require,
-                stolen: (null != (y = module.Stolen) ? y : "") === "True",
-                killerName: null != (d = module.KillerName) ? d : ""
+                playerHelpedKill: t || i,
+                stolen: (null != (y = e.Stolen) ? y : "") === "True",
+                killerName: null != (d = e.KillerName) ? d : ""
               }
             }
             null != s && this.addEventToWindow(s)
           }
         let e = E.Events[E.Events.length - 1];
-        this.nextEventId = module.EventID + 1
+        this.nextEventId = e.EventID + 1
       }
     } catch (e) {}
   }
@@ -255,14 +255,14 @@ class o {
       let [i, l] = await Promise.all([s("activeplayer"), s("playeritems", {
         riotId: this.activePlayerRiotId
       })]), n = new Map;
-      if (Array.isArray(Chunk998502))
-        for (let e of Chunk998502) Chunk894694.set(module.itemID, module);
+      if (Array.isArray(l))
+        for (let e of l) n.set(e.itemID, e);
       let r = {
-        level: null != (e = require.level) ? module : 1,
-        currentGold: null != (t = require.currentGold) ? exports : 0,
-        items: Chunk894694
+        level: null != (e = i.level) ? e : 1,
+        currentGold: null != (t = i.currentGold) ? t : 0,
+        items: n
       };
-      this.gameTime += 1, null != this.previousPlayerState && this.detectStateChanges(this.previousPlayerState, Chunk388032), this.previousPlayerState = Chunk388032
+      this.gameTime += 1, null != this.previousPlayerState && this.detectStateChanges(this.previousPlayerState, r), this.previousPlayerState = r
     } catch (e) {}
   }
   detectStateChanges(e, t) {
@@ -289,9 +289,9 @@ class o {
   async fetchActivePlayer() {
     try {
       let t = await s("activeplayer");
-      if (null != exports.riotId) {
+      if (null != t.riotId) {
         var e;
-        return this.activePlayerRiotId = exports.riotId, this.activePlayerName = null != (e = exports.riotIdGameName) ? module : "", true
+        return this.activePlayerRiotId = t.riotId, this.activePlayerName = null != (e = t.riotIdGameName) ? e : "", true
       }
       returnfalse
     } catch (e) {

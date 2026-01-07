@@ -24,16 +24,16 @@ var l = function(e) {
 function c() {
   return [{
     value: "confusion",
-    label: Chunk388032.intl.string(Chunk388032.t["64Oph/"])
+    label: o.intl.string(o.t["64Oph/"])
   }, {
     value: "does_not_achieve_wants",
-    label: Chunk388032.intl.string(Chunk388032.t["wH5R/r"])
+    label: o.intl.string(o.t["wH5R/r"])
   }, {
     value: "hard_to_access",
-    label: Chunk388032.intl.string(Chunk388032.t["4uZBRp"])
+    label: o.intl.string(o.t["4uZBRp"])
   }, {
     value: "something_else",
-    label: Chunk388032.intl.string(Chunk388032.t.YicFbD)
+    label: o.intl.string(o.t.YicFbD)
   }]
 }
 var u = function(e) {
@@ -43,16 +43,16 @@ var u = function(e) {
 function d() {
   return [{
     value: "confusion",
-    label: Chunk388032.intl.string(Chunk388032.t.IumZmj)
+    label: o.intl.string(o.t.IumZmj)
   }, {
     value: "does_not_achieve_wants",
-    label: Chunk388032.intl.string(Chunk388032.t.mXkYyW)
+    label: o.intl.string(o.t.mXkYyW)
   }, {
     value: "hard_to_access",
-    label: Chunk388032.intl.string(Chunk388032.t.eg1hVP)
+    label: o.intl.string(o.t.eg1hVP)
   }, {
     value: "something_else",
-    label: Chunk388032.intl.string(Chunk388032.t.WAYoTx)
+    label: o.intl.string(o.t.WAYoTx)
   }]
 }
 var f = function(e) {

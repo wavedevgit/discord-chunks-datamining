@@ -4,12 +4,12 @@
 
 function t() {
   var e;
-  return document.documentElement && (e = document.documentElement.clientWidth), !module && document.body && (e = document.body.clientWidth), module || 0
+  return document.documentElement && (e = document.documentElement.clientWidth), !e && document.body && (e = document.body.clientWidth), e || 0
 }
 
 function n() {
   var e;
-  return document.documentElement && (e = document.documentElement.clientHeight), !module && document.body && (e = document.body.clientHeight), module || 0
+  return document.documentElement && (e = document.documentElement.clientHeight), !e && document.body && (e = document.body.clientHeight), e || 0
 }
 
 function r() {

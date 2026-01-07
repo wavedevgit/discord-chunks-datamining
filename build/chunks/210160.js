@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js");
 
 function i() {
-  let [e, t] = Chunk473749.useState(null), n = Chunk473749.useRef(new Map), i = Chunk473749.useRef(new Map), l = Chunk473749.useCallback((e, r) => {
+  let [e, t] = r.useState(null), n = r.useRef(new Map), i = r.useRef(new Map), l = r.useCallback((e, r) => {
     let l = n.current.get(e);
     null == l && (l = new Set, n.current.set(e, l));
     let s = i.current.get(e);
@@ -17,7 +17,7 @@ function i() {
       }, 100);
       i.current.set(e, n)
     }
-  }, []), s = Chunk473749.useCallback((e, r) => {
+  }, []), s = r.useCallback((e, r) => {
     let l = n.current.get(e);
     if (null == l) return;
     l.delete(r);
@@ -29,13 +29,13 @@ function i() {
       i.current.set(e, n)
     }
   }, []);
-  return Chunk473749.useEffect(() => {
+  return r.useEffect(() => {
     let e = i.current;
     return () => {
-      module.forEach(e => clearTimeout(e))
+      e.forEach(e => clearTimeout(e))
     }
   }, []), {
-    hoveredGroupId: module,
+    hoveredGroupId: e,
     handleGroupHover: l,
     handleGroupHoverRemove: s
   }

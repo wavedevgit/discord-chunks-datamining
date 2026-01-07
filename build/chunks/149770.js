@@ -39,7 +39,7 @@ class p extends Chunk147913.Z {
     null == u.Z.getGuildId() && null != n && n === r && (0, o.uL)(d.Z5c.CHANNEL(d.ME, t.id)), null != n && n === c.Z.getVoiceChannelId() && i.default.selectVoiceChannel(t.id, l.Z.isVideoEnabled())
   }
   handleLogout() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "VOICE_CHANNEL_SELECT",
       channelId: null,
       guildId: null,

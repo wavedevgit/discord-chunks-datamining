@@ -12,23 +12,23 @@ var Chunk473749 = require("./473749.js"),
   Chunk448986 = require("./448986.js");
 
 function s() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  let [i, a] = Chunk473749.useState(true), [o, s] = Chunk473749.useState(true), l = Chunk473749.useRef(null);
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  let [i, a] = r.useState(true), [o, s] = r.useState(true), l = r.useRef(null);
   return c(l, e => {
     let {
       width: t,
       height: n
     } = e;
     s(n), a(t)
-  }, exports), {
+  }, t), {
     ref: l,
-    width: Chunk374470,
-    height: Chunk448986
+    width: i,
+    height: o
   }
 }
 
 function l() {
-  let [e, t] = Chunk473749.useState(true), [n, s] = Chunk473749.useState(true), l = (0, Chunk448986.Z)(e => {
+  let [e, t] = r.useState(true), [n, s] = r.useState(true), l = (0, o.Z)(e => {
     if (!(0, i.kK)(e.target, HTMLElement)) return {
       scrollWidth: true,
       scrollHeight: true
@@ -37,9 +37,9 @@ function l() {
     s(n.scrollHeight), t(n.scrollWidth)
   });
   return {
-    ref: (0, Chunk393903.y)(l),
-    scrollWidth: module,
-    scrollHeight: require
+    ref: (0, a.y)(l),
+    scrollWidth: e,
+    scrollHeight: n
   }
 }
 

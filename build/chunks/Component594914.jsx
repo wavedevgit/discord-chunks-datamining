@@ -95,10 +95,10 @@ function _(e, t) {
 }
 
 function m() {
-  (0, Chunk481060.ZDy)(async () => {
+  (0, a.ZDy)(async () => {
     let {
       default: e
-    } = await require.e("21854").then(require.bind(require, 211912));
+    } = await n.e("21854").then(n.bind(n, 211912));
     return t => (0, r.jsx)(e, d({}, t))
   }, {
     modalKey: "slayer-storefront-announcement-modal"

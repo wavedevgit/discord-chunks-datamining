@@ -52,8 +52,8 @@ function p(e, t) {
   }), e
 }
 let _ = () => {
-    Chunk626135.default.track(Chunk981631.rMx.MODAL_DISMISSED, {
-      type: Chunk592286.N4
+    a.default.track(c.rMx.MODAL_DISMISSED, {
+      type: l.N4
     })
   },
   m = e => {
@@ -95,7 +95,7 @@ let _ = () => {
     },
     closeMemberVerificationModal() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      module || _(), (0, Chunk952265.closeModal)(Chunk592286.Pn)
+      e || _(), (0, i.closeModal)(l.Pn)
     },
     openMemberVerificationPreviewModal(e) {
       (0, i.openModalLazy)(async () => {

@@ -35,11 +35,11 @@ let u = {},
 
 function f() {
   var e, t, n, r, i, a;
-  let o = Chunk581883.Z.settings;
+  let o = s.Z.settings;
   return {
-    gifAutoPlay: null == (t = Chunk570140.textAndImages) || null == (e = exports.gifAutoPlay) ? true : module.value,
-    animateEmoji: null == (r = Chunk570140.textAndImages) || null == (n = r.animateEmoji) ? true : require.value,
-    animateStickers: null == (a = Chunk570140.textAndImages) || null == (i = Chunk433517.animateStickers) ? true : Chunk442837.value
+    gifAutoPlay: null == (t = o.textAndImages) || null == (e = t.gifAutoPlay) ? true : e.value,
+    animateEmoji: null == (r = o.textAndImages) || null == (n = r.animateEmoji) ? true : n.value,
+    animateStickers: null == (a = o.textAndImages) || null == (i = a.animateStickers) ? true : i.value
   }
 }
 
@@ -72,11 +72,11 @@ function g(e) {
 function E() {
   let e = f(),
     t = false;
-  for (let n in module) {
-    let r = require;
-    module[r] !== d[r] && (delete u[r], t = true)
+  for (let n in e) {
+    let r = n;
+    e[r] !== d[r] && (delete u[r], t = true)
   }
-  return exports
+  return t
 }
 class b extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -95,8 +95,8 @@ class b extends(r = Chunk442837.ZP.PersistedStore) {
 }
 l(b, "displayName", "UserSettingsOverridesStore"), l(b, "persistKey", "UserSettingsOverridesStore"), l(b, "migrations", [() => {
   var e;
-  let t = null != (e = Chunk433517.K.get("UserSettingsStoreOverrides")) ? module : {};
-  return Chunk433517.K.remove("UserSettingsStoreOverrides"), exports
+  let t = null != (e = a.K.get("UserSettingsStoreOverrides")) ? e : {};
+  return a.K.remove("UserSettingsStoreOverrides"), t
 }]);
 let y = new b(Chunk570140.Z, {
   USER_SETTINGS_PROTO_UPDATE: E,

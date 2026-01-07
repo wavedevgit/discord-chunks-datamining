@@ -26,11 +26,11 @@ let f = new(0, Chunk919118.J)(d(Chunk201767.Z));
 function p() {
   let e = "undefined" != typeof navigator && (navigator.language || navigator.userLanguage) || "en-US";
   try {
-    Intl.DateTimeFormat.supportedLocalesOf([module])
+    Intl.DateTimeFormat.supportedLocalesOf([e])
   } catch {
     e = "en-US"
   }
-  return module
+  return e
 }
 
 function _(e, t, n, r, a) {

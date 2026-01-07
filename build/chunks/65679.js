@@ -9,9 +9,9 @@ var Chunk685816 = require("./685816.js"),
   Chunk215023 = require("./215023.js");
 
 function o() {
-  for (let e of [Chunk215023.AW.HOME, Chunk215023.AW.ORBS, Chunk215023.AW.CATALOG]) {
-    let t = Chunk52030.Z.getShopBlocks(module).find(e => e.type === r.z.WIDE_BANNER);
-    if ((null == exports ? true : exports.dismissibleContentVersion) != null) return exports.dismissibleContentVersion
+  for (let e of [a.AW.HOME, a.AW.ORBS, a.AW.CATALOG]) {
+    let t = i.Z.getShopBlocks(e).find(e => e.type === r.z.WIDE_BANNER);
+    if ((null == t ? true : t.dismissibleContentVersion) != null) return t.dismissibleContentVersion
   }
   return 0
 }

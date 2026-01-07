@@ -10,8 +10,8 @@ var Chunk507604 = require("./507604.js"),
   get: function() {
     var e = 0;
     return s(this, function() {
-      module++
-    }), module
+      e++
+    }), e
   },
   configurable: true,
   enumerable: true

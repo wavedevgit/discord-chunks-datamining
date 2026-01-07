@@ -43,9 +43,9 @@ let f = {
     }
   },
   p = () => ({
-    id: Chunk317257.l.ORB_PROFILE_BADGE,
-    icon: Chunk317257.l.ORB_PROFILE_BADGE,
-    iconSrc: Chunk239261.Z,
+    id: o.l.ORB_PROFILE_BADGE,
+    icon: o.l.ORB_PROFILE_BADGE,
+    iconSrc: d.Z,
     description: "",
     isPreviewMode: true
   })

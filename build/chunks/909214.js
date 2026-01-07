@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk293389 = require("./293389.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.REGISTERED_GAMES_ADD_GAME_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.GTCx0p)],
+  useSearchTerms: () => [u.intl.string(u.t.GTCx0p)],
   Component: Chunk293389.pJ
 })

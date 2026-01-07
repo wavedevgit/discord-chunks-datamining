@@ -60,22 +60,22 @@ function b(e, t) {
 
 function y() {
   var e;
-  let t = null === s() || true === s() || null == (e = s().os) ? true : module.toString();
-  if (null == exports || null == Chunk579806.Z) return null;
-  let n = Chunk579806.Z.os.release,
-    [r, i, a] = Chunk998502.ZP.parsedOSRelease;
-  if (exports.includes("Windows 10") && true !== a && a >= 22e3 && (t = exports.replace("Windows 10", "Windows 11")), exports.includes("OS X 10.15.7") && true !== Chunk54381 && Chunk54381 >= 20) {
-    let e = Chunk54381 >= 25 ? Chunk54381 + 1 : Chunk54381 - 9;
-    t = "macOS ".concat(module)
+  let t = null === s() || true === s() || null == (e = s().os) ? true : e.toString();
+  if (null == t || null == c.Z) return null;
+  let n = c.Z.os.release,
+    [r, i, a] = p.ZP.parsedOSRelease;
+  if (t.includes("Windows 10") && true !== a && a >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && true !== r && r >= 20) {
+    let e = r >= 25 ? r + 1 : r - 9;
+    t = "macOS ".concat(e)
   }
-  return "".concat(exports, " (").concat(require, ")")
+  return "".concat(t, " (").concat(n, ")")
 }
 
 function O(e) {
   var t, n, i, o, s;
   let {
     compact: p = false
-  } = e, h = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "483489", v = "0b18241b7d16d81a298be6f8568ac1df26c85784".substring(0, 7), S = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), I = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), T = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), C = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, A = y(), N = [E, O, "(".concat(v, ")")];
+  } = e, h = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "483493", v = "813046e91848277cc010dd5c0e506e80d8c20157".substring(0, 7), S = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), I = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), T = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), C = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, A = y(), N = [E, O, "(".concat(v, ")")];
   return (null != S && (N.push("Host ".concat(S)), null != T && N.push(T.toLowerCase()), null != I && N.push("(".concat(I, ")"))), N.push("Build Override: ".concat(null != C ? C.id : "N/A")), null != A && N.push(A), p) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       copyValue: N.join(" "),

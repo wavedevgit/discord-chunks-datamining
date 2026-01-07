@@ -29,11 +29,11 @@ let E = async () => {
   try {
     let {
       body: e
-    } = await Chunk544891.tn.get({
-      url: Chunk981631.ANM.USER_OFFER_IDS,
+    } = await s.tn.get({
+      url: C.ANM.USER_OFFER_IDS,
       rejectWithError: true
     });
-    return module
+    return e
   } catch (e) {
     return []
   }
@@ -59,11 +59,11 @@ let E = async () => {
   try {
     let {
       body: e
-    } = await Chunk544891.tn.get({
-      url: Chunk981631.ANM.USER_OFFERS,
+    } = await s.tn.get({
+      url: C.ANM.USER_OFFERS,
       rejectWithError: true
     });
-    return module
+    return e
   } catch (e) {
     return {
       trial: [],
@@ -72,12 +72,12 @@ let E = async () => {
   }
 }, P = async () => {
   try {
-    await Chunk544891.tn.del({
-      url: Chunk981631.ANM.USER_OFFERS,
+    await s.tn.del({
+      url: C.ANM.USER_OFFERS,
       rejectWithError: true
     })
   } catch (e) {} finally {
-    await Chunk431.Z.forceReset(), await (0, Chunk937579.Tf)()
+    await f.Z.forceReset(), await (0, m.Tf)()
   }
 }, w = async e => {
   await s.tn.post({
@@ -472,17 +472,17 @@ function k(e) {
 }
 
 function R() {
-  let [e, t] = Chunk473749.useState([]), [n, i] = Chunk473749.useState([]), [l, s] = Chunk473749.useState(), [u, h] = Chunk473749.useState(), [x, b] = Chunk473749.useState([]), [y, O] = Chunk473749.useState([]), [R, A] = Chunk473749.useState(true), [D, Z] = Chunk473749.useState(10080), [L, M] = Chunk473749.useState([]), {
+  let [e, t] = r.useState([]), [n, i] = r.useState([]), [l, s] = r.useState(), [u, h] = r.useState(), [x, b] = r.useState([]), [y, O] = r.useState([]), [R, A] = r.useState(true), [D, Z] = r.useState(10080), [L, M] = r.useState([]), {
     entitlements: U,
     deleteFractionalPremium: B,
     refreshEntitlementList: F
-  } = (0, Chunk232867.m)();
-  Chunk473749.useEffect(() => {
+  } = (0, j.m)();
+  r.useEffect(() => {
     F()
-  }, [F]), Chunk473749.useEffect(() => {
+  }, [F]), r.useEffect(() => {
     M(U.filter(e => e.sourceType === C.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
-  }, [U]), Chunk473749.useEffect(() => {
-    (0 === module.length || 0 === require.length || R) && E().then(e => {
+  }, [U]), r.useEffect(() => {
+    (0 === e.length || 0 === n.length || R) && E().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
           value: e.trial[t]
@@ -493,125 +493,125 @@ function R() {
         }));
       t(n), i(a), null == l && s(n[0].value), null == u && h(a[0].value)
     })
-  }, [module, require, l, Chunk105713, R]), Chunk473749.useEffect(() => {
-    R && (A(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), N().then(e => {
+  }, [e, n, l, u, R]), r.useEffect(() => {
+    R && (A(false), f.Z.forceReset(), (0, m.Tf)(), N().then(e => {
       b(e.trial.sort((e, t) => e.id.localeCompare(t.id))), O(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [R]);
   let G = async () => {
     null != l && (await T(l, "trial"), A(true))
   }, V = async () => {
-    null != Chunk105713 && (await T(Chunk105713, "discount"), A(true))
+    null != u && (await T(u, "discount"), A(true))
   }, z = async () => {
     await P(), A(true)
   }, W = async () => {
     let e = new Date(Date.now() + 60 * D * 1e3).toISOString();
-    await w(module), F()
+    await w(e), F()
   };
-  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk663618.panel,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk68428.panelInner,
-      children: [(0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, a.jsx)(d.zJl, {
+    className: S.panel,
+    children: (0, a.jsxs)("div", {
+      className: _.panelInner,
+      children: [(0, a.jsxs)("section", {
+        className: _.section,
+        children: [(0, a.jsx)(d.Heading, {
           variant: "heading-md/semibold",
           children: "Utils"
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk68428.buttons,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsxs)("div", {
+          className: _.buttons,
+          children: [(0, a.jsx)(d.Button, {
             variant: "primary",
             size: "sm",
             text: "Clear all User Offers",
             onClick: z
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          }), (0, a.jsx)(d.Button, {
             variant: "primary",
             size: "sm",
             text: "Clear Mobile Trials DismissibleContent",
-            onClick: () => (0, Chunk675478.w9)(Chunk704215.z.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE)
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+            onClick: () => (0, p.w9)(o.z.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE)
+          }), (0, a.jsx)(d.Button, {
             variant: "primary",
             size: "sm",
             text: "Clear Offer Nagbar DismissibleContent",
-            onClick: () => (0, Chunk675478.Z1)(Chunk704215.z.NAGBAR_NOTICE_OFFER_EXPIRING)
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+            onClick: () => (0, p.Z1)(o.z.NAGBAR_NOTICE_OFFER_EXPIRING)
+          }), (0, a.jsx)(d.Button, {
             variant: "primary",
             size: "sm",
             text: "Refresh DevTools",
             onClick: () => A(true)
           })]
         })]
-      }), (0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, a.jsxs)("section", {
+        className: _.section,
+        children: [(0, a.jsx)(d.Heading, {
           variant: "heading-md/semibold",
           children: "Create a Trial Offer"
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk68428.inputRow,
-          children: [(0, Chunk54381.jsx)(Chunk199849.B6, {
-            className: Chunk68428.input,
-            options: module,
+        }), (0, a.jsxs)("div", {
+          className: _.inputRow,
+          children: [(0, a.jsx)(c.B6, {
+            className: _.input,
+            options: e,
             isSelected: e => l === e,
             placeholder: "Trial Type",
             serialize: e => String(e),
             select: e => s(e),
-            popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+            popoutLayerContext: v.O$
+          }), (0, a.jsx)(d.Button, {
             variant: "primary",
             text: "Create",
             onClick: G
           })]
         })]
-      }), (0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, a.jsxs)("section", {
+        className: _.section,
+        children: [(0, a.jsx)(d.Heading, {
           variant: "heading-md/semibold",
           children: "Create a Discount Offer"
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk68428.inputRow,
-          children: [(0, Chunk54381.jsx)(Chunk199849.B6, {
-            className: Chunk68428.input,
-            options: require,
+        }), (0, a.jsxs)("div", {
+          className: _.inputRow,
+          children: [(0, a.jsx)(c.B6, {
+            className: _.input,
+            options: n,
             isSelected: e => u === e,
             placeholder: "Discount Type",
             serialize: e => String(e),
             select: e => h(e),
-            popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+            popoutLayerContext: v.O$
+          }), (0, a.jsx)(d.Button, {
             variant: "primary",
             text: "Create",
             onClick: V
           })]
         })]
-      }), Chunk55935.length > 0 && (0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), x.length > 0 && (0, a.jsxs)("section", {
+        className: _.section,
+        children: [(0, a.jsx)(d.Heading, {
           variant: "heading-md/semibold",
           children: "Existing Trial Offers"
-        }), Chunk55935.map(t => (0, a.jsx)(I, {
+        }), x.map(t => (0, a.jsx)(I, {
           offer: t,
           offerOptions: e,
           forceRefetch: () => A(true)
         }, t.id))]
-      }), Chunk474936.length > 0 && (0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), y.length > 0 && (0, a.jsxs)("section", {
+        className: _.section,
+        children: [(0, a.jsx)(d.Heading, {
           variant: "heading-md/semibold",
           children: "Existing Discount Offers"
-        }), Chunk474936.map(e => (0, a.jsx)(k, {
+        }), y.map(e => (0, a.jsx)(k, {
           offer: e,
           offerOptions: n,
           forceRefetch: () => A(true)
         }, e.id))]
-      }), (0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, a.jsxs)("section", {
+        className: _.section,
+        children: [(0, a.jsx)(d.Heading, {
           variant: "heading-md/semibold",
           children: "Create a Reverse Trial Entitlement"
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk68428.inputRow,
-          children: [(0, Chunk54381.jsx)(Chunk199849.B6, {
-            className: Chunk68428.input,
+        }), (0, a.jsxs)("div", {
+          className: _.inputRow,
+          children: [(0, a.jsx)(c.B6, {
+            className: _.input,
             options: [{
               label: "5 minutes",
               value: 5
@@ -629,21 +629,21 @@ function R() {
             placeholder: "Reverse Trial Length",
             serialize: e => String(e),
             select: e => Z(e),
-            popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+            popoutLayerContext: v.O$
+          }), (0, a.jsx)(d.Button, {
             variant: "primary",
             text: "Create",
             onClick: W
           })]
         })]
-      }), L.length > 0 && (0, Chunk54381.jsxs)("div", {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), L.length > 0 && (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(d.Text, {
           style: {
             marginTop: "15px"
           },
           variant: "text-md/bold",
           children: "Active reverse trial"
-        }), (0, Chunk54381.jsx)("div", {
+        }), (0, a.jsx)("div", {
           children: L.map(e => (0, a.jsx)(g.D, {
             entitlement: e,
             active: true,

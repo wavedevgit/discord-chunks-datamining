@@ -11,12 +11,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js");
 let l = () => {
-    let e = Chunk944486.Z.getVoiceChannelId();
-    if (null == module) returnfalse;
-    let t = Chunk592125.Z.getChannel(module);
-    if (null == exports) returnfalse;
-    let n = Chunk430824.Z.getGuild(exports.getGuildId());
-    return null != require && require.features.has(Chunk981631.GuildFeatures.HUB)
+    let e = o.Z.getVoiceChannelId();
+    if (null == e) returnfalse;
+    let t = i.Z.getChannel(e);
+    if (null == t) returnfalse;
+    let n = a.Z.getGuild(t.getGuildId());
+    return null != n && n.features.has(s.GuildFeatures.HUB)
   },
   c = e => (0, r.e7)([o.Z, i.Z, a.Z], () => {
     let t = o.Z.getVoiceChannelId();

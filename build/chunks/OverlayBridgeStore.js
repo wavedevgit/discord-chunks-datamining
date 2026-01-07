@@ -102,13 +102,13 @@ class er {
   }
   enqueueWaitingActions() {
     let e = new Set([...this.waitingActionsToFlush]);
-    for (let t of (this.waitingActionsToFlush.clear(), module)) this.queueDispatch(exports)
+    for (let t of (this.waitingActionsToFlush.clear(), e)) this.queueDispatch(t)
   }
   constructor() {
     B(this, "isDispatching", false), B(this, "timeout", true), B(this, "requestIdleCallback", true), B(this, "actionsToFlush", new Set), B(this, "waitingActionsToFlush", new Set), B(this, "flush", () => {
       if (null != this.timeout && (clearTimeout(this.timeout), this.timeout = null), null != this.requestIdleCallback && (cancelIdleCallback(this.requestIdleCallback), this.requestIdleCallback = null), !Q()) return void this.actionsToFlush.clear();
-      this.actionsToFlush.size > 0 && (Chunk490029.lW({
-        type: Chunk981631.BmY.DISPATCH,
+      this.actionsToFlush.size > 0 && (h.lW({
+        type: Z.BmY.DISPATCH,
         pid: null,
         token: null,
         payloads: Array.from(this.actionsToFlush)
@@ -193,9 +193,9 @@ function em(e, t) {
 function eh() {
   try {
     var e;
-    let t = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.fileManager) ? true : module.uploadDiscordHookCrashes;
-    if (null == exports) return;
-    exports().then(e => {
+    let t = null === _.Z || true === _.Z || null == (e = _.Z.fileManager) ? true : e.uploadDiscordHookCrashes;
+    if (null == t) return;
+    t().then(e => {
       if (Array.isArray(e) && 0 !== e.length)
         for (let l of (el.log("transitionOverlayPIDStatus: Uploaded minidumps", e), e)) {
           var t, n, r, i, a, o, s;
@@ -214,7 +214,7 @@ function eh() {
         }
     })
   } catch (e) {
-    el.error("tryUploadDiscordHookCrashes", module), (0, Chunk338388.D1)(module)
+    el.error("tryUploadDiscordHookCrashes", e), (0, O.D1)(e)
   }
 }
 
@@ -380,16 +380,16 @@ function eA(e, t, n) {
 }
 
 function eN() {
-  let e = Chunk314897.default.getToken(),
-    t = Chunk314897.default.getId();
-  null != module && Chunk490029.lW({
-    type: Chunk981631.BmY.DISPATCH,
+  let e = w.default.getToken(),
+    t = w.default.getId();
+  null != e && h.lW({
+    type: Z.BmY.DISPATCH,
     pid: null,
     token: null,
     payloads: [{
       type: "UPDATE_TOKEN",
-      token: module,
-      userId: exports
+      token: e,
+      userId: t
     }]
   })
 }
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "0b18241b7d16d81a298be6f8568ac1df26c85784"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "813046e91848277cc010dd5c0e506e80d8c20157"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -522,7 +522,7 @@ function eF() {
 }
 
 function eB() {
-  J = false, Chunk13245.Z.setFocusedPID(null, null), ev(true), el.verbose("OverlayBridgeStore: handleConnectionClosed")
+  J = false, f.Z.setFocusedPID(null, null), ev(true), el.verbose("OverlayBridgeStore: handleConnectionClosed")
 }
 
 function eV() {
@@ -597,7 +597,7 @@ function eq(e) {
 }
 
 function eQ() {
-  Chunk353926.Z.hasLoadedExperiments && !z && (z = true, eT(Chunk454991.v.legacyEnabled))
+  E.Z.hasLoadedExperiments && !z && (z = true, eT(v.v.legacyEnabled))
 }
 
 function eX() {
@@ -609,11 +609,11 @@ function eJ() {
 }
 class e$ extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    !(0, Chunk145597.supportsLegacy)() || __OVERLAY__ || (this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk355863.Z, Chunk371651.default, Chunk322155.Z, Chunk509140.Z, Chunk610394.Z, Chunk594190.ZP), this.syncWith([Chunk353926.Z], eQ), Chunk490029.sr(eR, eP), Chunk314897.default.addChangeListener(eN), Chunk570140.Z.addInterceptor(ei.queueDispatch))
+    !(0, U.supportsLegacy)() || __OVERLAY__ || (this.waitFor(w.default, E.Z, D.Z, x.Z, T.default, N.Z, P.Z, A.Z, b.ZP), this.syncWith([E.Z], eQ), h.sr(eR, eP), w.default.addChangeListener(eN), l.Z.addInterceptor(ei.queueDispatch))
   }
   isFocusedPidInputLocked() {
     let e = this.getFocusedPID();
-    return null != module && this.isInputLocked(module)
+    return null != e && this.isInputLocked(e)
   }
   isInputLocked(e) {
     return T.default.isOverlayOOPEnabledForPid(e) ? N.Z.isInputLocked(e) : !en.has(e)
@@ -625,25 +625,25 @@ class e$ extends(i = Chunk442837.ZP.Store) {
     return !en.has(e)
   }
   isSupported() {
-    return (0, Chunk145597.supportsLegacy)() || false
+    return (0, U.supportsLegacy)() || false
   }
   get enabled() {
-    let e = Chunk610394.Z.getFocusedPID();
-    return null != module ? Chunk610394.Z.isOverlayV3EnabledForPID(module) ? Chunk509140.Z.isOverlayEnabled : X : Chunk509140.Z.isOverlayEnabled || X
+    let e = A.Z.getFocusedPID();
+    return null != e ? A.Z.isOverlayV3EnabledForPID(e) ? P.Z.isOverlayEnabled : X : P.Z.isOverlayEnabled || X
   }
   getAnyGlobalEnabledOverlay() {
-    return Chunk371651.default.getAnyGlobalEnabledOverlay()
+    return T.default.getAnyGlobalEnabledOverlay()
   }
   getFocusedPID() {
-    let e = Chunk610394.Z.getFocusedPID();
-    return null != module && Chunk610394.Z.isOverlayV3EnabledForPID(module) ? module : $
+    let e = A.Z.getFocusedPID();
+    return null != e && A.Z.isOverlayV3EnabledForPID(e) ? e : $
   }
   isFocusedPidOutOfProcess() {
     let e = this.getFocusedPID();
-    return null != module && Chunk371651.default.isOverlayOOPEnabledForPid(module)
+    return null != e && T.default.isOverlayOOPEnabledForPid(e)
   }
   isCurrentPidOutOfProcess() {
-    return Chunk371651.default.isOverlayOOPEnabledForPid((0, Chunk145597.getPID)())
+    return T.default.isOverlayOOPEnabledForPid((0, U.getPID)())
   }
   isReady(e) {
     return A.Z.isOverlayV3EnabledForPID(e) ? A.Z.isReady(e) : "READY" === q.get(e)

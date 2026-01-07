@@ -70,13 +70,13 @@ function T(e) {
 }
 
 function C() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk331924.voiceListSearchEmpty,
-    children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsx)("div", {
+    className: E.voiceListSearchEmpty,
+    children: (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      className: Chunk331924.noVoiceChannelSelected,
-      children: Chunk388032.intl.string(Chunk388032.t.zHjCd1)
+      className: E.noVoiceChannelSelected,
+      children: g.intl.string(g.t.zHjCd1)
     })
   })
 }

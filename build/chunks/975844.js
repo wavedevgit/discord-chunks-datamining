@@ -11,6 +11,6 @@ Chunk98405({
   proto: true
 }, {
   toReversed: function() {
-    return Chunk209957(Chunk146063(this), r)
+    return c(l(this), r)
   }
 }), Chunk967333("toReversed")

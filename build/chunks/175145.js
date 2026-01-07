@@ -435,19 +435,19 @@ var r, o, Chunk460288 = require("./460288.js"),
   tm = "en-US",
   ty = {
     ar: function() {
-      return require.e("78221").then(require.bind(require, 443886))
+      return n.e("78221").then(n.bind(n, 443886))
     },
     "cs-CZ": function() {
-      return require.e("37052").then(require.bind(require, 24510))
+      return n.e("37052").then(n.bind(n, 24510))
     },
     "da-DK": function() {
-      return require.e("20294").then(require.bind(require, 822053))
+      return n.e("20294").then(n.bind(n, 822053))
     },
     "de-DE": function() {
-      return require.e("25507").then(require.bind(require, 119377))
+      return n.e("25507").then(n.bind(n, 119377))
     },
     "el-GR": function() {
-      return require.e("12831").then(require.bind(require, 644811))
+      return n.e("12831").then(n.bind(n, 644811))
     },
     "en-US": function() {
       return Promise.resolve().then(function() {
@@ -455,64 +455,64 @@ var r, o, Chunk460288 = require("./460288.js"),
       })
     },
     "es-ES": function() {
-      return require.e("22602").then(require.bind(require, 972318))
+      return n.e("22602").then(n.bind(n, 972318))
     },
     "fi-FI": function() {
-      return require.e("24017").then(require.bind(require, 634064))
+      return n.e("24017").then(n.bind(n, 634064))
     },
     "fr-FR": function() {
-      return require.e("48174").then(require.bind(require, 94898))
+      return n.e("48174").then(n.bind(n, 94898))
     },
     "hr-HR": function() {
-      return require.e("33238").then(require.bind(require, 201775))
+      return n.e("33238").then(n.bind(n, 201775))
     },
     "hu-HU": function() {
-      return require.e("68130").then(require.bind(require, 809783))
+      return n.e("68130").then(n.bind(n, 809783))
     },
     "it-IT": function() {
-      return require.e("48934").then(require.bind(require, 571837))
+      return n.e("48934").then(n.bind(n, 571837))
     },
     "ja-JP": function() {
-      return require.e("85100").then(require.bind(require, 871432))
+      return n.e("85100").then(n.bind(n, 871432))
     },
     "ko-KR": function() {
-      return require.e("61690").then(require.bind(require, 111137))
+      return n.e("61690").then(n.bind(n, 111137))
     },
     "nl-NL": function() {
-      return require.e("16228").then(require.bind(require, 853978))
+      return n.e("16228").then(n.bind(n, 853978))
     },
     "no-NO": function() {
-      return require.e("46865").then(require.bind(require, 190208))
+      return n.e("46865").then(n.bind(n, 190208))
     },
     "pl-PL": function() {
-      return require.e("84778").then(require.bind(require, 331280))
+      return n.e("84778").then(n.bind(n, 331280))
     },
     "pt-BR": function() {
-      return require.e("37473").then(require.bind(require, 680092))
+      return n.e("37473").then(n.bind(n, 680092))
     },
     "pt-PT": function() {
-      return require.e("47354").then(require.bind(require, 350844))
+      return n.e("47354").then(n.bind(n, 350844))
     },
     "ro-RO": function() {
-      return require.e("74203").then(require.bind(require, 404833))
+      return n.e("74203").then(n.bind(n, 404833))
     },
     "ru-RU": function() {
-      return require.e("16087").then(require.bind(require, 79906))
+      return n.e("16087").then(n.bind(n, 79906))
     },
     "sk-SK": function() {
-      return require.e("74602").then(require.bind(require, 731757))
+      return n.e("74602").then(n.bind(n, 731757))
     },
     "sl-SI": function() {
-      return require.e("64563").then(require.bind(require, 233890))
+      return n.e("64563").then(n.bind(n, 233890))
     },
     "sv-SE": function() {
-      return require.e("89873").then(require.bind(require, 406144))
+      return n.e("89873").then(n.bind(n, 406144))
     },
     "zh-CN": function() {
-      return require.e("82143").then(require.bind(require, 442257))
+      return n.e("82143").then(n.bind(n, 442257))
     },
     "zh-TW": function() {
-      return require.e("37558").then(require.bind(require, 821696))
+      return n.e("37558").then(n.bind(n, 821696))
     }
   };
 
@@ -696,27 +696,27 @@ var tF = function() {
       var t, n, r = this,
         o = arguments.length > 0 && true !== arguments[0] ? arguments[0] : tm,
         a = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-      (0, Chunk149156.Z)(this, module), (0, Chunk134014.Z)(this, "supportedLocales", true), (0, Chunk134014.Z)(this, "locale", true), (0, Chunk134014.Z)(this, "languageCode", true), (0, Chunk134014.Z)(this, "translations", th), (0, Chunk134014.Z)(this, "customTranslations", true), (0, Chunk134014.Z)(this, "loaded", true);
+      (0, C.Z)(this, e), (0, w.Z)(this, "supportedLocales", true), (0, w.Z)(this, "locale", true), (0, w.Z)(this, "languageCode", true), (0, w.Z)(this, "translations", th), (0, w.Z)(this, "customTranslations", true), (0, w.Z)(this, "loaded", true);
       var i = l()(ty);
       this.customTranslations = function() {
         var e, t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
           n = arguments.length > 1 ? arguments[1] : true;
-        return Y()(e = l()(exports)).call(module, function(e, r) {
+        return Y()(e = l()(t)).call(e, function(e, r) {
           var o = t_(r) || tk(r, n);
           return o && (e[o] = t[r]), e
         }, {})
-      }(Chunk460288, Chunk770422);
+      }(a, i);
       var s = l()(this.customTranslations);
-      this.supportedLocales = P()(t = I()(n = []).call(require, (0, Chunk957408.Z)(Chunk770422), (0, Chunk957408.Z)(s))).call(exports, function(e, t, n) {
+      this.supportedLocales = P()(t = I()(n = []).call(n, (0, H.Z)(i), (0, H.Z)(s))).call(t, function(e, t, n) {
         return z()(n).call(n, e) === t
       }), this.locale = t_(o) || tk(o, this.supportedLocales) || tm;
       var c = this.locale.split("-"),
-        u = (0, Chunk858182.Z)(Chunk46018, 1)[0];
-      this.languageCode = Chunk152234, this.loaded = tZ(this.locale, this.customTranslations).then(function(e) {
+        u = (0, q.Z)(c, 1)[0];
+      this.languageCode = u, this.loaded = tZ(this.locale, this.customTranslations).then(function(e) {
         r.translations = e
       })
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "get",
       value: function(e, t) {
         var n = function(e, t) {
@@ -774,7 +774,7 @@ var tF = function() {
         }, arguments.length > 1 && true !== arguments[1] ? arguments[1] : {});
         return new Date(e).toLocaleDateString(this.locale, t)
       }
-    }]), module
+    }]), e
   }(),
   tE = function(e, t) {
     var n = t.split(".");
@@ -784,14 +784,14 @@ var tF = function() {
   },
   tO = (0, Chunk46888.Z)(function e() {
     var t = this;
-    (0, Chunk149156.Z)(this, module), (0, Chunk134014.Z)(this, "events", {}), (0, Chunk134014.Z)(this, "on", function(e, n) {
+    (0, C.Z)(this, e), (0, w.Z)(this, "events", {}), (0, w.Z)(this, "on", function(e, n) {
       t.events[e] = t.events[e] || [], t.events[e].push(n)
-    }), (0, Chunk134014.Z)(this, "off", function(e, n) {
+    }), (0, w.Z)(this, "off", function(e, n) {
       var r;
       t.events[e] && (t.events[e] = Y()(r = t.events[e]).call(r, function(e, t) {
         return t !== n && e.push(t), e
       }, []))
-    }), (0, Chunk134014.Z)(this, "emit", function(e, n) {
+    }), (0, w.Z)(this, "emit", function(e, n) {
       var r;
       t.events[e] && N()(r = t.events[e]).call(r, function(e) {
         e(n)
@@ -835,7 +835,7 @@ var tB = function() {
       setStatusAutomatically: true
     }, t)), this._parentInstance = this.props._parentInstance, this._node = null, this.state = {}, this.resources = this.props.modules ? this.props.modules.resources : true
   }
-  return (0, Chunk46888.Z)(module, [{
+  return (0, Z.Z)(e, [{
     key: "formatProps",
     value: function(e) {
       return e
@@ -857,14 +857,14 @@ var tB = function() {
         t = tE(this.props, "modules.analytics.props.enabled") ? tE(this.props, "modules.analytics.checkoutAttemptId") : "do-not-track",
         n = this.state.order || this.props.order,
         r = this.formatData();
-      return r.paymentMethod && exports && (r.paymentMethod.checkoutAttemptId = exports), tT(tT(tT(tT({}, module && {
+      return r.paymentMethod && t && (r.paymentMethod.checkoutAttemptId = t), tT(tT(tT(tT({}, e && {
         riskData: {
-          clientData: module
+          clientData: e
         }
-      }), require && {
+      }), n && {
         order: {
-          orderData: require.orderData,
-          pspReference: require.pspReference
+          orderData: n.orderData,
+          pspReference: n.pspReference
         }
       }), r), {}, {
         clientStateDataIndicator: true
@@ -901,14 +901,14 @@ var tB = function() {
   }, {
     key: "unmount",
     value: function() {
-      return this._node && (0, Chunk530733.sY)(null, this._node), this
+      return this._node && (0, ec.sY)(null, this._node), this
     }
   }, {
     key: "remove",
     value: function() {
       this.unmount(), this._parentInstance && this._parentInstance.remove(this)
     }
-  }]), module
+  }]), e
 }();
 (0, Chunk134014.Z)(tB, "defaultProps", {});
 var tD, tL, tV, tj, tU, tq = function(e) {
@@ -1019,10 +1019,10 @@ function t3(e) {
 
 function t4() {
   for (var e; e = tK.shift();)
-    if (module.__P && module.__H) try {
-      module.__H.__h.forEach(t7), module.__H.__h.forEach(ne), module.__H.__h = []
+    if (e.__P && e.__H) try {
+      e.__H.__h.forEach(t7), e.__H.__h.forEach(ne), e.__H.__h = []
     } catch (t) {
-      module.__H.__h = [], Chunk530733.YM.__e(exports, module.__v)
+      e.__H.__h = [], ec.YM.__e(t, e.__v)
     }
 }
 Chunk530733.YM.__b = function(e) {
@@ -1119,7 +1119,7 @@ var ns = function() {
     function e() {
       var t = this,
         n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : nr;
-      (0, Chunk149156.Z)(this, module), (0, Chunk134014.Z)(this, "resourceContext", true), (0, Chunk134014.Z)(this, "returnImage", function(e) {
+      (0, C.Z)(this, e), (0, w.Z)(this, "resourceContext", true), (0, w.Z)(this, "returnImage", function(e) {
         var t, n, r, o, a, i, s = e.name,
           c = e.resourceContext,
           l = e.imageFolder,
@@ -1128,7 +1128,7 @@ var ns = function() {
           p = e.size,
           h = e.subFolder;
         return I()(t = I()(n = I()(r = I()(o = I()(a = I()(i = "".concat(c, "images/")).call(i, true === l ? "" : l)).call(a, true === h ? "" : h)).call(o, true === u ? "" : u)).call(r, s)).call(n, true === p ? "" : p, ".")).call(t, d)
-      }), (0, Chunk134014.Z)(this, "getImageUrl", function(e) {
+      }), (0, w.Z)(this, "getImageUrl", function(e) {
         var n = e.resourceContext,
           r = true === n ? nr : n,
           o = e.extension,
@@ -1144,17 +1144,17 @@ var ns = function() {
           }, i);
           return t.returnImage(n)
         }
-      }), this.resourceContext = require
+      }), this.resourceContext = n
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "getImage",
       value: function() {
         var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-        return this.getImageUrl(ni(ni({}, module), {}, {
+        return this.getImageUrl(ni(ni({}, e), {}, {
           resourceContext: this.resourceContext
         }))
       }
-    }]), module
+    }]), e
   }(),
   nc = (0, Chunk530733.kr)({
     i18n: new tF,
@@ -1334,7 +1334,7 @@ var nd = function(e, t) {
 function ng() {
   var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     t = arguments.length > 1 ? arguments[1] : true;
-  return Object.prototype.hasOwnProperty.call(module, exports)
+  return Object.prototype.hasOwnProperty.call(e, t)
 }
 
 function nb(e, t) {
@@ -2059,7 +2059,7 @@ var nX, n0, n1 = ["bcmc"],
   ry = e_()(),
   rv = function() {
     var e;
-    return ry += 1, I()(e = "".concat(arguments.length > 0 && true !== arguments[0] ? arguments[0] : "field", "-")).call(module, ry)
+    return ry += 1, I()(e = "".concat(arguments.length > 0 && true !== arguments[0] ? arguments[0] : "field", "-")).call(e, ry)
   };
 
 function rg(e, t) {
@@ -2319,12 +2319,12 @@ var rA = function(e) {
       var a;
       (0, C.Z)(this, e), (0, w.Z)(this, "shouldValidate", true), (0, w.Z)(this, "isValid", true), (0, w.Z)(this, "errorMessage", true), this.shouldValidate = E()(a = t.modes).call(a, r), this.isValid = t.validate(n, o), this.errorMessage = t.errorMessage
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "hasError",
       value: function() {
         return arguments.length > 0 && true !== arguments[0] && arguments[0] ? !this.isValid && this.shouldValidate : null != this.isValid && !this.isValid && this.shouldValidate
       }
-    }]), module
+    }]), e
   }();
 
 function rF(e, t) {
@@ -2353,11 +2353,11 @@ var rO = function() {
     function e(t) {
       (0, C.Z)(this, e), (0, w.Z)(this, "validationResults", true), this.validationResults = t
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "isValid",
       get: function() {
         var e;
-        return Y()(e = this.validationResults).call(module, function(e, t) {
+        return Y()(e = this.validationResults).call(e, function(e, t) {
           return e && t.isValid
         }, true)
       }
@@ -2365,13 +2365,13 @@ var rO = function() {
       key: "hasError",
       value: function() {
         var e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-        return !!this.getError(module)
+        return !!this.getError(e)
       }
     }, {
       key: "getError",
       value: function() {
         var e, t = arguments.length > 0 && true !== arguments[0] && arguments[0];
-        return D()(e = this.validationResults).call(module, function(e) {
+        return D()(e = this.validationResults).call(e, function(e) {
           return e.hasError(t)
         })
       }
@@ -2379,11 +2379,11 @@ var rO = function() {
       key: "getAllErrors",
       value: function() {
         var e;
-        return P()(e = this.validationResults).call(module, function(e) {
+        return P()(e = this.validationResults).call(e, function(e) {
           return e.hasError()
         })
       }
-    }]), module
+    }]), e
   }(),
   rI = function() {
     function e(t) {
@@ -2396,7 +2396,7 @@ var rO = function() {
         }
       }), this.setRules(t)
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "setRules",
       value: function(e) {
         this.rules = rE(rE({}, this.rules), e)
@@ -2419,7 +2419,7 @@ var rO = function() {
           return new rR(e, r, a, t)
         }))
       }
-    }]), module
+    }]), e
   }();
 
 function rM(e, t) {
@@ -2947,7 +2947,7 @@ var rG = function(e) {
   rQ = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s./0-9]*$/,
   rJ = function() {
     var e = document.createElement("input");
-    return module.setAttribute("type", "date"), "date" === module.type
+    return e.setAttribute("type", "date"), "date" === e.type
   },
   rX = function(e) {
     var t = e.replace(/\D|\s/g, "").replace(/^(00)(.*)?/, "01$2").replace(/^(3[2-9])(.*)?/, "0$1$2").replace(/^([4-9])(.*)?/, "0$1").replace(/^([0-9]{2})(00)(.*)?/, "$101").replace(/^(3[01])(02)(.*)?/, "29$2").replace(/^([0-9]{2})([2-9]|1[3-9])(.*)?/, "$10$2").replace(/^([0-9]{2})([0-9]{2})([0-9])/, "$1/$2/$3").replace(/^([0-9]{2})([0-9])/, "$1/$2"),
@@ -2961,16 +2961,16 @@ var rG = function(e) {
   },
   r0 = function() {
     var e, t, n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "";
-    if (false === z()(require).call(require, "/")) return require;
-    var r = require.split("/"),
-      o = (0, Chunk858182.Z)(r, 3),
+    if (false === z()(n).call(n, "/")) return n;
+    var r = n.split("/"),
+      o = (0, q.Z)(r, 3),
       a = o[0],
-      i = true === Chunk460288 ? "" : Chunk460288,
+      i = true === a ? "" : a,
       s = o[1],
       c = true === s ? "" : s,
       l = o[2],
       u = true === l ? "" : l;
-    return Chunk770422 && Chunk46018 && Chunk152234 ? I()(e = I()(t = "".concat(Chunk152234, "-")).call(exports, Chunk46018, "-")).call(module, Chunk770422) : null
+    return i && c && u ? I()(e = I()(t = "".concat(u, "-")).call(t, c, "-")).call(e, i) : null
   },
   r1 = {
     default: {
@@ -3862,7 +3862,7 @@ function oH() {
     this.bodyUsed = this.bodyUsed, this._bodyInit = e, e ? "string" == typeof e ? this._bodyText = e : oF && Blob.prototype.isPrototypeOf(e) ? this._bodyBlob = e : oE && FormData.prototype.isPrototypeOf(e) ? this._bodyFormData = e : oA && eH().prototype.isPrototypeOf(e) ? this._bodyText = e.toString() : oO && oF && (t = e) && DataView.prototype.isPrototypeOf(t) ? (this._bodyArrayBuffer = oq(e.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : oO && (ArrayBuffer.prototype.isPrototypeOf(e) || oM(e)) ? this._bodyArrayBuffer = oq(e) : this._bodyText = e = Object.prototype.toString.call(e) : this._bodyText = "", this.headers.get("content-type") || ("string" == typeof e ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : oA && eH().prototype.isPrototypeOf(e) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
   }, oF && (this.blob = function() {
     var e = oV(this);
-    if (module) return module;
+    if (e) return e;
     if (this._bodyBlob) return T().resolve(this._bodyBlob);
     if (this._bodyArrayBuffer) return T().resolve(new Blob([this._bodyArrayBuffer]));
     if (this._bodyFormData) throw Error("could not read FormData body as blob");
@@ -3870,13 +3870,13 @@ function oH() {
   }, this.arrayBuffer = function() {
     if (this._bodyArrayBuffer) {
       var e;
-      return oV(this) || (ArrayBuffer.isView(this._bodyArrayBuffer) ? T().resolve(em()(e = this._bodyArrayBuffer.buffer).call(module, this._bodyArrayBuffer.byteOffset, this._bodyArrayBuffer.byteOffset + this._bodyArrayBuffer.byteLength)) : T().resolve(this._bodyArrayBuffer))
+      return oV(this) || (ArrayBuffer.isView(this._bodyArrayBuffer) ? T().resolve(em()(e = this._bodyArrayBuffer.buffer).call(e, this._bodyArrayBuffer.byteOffset, this._bodyArrayBuffer.byteOffset + this._bodyArrayBuffer.byteLength)) : T().resolve(this._bodyArrayBuffer))
     }
     return this.blob().then(oU)
   }), this.text = function() {
     var e, t, n, r = oV(this);
     if (r) return r;
-    if (this._bodyBlob) return e = this._bodyBlob, n = oj(t = new FileReader), exports.readAsText(module), require;
+    if (this._bodyBlob) return e = this._bodyBlob, n = oj(t = new FileReader), t.readAsText(e), n;
     if (this._bodyArrayBuffer) return T().resolve(function(e) {
       for (var t = new Uint8Array(e), n = Array(t.length), r = 0; r < t.length; r++) n[r] = String.fromCharCode(t[r]);
       return n.join("")
@@ -3907,17 +3907,17 @@ oL.prototype.append = function(e, t) {
   var e = [];
   return N()(this).call(this, function(t, n) {
     e.push(n)
-  }), oD(module)
+  }), oD(e)
 }, oL.prototype.values = function() {
   var e = [];
   return N()(this).call(this, function(t) {
     e.push(t)
-  }), oD(module)
+  }), oD(e)
 }, oL.prototype.entries = function() {
   var e = [];
   return N()(this).call(this, function(t, n) {
     e.push([n, t])
-  }), oD(module)
+  }), oD(e)
 }, oR && (oL.prototype[eD()] = eU()(oL.prototype));
 var oK = ["DELETE", "GET", "HEAD", "OPTIONS", "POST", "PUT"];
 
@@ -3967,7 +3967,7 @@ oz.prototype.clone = function() {
     status: 0,
     statusText: ""
   });
-  return module.type = "error", module
+  return e.type = "error", e
 };
 var oG = [301, 302, 303, 307, 308];
 oY.redirect = function(e, t) {
@@ -4726,7 +4726,7 @@ var am = function() {
     function e(t) {
       (0, C.Z)(this, e), (0, w.Z)(this, "specifications", true), this.specifications = af(af({}, of), t)
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "countryHasDataset",
       value: function(e) {
         var t;
@@ -4776,7 +4776,7 @@ var am = function() {
           return "string" == typeof e
         })
       }
-    }]), module
+    }]), e
   }(),
   ay = function(e) {
     var t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 300;
@@ -5586,7 +5586,7 @@ var aN = ["companyDetails", "personalDetails", "billingAddress", "deliveryAddres
   },
   aO = function() {
     var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
-    return module && aA[module] && aA[module].example ? aR(aA[module].example) : "AB00 1234 5678 9012 3456 7890"
+    return e && aA[e] && aA[e].example ? aR(aA[e].example) : "AB00 1234 5678 9012 3456 7890"
   },
   aI = function(e) {
     return em()(e).call(e, 0, 2)
@@ -6010,9 +6010,9 @@ function a2(e, t, n) {
 }
 var a5 = function() {
     var e = nl().i18n;
-    return (0, Chunk530733.h)("p", {
+    return (0, ec.h)("p", {
       className: "adyen-checkout-form-instruction"
-    }, module.get("form.instruction"))
+    }, e.get("form.instruction"))
   },
   a9 = ["companyDetails", "personalDetails", "bankAccount", "billingAddress", "deliveryAddress"];
 
@@ -6332,11 +6332,11 @@ function ia(e) {
 }
 
 function ii() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  var r = exports.shift();
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  var r = t.shift();
   return function() {
-    for (var e = arguments.length, n = Array(module), o = 0; o < module; o++) require[o] = arguments[o];
-    return r.apply(this, I()(exports).call(exports, require))
+    for (var e = arguments.length, n = Array(e), o = 0; o < e; o++) n[o] = arguments[o];
+    return r.apply(this, I()(t).call(t, n))
   }
 }
 var is = function(e) {
@@ -6635,10 +6635,10 @@ function i_() {
     o = tE(window, "navigator.userAgent") || "";
   return {
     acceptHeader: "*/*",
-    colorDepth: module,
+    colorDepth: e,
     language: tE(window, "navigator.language") || tE(window, "navigator.browserLanguage") || "en",
-    javaEnabled: exports,
-    screenHeight: require,
+    javaEnabled: t,
+    screenHeight: n,
     screenWidth: r,
     userAgent: o,
     timeZoneOffset: (new Date).getTimezoneOffset()
@@ -7215,7 +7215,7 @@ var iq = function() {
         return r.onshippingmethodselected(e, n.onShippingMethodSelected)
       })
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "begin",
       value: function() {
         return this.session.begin()
@@ -7291,7 +7291,7 @@ var iq = function() {
       value: function(e, t) {
         t(e)
       }
-    }]), module
+    }]), e
   }(),
   iH = ["countryCode", "companyName", "amount"],
   iK = function(e) {
@@ -8238,7 +8238,7 @@ var sF = function() {};
 
 function sE() {
   var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  this.callbacks.onLoad = module.onLoad ? module.onLoad : sF, this.callbacks.onConfigSuccess = module.onConfigSuccess ? module.onConfigSuccess : sF, this.callbacks.onFieldValid = module.onFieldValid ? module.onFieldValid : sF, this.callbacks.onAllValid = module.onAllValid ? module.onAllValid : sF, this.callbacks.onBrand = module.onBrand ? module.onBrand : sF, this.callbacks.onError = module.onError ? module.onError : sF, this.callbacks.onFocus = module.onFocus ? module.onFocus : sF, this.callbacks.onBinValue = module.onBinValue ? module.onBinValue : sF, this.callbacks.onAutoComplete = module.onAutoComplete ? module.onAutoComplete : sF, this.callbacks.onAdditionalSFConfig = module.onAdditionalSFConfig ? module.onAdditionalSFConfig : sF, this.callbacks.onAdditionalSFRemoved = module.onAdditionalSFRemoved ? module.onAdditionalSFRemoved : sF, this.callbacks.onTouchstartIOS = module.onTouchstartIOS ? module.onTouchstartIOS : sF
+  this.callbacks.onLoad = e.onLoad ? e.onLoad : sF, this.callbacks.onConfigSuccess = e.onConfigSuccess ? e.onConfigSuccess : sF, this.callbacks.onFieldValid = e.onFieldValid ? e.onFieldValid : sF, this.callbacks.onAllValid = e.onAllValid ? e.onAllValid : sF, this.callbacks.onBrand = e.onBrand ? e.onBrand : sF, this.callbacks.onError = e.onError ? e.onError : sF, this.callbacks.onFocus = e.onFocus ? e.onFocus : sF, this.callbacks.onBinValue = e.onBinValue ? e.onBinValue : sF, this.callbacks.onAutoComplete = e.onAutoComplete ? e.onAutoComplete : sF, this.callbacks.onAdditionalSFConfig = e.onAdditionalSFConfig ? e.onAdditionalSFConfig : sF, this.callbacks.onAdditionalSFRemoved = e.onAdditionalSFRemoved ? e.onAdditionalSFRemoved : sF, this.callbacks.onTouchstartIOS = e.onTouchstartIOS ? e.onTouchstartIOS : sF
 }
 var sO = function(e) {
     return {
@@ -8557,7 +8557,7 @@ var sV = function(e) {
     return "card" === e || "scheme" === e
   },
   sU = (0, Chunk46888.Z)(function e() {
-    (0, Chunk149156.Z)(this, module), (0, Chunk134014.Z)(this, "sfConfig", true), (0, Chunk134014.Z)(this, "fieldType", true), (0, Chunk134014.Z)(this, "iframeSrc", true), (0, Chunk134014.Z)(this, "loadingContext", true), (0, Chunk134014.Z)(this, "holderEl", true), (0, Chunk134014.Z)(this, "iframeRef", true), (0, Chunk134014.Z)(this, "loadToConfigTimeout", true), (0, Chunk134014.Z)(this, "_errorType", true), (0, Chunk134014.Z)(this, "_hasError", true), (0, Chunk134014.Z)(this, "_isValid", true), (0, Chunk134014.Z)(this, "_cvcPolicy", true), (0, Chunk134014.Z)(this, "_expiryDatePolicy", true), (0, Chunk134014.Z)(this, "_iframeContentWindow", true), (0, Chunk134014.Z)(this, "_isEncrypted", true), (0, Chunk134014.Z)(this, "_numKey", true), (0, Chunk134014.Z)(this, "_iframeOnLoadListener", true), (0, Chunk134014.Z)(this, "_postMessageListener", true), (0, Chunk134014.Z)(this, "onIframeLoadedCallback", true), (0, Chunk134014.Z)(this, "onConfigCallback", true), (0, Chunk134014.Z)(this, "onEncryptionCallback", true), (0, Chunk134014.Z)(this, "onValidationCallback", true), (0, Chunk134014.Z)(this, "onFocusCallback", true), (0, Chunk134014.Z)(this, "onBinValueCallback", true), (0, Chunk134014.Z)(this, "onTouchstartCallback", true), (0, Chunk134014.Z)(this, "onShiftTabCallback", true), (0, Chunk134014.Z)(this, "onAutoCompleteCallback", true), this.sfConfig = {}
+    (0, C.Z)(this, e), (0, w.Z)(this, "sfConfig", true), (0, w.Z)(this, "fieldType", true), (0, w.Z)(this, "iframeSrc", true), (0, w.Z)(this, "loadingContext", true), (0, w.Z)(this, "holderEl", true), (0, w.Z)(this, "iframeRef", true), (0, w.Z)(this, "loadToConfigTimeout", true), (0, w.Z)(this, "_errorType", true), (0, w.Z)(this, "_hasError", true), (0, w.Z)(this, "_isValid", true), (0, w.Z)(this, "_cvcPolicy", true), (0, w.Z)(this, "_expiryDatePolicy", true), (0, w.Z)(this, "_iframeContentWindow", true), (0, w.Z)(this, "_isEncrypted", true), (0, w.Z)(this, "_numKey", true), (0, w.Z)(this, "_iframeOnLoadListener", true), (0, w.Z)(this, "_postMessageListener", true), (0, w.Z)(this, "onIframeLoadedCallback", true), (0, w.Z)(this, "onConfigCallback", true), (0, w.Z)(this, "onEncryptionCallback", true), (0, w.Z)(this, "onValidationCallback", true), (0, w.Z)(this, "onFocusCallback", true), (0, w.Z)(this, "onBinValueCallback", true), (0, w.Z)(this, "onTouchstartCallback", true), (0, w.Z)(this, "onShiftTabCallback", true), (0, w.Z)(this, "onAutoCompleteCallback", true), this.sfConfig = {}
   });
 
 function sq(e, t) {
@@ -8595,8 +8595,8 @@ function sz(e) {
 }
 
 function sW() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  var r = sz(exports[0]) ? exports[0] : exports;
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  var r = sz(t[0]) ? t[0] : t;
   return {
     from: function(e) {
       var t;
@@ -8610,8 +8610,8 @@ function sW() {
 }
 
 function sY() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  var r = sz(exports[0]) ? exports[0] : exports;
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  var r = sz(t[0]) ? t[0] : t;
   return {
     from: function(e) {
       var t, n = P()(t = l()(e)).call(t, function(e) {
@@ -8981,7 +8981,7 @@ var s1 = function(e) {
 function s2() {
   this.encryptedAttrName = n8;
   var e = aG(this.props.rootNode, "[".concat(this.encryptedAttrName, "]"));
-  return this.config.isCreditCardType ? (this.isSingleBrandedCard = false, this.securityCode = "", this.createCardSecuredFields(module, n2, n2)) : this.createNonCardSecuredFields(module), module.length
+  return this.config.isCreditCardType ? (this.isSingleBrandedCard = false, this.securityCode = "", this.createCardSecuredFields(e, n2, n2)) : this.createNonCardSecuredFields(e), e.length
 }
 
 function s5(e) {
@@ -8989,7 +8989,7 @@ function s5(e) {
 }
 
 function s9() {
-  return (s9 = (0, Chunk460288.Z)(s().mark(function e(t) {
+  return (s9 = (0, a.Z)(s().mark(function e(t) {
     var n, r;
     return s().wrap(function(e) {
       for (;;) switch (e.prev = e.next) {
@@ -9019,7 +9019,7 @@ function s8(e, t, n) {
 }
 
 function s3() {
-  return (s3 = (0, Chunk460288.Z)(s().mark(function e(t, n, r) {
+  return (s3 = (0, a.Z)(s().mark(function e(t, n, r) {
     var o, a, i, c, l, u = this;
     return s().wrap(function(e) {
       for (;;) switch (e.prev = e.next) {
@@ -9123,14 +9123,14 @@ var s6 = {
     __IS_ANDROID: "undefined" != typeof navigator && /(android)/i.test(navigator.userAgent),
     __IS_IE: "undefined" != typeof navigator && function() {
       var e = navigator.userAgent,
-        t = z()(module).call(module, "MSIE ");
-      if (exports > 0) return ee()(module.substring(exports + 5, z()(module).call(module, ".", exports)), 10);
-      if (z()(module).call(module, "Trident/") > 0) {
-        var n = z()(module).call(module, "rv:");
-        return ee()(module.substring(require + 3, z()(module).call(module, ".", require)), 10)
+        t = z()(e).call(e, "MSIE ");
+      if (t > 0) return ee()(e.substring(t + 5, z()(e).call(e, ".", t)), 10);
+      if (z()(e).call(e, "Trident/") > 0) {
+        var n = z()(e).call(e, "rv:");
+        return ee()(e.substring(n + 3, z()(e).call(e, ".", n)), 10)
       }
-      var r = z()(module).call(module, "Edge/");
-      return r > 0 && ee()(module.substring(r + 5, z()(module).call(module, ".", r)), 10)
+      var r = z()(e).call(e, "Edge/");
+      return r > 0 && ee()(e.substring(r + 5, z()(e).call(e, ".", r)), 10)
     }(),
     __IS_IOS: "undefined" != typeof navigator && /iphone|ipod|ipad/i.test(navigator.userAgent),
     __IS_FIREFOX: "undefined" != typeof navigator && /(firefox)/i.test(navigator.userAgent),
@@ -9175,12 +9175,12 @@ var s6 = {
   },
   ct = function() {
     var e = a$(document, "body");
-    module.style.cursor = "pointer", aJ(module, "touchend", this.touchendListener), this.state.registerFieldForIos = true
+    e.style.cursor = "pointer", aJ(e, "touchend", this.touchendListener), this.state.registerFieldForIos = true
   },
   cn = function() {
     if (s6.__IS_IOS) {
       var e = a$(document, "body");
-      module.style.cursor = "auto", aX(module, "touchend", this.touchendListener)
+      e.style.cursor = "auto", aX(e, "touchend", this.touchendListener)
     }
   },
   cr = function() {
@@ -9592,7 +9592,7 @@ function cZ() {
     destroy: true
   });
   var t = l()(this.state.securedFields);
-  N()(exports).call(exports, function(t) {
+  N()(t).call(t, function(t) {
     var n = e.state.securedFields[t];
     n && n.destroy(), e.state.securedFields[t] = null
   }), this.destroyTouchendListener(), this.destroyTouchstartListener(), this.state.securedFields = {}
@@ -9895,7 +9895,7 @@ var cE = function(e) {
     this.setState({
       status: "ready"
     }, function() {
-      return module.props.onChange({
+      return e.props.onChange({
         isSfpValid: true
       })
     })
@@ -10239,13 +10239,13 @@ function cY(e) {
 
 function cG() {
   var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "";
-  if ("string" != typeof module) return "";
-  var t = cY(module);
-  return exports.length > 11 ? exports.replace(/^(\d{2})(\d{3})(\d{3})?(\d{4})?(\d{1,2})?$/g, function(e, t, n, r) {
+  if ("string" != typeof e) return "";
+  var t = cY(e);
+  return t.length > 11 ? t.replace(/^(\d{2})(\d{3})(\d{3})?(\d{4})?(\d{1,2})?$/g, function(e, t, n, r) {
     var o, a, i, s, c = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "",
       l = arguments.length > 5 && true !== arguments[5] ? arguments[5] : "";
     return I()(o = I()(a = I()(i = I()(s = "".concat(t, ".")).call(s, n, ".")).call(i, r, "/")).call(a, c)).call(o, l.length ? "-".concat(l) : "")
-  }) : exports.replace(/\W/gi, "").replace(/(\d{3})(?!$)/g, "$1.").replace(/(.{11}).(\d{1,2})$/g, "$1-$2")
+  }) : t.replace(/\W/gi, "").replace(/(\d{3})(?!$)/g, "$1.").replace(/(.{11}).(\d{1,2})$/g, "$1-$2")
 }
 
 function c$(e) {
@@ -11905,9 +11905,9 @@ var lD = function(e) {
       if ((0, C.Z)(this, c), (0, w.Z)(this, "schemeSdk", true), (0, w.Z)(this, "schemeName", true), (0, w.Z)(this, "customSdkConfiguration", true), (0, w.Z)(this, "sdkUrl", true), (0, w.Z)(this, "scriptElement", null), !e) throw Error("AbstractSrcInitiator: Invalid SDK URL");
       this.sdkUrl = e, this.customSdkConfiguration = t
     }
-    return (0, Chunk46888.Z)(Chunk46018, [{
+    return (0, Z.Z)(c, [{
       key: "loadSdkScript",
-      value: (i = (0, Chunk460288.Z)(s().mark(function e() {
+      value: (i = (0, a.Z)(s().mark(function e() {
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
             case 0:
@@ -11922,9 +11922,9 @@ var lD = function(e) {
             case "end":
               return e.stop()
           }
-        }, module, this)
+        }, e, this)
       })), function() {
-        return Chunk770422.apply(this, arguments)
+        return i.apply(this, arguments)
       })
     }, {
       key: "removeSdkScript",
@@ -11933,7 +11933,7 @@ var lD = function(e) {
       }
     }, {
       key: "checkout",
-      value: (o = (0, Chunk460288.Z)(s().mark(function e(t) {
+      value: (o = (0, a.Z)(s().mark(function e(t) {
         var n;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -11955,7 +11955,7 @@ var lD = function(e) {
       })
     }, {
       key: "unbindAppInstance",
-      value: (r = (0, Chunk460288.Z)(s().mark(function e() {
+      value: (r = (0, a.Z)(s().mark(function e() {
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
             case 0:
@@ -11969,7 +11969,7 @@ var lD = function(e) {
             case "end":
               return e.stop()
           }
-        }, module, this, [
+        }, e, this, [
           [0, 5]
         ])
       })), function() {
@@ -11977,7 +11977,7 @@ var lD = function(e) {
       })
     }, {
       key: "isRecognized",
-      value: (n = (0, Chunk460288.Z)(s().mark(function e() {
+      value: (n = (0, a.Z)(s().mark(function e() {
         var t;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -11991,15 +11991,15 @@ var lD = function(e) {
             case "end":
               return e.stop()
           }
-        }, module, this, [
+        }, e, this, [
           [0, 7]
         ])
       })), function() {
-        return require.apply(this, arguments)
+        return n.apply(this, arguments)
       })
     }, {
       key: "initiateIdentityValidation",
-      value: (t = (0, Chunk460288.Z)(s().mark(function e() {
+      value: (t = (0, a.Z)(s().mark(function e() {
         var t;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -12013,15 +12013,15 @@ var lD = function(e) {
             case "end":
               return e.stop()
           }
-        }, module, this, [
+        }, e, this, [
           [0, 7]
         ])
       })), function() {
-        return exports.apply(this, arguments)
+        return t.apply(this, arguments)
       })
     }, {
       key: "getSrcProfile",
-      value: (e = (0, Chunk460288.Z)(s().mark(function e(t) {
+      value: (e = (0, a.Z)(s().mark(function e(t) {
         var n;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -12043,7 +12043,7 @@ var lD = function(e) {
       })), function(t) {
         return e.apply(this, arguments)
       })
-    }]), Chunk46018
+    }]), c
   }();
 
 function lj(e, t) {
@@ -12356,9 +12356,9 @@ var lW = {
         dpaPresentationName: true === o ? "" : o
       }
     }
-    return (0, Chunk46888.Z)(exports, [{
+    return (0, Z.Z)(t, [{
       key: "load",
-      value: (e = (0, Chunk460288.Z)(s().mark(function e(t) {
+      value: (e = (0, a.Z)(s().mark(function e(t) {
         var n = this;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -12390,7 +12390,7 @@ var lW = {
       })), function(t) {
         return e.apply(this, arguments)
       })
-    }]), exports
+    }]), t
   }(),
   l0 = {
     mc: "Mastercard",
@@ -12400,7 +12400,7 @@ var lW = {
     function e(t, n, r) {
       (0, C.Z)(this, e), (0, w.Z)(this, "dateOfCardLastUsed", true), (0, w.Z)(this, "panLastFour", true), (0, w.Z)(this, "srcDigitalCardId", true), (0, w.Z)(this, "scheme", true), (0, w.Z)(this, "artUri", true), (0, w.Z)(this, "srcCorrelationId", true), (0, w.Z)(this, "tokenId", true), (0, w.Z)(this, "isExpired", true), (0, w.Z)(this, "panExpirationMonth", true), (0, w.Z)(this, "panExpirationYear", true), (0, w.Z)(this, "descriptorName", true), (0, w.Z)(this, "status", null), this.dateOfCardLastUsed = t.dateOfCardLastUsed, this.panLastFour = t.panLastFour, this.srcDigitalCardId = t.srcDigitalCardId, this.descriptorName = t.digitalCardData.descriptorName, this.tokenId = t.tokenId, this.scheme = n, this.artUri = t.digitalCardData.artUri, this.srcCorrelationId = r, this.panExpirationMonth = t.panExpirationMonth, this.panExpirationYear = t.panExpirationYear, this.status = t.digitalCardData.status, this.isExpired = this.confirmCardIsExpired()
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "title",
       get: function() {
         return "visa" === this.scheme ? l0[this.scheme] : this.descriptorName || l0[this.scheme]
@@ -12416,11 +12416,11 @@ var lW = {
         if ("ACTIVE" !== this.status) returntrue;
         if (!this.panExpirationYear && !this.panExpirationMonth) returnfalse;
         var e = [(new Date).getMonth() + 1, (new Date).getFullYear()],
-          t = module[0],
-          n = module[1];
-        return !(Number(this.panExpirationYear) > require) && !(Number(this.panExpirationYear) === require && Number(this.panExpirationMonth) >= exports)
+          t = e[0],
+          n = e[1];
+        return !(Number(this.panExpirationYear) > n) && !(Number(this.panExpirationYear) === n && Number(this.panExpirationMonth) >= t)
       }
-    }]), module
+    }]), e
   }(),
   l2 = "ctpIframe";
 
@@ -12507,11 +12507,11 @@ var ut = function() {
   function d(e, t, n, r, o) {
     (0, C.Z)(this, d), (0, w.Z)(this, "sdkLoader", true), (0, w.Z)(this, "schemesConfig", true), (0, w.Z)(this, "shopperIdentity", true), (0, w.Z)(this, "environment", true), (0, w.Z)(this, "onTimeout", true), (0, w.Z)(this, "srciTransactionId", tI()), (0, w.Z)(this, "sdks", true), (0, w.Z)(this, "validationSchemeSdk", null), (0, w.Z)(this, "stateSubscriber", true), (0, w.Z)(this, "state", l7.Idle), (0, w.Z)(this, "shopperCards", null), (0, w.Z)(this, "identityValidationData", null), this.sdkLoader = t, this.schemesConfig = e, this.shopperIdentity = r, this.environment = n, this.onTimeout = o
   }
-  return (0, Chunk46888.Z)(d, [{
+  return (0, Z.Z)(d, [{
     key: "shopperAccountFound",
     get: function() {
       var e;
-      return E()(e = [l7.Ready, l7.ShopperIdentified]).call(module, this.state)
+      return E()(e = [l7.Ready, l7.ShopperIdentified]).call(e, this.state)
     }
   }, {
     key: "schemes",
@@ -12520,7 +12520,7 @@ var ut = function() {
     }
   }, {
     key: "initialize",
-    value: (u = (0, Chunk460288.Z)(s().mark(function e() {
+    value: (u = (0, a.Z)(s().mark(function e() {
       var t, n, r, o, a, i;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12561,11 +12561,11 @@ var ut = function() {
           case "end":
             return e.stop()
         }
-      }, module, this, [
+      }, e, this, [
         [1, 32]
       ])
     })), function() {
-      return Chunk152234.apply(this, arguments)
+      return u.apply(this, arguments)
     })
   }, {
     key: "subscribeOnStateChange",
@@ -12574,7 +12574,7 @@ var ut = function() {
     }
   }, {
     key: "startIdentityValidation",
-    value: (l = (0, Chunk460288.Z)(s().mark(function e() {
+    value: (l = (0, a.Z)(s().mark(function e() {
       var t;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12595,13 +12595,13 @@ var ut = function() {
           case "end":
             return e.stop()
         }
-      }, module, this)
+      }, e, this)
     })), function() {
       return l.apply(this, arguments)
     })
   }, {
     key: "finishIdentityValidation",
-    value: (c = (0, Chunk460288.Z)(s().mark(function e(t) {
+    value: (c = (0, a.Z)(s().mark(function e(t) {
       var n;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12627,7 +12627,7 @@ var ut = function() {
     })
   }, {
     key: "checkout",
-    value: (i = (0, Chunk460288.Z)(s().mark(function e(t) {
+    value: (i = (0, a.Z)(s().mark(function e(t) {
       var n, r, o;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12682,7 +12682,7 @@ var ut = function() {
     })
   }, {
     key: "logout",
-    value: (o = (0, Chunk460288.Z)(s().mark(function e() {
+    value: (o = (0, a.Z)(s().mark(function e() {
       var t, n;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12707,7 +12707,7 @@ var ut = function() {
           case "end":
             return e.stop()
         }
-      }, module, this, [
+      }, e, this, [
         [2, 8]
       ])
     })), function() {
@@ -12715,7 +12715,7 @@ var ut = function() {
     })
   }, {
     key: "verifyIfShopperIsEnrolled",
-    value: (r = (0, Chunk460288.Z)(s().mark(function e(t) {
+    value: (r = (0, a.Z)(s().mark(function e(t) {
       var n, r = this;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12763,7 +12763,7 @@ var ut = function() {
     }
   }, {
     key: "getShopperProfile",
-    value: (n = (0, Chunk460288.Z)(s().mark(function e(t) {
+    value: (n = (0, a.Z)(s().mark(function e(t) {
       var n = this;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12797,7 +12797,7 @@ var ut = function() {
     })
   }, {
     key: "verifyIfShopperIsRecognized",
-    value: (t = (0, Chunk460288.Z)(s().mark(function e() {
+    value: (t = (0, a.Z)(s().mark(function e() {
       var t = this;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12823,13 +12823,13 @@ var ut = function() {
           case "end":
             return e.stop()
         }
-      }, module)
+      }, e)
     })), function() {
-      return exports.apply(this, arguments)
+      return t.apply(this, arguments)
     })
   }, {
     key: "initiateSdks",
-    value: (e = (0, Chunk460288.Z)(s().mark(function e() {
+    value: (e = (0, a.Z)(s().mark(function e() {
       var t, n, r = this;
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
@@ -12844,9 +12844,9 @@ var ut = function() {
           case "end":
             return e.stop()
         }
-      }, module, this)
+      }, e, this)
     })), function() {
-      return module.apply(this, arguments)
+      return e.apply(this, arguments)
     })
   }]), d
 }();
@@ -13407,9 +13407,9 @@ var ub = function(e) {
   },
   u_ = function() {
     var e = tX(false),
-      t = (0, Chunk858182.Z)(module, 2),
-      n = exports[0],
-      r = exports[1],
+      t = (0, q.Z)(e, 2),
+      n = t[0],
+      r = t[1],
       o = t5(),
       a = nl().i18n,
       i = nT()({
@@ -13421,34 +13421,34 @@ var ub = function(e) {
       c = t8(function() {
         r(true)
       }, []);
-    return (0, Chunk530733.h)(Chunk530733.HY, null, (0, Chunk530733.h)("button", {
+    return (0, ec.h)(ec.HY, null, (0, ec.h)("button", {
       ref: o,
-      onClick: Chunk46018,
+      onClick: c,
       className: "adyen-web__ctp-info-button",
-      "aria-label": Chunk460288.get("ctp.aria.infoModalButton"),
+      "aria-label": a.get("ctp.aria.infoModalButton"),
       type: "button"
-    }, (0, Chunk530733.h)(o4, {
+    }, (0, ec.h)(o4, {
       height: "15",
-      src: Chunk770422,
+      src: i,
       ariaHidden: true
-    })), (0, Chunk530733.h)(ub, {
-      isOpen: require,
+    })), (0, ec.h)(ub, {
+      isOpen: n,
       onClose: s,
       focusAfterClose: o.current
     }))
   },
   uk = function() {
     var e, t = ul(),
-      n = exports.ctpState,
-      r = exports.logoutShopper,
-      o = exports.status,
-      a = exports.cards,
+      n = t.ctpState,
+      r = t.logoutShopper,
+      o = t.status,
+      a = t.cards,
       i = nl().i18n;
-    if (false === E()(e = [l7.Ready, l7.OneTimePassword]).call(module, require)) return null;
+    if (false === E()(e = [l7.Ready, l7.OneTimePassword]).call(e, n)) return null;
     var s = t9(function() {
-      return require === l7.Ready && Chunk460288.length > 1 ? Chunk770422.get("ctp.logout.notYourCards") : require === l7.Ready && 1 === Chunk460288.length ? Chunk770422.get("ctp.logout.notYourCard") : require === l7.Ready && 0 === Chunk460288.length ? Chunk770422.get("ctp.logout.notYourProfile") : Chunk770422.get("ctp.logout.notYou")
-    }, [Chunk770422, require]);
-    return (0, Chunk530733.h)("span", {
+      return n === l7.Ready && a.length > 1 ? i.get("ctp.logout.notYourCards") : n === l7.Ready && 1 === a.length ? i.get("ctp.logout.notYourCard") : n === l7.Ready && 0 === a.length ? i.get("ctp.logout.notYourProfile") : i.get("ctp.logout.notYou")
+    }, [i, n]);
+    return (0, ec.h)("span", {
       role: "button",
       tabIndex: 0,
       className: ep()("adyen-checkout-ctp__section-logout-button", {
@@ -13748,17 +13748,17 @@ var uA = function(e) {
   uR = function() {
     var e = nl().i18n,
       t = nT();
-    return (0, Chunk530733.h)(Chunk530733.HY, null, (0, Chunk530733.h)(o4, {
+    return (0, ec.h)(ec.HY, null, (0, ec.h)(o4, {
       className: "adyen-checkout-ctp__loading-image",
-      src: exports({
+      src: t({
         extension: "gif",
         imageFolder: "components/"
       })("ctp_loader"),
       alt: "",
       height: 120
-    }), (0, Chunk530733.h)("div", {
+    }), (0, ec.h)("div", {
       className: "adyen-checkout-ctp__loading-subtitle"
-    }, module.get("ctp.loading.intro")))
+    }, e.get("ctp.loading.intro")))
   },
   uF = {
     shopperLogin: {
@@ -13836,30 +13836,30 @@ var uA = function(e) {
   uO = function() {
     var e = nl().i18n,
       t = ul(),
-      n = exports.isCtpPrimaryPaymentMethod,
-      r = exports.setIsCtpPrimaryPaymentMethod,
-      o = exports.verifyIfShopperIsEnrolled,
-      i = exports.startIdentityValidation,
+      n = t.isCtpPrimaryPaymentMethod,
+      r = t.setIsCtpPrimaryPaymentMethod,
+      o = t.verifyIfShopperIsEnrolled,
+      i = t.startIdentityValidation,
       c = tX(null),
-      l = (0, Chunk858182.Z)(Chunk46018, 2),
+      l = (0, q.Z)(c, 2),
       u = l[0],
       d = l[1],
       p = tX(false),
-      h = (0, Chunk858182.Z)(Chunk171283, 2),
+      h = (0, q.Z)(p, 2),
       f = h[0],
       m = h[1],
       y = tX(null),
-      v = (0, Chunk858182.Z)(Chunk945730, 2),
+      v = (0, q.Z)(y, 2),
       g = v[0],
       b = v[1],
       _ = tX(false),
-      k = (0, Chunk858182.Z)(Chunk119295, 2),
-      C = Chunk977141[0],
-      Z = Chunk977141[1],
+      k = (0, q.Z)(_, 2),
+      C = k[0],
+      Z = k[1],
       w = tX(null),
-      S = (0, Chunk858182.Z)(Chunk134014, 2),
-      N = Chunk139726[0],
-      x = Chunk139726[1],
+      S = (0, q.Z)(w, 2),
+      N = S[0],
+      x = S[1],
       P = t8(function(e) {
         x(e)
       }, []),
@@ -13868,7 +13868,7 @@ var uA = function(e) {
           o = e.isValid;
         d(n.shopperLogin), m(o), (null == n || null == (t = n.shopperLogin) ? true : t.length) > 0 && r(true)
       }, []),
-      R = t8((0, Chunk460288.Z)(s().mark(function e() {
+      R = t8((0, a.Z)(s().mark(function e() {
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
             case 0:
@@ -13901,22 +13901,22 @@ var uA = function(e) {
             case "end":
               return e.stop()
           }
-        }, module, null, [
+        }, e, null, [
           [5, 19]
         ])
-      })), [o, Chunk770422, Chunk152234, Chunk743139, N]);
-    return (0, Chunk530733.h)(Chunk530733.HY, null, (0, Chunk530733.h)(uC.Title, {
-      endAdornment: (0, Chunk530733.h)(u_, null)
-    }, module.get("ctp.login.title")), (0, Chunk530733.h)(uC.Text, null, module.get("ctp.login.subtitle")), (0, Chunk530733.h)(uE, {
-      onChange: Chunk365556,
+      })), [o, i, u, f, N]);
+    return (0, ec.h)(ec.HY, null, (0, ec.h)(uC.Title, {
+      endAdornment: (0, ec.h)(u_, null)
+    }, e.get("ctp.login.title")), (0, ec.h)(uC.Text, null, e.get("ctp.login.subtitle")), (0, ec.h)(uE, {
+      onChange: A,
       onSetInputHandlers: P,
-      disabled: Chunk149156,
-      errorMessage: Chunk864733 && module.get("ctp.errors.".concat(Chunk864733)),
+      disabled: C,
+      errorMessage: g && e.get("ctp.errors.".concat(g)),
       onPressEnter: R
-    }), (0, Chunk530733.h)(nu, {
-      label: module.get("continue"),
-      variant: require ? "primary" : "secondary",
-      status: Chunk149156 && "loading",
+    }), (0, ec.h)(nu, {
+      label: e.get("continue"),
+      variant: n ? "primary" : "secondary",
+      status: C && "loading",
       onClick: function() {
         R()
       }
@@ -14404,11 +14404,11 @@ var uW = function() {
     function o(e, t) {
       (0, C.Z)(this, o), (0, w.Z)(this, "sdkLoader", true), (0, w.Z)(this, "configuration", true), (0, w.Z)(this, "pay", true), (0, w.Z)(this, "startAuthorization", true), this.configuration = t, this.sdkLoader = e, t.clientId || console.warn("CashAppService: clientId is missing")
     }
-    return (0, Chunk46888.Z)(o, [{
+    return (0, Z.Z)(o, [{
       key: "hasOneTimePayment",
       get: function() {
         var e = this.configuration.amount;
-        return (null == module ? true : module.value) > 0
+        return (null == e ? true : e.value) > 0
       }
     }, {
       key: "hasOnFilePayment",
@@ -14422,7 +14422,7 @@ var uW = function() {
       }
     }, {
       key: "initialize",
-      value: (r = (0, Chunk460288.Z)(s().mark(function e() {
+      value: (r = (0, a.Z)(s().mark(function e() {
         var t, n, r, o;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -14443,7 +14443,7 @@ var uW = function() {
             case "end":
               return e.stop()
           }
-        }, module, this, [
+        }, e, this, [
           [0, 10]
         ])
       })), function() {
@@ -14451,7 +14451,7 @@ var uW = function() {
       })
     }, {
       key: "renderButton",
-      value: (n = (0, Chunk460288.Z)(s().mark(function e(t) {
+      value: (n = (0, a.Z)(s().mark(function e(t) {
         var n, r, o, a;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -14496,7 +14496,7 @@ var uW = function() {
       }
     }, {
       key: "createCustomerRequest",
-      value: (t = (0, Chunk460288.Z)(s().mark(function e() {
+      value: (t = (0, a.Z)(s().mark(function e() {
         var t, n, r, o, a, i;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -14526,15 +14526,15 @@ var uW = function() {
             case "end":
               return e.stop()
           }
-        }, module, this, [
+        }, e, this, [
           [0, 7]
         ])
       })), function() {
-        return exports.apply(this, arguments)
+        return t.apply(this, arguments)
       })
     }, {
       key: "restart",
-      value: (e = (0, Chunk460288.Z)(s().mark(function e() {
+      value: (e = (0, a.Z)(s().mark(function e() {
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
             case 0:
@@ -14543,9 +14543,9 @@ var uW = function() {
             case "end":
               return e.stop()
           }
-        }, module, this)
+        }, e, this)
       })), function() {
-        return module.apply(this, arguments)
+        return e.apply(this, arguments)
       })
     }]), o
   }(),
@@ -14553,16 +14553,16 @@ var uW = function() {
     var e;
 
     function t() {
-      (0, Chunk149156.Z)(this, exports)
+      (0, C.Z)(this, t)
     }
-    return (0, Chunk46888.Z)(exports, [{
+    return (0, Z.Z)(t, [{
       key: "isSdkIsAvailableOnWindow",
       value: function() {
         return !!window.CashApp
       }
     }, {
       key: "load",
-      value: (e = (0, Chunk460288.Z)(s().mark(function e(t) {
+      value: (e = (0, a.Z)(s().mark(function e(t) {
         var n, r, o;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -14582,7 +14582,7 @@ var uW = function() {
       })), function(t) {
         return e.apply(this, arguments)
       })
-    }]), exports
+    }]), t
   }();
 
 function uG(e, t) {
@@ -15691,9 +15691,9 @@ var dg = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
         paymentDataCallbacks: e.paymentDataCallbacks
       })
     }
-    return (0, Chunk46888.Z)(exports, [{
+    return (0, Z.Z)(t, [{
       key: "getGooglePaymentsClient",
-      value: (e = (0, Chunk460288.Z)(s().mark(function e(t) {
+      value: (e = (0, a.Z)(s().mark(function e(t) {
         var n, r;
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
@@ -15754,7 +15754,7 @@ var dg = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
           return e.loadPaymentData(t)
         })
       }
-    }]), exports
+    }]), t
   }(),
   d_ = function(e) {
     (0, ea.Z)(r, ec.wA);
@@ -18518,7 +18518,7 @@ var p0 = function(e) {
         "aria-relevant": "additions text"
       })
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "update",
       value: function(e) {
         var t = e.minutes,
@@ -18582,7 +18582,7 @@ var p0 = function(e) {
       }(function() {
         this.srInterval && clearInterval(this.srInterval)
       })
-    }]), module
+    }]), e
   }(),
   p5 = function(e) {
     var t = nl().i18n,
@@ -21761,8 +21761,8 @@ var fS = function(e) {
       a = arguments.length > 2 ? arguments[2] : true,
       i = P()(e = P()(t = J()(r).call(r, function(e) {
         return a(e, o)
-      })).call(exports, fP)).call(module, fx),
-      s = J()(n = J()(Chunk770422).call(Chunk770422, fA)).call(require, function(e) {
+      })).call(t, fP)).call(e, fx),
+      s = J()(n = J()(i).call(i, fA)).call(n, function(e) {
         return e.catch(function(e) {
           return e
         })
@@ -25575,7 +25575,7 @@ var yE = function(e) {
         !e || null != e && null != (t = e.paymentMethods) && t.length || null != e && null != (n = e.storedPaymentMethods) && n.length || console.warn("paymentMethodsResponse was provided but no payment methods were found.")
       }(t), this.paymentMethods = t ? (n = t.paymentMethods, o = h.allowPaymentMethods, a = h.removePaymentMethods, n ? P()(r = P()(n).call(n, yS, true === o ? [] : o)).call(r, yN, true === a ? [] : a) : []) : [], this.storedPaymentMethods = t ? (i = t.storedPaymentMethods, d = h.allowPaymentMethods, p = h.removePaymentMethods, i ? J()(s = P()(c = P()(l = P()(u = P()(i).call(i, yA)).call(u, yS, true === d ? [] : d)).call(l, yN, true === p ? [] : p)).call(c, yx)).call(s, yE) : []) : []
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "mapCreatedComponentType",
       value: function(e) {
         return "card" === e ? "scheme" : e
@@ -25596,7 +25596,7 @@ var yE = function(e) {
           return t.type === n.mapCreatedComponentType(e)
         })
       }
-    }]), module
+    }]), e
   }();
 
 function yI(e, t) {
@@ -25721,9 +25721,9 @@ function yL(e, t) {
 }
 var yV = function() {
     function e() {
-      (0, Chunk149156.Z)(this, module), (0, Chunk134014.Z)(this, "storage", true), this.storage = {}
+      (0, C.Z)(this, e), (0, w.Z)(this, "storage", true), this.storage = {}
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "length",
       get: function() {
         return l()(this.storage).length
@@ -25754,7 +25754,7 @@ var yV = function() {
       value: function() {
         this.storage = {}
       }
-    }]), module
+    }]), e
   }(),
   yj = function() {
     function e(t, n) {
@@ -25766,7 +25766,7 @@ var yV = function() {
       }
       this.key = this.prefix + t
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "get",
       value: function() {
         try {
@@ -25785,7 +25785,7 @@ var yV = function() {
       value: function() {
         this.storage.removeItem(this.key)
       }
-    }]), module
+    }]), e
   }(),
   yU = function(e) {
     var t, n = e.loadingContext,
@@ -25817,9 +25817,9 @@ var yV = function() {
   },
   yq = function() {
     function e() {
-      (0, Chunk149156.Z)(this, module), (0, Chunk134014.Z)(this, "events", [])
+      (0, C.Z)(this, e), (0, w.Z)(this, "events", [])
     }
-    return (0, Chunk46888.Z)(module, [{
+    return (0, Z.Z)(e, [{
       key: "add",
       value: function(e) {
         this.events.push(e)
@@ -25832,7 +25832,7 @@ var yV = function() {
         });
         return this.events = [], T().all(n)
       }
-    }]), module
+    }]), e
   }();
 
 function yH(e, t) {
@@ -25933,7 +25933,7 @@ var yz = function() {
       p = u.enabled;
     true === d && true === p && this.props.checkoutAttemptId && (this.checkoutAttemptId = this.props.checkoutAttemptId, this.queue.run(this.checkoutAttemptId))
   }
-  return (0, Chunk46888.Z)(module, [{
+  return (0, Z.Z)(e, [{
     key: "send",
     value: function(e) {
       var t = this,
@@ -25951,7 +25951,7 @@ var yz = function() {
         })).catch(function() {})
       }), this.checkoutAttemptId && this.queue.run(this.checkoutAttemptId)), this.logEvent(e))
     }
-  }]), module
+  }]), e
 }();
 
 function yW(e) {
@@ -26056,7 +26056,7 @@ var y0 = function() {
     if (!r) throw Error("No loadingContext available");
     this.storage = new yj("session", "localStorage"), this.clientKey = n, this.loadingContext = r, this.session = o, this.session.sessionData ? this.storeSession() : this.session = this.getStoredSession()
   }
-  return (0, Chunk46888.Z)(module, [{
+  return (0, Z.Z)(e, [{
     key: "id",
     get: function() {
       return this.session.id
@@ -26187,11 +26187,11 @@ var y0 = function() {
     key: "createOrder",
     value: function() {
       var e, t, n, r, o = this;
-      return (n = I()(e = I()(t = "".concat("v1", "/sessions/")).call(exports, this.id, "/orders?clientKey=")).call(module, this.clientKey), r = {
+      return (n = I()(e = I()(t = "".concat("v1", "/sessions/")).call(t, this.id, "/orders?clientKey=")).call(e, this.clientKey), r = {
         sessionData: this.data
       }, o8({
         loadingContext: this.loadingContext,
-        path: require,
+        path: n,
         errorLevel: "fatal"
       }, r)).then(function(e) {
         return e.sessionData && o.updateSessionData(e.sessionData), e
@@ -26216,7 +26216,7 @@ var y0 = function() {
     key: "getStoredSession",
     value: function() {
       var e = this.storage.get();
-      return this.id === (null == module ? true : module.id) ? module : this.session
+      return this.id === (null == e ? true : e.id) ? e : this.session
     }
   }, {
     key: "storeSession",
@@ -26231,7 +26231,7 @@ var y0 = function() {
     value: function() {
       this.storage.remove()
     }
-  }]), module
+  }]), e
 }();
 
 function y1(e) {
@@ -26423,7 +26423,7 @@ var y6 = function() {
     if (("test" === u || "live" === u) && !E()(s = this.loadingContext).call(s, u)) throw Error(I()(l = "Error: you are using a '".concat(u, "' clientKey against the '")).call(l, this.options.environment, "' environment"));
     window.adyenWebVersion = e.version.version
   }
-  return (0, Chunk46888.Z)(module, [{
+  return (0, Z.Z)(e, [{
     key: "initialize",
     value: function() {
       var e = this;
@@ -26547,7 +26547,7 @@ var y6 = function() {
         srPanel: new y9(this.options.srConfig)
       }))
     }
-  }]), module
+  }]), e
 }();
 
 function y7(e) {
@@ -26555,7 +26555,7 @@ function y7(e) {
 }
 
 function ve() {
-  return (ve = (0, Chunk460288.Z)(s().mark(function e(t) {
+  return (ve = (0, a.Z)(s().mark(function e(t) {
     var n;
     return s().wrap(function(e) {
       for (;;) switch (e.prev = e.next) {

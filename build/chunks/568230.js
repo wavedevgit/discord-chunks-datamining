@@ -13,9 +13,9 @@ Chunk220159({
 }, {
   flat: function() {
     var e = arguments.length ? arguments[0] : true,
-      t = Chunk475424(this),
-      n = Chunk174344(exports),
-      r = Chunk84186(exports, 0);
-    return Chunk220159.length = Chunk507659(Chunk220159, exports, exports, require, 0, true === module ? 1 : Chunk505072(module)), Chunk220159
+      t = a(this),
+      n = i(t),
+      r = c(t, 0);
+    return r.length = o(r, t, t, n, 0, true === e ? 1 : s(e)), r
   }
 })

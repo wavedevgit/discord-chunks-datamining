@@ -186,16 +186,16 @@ function W() {
     questId: t,
     forceDiscoveryQuestHomeRoute: n = false
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  (0, Chunk150560.Z.getState().setUtmCurrentContext)({
+  (0, P.Z.getState().setUtmCurrentContext)({
     utmSourceCurrent: G,
     utmMediumCurrent: U,
-    utmCampaignCurrent: exports,
-    utmContentCurrent: Object.keys(Chunk49436.jn).find(t => E.jn[t] === e)
+    utmCampaignCurrent: t,
+    utmContentCurrent: Object.keys(E.jn).find(t => E.jn[t] === e)
   });
-  let r = null != exports ? "#".concat(exports) : "";
-  require && Chunk836768.Z.setState({
-    selectedTab: Chunk49898.GlobalDiscoveryTab.QUESTS
-  }), (0, Chunk342386.default)(), (0, Chunk703656.uL)((require ? Chunk981631.Z5c.QUEST_HOME : Chunk981631.Z5c.QUEST_HOME_V2) + Chunk54381)
+  let r = null != t ? "#".concat(t) : "";
+  n && c.Z.setState({
+    selectedTab: D.GlobalDiscoveryTab.QUESTS
+  }), (0, d.default)(), (0, u.uL)((n ? w.Z5c.QUEST_HOME : w.Z5c.QUEST_HOME_V2) + r)
 }
 let K = .2;
 
@@ -215,7 +215,7 @@ function z(e) {
 }
 
 function q() {
-  return Promise.all([require.e("13193"), require.e("75909"), require.e("11941")]).then(require.bind(require, 215113))
+  return Promise.all([n.e("13193"), n.e("75909"), n.e("11941")]).then(n.bind(n, 215113))
 }
 
 function Q(e) {

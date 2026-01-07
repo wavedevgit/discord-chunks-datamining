@@ -69,9 +69,9 @@ class l extends Chunk492733.kb {
       buffer: e,
       outputLen: t
     } = this;
-    this.digestInto(module);
-    let n = module.slice(0, exports);
-    return this.destroy(), require
+    this.digestInto(e);
+    let n = e.slice(0, t);
+    return this.destroy(), n
   }
   _cloneInto(e) {
     e || (e = new this.constructor), e.set(...this.get());

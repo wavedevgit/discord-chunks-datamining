@@ -317,7 +317,7 @@ function et(e) {
 }
 class en extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk271383.ZP)
+    this.waitFor(c.default, u.ZP)
   }
   getGuildScheduledEvent(e) {
     var t;

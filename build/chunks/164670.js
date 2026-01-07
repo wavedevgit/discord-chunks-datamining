@@ -38,8 +38,8 @@ function m(e) {
 }
 
 function h() {
-  let e = Chunk430824.Z.getGuild(Chunk582113.Kz);
-  return null != module && module.features.has(Chunk981631.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? module.id : Chunk582113.ON
+  let e = s.Z.getGuild(d.Kz);
+  return null != e && e.features.has(f.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? e.id : d.ON
 }
 
 function g(e) {

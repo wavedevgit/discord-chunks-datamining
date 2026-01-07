@@ -19,7 +19,7 @@ function a(e) {
 
 function o() {
   a({
-    displayTools: !Chunk19759.Z.displayTools
+    displayTools: !i.Z.displayTools
   })
 }
 
@@ -31,7 +31,7 @@ function s(e) {
 }
 
 function l() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "ANALYTICS_LOG_CLEAR"
   })
 }

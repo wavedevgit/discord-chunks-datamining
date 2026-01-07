@@ -26,12 +26,12 @@ function y() {
     items: t,
     loading: n,
     loadMore: i
-  } = (0, Chunk11799.y6)(), a = O(exports, (0, Chunk442837.e7)([Chunk140155.Z], () => Chunk140155.Z.localItems));
-  return (0, Chunk54381.jsx)(Chunk616032.Z, {
-    initialized: module,
-    items: Chunk681715,
-    loading: require,
-    loadMore: Chunk473749
+  } = (0, d.y6)(), a = O(t, (0, l.e7)([s.Z], () => s.Z.localItems));
+  return (0, r.jsx)(f.Z, {
+    initialized: e,
+    items: a,
+    loading: n,
+    loadMore: i
   })
 }
 
@@ -42,24 +42,24 @@ function O(e, t) {
 function v() {
   let {
     items: e
-  } = (0, Chunk11799.y6)(), t = module.length > 0 ? module[0] : null, n = O(module, (0, Chunk442837.e7)([Chunk140155.Z], () => Chunk140155.Z.localItems)), f = Chunk695346.d$.useSetting();
-  return Chunk473749.useMemo(() => {
-    if (null != exports && 0 >= Chunk709054.default.compare(exports.id, Chunk616032)) returnfalse;
-    for (let e of require) {
-      if (0 >= Chunk709054.default.compare(module.id, Chunk616032)) break;
-      if (!(0, Chunk178480.r)(module, Chunk616032)) returntrue
+  } = (0, d.y6)(), t = e.length > 0 ? e[0] : null, n = O(e, (0, l.e7)([s.Z], () => s.Z.localItems)), f = h.d$.useSetting();
+  return i.useMemo(() => {
+    if (null != t && 0 >= g.default.compare(t.id, f)) returnfalse;
+    for (let e of n) {
+      if (0 >= g.default.compare(e.id, f)) break;
+      if (!(0, u.r)(e, f)) returntrue
     }
     returnfalse
-  }, [exports, Chunk616032, require]) ? (0, Chunk54381.jsx)(Chunk681715.u, {
-    text: Chunk388032.intl.string(Chunk388032.t["8k+6QY"]),
-    children: (0, Chunk54381.jsx)(Chunk481060.hU, {
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["8k+6QY"]),
-      icon: Chunk481060.W6s,
+  }, [t, f, n]) ? (0, r.jsx)(a.u, {
+    text: m.intl.string(m.t["8k+6QY"]),
+    children: (0, r.jsx)(o.hU, {
+      "aria-label": m.intl.string(m.t["8k+6QY"]),
+      icon: o.W6s,
       variant: "secondary",
       size: "sm",
       onClick: () => {
-        null != exports && (Chunk695346.d$.updateSetting(exports.id), Chunk626135.default.track(Chunk981631.rMx.NOTIFICATION_CENTER_ACTION, {
-          action_type: Chunk497089.ud.MARK_ALL_READ
+        null != t && (h.d$.updateSetting(t.id), p.default.track(b.rMx.NOTIFICATION_CENTER_ACTION, {
+          action_type: c.ud.MARK_ALL_READ
         }))
       }
     })

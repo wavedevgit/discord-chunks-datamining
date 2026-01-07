@@ -18,22 +18,22 @@ var Chunk473749 = require("./473749.js"),
   Chunk474936 = require("./474936.js");
 
 function s() {
-  let [e, t] = Chunk473749.useState(), n = (0, Chunk347896.Z)(), o = null == require ? true : require.rewards, s = null == require ? true : require.variants;
+  let [e, t] = r.useState(), n = (0, a.Z)(), o = null == n ? true : n.rewards, s = null == n ? true : n.variants;
   null != s && (o = s.flatMap(e => e.variants));
   let {
     purchases: l,
     hasPreviouslyFetched: c,
     fetchPurchasesError: u
-  } = (0, Chunk223143.c7)(), d = Chunk473749.useRef(false);
-  return Chunk473749.useEffect(() => {
-    c && !d.current && null != Chunk474936 && (exports(null == u ? Chunk474936.filter(e => null == l.get(e.skuId)) : []), d.current = true)
-  }, [Chunk474936, l, c, u]), null != module ? module : true
+  } = (0, i.c7)(), d = r.useRef(false);
+  return r.useEffect(() => {
+    c && !d.current && null != o && (t(null == u ? o.filter(e => null == l.get(e.skuId)) : []), d.current = true)
+  }, [o, l, c, u]), null != e ? e : true
 }
 
 function l() {
   var e;
-  let t = (0, Chunk347896.Z)();
-  return null != (e = null == exports ? true : exports.variants) ? module : true
+  let t = (0, a.Z)();
+  return null != (e = null == t ? true : t.variants) ? e : true
 }
 
 function c(e) {

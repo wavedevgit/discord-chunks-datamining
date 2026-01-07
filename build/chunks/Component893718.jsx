@@ -281,19 +281,19 @@ function eR(e, t, n) {
 }
 
 function ew() {
-  let e = Chunk473749.useRef(null),
-    t = Chunk473749.useCallback(() => {
+  let e = i.useRef(null),
+    t = i.useCallback(() => {
       var t;
-      null == (t = module.current) || exports.onMaybeShowAutocomplete()
+      null == (t = e.current) || t.onMaybeShowAutocomplete()
     }, []),
-    n = Chunk473749.useCallback(() => {
+    n = i.useCallback(() => {
       var t;
-      null == (t = module.current) || exports.onHideAutocomplete()
+      null == (t = e.current) || t.onHideAutocomplete()
     }, []);
   return {
-    autocompleteRef: module,
-    handleMaybeShowAutocomplete: exports,
-    handleHideAutocomplete: require
+    autocompleteRef: e,
+    handleMaybeShowAutocomplete: t,
+    handleHideAutocomplete: n
   }
 }
 

@@ -21,21 +21,21 @@ let Chunk775322 = require("./775322.js"),
   Chunk353385 = require("./353385.js");
 
 function A() {
-  let t = (0, Chunk442837.e7)([Chunk210887.Z], () => (0, Chunk793030.apv)(Chunk210887.Z.theme));
-  return (0, Chunk54381.jsx)("img", {
-    src: module ? Chunk775322 : Chunk353385,
+  let t = (0, u.e7)([c.Z], () => (0, s.apv)(c.Z.theme));
+  return (0, i.jsx)("img", {
+    src: t ? I : N,
     width: 48,
     height: 32,
     alt: ""
   })
 }
 let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.t8Qhib), Chunk388032.intl.string(Chunk388032.t.hmfkCi)],
+  useSearchTerms: () => [g.intl.string(g.t.t8Qhib), g.intl.string(g.t.hmfkCi)],
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isInputProfileCustom() && Chunk131951.Z.isNoiseSuppressionSupported())
+    return (0, u.e7)([T.Z], () => T.Z.isInputProfileCustom() && T.Z.isNoiseSuppressionSupported())
   },
   Component: function() {
-    let t = Chunk473749.useCallback(t => {
+    let t = l.useCallback(t => {
         a.Z.setNoiseCancellation(t === d.Q4.KRISP, d.MP), a.Z.setNoiseSuppression(t === d.Q4.STANDARD, d.MP)
       }, []),
       {
@@ -43,41 +43,41 @@ let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
         noiseSuppression: n,
         isNoiseSuppressionSupported: o,
         isNoiseCancellationSupported: c
-      } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-        noiseCancellation: Chunk131951.Z.getNoiseCancellation(),
-        noiseSuppression: Chunk131951.Z.getNoiseSuppression(),
-        isNoiseSuppressionSupported: Chunk131951.Z.isNoiseSuppressionSupported(),
-        isNoiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
+      } = (0, u.cj)([T.Z], () => ({
+        noiseCancellation: T.Z.getNoiseCancellation(),
+        noiseSuppression: T.Z.getNoiseSuppression(),
+        isNoiseSuppressionSupported: T.Z.isNoiseSuppressionSupported(),
+        isNoiseCancellationSupported: T.Z.isNoiseCancellationSupported()
       })),
-      E = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
-      I = exports ? Chunk803567.Q4.KRISP : Chunk313789,
-      N = Chunk473749.useMemo(() => {
+      E = n ? d.Q4.STANDARD : d.Q4.NONE,
+      I = e ? d.Q4.KRISP : E,
+      N = l.useMemo(() => {
         let t = [];
-        return Chunk210887 && module.push({
-          label: Chunk388032.intl.string(Chunk388032.t.rdoNzt),
-          value: Chunk803567.Q4.KRISP
-        }), Chunk509613 && module.push({
-          label: Chunk388032.intl.string(Chunk388032.t.qXeYHw),
-          value: Chunk803567.Q4.STANDARD
-        }), module.push({
-          label: Chunk388032.intl.string(Chunk388032.t.wkYAlz),
-          value: Chunk803567.Q4.NONE
-        }), module
-      }, [Chunk210887, Chunk509613]),
-      O = Chunk210887 ? Chunk388032.intl.format(Chunk388032.t["1q5aTp"], {
-        helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION)
-      }) : Chunk388032.intl.string(Chunk388032.t.OWKjw5);
-    return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+        return c && t.push({
+          label: g.intl.string(g.t.rdoNzt),
+          value: d.Q4.KRISP
+        }), o && t.push({
+          label: g.intl.string(g.t.qXeYHw),
+          value: d.Q4.STANDARD
+        }), t.push({
+          label: g.intl.string(g.t.wkYAlz),
+          value: d.Q4.NONE
+        }), t
+      }, [c, o]),
+      O = c ? g.intl.format(g.t["1q5aTp"], {
+        helpArticle: S.Z.getArticleURL(_.BhN.NOISE_SUPPRESSION)
+      }) : g.intl.string(g.t.OWKjw5);
+    return (0, i.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 0,
-      children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
-        label: Chunk388032.intl.string(Chunk388032.t.t8Qhib),
+      children: [(0, i.jsx)(r.y6, {
+        label: g.intl.string(g.t.t8Qhib),
         description: O,
         layout: "horizontal",
-        value: Chunk775322,
-        onChange: module,
-        options: Chunk353385
-      }), Chunk210887 && (0, Chunk54381.jsx)(A, {})]
+        value: I,
+        onChange: t,
+        options: N
+      }), c && (0, i.jsx)(A, {})]
     })
   }
 })

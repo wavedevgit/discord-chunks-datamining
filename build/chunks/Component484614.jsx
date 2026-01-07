@@ -60,12 +60,12 @@ class h extends(r = Chunk473749.PureComponent) {
       text: e
     } = this.props, {
       mode: t
-    } = this.state, n = exports === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t.t5VZ88) : module;
-    return (0, Chunk54381.jsx)(Chunk481060.kO8, _(f({}, this.props), {
+    } = this.state, n = t === l.kO8.Modes.SUCCESS ? u.intl.string(u.t.t5VZ88) : e;
+    return (0, i.jsx)(l.kO8, _(f({}, this.props), {
       onCopy: this.handleCopy,
-      mode: exports,
-      text: require,
-      supportsCopy: Chunk572004.wS
+      mode: t,
+      text: n,
+      supportsCopy: c.wS
     }))
   }
   handleCopy(e) {

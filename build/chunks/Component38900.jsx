@@ -12,8 +12,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk986517 = require("./986517.js"),
   Chunk213875 = require("./213875.js"),
   Chunk489538 = require("./489538.js");
-let u = () => (0, Chunk54381.jsx)("div", {
-  className: Chunk489538.skeletonsContainer,
+let u = () => (0, r.jsx)("div", {
+  className: c.skeletonsContainer,
   children: Array.from({
     length: 3
   }).map((e, t) => (0, r.jsxs)("div", {

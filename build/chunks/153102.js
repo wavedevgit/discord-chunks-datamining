@@ -27,13 +27,13 @@ class c {
   }
   pause() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
-    this.isPaused = true, null !== this.pauseTimer && clearTimeout(this.pauseTimer), null !== module && (this.pauseTimer = setTimeout(() => {
+    this.isPaused = true, null !== this.pauseTimer && clearTimeout(this.pauseTimer), null !== e && (this.pauseTimer = setTimeout(() => {
       this.pauseTimer = null, this.resume()
-    }, module))
+    }, e))
   }
   resume() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    clearTimeout(this.pauseTimer), this.pauseTimer = null, this.isPaused && (this.isPaused = false, module && this.changedStores.size > 0 && setImmediate(() => this.emit()))
+    clearTimeout(this.pauseTimer), this.pauseTimer = null, this.isPaused && (this.isPaused = false, e && this.changedStores.size > 0 && setImmediate(() => this.emit()))
   }
   batched(e) {
     if (this.isPaused) return e();
@@ -51,11 +51,11 @@ class c {
           t = new Set,
           n = new Set;
         for (; this.changedStores.size > 0;) {
-          if (++module > 100) throw o.error("LastFewActions", Chunk625306.qC()), Error("change emit loop detected, aborting");
-          this.emitNonReactOnce(exports, require)
+          if (++e > 100) throw o.error("LastFewActions", i.qC()), Error("change emit loop detected, aborting");
+          this.emitNonReactOnce(t, n)
         }
         for (; this.reactChangedStores.size > 0;) {
-          if (++module > 100) throw o.error("LastFewActions", Chunk625306.qC()), Error("react change emit loop detected, aborting");
+          if (++e > 100) throw o.error("LastFewActions", i.qC()), Error("react change emit loop detected, aborting");
           this.emitReactOnce()
         }
       } finally {
@@ -92,11 +92,11 @@ class c {
   emitReactOnce() {
     let e = Date.now(),
       t = this.reactChangedStores;
-    this.reactChangedStores = new Set, exports.forEach(e => {
+    this.reactChangedStores = new Set, t.forEach(e => {
       e._reactChangeCallbacks.invokeAll(), this.reactChangedStores.delete(e)
     });
     let n = Date.now();
-    require - module > s && o.verbose("Slow batch emitReactChanges took ".concat(require - module, "ms recentActions:"), Chunk625306.qC())
+    n - e > s && o.verbose("Slow batch emitReactChanges took ".concat(n - e, "ms recentActions:"), i.qC())
   }
   constructor() {
     a(this, "changedStores", new Set), a(this, "reactChangedStores", new Set), a(this, "changeSentinel", 0), a(this, "isBatchEmitting", false), a(this, "isDispatching", false), a(this, "isPaused", false), a(this, "pauseTimer", null)

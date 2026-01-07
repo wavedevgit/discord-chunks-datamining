@@ -17,6 +17,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk798922 = require("./798922.js"),
   Chunk388032 = require("./388032.jsx");
 let g = (0, Chunk509613.vB)(Chunk313789.n.USER_SECTION, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.cduTBL),
-  buildLayout: () => [Chunk837061.x, Chunk217123.rV, Chunk202841.f, Chunk603569.a, Chunk912400.h, Chunk798922.F, Chunk51435.J, Chunk674574.e, Chunk212473.KL, Chunk74662.U]
+  useTitle: () => _.intl.string(_.t.cduTBL),
+  buildLayout: () => [s.x, o.rV, T.f, S.a, u.h, d.F, a.J, c.e, r.KL, E.U]
 })

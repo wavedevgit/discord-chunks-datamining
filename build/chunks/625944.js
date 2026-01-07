@@ -11,28 +11,28 @@ var Chunk915009 = require("./915009.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.DATA_USAGE_QUESTS_3P_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.CyLYKZ),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t["2QFDU/"], {
-    helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
+  useTitle: () => o.intl.string(o.t.CyLYKZ),
+  useSubtitle: () => o.intl.format(o.t["2QFDU/"], {
+    helpdeskArticle: s.Z.getArticleURL(a.BhN.QUESTS_PRIVACY_CONTROLS)
   }),
   useValue: function() {
-    return !Chunk695346.JT.useSetting()
+    return !u.JT.useSetting()
   },
   setValue: function(t) {
     u.JT.updateSetting(!t)
   },
   useDisabled: function() {
-    let t = Chunk695346.bh.useSetting(),
-      e = (0, Chunk915009.LN)();
-    return module || exports
+    let t = u.bh.useSetting(),
+      e = (0, i.LN)();
+    return t || e
   },
   useDisabledMessage: function() {
-    if (Chunk695346.bh.useSetting()) {
-      let t = Chunk388032.intl.string(Chunk388032.t.sJYh5t);
-      return Chunk388032.intl.format(Chunk388032.t.W2Vg7a, {
-        settingTitle: module
+    if (u.bh.useSetting()) {
+      let t = o.intl.string(o.t.sJYh5t);
+      return o.intl.format(o.t.W2Vg7a, {
+        settingTitle: t
       })
     }
   },
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.CyLYKZ)]
+  useSearchTerms: () => [o.intl.string(o.t.CyLYKZ)]
 })

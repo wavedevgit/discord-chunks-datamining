@@ -82,31 +82,31 @@ let x = e => {
     })
   },
   E = () => {
-    let e = Chunk473749.useRef(null),
+    let e = i.useRef(null),
       {
         parentAnalyticsLocation: t
-      } = (0, Chunk906732.ZP)(),
-      n = (0, Chunk399606.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
-      a = (0, Chunk341569.z8)(),
-      s = (0, Chunk399606.e7)([Chunk435064.Z], () => Chunk435064.Z.getIsAtMaxSaveClipOperations()),
-      v = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
-    if (!Chunk907862 || null == Chunk238168 || require) return null;
-    let j = Chunk13140.BB(Chunk238168.shortcut, true);
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(x, {
-        keybindString: Chunk38983,
-        targetElementRef: module
-      }), (0, Chunk54381.jsx)(Chunk870569.Z, {
-        ref: module,
-        disabled: Chunk239091,
-        tooltipText: null != Chunk238168 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv1, {
-          hotkey: Chunk13140.BB(null == Chunk238168 ? true : Chunk238168.shortcut, true)
-        }) : Chunk388032.intl.string(Chunk388032.t.s52pju),
+      } = (0, c.ZP)(),
+      n = (0, l.e7)([f.Z], () => f.Z.hasLayers()),
+      a = (0, b.z8)(),
+      s = (0, l.e7)([g.Z], () => g.Z.getIsAtMaxSaveClipOperations()),
+      v = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(y.kg4.SAVE_CLIP));
+    if (!a || null == v || n) return null;
+    let j = p.BB(v.shortcut, true);
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(x, {
+        keybindString: j,
+        targetElementRef: e
+      }), (0, r.jsx)(d.Z, {
+        ref: e,
+        disabled: s,
+        tooltipText: null != v ? O.intl.formatToPlainString(O.t.HIMcv1, {
+          hotkey: p.BB(null == v ? true : v.shortcut, true)
+        }) : O.intl.string(O.t.s52pju),
         onClick: () => {
-          (0, Chunk39604.br)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)
+          (0, m.br)(), (0, u.v)(t, u.d.CLIP)
         },
         onContextMenu: C,
-        icon: Chunk481060.AlX
+        icon: o.AlX
       })]
     })
   }

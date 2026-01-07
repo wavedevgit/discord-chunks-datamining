@@ -16,10 +16,10 @@ let d = {
   binds: ["shift+esc"],
   comboKeysBindGlobal: true,
   action() {
-    let e = Chunk914010.Z.getGuildId();
-    if (null == module || !Chunk888369.default.getGuildHasUnreadIgnoreMuted(module)) return;
-    (0, Chunk181945.Z)([module]);
-    let t = Chunk944486.Z.getChannelId(module);
-    null != exports && (Chunk375954.Z.getMessages(exports).hasMoreAfter ? Chunk904245.Z.jumpToPresent(exports, Chunk981631.AQB) : Chunk585483.S.dispatch(Chunk981631.CkL.SCROLLTO_PRESENT))
+    let e = l.Z.getGuildId();
+    if (null == e || !a.default.getGuildHasUnreadIgnoreMuted(e)) return;
+    (0, i.Z)([e]);
+    let t = s.Z.getChannelId(e);
+    null != t && (o.Z.getMessages(t).hasMoreAfter ? r.Z.jumpToPresent(t, u.AQB) : c.S.dispatch(u.CkL.SCROLLTO_PRESENT))
   }
 }

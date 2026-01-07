@@ -57,7 +57,7 @@ let w = "seenQSTutorial",
   W = null;
 
 function K() {
-  G = Chunk430824.Z.getGuildCount() >= 3 || o().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, H = []
+  G = y.Z.getGuildCount() >= 3 || o().size(h.Z.getMutablePrivateChannels()) >= 20, H = []
 }
 
 function z(e) {
@@ -85,46 +85,46 @@ function q(e) {
 
 function Q() {
   var e, t;
-  let n = null != (e = Chunk914010.Z.getGuildId()) ? module : true,
-    r = null != (t = Chunk944486.Z.getChannelId()) ? exports : true;
+  let n = null != (e = I.Z.getGuildId()) ? e : true,
+    r = null != (t = S.Z.getChannelId()) ? t : true;
   switch (Z) {
-    case Chunk212819.h8.USER: {
-      let e = Chunk314897.default.getId();
-      return Chunk483360.ZP.getRecentlyTalked(r, 100).filter(t => {
+    case u.h8.USER: {
+      let e = m.default.getId();
+      return C.ZP.getRecentlyTalked(r, 100).filter(t => {
         let {
           record: n
         } = t;
         return n.id !== e
       })
     }
-    case Chunk212819.h8.APPLICATION:
-      return Chunk483360.ZP.queryApplications({
+    case u.h8.APPLICATION:
+      return C.ZP.queryApplications({
         query: "",
         limit: 100,
         fuzzy: true
       });
-    case Chunk212819.h8.GUILD:
-      return Chunk483360.ZP.queryGuilds({
+    case u.h8.GUILD:
+      return C.ZP.queryGuilds({
         query: "",
         limit: 100,
         fuzzy: true
       });
-    case Chunk212819.h8.TEXT_CHANNEL:
-      return Chunk483360.ZP.queryChannels({
+    case u.h8.TEXT_CHANNEL:
+      return C.ZP.queryChannels({
         query: "",
-        guildId: Chunk914010.Z.getGuildId(),
+        guildId: I.Z.getGuildId(),
         limit: 100,
         fuzzy: true,
         allowEmptyQueries: true
       });
-    case Chunk212819.h8.VOICE_CHANNEL:
-      return Chunk483360.ZP.queryChannels({
+    case u.h8.VOICE_CHANNEL:
+      return C.ZP.queryChannels({
         query: "",
-        guildId: Chunk914010.Z.getGuildId(),
+        guildId: I.Z.getGuildId(),
         limit: 100,
         fuzzy: true,
         filter: () => true,
-        type: Chunk984933.Zb,
+        type: E.Zb,
         allowEmptyQueries: true
       })
   }
@@ -132,29 +132,29 @@ function Q() {
     a = new Set,
     o = z(e => e === r || Y.includes(e) || a.has(e));
   if (o.length > 0)
-    for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jZ"]))), o)) Chunk392711.add(module.channelId), i.push(module.record);
-  let s = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !Y.includes(e) && !a.has(e)).map(e => q(e)).filter(Chunk823379.lm).reverse();
-  if (Chunk442837.length > 0)
-    for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["61Df13"]))), Chunk442837)) Chunk392711.add(module.record.id), i.push(module);
-  if (null != require) {
-    let e = Chunk984933.ZP.getSelectableChannelIds(require).filter(e => {
+    for (let e of (i.push((0, u.o6)(P.intl.string(P.t["4B63jZ"]))), o)) a.add(e.channelId), i.push(e.record);
+  let s = v.ZP.getMentionChannelIds().filter(e => e !== r && !Y.includes(e) && !a.has(e)).map(e => q(e)).filter(A.lm).reverse();
+  if (s.length > 0)
+    for (let e of (i.push((0, u.o6)(P.intl.string(P.t["61Df13"]))), s)) a.add(e.record.id), i.push(e);
+  if (null != n) {
+    let e = E.ZP.getSelectableChannelIds(n).filter(e => {
       let t = h.Z.getChannel(e);
       return !(null == t || e === r || Y.includes(e) || a.has(e) || T.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && T.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => q(e)).filter(e => e);
-    Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
+    Object.values(p.Z.getActiveJoinedUnreadThreadsForGuild(n)).forEach(t => {
       for (let n in t) {
         let t = q(n);
         null == t || a.has(t.record.id) || Y.includes(n) || e.push(t)
       }
-    }), module.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t.ieCAhD))), i = i.concat(module))
+    }), e.length > 0 && (i.push((0, u.o6)(P.intl.string(P.t.ieCAhD))), i = i.concat(e))
   }
   let l = Math.min((i.length > 0 ? L : x) + 1, Y.length),
     c = [];
-  for (let e = 1; module < Chunk433517; e += 1) {
-    let t = q(Y[module]);
-    null != exports && (exports.type !== Chunk212819.h8.TEXT_CHANNEL && exports.type !== Chunk212819.h8.VOICE_CHANNEL || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, exports.record)) && (Chunk570140.push(exports), Chunk392711.add(exports.record.id))
+  for (let e = 1; e < l; e += 1) {
+    let t = q(Y[e]);
+    null != t && (t.type !== u.h8.TEXT_CHANNEL && t.type !== u.h8.VOICE_CHANNEL || O.Z.can(N.Plq.VIEW_CHANNEL, t.record)) && (c.push(t), a.add(t.record.id))
   }
-  return Chunk570140.length > 0 && (i = [(0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ1"])), ...Chunk570140, ...i]), i
+  return c.length > 0 && (i = [(0, u.o6)(P.intl.string(P.t["80lOZ1"])), ...c, ...i]), i
 }
 
 function X(e, t) {
@@ -262,7 +262,7 @@ function ei(e) {
 
 function ea() {
   if (U) returnfalse;
-  U = true, Chunk433517.K.set(w, true)
+  U = true, l.K.set(w, true)
 }
 class eo extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -298,7 +298,7 @@ class eo extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getProps() {
     return {
-      theme: Chunk210887.Z.theme,
+      theme: _.Z.theme,
       query: null != r ? r.query : "",
       queryMode: Z,
       results: F,

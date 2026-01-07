@@ -49,6 +49,6 @@ function l(e, n) {
 
 function u() {
   let e = r.__wbindgen_externrefs,
-    n = module.grow(4);
-  module.set(0, true), module.set(exports + 0, true), module.set(exports + 1, null), module.set(exports + 2, true), module.set(exports + 3, false)
+    n = e.grow(4);
+  e.set(0, true), e.set(n + 0, true), e.set(n + 1, null), e.set(n + 2, true), e.set(n + 3, false)
 }

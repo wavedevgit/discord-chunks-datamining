@@ -71,32 +71,32 @@ function w() {
   T && (r = true), C = false
 }
 let D = () => {
-    let e = !Chunk74538.ZP.canUseClientThemes(Chunk594174.default.getCurrentUser());
-    if (module === T) returnfalse;
-    T = module
+    let e = !b.ZP.canUseClientThemes(E.default.getCurrentUser());
+    if (e === T) returnfalse;
+    T = e
   },
   x = () => {
-    if (!Chunk238514.Z.shouldSync("appearance")) returnfalse;
-    let e = Chunk695346.L1.getSetting().backgroundGradientPresetId;
-    if (null == module) {
+    if (!u.Z.shouldSync("appearance")) returnfalse;
+    let e = _.L1.getSetting().backgroundGradientPresetId;
+    if (null == e) {
       if (null == r) returnfalse;
       r = true
     } else {
-      let t = Chunk469115.qt[module];
-      if (exports === r) returnfalse;
-      r = exports
+      let t = v.qt[e];
+      if (t === r) returnfalse;
+      r = t
     }
   },
   L = () => {
-    if (!Chunk238514.Z.shouldSync("appearance")) returnfalse;
-    let e = Chunk695346.L1.getSetting().backgroundGradientPresetId;
-    if (Chunk740492.ZP.useSystemTheme === Chunk874893.KW.ON && null != module && (0, Chunk781391.hi)(Chunk874893.KW.OFF), null == module) {
+    if (!u.Z.shouldSync("appearance")) returnfalse;
+    let e = _.L1.getSetting().backgroundGradientPresetId;
+    if (p.ZP.useSystemTheme === S.KW.ON && null != e && (0, d.hi)(S.KW.OFF), null == e) {
       null != r && (r = true);
       return
     }
-    let t = Chunk469115.qt[module],
-      n = (null == r ? true : r.id) === (null == exports ? true : exports.id);
-    null == exports || require || (r = exports)
+    let t = v.qt[e],
+      n = (null == r ? true : r.id) === (null == t ? true : t.id);
+    null == t || n || (r = t)
   };
 class j extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -111,7 +111,7 @@ class j extends(a = Chunk442837.ZP.PersistedStore) {
     return r
   }
   getLinearGradient() {
-    return null == this.gradientPreset ? null : (0, Chunk47760.VK)(this.gradientPreset)
+    return null == this.gradientPreset ? null : (0, O.VK)(this.gradientPreset)
   }
   get isPreview() {
     return T

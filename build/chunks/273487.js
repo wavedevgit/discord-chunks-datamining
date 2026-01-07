@@ -9,7 +9,7 @@ let l = {
   [require("./981631.js").Etm.USER_SETTINGS_GET_LOCALE]: {
     scope: Chunk243814.x.IDENTIFY,
     handler: () => ({
-      locale: Chunk706454.default.locale
+      locale: i.default.locale
     })
   }
 }

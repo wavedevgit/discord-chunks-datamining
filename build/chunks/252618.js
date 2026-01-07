@@ -133,35 +133,35 @@ function I() {
       flashQueue: t
     } = e, n = m(e).filter(e => null != e).join(" | "), r = h(e);
     return ["".concat(r).concat(n), t[0]]
-  }, Chunk55160.X), [n, a] = Chunk473749.useState(false), o = Chunk473749.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
-  return Chunk473749.useEffect(() => {
-    if (null == exports) {
-      Chunk731965.current = 0, Chunk748521(false);
+  }, i.X), [n, a] = r.useState(false), o = r.useRef(0), s = null == t ? true : t.messages[o.current % t.messages.length];
+  return r.useEffect(() => {
+    if (null == t) {
+      o.current = 0, a(false);
       return
     }
-    if (document.hasFocus() && exports.onlyWhenBlurred) {
-      y(exports.id), Chunk748521(false);
+    if (document.hasFocus() && t.onlyWhenBlurred) {
+      y(t.id), a(false);
       return
     }
     let e = setInterval(() => {
-      if (Chunk731965.current >= exports.count) {
-        y(exports.id), Chunk748521(false);
+      if (o.current >= t.count) {
+        y(t.id), a(false);
         return
       }
-      Chunk748521(e => !e || (o.current += 1, false))
-    }, exports.interval);
-    return () => clearInterval(module)
-  }, [exports]), require ? s : module
+      a(e => !e || (o.current += 1, false))
+    }, t.interval);
+    return () => clearInterval(e)
+  }, [t]), n ? s : e
 }
 
 function T() {
-  Chunk473749.useEffect(() => {
+  r.useEffect(() => {
     function e() {
       O()
     }
-    return document.addEventListener("focusin", module, {
+    return document.addEventListener("focusin", e, {
       capture: true
-    }), () => document.removeEventListener("focusin", module, {
+    }), () => document.removeEventListener("focusin", e, {
       capture: true
     })
   }, [])
@@ -173,8 +173,8 @@ function C() {
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   T();
   let t = I();
-  Chunk473749.useEffect(() => {
-    let n = exports === d.base;
-    module && require || (document.title = exports)
-  }, [module, exports])
+  r.useEffect(() => {
+    let n = t === d.base;
+    e && n || (document.title = t)
+  }, [e, t])
 }

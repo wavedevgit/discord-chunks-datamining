@@ -43,6 +43,6 @@ function u(e) {
 }
 
 function d() {
-  let [e, t] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [Chunk355298.Z, Chunk333984.Z], n = exports.getSpamChannelsCount();
-  return module.getMessageRequestsCount() > 0 || require > 0
+  let [e, t] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [i.Z, a.Z], n = t.getSpamChannelsCount();
+  return e.getMessageRequestsCount() > 0 || n > 0
 }

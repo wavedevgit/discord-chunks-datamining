@@ -116,8 +116,8 @@ let v = e => {
   },
   T = e => true,
   C = () => {
-    Chunk473749.useEffect(() => {
-      (0, Chunk268350.$p)()
+    r.useEffect(() => {
+      (0, m.$p)()
     }, [])
   },
   A = e => {
@@ -170,24 +170,24 @@ let v = e => {
 
 function P() {
   var e, t;
-  return null != (t = null == (e = (0, Chunk516373.D)().favoriteStickers) ? true : module.stickerIds) ? exports : N
+  return null != (t = null == (e = (0, s.D)().favoriteStickers) ? true : e.stickerIds) ? t : N
 }
 
 function R() {
   let e = P();
-  return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => null != e && (!(0, b.J8)(e) || (0, b.V9)(e))), [module])
+  return (0, i.Wu)([g.Z], () => e.map(e => g.Z.getStickerById(e)).filter(e => null != e && (!(0, b.J8)(e) || (0, b.V9)(e))), [e])
 }
 
 function w() {
   var e, t;
-  let n = (0, Chunk516373.D)(),
+  let n = (0, s.D)(),
     r = N;
-  return (null == require || null == (e = require.stickerFrecency) ? true : module.stickers) != null && (r = Object.keys(null == require || null == (t = require.stickerFrecency) ? true : exports.stickers)), Chunk473749
+  return (null == n || null == (e = n.stickerFrecency) ? true : e.stickers) != null && (r = Object.keys(null == n || null == (t = n.stickerFrecency) ? true : t.stickers)), r
 }
 
 function D() {
   let e = w();
-  return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => true !== e), [module])
+  return (0, i.Wu)([g.Z], () => e.map(e => g.Z.getStickerById(e)).filter(e => true !== e), [e])
 }
 let x = e => {
     let t = R(),

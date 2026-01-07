@@ -11,18 +11,18 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let l = 6 * Chunk70956.Z.Millis.HOUR;
 async function c() {
-  let e = Chunk230307.Z.lastFetched;
-  if (!(null != module && Date.now() - module < l)) try {
-    let e = await Chunk544891.tn.get({
-      url: Chunk981631.ANM.USER_ACTIVITY_STATISTICS,
+  let e = a.Z.lastFetched;
+  if (!(null != e && Date.now() - e < l)) try {
+    let e = await r.tn.get({
+      url: s.ANM.USER_ACTIVITY_STATISTICS,
       oldFormErrors: true,
       rejectWithError: false
     });
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "USER_ACTIVITY_STATISTICS_FETCH_SUCCESS",
-      statistics: module.body
+      statistics: e.body
     })
   } catch (e) {
-    return module
+    return e
   }
 }

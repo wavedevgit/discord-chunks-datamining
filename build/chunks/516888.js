@@ -73,8 +73,8 @@ class m extends Chunk442837.yh {
   version() {
     let {
       memoized: e
-    } = this.state.derived, t = module[_];
-    return null == exports && (module[_] = t = ++this.nextVersion), exports
+    } = this.state.derived, t = e[_];
+    return null == t && (e[_] = t = ++this.nextVersion), t
   }
   get(e) {
     return this.state.root[e]

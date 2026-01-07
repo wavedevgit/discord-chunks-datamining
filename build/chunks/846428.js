@@ -56,5 +56,5 @@ let n = async e => window.Meticulous?.isRunningAsTest ? (console.debug("Running 
   })
 }, s = async () => {
   let e = window?.__meticulous?.earlyNetworkRecorder?.dispose;
-  module && await module()
+  e && await e()
 }

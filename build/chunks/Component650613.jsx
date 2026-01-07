@@ -38,17 +38,17 @@ function x(e) {
 
 function b() {
   var e;
-  let t = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
-    n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFilters()),
-    l = (0, Chunk442837.cj)([Chunk719247.Z], () => {
+  let t = (0, r.e7)([u.Z], () => u.Z.getFeed(f.YN.GLOBAL_FEED)),
+    n = (0, r.e7)([u.Z], () => u.Z.getFilters()),
+    l = (0, r.cj)([c.Z], () => {
       var e;
       let n = {};
-      for (let a of null != (e = null == exports ? true : exports.entries) ? module : []) require[(0, Chunk719247.T)(Chunk54381.content)] = Chunk719247.Z.canRenderContent(Chunk54381.content);
-      return require
-    }, [exports]),
-    s = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getImpressionCappedItemIds());
-  if (null == require) return null;
-  let o = null == exports || null == (e = exports.entries) ? true : module.flatMap(e => {
+      for (let a of null != (e = null == t ? true : t.entries) ? e : []) n[(0, c.T)(a.content)] = c.Z.canRenderContent(a.content);
+      return n
+    }, [t]),
+    s = (0, r.e7)([d.Z], () => d.Z.getImpressionCappedItemIds());
+  if (null == n) return null;
+  let o = null == t || null == (e = t.entries) ? true : e.flatMap(e => {
     let {
       content: t
     } = e;
@@ -71,13 +71,13 @@ function b() {
       })]
     }, t.id)
   });
-  return (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, a.jsxs)("div", {
+    children: [(0, a.jsx)(i.Heading, {
       variant: "heading-md/semibold",
       children: "Selected Content"
-    }), null != Chunk594174 ? (0, Chunk54381.jsx)("ul", {
-      children: Chunk594174
-    }) : (0, Chunk54381.jsx)("div", {
+    }), null != o ? (0, a.jsx)("ul", {
+      children: o
+    }) : (0, a.jsx)("div", {
       children: "(none?)"
     })]
   })

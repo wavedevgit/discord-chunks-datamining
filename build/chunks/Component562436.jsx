@@ -10,9 +10,9 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o() {
-  return (0, Chunk54381.jsx)(Chunk481060.Wn, {
-    icon: Chunk481060.mBM,
-    messageType: Chunk481060.QYI.POSITIVE,
-    children: Chunk388032.intl.string(Chunk388032.t.FsmBy4)
+  return (0, r.jsx)(i.Wn, {
+    icon: i.mBM,
+    messageType: i.QYI.POSITIVE,
+    children: a.intl.string(a.t.FsmBy4)
   })
 }

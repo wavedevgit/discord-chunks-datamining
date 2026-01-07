@@ -10,7 +10,7 @@ Chunk220159({
   target: "Object",
   stat: true,
   forced: !Chunk969493 || Chunk779688(function() {
-    Chunk880887.f(1)
+    u.f(1)
   })
 }, {
   getOwnPropertySymbols: function(t) {

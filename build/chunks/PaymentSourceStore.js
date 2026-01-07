@@ -98,7 +98,7 @@ class E extends(r = Chunk442837.ZP.Store) {
   }
   getDefaultBillingCountryCode() {
     let e = this.defaultPaymentSource;
-    return null == module ? null : module.paymentMethodCountry
+    return null == e ? null : e.paymentMethodCountry
   }
   getPaymentSource(e) {
     return d[e]

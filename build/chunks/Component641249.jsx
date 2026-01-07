@@ -54,9 +54,9 @@ function x() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [x, j] = Chunk290348.XZ(module, exports), v = (0, Chunk971792.Z)(exports, module), {
+  } = (0, o.N)(), [x, j] = c.XZ(e, t), v = (0, u.Z)(t, e), {
     setCurrentTab: O
-  } = (0, Chunk798680.dw)(), C = () => O(Chunk798680.ue.EMOJIS), y = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)), N = null != y ? (0, Chunk443106.Z)(y) : true;
+  } = (0, m.dw)(), C = () => O(m.ue.EMOJIS), y = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), N = null != y ? (0, d.Z)(y) : true;
 
   function E(e) {
     null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
@@ -66,19 +66,19 @@ function x() {
     let t = new Set(x);
     t.delete(e), j(t)
   }
-  let S = (0, Chunk723047.mY)();
-  return (0, Chunk54381.jsxs)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t["D0qeO+"]),
-    description: Chunk388032.intl.format(Chunk388032.t.zuwely, {
+  let S = (0, s.mY)();
+  return (0, r.jsxs)(l.gNt, {
+    label: b.intl.string(b.t["D0qeO+"]),
+    description: b.intl.format(b.t.zuwely, {
       premiumEmojiMaximum: N
     }),
-    helperText: Chunk388032.intl.format(Chunk388032.t.sEkgBk, {
+    helperText: b.intl.format(b.t.sEkgBk, {
       handleTransitionToManageEmoji: C
     }),
     disabled: S,
-    children: [(0, Chunk54381.jsx)(Chunk331146.E, {
+    children: [(0, r.jsx)(f.E, {
       tierEmojiIds: x,
-      guildId: exports,
+      guildId: t,
       onRemoveEmoji: function(e) {
         e.roles.filter(e => e !== (null == v ? true : v.id)).length > 0 ? I(e.id) : (0, l.ZDy)(async () => {
           let {
@@ -91,14 +91,14 @@ function x() {
           }))
         })
       }
-    }), null != x && x.size > 0 ? (0, Chunk54381.jsx)(Chunk481060.LZC, {
+    }), null != x && x.size > 0 ? (0, r.jsx)(l.LZC, {
       size: 8
-    }) : null, (0, Chunk54381.jsx)(Chunk861345.s, {
+    }) : null, (0, r.jsx)(g.s, {
       onClick: function() {
-        (0, Chunk481060.ZDy)(async () => {
+        (0, l.ZDy)(async () => {
           let {
             EmojiAddModal: e
-          } = await require.e("21112").then(require.bind(require, 301160));
+          } = await n.e("21112").then(n.bind(n, 301160));
           return n => (0, r.jsx)(e, h(p({}, n), {
             guildId: t,
             initialTierEmojiIds: x,
@@ -110,7 +110,7 @@ function x() {
         })
       },
       disabled: S,
-      children: Chunk388032.intl.string(Chunk388032.t.ouOOVy)
+      children: b.intl.string(b.t.ouOOVy)
     })]
   })
 }

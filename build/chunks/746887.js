@@ -13,12 +13,12 @@ let l = {
   binds: ["mod+shift+a"],
   comboKeysBindGlobal: true,
   action() {
-    let e = Chunk914010.Z.getGuildId();
-    return null != module && (Chunk984933.ZP.getChannels(module)[Chunk981631.d4z.GUILD_CATEGORY].some(e => {
+    let e = o.Z.getGuildId();
+    return null != e && (a.ZP.getChannels(e)[s.d4z.GUILD_CATEGORY].some(e => {
       let {
         channel: t
       } = e;
       return "null" !== t.id && !i.Z.isCollapsed(t.id)
-    }) ? (0, Chunk211739.N5)(module) : (0, Chunk211739.lc)(module), false)
+    }) ? (0, r.N5)(e) : (0, r.lc)(e), false)
   }
 }

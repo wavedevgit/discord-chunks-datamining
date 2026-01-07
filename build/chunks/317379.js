@@ -10,19 +10,19 @@ var Chunk524437 = require("./524437.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.Em)(Chunk313789.n.REACTION_NOTIFICATIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.Wxj9Hp),
+  useTitle: () => a.intl.string(a.t.Wxj9Hp),
   useOptions: () => [{
     id: "enabled",
-    label: Chunk388032.intl.string(Chunk388032.t["9x/RtT"]),
-    value: Chunk524437.Ns.NOTIFICATIONS_ENABLED
+    label: a.intl.string(a.t["9x/RtT"]),
+    value: i.Ns.NOTIFICATIONS_ENABLED
   }, {
     id: "only_dms",
-    label: Chunk388032.intl.string(Chunk388032.t.fJAbQd),
-    value: Chunk524437.Ns.ONLY_DMS
+    label: a.intl.string(a.t.fJAbQd),
+    value: i.Ns.ONLY_DMS
   }, {
     id: "disabled",
-    label: Chunk388032.intl.string(Chunk388032.t["xu+UDU"]),
-    value: Chunk524437.Ns.NOTIFICATIONS_DISABLED
+    label: a.intl.string(a.t["xu+UDU"]),
+    value: i.Ns.NOTIFICATIONS_DISABLED
   }],
   useValue: Chunk695346.fz.useSetting,
   setValue: t => (0, l.MR)(t, u.fz.getSetting()),

@@ -17,12 +17,12 @@ function c() {
   if ("path1" == (.2 > Math.random() ? "path1" : "path2")) {
     let n = Math.floor(Math.random() * a.length),
       r = Math.floor(Math.random() * a.length);
-    for (; Chunk688619 === require;) r = Math.floor(Math.random() * a.length);
+    for (; r === n;) r = Math.floor(Math.random() * a.length);
     return {
       type: "gradient",
-      colors: [a[require], a[Chunk688619]],
-      angle: exports,
-      intensity: module,
+      colors: [a[n], a[r]],
+      angle: t,
+      intensity: e,
       gradientType: "two-color"
     }
   } {
@@ -30,10 +30,10 @@ function c() {
       r = l[Math.floor(Math.random() * l.length)];
     return {
       type: "gradient",
-      colors: _(require, Chunk688619),
-      angle: exports,
-      intensity: module,
-      gradientType: Chunk688619
+      colors: _(n, r),
+      angle: t,
+      intensity: e,
+      gradientType: r
     }
   }
 }

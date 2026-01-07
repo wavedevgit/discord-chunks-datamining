@@ -8,7 +8,7 @@ Chunk220159({
   target: "Object",
   stat: true,
   forced: require("./779688.js")(function() {
-    Chunk61824(1)
+    i(1)
   })
 }, {
   keys: function(t) {

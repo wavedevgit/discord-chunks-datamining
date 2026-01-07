@@ -12,41 +12,41 @@ var Chunk54381 = require("./54381.js"),
   Chunk640560 = require("./640560.js"),
   Chunk319515 = require("./319515.js");
 let u = () => {
-  let e = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk640560.jumpingWumpusContainer,
-      children: (0, Chunk54381.jsx)(Chunk55373.ZP, {
+  let e = (0, i.e7)([a.Z], () => a.Z.useReducedMotion);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
+      className: l.jumpingWumpusContainer,
+      children: (0, r.jsx)(o.ZP, {
         scaleAnimationData: {
           startScale: .9,
           endScale: 1,
-          duration: Chunk55373.SR
+          duration: o.SR
         },
         yAxisAnimationData: {
           range: 20,
-          duration: Chunk55373.b5,
-          path: Chunk55373.js.SINE
+          duration: o.b5,
+          path: o.js.SINE
         },
         animateXAxisWiggle: true,
-        isMotionReduced: module,
-        children: (0, Chunk54381.jsx)("img", {
-          src: Chunk319515.Z,
+        isMotionReduced: e,
+        children: (0, r.jsx)("img", {
+          src: c.Z,
           alt: "",
-          className: Chunk640560.jumpingWumpus
+          className: l.jumpingWumpus
         })
       })
-    }), (0, Chunk54381.jsx)(Chunk761006.Z, {
-      isMotionReduced: module,
-      boltContainerClassName: Chunk640560.boltContainer,
-      carContainerClassName: Chunk640560.carContainer,
-      hammerContainerClassName: Chunk640560.hammerContainer,
-      keyContainerClassName: Chunk640560.keyContainer,
-      starContainerClassName: Chunk640560.starContainer,
-      boltAssetClassName: Chunk640560.boltTrinket,
-      carAssetClassName: Chunk640560.carTrinket,
-      hammerAssetClassName: Chunk640560.hammerTrinket,
-      keyAssetClassName: Chunk640560.keyTrinket,
-      starAssetClassName: Chunk640560.starTrinket
+    }), (0, r.jsx)(s.Z, {
+      isMotionReduced: e,
+      boltContainerClassName: l.boltContainer,
+      carContainerClassName: l.carContainer,
+      hammerContainerClassName: l.hammerContainer,
+      keyContainerClassName: l.keyContainer,
+      starContainerClassName: l.starContainer,
+      boltAssetClassName: l.boltTrinket,
+      carAssetClassName: l.carTrinket,
+      hammerAssetClassName: l.hammerTrinket,
+      keyAssetClassName: l.keyTrinket,
+      starAssetClassName: l.starTrinket
     })]
   })
 }

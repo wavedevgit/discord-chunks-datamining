@@ -98,10 +98,10 @@ n.prototype.getPosition = function() {
 }, n.prototype.readCString = function() {
   for (var t = [];;) {
     var e = this.readUint8();
-    if (0 !== exports) module.push(exports);
+    if (0 !== e) t.push(e);
     else break
   }
-  return String.fromCharCode.apply(null, module)
+  return String.fromCharCode.apply(null, t)
 }, n.prototype.readInt8 = function() {
   return this.readAnyInt(1, true)
 }, n.prototype.readInt16 = function() {
@@ -147,9 +147,9 @@ a.prototype = {}, a.prototype.getPosition = function() {
 }, a.prototype._trimAlloc = function() {
   if (this._byteLength != this._buffer.byteLength) {
     var t = new ArrayBuffer(this._byteLength),
-      e = new Uint8Array(module),
-      i = new Uint8Array(this._buffer, 0, exports.length);
-    exports.set(i), this.buffer = module
+      e = new Uint8Array(t),
+      i = new Uint8Array(this._buffer, 0, e.length);
+    e.set(i), this.buffer = t
   }
 }, a.BIG_ENDIAN = false, a.LITTLE_ENDIAN = true, a.prototype._byteLength = 0, Object.defineProperty(a.prototype, "byteLength", {
   get: function() {
@@ -217,7 +217,7 @@ a.prototype = {}, a.prototype.getPosition = function() {
   return this.position += 2, e
 }, a.prototype.readInt8 = function() {
   var t = this._dataView.getInt8(this.position);
-  return this.position += 1, module
+  return this.position += 1, t
 }, a.prototype.readUint32 = function(t) {
   var e = this._dataView.getUint32(this.position, null == t ? this.endianness : t);
   return this.position += 4, e
@@ -226,7 +226,7 @@ a.prototype = {}, a.prototype.getPosition = function() {
   return this.position += 2, e
 }, a.prototype.readUint8 = function() {
   var t = this._dataView.getUint8(this.position);
-  return this.position += 1, module
+  return this.position += 1, t
 }, a.prototype.readFloat32 = function(t) {
   var e = this._dataView.getFloat32(this.position, null == t ? this.endianness : t);
   return this.position += 4, e
@@ -495,7 +495,7 @@ var o = function(t) {
 };
 o.prototype = new a(new ArrayBuffer, 0, a.BIG_ENDIAN), o.prototype.initialized = function() {
   var t;
-  return !!(this.bufferIndex > false) || (this.buffers.length > 0 ? 0 === (t = this.buffers[0]).fileStart ? (this.buffer = module, this.bufferIndex = 0, r.debug("MultiBufferStream", "Stream ready for parsing"), true) : (r.warn("MultiBufferStream", "The first buffer should have a fileStart of 0"), this.logBufferLevel(), false) : (r.warn("MultiBufferStream", "No buffer to start parsing from"), this.logBufferLevel(), false))
+  return !!(this.bufferIndex > false) || (this.buffers.length > 0 ? 0 === (t = this.buffers[0]).fileStart ? (this.buffer = t, this.bufferIndex = 0, r.debug("MultiBufferStream", "Stream ready for parsing"), true) : (r.warn("MultiBufferStream", "The first buffer should have a fileStart of 0"), this.logBufferLevel(), false) : (r.warn("MultiBufferStream", "No buffer to start parsing from"), this.logBufferLevel(), false))
 }, ArrayBuffer.concat = function(t, e) {
   r.debug("ArrayBuffer", "Trying to create a new buffer of size: " + (t.byteLength + e.byteLength));
   var i = new Uint8Array(t.byteLength + e.byteLength);
@@ -534,13 +534,13 @@ o.prototype = new a(new ArrayBuffer, 0, a.BIG_ENDIAN), o.prototype.initialized =
   o.length > 0 && (h += a.end - 1 + "]"), (t ? r.info : r.debug)("MultiBufferStream", 0 === this.buffers.length ? "No more buffer in memory" : "" + this.buffers.length + " stored buffer(s) (" + s + "/" + n + " bytes), continuous ranges: " + h)
 }, o.prototype.cleanBuffers = function() {
   var t, e;
-  for (t = 0; module < this.buffers.length; module++)(e = this.buffers[module]).usedBytes === exports.byteLength && (r.debug("MultiBufferStream", "Removing buffer #" + module), this.buffers.splice(module, 1), module--)
+  for (t = 0; t < this.buffers.length; t++)(e = this.buffers[t]).usedBytes === e.byteLength && (r.debug("MultiBufferStream", "Removing buffer #" + t), this.buffers.splice(t, 1), t--)
 }, o.prototype.mergeNextBuffer = function() {
   if (!(this.bufferIndex + 1 < this.buffers.length) || (t = this.buffers[this.bufferIndex + 1]).fileStart !== this.buffer.fileStart + this.buffer.byteLength) returnfalse;
   var t, e = this.buffer.byteLength,
     i = this.buffer.usedBytes,
     s = this.buffer.fileStart;
-  return this.buffers[this.bufferIndex] = ArrayBuffer.concat(this.buffer, module), this.buffer = this.buffers[this.bufferIndex], this.buffers.splice(this.bufferIndex + 1, 1), this.buffer.usedBytes = i, this.buffer.fileStart = s, r.debug("ISOFile", "Concatenating buffer for box parsing (length: " + exports + "->" + this.buffer.byteLength + ")"), true
+  return this.buffers[this.bufferIndex] = ArrayBuffer.concat(this.buffer, t), this.buffer = this.buffers[this.bufferIndex], this.buffers.splice(this.bufferIndex + 1, 1), this.buffer.usedBytes = i, this.buffer.fileStart = s, r.debug("ISOFile", "Concatenating buffer for box parsing (length: " + e + "->" + this.buffer.byteLength + ")"), true
 }, o.prototype.findPosition = function(t, e, i) {
   var s, n = null,
     a = false;
@@ -574,7 +574,7 @@ o.prototype = new a(new ArrayBuffer, 0, a.BIG_ENDIAN), o.prototype.initialized =
 }, exports.MultiBufferStream = o;
 var h = function() {
   var t = [];
-  module[3] = "ES_Descriptor", module[4] = "DecoderConfigDescriptor", module[5] = "DecoderSpecificInfo", module[6] = "SLConfigDescriptor", this.getDescriptorName = function(e) {
+  t[3] = "ES_Descriptor", t[4] = "DecoderConfigDescriptor", t[5] = "DecoderSpecificInfo", t[6] = "SLConfigDescriptor", this.getDescriptorName = function(e) {
     return t[e]
   };
   var e = this,
@@ -1594,7 +1594,7 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
   return i
 }, d.avc1SampleEntry.prototype.getCodec = d.avc2SampleEntry.prototype.getCodec = d.avc3SampleEntry.prototype.getCodec = d.avc4SampleEntry.prototype.getCodec = function() {
   var t = d.SampleEntry.prototype.getCodec.call(this);
-  return this.avcC ? module + "." + d.decimalToHex(this.avcC.AVCProfileIndication) + d.decimalToHex(this.avcC.profile_compatibility) + d.decimalToHex(this.avcC.AVCLevelIndication) : module
+  return this.avcC ? t + "." + d.decimalToHex(this.avcC.AVCProfileIndication) + d.decimalToHex(this.avcC.profile_compatibility) + d.decimalToHex(this.avcC.AVCLevelIndication) : t
 }, d.hev1SampleEntry.prototype.getCodec = d.hvc1SampleEntry.prototype.getCodec = function() {
   var t, e = d.SampleEntry.prototype.getCodec.call(this);
   if (this.hvcC) {
@@ -1614,14 +1614,14 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
     e += this.hvcC.general_profile_idc, e += ".";
     var i = this.hvcC.general_profile_compatibility,
       s = 0;
-    for (t = 0; module < 32 && (s |= 1 & i, 31 != module); module++) s <<= 1, i >>= 1;
+    for (t = 0; t < 32 && (s |= 1 & i, 31 != t); t++) s <<= 1, i >>= 1;
     e += d.decimalToHex(s, 0), e += ".", 0 === this.hvcC.general_tier_flag ? e += "L" : e += "H", e += this.hvcC.general_level_idc;
     var r = false,
       n = "";
-    for (t = 5; module >= 0; module--)(this.hvcC.general_constraint_indicator[module] || r) && (n = "." + d.decimalToHex(this.hvcC.general_constraint_indicator[module], 0) + n, r = true);
+    for (t = 5; t >= 0; t--)(this.hvcC.general_constraint_indicator[t] || r) && (n = "." + d.decimalToHex(this.hvcC.general_constraint_indicator[t], 0) + n, r = true);
     e += n
   }
-  return exports
+  return e
 }, d.vvc1SampleEntry.prototype.getCodec = d.vvi1SampleEntry.prototype.getCodec = function() {
   var t = d.SampleEntry.prototype.getCodec.call(this);
   if (this.vvcC) {
@@ -1641,28 +1641,28 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
         h && (o <<= 5 - h, e += a[31 & o])
       }
     }
-    t += exports
+    t += e
   }
-  return module
+  return t
 }, d.mp4aSampleEntry.prototype.getCodec = function() {
   var t = d.SampleEntry.prototype.getCodec.call(this);
-  if (!this.esds || !this.esds.esd) return module;
+  if (!this.esds || !this.esds.esd) return t;
   var e = this.esds.esd.getOTI(),
     i = this.esds.esd.getAudioConfig();
-  return module + "." + d.decimalToHex(exports) + (i ? "." + i : "")
+  return t + "." + d.decimalToHex(e) + (i ? "." + i : "")
 }, d.stxtSampleEntry.prototype.getCodec = function() {
   var t = d.SampleEntry.prototype.getCodec.call(this);
-  return this.mime_format ? module + "." + this.mime_format : module
+  return this.mime_format ? t + "." + this.mime_format : t
 }, d.vp08SampleEntry.prototype.getCodec = d.vp09SampleEntry.prototype.getCodec = function() {
   var t = d.SampleEntry.prototype.getCodec.call(this),
     e = this.vpcC.level;
-  0 == exports && (e = "00");
+  0 == e && (e = "00");
   var i = this.vpcC.bitDepth;
-  return 8 == i && (i = "08"), module + ".0" + this.vpcC.profile + "." + exports + "." + i
+  return 8 == i && (i = "08"), t + ".0" + this.vpcC.profile + "." + e + "." + i
 }, d.av01SampleEntry.prototype.getCodec = function() {
   var t, e = d.SampleEntry.prototype.getCodec.call(this),
     i = this.av1C.seq_level_idx_0;
-  return i < 10 && (i = "0" + i), 2 === this.av1C.seq_profile && 1 === this.av1C.high_bitdepth ? t = 1 === this.av1C.twelve_bit ? "12" : "10" : this.av1C.seq_profile <= 2 && (t = 1 === this.av1C.high_bitdepth ? "10" : "08"), exports + "." + this.av1C.seq_profile + "." + i + (this.av1C.seq_tier_0 ? "H" : "M") + "." + module
+  return i < 10 && (i = "0" + i), 2 === this.av1C.seq_profile && 1 === this.av1C.high_bitdepth ? t = 1 === this.av1C.twelve_bit ? "12" : "10" : this.av1C.seq_profile <= 2 && (t = 1 === this.av1C.high_bitdepth ? "10" : "08"), e + "." + this.av1C.seq_profile + "." + i + (this.av1C.seq_tier_0 ? "H" : "M") + "." + t
 }, d.Box.prototype.writeHeader = function(t, e) {
   this.size += 8, this.size > 0x100000000 && (this.size += 8), "uuid" === this.type && (this.size += 16), r.debug("BoxWriter", "Writing box " + this.type + " of size: " + this.size + " at position " + t.getPosition() + (e || "")), this.size > 0x100000000 ? t.writeUint32(1) : (this.sizePosition = t.getPosition(), t.writeUint32(this.size)), t.writeString(this.type, null, 4), "uuid" === this.type && t.writeUint8Array(this.uuid), this.size > 0x100000000 && t.writeUint64(this.size)
 }, d.FullBox.prototype.writeHeader = function(t) {
@@ -1911,21 +1911,21 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   else {
     if (this.saveParsePosition && this.saveParsePosition(), (t = d.parseOneBox(this.stream, false)).code === d.ERR_NOT_ENOUGH_DATA)
       if (!this.processIncompleteBox) return;
-      else if (this.processIncompleteBox(module)) continue;
+      else if (this.processIncompleteBox(t)) continue;
     else return;
-    switch (i = "uuid" !== (e = module.box).type ? exports.type : exports.uuid, this.boxes.push(exports), i) {
+    switch (i = "uuid" !== (e = t.box).type ? e.type : e.uuid, this.boxes.push(e), i) {
       case "mdat":
-        this.mdats.push(exports);
+        this.mdats.push(e);
         break;
       case "moof":
-        this.moofs.push(exports);
+        this.moofs.push(e);
         break;
       case "moov":
         this.moovStartFound = true, 0 === this.mdats.length && (this.isProgressive = true);
       default:
-        true !== this[i] && r.warn("ISOFile", "Duplicate Box of type: " + i + ", overriding previous occurrence"), this[i] = exports
+        true !== this[i] && r.warn("ISOFile", "Duplicate Box of type: " + i + ", overriding previous occurrence"), this[i] = e
     }
-    this.updateUsedBytes && this.updateUsedBytes(exports, module)
+    this.updateUsedBytes && this.updateUsedBytes(e, t)
   }
 }, u.prototype.checkBuffer = function(t) {
   if (null == t) throw "Buffer must be defined and non empty";
@@ -1938,16 +1938,16 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   var t, e, i, s, r, n, a = {},
     o = new Date("1904-01-01T00:00:00Z").getTime();
   if (this.moov)
-    for (a.hasMoov = true, a.duration = this.moov.mvhd.duration, a.timescale = this.moov.mvhd.timescale, a.isFragmented = null != this.moov.mvex, a.isFragmented && this.moov.mvex.mehd && (a.fragment_duration = this.moov.mvex.mehd.fragment_duration), a.isProgressive = this.isProgressive, a.hasIOD = null != this.moov.iods, a.brands = [], a.brands.push(this.ftyp.major_brand), a.brands = a.brands.concat(this.ftyp.compatible_brands), a.created = new Date(o + 1e3 * this.moov.mvhd.creation_time), a.modified = new Date(o + 1e3 * this.moov.mvhd.modification_time), a.tracks = [], a.audioTracks = [], a.videoTracks = [], a.subtitleTracks = [], a.metadataTracks = [], a.hintTracks = [], a.otherTracks = [], t = 0; module < this.moov.traks.length; module++) {
-      if (n = (i = this.moov.traks[module]).mdia.minf.stbl.stsd.entries[0], s = {}, a.tracks.push(s), s.id = i.tkhd.track_id, s.name = i.mdia.hdlr.name, s.references = [], i.tref)
-        for (e = 0; exports < i.tref.boxes.length; exports++) r = {}, s.references.push(r), r.type = i.tref.boxes[exports].type, r.track_ids = i.tref.boxes[exports].track_ids;
+    for (a.hasMoov = true, a.duration = this.moov.mvhd.duration, a.timescale = this.moov.mvhd.timescale, a.isFragmented = null != this.moov.mvex, a.isFragmented && this.moov.mvex.mehd && (a.fragment_duration = this.moov.mvex.mehd.fragment_duration), a.isProgressive = this.isProgressive, a.hasIOD = null != this.moov.iods, a.brands = [], a.brands.push(this.ftyp.major_brand), a.brands = a.brands.concat(this.ftyp.compatible_brands), a.created = new Date(o + 1e3 * this.moov.mvhd.creation_time), a.modified = new Date(o + 1e3 * this.moov.mvhd.modification_time), a.tracks = [], a.audioTracks = [], a.videoTracks = [], a.subtitleTracks = [], a.metadataTracks = [], a.hintTracks = [], a.otherTracks = [], t = 0; t < this.moov.traks.length; t++) {
+      if (n = (i = this.moov.traks[t]).mdia.minf.stbl.stsd.entries[0], s = {}, a.tracks.push(s), s.id = i.tkhd.track_id, s.name = i.mdia.hdlr.name, s.references = [], i.tref)
+        for (e = 0; e < i.tref.boxes.length; e++) r = {}, s.references.push(r), r.type = i.tref.boxes[e].type, r.track_ids = i.tref.boxes[e].track_ids;
       i.edts && (s.edits = i.edts.elst.entries), s.created = new Date(o + 1e3 * i.tkhd.creation_time), s.modified = new Date(o + 1e3 * i.tkhd.modification_time), s.movie_duration = i.tkhd.duration, s.movie_timescale = a.timescale, s.layer = i.tkhd.layer, s.alternate_group = i.tkhd.alternate_group, s.volume = i.tkhd.volume, s.matrix = i.tkhd.matrix, s.track_width = i.tkhd.width / 65536, s.track_height = i.tkhd.height / 65536, s.timescale = i.mdia.mdhd.timescale, s.cts_shift = i.mdia.minf.stbl.cslg, s.duration = i.mdia.mdhd.duration, s.samples_duration = i.samples_duration, s.codec = n.getCodec(), s.kind = i.udta && i.udta.kinds.length ? i.udta.kinds[0] : {
         schemeURI: "",
         value: ""
       }, s.language = i.mdia.elng ? i.mdia.elng.extended_language : i.mdia.mdhd.languageString, s.nb_samples = i.samples.length, s.size = i.samples_size, s.bitrate = 8 * s.size * s.timescale / s.samples_duration, n.isAudio() ? (s.type = "audio", a.audioTracks.push(s), s.audio = {}, s.audio.sample_rate = n.getSampleRate(), s.audio.channel_count = n.getChannelCount(), s.audio.sample_size = n.getSampleSize()) : n.isVideo() ? (s.type = "video", a.videoTracks.push(s), s.video = {}, s.video.width = n.getWidth(), s.video.height = n.getHeight()) : n.isSubtitle() ? (s.type = "subtitles", a.subtitleTracks.push(s)) : n.isHint() ? (s.type = "metadata", a.hintTracks.push(s)) : n.isMetadata() ? (s.type = "metadata", a.metadataTracks.push(s)) : (s.type = "metadata", a.otherTracks.push(s))
     } else a.hasMoov = false;
   if (a.mime = "", a.hasMoov && a.tracks) {
-    for (a.videoTracks && a.videoTracks.length > 0 ? a.mime += 'video/mp4; codecs="' : a.audioTracks && a.audioTracks.length > 0 ? a.mime += 'audio/mp4; codecs="' : a.mime += 'application/mp4; codecs="', t = 0; module < a.tracks.length; module++) 0 !== module && (a.mime += ","), a.mime += a.tracks[module].codec;
+    for (a.videoTracks && a.videoTracks.length > 0 ? a.mime += 'video/mp4; codecs="' : a.audioTracks && a.audioTracks.length > 0 ? a.mime += 'audio/mp4; codecs="' : a.mime += 'application/mp4; codecs="', t = 0; t < a.tracks.length; t++) 0 !== t && (a.mime += ","), a.mime += a.tracks[t].codec;
     a.mime += '"; profiles="', a.mime += this.ftyp.compatible_brands.join(), a.mime += '"'
   }
   return a
@@ -2055,7 +2055,7 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   return null !== this.parsingMdat
 }, u.prototype.processIncompleteMdat = function() {
   var t;
-  return (t = this.parsingMdat, this.stream.seek(module.start + module.size, false, this.discardMdatData)) ? (r.debug("ISOFile", "Found 'mdat' end in buffered data"), this.parsingMdat = null, true) : (this.nextParsePosition = this.stream.findEndContiguousBuf(), false)
+  return (t = this.parsingMdat, this.stream.seek(t.start + t.size, false, this.discardMdatData)) ? (r.debug("ISOFile", "Found 'mdat' end in buffered data"), this.parsingMdat = null, true) : (this.nextParsePosition = this.stream.findEndContiguousBuf(), false)
 }, u.prototype.restoreParsePosition = function() {
   return this.stream.seek(this.lastBoxStartPosition, true, this.discardMdatData)
 }, u.prototype.saveParsePosition = function() {
@@ -2132,11 +2132,11 @@ u.prototype.setSegmentOptions = function(t, e, i) {
     r = this.getTrackById(t.track_id);
   return s.add("tfhd").set("track_id", t.track_id).set("flags", d.TFHD_FLAG_DEFAULT_BASE_IS_MOOF), s.add("tfdt").set("baseMediaDecodeTime", t.dts - (r.first_dts || 0)), s.add("trun").set("flags", d.TRUN_FLAGS_DATA_OFFSET | d.TRUN_FLAGS_DURATION | d.TRUN_FLAGS_SIZE | d.TRUN_FLAGS_FLAGS | d.TRUN_FLAGS_CTS_OFFSET).set("data_offset", 0).set("first_sample_flags", 0).set("sample_count", 1).set("sample_duration", [t.duration]).set("sample_size", [t.size]).set("sample_flags", [e]).set("sample_composition_time_offset", [t.cts - t.dts]), i
 }, u.prototype.lastMoofIndex = 0, u.prototype.samplesDataSize = 0, u.prototype.resetTables = function() {
-  for (t = 0, this.initial_duration = this.moov.mvhd.duration, this.moov.mvhd.duration = 0; module < this.moov.traks.length; module++) {
-    (e = this.moov.traks[module]).tkhd.duration = 0, exports.mdia.mdhd.duration = 0, (exports.mdia.minf.stbl.stco || exports.mdia.minf.stbl.co64).chunk_offsets = [], (i = exports.mdia.minf.stbl.stsc).first_chunk = [], i.samples_per_chunk = [], i.sample_description_index = [], (exports.mdia.minf.stbl.stsz || exports.mdia.minf.stbl.stz2).sample_sizes = [], (s = exports.mdia.minf.stbl.stts).sample_counts = [], s.sample_deltas = [], (r = exports.mdia.minf.stbl.ctts) && (r.sample_counts = [], r.sample_offsets = []);
-    var t, e, i, s, r, n = exports.mdia.minf.stbl.stss,
-      a = exports.mdia.minf.stbl.boxes.indexOf(n);
-    false != a && (exports.mdia.minf.stbl.boxes[a] = null)
+  for (t = 0, this.initial_duration = this.moov.mvhd.duration, this.moov.mvhd.duration = 0; t < this.moov.traks.length; t++) {
+    (e = this.moov.traks[t]).tkhd.duration = 0, e.mdia.mdhd.duration = 0, (e.mdia.minf.stbl.stco || e.mdia.minf.stbl.co64).chunk_offsets = [], (i = e.mdia.minf.stbl.stsc).first_chunk = [], i.samples_per_chunk = [], i.sample_description_index = [], (e.mdia.minf.stbl.stsz || e.mdia.minf.stbl.stz2).sample_sizes = [], (s = e.mdia.minf.stbl.stts).sample_counts = [], s.sample_deltas = [], (r = e.mdia.minf.stbl.ctts) && (r.sample_counts = [], r.sample_offsets = []);
+    var t, e, i, s, r, n = e.mdia.minf.stbl.stss,
+      a = e.mdia.minf.stbl.boxes.indexOf(n);
+    false != a && (e.mdia.minf.stbl.boxes[a] = null)
   }
 }, u.initSampleGroups = function(t, e, i, s, r) {
   var n, a, o, h;
@@ -2161,7 +2161,7 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   e && (t ? (e.is_leading = t.is_leading[i], e.depends_on = t.sample_depends_on[i], e.is_depended_on = t.sample_is_depended_on[i], e.has_redundancy = t.sample_has_redundancy[i]) : (e.is_leading = 0, e.depends_on = 0, e.is_depended_on = 0, e.has_redundancy = 0))
 }, u.prototype.buildSampleLists = function() {
   var t, e;
-  for (t = 0; module < this.moov.traks.length; module++) e = this.moov.traks[module], this.buildTrakSampleLists(exports)
+  for (t = 0; t < this.moov.traks.length; t++) e = this.moov.traks[t], this.buildTrakSampleLists(e)
 }, u.prototype.buildTrakSampleLists = function(t) {
   if (t.samples = [], t.samples_duration = 0, t.samples_size = 0, i = t.mdia.minf.stbl.stco || t.mdia.minf.stbl.co64, s = t.mdia.minf.stbl.stsc, r = t.mdia.minf.stbl.stsz || t.mdia.minf.stbl.stz2, n = t.mdia.minf.stbl.stts, a = t.mdia.minf.stbl.ctts, o = t.mdia.minf.stbl.stss, h = t.mdia.minf.stbl.stsd, d = t.mdia.minf.stbl.subs, f = t.mdia.minf.stbl.stdp, p = t.mdia.minf.stbl.sbgps, l = t.mdia.minf.stbl.sgpds, U = false, b = false, S = false, v = false, x = 0, w = 0, E = 0, u.initSampleGroups(t, null, p, l), true !== r) {
     for (e = 0; e < r.sample_sizes.length; e++) {
@@ -2174,22 +2174,22 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   if (true !== this.moov) {
     for (; this.lastMoofIndex < this.moofs.length;)
       if (h = this.moofs[this.lastMoofIndex], this.lastMoofIndex++, "moof" == h.type)
-        for (t = 0; module < h.trafs.length; module++) {
-          for (p = h.trafs[module], l = this.getTrackById(p.tfhd.track_id), f = this.getTrexById(p.tfhd.track_id), s = p.tfhd.flags & d.TFHD_FLAG_SAMPLE_DESC ? p.tfhd.default_sample_description_index : f ? f.default_sample_description_index : 1, r = p.tfhd.flags & d.TFHD_FLAG_SAMPLE_DUR ? p.tfhd.default_sample_duration : f ? f.default_sample_duration : 0, n = p.tfhd.flags & d.TFHD_FLAG_SAMPLE_SIZE ? p.tfhd.default_sample_size : f ? f.default_sample_size : 0, a = p.tfhd.flags & d.TFHD_FLAG_SAMPLE_FLAGS ? p.tfhd.default_sample_flags : f ? f.default_sample_flags : 0, p.sample_number = 0, p.sbgps.length > 0 && u.initSampleGroups(l, p, p.sbgps, l.mdia.minf.stbl.sgpds, p.sgpds), e = 0; exports < p.truns.length; exports++) {
-            var t, e, i, s, r, n, a, o, h, p, l, f, _, c, m = p.truns[exports];
+        for (t = 0; t < h.trafs.length; t++) {
+          for (p = h.trafs[t], l = this.getTrackById(p.tfhd.track_id), f = this.getTrexById(p.tfhd.track_id), s = p.tfhd.flags & d.TFHD_FLAG_SAMPLE_DESC ? p.tfhd.default_sample_description_index : f ? f.default_sample_description_index : 1, r = p.tfhd.flags & d.TFHD_FLAG_SAMPLE_DUR ? p.tfhd.default_sample_duration : f ? f.default_sample_duration : 0, n = p.tfhd.flags & d.TFHD_FLAG_SAMPLE_SIZE ? p.tfhd.default_sample_size : f ? f.default_sample_size : 0, a = p.tfhd.flags & d.TFHD_FLAG_SAMPLE_FLAGS ? p.tfhd.default_sample_flags : f ? f.default_sample_flags : 0, p.sample_number = 0, p.sbgps.length > 0 && u.initSampleGroups(l, p, p.sbgps, l.mdia.minf.stbl.sgpds, p.sgpds), e = 0; e < p.truns.length; e++) {
+            var t, e, i, s, r, n, a, o, h, p, l, f, _, c, m = p.truns[e];
             for (i = 0; i < m.sample_count; i++) {
               (_ = {}).moof_number = this.lastMoofIndex, _.number_in_traf = p.sample_number, p.sample_number++, _.number = l.samples.length, p.first_sample_index = l.samples.length, l.samples.push(_), _.track_id = l.tkhd.track_id, _.timescale = l.mdia.mdhd.timescale, _.description_index = s - 1, _.description = l.mdia.minf.stbl.stsd.entries[_.description_index], _.size = n, m.flags & d.TRUN_FLAGS_SIZE && (_.size = m.sample_size[i]), l.samples_size += _.size, _.duration = r, m.flags & d.TRUN_FLAGS_DURATION && (_.duration = m.sample_duration[i]), l.samples_duration += _.duration, l.first_traf_merged || i > 0 ? _.dts = l.samples[l.samples.length - 2].dts + l.samples[l.samples.length - 2].duration : (p.tfdt ? _.dts = p.tfdt.baseMediaDecodeTime : _.dts = 0, l.first_traf_merged = true), _.cts = _.dts, m.flags & d.TRUN_FLAGS_CTS_OFFSET && (_.cts = _.dts + m.sample_composition_time_offset[i]), c = a, m.flags & d.TRUN_FLAGS_FLAGS ? c = m.sample_flags[i] : 0 === i && m.flags & d.TRUN_FLAGS_FIRST_FLAG && (c = m.first_sample_flags), _.is_sync = !(c >> 16 & 1), _.is_leading = c >> 26 & 3, _.depends_on = c >> 24 & 3, _.is_depended_on = c >> 22 & 3, _.has_redundancy = c >> 20 & 3, _.degradation_priority = 65535 & c;
               var g = !!(p.tfhd.flags & d.TFHD_FLAG_BASE_DATA_OFFSET),
                 y = !!(p.tfhd.flags & d.TFHD_FLAG_DEFAULT_BASE_IS_MOOF),
                 U = !!(m.flags & d.TRUN_FLAGS_DATA_OFFSET),
                 b = 0;
-              b = g ? p.tfhd.base_data_offset : y || 0 === exports ? h.start : o, 0 === exports && 0 === i ? U ? _.offset = b + m.data_offset : _.offset = b : _.offset = o, o = _.offset + _.size, (p.sbgps.length > 0 || p.sgpds.length > 0 || l.mdia.minf.stbl.sbgps.length > 0 || l.mdia.minf.stbl.sgpds.length > 0) && u.setSampleGroupProperties(l, _, _.number_in_traf, p.sample_groups_info)
+              b = g ? p.tfhd.base_data_offset : y || 0 === e ? h.start : o, 0 === e && 0 === i ? U ? _.offset = b + m.data_offset : _.offset = b : _.offset = o, o = _.offset + _.size, (p.sbgps.length > 0 || p.sgpds.length > 0 || l.mdia.minf.stbl.sbgps.length > 0 || l.mdia.minf.stbl.sgpds.length > 0) && u.setSampleGroupProperties(l, _, _.number_in_traf, p.sample_groups_info)
             }
           }
           if (p.subs) {
             l.has_fragment_subsamples = true;
             var S = p.first_sample_index;
-            for (e = 0; exports < p.subs.entries.length; exports++) S += p.subs.entries[exports].sample_delta, (_ = l.samples[S - 1]).subsamples = p.subs.entries[exports].subsamples
+            for (e = 0; e < p.subs.entries.length; e++) S += p.subs.entries[e].sample_delta, (_ = l.samples[S - 1]).subsamples = p.subs.entries[e].subsamples
           }
         }
   }
@@ -2214,11 +2214,11 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   return this.samplesDataSize
 }, u.prototype.getCodecs = function() {
   var t, e = "";
-  for (t = 0; module < this.moov.traks.length; module++) {
-    var i = this.moov.traks[module];
-    module > 0 && (e += ","), e += i.mdia.minf.stbl.stsd.entries[0].getCodec()
+  for (t = 0; t < this.moov.traks.length; t++) {
+    var i = this.moov.traks[t];
+    t > 0 && (e += ","), e += i.mdia.minf.stbl.stsd.entries[0].getCodec()
   }
-  return exports
+  return e
 }, u.prototype.getTrexById = function(t) {
   var e;
   if (!this.moov || !this.moov.mvex) return null;
@@ -2238,10 +2238,10 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   var t, e, i, s = this.items,
     n = this.meta;
   if (null != n && true !== n.hdlr && true !== n.iinf) {
-    for (t = 0; module < n.iinf.item_infos.length; module++)(i = {}).id = n.iinf.item_infos[module].item_ID, s[i.id] = i, i.ref_to = [], i.name = n.iinf.item_infos[module].item_name, n.iinf.item_infos[module].protection_index > 0 && (i.protection = n.ipro.protections[n.iinf.item_infos[module].protection_index - 1]), n.iinf.item_infos[module].item_type ? i.type = n.iinf.item_infos[module].item_type : i.type = "mime", i.content_type = n.iinf.item_infos[module].content_type, i.content_encoding = n.iinf.item_infos[module].content_encoding;
+    for (t = 0; t < n.iinf.item_infos.length; t++)(i = {}).id = n.iinf.item_infos[t].item_ID, s[i.id] = i, i.ref_to = [], i.name = n.iinf.item_infos[t].item_name, n.iinf.item_infos[t].protection_index > 0 && (i.protection = n.ipro.protections[n.iinf.item_infos[t].protection_index - 1]), n.iinf.item_infos[t].item_type ? i.type = n.iinf.item_infos[t].item_type : i.type = "mime", i.content_type = n.iinf.item_infos[t].content_type, i.content_encoding = n.iinf.item_infos[t].content_encoding;
     if (n.iloc)
-      for (t = 0; module < n.iloc.items.length; module++) {
-        var a = n.iloc.items[module];
+      for (t = 0; t < n.iloc.items.length; t++) {
+        var a = n.iloc.items[t];
         switch (i = s[a.item_ID], 0 !== a.data_reference_index && (r.warn("Item storage with reference to other files: not supported"), i.source = n.dinf.boxes[a.data_reference_index - 1]), a.construction_method) {
           case 0:
             break;
@@ -2249,23 +2249,23 @@ u.prototype.setSegmentOptions = function(t, e, i) {
           case 2:
             r.warn("Item storage with construction_method : not supported")
         }
-        for (e = 0, i.extents = [], i.size = 0; exports < a.extents.length; exports++) i.extents[exports] = {}, i.extents[exports].offset = a.extents[exports].extent_offset + a.base_offset, i.extents[exports].length = a.extents[exports].extent_length, i.extents[exports].alreadyRead = 0, i.size += i.extents[exports].length
+        for (e = 0, i.extents = [], i.size = 0; e < a.extents.length; e++) i.extents[e] = {}, i.extents[e].offset = a.extents[e].extent_offset + a.base_offset, i.extents[e].length = a.extents[e].extent_length, i.extents[e].alreadyRead = 0, i.size += i.extents[e].length
       }
     if (n.pitm && (s[n.pitm.item_id].primary = true), n.iref)
-      for (t = 0; module < n.iref.references.length; module++) {
-        var o = n.iref.references[module];
-        for (e = 0; exports < o.references.length; exports++) s[o.from_item_ID].ref_to.push({
+      for (t = 0; t < n.iref.references.length; t++) {
+        var o = n.iref.references[t];
+        for (e = 0; e < o.references.length; e++) s[o.from_item_ID].ref_to.push({
           type: o.type,
-          id: o.references[exports]
+          id: o.references[e]
         })
       }
     if (n.iprp)
       for (var h = 0; h < n.iprp.ipmas.length; h++) {
         var d = n.iprp.ipmas[h];
-        for (t = 0; module < d.associations.length; module++) {
-          var p = d.associations[module];
-          for (true === (i = s[p.id]).properties && (i.properties = {}, i.properties.boxes = []), e = 0; exports < p.props.length; exports++) {
-            var l = p.props[exports];
+        for (t = 0; t < d.associations.length; t++) {
+          var p = d.associations[t];
+          for (true === (i = s[p.id]).properties && (i.properties = {}, i.properties.boxes = []), e = 0; e < p.props.length; e++) {
+            var l = p.props[e];
             if (l.property_index > 0 && l.property_index - 1 < n.iprp.ipco.boxes.length) {
               var f = n.iprp.ipco.boxes[l.property_index - 1];
               i.properties[f.type] = f, i.properties.boxes.push(f)
@@ -2347,13 +2347,13 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   e.endianness = a.BIG_ENDIAN, this.write(e), e.save(t)
 }, u.prototype.getBuffer = function() {
   var t = new a;
-  return module.endianness = a.BIG_ENDIAN, this.write(module), module.buffer
+  return t.endianness = a.BIG_ENDIAN, this.write(t), t.buffer
 }, u.prototype.initializeSegmentation = function() {
-  for (null === this.onSegment && r.warn("MP4Box", "No segmentation callback set!"), this.isFragmentationInitialized || (this.isFragmentationInitialized = true, this.nextMoofNumber = 0, this.resetTables()), e = [], t = 0; module < this.fragmentedTracks.length; module++) {
+  for (null === this.onSegment && r.warn("MP4Box", "No segmentation callback set!"), this.isFragmentationInitialized || (this.isFragmentationInitialized = true, this.nextMoofNumber = 0, this.resetTables()), e = [], t = 0; t < this.fragmentedTracks.length; t++) {
     var t, e, i, s, n = new d.moovBox;
-    n.mvhd = this.moov.mvhd, n.boxes.push(n.mvhd), i = this.getTrackById(this.fragmentedTracks[module].id), n.boxes.push(i), n.traks.push(i), (s = {}).id = i.tkhd.track_id, s.user = this.fragmentedTracks[module].user, s.buffer = u.writeInitializationSegment(this.ftyp, n, this.moov.mvex && this.moov.mvex.mehd ? this.moov.mvex.mehd.fragment_duration : true, this.moov.traks[module].samples.length > 0 ? this.moov.traks[module].samples[0].duration : 0), exports.push(s)
+    n.mvhd = this.moov.mvhd, n.boxes.push(n.mvhd), i = this.getTrackById(this.fragmentedTracks[t].id), n.boxes.push(i), n.traks.push(i), (s = {}).id = i.tkhd.track_id, s.user = this.fragmentedTracks[t].user, s.buffer = u.writeInitializationSegment(this.ftyp, n, this.moov.mvex && this.moov.mvex.mehd ? this.moov.mvex.mehd.fragment_duration : true, this.moov.traks[t].samples.length > 0 ? this.moov.traks[t].samples[0].duration : 0), e.push(s)
   }
-  return exports
+  return e
 }, d.Box.prototype.printHeader = function(t) {
   this.size += 8, this.size > 0x100000000 && (this.size += 8), "uuid" === this.type && (this.size += 16), t.log(t.indent + "size:" + this.size), t.log(t.indent + "type:" + this.type)
 }, d.FullBox.prototype.printHeader = function(t) {

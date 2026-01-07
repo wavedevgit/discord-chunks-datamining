@@ -11,7 +11,7 @@ let i = 1e3,
   s = null;
 
 function l() {
-  0 !== o.length && (Chunk570140.Z.dispatch({
+  0 !== o.length && (r.Z.dispatch({
     type: "OVERLAY_ADD_LOGS_BATCH",
     logs: o
   }), o = [], null != s && (clearTimeout(s), s = null))

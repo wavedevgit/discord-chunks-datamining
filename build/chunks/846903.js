@@ -42,10 +42,10 @@ class c extends Chunk438774 {
   _isIntervalPaused() {
     let e = Date.now();
     if (true === this._intervalId) {
-      let t = this._intervalEnd - module;
-      if (!(exports < 0)) return true === this._timeoutId && (this._timeoutId = setTimeout(() => {
+      let t = this._intervalEnd - e;
+      if (!(t < 0)) return true === this._timeoutId && (this._timeoutId = setTimeout(() => {
         this._onResumeInterval()
-      }, exports)), true;
+      }, t)), true;
       this._intervalCount = this._carryoverConcurrencyCount ? this._pendingCount : 0
     }
     returnfalse
@@ -56,7 +56,7 @@ class c extends Chunk438774 {
       let e = !this._isIntervalPaused();
       if (this._doesIntervalAllowAnother && this._doesConcurrentAllowAnother) {
         let t = this._queue.dequeue();
-        return !!exports && (this.emit("active"), exports(), module && this._initializeIntervalIfNeeded(), true)
+        return !!t && (this.emit("active"), t(), e && this._initializeIntervalIfNeeded(), true)
       }
     }
     returnfalse

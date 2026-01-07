@@ -19,19 +19,19 @@ let _ = {
   binds: ["mod+u"],
   comboKeysBindGlobal: true,
   action() {
-    let e = Chunk914010.Z.getGuildId(),
-      t = Chunk944486.Z.getChannelId(module),
-      n = Chunk592125.Z.getChannel(exports);
-    if (null != exports && null != require && require.type === Chunk106351.d.GUILD_VOICE) return Chunk475179.Z.updateChatOpen(exports, !Chunk358221.Z.getChatOpen(exports)), false;
-    if (null != exports && null != require && require.type === Chunk106351.d.DM) {
-      let e = Chunk433355.ZP.getSection(exports, null == require ? true : require.isDM()),
-        r = (0, Chunk687158.Of)(require.getRecipientId()),
-        i = module === Chunk981631.ULH.PROFILE;
-      return (0, Chunk221292.TY)({
-        displayProfile: Chunk106351,
-        isProfileOpen: !Chunk475179
-      }), Chunk816782.Z.toggleUserProfileSidebarSection(), false
+    let e = f.Z.getGuildId(),
+      t = d.Z.getChannelId(e),
+      n = u.Z.getChannel(t);
+    if (null != t && null != n && n.type === r.d.GUILD_VOICE) return i.Z.updateChatOpen(t, !o.Z.getChatOpen(t)), false;
+    if (null != t && null != n && n.type === r.d.DM) {
+      let e = c.ZP.getSection(t, null == n ? true : n.isDM()),
+        r = (0, l.Of)(n.getRecipientId()),
+        i = e === p.ULH.PROFILE;
+      return (0, s.TY)({
+        displayProfile: r,
+        isProfileOpen: !i
+      }), a.Z.toggleUserProfileSidebarSection(), false
     }
-    return Chunk816782.Z.toggleMembersSection(), false
+    return a.Z.toggleMembersSection(), false
   }
 }

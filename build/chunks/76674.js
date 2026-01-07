@@ -5,5 +5,5 @@ require.d(exports, {
 });
 
 function a() {
-  return require.e("47674").then(require.bind(require, 305522))
+  return r.e("47674").then(r.bind(r, 305522))
 }

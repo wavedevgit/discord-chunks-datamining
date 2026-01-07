@@ -94,7 +94,7 @@ class y extends(r = Chunk473749.Component) {
       itemSize: e,
       edgeItems: t
     } = this.props;
-    return exports * (module.width + module.margin)
+    return t * (e.width + e.margin)
   }
   animateToIndex(e, t) {
     let {
@@ -133,15 +133,15 @@ class y extends(r = Chunk473749.Component) {
       itemSize: n,
       className: r
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: s()(Chunk428414.singleItemWrapper, Chunk428414.viewport, r),
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk428414.singleItem,
+    return (0, i.jsx)("div", {
+      className: s()(u.singleItemWrapper, u.viewport, r),
+      children: (0, i.jsx)("div", {
+        className: u.singleItem,
         style: {
-          width: require.width,
-          height: require.height
+          width: n.width,
+          height: n.height
         },
-        children: module(exports[0], 0)
+        children: e(t[0], 0)
       })
     })
   }
@@ -164,19 +164,19 @@ class y extends(r = Chunk473749.Component) {
       } = s,
       _ = this.getCarouselTranslate(),
       m = this.getItemStyle(),
-      h = (e = Chunk112724 > 0 ? [...Chunk120356.slice(-Chunk112724), ...Chunk120356, ...Chunk120356.slice(0, Chunk112724)] : Chunk120356).map((e, t) => (0, i.jsx)("div", {
+      h = (e = c > 0 ? [...o.slice(-c), ...o, ...o.slice(0, c)] : o).map((e, t) => (0, i.jsx)("div", {
         style: m,
         className: u.item,
         children: a(e, t - c, this.interpolateValueForItem(t - c))
       }, t));
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: Chunk428414.carousel,
+    return (0, i.jsx)(l.Z.div, {
+      className: u.carousel,
       style: {
         opacity: r,
-        left: Chunk748780.Z.add(exports.interpolate({
+        left: l.Z.add(t.interpolate({
           inputRange: [0, 1],
-          outputRange: [-_, -f - p - _ - d * (Chunk120356.length - 1)]
-        }), require)
+          outputRange: [-_, -f - p - _ - d * (o.length - 1)]
+        }), n)
       },
       children: h
     })
@@ -187,11 +187,11 @@ class y extends(r = Chunk473749.Component) {
       className: t,
       hideOverflow: n
     } = this.props;
-    if (module.length <= 0) throw Error("Carousel has no items");
-    return 1 === module.length ? this.renderSingleItem() : (0, Chunk54381.jsx)("div", {
+    if (e.length <= 0) throw Error("Carousel has no items");
+    return 1 === e.length ? this.renderSingleItem() : (0, i.jsx)("div", {
       className: s()({
-        [Chunk428414.viewport]: require
-      }, exports),
+        [u.viewport]: n
+      }, t),
       children: this.renderCarouselItems()
     })
   }

@@ -43,10 +43,10 @@ function i() {
     } = r.useExperiment({
       location: "c0d6eb_1"
     }, {
-      autoTrackExposure: module
+      autoTrackExposure: e
     });
   return {
-    showRedesignedChannelNotice: exports,
-    showRedesignedLiveChannelNotice: require
+    showRedesignedChannelNotice: t,
+    showRedesignedLiveChannelNotice: n
   }
 }

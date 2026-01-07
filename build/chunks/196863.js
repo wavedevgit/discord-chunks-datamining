@@ -14,25 +14,25 @@ var Chunk442837 = require("./442837.js"),
   Chunk526665 = require("./526665.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_VIEWERSIDE_CLIPS_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.NWw7kY),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["0vjy8N"]),
+  useTitle: () => c.intl.string(c.t.NWw7kY),
+  useSubtitle: () => c.intl.string(c.t["0vjy8N"]),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().viewerClipsEnabled)
+    return (0, i.e7)([l.Z], () => l.Z.getSettings().viewerClipsEnabled)
   },
   setValue: t => u.yl({
     enabled: t,
     trackAnalytics: true
   }),
   usePredicate: function() {
-    let t = (0, Chunk526665.BK)("DataAndPrivacyPanel"),
+    let t = (0, S.BK)("DataAndPrivacyPanel"),
       {
         enableViewerClipping: e
-      } = Chunk441167.Z.useExperiment({
+      } = r.Z.useExperiment({
         location: "Data & Privacy"
       }, {
         autoTrackExposure: false
       }),
-      n = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk779618.Z)(Chunk131951.Z));
-    return module && exports && require
+      n = (0, i.e7)([o.Z], () => (0, s.Z)(o.Z));
+    return t && e && n
   }
 })

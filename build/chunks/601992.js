@@ -38,10 +38,10 @@ let c = null,
 
 function g() {
   let e = e => null != e && Date.now() - e < 6e4;
-  for (let t in module(c) || (c = null), module(u) || (u = null), module(d) || (d = null), module(f) || (f = null), p) module(p[exports]) || delete p[exports];
-  for (let t in _) module(_[exports]) || delete _[exports];
-  for (let t in h) module(h[exports]) || delete h[exports];
-  for (let t in m) module(m[exports]) || delete m[exports]
+  for (let t in e(c) || (c = null), e(u) || (u = null), e(d) || (d = null), e(f) || (f = null), p) e(p[t]) || delete p[t];
+  for (let t in _) e(_[t]) || delete _[t];
+  for (let t in h) e(h[t]) || delete h[t];
+  for (let t in m) e(m[t]) || delete m[t]
 }
 
 function E(e) {
@@ -55,15 +55,15 @@ function E(e) {
 }
 class b extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(Chunk271383.ZP, Chunk9156.ZP, Chunk594174.default)
+    this.waitFor(a.ZP, o.ZP, s.default)
   }
   getGlobalStats() {
     let e = e => null == e ? null : Math.floor((Date.now() - e) / 1e3);
     return {
-      approx_seconds_since_last_notification: module(c),
-      approx_seconds_since_last_mention: module(u),
-      approx_seconds_since_last_role_mention: module(d),
-      approx_seconds_since_last_everyone_mention: module(f)
+      approx_seconds_since_last_notification: e(c),
+      approx_seconds_since_last_mention: e(u),
+      approx_seconds_since_last_role_mention: e(d),
+      approx_seconds_since_last_everyone_mention: e(f)
     }
   }
   getStats(e) {

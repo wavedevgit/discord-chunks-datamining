@@ -108,17 +108,17 @@ function eg(e, t) {
   returnfalse
 }
 
-function eh(e) {
+function em(e) {
   if (!N.Z.filterStaffContent()) returntrue;
   if ((0, x._e)(e)) {
     if (e.data.guild_id === j.KF) returntrue;
-    let t = m.Z.getGuild(e.data.guild_id);
+    let t = h.Z.getGuild(e.data.guild_id);
     if (null == t || t.features.has(A.GuildFeatures.INTERNAL_EMPLOYEE_ONLY)) returnfalse
   }
   returntrue
 }
 
-function em(e, t, n, r) {
+function eh(e, t, n, r) {
   let i = e.filter(e => e.type !== n);
   return t.forEach((e, t) => {
     (t + 1) * r < i.length ? i.splice((t + 1) * r, 0, e) : i.push(e)
@@ -128,19 +128,19 @@ function em(e, t, n, r) {
 function eb() {
   if (en = en.filter(e => e.type !== j.Ni.RECOMMENDED_GUILDS), er = er.filter(e => e.type !== j.Ni.RECOMMENDED_GUILDS), 0 === el.length) return;
   let e = "recommendedGuilds",
-    t = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(A.GuildFeatures.COMMUNITY)).length >= 5,
-    n = Chunk634773.Z.getReadTimestamp(module);
-  if (exports && null != require && Date.now() - ea > D && Date.now() - require < M) return;
+    t = h.Z.getGuildsArray().filter(e => e.features.has(A.GuildFeatures.COMMUNITY)).length >= 5,
+    n = P.Z.getReadTimestamp(e);
+  if (t && null != n && Date.now() - ea > D && Date.now() - n < M) return;
   let r = {
-    id: module,
-    type: Chunk797394.Ni.RECOMMENDED_GUILDS,
+    id: e,
+    type: j.Ni.RECOMMENDED_GUILDS,
     score: 50
   };
   if (z[r.id] = r, F[r.id] = r, 0 === en.length) er = [r, ...er];
-  else if (!exports && en.length < 5 || exports && en.length < 10) en = [...en, r];
-  else if (exports) {
+  else if (!t && en.length < 5 || t && en.length < 10) en = [...en, r];
+  else if (t) {
     let e = Math.round(2 * Math.random()) + 3 - 1;
-    en.splice(module, 0, r)
+    en.splice(e, 0, r)
   } else en.splice(5, 0, r)
 }
 
@@ -149,12 +149,12 @@ function e_() {
   if (H.forEach(t => {
       e.add(t.id)
     }), null != ee)
-    if (module.has(ee.id)) {
+    if (e.has(ee.id)) {
       let e = ee.id,
         t = ee.type,
         n = H.findIndex(n => n.id === e && n.type === t);
-      false !== require && (ee = H[require], H = H.filter(t => t.id !== e), H = [ee, ...H])
-    } else H = [ee, ...H], module.add(ee.id);
+      false !== n && (ee = H[n], H = H.filter(t => t.id !== e), H = [ee, ...H])
+    } else H = [ee, ...H], e.add(ee.id);
   H.forEach(e => {
     F[e.id] = e, e.type === j.Ni.CUSTOM_STATUS && (O.Z.isBlockedOrIgnored(e.data.user_id) ? Y[e.id] = true : z[e.id] = (0, x.mV)(e))
   })
@@ -167,7 +167,7 @@ function eE(e) {
     en = e, er = t
   }
   if (N.Z.onlyShowRecentGeneratedCandidates() || (function() {
-      let e = m.Z.getGuildIds(),
+      let e = h.Z.getGuildIds(),
         t = [];
       for (let r of e) {
         if (null != W[r] && W[r] < 0) continue;
@@ -200,15 +200,15 @@ function eE(e) {
           }
       }
       t.sort((e, t) => {
-        let n = h.Z.getGuildAffinity(e.data.guild_id),
-          r = h.Z.getGuildAffinity(t.data.guild_id);
+        let n = m.Z.getGuildAffinity(e.data.guild_id),
+          r = m.Z.getGuildAffinity(t.data.guild_id);
         return (null != r ? r.score : 0) - (null != n ? n.score : 0)
       });
       let r = [],
         i = [];
       t.forEach(e => {
         F[e.id] = e, null != P.Z.getReadTimestamp(e.id) ? i.push(e) : r.push(e)
-      }), en = em(en, r, j.Ni.GUILD_EVENT, 7), er = em(er, i, j.Ni.GUILD_EVENT, 7)
+      }), en = eh(en, r, j.Ni.GUILD_EVENT, 7), er = eh(er, i, j.Ni.GUILD_EVENT, 7)
     }(), function() {
       var e, t;
       let n = new Set,
@@ -238,7 +238,7 @@ function eE(e) {
           }
         };
         n.add(e.content.id), F[t.id] = t, null != P.Z.getReadTimestamp(t.id) ? a.push(t) : l.push(t)
-      }), en = em(en, l, j.Ni.ACTIVITY, 5), er = em(er, a, j.Ni.ACTIVITY, 5)
+      }), en = eh(en, l, j.Ni.ACTIVITY, 5), er = eh(er, a, j.Ni.ACTIVITY, 5)
     }(), eb()), null != V.load_id && U !== V.load_id) {
     var t;
     S.m.trackFeedLoaded({
@@ -318,7 +318,7 @@ function eN(e) {
 }
 class ej extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(f.default, g.Z, o.Z, u.Z, h.Z, d.ZP, m.Z, N.Z, P.Z, b.Z, _.Z, E.ZP, O.Z, v.ZP), null != e) {
+    if (this.waitFor(f.default, g.Z, o.Z, u.Z, m.Z, d.ZP, h.Z, N.Z, P.Z, b.Z, _.Z, E.ZP, O.Z, v.ZP), null != e) {
       var t, n, r, i, l, a, s;
       (k = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         F[e.id] = e
@@ -480,7 +480,7 @@ let eP = new ej(Chunk570140.Z, {
         contentGenerationEnabled: t
       } = (0, T.q3)("processRawItems", false), n = N.Z.onlyShowRecentGeneratedCandidates(), r = new Set(j.zd);
       n ? r = new Set([j.Ni.GENERATED_CANDIDATE]) : t && r.add(j.Ni.GENERATED_CANDIDATE);
-      let i = e.filter(e => r.has(e.type)).filter(eh);
+      let i = e.filter(e => r.has(e.type)).filter(em);
       return n && i.sort((e, t) => C.default.extractTimestamp(t.id) - C.default.extractTimestamp(e.id)), i.map(e => {
         if (e.type === j.Ni.MESSAGE && null != e.data.message_context) {
           let t = {};

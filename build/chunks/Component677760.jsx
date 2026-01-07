@@ -60,9 +60,9 @@ function S(e, t) {
 }
 
 function C() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk418024.centerFlex,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  return (0, r.jsx)("div", {
+    className: N.centerFlex,
+    children: (0, r.jsx)(l.$jN, {})
   })
 }
 let O = e => {

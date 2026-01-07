@@ -25,7 +25,7 @@ function i(e) {
 
 function l() {
   return {
-    id: Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
-    name: Chunk388032.intl.string(Chunk388032.t.ijDDwz)
+    id: a.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
+    name: r.intl.string(r.t.ijDDwz)
   }
 }

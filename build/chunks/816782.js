@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 let i = {
   toggleMembersSection() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "CHANNEL_TOGGLE_MEMBERS_SECTION"
     })
   },
   toggleUserProfileSidebarSection() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "USER_PROFILE_SIDEBAR_TOGGLE_SECTION"
     })
   },
   toggleSummariesSection() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "CHANNEL_TOGGLE_SUMMARIES_SECTION"
     })
   }

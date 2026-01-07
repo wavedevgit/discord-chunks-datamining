@@ -20,7 +20,7 @@ class i {
   next() {
     for (; this.index < this.items.length;) {
       let e = this.items[this.index].next();
-      if (!module.done) return module;
+      if (!e.done) return e;
       this.index += 1
     }
     return {
@@ -34,6 +34,6 @@ class i {
 }
 
 function a() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  return new i(exports)
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  return new i(t)
 }

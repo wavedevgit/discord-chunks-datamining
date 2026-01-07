@@ -23,7 +23,7 @@ function u(e, t, n) {
 class d extends Chunk147913.Z {
   ensureInitialized() {
     if (!this.initialized)
-      for (let e of (this.initialized = true, (0, Chunk401538.C)())) "voiceChannel" === module.type ? this.registerVoiceChannel(module.name, module.importHandler, module.isEnabled) : "application" === module.type && this.registerApplication(module.name, module.applicationId, module.importHandler, module.isEnabled)
+      for (let e of (this.initialized = true, (0, c.C)())) "voiceChannel" === e.type ? this.registerVoiceChannel(e.name, e.importHandler, e.isEnabled) : "application" === e.type && this.registerApplication(e.name, e.applicationId, e.importHandler, e.isEnabled)
   }
   registerApplication(e, t, n, r) {
     this.registrations.set(e, {
@@ -43,23 +43,23 @@ class d extends Chunk147913.Z {
     })
   }
   isUserInVoiceChannel() {
-    let e = Chunk594174.default.getCurrentUser();
-    if (null == module) returnfalse;
-    let t = Chunk979651.Z.getVoiceStateForUser(module.id);
-    return (null == exports ? true : exports.channelId) != null
+    let e = a.default.getCurrentUser();
+    if (null == e) returnfalse;
+    let t = o.Z.getVoiceStateForUser(e.id);
+    return (null == t ? true : t.channelId) != null
   }
   async updateActiveHandlers() {
     this.ensureInitialized();
-    let e = (0, Chunk341569.LI)(),
-      t = Chunk594190.ZP.getRunningGames(),
+    let e = (0, s.LI)(),
+      t = i.ZP.getRunningGames(),
       n = this.isUserInVoiceChannel();
-    if (!module) return void await this.stopAllHandlers();
-    let r = new Set(exports.map(e => e.id));
+    if (!e) return void await this.stopAllHandlers();
+    let r = new Set(t.map(e => e.id));
     for (let [e, t] of this.registrations) {
       let i = false;
-      null == exports.isEnabled || exports.isEnabled() ? "application" === exports.type ? i = null == exports.applicationId ? Chunk147913.size > 0 : Chunk147913.has(exports.applicationId) : "voiceChannel" === exports.type && (i = require) : i = false;
-      let a = this.activeHandlers.has(module);
-      Chunk594190 && !Chunk594174 ? await this.startHandler(module, exports) : !Chunk594190 && Chunk594174 && await this.stopHandler(module)
+      null == t.isEnabled || t.isEnabled() ? "application" === t.type ? i = null == t.applicationId ? r.size > 0 : r.has(t.applicationId) : "voiceChannel" === t.type && (i = n) : i = false;
+      let a = this.activeHandlers.has(e);
+      i && !a ? await this.startHandler(e, t) : !i && a && await this.stopHandler(e)
     }
   }
   async startHandler(e, t) {
@@ -74,7 +74,7 @@ class d extends Chunk147913.Z {
     null != t && (t.handler.stop(), this.activeHandlers.delete(e))
   }
   stopAllHandlers() {
-    for (let e of Array.from(this.activeHandlers.keys())) this.stopHandler(module)
+    for (let e of Array.from(this.activeHandlers.keys())) this.stopHandler(e)
   }
   getHandlerState(e) {
     var t, n;
@@ -85,7 +85,7 @@ class d extends Chunk147913.Z {
     this.ensureInitialized()
   }
   _terminate() {
-    for (let [, e] of this.activeHandlers) module.handler.stop();
+    for (let [, e] of this.activeHandlers) e.handler.stop();
     this.activeHandlers.clear()
   }
   constructor(...e) {

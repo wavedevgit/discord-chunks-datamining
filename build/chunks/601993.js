@@ -16,11 +16,11 @@ var Chunk579806 = require("./579806.js"),
   Chunk358085 = require("./358085.js");
 
 function o() {
-  return (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.spellCheck) != null
+  return (null === r.Z || true === r.Z ? true : r.Z.spellCheck) != null
 }
 
 function s() {
-  return (0, Chunk358085.isDesktop)() && o()
+  return (0, a.isDesktop)() && o()
 }
 let l = s() ? (0, Chunk405826.N)() : null;
 async function c(e) {

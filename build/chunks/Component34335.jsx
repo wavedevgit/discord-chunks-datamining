@@ -9,14 +9,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js");
 let l = Chunk473749.createContext(null),
   o = {
-    registerManageWidgetButtonRef: () => Chunk231338.dG,
+    registerManageWidgetButtonRef: () => a.dG,
     manageFocusOnReorder: Chunk231338.dG,
     getManageButtonForWidget: () => null
   };
 
 function c() {
-  let e = Chunk473749.useContext(l);
-  return null != module ? module : o
+  let e = i.useContext(l);
+  return null != e ? e : o
 }
 
 function s(e) {

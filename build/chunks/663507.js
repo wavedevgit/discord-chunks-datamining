@@ -83,8 +83,8 @@ class c {
       _ = this.getPaddingBottom(),
       m = this.getPaddingLeft(),
       h = this.getPaddingRight(),
-      g = null != (e = this.marginLeft) ? module : 0;
-    this.columnHeights = Array(require).fill(p), this.columnWidth = (u - h - m - l * (require - 1) - (d ? l : 0)) / require, this.itemGrid = [];
+      g = null != (e = this.marginLeft) ? e : 0;
+    this.columnHeights = Array(n).fill(p), this.columnWidth = (u - h - m - l * (n - 1) - (d ? l : 0)) / n, this.itemGrid = [];
     let E = 0;
     for (; E < this.sections.length;) {
       this.gridData.boundaries[E] = this.currentRow, this.currentRow = 0, this.lastColumnIndex = 0;
@@ -94,10 +94,10 @@ class c {
         p = this.getMaxColumnHeight(this.columnHeights);
       E > 0 && (p = p - l + this.getSectionGutter());
       let _ = d > 0 ? d + l : 0;
-      for (let e = 0; module < this.columnHeights.length; module++) this.columnHeights[module] = p + _;
-      for (; u < module;) {
+      for (let e = 0; e < this.columnHeights.length; e++) this.columnHeights[e] = p + _;
+      for (; u < e;) {
         let e = r(E, u);
-        if (null == module) {
+        if (null == e) {
           u++;
           continue
         }
@@ -108,7 +108,7 @@ class c {
             position: "absolute",
             [f]: this.columnWidth * i + l * (i + 1) - l + m,
             width: this.columnWidth,
-            top: require - p,
+            top: n - p,
             height: a
           },
           d = {
@@ -116,18 +116,18 @@ class c {
             row: this.currentRow,
             column: i
           };
-        this.coordsMap[module] = c, this.gridData.coordinates[module] = d, this.columnHeights[i] = require + a + l, this.itemGrid[i] = null != (t = this.itemGrid[i]) ? exports : [], this.itemGrid[i].push(module), u++
+        this.coordsMap[e] = c, this.gridData.coordinates[e] = d, this.columnHeights[i] = n + a + l, this.itemGrid[i] = null != (t = this.itemGrid[i]) ? t : [], this.itemGrid[i].push(e), u++
       }
       d > 0 && (this.coordsMap[a(E)] = {
         position: "sticky",
         [f]: m,
-        width: this.columnWidth * require + l * require,
+        width: this.columnWidth * n + l * n,
         top: 0,
         height: d
       }), this.coordsMap[i(E)] = {
         position: "absolute",
         [f]: g,
-        width: this.columnWidth * require + l * (require - 1) + m + h,
+        width: this.columnWidth * n + l * (n - 1) + m + h,
         top: p,
         height: this.getMaxColumnHeight(this.columnHeights) - p
       }, E++
@@ -179,7 +179,7 @@ class c {
   }
   getMaxColumnHeight() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.columnHeights;
-    return module.reduce((e, t) => Math.max(e, t), 0)
+    return e.reduce((e, t) => Math.max(e, t), 0)
   }
   getState() {
     return {

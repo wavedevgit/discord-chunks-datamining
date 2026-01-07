@@ -22,13 +22,13 @@ var Chunk473749 = require("./473749.js"),
 let E = (0, Chunk358085.isMac)() ? null : "DEFAULT";
 class O extends Chunk473749.PureComponent {
   componentDidMount() {
-    Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
+    b.ZP.setSystemTrayIcon(this.getIcon())
   }
   componentDidUpdate() {
-    Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
+    b.ZP.setSystemTrayIcon(this.getIcon())
   }
   componentWillUnmount() {
-    Chunk998502.ZP.setSystemTrayIcon(E)
+    b.ZP.setSystemTrayIcon(E)
   }
   render() {
     return null
@@ -50,28 +50,28 @@ class O extends Chunk473749.PureComponent {
           connected: r,
           unread: i
         } = this.props, l = E;
-        return (0, m.isMac)() && !r ? l : (0, m.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
+        return (0, h.isMac)() && !r ? l : (0, h.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
       })
   }
 }
 let v = () => null;
-Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", () => Chunk846027.Z.toggleSelfMute({
+Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", () => l.Z.toggleSelfMute({
   location: "System Tray"
-})), Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => Chunk846027.Z.toggleSelfDeaf()), Chunk998502.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
-  (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
-    section: Chunk981631.oAB.VOICE
+})), Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => l.Z.toggleSelfDeaf()), Chunk998502.ZP.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
+  (0, c.openUserSettings)(s.n.VOICE_AND_VIDEO_PANEL, {
+    section: _.oAB.VOICE
   })
 }), v = Chunk442837.ZP.connectStores([Chunk19780.Z, Chunk131951.Z, Chunk606304.Z, Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
-  let e = Chunk888369.default.getTotalMentionCount(),
-    t = Chunk888369.default.hasAnyUnread(),
-    n = (0, Chunk849862.m$)([Chunk699516.Z, Chunk91896.Z]),
-    r = !Chunk292959.Z.getDisableUnreadBadge() && !!(exports || module + require > 0);
+  let e = u.default.getTotalMentionCount(),
+    t = u.default.hasAnyUnread(),
+    n = (0, o.m$)([g.Z, a.Z]),
+    r = !p.Z.getDisableUnreadBadge() && !!(t || e + n > 0);
   return {
-    connected: Chunk19780.Z.isConnected(),
-    speaking: Chunk606304.Z.isCurrentUserSpeaking(),
-    muted: Chunk131951.Z.isSelfMute() || Chunk131951.Z.isSelfMutedTemporarily(),
-    deafened: Chunk131951.Z.isSelfDeaf(),
-    unread: Chunk473749
+    connected: f.Z.isConnected(),
+    speaking: m.Z.isCurrentUserSpeaking(),
+    muted: d.Z.isSelfMute() || d.Z.isSelfMutedTemporarily(),
+    deafened: d.Z.isSelfDeaf(),
+    unread: r
   }
 })(O));
 let y = v

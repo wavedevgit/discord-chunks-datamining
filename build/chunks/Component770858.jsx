@@ -26,8 +26,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk678878 = require("./678878.js");
 
 function E() {
-  let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-  return (0, Chunk442837.e7)([Chunk306680.ZP], () => (null == module ? true : module.id) != null && Chunk306680.ZP.getMentionCount(module.id, Chunk490897.W.NOTIFICATION_CENTER) > 0)
+  let e = (0, a.e7)([p.default], () => p.default.getCurrentUser());
+  return (0, a.e7)([f.ZP], () => (null == e ? true : e.id) != null && f.ZP.getMentionCount(e.id, C.W.NOTIFICATION_CENTER) > 0)
 }
 
 function S(e) {
@@ -139,18 +139,18 @@ function S(e) {
 }
 
 function _() {
-  let e = Chunk473749.useRef(null),
+  let e = i.useRef(null),
     {
       notificationCenterVariant: t
-    } = (0, Chunk821020.pN)({
+    } = (0, g.pN)({
       location: "NotificationsInboxButton"
     }),
     n = E(),
-    l = (0, Chunk128008.mv)();
-  return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk54381.jsx)(S, {
-    onClick: Chunk91192
-  }) : exports === Chunk821020.jP.POPOUT ? (0, Chunk54381.jsx)(Chunk961040.Z, {
-    targetElementRef: module,
+    l = (0, m.mv)();
+  return t === g.jP.SIDEBAR ? (0, r.jsx)(S, {
+    onClick: l
+  }) : t === g.jP.POPOUT ? (0, r.jsx)(y.Z, {
+    targetElementRef: e,
     popoutPosition: "right",
     popoutAlign: "bottom",
     children: (t, n, i) => (0, r.jsx)(S, {
@@ -161,15 +161,15 @@ function _() {
       },
       popoutProps: i
     })
-  }) : exports === Chunk821020.jP.LEGACY ? (0, Chunk54381.jsx)(Chunk178088.k, {
+  }) : t === g.jP.LEGACY ? (0, r.jsx)(d.k, {
     spacing: 0,
     badgeState: {
-      badgeForYou: require
+      badgeForYou: n
     },
-    targetElementRef: module,
+    targetElementRef: e,
     popoutPosition: "right",
     popoutAlign: "top",
-    dialogClassName: Chunk678878.positionLayer,
+    dialogClassName: x.positionLayer,
     children: (t, n, i) => (0, r.jsx)(S, {
       ref: e,
       selectedOverride: n,

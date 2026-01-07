@@ -142,32 +142,32 @@ function j(e) {
 }
 
 function M() {
-  let e = Chunk944486.Z.getChannelId();
-  if (null == module) return;
-  let t = Chunk592125.Z.getChannel(module);
-  if (null == exports) return;
-  let n = j(exports.id);
+  let e = v.Z.getChannelId();
+  if (null == e) return;
+  let t = b.Z.getChannel(e);
+  if (null == t) return;
+  let n = j(t.id);
   r = true, w({
-    guildId: exports.getGuildId(),
-    channelId: exports.id,
-    messageId: require.messageId,
-    jumpType: require.jumpType,
-    avoidInitialScroll: null != require.messageId
-  }), F(exports.getGuildId(), exports.id)
+    guildId: t.getGuildId(),
+    channelId: t.id,
+    messageId: n.messageId,
+    jumpType: n.jumpType,
+    avoidInitialScroll: null != n.messageId
+  }), F(t.getGuildId(), t.id)
 }
 
 function k() {
-  let e = Chunk944486.Z.getChannelId();
-  if (null == module) return;
-  let t = Chunk592125.Z.getChannel(module);
-  if (null == exports) return;
-  if (!(0, Chunk131704.Qm)(exports.type)) return void F(exports.getGuildId(), exports.id);
-  let n = Chunk89892.Z.getOrCreate(module);
-  if (require.ready && require.hasFetched) return void F(exports.getGuildId(), exports.id);
+  let e = v.Z.getChannelId();
+  if (null == e) return;
+  let t = b.Z.getChannel(e);
+  if (null == t) return;
+  if (!(0, g.Qm)(t.type)) return void F(t.getGuildId(), t.id);
+  let n = f.Z.getOrCreate(e);
+  if (n.ready && n.hasFetched) return void F(t.getGuildId(), t.id);
   w({
-    guildId: exports.getGuildId(),
-    channelId: exports.id
-  }), F(exports.getGuildId(), exports.id)
+    guildId: t.getGuildId(),
+    channelId: t.id
+  }), F(t.getGuildId(), t.id)
 }
 
 function U(e) {
@@ -227,11 +227,11 @@ function F(e, t) {
 }
 
 function B() {
-  let e = Chunk944486.Z.getChannelId(),
-    t = Chunk914010.Z.getGuildId();
-  if (null == exports || null == module) return;
-  let n = Chunk433355.ZP.getSidebarState(module);
-  (null == require ? true : require.type) !== Chunk897473.tI.VIEW_CHANNEL && F(exports, module)
+  let e = v.Z.getChannelId(),
+    t = S.Z.getGuildId();
+  if (null == t || null == e) return;
+  let n = E.ZP.getSidebarState(e);
+  (null == n ? true : n.type) !== h.tI.VIEW_CHANNEL && F(t, e)
 }
 
 function V(e) {
@@ -325,10 +325,10 @@ function q(e) {
 }
 class Q extends Chunk147913.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", M)
+    s.Z.subscribe("CONNECTION_OPEN", M)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", M)
+    s.Z.unsubscribe("CONNECTION_OPEN", M)
   }
   constructor(...e) {
     super(...e), P(this, "fetchMessages", w), P(this, "loadSelectedChannelIfNecessary", k), P(this, "stores", new Map().set(E.ZP, B)), P(this, "actions", {

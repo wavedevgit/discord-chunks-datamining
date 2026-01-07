@@ -14,14 +14,14 @@ var Chunk392711 = require("./392711.js"),
   Chunk526761 = require("./526761.js");
 let p = {
   init() {
-    Chunk262847.Z[Chunk526761.yP.PRELOADED_USER_SETTINGS] = Chunk315341.Z, Chunk262847.Z[Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS] = Chunk78687.Z, Chunk570140.Z.subscribe("CONNECTION_OPEN", f), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", g), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", h), Chunk570140.Z.subscribe("APP_STATE_UPDATE", m)
+    s.Z[d.yP.PRELOADED_USER_SETTINGS] = o.Z, s.Z[d.yP.FRECENCY_AND_FAVORITES_SETTINGS] = a.Z, l.Z.subscribe("CONNECTION_OPEN", f), l.Z.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", g), l.Z.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), l.Z.subscribe("APP_STATE_UPDATE", h)
   }
 };
 
 function f() {
-  let e = Chunk581883.Z.getFullState(),
-    t = module[Chunk526761.yP.PRELOADED_USER_SETTINGS];
-  exports.editInfo.triggeredMigrations && Chunk675478.hW.markDirtyFromMigration(exports.proto, exports.editInfo.cleanupFuncs), i().forEach(Chunk675478.aj, (t, n) => {
+  let e = u.Z.getFullState(),
+    t = e[d.yP.PRELOADED_USER_SETTINGS];
+  t.editInfo.triggeredMigrations && c.hW.markDirtyFromMigration(t.proto, t.editInfo.cleanupFuncs), i().forEach(c.aj, (t, n) => {
     let r = e[Number(n)];
     null != r.editInfo.offlineEditDataVersion && null != r.editInfo.protoToSave && t.scheduleSaveFromOfflineEdit()
   })
@@ -42,14 +42,14 @@ function g(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     settingsType: t
   } = e;
   c.aj[t].loadIfNecessary()
 }
 
-function m(e) {
+function h(e) {
   let {
     state: t
   } = e;

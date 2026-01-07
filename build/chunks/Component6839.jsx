@@ -301,13 +301,13 @@ class es extends Chunk473749.PureComponent {
     } = this.state;
     this.setState({
       loadingMore: true
-    }), Chunk222677.U0({
-      channelId: module.getChannelId(),
-      messageId: module.id,
-      emoji: exports.emoji,
-      limit: Chunk981631.pTL,
-      after: Chunk54381,
-      type: require
+    }), B.U0({
+      channelId: e.getChannelId(),
+      messageId: e.id,
+      emoji: t.emoji,
+      limit: H.pTL,
+      after: r,
+      type: n
     }).then(e => {
       var t;
       return this.setState({
@@ -327,14 +327,14 @@ class es extends Chunk473749.PureComponent {
       message: i,
       reactionType: a
     } = this.props, o = [];
-    return 0 === exports.length && this.state.loadingMore ? o.push(1) : (o.push(exports.length), module && o.push(1)), (0, Chunk54381.jsxs)("div", {
-      className: Chunk87611.reactorsContainer,
-      children: [Chunk120356 === Chunk566006.O.BURST && (0, Chunk54381.jsx)(ei, {
-        emoji: require.emoji,
-        channelId: Chunk473749.getChannelId(),
-        messageId: Chunk473749.id
-      }), (0, Chunk54381.jsx)(Chunk481060._2F, {
-        className: Chunk87611.reactors,
+    return 0 === t.length && this.state.loadingMore ? o.push(1) : (o.push(t.length), e && o.push(1)), (0, r.jsxs)("div", {
+      className: W.reactorsContainer,
+      children: [a === I.O.BURST && (0, r.jsx)(ei, {
+        emoji: n.emoji,
+        channelId: i.getChannelId(),
+        messageId: i.id
+      }), (0, r.jsx)(_._2F, {
+        className: W.reactors,
         fade: true,
         ref: this.scrollerRef,
         sections: o,
@@ -342,7 +342,7 @@ class es extends Chunk473749.PureComponent {
         rowHeight: this.getRowHeight,
         renderRow: this.renderRow,
         renderSection: this.renderSection,
-        onScroll: module ? this.handleScroll : true
+        onScroll: e ? this.handleScroll : true
       })]
     })
   }

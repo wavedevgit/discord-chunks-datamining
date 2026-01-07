@@ -12,7 +12,7 @@ module.exports = Chunk507604 && ! function() {
       writable: false
     }).length = 1
   } catch (e) {
-    return module instanceof TypeError
+    return e instanceof TypeError
   }
 }() ? function(e, t) {
   if (i(e) && !o(e, "length").writable) throw new a("Cannot set read only .length");

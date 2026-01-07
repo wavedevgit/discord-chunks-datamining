@@ -8,9 +8,9 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js");
 
 function i() {
-  return (0, Chunk54381.jsxs)(Chunk481060.Text, {
+  return (0, a.jsxs)(r.Text, {
     variant: "text-lg/normal",
-    children: ["Under Construction", " ", (0, Chunk54381.jsx)("span", {
+    children: ["Under Construction", " ", (0, a.jsx)("span", {
       role: "img",
       "aria-label": "Construction",
       children: "\uD83D\uDEA7"

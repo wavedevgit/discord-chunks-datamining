@@ -51,7 +51,7 @@ function I(e, t) {
 }
 class T {
   createSearchContext() {
-    null == this.userSearchContext && (this.userSearchContext = Chunk279779.Z.getUserSearchContext(this.parseUserResults, this._limit))
+    null == this.userSearchContext && (this.userSearchContext = h.Z.getUserSearchContext(this.parseUserResults, this._limit))
   }
   setLimit(e) {
     let {
@@ -70,7 +70,7 @@ class T {
   }
   _isAsyncSearch() {
     var e, t;
-    return this._include(Chunk727785.h8.USER) && (null == (t = this.options) || null == (e = exports.userFilters) ? true : module.thread) != null
+    return this._include(E.h8.USER) && (null == (t = this.options) || null == (e = t.userFilters) ? true : e.thread) != null
   }
   setOptions(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
@@ -83,7 +83,7 @@ class T {
     if (!this._willRefetchIfSingleCategoryResults()) return;
     this._refetched = true;
     let e = this.query;
-    this._userResults.length > 0 ? this.queryUsers(module, null, this._refetchForSingleCategoryLimit) : this._groupDMResults.length > 0 ? this._groupDMResults = this.queryGroupDMs(module, this._refetchForSingleCategoryLimit) : this._textChannelResults.length > 0 ? this._textChannelResults = this.queryTextChannels(module, this._refetchForSingleCategoryLimit) : this._voiceChannelResults.length > 0 ? this._voiceChannelResults = this.queryVoiceChannels(module, this._refetchForSingleCategoryLimit) : this._guildResults.length > 0 ? this._guildResults = this.queryGuilds(module, this._refetchForSingleCategoryLimit) : this._applicationResults.length > 0 ? this._applicationResults = this.queryApplications(module, this._refetchForSingleCategoryLimit) : this._linkResults.length > 0 ? this._linkResults = this.queryLink(module, this._refetchForSingleCategoryLimit) : this._inAppNavigations.length > 0 && (this._inAppNavigations = this.queryInAppNavigations(module, this._refetchForSingleCategoryLimit))
+    this._userResults.length > 0 ? this.queryUsers(e, null, this._refetchForSingleCategoryLimit) : this._groupDMResults.length > 0 ? this._groupDMResults = this.queryGroupDMs(e, this._refetchForSingleCategoryLimit) : this._textChannelResults.length > 0 ? this._textChannelResults = this.queryTextChannels(e, this._refetchForSingleCategoryLimit) : this._voiceChannelResults.length > 0 ? this._voiceChannelResults = this.queryVoiceChannels(e, this._refetchForSingleCategoryLimit) : this._guildResults.length > 0 ? this._guildResults = this.queryGuilds(e, this._refetchForSingleCategoryLimit) : this._applicationResults.length > 0 ? this._applicationResults = this.queryApplications(e, this._refetchForSingleCategoryLimit) : this._linkResults.length > 0 ? this._linkResults = this.queryLink(e, this._refetchForSingleCategoryLimit) : this._inAppNavigations.length > 0 && (this._inAppNavigations = this.queryInAppNavigations(e, this._refetchForSingleCategoryLimit))
   }
   search(e, t) {
     if (this.query = e, this._refetched = false, "" === e.trim()) {
@@ -97,24 +97,24 @@ class T {
     let {
       userSearchContext: e
     } = this;
-    null != module && module.clearQuery(), this.results = [], this._userResults = [], this._groupDMResults = [], this._textChannelResults = [], this._voiceChannelResults = [], this._guildResults = [], this._applicationResults = [], this._linkResults = [], this._inAppNavigations = []
+    null != e && e.clearQuery(), this.results = [], this._userResults = [], this._groupDMResults = [], this._textChannelResults = [], this._voiceChannelResults = [], this._guildResults = [], this._applicationResults = [], this._linkResults = [], this._inAppNavigations = []
   }
   clean() {
     this.clear(), this.destroy(), this.query = "", this.updateAllResults()
   }
   pause() {
     var e, t;
-    null == (t = this.userSearchContext) || null == (e = exports.unsubscribe) || module.call(exports)
+    null == (t = this.userSearchContext) || null == (e = t.unsubscribe) || e.call(t)
   }
   resume() {
     var e, t;
-    null == (t = this.userSearchContext) || null == (e = exports.subscribe) || module.call(exports)
+    null == (t = this.userSearchContext) || null == (e = t.subscribe) || e.call(t)
   }
   destroy() {
     let {
       userSearchContext: e
     } = this;
-    null != module && (module.destroy(), this.userSearchContext = null)
+    null != e && (e.destroy(), this.userSearchContext = null)
   }
   queryTextChannels(e, t) {
     if (!this._include(E.h8.TEXT_CHANNEL)) return [];

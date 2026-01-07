@@ -79,14 +79,14 @@ class p extends Chunk81825.Z {
   }
   get supportedOperatingSystems() {
     let e = null != this.systemRequirements ? Object.keys(this.systemRequirements) : [];
-    return module.length > 0 ? module : [Chunk981631.TaA.WINDOWS]
+    return e.length > 0 ? e : [c.TaA.WINDOWS]
   }
   get isOnSale() {
     return null != this.price && null != this.price.saleAmount
   }
   isGiftable() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.price;
-    return this.type === Chunk981631.epS.DURABLE_PRIMARY && this.available && this.requiresPayment && null != module && Chunk981631.w2V.has(module.currency) && null == this.externalPurchaseUrl
+    return this.type === c.epS.DURABLE_PRIMARY && this.available && this.requiresPayment && null != e && c.w2V.has(e.currency) && null == this.externalPurchaseUrl
   }
   getPrice() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
@@ -94,21 +94,21 @@ class p extends Chunk81825.Z {
       {
         price: n
       } = this;
-    if (null == require) return null;
-    if (null != module) {
+    if (null == n) return null;
+    if (null != e) {
       var r;
-      let t = null == (r = require.premium) ? true : Chunk913527[module];
-      if (null != exports) return {
-        amount: exports.amount,
-        currency: require.currency
+      let t = null == (r = n.premium) ? true : r[e];
+      if (null != t) return {
+        amount: t.amount,
+        currency: n.currency
       }
     }
-    return exports && null != require.saleAmount ? {
-      amount: require.saleAmount,
-      currency: require.currency
+    return t && null != n.saleAmount ? {
+      amount: n.saleAmount,
+      currency: n.currency
     } : {
-      amount: require.amount,
-      currency: require.currency
+      amount: n.amount,
+      currency: n.currency
     }
   }
   getDisplaySalePercentage() {
@@ -116,22 +116,22 @@ class p extends Chunk81825.Z {
   }
   get requiresPayment() {
     let e = this.getPrice();
-    return !this.premium && null != module && module.amount > 0
+    return !this.premium && null != e && e.amount > 0
   }
   get isTheGameAwardsWinner() {
     return d.includes(this.id)
   }
   get available() {
-    return (0, Chunk95015.yE)(this.flags, Chunk981631.l4R.AVAILABLE) || null != this.externalPurchaseUrl
+    return (0, a.yE)(this.flags, c.l4R.AVAILABLE) || null != this.externalPurchaseUrl
   }
   isAvailableForDistribution() {
-    return this.available && null != this.getPrice() && null == this.externalPurchaseUrl && (!this.premium || (0, Chunk95015.yE)(this.flags, Chunk981631.l4R.PREMIUM_AND_DISTRIBUTION))
+    return this.available && null != this.getPrice() && null == this.externalPurchaseUrl && (!this.premium || (0, a.yE)(this.flags, c.l4R.PREMIUM_AND_DISTRIBUTION))
   }
   isAvailable() {
-    return (0, Chunk95015.yE)(this.flags, Chunk981631.l4R.AVAILABLE)
+    return (0, a.yE)(this.flags, c.l4R.AVAILABLE)
   }
   isPremiumPerk() {
-    return this.premium && ((0, Chunk95015.yE)(this.flags, Chunk981631.l4R.PREMIUM_PURCHASE) || (0, Chunk95015.yE)(this.flags, Chunk981631.l4R.PREMIUM_AND_DISTRIBUTION))
+    return this.premium && ((0, a.yE)(this.flags, c.l4R.PREMIUM_PURCHASE) || (0, a.yE)(this.flags, c.l4R.PREMIUM_AND_DISTRIBUTION))
   }
   hasFeature(e) {
     return this.features.has(e)

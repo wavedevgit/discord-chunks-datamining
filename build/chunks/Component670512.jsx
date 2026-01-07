@@ -31,16 +31,16 @@ class m extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: true
-    }), Chunk585483.S.subscribe(Chunk981631.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    }), d.S.subscribe(f.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentWillUnmount() {
-    this.focusTimeout.stop(), Chunk585483.S.unsubscribe(Chunk981631.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    this.focusTimeout.stop(), d.S.unsubscribe(f.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentDidUpdate() {
     let {
       hasQuery: e
     } = this.props;
-    module || this.springTo(0)
+    e || this.springTo(0)
   }
   springTo(e) {
     let {
@@ -90,14 +90,14 @@ class m extends(r = Chunk473749.PureComponent) {
     })
   }
   renderContent() {
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk139834.tutorialMessages,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk139834.searchMessage,
-        children: Chunk388032.intl.string(Chunk388032.t.Mp0IGK)
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk139834.selectMessage,
-        children: Chunk388032.intl.string(Chunk388032.t["3CbpwH"])
+    return (0, i.jsxs)("div", {
+      className: p.tutorialMessages,
+      children: [(0, i.jsx)("div", {
+        className: p.searchMessage,
+        children: h.intl.string(h.t.Mp0IGK)
+      }), (0, i.jsx)("div", {
+        className: p.selectMessage,
+        children: h.intl.string(h.t["3CbpwH"])
       })]
     })
   }
@@ -107,20 +107,20 @@ class m extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       shown: t
     } = this.state;
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, i.jsxs)("div", {
       ref: this.rootRef,
-      className: o()(Chunk139834.tutorial, {
-        [Chunk139834.shown]: exports,
-        [Chunk139834.hasQuery]: module
+      className: o()(p.tutorial, {
+        [p.shown]: t,
+        [p.hasQuery]: e
       }),
-      children: [this.renderContent(), this.renderArrowGroup(Chunk139834.__invalid_left), this.renderArrowGroup(Chunk139834.right)]
+      children: [this.renderContent(), this.renderArrowGroup(p.__invalid_left), this.renderArrowGroup(p.right)]
     })
   }
   getStyle() {
     let {
       reducedMotion: e
     } = this.context;
-    returntrue === module.enabled ? {} : {
+    returntrue === e.enabled ? {} : {
       opacity: 1,
       transform: [{
         translateY: this.state.translateY.interpolate({

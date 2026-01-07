@@ -8,8 +8,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js");
 
 function a() {
-  returnfalse === (0, Chunk442837.e7)([Chunk594174.default], () => {
+  returnfalse === (0, r.e7)([i.default], () => {
     var e;
-    return null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed
+    return null == (e = i.default.getCurrentUser()) ? true : e.nsfwAllowed
   })
 }

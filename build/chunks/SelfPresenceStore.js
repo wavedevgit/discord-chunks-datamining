@@ -85,20 +85,20 @@ function Z() {
 
 function F() {
   var e;
-  if (A = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, R = Chunk517100.Z.isAFK(), w) T = C;
-  else if (I) T = Chunk981631.Skl.INVISIBLE;
+  if (A = null != (e = g.Z.getIdleSince()) ? e : 0, R = g.Z.isAFK(), w) T = C;
+  else if (I) T = v.Skl.INVISIBLE;
   else {
-    let e = Chunk695346.co.getSetting();
-    T = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
+    let e = p.co.getSetting();
+    T = e !== v.Skl.UNKNOWN ? e : v.Skl.ONLINE
   }
-  T === Chunk981631.Skl.ONLINE && A > 0 && (T = Chunk981631.Skl.IDLE);
+  T === v.Skl.ONLINE && A > 0 && (T = v.Skl.IDLE);
   let t = false,
-    n = w || T === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
-  a()(N, require) || (N = require, P = M(require), t = true);
-  let r = Chunk797258.Z.getRemoteActivities();
+    n = w || T === v.Skl.INVISIBLE ? [] : b.Z.getActivities().filter(G);
+  a()(N, n) || (N = n, P = M(n), t = true);
+  let r = O.Z.getRemoteActivities();
   D !== r && (D = r, t = true);
-  let i = Chunk797258.Z.getHiddenActivities();
-  x !== Chunk348327 && (x = Chunk348327), exports && (j = M(L = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  let i = O.Z.getHiddenActivities();
+  x !== i && (x = i), t && (j = M(L = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(y.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function B(e) {
@@ -110,7 +110,7 @@ function V() {
 }
 
 function H() {
-  w = false, C = Chunk981631.Skl.UNKNOWN, F(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
+  w = false, C = v.Skl.UNKNOWN, F(), y.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
 function Y() {
@@ -118,7 +118,7 @@ function Y() {
 }
 class W extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk77498.Z, Chunk517100.Z, Chunk283595.Z, Chunk293273.Z, Chunk158776.Z, Chunk797258.Z, Chunk768419.Z, Chunk581883.Z), this.syncWith([Chunk293273.Z], F)
+    this.waitFor(h.Z, g.Z, E.Z, b.Z, y.Z, O.Z, f.Z, _.Z), this.syncWith([b.Z], F)
   }
   getLocalPresence() {
     return {
@@ -133,18 +133,18 @@ class W extends(r = Chunk442837.ZP.Store) {
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? j : P
+    return e ? j : P
   }
   getUnfilteredActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? L : N
+    return e ? L : N
   }
   getHiddenActivities() {
     return x
   }
   getPrimaryActivity() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return this.getActivities(module)[0]
+    return this.getActivities(e)[0]
   }
   getApplicationActivity(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];

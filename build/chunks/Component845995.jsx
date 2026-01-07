@@ -13,21 +13,21 @@ var Chunk399606 = require("./399606.js"),
   Chunk999382 = require("./999382.js"),
   Chunk270394 = require("./270394.jsx");
 let d = function() {
-  let e = (0, Chunk399606.e7)([Chunk246946.Z], () => Chunk246946.Z.hideInstantInvites),
+  let e = (0, i.e7)([s.Z], () => s.Z.hideInstantInvites),
     {
       invites: t,
       guild: n
-    } = (0, Chunk399606.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps(), []),
+    } = (0, i.cj)([o.Z], () => o.Z.getProps(), []),
     {
       analyticsLocations: d
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_PROFILE_PAGE);
-  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
+    } = (0, a.ZP)(l.Z.GUILD_SETTINGS_PROFILE_PAGE);
+  return (0, r.jsx)(a.Gt, {
     value: d,
-    children: (0, Chunk54381.jsx)(Chunk270394.Z, {
-      invites: exports,
-      guild: require,
+    children: (0, r.jsx)(c.Z, {
+      invites: t,
+      guild: n,
       showChannel: true,
-      hide: module,
+      hide: e,
       withV2Actions: true,
       canCreateInvites: true
     })

@@ -10,7 +10,7 @@ var r, i, Chunk442837 = require("./442837.js"),
 let o = new Map;
 class c extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z)
+    this.waitFor(s.Z)
   }
   getGuildRoleConnectionsConfiguration(e) {
     return o.get(e)

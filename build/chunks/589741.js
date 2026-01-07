@@ -8,5 +8,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk127126 = require("./127126.js"),
   Chunk532045 = require("./532045.js");
 let r = (0, Chunk509613.IC)(Chunk313789.n.VOICE_INPUT_OUTPUT_VOLUME_SPLIT, {
-  buildLayout: () => [Chunk127126.h, Chunk532045.Q]
+  buildLayout: () => [s.h, u.Q]
 })

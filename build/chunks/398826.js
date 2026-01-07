@@ -11,10 +11,10 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 
 function s() {
-  return Chunk570140.Z.dispatch({
+  return i.Z.dispatch({
     type: "LOAD_DATA_HARVEST_TYPE_START"
-  }), Chunk544891.tn.get({
-    url: Chunk981631.ANM.USER_HARVEST,
+  }), r.tn.get({
+    url: o.ANM.USER_HARVEST,
     oldFormErrors: true,
     rejectWithError: false
   }).then(e => {

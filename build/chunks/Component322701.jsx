@@ -19,15 +19,15 @@ let f = function(e) {
     renderRow: n,
     renderSection: f,
     hasSearchQuery: g,
-    sectionFilter: h,
-    footer: m,
+    sectionFilter: m,
+    footer: h,
     renderSectionFooter: b
   } = e, _ = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
     id: "people",
     isEnabled: _,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), v = h !== d.pJs.ONLINE && h !== d.pJs.ALL, y = E || g || v, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
+  }), v = m !== d.pJs.ONLINE && m !== d.pJs.ALL, y = E || g || v, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
     children: [f(t), e.map(e => n(e, t)), null == b ? true : b(t)]
   }, t) : (0, r.jsxs)(s.W, {
     transitionAppear: false,
@@ -77,7 +77,7 @@ let f = function(e) {
           ref: i,
           className: p.peopleList
         }, l), n = n = {
-          children: [I, m]
+          children: [I, h]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

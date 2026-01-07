@@ -72,11 +72,11 @@ function p(e) {
 }
 
 function g() {
-  let e = Chunk473749.useRef(null);
-  return (0, Chunk54381.jsx)(Chunk481060.yRy, {
-    targetElementRef: module,
+  let e = i.useRef(null);
+  return (0, r.jsx)(o.yRy, {
+    targetElementRef: e,
     align: "right",
-    animation: Chunk481060.yRy.Animation.NONE,
+    animation: o.yRy.Animation.NONE,
     position: "bottom",
     renderPopout: e => {
       let {

@@ -9,6 +9,6 @@ var Chunk473749 = require("./473749.js"),
   Chunk767436 = require("./767436.js");
 
 function o() {
-  var e = (0, Chunk473749.useContext)(Chunk767436.L).dragDropManager;
-  return (0, Chunk573654.k)(null != module, "Expected drag drop context"), module
+  var e = (0, r.useContext)(a.L).dragDropManager;
+  return (0, i.k)(null != e, "Expected drag drop context"), e
 }

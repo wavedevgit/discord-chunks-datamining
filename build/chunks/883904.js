@@ -24,7 +24,7 @@ let i = (e, t) => {
     })
   },
   o = () => {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "DCF_RESET"
     })
   },

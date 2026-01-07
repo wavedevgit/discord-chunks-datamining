@@ -184,7 +184,7 @@ class P extends(s = Chunk442837.ZP.PersistedStore) {
   }
   get pipWindow() {
     var e, t, n;
-    return null == r && null == i && null == a && null == o ? null : h.get(null != (n = null != (t = null != (e = null != r ? r : i) ? module : a) ? exports : o) ? require : "")
+    return null == r && null == i && null == a && null == o ? null : h.get(null != (n = null != (t = null != (e = null != r ? r : i) ? e : a) ? t : o) ? n : "")
   }
   get pipVideoWindow() {
     return null == r ? null : h.get(r)

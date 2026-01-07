@@ -77,9 +77,9 @@ class m extends(r = Chunk473749.Component) {
         role: o,
         tabIndex: s,
         ignoreKeyPress: l
-      } = module,
-      c = p(module, ["tag", "focusProps", "innerRef", "onClick", "role", "tabIndex", "ignoreKeyPress"]);
-    return Chunk473749.createElement(exports, u({
+      } = e,
+      c = p(e, ["tag", "focusProps", "innerRef", "onClick", "role", "tabIndex", "ignoreKeyPress"]);
+    return a.createElement(t, u({
       ref: this.setRef
     }, c))
   }
@@ -93,20 +93,20 @@ class m extends(r = Chunk473749.Component) {
         focusProps: o,
         innerRef: s,
         ignoreKeyPress: l
-      } = module,
-      c = p(module, ["tag", "onClick", "className", "children", "focusProps", "innerRef", "ignoreKeyPress"]);
-    return null == require ? Chunk473749.createElement(exports, u({
+      } = e,
+      c = p(e, ["tag", "onClick", "className", "children", "focusProps", "innerRef", "ignoreKeyPress"]);
+    return null == n ? a.createElement(t, u({
       ref: this.setRef,
       className: r
-    }, c), Chunk54381) : Chunk473749.createElement(exports, u({
-      onClick: require,
+    }, c), i) : a.createElement(t, u({
+      onClick: n,
       ref: this.setRef,
       onKeyPress: this.handleKeyPress,
       className: r
-    }, c), Chunk54381)
+    }, c), i)
   }
   render() {
-    return this.context ? this.renderNonInteractive() : (0, Chunk54381.jsx)(Chunk155127.tE, f(u({}, this.props.focusProps), {
+    return this.context ? this.renderNonInteractive() : (0, i.jsx)(s.tE, f(u({}, this.props.focusProps), {
       children: this.renderInner()
     }))
   }

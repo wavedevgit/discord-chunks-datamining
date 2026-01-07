@@ -69,19 +69,19 @@ class E {
     for (let n of e.guilds) this.handleOneGuildCreate(n, t)
   }
   async handlePostConnectionOpen() {
-    let e = Chunk38618.Z.lastTimeConnectedChanged(),
-      t = Chunk287328.Z.database();
-    if (null == this.synced || null == exports || !(0, Chunk768433.O)()) return;
-    let n = Chunk430824.Z.getGuildIds(),
-      r = require.filter(e => !this.synced.has(e));
-    for (let i of (g.verbose("scheduling basic_channel optimstic writes (guilds: ".concat(Chunk149765.length, ")")), require)) {
-      if (null == this.synced || exports !== Chunk287328.Z.database() || module !== Chunk38618.Z.lastTimeConnectedChanged()) break;
-      if (!this.synced.has(Chunk768433)) {
-        g.verbose("optimstically writing basic_channels (guild: ".concat(Chunk768433, ")"));
+    let e = o.Z.lastTimeConnectedChanged(),
+      t = _.Z.database();
+    if (null == this.synced || null == t || !(0, i.O)()) return;
+    let n = d.Z.getGuildIds(),
+      r = n.filter(e => !this.synced.has(e));
+    for (let i of (g.verbose("scheduling basic_channel optimstic writes (guilds: ".concat(r.length, ")")), n)) {
+      if (null == this.synced || t !== _.Z.database() || e !== o.Z.lastTimeConnectedChanged()) break;
+      if (!this.synced.has(i)) {
+        g.verbose("optimstically writing basic_channels (guild: ".concat(i, ")"));
         try {
-          await Chunk592125.o.loadGuildIds([Chunk768433]), await exports.transaction(e => this.syncOne(i, e), "handlePostConnectionOpen")
+          await c.o.loadGuildIds([i]), await t.transaction(e => this.syncOne(i, e), "handlePostConnectionOpen")
         } catch (e) {
-          g.warn("couldn't optimstically write basic_channel:", module);
+          g.warn("couldn't optimstically write basic_channel:", e);
           return
         }
         await new Promise(e => setTimeout(e, 1e3))

@@ -18,9 +18,9 @@ class p extends Chunk473749.PureComponent {
     let {
       label: e
     } = this.props;
-    return m.includes(module) ? (0, Chunk54381.jsx)(Chunk4912.Z, {
-      color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css,
-      className: Chunk101713.valueIcon
+    return m.includes(e) ? (0, r.jsx)(d.Z, {
+      color: o.Z.unsafe_rawColors.YELLOW_300.css,
+      className: u.valueIcon
     }) : null
   }
   render() {
@@ -32,35 +32,35 @@ class p extends Chunk473749.PureComponent {
       label: i,
       renderGraph: o
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      className: l()(Chunk101713.item, exports),
-      direction: Chunk600164.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(c.Z, {
+      className: l()(u.item, t),
+      direction: c.Z.Direction.VERTICAL,
       basis: "50%",
-      children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
-        className: Chunk101713.kvContainer,
-        align: Chunk600164.Z.Align.START,
-        children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
-          children: (0, Chunk54381.jsx)(Chunk481060.H, {
-            className: Chunk101713.title,
-            children: module
+      children: [(0, r.jsxs)(c.Z, {
+        className: u.kvContainer,
+        align: c.Z.Align.START,
+        children: [(0, r.jsx)(c.Z.Child, {
+          children: (0, r.jsx)(s.H, {
+            className: u.title,
+            children: e
           })
-        }), Array.isArray(require) ? (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
+        }), Array.isArray(n) ? (0, r.jsx)(c.Z.Child, {
           grow: 1,
-          children: require
-        }) : (0, Chunk54381.jsxs)(Chunk600164.Z.Child, {
+          children: n
+        }) : (0, r.jsxs)(c.Z.Child, {
           grow: 0,
           shrink: 0,
-          children: [this.renderValueIcon(), (0, Chunk54381.jsx)("span", {
-            className: Chunk101713.itemValue,
-            title: require,
-            children: require
+          children: [this.renderValueIcon(), (0, r.jsx)("span", {
+            className: u.itemValue,
+            title: n,
+            children: n
           })]
         })]
-      }), null !== Chunk692547 && (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
-        className: Chunk101713.graph,
-        children: Chunk692547
-      }, null != Chunk473749 ? "".concat(Chunk473749, "-").concat(Chunk120356) : Chunk120356), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk101713.divider
+      }), null !== o && (0, r.jsx)(c.Z.Child, {
+        className: u.graph,
+        children: o
+      }, null != a ? "".concat(a, "-").concat(i) : i), (0, r.jsx)(s.izJ, {
+        className: u.divider
       })]
     })
   }

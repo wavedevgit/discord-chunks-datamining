@@ -19,76 +19,76 @@ let u = {
 };
 
 function d() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk715987.socialLinks,
-    children: [(0, Chunk54381.jsx)(Chunk481060.eee, {
+  return (0, r.jsxs)("div", {
+    className: c.socialLinks,
+    children: [(0, r.jsx)(i.eee, {
       target: "_blank",
       tabIndex: false,
       rel: "author",
       title: "X",
-      href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
-      className: Chunk715987.link,
+      href: (0, a.Z)(l.RK.TWITTER),
+      className: c.link,
       focusProps: u,
-      children: (0, Chunk54381.jsx)(Chunk481060.TAi, {
+      children: (0, r.jsx)(i.TAi, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk715987.foreground,
+        colorClass: c.foreground,
         "aria-hidden": true
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.eee, {
+    }), (0, r.jsx)(i.eee, {
       target: "_blank",
       rel: "author",
       title: "Instagram",
       tabIndex: false,
-      href: Chunk981631.fK7.INSTAGRAM_URL,
-      className: Chunk715987.link,
+      href: l.fK7.INSTAGRAM_URL,
+      className: c.link,
       focusProps: u,
-      children: (0, Chunk54381.jsx)(Chunk481060.gST, {
+      children: (0, r.jsx)(i.gST, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk715987.foreground,
+        colorClass: c.foreground,
         "aria-hidden": true
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.eee, {
+    }), (0, r.jsx)(i.eee, {
       target: "_blank",
       rel: "author",
       title: "Facebook",
       tabIndex: false,
-      href: Chunk981631.fK7.FACEBOOK_URL,
-      className: Chunk715987.link,
+      href: l.fK7.FACEBOOK_URL,
+      className: c.link,
       focusProps: u,
-      children: (0, Chunk54381.jsx)(Chunk481060.tdR, {
+      children: (0, r.jsx)(i.tdR, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk715987.foreground,
+        colorClass: c.foreground,
         "aria-hidden": true
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.eee, {
+    }), (0, r.jsx)(i.eee, {
       target: "_blank",
       rel: "author",
       title: "YouTube",
       tabIndex: false,
-      href: Chunk981631.fK7.YOUTUBE_URL,
-      className: Chunk715987.link,
+      href: l.fK7.YOUTUBE_URL,
+      className: c.link,
       focusProps: u,
-      children: (0, Chunk54381.jsx)(Chunk58839.Z, {
+      children: (0, r.jsx)(s.Z, {
         width: 16,
         height: 16,
-        foreground: Chunk715987.foreground,
+        foreground: c.foreground,
         "aria-hidden": true
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.eee, {
+    }), (0, r.jsx)(i.eee, {
       target: "_blank",
       rel: "author",
       title: "TikTok",
       tabIndex: false,
-      href: Chunk981631.fK7.TIKTOK_URL,
-      className: Chunk715987.link,
+      href: l.fK7.TIKTOK_URL,
+      className: c.link,
       focusProps: u,
-      children: (0, Chunk54381.jsx)(Chunk447293.Z, {
+      children: (0, r.jsx)(o.Z, {
         width: 16,
         height: 16,
-        foreground: Chunk715987.foreground,
+        foreground: c.foreground,
         "aria-hidden": true
       })
     })]

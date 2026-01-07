@@ -114,7 +114,7 @@ let F = e => {
 function V() {
   let e, t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
     n = window.GLOBAL_ENV.GIFT_CODE_HOST;
-  return null != require ? e = "/".concat(exports) : (n = location.host, e = "/gifts/".concat(exports)), "".concat(location.protocol, "//").concat(require).concat(module)
+  return null != n ? e = "/".concat(t) : (n = location.host, e = "/gifts/".concat(t)), "".concat(location.protocol, "//").concat(n).concat(e)
 }
 async function H(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],

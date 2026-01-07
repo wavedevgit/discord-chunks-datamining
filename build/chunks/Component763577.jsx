@@ -13,43 +13,43 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js");
 
 function u() {
-  let e = Object.keys(Chunk164617).map(e => (0, a.jsx)(f, {
+  let e = Object.keys(i).map(e => (0, a.jsx)(f, {
     riveName: e
   }, e));
-  return (0, Chunk54381.jsx)(Chunk793030.w0Z, {
+  return (0, a.jsx)(l.w0Z, {
     style: {
       maxHeight: "100%"
     },
-    children: (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+    children: (0, a.jsxs)(l.Kqy, {
       gap: 24,
       padding: 8,
       style: {
         boxSizing: "border-box"
       },
-      children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
+      children: [(0, a.jsx)(l.X6q, {
         variant: "heading-lg/medium",
         children: "Rive Inspector"
-      }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+      }), (0, a.jsx)(l.xvT, {
         variant: "text-md/normal",
         children: "Upload a .riv file to view the animation and interact with its data binding configuration."
-      }), (0, Chunk54381.jsx)(m, {}), (0, Chunk54381.jsx)(Chunk793030.X6q, {
+      }), (0, a.jsx)(m, {}), (0, a.jsx)(l.X6q, {
         variant: "heading-lg/medium",
         children: "Rive Overrides"
-      }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+      }), (0, a.jsx)(l.xvT, {
         variant: "text-md/normal",
         children: "Upload a .riv file to replace an existing Rive animation in the app with the new one. Useful for previewing updated versions of existing animations before uploading them via the Rive pipeline."
-      }), module]
+      }), e]
     })
   })
 }
 
 function m() {
-  let [e, t] = Chunk473749.useState(null), [n, i] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState([]), m = Chunk473749.useRef(null), [h, x] = Chunk473749.useState(400), [b, g] = Chunk473749.useState(400), v = Chunk473749.useCallback(() => {
+  let [e, t] = r.useState(null), [n, i] = r.useState(null), [s, o] = r.useState(null), [c, u] = r.useState([]), m = r.useRef(null), [h, x] = r.useState(400), [b, g] = r.useState(400), v = r.useCallback(() => {
     setTimeout(() => {
       var e, t, n, a;
-      Chunk333200(null != (n = null == (e = m.current) ? true : module.getProperties()) ? require : {}), u(null != (a = null == (t = m.current) ? true : exports.getArtboards()) ? Chunk54381 : []), Chunk164617({})
+      o(null != (n = null == (e = m.current) ? true : e.getProperties()) ? n : {}), u(null != (a = null == (t = m.current) ? true : t.getArtboards()) ? a : []), i({})
     }, 1e3)
-  }, []), j = Chunk473749.useCallback((e, t) => {
+  }, []), j = r.useCallback((e, t) => {
     null != n && i(n => {
       var a, r, i;
       return r = function(e) {
@@ -85,48 +85,48 @@ function m() {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r
     })
-  }, [Chunk692547, require]), C = Chunk473749.useCallback(e => {
+  }, [s, n]), C = r.useCallback(e => {
     o(null), i(null), t(e)
   }, []);
-  return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+  return (0, a.jsxs)(l.Kqy, {
     gap: 16,
-    children: [(0, Chunk54381.jsx)(f, {
+    children: [(0, a.jsx)(f, {
       riveName: "Rive inspector",
       onRiveLoad: C
-    }), null != module && (0, Chunk54381.jsx)("div", {
+    }), null != e && (0, a.jsx)("div", {
       style: {
         width: h,
         height: b
       },
-      children: (0, Chunk54381.jsx)(Chunk481060.BmE, {
-        src: module,
+      children: (0, a.jsx)(d.BmE, {
+        src: e,
         ref: m,
         onLoad: v,
-        dynamicDataBinding: null != require ? require : {}
+        dynamicDataBinding: null != n ? n : {}
       })
-    }), null != module && null == require ? (0, Chunk54381.jsx)(Chunk793030.$jN, {}) : null, null != require && (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
-      children: [(0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+    }), null != e && null == n ? (0, a.jsx)(l.$jN, {}) : null, null != n && (0, a.jsxs)(l.Kqy, {
+      children: [(0, a.jsxs)(l.Kqy, {
         gap: 8,
-        children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
+        children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/medium",
           children: "Dimensions"
-        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
+        }), (0, a.jsx)(d.oil, {
           type: "number",
           label: "width",
           value: h.toString(),
           onChange: e => x(parseInt(e))
-        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
+        }), (0, a.jsx)(d.oil, {
           type: "number",
           label: "height",
           value: b.toString(),
           onChange: e => g(parseInt(e))
         })]
-      }), (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+      }), (0, a.jsxs)(l.Kqy, {
         gap: 8,
-        children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
+        children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/medium",
           children: "Data Binding"
-        }), Object.keys(null != Chunk692547 ? Chunk692547 : {}).map(e => {
+        }), Object.keys(null != s ? s : {}).map(e => {
           var t, r, i, l;
           return (0, a.jsx)(p, {
             property: e,

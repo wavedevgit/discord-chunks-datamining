@@ -31,7 +31,7 @@ function o(e) {
 
 function s() {
   return {
-    sessionId: (0, Chunk772848.Z)(),
+    sessionId: (0, r.Z)(),
     searchQueryId: null
   }
 }

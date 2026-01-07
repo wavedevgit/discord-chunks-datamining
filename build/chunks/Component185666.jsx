@@ -16,10 +16,10 @@ var Chunk481060 = require("./481060.js"),
 let f = "INVITE_MODAL_KEY";
 class h extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), Chunk570140.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+    l.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
   _terminate() {
-    (0, Chunk481060.Mr3)(f), Chunk570140.Z.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), Chunk570140.Z.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+    (0, i.Mr3)(f), l.Z.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.Z.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
   handleOpenModal(e) {
     let {
@@ -61,7 +61,7 @@ class h extends Chunk317770.Z {
     })
   }
   handleCloseModal() {
-    (0, Chunk481060.Mr3)(f)
+    (0, i.Mr3)(f)
   }
 }
 let p = new h

@@ -19,7 +19,7 @@ class r {
   }
   drop() {
     var t;
-    null == (t = this.native) || module.drop(), this.native = null
+    null == (t = this.native) || t.drop(), this.native = null
   }
   requireFrame(t) {
     null != this.native && (this.renderedFrames.has(t) || (this.paint(t), this.renderedFrames.add(t)), this.renderedFrames.size === this.frameCount && this.drop())

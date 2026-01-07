@@ -14,9 +14,9 @@ let l = {
   comboKeysBindGlobal: true,
   action() {
     var e;
-    if (!Chunk19780.Z.isConnected()) returnfalse;
-    let t = null != (e = Chunk19780.Z.getGuildId()) ? module : Chunk981631.ME,
-      n = Chunk944486.Z.getChannelId(exports);
-    return (0, Chunk475468.K)(exports, require), Chunk925549.Z.channelListScrollTo(exports, Chunk19780.Z.getChannelId()), false
+    if (!a.Z.isConnected()) returnfalse;
+    let t = null != (e = a.Z.getGuildId()) ? e : s.ME,
+      n = o.Z.getChannelId(t);
+    return (0, i.K)(t, n), r.Z.channelListScrollTo(t, a.Z.getChannelId()), false
   }
 }

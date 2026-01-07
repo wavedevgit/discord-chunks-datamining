@@ -165,16 +165,16 @@ function p(e, t) {
     }
   }
 }
-p(720), p(1080), p(1440), p(0, () => Chunk388032.intl.string(Chunk388032.t.XjXqzh)), p(720), p(1080), p(1440);
+p(720), p(1080), p(1440), p(0, () => a.intl.string(a.t.XjXqzh)), p(720), p(1080), p(1440);
 let _ = e => 0 === e ? a.intl.string(a.t.XjXqzh) : a.intl.formatToPlainString(a.t.TEOC0I, {
     resolution: e
   }),
   m = [p(480, () => _(480)), p(720, () => _(720)), p(1080, () => _(1080)), p(1440, () => _(1440)), p(0, () => _(0))];
 p(15), p(30), p(60);
-let h = [p(15, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
+let h = [p(15, () => a.intl.formatToPlainString(a.t["bW+JCW"], {
   value: 15
-})), p(30, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
+})), p(30, () => a.intl.formatToPlainString(a.t["bW+JCW"], {
   value: 30
-})), p(60, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
+})), p(60, () => a.intl.formatToPlainString(a.t["bW+JCW"], {
   value: 60
 }))]

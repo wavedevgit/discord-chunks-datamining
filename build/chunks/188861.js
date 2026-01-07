@@ -15,7 +15,7 @@ let u = new Chunk710845.Z("RPCServer:PostMessage"),
     (i.default.isLoggingOverlayEvents || e.cmd !== c.Etm.OVERLAY) && t.info("Socket Message: ".concat(n.id), (0, l.Z)(e))
   },
   p = function() {
-    let e = new Chunk46832.Z(Chunk852926.em, u, Chunk748635.Z, d);
+    let e = new a.Z(o.em, u, s.Z, d);
     return window.addEventListener("message", t => {
       if (window === t.source) return;
       if (null == t.source || null == t.source.postMessage) return void u.error("Unknown event source");
@@ -31,5 +31,5 @@ let u = new Chunk710845.Z("RPCServer:PostMessage"),
           }
         }(n) && n.postMessage(e, t)
       })
-    }), module
+    }), e
   }()

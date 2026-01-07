@@ -11,20 +11,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk914010 = require("./914010.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk55361 = require("./55361.js");
-let u = () => (0, Chunk54381.jsx)(Chunk54381.Fragment, {
-    children: Chunk388032.intl.format(Chunk388032.t.ymkBti, {
-      shareIcon: Chunk388032.intl.string(Chunk388032.t.VINpSK),
-      shareIconHook: () => (0, Chunk54381.jsx)(Chunk481060.ejJ, {
-        className: Chunk55361.icon
+let u = () => (0, i.jsx)(i.Fragment, {
+    children: s.intl.format(s.t.ymkBti, {
+      shareIcon: s.intl.string(s.t.VINpSK),
+      shareIconHook: () => (0, i.jsx)(l.ejJ, {
+        className: c.icon
       }, "icon")
     })
   }),
   d = () => {
-    let e = (0, Chunk442837.e7)([Chunk430824.Z, Chunk914010.Z], () => Chunk430824.Z.getGuild(Chunk914010.Z.getGuildId()), []),
-      t = null == module ? true : module.name;
-    return (0, Chunk54381.jsx)(Chunk54381.Fragment, {
-      children: Chunk388032.intl.format(Chunk388032.t.oQuG3K, {
-        serverName: exports
+    let e = (0, r.e7)([a.Z, o.Z], () => a.Z.getGuild(o.Z.getGuildId()), []),
+      t = null == e ? true : e.name;
+    return (0, i.jsx)(i.Fragment, {
+      children: s.intl.format(s.t.oQuG3K, {
+        serverName: t
       })
     })
   },

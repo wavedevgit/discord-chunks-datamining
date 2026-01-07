@@ -19,10 +19,10 @@ function s(e, t, n) {
 }
 class c extends Chunk317770.Z {
   _initialize() {
-    Chunk928518.Z.addChangeListener(this.handlePopoutWindowChange), Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleMainWindowFocus)
+    o.Z.addChangeListener(this.handlePopoutWindowChange), l.Z.subscribe("WINDOW_FOCUS", this.handleMainWindowFocus)
   }
   _terminate() {
-    Chunk928518.Z.removeChangeListener(this.handlePopoutWindowChange), Chunk570140.Z.unsubscribe("WINDOW_FOCUS", this.handleMainWindowFocus), this.injectWindowAnimationFrame(window)
+    o.Z.removeChangeListener(this.handlePopoutWindowChange), l.Z.unsubscribe("WINDOW_FOCUS", this.handleMainWindowFocus), this.injectWindowAnimationFrame(window)
   }
   injectWindowAnimationFrame(e) {
     let t = t => e.requestAnimationFrame(t),

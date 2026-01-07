@@ -108,7 +108,7 @@ class B {
     var e;
     if (null == this.startTime) return null;
     let t = performance.now();
-    return (null != (e = this.endTime) ? module : exports) - this.startTime
+    return (null != (e = this.endTime) ? e : t) - this.startTime
   }
   constructor({
     streamRegion: e,
@@ -127,7 +127,7 @@ class V extends Chunk861687.Z {
     let {
       ownerId: e
     } = this.streamContext;
-    return Chunk314897.default.getId() === module
+    return g.default.getId() === e
   }
   destroy(e) {
     this.videoStreamStats.stop(), this.trackVideoEndStats(e), this.updateVideoStreamId.cancel(), this.updateVideoStreamId(null, null), this.updateVideoStreamId.flush(), this.errorTimer.stop(), super.destroy()
@@ -146,7 +146,7 @@ class V extends Chunk861687.Z {
     let {
       ownerId: e
     } = this.streamContext, t = this._videoQuality;
-    if (null != exports) {
+    if (null != t) {
       var n, r;
       let {
         duration: i,
@@ -154,13 +154,13 @@ class V extends Chunk861687.Z {
         avg_fps: o,
         avg_resolution: s,
         inbound_bitrate_estimate_percentile99: l
-      } = this.isOwner ? null != (n = exports.getOutboundStats()[0]) ? require : {} : null != (r = exports.getInboundStats(module)) ? Chunk392711 : {};
+      } = this.isOwner ? null != (n = t.getOutboundStats()[0]) ? n : {} : null != (r = t.getInboundStats(e)) ? r : {};
       return {
         duration: i,
-        avg_bitrate: Chunk46973,
-        avg_fps: Chunk379649,
-        avg_resolution: Chunk846519,
-        inbound_bitrate_estimate_percentile99: Chunk570140
+        avg_bitrate: a,
+        avg_fps: o,
+        avg_resolution: s,
+        inbound_bitrate_estimate_percentile99: l
       }
     }
     return null
@@ -198,7 +198,7 @@ class V extends Chunk861687.Z {
   }
   initializeEvents() {
     let e = false;
-    this.on(Chunk437263.z.State, (e, t, n) => {
+    this.on(u.z.State, (e, t, n) => {
       if (l.Z.dispatch(k(j({
           type: "RTC_CONNECTION_STATE",
           state: e
@@ -343,10 +343,10 @@ class V extends Chunk861687.Z {
           this.errorTimer.stop()
         })
       }
-    }), this.on(Chunk437263.z.Video, (t, n, r, i, a) => {
+    }), this.on(u.z.Video, (t, n, r, i, a) => {
       let o = (0, P.my)(this.streamKey);
       o.guildId === t && o.channelId === n && o.ownerId === r && (null == this.getMediaSessionId() || e || (this.trackVideoStartStats(), e = true), this.updateVideoStreamId(i, a))
-    }), this.on(Chunk437263.z.VideoSourceQualityChanged, (e, t, n, r, i, a) => {
+    }), this.on(u.z.VideoSourceQualityChanged, (e, t, n, r, i, a) => {
       var o;
       n === (null == (o = this._goLiveQualityManager) ? true : o.getUserID()) && (this.goliveCurrentMaxResolution = r), l.Z.dispatch({
         type: "MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED",
@@ -357,11 +357,11 @@ class V extends Chunk861687.Z {
         maxFrameRate: i,
         context: a
       })
-    }), this.on(Chunk437263.z.SecureFramesUpdate, () => {
-      Chunk570140.Z.dispatch({
+    }), this.on(u.z.SecureFramesUpdate, () => {
+      l.Z.dispatch({
         type: "RTC_CONNECTION_SECURE_FRAMES_UPDATE"
       })
-    }), this.on(Chunk437263.z.RosterMapUpdate, e => {
+    }), this.on(u.z.RosterMapUpdate, e => {
       l.Z.dispatch({
         type: "RTC_CONNECTION_ROSTER_MAP_UPDATE",
         userIds: e
@@ -388,34 +388,34 @@ class V extends Chunk861687.Z {
     } = this.analyticsContext, {
       ownerId: i,
       guildId: a
-    } = this.streamContext, o = Chunk936349.Z.getRegion(Chunk19780.Z.getHostname()), {
+    } = this.streamContext, o = S.Z.getRegion(v.Z.getHostname()), {
       gameName: s,
       gameId: l,
       exe: c,
       distributor: u,
       sku: d,
       gameMetadata: f
-    } = (0, Chunk581567.G8)(exports);
+    } = (0, m.G8)(t);
     return {
       channel_id: this.channelId,
       rtc_connection_id: this.getRTCConnectionId(),
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       sender_user_id: i,
-      context: Chunk65154.Yn.STREAM,
-      guild_id: Chunk46973,
-      stream_region: module,
-      stream_source_type: require,
-      guild_region: Chunk379649,
+      context: x.Yn.STREAM,
+      guild_id: a,
+      stream_region: e,
+      stream_source_type: n,
+      guild_region: o,
       participant_type: this.isOwner ? "streamer" : "receiver",
-      share_application_name: Chunk846519,
-      share_application_id: Chunk570140,
-      share_application_executable: Chunk861687,
-      share_application_distributor: Chunk437263,
-      share_application_distributor_game_id: Chunk583794,
-      share_application_game_metadata: Chunk435064,
+      share_application_name: s,
+      share_application_id: l,
+      share_application_executable: c,
+      share_application_distributor: u,
+      share_application_distributor_game_id: d,
+      share_application_game_metadata: f,
       video_layout: this.videoStreamStats.getLayout(),
-      client_event_source: Chunk392711,
+      client_event_source: r,
       voice_backend_version: this.voiceVersion,
       rtc_worker_backend_version: this.rtcWorkerVersion
     }
@@ -423,15 +423,15 @@ class V extends Chunk861687.Z {
   getSoundshareAnalyticsProperties() {
     return {
       rtc_connection_id: this.getRTCConnectionId(),
-      soundshare_experimental: Chunk131951.Z.getExperimentalSoundshare()
+      soundshare_experimental: y.Z.getExperimentalSoundshare()
     }
   }
   trackVideoStartStats() {
-    let e = this.isOwner ? (0, Chunk297733.Z)() : null;
-    Chunk626135.default.track(Chunk981631.rMx.VIDEO_STREAM_STARTED, k(j({}, this.getStreamAnalyticsProperties(), module), {
-      connection_type: Chunk866960.Z.getType(),
-      effective_connection_speed: Chunk866960.Z.getEffectiveConnectionSpeed(),
-      service_provider: Chunk866960.Z.getServiceProvider(),
+    let e = this.isOwner ? (0, w.Z)() : null;
+    T.default.track(D.rMx.VIDEO_STREAM_STARTED, k(j({}, this.getStreamAnalyticsProperties(), e), {
+      connection_type: O.Z.getType(),
+      effective_connection_speed: O.Z.getEffectiveConnectionSpeed(),
+      service_provider: O.Z.getServiceProvider(),
       duration_go_live_modal: this.analyticsContext.goLiveModalDurationMs,
       source_location_stack: this.analyticsContext.analyticsLocations
     }))
@@ -485,7 +485,7 @@ class V extends Chunk861687.Z {
   }
   getExtraConnectionOptions() {
     return {
-      streamUserId: (0, Chunk569545.my)(this.streamKey).ownerId
+      streamUserId: (0, P.my)(this.streamKey).ownerId
     }
   }
   constructor({

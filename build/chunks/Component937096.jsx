@@ -17,7 +17,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk372881 = require("./372881.js");
 
 function h() {
-  return (0, Chunk81643.Jm)() ? Chunk388032.intl.format(Chunk388032.t.iWGjcg, {
+  return (0, c.Jm)() ? b.intl.format(b.t.iWGjcg, {
     hook: e => (0, a.jsx)(i.eee, {
       className: f.anchor,
       onClick: e => {
@@ -26,7 +26,7 @@ function h() {
       useDefaultUnderlineStyles: false,
       children: e.join("")
     })
-  }) : Chunk388032.intl.format(Chunk388032.t.edpbxy, {
+  }) : b.intl.format(b.t.edpbxy, {
     hook: e => (0, a.jsx)(i.eee, {
       className: f.anchor,
       onClick: e => {

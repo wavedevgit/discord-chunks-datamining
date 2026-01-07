@@ -13,9 +13,9 @@ var Chunk442837 = require("./442837.js"),
 
 function c() {
   var e;
-  let t = Chunk695346.Xr.useSetting(),
-    n = Chunk695346.UP.useSetting(),
-    c = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    u = (0, Chunk312870.s)("use_derived_dm_spam_filter_setting");
-  return exports !== Chunk524437.Xr.DEFAULT_UNSET ? exports : (null == c ? true : c.nsfwAllowed) === false && u ? Chunk524437.Xr.FRIENDS_AND_NON_FRIENDS : null != (e = Chunk973005.O7.get(require)) ? module : Chunk524437.Xr.NON_FRIENDS
+  let t = s.Xr.useSetting(),
+    n = s.UP.useSetting(),
+    c = (0, r.e7)([a.default], () => a.default.getCurrentUser()),
+    u = (0, o.s)("use_derived_dm_spam_filter_setting");
+  return t !== i.Xr.DEFAULT_UNSET ? t : (null == c ? true : c.nsfwAllowed) === false && u ? i.Xr.FRIENDS_AND_NON_FRIENDS : null != (e = l.O7.get(n)) ? e : i.Xr.NON_FRIENDS
 }

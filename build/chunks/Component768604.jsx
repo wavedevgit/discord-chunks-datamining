@@ -45,14 +45,14 @@ function b(e) {
 
 function y() {
   var e;
-  let t = null == (e = (0, Chunk880257.Z)()) || module,
-    n = (0, Chunk915009.LN)(),
-    E = (0, Chunk666515.r)(),
+  let t = null == (e = (0, f.Z)()) || e,
+    n = (0, d.LN)(),
+    E = (0, u.r)(),
     {
       goreContentGuilds: y,
       goreContentFriendDm: O,
       goreContentNonFriendDm: v
-    } = (0, Chunk294602.K)(),
+    } = (0, c.K)(),
     S = e => {
       let t = Object.values(e);
       if ((0, s.Ks)() && t.includes(i.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal({
@@ -61,51 +61,51 @@ function y() {
       (0, l.Jr)(e)
     },
     I = [{
-      value: Chunk524437.Q4.BLUR,
-      label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
+      value: i.Q4.BLUR,
+      label: h.intl.string(h.t.S49Uad)
     }, {
-      value: Chunk524437.Q4.BLOCK,
-      label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
+      value: i.Q4.BLOCK,
+      label: h.intl.string(h.t["D/157Y"])
     }],
     T = [{
-      value: Chunk524437.Q4.BLUR,
-      label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
+      value: i.Q4.BLUR,
+      label: h.intl.string(h.t.S49Uad)
     }],
     C = {
-      value: Chunk524437.Q4.SHOW,
-      label: Chunk388032.intl.string(Chunk388032.t["5k5OFp"])
+      value: i.Q4.SHOW,
+      label: h.intl.string(h.t["5k5OFp"])
     };
-  exports && (I.unshift(C), T.unshift(C));
+  t && (I.unshift(C), T.unshift(C));
   let A = {
     isDisabled: E,
-    tooltipText: require ? Chunk388032.intl.string(Chunk517319.default["6Af/cw"]) : true
+    tooltipText: n ? h.intl.string(g.default["6Af/cw"]) : true
   };
-  return (0, Chunk54381.jsxs)(Chunk400313.n, {
-    setting: Chunk726985.s6.GORE_MEDIA_REDACTION,
-    description: Chunk388032.intl.string(Chunk388032.t.XgH9eh),
-    children: [(0, Chunk54381.jsx)(Chunk947707.Z, b({
-      title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
+  return (0, r.jsxs)(p.n, {
+    setting: m.s6.GORE_MEDIA_REDACTION,
+    description: h.intl.string(h.t.XgH9eh),
+    children: [(0, r.jsx)(_.Z, b({
+      title: h.intl.string(h.t["+uI23H"]),
       value: O,
       onChange: e => S({
         goreContentFriendDm: e
       }),
       options: I
-    }, A)), (0, Chunk54381.jsx)(Chunk947707.Z, b({
-      title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
+    }, A)), (0, r.jsx)(_.Z, b({
+      title: h.intl.string(h.t["Yh+HX1"]),
       value: v,
       onChange: e => S({
         goreContentNonFriendDm: e
       }),
       options: I
-    }, A)), (0, Chunk54381.jsx)(Chunk947707.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["FP+a42"]),
+    }, A)), (0, r.jsx)(_.Z, {
+      title: h.intl.string(h.t["FP+a42"]),
       value: y,
       onChange: e => S({
         goreContentGuilds: e
       }),
-      isDisabled: !exports || E,
+      isDisabled: !t || E,
       options: T,
-      tooltipText: require ? Chunk388032.intl.string(Chunk517319.default["6Af/cw"]) : true
+      tooltipText: n ? h.intl.string(g.default["6Af/cw"]) : true
     })]
   })
 }

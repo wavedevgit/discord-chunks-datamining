@@ -26,7 +26,7 @@ function O(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, o.e7)([h.default], () => h.default.getCurrentUser()), v = i.useRef(null), y = (0, o.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
+  } = e, O = (0, o.e7)([m.default], () => m.default.getCurrentUser()), v = i.useRef(null), y = (0, o.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({
@@ -35,7 +35,7 @@ function O(e) {
     size: S,
     color: "currentColor"
   }), [S]);
-  return (0, r.jsx)(m.k, {
+  return (0, r.jsx)(h.k, {
     targetElementRef: v,
     onOpen: t,
     onClose: n,

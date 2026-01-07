@@ -10,18 +10,18 @@ var Chunk695170 = require("./695170.js"),
       if (isNaN(e.getTime())) throw RangeError("Invalid date passed to DateWithZone");
       this.date = e, this.tzid = t
     }
-    return Object.defineProperty(module.prototype, "isUTC", {
+    return Object.defineProperty(e.prototype, "isUTC", {
       get: function() {
         return !this.tzid || "UTC" === this.tzid.toUpperCase()
       },
       enumerable: false,
       configurable: true
-    }), module.prototype.toString = function() {
-      var e = (0, Chunk695170.Od)(this.date.getTime(), this.isUTC);
-      return this.isUTC ? ":".concat(module) : ";TZID=".concat(this.tzid, ":").concat(module)
-    }, module.prototype.getTime = function() {
+    }), e.prototype.toString = function() {
+      var e = (0, r.Od)(this.date.getTime(), this.isUTC);
+      return this.isUTC ? ":".concat(e) : ";TZID=".concat(this.tzid, ":").concat(e)
+    }, e.prototype.getTime = function() {
       return this.date.getTime()
-    }, module.prototype.rezonedDate = function() {
-      return this.isUTC ? this.date : (0, Chunk695170.ZY)(this.date, this.tzid)
-    }, module
+    }, e.prototype.rezonedDate = function() {
+      return this.isUTC ? this.date : (0, r.ZY)(this.date, this.tzid)
+    }, e
   }()

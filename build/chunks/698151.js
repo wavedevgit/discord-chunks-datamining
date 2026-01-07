@@ -12,16 +12,16 @@ var Chunk924557 = require("./924557.js"),
   Chunk759743 = require("./759743.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.k4)(Chunk313789.n.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.sA0WKL),
+  useTitle: () => T.intl.string(T.t.sA0WKL),
   usePredicate: () => {
     let {
       enableAdvancedSignals: t
-    } = Chunk924557.NV.useExperiment({
+    } = i.NV.useExperiment({
       location: "ClipsAutomaticClippingCategory"
     }, {
       autoTrackExposure: false
     });
-    return module
+    return t
   },
-  buildLayout: () => [Chunk161799.z, Chunk758620.C, Chunk90235.f, Chunk759743.a]
+  buildLayout: () => [u.z, r.C, a.f, o.a]
 })

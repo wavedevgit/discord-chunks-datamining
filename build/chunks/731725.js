@@ -19,7 +19,7 @@ function o(e, t, n) {
 let s = 512;
 class l {
   getAssetURL() {
-    return this.type === Chunk666572.e.MANAGED ? (0, Chunk81063.xF)(this.applicationId, this.assetId, s) : this.type === Chunk666572.e.QUICK ? (0, Chunk649256.xB)(this.assetPath) : true
+    return this.type === r.e.MANAGED ? (0, i.xF)(this.applicationId, this.assetId, s) : this.type === r.e.QUICK ? (0, a.xB)(this.assetPath) : true
   }
   constructor(e) {
     var t;

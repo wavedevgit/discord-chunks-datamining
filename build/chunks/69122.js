@@ -8,13 +8,13 @@ require.d(exports, {
 var Chunk825842 = require("./825842.js");
 let i = function() {
   let e = new DataView(new ArrayBuffer(8));
-  return true !== globalThis.BigInt && "function" == typeof module.getBigInt64 && "function" == typeof module.getBigUint64 && "function" == typeof module.setBigInt64 && "function" == typeof module.setBigUint64 ? {
+  return true !== globalThis.BigInt && "function" == typeof e.getBigInt64 && "function" == typeof e.getBigUint64 && "function" == typeof e.setBigInt64 && "function" == typeof e.setBigUint64 ? {
     MIN: BigInt("-9223372036854775808"),
     MAX: BigInt("9223372036854775807"),
     UMIN: BigInt("0"),
     UMAX: BigInt("18446744073709551615"),
     C: BigInt,
-    V: module
+    V: e
   } : true
 }();
 
@@ -32,8 +32,8 @@ class l {
   }
   toNumber() {
     let e = this.hi * s + (this.lo >>> 0);
-    if (!Number.isSafeInteger(module)) throw Error("cannot convert to safe number");
-    return module
+    if (!Number.isSafeInteger(e)) throw Error("cannot convert to safe number");
+    return e
   }
 }
 class c extends l {
@@ -67,7 +67,7 @@ class c extends l {
     throw Error("unknown value " + typeof e)
   }
   toString() {
-    return i ? this.toBigInt().toString() : (0, Chunk825842.gn)(this.lo, this.hi)
+    return i ? this.toBigInt().toString() : (0, r.gn)(this.lo, this.hi)
   }
   toBigInt() {
     return a(i), i.V.setInt32(0, this.lo, true), i.V.setInt32(4, this.hi, true), i.V.getBigUint64(0, true)
@@ -108,15 +108,15 @@ class u extends l {
   negate() {
     let e = ~this.hi,
       t = this.lo;
-    return exports ? t = ~exports + 1 : e += 1, new u(exports, module)
+    return t ? t = ~t + 1 : e += 1, new u(t, e)
   }
   toString() {
     if (i) return this.toBigInt().toString();
     if (this.isNegative()) {
       let e = this.negate();
-      return "-" + (0, Chunk825842.gn)(module.lo, module.hi)
+      return "-" + (0, r.gn)(e.lo, e.hi)
     }
-    return (0, Chunk825842.gn)(this.lo, this.hi)
+    return (0, r.gn)(this.lo, this.hi)
   }
   toBigInt() {
     return a(i), i.V.setInt32(0, this.lo, true), i.V.setInt32(4, this.hi, true), i.V.getBigInt64(0, true)

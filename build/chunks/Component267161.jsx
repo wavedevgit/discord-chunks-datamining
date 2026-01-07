@@ -60,40 +60,40 @@ function B(e) {
   })
 }
 let V = Chunk473749.memo(function() {
-  Chunk473749.useLayoutEffect(() => {
-    Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
+  i.useLayoutEffect(() => {
+    D.ZP.setMinimumSize(U.J, U.N)
   }, []);
   let {
     notificationCenterVariant: e,
     entrypoint: t
-  } = (0, Chunk821020.pN)({
+  } = (0, N.pN)({
     location: "AppTitleBar"
   }), {
     titlebarFastTravel: n,
     quickSwitcherInsteadOfTitle: l
-  } = (0, Chunk336219.t)({
+  } = (0, _.t)({
     location: "AppTitleBar"
   }), {
     backForwardButtons: o,
     titlebarIconSize: O
-  } = (0, Chunk719961.T)({
+  } = (0, b.T)({
     location: "AppTitleBar"
   }), {
     hasBugReporterAccess: T
-  } = Chunk174556.Z.useExperiment({
+  } = f.Z.useExperiment({
     location: "HeaderBar"
   }, {
     autoTrackExposure: false
   }), {
     enabled: H
-  } = Chunk99977.c.useConfig({
+  } = g.c.useConfig({
     location: "AppTitleBar"
-  }), V = (0, Chunk442837.e7)([Chunk906467.Z], () => Chunk906467.Z.isDeveloper), F = (0, Chunk442837.e7)([Chunk695103.Z, Chunk812206.Z], () => Chunk695346.Sb.getSetting() && null != Chunk695103.Z.testModeApplicationId && null != Chunk812206.Z.getApplication(Chunk695103.Z.testModeApplicationId) && (0, Chunk870822.Z)(Chunk812206.Z.getApplication(Chunk695103.Z.testModeApplicationId))), z = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, Y = null === module;
-  Chunk473749.useLayoutEffect(() => {
-    Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
+  }), V = (0, s.e7)([w.Z], () => w.Z.isDeveloper), F = (0, s.e7)([L.Z, d.Z], () => Z.Sb.getSetting() && null != L.Z.testModeApplicationId && null != d.Z.getApplication(L.Z.testModeApplicationId) && (0, p.Z)(d.Z.getApplication(L.Z.testModeApplicationId))), z = null !== e && t === N.u3.TITLE_BAR_LEFT, Y = null === e;
+  i.useLayoutEffect(() => {
+    D.ZP.setMinimumSize(U.J, U.N)
   }, []);
-  let W = (0, Chunk984802.Ll)(),
-    q = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
+  let W = (0, A.Ll)(),
+    q = (0, s.e7)([R.Z, P.Z], () => (0, M.rB)()),
     K = function(e) {
       let {
         showBackForwardButtons: t,
@@ -103,16 +103,16 @@ let V = Chunk473749.memo(function() {
       } = e;
       return i.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : r ? "TITLEBAR_FAST_TRAVEL" : l ? "RECENTS" : "HELP", [t, n, r, l])
     }({
-      showBackForwardButtons: Chunk663042,
+      showBackForwardButtons: o,
       showNotificationsInbox: z,
-      titlebarFastTravel: require,
+      titlebarFastTravel: n,
       showRecentsButton: Y
     });
   if (q) return null;
-  let Q = a()(Chunk428754.button, {
-    [Chunk428754.smallButton]: "sm" === Chunk257966
+  let Q = a()(G.button, {
+    [G.smallButton]: "sm" === O
   });
-  return (0, Chunk54381.jsx)(Chunk481060.Wdt, {
+  return (0, r.jsx)(c.Wdt, {
     children: e => (0, r.jsx)(c.f6W, {
       theme: W,
       children: t => {
@@ -134,9 +134,9 @@ let V = Chunk473749.memo(function() {
           trailing: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(v.Z, {
               className: Q
-            }), H && (0, r.jsx)(h.Z, {
+            }), H && (0, r.jsx)(m.Z, {
               className: Q
-            }), (0, r.jsx)(m.Z, {
+            }), (0, r.jsx)(h.Z, {
               canShowReminder: true,
               className: Q
             }), Y && (0, r.jsx)(x.Z, (i = function(e) {

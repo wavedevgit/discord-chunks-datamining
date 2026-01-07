@@ -12,7 +12,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk865121 = require("./865121.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.vB)(Chunk313789.n.DEVELOPER_SECTION, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.CbItOL),
-  usePredicate: () => (0, Chunk526665.NT)("DeveloperSection") || Chunk906467.Z.isDeveloper,
-  buildLayout: () => [Chunk965557.d, Chunk713602.B, Chunk865121.T]
+  useTitle: () => T.intl.string(T.t.CbItOL),
+  usePredicate: () => (0, u.NT)("DeveloperSection") || l.Z.isDeveloper,
+  buildLayout: () => [a.d, r.B, o.T]
 })

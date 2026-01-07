@@ -52,8 +52,8 @@ class c extends(s = Chunk473749.PureComponent) {
     } = this.props, {
       loaded: f
     } = this.state;
-    return (0, Chunk54381.jsx)("div", {
-      className: require,
+    return (0, n.jsx)("div", {
+      className: i,
       style: (t = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var i = null != arguments[e] ? arguments[e] : {},
@@ -66,26 +66,26 @@ class c extends(s = Chunk473749.PureComponent) {
         }
         return t
       }({}, u), e = e = {
-        width: Chunk120356,
+        width: a,
         height: c
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(t, e) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
         var i = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
           var s = Object.getOwnPropertySymbols(t);
           i.push.apply(i, s)
         }
         return i
-      })(Object(exports)).forEach(function(i) {
+      })(Object(e)).forEach(function(i) {
         Object.defineProperty(t, i, Object.getOwnPropertyDescriptor(e, i))
-      }), module),
-      children: (0, Chunk54381.jsx)("img", {
-        className: h()(Chunk445373.image, p, {
-          [Chunk445373.loaded]: f
+      }), t),
+      children: (0, n.jsx)("img", {
+        className: h()(l.image, p, {
+          [l.loaded]: f
         }),
-        width: Chunk120356,
+        width: a,
         height: c,
         src: s,
-        alt: Chunk473749,
+        alt: r,
         onLoad: d
       })
     })

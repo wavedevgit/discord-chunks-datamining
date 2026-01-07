@@ -25,8 +25,8 @@ class f extends(r = Chunk473749.PureComponent) {
       onInterval: t
     } = this.props;
     this._interval = setInterval(() => {
-      this.forceUpdate(), null == exports || exports()
-    }, module)
+      this.forceUpdate(), null == t || t()
+    }, e)
   }
   componentWillUnmount() {
     null != this._interval && clearInterval(this._interval)
@@ -57,13 +57,13 @@ class f extends(r = Chunk473749.PureComponent) {
       className: n,
       stopAtOneSec: r
     } = this.props;
-    if (module === 1 / 0) return (0, Chunk54381.jsx)("span", {
-      className: require,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.PqEzn8),
+    if (e === 1 / 0) return (0, i.jsx)("span", {
+      className: n,
+      "aria-label": s.intl.string(s.t.PqEzn8),
       children: "∞"
     });
-    let a = (0, Chunk55935.TD)(Date.now(), module, r);
-    return null != exports ? exports(Chunk473749, this.defaultRender.bind(this, Chunk473749)) : this.defaultRender(Chunk473749)
+    let a = (0, c.TD)(Date.now(), e, r);
+    return null != t ? t(a, this.defaultRender.bind(this, a)) : this.defaultRender(a)
   }
   constructor(...e) {
     super(...e), d(this, "_interval", true)

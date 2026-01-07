@@ -86,7 +86,7 @@ class q extends Chunk473749.PureComponent {
       channelFollowingUsersSeen: t,
       channel: n
     } = this.props;
-    module && null == exports && Chunk528963.Z.fetchChannelFollowerStats(require.id)
+    e && null == t && p.Z.fetchChannelFollowerStats(n.id)
   }
   componentDidUpdate(e) {
     let {
@@ -124,44 +124,44 @@ class q extends Chunk473749.PureComponent {
       shouldShowLurkerModeUpsellPopout: E,
       shouldShowLurkerModeSuccessPopout: j
     } = this.state, S = {
-      theme: Chunk893776,
-      useReducedMotion: Chunk881952
+      theme: d,
+      useReducedMotion: b
     };
-    if (module && !Chunk749210) {
-      if (Chunk657352.message = Chunk388032.intl.string(Chunk388032.t.Hl0Mqh), null != Chunk607070 && Chunk607070 >= 1e3) {
-        let e = 1e3 * Math.floor(Chunk607070 / 1e3);
-        Chunk657352.subtitle = Chunk388032.intl.formatToPlainString(Chunk388032.t.C5bgrC, {
-          count: module.toLocaleString()
+    if (e && !f) {
+      if (S.message = H.intl.string(H.t.Hl0Mqh), null != h && h >= 1e3) {
+        let e = 1e3 * Math.floor(h / 1e3);
+        S.subtitle = H.intl.formatToPlainString(H.t.C5bgrC, {
+          count: e.toLocaleString()
         })
       }
-      Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t["3aOv+h"]), Chunk657352.onButtonClick = this.handleFollowAnnouncement, exports && (Chunk657352.onSecondaryButtonClick = this.handleJoinServer, Chunk657352.secondaryButtonText = Chunk388032.intl.string(Chunk388032.t.RLch70))
-    } else if (require) Chunk657352.message = Chunk388032.intl.string(Chunk388032.t["Eg3/c9"]), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t.fiNVin), Chunk657352.onButtonClick = Chunk693546 ? this.handleShowMemberVerification : this.handleClaimAccount;
-    else if (Chunk693546) switch (null == Chunk983736 ? true : Chunk983736.applicationStatus) {
-        case Chunk246364.wB.SUBMITTED:
-          Chunk657352.message = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), Chunk657352.subtitle = Chunk388032.intl.string(Chunk388032.t.FdsK4h), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), Chunk657352.onButtonClick = this.handleCancelApplication;
+      S.buttonText = H.intl.string(H.t["3aOv+h"]), S.onButtonClick = this.handleFollowAnnouncement, t && (S.onSecondaryButtonClick = this.handleJoinServer, S.secondaryButtonText = H.intl.string(H.t.RLch70))
+    } else if (n) S.message = H.intl.string(H.t["Eg3/c9"]), S.buttonText = H.intl.string(H.t.fiNVin), S.onButtonClick = g ? this.handleShowMemberVerification : this.handleClaimAccount;
+    else if (g) switch (null == v ? true : v.applicationStatus) {
+        case y.wB.SUBMITTED:
+          S.message = H.intl.string(H.t["5iLvSx"]), S.subtitle = H.intl.string(H.t.FdsK4h), S.buttonText = H.intl.string(H.t.mqtdmQ), S.onButtonClick = this.handleCancelApplication;
           break;
-        case Chunk246364.wB.REJECTED:
-          Chunk657352.message = Chunk388032.intl.string(Chunk388032.t.lk30cY), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), Chunk657352.onButtonClick = this.handleViewApplicationRejection;
+        case y.wB.REJECTED:
+          S.message = H.intl.string(H.t.lk30cY), S.buttonText = H.intl.string(H.t["8RrsHr"]), S.onButtonClick = this.handleViewApplicationRejection;
           break;
         default:
-          Chunk657352.message = Chunk388032.intl.string(Chunk388032.t.rEBKvg), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), Chunk657352.buttonVariant = "primary", Chunk657352.onButtonClick = this.handleShowMemberVerification
-      } else if (Chunk937111 || null == Chunk270801) Chunk473749 && !Chunk305325 ? (Chunk657352.message = Chunk388032.intl.string(Chunk388032.t["2dThMM"]), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t["50gfOv"]), Chunk657352.onButtonClick = this.handleVerifyPhone) : Chunk512722 ? (Chunk657352.message = Chunk388032.intl.string(Chunk388032.t.FkGPS5), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t.lm1UKt), Chunk657352.onButtonClick = this.handleResendVerification) : a ? (Chunk657352.message = Chunk388032.intl.formatToPlainString(Chunk388032.t.IH7RMF, {
-        min: Chunk981631.YeM.MEMBER_AGE
-      }), Chunk657352.countdown = Chunk442837) : Chunk885387 && (Chunk657352.message = Chunk388032.intl.formatToPlainString(Chunk388032.t["2JA2GH"], {
-        min: Chunk981631.YeM.ACCOUNT_AGE
-      }), Chunk657352.countdown = Chunk248514);
+          S.message = H.intl.string(H.t.rEBKvg), S.buttonText = H.intl.string(H.t["r8/DT+"]), S.buttonVariant = "primary", S.onButtonClick = this.handleShowMemberVerification
+      } else if (x || null == O) r && !C ? (S.message = H.intl.string(H.t["2dThMM"]), S.buttonText = H.intl.string(H.t["50gfOv"]), S.onButtonClick = this.handleVerifyPhone) : l ? (S.message = H.intl.string(H.t.FkGPS5), S.buttonText = H.intl.string(H.t.lm1UKt), S.onButtonClick = this.handleResendVerification) : a ? (S.message = H.intl.formatToPlainString(H.t.IH7RMF, {
+        min: U.YeM.MEMBER_AGE
+      }), S.countdown = o) : s && (S.message = H.intl.formatToPlainString(H.t["2JA2GH"], {
+        min: U.YeM.ACCOUNT_AGE
+      }), S.countdown = c);
       else {
         var _;
-        Chunk657352.imageSrc = null != (_ = Chunk270801.getIconURL(Chunk701488.Si.SMALL)) ? Chunk33154 : true, Chunk657352.message = Chunk388032.intl.format(Chunk388032.t.EvDn1D, {
-          name: Chunk270801.name
-        }), null != Chunk270801.connectionEntrypointUrl && (Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t.S0W8Z5), Chunk657352.onButtonClick = () => {
-          window.open(Chunk270801.connectionEntrypointUrl, "_blank")
+        S.imageSrc = null != (_ = O.getIconURL(V.Si.SMALL)) ? _ : true, S.message = H.intl.format(H.t.EvDn1D, {
+          name: O.name
+        }), null != O.connectionEntrypointUrl && (S.buttonText = H.intl.string(H.t.S0W8Z5), S.onButtonClick = () => {
+          window.open(O.connectionEntrypointUrl, "_blank")
         })
-      } return (0, Chunk54381.jsx)(Chunk481060.yRy, {
+      } return (0, i.jsx)(u.yRy, {
       targetElementRef: this.textAreaContainerRef,
       position: "top",
       align: "left",
-      shouldShow: Chunk41776,
+      shouldShow: j,
       onRequestClose: () => this.setState({
         shouldShowLurkerModeSuccessPopout: false
       }),

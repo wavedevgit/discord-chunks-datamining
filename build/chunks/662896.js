@@ -16,8 +16,8 @@ function i(e, t, n) {
 }
 class a {
   async getAll() {
-    let e = Chunk287328.Z.guildsRequiringDeletedIdsSync();
-    return null == module ? new Set : new Set((await module.getMany()).map(e => e.id))
+    let e = r.Z.guildsRequiringDeletedIdsSync();
+    return null == e ? new Set : new Set((await e.getMany()).map(e => e.id))
   }
   handleConnectionOpen(e, t) {
     let {

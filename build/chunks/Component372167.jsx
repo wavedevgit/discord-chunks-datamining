@@ -15,8 +15,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk993874 = require("./993874.js");
 
 function p() {
-  (0, Chunk705338.default)({
-    guildId: (0, Chunk164670.ac)()
+  (0, c.default)({
+    guildId: (0, o.ac)()
   })
 }
 

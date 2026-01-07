@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk444942 = require("./444942.js");
 let x = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
-    hideValue: Chunk246946.Z.hideInstantInvites
+    hideValue: g.Z.hideInstantInvites
   }))(e => {
     let {
       value: t,

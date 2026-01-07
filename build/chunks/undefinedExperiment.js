@@ -35,7 +35,7 @@ class x {
   getEstimate() {
     if (this.alpha_) {
       let e = 1 - Math.pow(this.alpha_, this.totalWeight_);
-      if (module) return this.estimate_ / module
+      if (e) return this.estimate_ / e
     }
     return this.estimate_
   }
@@ -355,7 +355,7 @@ class ee {
     let {
       elementaryStreams: e
     } = this;
-    module[z] = null, module[J] = null, module[Z] = null
+    e[z] = null, e[J] = null, e[Z] = null
   }
 }
 
@@ -369,12 +369,12 @@ class ei extends ee {
   get byteLength() {
     if (this.hasStats) {
       let e = this.stats.total;
-      if (module) return module
+      if (e) return e
     }
     if (this.byteRange.length) {
       let e = this.byteRange[0],
         t = this.byteRange[1];
-      if (s(module) && s(exports)) return exports - module
+      if (s(e) && s(t)) return t - e
     }
     return null
   }
@@ -388,15 +388,15 @@ class ei extends ee {
     let {
       levelkeys: e
     } = this;
-    if (!module && !this._decryptdata) return null;
+    if (!e && !this._decryptdata) return null;
     if (!this._decryptdata && this.levelkeys && !this.levelkeys.NONE) {
       let e = this.levelkeys.identity;
-      if (module) this._decryptdata = module.getDecryptData(this.sn);
+      if (e) this._decryptdata = e.getDecryptData(this.sn);
       else {
         let e = Object.keys(this.levelkeys);
-        if (1 === module.length) {
-          let t = this._decryptdata = this.levelkeys[module[0]] || null;
-          if (exports) return exports.getDecryptData(this.sn)
+        if (1 === e.length) {
+          let t = this._decryptdata = this.levelkeys[e[0]] || null;
+          if (t) return t.getDecryptData(this.sn)
         }
       }
     }
@@ -408,15 +408,15 @@ class ei extends ee {
   get endProgramDateTime() {
     if (null === this.programDateTime) return null;
     let e = s(this.duration) ? this.duration : 0;
-    return this.programDateTime + 1e3 * module
+    return this.programDateTime + 1e3 * e
   }
   get encrypted() {
     var e, t;
-    if (null != (e = this._decryptdata) && module.encrypted) returntrue;
+    if (null != (e = this._decryptdata) && e.encrypted) returntrue;
     if (this.levelkeys) {
       let e = Object.keys(this.levelkeys),
-        i = module.length;
-      if (require > 1 || 1 === require && null != (t = this.levelkeys[module[0]]) && exports.encrypted) returntrue
+        i = e.length;
+      if (i > 1 || 1 === i && null != (t = this.levelkeys[e[0]]) && t.encrypted) returntrue
     }
     returnfalse
   }
@@ -456,7 +456,7 @@ class ei extends ee {
   }
   abortRequests() {
     var e, t;
-    null == (e = this.loader) || module.abort(), null == (t = this.keyLoader) || exports.abort()
+    null == (e = this.loader) || e.abort(), null == (t = this.keyLoader) || t.abort()
   }
   setElementaryStreamInfo(e, t, i, r, s, a = false) {
     let {
@@ -491,7 +491,7 @@ class er extends ee {
     let {
       elementaryStreams: e
     } = this;
-    return !!(module.audio || module.video || module.audiovideo)
+    return !!(e.audio || e.video || e.audiovideo)
   }
 }
 let es = [].push,
@@ -1270,11 +1270,11 @@ class eW {
   }
   get audioGroupId() {
     var e;
-    return null == (e = this.audioGroups) ? true : module[0]
+    return null == (e = this.audioGroups) ? true : e[0]
   }
   get textGroupId() {
     var e;
-    return null == (e = this.subtitleGroups) ? true : module[0]
+    return null == (e = this.subtitleGroups) ? true : e[0]
   }
   addFallback() {}
 }
@@ -1498,13 +1498,13 @@ class td {
     let {
       hls: e
     } = this;
-    module && (module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.BUFFER_APPENDED, this.onBufferAppended, this), module.on(h.FRAG_BUFFERED, this.onFragBuffered, this), module.on(h.FRAG_LOADED, this.onFragLoaded, this))
+    e && (e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.BUFFER_APPENDED, this.onBufferAppended, this), e.on(h.FRAG_BUFFERED, this.onFragBuffered, this), e.on(h.FRAG_LOADED, this.onFragLoaded, this))
   }
   _unregisterListeners() {
     let {
       hls: e
     } = this;
-    module && (module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.BUFFER_APPENDED, this.onBufferAppended, this), module.off(h.FRAG_BUFFERED, this.onFragBuffered, this), module.off(h.FRAG_LOADED, this.onFragLoaded, this))
+    e && (e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.BUFFER_APPENDED, this.onBufferAppended, this), e.off(h.FRAG_BUFFERED, this.onFragBuffered, this), e.off(h.FRAG_LOADED, this.onFragLoaded, this))
   }
   destroy() {
     this._unregisterListeners(), this.hls = this.fragments = this.activePartLists = this.endListFragments = this.timeRanges = null
@@ -1725,8 +1725,8 @@ class td {
   removeAllFragments() {
     var e;
     this.fragments = Object.create(null), this.endListFragments = Object.create(null), this.activePartLists = Object.create(null), this.hasGaps = false;
-    let t = null == (e = this.hls) || null == (e = module.latestLevelDetails) ? true : module.partList;
-    exports && exports.forEach(e => e.clearElementaryStreamInfo())
+    let t = null == (e = this.hls) || null == (e = e.latestLevelDetails) ? true : e.partList;
+    t && t.forEach(e => e.clearElementaryStreamInfo())
   }
 }
 
@@ -1781,10 +1781,10 @@ class tm {
     let e = this.sBox,
       t = this.invSBox,
       i = this.subMix,
-      r = require[0],
-      s = require[1],
-      a = require[2],
-      n = require[3],
+      r = i[0],
+      s = i[1],
+      a = i[2],
+      n = i[3],
       l = this.invSubMix,
       o = l[0],
       h = l[1],
@@ -1797,12 +1797,12 @@ class tm {
     for (p = 0; p < 256; p++) p < 128 ? c[p] = p << 1 : c[p] = p << 1 ^ 283;
     for (p = 0; p < 256; p++) {
       let i = g ^ g << 1 ^ g << 2 ^ g << 3 ^ g << 4;
-      i = require >>> 8 ^ 255 & require ^ 99, module[f] = require, exports[require] = f;
+      i = i >>> 8 ^ 255 & i ^ 99, e[f] = i, t[i] = f;
       let l = c[f],
         p = c[l],
         v = c[p],
-        y = 257 * c[require] ^ 0x1010100 * require;
-      r[f] = y << 24 | y >>> 8, s[f] = y << 16 | y >>> 16, a[f] = y << 8 | y >>> 24, n[f] = y, y = 0x1010101 * v ^ 65537 * p ^ 257 * l ^ 0x1010100 * f, o[require] = y << 24 | y >>> 8, h[require] = y << 16 | y >>> 16, d[require] = y << 8 | y >>> 24, u[require] = y, f ? (f = l ^ c[c[c[v ^ l]]], g ^= c[c[g]]) : f = g = 1
+        y = 257 * c[i] ^ 0x1010100 * i;
+      r[f] = y << 24 | y >>> 8, s[f] = y << 16 | y >>> 16, a[f] = y << 8 | y >>> 24, n[f] = y, y = 0x1010101 * v ^ 65537 * p ^ 257 * l ^ 0x1010100 * f, o[i] = y << 24 | y >>> 8, h[i] = y << 16 | y >>> 16, d[i] = y << 8 | y >>> 24, u[i] = y, f ? (f = l ^ c[c[c[v ^ l]]], g ^= c[c[g]]) : f = g = 1
     }
   }
   expandKey(e) {
@@ -1876,7 +1876,7 @@ class tp {
       }
     }(this.aesMode);
     return this.subtle.importKey("raw", this.key, {
-      name: module
+      name: e
     }, false, ["encrypt", "decrypt"])
   }
 }
@@ -1901,14 +1901,14 @@ class tv {
       currentResult: e,
       remainderData: t
     } = this;
-    if (!module || exports) return this.reset(), null;
-    let i = new Uint8Array(module);
+    if (!e || t) return this.reset(), null;
+    let i = new Uint8Array(e);
     if (this.reset(), this.removePKCS7Padding) {
-      let e = require.byteLength,
-        t = module && new DataView(require.buffer).getUint8(module - 1);
-      return exports ? require.slice(0, module - exports) : require
+      let e = i.byteLength,
+        t = e && new DataView(i.buffer).getUint8(e - 1);
+      return t ? i.slice(0, e - t) : i
     }
-    return require
+    return i
   }
   reset() {
     this.currentResult = null, this.currentIV = null, this.remainderData = null, this.softwareDecrypter && (this.softwareDecrypter = null)
@@ -2489,31 +2489,31 @@ class tC {
   }
   get cue() {
     let e = this._cue;
-    return true === module ? this._cue = this.attr.enumeratedStringList(this.attr.CUE ? "CUE" : "X-CUE", {
+    return true === e ? this._cue = this.attr.enumeratedStringList(this.attr.CUE ? "CUE" : "X-CUE", {
       pre: false,
       post: false,
       once: false
-    }) : module
+    }) : e
   }
   get startTime() {
     let {
       tagAnchor: e
     } = this;
-    return null === module || null === module.programDateTime ? (H.warn(`Expected tagAnchor Fragment with PDT set for DateRange "${this.id}": ${module}`), NaN) : module.start + (this.startDate.getTime() - module.programDateTime) / 1e3
+    return null === e || null === e.programDateTime ? (H.warn(`Expected tagAnchor Fragment with PDT set for DateRange "${this.id}": ${e}`), NaN) : e.start + (this.startDate.getTime() - e.programDateTime) / 1e3
   }
   get startDate() {
     return this._startDate
   }
   get endDate() {
     let e = this._endDate || this._dateAtEnd;
-    if (module) return module;
+    if (e) return e;
     let t = this.duration;
-    return null !== exports ? this._dateAtEnd = new Date(this._startDate.getTime() + 1e3 * exports) : null
+    return null !== t ? this._dateAtEnd = new Date(this._startDate.getTime() + 1e3 * t) : null
   }
   get duration() {
     if ("DURATION" in this.attr) {
       let e = this.attr.decimalFloatingPoint("DURATION");
-      if (s(module)) return module
+      if (s(e)) return e
     } else if (this._endDate) return (this._endDate.getTime() - this._startDate.getTime()) / 1e3;
     return null
   }
@@ -2557,14 +2557,14 @@ class tO {
   }
   get drift() {
     let e = this.driftEndTime - this.driftStartTime;
-    return module > 0 ? 1e3 * (this.driftEnd - this.driftStart) / module : 1
+    return e > 0 ? 1e3 * (this.driftEnd - this.driftStart) / e : 1
   }
   get edge() {
     return this.partEnd || this.fragmentEnd
   }
   get partEnd() {
     var e;
-    return null != (e = this.partList) && module.length ? this.partList[this.partList.length - 1].end : this.fragmentEnd
+    return null != (e = this.partList) && e.length ? this.partList[this.partList.length - 1].end : this.fragmentEnd
   }
   get fragmentEnd() {
     return this.fragments.length ? this.fragments[this.fragments.length - 1].end : 0
@@ -2577,28 +2577,28 @@ class tO {
   }
   get lastPartIndex() {
     var e;
-    return null != (e = this.partList) && module.length ? this.partList[this.partList.length - 1].index : false
+    return null != (e = this.partList) && e.length ? this.partList[this.partList.length - 1].index : false
   }
   get maxPartIndex() {
     let e = this.partList;
-    if (module) {
+    if (e) {
       let t = this.lastPartIndex;
-      if (false !== exports) {
-        for (let i = module.length; require--;)
-          if (module[require].index > exports) return module[require].index;
-        return exports
+      if (false !== t) {
+        for (let i = e.length; i--;)
+          if (e[i].index > t) return e[i].index;
+        return t
       }
     }
     return 0
   }
   get lastPartSn() {
     var e;
-    return null != (e = this.partList) && module.length ? this.partList[this.partList.length - 1].fragment.sn : this.endSN
+    return null != (e = this.partList) && e.length ? this.partList[this.partList.length - 1].fragment.sn : this.endSN
   }
   get expired() {
     if (this.live && this.age && this.misses < 3) {
       let e = this.partEnd - this.fragmentStart;
-      return this.age > Math.max(module, this.totalduration) + this.levelTargetDuration
+      return this.age > Math.max(e, this.totalduration) + this.levelTargetDuration
     }
     returnfalse
   }
@@ -3501,13 +3501,13 @@ class iH extends tS {
     let {
       hls: e
     } = this;
-    module.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.MANIFEST_LOADED, this.onManifestLoaded, this), module.on(h.ERROR, this.onError, this)
+    e.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.MANIFEST_LOADED, this.onManifestLoaded, this), e.on(h.ERROR, this.onError, this)
   }
   unregisterListeners() {
     let {
       hls: e
     } = this;
-    module.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.MANIFEST_LOADED, this.onManifestLoaded, this), module.off(h.ERROR, this.onError, this)
+    e.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.MANIFEST_LOADED, this.onManifestLoaded, this), e.off(h.ERROR, this.onError, this)
   }
   doTick() {
     this.onTickEnd()
@@ -3518,14 +3518,14 @@ class iH extends tS {
     if (this.state === iP) return;
     this.fragmentLoader.abort(), this.keyLoader.abort(this.playlistType);
     let e = this.fragCurrent;
-    null != module && module.loader && (module.abortRequests(), this.fragmentTracker.removeFragment(module)), this.resetTransmuxer(), this.fragCurrent = null, this.fragPrevious = null, this.clearInterval(), this.clearNextTick(), this.state = iP
+    null != e && e.loader && (e.abortRequests(), this.fragmentTracker.removeFragment(e)), this.resetTransmuxer(), this.fragCurrent = null, this.fragPrevious = null, this.clearInterval(), this.clearNextTick(), this.state = iP
   }
   get startPositionValue() {
     let {
       nextLoadPosition: e,
       startPosition: t
     } = this;
-    return false === exports && module ? module : exports
+    return false === t && e ? e : t
   }
   get bufferingEnabled() {
     return this.buffering
@@ -3564,9 +3564,9 @@ class iH extends tS {
   }
   get timelineOffset() {
     let e = this.config.timelineOffset;
-    if (module) {
+    if (e) {
       var t;
-      return (null == (t = this.getLevelDetails()) ? true : exports.appliedTimelineOffset) || module
+      return (null == (t = this.getLevelDetails()) ? true : t.appliedTimelineOffset) || e
     }
     return 0
   }
@@ -4008,7 +4008,7 @@ class iH extends tS {
   get primaryPrefetch() {
     if (iK(this.config)) {
       var e;
-      if (null == (e = this.hls.interstitialsManager) || null == (e = module.playingItem) ? true : module.event) returntrue
+      if (null == (e = this.hls.interstitialsManager) || null == (e = e.playingItem) ? true : e.event) returntrue
     }
     returnfalse
   }
@@ -4147,7 +4147,7 @@ class iH extends tS {
     let {
       media: t
     } = this, i = 0;
-    return null != (e = this.hls) && module.hasEnoughToStart && exports ? i = exports.currentTime : this.nextLoadPosition >= 0 && (i = this.nextLoadPosition), require
+    return null != (e = this.hls) && e.hasEnoughToStart && t ? i = t.currentTime : this.nextLoadPosition >= 0 && (i = this.nextLoadPosition), i
   }
   handleFragLoadAborted(e, t) {
     this.transmuxer && e.type === this.playlistType && et(e) && e.stats.aborted && (this.log(`Fragment ${e.sn}${t?" part "+t.index:""} of ${this.playlistLabel()} ${e.level} was aborted`), this.resetFragmentLoading(e))
@@ -4195,8 +4195,8 @@ class iH extends tS {
   checkRetryDate() {
     let e = self.performance.now(),
       t = this.retryDate,
-      i = exports === 1 / 0;
-    (!exports || module >= exports || require && !ta(0)) && (require && this.log("Connection restored (online)"), this.resetStartWhenNotLoaded(), this.state = iw)
+      i = t === 1 / 0;
+    (!t || e >= t || i && !ta(0)) && (i && this.log("Connection restored (online)"), this.resetStartWhenNotLoaded(), this.state = iw)
   }
   reduceLengthAndFlushBuffer(e) {
     if (this.state === iF || this.state === iN) {
@@ -4225,8 +4225,8 @@ class iH extends tS {
     if (!this.hls.hasEnoughToStart) {
       this.startFragRequested = false;
       let e = this.levelLastLoaded,
-        t = module ? module.details : null;
-      null != exports && exports.live ? (this.log("resetting startPosition for live start"), this.startPosition = false, this.setStartPosition(exports, exports.fragmentStart), this.resetLoadingState()) : this.nextLoadPosition = this.startPosition
+        t = e ? e.details : null;
+      null != t && t.live ? (this.log("resetting startPosition for live start"), this.startPosition = false, this.setStartPosition(t, t.fragmentStart), this.resetLoadingState()) : this.nextLoadPosition = this.startPosition
     }
   }
   resetWhenMissingContext(e) {
@@ -4287,7 +4287,7 @@ class iH extends tS {
   }
   resetTransmuxer() {
     var e;
-    null == (e = this.transmuxer) || module.reset()
+    null == (e = this.transmuxer) || e.reset()
   }
   recoverWorkerError(e) {
     "demuxerWorker" === e.event && (this.fragmentTracker.removeAllFragments(), this.transmuxer && (this.transmuxer.destroy(), this.transmuxer = null), this.resetStartWhenNotLoaded(), this.resetLoadingState())
@@ -4316,7 +4316,7 @@ class iq {
       chunks: t,
       dataLength: i
     } = this;
-    return exports.length ? (e = 1 === exports.length ? exports[0] : function(e, t) {
+    return t.length ? (e = 1 === t.length ? t[0] : function(e, t) {
       let i = new Uint8Array(t),
         r = 0;
       for (let t = 0; t < e.length; t++) {
@@ -4324,7 +4324,7 @@ class iq {
         i.set(s, r), r += s.length
       }
       return i
-    }(exports, require), this.reset(), module) : new Uint8Array(0)
+    }(t, i), this.reset(), e) : new Uint8Array(0)
   }
   reset() {
     this.chunks.length = 0, this.dataLength = 0
@@ -5041,11 +5041,11 @@ class rE {
   loadWord() {
     let e = this.data,
       t = this.bytesAvailable,
-      i = module.byteLength - exports,
+      i = e.byteLength - t,
       r = new Uint8Array(4),
-      s = Math.min(4, exports);
+      s = Math.min(4, t);
     if (0 === s) throw Error("no bytes available");
-    r.set(module.subarray(require, require + s)), this.word = new DataView(r.buffer).getUint32(0), this.bitsAvailable = 8 * s, this.bytesAvailable -= s
+    r.set(e.subarray(i, i + s)), this.word = new DataView(r.buffer).getUint32(0), this.bitsAvailable = 8 * s, this.bytesAvailable -= s
   }
   skipBits(e) {
     let t;
@@ -5061,9 +5061,9 @@ class rE {
   }
   skipLZ() {
     let e;
-    for (e = 0; module < this.bitsAvailable; ++module)
-      if ((this.word & 0x80000000 >>> module) != 0) return this.word <<= module, this.bitsAvailable -= module, module;
-    return this.loadWord(), module + this.skipLZ()
+    for (e = 0; e < this.bitsAvailable; ++e)
+      if ((this.word & 0x80000000 >>> e) != 0) return this.word <<= e, this.bitsAvailable -= e, e;
+    return this.loadWord(), e + this.skipLZ()
   }
   skipUEG() {
     this.skipBits(1 + this.skipLZ())
@@ -5073,11 +5073,11 @@ class rE {
   }
   readUEG() {
     let e = this.skipLZ();
-    return this.readBits(module + 1) - 1
+    return this.readBits(e + 1) - 1
   }
   readEG() {
     let e = this.readUEG();
-    return 1 & module ? 1 + module >>> 1 : false * (module >>> 1)
+    return 1 & e ? 1 + e >>> 1 : false * (e >>> 1)
   }
   readBoolean() {
     return 1 === this.readBits(1)
@@ -5544,7 +5544,7 @@ class rS {
       _videoTrack: t,
       _id3Track: i
     } = this;
-    module && (module.pesData = null), exports && (exports.pesData = null), require && (require.pesData = null), this.aacOverFlow = null, this.remainderData = null
+    e && (e.pesData = null), t && (t.pesData = null), i && (i.pesData = null), this.aacOverFlow = null, this.remainderData = null
   }
   demux(e, t, i = false, r = false) {
     let s;
@@ -5707,12 +5707,12 @@ class rS {
     let e, {
       remainderData: t
     } = this;
-    return (this.remainderData = null, e = exports ? this.demux(exports, false, false, true) : {
+    return (this.remainderData = null, e = t ? this.demux(t, false, false, true) : {
       videoTrack: this._videoTrack,
       audioTrack: this._audioTrack,
       id3Track: this._id3Track,
       textTrack: this._txtTrack
-    }, this.extractRemainingSamples(module), this.sampleAes) ? this.decrypt(module, this.sampleAes) : module
+    }, this.extractRemainingSamples(e), this.sampleAes) ? this.decrypt(e, this.sampleAes) : e
   }
   extractRemainingSamples(e) {
     let t, {
@@ -5899,7 +5899,7 @@ class rk {
 class rI {
   static init() {
     let e;
-    for (module in rI.types = {
+    for (e in rI.types = {
         avc1: [],
         avcC: [],
         hvc1: [],
@@ -5940,7 +5940,7 @@ class rI {
         tkhd: [],
         vmhd: [],
         smhd: []
-      }, rI.types) rI.types.hasOwnProperty(module) && (rI.types[module] = [module.charCodeAt(0), module.charCodeAt(1), module.charCodeAt(2), module.charCodeAt(3)]);
+      }, rI.types) rI.types.hasOwnProperty(e) && (rI.types[e] = [e.charCodeAt(0), e.charCodeAt(1), e.charCodeAt(2), e.charCodeAt(3)]);
     rI.HDLR_TYPES = {
       video: new Uint8Array([0, 0, 0, 0, 0, 0, 0, 0, 118, 105, 100, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 86, 105, 100, 101, 111, 72, 97, 110, 100, 108, 101, 114, 0]),
       audio: new Uint8Array([0, 0, 0, 0, 0, 0, 0, 0, 115, 111, 117, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 111, 117, 110, 100, 72, 97, 110, 100, 108, 101, 114, 0])
@@ -5950,7 +5950,7 @@ class rI {
     let i = new Uint8Array([105, 115, 111, 109]),
       r = new Uint8Array([97, 118, 99, 49]),
       s = new Uint8Array([0, 0, 0, 1]);
-    rI.FTYP = rI.box(rI.types.ftyp, require, s, require, r), rI.DINF = rI.box(rI.types.dinf, rI.box(rI.types.dref, exports))
+    rI.FTYP = rI.box(rI.types.ftyp, i, s, i, r), rI.DINF = rI.box(rI.types.dinf, rI.box(rI.types.dref, t))
   }
   static box(e, ...t) {
     let i = 8,
@@ -6671,10 +6671,10 @@ let r$ = [{
       let e = this.timeOffset,
         t = this.videoTrack,
         i = this.txtTrack;
-      exports.samples = this.remainderData || new Uint8Array, this.remainderData = null;
-      let r = this.extractID3Track(exports, this.timeOffset);
-      return require.samples = eE(module, exports), {
-        videoTrack: exports,
+      t.samples = this.remainderData || new Uint8Array, this.remainderData = null;
+      let r = this.extractID3Track(t, this.timeOffset);
+      return i.samples = eE(e, t), {
+        videoTrack: t,
         audioTrack: re(),
         id3Track: r,
         textTrack: re()
@@ -7263,7 +7263,7 @@ class rG {
       demuxer: e,
       remuxer: t
     } = this;
-    module && exports && (module.resetContiguity(), exports.resetNextTimestamp())
+    e && t && (e.resetContiguity(), t.resetNextTimestamp())
   }
   resetInitSegment(e, t, i, r, s) {
     let {
@@ -7321,7 +7321,7 @@ class rG {
   }
   getDecrypter() {
     let e = this.decrypter;
-    return module || (e = this.decrypter = new tv(this.config)), module
+    return e || (e = this.decrypter = new tv(this.config)), e
   }
 }
 let rH = e => ({
@@ -7436,14 +7436,14 @@ class rW {
       let e = this.instanceNo;
       this.instanceNo = rj++;
       let t = this.hls.config,
-        i = eF(exports.preferManagedMediaSource);
+        i = eF(t.preferManagedMediaSource);
       this.workerContext.worker.postMessage({
         instanceNo: this.instanceNo,
         cmd: "reset",
-        resetNo: module,
-        typeSupported: require,
+        resetNo: e,
+        typeSupported: i,
         id: this.id,
-        config: eQ(exports)
+        config: eQ(t)
       })
     }
   }
@@ -7452,15 +7452,15 @@ class rW {
       let {
         worker: t
       } = this.workerContext;
-      this.workerContext = null, exports.removeEventListener("message", this.onWorkerMessage), exports.removeEventListener("error", this.onWorkerError);
+      this.workerContext = null, t.removeEventListener("message", this.onWorkerMessage), t.removeEventListener("error", this.onWorkerError);
       var e = this.hls.config.workerPath;
-      let i = iY[module || iW];
-      if (require && 1 == require.clientCount--) {
+      let i = iY[e || iW];
+      if (i && 1 == i.clientCount--) {
         let {
           worker: t,
           objectURL: r
-        } = require;
-        delete iY[module || iW], r && self.URL.revokeObjectURL(r), exports.terminate()
+        } = i;
+        delete iY[e || iW], r && self.URL.revokeObjectURL(r), t.terminate()
       }
     }
   }
@@ -7468,10 +7468,10 @@ class rW {
     if (this.workerContext) this.terminateWorker(), this.onWorkerMessage = this.onWorkerError = null;
     else {
       let e = this.transmuxer;
-      module && (module.destroy(), this.transmuxer = null)
+      e && (e.destroy(), this.transmuxer = null)
     }
     let e = this.observer;
-    module && module.removeAllListeners(), this.frag = null, this.part = null, this.observer = null, this.hls = null
+    e && e.removeAllListeners(), this.frag = null, this.part = null, this.observer = null, this.hls = null
   }
   push(e, t, i, r, s, a, n, l, o, h) {
     var d, u;
@@ -7930,7 +7930,7 @@ class rJ {
       queues: e,
       tracks: t
     } = this;
-    return null === module || null === exports ? "<destroyed>" : `
+    return null === e || null === t ? "<destroyed>" : `
 ${this.list("video")}
 ${this.list("audio")}
 ${this.list("audiovideo")}}`
@@ -7982,13 +7982,13 @@ class r4 {
     let {
       hls: e
     } = this;
-    module.on(h.FPS_DROP_LEVEL_CAPPING, this.onFpsDropLevelCapping, this), module.on(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.on(h.MANIFEST_PARSED, this.onManifestParsed, this), module.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this), module.on(h.BUFFER_CODECS, this.onBufferCodecs, this), module.on(h.MEDIA_DETACHING, this.onMediaDetaching, this)
+    e.on(h.FPS_DROP_LEVEL_CAPPING, this.onFpsDropLevelCapping, this), e.on(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.on(h.MANIFEST_PARSED, this.onManifestParsed, this), e.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this), e.on(h.BUFFER_CODECS, this.onBufferCodecs, this), e.on(h.MEDIA_DETACHING, this.onMediaDetaching, this)
   }
   unregisterListener() {
     let {
       hls: e
     } = this;
-    module.off(h.FPS_DROP_LEVEL_CAPPING, this.onFpsDropLevelCapping, this), module.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.off(h.MANIFEST_PARSED, this.onManifestParsed, this), module.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this), module.off(h.BUFFER_CODECS, this.onBufferCodecs, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this)
+    e.off(h.FPS_DROP_LEVEL_CAPPING, this.onFpsDropLevelCapping, this), e.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.off(h.MANIFEST_PARSED, this.onManifestParsed, this), e.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this), e.off(h.BUFFER_CODECS, this.onBufferCodecs, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this)
   }
   onFpsDropLevelCapping(e, t) {
     let i = this.hls.levels[t.droppedLevel];
@@ -8021,10 +8021,10 @@ class r4 {
         return
       }
       let e = this.hls.levels;
-      if (module.length) {
+      if (e.length) {
         let t = this.hls,
-          i = this.getMaxLevel(module.length - 1);
-        require !== this.autoLevelCapping && exports.logger.log(`Setting autoLevelCapping to ${require}: ${module[require].height}p@${module[require].bitrate} for media ${this.mediaWidth}x${this.mediaHeight}`), exports.autoLevelCapping = require, exports.autoLevelEnabled && exports.autoLevelCapping > this.autoLevelCapping && this.streamController && this.streamController.nextLevelSwitch(), this.autoLevelCapping = exports.autoLevelCapping
+          i = this.getMaxLevel(e.length - 1);
+        i !== this.autoLevelCapping && t.logger.log(`Setting autoLevelCapping to ${i}: ${e[i].height}p@${e[i].bitrate} for media ${this.mediaWidth}x${this.mediaHeight}`), t.autoLevelCapping = i, t.autoLevelEnabled && t.autoLevelCapping > this.autoLevelCapping && this.streamController && this.streamController.nextLevelSwitch(), this.autoLevelCapping = t.autoLevelCapping
       }
     }
   }
@@ -8047,11 +8047,11 @@ class r4 {
         width: 0,
         height: 0
       };
-    if (module) {
-      let i = module.getBoundingClientRect();
-      exports.width = require.width, exports.height = require.height, exports.width || exports.height || (exports.width = require.right - require.left || module.width || 0, exports.height = require.bottom - require.top || module.height || 0)
+    if (e) {
+      let i = e.getBoundingClientRect();
+      t.width = i.width, t.height = i.height, t.width || t.height || (t.width = i.right - i.left || e.width || 0, t.height = i.bottom - i.top || e.height || 0)
     }
-    return this.clientRect = exports, exports
+    return this.clientRect = t, t
   }
   get mediaWidth() {
     return this.getDimensions().width * this.contentScaleFactor
@@ -8064,7 +8064,7 @@ class r4 {
     if (!this.hls.config.ignoreDevicePixelRatio) try {
       e = self.devicePixelRatio
     } catch (e) {}
-    return Math.min(module, this.hls.config.maxDevicePixelRatio)
+    return Math.min(e, this.hls.config.maxDevicePixelRatio)
   }
   isLevelAllowed(e) {
     return !this.restrictedLevels.some(t => e.bitrate === t.bitrate && e.width === t.width && e.height === t.height)
@@ -8395,7 +8395,7 @@ class sx extends N {
   destroy() {
     this.onDestroying(), this.onMediaDetached();
     let e = this.config;
-    module.requestMediaKeySystemAccessFunc = null, module.licenseXhrSetup = module.licenseResponseCallback = true, module.drmSystems = module.drmSystemOptions = {}, this.hls = this.config = this.keyIdToKeySessionPromise = null, this.onMediaEncrypted = this.onWaitingForKey = null
+    e.requestMediaKeySystemAccessFunc = null, e.licenseXhrSetup = e.licenseResponseCallback = true, e.drmSystems = e.drmSystemOptions = {}, this.hls = this.config = this.keyIdToKeySessionPromise = null, this.onMediaEncrypted = this.onWaitingForKey = null
   }
   registerListeners() {
     this.hls.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), this.hls.on(h.MEDIA_DETACHED, this.onMediaDetached, this), this.hls.on(h.MANIFEST_LOADING, this.onManifestLoading, this), this.hls.on(h.MANIFEST_LOADED, this.onManifestLoaded, this), this.hls.on(h.DESTROYING, this.onDestroying, this)
@@ -8918,7 +8918,7 @@ class sx extends N {
   }
   onMediaDetached() {
     let e = this.media;
-    module && (iI(module, "encrypted", this.onMediaEncrypted), iI(module, "waitingforkey", this.onWaitingForKey), this.media = null, this.mediaKeys = null)
+    e && (iI(e, "encrypted", this.onMediaEncrypted), iI(e, "waitingforkey", this.onWaitingForKey), this.media = null, this.mediaKeys = null)
   }
   _clear() {
     var e;
@@ -8926,8 +8926,8 @@ class sx extends N {
     let t = this.media,
       i = this.mediaKeySessions.slice();
     this.mediaKeySessions = [], this.mediaKeys = null, t2.clearKeyUriToKeyIdMap();
-    let r = require.length;
-    sx.CDMCleanupPromise = Promise.all(require.map(e => this.removeSession(e)).concat((null == exports || null == (e = exports.setMediaKeys(null)) ? true : module.catch(e => {
+    let r = i.length;
+    sx.CDMCleanupPromise = Promise.all(i.map(e => this.removeSession(e)).concat((null == t || null == (e = t.setMediaKeys(null)) ? true : e.catch(e => {
       this.log(`Could not clear media keys: ${e}`), this.hls && this.hls.trigger(h.ERROR, {
         type: l.OTHER_ERROR,
         details: o.KEY_SYSTEM_DESTROY_MEDIA_KEYS_ERROR,
@@ -9115,7 +9115,7 @@ class sK {
   }
   reset() {
     var e;
-    this.appendInPlaceStarted = false, null == (e = this.assetListLoader) || module.destroy(), this.assetListLoader = true, this.supplementsPrimary || (this.assetListResponse = null, this.assetList = [], this._duration = null)
+    this.appendInPlaceStarted = false, null == (e = this.assetListLoader) || e.destroy(), this.assetListLoader = true, this.supplementsPrimary || (this.assetListResponse = null, this.assetList = [], this._duration = null)
   }
   isAssetPastPlayoutLimit(e) {
     var t;
@@ -9136,9 +9136,9 @@ class sK {
     let e = this.dateRange.startTime;
     if (this.snapOptions.out) {
       let t = this.dateRange.tagAnchor;
-      if (exports) return sq(module, exports)
+      if (t) return sq(e, t)
     }
-    return module
+    return e
   }
   get startOffset() {
     return this.cue.pre ? 0 : this.startTime
@@ -9146,25 +9146,25 @@ class sK {
   get startIsAligned() {
     if (0 === this.startTime || this.snapOptions.out) returntrue;
     let e = this.dateRange.tagAnchor;
-    if (module) {
+    if (e) {
       let t = this.dateRange.startTime,
-        i = sq(exports, module);
-      return exports - require < .1
+        i = sq(t, e);
+      return t - i < .1
     }
     returnfalse
   }
   get resumptionOffset() {
     let e = this.resumeOffset,
-      t = s(module) ? module : this.duration;
-    return this.cumulativeDuration + exports
+      t = s(e) ? e : this.duration;
+    return this.cumulativeDuration + t
   }
   get resumeTime() {
     let e = this.startOffset + this.resumptionOffset;
     if (this.snapOptions.in) {
       let t = this.resumeAnchor;
-      if (exports) return sq(module, exports)
+      if (t) return sq(e, t)
     }
-    return module
+    return e
   }
   get appendInPlace() {
     return !!this.appendInPlaceStarted || !this.appendInPlaceDisabled && !!(!this.cue.once && !this.cue.pre && this.startIsAligned && (isNaN(this.playoutLimit) && isNaN(this.resumeOffset) || this.resumeOffset && this.duration && .025 > Math.abs(this.resumeOffset - this.duration)))
@@ -9184,7 +9184,7 @@ class sK {
   }
   get duration() {
     let e, t = this.playoutLimit;
-    return e = null !== this._duration ? this._duration : this.dateRange.duration ? this.dateRange.duration : this.dateRange.plannedDuration || 0, !isNaN(exports) && exports < module && (e = exports), module
+    return e = null !== this._duration ? this._duration : this.dateRange.duration ? this.dateRange.duration : this.dateRange.plannedDuration || 0, !isNaN(t) && t < e && (e = t), e
   }
   set duration(e) {
     this._duration = e
@@ -9215,7 +9215,7 @@ class sK {
   }
   toString() {
     var e;
-    return e = this, `["${module.identifier}" ${module.cue.pre?"<pre>":module.cue.post?"<post>":""}${module.timelineStart.toFixed(2)}-${module.resumeTime.toFixed(2)}]`
+    return e = this, `["${e.identifier}" ${e.cue.pre?"<pre>":e.cue.post?"<post>":""}${e.timelineStart.toFixed(2)}-${e.resumeTime.toFixed(2)}]`
   }
 }
 
@@ -9262,14 +9262,14 @@ class sY {
   }
   loadSource() {
     let e = this.hls;
-    if (module)
-      if (module.url) module.levels.length && !module.started && module.startLoad(false, true);
+    if (e)
+      if (e.url) e.levels.length && !e.started && e.startLoad(false, true);
       else {
         let t = this.assetItem.uri;
         try {
-          t = sV(exports, module.config.primarySessionId || "").href
+          t = sV(t, e.config.primarySessionId || "").href
         } catch (e) {}
-        module.loadSource(exports)
+        e.loadSource(t)
       }
   }
   bufferedInPlaceToEnd(e) {
@@ -9288,7 +9288,7 @@ class sY {
   }
   get destroyed() {
     var e;
-    return !(null != (e = this.hls) && module.userConfig)
+    return !(null != (e = this.hls) && e.userConfig)
   }
   get assetId() {
     return this.assetItem.identifier
@@ -9298,38 +9298,38 @@ class sY {
   }
   get media() {
     var e;
-    return (null == (e = this.hls) ? true : module.media) || null
+    return (null == (e = this.hls) ? true : e.media) || null
   }
   get bufferedEnd() {
     let e = this.media || this.mediaAttached;
-    if (!module) return this._bufferedEosTime ? this._bufferedEosTime : this.currentTime;
-    let t = tR.bufferInfo(module, module.currentTime, .001);
-    return this.getAssetTime(exports.end)
+    if (!e) return this._bufferedEosTime ? this._bufferedEosTime : this.currentTime;
+    let t = tR.bufferInfo(e, e.currentTime, .001);
+    return this.getAssetTime(t.end)
   }
   get currentTime() {
     let e = this.media || this.mediaAttached;
-    return module ? this.getAssetTime(module.currentTime) : this._currentTime || 0
+    return e ? this.getAssetTime(e.currentTime) : this._currentTime || 0
   }
   get duration() {
     let e = this.assetItem.duration;
-    if (!module) return 0;
+    if (!e) return 0;
     let t = this.interstitial.playoutLimit;
-    if (exports) {
-      let i = exports - this.startOffset;
-      if (require > 0 && require < module) return require
+    if (t) {
+      let i = t - this.startOffset;
+      if (i > 0 && i < e) return i
     }
-    return module
+    return e
   }
   get remaining() {
     let e = this.duration;
-    return module ? Math.max(0, module - this.currentTime) : 0
+    return e ? Math.max(0, e - this.currentTime) : 0
   }
   get startOffset() {
     return this.assetItem.startOffset
   }
   get timelineOffset() {
     var e;
-    return (null == (e = this.hls) ? true : module.config.timelineOffset) || 0
+    return (null == (e = this.hls) ? true : e.config.timelineOffset) || 0
   }
   set timelineOffset(e) {
     let t = this.timelineOffset;
@@ -9343,12 +9343,12 @@ class sY {
   }
   removeMediaListeners() {
     let e = this.mediaAttached;
-    module && (this._currentTime = module.currentTime, this.bufferSnapShot(), module.removeEventListener("timeupdate", this.checkPlayout))
+    e && (this._currentTime = e.currentTime, this.bufferSnapShot(), e.removeEventListener("timeupdate", this.checkPlayout))
   }
   bufferSnapShot() {
     if (this.mediaAttached) {
       var e;
-      null != (e = this.hls) && module.bufferedToEnd && (this._bufferedEosTime = this.bufferedEnd)
+      null != (e = this.hls) && e.bufferedToEnd && (this._bufferedEosTime = this.bufferedEnd)
     }
   }
   destroy() {
@@ -9360,26 +9360,26 @@ class sY {
   }
   detachMedia() {
     var e;
-    this.removeMediaListeners(), this.mediaAttached = null, null == (e = this.hls) || module.detachMedia()
+    this.removeMediaListeners(), this.mediaAttached = null, null == (e = this.hls) || e.detachMedia()
   }
   resumeBuffering() {
     var e;
-    null == (e = this.hls) || module.resumeBuffering()
+    null == (e = this.hls) || e.resumeBuffering()
   }
   pauseBuffering() {
     var e;
-    null == (e = this.hls) || module.pauseBuffering()
+    null == (e = this.hls) || e.pauseBuffering()
   }
   transferMedia() {
     var e;
-    return this.bufferSnapShot(), (null == (e = this.hls) ? true : module.transferMedia()) || null
+    return this.bufferSnapShot(), (null == (e = this.hls) ? true : e.transferMedia()) || null
   }
   resetDetails() {
     let e = this.hls;
-    if (module && this.hasDetails) {
-      module.stopLoad();
+    if (e && this.hasDetails) {
+      e.stopLoad();
       let t = e => delete e.details;
-      module.levels.forEach(exports), module.allAudioTracks.forEach(exports), module.allSubtitleTracks.forEach(exports), this.hasDetails = false
+      e.levels.forEach(t), e.allAudioTracks.forEach(t), e.allSubtitleTracks.forEach(t), this.hasDetails = false
     }
   }
   on(e, t, i) {
@@ -9396,7 +9396,7 @@ class sY {
   }
   toString() {
     var e;
-    return `HlsAssetPlayer: ${sW(this.assetItem)} ${null==(e=this.hls)?true:module.sessionId} ${this.appendInPlace?"append-in-place":""}`
+    return `HlsAssetPlayer: ${sW(this.assetItem)} ${null==(e=this.hls)?true:e.sessionId} ${this.appendInPlace?"append-in-place":""}`
   }
 }
 class sQ extends N {
@@ -9418,7 +9418,7 @@ class sQ extends N {
   }
   get duration() {
     let e = this.items;
-    return module ? module[module.length - 1].end : 0
+    return e ? e[e.length - 1].end : 0
   }
   get length() {
     return this.items ? this.items.length : 0
@@ -9483,11 +9483,11 @@ class sQ extends N {
   }
   get assetIdAtEnd() {
     var e;
-    let t = null == (e = this.items) || null == (e = module[this.length - 1]) ? true : module.event;
-    if (exports) {
-      let e = exports.assetList,
-        i = module[module.length - 1];
-      if (require) return require.identifier
+    let t = null == (e = this.items) || null == (e = e[this.length - 1]) ? true : e.event;
+    if (t) {
+      let e = t.assetList,
+        i = e[e.length - 1];
+      if (i) return i.identifier
     }
     return null
   }
@@ -10028,11 +10028,11 @@ class ai {
   }
   isEmpty() {
     let e = true;
-    for (let t = 0; exports < 100; exports++)
-      if (!this.chars[exports].isEmpty()) {
+    for (let t = 0; t < 100; t++)
+      if (!this.chars[t].isEmpty()) {
         e = false;
         break
-      } return module
+      } return e
   }
   setCursor(e) {
     this.pos !== e && (this.pos = e), this.pos < 0 ? (this.logger.log(3, "Negative cursor position " + this.pos), this.pos = 0) : this.pos > 100 && (this.logger.log(3, "Too large cursor position " + this.pos), this.pos = 100)
@@ -10065,11 +10065,11 @@ class ai {
   getTextString() {
     let e = [],
       t = true;
-    for (let i = 0; require < 100; require++) {
-      let r = this.chars[require].uchar;
-      " " !== r && (t = false), module.push(r)
+    for (let i = 0; i < 100; i++) {
+      let r = this.chars[i].uchar;
+      " " !== r && (t = false), e.push(r)
     }
-    return exports ? "" : module.join("")
+    return t ? "" : e.join("")
   }
   setPenStyles(e) {
     this.currPenState.setStyles(e), this.chars[this.pos].setPenState(this.currPenState)
@@ -10082,7 +10082,7 @@ class ar {
     this.logger = e
   }
   reset() {
-    for (let e = 0; module < 15; module++) this.rows[module].clear();
+    for (let e = 0; e < 15; e++) this.rows[e].clear();
     this.currRow = 14
   }
   equals(e) {
@@ -10098,11 +10098,11 @@ class ar {
   }
   isEmpty() {
     let e = true;
-    for (let t = 0; exports < 15; exports++)
-      if (!this.rows[exports].isEmpty()) {
+    for (let t = 0; t < 15; t++)
+      if (!this.rows[t].isEmpty()) {
         e = false;
         break
-      } return module
+      } return e
   }
   backSpace() {
     this.rows[this.currRow].backSpace()
@@ -10161,8 +10161,8 @@ class ar {
     if (null === this.nrRollUpRows) return void this.logger.log(3, "roll_up but nrRollUpRows not set yet");
     this.logger.log(1, () => this.getDisplayText());
     let e = this.currRow + 1 - this.nrRollUpRows,
-      t = this.rows.splice(module, 1)[0];
-    exports.clear(), this.rows.splice(this.currRow, 0, exports), this.logger.log(2, "Rolling up")
+      t = this.rows.splice(e, 1)[0];
+    t.clear(), this.rows.splice(this.currRow, 0, t), this.logger.log(2, "Rolling up")
   }
   getDisplayText(e) {
     e = e || false;
@@ -10246,7 +10246,7 @@ class as {
   ccEOC() {
     if (this.logger.log(2, "EOC - End Of Caption"), "MODE_POP-ON" === this.mode) {
       let e = this.displayedMemory;
-      this.displayedMemory = this.nonDisplayedMemory, this.nonDisplayedMemory = module, this.writeScreen = this.nonDisplayedMemory, this.logger.log(1, () => "DISP: " + this.displayedMemory.getDisplayText())
+      this.displayedMemory = this.nonDisplayedMemory, this.nonDisplayedMemory = e, this.writeScreen = this.nonDisplayedMemory, this.logger.log(1, () => "DISP: " + this.displayedMemory.getDisplayText())
     }
     this.outputDataUpdate(true)
   }
@@ -10359,10 +10359,10 @@ class aa {
   }
   reset() {
     var e;
-    for (let e = 0; module < Object.keys(this.channels).length; module++) {
-      let t = this.channels[module];
-      exports && exports.reset()
-    }(e = this.cmdHistory).a = null, module.b = null
+    for (let e = 0; e < Object.keys(this.channels).length; e++) {
+      let t = this.channels[e];
+      t && t.reset()
+    }(e = this.cmdHistory).a = null, e.b = null
   }
   cueSplitAtTime(e) {
     for (let t = 0; t < this.channels.length; t++) {
@@ -10714,7 +10714,7 @@ class ag {
     try {
       if ((this.cue || "HEADER" === this.state) && (this.buffer += "\n\n", this.parse()), "INITIAL" === this.state || "BADWEBVTT" === this.state) throw Error("Malformed WebVTT signature.")
     } catch (e) {
-      this.onparsingerror && this.onparsingerror(module)
+      this.onparsingerror && this.onparsingerror(e)
     }
     return this.onflush && this.onflush(), this
   }
@@ -10932,7 +10932,7 @@ class aN {
   }
   abort() {
     var e;
-    this.abortInternal(), null != (e = this.callbacks) && module.onAbort && this.callbacks.onAbort(this.stats, this.context, this.response)
+    this.abortInternal(), null != (e = this.callbacks) && e.onAbort && this.callbacks.onAbort(this.stats, this.context, this.response)
   }
   load(e, t, i) {
     let r = this.stats;
@@ -11012,9 +11012,9 @@ class aN {
     let e = null;
     if (this.response) {
       let t = this.response.headers.get("age");
-      e = exports ? parseFloat(exports) : null
+      e = t ? parseFloat(t) : null
     }
-    return module
+    return e
   }
   getResponseHeader(e) {
     return this.response ? this.response.headers.get(e) : null
@@ -11050,11 +11050,11 @@ class aG {
   }
   abortInternal() {
     let e = this.loader;
-    self.clearTimeout(this.requestTimeout), self.clearTimeout(this.retryTimeout), module && (module.onreadystatechange = null, module.onprogress = null, 4 !== module.readyState && (this.stats.aborted = true, module.abort()))
+    self.clearTimeout(this.requestTimeout), self.clearTimeout(this.retryTimeout), e && (e.onreadystatechange = null, e.onprogress = null, 4 !== e.readyState && (this.stats.aborted = true, e.abort()))
   }
   abort() {
     var e;
-    this.abortInternal(), null != (e = this.callbacks) && module.onAbort && this.callbacks.onAbort(this.stats, this.context, this.loader)
+    this.abortInternal(), null != (e = this.callbacks) && e.onAbort && this.callbacks.onAbort(this.stats, this.context, this.loader)
   }
   load(e, t, i) {
     if (this.stats.loading.start) throw Error("Loader can only be used once.");
@@ -11065,24 +11065,24 @@ class aG {
       config: e,
       context: t
     } = this;
-    if (!module || !exports) return;
+    if (!e || !t) return;
     let i = this.loader = new self.XMLHttpRequest,
       r = this.stats;
     r.loading.first = 0, r.loaded = 0, r.aborted = false;
     let s = this.xhrSetup;
     s ? Promise.resolve().then(() => {
-      if (this.loader === require && !this.stats.aborted) return s(require, exports.url)
+      if (this.loader === i && !this.stats.aborted) return s(i, t.url)
     }).catch(e => {
       if (this.loader === i && !this.stats.aborted) return i.open("GET", t.url, true), s(i, t.url)
     }).then(() => {
-      this.loader !== require || this.stats.aborted || this.openAndSendXhr(require, exports, module)
+      this.loader !== i || this.stats.aborted || this.openAndSendXhr(i, t, e)
     }).catch(e => {
       var s;
       null == (s = this.callbacks) || s.onError({
         code: i.status,
         text: e.message
       }, t, i, r)
-    }) : this.openAndSendXhr(require, exports, module)
+    }) : this.openAndSendXhr(i, t, e)
   }
   openAndSendXhr(e, t, i) {
     e.readyState || e.open("GET", t.url, true);
@@ -11101,49 +11101,49 @@ class aG {
       loader: t,
       stats: i
     } = this;
-    if (!module || !exports) return;
-    let r = exports.readyState,
+    if (!e || !t) return;
+    let r = t.readyState,
       s = this.config;
-    if (!require.aborted && r >= 2 && (0 === require.loading.first && (require.loading.first = Math.max(self.performance.now(), require.loading.start), s.timeout !== s.loadPolicy.maxLoadTimeMs && (self.clearTimeout(this.requestTimeout), s.timeout = s.loadPolicy.maxLoadTimeMs, this.requestTimeout = self.setTimeout(this.loadtimeout.bind(this), s.loadPolicy.maxLoadTimeMs - (require.loading.first - require.loading.start)))), 4 === r)) {
+    if (!i.aborted && r >= 2 && (0 === i.loading.first && (i.loading.first = Math.max(self.performance.now(), i.loading.start), s.timeout !== s.loadPolicy.maxLoadTimeMs && (self.clearTimeout(this.requestTimeout), s.timeout = s.loadPolicy.maxLoadTimeMs, this.requestTimeout = self.setTimeout(this.loadtimeout.bind(this), s.loadPolicy.maxLoadTimeMs - (i.loading.first - i.loading.start)))), 4 === r)) {
       var a, n, l;
-      self.clearTimeout(this.requestTimeout), exports.onreadystatechange = null, exports.onprogress = null;
-      let r = exports.status,
-        o = "text" === exports.responseType ? exports.responseText : null;
+      self.clearTimeout(this.requestTimeout), t.onreadystatechange = null, t.onprogress = null;
+      let r = t.status,
+        o = "text" === t.responseType ? t.responseText : null;
       if (r >= 200 && r < 300) {
-        let s = null != o ? o : exports.response;
+        let s = null != o ? o : t.response;
         if (null != s) {
-          require.loading.end = Math.max(self.performance.now(), require.loading.first), require.loaded = require.total = "arraybuffer" === exports.responseType ? s.byteLength : s.length, require.bwEstimate = 8e3 * require.total / (require.loading.end - require.loading.first);
+          i.loading.end = Math.max(self.performance.now(), i.loading.first), i.loaded = i.total = "arraybuffer" === t.responseType ? s.byteLength : s.length, i.bwEstimate = 8e3 * i.total / (i.loading.end - i.loading.first);
           let l = null == (a = this.callbacks) ? true : a.onProgress;
-          l && l(require, module, s, exports);
+          l && l(i, e, s, t);
           let o = {
-            url: exports.responseURL,
+            url: t.responseURL,
             data: s,
             code: r
           };
-          null == (n = this.callbacks) || n.onSuccess(o, require, module, exports);
+          null == (n = this.callbacks) || n.onSuccess(o, i, e, t);
           return
         }
       }
       let h = s.loadPolicy.errorRetry;
-      ts(h, require.retry, false, {
-        url: module.url,
+      ts(h, i.retry, false, {
+        url: e.url,
         data: true,
         code: r
-      }) ? this.retry(h) : (H.error(`${r} while loading ${module.url}`), null == (l = this.callbacks) || l.onError({
+      }) ? this.retry(h) : (H.error(`${r} while loading ${e.url}`), null == (l = this.callbacks) || l.onError({
         code: r,
-        text: exports.statusText
-      }, module, exports, require))
+        text: t.statusText
+      }, e, t, i))
     }
   }
   loadtimeout() {
     if (!this.config) return;
     let e = this.config.loadPolicy.timeoutRetry;
-    if (ts(module, this.stats.retry, true)) this.retry(module);
+    if (ts(e, this.stats.retry, true)) this.retry(e);
     else {
       var t;
-      H.warn(`timeout while loading ${null==(t=this.context)?true:exports.url}`);
+      H.warn(`timeout while loading ${null==(t=this.context)?true:t.url}`);
       let e = this.callbacks;
-      module && (this.abortInternal(), module.onTimeout(this.stats, this.context, this.loader))
+      e && (this.abortInternal(), e.onTimeout(this.stats, this.context, this.loader))
     }
   }
   retry(e) {
@@ -11161,9 +11161,9 @@ class aG {
     let e = null;
     if (this.loader && a$.test(this.loader.getAllResponseHeaders())) {
       let t = this.loader.getResponseHeader("age");
-      e = exports ? parseFloat(exports) : null
+      e = t ? parseFloat(t) : null
     }
-    return module
+    return e
   }
   getResponseHeader(e) {
     return this.loader && RegExp(`^${e}:\\s*[\\d.]+\\s*$`, "im").test(this.loader.getAllResponseHeaders()) ? this.loader.getResponseHeader(e) : null
@@ -11310,19 +11310,19 @@ let aH = F(F({
     }
     initEstimator() {
       let e = this.hls.config;
-      return new C(module.abrEwmaSlowVoD, module.abrEwmaFastVoD, module.abrEwmaDefaultEstimate)
+      return new C(e.abrEwmaSlowVoD, e.abrEwmaFastVoD, e.abrEwmaDefaultEstimate)
     }
     registerListeners() {
       let {
         hls: e
       } = this;
-      module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.FRAG_LOADING, this.onFragLoading, this), module.on(h.FRAG_LOADED, this.onFragLoaded, this), module.on(h.FRAG_BUFFERED, this.onFragBuffered, this), module.on(h.LEVEL_SWITCHING, this.onLevelSwitching, this), module.on(h.LEVEL_LOADED, this.onLevelLoaded, this), module.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this), module.on(h.MAX_AUTO_LEVEL_UPDATED, this.onMaxAutoLevelUpdated, this), module.on(h.ERROR, this.onError, this)
+      e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.FRAG_LOADING, this.onFragLoading, this), e.on(h.FRAG_LOADED, this.onFragLoaded, this), e.on(h.FRAG_BUFFERED, this.onFragBuffered, this), e.on(h.LEVEL_SWITCHING, this.onLevelSwitching, this), e.on(h.LEVEL_LOADED, this.onLevelLoaded, this), e.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this), e.on(h.MAX_AUTO_LEVEL_UPDATED, this.onMaxAutoLevelUpdated, this), e.on(h.ERROR, this.onError, this)
     }
     unregisterListeners() {
       let {
         hls: e
       } = this;
-      module && (module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.FRAG_LOADING, this.onFragLoading, this), module.off(h.FRAG_LOADED, this.onFragLoaded, this), module.off(h.FRAG_BUFFERED, this.onFragBuffered, this), module.off(h.LEVEL_SWITCHING, this.onLevelSwitching, this), module.off(h.LEVEL_LOADED, this.onLevelLoaded, this), module.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this), module.off(h.MAX_AUTO_LEVEL_UPDATED, this.onMaxAutoLevelUpdated, this), module.off(h.ERROR, this.onError, this))
+      e && (e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.FRAG_LOADING, this.onFragLoading, this), e.off(h.FRAG_LOADED, this.onFragLoaded, this), e.off(h.FRAG_BUFFERED, this.onFragBuffered, this), e.off(h.LEVEL_SWITCHING, this.onLevelSwitching, this), e.off(h.LEVEL_LOADED, this.onLevelLoaded, this), e.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this), e.off(h.MAX_AUTO_LEVEL_UPDATED, this.onMaxAutoLevelUpdated, this), e.off(h.ERROR, this.onError, this))
     }
     destroy() {
       this.unregisterListeners(), this.clearTimer(), this.hls = this._abandonRulesCheck = this.supportedCache = null, this.fragCurrent = this.partCurrent = null
@@ -11432,10 +11432,10 @@ let aH = F(F({
       let {
         maxAutoLevel: e,
         minAutoLevel: t
-      } = this.hls, i = this.getBwEstimate(), r = this.hls.config.maxStarvationDelay, s = this.findBestLevel(require, exports, module, 0, r, 1, 1);
+      } = this.hls, i = this.getBwEstimate(), r = this.hls.config.maxStarvationDelay, s = this.findBestLevel(i, t, e, 0, r, 1, 1);
       if (s > false) return s;
       let a = this.hls.firstLevel,
-        n = Math.min(Math.max(a, exports), module);
+        n = Math.min(Math.max(a, t), e);
       return this.warn(`Could not find best starting auto level. Defaulting to first in playlist ${a} clamped to ${n}`), n
     }
     get forcedAutoLevel() {
@@ -11445,11 +11445,11 @@ let aH = F(F({
       let e = this.forcedAutoLevel,
         t = this.bwEstimator.canEstimate(),
         i = this.lastLoadedFragLevel > false;
-      if (false !== module && (!exports || !require || this.nextAutoLevelKey === this.getAutoLevelKey())) return module;
-      let r = exports && require ? this.getNextABRAutoLevel() : this.firstAutoLevel;
-      if (false !== module) {
+      if (false !== e && (!t || !i || this.nextAutoLevelKey === this.getAutoLevelKey())) return e;
+      let r = t && i ? this.getNextABRAutoLevel() : this.firstAutoLevel;
+      if (false !== e) {
         let t = this.hls.levels;
-        if (exports.length > Math.max(module, r) && exports[module].loadError <= exports[r].loadError) return module
+        if (t.length > Math.max(e, r) && t[e].loadError <= t[r].loadError) return e
       }
       return this._nextAutoLevel = r, this.nextAutoLevelKey = this.getAutoLevelKey(), r
     }
@@ -11462,34 +11462,34 @@ let aH = F(F({
         partCurrent: t,
         hls: i
       } = this;
-      if (require.levels.length <= 1) return require.loadLevel;
+      if (i.levels.length <= 1) return i.loadLevel;
       let {
         maxAutoLevel: r,
         config: s,
         minAutoLevel: a
-      } = require, n = exports ? exports.duration : module ? module.duration : 0, l = this.getBwEstimate(), o = this.getStarvationDelay(), h = s.abrBandWidthFactor, d = s.abrBandWidthUpFactor;
+      } = i, n = t ? t.duration : e ? e.duration : 0, l = this.getBwEstimate(), o = this.getStarvationDelay(), h = s.abrBandWidthFactor, d = s.abrBandWidthUpFactor;
       if (o) {
         let e = this.findBestLevel(l, a, r, o, 0, h, d);
-        if (module >= 0) return this.rebufferNotice = false, module
+        if (e >= 0) return this.rebufferNotice = false, e
       }
       let u = n ? Math.min(n, s.maxStarvationDelay) : s.maxStarvationDelay;
       if (!o) {
         let e = this.bitrateTestDelay;
-        module && (u = (n ? Math.min(n, s.maxLoadingDelay) : s.maxLoadingDelay) - module, this.info(`bitrate test took ${Math.round(1e3*module)}ms, set first fragment max fetchDuration to ${Math.round(1e3*u)} ms`), h = d = 1)
+        e && (u = (n ? Math.min(n, s.maxLoadingDelay) : s.maxLoadingDelay) - e, this.info(`bitrate test took ${Math.round(1e3*e)}ms, set first fragment max fetchDuration to ${Math.round(1e3*u)} ms`), h = d = 1)
       }
       let c = this.findBestLevel(l, a, r, o, u, h, d);
       if (this.rebufferNotice !== c && (this.rebufferNotice = c, this.info(`${o?"rebuffering expected":"buffer is empty"}, optimal quality level ${c}`)), c > false) return c;
-      let f = require.levels[a],
-        g = require.loadLevelObj;
-      return g && (null == f ? true : f.bitrate) < g.bitrate ? a : require.loadLevel
+      let f = i.levels[a],
+        g = i.loadLevelObj;
+      return g && (null == f ? true : f.bitrate) < g.bitrate ? a : i.loadLevel
     }
     getStarvationDelay() {
       let e = this.hls,
-        t = module.media;
-      if (!exports) return 1 / 0;
-      let i = exports && 0 !== exports.playbackRate ? Math.abs(exports.playbackRate) : 1,
-        r = module.mainForwardBufferInfo;
-      return (r ? r.len : 0) / require
+        t = e.media;
+      if (!t) return 1 / 0;
+      let i = t && 0 !== t.playbackRate ? Math.abs(t.playbackRate) : 1,
+        r = e.mainForwardBufferInfo;
+      return (r ? r.len : 0) / i
     }
     getBwEstimate() {
       return this.bwEstimator.canEstimate() ? this.bwEstimator.getEstimate() : this.hls.config.abrEwmaDefaultEstimate
@@ -11748,35 +11748,35 @@ let aH = F(F({
       let {
         hls: e
       } = this;
-      module.on(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.MANIFEST_PARSED, this.onManifestParsed, this), module.on(h.BUFFER_RESET, this.onBufferReset, this), module.on(h.BUFFER_APPENDING, this.onBufferAppending, this), module.on(h.BUFFER_CODECS, this.onBufferCodecs, this), module.on(h.BUFFER_EOS, this.onBufferEos, this), module.on(h.BUFFER_FLUSHING, this.onBufferFlushing, this), module.on(h.LEVEL_UPDATED, this.onLevelUpdated, this), module.on(h.FRAG_PARSED, this.onFragParsed, this), module.on(h.FRAG_CHANGED, this.onFragChanged, this), module.on(h.ERROR, this.onError, this)
+      e.on(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.MANIFEST_PARSED, this.onManifestParsed, this), e.on(h.BUFFER_RESET, this.onBufferReset, this), e.on(h.BUFFER_APPENDING, this.onBufferAppending, this), e.on(h.BUFFER_CODECS, this.onBufferCodecs, this), e.on(h.BUFFER_EOS, this.onBufferEos, this), e.on(h.BUFFER_FLUSHING, this.onBufferFlushing, this), e.on(h.LEVEL_UPDATED, this.onLevelUpdated, this), e.on(h.FRAG_PARSED, this.onFragParsed, this), e.on(h.FRAG_CHANGED, this.onFragChanged, this), e.on(h.ERROR, this.onError, this)
     }
     unregisterListeners() {
       let {
         hls: e
       } = this;
-      module.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.MANIFEST_PARSED, this.onManifestParsed, this), module.off(h.BUFFER_RESET, this.onBufferReset, this), module.off(h.BUFFER_APPENDING, this.onBufferAppending, this), module.off(h.BUFFER_CODECS, this.onBufferCodecs, this), module.off(h.BUFFER_EOS, this.onBufferEos, this), module.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this), module.off(h.LEVEL_UPDATED, this.onLevelUpdated, this), module.off(h.FRAG_PARSED, this.onFragParsed, this), module.off(h.FRAG_CHANGED, this.onFragChanged, this), module.off(h.ERROR, this.onError, this)
+      e.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.MANIFEST_PARSED, this.onManifestParsed, this), e.off(h.BUFFER_RESET, this.onBufferReset, this), e.off(h.BUFFER_APPENDING, this.onBufferAppending, this), e.off(h.BUFFER_CODECS, this.onBufferCodecs, this), e.off(h.BUFFER_EOS, this.onBufferEos, this), e.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this), e.off(h.LEVEL_UPDATED, this.onLevelUpdated, this), e.off(h.FRAG_PARSED, this.onFragParsed, this), e.off(h.FRAG_CHANGED, this.onFragChanged, this), e.off(h.ERROR, this.onError, this)
     }
     transferMedia() {
       let {
         media: e,
         mediaSource: t
       } = this;
-      if (!module) return null;
+      if (!e) return null;
       let i = {};
       if (this.operationQueue) {
         let e = this.isUpdating();
-        module || this.operationQueue.removeBlockers();
+        e || this.operationQueue.removeBlockers();
         let t = this.isQueued();
-        (module || exports) && this.warn(`Transfering MediaSource with${exports?" operations in queue":""}${module?" updating SourceBuffer(s)":""} ${this.operationQueue}`), this.operationQueue.destroy()
+        (e || t) && this.warn(`Transfering MediaSource with${t?" operations in queue":""}${e?" updating SourceBuffer(s)":""} ${this.operationQueue}`), this.operationQueue.destroy()
       }
       let r = this.transferData;
-      return !this.sourceBufferCount && r && r.mediaSource === exports ? O(require, r.tracks) : this.sourceBuffers.forEach(e => {
+      return !this.sourceBufferCount && r && r.mediaSource === t ? O(i, r.tracks) : this.sourceBuffers.forEach(e => {
         let [t] = e;
         t && (i[t] = O({}, this.tracks[t]), this.removeBuffer(t)), e[0] = e[1] = null
       }), {
-        media: module,
-        mediaSource: exports,
-        tracks: require
+        media: e,
+        mediaSource: t,
+        tracks: i
       }
     }
     initTracks() {
@@ -11826,9 +11826,9 @@ let aH = F(F({
     attachTransferred() {
       let e = this.media,
         t = this.transferData;
-      if (!exports || !module) return;
+      if (!t || !e) return;
       let i = this.tracks,
-        r = exports.tracks,
+        r = t.tracks,
         s = r ? Object.keys(r) : null,
         a = s ? s.length : 0,
         n = () => {
@@ -11842,13 +11842,13 @@ let aH = F(F({
           return
         }
         if (this.log(`attachTransferred: (bufferCodecEventsTotal ${this.bufferCodecEventsTotal})
-required tracks: ${eQ(require,(e,t)=>"initSegment"===e?true:t)};
-transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
-          exports.mediaSource = null, exports.tracks = true;
-          let s = module.currentTime,
+required tracks: ${eQ(i,(e,t)=>"initSegment"===e?true:t)};
+transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, i)) {
+          t.mediaSource = null, t.tracks = true;
+          let s = e.currentTime,
             a = this.details,
             n = Math.max(s, (null == a ? true : a.fragments[0].start) || 0);
-          return n - s > 1 ? void this.log(`attachTransferred: waiting for playback to reach new tracks start time ${s} -> ${n}`) : (this.warn(`attachTransferred: resetting MediaSource for incompatible tracks ("${Object.keys(r)}"->"${Object.keys(require)}") start time: ${n} currentTime: ${s}`), this.onMediaDetaching(h.MEDIA_DETACHING, {}), this.onMediaAttaching(h.MEDIA_ATTACHING, exports), void(module.currentTime = n))
+          return n - s > 1 ? void this.log(`attachTransferred: waiting for playback to reach new tracks start time ${s} -> ${n}`) : (this.warn(`attachTransferred: resetting MediaSource for incompatible tracks ("${Object.keys(r)}"->"${Object.keys(i)}") start time: ${n} currentTime: ${s}`), this.onMediaDetaching(h.MEDIA_DETACHING, {}), this.onMediaAttaching(h.MEDIA_ATTACHING, t), void(e.currentTime = n))
         }
         this.transferData = true, s.forEach(e => {
           let t = r[e];
@@ -11871,8 +11871,8 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     }
     get mediaSourceOpenOrEnded() {
       var e;
-      let t = null == (e = this.mediaSource) ? true : module.readyState;
-      return "open" === exports || "ended" === exports
+      let t = null == (e = this.mediaSource) ? true : e.readyState;
+      return "open" === t || "ended" === t
     }
     onMediaDetaching(e, t) {
       let i = !!t.transferMedia;
@@ -12020,7 +12020,7 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         blockedAudioAppend: e,
         operationQueue: t
       } = this;
-      module && exports && (this.blockedAudioAppend = null, exports.unblockAudio(module.op))
+      e && t && (this.blockedAudioAppend = null, t.unblockAudio(e.op))
     }
     onBufferAppending(e, t) {
       let {
@@ -12217,7 +12217,7 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     updateDuration() {
       this.blockUntilOpen(() => {
         let e = this.getDurationAndRange();
-        module && this.updateMediaSource(module)
+        e && this.updateMediaSource(e)
       })
     }
     onError(e, t) {
@@ -12240,21 +12240,21 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         details: t,
         media: i
       } = this;
-      if (!require || null === exports || !this.sourceBufferCount) return;
-      let r = module.config,
-        a = require.currentTime,
-        n = exports.levelTargetDuration,
-        l = exports.live && null !== r.liveBackBufferLength ? r.liveBackBufferLength : r.backBufferLength;
+      if (!i || null === t || !this.sourceBufferCount) return;
+      let r = e.config,
+        a = i.currentTime,
+        n = t.levelTargetDuration,
+        l = t.live && null !== r.liveBackBufferLength ? r.liveBackBufferLength : r.backBufferLength;
       if (s(l) && l >= 0) {
         let e = Math.max(l, n),
-          t = Math.floor(a / n) * n - module;
-        this.flushBackBuffer(a, n, exports)
+          t = Math.floor(a / n) * n - e;
+        this.flushBackBuffer(a, n, t)
       }
       let o = r.frontBufferFlushThreshold;
       if (s(o) && o > 0) {
         let e = Math.max(Math.max(r.maxBufferLength, o), n),
-          t = Math.floor(a / n) * n + module;
-        this.flushFrontBuffer(a, n, exports)
+          t = Math.floor(a / n) * n + e;
+        this.flushFrontBuffer(a, n, t)
       }
     }
     flushBackBuffer(e, t, i) {
@@ -12302,28 +12302,28 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         details: t,
         mediaSource: i
       } = this;
-      if (!exports || !this.media || (null == require ? true : require.readyState) !== "open") return null;
-      let r = exports.edge;
-      if (exports.live && this.hls.config.liveDurationInfinity) {
-        if (exports.fragments.length && require.setLiveSeekableRange) {
-          let e = Math.max(0, exports.fragmentStart),
-            i = Math.max(module, r);
+      if (!t || !this.media || (null == i ? true : i.readyState) !== "open") return null;
+      let r = t.edge;
+      if (t.live && this.hls.config.liveDurationInfinity) {
+        if (t.fragments.length && i.setLiveSeekableRange) {
+          let e = Math.max(0, t.fragmentStart),
+            i = Math.max(e, r);
           return {
             duration: 1 / 0,
-            start: module,
-            end: require
+            start: e,
+            end: i
           }
         }
         return {
           duration: 1 / 0
         }
       }
-      let a = null == (e = this.overrides) ? true : module.duration;
+      let a = null == (e = this.overrides) ? true : e.duration;
       if (a) return s(a) ? {
         duration: a
       } : null;
       let n = this.media.duration;
-      return r > (s(require.duration) ? require.duration : 0) && r > n || !s(n) ? {
+      return r > (s(i.duration) ? i.duration : 0) && r > n || !s(n) ? {
         duration: r
       } : null
     }
@@ -12337,7 +12337,7 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     }
     get tracksReady() {
       let e = this.pendingTrackCount;
-      return module > 0 && (module >= this.bufferCodecEventsTotal || this.isPending(this.tracks.audiovideo))
+      return e > 0 && (e >= this.bufferCodecEventsTotal || this.isPending(this.tracks.audiovideo))
     }
     checkPendingTracks() {
       let {
@@ -12345,10 +12345,10 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         pendingTrackCount: t,
         tracks: i
       } = this;
-      if (this.log(`checkPendingTracks (pending: ${exports} codec events expected: ${module}) ${eQ(require)}`), this.tracksReady) {
+      if (this.log(`checkPendingTracks (pending: ${t} codec events expected: ${e}) ${eQ(i)}`), this.tracksReady) {
         var r;
         let e = null == (r = this.transferData) ? true : r.tracks;
-        module && Object.keys(module).length ? this.attachTransferred() : this.createSourceBuffers()
+        e && Object.keys(e).length ? this.attachTransferred() : this.createSourceBuffers()
       }
     }
     bufferCreated() {
@@ -12368,7 +12368,7 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
             }
           }
         }), this.hls.trigger(h.BUFFER_CREATED, {
-          tracks: module
+          tracks: e
         }), this.log(`SourceBuffers created. Running queue: ${this.operationQueue}`), this.sourceBuffers.forEach(([e]) => {
           this.executeNext(e)
         })
@@ -12378,8 +12378,8 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
           type: l.MEDIA_ERROR,
           details: o.BUFFER_INCOMPATIBLE_CODECS_ERROR,
           fatal: true,
-          error: module,
-          reason: module.message
+          error: e,
+          reason: e.message
         })
       }
     }
@@ -12389,25 +12389,25 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         sourceBuffers: t,
         mediaSource: i
       } = this;
-      if (!require) throw Error("createSourceBuffers called when mediaSource was null");
-      for (let s in module) {
-        let a = module[s];
+      if (!i) throw Error("createSourceBuffers called when mediaSource was null");
+      for (let s in e) {
+        let a = e[s];
         if (this.isPending(a)) {
           let e = this.getTrackCodec(a, s),
-            n = `${a.container};codecs=${module}`;
-          a.codec = module, this.log(`creating sourceBuffer(${n})${this.currentOp(s)?" Queued":""} ${eQ(a)}`);
+            n = `${a.container};codecs=${e}`;
+          a.codec = e, this.log(`creating sourceBuffer(${n})${this.currentOp(s)?" Queued":""} ${eQ(a)}`);
           try {
-            let e = require.addSourceBuffer(n),
+            let e = i.addSourceBuffer(n),
               r = r3(s),
-              l = [s, module];
-            exports[r] = l, a.buffer = module
+              l = [s, e];
+            t[r] = l, a.buffer = e
           } catch (e) {
             var r;
-            this.error(`error while trying to add sourceBuffer: ${module.message}`), this.shiftAndExecuteNext(s), null == (r = this.operationQueue) || r.removeBlockers(), delete this.tracks[s], this.hls.trigger(h.ERROR, {
+            this.error(`error while trying to add sourceBuffer: ${e.message}`), this.shiftAndExecuteNext(s), null == (r = this.operationQueue) || r.removeBlockers(), delete this.tracks[s], this.hls.trigger(h.ERROR, {
               type: l.MEDIA_ERROR,
               details: o.BUFFER_ADD_CODEC_ERROR,
               fatal: false,
-              error: module,
+              error: e,
               sourceBufferName: s,
               mimeType: n,
               parent: a.id
@@ -12455,8 +12455,8 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     }
     get mediaSrc() {
       var e, t;
-      let i = (null == (e = this.media) || null == (t = module.querySelector) ? true : exports.call(module, "source")) || this.media;
-      return null == require ? true : require.src
+      let i = (null == (e = this.media) || null == (t = e.querySelector) ? true : t.call(e, "source")) || this.media;
+      return null == i ? true : i.src
     }
     onSBUpdateStart(e) {
       let t = this.currentOp(e);
@@ -12591,11 +12591,11 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     }
     registerListeners() {
       let e = this.hls;
-      module.on(h.ERROR, this.onError, this), module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.LEVEL_UPDATED, this.onLevelUpdated, this)
+      e.on(h.ERROR, this.onError, this), e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.LEVEL_UPDATED, this.onLevelUpdated, this)
     }
     unregisterListeners() {
       let e = this.hls;
-      module && (module.off(h.ERROR, this.onError, this), module.off(h.ERROR, this.onErrorOut, this), module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.LEVEL_UPDATED, this.onLevelUpdated, this))
+      e && (e.off(h.ERROR, this.onError, this), e.off(h.ERROR, this.onErrorOut, this), e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.LEVEL_UPDATED, this.onLevelUpdated, this))
     }
     destroy() {
       this.unregisterListeners(), this.hls = null
@@ -12610,8 +12610,8 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     getVariantIndex() {
       var e;
       let t = this.hls,
-        i = exports.currentLevel;
-      return null != (e = exports.loadLevelObj) && module.details || false === require ? exports.loadLevel : require
+        i = t.currentLevel;
+      return null != (e = t.loadLevelObj) && e.details || false === i ? t.loadLevel : i
     }
     variantHasKey(e, t) {
       if (e) {
@@ -12899,11 +12899,11 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     }
     checkFPSInterval() {
       let e = this.media;
-      if (module)
+      if (e)
         if (this.isVideoPlaybackQualityAvailable) {
-          let t = module.getVideoPlaybackQuality();
-          this.checkFPS(module, exports.totalVideoFrames, exports.droppedVideoFrames)
-        } else this.checkFPS(module, module.webkitDecodedFrameCount, module.webkitDroppedFrameCount)
+          let t = e.getVideoPlaybackQuality();
+          this.checkFPS(e, t.totalVideoFrames, t.droppedVideoFrames)
+        } else this.checkFPS(e, e.webkitDecodedFrameCount, e.webkitDroppedFrameCount)
     }
   },
   stretchShortVideoTrack: false,
@@ -13085,14 +13085,14 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       let {
         hls: e
       } = this;
-      module.on(h.LEVEL_LOADED, this.onLevelLoaded, this), module.on(h.SUBTITLE_TRACKS_UPDATED, this.onSubtitleTracksUpdated, this), module.on(h.SUBTITLE_TRACK_SWITCH, this.onSubtitleTrackSwitch, this), module.on(h.SUBTITLE_TRACK_LOADED, this.onSubtitleTrackLoaded, this), module.on(h.SUBTITLE_FRAG_PROCESSED, this.onSubtitleFragProcessed, this), module.on(h.BUFFER_FLUSHING, this.onBufferFlushing, this)
+      e.on(h.LEVEL_LOADED, this.onLevelLoaded, this), e.on(h.SUBTITLE_TRACKS_UPDATED, this.onSubtitleTracksUpdated, this), e.on(h.SUBTITLE_TRACK_SWITCH, this.onSubtitleTrackSwitch, this), e.on(h.SUBTITLE_TRACK_LOADED, this.onSubtitleTrackLoaded, this), e.on(h.SUBTITLE_FRAG_PROCESSED, this.onSubtitleFragProcessed, this), e.on(h.BUFFER_FLUSHING, this.onBufferFlushing, this)
     }
     unregisterListeners() {
       super.unregisterListeners();
       let {
         hls: e
       } = this;
-      module.off(h.LEVEL_LOADED, this.onLevelLoaded, this), module.off(h.SUBTITLE_TRACKS_UPDATED, this.onSubtitleTracksUpdated, this), module.off(h.SUBTITLE_TRACK_SWITCH, this.onSubtitleTrackSwitch, this), module.off(h.SUBTITLE_TRACK_LOADED, this.onSubtitleTrackLoaded, this), module.off(h.SUBTITLE_FRAG_PROCESSED, this.onSubtitleFragProcessed, this), module.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this)
+      e.off(h.LEVEL_LOADED, this.onLevelLoaded, this), e.off(h.SUBTITLE_TRACKS_UPDATED, this.onSubtitleTracksUpdated, this), e.off(h.SUBTITLE_TRACK_SWITCH, this.onSubtitleTrackSwitch, this), e.off(h.SUBTITLE_TRACK_LOADED, this.onSubtitleTrackLoaded, this), e.off(h.SUBTITLE_FRAG_PROCESSED, this.onSubtitleFragProcessed, this), e.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this)
     }
     startLoad(e, t) {
       this.stopLoad(), this.state = iw, this.setInterval(500), this.nextLoadPosition = this.lastCurrentTime = e + this.timelineOffset, this.startPosition = t ? false : e, this.tick()
@@ -13238,14 +13238,14 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         let {
           currentTrackId: e,
           levels: t
-        } = this, i = null == exports ? true : exports[module];
-        if (!require || !exports.length || !require.details || this.waitForLive(require)) return;
+        } = this, i = null == t ? true : t[e];
+        if (!i || !t.length || !i.details || this.waitForLive(i)) return;
         let {
           config: r
         } = this, s = this.getLoadPosition(), {
           end: a,
           len: n
-        } = tR.bufferedInfo(this.tracksBuffered[this.currentTrackId] || [], s, r.maxBufferHole), l = require.details;
+        } = tR.bufferedInfo(this.tracksBuffered[this.currentTrackId] || [], s, r.maxBufferHole), l = i.details;
         if (n > this.hls.maxBufferLength + l.levelTargetDuration) return;
         let o = l.fragments,
           h = o.length,
@@ -13254,13 +13254,13 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
           c = this.fragPrevious;
         if (a < d) {
           let e = r.maxFragLookUpTolerance;
-          (u = e5(c, o, Math.max(o[0].start, a), a > d - module ? 0 : module)) || !c || !(c.start < o[0].start) || (u = o[0])
+          (u = e5(c, o, Math.max(o[0].start, a), a > d - e ? 0 : e)) || !c || !(c.start < o[0].start) || (u = o[0])
         } else u = o[h - 1];
-        if (!(u = this.filterReplacedPrimary(u, require.details))) return;
+        if (!(u = this.filterReplacedPrimary(u, i.details))) return;
         let f = o[u.sn - l.startSN - 1];
         if (f && f.cc === u.cc && this.fragmentTracker.getState(f) === tl && (u = f), this.fragmentTracker.getState(u) === tl) {
           let e = this.mapToInitFragWhenRequired(u);
-          module && this.loadFragment(module, require, a)
+          e && this.loadFragment(e, i, a)
         }
       }
     }
@@ -13300,13 +13300,13 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       let {
         hls: e
       } = this;
-      module.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.MANIFEST_PARSED, this.onManifestParsed, this), module.on(h.LEVEL_LOADING, this.onLevelLoading, this), module.on(h.LEVEL_SWITCHING, this.onLevelSwitching, this), module.on(h.SUBTITLE_TRACK_LOADED, this.onSubtitleTrackLoaded, this), module.on(h.ERROR, this.onError, this)
+      e.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.MANIFEST_PARSED, this.onManifestParsed, this), e.on(h.LEVEL_LOADING, this.onLevelLoading, this), e.on(h.LEVEL_SWITCHING, this.onLevelSwitching, this), e.on(h.SUBTITLE_TRACK_LOADED, this.onSubtitleTrackLoaded, this), e.on(h.ERROR, this.onError, this)
     }
     unregisterListeners() {
       let {
         hls: e
       } = this;
-      module.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.MANIFEST_PARSED, this.onManifestParsed, this), module.off(h.LEVEL_LOADING, this.onLevelLoading, this), module.off(h.LEVEL_SWITCHING, this.onLevelSwitching, this), module.off(h.SUBTITLE_TRACK_LOADED, this.onSubtitleTrackLoaded, this), module.off(h.ERROR, this.onError, this)
+      e.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.MANIFEST_PARSED, this.onManifestParsed, this), e.off(h.LEVEL_LOADING, this.onLevelLoading, this), e.off(h.LEVEL_SWITCHING, this.onLevelSwitching, this), e.off(h.SUBTITLE_TRACK_LOADED, this.onSubtitleTrackLoaded, this), e.off(h.ERROR, this.onError, this)
     }
     onMediaAttached(e, t) {
       this.media = t.media, this.media && (this.queuedDefaultTrack > false && (this.subtitleTrack = this.queuedDefaultTrack, this.queuedDefaultTrack = false), this.useTextTrackPolling = !(this.media.textTracks && "onchange" in this.media.textTracks), this.useTextTrackPolling ? this.pollTrackChange(500) : this.media.textTracks.addEventListener("change", this.asyncPollTrackChange))
@@ -13458,14 +13458,14 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       let e, {
         media: t
       } = this;
-      if (!exports) return;
-      let i = s$(exports.textTracks),
+      if (!t) return;
+      let i = s$(t.textTracks),
         r = this.currentTrack;
-      if (r && ((e = require.filter(e => rz(r, e))[0]) || this.warn(`Unable to find subtitle TextTrack with name "${r.name}" and language "${r.lang}"`)), [].slice.call(require).forEach(t => {
+      if (r && ((e = i.filter(e => rz(r, e))[0]) || this.warn(`Unable to find subtitle TextTrack with name "${r.name}" and language "${r.lang}"`)), [].slice.call(i).forEach(t => {
           "disabled" !== t.mode && t !== e && (t.mode = "disabled")
-        }), module) {
+        }), e) {
         let t = this.subtitleDisplay ? "showing" : "hidden";
-        module.mode !== exports && (module.mode = exports)
+        e.mode !== t && (e.mode = t)
       }
     }
     setSubtitleTrack(e) {
@@ -13527,14 +13527,14 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       let {
         hls: e
       } = this;
-      module.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.MANIFEST_LOADED, this.onManifestLoaded, this), module.off(h.SUBTITLE_TRACKS_UPDATED, this.onSubtitleTracksUpdated, this), module.off(h.FRAG_LOADING, this.onFragLoading, this), module.off(h.FRAG_LOADED, this.onFragLoaded, this), module.off(h.FRAG_PARSING_USERDATA, this.onFragParsingUserdata, this), module.off(h.FRAG_DECRYPTED, this.onFragDecrypted, this), module.off(h.INIT_PTS_FOUND, this.onInitPtsFound, this), module.off(h.SUBTITLE_TRACKS_CLEARED, this.onSubtitleTracksCleared, this), module.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this), this.hls = this.config = this.media = null, this.cea608Parser1 = this.cea608Parser2 = true
+      e.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.MANIFEST_LOADED, this.onManifestLoaded, this), e.off(h.SUBTITLE_TRACKS_UPDATED, this.onSubtitleTracksUpdated, this), e.off(h.FRAG_LOADING, this.onFragLoading, this), e.off(h.FRAG_LOADED, this.onFragLoaded, this), e.off(h.FRAG_PARSING_USERDATA, this.onFragParsingUserdata, this), e.off(h.FRAG_DECRYPTED, this.onFragDecrypted, this), e.off(h.INIT_PTS_FOUND, this.onInitPtsFound, this), e.off(h.SUBTITLE_TRACKS_CLEARED, this.onSubtitleTracksCleared, this), e.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this), this.hls = this.config = this.media = null, this.cea608Parser1 = this.cea608Parser2 = true
     }
     initCea608Parsers() {
       let e = new aP(this, "textTrack1"),
         t = new aP(this, "textTrack2"),
         i = new aP(this, "textTrack3"),
         r = new aP(this, "textTrack4");
-      this.cea608Parser1 = new aa(1, module, exports), this.cea608Parser2 = new aa(3, require, r)
+      this.cea608Parser1 = new aa(1, e, t), this.cea608Parser2 = new aa(3, i, r)
     }
     addCues(e, t, i, r, s) {
       let a = false;
@@ -13651,10 +13651,10 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       let {
         media: e
       } = this;
-      if (!module) return;
-      let t = module.textTracks;
-      if (exports)
-        for (let e = 0; module < exports.length; module++) sB(exports[module])
+      if (!e) return;
+      let t = e.textTracks;
+      if (t)
+        for (let e = 0; e < t.length; e++) sB(t[e])
     }
     onSubtitleTracksUpdated(e, t) {
       let i = t.subtitleTracks || [],
@@ -13946,13 +13946,13 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       let {
         hls: e
       } = this;
-      module.on(h.LEVEL_LOADED, this.onLevelLoaded, this), module.on(h.AUDIO_TRACKS_UPDATED, this.onAudioTracksUpdated, this), module.on(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), module.on(h.AUDIO_TRACK_LOADED, this.onAudioTrackLoaded, this), module.on(h.BUFFER_RESET, this.onBufferReset, this), module.on(h.BUFFER_CREATED, this.onBufferCreated, this), module.on(h.BUFFER_FLUSHING, this.onBufferFlushing, this), module.on(h.BUFFER_FLUSHED, this.onBufferFlushed, this), module.on(h.INIT_PTS_FOUND, this.onInitPtsFound, this), module.on(h.FRAG_LOADING, this.onFragLoading, this), module.on(h.FRAG_BUFFERED, this.onFragBuffered, this)
+      e.on(h.LEVEL_LOADED, this.onLevelLoaded, this), e.on(h.AUDIO_TRACKS_UPDATED, this.onAudioTracksUpdated, this), e.on(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), e.on(h.AUDIO_TRACK_LOADED, this.onAudioTrackLoaded, this), e.on(h.BUFFER_RESET, this.onBufferReset, this), e.on(h.BUFFER_CREATED, this.onBufferCreated, this), e.on(h.BUFFER_FLUSHING, this.onBufferFlushing, this), e.on(h.BUFFER_FLUSHED, this.onBufferFlushed, this), e.on(h.INIT_PTS_FOUND, this.onInitPtsFound, this), e.on(h.FRAG_LOADING, this.onFragLoading, this), e.on(h.FRAG_BUFFERED, this.onFragBuffered, this)
     }
     unregisterListeners() {
       let {
         hls: e
       } = this;
-      module && (super.unregisterListeners(), module.off(h.LEVEL_LOADED, this.onLevelLoaded, this), module.off(h.AUDIO_TRACKS_UPDATED, this.onAudioTracksUpdated, this), module.off(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), module.off(h.AUDIO_TRACK_LOADED, this.onAudioTrackLoaded, this), module.off(h.BUFFER_RESET, this.onBufferReset, this), module.off(h.BUFFER_CREATED, this.onBufferCreated, this), module.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this), module.off(h.BUFFER_FLUSHED, this.onBufferFlushed, this), module.off(h.INIT_PTS_FOUND, this.onInitPtsFound, this), module.off(h.FRAG_LOADING, this.onFragLoading, this), module.off(h.FRAG_BUFFERED, this.onFragBuffered, this))
+      e && (super.unregisterListeners(), e.off(h.LEVEL_LOADED, this.onLevelLoaded, this), e.off(h.AUDIO_TRACKS_UPDATED, this.onAudioTracksUpdated, this), e.off(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), e.off(h.AUDIO_TRACK_LOADED, this.onAudioTrackLoaded, this), e.off(h.BUFFER_RESET, this.onBufferReset, this), e.off(h.BUFFER_CREATED, this.onBufferCreated, this), e.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this), e.off(h.BUFFER_FLUSHED, this.onBufferFlushed, this), e.off(h.INIT_PTS_FOUND, this.onInitPtsFound, this), e.off(h.FRAG_LOADING, this.onFragLoading, this), e.off(h.FRAG_BUFFERED, this.onFragBuffered, this))
     }
     onInitPtsFound(e, {
       frag: t,
@@ -14002,8 +14002,8 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
           let {
             levels: e,
             trackId: t
-          } = this, i = null == module ? true : module[exports], r = null == require ? true : require.details;
-          if (r && !this.waitForLive(require)) {
+          } = this, i = null == e ? true : e[t], r = null == i ? true : i.details;
+          if (r && !this.waitForLive(i)) {
             if (this.waitForCdnTuneIn(r)) break;
             this.state = i$
           }
@@ -14014,23 +14014,23 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
           break;
         case i$: {
           let e = this.waitingData;
-          if (module) {
+          if (e) {
             let {
               frag: t,
               part: i,
               cache: r,
               complete: s
-            } = module, a = this.mainAnchor;
-            if (true !== this.initPTS[exports.cc]) {
+            } = e, a = this.mainAnchor;
+            if (true !== this.initPTS[t.cc]) {
               this.waitingData = null, this.state = iC;
               let e = {
-                frag: exports,
-                part: require,
+                frag: t,
+                part: i,
                 payload: r.flush().buffer,
                 networkDetails: null
               };
-              this._handleFragmentLoadProgress(module), s && super._handleFragmentLoadComplete(module)
-            } else a && a.cc !== module.frag.cc && this.syncWithAnchor(a, module.frag)
+              this._handleFragmentLoadProgress(e), s && super._handleFragmentLoadComplete(e)
+            } else a && a.cc !== e.frag.cc && this.syncWithAnchor(a, e.frag)
           } else this.state = iw
         }
       }
@@ -14038,13 +14038,13 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     }
     resetLoadingState() {
       let e = this.waitingData;
-      module && (this.fragmentTracker.removeFragment(module.frag), this.waitingData = null), super.resetLoadingState()
+      e && (this.fragmentTracker.removeFragment(e.frag), this.waitingData = null), super.resetLoadingState()
     }
     onTickEnd() {
       let {
         media: e
       } = this;
-      null != module && module.readyState && (this.lastCurrentTime = module.currentTime)
+      null != e && e.readyState && (this.lastCurrentTime = e.currentTime)
     }
     doTickIdle() {
       var e;
@@ -14053,9 +14053,9 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         levels: i,
         media: r,
         trackId: s
-      } = this, a = exports.config;
-      if (!this.buffering || !r && !this.primaryPrefetch && (this.startFragRequested || !a.startFragPrefetch) || !(null != require && require[s])) return;
-      let n = require[s],
+      } = this, a = t.config;
+      if (!this.buffering || !r && !this.primaryPrefetch && (this.startFragRequested || !a.startFragPrefetch) || !(null != i && i[s])) return;
+      let n = i[s],
         l = n.details;
       if (!l || this.waitForLive(n) || this.waitForCdnTuneIn(l)) {
         this.state = iM, this.startFragRequested = false;
@@ -14066,13 +14066,13 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       let d = this.getFwdBufferInfo(o, P);
       if (null === d) return;
       if (!this.switchingTrack && this._streamEnded(d, l)) {
-        exports.trigger(h.BUFFER_EOS, {
+        t.trigger(h.BUFFER_EOS, {
           type: "audio"
         }), this.state = iB;
         return
       }
       let u = d.len,
-        c = exports.maxBufferLength,
+        c = t.maxBufferLength,
         f = l.fragments,
         g = f[0].start,
         p = this.getLoadPosition(),
@@ -14083,12 +14083,12 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         this.bufferFlushed = true;
         return
       }
-      let E = (null == (e = this.mainFragLoading) ? true : module.frag) || null;
+      let E = (null == (e = this.mainFragLoading) ? true : e.frag) || null;
       if (!this.audioOnly && this.startFragRequested && E && et(y) && !y.endList && (!l.live || !this.loadingParts && v < this.hls.liveSyncPosition) && ("OK" === this.fragmentTracker.getState(E) && (this.mainFragLoading = E = null), E && et(E))) {
         if (y.start > E.end) {
           let e = this.fragmentTracker.getFragAtPos(v, D);
-          module && module.end > E.end && (E = module, this.mainFragLoading = {
-            frag: module,
+          e && e.end > E.end && (E = e, this.mainFragLoading = {
+            frag: e,
             targetBufferTime: null
           })
         }
@@ -14407,13 +14407,13 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       let {
         hls: e
       } = this;
-      module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.MANIFEST_PARSED, this.onManifestParsed, this), module.on(h.LEVEL_LOADING, this.onLevelLoading, this), module.on(h.LEVEL_SWITCHING, this.onLevelSwitching, this), module.on(h.AUDIO_TRACK_LOADED, this.onAudioTrackLoaded, this), module.on(h.ERROR, this.onError, this)
+      e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.MANIFEST_PARSED, this.onManifestParsed, this), e.on(h.LEVEL_LOADING, this.onLevelLoading, this), e.on(h.LEVEL_SWITCHING, this.onLevelSwitching, this), e.on(h.AUDIO_TRACK_LOADED, this.onAudioTrackLoaded, this), e.on(h.ERROR, this.onError, this)
     }
     unregisterListeners() {
       let {
         hls: e
       } = this;
-      module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.MANIFEST_PARSED, this.onManifestParsed, this), module.off(h.LEVEL_LOADING, this.onLevelLoading, this), module.off(h.LEVEL_SWITCHING, this.onLevelSwitching, this), module.off(h.AUDIO_TRACK_LOADED, this.onAudioTrackLoaded, this), module.off(h.ERROR, this.onError, this)
+      e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.MANIFEST_PARSED, this.onManifestParsed, this), e.off(h.LEVEL_LOADING, this.onLevelLoading, this), e.off(h.LEVEL_SWITCHING, this.onLevelSwitching, this), e.off(h.AUDIO_TRACK_LOADED, this.onAudioTrackLoaded, this), e.off(h.ERROR, this.onError, this)
     }
     destroy() {
       this.unregisterListeners(), this.tracks.length = 0, this.tracksInGroup.length = 0, this.currentTrack = null, super.destroy()
@@ -14649,11 +14649,11 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     }
     registerListeners() {
       let e = this.hls;
-      module.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.on(h.MEDIA_DETACHED, this.onMediaDetached, this), module.on(h.BUFFER_CREATED, this.onBufferCreated, this)
+      e.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.on(h.MEDIA_DETACHED, this.onMediaDetached, this), e.on(h.BUFFER_CREATED, this.onBufferCreated, this)
     }
     unregisterListeners() {
       let e = this.hls;
-      module.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.off(h.MEDIA_DETACHED, this.onMediaDetached, this), module.off(h.BUFFER_CREATED, this.onBufferCreated, this)
+      e.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.off(h.MEDIA_DETACHED, this.onMediaDetached, this), e.off(h.BUFFER_CREATED, this.onBufferCreated, this)
     }
     destroy() {
       this.unregisterListeners(), this.onMediaDetached(), this.hls = this.config = this.audioBuffer = this.videoBuffer = null, this.onWaiting = this.onPlaying = this.media = null
@@ -14675,7 +14675,7 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
         sf: "h",
         sid: this.sid,
         cid: this.cid,
-        pr: null == (e = this.media) ? true : module.playbackRate,
+        pr: null == (e = this.media) ? true : e.playbackRate,
         mtp: this.hls.bandwidthEstimate / 1e3
       }
     }
@@ -14783,7 +14783,7 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     createPlaylistLoader() {
       let {
         pLoader: e
-      } = this.config, t = this.applyPlaylistData, i = module || this.config.loader;
+      } = this.config, t = this.applyPlaylistData, i = e || this.config.loader;
       return class {
         constructor(e) {
           this.loader = true, this.loader = new i(e)
@@ -14808,7 +14808,7 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     createFragmentLoader() {
       let {
         fLoader: e
-      } = this.config, t = this.applyFragmentData, i = module || this.config.loader;
+      } = this.config, t = this.applyFragmentData, i = e || this.config.loader;
       return class {
         constructor(e) {
           this.loader = true, this.loader = new i(e)
@@ -14837,11 +14837,11 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
     }
     registerListeners() {
       let e = this.hls;
-      module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.MANIFEST_LOADED, this.onManifestLoaded, this), module.on(h.MANIFEST_PARSED, this.onManifestParsed, this), module.on(h.ERROR, this.onError, this)
+      e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.MANIFEST_LOADED, this.onManifestLoaded, this), e.on(h.MANIFEST_PARSED, this.onManifestParsed, this), e.on(h.ERROR, this.onError, this)
     }
     unregisterListeners() {
       let e = this.hls;
-      module && (module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.MANIFEST_LOADED, this.onManifestLoaded, this), module.off(h.MANIFEST_PARSED, this.onManifestParsed, this), module.off(h.ERROR, this.onError, this))
+      e && (e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.MANIFEST_LOADED, this.onManifestLoaded, this), e.off(h.MANIFEST_PARSED, this.onManifestParsed, this), e.off(h.ERROR, this.onError, this))
     }
     pathways() {
       return (this.levels || []).reduce((e, t) => (false === e.indexOf(t.pathwayId) && e.push(t.pathwayId), e), [])
@@ -14856,7 +14856,7 @@ transfer tracks: ${eQ(r,(e,t)=>"initSegment"===e?true:t)}}`), !q(r, require)) {
       if (this.started = true, this.clearTimeout(), this.enabled && this.uri) {
         if (this.updated) {
           let e = 1e3 * this.timeToLoad - (performance.now() - this.updated);
-          if (module > 0) return void this.scheduleRefresh(this.uri, module)
+          if (e > 0) return void this.scheduleRefresh(this.uri, e)
         }
         this.loadSteeringManifest(this.uri)
       }
@@ -15162,11 +15162,11 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
     }
     registerListeners() {
       let e = this.hls;
-      module && (module.on(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.LEVEL_UPDATED, this.onLevelUpdated, this), module.on(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), module.on(h.AUDIO_TRACK_UPDATED, this.onAudioTrackUpdated, this), module.on(h.SUBTITLE_TRACK_SWITCH, this.onSubtitleTrackSwitch, this), module.on(h.SUBTITLE_TRACK_UPDATED, this.onSubtitleTrackUpdated, this), module.on(h.EVENT_CUE_ENTER, this.onInterstitialCueEnter, this), module.on(h.ASSET_LIST_LOADED, this.onAssetListLoaded, this), module.on(h.BUFFER_APPENDED, this.onBufferAppended, this), module.on(h.BUFFER_FLUSHED, this.onBufferFlushed, this), module.on(h.BUFFERED_TO_END, this.onBufferedToEnd, this), module.on(h.MEDIA_ENDED, this.onMediaEnded, this), module.on(h.ERROR, this.onError, this), module.on(h.DESTROYING, this.onDestroying, this))
+      e && (e.on(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.LEVEL_UPDATED, this.onLevelUpdated, this), e.on(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), e.on(h.AUDIO_TRACK_UPDATED, this.onAudioTrackUpdated, this), e.on(h.SUBTITLE_TRACK_SWITCH, this.onSubtitleTrackSwitch, this), e.on(h.SUBTITLE_TRACK_UPDATED, this.onSubtitleTrackUpdated, this), e.on(h.EVENT_CUE_ENTER, this.onInterstitialCueEnter, this), e.on(h.ASSET_LIST_LOADED, this.onAssetListLoaded, this), e.on(h.BUFFER_APPENDED, this.onBufferAppended, this), e.on(h.BUFFER_FLUSHED, this.onBufferFlushed, this), e.on(h.BUFFERED_TO_END, this.onBufferedToEnd, this), e.on(h.MEDIA_ENDED, this.onMediaEnded, this), e.on(h.ERROR, this.onError, this), e.on(h.DESTROYING, this.onDestroying, this))
     }
     unregisterListeners() {
       let e = this.hls;
-      module && (module.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.LEVEL_UPDATED, this.onLevelUpdated, this), module.off(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), module.off(h.AUDIO_TRACK_UPDATED, this.onAudioTrackUpdated, this), module.off(h.SUBTITLE_TRACK_SWITCH, this.onSubtitleTrackSwitch, this), module.off(h.SUBTITLE_TRACK_UPDATED, this.onSubtitleTrackUpdated, this), module.off(h.EVENT_CUE_ENTER, this.onInterstitialCueEnter, this), module.off(h.ASSET_LIST_LOADED, this.onAssetListLoaded, this), module.off(h.BUFFER_CODECS, this.onBufferCodecs, this), module.off(h.BUFFER_APPENDED, this.onBufferAppended, this), module.off(h.BUFFER_FLUSHED, this.onBufferFlushed, this), module.off(h.BUFFERED_TO_END, this.onBufferedToEnd, this), module.off(h.MEDIA_ENDED, this.onMediaEnded, this), module.off(h.ERROR, this.onError, this), module.off(h.DESTROYING, this.onDestroying, this))
+      e && (e.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.LEVEL_UPDATED, this.onLevelUpdated, this), e.off(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), e.off(h.AUDIO_TRACK_UPDATED, this.onAudioTrackUpdated, this), e.off(h.SUBTITLE_TRACK_SWITCH, this.onSubtitleTrackSwitch, this), e.off(h.SUBTITLE_TRACK_UPDATED, this.onSubtitleTrackUpdated, this), e.off(h.EVENT_CUE_ENTER, this.onInterstitialCueEnter, this), e.off(h.ASSET_LIST_LOADED, this.onAssetListLoaded, this), e.off(h.BUFFER_CODECS, this.onBufferCodecs, this), e.off(h.BUFFER_APPENDED, this.onBufferAppended, this), e.off(h.BUFFER_FLUSHED, this.onBufferFlushed, this), e.off(h.BUFFERED_TO_END, this.onBufferedToEnd, this), e.off(h.MEDIA_ENDED, this.onMediaEnded, this), e.off(h.ERROR, this.onError, this), e.off(h.DESTROYING, this.onDestroying, this))
     }
     startLoad() {
       this.resumeBuffering()
@@ -15176,18 +15176,18 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
     }
     resumeBuffering() {
       var e;
-      null == (e = this.getBufferingPlayer()) || module.resumeBuffering()
+      null == (e = this.getBufferingPlayer()) || e.resumeBuffering()
     }
     pauseBuffering() {
       var e;
-      null == (e = this.getBufferingPlayer()) || module.pauseBuffering()
+      null == (e = this.getBufferingPlayer()) || e.pauseBuffering()
     }
     destroy() {
       this.unregisterListeners(), this.stopLoad(), this.assetListLoader && this.assetListLoader.destroy(), this.emptyPlayerQueue(), this.clearScheduleState(), this.schedule && this.schedule.destroy(), this.media = this.detachedData = this.mediaSelection = this.requiredTracks = this.altSelection = this.schedule = this.manager = null, this.hls = this.HlsPlayerClass = this.log = null, this.assetListLoader = null, this.onPlay = this.onPause = this.onSeeking = this.onTimeupdate = null, this.onScheduleUpdate = null
     }
     onDestroying() {
       let e = this.primaryMedia || this.media;
-      module && this.removeMediaListeners(module)
+      e && this.removeMediaListeners(e)
     }
     removeMediaListeners(e) {
       iI(e, "play", this.onPlay), iI(e, "pause", this.onPause), iI(e, "seeking", this.onSeeking), iI(e, "timeupdate", this.onTimeupdate)
@@ -15237,8 +15237,8 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
           return 0
         },
         r = () => {
-          let t = module.bufferedPos;
-          return exports === Number.MAX_VALUE ? s("primary") : Math.max(exports, 0)
+          let t = e.bufferedPos;
+          return t === Number.MAX_VALUE ? s("primary") : Math.max(t, 0)
         },
         s = t => {
           var i, r;
@@ -15303,25 +15303,25 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
           }
         },
         n = () => {
-          let t = module.effectivePlayingItem;
-          if (module.isInterstitial(exports)) return exports;
-          let i = module.bufferingItem || module.waitingItem;
-          return module.isInterstitial(require) ? require : null
+          let t = e.effectivePlayingItem;
+          if (e.isInterstitial(t)) return t;
+          let i = e.bufferingItem || e.waitingItem;
+          return e.isInterstitial(i) ? i : null
         },
         l = {
           get bufferedEnd() {
-            let t = module.bufferingItem || module.waitingItem,
-              r = module.bufferingItem;
-            if (r && r === exports) {
+            let t = e.bufferingItem || e.waitingItem,
+              r = e.bufferingItem;
+            if (r && r === t) {
               var o;
-              return require(r, "playout", module.bufferingAsset, "bufferedPos", "bufferedEnd") - r.playout.start || (null == (o = module.bufferingAsset) ? true : o.startOffset) || 0
+              return i(r, "playout", e.bufferingAsset, "bufferedPos", "bufferedEnd") - r.playout.start || (null == (o = e.bufferingAsset) ? true : o.startOffset) || 0
             }
             return 0
           },
           get currentTime() {
             let t = n(),
-              r = module.effectivePlayingItem;
-            if (r && r === exports) return require(r, "playout", module.effectivePlayingAsset, "timelinePos", "currentTime") - r.playout.start;
+              r = e.effectivePlayingItem;
+            if (r && r === t) return i(r, "playout", e.effectivePlayingAsset, "timelinePos", "currentTime") - r.playout.start;
             return 0
           },
           set currentTime(time) {
@@ -15331,19 +15331,19 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
           },
           get duration() {
             let e = n();
-            if (module) return module.playout.end - module.playout.start;
+            if (e) return e.playout.end - e.playout.start;
             return 0
           },
           get assetPlayers() {
             var h;
             let t = null == (h = n()) ? true : h.event.assetList;
-            if (exports) return exports.map(t => e.getAssetPlayer(t.identifier));
+            if (t) return t.map(t => e.getAssetPlayer(t.identifier));
             return []
           },
           get playingIndex() {
             var d;
             let t = null == (d = n()) ? true : d.event;
-            if (exports && module.effectivePlayingAsset) return exports.findAssetIndex(module.effectivePlayingAsset);
+            if (t && e.effectivePlayingAsset) return t.findAssetIndex(e.effectivePlayingAsset);
             return false
           },
           get scheduleItem() {
@@ -15353,46 +15353,46 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
       return this.manager = {
         get events() {
           var u;
-          return (null == (u = module.schedule) || null == (u = u.events) ? true : u.slice(0)) || []
+          return (null == (u = e.schedule) || null == (u = u.events) ? true : u.slice(0)) || []
         },
         get schedule() {
           var c;
-          return (null == (c = module.schedule) || null == (c = c.items) ? true : c.slice(0)) || []
+          return (null == (c = e.schedule) || null == (c = c.items) ? true : c.slice(0)) || []
         },
         get interstitialPlayer() {
           if (n()) return l;
           return null
         },
         get playerQueue() {
-          return module.playerQueue.slice(0)
+          return e.playerQueue.slice(0)
         },
         get bufferingAsset() {
-          return module.bufferingAsset
+          return e.bufferingAsset
         },
         get bufferingItem() {
-          return module.bufferingItem || module.waitingItem
+          return e.bufferingItem || e.waitingItem
         },
         get bufferingIndex() {
-          let t = module.bufferingItem || module.waitingItem;
-          return module.findItemIndex(exports)
+          let t = e.bufferingItem || e.waitingItem;
+          return e.findItemIndex(t)
         },
         get playingAsset() {
-          return module.effectivePlayingAsset
+          return e.effectivePlayingAsset
         },
         get playingItem() {
-          return module.effectivePlayingItem
+          return e.effectivePlayingItem
         },
         get playingIndex() {
-          let t = module.effectivePlayingItem;
-          return module.findItemIndex(exports)
+          let t = e.effectivePlayingItem;
+          return e.findItemIndex(t)
         },
         primary: {
           get bufferedEnd() {
             return r()
           },
           get currentTime() {
-            let t = module.timelinePos;
-            return exports > 0 ? exports : 0
+            let t = e.timelinePos;
+            return t > 0 ? t : 0
           },
           set currentTime(time) {
             a(time, "primary")
@@ -15402,15 +15402,15 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
           },
           get seekableStart() {
             var f;
-            return (null == (f = module.primaryDetails) ? true : f.fragmentStart) || 0
+            return (null == (f = e.primaryDetails) ? true : f.fragmentStart) || 0
           }
         },
         integrated: {
           get bufferedEnd() {
-            return require(module.bufferingItem || module.waitingItem, "integrated", module.bufferingAsset, "bufferedPos", "bufferedEnd")
+            return i(e.bufferingItem || e.waitingItem, "integrated", e.bufferingAsset, "bufferedPos", "bufferedEnd")
           },
           get currentTime() {
-            return require(module.effectivePlayingItem, "integrated", module.effectivePlayingAsset, "timelinePos", "currentTime")
+            return i(e.effectivePlayingItem, "integrated", e.effectivePlayingAsset, "timelinePos", "currentTime")
           },
           set currentTime(time) {
             a(time, "integrated")
@@ -15428,15 +15428,15 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
                 if (a) return t + (a[i].start - a.start)
               }
               return t
-            })((null == (g = module.primaryDetails) ? true : g.fragmentStart) || 0, "integrated")
+            })((null == (g = e.primaryDetails) ? true : g.fragmentStart) || 0, "integrated")
           }
         },
         skip: () => {
-          let t = module.effectivePlayingItem,
-            i = null == exports ? true : exports.event;
-          if (require && !require.restrictions.skip) {
-            let r = module.findItemIndex(exports);
-            require.appendInPlace ? a(exports.playout.start + exports.event.duration + .001, "playout") : module.advanceAfterAssetEnded(require, r, 1 / 0)
+          let t = e.effectivePlayingItem,
+            i = null == t ? true : t.event;
+          if (i && !i.restrictions.skip) {
+            let r = e.findItemIndex(t);
+            i.appendInPlace ? a(t.playout.start + t.event.duration + .001, "playout") : e.advanceAfterAssetEnded(i, r, 1 / 0)
           }
         }
       }
@@ -15450,8 +15450,8 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
     get playingLastItem() {
       var e;
       let t = this.playingItem,
-        i = null == (e = this.schedule) ? true : module.items;
-      return !!this.playbackStarted && !!exports && !!require && this.findItemIndex(exports) === require.length - 1
+        i = null == (e = this.schedule) ? true : e.items;
+      return !!this.playbackStarted && !!t && !!i && this.findItemIndex(t) === i.length - 1
     }
     get playbackStarted() {
       return null !== this.effectivePlayingItem
@@ -15460,15 +15460,15 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
       var e, t;
       if (null === this.mediaSelection) return;
       let i = this.waitingItem || this.playingItem;
-      if (this.isInterstitial(require) && !require.event.appendInPlace) return;
+      if (this.isInterstitial(i) && !i.event.appendInPlace) return;
       let r = this.media;
-      !r && null != (e = this.bufferingItem) && null != (e = module.event) && module.appendInPlace && (r = this.primaryMedia);
-      let a = null == (t = r) ? true : exports.currentTime;
+      !r && null != (e = this.bufferingItem) && null != (e = e.event) && e.appendInPlace && (r = this.primaryMedia);
+      let a = null == (t = r) ? true : t.currentTime;
       if (true !== a && s(a)) return a
     }
     get primaryMedia() {
       var e;
-      return this.media || (null == (e = this.detachedData) ? true : module.media) || null
+      return this.media || (null == (e = this.detachedData) ? true : e.media) || null
     }
     isInterstitial(e) {
       return !!(null != e && e.event)
@@ -15538,24 +15538,24 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
     }
     checkStart() {
       let e = this.schedule,
-        t = null == module ? true : module.events;
-      if (!exports || this.playbackDisabled || !this.media) return;
+        t = null == e ? true : e.events;
+      if (!t || this.playbackDisabled || !this.media) return;
       false === this.bufferedPos && (this.bufferedPos = 0);
       let i = this.timelinePos,
         r = this.effectivePlayingItem;
-      if (false === require) {
+      if (false === i) {
         let i = this.hls.startPosition;
-        if (this.log(sZ("checkStart", require)), this.timelinePos = require, exports.length && exports[0].cue.pre) {
-          let i = module.findEventIndex(exports[0].identifier);
-          this.setSchedulePosition(require)
-        } else if (require >= 0 || !this.primaryLive) {
-          let t = this.timelinePos = require > 0 ? require : 0,
-            r = module.findItemIndexAtTime(exports);
+        if (this.log(sZ("checkStart", i)), this.timelinePos = i, t.length && t[0].cue.pre) {
+          let i = e.findEventIndex(t[0].identifier);
+          this.setSchedulePosition(i)
+        } else if (i >= 0 || !this.primaryLive) {
+          let t = this.timelinePos = i > 0 ? i : 0,
+            r = e.findItemIndexAtTime(t);
           this.setSchedulePosition(r)
         }
       } else if (r && !this.playingItem) {
-        let t = module.findItemIndex(r);
-        this.setSchedulePosition(exports)
+        let t = e.findItemIndex(r);
+        this.setSchedulePosition(t)
       }
     }
     advanceAssetBuffering(e, t) {
@@ -15689,11 +15689,11 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
     }
     get primaryDetails() {
       var e;
-      return null == (e = this.mediaSelection) ? true : module.main.details
+      return null == (e = this.mediaSelection) ? true : e.main.details
     }
     get primaryLive() {
       var e;
-      return !!(null != (e = this.primaryDetails) && module.live)
+      return !!(null != (e = this.primaryDetails) && e.live)
     }
     resumePrimary(e, t, i) {
       var r, s;
@@ -15735,7 +15735,7 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
     }
     onManifestLoading() {
       var e;
-      this.stopLoad(), null == (e = this.schedule) || module.reset(), this.emptyPlayerQueue(), this.clearScheduleState(), this.shouldPlay = false, this.bufferedPos = this.timelinePos = false, this.mediaSelection = this.altSelection = this.manager = this.requiredTracks = null, this.hls.off(h.BUFFER_CODECS, this.onBufferCodecs, this), this.hls.on(h.BUFFER_CODECS, this.onBufferCodecs, this)
+      this.stopLoad(), null == (e = this.schedule) || e.reset(), this.emptyPlayerQueue(), this.clearScheduleState(), this.shouldPlay = false, this.bufferedPos = this.timelinePos = false, this.mediaSelection = this.altSelection = this.manager = this.requiredTracks = null, this.hls.off(h.BUFFER_CODECS, this.onBufferCodecs, this), this.hls.on(h.BUFFER_CODECS, this.onBufferCodecs, this)
     }
     onLevelUpdated(e, t) {
       if (false === t.level || !this.schedule) return;
@@ -16011,9 +16011,9 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
         playerQueue: e,
         primaryMedia: t
       } = this;
-      if (exports) {
-        for (let i = 0; require < module.length; require++)
-          if (module[require].media === exports) return module[require]
+      if (t) {
+        for (let i = 0; i < e.length; i++)
+          if (e[i].media === t) return e[i]
       }
       return null
     }
@@ -16159,7 +16159,7 @@ Schedule: ${a.map(e=>sX(e))} pos: ${this.timelinePos}`), l.length && this.log(`R
     }
     emptyPlayerQueue() {
       let e;
-      for (; e = this.playerQueue.pop();) module.destroy();
+      for (; e = this.playerQueue.pop();) e.destroy();
       this.playerQueue = []
     }
     startAssetPlayer(e, t, i, r, s) {
@@ -16348,13 +16348,13 @@ class aK extends tS {
     let {
       hls: e
     } = this;
-    module && (module.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.on(h.BUFFER_APPENDED, this.onBufferAppended, this))
+    e && (e.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.on(h.BUFFER_APPENDED, this.onBufferAppended, this))
   }
   unregisterListeners() {
     let {
       hls: e
     } = this;
-    module && (module.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.off(h.BUFFER_APPENDED, this.onBufferAppended, this))
+    e && (e.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.off(h.BUFFER_APPENDED, this.onBufferAppended, this))
   }
   destroy() {
     super.destroy(), this.unregisterListeners(), this.media = this.hls = this.fragmentTracker = null, this.mediaSource = true
@@ -16379,9 +16379,9 @@ class aK extends tS {
   }
   tick() {
     var e;
-    if (!(null != (e = this.media) && module.readyState) || !this.hasBuffered) return;
+    if (!(null != (e = this.media) && e.readyState) || !this.hasBuffered) return;
     let t = this.media.currentTime;
-    this.poll(exports, this.lastCurrentTime), this.lastCurrentTime = exports
+    this.poll(t, this.lastCurrentTime), this.lastCurrentTime = t
   }
   poll(e, t) {
     var i, r, s;
@@ -16670,7 +16670,7 @@ function aY(e, t, i, r, s) {
 let aQ = (() => {
   let e = aW();
   try {
-    module && new module(0, 1 / 0, "")
+    e && new e(0, 1 / 0, "")
   } catch (e) {
     return Number.MAX_VALUE
   }
@@ -16689,13 +16689,13 @@ class aX {
     let {
       hls: e
     } = this;
-    module && (module.on(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.FRAG_PARSING_METADATA, this.onFragParsingMetadata, this), module.on(h.BUFFER_FLUSHING, this.onBufferFlushing, this), module.on(h.LEVEL_UPDATED, this.onLevelUpdated, this), module.on(h.LEVEL_PTS_UPDATED, this.onLevelPtsUpdated, this))
+    e && (e.on(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.FRAG_PARSING_METADATA, this.onFragParsingMetadata, this), e.on(h.BUFFER_FLUSHING, this.onBufferFlushing, this), e.on(h.LEVEL_UPDATED, this.onLevelUpdated, this), e.on(h.LEVEL_PTS_UPDATED, this.onLevelPtsUpdated, this))
   }
   _unregisterListeners() {
     let {
       hls: e
     } = this;
-    module && (module.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), module.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.FRAG_PARSING_METADATA, this.onFragParsingMetadata, this), module.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this), module.off(h.LEVEL_UPDATED, this.onLevelUpdated, this), module.off(h.LEVEL_PTS_UPDATED, this.onLevelPtsUpdated, this))
+    e && (e.off(h.MEDIA_ATTACHING, this.onMediaAttaching, this), e.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.FRAG_PARSING_METADATA, this.onFragParsingMetadata, this), e.off(h.BUFFER_FLUSHING, this.onBufferFlushing, this), e.off(h.LEVEL_UPDATED, this.onLevelUpdated, this), e.off(h.LEVEL_PTS_UPDATED, this.onLevelPtsUpdated, this))
   }
   onMediaAttaching(e, t) {
     var i;
@@ -16703,8 +16703,8 @@ class aX {
   }
   onMediaAttached() {
     var e;
-    let t = null == (e = this.hls) ? true : module.latestLevelDetails;
-    exports && this.updateDateRangeCues(exports)
+    let t = null == (e = this.hls) ? true : e.latestLevelDetails;
+    t && this.updateDateRangeCues(t)
   }
   onMediaDetaching(e, t) {
     this.media = null, t.transferMedia || (this.id3Track && (this.removeCues && sB(this.id3Track, this.onEventCueEnter), this.id3Track = null), this.dateRangeCuesAppended = {})
@@ -16911,7 +16911,7 @@ class az {
   }
   get levelDetails() {
     var e;
-    return (null == (e = this.hls) ? true : module.latestLevelDetails) || null
+    return (null == (e = this.hls) ? true : e.latestLevelDetails) || null
   }
   get latency() {
     return this._latency || 0
@@ -16920,22 +16920,22 @@ class az {
     let {
       config: e
     } = this;
-    if (true !== module.liveMaxLatencyDuration) return module.liveMaxLatencyDuration;
+    if (true !== e.liveMaxLatencyDuration) return e.liveMaxLatencyDuration;
     let t = this.levelDetails;
-    return exports ? module.liveMaxLatencyDurationCount * exports.targetduration : 0
+    return t ? e.liveMaxLatencyDurationCount * t.targetduration : 0
   }
   get targetLatency() {
     let e = this.levelDetails;
-    if (null === module || null === this.hls) return null;
+    if (null === e || null === this.hls) return null;
     let {
       holdBack: t,
       partHoldBack: i,
       targetduration: r
-    } = module, {
+    } = e, {
       liveSyncDuration: s,
       liveSyncDurationCount: a,
       lowLatencyMode: n
-    } = this.config, l = this.hls.userConfig, o = n && require || exports;
+    } = this.config, l = this.hls.userConfig, o = n && i || t;
     return (this._targetLatencyUpdated || l.liveSyncDuration || l.liveSyncDurationCount || 0 === o) && (o = true !== s ? s : a * r), o + Math.min(this.stallCount * this.config.liveSyncOnStallIncrease, r)
   }
   set targetLatency(e) {
@@ -16944,30 +16944,30 @@ class az {
   get liveSyncPosition() {
     let e = this.estimateLiveEdge(),
       t = this.targetLatency;
-    if (null === module || null === exports) return null;
+    if (null === e || null === t) return null;
     let i = this.levelDetails;
-    if (null === require) return null;
-    let r = require.edge,
-      s = module - exports - this.edgeStalled;
-    return Math.min(Math.max(r - require.totalduration, s), r - (this.config.lowLatencyMode && require.partTarget || require.targetduration))
+    if (null === i) return null;
+    let r = i.edge,
+      s = e - t - this.edgeStalled;
+    return Math.min(Math.max(r - i.totalduration, s), r - (this.config.lowLatencyMode && i.partTarget || i.targetduration))
   }
   get drift() {
     let e = this.levelDetails;
-    return null === module ? 1 : module.drift
+    return null === e ? 1 : e.drift
   }
   get edgeStalled() {
     let e = this.levelDetails;
-    if (null === module) return 0;
-    let t = 3 * (this.config.lowLatencyMode && module.partTarget || module.targetduration);
-    return Math.max(module.age - exports, 0)
+    if (null === e) return 0;
+    let t = 3 * (this.config.lowLatencyMode && e.partTarget || e.targetduration);
+    return Math.max(e.age - t, 0)
   }
   get forwardBufferLength() {
     let {
       media: e
     } = this, t = this.levelDetails;
-    if (!module || !exports) return 0;
-    let i = module.buffered.length;
-    return (require ? module.buffered.end(require - 1) : exports.edge) - this.currentTime
+    if (!e || !t) return 0;
+    let i = e.buffered.length;
+    return (i ? e.buffered.end(i - 1) : t.edge) - this.currentTime
   }
   destroy() {
     this.unregisterListeners(), this.onMediaDetaching(), this.hls = null
@@ -16976,13 +16976,13 @@ class az {
     let {
       hls: e
     } = this;
-    module && (module.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.LEVEL_UPDATED, this.onLevelUpdated, this), module.on(h.ERROR, this.onError, this))
+    e && (e.on(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.on(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.LEVEL_UPDATED, this.onLevelUpdated, this), e.on(h.ERROR, this.onError, this))
   }
   unregisterListeners() {
     let {
       hls: e
     } = this;
-    module && (module.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), module.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.LEVEL_UPDATED, this.onLevelUpdated, this), module.off(h.ERROR, this.onError, this))
+    e && (e.off(h.MEDIA_ATTACHED, this.onMediaAttached, this), e.off(h.MEDIA_DETACHING, this.onMediaDetaching, this), e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.LEVEL_UPDATED, this.onLevelUpdated, this), e.off(h.ERROR, this.onError, this))
   }
   onMediaAttached(e, t) {
     this.media = t.media, this.media.addEventListener("timeupdate", this.onTimeupdate)
@@ -17008,11 +17008,11 @@ class az {
   }
   estimateLiveEdge() {
     let e = this.levelDetails;
-    return null === module ? null : module.edge + module.age
+    return null === e ? null : e.edge + e.age
   }
   computeLatency() {
     let e = this.estimateLiveEdge();
-    return null === module ? null : module - this.currentTime
+    return null === e ? null : e - this.currentTime
   }
 }
 class aJ extends rY {
@@ -17023,13 +17023,13 @@ class aJ extends rY {
     let {
       hls: e
     } = this;
-    module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.MANIFEST_LOADED, this.onManifestLoaded, this), module.on(h.LEVEL_LOADED, this.onLevelLoaded, this), module.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this), module.on(h.FRAG_BUFFERED, this.onFragBuffered, this), module.on(h.ERROR, this.onError, this)
+    e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.MANIFEST_LOADED, this.onManifestLoaded, this), e.on(h.LEVEL_LOADED, this.onLevelLoaded, this), e.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this), e.on(h.FRAG_BUFFERED, this.onFragBuffered, this), e.on(h.ERROR, this.onError, this)
   }
   _unregisterListeners() {
     let {
       hls: e
     } = this;
-    module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.MANIFEST_LOADED, this.onManifestLoaded, this), module.off(h.LEVEL_LOADED, this.onLevelLoaded, this), module.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this), module.off(h.FRAG_BUFFERED, this.onFragBuffered, this), module.off(h.ERROR, this.onError, this)
+    e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.MANIFEST_LOADED, this.onManifestLoaded, this), e.off(h.LEVEL_LOADED, this.onLevelLoaded, this), e.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this), e.off(h.FRAG_BUFFERED, this.onFragBuffered, this), e.off(h.ERROR, this.onError, this)
   }
   destroy() {
     this._unregisterListeners(), this.steering = null, this.resetLevels(), super.destroy()
@@ -17278,7 +17278,7 @@ class aJ extends rY {
   get startLevel() {
     if (true === this._startLevel) {
       let e = this.hls.config.startLevel;
-      return true !== module ? module : this.hls.firstAutoLevel
+      return true !== e ? e : this.hls.firstAutoLevel
     }
     return this._startLevel
   }
@@ -17374,12 +17374,12 @@ class aJ extends rY {
       maxAutoLevel: t,
       maxHdcpLevel: i
     } = this.hls;
-    this._maxAutoLevel !== exports && (this._maxAutoLevel = exports, this.hls.trigger(h.MAX_AUTO_LEVEL_UPDATED, {
-      autoLevelCapping: module,
+    this._maxAutoLevel !== t && (this._maxAutoLevel = t, this.hls.trigger(h.MAX_AUTO_LEVEL_UPDATED, {
+      autoLevelCapping: e,
       levels: this.levels,
-      maxAutoLevel: exports,
+      maxAutoLevel: t,
       minAutoLevel: this.hls.minAutoLevel,
-      maxHdcpLevel: require
+      maxHdcpLevel: i
     }))
   }
 }
@@ -17399,7 +17399,7 @@ function a0() {
 function a1() {
   if (!K()) returnfalse;
   let e = a0();
-  return !module || module.prototype && "function" == typeof module.prototype.appendBuffer && "function" == typeof module.prototype.remove
+  return !e || e.prototype && "function" == typeof e.prototype.appendBuffer && "function" == typeof e.prototype.remove
 }
 class a2 extends iH {
   constructor(e, t, i) {
@@ -17419,14 +17419,14 @@ class a2 extends iH {
     let {
       hls: e
     } = this;
-    module.on(h.MANIFEST_PARSED, this.onManifestParsed, this), module.on(h.LEVEL_LOADING, this.onLevelLoading, this), module.on(h.LEVEL_LOADED, this.onLevelLoaded, this), module.on(h.FRAG_LOAD_EMERGENCY_ABORTED, this.onFragLoadEmergencyAborted, this), module.on(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), module.on(h.AUDIO_TRACK_SWITCHED, this.onAudioTrackSwitched, this), module.on(h.BUFFER_CREATED, this.onBufferCreated, this), module.on(h.BUFFER_FLUSHED, this.onBufferFlushed, this), module.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this), module.on(h.FRAG_BUFFERED, this.onFragBuffered, this)
+    e.on(h.MANIFEST_PARSED, this.onManifestParsed, this), e.on(h.LEVEL_LOADING, this.onLevelLoading, this), e.on(h.LEVEL_LOADED, this.onLevelLoaded, this), e.on(h.FRAG_LOAD_EMERGENCY_ABORTED, this.onFragLoadEmergencyAborted, this), e.on(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), e.on(h.AUDIO_TRACK_SWITCHED, this.onAudioTrackSwitched, this), e.on(h.BUFFER_CREATED, this.onBufferCreated, this), e.on(h.BUFFER_FLUSHED, this.onBufferFlushed, this), e.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this), e.on(h.FRAG_BUFFERED, this.onFragBuffered, this)
   }
   unregisterListeners() {
     super.unregisterListeners();
     let {
       hls: e
     } = this;
-    module.off(h.MANIFEST_PARSED, this.onManifestParsed, this), module.off(h.LEVEL_LOADED, this.onLevelLoaded, this), module.off(h.FRAG_LOAD_EMERGENCY_ABORTED, this.onFragLoadEmergencyAborted, this), module.off(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), module.off(h.AUDIO_TRACK_SWITCHED, this.onAudioTrackSwitched, this), module.off(h.BUFFER_CREATED, this.onBufferCreated, this), module.off(h.BUFFER_FLUSHED, this.onBufferFlushed, this), module.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this), module.off(h.FRAG_BUFFERED, this.onFragBuffered, this)
+    e.off(h.MANIFEST_PARSED, this.onManifestParsed, this), e.off(h.LEVEL_LOADED, this.onLevelLoaded, this), e.off(h.FRAG_LOAD_EMERGENCY_ABORTED, this.onFragLoadEmergencyAborted, this), e.off(h.AUDIO_TRACK_SWITCHING, this.onAudioTrackSwitching, this), e.off(h.AUDIO_TRACK_SWITCHED, this.onAudioTrackSwitched, this), e.off(h.BUFFER_CREATED, this.onBufferCreated, this), e.off(h.BUFFER_FLUSHED, this.onBufferFlushed, this), e.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this), e.off(h.FRAG_BUFFERED, this.onFragBuffered, this)
   }
   onHandlerDestroying() {
     this.onMediaPlaying = this.onMediaSeeked = null, this.unregisterListeners(), super.onHandlerDestroying()
@@ -17453,8 +17453,8 @@ class a2 extends iH {
         let {
           levels: e,
           level: t
-        } = this, i = null == module ? true : module[exports], r = null == require ? true : require.details;
-        if (!r || r.live && (this.levelLastLoaded !== require || this.waitForLive(require))) this.hls.nextLoadLevel !== this.level && (this.state = iw);
+        } = this, i = null == e ? true : e[t], r = null == i ? true : i.details;
+        if (!r || r.live && (this.levelLastLoaded !== i || this.waitForLive(i))) this.hls.nextLoadLevel !== this.level && (this.state = iw);
         else {
           if (this.waitForCdnTuneIn(r)) break;
           this.state = iw
@@ -17468,7 +17468,7 @@ class a2 extends iH {
   }
   onTickEnd() {
     var e;
-    super.onTickEnd(), null != (e = this.media) && module.readyState && false === this.media.seeking && (this.lastCurrentTime = this.media.currentTime), this.checkFragmentChanged()
+    super.onTickEnd(), null != (e = this.media) && e.readyState && false === this.media.seeking && (this.lastCurrentTime = this.media.currentTime), this.checkFragmentChanged()
   }
   doTickIdle() {
     let {
@@ -17477,20 +17477,20 @@ class a2 extends iH {
       levels: i,
       media: r
     } = this;
-    if (null === exports || !r && !this.primaryPrefetch && (this.startFragRequested || !module.config.startFragPrefetch) || this.altAudio && this.audioOnly) return;
-    let s = this.buffering ? module.nextLoadLevel : module.loadLevel;
-    if (!(null != require && require[s])) return;
-    let a = require[s],
+    if (null === t || !r && !this.primaryPrefetch && (this.startFragRequested || !e.config.startFragPrefetch) || this.altAudio && this.audioOnly) return;
+    let s = this.buffering ? e.nextLoadLevel : e.loadLevel;
+    if (!(null != i && i[s])) return;
+    let a = i[s],
       n = this.getMainFwdBufferInfo();
     if (null === n) return;
     let l = this.getLevelDetails();
     if (l && this._streamEnded(n, l)) {
       let e = {};
-      2 === this.altAudio && (module.type = "video"), this.hls.trigger(h.BUFFER_EOS, module), this.state = iB;
+      2 === this.altAudio && (e.type = "video"), this.hls.trigger(h.BUFFER_EOS, e), this.state = iB;
       return
     }
     if (!this.buffering) return;
-    module.loadLevel !== s && false === module.manualLevel && this.log(`Adapting to level ${s} from level ${this.level}`), this.level = module.nextLoadLevel = s;
+    e.loadLevel !== s && false === e.manualLevel && this.log(`Adapting to level ${s} from level ${this.level}`), this.level = e.nextLoadLevel = s;
     let o = a.details;
     if (!o || this.state === iG || this.waitForLive(a)) {
       this.level = s, this.state = iG, this.startFragRequested = false;
@@ -17505,14 +17505,14 @@ class a2 extends iH {
     if (this.couldBacktrack && !this.fragPrevious && f && et(f) && "OK" !== this.fragmentTracker.getState(f)) {
       var g;
       let e = (null != (g = this.backtrackFragment) ? g : f).sn - o.startSN,
-        t = o.fragments[module - 1];
-      exports && f.cc === exports.cc && (f = exports, this.fragmentTracker.removeFragment(exports))
+        t = o.fragments[e - 1];
+      t && f.cc === t.cc && (f = t, this.fragmentTracker.removeFragment(t))
     } else this.backtrackFragment && n.len && (this.backtrackFragment = null);
     if (f && this.isLoopLoading(f, c)) {
       if (!f.gap) {
         let e = this.audioOnly && !this.altAudio ? z : J,
-          t = (module === J ? this.videoBuffer : this.mediaBuffer) || this.media;
-        exports && this.afterBufferFlushed(exports, module, D)
+          t = (e === J ? this.videoBuffer : this.mediaBuffer) || this.media;
+        t && this.afterBufferFlushed(t, e, D)
       }
       f = this.getNextFragmentLoopLoading(f, o, n, D, u)
     }
@@ -17536,27 +17536,27 @@ class a2 extends iH {
       levels: e,
       media: t
     } = this;
-    if (null != exports && exports.readyState) {
-      let i, r = this.getAppendedFrag(exports.currentTime);
+    if (null != t && t.readyState) {
+      let i, r = this.getAppendedFrag(t.currentTime);
       r && r.start > 1 && this.flushMainBuffer(0, r.start - 1);
       let s = this.getLevelDetails();
       if (null != s && s.live) {
         let e = this.getMainFwdBufferInfo();
-        if (!module || module.len < 2 * s.targetduration) return
+        if (!e || e.len < 2 * s.targetduration) return
       }
-      if (!exports.paused && module) {
-        let t = module[this.hls.nextLoadLevel],
+      if (!t.paused && e) {
+        let t = e[this.hls.nextLoadLevel],
           r = this.fragLastKbps;
-        i = r && this.fragCurrent ? this.fragCurrent.duration * exports.maxBitrate / (1e3 * r) + 1 : 0
+        i = r && this.fragCurrent ? this.fragCurrent.duration * t.maxBitrate / (1e3 * r) + 1 : 0
       } else i = 0;
-      let a = this.getBufferedFrag(exports.currentTime + require);
+      let a = this.getBufferedFrag(t.currentTime + i);
       if (a) {
         let e = this.followingBufferedFrag(a);
-        if (module) {
+        if (e) {
           this.abortCurrentFrag();
-          let t = module.maxStartPTS ? module.maxStartPTS : module.start,
-            i = module.duration,
-            r = Math.max(a.end, exports + Math.min(Math.max(require - this.config.maxFragLookUpTolerance, require * (this.couldBacktrack ? .5 : .125)), require * (this.couldBacktrack ? .75 : .25)));
+          let t = e.maxStartPTS ? e.maxStartPTS : e.start,
+            i = e.duration,
+            r = Math.max(a.end, t + Math.min(Math.max(i - this.config.maxFragLookUpTolerance, i * (this.couldBacktrack ? .5 : .125)), i * (this.couldBacktrack ? .75 : .25)));
           this.flushMainBuffer(r, 1 / 0)
         }
       }
@@ -17564,7 +17564,7 @@ class a2 extends iH {
   }
   abortCurrentFrag() {
     let e = this.fragCurrent;
-    switch (this.fragCurrent = null, this.backtrackFragment = null, module && (module.abortRequests(), this.fragmentTracker.removeFragment(module)), this.state) {
+    switch (this.fragCurrent = null, this.backtrackFragment = null, e && (e.abortRequests(), this.fragmentTracker.removeFragment(e)), this.state) {
       case ix:
       case iC:
       case iO:
@@ -17812,19 +17812,19 @@ class a2 extends iH {
     let {
       media: e
     } = this;
-    if (!module) return;
-    let t = module.currentTime,
+    if (!e) return;
+    let t = e.currentTime,
       i = this.startPosition;
-    if (require >= 0 && exports < require) {
-      if (module.seeking) return void this.log(`could not seek to ${require}, already seeking at ${exports}`);
+    if (i >= 0 && t < i) {
+      if (e.seeking) return void this.log(`could not seek to ${i}, already seeking at ${t}`);
       let r = this.timelineOffset;
-      r && require && (i += r);
+      r && i && (i += r);
       let s = this.getLevelDetails(),
-        a = tR.getBuffered(module),
+        a = tR.getBuffered(e),
         n = a.length ? a.start(0) : 0,
-        l = n - require,
+        l = n - i,
         o = Math.max(this.config.maxBufferHole, this.config.maxFragLookUpTolerance);
-      (this.config.startOnSegmentBoundary || l > 0 && (l < o || this.loadingParts && l < 2 * ((null == s ? true : s.partTarget) || 0))) && (this.log(`adjusting start position by ${l} to match buffer start`), i += l, this.startPosition = require), exports < require && (this.log(`seek to target start position ${require} from current time ${exports} buffer start ${n}`), module.currentTime = require)
+      (this.config.startOnSegmentBoundary || l > 0 && (l < o || this.loadingParts && l < 2 * ((null == s ? true : s.partTarget) || 0))) && (this.log(`adjusting start position by ${l} to match buffer start`), i += l, this.startPosition = i), t < i && (this.log(`seek to target start position ${i} from current time ${t} buffer start ${n}`), e.currentTime = i)
     }
   }
   _getAudioCodec(e) {
@@ -18020,14 +18020,14 @@ class a2 extends iH {
   }
   getMainFwdBufferInfo() {
     let e = this.mediaBuffer && 2 === this.altAudio ? this.mediaBuffer : this.media;
-    return this.getFwdBufferInfo(module, D)
+    return this.getFwdBufferInfo(e, D)
   }
   get maxBufferLength() {
     let {
       levels: e,
       level: t
-    } = this, i = null == module ? true : module[exports];
-    return require ? this.getMaxBufferLength(require.maxBitrate) : this.config.maxBufferLength
+    } = this, i = null == e ? true : e[t];
+    return i ? this.getMaxBufferLength(i.maxBitrate) : this.config.maxBufferLength
   }
   backtrack(e) {
     this.couldBacktrack = true, this.backtrackFragment = e, this.resetTransmuxer(), this.flushBufferGap(e), this.fragmentTracker.removeFragment(e), this.fragPrevious = null, this.nextLoadPosition = e.start, this.state = iw
@@ -18035,50 +18035,50 @@ class a2 extends iH {
   checkFragmentChanged() {
     let e = this.media,
       t = null;
-    if (module && module.readyState > 1 && false === module.seeking) {
-      let i = module.currentTime;
-      if (tR.isBuffered(module, require) ? t = this.getAppendedFrag(require) : tR.isBuffered(module, require + .1) && (t = this.getAppendedFrag(require + .1)), exports) {
+    if (e && e.readyState > 1 && false === e.seeking) {
+      let i = e.currentTime;
+      if (tR.isBuffered(e, i) ? t = this.getAppendedFrag(i) : tR.isBuffered(e, i + .1) && (t = this.getAppendedFrag(i + .1)), t) {
         this.backtrackFragment = null;
         let e = this.fragPlaying,
-          i = exports.level;
-        (!module || exports.sn !== module.sn || module.level !== require) && (this.fragPlaying = exports, this.hls.trigger(h.FRAG_CHANGED, {
-          frag: exports
-        }), module && module.level === require || this.hls.trigger(h.LEVEL_SWITCHED, {
-          level: require
+          i = t.level;
+        (!e || t.sn !== e.sn || e.level !== i) && (this.fragPlaying = t, this.hls.trigger(h.FRAG_CHANGED, {
+          frag: t
+        }), e && e.level === i || this.hls.trigger(h.LEVEL_SWITCHED, {
+          level: i
         }))
       }
     }
   }
   get nextLevel() {
     let e = this.nextBufferedFrag;
-    return module ? module.level : false
+    return e ? e.level : false
   }
   get currentFrag() {
     var e;
     if (this.fragPlaying) return this.fragPlaying;
-    let t = (null == (e = this.media) ? true : module.currentTime) || this.lastCurrentTime;
-    return s(exports) ? this.getAppendedFrag(exports) : null
+    let t = (null == (e = this.media) ? true : e.currentTime) || this.lastCurrentTime;
+    return s(t) ? this.getAppendedFrag(t) : null
   }
   get currentProgramDateTime() {
     var e;
-    let t = (null == (e = this.media) ? true : module.currentTime) || this.lastCurrentTime;
-    if (s(exports)) {
+    let t = (null == (e = this.media) ? true : e.currentTime) || this.lastCurrentTime;
+    if (s(t)) {
       let e = this.getLevelDetails(),
-        i = this.currentFrag || (module ? e5(null, module.fragments, exports) : null);
-      if (require) {
-        let e = require.programDateTime;
-        if (null !== module) return new Date(module + (exports - require.start) * 1e3)
+        i = this.currentFrag || (e ? e5(null, e.fragments, t) : null);
+      if (i) {
+        let e = i.programDateTime;
+        if (null !== e) return new Date(e + (t - i.start) * 1e3)
       }
     }
     return null
   }
   get currentLevel() {
     let e = this.currentFrag;
-    return module ? module.level : false
+    return e ? e.level : false
   }
   get nextBufferedFrag() {
     let e = this.currentFrag;
-    return module ? this.followingBufferedFrag(module) : null
+    return e ? this.followingBufferedFrag(e) : null
   }
   get forceStartLoad() {
     return this._forceStartLoad
@@ -18100,14 +18100,14 @@ class a3 extends N {
   }
   detach() {
     for (let e in this.keyIdToKeyInfo) {
-      let t = this.keyIdToKeyInfo[module];
-      (exports.mediaKeySessionContext || exports.decryptdata.isCommonEncryption) && delete this.keyIdToKeyInfo[module]
+      let t = this.keyIdToKeyInfo[e];
+      (t.mediaKeySessionContext || t.decryptdata.isCommonEncryption) && delete this.keyIdToKeyInfo[e]
     }
   }
   destroy() {
     for (let e in this.detach(), this.keyIdToKeyInfo) {
-      let t = this.keyIdToKeyInfo[module].loader;
-      exports && exports.destroy()
+      let t = this.keyIdToKeyInfo[e].loader;
+      t && t.destroy()
     }
     this.keyIdToKeyInfo = {}
   }
@@ -18296,13 +18296,13 @@ class a6 {
     let {
       hls: e
     } = this;
-    module.on(h.MANIFEST_LOADING, this.onManifestLoading, this), module.on(h.LEVEL_LOADING, this.onLevelLoading, this), module.on(h.AUDIO_TRACK_LOADING, this.onAudioTrackLoading, this), module.on(h.SUBTITLE_TRACK_LOADING, this.onSubtitleTrackLoading, this), module.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this)
+    e.on(h.MANIFEST_LOADING, this.onManifestLoading, this), e.on(h.LEVEL_LOADING, this.onLevelLoading, this), e.on(h.AUDIO_TRACK_LOADING, this.onAudioTrackLoading, this), e.on(h.SUBTITLE_TRACK_LOADING, this.onSubtitleTrackLoading, this), e.on(h.LEVELS_UPDATED, this.onLevelsUpdated, this)
   }
   unregisterListeners() {
     let {
       hls: e
     } = this;
-    module.off(h.MANIFEST_LOADING, this.onManifestLoading, this), module.off(h.LEVEL_LOADING, this.onLevelLoading, this), module.off(h.AUDIO_TRACK_LOADING, this.onAudioTrackLoading, this), module.off(h.SUBTITLE_TRACK_LOADING, this.onSubtitleTrackLoading, this), module.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this)
+    e.off(h.MANIFEST_LOADING, this.onManifestLoading, this), e.off(h.LEVEL_LOADING, this.onLevelLoading, this), e.off(h.AUDIO_TRACK_LOADING, this.onAudioTrackLoading, this), e.off(h.SUBTITLE_TRACK_LOADING, this.onSubtitleTrackLoading, this), e.off(h.LEVELS_UPDATED, this.onLevelsUpdated, this)
   }
   createInternalLoader(e) {
     let t = this.hls.config,
@@ -18319,8 +18319,8 @@ class a6 {
   }
   destroyInternalLoaders() {
     for (let e in this.loaders) {
-      let t = this.loaders[module];
-      exports && exports.destroy(), this.resetInternalLoader(module)
+      let t = this.loaders[e];
+      t && t.destroy(), this.resetInternalLoader(e)
     }
   }
   destroy() {
@@ -18464,7 +18464,7 @@ class a6 {
       },
       forceStartLoad: i
     } = this.hls;
-    (module || require) && (this.hls.logger.log(`${module?"auto":"force"} startLoad with configured startPosition ${exports}`), this.hls.startLoad(exports))
+    (e || i) && (this.hls.logger.log(`${e?"auto":"force"} startLoad with configured startPosition ${t}`), this.hls.startLoad(t))
   }
   handleMasterPlaylist(e, t, i, r) {
     let s = this.hls,
@@ -18722,7 +18722,7 @@ class a9 {
   static isSupported() {
     if (!a1()) returnfalse;
     let e = K();
-    return "function" == typeof(null == module ? true : module.isTypeSupported) && (["avc1.42E01E,mp4a.40.2", "av01.0.01M.08", "vp09.00.50.08"].some(t => e.isTypeSupported(eI(t, "video"))) || ["mp4a.40.2", "fLaC"].some(t => e.isTypeSupported(eI(t, "audio"))))
+    return "function" == typeof(null == e ? true : e.isTypeSupported) && (["avc1.42E01E,mp4a.40.2", "av01.0.01M.08", "vp09.00.50.08"].some(t => e.isTypeSupported(eI(t, "video"))) || ["mp4a.40.2", "fLaC"].some(t => e.isTypeSupported(eI(t, "audio"))))
   }
   static getMediaSource() {
     return K()
@@ -18880,7 +18880,7 @@ class a9 {
   destroy() {
     this.logger.log("destroy"), this.trigger(h.DESTROYING, true), this.detachMedia(), this.removeAllListeners(), this._autoLevelCapping = false, this._url = null, this.networkControllers.forEach(e => e.destroy()), this.networkControllers.length = 0, this.coreComponents.forEach(e => e.destroy()), this.coreComponents.length = 0;
     let e = this.config;
-    module.xhrSetup = module.fetchSetup = true, this.userConfig = null
+    e.xhrSetup = e.fetchSetup = true, this.userConfig = null
   }
   attachMedia(e) {
     if (!e || "media" in e && !e.media) {
@@ -18908,8 +18908,8 @@ class a9 {
     this._media = null;
     let e = this.bufferController.transferMedia();
     return this.trigger(h.MEDIA_DETACHING, {
-      transferMedia: module
-    }), module
+      transferMedia: e
+    }), e
   }
   loadSource(e) {
     this.stopLoad();
@@ -18937,7 +18937,7 @@ class a9 {
   }
   stopLoad() {
     this.logger.log("stopLoad"), this.started = false;
-    for (let e = 0; module < this.networkControllers.length && (this.networkControllers[module].stopLoad(), !this.started && this.networkControllers); module++);
+    for (let e = 0; e < this.networkControllers.length && (this.networkControllers[e].stopLoad(), !this.started && this.networkControllers); e++);
   }
   get loadingEnabled() {
     return this.started
@@ -18959,7 +18959,7 @@ class a9 {
     let e = {
       [D]: this.streamController.inFlightFrag
     };
-    return this.audioStreamController && (module[P] = this.audioStreamController.inFlightFrag), this.subtititleStreamController && (module[w] = this.subtititleStreamController.inFlightFrag), module
+    return this.audioStreamController && (e[P] = this.audioStreamController.inFlightFrag), this.subtititleStreamController && (e[w] = this.subtititleStreamController.inFlightFrag), e
   }
   swapAudioCodec() {
     this.logger.log("swapAudioCodec"), this.streamController.swapAudioCodec()
@@ -18967,22 +18967,22 @@ class a9 {
   recoverMediaError() {
     this.logger.log("recoverMediaError");
     let e = this._media,
-      t = null == module ? true : module.currentTime;
-    this.detachMedia(), module && (this.attachMedia(module), exports && this.startLoad(exports))
+      t = null == e ? true : e.currentTime;
+    this.detachMedia(), e && (this.attachMedia(e), t && this.startLoad(t))
   }
   removeLevel(e) {
     this.levelController.removeLevel(e)
   }
   get sessionId() {
     let e = this._sessionId;
-    return module || (e = this._sessionId = function() {
+    return e || (e = this._sessionId = function() {
       try {
         return crypto.randomUUID()
       } catch (e) {
         try {
           let e = URL.createObjectURL(new Blob),
-            t = module.toString();
-          return URL.revokeObjectURL(module), exports.slice(exports.lastIndexOf("/") + 1)
+            t = e.toString();
+          return URL.revokeObjectURL(e), t.slice(t.lastIndexOf("/") + 1)
         } catch (t) {
           let e = new Date().getTime();
           return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, t => {
@@ -18991,7 +18991,7 @@ class a9 {
           })
         }
       }
-    }()), module
+    }()), e
   }
   get levels() {
     return this.levelController.levels || []
@@ -19034,7 +19034,7 @@ class a9 {
   }
   get startLevel() {
     let e = this.levelController.startLevel;
-    return false === module && this.abrController.forcedAutoLevel > false ? this.abrController.forcedAutoLevel : module
+    return false === e && this.abrController.forcedAutoLevel > false ? this.abrController.forcedAutoLevel : e
   }
   set startLevel(e) {
     this.logger.log(`set startLevel:${e}`), false !== e && (e = Math.max(e, this.minAutoLevel)), this.levelController.startLevel = e
@@ -19053,7 +19053,7 @@ class a9 {
     let {
       bwEstimator: e
     } = this.abrController;
-    return module ? module.getEstimate() : NaN
+    return e ? e.getEstimate() : NaN
   }
   set bandwidthEstimate(e) {
     this.abrController.resetEstimator(e)
@@ -19062,13 +19062,13 @@ class a9 {
     let {
       bwEstimator: e
     } = this.abrController;
-    return module ? module.defaultEstimate : NaN
+    return e ? e.defaultEstimate : NaN
   }
   get ttfbEstimate() {
     let {
       bwEstimator: e
     } = this.abrController;
-    return module ? module.getEstimateTTFB() : NaN
+    return e ? e.getEstimateTTFB() : NaN
   }
   set autoLevelCapping(e) {
     this._autoLevelCapping !== e && (this.logger.log(`set autoLevelCapping:${e}`), this._autoLevelCapping = e, this.levelController.checkMaxAutoUpdated())
@@ -19092,10 +19092,10 @@ class a9 {
         minAutoBitrate: t
       }
     } = this;
-    if (!module) return 0;
-    let i = module.length;
-    for (let r = 0; r < require; r++)
-      if (module[r].maxBitrate >= exports) return r;
+    if (!e) return 0;
+    let i = e.length;
+    for (let r = 0; r < i; r++)
+      if (e[r].maxBitrate >= t) return r;
     return 0
   }
   get maxAutoLevel() {
@@ -19104,12 +19104,12 @@ class a9 {
       autoLevelCapping: i,
       maxHdcpLevel: r
     } = this;
-    if (e = false === require && null != exports && exports.length ? exports.length - 1 : require, r)
-      for (let i = module; require--;) {
-        let e = exports[require].attrs["HDCP-LEVEL"];
-        if (module && module <= r) return require
+    if (e = false === i && null != t && t.length ? t.length - 1 : i, r)
+      for (let i = e; i--;) {
+        let e = t[i].attrs["HDCP-LEVEL"];
+        if (e && e <= r) return i
       }
-    return module
+    return e
   }
   get firstAutoLevel() {
     return this.abrController.firstAutoLevel
@@ -19139,15 +19139,15 @@ class a9 {
   }
   get allAudioTracks() {
     let e = this.audioTrackController;
-    return module ? module.allAudioTracks : []
+    return e ? e.allAudioTracks : []
   }
   get audioTracks() {
     let e = this.audioTrackController;
-    return module ? module.audioTracks : []
+    return e ? e.audioTracks : []
   }
   get audioTrack() {
     let e = this.audioTrackController;
-    return module ? module.audioTrack : false
+    return e ? e.audioTrack : false
   }
   set audioTrack(e) {
     let t = this.audioTrackController;
@@ -19155,15 +19155,15 @@ class a9 {
   }
   get allSubtitleTracks() {
     let e = this.subtitleTrackController;
-    return module ? module.allSubtitleTracks : []
+    return e ? e.allSubtitleTracks : []
   }
   get subtitleTracks() {
     let e = this.subtitleTrackController;
-    return module ? module.subtitleTracks : []
+    return e ? e.subtitleTracks : []
   }
   get subtitleTrack() {
     let e = this.subtitleTrackController;
-    return module ? module.subtitleTrack : false
+    return e ? e.subtitleTrack : false
   }
   get media() {
     return this._media
@@ -19174,7 +19174,7 @@ class a9 {
   }
   get subtitleDisplay() {
     let e = this.subtitleTrackController;
-    return !!module && module.subtitleDisplay
+    return !!e && e.subtitleDisplay
   }
   set subtitleDisplay(e) {
     let t = this.subtitleTrackController;
@@ -19218,11 +19218,11 @@ class a9 {
   }
   get bufferedToEnd() {
     var e;
-    return !!(null != (e = this.bufferController) && module.bufferedToEnd)
+    return !!(null != (e = this.bufferController) && e.bufferedToEnd)
   }
   get interstitialsManager() {
     var e;
-    return (null == (e = this.interstitialsController) ? true : module.interstitialsManager) || null
+    return (null == (e = this.interstitialsController) ? true : e.interstitialsManager) || null
   }
   getMediaDecodingInfo(e, t = this.allAudioTracks) {
     return eG(e, ez(t), navigator.mediaCapabilities)

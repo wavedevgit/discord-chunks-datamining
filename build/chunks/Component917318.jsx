@@ -16,13 +16,13 @@ var Chunk275726 = require("./275726.js"),
   Chunk792389 = require("./792389.js"),
   Chunk388032 = require("./388032.jsx");
 let p = {
-    [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => Chunk792389.default.komFTv,
-    [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => Chunk792389.default.FAJmJV,
-    [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => Chunk792389.default["90r/sR"]
+    [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => d.default.komFTv,
+    [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => d.default.FAJmJV,
+    [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => d.default["90r/sR"]
   },
   _ = {
-    [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => Chunk792389.default["4023i8"],
-    [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => Chunk792389.default.UE81zV
+    [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => d.default["4023i8"],
+    [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => d.default.UE81zV
   };
 
 function m(e) {

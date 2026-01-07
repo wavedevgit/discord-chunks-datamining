@@ -27,7 +27,7 @@ var u = function() {
   function e(t, n) {
     s(this, e), this.store = t, this.registry = n
   }
-  return c(module, [{
+  return c(e, [{
     key: "subscribeToStateChange",
     value: function(e) {
       var t = this,
@@ -159,12 +159,12 @@ var u = function() {
   }, {
     key: "getSourceClientOffset",
     value: function() {
-      return (0, Chunk112457.YY)(this.store.getState().dragOffset)
+      return (0, a.YY)(this.store.getState().dragOffset)
     }
   }, {
     key: "getDifferenceFromInitialOffset",
     value: function() {
-      return (0, Chunk112457.ar)(this.store.getState().dragOffset)
+      return (0, a.ar)(this.store.getState().dragOffset)
     }
-  }]), module
+  }]), e
 }()

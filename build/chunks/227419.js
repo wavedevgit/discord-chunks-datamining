@@ -62,20 +62,20 @@ let g = [...i()(Chunk981631.nkL).values().map(e => ({
   inputType: Chunk895924.iw.BUILT_IN,
   applicationId: Chunk689079.bi.BUILT_IN,
   get untranslatedDescription() {
-    return Chunk388032.intl.string(Chunk388032.t["26C4oi"])
+    return m.intl.string(m.t["26C4oi"])
   },
   get displayDescription() {
-    return Chunk388032.intl.string(Chunk388032.t["26C4oi"])
+    return m.intl.string(m.t["26C4oi"])
   },
   options: [{
     name: "silent",
     displayName: "silent",
     type: Chunk911969.jw.BOOLEAN,
     get description() {
-      return Chunk388032.intl.string(Chunk388032.t.YH7PkD)
+      return m.intl.string(m.t.YH7PkD)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.bq3JXs)
+      return m.intl.string(m.t.bq3JXs)
     },
     required: false
   }],
@@ -125,20 +125,20 @@ let g = [...i()(Chunk981631.nkL).values().map(e => ({
   inputType: Chunk895924.iw.BUILT_IN_INTEGRATION,
   applicationId: Chunk689079.bi.BUILT_IN,
   get untranslatedDescription() {
-    return Chunk388032.intl.string(Chunk388032.t.GUH9II)
+    return m.intl.string(m.t.GUH9II)
   },
   get displayDescription() {
-    return Chunk388032.intl.string(Chunk388032.t.GUH9II)
+    return m.intl.string(m.t.GUH9II)
   },
   options: [{
     name: "query",
     displayName: "query",
     type: Chunk911969.jw.STRING,
     get description() {
-      return Chunk388032.intl.string(Chunk388032.t.hIbHm1)
+      return m.intl.string(m.t.hIbHm1)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.hIbHm1)
+      return m.intl.string(m.t.hIbHm1)
     },
     required: true
   }],

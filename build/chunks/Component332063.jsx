@@ -26,7 +26,7 @@ class h extends(i = Chunk473749.Component) {
       branches: t,
       onHasBranchesChange: n
     } = this.props;
-    (0, Chunk274616.Z)(module), null == require || require(exports.length > 0)
+    (0, o.Z)(e), null == n || n(t.length > 0)
   }
   componentDidUpdate(e) {
     let {
@@ -45,18 +45,18 @@ class h extends(i = Chunk473749.Component) {
       className: s,
       label: o
     } = this.props;
-    if (0 === module.length || Chunk473749) return null;
-    let u = i ? module : module.filter(e => e.id !== n);
-    return (0, Chunk54381.jsx)(Chunk199849.y6, {
-      label: Chunk274616,
-      options: Chunk560587.map(e => ({
+    if (0 === e.length || l) return null;
+    let u = i ? e : e.filter(e => e.id !== n);
+    return (0, r.jsx)(a.y6, {
+      label: o,
+      options: u.map(e => ({
         label: e.getName(n),
         value: e.id
       })),
-      placeholder: Chunk388032.intl.string(Chunk388032.t.Sw7pHF),
-      value: exports,
+      placeholder: c.intl.string(c.t.Sw7pHF),
+      value: t,
       onChange: this.handleChange,
-      className: Chunk442837
+      className: s
     })
   }
   constructor(...e) {

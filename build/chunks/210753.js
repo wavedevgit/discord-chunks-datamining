@@ -30,12 +30,12 @@ class f {
     let e = [];
     this._pending.forEach(t => {
       this._fetched.add(t), e.push(t)
-    }), this._pending.clear(), a().chunk(module, d).forEach(e => {
+    }), this._pending.clear(), a().chunk(e, d).forEach(e => {
       l.Z.getDetectableGamesSupplemental(e)
     })
   }
   constructor() {
-    u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new Chunk846519.sW(32, () => this._flush()))
+    u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new s.sW(32, () => this._flush()))
   }
 }
 let p = new f;

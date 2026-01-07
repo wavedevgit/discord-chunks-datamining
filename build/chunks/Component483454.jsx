@@ -240,10 +240,10 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       })]
     })
   },
-  x = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk998595.loadingContainer,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      type: Chunk481060.$jN.Type.PULSING_ELLIPSIS
+  x = () => (0, r.jsx)("div", {
+    className: O.loadingContainer,
+    children: (0, r.jsx)(c.$jN, {
+      type: c.$jN.Type.PULSING_ELLIPSIS
     })
   }),
   L = e => {

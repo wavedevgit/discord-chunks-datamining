@@ -68,8 +68,8 @@ let S = {},
   R = {};
 
 function w() {
-  for (let e in S = {}, A = {}, I = {}, T = {}, C = {}, P = Chunk944486.Z.getChannelId(), R) clearTimeout(R[module]);
-  R = {}, Chunk344185.Z.forEachGuild(e => {
+  for (let e in S = {}, A = {}, I = {}, T = {}, C = {}, P = p.Z.getChannelId(), R) clearTimeout(R[e]);
+  R = {}, m.Z.forEachGuild(e => {
     x(e)
   }), L()
 }
@@ -107,7 +107,7 @@ function x(e) {
 
 function L() {
   for (let e in N = {}, T)
-    for (let t in T[module]) M(module, exports)
+    for (let t in T[e]) M(e, t)
 }
 
 function j(e) {
@@ -232,21 +232,21 @@ function V(e) {
 
 function H() {
   for (let e in I = {}, A = {}, S)
-    for (let t in S[module])
-      for (let n in S[module][exports]) {
-        let r = S[module][exports][require],
+    for (let t in S[e])
+      for (let n in S[e][t]) {
+        let r = S[e][t][n],
           {
             isUnread: i,
             isRelevant: a,
             isTimedRelevant: o
           } = Q(r.channel);
-        Chunk392711 && ee(I, r.channel, r, false), a && ee(A, r.channel, r, false), X(r.channel, Chunk442837)
+        i && ee(I, r.channel, r, false), a && ee(A, r.channel, r, false), X(r.channel, o)
       }
   for (let e in C = {}, T)
-    for (let t in T[module])
-      for (let n in T[module][exports]) {
-        let r = T[module][exports][require];
-        Chunk306680.ZP.isForumPostUnread(require) && ee(C, r, r, false)
+    for (let t in T[e])
+      for (let n in T[e][t]) {
+        let r = T[e][t][n];
+        f.ZP.isForumPostUnread(n) && ee(C, r, r, false)
       }
   L()
 }
@@ -275,8 +275,8 @@ function z(e) {
 
 function q() {
   let e = P;
-  if ((P = Chunk944486.Z.getChannelId()) === module) returnfalse;
-  j(module), j(P)
+  if ((P = p.Z.getChannelId()) === e) returnfalse;
+  j(e), j(P)
 }
 
 function Q(e) {
@@ -341,7 +341,7 @@ let ei = {},
   el = {};
 class ec extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk344185.Z, Chunk592125.Z, Chunk430824.Z, Chunk569471.Z, Chunk306680.ZP, Chunk944486.Z), this.syncWith([Chunk944486.Z], q)
+    this.waitFor(m.Z, u.Z, d.Z, h.Z, f.ZP, p.Z), this.syncWith([p.Z], q)
   }
   hasActiveJoinedUnreadThreads(e, t) {
     return e in I && t in I[e]

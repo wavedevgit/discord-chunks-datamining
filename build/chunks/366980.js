@@ -6,7 +6,7 @@ function r() {
   let e, t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
     n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = window.GLOBAL_ENV.INVITE_HOST;
-  return e = "/".concat(exports), "".concat(require ? "".concat(location.protocol, "//") : "").concat(r).concat(module)
+  return e = "/".concat(t), "".concat(n ? "".concat(location.protocol, "//") : "").concat(r).concat(e)
 }
 require.d(exports, {
   Z: () => r

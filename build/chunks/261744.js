@@ -9,12 +9,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk293810 = require("./293810.js");
 
 function o() {
-  let [e] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [Chunk687476.Z], t = module.getGuildIdsWithPurchasableRoles(), n = false;
-  return (exports.forEach(t => {
+  let [e] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [i.Z], t = e.getGuildIdsWithPurchasableRoles(), n = false;
+  return (t.forEach(t => {
     e.getUserSubscriptionRoles(t).size > 0 && (n = true)
-  }), require) ? Chunk293810.PY.SUBSCRIBED : 0 === exports.size ? Chunk293810.PY.NONE : Chunk293810.PY.IN_SUBSCRIPTION_SERVER
+  }), n) ? a.PY.SUBSCRIBED : 0 === t.size ? a.PY.NONE : a.PY.IN_SUBSCRIPTION_SERVER
 }
 
 function s() {
-  return (0, Chunk442837.e7)([Chunk687476.Z], () => o([Chunk687476.Z]))
+  return (0, r.e7)([i.Z], () => o([i.Z]))
 }

@@ -19,10 +19,10 @@ var Chunk524437 = require("./524437.js"),
   Chunk231338 = require("./231338.js");
 
 function s() {
-  let e = Chunk853856.Z.getFavoriteChannels(),
+  let e = d.Z.getFavoriteChannels(),
     n = 1;
-  for (let t in module) n = Math.max(exports, module[require].order);
-  return exports + 1
+  for (let t in e) n = Math.max(n, e[t].order);
+  return n + 1
 }
 
 function u(e) {
@@ -100,7 +100,7 @@ function E(e, n) {
 }
 
 function A() {
-  Chunk675478.hW.updateAsync("favorites", e => {
+  i.hW.updateAsync("favorites", e => {
     e.muted = !e.muted
-  }, Chunk675478.fy.INFREQUENT_USER_ACTION)
+  }, i.fy.INFREQUENT_USER_ACTION)
 }

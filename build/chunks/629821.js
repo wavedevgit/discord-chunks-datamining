@@ -133,7 +133,7 @@ class d {
   getPrimaryTimePatternThroughCache() {
     let e = this.primaryPrefix(),
       t = this.primarySuffix();
-    return this.cachedPrimaryPrefix === module && this.cachedPrimarySuffix === exports || (this.cachedPrimaryTimePattern = i(this.primaryPatternLeftBoundary(), module, exports, this.patternFlags()), this.cachedPrimaryPrefix = module, this.cachedPrimarySuffix = exports), this.cachedPrimaryTimePattern
+    return this.cachedPrimaryPrefix === e && this.cachedPrimarySuffix === t || (this.cachedPrimaryTimePattern = i(this.primaryPatternLeftBoundary(), e, t, this.patternFlags()), this.cachedPrimaryPrefix = e, this.cachedPrimarySuffix = t), this.cachedPrimaryTimePattern
   }
   cachedFollowingPhase = null;
   cachedFollowingSuffix = null;
@@ -141,6 +141,6 @@ class d {
   getFollowingTimePatternThroughCache() {
     let e = this.followingPhase(),
       t = this.followingSuffix();
-    return this.cachedFollowingPhase === module && this.cachedFollowingSuffix === exports || (this.cachedFollowingTimePatten = a(module, exports), this.cachedFollowingPhase = module, this.cachedFollowingSuffix = exports), this.cachedFollowingTimePatten
+    return this.cachedFollowingPhase === e && this.cachedFollowingSuffix === t || (this.cachedFollowingTimePatten = a(e, t), this.cachedFollowingPhase = e, this.cachedFollowingSuffix = t), this.cachedFollowingTimePatten
   }
 }

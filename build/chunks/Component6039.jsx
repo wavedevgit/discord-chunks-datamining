@@ -86,7 +86,7 @@ let T = e => {
       })
     },
     Z = async () => {
-      await g.Z.resetGuildJoinRequest(t), (0, h.hk)(t)
+      await g.Z.resetGuildJoinRequest(t), (0, m.hk)(t)
     }, w = e => {
       if (!e) return void x();
       A(I.intl.format(I.t["9ZezpN"], {
@@ -107,12 +107,12 @@ let T = e => {
       children: (() => {
         if (null == T) return null;
         switch (T.applicationStatus) {
-          case m.wB.SUBMITTED:
+          case h.wB.SUBMITTED:
             return (0, r.jsx)(O.Z, {
               onWithdrawApplication: () => w(true),
               guild: P
             });
-          case m.wB.REJECTED:
+          case h.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
               reapplyText: I.intl.string(I.t.I1LYVk),
               onReapply: Z,
@@ -124,7 +124,7 @@ let T = e => {
           default:
             return (0, r.jsx)(_.s, {
               onDiscardApplication: L,
-              onContinueApplication: () => (0, h.hk)(t),
+              onContinueApplication: () => (0, m.hk)(t),
               guild: P
             })
         }

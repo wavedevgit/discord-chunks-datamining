@@ -9,5 +9,5 @@ var Chunk442837 = require("./442837.js"),
   Chunk232076 = require("./232076.js");
 let o = function() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return (0, Chunk232076.B)(module), (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getIsEligibleToSendReferrals())
+  return (0, a.B)(e), (0, r.e7)([i.Z], () => i.Z.getIsEligibleToSendReferrals())
 }

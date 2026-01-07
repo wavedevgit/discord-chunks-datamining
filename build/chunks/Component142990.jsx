@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk922699 = require("./922699.js"),
   Chunk887580 = require("./887580.jsx"),
   Chunk811364 = require("./811364.js");
-let d = Chunk473749.lazy(() => require.e("61061").then(require.bind(require, 982661)).then(e => ({
+let d = Chunk473749.lazy(() => n.e("61061").then(n.bind(n, 982661)).then(e => ({
     default: e.PlaygroundEmbed
   }))),
   f = RegExp("^" + Chunk830121.oO.source, Chunk830121.oO.flags);

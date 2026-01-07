@@ -227,7 +227,7 @@ class F extends(a = Chunk442837.ZP.Store) {
   }
   isCurrentClientInVoiceChannel() {
     var e;
-    return null != i && (null == (e = O[r]) ? true : module[i]) != null
+    return null != i && (null == (e = O[r]) ? true : e[i]) != null
   }
   isInChannel(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r;

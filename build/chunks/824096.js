@@ -59,7 +59,7 @@ class _ {
   }
   tryReenableQueue() {
     if (!this.disabled && (null == this.probingUserId || !(this.probingUserId in this.perUserFpsWindow)))
-      for (let e = this.enableQueue.shift(); null != module && !this.reenableVideo(module););
+      for (let e = this.enableQueue.shift(); null != e && !this.reenableVideo(e););
   }
   reenableVideo(e) {
     return e in this.perUserFpsWindow && (this.logger.info("reenableVideo called for user ".concat(e, " - time = ").concat((0, i.zO)())), this.stateCleanupBeforeEnable(e), this.currentVideoAutoToggleState[e] = l.ZUi.AUTO_PROBING, this.probingUserId = e, (0, o.Z)(e, l.ZUi.AUTO_PROBING), true)
@@ -83,7 +83,7 @@ class _ {
     this.logger.info("VideoHealthManager::deleteUser ".concat(e)), delete this.perUserFpsWindow[e], delete this.prevFramesCodec[e], delete this.retryBackoffCache[e], delete this.currentVideoAutoToggleState[e], this.streamDisabledUsers.delete(e), e === this.probingUserId && (this.probingUserId = true, this.tryReenableQueue()), clearTimeout(this.timeoutIdCache[e]), delete this.timeoutIdCache[e]
   }
   disable() {
-    for (let e in this.disabled = true, this.perUserFpsWindow) this.deleteUser(module)
+    for (let e in this.disabled = true, this.perUserFpsWindow) this.deleteUser(e)
   }
   constructor(e, t, n, r) {
     c(this, "logger", new a.Z("VideoHealthManager")), c(this, "windowLength", true), c(this, "fpsThreshold", true), c(this, "fpsWindowBorderlineCount", true), c(this, "backoffTimeSec", true), c(this, "disabled", false), c(this, "perUserFpsWindow", {}), c(this, "prevFramesCodec", {}), c(this, "prevTimestamp", {}), c(this, "streamDisabledUsers", new Set), c(this, "retryBackoffCache", {}), c(this, "timeoutIdCache", {}), c(this, "currentVideoAutoToggleState", {}), c(this, "probingUserId", true), c(this, "enableQueue", []), this.windowLength = e, this.fpsThreshold = n, this.fpsWindowBorderlineCount = Math.ceil(e * t), this.backoffTimeSec = r, this.logger.info("constructor with windowLength = ".concat(this.windowLength, ",\n      fpsWindowBorderlineCount = ").concat(this.fpsWindowBorderlineCount, ",\n      fpsThreshold = ").concat(this.fpsThreshold, ",\n      backoffTimeSec = ").concat(r))

@@ -10,19 +10,19 @@ var Chunk524437 = require("./524437.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let l = () => [{
-    name: Chunk388032.intl.string(Chunk388032.t.FMWYvb),
-    value: Chunk524437.hg.AUTO
+    name: s.intl.string(s.t.FMWYvb),
+    value: r.hg.AUTO
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.p8NOwi),
-    value: Chunk524437.hg.H12
+    name: s.intl.string(s.t.p8NOwi),
+    value: r.hg.H12
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t["+o/sOo"]),
-    value: Chunk524437.hg.H23
+    name: s.intl.string(s.t["+o/sOo"]),
+    value: r.hg.H23
   }],
   c = (0, Chunk509613.J9)(Chunk313789.n.TIME_FORMAT_SETTING, {
-    useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.dyamEI), Chunk388032.intl.string(Chunk388032.t.p8NOwi), Chunk388032.intl.string(Chunk388032.t["+o/sOo"])],
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.dyamEI),
-    useValue: () => Chunk695346.hg.useSetting(),
+    useSearchTerms: () => [s.intl.string(s.t.dyamEI), s.intl.string(s.t.p8NOwi), s.intl.string(s.t["+o/sOo"])],
+    useTitle: () => s.intl.string(s.t.dyamEI),
+    useValue: () => a.hg.useSetting(),
     setValue: e => a.hg.updateSetting(e),
     useOptions: l
   })

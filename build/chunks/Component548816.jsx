@@ -52,7 +52,7 @@ function u(e) {
     onClick: p,
     ref: f,
     noBackground: g = false
-  } = e, h = function(e, t) {
+  } = e, m = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -79,7 +79,7 @@ function u(e) {
       [o.interactive]: null != p,
       [o.noBackground]: g
     })
-  }, h), {
+  }, m), {
     children: d
   })) : (0, r.jsx)("div", c(s({
     ref: f,
@@ -90,7 +90,7 @@ function u(e) {
       [o.active]: i,
       [o.noBackground]: g
     })
-  }, h), {
+  }, m), {
     children: d
   }))
 }

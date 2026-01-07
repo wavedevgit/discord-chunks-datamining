@@ -9,6 +9,6 @@ Chunk98405({
   enumerable: true
 }, {
   toJSON: function() {
-    return Chunk580983(URL.prototype.toString, this)
+    return i(URL.prototype.toString, this)
   }
 })

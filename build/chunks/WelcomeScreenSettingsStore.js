@@ -44,7 +44,7 @@ function m(e) {
 }
 class b extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z)
+    this.waitFor(a.Z)
   }
   get() {
     return f

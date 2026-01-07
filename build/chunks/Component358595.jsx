@@ -10,10 +10,10 @@ var Chunk955415 = require("./955415.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function o() {
-  return (0, Chunk54381.jsxs)(Chunk955415.Z, {
-    children: [(0, Chunk54381.jsx)(Chunk955415.Z.Header, {
-      text: Chunk388032.intl.string(Chunk388032.t["N/g9Z4"])
-    }), (0, Chunk54381.jsx)(Chunk955415.Z.Body, {
+  return (0, r.jsxs)(i.Z, {
+    children: [(0, r.jsx)(i.Z.Header, {
+      text: a.intl.string(a.t["N/g9Z4"])
+    }), (0, r.jsx)(i.Z.Body, {
       resolving: true
     })]
   })

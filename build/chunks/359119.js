@@ -127,7 +127,7 @@ function I(e) {
 }
 
 function T() {
-  _ = {}, Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
+  _ = {}, Object.values(a.Z.getMutablePrivateChannels()).forEach(e => {
     g(e)
   })
 }
@@ -137,7 +137,7 @@ function C(e) {
 }
 class A extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(Chunk592125.Z)
+    this.waitFor(a.Z)
   }
   getChannelSafetyWarning(e, t) {
     var n;

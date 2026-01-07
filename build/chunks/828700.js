@@ -265,7 +265,7 @@ function j() {
 
 function M() {
   var e = x(m).match;
-  return module ? module.params : {}
+  return e ? e.params : {}
 }
 
 function k(e) {

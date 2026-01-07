@@ -362,54 +362,54 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       }
     }))
   },
-  $ = () => (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  $ = () => (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(b.Heading, {
       variant: "heading-sm/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.jrXfyw)
-    }), (0, Chunk54381.jsxs)("ul", {
-      className: Chunk908771.emojiUploadUploadRequirementsList,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: H.intl.string(H.t.jrXfyw)
+    }), (0, r.jsxs)("ul", {
+      className: W.emojiUploadUploadRequirementsList,
+      children: [(0, r.jsx)(b.Text, {
         variant: "text-sm/normal",
         tag: "li",
-        children: Chunk388032.intl.string(Chunk388032.t.N2qTQ3)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: H.intl.string(H.t.N2qTQ3)
+      }), (0, r.jsx)(b.Text, {
         variant: "text-sm/normal",
         tag: "li",
-        children: Chunk388032.intl.format(Chunk388032.t.gfAXoR, {
-          maxSize: Chunk185923.xG
+        children: H.intl.format(H.t.gfAXoR, {
+          maxSize: F.xG
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)(b.Text, {
         variant: "text-sm/normal",
         tag: "li",
-        children: Chunk388032.intl.string(Chunk388032.t.rnwKPH)
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: H.intl.string(H.t.rnwKPH)
+      }), (0, r.jsx)(b.Text, {
         variant: "text-sm/normal",
         tag: "li",
-        children: Chunk388032.intl.string(Chunk388032.t["8Vr5Qd"])
+        children: H.intl.string(H.t["8Vr5Qd"])
       })]
     })]
   }),
   ee = () => {
-    let e = Chunk473749.useRef(null),
-      t = Chunk473749.useRef(0),
-      l = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-      [a, s] = Chunk473749.useState("");
-    o()(null != Chunk120356, "ConnectedGuildSettingsEmoji must be rendered within a guild context");
-    let c = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
+    let e = i.useRef(null),
+      t = i.useRef(0),
+      l = (0, f.e7)([M.Z], () => M.Z.getGuild()),
+      [a, s] = i.useState("");
+    o()(null != l, "ConnectedGuildSettingsEmoji must be rendered within a guild context");
+    let c = (0, f.e7)([w.Z], () => w.Z.theme),
       {
         canCreateExpressions: u
-      } = (0, Chunk357156.XJ)(Chunk120356),
+      } = (0, P.XJ)(l),
       {
         revision: m,
         emojis: p
-      } = (0, Chunk442837.cj)([Chunk471613.Z], () => ({
-        revision: Chunk471613.Z.getEmojiRevision(Chunk120356.id),
-        emojis: Chunk471613.Z.getEmojis(Chunk120356.id)
+      } = (0, f.cj)([G.Z], () => ({
+        revision: G.Z.getEmojiRevision(l.id),
+        emojis: G.Z.getEmojis(l.id)
       })),
-      h = (0, Chunk110924.Z)(Chunk28664),
-      [x, C] = Chunk473749.useState(false),
-      [_, R] = Chunk473749.useState(false),
-      D = Chunk473749.useRef(null),
+      h = (0, v.Z)(m),
+      [x, C] = i.useState(false),
+      [_, R] = i.useState(false),
+      D = i.useRef(null),
       {
         maxEmojiSlots: A,
         availableEmojiSlots: L,
@@ -417,42 +417,42 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
         totalStaticEmoji: z,
         animatedEmoji: Y,
         totalAnimatedEmoji: X
-      } = (0, Chunk719403.t)({
-        guild: Chunk120356
+      } = (0, I.t)({
+        guild: l
       }),
-      J = (0, Chunk556019.qt)({
+      J = (0, N.qt)({
         location: "guild_settings",
         autoTrackExposure: true
       }),
-      [ee, et] = Chunk473749.useState(null),
-      en = Chunk372444 || 0 === Chunk51144 || !Chunk554916;
-    Chunk473749.useEffect(() => {
-      Chunk599059 && es()
-    }, [Chunk599059]), Chunk473749.useEffect(() => {
-      K(Chunk120356.id)
-    }, [Chunk120356.id]), Chunk473749.useEffect(() => {
-      null != Chunk80932 && Chunk80932 < Chunk28664 && K(Chunk120356.id)
-    }, [Chunk28664, Chunk80932, Chunk120356.id]), Chunk473749.useEffect(() => {
-      if (null != Chunk668781 && null == ee) return void et(Chunk668781)
-    }, [Chunk668781, ee]);
-    let er = Chunk473749.useMemo(() => J.enabled && null != ee ? new Set(d().differenceBy(Chunk668781, ee, "id").map(e => e.id)) : new Set, [J.enabled, Chunk668781, ee]),
-      ei = Chunk473749.useCallback(function() {
+      [ee, et] = i.useState(null),
+      en = _ || 0 === L || !u;
+    i.useEffect(() => {
+      x && es()
+    }, [x]), i.useEffect(() => {
+      K(l.id)
+    }, [l.id]), i.useEffect(() => {
+      null != h && h < m && K(l.id)
+    }, [m, h, l.id]), i.useEffect(() => {
+      if (null != p && null == ee) return void et(p)
+    }, [p, ee]);
+    let er = i.useMemo(() => J.enabled && null != ee ? new Set(d().differenceBy(p, ee, "id").map(e => e.id)) : new Set, [J.enabled, p, ee]),
+      ei = i.useCallback(function() {
         let {
           emoji: e
         } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-        if (J.enabled && null != module) return void(0, Chunk748523.i)({
-          guildId: Chunk120356.id,
-          emoji: module,
-          analyticsLocation: Chunk100527.Z.GUILD_SETTINGS_EMOJI_EDIT_BUTTON
+        if (J.enabled && null != e) return void(0, E.i)({
+          guildId: l.id,
+          emoji: e,
+          analyticsLocation: O.Z.GUILD_SETTINGS_EMOJI_EDIT_BUTTON
         });
-        (0, Chunk748523.i)({
-          guildId: Chunk120356.id,
+        (0, E.i)({
+          guildId: l.id,
           analyticsLocation: {
-            page: Chunk981631.ZY5.GUILD_SETTINGS,
-            section: Chunk981631.jXE.GUILD_SETTINGS_EMOJI_ADD_BUTTON
+            page: B.ZY5.GUILD_SETTINGS,
+            section: B.jXE.GUILD_SETTINGS_EMOJI_ADD_BUTTON
           }
         })
-      }, [J.enabled, Chunk120356]),
+      }, [J.enabled, l]),
       el = async (e, t, n) => {
         let r = await (0, S.G)({
           data: e,
@@ -480,7 +480,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
           upload_id: a
         }), await (0, T._j)(e, el), C(true)
       }, es = () => {
-        null !== Chunk176354.current && ((0, Chunk481060.Mr3)(Chunk176354.current), Chunk176354.current = null)
+        null !== D.current && ((0, b.Mr3)(D.current), D.current = null)
       }, eo = async e => {
         D.current = await (0, b.ZDy)(async () => {
           let {
@@ -490,7 +490,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
             processFiles: () => ea(e)
           }, n))
         })
-      }, ec = Chunk473749.useCallback(async (e, n, r) => {
+      }, ec = i.useCallback(async (e, n, r) => {
         await (0, E.i)({
           userImage: {
             data: e,
@@ -502,90 +502,90 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
             page: B.ZY5.GUILD_SETTINGS
           }
         }), t.current += 1
-      }, [Chunk120356.id]), ed = (0, Chunk200876.l)(Chunk120356), eu = J.enabled ? e => ei({
+      }, [l.id]), ed = (0, y.l)(l), eu = J.enabled ? e => ei({
         emoji: e
       }) : true;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk908771.emojiSettings,
-      children: [0 === Chunk51144 ? null : (0, Chunk54381.jsx)(Chunk327802.Z, {
-        className: Chunk908771.emojiUploadContainer,
+    return (0, r.jsxs)("div", {
+      className: W.emojiSettings,
+      children: [0 === L ? null : (0, r.jsx)(j.Z, {
+        className: W.emojiUploadContainer,
         onDrop: eo
-      }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      }), (0, r.jsxs)(b.Kqy, {
         gap: 20,
-        children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+        children: [(0, r.jsxs)(b.Kqy, {
           gap: 4,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+          children: [(0, r.jsx)(b.Heading, {
             variant: "heading-lg/semibold",
-            children: Chunk388032.intl.string(Chunk388032.t.sMOuuS)
-          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+            children: H.intl.string(H.t.sMOuuS)
+          }), (0, r.jsx)(b.Text, {
             variant: "text-md/normal",
-            children: Chunk388032.intl.format(Chunk388032.t.TA1BR0, {
-              count: Chunk267642
+            children: H.intl.format(H.t.TA1BR0, {
+              count: A
             })
           })]
-        }), (0, Chunk54381.jsx)(Q, {
-          guild: Chunk120356,
-          staticEmojiCount: Chunk579480,
+        }), (0, r.jsx)(Q, {
+          guild: l,
+          staticEmojiCount: z,
           animatedEmojiCount: X
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk908771.uploader,
-          children: [ed && (0, Chunk54381.jsx)(Chunk481060.Wn, {
-            messageType: Chunk481060.QYI.INFO,
-            children: Chunk388032.intl.format(Chunk388032.t.uMkfTo, {
-              onClick: () => Chunk434404.Z.open(Chunk120356.id, Chunk981631.pNK.ROLE_SUBSCRIPTIONS, true, Chunk981631.KsC.ROLE_SUBSCRIPTION_EMOJI)
+        }), (0, r.jsxs)("div", {
+          className: W.uploader,
+          children: [ed && (0, r.jsx)(b.Wn, {
+            messageType: b.QYI.INFO,
+            children: H.intl.format(H.t.uMkfTo, {
+              onClick: () => k.Z.open(l.id, B.pNK.ROLE_SUBSCRIPTIONS, true, B.KsC.ROLE_SUBSCRIPTION_EMOJI)
             })
-          }), J.enabled ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-            children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
-              text: Chunk388032.intl.string(Chunk388032.t["DU0dy/"]),
+          }), J.enabled ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(b.Button, {
+              text: H.intl.string(H.t["DU0dy/"]),
               variant: "primary",
               onClick: () => {
                 var t;
-                null == (t = module.current) || exports.activateUploadDialogue()
+                null == (t = e.current) || t.activateUploadDialogue()
               },
-              disabled: Chunk372444
-            }), (0, Chunk54381.jsx)("div", {
-              className: Chunk908771.fileInput,
-              children: (0, Chunk54381.jsx)(Chunk372129.ZP, {
-                ref: module,
+              disabled: _
+            }), (0, r.jsx)("div", {
+              className: W.fileInput,
+              children: (0, r.jsx)(T.ZP, {
+                ref: e,
                 onChange: ec,
-                setLoading: Chunk768581,
-                disabled: Chunk372444
-              }, exports.current)
-            }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+                setLoading: R,
+                disabled: _
+              }, t.current)
+            }), (0, r.jsx)(b.Text, {
               variant: "text-xs/normal",
-              children: Chunk388032.intl.string(Chunk388032.t.EgNCTi)
+              children: H.intl.string(H.t.EgNCTi)
             })]
-          }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-            children: [(0, Chunk54381.jsx)($, {}), (0, Chunk54381.jsx)(Chunk481060.Button, {
-              text: Chunk388032.intl.string(Chunk388032.t["DU0dy/"]),
+          }) : (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)($, {}), (0, r.jsx)(b.Button, {
+              text: H.intl.string(H.t["DU0dy/"]),
               variant: "primary",
               onClick: () => {
                 var t;
-                let n = (0, Chunk772848.Z)();
-                Chunk512722(require), Chunk626135.default.track(Chunk981631.rMx.EMOJI_UPLOAD_STARTED, {
-                  guild_id: Chunk120356.id,
-                  upload_id: require
-                }), null == (t = module.current) || exports.activateUploadDialogue()
+                let n = (0, g.Z)();
+                s(n), Z.default.track(B.rMx.EMOJI_UPLOAD_STARTED, {
+                  guild_id: l.id,
+                  upload_id: n
+                }), null == (t = e.current) || t.activateUploadDialogue()
               },
               disabled: en,
-              loading: Chunk372444
-            }), (0, Chunk54381.jsx)("div", {
-              className: Chunk908771.fileInput,
-              children: (0, Chunk54381.jsx)(Chunk372129.ZP, {
-                ref: module,
+              loading: _
+            }), (0, r.jsx)("div", {
+              className: W.fileInput,
+              children: (0, r.jsx)(T.ZP, {
+                ref: e,
                 disabled: en,
                 onChange: el,
-                setLoading: Chunk768581,
+                setLoading: R,
                 multiple: true
               })
             })]
           })]
-        }), (0, Chunk54381.jsx)(q, {
-          isLoading: null == Chunk668781,
-          staticEmoji: Chunk185923,
+        }), (0, r.jsx)(q, {
+          isLoading: null == p,
+          staticEmoji: F,
           animatedEmoji: Y,
-          guild: Chunk120356,
-          theme: Chunk392711,
+          guild: l,
+          theme: c,
           onEdit: eu,
           newlyAddedEmojiIds: er
         })]

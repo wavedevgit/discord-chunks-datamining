@@ -30,7 +30,7 @@ class u {
     throw Error("Not implemented")
   }
   get _hasExceededMaxConsecutiveFlushes() {
-    return this._consecutiveFlushesBeforeQueueEmpty >= Chunk398463.OT
+    return this._consecutiveFlushesBeforeQueueEmpty >= s.OT
   }
   _processWorkCallback(e) {
     if (null == this._workCallbackFn) return;
@@ -59,7 +59,7 @@ class u {
     return this._enableRequestIdleCallback
   }
   clearWorkTimeout() {
-    null != this._flushTimeoutHandler && (clearTimeout(this._flushTimeoutHandler), this._flushTimeoutHandler = null), this._clearIdleCallback(), this._nextDispatchTimeout = Chunk398463.Lu, this._workCallbackFn = null
+    null != this._flushTimeoutHandler && (clearTimeout(this._flushTimeoutHandler), this._flushTimeoutHandler = null), this._clearIdleCallback(), this._nextDispatchTimeout = s.Lu, this._workCallbackFn = null
   }
   requestWorkTimeout(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
@@ -72,6 +72,6 @@ class u {
     }
   }
   constructor() {
-    l(this, "_flushTimeoutHandler", null), l(this, "_flushIdleHandler", null), l(this, "_nextDispatchTimeout", Chunk398463.Lu), l(this, "_workCallbackFn", null), l(this, "_consecutiveFlushesBeforeQueueEmpty", 0), l(this, "_isBackgrounded", false), l(this, "_enableRequestIdleCallback", false), l(this, "_criticalWorkScheduled", false), l(this, "telemetry", new Chunk459005.mA), l(this, "_logger", c)
+    l(this, "_flushTimeoutHandler", null), l(this, "_flushIdleHandler", null), l(this, "_nextDispatchTimeout", s.Lu), l(this, "_workCallbackFn", null), l(this, "_consecutiveFlushesBeforeQueueEmpty", 0), l(this, "_isBackgrounded", false), l(this, "_enableRequestIdleCallback", false), l(this, "_criticalWorkScheduled", false), l(this, "telemetry", new o.mA), l(this, "_logger", c)
   }
 }

@@ -201,26 +201,26 @@ function I(e) {
 
 function S() {
   let e = "• ";
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk199368.notice,
-    children: [(0, Chunk54381.jsx)("img", {
-      className: Chunk199368.wumpus,
-      src: require("./33631.js"),
+  return (0, r.jsxs)("div", {
+    className: C.notice,
+    children: [(0, r.jsx)("img", {
+      className: C.wumpus,
+      src: n(33631),
       alt: "wumpus"
-    }), (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         color: "text-strong",
-        className: Chunk199368.header,
-        children: Chunk388032.intl.string(Chunk388032.t.WslWRL)
-      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
+        className: C.header,
+        children: O.intl.string(O.t.WslWRL)
+      }), (0, r.jsxs)(l.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: [module, Chunk388032.intl.string(Chunk388032.t.z9k21H)]
-      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
+        children: [e, O.intl.string(O.t.z9k21H)]
+      }), (0, r.jsxs)(l.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: [module, Chunk388032.intl.string(Chunk388032.t.t1Lele)]
+        children: [e, O.intl.string(O.t.t1Lele)]
       })]
     })]
   })

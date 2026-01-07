@@ -122,10 +122,10 @@ function O() {
     submitting: a = false,
     disabled: s = false
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  return o()(Chunk329020.button, module, exports, require, {
-    [Chunk329020.fullWidth]: Chunk54381,
-    [Chunk329020.grow]: Chunk473749,
-    [Chunk329020.submitting]: Chunk120356 && !Chunk319498
+  return o()(u.button, e, t, n, {
+    [u.fullWidth]: r,
+    [u.grow]: i,
+    [u.submitting]: a && !s
   })
 }
 

@@ -17,21 +17,21 @@ var Chunk915009 = require("./915009.js"),
   Chunk517319 = require("./517319.js");
 
 function p() {
-  let e = Chunk695346.bh.useSetting(),
-    t = (0, Chunk915009.LN)(),
-    n = Chunk388032.t.sJYh5t,
-    p = Chunk388032.t.cf9mvV;
-  return (0, Chunk54381.jsx)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_DATA_QUESTS_V2,
-    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(require),
-      note: Chunk388032.intl.format(p, {
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
+  let e = o.bh.useSetting(),
+    t = (0, i.LN)(),
+    n = d.t.sJYh5t,
+    p = d.t.cf9mvV;
+  return (0, r.jsx)(s.U, {
+    setting: c.s6.PRIVACY_DATA_QUESTS_V2,
+    children: (0, r.jsx)(l.ZP, {
+      title: d.intl.string(n),
+      note: d.intl.format(p, {
+        helpdeskArticle: a.Z.getArticleURL(u.BhN.QUESTS_PRIVACY_CONTROLS)
       }),
-      value: !module,
+      value: !e,
       onChange: e => o.bh.updateSetting(!e),
-      disabled: exports,
-      tooltipText: exports ? Chunk388032.intl.string(Chunk517319.default["6Af/cw"]) : true
+      disabled: t,
+      tooltipText: t ? d.intl.string(f.default["6Af/cw"]) : true
     })
   })
 }

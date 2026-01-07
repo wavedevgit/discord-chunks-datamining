@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk998502 = require("./998502.js");
 let i = {
   flushDNSCache() {
-    Chunk998502.ZP.flushDNSCache()
+    r.ZP.flushDNSCache()
   },
-  flushCookies: () => Chunk998502.ZP.flushCookies(),
+  flushCookies: () => r.ZP.flushCookies(),
   setApplicationBackgroundColor(e) {
     r.ZP.setApplicationBackgroundColor(e)
   },
@@ -22,5 +22,5 @@ let i = {
   getPidFromDesktopSource: e => r.ZP.getPidFromDesktopSource(e),
   getAudioPid: e => r.ZP.getAudioPid(e),
   generateSessionFromPid: e => r.ZP.generateSessionFromPid(e),
-  getAppHardwareAccelerationEnabled: () => Chunk998502.ZP.getEnableHardwareAcceleration()
+  getAppHardwareAccelerationEnabled: () => r.ZP.getEnableHardwareAcceleration()
 }

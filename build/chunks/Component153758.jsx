@@ -10,12 +10,12 @@ var Chunk720312 = require("./720312.js"),
   Chunk564546 = require("./564546.js");
 
 function o() {
-  let e = (0, Chunk720312.c)("MenuSeparator");
-  return (0, Chunk54381.jsx)("div", {
+  let e = (0, i.c)("MenuSeparator");
+  return (0, r.jsx)("div", {
     role: "separator",
-    className: Chunk564546.separator,
+    className: a.separator,
     style: {
-      "--custom-menu-separator-margin": module ? "8px 0" : "8px"
+      "--custom-menu-separator-margin": e ? "8px 0" : "8px"
     }
   })
 }

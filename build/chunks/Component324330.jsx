@@ -28,20 +28,20 @@ function b(e) {
 }
 
 function p() {
-  let e = Chunk999382.Z.getProps().guild;
-  null != module && (b(module) ? (Chunk434404.Z.close(), (0, Chunk527379._X)(module.id)) : Chunk434404.Z.open(module.id, Chunk981631.pNK.MEMBERS))
+  let e = u.Z.getProps().guild;
+  null != e && (b(e) ? (d.Z.close(), (0, o._X)(e.id)) : d.Z.open(e.id, g.pNK.MEMBERS))
 }
 
 function h() {
-  let e = b((0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []));
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk429578.rowContainer,
-    children: [(0, Chunk54381.jsx)("div", {
-      children: Chunk388032.intl.string(Chunk388032.t["9Oq93m"])
-    }), module && (0, Chunk54381.jsx)(Chunk481060.rgF, {
+  let e = b((0, l.e7)([u.Z], () => u.Z.getProps().guild, []));
+  return (0, r.jsxs)("div", {
+    className: m.rowContainer,
+    children: [(0, r.jsx)("div", {
+      children: f.intl.string(f.t["9Oq93m"])
+    }), e && (0, r.jsx)(a.rgF, {
       size: "xs",
       color: "currentColor",
-      className: Chunk429578.linkIcon
+      className: m.linkIcon
     })]
   })
 }
@@ -50,8 +50,8 @@ function x() {
   var e;
   let {
     guild: t
-  } = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), n = null != (e = null == exports ? true : exports.id) ? module : Chunk981631.lds;
-  return (0, Chunk241559.n2)(require) ? (0, Chunk54381.jsx)(Chunk313364.Z, {
-    guildId: require
+  } = (0, l.e7)([u.Z], () => u.Z.getProps(), [], i.isEqual), n = null != (e = null == t ? true : t.id) ? e : g.lds;
+  return (0, s.n2)(n) ? (0, r.jsx)(c.Z, {
+    guildId: n
   }) : null
 }

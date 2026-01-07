@@ -19,24 +19,24 @@ function f() {
   let {
     sidechainEnabled: e,
     sidechainStrength: t
-  } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
-    sidechainEnabled: Chunk131951.Z.getSidechainCompression(),
-    sidechainStrength: Chunk131951.Z.getSidechainCompressionStrength()
+  } = (0, i.cj)([c.Z], () => ({
+    sidechainEnabled: c.Z.getSidechainCompression(),
+    sidechainStrength: c.Z.getSidechainCompressionStrength()
   })), {
     analyticsLocations: n
-  } = (0, Chunk906732.ZP)();
-  return (0, Chunk54381.jsxs)(Chunk921801.F, {
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
-    children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["/jwMtn"]),
-      description: Chunk388032.intl.string(Chunk388032.t.zlA23F),
-      checked: module,
+  } = (0, s.ZP)();
+  return (0, r.jsxs)(l.F, {
+    setting: u.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
+    children: [(0, r.jsx)(a.rsf, {
+      label: d.intl.string(d.t["/jwMtn"]),
+      description: d.intl.string(d.t.zlA23F),
+      checked: e,
       onChange: e => o.Z.setSidechainCompression(e, {
         analyticsLocations: n
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.iRW, {
-      label: Chunk388032.intl.string(Chunk388032.t.fhEzfj),
-      initialValue: exports,
+    }), (0, r.jsx)(a.iRW, {
+      label: d.intl.string(d.t.fhEzfj),
+      initialValue: t,
       minValue: 1,
       onValueChange: e => o.Z.setSidechainCompressionStrength(e, {
         analyticsLocations: n

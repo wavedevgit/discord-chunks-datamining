@@ -20,34 +20,34 @@ function f() {
     hasActiveDownloads: e,
     progress: t
   } = function() {
-    let e = (0, Chunk442837.cj)([Chunk709706.Z], () => Chunk709706.Z.getOngoingDownloads()),
-      t = Chunk473749.useRef({});
-    Chunk473749.useEffect(() => {
-      0 === Object.entries(module).length && (exports.current = {}), Object.assign(exports.current, module)
-    }, [module]);
-    let n = Object.values(exports.current),
-      r = require.some(e => {
+    let e = (0, a.cj)([c.Z], () => c.Z.getOngoingDownloads()),
+      t = i.useRef({});
+    i.useEffect(() => {
+      0 === Object.entries(e).length && (t.current = {}), Object.assign(t.current, e)
+    }, [e]);
+    let n = Object.values(t.current),
+      r = n.some(e => {
         let {
           downloadedBytes: t
         } = e;
         return (null != t ? t : 0) > 0
       }),
-      l = (0, Chunk392711.sumBy)(require, e => {
+      l = (0, o.sumBy)(n, e => {
         var t;
         return null != (t = null == e ? true : e.downloadedBytes) ? t : 0
       }),
-      s = (0, Chunk392711.sumBy)(require, e => {
+      s = (0, o.sumBy)(n, e => {
         var t;
         return null != (t = null == e ? true : e.totalBytes) ? t : 0
       });
     return {
-      hasActiveDownloads: Chunk54381,
-      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk554916 / Chunk481060 * 100)
+      hasActiveDownloads: r,
+      progress: 0 === s ? 0 : Math.floor(l / s * 100)
     }
   }(), {
     activeVoice: n
-  } = (0, Chunk378441.o)();
-  return (0, Chunk481060.Yzy)(module ? null != require ? "voice-on" : "voice-off" : null, {
+  } = (0, u.o)();
+  return (0, s.Yzy)(e ? null != n ? "voice-on" : "voice-off" : null, {
     from: {
       opacity: 0,
       translateY: 20

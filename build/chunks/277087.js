@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk894939 = require("./894939.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.ENTRANCE_SOUNDS_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.nzUc3B)],
+  useSearchTerms: () => [u.intl.string(u.t.nzUc3B)],
   Component: Chunk894939.C
 })

@@ -65,7 +65,7 @@ class c extends Chunk836560.EventEmitter {
     this.removeAllListeners(), this.pool.release(this)
   }
   destroy() {
-    this.removeAllListeners(), (0, Chunk376398.jC)(this.streamId), this.stream.getTracks().forEach(e => e.stop())
+    this.removeAllListeners(), (0, i.jC)(this.streamId), this.stream.getTracks().forEach(e => e.stop())
   }
   reset() {
     this.refreshSpeaking()

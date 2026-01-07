@@ -67,15 +67,15 @@ class u {
   toJSON() {
     var t, e;
     return Object.assign({}, this.data, {
-      delegatedTo: (null == (t = this.data.delegatedTo) ? true : module.email()) || null,
-      delegatedFrom: (null == (e = this.data.delegatedFrom) ? true : exports.email()) || null,
+      delegatedTo: (null == (t = this.data.delegatedTo) ? true : t.email()) || null,
+      delegatedFrom: (null == (e = this.data.delegatedFrom) ? true : e.email()) || null,
       x: this.x()
     })
   }
   toString() {
     let t = "ATTENDEE";
     if (!this.data.email) throw Error("No value for `email` in ICalAttendee given!");
-    return t += ";ROLE=" + this.data.role, this.data.type && (t += ";CUTYPE=" + this.data.type), this.data.status && (t += ";PARTSTAT=" + this.data.status), this.data.rsvp && (t += ";RSVP=" + this.data.rsvp.toString().toUpperCase()), this.data.delegatedTo && (t += ';DELEGATED-TO="' + this.data.delegatedTo.email() + '"'), this.data.delegatedFrom && (t += ';DELEGATED-FROM="' + this.data.delegatedFrom.email() + '"'), this.data.name && (t += ';CN="' + (0, Chunk139761.escape)(this.data.name) + '"'), this.data.email && this.data.mailto && (t += ";EMAIL=" + (0, Chunk139761.escape)(this.data.email)), this.data.x.length && (t += ";" + this.data.x.map(([t, e]) => t.toUpperCase() + "=" + (0, l.escape)(e)).join(";")), t += ":MAILTO:" + (0, Chunk139761.escape)(this.data.mailto || this.data.email) + "\r\n"
+    return t += ";ROLE=" + this.data.role, this.data.type && (t += ";CUTYPE=" + this.data.type), this.data.status && (t += ";PARTSTAT=" + this.data.status), this.data.rsvp && (t += ";RSVP=" + this.data.rsvp.toString().toUpperCase()), this.data.delegatedTo && (t += ';DELEGATED-TO="' + this.data.delegatedTo.email() + '"'), this.data.delegatedFrom && (t += ';DELEGATED-FROM="' + this.data.delegatedFrom.email() + '"'), this.data.name && (t += ';CN="' + (0, l.escape)(this.data.name) + '"'), this.data.email && this.data.mailto && (t += ";EMAIL=" + (0, l.escape)(this.data.email)), this.data.x.length && (t += ";" + this.data.x.map(([t, e]) => t.toUpperCase() + "=" + (0, l.escape)(e)).join(";")), t += ":MAILTO:" + (0, l.escape)(this.data.mailto || this.data.email) + "\r\n"
   }
 }
 exports.default = u

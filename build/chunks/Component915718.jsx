@@ -44,10 +44,10 @@ function w(e, t, n) {
 }
 class A extends Chunk473749.PureComponent {
   componentDidMount() {
-    Chunk585483.S.subscribe(Chunk981631.CkL.CALL_START, this.handleVoiceClick)
+    S.S.subscribe(Z.CkL.CALL_START, this.handleVoiceClick)
   }
   componentWillUnmount() {
-    Chunk585483.S.unsubscribe(Chunk981631.CkL.CALL_START, this.handleVoiceClick)
+    S.S.unsubscribe(Z.CkL.CALL_START, this.handleVoiceClick)
   }
   renderVideoCallButton() {
     let e, {
@@ -59,15 +59,15 @@ class A extends Chunk473749.PureComponent {
       mode: s,
       isProvisional: c
     } = this.props;
-    if (exports || require && Chunk907862 === Chunk981631.WtW.VOICE) return null;
-    let d = Chunk704215.isManaged(),
+    if (t || n && s === Z.WtW.VOICE) return null;
+    let d = a.isManaged(),
       u = null,
       p = false;
-    return Chunk26151 ? (p = true, u = Chunk388032.intl.string(Chunk388032.t.izMR7o)) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk442837 ? (u = Chunk388032.intl.string(Chunk388032.t.PHzjvX), p = true) : require && Chunk907862 === Chunk981631.WtW.VIDEO ? (e = this.handleJoinVideoCall, u = Chunk287734 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.W68MhH)) : (e = this.handleStartVideoCall, u = Chunk287734 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.oCqlGG)) : (p = true, e = this.handleBrowserNotSupported, u = Chunk388032.intl.string(Chunk388032.t.UVpg3U)), (0, Chunk54381.jsx)(Chunk665149.ZP.Icon, {
-      icon: Chunk481060.Odl,
-      onClick: module,
-      disabled: Chunk451576 || Chunk473749,
-      tooltip: Chunk607070
+    return c ? (p = true, u = R.intl.string(R.t.izMR7o)) : v.Z.supports(N.AN.VIDEO) ? l ? (u = R.intl.string(R.t.PHzjvX), p = true) : n && s === Z.WtW.VIDEO ? (e = this.handleJoinVideoCall, u = d ? R.intl.string(R.t.S0W8Z5) : R.intl.string(R.t.W68MhH)) : (e = this.handleStartVideoCall, u = d ? R.intl.string(R.t.S0W8Z5) : R.intl.string(R.t.oCqlGG)) : (p = true, e = this.handleBrowserNotSupported, u = R.intl.string(R.t.UVpg3U)), (0, r.jsx)(E.ZP.Icon, {
+      icon: o.Odl,
+      onClick: e,
+      disabled: p || i,
+      tooltip: u
     })
   }
   renderVoiceCallButton() {
@@ -80,20 +80,20 @@ class A extends Chunk473749.PureComponent {
       dismissibleContentTypes: d,
       isProvisional: u
     } = this.props;
-    if (exports) return null;
-    let p = Chunk26151.isManaged(),
+    if (t) return null;
+    let p = c.isManaged(),
       h = false;
-    Chunk607070 ? (h = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7o)) : Chunk473749 ? (e = Chunk451576 ? Chunk388032.intl.string(Chunk388032.t.LW2Ghr) : Chunk388032.intl.string(Chunk388032.t.rF7lN5), h = true) : Chunk442837 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), h = true) : e = require ? Chunk451576 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.fdEeb5) : Chunk451576 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.focH1t);
-    let f = (0, Chunk54381.jsx)(Chunk665149.ZP.Icon, {
+    u ? (h = true, e = R.intl.string(R.t.izMR7o)) : i ? (e = p ? R.intl.string(R.t.LW2Ghr) : R.intl.string(R.t.rF7lN5), h = true) : l ? (e = R.intl.string(R.t.PHzjvX), h = true) : e = n ? p ? R.intl.string(R.t.S0W8Z5) : R.intl.string(R.t.fdEeb5) : p ? R.intl.string(R.t.S0W8Z5) : R.intl.string(R.t.focH1t);
+    let f = (0, r.jsx)(E.ZP.Icon, {
       ref: this.iconRef,
-      icon: Chunk481060.Csw,
+      icon: o.Csw,
       onClick: this.handleVoiceClick,
-      disabled: Chunk358221,
-      tooltip: module
+      disabled: h,
+      tooltip: e
     });
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [Chunk266454, (0, Chunk54381.jsx)(Chunk243778.ZP, {
-        contentTypes: Chunk287734,
+    return (0, r.jsxs)(r.Fragment, {
+      children: [f, (0, r.jsx)(g.ZP, {
+        contentTypes: d,
         children: e => {
           let {
             visibleContent: t,
@@ -117,7 +117,7 @@ class A extends Chunk473749.PureComponent {
     })
   }
   render() {
-    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+    return (0, r.jsxs)(i.Fragment, {
       children: [this.renderVoiceCallButton(), this.renderVideoCallButton()]
     })
   }

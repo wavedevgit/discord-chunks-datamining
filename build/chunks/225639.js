@@ -8,6 +8,6 @@ var Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
 
 function a() {
-  let e = Chunk358085.isPlatformEmbedded && Chunk998502.ZP.supportsFeature(Chunk981631.eRX.POPOUT_WINDOWS);
-  return !Chunk358085.isPlatformEmbedded || module
+  let e = r.isPlatformEmbedded && i.ZP.supportsFeature(l.eRX.POPOUT_WINDOWS);
+  return !r.isPlatformEmbedded || e
 }

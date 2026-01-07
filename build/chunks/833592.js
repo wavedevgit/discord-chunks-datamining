@@ -25,7 +25,7 @@ function f(e) {
 }
 
 function h() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "RESET_NOTIFICATION_CENTER"
   })
 }

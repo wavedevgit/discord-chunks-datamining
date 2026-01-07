@@ -10,12 +10,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js");
 let r = "guild-event-modal",
   o = () => {
-    let e = (0, Chunk728285.bp)() === Chunk981631.IlC.POPOUT ? Chunk481060.u1M : Chunk481060.z1l;
+    let e = (0, c.bp)() === a.IlC.POPOUT ? i.u1M : i.z1l;
     return {
       modalKey: r,
-      contextKey: module,
+      contextKey: e,
       onCloseRequest: () => {
-        Chunk334877.l.getState().canCloseModal && (0, Chunk481060.Mr3)(r, module)
+        l.l.getState().canCloseModal && (0, i.Mr3)(r, e)
       }
     }
   }

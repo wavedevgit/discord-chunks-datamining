@@ -34,7 +34,7 @@ class c {
       id: this.id,
       data: {
         type: this.type,
-        games: this.games.map(module)
+        games: this.games.map(e)
       }
     }
   }
@@ -42,7 +42,7 @@ class c {
     return 0 === this.games.length
   }
   isValid() {
-    return this.games.length > 0 && this.games.length <= Chunk624238.kp[this.type]
+    return this.games.length > 0 && this.games.length <= r.kp[this.type]
   }
   isEqual(e) {
     return e instanceof c && e.type === this.type && (0, a.ou)(this.games, e.games, this.type)

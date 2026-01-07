@@ -22,12 +22,12 @@ function c(e, t, n) {
 let u = false;
 class d extends Chunk147913.Z {
   handlePossibleCredentialFetch() {
-    if (!(u || __OVERLAY__) && Chunk314897.default.getLoginStatus() === Chunk981631.u34.NONE) {
-      if (Chunk15980.Z.hasFetchedCredentials()) {
+    if (!(u || __OVERLAY__) && i.default.getLoginStatus() === l.u34.NONE) {
+      if (s.Z.hasFetchedCredentials()) {
         u = true;
         return
       }
-      true !== Chunk594174.default.getCurrentUser() && (u = true, (0, Chunk365007.hL)())
+      true !== a.default.getCurrentUser() && (u = true, (0, o.hL)())
     }
   }
   handleLogout() {

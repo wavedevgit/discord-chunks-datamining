@@ -114,7 +114,7 @@ function K() {
 }
 
 function z() {
-  return Chunk509140.Z.isOverlayEnabled
+  return I.Z.isOverlayEnabled
 }
 
 function q() {
@@ -384,17 +384,17 @@ async function eu(e, t, n) {
   return null != c && await s.Z.updateTrackedGame(e, c), s.Z.updateOverlayMethod(e, a)
 }
 async function ed() {
-  let e = new Set(Chunk594190.ZP.getRunningGames().filter(e => f.ZP.getOverlayEnabledForGame(e)).map(e => e.pid)),
+  let e = new Set(f.ZP.getRunningGames().filter(e => f.ZP.getOverlayEnabledForGame(e)).map(e => e.pid)),
     t = new Set(X()),
-    n = new Set([...exports].filter(t => !e.has(t)));
-  for (let e of require) await es(module), await (0, Chunk379649._v)(16);
-  let r = new Set([...module].filter(e => !t.has(e)));
-  for (let e of r) await eo(module), await (0, Chunk379649._v)(16);
-  let i = new Set([...exports].filter(t => e.has(t)));
-  await em(Chunk442837), (require.size > 0 || r.size > 0) && D.verbose("Tracked games have changes", {
-    trackedPIDsNoLongerValid: require,
+    n = new Set([...t].filter(t => !e.has(t)));
+  for (let e of n) await es(e), await (0, a._v)(16);
+  let r = new Set([...e].filter(e => !t.has(e)));
+  for (let e of r) await eo(e), await (0, a._v)(16);
+  let i = new Set([...t].filter(t => e.has(t)));
+  await em(i), (n.size > 0 || r.size > 0) && D.verbose("Tracked games have changes", {
+    trackedPIDsNoLongerValid: n,
     validPIDsNotAlreadyTracked: r,
-    pidsAlreadyTracked: Chunk442837
+    pidsAlreadyTracked: i
   })
 }
 async function ef(e) {
@@ -542,14 +542,14 @@ function ev(e) {
   }), ee(t) ? eS() : eo(t)) : es(t), true
 }
 async function eS() {
-  await eI(), await (0, Chunk379649._v)(2e3);
+  await eI(), await (0, a._v)(2e3);
   let e = X(),
-    t = new Set([...Chunk594190.ZP.getRunningGames().filter(e => f.ZP.getOverlayEnabledForGame(e)).map(e => e.pid), ...module]);
-  for (let n of (D.info("Retracking ".concat(exports.size, " games (").concat(module.length, " already tracked)")), exports)) await eo(require), await (0, Chunk379649._v)(16);
-  D.info("Retracked ".concat(module.length, " games"))
+    t = new Set([...f.ZP.getRunningGames().filter(e => f.ZP.getOverlayEnabledForGame(e)).map(e => e.pid), ...e]);
+  for (let n of (D.info("Retracking ".concat(t.size, " games (").concat(e.length, " already tracked)")), t)) await eo(n), await (0, a._v)(16);
+  D.info("Retracked ".concat(e.length, " games"))
 }
 async function eI() {
-  for (let e of X()) await es(module), await (0, Chunk379649._v)(16)
+  for (let e of X()) await es(e), await (0, a._v)(16)
 }
 
 function eT(e) {
@@ -579,7 +579,7 @@ function eR(e) {
 }
 
 function ew() {
-  return Y = new Chunk188274.Z(1e4), true
+  return Y = new c.Z(1e4), true
 }
 
 function eD(e) {
@@ -600,7 +600,7 @@ function ex(e) {
 }
 
 function eL() {
-  Chunk353926.Z.hasLoadedExperiments && !j && (j = true, eg(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
+  d.Z.hasLoadedExperiments && !j && (j = true, eg(g.v.legacyEnabled, g.v.oopEnabled))
 }
 
 function ej() {
@@ -612,7 +612,7 @@ function eM() {
 }
 class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk624864.Z, Chunk594190.ZP, Chunk509140.Z), this.syncWith([Chunk353926.Z], eL)
+    this.waitFor(p.default, d.Z, _.Z, v.Z, f.ZP, I.Z), this.syncWith([d.Z], eL)
   }
   getDevToolsFocusedPidsWithTimestamp() {
     return Y

@@ -12,9 +12,9 @@ var Chunk570140 = require("./570140.js");
 
 function i() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1e4;
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "BROWSER_HANDOFF_BEGIN",
-    timeout: module
+    timeout: e
   })
 }
 
@@ -43,7 +43,7 @@ function o(e) {
 }
 
 function s() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "BROWSER_HANDOFF_UNAVAILABLE"
   })
 }

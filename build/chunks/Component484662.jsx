@@ -15,40 +15,40 @@ var Chunk481060 = require("./481060.js"),
   Chunk663618 = require("./663618.js");
 
 function m() {
-  return (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk663618.panel,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk68428.panelInner,
-      children: [(0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, a.jsx)(r.zJl, {
+    className: u.panel,
+    children: (0, a.jsxs)("div", {
+      className: d.panelInner,
+      children: [(0, a.jsxs)("section", {
+        className: d.section,
+        children: [(0, a.jsx)(r.Heading, {
           variant: "heading-md/semibold",
           children: "Verification Layer"
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk68428.inputRow,
-          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)("div", {
+          className: d.inputRow,
+          children: (0, a.jsx)(r.Button, {
             variant: "primary",
             text: "Open Verification Layer",
             onClick: () => {
-              (0, Chunk84615.q4)(() => (0, Chunk54381.jsx)(Chunk852758.Z, {}), {
-                layerKey: Chunk308569.CV,
-                Layer: Chunk429142.ZP
+              (0, i.q4)(() => (0, a.jsx)(o.Z, {}), {
+                layerKey: c.CV,
+                Layer: l.ZP
               })
             }
           })
         })]
-      }), (0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, a.jsxs)("section", {
+        className: d.section,
+        children: [(0, a.jsx)(r.Heading, {
           variant: "heading-md/semibold",
           children: "Safety Flow"
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk68428.inputRow,
-          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)("div", {
+          className: d.inputRow,
+          children: (0, a.jsx)(r.Button, {
             variant: "primary",
             text: "Open Safety Flow",
             onClick: () => {
-              (0, Chunk84615.q4)(e => {
+              (0, i.q4)(e => {
                 let {
                   closeLayer: t
                 } = e;
@@ -56,24 +56,24 @@ function m() {
                   onClose: t
                 })
               }, {
-                layerKey: Chunk308569.CV,
-                Layer: Chunk429142.ZP
+                layerKey: c.CV,
+                Layer: l.ZP
               })
             }
           })
         })]
-      }), (0, Chunk54381.jsxs)("section", {
-        className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, a.jsxs)("section", {
+        className: d.section,
+        children: [(0, a.jsx)(r.Heading, {
           variant: "heading-md/semibold",
           children: "Layer Controls"
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk68428.inputRow,
-          children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)("div", {
+          className: d.inputRow,
+          children: (0, a.jsx)(r.Button, {
             variant: "primary",
             text: "Close All Layers",
             onClick: () => {
-              Chunk84615.QP.setState({
+              i.QP.setState({
                 fullScreenLayers: []
               })
             }

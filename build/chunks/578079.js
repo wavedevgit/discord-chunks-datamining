@@ -9,7 +9,7 @@ module.exports = Object.setPrototypeOf || ("__proto__" in {} ? function() {
   var t, r = false,
     n = {};
   try {
-    (t = Chunk564498(Object.prototype, "__proto__", "set"))(require, []), r = require instanceof Array
+    (t = e(Object.prototype, "__proto__", "set"))(n, []), r = n instanceof Array
   } catch (t) {}
   return function(n, e) {
     return i(n), u(e), o(n) && (r ? t(n, e) : n.__proto__ = e), n

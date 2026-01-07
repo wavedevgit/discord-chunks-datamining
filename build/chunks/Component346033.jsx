@@ -49,137 +49,137 @@ let U = e => {
   },
   G = () => {
     var e, t;
-    (0, Chunk214852.z)(Chunk433811.X);
-    let n = Chunk473749.useRef(null),
-      a = Chunk473749.useRef(null),
-      A = Chunk473749.useRef(null),
-      G = (0, Chunk410030.ZP)(),
-      Z = (0, Chunk780384.wj)(G),
-      [F, B] = Chunk473749.useState(false),
-      [V, H] = Chunk473749.useState(false),
-      [Y, W] = Chunk473749.useState(false),
+    (0, m.z)(_.X);
+    let n = i.useRef(null),
+      a = i.useRef(null),
+      A = i.useRef(null),
+      G = (0, d.ZP)(),
+      Z = (0, c.wj)(G),
+      [F, B] = i.useState(false),
+      [V, H] = i.useState(false),
+      [Y, W] = i.useState(false),
       K = !F && !V,
-      [z, q] = Chunk473749.useState(false),
-      Q = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-      X = null != Q ? (0, Chunk74538.Af)(Q) : null,
-      J = null != X ? Chunk74538.ZP.getSkuIdForPlan(X.planId) : null,
-      $ = null !== J && J !== Chunk474936.Si.TIER_2 ? Chunk474936.Si.TIER_2 : null,
-      ee = (0, Chunk639119.N)(),
-      et = null == ee || null == (e = ee.subscription_trial) ? true : module.sku_id,
-      en = (0, Chunk140465.Nx)(),
-      er = (0, Chunk367074.Vi)(),
+      [z, q] = i.useState(false),
+      Q = (0, s.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
+      X = null != Q ? (0, E.Af)(Q) : null,
+      J = null != X ? E.ZP.getSkuIdForPlan(X.planId) : null,
+      $ = null !== J && J !== D.Si.TIER_2 ? D.Si.TIER_2 : null,
+      ee = (0, v.N)(),
+      et = null == ee || null == (e = ee.subscription_trial) ? true : e.sku_id,
+      en = (0, y.Nx)(),
+      er = (0, b.Vi)(),
       ei = null != er && er,
-      ea = null == (t = (0, Chunk347896.Z)()) ? true : exports.billingSettingsMarketingBanner,
+      ea = null == (t = (0, O.Z)()) ? true : t.billingSettingsMarketingBanner,
       {
         analyticsLocations: eo
-      } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING);
-    Chunk473749.useEffect(() => {
+      } = (0, p.ZP)(f.Z.PREMIUM_MARKETING);
+    i.useEffect(() => {
       q(true)
     }, []);
-    let es = (0, Chunk54381.jsx)("div", {
-      className: Chunk711479.premiumTierCardsContainerSettings,
-      children: (0, Chunk54381.jsx)(Chunk622535.$, {
-        innerRef: require,
+    let es = (0, r.jsx)("div", {
+      className: M.premiumTierCardsContainerSettings,
+      children: (0, r.jsx)(l.$, {
+        innerRef: n,
         onChange: e => H(e),
         threshold: .1,
         active: true,
-        children: (0, Chunk54381.jsx)(Chunk823188.IY, {
-          innerRef: require,
-          tier0CTAButton: (0, Chunk54381.jsx)(Chunk784238.Z, {
+        children: (0, r.jsx)(T.IY, {
+          innerRef: n,
+          tier0CTAButton: (0, r.jsx)(S.Z, {
             showIcon: false,
-            subscriptionTier: Chunk474936.Si.TIER_0,
-            className: Chunk529663.subButton,
-            look: Chunk755721.iL.OUTLINED,
-            color: Chunk755721.Tt.WHITE,
-            buttonShineClassName: Chunk529663.buttonShine
+            subscriptionTier: D.Si.TIER_0,
+            className: j.subButton,
+            look: u.iL.OUTLINED,
+            color: u.Tt.WHITE,
+            buttonShineClassName: j.buttonShine
           }),
-          tier2CTAButton: et === Chunk474936.Si.TIER_0 ? (0, Chunk54381.jsx)(Chunk784238.Z, {
+          tier2CTAButton: et === D.Si.TIER_0 ? (0, r.jsx)(S.Z, {
             showIcon: false,
-            subscriptionTier: Chunk474936.Si.TIER_2,
-            className: Chunk529663.subButton,
-            look: Chunk755721.iL.OUTLINED,
-            color: Chunk755721.Tt.WHITE,
-            buttonShineClassName: Chunk529663.buttonShine
-          }) : (0, Chunk54381.jsx)(Chunk784238.Z, {
-            color: Chunk755721.Tt.BRAND_INVERTED,
+            subscriptionTier: D.Si.TIER_2,
+            className: j.subButton,
+            look: u.iL.OUTLINED,
+            color: u.Tt.WHITE,
+            buttonShineClassName: j.buttonShine
+          }) : (0, r.jsx)(S.Z, {
+            color: u.Tt.BRAND_INVERTED,
             showIcon: false,
-            subscriptionTier: Chunk474936.Si.TIER_2,
-            className: Chunk529663.subButton,
+            subscriptionTier: D.Si.TIER_2,
+            className: j.subButton,
             hasActivePromotion: ei,
             textOptions: {
-              textClassName: Chunk529663.subButtonText
+              textClassName: j.subButtonText
             },
-            buttonShineClassName: Chunk529663.buttonShine
+            buttonShineClassName: j.buttonShine
           })
         })
       })
     });
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk711479.container,
+    return (0, r.jsxs)("div", {
+      className: M.container,
       "data-cy": "tier-0-marketing-page",
-      children: [(0, Chunk54381.jsx)(Chunk135785.Z, {
+      children: [(0, r.jsx)(C.Z, {
         premiumSubscription: Q,
-        className: o()(Chunk711479.existingSubscriberSpacing, {
-          [Chunk711479.zIndex1]: en
+        className: o()(M.existingSubscriberSpacing, {
+          [M.zIndex1]: en
         })
-      }), (0, Chunk54381.jsx)(U, {
+      }), (0, r.jsx)(U, {
         inOfferExperience: en
-      }), (0, Chunk54381.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: o()({
-          [Chunk711479.settingsContainer]: !en
+          [M.settingsContainer]: !en
         }),
-        children: [null != ea && (0, Chunk54381.jsx)(Chunk218390.C, {
-          className: Chunk711479.giftPromoCard,
+        children: [null != ea && (0, r.jsx)(I.C, {
+          className: M.giftPromoCard,
           config: ea
-        }), (0, Chunk54381.jsx)(Chunk622535.$, {
-          innerRef: Chunk120356,
+        }), (0, r.jsx)(l.$, {
+          innerRef: a,
           onChange: e => B(e),
           threshold: 0,
           active: true,
-          children: (0, Chunk54381.jsx)(Chunk635921.ZP, {
-            ref: Chunk120356,
+          children: (0, r.jsx)(N.ZP, {
+            ref: a,
             subscriptionTier: $,
             className: o()({
-              [Chunk711479.settingsHeroNoBackground]: en,
-              [Chunk711479.trialMarketingMargin]: en,
-              [Chunk711479.settingsHeroBogoHeight]: er,
-              [Chunk711479.noTopPaddingOverride]: null != Q
+              [M.settingsHeroNoBackground]: en,
+              [M.trialMarketingMargin]: en,
+              [M.settingsHeroBogoHeight]: er,
+              [M.noTopPaddingOverride]: null != Q
             }),
             isDarkMode: Z
           })
         })]
-      }), es, (0, Chunk54381.jsx)(Chunk177839.Z, {
-        className: Chunk711479.perkCardsContainerSpacingSettings
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk711479.planComparisonTableContainer,
-        children: (0, Chunk54381.jsx)(Chunk179984.Z, {
-          className: Chunk711479.planComparisonTable,
+      }), es, (0, r.jsx)(P.Z, {
+        className: M.perkCardsContainerSpacingSettings
+      }), (0, r.jsx)("div", {
+        className: M.planComparisonTableContainer,
+        children: (0, r.jsx)(w.Z, {
+          className: M.planComparisonTable,
           hideCTAs: true
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk711479.footerSpacing
-      }), (0, Chunk54381.jsx)(Chunk349803.Z, {
+      }), (0, r.jsx)("div", {
+        className: M.footerSpacing
+      }), (0, r.jsx)(R.Z, {
         isVisible: K && z,
         subscriptionTier: $,
         isApplicationHome: false,
         isEligibleForBogoPromotion: er
-      }), (0, Chunk54381.jsx)(Chunk622535.$, {
-        innerRef: Chunk498765,
+      }), (0, r.jsx)(l.$, {
+        innerRef: A,
         onChange: e => {
           e && !Y && (g.default.track(x.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: eo
           }), W(true))
         },
-        children: (0, Chunk54381.jsx)("div", {
-          ref: Chunk498765,
-          className: Chunk711479.bottomOfPageVisibilitySensor
+        children: (0, r.jsx)("div", {
+          ref: A,
+          className: M.bottomOfPageVisibilitySensor
         })
-      }), (0, Chunk54381.jsx)("img", {
-        src: Chunk865215,
-        className: Chunk711479.bottomIllustration,
+      }), (0, r.jsx)("img", {
+        src: k,
+        className: M.bottomIllustration,
         width: 112,
         height: 85,
-        alt: Chunk388032.intl.string(Chunk388032.t.X4IxWL)
+        alt: L.intl.string(L.t.X4IxWL)
       })]
     })
   }

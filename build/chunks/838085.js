@@ -11,8 +11,8 @@ function a() {
   let {
     ref: e,
     width: t
-  } = (0, Chunk393238.ZP)(), [n, a] = Chunk473749.useState();
-  return Chunk473749.useEffect(() => {
-    null == require && null != exports && a(exports)
-  }, [require, exports]), [module, require]
+  } = (0, i.ZP)(), [n, a] = r.useState();
+  return r.useEffect(() => {
+    null == n && null != t && a(t)
+  }, [n, t]), [e, n]
 }

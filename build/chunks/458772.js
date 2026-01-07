@@ -41,7 +41,7 @@ class u extends Chunk442837.ZP.Store {
     this.delete(e)
   }
   initialize() {
-    this.waitFor(Chunk93093.Z)
+    this.waitFor(o.Z)
   }
   handleCacheLoadedLazy(e) {
     for (let [t, n] of(this.guilds = new Map, this.channels = new Map, e.basicGuildChannels))
@@ -63,7 +63,7 @@ class u extends Chunk442837.ZP.Store {
     this.guilds.delete(e)
   }
   constructor() {
-    super(Chunk570140.Z, {
+    super(i.Z, {
       CACHE_LOADED_LAZY_NO_CACHE: e => this.handleCacheLoadedLazyNoCache(e),
       CACHE_LOADED_LAZY: e => this.handleCacheLoadedLazy(e),
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),

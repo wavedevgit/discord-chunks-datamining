@@ -21,10 +21,10 @@ function c(e, t, n) {
 }
 class u extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.subscribe("LOGOUT", this.handleLogout)
+    r.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), r.Z.subscribe("LOGOUT", this.handleLogout)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.unsubscribe("LOGOUT", this.handleLogout)
+    r.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), r.Z.unsubscribe("LOGOUT", this.handleLogout)
   }
   constructor(...e) {
     super(...e), c(this, "handleVoiceChannelSelect", e => {

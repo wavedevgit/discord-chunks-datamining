@@ -18,14 +18,14 @@ var Chunk91192 = require("./91192.jsx"),
 
 function p() {
   var e, t;
-  let n = (0, Chunk442837.e7)([Chunk486472.Z, Chunk430824.Z], () => Chunk486472.Z.unavailableGuilds.filter(e => null == s.Z.getGuild(e)).length),
-    p = (0, Chunk91192.Ie)("unavailable-guilds-button");
-  return require <= 0 ? null : (0, Chunk54381.jsx)(Chunk682662.H, {
-    children: (0, Chunk54381.jsx)(Chunk662146.Z, {
-      text: Chunk388032.intl.format(Chunk388032.t["TnH05/"], {
-        count: require
+  let n = (0, l.e7)([o.Z, s.Z], () => o.Z.unavailableGuilds.filter(e => null == s.Z.getGuild(e)).length),
+    p = (0, i.Ie)("unavailable-guilds-button");
+  return n <= 0 ? null : (0, r.jsx)(c.H, {
+    children: (0, r.jsx)(u.Z, {
+      text: f.intl.format(f.t["TnH05/"], {
+        count: n
       }),
-      children: (0, Chunk54381.jsx)(Chunk481060.eee, (e = function(e) {
+      children: (0, r.jsx)(a.eee, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -43,27 +43,27 @@ function p() {
         }
         return e
       }({
-        href: Chunk231338.yX.STATUS,
+        href: d.yX.STATUS,
         target: "_blank",
-        className: Chunk943207.guildsError,
-        "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["MEpX+2"], {
-          count: require
+        className: h.guildsError,
+        "aria-label": f.intl.formatToPlainString(f.t["MEpX+2"], {
+          count: n
         })
       }, p), t = t = {
-        children: (0, Chunk54381.jsx)(Chunk481060.Mgn, {
+        children: (0, r.jsx)(a.Mgn, {
           color: "currentColor",
           "aria-hidden": true
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(exports)).forEach(function(n) {
+      })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-      }), module))
+      }), e))
     })
   })
 }

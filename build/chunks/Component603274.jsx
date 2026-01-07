@@ -42,79 +42,79 @@ function _(e, t) {
 }
 
 function I() {
-  let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(Chunk823379.lm)),
-    t = module.map(e => e.id),
-    n = module.filter(e => e.type === x.d4z.GUILD_VOICE),
-    i = module.filter(e => e.type === x.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => s().flatMap(require, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
+  let e = (0, c.Wu)([C.Z, m.Z], () => j.default.keys(C.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(v.lm)),
+    t = e.map(e => e.id),
+    n = e.filter(e => e.type === x.d4z.GUILD_VOICE),
+    i = e.filter(e => e.type === x.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    l = (0, c.Wu)([O.ZP], () => s().flatMap(n, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
-    })), [require]),
-    a = (0, Chunk442837.Wu)([Chunk565799.Z], () => s().flatMap(Chunk473749, e => p.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
+    })), [n]),
+    a = (0, c.Wu)([p.Z], () => s().flatMap(i, e => p.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
       return t
     }))),
-    o = (0, Chunk442837.e7)([Chunk565799.Z], () => {
+    o = (0, c.e7)([p.Z], () => {
       let e = 0;
-      for (let t of Chunk473749) e += Chunk565799.Z.getParticipantCount(exports, Chunk501655.pV.AUDIENCE);
-      return module
+      for (let t of i) e += p.Z.getParticipantCount(t, g.pV.AUDIENCE);
+      return e
     }),
-    u = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
-    E = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
-      let e = Chunk317381.ZP.getEmbeddedActivitiesByChannel(),
+    u = (0, c.Wu)([b.Z], () => b.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+    E = (0, c.Wu)([f.ZP], () => {
+      let e = f.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
-      for (let l of exports) {
+      for (let l of t) {
         var r, i;
-        require.push(...null != (i = null == (r = module.get(Chunk120356)) ? true : Chunk54381.flatMap(e => Array.from(e.userIds))) ? Chunk473749 : [])
+        n.push(...null != (i = null == (r = e.get(l)) ? true : r.flatMap(e => Array.from(e.userIds))) ? i : [])
       }
-      return require
-    }, [exports]),
-    I = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk388032.map(e => y.default.getUser(e)), [Chunk388032]),
-    P = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk681715.map(e => y.default.getUser(e)), [Chunk681715]),
-    N = _(Chunk481060.gj8, Chunk120356.filter(e => !u.includes(e.id) && !E.includes(e.id))),
-    Z = 0 === a.length ? null : (0, Chunk54381.jsxs)("div", {
-      className: Chunk998081.row,
-      children: [(0, Chunk54381.jsx)(Chunk481060.ewx, {
+      return n
+    }, [t]),
+    I = (0, c.Wu)([y.default], () => E.map(e => y.default.getUser(e)), [E]),
+    P = (0, c.Wu)([y.default], () => u.map(e => y.default.getUser(e)), [u]),
+    N = _(d.gj8, l.filter(e => !u.includes(e.id) && !E.includes(e.id))),
+    Z = 0 === a.length ? null : (0, r.jsxs)("div", {
+      className: S.row,
+      children: [(0, r.jsx)(d.ewx, {
         size: "lg",
         color: "currentColor",
-        className: Chunk998081.activityIcon
-      }), (0, Chunk54381.jsx)(Chunk884338.ZP, {
+        className: S.activityIcon
+      }), (0, r.jsx)(h.ZP, {
         guildId: true,
         users: a,
         max: 3
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk998081.stageListenerPill,
-        children: [(0, Chunk54381.jsx)(Chunk481060.VWR, {
+      }), (0, r.jsxs)("div", {
+        className: S.stageListenerPill,
+        children: [(0, r.jsx)(d.VWR, {
           size: "xs",
           color: "currentColor"
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk998081.stageListenerCount,
+        }), (0, r.jsx)(d.Text, {
+          className: S.stageListenerCount,
           color: "text-default",
           variant: "text-xs/medium",
-          children: Chunk392711
+          children: o
         })]
       })]
     }),
-    w = _(Chunk481060.hGI, P.filter(e => null != e && !E.includes(e.id))),
-    T = _(Chunk481060.nG3, I);
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    w = _(d.hGI, P.filter(e => null != e && !E.includes(e.id))),
+    T = _(d.nG3, I);
+  return (0, r.jsxs)(r.Fragment, {
     children: [Z, N, w, T]
   })
 }
 
 function P() {
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)("div", {
-      className: a()(Chunk998081.row, Chunk998081.rowGuildName),
-      children: (0, Chunk54381.jsx)("span", {
-        className: a()(Chunk998081.guildNameText, Chunk998081.guildNameTextLimitedSize),
-        children: Chunk388032.intl.string(Chunk388032.t.wMWyci)
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
+      className: a()(S.row, S.rowGuildName),
+      children: (0, r.jsx)("span", {
+        className: a()(S.guildNameText, S.guildNameTextLimitedSize),
+        children: E.intl.string(E.t.wMWyci)
       })
-    }), (0, Chunk54381.jsx)(I, {})]
+    }), (0, r.jsx)(I, {})]
   })
 }
 

@@ -45,15 +45,15 @@ var Chunk250683 = require("./250683.js"),
   Chunk388032 = require("./388032.jsx");
 
 function N() {
-  return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
+  return g.Z.getArticleURL(C.BhN.END_TO_END_ENCRYPTION)
 }
 
 function P() {
-  return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
+  return g.Z.getArticleURL(C.BhN.END_TO_END_ENCRYPTION)
 }
 
 function R() {
-  return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
+  return g.Z.getArticleURL(C.BhN.END_TO_END_ENCRYPTION)
 }
 
 function w(e, t, n, r, i) {

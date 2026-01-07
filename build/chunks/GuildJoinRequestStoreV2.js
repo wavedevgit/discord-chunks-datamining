@@ -193,7 +193,7 @@ let K = {},
   z = 10 * Chunk70956.Z.Seconds.MINUTE;
 class q extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(c.default)
   }
   getRequest(e) {
     return K[e]

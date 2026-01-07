@@ -46,22 +46,22 @@ let c = 2592e6,
 
 function y() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  if (!module && Date.now() < h) return;
+  if (!e && Date.now() < h) return;
   let t = 0,
     n = Date.now() - c;
-  for (let e = 0; module < p.itemImpressions.length; module++) {
-    let [r, i] = p.itemImpressions[module];
-    if (Chunk442837 < require) t = module + 1;
+  for (let e = 0; e < p.itemImpressions.length; e++) {
+    let [r, i] = p.itemImpressions[e];
+    if (i < n) t = e + 1;
     else break
   }
-  exports > 0 && (p.itemImpressions = p.itemImpressions.slice(exports)), p.itemImpressions.length > d && (p.itemImpressions = p.itemImpressions.slice(-d));
+  t > 0 && (p.itemImpressions = p.itemImpressions.slice(t)), p.itemImpressions.length > d && (p.itemImpressions = p.itemImpressions.slice(-d));
   let r = E ? b : u,
     i = new Set,
     a = new Set,
     o = Date.now() - r,
     s = null;
-  for (let [e, t] of p.itemImpressions) exports < Chunk70956 ? Chunk442837.add(module) : null == s && (s = exports + r), Chunk570140.add(module);
-  _ = Chunk442837, m = Chunk570140, h = null != s ? s : 1 / 0, g = true
+  for (let [e, t] of p.itemImpressions) t < o ? i.add(e) : null == s && (s = t + r), a.add(e);
+  _ = i, m = a, h = null != s ? s : 1 / 0, g = true
 }
 
 function O(e) {

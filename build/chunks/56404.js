@@ -13,15 +13,15 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.qsMfsH),
+  useTitle: () => S.intl.string(S.t.qsMfsH),
   useValue: () => {
-    let t = Chunk695346.xq.useSetting(),
-      e = Chunk473749.useMemo(() => (0, Chunk88658.bL)(module), [module]);
-    return exports.all || exports.mutualGuilds
+    let t = a.xq.useSetting(),
+      e = i.useMemo(() => (0, r.bL)(t), [t]);
+    return e.all || e.mutualGuilds
   },
   setValue: t => {
     let e = a.xq.getSetting();
     a.xq.updateSetting(t ? l.pj(e, T.SOq.MUTUAL_GUILDS) : l.M1(e, T.SOq.MUTUAL_GUILDS, T.SOq.NO_RELATION))
   },
-  useDisabled: () => (0, Chunk915009.LN)()
+  useDisabled: () => (0, s.LN)()
 })

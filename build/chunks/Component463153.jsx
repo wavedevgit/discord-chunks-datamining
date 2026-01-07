@@ -12,16 +12,16 @@ var Chunk793030 = require("./793030.js"),
   Chunk258720 = require("./258720.js");
 
 function l() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk318650.container,
-    children: [(0, Chunk54381.jsx)("img", {
-      className: Chunk318650.emptySearchIcon,
-      src: Chunk258720,
+  return (0, r.jsxs)("div", {
+    className: o.container,
+    children: [(0, r.jsx)("img", {
+      className: o.emptySearchIcon,
+      src: s,
       alt: ""
-    }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+    }), (0, r.jsx)(i.xvT, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t.H217fV)
+      children: a.intl.string(a.t.H217fV)
     })]
   })
 }

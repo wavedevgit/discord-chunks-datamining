@@ -3,6 +3,6 @@
 var r = require("./562255.js").off;
 module.exports = function() {
   var e = this,
-    t = module.element;
-  r(exports, "keypress", module.eventHandler), r(exports, "keydown", module.eventHandler), r(exports, "keyup", module.eventHandler)
+    t = e.element;
+  r(t, "keypress", e.eventHandler), r(t, "keydown", e.eventHandler), r(t, "keyup", e.eventHandler)
 }

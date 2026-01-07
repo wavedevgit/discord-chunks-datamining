@@ -140,14 +140,14 @@ class F extends Chunk473749.PureComponent {
     let {
       jumping: e
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk619629.buttonContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+    return (0, r.jsx)("div", {
+      className: A.buttonContainer,
+      children: (0, r.jsx)(d.Button, {
         variant: "secondary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.k5WiPf),
+        text: C.intl.string(C.t.k5WiPf),
         onClick: this.handleClickJump,
-        loading: module
+        loading: e
       })
     })
   }
@@ -159,20 +159,20 @@ class F extends Chunk473749.PureComponent {
       channel: i,
       closeAriaLabel: a
     } = this.props;
-    return null != module && (exports || require || null != Chunk473749 && Chunk473749.isPrivate()) ? (0, Chunk54381.jsx)("div", {
-      className: Chunk619629.buttonContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.hU, {
-        icon: Chunk481060.Dio,
+    return null != e && (t || n || null != i && i.isPrivate()) ? (0, r.jsx)("div", {
+      className: A.buttonContainer,
+      children: (0, r.jsx)(d.hU, {
+        icon: d.Dio,
         size: "sm",
         variant: "secondary",
-        "aria-label": null != Chunk120356 ? Chunk120356 : Chunk388032.intl.string(Chunk388032.t.cpT0Cq),
+        "aria-label": null != a ? a : C.intl.string(C.t.cpT0Cq),
         onClick: this.handleClickClose
       })
     }) : null
   }
   render() {
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk619629.actionButtons,
+    return (0, r.jsxs)("div", {
+      className: A.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })
   }

@@ -17,9 +17,9 @@ function s(e) {
 
 function l() {
   var e, t, n, a;
-  let s = (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) === true,
-    l = null == (a = null == (n = Chunk581883.Z.settings.privacy) || null == (t = require.inappropriateConversationWarnings) ? true : exports.value) || Chunk359119;
-  return ((0, Chunk473092.Lm)() || s) && l
+  let s = (null == (e = i.default.getCurrentUser()) ? true : e.isStaff()) === true,
+    l = null == (a = null == (n = r.Z.settings.privacy) || null == (t = n.inappropriateConversationWarnings) ? true : t.value) || a;
+  return ((0, o.Lm)() || s) && l
 }
 
 function c(e) {

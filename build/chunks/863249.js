@@ -227,7 +227,7 @@ let T = {
     }
   },
   clearCoachmark: function() {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR"
     })
   },

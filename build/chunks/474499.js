@@ -12,6 +12,6 @@ Chunk220159({
   forced: String(s) === String(s.reverse())
 }, {
   reverse: function() {
-    return Chunk884805(this) && (this.length = this.length), i(this)
+    return a(this) && (this.length = this.length), i(this)
   }
 })

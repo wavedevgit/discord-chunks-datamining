@@ -24,7 +24,7 @@ var r, i, a, o, Chunk127849 = require("./127849.js"),
   A = {},
   N = "onreadystatechange";
 Chunk621523(function() {
-  r = Chunk127849.location
+  r = s.location
 });
 var P = function(e) {
     if (d(A, e)) {

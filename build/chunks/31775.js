@@ -136,7 +136,7 @@ r = "function" == typeof Symbol ? function(e) {
 }, u.prototype.reset = function() {
   l(this, "dispose") && l(this, "lruList") && l(this, "lruList").length && l(this, "lruList").forEach(function(e) {
     l(this, "dispose").call(this, e.key, e.value)
-  }, this), l(this, "cache", new Chunk54673), l(this, "lruList", new Chunk465170), l(this, "length", 0)
+  }, this), l(this, "cache", new i), l(this, "lruList", new o), l(this, "length", 0)
 }, u.prototype.dump = function() {
   return l(this, "lruList").map(function(e) {
     if (!p(this, e)) return {
@@ -186,7 +186,7 @@ r = "function" == typeof Symbol ? function(e) {
   return f(this, e, false)
 }, u.prototype.pop = function() {
   var e = l(this, "lruList").tail;
-  return module ? (m(this, module), module.value) : null
+  return e ? (m(this, e), e.value) : null
 }, u.prototype.del = function(e) {
   m(this, l(this, "cache").get(e))
 }, u.prototype.load = function(e) {

@@ -70,15 +70,15 @@ class T extends Chunk473749.PureComponent {
       isTopModal: n,
       instant: i,
       dismissable: a
-    } = this.props, s = module({
-      transitionState: Chunk473749 ? Chunk602091.Dv.ENTERED : this.state.transitionState,
+    } = this.props, s = e({
+      transitionState: i ? g.Dv.ENTERED : this.state.transitionState,
       onClose: this.close,
-      dismissable: Chunk120356
+      dismissable: a
     });
-    return (0, Chunk54381.jsx)(exports, {
-      children: (0, Chunk54381.jsx)("div", {
-        className: o()(Chunk627108.layer, !require && Chunk627108.inactive),
-        children: Chunk392711
+    return (0, r.jsx)(t, {
+      children: (0, r.jsx)("div", {
+        className: o()(b.layer, !n && b.inactive),
+        children: s
       })
     })
   }
@@ -125,7 +125,7 @@ class T extends Chunk473749.PureComponent {
 }
 
 function C() {
-  return (0, Chunk952265.modalContextFromAppContext)((0, Chunk728285.bp)())
+  return (0, h.modalContextFromAppContext)((0, _.bp)())
 }
 
 function A(e) {
@@ -146,33 +146,33 @@ let N = [];
 
 function P() {
   let e = C(),
-    t = (0, Chunk952265.useModalsStore)(t => true !== t[e] ? t[e] : N),
-    n = Chunk473749.useMemo(() => A(exports), [exports]),
-    a = Chunk473749.useRef(true);
-  Chunk473749.useLayoutEffect(() => {
-    Chunk120356.current = exports[exports.length - 1]
-  }, [exports]);
-  let o = exports.length > 0;
-  Chunk473749.useLayoutEffect(() => {
+    t = (0, h.useModalsStore)(t => true !== t[e] ? t[e] : N),
+    n = i.useMemo(() => A(t), [t]),
+    a = i.useRef(true);
+  i.useLayoutEffect(() => {
+    a.current = t[t.length - 1]
+  }, [t]);
+  let o = t.length > 0;
+  i.useLayoutEffect(() => {
     if (!o) return;
     let e = () => {
-      let e = Chunk120356.current;
-      null != module && null != module.onCloseRequest && false !== module.dismissable && module.onCloseRequest()
+      let e = a.current;
+      null != e && null != e.onCloseRequest && false !== e.dismissable && e.onCloseRequest()
     };
-    return Chunk585483.S.subscribe(Chunk981631.CkL.MODAL_CLOSE, module), () => {
-      Chunk585483.S.unsubscribe(Chunk981631.CkL.MODAL_CLOSE, module)
+    return m.S.subscribe(E.CkL.MODAL_CLOSE, e), () => {
+      m.S.unsubscribe(E.CkL.MODAL_CLOSE, e)
     }
   }, [o]);
-  let s = Chunk473749.useCallback(() => {
-      let e = Chunk120356.current;
-      (null == module ? true : module.dismissable) !== false && Chunk585483.S.dispatch(Chunk981631.CkL.MODAL_CLOSE)
+  let s = i.useCallback(() => {
+      let e = a.current;
+      (null == e ? true : e.dismissable) !== false && m.S.dispatch(E.CkL.MODAL_CLOSE)
     }, []),
-    p = Chunk473749.useCallback(t => {
+    p = i.useCallback(t => {
       (0, h.closeModal)(t, e)
-    }, [module]),
+    }, [e]),
     _ = I.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
-  return (0, Chunk54381.jsxs)(Chunk215569.W, {
-    component: Chunk473749.Fragment,
+  return (0, r.jsxs)(u.W, {
+    component: i.Fragment,
     children: [I.map((e, n) => {
       var i;
       let a = l().findLast(t, t => t.Layer === e || null == t.Layer && e === f.ZP),
@@ -191,7 +191,7 @@ function P() {
         LayerComponent: e,
         backdropInstant: null == a ? true : a.instant
       }, "layer-".concat(n))
-    }), require.map((e, t) => {
+    }), n.map((e, t) => {
       let {
         key: i,
         Layer: a,

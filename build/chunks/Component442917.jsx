@@ -108,15 +108,15 @@ class ef extends Chunk473749.PureComponent {
       participantOnScreen: e,
       currentUserId: t,
       channel: n
-    } = this.props, r = (0, Chunk354459._5)(module), i = null != module && module.type !== Chunk354459.fO.ACTIVITY && module.user.id === exports;
+    } = this.props, r = (0, ea._5)(e), i = null != e && e.type !== ea.fO.ACTIVITY && e.user.id === t;
     return {
-      canPopout: Chunk54381 && !Chunk473749,
-      canSettings: Chunk54381 && Chunk473749,
-      canStopStream: Chunk54381,
-      canSeeViewers: Chunk54381,
-      canSeeParticipantName: ((null == module ? true : module.type) === Chunk354459.fO.STREAM || (null == module ? true : module.type) === Chunk354459.fO.USER) && require.type !== Chunk981631.d4z.DM,
-      canDisconnect: !Chunk54381,
-      isSelf: Chunk473749
+      canPopout: r && !i,
+      canSettings: r && i,
+      canStopStream: r,
+      canSeeViewers: r,
+      canSeeParticipantName: ((null == e ? true : e.type) === ea.fO.STREAM || (null == e ? true : e.type) === ea.fO.USER) && n.type !== ei.d4z.DM,
+      canDisconnect: !r,
+      isSelf: i
     }
   }
   get streamerPaused() {
@@ -125,39 +125,39 @@ class ef extends Chunk473749.PureComponent {
       activeSelfStream: t,
       participantOnScreen: n
     } = this.props;
-    return null != exports && (null == require ? true : require.id) === (0, Chunk569545.V9)(exports) && !module
+    return null != t && (null == n ? true : n.id) === (0, C.V9)(t) && !e
   }
   get activeStreamForSelectedParticipant() {
     let {
       participantOnScreen: e,
       activeStreams: t
     } = this.props;
-    return (0, Chunk354459._5)(module) ? exports.find(t => (0, C.V9)(t) === e.id) : null
+    return (0, ea._5)(e) ? t.find(t => (0, C.V9)(t) === e.id) : null
   }
   getScreenMessage() {
     let {
       participantOnScreen: e,
       currentUserId: t
     } = this.props;
-    if (!(0, Chunk354459._5)(module)) return null;
+    if (!(0, ea._5)(e)) return null;
     let n = this.activeStreamForSelectedParticipant;
-    return null == require ? null : (0, Chunk863908.Z)(require, module.user, module.user.id === exports, this.streamerPaused)
+    return null == n ? null : (0, N.Z)(n, e.user, e.user.id === t, this.streamerPaused)
   }
   componentDidMount() {
     let {
       channel: e
     } = this.props;
-    Chunk626135.default.track(Chunk981631.rMx.VIDEO_LAYOUT_TOGGLED, ec({
+    z.default.track(ei.rMx.VIDEO_LAYOUT_TOGGLED, ec({
       video_layout: "pip"
-    }, (0, Chunk367907.AB)(module.id)))
+    }, (0, E.AB)(e.id)))
   }
   componentWillUnmount() {
     let {
       channel: e
     } = this.props;
-    Chunk626135.default.track(Chunk981631.rMx.VIDEO_LAYOUT_TOGGLED, ec({
-      video_layout: Chunk358221.Z.getLayout(module.id)
-    }, (0, Chunk367907.AB)(module.id)))
+    z.default.track(ei.rMx.VIDEO_LAYOUT_TOGGLED, ec({
+      video_layout: b.Z.getLayout(e.id)
+    }, (0, E.AB)(e.id)))
   }
   renderStreamState() {
     let e = this.activeStreamForSelectedParticipant,
@@ -168,37 +168,37 @@ class ef extends Chunk473749.PureComponent {
         videoStreamError: a,
         cameraEncodeError: o
       } = this.props;
-    if (null != Chunk512722 && null == o) {
-      if ((null == exports ? true : exports.type) === Chunk354459.fO.STREAM) return (0, Chunk54381.jsx)(Chunk916771.Z, {
-        stream: exports.stream,
-        width: require,
-        avError: Chunk512722
+    if (null != a && null == o) {
+      if ((null == t ? true : t.type) === ea.fO.STREAM) return (0, r.jsx)($.Z, {
+        stream: t.stream,
+        width: n,
+        avError: a
       });
-      else if ((null == exports ? true : exports.type) === Chunk354459.fO.USER) return (0, Chunk54381.jsx)(Chunk249212.Z, {
-        userId: exports.user.id,
-        width: require,
-        avError: Chunk512722
+      else if ((null == t ? true : t.type) === ea.fO.USER) return (0, r.jsx)(en.Z, {
+        userId: t.user.id,
+        width: n,
+        avError: a
       })
     }
     switch (true) {
-      case (null == module ? true : module.state) === Chunk981631.jm8.ENDED:
-        return (0, Chunk54381.jsx)(Chunk822296.Z, {
-          stream: module,
-          width: require
+      case (null == e ? true : e.state) === ei.jm8.ENDED:
+        return (0, r.jsx)(J.Z, {
+          stream: e,
+          width: n
         });
-      case (null == module ? true : module.state) === Chunk981631.jm8.FAILED:
-        return (0, Chunk54381.jsx)(Chunk916771.Z, {
-          stream: module,
-          width: require
+      case (null == e ? true : e.state) === ei.jm8.FAILED:
+        return (0, r.jsx)($.Z, {
+          stream: e,
+          width: n
         });
-      case (null == exports ? true : exports.type) === Chunk354459.fO.HIDDEN_STREAM:
-        return (0, Chunk54381.jsx)(Chunk792517.Z, {
-          participant: exports,
-          width: require
+      case (null == t ? true : t.type) === ea.fO.HIDDEN_STREAM:
+        return (0, r.jsx)(ee.Z, {
+          participant: t,
+          width: n
         });
-      case Chunk473749:
-        return (0, Chunk54381.jsx)(Chunk351483.Z, {
-          width: require
+      case i:
+        return (0, r.jsx)(et.Z, {
+          width: n
         })
     }
     return null
@@ -208,15 +208,15 @@ class ef extends Chunk473749.PureComponent {
       channel: e,
       participantOnScreen: t
     } = this.props;
-    if ((null == exports ? true : exports.type) === Chunk354459.fO.STREAM || (null == exports ? true : exports.type) === Chunk354459.fO.USER) {
+    if ((null == t ? true : t.type) === ea.fO.STREAM || (null == t ? true : t.type) === ea.fO.USER) {
       var n;
-      let i = null != (n = Chunk5192.ZP.getNickname(module.getGuildId(), module.id, exports.user)) ? require : Chunk51144.ZP.getName(exports.user);
-      return (0, Chunk54381.jsx)(Chunk481060.Text, {
+      let i = null != (n = q.ZP.getNickname(e.getGuildId(), e.id, t.user)) ? n : Q.ZP.getName(t.user);
+      return (0, r.jsx)(d.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        className: Chunk978582.participantName,
+        className: eo.participantName,
         lineClamp: 1,
-        children: Chunk473749
+        children: i
       })
     }
     return null
@@ -228,20 +228,20 @@ class ef extends Chunk473749.PureComponent {
       participantOnScreen: n,
       isVideoEnabled: i,
       width: a
-    } = this.props, o = (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z), s = (null == require ? true : require.id) === Chunk314897.default.getId() && Chunk473749, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
-    return (null == require ? true : require.type) !== Chunk354459.fO.ACTIVITY && (null != l ? u = l : ((null == require ? true : require.type) === Chunk354459.fO.USER || (null == require ? true : require.type) === Chunk354459.fO.STREAM) && (u = (0, Chunk54381.jsx)(Chunk484286.Z, {
+    } = this.props, o = (0, S.F6)(e, H.default, V.Z), s = (null == n ? true : n.id) === F.default.getId() && i, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
+    return (null == n ? true : n.type) !== ea.fO.ACTIVITY && (null != l ? u = l : ((null == n ? true : n.type) === ea.fO.USER || (null == n ? true : n.type) === ea.fO.STREAM) && (u = (0, r.jsx)(X.Z, {
       paused: this.streamerPaused,
-      streamId: exports,
-      component: Chunk131951.Z.getVideoComponent(),
-      mirror: Chunk392711,
-      children: (0, Chunk54381.jsx)(Chunk266910.Z, {
-        size: Chunk481060.EFr.SIZE_80,
-        src: null == require ? true : require.user.getAvatarURL(module.guild_id, 80),
-        "aria-label": null == require ? true : require.user.username,
-        guildId: module.guild_id,
-        userId: null == require ? true : require.user.id
+      streamId: t,
+      component: B.Z.getVideoComponent(),
+      mirror: s,
+      children: (0, r.jsx)(R.Z, {
+        size: d.EFr.SIZE_80,
+        src: null == n ? true : n.user.getAvatarURL(e.guild_id, 80),
+        "aria-label": null == n ? true : n.user.username,
+        guildId: e.guild_id,
+        userId: null == n ? true : n.user.id
       })
-    }))), (0, Chunk54381.jsx)(Chunk937995.ZP, {
+    }))), (0, r.jsx)(x.ZP, {
       timeout: 1800,
       children: e => {
         var t;

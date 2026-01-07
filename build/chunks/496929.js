@@ -69,20 +69,20 @@ async function l(e) {
   }
 }
 async function c() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "ENTITLEMENTS_GIFTABLE_FETCH"
   });
   try {
-    let e = await (0, Chunk73346.Kb)({
-      url: Chunk981631.ANM.ENTITLEMENTS_GIFTABLE,
+    let e = await (0, a.Kb)({
+      url: o.ANM.ENTITLEMENTS_GIFTABLE,
       rejectWithError: true
     });
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS",
-      entitlements: module.body
+      entitlements: e.body
     })
   } catch (e) {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "ENTITLEMENTS_GIFTABLE_FETCH_FAIL"
     })
   }

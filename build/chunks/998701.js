@@ -22,15 +22,15 @@ class o {
   get displayMessage() {
     switch (this.code) {
       case 1:
-        return Chunk388032.intl.string(Chunk388032.t.dDMp2Z);
+        return r.intl.string(r.t.dDMp2Z);
       case 2:
-        return Chunk388032.intl.string(Chunk388032.t.XBxyvo);
+        return r.intl.string(r.t.XBxyvo);
       case 3:
-        return Chunk388032.intl.string(Chunk388032.t["6b6rwk"]);
+        return r.intl.string(r.t["6b6rwk"]);
       case 4:
-        return Chunk388032.intl.string(Chunk388032.t.VUc3ti);
+        return r.intl.string(r.t.VUc3ti);
       default:
-        return Chunk388032.intl.string(Chunk388032.t.VzHcSm)
+        return r.intl.string(r.t.VzHcSm)
     }
   }
   constructor(e) {

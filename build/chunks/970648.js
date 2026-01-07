@@ -9,7 +9,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk981631 = require("./981631.js");
 let a = {
   generateNonce: function() {
-    return (0, Chunk772848.Z)()
+    return (0, r.Z)()
   },
   createHandoffToken: async function(e) {
     let {

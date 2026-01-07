@@ -21,7 +21,7 @@ class s {
     if (null == this.animationDetails) return this.value;
     let e = performance.now() - this.animationDetails.animationStart,
       t = this.value < this.animationDetails.lastValue ? o : a;
-    return module > exports ? (this.animationDetails = null, this.value) : this.value < this.animationDetails.lastValue ? Chunk217942.easeOutQuint(module, this.animationDetails.lastValue, this.value, exports) : Chunk217942.easeOutBack(module, this.animationDetails.lastValue, this.value, exports, 4)
+    return e > t ? (this.animationDetails = null, this.value) : this.value < this.animationDetails.lastValue ? r.easeOutQuint(e, this.animationDetails.lastValue, this.value, t) : r.easeOutBack(e, this.animationDetails.lastValue, this.value, t, 4)
   }
   animateTo(e) {
     this.isReset = false, this.value !== e && (this.animationDetails = {

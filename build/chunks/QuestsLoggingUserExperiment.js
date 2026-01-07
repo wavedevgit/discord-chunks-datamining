@@ -38,13 +38,13 @@ function l() {
   let {
     quest: e,
     location: t
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = s(), i = null == module ? true : module.config.messages.questName, o = null != exports ? "-".concat(exports) : "", l = null != Chunk818083 ? "-".concat(Chunk818083, ")") : "", c = "QuestLogger".concat(o).concat(l), u = new Chunk710845.Z(c);
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = s(), i = null == e ? true : e.config.messages.questName, o = null != t ? "-".concat(t) : "", l = null != i ? "-".concat(i, ")") : "", c = "QuestLogger".concat(o).concat(l), u = new r.Z(c);
   return {
-    log: require ? u.log : Chunk231338.dG,
-    warn: require ? u.warn : Chunk231338.dG,
-    error: require ? u.error : Chunk231338.dG,
-    info: require ? u.info : Chunk231338.dG,
-    verbose: require ? u.verbose : Chunk231338.dG,
-    trace: require ? u.trace : Chunk231338.dG
+    log: n ? u.log : a.dG,
+    warn: n ? u.warn : a.dG,
+    error: n ? u.error : a.dG,
+    info: n ? u.info : a.dG,
+    verbose: n ? u.verbose : a.dG,
+    trace: n ? u.trace : a.dG
   }
 }

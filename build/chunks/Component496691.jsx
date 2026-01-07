@@ -29,8 +29,8 @@ class p extends Chunk473749.Component {
       render: a,
       locale: o
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk501522.Z, {
-      className: exports,
+    return (0, n.jsx)(i.Z, {
+      className: t,
       shouldScrollToTop: this.shouldScrollToTop,
       render: (t, i) => (0, n.jsxs)(r.Fragment, {
         children: [(0, n.jsx)(l.h, {
@@ -69,5 +69,5 @@ class p extends Chunk473749.Component {
   }
 }
 let h = Chunk442837.ZP.connectStores([Chunk706454.default], () => ({
-  locale: Chunk706454.default.locale
+  locale: d.default.locale
 }))(p)

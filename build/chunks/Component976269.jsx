@@ -29,8 +29,8 @@ function u(e) {
   })
 }
 let g = function() {
-  let e = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
-  return null == module ? null : (0, Chunk54381.jsx)(u, {
-    guildId: module.id
+  let e = (0, l.e7)([s.Z], () => s.Z.getGuild());
+  return null == e ? null : (0, r.jsx)(u, {
+    guildId: e.id
   })
 }

@@ -315,16 +315,16 @@ function Y(e) {
 }
 
 function W() {
-  return (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk41558.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["0hKkS+"])
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk425838.sectionContentContainer,
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(I.Z, {
+      title: P.intl.string(P.t["0hKkS+"])
+    }), (0, r.jsx)("div", {
+      className: R.sectionContentContainer,
       children: j.map(e => (0, r.jsx)(C.Z, {}, e))
-    }), (0, Chunk54381.jsx)(Chunk41558.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.PHjkRE)
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk425838.sectionContentContainer,
+    }), (0, r.jsx)(I.Z, {
+      title: P.intl.string(P.t.PHjkRE)
+    }), (0, r.jsx)("div", {
+      className: R.sectionContentContainer,
       children: M.map(e => (0, r.jsx)(C.Z, {}, e))
     })]
   })

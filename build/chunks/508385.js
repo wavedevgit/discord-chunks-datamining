@@ -131,7 +131,7 @@ i.prototype.reset = function() {
 }, i.prototype.compress = function() {
   if (!this.compressing) {
     var e = this.toArray();
-    for (this.reset(), this.compressing = true; module.length > 0;) this.push_centroid(s(module));
+    for (this.reset(), this.compressing = true; e.length > 0;) this.push_centroid(s(e));
     this._cumulate(true), this.compressing = false
   }
 }, l.prototype = Object.create(i.prototype), l.prototype.constructor = l, l.prototype.push = function(e) {

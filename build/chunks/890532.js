@@ -28,11 +28,11 @@ function a() {
         i.clear()
       }
     };
-  document.body.addEventListener("transitionrun", exports), document.body.addEventListener("transitionend", require)
+  document.body.addEventListener("transitionrun", t), document.body.addEventListener("transitionend", n)
 }
 
 function o() {
-  for (let [e] of r) "isConnected" in module && !module.isConnected && r.delete(module)
+  for (let [e] of r) "isConnected" in e && !e.isConnected && r.delete(e)
 }
 
 function s(e) {

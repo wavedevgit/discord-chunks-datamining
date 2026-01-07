@@ -165,7 +165,7 @@ let ti = (0, Chunk951752.l)(e => {
         match: n,
         urlOrigin: "deeplink"
       })
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(m.Z, {
       deepLinkType: te.jE.USER_SETTINGS,
       path: t.pathname,
       search: t.search,
@@ -185,17 +185,17 @@ let ti = (0, Chunk951752.l)(e => {
     })
   }),
   tl = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk896797.Z, Chunk314897.default], () => ({
-    isConnected: Chunk38618.Z.isConnected(),
-    defaultRoute: Chunk896797.Z.defaultRoute,
-    defaultRouteFallback: Chunk896797.Z.fallbackRoute,
-    token: Chunk314897.default.getToken()
+    isConnected: K.Z.isConnected(),
+    defaultRoute: eq.Z.defaultRoute,
+    defaultRouteFallback: eq.Z.fallbackRoute,
+    token: ez.default.getToken()
   }))(class extends Chunk473749.Component {
     componentDidMount() {
       let {
         match: e
       } = this.props;
-      null != module && null != module.params.inviteCode && (0, Chunk584233.x)({
-        code: module.params.inviteCode
+      null != e && null != e.params.inviteCode && (0, X.x)({
+        code: e.params.inviteCode
       })
     }
     render() {
@@ -205,15 +205,15 @@ let ti = (0, Chunk951752.l)(e => {
         token: n,
         defaultRouteFallback: i
       } = this.props;
-      if (null == require) return (0, Chunk54381.jsx)(Chunk828700.l_, {
-        to: Chunk981631.Z5c.DEFAULT_LOGGED_OUT
+      if (null == n) return (0, r.jsx)(a.l_, {
+        to: e7.Z5c.DEFAULT_LOGGED_OUT
       });
-      if (module) {
-        let e = td(exports);
-        return null == module || (module.params.guildId === Chunk981631.ME || null != Chunk430824.Z.getGuild(module.params.guildId)) && null != Chunk592125.Z.getChannel(module.params.channelId) ? (0, Chunk54381.jsx)(Chunk828700.l_, {
-          to: exports
-        }) : (0, Chunk54381.jsx)(Chunk828700.l_, {
-          to: Chunk473749
+      if (e) {
+        let e = td(t);
+        return null == e || (e.params.guildId === e7.ME || null != eK.Z.getGuild(e.params.guildId)) && null != eW.Z.getChannel(e.params.channelId) ? (0, r.jsx)(a.l_, {
+          to: t
+        }) : (0, r.jsx)(a.l_, {
+          to: i
         })
       }
       return null
@@ -276,7 +276,7 @@ let tu = [{
   isSessionRequired: true
 }, {
   path: [Chunk981631.Z5c.APP],
-  render: () => (0, Chunk54381.jsx)(tl, {}),
+  render: () => (0, r.jsx)(tl, {}),
   isSessionRequired: true
 }, {
   path: [Chunk981631.Z5c.USERS(":id")],
@@ -335,10 +335,10 @@ let tu = [{
 }, {
   path: [Chunk981631.Z5c.GUILD_CREATE],
   render: function() {
-    return (0, Chunk972830.h)(() => Chunk560067.Z.openCreateGuildModal({
+    return (0, Q.h)(() => D.Z.openCreateGuildModal({
       location: "External link"
-    })), (0, Chunk54381.jsx)(Chunk828700.l_, {
-      to: Chunk896797.Z.defaultRoute
+    })), (0, r.jsx)(a.l_, {
+      to: eq.Z.defaultRoute
     })
   }
 }, {
@@ -400,10 +400,10 @@ let tu = [{
 }, {
   path: [Chunk981631.Z5c.APPLICATION_LIBRARY_INVENTORY],
   render: function() {
-    return (0, Chunk972830.h)(() => (0, Chunk518596.openUserSettings)(Chunk313789.n.GIFT_PANEL, {
-      section: Chunk981631.oAB.INVENTORY
-    })), (0, Chunk54381.jsx)(Chunk828700.l_, {
-      to: Chunk896797.Z.defaultRoute
+    return (0, Q.h)(() => (0, eB.openUserSettings)(eU.n.GIFT_PANEL, {
+      section: e7.oAB.INVENTORY
+    })), (0, r.jsx)(a.l_, {
+      to: eq.Z.defaultRoute
     })
   },
   isSessionRequired: true
@@ -522,18 +522,18 @@ function tp(e) {
 }
 class tf extends Chunk473749.PureComponent {
   componentDidMount() {
-    Chunk998502.ZP.setZoomFactor(Chunk607070.Z.zoom), Chunk298969.Z.init(), Chunk679891.Z.initialize(), Chunk380570.Z.initialize(), Chunk408026.Z.initialize(), Chunk444961.Z.initialize(), Chunk763916.Z.initialize(), Chunk367207.Z.initialize(), Chunk845767.Z.initialize(), Chunk975533.Z.initialize(), Chunk627845.Z.init(), Chunk531551.Z.init(), Chunk306721.Z.init(), Chunk122333.Z.initialize(), Chunk687751.Z.initialize(), Chunk750995.Z.initialize(), Chunk489977.Z.initialize(), Chunk318891.ZP.initialize(), Chunk610278.ZP.initialize(), Chunk282506.Z.initialize(), Chunk230623.ZP.initialize(), Chunk269089.Z.initialize(), Chunk513202.Z.initialize(), Chunk315964.Z.init(), Chunk403763.Z.init(), Chunk900974.Z.init(), Chunk503737.Z.initialize(), Chunk703016.Z.init(), Chunk241890.Z.init(), Chunk332754.Z.init(), Chunk262702.Z.initialize(), Chunk639033.Z.initialize(), Chunk497805.Z.initialize(), Chunk507468.Z.init(), Chunk96051.Z.initialize(), Chunk185666.Z.initialize(), Chunk719256.Z.initialize(), Chunk377368.Z.initialize(), Chunk818765.Z.initialize(), Chunk960275.Z.initialize(), Chunk678492.Z.initialize(), Chunk314533.Z.initialize(), Chunk9029.Z.initialize(), Chunk657030.Z.initialize(), Chunk883311.Z.initialize(), Chunk495784.Z.init({
-      hasModalOpen: Chunk481060.$sL,
-      openModal: () => (0, Chunk481060.ZDy)(async () => {
+    e5.ZP.setZoomFactor(b.Z.zoom), eT.Z.init(), j.Z.initialize(), eb.Z.initialize(), z.Z.initialize(), eF.Z.initialize(), Y.Z.initialize(), eO.Z.initialize(), k.Z.initialize(), eo.Z.initialize(), _.Z.init(), q.Z.init(), W.Z.init(), ep.Z.initialize(), I.Z.initialize(), H.Z.initialize(), ev.Z.initialize(), y.ZP.initialize(), B.ZP.initialize(), eV.Z.initialize(), er.ZP.initialize(), eh.Z.initialize(), v.Z.initialize(), ei.Z.init(), Z.Z.init(), e3.Z.init(), O.Z.initialize(), eR.Z.init(), e1.Z.init(), ek.Z.init(), eA.Z.initialize(), eZ.Z.initialize(), eM.Z.initialize(), eG.Z.init(), G.Z.initialize(), E.Z.initialize(), eN.Z.initialize(), ex.Z.initialize(), eg.Z.initialize(), ef.Z.initialize(), em.Z.initialize(), w.Z.initialize(), L.Z.initialize(), F.Z.initialize(), ea.Z.initialize(), el.Z.init({
+      hasModalOpen: s.$sL,
+      openModal: () => (0, s.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([require.e("7082"), require.e("32454")]).then(require.bind(require, 650233));
+        } = await Promise.all([n.e("7082"), n.e("32454")]).then(n.bind(n, 650233));
         return t => (0, r.jsx)(e, tn({}, t))
       })
-    }), Chunk377400.Z.initialize(), Chunk329557.Z.initialize(), Chunk837689.Z.initialize(), Chunk823169.Z.initialize(), Chunk954709.Z.initialize(), Chunk644679.Z.initialize(), Chunk64514.Z.initialize(), this.rewriterUnlisten = Chunk304445.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = Chunk304445.Z.addRouteChangeListener(this.handleHistoryChange)
+    }), es.Z.initialize(), ey.Z.initialize(), e_.Z.initialize(), M.Z.initialize(), x.Z.initialize(), A.Z.initialize(), C.Z.initialize(), this.rewriterUnlisten = eI.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eI.Z.addRouteChangeListener(this.handleHistoryChange)
   }
   componentWillUnmount() {
-    Chunk298969.Z.terminate(), Chunk444961.Z.terminate(), Chunk367207.Z.terminate(), Chunk380570.Z.terminate(), Chunk679891.Z.terminate(), Chunk318891.ZP.terminate(), Chunk610278.ZP.terminate(), Chunk282506.Z.terminate(), Chunk513202.Z.terminate(), Chunk489977.Z.terminate(), Chunk269089.Z.terminate(), Chunk497805.Z.terminate(), Chunk503737.Z.terminate(), Chunk96051.Z.terminate(), Chunk377400.Z.terminate(), Chunk185666.Z.terminate(), Chunk329557.Z.terminate(), Chunk719256.Z.terminate(), Chunk377368.Z.terminate(), Chunk818765.Z.terminate(), Chunk960275.Z.terminate(), Chunk678492.Z.terminate(), Chunk314533.Z.terminate(), Chunk9029.Z.terminate(), Chunk837689.Z.terminate(), Chunk823169.Z.terminate(), Chunk696287.Z.terminate(), Chunk954709.Z.terminate(), Chunk644679.Z.terminate(), Chunk64514.Z.terminate(), Chunk657030.Z.terminate(), Chunk883311.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+    eT.Z.terminate(), eF.Z.terminate(), eO.Z.terminate(), eb.Z.terminate(), j.Z.terminate(), y.ZP.terminate(), B.ZP.terminate(), eV.Z.terminate(), v.Z.terminate(), ev.Z.terminate(), eh.Z.terminate(), eM.Z.terminate(), O.Z.terminate(), G.Z.terminate(), es.Z.terminate(), E.Z.terminate(), ey.Z.terminate(), eN.Z.terminate(), ex.Z.terminate(), eg.Z.terminate(), ef.Z.terminate(), em.Z.terminate(), w.Z.terminate(), L.Z.terminate(), e_.Z.terminate(), M.Z.terminate(), V.Z.terminate(), x.Z.terminate(), A.Z.terminate(), C.Z.terminate(), F.Z.terminate(), ea.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
   }
   handleHistoryChange(e, t) {
     let {
@@ -567,12 +567,12 @@ class tf extends Chunk473749.PureComponent {
         channelId: i,
         messageId: o,
         threadId: s
-      } = tc(n), c = (0, eC.Ss)(r), u = (0, eC.cq)(i), d = (0, eC.cq)(s), g = e$.Z.getGuildId(), h = g !== r;
-      if (c && h && p.Z.selectGuild(r), c && u) {
+      } = tc(n), c = (0, eC.Ss)(r), u = (0, eC.cq)(i), d = (0, eC.cq)(s), g = e$.Z.getGuildId(), m = g !== r;
+      if (c && m && p.Z.selectGuild(r), c && u) {
         let n = eX.Z.getChannelId(g),
           a = n !== i,
           c = null != eY.ZP.getGuildSidebarState(r);
-        if (!tr || h || a || null != o) {
+        if (!tr || m || a || null != o) {
           tr = true, f.default.selectChannel({
             guildId: r,
             channelId: i,
@@ -603,11 +603,11 @@ class tf extends Chunk473749.PureComponent {
         } else null == i || a || ej.Z.closeChannelSidebar(i);
         let u = eu.Z.getIsOpen();
         if (i === e9.oC.ROLE_SUBSCRIPTIONS) ec.Z.closeSidebar();
-        else if (h && u) {
+        else if (m && u) {
           let t = null == g && r === e7.ME,
             n = e === e7.Z5c.GUILD_DISCOVERY;
           t || n ? ec.Z.closeSidebar() : ec.Z.openSidebar()
-        } else(a && u || !h && !a) && ec.Z.closeSidebar()
+        } else(a && u || !m && !a) && ec.Z.closeSidebar()
       } else ts.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true
@@ -653,9 +653,9 @@ class tf extends Chunk473749.PureComponent {
     return null
   }
   render() {
-    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [(0, Chunk54381.jsxs)(Chunk828700.rs, {
-        children: [(0, Chunk54381.jsx)(Chunk828700.l_, {
+    return (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsxs)(a.rs, {
+        children: [(0, r.jsx)(a.l_, {
           exact: true,
           from: "/channels",
           to: "/"
@@ -668,10 +668,10 @@ class tf extends Chunk473749.PureComponent {
             path: t,
             render: n
           }, t[0])
-        }), (0, Chunk54381.jsx)(Chunk828700.l_, {
+        }), (0, r.jsx)(a.l_, {
           to: "/"
         })]
-      }), (0, Chunk54381.jsx)(Chunk935347.Z, {})]
+      }), (0, r.jsx)(R.Z, {})]
     })
   }
   constructor(...e) {

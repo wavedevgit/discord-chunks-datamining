@@ -96,7 +96,7 @@ class O extends(i = Chunk473749.PureComponent) {
       children: t,
       className: n
     } = this.props;
-    return (0, Chunk54381.jsx)(y.Consumer, {
+    return (0, r.jsx)(y.Consumer, {
       children: i => (0, r.jsx)(m.Consumer, {
         children: a => {
           let s = o()(h.body, h[c()(a.type)], n);

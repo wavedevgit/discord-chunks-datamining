@@ -11,18 +11,18 @@ var Chunk570140 = require("./570140.js"),
 let s = null;
 class c extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+    r.Z.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
+    r.Z.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
   handlePostConnectionOpen() {
-    (0, Chunk518929.VZ)("ICYMIManager", false) && (! function e() {
+    (0, o.VZ)("ICYMIManager", false) && (! function e() {
       let t = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      Chunk948053.Z.fetchDehydrated({
-        isInitialLoad: exports
-      }), null != s && clearTimeout(s), s = setTimeout(() => module(), 15 * Chunk70956.Z.Millis.MINUTE)
-    }(true), Chunk948053.Z.getGuildChannelScores(), Chunk948053.Z.getRecommendedGuilds())
+      a.Z.fetchDehydrated({
+        isInitialLoad: t
+      }), null != s && clearTimeout(s), s = setTimeout(() => e(), 15 * l.Z.Millis.MINUTE)
+    }(true), a.Z.getGuildChannelScores(), a.Z.getRecommendedGuilds())
   }
 }
 let u = new c

@@ -40,7 +40,7 @@ function p(e) {
 }
 let _ = () => {
   let e = null;
-  return (0, Chunk358085.isAndroid)() ? e = Chunk981631.gg$.GOOGLE : (0, Chunk358085.isIOS)() && (e = Chunk981631.gg$.APPLE), module
+  return (0, c.isAndroid)() ? e = d.gg$.GOOGLE : (0, c.isIOS)() && (e = d.gg$.APPLE), e
 };
 async function m(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
@@ -98,23 +98,23 @@ async function m(e) {
   }
 }
 async function h() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "BILLING_USER_OFFER_FETCH_START"
   });
   try {
     var e;
-    let t = null != (e = (await Chunk544891.tn.get({
-      url: Chunk981631.ANM.CHURN_USER_OFFER,
+    let t = null != (e = (await r.tn.get({
+      url: d.ANM.CHURN_USER_OFFER,
       rejectWithError: true
-    })).body.offer) ? module : null;
-    return Chunk570140.Z.dispatch({
+    })).body.offer) ? e : null;
+    return a.Z.dispatch({
       type: "BILLING_USER_OFFER_FETCH_SUCCESS",
-      userDiscountOffer: exports
+      userDiscountOffer: t
     }), {
-      userDiscountOffer: exports
+      userDiscountOffer: t
     }
   } catch (e) {
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "BILLING_USER_OFFER_FETCH_FAIL"
     })
   }
@@ -123,15 +123,15 @@ async function g() {
   let e = null;
   try {
     var t;
-    e = null != (t = (await Chunk544891.tn.post({
-      url: Chunk981631.ANM.CHURN_USER_OFFER,
+    e = null != (t = (await r.tn.post({
+      url: d.ANM.CHURN_USER_OFFER,
       rejectWithError: true
-    })).body.offer) ? exports : null, null != module && Chunk570140.Z.dispatch({
+    })).body.offer) ? t : null, null != e && a.Z.dispatch({
       type: "BILLING_USER_OFFER_FETCH_SUCCESS",
-      userDiscountOffer: module
+      userDiscountOffer: e
     })
   } catch (e) {}
-  return module
+  return e
 }
 
 function E(e, t) {

@@ -53,9 +53,9 @@ function c() {
   let e;
   if (null != window.getSelection) {
     var t;
-    e = null == (t = window.getSelection()) ? true : exports.toString()
+    e = null == (t = window.getSelection()) ? true : t.toString()
   } else null != document.selection && "Control" !== document.selection.type && (e = document.selection.createRange().text);
-  return null != module ? module : ""
+  return null != e ? e : ""
 }
 
 function u(e) {

@@ -28,31 +28,31 @@ function y() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       shouldShow: t = true
-    } = module,
-    [n, a] = Chunk473749.useState(Date.now()),
-    s = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
-    c = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()),
-    p = Chunk695346.P4.useSetting(),
-    b = (null == Chunk70956 ? true : Chunk70956.value) != null ? Number(Chunk70956.value) : null,
-    g = Chunk695346.Cr.useSetting(),
-    y = Chunk246133 === Chunk231338.Sk.DND && null != Chunk388032 && require - Chunk388032 > j && "0" === Chunk668073,
+    } = e,
+    [n, a] = r.useState(Date.now()),
+    s = (0, i.e7)([u.Z], () => u.Z.hasLayers()),
+    c = (0, i.e7)([m.Z], () => m.Z.getStatus()),
+    p = d.P4.useSetting(),
+    b = (null == p ? true : p.value) != null ? Number(p.value) : null,
+    g = d.Cr.useSetting(),
+    y = c === x.Sk.DND && null != b && n - b > j && "0" === g,
     {
       enabled: _
-    } = (0, Chunk809930.a)({
+    } = (0, f.a)({
       location: "useDoNotDisturbReminderPopoverDismissibleContent",
       autoTrackExposure: y,
       disable: !y
     });
-  return Chunk473749.useEffect(() => {
-    if (Chunk246133 === Chunk231338.Sk.DND) {
-      Chunk54381(Date.now());
-      let e = setInterval(() => Chunk54381(Date.now()), v);
-      return () => clearInterval(module)
+  return r.useEffect(() => {
+    if (c === x.Sk.DND) {
+      a(Date.now());
+      let e = setInterval(() => a(Date.now()), v);
+      return () => clearInterval(e)
     }
-  }, [Chunk246133]), (0, Chunk243778.bf)(_ && !Chunk907862 && exports ? Chunk704215.z.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
+  }, [c]), (0, o.bf)(_ && !s && t ? l.z.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
     cooldownDurationMs: C,
     numTimesToRecur: 2
-  }, Chunk921944.R.ACCOUNT_NAME_ZONE, true)
+  }, h.R.ACCOUNT_NAME_ZONE, true)
 }
 
 function _(e) {

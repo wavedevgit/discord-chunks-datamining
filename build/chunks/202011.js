@@ -8,7 +8,7 @@ var Chunk518560 = require("./518560.jsx"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_STANDING_SETTING, {
-    useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["Vov/9o"])],
+    useSearchTerms: () => [u.intl.string(u.t["Vov/9o"])],
     Component: Chunk518560.Z
   }),
   a = (0, Chunk509613.k4)(Chunk313789.n.ACCOUNT_STANDING_CATEGORY, {

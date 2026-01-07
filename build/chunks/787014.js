@@ -34,7 +34,7 @@ function d(e, t, n) {
 }
 
 function f() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "CHANNEL_SETTINGS_CLOSE"
   })
 }

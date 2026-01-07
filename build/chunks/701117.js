@@ -16,7 +16,7 @@ try {
 function a() {
   let e = "test";
   try {
-    return r.setItem(module, module), r.removeItem(module), true
+    return r.setItem(e, e), r.removeItem(e), true
   } catch (e) {
     returnfalse
   }

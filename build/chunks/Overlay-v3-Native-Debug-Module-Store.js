@@ -140,7 +140,7 @@ function k() {
 }
 
 function U() {
-  return null == (b = Chunk509140.Z.getNativeModule()) || !!S || (S = true, b.setCaptureZoneCallback(L), true)
+  return null == (b = f.Z.getNativeModule()) || !!S || (S = true, b.setCaptureZoneCallback(L), true)
 }
 
 function G() {
@@ -155,7 +155,7 @@ function Z(e) {
 }
 class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk509140.Z, Chunk522474.Z)
+    this.waitFor(f.Z, c.Z)
   }
   getClickZones() {
     return y

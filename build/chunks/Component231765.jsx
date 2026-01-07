@@ -75,34 +75,34 @@ let N = {
   w = (0, Chunk392711.range)(1, 11),
   D = (0, Chunk392711.range)(1, 26),
   x = () => [{
-    location: Chunk524484.Hn.CHAT_INPUT,
-    title: Chunk388032.intl.string(Chunk388032.t.elTtyz),
-    description: Chunk388032.intl.string(Chunk388032.t.HtKfMi)
+    location: O.Hn.CHAT_INPUT,
+    title: v.intl.string(v.t.elTtyz),
+    description: v.intl.string(v.t.HtKfMi)
   }, {
-    location: Chunk524484.Hn.REACTION,
-    title: Chunk388032.intl.string(Chunk388032.t.Ik4VIa),
-    description: Chunk388032.intl.string(Chunk388032.t.y4rqK0)
+    location: O.Hn.REACTION,
+    title: v.intl.string(v.t.Ik4VIa),
+    description: v.intl.string(v.t.y4rqK0)
   }, {
-    location: Chunk524484.Hn.MEMBER_USER,
-    title: Chunk388032.intl.string(Chunk388032.t.ZXBlAn),
-    description: Chunk388032.intl.string(Chunk388032.t["m9RD+c"])
+    location: O.Hn.MEMBER_USER,
+    title: v.intl.string(v.t.ZXBlAn),
+    description: v.intl.string(v.t["m9RD+c"])
   }, {
-    location: Chunk524484.Hn.CALL_TILE,
-    title: Chunk388032.intl.string(Chunk388032.t.V66giQ),
-    description: Chunk388032.intl.string(Chunk388032.t.fiHV7u)
+    location: O.Hn.CALL_TILE,
+    title: v.intl.string(v.t.V66giQ),
+    description: v.intl.string(v.t.fiHV7u)
   }],
   L = () => [{
-    location: Chunk524484.oZ.CHAT_INPUT,
-    title: Chunk388032.intl.string(Chunk388032.t.vUcvPP),
-    description: Chunk388032.intl.string(Chunk388032.t.y00OrF)
+    location: O.oZ.CHAT_INPUT,
+    title: v.intl.string(v.t.vUcvPP),
+    description: v.intl.string(v.t.y00OrF)
   }, {
-    location: Chunk524484.oZ.VOICE_USER,
-    title: Chunk388032.intl.string(Chunk388032.t.TcRO54),
-    description: Chunk388032.intl.string(Chunk388032.t.YJCxVY)
+    location: O.oZ.VOICE_USER,
+    title: v.intl.string(v.t.TcRO54),
+    description: v.intl.string(v.t.YJCxVY)
   }, {
-    location: Chunk524484.oZ.MENTION,
-    title: Chunk388032.intl.string(Chunk388032.t.oW4shO),
-    description: Chunk388032.intl.string(Chunk388032.t["mqfw/H"])
+    location: O.oZ.MENTION,
+    title: v.intl.string(v.t.oW4shO),
+    description: v.intl.string(v.t["mqfw/H"])
   }];
 
 function j(e) {
@@ -405,7 +405,7 @@ function B(e) {
     })]
   })
 }
-let V = () => require.e("68170").then(require.t.bind(require, 205663, 19)).then(e => {
+let V = () => n.e("68170").then(n.t.bind(n, 205663, 19)).then(e => {
   let {
     default: t
   } = e;
@@ -500,30 +500,30 @@ let Y = (e, t, n) => {
   K = e => 0 === e ? d.n.LEFT : d.n.RIGHT;
 
 function z() {
-  let [e, t] = Chunk473749.useState(0), [n, a] = Chunk473749.useState(K(module)), [s, l] = Chunk473749.useState(false), f = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), p = Chunk692547 && !Chunk460181;
-  return Chunk473749.useEffect(() => {
+  let [e, t] = i.useState(0), [n, a] = i.useState(K(e)), [s, l] = i.useState(false), f = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), p = s && !f;
+  return i.useEffect(() => {
     let t = setTimeout(() => {
-      Chunk392711(K(module))
+      a(K(e))
     }, W);
-    return () => clearTimeout(exports)
-  }, [module]), Chunk473749.useEffect(() => {
-    Math.random() > .99 && (0, Chunk57562.T)(Chunk955204.hn.VISITOR_100)
-  }, []), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk578361.Z, {
-      className: Chunk5791.slideAnimator,
-      step: module,
-      direction: require,
-      children: Y(module, exports, Chunk248514)
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk342386 ? Chunk5791.enableAnimationOverlayVisible : Chunk5791.enableAnimationOverlayHidden,
-      children: (0, Chunk54381.jsx)(Chunk481060.Fmz, {
-        className: Chunk5791.enableAnimation,
+    return () => clearTimeout(t)
+  }, [e]), i.useEffect(() => {
+    Math.random() > .99 && (0, m.T)(h.hn.VISITOR_100)
+  }, []), (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(d.Z, {
+      className: S.slideAnimator,
+      step: e,
+      direction: n,
+      children: Y(e, t, l)
+    }), (0, r.jsx)("div", {
+      className: p ? S.enableAnimationOverlayVisible : S.enableAnimationOverlayHidden,
+      children: (0, r.jsx)(c.Fmz, {
+        className: S.enableAnimation,
         importData: V,
-        shouldAnimate: Chunk342386,
+        shouldAnimate: p,
         autoplay: false,
         resetOnPlay: true,
         loop: false,
-        onComplete: () => Chunk248514(false)
+        onComplete: () => l(false)
       })
     })]
   })

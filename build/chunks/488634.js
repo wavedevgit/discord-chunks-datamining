@@ -8,10 +8,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk433355 = require("./433355.js");
 
 function a() {
-  let e = (0, Chunk442837.e7)([Chunk433355.ZP], () => Chunk433355.ZP.getSidebarState(Chunk433355.uZ)),
-    t = (null == module ? true : module.type) === Chunk897473.tI.VIEW_MESSAGE_REQUEST ? module : null;
+  let e = (0, i.e7)([l.ZP], () => l.ZP.getSidebarState(l.uZ)),
+    t = (null == e ? true : e.type) === r.tI.VIEW_MESSAGE_REQUEST ? e : null;
   return {
-    channelId: null == exports ? true : exports.channelId,
-    hasSingleMessageRequest: (null == exports ? true : exports.details) != null && exports.details.type === Chunk897473.Ff.MESSAGE_REQUEST && exports.details.hasSingleMessageRequest
+    channelId: null == t ? true : t.channelId,
+    hasSingleMessageRequest: (null == t ? true : t.details) != null && t.details.type === r.Ff.MESSAGE_REQUEST && t.details.hasSingleMessageRequest
   }
 }

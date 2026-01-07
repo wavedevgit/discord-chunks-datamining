@@ -29,7 +29,7 @@ let r = (0, require("./818083.js").B)({
     }, {
       autoTrackExposure: false
     });
-    return module
+    return e
   },
   a = () => {
     let {
@@ -39,5 +39,5 @@ let r = (0, require("./818083.js").B)({
     }, {
       autoTrackExposure: false
     });
-    return module
+    return e
   }

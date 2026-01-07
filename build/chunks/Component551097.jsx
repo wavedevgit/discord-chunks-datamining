@@ -23,10 +23,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk952334 = require("./952334.js");
 let C = (0, Chunk554916.animated)(Chunk685613.ZP),
   y = () => {
-    let e = (0, Chunk915750.aM)(),
+    let e = (0, d.aM)(),
       {
         expansionSpring: t
-      } = Chunk473749.useContext(Chunk444134.xo),
+      } = r.useContext(x.xo),
       {
         onCtxMenuOpen: n,
         onCtxMenuClose: i,
@@ -34,91 +34,91 @@ let C = (0, Chunk554916.animated)(Chunk685613.ZP),
         isExpanded: y,
         isExpansionAnimationComplete: _,
         quest: S
-      } = Chunk473749.useContext(Chunk526188.A),
-      E = Chunk473749.useCallback(() => {
-        (0, Chunk110560.openDisclosureModal)(S, {
-          content: Chunk49436.jn.QUEST_BAR_V2,
-          ctaContent: Chunk617136.jZ.OPEN_DISCLOSURE,
-          sourceQuestContent: Chunk49436.jn.QUEST_BAR_V2
+      } = r.useContext(b.A),
+      E = r.useCallback(() => {
+        (0, h.openDisclosureModal)(S, {
+          content: u.jn.QUEST_BAR_V2,
+          ctaContent: c.jZ.OPEN_DISCLOSURE,
+          sourceQuestContent: u.jn.QUEST_BAR_V2
         })
       }, [S]),
-      T = Chunk473749.useCallback(() => {
-        (0, Chunk387745.nc)(S, {
-          content: Chunk49436.jn.QUEST_BAR_V2,
-          ctaContent: Chunk617136.jZ.OPEN_GAME_LINK,
-          impressionId: module,
-          sourceQuestContent: Chunk49436.jn.QUEST_BAR_V2
+      T = r.useCallback(() => {
+        (0, m.nc)(S, {
+          content: u.jn.QUEST_BAR_V2,
+          ctaContent: c.jZ.OPEN_GAME_LINK,
+          impressionId: e,
+          sourceQuestContent: u.jn.QUEST_BAR_V2
         })
-      }, [module, S]),
+      }, [e, S]),
       O = y && _,
-      N = (0, Chunk54381.jsx)(Chunk481060.P3F, {
+      N = (0, a.jsx)(o.P3F, {
         onClick: T,
-        className: l()(Chunk952334.clickable, {
-          [Chunk952334.logo]: O
+        className: l()(j.clickable, {
+          [j.logo]: O
         }),
-        children: (0, Chunk54381.jsx)(C, {
+        children: (0, a.jsx)(C, {
           quest: S,
           withGameTile: false,
-          logotypeClassName: Chunk952334.partnerBranding,
+          logotypeClassName: j.partnerBranding,
           logotypeStyle: {
             height: 24,
             maxWidth: 92,
-            transform: (0, Chunk554916.to)([exports.to({
+            transform: (0, s.to)([t.to({
               range: [0, 1],
               output: [1, 1]
             })], e => "scale(".concat(e, ")"))
           }
         })
       });
-    return (0, Chunk54381.jsxs)(Chunk554916.animated.div, {
-      className: l()(Chunk952334.wrapper, Chunk952334.rewardHighlightWrapper, {
-        [Chunk952334.interactable]: O
+    return (0, a.jsxs)(s.animated.div, {
+      className: l()(j.wrapper, j.rewardHighlightWrapper, {
+        [j.interactable]: O
       }),
       style: {
-        transform: (0, Chunk554916.to)([exports.to({
+        transform: (0, s.to)([t.to({
           range: [0, 1],
           output: [6, 0]
         })], e => "translateY(".concat(e, "px)"))
       },
-      children: [(0, Chunk54381.jsx)(Chunk554916.animated.div, {
-        className: Chunk952334.opaqueExpandedBackground,
+      children: [(0, a.jsx)(s.animated.div, {
+        className: j.opaqueExpandedBackground,
         style: {
-          opacity: exports.to({
+          opacity: t.to({
             range: [0, 1],
             output: [0, 1]
           })
         }
-      }), (0, Chunk54381.jsx)(Chunk73826.Z, {
+      }), (0, a.jsx)(g.Z, {
         isFullyExpanded: O,
         partnerBranding: N
-      }), (0, Chunk54381.jsxs)(Chunk554916.animated.div, {
-        className: Chunk952334.promotedBadgeWrapper,
+      }), (0, a.jsxs)(s.animated.div, {
+        className: j.promotedBadgeWrapper,
         style: {
-          opacity: exports.to({
+          opacity: t.to({
             range: [0, 1],
             output: [0, 1]
           })
         },
-        children: [(0, Chunk54381.jsxs)(Chunk481060.P3F, {
-          className: Chunk952334.promotedBadge,
+        children: [(0, a.jsxs)(o.P3F, {
+          className: j.promotedBadge,
           onClick: E,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+          children: [(0, a.jsx)(o.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: Chunk388032.intl.string(Chunk388032.t.o6FLcF)
-          }), (0, Chunk54381.jsx)(Chunk481060.idN, {
-            color: Chunk481060.TVs.colors.WHITE,
-            className: Chunk952334.promotedBadgeIcon
+            children: v.intl.string(v.t.o6FLcF)
+          }), (0, a.jsx)(o.idN, {
+            color: o.TVs.colors.WHITE,
+            className: j.promotedBadgeIcon
           })]
-        }), (0, Chunk54381.jsx)(Chunk698716.i, {
-          onOpen: require,
-          onClose: Chunk120356,
-          onSelect: Chunk685613,
-          questContent: Chunk49436.jn.QUEST_BAR_V2,
+        }), (0, a.jsx)(p.i, {
+          onOpen: n,
+          onClose: i,
+          onSelect: f,
+          questContent: u.jn.QUEST_BAR_V2,
           quest: S,
           shouldShowDisclosure: true,
           showShareLink: true,
-          sourceQuestContent: Chunk49436.jn.QUEST_BAR_V2,
+          sourceQuestContent: u.jn.QUEST_BAR_V2,
           children: e => {
             var t, n;
             return (0, a.jsx)(o.P3F, (t = function(e) {

@@ -18,5 +18,5 @@ function a(e, t) {
 }
 
 function o() {
-  for (let e in Chunk91311.Z.enabled()) a(module, false)
+  for (let e in i.Z.enabled()) a(e, false)
 }

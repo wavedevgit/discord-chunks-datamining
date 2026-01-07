@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk623196 = require("./623196.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.DATA_HARVEST_REQUEST_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.dmBSKo)],
+  useSearchTerms: () => [u.intl.string(u.t.dmBSKo)],
   Component: Chunk623196.Z
 })

@@ -12,7 +12,7 @@ let a = 10 * require("./70956.js").Z.Millis.SECOND,
   o = 15;
 
 function s() {
-  return Chunk798681.w.isIncomingVideoEnabled() && performance.now() - Chunk798681.w.lastIncomingVideoEnabledChangeTime() > a
+  return r.w.isIncomingVideoEnabled() && performance.now() - r.w.lastIncomingVideoEnabledChangeTime() > a
 }
 
 function l(e, t) {
@@ -31,5 +31,5 @@ let c = 30,
 
 function p() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 30;
-  return module <= 5 ? f : module <= 15 ? d : module <= 30 ? u : c
+  return e <= 5 ? f : e <= 15 ? d : e <= 30 ? u : c
 }

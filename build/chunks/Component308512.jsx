@@ -12,13 +12,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c() {
-  let e = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled, []);
-  return (0, Chunk54381.jsx)(Chunk481060.S89, {
+  let e = (0, i.e7)([o.Z], () => o.Z.enabled, []);
+  return (0, l.jsx)(a.S89, {
     id: "streamer-mode-toggle",
-    label: Chunk388032.intl.string(Chunk388032.t.p9ZAJZ),
+    label: s.intl.string(s.t.p9ZAJZ),
     action: () => {
-      Chunk223245.Z.setEnabled(!module)
+      r.Z.setEnabled(!e)
     },
-    checked: module
+    checked: e
   })
 }

@@ -22,11 +22,11 @@ function c(e, t, n) {
 let u = 10;
 class d {
   initialize() {
-    this.cleanup(), this.unlistenHistory = (0, Chunk703656.s1)().listen(this.handleRouteChange);
+    this.cleanup(), this.unlistenHistory = (0, s.s1)().listen(this.handleRouteChange);
     let {
       pathname: e
-    } = (0, Chunk703656.s1)().location;
-    Chunk905423.Z.getState().resetPath(module), this.unlistenKeyboardChange = Chunk905423.Z.subscribe(this.handleKeybindRouteChange), Chunk38618.Z.addChangeListener(this.handleConnectionChange)
+    } = (0, s.s1)().location;
+    a.Z.getState().resetPath(e), this.unlistenKeyboardChange = a.Z.subscribe(this.handleKeybindRouteChange), i.Z.addChangeListener(this.handleConnectionChange)
   }
   executeRouteRewrites(e, t) {
     if (this.routeChangeCount += 1, this.routeChangeCount < u)
@@ -45,7 +45,7 @@ class d {
   }
   cleanup() {
     var e, t, n, r;
-    null == (e = (t = this).unlistenHistory) || module.call(exports), this.unlistenHistory = true, null == (n = (r = this).unlistenKeyboardChange) || require.call(Chunk911340), this.unlistenKeyboardChange = true, Chunk38618.Z.removeChangeListener(this.handleConnectionChange)
+    null == (e = (t = this).unlistenHistory) || e.call(t), this.unlistenHistory = true, null == (n = (r = this).unlistenKeyboardChange) || n.call(r), this.unlistenKeyboardChange = true, i.Z.removeChangeListener(this.handleConnectionChange)
   }
   addRouteChangeListener(e) {
     return null != this.unlistenHistory && e((0, s.s1)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
@@ -64,13 +64,13 @@ class d {
     this.rewrites.delete(e)
   }
   getHistory() {
-    return (0, Chunk703656.s1)()
+    return (0, s.s1)()
   }
   constructor() {
     c(this, "unlistenHistory", true), c(this, "unlistenKeyboardChange", true), c(this, "rewrites", new Set), c(this, "listeners", new Set), c(this, "routeChangeCount", 0), c(this, "timer", false), c(this, "connected", false), c(this, "handleConnectionChange", () => {
-      let e = Chunk38618.Z.isConnected(),
-        t = module && !this.connected;
-      this.connected = module, exports && (this.routeChangeCount = 0, this.executeRouteRewrites((0, Chunk703656.s1)().location, "REPLACE"))
+      let e = i.Z.isConnected(),
+        t = e && !this.connected;
+      this.connected = e, t && (this.routeChangeCount = 0, this.executeRouteRewrites((0, s.s1)().location, "REPLACE"))
     }), c(this, "handleRouteChange", (e, t) => {
       if (this.executeRouteRewrites(e, t)) return;
       if (!(0, o.r)(e)) return void(0, s.dL)(l.Z5c.ME);
@@ -88,8 +88,8 @@ class d {
       false !== this.timer && clearTimeout(this.timer), null != t && (this.timer = setTimeout(this.flushRoute, 200))
     }), c(this, "flushRoute", () => {
       clearTimeout(this.timer);
-      let e = Chunk905423.Z.getState();
-      null != module.path && (0, Chunk703656.uL)(module.path)
+      let e = a.Z.getState();
+      null != e.path && (0, s.uL)(e.path)
     })
   }
 }

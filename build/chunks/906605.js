@@ -45,7 +45,7 @@ function _(e) {
 
 function m() {
   var e;
-  return (0, Chunk699263.Z)(null != (e = Chunk944486.Z.getVoiceChannelId()) ? module : true)
+  return (0, c.Z)(null != (e = o.Z.getVoiceChannelId()) ? e : true)
 }
 
 function h(e, t) {
@@ -101,13 +101,13 @@ function b(e, t) {
 }
 
 function y() {
-  let e = [Chunk106301.Z.getCustomHangStatus(), ...Chunk106301.Z.getRecentStatuses(), ...Chunk106301.Z.getFavoritedStatuses()].filter(e => {
+  let e = [l.Z.getCustomHangStatus(), ...l.Z.getRecentStatuses(), ...l.Z.getFavoritedStatuses()].filter(e => {
     var t;
     return !(null == e || (0, u.Z)(e)) && null != e.emoji && (null == (t = e.emoji) ? true : t.id) != null && null == i.ZP.getCustomEmojiById(e.emoji.id)
   });
-  module.length > 0 && Chunk570140.Z.dispatch({
+  e.length > 0 && r.Z.dispatch({
     type: "DELETE_INVALID_HANG_STATUSES",
-    statuses: module
+    statuses: e
   })
 }
 
@@ -120,7 +120,7 @@ function O(e, t) {
 }
 
 function v() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "RESET_HANG_STATUS_STATE"
   })
 }

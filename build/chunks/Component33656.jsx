@@ -32,38 +32,38 @@ function _(e) {
 }
 
 function m() {
-  let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
-    t = Chunk473749.useRef(null),
+  let e = (0, a.e7)([l.Z], () => l.Z.getSubsection()),
+    t = i.useRef(null),
     {
       categories: n,
       initialized: m
-    } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
-  Chunk473749.useEffect(() => {
-    if (null == m)(0, Chunk960412.Y7)();
-    else if (module === Chunk930441.vG.toUpperCase()) {
+    } = (0, a.cj)([u.Z], () => u.Z.getEmailSettings());
+  i.useEffect(() => {
+    if (null == m)(0, c.Y7)();
+    else if (e === d.vG.toUpperCase()) {
       var n;
-      null == exports || null == (n = exports.current) || require.scrollIntoView(true)
+      null == t || null == (n = t.current) || n.scrollIntoView(true)
     }
-  }, [m, exports, module]);
-  let h = Chunk930441.M0.reduce((e, t) => e || !!n[t], false);
+  }, [m, t, e]);
+  let h = d.M0.reduce((e, t) => e || !!n[t], false);
 
   function g(e, t) {
     (0, c.pR)(e, t)
   }
   let E = {
-    [Chunk930441.$Z.COMMUNICATION]: Chunk726985.s6.NOTIFICATIONS_EMAILS_COMMUNICATION,
-    [Chunk930441.$Z.SOCIAL]: Chunk726985.s6.NOTIFICATIONS_EMAILS_SOCIAL,
-    [Chunk930441.$Z.UPDATES_AND_ANNOUNCEMENTS]: Chunk726985.s6.NOTIFICATIONS_EMAILS_ANNOUNCEMENTS_AND_UPDATES,
-    [Chunk930441.$Z.TIPS]: Chunk726985.s6.NOTIFICATIONS_EMAILS_TIPS,
-    [Chunk930441.$Z.RECOMMENDATIONS_AND_EVENTS]: Chunk726985.s6.NOTIFICATIONS_EMAILS_RECOMMENDATIONS_AND_EVENTS
+    [d.$Z.COMMUNICATION]: f.s6.NOTIFICATIONS_EMAILS_COMMUNICATION,
+    [d.$Z.SOCIAL]: f.s6.NOTIFICATIONS_EMAILS_SOCIAL,
+    [d.$Z.UPDATES_AND_ANNOUNCEMENTS]: f.s6.NOTIFICATIONS_EMAILS_ANNOUNCEMENTS_AND_UPDATES,
+    [d.$Z.TIPS]: f.s6.NOTIFICATIONS_EMAILS_TIPS,
+    [d.$Z.RECOMMENDATIONS_AND_EVENTS]: f.s6.NOTIFICATIONS_EMAILS_RECOMMENDATIONS_AND_EVENTS
   };
-  return m ? (0, Chunk54381.jsxs)(Chunk921801.F, {
-    setting: Chunk726985.s6.NOTIFICATIONS_EMAILS,
-    children: [(0, Chunk54381.jsx)("div", {
-      ref: exports
-    }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.TPchzM),
-      children: [Chunk930441.Od.map(e => {
+  return m ? (0, r.jsxs)(s.F, {
+    setting: f.s6.NOTIFICATIONS_EMAILS,
+    children: [(0, r.jsx)("div", {
+      ref: t
+    }), (0, r.jsxs)(o.C3N, {
+      label: p.intl.string(p.t.TPchzM),
+      children: [d.Od.map(e => {
         let {
           category: t,
           label: i,
@@ -78,15 +78,15 @@ function m() {
           setting: o,
           children: l
         }, i()) : l
-      }), (0, Chunk54381.jsxs)(Chunk921801.F, {
-        setting: Chunk726985.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Avr, {
+      }), (0, r.jsxs)(s.F, {
+        setting: f.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
+        children: [(0, r.jsx)(o.Avr, {
           disabled: !h,
-          text: Chunk388032.intl.string(Chunk388032.t.Ra9Pwk),
-          onClick: Chunk960412.oc
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          text: p.intl.string(p.t.Ra9Pwk),
+          onClick: c.oc
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.iYjQ8X)
+          children: p.intl.string(p.t.iYjQ8X)
         })]
       })]
     })]

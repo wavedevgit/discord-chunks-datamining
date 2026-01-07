@@ -26,7 +26,7 @@ function d(e) {
 }
 
 function f() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_POWERUPS_RESET_NOTIFICATIONS"
   })
 }

@@ -31,12 +31,12 @@ let u = "data-floating-ui-focusable",
   y = () => "floating-ui-" + Math.random().toString(36).slice(2, 6) + b++;
 
 function O() {
-  let [e, t] = Chunk473749.useState(() => E ? y() : true);
-  return (0, Chunk733387.Xj)(() => {
-    null == module && exports(y())
-  }, []), Chunk473749.useEffect(() => {
+  let [e, t] = i.useState(() => E ? y() : true);
+  return (0, a.Xj)(() => {
+    null == e && t(y())
+  }, []), i.useEffect(() => {
     E = true
-  }, []), module
+  }, []), e
 }
 let v = g.useId || O;
 
@@ -60,9 +60,9 @@ let I = Chunk473749.createContext(null),
   T = Chunk473749.createContext(null),
   C = () => {
     var e;
-    return (null == (e = Chunk473749.useContext(I)) ? true : module.id) || null
+    return (null == (e = i.useContext(I)) ? true : e.id) || null
   },
-  A = () => Chunk473749.useContext(T);
+  A = () => i.useContext(T);
 
 function N(e) {
   return "data-floating-ui-" + e
@@ -340,33 +340,33 @@ let $ = 0,
   ee = "--floating-ui-scrollbar-width";
 
 function et() {
-  let e = (0, Chunk733387.Xf)(),
-    t = /iP(hone|ad|od)|iOS/.test(module) || "MacIntel" === module && navigator.maxTouchPoints > 1,
+  let e = (0, a.Xf)(),
+    t = /iP(hone|ad|od)|iOS/.test(e) || "MacIntel" === e && navigator.maxTouchPoints > 1,
     n = document.body.style,
     r = Math.round(document.documentElement.getBoundingClientRect().left) + document.documentElement.scrollLeft ? "paddingLeft" : "paddingRight",
     i = window.innerWidth - document.documentElement.clientWidth,
-    o = require.left ? parseFloat(require.left) : window.scrollX,
-    s = require.top ? parseFloat(require.top) : window.scrollY;
-  if (require.overflow = "hidden", require.setProperty(ee, Chunk473749 + "px"), Chunk473749 && (require[r] = Chunk473749 + "px"), exports) {
+    o = n.left ? parseFloat(n.left) : window.scrollX,
+    s = n.top ? parseFloat(n.top) : window.scrollY;
+  if (n.overflow = "hidden", n.setProperty(ee, i + "px"), i && (n[r] = i + "px"), t) {
     var l, c;
-    let e = (null == (l = window.visualViewport) ? true : Chunk24156.offsetLeft) || 0;
-    Object.assign(require, {
+    let e = (null == (l = window.visualViewport) ? true : l.offsetLeft) || 0;
+    Object.assign(n, {
       position: "fixed",
-      top: -(Chunk274676 - Math.floor((null == (c = window.visualViewport) ? true : Chunk998976.offsetTop) || 0)) + "px",
-      left: -(Chunk54381 - Math.floor(module)) + "px",
+      top: -(s - Math.floor((null == (c = window.visualViewport) ? true : c.offsetTop) || 0)) + "px",
+      left: -(o - Math.floor(e)) + "px",
       right: "0"
     })
   }
   return () => {
-    Object.assign(require, {
+    Object.assign(n, {
       overflow: "",
       [r]: ""
-    }), require.removeProperty(ee), exports && (Object.assign(require, {
+    }), n.removeProperty(ee), t && (Object.assign(n, {
       position: "",
       top: "",
       left: "",
       right: ""
-    }), window.scrollTo(Chunk54381, Chunk274676))
+    }), window.scrollTo(o, s))
   }
 }
 let en = () => {},

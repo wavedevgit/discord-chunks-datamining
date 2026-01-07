@@ -154,7 +154,7 @@ let eP = eM(null),
 
 function ej() {
   let e = eM(eP);
-  f().isEqual(module, eP) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), eP = module)
+  f().isEqual(e, eP) || (el.default.track(em.rMx.OVERLAY_SETTINGS_UPDATED, e), eP = e)
 }
 
 function eM(e) {
@@ -281,32 +281,32 @@ function eF() {
   let {
     runningGame: a,
     runningGameApplication: o
-  } = (0, Chunk137920.Z)(), s = null == Chunk120356 ? true : Chunk120356.pid, c = (0, Chunk442837.e7)([Chunk371651.default], () => null == Chunk120356 || null == Chunk348327 ? null : Chunk371651.default.getTrackedGameByPid(Chunk348327), [Chunk120356, Chunk348327], l()), {
+  } = (0, R.Z)(), s = null == a ? true : a.pid, c = (0, p.e7)([G.default], () => null == a || null == s ? null : G.default.getTrackedGameByPid(s), [a, s], l()), {
     enabledLegacy: u,
     enabledOOP: d
-  } = (0, Chunk442837.cj)([Chunk77498.Z, Chunk283595.Z], () => {
-    if (null == Chunk120356 && null == Chunk512722) return {
+  } = (0, p.cj)([et.Z, er.Z], () => {
+    if (null == a && null == c) return {
       enabledLegacy: false,
       enabledOOP: false
     };
-    if (null == Chunk120356) {
+    if (null == a) {
       var e, t;
       return {
-        enabledLegacy: null != (e = null == Chunk512722 ? true : Chunk512722.legacyEnabled) && module,
-        enabledOOP: null != (t = null == Chunk512722 ? true : Chunk512722.oopEnabled) && exports
+        enabledLegacy: null != (e = null == c ? true : c.legacyEnabled) && e,
+        enabledOOP: null != (t = null == c ? true : c.oopEnabled) && t
       }
     }
-    return (0, Chunk594190.b6)(Chunk120356, false, [Chunk77498.Z, Chunk283595.Z])
-  }, [Chunk120356, Chunk512722]), f = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk77498.Z, Chunk283595.Z], () => null == Chunk120356 ? null : (0, Chunk594190.FZ)(Chunk120356, Chunk594190.ZP, Chunk77498.Z, Chunk283595.Z), [Chunk120356], l()), [_, m] = Chunk473749.useState(Chunk392711), [b, y] = Chunk473749.useState(u), [v, T] = Chunk473749.useState(false);
-  Chunk473749.useEffect(() => {
-    Chunk199849(Chunk392711), Chunk765250(u)
-  }, [Chunk392711, u]);
-  let C = !(0, Chunk145597.supportsLegacy)(),
-    A = !(0, Chunk145597.supportsOutOfProcess)(),
+    return (0, P.b6)(a, false, [et.Z, er.Z])
+  }, [a, c]), f = (0, p.e7)([P.ZP, et.Z, er.Z], () => null == a ? null : (0, P.FZ)(a, P.ZP, et.Z, er.Z), [a], l()), [_, m] = i.useState(d), [b, y] = i.useState(u), [v, T] = i.useState(false);
+  i.useEffect(() => {
+    m(d), y(u)
+  }, [d, u]);
+  let C = !(0, ef.supportsLegacy)(),
+    A = !(0, ef.supportsOutOfProcess)(),
     {
       legacyEnabled: N,
       oopEnabled: w
-    } = (0, Chunk442837.cj)([Chunk371651.default], () => Chunk371651.default.getGlobalEnabledStatus()),
+    } = (0, p.cj)([G.default], () => G.default.getGlobalEnabledStatus()),
     j = (e, t) => {
       var n, r, i;
       if (null == a) return;
@@ -361,21 +361,21 @@ function eF() {
         (0, V.l)(i, null != (o = a.id) ? o : null)
       }
     },
-    Z = Chunk812206 && Chunk835473,
-    F = !Chunk243778 && !Chunk320724,
-    B = !Chunk704215 && !Chunk243778 && Chunk660216 && !Chunk812206,
-    H = !Chunk660216 && !Chunk320724 && Chunk704215 && !Chunk835473,
-    Y = (null == Chunk512722 ? true : Chunk512722.overlayMethod) === Chunk837268.gl.Disabled,
-    W = (null == Chunk512722 ? true : Chunk512722.state) === Chunk837268.mM.OVERLAY_RENDERING && !Chunk398269,
-    K = (null == Chunk512722 ? true : Chunk512722.state) != null && eG.has(Chunk512722.state) && !Chunk398269,
-    z = (null == Chunk512722 ? true : Chunk512722.overlayMethod) === Chunk837268.gl.OutOfProcess,
-    q = (null == Chunk512722 ? true : Chunk512722.overlayMethod) === Chunk837268.gl.OutOfProcessLimitedInteraction,
-    Q = (null == Chunk512722 ? true : Chunk512722.overlayMethod) === Chunk837268.gl.Hook,
-    J = (null == Chunk512722 ? true : Chunk512722.state) === Chunk837268.mM.OVERLAY_CRASHED || (null == Chunk512722 ? true : Chunk512722.state) === Chunk837268.mM.OVERLAY_CRASHED_DISABLED,
-    $ = !Chunk704215 && !Chunk660216,
+    Z = C && A,
+    F = !N && !w,
+    B = !_ && !N && b && !C,
+    H = !b && !w && _ && !A,
+    Y = (null == c ? true : c.overlayMethod) === M.gl.Disabled,
+    W = (null == c ? true : c.state) === M.mM.OVERLAY_RENDERING && !Y,
+    K = (null == c ? true : c.state) != null && eG.has(c.state) && !Y,
+    z = (null == c ? true : c.overlayMethod) === M.gl.OutOfProcess,
+    q = (null == c ? true : c.overlayMethod) === M.gl.OutOfProcessLimitedInteraction,
+    Q = (null == c ? true : c.overlayMethod) === M.gl.Hook,
+    J = (null == c ? true : c.state) === M.mM.OVERLAY_CRASHED || (null == c ? true : c.state) === M.mM.OVERLAY_CRASHED_DISABLED,
+    $ = !_ && !b,
     [ee, en] = (() => {
       switch (true) {
-        case Chunk340101 && Chunk430561:
+        case W && z:
           function e(e, t) {
             return (0, r.jsx)(g.Text, {
               tag: "span",
@@ -384,11 +384,11 @@ function eF() {
               children: e
             }, t)
           }
-          return [Chunk388032.intl.format(Chunk388032.t.hFVBIg, {
-            overlayMethod: Chunk388032.intl.string(Chunk388032.t.a3eXSw),
-            overlayMethodHook: module
+          return [eb.intl.format(eb.t.hFVBIg, {
+            overlayMethod: eb.intl.string(eb.t.a3eXSw),
+            overlayMethodHook: e
           }), null];
-        case Chunk340101 && Chunk509003:
+        case W && q:
           function t(e, t) {
             return (0, r.jsx)(g.Text, {
               tag: "span",
@@ -397,26 +397,26 @@ function eF() {
               children: e
             }, t)
           }
-          return [Chunk388032.intl.format(Chunk388032.t.hFVBIg, {
-            overlayMethod: Chunk388032.intl.string(Chunk388032.t["506Aba"]),
-            overlayMethodHook: exports
+          return [eb.intl.format(eb.t.hFVBIg, {
+            overlayMethod: eb.intl.string(eb.t["506Aba"]),
+            overlayMethodHook: t
           }), null];
-        case Chunk340101 && Chunk865066:
+        case W && Q:
           function n() {
             var e, t;
             switch (true) {
-              case (null == Chunk512722 ? true : Chunk512722.fullscreenType) !== Chunk593472.Jx.BORDERLESS_FULLSCREEN:
-                return Chunk388032.intl.string(Chunk388032.t.mJmbeC);
-              case Chunk835473:
-                return Chunk388032.intl.string(Chunk388032.t.C7bLTQ);
-              case !(null != (e = null == Chunk512722 ? true : Chunk512722.oopEnabled) && module):
-                return Chunk388032.intl.string(Chunk388032.t.WiY24u);
-              case !Chunk320724:
-                return Chunk388032.intl.string(Chunk388032.t.cAFVsL);
-              case !(null != (t = null == Chunk512722 ? true : Chunk512722.supportsOutOfProcess) && exports):
-                return Chunk388032.intl.string(Chunk388032.t.XcGEcs);
+              case (null == c ? true : c.fullscreenType) !== S.Jx.BORDERLESS_FULLSCREEN:
+                return eb.intl.string(eb.t.mJmbeC);
+              case A:
+                return eb.intl.string(eb.t.C7bLTQ);
+              case !(null != (e = null == c ? true : c.oopEnabled) && e):
+                return eb.intl.string(eb.t.WiY24u);
+              case !w:
+                return eb.intl.string(eb.t.cAFVsL);
+              case !(null != (t = null == c ? true : c.supportsOutOfProcess) && t):
+                return eb.intl.string(eb.t.XcGEcs);
               default:
-                return Chunk388032.intl.string(Chunk388032.t.bJXH2v)
+                return eb.intl.string(eb.t.bJXH2v)
             }
           }
 
@@ -428,122 +428,122 @@ function eF() {
               children: e
             }, t)
           }
-          return [Chunk388032.intl.format(Chunk388032.t.hFVBIg, {
-            overlayMethod: Chunk388032.intl.string(Chunk388032.t.bvlpDR),
-            overlayMethodHook: Chunk473749
-          }), require()];
-        case Chunk131704:
-          return [Chunk388032.intl.string(Chunk388032.t.OFC2aw), null];
-        case Chunk829907:
-          return [Chunk388032.intl.string(Chunk388032.t.m7X4az), null];
-        case Chunk624864:
-          return [Chunk388032.intl.string(Chunk388032.t["9DUS5l"]), null];
-        case Chunk598077:
-          return [Chunk388032.intl.string(Chunk388032.t.nQ9EdJ), null];
-        case Chunk610394:
-        case Chunk932404:
-          return [Chunk388032.intl.string(Chunk388032.t.VWUn0a), null];
-        case Chunk243487:
-          if (Chunk430561) return [Chunk388032.intl.string(Chunk388032.t["s8+CFq"]), null];
-          if (Chunk865066) return [Chunk388032.intl.string(Chunk388032.t.JEEdqt), null];
-          if (Chunk509003) return [Chunk388032.intl.string(Chunk388032.t.pzBMwY), null];
-          return [Chunk388032.intl.string(Chunk388032.t["2Xhy9k"]), null];
-        case null == Chunk512722:
-          return [Chunk388032.intl.string(Chunk388032.t.vwHPRi), null];
-        case Chunk398269: {
-          let e = (null == Chunk512722 ? true : Chunk512722.fullscreenType) === Chunk593472.Jx.FULLSCREEN ? Chunk388032.intl.string(Chunk388032.t.mJmbeC) : null;
-          return [Chunk388032.intl.string(Chunk388032.t.VPW4XY), module]
+          return [eb.intl.format(eb.t.hFVBIg, {
+            overlayMethod: eb.intl.string(eb.t.bvlpDR),
+            overlayMethodHook: i
+          }), n()];
+        case J:
+          return [eb.intl.string(eb.t.OFC2aw), null];
+        case Z:
+          return [eb.intl.string(eb.t.m7X4az), null];
+        case F:
+          return [eb.intl.string(eb.t["9DUS5l"]), null];
+        case $:
+          return [eb.intl.string(eb.t.nQ9EdJ), null];
+        case B:
+        case H:
+          return [eb.intl.string(eb.t.VWUn0a), null];
+        case K:
+          if (z) return [eb.intl.string(eb.t["s8+CFq"]), null];
+          if (Q) return [eb.intl.string(eb.t.JEEdqt), null];
+          if (q) return [eb.intl.string(eb.t.pzBMwY), null];
+          return [eb.intl.string(eb.t["2Xhy9k"]), null];
+        case null == c:
+          return [eb.intl.string(eb.t.vwHPRi), null];
+        case Y: {
+          let e = (null == c ? true : c.fullscreenType) === S.Jx.FULLSCREEN ? eb.intl.string(eb.t.mJmbeC) : null;
+          return [eb.intl.string(eb.t.VPW4XY), e]
         }
         default:
-          return [Chunk388032.intl.string(Chunk388032.t.ONovP5), null]
+          return [eb.intl.string(eb.t.ONovP5), null]
       }
     })();
-  (0, Chunk493773.ZP)(() => {
-    Chunk224706.Z.getDetectableGames()
+  (0, I.ZP)(() => {
+    E.Z.getDetectableGames()
   });
-  let [ei, ea] = Chunk473749.useMemo(() => Chunk243487 ? ["text-muted", Chunk481060.TVs.colors.TEXT_MUTED.css] : Chunk340101 && Chunk509003 ? ["text-feedback-warning", Chunk481060.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Chunk340101 && Chunk430561 ? ["text-feedback-positive", Chunk481060.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Chunk340101 && Chunk865066 ? ["text-strong", Chunk481060.TVs.colors.TEXT_STRONG.css] : ["interactive-text-default", Chunk481060.TVs.colors.INTERACTIVE_TEXT_DEFAULT.css], [Chunk243487, Chunk340101, Chunk509003, Chunk430561, Chunk865066]);
-  return null == Chunk120356 ? null : (0, Chunk54381.jsxs)(eU, {
-    onExpand: Chunk100527,
-    className: Chunk825209 ? Chunk677677.expandedContainer : true,
-    title: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [null != (n = null != (t = null != (e = null == o ? true : o.name) ? module : null == f ? true : f.name) ? exports : null == Chunk120356 ? true : Chunk120356.gameName) ? require : "", null != f && f.verified ? (0, Chunk54381.jsx)(Chunk28664.u, {
-        text: Chunk388032.intl.string(Chunk388032.t["4PJP5p"]),
-        children: (0, Chunk54381.jsx)(Chunk297700.Z, {
+  let [ei, ea] = i.useMemo(() => K ? ["text-muted", g.TVs.colors.TEXT_MUTED.css] : W && q ? ["text-feedback-warning", g.TVs.colors.TEXT_FEEDBACK_WARNING.css] : W && z ? ["text-feedback-positive", g.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : W && Q ? ["text-strong", g.TVs.colors.TEXT_STRONG.css] : ["interactive-text-default", g.TVs.colors.INTERACTIVE_TEXT_DEFAULT.css], [K, W, q, z, Q]);
+  return null == a ? null : (0, r.jsxs)(eU, {
+    onExpand: T,
+    className: v ? ey.expandedContainer : true,
+    title: (0, r.jsxs)(r.Fragment, {
+      children: [null != (n = null != (t = null != (e = null == o ? true : o.name) ? e : null == f ? true : f.name) ? t : null == a ? true : a.gameName) ? n : "", null != f && f.verified ? (0, r.jsx)(h.u, {
+        text: eb.intl.string(eb.t["4PJP5p"]),
+        children: (0, r.jsx)(x.Z, {
           size: ew,
-          color: Chunk481060.TVs.colors.BACKGROUND_BRAND.css,
-          children: (0, Chunk54381.jsx)(Chunk481060.kmB, {
+          color: g.TVs.colors.BACKGROUND_BRAND.css,
+          children: (0, r.jsx)(g.kmB, {
             size: "custom",
             width: ew,
             height: ew,
-            color: Chunk481060.TVs.colors.WHITE.css
+            color: g.TVs.colors.WHITE.css
           })
         })
       }) : null]
     }),
-    description: Chunk189786,
-    hint: null != Chunk355863 ? Chunk355863 : true,
-    header: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [Chunk340101 || Chunk243487 ? (0, Chunk54381.jsx)(Chunk481060.pzj, {
+    description: ee,
+    hint: null != en ? en : true,
+    header: (0, r.jsxs)(r.Fragment, {
+      children: [W || K ? (0, r.jsx)(g.pzj, {
         size: "xxs",
-        color: Chunk556296
-      }) : (0, Chunk54381.jsx)("div", {
-        className: Chunk677677.playingDot
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        color: ea
+      }) : (0, r.jsx)("div", {
+        className: ey.playingDot
+      }), (0, r.jsx)(g.Text, {
         variant: "text-xs/semibold",
-        color: Chunk594174,
-        children: Chunk388032.intl.string(Chunk388032.t.CDOx3w)
+        color: ei,
+        children: eb.intl.string(eb.t.CDOx3w)
       })]
     }),
-    icon: (0, Chunk54381.jsx)(Chunk925329.Z, {
+    icon: (0, r.jsx)(D.Z, {
       game: o,
-      pid: null == Chunk120356 ? true : Chunk120356.pid,
-      size: Chunk925329.A.MEDIUM
+      pid: null == a ? true : a.pid,
+      size: D.A.MEDIUM
     }),
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["87O5GC"]),
-    action: (0, Chunk54381.jsx)(Chunk481060.P3F, {
+    "aria-label": eb.intl.string(eb.t["87O5GC"]),
+    action: (0, r.jsx)(g.P3F, {
       onClick: e => eZ(e),
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        checked: Chunk704215 && Chunk320724 || Chunk660216 && Chunk243778,
-        disabled: Chunk829907,
+      children: (0, r.jsx)(g.rsf, {
+        checked: _ && w || b && N,
+        disabled: Z,
         onChange: e => {
           U(e, k(e, _ && w || b && N))
         }
       })
     }),
-    warning: (0, Chunk54381.jsx)(Chunk894300.Z, {
-      className: Chunk677677.systemServiceWarning,
-      game: Chunk120356
+    warning: (0, r.jsx)(X.Z, {
+      className: ey.systemServiceWarning,
+      game: a
     }),
-    children: [(0, Chunk54381.jsx)(ek, {
-      title: Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
-      description: Chunk388032.intl.string(Chunk388032.t.ndgADE),
-      hint: Chunk320724 ? true : Chunk388032.intl.string(Chunk388032.t.cAFVsL),
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
-      action: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          checked: Chunk704215 && Chunk320724,
-          disabled: Chunk835473,
+    children: [(0, r.jsx)(ek, {
+      title: eb.intl.string(eb.t["7BlVIs"]),
+      description: eb.intl.string(eb.t.ndgADE),
+      hint: w ? true : eb.intl.string(eb.t.cAFVsL),
+      "aria-label": eb.intl.string(eb.t["7BlVIs"]),
+      action: (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(g.rsf, {
+          checked: _ && w,
+          disabled: A,
           onChange: e => {
             e && !w ? j(e, L.OverlayToggledClientSettingType.OOP) : j(e, L.OverlayToggledClientSettingType.OOP_GAME)
           }
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk677677.emptySpacer
+        }), (0, r.jsx)("div", {
+          className: ey.emptySpacer
         })]
       })
-    }), (0, Chunk54381.jsx)(ek, {
-      title: Chunk388032.intl.string(Chunk388032.t.BfFpW1),
-      description: Chunk388032.intl.string(Chunk388032.t.OzInYk),
-      hint: Chunk243778 ? true : Chunk388032.intl.string(Chunk388032.t["3sYHXm"]),
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.BfFpW1),
-      action: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-          checked: Chunk660216 && Chunk243778,
-          disabled: Chunk812206,
+    }), (0, r.jsx)(ek, {
+      title: eb.intl.string(eb.t.BfFpW1),
+      description: eb.intl.string(eb.t.OzInYk),
+      hint: N ? true : eb.intl.string(eb.t["3sYHXm"]),
+      "aria-label": eb.intl.string(eb.t.BfFpW1),
+      action: (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(g.rsf, {
+          checked: b && N,
+          disabled: C,
           onChange: e => {
             e && !N ? j(e, L.OverlayToggledClientSettingType.LEGACY) : j(e, L.OverlayToggledClientSettingType.LEGACY_GAME)
           }
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk677677.emptySpacer
+        }), (0, r.jsx)("div", {
+          className: ey.emptySpacer
         })]
       })
     })]
@@ -602,10 +602,10 @@ function eV(e) {
 }
 
 function eH() {
-  let [e, t] = Chunk473749.useState(false), {
+  let [e, t] = i.useState(false), {
     legacyEnabled: n,
     oopEnabled: a
-  } = (0, Chunk442837.cj)([Chunk371651.default], () => Chunk371651.default.getGlobalEnabledStatus()), o = (0, Chunk442837.Wu)([Chunk594190.ZP], () => Chunk594190.ZP.getGamesSeen(true)).filter(e => !(0, q.le)(e)), s = (0, Chunk835473.Z)(o.map(e => e.id)), l = !(0, Chunk145597.supportsLegacy)(), c = e => {
+  } = (0, p.cj)([G.default], () => G.default.getGlobalEnabledStatus()), o = (0, p.Wu)([P.ZP], () => P.ZP.getGamesSeen(true)).filter(e => !(0, q.le)(e)), s = (0, A.Z)(o.map(e => e.id)), l = !(0, ef.supportsLegacy)(), c = e => {
     var t, r;
     O.Z.setEnabled(e, a);
     let i = null != (r = null == (t = P.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? r : null;
@@ -615,44 +615,44 @@ function eH() {
       enabledOOP: r
     } = n;
     E.Z.toggleOverlay(t, e, r)
-  }, d = Chunk473749.useMemo(() => (0, Chunk145597.supportsLegacy)() ? l ? Chunk388032.intl.string(Chunk388032.t.r9jEVw) : Chunk388032.intl.string(Chunk388032.t.OzInYk) : Chunk388032.intl.string(Chunk388032.t["8Ox6/E"]), [l]);
-  return 0 === o.length ? (0, Chunk54381.jsx)(ek, {
-    title: Chunk388032.intl.string(Chunk388032.t.BfFpW1),
-    description: Chunk392711,
-    "aria-label": Chunk388032.intl.string(Chunk388032.t.BfFpW1),
-    className: Chunk677677.standaloneContainer,
-    action: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-        checked: require,
+  }, d = i.useMemo(() => (0, ef.supportsLegacy)() ? l ? eb.intl.string(eb.t.r9jEVw) : eb.intl.string(eb.t.OzInYk) : eb.intl.string(eb.t["8Ox6/E"]), [l]);
+  return 0 === o.length ? (0, r.jsx)(ek, {
+    title: eb.intl.string(eb.t.BfFpW1),
+    description: d,
+    "aria-label": eb.intl.string(eb.t.BfFpW1),
+    className: ey.standaloneContainer,
+    action: (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(g.rsf, {
+        checked: n,
         disabled: l,
         onChange: e => c(e)
-      }), Chunk987650.iP && (0, Chunk54381.jsx)("div", {
-        className: Chunk677677.emptySpacer
+      }), eg.iP && (0, r.jsx)("div", {
+        className: ey.emptySpacer
       })]
     })
-  }) : (0, Chunk54381.jsxs)(eU, {
-    onExpand: exports,
-    className: module ? Chunk677677.expandedContainer : true,
-    title: Chunk388032.intl.string(Chunk388032.t.BfFpW1),
-    description: Chunk392711,
-    "aria-label": Chunk388032.intl.string(Chunk388032.t.BfFpW1),
-    action: (0, Chunk54381.jsx)(Chunk481060.P3F, {
+  }) : (0, r.jsxs)(eU, {
+    onExpand: t,
+    className: e ? ey.expandedContainer : true,
+    title: eb.intl.string(eb.t.BfFpW1),
+    description: d,
+    "aria-label": eb.intl.string(eb.t.BfFpW1),
+    action: (0, r.jsx)(g.P3F, {
       onClick: e => eZ(e),
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        checked: require,
+      children: (0, r.jsx)(g.rsf, {
+        checked: n,
         disabled: l,
         onChange: e => c(e)
       })
     }),
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk677677.subtitleContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: [(0, r.jsx)("div", {
+      className: ey.subtitleContainer,
+      children: (0, r.jsx)(g.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.FzoWRo)
+        children: eb.intl.string(eb.t.FzoWRo)
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
-      className: Chunk677677.scroller,
+    }), (0, r.jsx)(g.zJl, {
+      className: ey.scroller,
       children: o.map((e, t) => (0, r.jsx)(eV, {
         rawGame: e,
         clientSettingType: L.OverlayToggledClientSettingType.LEGACY_GAME,
@@ -674,10 +674,10 @@ function eH() {
 }
 
 function eY() {
-  let [e, t] = Chunk473749.useState(false), {
+  let [e, t] = i.useState(false), {
     oopEnabled: n,
     legacyEnabled: a
-  } = (0, Chunk442837.cj)([Chunk371651.default], () => Chunk371651.default.getGlobalEnabledStatus()), o = !(0, Chunk145597.supportsOutOfProcess)(), s = (0, Chunk442837.Wu)([Chunk594190.ZP], () => Chunk594190.ZP.getGamesSeen(true)).filter(e => !(0, q.le)(e)), l = (0, Chunk835473.Z)(Chunk348327.map(e => e.id)), c = e => {
+  } = (0, p.cj)([G.default], () => G.default.getGlobalEnabledStatus()), o = !(0, ef.supportsOutOfProcess)(), s = (0, p.Wu)([P.ZP], () => P.ZP.getGamesSeen(true)).filter(e => !(0, q.le)(e)), l = (0, A.Z)(s.map(e => e.id)), c = e => {
     var t, r;
     let i = !e && n;
     O.Z.setEnabled(a, e);
@@ -688,45 +688,45 @@ function eY() {
       enabledLegacy: r
     } = n;
     E.Z.toggleOverlay(t, e, r)
-  }, d = Chunk473749.useMemo(() => Chunk987650.iP ? o ? Chunk388032.intl.string(Chunk388032.t.C7bLTQ) : Chunk388032.intl.string(Chunk388032.t.ndgADE) : Chunk388032.intl.string(Chunk388032.t.m7X4az), [o]);
-  return 0 === Chunk348327.length ? (0, Chunk54381.jsx)(ek, {
-    title: Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
-    description: Chunk392711,
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
-    className: Chunk677677.standaloneContainer,
-    action: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-        checked: require,
+  }, d = i.useMemo(() => eg.iP ? o ? eb.intl.string(eb.t.C7bLTQ) : eb.intl.string(eb.t.ndgADE) : eb.intl.string(eb.t.m7X4az), [o]);
+  return 0 === s.length ? (0, r.jsx)(ek, {
+    title: eb.intl.string(eb.t["7BlVIs"]),
+    description: d,
+    "aria-label": eb.intl.string(eb.t["7BlVIs"]),
+    className: ey.standaloneContainer,
+    action: (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(g.rsf, {
+        checked: n,
         disabled: o,
         onChange: e => c(e)
-      }), Chunk987650.iP && (0, Chunk54381.jsx)("div", {
-        className: Chunk677677.emptySpacer
+      }), eg.iP && (0, r.jsx)("div", {
+        className: ey.emptySpacer
       })]
     })
-  }) : (0, Chunk54381.jsxs)(eU, {
-    onExpand: exports,
-    className: module ? Chunk677677.expandedContainer : true,
-    title: Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
-    description: Chunk392711,
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
-    action: (0, Chunk54381.jsx)(Chunk481060.P3F, {
+  }) : (0, r.jsxs)(eU, {
+    onExpand: t,
+    className: e ? ey.expandedContainer : true,
+    title: eb.intl.string(eb.t["7BlVIs"]),
+    description: d,
+    "aria-label": eb.intl.string(eb.t["7BlVIs"]),
+    action: (0, r.jsx)(g.P3F, {
       onClick: e => eZ(e),
-      children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        checked: require,
+      children: (0, r.jsx)(g.rsf, {
+        checked: n,
         disabled: o,
         onChange: e => c(e)
       })
     }),
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk677677.subtitleContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: [(0, r.jsx)("div", {
+      className: ey.subtitleContainer,
+      children: (0, r.jsx)(g.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.FzoWRo)
+        children: eb.intl.string(eb.t.FzoWRo)
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
-      className: Chunk677677.scroller,
-      children: Chunk348327.map((e, t) => (0, r.jsx)(eV, {
+    }), (0, r.jsx)(g.zJl, {
+      className: ey.scroller,
+      children: s.map((e, t) => (0, r.jsx)(eV, {
         rawGame: e,
         clientSettingType: L.OverlayToggledClientSettingType.OOP_GAME,
         gameApplication: l[t],
@@ -747,17 +747,17 @@ function eY() {
 }
 
 function eW() {
-  return (0, Chunk32300.T_)(Chunk100527.Z.USER_SETTINGS) ? (0, Chunk54381.jsx)(ek, {
-    title: Chunk388032.intl.string(Chunk388032.t["z4/l+V"]),
-    description: Chunk388032.intl.string(Chunk388032.t["3aZq/0"]),
-    action: (0, Chunk54381.jsx)(Chunk481060.Button, {
+  return (0, k.T_)(T.Z.USER_SETTINGS) ? (0, r.jsx)(ek, {
+    title: eb.intl.string(eb.t["z4/l+V"]),
+    description: eb.intl.string(eb.t["3aZq/0"]),
+    action: (0, r.jsx)(g.Button, {
       variant: "primary",
-      text: Chunk388032.intl.string(Chunk388032.t.s2nVhG),
+      text: eb.intl.string(eb.t.s2nVhG),
       onClick: () => {
-        (0, Chunk398269.N)(Chunk100527.Z.USER_SETTINGS, Chunk981631.IlC.APP)
+        (0, Y.N)(T.Z.USER_SETTINGS, em.IlC.APP)
       }
     }),
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["z4/l+V"])
+    "aria-label": eb.intl.string(eb.t["z4/l+V"])
   }) : null
 }
 
@@ -848,16 +848,16 @@ function ez(e) {
 function eq() {
   let {
     enabled: e
-  } = (0, Chunk32300.aq)("OverlayV3StreamWatchNudge"), t = ez(module), n = e => t => {
+  } = (0, k.aq)("OverlayV3StreamWatchNudge"), t = ez(e), n = e => t => {
     O.Z.setNotificationDisabledSetting(e, !t)
-  }, i = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk677677.notificationSettingsContainer,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  }, i = (0, p.e7)([F.Z], () => F.Z.getDisabledNotifications());
+  return (0, r.jsxs)("div", {
+    className: ey.notificationSettingsContainer,
+    children: [(0, r.jsx)(g.Heading, {
       variant: "heading-md/semibold",
       color: "text-strong",
-      children: Chunk388032.intl.string(Chunk388032.t.xOE5bA)
-    }), exports.map(e => (0, r.jsxs)("div", {
+      children: eb.intl.string(eb.t.xOE5bA)
+    }), t.map(e => (0, r.jsxs)("div", {
       className: ey.notificationItem,
       children: [(0, r.jsxs)("div", {
         className: ey.notificationDescriptionContainer,
@@ -927,10 +927,10 @@ function eX(e) {
 }
 
 function eJ() {
-  return (0, Chunk131704.createChannelRecord)({
+  return (0, J.createChannelRecord)({
     id: "123",
     name: "Test Channel",
-    type: Chunk981631.d4z.GUILD_VOICE,
+    type: em.d4z.GUILD_VOICE,
     guild_id: "456"
   })
 }
@@ -1004,16 +1004,16 @@ function e0() {
     avatarSizeMode: n,
     displayNameMode: i,
     displayUserMode: a
-  } = (0, Chunk442837.cj)([Chunk237997.default], () => ({
-    avatarSizeMode: Chunk237997.default.getAvatarSizeMode(),
-    displayNameMode: Chunk237997.default.getDisplayNameMode(),
-    displayUserMode: Chunk237997.default.getDisplayUserMode()
-  })), o = (0, Chunk442837.e7)([Chunk610394.Z, Chunk355863.Z], () => {
-    let e = Chunk610394.Z.getWidgetByType(Chunk981631.Odu.VOICE_V3);
-    if (null == module) return null;
-    let t = Chunk355863.Z.getWidget(module.id);
-    return null != exports && (0, Chunk340101.Aw)(exports) ? exports : null
-  }), s = null != (t = null == o || null == (e = o.meta) ? true : module.voiceStatesMaxShown) ? exports : Chunk501787.At;
+  } = (0, p.cj)([es.default], () => ({
+    avatarSizeMode: es.default.getAvatarSizeMode(),
+    displayNameMode: es.default.getDisplayNameMode(),
+    displayUserMode: es.default.getDisplayUserMode()
+  })), o = (0, p.e7)([B.Z, en.Z], () => {
+    let e = B.Z.getWidgetByType(em.Odu.VOICE_V3);
+    if (null == e) return null;
+    let t = en.Z.getWidget(e.id);
+    return null != t && (0, W.Aw)(t) ? t : null
+  }), s = null != (t = null == o || null == (e = o.meta) ? true : e.voiceStatesMaxShown) ? t : eE.At;
 
   function l(e) {
     null != o && (e < eD ? (0, y.zG)(o.id, {
@@ -1022,64 +1022,64 @@ function e0() {
       voiceStatesMaxShown: Math.floor(e)
     }))
   }
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk677677.voiceSettingsContainer,
-    children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
-      label: Chunk388032.intl.string(Chunk388032.t.dnvZSg),
+  return (0, r.jsxs)("div", {
+    className: ey.voiceSettingsContainer,
+    children: [(0, r.jsx)(m.y6, {
+      label: eb.intl.string(eb.t.dnvZSg),
       options: [{
-        label: Chunk388032.intl.string(Chunk388032.t.YcOxtr),
-        value: Chunk981631.ipw.LARGE
+        label: eb.intl.string(eb.t.YcOxtr),
+        value: em.ipw.LARGE
       }, {
-        label: Chunk388032.intl.string(Chunk388032.t.BKIKqx),
-        value: Chunk981631.ipw.SMALL
+        label: eb.intl.string(eb.t.BKIKqx),
+        value: em.ipw.SMALL
       }],
-      className: Chunk677677.select,
+      className: ey.select,
       onChange: e => O.Z.setAvatarSizeMode(e),
-      value: require
-    }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-      label: Chunk388032.intl.string(Chunk388032.t.J0dpcB),
+      value: n
+    }), (0, r.jsx)(m.y6, {
+      label: eb.intl.string(eb.t.J0dpcB),
       options: [{
-        label: Chunk388032.intl.string(Chunk388032.t.nBmDrT),
-        value: Chunk981631.wC$.ALWAYS
+        label: eb.intl.string(eb.t.nBmDrT),
+        value: em.wC$.ALWAYS
       }, {
-        label: Chunk388032.intl.string(Chunk388032.t["2OvIZY"]),
-        value: Chunk981631.wC$.ONLY_WHILE_SPEAKING
+        label: eb.intl.string(eb.t["2OvIZY"]),
+        value: em.wC$.ONLY_WHILE_SPEAKING
       }, {
-        label: Chunk388032.intl.string(Chunk388032.t.ekjlPL),
-        value: Chunk981631.wC$.NEVER
+        label: eb.intl.string(eb.t.ekjlPL),
+        value: em.wC$.NEVER
       }],
-      className: Chunk677677.select,
+      className: ey.select,
       onChange: e => O.Z.setDisplayNameMode(e),
-      value: Chunk473749
-    }), (0, Chunk54381.jsx)(e$, {
+      value: i
+    }), (0, r.jsx)(e$, {
       isLegacySettings: true
-    }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-      label: Chunk388032.intl.string(Chunk388032.t.swsWWC),
+    }), (0, r.jsx)(m.y6, {
+      label: eb.intl.string(eb.t.swsWWC),
       options: [{
-        label: Chunk388032.intl.string(Chunk388032.t.nBmDrT),
-        value: Chunk981631.OYC.ALWAYS
+        label: eb.intl.string(eb.t.nBmDrT),
+        value: em.OYC.ALWAYS
       }, {
-        label: Chunk388032.intl.string(Chunk388032.t["2OvIZY"]),
-        value: Chunk981631.OYC.ONLY_WHILE_SPEAKING
+        label: eb.intl.string(eb.t["2OvIZY"]),
+        value: em.OYC.ONLY_WHILE_SPEAKING
       }],
-      className: Chunk677677.select,
+      className: ey.select,
       onChange: e => O.Z.setDisplayUserMode(e),
-      value: Chunk120356
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk677677.sliderContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.iRW, {
-        label: Chunk388032.intl.string(Chunk388032.t["X/Uyzc"]),
-        initialValue: Chunk348327,
+      value: a
+    }), (0, r.jsx)("div", {
+      className: ey.sliderContainer,
+      children: (0, r.jsx)(g.iRW, {
+        label: eb.intl.string(eb.t["X/Uyzc"]),
+        initialValue: s,
         onValueRender: e => e < eD ? eb.intl.string(eb.t.nrUzFL) : "".concat(Math.floor(e)),
         minValue: eD - 1,
         maxValue: ex,
         onValueChange: l,
         markers: eL,
         barStyles: {
-          background: Chunk481060.TVs.colors.BACKGROUND_MOD_STRONG.css
+          background: g.TVs.colors.BACKGROUND_MOD_STRONG.css
         },
         fillStyles: {
-          background: Chunk481060.TVs.colors.BACKGROUND_BRAND.css
+          background: g.TVs.colors.BACKGROUND_BRAND.css
         },
         onMarkerRender: e => e < eD ? eb.intl.string(eb.t.nrUzFL) : "".concat(Math.floor(e))
       })
@@ -1206,32 +1206,32 @@ function e2() {
   let {
     runningGame: e,
     runningGameApplication: t
-  } = (0, Chunk137920.Z)(), n = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-  return ((0, Chunk493773.ZP)(() => {
-    if (Chunk358085.isPlatformEmbedded) return (0, Chunk320724.Ky)(), Chunk320724.P7
-  }), ej(), null == require) ? null : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)(Chunk273313.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["9cb1Uz"]),
-      children: [(0, Chunk54381.jsx)(e1, {
+  } = (0, R.Z)(), n = (0, p.e7)([ei.default], () => ei.default.getCurrentUser());
+  return ((0, I.ZP)(() => {
+    if (eu.isPlatformEmbedded) return (0, w.Ky)(), w.P7
+  }), ej(), null == n) ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)(e_.Z, {
+      title: eb.intl.string(eb.t["9cb1Uz"]),
+      children: [(0, r.jsx)(e1, {
         showDivider: true
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk677677.overlayEnabledSettingsContainer,
-        children: [(0, Chunk54381.jsx)(eF, {}), (0, Chunk54381.jsx)(eY, {}), (0, Chunk54381.jsx)(eH, {}), (0, Chunk54381.jsx)(eW, {})]
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk677677.settingsDivider
+      }), (0, r.jsxs)("div", {
+        className: ey.overlayEnabledSettingsContainer,
+        children: [(0, r.jsx)(eF, {}), (0, r.jsx)(eY, {}), (0, r.jsx)(eH, {}), (0, r.jsx)(eW, {})]
+      }), (0, r.jsx)("div", {
+        className: ey.settingsDivider
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(e3, {
-        runningGame: module,
-        runningGameApplication: exports
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk677677.settingsDivider
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(e3, {
+        runningGame: e,
+        runningGameApplication: t
+      }), (0, r.jsx)("div", {
+        className: ey.settingsDivider
       })]
-    }), (0, Chunk54381.jsxs)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t.r1TZfh),
-      children: [(0, Chunk54381.jsx)(e0, {}), (0, Chunk54381.jsx)("div", {
-        className: Chunk677677.settingsDivider
+    }), (0, r.jsxs)(g.gNt, {
+      label: eb.intl.string(eb.t.r1TZfh),
+      children: [(0, r.jsx)(e0, {}), (0, r.jsx)("div", {
+        className: ey.settingsDivider
       })]
-    }), (0, Chunk54381.jsx)(eq, {})]
+    }), (0, r.jsx)(eq, {})]
   })
 }

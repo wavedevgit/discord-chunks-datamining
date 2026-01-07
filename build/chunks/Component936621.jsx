@@ -100,11 +100,11 @@ class m extends Chunk473749.Component {
     let e = this.props,
       {
         children: t
-      } = module,
-      n = p(module, ["children"]);
-    return (0, Chunk54381.jsx)("div", f(u({}, require), {
+      } = e,
+      n = p(e, ["children"]);
+    return (0, r.jsx)("div", f(u({}, n), {
       ref: this.ref,
-      children: exports
+      children: t
     }))
   }
   constructor(e) {

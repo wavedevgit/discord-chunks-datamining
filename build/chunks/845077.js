@@ -9,14 +9,14 @@ require("./479531.js");
 var Chunk573261 = require("./573261.js"),
   Chunk981631 = require("./981631.js");
 async function l() {
-  let e = await Chunk573261.Z.get({
-    url: Chunk981631.ANM.SAFETY_FLOWS_TASK,
+  let e = await r.Z.get({
+    url: i.ANM.SAFETY_FLOWS_TASK,
     trackedActionData: {
-      event: Chunk990547.NetworkActionNames.USER_VERIFY
+      event: a.NetworkActionNames.USER_VERIFY
     },
     rejectWithError: true
   });
-  return 204 === module.status ? null : module.body
+  return 204 === e.status ? null : e.body
 }
 async function s(e) {
   return (await r.Z.post({

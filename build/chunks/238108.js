@@ -7,30 +7,30 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js");
 let i = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 5,
-    [t, n] = Chunk473749.useState(false),
-    [i, a] = Chunk473749.useState(0),
-    [o, s] = Chunk473749.useState(false),
-    [l, c] = Chunk473749.useState(0);
-  return Chunk473749.useEffect(() => {
-    i >= module && (s(true), c(Math.floor(i / module)));
+    [t, n] = r.useState(false),
+    [i, a] = r.useState(0),
+    [o, s] = r.useState(false),
+    [l, c] = r.useState(0);
+  return r.useEffect(() => {
+    i >= e && (s(true), c(Math.floor(i / e)));
     let t = setTimeout(() => {
       a(0)
     }, 1e3);
-    return () => clearTimeout(exports)
-  }, [i, module]), Chunk473749.useEffect(() => {
-    if (!exports) {
+    return () => clearTimeout(t)
+  }, [i, e]), r.useEffect(() => {
+    if (!t) {
       let e = setTimeout(() => {
         s(false), c(0)
       }, 1e3);
-      return () => clearTimeout(module)
+      return () => clearTimeout(e)
     }
     a(e => e + 1)
-  }, [exports]), {
+  }, [t]), {
     onHover: () => {
-      require(true)
+      n(true)
     },
     onUnhover: () => {
-      require(false)
+      n(false)
     },
     isEasterEggTriggered: o,
     easterEggLevel: l

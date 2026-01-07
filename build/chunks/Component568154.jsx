@@ -104,12 +104,12 @@ class b extends(s = Chunk473749.PureComponent) {
       width: i,
       height: s
     } = this.state;
-    return null != module ? (0, Chunk54381.jsx)(Chunk877604.Z, {
-      className: h()(Chunk514969.rightSplit, {
-        [Chunk514969.embedded]: exports
+    return null != t ? (0, n.jsx)(o.Z, {
+      className: h()(f.rightSplit, {
+        [f.embedded]: e
       }),
-      src: module,
-      width: require,
+      src: t,
+      width: i,
       height: s,
       onLoad: this.handleLoad
     }) : null
@@ -123,13 +123,13 @@ class b extends(s = Chunk473749.PureComponent) {
       showWaveAnimation: s,
       splashLoaded: r
     } = this.state;
-    return s ? (0, Chunk54381.jsx)(Chunk686694.Z, {
-      embedded: require,
-      waveState: module,
-      updateWaveState: exports,
-      hideFallback: !Chunk473749
-    }) : (0, Chunk54381.jsx)("div", {
-      className: Chunk514969.mobileWave
+    return s ? (0, n.jsx)(u.Z, {
+      embedded: i,
+      waveState: t,
+      updateWaveState: e,
+      hideFallback: !r
+    }) : (0, n.jsx)("div", {
+      className: f.mobileWave
     })
   }
   renderContent() {
@@ -142,15 +142,15 @@ class b extends(s = Chunk473749.PureComponent) {
     } = this.props, {
       showWaveAnimation: l
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [this.renderWave(), (0, Chunk54381.jsxs)("div", {
-        className: h()(Chunk514969.leftSplit, {
-          [Chunk514969.nonEmbeddedLeftSplit]: Chunk120356
+    return (0, n.jsxs)(r.Fragment, {
+      children: [this.renderWave(), (0, n.jsxs)("div", {
+        className: h()(f.leftSplit, {
+          [f.nonEmbeddedLeftSplit]: a
         }),
-        children: [require ? (0, Chunk54381.jsx)(Chunk133853.Z, {
-          show: !Chunk477690 || exports === Chunk898625.hO.ENTERED && exports !== Chunk898625.hO.FILLING,
-          className: h()(Chunk514969.logo, s)
-        }) : null, module]
+        children: [i ? (0, n.jsx)(d.Z, {
+          show: !l || e === p.hO.ENTERED && e !== p.hO.FILLING,
+          className: h()(f.logo, s)
+        }) : null, t]
       })]
     })
   }
@@ -158,8 +158,8 @@ class b extends(s = Chunk473749.PureComponent) {
     let {
       className: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: h()(module, Chunk514969.wrapper),
+    return (0, n.jsxs)("div", {
+      className: h()(t, f.wrapper),
       children: [this.renderSplashArt(), this.renderContent()]
     })
   }

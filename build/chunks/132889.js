@@ -9,8 +9,8 @@ var Chunk725660 = require("./725660.js"),
   Chunk483266 = require("./483266.js");
 let i = function() {
   this.size = 0, this.__data__ = {
-    hash: new Chunk725660.Z,
-    map: new(Chunk483266.Z || Chunk595022.Z),
-    string: new Chunk725660.Z
+    hash: new n.Z,
+    map: new(a.Z || o.Z),
+    string: new n.Z
   }
 }

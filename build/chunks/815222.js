@@ -11,7 +11,7 @@ let a = 1,
   s = 3;
 class l extends Chunk727916.Z {
   innerPattern() {
-    return RegExp("(\\d{2,4}|[" + Object.keys(Chunk151742.Wu).join("") + "]{4}|[" + Object.keys(Chunk151742.Wu).join("") + "]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[" + Object.keys(Chunk151742.Wu).join("") + "]{1,2})(?:\\s*)(?:月)(?:\\s*)(\\d{1,2}|[" + Object.keys(Chunk151742.Wu).join("") + "]{1,2})?(?:\\s*)(?:日|號)?")
+    return RegExp("(\\d{2,4}|[" + Object.keys(i.Wu).join("") + "]{4}|[" + Object.keys(i.Wu).join("") + "]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[" + Object.keys(i.Wu).join("") + "]{1,2})(?:\\s*)(?:月)(?:\\s*)(\\d{1,2}|[" + Object.keys(i.Wu).join("") + "]{1,2})?(?:\\s*)(?:日|號)?")
   }
   innerExtract(e, t) {
     let n = e.createParsingResult(t.index, t[0]),

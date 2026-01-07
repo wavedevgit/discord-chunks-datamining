@@ -37,24 +37,24 @@ function T(e, t, n) {
 }
 
 function C() {
-  let [e, t] = Chunk473749.useState(false);
-  if (null == (0, Chunk442837.e7)([Chunk304761.C], () => {
+  let [e, t] = i.useState(false);
+  if (null == (0, f.e7)([_.C], () => {
       var e;
-      return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
+      return (0, m.fD)() ? null == (e = _.C.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     })) return null;
   let n = async () => {
     try {
-      exports(true), await (0, Chunk386506.bF)(), window.location.reload(true)
+      t(true), await (0, p.bF)(), window.location.reload(true)
     } catch (e) {
-      exports(false)
+      t(false)
     }
   };
-  return (0, Chunk54381.jsx)(Chunk793030.zxk, {
+  return (0, r.jsx)(d.zxk, {
     variant: "primary",
     size: "md",
-    text: Chunk388032.intl.string(Chunk388032.t["/Nz9rY"]),
-    onClick: require,
-    loading: module
+    text: S.intl.string(S.t["/Nz9rY"]),
+    onClick: n,
+    loading: e
   })
 }
 let A = o().throttle(e => {
@@ -108,29 +108,29 @@ class N extends Chunk473749.PureComponent {
       renderCustomMessage: t
     } = this.props;
     if (null !== this.state.error) {
-      let e = (0, Chunk54381.jsxs)("div", {
-          children: [(0, Chunk54381.jsx)("p", {
-            children: Chunk388032.intl.string(Chunk388032.t.tx8CkI)
-          }), (0, Chunk54381.jsx)("p", {
-            children: Chunk388032.intl.string(Chunk388032.t.CvQlAH)
+      let e = (0, r.jsxs)("div", {
+          children: [(0, r.jsx)("p", {
+            children: S.intl.string(S.t.tx8CkI)
+          }), (0, r.jsx)("p", {
+            children: S.intl.string(S.t.CvQlAH)
           })]
         }),
-        n = (0, Chunk54381.jsxs)(Chunk793030.hE2, {
-          children: [(0, Chunk54381.jsx)(Chunk793030.zxk, {
+        n = (0, r.jsxs)(d.hE2, {
+          children: [(0, r.jsx)(d.zxk, {
             variant: "primary",
             size: "md",
-            text: Chunk388032.intl.string(Chunk388032.t["+hivLW"]),
+            text: S.intl.string(S.t["+hivLW"]),
             onClick: this._handleSubmitReport
-          }), (0, Chunk54381.jsx)(C, {})]
+          }), (0, r.jsx)(C, {})]
         });
-      return (0, Chunk54381.jsx)(Chunk406128.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t["3h+n+8"]),
-        note: null != exports ? exports() : module,
-        action: require,
-        className: Chunk750593.errorPage
+      return (0, r.jsx)(O.Z, {
+        title: S.intl.string(S.t["3h+n+8"]),
+        note: null != t ? t() : e,
+        action: n,
+        className: I.errorPage
       })
     }
-    return module
+    return e
   }
   constructor(...e) {
     super(...e), T(this, "state", {

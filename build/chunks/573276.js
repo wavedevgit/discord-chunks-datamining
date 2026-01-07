@@ -9,12 +9,12 @@ var Chunk473749 = require("./473749.js"),
 let i = () => {
   let {
     redirect: n
-  } = (0, Chunk593473.parse)(window.location.search);
-  return Chunk473749.useEffect(() => {
-    if (null != module && "" !== module) {
-      let e = new URL("".concat(window.location.origin).concat(module)),
-        t = new URLSearchParams(exports.search);
-      require.set("handoff_token", "null"), exports.search = require.toString(), window.location.href = exports.toString()
-    } else window.location.href = Chunk981631.Z5c.LOGIN
-  }, [module]), null
+  } = (0, a.parse)(window.location.search);
+  return o.useEffect(() => {
+    if (null != n && "" !== n) {
+      let e = new URL("".concat(window.location.origin).concat(n)),
+        t = new URLSearchParams(e.search);
+      t.set("handoff_token", "null"), e.search = t.toString(), window.location.href = e.toString()
+    } else window.location.href = c.Z5c.LOGIN
+  }, [n]), null
 }

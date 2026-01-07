@@ -70,7 +70,7 @@ class O extends(n = Chunk473749.PureComponent) {
       headerClassName: o,
       sortedHeaderCellClassName: u,
       stickyHeader: _
-    } = this.props, p = module.map(e => {
+    } = this.props, p = e.map(e => {
       let o = null != e.renderHeader ? e.renderHeader(e, t) : e.key,
         _ = r === c.sHY.ASCENDING ? s.u04 : s.CJ0;
       return (0, i.jsx)(s.P3F, {
@@ -86,9 +86,9 @@ class O extends(n = Chunk473749.PureComponent) {
         })
       }, e.key)
     });
-    return (0, Chunk54381.jsx)(E, {
-      className: l()(Chunk120356, Chunk566150.row, {
-        [Chunk566150.stickyHeader]: _
+    return (0, i.jsx)(E, {
+      className: l()(o, d.row, {
+        [d.stickyHeader]: _
       }),
       children: p
     })
@@ -106,18 +106,18 @@ class O extends(n = Chunk473749.PureComponent) {
       rowProps: E,
       rowComponent: O,
       cellComponent: I
-    } = this.props, A = exports;
-    if (require) {
-      let r = null != n ? module.find(e => {
+    } = this.props, A = t;
+    if (r) {
+      let r = null != n ? e.find(e => {
           let {
             key: t
           } = e;
           return t === n
         }) : null,
-        a = [...exports],
-        o = null != require && require.sort,
-        l = null != require && null != n && this.isSortable(require) ? Chunk473749.sort("function" == typeof Chunk120356 ? (e, t) => o(e, t, i) : this.getDefaultSort(n)) : Chunk473749;
-      A = null != require && Chunk54381 === Chunk981631.sHY.DESCENDING ? l.reverse() : l
+        a = [...t],
+        o = null != r && r.sort,
+        l = null != r && null != n && this.isSortable(r) ? a.sort("function" == typeof o ? (e, t) => o(e, t, i) : this.getDefaultSort(n)) : a;
+      A = null != r && i === c.sHY.DESCENDING ? l.reverse() : l
     }
     return A.map((t, r) => {
       let n = e.map(e => (0, a.createElement)(I, p(_({}, u), {
@@ -137,9 +137,9 @@ class O extends(n = Chunk473749.PureComponent) {
       className: e,
       hasHeader: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: module,
-      children: [exports ? this.renderHeader() : null, this.renderBody()]
+    return (0, i.jsxs)("div", {
+      className: e,
+      children: [t ? this.renderHeader() : null, this.renderBody()]
     })
   }
   constructor(...e) {

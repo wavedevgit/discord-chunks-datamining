@@ -8,17 +8,17 @@ require("./473749.js");
 var Chunk388032 = require("./388032.jsx"),
   Chunk296772 = require("./296772.js"),
   Chunk652430 = require("./652430.js");
-let o = () => (0, Chunk54381.jsxs)("div", {
-  className: Chunk296772.container,
-  children: [(0, Chunk54381.jsx)("img", {
-    className: Chunk296772.image,
+let o = () => (0, r.jsxs)("div", {
+  className: l.container,
+  children: [(0, r.jsx)("img", {
+    className: l.image,
     alt: "",
-    src: Chunk652430
-  }), (0, Chunk54381.jsx)("div", {
-    className: Chunk296772.title,
-    children: Chunk388032.intl.string(Chunk388032.t.MwjTvn)
-  }), (0, Chunk54381.jsx)("div", {
-    className: Chunk296772.body,
-    children: Chunk388032.intl.string(Chunk388032.t.AKBgPy)
+    src: a
+  }), (0, r.jsx)("div", {
+    className: l.title,
+    children: i.intl.string(i.t.MwjTvn)
+  }), (0, r.jsx)("div", {
+    className: l.body,
+    children: i.intl.string(i.t.AKBgPy)
   })]
 })

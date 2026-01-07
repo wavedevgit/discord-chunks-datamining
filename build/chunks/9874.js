@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk680287 = require("./680287.js");
 
 function i() {
-  return new Chunk680287.Z
+  return new r.Z
 }

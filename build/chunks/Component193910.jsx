@@ -37,16 +37,16 @@ var Chunk54381 = require("./54381.js"),
 let M = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function R() {
-  let e = (0, Chunk442837.e7)([Chunk375954.Z], () => Chunk375954.Z.hasCurrentUserSentMessageSinceAppStart()),
+  let e = (0, l.e7)([O.Z], () => O.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
-  module && exports.push(Chunk704215.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
-  let [n] = (0, Chunk706140.cv)(exports);
-  return Chunk473749.useEffect(() => () => {
-    require === Chunk704215.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, Chunk266454.Q3)(Chunk704215.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-      dismissAction: Chunk921944.L.TAKE_ACTION
+  e && t.push(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
+  let [n] = (0, g.cv)(t);
+  return r.useEffect(() => () => {
+    n === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, m.Q3)(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+      dismissAction: T.L.TAKE_ACTION
     })
-  }, [require]), (0, Chunk54381.jsx)(Chunk243778.ZP, {
-    contentTypes: exports,
+  }, [n]), (0, i.jsx)(b.ZP, {
+    contentTypes: t,
     children: e => {
       let {
         visibleContent: t

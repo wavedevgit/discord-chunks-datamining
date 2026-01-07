@@ -10,7 +10,7 @@ var Chunk544891 = require("./544891.js"),
 let o = {
   [Chunk981631.Etm.GET_NETWORKING_CONFIG]: {
     scope: Chunk186901.lH,
-    handler: () => Promise.all([Chunk544891.tn.get({
+    handler: () => Promise.all([r.tn.get({
       url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT,
       retries: 3,
       rejectWithError: false
@@ -21,8 +21,8 @@ let o = {
         }
       } = e;
       return t
-    }), Chunk544891.tn.post({
-      url: Chunk981631.ANM.NETWORKING_TOKEN,
+    }), r.tn.post({
+      url: a.ANM.NETWORKING_TOKEN,
       retries: 3,
       oldFormErrors: true,
       rejectWithError: false
@@ -63,8 +63,8 @@ let o = {
   },
   [Chunk981631.Etm.NETWORKING_CREATE_TOKEN]: {
     scope: Chunk186901.lH,
-    handler: () => Chunk544891.tn.post({
-      url: Chunk981631.ANM.NETWORKING_TOKEN,
+    handler: () => r.tn.post({
+      url: a.ANM.NETWORKING_TOKEN,
       retries: 1,
       oldFormErrors: true,
       rejectWithError: false

@@ -60,15 +60,15 @@ class f {
   getSnapshot() {
     let e = {};
     for (let t in this.nodes) {
-      let n = this.nodes[exports];
-      module[exports] = c(s({}, require), {
+      let n = this.nodes[t];
+      e[t] = c(s({}, n), {
         children: true,
-        childrenIds: require.children.map(e => e.id)
+        childrenIds: n.children.map(e => e.id)
       })
     }
     return {
       rootChildrenIds: this.root.children.map(e => e.id),
-      nodes: module
+      nodes: e
     }
   }
   loadSnapshot(e) {
@@ -137,7 +137,7 @@ class f {
     function e(t) {
       return "guild" === t.type ? [t] : null == t.children ? [] : t.children.map(t => e(t)).flat()
     }
-    return module(this.root)
+    return e(this.root)
   }
   _pluckNode(e) {
     let t = null != e.parentId ? this.nodes[e.parentId] : this.root;

@@ -9,8 +9,8 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk418924 = require("./418924.js");
 let a = (0, Chunk509613.qs)(Chunk313789.n.ACTIVITY_PRIVACY_FRIENDS_JOIN_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk418924.default.khuuzv),
-  useSubtitle: () => Chunk388032.intl.string(Chunk418924.default["8EWsJ8"]),
-  useValue: () => Chunk695346.cP.useSetting(),
+  useTitle: () => u.intl.string(r.default.khuuzv),
+  useSubtitle: () => u.intl.string(r.default["8EWsJ8"]),
+  useValue: () => l.cP.useSetting(),
   setValue: t => l.cP.updateSetting(t)
 })

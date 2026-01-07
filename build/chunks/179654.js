@@ -20,52 +20,52 @@ class s {
   getStats() {
     let e = this.cpuHistogram.getReport(),
       t = this.memoryHistogram.getReport(),
-      n = Chunk848479.Z.getCumulativeCPUUsage(),
-      r = null == this.startCPU || null == require ? true : (require.usage - this.startCPU.usage) * 100 / ((require.sampleTime - this.startCPU.sampleTime) / 1e3);
+      n = i.Z.getCumulativeCPUUsage(),
+      r = null == this.startCPU || null == n ? true : (n.usage - this.startCPU.usage) * 100 / ((n.sampleTime - this.startCPU.sampleTime) / 1e3);
     return {
-      client_performance_cpu_percentile25: module.percentiles[25],
-      client_performance_cpu_percentile50: module.percentiles[50],
-      client_performance_cpu_percentile75: module.percentiles[75],
-      client_performance_cpu_percentile90: module.percentiles[90],
-      client_performance_cpu_percentile95: module.percentiles[95],
-      client_performance_cpu_mean: null != Chunk934458 ? Chunk934458 : module.mean,
-      client_performance_memory_percentile25: exports.percentiles[25],
-      client_performance_memory_percentile50: exports.percentiles[50],
-      client_performance_memory_percentile75: exports.percentiles[75],
-      client_performance_memory_percentile90: exports.percentiles[90],
-      client_performance_memory_percentile95: exports.percentiles[95],
-      client_performance_memory_min: exports.min,
-      client_performance_memory_max: exports.max,
-      client_performance_memory_mean: exports.mean
+      client_performance_cpu_percentile25: e.percentiles[25],
+      client_performance_cpu_percentile50: e.percentiles[50],
+      client_performance_cpu_percentile75: e.percentiles[75],
+      client_performance_cpu_percentile90: e.percentiles[90],
+      client_performance_cpu_percentile95: e.percentiles[95],
+      client_performance_cpu_mean: null != r ? r : e.mean,
+      client_performance_memory_percentile25: t.percentiles[25],
+      client_performance_memory_percentile50: t.percentiles[50],
+      client_performance_memory_percentile75: t.percentiles[75],
+      client_performance_memory_percentile90: t.percentiles[90],
+      client_performance_memory_percentile95: t.percentiles[95],
+      client_performance_memory_min: t.min,
+      client_performance_memory_max: t.max,
+      client_performance_memory_mean: t.mean
     }
   }
   takeSample() {
-    let e = Chunk848479.Z.getCumulativeCPUUsage(),
-      t = Chunk848479.Z.getCurrentMemoryUsageKB();
-    if (null != module) {
+    let e = i.Z.getCumulativeCPUUsage(),
+      t = i.Z.getCurrentMemoryUsageKB();
+    if (null != e) {
       let t = true;
       if (null != this.lastCPU) {
-        let n = module.sampleTime - this.lastCPU.sampleTime;
-        if (require >= 1) {
-          let t = (module.usage - this.lastCPU.usage) / (require / 1e3) * 100;
-          this.cpuHistogram.addSample(exports, require)
+        let n = e.sampleTime - this.lastCPU.sampleTime;
+        if (n >= 1) {
+          let t = (e.usage - this.lastCPU.usage) / (n / 1e3) * 100;
+          this.cpuHistogram.addSample(t, n)
         } else t = false
       }
-      exports && (this.lastCPU = module)
+      t && (this.lastCPU = e)
     } else {
-      let e = Chunk848479.Z.getCurrentCPUUsagePercent();
-      null != module && this.cpuHistogram.addSample(module)
+      let e = i.Z.getCurrentCPUUsagePercent();
+      null != e && this.cpuHistogram.addSample(e)
     }
-    null != exports && this.memoryHistogram.addSample(exports)
+    null != t && this.memoryHistogram.addSample(t)
   }
   async getCurrentBattery() {
     try {
       let {
         batteryLevel: e
-      } = await (0, Chunk934458._N)({
+      } = await (0, r._N)({
         fallback: false
       });
-      return module
+      return e
     } catch (e) {
       return null
     }
@@ -75,17 +75,17 @@ class s {
   }
   async getBatteryLevelStats() {
     let e = await this.getCurrentBattery();
-    return null == this.lastBattery || null == module ? {
+    return null == this.lastBattery || null == e ? {
       startBattery: this.lastBattery,
-      currentBattery: module,
+      currentBattery: e,
       batteryUsageRounded: null
     } : {
       startBattery: this.lastBattery,
-      currentBattery: module,
-      batteryUsageRounded: Math.round((module - this.lastBattery) * 1e3) / 1e3
+      currentBattery: e,
+      batteryUsageRounded: Math.round((e - this.lastBattery) * 1e3) / 1e3
     }
   }
   constructor() {
-    o(this, "cpuHistogram", new Chunk909766.b), o(this, "memoryHistogram", new Chunk909766.b), o(this, "startCPU", Chunk848479.Z.getCumulativeCPUUsage()), o(this, "lastCPU", this.startCPU), o(this, "lastBattery", null)
+    o(this, "cpuHistogram", new a.b), o(this, "memoryHistogram", new a.b), o(this, "startCPU", i.Z.getCumulativeCPUUsage()), o(this, "lastCPU", this.startCPU), o(this, "lastBattery", null)
   }
 }

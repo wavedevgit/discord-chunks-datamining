@@ -29,18 +29,18 @@ class c {
     }))
   }
   getVoiceConnectionSuccessStats() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, Chunk379649.zO)(),
-      t = this.getStateDurations(module),
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (0, a.zO)(),
+      t = this.getStateDurations(e),
       n = e => i().sumBy(t, t => t.state === e ? t.durationMs : 0);
     return {
-      state_awaiting_endpoint_ms: require(Chunk981631.hes.AWAITING_ENDPOINT),
-      state_authenticating_ms: require(Chunk981631.hes.AUTHENTICATING),
-      state_connecting_ms: require(Chunk981631.hes.CONNECTING),
-      state_disconnected_ms: require(Chunk981631.hes.DISCONNECTED),
-      state_ice_checking_ms: require(Chunk981631.hes.ICE_CHECKING),
-      state_no_route_ms: require(Chunk981631.hes.NO_ROUTE),
-      state_rtc_connecting_ms: require(Chunk981631.hes.RTC_CONNECTING),
-      state_rtc_disconnected_ms: require(Chunk981631.hes.RTC_DISCONNECTED)
+      state_awaiting_endpoint_ms: n(s.hes.AWAITING_ENDPOINT),
+      state_authenticating_ms: n(s.hes.AUTHENTICATING),
+      state_connecting_ms: n(s.hes.CONNECTING),
+      state_disconnected_ms: n(s.hes.DISCONNECTED),
+      state_ice_checking_ms: n(s.hes.ICE_CHECKING),
+      state_no_route_ms: n(s.hes.NO_ROUTE),
+      state_rtc_connecting_ms: n(s.hes.RTC_CONNECTING),
+      state_rtc_disconnected_ms: n(s.hes.RTC_DISCONNECTED)
     }
   }
   getStateDurations(e) {

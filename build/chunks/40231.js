@@ -1,10 +1,18 @@
 /** Chunk was on web.js **/
 /** chunk id: 40231, original params: e,t,n (module,exports,re quire) **/
 let Chunk13556 = require("./13556.js"),
-  Chunk942177 = require("./942177.js"),
-  Chunk646664 = require("./646664.js"),
+  {
+    MAX_LENGTH: i,
+    MAX_SAFE_INTEGER: a
+  } = require("./942177.js"),
+  {
+    safeRe: o,
+    t: s
+  } = require("./646664.js"),
   Chunk498994 = require("./498994.js"),
-  Chunk434016 = require("./434016.js");
+  {
+    compareIdentifiers: c
+  } = require("./434016.js");
 class u {
   constructor(e, t) {
     if (t = l(t), e instanceof u)

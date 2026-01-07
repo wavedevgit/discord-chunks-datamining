@@ -11,8 +11,8 @@ var Chunk772848 = require("./772848.js"),
   Chunk83002 = require("./83002.js");
 
 function o() {
-  return (0, Chunk54381.jsx)("svg", {
-    className: Chunk83002.headerWave,
+  return (0, r.jsx)("svg", {
+    className: a.headerWave,
     version: "1.1",
     preserveAspectRatio: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -21,7 +21,7 @@ function o() {
     y: "0px",
     viewBox: "0 0 1512 510",
     xmlSpace: "preserve",
-    children: (0, Chunk54381.jsx)("path", {
+    children: (0, r.jsx)("path", {
       style: {
         fill: "currentColor"
       },
@@ -32,8 +32,8 @@ function o() {
 let s = (0, Chunk772848.Z)();
 
 function l() {
-  return (0, Chunk54381.jsxs)("svg", {
-    className: Chunk83002.bodyWave,
+  return (0, r.jsxs)("svg", {
+    className: a.bodyWave,
     version: "1.1",
     preserveAspectRatio: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -42,24 +42,24 @@ function l() {
     y: "0px",
     viewBox: "0 0 1512 1619",
     xmlSpace: "preserve",
-    children: [(0, Chunk54381.jsxs)("linearGradient", {
+    children: [(0, r.jsxs)("linearGradient", {
       id: s,
       gradientUnits: "userSpaceOnUse",
       x1: "-13.3959",
       y1: "82.1225",
       x2: "1221.1846",
       y2: "1689.3361",
-      children: [(0, Chunk54381.jsx)("stop", {
+      children: [(0, r.jsx)("stop", {
         offset: "0",
-        className: Chunk83002.bodyWaveGradientStop1
-      }), (0, Chunk54381.jsx)("stop", {
+        className: a.bodyWaveGradientStop1
+      }), (0, r.jsx)("stop", {
         offset: "0.5",
-        className: Chunk83002.bodyWaveGradientStop2
-      }), (0, Chunk54381.jsx)("stop", {
+        className: a.bodyWaveGradientStop2
+      }), (0, r.jsx)("stop", {
         offset: "1",
-        className: Chunk83002.bodyWaveGradientStop3
+        className: a.bodyWaveGradientStop3
       })]
-    }), (0, Chunk54381.jsx)("path", {
+    }), (0, r.jsx)("path", {
       style: {
         fill: "url(#".concat(s, ")")
       },

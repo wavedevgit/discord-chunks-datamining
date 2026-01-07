@@ -53,58 +53,58 @@ function p(e, t) {
   }), e
 }
 let _ = () => ({
-    [Chunk505905.tN.BRB]: {
-      title: Chunk388032.intl.string(Chunk388032.t.fFTJTI),
-      icon: Chunk136779
+    [a.tN.BRB]: {
+      title: s.intl.string(s.t.fFTJTI),
+      icon: c
     },
-    [Chunk505905.tN.CHILLING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.vybY9c),
-      icon: Chunk970683.s_
+    [a.tN.CHILLING]: {
+      title: s.intl.string(s.t.vybY9c),
+      icon: r.s_
     },
-    [Chunk505905.tN.GAMING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.wvWdTV),
-      icon: Chunk970683.mB
+    [a.tN.GAMING]: {
+      title: s.intl.string(s.t.wvWdTV),
+      icon: r.mB
     },
-    [Chunk505905.tN.WATCHING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.s8xFaG),
-      icon: Chunk829290
+    [a.tN.WATCHING]: {
+      title: s.intl.string(s.t.s8xFaG),
+      icon: l
     },
-    [Chunk505905.tN.FOCUSING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.D5eCTx),
-      icon: Chunk970683.FG
+    [a.tN.FOCUSING]: {
+      title: s.intl.string(s.t.D5eCTx),
+      icon: r.FG
     }
   }),
   m = () => ({
-    [Chunk505905.tN.BRB]: {
-      title: Chunk388032.intl.string(Chunk388032.t.fFTJTI),
+    [a.tN.BRB]: {
+      title: s.intl.string(s.t.fFTJTI),
       emoji: {
         id: true,
         name: "\uD83E\uDDFB"
       }
     },
-    [Chunk505905.tN.CHILLING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.vybY9c),
+    [a.tN.CHILLING]: {
+      title: s.intl.string(s.t.vybY9c),
       emoji: {
         id: true,
         name: "\uD83C\uDF68"
       }
     },
-    [Chunk505905.tN.GAMING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.wvWdTV),
+    [a.tN.GAMING]: {
+      title: s.intl.string(s.t.wvWdTV),
       emoji: {
         id: true,
         name: "⚔️"
       }
     },
-    [Chunk505905.tN.WATCHING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.s8xFaG),
+    [a.tN.WATCHING]: {
+      title: s.intl.string(s.t.s8xFaG),
       emoji: {
         id: true,
         name: "\uD83C\uDF7F"
       }
     },
-    [Chunk505905.tN.FOCUSING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.D5eCTx),
+    [a.tN.FOCUSING]: {
+      title: s.intl.string(s.t.D5eCTx),
       emoji: {
         id: true,
         name: "\uD83E\uDDE0"
@@ -112,8 +112,8 @@ let _ = () => ({
     }
   }),
   h = () => p(d({}, m()), {
-    [Chunk505905.tN.CHILLING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.IeolFa),
+    [a.tN.CHILLING]: {
+      title: s.intl.string(s.t.IeolFa),
       emoji: {
         id: true,
         name: "\uD83D\uDCAD"

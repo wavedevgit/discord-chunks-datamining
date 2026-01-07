@@ -10,11 +10,11 @@ var Chunk353672 = require("./353672.jsx"),
   Chunk134612 = require("./134612.js"),
   Chunk388032 = require("./388032.jsx");
 let o = function() {
-  let t = (0, Chunk134612.Nn)();
-  return (0, Chunk54381.jsx)(Chunk993750.Z, {
-    children: (0, Chunk54381.jsx)(Chunk353672.Z, {
-      tips: module,
-      headerText: Chunk388032.intl.string(Chunk388032.t["0QSL1C"])
+  let t = (0, l.Nn)();
+  return (0, i.jsx)(r.Z, {
+    children: (0, i.jsx)(s.Z, {
+      tips: t,
+      headerText: a.intl.string(a.t["0QSL1C"])
     })
   })
 }

@@ -17,21 +17,21 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function h() {
-  let e = (0, Chunk728285.bp)(),
+  let e = (0, o.bp)(),
     {
       analyticsLocations: t,
       newestAnalyticsLocation: n
-    } = (0, Chunk906732.ZP)(),
-    h = (0, Chunk526665.wy)(require);
-  return module === Chunk981631.IlC.APP || Chunk358085.isPlatformEmbedded || h ? (0, Chunk54381.jsx)(Chunk481060.sNh, {
+    } = (0, l.ZP)(),
+    h = (0, c.wy)(n);
+  return e === p.IlC.APP || d.isPlatformEmbedded || h ? (0, i.jsx)(r.sNh, {
     id: "voice-and-video-settings",
-    label: Chunk388032.intl.string(Chunk388032.t.dsXapM),
+    label: f.intl.string(f.t.dsXapM),
     action: () => {
-      (0, Chunk174609.Z)(null, module === Chunk981631.IlC.POPOUT), (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
-        section: Chunk981631.oAB.VOICE,
-        analyticsLocations: exports
+      (0, a.Z)(null, e === p.IlC.POPOUT), (0, u.openUserSettings)(s.n.VOICE_AND_VIDEO_PANEL, {
+        section: p.oAB.VOICE,
+        analyticsLocations: t
       })
     },
-    icon: Chunk481060.ewm
+    icon: r.ewm
   }) : null
 }

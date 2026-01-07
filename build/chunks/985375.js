@@ -53,7 +53,7 @@ let d = {};
 
 function f() {
   var e, t;
-  return null != (t = null == (e = (0, Chunk516373.D)().favoriteGifs) ? true : module.gifs) ? exports : d
+  return null != (t = null == (e = (0, o.D)().favoriteGifs) ? true : e.gifs) ? t : d
 }
 
 function p(e) {

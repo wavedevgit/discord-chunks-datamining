@@ -52,7 +52,7 @@ function E(e, t) {
 class b {
   clone() {
     let e = new b(this._isCacheBefore);
-    return module._map = _({}, this._map), module._messages = [...this._messages], module._wasAtEdge = this._wasAtEdge, module
+    return e._map = _({}, this._map), e._messages = [...this._messages], e._wasAtEdge = this._wasAtEdge, e
   }
   get wasAtEdge() {
     return this._wasAtEdge
@@ -112,7 +112,7 @@ class b {
   }
   extractAll() {
     let e = this._messages;
-    return this._messages = [], this._map = {}, module
+    return this._messages = [], this._map = {}, e
   }
   extract(e) {
     let t;

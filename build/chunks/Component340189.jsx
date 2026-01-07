@@ -10,29 +10,29 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551952 = require("./551952.js");
 let s = function() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk551952.badExample,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: a.badExample,
+    children: [(0, r.jsx)(i.Text, {
       variant: "eyebrow",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t.MjVwl8)
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk551952.example,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk551952.badExampleIcon,
-        children: (0, Chunk54381.jsx)(Chunk481060.Dio, {
+      children: l.intl.string(l.t.MjVwl8)
+    }), (0, r.jsxs)("div", {
+      className: a.example,
+      children: [(0, r.jsx)("div", {
+        className: a.badExampleIcon,
+        children: (0, r.jsx)(i.Dio, {
           size: "md",
           color: "currentColor"
         })
-      }), (0, Chunk54381.jsxs)("div", {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(i.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: Chunk388032.intl.string(Chunk388032.t.wyARgw)
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          children: l.intl.string(l.t.wyARgw)
+        }), (0, r.jsx)(i.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk388032.t.lhsK1V)
+          children: l.intl.string(l.t.lhsK1V)
         })]
       })]
     })]

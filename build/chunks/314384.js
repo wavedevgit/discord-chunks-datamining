@@ -11,15 +11,15 @@ var Chunk473749 = require("./473749.js"),
     return (0, r.useEffect)(e, [])
   },
   a = function() {
-    var e = (0, Chunk473749.useState)(0)[1],
-      t = (0, Chunk473749.useRef)(false);
+    var e = (0, r.useState)(0)[1],
+      t = (0, r.useRef)(false);
     return i(function() {
         return function() {
-          exports.current = true
+          t.current = true
         }
       }),
       function() {
-        exports.current || module({})
+        t.current || e({})
       }
   };
 

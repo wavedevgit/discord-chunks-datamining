@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js");
 
 function i() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  return Chunk473749.useCallback(e => {
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  return r.useCallback(e => {
     t.forEach(t => {
       null != t && ("function" == typeof t ? t(e) : t.current = e)
     })
-  }, exports)
+  }, t)
 }

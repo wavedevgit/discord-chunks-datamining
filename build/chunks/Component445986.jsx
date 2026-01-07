@@ -98,10 +98,10 @@ class x extends Chunk473749.Component {
     let e = this.props,
       {
         pageSize: t
-      } = module,
-      n = f(module, ["pageSize"]),
-      r = exports === Chunk843445.b.SMALL ? Chunk9807.Z : Chunk33122.Z;
-    return (0, Chunk54381.jsx)(Chunk473749, h(m({}, require), {
+      } = e,
+      n = f(e, ["pageSize"]),
+      r = t === c.b.SMALL ? o.Z : l.Z;
+    return (0, a.jsx)(r, h(m({}, n), {
       onCurrentItemClick: this.handleCurrentItemClick
     }))
   }

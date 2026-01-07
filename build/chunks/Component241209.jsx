@@ -160,12 +160,12 @@ class A extends(i = Chunk473749.PureComponent) {
       state: n,
       parser: r,
       output: i
-    } = this.props, o = i(r("".concat(exports, "\n\n"), b({
+    } = this.props, o = i(r("".concat(t, "\n\n"), b({
       inline: false
-    }, require)));
-    return (0, Chunk54381.jsx)("div", {
-      className: l()(Chunk510609.markdown, module),
-      children: Chunk473749
+    }, n)));
+    return (0, a.jsx)("div", {
+      className: l()(h.markdown, e),
+      children: o
     })
   }
 }

@@ -20,7 +20,7 @@ let g = {},
   });
 class p extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk914010.Z)
+    this.waitFor(d.Z)
   }
   isUploadingEmoji() {
     return m > 0

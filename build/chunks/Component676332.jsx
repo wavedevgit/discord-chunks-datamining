@@ -10,11 +10,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.ON)(Chunk313789.n.VOICE_MICROPHONE_INPUT_SELECT, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.hHMYbb), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
+  useSearchTerms: () => [a.intl.string(a.t.hHMYbb), a.intl.string(a.t.nuFtHH)],
   Component: function() {
-    return (0, Chunk54381.jsx)(Chunk670863.j, {
-      label: Chunk388032.intl.string(Chunk388032.t.UTM8VP),
-      deviceType: Chunk65154.h7.AUDIO_INPUT,
+    return (0, i.jsx)(l.j, {
+      label: a.intl.string(a.t.UTM8VP),
+      deviceType: r.h7.AUDIO_INPUT,
       location: "UserSettingsVoiceVideo",
       hideDeviceTypeIcon: true
     })

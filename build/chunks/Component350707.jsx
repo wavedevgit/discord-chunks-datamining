@@ -57,12 +57,12 @@ class x extends Chunk473749.PureComponent {
     let {
       uniqueId: e
     } = this.props;
-    Chunk626135.default.track(Chunk981631.rMx.SHOW_TUTORIAL, {
-      tutorial: module
+    p.default.track(f.rMx.SHOW_TUTORIAL, {
+      tutorial: e
     })
   }
   componentWillUnmount() {
-    Chunk626135.default.track(Chunk981631.rMx.CLOSE_TUTORIAL, {
+    p.default.track(f.rMx.CLOSE_TUTORIAL, {
       tutorial: this.props.uniqueId,
       acknowledged: this.state.confirmed
     })
@@ -76,38 +76,38 @@ class x extends Chunk473749.PureComponent {
       body: r,
       className: l,
       onClickSkipAll: o
-    } = this.props, s = "left" === exports || require, p = "center" === exports || !Chunk120356;
-    return (0, Chunk54381.jsxs)(Chunk481060.VqE, {
-      className: c()(Chunk308779.popoutRoot, l),
-      children: [null != module && (0, Chunk54381.jsx)(Chunk600164.Z, {
-        className: Chunk308779.mediaContainer,
-        justify: Chunk120356 ? Chunk600164.Z.Justify.START : Chunk600164.Z.Justify.CENTER,
-        children: module()
-      }), (0, Chunk54381.jsx)(Chunk481060.H, {
+    } = this.props, s = "left" === t || n, p = "center" === t || !s;
+    return (0, a.jsxs)(u.VqE, {
+      className: c()(m.popoutRoot, l),
+      children: [null != e && (0, a.jsx)(d.Z, {
+        className: m.mediaContainer,
+        justify: s ? d.Z.Justify.START : d.Z.Justify.CENTER,
+        children: e()
+      }), (0, a.jsx)(u.H, {
         className: c()({
-          [Chunk308779.titleCenter]: Chunk626135,
-          [Chunk308779.titleLeft]: Chunk120356
+          [m.titleCenter]: p,
+          [m.titleLeft]: s
         }),
         children: i
-      }), (0, Chunk54381.jsx)("string" == typeof r ? "p" : "div", {
+      }), (0, a.jsx)("string" == typeof r ? "p" : "div", {
         className: c()({
-          [Chunk308779.bodyCenter]: Chunk626135,
-          [Chunk308779.bodyLeft]: Chunk120356
+          [m.bodyCenter]: p,
+          [m.bodyLeft]: s
         }),
         children: r
-      }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+      }), (0, a.jsxs)(u.ButtonGroup, {
         fullWidth: true,
         direction: "vertical",
-        children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+        children: [(0, a.jsx)(u.Button, {
           fullWidth: true,
           variant: "primary",
           onClick: this.handleDismiss,
-          text: Chunk388032.intl.string(Chunk388032.t["+IrDzN"])
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          text: h.intl.string(h.t["+IrDzN"])
+        }), (0, a.jsx)(u.Button, {
           fullWidth: true,
           variant: "secondary",
-          onClick: Chunk473749,
-          text: Chunk388032.intl.string(Chunk388032.t["33wtxt"])
+          onClick: o,
+          text: h.intl.string(h.t["33wtxt"])
         })]
       })]
     })
@@ -140,7 +140,7 @@ class O extends(i = Chunk473749.PureComponent) {
         spacing: d,
         forceTheme: p,
         innerRef: f
-      } = module,
+      } = e,
       h = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
@@ -155,13 +155,13 @@ class O extends(i = Chunk473749.PureComponent) {
           for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
         return r
-      }(module, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
-      m = "top" === Chunk388032.position || "bottom" === Chunk388032.position ? "center" : "top";
-    return (0, Chunk54381.jsx)(Chunk481060.yRy, C(b({
-      targetElementRef: Chunk981631
-    }, Chunk388032), {
-      align: Chunk308779,
-      spacing: null != Chunk600164 ? Chunk600164 : 0,
+      }(e, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
+      m = "top" === h.position || "bottom" === h.position ? "center" : "top";
+    return (0, a.jsx)(u.yRy, C(b({
+      targetElementRef: f
+    }, h), {
+      align: m,
+      spacing: null != d ? d : 0,
       renderPopout: this.renderPopoutContent,
       nudgeAlignIntoViewport: true,
       children: c

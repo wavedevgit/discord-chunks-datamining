@@ -61,7 +61,7 @@ let H = 512,
 class K extends Chunk473749.PureComponent {
   componentDidMount() {
     var e, t;
-    Chunk585483.S.subscribe(Chunk981631.CkL.PERFORM_SEARCH, this.search), Chunk585483.S.subscribe(Chunk981631.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), Chunk585483.S.subscribe(Chunk981631.CkL.FOCUS_SEARCH, this.handleFocusSearch), null == (t = this._editorRef) || null == (e = exports.editor) || module.setAttribute("aria-haspopup", "listbox")
+    O.S.subscribe(Z.CkL.PERFORM_SEARCH, this.search), O.S.subscribe(Z.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), O.S.subscribe(Z.CkL.FOCUS_SEARCH, this.handleFocusSearch), null == (t = this._editorRef) || null == (e = t.editor) || e.setAttribute("aria-haspopup", "listbox")
   }
   componentDidUpdate(e) {
     let {
@@ -81,7 +81,7 @@ class K extends Chunk473749.PureComponent {
     }
   }
   componentWillUnmount() {
-    Chunk585483.S.unsubscribe(Chunk981631.CkL.PERFORM_SEARCH, this.search), Chunk585483.S.unsubscribe(Chunk981631.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), Chunk585483.S.unsubscribe(Chunk981631.CkL.FOCUS_SEARCH, this.handleFocusSearch)
+    O.S.unsubscribe(Z.CkL.PERFORM_SEARCH, this.search), O.S.unsubscribe(Z.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), O.S.unsubscribe(Z.CkL.FOCUS_SEARCH, this.handleFocusSearch)
   }
   tokenize(e) {
     let t = (0, C.kG)(v.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
@@ -91,7 +91,7 @@ class K extends Chunk473749.PureComponent {
     let {
       searchContext: e
     } = this.props;
-    Chunk611004.Z.cleanUpSearchState(module)
+    D.Z.cleanUpSearchState(e)
   }
   handlePastedFiles() {
     return "handled"
@@ -138,13 +138,13 @@ class K extends Chunk473749.PureComponent {
       className: i
     } = this.props, {
       focused: a
-    } = this.state, s = Chunk72006.Sq(exports).length > 0;
-    return (0, Chunk54381.jsx)(Chunk481060.yRy, {
+    } = this.state, s = v.Sq(t).length > 0;
+    return (0, r.jsx)(d.yRy, {
       targetElementRef: this._containerRef,
       renderPopout: this.renderPopout,
       position: "bottom",
-      animation: Chunk481060.yRy.Animation.NONE,
-      shouldShow: Chunk120356,
+      animation: d.yRy.Animation.NONE,
+      shouldShow: a,
       autoInvert: false,
       children: (t, l) => {
         var c;

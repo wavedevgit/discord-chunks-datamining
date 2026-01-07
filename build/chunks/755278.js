@@ -36,28 +36,28 @@ class g extends Chunk928801.Z {
   computeVoiceFlags() {
     var e, t, n;
     let i = 0,
-      f = Chunk695346.tU.getSetting();
-    i = (0, Chunk95015.mB)(Chunk928801, Chunk981631.BVn.ALLOW_VOICE_RECORDING, Chunk592125);
-    let _ = (0, Chunk779618.Z)(Chunk131951.Z),
-      h = (0, Chunk341569.LI)() && ((null == (e = Chunk199902.Z.getCurrentUserActiveStream()) ? true : module.state) === Chunk981631.jm8.ACTIVE || (null == (t = Chunk199902.Z.getCurrentUserActiveStream()) ? true : exports.state) === Chunk981631.jm8.PAUSED),
-      g = (0, Chunk341569.CY)() && (null == (n = Chunk594190.ZP.getVisibleGame()) ? true : require.windowHandle) != null;
-    i = (0, Chunk95015.mB)(Chunk928801, Chunk981631.BVn.CLIPS_ENABLED, h || g);
+      f = u.tU.getSetting();
+    i = (0, r.mB)(i, m.BVn.ALLOW_VOICE_RECORDING, f);
+    let _ = (0, o.Z)(p.Z),
+      h = (0, s.LI)() && ((null == (e = d.Z.getCurrentUserActiveStream()) ? true : e.state) === m.jm8.ACTIVE || (null == (t = d.Z.getCurrentUserActiveStream()) ? true : t.state) === m.jm8.PAUSED),
+      g = (0, s.CY)() && (null == (n = l.ZP.getVisibleGame()) ? true : n.windowHandle) != null;
+    i = (0, r.mB)(i, m.BVn.CLIPS_ENABLED, h || g);
     let {
       enableViewerClipping: E
-    } = Chunk441167.Z.getCurrentConfig({
+    } = c.Z.getCurrentConfig({
       location: "computeVoiceFlags"
     }, {
       autoTrackExposure: false
-    }), b = E && Chunk936349 && Chunk435064.Z.getSettings().viewerClipsEnabled;
-    return (0, Chunk95015.mB)(Chunk928801, Chunk981631.BVn.ALLOW_ANY_VIEWER_CLIPS, b)
+    }), b = E && _ && a.Z.getSettings().viewerClipsEnabled;
+    return (0, r.mB)(i, m.BVn.ALLOW_ANY_VIEWER_CLIPS, b)
   }
   getInitialState() {
     return {
       guildId: null,
       channelId: null,
-      selfMute: Chunk131951.Z.isSelfMute(),
-      selfDeaf: Chunk131951.Z.isSelfDeaf(),
-      selfVideo: Chunk131951.Z.isVideoEnabled(),
+      selfMute: p.Z.isSelfMute(),
+      selfDeaf: p.Z.isSelfDeaf(),
+      selfVideo: p.Z.isVideoEnabled(),
       preferredRegion: null,
       preferredRegions: null,
       videoStreamParameters: null,

@@ -9,12 +9,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk284626 = require("./284626.js");
 
 function o() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk284626.container,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: l()(Chunk284626.placeholderItem, Chunk284626.chatTextAreaPlaceholder)
-    }), (0, Chunk54381.jsx)("div", {
-      className: l()(Chunk284626.placeholderItem, Chunk284626.appLauncherPlaceholder)
+  return (0, i.jsxs)("div", {
+    className: a.container,
+    children: [(0, i.jsx)("div", {
+      className: l()(a.placeholderItem, a.chatTextAreaPlaceholder)
+    }), (0, i.jsx)("div", {
+      className: l()(a.placeholderItem, a.appLauncherPlaceholder)
     })]
   })
 }

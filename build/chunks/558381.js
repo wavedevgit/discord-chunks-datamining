@@ -146,13 +146,13 @@ function y(e) {
 }
 
 function O() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "APPLICATION_STORE_MATURE_AGREE"
   })
 }
 
 function v() {
-  (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
+  (0, o.uL)(u.Z5c.APPLICATION_STORE)
 }
 
 function S(e) {

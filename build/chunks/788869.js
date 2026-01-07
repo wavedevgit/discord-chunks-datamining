@@ -10,8 +10,8 @@ var Chunk509613 = require("./509613.js"),
   Chunk797525 = require("./797525.js"),
   Chunk936326 = require("./936326.js");
 let o = (0, Chunk509613.k4)(Chunk313789.n.LINUX_CATEGORY, {
-  buildLayout: () => [Chunk910497.F, Chunk130788.s, Chunk936326.o],
+  buildLayout: () => [s.F, u.s, a.o],
   initialize: () => {
-    (0, Chunk797525.wA)()
+    (0, r.wA)()
   }
 })

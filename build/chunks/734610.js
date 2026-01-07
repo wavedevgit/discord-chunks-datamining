@@ -24,9 +24,9 @@ class o extends Chunk473749.Component {
     let {
       error: e
     } = this.state;
-    if (null !== module) {
-      for (var t, n, r = arguments.length, i = Array(Chunk473749), o = 0; o < Chunk473749; o++) i[o] = arguments[o];
-      null == (t = (n = this.props).onReset) || exports.call(require, {
+    if (null !== e) {
+      for (var t, n, r = arguments.length, i = Array(r), o = 0; o < r; o++) i[o] = arguments[o];
+      null == (t = (n = this.props).onReset) || t.call(n, {
         args: i,
         reason: "imperative-api"
       }), this.setState(a)
@@ -60,18 +60,18 @@ class o extends Chunk473749.Component {
     } = this.props, {
       didCatch: o,
       error: s
-    } = this.state, l = module;
+    } = this.state, l = e;
     if (o) {
       let e = {
         error: s,
         resetErrorBoundary: this.resetErrorBoundary
       };
-      if ("function" == typeof exports) l = exports(module);
-      else if (require) l = (0, Chunk473749.createElement)(require, module);
+      if ("function" == typeof t) l = t(e);
+      else if (n) l = (0, r.createElement)(n, e);
       else if (true !== a) l = a;
       else throw s
     }
-    return (0, Chunk473749.createElement)(i.Provider, {
+    return (0, r.createElement)(i.Provider, {
       value: {
         didCatch: o,
         error: s,
@@ -84,5 +84,5 @@ class o extends Chunk473749.Component {
 function s() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
-  return module.length !== exports.length || module.some((e, n) => !Object.is(e, t[n]))
+  return e.length !== t.length || e.some((e, n) => !Object.is(e, t[n]))
 }

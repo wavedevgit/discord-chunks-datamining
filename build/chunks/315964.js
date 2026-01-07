@@ -8,7 +8,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk190378 = require("./190378.js");
 let a = {
   init() {
-    Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", e => {
+    r.Z.subscribe("VOICE_CHANNEL_SELECT", e => {
       let {
         channelId: t
       } = e;

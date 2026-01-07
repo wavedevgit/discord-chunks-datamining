@@ -65,40 +65,40 @@ let d = [{
     value: 40
   }],
   f = () => {
-    let [e, t] = Chunk473749.useState(15), [n, f] = Chunk473749.useState(8), [p, _] = Chunk473749.useState("xl"), [m, h] = Chunk473749.useState(true), g = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(s.P3F, {
+    let [e, t] = i.useState(15), [n, f] = i.useState(8), [p, _] = i.useState("xl"), [m, h] = i.useState(true), g = i.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(s.P3F, {
       className: u.child,
       onClick: () => console.log(t),
       children: t
-    }, t)), [module]);
-    return (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk624968.Z, {
-        gap: require,
+    }, t)), [e]);
+    return (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(l.Z, {
+        gap: n,
         edgeFade: p,
         hideActionsWhenDisabled: m,
         children: g
-      }), (0, Chunk54381.jsx)(Chunk261538.dv, {}), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
-        children: [(0, Chunk54381.jsx)(Chunk481060.Checkbox, {
+      }), (0, r.jsx)(c.dv, {}), (0, r.jsxs)(c.BZ, {
+        children: [(0, r.jsx)(s.Checkbox, {
           checked: m,
           onChange: () => h(!m),
           label: "Hide Actions When Disabled"
-        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
+        }), (0, r.jsx)(s.oil, {
           type: "number",
           min: 0,
-          value: module.toString(),
+          value: e.toString(),
           onChange: e => {
             t((0, a.clamp)(+e, 0, 100))
           },
           label: "Children Count"
         })]
-      }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
-        children: (0, Chunk54381.jsx)(Chunk199849.y6, {
-          value: require,
+      }), (0, r.jsx)(c.BZ, {
+        children: (0, r.jsx)(o.y6, {
+          value: n,
           options: d,
           onChange: e => f(e),
           label: "Children Gap"
         })
-      }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
-        children: (0, Chunk54381.jsx)(Chunk199849.y6, {
+      }), (0, r.jsx)(c.BZ, {
+        children: (0, r.jsx)(o.y6, {
           value: p,
           options: d,
           onChange: e => _(e),

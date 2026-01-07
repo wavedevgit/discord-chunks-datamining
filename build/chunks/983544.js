@@ -23,10 +23,10 @@ class c {
     return o.dg(null == t ? true : t.guild_id)
   }
   getMaxAttachmentsCount() {
-    return Chunk981631.dN1
+    return l.dN1
   }
   getMaxTotalAttachmentSize() {
-    return Chunk861990.zz
+    return s.zz
   }
   get shouldReactNativeCompressUploads() {
     returntrue

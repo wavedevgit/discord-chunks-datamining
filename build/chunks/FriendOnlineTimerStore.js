@@ -30,7 +30,7 @@ function u(e) {
 class d extends(r = Chunk442837.ZP.PersistedStore) {
   initialize() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : l;
-    c = null != module ? module : l
+    c = null != e ? e : l
   }
   isCooldownElapsed() {
     return null == c.lastReportedAtMs || Date.now() - c.lastReportedAtMs >= s

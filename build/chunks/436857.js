@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk408431 = require("./408431.js");
 
 function i() {
-  return !/^((?!chrome|android).)*safari/i.test((0, Chunk408431.Z)())
+  return !/^((?!chrome|android).)*safari/i.test((0, r.Z)())
 }

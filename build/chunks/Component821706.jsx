@@ -129,9 +129,9 @@ let v = {
     [Chunk981631.OGo.PENDING_INCOMING]: Chunk481060.iHX
   },
   S = {
-    [Chunk981631.OGo.FRIEND]: () => Chunk388032.intl.string(Chunk388032.t.G7jMpU),
-    [Chunk981631.OGo.PENDING_OUTGOING]: () => Chunk388032.intl.string(Chunk388032.t["s/+byI"]),
-    [Chunk981631.OGo.PENDING_INCOMING]: () => Chunk388032.intl.string(Chunk388032.t["6QQCQ+"])
+    [Chunk981631.OGo.FRIEND]: () => f.intl.string(f.t.G7jMpU),
+    [Chunk981631.OGo.PENDING_OUTGOING]: () => f.intl.string(f.t["s/+byI"]),
+    [Chunk981631.OGo.PENDING_INCOMING]: () => f.intl.string(f.t["6QQCQ+"])
   };
 
 function I(e) {

@@ -51,14 +51,14 @@ function u(e, t) {
 function d() {
   var e, t, n, r, i, s;
   let l = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  Chunk358085.isPlatformEmbedded && Chunk998502.ZP.updateCrashReporter({
-    user_id: null != (e = l.id) ? module : "",
-    username: null != (t = l.username) ? exports : "",
-    email: null != (n = l.email) ? require : "",
+  a.isPlatformEmbedded && o.ZP.updateCrashReporter({
+    user_id: null != (e = l.id) ? e : "",
+    username: null != (t = l.username) ? t : "",
+    email: null != (n = l.email) ? n : "",
     sentry: {
       user: {
-        id: null != (r = l.id) ? Chunk464847 : "",
-        username: null != (i = l.username) ? Chunk289182 : "",
+        id: null != (r = l.id) ? r : "",
+        username: null != (i = l.username) ? i : "",
         email: null != (s = l.email) ? s : ""
       }
     }
@@ -77,7 +77,7 @@ let f = {
   },
   clearUser() {
     var e;
-    null == (e = window.DiscordSentry) || module.getCurrentScope().setUser(null), d()
+    null == (e = window.DiscordSentry) || e.getCurrentScope().setUser(null), d()
   },
   setTags(e) {
     var t;

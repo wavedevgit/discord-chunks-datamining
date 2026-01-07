@@ -78,23 +78,23 @@ function m(e) {
 function h() {
   let {
     lastItem: e
-  } = Chunk258971.aQ.getState();
-  if (null != module) switch (module.type) {
-    case Chunk258971.m_.APPLICATION:
+  } = r.aQ.getState();
+  if (null != e) switch (e.type) {
+    case r.m_.APPLICATION:
       return {
-        tab: Chunk49898.GlobalDiscoveryTab.APPS, applicationId: module.applicationId, section: module.section
+        tab: d.GlobalDiscoveryTab.APPS, applicationId: e.applicationId, section: e.section
       };
-    case Chunk258971.m_.CATEGORY:
+    case r.m_.CATEGORY:
       return {
-        tab: Chunk49898.GlobalDiscoveryTab.APPS, categoryId: Number(module.categoryId)
+        tab: d.GlobalDiscoveryTab.APPS, categoryId: Number(e.categoryId)
       };
-    case Chunk258971.m_.SEARCH:
+    case r.m_.SEARCH:
       var t;
       return {
-        tab: Chunk49898.GlobalDiscoveryTab.APPS, query: null != (t = module.query) ? exports : "", page: module.page, categoryId: null != module.categoryId ? Number(module.categoryId) : true
+        tab: d.GlobalDiscoveryTab.APPS, query: null != (t = e.query) ? t : "", page: e.page, categoryId: null != e.categoryId ? Number(e.categoryId) : true
       }
   }
   return {
-    tab: Chunk49898.GlobalDiscoveryTab.APPS
+    tab: d.GlobalDiscoveryTab.APPS
   }
 }

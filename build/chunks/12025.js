@@ -10,6 +10,6 @@ var Chunk211242 = require("./211242.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.ON)(Chunk313789.n.GIFT_CODE_REDEMPTION_SETTING, {
   Component: Chunk387747.od,
-  usePredicate: () => !(0, Chunk211242.Q)(),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["jcSP+g"]), Chunk388032.intl.string(Chunk388032.t["il+VCo"])]
+  usePredicate: () => !(0, i.Q)(),
+  useSearchTerms: () => [r.intl.string(r.t["jcSP+g"]), r.intl.string(r.t["il+VCo"])]
 })

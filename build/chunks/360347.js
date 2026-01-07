@@ -32,11 +32,11 @@ function s(e) {
 
 function l() {
   return s({
-    num_friends: Chunk699516.Z.getFriendCount(),
-    num_outgoing_requests: Chunk699516.Z.getOutgoingCount(),
-    num_incoming_requests: Chunk699516.Z.getPendingCount(),
-    num_game_friends: Chunk91896.Z.getGameFriendCount(),
-    num_game_outgoing_requests: Chunk91896.Z.getPendingOutgoingCount(),
-    num_game_incoming_requests: Chunk91896.Z.getPendingIncomingCount()
-  }, (0, Chunk453542.X)())
+    num_friends: i.Z.getFriendCount(),
+    num_outgoing_requests: i.Z.getOutgoingCount(),
+    num_incoming_requests: i.Z.getPendingCount(),
+    num_game_friends: r.Z.getGameFriendCount(),
+    num_game_outgoing_requests: r.Z.getPendingOutgoingCount(),
+    num_game_incoming_requests: r.Z.getPendingIncomingCount()
+  }, (0, a.X)())
 }

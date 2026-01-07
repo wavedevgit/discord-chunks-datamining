@@ -23,17 +23,17 @@ class a {
     var e, t, n, r;
     let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [25, 50, 75, 90, 95],
       a = {};
-    for (let t of i) a[exports] = null != (e = this.digest.percentile(exports / 100)) ? module : 0;
+    for (let t of i) a[t] = null != (e = this.digest.percentile(t / 100)) ? e : 0;
     return {
-      min: null != (t = this.digest.percentile(0)) ? exports : 0,
-      max: null != (n = this.digest.percentile(1)) ? require : 0,
-      count: null != (r = this.digest.size()) ? Chunk508385 : 0,
+      min: null != (t = this.digest.percentile(0)) ? t : 0,
+      max: null != (n = this.digest.percentile(1)) ? n : 0,
+      count: null != (r = this.digest.size()) ? r : 0,
       percentiles: a,
       mean: this.totalWeight > 0 ? this.total / this.totalWeight : 0,
       samples: this.samples
     }
   }
   constructor() {
-    i(this, "digest", new Chunk508385.Digest), i(this, "total", 0), i(this, "samples", 0), i(this, "totalWeight", 0)
+    i(this, "digest", new r.Digest), i(this, "total", 0), i(this, "samples", 0), i(this, "totalWeight", 0)
   }
 }

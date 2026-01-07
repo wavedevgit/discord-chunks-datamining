@@ -18,26 +18,26 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk472057 = require("./472057.js");
 let g = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk472057.default.bU5ANm),
-    useBadge: () => (0, Chunk54381.jsx)(Chunk688465.Z, {}),
-    buildLayout: () => [Chunk888645.m]
+    useTitle: () => d.intl.string(_.default.bU5ANm),
+    useBadge: () => (0, i.jsx)(s.Z, {}),
+    buildLayout: () => [E.m]
   }),
   I = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk472057.default.bU5ANm),
+    useTitle: () => d.intl.string(_.default.bU5ANm),
     icon: Chunk657707.enf,
     usePredicate: () => {
-      let t = (0, Chunk612659.m)(),
+      let t = (0, u.m)(),
         {
           isSupportedPrivateBrowsingPerkPlatform: e,
           isWeb: n,
           perkAvailableToUser: i
-        } = (0, Chunk773275.xf)(),
+        } = (0, a.xf)(),
         {
           enabled: l
-        } = Chunk299886.H.useConfig({
+        } = r.H.useConfig({
           location: "private_browsing_perk_settings_page"
         });
-      return Chunk657707 && (exports || require) && (!module || Chunk54381)
+      return l && (e || n) && (!t || i)
     },
     buildLayout: () => [g],
     trailing: {

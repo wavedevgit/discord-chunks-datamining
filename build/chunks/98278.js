@@ -11,9 +11,11 @@ var Chunk37234 = require("./37234.js"),
   Chunk981631 = require("./981631.js");
 let s = () => {
     {
-      letChunk518596 = require("./518596.jsx");
-      module(Chunk313789.n.NITRO_PANEL, {
-        section: Chunk981631.oAB.PREMIUM
+      let {
+        openUserSettings: e
+      } = n(518596);
+      e(a.n.NITRO_PANEL, {
+        section: o.oAB.PREMIUM
       })
     }
   },

@@ -8,12 +8,12 @@ var Chunk473749 = require("./473749.js");
 
 function i() {
   let e = window,
-    [t, n] = Chunk473749.useState(module.document.hasFocus());
-  return Chunk473749.useEffect(() => {
-    let t = () => require(true),
-      r = () => require(false);
-    return module.addEventListener("focus", exports), module.addEventListener("blur", Chunk473749), () => {
-      module.removeEventListener("focus", exports), module.removeEventListener("blur", Chunk473749)
+    [t, n] = r.useState(e.document.hasFocus());
+  return r.useEffect(() => {
+    let t = () => n(true),
+      r = () => n(false);
+    return e.addEventListener("focus", t), e.addEventListener("blur", r), () => {
+      e.removeEventListener("focus", t), e.removeEventListener("blur", r)
     }
-  }, [module]), exports
+  }, [e]), t
 }

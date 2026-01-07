@@ -65,13 +65,13 @@ function T(e, t) {
 let C = e => e.stopPropagation();
 class A extends Chunk473749.PureComponent {
   componentDidMount() {
-    Chunk68405.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, Chunk981631.wI2.SEARCH)
+    u.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, g.wI2.SEARCH)
   }
   componentDidUpdate(e) {
     "" === e.query && "" !== this.props.query && null == this.state.resultType && this.search(this.props.query, g.wI2.SEARCH)
   }
   componentWillUnmount() {
-    Chunk570140.Z.wait(() => Chunk68405.v2()), document.removeEventListener("keydown", this.backToFrontPage)
+    c.Z.wait(() => u.v2()), document.removeEventListener("keydown", this.backToFrontPage)
   }
   search(e, t, n) {
     u.yC(e, t, n), "" === e ? this.setState({
@@ -87,28 +87,28 @@ class A extends Chunk473749.PureComponent {
     } = this.props, {
       resultType: n
     } = this.state;
-    switch (require) {
-      case Chunk981631.wI2.FAVORITES:
-        return (0, Chunk54381.jsx)(Chunk481060.Heading, {
+    switch (n) {
+      case g.wI2.FAVORITES:
+        return (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
-          color: exports,
-          className: Chunk277170.searchHeader,
-          children: Chunk388032.intl.string(Chunk388032.t.y3LQCG)
+          color: t,
+          className: O.searchHeader,
+          children: y.intl.string(y.t.y3LQCG)
         });
-      case Chunk981631.wI2.TRENDING_GIFS:
-        return (0, Chunk54381.jsx)(Chunk481060.Heading, {
+      case g.wI2.TRENDING_GIFS:
+        return (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
-          color: exports,
-          className: Chunk277170.searchHeader,
-          children: Chunk388032.intl.string(Chunk388032.t.H6zNFz)
+          color: t,
+          className: O.searchHeader,
+          children: y.intl.string(y.t.H6zNFz)
         });
       default:
-        return (0, Chunk54381.jsx)(Chunk481060.E1j, {
-          query: module,
+        return (0, r.jsx)(l.E1j, {
+          query: e,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,
-          placeholder: Chunk388032.intl.string(Chunk388032.t.TnYqke),
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.TnYqke),
+          placeholder: y.intl.string(y.t.TnYqke),
+          "aria-label": y.intl.string(y.t.TnYqke),
           ref: this.props.searchBarRef,
           autoFocus: true
         })
@@ -118,17 +118,17 @@ class A extends Chunk473749.PureComponent {
     let {
       resultType: e
     } = this.state, t = null;
-    return null != module && (t = (0, Chunk54381.jsx)(Chunk481060.P3F, {
+    return null != e && (t = (0, r.jsx)(l.P3F, {
       onClick: this.handleClearQuery,
-      className: Chunk277170.backButton,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kX"]),
-      children: (0, Chunk54381.jsx)(Chunk481060.whL, {
+      className: O.backButton,
+      "aria-label": y.intl.string(y.t["13/7kX"]),
+      children: (0, r.jsx)(l.whL, {
         size: "md",
         color: "currentColor"
       })
-    })), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      align: Chunk600164.Z.Align.CENTER,
-      children: [exports, this.renderHeaderContent()]
+    })), (0, r.jsxs)(d.Z, {
+      align: d.Z.Align.CENTER,
+      children: [t, this.renderHeaderContent()]
     })
   }
   renderContent() {
@@ -146,21 +146,21 @@ class A extends Chunk473749.PureComponent {
     } = this.props, {
       resultType: d
     } = this.state;
-    return null == Chunk600164 ? (0, Chunk54381.jsx)(Chunk653235.Z, {
-      className: module,
-      hideFavoritesTile: Chunk68405,
+    return null == d ? (0, r.jsx)(m.Z, {
+      className: e,
+      hideFavoritesTile: u,
       onSelectItem: this.handleSelectItem
-    }) : (0, Chunk54381.jsx)(Chunk215016.ZP, {
-      className: module,
-      data: Chunk600164 === Chunk981631.wI2.FAVORITES ? Chunk120356 : exports,
+    }) : (0, r.jsx)(h.ZP, {
+      className: e,
+      data: d === g.wI2.FAVORITES ? a : t,
       onSelectGIF: this.handleSelectGIF,
-      resultType: Chunk600164,
-      resultQuery: require,
-      query: Chunk473749,
+      resultType: d,
+      resultQuery: n,
+      query: i,
       searchOffset: o,
-      searchLimit: Chunk442837,
-      searchTotalResults: Chunk481060,
-      suggestions: Chunk570140,
+      searchLimit: s,
+      searchTotalResults: l,
+      suggestions: c,
       onSelectSuggestion: this.handleSelectSuggestion,
       selectedGIF: this.props.selectedGIF
     })
@@ -170,18 +170,18 @@ class A extends Chunk473749.PureComponent {
       className: e,
       forwardedRef: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      id: Chunk149203.vO,
+    return (0, r.jsxs)("div", {
+      id: E.vO,
       role: "tabpanel",
-      "aria-labelledby": Chunk149203._3,
-      className: o()(Chunk277170.container, module),
+      "aria-labelledby": E._3,
+      className: o()(O.container, e),
       onClick: C,
-      ref: exports,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: o()(Chunk277170.header, this.props.headerClassName),
+      ref: t,
+      children: [(0, r.jsx)("div", {
+        className: o()(O.header, this.props.headerClassName),
         children: this.renderHeader()
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk277170.content,
+      }), (0, r.jsx)("div", {
+        className: O.content,
         children: this.renderContent()
       })]
     })

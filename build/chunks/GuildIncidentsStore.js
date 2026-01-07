@@ -38,12 +38,12 @@ let p = {},
 
 function m() {
   var e;
-  let t = null != (e = Chunk581883.Z.getGuildsProto()) ? module : {},
-    n = Chunk430824.Z.getGuildsArray();
-  for (let e of (_ = {}, require)) _[module.id] = f({
-    guildId: module.id,
-    guildName: module.name
-  }, exports[module.id])
+  let t = null != (e = s.Z.getGuildsProto()) ? e : {},
+    n = l.Z.getGuildsArray();
+  for (let e of (_ = {}, n)) _[e.id] = f({
+    guildId: e.id,
+    guildName: e.name
+  }, t[e.id])
 }
 
 function h(e) {
@@ -90,7 +90,7 @@ function O(e) {
 }
 class v extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk581883.Z, Chunk430824.Z, Chunk496675.Z, Chunk353926.Z), this.syncWith([Chunk581883.Z, Chunk430824.Z, Chunk496675.Z, Chunk353926.Z], m)
+    this.waitFor(s.Z, l.Z, c.Z, o.Z), this.syncWith([s.Z, l.Z, c.Z, o.Z], m)
   }
   getGuildIncident(e) {
     return p[e]

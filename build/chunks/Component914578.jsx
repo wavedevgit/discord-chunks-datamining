@@ -44,42 +44,42 @@ function p(e) {
 }
 
 function g() {
-  let e = Chunk473749.useRef(null);
-  return (0, Chunk54381.jsxs)("div", {
-    children: [(0, Chunk54381.jsx)(Chunk604227.Z, {
+  let e = o.useRef(null);
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(f.Z, {
       compact: true
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk205904.links,
-      children: [(0, Chunk54381.jsx)(Chunk481060.eee, {
-        href: Chunk981631.EYA.PRIVACY,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsxs)("div", {
+      className: y.links,
+      children: [(0, r.jsx)(l.eee, {
+        href: d.EYA.PRIVACY,
+        children: (0, r.jsx)(l.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: Chunk388032.intl.string(Chunk388032.t["Knf/f/"])
+          children: b.intl.string(b.t["Knf/f/"])
         })
-      }), (0, Chunk54381.jsx)("span", {
-        className: Chunk205904.bullet,
+      }), (0, r.jsx)("span", {
+        className: y.bullet,
         "aria-hidden": "true",
         children: "•"
-      }), (0, Chunk54381.jsx)(Chunk481060.eee, {
-        href: Chunk981631.EYA.TERMS,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)(l.eee, {
+        href: d.EYA.TERMS,
+        children: (0, r.jsx)(l.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: Chunk388032.intl.string(Chunk388032.t.uFSTGq)
+          children: b.intl.string(b.t.uFSTGq)
         })
-      }), (0, Chunk54381.jsx)("span", {
-        className: Chunk205904.bullet,
+      }), (0, r.jsx)("span", {
+        className: y.bullet,
         "aria-hidden": "true",
         children: "•"
-      }), (0, Chunk54381.jsx)(Chunk481060.yRy, {
-        targetElementRef: module,
+      }), (0, r.jsx)(l.yRy, {
+        targetElementRef: e,
         position: "top",
         align: "center",
         spacing: 0,
-        animation: Chunk481060.yRy.Animation.NONE,
+        animation: l.yRy.Animation.NONE,
         renderPopout: e => {
           let {
             closePopout: t

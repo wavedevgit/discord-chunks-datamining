@@ -11,10 +11,10 @@ let o = {
   binds: ["mod+shift+n"],
   comboKeysBindGlobal: true,
   action() {
-    (0, Chunk481060.nfh)(Chunk675999.PU) ? Chunk560067.Z.updateCreateGuildModal({
-      slide: Chunk675999._m.JOIN_GUILD,
+    (0, r.nfh)(a.PU) ? i.Z.updateCreateGuildModal({
+      slide: a._m.JOIN_GUILD,
       location: "Keyboard Shortcut"
-    }): Chunk560067.Z.openCreateGuildModal({
+    }): i.Z.openCreateGuildModal({
       location: "Keyboard Shortcut"
     })
   }

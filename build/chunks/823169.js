@@ -13,10 +13,10 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 class d extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.maybeFetchEligiblity)
+    r.Z.subscribe("CONNECTION_OPEN", this.maybeFetchEligiblity)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.maybeFetchEligiblity)
+    r.Z.unsubscribe("CONNECTION_OPEN", this.maybeFetchEligiblity)
   }
   constructor(...e) {
     super(...e),

@@ -186,81 +186,81 @@ class eu extends(i = Chunk473749.PureComponent) {
     let {
       channel: e
     } = this.props, t = "", n = "";
-    return null != module ? module.isDM() ? (t = "Add Friends to DM", n = "DM") : (t = "Add Friends to DM", n = "Group DM") : (t = "New Group DM", n = "Friends List"), {
-      entryPointType: exports,
-      entryPointSource: require
+    return null != e ? e.isDM() ? (t = "Add Friends to DM", n = "DM") : (t = "Add Friends to DM", n = "Group DM") : (t = "New Group DM", n = "Friends List"), {
+      entryPointType: t,
+      entryPointSource: n
     }
   }
   componentDidMount() {
     let {
       channel: e
     } = this.props;
-    Chunk570140.Z.wait(() => Chunk708690.Z.open(null == module ? true : module.id));
-    let t = (0, Chunk367907.v_)(module);
-    Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, el(er({}, exports), {
+    f.Z.wait(() => C.Z.open(null == e ? true : e.id));
+    let t = (0, E.v_)(e);
+    G.default.track($.rMx.OPEN_POPOUT, el(er({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
       is_friend: !this.isNotFriends()
-    })), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown)
+    })), z.S.subscribe($.CkL.SCROLL_PAGE_UP, this.scrollPageUp), z.S.subscribe($.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown)
   }
   componentWillUnmount() {
-    Chunk585483.S.unsubscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.unsubscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), Chunk570140.Z.wait(() => Chunk708690.Z.close())
+    z.S.unsubscribe($.CkL.SCROLL_PAGE_UP, this.scrollPageUp), z.S.unsubscribe($.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), f.Z.wait(() => C.Z.close())
   }
   isNotFriends() {
     let {
       channel: e,
       isStaffOnlyDM: t
     } = this.props;
-    if (null == module || !module.isDM()) returnfalse;
-    let n = module.getRecipientId();
-    if (null == require) throw Error("no recipient in DM");
-    return !Chunk699516.Z.isFriend(require) && !exports
+    if (null == e || !e.isDM()) returnfalse;
+    let n = e.getRecipientId();
+    if (null == n) throw Error("no recipient in DM");
+    return !F.Z.isFriend(n) && !t
   }
   createInvite() {
     let {
       channel: e
     } = this.props;
-    if (null == module || !module.isMultiUserDM() || this.isPartyFull()) return;
+    if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return;
     let {
       inviteMaxAgeSeconds: t
-    } = Chunk73752.Z.getCurrentConfig({
+    } = X.Z.getCurrentConfig({
       location: "5326c5_1"
     }, {
       autoTrackExposure: false
     });
-    Chunk447543.ZP.createInvite(module.id, {
-      max_age: exports
-    }, Chunk981631.t4x.GROUP_DM)
+    b.ZP.createInvite(e.id, {
+      max_age: t
+    }, $.t4x.GROUP_DM)
   }
   isPartyFull() {
     let {
       channel: e
     } = this.props;
-    return null != module && module.recipients.length + 1 >= this.getMaxParticipants()
+    return null != e && e.recipients.length + 1 >= this.getMaxParticipants()
   }
   getMaxParticipants() {
     let {
       channel: e
-    } = this.props, t = Chunk594174.default.getCurrentUser();
-    return null != exports && exports.isStaff() ? Chunk981631.p3w : null != module && module.userLimit > 0 ? module.userLimit : Chunk981631.pAY
+    } = this.props, t = B.default.getCurrentUser();
+    return null != t && t.isStaff() ? $.p3w : null != e && e.userLimit > 0 ? e.userLimit : $.pAY
   }
   getRemaining() {
     let {
       channel: e,
       selectedUsers: t
-    } = this.props, n = (null == module ? 0 : module.recipients.length) + 1;
-    return this.getMaxParticipants() - exports.size - require
+    } = this.props, n = (null == e ? 0 : e.recipients.length) + 1;
+    return this.getMaxParticipants() - t.size - n
   }
   getCreateGroupButtonAction() {
     let {
       channel: e,
       selectedUsers: t
-    } = this.props, n = this.getRemaining(), i = null != module && 0 === exports.size || require < 0, r = exports.size > 1 || null != module ? Chunk388032.intl.string(Chunk388032.t.ZGMNA8) : Chunk388032.intl.string(Chunk388032.t["6Urw1t"]);
+    } = this.props, n = this.getRemaining(), i = null != e && 0 === t.size || n < 0, r = t.size > 1 || null != e ? et.intl.string(et.t.ZGMNA8) : et.intl.string(et.t["6Urw1t"]);
     return {
       variant: "primary",
       disabled: i,
       onClick: this.handleInviteUsers,
-      text: Chunk54381
+      text: r
     }
   }
   renderAddUsersButton() {
@@ -268,40 +268,40 @@ class eu extends(i = Chunk473749.PureComponent) {
       channel: e,
       selectedUsers: t
     } = this.props;
-    if (null == module || module.isDM()) return;
+    if (null == e || e.isDM()) return;
     let n = this.getRemaining(),
-      i = 0 === exports.size || require < 0;
-    return (0, Chunk54381.jsx)(Chunk481060.Button, {
+      i = 0 === t.size || n < 0;
+    return (0, r.jsx)(p.Button, {
       variant: "primary",
-      text: Chunk388032.intl.string(Chunk388032.t.OYkgVk),
+      text: et.intl.string(et.t.OYkgVk),
       disabled: i,
       onClick: this.handleInviteUsers
     })
   }
   getTitle() {
-    return this.isNotFriends() ? Chunk388032.intl.string(Chunk388032.t.Xjlbvs) : this.isPartyFull() ? Chunk388032.intl.string(Chunk388032.t.OtTQDz) : Chunk388032.intl.string(Chunk388032.t.CdNhGX)
+    return this.isNotFriends() ? et.intl.string(et.t.Xjlbvs) : this.isPartyFull() ? et.intl.string(et.t.OtTQDz) : et.intl.string(et.t.CdNhGX)
   }
   getSubtitle() {
     let {
       channel: e,
       hasFriends: t
     } = this.props;
-    if (!exports) return Chunk388032.intl.string(Chunk388032.t["7orY6K"]);
+    if (!t) return et.intl.string(et.t["7orY6K"]);
     if (this.isPartyFull()) return;
     if (this.isNotFriends()) {
-      let t = null != module ? module.getRecipientId() : null;
-      if (null == exports) throw Error("no recipient in DM");
-      let n = Chunk594174.default.getUser(exports),
-        i = null != require ? require.username : "";
-      return Chunk388032.intl.format(Chunk388032.t["eg+R9x"], {
+      let t = null != e ? e.getRecipientId() : null;
+      if (null == t) throw Error("no recipient in DM");
+      let n = B.default.getUser(t),
+        i = null != n ? n.username : "";
+      return et.intl.format(et.t["eg+R9x"], {
         username: i
       })
     }
     let n = this.getRemaining();
-    return require <= 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.xYr004, {
+    return n <= 0 ? et.intl.formatToPlainString(et.t.xYr004, {
       number: this.getMaxParticipants()
-    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.HrSDPF, {
-      number: require
+    }) : et.intl.formatToPlainString(et.t.HrSDPF, {
+      number: n
     })
   }
   handleKeyDown(e) {
@@ -335,23 +335,23 @@ class eu extends(i = Chunk473749.PureComponent) {
       hasFriends: t,
       selectedUsers: n
     } = this.props;
-    if (!exports || this.isNotFriends() || this.isPartyFull()) return null;
+    if (!t || this.isNotFriends() || this.isPartyFull()) return null;
     let i = [];
-    return require.forEach(e => {
+    return n.forEach(e => {
       let t = B.default.getUser(e);
       null != t && i.push({
         id: e,
         label: Y.ZP.getName(t)
       })
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk176260.searchBar,
-      children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
+    }), (0, r.jsxs)("div", {
+      className: en.searchBar,
+      children: [(0, r.jsx)(p.oil, {
         inputRef: this.searchBarRef,
         autoFocus: true,
         fullWidth: true,
-        placeholder: 0 === require.size ? Chunk388032.intl.string(Chunk388032.t.Wxnb6q) : "",
+        placeholder: 0 === n.size ? et.intl.string(et.t.Wxnb6q) : "",
         disabled: this.isPartyFull(),
-        value: module,
+        value: e,
         leading: {
           type: "tags",
           items: i,
@@ -367,25 +367,25 @@ class eu extends(i = Chunk473749.PureComponent) {
       hasFriends: e,
       results: t
     } = this.props;
-    return this.isNotFriends() || !module ? null : this.isPartyFull() ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk176260.popoutContent,
+    return this.isNotFriends() || !e ? null : this.isPartyFull() ? (0, r.jsx)(p.Text, {
+      className: en.popoutContent,
       variant: "text-md/normal",
       color: "text-subtle",
-      children: Chunk388032.intl.format(Chunk388032.t.xYr004, {
+      children: et.intl.format(et.t.xYr004, {
         number: this.getMaxParticipants()
       })
-    }) : 0 === exports.length ? (0, Chunk54381.jsx)("div", {
-      className: Chunk176260.noResults,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }) : 0 === t.length ? (0, r.jsx)("div", {
+      className: en.noResults,
+      children: (0, r.jsx)(p.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.SV4DJ1)
+        children: et.intl.string(et.t.SV4DJ1)
       })
-    }) : (0, Chunk54381.jsx)(Chunk481060.aVo, {
+    }) : (0, r.jsx)(p.aVo, {
       ref: this.scrollerRef,
-      sections: [exports.length],
-      className: Chunk176260.scroller,
-      innerClassName: Chunk176260.scrollerInner,
+      sections: [t.length],
+      className: en.scroller,
+      innerClassName: en.scrollerInner,
       renderRow: this.renderRow,
       rowHeight: this.getRowHeight,
       renderSection: this.renderSection,
@@ -405,8 +405,8 @@ class eu extends(i = Chunk473749.PureComponent) {
     let {
       hasFriends: e
     } = this.props;
-    return this.isNotFriends() || !module ? null : this.isPartyFull() ? (0, Chunk54381.jsx)("div", {
-      children: Chunk388032.intl.format(Chunk388032.t.xYr004, {
+    return this.isNotFriends() || !e ? null : this.isPartyFull() ? (0, r.jsx)("div", {
+      children: et.intl.format(et.t.xYr004, {
         number: this.getMaxParticipants()
       })
     }) : null
@@ -416,23 +416,23 @@ class eu extends(i = Chunk473749.PureComponent) {
       hasFriends: e,
       results: t
     } = this.props;
-    if (!(this.isNotFriends() || !module || this.isPartyFull())) return 0 === exports.length ? {
+    if (!(this.isNotFriends() || !e || this.isPartyFull())) return 0 === t.length ? {
       sections: [1],
       sectionHeight: 0,
       rowHeight: 32,
-      renderRow: () => (0, Chunk54381.jsx)("div", {
-        className: Chunk176260.noResults,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+      renderRow: () => (0, r.jsx)("div", {
+        className: en.noResults,
+        children: (0, r.jsx)(p.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk388032.t.SV4DJ1)
+          children: et.intl.string(et.t.SV4DJ1)
         })
       })
     } : {
       ref: this.scrollerRef,
-      sections: [exports.length],
-      className: Chunk176260.scroller,
-      innerClassName: Chunk176260.scrollerInner,
+      sections: [t.length],
+      className: en.scroller,
+      innerClassName: en.scrollerInner,
       renderRow: this.renderRow,
       rowHeight: this.getRowHeight,
       renderSection: this.renderSection,
@@ -459,23 +459,23 @@ class eu extends(i = Chunk473749.PureComponent) {
     } = this.props, {
       copied: i
     } = this.state;
-    if (null == module || !module.isMultiUserDM() || this.isPartyFull()) return null;
-    let l = null != exports ? (0, Chunk366980.Z)(exports.code) : "",
-      a = Chunk473749.length > 0;
-    return (0, Chunk54381.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t.t3O2BR),
-      helperText: Chunk473749.length > 0 ? Chunk388032.intl.format(Chunk388032.t.ZVdJMy, {
+    if (null == e || !e.isMultiUserDM() || this.isPartyFull()) return null;
+    let l = null != t ? (0, T.Z)(t.code) : "",
+      a = l.length > 0;
+    return (0, r.jsx)(p.gNt, {
+      label: et.intl.string(et.t.t3O2BR),
+      helperText: l.length > 0 ? et.intl.format(et.t.ZVdJMy, {
         numHours: "".concat(24)
       }) : true,
-      children: (0, Chunk54381.jsx)(Chunk481060.kO8, {
-        supportsCopy: Chunk572004.wS,
-        placeholder: (0, Chunk366980.Z)(Chunk388032.intl.string(Chunk388032.t.lPVBqP)),
-        value: Chunk392711 ? require ? Chunk388032.intl.string(Chunk388032.t["6HzNgZ"]) : Chunk473749 : "",
-        buttonColor: Chunk755721.zx.Colors.BRAND,
-        text: Chunk392711 ? i ? Chunk388032.intl.string(Chunk388032.t.q30c5i) : Chunk388032.intl.string(Chunk388032.t.OpuAlK) : Chunk388032.intl.string(Chunk388032.t.qzxqUf),
-        mode: i ? Chunk481060.uA3.SUCCESS : Chunk481060.uA3.DEFAULT,
+      children: (0, r.jsx)(p.kO8, {
+        supportsCopy: W.wS,
+        placeholder: (0, T.Z)(et.intl.string(et.t.lPVBqP)),
+        value: a ? n ? et.intl.string(et.t["6HzNgZ"]) : l : "",
+        buttonColor: d.zx.Colors.BRAND,
+        text: a ? i ? et.intl.string(et.t.q30c5i) : et.intl.string(et.t.OpuAlK) : et.intl.string(et.t.qzxqUf),
+        mode: i ? p.uA3.SUCCESS : p.uA3.DEFAULT,
         onCopy: () => {
-          Chunk392711 ? this.handleCopyInvite(Chunk473749) : this.createInvite()
+          a ? this.handleCopyInvite(l) : this.createInvite()
         }
       })
     })
@@ -487,31 +487,31 @@ class eu extends(i = Chunk473749.PureComponent) {
       selectedUsers: n
     } = this.props;
     if (this.isNotFriends()) {
-      let e = null != exports ? exports.getRecipientId() : null;
-      if (null == module) throw Error("no recipient in DM");
-      let n = Chunk594174.default.getUser(module),
-        i = null != require && Chunk699516.Z.getRelationshipType(require.id) === Chunk981631.OGo.PENDING_OUTGOING;
+      let e = null != t ? t.getRecipientId() : null;
+      if (null == e) throw Error("no recipient in DM");
+      let n = B.default.getUser(e),
+        i = null != n && F.Z.getRelationshipType(n.id) === $.OGo.PENDING_OUTGOING;
       return {
         actions: [{
           variant: "primary",
-          text: i ? Chunk388032.intl.string(Chunk388032.t.xMH6vD) : Chunk388032.intl.string(Chunk388032.t["PMsq/b"]),
+          text: i ? et.intl.string(et.t.xMH6vD) : et.intl.string(et.t["PMsq/b"]),
           disabled: i,
-          onClick: () => null != require ? this.handleAddFriend(require) : null
+          onClick: () => null != n ? this.handleAddFriend(n) : null
         }]
       }
     }
-    if (!module) return {
+    if (!e) return {
       actions: [{
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.w5uwoI),
+        text: et.intl.string(et.t.w5uwoI),
         onClick: this.handleAddFriendNavigation
       }]
     };
     if (this.isPartyFull()) return {};
-    if (null == exports) return {
-      actionBarInput: require.size > 1 ? (0, Chunk54381.jsx)(ed, {
+    if (null == t) return {
+      actionBarInput: n.size > 1 ? (0, r.jsx)(ed, {
         previewIcon: this.state.previewIcon,
-        selectedUsers: require,
+        selectedUsers: n,
         channelName: this.state.newChannelName,
         onChange: this.handleChannelNameChange,
         onIconChange: this.handleIconChange,
@@ -519,11 +519,11 @@ class eu extends(i = Chunk473749.PureComponent) {
       }) : true,
       actions: [{
         variant: "secondary",
-        text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+        text: et.intl.string(et.t["ETE/oC"]),
         onClick: this.props.onClose
       }, this.getCreateGroupButtonAction()]
     };
-    if (exports.isDM()) return {
+    if (t.isDM()) return {
       actions: [this.getCreateGroupButtonAction()]
     };
     let i = this.getInviteLinkFooter();
@@ -541,42 +541,42 @@ class eu extends(i = Chunk473749.PureComponent) {
       actionBarInput: l,
       actions: a
     } = this.getFooterProps();
-    return i ? (0, Chunk54381.jsx)(Chunk793030.Modal, {
-      transitionState: null != exports ? exports : Chunk481060.Dvm.ENTERED,
-      onClose: async () => await require(),
+    return i ? (0, r.jsx)(c.Modal, {
+      transitionState: null != t ? t : p.Dvm.ENTERED,
+      onClose: async () => await n(),
       title: this.getTitle(),
       subtitle: this.getSubtitle(),
-      input: null != (e = this.renderSearchBar()) ? module : true,
-      actionBarInput: Chunk473749,
+      input: null != (e = this.renderSearchBar()) ? e : true,
+      actionBarInput: l,
       listProps: this.getListProps(),
-      actions: null != Chunk392711 ? Chunk392711 : [],
+      actions: null != a ? a : [],
       children: this.renderBody()
-    }) : (0, Chunk54381.jsxs)("div", {
-      className: Chunk176260.popout,
-      children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
-        className: Chunk176260.popoutContent,
+    }) : (0, r.jsxs)("div", {
+      className: en.popout,
+      children: [(0, r.jsx)(c.X6q, {
+        className: en.popoutContent,
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: this.getTitle()
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk176260.popoutContent,
+      }), (0, r.jsx)(p.Text, {
+        className: en.popoutContent,
         variant: "text-md/normal",
         color: "text-subtle",
         children: this.getSubtitle()
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk176260.popoutContent,
+      }), (0, r.jsx)("div", {
+        className: en.popoutContent,
         children: this.renderSearchBar()
-      }), this.renderPopoutBody(), null != Chunk473749 && (0, Chunk54381.jsx)("div", {
-        className: Chunk176260.footer,
-        children: Chunk473749
-      }), null != Chunk392711 && (0, Chunk54381.jsx)("div", {
-        className: Chunk176260.popoutContent,
-        children: (0, Chunk54381.jsx)(Chunk793030.hE2, {
+      }), this.renderPopoutBody(), null != l && (0, r.jsx)("div", {
+        className: en.footer,
+        children: l
+      }), null != a && (0, r.jsx)("div", {
+        className: en.popoutContent,
+        children: (0, r.jsx)(c.hE2, {
           padding: {
             top: 12
           },
           fullWidth: true,
-          children: Chunk392711.map((e, t) => (0, r.jsx)(p.Button, er({}, e), t))
+          children: a.map((e, t) => (0, r.jsx)(p.Button, er({}, e), t))
         })
       })]
     })

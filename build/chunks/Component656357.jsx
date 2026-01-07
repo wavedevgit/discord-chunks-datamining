@@ -51,16 +51,16 @@ let H = {
 };
 
 function Y() {
-  let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.getState().theme);
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk209668.pauseText,
+  let e = (0, c.e7)([v.Z], () => v.Z.getState().theme);
+  return (0, r.jsx)("div", {
+    className: q.pauseText,
     style: {
-      background: (0, Chunk780384.wj)(module) ? "rgba(0, 0, 0, 0.65)" : "rgba(255, 255, 255, 0.65)"
+      background: (0, u.wj)(e) ? "rgba(0, 0, 0, 0.65)" : "rgba(255, 255, 255, 0.65)"
     },
-    children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t["U7Xrb+"])
+      children: U.intl.string(U.t["U7Xrb+"])
     })
   })
 }

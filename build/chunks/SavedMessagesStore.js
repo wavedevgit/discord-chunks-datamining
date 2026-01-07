@@ -223,10 +223,10 @@ function G(e) {
 }
 class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(l.default)
   }
   getSavedMessages() {
-    return m.values(Chunk686478._l.ALL)
+    return m.values(c._l.ALL)
   }
   getSavedMessage(e, t) {
     return m.get(v({
@@ -235,10 +235,10 @@ class Z extends(r = Chunk442837.ZP.Store) {
     }))
   }
   getMessageBookmarks() {
-    return m.values(Chunk686478._l.BOOKMARK)
+    return m.values(c._l.BOOKMARK)
   }
   getMessageReminders() {
-    return m.values(Chunk686478._l.REMINDER)
+    return m.values(c._l.REMINDER)
   }
   getOverdueMessageReminderCount() {
     return E.size

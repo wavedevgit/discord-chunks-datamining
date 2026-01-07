@@ -662,14 +662,14 @@ function ej(e) {
 }
 class eM extends Chunk750041.Z {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk502087.Z)
+    this.waitFor(h.default, d.Z)
   }
   takeSnapshot() {
     let e = this.getCurrentUser();
     return {
       version: eM.LATEST_SNAPSHOT_VERSION,
       data: {
-        users: [module].filter(Chunk823379.lm)
+        users: [e].filter(m.lm)
       }
     }
   }
@@ -714,7 +714,7 @@ class eM extends Chunk750041.Z {
     return t && n.sort((e, t) => e.username > t.username ? 1 : e.username < t.username ? false : 0), n
   }
   getCurrentUser() {
-    return O[Chunk314897.default.getId()]
+    return O[h.default.getId()]
   }
   constructor() {
     super({

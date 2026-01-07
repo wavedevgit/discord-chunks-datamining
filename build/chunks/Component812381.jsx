@@ -13,23 +13,23 @@ var Chunk920981 = require("./920981.js"),
   Chunk52030 = require("./52030.js"),
   Chunk815778 = require("./815778.js");
 let u = () => {
-  let e = (0, Chunk442837.e7)([Chunk52030.Z], () => Chunk52030.Z.getShopHomeConfigOverride()),
+  let e = (0, i.e7)([c.Z], () => c.Z.getShopHomeConfigOverride()),
     t = [{
       label: "DISABLED (no override)",
       value: true
-    }, ...Object.values(Chunk920981.H).filter(e => e !== r.H.SUMMER_SALE_TAKEOVER).map(e => ({
+    }, ...Object.values(r.H).filter(e => e !== r.H.SUMMER_SALE_TAKEOVER).map(e => ({
       label: e,
       value: e
     }))];
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk815778.container,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, a.jsxs)("div", {
+    className: d.container,
+    children: [(0, a.jsx)(s.Text, {
       variant: "text-md/normal",
       children: "Shop Home Override"
-    }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-      className: Chunk815778.selector,
-      options: exports,
-      value: module,
+    }), (0, a.jsx)(l.y6, {
+      className: d.selector,
+      options: t,
+      value: e,
       onChange: e => {
         (0, o.fi)(e)
       }

@@ -63,14 +63,14 @@ function I(e, t) {
 class T extends(r = Chunk473749.PureComponent) {
   get analyticsLocation() {
     return I(v({}, this.props.analyticsContext.location), {
-      object: Chunk981631.qAy.BUTTON_CTA
+      object: E.qAy.BUTTON_CTA
     })
   }
   hasMultipleLaunchOptions() {
     let {
       dispatchState: e
     } = this.props;
-    return null != module && null != module.launchOptions && Object.keys(module.launchOptions).length > 1
+    return null != e && null != e.launchOptions && Object.keys(e.launchOptions).length > 1
   }
   renderDisabledButton(e, t) {
     let {
@@ -106,22 +106,22 @@ class T extends(r = Chunk473749.PureComponent) {
       isRunning: s,
       hideNotLaunchable: l
     } = this.props;
-    return r ? Chunk442837 ? this.renderDisabledButton(Chunk388032.intl.string(Chunk388032.t["3elwAB"])) : (0, Chunk54381.jsxs)(Chunk793030.hE2, {
-      size: exports,
+    return r ? s ? this.renderDisabledButton(b.intl.string(b.t["3elwAB"])) : (0, i.jsxs)(o.hE2, {
+      size: t,
       wrap: false,
-      fullWidth: module,
-      children: [(0, Chunk54381.jsx)(Chunk793030.zxk, {
-        text: Chunk388032.intl.string(Chunk388032.t["359Pbd"]),
-        variant: require,
-        loading: Chunk473749,
+      fullWidth: e,
+      children: [(0, i.jsx)(o.zxk, {
+        text: b.intl.string(b.t["359Pbd"]),
+        variant: n,
+        loading: a,
         onClick: this.handleClick
-      }), this.hasMultipleLaunchOptions() ? (0, Chunk54381.jsx)(Chunk793030.hU, {
-        icon: Chunk481060.CJ0,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.KTPVLL),
+      }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(o.hU, {
+        icon: c.CJ0,
+        "aria-label": b.intl.string(b.t.KTPVLL),
         variant: "secondary",
         onClick: this.handleDropdownClick
       }) : null]
-    }) : Chunk28664 ? null : this.renderDisabledButton(Chunk388032.intl.string(Chunk388032.t["359Pbd"]), Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.NASLa3) : Chunk388032.intl.string(Chunk388032.t.o1bhkD))
+    }) : l ? null : this.renderDisabledButton(b.intl.string(b.t["359Pbd"]), h.isPlatformEmbedded ? b.intl.string(b.t.NASLa3) : b.intl.string(b.t.o1bhkD))
   }
   constructor(...e) {
     super(...e), O(this, "handleDropdownClick", e => {

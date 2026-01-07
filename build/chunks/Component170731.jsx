@@ -88,13 +88,13 @@ function M(i) {
 }
 
 function A() {
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk481060.nn4, {
-      children: Chunk388032.intl.string(Chunk388032.t.pfChQr)
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk968394.wishlistBannerGrid,
+  return (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsx)(d.nn4, {
+      children: E.intl.string(E.t.pfChQr)
+    }), (0, n.jsx)("div", {
+      className: R.wishlistBannerGrid,
       children: Array.from({
-        length: Chunk602733.zL
+        length: L.zL
       }, (i, e) => (0, n.jsx)(S.Z, {
         cardSize: w.U.SMALL
       }, "placeholder-".concat(e)))

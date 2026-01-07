@@ -9,7 +9,7 @@ var Chunk944486 = require("./944486.js");
 
 function i() {
   var e;
-  return null != (e = Chunk944486.Z.getChannelId()) ? module : true
+  return null != (e = r.Z.getChannelId()) ? e : true
 }
 
 function a(e) {

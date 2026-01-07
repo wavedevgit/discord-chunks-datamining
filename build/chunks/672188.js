@@ -29,11 +29,11 @@ function s(e, t) {
 }
 
 function o() {
-  let [e, t] = (0, Chunk473749.useState)(false);
+  let [e, t] = (0, a.useState)(false);
   return {
-    ref: s((0, Chunk473749.useCallback)(e => {
+    ref: s((0, a.useCallback)(e => {
       t(e.isIntersecting)
     }, [])),
-    inViewport: module
+    inViewport: e
   }
 }

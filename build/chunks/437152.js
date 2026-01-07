@@ -12,17 +12,17 @@ var Chunk704215 = require("./704215.js"),
 let s = "doNotShowReorderModal";
 
 function a() {
-  (0, Chunk605236.Ow)(Chunk704215.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    dismissAction: Chunk921944.L.USER_DISMISS
+  (0, c.Ow)(n.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
+    dismissAction: l.L.USER_DISMISS
   })
 }
 
 function u() {
-  null != Chunk433517.K.get(s) && Chunk433517.K.remove(s);
+  null != o.K.get(s) && o.K.remove(s);
   let {
     isDismissed: t
-  } = (0, Chunk605236.Fo)(Chunk704215.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    cooldownDurationMs: Chunk70956.Z.Millis.WEEK
+  } = (0, c.Fo)(n.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
+    cooldownDurationMs: i.Z.Millis.WEEK
   });
-  return !module
+  return !t
 }

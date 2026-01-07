@@ -31,7 +31,7 @@ function l(e, t) {
 }
 
 function c() {
-  (0, Chunk731965.j)(() => {
+  (0, i.j)(() => {
     s.setState({
       activePanel: null,
       metadata: null

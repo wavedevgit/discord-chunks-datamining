@@ -40,11 +40,11 @@ let a = function(e) {
       })
     }
   }, o = () => {
-    Chunk570140.Z.dispatch({
+    l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })
   }, u = () => {
-    Chunk570140.Z.dispatch({
+    l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_CLEAR"
     })
   }, c = e => {

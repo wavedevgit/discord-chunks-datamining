@@ -104,9 +104,9 @@ function b(e) {
 }
 
 function y() {
-  if (Chunk19780.Z.getWasMoved()) {
-    if (Chunk19780.Z.getChannelId() === _) returnfalse;
-    _ = Chunk19780.Z.getChannelId(), m()
+  if (o.Z.getWasMoved()) {
+    if (o.Z.getChannelId() === _) returnfalse;
+    _ = o.Z.getChannelId(), m()
   } else {
     if (null == _) returnfalse;
     _ = null
@@ -114,7 +114,7 @@ function y() {
 }
 class O extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(Chunk19780.Z)
+    this.waitFor(o.Z)
   }
   getPendingRequestForUser(e) {
     return p[e]

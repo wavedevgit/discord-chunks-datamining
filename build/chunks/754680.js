@@ -11,14 +11,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.ADVANCED_VOICE_ACTIVITY_PROCESSING_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.BbESsg),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.LoOB1F),
+  useTitle: () => o.intl.string(o.t.BbESsg),
+  useSubtitle: () => o.intl.string(o.t.LoOB1F),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => {
+    return (0, i.e7)([u.Z], () => {
       let {
         vadUseKrisp: t
-      } = Chunk131951.Z.getModeOptions();
-      return module
+      } = u.Z.getModeOptions();
+      return t
     })
   },
   setValue: function(t) {
@@ -28,13 +28,13 @@ let T = (0, Chunk509613.qs)(Chunk313789.n.ADVANCED_VOICE_ACTIVITY_PROCESSING_SET
     })
   },
   useDisabled: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => {
-      let t = Chunk131951.Z.getMode(),
-        e = Chunk131951.Z.getModeOptions().autoThreshold;
-      return module === Chunk981631.pM4.VOICE_ACTIVITY && exports
+    return (0, i.e7)([u.Z], () => {
+      let t = u.Z.getMode(),
+        e = u.Z.getModeOptions().autoThreshold;
+      return t === a.pM4.VOICE_ACTIVITY && e
     })
   },
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isAdvancedVoiceActivitySupported() && Chunk131951.Z.isInputProfileCustom())
+    return (0, i.e7)([u.Z], () => u.Z.isAdvancedVoiceActivitySupported() && u.Z.isInputProfileCustom())
   }
 })

@@ -941,20 +941,20 @@ var ey = ["onStart", "onChange", "onRest"],
         onRest: new Map
       }, this._onFrame = this._onFrame.bind(this), t && (this._flush = t), e && this.start(e)
     }
-    var t = module.prototype;
-    return exports.is = function(e) {
+    var t = e.prototype;
+    return t.is = function(e) {
       return this._phase == e
-    }, exports.get = function() {
+    }, t.get = function() {
       var e = {};
       return this.each(function(t, n) {
         return e[n] = t.get()
-      }), module
-    }, exports.update = function(e) {
+      }), e
+    }, t.update = function(e) {
       return e && this.queue.push(eg(e)), this
-    }, exports.start = function(e) {
+    }, t.start = function(e) {
       var t = e ? a.toArray(e).map(eg) : this.queue;
       return (e || (this.queue = []), this._flush) ? this._flush(this, t) : (eP(this, t), eS(this, t))
-    }, exports.stop = function(e) {
+    }, t.stop = function(e) {
       if (a.is.und(e)) this.each(function(e) {
         return e.stop()
       }), en(this._state, this._lastAsyncId);
@@ -965,7 +965,7 @@ var ey = ["onStart", "onChange", "onRest"],
         })
       }
       return this
-    }, exports.pause = function(e) {
+    }, t.pause = function(e) {
       if (a.is.und(e)) this.each(function(e) {
         return e.pause()
       });
@@ -976,7 +976,7 @@ var ey = ["onStart", "onChange", "onRest"],
         })
       }
       return this
-    }, exports.resume = function(e) {
+    }, t.resume = function(e) {
       if (a.is.und(e)) this.each(function(e) {
         return e.resume()
       });
@@ -987,44 +987,44 @@ var ey = ["onStart", "onChange", "onRest"],
         })
       }
       return this
-    }, exports.reset = function() {
+    }, t.reset = function() {
       return this.each(function(e) {
         return e.reset()
       }), this
-    }, exports.each = function(e) {
+    }, t.each = function(e) {
       a.each(this.springs, e)
-    }, exports.dispose = function() {
+    }, t.dispose = function() {
       this._state.asyncTo = true, this.each(function(e) {
         return e.dispose()
       }), this.springs = {}
-    }, exports._onFrame = function() {
+    }, t._onFrame = function() {
       var e = this,
         t = this._events,
-        n = exports.onStart,
-        r = exports.onChange,
-        i = exports.onRest,
+        n = t.onStart,
+        r = t.onChange,
+        i = t.onRest,
         o = this._active.size > 0;
-      o && this._phase != ec && (this._phase = ec, Chunk698091.flush(require, function(t) {
+      o && this._phase != ec && (this._phase = ec, a.flush(n, function(t) {
         return t(e)
       }));
-      var s = (r.size || !o && Chunk804431.size) && this.get();
-      Chunk698091.flush(r, function(e) {
+      var s = (r.size || !o && i.size) && this.get();
+      a.flush(r, function(e) {
         return e(s)
-      }), o || (this._phase = el, Chunk698091.flush(Chunk804431, function(e) {
+      }), o || (this._phase = el, a.flush(i, function(e) {
         var t = e[0],
           n = e[1];
         n.value = s, t(n)
       }))
-    }, exports.onParentChange = function(e) {
+    }, t.onParentChange = function(e) {
       "change" == e.type && (this._active[e.idle ? "delete" : "add"](e.parent), p.frameLoop.onFrame(this._onFrame))
-    }, u(module, [{
+    }, u(e, [{
       key: "idle",
       get: function() {
         return !this._state.asyncTo && Object.values(this.springs).every(function(e) {
           return e.idle
         })
       }
-    }]), module
+    }]), e
   }();
 
 function eS(e, t) {
@@ -1133,7 +1133,7 @@ var eR = Chunk473749.createContext({}),
   };
 ew.Provider = eR.Provider, ew.Consumer = eR.Consumer;
 var eD = function() {
-    return Chunk473749.useContext(eR)
+    return s.useContext(eR)
   },
   ex = {
     create: function(e) {
@@ -1549,7 +1549,7 @@ Chunk698091.Globals.assign({
   }
 });
 var eq = function() {
-  return Chunk698091.Globals.frameLoop.advance()
+  return a.Globals.frameLoop.advance()
 };
 Object.keys(Chunk467568).forEach(function(e) {
   "default" !== e && Object.defineProperty(t, e, {
@@ -1561,16 +1561,16 @@ Object.keys(Chunk467568).forEach(function(e) {
 }), Object.defineProperty(exports, "FrameLoop", {
   enumerable: true,
   get: function() {
-    return Chunk698091.FrameLoop
+    return a.FrameLoop
   }
 }), Object.defineProperty(exports, "Globals", {
   enumerable: true,
   get: function() {
-    return Chunk698091.Globals
+    return a.Globals
   }
 }), Object.defineProperty(exports, "createInterpolator", {
   enumerable: true,
   get: function() {
-    return Chunk698091.createInterpolator
+    return a.createInterpolator
   }
 }), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eW, exports.Spring = eV, exports.SpringContext = ew, exports.SpringHandle = ex, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eY, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = ej, exports.useSprings = eL, exports.useTrail = eM, exports.useTransition = eF

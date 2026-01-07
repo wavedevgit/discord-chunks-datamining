@@ -456,13 +456,13 @@ async function J(e) {
 }
 
 function $() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "CLIPS_CLEAR_CLIPS_SESSION"
   })
 }
 
 function ee() {
-  Chunk570140.Z.dispatch({
+  a.Z.dispatch({
     type: "CLIPS_CLEAR_NEW_CLIP_IDS"
   })
 }
@@ -556,7 +556,7 @@ function ec(e, t) {
 
 function eu() {
   ec({
-    type: Chunk894694.Bs.MANUAL
+    type: I.Bs.MANUAL
   })
 }
 async function ed(e) {

@@ -90,23 +90,23 @@ function A(e) {
 
 function N() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : b.SIZE_24;
-  switch (module) {
+  switch (e) {
     case b.SIZE_16:
-      return Chunk608908.size16;
+      return _.size16;
     case b.SIZE_24:
-      return Chunk608908.size24;
+      return _.size24;
     case b.SIZE_32:
-      return Chunk608908.size32;
+      return _.size32;
     case b.SIZE_56:
-      return Chunk608908.size56;
+      return _.size56;
     default:
-      return Chunk608908.size24
+      return _.size24
   }
 }
 
 function P() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : b.SIZE_24;
-  switch (module) {
+  switch (e) {
     case b.SIZE_16:
       return y;
     case b.SIZE_24:
@@ -127,23 +127,23 @@ class R extends(r = Chunk473749.PureComponent) {
       renderUser: n = this.defaultRenderUser,
       size: r,
       extraDetail: a
-    } = this.props, o = [], s = module.length === exports ? module.length : exports - 1, l = this.renderMoreUsers(s), u = 0;
-    for (; Chunk670188 < s && Chunk670188 < module.length;) {
+    } = this.props, o = [], s = e.length === t ? e.length : t - 1, l = this.renderMoreUsers(s), u = 0;
+    for (; u < s && u < e.length;) {
       var d;
-      let t = null == Chunk481060 && null == Chunk473749 && Chunk670188 === module.length - 1,
-        s = require(module[Chunk670188], exports, Chunk670188);
-      Chunk120356.push(exports ? (0, Chunk54381.jsx)("div", {
-        className: Chunk608908.avatarContainer,
+      let t = null == l && null == a && u === e.length - 1,
+        s = n(e[u], t, u);
+      o.push(t ? (0, i.jsx)("div", {
+        className: _.avatarContainer,
         children: s
-      }, T(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk54381.jsx)(Chunk686546.ZP, {
-        className: Chunk608908.avatarContainerMasked,
+      }, T(null != (d = e[u]) ? d : null, u)) : (0, i.jsx)(c.ZP, {
+        className: _.avatarContainerMasked,
         height: r,
         width: r,
-        mask: Chunk686546.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
+        mask: c.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
         children: s
-      }, T(module[Chunk670188], Chunk670188))), Chunk670188++
+      }, T(e[u], u))), u++
     }
-    return null != Chunk473749 ? Chunk120356.push(Chunk473749) : null != Chunk481060 && Chunk120356.push(Chunk481060), Chunk120356
+    return null != a ? o.push(a) : null != l && o.push(l), o
   }
   renderMoreUsers(e) {
     let {
@@ -178,11 +178,11 @@ class R extends(r = Chunk473749.PureComponent) {
       renderLeadingIcon: e,
       renderIcon: t
     } = this.props;
-    return exports ? null != module ? module(Chunk608908.icon) : (0, Chunk54381.jsx)(Chunk481060.gj8, {
+    return t ? null != e ? e(_.icon) : (0, i.jsx)(l.gj8, {
       size: "md",
       color: "currentColor",
-      colorClass: Chunk608908.__invalid_foreground,
-      className: Chunk608908.icon
+      colorClass: _.__invalid_foreground,
+      className: _.icon
     }) : null
   }
   render() {
@@ -196,19 +196,19 @@ class R extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       popoutUserId: l
     } = this.state;
-    if (null == Chunk481060) return (0, Chunk54381.jsxs)("div", {
-      className: s()(module, Chunk608908.container, N(exports)),
+    if (null == l) return (0, i.jsxs)("div", {
+      className: s()(e, _.container, N(t)),
       children: [this.renderIcon(), this.renderUsers()]
     });
-    let c = require.find(e => e instanceof d.Z && e.id === l),
-      p = Chunk120356 && null == Chunk594174.default.getUser(Chunk481060);
-    return (0, Chunk54381.jsx)(Chunk670188.Z, {
+    let c = n.find(e => e instanceof d.Z && e.id === l),
+      p = o && null == f.default.getUser(l);
+    return (0, i.jsx)(u.Z, {
       targetElementRef: this._ref,
-      userId: Chunk481060,
-      user: Chunk426563 && null != Chunk686546 ? Chunk686546 : true,
+      userId: l,
+      user: p && null != c ? c : true,
       guildId: r,
       fixed: true,
-      shouldShow: true === Chunk473749 && null != Chunk481060,
+      shouldShow: true === a && null != l,
       onRequestClose: () => this.setState({
         popoutUserId: null
       }),

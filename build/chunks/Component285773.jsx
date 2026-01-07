@@ -14,20 +14,20 @@ var Chunk765717 = require("./765717.jsx"),
   Chunk981631 = require("./981631.js");
 
 function f() {
-  return (0, Chunk54381.jsxs)(Chunk721751.Z, {
-    splash: (0, Chunk449934.gK)(),
-    children: [(0, Chunk54381.jsx)(Chunk765717.Z, {
-      path: Chunk981631.Z5c.OAUTH2_AUTHORIZED,
-      component: Chunk397394.Xg
-    }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-      path: Chunk981631.Z5c.OAUTH2_AUTHORIZE,
-      component: Chunk69580.OAuth2AuthorizePage
-    }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-      path: Chunk981631.Z5c.OAUTH2_ERROR,
-      component: Chunk397394.j3
-    }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-      path: [Chunk981631.Z5c.OAUTH2_WHITELIST_ACCEPT, "/oauth2/whitelist/accept"],
-      component: Chunk384666.Z
+  return (0, o.jsxs)(i.Z, {
+    splash: (0, d.gK)(),
+    children: [(0, o.jsx)(n.Z, {
+      path: l.Z5c.OAUTH2_AUTHORIZED,
+      component: r.Xg
+    }), (0, o.jsx)(n.Z, {
+      path: l.Z5c.OAUTH2_AUTHORIZE,
+      component: c.OAuth2AuthorizePage
+    }), (0, o.jsx)(n.Z, {
+      path: l.Z5c.OAUTH2_ERROR,
+      component: r.j3
+    }), (0, o.jsx)(n.Z, {
+      path: [l.Z5c.OAUTH2_WHITELIST_ACCEPT, "/oauth2/whitelist/accept"],
+      component: s.Z
     })]
   })
 }

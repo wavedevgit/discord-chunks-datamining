@@ -35,8 +35,8 @@ function h(e) {
 }
 
 function g() {
-  let [e] = Chunk473749.useState(() => Chunk210887.Z.theme);
-  return Chunk473749.useCallback(t => {
+  let [e] = r.useState(() => s.Z.theme);
+  return r.useCallback(t => {
     let {
       resetColors: n,
       resetGradientAngle: r,
@@ -50,12 +50,12 @@ function g() {
     }), "reset_button" === t ? h(m(null != a ? a : s.Z.theme)) : (0, o.UD)();
     let d = l.L1.getSetting().backgroundGradientPresetId;
     null != d && (0, u.zO)(d)
-  }, [module])
+  }, [e])
 }
 
 function E() {
-  let e = m(Chunk210887.Z.theme);
-  module !== Chunk210887.Z.theme && h(module)
+  let e = m(s.Z.theme);
+  e !== s.Z.theme && h(e)
 }
 
 function b(e, t, n) {
@@ -83,11 +83,11 @@ function O() {
     colors: e,
     chassisMixAmount: t,
     gradientAngle: n
-  } = (0, Chunk233398.Ig)(), a = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), [o] = Chunk473749.useState(() => Chunk210887.Z.theme), {
+  } = (0, c.Ig)(), a = (0, i.e7)([s.Z], () => s.Z.theme), [o] = r.useState(() => s.Z.theme), {
     resetColors: l,
     resetGradientAngle: u,
     resetChassisMixAmount: d,
     resetBaseTheme: f
-  } = y("reset_button", Chunk781391);
-  return JSON.stringify(module) === JSON.stringify(Chunk695346) && exports === Chunk36982 && require === Chunk238302 && Chunk780384 === Chunk469115
+  } = y("reset_button", o);
+  return JSON.stringify(e) === JSON.stringify(l) && t === d && n === u && a === f
 }

@@ -9,10 +9,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js");
 
 function l() {
-  (0, Chunk481060.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await require.e("10165").then(require.bind(require, 166335));
+    } = await n.e("10165").then(n.bind(n, 166335));
     return t => (0, r.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

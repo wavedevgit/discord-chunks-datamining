@@ -11,15 +11,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk930441 = require("./930441.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.ax)(Chunk313789.n.UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ra9Pwk),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.iYjQ8X),
-  useLabel: () => Chunk388032.intl.string(Chunk388032.t.KT1pBA),
+  useTitle: () => o.intl.string(o.t.Ra9Pwk),
+  useSubtitle: () => o.intl.string(o.t.iYjQ8X),
+  useLabel: () => o.intl.string(o.t.KT1pBA),
   useDisabled: () => {
     let {
       categories: t
-    } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
-    return Chunk930441.M0.every(e => !t[e])
+    } = (0, i.cj)([u.Z], () => u.Z.getEmailSettings());
+    return a.M0.every(e => !t[e])
   },
-  onClick: () => (0, Chunk960412.oc)(),
+  onClick: () => (0, s.oc)(),
   useVariant: () => "critical-secondary"
 })

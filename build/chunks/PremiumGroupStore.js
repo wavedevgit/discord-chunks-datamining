@@ -67,7 +67,7 @@ function E() {
 }
 
 function b() {
-  return !d.membershipData.isFetching && (Chunk570140.Z.wait(() => (0, Chunk80721.WH)().catch(Chunk981631.VqG)), true)
+  return !d.membershipData.isFetching && (a.Z.wait(() => (0, s.WH)().catch(c.VqG)), true)
 }
 
 function y() {
@@ -117,7 +117,7 @@ function T() {
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk78839.Z)
+    this.waitFor(o.Z)
   }
   getMembers() {
     return d.membersData.data
@@ -144,12 +144,12 @@ class C extends(r = Chunk442837.ZP.Store) {
     return null == d.membersData.data ? 0 : d.membersData.data.members.length
   }
   getNumAvailableInvites() {
-    if (null == d.membersData.data) return Chunk282793.v$;
+    if (null == d.membersData.data) return l.v$;
     let e = d.membersData.data.members.length + d.membersData.data.invitedUsers.length;
-    return Math.max(0, Chunk282793.v$ - module)
+    return Math.max(0, l.v$ - e)
   }
   getNumTotalSeats() {
-    return Chunk282793.v$
+    return l.v$
   }
 }
 u(C, "displayName", "PremiumGroupStore");

@@ -12,13 +12,13 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx");
 class c extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
+    a.Z.subscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
+    a.Z.unsubscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
   }
   handlePoggermodeTemporarilyDisabled() {
-    (0, Chunk481060.h7j)(e => {
+    (0, l.h7j)(e => {
       var t, n;
       return (0, r.jsx)(l.VoidConfirmModal, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {

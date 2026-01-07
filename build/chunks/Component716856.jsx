@@ -14,18 +14,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk921356 = require("./921356.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_BACKUP_CODES_SETTING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.m0FidJ), Chunk388032.intl.string(Chunk388032.t.xZEzbu)],
+  useSearchTerms: () => [c.intl.string(c.t.m0FidJ), c.intl.string(c.t.xZEzbu)],
   usePredicate: function() {
-    let t = (0, Chunk968021.Y)(),
-      e = (0, Chunk921356.O)(),
-      n = (0, Chunk857314.N)(),
-      i = (0, Chunk442837.e7)([Chunk325067.Z], () => Chunk325067.Z.getBackupCodes().length > 0);
-    return !module && !exports && require && Chunk54381
+    let t = (0, T.Y)(),
+      e = (0, S.O)(),
+      n = (0, o.N)(),
+      i = (0, l.e7)([u.Z], () => u.Z.getBackupCodes().length > 0);
+    return !t && !e && n && i
   },
   Component: function() {
-    let t = (0, Chunk442837.e7)([Chunk325067.Z], () => Chunk325067.Z.getBackupCodes());
-    return (0, Chunk54381.jsx)(Chunk616495.Z, {
-      backupCodes: module
+    let t = (0, l.e7)([u.Z], () => u.Z.getBackupCodes());
+    return (0, i.jsx)(a.Z, {
+      backupCodes: t
     })
   }
 })

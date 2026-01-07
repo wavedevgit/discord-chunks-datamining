@@ -18,22 +18,22 @@ function c() {
     return e
   }
   async function t() {
-    if (!Chunk987650.iP) throw s.error("Attempted to load overlay on an unsupported platform."), Error("Overlay is not supported on this platform.");
+    if (!o.iP) throw s.error("Attempted to load overlay on an unsupported platform."), Error("Overlay is not supported on this platform.");
     try {
-      return await Chunk998502.ZP.ensureModule("discord_overlay2"), r = module(Chunk998502.ZP.requireModule("discord_overlay2"))
+      return await a.ZP.ensureModule("discord_overlay2"), r = e(a.ZP.requireModule("discord_overlay2"))
     } catch (e) {
-      s.error("failed ensuring discord_overlay2", module);
+      s.error("failed ensuring discord_overlay2", e);
       return
     }
   }
-  return null != r ? Promise.resolve(r) : (null == l && (l = exports()), l)
+  return null != r ? Promise.resolve(r) : (null == l && (l = t()), l)
 }
 
 function u() {
   if (null == r) try {
-    r = Chunk998502.ZP.requireModule("discord_overlay2")
+    r = a.ZP.requireModule("discord_overlay2")
   } catch (e) {
-    s.error("failed ensuring discord_overlay2", module);
+    s.error("failed ensuring discord_overlay2", e);
     return
   }
   return r

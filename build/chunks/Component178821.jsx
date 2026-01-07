@@ -386,35 +386,35 @@ function C(e) {
 }
 
 function S() {
-  let [, e] = Chunk473749.useState({});
-  Chunk473749.useEffect(() => {
+  let [, e] = a.useState({});
+  a.useEffect(() => {
     let t = setInterval(() => {
-      module({})
+      e({})
     }, h);
     return () => {
-      clearInterval(exports)
+      clearInterval(t)
     }
   }, [])
 }
 
 function O() {
-  let e = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.getSocket()),
-    [t, r] = Chunk473749.useState(false);
-  return S(), (0, Chunk54381.jsx)("div", {
-    className: l()(Chunk663618.panel, Chunk673696.panel),
-    children: (0, Chunk54381.jsxs)(Chunk481060.zJl, {
-      className: Chunk673696.panel,
-      children: [(0, Chunk54381.jsx)(y, {
-        socket: module,
-        isAverageFrameTime: exports
-      }), (0, Chunk54381.jsx)(T, {
-        socket: module,
-        isAverageFrameTime: exports,
-        onToggleAverageFrameTime: require
-      }), (0, Chunk54381.jsx)(R, {
-        socket: module
-      }), (0, Chunk54381.jsx)(C, {
-        socket: module
+  let e = (0, u.e7)([d.Z], () => d.Z.getSocket()),
+    [t, r] = a.useState(false);
+  return S(), (0, n.jsx)("div", {
+    className: l()(m.panel, f.panel),
+    children: (0, n.jsxs)(i.zJl, {
+      className: f.panel,
+      children: [(0, n.jsx)(y, {
+        socket: e,
+        isAverageFrameTime: t
+      }), (0, n.jsx)(T, {
+        socket: e,
+        isAverageFrameTime: t,
+        onToggleAverageFrameTime: r
+      }), (0, n.jsx)(R, {
+        socket: e
+      }), (0, n.jsx)(C, {
+        socket: e
       })]
     })
   })

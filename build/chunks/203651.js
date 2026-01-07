@@ -177,10 +177,10 @@ E.serializeObject = y, E.parseString = v, E.types = {
   return this.req._parser ? this.req._parser(this, e) : (!t && I(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
 }, T.prototype.toError = function() {
   let e = this.req,
-    t = module.method,
-    n = module.url,
-    r = Error(`cannot ${exports} ${require} (${this.status})`);
-  return r.status = this.status, r.method = exports, r.url = require, r
+    t = e.method,
+    n = e.url,
+    r = Error(`cannot ${t} ${n} (${this.status})`);
+  return r.status = this.status, r.method = t, r.url = n, r
 }, E.Response = T, Chunk206339(C.prototype), p(C.prototype, Chunk615252.prototype), C.prototype.type = function(e) {
   return this.set("Content-Type", E.types[e] || e), this
 }, C.prototype.accept = function(e) {
@@ -210,7 +210,7 @@ E.serializeObject = y, E.parseString = v, E.types = {
   this.clearTimeout(), e && (this._maxRetries && (e.retries = this._retries - 1), this.emit("error", e)), n(e, t)
 }, C.prototype.crossDomainError = function() {
   let e = Error("Request has been terminated\nPossible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.");
-  module.crossDomain = true, module.status = this.status, module.method = this.method, module.url = this.url, this.callback(module)
+  e.crossDomain = true, e.status = this.status, e.method = this.method, e.url = this.url, this.callback(e)
 }, C.prototype.agent = function() {
   return console.warn("This is not supported in browser version of superagent"), this
 }, C.prototype.ca = C.prototype.agent, C.prototype.buffer = C.prototype.ca, C.prototype.write = () => {
@@ -222,7 +222,7 @@ E.serializeObject = y, E.parseString = v, E.types = {
 }, C.prototype._setUploadTimeout = function() {
   let e = this;
   this._uploadTimeout && !this._uploadTimeoutTimer && (this._uploadTimeoutTimer = setTimeout(() => {
-    module._timeoutError("Upload timeout of ", module._uploadTimeout, "ETIMEDOUT")
+    e._timeoutError("Upload timeout of ", e._uploadTimeout, "ETIMEDOUT")
   }, this._uploadTimeout))
 }, C.prototype._end = function() {
   if (this._aborted) return this.callback(Error("The request has been aborted even before .end() was called"));
@@ -230,41 +230,41 @@ E.serializeObject = y, E.parseString = v, E.types = {
   this.xhr = E.getXHR();
   let t = this.xhr,
     n = this._formData || this._data;
-  this._setTimeouts(), exports.addEventListener("readystatechange", () => {
-    let n, r = exports.readyState;
-    if (r >= 2 && module._responseTimeoutTimer && clearTimeout(module._responseTimeoutTimer), 4 === r) {
+  this._setTimeouts(), t.addEventListener("readystatechange", () => {
+    let n, r = t.readyState;
+    if (r >= 2 && e._responseTimeoutTimer && clearTimeout(e._responseTimeoutTimer), 4 === r) {
       try {
-        n = exports.status
+        n = t.status
       } catch (e) {
         n = 0
       }
-      if (!require) {
-        if (module.timedout || module._aborted) return;
-        return module.crossDomainError()
+      if (!n) {
+        if (e.timedout || e._aborted) return;
+        return e.crossDomainError()
       }
-      module.emit("end")
+      e.emit("end")
     }
   });
   let r = (t, n) => {
     n.total > 0 && (n.percent = n.loaded / n.total * 100, 100 === n.percent && clearTimeout(e._uploadTimeoutTimer)), n.direction = t, e.emit("progress", n)
   };
   if (this.hasListeners("progress")) try {
-    exports.addEventListener("progress", r.bind(null, "download")), exports.upload && exports.upload.addEventListener("progress", r.bind(null, "upload"))
+    t.addEventListener("progress", r.bind(null, "download")), t.upload && t.upload.addEventListener("progress", r.bind(null, "upload"))
   } catch (e) {}
-  exports.upload && this._setUploadTimeout();
+  t.upload && this._setUploadTimeout();
   try {
-    this.username && this.password ? exports.open(this.method, this.url, true, this.username, this.password) : exports.open(this.method, this.url, true)
+    this.username && this.password ? t.open(this.method, this.url, true, this.username, this.password) : t.open(this.method, this.url, true)
   } catch (e) {
-    return this.callback(module)
+    return this.callback(e)
   }
-  if (this._withCredentials && (exports.withCredentials = true), !this._formData && "GET" !== this.method && "HEAD" !== this.method && "string" != typeof require && !this._isHost(require)) {
+  if (this._withCredentials && (t.withCredentials = true), !this._formData && "GET" !== this.method && "HEAD" !== this.method && "string" != typeof n && !this._isHost(n)) {
     let e = this._header["content-type"],
-      t = this._serializer || E.serialize[module ? module.split(";")[0] : ""];
-    !exports && I(module) && (t = E.serialize["application/json"]), exports && (n = exports(require))
+      t = this._serializer || E.serialize[e ? e.split(";")[0] : ""];
+    !t && I(e) && (t = E.serialize["application/json"]), t && (n = t(n))
   }
-  for (let e in this.header) null !== this.header[module] && _(this.header, module) && exports.setRequestHeader(module, this.header[module]);
-  this._responseType && (exports.responseType = this._responseType), this.emit("request", this), exports.send(true === require ? null : require)
-}, E.agent = () => new Chunk675246;
+  for (let e in this.header) null !== this.header[e] && _(this.header, e) && t.setRequestHeader(e, this.header[e]);
+  this._responseType && (t.responseType = this._responseType), this.emit("request", this), t.send(true === n ? null : n)
+}, E.agent = () => new h;
 for (var A = 0, N = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; A < N.length; A++) {
   let e = N[A];
   Chunk675246.prototype[module.toLowerCase()] = function(t, n) {

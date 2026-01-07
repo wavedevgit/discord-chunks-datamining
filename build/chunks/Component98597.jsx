@@ -199,23 +199,23 @@ function A(e) {
 }
 class R extends(r = Chunk473749.PureComponent) {
   renderEditButton() {
-    return (0, Chunk54381.jsx)(Z, I({}, this.props))
+    return (0, i.jsx)(Z, I({}, this.props))
   }
   renderInviteButton() {
-    return (0, Chunk54381.jsx)(w, I({}, this.props))
+    return (0, i.jsx)(w, I({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, Chunk54381.jsx)(T, I({}, this.props))
+    return (0, i.jsx)(T, I({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, Chunk54381.jsx)(A, I({}, this.props))
+    return (0, i.jsx)(A, I({}, this.props))
   }
   getClassName() {
     let {
       position: e,
       sortingPosition: t
     } = this.props;
-    return N(module, exports)
+    return N(e, t)
   }
   isDisabled() {
     let {
@@ -223,7 +223,7 @@ class R extends(r = Chunk473749.PureComponent) {
       sorting: t,
       sortingType: n
     } = this.props;
-    return P(module, exports, require)
+    return P(e, t, n)
   }
 }
 _(R, "defaultProps", {

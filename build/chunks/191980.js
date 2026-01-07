@@ -8,13 +8,13 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function i() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "SHOW_KEYBOARD_SHORTCUTS"
   })
 }
 
 function a() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "HIDE_KEYBOARD_SHORTCUTS"
   })
 }

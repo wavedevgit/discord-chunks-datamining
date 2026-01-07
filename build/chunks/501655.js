@@ -157,10 +157,10 @@ class P {
     }), this.participants[e] = n, true)
   }
   rebuild() {
-    let e = Chunk592125.Z.getChannel(this.channelId);
-    if (null == module || !module.isGuildStageVoice()) returnfalse;
-    let t = new Set(Object.keys(Chunk979651.Z.getVoiceStatesForChannel(module.id)));
-    return this._participantsIndex.clear(), this._requestToSpeakIndex.clear(), this.participants = {}, exports.forEach(e => this.updateParticipant(e)), true
+    let e = s.Z.getChannel(this.channelId);
+    if (null == e || !e.isGuildStageVoice()) returnfalse;
+    let t = new Set(Object.keys(f.Z.getVoiceStatesForChannel(e.id)));
+    return this._participantsIndex.clear(), this._requestToSpeakIndex.clear(), this.participants = {}, t.forEach(e => this.updateParticipant(e)), true
   }
   get version() {
     return this._participantsIndex.version

@@ -14,7 +14,7 @@ module.exports = function() {
   function e(e) {
     t(this, "_uri", true), this._uri = e
   }
-  return module.prototype.toString = function() {
+  return e.prototype.toString = function() {
     return this._uri
-  }, module
+  }, e
 }()

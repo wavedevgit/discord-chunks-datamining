@@ -55,11 +55,11 @@ function _(e, t) {
 }
 require("./602091.js");
 let m = "orb-checkout-payment-modal-key",
-  h = () => (0, Chunk481060.VXO)(m);
+  h = () => (0, a.VXO)(m);
 
 function g() {
-  Chunk570140.Z.wait(() => {
-    Chunk570140.Z.dispatch({
+  o.Z.wait(() => {
+    o.Z.dispatch({
       type: "PAYMENT_MODAL_OPEN"
     })
   })

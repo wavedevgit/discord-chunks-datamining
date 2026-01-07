@@ -22,7 +22,7 @@ function c(e, t, n) {
 let u = new Set;
 
 function d() {
-  for (let e of [Chunk268146.X4.HasRTCConnection, Chunk268146.X4.IsSendingVideo, Chunk268146.X4.IsSendingStream, Chunk268146.X4.IsReceivingVideo, Chunk268146.X4.IsReceivingStream]) Chunk998502.ZP.setCrashInformation(module, 0)
+  for (let e of [r.X4.HasRTCConnection, r.X4.IsSendingVideo, r.X4.IsSendingStream, r.X4.IsReceivingVideo, r.X4.IsReceivingStream]) s.ZP.setCrashInformation(e, 0)
 }
 
 function f(e) {

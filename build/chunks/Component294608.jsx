@@ -12,9 +12,9 @@ var Chunk54381 = require("./54381.js"),
 let a = Chunk473749.createContext(true);
 
 function o() {
-  let e = Chunk473749.useContext(a);
-  if (null == module) throw Error("No PollContextProvider found");
-  return module
+  let e = i.useContext(a);
+  if (null == e) throw Error("No PollContextProvider found");
+  return e
 }
 
 function s(e) {
@@ -36,7 +36,7 @@ function l() {
   let {
     poll: e
   } = o();
-  return module.resources
+  return e.resources
 }
 
 function c(e) {
@@ -46,9 +46,9 @@ function c(e) {
 function u() {
   let {
     message: e
-  } = o(), t = module.getChannelId();
-  return Chunk473749.useMemo(() => ({
-    channelId: exports,
-    messageId: module.id
-  }), [module.id, exports])
+  } = o(), t = e.getChannelId();
+  return i.useMemo(() => ({
+    channelId: t,
+    messageId: e.id
+  }), [e.id, t])
 }

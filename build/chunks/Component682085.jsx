@@ -25,22 +25,22 @@ function O() {
   let {
     trackUserProfileAction: e,
     trackUserProfileEditAction: t
-  } = (0, Chunk785717.KZ)(), O = Chunk473749.useRef(false), j = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
+  } = (0, f.KZ)(), O = i.useRef(false), j = (0, l.e7)([d.default], () => d.default.getCurrentUser()), {
     application: x,
     config: P
-  } = (0, Chunk50130.G)(), {
+  } = (0, p.G)(), {
     token: I,
     fetched: w
-  } = (0, Chunk491662.o)(null == P ? true : P.application_id), S = Chunk473749.useMemo(() => (null == P ? true : P.application_id) != null ? new Chunk931847.q({
-    type: Chunk296009.l.APPLICATION,
+  } = (0, s.o)(null == P ? true : P.application_id), S = i.useMemo(() => (null == P ? true : P.application_id) != null ? new g.q({
+    type: a.l.APPLICATION,
     applicationId: P.application_id
-  }) : null, [null == P ? true : P.application_id]), E = Chunk473749.useCallback(() => {
-    exports({
+  }) : null, [null == P ? true : P.application_id]), E = i.useCallback(() => {
+    t({
       action: "PRESS_ADD_WIDGET"
-    }), (0, Chunk481060.ZDy)(async () => {
+    }), (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("38576").then(require.bind(require, 925170));
+      } = await n.e("38576").then(n.bind(n, 925170));
       return n => {
         var i, a;
         return (0, r.jsx)(e, (i = function(e) {
@@ -76,34 +76,34 @@ function O() {
     }, {
       stackingBehavior: "stack"
     })
-  }, [exports]), T = null == j || null == x || null == S || !w, _ = null != I;
-  if (Chunk473749.useEffect(() => {
-      !T && _ && (O.current || (module({
+  }, [t]), T = null == j || null == x || null == S || !w, _ = null != I;
+  if (i.useEffect(() => {
+      !T && _ && (O.current || (e({
         action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
         applicationId: x.id
       }), O.current = true))
-    }, [T, _, module, null == x ? true : x.id]), T) return (0, Chunk54381.jsx)("div", {
-    className: Chunk284459.loading,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+    }, [T, _, e, null == x ? true : x.id]), T) return (0, r.jsx)("div", {
+    className: v.loading,
+    children: (0, r.jsx)(c.$jN, {})
   });
-  if (!_) return (0, Chunk54381.jsx)(Chunk795990.Z, {});
-  let C = (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  if (!_) return (0, r.jsx)(h.Z, {});
+  let C = (0, r.jsxs)(c.Kqy, {
     gap: 4,
-    className: Chunk284459.header,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    className: v.header,
+    children: [(0, r.jsx)(c.Heading, {
       variant: "heading-md/medium",
       color: "text-strong",
-      children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: y.intl.string(y.t["oqalC+"])
+    }), (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: Chunk388032.intl.format(Chunk388032.t.YnNFWa, {
+      children: y.intl.format(y.t.YnNFWa, {
         applicationName: x.name
       })
     })]
   });
-  return (0, Chunk54381.jsx)(Chunk243778.ZP, {
-    contentTypes: [Chunk704215.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
+  return (0, r.jsx)(u.ZP, {
+    contentTypes: [o.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     bypassAutoDismiss: true,
     children: e => {
       let {

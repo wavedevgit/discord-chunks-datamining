@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let o = () => Chunk544891.tn.get({
-  url: Chunk981631.ANM.GUILD_AFFINITIES,
+let o = () => r.tn.get({
+  url: a.ANM.GUILD_AFFINITIES,
   oldFormErrors: true,
   rejectWithError: false
 }).then(e => {
@@ -22,7 +22,7 @@ let o = () => Chunk544891.tn.get({
     guildAffinities: t
   })
 }, () => {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "LOAD_GUILD_AFFINITIES_FAILURE"
   })
 })

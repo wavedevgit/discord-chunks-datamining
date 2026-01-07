@@ -101,6 +101,6 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
     }
   },
   h = () => {
-    let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
-    return (0, Chunk74538.I5)(module)
+    let e = (0, r.e7)([a.default], () => a.default.getCurrentUser());
+    return (0, s.I5)(e)
   }

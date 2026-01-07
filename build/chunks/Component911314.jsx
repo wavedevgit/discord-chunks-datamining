@@ -10,13 +10,13 @@ var Chunk828700 = require("./828700.js"),
   Chunk928207 = require("./928207.jsx"),
   Chunk981631 = require("./981631.js");
 let s = (0, Chunk730749.Z)(function() {
-  return (0, Chunk54381.jsxs)(Chunk828700.rs, {
-    children: [(0, Chunk54381.jsx)(Chunk828700.AW, {
-      path: Chunk981631.Z5c.APPLICATION_STORE,
+  return (0, r.jsxs)(i.rs, {
+    children: [(0, r.jsx)(i.AW, {
+      path: o.Z5c.APPLICATION_STORE,
       exact: true,
-      render: () => (0, Chunk54381.jsx)(Chunk928207.Z, {})
-    }), (0, Chunk54381.jsx)(Chunk828700.l_, {
-      to: Chunk981631.Z5c.APP
+      render: () => (0, r.jsx)(a.Z, {})
+    }), (0, r.jsx)(i.l_, {
+      to: o.Z5c.APP
     })]
   })
 })

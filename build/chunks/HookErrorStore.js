@@ -23,7 +23,7 @@ function c() {
 }
 
 function u() {
-  delete l[Chunk981631.K3D.SOUND]
+  delete l[o.K3D.SOUND]
 }
 
 function d(e) {

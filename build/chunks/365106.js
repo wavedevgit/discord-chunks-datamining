@@ -28,13 +28,13 @@ function o(e) {
 }
 var n, l, i = (n = function e() {
   var r, t, a = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
-  if (!(this instanceof module)) throw TypeError("Cannot call a class as a function");
-  t = true, (r = o(r = "items")) in this ? Object.defineProperty(this, exports, {
-    value: require,
+  if (!(this instanceof e)) throw TypeError("Cannot call a class as a function");
+  t = true, (r = o(r = "items")) in this ? Object.defineProperty(this, r, {
+    value: t,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : this[exports] = require, this.items = a
+  }) : this[r] = t, this.items = a
 }, l = [{
   key: "add",
   value: function(e) {

@@ -48,10 +48,10 @@ let v = false,
   S = false;
 class I extends Chunk287545.Z {
   _initialize() {
-    super._initialize(), Chunk522474.Z.addChangeListener(this.handlePopoutWindowUpdate), Chunk570140.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._initialize(), s.Z.addChangeListener(this.handlePopoutWindowUpdate), o.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   _terminate() {
-    super._terminate(), Chunk522474.Z.removeChangeListener(this.handlePopoutWindowUpdate), Chunk570140.Z.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+    super._terminate(), s.Z.removeChangeListener(this.handlePopoutWindowUpdate), o.Z.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   showErrorModal(e) {
     let {
@@ -82,7 +82,7 @@ class I extends Chunk287545.Z {
     }, t)))
   }
   showDevShelfOverrideEnabled() {
-    (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.JfA7IK), Chunk481060.ToastType.SUCCESS))
+    (0, a.showToast)((0, a.createToast)(b.intl.string(b.t.JfA7IK), a.ToastType.SUCCESS))
   }
   leaveActivity(e) {
     let {

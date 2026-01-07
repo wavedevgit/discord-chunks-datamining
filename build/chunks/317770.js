@@ -15,8 +15,8 @@ require.d(exports, {
 }), require("./388685.js"), require("./17089.js");
 class i {
   initialize() {
-    for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-    this.isInitialized || (this.isInitialized = true, this._initialize(...exports))
+    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+    this.isInitialized || (this.isInitialized = true, this._initialize(...t))
   }
   terminate() {
     this.isInitialized && (this.isInitialized = false, this._terminate())

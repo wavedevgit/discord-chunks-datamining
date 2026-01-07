@@ -155,8 +155,8 @@ class N extends(a = Chunk473749.PureComponent) {
     let {
       items: e
     } = this.props;
-    module.length > 0 && module[0].type === Chunk981631.s9s.IMG && this.setState({
-      imageLoadingStartTime: new Map(this.state.imageLoadingStartTime).set(module[0].src, Date.now())
+    e.length > 0 && e[0].type === b.s9s.IMG && this.setState({
+      imageLoadingStartTime: new Map(this.state.imageLoadingStartTime).set(e[0].src, Date.now())
     })
   }
   handleCurrentItemClick(e, t) {
@@ -177,13 +177,13 @@ class N extends(a = Chunk473749.PureComponent) {
     } = this.props, {
       hasInteracted: l
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk453499.Z, {
-      items: module.slice(0, 12),
-      delay: exports,
-      initialPaused: a || Chunk120356,
+    return (0, r.jsx)(p.Z, {
+      items: e.slice(0, 12),
+      delay: t,
+      initialPaused: a || l,
       renderItem: this.renderItem,
-      className: s()(Chunk410697.smallCarousel, require),
-      themedPagination: Chunk473749,
+      className: s()(v.smallCarousel, n),
+      themedPagination: i,
       onIntentionalChange: this.handleIntentionalChange,
       onChangeItem: this.handleChangeItem
     })

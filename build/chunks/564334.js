@@ -80,7 +80,7 @@ class c {
     var e = Math.round(this.red).toString(16),
       t = Math.round(this.green).toString(16),
       n = Math.round(this.blue).toString(16);
-    return "#" + (this.red > 15.5 ? module : "0" + module) + (this.green > 15.5 ? exports : "0" + exports) + (this.blue > 15.5 ? require : "0" + require)
+    return "#" + (this.red > 15.5 ? e : "0" + e) + (this.green > 15.5 ? t : "0" + t) + (this.blue > 15.5 ? n : "0" + n)
   }
   static parseString(e) {
     return null != e.match(l) ? this.parseColorFnString(e) : null != e.match(s) ? this.parseHexString(e) : true
@@ -126,7 +126,7 @@ class c {
     var e = this.red / 255,
       t = this.green / 255,
       n = this.blue / 255;
-    return .2126 * (module <= .03928 ? module / 12.92 : Math.pow((module + .055) / 1.055, 2.4)) + .7152 * (exports <= .03928 ? exports / 12.92 : Math.pow((exports + .055) / 1.055, 2.4)) + .0722 * (require <= .03928 ? require / 12.92 : Math.pow((require + .055) / 1.055, 2.4))
+    return .2126 * (e <= .03928 ? e / 12.92 : Math.pow((e + .055) / 1.055, 2.4)) + .7152 * (t <= .03928 ? t / 12.92 : Math.pow((t + .055) / 1.055, 2.4)) + .0722 * (n <= .03928 ? n / 12.92 : Math.pow((n + .055) / 1.055, 2.4))
   }
   constructor(e, t, n, i) {
     r(this, "red", true), r(this, "green", true), r(this, "blue", true), r(this, "alpha", true), this.red = e, this.green = t, this.blue = n, this.alpha = i

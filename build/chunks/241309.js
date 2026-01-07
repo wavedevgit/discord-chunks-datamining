@@ -17,11 +17,11 @@ function l(e, t) {
 }
 
 function a() {
-  return l(0, Chunk388032.intl.string(Chunk388032.t.uXA573))
+  return l(0, i.intl.string(i.t.uXA573))
 }
 
 function s() {
-  return l(0, Chunk388032.intl.string(Chunk388032.t.kesTVT))
+  return l(0, i.intl.string(i.t.kesTVT))
 }
 
 function o(e, t) {

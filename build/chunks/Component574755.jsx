@@ -25,42 +25,42 @@ var Chunk54381 = require("./54381.js"),
 function y() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk924557.w9)(), n = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), {
+  } = (0, s.ZP)(), t = (0, f.w9)(), n = (0, a.e7)([d.Z], () => d.Z.getSubsection()), {
     enableAdvancedSignals: y
-  } = Chunk924557.NV.useExperiment({
+  } = f.NV.useExperiment({
     location: "clips_settings"
   }, {
     autoTrackExposure: false
   });
-  Chunk473749.useEffect(() => {
-    (0, Chunk266454.Q3)(Chunk704215.z.CLIPS_SETTINGS_BETA_TAG)
+  i.useEffect(() => {
+    (0, l.Q3)(o.z.CLIPS_SETTINGS_BETA_TAG)
   });
   let O = [{
-      title: Chunk388032.intl.string(Chunk388032.t.iIwmV5),
-      component: Chunk320091.Z,
-      setting: Chunk726985.s6.CLIPS_RECORDING_TAB,
-      subsection: Chunk526761.M6,
-      predicate: () => exports
+      title: b.intl.string(b.t.iIwmV5),
+      component: m.Z,
+      setting: E.s6.CLIPS_RECORDING_TAB,
+      subsection: g.M6,
+      predicate: () => t
     }, {
-      title: Chunk388032.intl.string(Chunk388032.t.sA0WKL),
-      component: Chunk361244.Z,
-      setting: Chunk726985.s6.CLIPS_AUTOMATIC_TAB,
-      subsection: Chunk526761.d5,
-      predicate: () => exports && y
+      title: b.intl.string(b.t.sA0WKL),
+      component: p.Z,
+      setting: E.s6.CLIPS_AUTOMATIC_TAB,
+      subsection: g.d5,
+      predicate: () => t && y
     }, {
-      title: Chunk388032.intl.string(Chunk388032.t.GcIeET),
-      component: Chunk902451.Z,
-      setting: Chunk726985.s6.CLIPS_PRIVACY_TAB,
-      subsection: Chunk526761.Sr
+      title: b.intl.string(b.t.GcIeET),
+      component: _.Z,
+      setting: E.s6.CLIPS_PRIVACY_TAB,
+      subsection: g.Sr
     }],
     v = O.findIndex(e => null != e.subsection && e.subsection === n);
-  return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: module,
-    children: (0, Chunk54381.jsx)(Chunk10298.N, {
-      header: Chunk388032.intl.string(Chunk388032.t.z2jK6X),
-      children: (0, Chunk54381.jsx)(Chunk526156.Z, {
-        parentSetting: Chunk726985.s6.CLIPS,
-        settingsSection: Chunk981631.oAB.CLIPS,
+  return (0, r.jsx)(s.Gt, {
+    value: e,
+    children: (0, r.jsx)(c.N, {
+      header: b.intl.string(b.t.z2jK6X),
+      children: (0, r.jsx)(u.Z, {
+        parentSetting: E.s6.CLIPS,
+        settingsSection: h.oAB.CLIPS,
         tabs: O,
         defaultTabIndex: v > false ? v : true
       })

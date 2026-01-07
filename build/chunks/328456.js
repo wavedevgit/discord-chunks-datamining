@@ -20,13 +20,13 @@ function o(e, t, n) {
 }
 class s {
   get firstAvatarDecoration() {
-    return this.getFirstItemByType(Chunk979554.Z.AVATAR_DECORATION)
+    return this.getFirstItemByType(i.Z.AVATAR_DECORATION)
   }
   get firstProfileEffect() {
-    return this.getFirstItemByType(Chunk979554.Z.PROFILE_EFFECT)
+    return this.getFirstItemByType(i.Z.PROFILE_EFFECT)
   }
   get firstNameplate() {
-    return this.getFirstItemByType(Chunk979554.Z.NAMEPLATE)
+    return this.getFirstItemByType(i.Z.NAMEPLATE)
   }
   getFirstItemByType(e) {
     var t;

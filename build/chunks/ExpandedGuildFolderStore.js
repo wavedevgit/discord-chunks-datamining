@@ -19,11 +19,11 @@ function s(e, t, n) {
 let l = new Set;
 
 function c() {
-  let e = Chunk581883.Z.getGuildFolders();
-  if (null == module) returnfalse;
+  let e = o.Z.getGuildFolders();
+  if (null == e) returnfalse;
   let t = false;
-  for (let n of l) module.some(e => e.folderId === n) || ((l = new Set(l)).delete(require), t = true);
-  return exports
+  for (let n of l) e.some(e => e.folderId === n) || ((l = new Set(l)).delete(n), t = true);
+  return t
 }
 
 function u(e) {

@@ -10,8 +10,8 @@ var Chunk127849 = require("./127849.js"),
   Chunk338045 = require("./338045.js"),
   u = Chunk127849.Function,
   d = /MSIE .\./.test(Chunk476078) || "BUN" === Chunk284955 && function() {
-    var e = Chunk127849.Bun.version.split(".");
-    return module.length < 3 || "0" === module[0] && (module[1] < 3 || "3" === module[1] && "0" === module[2])
+    var e = r.Bun.version.split(".");
+    return e.length < 3 || "0" === e[0] && (e[1] < 3 || "3" === e[1] && "0" === e[2])
   }();
 module.exports = function(e, t) {
   var n = t ? 2 : 1;

@@ -58,13 +58,13 @@ class f extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   get lastOpenTabId() {
     var e;
-    return null != (e = u.lastOpenTabId) ? module : null
+    return null != (e = u.lastOpenTabId) ? e : null
   }
   get displayTools() {
-    return Chunk906467.Z.isDeveloper && u.displayTools
+    return o.Z.isDeveloper && u.displayTools
   }
   get showDevWidget() {
-    return Chunk906467.Z.isDeveloper && u.showDevWidget
+    return o.Z.isDeveloper && u.showDevWidget
   }
   get devWidgetPosition() {
     return u.devWidgetPosition

@@ -16,10 +16,10 @@ var Chunk509613 = require("./509613.js"),
   Chunk343597 = require("./343597.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = (0, Chunk509613.k4)(Chunk313789.n.ACCESSIBILITY_OVERVIEW, {
-  useSubnavLabel: () => Chunk388032.intl.string(Chunk388032.t.fTNxW7),
+  useSubnavLabel: () => d.intl.string(d.t.fTNxW7),
   useNotice: () => ({
-    type: Chunk970013.v.STRONGLY_DISCOURAGED_CUSTOM,
-    notice: Chunk154022.No
+    type: l.v.STRONGLY_DISCOURAGED_CUSTOM,
+    notice: u.No
   }),
-  buildLayout: () => [Chunk578147.O, Chunk276984.R, Chunk343597.E, Chunk195151.b, Chunk244355.h, Chunk61440.F, Chunk169804.v]
+  buildLayout: () => [S.O, r.R, E.E, o.b, T.h, a.F, c.v]
 })

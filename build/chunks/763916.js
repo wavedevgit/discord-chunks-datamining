@@ -25,6 +25,6 @@ function o(e) {
 }
 let s = {
   initialize() {
-    Chunk570140.Z.subscribe("CHECK_LAUNCHABLE_GAME", o)
+    r.Z.subscribe("CHECK_LAUNCHABLE_GAME", o)
   }
 }

@@ -29,24 +29,24 @@ class h extends(r = Chunk473749.PureComponent) {
     let {
       paymentSource: e
     } = this.props;
-    if (module instanceof Chunk46141.qo) return Chunk219929.ZP.Types.PAYPAL;
-    if (module instanceof Chunk46141.Sf) return Chunk219929.ZP.Types.SOFORT;
-    if (module instanceof Chunk46141.dm) return Chunk219929.ZP.getType(module.brand);
-    if (module instanceof Chunk46141.fv) return Chunk219929.ZP.Types.GIROPAY;
-    if (module instanceof Chunk46141.Vg) return Chunk219929.ZP.Types.PRZELEWY24;
-    else if (module instanceof Chunk46141.sn) return Chunk219929.ZP.Types.PAYSAFECARD;
-    else if (module instanceof Chunk46141.o_) return Chunk219929.ZP.Types.GCASH;
-    else if (module instanceof Chunk46141.kX) return Chunk219929.ZP.Types.GRABPAY;
-    else if (module instanceof Chunk46141.z) return Chunk219929.ZP.Types.MOMO_WALLET;
-    else if (module instanceof Chunk46141.Xc) return Chunk219929.ZP.Types.VENMO;
-    else if (module instanceof Chunk46141.Om) return Chunk219929.ZP.Types.KAKAOPAY;
-    else if (module instanceof Chunk46141.JC) return Chunk219929.ZP.Types.GOPAY_WALLET;
-    else if (module instanceof Chunk46141.U4) return Chunk219929.ZP.Types.BANCONTACT;
-    else if (module instanceof Chunk46141.D0) return Chunk219929.ZP.Types.EPS;
-    else if (module instanceof Chunk46141.jc) return Chunk219929.ZP.Types.IDEAL;
-    else if (module instanceof Chunk46141.u_) return Chunk219929.ZP.Types.CASH_APP;
-    else if (module instanceof Chunk46141.$z) return Chunk219929.ZP.Types.APPLE;
-    return Chunk219929.ZP.Types.UNKNOWN
+    if (e instanceof u.qo) return c.ZP.Types.PAYPAL;
+    if (e instanceof u.Sf) return c.ZP.Types.SOFORT;
+    if (e instanceof u.dm) return c.ZP.getType(e.brand);
+    if (e instanceof u.fv) return c.ZP.Types.GIROPAY;
+    if (e instanceof u.Vg) return c.ZP.Types.PRZELEWY24;
+    else if (e instanceof u.sn) return c.ZP.Types.PAYSAFECARD;
+    else if (e instanceof u.o_) return c.ZP.Types.GCASH;
+    else if (e instanceof u.kX) return c.ZP.Types.GRABPAY;
+    else if (e instanceof u.z) return c.ZP.Types.MOMO_WALLET;
+    else if (e instanceof u.Xc) return c.ZP.Types.VENMO;
+    else if (e instanceof u.Om) return c.ZP.Types.KAKAOPAY;
+    else if (e instanceof u.JC) return c.ZP.Types.GOPAY_WALLET;
+    else if (e instanceof u.U4) return c.ZP.Types.BANCONTACT;
+    else if (e instanceof u.D0) return c.ZP.Types.EPS;
+    else if (e instanceof u.jc) return c.ZP.Types.IDEAL;
+    else if (e instanceof u.u_) return c.ZP.Types.CASH_APP;
+    else if (e instanceof u.$z) return c.ZP.Types.APPLE;
+    return c.ZP.Types.UNKNOWN
   }
   getLabel(e) {
     return e instanceof u.dm ? p.intl.format(p.t["o/dsrL"], {
@@ -63,10 +63,10 @@ class h extends(r = Chunk473749.PureComponent) {
       paymentSource: e,
       descriptionClassName: t
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: exports,
+    return (0, i.jsx)(o.Text, {
+      className: t,
       variant: "text-md/semibold",
-      children: this.getLabel(module)
+      children: this.getLabel(e)
     })
   }
   renderSubText() {
@@ -74,10 +74,10 @@ class h extends(r = Chunk473749.PureComponent) {
       paymentSource: e,
       locale: t
     } = this.props, n = null;
-    return module instanceof Chunk46141.dm ? n = Chunk388032.intl.formatToPlainString(Chunk388032.t["8rTTuf"], {
-      month: (0, Chunk122289.E2)(module.expiresMonth, exports),
-      year: module.expiresYear
-    }) : module instanceof Chunk46141.qo || module instanceof Chunk46141.Sf || module instanceof Chunk46141.Vg ? n = module.email : module instanceof Chunk46141.Xc ? n = "@" + module.username : module instanceof Chunk46141.u_ && (n = module.username), require
+    return e instanceof u.dm ? n = p.intl.formatToPlainString(p.t["8rTTuf"], {
+      month: (0, d.E2)(e.expiresMonth, t),
+      year: e.expiresYear
+    }) : e instanceof u.qo || e instanceof u.Sf || e instanceof u.Vg ? n = e.email : e instanceof u.Xc ? n = "@" + e.username : e instanceof u.u_ && (n = e.username), n
   }
   render() {
     let {
@@ -88,29 +88,29 @@ class h extends(r = Chunk473749.PureComponent) {
       showPaymentSourceIcon: a,
       showLabels: s
     } = this.props, u = this.renderSubText();
-    return (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      children: [Chunk473749 && (0, Chunk54381.jsx)(Chunk219929.ZP, {
+    return (0, i.jsxs)(l.Z, {
+      children: [a && (0, i.jsx)(c.ZP, {
         type: this.typeString
-      }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-        direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk634499.descriptionWrapper,
-        children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
-          align: Chunk600164.Z.Align.CENTER,
-          children: [this.renderDescription(), Chunk987032 && module ? (0, Chunk54381.jsx)("div", {
-            className: Chunk634499.defaultIndicator,
-            children: Chunk388032.intl.string(Chunk388032.t.bBvAEH)
-          }) : null, r ? (0, Chunk54381.jsx)("div", {
-            className: Chunk634499.premiumIndicator,
-            children: Chunk388032.intl.string(Chunk388032.t.YCrcPL)
-          }) : null, Chunk987032 && exports.invalid ? (0, Chunk54381.jsx)("div", {
-            className: Chunk634499.invalidIndicator,
-            children: Chunk388032.intl.string(Chunk388032.t["851k93"])
+      }), (0, i.jsxs)(l.Z, {
+        direction: l.Z.Direction.VERTICAL,
+        className: _.descriptionWrapper,
+        children: [(0, i.jsxs)(l.Z, {
+          align: l.Z.Align.CENTER,
+          children: [this.renderDescription(), s && e ? (0, i.jsx)("div", {
+            className: _.defaultIndicator,
+            children: p.intl.string(p.t.bBvAEH)
+          }) : null, r ? (0, i.jsx)("div", {
+            className: _.premiumIndicator,
+            children: p.intl.string(p.t.YCrcPL)
+          }) : null, s && t.invalid ? (0, i.jsx)("div", {
+            className: _.invalidIndicator,
+            children: p.intl.string(p.t["851k93"])
           }) : null]
-        }), require && null != Chunk46141 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
+        }), n && null != u ? (0, i.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          className: Chunk634499.subText,
-          children: Chunk46141
+          className: _.subText,
+          children: u
         }) : null]
       })]
     })

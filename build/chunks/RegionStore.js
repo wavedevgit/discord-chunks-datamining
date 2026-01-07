@@ -12,33 +12,33 @@ let u = null,
   d = {};
 class p extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z)
+    this.waitFor(c.Z)
   }
   getOptimalRegion() {
     var e;
     let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-      n = this.getRegions(exports);
-    return null != require ? null != (e = require.find(e => {
+      n = this.getRegions(t);
+    return null != n ? null != (e = n.find(e => {
       let {
         optimal: t
       } = e;
       return t
-    })) ? module : a().sample(require) : null
+    })) ? e : a().sample(n) : null
   }
   getOptimalRegionId() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-      t = this.getOptimalRegion(module);
-    return null != exports ? exports.id : null
+      t = this.getOptimalRegion(e);
+    return null != t ? t.id : null
   }
   getRandomRegion() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-      t = this.getRegions(module);
-    return null != exports ? a().sample(exports) : null
+      t = this.getRegions(e);
+    return null != t ? a().sample(t) : null
   }
   getRandomRegionId() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-      t = this.getRandomRegion(module);
-    return null != exports ? exports.id : null
+      t = this.getRandomRegion(e);
+    return null != t ? t.id : null
   }
   getRegions(e) {
     return null != e ? d[e] : u

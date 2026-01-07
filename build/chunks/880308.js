@@ -12,10 +12,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk790920 = require("./790920.js");
 
 function c() {
-  let e = (0, Chunk790920.z)(),
-    t = Chunk695346.Sb.getSetting(),
-    n = (0, Chunk442837.e7)([Chunk115130.Z], () => Chunk115130.Z.getFetchState(), []);
-  return Chunk473749.useEffect(() => {
-    module && exports && require === Chunk115130.O.INITIALIZED && (0, Chunk566620.$h)()
-  }, [module, require, exports]), null
+  let e = (0, l.z)(),
+    t = a.Sb.getSetting(),
+    n = (0, i.e7)([o.Z], () => o.Z.getFetchState(), []);
+  return r.useEffect(() => {
+    e && t && n === o.O.INITIALIZED && (0, s.$h)()
+  }, [e, n, t]), null
 }

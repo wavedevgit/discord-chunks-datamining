@@ -8,9 +8,9 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   d = require.n(Chunk512722);
 let f = (0, require("./170830.js").G)(async () => {
-  let t = await Promise.all([require.e("43676"), require.e("43903")]).then(require.bind(require, 241441)),
-    e = await module.default();
-  a = exports.cwrap("lottie_create", "number", ["string"]), s = exports._lottie_destroy, h = exports._lottie_draw_into_bgra, o = exports._lottie_draw_into_rgba, l = exports._lottie_frame_count, c = exports._lottie_frame_rate, u = exports._memory_create, n = exports, r = u(409600)
+  let t = await Promise.all([i.e("43676"), i.e("43903")]).then(i.bind(i, 241441)),
+    e = await t.default();
+  a = e.cwrap("lottie_create", "number", ["string"]), s = e._lottie_destroy, h = e._lottie_draw_into_bgra, o = e._lottie_draw_into_rgba, l = e._lottie_frame_count, c = e._lottie_frame_rate, u = e._memory_create, n = e, r = u(409600)
 });
 
 function v(t, e) {

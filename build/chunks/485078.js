@@ -26,8 +26,8 @@ module.exports = function() {
   function e(e) {
     r(this, "_decorators", true), this._decorators = e.slice()
   }
-  var t = module.prototype;
-  return exports.getDecorations = function(e, t) {
+  var t = e.prototype;
+  return t.getDecorations = function(e, t) {
     var n = Array(e.getText().length).fill(null);
     return this._decorators.forEach(function(r, i) {
       var l = 0;
@@ -35,11 +35,11 @@ module.exports = function() {
         o(n, e, t) && (s(n, e, t, i + a + l), l++)
       }, t)
     }), i(n)
-  }, exports.getComponentForKey = function(e) {
+  }, t.getComponentForKey = function(e) {
     var t = parseInt(e.split(a)[0], 10);
     return this._decorators[t].component
-  }, exports.getPropsForKey = function(e) {
+  }, t.getPropsForKey = function(e) {
     var t = parseInt(e.split(a)[0], 10);
     return this._decorators[t].props
-  }, module
+  }, e
 }()

@@ -54,7 +54,7 @@ function S() {
   let e = 1e3,
     t = 5e3,
     n = .05;
-  return E < 1e3 || Math.random() < (1 - require) * Math.max(0, 1 - (E - module) / (exports - module)) + require
+  return E < 1e3 || Math.random() < (1 - n) * Math.max(0, 1 - (E - e) / (t - e)) + n
 }
 
 function I(e) {
@@ -72,19 +72,19 @@ function I(e) {
 }
 
 function T() {
-  let e = Chunk240458.V.getCurrentConfig({
+  let e = u.V.getCurrentConfig({
       location: "WordFrequencyStore"
     }, {
       autoTrackExposure: true
     }).enabled,
-    t = (0, Chunk657871.kB)("WordFrequencyStore", {
+    t = (0, c.kB)("WordFrequencyStore", {
       autoTrackExposure: false
     }).enabled;
-  return module || exports
+  return e || t
 }
 
 function C() {
-  return !!Chunk353926.Z.hasLoadedExperiments && Chunk240458.V.getCurrentConfig({
+  return !!s.Z.hasLoadedExperiments && u.V.getCurrentConfig({
     location: "WordFrequencyStore"
   }, {
     autoTrackExposure: false

@@ -38,5 +38,5 @@ var Chunk46015 = require("./46015.js"),
     return o(r, "source") || (r.source = g(b, "string" == typeof t ? t : "")), e
   };
 Function.prototype.toString = y(function() {
-  return Chunk880181(this) && f(this).source || Chunk845691(this)
+  return a(this) && f(this).source || c(this)
 }, "toString")

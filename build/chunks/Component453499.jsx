@@ -28,10 +28,10 @@ function v(e, t, n) {
 }
 class C extends(a = Chunk473749.PureComponent) {
   componentDidMount() {
-    Chunk585483.S.subscribe(Chunk981631.CkL.CAROUSEL_PREV, this.handlePrevious), Chunk585483.S.subscribe(Chunk981631.CkL.CAROUSEL_NEXT, this.handleNext)
+    f.S.subscribe(g.CkL.CAROUSEL_PREV, this.handlePrevious), f.S.subscribe(g.CkL.CAROUSEL_NEXT, this.handleNext)
   }
   componentWillUnmount() {
-    Chunk585483.S.unsubscribe(Chunk981631.CkL.CAROUSEL_PREV, this.handlePrevious), Chunk585483.S.unsubscribe(Chunk981631.CkL.CAROUSEL_NEXT, this.handleNext)
+    f.S.unsubscribe(g.CkL.CAROUSEL_PREV, this.handlePrevious), f.S.unsubscribe(g.CkL.CAROUSEL_NEXT, this.handleNext)
   }
   render() {
     let {
@@ -42,34 +42,34 @@ class C extends(a = Chunk473749.PureComponent) {
       paginationDotClassName: r,
       paginationDotSelectedClassName: l,
       paginationArrowIconType: s = "arrow"
-    } = this.props, c = o()(Chunk79698.arrowHitbox, {
-      [Chunk79698.arrowHitboxPadding]: require
+    } = this.props, c = o()(x.arrowHitbox, {
+      [x.arrowHitboxPadding]: n
     }, a);
-    return (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk79698.controls, this.props.className),
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk392711,
-        children: (0, Chunk54381.jsx)(Chunk481060.hU, {
+    return (0, i.jsxs)("div", {
+      className: o()(x.controls, this.props.className),
+      children: [(0, i.jsx)("div", {
+        className: c,
+        children: (0, i.jsx)(p.hU, {
           variant: "icon-only",
-          icon: "caret" === Chunk120356 ? Chunk481060.V7D : Chunk481060.whL,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.vgfxaA),
+          icon: "caret" === s ? p.V7D : p.whL,
+          "aria-label": b.intl.string(b.t.vgfxaA),
           onClick: this.handlePrevious
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk79698.dots,
-        children: d().times(exports, t => (0, i.jsx)(p.P3F, {
+      }), (0, i.jsx)("div", {
+        className: x.dots,
+        children: d().times(t, t => (0, i.jsx)(p.P3F, {
           onClick: () => this.handleDotClick(t),
           className: t === e ? o()(x.dotSelected, l) : o()(x.dotNormal, r),
           "aria-label": b.intl.formatToPlainString(b.t["2SXOrM"], {
             pageNumber: t + 1
           })
         }, "dot-".concat(t)))
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk392711,
-        children: (0, Chunk54381.jsx)(Chunk481060.hU, {
+      }), (0, i.jsx)("div", {
+        className: c,
+        children: (0, i.jsx)(p.hU, {
           variant: "icon-only",
-          icon: "caret" === Chunk120356 ? Chunk481060.Fbu : Chunk481060.ZSh,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.XiOHRX),
+          icon: "caret" === s ? p.Fbu : p.ZSh,
+          "aria-label": b.intl.string(b.t.XiOHRX),
           onClick: this.handleNext
         })
       })]
@@ -105,10 +105,10 @@ v(C, "defaultProps", {
 });
 class j extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
-    Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocusChange), this.props.initialPaused || this.state.paused || this.startTimer()
+    m.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocusChange), this.props.initialPaused || this.state.paused || this.startTimer()
   }
   componentWillUnmount() {
-    this.stopTimer(), Chunk570140.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocusChange)
+    this.stopTimer(), m.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocusChange)
   }
   componentDidUpdate(e, t) {
     let n = (e, t) => !e.initialPaused && !t.paused,
@@ -162,37 +162,37 @@ class j extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       visibleIndex: j
     } = this.state;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk79698.root,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: o()(Chunk79698.carouselContainer, require),
-        style: Chunk981631,
+    return (0, i.jsxs)("div", {
+      className: x.root,
+      children: [(0, i.jsxs)("div", {
+        className: o()(x.carouselContainer, n),
+        style: g,
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
-        children: [(0, Chunk54381.jsx)("div", {
+        children: [(0, i.jsx)("div", {
           style: {
-            aspectRatio: Chunk388032
+            aspectRatio: b
           },
-          children: (0, Chunk54381.jsx)(Chunk578361.Z, {
-            className: o()(Chunk79698.carousel, a),
+          children: (0, i.jsx)(h.Z, {
+            className: o()(x.carousel, a),
             step: j,
             direction: this.getCurrentDirection(),
             springSettings: r,
-            fadeInOut: Chunk473749,
-            children: exports(module[j], j)
+            fadeInOut: l,
+            children: t(e[j], j)
           })
-        }), module.length > 1 && (0, Chunk54381.jsx)(C, {
-          className: o()(Chunk120356, Chunk570140 ? Chunk79698.themedPagination : Chunk79698.pagination),
-          arrowClassName: Chunk392711,
-          includeHitboxPadding: Chunk585483,
+        }), e.length > 1 && (0, i.jsx)(C, {
+          className: o()(s, m ? x.themedPagination : x.pagination),
+          arrowClassName: c,
+          includeHitboxPadding: f,
           current: j,
-          count: module.length,
+          count: e.length,
           onChangePage: t => this.changeItem(e, t),
           onSetItem: this.handleSetItem,
           onIntentionalChange: this.handleIntentionalChange,
           paginationArrowIconType: d,
-          paginationDotClassName: Chunk846519,
-          paginationDotSelectedClassName: Chunk481060
+          paginationDotClassName: u,
+          paginationDotSelectedClassName: p
         })]
       }), null != v && v({
         step: j,

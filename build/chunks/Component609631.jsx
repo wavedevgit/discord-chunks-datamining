@@ -327,42 +327,42 @@ class D extends(r = Chunk473749.Component) {
       position: e,
       autoInvert: t
     } = this.props, n = this.elementRef.current;
-    c()(null != require, "Unexpected null element");
-    let r = (0, Chunk168718.wL)(require),
+    c()(null != n, "Unexpected null element");
+    let r = (0, m.wL)(n),
       {
         style: i,
         nudge: a
-      } = this.calculatePositionStyle(module, require, r),
+      } = this.calculatePositionStyle(e, n, r),
       o = {
-        position: module,
-        style: Chunk54381,
-        nudge: Chunk473749
+        position: e,
+        style: i,
+        nudge: a
       },
-      s = C(module, Chunk54381, require, r),
+      s = C(e, i, n, r),
       l = s,
       u = null,
       d = 0;
-    if (exports && s < 0) {
-      let t = N(module),
-        i = this.calculatePositionStyle(exports, require, r);
-      u = Chunk54381.style, d = Chunk54381.nudge;
-      let a = C(exports, Chunk374470, require, r);
-      if (Chunk473749 > s && (o = {
-          position: exports,
-          style: Chunk374470,
-          nudge: Chunk155127
-        }, l = Chunk473749), s < 0 && Chunk473749 < 0) {
-        let i, a = Chunk120356.position;
-        if ((i = "top" === Chunk473749 || "bottom" === Chunk473749 ? "overlap_vertical" : "left" === Chunk473749 || "right" === Chunk473749 ? "overlap_horizontal" : Chunk473749) !== module && Chunk54381 !== exports) {
-          let e = this.calculatePositionStyle(Chunk54381, require, r, Chunk473749),
-            t = C(N(Chunk473749), module.style, require, r);
-          exports > Chunk512722 && (o = E({
-            position: Chunk473749
-          }, module), l = exports)
+    if (t && s < 0) {
+      let t = N(e),
+        i = this.calculatePositionStyle(t, n, r);
+      u = i.style, d = i.nudge;
+      let a = C(t, u, n, r);
+      if (a > s && (o = {
+          position: t,
+          style: u,
+          nudge: d
+        }, l = a), s < 0 && a < 0) {
+        let i, a = o.position;
+        if ((i = "top" === a || "bottom" === a ? "overlap_vertical" : "left" === a || "right" === a ? "overlap_horizontal" : a) !== e && i !== t) {
+          let e = this.calculatePositionStyle(i, n, r, a),
+            t = C(N(a), e.style, n, r);
+          t > l && (o = E({
+            position: a
+          }, e), l = t)
         }
       }
     }
-    return P(Chunk512722, require, Chunk120356)
+    return P(l, n, o)
   }
   componentDidMount() {
     var e, t;
@@ -374,7 +374,7 @@ class D extends(r = Chunk473749.Component) {
       isPositioned: true
     }, this.calculateState()));
     let i = this.elementRef.current;
-    c()(null != Chunk54381, "Missing elementRef"), null != require.current && O.set(Chunk54381, require.current), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.addEventListener("resize", this.updatePosition), null == r || r()
+    c()(null != i, "Missing elementRef"), null != n.current && O.set(i, n.current), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.addEventListener("resize", this.updatePosition), null == r || r()
   }
   componentDidUpdate(e, t) {
     if (T(e) === T(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
@@ -385,14 +385,14 @@ class D extends(r = Chunk473749.Component) {
   componentWillUnmount() {
     var e, t, n, r;
     let i = this.elementRef.current;
-    c()(null != Chunk54381, "Missing elementRef"), O.delete(Chunk54381), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.removeEventListener("resize", this.updatePosition), null == (n = (r = this.props).onUnmount) || require.call(r)
+    c()(null != i, "Missing elementRef"), O.delete(i), null == i || null == (t = i.ownerDocument) || null == (e = t.defaultView) || e.removeEventListener("resize", this.updatePosition), null == (n = (r = this.props).onUnmount) || n.call(r)
   }
   calculateMaxHeight() {
     let e = this.elementRef.current;
-    if (null == module) return;
-    let t = (0, Chunk168718.wL)(module),
+    if (null == e) return;
+    let t = (0, m.wL)(e),
       n = this.state.style;
-    return null != require.top ? Math.max(0, exports.offsetHeight - require.top - I) : null != require.bottom ? Math.max(0, exports.offsetHeight - require.bottom - I) : Math.max(0, exports.offsetHeight - 2 * I)
+    return null != n.top ? Math.max(0, t.offsetHeight - n.top - I) : null != n.bottom ? Math.max(0, t.offsetHeight - n.bottom - I) : Math.max(0, t.offsetHeight - 2 * I)
   }
   render() {
     let {
@@ -407,12 +407,12 @@ class D extends(r = Chunk473749.Component) {
       isPositioned: c,
       nudge: u
     } = this.state, _ = this.calculateMaxHeight();
-    return (0, Chunk54381.jsx)("div", {
+    return (0, i.jsx)("div", {
       className: s()({
-        [Chunk120264.clickTrapContainer]: true,
-        [Chunk120264.trapClicks]: Chunk120356
+        [h.clickTrapContainer]: true,
+        [h.trapClicks]: o
       }),
-      children: (0, Chunk54381.jsx)(Chunk70007.C1, {
+      children: (0, i.jsx)(f.C1, {
         children: o => {
           let {
             disableAdaptiveTheme: f

@@ -28,6 +28,6 @@ function d() {
     gameServerInstance: n,
     name: t,
     planId: r
-  } = (0, Chunk343312.JL)(), a = "" !== require && "" !== module && true !== Chunk473749;
-  return null != exports ? Chunk914820 && (exports.name !== require || exports.regionId !== module || exports.planId !== Chunk473749) : Chunk914820
+  } = (0, i.JL)(), a = "" !== t && "" !== e && true !== r;
+  return null != n ? a && (n.name !== t || n.regionId !== e || n.planId !== r) : a
 }

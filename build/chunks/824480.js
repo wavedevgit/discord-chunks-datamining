@@ -13,14 +13,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function u() {
-  let e = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getFetchState()),
-    t = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
-    n = (0, Chunk473749.useMemo)(() => null != exports.applications ? exports.applications.applications.map(e => e.game.id) : [], [exports.applications]);
-  return (0, Chunk473749.useEffect)(() => {
-    module === Chunk5888.p.INIT && ((0, Chunk515970.pg)(), (0, Chunk496929.p0)({
-      entitlementType: Chunk981631.qc2.FREE_PURCHASE
+  let e = (0, i.e7)([l.Z], () => l.Z.getFetchState()),
+    t = (0, i.e7)([l.Z], () => l.Z.getCheckpointData()),
+    n = (0, r.useMemo)(() => null != t.applications ? t.applications.applications.map(e => e.game.id) : [], [t.applications]);
+  return (0, r.useEffect)(() => {
+    e === l.p.INIT && ((0, s.pg)(), (0, a.p0)({
+      entitlementType: c.qc2.FREE_PURCHASE
     }))
-  }, [module]), (0, Chunk473749.useEffect)(() => {
-    Chunk224706.Z.getDetectableGamesSupplemental(require)
-  }, [require]), module
+  }, [e]), (0, r.useEffect)(() => {
+    o.Z.getDetectableGamesSupplemental(n)
+  }, [n]), e
 }

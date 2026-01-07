@@ -123,9 +123,9 @@ function _(e) {
     })
   })
 }
-let P = () => (0, Chunk442837.e7)([Chunk709706.Z], () => {
+let P = () => (0, s.e7)([b.Z], () => {
     var e;
-    return !Object.keys(null != (e = Chunk709706.Z.getVoiceFilterModels()) ? module : {}).length && (Chunk709706.Z.getCatalogFetchFailed() || Chunk709706.Z.hasNativeModuleFailed())
+    return !Object.keys(null != (e = b.Z.getVoiceFilterModels()) ? e : {}).length && (b.Z.getCatalogFetchFailed() || b.Z.hasNativeModuleFailed())
   }),
   C = (e, t) => (0, s.Wu)([b.Z], () => {
     let n = b.Z.getVoiceFilters(),

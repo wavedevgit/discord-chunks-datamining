@@ -55,14 +55,14 @@ function m(e, t) {
 let h = 3 * Chunk70956.Z.Millis.SECOND;
 class g {
   getSearchIndex() {
-    return null == this._search || this._search.hasDefaultQuery ? Chunk740900.R_.CURRENT_GUILD_MEMBER : Chunk740900.R_.INCLUDED_IN_SEARCH_RESULTS
+    return null == this._search || this._search.hasDefaultQuery ? l.R_.CURRENT_GUILD_MEMBER : l.R_.INCLUDED_IN_SEARCH_RESULTS
   }
   initialize() {
     if (this._initialized) {
       this.lastCursorTimestamp = Date.now();
       return
     }
-    this._initialized = true, this._search = new Chunk993374.j(this.guildId), this._members = new Chunk740900.cm(this.guildId), this._pagination = new Chunk823596.Rt(this.guildId, this._members.values(this.getSearchIndex()))
+    this._initialized = true, this._search = new u.j(this.guildId), this._members = new l.cm(this.guildId), this._pagination = new c.Rt(this.guildId, this._members.values(this.getSearchIndex()))
   }
   get isInitialized() {
     return this._initialized
@@ -70,10 +70,10 @@ class g {
   reset() {
     var e, t, n;
     let r = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    this._initialized && (null == (e = this._members) || module.reset(), null == (t = this._pagination) || exports.reset(), null == (n = this._search) || require.reset(), Chunk392711 && this.initialize())
+    this._initialized && (null == (e = this._members) || e.reset(), null == (t = this._pagination) || t.reset(), null == (n = this._search) || n.reset(), r && this.initialize())
   }
   get searchChunkSize() {
-    return null != this._pagination && this._initialized ? (0, Chunk823596.t3)(this._pagination.getPaginationState()) : 0
+    return null != this._pagination && this._initialized ? (0, c.t3)(this._pagination.getPaginationState()) : 0
   }
   getMember(e) {
     var t;
@@ -100,7 +100,7 @@ class g {
   updatePaginationChunks() {
     if (null == this._pagination || null == this._members || !this._initialized) returnfalse;
     let e = this._members.values(this.getSearchIndex());
-    return this._pagination.updateSortedMembers(module)
+    return this._pagination.updateSortedMembers(e)
   }
   removeMember(e) {
     if (null == this._members || !this._initialized || null == this._members.getMemberByUserId(e)) returnfalse;
@@ -216,8 +216,8 @@ class g {
   }
   rebuildAllMembers() {
     if (null == this._members || !this._initialized) returnfalse;
-    let e = Chunk271383.ZP.getMembers(this.guildId);
-    return this.updateClientMembers(module)
+    let e = i.ZP.getMembers(this.guildId);
+    return this.updateClientMembers(e)
   }
   _scheduleRefresh(e) {
     this.lastRefreshTimestamp = e, this.lastCursorTimestamp = Date.now(), null != this._lastRefreshTimer && clearTimeout(this._lastRefreshTimer), this._lastRefreshTimer = setTimeout(() => {
@@ -227,19 +227,19 @@ class g {
   refreshNewMembersAndSearchResults() {
     if (null == this._search || null == this._members || !this._initialized) returnfalse;
     let e = Number(Date.now());
-    this._scheduleRefresh(module);
-    let t = (0, Chunk392711.cloneDeep)(this._members.values(Chunk740900.R_.NEW_GUILD_MEMBER)),
+    this._scheduleRefresh(e);
+    let t = (0, r.cloneDeep)(this._members.values(l.R_.NEW_GUILD_MEMBER)),
       n = false;
-    for (let r of exports) n = this._members.updateMember(Chunk392711, {
+    for (let r of t) n = this._members.updateMember(r, {
       isCurrentGuildMemberByTimestamp: true,
-      refreshTimestamp: module,
-      user: Chunk594174.default.getUser(Chunk392711.userId)
-    }) || require;
+      refreshTimestamp: e,
+      user: a.default.getUser(r.userId)
+    }) || n;
     this._members.resetNewMemberTimestamp(), this.resetSearchState() && (n = false);
     let [i, o] = this.updatePaginationState({
       currentPage: 1
     }, false);
-    return Chunk70956 && (n = false), require && this.updatePaginationChunks(), true
+    return o && (n = false), n && this.updatePaginationChunks(), true
   }
   getNewMemberTimestamp() {
     return null != this._members && this._initialized ? this._members.newMemberTimestamp : 0
@@ -264,7 +264,7 @@ class g {
     }), true) : n
   }
   getSearchState() {
-    return null != this._search && this._initialized ? this._search.getSearchState() : (0, Chunk993374.I)()
+    return null != this._search && this._initialized ? this._search.getSearchState() : (0, u.I)()
   }
   hasDefaultSearchState() {
     return null == this._search || !this._initialized || this._search.hasDefaultQuery
@@ -281,10 +281,10 @@ class g {
   }
   clearPaginationState() {
     var e;
-    null == (e = this._pagination) || module.reset()
+    null == (e = this._pagination) || e.reset()
   }
   getPaginationState() {
-    return null != this._pagination && this._initialized ? this._pagination.getPaginationState() : (0, Chunk823596.IF)()
+    return null != this._pagination && this._initialized ? this._pagination.getPaginationState() : (0, c.IF)()
   }
   getPaginatedMembers() {
     return null != this._pagination && this._initialized ? [this._pagination.paginatedMembers, this._pagination.version] : [{}, 0]

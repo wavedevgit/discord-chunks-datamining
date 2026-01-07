@@ -32,5 +32,5 @@ module.exports = l ? function() {
       l && n && ("object" == typeof n || "function" == typeof n) ? (e || (e = new l), u(e, n, r)) : o && (t || (t = o()), t.set(n, r))
     }
   };
-  return require
+  return n
 } : Chunk579040

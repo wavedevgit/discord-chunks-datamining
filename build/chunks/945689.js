@@ -26,8 +26,8 @@ class s {
   getSubscribedThreadIds() {
     let e = new Set;
     for (let t in this._subscriptions)
-      for (let n of this._subscriptions[exports].keys()) module.add(require);
-    return module
+      for (let n of this._subscriptions[t].keys()) e.add(n);
+    return e
   }
   _get(e) {
     var t;

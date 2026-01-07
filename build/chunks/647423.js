@@ -16,16 +16,16 @@ function s(e) {
 function l() {
   let {
     locale: e
-  } = (0, Chunk227399.j)(), t = (0, Chunk218769.K)(s(Chunk925521.Z), "@react-aria/datepicker");
-  return (0, Chunk473749.useMemo)(() => {
+  } = (0, i.j)(), t = (0, a.K)(s(r.Z), "@react-aria/datepicker");
+  return (0, o.useMemo)(() => {
     try {
-      return new Intl.DisplayNames(module, {
+      return new Intl.DisplayNames(e, {
         type: "dateTimeField"
       })
     } catch {
-      return new c(module, exports)
+      return new c(e, t)
     }
-  }, [module, exports])
+  }, [e, t])
 }
 class c {
   of(e) {

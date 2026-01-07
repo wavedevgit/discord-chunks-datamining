@@ -87,40 +87,40 @@ function I(e) {
 }
 
 function S() {
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild),
-    t = (0, Chunk442837.e7)([Chunk658666.Z], () => Chunk658666.Z.pendingState),
-    n = (0, Chunk981312.U)();
-  Chunk473749.useEffect(() => {
-    (null == module ? true : module.id) != null && Chunk863249.ZP.fetchVerificationForm(module.id)
-  }, [null == module ? true : module.id]);
-  let s = Chunk473749.useCallback(t => {
+  let e = (0, l.e7)([g.Z], () => g.Z.getProps().guild),
+    t = (0, l.e7)([j.Z], () => j.Z.pendingState),
+    n = (0, c.U)();
+  i.useEffect(() => {
+    (null == e ? true : e.id) != null && o.ZP.fetchVerificationForm(e.id)
+  }, [null == e ? true : e.id]);
+  let s = i.useCallback(t => {
     (null == e ? true : e.id) != null && b.Z.setSelectedJoinType(e.id, t)
-  }, [null == module ? true : module.id]);
-  if (null == module || null == exports) return null;
+  }, [null == e ? true : e.id]);
+  if (null == e || null == t) return null;
   let {
     joinType: d
-  } = exports;
-  return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  } = t;
+  return (0, r.jsxs)(a.Kqy, {
     gap: 32,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    children: [(0, r.jsx)(a.Heading, {
       color: "text-strong",
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.YJlvBM)
-    }), (0, Chunk54381.jsx)(Chunk307375.h, {
-      onTypePicked: Chunk456268,
-      activeType: Chunk430824,
-      guild: module
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk955120.divider
-    }), !require && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(I, {
-        guildId: module.id
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk955120.divider
+      children: y.intl.string(y.t.YJlvBM)
+    }), (0, r.jsx)(v.h, {
+      onTypePicked: s,
+      activeType: d,
+      guild: e
+    }), (0, r.jsx)("div", {
+      className: N.divider
+    }), !n && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(I, {
+        guildId: e.id
+      }), (0, r.jsx)("div", {
+        className: N.divider
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsx)(E, {
-        pendingState: exports
+    }), (0, r.jsx)("div", {
+      children: (0, r.jsx)(E, {
+        pendingState: t
       })
     })]
   })

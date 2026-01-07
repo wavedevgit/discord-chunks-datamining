@@ -15,8 +15,8 @@ class s {
   prepare() {
     var e;
     if (!this.fieldNoToField) {
-      let t = null != (e = this.info.fields) ? module : [];
-      this.fieldNoToField = new Map(exports.map(e => [e.no, e]))
+      let t = null != (e = this.info.fields) ? e : [];
+      this.fieldNoToField = new Map(t.map(e => [e.no, e]))
     }
   }
   read(e, t, n, a) {

@@ -84,11 +84,11 @@ function y(e) {
 }
 class O extends Chunk750041.Z {
   initialize() {
-    this.waitFor(Chunk592125.Z)
+    this.waitFor(i.Z)
   }
   loadCache() {
     let e = this.readSnapshot(O.LATEST_SNAPSHOT_VERSION);
-    null != module && (s = new Set(module))
+    null != e && (s = new Set(e))
   }
   takeSnapshot() {
     return {

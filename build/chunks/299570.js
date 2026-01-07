@@ -18,7 +18,7 @@ function a(e) {
 
 function o() {
   var e, t;
-  null == (t = Chunk131951.Z.getMediaEngine()) || null == (e = exports.releaseNativeDesktopVideoSourcePickerStream) || module.call(exports), Chunk570140.Z.dispatch({
+  null == (t = i.Z.getMediaEngine()) || null == (e = t.releaseNativeDesktopVideoSourcePickerStream) || e.call(t), r.Z.dispatch({
     type: "NATIVE_SCREEN_SHARE_PICKER_RELEASE"
   })
 }

@@ -8,8 +8,8 @@ var Chunk211266 = require("./211266.js"),
   Chunk493773 = require("./493773.js");
 
 function a() {
-  let e = (0, Chunk211266.Z)(() => new AbortController);
-  return (0, Chunk493773.zq)(() => {
-    module.abort()
-  }), module.signal
+  let e = (0, r.Z)(() => new AbortController);
+  return (0, i.zq)(() => {
+    e.abort()
+  }), e.signal
 }

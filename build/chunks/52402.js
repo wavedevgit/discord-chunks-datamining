@@ -66,12 +66,12 @@ var o = function() {
       value: function() {
         var e = this.dragSource,
           t = this.didHandlerIdChange() || this.didConnectedDragSourceChange() || this.didDragSourceOptionsChange();
-        if (exports && this.disconnectDragSource(), this.handlerId) {
-          if (!module) {
-            this.lastConnectedDragSource = module;
+        if (t && this.disconnectDragSource(), this.handlerId) {
+          if (!e) {
+            this.lastConnectedDragSource = e;
             return
           }
-          exports && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDragSource = module, this.lastConnectedDragSourceOptions = this.dragSourceOptions, this.dragSourceUnsubscribe = this.backend.connectDragSource(this.handlerId, module, this.dragSourceOptions))
+          t && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDragSource = e, this.lastConnectedDragSourceOptions = this.dragSourceOptions, this.dragSourceUnsubscribe = this.backend.connectDragSource(this.handlerId, e, this.dragSourceOptions))
         }
       }
     }, {
@@ -79,12 +79,12 @@ var o = function() {
       value: function() {
         var e = this.dragPreview,
           t = this.didHandlerIdChange() || this.didConnectedDragPreviewChange() || this.didDragPreviewOptionsChange();
-        if (exports && this.disconnectDragPreview(), this.handlerId) {
-          if (!module) {
-            this.lastConnectedDragPreview = module;
+        if (t && this.disconnectDragPreview(), this.handlerId) {
+          if (!e) {
+            this.lastConnectedDragPreview = e;
             return
           }
-          exports && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDragPreview = module, this.lastConnectedDragPreviewOptions = this.dragPreviewOptions, this.dragPreviewUnsubscribe = this.backend.connectDragPreview(this.handlerId, module, this.dragPreviewOptions))
+          t && (this.lastConnectedHandlerId = this.handlerId, this.lastConnectedDragPreview = e, this.lastConnectedDragPreviewOptions = this.dragPreviewOptions, this.dragPreviewUnsubscribe = this.backend.connectDragPreview(this.handlerId, e, this.dragPreviewOptions))
         }
       }
     }, {
@@ -105,12 +105,12 @@ var o = function() {
     }, {
       key: "didDragSourceOptionsChange",
       value: function() {
-        return !(0, Chunk521548.w)(this.lastConnectedDragSourceOptions, this.dragSourceOptions)
+        return !(0, a.w)(this.lastConnectedDragSourceOptions, this.dragSourceOptions)
       }
     }, {
       key: "didDragPreviewOptionsChange",
       value: function() {
-        return !(0, Chunk521548.w)(this.lastConnectedDragPreviewOptions, this.dragPreviewOptions)
+        return !(0, a.w)(this.lastConnectedDragPreviewOptions, this.dragPreviewOptions)
       }
     }, {
       key: "disconnectDragSource",
@@ -148,5 +148,5 @@ var o = function() {
         var r = t[n];
         r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
       }
-    }(exports.prototype, module), exports
+    }(t.prototype, e), t
 }()

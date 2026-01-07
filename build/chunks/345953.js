@@ -95,7 +95,7 @@ function P(e) {
 }
 
 function R() {
-  Chunk433517.K.get(T(Chunk314897.default.getId())) || Chunk675478.hW.updateAsync("audioContextSettings", e => {
+  s.K.get(T(f.default.getId())) || g.hW.updateAsync("audioContextSettings", e => {
     let t = false;
     for (let [n, r] of Object.entries(p.Z.getState().settingsByContext)) {
       let i = (0, h.z)(n);
@@ -122,7 +122,7 @@ function R() {
       }
     }
     return s.K.set(T(f.default.getId()), true), t
-  }, Chunk675478.fy.AUTOMATED)
+  }, g.fy.AUTOMATED)
 }
 
 function w(e, t, n, r) {
@@ -163,7 +163,7 @@ let k = i().debounce(Chunk254238.On, 500, {
 });
 
 function U() {
-  Chunk675478.hW.updateAsync("audioContextSettings", e => {
+  g.hW.updateAsync("audioContextSettings", e => {
     let t = false;
     return (0, m.$E)((n, r, i) => {
       let a = w(e, r, n, e => {
@@ -171,7 +171,7 @@ function U() {
       });
       t = t || a
     }), t
-  }, Chunk675478.fy.INFREQUENT_USER_ACTION)
+  }, g.fy.INFREQUENT_USER_ACTION)
 }
 
 function G(e) {

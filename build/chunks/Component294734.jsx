@@ -33,17 +33,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk154706 = require("./154706.js");
 
 function R() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk154706.headerContainer,
-    children: [(0, Chunk54381.jsx)(Chunk245216.Z, {
+  return (0, r.jsxs)("div", {
+    className: P.headerContainer,
+    children: [(0, r.jsx)(A.Z, {
       size: "xs",
-      className: Chunk154706.headerIcon,
-      color: Chunk692547.Z.colors.TEXT_MUTED
-    }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
-      className: Chunk154706.headerText,
+      className: P.headerIcon,
+      color: l.Z.colors.TEXT_MUTED
+    }), (0, r.jsx)(a.xvT, {
+      className: P.headerText,
       variant: "text-sm/semibold",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t.ToyvLk)
+      children: N.intl.string(N.t.ToyvLk)
     })]
   })
 }

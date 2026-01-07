@@ -125,7 +125,7 @@ let U = {
     isPressed: false
   },
   [Chunk981631.kg4.TOGGLE_MUTE]: {
-    onTrigger: () => Chunk846027.Z.toggleSelfMute({
+    onTrigger: () => i.Z.toggleSelfMute({
       usedKeybind: true,
       location: "Custom Keybind"
     }),
@@ -135,7 +135,7 @@ let U = {
     }
   },
   [Chunk981631.kg4.TOGGLE_DEAFEN]: {
-    onTrigger: () => Chunk846027.Z.toggleSelfDeaf({
+    onTrigger: () => i.Z.toggleSelfDeaf({
       usedKeybind: true,
       location: "Custom Keybind"
     }),
@@ -145,7 +145,7 @@ let U = {
     }
   },
   [Chunk981631.kg4.TOGGLE_CAMERA]: {
-    onTrigger: () => (0, Chunk479837.r)(),
+    onTrigger: () => (0, c.r)(),
     keyEvents: {
       keyup: true,
       keydown: false
@@ -153,8 +153,8 @@ let U = {
   },
   [Chunk981631.kg4.TOGGLE_VOICE_MODE]: {
     onTrigger() {
-      let e = Chunk131951.Z.getMode() === Chunk981631.pM4.PUSH_TO_TALK ? Chunk981631.pM4.VOICE_ACTIVITY : Chunk981631.pM4.PUSH_TO_TALK;
-      Chunk846027.Z.setMode(module)
+      let e = C.Z.getMode() === w.pM4.PUSH_TO_TALK ? w.pM4.VOICE_ACTIVITY : w.pM4.PUSH_TO_TALK;
+      i.Z.setMode(e)
     },
     keyEvents: {
       keyup: true,
@@ -181,9 +181,9 @@ let U = {
   },
   [Chunk981631.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET]: {
     onTrigger() {
-      let e = Chunk808506.default.getFocusedPID(),
-        t = null != module;
-      null != module && exports && Chunk237997.default.isPinned(Chunk981631.Odu.TEXT) && Chunk237997.default.isLocked(module) && Chunk808506.default.isReady(module) && Chunk13245.Z.activateRegion(Chunk981631.O0n.TEXT_WIDGET)
+      let e = j.default.getFocusedPID(),
+        t = null != e;
+      null != e && t && P.default.isPinned(w.Odu.TEXT) && P.default.isLocked(e) && j.default.isReady(e) && l.Z.activateRegion(w.O0n.TEXT_WIDGET)
     },
     keyEvents: {
       keyup: true,
@@ -192,9 +192,9 @@ let U = {
   },
   [Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING]: {
     onTrigger() {
-      let e = Chunk199902.Z.getCurrentUserActiveStream();
-      if (null != module) return (0, Chunk872810.g)((0, Chunk569545.V9)(module));
-      (0, Chunk722835.Z)(true, [Chunk100527.Z.GO_LIVE_KEYBIND])
+      let e = I.Z.getCurrentUserActiveStream();
+      if (null != e) return (0, o.g)((0, h.V9)(e));
+      (0, b.Z)(true, [d.Z.GO_LIVE_KEYBIND])
     },
     keyEvents: {
       keyup: true,
@@ -203,7 +203,7 @@ let U = {
   },
   [Chunk981631.kg4.TOGGLE_STREAMER_MODE]: {
     onTrigger() {
-      Chunk223245.Z.setEnabled(!Chunk246946.Z.enabled)
+      s.Z.setEnabled(!T.Z.enabled)
     },
     keyEvents: {
       keyup: true,
@@ -211,7 +211,7 @@ let U = {
     }
   },
   [Chunk981631.kg4.NAVIGATE_BACK]: {
-    onTrigger: () => (0, Chunk891304.Hm)("global_keybind"),
+    onTrigger: () => (0, m.Hm)("global_keybind"),
     keyEvents: {
       keyup: true,
       keydown: false,
@@ -220,7 +220,7 @@ let U = {
     }
   },
   [Chunk981631.kg4.NAVIGATE_FORWARD]: {
-    onTrigger: () => (0, Chunk891304.TL)("global_keybind"),
+    onTrigger: () => (0, m.TL)("global_keybind"),
     keyEvents: {
       keyup: true,
       keydown: false,
@@ -230,12 +230,12 @@ let U = {
   },
   [Chunk981631.kg4.SOUNDBOARD]: {
     onTrigger: () => {
-      let e = (0, Chunk554174.Z)();
-      if (null != module)
-        if (Chunk352527.Z.enabled)(0, Chunk183584.oZ)(module);
+      let e = (0, A.Z)();
+      if (null != e)
+        if (E.Z.enabled)(0, v.oZ)(e);
         else {
-          if (!(0, Chunk641015.D)()) return;
-          (0, Chunk183584.IN)(true, module)
+          if (!(0, O.D)()) return;
+          (0, v.IN)(true, e)
         }
     },
     keyEvents: {
@@ -261,7 +261,7 @@ let U = {
   },
   [Chunk981631.kg4.SAVE_CLIP]: {
     onTrigger: () => {
-      (0, Chunk341569.LI)() && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.br)())
+      (0, f.LI)() && (x.default.track(w.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, g.br)())
     },
     keyEvents: {
       keyup: false,
@@ -270,7 +270,7 @@ let U = {
   },
   [Chunk981631.kg4.SAVE_SCREENSHOT]: {
     onTrigger: () => {
-      (0, Chunk341569.LI)() && (0, Chunk924557.iL)() && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.ZW)())
+      (0, f.LI)() && (0, p.iL)() && (x.default.track(w.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, g.ZW)())
     },
     keyEvents: {
       keyup: false,
@@ -295,7 +295,7 @@ let U = {
   },
   [Chunk981631.kg4.DISCONNECT_FROM_VOICE_CHANNEL]: {
     onTrigger() {
-      Chunk287734.default.selectVoiceChannel(null)
+      a.default.selectVoiceChannel(null)
     },
     keyEvents: {
       keyup: true,
@@ -307,7 +307,7 @@ let U = {
 };
 
 function G() {
-  M.clear(), (0, Chunk837968.I)(false, false, false)
+  M.clear(), (0, _.I)(false, false, false)
 }
 
 function H(e) {
@@ -319,13 +319,13 @@ function H(e) {
 }
 class B extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
+    r.Z.wait(() => r.Z.dispatch({
       type: "KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS",
       keybinds: U
-    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", G), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.subscribe("SET_VAD_PERMISSION", H)
+    })), r.Z.subscribe("AUDIO_SET_MODE", G), r.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), r.Z.subscribe("SET_VAD_PERMISSION", H)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", G), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.unsubscribe("SET_VAD_PERMISSION", H)
+    r.Z.unsubscribe("AUDIO_SET_MODE", G), r.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), r.Z.unsubscribe("SET_VAD_PERMISSION", H)
   }
   handleVoiceChannelSelect(e) {
     let {

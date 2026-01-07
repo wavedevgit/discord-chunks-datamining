@@ -19,28 +19,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk517319 = require("./517319.js");
 let N = (0, Chunk509613.k4)(Chunk313789.n.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["1Qn8iV"]),
-  buildLayout: () => [Chunk122145.Y, Chunk523044.y, Chunk56404.Z],
+  useTitle: () => g.intl.string(g.t["1Qn8iV"]),
+  buildLayout: () => [E.Y, d.y, _.Z],
   useNotice: () => {
-    let t = (0, Chunk915009.LN)(),
-      e = (0, Chunk631885.ZM)(),
-      n = Chunk473749.useCallback(() => {
-        (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
-          recipientIds: exports
+    let t = (0, r.LN)(),
+      e = (0, a.ZM)(),
+      n = l.useCallback(() => {
+        (0, c.default)(), u.Z.openPrivateChannel({
+          recipientIds: e
         })
-      }, [exports]);
-    return Chunk473749.useMemo(() => {
-      if (module) return {
-        type: Chunk970013.v.INLINE_NOTICE,
+      }, [e]);
+    return l.useMemo(() => {
+      if (t) return {
+        type: T.v.INLINE_NOTICE,
         noticeType: "info",
-        useText: () => Chunk388032.intl.format(Chunk517319.default.i284fU, {
+        useText: () => g.intl.format(I.default.i284fU, {
           hook: (t, e) => (0, i.jsx)(s.eee, {
             onClick: n,
             children: t
           }, e),
-          count: exports.length
+          count: e.length
         })
       }
-    }, [require, module, exports.length])
+    }, [n, t, e.length])
   }
 })

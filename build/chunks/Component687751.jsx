@@ -40,10 +40,10 @@ function _(e) {
 }
 class E extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect), Chunk570140.Z.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), Chunk570140.Z.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), Chunk570140.Z.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), Chunk570140.Z.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), Chunk570140.Z.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
+    l.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect), l.Z.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.Z.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.Z.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.Z.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), l.Z.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect), Chunk570140.Z.unsubscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), Chunk570140.Z.unsubscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), Chunk570140.Z.unsubscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), Chunk570140.Z.unsubscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), Chunk570140.Z.unsubscribe("GUILD_UPDATE", this.handleGuildUpdate)
+    l.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.Z.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect), l.Z.unsubscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.Z.unsubscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.Z.unsubscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.Z.unsubscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), l.Z.unsubscribe("GUILD_UPDATE", this.handleGuildUpdate)
   }
   handleChannelSelect(e) {
     let {
@@ -53,9 +53,9 @@ class E extends Chunk317770.Z {
     (0, p.I8)(t, n)
   }
   handleConnectionOpen() {
-    let e = Chunk914010.Z.getGuildId(),
-      t = Chunk944486.Z.getChannelId();
-    (0, Chunk622822.I8)(module, exports)
+    let e = d.Z.getGuildId(),
+      t = u.Z.getChannelId();
+    (0, p.I8)(e, t)
   }
   handleAgeGateModalOpen(e) {
     let {
@@ -69,30 +69,30 @@ class E extends Chunk317770.Z {
         source: t
       }, n))
     }, {
-      modalKey: h.dG,
-      onCloseRequest: m.dG4,
+      modalKey: m.dG,
+      onCloseRequest: h.dG4,
       backdropStyle: (0, o.bj)(t) ? i.fCB.LIGHTBOX : true
     })
   }
   handleAgeGateSuccess() {
-    Chunk681678.Z.showSuccessToast(Chunk484710.wQ.EXISTING_USER_AGE_GATE_SUCCESS), (0, Chunk481060.Mr3)(Chunk723359.dG)
+    s.Z.showSuccessToast(b.wQ.EXISTING_USER_AGE_GATE_SUCCESS), (0, i.Mr3)(m.dG)
   }
   handleAgeGateFailure(e) {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(h.dG, e => (0, r.jsx)(g.default, _({
+    (0, i.oav)(m.dG, e => (0, r.jsx)(g.default, _({
       underageMessage: t
     }, e)))
   }
   handleAgeGateModalClose() {
-    (0, Chunk481060.Mr3)(Chunk723359.dG)
+    (0, i.Mr3)(m.dG)
   }
   handleGuildUpdate(e) {
     let {
       guild: t
     } = e, n = d.Z.getGuildId();
-    if (null != n && t.id === n && (t.owner_configured_content_level === m.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
+    if (null != n && t.id === n && (t.owner_configured_content_level === h.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
   }
 }
 let O = new E

@@ -20,12 +20,12 @@ var r, Chunk274676 = require("./274676.js"),
 
 function o() {
   let e = navigator.userAgentData;
-  return null != module && module.platform ? module.platform : navigator.platform
+  return null != e && e.platform ? e.platform : navigator.platform
 }
 
 function s() {
   let e = navigator.userAgentData;
-  return module && Array.isArray(module.brands) ? module.brands.map(e => {
+  return e && Array.isArray(e.brands) ? e.brands.map(e => {
     let {
       brand: t,
       version: n

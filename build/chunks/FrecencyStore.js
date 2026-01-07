@@ -102,9 +102,9 @@ function A(e) {
 
 function N() {
   var e;
-  let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) ? true : module.guildAndChannels;
-  if (null == exports) returnfalse;
-  S.overwriteHistory(a().mapValues(exports, e => b(g({}, e), {
+  let t = null == (e = c.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) ? true : e.guildAndChannels;
+  if (null == t) returnfalse;
+  S.overwriteHistory(a().mapValues(t, e => b(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), P.pendingUsages)
 }

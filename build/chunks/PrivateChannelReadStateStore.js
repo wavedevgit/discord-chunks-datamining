@@ -15,8 +15,8 @@ let h = [],
   p = new Set;
 
 function g() {
-  let e = Chunk55589.Z.getPrivateChannelIds().filter(e => u.ZP.getMentionCount(e) > 0);
-  return module.length > 20 && (module.length = 20), !(0, Chunk251625.EF)(module, h) && (h = module, p = new Set(module), true)
+  let e = f.Z.getPrivateChannelIds().filter(e => u.ZP.getMentionCount(e) > 0);
+  return e.length > 20 && (e.length = 20), !(0, s.EF)(e, h) && (h = e, p = new Set(e), true)
 }
 
 function b() {
@@ -31,7 +31,7 @@ function m(e) {
 }
 class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk55589.Z, Chunk592125.Z, Chunk944486.Z, Chunk306680.ZP)
+    this.waitFor(f.Z, c.Z, d.Z, u.ZP)
   }
   getUnreadPrivateChannelIds() {
     return h
@@ -62,8 +62,8 @@ let O = new y(Chunk570140.Z, {
     return !!p.has(t) && g()
   },
   WINDOW_FOCUS: function() {
-    let e = Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId());
-    return null != module && !!(0, Chunk131704.hv)(module.type) && g()
+    let e = c.Z.getChannel(d.Z.getChannelId());
+    return null != e && !!(0, o.hv)(e.type) && g()
   },
   CHANNEL_CREATE: function(e) {
     let {

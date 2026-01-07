@@ -26,5 +26,5 @@ let a = {
       memory: t
     })
   },
-  getTimeSinceNavigationStart: () => Date.now() - Chunk643191.mb
+  getTimeSinceNavigationStart: () => Date.now() - s.mb
 }

@@ -13,10 +13,10 @@ var Chunk703656 = require("./703656.js"),
   Chunk981631 = require("./981631.js");
 let s = () => {
     let e = {
-      previousView: (0, Chunk258971.Xh)()
+      previousView: (0, i.Xh)()
     };
-    (0, Chunk703656.uL)(Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS, {
-      state: module
+    (0, a.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS, {
+      state: e
     })
   },
   o = e => {
@@ -45,9 +45,9 @@ let s = () => {
       categoryId: t,
       page: n
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, s = {
-      previousView: (0, Chunk258971.Xh)()
+      previousView: (0, i.Xh)()
     }, o = new URLSearchParams;
-    null != module && "" !== module && o.set("q", module), null != exports && exports !== Chunk216780.MU && o.set("category_id", exports.toString()), null != require && require > 1 && o.set("page", require.toString()), (0, Chunk703656.uL)(Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH, {
+    null != e && "" !== e && o.set("q", e), null != t && t !== r.MU && o.set("category_id", t.toString()), null != n && n > 1 && o.set("page", n.toString()), (0, a.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH, {
       state: s,
       search: o.toString()
     })

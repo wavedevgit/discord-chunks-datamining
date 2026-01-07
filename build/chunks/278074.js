@@ -473,7 +473,7 @@ class ee {
     } catch (t) {
       e = this.input
     }
-    throw Error(`Pattern matching error: no pattern matches value ${module}`)
+    throw Error(`Pattern matching error: no pattern matches value ${e}`)
   }
   returnType() {
     return this

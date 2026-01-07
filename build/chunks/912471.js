@@ -67,8 +67,8 @@ let I = 27,
 function U() {
   if (null != R) return;
   let e = 0 === x ? 0 : T - (performance.now() - x);
-  Chunk960048.Z.addBreadcrumb({
-    message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(module / 1e3, " seconds. Scheduling Heartbeat")
+  h.Z.addBreadcrumb({
+    message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(e / 1e3, " seconds. Scheduling Heartbeat")
   }), R = {
     type: "timeout",
     id: setTimeout(() => {
@@ -78,7 +78,7 @@ function U() {
           B()
         }, T)
       }
-    }, module)
+    }, e)
   }
 }
 
@@ -98,58 +98,58 @@ function G() {
 }
 
 function Z() {
-  G() && (Chunk960048.Z.addBreadcrumb({
+  G() && (h.Z.addBreadcrumb({
     category: N,
     message: "Stopping Analytics Heartbeat"
-  }), (0, Chunk188471.Z)())
+  }), (0, l.Z)())
 }
 
 function F() {
   var e;
-  let t = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0;
+  let t = null != (e = f.Z.getIdleSince()) ? e : 0;
   return {
-    is_idle: Chunk517100.Z.isIdle(),
-    idle_duration_ms: Date.now() - exports,
-    is_afk: Chunk517100.Z.isAFK(),
-    is_system_suspended: Chunk517100.Z.getSystemSuspended(),
-    is_system_locked: Chunk517100.Z.getSystemLocked()
+    is_idle: f.Z.isIdle(),
+    idle_duration_ms: Date.now() - t,
+    is_afk: f.Z.isAFK(),
+    is_system_suspended: f.Z.getSystemSuspended(),
+    is_system_locked: f.Z.getSystemLocked()
   }
 }
 async function B() {
   let e = Date.now(),
     t = await eo(),
     n = Date.now();
-  if (null == exports) return void Chunk960048.Z.captureException(Error("Null session when tracking session heartbeat. Waited ".concat(require - module, "ms")));
-  Chunk960048.Z.addBreadcrumb({
+  if (null == t) return void h.Z.captureException(Error("Null session when tracking session heartbeat. Waited ".concat(n - e, "ms")));
+  h.Z.addBreadcrumb({
     category: N,
     message: "Tracking Heartbeat",
     data: {
-      initialized: exports.createdAtTimestamp
+      initialized: t.createdAtTimestamp
     }
   });
   let r = S({
-    client_heartbeat_initialization_timestamp: exports.createdAtTimestamp,
+    client_heartbeat_initialization_timestamp: t.createdAtTimestamp,
     client_heartbeat_version: I
-  }, (0, Chunk343420.O)(), F());
-  Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), x = performance.now(), (0, Chunk188471.Z)()
+  }, (0, g.O)(), F());
+  _.default.track(O.rMx.CLIENT_HEARTBEAT, r), x = performance.now(), (0, l.Z)()
 }
 
 function V() {
-  if (!(null != k && (0, Chunk733879.y)()) || performance.now() - x <= T) return;
+  if (!(null != k && (0, y.y)()) || performance.now() - x <= T) return;
   let e = {
     client_heartbeat_version: I
   };
-  Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT_SKIPPED, module)
+  _.default.track(O.rMx.CLIENT_HEARTBEAT_SKIPPED, e)
 }
 
 function H() {}
 
 function Y() {
   let e = [];
-  return null != k && (M && module.push("foregrounded"), j === Chunk981631.hes.RTC_CONNECTED && module.push("rtc_connected")), {
-    active: module.length > 0,
+  return null != k && (M && e.push("foregrounded"), j === O.hes.RTC_CONNECTED && e.push("rtc_connected")), {
+    active: e.length > 0,
     ver: I,
-    reasons: module
+    reasons: e
   }
 }
 
@@ -184,7 +184,7 @@ function Q(e) {
 }
 
 function X() {
-  Chunk433517.K.remove(A), L = {
+  o.K.remove(A), L = {
     state: "loaded",
     session: null
   }, Z(), x = 0
@@ -192,24 +192,24 @@ function X() {
 
 function J() {
   var e;
-  null == (e = Chunk38618.Z.getSocket()) || module.handleActiveStateChange(Y())
+  null == (e = u.Z.getSocket()) || e.handleActiveStateChange(Y())
 }
 async function $() {
   let e = await eo(false);
-  if (null != module) {
+  if (null != e) {
     var t;
-    null == (t = Chunk38618.Z.getSocket()) || exports.handleUpdateTimeSpentSessionId(module.createdAtTimestamp, module.uuid, Chunk923452.s)
+    null == (t = u.Z.getSocket()) || t.handleUpdateTimeSpentSessionId(e.createdAtTimestamp, e.uuid, i.s)
   }
 }
 
 function ee() {
-  let e = Chunk314897.default.getToken();
-  k !== module && (k = module, X()), K()
+  let e = d.default.getToken();
+  k !== e && (k = e, X()), K()
 }
 
 function et() {
-  let e = Chunk19780.Z.getState();
-  j !== module && (j = module, K())
+  let e = p.Z.getState();
+  j !== e && (j = e, K())
 }
 
 function en(e) {
@@ -227,43 +227,43 @@ function er(e) {
 }
 
 function ei() {
-  j = Chunk19780.Z.getState(), M = (0, Chunk127438.H)(), ee()
+  j = p.Z.getState(), M = (0, E.H)(), ee()
 }
 
 function ea() {
-  Chunk960048.Z.addBreadcrumb({
+  h.Z.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
-  }), Chunk19780.Z.addChangeListener(et), Chunk314897.default.addChangeListener(ee), Chunk570140.Z.subscribe("WINDOW_FOCUS", en), Chunk570140.Z.subscribe("APP_STATE_UPDATE", er), Chunk570140.Z.subscribe("CONNECTION_OPEN", $), K(), z(), Chunk442837.ZP.initialized.then(ei)
+  }), p.Z.addChangeListener(et), d.default.addChangeListener(ee), s.Z.subscribe("WINDOW_FOCUS", en), s.Z.subscribe("APP_STATE_UPDATE", er), s.Z.subscribe("CONNECTION_OPEN", $), K(), z(), a.ZP.initialized.then(ei)
 }
 async function eo() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     n = null,
-    a = "loaded" === L.state ? null == (e = L.session) ? true : module.uuid : null;
+    a = "loaded" === L.state ? null == (e = L.session) ? true : e.uuid : null;
   try {
-    n = "uninitialized" === L.state ? Q(await Chunk433517.K.getAfterRefresh(A)) : L.session
+    n = "uninitialized" === L.state ? Q(await o.K.getAfterRefresh(A)) : L.session
   } catch (e) {
-    Chunk960048.Z.captureException(module)
+    h.Z.captureException(e)
   }
   return (() => {
     let e = Date.now();
-    if (W() ? ((null == require || (0, Chunk686325.qK)(require)) && (n = {
-        uuid: (0, Chunk772848.Z)(),
-        createdAtTimestamp: module,
-        lastUsedTimestamp: module,
-        version: Chunk686325.EI
-      }, D = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), L = {
+    if (W() ? ((null == n || (0, b.qK)(n)) && (n = {
+        uuid: (0, r.Z)(),
+        createdAtTimestamp: e,
+        lastUsedTimestamp: e,
+        version: b.EI
+      }, D = 0), n.lastUsedTimestamp = e, q(n)) : null != n && (0, b.qK)(n) && (n = null), L = {
         state: "loaded",
-        session: require
-      }, null != require && Chunk442837 !== require.uuid && exports) {
+        session: n
+      }, null != n && a !== n.uuid && t) {
       var o;
-      null == (o = Chunk38618.Z.getSocket()) || Chunk433517.handleUpdateTimeSpentSessionId(require.createdAtTimestamp, require.uuid, Chunk923452.s)
+      null == (o = u.Z.getSocket()) || o.handleUpdateTimeSpentSessionId(n.createdAtTimestamp, n.uuid, i.s)
     }
-    return require
+    return n
   })()
 }
 
 function es() {
-  let e = "uninitialized" === L.state ? Q(Chunk433517.K.get(A)) : L.session;
-  return null == module || (0, Chunk686325.qK)(module) ? null : module
+  let e = "uninitialized" === L.state ? Q(o.K.get(A)) : L.session;
+  return null == e || (0, b.qK)(e) ? null : e
 }

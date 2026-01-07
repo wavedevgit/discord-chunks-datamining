@@ -15,17 +15,17 @@ var Chunk54381 = require("./54381.js"),
 function u() {
   let [{
     selectedSource: e
-  }] = (0, Chunk443762.E_)(), [t, r] = Chunk473749.useState(null);
-  return Chunk473749.useEffect(() => {
+  }] = (0, a.E_)(), [t, r] = i.useState(null);
+  return i.useEffect(() => {
     var t;
-    if (null != module) {
-      if (null == (t = module.id) ? true : exports.startsWith(Chunk268146.vA.CAMERA)) {
-        "url" in module && require(module.url);
+    if (null != e) {
+      if (null == (t = e.id) ? true : t.startsWith(s.vA.CAMERA)) {
+        "url" in e && r(e.url);
         return
-      }(0, Chunk59468.t)({
+      }(0, c.t)({
         width: 960,
         height: 540,
-        types: [Chunk268146.vA.SCREEN, Chunk268146.vA.WINDOW]
+        types: [s.vA.SCREEN, s.vA.WINDOW]
       }).then(t => {
         var n;
         let {
@@ -35,12 +35,12 @@ function u() {
         null != l && r(l.url)
       })
     }
-  }, [module]), (0, Chunk54381.jsx)("div", {
-    className: Chunk510296.root,
-    children: null == exports ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : (0, Chunk54381.jsx)("img", {
-      src: exports,
+  }, [e]), (0, n.jsx)("div", {
+    className: d.root,
+    children: null == t ? (0, n.jsx)(l.$jN, {}) : (0, n.jsx)("img", {
+      src: t,
       alt: "",
-      className: Chunk510296.largePreview
+      className: d.largePreview
     })
   })
 }

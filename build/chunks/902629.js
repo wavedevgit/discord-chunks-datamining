@@ -20,12 +20,12 @@ class s extends Chunk147913.Z {
   handleCheckExperiments() {
     let {
       enabled: e
-    } = Chunk313261.O.getCurrentConfig({
+    } = i.O.getCurrentConfig({
       location: "gateway"
     }, {
       autoTrackExposure: true
     });
-    Chunk38618.Z.getSocket().dispatcher.toggleRequestIdleCallback(module)
+    a.Z.getSocket().dispatcher.toggleRequestIdleCallback(e)
   }
   constructor(...e) {
     super(...e), o(this, "actions", {

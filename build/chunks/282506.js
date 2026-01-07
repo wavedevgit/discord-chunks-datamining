@@ -26,40 +26,40 @@ var Chunk570140 = require("./570140.js"),
 function y() {
   var e;
   let t = r;
-  if (null == exports || !Chunk366050.Z.isOpen(exports)) returnfalse;
-  Chunk570140.Z.wait(() => Chunk519938.xv(exports)), null == (e = Chunk19780.Z.getRTCConnection()) || module.setPipOpen(false), r = null
+  if (null == t || !m.Z.isOpen(t)) returnfalse;
+  i.Z.wait(() => l.xv(t)), null == (e = h.Z.getRTCConnection()) || e.setPipOpen(false), r = null
 }
 
 function I() {
   var e;
-  let t = Chunk19780.Z.getChannelId(),
-    n = r === exports;
+  let t = h.Z.getChannelId(),
+    n = r === t;
   if (function() {
-      let e = Chunk19780.Z.getChannelId(),
-        t = Chunk944486.Z.getChannelId();
-      if (!Chunk131951.Z.supports(Chunk65154.AN.VIDEO) || Chunk928518.Z.getWindowOpen(Chunk981631.KJ3.CHANNEL_CALL_POPOUT)) returntrue;
-      let n = null != module && Chunk199902.Z.getAllActiveStreams().some(t => !s.Z.isParticipantPoppedOut(e, (0, c.V9)(t)));
-      if (!(null != module && Object.values(Chunk979651.Z.getVideoVoiceStatesForChannel(module)).some(t => {
+      let e = h.Z.getChannelId(),
+        t = b.Z.getChannelId();
+      if (!g.Z.supports(v.AN.VIDEO) || u.Z.getWindowOpen(O.KJ3.CHANNEL_CALL_POPOUT)) returntrue;
+      let n = null != e && d.Z.getAllActiveStreams().some(t => !s.Z.isParticipantPoppedOut(e, (0, c.V9)(t)));
+      if (!(null != e && Object.values(E.Z.getVideoVoiceStatesForChannel(e)).some(t => {
           let {
             userId: n
           } = t;
           return !g.Z.isLocalVideoDisabled(n) && !s.Z.isParticipantPoppedOut(e, n)
-        }) || require)) returntrue;
-      let r = Chunk819640.Z.hasLayers();
-      return !(r && Chunk819640.Z.getLayers().includes(Chunk981631.S9g.RTC_DEBUG)) && (!!r || module === exports)
+        }) || n)) returntrue;
+      let r = f.Z.hasLayers();
+      return !(r && f.Z.getLayers().includes(O.S9g.RTC_DEBUG)) && (!!r || e === t)
     }()) return y();
-  if (require || y(), null == exports) returnfalse;
-  let a = Chunk592125.Z.getChannel(exports);
-  return !(null == Chunk317770 || Chunk366050.Z.isOpen(exports)) && (Chunk570140.Z.wait(() => Chunk519938.bA(Chunk317770.id, Chunk981631.NYg.VIDEO, {
-    channel: Chunk317770
-  })), null == (e = Chunk19780.Z.getRTCConnection()) || module.setPipOpen(true), void(r = exports))
+  if (n || y(), null == t) returnfalse;
+  let a = p.Z.getChannel(t);
+  return !(null == a || m.Z.isOpen(t)) && (i.Z.wait(() => l.bA(a.id, O.NYg.VIDEO, {
+    channel: a
+  })), null == (e = h.Z.getRTCConnection()) || e.setPipOpen(true), void(r = t))
 }
 class C extends Chunk317770.Z {
   _initialize() {
-    Chunk944486.Z.addChangeListener(I), Chunk914010.Z.addChangeListener(I), Chunk19780.Z.addChangeListener(I), Chunk979651.Z.addChangeListener(I), Chunk819640.Z.addChangeListener(I), Chunk199902.Z.addChangeListener(I), Chunk928518.Z.addChangeListener(I), Chunk131951.Z.addChangeListener(I), Chunk317381.ZP.addChangeListener(I), Chunk358221.Z.addChangeListener(I)
+    b.Z.addChangeListener(I), _.Z.addChangeListener(I), h.Z.addChangeListener(I), E.Z.addChangeListener(I), f.Z.addChangeListener(I), d.Z.addChangeListener(I), u.Z.addChangeListener(I), g.Z.addChangeListener(I), o.ZP.addChangeListener(I), s.Z.addChangeListener(I)
   }
   _terminate() {
-    Chunk944486.Z.removeChangeListener(I), Chunk914010.Z.removeChangeListener(I), Chunk19780.Z.removeChangeListener(I), Chunk979651.Z.removeChangeListener(I), Chunk819640.Z.removeChangeListener(I), Chunk199902.Z.removeChangeListener(I), Chunk928518.Z.removeChangeListener(I), Chunk131951.Z.removeChangeListener(I), Chunk317381.ZP.removeChangeListener(I), Chunk358221.Z.removeChangeListener(I)
+    b.Z.removeChangeListener(I), _.Z.removeChangeListener(I), h.Z.removeChangeListener(I), E.Z.removeChangeListener(I), f.Z.removeChangeListener(I), d.Z.removeChangeListener(I), u.Z.removeChangeListener(I), g.Z.removeChangeListener(I), o.ZP.removeChangeListener(I), s.Z.removeChangeListener(I)
   }
 }
 let S = new C

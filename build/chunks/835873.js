@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk668781 = require("./668781.js"),
   Chunk388032 = require("./388032.jsx");
 let a = () => {
-  Chunk668781.Z.show({
-    title: Chunk388032.intl.string(Chunk388032.t.otsg2R),
-    body: Chunk388032.intl.string(Chunk388032.t["/Yx5qX"]),
+  r.Z.show({
+    title: i.intl.string(i.t.otsg2R),
+    body: i.intl.string(i.t["/Yx5qX"]),
     hideActionSheet: false
   })
 }

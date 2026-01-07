@@ -134,16 +134,16 @@ let I = (0, Chunk755930.i$)({
     key: "AMOUNT ",
     cellClassName: Chunk502525.amountColumn,
     renderHeader() {
-      let e = (0, Chunk54381.jsx)(Chunk28664.u, {
-        text: Chunk388032.intl.string(Chunk388032.t.q3PkL5),
-        children: (0, Chunk54381.jsx)(Chunk481060.d3s, {
+      let e = (0, l.jsx)(u.u, {
+        text: O.intl.string(O.t.q3PkL5),
+        children: (0, l.jsx)(g.d3s, {
           size: "xs",
           color: "currentColor",
-          className: Chunk502525.amountDisclaimer
+          className: C.amountDisclaimer
         })
       });
-      return (0, Chunk54381.jsxs)(Chunk755930.qN, {
-        children: [Chunk388032.intl.string(Chunk388032.t.VodAGZ), module]
+      return (0, l.jsxs)(x.qN, {
+        children: [O.intl.string(O.t.VodAGZ), e]
       })
     },
     getAmount: e => e.amount
@@ -151,8 +151,8 @@ let I = (0, Chunk755930.i$)({
   S = (0, Chunk334820.rM)([(0, Chunk334820.Fd)({
     key: "PERIOD",
     cellClassName: Chunk502525.periodColumn,
-    renderHeader: () => (0, Chunk54381.jsx)(Chunk755930.qN, {
-      children: Chunk388032.intl.string(Chunk388032.t.fThnXa)
+    renderHeader: () => (0, l.jsx)(x.qN, {
+      children: O.intl.string(O.t.fThnXa)
     }),
     renderContent: e => (0, l.jsx)(N, {
       dateUtc: e.periodStartingAt
@@ -182,16 +182,16 @@ let I = (0, Chunk755930.i$)({
     key: "STATUS ",
     cellClassName: Chunk502525.statusColumn,
     renderHeader() {
-      let e = (0, Chunk54381.jsx)(Chunk28664.u, {
-        text: Chunk388032.intl.string(Chunk388032.t.cIGvZI),
-        children: (0, Chunk54381.jsx)(Chunk481060.d3s, {
+      let e = (0, l.jsx)(u.u, {
+        text: O.intl.string(O.t.cIGvZI),
+        children: (0, l.jsx)(g.d3s, {
           size: "xs",
           color: "currentColor",
-          className: Chunk502525.statusDisclaimer
+          className: C.statusDisclaimer
         })
       });
-      return (0, Chunk54381.jsxs)(Chunk755930.qN, {
-        children: [Chunk388032.intl.string(Chunk388032.t.oypxxw), module]
+      return (0, l.jsxs)(x.qN, {
+        children: [O.intl.string(O.t.oypxxw), e]
       })
     },
     renderContent: e => (0, l.jsx)(x.bL, {

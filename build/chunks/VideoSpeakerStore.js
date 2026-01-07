@@ -31,28 +31,28 @@ function E() {
   if (null == r) e = null;
   else {
     var n, a, o, l, c;
-    null != (e = Chunk358221.Z.getSelectedParticipantId(r)) && Chunk358221.Z.isParticipantPoppedOut(r, module) && (e = null);
-    let t = Chunk199902.Z.getLastActiveStream(),
-      g = null != module ? Chunk358221.Z.getParticipant(r, module) : null;
-    if ((null == g ? true : g.type) !== Chunk354459.fO.ACTIVITY && ((null == g ? true : g.type) !== Chunk354459.fO.USER || (null == (n = g.voiceState) ? true : require.selfVideo)) || (e = null), null != exports && null == module) {
-      let n = null == (a = Chunk358221.Z.getParticipant(r, (0, Chunk569545.V9)(exports))) ? true : a.id;
-      null == require || Chunk358221.Z.isParticipantPoppedOut(r, require) || (e = require)
+    null != (e = u.Z.getSelectedParticipantId(r)) && u.Z.isParticipantPoppedOut(r, e) && (e = null);
+    let t = f.Z.getLastActiveStream(),
+      g = null != e ? u.Z.getParticipant(r, e) : null;
+    if ((null == g ? true : g.type) !== h.fO.ACTIVITY && ((null == g ? true : g.type) !== h.fO.USER || (null == (n = g.voiceState) ? true : n.selfVideo)) || (e = null), null != t && null == e) {
+      let n = null == (a = u.Z.getParticipant(r, (0, d.V9)(t))) ? true : a.id;
+      null == n || u.Z.isParticipantPoppedOut(r, n) || (e = n)
     }
-    if (null == module) {
-      let t = Chunk314897.default.getId(),
-        n = s()(Chunk358221.Z.getVideoParticipants(r)).filter(e => e.type === h.fO.USER && e.user.id !== t && !_.Z.isLocalVideoDisabled(e.user.id) && !u.Z.isParticipantPoppedOut(r, e.id)),
-        a = require.map(e => e.user.id),
+    if (null == e) {
+      let t = p.default.getId(),
+        n = s()(u.Z.getVideoParticipants(r)).filter(e => e.type === h.fO.USER && e.user.id !== t && !_.Z.isLocalVideoDisabled(e.user.id) && !u.Z.isParticipantPoppedOut(r, e.id)),
+        a = n.map(e => e.user.id),
         d = Date.now();
-      null == (e = null == (o = require.map(e => [e.user.id, m.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {
+      null == (e = null == (o = n.map(e => [e.user.id, m.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {
         let [t, n] = e;
         return 0 !== n
       }).maxBy(e => {
         let [t, n] = e;
         return -n
-      })) ? true : Chunk392711[0]) && (e = null != i && a.has(i) ? i : null == (c = require.first()) || null == (l = Chunk570140.user) ? true : Chunk442837.id)
+      })) ? true : o[0]) && (e = null != i && a.has(i) ? i : null == (c = n.first()) || null == (l = c.user) ? true : l.id)
     }
   }
-  i !== module && (i = module, exports && v.emitChange())
+  i !== e && (i = e, t && v.emitChange())
 }
 let b = s().debounce(E, 300);
 
@@ -61,7 +61,7 @@ function y() {
 }
 class O extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk358221.Z, Chunk314897.default, Chunk606304.Z, Chunk199902.Z, Chunk131951.Z), this.syncWith([Chunk358221.Z, Chunk199902.Z], y)
+    this.waitFor(u.Z, p.default, m.Z, f.Z, _.Z), this.syncWith([u.Z, f.Z], y)
   }
   getSpeaker(e) {
     return r !== e && (r = e, E(false)), null != i ? i : p.default.getId()

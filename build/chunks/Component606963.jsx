@@ -97,20 +97,20 @@ function E(e) {
   }, s))
 }
 let b = () => {
-  let e = Chunk473749.useRef(null);
+  let e = i.useRef(null);
 
   function t() {
-    null !== module.current && ((0, Chunk481060.Mr3)(module.current), module.current = null)
+    null !== e.current && ((0, s.Mr3)(e.current), e.current = null)
   }
-  let [o, l] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), d = Chunk473749.useCallback(() => {
-    module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(E, p({
+  let [o, l] = (0, a.Wu)([u.Z], () => [u.Z.shouldShowWarning(), u.Z.isAFKChannel()], []), d = i.useCallback(() => {
+    e.current = (0, s.h7j)(e => (0, r.jsx)(E, p({
       afk: l
     }, e)))
-  }, [Chunk923928]), f = Chunk473749.useCallback(() => {
-    (0, Chunk481060.ZDy)(async () => {
+  }, [l]), f = i.useCallback(() => {
+    (0, s.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("41281").then(require.bind(require, 669732));
+      } = await n.e("41281").then(n.bind(n, 669732));
       return t => (0, r.jsx)(e, m(p({}, t), {
         showHideSuppressWarning: true
       }))
@@ -118,7 +118,7 @@ let b = () => {
       null != t && (e.current = t)
     })
   }, []);
-  return Chunk473749.useEffect(() => (Chunk159691 && (0, Chunk503856.p)() ? f() : Chunk159691 ? Chunk388032() : exports(), () => {
-    exports()
-  }), [Chunk159691, Chunk388032, f]), null
+  return i.useEffect(() => (o && (0, c.p)() ? f() : o ? d() : t(), () => {
+    t()
+  }), [o, d, f]), null
 }

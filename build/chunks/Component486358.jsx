@@ -26,57 +26,57 @@ var Chunk793030 = require("./793030.js"),
 let O = function() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []), n = (0, Chunk442837.e7)([Chunk496675.Z], () => null != exports && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, exports)), O = (0, Chunk34586.E)(exports), C = (0, Chunk902840.l9)(null != exports ? exports : true);
-  return null == exports ? null : (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: module,
-    children: (0, Chunk54381.jsxs)("main", {
-      className: Chunk982112.container,
-      children: [(0, Chunk54381.jsxs)("div", {
-        children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
+  } = (0, o.ZP)(s.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, l.e7)([d.Z], () => null != t && d.Z.can(x.Plq.MANAGE_GUILD, t)), O = (0, c.E)(t), C = (0, a.l9)(null != t ? t : true);
+  return null == t ? null : (0, r.jsx)(o.Gt, {
+    value: e,
+    children: (0, r.jsxs)("main", {
+      className: v.container,
+      children: [(0, r.jsxs)("div", {
+        children: [(0, r.jsx)(i.X6q, {
           variant: "heading-lg/semibold",
           color: "text-strong",
-          children: Chunk388032.intl.string(Chunk388032.t["6TAHbx"])
-        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+          children: j.intl.string(j.t["6TAHbx"])
+        }), (0, r.jsx)(i.xvT, {
           variant: "text-sm/medium",
           color: "text-default",
           tag: "p",
-          className: Chunk982112.description,
-          children: Chunk388032.intl.string(Chunk388032.t.XCGZFk)
+          className: v.description,
+          children: j.intl.string(j.t.XCGZFk)
         })]
-      }), true === C && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Chunk354031.P, {
-          canManageGuild: require,
-          features: exports.features
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk982112.divider
+      }), true === C && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(b.P, {
+          canManageGuild: n,
+          features: t.features
+        }), (0, r.jsx)("div", {
+          className: v.divider
         })]
-      }), (0, Chunk54381.jsx)(Chunk335438.l, {
-        canManageGuild: require,
-        guild: exports
-      }), true !== O && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk982112.divider
-        }), (0, Chunk54381.jsx)(Chunk723914.q, {
+      }), (0, r.jsx)(p.l, {
+        canManageGuild: n,
+        guild: t
+      }), true !== O && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)("div", {
+          className: v.divider
+        }), (0, r.jsx)(g.q, {
           isInventoryFeedEnabled: O,
-          canManageGuild: require,
-          features: exports.features
+          canManageGuild: n,
+          features: t.features
         })]
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk982112.divider
-      }), (0, Chunk54381.jsx)(Chunk30818.z, {
-        guildId: exports.id,
-        defaultSettings: exports.defaultMessageNotifications,
-        canManageGuild: require
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk982112.divider
-      }), (0, Chunk54381.jsx)(Chunk997698.L, {
-        canManageGuild: require,
-        guild: exports
-      }), true === require && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk982112.divider
-        }), (0, Chunk54381.jsx)(Chunk166805.P, {
-          guildId: exports.id
+      }), (0, r.jsx)("div", {
+        className: v.divider
+      }), (0, r.jsx)(f.z, {
+        guildId: t.id,
+        defaultSettings: t.defaultMessageNotifications,
+        canManageGuild: n
+      }), (0, r.jsx)("div", {
+        className: v.divider
+      }), (0, r.jsx)(m.L, {
+        canManageGuild: n,
+        guild: t
+      }), true === n && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)("div", {
+          className: v.divider
+        }), (0, r.jsx)(h.P, {
+          guildId: t.id
         })]
       })]
     })

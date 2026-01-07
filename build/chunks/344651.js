@@ -453,7 +453,7 @@ K(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
     experimentName: e.experiment_name
   })
 }), W(["RESUMED"], () => {
-  Chunk955132.RR.forceUpdate(), Chunk955132.GC.forceUpdate(), Q({
+  x.RR.forceUpdate(), x.GC.forceUpdate(), Q({
     type: "CONNECTION_RESUMED"
   })
 }), W(["TYPING_START"], e => {
@@ -1120,9 +1120,9 @@ K(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
     entitlement: e
   })
 }), W(["USER_PAYMENT_SOURCES_UPDATE"], () => {
-  Chunk819640.Z.hasLayers() && (require("./355467.js").tZ(), Chunk821849.Gn(Chunk509545.Z.getFetchedSKUIDs()))
+  T.Z.hasLayers() && (n(355467).tZ(), l.Gn(N.Z.getFetchedSKUIDs()))
 }), W(["USER_SUBSCRIPTIONS_UPDATE"], () => {
-  Chunk232567.k(), Chunk819640.Z.hasLayers() && require("./355467.js").jg()
+  c.k(), T.Z.hasLayers() && n(355467).jg()
 }), W(["WISHLIST_ITEM_PURCHASED"], e => {
   Q({
     type: "WISHLIST_ITEM_PURCHASED",

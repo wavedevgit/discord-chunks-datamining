@@ -70,15 +70,15 @@ class x {
   }
   getBrandSafetyContext() {
     var e;
-    let t = (0, Chunk862657.VB)(this.questContent),
-      n = (0, Chunk862657.uN)(this.questContent),
-      r = (0, Chunk113544.z5)(),
-      i = (0, Chunk113544.QW)();
-    if (!(null == require ? true : require.is_campaign_ias_enabled) || !exports || true === Chunk54381 || true === Chunk473749) return null;
+    let t = (0, S.VB)(this.questContent),
+      n = (0, S.uN)(this.questContent),
+      r = (0, f.z5)(),
+      i = (0, f.QW)();
+    if (!(null == n ? true : n.is_campaign_ias_enabled) || !t || true === r || true === i) return null;
     let a = () => {
-        let e = Chunk54381(),
-          t = Chunk430824.Z.getGuilds();
-        return module.map(e => {
+        let e = r(),
+          t = m.Z.getGuilds();
+        return e.map(e => {
           var n;
           let r = t[e];
           if (true === r) return null;
@@ -96,9 +96,9 @@ class x {
           return null !== a && (i.icon_url = a), i
         }).filter(e => null !== e)
       },
-      o = Chunk914010.Z.getGuildId(),
-      s = null != Chunk286379 ? Chunk430824.Z.getGuild(Chunk286379) : null,
-      l = () => null == Chunk442837 ? [] : Chunk473749().map(e => {
+      o = h.Z.getGuildId(),
+      s = null != o ? m.Z.getGuild(o) : null,
+      l = () => null == s ? [] : i().map(e => {
         let t = _.Z.getChannel(e);
         if (true === t) return null;
         let n = {
@@ -108,16 +108,16 @@ class x {
         return t.topic.length > 0 && (n.channel_topic = t.topic), n
       }).filter(e => null !== e),
       c = {
-        guilds: Chunk772848(),
-        channels: Chunk493773()
+        guilds: a(),
+        channels: l()
       };
-    null != Chunk286379 && (Chunk110924.selected_guild_id = Chunk286379);
-    let u = (null == Chunk442837 ? true : Chunk442837.banner) !== null && (null == Chunk442837 ? true : Chunk442837.banner) !== true && null != (e = Chunk768581.ZP.getGuildBannerURL({
-      id: Chunk442837.id,
-      banner: Chunk442837.banner
-    }, true)) ? module : null;
-    return null !== Chunk516796 && (Chunk110924.selected_guild_banner_url = Chunk516796), Chunk110924.guilds.length > A && (Chunk110924.guilds = Chunk110924.guilds.slice(0, A), Chunk110924.truncated = true), Chunk110924.channels.length > A && (Chunk110924.channels = Chunk110924.channels.slice(0, A), Chunk110924.truncated = true), {
-      brand_safety_context: JSON.stringify(Chunk110924)
+    null != o && (c.selected_guild_id = o);
+    let u = (null == s ? true : s.banner) !== null && (null == s ? true : s.banner) !== true && null != (e = g.ZP.getGuildBannerURL({
+      id: s.id,
+      banner: s.banner
+    }, true)) ? e : null;
+    return null !== u && (c.selected_guild_banner_url = u), c.guilds.length > A && (c.guilds = c.guilds.slice(0, A), c.truncated = true), c.channels.length > A && (c.channels = c.channels.slice(0, A), c.truncated = true), {
+      brand_safety_context: JSON.stringify(c)
     }
   }
   constructor({
@@ -242,13 +242,13 @@ let L = (e, t) => {
   M = Chunk473749.createContext(true);
 
 function k() {
-  let e = Chunk473749.useContext(M);
-  return null == module ? true : module.current
+  let e = i.useContext(M);
+  return null == e ? true : e.current
 }
 
 function U() {
   var e;
-  return null == (e = k()) ? true : module.getId()
+  return null == (e = k()) ? true : e.getId()
 }
 
 function G(e) {

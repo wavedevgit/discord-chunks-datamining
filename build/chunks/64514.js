@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 64514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
@@ -23,12 +23,12 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 let g = Chunk314897.default.getToken();
-class h extends Chunk317770.Z {
+class m extends Chunk317770.Z {
   _initialize() {
-    this.focusedOrForegrounded = (0, Chunk127438.H)(), Chunk314897.default.addChangeListener(this.handleAuthenticationChange), Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), Chunk570140.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), Chunk570140.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), Chunk570140.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), Chunk570140.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
+    this.focusedOrForegrounded = (0, d.H)(), a.default.addChangeListener(this.handleAuthenticationChange), i.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
   _terminate() {
-    this.stopAnalyticHeartbeat(), Chunk314897.default.removeChangeListener(this.handleAuthenticationChange), Chunk570140.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), Chunk570140.Z.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), Chunk570140.Z.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), Chunk570140.Z.unsubscribe("LOGIN_SUCCESS", this.handleLogin), Chunk570140.Z.unsubscribe("LOGOUT", this.handleLogout)
+    this.stopAnalyticHeartbeat(), a.default.removeChangeListener(this.handleAuthenticationChange), i.Z.unsubscribe("WINDOW_FOCUS", this.handleWindowFocus), i.Z.unsubscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.Z.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.Z.unsubscribe("LOGIN_SUCCESS", this.handleLogin), i.Z.unsubscribe("LOGOUT", this.handleLogout)
   }
   constructor(...e) {
     var t;
@@ -93,4 +93,4 @@ class h extends Chunk317770.Z {
     })
   }
 }
-let m = new h
+let h = new m

@@ -51,12 +51,12 @@ let T = e => {
       })]
     })
   },
-  P = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk468941.placeholderCard,
-    children: (0, Chunk54381.jsx)("img", {
-      className: Chunk468941.placeholderImg,
-      alt: Chunk388032.intl.string(Chunk388032.t.wl4ntJ),
-      src: require("./872732.js")
+  P = () => (0, r.jsx)("div", {
+    className: _.placeholderCard,
+    children: (0, r.jsx)("img", {
+      className: _.placeholderImg,
+      alt: S.intl.string(S.t.wl4ntJ),
+      src: n(872732)
     })
   }),
   w = e => {

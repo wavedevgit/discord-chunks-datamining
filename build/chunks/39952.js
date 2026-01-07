@@ -7,8 +7,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js");
 
 function l() {
-  return (0, Chunk442837.e7)([Chunk594174.default], () => {
+  return (0, r.e7)([i.default], () => {
     var e, n;
-    return null != (n = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports
+    return null != (n = null == (e = i.default.getCurrentUser()) ? true : e.isStaff()) && n
   })
 }

@@ -13,15 +13,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.EGn1eN),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.iT257i),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
+  useTitle: () => S.intl.string(S.t.EGn1eN),
+  useSubtitle: () => S.intl.string(S.t.iT257i),
+  useSearchTerms: () => [S.intl.string(S.t["pS+K2L"]), S.intl.string(S.t.nuFtHH)],
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => {
+    return (0, i.e7)([u.Z], () => {
       let {
         pttLatchingEnabled: t
-      } = Chunk131951.Z.getModeOptions();
-      return null != module && module
+      } = u.Z.getModeOptions();
+      return null != t && t
     })
   },
   setValue: function(t) {
@@ -30,12 +30,12 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
     })
   },
   usePredicate: function() {
-    let t = (0, Chunk595373.J)(),
+    let t = (0, o.J)(),
       {
         enableLatching: e
-      } = (0, Chunk383451.H)({
+      } = (0, r.H)({
         location: "PushToTalkLatchingSetting"
       });
-    return module && exports
+    return t && e
   }
 })

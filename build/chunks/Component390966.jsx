@@ -116,13 +116,13 @@ function O(e) {
 }
 
 function v() {
-  return (0, Chunk54381.jsx)(Chunk481060.IGR, {
-    className: Chunk791675.newBadge,
-    color: Chunk692547.Z.unsafe_rawColors.BRAND_260.css,
-    text: (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk791675.newBadgeText,
+  return (0, r.jsx)(d.IGR, {
+    className: g.newBadge,
+    color: c.Z.unsafe_rawColors.BRAND_260.css,
+    text: (0, r.jsx)(d.Text, {
+      className: g.newBadgeText,
       variant: "text-xs/bold",
-      children: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
+      children: h.intl.string(h.t.y2b7CA)
     })
   })
 }

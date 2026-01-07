@@ -8,7 +8,7 @@ var Chunk473749 = require("./473749.js");
 let r = Chunk473749.createContext(null);
 
 function i() {
-  let e = Chunk473749.useContext(r);
-  if (null == module) throw Error("useSafetyFlowTask must be used within a SafetyFlowTaskContext Provider");
-  return module
+  let e = a.useContext(r);
+  if (null == e) throw Error("useSafetyFlowTask must be used within a SafetyFlowTaskContext Provider");
+  return e
 }

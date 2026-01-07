@@ -182,8 +182,8 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getGuildFolders() {
     var e;
-    let t = null == (e = E.proto.guildFolders) ? true : module.folders;
-    return null == exports ? null : exports.map(e => {
+    let t = null == (e = E.proto.guildFolders) ? true : e.folders;
+    return null == t ? null : t.map(e => {
       var t, n, r;
       let i = null == (t = e.id) ? true : t.value,
         a = null == (n = e.color) ? true : n.value;
@@ -211,7 +211,7 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getGuildsProto() {
     var e, t;
-    return null != (t = null == (e = this.settings.guilds) ? true : module.guilds) ? exports : null
+    return null != (t = null == (e = this.settings.guilds) ? true : e.guilds) ? t : null
   }
 }
 h(D, "displayName", "UserSettingsProtoStore"), h(D, "persistKey", "UserSettingsProtoStore-Cache");

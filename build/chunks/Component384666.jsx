@@ -13,29 +13,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  let e, a = (0, Chunk828700.TH)(),
-    [t, f] = Chunk473749.useState(false),
-    [u, p] = Chunk473749.useState(false);
-  return Chunk473749.useEffect(() => {
+  let e, a = (0, c.TH)(),
+    [t, f] = n.useState(false),
+    [u, p] = n.useState(false);
+  return n.useEffect(() => {
     !async function() {
-      let e = (0, Chunk593473.parse)(exports.search);
+      let e = (0, s.parse)(a.search);
       try {
         var t;
-        await (0, Chunk489863.g)(null != (t = module.token) ? require : ""), f(true)
+        await (0, r.g)(null != (t = e.token) ? t : ""), f(true)
       } catch (e) {
         p(true)
       }
     }()
-  }, [exports.search]), e = require ? (0, Chunk54381.jsx)(Chunk397394.c7, {
-    message: Chunk388032.intl.string(Chunk388032.t.Tqu3OQ),
+  }, [a.search]), e = t ? (0, o.jsx)(i.c7, {
+    message: l.intl.string(l.t.Tqu3OQ),
     showsCloseWindowText: true
-  }) : u ? (0, Chunk54381.jsx)(Chunk397394.Lk, {
-    message: Chunk388032.intl.string(Chunk388032.t.J8LsCs),
+  }) : u ? (0, o.jsx)(i.Lk, {
+    message: l.intl.string(l.t.J8LsCs),
     showsCloseWindowText: true
-  }) : (0, Chunk54381.jsx)(Chunk397394.ZP, {
-    message: Chunk388032.intl.string(Chunk388032.t.BAcf6a),
+  }) : (0, o.jsx)(i.ZP, {
+    message: l.intl.string(l.t.BAcf6a),
     spinner: true
-  }), (0, Chunk54381.jsx)(Chunk787025.G, {
-    children: module
+  }), (0, o.jsx)(d.G, {
+    children: e
   })
 }

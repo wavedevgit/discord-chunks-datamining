@@ -79,7 +79,7 @@ class h extends _ {
     return this.reactions.find(t => (0, l.ir)(t.emoji, e))
   }
   getContentMessage() {
-    return (0, Chunk978003.Z)(this) ? this.messageSnapshots[0].message : this
+    return (0, o.Z)(this) ? this.messageSnapshots[0].message : this
   }
   userHasReactedWithEmoji(e, t) {
     return this.reactions.some(n => {
@@ -232,14 +232,14 @@ class h extends _ {
     return this.author.isSystemUser()
   }
   isCommandType() {
-    return this.type === Chunk981631.uaV.CHAT_INPUT_COMMAND || this.type === Chunk981631.uaV.CONTEXT_MENU_COMMAND
+    return this.type === c.uaV.CHAT_INPUT_COMMAND || this.type === c.uaV.CONTEXT_MENU_COMMAND
   }
   isPoll() {
     return null != this.poll
   }
   hasPotions() {
     var e, t;
-    return (null != (t = null == (e = this.potions) ? true : module.length) ? exports : 0) > 0
+    return (null != (t = null == (e = this.potions) ? true : e.length) ? t : 0) > 0
   }
   isInteractionPlaceholder() {
     return null != this.interaction && this.author.isNonUserBot()

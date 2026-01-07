@@ -41,25 +41,25 @@ let T = [{
 }];
 
 function O() {
-  let e = Chunk473749.useRef(null),
+  let e = r.useRef(null),
     {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.DEV_TOOLS),
-    n = Chunk695346.JG.useSetting(),
-    [i, o] = Chunk473749.useState(""),
-    O = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
-    N = (0, Chunk835473.q)(Chunk120356),
-    P = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
+    } = (0, p.ZP)(m.Z.DEV_TOOLS),
+    n = j.JG.useSetting(),
+    [i, o] = r.useState(""),
+    O = (0, s.e7)([g.ZP, y.Z], () => (0, v.Z)(g.ZP, y.Z)),
+    N = (0, b.q)(i),
+    P = (0, s.Wu)([x.Z], () => {
       var e, t;
-      return null != (t = null == N || null == (e = N.linkedGames) ? true : module.map(e => x.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
+      return null != (t = null == N || null == (e = N.linkedGames) ? true : e.map(e => x.Z.getApplication(e.id)).filter(e => null != e)) ? t : []
     }),
-    w = (0, Chunk524995.FG)(N, {
-      allowedFlows: [Chunk524995.ro.RPC]
+    w = (0, h.FG)(N, {
+      allowedFlows: [h.ro.RPC]
     }),
-    I = (0, Chunk524995.FG)(N, {
-      allowedFlows: [Chunk524995.ro.WEB]
+    I = (0, h.FG)(N, {
+      allowedFlows: [h.ro.WEB]
     }),
-    k = (0, Chunk524995.FG)(N),
+    k = (0, h.FG)(N),
     {
       canDeauthorize: R,
       deauthorize: A
@@ -73,76 +73,76 @@ function O() {
         deauthorize: n
       }
     }(null == N ? true : N.id);
-  return (0, Chunk54381.jsxs)("div", {
-    ref: module,
-    className: l()(Chunk663618.panel, Chunk17827.panel),
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk17827.container,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, a.jsxs)("div", {
+    ref: e,
+    className: l()(S.panel, E.panel),
+    children: [(0, a.jsxs)("div", {
+      className: E.container,
+      children: [(0, a.jsx)(d.Heading, {
         variant: "heading-lg/normal",
         children: "Settings"
-      }), (0, Chunk54381.jsx)(Chunk199849.B6, {
+      }), (0, a.jsx)(c.B6, {
         label: "Receive DMs In Game",
         options: T,
         isSelected: e => e === n,
-        select: Chunk695346.JG.updateSetting,
-        popoutLayerContext: Chunk246992.O$,
+        select: j.JG.updateSetting,
+        popoutLayerContext: _.O$,
         serialize: e => e.toString()
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk17827.container,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, a.jsxs)("div", {
+      className: E.container,
+      children: [(0, a.jsx)(d.Heading, {
         variant: "heading-lg/normal",
         children: "Application"
-      }), (0, Chunk54381.jsx)(Chunk481060.oil, {
+      }), (0, a.jsx)(d.oil, {
         label: "Application ID",
-        value: Chunk120356,
-        onChange: Chunk524437
-      }), null != O && null != O.id ? (0, Chunk54381.jsx)(Chunk481060.Button, {
-        onClick: () => Chunk524437(O.id),
+        value: i,
+        onChange: o
+      }), null != O && null != O.id ? (0, a.jsx)(d.Button, {
+        onClick: () => o(O.id),
         variant: "primary",
         text: "Use detected game: ".concat(O.name, " (").concat(O.id, ")")
-      }) : null, (0, Chunk54381.jsxs)(Chunk481060.Text, {
+      }) : null, (0, a.jsxs)(d.Text, {
         variant: "text-md/normal",
         children: ["Application Name: ", null != N ? N.name : "N/A"]
-      }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
+      }), (0, a.jsxs)(d.Text, {
         variant: "text-md/normal",
         children: ["Linked Games:", " ", P.length > 0 ? P.map(e => {
           var t;
           return (null == (t = (0, f.r)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk17827.container,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    }), (0, a.jsxs)("div", {
+      className: E.container,
+      children: [(0, a.jsx)(d.Heading, {
         variant: "heading-lg/normal",
         children: "Authorization"
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)(d.Button, {
         disabled: !k.canStartAuthorization,
         onClick: () => k.startAuthorization({
-          analyticsLocations: exports
+          analyticsLocations: t
         }),
         variant: "primary",
         text: "Start Authorization"
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, a.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)(d.Button, {
         disabled: !w.canStartAuthorization,
         onClick: () => w.startAuthorization({
-          analyticsLocations: exports
+          analyticsLocations: t
         }),
         variant: "secondary",
         text: "Start In-App Authorization"
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)(d.Button, {
         disabled: !I.canStartAuthorization,
         onClick: () => I.startAuthorization({
-          analyticsLocations: exports
+          analyticsLocations: t
         }),
         variant: "secondary",
         text: "Start Web Authorization"
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, a.jsx)(d.Button, {
         disabled: !R,
         onClick: A,
         variant: "critical-primary",

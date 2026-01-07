@@ -167,13 +167,13 @@ function Y(e) {
 }
 
 function W() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk423768.wordMark,
-    children: [(0, Chunk54381.jsx)(Chunk754347.Z, {
-      className: Chunk423768.discordWordmark,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.FSOz78)
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk423768.classicWordmark
+  return (0, r.jsxs)("div", {
+    className: M.wordMark,
+    children: [(0, r.jsx)(b.Z, {
+      className: M.discordWordmark,
+      "aria-label": j.intl.string(j.t.FSOz78)
+    }), (0, r.jsx)("div", {
+      className: M.classicWordmark
     })]
   })
 }
@@ -181,24 +181,24 @@ function W() {
 function K() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.ACCOUNT_CREDIT_BANNER);
-  return (0, Chunk54381.jsx)(H, {
-    wordMark: (0, Chunk54381.jsx)(W, {}),
-    subscriptionInfo: (0, Chunk54381.jsx)("div", {
-      className: Chunk423768.planInfo,
-      children: Chunk388032.intl.string(Chunk388032.t.R0GJL2)
+  } = (0, f.ZP)(d.Z.ACCOUNT_CREDIT_BANNER);
+  return (0, r.jsx)(H, {
+    wordMark: (0, r.jsx)(W, {}),
+    subscriptionInfo: (0, r.jsx)("div", {
+      className: M.planInfo,
+      children: j.intl.string(j.t.R0GJL2)
     }),
-    buttons: (0, Chunk54381.jsx)(Chunk987997.Z, {
-      className: Chunk423768.toolsButton,
-      onClick: () => (0, Chunk963249.Z)({
-        subscriptionTier: Chunk474936.Si.TIER_1,
-        analyticsLocations: module,
+    buttons: (0, r.jsx)(R.Z, {
+      className: M.toolsButton,
+      onClick: () => (0, m.Z)({
+        subscriptionTier: D.Si.TIER_1,
+        analyticsLocations: e,
         analyticsObject: B
       }),
-      text: Chunk388032.intl.string(Chunk388032.t["/ygMUY"])
+      text: j.intl.string(j.t["/ygMUY"])
     }),
     statusClasses: {
-      [Chunk423768.tier1]: true
+      [M.tier1]: true
     }
   })
 }

@@ -198,13 +198,13 @@ function I(e) {
 }
 
 function P() {
-  return (0, Chunk54381.jsx)(Chunk240126.Z, {
-    Icon: Chunk481060.xx7,
+  return (0, r.jsx)(v.Z, {
+    Icon: d.xx7,
     disableStars: true,
-    header: Chunk388032.intl.string(Chunk388032.t["KG/ynf"]),
-    tip: Chunk388032.intl.string(Chunk388032.t.cvcKzX)
+    header: E.intl.string(E.t["KG/ynf"]),
+    tip: E.intl.string(E.t.cvcKzX)
   })
 }
-let N = () => (0, Chunk54381.jsx)(Chunk143316.Z, {
-  onClick: () => Chunk585483.S.dispatch(Chunk981631.CkL.INBOX_MARK_ALL_UNREADS_READ)
+let N = () => (0, r.jsx)(O.Z, {
+  onClick: () => m.S.dispatch(x.CkL.INBOX_MARK_ALL_UNREADS_READ)
 })

@@ -82,64 +82,64 @@ function j(e) {
 }
 
 function M() {
-  let e = Chunk473749.useRef(null),
-    t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(exports)),
+  let e = i.useRef(null),
+    t = (0, s.e7)([b.Z], () => b.Z.getGuildId()),
+    n = (0, s.e7)([E.Z], () => E.Z.getChannelId(t)),
     {
       viewingRoles: a,
       backNavigationSection: o,
       isFullServerPreview: u,
       isServerShopPreview: v
-    } = (0, Chunk442837.cj)([Chunk160404.Z], () => ({
-      viewingRoles: null != exports ? Chunk160404.Z.getViewingRoles(exports) : null,
-      backNavigationSection: Chunk160404.Z.getBackNavigationSection(exports),
-      isFullServerPreview: null != exports && Chunk160404.Z.isFullServerPreview(exports),
-      isServerShopPreview: null != exports && Chunk160404.Z.isViewingServerShop(exports)
+    } = (0, s.cj)([I.Z], () => ({
+      viewingRoles: null != t ? I.Z.getViewingRoles(t) : null,
+      backNavigationSection: I.Z.getBackNavigationSection(t),
+      isFullServerPreview: null != t && I.Z.isFullServerPreview(t),
+      isServerShopPreview: null != t && I.Z.isViewingServerShop(t)
     }));
-  if (null == Chunk120356 || null == exports) return null;
+  if (null == a || null == t) return null;
   let M = L(o),
     k = j(o),
-    U = require === Chunk176505.oC.GUILD_ONBOARDING,
+    U = n === A.oC.GUILD_ONBOARDING,
     G = e => {
       let {
         backToSettings: n
       } = e;
       null != t && (I.Z.isFullServerPreview(t) && (0, g.uL)(C.Z5c.CHANNEL(t)), p.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && h.Z.open(t, o), o === C.pNK.ROLE_SUBSCRIPTIONS && (0, m.GN)(t))
     };
-  return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-    color: Chunk481060.DM8.BRAND,
-    className: Chunk176727.notice,
-    children: [(0, Chunk54381.jsxs)(D, {
+  return (0, r.jsxs)(d.qXd, {
+    color: d.DM8.BRAND,
+    className: w.notice,
+    children: [(0, r.jsxs)(D, {
       onClick: () => G({
         backToSettings: true
       }),
-      className: Chunk176727.backButton,
-      children: [(0, Chunk54381.jsx)(Chunk671533.Z, {
+      className: w.backButton,
+      children: [(0, r.jsx)(y.Z, {
         width: 16,
         height: 16,
-        direction: Chunk671533.Z.Directions.LEFT,
-        className: Chunk176727.backArrow
+        direction: y.Z.Directions.LEFT,
+        className: w.backArrow
       }), M]
-    }), U && Chunk755721 ? (0, Chunk54381.jsx)("div", {
-      className: Chunk176727.noticeContents,
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk176727.noticeText,
-        children: Chunk388032.intl.string(Chunk388032.t.PxbiAf)
+    }), U && u ? (0, r.jsx)("div", {
+      className: w.noticeContents,
+      children: (0, r.jsx)("div", {
+        className: w.noticeText,
+        children: R.intl.string(R.t.PxbiAf)
       })
-    }) : (0, Chunk54381.jsxs)("div", {
-      className: Chunk176727.noticeContents,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk176727.noticeText,
-        children: Chunk755721 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["0PHahI"], {
-          numRoles: Object.keys(Chunk120356).length
-        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8t, {
-          numRoles: Object.keys(Chunk120356).length
+    }) : (0, r.jsxs)("div", {
+      className: w.noticeContents,
+      children: [(0, r.jsx)("div", {
+        className: w.noticeText,
+        children: u ? R.intl.formatToPlainString(R.t["0PHahI"], {
+          numRoles: Object.keys(a).length
+        }) : R.intl.formatToPlainString(R.t.vMlK8t, {
+          numRoles: Object.keys(a).length
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.yRy, {
-        targetElementRef: module,
+      }), (0, r.jsx)(d.yRy, {
+        targetElementRef: e,
         position: "bottom",
-        renderPopout: () => (0, Chunk54381.jsx)(Chunk889695.Z, {
-          guildId: exports
+        renderPopout: () => (0, r.jsx)(T.Z, {
+          guildId: t
         }),
         children: t => {
           let {
@@ -156,25 +156,25 @@ function M() {
             })]
           })
         }
-      }), Chunk755721 && (0, Chunk54381.jsx)(Chunk28664.u, {
+      }), u && (0, r.jsx)(c.u, {
         asContainer: true,
-        text: Chunk388032.intl.string(Chunk388032.t.mW4DUE),
-        children: (0, Chunk54381.jsx)(Chunk481060.Mgn, {
+        text: R.intl.string(R.t.mW4DUE),
+        children: (0, r.jsx)(d.Mgn, {
           size: "xs",
-          color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
+          color: l.Z.unsafe_rawColors.YELLOW_300.css
         })
-      }), Chunk358085 && (0, Chunk54381.jsx)(Chunk28664.u, {
+      }), v && (0, r.jsx)(c.u, {
         asContainer: true,
-        text: Chunk388032.intl.formatToPlainString(Chunk388032.t.eummvd, {
-          maxTiers: Chunk293810.fF,
-          maxProducts: Chunk302463.dD
+        text: R.intl.formatToPlainString(R.t.eummvd, {
+          maxTiers: P.fF,
+          maxProducts: N.dD
         }),
-        children: (0, Chunk54381.jsx)(Chunk481060.Mgn, {
+        children: (0, r.jsx)(d.Mgn, {
           size: "xs",
-          color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
+          color: l.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk54381.jsx)(x, {
+    }), u || o === C.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(x, {
       onClick: () => G({
         backToSettings: false
       })

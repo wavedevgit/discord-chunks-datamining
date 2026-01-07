@@ -156,7 +156,7 @@ function d() {
 }
 var f = function() {
     function e() {}
-    return module.prototype.observe = function() {}, module.prototype.unobserve = function() {}, module.prototype.disconnect = function() {}, module
+    return e.prototype.observe = function() {}, e.prototype.unobserve = function() {}, e.prototype.disconnect = function() {}, e
   }(),
   p = globalThis.ResizeObserver || f,
   _ = true !== globalThis.ResizeObserver,
@@ -304,7 +304,7 @@ function b(e) {
 }
 var y, O = function() {
     function e() {}
-    return module.prototype.observe = function() {}, module.prototype.unobserve = function() {}, module.prototype.disconnect = function() {}, module
+    return e.prototype.observe = function() {}, e.prototype.unobserve = function() {}, e.prototype.disconnect = function() {}, e
   }(),
   v = globalThis.IntersectionObserver || O,
   S = function() {
@@ -317,11 +317,11 @@ var y, O = function() {
         })
       }, this.observer = new v(this.onObserved)
     }
-    return module.prototype.registerCallback = function(e, t) {
+    return e.prototype.registerCallback = function(e, t) {
       this.observer.observe(e), this.elementsMap.set(e, t)
-    }, module.prototype.removeCallback = function(e) {
+    }, e.prototype.removeCallback = function(e) {
       this.observer.unobserve(e), this.elementsMap.delete(e)
-    }, module
+    }, e
   }(),
   I = function() {
     return y || (y = new S), y

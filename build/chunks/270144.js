@@ -69,23 +69,23 @@ function y(e) {
   return a ? f.filter(e => null != e.endsAt && e.endsAt.getTime() > Math.max(null != o ? o : 0, Date.now() - g)) : []
 }
 let O = () => {
-  let [e, t] = Chunk473749.useState(0);
-  return Chunk473749.useEffect(() => {
-    exports(1), Promise.all([(0, Chunk496929.p0)({
+  let [e, t] = r.useState(0);
+  return r.useEffect(() => {
+    t(1), Promise.all([(0, a.p0)({
       withSku: true,
       withApplication: true,
-      entitlementType: Chunk981631.qc2.APPLICATION_SUBSCRIPTION
-    }), (0, Chunk496929.p0)({
+      entitlementType: h.qc2.APPLICATION_SUBSCRIPTION
+    }), (0, a.p0)({
       withSku: true,
       withApplication: true,
-      entitlementType: Chunk981631.qc2.PURCHASE
+      entitlementType: h.qc2.PURCHASE
     })]).catch(() => {
-      exports(3)
+      t(3)
     }).then(() => {
-      exports(2)
+      t(2)
     })
   }, []), {
-    loadState: module
+    loadState: e
   }
 };
 

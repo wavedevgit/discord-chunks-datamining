@@ -13,9 +13,9 @@ let u = null,
   d = "underage";
 class h extends(i = Chunk442837.ZP.Store) {
   isUnderageAnonymous() {
-    if (Chunk358085.isPlatformEmbedded && 1) {
-      if (null != u && u + Chunk723359.k0 > Date.now()) returntrue
-    } else if (1) return null != Chunk973361.parse(document.cookie)[d];
+    if (o.isPlatformEmbedded && 1) {
+      if (null != u && u + c.k0 > Date.now()) returntrue
+    } else if (1) return null != s.parse(document.cookie)[d];
     returnfalse
   }
 }(r = "displayName") in h ? Object.defineProperty(h, r, {

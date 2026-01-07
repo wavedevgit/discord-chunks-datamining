@@ -125,9 +125,9 @@ class O extends _ {
     if (super(), this.identifier = "islamic-umalqura", r || (r = new Uint16Array(Uint8Array.from(atob(h), e => e.charCodeAt(0)).buffer)), !i) {
       i = new Uint32Array(c - l + 1);
       let e = 0;
-      for (let t = l; exports <= c; exports++) {
-        i[exports - l] = module;
-        for (let n = 1; require <= 12; require++) e += E(exports, require)
+      for (let t = l; t <= c; t++) {
+        i[t - l] = e;
+        for (let n = 1; n <= 12; n++) e += E(t, n)
       }
     }
   }

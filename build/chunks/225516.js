@@ -13,18 +13,18 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 async function d() {
-  if (Chunk482207.Z.shouldFetch) {
-    Chunk570140.Z.dispatch({
+  if (o.Z.shouldFetch) {
+    l.Z.dispatch({
       type: "RECENT_AVATARS_FETCH_START"
     });
     try {
-      let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.RECENT_AVATARS,
+      let e = await r.tn.get({
+        url: c.ANM.RECENT_AVATARS,
         rejectWithError: true
       });
-      Chunk570140.Z.dispatch({
+      l.Z.dispatch({
         type: "RECENT_AVATARS_FETCH_SUCCESS",
-        avatars: module.body.avatars.map(e => {
+        avatars: e.body.avatars.map(e => {
           var t, n, {
               storage_hash: r
             } = e,
@@ -75,9 +75,9 @@ async function d() {
         })
       })
     } catch (e) {
-      Chunk570140.Z.dispatch({
+      l.Z.dispatch({
         type: "RECENT_AVATARS_FETCH_FAILURE",
-        error: new Chunk881052.Hx(module)
+        error: new s.Hx(e)
       })
     }
   }

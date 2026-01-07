@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js"),
   Chunk550385 = require("./550385.js");
 let a = () => {
-  (0, Chunk550385.Ll)(), Chunk570140.Z.dispatch({
+  (0, i.Ll)(), r.Z.dispatch({
     type: "CLIENT_THEMES_EDITOR_CLOSE"
   })
 }

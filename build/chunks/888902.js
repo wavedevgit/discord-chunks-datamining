@@ -10,14 +10,14 @@ module.exports = function() {
   function e(t, e) {
     this.time = t, this.value = e
   }
-  return module.prototype = {
+  return t.prototype = {
     toJSON: function() {
       if (this.dataPoints_.length < 1) return {};
-      for (var t = [], e = 0; e < this.dataPoints_.length; ++e) module.push(this.dataPoints_[e].value);
+      for (var t = [], e = 0; e < this.dataPoints_.length; ++e) t.push(this.dataPoints_[e].value);
       return {
         startTime: this.dataPoints_[0].time,
         endTime: this.dataPoints_[this.dataPoints_.length - 1].time,
-        values: JSON.stringify(module)
+        values: JSON.stringify(t)
       }
     },
     addPoint: function(t, i) {
@@ -53,5 +53,5 @@ module.exports = function() {
       }
       return n
     }
-  }, module
+  }, t
 }()

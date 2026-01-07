@@ -46,14 +46,14 @@ function k(e) {
 
 function P() {
   var e, t;
-  let n = (e = ["grayscale(", ")"], exports || (t = module.slice(0)), Object.freeze(Object.defineProperties(module, {
+  let n = (e = ["grayscale(", ")"], t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, {
     raw: {
-      value: Object.freeze(exports)
+      value: Object.freeze(t)
     }
   })));
   return P = function() {
-    return require
-  }, require
+    return n
+  }, n
 }
 let j = 747,
   S = e => {

@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
 let f = [{
     key: "tier_name",
     cellClassName: Chunk199596.tierNameColumn,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t["2Uiha2"]),
+    renderHeader: () => d.intl.string(d.t["2Uiha2"]),
     render(e) {
       let t, {
         subscriptionListing: n
@@ -41,14 +41,14 @@ let f = [{
   }, {
     key: "subscribers",
     cellClassName: l()(Chunk199596.subscribersColumn, Chunk729124.cellAlignRight),
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.zu8go1),
+    renderHeader: () => d.intl.string(d.t.zu8go1),
     render: e => (0, r.jsx)(c.av, {
       children: e.roleMemberCount
     })
   }, {
     key: "price",
     cellClassName: l()(Chunk199596.priceColumn, Chunk729124.cellAlignRight),
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.NcrbWI),
+    renderHeader: () => d.intl.string(d.t.NcrbWI),
     render(e) {
       let {
         subscriptionListing: t

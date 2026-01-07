@@ -11,12 +11,12 @@ var Chunk509613 = require("./509613.js"),
   Chunk663623 = require("./663623.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_EMAIL_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["w/qqKK"]),
+  useTitle: () => o.intl.string(o.t["w/qqKK"]),
   initialize: function() {
     let {
       initialized: t
-    } = Chunk151662.Z.getEmailSettings();
-    module || (0, Chunk960412.Y7)()
+    } = s.Z.getEmailSettings();
+    t || (0, l.Y7)()
   },
-  buildLayout: () => [...Chunk996231.s, Chunk663623.r]
+  buildLayout: () => [...r.s, a.r]
 })

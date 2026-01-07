@@ -51,11 +51,11 @@ let d = () => {
   let {
     isEnabled: e,
     lastUsedObject: t
-  } = (0, Chunk442837.cj)([Chunk115130.Z], () => ({
-    isEnabled: Chunk115130.Z.getIsEnabled(),
-    lastUsedObject: Chunk115130.Z.getLastUsedObject()
-  }), []), n = (0, Chunk442837.Wu)([Chunk115130.Z], () => Chunk115130.Z.getDeveloperShelfItems(), []);
-  return Chunk473749.useMemo(() => module ? require.map(e => ({
+  } = (0, i.cj)([a.Z], () => ({
+    isEnabled: a.Z.getIsEnabled(),
+    lastUsedObject: a.Z.getLastUsedObject()
+  }), []), n = (0, i.Wu)([a.Z], () => a.Z.getDeveloperShelfItems(), []);
+  return r.useMemo(() => e ? n.map(e => ({
     application: e,
     activity: u(l({}, o.wT, e.embeddedActivityConfig), {
       application_id: e.id
@@ -64,5 +64,5 @@ let d = () => {
     let r = t[e.application.id],
       i = t[n.application.id];
     return null == r ? 1 : null == i ? false : i - r
-  }) : [], [require, module, exports])
+  }) : [], [n, e, t])
 }

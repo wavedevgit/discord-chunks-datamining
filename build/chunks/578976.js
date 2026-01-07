@@ -20,13 +20,13 @@ let o = (e, t) => {
     if (null != e) return "".concat(e, "?width=100&height=195")
   },
   l = () => {
-    let e = (0, Chunk975298.Z)({
+    let e = (0, i.Z)({
         forceFetch: true
       }),
-      t = (0, Chunk55935.vc)(module.endsAt, "L");
+      t = (0, a.vc)(e.endsAt, "L");
     return {
-      isLoading: !module.fetched,
-      isFractionalPremiumActive: module.isFractionalPremiumActive,
-      expiresAt: exports
+      isLoading: !e.fetched,
+      isFractionalPremiumActive: e.isFractionalPremiumActive,
+      expiresAt: t
     }
   }

@@ -110,8 +110,8 @@ class s extends Chunk473749.Component {
     } = this.props, {
       focusedRow: t,
       focusedColumn: n
-    } = this.state, r = module();
-    return null == Chunk473749 || null == require || null == exports || null == Chunk473749[require] || null == Chunk473749[require][exports] ? null : Chunk473749[require][exports]
+    } = this.state, r = e();
+    return null == r || null == n || null == t || null == r[n] || null == r[n][t] ? null : r[n][t]
   }
   render() {
     return this.props.children

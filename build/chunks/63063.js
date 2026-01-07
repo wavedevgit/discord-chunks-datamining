@@ -20,14 +20,14 @@ function d(e) {
 }
 
 function f() {
-  return Chunk706454.default.locale.toLowerCase()
+  return i.default.locale.toLowerCase()
 }
 let p = {
   getArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e)),
   getEnglishArticleURL: e => d("/hc/en-us/articles/".concat(e)),
   getDevArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), l),
   getCreatorSupportArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), c),
-  getTwitterURL: () => (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
+  getTwitterURL: () => (0, r.Z)(o.RK.TWITTER),
   getCommunityURL: () => d("/hc/".concat(f())),
   getSubmitRequestURL(e) {
     let t = d("/hc/".concat(f(), "/requests/new?platform=").concat(encodeURIComponent((0, a.getPlatformName)())));

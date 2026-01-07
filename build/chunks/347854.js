@@ -27,22 +27,22 @@ let O = (t, e) => {
     })
   },
   C = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
-    useTitle: () => (0, Chunk87820.r)() ? Chunk388032.intl.string(Chunk388032.t.PMsfcH) : Chunk388032.intl.string(Chunk388032.t.RAQUSN),
+    useTitle: () => (0, E.r)() ? A.intl.string(A.t.PMsfcH) : A.intl.string(A.t.RAQUSN),
     useSubtitle: () => {
-      let t = (0, Chunk639814.is)(),
-        e = (0, Chunk639814.c_)(),
-        n = (0, Chunk87820.r)();
-      return module === Chunk997950.Th ? require ? Chunk388032.intl.string(Chunk388032.t.XXGmuB) : Chunk388032.intl.string(Chunk388032.t.wbYDfT) : exports ? Chunk388032.intl.string(Chunk388032.t.V0ka0Q) : require ? Chunk388032.intl.string(Chunk388032.t.F9WY3f) : Chunk388032.intl.string(Chunk388032.t.G7c3Xo)
+      let t = (0, d.is)(),
+        e = (0, d.c_)(),
+        n = (0, E.r)();
+      return t === c.Th ? n ? A.intl.string(A.t.XXGmuB) : A.intl.string(A.t.wbYDfT) : e ? A.intl.string(A.t.V0ka0Q) : n ? A.intl.string(A.t.F9WY3f) : A.intl.string(A.t.G7c3Xo)
     },
     useValue: () => {
-      let t = (0, Chunk639814.is)(),
-        e = Chunk695346.h2.useSetting().includes(module),
-        n = (0, Chunk976978.q)();
-      return module === Chunk997950.Th ? !require : !exports
+      let t = (0, d.is)(),
+        e = T.h2.useSetting().includes(t),
+        n = (0, o.q)();
+      return t === c.Th ? !n : !e
     },
     useDisabled: () => {
-      let t = (0, Chunk915009.LN)();
-      return (0, Chunk639814.is)() === Chunk997950.Th && module
+      let t = (0, l.LN)();
+      return (0, d.is)() === c.Th && t
     },
     setValue: t => {
       let e = c.xu.getState().selectedGuildId;

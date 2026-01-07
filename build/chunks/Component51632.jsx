@@ -20,7 +20,7 @@ function l(e) {
 }
 
 function o() {
-  let e = (0, Chunk473749.useContext)(r);
-  if (null === module) throw Error("useGameProfile must be used within a GameProfileContext");
-  return module
+  let e = (0, i.useContext)(r);
+  if (null === e) throw Error("useGameProfile must be used within a GameProfileContext");
+  return e
 }

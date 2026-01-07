@@ -15,20 +15,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
-  let [e, t] = (0, Chunk243778.bf)(Chunk704215.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
-    cooldownDurationMs: Chunk987562.pv
+  let [e, t] = (0, o.bf)(i.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
+    cooldownDurationMs: l.pv
   });
-  return module !== Chunk704215.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK ? null : (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-    color: Chunk481060.DM8.BRAND,
-    children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-      onClick: () => exports(Chunk921944.L.DISMISS),
-      noticeType: Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR
-    }), Chunk388032.intl.string(Chunk388032.t.XkeW9N), (0, Chunk54381.jsx)(Chunk481060.NoS, {
+  return e !== i.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK ? null : (0, r.jsxs)(a.qXd, {
+    color: a.DM8.BRAND,
+    children: [(0, r.jsx)(a.RyX, {
+      onClick: () => t(u.L.DISMISS),
+      noticeType: c.kVF.IGNORE_USER_FEEDBACK_NAGBAR
+    }), d.intl.string(d.t.XkeW9N), (0, r.jsx)(a.NoS, {
       onClick: () => {
-        (0, Chunk496729.v)(), exports(Chunk921944.L.TAKE_ACTION)
+        (0, s.v)(), t(u.L.TAKE_ACTION)
       },
-      noticeType: Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR,
-      children: Chunk388032.intl.string(Chunk388032.t.vcdNKv)
+      noticeType: c.kVF.IGNORE_USER_FEEDBACK_NAGBAR,
+      children: d.intl.string(d.t.vcdNKv)
     })]
   })
 }

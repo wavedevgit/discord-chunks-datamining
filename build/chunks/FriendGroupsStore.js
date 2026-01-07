@@ -89,17 +89,17 @@ let m = new O(Chunk570140.Z, {
       id: "favorites",
       name: "Favorites",
       userIds: function() {
-        if (!Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return [];
-        let e = Chunk752048.Z.getUserAffinities();
-        if (0 === module.length) return [];
-        let t = [...module].sort((e, t) => s.Z.compare(e.otherUserId, t.otherUserId)),
+        if (!o.Z.hasConsented(c.pjP.PERSONALIZATION)) return [];
+        let e = s.Z.getUserAffinities();
+        if (0 === e.length) return [];
+        let t = [...e].sort((e, t) => s.Z.compare(e.otherUserId, t.otherUserId)),
           n = [];
-        for (let e of exports) {
-          if (require.length >= 5) break;
-          let t = module.otherUserId;
-          null != Chunk594174.default.getUser(exports) && Chunk699516.Z.isFriend(exports) && !Chunk699516.Z.isIgnored(exports) && !Chunk699516.Z.isBlocked(exports) && require.push(exports)
+        for (let e of t) {
+          if (n.length >= 5) break;
+          let t = e.otherUserId;
+          null != u.default.getUser(t) && a.Z.isFriend(t) && !a.Z.isIgnored(t) && !a.Z.isBlocked(t) && n.push(t)
         }
-        return require
+        return n
       }()
     }], h = true
   },

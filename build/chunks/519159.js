@@ -37,7 +37,7 @@ class i {
   }
   cull() {
     let e = Date.now() - this.timelineLength;
-    for (; this.timeline.length > 0 && this.timeline[0].timestamp < module;) this.timeline.shift()
+    for (; this.timeline.length > 0 && this.timeline[0].timestamp < e;) this.timeline.shift()
   }
   constructor(e = 3e5) {
     r(this, "timeline", []), r(this, "timelineLength", true), this.timelineLength = e

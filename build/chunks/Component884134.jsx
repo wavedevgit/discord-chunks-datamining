@@ -70,20 +70,20 @@ function V(e) {
 }
 
 function H() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk23766.headerContainer,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, r.jsxs)("div", {
+    className: G.headerContainer,
+    children: [(0, r.jsx)(f.Text, {
       variant: "text-md/bold",
-      children: Chunk388032.intl.string(Chunk831989.default.AsmU85)
-    }), (0, Chunk54381.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t["5AFxuK"]),
-      children: (0, Chunk54381.jsx)(Chunk481060.SrA, {
+      children: U.intl.string(k.default.AsmU85)
+    }), (0, r.jsx)(u.u, {
+      text: U.intl.string(U.t["5AFxuK"]),
+      children: (0, r.jsx)(f.SrA, {
         size: "custom",
         height: 20,
         width: 20,
-        colorClass: Chunk23766.nitroIcon
+        colorClass: G.nitroIcon
       })
-    }), (0, Chunk54381.jsx)(V, {})]
+    }), (0, r.jsx)(V, {})]
   })
 }
 

@@ -13,19 +13,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.k4)(Chunk313789.n.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["3wRort"]),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t["0aNQo9"], {
-    helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
+  useTitle: () => S.intl.string(S.t["3wRort"]),
+  useSubtitle: () => S.intl.format(S.t["0aNQo9"], {
+    helpArticle: u.Z.getArticleURL(T.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
   }),
-  buildLayout: () => [Chunk564428.a, Chunk738070.s],
+  buildLayout: () => [a.a, o.s],
   usePredicate: () => {
     let {
       hasBlockedUsers: t,
       hasIgnoredUsers: e
-    } = (0, Chunk442837.cj)([Chunk699516.Z], () => ({
-      hasBlockedUsers: Chunk699516.Z.getBlockedIDs().length > 0,
-      hasIgnoredUsers: Chunk699516.Z.getIgnoredIDs().length > 0
+    } = (0, i.cj)([s.Z], () => ({
+      hasBlockedUsers: s.Z.getBlockedIDs().length > 0,
+      hasIgnoredUsers: s.Z.getIgnoredIDs().length > 0
     }));
-    return exports || module
+    return e || t
   }
 })

@@ -16,7 +16,7 @@ let o = (0, Chunk473749.createContext)({
 });
 
 function s() {
-  return (0, Chunk473749.useContext)(o)
+  return (0, a.useContext)(o)
 }
 
 function l(e, t, n = true) {

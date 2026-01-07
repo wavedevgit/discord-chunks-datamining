@@ -32,27 +32,27 @@ function h(e) {
 }
 
 function v() {
-  return (0, Chunk442837.e7)([Chunk984933.ZP], () => Chunk984933.ZP.getChannels(Chunk981631.I_8))[Chunk106351.d.GUILD_CATEGORY].map(e => ({
+  return (0, l.e7)([r.ZP], () => r.ZP.getChannels(u.I_8))[i.d.GUILD_CATEGORY].map(e => ({
     id: "null" === e.channel.id ? null : e.channel.id,
     name: e.channel.name
   }))
 }
 
 function C() {
-  return (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()) === Chunk981631.I_8
+  return (0, l.e7)([o.Z], () => o.Z.getGuildId()) === u.I_8
 }
 
 function p() {
   let {
     isFavoritesPerk: e
-  } = (0, Chunk362658.z)("useFavoriteAdded"), n = (0, Chunk434065.r)(), t = Chunk473749.useCallback(() => {
-    module && exports.notifyFavoriteAdded()
-  }, [exports, module]), i = Chunk473749.useCallback(() => {
-    module && exports.clearFavoriteAdded()
-  }, [exports, module]);
+  } = (0, c.z)("useFavoriteAdded"), n = (0, s.r)(), t = a.useCallback(() => {
+    e && n.notifyFavoriteAdded()
+  }, [n, e]), i = a.useCallback(() => {
+    e && n.clearFavoriteAdded()
+  }, [n, e]);
   return {
-    favoriteAdded: exports.favoriteAdded,
-    notifyFavoriteAdded: require,
-    clearFavoriteAdded: Chunk106351
+    favoriteAdded: n.favoriteAdded,
+    notifyFavoriteAdded: t,
+    clearFavoriteAdded: i
   }
 }

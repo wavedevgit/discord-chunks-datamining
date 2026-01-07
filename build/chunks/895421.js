@@ -12,11 +12,11 @@ var Chunk473749 = require("./473749.js"),
   Chunk771784 = require("./771784.js");
 
 function c() {
-  let e = (0, Chunk771784.q3)("useFetchSoundboardData");
+  let e = (0, l.q3)("useFetchSoundboardData");
   return {
-    fetching: (0, Chunk399606.e7)([Chunk763296.Z], () => Chunk763296.Z.isFetchingAnySounds()),
-    maybeFetchData: Chunk473749.useCallback(() => {
-      Chunk208049.w(), Chunk675478.DZ.loadIfNecessary()
-    }, [module.sortingStrategy])
+    fetching: (0, i.e7)([s.Z], () => s.Z.isFetchingAnySounds()),
+    maybeFetchData: r.useCallback(() => {
+      o.w(), a.DZ.loadIfNecessary()
+    }, [e.sortingStrategy])
   }
 }

@@ -38,7 +38,7 @@ function o(e, t) {
 }
 
 function s() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "STOP_SPEAKING"
   })
 }

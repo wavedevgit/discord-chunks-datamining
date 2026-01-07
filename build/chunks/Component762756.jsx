@@ -33,8 +33,8 @@ class g extends(a = Chunk473749.PureComponent) {
       theme: n,
       onCaptchaVerify: a
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk54381.Fragment, {
-      children: module.map(e => e === p.PUi.CAPTCHA ? (0, r.jsx)(d.Z, {
+    return (0, r.jsx)(r.Fragment, {
+      children: e.map(e => e === p.PUi.CAPTCHA ? (0, r.jsx)(d.Z, {
         onVerify: a,
         theme: n
       }, t) : (0, r.jsx)(c.Button, {
@@ -44,78 +44,78 @@ class g extends(a = Chunk473749.PureComponent) {
     })
   }
   render() {
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    return (0, r.jsxs)(c.Kqy, {
       gap: 16,
-      className: Chunk922895.verification,
+      className: h.verification,
       align: "center",
       direction: "vertical",
       justify: "center",
-      children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      children: [(0, r.jsxs)(c.Kqy, {
         gap: 16,
         fullWidth: false,
-        className: s()(Chunk922895.container, {
-          [Chunk922895.isMobile]: Chunk873546.tq
+        className: s()(h.container, {
+          [h.isMobile]: o.tq
         }),
         align: "center",
         direction: "vertical",
         justify: "center",
-        children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+        children: [(0, r.jsxs)(c.Kqy, {
           align: "center",
           direction: "vertical",
           justify: "center",
           gap: 16,
-          children: [(0, Chunk54381.jsx)("div", {
-            className: Chunk922895.image
-          }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-            className: Chunk922895.textContainer,
+          children: [(0, r.jsx)("div", {
+            className: h.image
+          }), (0, r.jsxs)(c.Kqy, {
+            className: h.textContainer,
             gap: 4,
             align: "center",
             direction: "vertical",
             justify: "center",
-            children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+            children: [(0, r.jsx)(c.Heading, {
               variant: "heading-xl/normal",
-              children: Chunk388032.intl.string(Chunk388032.t.Iz0kDg)
-            }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+              children: f.intl.string(f.t.Iz0kDg)
+            }), (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
-              children: Chunk388032.intl.format(Chunk388032.t["0rqMV5"], {
+              children: f.intl.format(f.t["0rqMV5"], {
                 helpCenterURL: b
               })
             })]
           })]
-        }), (0, Chunk54381.jsx)(Chunk481060.Kqy, {
+        }), (0, r.jsx)(c.Kqy, {
           gap: 16,
           direction: "vertical",
           justify: "center",
           align: "center",
           children: this.renderFields()
         })]
-      }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      }), (0, r.jsxs)(c.Kqy, {
         gap: 8,
         align: "center",
         direction: "vertical",
         justify: "center",
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          className: Chunk922895.footer,
-          children: Chunk388032.intl.string(Chunk388032.t.qqYun3)
-        }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+          className: h.footer,
+          children: f.intl.string(f.t.qqYun3)
+        }), (0, r.jsxs)(c.Kqy, {
           gap: 8,
           align: "center",
           direction: "horizontal",
           justify: "center",
-          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+          children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            className: Chunk922895.footer,
-            children: Chunk388032.intl.format(Chunk388032.t.WL51ZR, {
-              supportURL: Chunk63063.Z.getSubmitRequestURL()
+            className: h.footer,
+            children: f.intl.format(f.t.WL51ZR, {
+              supportURL: u.Z.getSubmitRequestURL()
             })
-          }), (0, Chunk54381.jsx)("div", {
-            className: s()(Chunk922895.footer, Chunk922895.footerBullet),
+          }), (0, r.jsx)("div", {
+            className: s()(h.footer, h.footerBullet),
             children: "•"
-          }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          }), (0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            className: Chunk922895.footer,
-            children: Chunk388032.intl.format(Chunk388032.t.Hv7ztc, {
+            className: h.footer,
+            children: f.intl.format(f.t.Hv7ztc, {
               logoutOnClick: this.props.onLogout
             })
           })]

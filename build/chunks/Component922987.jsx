@@ -207,7 +207,7 @@ let R = e => {
     key: Chunk409813.h8.REVIEW,
     renderStep: e => (0, r.jsx)(x, A({}, e)),
     options: {
-      useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
+      useBreadcrumbLabel: () => T.intl.string(T.t.QBnNHq)
     }
   }],
   j = (e, t, n) => (0, r.jsx)(m.Z, {

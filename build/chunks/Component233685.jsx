@@ -13,25 +13,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u() {
-  let e = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().storageLocation),
+  let e = (0, i.e7)([s.Z], () => s.Z.getSettings().storageLocation),
     t = async () => {
-      let e = await Chunk579806.Z.fileManager.showOpenDialog({
+      let e = await o.Z.fileManager.showOpenDialog({
         properties: ["openDirectory", "createDirectory"]
       });
-      module.length > 0 && Chunk39604.T1(module[0])
+      e.length > 0 && l.T1(e[0])
     };
-  return (0, Chunk54381.jsx)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t.s4773E),
-    description: Chunk388032.intl.string(Chunk388032.t.svjwGh),
+  return (0, r.jsx)(a.gNt, {
+    label: c.intl.string(c.t.s4773E),
+    description: c.intl.string(c.t.svjwGh),
     layout: "horizontal",
-    children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.iMONTj, {
-        storageLocation: module
+    children: (0, r.jsx)(a.P3F, {
+      "aria-label": c.intl.formatToPlainString(c.t.iMONTj, {
+        storageLocation: e
       }),
-      onClick: exports,
-      children: (0, Chunk54381.jsx)(Chunk481060.oil, {
+      onClick: t,
+      children: (0, r.jsx)(a.oil, {
         tabIndex: false,
-        value: module,
+        value: e,
         editable: false,
         "aria-hidden": true
       })

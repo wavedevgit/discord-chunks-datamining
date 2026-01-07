@@ -172,7 +172,7 @@ let N = function(e, t) {
       }, R && i ? [d] : [])
     }, [T, t, n, e, P, S, C, c, s, f, a, R, i])
   },
-  P = () => Chunk633302.ZP.getCategories().map(e => ({
+  P = () => c.ZP.getCategories().map(e => ({
     type: v.En.UNICODE,
     id: e,
     name: e,

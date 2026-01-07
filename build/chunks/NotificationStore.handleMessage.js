@@ -114,7 +114,7 @@ let ee = "message1",
   };
 
 function eu() {
-  return !!(Chunk292959.Z.getDesktopType() === Chunk981631.qrD.NEVER || Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting())
+  return !!(R.Z.getDesktopType() === Y.qrD.NEVER || L.Z.getStatus() === Y.Skl.DND || P.QZ.getSetting())
 }
 
 function ec(e) {
@@ -122,7 +122,7 @@ function ec(e) {
 }
 class ed extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk802098.Z, Chunk592125.Z, Chunk430824.Z, Chunk355298.Z, Chunk375954.Z, Chunk292959.Z, Chunk496675.Z, Chunk699516.Z, Chunk944486.Z, Chunk885110.Z, Chunk427679.Z, Chunk246946.Z, Chunk594174.default, Chunk979651.Z)
+    this.waitFor(h.Z, A.Z, j.Z, y.Z, D.Z, R.Z, w.Z, U.Z, M.Z, L.Z, v.Z, G.Z, F.default, V.Z)
   }
 }
 J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {} : {
@@ -459,25 +459,25 @@ J(ed, "displayName", "NotificationStore"), new ed(Chunk570140.Z, __OVERLAY__ ? {
     })
   },
   WINDOW_HIDDEN: function() {
-    let e = (0, Chunk358085.isWindows)(),
-      t = (0, Chunk358085.isLinux)();
-    if (!(!Chunk433517.K.get(el, false) && Chunk358085.isPlatformEmbedded && (module || exports))) returnfalse;
+    let e = (0, H.isWindows)(),
+      t = (0, H.isLinux)();
+    if (!(!a.K.get(el, false) && H.isPlatformEmbedded && (e || t))) returnfalse;
     let l = false;
-    return null != er && (l = eo.includes(er)), !!l && (Chunk654769.Z.showNotification(require("./95045.js"), Chunk388032.intl.string(Chunk388032.t.VSgOVg), Chunk388032.intl.string(Chunk388032.t["+J/F66"]), {
+    return null != er && (l = eo.includes(er)), !!l && (Q.Z.showNotification(n(95045), q.intl.string(q.t.VSgOVg), q.intl.string(q.t["+J/F66"]), {
       notif_type: "WINDOW_HIDDEN"
     }, {
       overrideStreamerMode: true,
       onClick: () => {
-        (0, Chunk703656.uL)(Chunk981631.Z5c.SETTINGS(module ? "windows" : "linux"))
+        (0, I.uL)(Y.Z5c.SETTINGS(e ? "windows" : "linux"))
       },
       onShown: () => {
-        Chunk433517.K.set(el, true)
+        a.K.set(el, true)
       },
       isUserAvatar: false
     }), false)
   },
   LOGOUT: function() {
-    return Chunk433517.K.remove(el), false
+    return a.K.remove(el), false
   },
   CONNECTION_OPEN: function(e) {
     let {

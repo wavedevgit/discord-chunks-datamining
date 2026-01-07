@@ -68,7 +68,7 @@ function N(e, t) {
 }
 class D extends Chunk473749.PureComponent {
   handleDisconnect() {
-    Chunk287734.default.selectVoiceChannel(null)
+    f.default.selectVoiceChannel(null)
   }
   renderChannelLink(e) {
     let {
@@ -99,18 +99,18 @@ class D extends Chunk473749.PureComponent {
       deaf: f,
       mute: h
     } = this.props;
-    return null == Chunk120356 ? null : (0, Chunk54381.jsx)(Chunk518084.ZP.Bar, {
-      className: s()(module, Chunk978440.controls, {
-        [Chunk978440.unpinned]: !require
+    return null == a ? null : (0, i.jsx)(Z.ZP.Bar, {
+      className: s()(e, I.controls, {
+        [I.unpinned]: !n
       }),
-      children: (0, Chunk54381.jsxs)(Chunk518084.ZP.Content, {
-        className: s()(exports, Chunk978440.content),
+      children: (0, i.jsxs)(Z.ZP.Content, {
+        className: s()(t, I.content),
         dynamicSize: true,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk424126.inner,
-          children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
+        children: [(0, i.jsx)("div", {
+          className: P.inner,
+          children: (0, i.jsx)(c.yRy, {
             targetElementRef: this.rtcConnectionStatusRef,
-            renderPopout: () => this.renderPopout(Chunk120356.id),
+            renderPopout: () => this.renderPopout(a.id),
             position: "top",
             children: e => (0, i.jsx)(c.P3F, N(T({}, e), {
               innerRef: this.rtcConnectionStatusRef,
@@ -124,22 +124,22 @@ class D extends Chunk473749.PureComponent {
               })
             }))
           })
-        }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
+        }), (0, i.jsxs)(p.Z, {
           grow: 0,
-          children: [(0, Chunk54381.jsx)(Chunk870569.Z, {
-            tooltipText: Chunk933557 ? Chunk388032.intl.string(Chunk388032.t.YqAjXy) : Chunk388032.intl.string(Chunk388032.t.w4m945),
-            icon: Chunk933557 ? Chunk481060.nRN : Chunk481060.S6n,
-            iconForeground: Chunk933557 ? Chunk978440.strikethrough : null,
+          children: [(0, i.jsx)(g.Z, {
+            tooltipText: h ? C.intl.string(C.t.YqAjXy) : C.intl.string(C.t.w4m945),
+            icon: h ? c.nRN : c.S6n,
+            iconForeground: h ? I.strikethrough : null,
             onClick: this.handleToggleSelfMute
-          }), (0, Chunk54381.jsx)(Chunk870569.Z, {
-            tooltipText: Chunk287734 ? Chunk388032.intl.string(Chunk388032.t["2US872"]) : Chunk388032.intl.string(Chunk388032.t.wjcRFX),
-            icon: Chunk287734 ? Chunk481060.wE8 : Chunk481060.VWR,
+          }), (0, i.jsx)(g.Z, {
+            tooltipText: f ? C.intl.string(C.t["2US872"]) : C.intl.string(C.t.wjcRFX),
+            icon: f ? c.wE8 : c.VWR,
             onClick: this.handleToggleSelfDeaf,
-            iconForeground: Chunk287734 ? Chunk978440.strikethrough : null
-          }), null == Chunk473749 && (0, Chunk54381.jsx)(Chunk870569.Z, {
-            tooltipText: Chunk388032.intl.string(Chunk388032.t["6vrfgt"]),
+            iconForeground: f ? I.strikethrough : null
+          }), null == r && (0, i.jsx)(g.Z, {
+            tooltipText: C.intl.string(C.t["6vrfgt"]),
             onClick: this.handleDisconnect,
-            icon: Chunk481060.gkL
+            icon: c.gkL
           })]
         })]
       })

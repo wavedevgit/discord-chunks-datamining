@@ -11,14 +11,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk597688 = require("./597688.js"),
   Chunk548094 = require("./548094.js");
 let c = () => {
-  let e = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.skipNumCategories);
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk548094.container,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  let e = (0, r.e7)([s.Z], () => s.Z.skipNumCategories);
+  return (0, a.jsxs)("div", {
+    className: o.container,
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-md/normal",
       children: "Hide first # of categories"
-    }), (0, Chunk54381.jsx)(Chunk481060.FiK, {
-      value: module,
+    }), (0, a.jsx)(i.FiK, {
+      value: e,
       onChange: e => {
         (0, l.p8)(e)
       },

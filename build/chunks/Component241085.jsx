@@ -92,19 +92,19 @@ function R(e) {
 }
 
 function w() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: o()(Chunk764055.mainWrapper, Chunk764055.mainBody),
-    children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
-      color: Chunk481060.TVs.colors.ICON_STRONG,
+  return (0, r.jsxs)("div", {
+    className: o()(P.mainWrapper, P.mainBody),
+    children: [(0, r.jsx)(u.owK, {
+      color: u.TVs.colors.ICON_STRONG,
       size: "refresh_sm"
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsx)(u.Text, {
       variant: "text-md/normal",
       color: "text-strong",
-      children: Chunk388032.intl.string(Chunk388032.t["0PhgpK"])
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: N.intl.string(N.t["0PhgpK"])
+    }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t.HYg2Hn)
+      children: N.intl.string(N.t.HYg2Hn)
     })]
   })
 }

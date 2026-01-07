@@ -32,7 +32,7 @@ class E extends Chunk473749.PureComponent {
     return e.length > 1
   }
   handleStopListening() {
-    (0, Chunk524331.Z)()
+    (0, c.Z)()
   }
   render() {
     let {
@@ -40,10 +40,10 @@ class E extends Chunk473749.PureComponent {
       host: t,
       party: n
     } = this.props;
-    return this.hasParty(require) && null != module ? (0, Chunk54381.jsx)(Chunk824138.Z, {
-      currentUser: module,
-      host: exports,
-      party: require,
+    return this.hasParty(n) && null != e ? (0, r.jsx)(m.Z, {
+      currentUser: e,
+      host: t,
+      party: n,
       renderOverflowPopout: this.renderOverflowPopout,
       onStopListening: this.handleStopListening,
       onUserContextMenu: this.handleUserContextMenu
@@ -85,7 +85,7 @@ class E extends Chunk473749.PureComponent {
       let {
         party: e
       } = this.props;
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(h.Z, {
         party: e,
         header: b.intl.formatToPlainString(b.t.I9et1z, {
           count: e.length
@@ -95,17 +95,17 @@ class E extends Chunk473749.PureComponent {
   }
 }
 let O = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk699516.Z, Chunk831506.Z], () => {
-  let e, t, n = Chunk768419.Z.getSyncingWith(),
-    r = Chunk768419.Z.getActivity(),
-    i = Chunk594174.default.getCurrentUser(),
+  let e, t, n = u.Z.getSyncingWith(),
+    r = u.Z.getActivity(),
+    i = f.default.getCurrentUser(),
     l = [];
-  if (null != require ? (e = Chunk594174.default.getUser(require.userId), t = require.partyId) : null != Chunk54381 && null != Chunk54381.party && null != Chunk54381.party.id && (e = Chunk473749, t = Chunk54381.party.id), null != exports) {
+  if (null != n ? (e = f.default.getUser(n.userId), t = n.partyId) : null != r && null != r.party && null != r.party.id && (e = i, t = r.party.id), null != t) {
     var o;
-    l = a()(Array.from(null != (o = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => f.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => p.Z.isFriend(e.id)], ["desc", "desc"]).value()
+    l = a()(Array.from(null != (o = d.Z.getParty(t)) ? o : [])).map(e => f.default.getUser(e)).filter(g.lm).orderBy([t => null == e || e.id === t.id, e => p.Z.isFriend(e.id)], ["desc", "desc"]).value()
   }
   return {
-    currentUser: Chunk473749,
-    host: module,
-    party: Chunk392711
+    currentUser: i,
+    host: e,
+    party: l
   }
 })(E)

@@ -15,8 +15,8 @@ require.d(exports, {
 }), require("./388685.js");
 class i extends Array {
   push() {
-    for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-    for (let e of exports) this.length >= this.maxSize && this.shift(), super.push(module);
+    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+    for (let e of t) this.length >= this.maxSize && this.shift(), super.push(e);
     return this.length
   }
   constructor(e) {

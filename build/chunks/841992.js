@@ -368,17 +368,17 @@ var M = c(f()),
   N = c(f()),
   B = function() {
     var e = N.default.performance,
-      t = module && module.timing,
-      i = exports && exports.navigationStart;
-    return Math.round("number" == typeof require && "function" == typeof module.now ? require + module.now() : Date.now())
+      t = e && e.timing,
+      i = t && t.navigationStart;
+    return Math.round("number" == typeof i && "function" == typeof e.now ? i + e.now() : Date.now())
   },
   U = function() {
-    if ("function" == typeof(null == (e = F.default.crypto) ? true : module.getRandomValues)) {
-      i = new Uint8Array(32), F.default.crypto.getRandomValues(require);
-      for (var e, t, i, r = 0; r < 32; r++) require[r] = require[r] % 16
+    if ("function" == typeof(null == (e = F.default.crypto) ? true : e.getRandomValues)) {
+      i = new Uint8Array(32), F.default.crypto.getRandomValues(i);
+      for (var e, t, i, r = 0; r < 32; r++) i[r] = i[r] % 16
     } else {
       i = [];
-      for (var s = 0; s < 32; s++) require[s] = 16 * Math.random() | 0
+      for (var s = 0; s < 32; s++) i[s] = 16 * Math.random() | 0
     }
     var a = 0;
     t = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(e) {
@@ -387,7 +387,7 @@ var M = c(f()),
     });
     var n = B(),
       l = null == n ? true : n.toString(16).substring(3);
-    return l ? exports.substring(0, 28) + l : exports
+    return l ? t.substring(0, 28) + l : t
   },
   $ = function() {
     return ("000000" + (0x81bf1000 * Math.random() | 0).toString(36)).slice(false)
@@ -524,17 +524,17 @@ var et = function(e) {
   er = c(f()),
   es = function() {
     var e = er.default.performance;
-    return true !== (module && module.timing)
+    return true !== (e && e.timing)
   },
   ea = function() {
     var e = er.default.performance,
-      t = module && module.timing;
-    return exports && exports.domContentLoadedEventEnd
+      t = e && e.timing;
+    return t && t.domContentLoadedEventEnd
   },
   en = function() {
     var e = er.default.performance,
-      t = module && module.timing;
-    return exports && exports.navigationStart
+      t = e && e.timing;
+    return t && t.navigationStart
   };
 
 function el(e, t, i) {
@@ -1056,9 +1056,9 @@ var eg = function(e) {
   eL = 0,
   eR = function() {
     function e() {
-      Y(this, module), z(this, "_listeners", true)
+      Y(this, e), z(this, "_listeners", true)
     }
-    return X(module, [{
+    return X(e, [{
       key: "on",
       value: function(e, t, i) {
         return t._eventEmitterGuid = t._eventEmitterGuid || ++eL, this._listeners = this._listeners || {}, this._listeners[e] = this._listeners[e] || [], i && (t = t.bind(i)), this._listeners[e].push(t), t
@@ -1101,7 +1101,7 @@ var eg = function(e) {
           l(r, t), l(s, t), l(a, t), l(n, t)
         }
       }
-    }]), module
+    }]), e
   }(),
   ek = c(f()),
   eI = function() {
@@ -1119,12 +1119,12 @@ var eg = function(e) {
         }), i._playbackHeartbeatInterval = null)
       })
     }
-    return X(module, [{
+    return X(e, [{
       key: "_startPlaybackHeartbeatInterval",
       value: function() {
         var e = this;
         null === this._playbackHeartbeatInterval && (this.pm.emit("playbackheartbeat"), this._playbackHeartbeatInterval = ek.default.setInterval(function() {
-          module.pm.emit("playbackheartbeat")
+          e.pm.emit("playbackheartbeat")
         }, this.pm.playbackHeartbeatTime))
       }
     }, {
@@ -1132,7 +1132,7 @@ var eg = function(e) {
       value: function() {
         this._playheadShouldBeProgressing = false, null !== this._playbackHeartbeatInterval && (ek.default.clearInterval(this._playbackHeartbeatInterval), this.pm.emit("playbackheartbeatend"), this._playbackHeartbeatInterval = null)
       }
-    }]), module
+    }]), e
   }(),
   eD = function e(t) {
     var i = this;
@@ -1160,7 +1160,7 @@ var eg = function(e) {
     function e(t) {
       Y(this, e), z(this, "_watchTimeTrackerLastCheckedTime", true), z(this, "pm", true), this.pm = t, this._watchTimeTrackerLastCheckedTime = null, t.on("playbackheartbeat", this._updateWatchTime.bind(this)), t.on("playbackheartbeatend", this._clearWatchTimeState.bind(this))
     }
-    return X(module, [{
+    return X(e, [{
       key: "_updateWatchTime",
       value: function(e, t) {
         var i = t.viewer_time;
@@ -1171,7 +1171,7 @@ var eg = function(e) {
       value: function(e, t) {
         this._updateWatchTime(e, t), this._watchTimeTrackerLastCheckedTime = null
       }
-    }]), module
+    }]), e
   }(),
   ew = function() {
     function e(t) {
@@ -1198,7 +1198,7 @@ var eg = function(e) {
         i._playbackTimeTrackerLastPlayheadPosition = false, i._lastTime = B(), i._isAdPlaying = false, i._callbackUpdatePlaybackTime = null
       })
     }
-    return X(module, [{
+    return X(e, [{
       key: "_startPlaybackTimeTracking",
       value: function() {
         null === this._callbackUpdatePlaybackTime && (this._callbackUpdatePlaybackTime = this._updatePlaybackTime.bind(this), this._playbackTimeTrackerLastPlayheadPosition = this.pm.data.player_playhead_time, this._lastTime = B(), this.pm.on("playbackheartbeat", this._callbackUpdatePlaybackTime))
@@ -1213,11 +1213,11 @@ var eg = function(e) {
       value: function() {
         var e = this.pm.data.player_playhead_time || 0,
           t = B(),
-          i = exports - this._lastTime,
+          i = t - this._lastTime,
           r = false;
-        this._playbackTimeTrackerLastPlayheadPosition >= 0 && module > this._playbackTimeTrackerLastPlayheadPosition ? r = module - this._playbackTimeTrackerLastPlayheadPosition : this._isAdPlaying && (r = require), r > 0 && r <= 1e3 && el(this.pm.data, "view_content_playback_time", r), null !== this._callbackUpdatePlaybackTime && require > 0 && require <= 1e3 && (this._isAdPlaying && el(this.pm.data, "ad_playing_time_ms_cumulative", require), el(this.pm.data, "view_playing_time_ms_cumulative", require)), this._playbackTimeTrackerLastPlayheadPosition = module, this._lastTime = exports
+        this._playbackTimeTrackerLastPlayheadPosition >= 0 && e > this._playbackTimeTrackerLastPlayheadPosition ? r = e - this._playbackTimeTrackerLastPlayheadPosition : this._isAdPlaying && (r = i), r > 0 && r <= 1e3 && el(this.pm.data, "view_content_playback_time", r), null !== this._callbackUpdatePlaybackTime && i > 0 && i <= 1e3 && (this._isAdPlaying && el(this.pm.data, "ad_playing_time_ms_cumulative", i), el(this.pm.data, "view_playing_time_ms_cumulative", i)), this._playbackTimeTrackerLastPlayheadPosition = e, this._lastTime = t
       }
-    }]), module
+    }]), e
   }(),
   ex = function() {
     function e(t) {
@@ -1227,7 +1227,7 @@ var eg = function(e) {
         t.off("timeupdate", i)
       })
     }
-    return X(module, [{
+    return X(e, [{
       key: "_updateMaxPlayheadPosition",
       value: function() {
         this.pm.data.view_max_playhead_position = true === this.pm.data.view_max_playhead_position ? this.pm.data.player_playhead_time : Math.max(this.pm.data.view_max_playhead_position, this.pm.data.player_playhead_time)
@@ -1245,7 +1245,7 @@ var eg = function(e) {
           true !== s && (this.pm.data.player_playhead_time = s, r(), this._updateMaxPlayheadPosition())
         }
       }
-    }]), module
+    }]), e
   }(),
   eC = function e(t) {
     if (Y(this, e), !t.disableRebufferTracking) {
@@ -1277,7 +1277,7 @@ var eg = function(e) {
         })
       }))
     }
-    return X(module, [{
+    return X(e, [{
       key: "_checkIfRebuffering",
       value: function(e, t) {
         if (this.pm.seekingTracker.isSeeking || this.pm.adTracker.isAdBreak || !this.pm.playbackHeartbeat._playheadShouldBeProgressing) return void this._cleanupRebufferTracker(e, t);
@@ -1317,7 +1317,7 @@ var eg = function(e) {
         }
         i ? this._prepareRebufferTrackerState(t.viewer_time) : this._clearRebufferTrackerState()
       }
-    }]), module
+    }]), e
   }(),
   eM = function() {
     function e(t) {
@@ -1336,7 +1336,7 @@ var eg = function(e) {
         }
       })
     }
-    return X(module, [{
+    return X(e, [{
       key: "_inPrerollPosition",
       value: function() {
         return true === this.pm.data.view_content_playback_time || this.pm.data.view_content_playback_time <= 1e3
@@ -1348,7 +1348,7 @@ var eg = function(e) {
           viewer_time: e
         }), this.pm.data.view_time_to_first_frame = this.pm.data.view_watch_time, (this.pm.data.player_autoplay_on || this.pm.data.video_is_autoplay) && this.pm.pageLoadInitTime && (this.pm.data.view_aggregate_startup_time = this.pm.data.view_start + this.pm.data.view_watch_time - this.pm.pageLoadInitTime))
       }
-    }]), module
+    }]), e
   }(),
   eF = function e(t) {
     var i = this;
@@ -1439,7 +1439,7 @@ var eg = function(e) {
         i._wouldBeNewAdPlay = true
       })
     }
-    return X(module, [{
+    return X(e, [{
       key: "inPrerollPosition",
       value: function() {
         return true === this.pm.data.view_content_playback_time || this.pm.data.view_content_playback_time <= 1e3
@@ -1470,7 +1470,7 @@ var eg = function(e) {
         }
         this.pm.data.ad_asset_url = null == t ? true : t.ad_asset_url, this.pm.data.ad_tag_url = null == t ? true : t.ad_tag_url, this.pm.data.ad_creative_id = null == t ? true : t.ad_creative_id, this.pm.data.ad_id = null == t ? true : t.ad_id, this.pm.data.ad_universal_id = null == t ? true : t.ad_universal_id, null != t && t.ad_type && (this.pm.data.ad_type = null == t ? true : t.ad_type)
       }
-    }]), module
+    }]), e
   }(),
   eG = function e(t) {
     var i = this;
@@ -1497,11 +1497,11 @@ var eg = function(e) {
   },
   eH = c(f()),
   eK = (tl = function() {
-    for (var e = 0, t = {}; module < arguments.length; module++) {
-      var i = arguments[module];
-      for (var r in require) exports[r] = require[r]
+    for (var e = 0, t = {}; e < arguments.length; e++) {
+      var i = arguments[e];
+      for (var r in i) t[r] = i[r]
     }
-    return exports
+    return t
   }, function e(t) {
     function i(e, r, s) {
       var a;
@@ -1564,7 +1564,7 @@ var eg = function(e) {
     } catch (t) {
       e = {}
     }
-    return module
+    return e
   },
   ej = function(e) {
     try {
@@ -1580,18 +1580,18 @@ var eg = function(e) {
   },
   eW = function() {
     var e = eV();
-    return module.mux_viewer_id = module.mux_viewer_id || U(), module.msn = module.msn || Math.random(), ej(module), {
-      mux_viewer_id: module.mux_viewer_id,
-      mux_sample_number: module.msn
+    return e.mux_viewer_id = e.mux_viewer_id || U(), e.msn = e.msn || Math.random(), ej(e), {
+      mux_viewer_id: e.mux_viewer_id,
+      mux_sample_number: e.msn
     }
   },
   eY = function() {
     var e = eV(),
       t = B();
-    return module.session_start && (module.sst = module.session_start, delete module.session_start), module.session_id && (module.sid = module.session_id, delete module.session_id), module.session_expires && (module.sex = module.session_expires, delete module.session_expires), (!module.sex || module.sex < exports) && (module.sid = U(), module.sst = exports), module.sex = exports + 15e5, ej(module), {
-      session_id: module.sid,
-      session_start: module.sst,
-      session_expires: module.sex
+    return e.session_start && (e.sst = e.session_start, delete e.session_start), e.session_id && (e.sid = e.session_id, delete e.session_id), e.session_expires && (e.sex = e.session_expires, delete e.session_expires), (!e.sex || e.sex < t) && (e.sid = U(), e.sst = t), e.sex = t + 15e5, ej(e), {
+      session_id: e.sid,
+      session_start: e.sst,
+      session_expires: e.sex
     }
   },
   eQ = c(f()),
@@ -1612,12 +1612,12 @@ var eg = function(e) {
       default:
         e = "other"
     }
-    return module
+    return e
   },
   ez = function() {
     var e = eQ.default.navigator,
-      t = module && (module.connection || module.mozConnection || module.webkitConnection);
-    return exports && exports.type
+      t = e && (e.connection || e.mozConnection || e.webkitConnection);
+    return t && t.type
   };
 eX.getConnectionFromAPI = ez;
 var eJ = e0({
@@ -1859,19 +1859,19 @@ e8.prototype.queueEvent = function(e, t) {
   return (this._eventQueue.length <= this._options.maxQueueLength || "eventrateexceeded" === e) && (this._eventQueue.push(i), this._sendTimeout || this._startBeaconSending(), this._eventQueue.length <= this._options.maxQueueLength)
 }, e8.prototype.flushEvents = function() {
   var e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  if (module && 1 === this._eventQueue.length) return void this._eventQueue.pop();
+  if (e && 1 === this._eventQueue.length) return void this._eventQueue.pop();
   this._eventQueue.length && this._sendBeaconQueue(), this._startBeaconSending()
 }, e8.prototype.destroy = function() {
   var e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  this.destroyed = true, module ? this._clearBeaconQueue() : this.flushEvents(), e2.default.clearTimeout(this._sendTimeout)
+  this.destroyed = true, e ? this._clearBeaconQueue() : this.flushEvents(), e2.default.clearTimeout(this._sendTimeout)
 }, e8.prototype._clearBeaconQueue = function() {
   var e = this._eventQueue.length > this._options.maxBeaconSize ? this._eventQueue.length - this._options.maxBeaconSize : 0,
-    t = this._eventQueue.slice(module);
-  module > 0 && Object.assign(exports[exports.length - 1], e1({
+    t = this._eventQueue.slice(e);
+  e > 0 && Object.assign(t[t.length - 1], e1({
     mux_view_message: "event queue truncated"
   }));
-  var i = this._createPayload(exports);
-  e9(this._beaconUrl, require, true, function() {})
+  var i = this._createPayload(t);
+  e9(this._beaconUrl, i, true, function() {})
 }, e8.prototype._sendBeaconQueue = function() {
   var e = this;
   if (this._postInFlight) {
@@ -1880,9 +1880,9 @@ e8.prototype.queueEvent = function(e, t) {
   }
   var t = this._eventQueue.slice(0, this._options.maxBeaconSize);
   this._eventQueue = this._eventQueue.slice(this._options.maxBeaconSize), this._postInFlight = true;
-  var i = this._createPayload(exports),
+  var i = this._createPayload(t),
     r = B();
-  e9(this._beaconUrl, require, false, function(i, s) {
+  e9(this._beaconUrl, i, false, function(i, s) {
     s ? (e._eventQueue = t.concat(e._eventQueue), e._failureCount += 1, q.info("Error sending beacon: " + s)) : e._failureCount = 0, e._roundTripTime = B() - r, e._postInFlight = false, e._resendAfterPost && (e._resendAfterPost = false, e._eventQueue.length > 0 && e._sendBeaconQueue())
   })
 }, e8.prototype._getNextBeaconTime = function() {
@@ -1892,7 +1892,7 @@ e8.prototype.queueEvent = function(e, t) {
 }, e8.prototype._startBeaconSending = function() {
   var e = this;
   e2.default.clearTimeout(this._sendTimeout), this.destroyed || (this._sendTimeout = e2.default.setTimeout(function() {
-    module._eventQueue.length && module._sendBeaconQueue(), module._startBeaconSending()
+    e._eventQueue.length && e._sendBeaconQueue(), e._startBeaconSending()
   }, this._getNextBeaconTime()))
 }, e8.prototype._createPayload = function(e) {
   var t = this,
@@ -1970,7 +1970,7 @@ var e6 = "function" == typeof e3.default.exitPictureInPicture ? function(e) {
         page_url: null === eH.default || true === eH.default || null == (E = eH.default.location) ? true : E.href
       }, this.viewerData = this.disableCookies ? {} : eW()
     }
-    return X(module, [{
+    return X(e, [{
       key: "send",
       value: function(e, t) {
         if (!(!e || !(null != t && t.view_id))) {
@@ -2030,7 +2030,7 @@ var e6 = "function" == typeof e3.default.exitPictureInPicture ? function(e) {
       value: function(e, t) {
         return !!("renditionchange" === e && 0 === t.indexOf("video_source_") || tt.includes(t) && te.includes(e))
       }
-    }]), module
+    }]), e
   }(),
   ts = function e(t) {
     Y(this, e);
@@ -2410,15 +2410,15 @@ tE.prototype.process = function(e) {
   }
 }, tE.prototype.setHoldBack = function() {
   var e = this.manifest,
-    t = module.serverControl,
-    i = module.targetDuration,
-    r = module.partTargetDuration;
-  if (exports) {
+    t = e.serverControl,
+    i = e.targetDuration,
+    r = e.partTargetDuration;
+  if (t) {
     var s = "holdBack",
       a = "partHoldBack",
-      n = require && 3 * require,
+      n = i && 3 * i,
       l = r && 2 * r;
-    require && !exports.hasOwnProperty(s) && (exports[s] = n), n && exports[s] < n && (exports[s] = n), r && !exports.hasOwnProperty(a) && (exports[a] = 3 * r), r && exports[a] < l && (exports[a] = l)
+    i && !t.hasOwnProperty(s) && (t[s] = n), n && t[s] < n && (t[s] = n), r && !t.hasOwnProperty(a) && (t[a] = 3 * r), r && t[a] < l && (t[a] = l)
   }
 };
 var tT = function(e, t) {

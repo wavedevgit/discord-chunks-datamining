@@ -19,21 +19,21 @@ let o = e => {
     }
   },
   s = () => {
-    let e = (0, Chunk473749.useRef)(null),
-      t = (0, Chunk505805.f)(t => ({
+    let e = (0, r.useRef)(null),
+      t = (0, i.f)(t => ({
         currentOffset: (0, a.s)(t, e),
         isDragging: t.isDragging(),
         itemType: t.getItemType(),
         item: t.getItem(),
         monitor: t
       }));
-    return exports.isDragging && null !== exports.currentOffset ? {
+    return t.isDragging && null !== t.currentOffset ? {
       display: true,
-      itemType: exports.itemType,
-      item: exports.item,
-      style: o(exports.currentOffset),
-      monitor: exports.monitor,
-      ref: module
+      itemType: t.itemType,
+      item: t.item,
+      style: o(t.currentOffset),
+      monitor: t.monitor,
+      ref: e
     } : {
       display: false
     }

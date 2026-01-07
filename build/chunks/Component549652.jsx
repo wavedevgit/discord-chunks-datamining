@@ -42,10 +42,10 @@ class b extends Chunk473749.PureComponent {
       stage: t,
       key: e
     } = this.state;
-    module === B ? N() : Chunk314897.default.isAuthenticated() ? Chunk544891.tn.post({
-      url: Chunk981631.ANM.HANDOFF,
+    t === B ? N() : u.default.isAuthenticated() ? l.tn.post({
+      url: p.ANM.HANDOFF,
       body: {
-        key: exports
+        key: e
       },
       oldFormErrors: true,
       rejectWithError: true
@@ -58,48 +58,48 @@ class b extends Chunk473749.PureComponent {
     }).then(this.done, this.failed)
   }
   renderDone() {
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
-        src: require("./69008.js"),
-        className: Chunk478411.marginBottom20
-      }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk478411.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.YsLqvs)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        className: Chunk478411.marginBottom40,
-        children: Chunk388032.intl.string(Chunk388032.t.CSBYDo)
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+    return (0, s.jsxs)(h.ZP, {
+      children: [(0, s.jsx)(h.Ee, {
+        src: n(69008),
+        className: x.marginBottom20
+      }), (0, s.jsx)(h.Dx, {
+        className: x.marginBottom8,
+        children: m.intl.string(m.t.YsLqvs)
+      }), (0, s.jsx)(h.DK, {
+        className: x.marginBottom40,
+        children: m.intl.string(m.t.CSBYDo)
+      }), (0, s.jsx)(o.Button, {
+        text: m.intl.string(m.t.fIv16B),
         fullWidth: true,
         onClick: this.handleOpenApp
       })]
     })
   }
   renderFailed() {
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
-        src: require("./69008.js"),
-        className: Chunk478411.marginBottom20
-      }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk478411.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.hsLIsW)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        className: Chunk478411.marginBottom40,
-        children: Chunk388032.intl.string(Chunk388032.t.CSBYDo)
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+    return (0, s.jsxs)(h.ZP, {
+      children: [(0, s.jsx)(h.Ee, {
+        src: n(69008),
+        className: x.marginBottom20
+      }), (0, s.jsx)(h.Dx, {
+        className: x.marginBottom8,
+        children: m.intl.string(m.t.hsLIsW)
+      }), (0, s.jsx)(h.DK, {
+        className: x.marginBottom40,
+        children: m.intl.string(m.t.CSBYDo)
+      }), (0, s.jsx)(o.Button, {
+        text: m.intl.string(m.t.fIv16B),
         fullWidth: true,
         onClick: this.handleOpenApp
       })]
     })
   }
   renderHandoff() {
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Hh, {}), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk478411.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.ctWa65)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["53IHoo"])
+    return (0, s.jsxs)(h.ZP, {
+      children: [(0, s.jsx)(h.Hh, {}), (0, s.jsx)(h.Dx, {
+        className: x.marginBottom8,
+        children: m.intl.string(m.t.ctWa65)
+      }), (0, s.jsx)(h.DK, {
+        children: m.intl.string(m.t["53IHoo"])
       })]
     })
   }
@@ -107,7 +107,7 @@ class b extends Chunk473749.PureComponent {
     let t, {
       stage: e
     } = this.state;
-    switch (exports) {
+    switch (e) {
       case B:
         t = this.renderDone();
         break;
@@ -117,11 +117,11 @@ class b extends Chunk473749.PureComponent {
       default:
         t = this.renderHandoff()
     }
-    return (0, Chunk54381.jsx)(Chunk600164.Z, {
-      justify: Chunk600164.Z.Justify.CENTER,
-      align: Chunk600164.Z.Align.CENTER,
-      className: Chunk989532.wrapper,
-      children: module
+    return (0, s.jsx)(c.Z, {
+      justify: c.Z.Justify.CENTER,
+      align: c.Z.Align.CENTER,
+      className: g.wrapper,
+      children: t
     })
   }
   constructor(t) {

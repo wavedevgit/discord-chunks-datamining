@@ -35,8 +35,8 @@ function _() {
     location: {
       state: e
     }
-  } = (0, Chunk703656.s1)();
-  return null == module ? true : module.previousView
+  } = (0, a.s1)();
+  return null == e ? true : e.previousView
 }
 
 function m() {
@@ -46,55 +46,55 @@ function m() {
       pathname: i,
       search: u
     }
-  } = (0, Chunk703656.s1)();
-  if (null != (0, Chunk828700.LX)(Chunk972959, {
-      path: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS,
+  } = (0, a.s1)();
+  if (null != (0, r.LX)(i, {
+      path: c.Z5c.GLOBAL_DISCOVERY_APPS,
       exact: true
     })) return {
     type: "home"
   };
-  if (null != (0, Chunk828700.LX)(Chunk972959, {
-      path: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH,
+  if (null != (0, r.LX)(i, {
+      path: c.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH,
       exact: true
     })) {
     let e = new URLSearchParams(u),
       t = {
         type: "search"
       },
-      n = module.get("q");
-    null != require && "" !== require && (exports.query = require);
-    let r = Number(module.get("category_id"));
-    Number.isInteger(Chunk828700) && Chunk828700 !== Chunk216780.MU && (exports.categoryId = Chunk828700.toString());
-    let i = Number(module.get("page"));
-    return null != Chunk972959 && Chunk972959 > 1 && (exports.page = Chunk972959), exports
+      n = e.get("q");
+    null != n && "" !== n && (t.query = n);
+    let r = Number(e.get("category_id"));
+    Number.isInteger(r) && r !== s.MU && (t.categoryId = r.toString());
+    let i = Number(e.get("page"));
+    return null != i && i > 1 && (t.page = i), t
   }
-  let d = (0, Chunk828700.LX)(Chunk972959, {
-      path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(":categoryId")],
+  let d = (0, r.LX)(i, {
+      path: [c.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(":categoryId")],
       exact: true
     }),
     {
       categoryId: f
-    } = null != (e = null == d ? true : d.params) ? module : {};
+    } = null != (e = null == d ? true : d.params) ? e : {};
   if (null != d && null != f) return {
     type: "category",
     categoryId: f
   };
-  let p = (0, Chunk828700.LX)(Chunk972959, {
-      path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"), Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", ":section"), Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")],
+  let p = (0, r.LX)(i, {
+      path: [c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"), c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", ":section"), c.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")],
       exact: true
     }),
     {
       applicationId: _,
       section: m,
       skuId: h
-    } = null != (t = null == p ? true : p.params) ? exports : {};
+    } = null != (t = null == p ? true : p.params) ? t : {};
   if (null != p && null != _) {
-    let e = null == (n = Chunk370210.Z.getApplication(_)) ? true : require.name;
+    let e = null == (n = o.Z.getApplication(_)) ? true : n.name;
     return {
       type: "application",
       applicationId: _,
-      applicationName: module,
-      section: null != m ? m : null != h ? Chunk979007.GlobalDiscoveryAppsSections.STORE : Chunk979007.GlobalDiscoveryAppsSections.ABOUT
+      applicationName: e,
+      section: null != m ? m : null != h ? l.GlobalDiscoveryAppsSections.STORE : l.GlobalDiscoveryAppsSections.ABOUT
     }
   }
 }

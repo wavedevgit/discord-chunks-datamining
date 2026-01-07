@@ -37,27 +37,27 @@ class S extends(r = Chunk473749.Component) {
       maxLength: e,
       showCharacterCountFullPadding: t
     } = this.props;
-    if (null == module) return O;
-    let n = "".concat(module).length;
-    return exports && (n += "".concat(module, " / ").length), v * require + O
+    if (null == e) return O;
+    let n = "".concat(e).length;
+    return t && (n += "".concat(e, " / ").length), v * n + O
   }
   getCharsLeftLength() {
     let {
       maxLength: e,
       value: t
     } = this.props;
-    return null == module ? null : module - (null != exports ? exports.length : 0)
+    return null == e ? null : e - (null != t ? t.length : 0)
   }
   getIsOverflowing() {
     let e = this.getCharsLeftLength();
-    return null != module && module < 0
+    return null != e && e < 0
   }
   getIsUnderflowing() {
     let {
       minLength: e,
       value: t
     } = this.props;
-    return null != module && (null != exports ? exports.length : 0) < module
+    return null != e && (null != t ? t.length : 0) < e
   }
   renderCharacterCount() {
     if (this.props.showCharacterCount) {
@@ -66,12 +66,12 @@ class S extends(r = Chunk473749.Component) {
         value: t,
         maxLength: n
       } = this.props;
-      return (0, Chunk54381.jsxs)("div", {
-        className: s()(Chunk132648.maxLength, {
-          [Chunk132648.errorOverflow]: this.hasError()
+      return (0, i.jsxs)("div", {
+        className: s()(_.maxLength, {
+          [_.errorOverflow]: this.hasError()
         }),
         "aria-hidden": "true",
-        children: [null != (e = null == exports ? true : exports.length) ? module : 0, " ", null != require && "/ ".concat(require)]
+        children: [null != (e = null == t ? true : t.length) ? e : 0, " ", null != n && "/ ".concat(n)]
       })
     }
     return null
@@ -79,12 +79,12 @@ class S extends(r = Chunk473749.Component) {
   renderMaxLength() {
     if (this.props.showCharacterCount || false === this.props.showRemainingCharacterCount) return null;
     let e = this.getCharsLeftLength();
-    return null == module ? null : (0, Chunk54381.jsx)("div", {
-      className: s()(Chunk132648.maxLength, {
-        [Chunk132648.errorOverflow]: module < 0
+    return null == e ? null : (0, i.jsx)("div", {
+      className: s()(_.maxLength, {
+        [_.errorOverflow]: e < 0
       }),
       "aria-hidden": "true",
-      children: module
+      children: e
     })
   }
   hasError() {
@@ -95,21 +95,21 @@ class S extends(r = Chunk473749.Component) {
       error: e,
       maxLength: t,
       minLength: n
-    } = this.props, r = this.getIsOverflowing() ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ICT5S6, {
-      maxLength: exports
-    }) : null, i = this.getIsUnderflowing() ? Chunk388032.intl.formatToPlainString(Chunk388032.t["62rk1K"], {
-      minLength: require
+    } = this.props, r = this.getIsOverflowing() ? p.intl.formatToPlainString(p.t.ICT5S6, {
+      maxLength: t
+    }) : null, i = this.getIsUnderflowing() ? p.intl.formatToPlainString(p.t["62rk1K"], {
+      minLength: n
     }) : null;
-    return null != module && "" === module || null === module ? null : true !== module ? module : false === this.state.dirty ? null : null != r ? r : Chunk54381
+    return null != e && "" === e || null === e ? null : true !== e ? e : false === this.state.dirty ? null : null != r ? r : i
   }
   renderErrorMessage() {
     let e = this.getErrorMessage();
-    return null == module ? null : (0, Chunk54381.jsx)(Chunk993365.x, {
+    return null == e ? null : (0, i.jsx)(d.x, {
       id: E,
       variant: "text-xs/normal",
       color: "text-feedback-critical",
-      className: Chunk132648.errorMessage,
-      children: module
+      className: _.errorMessage,
+      children: e
     })
   }
   render() {
@@ -132,22 +132,22 @@ class S extends(r = Chunk473749.Component) {
       required: C,
       onInvalid: A,
       inputRef: N
-    } = this.props, P = T ? Chunk639317.g : "textarea", R = this.hasError(), w = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, D = this.getAriaDescribedBy();
-    return (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk191228.inputWrapper, {
-        [Chunk132648.flex]: I
+    } = this.props, P = T ? f.g : "textarea", R = this.hasError(), w = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? true : e.titleId, D = this.getAriaDescribedBy();
+    return (0, i.jsxs)("div", {
+      className: s()(m.inputWrapper, {
+        [_.flex]: I
       }),
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: s()(Chunk132648.inputMaxLength, {
-          [Chunk132648.flex]: I
+      children: [(0, i.jsxs)("div", {
+        className: s()(_.inputMaxLength, {
+          [_.flex]: I
         }),
-        children: [(0, Chunk54381.jsx)(Chunk793030.tEY, {
-          children: (0, Chunk54381.jsx)(P, {
+        children: [(0, i.jsx)(c.tEY, {
+          children: (0, i.jsx)(P, {
             type: "text",
-            className: s()(Chunk191228.input, Chunk132648.textArea, Chunk164701.scrollbarDefault, O, {
-              [Chunk191228.error]: R,
-              [Chunk191228.disabled]: require,
-              [Chunk132648.resizeable]: E
+            className: s()(m.input, _.textArea, h.scrollbarDefault, O, {
+              [m.error]: R,
+              [m.disabled]: n,
+              [_.resizeable]: E
             }),
             "aria-labelledby": w,
             "aria-describedby": D,
@@ -156,12 +156,12 @@ class S extends(r = Chunk473749.Component) {
               paddingRight: this.getPaddingRight()
             },
             id: v,
-            disabled: require,
-            placeholder: Chunk473749,
+            disabled: n,
+            placeholder: a,
             value: r,
-            autoFocus: Chunk120356,
-            minLength: Chunk772848,
-            maxLength: Chunk993365 ? true : Chunk15127,
+            autoFocus: o,
+            minLength: l,
+            maxLength: d ? true : u,
             spellCheck: g,
             required: C,
             onChange: this.onChange,
@@ -172,15 +172,15 @@ class S extends(r = Chunk473749.Component) {
             rows: S,
             ref: N
           })
-        }), null != Chunk772848 && (0, Chunk54381.jsx)(Chunk793030.nn4, {
+        }), null != l && (0, i.jsx)(c.nn4, {
           id: b,
-          children: Chunk388032.intl.format(Chunk388032.t["bmQU//"], {
-            minLength: Chunk772848
+          children: p.intl.format(p.t["bmQU//"], {
+            minLength: l
           })
-        }), null != Chunk15127 && (0, Chunk54381.jsx)(Chunk793030.nn4, {
+        }), null != u && (0, i.jsx)(c.nn4, {
           id: y,
-          children: Chunk388032.intl.format(Chunk388032.t["+DFxLc"], {
-            maxLength: Chunk15127
+          children: p.intl.format(p.t["+DFxLc"], {
+            maxLength: u
           })
         }), this.renderCharacterCount(), this.renderMaxLength()]
       }), this.renderErrorMessage()]

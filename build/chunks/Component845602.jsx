@@ -26,38 +26,38 @@ var Chunk54381 = require("./54381.js"),
 
 function C() {
   var e;
-  let [t, n] = Chunk473749.useState(() => {
-    let e = Math.floor(Math.random() * Chunk141006.tl.length);
+  let [t, n] = a.useState(() => {
+    let e = Math.floor(Math.random() * p.tl.length);
     return {
-      primary_color: Chunk141006.tl[module].start,
-      secondary_color: Chunk141006.tl[module].end,
+      primary_color: p.tl[e].start,
+      secondary_color: p.tl[e].end,
       tertiary_color: null
     }
   }), {
     gradientStyle: s,
     gradientClassname: c
-  } = (0, Chunk481060.Icv)({
-    colorStrings: (0, Chunk606318.DX)(exports),
+  } = (0, l.Icv)({
+    colorStrings: (0, b.DX)(t),
     roleStyle: "username",
     includeConvenienceGlow: true,
     animateGradient: true
   });
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk326237.container,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk326237.messageContainer,
-      children: (0, Chunk54381.jsx)(Chunk978088.l, {
-        avatar: Chunk957537.Z,
+  return (0, r.jsxs)("div", {
+    className: v.container,
+    children: [(0, r.jsx)("div", {
+      className: v.messageContainer,
+      children: (0, r.jsx)(g.l, {
+        avatar: i.Z,
         username: "Cherry",
-        usernameStyle: Chunk120356,
-        usernameClassName: o()(Chunk839008, Chunk789023.animateGradient),
-        message: Chunk388032.intl.string(Chunk388032.t["6OSasb"])
+        usernameStyle: s,
+        usernameClassName: o()(c, k.animateGradient),
+        message: h.intl.string(h.t["6OSasb"])
       })
-    }), (0, Chunk54381.jsx)(Chunk797967.default, {
-      defaultColor: Chunk981631.p6O,
-      colors: Chunk141006.tl,
-      value: exports.primary_color,
-      secondaryValue: null != (e = exports.secondary_color) ? module : true,
+    }), (0, r.jsx)(d.default, {
+      defaultColor: x.p6O,
+      colors: p.tl,
+      value: t.primary_color,
+      secondaryValue: null != (e = t.secondary_color) ? e : true,
       onChange: e => {
         var r, a;
         return n((r = function(e) {

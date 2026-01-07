@@ -32,7 +32,7 @@ let m = {
 class h extends(r = Chunk473749.PureComponent) {
   select() {
     var e;
-    null == (e = this.inputRef.current) || module.select()
+    null == (e = this.inputRef.current) || e.select()
   }
   renderInput(e) {
     var t;
@@ -61,7 +61,7 @@ class h extends(r = Chunk473749.PureComponent) {
   }
   render() {
     let e, {
-        text: t = Chunk388032.intl.string(Chunk388032.t.OpuAlK),
+        text: t = f.intl.string(f.t.OpuAlK),
         mode: n,
         hideMessage: r,
         className: a,
@@ -70,45 +70,45 @@ class h extends(r = Chunk473749.PureComponent) {
         disabled: h
       } = this.props,
       g = null != r;
-    switch (require) {
+    switch (n) {
       case m.SUCCESS:
-        e = Chunk755721.Tt.GREEN;
+        e = l.Tt.GREEN;
         break;
       case m.ERROR:
-        e = Chunk755721.Tt.RED;
+        e = l.Tt.RED;
         break;
       default:
         e = this.props.buttonColor
     }
-    return (0, Chunk54381.jsx)(Chunk481060.tEY, {
+    return (0, i.jsx)(c.tEY, {
       focusTarget: this.inputRef,
       ringTarget: this.containerRef,
-      children: (0, Chunk54381.jsx)("div", {
-        className: s()((0, Chunk153066.l)(Chunk802869, "copyInput", require), Chunk473749),
+      children: (0, i.jsx)("div", {
+        className: s()((0, d.l)(p, "copyInput", n), a),
         ref: this.containerRef,
-        children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-          className: Chunk802869.layout,
-          children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
-            className: Chunk802869.inputWrapper,
-            children: [this.renderInput(g), g ? (0, Chunk54381.jsx)("div", {
-              className: Chunk802869.hiddenMessage,
+        children: (0, i.jsxs)(u.Z, {
+          className: p.layout,
+          children: [(0, i.jsxs)(u.Z, {
+            className: p.inputWrapper,
+            children: [this.renderInput(g), g ? (0, i.jsx)("div", {
+              className: p.hiddenMessage,
               children: r
             }) : null]
-          }), _ ? (0, Chunk54381.jsx)(Chunk600164.Z, {
+          }), _ ? (0, i.jsx)(u.Z, {
             shrink: 1,
             grow: 0,
             style: {
               margin: 0
             },
-            children: (0, Chunk54381.jsx)(Chunk755721.zx, {
+            children: (0, i.jsx)(l.zx, {
               "data-migration-pending": true,
-              className: Chunk802869.button,
+              className: p.button,
               onClick: this.handleButtonClick,
-              size: Chunk755721.Ph.MIN,
-              color: module,
-              look: Chunk120356,
+              size: l.Ph.MIN,
+              color: e,
+              look: o,
               disabled: h,
-              children: exports
+              children: t
             })
           }) : null]
         })

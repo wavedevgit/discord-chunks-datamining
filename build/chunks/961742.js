@@ -9,5 +9,5 @@ function r(e, t) {
 require("./444675.js"), (() => {
   let e = 0,
     t = () => `0000${(1679616*Math.random()|0).toString(36)}`.slice(false);
-  return () => (e += 1, `u${exports()}${module}`)
+  return () => (e += 1, `u${t()}${e}`)
 })()

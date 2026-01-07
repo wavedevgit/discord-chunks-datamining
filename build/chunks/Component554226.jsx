@@ -38,92 +38,92 @@ class S extends Chunk473749.PureComponent {
     this.props.track(e, t, n)
   }
   renderFooter() {
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk653198.footer,
-      children: [(0, Chunk54381.jsx)(Chunk481060.eee, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["/84uiD"]),
-        className: Chunk653198.socialLink,
-        href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
+    return (0, r.jsxs)("div", {
+      className: b.footer,
+      children: [(0, r.jsx)(c.eee, {
+        "aria-label": C.intl.string(C.t["/84uiD"]),
+        className: b.socialLink,
+        href: (0, p.Z)(j.RK.TWITTER),
         target: "blank",
-        children: (0, Chunk54381.jsx)(Chunk481060.TAi, {
+        children: (0, r.jsx)(c.TAi, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.eee, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["h0or/l"]),
-        className: Chunk653198.socialLink,
-        href: Chunk981631.fK7.FACEBOOK_URL,
+      }), (0, r.jsx)(c.eee, {
+        "aria-label": C.intl.string(C.t["h0or/l"]),
+        className: b.socialLink,
+        href: j.fK7.FACEBOOK_URL,
         target: "blank",
-        children: (0, Chunk54381.jsx)(Chunk481060.tdR, {
+        children: (0, r.jsx)(c.tdR, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.eee, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["5uVPyf"]),
-        className: Chunk653198.socialLink,
-        href: Chunk981631.fK7.INSTAGRAM_URL,
+      }), (0, r.jsx)(c.eee, {
+        "aria-label": C.intl.string(C.t["5uVPyf"]),
+        className: b.socialLink,
+        href: j.fK7.INSTAGRAM_URL,
         target: "blank",
-        children: (0, Chunk54381.jsx)(Chunk481060.gST, {
+        children: (0, r.jsx)(c.gST, {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.EjVVI7)
+        children: C.intl.string(C.t.EjVVI7)
       })]
     })
   }
   renderVideo() {
     let {
       changeLog: e
-    } = this.props, t = module.youtube_video_id, l = module.video, o = module.image;
-    if (null != exports && "" !== exports) return (0, Chunk54381.jsx)(Chunk446411.BC, {
-      className: Chunk653198.video,
+    } = this.props, t = e.youtube_video_id, l = e.video, o = e.image;
+    if (null != t && "" !== t) return (0, r.jsx)(d.BC, {
+      className: b.video,
       allowFullScreen: false,
-      href: "https://youtu.be/".concat(exports),
+      href: "https://youtu.be/".concat(t),
       thumbnail: {
-        url: "https://i.ytimg.com/vi/".concat(exports, "/hqdefault.jpg"),
+        url: "https://i.ytimg.com/vi/".concat(t, "/hqdefault.jpg"),
         width: 451,
         height: 254
       },
       video: {
-        url: "https://www.youtube.com/embed/".concat(exports, "?vq=large&rel=0&controls=0&showinfo=0"),
+        url: "https://www.youtube.com/embed/".concat(t, "?vq=large&rel=0&controls=0&showinfo=0"),
         width: 451,
         height: 254
       },
-      provider: Chunk468846.pn.YOUTUBE,
+      provider: h.pn.YOUTUBE,
       maxWidth: 451,
       maxHeight: 254,
-      renderVideoComponent: Chunk524444.lV,
-      renderImageComponent: Chunk524444.Yi,
-      renderLinkComponent: Chunk524444.iT,
+      renderVideoComponent: f.lV,
+      renderImageComponent: f.Yi,
+      renderLinkComponent: f.iT,
       onPlay: () => {
-        this.track(Chunk981631.rMx.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
+        this.track(j.rMx.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
       }
     });
-    if (null != Chunk473749 && "" !== Chunk473749) {
-      let e = Chunk473749.startsWith("https://") ? Chunk473749 : require("./595173.js")("./".concat(Chunk473749));
-      return (0, Chunk54381.jsx)(Chunk70097.Z, {
-        src: module,
-        poster: Chunk120356,
+    if (null != l && "" !== l) {
+      let e = l.startsWith("https://") ? l : n(595173)("./".concat(l));
+      return (0, r.jsx)(g.Z, {
+        src: e,
+        poster: o,
         width: 451,
         height: 254,
         loop: true,
         muted: true,
         autoPlay: true,
-        className: Chunk653198.video,
+        className: b.video,
         onPlay: () => {
-          this.track(Chunk981631.rMx.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
+          this.track(j.rMx.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
         }
       })
     }
-    if (null == Chunk120356 || "" === Chunk120356) return null;
+    if (null == o || "" === o) return null;
     {
-      let e = Chunk120356.startsWith("https://") ? Chunk120356 : require("./595173.js")("./".concat(Chunk120356));
-      return (0, Chunk54381.jsx)("img", {
-        className: Chunk653198.image,
+      let e = o.startsWith("https://") ? o : n(595173)("./".concat(o));
+      return (0, r.jsx)("img", {
+        className: b.image,
         alt: "",
-        src: module,
+        src: e,
         width: 451,
         height: 254
       })
@@ -133,35 +133,35 @@ class S extends Chunk473749.PureComponent {
     let {
       changeLog: e
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
-      transitionState: Chunk481060.Dvm.ENTERED,
-      className: Chunk348955.modal,
+    return (0, r.jsxs)(c.Y0X, {
+      transitionState: c.Dvm.ENTERED,
+      className: O.modal,
       parentComponent: "ChangeLogStandardTemplate",
-      children: [(0, Chunk54381.jsxs)(Chunk481060.xBx, {
-        align: Chunk600164.Z.Justify.BETWEEN,
+      children: [(0, r.jsxs)(c.xBx, {
+        align: u.Z.Justify.BETWEEN,
         separator: false,
-        children: [this.renderHeader(), (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
+        children: [this.renderHeader(), (0, r.jsx)(u.Z.Child, {
           grow: 0,
-          children: (0, Chunk54381.jsx)(Chunk481060.olH, {
+          children: (0, r.jsx)(c.olH, {
             onClick: this.props.onClose
           })
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.hzk, {
-        className: a()(Chunk348955.content, Chunk653198.container, {}),
+      }), (0, r.jsx)(c.hzk, {
+        className: a()(O.content, b.container, {}),
         scrollerRef: this.scrollerRef,
         onScroll: this.handleScroll,
-        children: (0, Chunk54381.jsxs)("div", {
+        children: (0, r.jsxs)("div", {
           tabIndex: 0,
           role: "region",
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.HzBchE),
-          children: [this.renderVideo(), y(module.body, false, {
+          "aria-label": C.intl.string(C.t.HzBchE),
+          children: [this.renderVideo(), y(e.body, false, {
             changeLog: this,
             interpolations: E,
             onLinkClick: this.trackLinkClick
           })]
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.mzw, {
-        direction: Chunk600164.Z.Direction.HORIZONTAL,
+      }), (0, r.jsx)(c.mzw, {
+        direction: u.Z.Direction.HORIZONTAL,
         children: this.renderFooter()
       })]
     })

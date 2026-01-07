@@ -15,12 +15,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk474936 = require("./474936.js");
 let f = function() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    n = (0, Chunk140465.t7)(),
-    f = (0, Chunk775412._O)(),
-    p = (0, Chunk975298.Z)(),
-    _ = (null == exports ? true : exports.verified) === true && (0, Chunk111361.M5)(exports, Chunk474936.PremiumTypes.TIER_2) && p.fetched && p.fractionalState !== Chunk474936.a$.FP_ONLY && !require && !f;
-  Chunk473749.useEffect(() => {
-    _ && !module && Chunk276444.Z.checkAndFetchReferralsRemaining()
-  }, [_, module])
+    t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
+    n = (0, l.t7)(),
+    f = (0, c._O)(),
+    p = (0, a.Z)(),
+    _ = (null == t ? true : t.verified) === true && (0, s.M5)(t, d.PremiumTypes.TIER_2) && p.fetched && p.fractionalState !== d.a$.FP_ONLY && !n && !f;
+  r.useEffect(() => {
+    _ && !e && u.Z.checkAndFetchReferralsRemaining()
+  }, [_, e])
 }

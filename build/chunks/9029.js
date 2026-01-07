@@ -10,10 +10,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk458034 = require("./458034.jsx");
 class s extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
+    i.Z.subscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
+    i.Z.unsubscribe("GUILD_ROLE_CONNECTIONS_MODAL_SHOW", this.handleShow)
   }
   handleShow(e) {
     let {

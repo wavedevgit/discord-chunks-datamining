@@ -11,13 +11,13 @@ function i() {
 }
 
 function s() {
-  let [e, t] = (0, Chunk473749.useState)(i());
-  return (0, Chunk473749.useEffect)(() => {
+  let [e, t] = (0, r.useState)(i());
+  return (0, r.useEffect)(() => {
     function e() {
-      exports(i())
+      t(i())
     }
-    return window.addEventListener("visibilitychange", module), () => {
-      window.removeEventListener("visibilitychange", module)
+    return window.addEventListener("visibilitychange", e), () => {
+      window.removeEventListener("visibilitychange", e)
     }
-  }, [exports]), module
+  }, [t]), e
 }

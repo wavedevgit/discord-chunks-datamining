@@ -154,13 +154,13 @@ function P() {
   if (null == r) returnfalse;
   y = {
     duration: r.getDuration(),
-    mediaSessionId: null != (e = r.getMediaSessionId()) ? module : null,
+    mediaSessionId: null != (e = r.getMediaSessionId()) ? e : null,
     rtcConnectionId: r.getRTCConnectionId(),
     wasEverMultiParticipant: S,
     wasEverRtcConnected: I,
     voiceStateAnalytics: v,
     channelId: r.channelId
-  }, Chunk570140.Z.dispatch({
+  }, s.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
     mediaEngineConnectionId: r.getMediaEngineConnectionId()
   }), r.destroy(), r = null, v = null, C = false
@@ -286,19 +286,19 @@ function K(e) {
 }
 class z extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk258609.default, Chunk938475.ZP), (0, Chunk338336.r)(this.getRTCConnectionId, this.getMediaSessionId)
+    this.waitFor(f.default, u.default, p.ZP), (0, d.r)(this.getRTCConnectionId, this.getMediaSessionId)
   }
   getRTCConnection() {
     return r
   }
   getState() {
-    return null != r ? r.state : Chunk981631.hes.DISCONNECTED
+    return null != r ? r.state : _.hes.DISCONNECTED
   }
   isConnected() {
-    return this.getState() === Chunk981631.hes.RTC_CONNECTED
+    return this.getState() === _.hes.RTC_CONNECTED
   }
   isDisconnected() {
-    return this.getState() === Chunk981631.hes.DISCONNECTED
+    return this.getState() === _.hes.DISCONNECTED
   }
   getRemoteDisconnectVoiceChannelId() {
     return b
@@ -319,7 +319,7 @@ class z extends(a = Chunk442837.ZP.Store) {
     return null != r ? r.hostname : ""
   }
   getQuality() {
-    return null != r ? r.quality : Chunk981631.IE4.UNKNOWN
+    return null != r ? r.quality : _.IE4.UNKNOWN
   }
   getPings() {
     return null != r ? r.getPings() : E
@@ -341,7 +341,7 @@ class z extends(a = Chunk442837.ZP.Store) {
   }
   getDuration() {
     var e;
-    return null != (e = null == r ? true : r.getDuration()) ? module : null == y ? true : y.duration
+    return null != (e = null == r ? true : r.getDuration()) ? e : null == y ? true : y.duration
   }
   getLastRTCConnectionState() {
     return y

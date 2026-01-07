@@ -53,19 +53,19 @@ function I(t, e) {
 }
 
 function E() {
-  return (0, Chunk54381.jsxs)(Chunk819557.z, {
-    children: [(0, Chunk54381.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t.ruhGkg),
-      description: Chunk388032.intl.string(Chunk388032.t["/FWKKC"]),
-      icon: Chunk481060.owK
-    }), (0, Chunk54381.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t.N9v3eq),
-      description: Chunk388032.intl.string(Chunk388032.t.ddpuJg),
-      icon: Chunk481060.owK
-    }), (0, Chunk54381.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t["4ycGE0"]),
-      description: Chunk388032.intl.string(Chunk388032.t["5yfN+o"]),
-      icon: Chunk481060.d3s
+  return (0, r.jsxs)(a.z, {
+    children: [(0, r.jsx)(a.q, {
+      title: j.intl.string(j.t.ruhGkg),
+      description: j.intl.string(j.t["/FWKKC"]),
+      icon: s.owK
+    }), (0, r.jsx)(a.q, {
+      title: j.intl.string(j.t.N9v3eq),
+      description: j.intl.string(j.t.ddpuJg),
+      icon: s.owK
+    }), (0, r.jsx)(a.q, {
+      title: j.intl.string(j.t["4ycGE0"]),
+      description: j.intl.string(j.t["5yfN+o"]),
+      icon: s.d3s
     })]
   })
 }

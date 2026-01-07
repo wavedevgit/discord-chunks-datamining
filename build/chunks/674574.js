@@ -14,12 +14,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk348911 = require("./348911.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.wf)(Chunk313789.n.NOTIFICATIONS_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
-    buildLayout: () => [Chunk802.o, Chunk348911.p, Chunk441302.s, Chunk736608.r, Chunk61512.G]
+    useTitle: () => c.intl.string(c.t.HcoRu0),
+    buildLayout: () => [T.o, S.p, a.s, o.r, r.G]
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.NOTIFICATIONS_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
+    useTitle: () => c.intl.string(c.t.HcoRu0),
     icon: Chunk657707.Dkj,
-    usePredicate: () => (0, Chunk526665.gj)("NotificationsPanel"),
+    usePredicate: () => (0, u.gj)("NotificationsPanel"),
     buildLayout: () => [E]
   })

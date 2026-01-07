@@ -22,10 +22,10 @@ function h(e, t) {
 }
 class f extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd), Chunk570140.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
+    i.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd), i.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("BROWSER_HANDOFF_END", this.handleEnd), Chunk570140.Z.unsubscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
+    i.Z.unsubscribe("BROWSER_HANDOFF_END", this.handleEnd), i.Z.unsubscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
   handleHandoff(e) {
     let {

@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk479766 = require("./479766.js");
 
 function a() {
-  return (0, Chunk442837.e7)([Chunk479766.Z], () => Chunk479766.Z.balance)
+  return (0, r.e7)([i.Z], () => i.Z.balance)
 }
 
 function o(e) {
@@ -21,5 +21,5 @@ function o(e) {
 }
 
 function s() {
-  return Chunk479766.Z.getCurrentBalance()
+  return i.Z.getCurrentBalance()
 }

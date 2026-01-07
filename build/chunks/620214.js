@@ -4,7 +4,7 @@
 module.exports = require("./779688.js")(function() {
   if ("function" == typeof ArrayBuffer) {
     var t = new ArrayBuffer(8);
-    Object.isExtensible(module) && Object.defineProperty(module, "a", {
+    Object.isExtensible(t) && Object.defineProperty(t, "a", {
       value: 8
     })
   }

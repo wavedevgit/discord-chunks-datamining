@@ -33,30 +33,30 @@ let O = null;
 
 function v() {
   var e, t, n, r, i, a, o;
-  let s = Chunk944486.Z.getVoiceChannelId();
-  if (null == Chunk570140) return null;
-  let u = Chunk427679.Z.getStageInstanceByChannel(Chunk570140);
-  if (null == Chunk19780) return null;
-  let y = Chunk592125.Z.getChannel(Chunk570140);
-  if (null == y || !Chunk700785.oz(Chunk981631.Plq.VIEW_CHANNEL, y)) return null;
-  let v = Chunk430824.Z.getGuild(y.getGuildId());
-  if (null == v || !v.features.has(Chunk981631.GuildFeatures.DISCOVERABLE)) return null;
-  let S = (0, Chunk750154.Lw)(y, Chunk19780),
-    I = (null == O || null == (e = O.party) ? true : module.id) === S ? O : null,
-    T = Chunk565799.Z.getMutableParticipants(y.id, Chunk501655.pV.SPEAKER),
+  let s = d.Z.getVoiceChannelId();
+  if (null == s) return null;
+  let u = h.Z.getStageInstanceByChannel(s);
+  if (null == u) return null;
+  let y = l.Z.getChannel(s);
+  if (null == y || !f.oz(b.Plq.VIEW_CHANNEL, y)) return null;
+  let v = c.Z.getGuild(y.getGuildId());
+  if (null == v || !v.features.has(b.GuildFeatures.DISCOVERABLE)) return null;
+  let S = (0, m.Lw)(y, u),
+    I = (null == O || null == (e = O.party) ? true : e.id) === S ? O : null,
+    T = p.Z.getMutableParticipants(y.id, _.pV.SPEAKER),
     C = T.filter(e => e.type === _.Ui.STREAM).length,
     A = T.length - C,
-    N = Chunk565799.Z.getParticipantCount(Chunk570140) - C,
-    P = (null == I || null == (t = I.party) ? true : exports.size) != null ? I.party.size[1] : 0;
+    N = p.Z.getParticipantCount(s) - C,
+    P = (null == I || null == (t = I.party) ? true : t.size) != null ? I.party.size[1] : 0;
   return {
-    application_id: Chunk157925.gD,
-    name: null != (i = null != (r = Chunk19780.topic) ? r : y.topic) ? Chunk348327 : y.name,
-    type: (0, Chunk368442.xJ)(y.id) ? Chunk981631.IIU.WATCHING : Chunk981631.IIU.LISTENING,
+    application_id: E.gD,
+    name: null != (i = null != (r = u.topic) ? r : y.topic) ? i : y.name,
+    type: (0, g.xJ)(y.id) ? b.IIU.WATCHING : b.IIU.LISTENING,
     timestamps: {
-      start: null != (a = null == I || null == (n = I.timestamps) ? true : require.start) ? a : new Date().getTime()
+      start: null != (a = null == I || null == (n = I.timestamps) ? true : n.start) ? a : new Date().getTime()
     },
     assets: {
-      small_image: null != (o = v.icon) ? Chunk442837 : true,
+      small_image: null != (o = v.icon) ? o : true,
       small_text: v.name
     },
     party: {
@@ -68,7 +68,7 @@ function v() {
 
 function S() {
   let e = v();
-  return !a()(module, O) && (O = module, true)
+  return !a()(e, O) && (O = e, true)
 }
 
 function I(e) {
@@ -89,7 +89,7 @@ function T(e) {
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk19780.Z, Chunk944486.Z, Chunk565799.Z, Chunk427679.Z)
+    this.waitFor(l.Z, c.Z, u.Z, d.Z, p.Z, h.Z)
   }
   getActivity() {
     return O

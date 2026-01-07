@@ -12,8 +12,8 @@ require.d(exports, {
 var Chunk710845 = require("./710845.js");
 
 function i() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  return exports.find(e => null != e && a(e))
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  return t.find(e => null != e && a(e))
 }
 
 function a(e) {
@@ -36,11 +36,11 @@ function l(e, t) {
 let c = (() => {
   if ("undefined" != typeof document) {
     let e = document.createElement("video");
-    if ("function" == typeof module.requestFullscreen);
-    else if ("function" == typeof module.webkitRequestFullscreen) return "webkitfullscreenchange";
-    else if ("function" == typeof module.webkitEnterFullscreen) return "webkitendfullscreen";
-    else if ("function" == typeof module.mozRequestFullScreen) return "mozfullscreenchange";
-    else if ("function" == typeof module.msRequestFullscreen) return "msfullscreenchange"
+    if ("function" == typeof e.requestFullscreen);
+    else if ("function" == typeof e.webkitRequestFullscreen) return "webkitfullscreenchange";
+    else if ("function" == typeof e.webkitEnterFullscreen) return "webkitendfullscreen";
+    else if ("function" == typeof e.mozRequestFullScreen) return "mozfullscreenchange";
+    else if ("function" == typeof e.msRequestFullscreen) return "msfullscreenchange"
   } else console.warn("FullScreenUtils has been imported in a non-web environment");
   return "fullscreenchange"
 })();

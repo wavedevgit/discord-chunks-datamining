@@ -44,15 +44,15 @@ function v(e) {
 }
 
 function j() {
-  let e = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
-    t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module)),
-    r = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
-    j = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(require)),
-    C = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(Chunk120356)),
-    y = (0, Chunk933557.ZP)(require, true),
-    _ = null != require ? (0, Chunk71080.IG)(require, false) : null,
-    S = null != Chunk120356 ? Chunk233608.Z.getGuildPermissionSpecMap(Chunk120356) : null,
+  let e = (0, s.e7)([p.Z], () => p.Z.getChannelId()),
+    t = (0, s.e7)([f.Z], () => f.Z.getGuildId()),
+    n = (0, s.e7)([d.Z], () => d.Z.getChannel(e)),
+    r = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
+    j = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
+    C = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
+    y = (0, c.ZP)(n, true),
+    _ = null != n ? (0, x.IG)(n, false) : null,
+    S = null != r ? h.Z.getGuildPermissionSpecMap(r) : null,
     E = Object.values(null != _ ? _ : {}).map(e => {
       let {
         title: t,
@@ -73,21 +73,21 @@ function j() {
         can: r
       }, t)
     });
-  return (0, Chunk54381.jsx)("div", {
-    className: i()(Chunk663618.panel, Chunk295532.panel),
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk295532.panelInner,
-      children: [(0, Chunk54381.jsxs)("section", {
-        className: Chunk295532.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return (0, a.jsx)("div", {
+    className: i()(g.panel, b.panel),
+    children: (0, a.jsxs)("div", {
+      className: b.panelInner,
+      children: [(0, a.jsxs)("section", {
+        className: b.section,
+        children: [(0, a.jsx)(o.Heading, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
         }), E]
-      }), (0, Chunk54381.jsxs)("section", {
-        className: Chunk295532.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      }), (0, a.jsxs)("section", {
+        className: b.section,
+        children: [(0, a.jsx)(o.Heading, {
           variant: "heading-md/semibold",
-          children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
+          children: null != r ? "Permissions in ".concat(r.name) : "No guild selected"
         }), T]
       })]
     })

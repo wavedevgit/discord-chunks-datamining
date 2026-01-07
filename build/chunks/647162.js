@@ -24,18 +24,18 @@ function p(e) {
 }
 
 function _() {
-  let e = Chunk768419.Z.getActiveSocketAndDevice();
-  if (null != module) return Promise.resolve(module);
-  if (!Chunk18323.Z.isProtocolRegistered()) return Promise.reject(Error("protocol is not registered"));
-  let t = Chunk768419.Z.getPlayableComputerDevices();
-  if (Chunk594190.ZP.isObservedAppRunning(Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY).name) && exports.length > 0) {
+  let e = c.Z.getActiveSocketAndDevice();
+  if (null != e) return Promise.resolve(e);
+  if (!l.Z.isProtocolRegistered()) return Promise.reject(Error("protocol is not registered"));
+  let t = c.Z.getPlayableComputerDevices();
+  if (a.ZP.isObservedAppRunning(i.Z.get(d.ABu.SPOTIFY).name) && t.length > 0) {
     let {
       socket: e,
       device: n
-    } = exports[0];
-    return (0, Chunk781518.Tu)(module.accountId, require.id), Promise.resolve({
-      socket: module,
-      device: require
+    } = t[0];
+    return (0, s.Tu)(e.accountId, n.id), Promise.resolve({
+      socket: e,
+      device: n
     })
   }
   return new Promise((e, n) => {
@@ -59,22 +59,22 @@ function _() {
 }
 
 function m() {
-  let e = Chunk768419.Z.getActiveSocketAndDevice();
-  if (null == module) return null;
+  let e = c.Z.getActiveSocketAndDevice();
+  if (null == e) return null;
   let {
     socket: t
-  } = module;
-  return exports.isPremium
+  } = e;
+  return t.isPremium
 }
 
 function h() {
-  let e = Chunk768419.Z.getActiveSocketAndDevice();
-  if (null == module) return Promise.reject(Error("no active profile"));
+  let e = c.Z.getActiveSocketAndDevice();
+  if (null == e) return Promise.reject(Error("no active profile"));
   let {
     socket: t
-  } = module;
-  return exports.isPremium ? Promise.resolve() : (0, Chunk781518.Ai)(exports.accountId, exports.accessToken).then(() => {
-    if (!exports.isPremium) return Promise.reject(Error("spotify account is not premium"))
+  } = e;
+  return t.isPremium ? Promise.resolve() : (0, s.Ai)(t.accountId, t.accessToken).then(() => {
+    if (!t.isPremium) return Promise.reject(Error("spotify account is not premium"))
   })
 }
 

@@ -51,20 +51,20 @@ let y = new b(Chunk570140.Z, {}),
     return r ? !y.hasId(n.id) && r : (E.delete(n.id) && y.emitChange(), false)
   }),
   v = () => {
-    let e = Chunk944486.Z.getChannelId();
-    if (null == module) return;
-    let t = Chunk592125.Z.getChannel(module);
-    null != exports && exports.isPrivate() && (E.has(exports.getRecipientId()) || (E.add(exports.getRecipientId()), y.emitChange()))
+    let e = p.Z.getChannelId();
+    if (null == e) return;
+    let t = d.Z.getChannel(e);
+    null != t && t.isPrivate() && (E.has(t.getRecipientId()) || (E.add(t.getRecipientId()), y.emitChange()))
   },
-  S = () => (0, Chunk54381.jsxs)("div", {
-    className: Chunk58804.replyBar,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  S = () => (0, i.jsxs)("div", {
+    className: h.replyBar,
+    children: [(0, i.jsx)(l.Text, {
       variant: "text-sm/medium",
-      className: o()(Chunk58804.text, Chunk58804.replyLabel),
-      children: Chunk388032.intl.string(Chunk388032.t["2UvR1E"])
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk58804.actions,
-      children: (0, Chunk54381.jsx)(Chunk962293.B, {
+      className: o()(h.text, h.replyLabel),
+      children: m.intl.string(m.t["2UvR1E"])
+    }), (0, i.jsx)("div", {
+      className: h.actions,
+      children: (0, i.jsx)(u.B, {
         onClick: v
       })
     })]

@@ -20,7 +20,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk388032 = require("./388032.jsx");
 
 function b() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }

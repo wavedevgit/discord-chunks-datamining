@@ -45,27 +45,27 @@ function c(e, t) {
 }
 
 function d() {
-  let e = (0, Chunk399606.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    t = (0, Chunk399606.e7)([Chunk802098.Z], () => Chunk802098.Z.latestChangelogId()),
-    n = (0, Chunk399606.e7)([Chunk802098.Z], () => Chunk802098.Z.getConfig()),
-    r = null != require && 0 === Object.keys(require).length,
-    o = null != require && Object.keys(require).length > 0 && null == exports,
-    s = (0, Chunk399606.e7)([Chunk802098.Z], () => Chunk802098.Z.overrideId()),
+  let e = (0, l.e7)([a.default], () => a.default.locale),
+    t = (0, l.e7)([i.Z], () => i.Z.latestChangelogId()),
+    n = (0, l.e7)([i.Z], () => i.Z.getConfig()),
+    r = null != n && 0 === Object.keys(n).length,
+    o = null != n && Object.keys(n).length > 0 && null == t,
+    s = (0, l.e7)([i.Z], () => i.Z.overrideId()),
     {
       changelog: d,
       loaded: h
-    } = c(exports, module),
+    } = c(t, e),
     {
       changelog: u,
       loaded: g
-    } = c(Chunk596401, module);
-  return null == Chunk596401 || null == u && g ? {
-    id: exports,
+    } = c(s, e);
+  return null == s || null == u && g ? {
+    id: t,
     changelog: d,
-    loaded: !!Chunk473749 || h,
-    clientTooOld: Chunk661111
+    loaded: !!r || h,
+    clientTooOld: o
   } : {
-    id: Chunk596401,
+    id: s,
     changelog: u,
     loaded: g,
     clientTooOld: false

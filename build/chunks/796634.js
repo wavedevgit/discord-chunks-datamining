@@ -13,15 +13,15 @@ var Chunk473749 = require("./473749.js"),
 let l = 3;
 
 function c() {
-  let e = (0, Chunk442837.Wu)([Chunk276444.Z], () => Chunk276444.Z.getSentUserIds()),
-    t = (0, Chunk442837.Wu)([Chunk594174.default], () => module.map(e => o.default.getUser(e)).filter(e => null != e));
-  return Chunk473749.useEffect(() => {
-    module.forEach(e => {
+  let e = (0, i.Wu)([s.Z], () => s.Z.getSentUserIds()),
+    t = (0, i.Wu)([o.default], () => e.map(e => o.default.getUser(e)).filter(e => null != e));
+  return r.useEffect(() => {
+    e.forEach(e => {
       (0, a.PR)(e)
     })
-  }, [module]), {
-    referralSentUsers: exports,
-    hasSentAllReferrals: module.length === l,
-    refreshAt: (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getRefreshAt())
+  }, [e]), {
+    referralSentUsers: t,
+    hasSentAllReferrals: e.length === l,
+    refreshAt: (0, i.e7)([s.Z], () => s.Z.getRefreshAt())
   }
 }

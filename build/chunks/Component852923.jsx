@@ -57,23 +57,23 @@ function E(e) {
 }
 
 function b() {
-  let e = (0, Chunk623633.Z)();
-  return null == module ? null : (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-    className: Chunk486550.container,
-    color: Chunk481060.DM8.DEFAULT,
-    children: [Chunk388032.intl.string(Chunk388032.t.Ul1RJQ), (0, Chunk54381.jsx)(E, {
-      channelId: module.id
-    }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+  let e = (0, f.Z)();
+  return null == e ? null : (0, r.jsxs)(o.qXd, {
+    className: h.container,
+    color: o.DM8.DEFAULT,
+    children: [m.intl.string(m.t.Ul1RJQ), (0, r.jsx)(E, {
+      channelId: e.id
+    }), (0, r.jsxs)(o.ButtonGroup, {
       size: "sm",
-      className: Chunk486550.buttonGroup,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+      className: h.buttonGroup,
+      children: [(0, r.jsx)(o.Button, {
         variant: "overlay-primary",
-        text: Chunk388032.intl.string(Chunk388032.t.MpO0px),
+        text: m.intl.string(m.t.MpO0px),
         onClick: () => g(false)
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "secondary",
         onClick: () => g(true),
-        text: Chunk388032.intl.string(Chunk388032.t["1YDv7a"])
+        text: m.intl.string(m.t["1YDv7a"])
       })]
     })]
   })

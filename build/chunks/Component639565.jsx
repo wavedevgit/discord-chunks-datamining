@@ -15,11 +15,11 @@ var Chunk703656 = require("./703656.js"),
   Chunk235810 = require("./235810.js");
 
 function b() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk266505.artContainer,
-    children: (0, Chunk54381.jsx)("img", {
-      src: Chunk235810,
-      className: Chunk266505.artAsset,
+  return (0, r.jsx)("div", {
+    className: u.artContainer,
+    children: (0, r.jsx)("img", {
+      src: O,
+      className: u.artAsset,
       alt: ""
     })
   })

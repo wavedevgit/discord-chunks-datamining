@@ -22,11 +22,11 @@ class l {
   finish() {
     this.chunks.push(new Uint8Array(this.buf));
     let e = 0;
-    for (let t = 0; exports < this.chunks.length; exports++) e += this.chunks[exports].length;
-    let t = new Uint8Array(module),
+    for (let t = 0; t < this.chunks.length; t++) e += this.chunks[t].length;
+    let t = new Uint8Array(e),
       n = 0;
-    for (let e = 0; module < this.chunks.length; module++) exports.set(this.chunks[module], require), n += this.chunks[module].length;
-    return this.chunks = [], exports
+    for (let e = 0; e < this.chunks.length; e++) t.set(this.chunks[e], n), n += this.chunks[e].length;
+    return this.chunks = [], t
   }
   fork() {
     return this.stack.push({
@@ -37,8 +37,8 @@ class l {
   join() {
     let e = this.finish(),
       t = this.stack.pop();
-    if (!exports) throw Error("invalid state, fork stack empty");
-    return this.chunks = exports.chunks, this.buf = exports.buf, this.uint32(module.byteLength), this.raw(module)
+    if (!t) throw Error("invalid state, fork stack empty");
+    return this.chunks = t.chunks, this.buf = t.buf, this.uint32(e.byteLength), this.raw(e)
   }
   tag(e, t) {
     return this.uint32((e << 3 | t) >>> 0)

@@ -8,8 +8,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk495311 = require("./495311.js");
 
 function a() {
-  var t = (0, Chunk495311.N)();
-  return (0, Chunk473749.useMemo)(function() {
-    return new Chunk742241.H(module)
-  }, [module])
+  var t = (0, i.N)();
+  return (0, r.useMemo)(function() {
+    return new o.H(t)
+  }, [t])
 }

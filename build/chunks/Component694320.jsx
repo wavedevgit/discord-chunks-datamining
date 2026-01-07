@@ -44,10 +44,10 @@ function y(e) {
 }
 
 function O() {
-  (0, Chunk481060.ZDy)(async () => {
+  (0, c.ZDy)(async () => {
     let {
       default: e
-    } = await require.e("3289").then(require.bind(require, 682609));
+    } = await n.e("3289").then(n.bind(n, 682609));
     return t => (0, r.jsx)(e, y({
       channel: null
     }, t))

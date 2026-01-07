@@ -12,12 +12,12 @@ var Chunk473749 = require("./473749.js"),
 let l = new Set(["GB"]);
 
 function c() {
-  let e = (0, Chunk442837.e7)([Chunk355298.Z], () => Chunk355298.Z.getUserCountryCode()),
-    t = false === (0, Chunk442837.e7)([Chunk594174.default], () => {
+  let e = (0, i.e7)([s.Z], () => s.Z.getUserCountryCode()),
+    t = false === (0, i.e7)([a.default], () => {
       var e;
-      return null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed
+      return null == (e = a.default.getCurrentUser()) ? true : e.nsfwAllowed
     });
-  return Chunk473749.useEffect(() => {
-    null == module && (0, Chunk823162.hi)()
-  }, [module]), null != module && !!l.has(module.alpha2) && !!exports
+  return r.useEffect(() => {
+    null == e && (0, o.hi)()
+  }, [e]), null != e && !!l.has(e.alpha2) && !!t
 }

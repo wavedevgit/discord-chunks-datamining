@@ -29,10 +29,10 @@ function E(e) {
 }
 let b = i().throttle(function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
-    t = Chunk771845.ZP.getFlattenedGuildIds(),
-    n = E(exports);
-  if ((n += module) !== g || (0, Chunk706590.z)(Chunk853856.Z, Chunk592125.Z, Chunk496675.Z) || (n += module), require === m && (n = exports.length - 1), require >= exports.length || require === h) return void(0, Chunk475468.z)(Chunk774343.Z.getHomeLink());
-  let r = require === g ? Chunk981631.I_8 : exports[require],
-    i = Chunk944486.Z.getChannelId(Chunk392711);
-  (0, Chunk475468.K)(Chunk392711, i === Chunk392711 ? null : i, false)
+    t = d.ZP.getFlattenedGuildIds(),
+    n = E(t);
+  if ((n += e) !== g || (0, o.z)(a.Z, l.Z, c.Z) || (n += e), n === m && (n = t.length - 1), n >= t.length || n === h) return void(0, p.z)(f.Z.getHomeLink());
+  let r = n === g ? _.I_8 : t[n],
+    i = u.Z.getChannelId(r);
+  (0, p.K)(r, i === r ? null : i, false)
 }, Chunk981631.aZC)

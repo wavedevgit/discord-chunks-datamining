@@ -57,7 +57,7 @@ class m {
   }
   breakToNewRow() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    this.nextX = 0, this.nextY += this.tallestImageHeight + p, this.tallestImageHeight = 0, this.nextY > this.MAX_HEIGHT && (module ? this.reset() : this.needsReset = true)
+    this.nextX = 0, this.nextY += this.tallestImageHeight + p, this.tallestImageHeight = 0, this.nextY > this.MAX_HEIGHT && (e ? this.reset() : this.needsReset = true)
   }
   getImage(e, t, n) {
     var r;
@@ -83,8 +83,8 @@ class m {
       alpha: true,
       willReadFrequently: false
     });
-    if (null == module) throw Error("Couldn't construct context for offscreen canvas");
-    this.context = module
+    if (null == e) throw Error("Couldn't construct context for offscreen canvas");
+    this.context = e
   }
 }
 class h extends Chunk129508.Z {

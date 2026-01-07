@@ -35,36 +35,36 @@ var Chunk392711 = require("./392711.js"),
 let y = false,
   O = async () => {
     try {
-      let e = (await Chunk544891.tn.get({
-        url: Chunk981631.ANM.SOUNDBOARD_DEFAULT_SOUNDS,
+      let e = (await a.tn.get({
+        url: g.ANM.SOUNDBOARD_DEFAULT_SOUNDS,
         rejectWithError: false
       })).body.map(e => (0, p.o3)(e, h.X8));
-      Chunk570140.Z.dispatch({
+      o.Z.dispatch({
         type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS",
-        soundboardSounds: module
+        soundboardSounds: e
       })
     } catch (e) {
-      throw Chunk570140.Z.dispatch({
+      throw o.Z.dispatch({
         type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"
-      }), new Chunk479531.Z(module)
+      }), new l.Z(e)
     }
   }, v = async () => {
     let e = new Map;
     try {
-      let t = (await Chunk544891.tn.get({
-        url: Chunk981631.ANM.TOP_SOUNDS_FOR_GUILDS,
+      let t = (await a.tn.get({
+        url: g.ANM.TOP_SOUNDS_FOR_GUILDS,
         rejectWithError: false,
         timeout: 1e3
       })).body;
-      Object.entries(exports.top_sounds_by_guild).forEach(t => {
+      Object.entries(t.top_sounds_by_guild).forEach(t => {
         let [n, r] = t;
         e.set(n, r.map(p.Kv))
-      }), Chunk570140.Z.dispatch({
+      }), o.Z.dispatch({
         type: "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS",
-        topSoundsForGuilds: module
+        topSoundsForGuilds: e
       })
     } catch (e) {
-      Chunk570140.Z.dispatch({
+      o.Z.dispatch({
         type: "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE"
       })
     }
@@ -85,44 +85,44 @@ let y = false,
       n.set(r, i), o.Z.subscribe(r, i)
     })
   }), T = () => {
-    if (!Chunk763296.Z.shouldFetchDefaultSounds()) return Promise.resolve();
-    Chunk570140.Z.dispatch({
+    if (!f.Z.shouldFetchDefaultSounds()) return Promise.resolve();
+    o.Z.dispatch({
       type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
     });
     let e = S("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
-    return (0, Chunk771784.sI)("maybeFetchDefaultSounds") && v(), O(), module
+    return (0, _.sI)("maybeFetchDefaultSounds") && v(), O(), e
   }, C = () => {
-    let e = (0, Chunk174470.D)();
-    if (0 === module.length) return Promise.resolve();
+    let e = (0, m.D)();
+    if (0 === e.length) return Promise.resolve();
     let t = S("SOUNDBOARD_SOUNDS_RECEIVED");
-    return Chunk570140.Z.dispatch({
+    return o.Z.dispatch({
       type: "GUILD_SOUNDBOARD_FETCH"
-    }), Chunk570140.Z.dispatch({
+    }), o.Z.dispatch({
       type: "REQUEST_SOUNDBOARD_SOUNDS",
-      guildIds: module
-    }), exports
+      guildIds: e
+    }), t
   }, A = () => {
-    if (!Chunk763296.Z.shouldFetchTopSoundsForGuilds()) return Promise.resolve();
-    Chunk570140.Z.dispatch({
+    if (!f.Z.shouldFetchTopSoundsForGuilds()) return Promise.resolve();
+    o.Z.dispatch({
       type: "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH"
     });
     let e = I(["SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS", "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE"]);
-    return v(), module
+    return v(), e
   }, N = async () => {
-    if (__OVERLAY__) return Chunk570140.Z.dispatch({
+    if (__OVERLAY__) return o.Z.dispatch({
       type: "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST"
     }), Promise.all([]);
     let e = performance.now(),
       t = !y;
     y = true;
     let n = await Promise.all([T(), C(), A()]);
-    if (exports) {
-      let t = performance.now() - module;
-      Chunk626135.default.track(Chunk981631.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUNDS_LOADED, {
-        elapsed_ms: exports
+    if (t) {
+      let t = performance.now() - e;
+      u.default.track(g.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUNDS_LOADED, {
+        elapsed_ms: t
       })
     }
-    return require
+    return n
   };
 async function P(e) {
   let {

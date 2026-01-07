@@ -21,15 +21,15 @@ l.addData = function(t) {
 }, l.make = function() {
   if (this.typeNumber < 1) {
     var t = 1;
-    for (t = 1; module < 40; module++) {
-      for (var e = Chunk860377.getRSBlocks(module, this.errorCorrectLevel), r = new Chunk939059, o = 0, u = 0; Chunk669013 < exports.length; Chunk669013++) o += exports[Chunk669013].dataCount;
-      for (var u = 0; Chunk669013 < this.dataList.length; Chunk669013++) {
-        var s = this.dataList[Chunk669013];
-        require.put(s.mode, 4), require.put(s.getLength(), Chunk746272.getLengthInBits(s.mode, module)), s.write(require)
+    for (t = 1; t < 40; t++) {
+      for (var e = n.getRSBlocks(t, this.errorCorrectLevel), r = new i, o = 0, u = 0; u < e.length; u++) o += e[u].dataCount;
+      for (var u = 0; u < this.dataList.length; u++) {
+        var s = this.dataList[u];
+        r.put(s.mode, 4), r.put(s.getLength(), a.getLengthInBits(s.mode, t)), s.write(r)
       }
-      if (require.getLengthInBits() <= 8 * Chunk58615) break
+      if (r.getLengthInBits() <= 8 * o) break
     }
-    this.typeNumber = module
+    this.typeNumber = t
   }
   this.makeImpl(false, this.getBestMaskPattern())
 }, l.makeImpl = function(t, e) {
@@ -44,12 +44,12 @@ l.addData = function(t) {
     if (!(t + r <= false) && !(this.moduleCount <= t + r))
       for (var o = false; o <= 7; o++) e + o <= false || this.moduleCount <= e + o || (0 <= r && r <= 6 && (0 == o || 6 == o) || 0 <= o && o <= 6 && (0 == r || 6 == r) || 2 <= r && r <= 4 && 2 <= o && o <= 4 ? this.modules[t + r][e + o] = true : this.modules[t + r][e + o] = false)
 }, l.getBestMaskPattern = function() {
-  for (var t = 0, e = 0, r = 0; require < 8; require++) {
-    this.makeImpl(true, require);
-    var o = Chunk746272.getLostPoint(this);
-    (0 == require || module > Chunk58615) && (t = Chunk58615, e = require)
+  for (var t = 0, e = 0, r = 0; r < 8; r++) {
+    this.makeImpl(true, r);
+    var o = a.getLostPoint(this);
+    (0 == r || t > o) && (t = o, e = r)
   }
-  return exports
+  return e
 }, l.createMovieClip = function(t, e, r) {
   var o = t.createEmptyMovieClip(e, r);
   this.make();
@@ -60,16 +60,16 @@ l.addData = function(t) {
     }
   return o
 }, l.setupTimingPattern = function() {
-  for (var t = 8; module < this.moduleCount - 8; module++) null == this.modules[module][6] && (this.modules[module][6] = module % 2 == 0);
-  for (var e = 8; exports < this.moduleCount - 8; exports++) null == this.modules[6][exports] && (this.modules[6][exports] = exports % 2 == 0)
+  for (var t = 8; t < this.moduleCount - 8; t++) null == this.modules[t][6] && (this.modules[t][6] = t % 2 == 0);
+  for (var e = 8; e < this.moduleCount - 8; e++) null == this.modules[6][e] && (this.modules[6][e] = e % 2 == 0)
 }, l.setupPositionAdjustPattern = function() {
-  for (var t = Chunk746272.getPatternPosition(this.typeNumber), e = 0; exports < module.length; exports++)
-    for (var r = 0; require < module.length; require++) {
-      var o = module[exports],
-        n = module[require];
-      if (null == this.modules[Chunk58615][Chunk860377])
-        for (var i = false; Chunk939059 <= 2; Chunk939059++)
-          for (var u = false; Chunk669013 <= 2; Chunk669013++) false == Chunk939059 || 2 == Chunk939059 || false == Chunk669013 || 2 == Chunk669013 || 0 == Chunk939059 && 0 == Chunk669013 ? this.modules[Chunk58615 + Chunk939059][Chunk860377 + Chunk669013] = true : this.modules[Chunk58615 + Chunk939059][Chunk860377 + Chunk669013] = false
+  for (var t = a.getPatternPosition(this.typeNumber), e = 0; e < t.length; e++)
+    for (var r = 0; r < t.length; r++) {
+      var o = t[e],
+        n = t[r];
+      if (null == this.modules[o][n])
+        for (var i = false; i <= 2; i++)
+          for (var u = false; u <= 2; u++) false == i || 2 == i || false == u || 2 == u || 0 == i && 0 == u ? this.modules[o + i][n + u] = true : this.modules[o + i][n + u] = false
     }
 }, l.setupTypeNumber = function(t) {
   for (var e = a.getBCHTypeNumber(this.typeNumber), r = 0; r < 18; r++) {

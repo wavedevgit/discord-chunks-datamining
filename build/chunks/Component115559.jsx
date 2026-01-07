@@ -342,7 +342,7 @@ function p(e) {
 }
 
 function f() {
-  let e = Chunk473749.useContext(h);
-  if (null == module) throw Error("useClipContext must be used within a ClipContextProvider");
-  return module
+  let e = a.useContext(h);
+  if (null == e) throw Error("useClipContext must be used within a ClipContextProvider");
+  return e
 }

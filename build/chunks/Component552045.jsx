@@ -22,51 +22,51 @@ var Chunk120356 = require("./120356.js"),
   Chunk633488 = require("./633488.js"),
   Chunk361848 = require("./361848.js");
 let b = () => {
-    let e = (0, Chunk631885.AZ)(),
-      t = (0, Chunk880257.Z)(),
+    let e = (0, u.AZ)(),
+      t = (0, c.Z)(),
       {
         handleTabChange: n
-      } = (0, Chunk841409.Z)();
-    return (0, Chunk631885.VM)() || exports && module ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk865115.button,
-      children: exports ? (0, Chunk54381.jsx)(Chunk481060.Button, {
+      } = (0, l.Z)();
+    return (0, u.VM)() || t && e ? null : (0, r.jsx)("div", {
+      className: m.button,
+      children: t ? (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.LhlgY9),
-        onClick: () => require(Chunk292352.dG.REQUESTS)
-      }) : (0, Chunk54381.jsx)(Chunk568671.Z, {})
+        text: _.intl.string(_.t.LhlgY9),
+        onClick: () => n(f.dG.REQUESTS)
+      }) : (0, r.jsx)(d.Z, {})
     })
   },
   y = () => {
-    let e = (0, Chunk880257.Z)(),
-      t = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk517319.default["T7GyW+"]), Chunk388032.intl.string(Chunk517319.default.goKE2b)),
-      n = (0, Chunk785681.o)(Chunk388032.intl.format(Chunk517319.default.MXjDSv, {
+    let e = (0, c.Z)(),
+      t = (0, s.o)(_.intl.string(p.default["T7GyW+"]), _.intl.string(p.default.goKE2b)),
+      n = (0, s.o)(_.intl.format(p.default.MXjDSv, {
         articleLink: "https://support.discord.com/hc/articles/14155060633623"
-      }), Chunk388032.intl.format(Chunk517319.default.EMCf6j, {
+      }), _.intl.format(p.default.EMCf6j, {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
-    return (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk865115.container, Chunk108319.box),
-      children: [(0, Chunk54381.jsxs)("div", {
-        children: [(0, Chunk54381.jsx)("div", {
-          children: (0, Chunk54381.jsxs)("div", {
-            className: Chunk865115.headerText,
-            children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    return (0, r.jsxs)("div", {
+      className: a()(m.container, h.box),
+      children: [(0, r.jsxs)("div", {
+        children: [(0, r.jsx)("div", {
+          children: (0, r.jsxs)("div", {
+            className: m.headerText,
+            children: [(0, r.jsx)(o.Heading, {
               variant: "heading-xl/medium",
-              children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
-                children: exports
+              children: (0, r.jsx)(o.y5t, {
+                children: t
               })
-            }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               color: "text-muted",
-              children: require
+              children: n
             })]
           })
-        }), (0, Chunk54381.jsx)(b, {})]
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk865115.headerImage,
-        children: (0, Chunk54381.jsx)("img", {
-          src: module ? Chunk633488 : Chunk361848,
-          alt: Chunk388032.intl.string(Chunk517319.default.ffg6xd)
+        }), (0, r.jsx)(b, {})]
+      }), (0, r.jsx)("div", {
+        className: m.headerImage,
+        children: (0, r.jsx)("img", {
+          src: e ? g : E,
+          alt: _.intl.string(p.default.ffg6xd)
         })
       })]
     })

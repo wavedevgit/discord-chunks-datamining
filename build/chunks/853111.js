@@ -12,8 +12,8 @@ let a = (0, Chunk509613.ON)(Chunk313789.n.OVERLAY_NUX, {
     Component: Chunk794704.Hm,
     useSearchTerms: () => [],
     usePredicate: () => {
-      let [t] = (0, Chunk243778.US)([Chunk704215.z.OVERLAY_OOP_SETTINGS_NUX], true, true);
-      return module === Chunk704215.z.OVERLAY_OOP_SETTINGS_NUX
+      let [t] = (0, l.US)([i.z.OVERLAY_OOP_SETTINGS_NUX], true, true);
+      return t === i.z.OVERLAY_OOP_SETTINGS_NUX
     }
   }),
   o = (0, Chunk509613.k4)(Chunk313789.n.OVERLAY_NUX_CATEGORY, {

@@ -7,6 +7,6 @@ var Chunk473749 = require("./473749.js"),
   Chunk828700 = require("./828700.js");
 
 function o() {
-  let e = (0, Chunk828700.TH)();
-  return Chunk473749.useMemo(() => new URLSearchParams(module.search), [module.search])
+  let e = (0, c.TH)();
+  return r.useMemo(() => new URLSearchParams(e.search), [e.search])
 }

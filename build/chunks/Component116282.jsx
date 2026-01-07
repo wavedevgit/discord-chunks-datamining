@@ -16,64 +16,64 @@ let S = () => {
     isWeb: t,
     installationStatus: e,
     connectionStatus: n
-  } = (0, Chunk773275.xf)(), S = (0, Chunk473749.useMemo)(() => {
-    switch (require) {
-      case Chunk5900.Ij.CONNECTED:
-        return Chunk388032.intl.format(Chunk472057.default.EVQZqy, {
-          helpdeskArticle: Chunk323183.w
+  } = (0, a.xf)(), S = (0, l.useMemo)(() => {
+    switch (n) {
+      case r.Ij.CONNECTED:
+        return o.intl.format(T.default.EVQZqy, {
+          helpdeskArticle: u.w
         });
-      case Chunk5900.Ij.DISCONNECTED:
-        return Chunk388032.intl.format(Chunk472057.default.zOCRv9, {
-          helpdeskArticle: Chunk323183.w
+      case r.Ij.DISCONNECTED:
+        return o.intl.format(T.default.zOCRv9, {
+          helpdeskArticle: u.w
         });
-      case Chunk5900.Ij.ERROR:
-        return Chunk388032.intl.format(Chunk472057.default.e9MkUw, {
-          helpdeskArticle: Chunk323183.w
+      case r.Ij.ERROR:
+        return o.intl.format(T.default.e9MkUw, {
+          helpdeskArticle: u.w
         });
       default:
-        return Chunk388032.intl.format(Chunk472057.default["Rr+ah3"], {
-          helpdeskArticle: Chunk323183.w
+        return o.intl.format(T.default["Rr+ah3"], {
+          helpdeskArticle: u.w
         })
     }
-  }, [require]), c = (0, Chunk473749.useMemo)(() => {
-    if (module) return Chunk388032.intl.format(Chunk472057.default.z6v0w5, {
-      helpdeskArticle: Chunk323183.w
+  }, [n]), c = (0, l.useMemo)(() => {
+    if (t) return o.intl.format(T.default.z6v0w5, {
+      helpdeskArticle: u.w
     });
-    switch (exports) {
-      case Chunk5900._n.ERROR:
-        return Chunk388032.intl.format(Chunk472057.default.vjIpaK, {
-          helpdeskArticle: Chunk323183.w
+    switch (e) {
+      case r._n.ERROR:
+        return o.intl.format(T.default.vjIpaK, {
+          helpdeskArticle: u.w
         });
-      case Chunk5900._n.INSTALLING_TIMEOUT:
-        return Chunk388032.intl.format(Chunk472057.default.QWyvkt, {
-          helpdeskArticle: Chunk323183.w
+      case r._n.INSTALLING_TIMEOUT:
+        return o.intl.format(T.default.QWyvkt, {
+          helpdeskArticle: u.w
         });
-      case Chunk5900._n.INSTALLING:
-        return Chunk388032.intl.format(Chunk472057.default.ZLrDvb, {
-          helpdeskArticle: Chunk323183.w
+      case r._n.INSTALLING:
+        return o.intl.format(T.default.ZLrDvb, {
+          helpdeskArticle: u.w
         });
-      case Chunk5900._n.WAITING_FOR_TERMS:
-      case Chunk5900._n.READY_FOR_LICENSE:
-        return Chunk388032.intl.format(Chunk472057.default.rX9Z5g, {
-          helpdeskArticle: Chunk323183.w
+      case r._n.WAITING_FOR_TERMS:
+      case r._n.READY_FOR_LICENSE:
+        return o.intl.format(T.default.rX9Z5g, {
+          helpdeskArticle: u.w
         });
-      case Chunk5900._n.EXISTING_INSTALLATION:
-        return Chunk388032.intl.format(Chunk472057.default.gOBU3K, {
-          helpdeskArticle: Chunk323183.w
+      case r._n.EXISTING_INSTALLATION:
+        return o.intl.format(T.default.gOBU3K, {
+          helpdeskArticle: u.w
         });
-      case Chunk5900._n.ZERO_TRUST:
-        return Chunk388032.intl.string(Chunk472057.default.KVSUDs);
-      case Chunk5900._n.INSTALLED:
+      case r._n.ZERO_TRUST:
+        return o.intl.string(T.default.KVSUDs);
+      case r._n.INSTALLED:
         return S;
-      case Chunk5900._n.NOT_INSTALLED:
-      case Chunk5900._n.UNKNOWN:
+      case r._n.NOT_INSTALLED:
+      case r._n.UNKNOWN:
       default:
-        return Chunk388032.intl.format(Chunk472057.default["Rr+ah3"], {
-          helpdeskArticle: Chunk323183.w
+        return o.intl.format(T.default["Rr+ah3"], {
+          helpdeskArticle: u.w
         })
     }
-  }, [module, exports, S]);
-  return (0, Chunk54381.jsx)(Chunk159691.xvT, {
+  }, [t, e, S]);
+  return (0, i.jsx)(s.xvT, {
     variant: "text-sm/normal",
     color: "text-subtle",
     children: c

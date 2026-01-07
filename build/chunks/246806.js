@@ -25,8 +25,8 @@ function s(e) {
 
 function l() {
   let e = 0;
-  return Chunk791473.Z.USE_EXIF ? {
+  return i.Z.USE_EXIF ? {
     hasAppMarkers: true,
-    tiffHeaderOffset: module
+    tiffHeaderOffset: e
   } : {}
 }

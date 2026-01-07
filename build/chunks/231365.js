@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_STREAM_ATTENUATION, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["/jwMtn"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.zlA23F),
+  useTitle: () => T.intl.string(T.t["/jwMtn"]),
+  useSubtitle: () => T.intl.string(T.t.zlA23F),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSidechainCompression())
+    return (0, i.e7)([r.Z], () => r.Z.getSidechainCompression())
   },
   setValue: function(t) {
     let e = [s.Z.USER_SETTINGS_VOICE_AND_VIDEO];
@@ -24,6 +24,6 @@ let S = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_STREAM_ATTENUATION, {
     })
   },
   usePredicate: function() {
-    return Chunk131951.Z.supports(Chunk65154.AN.SIDECHAIN_COMPRESSION)
+    return r.Z.supports(o.AN.SIDECHAIN_COMPRESSION)
   }
 })

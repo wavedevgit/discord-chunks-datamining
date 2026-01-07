@@ -23,12 +23,12 @@ class s extends Chunk473749.PureComponent {
       lastItem: t,
       className: n
     } = this.props;
-    return (0, Chunk54381.jsxs)("span", {
-      children: [(0, Chunk54381.jsx)(Chunk481060.eee, {
-        className: require,
+    return (0, r.jsxs)("span", {
+      children: [(0, r.jsx)(a.eee, {
+        className: n,
         onClick: this.handleClick,
-        children: module
-      }), exports ? "" : ", "]
+        children: e
+      }), t ? "" : ", "]
     })
   }
   constructor(...e) {
@@ -44,9 +44,9 @@ class s extends Chunk473749.PureComponent {
 class l extends Chunk473749.PureComponent {
   render() {
     let e = this.props.artists.split("; ");
-    if (!this.props.canOpen) return module.join(", ");
-    let t = module.length - 1;
-    return module.map((e, n) => (0, r.jsx)(s, {
+    if (!this.props.canOpen) return e.join(", ");
+    let t = e.length - 1;
+    return e.map((e, n) => (0, r.jsx)(s, {
       text: e,
       index: n,
       lastItem: n === t,

@@ -14,8 +14,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk981631 = require("./981631.js");
 let p = (0, Chunk972959.H)(() => ({
-  setting: Chunk313789.n.ACCOUNT_PANEL,
-  section: Chunk981631.oAB.ACCOUNT,
+  setting: c.n.ACCOUNT_PANEL,
+  section: m.oAB.ACCOUNT,
   subsection: true
 }));
 
@@ -23,48 +23,48 @@ function f() {
   let e = p.useField("setting"),
     t = p.useField("section"),
     n = p.useField("subsection"),
-    o = Chunk473749.useCallback(() => {
-      (0, Chunk518596.openUserSettings)(module, {
-        section: exports,
-        subsection: require
+    o = r.useCallback(() => {
+      (0, d.openUserSettings)(e, {
+        section: t,
+        subsection: n
       })
-    }, [module, exports, require]),
-    f = Chunk473749.useMemo(() => Object.values(Chunk313789.n).map(e => ({
+    }, [e, t, n]),
+    f = r.useMemo(() => Object.values(c.n).map(e => ({
       label: e,
       value: e
     })), []),
-    h = Chunk473749.useMemo(() => Object.values(Chunk981631.oAB).map(e => ({
+    h = r.useMemo(() => Object.values(m.oAB).map(e => ({
       label: e,
       value: e
     })), []);
-  return (0, Chunk54381.jsxs)(Chunk793030.C3N, {
+  return (0, a.jsxs)(i.C3N, {
     label: "Settings Navigation Tool",
-    children: [(0, Chunk54381.jsx)(Chunk668339.d, {
+    children: [(0, a.jsx)(l.d, {
       label: "Setting (Redesign)",
       placeholder: "Select a setting",
-      value: module,
+      value: e,
       onChange: e => p.setState({
         setting: e
       }),
       options: f,
-      popoutLayerContext: Chunk246992.O$
-    }), (0, Chunk54381.jsx)(Chunk668339.d, {
+      popoutLayerContext: u.O$
+    }), (0, a.jsx)(l.d, {
       label: "Setting Section (Legacy)",
-      value: exports,
+      value: t,
       onChange: e => p.setState({
         section: e
       }),
       options: h,
-      popoutLayerContext: Chunk246992.O$
-    }), (0, Chunk54381.jsx)(Chunk481060.oil, {
+      popoutLayerContext: u.O$
+    }), (0, a.jsx)(s.oil, {
       label: "Setting Subsection (Legacy)",
       placeholder: "Type a subsection...",
       onChange: e => p.setState({
         subsection: e
       })
-    }), (0, Chunk54381.jsx)(Chunk793030.zxk, {
+    }), (0, a.jsx)(i.zxk, {
       variant: "primary",
-      onClick: Chunk972959,
+      onClick: o,
       text: "Open User Settings"
     })]
   })

@@ -45,10 +45,10 @@ function u(e) {
 class d extends(r = Chunk442837.ZP.Store) {
   initialize() {}
   shouldShowPopup() {
-    return l.show && l.entrypoint === Chunk827498._b.TEXT
+    return l.show && l.entrypoint === o._b.TEXT
   }
   shouldShowModal() {
-    return l.show && l.entrypoint === Chunk827498._b.VOICE
+    return l.show && l.entrypoint === o._b.VOICE
   }
   entrypoint() {
     return l.entrypoint
@@ -61,7 +61,7 @@ class d extends(r = Chunk442837.ZP.Store) {
   }
   activeChannelId() {
     var e;
-    return null != (e = l.activeChannelId) ? module : null
+    return null != (e = l.activeChannelId) ? e : null
   }
   closeReason() {
     return l.closeReason
@@ -73,13 +73,13 @@ class d extends(r = Chunk442837.ZP.Store) {
 
 function f() {
   u({
-    closeReason: Chunk827498.ti.DISMISSED
+    closeReason: o.ti.DISMISSED
   })
 }
 
 function p() {
   u({
-    closeReason: Chunk827498.ti.COMMAND
+    closeReason: o.ti.COMMAND
   })
 }
 s(d, "displayName", "AppLauncherStore");

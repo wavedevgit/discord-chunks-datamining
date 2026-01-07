@@ -76,8 +76,8 @@ function P(e, t) {
 }
 
 function R() {
-  let e = Chunk752048.Z.getUserAffinities().slice(0, 4).map(e => b.default.getUser(e.otherUserId)).filter(e => null != e),
-    t = Chunk165630.Z.affinities.slice(0, 3).map(e => {
+  let e = p.Z.getUserAffinities().slice(0, 4).map(e => b.default.getUser(e.otherUserId)).filter(e => null != e),
+    t = g.Z.affinities.slice(0, 3).map(e => {
       let t = E.Z.getGuild(e.guildId);
       return i()(null != t, "Guild must exist"), {
         guild: (0, v.yS)(P(A({}, t), {
@@ -87,12 +87,12 @@ function R() {
         numVoiceMinutes: 409516.21576666617
       }
     }),
-    n = Chunk339085.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(0, 5).map(e => ({
+    n = u.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(0, 5).map(e => ({
       id: e.id,
       name: "surrogates" in e ? e.surrogates : e.name,
       animated: e.animated
     })),
-    r = Chunk812206.Z._getAllApplications().slice(0, 5).map(e => ({
+    r = c.Z._getAllApplications().slice(0, 5).map(e => ({
       game: {
         id: e.id,
         name: e.name,
@@ -125,31 +125,31 @@ function R() {
       numCompleted: 164,
       numOrbs: 122690
     },
-    users: module.slice(1, 4),
+    users: e.slice(1, 4),
     sidekick: {
-      user: module[0],
+      user: e[0],
       numMessagesSent: 0x9eb1f6,
       numVoiceMinutes: 2741198.975133333
     },
     guilds: {
-      guilds: exports,
+      guilds: t,
       numGuildsJoined: 203
     },
     emojis: {
-      emojis: require,
+      emojis: n,
       numEmojisSent: 0x21414c9c
     },
     applications: {
-      applications: Chunk512722,
+      applications: r,
       totalGamesPlayed: 4278
     }
   }
 }
 async function w() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  if (Chunk570140.Z.dispatch({
+  if (o.Z.dispatch({
       type: "CHECKPOINT_FETCH_START"
-    }), module) {
+    }), e) {
     let {
       users: e,
       guilds: t,
@@ -163,20 +163,20 @@ async function w() {
       sidekick: u,
       quests: d
     } = R();
-    Chunk570140.Z.dispatch({
+    o.Z.dispatch({
       type: "CHECKPOINT_FETCH_SUCCESS",
       data: {
         cardId: i,
-        powerLevel: Chunk544891,
-        powerLevelPercentile: Chunk493683,
-        messages: Chunk904245,
-        emojis: require,
-        voice: Chunk812206,
-        guilds: exports,
-        users: module,
-        applications: Chunk512722,
-        quests: Chunk957730,
-        sidekick: Chunk339085
+        powerLevel: a,
+        powerLevelPercentile: s,
+        messages: l,
+        emojis: n,
+        voice: c,
+        guilds: t,
+        users: e,
+        applications: r,
+        quests: d,
+        sidekick: u
       }
     });
     return
@@ -185,7 +185,7 @@ async function w() {
     var t, n, r, i, s, l, c, u;
     let {
       body: e
-    } = await Chunk544891.tn.get({
+    } = await a.tn.get({
       url: "/checkpoint",
       rejectWithError: true
     }), {
@@ -201,66 +201,66 @@ async function w() {
       applications: T,
       quests: C,
       avatar_decoration: N
-    } = module;
-    Chunk570140.Z.dispatch({
+    } = e;
+    o.Z.dispatch({
       type: "CHECKPOINT_FETCH_SUCCESS",
       data: {
-        cardId: Chunk957730,
-        powerLevel: Chunk987509,
-        powerLevelPercentile: Chunk752048,
-        messages: null != Chunk592125 ? {
-          numMessagesSent: Chunk592125.num_messages_sent,
-          numMessagesSentPercentile: Chunk592125.num_messages_sent_percentile,
+        cardId: d,
+        powerLevel: f,
+        powerLevelPercentile: p,
+        messages: null != m ? {
+          numMessagesSent: m.num_messages_sent,
+          numMessagesSentPercentile: m.num_messages_sent_percentile,
           topMonth: {
-            month: null != (s = null == (t = Chunk592125.top_month) ? true : exports.month) ? Chunk493683 : 1,
-            numMessagesSent: null != (l = null == (n = Chunk592125.top_month) ? true : require.num_messages_sent) ? Chunk904245 : 0
+            month: null != (s = null == (t = m.top_month) ? true : t.month) ? s : 1,
+            numMessagesSent: null != (l = null == (n = m.top_month) ? true : n.num_messages_sent) ? l : 0
           }
         } : true,
-        emojis: null != Chunk165630 ? {
-          emojis: Chunk165630.emojis.map(e => P(A({}, e), {
+        emojis: null != g ? {
+          emojis: g.emojis.map(e => P(A({}, e), {
             id: S.default.isProbablyAValidSnowflake(e.id) ? e.id : true
           })),
-          numEmojisSent: Chunk165630.num_emojis_sent
+          numEmojisSent: g.num_emojis_sent
         } : true,
-        voice: null != Chunk594174 ? {
-          totalVoiceMinutes: Chunk594174.total_voice_minutes,
-          totalVoiceMinutesPercentile: Chunk594174.total_voice_minutes_percentile,
+        voice: null != b ? {
+          totalVoiceMinutes: b.total_voice_minutes,
+          totalVoiceMinutesPercentile: b.total_voice_minutes_percentile,
           topMonth: {
-            month: null != (c = null == (r = Chunk594174.top_month) ? true : Chunk512722.month) ? Chunk812206 : 1,
-            numMinutesInVoice: null != (u = null == (i = Chunk594174.top_month) ? true : i.num_minutes_in_voice) ? Chunk339085 : 0
+            month: null != (c = null == (r = b.top_month) ? true : r.month) ? c : 1,
+            numMinutesInVoice: null != (u = null == (i = b.top_month) ? true : i.num_minutes_in_voice) ? u : 0
           }
         } : true,
-        guilds: null != Chunk626135 ? {
-          guilds: Chunk626135.guilds.map(e => ({
+        guilds: null != y ? {
+          guilds: y.guilds.map(e => ({
             numMessagesSent: e.num_messages_sent,
             numVoiceMinutes: e.num_voice_minutes,
             guild: (0, v.wD)(e.guild, E.Z.getGuild(e.guild.id))
           })),
-          numGuildsJoined: Chunk626135.num_guilds_joined
+          numGuildsJoined: y.num_guilds_joined
         } : true,
-        users: null != Chunk823379 ? Chunk823379.map(e => {
+        users: null != O ? O.map(e => {
           let {
             user: t
           } = e;
           return new _.Z(t)
         }) : true,
-        applications: null != Chunk981631 ? {
-          applications: Chunk981631.applications.map(e => ({
+        applications: null != T ? {
+          applications: T.applications.map(e => ({
             game: P(A({}, (0, h.m)(e.game)), {
               coverImageHash: e.game.cover_image_hash
             }),
             numDaysPlayed: e.num_sessions
           })),
-          totalGamesPlayed: Chunk981631.total_games_played
+          totalGamesPlayed: T.total_games_played
         } : true,
         quests: null != C ? {
           numCompleted: C.num_completed,
           numOrbs: C.num_orbs
         } : true,
-        sidekick: null != Chunk612776 ? {
-          numMessagesSent: Chunk612776.num_messages_sent,
-          numVoiceMinutes: Chunk612776.num_voice_minutes,
-          user: new Chunk598077.Z(Chunk612776.user)
+        sidekick: null != I ? {
+          numMessagesSent: I.num_messages_sent,
+          numVoiceMinutes: I.num_voice_minutes,
+          user: new _.Z(I.user)
         } : true,
         avatarDecoration: null != N ? {
           type: N.type,
@@ -271,7 +271,7 @@ async function w() {
       }
     })
   } catch (e) {
-    Chunk570140.Z.dispatch({
+    o.Z.dispatch({
       type: "CHECKPOINT_FETCH_FAILED"
     })
   }
@@ -310,7 +310,7 @@ async function x(e, t) {
 }
 async function L() {
   try {
-    return await Chunk544891.tn.post({
+    return await a.tn.post({
       url: "/checkpoint/loot",
       rejectWithError: true
     })
@@ -325,7 +325,7 @@ function j(e) {
 }
 
 function M() {
-  return Chunk570140.Z.dispatch({
+  return o.Z.dispatch({
     type: "CHECKPOINT_TOGGLE_MUTE"
   })
 }
@@ -338,13 +338,13 @@ function k(e) {
 }
 
 function U() {
-  return Chunk570140.Z.dispatch({
+  return o.Z.dispatch({
     type: "CHECKPOINT_AFTER_CLOSED"
   })
 }
 
 function G() {
-  return Chunk570140.Z.dispatch({
+  return o.Z.dispatch({
     type: "CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER"
   })
 }

@@ -14,13 +14,13 @@ function n(e, t, r) {
 async function i() {
   if (null != a) return a;
   try {
-    let e = (await require.e("35770").then(require.bind(require, 152989))).default;
-    return a = await module({
+    let e = (await r.e("35770").then(r.bind(r, 152989))).default;
+    return a = await e({
       locateFile: e => e.endsWith(".wasm") ? new URL(r(432362), r.b).href : e
     })
   } catch (t) {
     let e = Error("WebP module failed to load. Ensure webp_wasm.js and webp_wasm.wasm are built and available.");
-    throw module.cause = exports, module
+    throw e.cause = t, e
   }
 }
 async function o(e) {

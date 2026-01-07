@@ -8,6 +8,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk721935 = require("./721935.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.k4)(Chunk313789.n.CHAT_EMBEDS_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.PWZOn4),
-  buildLayout: () => [Chunk721935.N]
+  useTitle: () => u.intl.string(u.t.PWZOn4),
+  buildLayout: () => [s.N]
 })

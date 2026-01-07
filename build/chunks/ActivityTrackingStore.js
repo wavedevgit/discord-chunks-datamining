@@ -36,9 +36,9 @@ function P(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > I + C && (r = 0);
-  let i = (0, h.OT)(e.applicationId, _.Z),
+  let i = (0, m.OT)(e.applicationId, _.Z),
     l = O.Z.getVoiceChannelId(),
-    a = m.default.getSessionId(),
+    a = h.default.getSessionId(),
     c = E.Z.getMediaSessionId();
   u.Z.updateActivity({
     applicationId: e.applicationId,
@@ -58,32 +58,32 @@ function P(e) {
 
 function x() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-    t = Chunk594190.ZP.getVisibleRunningGames(),
+    t = p.ZP.getVisibleRunningGames(),
     n = new Set;
   for (let {
       name: e,
       distributor: r,
       exePath: i
     }
-    of exports) {
-    let t = Chunk77498.Z.getGameByName(module);
-    null != exports && (require.add(exports.id), exports.id in S || P({
-      applicationId: exports.id,
+    of t) {
+    let t = b.Z.getGameByName(e);
+    null != t && (n.add(t.id), t.id in S || P({
+      applicationId: t.id,
       updatedAt: Date.now(),
       distributor: r,
-      exePath: (0, Chunk581567.N6)(null != i ? i : "")
+      exePath: (0, d.N6)(null != i ? i : "")
     }))
   }
-  for (let t of Object.keys(S)) require.has(exports) || j(S[exports], module)
+  for (let t of Object.keys(S)) n.has(t) || j(S[t], e)
 }
 
 function A() {
-  for (let e of Object.keys(S)) j(S[module]);
+  for (let e of Object.keys(S)) j(S[e]);
   N = false
 }
 class Z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk77498.Z, Chunk283595.Z, Chunk19780.Z, Chunk594190.ZP, Chunk944486.Z, Chunk581883.Z), this.syncWith([Chunk581883.Z], x)
+    this.waitFor(h.default, b.Z, _.Z, E.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], x)
   }
   getActivities() {
     return S
@@ -97,7 +97,7 @@ class Z extends(i = Chunk442837.ZP.Store) {
   RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (N) returnfalse;
-    for (let e of Object.keys(S)) P(S[module]);
+    for (let e of Object.keys(S)) P(S[e]);
     x(false), N = true
   },
   CONNECTION_CLOSED: function(e) {

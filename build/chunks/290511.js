@@ -91,7 +91,7 @@ function I(e) {
 function T() {
   return {
     id: String(Date.now()),
-    title: Chunk388032.intl.string(Chunk388032.t.vY91C9),
+    title: s.intl.string(s.t.vY91C9),
     options: [],
     singleSelect: false,
     required: false,

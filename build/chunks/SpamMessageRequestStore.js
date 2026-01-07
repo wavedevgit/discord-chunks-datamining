@@ -29,7 +29,7 @@ function u(e) {
 }
 
 function d() {
-  o.clear(), s.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
+  o.clear(), s.clear(), Object.values(r.Z.getMutablePrivateChannels()).forEach(e => {
     u(e)
   }), l = true
 }
@@ -63,11 +63,11 @@ function m(e) {
 }
 class h extends Chunk750041.Z {
   initialize() {
-    this.waitFor(Chunk592125.Z)
+    this.waitFor(r.Z)
   }
   loadCache() {
     let e = this.readSnapshot(h.LATEST_SNAPSHOT_VERSION);
-    null != module && (o = new Set(module))
+    null != e && (o = new Set(e))
   }
   takeSnapshot() {
     return {

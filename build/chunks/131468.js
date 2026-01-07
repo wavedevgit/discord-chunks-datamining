@@ -18,10 +18,10 @@ function o(e, t, n) {
 }
 class s extends Chunk317770.Z {
   _initialize() {
-    __OVERLAY__ || (Chunk570140.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleSoundboardSoundReceived), Chunk570140.Z.subscribe("GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", this._handleSoundboardSoundPlayLocally), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened))
+    __OVERLAY__ || (r.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleSoundboardSoundReceived), r.Z.subscribe("GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", this._handleSoundboardSoundPlayLocally), r.Z.subscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect), r.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened))
   }
   _terminate() {
-    __OVERLAY__ || (Chunk570140.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleSoundboardSoundReceived), Chunk570140.Z.unsubscribe("GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", this._handleSoundboardSoundPlayLocally), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect), Chunk570140.Z.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened))
+    __OVERLAY__ || (r.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", this._handleSoundboardSoundReceived), r.Z.unsubscribe("GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", this._handleSoundboardSoundPlayLocally), r.Z.unsubscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect), r.Z.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened))
   }
   constructor(...e) {
     super(...e), o(this, "_playSound", function(e) {

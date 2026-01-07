@@ -19,11 +19,11 @@ function d() {
 
 function f() {
   d();
-  let e = Chunk979651.Z.getAllVoiceStates(),
+  let e = o.Z.getAllVoiceStates(),
     t = false;
-  for (let n of Object.values(module))
-    for (let e of Object.values(require)) null != module.channelId && (t = m(module.channelId, module.userId) || exports);
-  return exports
+  for (let n of Object.values(e))
+    for (let e of Object.values(n)) null != e.channelId && (t = m(e.channelId, e.userId) || t);
+  return t
 }
 
 function p(e) {
@@ -58,7 +58,7 @@ function m(e, t) {
 }
 class h extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(Chunk699516.Z, Chunk979651.Z)
+    this.waitFor(a.Z, o.Z)
   }
   getBlockedUsersForVoiceChannel(e) {
     var t;

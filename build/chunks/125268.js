@@ -102,7 +102,7 @@ function g(e) {
 }
 
 function v() {
-  Chunk570140.Z.dispatch({
+  l.Z.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })
 }

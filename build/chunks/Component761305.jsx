@@ -30,14 +30,14 @@ function _(e, t, n) {
 Chunk442837.ZP.initialize();
 class E extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
-    let e = (0, Chunk129293.Z)(this.props.location),
-      t = (0, Chunk593473.parse)(this.props.location.search);
-    Chunk544891.tn.post({
-      url: Chunk981631.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+    let e = (0, f.Z)(this.props.location),
+      t = (0, a.parse)(this.props.location.search);
+    o.tn.post({
+      url: m.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
       body: {
-        token: module,
-        pixel_uuid: exports.hash,
-        guild_id: exports.guild_id
+        token: e,
+        pixel_uuid: t.hash,
+        guild_id: t.guild_id
       },
       oldFormErrors: true,
       rejectWithError: true
@@ -55,11 +55,11 @@ class E extends(r = Chunk473749.PureComponent) {
     }, () => this.setState({
       success: false,
       busy: false
-    })), (0, Chunk108427.e)("disable_server_highlight_notifications")
+    })), (0, u.e)("disable_server_highlight_notifications")
   }
   renderBusy() {
-    return (0, Chunk54381.jsx)(Chunk388905.ZP, {
-      children: (0, Chunk54381.jsx)(Chunk388905.Hh, {})
+    return (0, i.jsx)(g.ZP, {
+      children: (0, i.jsx)(g.Hh, {})
     })
   }
   renderSuccess() {
@@ -69,27 +69,27 @@ class E extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       guild: n
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk478411.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.Z33eiP)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.format(Chunk388032.t.NRWtfC, {
-          guildName: require.name
+    return (0, i.jsxs)(g.ZP, {
+      children: [(0, i.jsx)(g.Dx, {
+        className: x.marginBottom8,
+        children: p.intl.string(p.t.Z33eiP)
+      }), (0, i.jsx)(g.DK, {
+        children: p.intl.format(p.t.NRWtfC, {
+          guildName: n.name
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk478411.marginTop40,
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-          text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+      }), (0, i.jsx)("div", {
+        className: x.marginTop40,
+        children: (0, i.jsx)(c.Button, {
+          text: p.intl.string(p.t.fIv16B),
           fullWidth: true,
-          onClick: () => exports(module)
+          onClick: () => t(e)
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk478411.marginTop8,
-        children: (0, Chunk54381.jsx)(Chunk481060.Avr, {
-          text: Chunk388032.intl.string(Chunk388032.t["cGmT/J"]),
+      }), (0, i.jsx)("div", {
+        className: x.marginTop8,
+        children: (0, i.jsx)(c.Avr, {
+          text: p.intl.string(p.t["cGmT/J"]),
           onClick: () => {
-            exports(Chunk981631.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(require.id))
+            t(m.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
           }
         })
       })]
@@ -100,21 +100,21 @@ class E extends(r = Chunk473749.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
-        src: require("./105020.js"),
-        className: Chunk478411.marginBottom20
-      }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk478411.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["/dcuR5"])
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk478411.marginTop40,
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-          text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+    return (0, i.jsxs)(g.ZP, {
+      children: [(0, i.jsx)(g.Ee, {
+        src: n(105020),
+        className: x.marginBottom20
+      }), (0, i.jsx)(g.Dx, {
+        className: x.marginBottom8,
+        children: p.intl.string(p.t.ox9hIS)
+      }), (0, i.jsx)(g.DK, {
+        children: p.intl.string(p.t["/dcuR5"])
+      }), (0, i.jsx)("div", {
+        className: x.marginTop40,
+        children: (0, i.jsx)(c.Button, {
+          text: p.intl.string(p.t.fIv16B),
           fullWidth: true,
-          onClick: () => exports(module)
+          onClick: () => t(e)
         })
       })]
     })
@@ -124,7 +124,7 @@ class E extends(r = Chunk473749.PureComponent) {
       busy: e,
       success: t
     } = this.state;
-    return module ? this.renderBusy() : exports ? this.renderSuccess() : this.renderError()
+    return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
     super(...e), _(this, "state", {
@@ -138,5 +138,5 @@ _(E, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let v = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
-  defaultRoute: Chunk896797.Z.defaultRoute
+  defaultRoute: d.Z.defaultRoute
 }))(E)

@@ -23,11 +23,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk231338 = require("./231338.js");
 let O = {
   init() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleRequiredAction), Chunk570140.Z.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), Chunk570140.Z.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), Chunk314897.default.addChangeListener(this.handleAuthenticationStoreChanged)
+    l.Z.subscribe("CONNECTION_OPEN", this.handleRequiredAction), l.Z.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), l.Z.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), p.default.addChangeListener(this.handleAuthenticationStoreChanged)
   },
   handleRequiredAction(e) {
     let t = e.requiredAction;
-    !g.s.isDisallowPopupsSet() && null != f.default.getCurrentUser() && (t === m.c2C.REQUIRE_CAPTCHA || t === m.c2C.REQUIRE_VERIFIED_EMAIL || t === m.c2C.REQUIRE_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.Z.isEmailReverification(t) ? (0, s.bu)({
+    !g.s.isDisallowPopupsSet() && null != f.default.getCurrentUser() && (t === h.c2C.REQUIRE_CAPTCHA || t === h.c2C.REQUIRE_VERIFIED_EMAIL || t === h.c2C.REQUIRE_VERIFIED_PHONE || t === h.c2C.REQUIRE_REVERIFIED_PHONE || t === h.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === h.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === h.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.Z.isEmailReverification(t) ? (0, s.bu)({
       location: "verification-legacy"
     }) ? (0, a.q4)(e => {
       let {
@@ -42,7 +42,7 @@ let O = {
     }) : (0, a.q4)(() => (0, r.jsx)(d.Z, {}), {
       layerKey: _.CV,
       Layer: o.ZP
-    }) : t === m.c2C.AGREEMENTS ? (0, i.h7j)(e => (0, r.jsx)(h.default, function(e) {
+    }) : t === h.c2C.AGREEMENTS ? (0, i.h7j)(e => (0, r.jsx)(m.default, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -63,7 +63,7 @@ let O = {
       modalKey: _.f1,
       onCloseRequest: E.Vq,
       dismissable: false
-    }) : t === m.c2C.REQUIRE_SAFETY_FLOWS ? (0, a.q4)(e => {
+    }) : t === h.c2C.REQUIRE_SAFETY_FLOWS ? (0, a.q4)(e => {
       let {
         closeLayer: t
       } = e;
@@ -76,7 +76,7 @@ let O = {
     }) : null == t && ((0, a.ob)(_.CV), (0, i.nfh)(_.f1) && (0, i.Mr3)(_.f1)))
   },
   handleAuthenticationStoreChanged() {
-    null == Chunk314897.default.getId() && ((0, Chunk84615.ob)(Chunk308569.CV), (0, Chunk481060.Mr3)(Chunk308569.f1), (0, Chunk481060.Mr3)(Chunk308569.HR), (0, Chunk481060.Mr3)(Chunk308569.F0), (0, Chunk481060.Mr3)(Chunk815660.M))
+    null == p.default.getId() && ((0, a.ob)(_.CV), (0, i.Mr3)(_.f1), (0, i.Mr3)(_.HR), (0, i.Mr3)(_.F0), (0, i.Mr3)(b.M))
   },
   handleCurrentUserUpdate(e) {
     let {

@@ -10,7 +10,7 @@ var Chunk780570 = require("./780570.js"),
   Chunk998502 = require("./998502.js");
 
 function o() {
-  return (0, Chunk358085.isWindows)() && "arm64" !== Chunk998502.ZP.architecture || (0, Chunk358085.isMac)()
+  return (0, i.isWindows)() && "arm64" !== a.ZP.architecture || (0, i.isMac)()
 }
 
 function s(e) {

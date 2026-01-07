@@ -32,21 +32,21 @@ let C = ["YYYYMMDD", "YYYY-MM-DD", "LL", "L", "MMMM Do YYYY", "MMMM Do YY", "MMM
   N = [b().ISO_8601, ...C.flatMap(e => [...A.map(t => "".concat(e, " ").concat(t)), ...A])];
 
 function P() {
-  let e = Chunk706454.default.locale;
-  if ("en-US" === module) return Chunk572692;
-  if ("en-GB" === module) return Chunk572692.GB;
-  if ("de" === module) return Chunk710959;
-  if ("fr" === module) return Chunk225300;
-  if ("ja" === module) return Chunk627578;
-  else if ("nl" === module) return Chunk281861;
-  else if ("ru" === module) return Chunk49693;
-  else if ("it" === module) return Chunk192157;
-  else if ("uk" === module) return Chunk392481;
-  else if ("zh-CN" === module) return Chunk497502;
-  else if ("zh-TW" === module) return Chunk493398;
-  else if (module.startsWith("sv-")) return Chunk67924;
-  else if (module.startsWith("pt-")) return Chunk196958;
-  else if (module.startsWith("es-")) return Chunk635852;
+  let e = v.default.locale;
+  if ("en-US" === e) return a;
+  if ("en-GB" === e) return a.GB;
+  if ("de" === e) return o;
+  if ("fr" === e) return s;
+  if ("ja" === e) return l;
+  else if ("nl" === e) return c;
+  else if ("ru" === e) return u;
+  else if ("it" === e) return d;
+  else if ("uk" === e) return f;
+  else if ("zh-CN" === e) return p;
+  else if ("zh-TW" === e) return _;
+  else if (e.startsWith("sv-")) return m;
+  else if (e.startsWith("pt-")) return h;
+  else if (e.startsWith("es-")) return g;
   else return null
 }
 

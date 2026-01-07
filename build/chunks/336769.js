@@ -3,5 +3,5 @@
 "use strict";
 module.exports = !require("./779688.js")(function() {
   function t() {}
-  return module.prototype.constructor = null, Object.getPrototypeOf(new module) !== module.prototype
+  return t.prototype.constructor = null, Object.getPrototypeOf(new t) !== t.prototype
 })

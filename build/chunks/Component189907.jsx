@@ -54,11 +54,11 @@ class p extends(r = Chunk473749.PureComponent) {
       onMouseEnter: n,
       onMouseLeave: r
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: s()(Chunk190995.card, exports),
-      onMouseEnter: require,
+    return (0, i.jsx)("div", {
+      className: s()(c.card, t),
+      onMouseEnter: n,
       onMouseLeave: r,
-      children: module
+      children: e
     })
   }
 }

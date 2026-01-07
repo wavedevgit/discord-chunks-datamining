@@ -74,14 +74,14 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
   N = () => {
     let {
       elementsAppearanceOptions: e
-    } = (0, Chunk476365.M)();
-    return (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    } = (0, l.M)();
+    return (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        className: Chunk570810.headerWithSpacing,
+        className: g.headerWithSpacing,
         children: "Default Options"
-      }), (0, Chunk54381.jsx)("div", {
-        children: Object.entries(module).map(e => {
+      }), (0, r.jsx)("div", {
+        children: Object.entries(e).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(p.T, {
             label: t,

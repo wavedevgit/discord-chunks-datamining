@@ -109,6 +109,6 @@ function O(e) {
 }
 async function v() {
   var e;
-  let t = new E((null != (e = await h.getAvailableDictionaries()) ? module : []).map(g).filter(Chunk823379.lm));
-  return y(exports), exports
+  let t = new E((null != (e = await h.getAvailableDictionaries()) ? e : []).map(g).filter(u.lm));
+  return y(t), t
 }

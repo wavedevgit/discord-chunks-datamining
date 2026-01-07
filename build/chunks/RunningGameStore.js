@@ -251,41 +251,41 @@ function eC(e) {
 function eA() {
   if (ee.length > 0) {
     let e = en;
-    en = ee[0], null != module && en.pid === module.pid ? en.start = module.start : en.start = Date.now()
+    en = ee[0], null != e && en.pid === e.pid ? en.start = e.start : en.start = Date.now()
   } else en = null;
   let e = [];
-  for (let t of ee) exports.pid in ep || (ep[exports.pid] = exports, module.push(exports));
+  for (let t of ee) t.pid in ep || (ep[t.pid] = t, e.push(t));
   let t = [];
-  for (let e of Object.values(ep)) ee.some(t => t.pid === e.pid) || (exports.push(module), delete ep[module.pid]);
-  (module.length > 0 || exports.length > 0) && (B.info("Running Games Changed", {
+  for (let e of Object.values(ep)) ee.some(t => t.pid === e.pid) || (t.push(e), delete ep[e.pid]);
+  (e.length > 0 || t.length > 0) && (B.info("Running Games Changed", {
     runningGames: ee,
-    added: module,
-    removed: exports,
+    added: e,
+    removed: t,
     previousGames: ep
-  }), Chunk570140.Z.dispatch({
+  }), d.Z.dispatch({
     type: "RUNNING_GAMES_CHANGE",
     games: ee,
-    added: module,
-    removed: exports
+    added: e,
+    removed: t
   }))
 }
 
 function eN() {
   er = et.length > 0 ? et[0] : null;
   let e = [];
-  for (let t of et) exports.pid in e_ || (e_[exports.pid] = exports, module.push(exports));
+  for (let t of et) t.pid in e_ || (e_[t.pid] = t, e.push(t));
   let t = [];
-  for (let e of Object.values(e_)) et.some(t => t.pid === e.pid) || (exports.push(module), delete e_[module.pid]);
-  (module.length > 0 || exports.length > 0) && (B.info("Running Non-Games Changed", {
+  for (let e of Object.values(e_)) et.some(t => t.pid === e.pid) || (t.push(e), delete e_[e.pid]);
+  (e.length > 0 || t.length > 0) && (B.info("Running Non-Games Changed", {
     runningNonGames: et,
-    added: module,
-    removed: exports,
+    added: e,
+    removed: t,
     previousNonGames: e_
-  }), Chunk570140.Z.dispatch({
+  }), d.Z.dispatch({
     type: "RUNNING_NON_GAMES_CHANGE",
     nonGames: et,
-    added: module,
-    removed: exports
+    added: e,
+    removed: t
   }))
 }
 
@@ -404,7 +404,7 @@ function ej(e) {
 }
 
 function eM() {
-  Chunk433517.K.set(V, es)
+  u.K.set(V, es)
 }
 
 function ek(e, t, n, r) {
@@ -428,7 +428,7 @@ function eU(e) {
 
 function eG() {
   let e = false;
-  return J = o().values(Chunk283595.Z.libraryApplications).reduce((t, n) => {
+  return J = o().values(T.Z.libraryApplications).reduce((t, n) => {
     let r = I.Z.getDetectableGame(n.id);
     if (null == r) return t;
     for (let i of C.Z.getLaunchOptions(n.id, n.branchId)) {
@@ -447,13 +447,13 @@ function eG() {
       })
     }
     return t
-  }, []), module && eZ(), module
+  }, []), e && eZ(), e
 }
 
 function eZ() {
-  if (!__OVERLAY__ && Chunk358085.isPlatformEmbedded) {
+  if (!__OVERLAY__ && w.isPlatformEmbedded) {
     let e = [...J, ...o().values(es.gameOverrides)];
-    Chunk998502.ZP.setGameCandidateOverrides(module)
+    D.ZP.setGameCandidateOverrides(e)
   }
 }
 
@@ -490,7 +490,7 @@ function eB(e) {
 
 function eV() {
   let e = o().values(es.gameOverrides);
-  return es.gamesSeen.filter(e => true === es.gameOverrides[eP(e)]).concat(module)
+  return es.gamesSeen.filter(e => true === es.gameOverrides[eP(e)]).concat(e)
 }
 
 function eH(e, t) {
@@ -634,7 +634,7 @@ function e6(e) {
 }
 
 function e7() {
-  Chunk353926.Z.hasLoadedExperiments && W.length > 0 && (eB(W), W = [])
+  h.Z.hasLoadedExperiments && W.length > 0 && (eB(W), W = [])
 }
 
 function e9(e) {
@@ -644,25 +644,25 @@ function e9(e) {
   } = e;
   for (let e of n) Q[e] = t
 }!__OVERLAY__ && ((0, Chunk358085.isDesktop)() || Chunk987650.iP) && (el = function() {
-  if (!Chunk77498.Z.hasAttemptedFetch || !Chunk569675.Z.hasAttemptedFetch) returnfalse;
+  if (!I.Z.hasAttemptedFetch || !j.Z.hasAttemptedFetch) returnfalse;
   let e = [],
     t = new Set;
   r = {};
-  let n = Chunk77498.Z.games,
-    i = Chunk569675.Z.nonGames,
-    a = (0, Chunk145597.supportsOutOfProcess)();
-  for (let e of require) {
+  let n = I.Z.games,
+    i = j.Z.nonGames,
+    a = (0, x.supportsOutOfProcess)();
+  for (let e of n) {
     var o, s, l, c;
-    let t = ew(module),
-      n = Chunk392711 && !exports || Chunk593472.r.enabledOOP,
-      r = null != (o = module.overlay) ? o : Chunk593472.r.enabled;
-    ec[module.id] = {
-      compatibilityHook: null != (s = module.overlayCompatibilityHook) ? Chunk913527 : Chunk593472.r.compatibilityHook,
-      warn: null != (l = module.overlayWarn) ? l : Chunk593472.r.warn,
+    let t = ew(e),
+      n = a && !t || f.r.enabledOOP,
+      r = null != (o = e.overlay) ? o : f.r.enabled;
+    ec[e.id] = {
+      compatibilityHook: null != (s = e.overlayCompatibilityHook) ? s : f.r.compatibilityHook,
+      warn: null != (l = e.overlayWarn) ? l : f.r.warn,
       enabled: r,
-      enabledOOP: require,
-      allowHook: null != (c = module.hook) ? Chunk442837 : Chunk593472.r.allowHook,
-      supportsOutOfProcessOverlay: module.supportsOutOfProcessOverlay
+      enabledOOP: n,
+      allowHook: null != (c = e.hook) ? c : f.r.allowHook,
+      supportsOutOfProcessOverlay: e.supportsOutOfProcessOverlay
     }
   }
   let u = new Set;
@@ -671,7 +671,7 @@ function e9(e) {
     (null != (t = e.executables) ? t : []).forEach(e => {
       u.add(e.name.toLowerCase())
     })
-  }), [...[...require, ...i].filter(e => {
+  }), [...[...n, ...i].filter(e => {
     var t;
     return !(null != (t = e.executables) ? t : []).some(e => eb.has(e.name.toLowerCase()))
   }), ...K].forEach(n => {
@@ -701,7 +701,7 @@ function e9(e) {
         thirdPartySkus: t
       })
     }
-  }), e = module.filter(e => null != e.executables && e.executables.length > 0 || null != e.thirdPartySkus && e.thirdPartySkus.length > 0), Chunk998502.ZP.setObservedGamesCallback(module, true, e => {
+  }), e = e.filter(e => null != e.executables && e.executables.length > 0 || null != e.thirdPartySkus && e.thirdPartySkus.length > 0), D.ZP.setObservedGamesCallback(e, true, e => {
     let n = [],
       i = {},
       a = [];
@@ -711,7 +711,7 @@ function e9(e) {
       type: "RUNNING_STREAMER_TOOLS_CHANGE",
       count: eu
     })), ee = e, et = a, ei = n, r = i, eA(), eN()
-  }), eZ(), Chunk998502.ZP.setGameDetectionCallback((e, t) => {
+  }), eZ(), D.ZP.setGameDetectionCallback((e, t) => {
     if (e.length === t.length)
       for (let [a, o] of e.entries()) {
         var n, r, i;
@@ -746,12 +746,12 @@ function e9(e) {
           game_metadata_v2: (0, S.sD)(e)
         })
       }
-  }), Chunk998502.ZP.setGameDetectionErrorCallback((e, t, n, r, i) => {})
+  }), D.ZP.setGameDetectionErrorCallback((e, t, n, r, i) => {})
 });
 class te extends(i = Chunk442837.ZP.Store) {
   initialize() {
     var e, t, n, r, i;
-    let a = null != (e = Chunk433517.K.get(V)) ? module : {
+    let a = null != (e = u.K.get(V)) ? e : {
       gamesSeen: [],
       gameOverrides: {},
       enableOverlay: {},
@@ -760,12 +760,12 @@ class te extends(i = Chunk442837.ZP.Store) {
     };
     es.gameOverrides = {};
     let s = false;
-    if (o().values(null != (t = Chunk392711.gameOverrides) ? exports : {}).forEach(e => {
+    if (o().values(null != (t = a.gameOverrides) ? t : {}).forEach(e => {
         let t = eP(e);
         (0, S.le)(e) || (es.gameOverrides[t] = e)
-      }), es.enableOverlay = null != (n = Chunk392711.enableOverlay) ? require : {}, es.enableOverlayV3 = null != (r = Chunk392711.enableOverlayV3) ? r : {}, es.enableDetection = null != (i = Chunk392711.enableDetection) ? i : {}, eZ(), Array.isArray(Chunk392711.gamesSeen))
-      for (let e of Chunk392711.gamesSeen) "number" == typeof module.id && (module.nativeProcessObserverId = module.id, delete module.id, s = true);
-    this.waitFor(Chunk417363.Z, Chunk353926.Z, Chunk77498.Z, Chunk283595.Z, Chunk569675.Z), W = Chunk392711.gamesSeen.filter(e => !(0, S.le)(e)), this.syncWith([Chunk353926.Z], e7), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(eG, 1e3)), Chunk913527 && eM()
+      }), es.enableOverlay = null != (n = a.enableOverlay) ? n : {}, es.enableOverlayV3 = null != (r = a.enableOverlayV3) ? r : {}, es.enableDetection = null != (i = a.enableDetection) ? i : {}, eZ(), Array.isArray(a.gamesSeen))
+      for (let e of a.gamesSeen) "number" == typeof e.id && (e.nativeProcessObserverId = e.id, delete e.id, s = true);
+    this.waitFor(C.Z, h.Z, I.Z, T.Z, j.Z), W = a.gamesSeen.filter(e => !(0, S.le)(e)), this.syncWith([h.Z], e7), this.syncWith([T.Z, I.Z, C.Z], o().throttle(eG, 1e3)), s && eM()
   }
   getVisibleGame() {
     return null == en || ej(en) ? en : null
@@ -787,11 +787,11 @@ class te extends(i = Chunk442837.ZP.Store) {
   }
   getRunningDiscordApplicationIds() {
     let e = [];
-    for (let t of ee) null != ea[exports.exePath] && module.push(ea[exports.exePath]);
-    return module
+    for (let t of ee) null != ea[t.exePath] && e.push(ea[t.exePath]);
+    return e
   }
   getRunningVerifiedApplicationIds() {
-    return this.getRunningGames().map(e => I.Z.getGameByName(e.name)).filter(Chunk823379.lm).map(e => e.id)
+    return this.getRunningGames().map(e => I.Z.getGameByName(e.name)).filter(R.lm).map(e => e.id)
   }
   getGameForPID(e) {
     var t;

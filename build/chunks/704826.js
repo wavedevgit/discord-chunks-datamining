@@ -67,10 +67,10 @@ Chunk518187("replace", function(e, t, n) {
   }]
 }, !!Chunk621523(function() {
   var e = /./;
-  return module.exec = function() {
+  return e.exec = function() {
     var e = [];
-    return module.groups = {
+    return e.groups = {
       a: "7"
-    }, module
-  }, "7" !== "".replace(module, "$<a>")
+    }, e
+  }, "7" !== "".replace(e, "$<a>")
 }) || !A || N)

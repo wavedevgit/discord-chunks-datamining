@@ -23,19 +23,19 @@ var s = function(e) {
 class l extends Chunk47770.Z {
   destroy() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    this.removeAllListeners(), this.destroyStreams(module)
+    this.removeAllListeners(), this.destroyStreams(e)
   }
   destroyStreams() {
     var e, t;
     let n = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    this.audio.destroy(), this.video.destroy(), require ? null == (e = this.desktop) || module.reuse() : null == (t = this.desktop) || exports.destroy()
+    this.audio.destroy(), this.video.destroy(), n ? null == (e = this.desktop) || e.reuse() : null == (t = this.desktop) || t.destroy()
   }
   setDesktop(e) {
     this.destroyStreams(), null == e || e.addListener("desktopsourceend", this.handleDesktopSourceEnd), null == e || e.addListener("speaking", this.handleSpeaking), this.desktop = e, this.mergeStreams()
   }
   reset() {
     var e;
-    this.audio.reset(), null == (e = this.desktop) || module.reset()
+    this.audio.reset(), null == (e = this.desktop) || e.reset()
   }
   getVideoStream() {
     return null != this.desktop ? this.desktop.stream : this.video.stream

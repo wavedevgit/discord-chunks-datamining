@@ -14,7 +14,7 @@ class r {
   }
   clone() {
     let e = new this.constructor(this.key);
-    return module.value = this.value, module.level = this.level, module.hasChildNodes = this.hasChildNodes, module.rendered = this.rendered, module.textValue = this.textValue, module["aria-label"] = this["aria-label"], module.index = this.index, module.parentKey = this.parentKey, module.prevKey = this.prevKey, module.nextKey = this.nextKey, module.firstChildKey = this.firstChildKey, module.lastChildKey = this.lastChildKey, module.props = this.props, module.render = this.render, module.colSpan = this.colSpan, module.colIndex = this.colIndex, module
+    return e.value = this.value, e.level = this.level, e.hasChildNodes = this.hasChildNodes, e.rendered = this.rendered, e.textValue = this.textValue, e["aria-label"] = this["aria-label"], e.index = this.index, e.parentKey = this.parentKey, e.prevKey = this.prevKey, e.nextKey = this.nextKey, e.firstChildKey = this.firstChildKey, e.lastChildKey = this.lastChildKey, e.props = this.props, e.render = this.render, e.colSpan = this.colSpan, e.colIndex = this.colIndex, e
   }
   filter(e, t, n) {
     let r = this.clone();
@@ -63,7 +63,7 @@ class c {
     return this.keyMap.keys()
   }*[Symbol.iterator]() {
     let e = null != this.firstKey ? this.keyMap.get(this.firstKey) : true;
-    for (; module;) yield module, e = null != module.nextKey ? this.keyMap.get(module.nextKey) : true
+    for (; e;) yield e, e = null != e.nextKey ? this.keyMap.get(e.nextKey) : true
   }
   getChildren(e) {
     let t = this.keyMap;
@@ -103,8 +103,8 @@ class c {
     var e;
     let t = null != this.lastKey ? this.keyMap.get(this.lastKey) : null;
     for (;
-      (null == exports ? true : exports.lastChildKey) != null;) t = this.keyMap.get(exports.lastChildKey);
-    return null != (e = null == exports ? true : exports.key) ? module : null
+      (null == t ? true : t.lastChildKey) != null;) t = this.keyMap.get(t.lastChildKey);
+    return null != (e = null == t ? true : t.key) ? e : null
   }
   getItem(e) {
     var t;
@@ -115,7 +115,7 @@ class c {
   }
   clone() {
     let e = new this.constructor;
-    return module.keyMap = new Map(this.keyMap), module.firstKey = this.firstKey, module.lastKey = this.lastKey, module.itemCount = this.itemCount, module
+    return e.keyMap = new Map(this.keyMap), e.firstKey = this.firstKey, e.lastKey = this.lastKey, e.itemCount = this.itemCount, e
   }
   addNode(e) {
     if (this.frozen) throw Error("Cannot add a node to a frozen collection");

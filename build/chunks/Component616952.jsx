@@ -15,13 +15,13 @@ function o() {
   let {
     required: e,
     checked: t
-  } = (0, Chunk882037.MD)();
-  return module ? (0, Chunk54381.jsx)("div", {
-    className: Chunk478411.marginTop8,
-    children: (0, Chunk54381.jsx)(Chunk793030.Cnq, {
-      label: Chunk388032.intl.string(Chunk388032.t["0p3R0+"]),
-      checked: exports,
-      onChange: Chunk882037.ZJ,
+  } = (0, s.MD)();
+  return e ? (0, r.jsx)("div", {
+    className: l.marginTop8,
+    children: (0, r.jsx)(i.Cnq, {
+      label: a.intl.string(a.t["0p3R0+"]),
+      checked: t,
+      onChange: s.ZJ,
       labelType: "secondary"
     })
   }) : null

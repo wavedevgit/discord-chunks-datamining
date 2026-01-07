@@ -4,8 +4,8 @@
 var t = function() {
   for (var e, t = [], n = 0; n < 256; n++) {
     e = n;
-    for (var r = 0; r < 8; r++) e = 1 & module ? 0xedb88320 ^ module >>> 1 : module >>> 1;
-    t[n] = module
+    for (var r = 0; r < 8; r++) e = 1 & e ? 0xedb88320 ^ e >>> 1 : e >>> 1;
+    t[n] = e
   }
   return t
 }();

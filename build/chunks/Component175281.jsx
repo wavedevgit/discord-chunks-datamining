@@ -35,10 +35,10 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 let _ = {
-  UP: u().throttle(() => (0, Chunk460181.GN)("ddr-up"), 100),
-  DOWN: u().throttle(() => (0, Chunk460181.GN)("ddr-down"), 100),
-  LEFT: u().throttle(() => (0, Chunk460181.GN)("ddr-left"), 100),
-  RIGHT: u().throttle(() => (0, Chunk460181.GN)("ddr-right"), 100)
+  UP: u().throttle(() => (0, O.GN)("ddr-up"), 100),
+  DOWN: u().throttle(() => (0, O.GN)("ddr-down"), 100),
+  LEFT: u().throttle(() => (0, O.GN)("ddr-left"), 100),
+  RIGHT: u().throttle(() => (0, O.GN)("ddr-right"), 100)
 };
 
 function I(e) {
@@ -69,9 +69,9 @@ function N(e) {
 }
 
 function Z() {
-  let e = Chunk473749.useMemo(() => u()((0, Chunk612226.Rv)()).groupBy(e => e.group).value(), []);
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk107388.keyboardShortcutList,
+  let e = i.useMemo(() => u()((0, g.Rv)()).groupBy(e => e.group).value(), []);
+  return (0, r.jsx)("div", {
+    className: E.keyboardShortcutList,
     children: P.map(t => {
       let n = e[t],
         i = (0, g.UD)(t),
@@ -112,14 +112,14 @@ function Z() {
 }
 class w extends Chunk473749.PureComponent {
   componentDidMount() {
-    this.lastInputedKeys = [], Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
+    this.lastInputedKeys = [], v.S.subscribe(C.CkL.SCROLL_PAGE_UP, this.scrollPageUp), v.S.subscribe(C.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
     }), window.addEventListener("keyup", this.handleKeyUp, {
       capture: true
     })
   }
   componentWillUnmount() {
-    Chunk585483.S.unsubscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.unsubscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
+    v.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, this.scrollPageUp), v.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
       capture: true
     }), window.removeEventListener("keyup", this.handleKeyUp, {
       capture: true
@@ -132,48 +132,48 @@ class w extends Chunk473749.PureComponent {
       LEFT: n,
       RIGHT: i
     } = this.state;
-    return (0, Chunk54381.jsxs)(Chunk748780.Z.div, {
-      className: Chunk107388.keyboardShortcutsModal,
+    return (0, r.jsxs)(d.Z.div, {
+      className: E.keyboardShortcutsModal,
       style: this.getStyles(),
-      children: [(0, Chunk54381.jsxs)(Chunk481060.H, {
-        className: Chunk107388.modalTitle,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk107388.content,
-          children: Chunk388032.intl.string(Chunk388032.t["1BdUtx"])
-        }), (0, Chunk54381.jsx)(Chunk481060.M2$, {
+      children: [(0, r.jsxs)(p.H, {
+        className: E.modalTitle,
+        children: [(0, r.jsx)("div", {
+          className: E.content,
+          children: x.intl.string(x.t["1BdUtx"])
+        }), (0, r.jsx)(p.M2$, {
           shortcut: "mod+/"
         })]
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk107388.modalSubtitle,
-        children: Chunk388032.intl.string(Chunk388032.t["2t19lU"])
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk107388.ddrArrows,
-        children: [(0, Chunk54381.jsx)(T, {
+      }), (0, r.jsx)("div", {
+        className: E.modalSubtitle,
+        children: x.intl.string(x.t["2t19lU"])
+      }), (0, r.jsxs)("div", {
+        className: E.ddrArrows,
+        children: [(0, r.jsx)(T, {
           arrow: "LEFT",
-          isActive: require,
-          className: Chunk107388.left,
+          isActive: n,
+          className: E.left,
           children: "left"
-        }), (0, Chunk54381.jsx)(T, {
+        }), (0, r.jsx)(T, {
           arrow: "DOWN",
-          isActive: exports,
-          className: Chunk107388.down,
+          isActive: t,
+          className: E.down,
           children: "down"
-        }), (0, Chunk54381.jsx)(T, {
+        }), (0, r.jsx)(T, {
           arrow: "UP",
-          isActive: module,
-          className: Chunk107388.up,
+          isActive: e,
+          className: E.up,
           children: "up"
-        }), (0, Chunk54381.jsx)(T, {
+        }), (0, r.jsx)(T, {
           arrow: "RIGHT",
-          isActive: Chunk473749,
-          className: Chunk107388.right,
+          isActive: i,
+          className: E.right,
           children: "right"
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.yWw, {
+      }), (0, r.jsx)(p.yWw, {
         ref: this.scrollerRef,
         fade: true,
-        children: (0, Chunk54381.jsx)(Chunk481060.y5t, {
-          children: (0, Chunk54381.jsx)(Z, {})
+        children: (0, r.jsx)(p.y5t, {
+          children: (0, r.jsx)(Z, {})
         })
       })]
     })

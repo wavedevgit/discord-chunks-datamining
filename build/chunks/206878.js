@@ -104,7 +104,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || b(r, e, n, a)
   }, v = () => {
-    let [e, t] = Chunk473749.useState(false), [n, c] = Chunk473749.useState({}), [d, u] = Chunk473749.useState({}), m = Chunk473749.useCallback(function(e) {
+    let [e, t] = a.useState(false), [n, c] = a.useState({}), [d, u] = a.useState({}), m = a.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       u(n => {
         var a;
@@ -113,7 +113,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           [e]: [...r, ...t]
         })
       })
-    }, []), p = Chunk473749.useCallback(function(e) {
+    }, []), p = a.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       c(n => {
         var a;
@@ -122,14 +122,14 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           [e]: [...r, ...t]
         })
       })
-    }, []), v = Chunk473749.useCallback(() => {
-      exports(false), u({}), c({})
+    }, []), v = a.useCallback(() => {
+      t(false), u({}), c({})
     }, []);
     return {
-      validationComplete: module,
+      validationComplete: e,
       errors: d,
-      warnings: require,
-      validateShopAssetPackage: Chunk473749.useCallback(async e => {
+      warnings: n,
+      validateShopAssetPackage: a.useCallback(async e => {
         try {
           var n;
           if (0 === e.length) return void m("No files found");

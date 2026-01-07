@@ -41,14 +41,14 @@ class v extends(r = Chunk473749.PureComponent) {
       renderCustomTitle: o,
       renderCustomMedia: s,
       isEmbed: l
-    } = this.props, c = Chunk86357 ? Chunk568836.$G : Chunk345898.Z;
-    return (0, Chunk54381.jsx)(Chunk54936, {
+    } = this.props, c = l ? h.$G : g.Z;
+    return (0, i.jsx)(c, {
       className: r,
       renderMedia: null != s ? s : this.renderMedia,
-      renderTitle: null != Chunk120356 ? Chunk120356 : () => module.name,
-      renderTagline: null != Chunk473749 ? Chunk473749 : () => exports.tagline,
+      renderTitle: null != o ? o : () => e.name,
+      renderTagline: null != a ? a : () => t.tagline,
       renderActions: this.renderActions,
-      isHorizontal: require
+      isHorizontal: n
     })
   }
   constructor(...e) {

@@ -57,7 +57,7 @@ function N(e, t) {
 }
 
 function I() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_RESET"
   })
 }

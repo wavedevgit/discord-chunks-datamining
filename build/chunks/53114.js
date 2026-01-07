@@ -71,7 +71,7 @@ class y extends Chunk47770.Z {
     this.statCollectionPausedUsers.delete(e)
   }
   start() {
-    this.streamStart = this.timestampProducer.now(), this.connection.on(Chunk46973.Sh.Stats, this.sampleStats)
+    this.streamStart = this.timestampProducer.now(), this.connection.on(s.Sh.Stats, this.sampleStats)
   }
   setOutboundSsrc(e) {
     null == this.outboundStats[e] && (this.outboundStats[e] = new p.nt(this.timestampProducer))
@@ -110,7 +110,7 @@ class y extends Chunk47770.Z {
     })
   }
   stop() {
-    this.connection.off(Chunk46973.Sh.Stats, this.sampleStats), this.streamEnd = this.timestampProducer.now(), this.removeAllListeners()
+    this.connection.off(s.Sh.Stats, this.sampleStats), this.streamEnd = this.timestampProducer.now(), this.removeAllListeners()
   }
   setViewedSimulcastQuality(e) {
     e !== this.hqSimulcastStreamWatched.value && (this.hqSimulcastStreamWatched.totalDuration() > 0 || this.lqSimulcastStreamWatched.totalDuration() > 0) && this.simulcastQualityChanges++, this.hqSimulcastStreamWatched.value = e, this.lqSimulcastStreamWatched.value = !e
@@ -125,23 +125,23 @@ class y extends Chunk47770.Z {
     let e = new Map;
     for (let t in this.outboundStats) {
       let n = new Map;
-      for (let r of this.outboundStats[exports].getCodecsUsed()) {
-        let i = Chunk392711.toUpperCase();
-        require.set(i, E(this.outboundStats[exports].codecBuckets[i])), module.set(parseInt(exports), require)
+      for (let r of this.outboundStats[t].getCodecsUsed()) {
+        let i = r.toUpperCase();
+        n.set(i, E(this.outboundStats[t].codecBuckets[i])), e.set(parseInt(t), n)
       }
     }
-    return module
+    return e
   }
   getDecoderUsageStats() {
     let e = new Map;
     for (let t in this.inboundStats) {
       let n = new Map;
-      for (let r of this.inboundStats[exports].getCodecsUsed()) {
-        let i = Chunk392711.toUpperCase();
-        require.set(i, E(this.inboundStats[exports].codecBuckets[i])), module.set(exports, require)
+      for (let r of this.inboundStats[t].getCodecsUsed()) {
+        let i = r.toUpperCase();
+        n.set(i, E(this.inboundStats[t].codecBuckets[i])), e.set(t, n)
       }
     }
-    return module
+    return e
   }
   getCodecUsageStats(e, t) {
     var n, r, i, a, o, s, l, c, u, d, f, _;
@@ -272,7 +272,7 @@ class y extends Chunk47770.Z {
         duration_encoder_wmf_hw: E(t.encoderBuckets[p.Su.WMF_HW]),
         duration_encoder_wmf_direct3d: E(t.encoderBuckets[p.Su.WMF_DIRECT_3D])
       }))
-    }), module
+    }), e
   }
   getInboundStats(e) {
     return this.getStats(this.inboundStats[e])
@@ -281,7 +281,7 @@ class y extends Chunk47770.Z {
     delete this.inboundStats[e]
   }
   getInboundParticipants() {
-    return Chunk709054.default.keys(this.inboundStats)
+    return u.default.keys(this.inboundStats)
   }
   updateSendState(e) {
     null != e.paused && (this.paused.value = e.paused), null != e.receivers && (this.zeroReceivers.value = 0 === e.receivers);
@@ -504,8 +504,8 @@ class y extends Chunk47770.Z {
     }), 0 !== d.size && 0 !== f.size && ((0, a.O)(d, f) ? this.symmetricCodecUpdates++ : this.asymmetricCodecUpdates++)
   }
   updateSystemResourceStats() {
-    for (let e in this.outboundStats) this.outboundStats[module].addSystemResources();
-    for (let e in this.inboundStats) this.inboundStats[module].addSystemResources()
+    for (let e in this.outboundStats) this.outboundStats[e].addSystemResources();
+    for (let e in this.inboundStats) this.inboundStats[e].addSystemResources()
   }
   updateVideoEffectStats(e) {
     let t = null == e ? true : e.rtp.outbound.find(e => "video" === e.type);

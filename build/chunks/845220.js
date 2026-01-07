@@ -8,6 +8,6 @@ var Chunk593473 = require("./593473.js");
 let i = () => {
   let {
     load_id: e
-  } = (0, Chunk593473.parse)(window.location.search);
-  return Array.isArray(module) ? module[0] : module
+  } = (0, r.parse)(window.location.search);
+  return Array.isArray(e) ? e[0] : e
 }

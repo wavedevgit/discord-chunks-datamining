@@ -67,16 +67,16 @@ function w(e, t) {
 let L = [];
 
 function R() {
-  Chunk529103.Z.transitionToSection(Chunk981631.pJs.ADD_FRIEND, {
+  o.Z.transitionToSection(j.pJs.ADD_FRIEND, {
     explicit: true
   })
 }
 
 function D() {
-  (0, Chunk481060.ZDy)(async () => {
+  (0, a.ZDy)(async () => {
     let {
       default: e
-    } = await require.e("36312").then(require.bind(require, 153932));
+    } = await n.e("36312").then(n.bind(n, 153932));
     return t => (0, r.jsx)(e, Z({}, t))
   })
 }
@@ -185,7 +185,7 @@ let k = function(e) {
             let e = [];
             return Q.forEach(t => {
               t.giftIntentType === P.hX.FRIEND_ANNIVERSARY && e.push(t)
-            }), e.sort((e, t) => m.Z.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, h.nN), Q]
+            }), e.sort((e, t) => h.Z.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, m.nN), Q]
           }
         default:
           return [Q]
@@ -253,7 +253,7 @@ let k = function(e) {
         })
       }, i)
     }, [ee, R, t, en, er]),
-    ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > h.nN ? (0, r.jsx)("div", {
+    ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > m.nN ? (0, r.jsx)("div", {
       className: A.sectionFooter,
       children: (0, r.jsx)(a.Button, {
         icon: F ? a.u04 : a.CJ0,

@@ -18,18 +18,18 @@ let g = false,
   I = [];
 
 function p() {
-  g = false, f = null, I = [], N = false, null != (f = Chunk999382.Z.getGuildId()) && Chunk999382.Z.getSection() === Chunk981631.pNK.ONBOARDING && (h = Chunk45966.Z.getOnboardingPrompts(f), N = Chunk45966.Z.isAdvancedMode(f))
+  g = false, f = null, I = [], N = false, null != (f = d.Z.getGuildId()) && d.Z.getSection() === u.pNK.ONBOARDING && (h = c.Z.getOnboardingPrompts(f), N = c.Z.isAdvancedMode(f))
 }
 class O extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk999382.Z, Chunk45966.Z)
+    this.waitFor(d.Z, c.Z)
   }
   hasChanges() {
-    return null != f && !s().isEqual(Chunk45966.Z.getOnboardingPrompts(f), h)
+    return null != f && !s().isEqual(c.Z.getOnboardingPrompts(f), h)
   }
   getChangedPrompts() {
     if (null == f) return [];
-    let e = Chunk45966.Z.getOnboardingPrompts(f);
+    let e = c.Z.getOnboardingPrompts(f);
     return h.filter(t => {
       let n = e.find(e => e.id === t.id);
       return null == n || !s().isEqual(t, n)

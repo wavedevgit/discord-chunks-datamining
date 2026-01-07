@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk981631 = require("./981631.js");
 
 function i() {
-  return Chunk981631.pNK.PROFILE
+  return r.pNK.PROFILE
 }

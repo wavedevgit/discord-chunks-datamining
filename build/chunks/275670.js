@@ -24,21 +24,21 @@ var o = function() {
       value: function() {
         var t = this.spec,
           n = this.monitor;
-        return !module.canDrop || module.canDrop(exports.getItem(), exports)
+        return !t.canDrop || t.canDrop(n.getItem(), n)
       }
     }, {
       key: "hover",
       value: function() {
         var t = this.spec,
           n = this.monitor;
-        module.hover && module.hover(exports.getItem(), exports)
+        t.hover && t.hover(n.getItem(), n)
       }
     }, {
       key: "drop",
       value: function() {
         var t = this.spec,
           n = this.monitor;
-        if (module.drop) return module.drop(exports.getItem(), exports)
+        if (t.drop) return t.drop(n.getItem(), n)
       }
     }],
     function(t, n) {
@@ -46,5 +46,5 @@ var o = function() {
         var r = n[e];
         r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(t, r.key, r)
       }
-    }(exports.prototype, module), exports
+    }(n.prototype, t), n
 }()

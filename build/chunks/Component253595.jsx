@@ -21,7 +21,7 @@ let g = (0, Chunk972959.H)(() => ({
   isDisabled: false
 }));
 async function I() {
-  await (0, Chunk710808.xI)({
+  await (0, E.xI)({
     onUploadStart: () => g.setState({
       isUploading: true
     }),
@@ -32,45 +32,45 @@ async function I() {
   })
 }
 let N = (0, Chunk509613.ON)(Chunk313789.n.VOICE_AND_VIDEO_DEBUG_LOGGING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["726JHL"]), Chunk388032.intl.string(Chunk388032.t.EbwFfR), Chunk388032.intl.string(Chunk388032.t.nuPtYi)],
+  useSearchTerms: () => [_.intl.string(_.t["726JHL"]), _.intl.string(_.t.EbwFfR), _.intl.string(_.t.nuPtYi)],
   usePredicate: function() {
-    let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.DEBUG_LOGGING));
-    return Chunk818710.FB && module && null != Chunk579806.Z.fileManager.readLogFiles
+    let t = (0, r.e7)([S.Z], () => S.Z.supports(d.AN.DEBUG_LOGGING));
+    return s.FB && t && null != a.Z.fileManager.readLogFiles
   },
   Component: function() {
-    let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getDebugLogging()),
+    let t = (0, r.e7)([S.Z], () => S.Z.getDebugLogging()),
       e = g.useField("isUploading"),
       n = g.useField("isDisabled"),
-      s = Chunk473749.useId();
-    return (0, Chunk54381.jsxs)("fieldset", {
-      children: [(0, Chunk54381.jsx)(Chunk793030.nn4, {
+      s = l.useId();
+    return (0, i.jsxs)("fieldset", {
+      children: [(0, i.jsx)(u.nn4, {
         tag: "legend",
-        id: Chunk818710,
-        children: Chunk388032.intl.string(Chunk388032.t["FjN+et"])
-      }), (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
+        id: s,
+        children: _.intl.string(_.t["FjN+et"])
+      }), (0, i.jsxs)(u.Kqy, {
         direction: "vertical",
         gap: 4,
-        children: [(0, Chunk54381.jsx)(Chunk793030.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["726JHL"]),
-          description: Chunk388032.intl.string(Chunk388032.t["/7ak9Q"]),
-          checked: module,
-          onChange: Chunk710808.rT
-        }), (0, Chunk54381.jsx)("div", {
+        children: [(0, i.jsx)(u.rsf, {
+          label: _.intl.string(_.t["726JHL"]),
+          description: _.intl.string(_.t["/7ak9Q"]),
+          checked: t,
+          onChange: E.rT
+        }), (0, i.jsx)("div", {
           role: "group",
-          "aria-labelledby": Chunk818710,
-          children: (0, Chunk54381.jsxs)(Chunk793030.hE2, {
-            children: [(0, Chunk54381.jsx)(Chunk793030.zxk, {
+          "aria-labelledby": s,
+          children: (0, i.jsxs)(u.hE2, {
+            children: [(0, i.jsx)(u.zxk, {
               variant: "secondary",
-              text: Chunk388032.intl.string(Chunk388032.t.EbwFfR),
+              text: _.intl.string(_.t.EbwFfR),
               onClick: I,
-              loading: exports,
-              disabled: require,
-              "aria-label": Chunk388032.intl.string(Chunk388032.t.aY1OH2)
-            }), (0, Chunk54381.jsx)(Chunk793030.zxk, {
+              loading: e,
+              disabled: n,
+              "aria-label": _.intl.string(_.t.aY1OH2)
+            }), (0, i.jsx)(u.zxk, {
               variant: "secondary",
-              text: Chunk388032.intl.string(Chunk388032.t.nuPtYi),
-              onClick: Chunk710808.W2,
-              "aria-label": Chunk388032.intl.string(Chunk388032.t["L/hFOe"])
+              text: _.intl.string(_.t.nuPtYi),
+              onClick: E.W2,
+              "aria-label": _.intl.string(_.t["L/hFOe"])
             })]
           })
         })]

@@ -60,15 +60,15 @@ let S = e => {
       children: [d, " ", f]
     })
   },
-  I = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk904256.settingsSparkleStar1
-    }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk904256.settingsSparkleStar2
-    }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk904256.settingsSparkleStar3
-    }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk904256.settingsSparkleStar4
+  I = () => (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(f.A, {
+      className: v.settingsSparkleStar1
+    }), (0, r.jsx)(f.A, {
+      className: v.settingsSparkleStar2
+    }), (0, r.jsx)(f.A, {
+      className: v.settingsSparkleStar3
+    }), (0, r.jsx)(f.A, {
+      className: v.settingsSparkleStar4
     })]
   }),
   T = (e, t) => {

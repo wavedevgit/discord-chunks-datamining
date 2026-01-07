@@ -158,6 +158,6 @@ function O(e, t) {
 }
 
 function x() {
-  let e = Chunk473749.useContext(b);
-  return a()(null != module, "[useForumPostComposerStore] Context should not be null"), module
+  let e = i.useContext(b);
+  return a()(null != e, "[useForumPostComposerStore] Context should not be null"), e
 }

@@ -152,13 +152,13 @@ class I extends Chunk473749.PureComponent {
       renderLazy: e,
       renderWindow: t
     } = this.props;
-    if (exports.addEventListener("resize", this.closeResize, true), Chunk585483.S.subscribe(Chunk981631.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu), null != module) {
+    if (t.addEventListener("resize", this.closeResize, true), h.S.subscribe(g.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu), null != e) {
       let t = setTimeout(() => {
         this.setState({
-          render: () => (0, Chunk54381.jsx)(Chunk481060.TlX, {})
+          render: () => (0, r.jsx)(c.TlX, {})
         })
       }, 300);
-      module().then(e => {
+      e().then(e => {
         this.setState({
           render: e
         }), clearTimeout(t)
@@ -178,7 +178,7 @@ class I extends Chunk473749.PureComponent {
     let {
       renderWindow: e
     } = this.props;
-    module.removeEventListener("resize", this.closeResize, true), Chunk585483.S.unsubscribe(Chunk981631.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
+    e.removeEventListener("resize", this.closeResize, true), h.S.unsubscribe(g.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
   }
   render() {
     var e, t, n;
@@ -190,17 +190,17 @@ class I extends Chunk473749.PureComponent {
       config: l,
       rect: c,
       renderWindow: u
-    } = this.props, d = null != (t = this.state.render) ? exports : this.props.render;
-    return Chunk762328 && null != Chunk481060 && null != Chunk682973 && null != Chunk990547 && null != Chunk213609 && Chunk682973.context === Chunk473749 && (null == (e = Chunk990547.ownerDocument) ? true : module.defaultView) === Chunk239091 ? (0, Chunk54381.jsx)(S, {
-      target: Chunk990547,
-      rect: Chunk481060,
+    } = this.props, d = null != (t = this.state.render) ? t : this.props.render;
+    return o && null != c && null != l && null != a && null != d && l.context === i && (null == (e = a.ownerDocument) ? true : e.defaultView) === u ? (0, r.jsx)(S, {
+      target: a,
+      rect: c,
       close: this.close,
-      onUnmount: Chunk682973.onClose,
-      align: Chunk682973.align,
-      position: Chunk682973.position,
-      impressionName: Chunk682973.impressionName,
-      impressionProperties: Chunk682973.impressionProperties,
-      disableClickTrap: null != (n = Chunk682973.disableClickTrap) && require,
+      onUnmount: l.onClose,
+      align: l.align,
+      position: l.position,
+      impressionName: l.impressionName,
+      impressionProperties: l.impressionProperties,
+      disableClickTrap: null != (n = l.disableClickTrap) && n,
       children: (e, t) => {
         let {
           position: n
@@ -239,20 +239,20 @@ function T() {
     contextMenu: e,
     version: t,
     isOpen: n
-  } = (0, Chunk442837.cj)([Chunk574254.Z], () => ({
-    contextMenu: Chunk574254.Z.getContextMenu(),
-    version: Chunk574254.Z.version,
-    isOpen: Chunk574254.Z.isOpen()
-  })), a = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
+  } = (0, s.cj)([m.Z], () => ({
+    contextMenu: m.Z.getContextMenu(),
+    version: m.Z.version,
+    isOpen: m.Z.isOpen()
+  })), a = (0, s.e7)([_.Z], () => _.Z.theme), {
     appContext: o,
     renderWindow: l
-  } = Chunk473749.useContext(Chunk728285.ZP);
-  return (0, Chunk54381.jsx)(I, O(b({
-    appContext: Chunk762328,
-    renderWindow: Chunk682973
-  }, module), {
-    isOpen: require,
-    theme: Chunk990547,
-    closeContextMenu: Chunk239091.Zy
-  }), exports)
+  } = i.useContext(p.ZP);
+  return (0, r.jsx)(I, O(b({
+    appContext: o,
+    renderWindow: l
+  }, e), {
+    isOpen: n,
+    theme: a,
+    closeContextMenu: u.Zy
+  }), t)
 }

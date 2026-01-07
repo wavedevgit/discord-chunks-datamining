@@ -14,14 +14,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk335094 = require("./335094.js");
 
 function u() {
-  return (0, Chunk54381.jsx)(Chunk481060.M14, {
+  return (0, r.jsx)(i.M14, {
     type: "warning",
-    children: (0, Chunk54381.jsxs)(Chunk481060.Text, {
+    children: (0, r.jsxs)(i.Text, {
       variant: "text-sm/normal",
-      children: [Chunk388032.intl.format(Chunk388032.t.pdYZyg, {}), " ", "", (0, Chunk54381.jsx)(Chunk690221.Z, {
-        className: Chunk335094.noticeTextButton,
-        onClick: () => (0, Chunk303172.Z)(Chunk801461.Kq.USER_SETTINGS),
-        children: Chunk388032.intl.string(Chunk388032.t.LhlgY9)
+      children: [l.intl.format(l.t.pdYZyg, {}), " ", "", (0, r.jsx)(a.Z, {
+        className: c.noticeTextButton,
+        onClick: () => (0, o.Z)(s.Kq.USER_SETTINGS),
+        children: l.intl.string(l.t.LhlgY9)
       })]
     })
   })

@@ -77,37 +77,37 @@ class E extends Chunk473749.PureComponent {
   updateCache() {
     var e, t;
     let n = this.contentRef.current;
-    if (null == require || !(0, Chunk374470.kK)(require, HTMLElement)) return;
+    if (null == n || !(0, c.kK)(n, HTMLElement)) return;
     let {
       offsetWidth: i,
       offsetHeight: r
-    } = require, l = {
-      offsetX: (this.props.targetWidth - Chunk54381) / 2,
-      offsetY: (this.props.targetHeight - Chunk473749) / 2
+    } = n, l = {
+      offsetX: (this.props.targetWidth - i) / 2,
+      offsetY: (this.props.targetHeight - r) / 2
     };
     switch (this.props.position) {
       case "left":
-        Chunk120356.offsetX = -Chunk54381;
+        l.offsetX = -i;
         break;
       case "right":
-        Chunk120356.offsetX = this.props.targetWidth;
+        l.offsetX = this.props.targetWidth;
         break;
       case "bottom":
-        Chunk120356.offsetY = this.props.targetHeight;
+        l.offsetY = this.props.targetHeight;
         break;
       default:
-        Chunk120356.offsetY = -Chunk473749
+        l.offsetY = -r
     }
-    Chunk120356.offsetX += null != (e = this.props.offset.x) ? module : 0, Chunk120356.offsetY += null != (t = this.props.offset.y) ? exports : 0, this.setState(Chunk120356)
+    l.offsetX += null != (e = this.props.offset.x) ? e : 0, l.offsetY += null != (t = this.props.offset.y) ? t : 0, this.setState(l)
   }
   handleSkipTips() {
-    Chunk260300.Z.suppressAll()
+    p.Z.suppressAll()
   }
   getTutorialPopoutText() {
     let {
       tutorialId: e
     } = this.props;
-    return (0, Chunk232495.k)(module)
+    return (0, b.k)(e)
   }
   render() {
     let {
@@ -115,22 +115,22 @@ class E extends Chunk473749.PureComponent {
       autoInvert: t,
       focused: n,
       origin: r
-    } = this.props, l = (0, Chunk21825.S)(module);
-    if (null == Chunk120356) return null;
+    } = this.props, l = (0, g.S)(e);
+    if (null == l) return null;
     let {
       media: o,
       textAlign: s,
       isLongText: c,
       highPriority: u,
       spacing: p,
-      arrowAlignment: f = Chunk350707.cy.TOP,
+      arrowAlignment: f = m.cy.TOP,
       popoutPosition: h
-    } = Chunk120356, {
+    } = l, {
       offsetX: b,
       offsetY: C
     } = this.state, v = {
-      left: null != Chunk232495 ? Chunk473749.x + Chunk232495 : true,
-      top: null != Chunk10401 ? Chunk473749.y + Chunk10401 : true
+      left: null != b ? r.x + b : true,
+      top: null != C ? r.y + C : true
     }, E = e => {
       let t = n && !e;
       return {
@@ -139,16 +139,16 @@ class E extends Chunk473749.PureComponent {
         [y.highPriority]: u
       }
     }, j = this.getTutorialPopoutText();
-    return (0, Chunk54381.jsx)(Chunk350707.ZP, O(x({
+    return (0, i.jsx)(m.ZP, O(x({
       innerRef: this.contentRef,
-      position: Chunk451478,
-      renderMedia: Chunk512722,
+      position: h,
+      renderMedia: o,
       textAlign: s,
-      spacing: Chunk260300,
-      isLongText: Chunk374470,
-      uniqueId: module,
-      autoInvert: exports,
-      arrowAlignment: Chunk819640,
+      spacing: p,
+      isLongText: c,
+      uniqueId: e,
+      autoInvert: t,
+      arrowAlignment: f,
       onSkipAll: this.handleSkipTips,
       onComplete: this.handleDismiss
     }, j), {
@@ -202,14 +202,14 @@ let j = 12633 == require.j ? function() {
     tutorialData: t,
     windowFocused: n,
     shouldShowAny: r
-  } = (0, Chunk442837.cj)([Chunk10401.Z, Chunk451478.Z, Chunk819640.Z], () => ({
-    indicators: Chunk10401.Z.getIndicators(),
-    tutorialData: Chunk10401.Z.getData(),
-    shouldShowAny: Chunk10401.Z.shouldShowAnyIndicators() && !Chunk819640.Z.hasLayers(),
-    windowFocused: Chunk451478.Z.isFocused()
+  } = (0, u.cj)([C.Z, h.Z, f.Z], () => ({
+    indicators: C.Z.getIndicators(),
+    tutorialData: C.Z.getData(),
+    shouldShowAny: C.Z.shouldShowAnyIndicators() && !f.Z.hasLayers(),
+    windowFocused: h.Z.isFocused()
   }));
-  return Chunk473749 ? (0, Chunk54381.jsx)(Chunk54381.Fragment, {
-    children: Object.entries(module).map(e => {
+  return r ? (0, i.jsx)(i.Fragment, {
+    children: Object.entries(e).map(e => {
       let [r, l] = e, a = t[r];
       return s()(null != a, "Missing tutorial definition for ".concat(r)), (0, i.jsx)(E, x({
         tutorialId: r,

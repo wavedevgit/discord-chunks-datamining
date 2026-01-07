@@ -37,17 +37,17 @@ let f = 10,
   p = 20 * Chunk70956.Z.Millis.SECOND,
   _ = {
     getActiveErrors: () => {
-      let e = Chunk19780.Z.getRTCConnection();
-      if (null == module) return null;
-      let t = module.getMediaEngineConnectionId();
-      if (null == exports || !Chunk131951.Z.isVideoEnabled()) return null;
-      let n = Chunk19780.Z.getLastNonZeroRemoteVideoSinkWantsTime();
-      if (null != require && performance.now() - require < p || !module.hasActiveRemoteWants()) return null;
-      let o = (0, Chunk150457.hj)(exports, Chunk314897.default.getId());
-      return null == Chunk70956 ? null : Chunk70956.short.frameRate < f || Chunk70956.long.frameRate < f ? [d({
-        type: Chunk458725.u.CAMERA_SEND_LOW_FPS,
-        userId: Chunk314897.default.getId()
-      }, (0, Chunk442741.Y9)())] : true
+      let e = a.Z.getRTCConnection();
+      if (null == e) return null;
+      let t = e.getMediaEngineConnectionId();
+      if (null == t || !i.Z.isVideoEnabled()) return null;
+      let n = a.Z.getLastNonZeroRemoteVideoSinkWantsTime();
+      if (null != n && performance.now() - n < p || !e.hasActiveRemoteWants()) return null;
+      let o = (0, c.hj)(t, r.default.getId());
+      return null == o ? null : o.short.frameRate < f || o.long.frameRate < f ? [d({
+        type: s.u.CAMERA_SEND_LOW_FPS,
+        userId: r.default.getId()
+      }, (0, l.Y9)())] : true
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId)
   }

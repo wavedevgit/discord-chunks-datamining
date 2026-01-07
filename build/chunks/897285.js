@@ -45,7 +45,7 @@ class p extends Chunk147913.Z {
     return f(e)
   }
   async handleConnectionOpen() {
-    c.clear(), u.clear(), l = {}, Chunk914010.Z.getLastSelectedGuildId()
+    c.clear(), u.clear(), l = {}, i.Z.getLastSelectedGuildId()
   }
   handleGuildUnavailable(e) {
     let {

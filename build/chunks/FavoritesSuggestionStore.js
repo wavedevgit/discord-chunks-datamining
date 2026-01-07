@@ -24,16 +24,16 @@ let u = 50,
   p = {};
 
 function _() {
-  let e = Chunk944486.Z.getChannelId();
-  if (null == module) return;
-  let t = Chunk592125.Z.getChannel(module);
-  if (null == exports || null == exports.guild_id) return;
-  let n = exports.guild_id;
-  if (null == p[module] && (p[module] = 0), exports.isThread() || Chunk9156.ZP.isOptInEnabled(require) && !Chunk9156.ZP.isChannelOrParentOptedIn(require, exports.id)) {
-    delete p[module], null != d[require] && d[require].delete(module);
+  let e = s.Z.getChannelId();
+  if (null == e) return;
+  let t = o.Z.getChannel(e);
+  if (null == t || null == t.guild_id) return;
+  let n = t.guild_id;
+  if (null == p[e] && (p[e] = 0), t.isThread() || l.ZP.isOptInEnabled(n) && !l.ZP.isChannelOrParentOptedIn(n, t.id)) {
+    delete p[e], null != d[n] && d[n].delete(e);
     return
   }
-  return (p[module]++, null == d[require] && (d[require] = new Set), Chunk9156.ZP.isFavorite(require, module)) ? void d[require].delete(module) : (null == f[require] || !f[require].has(module)) && p[module] > u ? (d[require].add(module), true) : true
+  return (p[e]++, null == d[n] && (d[n] = new Set), l.ZP.isFavorite(n, e)) ? void d[n].delete(e) : (null == f[n] || !f[n].has(e)) && p[e] > u ? (d[n].add(e), true) : true
 }
 
 function m(e) {

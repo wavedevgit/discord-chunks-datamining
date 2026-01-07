@@ -54,12 +54,12 @@ function j(e, t) {
 
 function C() {
   var e, t;
-  let [n, i] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [f, x] = (0, Chunk473749.useState)(null), C = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [n, i] = (0, r.useState)(false), [s, d] = (0, r.useState)(false), [f, x] = (0, r.useState)(null), C = (0, u.ZP)(e => e.toolsCache), {
     setToolsCache: T,
     removeToolsCache: O
-  } = (0, Chunk396821.L3)(), {
+  } = (0, u.L3)(), {
     setImgCache: N
-  } = (0, Chunk396821.W_)(), P = (0, Chunk473749.useCallback)(e => {
+  } = (0, u.W_)(), P = (0, r.useCallback)(e => {
     let t = C[e];
     null != t && x({
       src: t.url,
@@ -73,64 +73,64 @@ function C() {
       src: e,
       preview: true
     }))
-  }, [C]), w = (0, Chunk473749.useCallback)(e => {
+  }, [C]), w = (0, r.useCallback)(e => {
     x(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), I = (0, Chunk473749.useCallback)(e => {
+  }, []), I = (0, r.useCallback)(e => {
     O(e)
   }, [O]);
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk337555.controls,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk337555.toggles,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsxs)("div", {
+      className: g.controls,
+      children: [(0, a.jsxs)("div", {
+        className: g.toggles,
+        children: [(0, a.jsx)(l.Button, {
           size: "sm",
           onClick: () => {
-            Chunk594174(false), Chunk442837(e => !e)
+            d(false), i(e => !e)
           },
           variant: "secondary",
           text: "Toggle Themes"
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)(l.Button, {
           size: "sm",
           onClick: () => {
-            Chunk442837(false), Chunk594174(e => !e)
+            i(false), d(e => !e)
           },
           variant: "secondary",
           text: "Toggle Gradients"
         })]
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk337555.themePicker,
-        children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
-          selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
+      }), (0, a.jsxs)("div", {
+        className: g.themePicker,
+        children: [n && (0, a.jsx)(c.i, {}), s && (0, a.jsx)(h.Z, {
+          selected: null == f || null == (e = f.palette) ? true : e.name,
           onSelect: e => {
             (null == f ? true : f.src) != null && T(f.src, f.src, e), w(e)
           }
         })]
       })]
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk337555.main,
-      children: [(0, Chunk54381.jsx)(y, {
-        nameplate: Chunk996746
-      }, null == Chunk996746 || null == (t = Chunk996746.palette) ? true : exports.name), (0, Chunk54381.jsxs)("div", {
-        className: Chunk337555.buttons,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, a.jsxs)("div", {
+      className: g.main,
+      children: [(0, a.jsx)(y, {
+        nameplate: f
+      }, null == f || null == (t = f.palette) ? true : t.name), (0, a.jsxs)("div", {
+        className: g.buttons,
+        children: [(0, a.jsx)(l.Text, {
           variant: "text-sm/semibold",
           children: "Drag background image to screen"
-        }), (0, Chunk54381.jsx)(Chunk205822.Z, {
+        }), (0, a.jsx)(o.Z, {
           title: "upload image",
           description: "upload the background",
-          icons: Chunk731994.pA,
+          icons: b.pA,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
             N(t, t, (0, p.xh)(a)), T(t, t, m.jD)
           }
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk337555.uploadedArea,
+        }), (0, a.jsx)("div", {
+          className: g.uploadedArea,
           children: Object.values(C).map(e => {
             let {
               url: t
@@ -141,14 +141,14 @@ function C() {
               removeAsset: I
             }, t)
           })
-        }), (0, Chunk54381.jsx)(E, {
+        }), (0, a.jsx)(E, {
           label: "gradient override",
           onChange: e => w({
             name: m._j,
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, Chunk54381.jsx)(S, {
+        }), (0, a.jsx)(S, {
           label: "set",
           onClick: () => {}
         })]

@@ -53,14 +53,14 @@ function O(e) {
 }
 
 function C() {
-  return (0, Chunk54381.jsx)(O, {
-    icon: (0, Chunk54381.jsx)(Chunk481060.qJs, {
+  return (0, r.jsx)(O, {
+    icon: (0, r.jsx)(c.qJs, {
       size: "md",
       color: "currentColor",
-      className: Chunk817667.labelIcon
+      className: j.labelIcon
     }),
-    title: Chunk388032.intl.string(Chunk388032.t.d7YJMK),
-    className: Chunk817667.createLabel
+    title: x.intl.string(x.t.d7YJMK),
+    className: j.createLabel
   })
 }
 

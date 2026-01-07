@@ -8,16 +8,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js");
 
 function a() {
-  let e = Chunk473749.createContext(true);
+  let e = i.createContext(true);
 
   function t() {
-    let t = Chunk473749.useContext(module);
-    if (null == exports) throw Error("Context was used outside of defined provider.");
-    return exports
+    let t = i.useContext(e);
+    if (null == t) throw Error("Context was used outside of defined provider.");
+    return t
   }
 
   function n() {
-    let n = exports();
+    let n = t();
     return function(t) {
       let {
         children: i
@@ -28,5 +28,5 @@ function a() {
       })
     }
   }
-  return [module, exports, require]
+  return [e, t, n]
 }

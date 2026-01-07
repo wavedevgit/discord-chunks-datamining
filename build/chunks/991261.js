@@ -45,7 +45,7 @@ i.prototype.add = function(e, t) {
   return this.locks[this.locks.length - 1]
 }, i.prototype.isActive = function() {
   var e = this.current();
-  return null != module && module.enabled
+  return null != e && e.enabled
 }, i.prototype.toggleLayer = function(e, t) {
   null != e && (e.setEnabled(t), e.enabled = t)
 }, i.prototype.subscribe = function(e) {
@@ -98,10 +98,10 @@ function u(e) {
   }, [t]), n
 }
 var d = (0, Chunk473749.memo)(function() {
-  var e = (0, Chunk473749.useState)(false),
-    t = module[0];
-  return l(module[1]), (0, Chunk473749.createElement)("div", {
-    tabIndex: exports ? 0 : true,
+  var e = (0, r.useState)(false),
+    t = e[0];
+  return l(e[1]), (0, r.createElement)("div", {
+    tabIndex: t ? 0 : true,
     style: {
       position: "fixed",
       opacity: 0,

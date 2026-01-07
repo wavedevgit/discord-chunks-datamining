@@ -28,5 +28,5 @@ function i() {
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }

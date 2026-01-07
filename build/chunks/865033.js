@@ -12,13 +12,13 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 class c extends Chunk317770.Z {
   isEnabled() {
-    return (0, Chunk358085.isDesktop)() && (0, Chunk358085.isMac)() && !Chunk374023.s.isDiscordTestSet()
+    return (0, a.isDesktop)() && (0, a.isMac)() && !o.s.isDiscordTestSet()
   }
   _initialize() {
-    this.isEnabled() && Chunk570140.Z.subscribe("AUDIO_SET_MODE", this.handleAudioSetMode)
+    this.isEnabled() && r.Z.subscribe("AUDIO_SET_MODE", this.handleAudioSetMode)
   }
   _terminate() {
-    this.isEnabled() && Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", this.handleAudioSetMode)
+    this.isEnabled() && r.Z.unsubscribe("AUDIO_SET_MODE", this.handleAudioSetMode)
   }
   handleAudioSetMode(e) {
     let {

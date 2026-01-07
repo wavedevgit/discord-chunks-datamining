@@ -87,14 +87,14 @@ class y extends Chunk473749.PureComponent {
         applicationId: i,
         primarySKU: a,
         onSKUSelect: o
-      } = module,
-      s = g(module, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, Chunk54381.jsx)(Chunk585237.Z, h(_({
+      } = e,
+      s = g(e, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
+    return (0, r.jsx)(l.Z, h(_({
       onClick: this.handleClick,
-      onDropdownClick: exports.length > 0 ? this.handleContextMenu : null,
-      onContextMenu: exports.length > 0 ? this.handleContextMenu : true
-    }, Chunk239091), {
-      children: require
+      onDropdownClick: t.length > 0 ? this.handleContextMenu : null,
+      onContextMenu: t.length > 0 ? this.handleContextMenu : true
+    }, s), {
+      children: n
     }))
   }
   constructor(...e) {

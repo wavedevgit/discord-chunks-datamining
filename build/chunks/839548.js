@@ -2,7 +2,7 @@
 /** chunk id: 839548, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => Chunk445686.S,
+  S: () => l.S,
   Z: () => _
 }), require("./388685.js"), require("./49124.js");
 var Chunk117806 = require("./117806.js"),
@@ -38,7 +38,7 @@ function f(e) {
 let p = 0;
 class _ extends Chunk47770.Z {
   destroy() {
-    this.destroyed = true, this.framerateReducer.destroy(), this.setConnectionState(Chunk65154.$j.DISCONNECTED), this.emit(Chunk445686.S.Destroy, this), this.removeAllListeners()
+    this.destroyed = true, this.framerateReducer.destroy(), this.setConnectionState(u.$j.DISCONNECTED), this.emit(l.S.Destroy, this), this.removeAllListeners()
   }
   getLocalMute(e) {
     return this.localMutes[e] || false
@@ -120,7 +120,7 @@ class _ extends Chunk47770.Z {
   applyQualityConstraints() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       t = arguments.length > 1 ? arguments[1] : true;
-    return this.videoQualityManager.applyQualityConstraints(module, exports)
+    return this.videoQualityManager.applyQualityConstraints(e, t)
   }
   initializeStreamParameters(e) {
     this.videoStreamParameters = e.filter(e => (e.type === u.Tr.VIDEO || e.type === u.Tr.SCREEN) && "string" == typeof e.rid).map(e => {
@@ -161,7 +161,7 @@ class _ extends Chunk47770.Z {
   }
   async emitStats() {
     let e = await this.getStats();
-    return null != module && this.emit(Chunk445686.S.Stats, module), module
+    return null != e && this.emit(l.S.Stats, e), e
   }
   constructor(e, t) {
     super(), d(this, "mediaEngineConnectionId", "WebRTC-".concat(p++)), d(this, "context", true), d(this, "userId", true), d(this, "streamUserId", true), d(this, "destroyed", false), d(this, "audioSSRC", 0), d(this, "videoSSRC", 0), d(this, "selfDeaf", false), d(this, "selfMute", false), d(this, "localMutes", {}), d(this, "disabledLocalVideos", {}), d(this, "localVolumes", {}), d(this, "isActiveOutputSinksEnabled", false), d(this, "activeOutputSinks", new Map), d(this, "videoSupported", false), d(this, "useElectronVideo", false), d(this, "voiceBitrate", u.dX), d(this, "remoteSinkWantsMaxFramerate", u.Gs), d(this, "videoQualityManager", true), d(this, "wantsPriority", new Set), d(this, "localSpeakingFlags", {}), d(this, "videoReady", false), d(this, "videoStreamParameters", []), d(this, "remoteVideoSinkWants", {

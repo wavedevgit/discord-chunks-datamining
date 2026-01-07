@@ -147,7 +147,7 @@ function y() {
     saveRule: e.saveRule,
     saveEditingRule: e.saveEditingRule,
     cancelEditingRule: e.cancelEditingRule
-  }), Chunk55160.X)
+  }), i.X)
 }
 
 function R() {
@@ -157,6 +157,6 @@ function R() {
       editingRule: e.editingRule,
       setEditingRule: e.setEditingRule,
       createNewEditingRule: e.createNewEditingRule
-    }), Chunk55160.X);
-  return null != module && exports.setEditingRule(module), exports
+    }), i.X);
+  return null != e && t.setEditingRule(e), t
 }

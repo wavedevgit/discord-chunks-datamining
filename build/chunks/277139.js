@@ -9,8 +9,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk133080 = require("./133080.js");
 
 function o() {
-  return Chunk473749.useMemo(() => {
-    let e = new Map(Chunk217986.Z.flatMap(e => {
+  return r.useMemo(() => {
+    let e = new Map(i.Z.flatMap(e => {
         let {
           alpha2: t,
           phoneCountryCodes: n
@@ -21,7 +21,7 @@ function o() {
           name: r
         }])
       })),
-      t = Array.from(module.entries()).map(e => {
+      t = Array.from(e.entries()).map(e => {
         let [t, {
           name: n
         }] = e;
@@ -31,8 +31,8 @@ function o() {
         }
       });
     return {
-      countriesMap: module,
-      countryCodeOptions: exports
+      countriesMap: e,
+      countryCodeOptions: t
     }
   }, [])
 }

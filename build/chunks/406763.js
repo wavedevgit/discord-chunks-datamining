@@ -27,8 +27,8 @@ function o(e, t) {
   })
 }
 async function s() {
-  await Chunk544891.tn.get({
-    url: Chunk981631.ANM.GAME_NOTIFICATION_SETTINGS,
+  await r.tn.get({
+    url: a.ANM.GAME_NOTIFICATION_SETTINGS,
     rejectWithError: true
   }).then(e => {
     let {

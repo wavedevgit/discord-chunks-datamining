@@ -15,30 +15,30 @@ a.resetWarningCache = i, module.exports = function() {
   }
 
   function t() {
-    return module
+    return e
   }
-  module.isRequired = module;
+  e.isRequired = e;
   var n = {
-    array: module,
-    bool: module,
-    func: module,
-    number: module,
-    object: module,
-    string: module,
-    symbol: module,
-    any: module,
-    arrayOf: exports,
-    element: module,
-    elementType: module,
-    instanceOf: exports,
-    node: module,
-    objectOf: exports,
-    oneOf: exports,
-    oneOfType: exports,
-    shape: exports,
-    exact: exports,
+    array: e,
+    bool: e,
+    func: e,
+    number: e,
+    object: e,
+    string: e,
+    symbol: e,
+    any: e,
+    arrayOf: t,
+    element: e,
+    elementType: e,
+    instanceOf: t,
+    node: e,
+    objectOf: t,
+    oneOf: t,
+    oneOfType: t,
+    shape: t,
+    exact: t,
     checkPropTypes: a,
     resetWarningCache: i
   };
-  return require.PropTypes = require, require
+  return n.PropTypes = n, n
 }

@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
 let a = Chunk473749.createContext(true);
 
 function s() {
-  let e = Chunk473749.useContext(a);
-  return l()(null != module, "GuildProductPurchaseContext not found"), module
+  let e = o.useContext(a);
+  return l()(null != e, "GuildProductPurchaseContext not found"), e
 }
 
 function f(e) {

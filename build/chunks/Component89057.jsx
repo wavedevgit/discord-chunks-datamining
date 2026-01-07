@@ -53,8 +53,8 @@ function E(e) {
 }
 
 function b() {
-  return (0, Chunk54381.jsx)(E, {
-    className: Chunk859228.settings
+  return (0, r.jsx)(E, {
+    className: m.settings
   })
 }
 

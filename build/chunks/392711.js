@@ -375,17 +375,17 @@ e = require.nmd(module), (function() {
     },
     tM = parseFloat,
     tk = parseInt,
-    tU = "object" == typeof require.g && require.g && require.g.Object === Object && require.g,
+    tU = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
     tG = "object" == typeof self && self && self.Object === Object && self,
     tZ = tU || tG || Function("return this")(),
-    tF = exports && !exports.nodeType && exports,
-    tB = tF && module && !module.nodeType && module,
+    tF = t && !t.nodeType && t,
+    tB = tF && e && !e.nodeType && e,
     tV = tB && tB.exports === tF,
     tH = tV && tU.process,
     tY = function() {
       try {
         var e = tB && tB.require && tB.require("util").types;
-        if (module) return module;
+        if (e) return e;
         return tH && tH.binding && tH.binding("util")
       } catch (e) {}
     }(),

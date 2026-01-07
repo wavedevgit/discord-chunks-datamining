@@ -61,26 +61,26 @@ let T = {
   p = T;
 
 function A() {
-  let e = Chunk999382.Z.getGuild();
-  if (null == module) return;
-  let i = Chunk733895.ZP.getDiscoveryChecklist(module.id);
-  if (null != exports) return (0, Chunk386885.V)(module, exports)
+  let e = E.Z.getGuild();
+  if (null == e) return;
+  let i = f.ZP.getDiscoveryChecklist(e.id);
+  if (null != i) return (0, _.V)(e, i)
 }
 
 function C() {
   var e;
-  let i = Chunk999382.Z.getGuildId();
-  return null == exports ? null : null == (e = Chunk944163.Z.get(exports)) ? true : module.formFields
+  let i = E.Z.getGuildId();
+  return null == i ? null : null == (e = o.Z.get(i)) ? true : e.formFields
 }
 
 function D() {
   let e = C();
-  if (null == module) return;
-  let i = module.find(e => (0, d.J)(e));
-  return null == exports ? [{
-    id: (0, Chunk392711.uniqueId)(),
+  if (null == e) return;
+  let i = e.find(e => (0, d.J)(e));
+  return null == i ? [{
+    id: (0, r.uniqueId)(),
     value: ""
-  }] : exports.values.map(e => ({
+  }] : i.values.map(e => ({
     id: (0, r.uniqueId)(),
     value: e
   }))
@@ -88,17 +88,17 @@ function D() {
 
 function y() {
   let e = C();
-  if (null == module) return;
-  let i = module.find(e => (0, d.J)(e));
-  if (0 === module.length || 1 === module.length && null != exports) {
+  if (null == e) return;
+  let i = e.find(e => (0, d.J)(e));
+  if (0 === e.length || 1 === e.length && null != i) {
     let e = {
-      field_type: Chunk246364.QJ.TEXT_INPUT,
-      label: Chunk388032.intl.string(Chunk388032.t["83ZsRS"]),
+      field_type: d.QJ.TEXT_INPUT,
+      label: m.intl.string(m.t["83ZsRS"]),
       required: true
     };
-    return null != exports ? [exports, module] : [module]
+    return null != i ? [i, e] : [e]
   }
-  return [...module]
+  return [...e]
 }
 
 function O(e) {
@@ -139,49 +139,49 @@ function R(e, i) {
 }
 
 function L() {
-  let e = Chunk999382.Z.getGuild();
-  if (null == module || null == n) {
+  let e = E.Z.getGuild();
+  if (null == e || null == n) {
     p = T;
     return
   }
-  let i = O(module) !== n.joinType,
-    t = module.ownerConfiguredContentLevel === Chunk981631.V_K.AGE_RESTRICTED !== n.isAgeRestricted;
+  let i = O(e) !== n.joinType,
+    t = e.ownerConfiguredContentLevel === S.V_K.AGE_RESTRICTED !== n.isAgeRestricted;
   switch (n.joinType) {
-    case Chunk384632.A.INVITE:
+    case I.A.INVITE:
       p = {
-        verificationDirty: R(module, n),
-        guildDirty: exports,
+        verificationDirty: R(e, n),
+        guildDirty: i,
         profileDirty: false,
-        isAgeRestrictedDirty: require
+        isAgeRestrictedDirty: t
       };
       break;
-    case Chunk384632.A.APPLY:
+    case I.A.APPLY:
       var l, r;
       let u, a = C(),
         {
           pendingVerificationFields: o
         } = n,
-        d = !module.features.has(Chunk981631.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) || !module.features.has(Chunk981631.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
-      u = null == Chunk570140 ? null != Chunk944163 : null != Chunk944163 && !s().isEqual(Chunk570140, Chunk944163), p = {
-        verificationDirty: Chunk246364 || Chunk442837,
-        guildDirty: exports,
-        profileDirty: (null == (l = Chunk314852.Z.getProfile(module.id)) ? true : l.visibility) !== (null == (r = Chunk999382.Z.getGuildProfile()) ? true : Chunk392711.visibility),
-        isAgeRestrictedDirty: require
+        d = !e.features.has(S.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) || !e.features.has(S.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
+      u = null == a ? null != o : null != o && !s().isEqual(a, o), p = {
+        verificationDirty: d || u,
+        guildDirty: i,
+        profileDirty: (null == (l = c.Z.getProfile(e.id)) ? true : l.visibility) !== (null == (r = E.Z.getGuildProfile()) ? true : r.visibility),
+        isAgeRestrictedDirty: t
       };
       break;
-    case Chunk384632.A.DISCOVERABLE:
+    case I.A.DISCOVERABLE:
       p = {
-        verificationDirty: R(module, n),
-        guildDirty: exports || Chunk999382.Z.hasChanges(),
+        verificationDirty: R(e, n),
+        guildDirty: i || E.Z.hasChanges(),
         profileDirty: false,
-        isAgeRestrictedDirty: require
+        isAgeRestrictedDirty: t
       }
   }
 }
 
 function N() {
-  if (null == Chunk999382.Z.getGuildId() || null == n) returnfalse;
-  n = n.joinType === Chunk384632.A.APPLY ? v(h({}, n), {
+  if (null == E.Z.getGuildId() || null == n) returnfalse;
+  n = n.joinType === I.A.APPLY ? v(h({}, n), {
     pendingVerificationFields: y()
   }) : v(h({}, n), {
     termRules: D()
@@ -205,14 +205,14 @@ function G() {
 }
 
 function j() {
-  if ((null == n ? true : n.joinType) !== Chunk384632.A.DISCOVERABLE) returnfalse;
+  if ((null == n ? true : n.joinType) !== I.A.DISCOVERABLE) returnfalse;
   n = v(h({}, n), {
     settingsView: A()
   }), L()
 }
 class V extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk733895.ZP, Chunk314852.Z, Chunk999382.Z, Chunk944163.Z), this.syncWith([Chunk999382.Z, Chunk944163.Z], () => {
+    this.waitFor(f.ZP, c.Z, E.Z, o.Z), this.syncWith([E.Z, o.Z], () => {
       L()
     })
   }

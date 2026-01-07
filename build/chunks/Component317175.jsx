@@ -31,7 +31,7 @@ class C extends Chunk473749.PureComponent {
   renderItems() {
     let {
       query: e
-    } = this.state, t = Chunk217986.Z.flatMap((e, t) => {
+    } = this.state, t = d.Z.flatMap((e, t) => {
       let {
         alpha2: r,
         phoneCountryCodes: s,
@@ -61,7 +61,7 @@ class C extends Chunk473749.PureComponent {
           })]
         })
       }))
-    }), r = u()(exports).filter(t => 0 === e.length || l()(e.toLowerCase(), t.name.toLowerCase()) || l()(e.toLowerCase(), t.translatedName.toLowerCase())).map(e => {
+    }), r = u()(t).filter(t => 0 === e.length || l()(e.toLowerCase(), t.name.toLowerCase()) || l()(e.toLowerCase(), t.translatedName.toLowerCase())).map(e => {
       var t, r;
       return (0, s.createElement)(h.mzC.Item, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -88,26 +88,26 @@ class C extends Chunk473749.PureComponent {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t))
     }).value();
-    return 0 === require.length ? (0, Chunk54381.jsx)(Chunk481060.mzC.Empty, {
-      children: Chunk388032.intl.string(Chunk388032.t.PoWNfe)
-    }) : (0, Chunk54381.jsx)(Chunk481060.w0Z, {
-      className: Chunk686348.phoneFieldScroller,
-      children: require
+    return 0 === r.length ? (0, n.jsx)(h.mzC.Empty, {
+      children: m.intl.string(m.t.PoWNfe)
+    }) : (0, n.jsx)(h.w0Z, {
+      className: g.phoneFieldScroller,
+      children: r
     })
   }
   render() {
     let {
       className: e
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.mzC, {
-      className: a()(Chunk686348.phoneFieldPopout, Chunk533348.elevationBorderLow, module),
-      children: [(0, Chunk54381.jsx)(Chunk481060.mzC.SearchBar, {
+    return (0, n.jsxs)(h.mzC, {
+      className: a()(g.phoneFieldPopout, y.elevationBorderLow, e),
+      children: [(0, n.jsx)(h.mzC.SearchBar, {
         query: this.state.query,
-        placeholder: Chunk388032.intl.string(Chunk388032.t.hGOODh),
+        placeholder: m.intl.string(m.t.hGOODh),
         onChange: this.onChangeQuery,
         onClear: this.onClearQuery,
         autoComplete: "off"
-      }), (0, Chunk54381.jsx)(Chunk481060.mzC.Divider, {}), this.renderItems()]
+      }), (0, n.jsx)(h.mzC.Divider, {}), this.renderItems()]
     })
   }
   constructor(e) {

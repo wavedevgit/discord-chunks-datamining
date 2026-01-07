@@ -12,11 +12,11 @@ var Chunk399606 = require("./399606.js"),
   Chunk914788 = require("./914788.js"),
   Chunk880257 = require("./880257.js");
 let l = () => {
-    let e = (0, Chunk880257.Z)();
-    return (0, Chunk399606.e7)([Chunk914788.Z, Chunk594174.default], () => {
-      if (!module) return Chunk594174.default.getCurrentUser();
-      let t = Chunk914788.Z.getSelectedTeenId();
-      if (null !== exports) return Chunk594174.default.getUser(exports)
+    let e = (0, s.Z)();
+    return (0, r.e7)([o.Z, i.default], () => {
+      if (!e) return i.default.getCurrentUser();
+      let t = o.Z.getSelectedTeenId();
+      if (null !== t) return i.default.getUser(t)
     })
   },
   c = e => (0, r.e7)([i.default], () => {
@@ -24,13 +24,13 @@ let l = () => {
     if (null != t) return t
   }),
   u = () => {
-    let e = Chunk914788.Z.getSelectedTeenId(),
+    let e = o.Z.getSelectedTeenId(),
       {
         hasLoadedSettings: t,
         isLoading: n
-      } = (0, Chunk399606.cj)([Chunk473007.Z], () => ({
-        hasLoadedSettings: null != module && Chunk473007.Z.hasSettingsForUser(module),
-        isLoading: Chunk473007.Z.isLoading
+      } = (0, r.cj)([a.Z], () => ({
+        hasLoadedSettings: null != e && a.Z.hasSettingsForUser(e),
+        isLoading: a.Z.isLoading
       }));
-    return null !== module && !exports && !require
+    return null !== e && !t && !n
   }

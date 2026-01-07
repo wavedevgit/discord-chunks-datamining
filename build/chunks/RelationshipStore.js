@@ -93,7 +93,7 @@ function R(e) {
 
 function w() {
   var e, t;
-  I = g.size, T = b.size, S = Math.max((null != (t = null == (e = N.get(Chunk981631.OGo.PENDING_INCOMING)) ? true : module.size) ? exports : 0) - I - T, 0), O++
+  I = g.size, T = b.size, S = Math.max((null != (t = null == (e = N.get(l.OGo.PENDING_INCOMING)) ? true : e.size) ? t : 0) - I - T, 0), O++
 }
 
 function D(e) {
@@ -145,7 +145,7 @@ function U(e) {
 }
 class G extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(s.default)
   }
   isFriend(e) {
     return null != e && _.get(e) === l.OGo.FRIEND
@@ -192,11 +192,11 @@ class G extends(r = Chunk442837.ZP.Store) {
   }
   getOutgoingCount() {
     var e, t;
-    return null != (t = null == (e = N.get(Chunk981631.OGo.PENDING_OUTGOING)) ? true : module.size) ? exports : 0
+    return null != (t = null == (e = N.get(l.OGo.PENDING_OUTGOING)) ? true : e.size) ? t : 0
   }
   getFriendCount() {
     var e, t;
-    return null != (t = null == (e = N.get(Chunk981631.OGo.FRIEND)) ? true : module.size) ? exports : 0
+    return null != (t = null == (e = N.get(l.OGo.FRIEND)) ? true : e.size) ? t : 0
   }
   getRelationshipCount() {
     return _.size
@@ -226,14 +226,14 @@ class G extends(r = Chunk442837.ZP.Store) {
   getFriendIDs() {
     if (null == C.friends) {
       var e;
-      C.friends = Array.from(null != (e = N.get(Chunk981631.OGo.FRIEND)) ? module : [])
+      C.friends = Array.from(null != (e = N.get(l.OGo.FRIEND)) ? e : [])
     }
     return C.friends
   }
   getBlockedIDs() {
     if (null == C.blocked) {
       var e;
-      C.blocked = Array.from(null != (e = N.get(Chunk981631.OGo.BLOCKED)) ? module : [])
+      C.blocked = Array.from(null != (e = N.get(l.OGo.BLOCKED)) ? e : [])
     }
     return C.blocked
   }
@@ -243,10 +243,10 @@ class G extends(r = Chunk442837.ZP.Store) {
   getBlockedOrIgnoredIDs() {
     if (null == C.blockedOrIgnored) {
       let e = new Set(E),
-        t = N.get(Chunk981631.OGo.BLOCKED);
-      if (null != exports)
-        for (let n of exports) module.add(require);
-      C.blockedOrIgnored = Array.from(module.values())
+        t = N.get(l.OGo.BLOCKED);
+      if (null != t)
+        for (let n of t) e.add(n);
+      C.blockedOrIgnored = Array.from(e.values())
     }
     return C.blockedOrIgnored
   }

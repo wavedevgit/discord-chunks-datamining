@@ -10,21 +10,21 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 
 function r() {
-  let t = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
-  return Chunk473749.useMemo(() => [{
-    value: Chunk356659.OT.SECONDS_30,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv/3"], {
+  let t = (0, e.e7)([a.default], () => a.default.locale);
+  return l.useMemo(() => [{
+    value: c.OT.SECONDS_30,
+    label: o.intl.formatToPlainString(o.t["bTFv/3"], {
       count: 30
     })
   }, {
-    value: Chunk356659.OT.MINUTES_1,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
+    value: c.OT.MINUTES_1,
+    label: o.intl.formatToPlainString(o.t.ICo9Nk, {
       count: 1
     })
   }, {
-    value: Chunk356659.OT.MINUTES_2,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
+    value: c.OT.MINUTES_2,
+    label: o.intl.formatToPlainString(o.t.ICo9Nk, {
       count: 2
     })
-  }], [module])
+  }], [t])
 }

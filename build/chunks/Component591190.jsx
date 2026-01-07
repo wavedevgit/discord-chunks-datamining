@@ -8,11 +8,11 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk113153 = require("./113153.js");
-let o = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk113153.spacer
+let o = () => (0, r.jsx)("div", {
+    className: a.spacer
   }),
-  s = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk113153.category
+  s = () => (0, r.jsx)("div", {
+    className: a.category
   }),
   c = e => {
     let {

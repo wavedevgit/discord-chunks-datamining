@@ -102,8 +102,8 @@ function h() {
         }
     },
     notifyListeners: function() {
-      for (var e = arguments.length, n = Array(module), r = 0; Chunk44837 < module; Chunk44837++) require[Chunk44837] = arguments[Chunk44837];
-      exports.forEach(function(e) {
+      for (var e = arguments.length, n = Array(e), r = 0; r < e; r++) n[r] = arguments[r];
+      t.forEach(function(e) {
         return e.apply(true, n)
       })
     }
@@ -117,7 +117,7 @@ function E(e, t) {
 
 function b() {
   var e = window.navigator.userAgent;
-  return (false === module.indexOf("Android 2.") && false === module.indexOf("Android 4.0") || false === module.indexOf("Mobile Safari") || false !== module.indexOf("Chrome") || false !== module.indexOf("Windows Phone")) && window.history && "pushState" in window.history
+  return (false === e.indexOf("Android 2.") && false === e.indexOf("Android 4.0") || false === e.indexOf("Mobile Safari") || false !== e.indexOf("Chrome") || false !== e.indexOf("Windows Phone")) && window.history && "pushState" in window.history
 }
 
 function y() {
@@ -339,8 +339,8 @@ function P(e) {
 
 function R() {
   var e = window.location.href,
-    t = module.indexOf("#");
-  return false === exports ? "" : module.substring(exports + 1)
+    t = e.indexOf("#");
+  return false === t ? "" : e.substring(t + 1)
 }
 
 function w(e) {

@@ -71,7 +71,7 @@ function N(t, e) {
 }
 class M extends(n = Chunk473749.PureComponent) {
   componentDidMount() {
-    window.addEventListener("keydown", this.handleTabOrEnter), (0, Chunk901375.j)({
+    window.addEventListener("keydown", this.handleTabOrEnter), (0, S.j)({
       abortController: this.state.conditionalMediationAbortController,
       loginSource: "multi-account"
     })
@@ -98,15 +98,15 @@ class M extends(n = Chunk473749.PureComponent) {
       country: e,
       isPasswordlessActive: r
     } = this.props, n = !this.hasError("email") && this.hasError("password");
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk596263.mainLoginContainer,
-      children: (0, Chunk54381.jsxs)(Chunk388905.gO, {
-        children: [(0, Chunk54381.jsx)(Chunk952802.Z, {
-          alpha2: exports.alpha2,
-          countryCode: exports.code.split(" ")[0],
-          className: Chunk478411.marginBottom20,
-          label: Chunk388032.intl.string(Chunk388032.t.tUjnxr),
-          error: null != (t = this.renderError("login")) ? module : this.renderError("email"),
+    return (0, s.jsx)("div", {
+      className: I.mainLoginContainer,
+      children: (0, s.jsxs)(m.gO, {
+        children: [(0, s.jsx)(x.Z, {
+          alpha2: e.alpha2,
+          countryCode: e.code.split(" ")[0],
+          className: F.marginBottom20,
+          label: T.intl.string(T.t.tUjnxr),
+          error: null != (t = this.renderError("login")) ? t : this.renderError("email"),
           onChange: (t, e) => this.setState({
             login: t,
             loginPrefix: e
@@ -119,8 +119,8 @@ class M extends(n = Chunk473749.PureComponent) {
           value: this.state.login,
           autoFocus: !n,
           required: true
-        }), (0, Chunk54381.jsx)(Chunk388905.II, {
-          label: Chunk388032.intl.string(Chunk388032.t["CIGa+7"]),
+        }), (0, s.jsx)(m.II, {
+          label: T.intl.string(T.t["CIGa+7"]),
           error: this.renderError("password"),
           onChange: t => this.setState({
             password: t
@@ -133,14 +133,14 @@ class M extends(n = Chunk473749.PureComponent) {
           autoFocus: n,
           value: this.state.password,
           required: true
-        }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+        }), (0, s.jsxs)(h.ButtonGroup, {
           direction: "horizontal",
-          className: Chunk478411.marginTop4,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Avr, {
-            text: Chunk388032.intl.string(Chunk388032.t.wWIufs),
+          className: F.marginTop4,
+          children: [(0, s.jsx)(h.Avr, {
+            text: T.intl.string(T.t.wWIufs),
             onClick: this.handleForgotPassword
-          }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
-            text: Chunk388032.intl.string(Chunk388032.t["/kpMDt"]),
+          }), (0, s.jsx)(h.Avr, {
+            text: T.intl.string(T.t["/kpMDt"]),
             onClick: () => (function(t) {
               let e = v.isPlatformEmbedded && R.ZP.supportsFeature(k.eRX.WEBAUTHN) ? R.ZP.webAuthnAuthenticate : t => {
                 let e = (0, i.wz)(JSON.parse(t));
@@ -151,7 +151,7 @@ class M extends(n = Chunk473749.PureComponent) {
                 conditionalMediationAbortController: t
               }).catch(() => {})
             })(this.state.conditionalMediationAbortController),
-            disabled: require
+            disabled: r
           })]
         })]
       })
@@ -162,25 +162,25 @@ class M extends(n = Chunk473749.PureComponent) {
       loginStatus: t,
       onBackPressed: e
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk793030.xBx, {
-        title: Chunk388032.intl.string(Chunk388032.t.bPP34Q),
-        subtitle: Chunk388032.intl.string(Chunk388032.t.rvx0T4)
-      }), (0, Chunk54381.jsx)(Chunk793030.fef, {
+    return (0, s.jsxs)(s.Fragment, {
+      children: [(0, s.jsx)(d.xBx, {
+        title: T.intl.string(T.t.bPP34Q),
+        subtitle: T.intl.string(T.t.rvx0T4)
+      }), (0, s.jsx)(d.fef, {
         children: this.renderDefaultForm()
-      }), (0, Chunk54381.jsx)(Chunk793030.Go$, {
-        leading: (0, Chunk54381.jsx)(Chunk481060.Avr, {
+      }), (0, s.jsx)(d.Go$, {
+        leading: (0, s.jsx)(h.Avr, {
           variant: "secondary",
           size: "md",
-          onClick: exports,
-          text: Chunk388032.intl.string(Chunk388032.t["13/7kX"]),
+          onClick: e,
+          text: T.intl.string(T.t["13/7kX"]),
           type: "button"
         }),
         actions: [{
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t["3PatSz"]),
+          text: T.intl.string(T.t["3PatSz"]),
           onClick: this.handleLogin,
-          loading: module === Chunk981631.u34.LOGGING_IN
+          loading: t === k.u34.LOGGING_IN
         }]
       })]
     })
@@ -190,9 +190,9 @@ class M extends(n = Chunk473749.PureComponent) {
       ticket: this.props.mfaTicket,
       methods: this.props.mfaMethods
     };
-    return (0, Chunk54381.jsx)(Chunk124860.C, {
+    return (0, s.jsx)(y.C, {
       mfaFinish: this.handleTokenSubmitMFA,
-      mfaChallenge: module,
+      mfaChallenge: t,
       onEarlyClose: () => {
         this.handleReset()
       },
@@ -201,24 +201,24 @@ class M extends(n = Chunk473749.PureComponent) {
     })
   }
   renderDisabledAccount() {
-    let t = this.props.loginStatus === Chunk981631.u34.ACCOUNT_DISABLED,
-      e = module ? Chunk388032.intl.string(Chunk388032.t["j3rC+U"]) : Chunk388032.intl.string(Chunk388032.t.ZFWofo),
-      r = module ? Chunk388032.intl.string(Chunk388032.t["6eNTWe"]) : Chunk388032.intl.string(Chunk388032.t["pCBti+"]);
-    return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk793030.xBx, {
-        title: exports,
-        subtitle: require
-      }), (0, Chunk54381.jsx)(Chunk793030.Go$, {
-        leading: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    let t = this.props.loginStatus === k.u34.ACCOUNT_DISABLED,
+      e = t ? T.intl.string(T.t["j3rC+U"]) : T.intl.string(T.t.ZFWofo),
+      r = t ? T.intl.string(T.t["6eNTWe"]) : T.intl.string(T.t["pCBti+"]);
+    return (0, s.jsxs)(s.Fragment, {
+      children: [(0, s.jsx)(d.xBx, {
+        title: e,
+        subtitle: r
+      }), (0, s.jsx)(d.Go$, {
+        leading: (0, s.jsx)(h.Text, {
           variant: "text-md/normal",
           color: "text-subtle",
-          children: Chunk388032.intl.format(Chunk388032.t.js2rr5, {
+          children: T.intl.format(T.t.js2rr5, {
             onClick: this.handleCancelAccountDeletion
           })
         }),
         actions: [{
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t.JhDw5o),
+          text: T.intl.string(T.t.JhDw5o),
           onClick: this.handleReset
         }]
       })]
@@ -228,8 +228,8 @@ class M extends(n = Chunk473749.PureComponent) {
     let {
       resetPasswordPhoneToken: t
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk479495.Z, D({
-      resetToken: module,
+    return (0, s.jsx)(p.Z, D({
+      resetToken: t,
       onLoginSuccess: t => {
         this.setState({
           errors: {}
@@ -242,13 +242,13 @@ class M extends(n = Chunk473749.PureComponent) {
     let {
       phoneVerifyError: t
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk793030.fef, {
-      children: (0, Chunk54381.jsx)(Chunk379760.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t["+xqy3d"]),
-        subtitle: Chunk388032.intl.format(Chunk388032.t.ef4uZ7, {
+    return (0, s.jsx)(d.fef, {
+      children: (0, s.jsx)(C.Z, {
+        title: T.intl.string(T.t["+xqy3d"]),
+        subtitle: T.intl.format(T.t.ef4uZ7, {
           onResendClick: this.handleResendCode
         }),
-        error: module,
+        error: t,
         onSubmit: this.handlePasswordReset,
         onCancel: true
       })
@@ -259,19 +259,19 @@ class M extends(n = Chunk473749.PureComponent) {
       loginStatus: t
     } = this.props;
     if (null != this.state.resetPasswordPhoneToken) return this.renderResetPhonePassword();
-    switch (module) {
-      case Chunk981631.u34.LOGGING_IN_MFA_SMS:
-      case Chunk981631.u34.MFA_SMS_STEP:
-      case Chunk981631.u34.LOGGING_IN_MFA:
-      case Chunk981631.u34.MFA_STEP:
+    switch (t) {
+      case k.u34.LOGGING_IN_MFA_SMS:
+      case k.u34.MFA_SMS_STEP:
+      case k.u34.LOGGING_IN_MFA:
+      case k.u34.MFA_STEP:
         return this.renderMFA();
-      case Chunk981631.u34.ACCOUNT_SCHEDULED_FOR_DELETION:
-      case Chunk981631.u34.ACCOUNT_DISABLED:
+      case k.u34.ACCOUNT_SCHEDULED_FOR_DELETION:
+      case k.u34.ACCOUNT_DISABLED:
         return this.renderDisabledAccount();
-      case Chunk981631.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION:
+      case k.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION:
         return this.renderPhonePasswordRecovery();
-      case Chunk981631.u34.LOGGING_IN:
-      case Chunk981631.u34.NONE:
+      case k.u34.LOGGING_IN:
+      case k.u34.NONE:
       default:
         return this.renderDefault()
     }

@@ -10,19 +10,19 @@ var Chunk710845 = require("./710845.js"),
   Chunk690833 = require("./690833.js");
 
 function s() {
-  if (Chunk358085.isPlatformEmbedded) {
+  if (i.isPlatformEmbedded) {
     let e;
-    if ("json" !== (0, Chunk690833.CH)()) {
+    if ("json" !== (0, o.CH)()) {
       try {
-        e = Chunk998502.ZP.requireModule("discord_erlpack")
+        e = a.ZP.requireModule("discord_erlpack")
       } catch (t) {
         try {
-          e = Chunk998502.ZP.requireModule("erlpack")
+          e = a.ZP.requireModule("erlpack")
         } catch (e) {}
       }
-      if (null != module) return class {
+      if (null != e) return class {
         static canUse() {
-          return null != module
+          return null != e
         }
         pack(t) {
           return e.pack(t).buffer

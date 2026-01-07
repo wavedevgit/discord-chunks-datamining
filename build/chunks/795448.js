@@ -11,7 +11,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js");
 
 function i() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "FRIENDS_LIST_GIFT_INTENTS_SHOWN"
   })
 }
@@ -31,7 +31,7 @@ function o(e) {
 }
 
 function s() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "GIFT_UNREAD_NOTIFICATION_DISMISS"
   })
 }

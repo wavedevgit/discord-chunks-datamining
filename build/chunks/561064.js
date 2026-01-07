@@ -14,12 +14,12 @@ var Chunk442837 = require("./442837.js"),
 
 function c() {
   var e, t;
-  let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk928518.Z,
-    r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : (0, Chunk850405.e)();
-  return null != (t = null != (e = require.getWindow(Chunk501787.$J)) ? module : Chunk442837 ? require.getWindow(Chunk981631.KJ3.ACTIVITY_POPOUT) : true) ? exports : window
+  let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : o.Z,
+    r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : (0, i.e)();
+  return null != (t = null != (e = n.getWindow(s.$J)) ? e : r ? n.getWindow(l.KJ3.ACTIVITY_POPOUT) : true) ? t : window
 }
 
 function u() {
-  let e = (0, Chunk426419.P)();
-  return (0, Chunk442837.e7)([Chunk928518.Z], () => c(Chunk928518.Z, module))
+  let e = (0, a.P)();
+  return (0, r.e7)([o.Z], () => c(o.Z, e))
 }

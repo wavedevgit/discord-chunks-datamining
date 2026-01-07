@@ -79,14 +79,14 @@ class y extends Chunk473749.PureComponent {
     }
   }
   render() {
-    return this.state.hasError ? (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-      color: Chunk481060.DM8.DANGER,
+    return this.state.hasError ? (0, r.jsxs)(a.qXd, {
+      color: a.DM8.DANGER,
       style: {
         borderRadius: 0
       },
-      children: [Chunk388032.intl.format(Chunk388032.t.IIHUUF, {
+      children: [f.intl.format(f.t.IIHUUF, {
         subscriptionId: this.props.subscription.id
-      }), " ", Chunk388032.intl.format(Chunk388032.t.fh65ES, {
+      }), " ", f.intl.format(f.t.fh65ES, {
         helpLink: b
       })]
     }) : this.props.children

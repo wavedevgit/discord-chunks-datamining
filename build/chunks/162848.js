@@ -10,26 +10,26 @@ var Chunk710659 = require("./710659.js"),
     function e(e) {
       this.done = true, this.rules = e
     }
-    return module.prototype.start = function(e) {
+    return e.prototype.start = function(e) {
       return this.text = e, this.done = false, this.nextSymbol()
-    }, module.prototype.isDone = function() {
+    }, e.prototype.isDone = function() {
       return this.done && null === this.symbol
-    }, module.prototype.nextSymbol = function() {
+    }, e.prototype.nextSymbol = function() {
       this.symbol = null, this.value = null;
       do {
         if (this.done) returnfalse;
         var e, t, n = true;
         for (var r in e = null, this.rules) {
-          var i = (n = this.rules[Chunk710659]).exec(this.text);
-          Chunk812975 && (null === module || Chunk812975[0].length > module[0].length) && (e = Chunk812975, t = Chunk710659)
+          var i = (n = this.rules[r]).exec(this.text);
+          i && (null === e || i[0].length > e[0].length) && (e = i, t = r)
         }
-        if (null != module && (this.text = this.text.substr(module[0].length), "" === this.text && (this.done = true)), null == module) {
+        if (null != e && (this.text = this.text.substr(e[0].length), "" === this.text && (this.done = true)), null == e) {
           this.done = true, this.symbol = null, this.value = null;
           return
         }
-      } while ("SKIP" === exports);
-      return this.symbol = exports, this.value = module, true
-    }, module.prototype.accept = function(e) {
+      } while ("SKIP" === t);
+      return this.symbol = t, this.value = e, true
+    }, e.prototype.accept = function(e) {
       if (this.symbol === e) {
         if (this.value) {
           var t = this.value;
@@ -38,12 +38,12 @@ var Chunk710659 = require("./710659.js"),
         return this.nextSymbol(), true
       }
       returnfalse
-    }, module.prototype.acceptNumber = function() {
+    }, e.prototype.acceptNumber = function() {
       return this.accept("number")
-    }, module.prototype.expect = function(e) {
+    }, e.prototype.expect = function(e) {
       if (this.accept(e)) returntrue;
       throw Error("expected " + e + " but found " + this.symbol)
-    }, module
+    }, e
   }();
 
 function o(e, t) {

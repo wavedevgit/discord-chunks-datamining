@@ -16,13 +16,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk231338 = require("./231338.js");
 
 function u() {
-  let e = (0, Chunk81643.Jm)();
-  return (0, Chunk318370.n)("useIsStageSpeakingDisabledForCurrentUser") && module
+  let e = (0, i.Jm)();
+  return (0, a.n)("useIsStageSpeakingDisabledForCurrentUser") && e
 }
 
 function d() {
-  let e = (0, Chunk81643.yo)();
-  return (0, Chunk318370.y)("isStageSpeakingDisabledForCurrentUser") && module
+  let e = (0, i.yo)();
+  return (0, a.y)("isStageSpeakingDisabledForCurrentUser") && e
 }
 
 function f(e) {

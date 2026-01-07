@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
 
 function c() {
   var e = "__global_unique_id__";
-  return l[module] = (l[module] || 0) + 1
+  return l[e] = (l[e] || 0) + 1
 }
 
 function u(e, t) {

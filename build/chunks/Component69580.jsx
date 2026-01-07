@@ -103,19 +103,19 @@ function ea(e, t) {
 }
 
 function eo() {
-  let e = (0, Chunk828700.TH)(),
-    t = Chunk473749.useMemo(() => (0, Chunk807675.y)(module.search), [module.search]);
-  (0, Chunk702493.Z)();
-  let a = !module.search.includes("response_type"),
-    [o, l] = Chunk473749.useState(false),
-    u = Chunk473749.useRef(false),
-    [d, f] = Chunk473749.useState(null),
-    p = !Chunk873546.tq && !o && (Chunk120356 || !Chunk314897.default.isAuthenticated());
-  if (Chunk473749.useEffect(() => {
-      if (Chunk873546.eL && Chunk120356) {
+  let e = (0, s.TH)(),
+    t = i.useMemo(() => (0, M.y)(e.search), [e.search]);
+  (0, O.Z)();
+  let a = !e.search.includes("response_type"),
+    [o, l] = i.useState(false),
+    u = i.useRef(false),
+    [d, f] = i.useState(null),
+    p = !c.tq && !o && (a || !x.default.isAuthenticated());
+  if (i.useEffect(() => {
+      if (c.eL && a) {
         let t = new URL("discord://action/oauth2/authorize");
-        exports.search = module.search, window.open(exports.toString(), "_self")
-      } else Chunk873546.tq || !Chunk120356 && Chunk314897.default.isAuthenticated() || Chunk373793.current || (Chunk373793.current = true, Promise.resolve().then(require.bind(require, 536285)).then(t => {
+        t.search = e.search, window.open(t.toString(), "_self")
+      } else c.tq || !a && x.default.isAuthenticated() || u.current || (u.current = true, Promise.resolve().then(n.bind(n, 536285)).then(t => {
         let {
           default: n
         } = t;
@@ -153,35 +153,35 @@ function eo() {
           }).catch(() => f(false)).then(() => n.disconnect())
         }
       }))
-    }, [module.search, Chunk120356]), Chunk95015 && false !== Chunk243814) {
+    }, [e.search, a]), p && false !== d) {
     let e;
-    return e = true === Chunk243814 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t.csrAMJ)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        children: Chunk120356 ? Chunk388032.intl.string(Chunk388032.t["m1+IBn"]) : Chunk388032.intl.string(Chunk388032.t.kRzrSO)
-      }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
-        onClick: () => Chunk907331(true),
+    return e = true === d ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(C.Dx, {
+        children: ee.intl.string(ee.t.csrAMJ)
+      }), (0, r.jsx)(C.DK, {
+        children: a ? ee.intl.string(ee.t["m1+IBn"]) : ee.intl.string(ee.t.kRzrSO)
+      }), (0, r.jsx)(g.zxk, {
+        onClick: () => l(true),
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+        text: ee.intl.string(ee.t.fIv16B)
       })]
-    }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t["Z+hCVU"])
-      }), (0, Chunk54381.jsx)(Chunk481060.$jN, {})]
-    }), (0, Chunk54381.jsx)(Chunk787025.G, {
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(C.Dx, {
+        children: ee.intl.string(ee.t["Z+hCVU"])
+      }), (0, r.jsx)(E.$jN, {})]
+    }), (0, r.jsx)(q.G, {
       removeChildWrapper: true,
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk43020.deepLinkContainer,
-        children: module
+      children: (0, r.jsx)("div", {
+        className: et.deepLinkContainer,
+        children: e
       })
     })
   }
-  return (0, Chunk54381.jsx)(Chunk787025.G, {
+  return (0, r.jsx)(q.G, {
     removeChildWrapper: true,
-    children: (0, Chunk54381.jsx)(es, ea(er({
-      transitionState: Chunk793030.Dvm.ENTERED
-    }, exports), {
+    children: (0, r.jsx)(es, ea(er({
+      transitionState: _.Dvm.ENTERED
+    }, t), {
       showLogout: true,
       isExternalStandaloneOAuthPage: true,
       hideHeader: true
@@ -232,10 +232,10 @@ function es(e) {
 }
 
 function el() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk43020.loadingContainer,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      className: Chunk43020.spinner
+  return (0, r.jsx)("div", {
+    className: et.loadingContainer,
+    children: (0, r.jsx)(E.$jN, {
+      className: et.spinner
     })
   })
 }

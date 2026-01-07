@@ -38,7 +38,7 @@ function O(e, t) {
 
 function v() {
   let e = r;
-  null != module && Chunk366050.Z.isOpen(module) && (Chunk570140.Z.wait(() => Chunk519938.xv(module)), r = null)
+  null != e && u.Z.isOpen(e) && (i.Z.wait(() => a.xv(e)), r = null)
 }
 
 function S(e) {
@@ -52,25 +52,25 @@ function I(e) {
 }
 
 function T() {
-  let e = Chunk317381.ZP.getConnectedActivityLocation(),
-    t = null != module ? Chunk317381.ZP.getSelfEmbeddedActivityForLocation(module) : null,
-    n = (0, Chunk16609.p)(module),
-    r = Chunk592125.Z.getChannel(require);
-  return null == exports || null == r ? v() : O(r, (0, Chunk719296.Z)(exports.location.id, exports.applicationId))
+  let e = h.ZP.getConnectedActivityLocation(),
+    t = null != e ? h.ZP.getSelfEmbeddedActivityForLocation(e) : null,
+    n = (0, g.p)(e),
+    r = l.Z.getChannel(n);
+  return null == t || null == r ? v() : O(r, (0, E.Z)(t.location.id, t.applicationId))
 }
 
 function C() {
-  return (0, Chunk958185.Z)({
-    LayerStore: Chunk819640.Z,
-    PopoutWindowStore: Chunk928518.Z
+  return (0, b.Z)({
+    LayerStore: c.Z,
+    PopoutWindowStore: s.Z
   }) ? S() : I()
 }
 class A extends Chunk317770.Z {
   _initialize() {
-    Chunk944486.Z.addChangeListener(T), Chunk914010.Z.addChangeListener(T), Chunk19780.Z.addChangeListener(T), Chunk979651.Z.addChangeListener(T), Chunk928518.Z.addChangeListener(T), Chunk317381.ZP.addChangeListener(T), Chunk819640.Z.addChangeListener(C)
+    f.Z.addChangeListener(T), p.Z.addChangeListener(T), d.Z.addChangeListener(T), _.Z.addChangeListener(T), s.Z.addChangeListener(T), h.ZP.addChangeListener(T), c.Z.addChangeListener(C)
   }
   _terminate() {
-    Chunk944486.Z.removeChangeListener(T), Chunk914010.Z.removeChangeListener(T), Chunk19780.Z.removeChangeListener(T), Chunk979651.Z.removeChangeListener(T), Chunk928518.Z.removeChangeListener(T), Chunk317381.ZP.removeChangeListener(T), Chunk819640.Z.removeChangeListener(C)
+    f.Z.removeChangeListener(T), p.Z.removeChangeListener(T), d.Z.removeChangeListener(T), _.Z.removeChangeListener(T), s.Z.removeChangeListener(T), h.ZP.removeChangeListener(T), c.Z.removeChangeListener(C)
   }
 }
 let N = new A

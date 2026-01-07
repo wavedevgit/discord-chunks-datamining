@@ -15,15 +15,15 @@ function d(e) {
 }
 
 function p() {
-  if (!c && Chunk19780.Z.isConnected()) {
-    let e = Chunk19780.Z.getChannelId();
-    if (null != module) return d(module), u = module, c = true, true
-  } else if (c && !Chunk19780.Z.isConnected() && null != u) return d(u), u = null, c = false, true;
+  if (!c && o.Z.isConnected()) {
+    let e = o.Z.getChannelId();
+    if (null != e) return d(e), u = e, c = true, true
+  } else if (c && !o.Z.isConnected() && null != u) return d(u), u = null, c = false, true;
   returnfalse
 }
 class f extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk19780.Z), this.syncWith([Chunk19780.Z], p)
+    this.waitFor(o.Z), this.syncWith([o.Z], p)
   }
   getIsPopoverDismissed(e) {
     var t;

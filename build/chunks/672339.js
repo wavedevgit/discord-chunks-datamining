@@ -106,10 +106,10 @@ async function O(e, t, n) {
 }
 
 function v() {
-  let e = Chunk594174.default.getCurrentUser();
-  if (null == module) return;
-  let t = (0, Chunk932724.P)(module);
-  (0, Chunk638457.Z)() && !Chunk634041.Z.hasBeenApplied && null != exports && y(exports, {
+  let e = o.default.getCurrentUser();
+  if (null == e) return;
+  let t = (0, l.P)(e);
+  (0, p.Z)() && !u.Z.hasBeenApplied && null != t && y(t, {
     track: false
-  }).catch(Chunk981631.dG4)
+  }).catch(m.dG4)
 }

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk913279 = require("./913279.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,39 +24,39 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk473749.PureComponent {
+class h extends Chunk473749.PureComponent {
   componentDidMount() {
     let {
       sku: e,
       primarySkuId: t,
       isFetchingPrimarySku: n
     } = this.props;
-    null == exports || require || null == module || (0, Chunk16084.$N)(module.applicationId, exports)
+    null == t || n || null == e || (0, o.$N)(e.applicationId, t)
   }
   render() {
     let {
       sku: e,
       primarySku: t
     } = this.props, n = [], i = null;
-    if (null != module) {
-      let r = Chunk981631.Z5c.APPLICATION_STORE_LISTING_SKU(module.id, module.slug);
-      i = Chunk54381, null != exports && require.push({
-        id: Chunk981631.Z5c.APPLICATION_STORE_LISTING_SKU(exports.id, exports.slug),
-        label: exports.name
-      }), require.push({
-        id: Chunk54381,
-        label: module.name
+    if (null != e) {
+      let r = f.Z5c.APPLICATION_STORE_LISTING_SKU(e.id, e.slug);
+      i = r, null != t && n.push({
+        id: f.Z5c.APPLICATION_STORE_LISTING_SKU(t.id, t.slug),
+        label: t.name
+      }), n.push({
+        id: r,
+        label: e.name
       })
     }
-    return (0, Chunk54381.jsx)(Chunk481060.OoM, {
+    return (0, r.jsx)(a.OoM, {
       renderCustomBreadcrumb: this.renderCustomBreadcrumb,
       onBreadcrumbClick: this.handleClick,
-      breadcrumbs: require,
-      activeId: Chunk473749
+      breadcrumbs: n,
+      activeId: i
     })
   }
   constructor(...e) {
-    super(...e), h(this, "handleClick", e => {
+    super(...e), m(this, "handleClick", e => {
       let {
         sku: t
       } = this.props;
@@ -69,7 +69,7 @@ class m extends Chunk473749.PureComponent {
           }
         }
       })
-    }), h(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.Z.Title, {
+    }), m(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.Z.Title, {
       className: t ? null : g.breadcrumb,
       muted: !t,
       children: e.label
@@ -85,4 +85,4 @@ let b = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores([Chunk812206.Z, Chunk555
     isFetchingPrimarySku: null != r && p.Z.isFetching(r),
     primarySku: null != r ? p.Z.get(r) : null
   }
-})(m))
+})(h))

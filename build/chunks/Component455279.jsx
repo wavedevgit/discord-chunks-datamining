@@ -60,40 +60,40 @@ class b extends Chunk473749.PureComponent {
         value: n,
         disabled: i
       } = this.props,
-      a = (0, Chunk13140.BB)(require, true);
-    return e = "RECORDING" === exports ? Chunk388032.intl.string(Chunk388032.t.bmOri0) : 0 === require.length ? Chunk388032.intl.string(Chunk388032.t.co3wt9) : Chunk388032.intl.string(Chunk388032.t.idFMvH), (0, Chunk54381.jsx)(Chunk481060.tEY, {
+      a = (0, p.BB)(n, true);
+    return e = "RECORDING" === t ? _.intl.string(_.t.bmOri0) : 0 === n.length ? _.intl.string(_.t.co3wt9) : _.intl.string(_.t.idFMvH), (0, r.jsx)(d.tEY, {
       focusTarget: this._inputRef,
       ringTarget: this._containerRef,
-      children: (0, Chunk54381.jsx)("div", {
+      children: (0, r.jsx)("div", {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: o()(Chunk316636.recorderContainer, E[exports], {
-          [Chunk316636.containerDisabled]: Chunk473749
+        className: o()(m.recorderContainer, E[t], {
+          [m.containerDisabled]: i
         }),
-        children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-          className: Chunk316636.recorderLayout,
-          children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
-            className: Chunk316636.keybindInput,
-            children: (0, Chunk54381.jsx)("input", {
+        children: (0, r.jsxs)(f.Z, {
+          className: m.recorderLayout,
+          children: [(0, r.jsx)(f.Z.Child, {
+            className: m.keybindInput,
+            children: (0, r.jsx)("input", {
               id: this._inputId,
-              placeholder: Chunk388032.intl.string(Chunk388032.t.nWRdnl),
+              placeholder: _.intl.string(_.t.nWRdnl),
               type: "text",
               ref: this.setInputRef,
               readOnly: true,
-              value: Chunk120356,
-              disabled: "RECORDING" !== this.props.mode || Chunk473749
+              value: a,
+              disabled: "RECORDING" !== this.props.mode || i
             })
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk316636.buttonContainer,
-            children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+          }), (0, r.jsx)("div", {
+            className: m.buttonContainer,
+            children: (0, r.jsx)(d.Button, {
               size: "sm",
               variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",
-              text: module,
+              text: e,
               onClick: e => {
                 e.stopPropagation(), e.preventDefault(), this.handleClick(e)
               },
-              disabled: Chunk473749
+              disabled: i
             })
           })]
         })

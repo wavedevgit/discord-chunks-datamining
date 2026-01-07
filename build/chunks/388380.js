@@ -9,16 +9,16 @@ var Chunk544891 = require("./544891.js"),
 let s = {
   async fetch() {
     try {
-      let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.FRIEND_SUGGESTIONS,
+      let e = await r.tn.get({
+        url: l.ANM.FRIEND_SUGGESTIONS,
         rejectWithError: true
       });
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS",
-        suggestions: module.body
+        suggestions: e.body
       })
     } catch (e) {
-      Chunk570140.Z.dispatch({
+      i.Z.dispatch({
         type: "LOAD_FRIEND_SUGGESTIONS_FAILURE"
       })
     }

@@ -36,31 +36,31 @@ function f(e) {
 }
 
 function p() {
-  let e = (0, Chunk442837.e7)([Chunk357355.Z], () => Chunk357355.Z.affinities.slice(0, 3)),
-    t = module[0],
+  let e = (0, a.e7)([l.Z], () => l.Z.affinities.slice(0, 3)),
+    t = e[0],
     {
       avatarSrc: n,
       eventHandlers: d
-    } = (0, Chunk518950.Z)({
-      userId: null == exports ? true : exports.id,
-      size: Chunk481060.EFr.SIZE_24,
+    } = (0, s.Z)({
+      userId: null == t ? true : t.id,
+      size: o.EFr.SIZE_24,
       animateOnHover: true
     }),
     p = e => null != e.globalName ? e.globalName : e.username,
-    _ = Chunk473749.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJH, {
-      username: p(module[0])
-    }) : 1 === module.length ? Chunk388032.intl.formatToPlainString(Chunk388032.t.dpjXPL, {
-      username: p(module[0])
-    }) : "", [module]);
-  return 0 === module.length ? null : (0, Chunk54381.jsxs)("div", {
-    className: Chunk264247.container,
-    children: [(0, Chunk54381.jsx)(Chunk481060.qEK, f({
-      className: Chunk264247.__invalid_icon,
-      src: require,
-      "aria-label": exports.username,
-      size: Chunk481060.EFr.SIZE_24
-    }, d)), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk264247.text,
+    _ = i.useMemo(() => e.length >= 2 ? c.intl.formatToPlainString(c.t.c7ETJH, {
+      username: p(e[0])
+    }) : 1 === e.length ? c.intl.formatToPlainString(c.t.dpjXPL, {
+      username: p(e[0])
+    }) : "", [e]);
+  return 0 === e.length ? null : (0, r.jsxs)("div", {
+    className: u.container,
+    children: [(0, r.jsx)(o.qEK, f({
+      className: u.__invalid_icon,
+      src: n,
+      "aria-label": t.username,
+      size: o.EFr.SIZE_24
+    }, d)), (0, r.jsx)(o.Text, {
+      className: u.text,
       variant: "text-sm/normal",
       color: "always-white",
       children: _

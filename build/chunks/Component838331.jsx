@@ -294,10 +294,10 @@ C.Colors = O, C.Label = function(e) {
 }, C.Checkmark = function() {
   let {
     selected: e
-  } = Chunk473749.useContext(S), t = Chunk473749.useContext(T);
-  return module.has(exports) ? (0, Chunk54381.jsx)("span", {
-    className: Chunk405100.itemCheckbox,
-    children: (0, Chunk54381.jsx)(Chunk481060.owK, {
+  } = i.useContext(S), t = i.useContext(T);
+  return e.has(t) ? (0, r.jsx)("span", {
+    className: f.itemCheckbox,
+    children: (0, r.jsx)(u.owK, {
       size: "custom",
       color: "currentColor",
       width: 20,

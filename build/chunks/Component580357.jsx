@@ -10,15 +10,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk28578 = require("./28578.js");
 
 function s() {
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk28578.marker,
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)(t.Text, {
+      className: r.marker,
       tag: "span",
       variant: "text-md/semibold",
       color: "text-feedback-critical",
       children: "*"
-    }), (0, Chunk54381.jsx)(Chunk481060.nn4, {
-      children: Chunk388032.intl.string(Chunk388032.t.EkokLy)
+    }), (0, a.jsx)(t.nn4, {
+      children: i.intl.string(i.t.EkokLy)
     })]
   })
 }

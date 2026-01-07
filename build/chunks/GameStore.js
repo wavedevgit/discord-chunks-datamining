@@ -112,7 +112,7 @@ class M extends(a = Chunk442837.ZP.PersistedStore) {
     null != e && (null != e.detectableGamesEtag && (C = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => w(e)))
   }
   getState() {
-    return (0, Chunk358085.isDesktop)() ? {
+    return (0, m.isDesktop)() ? {
       detectableGamesEtag: C,
       detectableGames: v.values()
     } : {

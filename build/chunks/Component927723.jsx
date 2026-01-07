@@ -68,10 +68,10 @@ function _(e) {
 }
 
 function m() {
-  (0, Chunk885387.Z)({
-    title: Chunk388032.intl.string(Chunk792389.default.odgSTk),
-    subtitle: Chunk388032.intl.format(Chunk792389.default.EZfHRq, {
-      helpURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NSFW_AGE_GATING)
+  (0, i.Z)({
+    title: l.intl.string(c.default.odgSTk),
+    subtitle: l.intl.format(c.default.EZfHRq, {
+      helpURL: o.Z.getArticleURL(s.BhN.NSFW_AGE_GATING)
     })
   })
 }

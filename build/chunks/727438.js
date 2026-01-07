@@ -76,7 +76,7 @@ class p extends Chunk445346.y {
       return p.allPersistKeys.forEach(t => {
         var n;
         e[t] = (null != (n = o.K.get(t)) ? n : d)._state
-      }), module
+      }), e
     })
   }
   static initializeAll(e) {
@@ -91,7 +91,7 @@ class p extends Chunk445346.y {
     this.initialize(e) && this.asyncPersist(), this._isInitialized ? this.emitChange() : (p.allPersistKeys.add(this.getClass().persistKey), this._isInitialized = true)
   }
   static destroy() {
-    f = null, Chunk445346.y.destroy(), p.clearPersistQueue({
+    f = null, s.y.destroy(), p.clearPersistQueue({
       type: "all"
     }), p.allPersistKeys.clear(), p.userAgnosticPersistKeys.clear()
   }
@@ -103,9 +103,9 @@ class p extends Chunk445346.y {
         state: t,
         requiresPersist: n
       } = p.migrateAndReadStoreState(this.getClass().persistKey, this.getClass().migrations);
-      this.initialize(exports) && this.asyncPersist(), require && this.asyncPersist(), this._isInitialized = true;
-      let r = Date.now() - module;
-      Chunk123763 > 5 && Chunk135273.Z.mark("\uD83E\uDDA5", this.getName() + ".initialize()", Chunk123763)
+      this.initialize(t) && this.asyncPersist(), n && this.asyncPersist(), this._isInitialized = true;
+      let r = Date.now() - e;
+      r > 5 && a.Z.mark("\uD83E\uDDA5", this.getName() + ".initialize()", r)
     }
   }
   static migrateAndReadStoreState(e, t) {
@@ -144,29 +144,29 @@ class p extends Chunk445346.y {
       disableWrite: t,
       throttleDelay: n
     } = this.getClass();
-    if (p.disableWrites || exports) return Promise.resolve(false);
-    let r = p._writePromises.get(module);
-    return null != Chunk123763 || (r = new Promise(t => {
+    if (p.disableWrites || t) return Promise.resolve(false);
+    let r = p._writePromises.get(e);
+    return null != r || (r = new Promise(t => {
       let r = n > 0 ? () => this.throttledCallback(t) : () => this.callback(t);
       p._writeResolvers.set(e, [t, requestIdleCallback(r, {
         timeout: 500
       })])
-    }), p._writePromises.set(module, Chunk123763)), Chunk123763
+    }), p._writePromises.set(e, r)), r
   }
   persist() {
     let {
       persistKey: e
     } = this.getClass(), t = this.getState(), n = this._version;
-    Chunk433517.K.set(module, {
-      _state: exports,
-      _version: require
+    o.K.set(e, {
+      _state: t,
+      _version: n
     })
   }
   clear() {
     let {
       persistKey: e
     } = this.getClass();
-    Chunk433517.K.remove(module)
+    o.K.remove(e)
   }
   constructor(e, t, n) {
     if (super(e, t, n), l(this, "_version", null == this.getClass().migrations ? 0 : this.getClass().migrations.length), l(this, "callback", e => {

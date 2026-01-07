@@ -12,13 +12,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk285371 = require("./285371.js");
 class c extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), Chunk570140.Z.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
+    l.Z.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.Z.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), Chunk570140.Z.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
+    l.Z.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.Z.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   showKeyboardShortcuts() {
-    (0, Chunk481060.h7j)(e => (0, r.jsx)(o.Z, function(e) {
+    (0, i.h7j)(e => (0, r.jsx)(o.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -36,11 +36,11 @@ class c extends Chunk317770.Z {
       }
       return e
     }({}, e)), {
-      modalKey: Chunk285371.J
+      modalKey: s.J
     })
   }
   hideKeyboardShortcuts() {
-    (0, Chunk481060.Mr3)(Chunk285371.J)
+    (0, i.Mr3)(s.J)
   }
 }
 let u = new c

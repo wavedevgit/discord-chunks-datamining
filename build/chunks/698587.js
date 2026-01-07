@@ -89,7 +89,7 @@ class c extends Chunk495852.C {
       no: 4,
       name: "avatar_asset",
       kind: "message",
-      T: () => Chunk60814.F
+      T: () => l.F
     }, {
       no: 5,
       name: "banner_asset_url",
@@ -109,7 +109,7 @@ class c extends Chunk495852.C {
       no: 8,
       name: "gradient",
       kind: "message",
-      T: () => Chunk7883.p
+      T: () => s.p
     }])
   }
 }

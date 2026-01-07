@@ -101,7 +101,7 @@ function W(e, t) {
 }
 let K = u()("2015-05-15").local(),
   z = (0, Chunk608787.Un)({
-    createPromise: () => Promise.resolve().then(require.bind(require, 547800)),
+    createPromise: () => Promise.resolve().then(n.bind(n, 547800)),
     webpackId: 547800
   });
 
@@ -261,28 +261,28 @@ function en(e) {
 }
 let er = {
   [Chunk981631.dCx.FILTER_FROM]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.catERA),
+    titleText: () => G.intl.string(G.t.catERA),
     component: $
   },
   [Chunk981631.dCx.FILTER_MENTIONS]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t["l3K4B/"]),
+    titleText: () => G.intl.string(G.t["l3K4B/"]),
     component: $
   },
   [Chunk981631.dCx.FILTER_HAS]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.IC7gHM)
+    titleText: () => G.intl.string(G.t.IC7gHM)
   },
   [Chunk981631.dCx.FILTER_FILE_TYPE]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.SXIfVw)
+    titleText: () => G.intl.string(G.t.SXIfVw)
   },
   [Chunk981631.dCx.FILTER_IN]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.vHyCgl),
+    titleText: () => G.intl.string(G.t.vHyCgl),
     component: ee
   },
   [Chunk981631.rtL.DATES]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.UiL5ey)
+    titleText: () => G.intl.string(G.t.UiL5ey)
   },
   [Chunk981631.rtL.HISTORY]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.tSZd5c),
+    titleText: () => G.intl.string(G.t.tSZd5c),
     groupTip(e) {
       let {
         searchContext: t
@@ -307,16 +307,16 @@ let er = {
     component: en
   },
   [Chunk981631.rtL.SEARCH_OPTIONS]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t["8Zkyw+"]),
-    groupTip: () => (0, Chunk54381.jsx)(Chunk681715.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
+    titleText: () => G.intl.string(G.t["8Zkyw+"]),
+    groupTip: () => (0, r.jsx)(m.u, {
+      text: G.intl.string(G.t.hvVgAZ),
       position: "left",
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk707306.searchLearnMore,
-        children: (0, Chunk54381.jsx)(Chunk481060.eee, {
-          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.USING_SEARCH),
-          title: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
-          children: (0, Chunk54381.jsx)(Chunk481060.idN, {
+      children: (0, r.jsx)("div", {
+        className: Z.searchLearnMore,
+        children: (0, r.jsx)(h.eee, {
+          href: A.Z.getArticleURL(U.BhN.USING_SEARCH),
+          title: G.intl.string(G.t.hvVgAZ),
+          children: (0, r.jsx)(h.idN, {
             size: "md",
             color: "currentColor"
           })
@@ -390,30 +390,30 @@ class ei extends Chunk473749.PureComponent {
       searchContext: a,
       channel: o
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk542051.Z, {
-      numResults: Chunk473749,
-      query: require.query,
-      navId: exports,
+    return (0, r.jsx)(g.Z, {
+      numResults: i,
+      query: n.query,
+      navId: t,
       hideQuery: !this.shouldShowSearchQuery(),
-      focusedIndex: module,
+      focusedIndex: e,
       renderCustomResults: this.renderAutocompletes,
       renderInitialState: this.renderAutocompletes,
       onHighlightQuery: () => this.focusOption(false),
       onSelectQuery: () => this.performSearch({
-        searchQuerySource: Chunk723642.w7.SEARCH_POPOUT
+        searchQuerySource: k.w7.SEARCH_POPOUT
       }),
       onSelectSearchEverywhere: () => this.performSearch({
         searchEverywhere: true,
-        searchQuerySource: Chunk723642.w7.SEARCH_POPOUT
+        searchQuerySource: k.w7.SEARCH_POPOUT
       }),
       renderNoResults: () => null,
-      searchFavorites: Chunk120356.type === Chunk981631.aib.FAVORITES && (0, Chunk607802.X$)(),
+      searchFavorites: a.type === U.aib.FAVORITES && (0, R.X$)(),
       showSearchInSelectedChannel: this.shouldShowSearchInSelectedChannel(),
       channel: o,
       onSelectSearchInSelectedChannel: () => this.handleSearchInChannel({
-        searchAutocompleteSelectAction: Chunk723642.ZW.CLICK
+        searchAutocompleteSelectAction: k.ZW.CLICK
       }),
-      showDMQueryText: Chunk120356.type === Chunk981631.aib.DMS && (0, Chunk607802.R6)(Chunk120356)
+      showDMQueryText: a.type === U.aib.DMS && (0, R.R6)(a)
     })
   }
   constructor(...e) {

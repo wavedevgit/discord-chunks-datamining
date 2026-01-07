@@ -24,10 +24,10 @@ function f(e, t, n) {
 let p = false;
 class _ extends Chunk147913.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
+    o.Z.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", () => this.handleConnectionOpen())
+    o.Z.unsubscribe("CONNECTION_OPEN", () => this.handleConnectionOpen())
   }
   constructor({
     onSwitchStart: e,

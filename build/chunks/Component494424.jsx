@@ -27,25 +27,25 @@ let y = 1,
 
 function v() {
   let e = T();
-  return 1 === module ? Chunk388032.intl.string(Chunk388032.t.NBae0i) : Chunk388032.intl.format(Chunk388032.t.GSynLW, {
-    time: module
+  return 1 === e ? b.intl.string(b.t.NBae0i) : b.intl.format(b.t.GSynLW, {
+    time: e
   })
 }
 
 function S() {
-  let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumSubscription());
-  return null != module && module.status === Chunk981631.O0b.CANCELED ? module : null
+  let e = (0, a.e7)([u.Z], () => u.Z.getPremiumSubscription());
+  return null != e && e.status === g.O0b.CANCELED ? e : null
 }
 
 function I() {
   let e = S(),
     t = T();
-  return null != module && exports >= y && exports <= O
+  return null != e && t >= y && t <= O
 }
 
 function T() {
   let e = S();
-  return null != module ? (0, Chunk74538.YN)(module) : 0
+  return null != e ? (0, f.YN)(e) : 0
 }
 
 function C(e, t) {

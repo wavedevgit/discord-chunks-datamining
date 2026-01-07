@@ -14,7 +14,7 @@ class l extends Chunk727916.Z {
     super()
   }
   innerPattern() {
-    return RegExp(`(?:les?|la|l'|du|des?)\\s*(${Chunk765682.zC})?(?:\\s*(prochaine?s?|derni[e\xe8]re?s?|pass[\xe9e]e?s?|pr[\xe9e]c[\xe9e]dents?|suivante?s?))?\\s*(${(0,Chunk800911.q3)(Chunk765682.pS)})(?:\\s*(prochaine?s?|derni[e\xe8]re?s?|pass[\xe9e]e?s?|pr[\xe9e]c[\xe9e]dents?|suivante?s?))?`, "i")
+    return RegExp(`(?:les?|la|l'|du|des?)\\s*(${r.zC})?(?:\\s*(prochaine?s?|derni[e\xe8]re?s?|pass[\xe9e]e?s?|pr[\xe9e]c[\xe9e]dents?|suivante?s?))?\\s*(${(0,o.q3)(r.pS)})(?:\\s*(prochaine?s?|derni[e\xe8]re?s?|pass[\xe9e]e?s?|pr[\xe9e]c[\xe9e]dents?|suivante?s?))?`, "i")
   }
   innerExtract(e, t) {
     let n = t[1] ? (0, r.IX)(t[1]) : 1,

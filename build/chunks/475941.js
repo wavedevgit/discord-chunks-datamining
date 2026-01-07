@@ -10,6 +10,6 @@ var Chunk749210 = require("./749210.js"),
   Chunk165139 = require("./165139.js");
 
 function s() {
-  let e = Chunk594174.default.getCurrentUser();
-  (null == module ? true : module.isStaff()) && null != Chunk430824.Z.getGuild(Chunk165139.D) && Chunk749210.Z.requestMembers(Chunk165139.D, "", 0, false)
+  let e = a.default.getCurrentUser();
+  (null == e ? true : e.isStaff()) && null != i.Z.getGuild(o.D) && r.Z.requestMembers(o.D, "", 0, false)
 }

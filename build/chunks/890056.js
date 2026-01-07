@@ -18,7 +18,7 @@ let a = class {
   initialize() {
     this.img = new Image, this.img.onload = () => {
       this.loaded = true
-    }, this.img.src = Chunk482682, this.bind()
+    }, this.img.src = n, this.bind()
   }
   bind() {
     window.addEventListener("mousemove", this.handleMouseMove, false)

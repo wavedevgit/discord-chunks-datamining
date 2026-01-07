@@ -21,44 +21,44 @@ var Chunk990547 = require("./990547.js"),
 function m() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)();
-  (0, Chunk213609.Z)({
-    name: Chunk990547.ImpressionNames.CUSTOM_THEMES_PREVIEW_THEMES_BANNER,
-    type: Chunk990547.ImpressionTypes.VIEW,
+  } = (0, s.ZP)();
+  (0, l.Z)({
+    name: i.ImpressionNames.CUSTOM_THEMES_PREVIEW_THEMES_BANNER,
+    type: i.ImpressionTypes.VIEW,
     properties: {
-      location_stack: module
+      location_stack: e
     }
   });
   let t = () => {
-    (0, Chunk771934.DI)(Chunk771934.Ln.PREVIEW_THEMES), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
-      from: Chunk550385.tE.CLIENT_THEMES_EDITOR
+    (0, u.DI)(u.Ln.PREVIEW_THEMES), (0, c.XO)(c.wh.CUSTOM_THEME, {
+      from: c.tE.CLIENT_THEMES_EDITOR
     })
   };
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk706121.container,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk706121.topContent,
-      children: [(0, Chunk54381.jsx)("img", {
-        src: Chunk215656.Z,
-        className: Chunk706121.bannerImage,
+  return (0, r.jsxs)("div", {
+    className: p.container,
+    children: [(0, r.jsxs)("div", {
+      className: p.topContent,
+      children: [(0, r.jsx)("img", {
+        src: _.Z,
+        className: p.bannerImage,
         alt: ""
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk706121.textContent,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsxs)("div", {
+        className: p.textContent,
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: Chunk388032.intl.string(Chunk831989.default.XP4jzJ)
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          children: f.intl.string(d.default.XP4jzJ)
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk831989.default.MJYvmG)
+          children: f.intl.string(d.default.MJYvmG)
         })]
       })]
-    }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
+    }), (0, r.jsx)(a.zxk, {
       variant: "secondary",
       size: "sm",
-      text: Chunk388032.intl.string(Chunk831989.default.eGxkmm),
-      onClick: exports,
+      text: f.intl.string(d.default.eGxkmm),
+      onClick: t,
       fullWidth: true
     })]
   })

@@ -7,6 +7,6 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js");
 
 function i() {
-  let [, e] = (0, Chunk473749.useState)(0);
-  return (0, Chunk473749.useCallback)(() => module(e => e + 1), [])
+  let [, e] = (0, r.useState)(0);
+  return (0, r.useCallback)(() => e(e => e + 1), [])
 }

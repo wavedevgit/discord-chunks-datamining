@@ -18,28 +18,28 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 
 function _() {
-  return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk65154.pM.PUSH_TO_TALK)
+  return (0, s.e7)([a.Z], () => a.Z.getMode() === E.pM.PUSH_TO_TALK)
 }
 let g = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_SETTING, {
   useTitle: function() {
-    return Chunk818710.FB ? Chunk388032.intl.string(Chunk388032.t.tG4Np5) : Chunk388032.intl.string(Chunk388032.t.JMyQin)
+    return l.FB ? d.intl.string(d.t.tG4Np5) : d.intl.string(d.t.JMyQin)
   },
   useSubtitle: function() {
-    let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode());
-    return Chunk473749.useMemo(() => {
-      if (!Chunk818710.FB && module === Chunk65154.pM.PUSH_TO_TALK) return Chunk388032.intl.format(Chunk388032.t["VHI4+Y"], {
-        onDownloadClick: () => (0, Chunk962100.y)("Help Text PTT")
+    let t = (0, s.e7)([a.Z], () => a.Z.getMode());
+    return i.useMemo(() => {
+      if (!l.FB && t === E.pM.PUSH_TO_TALK) return d.intl.format(d.t["VHI4+Y"], {
+        onDownloadClick: () => (0, S.y)("Help Text PTT")
       })
-    }, [module])
+    }, [t])
   },
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile() !== Chunk345655._.STUDIO)
+    return (0, s.e7)([a.Z], () => a.Z.getActiveInputProfile() !== c._.STUDIO)
   },
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk65154.pM.PUSH_TO_TALK)
+    return (0, s.e7)([a.Z], () => a.Z.getMode() === E.pM.PUSH_TO_TALK)
   },
   setValue: function(t) {
     (0, T.XH)(t ? E.pM.PUSH_TO_TALK : E.pM.VOICE_ACTIVITY, [u.Z.USER_SETTINGS_VOICE_AND_VIDEO])
   },
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
+  useSearchTerms: () => [d.intl.string(d.t["pS+K2L"]), d.intl.string(d.t.nuFtHH)]
 })

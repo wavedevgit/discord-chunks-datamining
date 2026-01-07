@@ -62,7 +62,7 @@ let v = [{
     key: Chunk409813.h8.REVIEW,
     renderStep: e => (0, r.jsx)(c.lZ, b({}, e)),
     options: {
-      useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
+      useBreadcrumbLabel: () => h.intl.string(h.t.QBnNHq)
     }
   }, {
     key: Chunk409813.h8.ADD_PAYMENT_STEPS,
@@ -71,7 +71,7 @@ let v = [{
       text: "Add Payment Steps Placeholder"
     })),
     options: {
-      useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
+      useBreadcrumbLabel: () => h.intl.string(h.t.QBnNHq)
     }
   }, {
     key: Chunk409813.h8.CONFIRM,
@@ -80,7 +80,7 @@ let v = [{
       text: "Confirm Step Placeholder"
     })),
     options: {
-      useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
+      useBreadcrumbLabel: () => h.intl.string(h.t.QBnNHq)
     }
   }, {
     key: Chunk409813.h8.PLAN_SELECT,
@@ -89,10 +89,10 @@ let v = [{
       text: "Plan Select Step Placeholder"
     })),
     options: {
-      useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
+      useBreadcrumbLabel: () => h.intl.string(h.t.QBnNHq)
     }
   }],
-  S = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+  S = () => (0, r.jsx)(a.Text, {
     variant: "text-sm/normal",
     children: "Purchase button is disabled for this story"
   }),

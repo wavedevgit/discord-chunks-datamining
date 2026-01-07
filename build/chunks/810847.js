@@ -23,7 +23,7 @@ let d = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
   u = 1 / 60;
 
 function p() {
-  return Math.min(Math.max(Math.min(.8 * window.innerWidth, .8 * window.innerHeight), Chunk898625.LE), Chunk898625.pg)
+  return Math.min(Math.max(Math.min(.8 * window.innerWidth, .8 * window.innerHeight), o.LE), o.pg)
 }
 let f = class {
   initialize() {
@@ -61,7 +61,7 @@ let f = class {
         i(e, t, s, false);
         let n = 1 - e.index / 7.5;
         e.spring.friction += e.spring.friction + e.spring.friction * n, e.spring.tension = .7 * o.O1 + 80 * Math.random(), e.waveRange = 2 * e.waveRange
-      }), this.isFilling = true, this.updateWaveState(Chunk898625.hO.FILLING)
+      }), this.isFilling = true, this.updateWaveState(o.hO.FILLING)
     }, 250)
   }
   constructor(t) {

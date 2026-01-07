@@ -20,68 +20,68 @@ var Chunk54381 = require("./54381.js"),
   Chunk727829 = require("./727829.js"),
   Chunk478411 = require("./478411.js");
 let _ = () => {
-  let [e, t] = Chunk473749.useState(""), [s, _] = Chunk473749.useState(""), [E, v] = Chunk473749.useState(false), [b, j] = Chunk473749.useState(false), [I, N] = Chunk473749.useState(null), [y, S] = Chunk473749.useState(null), C = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), O = C.code.split(" ")[0], T = async () => {
+  let [e, t] = i.useState(""), [s, _] = i.useState(""), [E, v] = i.useState(false), [b, j] = i.useState(false), [I, N] = i.useState(null), [y, S] = i.useState(null), C = (0, l.e7)([d.Z], () => d.Z.getCountryCode()), O = C.code.split(" ")[0], T = async () => {
     try {
-      await Chunk144114.Z.resendCode(module)
+      await c.Z.resendCode(e)
     } catch (e) {
-      S(module.body.message)
+      S(e.body.message)
     }
   }, A = async () => {
     v(true);
     try {
       let {
         token: t
-      } = await Chunk144114.Z.verifyPhone(O + module, Chunk120356);
-      N(null), S(null), j(true), Chunk144114.Z.validatePhoneForSupport(exports)
+      } = await c.Z.verifyPhone(O + e, s);
+      N(null), S(null), j(true), c.Z.validatePhoneForSupport(t)
     } catch (e) {
-      module.body.message ? (N(null), S(module.body.message)) : (N(module.body.phone), S(module.body.code))
+      e.body.message ? (N(null), S(e.body.message)) : (N(e.body.phone), S(e.body.code))
     } finally {
       v(false)
     }
-  }, Z = (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-    children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
-      src: require("./292824.js")
-    }), (0, Chunk54381.jsxs)(Chunk388905.Dx, {
-      className: a()(Chunk478411.marginTop20, Chunk727829.flex, Chunk727829.justifyCenter, Chunk727829.alignCenter),
-      children: [Chunk388032.intl.string(Chunk388032.t.WWzQta), (0, Chunk54381.jsx)(Chunk481060.owK, {
+  }, Z = (0, r.jsxs)(f.ZP, {
+    children: [(0, r.jsx)(f.Ee, {
+      src: n(292824)
+    }), (0, r.jsxs)(f.Dx, {
+      className: a()(x.marginTop20, p.flex, p.justifyCenter, p.alignCenter),
+      children: [m.intl.string(m.t.WWzQta), (0, r.jsx)(o.owK, {
         size: "md",
         color: "currentColor",
-        className: Chunk478411.marginLeft8
+        className: x.marginLeft8
       })]
     })]
   });
-  return b ? Z : (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-    children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-      children: Chunk388032.intl.string(Chunk388032.t.o4JNrO)
-    }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-      className: Chunk478411.marginTop8,
-      children: Chunk388032.intl.string(Chunk388032.t.y0tVbq)
-    }), (0, Chunk54381.jsxs)(Chunk388905.gO, {
-      className: Chunk478411.marginTop20,
-      children: [(0, Chunk54381.jsx)(Chunk952802.Z, {
-        label: Chunk388032.intl.string(Chunk388032.t["eJnn0+"]),
+  return b ? Z : (0, r.jsxs)(f.ZP, {
+    children: [(0, r.jsx)(f.Dx, {
+      children: m.intl.string(m.t.o4JNrO)
+    }), (0, r.jsx)(f.DK, {
+      className: x.marginTop8,
+      children: m.intl.string(m.t.y0tVbq)
+    }), (0, r.jsxs)(f.gO, {
+      className: x.marginTop20,
+      children: [(0, r.jsx)(h.Z, {
+        label: m.intl.string(m.t["eJnn0+"]),
         alpha2: C.alpha2,
         countryCode: O,
-        value: module,
+        value: e,
         autoComplete: "off",
         spellCheck: "false",
-        onChange: exports,
-        forceMode: Chunk742458.Nz.PHONE,
+        onChange: t,
+        forceMode: u.Nz.PHONE,
         error: I
-      }), (0, Chunk54381.jsx)(Chunk388905.II, {
-        className: Chunk478411.marginTop20,
-        label: Chunk388032.intl.string(Chunk388032.t.OdzNbm),
-        value: Chunk120356,
+      }), (0, r.jsx)(f.II, {
+        className: x.marginTop20,
+        label: m.intl.string(m.t.OdzNbm),
+        value: s,
         onChange: _,
-        maxLength: Chunk815660.z,
+        maxLength: g.z,
         error: y
-      }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
-        text: Chunk388032.intl.string(Chunk388032.t["5b60gi"]),
+      }), (0, r.jsx)(o.Avr, {
+        text: m.intl.string(m.t["5b60gi"]),
         onClick: T
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk478411.marginTop20,
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-          text: Chunk388032.intl.string(Chunk388032.t.i4jeWR),
+      }), (0, r.jsx)("div", {
+        className: x.marginTop20,
+        children: (0, r.jsx)(o.Button, {
+          text: m.intl.string(m.t.i4jeWR),
           fullWidth: true,
           onClick: A,
           loading: E

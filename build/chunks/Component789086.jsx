@@ -12,32 +12,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk206583 = require("./206583.js");
 
 function d() {
-  let e = (0, Chunk442837.e7)([Chunk146282.Z], () => {
+  let e = (0, r.e7)([s.Z], () => {
       var e;
-      return (null == (e = Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)) ? true : module.refresh_stale_inbox_after_ms) != null
+      return (null == (e = s.Z.getFeed(c.YN.GLOBAL_FEED)) ? true : e.refresh_stale_inbox_after_ms) != null
     }),
     {
       loading: t,
       nextFetchDate: n
-    } = (0, Chunk442837.cj)([Chunk146282.Z], () => {
+    } = (0, r.cj)([s.Z], () => {
       var e;
-      return null != (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? module : {
+      return null != (e = s.Z.getFeedState(c.YN.GLOBAL_FEED)) ? e : {
         loading: false
       }
     }),
-    d = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getLastFeedFetchDate(Chunk206583.YN.GLOBAL_FEED));
-  return (0, Chunk54381.jsxs)("div", {
-    children: [exports ? (0, Chunk54381.jsx)(Chunk481060.Text, {
+    d = (0, r.e7)([s.Z], () => s.Z.getLastFeedFetchDate(c.YN.GLOBAL_FEED));
+  return (0, a.jsxs)("div", {
+    children: [t ? (0, a.jsx)(i.Text, {
       variant: "text-md/normal",
       children: "(fetching)"
-    }) : (0, Chunk54381.jsxs)(Chunk481060.Text, {
+    }) : (0, a.jsxs)(i.Text, {
       variant: "text-md/normal",
-      children: ["Next fetch: ", null != require ? (0, Chunk54381.jsx)(Chunk346486.Z, {
-        deadline: require
-      }) : module ? "(awaiting push)" : "(unscheduled)"]
-    }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
+      children: ["Next fetch: ", null != n ? (0, a.jsx)(l.Z, {
+        deadline: n
+      }) : e ? "(awaiting push)" : "(unscheduled)"]
+    }), (0, a.jsxs)(i.Text, {
       variant: "text-md/normal",
-      children: ["Last fetch:", " ", null != d ? (0, Chunk54381.jsx)(Chunk371991.x, {
+      children: ["Last fetch:", " ", null != d ? (0, a.jsx)(o.x, {
         inline: true,
         entry: {
           start: d.getTime()

@@ -11,16 +11,16 @@ var Chunk611004 = require("./611004.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.J9)(Chunk313789.n.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["NxjN+q"]),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["t4+fbe"])],
+  useTitle: () => o.intl.string(o.t["NxjN+q"]),
+  useSearchTerms: () => [o.intl.string(o.t["t4+fbe"])],
   useOptions: () => [{
-    name: Chunk388032.intl.string(Chunk388032.t["t+fGsk"]),
+    name: o.intl.string(o.t["t+fGsk"]),
     value: 0
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.MwlEGN),
+    name: o.intl.string(o.t.MwlEGN),
     value: 1
   }],
-  useValue: () => +!!Chunk695346.rR.useSetting(),
+  useValue: () => +!!u.rR.useSetting(),
   setValue: t => {
     let e = 1 === t;
     e ? i.Z.cleanUpPrivateChannelSearchState() : i.Z.cleanUpSearchState({

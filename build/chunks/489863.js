@@ -22,12 +22,12 @@ let c = "10000",
 
 function d() {
   var e, t, n;
-  let r = Chunk944486.Z.getChannelId(),
-    i = Chunk592125.Z.getBasicChannel(Chunk860911);
+  let r = s.Z.getChannelId(),
+    i = o.Z.getBasicChannel(r);
   return {
-    guild_id: null != (e = null == Chunk544891 ? true : Chunk544891.guild_id) ? module : c,
-    channel_id: null != (t = null == Chunk544891 ? true : Chunk544891.id) ? exports : u,
-    channel_type: null != (n = null == Chunk544891 ? true : Chunk544891.type) ? require : Chunk981631.d4z.UNKNOWN
+    guild_id: null != (e = null == i ? true : i.guild_id) ? e : c,
+    channel_id: null != (t = null == i ? true : i.id) ? t : u,
+    channel_type: null != (n = null == i ? true : i.type) ? n : l.d4z.UNKNOWN
   }
 }
 

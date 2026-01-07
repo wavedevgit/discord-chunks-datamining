@@ -13,15 +13,15 @@ var Chunk54381 = require("./54381.js"),
 let c = (0, Chunk755930.Yn)([(0, Chunk755930.nn)({
   key: "LISTING_NAME",
   cellClassName: Chunk260178.listingNameColumn,
-  renderHeader: () => (0, Chunk54381.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.OGpGqO)
+  renderHeader: () => (0, r.jsx)(l.qN, {
+    children: s.intl.string(s.t.OGpGqO)
   }),
   sort: (0, Chunk755930.Qg)(e => e.listing.name.toLowerCase())
 }), (0, Chunk755930.GW)({
   key: "PAYMENTS_COUNT",
   cellClassName: Chunk260178.paymentsCountColumn,
-  renderHeader: () => (0, Chunk54381.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.vpHXJ0)
+  renderHeader: () => (0, r.jsx)(l.qN, {
+    children: s.intl.string(s.t.vpHXJ0)
   }),
   getCount: e => e.paymentsCount,
   sort: (0, Chunk755930.Qg)(e => {
@@ -31,8 +31,8 @@ let c = (0, Chunk755930.Yn)([(0, Chunk755930.nn)({
 }), (0, Chunk755930.i$)({
   key: "PRICE",
   cellClassName: Chunk260178.priceColumn,
-  renderHeader: () => (0, Chunk54381.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.VodAGZ)
+  renderHeader: () => (0, r.jsx)(l.qN, {
+    children: s.intl.string(s.t.VodAGZ)
   }),
   getAmount(e) {
     let {

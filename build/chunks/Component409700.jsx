@@ -70,17 +70,17 @@ function C() {
   let {
     volume: e,
     onVolumeChange: t
-  } = (0, Chunk824690.Z)();
-  return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
-    className: Chunk258462.sliderContainer,
+  } = (0, h.Z)();
+  return (0, r.jsxs)(u.P3F, {
+    className: y.sliderContainer,
     onClick: e => e.stopPropagation(),
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: [(0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["2JbvKw"])
-    }), (0, Chunk54381.jsx)(Chunk481060.iRW, {
-      onValueChange: exports,
-      className: Chunk258462.slider,
-      initialValue: (0, Chunk36703.P)(module),
+      children: b.intl.string(b.t["2JbvKw"])
+    }), (0, r.jsx)(u.iRW, {
+      onValueChange: t,
+      className: y.slider,
+      initialValue: (0, p.P)(e),
       maxValue: 100
     })]
   })

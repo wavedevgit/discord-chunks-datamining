@@ -62,8 +62,8 @@ class b extends Chunk473749.Component {
         location: e
       }
     } = this.props;
-    return g(m({}, module), {
-      object: Chunk981631.qAy.BUTTON_CTA
+    return g(m({}, e), {
+      object: f.qAy.BUTTON_CTA
     })
   }
   render() {
@@ -75,29 +75,29 @@ class b extends Chunk473749.Component {
       hasError: i,
       isPromoCode: a
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t["il+VCo"]),
-      children: (0, Chunk54381.jsx)("form", {
+    return (0, r.jsx)(o.C3N, {
+      label: p.intl.string(p.t["il+VCo"]),
+      children: (0, r.jsx)("form", {
         onSubmit: this.handleSubmit,
-        children: (0, Chunk54381.jsxs)(Chunk481060.NIo, {
-          children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
-            label: Chunk388032.intl.string(Chunk388032.t.SeKIoS),
-            type: module ? "password" : "text",
-            value: exports,
+        children: (0, r.jsxs)(o.NIo, {
+          children: [(0, r.jsx)(o.oil, {
+            label: p.intl.string(p.t.SeKIoS),
+            type: e ? "password" : "text",
+            value: t,
             onChange: this.handleChange,
             placeholder: E,
-            error: !Chunk442837 && Chunk473749 ? Chunk388032.intl.string(Chunk388032.t.Y11a2u) : null,
-            helperText: Chunk442837 ? Chunk388032.intl.format(Chunk388032.t.gPt3PE, {
+            error: !a && i ? p.intl.string(p.t.Y11a2u) : null,
+            helperText: a ? p.intl.format(p.t.gPt3PE, {
               promoLink: () => {
-                window.open("https://discord.com/billing/promotions/".concat(exports))
+                window.open("https://discord.com/billing/promotions/".concat(t))
               }
             }) : null,
             fullWidth: true
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          }), (0, r.jsx)(o.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t.KIpp7M),
+            text: p.intl.string(p.t.KIpp7M),
             type: "submit",
-            loading: require
+            loading: n
           })]
         })
       })
@@ -156,10 +156,10 @@ class b extends Chunk473749.Component {
 }
 
 function y() {
-  let e = Chunk473749.useContext(Chunk626135.AnalyticsContext),
-    t = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled);
-  return (0, Chunk54381.jsx)(b, {
-    analyticsContext: module,
-    obscureInput: exports
+  let e = i.useContext(u.AnalyticsContext),
+    t = (0, a.e7)([c.Z], () => c.Z.enabled);
+  return (0, r.jsx)(b, {
+    analyticsContext: e,
+    obscureInput: t
   })
 }

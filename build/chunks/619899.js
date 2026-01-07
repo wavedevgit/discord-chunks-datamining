@@ -191,10 +191,10 @@ let y = (0, Chunk663042.U)(e => ({
   O = () => {
     let e = y(e => e.collectionAssets),
       t = y(e => e.avatarDecorationAssets);
-    return Chunk473749.useMemo(() => ({
-      collectionAssets: Object.values(module).sort((e, t) => e.name.localeCompare(t.name)),
-      avatarDecorationAssets: Object.values(exports).sort((e, t) => e.name.localeCompare(t.name))
-    }), [module, exports])
+    return r.useMemo(() => ({
+      collectionAssets: Object.values(e).sort((e, t) => e.name.localeCompare(t.name)),
+      avatarDecorationAssets: Object.values(t).sort((e, t) => e.name.localeCompare(t.name))
+    }), [e, t])
   },
   v = e => y(t => {
     var n;

@@ -88,16 +88,16 @@ function O(e) {
 }
 
 function v() {
-  let [e, t] = (0, Chunk442837.Wu)([Chunk594190.ZP], () => [Chunk594190.ZP.canShowAdminWarning, Chunk594190.ZP.getVisibleGame()], []), n = (0, Chunk442837.e7)([Chunk19780.Z], () => Chunk19780.Z.isConnected(), []), o = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk981631.pM4.PUSH_TO_TALK, []), l = null != exports && exports.elevated && require && Chunk159691 && module, c = Chunk473749.useRef(null);
-  return Chunk473749.useEffect(() => {
-    if (!(0, Chunk865066.s2)(Chunk594190.ZP)) return Chunk923928 ? Chunk493773.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(O, E({
+  let [e, t] = (0, a.Wu)([u.ZP], () => [u.ZP.canShowAdminWarning, u.ZP.getVisibleGame()], []), n = (0, a.e7)([p.Z], () => p.Z.isConnected(), []), o = (0, a.e7)([f.Z], () => f.Z.getMode() === m.pM4.PUSH_TO_TALK, []), l = null != t && t.elevated && n && o && e, c = i.useRef(null);
+  return i.useEffect(() => {
+    if (!(0, d.s2)(u.ZP)) return l ? c.current = (0, s.h7j)(e => (0, r.jsx)(O, E({
       currentGame: t
-    }, e))) : module(), () => {
-      module()
+    }, e))) : e(), () => {
+      e()
     };
 
     function e() {
-      null !== Chunk493773.current && ((0, Chunk481060.Mr3)(Chunk493773.current), Chunk493773.current = null)
+      null !== c.current && ((0, s.Mr3)(c.current), c.current = null)
     }
-  }, [exports, Chunk923928]), null
+  }, [t, l]), null
 }

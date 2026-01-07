@@ -6,5 +6,5 @@ require.d(exports, {
 });
 var Chunk595022 = require("./595022.js");
 let o = function() {
-  this.__data__ = new Chunk595022.Z, this.size = 0
+  this.__data__ = new n.Z, this.size = 0
 }

@@ -9,7 +9,7 @@ module.exports = function() {
       range_: 0
     }, this.devicePixelRatio = e || 1, this.canvas_ = t, t.width = parseInt(t.width, 10) * this.devicePixelRatio, t.height = parseInt(t.height, 10) * this.devicePixelRatio, this.gridColor = "#CCC", this.textColor = "#000", this.backgroundColor = "#FFF", this.fontWeight = "normal", this.fontSize = 10, this.fontFamily = "sans-serif", this.timeLocales = [], this.timeOptions = {}, this.startTime_ = 0, this.endTime_ = 1, this.graph_ = null, this.scale_ = 1e3 / this.devicePixelRatio, this.updateScrollbarRange_(true)
   }
-  module.prototype = {
+  t.prototype = {
     setScale: function(t) {
       this.scale_ = t
     },
@@ -46,13 +46,13 @@ module.exports = function() {
         var t = this.canvas_.width,
           e = this.canvas_.height,
           i = this.canvas_.getContext("2d");
-        if (i.fillStyle = this.backgroundColor, i.fillRect(0, 0, module, e), !(4 * this.fontSize > e) && !(module < 50)) {
+        if (i.fillStyle = this.backgroundColor, i.fillRect(0, 0, t, e), !(4 * this.fontSize > e) && !(t < 50)) {
           i.save();
           var n = this.scrollbar_.position_;
-          0 == this.scrollbar_.range_ && (n = this.getLength_() - module);
+          0 == this.scrollbar_.range_ && (n = this.getLength_() - t);
           var r = this.startTime_ + n * this.scale_,
             a = e;
-          e -= Math.ceil(this.fontSize * this.devicePixelRatio) + 4, this.drawTimeLabels(i, module, e, a, r), i.strokeStyle = this.gridColor, i.lineWidth = this.devicePixelRatio, i.strokeRect(1, 1, module - 1, e - 1), this.graph_ && (this.graph_.layout(module, e, this.fontSize, r, this.scale_), this.graph_.drawTicks(i), this.graph_.drawLines(i), this.graph_.drawLabels(i)), i.restore()
+          e -= Math.ceil(this.fontSize * this.devicePixelRatio) + 4, this.drawTimeLabels(i, t, e, a, r), i.strokeStyle = this.gridColor, i.lineWidth = this.devicePixelRatio, i.strokeRect(1, 1, t - 1, e - 1), this.graph_ && (this.graph_.layout(t, e, this.fontSize, r, this.scale_), this.graph_.drawTicks(i), this.graph_.drawLines(i), this.graph_.drawLabels(i)), i.restore()
         }
       }
     },
@@ -76,7 +76,7 @@ module.exports = function() {
     function t(t) {
       this.devicePixelRatio = t || 1, this.dataSeries_ = [], this.width_ = 0, this.height_ = 0, this.fontHeight_ = 0, this.startTime_ = 0, this.scale_ = 0, this.min_ = 0, this.max_ = 0, this.labels_ = []
     }
-    return module.prototype = {
+    return t.prototype = {
       addDataSeries: function(t) {
         this.dataSeries_.push(t)
       },
@@ -158,7 +158,7 @@ module.exports = function() {
           for (var i = (this.height_ - 1) / (this.labels_.length - 1), n = 1; n < this.labels_.length; ++n) t.fillText(this.labels_[n], e, i * n)
         }
       }
-    }, module
+    }, t
   }();
-  return module
+  return t
 }()

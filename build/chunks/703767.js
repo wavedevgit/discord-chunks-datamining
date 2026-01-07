@@ -42,10 +42,10 @@ let d = false;
 
 function f() {
   let e = {};
-  for (let t of c) u(exports.gpus) && (e = s({}, module, exports.experiment.getCurrentConfig({
+  for (let t of c) u(t.gpus) && (e = s({}, e, t.experiment.getCurrentConfig({
     location: "updateFlags"
   })));
-  Chunk998502.ZP.setChromiumSwitches(module)
+  a.ZP.setChromiumSwitches(e)
 }
 class p extends Chunk147913.Z {
   constructor(...e) {

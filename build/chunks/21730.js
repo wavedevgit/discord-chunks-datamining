@@ -12,15 +12,15 @@ var Chunk473749 = require("./473749.js"),
   Chunk231919 = require("./231919.js");
 
 function l() {
-  let [e, t] = Chunk473749.useState("lg"), [n, i] = Chunk473749.useState(true), l = (0, Chunk448986.Z)(e => {
+  let [e, t] = r.useState("lg"), [n, i] = r.useState(true), l = (0, o.Z)(e => {
     let n = e.target,
       r = e.contentRect.width;
     return (i(n.scrollHeight), null == r || r > s.j2) ? t("lg") : r > s.Z0 ? t("sm") : t("xs")
   });
   return {
-    containerRef: (0, Chunk393903.y)(l),
-    size: module,
-    height: require
+    containerRef: (0, a.y)(l),
+    size: e,
+    height: n
   }
 }
 

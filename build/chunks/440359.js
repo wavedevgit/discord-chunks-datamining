@@ -33,7 +33,7 @@ var l = function() {
   function e(t) {
     i(this, e), s(this, "entered", []), s(this, "isNodeInDocument", true), this.isNodeInDocument = t
   }
-  return o(module, [{
+  return o(e, [{
     key: "enter",
     value: function(e) {
       var t = this,
@@ -54,5 +54,5 @@ var l = function() {
     value: function() {
       this.entered = []
     }
-  }]), module
+  }]), e
 }()

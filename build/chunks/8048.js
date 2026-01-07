@@ -34,7 +34,7 @@ class o {
     return null != this.animation && (this.clear(), this.animation.drawInto(this.canvasContext, t, this.canvas.width, this.canvas.height), true)
   }
   drop() {
-    this.animate = false, this.scheduleOrCancelTick(), Chunk839766.Z.drop(this.key), this.animation = null, this.dropped = true
+    this.animate = false, this.scheduleOrCancelTick(), a.Z.drop(this.key), this.animation = null, this.dropped = true
   }
   scheduleOrCancelTick() {
     this.dropped || (this.hasInitialFrame ? this.requestAnimationFrame(this.animate && this.visible ? this.onAnimationTick : null) : this.requestAnimationFrame(this.onInitialAnimationTick))

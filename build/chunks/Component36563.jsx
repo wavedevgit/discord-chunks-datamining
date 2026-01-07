@@ -78,25 +78,25 @@ function v(e, t) {
 }
 
 function S() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
-  switch (module) {
-    case Chunk481060.EFr.SIZE_16:
-      return Chunk826529.size16;
-    case Chunk481060.EFr.SIZE_20:
-      return Chunk826529.size20;
-    case Chunk481060.EFr.SIZE_24:
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : u.EFr.SIZE_24;
+  switch (e) {
+    case u.EFr.SIZE_16:
+      return h.size16;
+    case u.EFr.SIZE_20:
+      return h.size20;
+    case u.EFr.SIZE_24:
     default:
-      return Chunk826529.size24
+      return h.size24
   }
 }
 
 function I() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
-  switch (module) {
-    case Chunk481060.EFr.SIZE_16:
-    case Chunk481060.EFr.SIZE_20:
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : u.EFr.SIZE_24;
+  switch (e) {
+    case u.EFr.SIZE_16:
+    case u.EFr.SIZE_20:
       return "text-xxs/semibold";
-    case Chunk481060.EFr.SIZE_24:
+    case u.EFr.SIZE_24:
     default:
       return "text-xs/medium"
   }

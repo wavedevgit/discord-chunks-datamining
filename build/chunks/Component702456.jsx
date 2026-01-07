@@ -59,10 +59,10 @@ function Z(e) {
     var e, t;
     await p.Z.openPrivateChannel({
       recipientIds: [i.id],
-      location: h.Z.FREQUENT_FRIENDS_ROW
+      location: m.Z.FREQUENT_FRIENDS_ROW
     });
     let n = O.Z.getDMFromUserId(i.id);
-    null != n && (0, m.yw)(P.rMx.CHANNEL_OPENED, (e = function(e) {
+    null != n && (0, h.yw)(P.rMx.CHANNEL_OPENED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -79,8 +79,8 @@ function Z(e) {
         })
       }
       return e
-    }({}, (0, m.$H)(n)), t = t = {
-      location: "".concat(h.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
+    }({}, (0, h.$H)(n)), t = t = {
+      location: "".concat(m.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -120,85 +120,85 @@ function Z(e) {
 function w() {
   let {
     enabled: e
-  } = (0, Chunk399521.Q)("frequent_friends_row"), t = function() {
-    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => _.Z.compare(e.otherUserId, t.otherUserId))),
-      t = (0, Chunk442837.Wu)([Chunk594174.default, Chunk699516.Z], () => {
-        let t = module.map(e => e.otherUserId),
+  } = (0, j.Q)("frequent_friends_row"), t = function() {
+    let e = (0, s.Wu)([_.Z], () => [..._.Z.getUserAffinities()].sort((e, t) => _.Z.compare(e.otherUserId, t.otherUserId))),
+      t = (0, s.Wu)([S.default, I.Z], () => {
+        let t = e.map(e => e.otherUserId),
           n = [];
-        for (let e of exports)
-          if (require.length < 5) {
-            let t = Chunk594174.default.getUser(module);
-            !(0, Chunk823379.lm)(exports) || Chunk699516.Z.isIgnored(exports.id) || Chunk699516.Z.isBlocked(exports.id) || require.push(exports)
+        for (let e of t)
+          if (n.length < 5) {
+            let t = S.default.getUser(e);
+            !(0, N.lm)(t) || I.Z.isIgnored(t.id) || I.Z.isBlocked(t.id) || n.push(t)
           } else break;
-        return require
-      }, [module]),
-      n = Chunk473749.useMemo(() => {
+        return n
+      }, [e]),
+      n = i.useMemo(() => {
         var n, r;
-        if (exports.length < 5) returnfalse;
-        let i = module.findIndex(e => e.otherUserId === t[4].id);
-        return !!(Chunk473749 < module.length - 1) && !!((null == (n = module[Chunk473749]) ? true : require.communicationProbability) - .25 <= (null == (r = module[Chunk473749 + 1]) ? true : Chunk54381.communicationProbability))
-      }, [module, exports]);
-    return exports.length < 3 ? null : {
-      frequentFriends: exports,
-      showCompetitiveSpot: require
+        if (t.length < 5) returnfalse;
+        let i = e.findIndex(e => e.otherUserId === t[4].id);
+        return !!(i < e.length - 1) && !!((null == (n = e[i]) ? true : n.communicationProbability) - .25 <= (null == (r = e[i + 1]) ? true : r.communicationProbability))
+      }, [e, t]);
+    return t.length < 3 ? null : {
+      frequentFriends: t,
+      showCompetitiveSpot: n
     }
-  }(), n = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)), l = (0, Chunk442837.e7)([Chunk594174.default], () => {
+  }(), n = (0, s.e7)([v.Z], () => v.Z.hasConsented(P.pjP.PERSONALIZATION)), l = (0, s.e7)([S.default], () => {
     var e, t;
-    return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed) && exports
-  }), [p, h] = Chunk473749.useState({
+    return null != (t = null == (e = S.default.getCurrentUser()) ? true : e.nsfwAllowed) && t
+  }), [p, m] = i.useState({
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), m = Chunk473749.useRef(null), E = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.ipCountryCode), O = (0, Chunk81643.gD)(), y = Chunk473749.useCallback(() => {
+  }), h = i.useRef(null), E = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), y = i.useCallback(() => {
     var e;
-    let t = null == (e = Chunk367907.current) ? true : module.getScrollerNode();
-    null != exports && Chunk100527({
-      scrollLeft: exports.scrollLeft,
-      scrollWidth: exports.scrollWidth,
-      clientWidth: exports.clientWidth
+    let t = null == (e = h.current) ? true : e.getScrollerNode();
+    null != t && m({
+      scrollLeft: t.scrollLeft,
+      scrollWidth: t.scrollWidth,
+      clientWidth: t.clientWidth
     })
   }, []);
-  Chunk473749.useEffect(() => {
-    (null == exports ? true : exports.frequentFriends.length) != null && Chunk158776()
-  }, [null == exports ? true : exports.frequentFriends.length, null == exports ? true : exports.showCompetitiveSpot, Chunk158776]);
-  let C = (0, Chunk393903.y)(Chunk158776, []),
-    w = Chunk473749.useCallback(e => {
+  i.useEffect(() => {
+    (null == t ? true : t.frequentFriends.length) != null && y()
+  }, [null == t ? true : t.frequentFriends.length, null == t ? true : t.showCompetitiveSpot, y]);
+  let C = (0, f.y)(y, []),
+    w = i.useCallback(e => {
       let t = e.currentTarget;
-      h({
+      m({
         scrollLeft: t.scrollLeft,
         scrollWidth: t.scrollWidth,
         clientWidth: t.clientWidth
       })
-    }, [Chunk100527]);
-  if (Chunk473749.useEffect(() => {
-      (0, Chunk355467.GE)()
-    }, []), !module || null == exports || !require) return null;
+    }, [m]);
+  if (i.useEffect(() => {
+      (0, d.GE)()
+    }, []), !e || null == t || !n) return null;
   let {
     frequentFriends: L,
     showCompetitiveSpot: R
-  } = exports, D = (Chunk518950 === Chunk742280.S.AU || Chunk518950 === Chunk742280.S.GB) && !Chunk592125, M = null != Chunk518950 && Chunk742280.M.EU_COUNTRIES.has(Chunk518950) && !Chunk120356, k = !D && !M && null != Chunk518950 && R, U = Chunk493683.scrollWidth > Chunk493683.clientWidth, G = Chunk493683.scrollLeft > 0, H = Chunk493683.scrollLeft < Chunk493683.scrollWidth - Chunk493683.clientWidth - 2;
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk938359.frequentFriendsRow,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk938359.frequentFriendsHeader,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  } = t, D = (E === o.S.AU || E === o.S.GB) && !O, M = null != E && o.M.EU_COUNTRIES.has(E) && !l, k = !D && !M && null != E && R, U = p.scrollWidth > p.clientWidth, G = p.scrollLeft > 0, H = p.scrollLeft < p.scrollWidth - p.clientWidth - 2;
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: A.frequentFriendsRow,
+      children: [(0, r.jsxs)("div", {
+        className: A.frequentFriendsHeader,
+        children: [(0, r.jsx)(u.Text, {
           variant: "text-sm/semibold",
-          className: Chunk938359.frequentFriendsTitle,
-          children: Chunk388032.intl.string(Chunk388032.t.QEh90H)
-        }), (0, Chunk54381.jsx)(Chunk681715.u, {
-          text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
-          children: (0, Chunk54381.jsx)(Chunk481060.d3s, {
-            className: Chunk938359.frequentFriendsInfoIcon
+          className: A.frequentFriendsTitle,
+          children: x.intl.string(x.t.QEh90H)
+        }), (0, r.jsx)(c.u, {
+          text: x.intl.string(x.t.tqCMcU),
+          children: (0, r.jsx)(u.d3s, {
+            className: A.frequentFriendsInfoIcon
           })
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.xVE, {
+      }), (0, r.jsx)(u.xVE, {
         ref: e => {
-          m.current = e, C.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+          h.current = e, C.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
-        className: a()(Chunk938359.frequentFriendsAvatars, {
-          [Chunk938359.scrollMaskLeft]: U && G,
-          [Chunk938359.scrollMaskRight]: U && H
+        className: a()(A.frequentFriendsAvatars, {
+          [A.scrollMaskLeft]: U && G,
+          [A.scrollMaskRight]: U && H
         }),
         orientation: "horizontal",
         onScroll: w,
@@ -208,6 +208,6 @@ function w() {
           isCompetitive: k && t === L.length - 1
         }, e.id))
       })]
-    }), (0, Chunk54381.jsx)(Chunk791250.d, {})]
+    }), (0, r.jsx)(b.d, {})]
   })
 }

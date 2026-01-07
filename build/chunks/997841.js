@@ -17,7 +17,7 @@ Chunk507604 && Chunk621523(function() {
   }
   var t = {},
     n = "",
-    r = module ? "dgimsy" : "gimsy",
+    r = e ? "dgimsy" : "gimsy",
     i = function(e, r) {
       Object.defineProperty(t, e, {
         get: function() {
@@ -32,8 +32,8 @@ Chunk507604 && Chunk621523(function() {
       multiline: "m",
       sticky: "y"
     };
-  for (var o in module && (Chunk573078.hasIndices = "d"), Chunk573078) Chunk507604(Chunk503463, Chunk573078[Chunk503463]);
-  return Object.getOwnPropertyDescriptor(c, "flags").get.call(exports) !== Chunk127849 || require !== Chunk127849
+  for (var o in e && (a.hasIndices = "d"), a) i(o, a[o]);
+  return Object.getOwnPropertyDescriptor(c, "flags").get.call(t) !== r || n !== r
 }) && Chunk573078(c, "flags", {
   configurable: true,
   get: Chunk503463

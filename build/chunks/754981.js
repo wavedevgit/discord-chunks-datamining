@@ -39,17 +39,17 @@ module.exports = function() {
       })
     }
   }
-  var t = module.prototype;
-  return exports.start = function() {
+  var t = e.prototype;
+  return t.start = function() {
     this.observer ? this.observer.observe(this.container, d) : this.container.addEventListener("DOMCharacterDataModified", this.onCharData)
-  }, exports.stopAndFlushMutations = function() {
+  }, t.stopAndFlushMutations = function() {
     var e = this.observer;
-    module ? (this.registerMutations(module.takeRecords()), module.disconnect()) : this.container.removeEventListener("DOMCharacterDataModified", this.onCharData);
+    e ? (this.registerMutations(e.takeRecords()), e.disconnect()) : this.container.removeEventListener("DOMCharacterDataModified", this.onCharData);
     var t = this.mutations;
-    return this.mutations = u(), exports
-  }, exports.registerMutations = function(e) {
+    return this.mutations = u(), t
+  }, t.registerMutations = function(e) {
     for (var t = 0; t < e.length; t++) this.registerMutation(e[t])
-  }, exports.getMutationTextContent = function(e) {
+  }, t.getMutationTextContent = function(e) {
     var t = e.type,
       n = e.target,
       r = e.removedNodes;
@@ -60,11 +60,11 @@ module.exports = function() {
       else if ("" !== n.textContent) return n.textContent
     }
     return null
-  }, exports.registerMutation = function(e) {
+  }, t.registerMutation = function(e) {
     var t = this.getMutationTextContent(e);
     if (null != t) {
       var n = c(a(e.target));
       this.mutations = this.mutations.set(n, t)
     }
-  }, module
+  }, e
 }()

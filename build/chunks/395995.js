@@ -8,10 +8,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk169382 = require("./169382.js");
 
 function a() {
-  let e = (0, Chunk169382.l)(),
-    t = (0, Chunk828700.k6)(),
-    n = Chunk473749.useRef(null),
-    a = Chunk473749.useCallback(r => {
+  let e = (0, l.l)(),
+    t = (0, i.k6)(),
+    n = r.useRef(null),
+    a = r.useCallback(r => {
       var i;
       let l = new URLSearchParams(null != (i = n.current) ? i : e);
       for (let [e, t] of Object.entries(r)) null == t ? l.delete(e) : l.set(e, t);
@@ -20,6 +20,6 @@ function a() {
       }), Promise.resolve().then(() => {
         n.current = null
       })
-    }, [module, exports]);
-  return [module, a]
+    }, [e, t]);
+  return [e, a]
 }

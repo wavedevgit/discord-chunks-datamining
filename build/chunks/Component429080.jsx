@@ -60,18 +60,18 @@ let b = function(e) {
     }), n))
   }, [t, O, E]);
   return (0, r.jsx)("div", {
-    className: h.previewBackground,
+    className: m.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: h.previewCard,
+      className: m.previewCard,
       children: [(0, r.jsx)(s.Heading, {
-        className: m.heading,
+        className: h.heading,
         variant: "heading-md/semibold",
         children: g.intl.string(g.t.jY7Zxg)
       }), (0, r.jsx)("div", {
-        className: m.previewDescription,
+        className: h.previewDescription,
         children: g.intl.string(g.t.q3hbne)
       }), (0, r.jsx)("div", {
-        className: m.memberListContainer,
+        className: h.memberListContainer,
         children: (0, r.jsx)(s.yRy, {
           targetElementRef: b,
           renderPopout: v,
@@ -86,21 +86,21 @@ let b = function(e) {
           scrollBehavior: "close",
           children: () => (0, r.jsx)("div", {
             ref: b,
-            className: a()(m.minimalMemberItem, {
-              [m.selected]: n
+            className: a()(h.minimalMemberItem, {
+              [h.selected]: n
             }),
             children: (0, r.jsx)(s.P3F, {
               onClick: () => l(!n),
               tabIndex: 0,
               children: (0, r.jsxs)("div", {
-                className: m.memberItemContent,
+                className: h.memberItemContent,
                 children: [(0, r.jsx)(s.qEK, {
                   size: s.EFr.SIZE_32,
                   src: null == _ ? true : _.getAvatarURL(true, 32),
                   status: f.Skl.ONLINE,
                   "aria-label": null == _ ? true : _.username
                 }), (0, r.jsxs)("div", {
-                  className: m.memberInfo,
+                  className: h.memberInfo,
                   children: [(0, r.jsx)(s.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",

@@ -43,7 +43,7 @@ function h(e) {
 function g() {
   null != _ && clearInterval(_), d.loop(), p = c;
   let e = y();
-  _ = setInterval(() => m(module), l)
+  _ = setInterval(() => m(e), l)
 }
 
 function E() {

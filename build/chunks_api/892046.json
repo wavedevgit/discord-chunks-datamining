@@ -1,1 +1,0 @@
-{"id":"892046","type":"experiment","data":{"id":"2024-09_quests_trophy_case","kind":"user","label":"Trophy Case","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Control","config":{"enabled":false}},{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"1272"}}

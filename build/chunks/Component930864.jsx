@@ -65,12 +65,12 @@ function E(e, t) {
 }
 
 function _() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk614934.noResults,
-    children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+  return (0, l.jsx)("div", {
+    className: D.noResults,
+    children: (0, l.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t.V6nAfF)
+      children: Z.intl.string(Z.t.V6nAfF)
     })
   })
 }

@@ -30,20 +30,20 @@ let l = 4,
   }));
 
 function d() {
-  let e = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.layoutDebuggingEnabled),
+  let e = (0, a.e7)([o.default], () => o.default.layoutDebuggingEnabled),
     {
       horizontalSpacing: t,
       verticalSpacing: n
     } = u();
-  return module ? (0, Chunk54381.jsx)("div", {
-    className: Chunk102032.container,
-    children: (0, Chunk54381.jsx)("div", {
-      className: Chunk102032.gridOverlay,
-      "data-horizontal": exports > 0,
-      "data-vertical": require > 0,
+  return e ? (0, r.jsx)("div", {
+    className: s.container,
+    children: (0, r.jsx)("div", {
+      className: s.gridOverlay,
+      "data-horizontal": t > 0,
+      "data-vertical": n > 0,
       style: {
-        "--custom-grid-horizontal-spacing": "".concat(exports, "px"),
-        "--custom-grid-vertical-spacing": "".concat(require, "px")
+        "--custom-grid-horizontal-spacing": "".concat(t, "px"),
+        "--custom-grid-vertical-spacing": "".concat(n, "px")
       }
     })
   }) : null

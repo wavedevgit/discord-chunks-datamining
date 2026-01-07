@@ -46,7 +46,7 @@ class u extends(r = Chunk473749.Component) {
     null != this.animation && (this.props.shouldAnimate && (null == e || !e.shouldAnimate) ? this.props.resetOnPlay ? this.animation.goToAndPlay(0) : this.animation.play() : !this.props.shouldAnimate && (null == e || e.shouldAnimate) && (this.animation.pause(), null != this.props.pauseAtFrame && this.animation.goToAndStop(this.props.pauseAtFrame, true)))
   }
   render() {
-    return (0, Chunk54381.jsx)("div", {
+    return (0, i.jsx)("div", {
       className: this.props.className,
       ref: this.animationRef
     })

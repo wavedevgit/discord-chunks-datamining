@@ -224,7 +224,7 @@ class w extends(r = Chunk473749.Component) {
     let {
       readyState: e
     } = this.state;
-    module === Chunk981631.zo9.LOADING && this.loadImage(this.getSrc(this.getRatio(), w.isAnimated(this.props)), this.handleImageLoad), w.isAnimated(this.props) && this.observeVisibility()
+    e === b.zo9.LOADING && this.loadImage(this.getSrc(this.getRatio(), w.isAnimated(this.props)), this.handleImageLoad), w.isAnimated(this.props) && this.observeVisibility()
   }
   componentDidUpdate(e) {
     let t = w.isAnimated(this.props);
@@ -271,15 +271,15 @@ class w extends(r = Chunk473749.Component) {
       mediaLayoutType: i,
       useFullWidth: a
     } = this.props;
-    return Chunk54381 === Chunk217702.hV.MOSAIC && Chunk473749 ? (0, Chunk956664.rn)({
-      width: module,
-      height: exports,
-      maxWidth: require,
+    return i === y.hV.MOSAIC && a ? (0, E.rn)({
+      width: e,
+      height: t,
+      maxWidth: n,
       maxHeight: r
-    }) : (0, Chunk956664.Dc)({
-      width: module,
-      height: exports,
-      maxWidth: require,
+    }) : (0, E.Dc)({
+      width: e,
+      height: t,
+      maxWidth: n,
       maxHeight: r
     })
   }
@@ -288,7 +288,7 @@ class w extends(r = Chunk473749.Component) {
       mediaLayoutType: e,
       responsive: t
     } = this.props;
-    return null != module ? module : exports ? Chunk217702.hV.RESPONSIVE : Chunk217702.hV.STATIC
+    return null != e ? e : t ? y.hV.RESPONSIVE : y.hV.STATIC
   }
   loadImage(e, t) {
     let {
@@ -334,15 +334,15 @@ class w extends(r = Chunk473749.Component) {
       readyState: x,
       hasMouseOver: L,
       hasFocus: j
-    } = this.state, M = null != require, k = this.getRatio(), U = (0, Chunk392711.clamp)(Math.round(Chunk866960 * k), null != Chunk768581 ? Chunk768581 : 0, null != Chunk217702 ? Chunk217702 : 1 / 0), G = (0, Chunk392711.clamp)(Math.round(Chunk626135 * k), null != Chunk956664 ? Chunk956664 : 0, null != O ? O : 1 / 0), Z = {
-      alt: module,
+    } = this.state, M = null != n, k = this.getRatio(), U = (0, o.clamp)(Math.round(m * k), null != g ? g : 0, null != y ? y : 1 / 0), G = (0, o.clamp)(Math.round(h * k), null != E ? E : 0, null != O ? O : 1 / 0), Z = {
+      alt: e,
       readyState: x,
-      onContextMenu: null != Chunk473749 ? Chunk473749 : true,
+      onContextMenu: null != a ? a : true,
       zoomable: M,
-      className: Chunk818083,
-      imageClassName: Chunk279745,
-      minWidth: Chunk768581,
-      minHeight: Chunk956664,
+      className: u,
+      imageClassName: d,
+      minWidth: g,
+      minHeight: E,
       mediaLayoutType: this.getType(),
       limitResponsiveWidth: C,
       useFullWidth: A,
@@ -354,7 +354,7 @@ class w extends(r = Chunk473749.Component) {
       placeholderVersion: P,
       dataSafeSrc: R,
       srcIsAnimated: D,
-      children: null != Chunk134432 ? e => {
+      children: null != f ? e => {
         let {
           src: t,
           size: n,
@@ -374,15 +374,15 @@ class w extends(r = Chunk473749.Component) {
       onBlur: this.onBlur
     };
     if (1 === Z.width && 1 === Z.height) return null;
-    switch ((M || null != S) && (Z.onClick = this.onClick), r && (Z.original = null != Chunk622535 && "" !== Chunk622535 ? Chunk622535 : Z.src), x) {
-      case Chunk981631.zo9.LOADING:
-        null != exports && (Z.src = exports);
+    switch ((M || null != S) && (Z.onClick = this.onClick), r && (Z.original = null != l && "" !== l ? l : Z.src), x) {
+      case b.zo9.LOADING:
+        null != t && (Z.src = t);
         break;
-      case Chunk981631.zo9.READY:
+      case b.zo9.READY:
         if (w.isAnimated(this.props)) {
           Z.onMouseLeave = this.onMouseLeave;
-          let e = (Chunk286379 || L || j) && (null == Chunk740492 || Chunk740492) && w.visibilityObserver.isVisible(this);
-          module ? (Z.src = this.getSrc(k), Z.renderAccessory = I) : (Z.src = this.getSrc(k, !Chunk797614 || !Chunk286379), Z.renderAccessory = this.renderAccessory), null != Chunk134432 && (Z.children = t => {
+          let e = (s || L || j) && (null == _ || _) && w.visibilityObserver.isVisible(this);
+          e ? (Z.src = this.getSrc(k), Z.renderAccessory = I) : (Z.src = this.getSrc(k, !p || !s), Z.renderAccessory = this.renderAccessory), null != f && (Z.children = t => {
             let {
               src: n,
               size: r,
@@ -399,7 +399,7 @@ class w extends(r = Chunk473749.Component) {
           })
         } else Z.src = this.getSrc(k)
     }
-    return (0, Chunk54381.jsx)(Chunk916616.E, v({
+    return (0, i.jsx)(c.E, v({
       ref: this._imageRef
     }, Z))
   }

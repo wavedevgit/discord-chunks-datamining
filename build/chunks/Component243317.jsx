@@ -12,11 +12,11 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk809946 = require("./809946.js");
 
 function l() {
-  return (0, Chunk54381.jsx)(Chunk28664.u, {
-    text: Chunk388032.intl.string(Chunk388032.t["RO/KYj"]),
-    children: (0, Chunk54381.jsx)("div", {
-      className: Chunk809946.badge,
-      children: (0, Chunk54381.jsx)(Chunk481060.LQn, {
+  return (0, r.jsx)(i.u, {
+    text: o.intl.string(o.t["RO/KYj"]),
+    children: (0, r.jsx)("div", {
+      className: s.badge,
+      children: (0, r.jsx)(a.LQn, {
         color: "currentColor",
         size: "custom",
         width: "1rem",

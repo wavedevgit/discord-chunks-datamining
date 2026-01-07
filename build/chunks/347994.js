@@ -39,9 +39,9 @@ class f {
       USER_SETTINGS_PROTO_ENQUEUE_UPDATE: () => this.throttledOnChange(),
       USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: () => this.throttledOnChange()
     }), u(this, "handleUserSettingsProtoChange", () => {
-      let e = Chunk314897.default.getId(),
-        t = Chunk261875.Z.database(module);
-      null == exports || exports.transaction(e => {
+      let e = s.default.getId(),
+        t = c.Z.database(e);
+      null == t || t.transaction(e => {
         var t, n;
         let r = o.Z.computeState(),
           i = l.Z.userSettingsTransaction(e);

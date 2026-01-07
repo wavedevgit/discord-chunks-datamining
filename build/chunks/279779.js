@@ -139,7 +139,7 @@ class A extends Chunk147913.Z {
     null != this._worker && (this._worker.terminate(), this._worker = null)
   }
   rebootWebworker() {
-    null != this._worker && (this._worker.terminate(), this._worker = null), this._worker = new Worker(new URL("/assets/" + require.u("69731"), require.b))
+    null != this._worker && (this._worker.terminate(), this._worker = null), this._worker = new Worker(new URL("/assets/" + n.u("69731"), n.b))
   }
   updateUsers(e, t) {
     let {
@@ -183,7 +183,7 @@ class A extends Chunk147913.Z {
     let {
       _worker: e
     } = this;
-    return null == module ? Promise.resolve(null) : new Promise(t => {
+    return null == e ? Promise.resolve(null) : new Promise(t => {
       let n = (0, a.Z)(),
         r = i => {
           let a = i.data;

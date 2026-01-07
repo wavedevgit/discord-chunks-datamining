@@ -8,8 +8,8 @@ var Chunk81643 = require("./81643.js"),
   Chunk128064 = require("./128064.js"),
   Chunk312870 = require("./312870.js");
 let o = () => {
-  let e = (0, Chunk312870.U)("shouldAgeVerifyForDMDefaultOff"),
-    t = (0, Chunk128064.c_)("shouldAgeVerifyForDMDefaultOff"),
-    n = module || exports;
-  return (0, Chunk81643.sf)() && require
+  let e = (0, a.U)("shouldAgeVerifyForDMDefaultOff"),
+    t = (0, i.c_)("shouldAgeVerifyForDMDefaultOff"),
+    n = e || t;
+  return (0, r.sf)() && n
 }

@@ -113,44 +113,44 @@ class h extends(r = Chunk473749.Component) {
   }
   async flyAnimate() {
     var e;
-    let t = Chunk82923.Z.spring(this.y, {
+    let t = u.Z.spring(this.y, {
         toValue: b.FALLING.Y_VALUE,
         overshootClamping: true
       }),
-      n = Chunk82923.Z.spring(this.fireScale, {
+      n = u.Z.spring(this.fireScale, {
         toValue: b.FALLING.FIRE_VALUE,
         overshootClamping: true
       }),
-      r = Chunk82923.Z.parallel([exports, require]),
-      i = Chunk82923.Z.timing(this.y, {
+      r = u.Z.parallel([t, n]),
+      i = u.Z.timing(this.y, {
         toValue: b.STAGING.Y_VALUE,
         duration: b.STAGING.DURATION
       }),
       l = this.createShakeAnimation(b.STAGING.SHAKE_COUNT, b.STAGING.DURATION, b.STAGING.SHAKE_INTENSITY),
       a = this.createFireAnimation(b.STAGING.FIRE_COUNT, b.STAGING.DURATION, b.STAGING.FIRE_MIN_INTENSITY, b.STAGING.FIRE_MAX_INTENSITY),
-      s = Chunk82923.Z.parallel([i, Chunk54381, Chunk473749]),
-      o = Chunk82923.Z.timing(this.y, {
+      s = u.Z.parallel([i, l, a]),
+      o = u.Z.timing(this.y, {
         toValue: b.FLYING.Y_VALUE,
         duration: b.FLYING.DURATION,
         easing: b.FLYING.Y_EASING
       }),
-      c = Chunk82923.Z.timing(this.x, {
+      c = u.Z.timing(this.x, {
         toValue: b.FLYING.X_VALUE,
         duration: b.FLYING.DURATION,
         easing: b.FLYING.X_EASING
       }),
-      d = Chunk82923.Z.timing(this.opacity, {
+      d = u.Z.timing(this.opacity, {
         toValue: b.FLYING.OPACITY_VALUE,
         duration: b.FLYING.DURATION / b.FLYING.OPACITY_DURATION_DIVIDEND,
         delay: b.FLYING.DURATION / b.FLYING.OPACITY_DURATION_DIVIDEND
       }),
       g = this.createFireAnimation(b.FLYING.FIRE_COUNT, b.FLYING.DURATION, b.FLYING.FIRE_MIN_INTENSITY, b.FLYING.FIRE_MAX_INTENSITY),
-      f = Chunk82923.Z.parallel([o, Chunk392711, d, Chunk583943]);
-    if (this.currentAnimation = Chunk82923.Z.sequence([r, Chunk120356, f]), await (null == (e = this.currentAnimation) ? true : module.start()), !this.isUnmounted) {
+      f = u.Z.parallel([o, c, d, g]);
+    if (this.currentAnimation = u.Z.sequence([r, s, f]), await (null == (e = this.currentAnimation) ? true : e.start()), !this.isUnmounted) {
       let {
         onFlyingComplete: e
       } = this.props;
-      null != module && module()
+      null != e && e()
     }
   }
   getWumpusStyle() {
@@ -181,8 +181,8 @@ class h extends(r = Chunk473749.Component) {
       className: e,
       style: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk82923.Z.div, {
-      className: o()(Chunk583943.animation, module),
+    return (0, l.jsxs)(u.Z.div, {
+      className: o()(g.animation, e),
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -194,21 +194,21 @@ class h extends(r = Chunk473749.Component) {
           })
         }
         return e
-      }({}, exports, this.getWumpusStyle()),
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk583943.fireTopWrapper,
-        children: (0, Chunk54381.jsx)(Chunk82923.Z.div, {
-          className: Chunk583943.fire,
+      }({}, t, this.getWumpusStyle()),
+      children: [(0, l.jsx)("div", {
+        className: g.fireTopWrapper,
+        children: (0, l.jsx)(u.Z.div, {
+          className: g.fire,
           style: this.getFireStyle()
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk583943.fireBottomWrapper,
-        children: (0, Chunk54381.jsx)(Chunk82923.Z.div, {
-          className: Chunk583943.fire,
+      }), (0, l.jsx)("div", {
+        className: g.fireBottomWrapper,
+        children: (0, l.jsx)(u.Z.div, {
+          className: g.fire,
           style: this.getFireStyle()
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk583943.wumpus
+      }), (0, l.jsx)("div", {
+        className: g.wumpus
       })]
     })
   }

@@ -106,18 +106,18 @@ async function A(e) {
 }
 async function N() {
   let e = Date.now(),
-    t = Chunk678694.Z.getLastFetchTimeMs();
-  if (null != exports && exports + I > module) return;
-  let n = await Chunk544891.tn.get({
-    url: Chunk981631.ANM.APPLICATION_DIRECTORY_CATEGORIES,
+    t = _.Z.getLastFetchTimeMs();
+  if (null != t && t + I > e) return;
+  let n = await l.tn.get({
+    url: b.ANM.APPLICATION_DIRECTORY_CATEGORIES,
     query: {
-      locale: Chunk706454.default.locale
+      locale: u.default.locale
     },
     rejectWithError: false
   });
-  Chunk570140.Z.dispatch({
+  c.Z.dispatch({
     type: "APPLICATION_DIRECTORY_FETCH_CATEGORIES_SUCCESS",
-    categories: require.body
+    categories: n.body
   })
 }
 async function P(e) {
@@ -283,78 +283,78 @@ async function R(e) {
 }
 
 function w() {
-  return (0, Chunk358085.isAndroid)() ? Chunk344372.R.ANDROID : (0, Chunk358085.isIOS)() ? Chunk344372.R.IOS : Chunk344372.R.WEB
+  return (0, f.isAndroid)() ? a.R.ANDROID : (0, f.isIOS)() ? a.R.IOS : a.R.WEB
 }
 async function D() {
   let {
-    surface: e = Chunk973693.Y.APPLICATION_DIRECTORY,
-    activeState: t = Chunk535655.E.ACTIVE
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = Chunk857192.default.disableAppCollectionsCache, r = Date.now(), a = Chunk425986.Z.getFetchState({
-    surface: module,
-    activeState: exports
-  }), s = Chunk425986.Z.getLastFetchTimeMs({
-    surface: module,
-    activeState: exports
+    surface: e = o.Y.APPLICATION_DIRECTORY,
+    activeState: t = i.E.ACTIVE
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, n = d.default.disableAppCollectionsCache, r = Date.now(), a = m.Z.getFetchState({
+    surface: e,
+    activeState: t
+  }), s = m.Z.getLastFetchTimeMs({
+    surface: e,
+    activeState: t
   });
-  if (Chunk344372 === Chunk425986.M.FETCHING) return;
-  let f = !require && exports === Chunk535655.E.ACTIVE;
-  if (!Chunk358085 || null == Chunk288385 || !(Chunk288385 + I > Chunk261470)) {
-    Chunk570140.Z.dispatch({
+  if (a === m.M.FETCHING) return;
+  let f = !n && t === i.E.ACTIVE;
+  if (!f || null == s || !(s + I > r)) {
+    c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS",
-      surface: module,
-      activeState: exports
+      surface: e,
+      activeState: t
     });
     try {
-      let n = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.APPLICATION_DIRECTORY_COLLECTIONS,
+      let n = await l.tn.get({
+        url: b.ANM.APPLICATION_DIRECTORY_COLLECTIONS,
         query: {
-          surface: module,
-          active_state: exports,
+          surface: e,
+          active_state: t,
           platform: w(),
-          locale: Chunk706454.default.locale,
-          cache: Chunk358085
+          locale: u.default.locale,
+          cache: f
         },
         rejectWithError: true
       });
-      Chunk570140.Z.dispatch({
+      c.Z.dispatch({
         type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS",
-        collections: require.body,
-        surface: module,
-        activeState: exports
+        collections: n.body,
+        surface: e,
+        activeState: t
       })
     } catch (n) {
-      Chunk570140.Z.dispatch({
+      c.Z.dispatch({
         type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE",
-        surface: module,
-        activeState: exports
+        surface: e,
+        activeState: t
       })
     }
   }
 }
 async function x() {
   let e = Date.now(),
-    t = Chunk204298.Z.getFetchState(),
-    n = Chunk204298.Z.getLastFetchTimeMs(),
-    r = Chunk204298.Z.getNextFetchRetryTimeMs();
-  if (exports !== Chunk204298.M.FETCHING && (null == require || !(require + S > module)) && (null == Chunk261470 || !(module < Chunk261470))) {
-    Chunk570140.Z.dispatch({
+    t = E.Z.getFetchState(),
+    n = E.Z.getLastFetchTimeMs(),
+    r = E.Z.getNextFetchRetryTimeMs();
+  if (t !== E.M.FETCHING && (null == n || !(n + S > e)) && (null == r || !(e < r))) {
+    c.Z.dispatch({
       type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS"
     });
     try {
-      let e = await Chunk544891.tn.get({
-        url: Chunk981631.ANM.INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS,
+      let e = await l.tn.get({
+        url: b.ANM.INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS,
         rejectWithError: false
       });
-      Chunk570140.Z.dispatch({
+      c.Z.dispatch({
         type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_SUCCESS",
-        guildIdToApplicationIds: module.body
+        guildIdToApplicationIds: e.body
       })
     } catch (t) {
       var i;
-      let e = (null == exports ? true : exports.status) === 429;
-      Chunk570140.Z.dispatch({
+      let e = (null == t ? true : t.status) === 429;
+      c.Z.dispatch({
         type: "FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS_FAILURE",
-        retryAfterSeconds: module ? null == exports || null == (i = exports.body) ? true : Chunk535655.retry_after : true
+        retryAfterSeconds: e ? null == t || null == (i = t.body) ? true : i.retry_after : true
       })
     }
   }

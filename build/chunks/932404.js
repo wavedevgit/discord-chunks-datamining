@@ -38,19 +38,19 @@ function o(e, t) {
 }
 
 function s() {
-  return Chunk570140.Z.dispatch({
+  return r.Z.dispatch({
     type: "OVERLAY_OOP_UI_SHOW_INACTIVE_SUCCESS"
   })
 }
 
 function l() {
-  return Chunk570140.Z.dispatch({
+  return r.Z.dispatch({
     type: "OVERLAY_OOP_UI_INITIALIZED"
   })
 }
 
 function c() {
-  return Chunk570140.Z.dispatch({
+  return r.Z.dispatch({
     type: "OVERLAY_V3_LOAD_NATIVE_MODULE"
   })
 }
@@ -63,7 +63,7 @@ function u(e) {
 }
 
 function d() {
-  return Chunk570140.Z.dispatch({
+  return r.Z.dispatch({
     type: "OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS"
   })
 }

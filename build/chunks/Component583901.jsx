@@ -64,14 +64,14 @@ function O(e, t) {
 }
 
 function v() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk236510.selectionCircle,
-    children: (0, Chunk54381.jsx)(Chunk481060.owK, {
+  return (0, r.jsx)("div", {
+    className: g.selectionCircle,
+    children: (0, r.jsx)(f.owK, {
       size: "md",
       color: "currentColor",
-      className: Chunk236510.checkmarkCircle,
-      colorClass: Chunk236510.checkmark,
-      secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE.css
+      className: g.checkmarkCircle,
+      colorClass: g.checkmark,
+      secondaryColor: l.Z.unsafe_rawColors.WHITE.css
     })
   })
 }

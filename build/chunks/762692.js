@@ -92,7 +92,7 @@ let u = {
     })
   },
   resetSearchLayout: function() {
-    Chunk570140.Z.dispatch({
+    l.Z.dispatch({
       type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET"
     })
   }

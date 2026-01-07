@@ -34,10 +34,10 @@ function u(e) {
 }
 let d = {
   getActiveErrors: () => {
-    let e = Chunk199902.Z.getCurrentUserActiveStream();
-    return null != module && null != Chunk858340.Z.getHookError(Chunk981631.K3D.SOUND) ? [u({
-      type: Chunk458725.u.STREAM_SOUNDSHARE_FAILED
-    }, (0, Chunk442741.rT)((0, Chunk569545.V9)(module)))] : true
+    let e = i.Z.getCurrentUserActiveStream();
+    return null != e && null != a.Z.getHookError(l.K3D.SOUND) ? [u({
+      type: o.u.STREAM_SOUNDSHARE_FAILED
+    }, (0, s.rT)((0, r.V9)(e)))] : true
   },
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

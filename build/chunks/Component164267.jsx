@@ -44,14 +44,14 @@ function b(e, t) {
 }
 
 function f() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk585018.customPointer
+  return (0, n.jsx)("div", {
+    className: u.customPointer
   })
 }
 
 function d() {
-  return (0, Chunk54381.jsx)("div", {
-    className: c()(Chunk585018.customPointer, Chunk585018.huePointer)
+  return (0, n.jsx)("div", {
+    className: c()(u.customPointer, u.huePointer)
   })
 }
 let l = (0, Chunk167490.iS)(e => (0, n.jsxs)("div", {

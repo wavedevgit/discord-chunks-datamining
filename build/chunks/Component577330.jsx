@@ -10,10 +10,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk774667 = require("./774667.js");
 
 function a() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk774667.centerContainer,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      type: Chunk481060.$jN.Type.SPINNING_CIRCLE
+  return (0, r.jsx)("div", {
+    className: l.centerContainer,
+    children: (0, r.jsx)(i.$jN, {
+      type: i.$jN.Type.SPINNING_CIRCLE
     })
   })
 }

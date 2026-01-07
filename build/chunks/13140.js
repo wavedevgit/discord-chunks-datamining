@@ -91,7 +91,7 @@ function S(e, t, n) {
 }
 
 function I() {
-  return (0, Chunk358085.isLinux)() ? Chunk295907.Cg.LINUX : (0, Chunk358085.isMac)() ? Chunk295907.Cg.MACOS : (0, Chunk358085.isWindows)() ? Chunk295907.Cg.WINDOWS : __OVERLAY__ ? Chunk295907.Cg.WINDOWS : Chunk295907.Cg.BROWSER
+  return (0, c.isLinux)() ? d.Cg.LINUX : (0, c.isMac)() ? d.Cg.MACOS : (0, c.isWindows)() ? d.Cg.WINDOWS : __OVERLAY__ ? d.Cg.WINDOWS : d.Cg.BROWSER
 }
 
 function T(e) {

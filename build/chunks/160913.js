@@ -15,10 +15,10 @@ var Chunk913527 = require("./913527.js"),
   Chunk231338 = require("./231338.js");
 
 function f() {
-  let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    t = (0, Chunk442837.e7)([Chunk509545.Z], () => null != module && null != module.planIdFromItems ? Chunk509545.Z.get(null == module ? true : module.planIdFromItems) : null),
-    n = (0, Chunk442837.e7)([Chunk853872.Z], () => null != module && null != module.paymentSourceId ? Chunk853872.Z.getPaymentSource(module.paymentSourceId) : null, [module]),
-    r = null != require && Chunk231338.Uk.has(require.type),
-    f = (null == module ? true : module.status) === Chunk981631.O0b.PAST_DUE ? i()().diff(i()(module.currentPeriodStart), "days") : 0;
-  return !!(null != module && null != exports && (0, Chunk74538.uZ)(exports.id)) && Chunk913527 && f >= 0 && f <= (0, Chunk74538.lY)(module).days && module.status === Chunk981631.O0b.PAST_DUE && !module.isPurchasedExternally
+  let e = (0, a.e7)([l.Z], () => l.Z.getPremiumTypeSubscription()),
+    t = (0, a.e7)([s.Z], () => null != e && null != e.planIdFromItems ? s.Z.get(null == e ? true : e.planIdFromItems) : null),
+    n = (0, a.e7)([o.Z], () => null != e && null != e.paymentSourceId ? o.Z.getPaymentSource(e.paymentSourceId) : null, [e]),
+    r = null != n && d.Uk.has(n.type),
+    f = (null == e ? true : e.status) === u.O0b.PAST_DUE ? i()().diff(i()(e.currentPeriodStart), "days") : 0;
+  return !!(null != e && null != t && (0, c.uZ)(t.id)) && r && f >= 0 && f <= (0, c.lY)(e).days && e.status === u.O0b.PAST_DUE && !e.isPurchasedExternally
 }

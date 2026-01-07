@@ -75,8 +75,8 @@ let x = {
         borderWidth: o
       }) : null
     },
-    renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t.UPvOia)
+    renderTitle: () => (0, i.jsx)(g.PI, {
+      children: v.intl.string(v.t.UPvOia)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
@@ -117,8 +117,8 @@ let x = {
         showEmpty: o
       }) : null
     },
-    renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t.nFv3Gb)
+    renderTitle: () => (0, i.jsx)(g.PI, {
+      children: v.intl.string(v.t.nFv3Gb)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
@@ -148,7 +148,7 @@ let x = {
         pinned: t.pinned
       })
     },
-    renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, i.jsx)(g.PI, {
       children: "Click Zone Tester"
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
@@ -181,7 +181,7 @@ let x = {
         pinned: t.pinned
       })
     },
-    renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, i.jsx)(g.PI, {
       children: "Overlay Performance"
     }),
     renderButtons: e => (0, i.jsx)(g.RT, {
@@ -272,8 +272,8 @@ let x = {
         showEmpty: n
       })
     },
-    renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t.gnKWdS)
+    renderTitle: () => (0, i.jsx)(g.PI, {
+      children: v.intl.string(v.t.gnKWdS)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
@@ -300,11 +300,11 @@ let x = {
         locked: t
       })
     },
-    renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t["6gwSFY"])
+    renderTitle: () => (0, i.jsx)(g.PI, {
+      children: v.intl.string(v.t["6gwSFY"])
     }),
     renderButtons: () => null,
-    predicate: () => !(0, Chunk482798.XU)("FriendsPopout").enableOverlayWidget
+    predicate: () => !(0, l.XU)("FriendsPopout").enableOverlayWidget
   },
   [Chunk981631.Odu.FRIENDS]: {
     renderWidget(e) {
@@ -315,10 +315,10 @@ let x = {
         locked: t
       })
     },
-    renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t.TdEu5X)
+    renderTitle: () => (0, i.jsx)(g.PI, {
+      children: v.intl.string(v.t.TdEu5X)
     }),
     renderButtons: () => null,
-    predicate: () => (0, Chunk482798.XU)("FriendsPopout").enableOverlayWidget
+    predicate: () => (0, l.XU)("FriendsPopout").enableOverlayWidget
   }
 }

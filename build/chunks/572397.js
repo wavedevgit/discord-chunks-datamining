@@ -18,29 +18,29 @@ var Chunk473749 = require("./473749.js"),
   Chunk474936 = require("./474936.js"),
   Chunk874893 = require("./874893.js");
 let m = () => {
-    let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset),
-      t = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.useSystemTheme === Chunk874893.KW.ON),
-      [n, a] = (0, Chunk473749.useState)(exports);
-    return (0, Chunk473749.useEffect)(() => {
-      null == module && Chunk524437(exports)
-    }, [module, exports]), (0, Chunk473749.useCallback)(() => {
-      null != module && ((0, Chunk238302.kj)(), require && (0, Chunk781391.hi)(Chunk874893.KW.ON))
-    }, [module, require])
+    let e = (0, i.e7)([d.Z], () => d.Z.gradientPreset),
+      t = (0, i.e7)([s.ZP], () => s.ZP.useSystemTheme === _.KW.ON),
+      [n, a] = (0, r.useState)(t);
+    return (0, r.useEffect)(() => {
+      null == e && a(t)
+    }, [e, t]), (0, r.useCallback)(() => {
+      null != e && ((0, u.kj)(), n && (0, o.hi)(_.KW.ON))
+    }, [e, n])
   },
   h = () => {
     let {
       previewPaneVariant: e
-    } = (0, Chunk442837.cj)([Chunk514361.Z], () => ({
-      previewPaneVariant: Chunk514361.Z.isPreview ? Chunk474936.h1.FREE : Chunk474936.h1.PREMIUM_STANDARD
-    })), t = (0, Chunk442837.e7)([Chunk581883.Z], () => {
+    } = (0, i.cj)([d.Z], () => ({
+      previewPaneVariant: d.Z.isPreview ? p.h1.FREE : p.h1.PREMIUM_STANDARD
+    })), t = (0, i.e7)([l.Z], () => {
       var e;
-      let t = null == (e = Chunk581883.Z.settings.appearance) ? true : module.theme;
-      return "default ".concat(exports === Chunk524437.Q2.LIGHT ? Chunk981631.BRd.LIGHT : Chunk981631.BRd.DARK)
+      let t = null == (e = l.Z.settings.appearance) ? true : e.theme;
+      return "default ".concat(t === a.Q2.LIGHT ? f.BRd.LIGHT : f.BRd.DARK)
     });
-    return (0, Chunk473749.useCallback)(n => {
+    return (0, r.useCallback)(n => {
       c.default.track(n, {
         preview_pane_variant: e,
         original_theme: t
       })
-    }, [module, exports])
+    }, [e, t])
   }

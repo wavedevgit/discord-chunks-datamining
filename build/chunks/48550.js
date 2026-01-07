@@ -6,18 +6,18 @@ require.d(exports, {
 var Chunk388032 = require("./388032.jsx");
 let l = {
   get webauthn() {
-    return Chunk388032.intl.string(Chunk388032.t.gTH4Dp)
+    return r.intl.string(r.t.gTH4Dp)
   },
   get totp() {
-    return Chunk388032.intl.string(Chunk388032.t.nXKmyf)
+    return r.intl.string(r.t.nXKmyf)
   },
   get sms() {
-    return Chunk388032.intl.string(Chunk388032.t.ZbVwZW)
+    return r.intl.string(r.t.ZbVwZW)
   },
   get password() {
-    return Chunk388032.intl.string(Chunk388032.t["8F6hKS"])
+    return r.intl.string(r.t["8F6hKS"])
   },
   get backup() {
-    return Chunk388032.intl.string(Chunk388032.t.vhSRKf)
+    return r.intl.string(r.t.vhSRKf)
   }
 }

@@ -39,6 +39,6 @@ function p() {
   let {
     canShow: e,
     isFavoritesPerk: t
-  } = (0, Chunk362658.z)("useIsFavoritesGuildVisible"), n = (0, Chunk442837.e7)([Chunk853856.Z, Chunk592125.Z, Chunk496675.Z], () => module && f(Chunk853856.Z, Chunk592125.Z, Chunk496675.Z));
-  return !!exports || require
+  } = (0, u.z)("useIsFavoritesGuildVisible"), n = (0, a.e7)([c.Z, o.Z, s.Z], () => e && f(c.Z, o.Z, s.Z));
+  return !!t || n
 }

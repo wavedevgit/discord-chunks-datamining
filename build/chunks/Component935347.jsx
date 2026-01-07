@@ -41,8 +41,8 @@ class P extends Chunk473749.PureComponent {
   createSound() {
     let {
       soundpack: e
-    } = this.props, t = (0, Chunk460181.uk)("discodo", module);
-    return exports.volume = 1, exports
+    } = this.props, t = (0, h.uk)("discodo", e);
+    return t.volume = 1, t
   }
   componentDidMount() {
     this.setProblemsTimeout()
@@ -79,58 +79,58 @@ class P extends Chunk473749.PureComponent {
     {
       let i = this._loadingText,
         l = null;
-      return null != this._eventLoadingText && (i = this._eventLoadingText), null != exports && (i = exports.name, l = exports.incident_updates[0].body), (0, Chunk54381.jsxs)("div", {
-        className: Chunk528195.container,
-        "data-fade": require,
+      return null != this._eventLoadingText && (i = this._eventLoadingText), null != t && (i = t.name, l = t.incident_updates[0].body), (0, r.jsxs)("div", {
+        className: N.container,
+        "data-fade": n,
         style: {
           "--connecting-container-fade-duration": "".concat(200, "ms"),
           "--connecting-content-fade-duration": "".concat(150, "ms")
         },
-        children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk528195.content,
-          children: [(0, Chunk54381.jsx)(Chunk905656.Z, {
+        children: [(0, r.jsxs)("div", {
+          className: N.content,
+          children: [(0, r.jsx)(C.Z, {
             autoPlay: true,
-            loop: !module,
+            loop: !e,
             setRef: this.setVideoRef,
             onReady: this.handleReady,
-            className: a()(Chunk528195.spinner, this.state.ready ? Chunk528195.ready : "")
-          }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk528195.text,
-            children: [null != exports ? null : (0, Chunk54381.jsx)("div", {
-              className: Chunk528195.tipTitle,
-              children: Chunk388032.intl.string(Chunk388032.t.v0R1Lh)
-            }), (0, Chunk54381.jsx)("div", {
-              className: null != exports ? Chunk528195.title : Chunk528195.tip,
-              children: Chunk473749
-            }), (0, Chunk54381.jsx)("div", {
-              className: Chunk528195.body,
-              children: Chunk120356
+            className: a()(N.spinner, this.state.ready ? N.ready : "")
+          }), (0, r.jsxs)("div", {
+            className: N.text,
+            children: [null != t ? null : (0, r.jsx)("div", {
+              className: N.tipTitle,
+              children: T.intl.string(T.t.v0R1Lh)
+            }), (0, r.jsx)("div", {
+              className: null != t ? N.title : N.tip,
+              children: i
+            }), (0, r.jsx)("div", {
+              className: N.body,
+              children: l
             })]
           })]
-        }), (0, Chunk54381.jsxs)("div", {
-          className: a()(Chunk528195.problems, {
-            [Chunk528195.slideIn]: this.state.problems
+        }), (0, r.jsxs)("div", {
+          className: a()(N.problems, {
+            [N.slideIn]: this.state.problems
           }),
-          children: [(0, Chunk54381.jsx)("div", {
-            className: Chunk528195.problemsText,
-            children: Chunk388032.intl.string(Chunk388032.t.AG2zPM)
-          }), (0, Chunk54381.jsxs)("div", {
-            children: [(0, Chunk54381.jsxs)(Chunk481060.eee, {
-              className: Chunk528195.twitterLink,
-              href: Chunk981631.yXt.TWITTER_SUPPORT,
+          children: [(0, r.jsx)("div", {
+            className: N.problemsText,
+            children: T.intl.string(T.t.AG2zPM)
+          }), (0, r.jsxs)("div", {
+            children: [(0, r.jsxs)(d.eee, {
+              className: N.twitterLink,
+              href: S.yXt.TWITTER_SUPPORT,
               target: "_blank",
-              children: [(0, Chunk54381.jsx)(Chunk481060.TAi, {
+              children: [(0, r.jsx)(d.TAi, {
                 size: "xs",
                 color: "currentColor",
-                className: Chunk528195.icon
-              }), Chunk388032.intl.string(Chunk388032.t.KlyTbj)]
-            }), (0, Chunk54381.jsxs)(Chunk481060.eee, {
-              className: Chunk528195.statusLink,
-              href: Chunk981631.yXt.STATUS,
+                className: N.icon
+              }), T.intl.string(T.t.KlyTbj)]
+            }), (0, r.jsxs)(d.eee, {
+              className: N.statusLink,
+              href: S.yXt.STATUS,
               target: "_blank",
-              children: [(0, Chunk54381.jsx)(Chunk820254.Z, {
-                className: Chunk528195.icon
-              }), Chunk388032.intl.string(Chunk388032.t.AgXXyy)]
+              children: [(0, r.jsx)(v.Z, {
+                className: N.icon
+              }), T.intl.string(T.t.AgXXyy)]
             })]
           })]
         })]
@@ -202,7 +202,7 @@ class P extends Chunk473749.PureComponent {
       })];
       return E.default.locale.startsWith("en-") && e.push(T.intl.string(T.t.dQ9Wqk)), e[s().random(e.length - 1)]
     }()), j(this, "_eventLoadingText", function() {
-      let e = h.Z.getLoadingTips();
+      let e = m.Z.getLoadingTips();
       if (null != e && e.length > 0) return e[s().random(e.length - 1)]
     }()), j(this, "handleReady", () => {
       this.setState({
@@ -229,11 +229,11 @@ class P extends Chunk473749.PureComponent {
   }
 }
 let x = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z, Chunk607070.Z], () => ({
-  isTryingToConnect: Chunk38618.Z.isTryingToConnect(),
-  connected: Chunk38618.Z.isConnected(),
-  incident: Chunk215427.Z.getIncident(),
-  soundpack: Chunk474873.Z.getSoundpack(),
-  reducedMotion: Chunk607070.Z.useReducedMotion
+  isTryingToConnect: g.Z.isTryingToConnect(),
+  connected: g.Z.isConnected(),
+  incident: O.Z.getIncident(),
+  soundpack: b.Z.getSoundpack(),
+  reducedMotion: f.Z.useReducedMotion
 }))(e => {
   let {
     isTryingToConnect: t,

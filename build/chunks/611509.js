@@ -4,8 +4,8 @@ function t() {
   try {
     var n = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}))
   } catch (e) {}
-  return (module.exports = t = function() {
+  return (e.exports = t = function() {
     return !!n
-  }, module.exports.__esModule = true, module.exports.default = module.exports)()
+  }, e.exports.__esModule = true, e.exports.default = e.exports)()
 }
 module.exports = t, module.exports.__esModule = true, module.exports.default = module.exports

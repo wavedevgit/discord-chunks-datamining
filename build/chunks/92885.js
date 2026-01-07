@@ -15,15 +15,15 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.qs)(Chunk313789.n.NOTIFICATION_HOLIDAY_SOUNDPACK, {
   useTitle: () => {
-    let t = Chunk197344.Z.useHolidaySoundpack();
-    return null == module ? "" : Chunk388032.intl.format(Chunk388032.t["E/OyBr"], {
-      soundpack: Chunk388032.intl.string(module.soundpackLabel)
+    let t = u.Z.useHolidaySoundpack();
+    return null == t ? "" : c.intl.format(c.t["E/OyBr"], {
+      soundpack: c.intl.string(t.soundpackLabel)
     })
   },
   useValue: function() {
-    let t = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
-      e = Chunk197344.Z.useHolidaySoundpack();
-    return module === (null == exports ? true : exports.soundpack)
+    let t = (0, s.e7)([o.Z], () => o.Z.getSoundpack()),
+      e = u.Z.useHolidaySoundpack();
+    return t === (null == e ? true : e.soundpack)
   },
   setValue: function(t) {
     let e = u.Z.getHolidaySoundpack();

@@ -113,7 +113,7 @@ function A(e) {
 }
 
 function N() {
-  Object.values(Chunk65154.Yn).forEach(e => {
+  Object.values(d.Yn).forEach(e => {
     h[e] = {}
   })
 }
@@ -259,7 +259,7 @@ function B(e) {
 N();
 class V extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk131951.Z, Chunk594174.default)
+    this.waitFor(l.Z, c.default)
   }
   getSection() {
     return m
@@ -287,8 +287,8 @@ class V extends(r = Chunk442837.ZP.Store) {
     }
   }
   getAllStats() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return Object.values(h[module])
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : d.Yn.DEFAULT;
+    return Object.values(h[e])
   }
   getVideoStreams() {
     return S

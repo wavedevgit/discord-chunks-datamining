@@ -30,11 +30,11 @@ function _() {
     orbEligible: t,
     reset: n,
     hasFilters: a
-  } = (0, Chunk501431.S)(), o = Chunk120356(), {
+  } = (0, m.S)(), o = a(), {
     enabled: i
-  } = (0, Chunk825102.W)({
+  } = (0, g.W)({
     location: "Shop"
-  }), c = (0, Chunk381585.sp)(), u = Chunk473749.useCallback(e => {
+  }), c = (0, p.sp)(), u = l.useCallback(e => {
     b.default.track(C.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == c ? true : c.sessionId,
       page_section: null == c ? true : c.pageSection,
@@ -44,35 +44,35 @@ function _() {
       cta_name: e,
       page_type: "catalog"
     })
-  }, [Chunk255835]);
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk80241.filterBar,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk80241.filterSection, Chunk80241.itemType),
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+  }, [c]);
+  return (0, r.jsxs)("div", {
+    className: S.filterBar,
+    children: [(0, r.jsxs)("div", {
+      className: s()(S.filterSection, S.itemType),
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/semibold",
-        className: Chunk80241.filterTitle,
-        children: Chunk388032.intl.string(Chunk388032.t.Qk6r1a)
-      }), Chunk215023.xg.map(e => (0, r.jsx)(x, {
+        className: S.filterTitle,
+        children: v.intl.string(v.t.Qk6r1a)
+      }), h.xg.map(e => (0, r.jsx)(x, {
         filter: e,
         trackFilterAction: u
-      }, e)), Chunk335818 && (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
-        checked: exports,
+      }, e)), i && (0, r.jsx)(d.Checkbox, {
+        checked: t,
         onChange: () => {
-          Chunk28664("filter orb eligible ".concat(false === exports ? "on" : "off")), module()
+          u("filter orb eligible ".concat(false === t ? "on" : "off")), e()
         },
-        label: Chunk388032.intl.string(Chunk388032.t.AHHHgG)
+        label: v.intl.string(v.t.AHHHgG)
       })]
-    }), (0, Chunk54381.jsx)(O, {
-      trackFilterAction: Chunk28664
-    }), (0, Chunk54381.jsx)(T, {
-      trackFilterAction: Chunk28664
-    }), Chunk990705 && (0, Chunk54381.jsx)(Chunk481060.Button, {
+    }), (0, r.jsx)(O, {
+      trackFilterAction: u
+    }), (0, r.jsx)(T, {
+      trackFilterAction: u
+    }), o && (0, r.jsx)(d.Button, {
       variant: "secondary",
       onClick: () => {
-        Chunk28664("filter reset"), require()
+        u("filter reset"), n()
       },
-      text: Chunk388032.intl.string(Chunk388032.t.jwH6KZ),
+      text: v.intl.string(v.t.jwH6KZ),
       fullWidth: true
     })]
   })

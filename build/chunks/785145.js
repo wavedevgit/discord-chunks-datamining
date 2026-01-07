@@ -14,18 +14,18 @@ var Chunk473749 = require("./473749.js"),
 let u = new Set(Object.values(Chunk526761.NB)),
   d = e => null != e && u.has(e),
   f = () => {
-    let e = (0, Chunk399606.e7)([Chunk663389.Z], () => {
-        let e = Chunk663389.Z.getSubsection();
-        return d(module) ? module : Chunk526761.NB.USER_PROFILE
+    let e = (0, i.e7)([s.Z], () => {
+        let e = s.Z.getSubsection();
+        return d(e) ? e : c.NB.USER_PROFILE
       }),
-      t = Chunk473749.useCallback(t => {
+      t = r.useCallback(t => {
         e !== t && (0, o.openUserSettings)(a.n.PROFILE_PANEL, {
           section: l.oAB.PROFILE_CUSTOMIZATION,
           subsection: t
         })
-      }, [module]);
+      }, [e]);
     return {
-      subsection: module,
-      setSubsection: exports
+      subsection: e,
+      setSubsection: t
     }
   }

@@ -8,8 +8,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk959546 = require("./959546.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let o = async () => (await Chunk544891.tn.get({
-  url: Chunk981631.ANM.ENTITLEMENTS_FOR_APPLICATION(Chunk474936.CL),
+let o = async () => (await r.tn.get({
+  url: l.ANM.ENTITLEMENTS_FOR_APPLICATION(s.CL),
   oldFormErrors: true,
   query: {
     exclude_consumed: true,
@@ -32,32 +32,32 @@ let o = async () => (await Chunk544891.tn.get({
     rejectWithError: true
   })
 }, u = async () => {
-  await Chunk544891.tn.post({
+  await r.tn.post({
     url: "/debug/entitlements/fulfillment",
     rejectWithError: false
   })
 }, m = () => {
-  let [e, t] = Chunk473749.useState([]), [n, r] = Chunk473749.useState(false), i = (0, Chunk473749.useCallback)(async () => {
+  let [e, t] = a.useState([]), [n, r] = a.useState(false), i = (0, a.useCallback)(async () => {
     try {
-      Chunk544891(true);
+      r(true);
       let e = await o();
-      exports(module)
+      t(e)
     } finally {
-      Chunk544891(false)
+      r(false)
     }
-  }, []), l = (0, Chunk473749.useCallback)(async e => {
+  }, []), l = (0, a.useCallback)(async e => {
     await c(e), await i()
-  }, [Chunk959546]);
+  }, [i]);
   return {
-    grantFractionalPremium: Chunk981631,
-    deleteFractionalPremium: (0, Chunk473749.useCallback)(async e => {
+    grantFractionalPremium: l,
+    deleteFractionalPremium: (0, a.useCallback)(async e => {
       await d(e), await i()
-    }, [Chunk959546]),
-    triggerNextEntitlementFulfillment: (0, Chunk473749.useCallback)(async () => {
-      await u(), await Chunk959546()
-    }, [Chunk959546]),
-    refreshEntitlementList: Chunk959546,
-    entitlements: module,
-    loading: require
+    }, [i]),
+    triggerNextEntitlementFulfillment: (0, a.useCallback)(async () => {
+      await u(), await i()
+    }, [i]),
+    refreshEntitlementList: i,
+    entitlements: e,
+    loading: n
   }
 }

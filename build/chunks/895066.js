@@ -66,10 +66,10 @@ var h = function(e) {
 }({});
 class g extends Chunk47770.Z {
   start() {
-    this.connection.on(Chunk46973.Sh.Stats, this.sampleStats)
+    this.connection.on(o.Sh.Stats, this.sampleStats)
   }
   stop() {
-    this.connection.off(Chunk46973.Sh.Stats, this.sampleStats)
+    this.connection.off(o.Sh.Stats, this.sampleStats)
   }
   getMosStats() {
     let e = i().reduce(this.inboundStats, (e, t) => {
@@ -82,11 +82,11 @@ class g extends Chunk47770.Z {
       mosBuckets: [0, 0, 0, 0, 0]
     });
     return {
-      mos_mean: module.mosCount > 0 ? module.mosSum / module.mosCount : 0,
-      mos_1: module.mosBuckets[1],
-      mos_2: module.mosBuckets[2],
-      mos_3: module.mosBuckets[3],
-      mos_4: module.mosBuckets[4]
+      mos_mean: e.mosCount > 0 ? e.mosSum / e.mosCount : 0,
+      mos_1: e.mosBuckets[1],
+      mos_2: e.mosBuckets[2],
+      mos_3: e.mosBuckets[3],
+      mos_4: e.mosBuckets[4]
     }
   }
   getPacketStats() {
@@ -100,11 +100,11 @@ class g extends Chunk47770.Z {
     return {
       packets_sent: this.outboundStats.packetsSent,
       packets_sent_lost: this.outboundStats.packetsLost,
-      packets_received: module.packetsReceived,
-      packets_received_lost: module.packetsReceivedLost,
-      num_nacks_sent: module.nackCount,
-      fec_packets_received: module.fecPacketsReceived,
-      fec_packets_discarded: module.fecPacketsDiscarded
+      packets_received: e.packetsReceived,
+      packets_received_lost: e.packetsReceivedLost,
+      num_nacks_sent: e.nackCount,
+      fec_packets_received: e.fecPacketsReceived,
+      fec_packets_discarded: e.fecPacketsDiscarded
     }
   }
   getBytesStats() {
@@ -112,9 +112,9 @@ class g extends Chunk47770.Z {
       t = this.outboundStats.aggregationDurationMs / 1e3;
     return {
       bytes_sent: this.outboundStats.bytesSent,
-      bytes_received: module,
-      outbound_bandwidth_estimate: exports > 0 ? Math.round(8 * this.outboundStats.bytesAvailable / exports) : 0,
-      audio_target_bitrate: exports > 0 ? Math.round(8 * this.outboundStats.bytesTarget / exports) : 0
+      bytes_received: e,
+      outbound_bandwidth_estimate: t > 0 ? Math.round(8 * this.outboundStats.bytesAvailable / t) : 0,
+      audio_target_bitrate: t > 0 ? Math.round(8 * this.outboundStats.bytesTarget / t) : 0
     }
   }
   getNetworkStats() {
@@ -126,11 +126,11 @@ class g extends Chunk47770.Z {
   getBufferStats() {
     let e = i().reduce(this.inboundStats, (e, t) => ((null == e || null != t.bufferStats.audioJitterBuffer && null != e.audioJitterBuffer && t.bufferStats.audioJitterBuffer.p75 > e.audioJitterBuffer.p75) && (e = t.bufferStats), e), null);
     return f({}, m({
-      audio_jitter_buffer: null != module ? module.audioJitterBuffer : null,
-      audio_jitter_target: null != module ? module.audioJitterTarget : null,
-      audio_jitter_delay: null != module ? module.audioJitterDelay : null,
-      relative_reception_delay: null != module ? module.relativeReceptionDelay : null,
-      relative_playout_delay: null != module ? module.relativePlayoutDelay : null
+      audio_jitter_buffer: null != e ? e.audioJitterBuffer : null,
+      audio_jitter_target: null != e ? e.audioJitterTarget : null,
+      audio_jitter_delay: null != e ? e.audioJitterDelay : null,
+      relative_reception_delay: null != e ? e.relativeReceptionDelay : null,
+      relative_playout_delay: null != e ? e.relativePlayoutDelay : null
     }))
   }
   getFrameOpStats() {
@@ -144,13 +144,13 @@ class g extends Chunk47770.Z {
       cng: 0
     });
     return {
-      frame_op_silent: module.silent,
-      frame_op_normal: module.normal,
-      frame_op_merged: module.merged,
-      frame_op_expanded: module.expanded,
-      frame_op_accelerated: module.accelerated,
-      frame_op_preemptive_expanded: module.preemptiveExpanded,
-      frame_op_cng: module.cng
+      frame_op_silent: e.silent,
+      frame_op_normal: e.normal,
+      frame_op_merged: e.merged,
+      frame_op_expanded: e.expanded,
+      frame_op_accelerated: e.accelerated,
+      frame_op_preemptive_expanded: e.preemptiveExpanded,
+      frame_op_cng: e.cng
     }
   }
   getDurationStats() {
@@ -182,14 +182,14 @@ class g extends Chunk47770.Z {
       decryptFailureAfterSuccessCount: 0
     });
     return {
-      decrypt_passthrough_count: module.passthroughCount,
-      decrypt_success_count: module.decryptSuccessCount,
-      decrypt_failure_count: module.decryptFailureCount,
-      decrypt_duration: module.decryptDuration,
-      decrypt_attempts: module.decryptAttempts,
-      decrypt_missing_key_count: module.decryptMissingKeyCount,
-      decrypt_invalid_nonce_count: module.decryptInvalidNonceCount,
-      decrypt_failure_after_success_count: module.decryptFailureAfterSuccessCount,
+      decrypt_passthrough_count: e.passthroughCount,
+      decrypt_success_count: e.decryptSuccessCount,
+      decrypt_failure_count: e.decryptFailureCount,
+      decrypt_duration: e.decryptDuration,
+      decrypt_attempts: e.decryptAttempts,
+      decrypt_missing_key_count: e.decryptMissingKeyCount,
+      decrypt_invalid_nonce_count: e.decryptInvalidNonceCount,
+      decrypt_failure_after_success_count: e.decryptFailureAfterSuccessCount,
       encrypt_passthrough_count: this.outboundStats.passthroughCount,
       encrypt_success_count: this.outboundStats.encryptSuccessCount,
       encrypt_failure_count: this.outboundStats.encryptFailureCount,
@@ -202,12 +202,12 @@ class g extends Chunk47770.Z {
   getAudioDeviceStats() {
     var e, t, n, r;
     return {
-      input_device_restart_count: null == (e = this.inputDeviceStats.restartCount) ? true : module.accumulated,
-      output_device_restart_count: null == (t = this.outputDeviceStats.restartCount) ? true : exports.accumulated,
+      input_device_restart_count: null == (e = this.inputDeviceStats.restartCount) ? true : e.accumulated,
+      output_device_restart_count: null == (t = this.outputDeviceStats.restartCount) ? true : t.accumulated,
       input_device_time_to_first_audio: this.inputDeviceStats.timeToFirstCallbackMs,
       output_device_time_to_first_audio: this.outputDeviceStats.timeToFirstCallbackMs,
-      input_device_buffer_overfull_count: null == (n = this.inputDeviceStats.bufferViolations) ? true : require.accumulated,
-      output_device_buffer_underrun_count: null == (r = this.outputDeviceStats.bufferViolations) ? true : Chunk392711.accumulated,
+      input_device_buffer_overfull_count: null == (n = this.inputDeviceStats.bufferViolations) ? true : n.accumulated,
+      output_device_buffer_underrun_count: null == (r = this.outputDeviceStats.bufferViolations) ? true : r.accumulated,
       input_device_session_sample_rate: this.inputDeviceStats.sessionSampleRate,
       output_device_session_sample_rate: this.outputDeviceStats.sessionSampleRate,
       input_device_time_from_connect_to_first_audio_ms: this.inputDeviceStats.timeFromConnectToFirstCallbackMs,
@@ -216,19 +216,19 @@ class g extends Chunk47770.Z {
   }
   getAudioLevelStats() {
     let e = [1, 5, 10, 25, 50, 75, 90, 95, 99],
-      t = this.outboundStats.speakingAudioLevel.getReport(module);
+      t = this.outboundStats.speakingAudioLevel.getReport(e);
     return {
-      outbound_audio_level_db_p1: exports.percentiles[1],
-      outbound_audio_level_db_p5: exports.percentiles[5],
-      outbound_audio_level_db_p10: exports.percentiles[10],
-      outbound_audio_level_db_p25: exports.percentiles[25],
-      outbound_audio_level_db_p50: exports.percentiles[50],
-      outbound_audio_level_db_p75: exports.percentiles[75],
-      outbound_audio_level_db_p90: exports.percentiles[90],
-      outbound_audio_level_db_p95: exports.percentiles[95],
-      outbound_audio_level_db_p99: exports.percentiles[99],
-      outbound_audio_level_db_max: exports.max,
-      outbound_audio_level_db_mean: exports.mean
+      outbound_audio_level_db_p1: t.percentiles[1],
+      outbound_audio_level_db_p5: t.percentiles[5],
+      outbound_audio_level_db_p10: t.percentiles[10],
+      outbound_audio_level_db_p25: t.percentiles[25],
+      outbound_audio_level_db_p50: t.percentiles[50],
+      outbound_audio_level_db_p75: t.percentiles[75],
+      outbound_audio_level_db_p90: t.percentiles[90],
+      outbound_audio_level_db_p95: t.percentiles[95],
+      outbound_audio_level_db_p99: t.percentiles[99],
+      outbound_audio_level_db_max: t.max,
+      outbound_audio_level_db_mean: t.mean
     }
   }
   getPeriodicStats() {
@@ -246,11 +246,11 @@ class g extends Chunk47770.Z {
         let v = b - y,
           S = {
             userId: m,
-            silent: null != (n = E.silent) ? require : 0 - (null != (t = g.silent) ? exports : 0),
-            normal: null != (i = E.normal) ? i : 0 - (null != (r = g.normal) ? Chunk392711 : 0),
-            merged: null != (o = E.merged) ? Chunk46973 : 0 - (null != (a = g.merged) ? Chunk47770 : 0),
-            expanded: null != (l = E.expanded) ? Chunk909766 : 0 - (null != (s = g.expanded) ? Chunk379649 : 0),
-            accelerated: null != (u = E.accelerated) ? Chunk179654 : 0 - (null != (c = g.accelerated) ? Chunk140828 : 0),
+            silent: null != (n = E.silent) ? n : 0 - (null != (t = g.silent) ? t : 0),
+            normal: null != (i = E.normal) ? i : 0 - (null != (r = g.normal) ? r : 0),
+            merged: null != (o = E.merged) ? o : 0 - (null != (a = g.merged) ? a : 0),
+            expanded: null != (l = E.expanded) ? l : 0 - (null != (s = g.expanded) ? s : 0),
+            accelerated: null != (u = E.accelerated) ? u : 0 - (null != (c = g.accelerated) ? c : 0),
             preemptiveExpanded: null != (f = E.preemptiveExpanded) ? f : 0 - (null != (d = g.preemptiveExpanded) ? d : 0),
             cng: null != (_ = E.cng) ? _ : 0 - (null != (p = g.cng) ? p : 0),
             accelerateRate: h.accelerateRateSum / O,
@@ -259,11 +259,11 @@ class g extends Chunk47770.Z {
             speechExpandRate: h.speechExpandRateSum / O,
             durationMs: v
           };
-        S.normal + S.merged + S.expanded + S.accelerated + S.preemptiveExpanded > 0 && module.push(S)
+        S.normal + S.merged + S.expanded + S.accelerated + S.preemptiveExpanded > 0 && e.push(S)
       }
       this.periodicInboundStats[m].accelerateRateSum = 0, this.periodicInboundStats[m].expandRateSum = 0, this.periodicInboundStats[m].preemptiveExpandRateSum = 0, this.periodicInboundStats[m].speechExpandRateSum = 0, this.periodicInboundStats[m].numRateSamples = 0, this.periodicInboundStats[m].previous = E, this.periodicInboundStats[m].previousTimestampMs = b
     }
-    return module
+    return e
   }
   calculateMos(e, t) {
     let n = this.calculateR(e, t);

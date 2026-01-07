@@ -18,11 +18,11 @@ function i(e, t) {
 }
 
 function l() {
-  return i(0, Chunk388032.intl.string(Chunk388032.t["71wuR0"]))
+  return i(0, r.intl.string(r.t["71wuR0"]))
 }
 
 function s() {
-  return i(0, Chunk388032.intl.string(Chunk388032.t["w/BT3G"]))
+  return i(0, r.intl.string(r.t["w/BT3G"]))
 }
 
 function o(e, t) {

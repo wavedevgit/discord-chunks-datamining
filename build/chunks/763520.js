@@ -26,7 +26,7 @@ var b = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.RE
 let m = new Map;
 class g {
   onSpinnerStarted() {
-    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, Chunk379649.zO)())
+    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, i.zO)())
   }
   trackSpinnerDuration(e, t, n) {
     if (null == this.spinnerVisibleStart) return;

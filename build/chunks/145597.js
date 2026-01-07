@@ -42,8 +42,8 @@ let u = 2,
 function g() {
   var e;
   if (true !== r && r !== m) return r;
-  let t = parseInt(null != (e = new URLSearchParams(window.location.search).get("pid")) ? module : "", 10);
-  return isNaN(exports) && (t = m), r = exports
+  let t = parseInt(null != (e = new URLSearchParams(window.location.search).get("pid")) ? e : "", 10);
+  return isNaN(t) && (t = m), r = t
 }
 
 function E(e) {
@@ -80,6 +80,6 @@ function I() {
 }
 
 function T() {
-  let e = (0, Chunk358085.isWindows)() && "arm64" === Chunk998502.ZP.architecture;
-  return Chunk987650.iP && !module && !(0, Chunk887278.$1)()
+  let e = (0, o.isWindows)() && "arm64" === s.ZP.architecture;
+  return c.iP && !e && !(0, i.$1)()
 }

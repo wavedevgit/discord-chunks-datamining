@@ -15,17 +15,17 @@ var Chunk120356 = require("./120356.js"),
 
 function d() {
   var e, t;
-  let n = (0, Chunk442837.Wu)([Chunk435064.Z], () => {
+  let n = (0, a.Wu)([o.Z], () => {
     var e;
-    let t = null == (e = Chunk435064.Z.getLastClipsSession()) ? true : module.newClipIds;
-    return null == exports ? [] : Chunk435064.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
+    let t = null == (e = o.Z.getLastClipsSession()) ? true : e.newClipIds;
+    return null == t ? [] : o.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
-  return (0, Chunk54381.jsx)("div", {
-    className: l()(Chunk769394.thumbnailStack, {
-      [Chunk769394["height-1"]]: 1 === require.length,
-      [Chunk769394["height-2"]]: 2 === require.length,
-      [Chunk769394["height-3"]]: 3 === require.length,
-      [Chunk769394["height-max"]]: require.length >= 4
+  return (0, i.jsx)("div", {
+    className: l()(u.thumbnailStack, {
+      [u["height-1"]]: 1 === n.length,
+      [u["height-2"]]: 2 === n.length,
+      [u["height-3"]]: 3 === n.length,
+      [u["height-max"]]: n.length >= 4
     }),
     children: Array.from((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -44,18 +44,18 @@ function d() {
         })
       }
       return e
-    }({}, require), t = t = {
+    }({}, n), t = t = {
       length: 4
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
         n.push.apply(n, i)
       }
       return n
-    })(Object(exports)).forEach(function(n) {
+    })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), module)).map((e, t) => null != e ? e.type === s.NJ.VOICE_CLIP ? (0, i.jsx)(c.Z, {
+    }), e)).map((e, t) => null != e ? e.type === s.NJ.VOICE_CLIP ? (0, i.jsx)(c.Z, {
       className: u.thumbnail
     }, e.id) : (0, i.jsx)("img", {
       alt: "",

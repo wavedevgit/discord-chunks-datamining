@@ -42,37 +42,37 @@ function F() {
   let {
     analyticsLocations: e,
     sourceAnalyticsLocations: l
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_UPSELL_TOOLTIP);
-  return Chunk473749.useEffect(() => {
-    Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: Chunk474936.cd.GUILD_CAP_INLINE_INVITE_MODAL,
+  } = (0, g.ZP)(x.Z.PREMIUM_UPSELL_TOOLTIP);
+  return i.useEffect(() => {
+    P.default.track(D.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: k.cd.GUILD_CAP_INLINE_INVITE_MODAL,
       location: {
-        page: Chunk981631.ZY5.NATIVE_INVITE_MODAL
+        page: D.ZY5.NATIVE_INVITE_MODAL
       },
-      location_stack: exports
+      location_stack: l
     })
-  }, [exports]), (0, Chunk54381.jsxs)(Chunk481060.P3F, {
-    onClick: () => (0, Chunk885714.Z)({
+  }, [l]), (0, t.jsxs)(d.P3F, {
+    onClick: () => (0, p.Z)({
       analyticsSource: {
-        page: Chunk981631.Sbl.EXTERNAL_INVITE_LINK_MODAL
+        page: D.Sbl.EXTERNAL_INVITE_LINK_MODAL
       },
       analyticsLocation: {
-        page: Chunk981631.Sbl.EXTERNAL_INVITE_LINK_MODAL,
-        section: Chunk981631.jXE.GUILD_CAP_UPSELL_MODAL
+        page: D.Sbl.EXTERNAL_INVITE_LINK_MODAL,
+        section: D.jXE.GUILD_CAP_UPSELL_MODAL
       },
-      analyticsLocations: module
+      analyticsLocations: e
     }),
-    className: Chunk699158.experimentUpsellError,
-    children: [(0, Chunk54381.jsx)(Chunk481060.SrA, {
+    className: b.experimentUpsellError,
+    children: [(0, t.jsx)(d.SrA, {
       size: "md",
-      className: Chunk699158.experimentUpsellIcon,
-      color: Chunk436774.JX.PREMIUM_TIER_2
-    }), (0, Chunk54381.jsx)("span", {
-      className: Chunk699158.experimentUpsellText,
-      children: Chunk388032.intl.string(Chunk388032.t["4/W4Pz"])
-    }), (0, Chunk54381.jsx)("span", {
-      className: Chunk699158.experimentGetNitro,
-      children: Chunk388032.intl.string(Chunk388032.t.b6KOkI)
+      className: b.experimentUpsellIcon,
+      color: v.JX.PREMIUM_TIER_2
+    }), (0, t.jsx)("span", {
+      className: b.experimentUpsellText,
+      children: O.intl.string(O.t["4/W4Pz"])
+    }), (0, t.jsx)("span", {
+      className: b.experimentGetNitro,
+      children: O.intl.string(O.t.b6KOkI)
     })]
   })
 }

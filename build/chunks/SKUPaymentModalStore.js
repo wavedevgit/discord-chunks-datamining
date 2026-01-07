@@ -158,8 +158,8 @@ class V extends(a = Chunk442837.ZP.Store) {
     return b[e]
   }
   isOpen() {
-    let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return A === module && T
+    let e = __OVERLAY__ ? l.IlC.OVERLAY : l.IlC.APP;
+    return A === e && T
   }
   get isPurchasingSKU() {
     return O

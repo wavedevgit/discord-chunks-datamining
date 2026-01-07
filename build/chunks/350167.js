@@ -77,7 +77,7 @@ class u {
     }
   }
   static initialize() {
-    this.initialized || (Chunk198584.d.setCallbacks({
+    this.initialized || (i.d.setCallbacks({
       status: e => this.onStatus(e),
       response: (e, t) => this.onResponse(e, t)
     }), l && (this.addCompletionCallback(e => {

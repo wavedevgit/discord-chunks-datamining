@@ -108,8 +108,8 @@ function s(e) {
 }
 
 function l() {
-  let e = Chunk473749.useRef({});
-  return Chunk473749.useCallback(async (t, n) => {
+  let e = r.useRef({});
+  return r.useCallback(async (t, n) => {
     if ("string" != typeof t) return Promise.resolve(t);
     {
       if (null != e.current[t]) return Promise.resolve(e.current[t]);

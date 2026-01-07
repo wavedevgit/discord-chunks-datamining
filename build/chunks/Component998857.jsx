@@ -25,16 +25,16 @@ function u(e) {
 }
 let d = [{
   icon: Chunk481060.$zw,
-  getText: () => Chunk388032.intl.string(Chunk388032.t.TZigSO)
+  getText: () => s.intl.string(s.t.TZigSO)
 }, {
   icon: u,
-  getText: () => Chunk388032.intl.string(Chunk388032.t.hjQuV2)
+  getText: () => s.intl.string(s.t.hjQuV2)
 }, {
   icon: Chunk481060.lZ8,
-  getText: () => Chunk388032.intl.string(Chunk388032.t["2RUcaM"])
+  getText: () => s.intl.string(s.t["2RUcaM"])
 }, {
   icon: Chunk481060.h_8,
-  getText: () => Chunk388032.intl.string(Chunk388032.t.bJoZKV)
+  getText: () => s.intl.string(s.t.bJoZKV)
 }];
 
 function f(e) {

@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 var g = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
-let h = Object.freeze({
+let m = Object.freeze({
     SECTION_ALL: {
       lightSrc: require("./900933.js"),
       darkSrc: require("./67764.js"),
@@ -48,8 +48,8 @@ let h = Object.freeze({
       darkSrc: require("./917847.js"),
       width: 421,
       height: 218,
-      renderContent: () => (0, Chunk54381.jsx)(Chunk481060.OZU, {
-        note: Chunk388032.intl.string(Chunk388032.t.v7HbiQ)
+      renderContent: () => (0, i.jsx)(s.OZU, {
+        note: d.intl.string(d.t.v7HbiQ)
       })
     },
     SECTION_BLOCKED: {
@@ -57,8 +57,8 @@ let h = Object.freeze({
       darkSrc: require("./356634.js"),
       width: 433,
       height: 232,
-      renderContent: () => (0, Chunk54381.jsx)(Chunk481060.OZU, {
-        note: Chunk388032.intl.string(Chunk388032.t["9xdyWB"])
+      renderContent: () => (0, i.jsx)(s.OZU, {
+        note: d.intl.string(d.t["9xdyWB"])
       })
     },
     SECTION_PENDING: {
@@ -83,8 +83,8 @@ let h = Object.freeze({
       darkSrc: require("./138715.js"),
       width: 415,
       height: 200,
-      renderContent: () => (0, Chunk54381.jsx)(Chunk481060.OZU, {
-        note: Chunk388032.intl.string(Chunk388032.t["vgI/EF"])
+      renderContent: () => (0, i.jsx)(s.OZU, {
+        note: d.intl.string(d.t["vgI/EF"])
       })
     },
     SECTION_NO_RESULTS: {
@@ -92,12 +92,12 @@ let h = Object.freeze({
       darkSrc: require("./917847.js"),
       width: 421,
       height: 218,
-      renderContent: () => (0, Chunk54381.jsx)(Chunk481060.OZU, {
-        note: Chunk388032.intl.string(Chunk388032.t["7sW4h1"])
+      renderContent: () => (0, i.jsx)(s.OZU, {
+        note: d.intl.string(d.t["7sW4h1"])
       })
     }
   }),
-  m = e => {
+  h = e => {
     let {
       theme: t
     } = e, n = d.intl.string(d.t["oi+B4p"]);
@@ -120,31 +120,31 @@ class b extends Chunk473749.PureComponent {
       switch (e) {
         case u.pJs.ADD_FRIEND:
         case u.pJs.ALL:
-          return h.SECTION_ALL;
+          return m.SECTION_ALL;
         case u.pJs.ONLINE:
-          return h.SECTION_ONLINE;
+          return m.SECTION_ONLINE;
         case u.pJs.PENDING:
-          return h.SECTION_PENDING;
+          return m.SECTION_PENDING;
         case u.pJs.SUGGESTIONS:
-          return h.SECTION_SUGGESTIONS;
+          return m.SECTION_SUGGESTIONS;
         case "SECTION_NO_RESULTS":
-          return h.SECTION_NO_RESULTS;
+          return m.SECTION_NO_RESULTS;
         default:
           throw Error("FriendsEmptyState: Invalid empty state")
       }
-    }(module);
-    return module === Chunk981631.pJs.ADD_FRIEND ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: Chunk397977.friendsEmpty,
+    }(e);
+    return e === u.pJs.ADD_FRIEND ? (0, i.jsx)(a.Z.div, {
+      className: p.friendsEmpty,
       style: r,
-      children: (0, Chunk54381.jsx)(m, {
-        theme: require
+      children: (0, i.jsx)(h, {
+        theme: n
       })
-    }) : (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: Chunk397977.friendsEmpty,
+    }) : (0, i.jsx)(a.Z.div, {
+      className: p.friendsEmpty,
       style: r,
-      children: (0, Chunk54381.jsx)(Chunk481060.ubH, {
-        theme: require,
-        children: Chunk473749.renderContent(exports)
+      children: (0, i.jsx)(s.ubH, {
+        theme: n,
+        children: l.renderContent(t)
       })
     })
   }
@@ -165,7 +165,7 @@ class b extends Chunk473749.PureComponent {
   }
 }
 let _ = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
-  theme: Chunk210887.Z.theme
+  theme: c.Z.theme
 }), {
   forwardRef: true
 })(b)

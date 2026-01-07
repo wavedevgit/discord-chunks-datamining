@@ -13,6 +13,6 @@ function s() {
   let {
     resolution: e,
     fps: t
-  } = (0, Chunk442837.cj)([Chunk361291.Z], () => Chunk361291.Z.getState());
-  if (!(0, Chunk933843.m)(module, exports)) return "".concat((0, Chunk37113.o6)(module), " ").concat((0, Chunk557457.bp)(exports))
+  } = (0, r.cj)([i.Z], () => i.Z.getState());
+  if (!(0, a.m)(e, t)) return "".concat((0, o.o6)(e), " ").concat((0, l.bp)(t))
 }

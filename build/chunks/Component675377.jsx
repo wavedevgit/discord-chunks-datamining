@@ -76,19 +76,19 @@ function B(e, t) {
 let F = Chunk358085.isPlatformEmbedded || "Safari" !== o().name;
 
 function H() {
-  let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild),
+  let e = (0, c.e7)([D.Z], () => D.Z.getProps().guild),
     {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_SOUNDBOARD);
-  return null == module ? null : (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: exports,
-    children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+    } = (0, x.ZP)(h.Z.GUILD_SETTINGS_SOUNDBOARD);
+  return null == e ? null : (0, r.jsx)(x.Gt, {
+    value: t,
+    children: (0, r.jsxs)(f.Kqy, {
       gap: 8,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+      children: [(0, r.jsx)(f.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.OWQNYr)
-      }), (0, Chunk54381.jsx)(Y, {
-        guild: module
+        children: G.intl.string(G.t.OWQNYr)
+      }), (0, r.jsx)(Y, {
+        guild: e
       })]
     })
   })
@@ -185,12 +185,12 @@ let V = e => {
     }))
   },
   K = () => {
-    let e = Chunk473749.useRef(null);
-    return (0, Chunk54381.jsx)(V, {
-      renderPopoutBody: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+    let e = i.useRef(null);
+    return (0, r.jsx)(V, {
+      renderPopoutBody: () => (0, r.jsx)(f.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: Chunk388032.intl.format(Chunk388032.t.bGXPVt, {})
+        children: G.intl.format(G.t.bGXPVt, {})
       }),
       renderPopoutChildren: (t, n) => (0, r.jsx)("div", B(U({
         ref: e
@@ -201,7 +201,7 @@ let V = e => {
           text: G.intl.string(G.t["/uNYPJ"])
         }))
       })),
-      popoutTargetRef: module
+      popoutTargetRef: e
     })
   };
 

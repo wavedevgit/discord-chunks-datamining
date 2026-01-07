@@ -47,9 +47,9 @@ var Chunk131522 = require("./131522.js"),
     undoStack: f()
   }),
   _ = function() {
-    exports.createEmpty = function(e) {
+    t.createEmpty = function(e) {
       return t.createWithContent(o.createFromText(""), e)
-    }, exports.createWithContent = function(e, n) {
+    }, t.createWithContent = function(e, n) {
       if (0 === e.getBlockMap().count()) return t.createEmpty(n);
       var r = e.getBlockMap().first().getKey();
       return t.create({
@@ -59,14 +59,14 @@ var Chunk131522 = require("./131522.js"),
         decorator: n || null,
         selection: l.createEmpty(r)
       })
-    }, exports.create = function(e) {
+    }, t.create = function(e) {
       var n = e.currentContent,
         i = e.decorator;
       return new t(new p(r({}, e, {
         treeMap: h(n, i),
         directionMap: s.getDirectionMap(n)
       })))
-    }, exports.set = function(e, n) {
+    }, t.set = function(e, n) {
       return new t(e.getImmutable().withMutations(function(t) {
         var r = t.get("decorator"),
           i = r;
@@ -84,61 +84,61 @@ var Chunk131522 = require("./131522.js"),
         a !== e.getCurrentContent() && t.set("treeMap", g(e, a.getBlockMap(), a.getEntityMap(), i)), t.merge(n)
       }))
     };
-    var e = exports.prototype;
+    var e = t.prototype;
 
     function t(e) {
       i(this, "_immutable", true), this._immutable = e
     }
-    return module.toJS = function() {
+    return e.toJS = function() {
       return this.getImmutable().toJS()
-    }, module.getAllowUndo = function() {
+    }, e.getAllowUndo = function() {
       return this.getImmutable().get("allowUndo")
-    }, module.getCurrentContent = function() {
+    }, e.getCurrentContent = function() {
       return this.getImmutable().get("currentContent")
-    }, module.getUndoStack = function() {
+    }, e.getUndoStack = function() {
       return this.getImmutable().get("undoStack")
-    }, module.getRedoStack = function() {
+    }, e.getRedoStack = function() {
       return this.getImmutable().get("redoStack")
-    }, module.getSelection = function() {
+    }, e.getSelection = function() {
       return this.getImmutable().get("selection")
-    }, module.getDecorator = function() {
+    }, e.getDecorator = function() {
       return this.getImmutable().get("decorator")
-    }, module.isInCompositionMode = function() {
+    }, e.isInCompositionMode = function() {
       return this.getImmutable().get("inCompositionMode")
-    }, module.mustForceSelection = function() {
+    }, e.mustForceSelection = function() {
       return this.getImmutable().get("forceSelection")
-    }, module.getNativelyRenderedContent = function() {
+    }, e.getNativelyRenderedContent = function() {
       return this.getImmutable().get("nativelyRenderedContent")
-    }, module.getLastChangeType = function() {
+    }, e.getLastChangeType = function() {
       return this.getImmutable().get("lastChangeType")
-    }, module.getInlineStyleOverride = function() {
+    }, e.getInlineStyleOverride = function() {
       return this.getImmutable().get("inlineStyleOverride")
-    }, exports.setInlineStyleOverride = function(e, n) {
+    }, t.setInlineStyleOverride = function(e, n) {
       return t.set(e, {
         inlineStyleOverride: n
       })
-    }, module.getCurrentInlineStyle = function() {
+    }, e.getCurrentInlineStyle = function() {
       var e = this.getInlineStyleOverride();
-      if (null != module) return module;
+      if (null != e) return e;
       var t = this.getCurrentContent(),
         n = this.getSelection();
-      return require.isCollapsed() ? y(exports, require) : O(exports, require)
-    }, module.getBlockTree = function(e) {
+      return n.isCollapsed() ? y(t, n) : O(t, n)
+    }, e.getBlockTree = function(e) {
       return this.getImmutable().getIn(["treeMap", e])
-    }, module.isSelectionAtStartOfContent = function() {
+    }, e.isSelectionAtStartOfContent = function() {
       var e = this.getCurrentContent().getBlockMap().first().getKey();
-      return this.getSelection().hasEdgeWithin(module, 0, 0)
-    }, module.isSelectionAtEndOfContent = function() {
+      return this.getSelection().hasEdgeWithin(e, 0, 0)
+    }, e.isSelectionAtEndOfContent = function() {
       var e = this.getCurrentContent().getBlockMap().last(),
-        t = module.getLength();
-      return this.getSelection().hasEdgeWithin(module.getKey(), exports, exports)
-    }, module.getDirectionMap = function() {
+        t = e.getLength();
+      return this.getSelection().hasEdgeWithin(e.getKey(), t, t)
+    }, e.getDirectionMap = function() {
       return this.getImmutable().get("directionMap")
-    }, exports.acceptSelection = function(e, t) {
+    }, t.acceptSelection = function(e, t) {
       return m(e, t, false)
-    }, exports.forceSelection = function(e, t) {
+    }, t.forceSelection = function(e, t) {
       return t.getHasFocus() || (t = t.set("hasFocus", true)), m(e, t, true)
-    }, exports.moveSelectionToEnd = function(e) {
+    }, t.moveSelectionToEnd = function(e) {
       var n = e.getCurrentContent().getLastBlock(),
         r = n.getKey(),
         i = n.getLength();
@@ -149,10 +149,10 @@ var Chunk131522 = require("./131522.js"),
         focusOffset: i,
         isBackward: false
       }))
-    }, exports.moveFocusToEnd = function(e) {
+    }, t.moveFocusToEnd = function(e) {
       var n = t.moveSelectionToEnd(e);
       return t.forceSelection(n, n.getSelection())
-    }, exports.push = function(e, n, r) {
+    }, t.push = function(e, n, r) {
       var i = !(arguments.length > 3) || true === arguments[3] || arguments[3];
       if (e.getCurrentContent() === n) return e;
       var a = s.getDirectionMap(n, e.getDirectionMap());
@@ -182,7 +182,7 @@ var Chunk131522 = require("./131522.js"),
         inlineStyleOverride: d
       };
       return t.set(e, p)
-    }, exports.undo = function(e) {
+    }, t.undo = function(e) {
       if (!e.getAllowUndo()) return e;
       var n = e.getUndoStack(),
         r = n.peek();
@@ -200,7 +200,7 @@ var Chunk131522 = require("./131522.js"),
         nativelyRenderedContent: null,
         selection: i.getSelectionBefore()
       })
-    }, exports.redo = function(e) {
+    }, t.redo = function(e) {
       if (!e.getAllowUndo()) return e;
       var n = e.getRedoStack(),
         r = n.peek();
@@ -218,9 +218,9 @@ var Chunk131522 = require("./131522.js"),
         nativelyRenderedContent: null,
         selection: r.getSelectionAfter()
       })
-    }, module.getImmutable = function() {
+    }, e.getImmutable = function() {
       return this._immutable
-    }, exports
+    }, t
   }();
 
 function m(e, t, n) {

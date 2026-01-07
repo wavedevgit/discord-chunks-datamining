@@ -16,16 +16,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p() {
-  let e = (0, Chunk604849.c)();
-  return (0, Chunk54381.jsx)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_SAFETY_ALERTS_V2,
-    scrollPosition: Chunk526761.FY.DM_SAFETY_ALERTS_V2,
-    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      value: module,
-      onChange: Chunk278828.Q,
-      title: Chunk388032.intl.string(Chunk388032.t.qFsx5q),
-      note: Chunk388032.intl.format(Chunk388032.t.lunaRv, {
-        learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SAFETY_ALERTS)
+  let e = (0, i.c)();
+  return (0, r.jsx)(s.U, {
+    setting: u.s6.PRIVACY_SAFETY_ALERTS_V2,
+    scrollPosition: c.FY.DM_SAFETY_ALERTS_V2,
+    children: (0, r.jsx)(l.ZP, {
+      value: e,
+      onChange: a.Q,
+      title: f.intl.string(f.t.qFsx5q),
+      note: f.intl.format(f.t.lunaRv, {
+        learnMoreLink: o.Z.getArticleURL(d.BhN.SAFETY_ALERTS)
       })
     })
   })

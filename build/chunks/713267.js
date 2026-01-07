@@ -11,16 +11,16 @@ var r = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"],
       if (0 === t) throw Error("Can't create weekday with n == 0");
       this.weekday = e, this.n = t
     }
-    return module.fromStr = function(t) {
+    return e.fromStr = function(t) {
       return new e(r.indexOf(t))
-    }, module.prototype.nth = function(t) {
+    }, e.prototype.nth = function(t) {
       return this.n === t ? this : new e(this.weekday, t)
-    }, module.prototype.equals = function(e) {
+    }, e.prototype.equals = function(e) {
       return this.weekday === e.weekday && this.n === e.n
-    }, module.prototype.toString = function() {
+    }, e.prototype.toString = function() {
       var e = r[this.weekday];
-      return this.n && (e = (this.n > 0 ? "+" : "") + String(this.n) + module), module
-    }, module.prototype.getJsWeekday = function() {
+      return this.n && (e = (this.n > 0 ? "+" : "") + String(this.n) + e), e
+    }, e.prototype.getJsWeekday = function() {
       return 6 === this.weekday ? 0 : this.weekday + 1
-    }, module
+    }, e
   }()

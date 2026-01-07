@@ -55,9 +55,9 @@ function T(e) {
 }
 
 function C() {
-  let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    t = Chunk473749.useContext(Chunk324060.Q),
-    n = (0, Chunk481060.dQu)(exports.primaryColor).hex(),
+  let e = (0, o.e7)([c.Z], () => c.Z.useReducedMotion),
+    t = i.useContext(u.Q),
+    n = (0, s.dQu)(t.primaryColor).hex(),
     {
       emojis: {
         numEmojisSent: l,
@@ -66,48 +66,48 @@ function C() {
         numEmojisSent: 0,
         emojis: []
       }
-    } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
-    g = 0 === Chunk596454 || 0 === Chunk639949.length,
-    [C, A] = Chunk473749.useState(Chunk883166 ? {
+    } = (0, o.e7)([d.Z], () => d.Z.getCheckpointData()),
+    g = 0 === l || 0 === f.length,
+    [C, A] = i.useState(g ? {
       name: "\uD83D\uDE22",
       animated: false
-    } : Chunk639949[0]),
-    N = Chunk883166 ? Chunk343438.H : Chunk793030.EO4;
-  return (0, Chunk54381.jsx)(Chunk198358.Z, {
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk340206.container,
-      children: [(0, Chunk54381.jsx)(Chunk693018.Z, {
+    } : f[0]),
+    N = g ? b.H : a.EO4;
+  return (0, r.jsx)(_.Z, {
+    children: (0, r.jsxs)("div", {
+      className: I.container,
+      children: [(0, r.jsx)(E.Z, {
         emoji: C
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk340206.content,
-        children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk554445.title,
-          children: [(0, Chunk54381.jsx)(N, {
+      }), (0, r.jsxs)("div", {
+        className: I.content,
+        children: [(0, r.jsxs)("div", {
+          className: S.title,
+          children: [(0, r.jsx)(N, {
             size: "refresh_sm",
-            color: require,
-            className: Chunk554445.titleIcon,
-            colorClass: Chunk554445.iconColor
-          }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+            color: n,
+            className: S.titleIcon,
+            colorClass: S.iconColor
+          }), (0, r.jsx)(m.Z, {
             variant: "eyebrow",
-            className: Chunk554445.eyebrow,
-            children: Chunk883166 ? Chunk388032.intl.string(Chunk638398.default.vnG9Sx) : Chunk388032.intl.format(Chunk638398.default.JwFMdL, {
-              numEmojis: Chunk596454
+            className: S.eyebrow,
+            children: g ? v.intl.string(O.default.vnG9Sx) : v.intl.format(O.default.JwFMdL, {
+              numEmojis: l
             })
           })]
-        }), Chunk883166 ? (0, Chunk54381.jsx)(Chunk391876.Z, {
+        }), g ? (0, r.jsx)(m.Z, {
           variant: "heading-xxl/medium",
-          className: Chunk340206.emptySubtitle,
-          children: Chunk388032.intl.string(Chunk638398.default.BHbwK1)
-        }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-          children: [(0, Chunk54381.jsx)(Chunk947189.Z, {
-            end: Chunk596454
-          }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+          className: I.emptySubtitle,
+          children: v.intl.string(O.default.BHbwK1)
+        }) : (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(h.Z, {
+            end: l
+          }), (0, r.jsx)(m.Z, {
             variant: "heading-xxl/medium",
-            className: Chunk340206.subtitle,
-            children: Chunk388032.intl.string(Chunk638398.default.ZuvPfg)
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk340206.emojis,
-            children: Chunk639949.map((t, n) => (0, r.jsx)(T, {
+            className: I.subtitle,
+            children: v.intl.string(O.default.ZuvPfg)
+          }), (0, r.jsx)("div", {
+            className: I.emojis,
+            children: f.map((t, n) => (0, r.jsx)(T, {
               onClick: () => A(t),
               emoji: t,
               index: n,
@@ -115,8 +115,8 @@ function C() {
               isActive: t === C
             }, "emoji-".concat(n)))
           })]
-        }), (0, Chunk54381.jsx)(Chunk909397.o, {
-          slide: Chunk612776.yD.EMOJIS
+        }), (0, r.jsx)(p.o, {
+          slide: y.yD.EMOJIS
         })]
       })]
     })

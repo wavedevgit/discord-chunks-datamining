@@ -84,7 +84,7 @@ class E {
   }
   getDocument() {
     var e, t;
-    return null == (t = this.ref.current) || null == (e = exports.getScrollerNode()) ? true : module.ownerDocument
+    return null == (t = this.ref.current) || null == (e = t.getScrollerNode()) ? true : e.ownerDocument
   }
   getElementFromMessageId(e) {
     let t = this.getDocument(),
@@ -101,7 +101,7 @@ class E {
       scrollHeight: t,
       offsetHeight: n
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.getScrollerState();
-    return module >= exports - require - 2 && !this.props.messages.hasMoreAfter
+    return e >= t - n - 2 && !this.props.messages.hasMoreAfter
   }
   mergePropsAndUpdate(e) {
     this.mergePropsAndUpdate_(e), this.props.messages.ready && this.enableAutomaticAck()
@@ -186,7 +186,7 @@ class E {
     this.setAutomaticAnchor(null)
   }
   newMessageBarBuffer() {
-    return this.props.channel.isForumPost() ? Chunk959517.R4 : Chunk959517.Eo
+    return this.props.channel.isForumPost() ? C.R4 : C.Eo
   }
   findAnchor() {
     let {
@@ -195,22 +195,22 @@ class E {
       channel: n
     } = this.props, i = this.getScrollerState(), {
       scrollTop: r
-    } = Chunk473749, l = exports && Chunk392711 >= this.newMessageBarBuffer() ? this.newMessageBarBuffer() : 0, a = null, o = t => {
+    } = i, l = t && r >= this.newMessageBarBuffer() ? this.newMessageBarBuffer() : 0, a = null, o = t => {
       var i;
       return false === t ? m.default.castChannelIdAsMessageId(n.id) : null == (i = e._array[t]) ? true : i.id
     }, s = false, c = false;
     for (;;) {
-      let t = Chunk925549(Chunk904245);
-      if (null == exports) break;
-      let n = this.getAnchorData(exports, Chunk392711);
-      if (this._bottomAnchor = require, Chunk45114 && null != require && require.offsetTop > Chunk392711 + l + Chunk473749.offsetHeight) break;
-      if (Chunk45114) {
-        Chunk904245++;
+      let t = o(s);
+      if (null == t) break;
+      let n = this.getAnchorData(t, r);
+      if (this._bottomAnchor = n, c && null != n && n.offsetTop > r + l + i.offsetHeight) break;
+      if (c) {
+        s++;
         continue
       }
-      null != require && (require.offsetTop >= Chunk392711 + l || Chunk904245 === module.length - 1) && (a = require, c = true), Chunk904245++
+      null != n && (n.offsetTop >= r + l || s === e.length - 1) && (a = n, c = true), s++
     }
-    return Chunk374470
+    return a
   }
   findFetchAnchor(e) {
     let {
@@ -230,32 +230,32 @@ class E {
   }
   getAnchorFixData() {
     for (let e of [this.focusAnchor, this.isLoading() ? null : this.messageFetchAnchor, this.automaticAnchor]) {
-      if (null == module) continue;
-      let t = this.getElementFromMessageId(module.id);
-      if (!(0, Chunk374470.kK)(exports)) continue;
-      let n = module === this.messageFetchAnchor ? module.offsetHeight - exports.offsetHeight : 0;
+      if (null == e) continue;
+      let t = this.getElementFromMessageId(e.id);
+      if (!(0, a.kK)(t)) continue;
+      let n = e === this.messageFetchAnchor ? e.offsetHeight - t.offsetHeight : 0;
       return {
-        node: exports,
-        fixedScrollTop: exports.offsetTop - (module.offsetFromTop + require)
+        node: t,
+        fixedScrollTop: t.offsetTop - (e.offsetFromTop + n)
       }
     }
     return null
   }
   fixAnchorScrollPosition() {
     let e = this.getAnchorFixData();
-    if (null == module) return void this.handleScroll();
+    if (null == e) return void this.handleScroll();
     let {
       node: t,
       fixedScrollTop: n
-    } = module;
+    } = e;
     if (null != this.focusAnchor) {
       var i;
-      this.isPinned() ? this.scrollTo(Number.MAX_SAFE_INTEGER, false, this.handleScroll) : this.mergeTo(require, this.handleScroll), null == (i = this.ref.current) || Chunk473749.scrollIntoViewNode({
-        node: exports,
-        padding: Chunk959517.kQ + this.props.additionalMessagePadding,
+      this.isPinned() ? this.scrollTo(Number.MAX_SAFE_INTEGER, false, this.handleScroll) : this.mergeTo(n, this.handleScroll), null == (i = this.ref.current) || i.scrollIntoViewNode({
+        node: t,
+        padding: C.kQ + this.props.additionalMessagePadding,
         callback: this.handleScroll
       })
-    } else this.mergeTo(require, this.handleScroll);
+    } else this.mergeTo(n, this.handleScroll);
     this.isActivelyScrolling() ? this.setAutomaticAnchor(null) : this.setAutomaticAnchor(this.findAnchor()), this.isLoading() || (this.messageFetchAnchor = null)
   }
   hasAnchor() {
@@ -292,7 +292,7 @@ class E {
   }
   getScrollerState() {
     var e, t;
-    return null != (t = null == (e = this.ref.current) ? true : module.getScrollerState()) ? exports : O
+    return null != (t = null == (e = this.ref.current) ? true : e.getScrollerState()) ? t : O
   }
   isHeightChange(e, t) {
     return e !== this.offsetHeightCache || t !== this.scrollHeightCache
@@ -337,7 +337,7 @@ class E {
   }
   enableAutomaticAck() {
     this.isInitialized() && !this.acking && (this.acking = true, this.updateStoreDimensions(() => {
-      (0, Chunk45114.CZ)(this.props.channel.id, this.props.windowId)
+      (0, c.CZ)(this.props.channel.id, this.props.windowId)
     }))
   }
   fixScrollPosition(e, t) {
@@ -349,11 +349,11 @@ class E {
       messages: e,
       hasUnreads: t
     } = this.props;
-    if (null != module.jumpTargetId) {
-      let n = x(module);
-      if (null == require) return;
-      let i = this.getElementFromMessageId(require);
-      (0, Chunk374470.kK)(Chunk473749) ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk473749, "middle", exports ? this.newMessageBarBuffer() : Chunk959517.kQ), true): this.scrollToNewMessages(true, "middle")
+    if (null != e.jumpTargetId) {
+      let n = x(e);
+      if (null == n) return;
+      let i = this.getElementFromMessageId(n);
+      (0, a.kK)(i) ? this.scrollTo(this.getOffsetOrientationFromNode(i, "middle", t ? this.newMessageBarBuffer() : C.kQ), true): this.scrollToNewMessages(true, "middle")
     } else this.scrollTo(Number.MAX_SAFE_INTEGER, true)
   }
   scrollToNewMessages() {
@@ -361,11 +361,11 @@ class E {
     let t = arguments.length > 0 && true !== arguments[0] && arguments[0],
       n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "top",
       i = arguments.length > 2 ? arguments[2] : true,
-      r = null == (e = this.getDocument()) ? true : module.getElementById(Chunk959517.j1),
+      r = null == (e = this.getDocument()) ? true : e.getElementById(C.j1),
       l = () => {
-        this.jumping = false, this.setAutomaticAnchor(this.findAnchor()), null != Chunk473749 && Chunk473749(), this.handleScroll()
+        this.jumping = false, this.setAutomaticAnchor(this.findAnchor()), null != i && i(), this.handleScroll()
       };
-    this.pinned = false, this.jumping = exports, null != Chunk392711 ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk392711, require, this.newMessageBarBuffer()), exports, l) : this.scrollTo(this.getOffsetToPreventLoading("top"), exports, l)
+    this.pinned = false, this.jumping = t, null != r ? this.scrollTo(this.getOffsetOrientationFromNode(r, n, this.newMessageBarBuffer()), t, l) : this.scrollTo(this.getOffsetToPreventLoading("top"), t, l)
   }
   getOffsetOrientationFromNode(e, t) {
     var n;
@@ -383,7 +383,7 @@ class E {
     } = this;
     this.initialScrollTop = true;
     let t = x(this.props.messages);
-    null != exports ? this.scrollToMessage(exports, false) : this.props.hasUnreads && this.props.channel.type !== Chunk981631.d4z.GUILD_VOICE && this.props.channel.type !== Chunk981631.d4z.GUILD_STAGE_VOICE ? this.scrollToNewMessages() : null != module ? this.scrollTo(module + this.props.placeholderHeight, false, this.handleScroll) : this.setScrollToBottom()
+    null != t ? this.scrollToMessage(t, false) : this.props.hasUnreads && this.props.channel.type !== y.d4z.GUILD_VOICE && this.props.channel.type !== y.d4z.GUILD_STAGE_VOICE ? this.scrollToNewMessages() : null != e ? this.scrollTo(e + this.props.placeholderHeight, false, this.handleScroll) : this.setScrollToBottom()
   }
   scrollTo(e) {
     var t;
@@ -408,10 +408,10 @@ class E {
         messages: t,
         channel: n
       } = this.props;
-    if (exports.hasMoreAfter) {
+    if (t.hasMoreAfter) {
       var i;
-      Chunk904245.Z.jumpToPresent(require.id, Chunk981631.AQB), (0, Chunk703656.XU)(null != (i = require.getGuildId()) ? Chunk473749 : Chunk981631.ME, require.id)
-    } else this.scrollTo(Number.MAX_SAFE_INTEGER, module, () => {
+      s.Z.jumpToPresent(n.id, y.AQB), (0, p.XU)(null != (i = n.getGuildId()) ? i : y.ME, n.id)
+    } else this.scrollTo(Number.MAX_SAFE_INTEGER, e, () => {
       this.jumping = false, this.handleScroll()
     })
   }
@@ -436,15 +436,15 @@ class E {
   scrollPageUp() {
     var e;
     let t = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    null == (e = this.ref.current) || module.scrollPageUp({
-      animate: exports
+    null == (e = this.ref.current) || e.scrollPageUp({
+      animate: t
     })
   }
   scrollPageDown() {
     var e;
     let t = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    null == (e = this.ref.current) || module.scrollPageDown({
-      animate: exports
+    null == (e = this.ref.current) || e.scrollPageDown({
+      animate: t
     })
   }
   scrollToMessage(e) {
@@ -505,7 +505,7 @@ class E {
     this._scrollCompleteCallbacks = l().without(this._scrollCompleteCallbacks, e)
   }
   cleanup() {
-    this.acking = false, this.updateStoreDimensionsDebounced.cancel(), this._automaticAnchorCallbacks.forEach(e => this.removeAutomaticAnchorCallback(e)), (0, Chunk45114.jT)(this.props.channel.id, this.props.windowId)
+    this.acking = false, this.updateStoreDimensionsDebounced.cancel(), this._automaticAnchorCallbacks.forEach(e => this.removeAutomaticAnchorCallback(e)), (0, c.jT)(this.props.channel.id, this.props.windowId)
   }
   constructor(e) {
     var t, n, r = this;

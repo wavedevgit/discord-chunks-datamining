@@ -111,7 +111,7 @@ let a = (0, Chunk663042.U)(e => ({
   },
   g = () => {
     let e = a.getState();
-    return module.nickname !== s.nickname || module.dmsAllowed !== s.dmsAllowed || module.showActivity !== d(module.guildSize)
+    return e.nickname !== s.nickname || e.dmsAllowed !== s.dmsAllowed || e.showActivity !== d(e.guildSize)
   },
   b = () => a.getState().inviteCode,
   v = () => a.getState().guildId,
@@ -124,7 +124,7 @@ let a = (0, Chunk663042.U)(e => ({
     let {
       nickname: n
     } = a();
-    if (null != require && "" !== require.trim()) return require;
-    let r = Chunk594174.default.getCurrentUser();
-    return null != (t = null != (e = null == Chunk663042 ? true : Chunk663042.globalName) ? module : null == Chunk663042 ? true : Chunk663042.username) ? exports : ""
+    if (null != n && "" !== n.trim()) return n;
+    let r = o.default.getCurrentUser();
+    return null != (t = null != (e = null == r ? true : r.globalName) ? e : null == r ? true : r.username) ? t : ""
   }

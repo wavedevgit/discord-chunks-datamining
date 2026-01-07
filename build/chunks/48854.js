@@ -10,5 +10,5 @@ let i = 0,
 
 function o() {
   let e = Date.now();
-  return i !== module && (a.reset(), i = module), Chunk709054.default.fromTimestampWithSequence(module, a)
+  return i !== e && (a.reset(), i = e), r.default.fromTimestampWithSequence(e, a)
 }

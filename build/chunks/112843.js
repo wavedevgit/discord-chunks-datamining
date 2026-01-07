@@ -35,14 +35,14 @@ let c = 7;
 function u() {
   let {
     createMultipleConfettiAt: e
-  } = Chunk473749.useContext(Chunk745510.h), t = (0, Chunk399606.e7)([Chunk351780.Z], () => Chunk351780.Z.getState()), n = Chunk473749.useCallback(e => ({
+  } = r.useContext(a.h), t = (0, i.e7)([o.Z], () => o.Z.getState()), n = r.useCallback(e => ({
     size: {
       type: "static-random",
       minValue: e.confettiSize - c,
       maxValue: e.confettiSize + c
     }
   }), []);
-  return Chunk473749.useMemo(() => ({
+  return r.useMemo(() => ({
     fire: (r, i, a) => {
       var o, s;
       let c = (null == a ? true : a.settings) != null ? l({}, t, a.settings) : t;
@@ -50,5 +50,5 @@ function u() {
         sprite: null == a ? true : a.sprite
       })
     }
-  }), [module, require, exports])
+  }), [e, n, t])
 }

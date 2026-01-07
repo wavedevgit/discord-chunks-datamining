@@ -6,5 +6,5 @@ var Chunk306983 = require("./306983.js"),
   i = require("./424353.js").String;
 module.exports = !!Object.getOwnPropertySymbols && !Chunk779688(function() {
   var t = Symbol("symbol detection");
-  return !i(module) || !(Object(module) instanceof Symbol) || !Symbol.sham && Chunk306983 && Chunk306983 < 41
+  return !i(t) || !(Object(t) instanceof Symbol) || !Symbol.sham && e && e < 41
 })

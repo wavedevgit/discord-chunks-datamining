@@ -68,22 +68,22 @@ let C = {
       })]
     })
   },
-  N = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  N = () => (0, r.jsxs)(l.Kqy, {
     gap: 8,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-md/medium",
-      children: Chunk388032.intl.string(Chunk388032.t["9N2OWD"])
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      children: v.intl.string(v.t["9N2OWD"])
+    }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.format(Chunk388032.t.hxLviw, {
-        fileSize: (0, Chunk424218.IC)(Chunk611480.Ht, {
+      children: v.intl.format(v.t.hxLviw, {
+        fileSize: (0, m.IC)(j.Ht, {
           useKibibytes: true
         })
       })
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.format(Chunk388032.t.UBj0aX, {
-        articleUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STICKERS_UPLOAD)
+      children: v.intl.format(v.t.UBj0aX, {
+        articleUrl: p.Z.getArticleURL(x.BhN.STICKERS_UPLOAD)
       })
     })]
   }),
@@ -117,34 +117,34 @@ let C = {
     }))
   },
   I = () => {
-    let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-      t = (0, Chunk442837.e7)([Chunk926491.Z], () => {
+    let e = (0, i.e7)([h.Z], () => h.Z.getGuild()),
+      t = (0, i.e7)([g.Z], () => {
         var t;
-        return null != module && null != (t = Chunk926491.Z.getStickersByGuildId(module.id)) ? exports : []
-      }, [module]),
+        return null != e && null != (t = g.Z.getStickersByGuildId(e.id)) ? t : []
+      }, [e]),
       {
         analyticsLocations: n
-      } = (0, Chunk906732.ZP)(Chunk100527.Z.STICKERS);
-    if (null == module) return null;
-    let o = module.premiumTier !== Chunk981631.Eu4.NONE || exports.length > 0;
-    return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-      value: require,
-      children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+      } = (0, s.ZP)(a.Z.STICKERS);
+    if (null == e) return null;
+    let o = e.premiumTier !== x.Eu4.NONE || t.length > 0;
+    return (0, r.jsx)(s.Gt, {
+      value: n,
+      children: (0, r.jsxs)(l.Kqy, {
         gap: 16,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+        children: [(0, r.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
-          children: Chunk388032.intl.string(Chunk388032.t.R5nQkS)
-        }), Chunk623624 ? (0, Chunk54381.jsxs)("div", {
-          children: [(0, Chunk54381.jsx)(E, {
-            guild: module,
-            guildStickers: exports
-          }), (0, Chunk54381.jsx)(N, {})]
-        }) : (0, Chunk54381.jsx)(y, {
-          guild: module
-        }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-          className: Chunk708881.divider
-        }), (0, Chunk54381.jsx)(Chunk145499.Z, {
-          guild: module
+          children: v.intl.string(v.t.R5nQkS)
+        }), o ? (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(E, {
+            guild: e,
+            guildStickers: t
+          }), (0, r.jsx)(N, {})]
+        }) : (0, r.jsx)(y, {
+          guild: e
+        }), (0, r.jsx)(l.izJ, {
+          className: O.divider
+        }), (0, r.jsx)(f.Z, {
+          guild: e
         })]
       })
     })

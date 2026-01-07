@@ -20,9 +20,9 @@ var Chunk168107 = require("./168107.jsx"),
 
 function m() {
   var e;
-  let t = null != (e = (0, Chunk652262.M)()) ? module : true,
-    n = (0, Chunk915009.q1)(),
-    m = Chunk722687.IU.useControlledSetting(exports);
+  let t = null != (e = (0, f.M)()) ? e : true,
+    n = (0, d.q1)(),
+    m = s.IU.useControlledSetting(t);
 
   function h(e) {
     if (!e && (0, o.S)()) return void i.Z.showAgeVerificationGetStartedModal({
@@ -30,14 +30,14 @@ function m() {
     });
     s.IU.updateControlledSetting(t, !e)
   }
-  return (0, Chunk54381.jsx)(Chunk838436.U, {
-    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t["3o2ojh"]),
-      value: !require && !m,
+  return (0, r.jsx)(l.U, {
+    children: (0, r.jsx)(c.ZP, {
+      title: _.intl.string(_.t["3o2ojh"]),
+      value: !n && !m,
       onChange: e => h(e),
-      disabled: require,
-      note: Chunk388032.intl.format(Chunk388032.t.IoztJ0, {
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MESSAGE_REQUESTS)
+      disabled: n,
+      note: _.intl.format(_.t.IoztJ0, {
+        helpdeskArticle: u.Z.getArticleURL(p.BhN.MESSAGE_REQUESTS)
       })
     })
   })

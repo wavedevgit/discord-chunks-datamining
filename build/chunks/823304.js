@@ -31,14 +31,14 @@ var i = function() {
       value: function() {
         var t, n = this.spec,
           e = this.monitor;
-        return null != (t = "object" === r(exports.item) ? exports.item : "function" == typeof exports.item ? exports.item(require) : {}) ? module : null
+        return null != (t = "object" === r(n.item) ? n.item : "function" == typeof n.item ? n.item(e) : {}) ? t : null
       }
     }, {
       key: "canDrag",
       value: function() {
         var t = this.spec,
           n = this.monitor;
-        return "boolean" == typeof module.canDrag ? module.canDrag : "function" != typeof module.canDrag || module.canDrag(exports)
+        return "boolean" == typeof t.canDrag ? t.canDrag : "function" != typeof t.canDrag || t.canDrag(n)
       }
     }, {
       key: "isDragging",
@@ -54,8 +54,8 @@ var i = function() {
         var t = this.spec,
           n = this.monitor,
           e = this.connector,
-          r = module.end;
-        r && r(exports.getItem(), exports), require.reconnect()
+          r = t.end;
+        r && r(n.getItem(), n), e.reconnect()
       }
     }],
     function(t, n) {
@@ -63,5 +63,5 @@ var i = function() {
         var r = n[e];
         r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(t, r.key, r)
       }
-    }(exports.prototype, module), exports
+    }(n.prototype, t), n
 }()

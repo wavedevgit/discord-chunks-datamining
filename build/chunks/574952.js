@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk513202 = require("./513202.jsx");
 
 function i() {
-  return Chunk513202.Z
+  return r.Z
 }

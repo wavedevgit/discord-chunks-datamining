@@ -90,14 +90,14 @@ require.d(exports, {
 var m = 10,
   h = function() {
     function e() {
-      d(this, module), _(this, "subPriority", 0)
+      d(this, e), _(this, "subPriority", 0)
     }
-    return p(module, [{
+    return p(e, [{
       key: "validate",
       value: function(e, t) {
         returntrue
       }
-    }]), module
+    }]), e
   }(),
   g = function(e) {
     i(n, e);

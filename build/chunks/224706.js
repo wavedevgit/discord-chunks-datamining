@@ -261,20 +261,20 @@ let Z = {
     })
   },
   getDetectableGames() {
-    if (!Chunk77498.Z.canFetchDetectableGames()) return;
-    let e = Chunk77498.Z.detectableGamesEtag;
-    Chunk570140.Z.wait(() => {
-      Chunk570140.Z.dispatch({
+    if (!O.Z.canFetchDetectableGames()) return;
+    let e = O.Z.detectableGamesEtag;
+    c.Z.wait(() => {
+      c.Z.dispatch({
         type: "GAMES_DATABASE_FETCH"
-      }), Chunk573261.Z.get({
-        url: Chunk981631.ANM.GAMES_DETECTABLE,
+      }), A.Z.get({
+        url: w.ANM.GAMES_DETECTABLE,
         headers: {
-          "If-None-Match": module
+          "If-None-Match": e
         },
         retries: 1,
         oldFormErrors: true,
         trackedActionData: {
-          event: Chunk990547.NetworkActionNames.DETECTABLE_APPLICATIONS_FETCH,
+          event: i.NetworkActionNames.DETECTABLE_APPLICATIONS_FETCH,
           properties: t => {
             var n;
             return (0, l.iG)({
@@ -311,15 +311,15 @@ let Z = {
     })
   },
   getDetectableNonGames() {
-    if (!Chunk569675.Z.canFetch()) return;
-    let e = Chunk569675.Z.etag;
-    Chunk570140.Z.wait(() => {
-      Chunk570140.Z.dispatch({
+    if (!g.Z.canFetch()) return;
+    let e = g.Z.etag;
+    c.Z.wait(() => {
+      c.Z.dispatch({
         type: "NON_GAMES_DATABASE_FETCH"
-      }), Chunk544891.tn.get({
-        url: Chunk981631.ANM.NON_GAMES_DETECTABLE,
+      }), s.tn.get({
+        url: w.ANM.NON_GAMES_DETECTABLE,
         headers: {
-          "If-None-Match": module
+          "If-None-Match": e
         },
         retries: 1,
         rejectWithError: false

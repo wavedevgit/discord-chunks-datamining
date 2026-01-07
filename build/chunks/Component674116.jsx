@@ -30,50 +30,50 @@ var Chunk481060 = require("./481060.js"),
 let T = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
 function C() {
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsxs)(Chunk603963.Z, {
-      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE,
-      children: [(0, Chunk54381.jsx)(Chunk825655.Z, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)(l.Z, {
+      webSetting: v.s6.VOICE_AND_VIDEO_VOICE,
+      children: [(0, r.jsx)(o.Z, {
         sourcePage: "voice"
-      }), (0, Chunk54381.jsxs)(Chunk738486.Z, {
-        children: [(0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.VOICE_AND_VIDEO_DEVICES,
-          children: (0, Chunk54381.jsx)(Chunk625205.Z, {})
-        }), (0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.VOICE_AND_VIDEO_VOLUME_CONTROLS,
-          children: (0, Chunk54381.jsx)(Chunk976758.Z, {})
-        }), (0, Chunk54381.jsxs)(Chunk921801.F, {
-          setting: Chunk726985.s6.VOICE_AND_VIDEO_MIC_TEST,
-          children: [(0, Chunk54381.jsx)(Chunk823087.Z, {}), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), (0, r.jsxs)(c.Z, {
+        children: [(0, r.jsx)(a.F, {
+          setting: v.s6.VOICE_AND_VIDEO_DEVICES,
+          children: (0, r.jsx)(f.Z, {})
+        }), (0, r.jsx)(a.F, {
+          setting: v.s6.VOICE_AND_VIDEO_VOLUME_CONTROLS,
+          children: (0, r.jsx)(O.Z, {})
+        }), (0, r.jsxs)(a.F, {
+          setting: v.s6.VOICE_AND_VIDEO_MIC_TEST,
+          children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: Chunk388032.intl.format(Chunk388032.t["V+B3FH"], {
+            children: I.intl.format(I.t["V+B3FH"], {
               guideURL: T
             })
           })]
         })]
-      }), (0, Chunk54381.jsx)(Chunk738486.Z, {
-        children: (0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.VOICE_AND_VIDEO_INPUT_PROFILE,
-          children: (0, Chunk54381.jsx)(Chunk235144.Z, {})
+      }), (0, r.jsx)(c.Z, {
+        children: (0, r.jsx)(a.F, {
+          setting: v.s6.VOICE_AND_VIDEO_INPUT_PROFILE,
+          children: (0, r.jsx)(_.Z, {})
         })
-      }), (0, Chunk54381.jsxs)(Chunk738486.Z, {
-        children: [(0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.VOICE_AND_VIDEO_INPUT_MODE,
-          children: (0, Chunk54381.jsx)(Chunk325808.ZP, {})
-        }), (0, Chunk54381.jsx)(Chunk921801.F, {
-          setting: Chunk726985.s6.VOICE_AND_VIDEO_SENSITIVITY,
-          children: (0, Chunk54381.jsx)(Chunk269876.ZP, {})
+      }), (0, r.jsxs)(c.Z, {
+        children: [(0, r.jsx)(a.F, {
+          setting: v.s6.VOICE_AND_VIDEO_INPUT_MODE,
+          children: (0, r.jsx)(p.ZP, {})
+        }), (0, r.jsx)(a.F, {
+          setting: v.s6.VOICE_AND_VIDEO_SENSITIVITY,
+          children: (0, r.jsx)(y.ZP, {})
         })]
       })]
-    }), (0, Chunk54381.jsx)(Chunk603963.Z, {
-      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-      title: Chunk388032.intl.string(Chunk388032.t["6I6GUv"]),
-      children: (0, Chunk54381.jsx)(Chunk803567.ZP, {})
-    }), (0, Chunk54381.jsx)(Chunk603963.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
-      webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
-      children: (0, Chunk54381.jsxs)(Chunk738486.Z, {
-        children: [(0, Chunk54381.jsx)(Chunk716210.Z, {}), (0, Chunk54381.jsx)(Chunk459674.Z, {}), (0, Chunk54381.jsx)(Chunk429789.Z, {}), (0, Chunk54381.jsx)(Chunk208113.Z, {}), (0, Chunk54381.jsx)(Chunk232388.Z, {})]
+    }), (0, r.jsx)(l.Z, {
+      webSetting: v.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
+      title: I.intl.string(I.t["6I6GUv"]),
+      children: (0, r.jsx)(b.ZP, {})
+    }), (0, r.jsx)(l.Z, {
+      title: I.intl.string(I.t["8/udY0"]),
+      webSetting: v.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
+      children: (0, r.jsxs)(c.Z, {
+        children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(h.Z, {})]
       })
     })]
   })

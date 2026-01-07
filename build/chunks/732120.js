@@ -11,6 +11,6 @@ var Chunk509613 = require("./509613.js"),
   Chunk379261 = require("./379261.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.k4)(Chunk313789.n.OVERLAY_ENABLE_CATEGORY, {
-  useSubnavLabel: () => Chunk388032.intl.string(Chunk388032.t["/dp6yY"]),
-  buildLayout: () => [Chunk847707.Q, Chunk379261.z, Chunk751756.F, Chunk273179.p]
+  useSubnavLabel: () => o.intl.string(o.t["/dp6yY"]),
+  buildLayout: () => [u.Q, a.z, r.F, s.p]
 })

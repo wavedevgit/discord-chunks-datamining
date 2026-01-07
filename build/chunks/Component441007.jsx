@@ -25,12 +25,12 @@ let f = {
     order: 200,
     predicate: () => {
       var e;
-      return (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed) === false
+      return (null == (e = s.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     },
     Component: Chunk931461.c
   }, {
     order: 300,
-    predicate: () => (0, Chunk128064.c_)("SensitiveContentFiltersNotice") && !(0, Chunk81643.kJ)(),
+    predicate: () => (0, l.c_)("SensitiveContentFiltersNotice") && !(0, a.kJ)(),
     Component: Chunk931461.j
   }],
   DATA_AND_PRIVACY: [{

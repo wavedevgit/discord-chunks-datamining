@@ -71,6 +71,6 @@ let g = () => {
   let {
     entitlement: e,
     numPotions: t
-  } = p(Chunk317951.D1);
-  return null != module && module.type === Chunk981631.qc2.PURCHASE && null != exports && exports > 0
+  } = p(l.D1);
+  return null != e && e.type === d.qc2.PURCHASE && null != t && t > 0
 }

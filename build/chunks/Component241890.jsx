@@ -17,7 +17,7 @@ function d(e) {
 }
 let f = {
   init() {
-    Chunk570140.Z.subscribe("PREMIUM_REQUIRED_MODAL_OPEN", e => {
+    o.Z.subscribe("PREMIUM_REQUIRED_MODAL_OPEN", e => {
       let t;
       d(false), u = e.context, r = e.resolve, i = e.reject, c.e3s === e.context && (t = false, (0, a.ZDy)(async () => {
         let {
@@ -79,12 +79,12 @@ let f = {
           (0, s.M)(t)
         }
       }))
-    }), Chunk570140.Z.subscribe("PREMIUM_REQUIRED_MODAL_CLOSE", e => {
+    }), o.Z.subscribe("PREMIUM_REQUIRED_MODAL_CLOSE", e => {
       let {
         shouldContinue: t
       } = e;
       u = null, d(t)
-    }), Chunk570140.Z.subscribe("OVERLAY_SET_INPUT_LOCKED", e => {
+    }), o.Z.subscribe("OVERLAY_SET_INPUT_LOCKED", e => {
       let {
         locked: t
       } = e;

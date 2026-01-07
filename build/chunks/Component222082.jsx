@@ -26,6 +26,6 @@ function c(e) {
 }
 
 function a() {
-  return (0, Chunk54381.jsx)("p", {})
+  return (0, r.jsx)("p", {})
 }
 require("./473749.js")

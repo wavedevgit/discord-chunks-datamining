@@ -20,5 +20,5 @@ let i = "SAFETY_WARNING_BANNER_WEB",
   l = "InappropriateConversationModal-web",
   c = "PRIVATE_DM_SAFETY_TOOLS_MODAL",
   u = "SafetyToolsActionSheet-web",
-  d = () => [Chunk388032.intl.string(Chunk388032.t["26fDv4"]), Chunk388032.intl.string(Chunk388032.t.togDfk), Chunk388032.intl.string(Chunk388032.t.O4Ljca)],
-  f = () => [Chunk388032.intl.string(Chunk388032.t.bCWw8l), Chunk388032.intl.string(Chunk388032.t.mzSucz), Chunk388032.intl.string(Chunk388032.t.ZkmC7s)]
+  d = () => [r.intl.string(r.t["26fDv4"]), r.intl.string(r.t.togDfk), r.intl.string(r.t.O4Ljca)],
+  f = () => [r.intl.string(r.t.bCWw8l), r.intl.string(r.t.mzSucz), r.intl.string(r.t.ZkmC7s)]

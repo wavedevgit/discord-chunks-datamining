@@ -69,22 +69,22 @@ function i() {
 
   function f() {}
   n = Object.getPrototypeOf;
-  var p = f.prototype = u.prototype = Object.create([][o] ? require(require([][o]())) : (Chunk710158(n = {}, o, function() {
+  var p = f.prototype = u.prototype = Object.create([][o] ? n(n([][o]())) : (r(n = {}, o, function() {
     return this
-  }), require));
+  }), n));
 
   function _(e) {
     return Object.setPrototypeOf ? Object.setPrototypeOf(e, f) : (e.__proto__ = f, r(e, s, "GeneratorFunction")), e.prototype = Object.create(p), e
   }
-  return d.prototype = f, Chunk710158(p, "constructor", f), Chunk710158(f, "constructor", d), d.displayName = "GeneratorFunction", Chunk710158(f, s, "GeneratorFunction"), Chunk710158(p), Chunk710158(p, s, "Generator"), Chunk710158(p, o, function() {
+  return d.prototype = f, r(p, "constructor", f), r(f, "constructor", d), d.displayName = "GeneratorFunction", r(f, s, "GeneratorFunction"), r(p), r(p, s, "Generator"), r(p, o, function() {
     return this
-  }), Chunk710158(p, "toString", function() {
+  }), r(p, "toString", function() {
     return "[object Generator]"
-  }), (module.exports = i = function() {
+  }), (e.exports = i = function() {
     return {
       w: l,
       m: _
     }
-  }, module.exports.__esModule = true, module.exports.default = module.exports)()
+  }, e.exports.__esModule = true, e.exports.default = e.exports)()
 }
 module.exports = i, module.exports.__esModule = true, module.exports.default = module.exports

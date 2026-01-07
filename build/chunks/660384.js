@@ -19,6 +19,6 @@ class r {
         configurable: true,
         writable: true
       }) : e[t] = n
-    }(this, "top", new Chunk554916.SpringValue(0))
+    }(this, "top", new a.SpringValue(0))
   }
 }

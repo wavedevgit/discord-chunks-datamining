@@ -58,57 +58,57 @@ let g = function() {
     isActivityRestricted: b,
     numActivityRestrictedGuilds: y,
     numTotalGuilds: O
-  } = (0, Chunk304432.F)(), v = () => {
-    Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
+  } = (0, d.F)(), v = () => {
+    c.default.track(f.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
       interaction: "search_cleared",
-      sort_order: Chunk442837,
+      sort_order: a,
       activity_restricted_guild_count: y,
       total_guild_count: O
-    }), require("")
-  }, S = (0, Chunk473749.useId)();
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk964385.wrapper,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk964385.headerContainer,
-      children: [(0, Chunk54381.jsx)(Chunk481060.E1j, {
-        query: exports,
-        onChange: require,
+    }), n("")
+  }, S = (0, i.useId)();
+  return (0, r.jsxs)("div", {
+    className: m.wrapper,
+    children: [(0, r.jsxs)("div", {
+      className: m.headerContainer,
+      children: [(0, r.jsx)(s.E1j, {
+        query: t,
+        onChange: n,
         onClear: v,
-        onFocus: () => Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
+        onFocus: () => c.default.track(f.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_focused",
-          sort_order: Chunk442837,
+          sort_order: a,
           activity_restricted_guild_count: y,
           total_guild_count: O
         }),
-        onBlur: () => Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
+        onBlur: () => c.default.track(f.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_blurred",
-          sort_order: Chunk442837,
+          sort_order: a,
           activity_restricted_guild_count: y,
           total_guild_count: O
         }),
-        placeholder: Chunk388032.intl.string(Chunk388032.t["H+nRYw"]),
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
+        placeholder: _.intl.string(_.t["H+nRYw"]),
+        "aria-label": _.intl.string(_.t["5h0QOP"]),
         inputProps: {
           "aria-controls": S,
           "aria-expanded": true
         }
-      }), module.length > 0 && (0, Chunk54381.jsxs)("div", {
-        className: Chunk964385.controlsContainer,
-        children: [(0, Chunk54381.jsx)(Chunk199849.B6, {
-          className: Chunk964385.select,
+      }), e.length > 0 && (0, r.jsxs)("div", {
+        className: m.controlsContainer,
+        children: [(0, r.jsx)(o.B6, {
+          className: m.select,
           variant: "text-only",
           options: [{
-            label: Chunk388032.intl.string(Chunk388032.t.STMPJ2),
-            value: Chunk304432.W.SERVER_ORDER
+            label: _.intl.string(_.t.STMPJ2),
+            value: d.W.SERVER_ORDER
           }, {
-            label: Chunk388032.intl.string(Chunk388032.t.CbaapP),
-            value: Chunk304432.W.RECENTLY_JOINED
+            label: _.intl.string(_.t.CbaapP),
+            value: d.W.RECENTLY_JOINED
           }, {
-            label: Chunk388032.intl.string(Chunk418924.default.ZI51JZ),
-            value: Chunk304432.W.ACTIVITY_SHARING_ON
+            label: _.intl.string(p.default.ZI51JZ),
+            value: d.W.ACTIVITY_SHARING_ON
           }, {
-            label: Chunk388032.intl.string(Chunk418924.default["+kxafn"]),
-            value: Chunk304432.W.ACTIVITY_SHARING_OFF
+            label: _.intl.string(p.default["+kxafn"]),
+            value: d.W.ACTIVITY_SHARING_OFF
           }],
           select: e => {
             c.default.track(f.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
@@ -120,30 +120,30 @@ let g = function() {
           },
           isSelected: e => a === e,
           serialize: String
-        }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
+        }), (0, r.jsx)(s.Avr, {
           variant: "primary",
           onClick: g,
-          text: Chunk797670 ? Chunk388032.intl.string(Chunk388032.t["7lxcLO"]) : Chunk388032.intl.string(Chunk388032.t.zh6UEs)
+          text: u ? _.intl.string(_.t["7lxcLO"]) : _.intl.string(_.t.zh6UEs)
         })]
       })]
-    }), (0, Chunk54381.jsx)(Chunk481060.nn4, {
+    }), (0, r.jsx)(s.nn4, {
       "aria-live": "polite",
       role: "region",
-      children: Chunk388032.intl.format(Chunk418924.default.EvzDff, {
-        count: module.length
+      children: _.intl.format(p.default.EvzDff, {
+        count: e.length
       })
-    }), (0, Chunk54381.jsxs)("ul", {
-      className: Chunk964385.guildsList,
+    }), (0, r.jsxs)("ul", {
+      className: m.guildsList,
       id: S,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["7hB4kg"]),
-      children: [0 === module.length && (0, Chunk54381.jsx)("div", {
-        className: Chunk964385.noResultsContainer,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk964385.noResultsText,
+      "aria-label": _.intl.string(_.t["7hB4kg"]),
+      children: [0 === e.length && (0, r.jsx)("div", {
+        className: m.noResultsContainer,
+        children: (0, r.jsx)(s.Text, {
+          className: m.noResultsText,
           variant: "text-lg/medium",
-          children: Chunk388032.intl.string(Chunk388032.t["Xe+fJM"])
+          children: _.intl.string(_.t["Xe+fJM"])
         })
-      }), module.map(e => (0, r.jsx)(h, {
+      }), e.map(e => (0, r.jsx)(h, {
         guild: e,
         isActivityRestricted: b(e.id),
         onToggleActivityRestrictedGuild: E

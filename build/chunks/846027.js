@@ -48,12 +48,12 @@ function S(e) {
 let I = new Chunk710845.Z("AudioActionCreators");
 
 function T() {
-  (0, Chunk460181.GN)("mention3", true, true, true, Chunk509571.w.VOICE)
+  (0, s.GN)("mention3", true, true, true, y.w.VOICE)
 }
 
 function C() {
-  let e = Chunk131951.Z.getInputDevices()[Chunk131951.Z.getInputDeviceId()];
-  return null != module ? module.name : ""
+  let e = p.Z.getInputDevices()[p.Z.getInputDeviceId()];
+  return null != e ? e.name : ""
 }
 
 function A(e, t, n, r) {
@@ -106,19 +106,19 @@ let N = i()((e, t, n) => {
     toggleSelfMute() {
       var e;
       let {
-        context: t = Chunk65154.Yn.DEFAULT,
+        context: t = O.Yn.DEFAULT,
         syncRemote: n = true,
         usedKeybind: r = false,
         playSoundEffect: i = true,
         location: o
       } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       return w() ? Promise.resolve() : (D({
-        usedKeybind: Chunk954955,
-        location: Chunk710845
-      }), i = i && !Chunk131951.Z.hasActiveCallKitCall(), (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && I.info("Toggling self mute"), Chunk131951.Z.isEnabled()) ? Chunk570140.Z.dispatch({
+        usedKeybind: r,
+        location: o
+      }), i = i && !p.Z.hasActiveCallKitCall(), (null == (e = h.default.getCurrentUser()) ? true : e.isStaff()) && I.info("Toggling self mute"), p.Z.isEnabled()) ? a.Z.dispatch({
         type: "AUDIO_TOGGLE_SELF_MUTE",
-        context: exports,
-        syncRemote: require,
+        context: t,
+        syncRemote: n,
         playSoundEffect: i
       }) : this.enable(true)
     },
@@ -141,18 +141,18 @@ let N = i()((e, t, n) => {
     },
     toggleSelfDeaf() {
       let {
-        context: e = Chunk65154.Yn.DEFAULT,
+        context: e = O.Yn.DEFAULT,
         syncRemote: t = true,
         usedKeybind: n = false,
         location: r
       } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       w() || (x({
-        usedKeybind: require,
-        location: Chunk954955
-      }), Chunk570140.Z.dispatch({
+        usedKeybind: n,
+        location: r
+      }), a.Z.dispatch({
         type: "AUDIO_TOGGLE_SELF_DEAF",
-        context: module,
-        syncRemote: exports
+        context: e,
+        syncRemote: t
       }))
     },
     toggleLocalMute(e) {
@@ -427,7 +427,7 @@ let N = i()((e, t, n) => {
       }))
     },
     reset() {
-      w() || Chunk570140.Z.dispatch({
+      w() || a.Z.dispatch({
         type: "AUDIO_RESET"
       })
     },
@@ -486,7 +486,7 @@ let N = i()((e, t, n) => {
       }))
     },
     interact() {
-      w() || Chunk570140.Z.dispatch({
+      w() || a.Z.dispatch({
         type: "MEDIA_ENGINE_INTERACTION_REQUIRED",
         required: false
       })

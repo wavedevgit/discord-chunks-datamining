@@ -2259,7 +2259,7 @@
       o = n.n(a);
     ! function(e) {
       e.Cancel = "exit", e.Complete = "complete", e.Error = "error", e.Fail = "fail", e.Load = "load", e.Ready = "ready", e.Start = "start", e.Success = "success", e.DocumentCameraSelect = "document-camera-select", e.DocumentCameraCapture = "document-camera-capture", e.DocumentUpload = "document-upload", e.OneTimeLinkSent = "one-time-link-sent", e.OneTimeLinkStart = "one-time-link-start", e.OneTimeLinkExit = "one-time-link-exit", e.SelfieCameraSelect = "selfie-camera-select", e.SelfieCameraCapture = "selfie-camera-capture", e.SelfieRecordUpload = "selfie-record-upload", e.LoadCameraFailed = "load-camera-failed", e.PageChange = "page-change", e.InquiryLoad = "inquiry-load", e.CountrySelect = "country-select", e.VerificationChange = "verification-change"
-    }(module || (e = {})),
+    }(e || (e = {})),
     function(e) {
       e.Open = "open", e.Exit = "exit", e.Destroy = "destroy"
     }(t || (t = {})),
@@ -2268,9 +2268,9 @@
     }(i || (i = {}));
     let s = function() {
       function e() {}
-      return module.log = function(e, t) {
+      return e.log = function(e, t) {
         true === t && (t = "info")
-      }, module
+      }, e
     }();
 
     function l(e) {
@@ -2358,9 +2358,9 @@
         function e(e) {
           this.id = e
         }
-        return module.prototype.isMounted = function() {
+        return e.prototype.isMounted = function() {
           return null != document.getElementById(this.id)
-        }, module.prototype.mount = function(e) {
+        }, e.prototype.mount = function(e) {
           if (document.getElementById(this.id)) console.warn("persona: stylesheet ".concat(this.id, " already appended. skipping."));
           else {
             var t = g("style", {
@@ -2368,10 +2368,10 @@
             }, [document.createTextNode(e)]);
             document.head.appendChild(t)
           }
-        }, module.prototype.unmount = function() {
+        }, e.prototype.unmount = function() {
           var e, t = document.getElementById(this.id);
-          null != t ? null == (e = t.parentNode) || module.removeChild(t) : console.warn("persona: no stylesheet ".concat(this.id, " to remove. skipping."))
-        }, module
+          null != t ? null == (e = t.parentNode) || e.removeChild(t) : console.warn("persona: no stylesheet ".concat(this.id, " to remove. skipping."))
+        }, e
       }();
 
     function h(e, t, n) {
@@ -2647,7 +2647,7 @@
           }
           this.render()
         }
-        return module.preload = function(e) {
+        return e.preload = function(e) {
           return true === e && (e = "production"), new Promise(function(t) {
             var n = l(e),
               r = document.createElement("iframe");
@@ -2655,16 +2655,16 @@
               document.body.removeChild(r), t()
             }
           })
-        }, module.prototype.render = function() {
+        }, e.prototype.render = function() {
           var e;
-          null != this.containerElement ? (this.loadingElement.style.display = this.isLoading ? "block" : "none", this.containerElement.style.display = this.isOpen ? "block" : "none", this.isOpen && !this.globalCSS.isMounted() ? this.globalCSS.mount((e = this.containerId, "\n  /* Don't allow scrolling when widget is open */\n  html body {\n    overflow: hidden !important;\n  }\n\n  /* When the widget takes the full screen, hide everything else to prevent iOS scroll issues. */\n  @media ".concat("(max-width: 600px), (max-height: 420px)", " {\n    html body > *:not(#").concat(module, ") {\n      display: none !important;\n    }\n  }\n"))) : !this.isOpen && this.globalCSS.isMounted() && this.globalCSS.unmount()) : s.log("Cannot render client that has been destroyed", "error")
-        }, module.prototype.open = function() {
+          null != this.containerElement ? (this.loadingElement.style.display = this.isLoading ? "block" : "none", this.containerElement.style.display = this.isOpen ? "block" : "none", this.isOpen && !this.globalCSS.isMounted() ? this.globalCSS.mount((e = this.containerId, "\n  /* Don't allow scrolling when widget is open */\n  html body {\n    overflow: hidden !important;\n  }\n\n  /* When the widget takes the full screen, hide everything else to prevent iOS scroll issues. */\n  @media ".concat("(max-width: 600px), (max-height: 420px)", " {\n    html body > *:not(#").concat(e, ") {\n      display: none !important;\n    }\n  }\n"))) : !this.isOpen && this.globalCSS.isMounted() && this.globalCSS.unmount()) : s.log("Cannot render client that has been destroyed", "error")
+        }, e.prototype.open = function() {
           var e;
-          null == (e = this.iframeElement.contentWindow) || module.postMessage({
+          null == (e = this.iframeElement.contentWindow) || e.postMessage({
             action: t.Open,
             metadata: {}
           }, this.baseUrl), this._isOpen = true, this.render()
-        }, module.prototype.cancel = function(e) {
+        }, e.prototype.cancel = function(e) {
           var n;
           null == (n = this.iframeElement.contentWindow) || n.postMessage({
             action: t.Exit,
@@ -2672,31 +2672,31 @@
               force: e
             }
           }, this.baseUrl), this.render()
-        }, module.prototype.destroy = function() {
+        }, e.prototype.destroy = function() {
           var e;
-          null == (e = this.iframeElement.contentWindow) || module.postMessage({
+          null == (e = this.iframeElement.contentWindow) || e.postMessage({
             action: t.Destroy,
             metadata: {}
           }, this.baseUrl), this.personaCSS.unmount(), this.globalCSS.unmount(), this.containerParent.removeChild(this.containerElement), this.unsubscribeFromEvents(), window.removeEventListener("resize", this.handleResize)
-        }, Object.defineProperty(module.prototype, "isLoading", {
+        }, Object.defineProperty(e.prototype, "isLoading", {
           get: function() {
             return this._isLoading
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "isOpen", {
+        }), Object.defineProperty(e.prototype, "isOpen", {
           get: function() {
             return this._isOpen
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "baseUrl", {
+        }), Object.defineProperty(e.prototype, "baseUrl", {
           get: function() {
             return l(this.options.host)
           },
           enumerable: false,
           configurable: true
-        }), module
+        }), e
       }(),
       setupIframe: O,
       setupEvents: S

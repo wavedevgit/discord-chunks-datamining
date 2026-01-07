@@ -191,12 +191,12 @@ function C(e) {
 }
 
 function A() {
-  if (r === Chunk706454.default.locale) returnfalse;
-  r = Chunk706454.default.locale, p = {}, _ = {}, m = {}
+  if (r === s.default.locale) returnfalse;
+  r = s.default.locale, p = {}, _ = {}, m = {}
 }
 class N extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], A), r = Chunk706454.default.locale
+    this.waitFor(s.default), this.syncWith([s.default], A), r = s.default.locale
   }
   getStorefrontData(e) {
     return _[e]

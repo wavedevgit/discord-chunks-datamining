@@ -64,7 +64,7 @@ let T = 6,
 
 function N() {
   return {
-    recentStatuses: Chunk505905.ux,
+    recentStatuses: b.ux,
     favoritedStatuses: [],
     currentDefaultStatus: null
   }
@@ -164,9 +164,9 @@ function L(e) {
 
 function j() {
   if (null == o) returnfalse;
-  if (!Chunk594190.ZP.getRunningVerifiedApplicationIds().includes(o)) {
+  if (!h.ZP.getRunningVerifiedApplicationIds().includes(o)) {
     var e;
-    return o = null, (null == (e = A.currentDefaultStatus) ? true : module.gameActivityHangStatus) != null && (A.currentDefaultStatus.gameActivityHangStatus = null), true
+    return o = null, (null == (e = A.currentDefaultStatus) ? true : e.gameActivityHangStatus) != null && (A.currentDefaultStatus.gameActivityHangStatus = null), true
   }
   returnfalse
 }

@@ -8,11 +8,11 @@ Chunk220159({
   stat: true
 }, {
   withResolvers: function() {
-    var e = Chunk602168.f(this);
+    var e = o.f(this);
     return {
-      promise: module.promise,
-      resolve: module.resolve,
-      reject: module.reject
+      promise: e.promise,
+      resolve: e.resolve,
+      reject: e.reject
     }
   }
 })

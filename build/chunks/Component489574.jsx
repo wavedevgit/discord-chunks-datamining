@@ -38,27 +38,27 @@ function m(e) {
   return e
 }
 let h = () => {
-    (0, Chunk782568.Z)(Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_GROUP_ABOUT))
+    (0, a.Z)(s.Z.getArticleURL(u.BhN.PREMIUM_GROUP_ABOUT))
   },
   g = () => ({
-    name: Chunk22189.I.PREMIUM_GROUP,
-    title: Chunk388032.intl.string(Chunk353149.default.YkvksF),
-    subtitle: Chunk388032.intl.formatToPlainString(Chunk353149.default.JlyGQj, {
-      totalSeats: Chunk282793.Q5,
-      premiumGroupProductName: (0, Chunk282793.sO)()
+    name: l.I.PREMIUM_GROUP,
+    title: f.intl.string(d.default.YkvksF),
+    subtitle: f.intl.formatToPlainString(d.default.JlyGQj, {
+      totalSeats: c.Q5,
+      premiumGroupProductName: (0, c.sO)()
     }),
-    description: (0, Chunk54381.jsx)(Chunk690221.Z, {
+    description: (0, r.jsx)(o.Z, {
       onClick: h,
-      children: Chunk388032.intl.string(Chunk353149.default.yYyGJH)
+      children: f.intl.string(d.default.yYyGJH)
     }),
-    descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-    pillText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),
-    perkImage: Chunk261778,
+    descriptionCta: f.intl.string(f.t.jVcuVY),
+    pillText: f.intl.string(f.t.oW0eUd).toLocaleUpperCase(),
+    perkImage: p,
     onCtaClick: () => {
-      (0, Chunk481060.ZDy)(async () => {
+      (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await require.e("33638").then(require.bind(require, 837244));
+        } = await n.e("33638").then(n.bind(n, 837244));
         return t => (0, r.jsx)(e, m({}, t))
       })
     }

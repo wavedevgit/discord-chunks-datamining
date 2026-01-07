@@ -22,8 +22,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk324745 = require("./324745.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let b = () => (0, Chunk518596.openUserSettings)(Chunk313789.n.CONNECTIONS_PANEL, {
-  section: Chunk981631.oAB.CONNECTIONS
+let b = () => (0, _.openUserSettings)(p.n.CONNECTIONS_PANEL, {
+  section: g.oAB.CONNECTIONS
 });
 
 function y(e) {

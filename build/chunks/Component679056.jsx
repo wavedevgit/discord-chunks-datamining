@@ -56,8 +56,8 @@ class d extends(r = Chunk473749.Component) {
     let {
       pauseOnHover: e,
       disable: t
-    } = this.props, n = this.state.hovered && module;
-    exports || require || this.startTimer()
+    } = this.props, n = this.state.hovered && e;
+    t || n || this.startTimer()
   }
   componentWillUnmount() {
     this.stopTimer()
@@ -74,8 +74,8 @@ class d extends(r = Chunk473749.Component) {
       onInterval: t,
       disable: n
     } = this.props;
-    require || this.timer.start(module, () => {
-      exports()
+    n || this.timer.start(e, () => {
+      t()
     })
   }
   stopTimer() {
@@ -86,15 +86,15 @@ class d extends(r = Chunk473749.Component) {
       children: e,
       className: t,
       disable: n
-    } = this.props, r = require ? null : {
+    } = this.props, r = n ? null : {
       onMouseEnter: this.handlePause,
       onFocus: this.handlePause,
       onMouseLeave: this.handleResume,
       onBlur: this.handleResume
     };
-    return (0, Chunk54381.jsx)("div", u(l({}, r), {
-      className: exports,
-      children: module
+    return (0, i.jsx)("div", u(l({}, r), {
+      className: t,
+      children: e
     }))
   }
   constructor(...e) {

@@ -96,7 +96,7 @@ class m extends Chunk81825.Z {
     return this.features.has(e)
   }
   isDiscoverable() {
-    return this.hasFeature(Chunk981631.GuildFeatures.DISCOVERABLE)
+    return this.hasFeature(l.GuildFeatures.DISCOVERABLE)
   }
   static async getGuildFromEmojiId(e) {
     let t = await _(e);

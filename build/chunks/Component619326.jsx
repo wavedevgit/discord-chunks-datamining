@@ -50,7 +50,7 @@ function h(e, t) {
   }), e
 }
 let x = (0, Chunk663993.Un)({
-  createPromise: () => require.e("4848").then(require.bind(require, 797967)),
+  createPromise: () => n.e("4848").then(n.bind(n, 797967)),
   webpackId: 797967
 });
 

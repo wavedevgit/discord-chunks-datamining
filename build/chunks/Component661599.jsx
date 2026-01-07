@@ -13,16 +13,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk510342 = require("./510342.js");
 class d extends Chunk473749.PureComponent {
   render() {
-    return (0, Chunk54381.jsx)(Chunk82950.Z, {
+    return (0, r.jsx)(o.Z, {
       guild: this.props.guild,
-      onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.ACCOUNT_PANEL, {
-        section: Chunk981631.oAB.ACCOUNT
+      onClick: () => (0, a.openUserSettings)(l.n.ACCOUNT_PANEL, {
+        section: s.oAB.ACCOUNT
       }),
-      message: Chunk388032.intl.format(Chunk388032.t["oCd+at"], {}),
-      cta: Chunk388032.intl.string(Chunk388032.t["8dCrV9"]),
-      trackingSource: Chunk981631.PsQ.GUILD_MFA_WARNING,
-      type: Chunk981631.vID.MFA_WARNING,
-      image: Chunk510342,
+      message: c.intl.format(c.t["oCd+at"], {}),
+      cta: c.intl.string(c.t["8dCrV9"]),
+      trackingSource: s.PsQ.GUILD_MFA_WARNING,
+      type: s.vID.MFA_WARNING,
+      image: u,
       imageMarginX: 54,
       undismissable: true
     })

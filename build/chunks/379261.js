@@ -9,5 +9,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.OVERLAY_OOP_SETTING, {
   Component: Chunk794704.Wn,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["7BlVIs"])]
+  useSearchTerms: () => [u.intl.string(u.t["7BlVIs"])]
 })

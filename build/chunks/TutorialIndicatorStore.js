@@ -52,15 +52,15 @@ let f = {},
 
 function C() {
   if (g = {}, !m)
-    for (let [e, t] of Object.entries(Chunk268967.Z)) {
-      let n = false !== f[module];
-      if (g[module] = require, require && null != exports.prerequisites)
-        for (let n of exports.prerequisites) false !== f[require] && (g[module] = false)
+    for (let [e, t] of Object.entries(s.Z)) {
+      let n = false !== f[e];
+      if (g[e] = n, n && null != t.prerequisites)
+        for (let n of t.prerequisites) false !== f[n] && (g[e] = false)
     }
 }
 class y extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    C(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(Chunk38618.Z)
+    C(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(o.Z)
   }
   shouldShow(e) {
     return !(!b || m || c.a || r.tq && ["writing-messages", "organize-by-topic"].includes(e)) && (g[e] || false)
@@ -72,7 +72,7 @@ class y extends(i = Chunk442837.ZP.Store) {
     return h
   }
   getData() {
-    return Chunk268967.Z
+    return s.Z
   }
   getDefinition(e) {
     let t = this.getData();

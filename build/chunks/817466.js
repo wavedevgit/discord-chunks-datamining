@@ -94,21 +94,21 @@ let S = {
   };
 
 function T() {
-  let e = (0, Chunk804413.Z)(),
-    t = (0, Chunk780384.wj)((0, Chunk410030.ZP)());
-  if (!module) return null;
-  let n = S[module],
-    o = E[module],
+  let e = (0, l.Z)(),
+    t = (0, a.wj)((0, r.ZP)());
+  if (!e) return null;
+  let n = S[e],
+    o = E[e],
     c = {
-      currentBadge: (0, Chunk291175.fv)(module),
-      currentBadgeTextGradient: exports ? null == require ? true : require.dark : null == require ? true : require.light,
-      levelUpVideoSrc: exports ? null == Chunk337968 ? true : Chunk337968.dark : null == Chunk337968 ? true : Chunk337968.light
+      currentBadge: (0, i.fv)(e),
+      currentBadgeTextGradient: t ? null == n ? true : n.dark : null == n ? true : n.light,
+      levelUpVideoSrc: t ? null == o ? true : o.dark : null == o ? true : o.light
     },
-    d = Chunk474936.Qh.indexOf(module);
-  if (Chunk980775 > 0) {
-    let e = Chunk474936.Qh[Chunk980775 - 1],
-      n = S[module];
-    Chunk511581.prevBadge = (0, Chunk291175.fv)(module), Chunk511581.prevBadgeTextGradient = exports ? null == require ? true : require.dark : null == require ? true : require.light
+    d = s.Qh.indexOf(e);
+  if (d > 0) {
+    let e = s.Qh[d - 1],
+      n = S[e];
+    c.prevBadge = (0, i.fv)(e), c.prevBadgeTextGradient = t ? null == n ? true : n.dark : null == n ? true : n.light
   }
-  return Chunk511581
+  return c
 }

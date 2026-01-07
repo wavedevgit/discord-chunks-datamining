@@ -28,8 +28,8 @@ class s {
   hasTransparency() {
     if (4 !== this.img.ctype && 6 !== this.img.ctype) returnfalse;
     let e = new Uint8Array(i().toRGBA8(this.img)[0]);
-    for (let t = 3; exports < module.length; t += 4)
-      if (module[exports] < 255) returntrue;
+    for (let t = 3; t < e.length; t += 4)
+      if (e[t] < 255) returntrue;
     returnfalse
   }
   isAnimated() {
@@ -39,17 +39,17 @@ class s {
     return 3 === this.img.ctype && this.img.depth <= 8
   }
   async hasSrgbIccProfile() {
-    let e = await Chunk6075.load(this.originalBuffer, {
+    let e = await o.load(this.originalBuffer, {
       async: true,
       expanded: true,
       includeUnknown: true
     });
-    if (null == module.icc) returntrue;
-    let t = module.icc;
-    for (let e of Object.keys(exports)) {
+    if (null == e.icc) returntrue;
+    let t = e.icc;
+    for (let e of Object.keys(t)) {
       var n;
-      if ("ICC Description" === module && (null == (n = exports[module]) ? true : require.description) != null && "" !== exports[module].description) {
-        if (exports[module].description.toLowerCase().includes("srgb")) returntrue;
+      if ("ICC Description" === e && (null == (n = t[e]) ? true : n.description) != null && "" !== t[e].description) {
+        if (t[e].description.toLowerCase().includes("srgb")) returntrue;
         break
       }
     }

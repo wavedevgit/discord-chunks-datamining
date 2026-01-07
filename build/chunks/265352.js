@@ -16,7 +16,7 @@ var Chunk220159 = require("./220159.js"),
   h = Chunk394370("isConcatSpreadable"),
   x = Chunk306983 >= 51 || !Chunk779688(function() {
     var t = [];
-    return module[h] = false, module.concat()[0] !== module
+    return t[h] = false, t.concat()[0] !== t
   }),
   d = function(t) {
     if (!u(t)) returnfalse;

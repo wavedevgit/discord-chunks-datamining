@@ -97,8 +97,8 @@ class Q extends(r = Chunk473749.Component) {
   componentDidMount() {
     let {
       guestWindow: e
-    } = this.props, t = module.document;
-    null == exports.querySelector("title") && null != exports.head && exports.head.appendChild(exports.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, Chunk473159.O)(module), module.addEventListener("blur", this.handleBlur), Chunk358085.isPlatformEmbedded ? exports.addEventListener("contextmenu", Chunk62883.contextMenuCallbackNative, false) : exports.addEventListener("contextmenu", Chunk62883.contextMenuCallbackWeb, false), module.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+    } = this.props, t = e.document;
+    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, Z.O)(e), e.addEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, false) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, false), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
   }
   componentDidUpdate(e) {
     let {
@@ -110,40 +110,40 @@ class Q extends(r = Chunk473749.Component) {
   componentWillUnmount() {
     let {
       guestWindow: e
-    } = this.props, t = module.document;
-    this.unregisterPopoutGlobalKeybinds(), module.removeEventListener("blur", this.handleBlur), Chunk358085.isPlatformEmbedded ? exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackNative) : exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackWeb), (0, Chunk731965.j)(() => Chunk481060.s9z.setState(e => z(W({}, e), {
+    } = this.props, t = e.document;
+    this.unregisterPopoutGlobalKeybinds(), e.removeEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.removeEventListener("contextmenu", U.contextMenuCallbackNative) : t.removeEventListener("contextmenu", U.contextMenuCallbackWeb), (0, d.j)(() => m.s9z.setState(e => z(W({}, e), {
       [m.u1M]: []
-    }))), module.removeEventListener("beforeunload", this.beforeUnload)
+    }))), e.removeEventListener("beforeunload", this.beforeUnload)
   }
   updateTitle() {
     let {
       title: e,
       guestWindow: t
-    } = this.props, n = exports.document.querySelector("title");
-    null != require && (require.innerText = module)
+    } = this.props, n = t.document.querySelector("title");
+    null != n && (n.innerText = e)
   }
   updateClientTheme() {
     let {
       clientThemesCSS: e,
       guestWindow: t
-    } = this.props, n = exports.document, r = false, i = require.head;
-    c()(null != Chunk54381, "Window document ".concat(r ? "body" : "head", " was null"));
-    let a = Chunk54381.querySelector("style[".concat(Chunk999203.PQ, "]"));
-    if (null != Chunk473749) {
-      Chunk473749.textContent = module;
+    } = this.props, n = t.document, r = false, i = n.head;
+    c()(null != i, "Window document ".concat(r ? "body" : "head", " was null"));
+    let a = i.querySelector("style[".concat(I.PQ, "]"));
+    if (null != a) {
+      a.textContent = e;
       return
     }
-    let o = require.createElement("style");
-    Chunk120356.setAttribute(Chunk999203.PQ, "true"), Chunk120356.textContent = module, Chunk54381.appendChild(Chunk120356)
+    let o = n.createElement("style");
+    o.setAttribute(I.PQ, "true"), o.textContent = e, i.appendChild(o)
   }
   registerPopoutGlobalKeybinds() {
     var e;
     let {
       guestWindow: t
-    } = this.props, n = exports.document;
-    for (let t of (this._combokeys = (0, Chunk280049.r)(require.documentElement), [Chunk280492.iN, Chunk280492.oV, Chunk175724.f, ...null != (e = this.props.keybinds) ? module : []]))
-      if (exports.comboKeysBindGlobal)
-        for (let e of exports.binds) this._combokeys.bindGlobal(module, (e, n) => ("function" == typeof t.action && t.action(e, n), false))
+    } = this.props, n = t.document;
+    for (let t of (this._combokeys = (0, R.r)(n.documentElement), [E.iN, E.oV, g.f, ...null != (e = this.props.keybinds) ? e : []]))
+      if (t.comboKeysBindGlobal)
+        for (let e of t.binds) this._combokeys.bindGlobal(e, (e, n) => ("function" == typeof t.action && t.action(e, n), false))
   }
   unregisterPopoutGlobalKeybinds() {
     null != this._combokeys && this._combokeys.reset()
@@ -163,46 +163,46 @@ class Q extends(r = Chunk473749.Component) {
       hideModals: g = false,
       appContext: E
     } = this.props, b = q({
-      withTitleBar: Chunk473749,
+      withTitleBar: a,
       isFullScreen: r
-    }), O = require === Chunk501787.$J ? Chunk22205.Z : Chunk248687.Z;
-    return (0, Chunk54381.jsx)(Chunk319498.VK, {
-      children: (0, Chunk54381.jsx)(Chunk746106.w, {
-        windowKey: require,
-        themeOverride: Chunk731965,
-        children: (0, Chunk54381.jsx)(Chunk899663.Z, {
-          children: (0, Chunk54381.jsxs)(Chunk481060.JcV, {
+    }), O = n === V.$J ? x.Z : P.Z;
+    return (0, i.jsx)(u.VK, {
+      children: (0, i.jsx)(j.w, {
+        windowKey: n,
+        themeOverride: d,
+        children: (0, i.jsx)(y.Z, {
+          children: (0, i.jsxs)(m.JcV, {
             containerRef: this.rootRef,
-            children: [(0, Chunk54381.jsx)(X, {
-              guestWindow: Chunk120356,
-              className: Chunk512722,
-              children: (0, Chunk54381.jsxs)(Chunk317381, {
-                children: [(0, Chunk54381.jsx)(Chunk686546.Co, {}), (0, Chunk54381.jsx)(Chunk728285.Wu, {
-                  appContext: null != Chunk280492 ? Chunk280492 : Chunk981631.IlC.POPOUT,
-                  renderWindow: Chunk120356,
-                  children: (0, Chunk54381.jsx)(Chunk260035.m, {
-                    children: (0, Chunk54381.jsxs)(Chunk314910.yP, {
-                      children: [(0, Chunk54381.jsxs)("div", {
-                        className: Chunk294863.popout,
-                        children: [Chunk607070 && (0, Chunk54381.jsx)(Chunk793030.f6W, {
-                          theme: Chunk442837,
+            children: [(0, i.jsx)(X, {
+              guestWindow: o,
+              className: l,
+              children: (0, i.jsxs)(O, {
+                children: [(0, i.jsx)(C.Co, {}), (0, i.jsx)(D.Wu, {
+                  appContext: null != E ? E : B.IlC.POPOUT,
+                  renderWindow: o,
+                  children: (0, i.jsx)(T.m, {
+                    children: (0, i.jsxs)(w.yP, {
+                      children: [(0, i.jsxs)("div", {
+                        className: H.popout,
+                        children: [b && (0, i.jsx)(p.f6W, {
+                          theme: _,
                           children: e => (0, i.jsx)(A.TF, {
                             windowKey: n,
                             className: s()(e, H.titleBar)
                           })
-                        }), (0, Chunk54381.jsx)("div", {
-                          className: s()(Chunk294863.content, c),
-                          children: exports
+                        }), (0, i.jsx)("div", {
+                          className: s()(H.content, c),
+                          children: t
                         })]
-                      }), !Chunk175724 && (0, Chunk54381.jsx)(Chunk481060.nKe, {}), (0, Chunk54381.jsx)(Chunk490173.Z, {}), (0, Chunk54381.jsx)(Chunk966044.uZ, {}), (0, Chunk54381.jsx)(Chunk314910.Un, {})]
+                      }), !g && (0, i.jsx)(m.nKe, {}), (0, i.jsx)(h.Z, {}), (0, i.jsx)(f.uZ, {}), (0, i.jsx)(w.Un, {})]
                     })
                   })
                 })]
               })
-            }), (0, Chunk54381.jsx)(Chunk793030.OUJ, {})]
+            }), (0, i.jsx)(p.OUJ, {})]
           })
         })
-      }, module)
+      }, e)
     })
   }
   constructor(...e) {

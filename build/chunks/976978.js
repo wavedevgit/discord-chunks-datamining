@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk695346 = require("./695346.js");
 let i = () => {
-  let e = Chunk695346.iG.useSetting(),
-    t = Chunk695346.gR.useSetting();
-  return null != exports ? exports : !!module || module
+  let e = r.iG.useSetting(),
+    t = r.gR.useSetting();
+  return null != t ? t : !!e || e
 }

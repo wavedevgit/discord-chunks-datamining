@@ -55,47 +55,47 @@ class T extends Chunk473749.PureComponent {
       searchOffset: n,
       index: l,
       totalResults: i
-    } = this.props, s = Chunk592125.Z.getChannel(module.channel_id);
-    if (null == Chunk239091) return null;
-    let d = "search-result-".concat(module.id);
-    return (0, Chunk54381.jsx)(Chunk481060.tEY, {
+    } = this.props, s = u.Z.getChannel(e.channel_id);
+    if (null == s) return null;
+    let d = "search-result-".concat(e.id);
+    return (0, r.jsx)(a.tEY, {
       ringTarget: this.hitRef,
-      ringClassName: Chunk31307.__invalid_searchResultFocusRing,
+      ringClassName: E.__invalid_searchResultFocusRing,
       offset: 4,
-      children: (0, Chunk54381.jsxs)("li", A(_({
-        className: Chunk31307.container
-      }, exports), {
-        "aria-posinset": 1 + require + Chunk473749,
-        "aria-setsize": Chunk374470,
+      children: (0, r.jsxs)("li", A(_({
+        className: E.container
+      }, t), {
+        "aria-posinset": 1 + n + l,
+        "aria-setsize": i,
         "aria-labelledby": d,
-        children: [(0, Chunk54381.jsx)(Chunk481060.P3F, {
+        children: [(0, r.jsx)(a.P3F, {
           tabIndex: false,
           onClick: this.handleMessageClick,
           innerRef: this.containerRef,
-          className: Chunk31307.searchResult,
+          className: E.searchResult,
           focusProps: {
             enabled: false
           },
-          children: (0, Chunk54381.jsx)("div", {
+          children: (0, r.jsx)("div", {
             ref: this.hitRef,
-            className: Chunk31307.message,
-            children: (0, Chunk54381.jsx)(Chunk294218.Z, {
+            className: E.message,
+            children: (0, r.jsx)(o.Z, {
               id: d,
-              message: module,
-              channel: Chunk239091,
+              message: e,
+              channel: s,
               onContextMenu: t => this.handleContextMenu(t, e),
               animateAvatar: false,
               subscribeToComponentDispatch: false,
               trackAnnouncementViews: true
             })
-          }, module.id)
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk31307.buttonsContainer,
+          }, e.id)
+        }), (0, r.jsx)("div", {
+          className: E.buttonsContainer,
           "aria-hidden": true,
-          children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
-            className: Chunk31307.button,
+          children: (0, r.jsx)(a.P3F, {
+            className: E.button,
             onClick: this.jumpTo,
-            children: Chunk388032.intl.string(Chunk388032.t.k5WiPf)
+            children: c.intl.string(c.t.k5WiPf)
           })
         })]
       }))

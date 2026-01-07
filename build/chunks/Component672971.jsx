@@ -72,20 +72,20 @@ class b extends Chunk473749.Component {
       hasAcceptedEULA: T,
       hasAcceptedWithdrawalWaiver: C
     } = this.state;
-    return (l()(!y || null != S, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), Chunk120356 || null != module && !Chunk473749 || b) ? (0, Chunk54381.jsxs)("div", {
-      className: Chunk442837,
-      children: [b && (0, Chunk54381.jsx)(Chunk481060.Heading, {
+    return (l()(!y || null != S, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), a || null != e && !i || b) ? (0, r.jsxs)("div", {
+      className: c,
+      children: [b && (0, r.jsx)(u.Heading, {
         variant: "heading-md/semibold",
-        className: Chunk549612.formTitle,
-        children: Chunk388032.intl.string(Chunk388032.t.Ogvn5o)
-      }), null != module && (Chunk120356 || !Chunk473749) ? (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
+        className: h.formTitle,
+        children: m.intl.string(m.t.Ogvn5o)
+      }), null != e && (a || !i) ? (0, r.jsx)(u.Checkbox, {
         checked: T,
         onChange: e => this.setState({
           hasAcceptedEULA: e
         }),
-        disabled: Chunk512722,
-        label: Chunk388032.intl.format(Chunk388032.t.IodJKT, {
-          applicationName: exports,
+        disabled: s,
+        label: m.intl.format(m.t.IodJKT, {
+          applicationName: t,
           onClick: t => {
             (0, u.ZDy)(async () => {
               let {
@@ -97,53 +97,53 @@ class b extends Chunk473749.Component {
             }), t.preventDefault()
           }
         })
-      }) : null, null == Chunk850840 ? null : (0, Chunk54381.jsx)("div", {
-        className: o()(Chunk549612.finePrint, I),
-        children: Chunk850840
-      }), b ? (0, Chunk54381.jsxs)("div", {
-        className: Chunk442837,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Checkbox, {
+      }) : null, null == d ? null : (0, r.jsx)("div", {
+        className: o()(h.finePrint, I),
+        children: d
+      }), b ? (0, r.jsxs)("div", {
+        className: c,
+        children: [(0, r.jsx)(u.Checkbox, {
           checked: C,
           onChange: e => this.setState({
             hasAcceptedWithdrawalWaiver: e
           }),
-          disabled: Chunk512722,
-          label: Chunk388032.intl.string(Chunk388032.t["DFCVN+"])
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk549612.finePrint,
-          children: Chunk388032.intl.string(Chunk388032.t.jhu6zm)
+          disabled: s,
+          label: m.intl.string(m.t["DFCVN+"])
+        }), (0, r.jsx)("div", {
+          className: h.finePrint,
+          children: m.intl.string(m.t.jhu6zm)
         })]
-      }) : null, g && (0, Chunk54381.jsxs)("div", {
-        className: Chunk549612.finePrint,
-        children: ["*", Chunk388032.intl.format(Chunk388032.t["5zmY3F"], {
-          documentationLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.LOCALIZED_PRICING)
+      }) : null, g && (0, r.jsxs)("div", {
+        className: h.finePrint,
+        children: ["*", m.intl.format(m.t["5zmY3F"], {
+          documentationLink: f.Z.getArticleURL(_.BhN.LOCALIZED_PRICING)
         })]
-      }), y && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), y && null != S && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
-        children: Chunk388032.intl.format(Chunk388032.t["Hvo/Z5"], {
-          buttonText: (0, Chunk74538.W_)(null, S),
-          interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),
-          cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
-          paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
+        children: m.intl.format(m.t["Hvo/Z5"], {
+          buttonText: (0, p.W_)(null, S),
+          interval: p.ZP.formatInterval(null == S ? true : S.interval),
+          cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),
+          paidServiceTermsArticle: f.Z.getArticleURL(_.BhN.PAID_TERMS)
         })
-      }), O && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), O && null != S && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
-        children: Chunk388032.intl.format(Chunk388032.t.Oo2FeS, {
-          buttonText: (0, Chunk74538.W_)(null, S),
-          interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),
-          cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
-          paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
+        children: m.intl.format(m.t.Oo2FeS, {
+          buttonText: (0, p.W_)(null, S),
+          interval: p.ZP.formatInterval(null == S ? true : S.interval),
+          cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),
+          paidServiceTermsArticle: f.Z.getArticleURL(_.BhN.PAID_TERMS)
         })
-      }), v && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), v && null != S && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "interactive-text-default",
-        children: Chunk388032.intl.format(Chunk388032.t["Z2c+aV"], {
-          buttonText: (0, Chunk74538.W_)(null, S),
-          interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),
-          cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
-          paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
+        children: m.intl.format(m.t["Z2c+aV"], {
+          buttonText: (0, p.W_)(null, S),
+          interval: p.ZP.formatInterval(null == S ? true : S.interval),
+          cancelSubscriptionArticle: f.Z.getArticleURL(_.BhN.PREMIUM_DETAILS_CANCEL_SUB),
+          paidServiceTermsArticle: f.Z.getArticleURL(_.BhN.PAID_TERMS)
         })
       })]
     }) : null

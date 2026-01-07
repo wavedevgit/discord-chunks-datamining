@@ -95,8 +95,8 @@ function X(e, t) {
 let J = 32,
   $ = 12,
   ee = () => ({
-    page: null != (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()) ? Chunk981631.ZY5.GUILD_CHANNEL : Chunk981631.ZY5.DM_CHANNEL,
-    section: Chunk981631.jXE.EMOJI_UPSELL_POPOUT
+    page: null != (0, l.e7)([L.Z], () => L.Z.getGuildId()) ? V.ZY5.GUILD_CHANNEL : V.ZY5.DM_CHANNEL,
+    section: V.jXE.EMOJI_UPSELL_POPOUT
   }),
   et = e => {
     let {

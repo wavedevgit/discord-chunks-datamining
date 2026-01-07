@@ -575,7 +575,7 @@ for (var E in (() => {
       }
       async init() {
         if ("INITIALIZED" === this.state) throw this.debugLogs && x.Logger.error("KrispSDK:init", "SDK already initialized"), Error("SDK_ALREADY_INITIALIZED");
-        this.state = "INITIALIZED", this.debugLogs && (0, exports.createDebugWidget)()
+        this.state = "INITIALIZED", this.debugLogs && (0, I.createDebugWidget)()
       }
       async createNoiseFilter(I, Q, B) {
         if (this.debugLogs && x.Logger.info("KrispSDK:createNoiseFilter", JSON.stringify({

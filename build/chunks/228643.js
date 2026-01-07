@@ -65,8 +65,8 @@ async function s(e, t, n) {
   })
 }
 async function c() {
-  return (await Chunk544891.tn.get({
-    url: Chunk981631.ANM.APPLICATION_USER_ROLE_CONNECTIONS,
+  return (await i.tn.get({
+    url: r.ANM.APPLICATION_USER_ROLE_CONNECTIONS,
     rejectWithError: false
   })).body
 }

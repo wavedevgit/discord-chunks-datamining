@@ -193,20 +193,20 @@ let F = e => {
       })
     })
   },
-  V = () => (0, Chunk54381.jsxs)("svg", {
+  V = () => (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "75",
     height: "96",
     viewBox: "0 0 75 96",
     fill: "none",
-    children: [(0, Chunk54381.jsx)("rect", {
+    children: [(0, r.jsx)("rect", {
       x: "1",
       y: "1",
       width: "73",
       height: "94",
       rx: "8",
       fill: "var(--background-surface-high)"
-    }), (0, Chunk54381.jsx)("rect", {
+    }), (0, r.jsx)("rect", {
       x: "0.5",
       y: "0.5",
       width: "74",
@@ -214,7 +214,7 @@ let F = e => {
       rx: "8.5",
       stroke: "var(--border-normal)",
       strokeOpacity: "0.2"
-    }), (0, Chunk54381.jsx)("path", {
+    }), (0, r.jsx)("path", {
       d: "M2.53418 3L73.0342 93.5",
       stroke: "var(--border-normal)",
       strokeOpacity: "0.2"

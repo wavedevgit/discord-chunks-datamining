@@ -74,5 +74,5 @@ function u(e) {
 
 function d() {
   var e;
-  returnfalse === (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed)
+  returnfalse === (null == (e = r.default.getCurrentUser()) ? true : e.nsfwAllowed)
 }

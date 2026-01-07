@@ -50,8 +50,8 @@ function p() {
 }
 
 function _() {
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk471038.avatar,
+  return (0, r.jsx)("div", {
+    className: c.avatar,
     style: {
       opacity: .08
     }

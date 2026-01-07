@@ -98,7 +98,7 @@ let x = {
 };
 
 function L() {
-  return require.e("77843").then(require.t.bind(require, 931152, 19)).then(e => {
+  return n.e("77843").then(n.t.bind(n, 931152, 19)).then(e => {
     let {
       default: t
     } = e;

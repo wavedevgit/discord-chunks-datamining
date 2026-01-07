@@ -9,8 +9,8 @@ var Chunk868854 = require("./868854.js"),
   Chunk626135 = require("./626135.js");
 
 function o() {
-  let e = (0, Chunk868854.a)();
-  return s(Chunk801077.Z.nowPlayingCards, module)
+  let e = (0, r.a)();
+  return s(i.Z.nowPlayingCards, e)
 }
 
 function s(e, t) {

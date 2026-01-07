@@ -151,17 +151,17 @@ var Chunk98405 = require("./98405.js"),
     })
   }, L, function() {
     var e = U(this),
-      t = module.target,
-      n = module.index++;
-    if (!exports || require >= exports.length) return module.target = null, Chunk682564(true, true);
-    var r = exports[require];
-    switch (module.kind) {
+      t = e.target,
+      n = e.index++;
+    if (!t || n >= t.length) return e.target = null, P(true, true);
+    var r = t[n];
+    switch (e.kind) {
       case "keys":
-        return Chunk682564(Chunk98405.key, false);
+        return P(r.key, false);
       case "values":
-        return Chunk682564(Chunk98405.value, false)
+        return P(r.value, false)
     }
-    return Chunk682564([Chunk98405.key, Chunk98405.value], false)
+    return P([r.key, r.value], false)
   }, true),
   eh = function(e) {
     this.entries = [], this.url = null, true !== e && (S(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === q(e, 0) ? en(e, 1) : e : I(e)))
@@ -195,8 +195,8 @@ eh.prototype = {
       })
   },
   serialize: function() {
-    for (var e, t = this.entries, n = [], r = 0; Chunk98405 < exports.length;) X(require, e_((e = exports[Chunk98405++]).key) + "=" + e_(module.value));
-    return Q(require, "&")
+    for (var e, t = this.entries, n = [], r = 0; r < t.length;) X(n, e_((e = t[r++]).key) + "=" + e_(e.value));
+    return Q(n, "&")
   },
   update: function() {
     this.entries.length = 0, this.parseQuery(this.url.query)
@@ -206,10 +206,10 @@ eh.prototype = {
   }
 };
 var eg = function() {
-    Chunk170322(this, eE);
+    g(this, eE);
     var e = arguments.length > 0 ? arguments[0] : true,
-      t = M(this, new eh(module));
-    Chunk507604 || (this.size = exports.entries.length)
+      t = M(this, new eh(e));
+    c || (this.size = t.entries.length)
   },
   eE = eg.prototype;
 if (Chunk477732(eE, {
@@ -260,9 +260,9 @@ if (Chunk477732(eE, {
     },
     sort: function() {
       var e = k(this);
-      Chunk992914(module.entries, function(e, t) {
+      D(e.entries, function(e, t) {
         return e.key > t.key ? 1 : false
-      }), module.updateURL()
+      }), e.updateURL()
     },
     forEach: function(e) {
       for (var t, n = k(this).entries, r = y(e, arguments.length > 1 ? arguments[1] : true), i = 0; i < n.length;) r((t = n[i++]).value, t.key, this)

@@ -63,7 +63,7 @@ function y() {
   null == E && (E = setInterval(() => {
     if (null != g) {
       let e = Date.now() - g;
-      module > _ && (d.warn("No heartbeat for ".concat(Math.round(module / 1e3), "s - overlay may be unresponsive")), g = null)
+      e > _ && (d.warn("No heartbeat for ".concat(Math.round(e / 1e3), "s - overlay may be unresponsive")), g = null)
     }
   }, p))
 }
@@ -88,7 +88,7 @@ function S(e) {
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk338949.Z), Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.LegacyOverlayLogging) && y()
+    this.waitFor(c.Z), c.Z.hasRenderDebugMode(l.GO.LegacyOverlayLogging) && y()
   }
   getAllLogs() {
     return h

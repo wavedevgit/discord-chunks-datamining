@@ -46,11 +46,11 @@ function E(e) {
 }
 
 function T() {
-  (0, Chunk788983.open)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk54381.jsx)(Chunk238246.Z, {
-    windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
+  (0, f.open)(C.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(p.Z, {
+    windowKey: C.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
     withTitleBar: true,
-    children: (0, Chunk54381.jsx)(w, {
+    children: (0, a.jsx)(w, {
       mobile: false,
       isPopout: true
     })
@@ -110,53 +110,53 @@ function O(e) {
 }
 
 function N() {
-  let e = Chunk473749.useRef(null),
-    t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
-    [n, i] = Chunk473749.useState(null),
-    l = Chunk473749.useCallback(e => (0, x.Qh)({
+  let e = r.useRef(null),
+    t = (0, o.e7)([b.Z], () => b.Z.sidebarWidth),
+    [n, i] = r.useState(null),
+    l = r.useCallback(e => (0, x.Qh)({
       sidebarWidth: e
     }), []);
-  return (Chunk473749.useEffect(() => {
-    null === require && null !== exports && Chunk120356(exports)
-  }, [exports, require]), null === require) ? null : (0, Chunk54381.jsxs)("div", {
-    ref: module,
-    className: Chunk718728.container,
+  return (r.useEffect(() => {
+    null === n && null !== t && i(t)
+  }, [t, n]), null === n) ? null : (0, a.jsxs)("div", {
+    ref: e,
+    className: _.container,
     style: {
-      minWidth: Chunk19759.h,
-      width: require
+      minWidth: b.h,
+      width: n
     },
     "data-app-right-panel": true,
-    children: [(0, Chunk54381.jsx)(E, {
-      resizableNode: module,
-      onResize: Chunk120356,
+    children: [(0, a.jsx)(E, {
+      resizableNode: e,
+      onResize: i,
       onResizeEnd: l
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk718728.sidebarContent,
-      children: (0, Chunk54381.jsx)(O, {})
+    }), (0, a.jsx)("div", {
+      className: _.sidebarContent,
+      children: (0, a.jsx)(O, {})
     })]
   })
 }
 
 function P() {
-  return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk54381.jsx)("div", {
-    className: l()(Chunk718728.container, Chunk718728.mobileContainerExpanded),
-    children: (0, Chunk54381.jsx)("div", {
-      className: Chunk718728.sidebarContent,
-      children: (0, Chunk54381.jsx)(O, {})
+  return (0, o.e7)([b.Z], () => b.Z.displayTools) ? (0, a.jsx)("div", {
+    className: l()(_.container, _.mobileContainerExpanded),
+    children: (0, a.jsx)("div", {
+      className: _.sidebarContent,
+      children: (0, a.jsx)(O, {})
     })
-  }) : (0, Chunk54381.jsx)("div", {
-    className: Chunk718728.container,
-    children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      onClick: Chunk31336.SO,
-      children: (0, Chunk54381.jsxs)(Chunk665149.ZP, {
-        className: l()(Chunk663618.headerBar, Chunk718728.mobileHeaderCollapsed),
-        toolbar: (0, Chunk54381.jsx)(Chunk259580.Z, {
-          direction: Chunk259580.Z.Directions.UP
+  }) : (0, a.jsx)("div", {
+    className: _.container,
+    children: (0, a.jsx)(c.P3F, {
+      onClick: x.SO,
+      children: (0, a.jsxs)(m.ZP, {
+        className: l()(S.headerBar, _.mobileHeaderCollapsed),
+        toolbar: (0, a.jsx)(h.Z, {
+          direction: h.Z.Directions.UP
         }),
-        children: [(0, Chunk54381.jsx)(Chunk665149.ZP.Icon, {
-          icon: Chunk481060.Ymb,
+        children: [(0, a.jsx)(m.ZP.Icon, {
+          icon: c.Ymb,
           tooltip: "DevTools"
-        }), (0, Chunk54381.jsx)(Chunk665149.ZP.Title, {
+        }), (0, a.jsx)(m.ZP.Title, {
           children: "DevTools"
         })]
       })

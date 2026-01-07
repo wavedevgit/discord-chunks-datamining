@@ -88,18 +88,18 @@ function Z(e) {
 
 function F() {
   let e = {},
-    t = Chunk853856.Z.getFavoriteChannels();
-  for (let n in exports) {
-    let r = Chunk592125.Z.getChannel(require);
+    t = d.Z.getFavoriteChannels();
+  for (let n in t) {
+    let r = h.Z.getChannel(n);
     if (null == r) continue;
-    let i = exports[require],
-      a = (0, Chunk846787.r)(exports, Chunk392711, r);
-    module[require] = {
+    let i = t[n],
+      a = (0, f.r)(t, i, r);
+    e[n] = {
       channel: a,
       comparator: a.position
     }
   }
-  return module
+  return e
 }
 
 function B(e) {
@@ -281,11 +281,11 @@ function eo(e) {
 }
 
 function es() {
-  Y(Chunk981631.I_8)
+  Y(v.I_8)
 }
 class el extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk853856.Z, Chunk430198.Z, Chunk271383.ZP, Chunk430824.Z, Chunk496675.Z, Chunk594174.default), this.syncWith([Chunk853856.Z], es)
+    this.waitFor(m.default, h.Z, d.Z, c.Z, g.ZP, E.Z, b.Z, O.default), this.syncWith([d.Z], es)
   }
   getAllGuilds() {
     return A

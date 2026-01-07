@@ -75,7 +75,7 @@ function u(e) {
 function d() {
   let {
     getLevelAndMarkUsed: e
-  } = Chunk473749.useContext(l);
-  return module()
+  } = i.useContext(l);
+  return e()
 }
 l.displayName = "HeadingLevelContext"

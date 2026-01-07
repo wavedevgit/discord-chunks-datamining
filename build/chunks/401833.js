@@ -146,8 +146,8 @@ if (F && (D = (B = function(e) {
     }), r.promise
   }), o = function() {
     var e = new r,
-      t = I(module);
-    this.promise = module, this.resolve = X(et, exports), this.reject = X(ee, exports)
+      t = I(e);
+    this.promise = e, this.resolve = X(et, t), this.reject = X(ee, t)
   }, Chunk602168.f = U = function(e) {
     return e === B || e === a ? new o(e) : q(e)
   }, !Chunk253462 && Chunk971428(Chunk57100) && T !== Object.prototype)) {

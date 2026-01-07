@@ -480,66 +480,66 @@ function ec(e) {
 }
 
 function eu() {
-  A = false, N = {}, x = {}, Chunk433517.K.remove(O)
+  A = false, N = {}, x = {}, s.K.remove(O)
 }
 
 function ed() {
-  let e = Chunk433517.K.get(O);
-  if (null == module || module.v !== T) return {};
-  let t = module.e,
+  let e = s.K.get(O);
+  if (null == e || e.v !== T) return {};
+  let t = e.e,
     n = Date.now(),
     r = false;
-  for (let e in exports) require - exports[module].time > B && (delete exports[module], r = true);
-  return Chunk392711 && em(exports), exports
+  for (let e in t) n - t[e].time > B && (delete t[e], r = true);
+  return r && em(t), t
 }
 
 function ef() {
   let e = false,
-    t = __OVERLAY__ ? k : (0, Chunk865427._S)();
-  for (let n in exports) j[require] = {
-    type: Chunk987338.xY.USER,
+    t = __OVERLAY__ ? k : (0, c._S)();
+  for (let n in t) j[n] = {
+    type: m.xY.USER,
     revision: 1,
     population: 0,
     override: true,
     fromCookie: true,
     assignmentSource: "override",
-    bucket: exports[require]
-  }, M[require] = {
-    type: Chunk987338.xY.GUILD,
+    bucket: t[n]
+  }, M[n] = {
+    type: m.xY.GUILD,
     revision: 1,
     override: true,
     fromCookie: true,
     assignmentSource: "override",
-    bucket: exports[require]
+    bucket: t[n]
   }, e = true;
-  return module
+  return e
 }
 
 function ep() {
   var e, t, n;
-  let r = [null != (e = Chunk433517.K.get(v)) ? module : {}, null != (t = Chunk433517.K.get(S)) ? exports : {}, null != (n = Chunk433517.K.get(I)) ? require : {}];
+  let r = [null != (e = s.K.get(v)) ? e : {}, null != (t = s.K.get(S)) ? t : {}, null != (n = s.K.get(I)) ? n : {}];
   j = {}, M = {};
-  let a = !i().isEmpty(Chunk392711[0]);
-  for (let e of Chunk392711)
-    for (let t in module) {
-      let n = module[exports];
-      null == require || require.type !== Chunk987338.xY.USER && require.type !== Chunk987338.xY.GUILD || null == require.bucket || true !== require.override || require.fromCookie ? (delete module[exports], a = true) : require.type === Chunk987338.xY.USER ? j[exports] = require : M[exports] = require
-    }(a = ef() || Chunk108131) && e_()
+  let a = !i().isEmpty(r[0]);
+  for (let e of r)
+    for (let t in e) {
+      let n = e[t];
+      null == n || n.type !== m.xY.USER && n.type !== m.xY.GUILD || null == n.bucket || true !== n.override || n.fromCookie ? (delete e[t], a = true) : n.type === m.xY.USER ? j[t] = n : M[t] = n
+    }(a = ef() || a) && e_()
 }
 
 function e_() {
   try {
-    Chunk433517.K.set(S, j)
+    s.K.set(S, j)
   } catch (e) {
-    C.error("Error saving user experiment overrides, unsaved data will be lost", module), Chunk626135.default.track(Chunk981631.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+    C.error("Error saving user experiment overrides, unsaved data will be lost", e), p.default.track(h.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
       call: "ExperimentStore.saveExperimentOverrides"
     })
   }
   try {
-    Chunk433517.K.set(I, M)
+    s.K.set(I, M)
   } catch (e) {
-    C.error("Error saving guild experiment overrides, unsaved data will be lost", module), Chunk626135.default.track(Chunk981631.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+    C.error("Error saving guild experiment overrides, unsaved data will be lost", e), p.default.track(h.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
       call: "ExperimentStore.saveExperimentOverrides"
     })
@@ -619,11 +619,11 @@ function eE(e) {
 }
 class eb extends Chunk750041.Z {
   initialize() {
-    N = ed(), ep(), this.waitFor(Chunk314897.default), this.loadCache()
+    N = ed(), ep(), this.waitFor(d.default), this.loadCache()
   }
   loadCache() {
     let e = this.readSnapshot(eb.LATEST_SNAPSHOT_VERSION);
-    null != module && ("loadedUserExperiments" in module ? (D = module.loadedUserExperiments, x = eo(module.loadedGuildExperiments), Object.values(D).forEach(e => e.loadedFromCache = true), Object.values(x).forEach(e => e.loadedFromCache = true)) : en(module, true))
+    null != e && ("loadedUserExperiments" in e ? (D = e.loadedUserExperiments, x = eo(e.loadedGuildExperiments), Object.values(D).forEach(e => e.loadedFromCache = true), Object.values(x).forEach(e => e.loadedFromCache = true)) : en(e, true))
   }
   takeSnapshot() {
     return {
@@ -702,27 +702,27 @@ class eb extends Chunk750041.Z {
     for (let n in Object.keys(R).forEach(e => {
         t[Z("".concat(e))] = e
       }), D) {
-      let r = exports[require];
-      null != Chunk392711 && (module[Chunk392711] = D[require].bucket)
+      let r = t[n];
+      null != r && (e[r] = D[n].bucket)
     }
     for (let t in L) {
-      let n = L[exports];
-      null != require && (module[exports] = require.bucket)
+      let n = L[t];
+      null != n && (e[t] = n.bucket)
     }
-    return module
+    return e
   }
   getSerializedState() {
     let e = {};
     for (let t in x)
-      for (let n of (module[exports] = JSON.parse(JSON.stringify(x[exports])), module[exports].populations)) require.filters = [];
+      for (let n of (e[t] = JSON.parse(JSON.stringify(x[t])), e[t].populations)) n.filters = [];
     return {
       hasLoadedExperiments: A,
       trackedExposureExperiments: N,
       loadedUserExperiments: D,
-      loadedGuildExperiments: module,
+      loadedGuildExperiments: e,
       userExperimentOverrides: j,
       guildExperimentOverrides: M,
-      cookieOverrides: (0, Chunk865427._S)(),
+      cookieOverrides: (0, c._S)(),
       assignmentSource: w.source,
       assignmentSessionId: w.sessionId,
       assignmentFingerprint: w.fingerprint
@@ -742,7 +742,7 @@ class eb extends Chunk750041.Z {
       EXPERIMENT_OVERRIDE_BUCKET: eg,
       GUILD_CREATE: eE,
       GUILD_UPDATE: eE
-    }, Chunk570140.c.Early), g(this, "trackExposure", X)
+    }, l.c.Early), g(this, "trackExposure", X)
   }
 }
 g(eb, "displayName", "ExperimentStore"), g(eb, "LATEST_SNAPSHOT_VERSION", 1);

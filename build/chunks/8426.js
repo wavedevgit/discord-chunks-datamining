@@ -292,7 +292,7 @@ function w(e, n) {
 }
 
 function P() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET"
   })
 }

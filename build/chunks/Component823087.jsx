@@ -17,26 +17,26 @@ var Chunk399606 = require("./399606.js"),
   Chunk941009 = require("./941009.js");
 
 function p() {
-  return (0, Chunk399606.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.LOOPBACK)) ? (0, Chunk54381.jsx)("div", {
-    className: Chunk941009.micTest,
-    children: (0, Chunk54381.jsx)(Chunk130067.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.gyljWE),
-      description: Chunk388032.intl.string(Chunk388032.t["8hhsCU"]),
-      notchBackground: Chunk130067._.GRAY,
-      captionVoice: Chunk388032.intl.string(Chunk388032.t.bp3JOV),
-      captionNoVoice: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [Chunk388032.intl.string(Chunk388032.t["MA+OZh"]), (0, Chunk54381.jsx)(Chunk481060.eee, {
-          className: Chunk941009.micTestHelpLink,
-          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NO_INPUT_DETECTED),
-          children: Chunk388032.intl.string(Chunk388032.t.RYKKox)
+  return (0, i.e7)([s.Z], () => s.Z.supports(u.AN.LOOPBACK)) ? (0, r.jsx)("div", {
+    className: f.micTest,
+    children: (0, r.jsx)(o.Z, {
+      title: d.intl.string(d.t.gyljWE),
+      description: d.intl.string(d.t["8hhsCU"]),
+      notchBackground: o._.GRAY,
+      captionVoice: d.intl.string(d.t.bp3JOV),
+      captionNoVoice: (0, r.jsxs)(r.Fragment, {
+        children: [d.intl.string(d.t["MA+OZh"]), (0, r.jsx)(a.eee, {
+          className: f.micTestHelpLink,
+          href: l.Z.getArticleURL(c.BhN.NO_INPUT_DETECTED),
+          children: d.intl.string(d.t.RYKKox)
         })]
       }),
-      buttonTest: Chunk388032.intl.string(Chunk388032.t.c4qHt6),
-      buttonStop: Chunk388032.intl.string(Chunk388032.t.I6OnJ3),
+      buttonTest: d.intl.string(d.t.c4qHt6),
+      buttonStop: d.intl.string(d.t.I6OnJ3),
       buttonVariant: "primary",
       location: {
-        page: Chunk981631.ZY5.USER_SETTINGS,
-        section: Chunk981631.jXE.SETTINGS_VOICE_AND_VIDEO
+        page: c.ZY5.USER_SETTINGS,
+        section: c.jXE.SETTINGS_VOICE_AND_VIDEO
       }
     })
   }) : null

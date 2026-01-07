@@ -19,10 +19,10 @@ var Chunk473749 = require("./473749.js"),
 let f = 512;
 
 function p() {
-  let e = (0, Chunk410030.ZP)(),
-    t = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BACKGROUND_BASE_LOWEST),
-    n = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BACKGROUND_ACCENT);
-  return (0, Chunk481060.wjy)(module) ? exports : require
+  let e = (0, s.ZP)(),
+    t = (0, a.dQu)(a.TVs.colors.BACKGROUND_BASE_LOWEST),
+    n = (0, a.dQu)(a.TVs.colors.BACKGROUND_ACCENT);
+  return (0, a.wjy)(e) ? t : n
 }
 
 function _(e) {

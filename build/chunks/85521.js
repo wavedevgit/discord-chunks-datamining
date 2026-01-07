@@ -62,13 +62,13 @@ class f extends Chunk81825.Z {
     return a.yE(this.flags, e)
   }
   isHidden() {
-    return this.hasFlag(Chunk981631.eHb.HIDDEN)
+    return this.hasFlag(c.eHb.HIDDEN)
   }
   isLegacyOverlayEnabled() {
-    return !this.hasFlag(Chunk981631.eHb.OVERLAY_DISABLED)
+    return !this.hasFlag(c.eHb.OVERLAY_DISABLED)
   }
   isOverlayV3Enabled() {
-    return !this.hasFlag(Chunk981631.eHb.OVERLAY_V3_DISABLED)
+    return !this.hasFlag(c.eHb.OVERLAY_V3_DISABLED)
   }
   isOverlayEnabled() {
     return this.isLegacyOverlayEnabled() || this.isOverlayV3Enabled()
@@ -86,7 +86,7 @@ class f extends Chunk81825.Z {
     return null != this.sku.preorderReleaseAt || null != this.sku.preorderApproximateReleaseDate
   }
   getDistributor() {
-    return Chunk981631.GQo.DISCORD
+    return c.GQo.DISCORD
   }
   getBranchName() {
     return null != this.branch ? this.branch.name : d
@@ -98,10 +98,10 @@ class f extends Chunk81825.Z {
     return this.sku.id
   }
   getAnalyticsData() {
-    let e = Chunk812206.Z.getApplication(this.id);
+    let e = s.Z.getApplication(this.id);
     return {
-      application_id: null != module ? module.id : null,
-      application_name: null != module ? module.name : null,
+      application_id: null != e ? e.id : null,
+      application_name: null != e ? e.name : null,
       sku_id: this.getSkuIdForAnalytics(),
       launcher_platform: this.getDistributor()
     }

@@ -98,10 +98,10 @@ function h(e) {
 }
 
 function g() {
-  (0, Chunk481060.ZDy)(async () => {
+  (0, s.ZDy)(async () => {
     let {
       QuestRewardModalUnverified: e
-    } = await Promise.resolve().then(require.bind(require, 300917));
+    } = await Promise.resolve().then(n.bind(n, 300917));
     return t => (0, r.jsx)(e, m({}, t))
   })
 }

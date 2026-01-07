@@ -16,7 +16,7 @@ let u = 0,
   h = false;
 class x extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk906467.Z)
+    this.waitFor(c.default, d.Z)
   }
   get loggedEvents() {
     return m

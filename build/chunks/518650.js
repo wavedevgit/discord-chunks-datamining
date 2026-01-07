@@ -30,19 +30,19 @@ var Chunk473749 = require("./473749.js"),
 let C = [Chunk52478.Z, Chunk242263.Z, Chunk240005.Z, Chunk477033.Z, Chunk191617.Z, Chunk596375.Z, Chunk653506.Z, Chunk900268.Z, Chunk946515.Z, Chunk908574.Z, Chunk1222.Z, Chunk976999.Z, Chunk331164.Z, Chunk221233.Z, Chunk322958.Z, Chunk896880.Z, Chunk16789.Z, Chunk594931.Z, Chunk556924.Z];
 
 function A() {
-  let e = Chunk473749.useRef(0),
-    t = Chunk473749.useRef(true),
-    n = (0, Chunk824480.d)(),
-    i = require === Chunk5888.p.SUCCESS || require === Chunk5888.p.ERROR,
-    [a, o] = Chunk473749.useState(false);
-  return (0, Chunk473749.useEffect)(() => {
+  let e = r.useRef(0),
+    t = r.useRef(true),
+    n = (0, g.d)(),
+    i = n === h.p.SUCCESS || n === h.p.ERROR,
+    [a, o] = r.useState(false);
+  return (0, r.useEffect)(() => {
     C.forEach(n => m.tn.get({
       url: n,
       rejectWithError: true
     }).then(() => {
       t.current && (e.current += 1, e.current === C.length && o(true))
     }))
-  }, []), (0, Chunk473749.useEffect)(() => () => {
-    exports.current = false
-  }, []), Chunk221233 && Chunk16789
+  }, []), (0, r.useEffect)(() => () => {
+    t.current = false
+  }, []), a && i
 }

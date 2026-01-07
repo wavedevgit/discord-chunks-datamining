@@ -18,7 +18,7 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 let c = () => {
-  r = r === Chunk353368.q.BASIC ? Chunk353368.q.PREMIUM : Chunk353368.q.BASIC
+  r = r === s.q.BASIC ? s.q.PREMIUM : s.q.BASIC
 };
 class u extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {

@@ -9,5 +9,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.CONTENT_AND_SOCIAL_CONTENT_FILTERS_SETTING, {
   Component: Chunk211466.n,
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["Hj/But"])]
+  useSearchTerms: () => [u.intl.string(u.t["Hj/But"])]
 })

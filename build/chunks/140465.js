@@ -24,45 +24,45 @@ var Chunk473749 = require("./473749.js"),
   Chunk474936 = require("./474936.js");
 
 function m() {
-  let e = (0, Chunk639119.N)(),
-    t = (0, Chunk775412._O)(),
-    n = (0, Chunk622909.N)(),
+  let e = (0, p.N)(),
+    t = (0, c._O)(),
+    n = (0, f.N)(),
     r = h();
-  return null != module || exports || null != require || Chunk473749
+  return null != e || t || null != n || r
 }
 let h = () => {
     var e;
-    let t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-      n = null == exports || null == (e = exports.metadata) ? true : module.active_discount_expires_at;
-    return null != require && a()(Date.now()) <= a()(require)
+    let t = (0, o.e7)([l.Z], () => l.Z.getPremiumTypeSubscription()),
+      n = null == t || null == (e = t.metadata) ? true : e.active_discount_expires_at;
+    return null != n && a()(Date.now()) <= a()(n)
   },
   g = () => {
     var e;
-    let t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-      n = null == exports || null == (e = exports.metadata) ? true : module.active_discount_id;
-    switch (require) {
-      case Chunk474936.dT:
-      case Chunk474936.rB:
+    let t = (0, o.e7)([l.Z], () => l.Z.getPremiumTypeSubscription()),
+      n = null == t || null == (e = t.metadata) ? true : e.active_discount_id;
+    switch (n) {
+      case _.dT:
+      case _.rB:
         return {
-          duration: 1, percentage: 30, discountId: require
+          duration: 1, percentage: 30, discountId: n
         };
-      case Chunk474936.dB:
-      case Chunk474936.hs:
-      case Chunk474936.RU:
+      case _.dB:
+      case _.hs:
+      case _.RU:
         return {
-          duration: 3, percentage: 30, discountId: require
+          duration: 3, percentage: 30, discountId: n
         };
-      case Chunk474936.ih:
+      case _.ih:
         return {
-          duration: 1, percentage: 40, discountId: require
+          duration: 1, percentage: 40, discountId: n
         };
-      case Chunk474936.gW:
+      case _.gW:
         return {
-          duration: 1, percentage: 20, discountId: require
+          duration: 1, percentage: 20, discountId: n
         };
-      case Chunk474936.Nl:
+      case _.Nl:
         return {
-          duration: 1, percentage: 25, discountId: require
+          duration: 1, percentage: 25, discountId: n
         };
       default:
         return
@@ -87,11 +87,11 @@ let h = () => {
     }
   },
   b = () => {
-    let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+    let e = (0, o.e7)([l.Z], () => l.Z.getPremiumTypeSubscription()),
       t = h(),
-      n = null !== module && module.hasPremiumNitroMonthly,
-      r = !!(null == module ? true : module.hasActiveTrial);
-    return require && !Chunk473749 && !exports
+      n = null !== e && e.hasPremiumNitroMonthly,
+      r = !!(null == e ? true : e.hasActiveTrial);
+    return n && !r && !t
   },
   y = e => {
     for (let t of e.invoiceItems) {
@@ -109,4 +109,4 @@ let h = () => {
     }
     return null
   },
-  O = () => (0, Chunk695349.W)()
+  O = () => (0, u.W)()

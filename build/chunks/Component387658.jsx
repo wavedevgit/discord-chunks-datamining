@@ -91,11 +91,11 @@ function k(e) {
 }
 
 function U() {
-  let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+  let e = (0, c.e7)([f.Z], () => f.Z.useReducedMotion),
     {
       styleLarge: t,
       styleSmall: n
-    } = Chunk473749.useMemo(() => ({
+    } = i.useMemo(() => ({
       styleLarge: {
         width: "".concat(10 + 20 * Math.random(), "%"),
         height: "auto"
@@ -105,35 +105,35 @@ function U() {
         height: "auto"
       }
     }), []),
-    a = Chunk473749.useMemo(() => (0, Chunk54381.jsxs)("div", {
-      className: Chunk450941.commandTextContainerPlaceholder,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk589118.textPlaceholder,
-        style: exports,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk589118.hidden,
+    a = i.useMemo(() => (0, r.jsxs)("div", {
+      className: x.commandTextContainerPlaceholder,
+      children: [(0, r.jsx)("div", {
+        className: D.textPlaceholder,
+        style: t,
+        children: (0, r.jsx)(u.Text, {
+          className: D.hidden,
           variant: "text-sm/semibold",
           color: "text-strong",
           lineClamp: 1,
           children: "_"
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk589118.textPlaceholder,
-        style: require,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk589118.hidden,
+      }), (0, r.jsx)("div", {
+        className: D.textPlaceholder,
+        style: n,
+        children: (0, r.jsx)(u.Text, {
+          className: D.hidden,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
           children: "_"
         })
       })]
-    }), [exports, require]);
-  return (0, Chunk54381.jsx)("div", {
-    className: o()(Chunk450941.command, Chunk589118.loadingAnimation, {
-      [Chunk589118.noAnimation]: module
+    }), [t, n]);
+  return (0, r.jsx)("div", {
+    className: o()(x.command, D.loadingAnimation, {
+      [D.noAnimation]: e
     }),
-    children: Chunk120356
+    children: a
   })
 }
 

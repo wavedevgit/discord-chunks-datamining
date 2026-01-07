@@ -27,15 +27,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk986752 = require("./986752.js");
 
 function S() {
-  let [e, t] = Chunk473749.useState(false), n = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isMediaFilterSettingLoading());
-  return (Chunk473749.useEffect(() => {
-    let e = new Chunk846519.V7;
-    return require ? module.start(150, () => {
-      exports(true)
-    }) : (module.stop(), exports(false)), () => module.stop()
-  }, [require]), module) ? (0, Chunk54381.jsx)("div", {
-    className: Chunk986752.filterLoadingIndicator,
-    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  let [e, t] = i.useState(false), n = (0, a.e7)([m.Z], () => m.Z.isMediaFilterSettingLoading());
+  return (i.useEffect(() => {
+    let e = new o.V7;
+    return n ? e.start(150, () => {
+      t(true)
+    }) : (e.stop(), t(false)), () => e.stop()
+  }, [n]), e) ? (0, r.jsx)("div", {
+    className: v.filterLoadingIndicator,
+    children: (0, r.jsx)(s.$jN, {})
   }) : null
 }
 

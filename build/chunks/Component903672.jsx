@@ -153,9 +153,9 @@ function T(e) {
 }
 
 function A() {
-  return (0, Chunk54381.jsx)(Chunk240126.Z, {
-    Icon: Chunk481060.lOy,
-    header: Chunk388032.intl.string(Chunk388032.t.bgDz74),
-    tip: Chunk388032.intl.string(Chunk388032.t.NS15vk)
+  return (0, r.jsx)(E.Z, {
+    Icon: s.lOy,
+    header: _.intl.string(_.t.bgDz74),
+    tip: _.intl.string(_.t.NS15vk)
   })
 }

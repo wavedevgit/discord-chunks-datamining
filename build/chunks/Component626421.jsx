@@ -33,9 +33,9 @@ let f = Chunk473749.memo(function(e) {
 });
 
 function g() {
-  let e = (0, Chunk399606.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    t = (0, Chunk566840.Eg)(module),
-    [n, i] = (0, Chunk243778.US)(Object.values(exports).filter(e => {
+  let e = (0, o.e7)([c.Z], () => c.Z.getGuildId()),
+    t = (0, u.Eg)(e),
+    [n, i] = (0, s.US)(Object.values(t).filter(e => {
       let {
         disabled: t
       } = e;
@@ -45,14 +45,14 @@ function g() {
         name: t
       } = e;
       return t
-    }), Chunk921944.R.SIDEBAR);
-  if (null == require) return null;
-  let l = exports[require];
-  return null == Chunk120356 ? null : (0, Chunk54381.jsx)("div", {
-    className: Chunk975317.container,
-    children: (0, Chunk54381.jsx)(f, {
-      state: Chunk120356,
-      markAsDismissed: Chunk473749
+    }), d.R.SIDEBAR);
+  if (null == n) return null;
+  let l = t[n];
+  return null == l ? null : (0, r.jsx)("div", {
+    className: p.container,
+    children: (0, r.jsx)(f, {
+      state: l,
+      markAsDismissed: i
     })
   })
 }

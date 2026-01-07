@@ -37,10 +37,10 @@ let E = "IncomingCallStore",
   C = false;
 
 function A() {
-  let e = Chunk451478.Z.windowSize();
-  return null != r && r.x + b < module.width && r.y + y < module.height ? r : {
-    x: module.width / 2 - b / 2,
-    y: module.height / 2 - y / 2
+  let e = m.Z.windowSize();
+  return null != r && r.x + b < e.width && r.y + y < e.height ? r : {
+    x: e.width / 2 - b / 2,
+    y: e.height / 2 - y / 2
   }
 }
 
@@ -112,11 +112,11 @@ function x(e) {
 }
 
 function L() {
-  C = Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting()
+  C = _.Z.getStatus() === h.Skl.DND || c.QZ.getSetting()
 }
 
 function j() {
-  let e = Chunk314897.default.getId();
+  let e = f.default.getId();
   T.forEach(t => {
     var n;
     let r = t;
@@ -125,7 +125,7 @@ function j() {
 }
 class M extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk885110.Z, Chunk581883.Z, Chunk451478.Z), this.syncWith([Chunk885110.Z], L), this.syncWith([Chunk581883.Z], L), this.syncWith([Chunk358221.Z], j)
+    this.waitFor(f.default, l.Z, p.Z, _.Z, u.Z, m.Z), this.syncWith([_.Z], L), this.syncWith([u.Z], L), this.syncWith([l.Z], j)
   }
   getIncomingCalls() {
     return C ? S : Array.from(I.values())

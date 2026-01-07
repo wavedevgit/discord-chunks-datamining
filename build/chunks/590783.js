@@ -54,7 +54,7 @@ class f extends Chunk81825.Z {
   }
   isExpired() {
     let e = this.expiresAt;
-    return null != module && i()().isAfter(module)
+    return null != e && i()().isAfter(e)
   }
   get hasMultipleCopies() {
     return this.maxUses > 1
@@ -69,13 +69,13 @@ class f extends Chunk81825.Z {
     return null != this.subscriptionPlanId
   }
   get premiumSubscriptionType() {
-    return this.isSubscription && Chunk474936.y7[this.skuId] || null
+    return this.isSubscription && c.y7[this.skuId] || null
   }
   get isSelfRedeemable() {
-    return !(0, Chunk95015.yE)(this.flags, d.NOT_SELF_REDEEMABLE)
+    return !(0, a.yE)(this.flags, d.NOT_SELF_REDEEMABLE)
   }
   get isExistingPremiumSubscriptionDisallowed() {
-    return (0, Chunk95015.yE)(this.flags, d.EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED)
+    return (0, a.yE)(this.flags, d.EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED)
   }
   get analyticsData() {
     return {

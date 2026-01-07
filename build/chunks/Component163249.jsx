@@ -74,97 +74,97 @@ function p(e) {
 }
 
 function h() {
-  let e = Chunk473749.useMemo(() => [{
-      backgroundClass: Chunk500591.bannerClubs,
+  let e = i.useMemo(() => [{
+      backgroundClass: m.bannerClubs,
       username: "Wumpus#0000",
-      avatar: require("./91055.js"),
+      avatar: n(91055),
       roles: [
         [{
-          name: Chunk388032.intl.string(Chunk388032.t["7oaPPo"]),
+          name: f.intl.string(f.t["7oaPPo"]),
           color: "#7e00fc"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t["Z/HN61"]),
+          name: f.intl.string(f.t["Z/HN61"]),
           color: "#faa61a"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.lvHTg0),
+          name: f.intl.string(f.t.lvHTg0),
           color: "#f06ea8"
         }],
         [{
-          name: Chunk388032.intl.string(Chunk388032.t["6yECkg"]),
+          name: f.intl.string(f.t["6yECkg"]),
           color: "#45ddc0"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t["5DabCV"]),
+          name: f.intl.string(f.t["5DabCV"]),
           color: "#00b0f4"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.bB900T),
+          name: f.intl.string(f.t.bB900T),
           color: "#ba1616"
         }]
       ]
     }, {
-      backgroundClass: Chunk500591.bannerGaming,
+      backgroundClass: m.bannerGaming,
       username: "Graggle#0000",
-      avatar: require("./507003.js"),
+      avatar: n(507003),
       roles: [
         [{
-          name: Chunk388032.intl.string(Chunk388032.t["xz/Vfn"]),
+          name: f.intl.string(f.t["xz/Vfn"]),
           color: "#4a76e6"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.Bceruw),
+          name: f.intl.string(f.t.Bceruw),
           color: "#ad87ff"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.W51slj),
+          name: f.intl.string(f.t.W51slj),
           color: "#6defcf"
         }],
         [{
-          name: Chunk388032.intl.string(Chunk388032.t.y9gTiX),
+          name: f.intl.string(f.t.y9gTiX),
           color: "#ff73fa"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.HslvdS),
+          name: f.intl.string(f.t.HslvdS),
           color: "#3ba55c"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.ipL1AG),
+          name: f.intl.string(f.t.ipL1AG),
           color: "#ff1b66"
         }]
       ]
     }, {
-      backgroundClass: Chunk500591.bannerHobbies,
+      backgroundClass: m.bannerHobbies,
       username: "Mallow#0000",
-      avatar: require("./552557.js"),
+      avatar: n(552557),
       roles: [
         [{
-          name: Chunk388032.intl.string(Chunk388032.t.pAFEbr),
+          name: f.intl.string(f.t.pAFEbr),
           color: "#20d6b8"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t["p/HZEE"]),
+          name: f.intl.string(f.t["p/HZEE"]),
           color: "#236136"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t["9Qp/JQ"]),
+          name: f.intl.string(f.t["9Qp/JQ"]),
           color: "#ff9a15"
         }],
         [{
-          name: Chunk388032.intl.string(Chunk388032.t.craF5a),
+          name: f.intl.string(f.t.craF5a),
           color: "#ff78b9"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.L1TvXF),
+          name: f.intl.string(f.t.L1TvXF),
           color: "#00b0f4"
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.lqKz9F),
+          name: f.intl.string(f.t.lqKz9F),
           color: "#6f52e4"
         }]
       ]
     }], []),
-    [t, l] = Chunk473749.useState(0),
-    a = Chunk473749.useRef(module);
-  return Chunk473749.useEffect(() => {
-    a.current = module
-  }), Chunk473749.useEffect(() => {
-    if (Chunk607070.Z.useReducedMotion) return;
-    let e = setTimeout(() => Chunk120356((exports + 1) % a.current.length), 6332);
-    return () => clearTimeout(module)
-  }, [exports]), (0, Chunk54381.jsx)("div", {
-    className: Chunk500591.bannerContainer,
+    [t, l] = i.useState(0),
+    a = i.useRef(e);
+  return i.useEffect(() => {
+    a.current = e
+  }), i.useEffect(() => {
+    if (d.Z.useReducedMotion) return;
+    let e = setTimeout(() => l((t + 1) % a.current.length), 6332);
+    return () => clearTimeout(e)
+  }, [t]), (0, r.jsx)("div", {
+    className: m.bannerContainer,
     "aria-hidden": true,
-    children: module.map((e, n) => (0, r.jsx)(p, {
+    children: e.map((e, n) => (0, r.jsx)(p, {
       guild: e,
       display: n === t
     }, n))

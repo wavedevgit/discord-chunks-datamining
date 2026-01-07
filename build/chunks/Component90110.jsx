@@ -68,10 +68,10 @@ function P(e, t) {
 }
 
 function R() {
-  let e = (0, Chunk835473.q)(Chunk695103.Z.testModeApplicationId),
+  let e = (0, E.q)(O.Z.testModeApplicationId),
     {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.SDK_DEBUG_TOOLS),
+    } = (0, g.ZP)(h.Z.SDK_DEBUG_TOOLS),
     {
       canStartAuthorization: n,
       hasAlreadyLinked: i,
@@ -84,56 +84,56 @@ function R() {
         hasConnectionEntrypointUrl: N,
         validFlows: P
       }
-    } = (0, Chunk524995.FG)(module, {
+    } = (0, v.FG)(e, {
       debug: true
     }),
-    R = (0, Chunk442837.e7)([Chunk757266.Z], () => null != module && Chunk757266.Z.isConnected(module.id)),
-    x = (0, Chunk442837.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getSelfEmbeddedActivities()),
+    R = (0, c.e7)([y.Z], () => null != e && y.Z.isConnected(e.id)),
+    x = (0, c.e7)([_.ZP], () => _.ZP.getSelfEmbeddedActivities()),
     L = "authorization_debug",
     j = [{
       id: "authorization_debug",
-      name: Chunk388032.intl.string(Chunk349350.default.vR0zs6)
+      name: I.intl.string(S.default.vR0zs6)
     }],
-    M = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk536789.header,
-        children: (0, Chunk54381.jsx)("div", {
-          className: Chunk536789.headerTextContainer,
-          children: (0, Chunk54381.jsx)(Chunk793030.X6q, {
+    M = () => (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("div", {
+        className: T.header,
+        children: (0, r.jsx)("div", {
+          className: T.headerTextContainer,
+          children: (0, r.jsx)(l.X6q, {
             variant: "heading-lg/extrabold",
-            children: Chunk388032.intl.format(Chunk349350.default.KoK4J9, {
+            children: I.intl.format(S.default.KoK4J9, {
               appName: ""
             })
           })
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk536789.body,
-        children: (0, Chunk54381.jsx)(Chunk793030.$jN, {
-          className: Chunk536789.spinner
+      }), (0, r.jsx)("div", {
+        className: T.body,
+        children: (0, r.jsx)(l.$jN, {
+          className: T.spinner
         })
       })]
     }),
-    k = () => (s()(null != module, "Application should be defined when rendering the test mode panel"), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk536789.header,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk536789.headerTextContainer,
-          children: (0, Chunk54381.jsx)(Chunk793030.X6q, {
+    k = () => (s()(null != e, "Application should be defined when rendering the test mode panel"), (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)("div", {
+        className: T.header,
+        children: [(0, r.jsx)("div", {
+          className: T.headerTextContainer,
+          children: (0, r.jsx)(l.X6q, {
             variant: "heading-lg/extrabold",
-            children: Chunk388032.intl.format(Chunk349350.default.KoK4J9, {
-              appName: module.name
+            children: I.intl.format(S.default.KoK4J9, {
+              appName: e.name
             })
           })
-        }), (0, Chunk54381.jsx)(Chunk793030.hU, {
+        }), (0, r.jsx)(l.hU, {
           variant: "icon-only",
-          icon: Chunk793030.CTb,
+          icon: l.CTb,
           "aria-label": "Close",
-          onClick: () => (0, Chunk550385.Ll)()
+          onClick: () => (0, b.Ll)()
         })]
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk536789.body,
-        children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
-          className: Chunk536789.tabBar,
+      }), (0, r.jsxs)("div", {
+        className: T.body,
+        children: [(0, r.jsx)(d.njP, {
+          className: T.tabBar,
           selectedItem: L,
           onItemSelect: () => {},
           orientation: "horizontal",
@@ -147,78 +147,78 @@ function R() {
             "aria-label": e.name,
             children: e.name
           }, e.id))
-        }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+        }), (0, r.jsx)(l.xvT, {
           variant: "text-md/medium",
           color: "text-subtle",
-          children: Chunk388032.intl.string(Chunk349350.default["no+FQS"])
-        }), (0, Chunk54381.jsx)(w, {
+          children: I.intl.string(S.default["no+FQS"])
+        }), (0, r.jsx)(w, {
           overallStatus: C ? 0 : R ? 3 : 1,
-          name: Chunk388032.intl.string(Chunk349350.default.AGLx00),
+          name: I.intl.string(S.default.AGLx00),
           steps: [{
             status: R ? 2 : 4,
-            text: Chunk388032.intl.string(Chunk349350.default.kxF9br),
-            description: R ? null : Chunk388032.intl.string(Chunk349350.default.PFxxJa),
+            text: I.intl.string(S.default.kxF9br),
+            description: R ? null : I.intl.string(S.default.PFxxJa),
             learnMoreLink: R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }, {
             status: C ? 2 : R ? 3 : 4,
-            text: Chunk388032.intl.string(Chunk349350.default.S94dzs),
-            description: C || !R ? null : Chunk388032.intl.string(Chunk349350.default.aTULMB),
+            text: I.intl.string(S.default.S94dzs),
+            description: C || !R ? null : I.intl.string(S.default.aTULMB),
             learnMoreLink: C || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
-          isChosen: Chunk692547 === Chunk524995.ro.RPC
-        }), (0, Chunk54381.jsx)(w, {
+          isChosen: u === v.ro.RPC
+        }), (0, r.jsx)(w, {
           overallStatus: +!N,
-          name: Chunk388032.intl.string(Chunk349350.default.K3ObrU),
+          name: I.intl.string(S.default.K3ObrU),
           steps: [{
             status: N ? 2 : 4,
-            text: Chunk388032.intl.string(Chunk349350.default["8a7IrV"]),
-            description: N ? Chunk388032.intl.formatToPlainString(Chunk349350.default["9iLeL2"], {
-              url: null == Chunk782568 ? true : Chunk782568.connectionEntrypointUrl
+            text: I.intl.string(S.default["8a7IrV"]),
+            description: N ? I.intl.formatToPlainString(S.default["9iLeL2"], {
+              url: null == p ? true : p.connectionEntrypointUrl
             }) : null
           }],
-          isChosen: Chunk692547 === Chunk524995.ro.WEB
+          isChosen: u === v.ro.WEB
         })]
-      }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk536789.footer,
-        children: [(0, Chunk54381.jsx)(D, {
-          status: +!Chunk120356,
-          text: Chunk388032.intl.string(Chunk388032.t["Vu/zmQ"])
-        }), 0 === P.length && (0, Chunk54381.jsx)(Chunk793030.xvT, {
+      }), (0, r.jsxs)("div", {
+        className: T.footer,
+        children: [(0, r.jsx)(D, {
+          status: +!i,
+          text: I.intl.string(I.t["Vu/zmQ"])
+        }), 0 === P.length && (0, r.jsx)(l.xvT, {
           style: {
             minWidth: 0,
             overflow: "hidden"
           },
           variant: "text-md/medium",
-          children: Chunk388032.intl.string(Chunk349350.default.eg0mNa)
-        }), (0, Chunk54381.jsx)(Chunk793030.zxk, {
+          children: I.intl.string(S.default.eg0mNa)
+        }), (0, r.jsx)(l.zxk, {
           variant: "secondary",
-          disabled: !require || Chunk120356,
-          onClick: () => Chunk512722({
-            analyticsLocations: exports
+          disabled: !n || i,
+          onClick: () => o({
+            analyticsLocations: t
           }),
-          text: Chunk388032.intl.string(Chunk349350.default.w0pN4R),
+          text: I.intl.string(S.default.w0pN4R),
           fullWidth: true
-        }), null != A && (0, Chunk54381.jsx)(Chunk793030.zxk, {
+        }), null != A && (0, r.jsx)(l.zxk, {
           variant: "secondary",
           onClick: () => {
-            Chunk384275.Z.delete(A.id);
-            let t = x.get(module.id);
-            null != exports && Chunk513202.Z.leaveActivity({
-              location: exports.location,
-              applicationId: module.id,
+            f.Z.delete(A.id);
+            let t = x.get(e.id);
+            null != t && m.Z.leaveActivity({
+              location: t.location,
+              applicationId: e.id,
               showFeedback: false
             })
           },
-          text: Chunk388032.intl.string(Chunk349350.default.tkIymA),
+          text: I.intl.string(S.default.tkIymA),
           fullWidth: true
         })]
       })]
     }));
-  return (0, Chunk54381.jsx)("div", {
+  return (0, r.jsx)("div", {
     "data-app-right-panel": true,
-    className: Chunk536789.debugToolsPanel,
-    children: (0, Chunk54381.jsx)(Chunk793030.y5t, {
-      children: null != module ? k() : M()
+    className: T.debugToolsPanel,
+    children: (0, r.jsx)(l.y5t, {
+      children: null != e ? k() : M()
     })
   })
 }

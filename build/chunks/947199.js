@@ -11,13 +11,13 @@ var Chunk509613 = require("./509613.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.n4)(Chunk313789.n.DATA_USAGE_DISCLAIMER_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.D60Gfj),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.R5N31P, {
+  useTitle: () => o.intl.string(o.t.D60Gfj),
+  useSubtitle: () => o.intl.format(o.t.R5N31P, {
     onClick: () => {
-      (0, Chunk518596.openUserSettings)(Chunk313789.n.ACCOUNT_PANEL, {
-        section: Chunk981631.oAB.ACCOUNT,
-        subsection: Chunk393681.D.SECURITY,
-        scrollPosition: Chunk526761.KQ.AccountScrollPositions.DISABLE_ACCOUNT
+      (0, u.openUserSettings)(l.n.ACCOUNT_PANEL, {
+        section: a.oAB.ACCOUNT,
+        subsection: s.D.SECURITY,
+        scrollPosition: r.KQ.AccountScrollPositions.DISABLE_ACCOUNT
       })
     }
   })

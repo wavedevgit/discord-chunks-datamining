@@ -75,7 +75,7 @@ function I(e) {
 }
 class T extends Chunk442837.ZP.Store {
   initialize() {
-    this.waitFor(Chunk594174.default)
+    this.waitFor(s.default)
   }
   getPendingWidgets() {
     return c
@@ -88,45 +88,45 @@ class T extends Chunk442837.ZP.Store {
   }
   getWidgetUpdates() {
     let e = this.getSaveablePendingWidgets();
-    if (null == module || null == u) return {
-      changedWidgets: null != module ? module : [],
+    if (null == e || null == u) return {
+      changedWidgets: null != e ? e : [],
       removedWidgets: [],
       hasOrderChanges: false
     };
     let t = new Map(u.map(e => [e.id, e])),
-      n = new Map(module.map(e => [e.id, e])),
+      n = new Map(e.map(e => [e.id, e])),
       r = [],
       i = [];
-    for (let [e, i] of require) {
-      let n = exports.get(module);
-      null != require && i.isEqual(require) || Chunk392711.push(i)
+    for (let [e, i] of n) {
+      let n = t.get(e);
+      null != n && i.isEqual(n) || r.push(i)
     }
-    for (let [e, r] of exports) require.has(module) || i.push(Chunk392711);
+    for (let [e, r] of t) n.has(e) || i.push(r);
     let a = false;
-    for (let t = 0; exports < module.length; exports++) {
+    for (let t = 0; t < e.length; t++) {
       var o, s;
-      if ((null == (o = module[exports]) ? true : Chunk570140.id) !== (null == (s = u[exports]) ? true : Chunk594174.id)) {
+      if ((null == (o = e[t]) ? true : o.id) !== (null == (s = u[t]) ? true : s.id)) {
         a = true;
         break
       }
     }
     return {
-      changedWidgets: Chunk392711,
+      changedWidgets: r,
       removedWidgets: i,
-      hasOrderChanges: Chunk442837
+      hasOrderChanges: a
     }
   }
   getChangedWidgets() {
     let {
       changedWidgets: e
     } = this.getWidgetUpdates();
-    return module
+    return e
   }
   getRemovedWidgets() {
     let {
       removedWidgets: e
     } = this.getWidgetUpdates();
-    return module
+    return e
   }
   hasUnsavedChanges() {
     let {
@@ -134,11 +134,11 @@ class T extends Chunk442837.ZP.Store {
       removedWidgets: t,
       hasOrderChanges: n
     } = this.getWidgetUpdates();
-    return module.length > 0 || exports.length > 0 || require
+    return e.length > 0 || t.length > 0 || n
   }
   canSaveChanges() {
     let e = this.getSaveablePendingWidgets();
-    return null != module && module.every(e => e.isValid())
+    return null != e && e.every(e => e.isValid())
   }
   get isSubmitting() {
     return d

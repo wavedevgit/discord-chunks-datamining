@@ -2,12 +2,12 @@
 /** chunk id: 392481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  Chrono: () => Chunk201129.k,
-  Meridiem: () => Chunk894186.GG,
-  ParsingComponents: () => Chunk86465.L,
-  ParsingResult: () => Chunk86465.G5,
-  ReferenceWithTimezone: () => Chunk86465.X2,
-  Weekday: () => Chunk894186.OG,
+  Chrono: () => m.k,
+  Meridiem: () => g.GG,
+  ParsingComponents: () => h.L,
+  ParsingResult: () => h.G5,
+  ReferenceWithTimezone: () => h.X2,
+  Weekday: () => g.OG,
   casual: () => O,
   createCasualConfiguration: () => S,
   createConfiguration: () => I,
@@ -38,7 +38,7 @@ let O = new Chunk201129.k(S()),
 
 function S() {
   let e = I(false);
-  return module.parsers.unshift(new Chunk944563.Z), module.parsers.unshift(new Chunk9139.Z), module.parsers.unshift(new Chunk66138.Z), module.parsers.unshift(new Chunk697872.Z), module.parsers.unshift(new Chunk986982.Z), module
+  return e.parsers.unshift(new d.Z), e.parsers.unshift(new f.Z), e.parsers.unshift(new a.Z), e.parsers.unshift(new _.Z), e.parsers.unshift(new b.Z), e
 }
 
 function I(e) {

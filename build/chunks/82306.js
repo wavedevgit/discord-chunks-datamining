@@ -41,7 +41,7 @@ var a = 12633 == require.j ? ["canDrop", "hover", "drop"] : null,
       }, {
         key: "hover",
         value: function() {
-          this.spec.hover && this.props && this.spec.hover(this.props, this.monitor, (0, Chunk675082.Al)(this.ref))
+          this.spec.hover && this.props && this.spec.hover(this.props, this.monitor, (0, o.Al)(this.ref))
         }
       }, {
         key: "drop",
@@ -54,7 +54,7 @@ var a = 12633 == require.j ? ["canDrop", "hover", "drop"] : null,
           var n = t[r];
           n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
         }
-      }(exports.prototype, module), exports
+      }(t.prototype, e), t
   }() : null;
 
 function c(e) {

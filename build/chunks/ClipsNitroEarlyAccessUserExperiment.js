@@ -101,7 +101,7 @@ let s = (0, Chunk818083.B)({
   });
 
 function c() {
-  if (!(0, Chunk779618.Z)(Chunk131951.Z)) returnfalse;
+  if (!(0, o.Z)(a.Z)) returnfalse;
   let {
     enableClips: e
   } = l.getCurrentConfig({
@@ -116,16 +116,16 @@ function c() {
     autoTrackExposure: false
   }), {
     enableViewerClipping: n
-  } = Chunk441167.Z.getCurrentConfig({
+  } = i.Z.getCurrentConfig({
     location: "areClipsEnabled"
   }, {
     autoTrackExposure: false
   });
-  return module || exports || require
+  return e || t || n
 }
 
 function u() {
-  let e = (0, Chunk779618.Z)(Chunk131951.Z),
+  let e = (0, o.Z)(a.Z),
     {
       enableClips: t
     } = l.useExperiment({
@@ -142,12 +142,12 @@ function u() {
     }),
     {
       enableViewerClipping: r
-    } = Chunk441167.Z.useExperiment({
+    } = i.Z.useExperiment({
       location: "useEnableClips"
     }, {
       autoTrackExposure: false
     });
-  return (require || exports || Chunk818083) && module
+  return (n || t || r) && e
 }
 
 function d() {
@@ -158,7 +158,7 @@ function d() {
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }
 
 function f() {
@@ -169,7 +169,7 @@ function f() {
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }
 
 function p() {
@@ -180,7 +180,7 @@ function p() {
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }
 
 function _() {
@@ -191,5 +191,5 @@ function _() {
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }

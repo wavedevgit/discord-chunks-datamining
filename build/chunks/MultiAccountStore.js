@@ -197,7 +197,7 @@ class N extends(a = Chunk442837.ZP.PersistedStore) {
     })
   }
   get canUseMultiAccountNotifications() {
-    return this.getCanUseMultiAccountMobile() && Chunk988965.N.getCurrentConfig({
+    return this.getCanUseMultiAccountMobile() && u.N.getCurrentConfig({
       location: "09e468_1"
     }, {
       autoTrackExposure: false

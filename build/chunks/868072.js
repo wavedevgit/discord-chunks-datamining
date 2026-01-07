@@ -14,7 +14,7 @@ class i {
     let e = {
       value: ""
     };
-    return a(this.ast, module), module.value
+    return a(this.ast, e), e.value
   }
 }
 

@@ -11,13 +11,13 @@ var Chunk846027 = require("./846027.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.UO)(Chunk313789.n.VOICE_OUTPUT_VOLUME_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.aUJ062),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.eATD2B), Chunk388032.intl.string(Chunk388032.t["3182VD"]), Chunk388032.intl.string(Chunk388032.t["DGq/PR"])],
+  useTitle: () => o.intl.string(o.t.aUJ062),
+  useSearchTerms: () => [o.intl.string(o.t.eATD2B), o.intl.string(o.t["3182VD"]), o.intl.string(o.t["DGq/PR"])],
   minValue: 0,
   maxValue: 200,
   getInitialValue: function() {
-    let t = Chunk131951.Z.getOutputVolume();
-    return (0, Chunk36703.P)(module)
+    let t = u.Z.getOutputVolume();
+    return (0, r.P)(t)
   },
   onValueRender: function(t) {
     return "".concat(t.toFixed(0), "%")

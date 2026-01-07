@@ -29,22 +29,22 @@ let m = new Chunk710845.Z("SystemServiceNativeUtils"),
 
 function E() {
   var e;
-  return !!Chunk358085.isPlatformEmbedded && null != (e = Chunk998502.ZP.IsSystemServiceInstalled()) && module
+  return !!c.isPlatformEmbedded && null != (e = d.ZP.IsSystemServiceInstalled()) && e
 }
 
 function b() {
-  return !!Chunk358085.isPlatformEmbedded && true === Chunk998502.ZP.CanSystemServiceBeInstalled()
+  return !!c.isPlatformEmbedded && true === d.ZP.CanSystemServiceBeInstalled()
 }
 
 function y() {
   var e;
-  return !!Chunk358085.isPlatformEmbedded && null != (e = Chunk998502.ZP.CanSystemServiceBeInstalled()) && module
+  return !!c.isPlatformEmbedded && null != (e = d.ZP.CanSystemServiceBeInstalled()) && e
 }
 
 function O() {
-  let e = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.canShowAdminWarning),
+  let e = (0, r.e7)([s.ZP], () => s.ZP.canShowAdminWarning),
     t = y();
-  return !!Chunk358085.isPlatformEmbedded && module && !E() && exports
+  return !!c.isPlatformEmbedded && e && !E() && t
 }
 
 function v(e) {
@@ -82,13 +82,13 @@ async function T(e) {
   }
 }
 async function C() {
-  Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.InputEventServiceSetAllowed(false), Chunk998502.ZP.ToolServiceSetAllowed(false), await Chunk570140.Z.dispatch({
+  c.isPlatformEmbedded && (d.ZP.InputEventServiceSetAllowed(false), d.ZP.ToolServiceSetAllowed(false), await a.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
     status: {
       state: "unknown"
     },
     modules: ["input-service"]
-  }), await Chunk570140.Z.dispatch({
+  }), await a.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
     status: {
       state: "unknown"

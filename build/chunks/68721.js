@@ -26,7 +26,7 @@ let f = new Chunk579092.Yd("Output"),
 class _ extends Chunk836560.EventEmitter {
   destroy() {
     var e, t, n;
-    this.removeAllListeners(), null == (e = (t = this).cleanup) || module.call(exports), this.reset(), null != this.stream && (p.release(this.stream), this.stream = true), null == (n = this._audioFilter) || require.dispose(), this._audioFilter = true, this.destroyed = true
+    this.removeAllListeners(), null == (e = (t = this).cleanup) || e.call(t), this.reset(), null != this.stream && (p.release(this.stream), this.stream = true), null == (n = this._audioFilter) || n.dispose(), this._audioFilter = true, this.destroyed = true
   }
   reset() {
     this.setSpeaking(false)
@@ -41,10 +41,10 @@ class _ extends Chunk836560.EventEmitter {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : .2,
       t = this.context;
     if (null == this.stream) throw Error("AudioInput: No MediaStream");
-    let n = exports.createDelay(module);
-    require.delayTime.value = module, exports.createMediaStreamSource(this.stream).connect(require);
-    let r = exports.createMediaStreamDestination();
-    return require.connect(Chunk836560), Chunk836560.stream
+    let n = t.createDelay(e);
+    n.delayTime.value = e, t.createMediaStreamSource(this.stream).connect(n);
+    let r = t.createMediaStreamDestination();
+    return n.connect(r), r.stream
   }
   get mute() {
     return this._mute
@@ -78,49 +78,49 @@ class _ extends Chunk836560.EventEmitter {
   }
   async enable() {
     null != this.cleanup && (this.cleanup(), this.cleanup = true), null != this.stream && (p.release(this.stream), this.stream = true);
-    let e = await (0, Chunk740197.Hg)(),
+    let e = await (0, a.Hg)(),
       t = {
         echoCancellation: this.echoCancellation,
         noiseSuppression: this.noiseSuppression,
         autoGainControl: this.automaticGainControl
       };
-    module.some(e => e.id === this.sourceId) && (exports.deviceId = {
+    e.some(e => e.id === this.sourceId) && (t.deviceId = {
       exact: this.sourceId
     });
     try {
       let e = await p.acquire({
-        audio: exports
+        audio: t
       });
-      if (this.destroyed) throw p.release(module), Error("AudioInput: Already destroyed");
+      if (this.destroyed) throw p.release(e), Error("AudioInput: Already destroyed");
       if (this._noiseCancellation) try {
-        let t = await (0, Chunk290488.n)();
-        this._audioFilter = await exports.createNoiseFilter(this.context), this._audioFilter.addEventListener("ready", e => {
+        let t = await (0, s.n)();
+        this._audioFilter = await t.createNoiseFilter(this.context), this._audioFilter.addEventListener("ready", e => {
           var t;
           null == (t = this._audioFilter) || t.enable()
         }), this._audioFilter.addEventListener("dispose", t => {
           p.release(e)
         });
-        let n = this.context.createMediaStreamSource(module),
+        let n = this.context.createMediaStreamSource(e),
           r = this.context.createMediaStreamDestination();
-        require.connect(this._audioFilter), this._audioFilter.connect(Chunk836560), this.stream = Chunk836560.stream
+        n.connect(this._audioFilter), this._audioFilter.connect(r), this.stream = r.stream
       } catch (t) {
-        f.error("failure creating krisp node"), f.error(exports), this.stream = module
-      } else this.stream = module;
-      return this.updateMode(), this.updateAudioTracks(), this.emit("permission", true), this.emit("stream", this.stream), module
+        f.error("failure creating krisp node"), f.error(t), this.stream = e
+      } else this.stream = e;
+      return this.updateMode(), this.updateAudioTracks(), this.emit("permission", true), this.emit("stream", this.stream), e
     } catch (e) {
-      if ("string" != typeof module) switch (module.name) {
+      if ("string" != typeof e) switch (e.name) {
         case "PermissionDeniedError":
         case "NotAllowedError":
-          throw this.emit("permission", false), Chunk231338.ET.PERMISSION_DENIED;
+          throw this.emit("permission", false), u.ET.PERMISSION_DENIED;
         case "PermissionDismissedError":
-          throw this.emit("permission", false), Chunk231338.ET.PERMISSION_DISMISSED;
+          throw this.emit("permission", false), u.ET.PERMISSION_DISMISSED;
         case "DevicesNotFoundError":
         case "NotFoundError":
-          throw Chunk231338.ET.NO_DEVICES_FOUND;
+          throw u.ET.NO_DEVICES_FOUND;
         default:
-          throw module.name || "UNKNOWN"
+          throw e.name || "UNKNOWN"
       }
-      throw module
+      throw e
     }
   }
   setSource(e) {
@@ -135,7 +135,7 @@ class _ extends Chunk836560.EventEmitter {
     this.mode = e, this.modeOptions = t, null != this.stream && this.enable()
   }
   updateMode() {
-    null != this.cleanup && (this.cleanup(), this.cleanup = true), null != this.stream && this.mode === Chunk65154.pM.VOICE_ACTIVITY && (this.cleanup = this.setupVoiceActivity(this.modeOptions))
+    null != this.cleanup && (this.cleanup(), this.cleanup = true), null != this.stream && this.mode === c.pM.VOICE_ACTIVITY && (this.cleanup = this.setupVoiceActivity(this.modeOptions))
   }
   setupVoiceActivity(e) {
     let {
@@ -156,7 +156,7 @@ class _ extends Chunk836560.EventEmitter {
   updateAudioTracks() {
     if (null != this.stream) {
       let e = this.stream.getAudioTracks();
-      for (let t = 0, n = module.length; exports < require; exports++) module[exports].enabled = !this._mute
+      for (let t = 0, n = e.length; t < n; t++) e[t].enabled = !this._mute
     }
   }
   constructor(e) {

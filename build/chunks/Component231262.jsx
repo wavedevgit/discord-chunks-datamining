@@ -27,22 +27,22 @@ class m extends Chunk473749.PureComponent {
       hideNavAriaLabel: p,
       skipToContentLabel: h
     } = this.props;
-    return null == N ? null : (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [(0, Chunk54381.jsx)(Chunk653371.a, {
-        className: l()(Chunk61450.desktopHeader, exports),
+    return null == N ? null : (0, n.jsxs)(r.Fragment, {
+      children: [(0, n.jsx)(o.a, {
+        className: l()(u.desktopHeader, t),
         TrackClick: N,
-        token: module,
-        avoidRouter: Chunk330711,
+        token: e,
+        avoidRouter: d,
         authRedirectTo: m,
-        onChangeLocale: require,
-        mainContentId: Chunk120356,
+        onChangeLocale: a,
+        mainContentId: s,
         skipToContentLabel: h
-      }), (0, Chunk54381.jsx)(Chunk388755.D, {
-        className: l()(Chunk61450.mobileHeader, Chunk794010),
-        token: module,
-        avoidRouter: Chunk330711,
+      }), (0, n.jsx)(c.D, {
+        className: l()(u.mobileHeader, i),
+        token: e,
+        avoidRouter: d,
         TrackClick: N,
-        onChangeLocale: require,
+        onChangeLocale: a,
         openNavAriaLabel: f,
         hideNavAriaLabel: p
       })]

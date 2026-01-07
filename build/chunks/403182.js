@@ -119,8 +119,8 @@ function T(e) {
 }
 
 function C() {
-  let e = Chunk594174.default.getCurrentUser();
-  return null != module && module.isStaff() ? m : _
+  let e = l.default.getCurrentUser();
+  return null != e && e.isStaff() ? m : _
 }
 
 function A(e) {

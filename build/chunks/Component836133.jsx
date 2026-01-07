@@ -12,10 +12,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_HARDWARE_CLASSIFICATION_WARNING, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.SIxrIF)],
-  usePredicate: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()) === Chunk894694.xH.BELOW_MINIMUM,
-  Component: () => (0, Chunk54381.jsx)(Chunk494620.Z, {
-    look: Chunk494620.z.WARNING,
-    children: Chunk388032.intl.string(Chunk388032.t.SIxrIF)
+  useSearchTerms: () => [T.intl.string(T.t.SIxrIF)],
+  usePredicate: () => (0, l.e7)([s.Z], () => s.Z.getHardwareClassification()) === u.xH.BELOW_MINIMUM,
+  Component: () => (0, i.jsx)(o.Z, {
+    look: o.z.WARNING,
+    children: T.intl.string(T.t.SIxrIF)
   })
 })

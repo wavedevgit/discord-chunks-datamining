@@ -29,7 +29,7 @@ let m = false,
   E = {};
 
 function b() {
-  null != h && null == Chunk430824.Z.getGuild(h) && null == Chunk937111.Z.getRequest(h) && (h = null), null != g && null == Chunk430824.Z.getGuild(g) && null == Chunk937111.Z.getRequest(g) && (g = null), O(h)
+  null != h && null == f.Z.getGuild(h) && null == s.Z.getRequest(h) && (h = null), null != g && null == f.Z.getGuild(g) && null == s.Z.getRequest(g) && (g = null), O(h)
 }
 
 function y(e) {

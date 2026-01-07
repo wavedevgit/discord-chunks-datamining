@@ -14,11 +14,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk758539 = require("./758539.js");
 
 function d() {
-  let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+  let e = (0, s.e7)([c.Z], () => c.Z.useReducedMotion),
     {
       styleLarge: t,
       styleSmall: n
-    } = Chunk473749.useMemo(() => ({
+    } = i.useMemo(() => ({
       styleLarge: {
         width: "".concat(10 + 50 * Math.random(), "%")
       },
@@ -26,37 +26,37 @@ function d() {
         width: "".concat(30 + 60 * Math.random(), "%")
       }
     }), []);
-  return (0, Chunk54381.jsxs)("div", {
-    className: o()(Chunk758539.container, {
-      [Chunk758539.noAnimation]: module
+  return (0, r.jsxs)("div", {
+    className: o()(u.container, {
+      [u.noAnimation]: e
     }),
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk758539.iconPlaceholder
-    }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk758539.textContainer,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk758539.textPlaceholder,
-        style: exports,
-        children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-          className: Chunk758539.hidden,
+    children: [(0, r.jsx)("div", {
+      className: u.iconPlaceholder
+    }), (0, r.jsxs)("div", {
+      className: u.textContainer,
+      children: [(0, r.jsx)("div", {
+        className: u.textPlaceholder,
+        style: t,
+        children: (0, r.jsx)(l.Heading, {
+          className: u.hidden,
           variant: "heading-md/semibold",
           color: "text-strong",
           lineClamp: 1,
           children: "_"
         })
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk758539.textPlaceholder,
-        style: require,
-        children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk758539.hidden,
+      }), (0, r.jsx)("div", {
+        className: u.textPlaceholder,
+        style: n,
+        children: (0, r.jsx)(l.Text, {
+          className: u.hidden,
           variant: "text-sm/normal",
           color: "text-subtle",
           lineClamp: 1,
           children: "_"
         })
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk758539.underline
+    }), (0, r.jsx)("div", {
+      className: u.underline
     })]
   })
 }

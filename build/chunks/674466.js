@@ -239,8 +239,8 @@ class O {
   }
   getCodecsUsed() {
     let e = new Set;
-    for (let [t, n] of Object.entries(this.codecBuckets)) require > 0 && module.add(exports);
-    return module
+    for (let [t, n] of Object.entries(this.codecBuckets)) n > 0 && e.add(t);
+    return e
   }
   constructor(e) {
     o(this, "decoderBuckets", Object.fromEntries(Object.values(p).map(e => [e, 0]))), o(this, "codecBuckets", {

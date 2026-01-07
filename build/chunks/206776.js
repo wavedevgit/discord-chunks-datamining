@@ -38,7 +38,7 @@ function p(e) {
 class _ extends Chunk692401.W {
   _queueIdleCallback() {
     if (!this._enableRequestIdleCallback || this._criticalWorkScheduled) return this._processWorkCallback();
-    this.telemetry.time(Chunk459005.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._scheduleRequestIdleCallback(e => {
+    this.telemetry.time(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._scheduleRequestIdleCallback(e => {
       var t;
       if (null == e ? true : e.didTimeout) {
         this.telemetry.track(l.ug.FIRED_DUE_TO_MAX_TIMEOUT), this.telemetry.clearTime(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._processWorkCallback();
@@ -59,7 +59,7 @@ class _ extends Chunk692401.W {
         null != n && this.telemetry.timeTrack(l.JV.DEADLINE_INITIAL_TIME_REMAINING, n), this._processWorkCallback(t)
       }
     }, {
-      timeout: Chunk398463.Hb
+      timeout: c.Hb
     })
   }
   _scheduleRequestIdleCallback(e, t) {
@@ -76,7 +76,7 @@ class _ extends Chunk692401.W {
     null != this._flushIdleHandler && (f(this._flushIdleHandler), this._flushIdleHandler = null), null != this._flushIdleMaxTimeoutHandler && (clearTimeout(this._flushIdleMaxTimeoutHandler), this._flushIdleMaxTimeoutHandler = null)
   }
   constructor() {
-    super(), u(this, "_flushIdleMaxTimeoutHandler", null), Chunk570140.Z.subscribe("WINDOW_VISIBILITY_CHANGE", e => {
+    super(), u(this, "_flushIdleMaxTimeoutHandler", null), a.Z.subscribe("WINDOW_VISIBILITY_CHANGE", e => {
       let {
         visible: t,
         windowId: n

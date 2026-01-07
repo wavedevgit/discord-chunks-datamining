@@ -13,15 +13,15 @@ var Chunk544891 = require("./544891.js"),
 
 function c() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  return Chunk752048.Z.shouldFetch() && Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION) ? (Chunk570140.Z.dispatch({
+  return s.Z.shouldFetch() && a.Z.hasConsented(l.pjP.PERSONALIZATION) ? (i.Z.dispatch({
     type: "LOAD_USER_AFFINITIES_V2"
-  }), Chunk544891.tn.get({
-    url: Chunk981631.ANM.USER_AFFINITIES_V2,
-    retries: 3 * !!module,
+  }), r.tn.get({
+    url: l.ANM.USER_AFFINITIES_V2,
+    retries: 3 * !!e,
     oldFormErrors: true,
     rejectWithError: false,
     query: {
-      user_flags: Chunk286715.r.RECENTLY_RETURNED
+      user_flags: o.r.RECENTLY_RETURNED
     }
   }).then(e => {
     var t;
@@ -50,7 +50,7 @@ function c() {
       userFlags: null != (t = n.user_flags) ? t : {}
     })
   }, () => {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "LOAD_USER_AFFINITIES_V2_FAILURE"
     })
   })) : Promise.resolve()

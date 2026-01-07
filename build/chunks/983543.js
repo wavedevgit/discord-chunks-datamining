@@ -89,14 +89,14 @@ class v extends Chunk147913.Z {
     return this.remote.has(e) || this.remote.set(e, new m.p), this.remote.get(e)
   }
   cleanup() {
-    for (let [e, t] of this.remote) exports.empty() && this.remote.delete(module)
+    for (let [e, t] of this.remote) t.empty() && this.remote.delete(e)
   }
   handleConnectionOpenSupplemental() {
     this.handleConnectionResumed(false)
   }
   handleConnectionResumed() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    this.tickQueued && !this.remoteTicking ? (this.remoteTick(), this.remoteTick.flush()) : module && (this.localFetching.clear(), this.remote.clear(), this.remoteTicking = false)
+    this.tickQueued && !this.remoteTicking ? (this.remoteTick(), this.remoteTick.flush()) : e && (this.localFetching.clear(), this.remote.clear(), this.remoteTicking = false)
   }
   handleGuildCreate(e) {
     this.remote.delete(e.guild.id)

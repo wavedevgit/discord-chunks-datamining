@@ -16,25 +16,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
-    useBadge: () => (0, Chunk54381.jsx)(Chunk703288.Z, {}),
-    usePredicate: () => !(0, Chunk526665.BK)("LegacyClipsPane"),
+    useTitle: () => d.intl.string(d.t.z2jK6X),
+    useBadge: () => (0, i.jsx)(u.Z, {}),
+    usePredicate: () => !(0, T.BK)("LegacyClipsPane"),
     StronglyDiscouragedCustomComponent: Chunk574755.Z,
     buildLayout: () => []
   }),
   g = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
-    useBadge: () => (0, Chunk54381.jsx)(Chunk703288.Z, {}),
+    useTitle: () => d.intl.string(d.t.z2jK6X),
+    useBadge: () => (0, i.jsx)(u.Z, {}),
     usePredicate: () => {
-      let t = (0, Chunk526665.BK)("ClipsPanel"),
-        e = (0, Chunk924557.w9)();
-      return module && exports
+      let t = (0, T.BK)("ClipsPanel"),
+        e = (0, s.w9)();
+      return t && e
     },
-    buildLayout: () => [Chunk183353.x, Chunk698151.K]
+    buildLayout: () => [c.x, S.K]
   }),
   I = (0, Chunk509613.m7)(Chunk313789.n.CLIPS_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
+    useTitle: () => d.intl.string(d.t.z2jK6X),
     icon: Chunk657707.AlX,
-    getLegacySearchKey: () => (0, Chunk526665.Ml)("ClipsPanel") ? true : Chunk726985.s6.CLIPS,
-    buildLayout: () => (0, Chunk526665.Ml)("ClipsPanel") ? [g] : [_]
+    getLegacySearchKey: () => (0, T.Ml)("ClipsPanel") ? true : E.s6.CLIPS,
+    buildLayout: () => (0, T.Ml)("ClipsPanel") ? [g] : [_]
   })

@@ -158,10 +158,10 @@ class et {
 class en {
   get initializationData() {
     return {
-      selectedChannel: Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId()),
-      selectedVoiceChannelId: Chunk944486.Z.getVoiceChannelId(),
-      activeJoinedRelevantThreads: Chunk601070.Z.getActiveJoinedRelevantThreadsForGuild(this.id),
-      activeJoinedUnreadThreads: Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(this.id)
+      selectedChannel: T.Z.getChannel(R.Z.getChannelId()),
+      selectedVoiceChannelId: R.Z.getVoiceChannelId(),
+      activeJoinedRelevantThreads: O.Z.getActiveJoinedRelevantThreadsForGuild(this.id),
+      activeJoinedUnreadThreads: O.Z.getActiveJoinedUnreadThreadsForGuild(this.id)
     }
   }
   invalidate() {
@@ -175,14 +175,14 @@ class en {
   }
   getSections() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return (null == this.sections && (this.sections = this.getRows().map(e => e.length)), module) ? [...this.sections] : this.sections
+    return (null == this.sections && (this.sections = this.getRows().map(e => e.length)), e) ? [...this.sections] : this.sections
   }
   getRows() {
     if (null == this.rows) {
       this.sortedNamedCategories = o().sortBy(Object.values(this.categories), e => e.record.position), this.rows = [this.channelNoticeSection, this.guildActionSection, this.favoritesCategory, this.recentsCategory, this.noParentCategory, ...this.sortedNamedCategories, this.voiceChannelsCategory].map(e => e.getRows());
       let e = 0;
       for (let t of [this.noParentCategory, ...this.sortedNamedCategories])
-        for (let n of (exports.position = ++module, exports.getShownChannelIds())) exports.channels[require].position = ++module
+        for (let n of (t.position = ++e, t.getShownChannelIds())) t.channels[n].position = ++e
     }
     return this.rows
   }
@@ -281,7 +281,7 @@ class en {
   }
   updateRecentsCategory() {
     let e = this.recentsCategory.updateAllChannels(this.initializationData);
-    return module && this.invalidate(), module
+    return e && this.invalidate(), e
   }
   nonPositionalChannelUpdate(e) {
     let t = this.initializationData,
@@ -308,7 +308,7 @@ class en {
   _initializeAllChannelsById() {
     if (null == this.allChannelsById)
       for (let e of (this.allChannelsById = {}, this.getSortedCategories()))
-        for (let t in module.channels) this.allChannelsById[exports] = module.channels[exports];
+        for (let t in e.channels) this.allChannelsById[t] = e.channels[t];
     return this.allChannelsById
   }
   getChannels(e) {
@@ -394,7 +394,7 @@ class er {
   }
   getRows() {
     let e = this.getShownChannelIds();
-    return 0 === module.length && this.shouldShowEmptyCategory() ? [W] : module
+    return 0 === e.length && this.shouldShowEmptyCategory() ? [W] : e
   }
   shouldShowEmptyCategory() {
     return o().some(this.channels, e => e.renderLevel >= 3)
@@ -409,7 +409,7 @@ class er {
   }
   getShownChannelAndThreadIds() {
     let e = o()(this.channels).values().flatMap(e => e.threadIds).value();
-    return this.getShownChannelIds().concat(module)
+    return this.getShownChannelIds().concat(e)
   }
   isEmpty() {
     return 0 === this.getShownChannelIds().length
@@ -434,7 +434,7 @@ class ei extends er {
 }
 class ea extends er {
   shouldShowEmptyCategory() {
-    return !!(super.shouldShowEmptyCategory() || Chunk496675.Z.can(Chunk231338.Pl.MANAGE_CHANNELS, this.record) && Chunk496675.Z.can(Chunk231338.Pl.VIEW_CHANNEL, this.record) && o().isEmpty(this.channels) && (!this.guild.optInEnabled || this.guild.optedInChannels.has(this.id)))
+    return !!(super.shouldShowEmptyCategory() || N.Z.can(F.Pl.MANAGE_CHANNELS, this.record) && N.Z.can(F.Pl.VIEW_CHANNEL, this.record) && o().isEmpty(this.channels) && (!this.guild.optInEnabled || this.guild.optedInChannels.has(this.id)))
   }
   constructor(e, t, n, r) {
     for (let i of (super(e), B(this, "id", true), B(this, "record", true), this.record = t, this.id = t.id, this.isCollapsed = true === e.collapsedCategoryIds[t.id], this.isMuted = e.mutedChannelIds.has(t.id), this.channels = {}, n)) this.channels[i.id] = new e_(this, i, r)
@@ -541,14 +541,14 @@ class el extends er {
   getShownChannelIds() {
     if (null == this.shownChannelIds) {
       let e = o()(this.channels).values().filter(e => 4 === e.renderLevel || 3 === e.renderLevel),
-        t = module.sortBy(e => {
+        t = e.sortBy(e => {
           let {
             record: t
           } = e;
           return t.position
         }).take(5).value(),
-        n = new Set([...module.filter(e => 4 === e.renderLevel).value(), ...exports]);
-      this.shownChannelIds = o()([...require]).sortBy(e => {
+        n = new Set([...e.filter(e => 4 === e.renderLevel).value(), ...t]);
+      this.shownChannelIds = o()([...n]).sortBy(e => {
         let {
           record: t
         } = e;
@@ -579,25 +579,25 @@ class eu extends er {
     if (!this.guild.optInEnabled) return [];
     if (null == this.hiddenChannelIds) {
       let e = o()(this.channels).filter(e => 3 === e.renderLevel).value();
-      if (module.every(e => e.record.isCategory())) return this.hiddenChannelIds = [], this.hiddenChannelIds;
-      this.hiddenChannelIds = module.map(e => e.id)
+      if (e.every(e => e.record.isCategory())) return this.hiddenChannelIds = [], this.hiddenChannelIds;
+      this.hiddenChannelIds = e.map(e => e.id)
     }
     return this.hiddenChannelIds
   }
   getRows() {
     if (!this.guild.optInEnabled) return [];
     let e = this.getShownChannelIds();
-    return 0 === module.length && this.getHiddenChannelIds().length > 0 ? [W] : module
+    return 0 === e.length && this.getHiddenChannelIds().length > 0 ? [W] : e
   }
   getShownChannelIds() {
     if (!this.guild.optInEnabled) return [];
     if (null == this.shownChannelIds) {
       let t = o()(this.channels).filter(e => 4 === e.renderLevel).orderBy([e => ec(e, this.categoriesById), e => e.record.type === G.d4z.GUILD_CATEGORY ? false : e.record.position], ["asc", "asc"]).value();
       this.shownChannelIds = [];
-      for (let n = 0; require < exports.length; require++) {
+      for (let n = 0; n < t.length; n++) {
         var e;
-        let r = exports[require];
-        require < exports.length - 1 && Chunk512722.record.type === Chunk981631.d4z.GUILD_CATEGORY && (null == (e = exports[require + 1]) ? true : module.record.type) === Chunk981631.d4z.GUILD_CATEGORY || (require !== exports.length - 1 || Chunk512722.record.type !== Chunk981631.d4z.GUILD_CATEGORY) && this.shownChannelIds.push(Chunk512722.id)
+        let r = t[n];
+        n < t.length - 1 && r.record.type === G.d4z.GUILD_CATEGORY && (null == (e = t[n + 1]) ? true : e.record.type) === G.d4z.GUILD_CATEGORY || (n !== t.length - 1 || r.record.type !== G.d4z.GUILD_CATEGORY) && this.shownChannelIds.push(r.id)
       }
     }
     return this.shownChannelIds
@@ -643,13 +643,13 @@ class ep {
     return this.category.guild.mutedChannelIds.has(this.id)
   }
   get isCollapsed() {
-    return Chunk58468.Z.isCollapsed(this.id)
+    return C.Z.isCollapsed(this.id)
   }
   get isFirstVoiceChannel() {
     return this.category.getFirstVoiceChannel() === this
   }
   get lastMessageTimestamp() {
-    return Math.max(Chunk306680.ZP.lastMessageTimestamp(this.id), ...this.threadIds.map(Chunk306680.ZP.lastMessageTimestamp))
+    return Math.max(P.ZP.lastMessageTimestamp(this.id), ...this.threadIds.map(P.ZP.lastMessageTimestamp))
   }
   updateChannel(e, t) {
     let n = false;
@@ -659,7 +659,7 @@ class ep {
   }
   updateSubtitle() {
     let e = this.computeSubtitle();
-    return !o().isEqual(this.subtitle, module) && (this.subtitle = module, true)
+    return !o().isEqual(this.subtitle, e) && (this.subtitle = e, true)
   }
   computeSubtitle() {
     return eb(this.record, this.isCollapsed || this.category.isCollapsed, this.category.guild.optInEnabled)

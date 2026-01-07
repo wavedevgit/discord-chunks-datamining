@@ -78,7 +78,7 @@ let R = {},
   G = 25;
 
 function Z() {
-  M = Chunk823385.Z.getProps().results.filter(e => e.type === p.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
+  M = m.Z.getProps().results.filter(e => e.type === p.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
 class F extends(s = Chunk442837.ZP.PersistedStore) {
   getState() {
@@ -143,7 +143,7 @@ class F extends(s = Chunk442837.ZP.PersistedStore) {
     return j
   }
   shouldFetchChannelAffinities() {
-    return !("fetching" === j.status || null != j.lastResponse && Date.now() - j.lastResponse < 30 * Chunk70956.Z.Millis.SECOND)
+    return !("fetching" === j.status || null != j.lastResponse && Date.now() - j.lastResponse < 30 * v.Z.Millis.SECOND)
   }
   defaultChannelIds(e) {
     let {

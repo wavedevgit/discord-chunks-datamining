@@ -10,7 +10,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk308063 = require("./308063.js");
 let s = {
   init() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "INTEGRATION_SETTINGS_INIT"
     })
   },
@@ -41,7 +41,7 @@ let s = {
     })
   },
   stopEditingIntegration() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION"
     })
   },
@@ -58,7 +58,7 @@ let s = {
     })
   },
   stopEditingWebhook() {
-    Chunk570140.Z.dispatch({
+    r.Z.dispatch({
       type: "INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK"
     })
   },

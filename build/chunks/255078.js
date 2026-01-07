@@ -105,38 +105,38 @@ class b extends Chunk81825.Z {
     return null == (t = this.items.find(t => e.includes(t.planId))) ? true : t.planId
   }
   get isPremium() {
-    return this.type === Chunk981631.NYc.PREMIUM
+    return this.type === d.NYc.PREMIUM
   }
   get isACOM() {
-    return this.paymentGateway === Chunk981631.gg$.APPLE_ADVANCED_COMMERCE
+    return this.paymentGateway === d.gg$.APPLE_ADVANCED_COMMERCE
   }
   get planIdForCurrencies() {
     let e;
-    return this.isPremium ? (i()(this.planIdFromItems, "Premium subscription has no planId for currencies"), e = this.planIdFromItems) : e = this.planId, module
+    return this.isPremium ? (i()(this.planIdFromItems, "Premium subscription has no planId for currencies"), e = this.planIdFromItems) : e = this.planId, e
   }
   get planIdFromItems() {
-    return this.getCurrentSubscriptionPlanIdForGroup(Object.values(Chunk474936.Xh))
+    return this.getCurrentSubscriptionPlanIdForGroup(Object.values(p.Xh))
   }
   get premiumPlanIdFromItems() {
-    return this.getCurrentSubscriptionPlanIdForGroup([...Chunk474936.dJ])
+    return this.getCurrentSubscriptionPlanIdForGroup([...p.dJ])
   }
   get isPurchasedViaDesktop() {
     return null == this.paymentGateway
   }
   get isPurchasedViaAppleGeneric() {
-    return this.paymentGateway === Chunk981631.gg$.APPLE_PARTNER || this.isACOM
+    return this.paymentGateway === d.gg$.APPLE_PARTNER || this.isACOM
   }
   get isPurchasedViaApple() {
-    return this.paymentGateway === Chunk981631.gg$.APPLE
+    return this.paymentGateway === d.gg$.APPLE
   }
   get isPurchasedViaGoogle() {
-    return this.paymentGateway === Chunk981631.gg$.GOOGLE
+    return this.paymentGateway === d.gg$.GOOGLE
   }
   get isPurchasedExternally() {
     return this.isPurchasedViaApple || this.isPurchasedViaGoogle
   }
   get isOnPlatformMatchingExternalPaymentGateway() {
-    return this.isPurchasedViaApple && (0, Chunk358085.isIOS)() || this.isPurchasedViaGoogle && (0, Chunk358085.isAndroid)()
+    return this.isPurchasedViaApple && (0, l.isIOS)() || this.isPurchasedViaGoogle && (0, l.isAndroid)()
   }
   get hasExternalPlanChange() {
     return this.isPurchasedExternally && null != this.renewalMutations && this.paymentGatewayPlanId !== this.renewalMutations.paymentGatewayPlanId
@@ -148,39 +148,39 @@ class b extends Chunk81825.Z {
     return this.items.every(e => [p.Xh.PREMIUM_MONTH_GUILD, p.Xh.PREMIUM_YEAR_GUILD].includes(e.planId))
   }
   get isPausedOrPausePending() {
-    return Chunk981631.JwP.ALL_PAUSE.has(this.status)
+    return d.JwP.ALL_PAUSE.has(this.status)
   }
   get isPaused() {
-    return this.status === Chunk981631.O0b.PAUSED
+    return this.status === d.O0b.PAUSED
   }
   get isPausedForFractionalPremium() {
-    return this.status === Chunk981631.O0b.PAUSED && this.pauseReason === Chunk362786.Id.FRACTIONAL_PREMIUM
+    return this.status === d.O0b.PAUSED && this.pauseReason === f.Id.FRACTIONAL_PREMIUM
   }
   get isPausedAllowsUpdatesButNotResume() {
-    return this.status === Chunk981631.O0b.PAUSED && Chunk362786.rN.CAN_MAKE_SUBSCRIPTION_UPDATES.has(this.pauseReason)
+    return this.status === d.O0b.PAUSED && f.rN.CAN_MAKE_SUBSCRIPTION_UPDATES.has(this.pauseReason)
   }
   get isPausedAllowsResumeButNotUpdates() {
-    return this.status === Chunk981631.O0b.PAUSED && (null === this.pauseReason || !Chunk362786.rN.CAN_MAKE_SUBSCRIPTION_UPDATES.has(this.pauseReason))
+    return this.status === d.O0b.PAUSED && (null === this.pauseReason || !f.rN.CAN_MAKE_SUBSCRIPTION_UPDATES.has(this.pauseReason))
   }
   get isEnded() {
-    return this.status === Chunk981631.O0b.ENDED
+    return this.status === d.O0b.ENDED
   }
   get endedAt() {
     var e;
-    return this.status !== Chunk981631.O0b.ENDED ? null : (null == (e = this.metadata) ? true : module.ended_at) != null ? new Date(this.metadata.ended_at) : this.currentPeriodEnd
+    return this.status !== d.O0b.ENDED ? null : (null == (e = this.metadata) ? true : e.ended_at) != null ? new Date(this.metadata.ended_at) : this.currentPeriodEnd
   }
   get isActive() {
-    return this.status === Chunk981631.O0b.ACTIVE
+    return this.status === d.O0b.ACTIVE
   }
   get hasActiveTrial() {
     return null != this.trialId && null != this.trialEndsAt && new Date < this.trialEndsAt
   }
   get inReverseTrial() {
-    return null != this.trialId && Chunk474936.h8.includes(this.trialId) && null == this.paymentSourceId
+    return null != this.trialId && p.h8.includes(this.trialId) && null == this.paymentSourceId
   }
   get premiumSince() {
     var e;
-    return null != (e = this.streakStartedAt) ? module : this.createdAt
+    return null != (e = this.streakStartedAt) ? e : this.createdAt
   }
   get hasAnyPremiumNitro() {
     return this.items.some(e => p.dJ.has(e.planId))

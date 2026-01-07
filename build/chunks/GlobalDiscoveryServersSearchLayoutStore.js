@@ -14,7 +14,7 @@ function u() {
 }
 class d extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk331114.Z, Chunk356164.Z)
+    this.waitFor(o.Z, s.Z)
   }
   getVisibleTabs() {
     return c

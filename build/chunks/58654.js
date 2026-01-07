@@ -3,9 +3,9 @@
 "use strict";
 
 function r() {
-  for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  for (let e of exports)
-    if (null != module && module) return module
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+  for (let e of t)
+    if (null != e && e) return e
 }
 require.d(exports, {
   L: () => r

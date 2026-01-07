@@ -47,17 +47,17 @@ function b(e) {
 }
 class y extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z), m = Chunk433517.K.get(f) || m
+    this.waitFor(c.Z, u.Z), m = s.K.get(f) || m
   }
   isAFKChannel() {
-    let e = Chunk592125.Z.getChannel(i);
-    if (null == module) returnfalse;
-    let t = Chunk430824.Z.getGuild(module.getGuildId());
-    return null != exports && module.id === exports.afkChannelId
+    let e = c.Z.getChannel(i);
+    if (null == e) returnfalse;
+    let t = u.Z.getGuild(e.getGuildId());
+    return null != t && e.id === t.afkChannelId
   }
   shouldShowWarning() {
     var e;
-    return !(null == (e = Chunk592125.Z.getChannel(i)) ? true : module.isGuildStageVoice()) && !_
+    return !(null == (e = c.Z.getChannel(i)) ? true : e.isGuildStageVoice()) && !_
   }
 }
 d(y, "displayName", "PermissionSpeakStore");

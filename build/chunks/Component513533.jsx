@@ -25,11 +25,11 @@ class l extends Chunk473749.PureComponent {
     })
   }
   render() {
-    return null != this.state.error ? (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
+    return null != this.state.error ? (0, r.jsx)("div", {
+      children: (0, r.jsx)(a.Text, {
         color: "text-feedback-critical",
         variant: "text-md/normal",
-        className: Chunk23393.labelSpacing,
+        className: o.labelSpacing,
         children: "Error rendering component. Check console for more information on the error."
       })
     }) : this.props.children

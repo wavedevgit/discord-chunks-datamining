@@ -34,8 +34,8 @@ class C extends Chunk473749.PureComponent {
       hidePersonalInformation: i,
       hostname: o
     } = this.props;
-    if (null == require) return (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      type: Chunk481060.$jN.Type.SPINNING_CIRCLE
+    if (null == n) return (0, r.jsx)(s.$jN, {
+      type: s.$jN.Type.SPINNING_CIRCLE
     });
     let d = (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -54,25 +54,25 @@ class C extends Chunk473749.PureComponent {
           })
         }
         return e
-      }({}, require), t = t = {
-        hostname: Chunk442837
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+      }({}, n), t = t = {
+        hostname: o
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(exports)).forEach(function(n) {
+      })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-      }), module),
-      u = l().map(Chunk19780, (e, t) => {
+      }), e),
+      u = l().map(d, (e, t) => {
         if ("receiverReports" !== t && (!i || "localAddress" !== t)) return (0, r.jsx)(b.ck, {
           label: t,
           value: e
         }, t)
       }),
-      p = l().map(Chunk19780.receiverReports, e => {
+      p = l().map(d.receiverReports, e => {
         let t = Array.isArray(e.bitrate) ? null == (r = e.bitrate.at(false)) ? true : r.value : e.bitrate,
           n = f.default.getUser(e.id);
         var r, a = y.ZP.getNickname(m.Z.getGuildId(), true, n);
@@ -82,8 +82,8 @@ class C extends Chunk473749.PureComponent {
           lost: 100 * e.fractionLost / 256
         }
       }),
-      h = l().sortBy(Chunk959457, e => e.displayName),
-      g = l().map(Chunk246946, e => (function(e, t, n) {
+      h = l().sortBy(p, e => e.displayName),
+      g = l().map(h, e => (function(e, t, n) {
         let a = (0, r.jsxs)(c.Z, {
             id: "bitrate-".concat(e),
             justify: c.Z.Justify.BETWEEN,
@@ -108,14 +108,14 @@ class C extends Chunk473749.PureComponent {
           children: e
         }, e)
       })(e.displayName, e.bitrate, e.lost));
-    return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-      className: Chunk101713.allowSelection,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+    return (0, r.jsxs)(s.Kqy, {
+      className: j.allowSelection,
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk388032.t.wU9IN2) + (null != Chunk473749 ? " - " + Chunk473749 : "")
-      }), (0, Chunk481250.VE)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk478411.marginBottom20
-      }), (0, Chunk481250.VE)(Chunk476221)]
+        children: P.intl.string(P.t.wU9IN2) + (null != a ? " - " + a : "")
+      }), (0, v.VE)(u), 0 === g.length ? null : (0, r.jsx)(s.izJ, {
+        className: x.marginBottom20
+      }), (0, v.VE)(g)]
     })
   }
 }

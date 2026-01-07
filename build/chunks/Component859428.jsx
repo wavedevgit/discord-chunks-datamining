@@ -21,50 +21,50 @@ var Chunk54381 = require("./54381.js"),
   Chunk510093 = require("./510093.js"),
   Chunk99940 = require("./99940.js");
 let b = () => {
-  let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
-    t = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module), [module]),
-    [n, a] = Chunk473749.useState(false);
-  if (null == exports) return null;
+  let e = (0, s.e7)([p.Z], () => p.Z.getGuildId(), []),
+    t = (0, s.e7)([f.Z], () => f.Z.getGuild(e), [e]),
+    [n, a] = i.useState(false);
+  if (null == t) return null;
   let b = () => {
-      (0, Chunk703656.s1)().goBack()
+      (0, d.s1)().goBack()
     },
     y = async () => {
-      Chunk120356(true);
+      a(true);
       try {
-        Chunk900849.mT(exports.id), await Chunk749210.Z.joinGuild(exports.id, {
-          source: Chunk981631.vtS.NOTICE_BAR
+        _.mT(t.id), await u.Z.joinGuild(t.id, {
+          source: m.vtS.NOTICE_BAR
         })
       } catch (e) {
-        Chunk120356(false)
+        a(false)
       }
     };
-  return (0, Chunk54381.jsxs)("div", {
-    className: o()(Chunk510093.notice, Chunk99940.notice),
-    children: [(0, Chunk54381.jsxs)(Chunk755721.zx, {
-      look: Chunk755721.zx.Looks.OUTLINED,
-      color: Chunk755721.zx.Colors.WHITE,
-      size: Chunk755721.zx.Sizes.NONE,
-      className: o()(Chunk510093.button, Chunk510093.back),
-      innerClassName: Chunk510093.iconButton,
+  return (0, r.jsxs)("div", {
+    className: o()(g.notice, E.notice),
+    children: [(0, r.jsxs)(l.zx, {
+      look: l.zx.Looks.OUTLINED,
+      color: l.zx.Colors.WHITE,
+      size: l.zx.Sizes.NONE,
+      className: o()(g.button, g.back),
+      innerClassName: g.iconButton,
       onClick: b,
-      children: [(0, Chunk54381.jsx)(Chunk481060.whL, {
+      children: [(0, r.jsx)(c.whL, {
         size: "xs",
         color: "currentColor",
-        className: Chunk510093.arrow
-      }), Chunk388032.intl.string(Chunk388032.t["13/7kX"])]
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk510093.header,
+        className: g.arrow
+      }), h.intl.string(h.t["13/7kX"])]
+    }), (0, r.jsx)(c.Text, {
+      className: g.header,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["N/y2WE"])
-    }), (0, Chunk54381.jsx)(Chunk755721.zx, {
-      className: Chunk510093.button,
-      look: Chunk755721.zx.Looks.OUTLINED,
-      color: Chunk755721.zx.Colors.WHITE,
-      size: Chunk755721.zx.Sizes.NONE,
-      submitting: require,
+      children: h.intl.string(h.t["N/y2WE"])
+    }), (0, r.jsx)(l.zx, {
+      className: g.button,
+      look: l.zx.Looks.OUTLINED,
+      color: l.zx.Colors.WHITE,
+      size: l.zx.Sizes.NONE,
+      submitting: n,
       onClick: y,
-      children: Chunk388032.intl.format(Chunk388032.t.uHN7ny, {
-        guild: exports.name
+      children: h.intl.format(h.t.uHN7ny, {
+        guild: t.name
       })
     })]
   })

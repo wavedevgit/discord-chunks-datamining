@@ -22,8 +22,8 @@ let c = null,
   };
 
 function d() {
-  let e = Chunk914010.Z.getLastSelectedGuildId();
-  module !== c && (s = null, c = null != module ? module : null)
+  let e = o.Z.getLastSelectedGuildId();
+  e !== c && (s = null, c = null != e ? e : null)
 }
 class f extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {

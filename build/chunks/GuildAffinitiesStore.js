@@ -45,7 +45,7 @@ function f(e) {
 }
 
 function p() {
-  return Date.now() - u.lastFetched > c && (0, Chunk381496.j)(), false
+  return Date.now() - u.lastFetched > c && (0, o.j)(), false
 }
 
 function _() {

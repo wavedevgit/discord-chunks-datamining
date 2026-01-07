@@ -3,7 +3,7 @@
 "use strict";
 module.exports = function() {
   var e = this;
-  clearTimeout(module.resetTimer), module.resetTimer = setTimeout(function() {
-    module.resetSequences()
+  clearTimeout(e.resetTimer), e.resetTimer = setTimeout(function() {
+    e.resetSequences()
   }, 1e3)
 }

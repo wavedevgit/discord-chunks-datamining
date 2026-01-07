@@ -49,7 +49,7 @@ class R extends Chunk473749.PureComponent {
       authenticated: e,
       isResolved: t
     } = this.props;
-    module && this.handleAuthenticated(), exports || this.resolveGiftCode(), (0, Chunk108427.e)("gift_code")
+    e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, x.e)("gift_code")
   }
   componentDidUpdate(e) {
     let {
@@ -66,21 +66,21 @@ class R extends Chunk473749.PureComponent {
     let {
       currentUser: e
     } = this.state;
-    Chunk978085.b8(), null == module && this.refreshUser()
+    h.b8(), null == e && this.refreshUser()
   }
   get requiresVerification() {
     let {
       currentUser: e
     } = this.state;
-    return null != module && !module.verified
+    return null != e && !e.verified
   }
   getCode() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props;
-    return module.match.params.giftCode
+    return e.match.params.giftCode
   }
   getMode() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props;
-    return module.login ? "login" : "register"
+    return e.login ? "login" : "register"
   }
   getErrorMessage(e) {
     let {
@@ -105,40 +105,40 @@ class R extends Chunk473749.PureComponent {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
-        src: require("./167969.js"),
-        className: Chunk478411.marginBottom8
-      }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: a()(Chunk478411.marginTop8, Chunk478411.marginBottom8),
-        children: Chunk388032.intl.string(Chunk388032.t.KPowgn)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t.j8734b)
-      }), (0, Chunk54381.jsx)("div", {
-        className: a()(Chunk478411.marginTop40, Chunk478411.marginBottom8),
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-          text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+    return (0, r.jsxs)(g.ZP, {
+      children: [(0, r.jsx)(g.Ee, {
+        src: n(167969),
+        className: Z.marginBottom8
+      }), (0, r.jsx)(g.Dx, {
+        className: a()(Z.marginTop8, Z.marginBottom8),
+        children: A.intl.string(A.t.KPowgn)
+      }), (0, r.jsx)(g.DK, {
+        children: A.intl.string(A.t.j8734b)
+      }), (0, r.jsx)("div", {
+        className: a()(Z.marginTop40, Z.marginBottom8),
+        children: (0, r.jsx)(o.Button, {
+          text: A.intl.string(A.t.fIv16B),
           fullWidth: true,
-          onClick: () => exports(module)
+          onClick: () => t(e)
         })
-      }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
-        text: Chunk388032.intl.string(Chunk388032.t["/CjuXF"]),
+      }), (0, r.jsx)(o.Avr, {
+        text: A.intl.string(A.t["/CjuXF"]),
         textVariant: "text-sm/normal",
-        onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.GIFTING), "_blank")
+        onClick: () => window.open(N.Z.getArticleURL(T.BhN.GIFTING), "_blank")
       })]
     })
   }
   renderAppOpened() {
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk478411.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.csrAMJ)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["m1+IBn"])
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk478411.marginTop40,
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-          text: Chunk388032.intl.string(Chunk388032.t["qsI+EH"]),
+    return (0, r.jsxs)(g.ZP, {
+      children: [(0, r.jsx)(g.Dx, {
+        className: Z.marginBottom8,
+        children: A.intl.string(A.t.csrAMJ)
+      }), (0, r.jsx)(g.DK, {
+        children: A.intl.string(A.t["m1+IBn"])
+      }), (0, r.jsx)("div", {
+        className: Z.marginTop40,
+        children: (0, r.jsx)(o.Button, {
+          text: A.intl.string(A.t["qsI+EH"]),
           fullWidth: true,
           onClick: () => this.setState({
             continueOnWeb: true
@@ -226,25 +226,25 @@ class R extends Chunk473749.PureComponent {
       fetchingUser: c,
       continueOnWeb: u
     } = this.state;
-    if (module === Chunk981631.kEZ.OPEN && !Chunk893776) return this.renderAppOpened();
-    if (module === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
-    if (a) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.bhJseN));
-    if (null == Chunk473749) return Chunk120356 ? this.renderExpiredInvite() : this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.b3lf1c));
-    if (Chunk120356) {
-      if (require) {
+    if (e === T.kEZ.OPEN && !u) return this.renderAppOpened();
+    if (e === T.kEZ.OPENING) return this.renderSpinner(A.intl.string(A.t["Z+hCVU"]));
+    if (a) return this.renderSpinner(A.intl.string(A.t.bhJseN));
+    if (null == i) return s ? this.renderExpiredInvite() : this.renderSpinner(A.intl.string(A.t.b3lf1c));
+    if (s) {
+      if (n) {
         let e = this.state.currentUser;
-        return Chunk570140 || null == module ? this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.bYb2nS)) : this.requiresVerification && null != module ? this.renderVerification(module) : this.renderAuthenticated(Chunk473749, module, exports)
+        return c || null == e ? this.renderSpinner(A.intl.string(A.t.bYb2nS)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(i, e, t)
       }
-      return "login" === this.getMode() ? (0, Chunk54381.jsx)(Chunk781428.Z, {
-        giftCodeSKU: exports,
-        giftCode: Chunk473749,
-        transitionTo: Chunk442837,
-        location: Chunk481060
-      }) : (0, Chunk54381.jsx)(Chunk423527.Z, {
-        giftCodeSKU: exports,
-        giftCode: Chunk473749,
-        transitionTo: Chunk442837,
-        location: Chunk481060
+      return "login" === this.getMode() ? (0, r.jsx)(C.Z, {
+        giftCodeSKU: t,
+        giftCode: i,
+        transitionTo: l,
+        location: o
+      }) : (0, r.jsx)(O.Z, {
+        giftCodeSKU: t,
+        giftCode: i,
+        transitionTo: l,
+        location: o
       })
     }
     return null

@@ -23,9 +23,9 @@ let c = e => {
     }) : null
   },
   u = Chunk442837.ZP.connectStores([Chunk353926.Z, Chunk314897.default], () => {
-    let e = Chunk314897.default.getToken();
+    let e = s.default.getToken();
     return {
-      token: module,
-      hasLoadedExperiments: null != module || Chunk353926.Z.hasLoadedExperiments
+      token: e,
+      hasLoadedExperiments: null != e || o.Z.hasLoadedExperiments
     }
   })(c)

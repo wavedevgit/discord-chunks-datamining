@@ -149,29 +149,29 @@ class N extends(r = Chunk473749.Component) {
       hover: i,
       active: a
     } = this.state;
-    if (null != module) {
-      if ("side" === r) return null != exports && require === exports || Chunk54381 ? A(module, "Selected") : i ? A(module, "Hover") : A(module);
+    if (null != e) {
+      if ("side" === r) return null != t && n === t || a ? A(e, "Selected") : i ? A(e, "Hover") : A(e);
       if ("top" === r)
-        if (require === exports) return {
-          borderColor: module,
-          color: module
+        if (n === t) return {
+          borderColor: e,
+          color: e
         };
         else if (i) return {
-        borderColor: (0, Chunk866442.wK)(module, .1),
-        color: (0, Chunk866442.wK)(module, .6)
+        borderColor: (0, u.wK)(e, .1),
+        color: (0, u.wK)(e, .6)
       };
       else return {
         borderColor: "transparent",
-        color: (0, Chunk866442.wK)(module, .4)
+        color: (0, u.wK)(e, .4)
       };
       if ("top-pill" === r)
-        if (require === exports) return {
-          backgroundColor: (0, Chunk866442.wK)(module, .2),
-          color: module
+        if (n === t) return {
+          backgroundColor: (0, u.wK)(e, .2),
+          color: e
         };
         else return {
-          backgroundColor: module,
-          color: Chunk692547.Z.unsafe_rawColors.WHITE.css
+          backgroundColor: e,
+          color: d.Z.unsafe_rawColors.WHITE.css
         }
     }
   }
@@ -189,32 +189,32 @@ class N extends(r = Chunk473749.Component) {
       clickableInnerRef: d,
       look: p,
       disableItemStyles: _
-    } = this.props, h = this.props["aria-label"], g = r === require;
-    return (0, Chunk54381.jsx)(Chunk360920.P, {
-      className: l()(exports, {
-        [Chunk923416.item]: !Chunk295907,
-        [Chunk923416.brand]: "brand" === Chunk777207,
-        [Chunk923416.selected]: null == i && g,
-        [Chunk923416.themed]: "grey" === Chunk777207,
-        [Chunk923416.disabled]: null == i && Chunk120356,
-        [Chunk923416.destructive]: "destructive" === Chunk473749
+    } = this.props, h = this.props["aria-label"], g = r === n;
+    return (0, a.jsx)(f.P, {
+      className: l()(t, {
+        [m.item]: !_,
+        [m.brand]: "brand" === p,
+        [m.selected]: null == i && g,
+        [m.themed]: "grey" === p,
+        [m.disabled]: null == i && s,
+        [m.destructive]: "destructive" === o
       }),
       style: this.getStyle(),
       role: "tab",
       "aria-selected": g,
-      "aria-controls": g ? C("".concat(require)) : true,
-      "aria-disabled": Chunk120356,
+      "aria-controls": g ? C("".concat(n)) : true,
+      "aria-disabled": s,
       tabIndex: g ? 0 : false,
       onMouseEnter: null != i ? this.handleMouseOver : true,
       onClick: this.handleClick,
       onMouseLeave: null != i ? this.handleMouseOut : true,
       onMouseUp: null != i ? this.handleMouseUp : true,
       onMouseDown: this.handleMouseDown,
-      onContextMenu: Chunk372817,
+      onContextMenu: c,
       "aria-label": h,
-      innerRef: Chunk692547,
-      ref: Chunk866442,
-      children: module
+      innerRef: d,
+      ref: u,
+      children: e
     })
   }
   constructor(...e) {
@@ -267,15 +267,15 @@ class P extends(i = Chunk473749.Component) {
       "aria-label": i,
       orientation: s = "horizontal"
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
+    return (0, a.jsx)("div", {
       ref: this.tabBarRef,
-      className: l()(module, v[require]),
+      className: l()(e, v[n]),
       style: r,
       role: "tablist",
-      "aria-orientation": Chunk120356,
+      "aria-orientation": s,
       onKeyDown: this.handleKeyDown,
       "aria-label": i,
-      children: Chunk473749.Children.map(exports, this.renderChildren)
+      children: o.Children.map(t, this.renderChildren)
     })
   }
   constructor(...e) {

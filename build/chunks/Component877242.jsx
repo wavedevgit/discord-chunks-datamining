@@ -26,71 +26,71 @@ function h() {
     sourceQuestContent: t,
     isPortrait: n,
     onClose: l
-  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), C = (0, Chunk968843.tP)(module), b = Chunk473749.useRef(null), {
+  } = o.useContext(v.VideoQuestModalContext), h = (0, m.aM)(), C = (0, p.tP)(e), b = o.useRef(null), {
     isHoveringOrFocusing: S
-  } = (0, Chunk104505.Z)(b), _ = (0, Chunk684245.e)({
-    quest: module,
-    onClose: Chunk120356,
-    sourceQuestContent: exports,
+  } = (0, c.Z)(b), _ = (0, E.e)({
+    quest: e,
+    onClose: l,
+    sourceQuestContent: t,
     impressionId: h
-  }), y = module.config.ctaConfig.subtitle, x = true !== y && !(0, Chunk624138.Ew)(y);
-  return (0, Chunk54381.jsx)(Chunk681715.u, {
-    text: Chunk388032.intl.string(Chunk388032.t.EuHF34),
-    children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
-      onClick: () => _(Chunk49436.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
-      className: Chunk209668.adInfoClickable,
-      children: (0, Chunk54381.jsxs)("div", {
-        className: i()(Chunk209668.contentHeaderGameInfo, Chunk209668.contentHeaderGameInfoHoverable, {
-          [Chunk209668.contentHeaderGameInfoHoverableExpired]: C
+  }), y = e.config.ctaConfig.subtitle, x = true !== y && !(0, u.Ew)(y);
+  return (0, r.jsx)(a.u, {
+    text: g.intl.string(g.t.EuHF34),
+    children: (0, r.jsx)(s.P3F, {
+      onClick: () => _(f.jn.VIDEO_MODAL, d.jZ.OPEN_GAME_LINK),
+      className: O.adInfoClickable,
+      children: (0, r.jsxs)("div", {
+        className: i()(O.contentHeaderGameInfo, O.contentHeaderGameInfoHoverable, {
+          [O.contentHeaderGameInfoHoverableExpired]: C
         }),
         ref: b,
-        children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk209668.contentFooterAdDetailedInfo,
-          children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
+        children: [(0, r.jsx)("div", {
+          className: O.contentFooterAdDetailedInfo,
+          children: (0, r.jsx)(s.Heading, {
             variant: "heading-md/medium",
             color: "text-strong",
-            className: i()(Chunk209668.adDetailsTextSecondary, {
-              [Chunk209668.adDetailsTextSecondaryPortrait]: require
+            className: i()(O.adDetailsTextSecondary, {
+              [O.adDetailsTextSecondaryPortrait]: n
             }),
-            lineClamp: require ? true : 1,
-            children: Chunk388032.intl.format(Chunk388032.t.EQa7os, {
-              questName: module.config.messages.questName
+            lineClamp: n ? true : 1,
+            children: g.intl.format(g.t.EQa7os, {
+              questName: e.config.messages.questName
             })
           })
-        }), (0, Chunk54381.jsxs)("div", {
-          className: i()(Chunk209668.contentFooterAdDetailedInfo, {
-            [Chunk209668.contentFooterAdDetailedInfoPortrait]: require
+        }), (0, r.jsxs)("div", {
+          className: i()(O.contentFooterAdDetailedInfo, {
+            [O.contentFooterAdDetailedInfoPortrait]: n
           }),
-          children: [(0, Chunk54381.jsx)("div", {
-            className: i()(Chunk209668.adDetailsTextPrimary, {
-              [Chunk209668.adDetailsTextPrimaryPortrait]: require,
-              [Chunk209668.addFourPxMarginRight]: require
+          children: [(0, r.jsx)("div", {
+            className: i()(O.adDetailsTextPrimary, {
+              [O.adDetailsTextPrimaryPortrait]: n,
+              [O.addFourPxMarginRight]: n
             }),
-            children: (0, Chunk54381.jsx)(Chunk481060.owK, {
+            children: (0, r.jsx)(s.owK, {
               size: "xs",
-              color: S ? Chunk481060.TVs.colors.ICON_STRONG.css : Chunk481060.TVs.colors.ICON_MUTED.css
+              color: S ? s.TVs.colors.ICON_STRONG.css : s.TVs.colors.ICON_MUTED.css
             })
-          }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
+          }), (0, r.jsx)(s.Heading, {
             variant: "heading-sm/medium",
-            className: i()(Chunk209668.adDetailsTextPrimary, {
-              [Chunk209668.adDetailsTextPrimaryPortrait]: require,
-              [Chunk209668.addFourPxMarginRight]: require
+            className: i()(O.adDetailsTextPrimary, {
+              [O.adDetailsTextPrimaryPortrait]: n,
+              [O.addFourPxMarginRight]: n
             }),
             color: S ? "text-strong" : "text-subtle",
             lineClamp: 1,
-            children: module.config.messages.gamePublisher
-          }), x ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-            children: [(0, Chunk54381.jsx)("div", {
+            children: e.config.messages.gamePublisher
+          }), x ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)("div", {
               "aria-hidden": "true",
-              className: i()(Chunk209668.dotSpacer, {
-                [Chunk209668.dotSpacerPortrait]: require
+              className: i()(O.dotSpacer, {
+                [O.dotSpacerPortrait]: n
               })
-            }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-              className: i()(Chunk209668.adDetailsTextSecondary, {
-                [Chunk209668.adDetailsTextSecondaryPortrait]: require
+            }), (0, r.jsx)(s.Heading, {
+              className: i()(O.adDetailsTextSecondary, {
+                [O.adDetailsTextSecondaryPortrait]: n
               }),
               variant: "heading-sm/medium",
-              lineClamp: require ? true : 1,
+              lineClamp: n ? true : 1,
               color: S ? "text-strong" : "text-subtle",
               children: y
             })]

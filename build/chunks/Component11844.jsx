@@ -56,13 +56,13 @@ function E(e, t) {
   }), e
 }
 let b = function() {
-  let e = Chunk473749.useRef(null),
+  let e = i.useRef(null),
     {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)(),
+    } = (0, l.ZP)(),
     {
       fractionalState: m
-    } = (0, Chunk975298.Z)();
+    } = (0, c.Z)();
 
   function g(n) {
     null != e.current && (0, s.Mr3)(e.current), (0, u.u)({
@@ -77,32 +77,32 @@ let b = function() {
     })
   }
   async function b() {
-    module.current = await (0, Chunk481060.ZDy)(async () => {
+    e.current = await (0, s.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.resolve().then(require.bind(require, 719228));
+      } = await Promise.resolve().then(n.bind(n, 719228));
       return t => (0, r.jsx)(e, E(h({}, t), {
         onSelectGuild: g
       }))
     }, {
       onCloseRequest: () => {
-        null != module.current && (0, Chunk481060.Mr3)(module.current)
+        null != e.current && (0, s.Mr3)(e.current)
       }
     })
   }
-  let y = (0, Chunk267642.aq)({
+  let y = (0, d.aq)({
     fractionalState: m
   });
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk330600.wrapper,
-    children: [(0, Chunk54381.jsx)(Chunk481060.Ucv, {
-      color: Chunk481060.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: Chunk330600.boostIcon
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk330600.copy,
+  return (0, r.jsxs)("div", {
+    className: _.wrapper,
+    children: [(0, r.jsx)(s.Ucv, {
+      color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      className: _.boostIcon
+    }), (0, r.jsx)(s.Text, {
+      className: _.copy,
       color: "text-default",
       variant: "text-sm/medium",
-      children: Chunk388032.intl.format(Chunk388032.t.kqC5vq, {
+      children: p.intl.format(p.t.kqC5vq, {
         boostAnyGuildHook: (e, t) => {
           let n = null != y,
             i = (0, s.qgQ)(e),

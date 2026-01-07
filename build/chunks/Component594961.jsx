@@ -138,8 +138,8 @@ let v = e => {
       })
     })
   },
-  b = () => (Chunk473749.useEffect(() => {
-    (0, Chunk481060.ZDy)(() => Promise.resolve(e => (0, i.jsx)(v, _({}, e))), {
+  b = () => (s.useEffect(() => {
+    (0, l.ZDy)(() => Promise.resolve(e => (0, i.jsx)(v, _({}, e))), {
       dismissable: false
     })
   }, []), null)

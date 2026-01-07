@@ -9,7 +9,7 @@ var r, i, Chunk873546 = require("./873546.js"),
 let s = false;
 class c extends(i = Chunk442837.ZP.Store) {
   getIsOpen() {
-    return !Chunk873546.tq || s
+    return !l.tq || s
   }
 }(r = "displayName") in c ? Object.defineProperty(c, r, {
   value: "MobileWebSidebarStore",

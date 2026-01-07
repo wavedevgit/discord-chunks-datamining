@@ -25,7 +25,7 @@ let u = {},
   });
 class d extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default)
+    this.waitFor(s.default)
   }
   areSlayerNotificationsSuppressed() {
     if (c.getCurrentConfig({
@@ -34,7 +34,7 @@ class d extends(i = Chunk442837.ZP.Store) {
         autoTrackExposure: false
       }).enabled) returnfalse;
     for (let e in u)
-      if (u[module] === Chunk314897.default.getId()) returntrue;
+      if (u[e] === s.default.getId()) returntrue;
     returnfalse
   }
 }(l = "displayName") in d ? Object.defineProperty(d, l, {

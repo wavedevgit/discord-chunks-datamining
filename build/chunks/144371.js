@@ -36,14 +36,14 @@ let d = 10,
   f = {
     getActiveErrors: () => {
       var e;
-      let t = Chunk199902.Z.getCurrentUserActiveStream();
-      if (null == exports || 0 === Chunk199902.Z.getViewerIds(exports).length) return null;
-      let n = null == (e = Chunk959457.Z.getRTCConnection((0, Chunk569545.V9)(exports))) ? true : module.getMediaEngineConnectionId();
-      if (null == require) return null;
-      let c = (0, Chunk150457.hj)(require, exports.ownerId);
+      let t = i.Z.getCurrentUserActiveStream();
+      if (null == t || 0 === i.Z.getViewerIds(t).length) return null;
+      let n = null == (e = a.Z.getRTCConnection((0, r.V9)(t))) ? true : e.getMediaEngineConnectionId();
+      if (null == n) return null;
+      let c = (0, l.hj)(n, t.ownerId);
       return null == c ? null : 100 * c.short.packetLossRate > d || 100 * c.long.packetLossRate > d ? [u({
-        type: Chunk458725.u.STREAM_SEND_HIGH_PACKET_LOSS
-      }, (0, Chunk442741.rT)((0, Chunk569545.V9)(exports)))] : true
+        type: o.u.STREAM_SEND_HIGH_PACKET_LOSS
+      }, (0, s.rT)((0, r.V9)(t)))] : true
     },
     makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
   }

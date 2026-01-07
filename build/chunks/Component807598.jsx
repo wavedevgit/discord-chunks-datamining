@@ -10,11 +10,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.ON)(Chunk313789.n.VOICE_SPEAKER_OUTPUT_SELECT, {
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.dl18zb), Chunk388032.intl.string(Chunk388032.t["3182VD"]), Chunk388032.intl.string(Chunk388032.t["DGq/PR"])],
+  useSearchTerms: () => [a.intl.string(a.t.dl18zb), a.intl.string(a.t["3182VD"]), a.intl.string(a.t["DGq/PR"])],
   Component: function() {
-    return (0, Chunk54381.jsx)(Chunk670863.j, {
-      label: Chunk388032.intl.string(Chunk388032.t.xuYQ0n),
-      deviceType: Chunk65154.h7.AUDIO_OUTPUT,
+    return (0, i.jsx)(l.j, {
+      label: a.intl.string(a.t.xuYQ0n),
+      deviceType: r.h7.AUDIO_OUTPUT,
       location: "UserSettingsDevices",
       hideDeviceTypeIcon: true
     })

@@ -31,14 +31,14 @@ class h extends Chunk836560.EventEmitter {
   connect() {
     if (null == m) {
       if (_ > d) {
-        _ = Chunk981631.V6Z, this.emit("disconnected");
+        _ = u.V6Z, this.emit("disconnected");
         return
       }
       try {
-        m = new WebSocket("ws://127.0.0.1:".concat(this.port, "/?v=").concat(Chunk981631.X6Q))
+        m = new WebSocket("ws://127.0.0.1:".concat(this.port, "/?v=").concat(u.X6Q))
       } catch (e) {
         this.disconnect({
-          code: Chunk981631.$VG.CLOSE_ABNORMAL
+          code: u.$VG.CLOSE_ABNORMAL
         });
         return
       }

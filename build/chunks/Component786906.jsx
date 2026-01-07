@@ -47,14 +47,14 @@ class Z extends Chunk473749.Component {
       userIsInChannelCall: r,
       isBlocked: a
     } = this.props;
-    if (!(0, Chunk131704.hv)(exports.type)) return null;
-    let s = Chunk481060.Csw,
+    if (!(0, p.hv)(t.type)) return null;
+    let s = l.Csw,
       o = false;
-    return require ? Chunk473749 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6yi"]), s = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6Rz"]) : Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), o = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk54381.jsx)(Chunk984370.Z.Icon, {
+    return n ? r ? (e = x.intl.string(x.t["4ry6yi"]), s = l.gkL) : e = x.intl.string(x.t["0D/6Rz"]) : a ? (e = x.intl.string(x.t.PHzjvX), o = true) : e = x.intl.string(x.t.focH1t), (0, i.jsx)(f.Z.Icon, {
       icon: s,
-      tooltip: module,
+      tooltip: e,
       onClick: this.handleClickCall,
-      disabled: Chunk442837
+      disabled: o
     })
   }
   render() {
@@ -72,34 +72,34 @@ class Z extends Chunk473749.Component {
     } = this.props, {
       showOpacitySlider: g
     } = this.state;
-    return Chunk523746 && !require ? (0, Chunk54381.jsxs)(Chunk518084.ZP.Bar, {
-      className: Chunk309617.opacityHeader,
-      children: [(0, Chunk54381.jsx)(Chunk707878.Z, {}), (0, Chunk54381.jsx)(Chunk984370.Z.Icon, {
-        icon: Chunk481060.Dio,
+    return g && !n ? (0, i.jsxs)(E.ZP.Bar, {
+      className: S.opacityHeader,
+      children: [(0, i.jsx)(O.Z, {}), (0, i.jsx)(f.Z.Icon, {
+        icon: l.Dio,
         onClick: this.handleCloseOpacitySettings,
-        tooltip: Chunk388032.intl.string(Chunk388032.t.cpT0Cq)
+        tooltip: x.intl.string(x.t.cpT0Cq)
       })]
-    }) : (0, Chunk54381.jsx)(Chunk518084.ZP.Background, {
-      opacityOverride: require || Chunk933557 ? null : 1,
-      children: (0, Chunk54381.jsx)("div", {
-        className: s()(module, exports, Chunk309617.headerContainer),
-        onMouseDown: Chunk13245,
-        onContextMenu: Chunk287734,
-        children: (0, Chunk54381.jsxs)(Chunk984370.Z, {
-          guildId: Chunk473749.guild_id,
-          channelId: Chunk473749.id,
+    }) : (0, i.jsx)(E.ZP.Background, {
+      opacityOverride: n || u ? null : 1,
+      children: (0, i.jsx)("div", {
+        className: s()(e, t, S.headerContainer),
+        onMouseDown: c,
+        onContextMenu: d,
+        children: (0, i.jsxs)(f.Z, {
+          guildId: r.guild_id,
+          channelId: r.id,
           toolbar: this.renderWidgetButtons(),
           transparent: true,
-          children: [Chunk933557 || require || Chunk131704 ? null : (0, Chunk54381.jsx)(Chunk481060.Vni, {
+          children: [u || n || p ? null : (0, i.jsx)(l.Vni, {
             size: "custom",
             color: "currentColor",
-            className: s()(Chunk309617.dragIcon, exports),
+            className: s()(S.dragIcon, t),
             width: 20,
             height: 20
-          }), (0, Chunk910611.ud)({
-            channel: Chunk473749,
-            channelName: Chunk120356
-          }), require ? null : (0, Chunk910611.v0)(Chunk473749, Chunk442837)]
+          }), (0, h.ud)({
+            channel: r,
+            channelName: a
+          }), n ? null : (0, h.v0)(r, o)]
         })
       })
     })

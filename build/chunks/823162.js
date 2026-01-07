@@ -65,5 +65,5 @@ function f(e) {
 }
 
 function p() {
-  Chunk893776.Z.getLocationMetadata()
+  a.Z.getLocationMetadata()
 }

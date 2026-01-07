@@ -3978,39 +3978,39 @@
       "use strict";
       var e = r,
         t = n(318);
-      Object.defineProperty(module, "__esModule", {
+      Object.defineProperty(e, "__esModule", {
         value: true
-      }), Object.defineProperty(module, "OGVCompat", {
+      }), Object.defineProperty(e, "OGVCompat", {
         enumerable: true,
         get: function() {
           return a.default
         }
-      }), Object.defineProperty(module, "OGVLoader", {
+      }), Object.defineProperty(e, "OGVLoader", {
         enumerable: true,
         get: function() {
           return o.default
         }
-      }), Object.defineProperty(module, "OGVMediaError", {
+      }), Object.defineProperty(e, "OGVMediaError", {
         enumerable: true,
         get: function() {
           return s.default
         }
-      }), Object.defineProperty(module, "OGVMediaType", {
+      }), Object.defineProperty(e, "OGVMediaType", {
         enumerable: true,
         get: function() {
           return l.default
         }
-      }), Object.defineProperty(module, "OGVPlayer", {
+      }), Object.defineProperty(e, "OGVPlayer", {
         enumerable: true,
         get: function() {
           return c.default
         }
-      }), Object.defineProperty(module, "OGVTimeRanges", {
+      }), Object.defineProperty(e, "OGVTimeRanges", {
         enumerable: true,
         get: function() {
           return u.default
         }
-      }), module.OGVVersion = true;
+      }), e.OGVVersion = true;
       var i = t(n(8)),
         a = t(n(523)),
         o = t(n(964)),
@@ -4019,7 +4019,7 @@
         c = t(n(869)),
         u = t(n(168)),
         d = "1.8.9-20220406232920-cb5f7ff";
-      module.OGVVersion = d, "object" === ("undefined" == typeof window ? "undefined" : (0, i.default)(window)) && (window.OGVCompat = a.default, window.OGVLoader = o.default, window.OGVMediaError = s.default, window.OGVMediaType = l.default, window.OGVTimeRanges = u.default, window.OGVPlayer = c.default, window.OGVVersion = d)
+      e.OGVVersion = d, "object" === ("undefined" == typeof window ? "undefined" : (0, i.default)(window)) && (window.OGVCompat = a.default, window.OGVLoader = o.default, window.OGVMediaError = s.default, window.OGVMediaType = l.default, window.OGVTimeRanges = u.default, window.OGVPlayer = c.default, window.OGVVersion = d)
     })(), r
   })()
 })

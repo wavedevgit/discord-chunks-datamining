@@ -16,13 +16,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk441319 = require("./441319.js");
 
 function h() {
-  let [e, t] = (0, Chunk442837.Wu)([Chunk594174.default, Chunk737604.Z], () => [Chunk737604.Z.getCurrentDesktopIcon(), Chunk74538.ZP.isPremium(Chunk594174.default.getCurrentUser())]), n = (0, Chunk550385.oq)().activePanel === Chunk550385.wh.APP_ICON, h = (0, Chunk441319.aW)(module), p = h.id !== Chunk997945.aH.DEFAULT && (exports || require), g = (0, Chunk54381.jsx)(Chunk481060.gw7, {
+  let [e, t] = (0, i.Wu)([o.default, d.Z], () => [d.Z.getCurrentDesktopIcon(), s.ZP.isPremium(o.default.getCurrentUser())]), n = (0, a.oq)().activePanel === a.wh.APP_ICON, h = (0, f.aW)(e), p = h.id !== c.aH.DEFAULT && (t || n), g = (0, r.jsx)(l.gw7, {
     size: "custom",
     color: "currentColor",
     width: 24,
     height: 24
   });
-  return null != h && p ? (0, Chunk54381.jsx)(Chunk630117.Z, {
+  return null != h && p ? (0, r.jsx)(u.Z, {
     id: h.id,
     width: 48
   }) : g

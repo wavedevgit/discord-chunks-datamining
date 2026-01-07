@@ -37,7 +37,7 @@ function P(e, t, r) {
 Chunk442837.ZP.initialize();
 class E extends(n = Chunk473749.PureComponent) {
   componentDidMount() {
-    (0, Chunk108427.e)("reset_password")
+    (0, b.e)("reset_password")
   }
   renderPasswordReset() {
     let {
@@ -48,44 +48,44 @@ class E extends(n = Chunk473749.PureComponent) {
     } = this.state, {
       theme: a,
       authBoxClassName: o
-    } = this.props, l = null != exports ? exports : this.renderError("password");
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
+    } = this.props, l = null != t ? t : this.renderError("password");
+    return (0, s.jsxs)(g.ZP, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      theme: Chunk120356,
+      theme: a,
       className: o,
-      children: [(0, Chunk54381.jsx)("img", {
+      children: [(0, s.jsx)("img", {
         alt: "",
-        src: null == Chunk593473 ? require("./26230.js") : require("./935227.js"),
-        className: Chunk478411.marginBottom20
-      }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t["1LV6Kq"])
-      }), (0, Chunk54381.jsxs)(Chunk388905.gO, {
-        className: Chunk478411.marginTop20,
-        children: [(0, Chunk54381.jsx)(Chunk388905.II, {
-          label: Chunk388032.intl.string(Chunk388032.t["8dM4FO"]),
-          className: Chunk478411.marginBottom20,
+        src: null == l ? r(26230) : r(935227),
+        className: x.marginBottom20
+      }), (0, s.jsx)(g.Dx, {
+        children: S.intl.string(S.t["1LV6Kq"])
+      }), (0, s.jsxs)(g.gO, {
+        className: x.marginTop20,
+        children: [(0, s.jsx)(g.II, {
+          label: S.intl.string(S.t["8dM4FO"]),
+          className: x.marginBottom20,
           name: "password",
-          value: module,
+          value: e,
           onChange: e => this.setState({
             password: e
           }),
-          error: Chunk593473,
+          error: l,
           type: "password",
           autoComplete: "new-password",
           required: true
-        }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+        }), (0, s.jsxs)(d.ButtonGroup, {
           direction: "vertical",
           fullWidth: true,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
-            text: Chunk388032.intl.string(Chunk388032.t["FRep5/"]),
+          children: [(0, s.jsx)(d.Button, {
+            text: S.intl.string(S.t["FRep5/"]),
             type: "submit",
-            loading: Chunk473749
-          }), n && (0, Chunk54381.jsx)(Chunk481060.Button, {
-            text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+            loading: i
+          }), n && (0, s.jsx)(d.Button, {
+            text: S.intl.string(S.t["ETE/oC"]),
             variant: "secondary",
             onClick: this.handleGoToLogin,
-            loading: Chunk473749
+            loading: i
           })]
         })]
       })]
@@ -105,24 +105,24 @@ class E extends(n = Chunk473749.PureComponent) {
       } = e;
       return this.handleTokenSubmitMFAv2(t, r)
     };
-    return (0, Chunk54381.jsx)(Chunk388905.ZP, {
+    return (0, s.jsx)(g.ZP, {
       style: {
         padding: 0
       },
-      theme: require,
+      theme: r,
       className: n,
-      children: (0, Chunk54381.jsx)(Chunk124860.C, {
-        mfaFinish: Chunk120356,
+      children: (0, s.jsx)(O.C, {
+        mfaFinish: a,
         mfaChallenge: {
-          ticket: module,
-          methods: exports
+          ticket: e,
+          methods: t
         },
         onEarlyClose: () => {
-          Chunk570140.Z.dispatch({
+          h.Z.dispatch({
             type: "LOGIN_RESET"
           })
         },
-        width: null != Chunk473749 ? Chunk473749 : 480
+        width: null != i ? i : 480
       })
     })
   }
@@ -131,18 +131,18 @@ class E extends(n = Chunk473749.PureComponent) {
       theme: e,
       authBoxClassName: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      theme: module,
-      className: exports,
-      children: [(0, Chunk54381.jsx)("img", {
+    return (0, s.jsxs)(g.ZP, {
+      theme: e,
+      className: t,
+      children: [(0, s.jsx)("img", {
         alt: "",
-        src: require("./26230.js"),
-        className: o()(Chunk478411.marginBottom20, Chunk873546.tq ? Chunk478411.marginTop20 : "")
-      }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk478411.marginBottom40,
-        children: Chunk388032.intl.string(Chunk388032.t.WAUOoK)
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        text: Chunk388032.intl.string(Chunk388032.t["uJWIj/"]),
+        src: r(26230),
+        className: o()(x.marginBottom20, c.tq ? x.marginTop20 : "")
+      }), (0, s.jsx)(g.Dx, {
+        className: x.marginBottom40,
+        children: S.intl.string(S.t.WAUOoK)
+      }), (0, s.jsx)(d.Button, {
+        text: S.intl.string(S.t["uJWIj/"]),
         fullWidth: true,
         onClick: this.handleOpenApp
       })]

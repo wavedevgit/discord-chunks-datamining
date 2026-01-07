@@ -33,11 +33,11 @@ class c {
   }
   stopNodeFromAnimating() {
     let e = Array.from(this.visibleComponents);
-    for (let t = module.length - 1; exports >= 0; exports--) {
-      let n = module[exports];
-      if (this.animatingComponents.has(require)) {
-        let e = this.registeredNodes.get(require);
-        null == module || module.updateState(false), this.animatingComponents.delete(require);
+    for (let t = e.length - 1; t >= 0; t--) {
+      let n = e[t];
+      if (this.animatingComponents.has(n)) {
+        let e = this.registeredNodes.get(n);
+        null == e || e.updateState(false), this.animatingComponents.delete(n);
         return
       }
     }
@@ -45,9 +45,9 @@ class c {
   potentiallyAnimateNewNode() {
     if (this.animatingComponents.size < s && this.visibleComponents.size > this.animatingComponents.size) {
       for (let e of this.visibleComponents)
-        if (!this.animatingComponents.has(module)) {
-          let t = this.registeredNodes.get(module);
-          null == exports || exports.updateState(true), this.animatingComponents.add(module);
+        if (!this.animatingComponents.has(e)) {
+          let t = this.registeredNodes.get(e);
+          null == t || t.updateState(true), this.animatingComponents.add(e);
           return
         }
     }
@@ -67,7 +67,7 @@ class c {
   }
   cleanUp() {
     var e;
-    null == (e = this.observer) || module.disconnect(), this.registeredNodes.clear(), this.visibleComponents.clear()
+    null == (e = this.observer) || e.disconnect(), this.registeredNodes.clear(), this.visibleComponents.clear()
   }
   constructor(e = false) {
     if (o(this, "registeredNodes", new Map), o(this, "visibleComponents", new Set), o(this, "animatingComponents", new Set), o(this, "observer", true), e) return;

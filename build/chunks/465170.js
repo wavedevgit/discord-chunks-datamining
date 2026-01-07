@@ -40,20 +40,20 @@ module.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(
     e.list = this, e.prev = t, t && (t.next = e), this.tail = e, this.head || (this.head = e), this.length++
   }
 }, t.prototype.push = function() {
-  for (var e = 0, t = arguments.length; module < t; module++) n(this, arguments[module]);
+  for (var e = 0, t = arguments.length; e < t; e++) n(this, arguments[e]);
   return this.length
 }, t.prototype.unshift = function() {
-  for (var e = 0, t = arguments.length; module < t; module++) r(this, arguments[module]);
+  for (var e = 0, t = arguments.length; e < t; e++) r(this, arguments[e]);
   return this.length
 }, t.prototype.pop = function() {
   if (this.tail) {
     var e = this.tail.value;
-    return this.tail = this.tail.prev, this.tail ? this.tail.next = null : this.head = null, this.length--, module
+    return this.tail = this.tail.prev, this.tail ? this.tail.next = null : this.head = null, this.length--, e
   }
 }, t.prototype.shift = function() {
   if (this.head) {
     var e = this.head.value;
-    return this.head = this.head.next, this.head ? this.head.prev = null : this.tail = null, this.length--, module
+    return this.head = this.head.next, this.head ? this.head.prev = null : this.tail = null, this.length--, e
   }
 }, t.prototype.forEach = function(e, t) {
   t = t || this;
@@ -90,11 +90,11 @@ module.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(
   for (var i = this.length - 1; null !== r; i--) n = e(n, r.value, i), r = r.prev;
   return n
 }, t.prototype.toArray = function() {
-  for (var e = Array(this.length), t = 0, n = this.head; null !== n; t++) module[t] = n.value, n = n.next;
-  return module
+  for (var e = Array(this.length), t = 0, n = this.head; null !== n; t++) e[t] = n.value, n = n.next;
+  return e
 }, t.prototype.toArrayReverse = function() {
-  for (var e = Array(this.length), t = 0, n = this.tail; null !== n; t++) module[t] = n.value, n = n.prev;
-  return module
+  for (var e = Array(this.length), t = 0, n = this.tail; null !== n; t++) e[t] = n.value, n = n.prev;
+  return e
 }, t.prototype.slice = function(e, n) {
   (n = n || this.length) < 0 && (n += this.length), (e = e || 0) < 0 && (e += this.length);
   var r = new t;
@@ -112,9 +112,9 @@ module.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(
   for (; null !== a && i > e; i--, a = a.prev) r.push(a.value);
   return r
 }, t.prototype.reverse = function() {
-  for (var e = this.head, t = this.tail, n = module; null !== n; n = n.prev) {
+  for (var e = this.head, t = this.tail, n = e; null !== n; n = n.prev) {
     var r = n.prev;
     n.prev = n.next, n.next = r
   }
-  return this.head = t, this.tail = module, this
+  return this.head = t, this.tail = e, this
 }

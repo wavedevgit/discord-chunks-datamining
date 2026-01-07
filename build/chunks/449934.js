@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk213919 = require("./213919.js");
 
 function i() {
-  return Chunk213919.getToken()
+  return r.getToken()
 }
 
 function a() {

@@ -8,9 +8,9 @@ var Chunk420332 = require("./420332.js");
 
 function o() {
   try {
-    var e = !Boolean.prototype.valueOf.call(Chunk420332(Boolean, [], function() {}))
+    var e = !Boolean.prototype.valueOf.call(r(Boolean, [], function() {}))
   } catch (e) {}
   return (o = function() {
-    return !!module
+    return !!e
   })()
 }

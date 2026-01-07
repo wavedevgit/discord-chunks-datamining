@@ -32,9 +32,9 @@ var Chunk698091 = require("./698091.js"),
     function e() {
       this.payload = true, _(this, this)
     }
-    return module.prototype.getPayload = function() {
+    return e.prototype.getPayload = function() {
       return this.payload || []
-    }, module
+    }, e
   }(),
   g = function(e) {
     function t(t) {

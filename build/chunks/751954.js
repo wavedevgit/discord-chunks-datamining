@@ -5,7 +5,7 @@ var Chunk621523 = require("./621523.js"),
   i = require("./127849.js").RegExp,
   a = Chunk621523(function() {
     var e = i("a", "y");
-    return module.lastIndex = 2, null !== module.exec("abcd")
+    return e.lastIndex = 2, null !== e.exec("abcd")
   }),
   o = a || Chunk621523(function() {
     return !i("a", "y").sticky
@@ -13,7 +13,7 @@ var Chunk621523 = require("./621523.js"),
 module.exports = {
   BROKEN_CARET: a || Chunk621523(function() {
     var e = i("^r", "gy");
-    return module.lastIndex = 2, null !== module.exec("str")
+    return e.lastIndex = 2, null !== e.exec("str")
   }),
   MISSED_STICKY: o,
   UNSUPPORTED_Y: a

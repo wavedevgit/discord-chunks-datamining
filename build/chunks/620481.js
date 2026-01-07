@@ -32,12 +32,12 @@ function v() {
 }
 
 function j() {
-  let e = Chunk592125.Z.getMutablePrivateChannels(),
+  let e = s.Z.getMutablePrivateChannels(),
     t = [],
     n = [];
-  Object.values(module).forEach(e => {
+  Object.values(e).forEach(e => {
     e.isGroupDM() && t.push(e), e.isDM() && n.push(e)
-  }), g.info("START Logging Group DM Channels"), exports.forEach(e => {
+  }), g.info("START Logging Group DM Channels"), t.forEach(e => {
     let t = (0, r.F6)(e, p.default, m.Z),
       n = (0, r.on)(e, p.default, m.Z);
     g.info("id: ".concat(e.id)), g.info("name: ".concat(t)), g.info("default name: ".concat(n)), g.info("recipients ids: ".concat(e.recipients)), e.recipients.forEach(e => {
@@ -49,7 +49,7 @@ function j() {
         i = d.ZP.getNicknames(t.id);
       g.info("username: ".concat(n)), g.info("global name: ".concat(a)), g.info("nickname: ".concat(r)), g.info("guild nicknames: ".concat(i)), v()
     })
-  }), g.info("END Logging Group DM Channels\n"), g.info("START Logging DM Channels"), require.forEach(e => {
+  }), g.info("END Logging Group DM Channels\n"), g.info("START Logging DM Channels"), n.forEach(e => {
     let t = (0, r.F6)(e, p.default, m.Z);
     g.info("id: ".concat(e.id)), g.info("name: ".concat(t));
     let n = e.getRecipientId(),
@@ -63,12 +63,12 @@ function j() {
 }
 
 function C() {
-  let e = Chunk592125.Z.getMutablePrivateChannels(),
+  let e = s.Z.getMutablePrivateChannels(),
     t = [],
     n = [];
-  Object.values(module).forEach(e => {
+  Object.values(e).forEach(e => {
     e.isGroupDM() && t.push(e), e.isDM() && n.push(e)
-  }), g.info("START Logging Group DM Channels"), exports.forEach(e => {
+  }), g.info("START Logging Group DM Channels"), t.forEach(e => {
     let t = (0, r.F6)(e, p.default, m.Z),
       n = (0, r.on)(e, p.default, m.Z);
     g.info("id: ".concat(e.id)), g.info("name: ".concat(t)), g.info("default name: ".concat(n)), g.info("recipients ids: ".concat(e.recipients)), e.recipients.forEach(e => {
@@ -80,7 +80,7 @@ function C() {
         i = d.ZP.getNicknames(t.id);
       g.info("username: ".concat(n)), g.info("global name: ".concat(a)), g.info("nickname: ".concat(r)), g.info("guild nicknames: ".concat(i)), v()
     })
-  }), g.info("END Logging Group DM Channels\n"), g.info("START Logging DM Channels"), require.forEach(e => {
+  }), g.info("END Logging Group DM Channels\n"), g.info("START Logging DM Channels"), n.forEach(e => {
     let t = (0, r.F6)(e, p.default, m.Z);
     g.info("id: ".concat(e.id)), g.info("name: ".concat(t));
     let n = e.getRecipientId(),
@@ -94,8 +94,8 @@ function C() {
 }
 
 function y() {
-  let e = Chunk699516.Z.getFriendIDs();
-  g.info("START Discord Friends"), module.forEach(e => {
+  let e = m.Z.getFriendIDs();
+  g.info("START Discord Friends"), e.forEach(e => {
     let t = p.default.getUser(e);
     if (null == t) return;
     let n = t.username,
@@ -107,31 +107,31 @@ function y() {
 }
 
 function _() {
-  let e = Chunk580005.Z.getFrequentlyWithoutFetchingLatest(),
+  let e = o.Z.getFrequentlyWithoutFetchingLatest(),
     t = [],
     n = [],
     a = [],
     i = [];
-  module.forEach(e => {
+  e.forEach(e => {
     (0, f.lM)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? i.push(e) : n.push(e)
-  }), g.info("START Frecency"), g.info("Guilds"), exports.forEach(e => {
+  }), g.info("START Frecency"), g.info("Guilds"), t.forEach(e => {
     let t = o.Z.getScoreWithoutFetchingLatest(e.id);
     g.info("id: ".concat(e.id, " - name: ").concat(e.name, " - Frecency Score: ").concat(t))
-  }), v(), g.info("DM Channels"), Chunk279779.forEach(e => {
+  }), v(), g.info("DM Channels"), a.forEach(e => {
     let t = o.Z.getScoreWithoutFetchingLatest(e.id);
     g.info("id: ".concat(e.id, " - Frecency Score: ").concat(t))
-  }), v(), g.info("Group DM Channels"), Chunk710845.forEach(e => {
+  }), v(), g.info("Group DM Channels"), i.forEach(e => {
     let t = o.Z.getScoreWithoutFetchingLatest(e.id);
     g.info("id: ".concat(e.id, " - Frecency Score: ").concat(t)), g.info("default name: ".concat((0, r.on)(e, p.default, m.Z))), g.info("name: ".concat((0, r.F6)(e, p.default, m.Z)))
-  }), v(), g.info("Guild Channels"), require.forEach(e => {
+  }), v(), g.info("Guild Channels"), n.forEach(e => {
     let t = o.Z.getScoreWithoutFetchingLatest(e.id);
     g.info("id: ".concat(e.id, " - Frecency Score: ").concat(t))
   }), v(), g.info("END Frecency\n")
 }
 
 function S() {
-  let e = Chunk823385.Z.getProps();
-  g.info("START Quick Switcher State"), g.info("Query: ".concat(module.query)), module.results.forEach(e => {
+  let e = l.Z.getProps();
+  g.info("START Quick Switcher State"), g.info("Query: ".concat(e.query)), e.results.forEach(e => {
     switch (g.info("Result Type: ".concat(e.type)), e.type) {
       case b.h8.GUILD:
         g.info("guild id: ".concat(e.record.id));
@@ -160,9 +160,9 @@ function S() {
 }
 async function E() {
   g.info("START User Search Worker State");
-  let e = await Chunk279779.Z.requestDebugState();
-  if (null == module) return void g.info("Unable to get debug state from User Search Worker");
-  Object.entries(JSON.parse(module.users)).forEach(e => {
+  let e = await a.Z.requestDebugState();
+  if (null == e) return void g.info("Unable to get debug state from User Search Worker");
+  Object.entries(JSON.parse(e.users)).forEach(e => {
     let [t, n] = e;
     g.info("id: ".concat(t)), g.info("username: ".concat(n.username)), g.info("global name: ".concat(n.globalName)), g.info("nickname: ".concat(n.friendNickname)), Object.entries(n.nicknames).forEach(e => {
       let [t, n] = e;
@@ -171,16 +171,16 @@ async function E() {
   }), g.info("END User Search Worker State\n")
 }
 async function T() {
-  let e = await Chunk279779.Z.requestDebugState();
-  if (null == module) throw Error("Unable to get debug state from User Search Worker");
-  let t = JSON.parse(module.users),
-    n = Chunk594174.default.getUsers(),
-    r = new Set(Object.keys(exports)),
-    i = Chunk709054.default.keys(require),
+  let e = await a.Z.requestDebugState();
+  if (null == e) throw Error("Unable to get debug state from User Search Worker");
+  let t = JSON.parse(e.users),
+    n = p.default.getUsers(),
+    r = new Set(Object.keys(t)),
+    i = h.default.keys(n),
     l = [];
-  return Chunk710845.forEach(e => {
+  return i.forEach(e => {
     r.has(e) || l.push(e)
-  }), Chunk823385
+  }), l
 }
 async function O(e) {
   let t = await a.Z.requestDebugState(),

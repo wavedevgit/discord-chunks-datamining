@@ -10,21 +10,21 @@ let a = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       refreshOnDepChange: t
-    } = module,
-    [n, a] = Chunk473749.useState([]),
-    [o, s] = Chunk473749.useState(true),
+    } = e,
+    [n, a] = r.useState([]),
+    [o, s] = r.useState(true),
     l = async () => {
       s(true);
       try {
-        let e = await Chunk586739.Z.fetchTeams(true);
-        a(module.body)
+        let e = await i.Z.fetchTeams(true);
+        a(e.body)
       } catch (e) {}
       s(false)
-    }, c = Chunk473749.useRef(true);
-  return Chunk473749.useEffect(() => {
-    (c.current || exports) && (c.current = false, l())
-  }, [exports]), {
-    teams: require,
+    }, c = r.useRef(true);
+  return r.useEffect(() => {
+    (c.current || t) && (c.current = false, l())
+  }, [t]), {
+    teams: n,
     loading: o,
     refresh: l
   }

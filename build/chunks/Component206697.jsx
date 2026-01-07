@@ -45,78 +45,78 @@ function O(e) {
 }
 
 function v() {
-  return (0, Chunk175006.Z)() ? (0, Chunk54381.jsx)("div", {
-    className: Chunk867814.emptyContainer,
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk867814.emptyInner,
-      children: [(0, Chunk54381.jsx)("img", {
-        src: Chunk492764,
-        className: Chunk867814.image,
+  return (0, p.Z)() ? (0, r.jsx)("div", {
+    className: g.emptyContainer,
+    children: (0, r.jsxs)("div", {
+      className: g.emptyInner,
+      children: [(0, r.jsx)("img", {
+        src: E,
+        className: g.image,
         alt: ""
-      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-        className: Chunk867814.header,
+      }), (0, r.jsx)(l.Heading, {
+        className: g.header,
         variant: "heading-xl/semibold",
         color: "text-default",
-        children: Chunk388032.intl.string(Chunk388032.t.erEf2g)
-      }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+        children: h.intl.string(h.t.erEf2g)
+      }), (0, r.jsx)(o.xvT, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.NaRCXT)
+        children: h.intl.string(h.t.NaRCXT)
       })]
     })
-  }) : (0, Chunk54381.jsxs)("div", {
-    className: Chunk867814.emptyContainer,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk867814.emptyInner,
-      children: [(0, Chunk54381.jsx)("img", {
-        src: Chunk235810,
-        className: Chunk867814.image,
+  }) : (0, r.jsxs)("div", {
+    className: g.emptyContainer,
+    children: [(0, r.jsxs)("div", {
+      className: g.emptyInner,
+      children: [(0, r.jsx)("img", {
+        src: b,
+        className: g.image,
         alt: ""
-      }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-        className: Chunk867814.header,
+      }), (0, r.jsx)(l.Heading, {
+        className: g.header,
         variant: "heading-xl/semibold",
         color: "text-default",
-        children: Chunk388032.intl.string(Chunk388032.t.w4DRbZ)
-      }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+        children: h.intl.string(h.t.w4DRbZ)
+      }), (0, r.jsx)(o.xvT, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.F6u3E3)
+        children: h.intl.string(h.t.F6u3E3)
       })]
-    }), (0, Chunk54381.jsx)(S, {})]
+    }), (0, r.jsx)(S, {})]
   })
 }
 
 function S() {
-  let e = (0, Chunk74538.Px)(Chunk474936.PremiumTypes.TIER_2),
-    t = Chunk473749.useCallback(() => (0, Chunk481060.ZDy)(async () => {
+  let e = (0, f.Px)(m.PremiumTypes.TIER_2),
+    t = i.useCallback(() => (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("34906").then(require.bind(require, 639565));
+      } = await n.e("34906").then(n.bind(n, 639565));
       return t => (0, r.jsx)(e, O({
         source: c.Z.FOR_LATER_POPOUT
       }, t))
     }), []),
-    p = Chunk388032.intl.format(Chunk388032.t.qXh3fo, {
-      nitroTierName: module,
-      onClick: exports
+    p = h.intl.format(h.t.qXh3fo, {
+      nitroTierName: e,
+      onClick: t
     });
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk867814.upsellContainer,
-    children: [(0, Chunk54381.jsx)(Chunk657707.SrA, {
+  return (0, r.jsxs)("div", {
+    className: g.upsellContainer,
+    children: [(0, r.jsx)(a.SrA, {
       size: "md",
-      color: Chunk436774.JX.PREMIUM_TIER_2
-    }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
+      color: u.JX.PREMIUM_TIER_2
+    }), (0, r.jsx)(o.xvT, {
       variant: "text-xs/medium",
       color: "text-strong",
-      className: Chunk867814.upsellText,
-      children: Chunk175006
-    }), (0, Chunk54381.jsx)(Chunk767714.Z, {
-      className: Chunk867814.upsellButton,
-      size: Chunk755721.Ph.TINY,
-      shinyButtonClassName: Chunk867814.upsellButton,
-      subscriptionTier: Chunk474936.Si.TIER_2,
+      className: g.upsellText,
+      children: p
+    }), (0, r.jsx)(d.Z, {
+      className: g.upsellButton,
+      size: s.Ph.TINY,
+      shinyButtonClassName: g.upsellButton,
+      subscriptionTier: m.Si.TIER_2,
       premiumModalAnalyticsLocation: {
-        section: Chunk981631.jXE.FOR_LATER_POPOUT_UPSELL
+        section: _.jXE.FOR_LATER_POPOUT_UPSELL
       }
     })]
   })

@@ -311,33 +311,33 @@ var t = function() {
       var e = Uint16Array,
         t = Uint32Array;
       return {
-        m: new module(16),
-        v: new module(16),
+        m: new e(16),
+        v: new e(16),
         d: [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
         o: [3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 15, 17, 19, 23, 27, 31, 35, 43, 51, 59, 67, 83, 99, 115, 131, 163, 195, 227, 258, 999, 999, 999],
         z: [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0, 0, 0, 0],
-        B: new module(32),
+        B: new e(32),
         p: [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073, 4097, 6145, 8193, 12289, 16385, 24577, 65535, 65535],
         w: [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 0, 0],
         h: new t(32),
-        g: new module(512),
+        g: new e(512),
         s: [],
-        A: new module(32),
+        A: new e(32),
         t: [],
-        k: new module(32768),
+        k: new e(32768),
         c: [],
         a: [],
-        n: new module(32768),
+        n: new e(32768),
         e: [],
-        C: new module(512),
+        C: new e(512),
         b: [],
-        i: new module(32768),
+        i: new e(32768),
         r: new t(286),
         f: new t(30),
         l: new t(19),
         u: new t(15e3),
-        q: new module(65536),
-        j: new module(32768)
+        q: new e(65536),
+        j: new e(32768)
       }
     }();
 
@@ -408,14 +408,14 @@ var t = function() {
     return ! function() {
         for (var i = 32768, a = 0; a < i; a++) {
           var o = a;
-          o = (0xff00ff00 & (o = (0xf0f0f0f0 & (o = (0xcccccccc & (o = (0xaaaaaaaa & o) >>> 1 | (0x55555555 & o) << 1)) >>> 2 | (0x33333333 & o) << 2)) >>> 4 | (0xf0f0f0f & o) << 4)) >>> 8 | (0xff00ff & o) << 8, module.i[a] = (o >>> 16 | o << 16) >>> 17
+          o = (0xff00ff00 & (o = (0xf0f0f0f0 & (o = (0xcccccccc & (o = (0xaaaaaaaa & o) >>> 1 | (0x55555555 & o) << 1)) >>> 2 | (0x33333333 & o) << 2)) >>> 4 | (0xf0f0f0f & o) << 4)) >>> 8 | (0xff00ff & o) << 8, e.i[a] = (o >>> 16 | o << 16) >>> 17
         }
 
         function s(e, t, n) {
           for (; 0 != t--;) e.push(0, n)
         }
-        for (var a = 0; a < 32; a++) module.B[a] = module.o[a] << 3 | module.z[a], module.h[a] = module.p[a] << 4 | module.w[a];
-        s(module.s, 144, 8), s(module.s, 112, 9), s(module.s, 24, 7), s(module.s, 8, 8), t(module.s, 9), n(module.s, 9, module.g), r(module.s, 9), s(module.t, 32, 5), t(module.t, 5), n(module.t, 5, module.A), r(module.t, 5), s(module.b, 19, 0), s(module.c, 286, 0), s(module.e, 30, 0), s(module.a, 320, 0)
+        for (var a = 0; a < 32; a++) e.B[a] = e.o[a] << 3 | e.z[a], e.h[a] = e.p[a] << 4 | e.w[a];
+        s(e.s, 144, 8), s(e.s, 112, 9), s(e.s, 24, 7), s(e.s, 8, 8), t(e.s, 9), n(e.s, 9, e.g), r(e.s, 9), s(e.t, 32, 5), t(e.t, 5), n(e.t, 5, e.A), r(e.t, 5), s(e.b, 19, 0), s(e.c, 286, 0), s(e.e, 30, 0), s(e.a, 320, 0)
       }(),
       function(r, u) {
         var d, f, p = Uint8Array,
@@ -596,7 +596,7 @@ var t = function() {
     toRGBA8: t,
     _paeth: u,
     _copyTile: f,
-    _bin: module
+    _bin: e
   }
 }();
 ! function() {
@@ -607,9 +607,9 @@ var t = function() {
       table: function() {
         for (var e = new Uint32Array(256), t = 0; t < 256; t++) {
           for (var n = t, r = 0; r < 8; r++) 1 & n ? n = 0xedb88320 ^ n >>> 1 : n >>>= 1;
-          module[t] = n
+          e[t] = n
         }
-        return module
+        return e
       }(),
       update: function(e, t, n, r) {
         for (var a = 0; a < r; a++) e = i.table[(e ^ t[n + a]) & 255] ^ e >>> 8;

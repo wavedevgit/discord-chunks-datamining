@@ -32,23 +32,23 @@ let h = "".concat("#").concat("itemSkuId", "="),
     }, [e, t.pathname])
   },
   S = () => {
-    let e = (0, Chunk258939.R)(),
-      t = Chunk473749.useRef(null),
-      n = (0, Chunk828700.TH)(),
-      s = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
+    let e = (0, b.R)(),
+      t = r.useRef(null),
+      n = (0, l.TH)(),
+      s = n.pathname === m.Z5c.COLLECTIBLES_SHOP ? o.Z.HOME_PAGE_SHOP_TAB : o.Z.COLLECTIBLES_SHOP,
       {
         analyticsLocations: h
-      } = (0, Chunk906732.ZP)(Chunk607070),
-      E = (0, Chunk410127.Z)();
-    Chunk473749.useEffect(() => {
-      let e = C.exec(require.hash);
-      null != module ? exports.current = module[1] : exports.current = null
-    }, [E, require.hash]);
-    let v = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
-    Chunk473749.useEffect(() => {
-      if (module) return;
+      } = (0, i.ZP)(s),
+      E = (0, f.Z)();
+    r.useEffect(() => {
+      let e = C.exec(n.hash);
+      null != e ? t.current = e[1] : t.current = null
+    }, [E, n.hash]);
+    let v = (0, a.e7)([u.Z], () => u.Z.initialProductSkuId);
+    r.useEffect(() => {
+      if (e) return;
       let n = null;
-      if (null != v ? n = v : null != exports.current && (n = exports.current), null != require) {
+      if (null != v ? n = v : null != t.current && (n = t.current), null != n) {
         let e = setTimeout(() => {
           (e => {
             let {
@@ -81,15 +81,15 @@ let h = "".concat("#").concat("itemSkuId", "="),
               })
             }
           })({
-            productSkuId: require,
+            productSkuId: n,
             analyticsLocations: h,
-            analyticsSource: Chunk607070,
+            analyticsSource: s,
             tab: E
           })
         }, 250);
-        return () => clearTimeout(module)
+        return () => clearTimeout(e)
       }
-    }, [h, Chunk607070, module, v, E])
+    }, [h, s, e, v, E])
   },
   _ = e => {
     let t = r.useRef({}),

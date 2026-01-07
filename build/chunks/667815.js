@@ -16,7 +16,7 @@ let i = (e, t) => {
 };
 
 function l() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "APPLIED_GUILD_BOOST_COUNT_RESET"
   })
 }

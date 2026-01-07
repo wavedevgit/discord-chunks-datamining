@@ -48,7 +48,7 @@ function D(e, t, n) {
 Chunk442837.ZP.initialize();
 class k extends Chunk473749.PureComponent {
   componentDidMount() {
-    (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
+    (0, E.e)("guildTemplate"), Z.KO || I.Z.launch("discord://" + C.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
     this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
@@ -73,46 +73,46 @@ class k extends Chunk473749.PureComponent {
     })
   }
   renderInvalidGuildTemplate() {
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
-        src: require("./167969.js"),
-        className: Chunk478411.marginBottom8
-      }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: a()(Chunk478411.marginTop8, Chunk478411.marginBottom8),
-        children: Chunk388032.intl.string(Chunk388032.t.C7ZRNw)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t.A6MwXE)
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
+    return (0, r.jsxs)(d.ZP, {
+      children: [(0, r.jsx)(d.Ee, {
+        src: n(167969),
+        className: L.marginBottom8
+      }), (0, r.jsx)(d.Dx, {
+        className: a()(L.marginTop8, L.marginBottom8),
+        children: P.intl.string(P.t.C7ZRNw)
+      }), (0, r.jsx)(d.DK, {
+        children: P.intl.string(P.t.A6MwXE)
+      }), this.renderButton(P.intl.string(P.t.fIv16B), this.handleContinue)]
     })
   }
   renderAppOpened() {
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk478411.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.csrAMJ)
-      }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["m1+IBn"])
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
+    return (0, r.jsxs)(d.ZP, {
+      children: [(0, r.jsx)(d.Dx, {
+        className: L.marginBottom8,
+        children: P.intl.string(P.t.csrAMJ)
+      }), (0, r.jsx)(d.DK, {
+        children: P.intl.string(P.t["m1+IBn"])
+      }), this.renderButton(P.intl.string(P.t.fIv16B), this.handleContinue)]
     })
   }
   renderAuthenticatedOrDownload() {
     let {
       guildTemplate: e
     } = this.props;
-    return (o()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk54381.jsx)(Chunk388905.ZP, {
-      className: Chunk572378.authBox,
-      children: (0, Chunk54381.jsx)(Chunk306453.Z, {
-        guildTemplate: module
+    return (o()(null != e, "guild template must not be null"), e.state === O.Rj.RESOLVING) ? (0, r.jsx)(d.ZP, {
+      className: R.authBox,
+      children: (0, r.jsx)(x.Z, {
+        guildTemplate: e
       })
-    }) : (0, Chunk54381.jsx)(M, {
-      guildTemplate: module
+    }) : (0, r.jsx)(M, {
+      guildTemplate: e
     })
   }
   renderContinue() {
-    return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t.fOc4gn)
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
+    return (0, r.jsxs)(d.ZP, {
+      children: [(0, r.jsx)(d.Dx, {
+        children: P.intl.string(P.t.fOc4gn)
+      }), this.renderButton(P.intl.string(P.t.fIv16B), this.handleContinue)]
     })
   }
   render() {
@@ -123,28 +123,28 @@ class k extends Chunk473749.PureComponent {
       transitionTo: i,
       location: s
     } = this.props;
-    if (null == module) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.ZTNur7));
-    if (exports === Chunk981631.kEZ.OPEN) return this.renderAppOpened();
-    if (exports === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
-    switch (module.state) {
-      case Chunk260539.Rj.RESOLVING:
-        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
-      case Chunk260539.Rj.RESOLVED:
-        if (require || !Chunk436620.KO) return this.renderAuthenticatedOrDownload();
-        if (this.props.login) return (0, Chunk54381.jsx)(Chunk781428.Z, {
-          guildTemplate: module,
-          transitionTo: Chunk473749,
-          location: Chunk120356
+    if (null == e) return this.renderSpinner(P.intl.string(P.t.ZTNur7));
+    if (t === C.kEZ.OPEN) return this.renderAppOpened();
+    if (t === C.kEZ.OPENING) return this.renderSpinner(P.intl.string(P.t["Z+hCVU"]));
+    switch (e.state) {
+      case O.Rj.RESOLVING:
+        return this.renderSpinner(P.intl.string(P.t["Z+hCVU"]));
+      case O.Rj.RESOLVED:
+        if (n || !Z.KO) return this.renderAuthenticatedOrDownload();
+        if (this.props.login) return (0, r.jsx)(N.Z, {
+          guildTemplate: e,
+          transitionTo: i,
+          location: s
         });
-        return (0, Chunk54381.jsx)(Chunk423527.Z, {
-          guildTemplate: module,
-          transitionTo: Chunk473749,
-          location: Chunk120356,
+        return (0, r.jsx)(S.Z, {
+          guildTemplate: e,
+          transitionTo: i,
+          location: s,
           onRegister: () => {
-            (0, Chunk929809.c)(Chunk701476.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC_GUILD_TEMPLATES, Chunk630724.EW.NUF_STARTED)
+            (0, _.c)(T.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), v.Z.flowStart(A.MK.ORGANIC_GUILD_TEMPLATES, A.EW.NUF_STARTED)
           }
         });
-      case Chunk260539.Rj.EXPIRED:
+      case O.Rj.EXPIRED:
         return this.renderInvalidGuildTemplate();
       default:
         return null

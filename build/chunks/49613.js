@@ -87,13 +87,13 @@ var I = false,
   A = false;
 
 function N() {
-  return !!E || !(exports.unstable_now() - A < C)
+  return !!E || !(t.unstable_now() - A < C)
 }
 
 function P() {
   if (E = false, I) {
-    var e = exports.unstable_now();
-    A = module;
+    var e = t.unstable_now();
+    A = e;
     var n = true;
     try {
       e: {
@@ -103,23 +103,23 @@ function P() {
         var a = _;
         try {
           a: {
-            for (v(module), p = r(u); null !== p && !(p.expirationTime > module && N());) {
+            for (v(e), p = r(u); null !== p && !(p.expirationTime > e && N());) {
               var s = p.callback;
               if ("function" == typeof s) {
                 p.callback = null, _ = p.priorityLevel;
-                var l = s(p.expirationTime <= module);
-                if (e = exports.unstable_now(), "function" == typeof l) {
-                  p.callback = l, v(module), n = true;
+                var l = s(p.expirationTime <= e);
+                if (e = t.unstable_now(), "function" == typeof l) {
+                  p.callback = l, v(e), n = true;
                   break a
                 }
-                p === r(u) && i(u), v(module)
+                p === r(u) && i(u), v(e)
               } else i(u);
               p = r(u)
             }
             if (null !== p) n = true;
             else {
               var c = r(d);
-              null !== c && D(S, c.startTime - module), n = false
+              null !== c && D(S, c.startTime - e), n = false
             }
           }
           break e

@@ -10,14 +10,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_ADVANCED_SCREENSHARE, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.GmWk2E),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["Fj/xn1"])],
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["Fj/xn1"]),
+  useTitle: () => a.intl.string(a.t.GmWk2E),
+  useSearchTerms: () => [a.intl.string(a.t["Fj/xn1"])],
+  useSubtitle: () => a.intl.string(a.t["Fj/xn1"]),
   useValue: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getVideoHook())
+    return (0, i.e7)([u.Z], () => u.Z.getVideoHook())
   },
   setValue: Chunk846027.Z.setVideoHook,
   usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supportsVideoHook())
+    return (0, i.e7)([u.Z], () => u.Z.supportsVideoHook())
   }
 })

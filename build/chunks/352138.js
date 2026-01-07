@@ -46,34 +46,34 @@ async function u(e) {
 }
 async function d() {
   let e;
-  return Chunk570140.Z.dispatch({
+  return i.Z.dispatch({
     type: "AGE_VERIFICATION_METHODS_LOAD_START"
-  }), e = (0, Chunk788080.yF)() ? p() : f(), await (null == module ? true : module.then(e => {
+  }), e = (0, a.yF)() ? p() : f(), await (null == e ? true : e.then(e => {
     i.Z.dispatch({
       type: "AGE_VERIFICATION_METHODS_LOAD_SUCCESS",
       methods: e.body.methods
     })
   }).catch(() => {
-    Chunk570140.Z.dispatch({
+    i.Z.dispatch({
       type: "AGE_VERIFICATION_METHODS_LOAD_FAILURE"
     })
   }))
 }
 
 function f() {
-  return Chunk544891.tn.get({
-    url: Chunk981631.ANM.AGE_VERIFICATION_METHODS,
+  return r.tn.get({
+    url: s.ANM.AGE_VERIFICATION_METHODS,
     rejectWithError: true
   })
 }
 
 function p() {
-  let e = Chunk314897.default.getSuspendedUserToken();
-  return Chunk544891.tn.post({
-    url: Chunk981631.ANM.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS,
+  let e = o.default.getSuspendedUserToken();
+  return r.tn.post({
+    url: s.ANM.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS,
     rejectWithError: true,
     body: {
-      token: module
+      token: e
     }
   })
 }

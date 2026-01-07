@@ -15,17 +15,17 @@ let m = false,
   f = new Set;
 
 function h() {
-  m = false, g = null, null != (g = Chunk999382.Z.getGuildId()) && Chunk999382.Z.getSection() === Chunk981631.pNK.ONBOARDING && (f = new Set(Chunk45966.Z.getDefaultChannelIds(g)))
+  m = false, g = null, null != (g = d.Z.getGuildId()) && d.Z.getSection() === u.pNK.ONBOARDING && (f = new Set(c.Z.getDefaultChannelIds(g)))
 }
 class N extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk999382.Z, Chunk45966.Z)
+    this.waitFor(d.Z, c.Z)
   }
   hasChanges() {
     if (null == g) returnfalse;
-    let e = Chunk45966.Z.getDefaultChannelIds(g).sort(),
+    let e = c.Z.getDefaultChannelIds(g).sort(),
       t = Array.from(f).sort();
-    return !s().isEqual(module, exports)
+    return !s().isEqual(e, t)
   }
   get guildId() {
     return g

@@ -20,42 +20,42 @@ let f = Object.keys(Chunk211712.hq),
   };
 
 function _() {
-  let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    [t, n] = (0, Chunk473749.useState)(p()),
+  let e = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+    [t, n] = (0, r.useState)(p()),
     {
       banner: f,
       themeColors: _,
       avatarDecorationSkuId: m,
       displayNameStyles: h
-    } = (0, Chunk473749.useMemo)(() => {
-      let n = (0, Chunk211712.Ib)(exports);
+    } = (0, r.useMemo)(() => {
+      let n = (0, u.Ib)(t);
       return {
-        banner: require.getBannerSrc(module),
-        themeColors: require.themeColors,
-        avatarDecorationSkuId: require.avatarDecorationSkuId,
-        displayNameStyles: require.displayNameStyles
+        banner: n.getBannerSrc(e),
+        themeColors: n.themeColors,
+        avatarDecorationSkuId: n.avatarDecorationSkuId,
+        displayNameStyles: n.displayNameStyles
       }
-    }, [exports, module]),
-    g = (0, Chunk442837.e7)([Chunk597688.Z], () => {
-      let e = Chunk597688.Z.getProduct(m);
-      return (0, Chunk922347.M)(null == module ? true : module.items[0]) ? module.items[0] : null
+    }, [t, e]),
+    g = (0, i.e7)([o.Z], () => {
+      let e = o.Z.getProduct(m);
+      return (0, s.M)(null == e ? true : e.items[0]) ? e.items[0] : null
     });
-  (0, Chunk473749.useEffect)(() => {
-    (0, Chunk350327.x3)({
+  (0, r.useEffect)(() => {
+    (0, l.x3)({
       banner: f,
       themeColors: _,
       avatarDecoration: g,
       displayNameStyles: h
     })
   }, [f, _, g, h]);
-  let E = (0, Chunk473749.useCallback)(() => {
-    let e = p(exports);
-    require(module), Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {
-      preset: module
+  let E = (0, r.useCallback)(() => {
+    let e = p(t);
+    n(e), c.default.track(d.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {
+      preset: e
     })
-  }, [exports]);
+  }, [t]);
   return {
-    preset: exports,
+    preset: t,
     onShuffle: E
   }
 }

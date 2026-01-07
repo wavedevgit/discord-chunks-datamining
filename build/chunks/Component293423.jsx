@@ -36,14 +36,14 @@ let b = e => {
   } = a.B7(null != (t = null == _ ? true : _.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.Z, {
-      title: h.intl.format(h.t["rm+ojA"], {
+      title: m.intl.format(m.t["rm+ojA"], {
         serverName: b.name
       }),
       description: null != v ? v : null,
       coverImageAsset: null != (n = null == O ? true : O.cover_image_asset) ? n : null,
       guild: b,
       children: [null != _ ? (0, r.jsx)(c.Z, {
-        className: m.pendingPlanChangeNotice,
+        className: h.pendingPlanChangeNotice,
         groupListingId: _.id,
         subscription: E
       }) : null, (0, r.jsx)(u.Z, {

@@ -23,27 +23,27 @@ function d(e, t, n) {
 }
 
 function f() {
-  let e = Chunk944486.Z.getVoiceChannelId(),
-    t = Chunk967368.Z.bitrate;
-  if (null == module) return;
-  let n = Chunk592125.Z.getChannel(module);
-  null != require && exports !== require.bitrate && Chunk570140.Z.dispatch({
+  let e = l.Z.getVoiceChannelId(),
+    t = o.Z.bitrate;
+  if (null == e) return;
+  let n = s.Z.getChannel(e);
+  null != n && t !== n.bitrate && r.Z.dispatch({
     type: "SET_CHANNEL_BITRATE",
-    bitrate: require.bitrate
+    bitrate: n.bitrate
   })
 }
 
 function p() {
   var e;
-  let t = Chunk944486.Z.getVoiceChannelId(),
-    n = Chunk631768.Z.mode;
-  if (null == exports) return;
-  let i = Chunk592125.Z.getChannel(exports);
-  if (null == Chunk147913) return;
-  let a = null != (e = Chunk147913.videoQualityMode) ? module : Chunk981631.Ucd.AUTO;
-  require !== Chunk314897 && Chunk570140.Z.dispatch({
+  let t = l.Z.getVoiceChannelId(),
+    n = c.Z.mode;
+  if (null == t) return;
+  let i = s.Z.getChannel(t);
+  if (null == i) return;
+  let a = null != (e = i.videoQualityMode) ? e : u.Ucd.AUTO;
+  n !== a && r.Z.dispatch({
     type: "SET_CHANNEL_VIDEO_QUALITY_MODE",
-    mode: Chunk314897
+    mode: a
   })
 }
 

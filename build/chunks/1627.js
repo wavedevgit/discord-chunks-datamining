@@ -19,9 +19,9 @@ let c = new Chunk302155.Z({
     }, 100)
   },
   onSwitchError() {
-    (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.pqvKWA), Chunk481060.ToastType.FAILURE))
+    (0, r.showToast)((0, r.createToast)(l.intl.string(l.t.pqvKWA), r.ToastType.FAILURE))
   },
   onTokenSet() {
-    (0, Chunk481060.Mr3)(Chunk71509.Ui), (0, Chunk481060.Mr3)(Chunk71509._5)
+    (0, r.Mr3)(o.Ui), (0, r.Mr3)(o._5)
   }
 })

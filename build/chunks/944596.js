@@ -151,13 +151,13 @@ let c = e => {
       })
     },
     trackFeedFirstScrollStarted() {
-      Chunk626135.default.track(Chunk981631.rMx.HOME_FIRST_SCROLL_STARTED, {
-        load_id: Chunk144725.Z.getLoadId(),
+      i.default.track(o.rMx.HOME_FIRST_SCROLL_STARTED, {
+        load_id: l.Z.getLoadId(),
         home_session_id: "gravity"
       })
     },
     trackFeedFeedbackPromptViewed() {
-      Chunk626135.default.track(Chunk981631.rMx.HOME_FEEDBACK_PROMPT_VIEWED)
+      i.default.track(o.rMx.HOME_FEEDBACK_PROMPT_VIEWED)
     },
     trackFeedFeedbackSubmitted(e) {
       i.default.track(o.rMx.HOME_FEEDBACK_SUBMITTED, s({
@@ -201,9 +201,9 @@ let c = e => {
       })
     },
     trackFeedEmptyLoadingSeen() {
-      Chunk626135.default.track(Chunk981631.rMx.ICYMI_FEED_EMPTY_LOADING_SEEN, {
-        load_id: Chunk144725.Z.getLoadId(),
-        version: Chunk144725.Z.getVersion()
+      i.default.track(o.rMx.ICYMI_FEED_EMPTY_LOADING_SEEN, {
+        load_id: l.Z.getLoadId(),
+        version: l.Z.getVersion()
       })
     },
     trackFeedEmptyLoadingComplete(e) {

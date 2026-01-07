@@ -13,9 +13,9 @@ var Chunk100527 = require("./100527.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.UO)(Chunk313789.n.SOUNDBOARD_VOLUME_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.kbFsAD),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.BPbGq7, {
-    helpCenterArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
+  useTitle: () => S.intl.string(S.t.kbFsAD),
+  useSubtitle: () => S.intl.format(S.t.BPbGq7, {
+    helpCenterArticle: r.Z.getArticleURL(T.BhN.SOUNDBOARD)
   }),
   setValue: function(t) {
     let e = [i.Z.USER_SETTINGS_VOICE_AND_VIDEO],
@@ -25,8 +25,8 @@ let c = (0, Chunk509613.UO)(Chunk313789.n.SOUNDBOARD_VOLUME_SETTING, {
   minValue: 0,
   maxValue: 100,
   getInitialValue: function() {
-    let t = (0, Chunk242291.pI)();
-    return (0, Chunk36703.P)(module)
+    let t = (0, u.pI)();
+    return (0, a.P)(t)
   },
   onValueRender: function(t) {
     return "".concat(t.toFixed(0), "%")

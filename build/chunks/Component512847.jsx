@@ -44,12 +44,12 @@ function x(e, t, n, r) {
 }
 
 function A() {
-  return x([Chunk131951.Z, Chunk944486.Z], () => ({
-    inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId(),
-    selfMute: Chunk131951.Z.isSelfMute(),
-    selfDeaf: Chunk131951.Z.isSelfDeaf(),
-    audioPermissionReady: Chunk131951.Z.isNativeAudioPermissionReady(),
-    shouldSkipMuteUnmuteSound: Chunk131951.Z.shouldSkipMuteUnmuteSound()
+  return x([v.Z, C.Z], () => ({
+    inVoiceChannel: null != C.Z.getVoiceChannelId(),
+    selfMute: v.Z.isSelfMute(),
+    selfDeaf: v.Z.isSelfDeaf(),
+    audioPermissionReady: v.Z.isNativeAudioPermissionReady(),
+    shouldSkipMuteUnmuteSound: v.Z.shouldSkipMuteUnmuteSound()
   }), (e, t) => {
     let {
       inVoiceChannel: n,
@@ -64,9 +64,9 @@ function A() {
 }
 
 function Z() {
-  return x([Chunk131951.Z, Chunk944486.Z], () => ({
-    videoEnabled: Chunk131951.Z.isVideoEnabled(),
-    inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId()
+  return x([v.Z, C.Z], () => ({
+    videoEnabled: v.Z.isVideoEnabled(),
+    inVoiceChannel: null != C.Z.getVoiceChannelId()
   }), (e, t) => {
     let {
       videoEnabled: n,
@@ -82,19 +82,19 @@ function Z() {
 }
 
 function w() {
-  return x([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.default], () => {
-    let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId()),
-      t = null == module ? true : module.type,
-      n = null == module ? true : module.getGuildId(),
-      r = Chunk19780.Z.getWasEverRtcConnected(),
-      i = Chunk19780.Z.getState();
+  return x([E.Z, I.Z, C.Z, u.default], () => {
+    let e = E.Z.getChannel(C.Z.getVoiceChannelId()),
+      t = null == e ? true : e.type,
+      n = null == e ? true : e.getGuildId(),
+      r = I.Z.getWasEverRtcConnected(),
+      i = I.Z.getState();
     return {
-      channelType: exports,
-      guildId: require,
-      connected: Chunk473749 === Chunk981631.hes.RTC_CONNECTED,
-      connectHasStarted: !Chunk54381 && Chunk473749 !== Chunk981631.hes.DISCONNECTED || Chunk473749 === Chunk981631.hes.RTC_CONNECTED,
-      awaitingRemote: null != Chunk258609.default.getAwaitingRemoteSessionInfo(),
-      connectedRemote: null != Chunk258609.default.getRemoteSessionId()
+      channelType: t,
+      guildId: n,
+      connected: i === P.hes.RTC_CONNECTED,
+      connectHasStarted: !r && i !== P.hes.DISCONNECTED || i === P.hes.RTC_CONNECTED,
+      awaitingRemote: null != u.default.getAwaitingRemoteSessionInfo(),
+      connectedRemote: null != u.default.getRemoteSessionId()
     }
   }, (e, t) => {
     let {
@@ -105,18 +105,18 @@ function w() {
       connectedRemote: a
     } = t, o = e.channelType, s = e.connectedRemote, c = e.connected;
     if (!e.connectHasStarted && i || a && !s) {
-      if (null != n && m.Lr.has(n)) return;
+      if (null != n && h.Lr.has(n)) return;
       return "user_join"
     }
     if (c && !r) {
-      if (l || a || null != o && m.Lr.has(o)) return;
+      if (l || a || null != o && h.Lr.has(o)) return;
       return "disconnect"
     }
   }), null
 }
 
 function L() {
-  return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPTTActive() || Chunk606304.Z.isCurrentUserPTTLatched(), (e, t) => {
+  return x([S.Z], () => S.Z.isCurrentUserPTTActive() || S.Z.isCurrentUserPTTLatched(), (e, t) => {
     if (e !== t) {
       let e = v.Z.isSelfMute();
       if (v.Z.getMode() === P.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
@@ -125,7 +125,7 @@ function L() {
 }
 
 function R() {
-  return x([Chunk131951.Z], () => Chunk131951.Z.getActiveVoiceFilter(), (e, t) => {
+  return x([v.Z], () => v.Z.getActiveVoiceFilter(), (e, t) => {
     if (e !== t)
       if (null != t) return null != e ? "voice_filter_swap" : "voice_filter_on";
       else return "voice_filter_off"
@@ -133,7 +133,7 @@ function R() {
 }
 
 function D() {
-  return x([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
+  return x([v.Z], () => v.Z.isSelfMutedTemporarily(), (e, t) => {
     if (e !== t) {
       let e = v.Z.isSelfMute();
       if (v.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
@@ -142,7 +142,7 @@ function D() {
 }
 
 function M() {
-  return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
+  return x([S.Z], () => S.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
     if (e !== t) {
       let e = v.Z.isSelfMute();
       if (v.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
@@ -151,44 +151,44 @@ function M() {
 }
 
 function k() {
-  return x([Chunk979651.Z], () => Chunk979651.Z.userHasBeenMovedVersion, (e, t) => {
+  return x([T.Z], () => T.Z.userHasBeenMovedVersion, (e, t) => {
     if (e !== t) return "user_moved"
   }), null
 }
 
 function U() {
-  return x([Chunk944486.Z, Chunk979651.Z], () => {
-    let e = Chunk944486.Z.getVoiceChannelId();
-    if (null == module) return Chunk590415.xO.NONE;
-    let t = Chunk979651.Z.getVoiceStateForChannel(module);
-    return (0, Chunk590415.gf)(exports)
+  return x([C.Z, T.Z], () => {
+    let e = C.Z.getVoiceChannelId();
+    if (null == e) return m.xO.NONE;
+    let t = T.Z.getVoiceStateForChannel(e);
+    return (0, m.gf)(t)
   }, (e, t) => {
-    if (e !== t && t === h.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
+    if (e !== t && t === m.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
   }), null
 }
 
 function G() {
-  return x([Chunk944486.Z, Chunk199902.Z, Chunk314897.default, Chunk979651.Z, Chunk592125.Z], () => {
-    let e, t, n = Chunk944486.Z.getVoiceChannelId(),
-      r = Chunk314897.default.getId(),
+  return x([C.Z, b.Z, _.default, T.Z, E.Z], () => {
+    let e, t, n = C.Z.getVoiceChannelId(),
+      r = _.default.getId(),
       i = [],
       l = null,
       a = 0,
-      o = Chunk199902.Z.getAllActiveStreams();
-    if (null != require) {
-      let r = Chunk592125.Z.getChannel(require);
-      null != Chunk54381 && (e = Chunk54381.type, t = Chunk938475.ZP.countVoiceStatesForChannel(Chunk54381.id) - !!Chunk979651.Z.isInChannel(Chunk54381.id), i = Chunk199902.Z.getAllApplicationStreamsForChannel(Chunk54381.id).map(e => e.ownerId))
+      o = b.Z.getAllActiveStreams();
+    if (null != n) {
+      let r = E.Z.getChannel(n);
+      null != r && (e = r.type, t = N.ZP.countVoiceStatesForChannel(r.id) - !!T.Z.isInChannel(r.id), i = b.Z.getAllApplicationStreamsForChannel(r.id).map(e => e.ownerId))
     }
     let s = null;
-    return (null == (s = 1 === Chunk317381.length ? Chunk317381[0] : Chunk199902.Z.getCurrentUserActiveStream()) ? true : Chunk16609.state) === Chunk981631.jm8.CONNECTING && (s = null), null != Chunk16609 && (l = (0, Chunk569545.V9)(Chunk16609), a = Chunk199902.Z.getViewerIds(Chunk392711).filter(e => e !== r).length), {
-      channelType: module,
-      voiceChannelId: require,
-      voiceChannelUserCount: exports,
-      streamingUserIds: Chunk473749,
-      singleActiveStreamKey: Chunk392711,
-      singleActiveStreamViewerCount: Chunk442837,
-      currentUserId: Chunk54381,
-      allActiveStreams: Chunk317381
+    return (null == (s = 1 === o.length ? o[0] : b.Z.getCurrentUserActiveStream()) ? true : s.state) === P.jm8.CONNECTING && (s = null), null != s && (l = (0, d.V9)(s), a = b.Z.getViewerIds(l).filter(e => e !== r).length), {
+      channelType: e,
+      voiceChannelId: n,
+      voiceChannelUserCount: t,
+      streamingUserIds: i,
+      singleActiveStreamKey: l,
+      singleActiveStreamViewerCount: a,
+      currentUserId: r,
+      allActiveStreams: o
     }
   }, (e, t) => {
     let {
@@ -207,7 +207,7 @@ function G() {
         if (null == n) returnfalse;
         let r = O.Z.getGuild(n);
         return null != r && r.afkChannelId === t.id
-      }(r) || null != n && m.Lr.has(n)) return;
+      }(r) || null != n && h.Lr.has(n)) return;
     let c = null != a && e.singleActiveStreamKey === a,
       u = l.some(t => !e.streamingUserIds.includes(t)),
       d = e.allActiveStreams.map(e => e.ownerId),
@@ -222,25 +222,25 @@ function G() {
 }
 
 function H() {
-  return x([Chunk944486.Z, Chunk317381.ZP, Chunk591472.Z, Chunk314897.default], () => {
-    let e = Chunk944486.Z.getVoiceChannelId(),
-      t = Chunk944486.Z.getChannelId(),
-      n = Chunk317381.ZP.getConnectedActivityLocation(),
-      r = (0, Chunk16609.p)(require),
-      i = Chunk314897.default.getId(),
-      l = (0, Chunk823379.lm)(exports) ? Chunk317381.ZP.getEmbeddedActivitiesForChannel(exports) : Chunk317381.i6,
-      a = (0, Chunk823379.lm)(module) ? Chunk317381.ZP.getEmbeddedActivitiesForChannel(module) : Chunk317381.i6,
-      u = (0, Chunk823379.lm)(Chunk54381) ? Chunk317381.ZP.getEmbeddedActivitiesForChannel(Chunk54381) : Chunk317381.i6,
-      d = (0, Chunk823379.lm)(require) ? Chunk317381.ZP.getSelfEmbeddedActivityForLocation(require) : null;
+  return x([C.Z, o.ZP, c.Z, _.default], () => {
+    let e = C.Z.getVoiceChannelId(),
+      t = C.Z.getChannelId(),
+      n = o.ZP.getConnectedActivityLocation(),
+      r = (0, s.p)(n),
+      i = _.default.getId(),
+      l = (0, j.lm)(t) ? o.ZP.getEmbeddedActivitiesForChannel(t) : o.i6,
+      a = (0, j.lm)(e) ? o.ZP.getEmbeddedActivitiesForChannel(e) : o.i6,
+      u = (0, j.lm)(r) ? o.ZP.getEmbeddedActivitiesForChannel(r) : o.i6,
+      d = (0, j.lm)(n) ? o.ZP.getSelfEmbeddedActivityForLocation(n) : null;
     return {
-      connectedActivityLocation: require,
-      voiceChannelId: module,
-      currentUserId: Chunk473749,
-      channelActivities: Chunk392711,
-      connectedChannelActivities: Chunk258609,
-      userConnectedActivity: Chunk569545,
-      voiceChannelActivities: Chunk442837,
-      connectedFrame: Chunk591472.Z.getConnectedFrame()
+      connectedActivityLocation: n,
+      voiceChannelId: e,
+      currentUserId: i,
+      channelActivities: l,
+      connectedChannelActivities: u,
+      userConnectedActivity: d,
+      voiceChannelActivities: a,
+      connectedFrame: c.Z.getConnectedFrame()
     }
   }, (e, t) => {
     let n, {
@@ -269,11 +269,11 @@ function H() {
 }
 
 function B() {
-  return x([Chunk106301.Z, Chunk944486.Z], () => ({
-    hangStatus: Chunk106301.Z.getCurrentHangStatus(),
-    customHangStatus: Chunk106301.Z.getCustomHangStatus(),
-    gameActivityHangStatus: Chunk106301.Z.getGameActivityHangStatus(),
-    inVoice: null != Chunk944486.Z.getVoiceChannelId()
+  return x([p.Z, C.Z], () => ({
+    hangStatus: p.Z.getCurrentHangStatus(),
+    customHangStatus: p.Z.getCustomHangStatus(),
+    gameActivityHangStatus: p.Z.getGameActivityHangStatus(),
+    inVoice: null != C.Z.getVoiceChannelId()
   }), (e, t) => {
     var n, r;
     let {
@@ -286,7 +286,7 @@ function B() {
 }
 
 function V() {
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(A, {}), (0, Chunk54381.jsx)(Z, {}), (0, Chunk54381.jsx)(w, {}), (0, Chunk54381.jsx)(L, {}), (0, Chunk54381.jsx)(D, {}), (0, Chunk54381.jsx)(k, {}), (0, Chunk54381.jsx)(G, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(H, {}), (0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(B, {})]
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(A, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {}), (0, r.jsx)(L, {}), (0, r.jsx)(D, {}), (0, r.jsx)(k, {}), (0, r.jsx)(G, {}), (0, r.jsx)(U, {}), (0, r.jsx)(H, {}), (0, r.jsx)(R, {}), (0, r.jsx)(M, {}), (0, r.jsx)(B, {})]
   })
 }

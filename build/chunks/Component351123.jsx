@@ -386,33 +386,33 @@ function Y(e) {
   })
 }
 let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.ZP, Chunk430824.Z, Chunk485386.Z], () => {
-  let e, t = Chunk277053.Z.channel,
-    n = Chunk277053.Z.category,
+  let e, t = S.Z.channel,
+    n = S.Z.category,
     i = [],
     l = [],
     r = {},
     a = false;
-  if (null != exports) {
-    e = Chunk430824.Z.getGuild(exports.getGuildId());
-    let n = Chunk271383.ZP.getMemberIds(null == module ? true : module.id);
-    if (null != module) {
-      let s = Chunk485386.Z.getSortedRoles(module.id);
-      r = Chunk277053.Z.editedPermissionIds.reduce((e, t) => {
+  if (null != t) {
+    e = w.Z.getGuild(t.getGuildId());
+    let n = N.ZP.getMemberIds(null == e ? true : e.id);
+    if (null != e) {
+      let s = E.Z.getSortedRoles(e.id);
+      r = S.Z.editedPermissionIds.reduce((e, t) => {
         let n = S.Z.getPermissionOverwrite(t);
         return null != n && (e[t] = n), e
-      }, {}), i = Chunk605436.kA(module, Chunk442837, exports, exports.accessPermissions, Chunk120356), l = Chunk605436.cR(require, exports, module, exports.accessPermissions, Chunk120356), a = Chunk605436.Yk(exports, Chunk120356)
+      }, {}), i = L.kA(e, s, t, t.accessPermissions, r), l = L.cR(n, t, e, t.accessPermissions, r), a = L.Yk(t, r)
     }
   }
   return {
-    canSyncChannel: null != require && Chunk496675.Z.can(Chunk231338.Pl.MANAGE_ROLES, require),
-    category: require,
-    channel: exports,
-    filteredMembers: Chunk473749,
-    filteredRoles: Chunk54381,
-    guild: module,
+    canSyncChannel: null != n && T.Z.can(B.Pl.MANAGE_ROLES, n),
+    category: n,
+    channel: t,
+    filteredMembers: l,
+    filteredRoles: i,
+    guild: e,
     isPrivateGuildChannel: a,
-    locked: Chunk277053.Z.locked,
-    permissionUpdates: Chunk120356
+    locked: S.Z.locked,
+    permissionUpdates: r
   }
 })(function(e) {
   let {

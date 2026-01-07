@@ -72,40 +72,40 @@ class I extends Chunk147913.Z {
   async sendGiftingNotificationIfEligible() {
     let {
       enabled: e
-    } = Chunk522558.w.getConfig({
+    } = g.w.getConfig({
       location: "PremiumGiftingIntentManager handleTopAffinityUnreadNotification"
-    }), t = Chunk695346.vc.getSetting();
-    if (!module || !exports) return;
-    let n = Chunk441623.ZP.getNextRecipientUserIDForNotification();
-    if (null != require) try {
-      let e = await Chunk493683.Z.getOrEnsurePrivateChannel(require),
-        t = Chunk592125.Z.getChannel(module);
-      if (null == exports) return;
-      Chunk375954.Z.isReady(exports.id) || await Chunk348245.Z.fetchMessages({
-        channelId: exports.id,
+    }), t = p.vc.getSetting();
+    if (!e || !t) return;
+    let n = b.ZP.getNextRecipientUserIDForNotification();
+    if (null != n) try {
+      let e = await o.Z.getOrEnsurePrivateChannel(n),
+        t = _.Z.getChannel(e);
+      if (null == t) return;
+      m.Z.isReady(t.id) || await d.Z.fetchMessages({
+        channelId: t.id,
         isPreload: true
       });
-      let i = Chunk441623.ZP.getNextRecipientUserIDForNotification();
-      if (Chunk106351 !== require) return;
-      Chunk904245.Z.sendGiftingPromptSystemMessage(exports.id, {
-        giftIntentType: Chunk474936.hX.FRIEND_ANNIVERSARY,
-        recipientUserId: Chunk106351,
-        giftIntentSecondaryAction: Chunk474936.X2.SEND_MESSAGE
+      let i = b.ZP.getNextRecipientUserIDForNotification();
+      if (i !== n) return;
+      s.Z.sendGiftingPromptSystemMessage(t.id, {
+        giftIntentType: y.hX.FRIEND_ANNIVERSARY,
+        recipientUserId: i,
+        giftIntentSecondaryAction: y.X2.SEND_MESSAGE
       });
-      let a = Chunk752048.Z.getUserAffinity(Chunk106351);
-      (0, Chunk213609.h)({
-        name: Chunk990547.ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION,
-        type: Chunk990547.ImpressionTypes.VIEW,
+      let a = f.Z.getUserAffinity(i);
+      (0, c.h)({
+        name: r.ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION,
+        type: r.ImpressionTypes.VIEW,
         properties: {
-          gift_intent_type: Chunk474936.hX.FRIEND_ANNIVERSARY,
-          dm_affinity: null == Chunk846519 ? true : Chunk846519.dmProbability,
-          channel_id: exports.id
+          gift_intent_type: y.hX.FRIEND_ANNIVERSARY,
+          dm_affinity: null == a ? true : a.dmProbability,
+          channel_id: t.id
         }
-      }), (0, Chunk795448.PV)(Chunk106351), (0, Chunk795448.Zm)()
+      }), (0, E.PV)(i), (0, E.Zm)()
     } catch (e) {
       S.error("Failed to fetch DM channel data for gifting notification", {
-        recipientUserID: require,
-        error: module
+        recipientUserID: n,
+        error: e
       })
     }
   }
@@ -117,8 +117,8 @@ class I extends Chunk147913.Z {
   }
   onPostConnectionOpen() {
     this.sendGiftingNotificationIfEligible();
-    let e = Chunk944486.Z.getChannelId();
-    null != module && this.sendGiftPromptMessageInSelectedChannelIfEligible(module)
+    let e = h.Z.getChannelId();
+    null != e && this.sendGiftPromptMessageInSelectedChannelIfEligible(e)
   }
   constructor(...e) {
     super(...e), O(this, "actions", {

@@ -25,11 +25,11 @@ class u extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     returntrue === c.filterStaffContent
   }
   onlyShowRecentGeneratedCandidates() {
-    return !!(0, Chunk518929.q3)("processRawItems", false).contentGenerationEnabled && true === c.onlyShowRecentGeneratedCandidates
+    return !!(0, a.q3)("processRawItems", false).contentGenerationEnabled && true === c.onlyShowRecentGeneratedCandidates
   }
   getDoubleTapBehavior() {
     var e;
-    return null != (e = c.doubleTapBehavior) ? module : Chunk797394.m.DEFAULT
+    return null != (e = c.doubleTapBehavior) ? e : o.m.DEFAULT
   }
   getState() {
     return c

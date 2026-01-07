@@ -26,12 +26,12 @@ class r {
   }
   getFirstKey() {
     var e;
-    return null == (e = [...this.rows][0]) ? true : module.key
+    return null == (e = [...this.rows][0]) ? true : e.key
   }
   getLastKey() {
     var e;
     let t = [...this.rows];
-    return null == (e = exports[exports.length - 1]) ? true : module.key
+    return null == (e = t[t.length - 1]) ? true : e.key
   }
   getItem(e) {
     var t;

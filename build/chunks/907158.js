@@ -17,7 +17,7 @@ Chunk689591(String, "String", function(t) {
   })
 }, function() {
   var t, r = a(this),
-    n = exports.string,
-    o = exports.index;
-  return Chunk565130 >= require.length ? Chunk787899(true, true) : (t = e(require, Chunk565130), exports.index += module.length, Chunk787899(module, false))
+    n = r.string,
+    o = r.index;
+  return o >= n.length ? s(true, true) : (t = e(n, o), r.index += t.length, s(t, false))
 })

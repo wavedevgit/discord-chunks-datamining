@@ -7,6 +7,6 @@ require.d(exports, {
 var Chunk808506 = require("./808506.js");
 
 function i() {
-  let e = Chunk808506.default.getFocusedPID();
-  return null != module && (Chunk808506.default.isReady(module) || Chunk808506.default.isCrashed(module)) ? module : null
+  let e = r.default.getFocusedPID();
+  return null != e && (r.default.isReady(e) || r.default.isCrashed(e)) ? e : null
 }

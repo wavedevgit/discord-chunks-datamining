@@ -28,16 +28,16 @@ function a() {
   }
   let i = {},
     a = [];
-  for (let e in exports) require.hasOwnProperty(module) ? a.length > 0 && (i[module] = a, a = []) : a.push(module);
+  for (let e in t) n.hasOwnProperty(e) ? a.length > 0 && (i[e] = a, a = []) : a.push(e);
   let o = {};
-  for (let t in require) {
-    if (i.hasOwnProperty(exports))
-      for (e = 0; module < i[exports].length; module++) {
-        let n = i[exports][module];
-        o[i[exports][module]] = Chunk473749(require)
+  for (let t in n) {
+    if (i.hasOwnProperty(t))
+      for (e = 0; e < i[t].length; e++) {
+        let n = i[t][e];
+        o[i[t][e]] = r(n)
       }
-    o[exports] = Chunk473749(exports)
+    o[t] = r(t)
   }
-  for (e = 0; module < a.length; module++) o[a[module]] = Chunk473749(a[module]);
+  for (e = 0; e < a.length; e++) o[a[e]] = r(a[e]);
   return o
 }

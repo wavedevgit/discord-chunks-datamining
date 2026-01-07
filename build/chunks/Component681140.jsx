@@ -210,32 +210,32 @@ function g(e) {
 }
 
 function v() {
-  let e = Chunk473749.useCallback(e => {
+  let e = r.useCallback(e => {
       x.setState({
         userId: e,
         state: null
       })
     }, []),
-    t = Chunk473749.useCallback(async () => {
+    t = r.useCallback(async () => {
       let {
         userId: e,
         loading: t
       } = x.getState();
-      if (!exports && null != module) {
+      if (!t && null != e) {
         x.setState({
           loading: true,
           error: null
         });
         try {
-          let t = await (0, Chunk620481.V_)(module);
+          let t = await (0, d.V_)(e);
           x.setState({
-            state: exports,
+            state: t,
             loading: false
           })
         } catch (t) {
-          let e = new Chunk881052.Hx(exports);
+          let e = new l.Hx(t);
           x.setState({
-            error: module.getAnyErrorMessage(),
+            error: e.getAnyErrorMessage(),
             loading: false
           })
         } finally {
@@ -246,16 +246,16 @@ function v() {
       }
     }, []),
     n = x.useField("loading");
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk605716.inputWithButtonRow,
-    children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
+  return (0, a.jsxs)("div", {
+    className: h.inputWithButtonRow,
+    children: [(0, a.jsx)(i.oil, {
       placeholder: "User ID",
-      onChange: module
-    }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-      onClick: exports,
+      onChange: e
+    }), (0, a.jsx)(i.Button, {
+      onClick: t,
       text: "Get Snapshot",
-      loading: require,
-      disabled: require
+      loading: n,
+      disabled: n
     })]
   })
 }
@@ -263,16 +263,16 @@ function v() {
 function j() {
   let e = x.useField("state"),
     t = x.useField("error");
-  return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+  return (0, a.jsxs)(i.C3N, {
     label: "Debug User State",
     description: "Paste a user ID below to get a snapshot of client state for the user. This does not generate any logs.",
-    children: [(0, Chunk54381.jsx)(v, {}), null != exports && (0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: [(0, a.jsx)(v, {}), null != t && (0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      className: Chunk605716.statusText,
-      children: exports
-    }), null != module && (0, Chunk54381.jsx)(g, {
-      userState: module
+      className: h.statusText,
+      children: t
+    }), null != e && (0, a.jsx)(g, {
+      userState: e
     })]
   })
 }

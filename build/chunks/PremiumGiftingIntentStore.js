@@ -87,36 +87,36 @@ function k(e) {
 
 function U() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  if (module) {
+  if (e) {
     let e = Math.ceil(P.length / 2);
-    P.slice(0, module).forEach(e => {
+    P.slice(0, e).forEach(e => {
       R.add(e)
     }), P.forEach(e => {
       w.add(e)
     })
   } else
     for (let e of P) {
-      let t = Chunk752048.Z.getUserAffinity(module);
-      null != exports && exports.dmProbability > T && R.add(module), null != exports && exports.dmProbability > C && w.add(module)
+      let t = d.Z.getUserAffinity(e);
+      null != t && t.dmProbability > T && R.add(e), null != t && t.dmProbability > C && w.add(e)
     }
 }
 
 function G() {
   if (null != x) return void es(x);
-  if (B(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
+  if (B(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
-  } = Chunk522558.w.getConfig({
+  } = _.w.getConfig({
     location: "PremiumGiftingIntentStore updateFriendAnniversaries"
   });
-  if (module) {
-    for (let e of Chunk699516.Z.getFriendIDs()) {
-      let t = Chunk699516.Z.getSince(module),
-        n = Chunk752048.Z.getUserAffinity(module);
-      if (Chunk699516.Z.isFriend(module) && null != require && require.dmProbability > 0 && null != exports) {
-        let n = new Date(exports);
-        k(require) && (P.push(module), D[module] = {
-          friendsSince: require
+  if (e) {
+    for (let e of p.Z.getFriendIDs()) {
+      let t = p.Z.getSince(e),
+        n = d.Z.getUserAffinity(e);
+      if (p.Z.isFriend(e) && null != n && n.dmProbability > 0 && null != t) {
+        let n = new Date(t);
+        k(n) && (P.push(e), D[e] = {
+          friendsSince: n
         })
       }
     }
@@ -177,13 +177,13 @@ function Q(e) {
 
 function X() {
   let e = j();
-  for (let t in N.messageGiftIntentLastShownMap) module - N.messageGiftIntentLastShownMap[exports] > v && delete N.messageGiftIntentLastShownMap[exports]
+  for (let t in N.messageGiftIntentLastShownMap) e - N.messageGiftIntentLastShownMap[t] > v && delete N.messageGiftIntentLastShownMap[t]
 }
 
 function J() {
   let e = j(),
     t = y * b * 2;
-  for (let n in N.profilePopoutGiftIntentsDismissMap) module - N.profilePopoutGiftIntentsDismissMap[require] > exports && delete N.profilePopoutGiftIntentsDismissMap[require]
+  for (let n in N.profilePopoutGiftIntentsDismissMap) e - N.profilePopoutGiftIntentsDismissMap[n] > t && delete N.profilePopoutGiftIntentsDismissMap[n]
 }
 
 function $() {
@@ -271,10 +271,10 @@ class el extends(r = Chunk442837.ZP.PersistedStore) {
   isNotificationCooldownActive() {
     z();
     let e = N.giftUnreadNotificationLastDismissedTimes;
-    if (0 === module.length) returnfalse;
-    if (module.length >= I) returntrue;
+    if (0 === e.length) returnfalse;
+    if (e.length >= I) returntrue;
     let t = j();
-    return module.filter(e => t - e <= y).length >= S
+    return e.filter(e => t - e <= y).length >= S
   }
   canShowFriendsTabBadge() {
     return F()

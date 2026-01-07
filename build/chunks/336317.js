@@ -34,7 +34,7 @@ let r = function() {
     a = /[&<>'"]/g,
     o = /^(?:iframe|noframes|noscript|script|select|style|textarea)$/,
     s = String.fromCharCode;
-  return module;
+  return e;
 
   function l(e, t) {
     return document.createTextNode(t ? e.replace(r, "") : e)

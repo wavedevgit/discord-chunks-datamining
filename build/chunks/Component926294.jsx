@@ -12,21 +12,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk171532 = require("./171532.js");
 
 function l() {
-  let [e] = Chunk473749.useState(() => Math.floor(1600 * Math.random()) / 1e3);
-  return (0, Chunk54381.jsx)("div", {
-    className: o()(Chunk171532.cardImageContainer, Chunk171532.placeholderCard),
+  let [e] = i.useState(() => Math.floor(1600 * Math.random()) / 1e3);
+  return (0, r.jsx)("div", {
+    className: o()(s.cardImageContainer, s.placeholderCard),
     style: {
-      animationDelay: "".concat(module, "s")
+      animationDelay: "".concat(e, "s")
     }
   })
 }
 
 function c() {
-  let [e] = Chunk473749.useState(() => Math.floor(60 * Math.random()) + 20);
-  return (0, Chunk54381.jsx)("div", {
-    className: Chunk171532.placeholderText,
+  let [e] = i.useState(() => Math.floor(60 * Math.random()) + 20);
+  return (0, r.jsx)("div", {
+    className: s.placeholderText,
     style: {
-      width: "".concat(module, "%")
+      width: "".concat(e, "%")
     }
   })
 }

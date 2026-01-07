@@ -15,10 +15,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk399970 = require("./399970.jsx"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.qs)(Chunk313789.n.ADVANCED_APPLICATION_TEST_MODE, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.erOqlh),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["52hMnD"]),
+  useTitle: () => c.intl.string(c.t.erOqlh),
+  useSubtitle: () => c.intl.string(c.t["52hMnD"]),
   usePredicate: Chunk695346.Sb.useSetting,
-  useValue: () => (0, Chunk442837.e7)([Chunk695103.Z], () => null != Chunk695103.Z.testModeApplicationId),
+  useValue: () => (0, l.e7)([a.Z], () => null != a.Z.testModeApplicationId),
   setValue: t => {
     t ? (0, s.h7j)(t => (0, i.jsx)(S.Z, function(t) {
       for (var e = 1; e < arguments.length; e++) {

@@ -20,9 +20,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk517319 = require("./517319.js");
 
 function g() {
-  let e = (0, Chunk442837.cj)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)),
-    [t, n] = Chunk473749.useState(module),
-    g = (0, Chunk915009.LN)(),
+  let e = (0, a.cj)([l.Z], () => l.Z.hasConsented(_.pjP.PERSONALIZATION)),
+    [t, n] = i.useState(e),
+    g = (0, s.LN)(),
     E = e => {
       e ? (0, o.g)([_.pjP.PERSONALIZATION], []).catch(f.S).then(() => n(true)) : (0, f.V)({
         header: m.intl.string(m.t["9SNpzv"]),
@@ -34,17 +34,17 @@ function g() {
         body: m.intl.string(m.t.gJvDDh)
       })
     };
-  return (0, Chunk54381.jsx)(Chunk838436.U, {
-    setting: Chunk726985.s6.PRIVACY_DATA_PERSONALIZE_V2,
-    children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t.MNKzyg),
-      note: Chunk388032.intl.format(Chunk388032.t["eQL/Mr"], {
-        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_USED_FOR_RECOMMENDED)
+  return (0, r.jsx)(u.U, {
+    setting: p.s6.PRIVACY_DATA_PERSONALIZE_V2,
+    children: (0, r.jsx)(d.ZP, {
+      title: m.intl.string(m.t.MNKzyg),
+      note: m.intl.format(m.t["eQL/Mr"], {
+        helpdeskArticle: c.Z.getArticleURL(_.BhN.DATA_USED_FOR_RECOMMENDED)
       }),
-      value: exports,
+      value: t,
       onChange: E,
       disabled: g,
-      tooltipText: g ? Chunk388032.intl.string(Chunk517319.default["6Af/cw"]) : true
+      tooltipText: g ? m.intl.string(h.default["6Af/cw"]) : true
     })
   })
 }

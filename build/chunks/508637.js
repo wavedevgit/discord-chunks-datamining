@@ -20,7 +20,7 @@ Chunk220159({
         writable: false
       }).push()
     } catch (t) {
-      return module instanceof TypeError
+      return t instanceof TypeError
     }
   }()
 }, {

@@ -24,7 +24,7 @@ class f extends Chunk473749.Component {
     let {
       match: e
     } = this.props;
-    if (null == module) return;
+    if (null == e) return;
     let {
       guildId: t,
       channelId: n,
@@ -40,24 +40,24 @@ class f extends Chunk473749.Component {
         channelId: n,
         messageId: i
       }
-    }(module);
-    (0, Chunk893607.Ss)(exports) && (0, Chunk893607.cq)(require) ? (Chunk749210.Z.selectGuild(exports), Chunk287734.default.selectChannel({
-      guildId: exports,
-      channelId: require,
-      messageId: Chunk54381
-    })) : (0, Chunk703656.dL)(Chunk981631.Z5c.ME)
+    }(e);
+    (0, c.Ss)(t) && (0, c.cq)(n) ? (s.Z.selectGuild(t), o.default.selectChannel({
+      guildId: t,
+      channelId: n,
+      messageId: i
+    })) : (0, d.dL)(u.Z5c.ME)
   }
   render() {
     return null
   }
 }
-let h = () => (0, Chunk54381.jsxs)(Chunk828700.rs, {
-  children: [(0, Chunk54381.jsx)(Chunk765717.Z, {
-    path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
+let h = () => (0, i.jsxs)(a.rs, {
+  children: [(0, i.jsx)(l.Z, {
+    path: u.Z5c.CHANNEL(c.Hw.guildId(), c.Hw.channelId({
       optional: true
     }), ":messageId?"),
     component: f
-  }), (0, Chunk54381.jsx)(Chunk765717.Z, {
+  }), (0, i.jsx)(l.Z, {
     component: f
   })]
 })

@@ -13,11 +13,11 @@ var Chunk442837 = require("./442837.js"),
 
 function c() {
   var e;
-  let t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    n = Chunk431.Z.isFetchingOffer(),
-    c = Chunk431.Z.hasFetchedOffer(),
-    u = (0, Chunk635999.Z)(Chunk474936.dT),
-    d = (0, Chunk635999.Z)(Chunk474936.dB),
-    f = null != (e = null != u ? u : d) ? module : null;
-  return (null == exports ? true : exports.canceledAt) == null ? null : null != f ? f : (require || c || (0, Chunk937579.Qe)(), null)
+  let t = (0, r.e7)([i.Z], () => i.Z.getPremiumTypeSubscription()),
+    n = a.Z.isFetchingOffer(),
+    c = a.Z.hasFetchedOffer(),
+    u = (0, s.Z)(l.dT),
+    d = (0, s.Z)(l.dB),
+    f = null != (e = null != u ? u : d) ? e : null;
+  return (null == t ? true : t.canceledAt) == null ? null : null != f ? f : (n || c || (0, o.Qe)(), null)
 }

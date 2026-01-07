@@ -52,7 +52,7 @@ function b() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [n, b] = Chunk290348.UE(module), p = Chunk473749.useMemo(() => new Set(require.map(e => e.ref_id)), [require]);
+  } = (0, s.N)(), [n, b] = o.UE(e), p = i.useMemo(() => new Set(n.map(e => e.ref_id)), [n]);
 
   function h(e, t) {
     let {
@@ -70,10 +70,10 @@ function b() {
     };
     null != t ? s[t] = o : s.push(o), b(s)
   }
-  let x = (0, Chunk723047.mY)();
-  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(Chunk861345.p, {
-      benefits: require,
+  let x = (0, a.mY)();
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(d.p, {
+      benefits: n,
       onEdit: function(e) {
         (0, l.h7j)(i => (0, r.jsx)(c.x3, m(f({}, i), {
           guildId: t,
@@ -91,19 +91,19 @@ function b() {
           [i] = r.splice(e, 1);
         r.splice(t, 0, i), b(r)
       },
-      guildId: exports
-    }), require.length > 0 && (0, Chunk54381.jsx)(Chunk481060.LZC, {
+      guildId: t
+    }), n.length > 0 && (0, r.jsx)(l.LZC, {
       size: 8
-    }), (0, Chunk54381.jsx)(Chunk861345.s, {
+    }), (0, r.jsx)(d.s, {
       onClick: function() {
-        (0, Chunk481060.h7j)(e => (0, r.jsx)(c.x3, m(f({}, e), {
+        (0, l.h7j)(e => (0, r.jsx)(c.x3, m(f({}, e), {
           guildId: t,
           omitChannelIds: p,
           onSave: e => h(e)
         })))
       },
       disabled: x,
-      children: Chunk388032.intl.string(Chunk388032.t.PLSCUg)
+      children: g.intl.string(g.t.PLSCUg)
     })]
   })
 }

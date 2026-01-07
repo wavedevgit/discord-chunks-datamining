@@ -11,16 +11,16 @@ var Chunk317770 = require("./317770.js"),
   Chunk981631 = require("./981631.js");
 class l extends Chunk317770.Z {
   _initialize() {
-    Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
+    a.isPlatformEmbedded && (o.ZP.on("APP_PUSH_ANALYTICS", (e, t) => {
       this._handleEventResponse(t)
     }), this.processModuleEvents())
   }
   _terminate() {}
   processModuleEvents() {
     try {
-      Chunk998502.ZP.send("APP_GET_ANALYTICS_EVENTS")
+      o.ZP.send("APP_GET_ANALYTICS_EVENTS")
     } catch (e) {
-      console.error("[analytics] failed to send analytics events query: ".concat(module))
+      console.error("[analytics] failed to send analytics events query: ".concat(e))
     }
   }
   _handleEventResponse(e) {

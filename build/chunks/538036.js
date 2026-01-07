@@ -10,25 +10,25 @@ let i = [],
 
 function o() {
   let e = window.navigator.connection;
-  return null == module ? {
-    type: Chunk981631.IWh.UNKNOWN,
-    effectiveSpeed: Chunk981631.IyS.UNKNOWN
+  return null == e ? {
+    type: r.IWh.UNKNOWN,
+    effectiveSpeed: r.IyS.UNKNOWN
   } : {
-    type: null != module.type ? module.type : Chunk981631.IWh.UNKNOWN,
-    effectiveSpeed: module.effectiveType
+    type: null != e.type ? e.type : r.IWh.UNKNOWN,
+    effectiveSpeed: e.effectiveType
   }
 }
 
 function s() {
   if (true === a) return;
   let e = window.navigator.connection;
-  null != module && (a = true, module.addEventListener("change", c))
+  null != e && (a = true, e.addEventListener("change", c))
 }
 
 function l() {
   if (false === a) return;
   let e = window.navigator.connection;
-  null != module && 0 === i.length && null != module && (module.removeEventListener("change", c), a = false)
+  null != e && 0 === i.length && null != e && (e.removeEventListener("change", c), a = false)
 }
 
 function c() {
@@ -66,6 +66,6 @@ let f = {
   getNetworkInformation: () => Promise.resolve(o()),
   isOnline() {
     let e = navigator.onLine;
-    return true === module || module
+    return true === e || e
   }
 }

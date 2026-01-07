@@ -13,7 +13,7 @@ var Chunk186318 = require("./186318.jsx"),
   Chunk388032 = require("./388032.jsx");
 let c = {
     name: "Cancellation Flow",
-    component: () => (0, Chunk54381.jsx)(Chunk186318.k, {}),
+    component: () => (0, r.jsx)(i.k, {}),
     id: "cancellation-flow",
     controls: {}
   },

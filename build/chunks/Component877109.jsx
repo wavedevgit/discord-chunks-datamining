@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 877109, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,15 +16,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk751586 = require("./751586.jsx"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function m(e) {
   return new URLSearchParams(e).get(u.tR.QUEST_ID)
 }
-let m = function(e) {
+let h = function(e) {
   let {
     questId: t
   } = e, {
     questId: n,
-    setQuestId: m
+    setQuestId: h
   } = function(e) {
     let t = (0, l.k6)(),
       [n, r] = i.useState(e),
@@ -32,10 +32,10 @@ let m = function(e) {
         search: a
       } = (0, l.TH)();
     return i.useEffect(() => {
-      let t = h(a);
+      let t = m(a);
       null != t ? r(t) : null != e && r(e)
     }, [e, a]), i.useEffect(() => {
-      if (null == n || h(a) === n) return;
+      if (null == n || m(a) === n) return;
       let e = new URLSearchParams;
       e.set(u.tR.TAB, u.e5.PREVIEW_TOOL), e.set(u.tR.QUEST_ID, n), t.push("".concat(g.Z5c.QUEST_HOME_V2, "?").concat(e.toString()))
     }, [n, t, a]), {
@@ -62,7 +62,7 @@ let m = function(e) {
   return (0, r.jsx)(p.Z, {
     controls: (0, r.jsx)(d.Z, {
       questId: n,
-      setQuestId: m,
+      setQuestId: h,
       quest: b,
       refreshQuest: () => {
         null != n && (0, s.MG)(n)

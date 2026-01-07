@@ -25,7 +25,7 @@ let r = (0, require("./818083.js").B)({
     return r.getCurrentConfig({
       location: "489551_2"
     }, {
-      autoTrackExposure: module
+      autoTrackExposure: e
     })
   },
   a = function() {
@@ -33,6 +33,6 @@ let r = (0, require("./818083.js").B)({
     return r.useExperiment({
       location: "489551_1"
     }, {
-      autoTrackExposure: module
+      autoTrackExposure: e
     })
   }

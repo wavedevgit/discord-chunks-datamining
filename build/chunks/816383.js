@@ -57,7 +57,7 @@ var s = function() {
     }
     this.xs = t, this.ys = n, this.c1s = m, this.c2s = O, this.c3s = v
   }
-  return a(module, [{
+  return a(e, [{
     key: "interpolate",
     value: function(e) {
       var t, n = this.xs,
@@ -79,5 +79,5 @@ var s = function() {
         f = d * d;
       return r[s] + i[s] * d + a[s] * f + o[s] * d * f
     }
-  }]), module
+  }]), e
 }()

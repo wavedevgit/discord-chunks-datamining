@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
 
 function h() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t["Sp2NF+"]),
+    name: x.intl.string(x.t["Sp2NF+"]),
     extensions: ["jpg", "jpeg", "png"]
   }]
 }

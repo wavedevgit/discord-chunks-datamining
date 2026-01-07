@@ -47,9 +47,9 @@ function m(e, t) {
 function p() {
   let {
     mlPipelinesEnabled: e
-  } = (0, Chunk442837.cj)([Chunk435064.Z], () => ({
-    mlPipelinesEnabled: Chunk435064.Z.getSettings().mlPipelinesEnabled
-  })), [t, n] = Chunk473749.useState(() => (true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
+  } = (0, i.cj)([o.Z], () => ({
+    mlPipelinesEnabled: o.Z.getSettings().mlPipelinesEnabled
+  })), [t, n] = r.useState(() => (true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
     emotion: false,
     yell: false,
     wakeWord: false,
@@ -59,7 +59,7 @@ function p() {
     emotion: window.__CLIPS_DEBUG__.emotion,
     yell: window.__CLIPS_DEBUG__.yell,
     whisper: window.__CLIPS_DEBUG__.whisper
-  })), [p, f] = Chunk473749.useState(Chunk894694.x0.KILL), [h, x] = Chunk473749.useState(1), [b, g] = Chunk473749.useState(""), [v, j] = Chunk473749.useState(""), C = Chunk473749.useCallback(e => {
+  })), [p, f] = r.useState(c.x0.KILL), [h, x] = r.useState(1), [b, g] = r.useState(""), [v, j] = r.useState(""), C = r.useCallback(e => {
     let a = !t[e];
     true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
       emotion: false,
@@ -69,77 +69,77 @@ function p() {
     }), window.__CLIPS_DEBUG__[e] = a, n(t => m(u({}, t), {
       [e]: a
     }))
-  }, [exports]);
-  return (0, Chunk54381.jsx)(Chunk481060.Ttm, {
-    children: (0, Chunk54381.jsxs)(Chunk481060.l09, {
-      children: [(0, Chunk54381.jsx)(Chunk481060.C3N, {
+  }, [t]);
+  return (0, a.jsx)(s.Ttm, {
+    children: (0, a.jsxs)(s.l09, {
+      children: [(0, a.jsx)(s.C3N, {
         label: "Send Test Signals",
-        children: (0, Chunk54381.jsxs)(Chunk481060.NIo, {
-          children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
+        children: (0, a.jsxs)(s.NIo, {
+          children: [(0, a.jsx)(s.Button, {
             text: "Manual",
-            onClick: () => Chunk39604.XK({
-              type: Chunk894694.Bs.MANUAL
+            onClick: () => d.XK({
+              type: c.Bs.MANUAL
             })
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          }), (0, a.jsx)(s.Button, {
             text: "Distributed",
-            onClick: () => Chunk39604.XK({
-              type: Chunk894694.Bs.DISTRIBUTED,
+            onClick: () => d.XK({
+              type: c.Bs.DISTRIBUTED,
               remoteTriggerUserId: "123",
               remoteTriggerClipId: "456"
             })
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          }), (0, a.jsx)(s.Button, {
             text: "Phrase: Clip",
-            onClick: () => Chunk39604.XK({
-              type: Chunk894694.Bs.PHRASE,
+            onClick: () => d.XK({
+              type: c.Bs.PHRASE,
               text: "clip"
             })
-          }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          }), (0, a.jsx)(s.Button, {
             text: "Yelling",
-            onClick: () => Chunk39604.XK({
-              type: Chunk894694.Bs.YELLING,
+            onClick: () => d.XK({
+              type: c.Bs.YELLING,
               userId: "123"
             })
           })]
         })
-      }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+      }), (0, a.jsxs)(s.C3N, {
         label: "Game Event Creator",
-        children: [(0, Chunk54381.jsxs)(Chunk481060.NIo, {
-          children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
+        children: [(0, a.jsxs)(s.NIo, {
+          children: [(0, a.jsx)(l.y6, {
             label: "Event Type",
             value: p,
             onChange: e => f(e),
             options: [{
               label: "Kill",
-              value: Chunk894694.x0.KILL
+              value: c.x0.KILL
             }, {
               label: "Multikill",
-              value: Chunk894694.x0.MULTIKILL
+              value: c.x0.MULTIKILL
             }, {
               label: "Death",
-              value: Chunk894694.x0.DEATH
+              value: c.x0.DEATH
             }, {
               label: "Assist",
-              value: Chunk894694.x0.ASSIST
+              value: c.x0.ASSIST
             }, {
               label: "Item",
-              value: Chunk894694.x0.ITEM
+              value: c.x0.ITEM
             }, {
               label: "Victory",
-              value: Chunk894694.x0.VICTORY
+              value: c.x0.VICTORY
             }, {
               label: "Defeat",
-              value: Chunk894694.x0.DEFEAT
+              value: c.x0.DEFEAT
             }, {
               label: "Level Up",
-              value: Chunk894694.x0.LEVEL_UP
+              value: c.x0.LEVEL_UP
             }, {
               label: "Treasure",
-              value: Chunk894694.x0.TREASURE
+              value: c.x0.TREASURE
             }, {
               label: "Objective Kill",
-              value: Chunk894694.x0.OBJECTIVE_KILL
+              value: c.x0.OBJECTIVE_KILL
             }]
-          }), (0, Chunk54381.jsx)(Chunk199849.y6, {
+          }), (0, a.jsx)(l.y6, {
             label: "Importance",
             value: h,
             onChange: x,
@@ -154,21 +154,21 @@ function p() {
               value: 1
             }]
           })]
-        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
+        }), (0, a.jsx)(s.oil, {
           label: "Title (optional)",
           value: b,
           onChange: g,
           placeholder: "e.g., First Blood"
-        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
+        }), (0, a.jsx)(s.oil, {
           label: "Description (optional)",
           value: v,
           onChange: j,
           placeholder: "e.g., Killed enemy ADC in bot lane"
-        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        }), (0, a.jsx)(s.Button, {
           text: "Create Game Event",
           onClick: () => {
-            Chunk39604.XK({
-              type: Chunk894694.Bs.GAME_EVENT,
+            d.XK({
+              type: c.Bs.GAME_EVENT,
               eventType: p,
               importance: h,
               title: b,
@@ -176,54 +176,54 @@ function p() {
             })
           }
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+      }), (0, a.jsx)(s.izJ, {}), (0, a.jsxs)(s.C3N, {
         label: "ML Pipelines Enabled",
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
+        children: [(0, a.jsx)(s.rsf, {
           label: "Emotion Classifier",
-          checked: module.emotionClassifier,
+          checked: e.emotionClassifier,
           onChange: t => d.So(m(u({}, e), {
             emotionClassifier: t
           }))
-        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+        }), (0, a.jsx)(s.rsf, {
           label: "Wake Word Detector",
-          checked: module.wakeWordDetector,
+          checked: e.wakeWordDetector,
           onChange: t => d.So(m(u({}, e), {
             wakeWordDetector: t
           }))
-        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+        }), (0, a.jsx)(s.rsf, {
           label: "Yell Detector",
-          checked: module.yellDetector,
+          checked: e.yellDetector,
           onChange: t => d.So(m(u({}, e), {
             yellDetector: t
           }))
-        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+        }), (0, a.jsx)(s.rsf, {
           label: "Whisper Transcription",
-          checked: module.whisperTranscription,
+          checked: e.whisperTranscription,
           onChange: t => d.So(m(u({}, e), {
             whisperTranscription: t
           }))
         })]
-      }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
+      }), (0, a.jsxs)(s.C3N, {
         label: "ML Debug Logging (window.__CLIPS_DEBUG__)",
-        children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
+        children: [(0, a.jsx)(s.rsf, {
           label: "Wake Word Debug",
           description: "Log wake word detection events to console",
-          checked: exports.wakeWord,
+          checked: t.wakeWord,
           onChange: () => C("wakeWord")
-        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+        }), (0, a.jsx)(s.rsf, {
           label: "Emotion Debug",
           description: "Log emotion classification events to console",
-          checked: exports.emotion,
+          checked: t.emotion,
           onChange: () => C("emotion")
-        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+        }), (0, a.jsx)(s.rsf, {
           label: "Yell Debug",
           description: "Show yell classification events to console",
-          checked: exports.yell,
+          checked: t.yell,
           onChange: () => C("yell")
-        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
+        }), (0, a.jsx)(s.rsf, {
           label: "Whisper Debug",
           description: "Log whisper transcription events to console",
-          checked: exports.whisper,
+          checked: t.whisper,
           onChange: () => C("whisper")
         })]
       })]

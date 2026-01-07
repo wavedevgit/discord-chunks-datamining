@@ -48,33 +48,33 @@ let h = window.matchMedia("(prefers-reduced-motion: reduce)"),
   v = 5;
 
 function S() {
-  let e = Chunk594174.default.getCurrentUser();
-  return null == module || Date.now() - module.createdAt < 864e5
+  let e = s.default.getCurrentUser();
+  return null == e || Date.now() - e.createdAt < 864e5
 }
 
 function I() {
-  return "windows" === (0, Chunk358085.getOS)()
+  return "windows" === (0, c.getOS)()
 }
 let T = {
   initBasic() {
     h.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(h), b.addListener(this.handleSystemColorPreferencesChanged), y.addListener(this.handleSystemColorPreferencesChanged), O.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), g.addListener(this.handleSystemPrefersContrastChanged), E.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
   },
   init() {
-    this.initBasic(), Chunk570140.Z.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
-      Chunk626135.default.track(Chunk981631.rMx.LOCAL_SETTINGS_UPDATED, {
-        colorblind_enabled: Chunk607070.Z.colorblindMode
+    this.initBasic(), a.Z.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
+      l.default.track(f.rMx.LOCAL_SETTINGS_UPDATED, {
+        colorblind_enabled: d.Z.colorblindMode
       })
-    }), Chunk570140.Z.subscribe("ACCESSIBILITY_SET_SATURATION", e => {
+    }), a.Z.subscribe("ACCESSIBILITY_SET_SATURATION", e => {
       l.default.track(f.rMx.LOCAL_SETTINGS_UPDATED, {
         saturation_level: e.saturation
       })
     })
   },
   maybeShowKeyboardNavigationExplainerModal() {
-    v = Math.max(v - 1, 0), S() || Chunk607070.Z.keyboardNavigationExplainerModalSeen || 0 !== v || (0, Chunk481060.ZDy)(async () => {
+    v = Math.max(v - 1, 0), S() || d.Z.keyboardNavigationExplainerModalSeen || 0 !== v || (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("73872").then(require.bind(require, 461964));
+      } = await n.e("73872").then(n.bind(n, 461964));
       return t => (0, r.jsx)(e, m({}, t))
     })
   },
@@ -84,17 +84,17 @@ let T = {
     })
   },
   handleSystemColorPreferencesChanged() {
-    let e = Chunk874893.zd.NO_PREFERENCE;
-    b.matches ? e = Chunk874893.zd.DARK : y.matches && (e = Chunk874893.zd.LIGHT);
-    let t = (!Chunk358085.isPlatformEmbedded || I()) && O.matches ? "active" : "none";
-    Chunk570140.Z.wait(() => {
-      Chunk781391.Q_(module), Chunk857595.Ej(exports)
+    let e = p.zd.NO_PREFERENCE;
+    b.matches ? e = p.zd.DARK : y.matches && (e = p.zd.LIGHT);
+    let t = (!c.isPlatformEmbedded || I()) && O.matches ? "active" : "none";
+    a.Z.wait(() => {
+      o.Q_(e), u.Ej(t)
     })
   },
   handleSystemPrefersContrastChanged() {
     let e = "no-preference";
-    g.matches ? e = "more" : E.matches && (e = "less"), Chunk570140.Z.wait(() => {
-      Chunk857595.TX(module)
+    g.matches ? e = "more" : E.matches && (e = "less"), a.Z.wait(() => {
+      u.TX(e)
     })
   }
 }

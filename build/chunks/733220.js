@@ -56,7 +56,7 @@ var p = function() {
           }
         }),
         n = function() {};
-      return window.addEventListener("testPassiveEventSupport", require, exports), window.removeEventListener("testPassiveEventSupport", require, exports), module
+      return window.addEventListener("testPassiveEventSupport", n, t), window.removeEventListener("testPassiveEventSupport", n, t), e
     }
   },
   _ = function(e) {

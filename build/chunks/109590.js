@@ -38,7 +38,7 @@ class h {
     return !i().isEmpty(this._set)
   }
   next() {
-    return Chunk709054.default.keys(this._set)[0]
+    return c.default.keys(this._set)[0]
   }
   constructor(e) {
     p(this, "_set", true), p(this, "_defaultValueFunc", true), this._set = {}, this._defaultValueFunc = e

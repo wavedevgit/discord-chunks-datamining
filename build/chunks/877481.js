@@ -65,9 +65,9 @@ let y = new Chunk710845.Z("Games"),
   C = 36e5;
 
 function A() {
-  return null != S ? Promise.resolve(S) : (0, Chunk358085.isDesktop)() ? Chunk998502.ZP.ensureModule("discord_game_utils").then(() => {
-    let e = Chunk998502.ZP.getGameUtils();
-    return null != module && null != module.findLaunchable ? (S = module, module) : Promise.reject(Error("game utils not found"))
+  return null != S ? Promise.resolve(S) : (0, f.isDesktop)() ? _.ZP.ensureModule("discord_game_utils").then(() => {
+    let e = _.ZP.getGameUtils();
+    return null != e && null != e.findLaunchable ? (S = e, e) : Promise.reject(Error("game utils not found"))
   }) : Promise.reject(Error("not desktop client"))
 }
 

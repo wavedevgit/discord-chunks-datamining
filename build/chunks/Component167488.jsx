@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk455411 = require("./455411.js");
 
 function c() {
-  return (0, Chunk54381.jsxs)(Chunk481060.zJl, {
-    className: Chunk455411.panel,
-    children: [(0, Chunk54381.jsx)(Chunk687658.Z, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk603673.Z, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk713388.Z, {})]
+  return (0, a.jsxs)(r.zJl, {
+    className: o.panel,
+    children: [(0, a.jsx)(l.Z, {}), (0, a.jsx)(r.izJ, {}), (0, a.jsx)(i.Z, {}), (0, a.jsx)(r.izJ, {}), (0, a.jsx)(s.Z, {})]
   })
 }

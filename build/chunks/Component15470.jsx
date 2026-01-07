@@ -97,7 +97,7 @@ class _ extends Chunk473749.PureComponent {
         height: e
       } = this._container.getBoundingClientRect();
       this.setState({
-        collapsable: module > 400
+        collapsable: e > 400
       })
     }
   }
@@ -112,33 +112,33 @@ class _ extends Chunk473749.PureComponent {
       collapsed: s,
       collapsable: o
     } = this.state;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk473749,
-      children: [(0, Chunk54381.jsx)("div", {
+    return (0, a.jsxs)("div", {
+      className: r,
+      children: [(0, a.jsx)("div", {
         className: l()({
-          [Chunk697110.collapsed]: o && Chunk159635
+          [h.collapsed]: o && s
         }),
-        children: (0, Chunk54381.jsxs)("div", {
+        children: (0, a.jsxs)("div", {
           ref: this.setContentContainerRef,
-          children: [(0, Chunk54381.jsx)("div", {
-            className: Chunk697110.blurb,
-            children: require
-          }), (0, Chunk54381.jsx)(Chunk241209.Z, {
-            className: Chunk697110.description,
+          children: [(0, a.jsx)("div", {
+            className: h.blurb,
+            children: n
+          }), (0, a.jsx)(u.Z, {
+            className: h.description,
             parser: C,
             output: j,
             state: {
-              assets: Chunk120356,
-              applicationId: module
+              assets: i,
+              applicationId: e
             },
-            children: exports
+            children: t
           })]
         })
-      }), o ? (0, Chunk54381.jsx)(Chunk755721.zx, {
-        className: Chunk697110.toggleCollapseButton,
+      }), o ? (0, a.jsx)(c.zx, {
+        className: h.toggleCollapseButton,
         onClick: this.handleToggleCollapse,
-        color: Chunk755721.zx.Colors.PRIMARY,
-        children: Chunk159635 ? Chunk388032.intl.string(Chunk388032.t.DxcOXA) : Chunk388032.intl.string(Chunk388032.t.rD6EaA)
+        color: c.zx.Colors.PRIMARY,
+        children: s ? m.intl.string(m.t.DxcOXA) : m.intl.string(m.t.rD6EaA)
       }) : null]
     })
   }

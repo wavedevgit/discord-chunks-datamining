@@ -12,8 +12,8 @@ var Chunk846027 = require("./846027.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let S = (0, Chunk509613.UO)(Chunk313789.n.VOICE_PUSH_TO_TALK_RELEASE_DELAY_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.GCNMM8),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
+  useTitle: () => T.intl.string(T.t.GCNMM8),
+  useSearchTerms: () => [T.intl.string(T.t["pS+K2L"]), T.intl.string(T.t.nuFtHH)],
   setValue: function(t) {
     i.Z.setMode(o.pM4.PUSH_TO_TALK, {
       delay: t
@@ -24,8 +24,8 @@ let S = (0, Chunk509613.UO)(Chunk313789.n.VOICE_PUSH_TO_TALK_RELEASE_DELAY_SETTI
   getInitialValue: function() {
     let {
       delay: t
-    } = Chunk131951.Z.getModeOptions();
-    return module
+    } = s.Z.getModeOptions();
+    return t
   },
   onValueRender: Chunk325808.cO,
   usePredicate: Chunk595373.J

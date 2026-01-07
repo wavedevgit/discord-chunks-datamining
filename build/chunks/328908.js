@@ -145,7 +145,7 @@ function O(e) {
 }
 
 function v() {
-  return (0, Chunk731965.j)(() => {
+  return (0, i.j)(() => {
     f.setState(() => ({
       messageReactionConfetti: true
     }))

@@ -15,19 +15,19 @@ var Chunk54381 = require("./54381.js"),
 function u() {
   let {
     type: e
-  } = (0, Chunk828700.UO)(), s = (0, Chunk656649.vJ)(module);
-  if (null == exports) return null;
-  let n = Chunk726542.Z.get(exports);
-  return (0, Chunk54381.jsxs)(Chunk656649.UV, {
-    platformType: exports,
-    children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk58558.message,
-      children: Chunk388032.intl.format(Chunk388032.t.RzEB5v, {
-        name: require.name
+  } = (0, d.UO)(), s = (0, t.vJ)(e);
+  if (null == s) return null;
+  let n = i.Z.get(s);
+  return (0, o.jsxs)(t.UV, {
+    platformType: s,
+    children: [(0, o.jsx)("div", {
+      className: r.message,
+      children: c.intl.format(c.t.RzEB5v, {
+        name: n.name
       })
-    }), (0, Chunk54381.jsx)("div", {
-      className: l()(Chunk58558.message, Chunk58558.details),
-      children: Chunk388032.intl.string(Chunk388032.t["Q+lNwZ"])
+    }), (0, o.jsx)("div", {
+      className: l()(r.message, r.details),
+      children: c.intl.string(c.t["Q+lNwZ"])
     })]
   })
 }

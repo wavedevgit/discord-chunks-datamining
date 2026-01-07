@@ -57,9 +57,9 @@ i.prototype = {
   clone: function() {
     var e = this,
       t = new i;
-    return Object.keys(module.nodes).forEach(function(n) {
+    return Object.keys(e.nodes).forEach(function(n) {
       t.nodes[n] = e.nodes[n], t.outgoingEdges[n] = e.outgoingEdges[n].slice(0), t.incomingEdges[n] = e.incomingEdges[n].slice(0)
-    }), exports
+    }), t
   },
   dependenciesOf: function(e, t) {
     if (this.hasNode(e)) {

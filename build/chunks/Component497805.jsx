@@ -103,16 +103,16 @@ async function E(e) {
 
 function b() {
   if (0 !== h.size) {
-    for (let e of h)(0, Chunk481060.Mr3)(module);
-    h.clear(), Chunk592183.Z.clearPendingWidgets()
+    for (let e of h)(0, i.Mr3)(e);
+    h.clear(), c.Z.clearPendingWidgets()
   }
 }
 class y extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("USER_PROFILE_MODAL_OPEN", E), Chunk570140.Z.subscribe("USER_PROFILE_MODAL_CLOSE", b)
+    a.Z.subscribe("USER_PROFILE_MODAL_OPEN", E), a.Z.subscribe("USER_PROFILE_MODAL_CLOSE", b)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", E), Chunk570140.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", b)
+    a.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", E), a.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", b)
   }
 }
 let O = new y

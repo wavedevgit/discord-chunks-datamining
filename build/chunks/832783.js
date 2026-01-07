@@ -11,8 +11,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.DESKTOP_NOTIFICATIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["/0WCll"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.wF9ih3),
-  useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDesktopType()) !== Chunk981631.qrD.NEVER,
+  useTitle: () => o.intl.string(o.t["/0WCll"]),
+  useSubtitle: () => o.intl.string(o.t.wF9ih3),
+  useValue: () => (0, i.e7)([u.Z], () => u.Z.getDesktopType()) !== a.qrD.NEVER,
   setValue: t => l.default.setDesktopType(t ? a.qrD.ALL : a.qrD.NEVER)
 })

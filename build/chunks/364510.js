@@ -73,24 +73,24 @@ c.get = function(e) {
   }
   return null
 }, c.to.hex = function() {
-  var e = Chunk405458(arguments);
-  return "#" + l(module[0]) + l(module[1]) + l(module[2]) + (module[3] < 1 ? l(Math.round(255 * module[3])) : "")
+  var e = a(arguments);
+  return "#" + l(e[0]) + l(e[1]) + l(e[2]) + (e[3] < 1 ? l(Math.round(255 * e[3])) : "")
 }, c.to.rgb = function() {
-  var e = Chunk405458(arguments);
-  return module.length < 4 || 1 === module[3] ? "rgb(" + Math.round(module[0]) + ", " + Math.round(module[1]) + ", " + Math.round(module[2]) + ")" : "rgba(" + Math.round(module[0]) + ", " + Math.round(module[1]) + ", " + Math.round(module[2]) + ", " + module[3] + ")"
+  var e = a(arguments);
+  return e.length < 4 || 1 === e[3] ? "rgb(" + Math.round(e[0]) + ", " + Math.round(e[1]) + ", " + Math.round(e[2]) + ")" : "rgba(" + Math.round(e[0]) + ", " + Math.round(e[1]) + ", " + Math.round(e[2]) + ", " + e[3] + ")"
 }, c.to.rgb.percent = function() {
-  var e = Chunk405458(arguments),
-    t = Math.round(module[0] / 255 * 100),
-    r = Math.round(module[1] / 255 * 100),
-    n = Math.round(module[2] / 255 * 100);
-  return module.length < 4 || 1 === module[3] ? "rgb(" + exports + "%, " + require + "%, " + Chunk33608 + "%)" : "rgba(" + exports + "%, " + require + "%, " + Chunk33608 + "%, " + module[3] + ")"
+  var e = a(arguments),
+    t = Math.round(e[0] / 255 * 100),
+    r = Math.round(e[1] / 255 * 100),
+    n = Math.round(e[2] / 255 * 100);
+  return e.length < 4 || 1 === e[3] ? "rgb(" + t + "%, " + r + "%, " + n + "%)" : "rgba(" + t + "%, " + r + "%, " + n + "%, " + e[3] + ")"
 }, c.to.hsl = function() {
-  var e = Chunk405458(arguments);
-  return module.length < 4 || 1 === module[3] ? "hsl(" + module[0] + ", " + module[1] + "%, " + module[2] + "%)" : "hsla(" + module[0] + ", " + module[1] + "%, " + module[2] + "%, " + module[3] + ")"
+  var e = a(arguments);
+  return e.length < 4 || 1 === e[3] ? "hsl(" + e[0] + ", " + e[1] + "%, " + e[2] + "%)" : "hsla(" + e[0] + ", " + e[1] + "%, " + e[2] + "%, " + e[3] + ")"
 }, c.to.hwb = function() {
-  var e = Chunk405458(arguments),
+  var e = a(arguments),
     t = "";
-  return module.length >= 4 && 1 !== module[3] && (t = ", " + module[3]), "hwb(" + module[0] + ", " + module[1] + "%, " + module[2] + "%" + exports + ")"
+  return e.length >= 4 && 1 !== e[3] && (t = ", " + e[3]), "hwb(" + e[0] + ", " + e[1] + "%, " + e[2] + "%" + t + ")"
 }, c.to.keyword = function(e) {
   return s[e.slice(0, 3)]
 }

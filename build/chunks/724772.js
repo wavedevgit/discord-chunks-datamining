@@ -45,7 +45,7 @@ var a = ["canDrag", "beginDrag", "isDragging", "endDrag"],
       }, {
         key: "endDrag",
         value: function() {
-          this.props && this.spec.endDrag && this.spec.endDrag(this.props, this.monitor, (0, Chunk675082.Al)(this.ref))
+          this.props && this.spec.endDrag && this.spec.endDrag(this.props, this.monitor, (0, o.Al)(this.ref))
         }
       }],
       function(e, t) {
@@ -53,7 +53,7 @@ var a = ["canDrag", "beginDrag", "isDragging", "endDrag"],
           var n = t[r];
           n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
         }
-      }(exports.prototype, module), exports
+      }(t.prototype, e), t
   }();
 
 function u(e) {

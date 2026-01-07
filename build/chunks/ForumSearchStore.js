@@ -143,7 +143,7 @@ function O() {
 }
 class v extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z)
+    this.waitFor(o.Z)
   }
   getSearchQuery(e) {
     let t = d[e];

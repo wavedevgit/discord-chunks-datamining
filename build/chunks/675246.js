@@ -73,7 +73,7 @@ for (var a = 0, o = ["use", "on", "once", "set", "query", "type", "accept", "aut
   i.prototype[module] = function() {
     for (var t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
     return this._defaults.push({
-      fn: module,
+      fn: e,
       args: n
     }), this
   }

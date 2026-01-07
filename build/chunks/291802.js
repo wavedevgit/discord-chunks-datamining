@@ -14,15 +14,15 @@ var Chunk168107 = require("./168107.jsx"),
   Chunk682578 = require("./682578.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_AGE_RESTRICTED_DM_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.XahVjj),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.R9fXyS),
+  useTitle: () => c.intl.string(c.t.XahVjj),
+  useSubtitle: () => c.intl.string(c.t.R9fXyS),
   useValue: Chunk519207.Xg,
   useDisabled: () => {
     var t;
-    let e = null == (t = (0, Chunk682578.J)()) || module,
-      n = (0, Chunk622822.xi)(),
-      i = (0, Chunk81643.Jm)();
-    return (!require || !!Chunk168107) && !exports
+    let e = null == (t = (0, S.J)()) || t,
+      n = (0, u.xi)(),
+      i = (0, s.Jm)();
+    return (!n || !!i) && !e
   },
   setValue: t => {
     if ((0, u.Uw)() && t) return void i.Z.showAgeVerificationGetStartedModal({

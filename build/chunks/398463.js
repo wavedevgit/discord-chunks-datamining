@@ -30,7 +30,7 @@ let i = 1e3 / 60 * 3,
 class d {
   timeRemaining() {
     let e = performance.now() - this._startMs;
-    return Math.max(0, this._deadlineMs - module)
+    return Math.max(0, this._deadlineMs - e)
   }
   get didTimeout() {
     return this._firedDueToMaxTimeout

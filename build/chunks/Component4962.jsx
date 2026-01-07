@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 4962, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./415506.js");
 var r, Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk745476 = require("./745476.js"),
   f = ((r = f || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
 let g = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
-    animate: Chunk451478.Z.isFocused()
+    animate: u.Z.isFocused()
   }))(e => {
     let {
       user: t,
@@ -40,7 +40,7 @@ let g = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
       })]
     })
   }),
-  h = e => {
+  m = e => {
     let {
       data: t,
       className: n
@@ -64,5 +64,5 @@ let g = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
     }
     throw Error("Unknown type")
   };
-h.Types = f;
-let m = h
+m.Types = f;
+let h = m

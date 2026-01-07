@@ -28,7 +28,7 @@ function d(e) {
 }
 class f extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk77498.Z, Chunk594190.ZP)
+    this.waitFor(l.Z, s.ZP)
   }
   getGameForPID(e) {
     if (__OVERLAY__ || null == e) return null;

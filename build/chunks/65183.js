@@ -232,7 +232,7 @@
   }
 
   function ep() {
-    return module || (e = new el([]))
+    return e || (e = new el([]))
   }
 
   function e_(e) {
@@ -937,13 +937,13 @@
       var n, r = t.node,
         i = t.index++;
       if (r.entry) {
-        if (0 === i) return e8(module, r.entry)
+        if (0 === i) return e8(e, r.entry)
       } else if (r.entries) {
-        if (i <= (n = r.entries.length - 1)) return e8(module, r.entries[this._reverse ? n - i : i])
+        if (i <= (n = r.entries.length - 1)) return e8(e, r.entries[this._reverse ? n - i : i])
       } else if (i <= (n = r.nodes.length - 1)) {
         var a = r.nodes[this._reverse ? n - i : i];
         if (a) {
-          if (a.entry) return e8(module, a.entry);
+          if (a.entry) return e8(e, a.entry);
           t = this._stack = e6(a, t)
         }
         continue
@@ -1715,7 +1715,7 @@
     var e = this,
       t = tW(this, true);
     return this._useKeys || (t.valueSeq = function() {
-      return module._iter.toSeq().reverse()
+      return e._iter.toSeq().reverse()
     }), t
   }, tZ.prototype.map = function(e, t) {
     var n = this,
@@ -1802,7 +1802,7 @@
   }, na.prototype.clear = function() {
     if (this.__ownerID) return this._map && this._map.clear(), this;
     var e = this.constructor;
-    return module._empty || (module._empty = ns(this, e9()))
+    return e._empty || (e._empty = ns(this, e9()))
   }, na.prototype.set = function(e, t) {
     if (!this.has(e)) throw Error('Cannot set unknown key "' + e + '" on ' + nl(this));
     var n = this._map && this._map.set(e, t);
@@ -1884,17 +1884,17 @@
     return nm(this, this._map.clear())
   }, nd.prototype.union = function() {
     var e = u.call(arguments, 0);
-    return 0 === (e = module.filter(function(e) {
+    return 0 === (e = e.filter(function(e) {
       return 0 !== e.size
-    })).length ? this : 0 !== this.size || this.__ownerID || 1 !== module.length ? this.withMutations(function(t) {
+    })).length ? this : 0 !== this.size || this.__ownerID || 1 !== e.length ? this.withMutations(function(t) {
       for (var n = 0; n < e.length; n++) m(e[n]).forEach(function(e) {
         return t.add(e)
       })
-    }) : this.constructor(module[0])
+    }) : this.constructor(e[0])
   }, nd.prototype.intersect = function() {
     var e = u.call(arguments, 0);
-    if (0 === module.length) return this;
-    e = module.map(function(e) {
+    if (0 === e.length) return this;
+    e = e.map(function(e) {
       return m(e)
     });
     var t = this;
@@ -1907,8 +1907,8 @@
     })
   }, nd.prototype.subtract = function() {
     var e = u.call(arguments, 0);
-    if (0 === module.length) return this;
-    e = module.map(function(e) {
+    if (0 === e.length) return this;
+    e = e.map(function(e) {
       return m(e)
     });
     var t = this;
@@ -2013,7 +2013,7 @@
       value: arguments[n],
       next: t
     };
-    return this.__ownerID ? (this.size = module, this._head = t, this.__hash = true, this.__altered = true, this) : nA(module, t)
+    return this.__ownerID ? (this.size = e, this._head = t, this.__hash = true, this.__altered = true, this) : nA(e, t)
   }, nS.prototype.pushAll = function(e) {
     if (0 === (e = _(e)).size) return this;
     eq(e.size);
@@ -2083,7 +2083,7 @@
       var e = Array(this.size || 0);
       return this.valueSeq().__iterate(function(t, n) {
         e[n] = t
-      }), module
+      }), e
     },
     toIndexedSeq: function() {
       return new tF(this)
@@ -2109,7 +2109,7 @@
       var e = {};
       return this.__iterate(function(t, n) {
         e[n] = t
-      }), module
+      }), e
     },
     toOrderedMap: function() {
       return tj(this.toKeyedSeq())
@@ -2140,7 +2140,7 @@
     },
     concat: function() {
       var e = u.call(arguments, 0);
-      return t6(this, t$(this, module))
+      return t6(this, t$(this, e))
     },
     includes: function(e) {
       return this.some(function(t) {
@@ -2234,10 +2234,10 @@
     },
     entrySeq: function() {
       var e = this;
-      if (module._cache) return new el(module._cache);
-      var t = module.toSeq().map(nx).toIndexedSeq();
+      if (e._cache) return new el(e._cache);
+      var t = e.toSeq().map(nx).toIndexedSeq();
       return t.fromEntrySeq = function() {
-        return module.toSeq()
+        return e.toSeq()
       }, t
     },
     filterNot: function(e, t) {
@@ -2357,7 +2357,7 @@
               } catch (t) {
                 e = t.stack
               }
-              if (false === module.indexOf("_wrapObject")) return console && console.warn && console.warn("iterable.length has been deprecated, use iterable.size or iterable.count(). This warning will become a silent error in a future version. " + module), this.size
+              if (false === e.indexOf("_wrapObject")) return console && console.warn && console.warn("iterable.length has been deprecated, use iterable.size or iterable.count(). This warning will become a silent error in a future version. " + e), this.size
             }
           }
         })
@@ -2511,9 +2511,9 @@
     },
     interleave: function() {
       var e = [this].concat(j(arguments)),
-        t = t8(this.toSeq(), ea.of, module),
+        t = t8(this.toSeq(), ea.of, e),
         n = t.flatten(true);
-      return t.size && (n.size = t.size * module.length), t6(this, n)
+      return t.size && (n.size = t.size * e.length), t6(this, n)
     },
     last: function() {
       return this.get(false)
@@ -2523,7 +2523,7 @@
     },
     zip: function() {
       var e = [this].concat(j(arguments));
-      return t6(this, t8(this, nk, module))
+      return t6(this, t8(this, nk, e))
     },
     zipWith: function(e) {
       var t = j(arguments);

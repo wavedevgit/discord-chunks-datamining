@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk233685 = require("./233685.jsx");
 
 function s() {
-  return (0, Chunk54381.jsxs)(Chunk481060.l09, {
-    children: [(0, Chunk54381.jsx)(Chunk491758.Z, {}), (0, Chunk54381.jsx)(Chunk233685.Z, {})]
+  return (0, r.jsxs)(i.l09, {
+    children: [(0, r.jsx)(a.Z, {}), (0, r.jsx)(o.Z, {})]
   })
 }

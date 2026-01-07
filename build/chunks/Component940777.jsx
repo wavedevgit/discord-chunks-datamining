@@ -61,26 +61,26 @@ let A = {
 
 function R() {
   var e, t;
-  let l = (0, Chunk91192.Ie)("favorites"),
+  let l = (0, o.Ie)("favorites"),
     {
       favoriteAdded: R,
       clearFavoriteAdded: D
-    } = (0, Chunk593214.up)(),
-    [M, L] = Chunk473749.useState(false),
+    } = (0, S.up)(),
+    [M, L] = i.useState(false),
     {
       favoriteServerMuted: k,
       favoriteChannels: G
-    } = (0, Chunk442837.cj)([Chunk853856.Z], () => ({
-      favoriteChannels: Chunk853856.Z.getFavoriteChannels(),
-      favoriteServerMuted: Chunk853856.Z.favoriteServerMuted
+    } = (0, s.cj)([E.Z], () => ({
+      favoriteChannels: E.Z.getFavoriteChannels(),
+      favoriteServerMuted: E.Z.favoriteServerMuted
     })),
-    U = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(Chunk981631.I_8)),
-    B = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(U)),
-    F = (0, Chunk905423.Z)(e => e.guildId) === Chunk981631.I_8,
+    U = (0, s.e7)([j.Z], () => j.Z.getChannelId(N.I_8)),
+    B = (0, s.e7)([v.Z], () => v.Z.getChannel(U)),
+    F = (0, y.Z)(e => e.guildId) === N.I_8,
     {
       badge: V,
       unread: H
-    } = (0, Chunk919755.Z)(G),
+    } = (0, _.Z)(G),
     W = function(e) {
       let t = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
@@ -112,38 +112,38 @@ function R() {
         activity: g
       })
     }(G),
-    z = V > 0 ? (0, Chunk593364.N)(V) : null,
-    K = Chunk473749.useCallback(() => {
+    z = V > 0 ? (0, m.N)(V) : null,
+    K = i.useCallback(() => {
       D()
     }, [D]);
-  return (0, Chunk54381.jsxs)(Chunk682662.H, {
-    children: [(0, Chunk54381.jsx)(Chunk276952.Z, {
+  return (0, r.jsxs)(g.H, {
+    children: [(0, r.jsx)(p.Z, {
       selected: F,
       hovered: M,
       unread: H && !k,
-      className: Chunk547355.pill
-    }), (0, Chunk54381.jsx)(Chunk603274.Z, {
+      className: w.pill
+    }), (0, r.jsx)(P.Z, {
       onShow: K,
-      children: (0, Chunk54381.jsx)(Chunk110977.S, {
-        children: (0, Chunk54381.jsx)(Chunk481060.aRk, {
+      children: (0, r.jsx)(I.S, {
+        children: (0, r.jsx)(c.aRk, {
           selected: true,
           upperBadge: W,
           lowerBadge: z,
-          children: (0, Chunk54381.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
-            ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRss"], {
-              guildName: Chunk388032.intl.string(Chunk388032.t.wMWyci),
+          children: (0, r.jsx)(c.LYs, (e = T({}, l), t = t = {
+            ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRss"], {
+              guildName: Z.intl.string(Z.t.wMWyci),
               mentions: V
             }),
             "aria-selected": F,
             to: {
-              pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, U),
+              pathname: N.Z5c.CHANNEL(N.I_8, U),
               state: A
             },
             selected: F || M,
             onMouseEnter: () => L(true),
             onMouseLeave: () => L(false),
             onMouseDown: function() {
-              null != B && Chunk493683.Z.preload(B.guild_id, B.id)
+              null != B && u.Z.preload(B.guild_id, B.id)
             },
             onContextMenu: function(e) {
               (0, d.jW)(e, async () => {
@@ -153,28 +153,28 @@ function R() {
                 return t => (0, r.jsx)(e, T({}, t))
               })
             },
-            children: (0, Chunk54381.jsx)("div", {
-              className: a()(Chunk547355.ring, {
-                [Chunk547355.ringActive]: R
+            children: (0, r.jsx)("div", {
+              className: a()(w.ring, {
+                [w.ringActive]: R
               }),
-              children: (0, Chunk54381.jsx)(Chunk481060.r7p, {
+              children: (0, r.jsx)(c.r7p, {
                 size: "custom",
                 color: "currentColor",
-                className: Chunk547355.favoriteIcon,
+                className: w.favoriteIcon,
                 width: 20,
                 height: 20
               })
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(exports)).forEach(function(n) {
+          })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-          }), module))
+          }), e))
         })
       })
     })]

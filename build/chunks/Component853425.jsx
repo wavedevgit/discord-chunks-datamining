@@ -21,7 +21,7 @@ async function f(e) {
   window.location.reload(true)
 }
 async function p() {
-  await (0, Chunk386506.bF)(), window.location.reload(true)
+  await (0, o.bF)(), window.location.reload(true)
 }
 let _ = Chunk473749.memo(function(e) {
   let {

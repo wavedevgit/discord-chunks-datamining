@@ -52,13 +52,13 @@ class d {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
       t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
-    this.listeningUsers.clear(), this.listening.reset(), this.speaking.reset(), this.participation.reset(), this.muted.reset(), this.deafened.reset(), this.connected.reset(), this.noiseCancellation.reset(), this.voiceFilterSpeaking.clear(), this.timesUntilSpeakingDurationMilestonesMs.clear(), this.speakingMinimumChunks.clear(), this.speakingMinimumChunkCounts.clear(), this.speechEventCount = 0, this.connected.start(), this.connection.on(Chunk445686.S.Speaking, (e, t, n) => {
+    this.listeningUsers.clear(), this.listening.reset(), this.speaking.reset(), this.participation.reset(), this.muted.reset(), this.deafened.reset(), this.connected.reset(), this.noiseCancellation.reset(), this.voiceFilterSpeaking.clear(), this.timesUntilSpeakingDurationMilestonesMs.clear(), this.speakingMinimumChunks.clear(), this.speakingMinimumChunkCounts.clear(), this.speechEventCount = 0, this.connected.start(), this.connection.on(r.S.Speaking, (e, t, n) => {
       this.userId === e ? this.onSpeaking(0 !== t) : this.onListening(0 !== t, e)
-    }), this.onMuted(module), this.onDeafened(exports), this.connection.on(Chunk445686.S.Mute, e => {
+    }), this.onMuted(e), this.onDeafened(t), this.connection.on(r.S.Mute, e => {
       this.onMuted(e)
-    }), this.connection.on(Chunk445686.S.Deafen, e => {
+    }), this.connection.on(r.S.Deafen, e => {
       this.onDeafened(e)
-    }), this.onVoiceFilterChanged(require), this.connection.on(Chunk445686.S.VoiceFilterChanged, e => {
+    }), this.onVoiceFilterChanged(n), this.connection.on(r.S.VoiceFilterChanged, e => {
       this.onVoiceFilterChanged(e)
     })
   }
@@ -102,8 +102,8 @@ class d {
   }
   addSpeechChunk() {
     let e = this.speaking.lastStartTime;
-    if (null == module) return;
-    let t = this.timestampProducer.now() - module;
+    if (null == e) return;
+    let t = this.timestampProducer.now() - e;
     u.filter(e => t >= e).forEach(e => {
       var n, r;
       let i = null != (n = this.speakingMinimumChunks.get(e)) ? n : 0;
@@ -120,7 +120,7 @@ class d {
     let e = this.connected.lastStartTime,
       t = this.speaking.lastStartTime,
       n = this.speaking.lastElapsed;
-    this.speaking.stop(), this.listening.stop(), this.participation.stop(), this.connected.stop(), this.muted.stop(), this.noiseCancellation.value = false, this.voiceFilterSpeaking.forEach(e => e.stop()), this.computeSpeakingDurationMilestones(module, exports, require)
+    this.speaking.stop(), this.listening.stop(), this.participation.stop(), this.connected.stop(), this.muted.stop(), this.noiseCancellation.value = false, this.voiceFilterSpeaking.forEach(e => e.stop()), this.computeSpeakingDurationMilestones(e, t, n)
   }
   getVoiceFilterSpeakingDurationMs() {
     return new Map([...this.voiceFilterSpeaking.entries()].map(e => {
@@ -131,7 +131,7 @@ class d {
   getDurationStats() {
     let e = this.speaking.lastStartTime,
       t = this.timestampProducer.now(),
-      n = null != module ? exports - module : 0;
+      n = null != e ? t - e : 0;
     return this.computeSpeakingDurationMilestones(this.connected.lastStartTime, this.speaking.lastStartTime, this.speaking.lastElapsed), o({
       duration_listening_ms: this.listening.elapsed().asMilliseconds(),
       duration_speaking_ms: this.speaking.elapsed().asMilliseconds(),

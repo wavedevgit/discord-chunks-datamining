@@ -65,12 +65,12 @@ let c = {
   },
   getAssets: async () => {
     try {
-      return await Chunk544891.tn.get({
-        url: Chunk981631.ANM.HAVEN_GET_ASSETS,
+      return await r.tn.get({
+        url: l.ANM.HAVEN_GET_ASSETS,
         rejectWithError: true
       })
     } catch (e) {
-      return Chunk960048.Z.captureException(module), null
+      return o.Z.captureException(e), null
     }
   }
 }

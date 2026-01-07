@@ -74,19 +74,19 @@ class A extends Chunk473749.Component {
     } = this.props, {
       isReactionPickerActive: s
     } = this.state;
-    if (module.state === Chunk981631.yb.SENDING || (0, Chunk95015.yE)(module.flags, Chunk981631.iLy.EPHEMERAL)) return null;
-    let l = Chunk473749 ? Chunk378369 : Chunk860302,
+    if (e.state === E.yb.SENDING || (0, c.yE)(e.flags, E.iLy.EPHEMERAL)) return null;
+    let l = i ? v : O,
       u = {
         size: "sm",
         color: "currentColor",
         className: l.icon
       };
-    return module.type === Chunk981631.uaV.EMOJI_ADDED && 0 === module.reactions.length ? (0, Chunk54381.jsx)(Chunk387188.e, {
-      message: module,
-      className: o()(l.reactionBtn, exports)
-    }) : (0, Chunk54381.jsx)(Chunk481060.yRy, {
+    return e.type === E.uaV.EMOJI_ADDED && 0 === e.reactions.length ? (0, r.jsx)(_.e, {
+      message: e,
+      className: o()(l.reactionBtn, t)
+    }) : (0, r.jsx)(f.yRy, {
       targetElementRef: this.ref,
-      shouldShow: Chunk954955,
+      shouldShow: s,
       onRequestClose: this.handleReactionPickerToggle,
       renderPopout: this.renderReactionPopout,
       position: "right",

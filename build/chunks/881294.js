@@ -57,23 +57,23 @@ function u(e, t) {
 }
 
 function p() {
-  return (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated())
+  return (0, r.e7)([l.default], () => l.default.isAuthenticated())
 }
 
 function m() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     t = new URL(location.href);
-  for (let n in module) {
-    let a = module[require];
-    exports.searchParams.set(require, Chunk860911)
+  for (let n in e) {
+    let a = e[n];
+    t.searchParams.set(n, a)
   }
-  let n = exports.pathname + exports.search,
-    r = (0, Chunk860911.Ui)(require, false);
-  (0, Chunk703656.uL)(Chunk442837)
+  let n = t.pathname + t.search,
+    r = (0, a.Ui)(n, false);
+  (0, i.uL)(r)
 }
 
 function h() {
   let e = new URL(location.href),
-    t = "?redirect_to=".concat(encodeURIComponent(module.pathname + module.search));
-  (0, Chunk703656.uL)(Chunk981631.Z5c.REGISTER + exports)
+    t = "?redirect_to=".concat(encodeURIComponent(e.pathname + e.search));
+  (0, i.uL)(d.Z5c.REGISTER + t)
 }

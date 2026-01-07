@@ -12,31 +12,31 @@ var Chunk481060 = require("./481060.js"),
   Chunk346509 = require("./346509.js");
 
 function l() {
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk346509.container,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk346509.iconContainer,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk346509.icon,
-        children: (0, Chunk54381.jsx)(Chunk481060.sVe, {
+  return (0, r.jsxs)("div", {
+    className: s.container,
+    children: [(0, r.jsxs)("div", {
+      className: s.iconContainer,
+      children: [(0, r.jsx)("div", {
+        className: s.icon,
+        children: (0, r.jsx)(i.sVe, {
           size: "custom",
           color: "currentColor",
-          className: Chunk346509.iconOffset,
+          className: s.iconOffset,
           width: 28,
           height: 28
         })
-      }), (0, Chunk54381.jsx)(Chunk499033.Z, {
-        className: Chunk346509.stars
+      }), (0, r.jsx)(a.Z, {
+        className: s.stars
       })]
-    }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk346509.header,
+    }), (0, r.jsx)(i.Heading, {
+      className: s.header,
       variant: "heading-xl/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.yJHJei)
-    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk346509.text,
+      children: o.intl.string(o.t.yJHJei)
+    }), (0, r.jsx)(i.Text, {
+      className: s.text,
       color: "text-default",
       variant: "text-md/normal",
-      children: Chunk388032.intl.string(Chunk388032.t.p2dIh6)
+      children: o.intl.string(o.t.p2dIh6)
     })]
   })
 }

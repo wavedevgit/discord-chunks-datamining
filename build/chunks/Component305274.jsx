@@ -105,8 +105,8 @@ let o = {
       name: "All Variants",
       id: "chip-all-variants",
       component: function() {
-        return (0, Chunk54381.jsx)("div", {
-          className: Chunk66333.allChips,
+        return (0, r.jsx)("div", {
+          className: a.allChips,
           children: l.map(e => (0, r.jsxs)("div", {
             className: a.section,
             children: [(0, r.jsx)("h3", {

@@ -89,17 +89,17 @@ function R() {
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "top",
     n = arguments.length > 2 ? arguments[2] : true,
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0;
-  if ("center" === module || "custom" === module) return 0;
-  let i = "left" === exports || "right" === exports,
-    a = Chunk473749 ? Chunk54381 : null != require ? require : C,
-    o = Chunk473749 ? T : I;
-  if (0 === Chunk120356) return 0;
-  let s = Chunk120356 / 2 - o;
-  switch (module) {
+  if ("center" === e || "custom" === e) return 0;
+  let i = "left" === t || "right" === t,
+    a = i ? r : null != n ? n : C,
+    o = i ? T : I;
+  if (0 === a) return 0;
+  let s = a / 2 - o;
+  switch (e) {
     case "start":
-      return Chunk554916;
+      return s;
     case "end":
-      return -Chunk554916;
+      return -s;
     default:
       return 0
   }

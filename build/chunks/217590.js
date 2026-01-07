@@ -56,8 +56,8 @@ let c = e => {
     })
   },
   d = () => {
-    Chunk626135.default.track(Chunk981631.rMx.SEARCH_STARTED, {
-      search_type: Chunk981631.aib.STICKER
+    i.default.track(o.rMx.SEARCH_STARTED, {
+      search_type: o.aib.STICKER
     })
   },
   f = (e, t, n) => {

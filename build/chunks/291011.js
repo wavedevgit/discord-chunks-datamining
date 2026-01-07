@@ -9,12 +9,12 @@ var Chunk392711 = require("./392711.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.Em)(Chunk313789.n.MOBILE_NOTIFICATION_DELAY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["8rHeOr"]),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["eJE6+J"]),
+  useTitle: () => r.intl.string(r.t["8rHeOr"]),
+  useSubtitle: () => r.intl.string(r.t["eJE6+J"]),
   fieldLayout: "horizontal-responsive",
   useValue: Chunk695346.CM.useSetting,
   setValue: Chunk695346.CM.updateSetting,
-  useOptions: () => Chunk392711.range(1, 11).map(t => ({
+  useOptions: () => i.range(1, 11).map(t => ({
     id: "".concat(t),
     value: 60 * t,
     label: r.intl.formatToPlainString(r.t.iXLF9W, {

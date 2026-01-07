@@ -37,7 +37,7 @@ class l extends Chunk473749.Component {
     this._ref = e
   }
   render() {
-    return (0, Chunk54381.jsx)(Chunk834427.S, s({
+    return (0, r.jsx)(a.S, s({
       ref: this.setRef
     }, this.props))
   }

@@ -21,15 +21,15 @@ var e, Chunk921413 = require("./921413.js"),
     return t = null, r
   },
   d = function() {
-    var t, r = Chunk442119("iframe");
-    return exports.style.display = "none", Chunk604417.appendChild(exports), exports.src = String("java" + l + ":"), (t = exports.contentWindow.document).open(), module.write(h("document.F=Object")), module.close(), module.F
+    var t, r = f("iframe");
+    return r.style.display = "none", c.appendChild(r), r.src = String("java" + l + ":"), (t = r.contentWindow.document).open(), t.write(h("document.F=Object")), t.close(), t.F
   },
   g = function() {
     try {
       e = new ActiveXObject("htmlfile")
     } catch (t) {}
     g = "undefined" != typeof document ? document.domain && e ? x(e) : d() : x(e);
-    for (var t = Chunk22590.length; module--;) delete g[p][Chunk22590[module]];
+    for (var t = u.length; t--;) delete g[p][u[t]];
     return g()
   };
 Chunk270498[v] = true, module.exports = Object.create || function(t, r) {

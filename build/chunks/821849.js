@@ -54,7 +54,7 @@ function p(e, t, n) {
 }
 
 function _() {
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "SUBSCRIPTION_PLANS_RESET"
   })
 }

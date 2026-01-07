@@ -47,7 +47,7 @@ class u extends Chunk81825.Z {
     })
   }
   get isGiftable() {
-    return this.type === Chunk981631.qc2.USER_GIFT && null == this.gifterId
+    return this.type === l.qc2.USER_GIFT && null == this.gifterId
   }
   isValid(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
@@ -66,7 +66,7 @@ class u extends Chunk81825.Z {
     returntrue
   }
   isFulfilled() {
-    return this.fulfillmentStatus === Chunk361268.m.FULFILLED
+    return this.fulfillmentStatus === r.m.FULFILLED
   }
   constructor(e) {
     super(), c(this, "id", true), c(this, "skuId", true), c(this, "applicationId", true), c(this, "user", true), c(this, "userId", true), c(this, "gifterId", true), c(this, "type", true), c(this, "branches", true), c(this, "startsAt", true), c(this, "endsAt", true), c(this, "subscriptionId", true), c(this, "subscriptionPlanId", true), c(this, "parentId", true), c(this, "consumed", true), c(this, "giftCodeBatchId", true), c(this, "giftStyle", true), c(this, "guildId", true), c(this, "deleted", true), c(this, "sourceType", true), c(this, "fulfillmentStatus", true), this.id = e.id, this.skuId = e.skuId, this.applicationId = e.applicationId, this.user = e.user, this.userId = e.userId, this.gifterId = e.gifterId, this.type = e.type, this.branches = e.branches, this.startsAt = e.startsAt, this.endsAt = e.endsAt, this.subscriptionId = e.subscriptionId, this.subscriptionPlanId = e.subscriptionPlanId, this.parentId = e.parentId, this.consumed = e.consumed, this.giftCodeBatchId = e.giftCodeBatchId, this.giftStyle = e.giftStyle, this.guildId = e.guildId, this.deleted = e.deleted, this.sourceType = e.sourceType, this.fulfillmentStatus = e.fulfillmentStatus

@@ -99,7 +99,7 @@ class a {
     })
   }
   emitChange() {
-    for (let e of this._subscribers.values()) module()
+    for (let e of this._subscribers.values()) e()
   }
   onChange(e) {
     return this._subscribers.add(e), () => this._subscribers.delete(e)

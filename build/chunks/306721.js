@@ -8,8 +8,8 @@ var Chunk401430 = require("./401430.js"),
   Chunk695103 = require("./695103.js");
 let a = {
   init() {
-    Chunk283595.Z.whenInitialized(() => {
-      null != Chunk695103.Z.testModeApplicationId && (0, Chunk401430.Wt)(Chunk695103.Z.testModeApplicationId, Chunk695103.Z.testModeOriginURL)
+    i.Z.whenInitialized(() => {
+      null != l.Z.testModeApplicationId && (0, r.Wt)(l.Z.testModeApplicationId, l.Z.testModeOriginURL)
     })
   }
 }

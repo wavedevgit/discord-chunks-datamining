@@ -97,21 +97,21 @@ function f(e) {
 function p() {
   let {
     enabled: e
-  } = Chunk644542.$i.getCurrentConfig({
+  } = r.$i.getCurrentConfig({
     location: "504714_12"
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }
 
 function _() {
   let {
     enabled: e
-  } = Chunk644542.$i.useExperiment({
+  } = r.$i.useExperiment({
     location: "504714_13"
   }, {
     autoTrackExposure: false
   });
-  return module
+  return e
 }

@@ -33,5 +33,5 @@ module.exports = !!s && function() {
       e || (e = new s), c(e, t, n)
     }
   };
-  return exports
+  return t
 }

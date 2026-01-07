@@ -49,7 +49,7 @@ function g(e) {
 }
 
 function f() {
-  I = null, _ = Object.assign({}, E), S = false, O = {}, I = Chunk999382.Z.getGuildId(), _ = r().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(I)))
+  I = null, _ = Object.assign({}, E), S = false, O = {}, I = a.Z.getGuildId(), _ = r().cloneDeep(Object.assign({}, o.Z.getSettings(I)))
 }
 
 function T(e, n) {
@@ -67,7 +67,7 @@ function G(e, n) {
 }
 
 function h() {
-  S = false, _ = r().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(I)))
+  S = false, _ = r().cloneDeep(Object.assign({}, o.Z.getSettings(I)))
 }
 class A extends(l = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -82,7 +82,7 @@ class A extends(l = Chunk442837.ZP.PersistedStore) {
     return null != _ ? _ : E
   }
   hasChanges() {
-    return null != I && !r().isEqual(_, Chunk563534.Z.getSettings(I))
+    return null != I && !r().isEqual(_, o.Z.getSettings(I))
   }
   canCloseEarly() {
     return !this.hasChanges()
@@ -122,7 +122,7 @@ let D = new A(Chunk570140.Z, {
   GUILD_SETTINGS_SET_SECTION: f,
   GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: f,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: function() {
-    _ = r().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(I)))
+    _ = r().cloneDeep(Object.assign({}, o.Z.getSettings(I)))
   },
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
     S = true

@@ -54,10 +54,10 @@ class p extends Chunk81825.Z {
     })
   }
   get isPurchasedViaApple() {
-    return this.paymentGateway === Chunk981631.gg$.APPLE
+    return this.paymentGateway === u.gg$.APPLE
   }
   get isPurchasedViaGoogle() {
-    return this.paymentGateway === Chunk981631.gg$.GOOGLE
+    return this.paymentGateway === u.gg$.GOOGLE
   }
   get isPurchasedExternally() {
     return this.isPurchasedViaApple || this.isPurchasedViaGoogle
@@ -66,7 +66,7 @@ class p extends Chunk81825.Z {
     return null != this.subscription
   }
   get isPremiumSubscription() {
-    return null != this.subscription && Chunk474936.dJ.has(this.subscription.planId)
+    return null != this.subscription && d.dJ.has(this.subscription.planId)
   }
   get isPremiumGuildSubscription() {
     return null != this.subscription && null != this.subscription.additionalPlans.find(e => {
@@ -77,20 +77,20 @@ class p extends Chunk81825.Z {
     })
   }
   get isGift() {
-    return Chunk95015.yE(this.flags, 1)
+    return i.yE(this.flags, 1)
   }
   get isPremiumGift() {
-    return this.isGift && Object.values(Chunk474936.Si).includes(this.skuId)
+    return this.isGift && Object.values(d.Si).includes(this.skuId)
   }
   get isGuildProductPurchase() {
-    return null != this.sku && (this.sku.productLine === Chunk981631.POd.GUILD_PRODUCT || Chunk95015.yE(this.sku.flags, Chunk314877.l.GUILD_PRODUCT))
+    return null != this.sku && (this.sku.productLine === u.POd.GUILD_PRODUCT || i.yE(this.sku.flags, r.l.GUILD_PRODUCT))
   }
   get isSoftDeletedProduct() {
     var e;
-    return (null == (e = this.sku) ? true : module.deleted) === true
+    return (null == (e = this.sku) ? true : e.deleted) === true
   }
   get isCollectible() {
-    return null != this.sku && this.sku.productLine === Chunk981631.POd.COLLECTIBLES
+    return null != this.sku && this.sku.productLine === u.POd.COLLECTIBLES
   }
   constructor(e) {
     super(), f(this, "id", true), f(this, "createdAt", true), f(this, "currency", true), f(this, "tax", true), f(this, "taxInclusive", true), f(this, "amount", true), f(this, "amountRefunded", true), f(this, "status", true), f(this, "description", true), f(this, "hasInvoiceURL", true), f(this, "hasRefundInvoiceURLs", true), f(this, "downloadableInvoice", true), f(this, "downloadableRefundInvoices", true), f(this, "flags", true), f(this, "paymentSource", true), f(this, "paymentGateway", true), f(this, "subscription", true), f(this, "skuId", true), f(this, "skuPrice", true), f(this, "sku", true), f(this, "premiumRefundDisqualificationReasons", true), f(this, "entitlements", true), this.id = e.id, this.amount = e.amount, this.amountRefunded = e.amountRefunded, this.createdAt = e.createdAt, this.currency = e.currency, this.description = e.description, this.paymentSource = e.paymentSource, this.paymentGateway = e.paymentGateway, this.status = e.status, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscription = e.subscription, this.skuId = e.skuId, this.skuPrice = e.skuPrice, this.sku = e.sku, this.flags = e.flags, this.downloadableInvoice = e.downloadableInvoice, this.downloadableRefundInvoices = e.downloadableRefundInvoices, this.hasInvoiceURL = e.hasInvoiceURL, this.hasRefundInvoiceURLs = e.hasRefundInvoiceURLs, this.premiumRefundDisqualificationReasons = e.premiumRefundDisqualificationReasons, this.entitlements = e.entitlements

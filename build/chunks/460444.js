@@ -3338,7 +3338,7 @@
       Alignment: () => t,
       DataEnum: () => U,
       EventType: () => o,
-      Fit: () => module,
+      Fit: () => e,
       Layout: () => O,
       LoopType: () => s,
       Rive: () => M,
@@ -3514,7 +3514,7 @@
       };
     ! function(e) {
       e.Cover = "cover", e.Contain = "contain", e.Fill = "fill", e.FitWidth = "fitWidth", e.FitHeight = "fitHeight", e.None = "none", e.ScaleDown = "scaleDown", e.Layout = "layout"
-    }(module || (e = {})),
+    }(e || (e = {})),
     function(e) {
       e.Center = "center", e.TopLeft = "topLeft", e.TopCenter = "topCenter", e.TopRight = "topRight", e.CenterLeft = "centerLeft", e.CenterRight = "centerRight", e.BottomLeft = "bottomLeft", e.BottomCenter = "bottomCenter", e.BottomRight = "bottomRight"
     }(t || (t = {}));
@@ -3565,10 +3565,10 @@
       }(),
       v = function() {
         function e() {}
-        return module.loadRuntime = function() {
+        return e.loadRuntime = function() {
           u.default({
             locateFile: function() {
-              return module.wasmURL
+              return e.wasmURL
             }
           }).then(function(t) {
             var n;
@@ -3584,19 +3584,19 @@
             var r = "https://cdn.jsdelivr.net/npm/".concat(d.name, "@").concat(d.version, "/rive_fallback.wasm");
             e.wasmURL.toLowerCase() !== r ? (console.warn("Failed to load WASM from ".concat(e.wasmURL, " (").concat(n.message, "), trying jsdelivr as a backup")), e.setWasmUrl(r), e.loadRuntime()) : console.error(["Could not load Rive WASM file from ".concat(e.wasmURL, " or ").concat(r, "."), "Possible reasons:\n- Network connection is down\n- WebAssembly is not supported in this environment\n- The WASM file is corrupted or incompatible\n\nError details:", "- Type: ".concat(n.type), "- Message: ".concat(n.message), "- WebAssembly-specific error: ".concat(n.wasmError), "\nTo resolve, you may need to:\n1. Check your network connection\n2. Set a new WASM source via RuntimeLoader.setWasmUrl()\n3. Call RuntimeLoader.loadRuntime() again"].join("\n"))
           })
-        }, module.getInstance = function(t) {
+        }, e.getInstance = function(t) {
           e.isLoading || (e.isLoading = true, e.loadRuntime()), e.runtime ? t(e.runtime) : e.callBackQueue.push(t)
-        }, module.awaitInstance = function() {
+        }, e.awaitInstance = function() {
           return new Promise(function(t) {
             return e.getInstance(function(e) {
               return t(e)
             })
           })
-        }, module.setWasmUrl = function(t) {
+        }, e.setWasmUrl = function(t) {
           e.wasmURL = t
-        }, module.getWasmUrl = function() {
-          return module.wasmURL
-        }, module.isLoading = false, module.callBackQueue = [], module.wasmURL = "https://unpkg.com/".concat(d.name, "@").concat(d.version, "/rive.wasm"), module
+        }, e.getWasmUrl = function() {
+          return e.wasmURL
+        }, e.isLoading = false, e.callBackQueue = [], e.wasmURL = "https://unpkg.com/".concat(d.name, "@").concat(d.version, "/rive.wasm"), e
       }();
     ! function(e) {
       e[e.Number = 56] = "Number", e[e.Trigger = 58] = "Trigger", e[e.Boolean = 59] = "Boolean"
@@ -3605,13 +3605,13 @@
       function e(e, t) {
         this.type = e, this.runtimeInput = t
       }
-      return Object.defineProperty(module.prototype, "name", {
+      return Object.defineProperty(e.prototype, "name", {
         get: function() {
           return this.runtimeInput.name
         },
         enumerable: false,
         configurable: true
-      }), Object.defineProperty(module.prototype, "value", {
+      }), Object.defineProperty(e.prototype, "value", {
         get: function() {
           return this.runtimeInput.value
         },
@@ -3620,11 +3620,11 @@
         },
         enumerable: false,
         configurable: true
-      }), module.prototype.fire = function() {
+      }), e.prototype.fire = function() {
         this.type === i.Trigger && this.runtimeInput.fire()
-      }, module.prototype.delete = function() {
+      }, e.prototype.delete = function() {
         this.runtimeInput = null
-      }, module
+      }, e
     }();
     ! function(e) {
       e[e.General = 128] = "General", e[e.OpenUrl = 131] = "OpenUrl"
@@ -3654,47 +3654,47 @@
         function e(e, t, n, r) {
           this.stateMachine = e, this.playing = n, this.artboard = r, this.inputs = [], this.instance = new t.StateMachineInstance(e, r), this.initInputs(t)
         }
-        return Object.defineProperty(module.prototype, "name", {
+        return Object.defineProperty(e.prototype, "name", {
           get: function() {
             return this.stateMachine.name
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "statesChanged", {
+        }), Object.defineProperty(e.prototype, "statesChanged", {
           get: function() {
-            for (var e = [], t = 0; t < this.instance.stateChangedCount(); t++) module.push(this.instance.stateChangedNameByIndex(t));
-            return module
+            for (var e = [], t = 0; t < this.instance.stateChangedCount(); t++) e.push(this.instance.stateChangedNameByIndex(t));
+            return e
           },
           enumerable: false,
           configurable: true
-        }), module.prototype.advance = function(e) {
+        }), e.prototype.advance = function(e) {
           this.instance.advance(e)
-        }, module.prototype.advanceAndApply = function(e) {
+        }, e.prototype.advanceAndApply = function(e) {
           this.instance.advanceAndApply(e)
-        }, module.prototype.reportedEventCount = function() {
+        }, e.prototype.reportedEventCount = function() {
           return this.instance.reportedEventCount()
-        }, module.prototype.reportedEventAt = function(e) {
+        }, e.prototype.reportedEventAt = function(e) {
           return this.instance.reportedEventAt(e)
-        }, module.prototype.initInputs = function(e) {
+        }, e.prototype.initInputs = function(e) {
           for (var t = 0; t < this.instance.inputCount(); t++) {
             var n = this.instance.input(t);
             this.inputs.push(this.mapRuntimeInput(n, e))
           }
-        }, module.prototype.mapRuntimeInput = function(e, t) {
+        }, e.prototype.mapRuntimeInput = function(e, t) {
           return e.type === t.SMIInput.bool ? new S(i.Boolean, e.asBool()) : e.type === t.SMIInput.number ? new S(i.Number, e.asNumber()) : e.type === t.SMIInput.trigger ? new S(i.Trigger, e.asTrigger()) : true
-        }, module.prototype.cleanup = function() {
+        }, e.prototype.cleanup = function() {
           this.inputs.forEach(function(e) {
             e.delete()
           }), this.inputs.length = 0, this.instance.delete()
-        }, module.prototype.bindViewModelInstance = function(e) {
+        }, e.prototype.bindViewModelInstance = function(e) {
           null != e.runtimeInstance && this.instance.bindViewModelInstance(e.runtimeInstance)
-        }, module
+        }, e
       }(),
       N = function() {
         function e(e, t, n, r, i) {
           true === r && (r = []), true === i && (i = []), this.runtime = e, this.artboard = t, this.eventManager = n, this.animations = r, this.stateMachines = i
         }
-        return module.prototype.add = function(e, t, n) {
+        return e.prototype.add = function(e, t, n) {
           if (true === n && (n = true), 0 === (e = X(e)).length) this.animations.forEach(function(e) {
             return e.playing = t
           }), this.stateMachines.forEach(function(e) {
@@ -3730,7 +3730,7 @@
             type: o.Pause,
             data: this.paused
           })), t ? this.playing : this.paused
-        }, module.prototype.initLinearAnimations = function(e, t) {
+        }, e.prototype.initLinearAnimations = function(e, t) {
           for (var n = this.animations.map(function(e) {
               return e.name
             }), r = 0; r < e.length; r++) {
@@ -3744,7 +3744,7 @@
               } else console.error("Animation with name ".concat(e[r], " not found."))
             }
           }
-        }, module.prototype.initStateMachines = function(e, t) {
+        }, e.prototype.initStateMachines = function(e, t) {
           for (var n = this.stateMachines.map(function(e) {
               return e.name
             }), r = 0; r < e.length; r++) {
@@ -3758,15 +3758,15 @@
               } else console.warn("State Machine with name ".concat(e[r], " not found.")), this.initLinearAnimations([e[r]], t)
             }
           }
-        }, module.prototype.play = function(e) {
+        }, e.prototype.play = function(e) {
           return this.add(e, true)
-        }, module.prototype.advanceIfPaused = function() {
+        }, e.prototype.advanceIfPaused = function() {
           this.stateMachines.forEach(function(e) {
             e.playing || e.advanceAndApply(0)
           })
-        }, module.prototype.pause = function(e) {
+        }, e.prototype.pause = function(e) {
           return this.add(e, false)
-        }, module.prototype.scrub = function(e, t) {
+        }, e.prototype.scrub = function(e, t) {
           var n = this.animations.filter(function(t) {
             return e.includes(t.name)
           });
@@ -3775,7 +3775,7 @@
           }), n.map(function(e) {
             return e.name
           })
-        }, Object.defineProperty(module.prototype, "playing", {
+        }, Object.defineProperty(e.prototype, "playing", {
           get: function() {
             return this.animations.filter(function(e) {
               return e.playing
@@ -3789,7 +3789,7 @@
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "paused", {
+        }), Object.defineProperty(e.prototype, "paused", {
           get: function() {
             return this.animations.filter(function(e) {
               return !e.playing
@@ -3803,7 +3803,7 @@
           },
           enumerable: false,
           configurable: true
-        }), module.prototype.stop = function(e) {
+        }), e.prototype.stop = function(e) {
           var t = this;
           e = X(e);
           var n = [];
@@ -3838,7 +3838,7 @@
             type: o.Stop,
             data: n
           }), n
-        }, Object.defineProperty(module.prototype, "isPlaying", {
+        }, Object.defineProperty(e.prototype, "isPlaying", {
           get: function() {
             return this.animations.reduce(function(e, t) {
               return e || t.playing
@@ -3848,26 +3848,26 @@
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "isPaused", {
+        }), Object.defineProperty(e.prototype, "isPaused", {
           get: function() {
             return !this.isPlaying && (this.animations.length > 0 || this.stateMachines.length > 0)
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "isStopped", {
+        }), Object.defineProperty(e.prototype, "isStopped", {
           get: function() {
             return 0 === this.animations.length && 0 === this.stateMachines.length
           },
           enumerable: false,
           configurable: true
-        }), module.prototype.atLeastOne = function(e, t) {
+        }), e.prototype.atLeastOne = function(e, t) {
           var n;
           return true === t && (t = true), 0 === this.animations.length && 0 === this.stateMachines.length && (this.artboard.animationCount() > 0 ? this.add([n = this.artboard.animationByIndex(0).name], e, t) : this.artboard.stateMachineCount() > 0 && this.add([n = this.artboard.stateMachineByIndex(0).name], e, t)), n
-        }, module.prototype.handleLooping = function() {
+        }, e.prototype.handleLooping = function() {
           for (var e = 0, t = this.animations.filter(function(e) {
               return e.playing
-            }); module < t.length; module++) {
-            var n = t[module];
+            }); e < t.length; e++) {
+            var n = t[e];
             0 === n.loopValue && n.loopCount ? (n.loopCount = 0, this.stop(n.name)) : 1 === n.loopValue && n.loopCount ? (this.eventManager.fire({
               type: o.Loop,
               data: {
@@ -3882,23 +3882,23 @@
               }
             }), n.loopCount = 0)
           }
-        }, module.prototype.handleStateChanges = function() {
+        }, e.prototype.handleStateChanges = function() {
           for (var e = [], t = 0, n = this.stateMachines.filter(function(e) {
               return e.playing
             }); t < n.length; t++) {
             var r = n[t];
-            module.push.apply(module, r.statesChanged)
+            e.push.apply(e, r.statesChanged)
           }
-          module.length > 0 && this.eventManager.fire({
+          e.length > 0 && this.eventManager.fire({
             type: o.StateChange,
-            data: module
+            data: e
           })
-        }, module.prototype.handleAdvancing = function(e) {
+        }, e.prototype.handleAdvancing = function(e) {
           this.eventManager.fire({
             type: o.Advance,
             data: e
           })
-        }, module
+        }, e
       }();
     ! function(e) {
       e.Load = "load", e.LoadError = "loaderror", e.Play = "play", e.Pause = "pause", e.Stop = "stop", e.Loop = "loop", e.Draw = "draw", e.Advance = "advance", e.StateChange = "statechange", e.RiveEvent = "riveevent", e.AudioStatusChange = "audiostatuschange"
@@ -3910,13 +3910,13 @@
         function e(e) {
           true === e && (e = []), this.listeners = e
         }
-        return module.prototype.getListeners = function(e) {
+        return e.prototype.getListeners = function(e) {
           return this.listeners.filter(function(t) {
             return t.type === e
           })
-        }, module.prototype.add = function(e) {
+        }, e.prototype.add = function(e) {
           this.listeners.includes(e) || this.listeners.push(e)
-        }, module.prototype.remove = function(e) {
+        }, e.prototype.remove = function(e) {
           for (var t = 0; t < this.listeners.length; t++) {
             var n = this.listeners[t];
             if (n.type === e.type && n.callback === e.callback) {
@@ -3924,31 +3924,31 @@
               break
             }
           }
-        }, module.prototype.removeAll = function(e) {
+        }, e.prototype.removeAll = function(e) {
           var t = this;
           e ? this.listeners.filter(function(t) {
             return t.type === e
           }).forEach(function(e) {
             return t.remove(e)
           }) : this.listeners.splice(0, this.listeners.length)
-        }, module.prototype.fire = function(e) {
+        }, e.prototype.fire = function(e) {
           this.getListeners(e.type).forEach(function(t) {
             return t.callback(e)
           })
-        }, module
+        }, e
       }(),
       R = function() {
         function e(e) {
           this.eventManager = e, this.queue = []
         }
-        return module.prototype.add = function(e) {
+        return e.prototype.add = function(e) {
           this.queue.push(e)
-        }, module.prototype.process = function() {
+        }, e.prototype.process = function() {
           for (; this.queue.length > 0;) {
             var e = this.queue.shift();
-            (null == module ? true : module.action) && module.action(), (null == module ? true : module.event) && this.eventManager.fire(module.event)
+            (null == e ? true : e.action) && e.action(), (null == e ? true : e.event) && this.eventManager.fire(e.event)
           }
-        }, module
+        }, e
       }();
     ! function(e) {
       e[e.AVAILABLE = 0] = "AVAILABLE", e[e.UNAVAILABLE = 1] = "UNAVAILABLE"
@@ -4059,7 +4059,7 @@
       }(P)),
       D = function() {
         function e() {}
-        return module.prototype.observe = function() {}, module.prototype.unobserve = function() {}, module.prototype.disconnect = function() {}, module
+        return e.prototype.observe = function() {}, e.prototype.unobserve = function() {}, e.prototype.disconnect = function() {}, e
       }(),
       x = globalThis.ResizeObserver || D,
       L = new(function() {
@@ -4072,28 +4072,28 @@
             t.forEach(e._onObservedEntry)
           }, this._resizeObserver = new x(this._onObserved)
         }
-        return module.prototype.add = function(e, t) {
+        return e.prototype.add = function(e, t) {
           var n = {
             onResize: t,
             element: e
           };
           return this._elementsMap.set(e, n), this._resizeObserver.observe(e), n
-        }, module.prototype.remove = function(e) {
+        }, e.prototype.remove = function(e) {
           this._resizeObserver.unobserve(e.element), this._elementsMap.delete(e.element)
-        }, module
+        }, e
       }()),
       j = function() {
         function e(e) {
           this.enableRiveAssetCDN = true, this.referenceCount = 0, this.destroyed = false, this.selfUnref = false, this.bindableArtboards = [], this.src = e.src, this.buffer = e.buffer, e.assetLoader && (this.assetLoader = e.assetLoader), this.enableRiveAssetCDN = "boolean" != typeof e.enableRiveAssetCDN || e.enableRiveAssetCDN, this.eventManager = new P, e.onLoad && this.on(o.Load, e.onLoad), e.onLoadError && this.on(o.LoadError, e.onLoadError)
         }
-        return module.prototype.releaseFile = function() {
+        return e.prototype.releaseFile = function() {
           var e;
-          this.selfUnref && (null == (e = this.file) || module.unref()), this.file = null
-        }, module.prototype.releaseBindableArtboards = function() {
+          this.selfUnref && (null == (e = this.file) || e.unref()), this.file = null
+        }, e.prototype.releaseBindableArtboards = function() {
           this.bindableArtboards.forEach(function(e) {
             return e.destroy()
           })
-        }, module.prototype.initData = function() {
+        }, e.prototype.initData = function() {
           return h(this, true, true, function() {
             var t, n, r, i;
             return g(this, function(a) {
@@ -4115,7 +4115,7 @@
               }
             })
           })
-        }, module.prototype.init = function() {
+        }, e.prototype.init = function() {
           return h(this, true, true, function() {
             var t, n;
             return g(this, function(r) {
@@ -4137,48 +4137,48 @@
               }
             })
           })
-        }, module.prototype.fireLoadError = function(e) {
+        }, e.prototype.fireLoadError = function(e) {
           throw this.eventManager.fire({
             type: o.LoadError,
             data: e
           }), Error(e)
-        }, module.prototype.on = function(e, t) {
+        }, e.prototype.on = function(e, t) {
           this.eventManager.add({
             type: e,
             callback: t
           })
-        }, module.prototype.off = function(e, t) {
+        }, e.prototype.off = function(e, t) {
           this.eventManager.remove({
             type: e,
             callback: t
           })
-        }, module.prototype.cleanup = function() {
+        }, e.prototype.cleanup = function() {
           this.referenceCount -= 1, this.referenceCount <= 0 && (this.removeAllRiveEventListeners(), this.releaseFile(), this.releaseBindableArtboards(), this.destroyed = true)
-        }, module.prototype.removeAllRiveEventListeners = function(e) {
+        }, e.prototype.removeAllRiveEventListeners = function(e) {
           this.eventManager.removeAll(e)
-        }, module.prototype.getInstance = function() {
+        }, e.prototype.getInstance = function() {
           if (null !== this.file) return this.referenceCount += 1, this.file
-        }, module.prototype.destroyIfUnused = function() {
+        }, e.prototype.destroyIfUnused = function() {
           this.referenceCount <= 0 && this.cleanup()
-        }, module.prototype.createBindableArtboard = function(e) {
+        }, e.prototype.createBindableArtboard = function(e) {
           if (null != e) {
             var t = new C(e);
             return (0, p.createFinalization)(t, t.nativeArtboard), this.bindableArtboards.push(t), t
           }
           return null
-        }, module.prototype.getArtboard = function(e) {
+        }, e.prototype.getArtboard = function(e) {
           var t = this.file.artboardByName(e);
           if (null != t) return new T(t, this)
-        }, module.prototype.getBindableArtboard = function(e) {
+        }, e.prototype.getBindableArtboard = function(e) {
           var t = this.file.bindableArtboardByName(e);
           return this.createBindableArtboard(t)
-        }, module.prototype.getDefaultBindableArtboard = function() {
+        }, e.prototype.getDefaultBindableArtboard = function() {
           var e = this.file.bindableArtboardDefault();
-          return this.createBindableArtboard(module)
-        }, module.prototype.internalBindableArtboardFromArtboard = function(e) {
+          return this.createBindableArtboard(e)
+        }, e.prototype.internalBindableArtboardFromArtboard = function(e) {
           var t = this.file.internalBindableArtboardFromArtboard(e);
           return this.createBindableArtboard(t)
-        }, module.missingErrorMessage = "Rive source file or data buffer required", module.fileLoadErrorMessage = "The file failed to load", module
+        }, e.missingErrorMessage = "Rive source file or data buffer required", e.fileLoadErrorMessage = "The file failed to load", e
       }(),
       M = function() {
         function t(e) {
@@ -4269,7 +4269,7 @@
           this.eventCleanup && (this.eventCleanup(), this.eventCleanup = null)
         }, t.prototype.initializeAudio = function() {
           var e, t = this;
-          w.status == l.UNAVAILABLE && (null == (e = this.artboard) ? true : module.hasAudio) && null === this._audioEventListener && (this._audioEventListener = {
+          w.status == l.UNAVAILABLE && (null == (e = this.artboard) ? true : e.hasAudio) && null === this._audioEventListener && (this._audioEventListener = {
             type: o.AudioStatusChange,
             callback: function() {
               return t.onSystemAudioChanged()
@@ -4337,7 +4337,7 @@
           }
         }, t.prototype.drawFrame = function() {
           var e, t;
-          (null == (e = null == document ? true : document.timeline) ? true : module.currentTime) ? this.loaded && this.artboard && !this.frameRequestId && (this._boundDraw(document.timeline.currentTime), null == (t = this.runtime) || t.resolveAnimationFrame()): this.startRendering()
+          (null == (e = null == document ? true : document.timeline) ? true : e.currentTime) ? this.loaded && this.artboard && !this.frameRequestId && (this._boundDraw(document.timeline.currentTime), null == (t = this.runtime) || t.resolveAnimationFrame()): this.startRendering()
         }, t.prototype.draw = function(e, t) {
           this.frameRequestId = null;
           var n, r = performance.now();
@@ -4388,10 +4388,10 @@
           null == (n = this._viewModelInstance) || n.handleCallbacks(), this.animator.isPlaying ? this.startRendering() : this.animator.isPaused ? this.lastRenderTime = 0 : this.animator.isStopped && (this.lastRenderTime = 0)
         }, t.prototype.alignRenderer = function() {
           var e = this,
-            t = module.renderer,
-            n = module.runtime,
-            r = module._layout,
-            i = module.artboard;
+            t = e.renderer,
+            n = e.runtime,
+            r = e._layout,
+            i = e.artboard;
           t.align(r.runtimeFit(n), r.runtimeAlignment(n), {
             minX: r.minX,
             minY: r.minY,
@@ -4414,10 +4414,10 @@
           configurable: true
         }), t.prototype.cleanup = function() {
           var e, t;
-          this.destroyed = true, this.stopRendering(), this.cleanupInstances(), null !== this._observed && L.remove(this._observed), this.removeRiveListeners(), this.file && (null == (e = this.riveFile) || module.cleanup(), this.file = null), this.riveFile = null, this.deleteRiveRenderer(), null !== this._audioEventListener && (w.remove(this._audioEventListener), this._audioEventListener = null), null == (t = this._viewModelInstance) || t.cleanup(), this._viewModelInstance = null, this._dataEnums = null
+          this.destroyed = true, this.stopRendering(), this.cleanupInstances(), null !== this._observed && L.remove(this._observed), this.removeRiveListeners(), this.file && (null == (e = this.riveFile) || e.cleanup(), this.file = null), this.riveFile = null, this.deleteRiveRenderer(), null !== this._audioEventListener && (w.remove(this._audioEventListener), this._audioEventListener = null), null == (t = this._viewModelInstance) || t.cleanup(), this._viewModelInstance = null, this._dataEnums = null
         }, t.prototype.deleteRiveRenderer = function() {
           var e;
-          null == (e = this.renderer) || module.delete(), this.renderer = null
+          null == (e = this.renderer) || e.delete(), this.renderer = null
         }, t.prototype.cleanupInstances = function() {
           null !== this.eventCleanup && this.eventCleanup(), this.stop(), this.artboard && (this.artboard.delete(), this.artboard = null)
         }, t.prototype.retrieveTextRun = function(e) {
@@ -4514,16 +4514,16 @@
         }), Object.defineProperty(t.prototype, "animationNames", {
           get: function() {
             if (!this.loaded || !this.artboard) return [];
-            for (var e = [], t = 0; t < this.artboard.animationCount(); t++) module.push(this.artboard.animationByIndex(t).name);
-            return module
+            for (var e = [], t = 0; t < this.artboard.animationCount(); t++) e.push(this.artboard.animationByIndex(t).name);
+            return e
           },
           enumerable: false,
           configurable: true
         }), Object.defineProperty(t.prototype, "stateMachineNames", {
           get: function() {
             if (!this.loaded || !this.artboard) return [];
-            for (var e = [], t = 0; t < this.artboard.stateMachineCount(); t++) module.push(this.artboard.stateMachineByIndex(t).name);
-            return module
+            for (var e = [], t = 0; t < this.artboard.stateMachineCount(); t++) e.push(this.artboard.stateMachineByIndex(t).name);
+            return e
           },
           enumerable: false,
           configurable: true
@@ -4676,9 +4676,9 @@
                     inputs: u
                   })
                 }
-                module.artboards.push(r)
+                e.artboards.push(r)
               }
-              return module
+              return e
             }
           },
           enumerable: false,
@@ -4695,7 +4695,7 @@
         }), Object.defineProperty(t.prototype, "artboardWidth", {
           get: function() {
             var e;
-            return this.artboard ? this.artboard.width : null != (e = this._artboardWidth) ? module : 0
+            return this.artboard ? this.artboard.width : null != (e = this._artboardWidth) ? e : 0
           },
           set: function(e) {
             this._artboardWidth = e, this.artboard && (this.artboard.width = e)
@@ -4705,7 +4705,7 @@
         }), Object.defineProperty(t.prototype, "artboardHeight", {
           get: function() {
             var e;
-            return this.artboard ? this.artboard.height : null != (e = this._artboardHeight) ? module : 0
+            return this.artboard ? this.artboard.height : null != (e = this._artboardHeight) ? e : 0
           },
           set: function(e) {
             this._artboardHeight = e, this.artboard && (this.artboard.height = e)
@@ -4743,7 +4743,7 @@
         }, t.prototype.enums = function() {
           if (null === this._dataEnums) {
             var e = this.file.enums();
-            this._dataEnums = module.map(function(e) {
+            this._dataEnums = e.map(function(e) {
               return new U(e)
             })
           }
@@ -4751,7 +4751,7 @@
         }, t.prototype.defaultViewModel = function() {
           if (this.artboard) {
             var e = this.file.defaultArtboardViewModel(this.artboard);
-            if (module) return new k(module)
+            if (e) return new k(e)
           }
           return null
         }, t.prototype.getArtboard = function(e) {
@@ -4762,84 +4762,84 @@
           return null != (n = null == (t = this.riveFile) ? true : t.getBindableArtboard(e)) ? n : null
         }, t.prototype.getDefaultBindableArtboard = function() {
           var e, t;
-          return null != (t = null == (e = this.riveFile) ? true : module.getDefaultBindableArtboard()) ? t : null
+          return null != (t = null == (e = this.riveFile) ? true : e.getDefaultBindableArtboard()) ? t : null
         }, t.missingErrorMessage = "Rive source file or data buffer required", t.cleanupErrorMessage = "Attempt to use file after calling cleanup.", t
       }(),
       k = function() {
         function e(e) {
           this._viewModel = e
         }
-        return Object.defineProperty(module.prototype, "instanceCount", {
+        return Object.defineProperty(e.prototype, "instanceCount", {
           get: function() {
             return this._viewModel.instanceCount
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "name", {
+        }), Object.defineProperty(e.prototype, "name", {
           get: function() {
             return this._viewModel.name
           },
           enumerable: false,
           configurable: true
-        }), module.prototype.instanceByIndex = function(e) {
+        }), e.prototype.instanceByIndex = function(e) {
           var t = this._viewModel.instanceByIndex(e);
           if (null !== t) {
             var n = new G(t, null);
             return (0, p.createFinalization)(n, t), n
           }
           return null
-        }, module.prototype.instanceByName = function(e) {
+        }, e.prototype.instanceByName = function(e) {
           var t = this._viewModel.instanceByName(e);
           if (null !== t) {
             var n = new G(t, null);
             return (0, p.createFinalization)(n, t), n
           }
           return null
-        }, module.prototype.defaultInstance = function() {
+        }, e.prototype.defaultInstance = function() {
           var e = this._viewModel.defaultInstance();
-          if (null !== module) {
-            var t = new G(module, null);
-            return (0, p.createFinalization)(t, module), t
+          if (null !== e) {
+            var t = new G(e, null);
+            return (0, p.createFinalization)(t, e), t
           }
           return null
-        }, module.prototype.instance = function() {
+        }, e.prototype.instance = function() {
           var e = this._viewModel.instance();
-          if (null !== module) {
-            var t = new G(module, null);
-            return (0, p.createFinalization)(t, module), t
+          if (null !== e) {
+            var t = new G(e, null);
+            return (0, p.createFinalization)(t, e), t
           }
           return null
-        }, Object.defineProperty(module.prototype, "properties", {
+        }, Object.defineProperty(e.prototype, "properties", {
           get: function() {
             return this._viewModel.getProperties()
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "instanceNames", {
+        }), Object.defineProperty(e.prototype, "instanceNames", {
           get: function() {
             return this._viewModel.getInstanceNames()
           },
           enumerable: false,
           configurable: true
-        }), module
+        }), e
       }(),
       U = function() {
         function e(e) {
           this._dataEnum = e
         }
-        return Object.defineProperty(module.prototype, "name", {
+        return Object.defineProperty(e.prototype, "name", {
           get: function() {
             return this._dataEnum.name
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "values", {
+        }), Object.defineProperty(e.prototype, "values", {
           get: function() {
             return this._dataEnum.values
           },
           enumerable: false,
           configurable: true
-        }), module
+        }), e
       }();
     ! function(e) {
       e.Number = "number", e.String = "string", e.Boolean = "boolean", e.Color = "color", e.Trigger = "trigger", e.Enum = "enum", e.List = "list", e.Image = "image", e.Artboard = "artboard"
@@ -4848,19 +4848,19 @@
         function e(e, t) {
           this._parents = [], this._children = [], this._viewModelInstances = new Map, this._propertiesWithCallbacks = [], this._referenceCount = 0, this.selfUnref = false, this._runtimeInstance = e, null !== t && this._parents.push(t)
         }
-        return Object.defineProperty(module.prototype, "runtimeInstance", {
+        return Object.defineProperty(e.prototype, "runtimeInstance", {
           get: function() {
             return this._runtimeInstance
           },
           enumerable: false,
           configurable: true
-        }), Object.defineProperty(module.prototype, "nativeInstance", {
+        }), Object.defineProperty(e.prototype, "nativeInstance", {
           get: function() {
             return this._runtimeInstance
           },
           enumerable: false,
           configurable: true
-        }), module.prototype.handleCallbacks = function() {
+        }), e.prototype.handleCallbacks = function() {
           0 !== this._propertiesWithCallbacks.length && (this._propertiesWithCallbacks.forEach(function(e) {
             e.handleCallbacks()
           }), this._propertiesWithCallbacks.forEach(function(e) {
@@ -4868,49 +4868,49 @@
           })), this._children.forEach(function(e) {
             return e.handleCallbacks()
           })
-        }, module.prototype.addParent = function(e) {
+        }, e.prototype.addParent = function(e) {
           !this._parents.includes(e) && (this._parents.push(e), (this._propertiesWithCallbacks.length > 0 || this._children.length > 0) && e.addToViewModelCallbacks(this))
-        }, module.prototype.removeParent = function(e) {
+        }, e.prototype.removeParent = function(e) {
           var t = this._parents.indexOf(e);
           false !== t && (this._parents[t].removeFromViewModelCallbacks(this), this._parents.splice(t, 1))
-        }, module.prototype.addToPropertyCallbacks = function(e) {
+        }, e.prototype.addToPropertyCallbacks = function(e) {
           var t = this;
           !this._propertiesWithCallbacks.includes(e) && (this._propertiesWithCallbacks.push(e), this._propertiesWithCallbacks.length > 0 && this._parents.forEach(function(e) {
             e.addToViewModelCallbacks(t)
           }))
-        }, module.prototype.removeFromPropertyCallbacks = function(e) {
+        }, e.prototype.removeFromPropertyCallbacks = function(e) {
           var t = this;
           this._propertiesWithCallbacks.includes(e) && (this._propertiesWithCallbacks = this._propertiesWithCallbacks.filter(function(t) {
             return t !== e
           }), 0 === this._children.length && 0 === this._propertiesWithCallbacks.length && this._parents.forEach(function(e) {
             e.removeFromViewModelCallbacks(t)
           }))
-        }, module.prototype.addToViewModelCallbacks = function(e) {
+        }, e.prototype.addToViewModelCallbacks = function(e) {
           var t = this;
           this._children.includes(e) || (this._children.push(e), this._parents.forEach(function(e) {
             e.addToViewModelCallbacks(t)
           }))
-        }, module.prototype.removeFromViewModelCallbacks = function(e) {
+        }, e.prototype.removeFromViewModelCallbacks = function(e) {
           var t = this;
           this._children.includes(e) && (this._children = this._children.filter(function(t) {
             return t !== e
           }), 0 === this._children.length && 0 === this._propertiesWithCallbacks.length && this._parents.forEach(function(e) {
             e.removeFromViewModelCallbacks(t)
           }))
-        }, module.prototype.clearCallbacks = function() {
+        }, e.prototype.clearCallbacks = function() {
           this._propertiesWithCallbacks.forEach(function(e) {
             e.clearCallbacks()
           })
-        }, module.prototype.propertyFromPath = function(e, t) {
+        }, e.prototype.propertyFromPath = function(e, t) {
           var n = e.split("/");
           return this.propertyFromPathSegments(n, 0, t)
-        }, module.prototype.viewModelFromPathSegments = function(e, t) {
+        }, e.prototype.viewModelFromPathSegments = function(e, t) {
           var n = this.internalViewModelInstance(e[t]);
           if (null !== n)
             if (t == e.length - 1) return n;
             else return n.viewModelFromPathSegments(e, t++);
           return null
-        }, module.prototype.propertyFromPathSegments = function(e, t, n) {
+        }, e.prototype.propertyFromPathSegments = function(e, t, n) {
           if (t < e.length - 1) {
             var r, i, a, o, s, l, u, d, f, p, _, m, h, g, E, b, y, O, v = this.internalViewModelInstance(e[t]);
             return null !== v ? v.propertyFromPathSegments(e, t + 1, n) : null
@@ -4945,7 +4945,7 @@
               if (null !== (S = null != (O = null == (y = this._runtimeInstance) ? true : y.artboard(e[t])) ? O : null)) return new q(S, this)
           }
           return null
-        }, module.prototype.internalViewModelInstance = function(t) {
+        }, e.prototype.internalViewModelInstance = function(t) {
           if (this._viewModelInstances.has(t)) return this._viewModelInstances.get(t);
           var n, r = null == (n = this._runtimeInstance) ? true : n.viewModel(t);
           if (null !== r) {
@@ -4953,29 +4953,29 @@
             return (0, p.createFinalization)(i, r), i.internalIncrementReferenceCount(), this._viewModelInstances.set(t, i), i
           }
           return null
-        }, module.prototype.number = function(e) {
+        }, e.prototype.number = function(e) {
           return this.propertyFromPath(e, c.Number)
-        }, module.prototype.string = function(e) {
+        }, e.prototype.string = function(e) {
           return this.propertyFromPath(e, c.String)
-        }, module.prototype.boolean = function(e) {
+        }, e.prototype.boolean = function(e) {
           return this.propertyFromPath(e, c.Boolean)
-        }, module.prototype.color = function(e) {
+        }, e.prototype.color = function(e) {
           return this.propertyFromPath(e, c.Color)
-        }, module.prototype.trigger = function(e) {
+        }, e.prototype.trigger = function(e) {
           return this.propertyFromPath(e, c.Trigger)
-        }, module.prototype.enum = function(e) {
+        }, e.prototype.enum = function(e) {
           return this.propertyFromPath(e, c.Enum)
-        }, module.prototype.list = function(e) {
+        }, e.prototype.list = function(e) {
           return this.propertyFromPath(e, c.List)
-        }, module.prototype.image = function(e) {
+        }, e.prototype.image = function(e) {
           return this.propertyFromPath(e, c.Image)
-        }, module.prototype.artboard = function(e) {
+        }, e.prototype.artboard = function(e) {
           return this.propertyFromPath(e, c.Artboard)
-        }, module.prototype.viewModel = function(e) {
+        }, e.prototype.viewModel = function(e) {
           var t = e.split("/"),
             n = t.length > 1 ? this.viewModelFromPathSegments(t.slice(0, t.length - 1), 0) : this;
           return null != n ? n.internalViewModelInstance(t[t.length - 1]) : null
-        }, module.prototype.internalReplaceViewModel = function(e, t) {
+        }, e.prototype.internalReplaceViewModel = function(e, t) {
           var n;
           if (null !== t.runtimeInstance) {
             var r = (null == (n = this._runtimeInstance) ? true : n.replaceViewModel(e, t.runtimeInstance)) || false;
@@ -4989,31 +4989,31 @@
             return r
           }
           returnfalse
-        }, module.prototype.replaceViewModel = function(e, t) {
+        }, e.prototype.replaceViewModel = function(e, t) {
           var n, r = e.split("/"),
             i = r.length > 1 ? this.viewModelFromPathSegments(r.slice(0, r.length - 1), 0) : this;
           return null != (n = null == i ? true : i.internalReplaceViewModel(r[r.length - 1], t)) && n
-        }, module.prototype.incrementReferenceCount = function() {
+        }, e.prototype.incrementReferenceCount = function() {
           var e;
-          this._referenceCount++, null == (e = this._runtimeInstance) || module.incrementReferenceCount()
-        }, module.prototype.decrementReferenceCount = function() {
+          this._referenceCount++, null == (e = this._runtimeInstance) || e.incrementReferenceCount()
+        }, e.prototype.decrementReferenceCount = function() {
           var e;
-          this._referenceCount--, null == (e = this._runtimeInstance) || module.decrementReferenceCount()
-        }, Object.defineProperty(module.prototype, "properties", {
+          this._referenceCount--, null == (e = this._runtimeInstance) || e.decrementReferenceCount()
+        }, Object.defineProperty(e.prototype, "properties", {
           get: function() {
             var e;
-            return (null == (e = this._runtimeInstance) ? true : module.getProperties().map(function(e) {
+            return (null == (e = this._runtimeInstance) ? true : e.getProperties().map(function(e) {
               return m({}, e)
             })) || []
           },
           enumerable: false,
           configurable: true
-        }), module.prototype.internalIncrementReferenceCount = function() {
+        }), e.prototype.internalIncrementReferenceCount = function() {
           this._referenceCount++
-        }, module.prototype.cleanup = function() {
+        }, e.prototype.cleanup = function() {
           var e, t = this;
           if (this._referenceCount--, this._referenceCount <= 0) {
-            this.selfUnref && (null == (e = this._runtimeInstance) || module.unref()), this._runtimeInstance = null, this.clearCallbacks(), this._propertiesWithCallbacks = [], this._viewModelInstances.forEach(function(e) {
+            this.selfUnref && (null == (e = this._runtimeInstance) || e.unref()), this._runtimeInstance = null, this.clearCallbacks(), this._propertiesWithCallbacks = [], this._viewModelInstances.forEach(function(e) {
               e.cleanup()
             }), this._viewModelInstances.clear();
             var n = E([], this._children, true);
@@ -5025,34 +5025,34 @@
               e.removeFromViewModelCallbacks(t)
             })
           }
-        }, module
+        }, e
       }(),
       Z = function() {
         function e(e, t) {
           this.callbacks = [], this._viewModelInstanceValue = e, this._parentViewModel = t
         }
-        return module.prototype.on = function(e) {
+        return e.prototype.on = function(e) {
           0 === this.callbacks.length && this._viewModelInstanceValue.clearChanges(), this.callbacks.includes(e) || (this.callbacks.push(e), this._parentViewModel.addToPropertyCallbacks(this))
-        }, module.prototype.off = function(e) {
+        }, e.prototype.off = function(e) {
           e ? this.callbacks = this.callbacks.filter(function(t) {
             return t !== e
           }) : this.callbacks.length = 0, 0 === this.callbacks.length && this._parentViewModel.removeFromPropertyCallbacks(this)
-        }, module.prototype.internalHandleCallback = function(e) {}, module.prototype.handleCallbacks = function() {
+        }, e.prototype.internalHandleCallback = function(e) {}, e.prototype.handleCallbacks = function() {
           var e = this;
           this._viewModelInstanceValue.hasChanged && this.callbacks.forEach(function(t) {
             e.internalHandleCallback(t)
           })
-        }, module.prototype.clearChanges = function() {
+        }, e.prototype.clearChanges = function() {
           this._viewModelInstanceValue.clearChanges()
-        }, module.prototype.clearCallbacks = function() {
+        }, e.prototype.clearCallbacks = function() {
           this.callbacks.length = 0
-        }, Object.defineProperty(module.prototype, "name", {
+        }, Object.defineProperty(e.prototype, "name", {
           get: function() {
             return this._viewModelInstanceValue.name
           },
           enumerable: false,
           configurable: true
-        }), module
+        }), e
       }(),
       F = function(e) {
         function t(t, n) {

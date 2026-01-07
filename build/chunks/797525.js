@@ -15,13 +15,13 @@ let s = (0, Chunk972959.H)(() => ({
   minimizeToTray: true
 }));
 async function u() {
-  let t = await Chunk998502.ZP.getOpenOnStart(),
-    e = await Chunk998502.ZP.getSetting("START_MINIMIZED", false),
-    n = await Chunk998502.ZP.getSetting("MINIMIZE_TO_TRAY", true);
+  let t = await l.ZP.getOpenOnStart(),
+    e = await l.ZP.getSetting("START_MINIMIZED", false),
+    n = await l.ZP.getSetting("MINIMIZE_TO_TRAY", true);
   s.setState({
-    openOnStartup: module,
-    startMinimized: exports,
-    minimizeToTray: require
+    openOnStartup: t,
+    startMinimized: e,
+    minimizeToTray: n
   })
 }
 

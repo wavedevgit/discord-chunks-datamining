@@ -11,16 +11,16 @@ var Chunk915009 = require("./915009.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let T = (0, Chunk509613.qs)(Chunk313789.n.DATA_USAGE_QUESTS_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.sJYh5t),
-  useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.cf9mvV, {
-    helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
+  useTitle: () => o.intl.string(o.t.sJYh5t),
+  useSubtitle: () => o.intl.format(o.t.cf9mvV, {
+    helpdeskArticle: s.Z.getArticleURL(a.BhN.QUESTS_PRIVACY_CONTROLS)
   }),
   useValue: function() {
-    return !Chunk695346.bh.useSetting()
+    return !u.bh.useSetting()
   },
   setValue: function(t) {
     u.bh.updateSetting(!t)
   },
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.VkS7Yd)],
+  useSearchTerms: () => [o.intl.string(o.t.VkS7Yd)],
   useDisabled: Chunk915009.LN
 })

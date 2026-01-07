@@ -14,16 +14,16 @@ function s() {
     balance: e,
     isFetching: t,
     error: n
-  } = (0, Chunk442837.cj)([Chunk479766.Z], () => ({
-    balance: Chunk479766.Z.balance,
-    isFetching: Chunk479766.Z.isFetchingBalance,
-    error: Chunk479766.Z.fetchBalanceError
+  } = (0, i.cj)([o.Z], () => ({
+    balance: o.Z.balance,
+    isFetching: o.Z.isFetchingBalance,
+    error: o.Z.fetchBalanceError
   }));
-  return (0, Chunk473749.useEffect)(() => {
-    null !== module || null !== require || exports || (0, Chunk751648.ZO)()
-  }, [module, require, exports]), {
-    balance: module,
-    isFetching: exports,
-    error: require
+  return (0, r.useEffect)(() => {
+    null !== e || null !== n || t || (0, a.ZO)()
+  }, [e, n, t]), {
+    balance: e,
+    isFetching: t,
+    error: n
   }
 }

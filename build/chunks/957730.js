@@ -375,7 +375,7 @@ let V = Chunk428595.Z.RULES,
     spoiler: {
       match: o().anyScopeRegex(Chunk981631.$92),
       parse: () => ({
-        content: "<".concat(Chunk388032.intl.string(Chunk388032.t["F+x38C"]).toLowerCase(), ">")
+        content: "<".concat(L.intl.string(L.t["F+x38C"]).toLowerCase(), ">")
       })
     },
     staticRouteLink: {
@@ -386,12 +386,12 @@ let V = Chunk428595.Z.RULES,
     },
     timestamp: U(M({}, V.timestamp), {
       parse() {
-        for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-        let r = V.timestamp.parse(...exports);
-        return "text" === Chunk392711.type ? {
-          content: Chunk392711.content
+        for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+        let r = V.timestamp.parse(...t);
+        return "text" === r.type ? {
+          content: r.content
         } : {
-          content: Chunk392711.formatted
+          content: r.formatted
         }
       }
     }),

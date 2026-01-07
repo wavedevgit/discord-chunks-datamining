@@ -286,18 +286,18 @@ let en = (0, Chunk560997.Zc)("privacy", "friendSourceFlags", e => {
     baseSetting: (0, Chunk560997.Zc)("debug", "rtcPanelShowVoiceStates", e => null == e ? true : e.value, e => o.D5.create({
       value: e
     })),
-    isEligible: () => (0, Chunk262572.d)({
+    isEligible: () => (0, d.d)({
       location: "UserSettings",
       autoTrackExposure: false
     }).enableRTCPanelVoiceStatesByDefault,
-    useIsEligible: () => (0, Chunk262572.t)({
+    useIsEligible: () => (0, d.t)({
       location: "UserSettings",
       autoTrackExposure: false
     }).enableRTCPanelVoiceStatesByDefault,
     ineligibleDefault: false,
     eligibleDefault: () => true,
     onUseDefault: () => {
-      (0, Chunk262572.d)({
+      (0, d.d)({
         location: "UserSettings"
       })
     }
@@ -349,11 +349,11 @@ let ed = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("voiceAndVideo", "afkTimeout", e => null == e ? true : e.value, e => o.yC.create({
       value: e
     })),
-    isEligible: () => (0, Chunk291741.mO)("user_settings"),
-    useIsEligible: () => (0, Chunk291741.Mk)("user_settings"),
+    isEligible: () => (0, c.mO)("user_settings"),
+    useIsEligible: () => (0, c.Mk)("user_settings"),
     ineligibleDefault: 600,
-    eligibleDefault: () => (0, Chunk291741.fD)("user_settings"),
-    onUseDefault: () => (0, Chunk291741.Dl)("user_settings")
+    eligibleDefault: () => (0, c.fD)("user_settings"),
+    onUseDefault: () => (0, c.Dl)("user_settings")
   }),
   ef = (0, Chunk560997.Zc)("textAndImages", "viewNsfwGuilds", e => {
     var t;
@@ -530,10 +530,10 @@ let ew = new Set([Chunk85746.Z.ALL, Chunk85746.Z.UNREADS, Chunk85746.Z.NONE]),
     value: e
   })), "text", "gifAutoPlay"), "gifAutoPlay", () => {
     var e;
-    return null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value
-  }, () => (0, Chunk442837.e7)([Chunk263937.Z], () => {
+    return null == (e = p.Z.getOverride("gifAutoPlay")) ? true : e.value
+  }, () => (0, i.e7)([p.Z], () => {
     var e;
-    return null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value
+    return null == (e = p.Z.getOverride("gifAutoPlay")) ? true : e.value
   })),
   eM = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
     var t;
@@ -542,10 +542,10 @@ let ew = new Set([Chunk85746.Z.ALL, Chunk85746.Z.UNREADS, Chunk85746.Z.NONE]),
     value: e
   })), "text", "animateEmoji"), "animateEmoji", () => {
     var e;
-    return null == (e = Chunk263937.Z.getOverride("animateEmoji")) ? true : module.value
-  }, () => (0, Chunk442837.e7)([Chunk263937.Z], () => {
+    return null == (e = p.Z.getOverride("animateEmoji")) ? true : e.value
+  }, () => (0, i.e7)([p.Z], () => {
     var e;
-    return null == (e = Chunk263937.Z.getOverride("animateEmoji")) ? true : module.value
+    return null == (e = p.Z.getOverride("animateEmoji")) ? true : e.value
   })),
   ek = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateStickers", e => {
     var t;
@@ -554,10 +554,10 @@ let ew = new Set([Chunk85746.Z.ALL, Chunk85746.Z.UNREADS, Chunk85746.Z.NONE]),
     value: e
   })), "text", "animateStickers"), "animateStickers", () => {
     var e;
-    return null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
-  }, () => (0, Chunk442837.e7)([Chunk263937.Z], () => {
+    return null == (e = p.Z.getOverride("animateStickers")) ? true : e.value
+  }, () => (0, i.e7)([p.Z], () => {
     var e;
-    return null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
+    return null == (e = p.Z.getOverride("animateStickers")) ? true : e.value
   })),
   eU = [],
   eG = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eU, e => e),
@@ -568,17 +568,17 @@ let ew = new Set([Chunk85746.Z.ALL, Chunk85746.Z.UNREADS, Chunk85746.Z.NONE]),
   eB = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eF, e => e);
 (0, Chunk560997.TG)({
   baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
-  isEligible: () => (0, Chunk362352.o0)("user_settings"),
-  useIsEligible: () => (0, Chunk362352.Yd)("user_settings"),
+  isEligible: () => (0, u.o0)("user_settings"),
+  useIsEligible: () => (0, u.Yd)("user_settings"),
   ineligibleDefault: Chunk524437.E5.OFF,
-  eligibleDefault: () => Chunk524437.E5.ON_FOR_LARGE_GUILDS
+  eligibleDefault: () => a.E5.ON_FOR_LARGE_GUILDS
 });
 let eV = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e === a.GI.ACTIVITY_STATUS_UNSET ? null : e, e => null != e ? e : a.GI.ACTIVITY_STATUS_OFF),
-    isEligible: () => (0, Chunk362352.o0)("user_settings"),
-    useIsEligible: () => (0, Chunk362352.Yd)("user_settings"),
+    isEligible: () => (0, u.o0)("user_settings"),
+    useIsEligible: () => (0, u.Yd)("user_settings"),
     ineligibleDefault: Chunk524437.GI.ACTIVITY_STATUS_OFF,
-    eligibleDefault: () => Chunk524437.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS
+    eligibleDefault: () => a.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS
   }),
   eH = (0, Chunk560997.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? true : e.value, e => o.D5.create({
     value: e

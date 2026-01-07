@@ -39,12 +39,12 @@ function m(e) {
 let h = (() => {
     let e = "".concat(location.protocol, "//").concat(location.host, "/__development/source_maps"),
       t = null,
-      n = new Chunk261470.Z(5 * Chunk70956.Z.Millis.SECOND, +Chunk70956.Z.Millis.MINUTE, true),
+      n = new i.Z(5 * d.Z.Millis.SECOND, +d.Z.Millis.MINUTE, true),
       r = () => {
-        Chunk544891.tn.put({
-          url: module,
+        s.tn.put({
+          url: e,
           headers: {
-            Authorization: Chunk213919.getToken()
+            Authorization: a.getToken()
           },
           oldFormErrors: true,
           rejectWithError: true
@@ -53,7 +53,7 @@ let h = (() => {
             sourceMapsEnabled: false
           })) : 200 !== e.status ? t = setTimeout(r, n.fail()) : (n.succeed(), t = setTimeout(r, e.body.sourceMapCookieTTLSeconds * d.Z.Millis.SECOND * .75))
         }, () => {
-          t = setTimeout(r, require.fail())
+          t = setTimeout(r, n.fail())
         })
       };
     return {
@@ -120,8 +120,8 @@ function S(e) {
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    let e = Chunk433517.K.get(g);
-    null != module && (b = m({}, E, module))
+    let e = l.K.get(g);
+    null != e && (b = m({}, E, e))
   }
   get isTracingRequests() {
     return b.trace

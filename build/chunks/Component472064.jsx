@@ -43,8 +43,8 @@ class N extends Chunk473749.Component {
       manifestIds: l,
       buildSizeKB: n
     } = this.props;
-    null != require && null != Chunk54381 && null == Chunk473749 && Chunk570140.Z.wait(() => {
-      (0, Chunk689241.q)(module, exports, require, Chunk54381)
+    null != s && null != l && null == n && r.Z.wait(() => {
+      (0, o.q)(t, e, s, l)
     })
   }
   componentDidMount() {
@@ -54,7 +54,7 @@ class N extends Chunk473749.Component {
       buildId: s,
       manifestIds: l
     } = this.props;
-    null == require || null == Chunk54381 ? (0, Chunk57513.l)(module, exports) : this.fetchInstallSize()
+    null == s || null == l ? (0, h.l)(t, e) : this.fetchInstallSize()
   }
   componentDidUpdate(t) {
     (this.props.buildId !== t.buildId || this.props.manifestIds !== t.manifestIds) && this.fetchInstallSize()
@@ -69,10 +69,10 @@ class N extends Chunk473749.Component {
       hasError: e,
       hasAcceptedNeccessaryTerms: s
     } = this.state;
-    return (0, Chunk54381.jsx)(Chunk481060.Button, {
+    return (0, l.jsx)(i.Button, {
       variant: "active",
-      text: Chunk388032.intl.string(Chunk388032.t.nL0WvC),
-      disabled: exports || null == module || !require,
+      text: _.intl.string(_.t.nL0WvC),
+      disabled: e || null == t || !s,
       onClick: this.handleInstall
     })
   }
@@ -84,63 +84,63 @@ class N extends Chunk473749.Component {
     } = this.props, {
       selectedInstallationPath: n,
       isInstalling: a
-    } = this.state, r = null != module && module.getSplashURL(440);
-    return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
-      transitionState: require,
-      size: Chunk481060.CgR.SMALL,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.PphjtJ),
+    } = this.state, r = null != t && t.getSplashURL(440);
+    return (0, l.jsxs)(i.Y0X, {
+      transitionState: s,
+      size: i.CgR.SMALL,
+      "aria-label": _.intl.string(_.t.PphjtJ),
       parentComponent: "ApplicationInstallationModal",
-      children: [null != Chunk570140 ? (0, Chunk54381.jsx)("div", {
-        className: Chunk467721.splash,
+      children: [null != r ? (0, l.jsx)("div", {
+        className: b.splash,
         style: {
-          backgroundImage: "url(".concat(Chunk570140, ")")
+          backgroundImage: "url(".concat(r, ")")
         }
-      }) : null, (0, Chunk54381.jsxs)(Chunk481060.xBx, {
-        justify: Chunk600164.Z.Justify.BETWEEN,
-        children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
+      }) : null, (0, l.jsxs)(i.xBx, {
+        justify: I.Z.Justify.BETWEEN,
+        children: [(0, l.jsx)(I.Z.Child, {
           grow: 1,
-          children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
+          children: (0, l.jsx)(i.Heading, {
             variant: "heading-lg/semibold",
-            children: Chunk388032.intl.string(Chunk388032.t.PphjtJ)
+            children: _.intl.string(_.t.PphjtJ)
           })
-        }), (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
+        }), (0, l.jsx)(I.Z.Child, {
           grow: 0,
-          children: (0, Chunk54381.jsx)(Chunk481060.olH, {
+          children: (0, l.jsx)(i.olH, {
             onClick: this.close
           })
         })]
-      }), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
-        children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
-          align: Chunk600164.Z.Align.CENTER,
-          children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
-            game: module,
-            size: Chunk925329.A.MEDIUM,
-            className: Chunk467721.gameIcon
-          }), (0, Chunk54381.jsx)("div", {
-            className: Chunk467721.gameName,
-            children: null != module && module.name
-          }), null != exports ? (0, Chunk54381.jsx)("div", {
-            className: Chunk467721.installSize,
-            children: (0, Chunk424218.BU)(exports, {
+      }), (0, l.jsxs)(i.hzk, {
+        children: [(0, l.jsxs)(I.Z, {
+          align: I.Z.Align.CENTER,
+          children: [(0, l.jsx)(f.Z, {
+            game: t,
+            size: f.A.MEDIUM,
+            className: b.gameIcon
+          }), (0, l.jsx)("div", {
+            className: b.gameName,
+            children: null != t && t.name
+          }), null != e ? (0, l.jsx)("div", {
+            className: b.installSize,
+            children: (0, T.BU)(e, {
               useKibibytes: true
             })
           }) : null]
-        }), (0, Chunk54381.jsx)("div", {
-          className: Chunk467721.divider
-        }), (0, Chunk54381.jsx)(Chunk94692.Z, {
+        }), (0, l.jsx)("div", {
+          className: b.divider
+        }), (0, l.jsx)(C.Z, {
           autoFocus: true,
-          className: Chunk467721.selector,
-          value: Chunk473749,
-          requiredDiskKB: exports,
+          className: b.selector,
+          value: n,
+          requiredDiskKB: e,
           onChange: this.handleChangePath
-        }), (0, Chunk54381.jsx)(Chunk672971.Z, {
-          eulaId: module.eulaId,
-          applicationName: module.name,
-          disabled: Chunk442837,
+        }), (0, l.jsx)(c.Z, {
+          eulaId: t.eulaId,
+          applicationName: t.name,
+          disabled: a,
           onChange: this.handlePurchaseTermsChange,
-          className: Chunk467721.terms
+          className: b.terms
         })]
-      }), (0, Chunk54381.jsx)(Chunk481060.mzw, {
+      }), (0, l.jsx)(i.mzw, {
         children: this.renderButton()
       })]
     })

@@ -19,27 +19,27 @@ class u extends Chunk473749.PureComponent {
       action: n,
       className: i
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk943182.wrapper, Chunk473749),
-      children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-        className: Chunk943182.flexWrapper,
-        direction: Chunk600164.Z.Direction.VERTICAL,
-        align: Chunk600164.Z.Align.CENTER,
-        justify: Chunk600164.Z.Justify.CENTER,
-        children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
+    return (0, r.jsx)("div", {
+      className: o()(c.wrapper, i),
+      children: (0, r.jsxs)(l.Z, {
+        className: c.flexWrapper,
+        direction: l.Z.Direction.VERTICAL,
+        align: l.Z.Align.CENTER,
+        justify: l.Z.Justify.CENTER,
+        children: [(0, r.jsx)(l.Z.Child, {
           grow: 0,
-          className: Chunk943182.image
-        }), (0, Chunk54381.jsxs)(Chunk600164.Z.Child, {
+          className: c.image
+        }), (0, r.jsxs)(l.Z.Child, {
           grow: 0,
-          className: Chunk943182.text,
-          children: [(0, Chunk54381.jsx)(Chunk481060.H, {
-            className: Chunk943182.title,
-            children: exports
-          }), null != module ? (0, Chunk54381.jsx)("div", {
-            className: Chunk943182.note,
-            children: module
+          className: c.text,
+          children: [(0, r.jsx)(s.H, {
+            className: c.title,
+            children: t
+          }), null != e ? (0, r.jsx)("div", {
+            className: c.note,
+            children: e
           }) : null]
-        }), require]
+        }), n]
       })
     })
   }

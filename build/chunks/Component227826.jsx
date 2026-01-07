@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk293389 = require("./293389.jsx");
 let r = (0, Chunk509613.ON)(Chunk313789.n.REGISTERED_GAMES_ADDED_GAMES_SETTING, {
   useSearchTerms: () => [],
-  Component: () => (0, Chunk54381.jsx)(Chunk293389.bs, {
+  Component: () => (0, i.jsx)(u.bs, {
     hideHeader: true
   })
 })

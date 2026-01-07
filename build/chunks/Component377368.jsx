@@ -35,10 +35,10 @@ function y(e, t, n) {
 let I = new Chunk710845.Z("SoundboardManager");
 class C extends Chunk131468.Z {
   _initialize() {
-    super._initialize(), __OVERLAY__ || Chunk570140.Z.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
+    super._initialize(), __OVERLAY__ || l.Z.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
   }
   _terminate() {
-    super._terminate(), __OVERLAY__ || Chunk570140.Z.unsubscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
+    super._terminate(), __OVERLAY__ || l.Z.unsubscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
   }
   constructor(...e) {
     var t;
@@ -53,7 +53,7 @@ class C extends Chunk131468.Z {
         r = arguments.length > 2 ? arguments[2] : true,
         i = arguments.length > 3 ? arguments[3] : true,
         l = null != i && d.Z.getVoiceChannelId() === i;
-      if ((null == i || l) && !u.Z.isDeaf() && !h.Z.isLocalSoundboardMuted(r)) try {
+      if ((null == i || l) && !u.Z.isDeaf() && !m.Z.isLocalSoundboardMuted(r)) try {
         let i = {
           soundKey: "".concat(r, "-").concat(e),
           soundURL: (0, b.Z)(e),
@@ -72,7 +72,7 @@ class C extends Chunk131468.Z {
       if (null == e) return;
       let l = c.Z.getChannel(t),
         a = p.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD);
-      null != l && (0, m.Z)(l) && null != a && s.Z.hasHotspot(o.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
+      null != l && (0, h.Z)(l) && null != a && s.Z.hasHotspot(o.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("69208").then(n.bind(n, 490166));

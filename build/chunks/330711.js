@@ -10,7 +10,7 @@ require("./211604.js");
 let a = new Chunk627420.ZP({
   initialLocale: Chunk973361.parse(document.cookie).locale,
   getMessages: e => n(248192)("./".concat(e, ".json")),
-  getLanguages: () => require("./34859.js")
+  getLanguages: () => n(34859)
 });
 a.addListener("locale", e => {
   document.cookie = "locale=".concat(e, ";path=/")

@@ -20,7 +20,7 @@ let g = new Map,
   E = null;
 
 function _() {
-  return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
+  return d.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
     } = (0, c.my)(t), r = true === g.get(n), i = v.get(t) !== r;
@@ -30,11 +30,11 @@ function _() {
 
 function y() {
   var e;
-  let t = null != (e = Chunk19780.Z.getUserIds()) ? module : new Set,
-    n = Chunk314897.default.getId(),
+  let t = null != (e = u.Z.getUserIds()) ? e : new Set,
+    n = s.default.getId(),
     r = true;
-  for (let e of exports)
-    if (require !== module && true !== g.get(module)) {
+  for (let e of t)
+    if (n !== e && true !== g.get(e)) {
       r = false;
       break
     } let i = r !== h;
@@ -66,7 +66,7 @@ function O() {
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk19780.Z, Chunk959457.Z, Chunk729303.Z, Chunk651941.Z)
+    this.waitFor(s.default, u.Z, d.Z, p.Z, b.Z)
   }
   isCallVerified() {
     return h

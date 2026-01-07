@@ -43,55 +43,55 @@ let v = e => {
       churnUserDiscountOffer: m,
       isFetchingChurnDiscountOffer: O,
       planId: S
-    } = (0, Chunk594135.a)(), I = (0, Chunk442837.e7)([Chunk594174.default], () => {
-      let e = Chunk594174.default.getCurrentUser();
-      return o()(null != module, "ProfileItem: currentUser cannot be undefined"), module
+    } = (0, g.a)(), I = (0, l.e7)([d.default], () => {
+      let e = d.default.getCurrentUser();
+      return o()(null != e, "ProfileItem: currentUser cannot be undefined"), e
     });
-    Chunk473749.useEffect(() => {
-      (0, Chunk484459.Z)(I.id, I.getAvatarURL(null, 80))
+    i.useEffect(() => {
+      (0, u.Z)(I.id, I.getAvatarURL(null, 80))
     }, [I]);
-    let T = (0, Chunk847903.Z)(),
+    let T = (0, p.Z)(),
       C = "US" === T.ipCountryCode && "CA" === T.ipSubdivisionCode;
-    if (Chunk436551) return (0, Chunk54381.jsx)(Chunk793030.Modal, {
-      transitionState: module,
+    if (O) return (0, r.jsx)(s.Modal, {
+      transitionState: e,
       title: "",
       actions: [],
       onClose: async () => {
-        exports()
+        t()
       }
     });
-    let A = (0, Chunk74538.Ju)(S),
-      N = A ? Chunk388032.intl.string(Chunk353149.default.z2vO3h) : Chunk388032.intl.string(Chunk388032.t.PWq8TL),
-      P = A ? Chunk388032.intl.formatToPlainString(Chunk353149.default.stVlc6, {
-        cooldownMonths: Chunk282793.T9
-      }) : Chunk388032.intl.string(Chunk388032.t.SOC4ML),
+    let A = (0, f.Ju)(S),
+      N = A ? y.intl.string(b.default.z2vO3h) : y.intl.string(y.t.PWq8TL),
+      P = A ? y.intl.formatToPlainString(b.default.stVlc6, {
+        cooldownMonths: E.T9
+      }) : y.intl.string(y.t.SOC4ML),
       R = [];
-    return null != Chunk10508 ? R.push({
-      text: Chunk388032.intl.string(Chunk388032.t.zrCzVB),
-      onClick: () => Chunk512722(Chunk45474.R.CONFIRM_DISCOUNT),
+    return null != m ? R.push({
+      text: y.intl.string(y.t.zrCzVB),
+      onClick: () => a(h.R.CONFIRM_DISCOUNT),
       variant: "secondary",
-      icon: Chunk481060.SrA
+      icon: c.SrA
     }) : R.push({
-      text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
-      onClick: () => exports(),
+      text: y.intl.string(y.t.h9tkAK),
+      onClick: () => t(),
       variant: "secondary"
     }), R.push({
-      text: C ? Chunk388032.intl.string(Chunk388032.t.PfnxqD) : Chunk388032.intl.string(Chunk388032.t["3PatSz"]),
-      onClick: () => Chunk512722(Chunk45474.R.CONFIRM),
+      text: C ? y.intl.string(y.t.PfnxqD) : y.intl.string(y.t["3PatSz"]),
+      onClick: () => a(h.R.CONFIRM),
       variant: "primary"
-    }), (0, Chunk54381.jsx)(Chunk793030.Modal, {
-      transitionState: module,
+    }), (0, r.jsx)(s.Modal, {
+      transitionState: e,
       title: N,
       subtitle: P,
       actions: R,
-      preview: null !== Chunk10508 && (0, Chunk54381.jsx)(v, {
-        churnUserDiscountOffer: Chunk10508
+      preview: null !== m && (0, r.jsx)(v, {
+        churnUserDiscountOffer: m
       }),
-      onClose: async () => exports(),
-      children: (0, Chunk54381.jsx)(Chunk807163.g, {
+      onClose: async () => t(),
+      children: (0, r.jsx)(_.g, {
         currentUser: I,
-        premiumType: require,
-        onClose: exports,
+        premiumType: n,
+        onClose: t,
         isDowngrade: false,
         isPremiumRebrand: true
       })

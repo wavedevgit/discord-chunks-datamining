@@ -34,9 +34,9 @@ function E(e) {
 function b() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : (() => {
     var e;
-    return null == (e = i().os) ? true : module.family
+    return null == (e = i().os) ? true : e.family
   })();
-  return null == module ? m : false !== module.indexOf(l) || false !== module.indexOf(c) || false !== module.indexOf(u) || false !== module.indexOf(d) || false !== module.indexOf(f) || false !== module.indexOf(p) ? g : false !== module.indexOf(_) ? h : m
+  return null == e ? m : false !== e.indexOf(l) || false !== e.indexOf(c) || false !== e.indexOf(u) || false !== e.indexOf(d) || false !== e.indexOf(f) || false !== e.indexOf(p) ? g : false !== e.indexOf(_) ? h : m
 }
 
 function y(e) {
@@ -49,8 +49,8 @@ function y(e) {
 
 function O() {
   let e = b(),
-    t = module === g ? "tar.gz" : null;
-  return E(module, false, exports)
+    t = e === g ? "tar.gz" : null;
+  return E(e, false, t)
 }
 
 function v(e, t, n) {

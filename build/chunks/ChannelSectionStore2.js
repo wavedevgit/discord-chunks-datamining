@@ -92,7 +92,7 @@ function j(e) {
 }
 
 function M() {
-  w && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), A && (A = j(A)), C = j(C)
+  w && u.S.dispatch(E.CkL.SEARCH_RESULTS_CLOSE), A && (A = j(A)), C = j(C)
 }
 
 function k() {
@@ -100,7 +100,7 @@ function k() {
 }
 
 function U() {
-  N || Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), N = j(N)
+  N || u.S.dispatch(E.CkL.SEARCH_RESULTS_CLOSE), N = j(N)
 }
 
 function G(e) {
@@ -200,13 +200,13 @@ function Y(e) {
 function W() {
   let e = false;
   for (let t in P) {
-    let n = P[exports];
-    if (require.type === Chunk897473.tI.VIEW_THREAD || require.type === Chunk897473.tI.VIEW_CHANNEL) {
-      let r = Chunk592125.Z.getChannel(require.channelId);
-      null != r && Chunk496675.Z.can(Chunk231338.Pl.VIEW_CHANNEL, r) || (delete P[exports], e = true)
+    let n = P[t];
+    if (n.type === c.tI.VIEW_THREAD || n.type === c.tI.VIEW_CHANNEL) {
+      let r = f.Z.getChannel(n.channelId);
+      null != r && _.Z.can(y.Pl.VIEW_CHANNEL, r) || (delete P[t], e = true)
     }
   }
-  return module
+  return e
 }
 
 function K(e) {
@@ -217,13 +217,13 @@ function K(e) {
 }
 
 function z() {
-  let e = null != D && Chunk171900.Z.hasSearchState(D);
-  if (module === w) returnfalse;
-  w = module
+  let e = null != D && l.Z.hasSearchState(D);
+  if (e === w) returnfalse;
+  w = e
 }
 
 function q() {
-  Chunk873546.tq && C && (C = false, A = false)
+  i.tq && C && (C = false, A = false)
 }
 
 function Q(e) {

@@ -37,7 +37,7 @@ function o(e) {
 }
 
 function s() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_INIT"
   })
 }

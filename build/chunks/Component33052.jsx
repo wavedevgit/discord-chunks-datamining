@@ -16,37 +16,37 @@ var Chunk54381 = require("./54381.js"),
 
 function f() {
   var e;
-  let t = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+  let t = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
     {
       claimableRewards: n
-    } = (0, Chunk987209.wD)(),
-    f = (0, Chunk347896.Z)(),
+    } = (0, s.wD)(),
+    f = (0, l.Z)(),
     p = null == f ? true : f.planSelection;
-  if (null == p || null == require || 0 === require.length) return null;
-  let _ = (0, Chunk717401.Yr)(null == (e = p.getBannerImageUrl) ? true : module.call(p)),
-    m = (0, Chunk717401.Tl)(p.gradientConfig, {
+  if (null == p || null == n || 0 === n.length) return null;
+  let _ = (0, c.Yr)(null == (e = p.getBannerImageUrl) ? true : e.call(p)),
+    m = (0, c.Tl)(p.gradientConfig, {
       defaultAngle: 180
     });
-  return (0, Chunk54381.jsxs)("div", {
-    className: Chunk383475.promotionalGiftMessage,
+  return (0, r.jsxs)("div", {
+    className: d.promotionalGiftMessage,
     style: null != _ ? _ : m,
-    children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk383475.promotionalTextSection,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+    children: [(0, r.jsxs)("div", {
+      className: d.promotionalTextSection,
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: p.heading()
-      }), null != p.subheading && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), null != p.subheading && (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "always-white",
-        children: p.subheading(require.length)
+        children: p.subheading(n.length)
       })]
-    }), (0, Chunk54381.jsx)("div", {
-      className: Chunk383475.avatar,
-      children: (0, Chunk54381.jsx)(Chunk897942.Z, {
-        maxRewardImageSrc: p.getImageUrl(true, exports),
-        claimableRewards: require,
-        size: Chunk481060.EFr.SIZE_80
+    }), (0, r.jsx)("div", {
+      className: d.avatar,
+      children: (0, r.jsx)(u.Z, {
+        maxRewardImageSrc: p.getImageUrl(true, t),
+        claimableRewards: n,
+        size: a.EFr.SIZE_80
       })
     })]
   })

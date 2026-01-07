@@ -19,32 +19,32 @@ var Chunk925513 = require("./925513.js"),
   Chunk693976 = require("./693976.js");
 
 function m() {
-  let e = (0, Chunk925513.v6)(),
+  let e = (0, i.v6)(),
     t = [{
-      title: Chunk388032.intl.string(Chunk388032.t.GYpoAq),
-      component: () => (0, Chunk54381.jsx)(Chunk821035.P, {}),
+      title: p.intl.string(p.t.GYpoAq),
+      component: () => (0, r.jsx)(s.P, {}),
       orientation: "vertical",
-      setting: Chunk726985.s6.SEXUALLY_EXPLICIT_MEDIA_REDACTION
+      setting: d.s6.SEXUALLY_EXPLICIT_MEDIA_REDACTION
     }, {
-      title: Chunk388032.intl.string(Chunk388032.t["16/3Bi"]),
-      component: () => (0, Chunk54381.jsx)(Chunk768604.I, {}),
+      title: p.intl.string(p.t["16/3Bi"]),
+      component: () => (0, r.jsx)(l.I, {}),
       orientation: "vertical",
-      setting: Chunk726985.s6.GORE_MEDIA_REDACTION
+      setting: d.s6.GORE_MEDIA_REDACTION
     }];
-  return (0, Chunk54381.jsxs)(Chunk838436.U, {
-    setting: Chunk726985.s6.SENSITIVE_CONTENT_FILTERS,
-    scrollPosition: Chunk526761.FY.EXPLICIT_MEDIA_REDACTION_V2,
-    children: [(0, Chunk54381.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t["Hj/But"]),
-      description: Chunk388032.intl.format(Chunk388032.t.dliU4j, {
-        learnMoreLink: Chunk63063.Z.getArticleURL(module)
+  return (0, r.jsxs)(c.U, {
+    setting: d.s6.SENSITIVE_CONTENT_FILTERS,
+    scrollPosition: u.FY.EXPLICIT_MEDIA_REDACTION_V2,
+    children: [(0, r.jsx)(c.H, {
+      header: p.intl.string(p.t["Hj/But"]),
+      description: p.intl.format(p.t.dliU4j, {
+        learnMoreLink: a.Z.getArticleURL(e)
       })
-    }), (0, Chunk54381.jsx)(Chunk526156.Z, {
-      parentSetting: Chunk726985.s6.CONTENT_SOCIAL,
-      settingsSection: Chunk981631.oAB.CONTENT_AND_SOCIAL,
-      tabs: exports,
+    }), (0, r.jsx)(o.Z, {
+      parentSetting: d.s6.CONTENT_SOCIAL,
+      settingsSection: f.oAB.CONTENT_AND_SOCIAL,
+      tabs: t,
       orientation: "vertical",
-      tabsClassName: Chunk693976.tabs
+      tabsClassName: _.tabs
     })]
   })
 }

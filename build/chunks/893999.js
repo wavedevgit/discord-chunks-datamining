@@ -38,14 +38,14 @@ function u(e, t) {
 
 function c() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : window,
-    [t, n] = Chunk473749.useState(a(module));
-  return Chunk473749.useEffect(() => {
+    [t, n] = r.useState(a(e));
+  return r.useEffect(() => {
     let t = e => {
       n(e)
     };
-    return o(module).add(exports), () => {
+    return o(e).add(t), () => {
       var n;
-      o(module).delete(exports), 0 === o(module).size && (null == (n = i.get(module)) || require(), i.delete(module), s.delete(module), l.delete(module))
+      o(e).delete(t), 0 === o(e).size && (null == (n = i.get(e)) || n(), i.delete(e), s.delete(e), l.delete(e))
     }
-  }, [module]), exports
+  }, [e]), t
 }

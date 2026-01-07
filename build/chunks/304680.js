@@ -25,13 +25,13 @@ function s(e) {
 }
 
 function l() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "RTC_DEBUG_MODAL_CLOSE"
   })
 }
 
 function c() {
-  Chunk570140.Z.dispatch({
+  r.Z.dispatch({
     type: "RTC_DEBUG_MODAL_OPEN_REPLAY"
   })
 }
@@ -60,7 +60,7 @@ function f(e, t, n) {
 }
 
 function p() {
-  Chunk579806.Z.fileManager.showOpenDialog({
+  i.Z.fileManager.showOpenDialog({
     filters: [{
       name: "All Files",
       extensions: ["*"]

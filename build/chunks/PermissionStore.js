@@ -84,7 +84,7 @@ function L(e) {
 }
 
 function j() {
-  for (let e in A = {}, N = {}, P) P[module] += 1;
+  for (let e in A = {}, N = {}, P) P[e] += 1;
   R += 1
 }
 
@@ -241,7 +241,7 @@ function X(e, t, n, r) {
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk160404.Z, Chunk569471.Z, Chunk41776.Z, Chunk427679.Z, Chunk594174.default)
+    this.waitFor(y.Z, O.ZP, v.Z, c.Z, f.Z, u.Z, d.Z, S.default)
   }
   getChannelPermissions(e) {
     return _.Ec.has(e.type) ? D(e.id) : x(e.id)

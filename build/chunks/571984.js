@@ -30,10 +30,10 @@ class p extends Chunk147913.Z {
     u.d.getState().isEnabled && null != t && this.findAndWatchStream()
   }
   findAndWatchStream() {
-    let e = Chunk944486.Z.getVoiceChannelId();
-    if (null == module) return;
-    let t = Chunk199902.Z.getAllApplicationStreamsForChannel(module)[0];
-    null != exports && (0, Chunk872810.rn)(exports)
+    let e = c.Z.getVoiceChannelId();
+    if (null == e) return;
+    let t = l.Z.getAllApplicationStreamsForChannel(e)[0];
+    null != t && (0, a.rn)(t)
   }
   constructor(...e) {
     super(...e), d(this, "actions", {

@@ -19,14 +19,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk444675 = require("./444675.js");
 
 function h() {
-  let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    [t, h] = Chunk473749.useState(module),
-    g = Chunk473749.useMemo(() => (0, Chunk388032.getAvailableLocales)().map(e => ({
+  let e = (0, a.e7)([c.default], () => c.default.locale),
+    [t, h] = i.useState(e),
+    g = i.useMemo(() => (0, p.getAvailableLocales)().map(e => ({
       value: e.value,
       label: e.name,
       localizedName: p.intl.string(e.localizedName)
     })), []),
-    E = Chunk473749.useCallback(e => {
+    E = i.useCallback(e => {
       let t, i = null == e ? true : e.value;
       if (null == i) return null;
       try {
@@ -44,17 +44,17 @@ function h() {
         })
       })
     }, []),
-    b = Chunk473749.useCallback(e => {
+    b = i.useCallback(e => {
       h(e), m.nextTick(() => {
         l.ZP.updateLocale(e), (0, s.Mr3)(d.USER_SETTINGS_MODAL_KEY) && (0, d.openUserSettings)(u.n.LANGUAGE_AND_TIME_PANEL, {
           section: f.oAB.LANGUAGE
         })
       })
     }, []);
-  return (0, Chunk54381.jsx)(Chunk668339.d, {
-    label: Chunk388032.intl.string(Chunk388032.t["mx+sp7"]),
-    description: Chunk388032.intl.string(Chunk388032.t.rTPlcq),
-    value: exports,
+  return (0, r.jsx)(o.d, {
+    label: p.intl.string(p.t["mx+sp7"]),
+    description: p.intl.string(p.t.rTPlcq),
+    value: t,
     options: g,
     onChange: b,
     renderOptionPrefix: E,

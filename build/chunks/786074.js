@@ -10,24 +10,24 @@ let a = {
   MENTION_EVERYONE: () => ({
     test: "everyone",
     text: "@everyone",
-    description: Chunk388032.intl.string(Chunk388032.t.lHC4zy)
+    description: i.intl.string(i.t.lHC4zy)
   }),
   MENTION_HERE: () => ({
     test: "here",
     text: "@here",
-    description: Chunk388032.intl.string(Chunk388032.t.OE6mOz)
+    description: i.intl.string(i.t.OE6mOz)
   }),
   MENTION_GAME: () => ({
     test: "game",
     text: "@game",
     inlineAutocompleteType: "gameMentionInput",
-    description: Chunk388032.intl.string(Chunk388032.t["1kR88y"])
+    description: i.intl.string(i.t["1kR88y"])
   }),
   MENTION_TIMESTAMP: () => ({
     test: "time",
     text: "@time",
     inlineAutocompleteType: "timestampMentionInput",
-    description: Chunk388032.intl.string(Chunk388032.t.V6L3TV)
+    description: i.intl.string(i.t.V6L3TV)
   }),
-  LAUNCHABLE_APPLICATIONS: () => Chunk490983.Z.launchableApplicationViewItems
+  LAUNCHABLE_APPLICATIONS: () => r.Z.launchableApplicationViewItems
 }

@@ -19,22 +19,22 @@ var Chunk481060 = require("./481060.js"),
   Chunk787224 = require("./787224.js");
 let h = [{
     duration: 15 * Chunk70956.Z.Millis.MINUTE,
-    label: () => Chunk388032.intl.string(Chunk388032.t["8ot6gv"])
+    label: () => p.intl.string(p.t["8ot6gv"])
   }, {
     duration: Chunk70956.Z.Millis.HOUR,
-    label: () => Chunk388032.intl.string(Chunk388032.t.UMWBZr)
+    label: () => p.intl.string(p.t.UMWBZr)
   }, {
     duration: 8 * Chunk70956.Z.Millis.HOUR,
-    label: () => Chunk388032.intl.string(Chunk388032.t.EpAXPC)
+    label: () => p.intl.string(p.t.EpAXPC)
   }, {
     duration: Chunk70956.Z.Millis.DAY,
-    label: () => Chunk388032.intl.string(Chunk388032.t["755t4q"])
+    label: () => p.intl.string(p.t["755t4q"])
   }, {
     duration: 3 * Chunk70956.Z.Millis.DAY,
-    label: () => Chunk388032.intl.string(Chunk388032.t["f3/1ch"])
+    label: () => p.intl.string(p.t["f3/1ch"])
   }, {
     duration: true,
-    label: () => Chunk388032.intl.string(Chunk388032.t["46dqJY"])
+    label: () => p.intl.string(p.t["46dqJY"])
   }],
   x = "forever";
 

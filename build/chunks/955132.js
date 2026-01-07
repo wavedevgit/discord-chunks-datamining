@@ -62,20 +62,20 @@ let b = new Chunk710845.Z("ConnectionStore"),
   O = new Chunk616810.Z(y),
   v = new Chunk755278.Z(y);
 y.handleIdentify = () => {
-  let e = Chunk314897.default.getToken();
+  let e = s.default.getToken();
   if (b.verbose("handleIdentify called", {
-      hasToken: null != module
-    }), null == module) return null;
-  let t = Chunk15624.Z.getState(),
-    n = Chunk314897.default.getInstallationForTracking();
+      hasToken: null != e
+    }), null == e) return null;
+  let t = a.Z.getState(),
+    n = s.default.getInstallationForTracking();
   return {
-    token: module,
-    properties: h(E(h({}, Chunk626135.default.getSuperProperties()), {
-      client_app_state: exports,
+    token: e,
+    properties: h(E(h({}, l.default.getSuperProperties()), {
+      client_app_state: t,
       is_fast_connect: false,
-      gateway_connect_reasons: Chunk866483.Pf()
-    }), null != require ? {
-      installation_id: require
+      gateway_connect_reasons: _.Pf()
+    }), null != n ? {
+      installation_id: n
     } : {}),
     presence: O.getInitialState()
   }

@@ -21,21 +21,21 @@ var Chunk544891 = require("./544891.js"),
   Chunk526429 = require("./526429.js"),
   Chunk981631 = require("./981631.js");
 async function s() {
-  let e = Chunk706454.default.locale;
-  if (module === Chunk526429.Z.getFetchedLocale()) return;
-  let t = await Chunk544891.tn.get({
-    url: Chunk981631.ANM.GUILD_DISCOVERY_CATEGORIES,
+  let e = a.default.locale;
+  if (e === o.Z.getFetchedLocale()) return;
+  let t = await n.tn.get({
+    url: l.ANM.GUILD_DISCOVERY_CATEGORIES,
     query: {
-      locale: module,
+      locale: e,
       primary_only: false
     },
     oldFormErrors: true,
     rejectWithError: false
   });
-  Chunk570140.Z.dispatch({
+  i.Z.dispatch({
     type: "GUILD_DISCOVERY_CATEGORY_FETCH_SUCCESS",
-    categories: exports.body,
-    locale: module
+    categories: t.body,
+    locale: e
   })
 }
 async function c(e) {

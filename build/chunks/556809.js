@@ -76,12 +76,12 @@ let y = null,
   };
 
 function P() {
-  return !Chunk451478.Z.isFocused() || !Chunk451478.Z.isVisible()
+  return !o.Z.isFocused() || !o.Z.isVisible()
 }
 
 function R() {
-  let e = Chunk522474.Z.getWindow(Chunk501787.$J),
-    t = null != module && "function" == typeof module.cancelAnimationFrame;
+  let e = a.Z.getWindow(p.$J),
+    t = null != e && "function" == typeof e.cancelAnimationFrame;
   A().forEach(n => {
     let {
       timeoutId: r,
@@ -109,8 +109,8 @@ class D extends Chunk147913.Z {
   handleUpdateOverlayMethod() {
     let {
       enabled: e
-    } = (0, Chunk32300.td)("OverlayWindowRAFManager");
-    if (!(!module || __OVERLAY__)) {
+    } = (0, u.td)("OverlayWindowRAFManager");
+    if (!(!e || __OVERLAY__)) {
       if (!O && !b(false)) {
         window.requestAnimationFrame = h, y = "NoOverlayRendering", R();
         return

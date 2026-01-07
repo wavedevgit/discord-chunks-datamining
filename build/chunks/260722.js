@@ -86,8 +86,8 @@ async function g(e) {
   })
 }
 async function E() {
-  await Chunk544891.tn.get({
-    url: Chunk981631.ANM.FAMILY_CENTER_LINK_CODE,
+  await r.tn.get({
+    url: f.ANM.FAMILY_CENTER_LINK_CODE,
     rejectWithError: false
   }).then(e => {
     let {
@@ -100,21 +100,21 @@ async function E() {
   })
 }
 async function b() {
-  await Chunk544891.tn.post({
-    url: Chunk981631.ANM.FAMILY_CENTER_SHARE_IAR_WITH_PARENTS,
+  await r.tn.post({
+    url: f.ANM.FAMILY_CENTER_SHARE_IAR_WITH_PARENTS,
     rejectWithError: true
   })
 }
 let y = {
   async initialPageLoad() {
     var e, t, n, i, o, s, l, c, u, d, p;
-    Chunk570140.Z.dispatch({
+    a.Z.dispatch({
       type: "FAMILY_CENTER_FETCH_START"
     });
     let {
       body: _
-    } = await Chunk544891.tn.get({
-      url: Chunk981631.ANM.FAMILY_CENTER_TEEN_ACTIVITY_ME,
+    } = await r.tn.get({
+      url: f.ANM.FAMILY_CENTER_TEEN_ACTIVITY_ME,
       rejectWithError: false
     }), {
       teen_audit_log: h,
@@ -123,17 +123,17 @@ let y = {
     } = _, b = {
       teenId: null == h ? true : h.teen_user_id,
       rangeStartId: null == h ? true : h.range_start_id,
-      totals: null != (n = null == h ? true : h.totals) ? require : {},
-      actions: null != (i = null == h ? true : h.actions) ? Chunk524437 : [],
-      users: null != (o = null == h ? true : h.users) ? Chunk335131 : [],
-      guilds: null != (s = null == h ? true : h.guilds) ? Chunk28926 : [],
-      topUserActivities: null != (l = null == h ? true : h.top_user_activities) ? Chunk48481 : [],
-      topGuildActivities: null != (c = null == h ? true : h.top_guild_activities) ? Chunk626135 : [],
-      totalSpendAmount: null != (u = null == h || null == (e = h.total_spend) ? true : module.amount) ? Chunk473007 : null,
-      totalSpendCurrency: null != (d = null == h || null == (t = h.total_spend) ? true : exports.currency) ? Chunk292352 : null,
+      totals: null != (n = null == h ? true : h.totals) ? n : {},
+      actions: null != (i = null == h ? true : h.actions) ? i : [],
+      users: null != (o = null == h ? true : h.users) ? o : [],
+      guilds: null != (s = null == h ? true : h.guilds) ? s : [],
+      topUserActivities: null != (l = null == h ? true : h.top_user_activities) ? l : [],
+      topGuildActivities: null != (c = null == h ? true : h.top_guild_activities) ? c : [],
+      totalSpendAmount: null != (u = null == h || null == (e = h.total_spend) ? true : e.amount) ? u : null,
+      totalSpendCurrency: null != (d = null == h || null == (t = h.total_spend) ? true : t.currency) ? d : null,
       invoices: null != (p = null == h ? true : h.invoices) ? p : []
     };
-    return null != b.invoices && b.invoices.length > 0 && await m(b.invoices), Chunk570140.Z.dispatch({
+    return null != b.invoices && b.invoices.length > 0 && await m(b.invoices), a.Z.dispatch({
       type: "FAMILY_CENTER_INITIAL_LOAD",
       familyCenterTeenActivity: b,
       linkedUsers: g,
@@ -143,16 +143,16 @@ let y = {
   async fetchLinkedUsers() {
     let {
       body: e
-    } = await Chunk544891.tn.get({
-      url: Chunk981631.ANM.FAMILY_CENTER_LINKED_USERS,
+    } = await r.tn.get({
+      url: f.ANM.FAMILY_CENTER_LINKED_USERS,
       rejectWithError: false
     }), t = {
-      linkedUsers: module.linked_users,
-      users: module.users
+      linkedUsers: e.linked_users,
+      users: e.users
     };
-    return Chunk570140.Z.dispatch(_({
+    return a.Z.dispatch(_({
       type: "FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS"
-    }, exports)), exports
+    }, t)), t
   },
   async requestLink(e, t) {
     let {

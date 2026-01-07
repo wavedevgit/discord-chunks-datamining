@@ -14,7 +14,7 @@ function o(e) {
 }
 
 function l() {
-  Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
+  n.Z.wait(() => n.Z.dispatch({
     type: "NUF_COMPLETE"
   }))
 }

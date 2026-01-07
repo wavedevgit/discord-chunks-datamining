@@ -4,7 +4,7 @@
 
 function r() {
   var e, t;
-  return "undefined" == typeof platform ? 0 : parseInt(null != (t = null == (e = platform) ? true : module.version) ? exports : "0", 10)
+  return "undefined" == typeof platform ? 0 : parseInt(null != (t = null == (e = platform) ? true : e.version) ? t : "0", 10)
 }
 require.d(exports, {
   n: () => r

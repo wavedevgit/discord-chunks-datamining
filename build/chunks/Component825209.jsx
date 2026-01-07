@@ -36,7 +36,7 @@ class _ extends Chunk473749.PureComponent {
     })
   }
   cleanUp() {
-    Chunk358085.isPlatformEmbedded && null != this.gs && (this.gs.destroy(), this.gs = null)
+    c.isPlatformEmbedded && null != this.gs && (this.gs.destroy(), this.gs = null)
   }
   handleComboChange(e) {
     let {
@@ -56,13 +56,13 @@ class _ extends Chunk473749.PureComponent {
       {
         disabled: a
       } = this.props;
-    return p ? (t = Chunk998502.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : Chunk358085.isPlatformEmbedded || (e = this.handleComboKeys), (0, Chunk54381.jsx)(Chunk455279.Z, {
-      disabled: Chunk921738,
-      value: require,
-      mode: Chunk473749,
+    return p ? (t = u.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, r.jsx)(l.Z, {
+      disabled: a,
+      value: n,
+      mode: i,
       onClick: this.toggleRecordMode,
-      onChange: module,
-      registerNativeRecorder: exports,
+      onChange: e,
+      registerNativeRecorder: t,
       disableOnClickWhileRecording: p
     })
   }

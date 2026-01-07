@@ -52,14 +52,14 @@ class d {
 class f extends d {
   getEndpoint() {
     switch (this.searchType) {
-      case Chunk981631.aib.FAVORITES:
-        return Chunk981631.ANM.SEARCH_FAVORITES;
-      case Chunk981631.aib.GUILD:
+      case s.aib.FAVORITES:
+        return s.ANM.SEARCH_FAVORITES;
+      case s.aib.GUILD:
         if (null == this.searchId || "" === this.searchId) return;
-        return Chunk981631.ANM.SEARCH_GUILD(this.searchId);
-      case Chunk981631.aib.CHANNEL:
+        return s.ANM.SEARCH_GUILD(this.searchId);
+      case s.aib.CHANNEL:
         if (null == this.searchId || "" === this.searchId) return;
-        return Chunk981631.ANM.SEARCH_CHANNEL(this.searchId);
+        return s.ANM.SEARCH_CHANNEL(this.searchId);
       default:
         throw Error("[SearchFetcher] Unhandled search type: ".concat(this.searchType))
     }
@@ -79,16 +79,16 @@ class f extends d {
 class p extends d {
   getEndpoint() {
     switch (this.searchType) {
-      case Chunk981631.aib.DMS:
-        return Chunk981631.ANM.SEARCH_TABS_DMS;
-      case Chunk981631.aib.GUILD_CHANNEL:
-      case Chunk981631.aib.GUILD:
-      case Chunk981631.aib.THREAD:
+      case s.aib.DMS:
+        return s.ANM.SEARCH_TABS_DMS;
+      case s.aib.GUILD_CHANNEL:
+      case s.aib.GUILD:
+      case s.aib.THREAD:
         if (null == this.searchId || "" === this.searchId) return;
-        return Chunk981631.ANM.SEARCH_TABS_GUILD(this.searchId);
-      case Chunk981631.aib.CHANNEL:
+        return s.ANM.SEARCH_TABS_GUILD(this.searchId);
+      case s.aib.CHANNEL:
         if (null == this.searchId || "" === this.searchId) return;
-        return Chunk981631.ANM.SEARCH_TABS_CHANNEL(this.searchId);
+        return s.ANM.SEARCH_TABS_CHANNEL(this.searchId);
       default:
         throw Error("[SearchFetcher] Unhandled search type: ".concat(this.searchType))
     }

@@ -44,30 +44,30 @@ let T = 10 * Chunk70956.Z.Millis.SECOND,
   N = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
 
 function D() {
-  let e = (0, Chunk145597.getPID)(),
-    t = (0, Chunk145597.getRPCAuthToken)();
-  (0, Chunk490029.lW)({
-    type: Chunk981631.BmY.DISPATCH,
-    pid: module,
-    token: exports,
+  let e = (0, E.getPID)(),
+    t = (0, E.getRPCAuthToken)();
+  (0, g.lW)({
+    type: C.BmY.DISPATCH,
+    pid: e,
+    token: t,
     payloads: [{
       type: "OVERLAY_SET_INPUT_LOCKED",
       locked: true,
-      pid: module
+      pid: e
     }]
   })
 }
 class k extends Chunk473749.PureComponent {
   componentDidMount() {
-    this.notificationTimer = setTimeout(this.hideNotification, T), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
-      notif_type: Chunk987650.n0.OverlayCrashed
+    this.notificationTimer = setTimeout(this.hideNotification, T), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
+      notif_type: j.n0.OverlayCrashed
     })
   }
   componentWillUnmount() {
     let {
       notificationTimer: e
     } = this;
-    null != module && clearTimeout(module)
+    null != e && clearTimeout(e)
   }
   render() {
     let {
@@ -78,11 +78,11 @@ class k extends Chunk473749.PureComponent {
     } = this.state, {
       notificationTimer: r
     } = this;
-    return null == Chunk473749 ? null : (0, Chunk54381.jsx)(Chunk692546.Z, {
+    return null == r ? null : (0, i.jsx)(_.Z, {
       contentDomRef: this.contentDomRef,
       observe: false,
-      children: (0, Chunk54381.jsx)(Chunk481060.f6W, {
-        theme: Chunk981631.BRd.DARK,
+      children: (0, i.jsx)(h.f6W, {
+        theme: C.BRd.DARK,
         children: r => (0, i.jsxs)(h.P3F, {
           innerRef: this.contentDomRef,
           className: s()(r, P.container),
@@ -147,9 +147,9 @@ class k extends Chunk473749.PureComponent {
   }
 }
 let R = l().throttle(() => {
-  Chunk797614.Z.increment({
-    name: Chunk286379.V.APP_CRASHED,
-    tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
+  b.Z.increment({
+    name: u.V.APP_CRASHED,
+    tags: ["reason:".concat(c.v.UNHANDLED_JS_ERROR), "level:".concat(d.c.FATAL)]
   }, true)
 }, 100, {
   trailing: false
@@ -200,12 +200,12 @@ class A extends Chunk473749.PureComponent {
       error: n,
       info: r
     } = this.state;
-    return null != require ? (0, Chunk54381.jsx)(k, {
-      error: require,
-      info: Chunk473749
-    }) : (0, Chunk54381.jsx)("div", {
-      className: exports,
-      children: module
+    return null != n ? (0, i.jsx)(k, {
+      error: n,
+      info: r
+    }) : (0, i.jsx)("div", {
+      className: t,
+      children: e
     })
   }
   constructor(...e) {

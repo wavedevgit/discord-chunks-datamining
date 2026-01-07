@@ -85,30 +85,30 @@ let x = e => {
     })
   },
   b = () => {
-    let [e, t] = Chunk473749.useState(0);
-    return (0, Chunk54381.jsxs)(Chunk793030.zJl, {
-      className: Chunk55915.wrapper,
-      children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk55915.nav,
-        children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
+    let [e, t] = r.useState(0);
+    return (0, a.jsxs)(s.zJl, {
+      className: h.wrapper,
+      children: [(0, a.jsxs)("div", {
+        className: h.nav,
+        children: [(0, a.jsx)(s.X6q, {
           variant: "heading-xxl/medium",
           children: "Collectibles DevTools"
-        }), 0 !== module && (0, Chunk54381.jsx)(Chunk793030.zxk, {
+        }), 0 !== e && (0, a.jsx)(s.zxk, {
           variant: "primary",
-          onClick: () => exports(0),
+          onClick: () => t(0),
           text: "Back"
         })]
       }), (() => {
-        switch (module) {
+        switch (e) {
           case 1:
-            return (0, Chunk54381.jsx)(Chunk538645.Z, {});
+            return (0, a.jsx)(m.Z, {});
           case 2:
-            return (0, Chunk54381.jsx)(Chunk715495.Z, {});
+            return (0, a.jsx)(d.Z, {});
           case 3:
-            return (0, Chunk54381.jsx)(Chunk383036.Z, {});
+            return (0, a.jsx)(p.Z, {});
           default:
-            return (0, Chunk54381.jsx)(x, {
-              setTab: exports
+            return (0, a.jsx)(x, {
+              setTab: t
             })
         }
       })()]

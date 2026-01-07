@@ -30,34 +30,34 @@ let _ = +Chunk70956.Z.Millis.HOUR,
   E = new Chunk710845.Z("AutoUpdateManager");
 class b extends Chunk147913.Z {
   _initialize() {
-    Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("CHECKING_FOR_UPDATES", this._handleCheckingForUpdates), Chunk998502.ZP.on("UPDATE_NOT_AVAILABLE", this._handleNativeUpdateNotAvailable), Chunk998502.ZP.on("UPDATE_AVAILABLE", () => this._handleUpdateAvailable(true)), Chunk998502.ZP.on("UPDATE_ERROR", this._handleUpdateError), Chunk998502.ZP.on("UPDATE_DOWNLOADED", () => this._handleUpdateDownloaded(true)), Chunk998502.ZP.on("UPDATE_MANUALLY", this._handleUpdateManually))
+    u.isPlatformEmbedded && (f.ZP.on("CHECKING_FOR_UPDATES", this._handleCheckingForUpdates), f.ZP.on("UPDATE_NOT_AVAILABLE", this._handleNativeUpdateNotAvailable), f.ZP.on("UPDATE_AVAILABLE", () => this._handleUpdateAvailable(true)), f.ZP.on("UPDATE_ERROR", this._handleUpdateError), f.ZP.on("UPDATE_DOWNLOADED", () => this._handleUpdateDownloaded(true)), f.ZP.on("UPDATE_MANUALLY", this._handleUpdateManually))
   }
   _terminate() {
     clearInterval(this._checkInterval)
   }
   quitAndInstall() {
-    this.updateAvailable && (this.nativeUpdateAvailable ? null != this._bootstrapper ? this._bootstrapper.finishBootstrap() : Chunk998502.ZP.send("QUIT_AND_INSTALL") : location.reload(true))
+    this.updateAvailable && (this.nativeUpdateAvailable ? null != this._bootstrapper ? this._bootstrapper.finishBootstrap() : f.ZP.send("QUIT_AND_INSTALL") : location.reload(true))
   }
   isNewUpdater() {
-    return "win32" === (0, Chunk358085.getPlatformName)()
+    return "win32" === (0, u.getPlatformName)()
   }
   async handlePostConnectionOpen() {
     let e = true;
-    this.isNewUpdater() && module !== await Chunk998502.ZP.getOptionalUpdates() && await Chunk998502.ZP.setOptionalUpdates(module), this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, _)
+    this.isNewUpdater() && e !== await f.ZP.getOptionalUpdates() && await f.ZP.setOptionalUpdates(e), this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, _)
   }
   async _requestNewUpdaterBootstrap() {
     let e;
     E.log("Bootstrapping new updater host...");
     try {
-      await Chunk998502.ZP.ensureModule("discord_updater_bootstrap"), e = Chunk998502.ZP.requireModule("discord_updater_bootstrap"), this._bootstrapper = module
+      await f.ZP.ensureModule("discord_updater_bootstrap"), e = f.ZP.requireModule("discord_updater_bootstrap"), this._bootstrapper = e
     } catch (e) {
       this._handleNativeUpdateNotAvailable();
       return
     }
     try {
-      this._handleCheckingForUpdates(), await module.bootstrap(Chunk998502.ZP.releaseChannel, "win"), this.updateAvailable = true, this.nativeUpdateAvailable = true, this._handleUpdateDownloaded(true)
+      this._handleCheckingForUpdates(), await e.bootstrap(f.ZP.releaseChannel, "win"), this.updateAvailable = true, this.nativeUpdateAvailable = true, this._handleUpdateDownloaded(true)
     } catch (e) {
-      E.log("Failed to bootstrap new updater:", module), this._handleNativeUpdateNotAvailable(), Chunk960048.Z.captureException(module)
+      E.log("Failed to bootstrap new updater:", e), this._handleNativeUpdateNotAvailable(), d.Z.captureException(e)
     }
   }
   _emitCallbacks() {
@@ -90,7 +90,7 @@ class b extends Chunk147913.Z {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "0b18241b7d16d81a298be6f8568ac1df26c85784" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "813046e91848277cc010dd5c0e506e80d8c20157" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(false);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : h;
         if (Date.now() - g > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)

@@ -53,8 +53,8 @@ function u(e) {
 }
 
 function d() {
-  let e = Chunk695346.Ok.useSetting(),
-    t = null == module ? true : module.emojiId,
-    n = (0, Chunk442837.e7)([Chunk339085.ZP], () => null != exports && "0" !== exports ? Chunk339085.ZP.getUsableCustomEmojiById(exports) : null, [exports]);
-  return (0, Chunk473749.useMemo)(() => null != module ? c(module, require) : null, [module, require])
+  let e = s.Ok.useSetting(),
+    t = null == e ? true : e.emojiId,
+    n = (0, i.e7)([a.ZP], () => null != t && "0" !== t ? a.ZP.getUsableCustomEmojiById(t) : null, [t]);
+  return (0, r.useMemo)(() => null != e ? c(e, n) : null, [e, n])
 }

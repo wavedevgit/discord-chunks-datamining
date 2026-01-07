@@ -484,8 +484,8 @@ exports.default = function() {
       this.constructor = e
     }
     n.prototype = t.prototype, e.prototype = new n
-  }(module, Error), {
-    SyntaxError: module,
-    parse: exports
+  }(e, Error), {
+    SyntaxError: e,
+    parse: t
   }
 }()

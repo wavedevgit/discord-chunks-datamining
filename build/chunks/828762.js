@@ -90,7 +90,7 @@ class x {
     return false !== t && (this.uploads = [...this.uploads], this.uploads.splice(t, 1)[0].cancel(), true)
   }
   cancelUnusedUploads() {
-    for (let e of this.uploads) module.cancel();
+    for (let e of this.uploads) e.cancel();
     this.uploads = []
   }
   async saveProductWithAttachments(e) {

@@ -54,13 +54,13 @@ function E(e) {
 
 function b() {
   var e;
-  let t = g(Chunk914010.Z.getGuildId()),
-    n = null != (e = Chunk581883.Z.getGuildsProto()) ? module : {},
-    r = null != exports ? require[exports] : null,
-    i = null != Chunk149765 && Chunk149765.disableRaidAlertNag;
+  let t = g(c.Z.getGuildId()),
+    n = null != (e = a.Z.getGuildsProto()) ? e : {},
+    r = null != t ? n[t] : null,
+    i = null != r && r.disableRaidAlertNag;
   return {
-    show: null != exports && !Chunk399606,
-    guildId: exports
+    show: null != t && !i,
+    guildId: t
   }
 }
 

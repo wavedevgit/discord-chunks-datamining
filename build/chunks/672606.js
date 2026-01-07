@@ -19,12 +19,12 @@ if (!k) {
   var C = new Chunk61189,
     Z = function() {
       var e, t;
-      for (Chunk270301 && (e = b.domain) && module.exit(); t = C.get();) try {
-        exports()
+      for (y && (e = b.domain) && e.exit(); t = C.get();) try {
+        t()
       } catch (e) {
-        throw C.head && r(), module
+        throw C.head && r(), e
       }
-      module && module.enter()
+      e && e.enter()
     };
   Chunk179156 || Chunk270301 || Chunk883343 || !v || !g ? !Chunk470892 && _ && _.resolve ? ((i = _.resolve(true)).constructor = _, s = Chunk324474(i.then, i), r = function() {
     s(Z)

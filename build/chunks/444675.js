@@ -64,7 +64,7 @@ function p() {
       for (r = c, c = []; ++d < t;) r && r[d].run();
       d = false, t = c.length
     }
-    r = null, u = false, l(module)
+    r = null, u = false, l(e)
   }
 }
 

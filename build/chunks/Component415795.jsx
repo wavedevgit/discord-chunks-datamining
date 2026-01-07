@@ -47,7 +47,7 @@ class I extends Chunk473749.PureComponent {
     } = this.props, {
       node: n
     } = this;
-    module && null != require && exports(require)
+    e && null != n && t(n)
   }
   componentDidUpdate(e) {
     let {
@@ -67,23 +67,23 @@ class I extends Chunk473749.PureComponent {
       id: a,
       "aria-label": s
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
+    return (0, i.jsxs)(o.P3F, {
       role: "option",
-      id: Chunk473749,
-      "aria-label": Chunk815372,
-      "aria-selected": module,
+      id: a,
+      "aria-label": s,
+      "aria-selected": e,
       focusProps: {
         enabled: false
       },
       tabIndex: false,
       innerRef: this.setRef,
-      className: Chunk904485.result,
+      className: v.result,
       onClick: this.handleClick,
       onMouseEnter: this.handleMouseEnter,
       onContextMenu: r,
-      children: [exports, null != require ? (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.score,
-        children: 0 | require
+      children: [t, null != n ? (0, i.jsx)("div", {
+        className: v.score,
+        children: 0 | n
       }) : null]
     })
   }
@@ -113,13 +113,13 @@ class T extends Chunk473749.Component {
     let {
       guild: e
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk904485.guildIconContainer,
-      children: (0, Chunk54381.jsx)(Chunk565138.Z, {
+    return (0, i.jsx)("div", {
+      className: v.guildIconContainer,
+      children: (0, i.jsx)(_.Z, {
         tabIndex: false,
-        guild: module,
-        size: Chunk565138.Z.Sizes.MINI,
-        className: Chunk904485.guildIcon
+        guild: e,
+        size: _.Z.Sizes.MINI,
+        className: v.guildIcon
       })
     })
   }
@@ -127,11 +127,11 @@ class T extends Chunk473749.Component {
     let {
       guild: e
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk904485.name,
-      children: (0, Chunk54381.jsx)("span", {
-        className: Chunk904485.match,
-        children: module.name
+    return (0, i.jsx)("div", {
+      className: v.name,
+      children: (0, i.jsx)("span", {
+        className: v.match,
+        children: e.name
       })
     })
   }
@@ -140,11 +140,11 @@ class T extends Chunk473749.Component {
       unread: e,
       children: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: module ? Chunk904485.contentUnread : Chunk904485.contentDefault,
-      children: [this.renderIcon(), this.renderName(), (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.misc,
-        children: exports
+    return (0, i.jsxs)("div", {
+      className: e ? v.contentUnread : v.contentDefault,
+      children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
+        className: v.misc,
+        children: t
       })]
     })
   }
@@ -152,8 +152,8 @@ class T extends Chunk473749.Component {
     let {
       guild: e
     } = this.props;
-    return Chunk388032.intl.formatToPlainString(Chunk388032.t.WVq3Lr, {
-      name: module.name
+    return O.intl.formatToPlainString(O.t.WVq3Lr, {
+      name: e.name
     })
   }
   render() {
@@ -166,15 +166,15 @@ class T extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(I, {
-      id: Chunk815372,
+    return (0, i.jsx)(I, {
+      id: s,
       "aria-label": this.getAccessibilityLabel(),
-      onMouseEnter: module,
-      onClick: exports,
-      onFocus: require,
+      onMouseEnter: e,
+      onClick: t,
+      onFocus: n,
       onContextMenu: r,
-      focused: Chunk473749,
-      score: Chunk481060,
+      focused: a,
+      score: o,
       children: this.renderContent()
     })
   }
@@ -184,15 +184,15 @@ class C extends(r = Chunk473749.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = (0, Chunk471445.KS)(exports);
-    if (null == require) return null;
-    let r = null != (e = (0, Chunk16206.Z)(exports)) ? module : "";
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk904485.iconContainer,
+    } = this.props, n = (0, u.KS)(t);
+    if (null == n) return null;
+    let r = null != (e = (0, d.Z)(t)) ? e : "";
+    return (0, i.jsx)("div", {
+      className: v.iconContainer,
       role: "img",
       "aria-label": r,
-      children: (0, Chunk54381.jsx)(require, {
-        className: Chunk904485.icon,
+      children: (0, i.jsx)(n, {
+        className: v.icon,
         size: "xs",
         color: "currentColor"
       })
@@ -205,19 +205,19 @@ class C extends(r = Chunk473749.Component) {
       channel: a,
       isMentionLowImportance: o
     } = this.props;
-    return null != require && require > 0 && (e = (0, Chunk54381.jsx)(Chunk790145.Z, {
-      className: Chunk904485.badge,
-      value: require,
-      lowImportance: Chunk481060
-    })), null != r && (t = (0, Chunk54381.jsx)("span", {
-      className: Chunk904485.note,
-      children: (0, Chunk933557.F6)(r, Chunk594174.default, Chunk699516.Z)
-    })), (0, Chunk54381.jsxs)("div", {
-      className: Chunk904485.name,
-      children: [(0, Chunk54381.jsx)("span", {
-        className: Chunk904485.match,
-        children: (0, Chunk933557.F6)(Chunk473749, Chunk594174.default, Chunk699516.Z)
-      }), module, this.renderVoiceStates(), exports]
+    return null != n && n > 0 && (e = (0, i.jsx)(f.Z, {
+      className: v.badge,
+      value: n,
+      lowImportance: o
+    })), null != r && (t = (0, i.jsx)("span", {
+      className: v.note,
+      children: (0, c.F6)(r, b.default, E.Z)
+    })), (0, i.jsxs)("div", {
+      className: v.name,
+      children: [(0, i.jsx)("span", {
+        className: v.match,
+        children: (0, c.F6)(a, b.default, E.Z)
+      }), e, this.renderVoiceStates(), t]
     })
   }
   renderVoiceStates() {
@@ -225,10 +225,10 @@ class C extends(r = Chunk473749.Component) {
       voiceStates: e,
       channel: t
     } = this.props;
-    return null == module ? null : (0, Chunk54381.jsx)(Chunk237583.Z, {
-      className: Chunk904485.voiceSummaryContainer,
-      guildId: exports.guild_id,
-      users: module.map(e => {
+    return null == e ? null : (0, i.jsx)(h.Z, {
+      className: v.voiceSummaryContainer,
+      guildId: t.guild_id,
+      users: e.map(e => {
         let {
           user: t
         } = e;
@@ -245,12 +245,12 @@ class C extends(r = Chunk473749.Component) {
       mentions: t,
       children: n
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
+    return (0, i.jsxs)("div", {
       "aria-hidden": true,
-      className: module || null != exports && exports > 0 ? Chunk904485.contentUnread : Chunk904485.contentDefault,
-      children: [this.renderIcon(), this.renderName(), (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.misc,
-        children: require
+      className: e || null != t && t > 0 ? v.contentUnread : v.contentDefault,
+      children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
+        className: v.misc,
+        children: n
       })]
     })
   }
@@ -258,11 +258,11 @@ class C extends(r = Chunk473749.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = null == (e = Chunk430824.Z.getGuild(this.props.channel.guild_id)) ? true : module.name, r = (0, Chunk933557.F6)(exports, Chunk594174.default, Chunk699516.Z), i = (0, Chunk16206.Z)(exports);
-    return Chunk388032.intl.formatToPlainString(Chunk388032.t["Vw/da+"], {
+    } = this.props, n = null == (e = g.Z.getGuild(this.props.channel.guild_id)) ? true : e.name, r = (0, c.F6)(t, b.default, E.Z), i = (0, d.Z)(t);
+    return O.intl.formatToPlainString(O.t["Vw/da+"], {
       name: r,
-      type: Chunk54381,
-      guild: require
+      type: i,
+      guild: n
     })
   }
   render() {
@@ -275,15 +275,15 @@ class C extends(r = Chunk473749.Component) {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(I, {
-      id: Chunk815372,
+    return (0, i.jsx)(I, {
+      id: s,
       "aria-label": this.getAccessibilityLabel(),
-      onMouseEnter: module,
-      onClick: exports,
-      onFocus: require,
+      onMouseEnter: e,
+      onClick: t,
+      onFocus: n,
       onContextMenu: r,
-      focused: Chunk473749,
-      score: Chunk481060,
+      focused: a,
+      score: o,
       children: this.renderContent()
     })
   }
@@ -297,13 +297,13 @@ class A extends Chunk473749.Component {
       channel: e,
       status: t
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk904485.dmIconContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.qEK, {
-        src: (0, Chunk43267.x)(module),
-        size: Chunk481060.EFr.SIZE_20,
+    return (0, i.jsx)("div", {
+      className: v.dmIconContainer,
+      children: (0, i.jsx)(o.qEK, {
+        src: (0, l.x)(e),
+        size: o.EFr.SIZE_20,
         "aria-hidden": true,
-        status: exports
+        status: t
       })
     })
   }
@@ -312,15 +312,15 @@ class A extends Chunk473749.Component {
       mentions: t,
       channel: n
     } = this.props;
-    return null != exports && exports > 0 && (e = (0, Chunk54381.jsx)(Chunk790145.Z, {
-      className: Chunk904485.badge,
-      value: exports
-    })), (0, Chunk54381.jsxs)("div", {
-      className: Chunk904485.name,
-      children: [(0, Chunk54381.jsx)("span", {
-        className: Chunk904485.match,
-        children: (0, Chunk933557.F6)(require, Chunk594174.default, Chunk699516.Z)
-      }), module]
+    return null != t && t > 0 && (e = (0, i.jsx)(f.Z, {
+      className: v.badge,
+      value: t
+    })), (0, i.jsxs)("div", {
+      className: v.name,
+      children: [(0, i.jsx)("span", {
+        className: v.match,
+        children: (0, c.F6)(n, b.default, E.Z)
+      }), e]
     })
   }
   renderContent() {
@@ -328,11 +328,11 @@ class A extends Chunk473749.Component {
       mentions: e,
       children: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: null != module && module > 0 ? Chunk904485.contentUnread : Chunk904485.contentDefault,
-      children: [this.renderIcon(), this.renderName(), (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.misc,
-        children: exports
+    return (0, i.jsxs)("div", {
+      className: null != e && e > 0 ? v.contentUnread : v.contentDefault,
+      children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
+        className: v.misc,
+        children: t
       })]
     })
   }
@@ -340,12 +340,12 @@ class A extends Chunk473749.Component {
     let {
       channel: e,
       mentions: t
-    } = this.props, n = (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z);
-    return null != exports && exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.LYdVfN, {
-      name: require,
-      mentions: exports
-    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.lLSbno, {
-      name: require
+    } = this.props, n = (0, c.F6)(e, b.default, E.Z);
+    return null != t && t > 0 ? O.intl.formatToPlainString(O.t.LYdVfN, {
+      name: n,
+      mentions: t
+    }) : O.intl.formatToPlainString(O.t.lLSbno, {
+      name: n
     })
   }
   render() {
@@ -358,15 +358,15 @@ class A extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(I, {
-      id: Chunk815372,
+    return (0, i.jsx)(I, {
+      id: s,
       "aria-label": this.getAccessibilityLabel(),
-      onMouseEnter: module,
-      onClick: exports,
-      onFocus: require,
+      onMouseEnter: e,
+      onClick: t,
+      onFocus: n,
       onContextMenu: r,
-      focused: Chunk473749,
-      score: Chunk481060,
+      focused: a,
+      score: o,
       children: this.renderContent()
     })
   }
@@ -378,14 +378,14 @@ class N extends Chunk473749.Component {
       status: t,
       isMobile: n
     } = this.props;
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk904485.iconContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.qEK, {
-        src: module.getAvatarURL(true, 20),
+    return (0, i.jsx)("div", {
+      className: v.iconContainer,
+      children: (0, i.jsx)(o.qEK, {
+        src: e.getAvatarURL(true, 20),
         "aria-hidden": true,
-        size: Chunk481060.EFr.SIZE_20,
-        status: exports,
-        isMobile: require
+        size: o.EFr.SIZE_20,
+        status: t,
+        isMobile: n
       })
     })
   }
@@ -394,8 +394,8 @@ class N extends Chunk473749.Component {
         user: t,
         comparator: n
       } = this.props,
-      r = Chunk699516.Z.getNickname(exports.id);
-    return ((e = require === exports.tag || null == require || "" === require ? exports.username : require) === exports.username || module === exports.id) && (e = null != r ? r : Chunk51144.ZP.getName(exports)), module
+      r = E.Z.getNickname(t.id);
+    return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : y.ZP.getName(t)), e
   }
   renderName() {
     let e, {
@@ -403,17 +403,17 @@ class N extends Chunk473749.Component {
         mentions: n
       } = this.props,
       r = this.getDisplayNickname();
-    return null != require && require > 0 && (e = (0, Chunk54381.jsx)(Chunk790145.Z, {
-      className: Chunk904485.badge,
-      value: require
-    })), (0, Chunk54381.jsxs)("div", {
-      className: Chunk904485.name,
-      children: [(0, Chunk54381.jsx)("span", {
-        className: Chunk904485.match,
+    return null != n && n > 0 && (e = (0, i.jsx)(f.Z, {
+      className: v.badge,
+      value: n
+    })), (0, i.jsxs)("div", {
+      className: v.name,
+      children: [(0, i.jsx)("span", {
+        className: v.match,
         children: r
-      }), module, (0, Chunk54381.jsx)("span", {
-        className: Chunk904485.username,
-        children: Chunk51144.ZP.getUserTag(exports)
+      }), e, (0, i.jsx)("span", {
+        className: v.username,
+        children: y.ZP.getUserTag(t)
       })]
     })
   }
@@ -422,11 +422,11 @@ class N extends Chunk473749.Component {
       children: e,
       mentions: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: null != exports && exports > 0 ? Chunk904485.contentUnread : Chunk904485.contentDefault,
-      children: [this.renderIcon(), this.renderName(), (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.misc,
-        children: module
+    return (0, i.jsxs)("div", {
+      className: null != t && t > 0 ? v.contentUnread : v.contentDefault,
+      children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
+        className: v.misc,
+        children: e
       })]
     })
   }
@@ -434,13 +434,13 @@ class N extends Chunk473749.Component {
     let {
       mentions: e,
       user: t
-    } = this.props, n = this.getDisplayNickname(), r = Chunk51144.ZP.getUserTag(exports);
-    return null != module && module > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6b9UrR"], {
-      name: require,
+    } = this.props, n = this.getDisplayNickname(), r = y.ZP.getUserTag(t);
+    return null != e && e > 0 ? O.intl.formatToPlainString(O.t["6b9UrR"], {
+      name: n,
       id: r,
-      mentions: module
-    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.GWYOAY, {
-      name: require,
+      mentions: e
+    }) : O.intl.formatToPlainString(O.t.GWYOAY, {
+      name: n,
       id: r
     })
   }
@@ -454,15 +454,15 @@ class N extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(I, {
-      id: Chunk815372,
+    return (0, i.jsx)(I, {
+      id: s,
       "aria-label": this.getAccessibilityLabel(),
-      onMouseEnter: module,
-      onClick: exports,
-      onFocus: require,
+      onMouseEnter: e,
+      onClick: t,
+      onFocus: n,
       onContextMenu: r,
-      focused: Chunk473749,
-      score: Chunk481060,
+      focused: a,
+      score: o,
       children: this.renderContent()
     })
   }
@@ -473,19 +473,19 @@ class P extends Chunk473749.Component {
       children: e,
       application: t
     } = this.props;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk904485.contentDefault,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk904485.iconContainer,
-        children: (0, Chunk54381.jsx)(Chunk925329.Z, {
+    return (0, i.jsxs)("div", {
+      className: v.contentDefault,
+      children: [(0, i.jsx)("div", {
+        className: v.iconContainer,
+        children: (0, i.jsx)(p.Z, {
           tabIndex: false,
-          className: Chunk904485.gameIcon,
-          game: exports,
-          size: Chunk904485.gameIconSize
+          className: v.gameIcon,
+          game: t,
+          size: v.gameIconSize
         })
-      }), exports.name, (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.misc,
-        children: module
+      }), t.name, (0, i.jsx)("div", {
+        className: v.misc,
+        children: e
       })]
     })
   }
@@ -497,11 +497,11 @@ class P extends Chunk473749.Component {
       focused: r,
       id: a
     } = this.props;
-    return (0, Chunk54381.jsx)(I, {
-      id: Chunk473749,
-      onMouseEnter: module,
-      onClick: exports,
-      onFocus: require,
+    return (0, i.jsx)(I, {
+      id: a,
+      onMouseEnter: e,
+      onClick: t,
+      onFocus: n,
       focused: r,
       children: this.renderContent()
     })
@@ -509,12 +509,12 @@ class P extends Chunk473749.Component {
 }
 class R extends Chunk473749.Component {
   render() {
-    return (0, Chunk54381.jsx)("div", {
-      className: Chunk904485.__invalid_resultDefault,
-      children: (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.contentDefault,
-        children: (0, Chunk54381.jsx)("div", {
-          className: Chunk904485.header,
+    return (0, i.jsx)("div", {
+      className: v.__invalid_resultDefault,
+      children: (0, i.jsx)("div", {
+        className: v.contentDefault,
+        children: (0, i.jsx)("div", {
+          className: v.header,
           children: this.props.children
         })
       })
@@ -527,23 +527,23 @@ class w extends Chunk473749.Component {
         link: n,
         children: r
       } = this.props,
-      a = (0, Chunk754688.Qj)(require.path);
-    return null == Chunk473749 || true === Chunk473749.messageId ? (e = Chunk388032.intl.string(Chunk388032.t.qbSCqj), t = (0, Chunk54381.jsx)(Chunk481060.xPt, {
+      a = (0, m.Qj)(n.path);
+    return null == a || true === a.messageId ? (e = O.intl.string(O.t.qbSCqj), t = (0, i.jsx)(o.xPt, {
       size: "xs",
       color: "currentColor"
-    })) : (0, Chunk754688.VO)(Chunk473749) ? (e = Chunk388032.intl.string(Chunk388032.t["6Fd/j1"]), t = (0, Chunk54381.jsx)(Chunk481060.acy, {
+    })) : (0, m.VO)(a) ? (e = O.intl.string(O.t["6Fd/j1"]), t = (0, i.jsx)(o.acy, {
       size: "xs",
       color: "currentColor"
-    })) : (e = Chunk388032.intl.string(Chunk388032.t.jQRwp4), t = (0, Chunk54381.jsx)(Chunk481060.mBM, {
+    })) : (e = O.intl.string(O.t.jQRwp4), t = (0, i.jsx)(o.mBM, {
       size: "xs",
       color: "currentColor"
-    })), (0, Chunk54381.jsxs)("div", {
-      className: Chunk904485.contentDefault,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk904485.iconContainer,
-        children: exports
-      }), module, (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.misc,
+    })), (0, i.jsxs)("div", {
+      className: v.contentDefault,
+      children: [(0, i.jsx)("div", {
+        className: v.iconContainer,
+        children: t
+      }), e, (0, i.jsx)("div", {
+        className: v.misc,
         children: r
       })]
     })
@@ -558,14 +558,14 @@ class w extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(I, {
-      id: Chunk815372,
-      onMouseEnter: module,
-      onClick: exports,
-      onFocus: require,
+    return (0, i.jsx)(I, {
+      id: s,
+      onMouseEnter: e,
+      onClick: t,
+      onFocus: n,
       onContextMenu: r,
-      focused: Chunk473749,
-      score: Chunk481060,
+      focused: a,
+      score: o,
       children: this.renderContent()
     })
   }
@@ -577,78 +577,78 @@ class D extends Chunk473749.Component {
       navigationRecord: a,
       children: l
     } = this.props;
-    switch (Chunk473749.type) {
-      case Chunk815372.Ky.SHOP:
-        n = Chunk388032.intl.string(Chunk388032.t.pWG4ze), r = (0, Chunk54381.jsx)(Chunk481060.EOn, {
+    switch (a.type) {
+      case s.Ky.SHOP:
+        n = O.intl.string(O.t.pWG4ze), r = (0, i.jsx)(o.EOn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case Chunk815372.Ky.SHOP_ORBS_TAB:
-        n = Chunk388032.intl.string(Chunk388032.t.EBYkzk), r = (0, Chunk54381.jsx)(Chunk481060.EOn, {
+      case s.Ky.SHOP_ORBS_TAB:
+        n = O.intl.string(O.t.EBYkzk), r = (0, i.jsx)(o.EOn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case Chunk815372.Ky.QUEST_ORBS:
-        n = "".concat(Chunk388032.intl.string(Chunk388032.t.ElYQFS), " ").concat(Chunk388032.intl.string(Chunk388032.t.JALI2K)), r = (0, Chunk54381.jsx)(Chunk481060.qDn, {
+      case s.Ky.QUEST_ORBS:
+        n = "".concat(O.intl.string(O.t.ElYQFS), " ").concat(O.intl.string(O.t.JALI2K)), r = (0, i.jsx)(o.qDn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case Chunk815372.Ky.NITRO_HOME:
-        n = Chunk388032.intl.string(Chunk388032.t.Ipxkog), r = (0, Chunk54381.jsx)(Chunk481060.SrA, {
+      case s.Ky.NITRO_HOME:
+        n = O.intl.string(O.t.Ipxkog), r = (0, i.jsx)(o.SrA, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case Chunk815372.Ky.QUEST_HOME:
-        n = Chunk388032.intl.string(Chunk388032.t.JALI2K), r = (0, Chunk54381.jsx)(Chunk481060.qDn, {
+      case s.Ky.QUEST_HOME:
+        n = O.intl.string(O.t.JALI2K), r = (0, i.jsx)(o.qDn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case Chunk815372.Ky.APPS_HOME:
-        n = Chunk388032.intl.string(Chunk388032.t.PHjkRE), r = (0, Chunk54381.jsx)(Chunk481060.jje, {
+      case s.Ky.APPS_HOME:
+        n = O.intl.string(O.t.PHjkRE), r = (0, i.jsx)(o.jje, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case Chunk815372.Ky.SETTINGS:
-        n = null != (e = Chunk473749.label) ? module : Chunk388032.intl.string(Chunk388032.t["3D5yo/"]), r = (0, Chunk54381.jsx)(Chunk481060.ewm, {
+      case s.Ky.SETTINGS:
+        n = null != (e = a.label) ? e : O.intl.string(O.t["3D5yo/"]), r = (0, i.jsx)(o.ewm, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case Chunk815372.Ky.PLAYGROUND:
-        if (n = null != (t = Chunk473749.label) ? exports : "".concat(Chunk473749.collectionId, " Playground"), null != Chunk473749.IconComponent) {
-          let e = Chunk473749.IconComponent;
-          r = (0, Chunk54381.jsx)(module, {
+      case s.Ky.PLAYGROUND:
+        if (n = null != (t = a.label) ? t : "".concat(a.collectionId, " Playground"), null != a.IconComponent) {
+          let e = a.IconComponent;
+          r = (0, i.jsx)(e, {
             size: "xs",
             color: "currentColor"
           })
-        } else r = (0, Chunk54381.jsx)(Chunk481060.hh5, {
+        } else r = (0, i.jsx)(o.hh5, {
           size: "xs",
           color: "currentColor"
         });
         break;
       default:
-        n = Chunk473749.id, r = (0, Chunk54381.jsx)(Chunk481060.xPt, {
+        n = a.id, r = (0, i.jsx)(o.xPt, {
           size: "xs",
           color: "currentColor"
         })
     }
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk904485.contentDefault,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk904485.iconContainer,
+    return (0, i.jsxs)("div", {
+      className: v.contentDefault,
+      children: [(0, i.jsx)("div", {
+        className: v.iconContainer,
         children: r
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.name,
-        children: require
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk904485.misc,
-        children: Chunk43267
+      }), (0, i.jsx)("div", {
+        className: v.name,
+        children: n
+      }), (0, i.jsx)("div", {
+        className: v.misc,
+        children: l
       })]
     })
   }
@@ -662,14 +662,14 @@ class D extends Chunk473749.Component {
       score: o,
       id: s
     } = this.props;
-    return (0, Chunk54381.jsx)(I, {
-      id: Chunk815372,
-      onMouseEnter: module,
-      onClick: exports,
-      onFocus: require,
+    return (0, i.jsx)(I, {
+      id: s,
+      onMouseEnter: e,
+      onClick: t,
+      onFocus: n,
       onContextMenu: r,
-      focused: Chunk473749,
-      score: Chunk481060,
+      focused: a,
+      score: o,
       children: this.renderContent()
     })
   }
