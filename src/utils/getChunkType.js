@@ -214,6 +214,35 @@ function getLottieMappings(code) {
         return { messagesKeys: [], languages: {} };
     }
 }
+function getClasses(code) {
+    try {
+        let classes = {};
+        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        let isClasses = true;
+        walk.simple(ast, {
+            ObjectExpression(node) {
+                if (
+                    !node.properties.every(
+                        (prop) =>
+                            prop.value?.value?.includes?.(prop.key.name) &&
+                            (prop.value?.value?.includes?.('-') ||
+                                prop.value?.value?.includes?.('_')),
+                    )
+                )
+                    isClasses = false;
+
+                if (!isClasses) return;
+                for (let prop of node.properties) {
+                    classes[prop.key.name] = prop.value.value;
+                }
+            },
+        });
+        return classes;
+    } catch (e) {
+        console.log(e);
+        return {};
+    }
+}
 
 // determines chunk type based on code
 function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
@@ -241,7 +270,6 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
         code.includes('.p +') ||
         code.includes('= "https://cdn.discordapp.com/assets/content/')
     ) {
-        console.log(code);
         const match = code.match(
             /(\.p\s\+\s"(?<fileNameP>.+?)"$|"\/assets\/(?<fileName>.+?)"$|\s=\s"(?<url>.+?)"$)/m,
         );
@@ -290,6 +318,10 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
             ];
         } catch {}
     }
+
+    const classes = getClasses(code);
+    console.log(classes);
+    if (Object.keys(classes).length > 0) return ['classes', { classes }];
     if (code.includes('buildNumber:') && code.includes('versionHash:')) {
         return [
             'buildInfo',
