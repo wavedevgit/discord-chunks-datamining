@@ -214,6 +214,48 @@ function getLottieMappings(code) {
         return { messagesKeys: [], languages: {} };
     }
 }
+
+function getRestApiProp(code) {
+    try {
+        let data = null;
+        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        let exports = {};
+        walk.simple(ast, {
+            CallExpression(node) {
+                // get  exports
+                if (node.callee?.property?.name === 'd') {
+                    for (let prop of node?.arguments?.[1]?.properties) {
+                        exports[
+                            prop.value.body.name ||
+                                prop.value.body.object.name +
+                                    '.' +
+                                    prop.value.body.property.name
+                        ] = prop.key.name;
+                    }
+                }
+            },
+            VariableDeclarator(node) {
+                if (node.init?.type !== 'ObjectExpression') return;
+                console.log(exports);
+                // the object is set as this P = { get: I, post: T, put: C, patch: A, del: N };
+                if (
+                    node.init?.properties
+                        ?.map?.((prop) => prop.key.name)
+                        ?.every?.((key) =>
+                            ['get', 'post', 'put', 'patch', 'del'].includes(
+                                key,
+                            ),
+                        )
+                )
+                    data = exports[node.id.name];
+            },
+        });
+        return data;
+    } catch (err) {
+        console.log(err);
+        process.exit(0);
+    }
+}
 function getClasses(code) {
     try {
         let classes = {};
@@ -300,6 +342,8 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
             },
         ];
     }
+    if (code.includes('"HTTPUtils"') && code.includes('HTTPResponseError'))
+        return ['rest-api', { apiProp: getRestApiProp(code) }];
     if (
         code.includes('Store') &&
         code.includes('"displayName"') &&
