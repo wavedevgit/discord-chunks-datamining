@@ -121,9 +121,9 @@ function getDataUrl(code) {
         return '';
     }
 }
-function getIntlMessages(code) {
+function getJsonParseExportContent(code) {
     try {
-        let messages = {};
+        let content = {};
         const ast = acorn.parse(code, { ecmaVersion: 'latest' });
         walk.simple(ast, {
             CallExpression(node) {
@@ -131,11 +131,11 @@ function getIntlMessages(code) {
                     node.callee.object.name === 'JSON' &&
                     node.callee.property.name === 'parse'
                 ) {
-                    messages = JSON.parse(node.arguments[0].value);
+                    content = JSON.parse(node.arguments[0].value);
                 }
             },
         });
-        return messages;
+        return content;
     } catch (e) {
         console.log(e);
         return {};
@@ -334,7 +334,7 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
     ) {
         return ['experiment', getRawExperiment(code)];
     }
-    if (code.includes('data:image/')) {
+    if (code.includes('= "data:image/') && code.endsWith('"')) {
         return [
             'assets',
             {
@@ -342,6 +342,7 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
             },
         ];
     }
+
     if (code.includes('"HTTPUtils"') && code.includes('HTTPResponseError'))
         return ['rest-api', { apiProp: getRestApiProp(code) }];
     if (
@@ -382,10 +383,14 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
         return [
             'intl-messages-definitions',
             {
-                messages: getIntlMessages(code),
+                messages: getJsonParseExportContent(code),
                 language: languagesChunks[id],
             },
         ];
+    }
+    // this is json chunk (.json file)
+    if (code.includes('module.exports=JSON.parse(')) {
+        return ['json', { content: getJsonParseExportContent(code) }];
     }
     return ['unknown', {}];
 }
