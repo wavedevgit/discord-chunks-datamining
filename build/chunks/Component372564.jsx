@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk296343 = require("./296343.js"),
   Chunk960324 = require("./960324.js");
 
-function b(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -42,7 +42,7 @@ function m(e) {
 function y(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class O extends Chunk473749.Component {
+class v extends Chunk473749.Component {
   render() {
     let {
       channel: e
@@ -51,7 +51,7 @@ class O extends Chunk473749.Component {
     let t = null != e.topic && e.topic.length > 0;
     return null != e.linkedLobby || t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(d.Z.Divider, {}), (0, r.jsxs)("div", {
-        className: a()(p.topic, p.expandable, g.markup),
+        className: a()(h.topic, h.expandable, g.markup),
         onMouseDown: this.onMouseDown,
         onMouseMove: this.onMouseMove,
         onMouseUp: this.onMouseUp,
@@ -59,16 +59,16 @@ class O extends Chunk473749.Component {
         onClick: this.handleClick,
         children: [(0, r.jsx)(s.P3F, {
           onClick: this.handleClick,
-          "aria-label": h.intl.string(h.t.mKwsSp),
-          className: p.topicClickTarget
+          "aria-label": f.intl.string(f.t.mKwsSp),
+          className: h.topicClickTarget
         }), null == e.linkedLobby || t ? u.Z.parseTopic(e.topic, true, {
           channelId: e.id
-        }) : h.intl.string(h.t["XJVlf/"])]
+        }) : f.intl.string(f.t["XJVlf/"])]
       })]
     }) : null
   }
   constructor(...e) {
-    super(...e), b(this, "_mouseDown", false), b(this, "_mouseUp", false), b(this, "handleOpenTopic", e => {
+    super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
       let t = e.target;
       if ((0, o.kK)(t)) {
         if (y(t)) return;
@@ -78,15 +78,15 @@ class O extends Chunk473749.Component {
         let {
           default: e
         } = await n.e("65631").then(n.bind(n, 10722));
-        return t => (0, r.jsx)(e, m({}, t, this.props))
+        return t => (0, r.jsx)(e, b({}, t, this.props))
       })
-    }), b(this, "onMouseDown", () => {
+    }), m(this, "onMouseDown", () => {
       this._mouseDown = true
-    }), b(this, "onMouseMove", () => {
+    }), m(this, "onMouseMove", () => {
       this._mouseDown && (this._mouseDown = false)
-    }), b(this, "onMouseUp", e => {
-      this._mouseDown && e.button !== f.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
-    }), b(this, "handleContextMenu", e => {
+    }), m(this, "onMouseUp", e => {
+      this._mouseDown && e.button !== p.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
+    }), m(this, "handleContextMenu", e => {
       let {
         channel: t,
         guild: i
@@ -94,7 +94,7 @@ class O extends Chunk473749.Component {
       (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("57804"), n.e("49049"), n.e("89250"), n.e("62856"), n.e("15718"), n.e("91315"), n.e("41700"), n.e("24783"), n.e("5665")]).then(n.bind(n, 439635));
+        } = await Promise.all([n.e("24783"), n.e("91736")]).then(n.bind(n, 439635));
         return n => (0, r.jsx)(e, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
@@ -106,13 +106,13 @@ class O extends Chunk473749.Component {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(m({}, n), {
+        }(b({}, n), {
           channel: t,
           guild: i,
           includeTopic: true
         }))
       })
-    }), b(this, "handleClick", e => {
+    }), m(this, "handleClick", e => {
       if (this._mouseUp) {
         this._mouseUp = false;
         return
@@ -121,4 +121,4 @@ class O extends Chunk473749.Component {
     })
   }
 }
-let v = O
+let O = v

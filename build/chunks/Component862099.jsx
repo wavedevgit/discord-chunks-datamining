@@ -3,7 +3,7 @@
 require.d(exports, {
   Co: () => Q,
   ZP: () => J,
-  bZ: () => K,
+  bZ: () => q,
   gt: () => H
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -162,13 +162,13 @@ function F(e) {
     startTime: f,
     endTime: g
   } = (0, Z.ZP)(n), {
-    startDateTimeString: m,
-    upcomingEvent: h,
+    startDateTimeString: h,
+    upcomingEvent: m,
     diffMinutes: b
-  } = (0, R.ub)(f.toISOString(), null == g ? true : g.toISOString()), _ = h ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
+  } = (0, R.ub)(f.toISOString(), null == g ? true : g.toISOString()), _ = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
     minutes: b
   }) : U.intl.string(U.t.WINqKV) : U.intl.formatToPlainString(U.t.DC6h3G, {
-    date: m
+    date: h
   });
   return l.useEffect(() => {
     I.default.track(k.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -302,17 +302,17 @@ function W(e) {
       text: n,
       fullWidth: true,
       onClick: () => {
-        null != t && null != t.getGuildId() && ((0, m.Cq)(t), (0, g.XU)(t.getGuildId(), t.id))
+        null != t && null != t.getGuildId() && ((0, h.Cq)(t), (0, g.XU)(t.getGuildId(), t.id))
       }
     })
   })
 }
 
-function q(e) {
+function K(e) {
   let {
     stageInstance: t,
     channel: n
-  } = e, r = (0, s.Wu)([h.Z], () => [...new Set(h.Z.getMutableParticipants(n.id, b.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, s.e7)([h.Z], () => h.Z.getParticipantCount(n.id, b.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pN2"], {
+  } = e, r = (0, s.Wu)([m.Z], () => [...new Set(m.Z.getMutableParticipants(n.id, b.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, s.e7)([m.Z], () => m.Z.getParticipantCount(n.id, b.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pN2"], {
     count: "".concat(l)
   });
   return (0, i.jsx)(H, {
@@ -344,7 +344,7 @@ function q(e) {
     })
   })
 }
-var K = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
+var q = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
 
 function Q(e) {
   let {
@@ -404,10 +404,10 @@ let J = Chunk473749.memo(function(e) {
   if (n) return (0, i.jsx)(f.Z, {
     guild: t
   });
-  null == l || u ? g && (d = (0, i.jsx)(q, {
+  null == l || u ? g && (d = (0, i.jsx)(K, {
     stageInstance: o,
     channel: r
-  })) : l.entity_type === M.WX.STAGE_INSTANCE && g ? d = (0, i.jsx)(q, {
+  })) : l.entity_type === M.WX.STAGE_INSTANCE && g ? d = (0, i.jsx)(K, {
     stageInstance: o,
     channel: r
   }) : l.entity_type === M.WX.EXTERNAL ? d = (0, i.jsx)(z, {
@@ -416,8 +416,8 @@ let J = Chunk473749.memo(function(e) {
     guildEvent: l,
     channel: r
   }));
-  let m = t.features.has(k.GuildFeatures.COMMUNITY);
-  if (null == d && null != a && !m) {
+  let h = t.features.has(k.GuildFeatures.COMMUNITY);
+  if (null == d && null != a && !h) {
     let {
       upcomingEvent: e,
       noticeType: t

@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 470134, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,41 +12,41 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk67996 = require("./67996.js");
 
-function u(e) {
+function d(e) {
   let {
     text: t,
     hasScrolled: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(d.container, {
-      [d.containerHide]: n
+    className: a()(u.container, {
+      [u.containerHide]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: d.notice,
-      children: (0, r.jsx)(s.Text, {
-        className: d.__invalid_label,
+      className: u.notice,
+      children: (0, r.jsx)(o.Text, {
+        className: u.__invalid_label,
         variant: "text-md/medium",
         color: "text-strong",
         children: t
       })
     }), (0, r.jsx)("div", {
-      className: d.noticeArrow
+      className: u.noticeArrow
     })]
   })
 }
 
 function p(e) {
-  let [t, n] = i.useState(), [l, a] = i.useState(), [s, d] = i.useState(false), [p, h] = i.useState(false), {
-    enabled: f
-  } = (0, o.s1)(e);
+  let [t, n] = i.useState(), [l, a] = i.useState(), [o, u] = i.useState(false), [p, f] = i.useState(false), {
+    enabled: h
+  } = (0, s.s1)(e);
   return i.useEffect(() => {
-    f && null != t && null != l ? d(t < l) : d(false)
-  }, [f, t, l]), {
-    horizontalScrollNotice: i.useMemo(() => s ? (0, r.jsx)(u, {
+    h && null != t && null != l ? u(t < l) : u(false)
+  }, [h, t, l]), {
+    horizontalScrollNotice: i.useMemo(() => o ? (0, r.jsx)(d, {
       text: c.intl.string(c.t.RfAAH9),
       hasScrolled: p
-    }) : null, [s, p]),
-    handleScroll: () => h(true),
+    }) : null, [o, p]),
+    handleScroll: () => f(true),
     handleSetScrollerRef: e => {
       var t;
       return a(null == e || null == (t = e.getScrollerState()) ? true : t.scrollWidth)

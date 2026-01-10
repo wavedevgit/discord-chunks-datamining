@@ -1,15 +1,15 @@
 /** Chunk was on 39206 **/
 /** chunk id: 454135, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y,
-  i: () => g
+  Z: () => p,
+  i: () => f
 }), require("./388685.js");
 var l, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk914010 = require("./914010.js"),
   Chunk979651 = require("./979651.js");
 
-function u(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function c(e) {
     "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), l.forEach(function(t) {
-      u(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -43,8 +43,8 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var g = ((i = {}).GENTLE_AMBIENT = "GENTLE_AMBIENT", i.GENTLE_AMBIENT_WITH_INTRO = "GENTLE_AMBIENT_WITH_INTRO", i.HIGH_CONTRAST = "HIGH_CONTRAST", i);
-let f = {},
+var f = ((i = {}).GENTLE_AMBIENT = "GENTLE_AMBIENT", i.GENTLE_AMBIENT_WITH_INTRO = "GENTLE_AMBIENT_WITH_INTRO", i.HIGH_CONTRAST = "HIGH_CONTRAST", i);
+let g = {},
   h = {},
   m = null;
 
@@ -54,35 +54,35 @@ function N(e) {
 
 function E(e) {
   N(e), h[e] = setTimeout(() => {
-    let t = f[e];
-    null != t && (f[e] = d(c({}, t), {
+    let t = g[e];
+    null != t && (g[e] = d(c({}, t), {
       style: "GENTLE_AMBIENT"
     }), O.emitChange()), delete h[e]
   }, 2e3)
 }
 
-function p() {
+function y() {
   for (let e of Object.keys(h)) clearTimeout(h[e]);
-  h = {}, f = {}
+  h = {}, g = {}
 }
 
 function v() {
-  return p(), true
+  return y(), true
 }
 class T extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, o.Z)
+    this.waitFor(u.Z, o.Z)
   }
   getAnimationStyle(e) {
     var t, n;
-    return null != (n = null == (t = f[e]) ? true : t.style) ? n : "GENTLE_AMBIENT"
+    return null != (n = null == (t = g[e]) ? true : t.style) ? n : "GENTLE_AMBIENT"
   }
   getUserCount(e) {
     var t, n;
-    return null != (n = null == (t = f[e]) ? true : t.userCount) ? n : 0
+    return null != (n = null == (t = g[e]) ? true : t.userCount) ? n : 0
   }
 }
-u(T, "displayName", "VoiceChannelAnimationStateStore");
+s(T, "displayName", "VoiceChannelAnimationStateStore");
 let O = new T(Chunk570140.Z, {
     VOICE_STATE_UPDATES: function(e) {
       let {
@@ -97,16 +97,16 @@ let O = new T(Chunk570140.Z, {
       let a = false;
       for (let [e, t] of Object.entries(l))(function(e, t) {
         var n;
-        let l = f[e],
+        let l = g[e],
           i = null != (n = null == l ? true : l.userCount) ? n : 0,
           r = Math.max(0, i + t);
-        return 0 === i && r > 0 ? (f[e] = {
+        return 0 === i && r > 0 ? (g[e] = {
           style: "GENTLE_AMBIENT_WITH_INTRO",
           userCount: r
-        }, E(e), true) : i > 0 && r > i ? (f[e] = {
+        }, E(e), true) : i > 0 && r > i ? (g[e] = {
           style: "HIGH_CONTRAST",
           userCount: r
-        }, E(e), true) : 0 === r ? (N(e), delete f[e], true) : null != l && r !== i && (f[e] = d(c({}, l), {
+        }, E(e), true) : 0 === r ? (N(e), delete g[e], true) : null != l && r !== i && (g[e] = d(c({}, l), {
           userCount: r
         }), true)
       })(e, t) && (a = true);
@@ -117,14 +117,14 @@ let O = new T(Chunk570140.Z, {
         guildId: t
       } = e;
       if (t === m || null == t) returnfalse;
-      m = t, p();
-      let n = s.Z.getVoiceStates(t),
+      m = t, y();
+      let n = u.Z.getVoiceStates(t),
         l = {};
       for (let e of Object.values(n))
         if (null != e.channelId) {
           var i;
           l[e.channelId] = (null != (i = l[e.channelId]) ? i : 0) + 1
-        } for (let [e, t] of Object.entries(l)) t > 0 && (f[e] = {
+        } for (let [e, t] of Object.entries(l)) t > 0 && (g[e] = {
         style: "GENTLE_AMBIENT",
         userCount: t
       });
@@ -133,4 +133,4 @@ let O = new T(Chunk570140.Z, {
     CONNECTION_OPEN: v,
     LOGOUT: v
   }),
-  y = O
+  p = O

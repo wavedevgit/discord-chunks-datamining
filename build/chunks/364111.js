@@ -10,18 +10,20 @@ var Chunk473749 = require("./473749.js"),
   Chunk335131 = require("./335131.js"),
   Chunk597688 = require("./597688.js"),
   Chunk52030 = require("./52030.js"),
+  Chunk952597 = require("./952597.js"),
   Chunk447988 = require("./447988.js");
-let d = Chunk311570.v.VARIANTS_GROUP;
 
 function p(e, t, n) {
-  let i = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    p = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments),
-    f = (0, l.e7)([s.Z], () => s.Z.skipNumCategories),
-    [g, m, h, b, _, E, O, v] = (0, l.Wu)([c.Z], () => {
+  let p = arguments.length > 3 && true !== arguments[3] && arguments[3],
+    f = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments);
+  (0, u.a)("useMaybeFetchCollectiblesShopHome");
+  let g = i.v.VARIANTS_GROUP,
+    h = (0, l.e7)([s.Z], () => s.Z.skipNumCategories),
+    [m, b, _, E, O, v, y, I] = (0, l.Wu)([c.Z], () => {
       var t, n;
       return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getHasKnownStaleData(e), c.Z.getShopHomeConfigOverride()]
     }),
-    y = (0, r.useMemo)(() => {
+    C = (0, r.useMemo)(() => {
       var e, n;
       return e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -41,10 +43,10 @@ function p(e, t, n) {
         }
         return e
       }({}, t), n = n = {
-        variantsReturnStyle: d,
+        variantsReturnStyle: g,
         includeDynamicBlocks: true,
-        shopHomeConfig: v,
-        skipNumCategories: f
+        shopHomeConfig: I,
+        skipNumCategories: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -55,20 +57,20 @@ function p(e, t, n) {
       })(Object(n)).forEach(function(t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
-    }, [t, v, f]),
-    I = (0, r.useMemo)(() => !(0, o.oc)(b, y), [b, y]),
-    C = (0, u.J)(g, null != E && E, i),
-    S = (0, r.useMemo)(() => !C && Date.now() - m < 6e5, [m, C]);
+    }, [t, I, h, g]),
+    S = (0, r.useMemo)(() => !(0, o.oc)(E, C), [E, C]),
+    T = (0, d.J)(m, null != v && v, p),
+    N = (0, r.useMemo)(() => !T && Date.now() - b < 6e5, [b, T]);
   return (0, r.useEffect)(() => {
-    if (!p || E) return;
-    let t = Date.now() - h < 6e5;
-    (null == _ || !t) && (I || !S || O) && (0, o.Ov)(e, y, n)
-  }, [p, E, _, h, S, O, I, y, e, n]), {
-    isFetchingShopHome: E,
-    fetchShopHomeError: _,
-    shopBlocks: g,
+    if (!f || v) return;
+    let t = Date.now() - _ < 6e5;
+    (null == O || !t) && (S || !N || y) && (0, o.Ov)(e, C, n)
+  }, [f, v, O, _, N, y, S, C, e, n]), {
+    isFetchingShopHome: v,
+    fetchShopHomeError: O,
+    shopBlocks: m,
     refreshShopHome: (0, r.useCallback)(() => {
-      (0, o.Ov)(e, y, n)
-    }, [e, y, n])
+      (0, o.Ov)(e, C, n)
+    }, [e, C, n])
   }
 }

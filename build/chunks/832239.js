@@ -1,11 +1,11 @@
 /** Chunk was on 56826 **/
-/** chunk id: 832239, original params: e,n,t (module,exports,require) **/
+/** chunk id: 832239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   JO: () => a,
-  KK: () => c,
+  KK: () => u,
   Vp: () => d,
-  hW: () => o,
-  zu: () => s
+  hW: () => s,
+  zu: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -17,13 +17,13 @@ function a() {
   })
 }
 
-function s() {
+function o() {
   r.Z.dispatch({
     type: "VIBING_WUMPUS_STOP_MUSIC"
   })
 }
 
-function o() {
+function s() {
   r.Z.dispatch({
     type: "VIBING_WUMPUS_PAUSE_MUSIC"
   })
@@ -36,11 +36,11 @@ function d(e) {
   })
 }
 
-function c(e, n) {
+function u(e, t) {
   return i.tn.post({
     url: l.ANM.ADD_SAFETY_WARNING(e),
     body: {
-      safety_warning_type: n
+      safety_warning_type: t
     },
     rejectWithError: false
   })

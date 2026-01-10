@@ -1,4 +1,4 @@
-/** Chunk was on 193 **/
+/** Chunk was on 49131 **/
 /** chunk id: 67158, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,18 +18,18 @@ let m = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     disabled: n,
     type: i,
     className: m,
-    onClick: f,
-    channel: h
-  } = e, [g, x, b] = (0, c.Iu)(e => [e.activeView, e.activeViewType, e.activeChannelId], s.X), p = r.useCallback(() => {
-    (0, c.j9)(i, h.id), null == f || f()
-  }, [i, f, h.id]);
-  return n ? null : (0, a.jsx)("div", {
+    onClick: h,
+    channel: f
+  } = e, [g, x, b] = (0, c.Iu)(e => [e.activeView, e.activeViewType, e.activeChannelId], s.X), p = a.useCallback(() => {
+    (0, c.j9)(i, f.id), null == h || h()
+  }, [i, h, f.id]);
+  return n ? null : (0, r.jsx)("div", {
     className: l()(d.CT, u.buttonContainer),
     ref: t,
-    children: (0, a.jsx)(o.Z, {
+    children: (0, r.jsx)(o.Z, {
       className: l()(u.emojiButton, m),
       onClick: p,
-      active: (g === d.X1.GIF || g === d.X1.EMOJI || g === d.X1.STICKER) && x === i && b === h.id,
+      active: (g === d.X1.GIF || g === d.X1.EMOJI || g === d.X1.STICKER) && x === i && b === f.id,
       tabIndex: 0,
       focusProps: {
         offset: {

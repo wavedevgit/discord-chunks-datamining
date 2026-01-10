@@ -4,8 +4,8 @@
 require.d(exports, {
   S: () => c
 });
-var Chunk573654 = require("./573654.js");
-if (12633 == require.j) var Chunk675082 = require("./675082.js");
+var Chunk573654 = require("./573654.js"),
+  Chunk675082 = require("./675082.js");
 
 function i(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -15,8 +15,8 @@ function i(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-var a = 12633 == require.j ? ["canDrop", "hover", "drop"] : null,
-  s = 12633 == require.j ? function() {
+var a = ["canDrop", "hover", "drop"],
+  s = function() {
     var e;
 
     function t(e, r, n) {
@@ -55,7 +55,7 @@ var a = 12633 == require.j ? ["canDrop", "hover", "drop"] : null,
           n.enumerable = n.enumerable || false, n.configurable = true, "value" in n && (n.writable = true), Object.defineProperty(e, n.key, n)
         }
       }(t.prototype, e), t
-  }() : null;
+  }();
 
 function c(e) {
   return Object.keys(e).forEach(function(t) {

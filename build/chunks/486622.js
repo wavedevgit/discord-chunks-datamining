@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -22,25 +22,13 @@ function b(e) {
   let {
     user: t,
     onAcceptSuccess: n,
-    onRejectSuccess: r,
+    onRejectSuccess: i,
     onError: b
-  } = e, C = (0, h.Z)(), [y, v] = i.useState(false), [x, O] = i.useState(false), [E, j] = i.useState(false), [S, _] = i.useState(false), [P, I] = i.useState(false), Z = y || x || E, T = i.useCallback(async e => {
-    if (!Z) {
-      v(true);
-      try {
-        await (0, p.e4)(e), _(true), null == n || n()
-      } catch (t) {
-        let e = new a.Hx(t);
-        null == b || b(e)
-      } finally {
-        v(false)
-      }
-    }
-  }, [Z, n, b]), N = i.useCallback(async e => {
+  } = e, y = (0, h.Z)(), [v, O] = r.useState(false), [j, x] = r.useState(false), [C, E] = r.useState(false), [S, _] = r.useState(false), [I, P] = r.useState(false), Z = v || j || C, N = r.useCallback(async e => {
     if (!Z) {
       O(true);
       try {
-        await (0, p.gN)(e), I(true), null == r || r()
+        await (0, p.e4)(e), _(true), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
@@ -48,86 +36,98 @@ function b(e) {
         O(false)
       }
     }
-  }, [Z, r, b]), A = i.useCallback(async e => {
+  }, [Z, n, b]), T = r.useCallback(async e => {
+    if (!Z) {
+      x(true);
+      try {
+        await (0, p.gN)(e), P(true), null == i || i()
+      } catch (t) {
+        let e = new a.Hx(t);
+        null == b || b(e)
+      } finally {
+        x(false)
+      }
+    }
+  }, [Z, i, b]), A = r.useCallback(async e => {
     if (Z) return;
-    O(true);
-    let t = l()(e, m.t$);
+    x(true);
+    let t = l()(e, g.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
-      I(true), null == r || r()
+      P(true), null == i || i()
     } catch (t) {
       let e = new a.Hx(t);
       null == b || b(e)
     } finally {
-      O(false)
+      x(false)
     }
-  }, [Z, r, b]), w = i.useCallback(async e => {
+  }, [Z, i, b]), w = r.useCallback(async e => {
     if (Z) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
-      j(true);
+      E(true);
       try {
         await (0, c.Z)(t.id, t.getAvatarURL(true, 80), {
           withMutualGuilds: true,
           withMutualFriendsCount: true
         })
       } catch (e) {} finally {
-        j(false)
+        E(false)
       }
     }
     let n = async () => {
       var n;
-      let i = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
-      d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
-        action: m.cl.ACCEPT_CONFIRMATION_PROMPT,
+      let r = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
+      d.default.track(m.rMx.MESSAGE_REQUEST_ACTION, {
+        action: g.cl.ACCEPT_CONFIRMATION_PROMPT,
         channel_id: e,
-        mutual_guild_ids: null != i ? i : [],
+        mutual_guild_ids: null != r ? r : [],
         other_user_id: null == t ? true : t.id
-      }), await T(e)
+      }), await N(e)
     };
     (0, f.H)({
       channelId: e,
       onConfirm: n,
       onCancel: () => {
         var n;
-        let i = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
-        d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
-          action: m.cl.DISMISS_CONFIRMATION_PROMPT,
+        let r = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
+        d.default.track(m.rMx.MESSAGE_REQUEST_ACTION, {
+          action: g.cl.DISMISS_CONFIRMATION_PROMPT,
           channel_id: e,
-          mutual_guild_ids: null != i ? i : [],
+          mutual_guild_ids: null != r ? r : [],
           other_user_id: null == t ? true : t.id
         })
       }
     })
-  }, [T, Z, t]), M = i.useCallback((e, t, n) => {
-    let i = (i, r) => {
-        r && u.kJ.updateSetting(i), i && null != t && (0, o.zd)(t), T(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
-          action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
+  }, [N, Z, t]), R = r.useCallback((e, t, n) => {
+    let r = (r, i) => {
+        i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), N(e.id), d.default.track(m.rMx.MESSAGE_REQUEST_ACTION, {
+          action: g.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
-          is_dont_show_again_checked: r,
-          non_spam_retraining_opt_in: i
+          is_dont_show_again_checked: i,
+          non_spam_retraining_opt_in: r
         }), null != n && n()
       },
-      r = u.kJ.getSetting();
-    null == r ? (0, f.V)({
+      i = u.kJ.getSetting();
+    null == i ? (0, f.V)({
       channel: e,
-      onConfirm: i,
+      onConfirm: r,
       onCancel: () => {
-        d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
-          action: m.cl.DISMISS_HAM_CONFIRMATION_PROMPT,
+        d.default.track(m.rMx.MESSAGE_REQUEST_ACTION, {
+          action: g.cl.DISMISS_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id
         })
       }
-    }) : i(r)
-  }, [T]);
+    }) : r(i)
+  }, [N]);
   return {
-    acceptMessageRequest: C ? w : T,
-    rejectMessageRequest: N,
+    acceptMessageRequest: y ? w : N,
+    rejectMessageRequest: T,
     rejectAll: A,
-    markAsNotSpam: M,
-    isAcceptLoading: y,
-    isRejectLoading: x,
-    isUserProfileLoading: E,
+    markAsNotSpam: R,
+    isAcceptLoading: v,
+    isRejectLoading: j,
+    isUserProfileLoading: C,
     isOptimisticAccepted: S,
-    isOptimisticRejected: P
+    isOptimisticRejected: I
   }
 }

@@ -218,6 +218,10 @@ function A(e) {
       return {
         text: e, icon: l.AtH
       };
+    case "horizon os":
+      return {
+        text: e, icon: l.Pb9
+      };
     default:
       return {
         text: e, icon: l.pzj

@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
@@ -36,15 +36,15 @@ function T(e) {
     contentPosition: k,
     rowIndex: R,
     isVisibleInViewport: A,
-    onReceiveErrorHints: D,
-    sourceQuestContent: Z
+    onReceiveErrorHints: Z,
+    sourceQuestContent: D
   } = e, L = r.useRef(null), M = (0, x.w8)(P.config), U = (0, x.B3)(P.config), B = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: F,
     scrollHeight: G
   } = (0, d.kE)(), V = 104 !== G, {
     onAssetLoadComplete: z
   } = r.useContext(v.k), {
-    expansionSpring: W
+    expansionSpring: H
   } = (0, c.q_F)({
     expansionSpring: +!!I,
     config: (T = function(e) {
@@ -64,7 +64,7 @@ function T(e) {
         })
       }
       return e
-    }({}, y.Y), N = N = {
+    }({}, C.Y), N = N = {
       clamp: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(T, Object.getOwnPropertyDescriptors(N)) : (function(e, t) {
       var n = Object.keys(e);
@@ -76,10 +76,10 @@ function T(e) {
     })(Object(N)).forEach(function(e) {
       Object.defineProperty(T, e, Object.getOwnPropertyDescriptor(N, e))
     }), T)
-  }), H = (null == (n = P.userStatus) ? true : n.completedAt) != null, q = (null == (i = P.userStatus) ? true : i.claimedAt) != null, K = (0, x.xN)(P.config), Y = (0, x.LM)(P.config), {
+  }), W = (null == (n = P.userStatus) ? true : n.completedAt) != null, K = (null == (i = P.userStatus) ? true : i.claimedAt) != null, q = (0, x.xN)(P.config), Y = (0, x.LM)(P.config), {
     completedRatio: Q,
     completedRatioDisplay: X
-  } = (0, f.I)(P), J = (0, p.Bd)(P, Z, L), $ = r.useMemo(() => q && K ? _.intl.format(_.t["8Op4c4"], {
+  } = (0, h.I)(P), J = (0, p.Bd)(P, D, L), $ = r.useMemo(() => K && q ? _.intl.format(_.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(O, {
       questId: P.id,
       children: [(0, a.jsx)(m.Z, {
@@ -88,10 +88,10 @@ function T(e) {
         customSize: 14
       }), Y]
     }, P.id)
-  }) : q ? (0, a.jsx)(O, {
+  }) : K ? (0, a.jsx)(O, {
     questId: P.id,
     children: M
-  }) : K ? _.intl.format(_.t.ro1sze, {
+  }) : q ? _.intl.format(_.t.ro1sze, {
     balanceHook: () => (0, a.jsxs)(O, {
       questId: P.id,
       children: [(0, a.jsx)(m.Z, {
@@ -105,7 +105,7 @@ function T(e) {
       questId: P.id,
       children: U
     }, P.id)
-  }), [M, q, U, P.id, Y, K]), ee = r.useMemo(() => {
+  }), [M, K, U, P.id, Y, q]), ee = r.useMemo(() => {
     if (null != J) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -118,7 +118,7 @@ function T(e) {
     ref: L,
     children: [(0, a.jsxs)(s.animated.div, {
       style: {
-        maxHeight: W.to([0, 1], [104, (null != G ? G : 0) + 12])
+        maxHeight: H.to([0, 1], [104, (null != G ? G : 0) + 12])
       },
       className: S.rewardDescriptionContainer,
       children: [(0, a.jsx)(j.E, {
@@ -127,11 +127,11 @@ function T(e) {
         height: 80,
         children: (0, a.jsxs)("div", {
           className: S.assetWrapper,
-          children: [!q && H && (0, a.jsx)("div", {
+          children: [!K && W && (0, a.jsx)("div", {
             className: S.completionAnimation
           }), B ? (0, a.jsxs)("div", {
             className: S.progressWrapper,
-            children: [H && (0, a.jsx)(c.Fmz, {
+            children: [W && (0, a.jsx)(c.Fmz, {
               importData: E,
               className: S.confetti,
               loop: false,
@@ -141,7 +141,7 @@ function T(e) {
               quest: P,
               size: 76,
               percentComplete: Q,
-              percentCompleteText: I && !(0, h.zi)(P) ? X : true,
+              percentCompleteText: I && !(0, f.zi)(P) ? X : true,
               children: (0, a.jsx)("div", {
                 className: S.circularRewardTileWrapper,
                 children: (0, a.jsx)(g.Z, {
@@ -151,7 +151,7 @@ function T(e) {
                   autoplay: I,
                   onLoadComplete: z,
                   lazyLoad: true,
-                  sourceQuestContent: Z
+                  sourceQuestContent: D
                 })
               })
             })]
@@ -162,7 +162,7 @@ function T(e) {
             className: S.questRewardTileAsset,
             onLoadComplete: z,
             lazyLoad: true,
-            sourceQuestContent: Z
+            sourceQuestContent: D
           })]
         })
       }), (0, a.jsxs)("div", {
@@ -185,17 +185,17 @@ function T(e) {
         }), ee]
       }), V && (0, a.jsx)(s.animated.div, {
         style: {
-          opacity: W.to([0, 1], [1, 0])
+          opacity: H.to([0, 1], [1, 0])
         },
         className: S.textOverflowBlur
       })]
-    }), (0, a.jsx)(C.Z, {
+    }), (0, a.jsx)(y.Z, {
       quest: P,
       questContent: w,
       contentPosition: k,
       rowIndex: R,
-      onReceiveErrorHints: D,
-      sourceQuestContent: Z
+      onReceiveErrorHints: Z,
+      sourceQuestContent: D
     })]
   })
 }

@@ -70,7 +70,7 @@ function v(e) {
   } = n, h = (0, c.j)(b), {
     isLoading: v,
     error: O,
-    creatorMonetizationOnboardingMarketing: C
+    creatorMonetizationOnboardingMarketing: y
   } = (0, d.Z)(t.id);
   return (i.useEffect(() => {
     (0, o.k)(t.id)
@@ -96,7 +96,7 @@ function v(e) {
       guild: t,
       monetizationEligibility: n
     }), (0, r.jsx)(j, {
-      onboardingMarketing: C,
+      onboardingMarketing: y,
       onboardingMarketingError: O
     })]
   })

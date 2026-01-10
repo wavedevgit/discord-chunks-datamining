@@ -12,7 +12,7 @@ let s = e => {
   let {
     skuId: t,
     overrideVariantIndex: n
-  } = e, s = (0, o.LJ)(t), c = (0, a.o)(s);
+  } = e, s = (0, o.bK)(t), c = (0, a.o)(s);
   return null != s && (0, l.ox)(s) ? (0, r.jsx)(i.xvT, {
     variant: "text-xs/medium",
     color: "text-subtle",

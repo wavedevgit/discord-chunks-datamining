@@ -23,11 +23,11 @@ let _ = function() {
     t = g.Z.useField("selectedTab"),
     n = function(e) {
       switch (e) {
-        case h.GlobalDiscoveryTab.SERVERS:
+        case m.GlobalDiscoveryTab.SERVERS:
           return (0, r.jsx)(u.Z, {});
-        case h.GlobalDiscoveryTab.APPS:
+        case m.GlobalDiscoveryTab.APPS:
           return (0, r.jsx)(c.default, {});
-        case h.GlobalDiscoveryTab.QUESTS:
+        case m.GlobalDiscoveryTab.QUESTS:
           return (0, r.jsx)(d.Z, {
             topLevelRoute: false
           });
@@ -38,7 +38,7 @@ let _ = function() {
     _ = (0, l.TH)();
   return i.useEffect(() => {
     let e = _.pathname,
-      t = (0, m.I)(e);
+      t = (0, h.I)(e);
     t !== g.Z.getField("selectedTab") && g.Z.setState({
       selectedTab: t
     })
@@ -49,7 +49,7 @@ let _ = function() {
   }, [t, e]), (0, r.jsxs)("section", {
     className: b.container,
     children: [(0, r.jsx)(o.yY, {
-      location: (0, m.s)(t)
+      location: (0, h.s)(t)
     }), (0, r.jsx)("div", {
       className: b.dragRegion
     }), n]

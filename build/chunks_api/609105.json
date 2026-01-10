@@ -1,1 +1,0 @@
-{"id":"609105","type":"experiment","data":{"kind":"user","id":"2024-07_ctp_open_nitro_uneven_buckets","label":"CTP open nitro - A/A test - Uneven buckets","defaultConfig":{"doSomething":false},"commonTriggerPoint":"Chunk987338.$P.OPEN_NITRO","treatments":[{"id":1,"label":"Treatment","config":{"doSomething":true}}]},"fromModule":{"id":"web.js"}}

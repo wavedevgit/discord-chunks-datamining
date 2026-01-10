@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 484605, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,16 +16,16 @@ var Chunk264418 = require("./264418.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942257 = require("./942257.js");
-let m = e => {
+let h = e => {
   let {
     targetElementRef: t,
-    discountOffer: m,
-    premiumSubscription: h,
+    discountOffer: h,
+    premiumSubscription: m,
     dismissCoachmark: b,
     children: _
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, m, h), v = (0, r.jsx)(i.Z, {
+  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, h, m), v = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -34,12 +34,12 @@ let m = e => {
       align: "start"
     },
     title: f.intl.format(f.t["3yZP0G"], {
-      percent: m.discount.amount
+      percent: h.discount.amount
     }).toString(),
     body: f.intl.format(f.t["3Q4wCy"], {
       discountedPrice: O,
-      billingPeriod: (0, s.JP)(m.discount.user_usage_limit_interval),
-      numMonths: m.discount.user_usage_limit
+      billingPeriod: (0, s.JP)(h.discount.user_usage_limit_interval),
+      numMonths: h.discount.user_usage_limit
     }),
     graphic: {
       type: "image",
@@ -74,7 +74,7 @@ let m = e => {
               }
               return e
             }({}, t), i = i = {
-              premiumSubscription: h,
+              premiumSubscription: m,
               analyticsLocations: E,
               initialStep: u.R.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

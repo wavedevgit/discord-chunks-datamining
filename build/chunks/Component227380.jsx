@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk349348 = require("./349348.js");
 
-function y(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -83,12 +83,12 @@ let E = e => {
     width: 20,
     height: 20
   }), c = null != n ? n : t, u = null != o ? o : i), (0, r.jsxs)("div", {
-    className: C.checklistItem,
+    className: y.checklistItem,
     children: [(0, r.jsx)("div", {
-      className: C.checklistIcon,
+      className: y.checklistIcon,
       children: d
     }), (0, r.jsxs)("div", {
-      className: C.checklistText,
+      className: y.checklistText,
       children: [(0, r.jsx)(m.Heading, {
         variant: "heading-md/semibold",
         children: c
@@ -123,7 +123,7 @@ let S = e => {
     var e, n, r;
     if (null == P) return [];
     let i = null != (n = (null != (e = b.ZP.getChannels(t.id)) ? e : {})[b.sH]) ? n : [],
-      l = null != (r = null == i ? true : i.map(e => e.channel).reduce((e, t) => N(y({}, e), {
+      l = null != (r = null == i ? true : i.map(e => e.channel).reduce((e, t) => N(C({}, e), {
         [t.id]: t
       }), {})) ? r : {};
     return null == P ? [] : Object.entries(P).map(e => {
@@ -132,14 +132,14 @@ let S = e => {
     })
   }, [t.id, P], I);
   if (S || null == g) return (0, r.jsxs)("div", {
-    className: a()(C.container, C.loaderContainer, s),
+    className: a()(y.container, y.loaderContainer, s),
     children: [(0, r.jsx)(m.Heading, {
-      className: C.loadingText,
+      className: y.loadingText,
       variant: "heading-md/semibold",
       color: "text-default",
       children: O.intl.string(O.t.e1gm0f)
     }), (0, r.jsx)(m.$jN, {
-      className: C.__invalid_spinner
+      className: y.__invalid_spinner
     })]
   });
   let Z = T ? O.t["WH+1Yz"] : O.t.a4MYDO,
@@ -182,7 +182,7 @@ let S = e => {
       failingDescription: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.Text, {
           color: "text-muted",
-          className: C.healthFailingDescription,
+          className: y.healthFailingDescription,
           variant: "text-sm/normal",
           children: O.intl.string(O.t.LjqS0G)
         }), (null == g ? true : g.engagementHealthy) ? null : (0, r.jsx)(m.Text, {
@@ -206,7 +206,7 @@ let S = e => {
           } = n;
           return !e && null != l || !t && null != r && null != i
         })() && (0, r.jsx)(f.zx, {
-          className: C.detailsButton,
+          className: y.detailsButton,
           look: f.zx.Looks.LINK,
           size: f.zx.Sizes.NONE,
           color: f.zx.Colors.LINK,
@@ -214,7 +214,7 @@ let S = e => {
             let {
               default: e
             } = await n.e("23401").then(n.bind(n, 666599));
-            return t => (0, r.jsx)(e, N(y({}, t), {
+            return t => (0, r.jsx)(e, N(C({}, t), {
               guildChecklist: g
             }))
           }),
@@ -223,7 +223,7 @@ let S = e => {
       }),
       pendingDescription: (null == g ? true : g.size) ? O.intl.format(O.t.ALtXIF, {
         checkBackHook: (e, t) => (0, r.jsx)("strong", {
-          className: C.healthPending,
+          className: y.healthPending,
           children: e
         }, t)
       }) : O.intl.formatToPlainString(O.t["6S/96D"], {
@@ -241,12 +241,12 @@ let S = e => {
           variant: "text-sm/normal",
           children: O.intl.format(O.t["T+DQYY"], {
             channelHook: (e, t) => (0, r.jsx)("span", {
-              className: C.doesNot,
+              className: y.doesNot,
               children: e
             }, t)
           })
         }) : null, w.length > 0 ? (0, r.jsx)("div", {
-          className: C.indent,
+          className: y.indent,
           children: w.map(e => {
             let [t, n] = e;
             return null != t ? (0, r.jsxs)(m.Text, {
@@ -260,7 +260,7 @@ let S = e => {
           variant: "text-sm/normal",
           children: O.intl.format(O.t.KVD8E3, {
             nameHook: (e, t) => (0, r.jsx)("span", {
-              className: C.doesNot,
+              className: y.doesNot,
               children: e
             }, t)
           })
@@ -269,7 +269,7 @@ let S = e => {
           variant: "text-sm/normal",
           children: O.intl.format(O.t["/W9Kel"], {
             descriptionHook: (e, t) => (0, r.jsx)("span", {
-              className: C.doesNot,
+              className: y.doesNot,
               children: e
             }, t)
           })
@@ -290,21 +290,21 @@ let S = e => {
       checked: null == g ? true : g.protected
     }];
   return (0, r.jsxs)("div", {
-    className: a()(C.container, s),
+    className: a()(y.container, s),
     children: [(() => {
       let e = (null == g ? true : g.sufficient) ? n(909425) : n(177266);
       return null == o ? null : (0, r.jsxs)("div", {
-        className: C.header,
+        className: y.header,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: e,
-          className: C.headerIcon,
+          className: y.headerIcon,
           width: 40
         }), o]
       })
     })(), R.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(E, y({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
-        className: C.separator
+      children: [(0, r.jsx)(E, C({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
+        className: y.separator
       }) : null]
     }, "".concat(e.name)))]
   })

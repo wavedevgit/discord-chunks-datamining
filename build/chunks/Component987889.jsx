@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 987889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk834401 = require("./834401.js");
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function C(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function S(e) {
     message: l,
     Icon: s,
     interactionType: c
-  } = e, [u, d] = (0, i.useState)(false), f = (0, g.fJ)();
+  } = e, [u, d] = (0, i.useState)(false), p = (0, g.fJ)();
   return (0, r.jsx)(a.u, {
     text: t,
     position: "top",
@@ -83,7 +83,7 @@ function S(e) {
         (0, g.Qz)({
           message: l,
           interactionType: c,
-          viewId: f
+          viewId: p
         }), e.stopPropagation(), n(l)
       },
       children: (0, r.jsx)(s, {
@@ -103,23 +103,23 @@ function _(e) {
     Menu: c,
     interactionType: u,
     actionType: d
-  } = e, f = (0, g.fJ)(), [h, p] = (0, i.useState)(false), [b, y] = (0, i.useState)(false), O = (0, i.useRef)(null), {
-    openMenu: v,
+  } = e, p = (0, g.fJ)(), [f, h] = (0, i.useState)(false), [m, y] = (0, i.useState)(false), v = (0, i.useRef)(null), {
+    openMenu: O,
     closeMenu: E
-  } = (0, m.z)();
+  } = (0, b.z)();
   return (0, r.jsx)(o.yRy, {
-    shouldShow: b,
+    shouldShow: m,
     animation: o.yRy.Animation.NONE,
     position: "right",
     align: "top",
     autoInvert: false,
-    targetElementRef: O,
+    targetElementRef: v,
     onRequestClose: () => {
       y(false), E(n.id, d)
     },
     renderPopout: e => (0, r.jsx)(o.VqE, {
       onClick: e => e.stopPropagation(),
-      returnRef: O,
+      returnRef: v,
       children: (0, r.jsx)(c, {
         renderPopoutProps: e,
         channel: t,
@@ -131,25 +131,25 @@ function _(e) {
       position: "top",
       spacing: 4,
       asContainer: true,
-      onTooltipShow: () => p(true),
-      onTooltipHide: () => p(false),
+      onTooltipShow: () => h(true),
+      onTooltipHide: () => h(false),
       children: (0, r.jsx)(o.P3F, {
-        innerRef: O,
+        innerRef: v,
         className: j.action,
         onClick: e => {
           (0, g.Qz)({
             message: n,
             interactionType: u,
-            viewId: f
+            viewId: p
           }), e.stopPropagation();
-          let t = !b;
-          y(t), t ? v(n.id, d) : E(n.id, d)
+          let t = !m;
+          y(t), t ? O(n.id, d) : E(n.id, d)
         },
-        children: (0, r.jsx)(s, x(C({}, e), {
+        children: (0, r.jsx)(s, C(x({}, e), {
           message: n,
           "aria-label": l,
           className: j.actionIcon,
-          size: h ? "sm" : "xs"
+          size: f ? "sm" : "xs"
         }))
       })
     })
@@ -166,8 +166,8 @@ let I = {
         messageId: e.id,
         channelId: e.channel_id
       }), c.ack(e.channel_id, {
-        object: O.qAy.MARK_MESSAGE_AS_READ_BUTTON,
-        objectType: O.AnalyticsObjectTypes.ACK_MANUAL
+        object: v.qAy.MARK_MESSAGE_AS_READ_BUTTON,
+        objectType: v.AnalyticsObjectTypes.ACK_MANUAL
       }, true, true, e.id)
     },
     interactionType: Chunk804932.s_.ACK
@@ -175,26 +175,26 @@ let I = {
   [Chunk982183.r0.BOOKMARK]: {
     type: "menu",
     label: Chunk388032.intl.string(Chunk388032.t["9p3D9p"]),
-    Icon: e => null != h.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(o.plf, C({}, e)) : (0, r.jsx)(o.gt9, C({}, e)),
+    Icon: e => null != f.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(o.plf, x({}, e)) : (0, r.jsx)(o.gt9, x({}, e)),
     interactionType: Chunk804932.s_.BOOKMARK,
     Menu: e => {
       let {
         message: t,
         renderPopoutProps: n
-      } = e, i = (0, l.e7)([h.Z], () => h.Z.getSavedMessage(t.channel_id, t.id)), a = (0, d.x)({
+      } = e, i = (0, l.e7)([f.Z], () => f.Z.getSavedMessage(t.channel_id, t.id)), a = (0, d.x)({
         message: t,
         savedMessage: i
       });
-      return (0, r.jsxs)(o.v2r, x(C({}, n), {
+      return (0, r.jsxs)(o.v2r, C(x({}, n), {
         navId: "message-reminder-create",
-        "aria-label": v.intl.string(v.t.mJ3P0N),
+        "aria-label": O.intl.string(O.t.mJ3P0N),
         onClose: n.closePopout,
         onSelect: () => null,
         children: [null != i ? (0, r.jsx)(o.sNh, {
           id: "remove-from-for-later",
-          label: v.intl.string(v.t.SvXS1Z),
+          label: O.intl.string(O.t.SvXS1Z),
           icon: o.plf,
-          action: () => (0, f.x)({
+          action: () => (0, p.x)({
             channelId: t.channel_id,
             messageId: t.id,
             dueAt: i.saveData.dueAt,
@@ -202,9 +202,9 @@ let I = {
           })
         }) : (0, r.jsx)(o.sNh, {
           id: "create-bookmark",
-          label: v.intl.string(v.t["9p3D9p"]),
+          label: O.intl.string(O.t["9p3D9p"]),
           icon: o.gt9,
-          action: () => (0, f.z)({
+          action: () => (0, p.z)({
             channelId: t.channel_id,
             messageId: t.id,
             displayToast: true
@@ -223,14 +223,14 @@ let I = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(p.Z, x(C({}, n), {
+      return t.isThread() ? (0, r.jsx)(h.Z, C(x({}, n), {
         channel: t,
         navId: "thread-context",
-        label: v.intl.string(v.t["1NBjqb"])
-      })) : (0, r.jsx)(u.Z, x(C({}, n), {
+        label: O.intl.string(O.t["1NBjqb"])
+      })) : (0, r.jsx)(u.Z, C(x({}, n), {
         channel: t,
         navId: "channel-context",
-        label: v.intl.string(v.t.Xm41aV)
+        label: O.intl.string(O.t.Xm41aV)
       }))
     }
   }
@@ -242,7 +242,7 @@ function P(e) {
     channel: n,
     isUnread: l
   } = e, a = ((e, t) => {
-    let n = (0, b.ux)();
+    let n = (0, m.ux)();
     return (0, i.useMemo)(() => {
       let e = y.ln.MENTION,
         r = new Set;
@@ -259,12 +259,12 @@ function P(e) {
       let i = I[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(S, x(C({}, i), {
+          return (0, r.jsx)(S, C(x({}, i), {
             actionType: e,
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(_, x(C({}, i), {
+          return (0, r.jsx)(_, C(x({}, i), {
             actionType: e,
             channel: n,
             message: t

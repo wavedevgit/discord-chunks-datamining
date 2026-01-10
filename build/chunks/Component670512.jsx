@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 670512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -23,18 +23,18 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = {
+let m = {
   friction: 15,
   tension: 100
 };
-class m extends(r = Chunk473749.PureComponent) {
+class b extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: true
-    }), d.S.subscribe(f.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    }), d.S.subscribe(p.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentWillUnmount() {
-    this.focusTimeout.stop(), d.S.unsubscribe(f.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    this.focusTimeout.stop(), d.S.unsubscribe(p.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentDidUpdate() {
     let {
@@ -59,45 +59,45 @@ class m extends(r = Chunk473749.PureComponent) {
       return e
     }({
       toValue: Math.min(e, 250)
-    }, b)).start()
+    }, m)).start()
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
-      className: o()(p.arrowGroup, e),
+      className: o()(h.arrowGroup, e),
       children: [(0, i.jsx)(s.Z.div, {
-        className: o()(p.arrowContainer, p.horizontal),
+        className: o()(h.arrowContainer, h.horizontal),
         style: this.getStyle(),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(403756),
-          className: p.arrowIcon
+          className: h.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: o()(p.arrowContainer, p.diag1),
+        className: o()(h.arrowContainer, h.diag1),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(536404),
-          className: p.arrowIcon
+          className: h.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: o()(p.arrowContainer, p.diag2),
+        className: o()(h.arrowContainer, h.diag2),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(569347),
-          className: p.arrowIcon
+          className: h.arrowIcon
         })
       })]
     })
   }
   renderContent() {
     return (0, i.jsxs)("div", {
-      className: p.tutorialMessages,
+      className: h.tutorialMessages,
       children: [(0, i.jsx)("div", {
-        className: p.searchMessage,
-        children: h.intl.string(h.t.Mp0IGK)
+        className: h.searchMessage,
+        children: f.intl.string(f.t.Mp0IGK)
       }), (0, i.jsx)("div", {
-        className: p.selectMessage,
-        children: h.intl.string(h.t["3CbpwH"])
+        className: h.selectMessage,
+        children: f.intl.string(f.t["3CbpwH"])
       })]
     })
   }
@@ -109,11 +109,11 @@ class m extends(r = Chunk473749.PureComponent) {
     } = this.state;
     return (0, i.jsxs)("div", {
       ref: this.rootRef,
-      className: o()(p.tutorial, {
-        [p.shown]: t,
-        [p.hasQuery]: e
+      className: o()(h.tutorial, {
+        [h.shown]: t,
+        [h.hasQuery]: e
       }),
-      children: [this.renderContent(), this.renderArrowGroup(p.__invalid_left), this.renderArrowGroup(p.right)]
+      children: [this.renderContent(), this.renderArrowGroup(h.__invalid_left), this.renderArrowGroup(h.right)]
     })
   }
   getStyle() {
@@ -153,5 +153,5 @@ class m extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-g(m, "contextType", Chunk481060.Sfi);
-let y = m
+g(b, "contextType", Chunk481060.Sfi);
+let y = b

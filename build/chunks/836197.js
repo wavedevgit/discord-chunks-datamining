@@ -2,9 +2,9 @@
 /** chunk id: 836197, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ki: () => s,
-  Wc: () => l,
-  zy: () => c
+  Sr: () => l,
+  Wc: () => c,
+  zy: () => u
 });
 var Chunk624238 = require("./624238.js"),
   Chunk296009 = require("./296009.js"),
@@ -21,9 +21,13 @@ function o(e, t, n) {
 let s = [Chunk296009.l.CURRENT_GAMES, Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES, Chunk296009.l.PLAYED_GAMES];
 
 function l(e) {
-  return s.includes(e.type)
+  return s.includes(e)
 }
-class c {
+
+function c(e) {
+  return e instanceof u
+}
+class u {
   toSubmission() {
     let e = e => ({
       game_id: e.applicationId,
@@ -45,7 +49,10 @@ class c {
     return this.games.length > 0 && this.games.length <= r.kp[this.type]
   }
   isEqual(e) {
-    return e instanceof c && e.type === this.type && (0, a.ou)(this.games, e.games, this.type)
+    return e instanceof u && e.type === this.type && (0, a.ou)(this.games, e.games, this.type)
+  }
+  getUniqueKey() {
+    return this.type
   }
   getProfileAnalyticsOptions() {
     return {

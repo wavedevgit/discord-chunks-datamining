@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -25,38 +25,38 @@ function y(e) {
     connected: n,
     hovered: l,
     subtitle: y,
-    onClick: O,
-    showEmptyChannelTopic: v
-  } = e, j = (0, o.e7)([d.Z], () => d.Z.getChannelStatus(t)), C = null != j && j.length > 0, x = (0, u.ZP)(t, true), E = null != y && y.length > 0;
+    onClick: v,
+    showEmptyChannelTopic: O
+  } = e, j = (0, o.e7)([d.Z], () => d.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, u.ZP)(t, true), E = null != y && y.length > 0;
   if (i.useEffect(() => {
-      C && h.default.track(p.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      x && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [C, t.id, t.guild_id]), null == t.guild_id) return null;
-  let S = a()(b.statusDiv, n && x ? b.hoverable : null);
-  return C ? (0, r.jsx)(c.P3F, {
+    }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
+  let S = a()(m.statusDiv, n && C ? m.hoverable : null);
+  return x ? (0, r.jsx)(c.P3F, {
     className: S,
-    onClick: x ? O : true,
+    onClick: C ? v : true,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
-      className: a()(b.statusText, m.markup),
+      className: a()(m.statusText, b.markup),
       children: (0, r.jsx)(s.Z, {
-        children: f.Z.parseVoiceChannelStatus(j, true, {
+        children: p.Z.parseVoiceChannelStatus(j, true, {
           channelId: t.id
         })
       })
     })
-  }) : n && x && (!E || l) && v ? (0, r.jsxs)(c.P3F, {
+  }) : n && C && (!E || l) && O ? (0, r.jsxs)(c.P3F, {
     className: S,
-    onClick: O,
+    onClick: v,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
-      className: b.statusText,
+      className: m.statusText,
       children: g.intl.string(g.t.Mgpxiw)
     }), (0, r.jsx)(c.vdY, {
       color: "currentColor",
-      className: b.pencilIcon,
+      className: m.pencilIcon,
       size: "xxs"
     })]
   }) : E ? (0, r.jsx)(s.Z, {

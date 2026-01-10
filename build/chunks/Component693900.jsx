@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 693900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => p,
@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
@@ -35,8 +35,8 @@ function p(e) {
   } = e, {
     springConfig: m,
     isExpanded: p
-  } = r.useContext(u), f = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), {
-    ref: h,
+  } = r.useContext(u), h = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), {
+    ref: f,
     height: x = null
   } = (0, o.ZP)(), b = null != (t = (0, c.Z)(x)) ? t : null, [{
     height: g
@@ -49,9 +49,9 @@ function p(e) {
   return r.useLayoutEffect(() => {
     null !== x && v({
       height: x,
-      immediate: !p || f || null === b
+      immediate: !p || h || null === b
     })
-  }, [x, v, p, f, b]), (0, a.jsx)(i.animated.div, {
+  }, [x, v, p, h, b]), (0, a.jsx)(i.animated.div, {
     style: {
       height: null === b ? "auto" : g,
       overflow: "hidden"
@@ -60,7 +60,7 @@ function p(e) {
       style: {
         overflow: "hidden"
       },
-      ref: h,
+      ref: f,
       children: n
     })
   })

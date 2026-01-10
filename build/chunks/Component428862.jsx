@@ -8,7 +8,7 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk205641 = require("./205641.jsx"),
@@ -53,7 +53,7 @@ let v = {
     Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
   }), r);
 
-function C(e) {
+function y(e) {
   let [t, n] = a.useState(0), {
     numUnlocked: r,
     numRequired: i
@@ -99,7 +99,7 @@ function C(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     withCardBody: t,
     isAnimatedTo: n,
@@ -149,7 +149,7 @@ function y(e) {
           headerButton: d,
           subscriptionsRequired: g,
           hasAnimatedUnlocked: r
-        }) : null, (0, l.jsx)(C, {
+        }) : null, (0, l.jsx)(y, {
           numUnlocked: f,
           numRequired: g
         })]
@@ -173,12 +173,12 @@ function N(e) {
   } = e, O = (0, d.e7)([b.Z], () => {
     var e, t;
     return null != (t = null == (e = b.Z.getGuild(p)) ? true : e.premiumTier) ? t : h.Eu4.NONE
-  }), C = h.oCV[i.tier], N = a && i.tier <= O, E = i.tier !== h.Eu4.NONE && i.tier !== h.Eu4.TIER_1;
+  }), y = h.oCV[i.tier], N = a && i.tier <= O, E = i.tier !== h.Eu4.NONE && i.tier !== h.Eu4.TIER_1;
   return (0, l.jsxs)("div", {
     className: o()(j.tier, {
       [j.tierBottomMargin]: s
     }),
-    children: [(0, l.jsx)(y, {
+    children: [(0, l.jsx)(C, {
       subscriptionCount: n,
       tier: i,
       headerButton: c,
@@ -189,7 +189,7 @@ function N(e) {
       withCardBody: g,
       guildId: p,
       hasBottomMargin: s,
-      subscriptionsRequired: C,
+      subscriptionsRequired: y,
       hasAnimatedUnlocked: N,
       isAnimatedTo: a
     }), (0, l.jsx)("div", {

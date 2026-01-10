@@ -4,12 +4,12 @@
 require.d(exports, {
   GW: () => O,
   Qg: () => p,
-  Yn: () => C,
+  Yn: () => y,
   ZP: () => S,
   bL: () => N,
   i$: () => v,
   nn: () => j,
-  qN: () => y,
+  qN: () => C,
   wy: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -166,7 +166,7 @@ function O(e) {
   }, a))
 }
 
-function C(e) {
+function y(e) {
   let t = [...e];
   for (let n = 1; n < e.length; ++n) {
     let r = e[n];
@@ -187,7 +187,7 @@ function C(e) {
   }
   return t
 }
-let y = e => {
+let C = e => {
     let {
       children: t
     } = e;

@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 592473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ function p(e) {
     width: t = 24,
     height: n = 24,
     isBadged: l = false
-  } = e, [a] = i.useState(() => (0, s.Z)());
+  } = e, [a] = i.useState(() => (0, o.Z)());
   return (0, r.jsxs)("svg", {
     width: t,
     height: n,
@@ -39,36 +39,36 @@ function p(e) {
       })
     }), (0, r.jsx)("g", {
       mask: "url(#".concat(a, ")"),
-      children: (0, r.jsx)(o.E0I, {})
+      children: (0, r.jsx)(s.E0I, {})
     })]
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     className: t,
     numRequestToSpeak: n
   } = e, i = n > 0;
   return (0, r.jsxs)("div", {
-    className: a()(u.raisedHandIcon, t),
+    className: a()(d.raisedHandIcon, t),
     children: [(0, r.jsx)(p, {
       isBadged: i
-    }), i ? (0, r.jsx)(o.Text, {
-      className: u.raisedHandCount,
+    }), i ? (0, r.jsx)(s.Text, {
+      className: d.raisedHandCount,
       variant: "text-xs/semibold",
       children: n > 99 ? "99+" : n
     }) : null]
   })
 }
 
-function f(e) {
+function h(e) {
   var {
     toggleRequestToSpeakSidebar: t,
     showRequestToSpeakSidebar: n,
     className: l,
     numRequestToSpeak: a,
-    onClick: s
-  } = e, o = function(e, t) {
+    onClick: o
+  } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -83,9 +83,9 @@ function f(e) {
     }
     return i
   }(e, ["toggleRequestToSpeakSidebar", "showRequestToSpeakSidebar", "className", "numRequestToSpeak", "onClick"]);
-  let u = i.useCallback(() => {
-    null == s || s(), t()
-  }, [s, t]);
+  let d = i.useCallback(() => {
+    null == o || o(), t()
+  }, [o, t]);
   return (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -104,12 +104,12 @@ function f(e) {
     }
     return e
   }({
-    onClick: u,
-    label: n ? d.intl.string(d.t.gKGz7A) : d.intl.string(d.t.ImQ4dW),
+    onClick: d,
+    label: n ? u.intl.string(u.t.gKGz7A) : u.intl.string(u.t.ImQ4dW),
     className: l,
-    iconComponent: () => (0, r.jsx)(h, {
+    iconComponent: () => (0, r.jsx)(f, {
       numRequestToSpeak: a,
       className: l
     })
-  }, o))
+  }, s))
 }

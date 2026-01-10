@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -30,26 +30,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk60845 = require("./60845.js");
-let T = e => {
+let N = e => {
     let {
       userId: t,
       channelId: n
-    } = e, l = (0, s.e7)([y.Z], () => y.Z.getMutualGuilds(t), [t]), a = r.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
+    } = e, l = (0, s.e7)([v.Z], () => v.Z.getMutualGuilds(t), [t]), a = i.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, r = null != n ? j.ZP.getGuildIconURL({
+      } = e, i = null != n ? E.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
       }) : null;
-      if (null == r) return null;
+      if (null == i) return null;
       let a = t === (l.length > 3 ? 3 : l.length) - 1,
-        o = (0, i.jsx)("img", {
-          src: r,
+        o = (0, r.jsx)("img", {
+          src: i,
           alt: "",
           className: Z.avatar
         }, t);
-      return a ? o : (0, i.jsx)(p.ZP, {
+      return a ? o : (0, r.jsx)(p.ZP, {
         className: Z.avatarMask,
         mask: p.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
         width: 24,
@@ -57,60 +57,60 @@ let T = e => {
         children: o
       }, t)
     }).filter(e => null != e) : [], [l]);
-    return null == l || 0 === l.length ? (0, i.jsx)(c.Text, {
+    return null == l || 0 === l.length ? (0, r.jsx)(c.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      children: I.intl.string(I.t.zjVh8h)
-    }) : (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)("div", {
+      children: P.intl.string(P.t.zjVh8h)
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("div", {
         className: Z.avatarContainer,
         children: a
-      }), (0, i.jsx)(c.P3F, {
+      }), (0, r.jsx)(c.P3F, {
         onClick: () => {
-          (0, v.openUserProfileModal)({
+          (0, O.openUserProfileModal)({
             userId: t,
             channelId: n,
-            tabSection: P.oh.MUTUAL_GUILDS,
+            tabSection: I.oh.MUTUAL_GUILDS,
             sourceAnalyticsLocations: [d.Z.DM_CHANNEL]
           })
         },
-        children: (0, i.jsx)(c.Text, {
+        children: (0, r.jsx)(c.Text, {
           className: Z.mutualGuilds,
           variant: "text-sm/normal",
-          children: I.intl.format(I.t.eE3oep, {
+          children: P.intl.format(P.t.eE3oep, {
             count: l.length
           })
         })
       })]
     })
   },
-  N = e => {
+  T = e => {
     var t;
     let {
       relationshipType: n,
-      userId: r,
+      userId: i,
       showingBanner: l
-    } = e, a = null == (t = E.default.getUser(r)) ? true : t.bot, o = () => {
+    } = e, a = null == (t = C.default.getUser(i)) ? true : t.bot, o = () => {
       u.Z.addRelationship({
-        userId: r,
+        userId: i,
         context: {
           location: _.ZY5.DM_CHANNEL
         }
       })
-    }, s = (0, i.jsx)(c.Button, {
+    }, s = (0, r.jsx)(c.Button, {
       size: "sm",
       variant: "secondary",
       onClick: () => {
-        u.Z.blockUser(r, {
+        u.Z.blockUser(i, {
           location: _.ZY5.DM_CHANNEL
         })
       },
-      text: I.intl.string(I.t.l4Emac)
-    }), d = (0, f.n)(r);
+      text: P.intl.string(P.t.l4Emac)
+    }), d = (0, f.n)(i);
     switch (n) {
       case _.OGo.NONE:
-        return (0, i.jsxs)(i.Fragment, {
-          children: [!a && !l && (0, i.jsx)(c.Button, {
+        return (0, r.jsxs)(r.Fragment, {
+          children: [!a && !l && (0, r.jsx)(c.Button, {
             size: "sm",
             variant: "primary",
             onClick: o,
@@ -118,54 +118,54 @@ let T = e => {
           }), s]
         });
       case _.OGo.FRIEND:
-        return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(c.Button, {
+        return (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(c.Button, {
             size: "sm",
             variant: "secondary",
             onClick: () => {
-              u.Z.removeFriend(r, {
+              u.Z.removeFriend(i, {
                 location: _.ZY5.DM_CHANNEL
               })
             },
-            text: I.intl.string(I.t.cvSt1J)
+            text: P.intl.string(P.t.cvSt1J)
           }), s]
         });
       case _.OGo.BLOCKED:
-        return (0, i.jsx)(c.Button, {
+        return (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
           onClick: () => {
-            u.Z.unblockUser(r, {
+            u.Z.unblockUser(i, {
               location: _.ZY5.DM_CHANNEL
             })
           },
-          text: I.intl.string(I.t.XyHpKH)
+          text: P.intl.string(P.t.XyHpKH)
         });
       case _.OGo.PENDING_INCOMING:
-        return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(c.Button, {
+        return (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(c.Button, {
             size: "sm",
             variant: "primary",
             onClick: o,
-            text: I.intl.string(I.t["+WbSn5"])
-          }), (0, i.jsx)(c.Button, {
+            text: P.intl.string(P.t["+WbSn5"])
+          }), (0, r.jsx)(c.Button, {
             size: "sm",
             variant: "secondary",
             onClick: () => {
-              u.Z.cancelFriendRequest(r, {
+              u.Z.cancelFriendRequest(i, {
                 location: _.ZY5.DM_CHANNEL
               })
             },
-            text: I.intl.string(I.t.rQSndv)
+            text: P.intl.string(P.t.rQSndv)
           }), s]
         });
       case _.OGo.PENDING_OUTGOING:
-        return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(c.Button, {
+        return (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(c.Button, {
             size: "sm",
             variant: "primary",
             disabled: true,
-            text: I.intl.string(I.t.xMH6vD)
+            text: P.intl.string(P.t.xMH6vD)
           }), s]
         });
       default:
@@ -176,12 +176,12 @@ let T = e => {
     let {
       channelId: t,
       otherUserId: n
-    } = e, l = r.useCallback(() => {
-      (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
-    }, []), a = r.useCallback(() => {
-      C.Z.closeChannelSidebar(x.uZ)
-    }, []), o = r.useCallback(() => {
-      C.Z.closeChannelSidebar(x.uZ)
+    } = e, l = i.useCallback(() => {
+      (0, c.showToast)((0, c.createToast)(P.intl.string(P.t.a2j0hv), c.ToastType.FAILURE))
+    }, []), a = i.useCallback(() => {
+      y.Z.closeChannelSidebar(j.uZ)
+    }, []), o = i.useCallback(() => {
+      y.Z.closeChannelSidebar(j.uZ)
     }, []), {
       acceptMessageRequest: s,
       rejectMessageRequest: u,
@@ -189,27 +189,27 @@ let T = e => {
       isRejectLoading: p,
       isOptimisticAccepted: f,
       isOptimisticRejected: h
-    } = (0, m.m)({
-      user: E.default.getUser(n),
+    } = (0, g.m)({
+      user: C.default.getUser(n),
       onError: l,
       onAcceptSuccess: o,
       onRejectSuccess: a
-    }), g = d || p || f || h;
-    return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(c.Button, {
+    }), m = d || p || f || h;
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
-        disabled: g,
+        disabled: m,
         onClick: () => s(t),
         loading: d,
-        text: I.intl.string(I.t.Kz8Pwr)
-      }), (0, i.jsx)(c.Button, {
+        text: P.intl.string(P.t.Kz8Pwr)
+      }), (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        disabled: g,
+        disabled: m,
         onClick: () => u(t),
         loading: p,
-        text: I.intl.string(I.t.B2nygW)
+        text: P.intl.string(P.t.B2nygW)
       })]
     })
   },
@@ -217,46 +217,46 @@ let T = e => {
     let {
       userId: t,
       channel: n,
-      showingBanner: r
+      showingBanner: i
     } = e, {
       channelId: l
-    } = (0, g._)(), u = (0, s.e7)([h.Z], () => null != l && h.Z.isSpam(l), [l]), d = (0, s.e7)([O.Z], () => O.Z.getRelationshipType(t), [t]), p = n.id === l, f = !o.tq && !p, m = !!o.tq || p || u, C = u || p ? (0, i.jsxs)("div", {
+    } = (0, m._)(), u = (0, s.e7)([h.Z], () => null != l && h.Z.isSpam(l), [l]), d = (0, s.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), p = n.id === l, f = !o.tq && !p, g = !!o.tq || p || u, y = u || p ? (0, r.jsxs)("div", {
       className: Z.inline,
-      children: [(0, i.jsx)(A, {
+      children: [(0, r.jsx)(A, {
         channelId: n.id,
         otherUserId: t
-      }), (0, i.jsx)(b.Z, {
+      }), (0, r.jsx)(b.Z, {
         channel: n
       })]
-    }) : (0, i.jsxs)("div", {
+    }) : (0, r.jsxs)("div", {
       className: Z.inline,
-      children: [(0, i.jsx)(N, {
+      children: [(0, r.jsx)(T, {
         relationshipType: d,
         userId: t,
-        showingBanner: r
-      }), !r && (0, i.jsx)(S.Z, {
+        showingBanner: i
+      }), !i && (0, r.jsx)(S.Z, {
         otherUserId: t,
         channel: n,
         navigateAwayOnReportSuccess: f
       })]
-    }), y = d !== _.OGo.PENDING_INCOMING || u || p ? null : (0, i.jsx)(c.Text, {
+    }), v = d !== _.OGo.PENDING_INCOMING || u || p ? null : (0, r.jsx)(c.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      children: I.intl.string(I.t.c2v5nO)
+      children: P.intl.string(P.t.c2v5nO)
     });
-    return (0, i.jsxs)("div", {
-      className: m ? Z.mobileContainer : Z.container,
-      children: [(0, i.jsx)("div", {
+    return (0, r.jsxs)("div", {
+      className: g ? Z.mobileContainer : Z.container,
+      children: [(0, r.jsx)("div", {
         className: Z.inline,
-        children: (0, i.jsx)(T, {
+        children: (0, r.jsx)(N, {
           userId: t,
           channelId: n.id
         })
-      }), !m && (0, i.jsx)("div", {
+      }), !g && (0, r.jsx)("div", {
         className: Z.divider
-      }), (0, i.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: a()(Z.inline, Z.wrap),
-        children: [y, C]
+        children: [v, y]
       })]
     })
   }

@@ -1,7 +1,8 @@
-/** Chunk was on 41700 **/
-/** chunk id: 442853, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 442853, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => _
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk149765 = require("./149765.js"),
@@ -12,39 +13,39 @@ var Chunk473749 = require("./473749.js"),
   Chunk271383 = require("./271383.js"),
   Chunk700785 = require("./700785.js"),
   Chunk231338 = require("./231338.js");
-let p = [],
-  h = new Set;
+let f = [],
+  p = new Set;
 
-function f(e) {
+function _(e) {
   let {
     entries: t,
     channelId: n
-  } = e, f = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), g = null == f ? true : f.guild_id, m = r.useRef(new Set), b = r.useMemo(() => {
+  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getChannel(n)), m = null == _ ? true : _.guild_id, h = r.useRef(new Set), g = r.useMemo(() => {
     let e = new Set(null == t ? true : t.map(e => e.author_id));
-    return (0, a.E)([...m.current], [...e]) || (m.current = e), m.current
+    return (0, o.E)([...h.current], [...e]) || (h.current = e), h.current
   }, [t]);
   r.useEffect(() => {
-    null != g && Array.from(b).forEach(e => {
-      o.Z.requestMember(g, e)
+    null != m && Array.from(g).forEach(e => {
+      l.Z.requestMember(m, e)
     })
-  }, [b, g]);
-  let y = (0, l.Wu)([c.ZP], () => {
-      if (null == g) return p;
+  }, [g, m]);
+  let E = (0, a.Wu)([c.ZP], () => {
+      if (null == m) return f;
       let e = [];
-      for (let t of b) c.ZP.isMember(g, t) && e.push(t);
+      for (let t of g) c.ZP.isMember(m, t) && e.push(t);
       return e
-    }, [b, g]),
-    O = r.useMemo(() => {
-      if (null == f || 0 === y.length) return h;
+    }, [g, m]),
+    b = r.useMemo(() => {
+      if (null == _ || 0 === E.length) return p;
       let e = new Set;
-      for (let t of y) {
-        let n = d.uB({
+      for (let t of E) {
+        let n = u.uB({
           user: t,
-          context: f
+          context: _
         });
-        i.e$(n, u.Pl.VIEW_CHANNEL) && e.add(t)
+        i.e$(n, d.Pl.VIEW_CHANNEL) && e.add(t)
       }
       return e
-    }, [y, f]);
-  return r.useMemo(() => null == t ? true : t.filter(e => O.has(e.author_id)), [t, O])
+    }, [E, _]);
+  return r.useMemo(() => null == t ? true : t.filter(e => b.has(e.author_id)), [t, b])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 333535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -21,40 +21,40 @@ var Chunk54381 = require("./54381.js"),
 function b(e) {
   let {
     threadId: t
-  } = e, n = (0, l.e7)([s.Z], () => s.Z.getChannel(t)), b = (0, l.e7)([s.Z], () => s.Z.getChannel(null == n ? true : n.parent_id)), C = r.useCallback(() => {
+  } = e, n = (0, l.e7)([s.Z], () => s.Z.getChannel(t)), b = (0, l.e7)([s.Z], () => s.Z.getChannel(null == n ? true : n.parent_id)), y = i.useCallback(() => {
     null != n && null != b && ((0, o.yw)(h.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
       media_post_id: n.id
     }), (0, u.JG)((0, c.EO)(n, b)))
   }, [n, b]);
-  return (0, i.jsxs)("div", {
-    className: g.sharePromptContainer,
-    children: [(0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
-      className: g.sharePromptContent,
-      children: [(0, i.jsx)(a.Text, {
+  return (0, r.jsxs)("div", {
+    className: m.sharePromptContainer,
+    children: [(0, r.jsx)(f.Z, {}), (0, r.jsxs)("div", {
+      className: m.sharePromptContent,
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "text-strong",
-        children: m.intl.string(m.t["5uAO7d"])
-      }), (0, i.jsx)(a.Text, {
+        children: g.intl.string(g.t["5uAO7d"])
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: m.intl.format(m.t.WnfPV3, {
+        children: g.intl.format(g.t.WnfPV3, {
           helpArticleUrl: d.Z.getCreatorSupportArticleURL(h.BhN.MEDIA_CHANNEL)
         })
-      }), (0, i.jsx)(a.LZC, {
+      }), (0, r.jsx)(a.LZC, {
         size: 4
-      }), (0, i.jsx)(a.Button, {
-        text: m.intl.string(m.t.C5UQC9),
+      }), (0, r.jsx)(a.Button, {
+        text: g.intl.string(g.t.C5UQC9),
         variant: "primary",
         icon: a.xPt,
-        onClick: C
+        onClick: y
       })]
-    }), (0, i.jsx)(a.P3F, {
-      className: g.closeButton,
+    }), (0, r.jsx)(a.P3F, {
+      className: m.closeButton,
       onClick: () => {
         (0, p.fn)(t)
       },
-      "aria-label": m.intl.string(m.t["0+xZH0"]),
-      children: (0, i.jsx)(a.Dio, {
+      "aria-label": g.intl.string(g.t["0+xZH0"]),
+      children: (0, r.jsx)(a.Dio, {
         color: "currentColor",
         size: "xs"
       })

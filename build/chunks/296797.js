@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 296797, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -21,19 +21,19 @@ function p(e) {
     async function e(e) {
       let {
         location: n
-      } = e, r = (0, s.p)(n);
-      if (null == r || !(0, o.Z)(r)) return;
+      } = e, r = (0, o.p)(n);
+      if (null == r || !(0, s.Z)(r)) return;
       l.Z.getVoiceChannelId() !== r && await (0, c.Z)({
         channelId: r
       });
       let a = i.Z.getChannel(r),
-        u = null == a ? true : a.guild_id;
+        d = null == a ? true : a.guild_id;
       setTimeout(() => {
-        (0, d.Z)(u, n), null == t || t()
+        (0, u.Z)(d, n), null == t || t()
       }, 0)
     }
-    return a.S.subscribe(u.CkL.OPEN_EMBEDDED_ACTIVITY, e), () => {
-      a.S.unsubscribe(u.CkL.OPEN_EMBEDDED_ACTIVITY, e)
+    return a.S.subscribe(d.CkL.OPEN_EMBEDDED_ACTIVITY, e), () => {
+      a.S.unsubscribe(d.CkL.OPEN_EMBEDDED_ACTIVITY, e)
     }
   }, [t])
 }

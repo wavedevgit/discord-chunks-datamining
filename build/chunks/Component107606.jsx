@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,9 +21,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk431135 = require("./431135.js");
 
 function g() {
-  var e, t, n, g, v, j, C, y;
+  var e, t, n, g, v, j, y, C;
   (0, u.mw)();
-  let _ = (0, r.e7)([f.default], () => f.default.getCurrentUser()),
+  let _ = (0, r.e7)([h.default], () => h.default.getCurrentUser()),
     S = p.L1.useSetting(),
     E = (0, r.e7)([m.Z], () => m.Z.theme),
     T = S.backgroundGradientPresetId,
@@ -35,11 +35,11 @@ function g() {
     k = null != w && null != (v = N.find(e => e.skuId === w)) ? v : null,
     R = null != I && null != (j = P.find(e => e.skuId === I)) ? j : null,
     A = (0, r.e7)([o.Z], () => o.Z.getProduct(null == k ? true : k.skuId)),
-    D = (0, r.e7)([o.Z], () => o.Z.getProduct(null == R ? true : R.skuId)),
-    Z = (0, r.e7)([s.Z], () => s.Z.fontSize),
+    Z = (0, r.e7)([o.Z], () => o.Z.getProduct(null == R ? true : R.skuId)),
+    D = (0, r.e7)([s.Z], () => s.Z.fontSize),
     L = (0, r.e7)([s.Z], () => s.Z.messageGroupSpacing),
     M = p.YC.useSetting();
-  return (0, h.ub)(), (0, a.jsxs)("div", {
+  return (0, f.ub)(), (0, a.jsxs)("div", {
     className: b.container,
     children: [(0, a.jsxs)("div", {
       children: [(0, a.jsx)(l.Heading, {
@@ -52,17 +52,17 @@ function g() {
         variant: "primary",
         size: "sm",
         text: "Randomize Theme",
-        onClick: h.aB
+        onClick: f.aB
       }), (0, a.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Collectibles",
-        onClick: h.th
+        onClick: f.th
       }), (0, a.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Appearance Settings",
-        onClick: h._Y
+        onClick: f._Y
       })]
     }), (0, a.jsxs)("div", {
       children: [(0, a.jsx)(l.Heading, {
@@ -76,13 +76,13 @@ function g() {
         children: ["Client Theme ID:", " ", null != T ? null == (g = x.qt[T]) ? true : g.getName() : "None"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
-        children: ["Avatar Decoration: ", null != (C = null == A ? true : A.name) ? C : "None"]
+        children: ["Avatar Decoration: ", null != (y = null == A ? true : A.name) ? y : "None"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
-        children: ["Nameplate: ", null != (y = null == D ? true : D.name) ? y : "None"]
+        children: ["Nameplate: ", null != (C = null == Z ? true : Z.name) ? C : "None"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
-        children: ["Font Size: ", Z, "px"]
+        children: ["Font Size: ", D, "px"]
       }), (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
         children: ["Message Spacing: ", L]

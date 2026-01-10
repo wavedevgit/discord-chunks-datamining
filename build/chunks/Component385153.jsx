@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 385153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -15,12 +15,12 @@ function o(e) {
   } = e;
   return (0, r.jsx)(i.P3F, {
     onClick: t,
-    className: l.button,
+    className: a.button,
     "aria-expanded": n,
     children: (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
       color: "none",
-      children: n ? a.intl.string(a.t["6MwJo/"]) : a.intl.string(a.t.lBeKY2)
+      children: n ? l.intl.string(l.t["6MwJo/"]) : l.intl.string(l.t.lBeKY2)
     })
   })
 }

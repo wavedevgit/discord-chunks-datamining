@@ -1,7 +1,7 @@
 /** Chunk was on 24783 **/
 /** chunk id: 3689, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,15 +11,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, t) {
-  let u = arguments.length > 2 && true !== arguments[2] ? arguments[2] : e.type,
-    s = (0, i.e7)([c.Z], () => c.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
-  if (__OVERLAY__ || !s) return null;
+function s(e, t) {
+  let s = arguments.length > 2 && true !== arguments[2] ? arguments[2] : e.type,
+    u = (0, i.e7)([c.Z], () => c.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
+  if (__OVERLAY__ || !u) return null;
   let d = () => {
     (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("12333")]).then(n.bind(n, 241865));
+      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("43282")]).then(n.bind(n, 241865));
       return n => {
         var i, l;
         return (0, r.jsx)(t, (i = function(e) {
@@ -40,7 +40,7 @@ function u(e, t) {
           }
           return e
         }({}, n), l = l = {
-          channelType: u,
+          channelType: s,
           guildId: e.guild_id,
           categoryId: e.parent_id
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -56,7 +56,7 @@ function u(e, t) {
       }
     })
   };
-  switch (u) {
+  switch (s) {
     case o.d4z.GUILD_TEXT:
       return (0, r.jsx)(l.sNh, {
         id: "create-text-channel",

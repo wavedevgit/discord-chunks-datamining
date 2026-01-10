@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 544142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -23,31 +23,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk616508 = require("./616508.js");
 
-function O(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function E(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -55,51 +55,51 @@ function E(e, t) {
   }), e
 }
 
-function j(e) {
+function E(e) {
   var t, l, p;
   let {
-    userId: C,
-    channel: y
-  } = e, v = r.useRef(null), {
-    analyticsLocations: j
-  } = (0, d.ZP)(u.Z.USERNAME), S = (0, o.e7)([g.default], () => g.default.getUser(C)), _ = (0, o.e7)([m.ZP], () => null != C ? m.ZP.getMember(y.guild_id, C) : null), P = (0, f.X7)(y.guild_id, null != C ? C : true, null != (t = null == _ ? true : _.colorStrings) ? t : null);
+    userId: y,
+    channel: v
+  } = e, O = i.useRef(null), {
+    analyticsLocations: E
+  } = (0, d.ZP)(u.Z.USERNAME), S = (0, o.e7)([m.default], () => m.default.getUser(y)), _ = (0, o.e7)([g.ZP], () => null != y ? g.ZP.getMember(v.guild_id, y) : null), I = (0, f.X7)(v.guild_id, null != y ? y : true, null != (t = null == _ ? true : _.colorStrings) ? t : null);
 
-  function I(e) {
+  function P(e) {
     if (null == S) return null;
     (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70675"), n.e("66256")]).then(n.bind(n, 654663));
-      return t => (0, i.jsx)(e, E(O({}, t), {
+      } = await Promise.all([n.e("79695"), n.e("4040"), n.e("70675"), n.e("66256")]).then(n.bind(n, 654663));
+      return t => (0, r.jsx)(e, C(x({}, t), {
         user: S,
-        guildId: y.guild_id,
-        channel: y
+        guildId: v.guild_id,
+        channel: v
       }))
     })
   }
   let Z = null != (p = null != (l = null == _ ? true : _.nick) ? l : b.ZP.getName(S)) ? p : "???",
-    T = null == _ ? true : _.colorString;
-  return null == S ? (0, i.jsx)("span", {
-    className: a()(x.threadCreatorName, x.unknownCreatorName),
+    N = null == _ ? true : _.colorString;
+  return null == S ? (0, r.jsx)("span", {
+    className: a()(j.threadCreatorName, j.unknownCreatorName),
     children: Z
-  }) : (0, i.jsx)(d.Gt, {
-    value: j,
-    children: (0, i.jsx)(h.Z, {
-      targetElementRef: v,
+  }) : (0, r.jsx)(d.Gt, {
+    value: E,
+    children: (0, r.jsx)(h.Z, {
+      targetElementRef: O,
       user: S,
-      guildId: y.guild_id,
-      channelId: y.id,
+      guildId: v.guild_id,
+      channelId: v.id,
       roleId: null == _ ? true : _.colorRoleId,
       clickTrap: true,
-      children: e => (0, i.jsx)(s.P3F, E(O({}, e), {
-        innerRef: v,
+      children: e => (0, r.jsx)(s.P3F, C(x({}, e), {
+        innerRef: O,
         tag: "span",
-        className: x.threadCreatorName,
-        onContextMenu: I,
-        children: (0, i.jsx)(s.PUh, {
+        className: j.threadCreatorName,
+        onContextMenu: P,
+        children: (0, r.jsx)(s.PUh, {
           name: Z,
-          colorString: null != T ? T : null,
-          colorStrings: P
+          colorString: null != N ? N : null,
+          colorStrings: I
         })
       }))
     })
@@ -112,27 +112,27 @@ function S(e) {
   } = e, {
     threadMetadata: n
   } = t;
-  return null == n ? (0, i.jsx)("div", {
+  return null == n ? (0, r.jsx)("div", {
     style: {
       marginTop: false
     }
-  }) : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(s.Text, {
+  }) : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: (0, i.jsx)("div", {
-        className: x.subtitle,
-        children: v.intl.format(v.t.imPXd5, {
-          usernameHook: (e, n) => (0, i.jsx)(j, {
+      children: (0, r.jsx)("div", {
+        className: j.subtitle,
+        children: O.intl.format(O.t.imPXd5, {
+          usernameHook: (e, n) => (0, r.jsx)(E, {
             userId: t.ownerId,
             channel: t
           }, n)
         })
       })
-    }), t.type === y.d4z.PRIVATE_THREAD ? (0, i.jsx)(s.Text, {
+    }), t.type === v.d4z.PRIVATE_THREAD ? (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: v.intl.string(v.t["1awbZG"])
+      children: O.intl.string(O.t["1awbZG"])
     }) : null]
   })
 }
@@ -141,17 +141,17 @@ function _(e) {
   var t;
   let {
     channel: n
-  } = e, r = null != (t = (0, p.KS)(n)) ? t : s.or_;
-  return (0, i.jsxs)(C.ZP, {
+  } = e, i = null != (t = (0, p.KS)(n)) ? t : s.or_;
+  return (0, r.jsxs)(y.ZP, {
     channelId: n.id,
-    children: [(0, i.jsx)("div", {
-      className: x.iconWrapper,
-      children: (0, i.jsx)(r, {
-        className: x.icon
+    children: [(0, r.jsx)("div", {
+      className: j.iconWrapper,
+      children: (0, r.jsx)(i, {
+        className: j.icon
       })
-    }), (0, i.jsx)(C.Ot, {
+    }), (0, r.jsx)(y.Ot, {
       children: n.name
-    }), (0, i.jsx)(S, {
+    }), (0, r.jsx)(S, {
       channel: n
     })]
   })

@@ -141,7 +141,7 @@ class x extends Chunk839548.Z {
           port: s
         } = i;
         this.logger.info("Connected with local address ".concat(o, ":").concat(s, " and protocol: ").concat(a)), this.onConnectCallbackAt = performance.now(), n.getCodecCapabilities(r => {
-          this.onVideoCodecsCallbackAt = performance.now(), this.logger.info("Available codecs: ".concat(JSON.stringify(r)));
+          this.onVideoCodecsCallbackAt = performance.now(), this.logger.info("Available engine codecs: ".concat(JSON.stringify(r)));
           let i = (0, g.DY)(this.experimentFlags);
           this.logger.info("Experimental codecs: ".concat(JSON.stringify(i))), this.codecs = [{
             type: "audio",
@@ -161,8 +161,8 @@ class x extends Chunk839548.Z {
               decode: e.decode
             }
           })], this.logger.info("Audio codecs: ".concat(this.codecs.filter(e => "audio" === e.type).map(e => e.name))), this.logger.info("Video codecs: ".concat(this.codecs.filter(e => "video" === e.type).map(e => e.name + "[encode: " + e.encode + ", decode: " + e.decode + "]"))), t.getEncryptionModes(r => {
-            var i, l, c, u, d, f, p, _, m, g, E, b, y, O, S;
-            this.onEncryptionModesCallbackAt = performance.now(), this.logger.info("Encryption modes: ".concat(r)), t.setTransportOptions(this.getConnectionTransportOptions()), t.setSelfMute(this.selfMute || this.context === v.Yn.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null == (i = t.setOnNativeMuteToggleCallback) || i.call(t, this.handleNativeMuteToggled), null == (l = t.setOnNativeMuteChangedCallback) || l.call(t, this.handleNativeMuteChanged), null == (c = t.setOnSpeakingWhileMutedCallback) || c.call(t, this.handleSpeakingWhileMuted), null == (u = t.setPingInterval) || u.call(t, v.$B), t.setPingCallback(this.handlePing), null == (d = t.setPingTimeoutCallback) || d.call(t, this.handlePingTimeout), null == (f = t.setOnVideoEncoderFallbackCallback) || f.call(t, this.handleVideoEncoderFallback), null == (p = t.setOnRtcpMessageCallback) || p.call(t, this.handleRTCPMessage), n.setTransportOptions({
+            var i, l, c, u, d, f, p, _, m, g, E, b, y, O, S, I;
+            this.onEncryptionModesCallbackAt = performance.now(), this.logger.info("Encryption modes: ".concat(r)), t.setTransportOptions(this.getConnectionTransportOptions()), t.setSelfMute(this.selfMute || this.context === v.Yn.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null == (i = t.setOnNativeMuteToggleCallback) || i.call(t, this.handleNativeMuteToggled), null == (l = t.setOnNativeMuteChangedCallback) || l.call(t, this.handleNativeMuteChanged), null == (c = t.setOnSpeakingWhileMutedCallback) || c.call(t, this.handleSpeakingWhileMuted), null == (u = t.setPingInterval) || u.call(t, v.$B), t.setPingCallback(this.handlePing), null == (d = t.setPingTimeoutCallback) || d.call(t, this.handlePingTimeout), null == (f = t.setOnVideoEncoderFallbackCallback) || f.call(t, this.handleVideoEncoderFallback), null == (p = t.setOnVideoDecoderFallbackCallback) || p.call(t, this.handleVideoDecoderFallback), null == (_ = t.setOnRtcpMessageCallback) || _.call(t, this.handleRTCPMessage), n.setTransportOptions({
               builtInEchoCancellation: true,
               echoCancellation: this.echoCancellation,
               noiseSuppression: this.noiseSuppression,
@@ -173,17 +173,17 @@ class x extends Chunk839548.Z {
               noiseCancellationAfterProcessing: this.noiseCancellationAfterProcessing,
               vadAfterWebrtc: this.vadAfterWebrtc,
               voiceFilters: null != this.voiceFilterId
-            }), n.setNoInputThreshold(false), n.setNoInputCallback(this.handleNoInput), this.videoSupported && (t.setOnVideoCallback(this.handleVideo), null == (m = t.setOnFirstFrameCallback) || m.call(t, this.handleFirstFrame), null == (g = t.setOnFirstFrameDeliveredStatsCallback) || g.call(t, this.handleFirstFrameStats), null == (E = t.setOnFirstFrameEncryptedStatsCallback) || E.call(t, this.handleFirstFrameEncryptedStats), null == (b = t.setOnDesktopSourceEnded) || b.call(t, this.handleDesktopSourceEnded), null == (y = t.setOnSoundshare) || y.call(t, this.handleSoundshare), null == (O = t.setOnSoundshareEnded) || O.call(t, this.handleSoundshareEnded), null == (S = t.setOnSoundshareFailed) || S.call(t, this.handleSoundshareFailed)), null == (_ = t.setOnMLSFailureCallback) || _.call(t, this.handleMLSFailure), this.setConnectionState(v.$j.CONNECTED), this.emit(h.Sh.Connected, a, {
+            }), n.setNoInputThreshold(false), n.setNoInputCallback(this.handleNoInput), this.videoSupported && (t.setOnVideoCallback(this.handleVideo), null == (g = t.setOnFirstFrameCallback) || g.call(t, this.handleFirstFrame), null == (E = t.setOnFirstFrameDeliveredStatsCallback) || E.call(t, this.handleFirstFrameStats), null == (b = t.setOnFirstFrameEncryptedStatsCallback) || b.call(t, this.handleFirstFrameEncryptedStats), null == (y = t.setOnDesktopSourceEnded) || y.call(t, this.handleDesktopSourceEnded), null == (O = t.setOnSoundshare) || O.call(t, this.handleSoundshare), null == (S = t.setOnSoundshareEnded) || S.call(t, this.handleSoundshareEnded), null == (I = t.setOnSoundshareFailed) || I.call(t, this.handleSoundshareFailed)), null == (m = t.setOnMLSFailureCallback) || m.call(t, this.handleMLSFailure), this.setConnectionState(v.$j.CONNECTED), this.emit(h.Sh.Connected, a, {
               address: o,
               port: s,
               mode: this.chooseEncryptionMode(e.modes, r),
               codecs: this.codecs
             }), this.on(h.Sh.Stats, this.handleStats);
-            let I = this.getUserOptions();
-            for (let e of (I.forEach(e => {
+            let T = this.getUserOptions();
+            for (let e of (T.forEach(e => {
                 var t, n;
                 return this.logger.info("Creating user: ".concat(e.id, " with audio SSRC: ").concat(e.ssrc, " and video SSRCs: ").concat(null != (n = null == (t = e.videoSsrcs) ? true : t.join(",")) ? n : 0))
-              }), this.mergeUsers(I), this.emit(h.Sh.RemoteStreamsReady, I.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
+              }), this.mergeUsers(T), this.emit(h.Sh.RemoteStreamsReady, T.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
           })
         })
       };
@@ -836,7 +836,7 @@ class x extends Chunk839548.Z {
     this.conn.mergeUsers(e), this.emit(h.Sh.UsersMerged, e)
   }
   constructor(e, t, n) {
-    super(e, t), S(this, "mediaEngineConnectionId", "Native-".concat(R++)), S(this, "goLiveSourceIdentifier", true), S(this, "selfVideo", false), S(this, "codecs", []), S(this, "videoEncoderFallbackPending", false), S(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), S(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), S(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), S(this, "localPans", {}), S(this, "remoteAudioSSRCs", {}), S(this, "remoteVideoSSRCs", {}), S(this, "inputMode", v.pM.VOICE_ACTIVITY), S(this, "vadThreshold", false), S(this, "vadAutoThreshold", true), S(this, "vadKrispActivationThreshold", .5), S(this, "vadUseKrisp", true), S(this, "vadLeading", 5), S(this, "vadTrailing", 25), S(this, "vadDuringPreProcess", false), S(this, "pttReleaseDelay", 20), S(this, "soundshareActive", false), S(this, "soundshareId", null), S(this, "soundshareSentSpeakingEvent", false), S(this, "echoCancellation", true), S(this, "noiseSuppression", true), S(this, "automaticGainControl", {
+    super(e, t), S(this, "mediaEngineConnectionId", "Native-".concat(R++)), S(this, "goLiveSourceIdentifier", true), S(this, "selfVideo", false), S(this, "codecs", []), S(this, "videoEncoderFallbackPending", false), S(this, "videoDecoderFallbackSent", new Set), S(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), S(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), S(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), S(this, "localPans", {}), S(this, "remoteAudioSSRCs", {}), S(this, "remoteVideoSSRCs", {}), S(this, "inputMode", v.pM.VOICE_ACTIVITY), S(this, "vadThreshold", false), S(this, "vadAutoThreshold", true), S(this, "vadKrispActivationThreshold", .5), S(this, "vadUseKrisp", true), S(this, "vadLeading", 5), S(this, "vadTrailing", 25), S(this, "vadDuringPreProcess", false), S(this, "pttReleaseDelay", 20), S(this, "soundshareActive", false), S(this, "soundshareId", null), S(this, "soundshareSentSpeakingEvent", false), S(this, "echoCancellation", true), S(this, "noiseSuppression", true), S(this, "automaticGainControl", {
       enabled: true
     }), S(this, "noiseCancellation", false), S(this, "noiseCancellationDuringProcessing", false), S(this, "noiseCancellationAfterProcessing", false), S(this, "vadAfterWebrtc", false), S(this, "voiceFilterId", null), S(this, "attenuationFactor", .5), S(this, "attenuateWhileSpeakingSelf", false), S(this, "attenuateWhileSpeakingOthers", true), S(this, "qos", true), S(this, "conn", true), S(this, "minimumJitterBufferLevel", 0), S(this, "postponeDecodeLevel", 100), S(this, "reconnectInterval", 6e4), S(this, "keyframeInterval", 0), S(this, "clipsKeyFrameInterval", 0), S(this, "videoQualityMeasurement", ""), S(this, "videoEncoderExperiments", ""), S(this, "numFastUdpReconnects", 0), S(this, "simulcastLQDisabledSsrc", true), S(this, "lastPreparedTransitionId", false), S(this, "lastExecutedTransitionId", false), S(this, "logger", true), S(this, "transportInfo", true), S(this, "beginInitializeAt", true), S(this, "onConnectCallbackAt", true), S(this, "onVideoCodecsCallbackAt", true), S(this, "onEncryptionModesCallbackAt", true), S(this, "handleSpeakingNative", (e, t, n) => {
       let r = v.Dg.NONE;
@@ -857,6 +857,8 @@ class x extends Chunk839548.Z {
       this.emit(h.Sh.PingTimeout, n, r > 0 ? r : 4e3)
     }), S(this, "handleVideoEncoderFallback", e => {
       this.videoEncoderFallbackPending || (this.logger.info("Falling back from current video encoder: ".concat(e)), this.codecs = this.codecs.map(t => ((e === t.name || "AV1" === t.name && "AV1X" === e) && (t.encode = false), t)).filter(e => "video" !== e.type || false !== e.encode || false !== e.decode), this.emit(h.Sh.VideoEncoderFallback, this.codecs), this.videoEncoderFallbackPending = true)
+    }), S(this, "handleVideoDecoderFallback", e => {
+      this.videoDecoderFallbackSent.has(e) || (this.videoDecoderFallbackSent.add(e), this.logger.info("Falling back from current video decoder: ".concat(e)), this.codecs = this.codecs.map(t => ((e === t.name || "AV1" === t.name && "AV1X" === e) && (t.decode = false), t)).filter(e => "video" !== e.type || false !== e.encode || false !== e.decode), this.emit(h.Sh.VideoDecoderFallback, this.codecs))
     }), S(this, "handleRTCPMessage", (e, t) => {
       if (e === O.ym.REMB && this.context === v.Yn.STREAM) {
         let e = JSON.parse(t);

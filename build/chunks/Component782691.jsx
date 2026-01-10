@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 782691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -40,7 +40,7 @@ function j(e) {
   return e
 }
 
-function C(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = {
+let C = {
     [Chunk489495.cq.THUMBNAIL]: null,
     [Chunk489495.cq.STATIC]: null,
     [Chunk489495.cq.REDUCED_MOTION]: null
@@ -63,7 +63,7 @@ let y = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, f.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(y), D = r.useRef([]), [Z, L] = r.useState(t.name), M = Z.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(C), Z = r.useRef([]), [D, L] = r.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       id: _,
       skuId: _,
       title: _,
@@ -78,9 +78,9 @@ let y = {
       return null == t ? null : t[0]
     }, F = (e, t) => {
       let n = B(t);
-      null != n && (0, h.i0)(n, t => {
-        A(a => C(j({}, a), {
-          [e]: (0, h.z)(t, n)
+      null != n && (0, f.i0)(n, t => {
+        A(a => y(j({}, a), {
+          [e]: (0, f.z)(t, n)
         }))
       })
     };
@@ -88,8 +88,8 @@ let y = {
       let e = t.config.effects;
       e.length > 0 && k([...e].map(e => {
         if (null != e.base64) {
-          let t = (0, h.$j)(e.base64);
-          e.src = t, D.current.push(t)
+          let t = (0, f.$j)(e.base64);
+          e.src = t, Z.current.push(t)
         }
         return e
       }))
@@ -98,8 +98,8 @@ let y = {
       null != e && Object.entries(e).forEach(e => {
         let [t, n] = e;
         if (null != n) {
-          let e = (0, h.$j)(n.base64);
-          n.src = e, D.current.push(e), A(e => C(j({}, e), {
+          let e = (0, f.$j)(n.base64);
+          n.src = e, Z.current.push(e), A(e => y(j({}, e), {
             [t]: n
           }))
         }
@@ -119,16 +119,16 @@ let y = {
       } = V.current;
       e.readonly || t({
         skuId: e.skuId,
-        name: Z,
+        name: D,
         config: {
           effects: I,
           stillFrames: R
         }
       })
-    }, [I, R, Z]), r.useEffect(() => () => {
-      D.current.forEach(e => {
+    }, [I, R, D]), r.useEffect(() => () => {
+      Z.current.forEach(e => {
         URL.revokeObjectURL(e)
-      }), D.current = []
+      }), Z.current = []
     }, []), null == i) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
       className: b.root,
       children: [(0, a.jsxs)("div", {
@@ -141,8 +141,8 @@ let y = {
           },
           onChange: e => {
             let t = B(e);
-            null != t && (0, h.i0)(t, async e => {
-              let n = await (0, h.Xv)(e, t, I.length);
+            null != t && (0, f.i0)(t, async e => {
+              let n = await (0, f.Xv)(e, t, I.length);
               k(e => [...e, n])
             })
           },
@@ -151,19 +151,19 @@ let y = {
           ref: e => {
             T.current.thumbnail = e
           },
-          onChange: e => F(h.cq.THUMBNAIL, e),
+          onChange: e => F(f.cq.THUMBNAIL, e),
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
             T.current.static = e
           },
-          onChange: e => F(h.cq.STATIC, e),
+          onChange: e => F(f.cq.STATIC, e),
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
             T.current.reducedMotion = e
           },
-          onChange: e => F(h.cq.REDUCED_MOTION, e),
+          onChange: e => F(f.cq.REDUCED_MOTION, e),
           multiple: false
         })]
       }), (0, a.jsxs)("div", {
@@ -186,7 +186,7 @@ let y = {
               children: "Profile Effect Name"
             }), (0, a.jsx)("input", {
               type: "text",
-              value: Z,
+              value: D,
               className: b.input,
               onChange: e => {
                 L(e.target.value)
@@ -282,7 +282,7 @@ let y = {
             }), (0, a.jsxs)("div", {
               className: b.row,
               children: [(0, a.jsx)(d.Z, {
-                fileContents: () => (0, h.yR)(t.name, I),
+                fileContents: () => (0, f.yR)(t.name, I),
                 contentType: "text/plain",
                 fileName: "".concat(M, "_timing_config.txt"),
                 children: (0, a.jsx)(c.Button, {
@@ -291,9 +291,9 @@ let y = {
                   text: "Download Timing Config"
                 })
               }), (0, a.jsx)(d.Z, {
-                fileContents: () => JSON.stringify(C(j({}, t), {
-                  name: Z,
-                  config: C(j({}, t.config), {
+                fileContents: () => JSON.stringify(y(j({}, t), {
+                  name: D,
+                  config: y(j({}, t.config), {
                     effects: I,
                     stillFrames: R
                   })
@@ -330,7 +330,7 @@ let y = {
                     size: "sm",
                     text: "Clear",
                     onClick: () => {
-                      A(e => C(j({}, e), {
+                      A(e => y(j({}, e), {
                         [t]: null
                       }))
                     }
@@ -379,7 +379,7 @@ let y = {
               variant: "critical-secondary",
               text: "Clear Assets",
               onClick: () => {
-                k([]), A(y)
+                k([]), A(C)
               }
             })
           }), I.map((e, t) => (0, a.jsxs)("div", {
@@ -500,7 +500,7 @@ let y = {
                 },
                 onChange: e => ((e, t) => {
                   let n = B(e);
-                  null != n && (0, h.i0)(n, e => {
+                  null != n && (0, f.i0)(n, e => {
                     k(a => {
                       let r = [...a],
                         i = a[t];

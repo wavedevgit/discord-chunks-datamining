@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 315384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -19,17 +19,17 @@ let u = "/users/@me/debug/consumables/",
 
 function p() {
   let e, [t, n] = (0, r.useState)([]),
-    [p, f] = (0, r.useState)(null),
-    [h, x] = (0, r.useState)(false);
+    [p, h] = (0, r.useState)(null),
+    [f, x] = (0, r.useState)(false);
   return (0, r.useEffect)(() => ((async () => {
     try {
       let e = (await i.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
       n(e)
     } catch (e) {
-      f("Failed to fetch entitlements")
+      h("Failed to fetch entitlements")
     }
   })(), () => {
-    n([]), f(null)
+    n([]), h(null)
   }), []), (0, a.jsx)("div", {
     className: d.panel,
     children: null != p ? (0, a.jsx)(s.Text, {
@@ -53,7 +53,7 @@ function p() {
               r = new c.Z(a.body.entitlement);
             n([...t, r])
           } catch (e) {
-            f("Failed to create entitlement")
+            h("Failed to create entitlement")
           } finally {
             x(false)
           }
@@ -62,7 +62,7 @@ function p() {
         look: l.iL.OUTLINED,
         color: l.Tt.PRIMARY,
         children: "Create Confetti Entitlement"
-      }), h && (0, a.jsx)(s.$jN, {})]
+      }), f && (0, a.jsx)(s.$jN, {})]
     }) : (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)("div", {
         className: d.title,

@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 915885, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -23,32 +23,32 @@ function y(e) {
   let {
     guild: t,
     selected: n
-  } = e, y = (0, l.e7)([p.Z], () => p.Z.can(b.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), v = y && null != O ? O : 0;
+  } = e, y = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), v = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), O = y && null != v ? v : 0;
   i.useEffect(() => {
-    y && t.features.has(b.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(b.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
+    y && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.wB.SUBMITTED,
-      limit: f.p
+      limit: p.p
     })
   }, [y, t]);
   let j = i.useCallback(() => {
       (0, g._X)(t.id)
     }, [t.id]),
-    C = (0, s.XL)(t.id, a.z.MEMBERS_LAUNCH_UPSELL);
+    x = (0, s.XL)(t.id, a.z.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
-    ref: C,
-    children: (0, r.jsx)(h.m, {
+    ref: x,
+    children: (0, r.jsx)(f.m, {
       id: "members-".concat(t.id),
       renderIcon: e => (0, r.jsx)(o.BFJ, {
         size: "md",
         color: "currentColor",
         className: e
       }),
-      text: m.intl.string(m.t.oclz3Z),
+      text: b.intl.string(b.t.oclz3Z),
       selected: n,
       onClick: j,
-      trailing: v > 0 ? (0, r.jsx)(o.mAB, {
-        count: v
+      trailing: O > 0 ? (0, r.jsx)(o.mAB, {
+        count: O
       }) : null
     })
   })

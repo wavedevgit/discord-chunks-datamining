@@ -26,7 +26,7 @@ function x() {
     editStateId: t
   } = (0, g.N)(), [n, l] = f.TT(t), [x, j] = f.F2(t), v = (0, d.oC)(t), {
     options: O
-  } = (0, b.Z)(null != (e = null == v ? true : v.active_trial) ? e : null), C = (0, m.Z)(), y = null != n, N = i.useCallback(e => {
+  } = (0, b.Z)(null != (e = null == v ? true : v.active_trial) ? e : null), y = (0, m.Z)(), C = null != n, N = i.useCallback(e => {
     let t = O.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
   }, [l, O]), E = (0, u.mY)(), I = (0, c.Dt)(), S = (0, c.Dt)();
@@ -35,7 +35,7 @@ function x() {
     description: h.intl.string(h.t.urVijS),
     children: [(0, r.jsx)(o.rsf, {
       label: h.intl.string(h.t["+hTmdb"]),
-      checked: y,
+      checked: C,
       onChange: e => N(e),
       disabled: E
     }), (0, r.jsx)(s.y6, {
@@ -47,18 +47,18 @@ function x() {
       value: n,
       onChange: l,
       maxVisibleItems: 5,
-      isDisabled: !y || E
+      isDisabled: !C || E
     }), (0, r.jsx)(o.LZC, {
       size: 24
     }), (0, r.jsx)(s.y6, {
       label: h.intl.string(h.t["/JD9oe"]),
       description: h.intl.string(h.t.Cg5eBm),
       "aria-labelledby": S,
-      options: C,
+      options: y,
       value: x,
       onChange: j,
       maxVisibleItems: 5,
-      isDisabled: !y || E
+      isDisabled: !C || E
     })]
   })
 }

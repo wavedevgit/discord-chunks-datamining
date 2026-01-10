@@ -17,10 +17,6 @@ let o = [{
   name: "VP8",
   encode: true,
   decode: true
-}, {
-  name: "VP9",
-  encode: true,
-  decode: true
 }];
 
 function s(e, t) {

@@ -2,7 +2,7 @@
 /** chunk id: 480962, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => O
+  _: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -73,74 +73,92 @@ function y(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
+let O = "right-start",
+  v = Chunk473749.createContext(O);
 
-function O(e) {
-  let {
-    subMenuClassName: t,
-    parentItem: n,
-    isFocused: a,
-    menuSubmenuProps: m,
-    renderSubmenu: g
-  } = e, {
-    focusIndex: y,
-    isUsingKeyboardNavigation: O
-  } = m, v = b(m, ["focusIndex", "isUsingKeyboardNavigation"]), S = i.useRef(null), I = i.useRef(null), T = i.useRef(null), [C, A] = i.useState(false);
+function S(e) {
+  let t = i.useContext(v),
+    {
+      subMenuClassName: n,
+      parentItem: a,
+      isFocused: m,
+      menuSubmenuProps: g,
+      renderSubmenu: y
+    } = e,
+    {
+      focusIndex: O,
+      isUsingKeyboardNavigation: S
+    } = g,
+    I = b(g, ["focusIndex", "isUsingKeyboardNavigation"]),
+    T = i.useRef(null),
+    C = i.useRef(null),
+    A = i.useRef(null),
+    [N, P] = i.useState(false);
   i.useLayoutEffect(() => {
-    A(true)
+    P(true)
   }, []), i.useLayoutEffect(() => {
     var e;
-    a && ((0, u.F)(S), null == (e = T.current) || e.focus())
-  }, [a]);
-  let N = (0, r.jsx)("div", {
+    m && ((0, u.F)(T), null == (e = A.current) || e.focus())
+  }, [m]);
+  let R = (0, r.jsx)("div", {
       className: _.submenuPaddingContainer,
       children: (0, r.jsx)("div", E(h({
-        className: o()(_.submenu, t)
-      }, v), {
-        ref: T,
+        className: o()(_.submenu, n)
+      }, I), {
+        ref: A,
         children: (0, r.jsx)(l.zJl, {
           className: _.scroller,
-          children: g()
+          children: y()
         })
       }))
     }),
-    P = (0, c.E)("MenuSubmenuItem"),
-    R = (0, f.c)("MenuSubmenuItem"),
-    [w, D] = i.useState(false);
-  if (P) return (0, r.jsx)(s.pS, {
-    open: w,
+    w = (0, c.E)("MenuSubmenuItem"),
+    D = (0, f.c)("MenuSubmenuItem"),
+    [x, L] = i.useState(false);
+  if (w) return (0, r.jsx)(s.pS, {
+    open: x,
     viewportPadding: p.sb,
-    onOpenChange: D,
-    spacing: R ? false : 4,
-    placement: "right-start",
+    onOpenChange: L,
+    spacing: D ? false : 4,
+    placement: t,
     portal: false,
+    crossAccessFlip: false,
     trigger: "hover",
-    renderLayer: () => N,
+    renderLayer: e => {
+      let {
+        placement: t
+      } = e;
+      return (0, r.jsx)(v.Provider, {
+        value: t,
+        children: R
+      })
+    },
     children: e => {
       let {
         ref: t,
-        props: i
+        props: n
       } = e;
       return (0, r.jsx)("div", E(h({
         ref: t
-      }, i), {
-        children: n
+      }, n), {
+        children: a
       }))
     }
   });
-  let x = (0, r.jsx)(d.jRF, {
-    targetRef: I,
+  let j = (0, r.jsx)(d.jRF, {
+    targetRef: C,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
     fixed: true,
     spacing: 4,
     position: "right",
     align: "top",
-    children: () => N
+    children: () => R
   });
   return (0, r.jsxs)("div", {
-    ref: S,
+    ref: T,
     children: [(0, r.jsx)("div", {
-      ref: I
-    }), n, a && C ? x : null]
+      ref: C
+    }), a, m && N ? j : null]
   })
 }

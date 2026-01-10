@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 739830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -51,33 +51,33 @@ function m(e, t) {
 function b(e) {
   let {
     channel: t
-  } = e, n = (0, d.B)(t), [b, y] = i.useState(false), O = i.useRef(null), x = (0, l.e7)([o.Z], () => null != t.guild_id && o.Z.isLurking(t.guild_id));
+  } = e, n = (0, u.B)(t), [b, y] = i.useState(false), v = i.useRef(null), O = (0, l.e7)([s.Z], () => null != t.guild_id && s.Z.isLurking(t.guild_id));
   if (i.useEffect(() => {
       let e = () => y(true);
-      return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-        c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+      return c.S.subscribe(f.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+        c.S.unsubscribe(f.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
       }
-    }, []), x) return null;
-  let j = f.intl.string(f.t.h850Ss);
+    }, []), O) return null;
+  let j = h.intl.string(h.t.h850Ss);
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: O,
+    targetElementRef: v,
     shouldShow: b,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     onRequestClose: () => y(false),
-    renderPopout: e => (0, r.jsx)(u.Z, m(g({}, e), {
+    renderPopout: e => (0, r.jsx)(d.Z, m(g({}, e), {
       channel: t,
       navId: "thread-context",
-      label: f.intl.string(f.t["1NBjqb"])
+      label: h.intl.string(h.t["1NBjqb"])
     })),
     children: (e, t) => {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(s.ZP.Icon, m(g({}, e), {
-        ref: O,
+      return (0, r.jsx)(o.ZP.Icon, m(g({}, e), {
+        ref: v,
         onClick: () => y(e => !e),
         tooltip: i ? null : j,
         icon: n === p.iN.NO_MESSAGES ? a.owu : a.Dkj,

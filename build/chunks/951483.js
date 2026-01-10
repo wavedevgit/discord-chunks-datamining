@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 951483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Sr: () => x,
+  Sr: () => C,
   Xq: () => E,
   Zg: () => S
 }), require("./415506.js");
@@ -25,15 +25,15 @@ var Chunk186070 = require("./186070.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function C() {
+function x() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.map(e => {
-    let t = x[e];
+    let t = C[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let x = {
+let C = {
     [Chunk981631.EkH.SERVER_NEXT]: Chunk510761.nq,
     [Chunk981631.EkH.SERVER_PREV]: Chunk510761.X3,
     [Chunk981631.EkH.CHANNEL_NEXT]: Chunk185514.tQ,
@@ -70,60 +70,60 @@ let x = {
 function S() {
   return [{
     description: j.intl.string(j.t.bx4Uyz),
-    binds: C(v.EkH.SERVER_PREV, v.EkH.SERVER_NEXT)
+    binds: x(O.EkH.SERVER_PREV, O.EkH.SERVER_NEXT)
   }, {
     description: j.intl.string(j.t["+Wem6h"]),
-    binds: C(v.EkH.CHANNEL_PREV, v.EkH.CHANNEL_NEXT)
+    binds: x(O.EkH.CHANNEL_PREV, O.EkH.CHANNEL_NEXT)
   }, {
     description: j.intl.string(j.t["+2fcdz"]),
-    binds: C(v.EkH.NAVIGATE_BACK, v.EkH.NAVIGATE_FORWARD)
+    binds: x(O.EkH.NAVIGATE_BACK, O.EkH.NAVIGATE_FORWARD)
   }, {
     description: j.intl.string(j.t.eVmj1H),
-    binds: C(v.EkH.UNREAD_PREV, v.EkH.UNREAD_NEXT)
+    binds: x(O.EkH.UNREAD_PREV, O.EkH.UNREAD_NEXT)
   }, {
     description: j.intl.string(j.t.EcqS7Y),
-    binds: C(v.EkH.MENTION_CHANNEL_PREV, v.EkH.MENTION_CHANNEL_NEXT),
+    binds: x(O.EkH.MENTION_CHANNEL_PREV, O.EkH.MENTION_CHANNEL_NEXT),
     groupEnd: true
   }, {
     description: j.intl.string(j.t.Bqss72),
-    binds: C(v.EkH.TOGGLE_PREVIOUS_GUILD)
+    binds: x(O.EkH.TOGGLE_PREVIOUS_GUILD)
   }, {
     description: j.intl.string(j.t.UaXAPx),
-    binds: C(v.EkH.MARK_SERVER_READ)
+    binds: x(O.EkH.MARK_SERVER_READ)
   }, {
     description: j.intl.string(j.t["5X9vFj"]),
-    binds: C(v.EkH.MARK_CHANNEL_READ)
+    binds: x(O.EkH.MARK_CHANNEL_READ)
   }, {
     description: j.intl.string(j.t.JoxNnl),
-    binds: C(v.EkH.SEARCH_EMOJIS),
+    binds: x(O.EkH.SEARCH_EMOJIS),
     groupEnd: true
   }, {
     description: j.intl.string(j.t.tL6eVW),
-    binds: C(v.EkH.TOGGLE_MUTE)
+    binds: x(O.EkH.TOGGLE_MUTE)
   }, {
     description: j.intl.string(j.t["QXe/7T"]),
-    binds: C(v.EkH.TOGGLE_DEAFEN)
+    binds: x(O.EkH.TOGGLE_DEAFEN)
   }, {
     description: j.intl.string(j.t.d6UIii),
-    binds: C(v.EkH.CALL_ACCEPT)
+    binds: x(O.EkH.CALL_ACCEPT)
   }, {
     description: j.intl.string(j.t.IcEW06),
-    binds: C(v.EkH.MARK_CHANNEL_READ)
+    binds: x(O.EkH.MARK_CHANNEL_READ)
   }, {
     description: j.intl.string(j.t.WN2dsS),
-    binds: C(v.EkH.CALL_START),
+    binds: x(O.EkH.CALL_START),
     groupEnd: true
   }, {
     description: j.intl.string(j.t.L3RYYJ),
-    binds: C(v.EkH.SCROLL_UP, v.EkH.SCROLL_DOWN)
+    binds: x(O.EkH.SCROLL_UP, O.EkH.SCROLL_DOWN)
   }, {
     description: j.intl.string(j.t["3HAurM"]),
-    binds: C(v.EkH.JUMP_TO_FIRST_UNREAD)
+    binds: x(O.EkH.JUMP_TO_FIRST_UNREAD)
   }, {
     description: j.intl.string(j.t.rrYBEu),
-    binds: C(v.EkH.TEXTAREA_FOCUS)
+    binds: x(O.EkH.TEXTAREA_FOCUS)
   }, {
     description: j.intl.string(j.t.yYsRlD),
-    binds: C(v.EkH.QUICKSWITCHER_SHOW)
+    binds: x(O.EkH.QUICKSWITCHER_SHOW)
   }]
 }

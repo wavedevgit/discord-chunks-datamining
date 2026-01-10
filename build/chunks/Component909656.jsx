@@ -38,7 +38,7 @@ function T(e) {
     isGuildProducts: l = false
   } = e, {
     format: s
-  } = (0, y.Z)(n.id), f = (0, v.YB)(n.id), j = i.useCallback(() => {
+  } = (0, C.Z)(n.id), f = (0, v.YB)(n.id), j = i.useCallback(() => {
     var e;
     return (null == f || null == (e = f.cover_image_asset) ? true : e.application_id) == null ? null : (0, x._W)(f.cover_image_asset.application_id, f.cover_image_asset, _)
   }, [f]), [T, P] = i.useState(s), [w, Z] = i.useState(null != (t = null == f ? true : f.description) ? t : ""), [R, D] = i.useState(j), [A, L] = i.useState(null == f ? true : f.store_page_guild_products_default_sort), [k, G] = i.useState(null == f ? true : f.server_shop_tab_order), {
@@ -49,7 +49,7 @@ function T(e) {
     imageCTA: F,
     imageAriaLabel: H,
     setFilename: W
-  } = (0, C.Z)(null == f ? true : f.cover_image_asset), z = (0, b.Dt)();
+  } = (0, y.Z)(null == f ? true : f.cover_image_asset), z = (0, b.Dt)();
 
   function V(e, t) {
     a()(null != e, "Null value not allowed"), null != t && W(t.name), D(e)

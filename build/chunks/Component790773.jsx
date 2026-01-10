@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 790773, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,29 +22,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk702631 = require("./702631.js");
 
-function C(e) {
+function y(e) {
   let {
     sku: t,
     handleOpenUserProfileModal: n,
     analyticsLocations: l
   } = e, p = r.useRef(null), {
-    analyticsLocations: f
+    analyticsLocations: h
   } = (0, c.ZP)(null != l ? l : []), {
-    isHoveringOrFocusing: h
-  } = (0, d.Z)(p), [b, C] = r.useState(false), y = r.useCallback(async e => {
+    isHoveringOrFocusing: f
+  } = (0, d.Z)(p), [b, y] = r.useState(false), C = r.useCallback(async e => {
     if (e.stopPropagation(), !b) {
-      C(true);
+      y(true);
       try {
-        await m.Z.addSkuToWishlist(t.id, f), n({
+        await m.Z.addSkuToWishlist(t.id, h), n({
           tabSection: g.oh.WISHLIST
         })
       } catch (e) {
         (0, o.showToast)((0, o.createToast)(v.intl.string(v.t.F8FvUy), o.ToastType.FAILURE)), i.uvj.announce(v.intl.string(v.t.F8FvUy))
       } finally {
-        C(false)
+        y(false)
       }
     }
-  }, [t.id, f, n, b]);
+  }, [t.id, h, n, b]);
   return (0, a.jsx)(s.u, {
     __unsupportedReactNodeAsText: (0, a.jsxs)("div", {
       className: j.tooltipContent,
@@ -64,14 +64,14 @@ function C(e) {
       className: j.card,
       ref: p,
       "aria-label": t.name,
-      onClick: y,
+      onClick: C,
       children: [(0, a.jsx)(x.A, {
         shape: "custom",
         containerClassName: j.card,
         foregroundImageClassName: j.cardImage,
         backgroundImageClassName: j.cardBackgroundImage,
         sku: t
-      }, t.id), (h || b) && (0, a.jsxs)(a.Fragment, {
+      }, t.id), (f || b) && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
           className: j.highlightOverlay
         }), (0, a.jsx)("div", {
@@ -85,13 +85,13 @@ function C(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     wishlist: t,
     handleOpenUserProfileModal: n,
     analyticsLocations: i
-  } = e, s = (0, l.e7)([p.default], () => p.default.getCurrentUser()), o = (0, h.Z)({
-    guildId: (0, f.ac)(),
+  } = e, s = (0, l.e7)([p.default], () => p.default.getCurrentUser()), o = (0, f.Z)({
+    guildId: (0, h.ac)(),
     numWishlistItems: 9,
     location: "SocialLayerAddToWishlistGrid",
     applicationId: b.t9,
@@ -106,7 +106,7 @@ function y(e) {
     children: (0, a.jsx)(u.T, {})
   }) : (0, a.jsx)("ul", {
     className: j.grid,
-    children: d.map(e => (0, a.jsx)(C, {
+    children: d.map(e => (0, a.jsx)(y, {
       sku: e.sku,
       handleOpenUserProfileModal: n,
       analyticsLocations: i

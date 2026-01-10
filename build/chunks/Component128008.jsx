@@ -1,8 +1,8 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 128008, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h6: () => y,
-  mv: () => m
+  mv: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,12 +19,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk871301 = require("./871301.js"),
   Chunk678878 = require("./678878.js");
 
-function m() {
+function b() {
   let {
     setSelectedFilter: e
-  } = (0, d.Z)(), t = (0, h.d)(e => e.setInboxReadState);
+  } = (0, d.Z)(), t = (0, f.d)(e => e.setInboxReadState);
   return () => {
-    e(p.V5.ALL), t(false)
+    e(h.V5.ALL), t(false)
   }
 }
 
@@ -34,11 +34,11 @@ function y(e) {
   } = e, {
     unreadRecentMentionsCount: n,
     unreadChannelIds: l
-  } = (0, f.O4)(), d = function() {
+  } = (0, p.O4)(), d = function() {
     let e = function() {
         let {
           unreadRecentMentionsCount: e
-        } = (0, f.O4)(), {
+        } = (0, p.O4)(), {
           hasMoreMentions: t,
           mentionsLoading: n
         } = (0, o.cj)([c.ZP], () => ({
@@ -63,7 +63,7 @@ function y(e) {
           style: {
             width: i
           },
-          className: b.badgeTransition
+          className: m.badgeTransition
         })
       })(e, t), [e, t]);
     return i.useMemo(() => ({
@@ -75,7 +75,7 @@ function y(e) {
       }
     }), [n, e.width])
   }(), {
-    entrypoint: h
+    entrypoint: f
   } = (0, u.pN)({
     location: "useInboxBadgeInfo"
   });
@@ -86,7 +86,7 @@ function y(e) {
       badge: null,
       badgeType: null
     };
-    if (h === u.u3.SERVER_RAIL_TOP) {
+    if (f === u.u3.SERVER_RAIL_TOP) {
       let n = (0, s.OVM)(e) - 3;
       return {
         badge: function(e, t) {
@@ -100,8 +100,8 @@ function y(e) {
               minHeight: g.zw,
               minWidth: g.zw
             },
-            className: a()(b.badgeTransition, b.grayBadge, {
-              [b.selected]: t
+            className: a()(m.badgeTransition, m.grayBadge, {
+              [m.selected]: t
             })
           })
         }(e, t),
@@ -112,7 +112,7 @@ function y(e) {
         }
       }
     }
-    return h === u.u3.TITLE_BAR_LEFT ? {
+    return f === u.u3.TITLE_BAR_LEFT ? {
       badge: (0, r.jsx)(s.Text, {
         variant: "eyebrow",
         children: (0, s.NGo)(e)
@@ -122,5 +122,5 @@ function y(e) {
       badge: null,
       badgeType: null
     }
-  }, [n, d, l.length, h, t])
+  }, [n, d, l.length, f, t])
 }

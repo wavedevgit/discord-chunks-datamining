@@ -1,7 +1,7 @@
-/** Chunk was on 89250 **/
-/** chunk id: 32750, original params: t,n,e (module,exports,require) **/
+/** Chunk was on 92091 **/
+/** chunk id: 32750, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,18 +11,18 @@ var Chunk481060 = require("./481060.js"),
   Chunk665906 = require("./665906.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(t) {
+function o(t) {
   var n;
-  let e = (0, a.HL)(t),
-    d = (0, s.C7)(t),
+  let i = (0, r.HL)(t),
+    o = (0, s.C7)(t),
     u = (0, s.tc)(t);
-  if ((t.isArchivedThread() ? u : d) && !e) return (null == (n = t.threadMetadata) ? true : n.archived) ? (0, i.jsx)(l.sNh, {
+  if ((t.isArchivedThread() ? u : o) && !i) return (null == (n = t.threadMetadata) ? true : n.archived) ? (0, e.jsx)(l.sNh, {
     id: "unarchive-thread",
-    label: t.isForumPost() ? o.intl.string(o.t.cnRubV) : o.intl.string(o.t.S9E4G7),
-    action: () => r.Z.unarchiveThread(t, false)
-  }) : (0, i.jsx)(l.sNh, {
+    label: t.isForumPost() ? d.intl.string(d.t.cnRubV) : d.intl.string(d.t.S9E4G7),
+    action: () => a.Z.unarchiveThread(t, false)
+  }) : (0, e.jsx)(l.sNh, {
     id: "archive-thread",
-    label: t.isForumPost() ? o.intl.string(o.t.BTs4Kb) : o.intl.string(o.t.wiIevd),
-    action: () => r.Z.archiveThread(t, false)
+    label: t.isForumPost() ? d.intl.string(d.t.BTs4Kb) : d.intl.string(d.t.wiIevd),
+    action: () => a.Z.archiveThread(t, false)
   })
 }

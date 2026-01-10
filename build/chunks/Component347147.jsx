@@ -1,4 +1,4 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 347147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk846519 = require("./846519.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk542133 = require("./542133.js"),
   Chunk116724 = require("./116724.js");
 
-function w(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function w(e) {
   return e
 }
 
-function I(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,336 +57,336 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = {
+let T = {
     x: 0,
     y: 0
   },
-  j = (0, Chunk392711.debounce)((e, t, n) => {
+  x = (0, Chunk392711.debounce)((e, t, n) => {
     let r = null,
-      i = null;
-    if (null != n && (0, b.DB)(n)) {
-      var l, a;
-      let e = (0, b.my)(n),
-        t = (0, m.L2)(e, v.Z);
-      r = null != (l = null == t ? true : t.name) ? l : null, i = null != (a = null == t ? true : t.id) ? a : null
+      l = null;
+    if (null != n && (0, g.DB)(n)) {
+      var i, a;
+      let e = (0, g.my)(n),
+        t = (0, b.L2)(e, h.Z);
+      r = null != (i = null == t ? true : t.name) ? i : null, l = null != (a = null == t ? true : t.id) ? a : null
     }
-    h.default.track(y.rMx.VIDEO_STREAM_ZOOM_CHANGED, {
+    E.default.track(y.rMx.VIDEO_STREAM_ZOOM_CHANGED, {
       zoom_level: e,
       method: t,
       share_application_name: r,
-      share_application_id: i
+      share_application_id: l
     })
   }, 2e3);
 
-function x(e, t, n) {
+function P(e, t, n) {
   return Math.min(Math.max(t, e), n)
 }
 let Z = Chunk473749.memo(function(e) {
   var {
     enableZoom: t = false,
     minZoom: n = 1,
-    maxZoom: l = 5,
+    maxZoom: i = 5,
     controlsBottom: o = 8,
-    idle: b = false
-  } = e, m = function(e, t) {
+    idle: g = false
+  } = e, b = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, r, l = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return i
+    return l
   }(e, ["enableZoom", "minZoom", "maxZoom", "controlsBottom", "idle"]);
   let {
-    streamId: v,
-    streamKey: h,
+    streamId: h,
+    streamKey: E,
     onResize: y,
     wrapperClassName: Z,
-    videoComponent: R,
-    mirror: T,
+    videoComponent: j,
+    mirror: w,
     paused: A
-  } = m, {
-    onActive: N,
+  } = b, {
+    onActive: R,
     onPreventIdle: D,
     onAllowIdle: M
-  } = i.useContext(g.nM), [k, L] = i.useState(false), [F, V] = i.useState(null), [U, z] = i.useState(null), [W, H] = i.useState(0), [B, q] = i.useState(P), [Y, G] = i.useState(null), [K, Q] = i.useState(null), [X, J] = i.useState(false), [$, ee] = i.useState(n), [et, en] = i.useState(false), [er, ei] = i.useState(false), [el, ea] = i.useState(16 / 9), [eo, ec] = i.useState(false), [es, eu] = i.useState(false), ed = i.useRef(new s.V7), ef = i.useRef(new s.V7), ep = i.useRef(new s.V7), eb = i.useRef(new s.V7), em = i.useRef(null), eg = i.useRef(null), ev = i.useRef(null), eh = (0, d.q_F)({
+  } = l.useContext(m.nM), [k, L] = l.useState(false), [U, F] = l.useState(null), [V, W] = l.useState(null), [B, G] = l.useState(0), [H, z] = l.useState(T), [K, Y] = l.useState(null), [q, Q] = l.useState(null), [X, J] = l.useState(false), [$, ee] = l.useState(n), [et, en] = l.useState(false), [er, el] = l.useState(false), [ei, ea] = l.useState(16 / 9), [eo, ec] = l.useState(false), [es, eu] = l.useState(false), ed = l.useRef(new s.V7), ef = l.useRef(new s.V7), ep = l.useRef(new s.V7), eg = l.useRef(new s.V7), eb = l.useRef(null), em = l.useRef(null), eh = l.useRef(null), eE = (0, d.q_F)({
     value: o,
-    config: I(w({}, c.config.stiff), {
+    config: N(I({}, c.config.stiff), {
       clamp: true
     })
-  }, "animate-always"), eE = $ > n, e_ = i.useCallback(e => {
+  }, "animate-always"), ev = $ > n, e_ = l.useCallback(e => {
     e.width > 0 && e.height > 0 && ea(e.width / e.height), null == y || y(e)
-  }, [y]), ey = i.useCallback(e => {
-    if (null == em.current) return P;
-    let t = em.current.getBoundingClientRect();
+  }, [y]), ey = l.useCallback(e => {
+    if (null == eb.current) return T;
+    let t = eb.current.getBoundingClientRect();
     return {
       x: e.clientX - t.left - t.width / 2,
       y: e.clientY - t.top - t.height / 2
     }
-  }, []), eS = i.useCallback((e, t) => {
-    if (null == em.current) return P;
+  }, []), eO = l.useCallback((e, t) => {
+    if (null == eb.current) return T;
     let n = null != t ? t : $,
-      r = em.current.clientWidth,
-      i = em.current.clientHeight,
-      l = r * (n - 1) / 2,
-      a = i * (n - 1) / 2;
+      r = eb.current.clientWidth,
+      l = eb.current.clientHeight,
+      i = r * (n - 1) / 2,
+      a = l * (n - 1) / 2;
     return {
-      x: x(e.x, -l, l),
-      y: x(e.y, -a, a)
+      x: P(e.x, -i, i),
+      y: P(e.y, -a, a)
     }
-  }, [$]), eO = i.useCallback((e, t, r) => {
-    let i = x(e, n, l);
-    if (null == em.current || null == t || i === $) return;
+  }, [$]), eC = l.useCallback((e, t, r) => {
+    let l = P(e, n, i);
+    if (null == eb.current || null == t || l === $) return;
     eu(true);
-    let a = i / $;
-    q(e => eS({
+    let a = l / $;
+    z(e => eO({
       x: (e.x - t.x) * a + t.x,
       y: (e.y - t.y) * a + t.y
-    }, i)), ee(i), j(i, r, h), eb.current.start(2e3, () => {
+    }, l)), ee(l), x(l, r, E), eg.current.start(2e3, () => {
       eu(false)
     })
-  }, [eS, l, n, h, $]), eC = i.useCallback(e => {
-    if (!eE) return;
+  }, [eO, i, n, E, $]), eS = l.useCallback(e => {
+    if (!ev) return;
     e.preventDefault(), e.stopPropagation();
     let t = ey(e);
-    L(true), z(t), V(t), H(Date.now()), Q(t), G(B)
-  }, [ey, eE, B]), ew = i.useCallback(e => {
-    if ((t || eE) && N(), !k || !eE || null == K || null == Y) return;
+    L(true), W(t), F(t), G(Date.now()), Q(t), Y(H)
+  }, [ey, ev, H]), eI = l.useCallback(e => {
+    if ((t || ev) && R(), !k || !ev || null == q || null == K) return;
     e.preventDefault(), e.stopPropagation();
     let n = ey(e),
-      r = n.x - K.x,
-      i = n.y - K.y;
-    q(eS({
-      x: Y.x + r,
-      y: Y.y + i
-    })), V(n)
-  }, [eS, K, Y, t, ey, k, eE, N]), eI = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), L(false), Q(null), G(null)
-  }, []), eP = i.useCallback(e => {
-    if (eE && null != U && null != F) {
+      r = n.x - q.x,
+      l = n.y - q.y;
+    z(eO({
+      x: K.x + r,
+      y: K.y + l
+    })), F(n)
+  }, [eO, q, K, t, ey, k, ev, R]), eN = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), L(false), Q(null), Y(null)
+  }, []), eT = l.useCallback(e => {
+    if (ev && null != V && null != U) {
       let {
         x: t,
         y: n
-      } = U, {
+      } = V, {
         x: r,
-        y: i
-      } = F;
-      (Math.sqrt((r - t) ** 2 + (i - n) ** 2) > .01 || Date.now() - W >= 500) && (e.preventDefault(), e.stopPropagation())
+        y: l
+      } = U;
+      (Math.sqrt((r - t) ** 2 + (l - n) ** 2) > .01 || Date.now() - B >= 500) && (e.preventDefault(), e.stopPropagation())
     }
-  }, [eE, U, W, F]), ej = i.useCallback(() => {
-    L(false), Q(null), G(null)
-  }, []), ex = i.useCallback(e => {
-    t && (en(true), eO($ - e.deltaY / 100, ey(e), "wheel"), N(), ed.current.start(100, () => {
+  }, [ev, V, B, U]), ex = l.useCallback(() => {
+    L(false), Q(null), Y(null)
+  }, []), eP = l.useCallback(e => {
+    t && (en(true), eC($ - e.deltaY / 100, ey(e), "wheel"), R(), ed.current.start(100, () => {
       en(false)
     }))
-  }, [t, eO, $, ey, N]), eZ = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), eO($ + .25, P, "button")
-  }, [eO, $]), eR = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), eO($ - .25, P, "button")
-  }, [eO, $]), eT = i.useCallback(e => {
-    ei(true), eO(e, P, "slider"), N(), ef.current.start(100, () => {
-      ei(false)
+  }, [t, eC, $, ey, R]), eZ = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), eC($ + .25, T, "button")
+  }, [eC, $]), ej = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), eC($ - .25, T, "button")
+  }, [eC, $]), ew = l.useCallback(e => {
+    el(true), eC(e, T, "slider"), R(), ef.current.start(100, () => {
+      el(false)
     })
-  }, [eO, N]), eA = i.useCallback(() => {
+  }, [eC, R]), eA = l.useCallback(() => {
     D("interact")
-  }, [D]), eN = i.useCallback(() => {
+  }, [D]), eR = l.useCallback(() => {
     J(false), M("interact")
-  }, [M]), eD = i.useCallback(e => {
+  }, [M]), eD = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation()
-  }, []), eM = i.useCallback(e => {
-    if (null == eg.current || null == em.current) return;
-    let t = eg.current.getBoundingClientRect(),
-      n = em.current.clientWidth,
-      r = em.current.clientHeight,
-      i = e.x - t.left,
-      l = e.y - t.top,
-      a = i / t.width;
-    q(eS({
+  }, []), eM = l.useCallback(e => {
+    if (null == em.current || null == eb.current) return;
+    let t = em.current.getBoundingClientRect(),
+      n = eb.current.clientWidth,
+      r = eb.current.clientHeight,
+      l = e.x - t.left,
+      i = e.y - t.top,
+      a = l / t.width;
+    z(eO({
       x: (.5 - a) * n * $,
-      y: (.5 - l / t.height) * r * $
+      y: (.5 - i / t.height) * r * $
     }))
-  }, [eS, $]), ek = i.useCallback(e => {
+  }, [eO, $]), ek = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), J(true), eM({
       x: e.clientX,
       y: e.clientY
     })
-  }, [eM]), eL = i.useCallback(e => {
+  }, [eM]), eL = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), X && eM({
       x: e.clientX,
       y: e.clientY
     })
-  }, [X, eM]), eF = i.useCallback(e => {
+  }, [X, eM]), eU = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), J(false)
-  }, []), eV = i.useCallback(e => {
+  }, []), eF = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation()
   }, []);
-  (0, f.PM)(em, i.useCallback(e => {
+  (0, f.PM)(eb, l.useCallback(e => {
     let {
       width: t,
       height: n
     } = e;
-    if (!eE || null == t || null == n) return;
-    let r = ev.current;
+    if (!ev || null == t || null == n) return;
+    let r = eh.current;
     if (null == r) {
-      ev.current = {
+      eh.current = {
         width: t,
         height: n
       };
       return
     }
     let {
-      width: i,
-      height: l
+      width: l,
+      height: i
     } = r;
-    1 > Math.abs(t - i) && 1 > Math.abs(n - l) || (ec(true), q(e => {
-      let r = i * ($ - 1) / 2,
-        a = l * ($ - 1) / 2,
+    1 > Math.abs(t - l) && 1 > Math.abs(n - i) || (ec(true), z(e => {
+      let r = l * ($ - 1) / 2,
+        a = i * ($ - 1) / 2,
         o = t * ($ - 1) / 2,
         c = n * ($ - 1) / 2,
         s = 0 !== r ? e.x / r : 0;
-      return eS({
+      return eO({
         x: s * o,
         y: (0 !== a ? e.y / a : 0) * c
       })
-    }), ev.current = {
+    }), eh.current = {
       width: t,
       height: n
     }, ep.current.start(100, () => {
       ec(false)
     }))
-  }, [eS, eE, $]), [eE, $]), (0, p.zq)(() => {
-    ed.current.stop(), ef.current.stop(), ep.current.stop(), eb.current.stop()
-  }), i.useEffect(() => {
-    null != v && (0, E.$)(v, true, t && eE ? $ : 1)
-  }, [t, eE, v, $]);
-  let eU = i.useMemo(() => {
-      let e = eS(B);
+  }, [eO, ev, $]), [ev, $]), (0, p.zq)(() => {
+    ed.current.stop(), ef.current.stop(), ep.current.stop(), eg.current.stop()
+  }), l.useEffect(() => {
+    null != h && (0, v.$)(h, true, t && ev ? $ : 1)
+  }, [t, ev, h, $]);
+  let eV = l.useMemo(() => {
+      let e = eO(H);
       return {
         "--custom-zoom-scale": $,
         "--custom-pan-x": "".concat(e.x, "px"),
         "--custom-pan-y": "".concat(e.y, "px"),
         "--custom-zoom-transition": k || eo || et || er ? "none" : "transform 0.15s ease-out"
       }
-    }, [eS, k, eo, et, er, B, $]),
-    ez = i.useMemo(() => {
-      let e = 120 * Math.min(el, 32 / 9);
+    }, [eO, k, eo, et, er, H, $]),
+    eW = l.useMemo(() => {
+      let e = 120 * Math.min(ei, 32 / 9);
       return {
         "--custom-zoom-minimap-width": "".concat(e, "px"),
         "--custom-zoom-minimap-height": "".concat(120, "px")
       }
-    }, [el]),
-    eW = i.useMemo(() => {
-      let e = null != em.current ? em.current.clientWidth : 1,
-        t = null != em.current ? em.current.clientHeight : 1,
+    }, [ei]),
+    eB = l.useMemo(() => {
+      let e = null != eb.current ? eb.current.clientWidth : 1,
+        t = null != eb.current ? eb.current.clientHeight : 1,
         n = 1 / $,
         r = 1 / $,
-        i = .5 - B.x / (e * $),
-        l = .5 - B.y / (t * $);
+        l = .5 - H.x / (e * $),
+        i = .5 - H.y / (t * $);
       return {
-        "--custom-zoom-indicator-left": "".concat(100 * x(i - n / 2, 0, 1 - n), "%"),
-        "--custom-zoom-indicator-top": "".concat(100 * x(l - r / 2, 0, 1 - r), "%"),
+        "--custom-zoom-indicator-left": "".concat(100 * P(l - n / 2, 0, 1 - n), "%"),
+        "--custom-zoom-indicator-top": "".concat(100 * P(i - r / 2, 0, 1 - r), "%"),
         "--custom-zoom-indicator-width": "".concat(100 * n, "%"),
         "--custom-zoom-indicator-height": "".concat(100 * r, "%"),
         "--custom-zoom-indicator-transition": k || X || et || er ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
       }
-    }, [k, X, et, er, B, $]);
+    }, [k, X, et, er, H, $]);
   return (0, r.jsxs)("div", {
-    ref: em,
-    className: a()(C.wrapper, Z, {
-      [C.zoomEnabled]: t && eE,
-      [C.zoomDragging]: k
+    ref: eb,
+    className: a()(S.wrapper, Z, {
+      [S.zoomEnabled]: t && ev,
+      [S.zoomDragging]: k
     }),
-    onMouseDown: eC,
-    onMouseMove: ew,
-    onMouseUp: eI,
-    onMouseLeave: ej,
-    onWheel: ex,
+    onMouseDown: eS,
+    onMouseMove: eI,
+    onMouseUp: eN,
+    onMouseLeave: ex,
+    onWheel: eP,
     children: [(0, r.jsx)(d.P3F, {
-      onClick: eP,
-      children: null != v && (0, r.jsx)("div", {
-        className: a()(C.videoContainer, C.zoomed),
-        style: eU,
-        children: (0, r.jsx)(_.Z, I(w({}, m), {
+      onClick: eT,
+      children: null != h && (0, r.jsx)("div", {
+        className: a()(S.videoContainer, S.zoomed),
+        style: eV,
+        children: (0, r.jsx)(_.Z, N(I({}, b), {
           onResize: e_,
           wrapperClassName: true
         }))
       })
-    }), t && null != v && (0, r.jsx)(c.animated.div, {
-      className: a()(C.zoomControlsContainer, {
-        [C.idle]: b
+    }), t && null != h && (0, r.jsx)(c.animated.div, {
+      className: a()(S.zoomControlsContainer, {
+        [S.idle]: g
       }),
       style: {
-        bottom: eh.value
+        bottom: eE.value
       },
       children: (0, r.jsxs)("div", {
-        className: a()(C.zoomControls, {
-          [C.zoomControlsWithChildren]: es || eE
+        className: a()(S.zoomControls, {
+          [S.zoomControlsWithChildren]: es || ev
         }),
         onMouseEnter: eA,
-        onMouseLeave: eN,
+        onMouseLeave: eR,
         onClick: eD,
-        children: [(es || eE) && (0, r.jsx)(d.P3F, {
-          onClick: eV,
+        children: [(es || ev) && (0, r.jsx)(d.P3F, {
+          onClick: eF,
           onMouseEnter: eA,
-          onMouseLeave: eN,
+          onMouseLeave: eR,
           children: (0, r.jsxs)("div", {
-            ref: eg,
-            className: C.minimap,
-            style: ez,
+            ref: em,
+            className: S.minimap,
+            style: eW,
             onMouseDown: ek,
             onMouseMove: eL,
-            onMouseUp: eF,
-            children: [(0, r.jsx)(R, {
-              className: a()(C.minimapVideo, {
-                [O.mirror]: T
+            onMouseUp: eU,
+            children: [(0, r.jsx)(j, {
+              className: a()(S.minimapVideo, {
+                [C.mirror]: w
               }),
-              streamId: v,
+              streamId: h,
               paused: A,
               reportContainerResized: false
             }), (0, r.jsx)("div", {
-              className: C.minimapIndicator,
-              style: eW
+              className: S.minimapIndicator,
+              style: eB
             })]
           })
         }), (0, r.jsxs)("div", {
-          className: C.zoomControlsRow,
-          children: [(es || eE) && (0, r.jsxs)(r.Fragment, {
+          className: S.zoomControlsRow,
+          children: [(es || ev) && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.u, {
-              text: S.intl.string(S.t.M6Cmwy),
+              text: O.intl.string(O.t.M6Cmwy),
               position: "top",
               children: (0, r.jsx)(d.hU, {
                 icon: d.BlJ,
-                onClick: eR,
+                onClick: ej,
                 disabled: $ <= n,
                 variant: "overlay-secondary",
                 size: "sm",
-                "aria-label": S.intl.string(S.t.M6Cmwy)
+                "aria-label": O.intl.string(O.t.M6Cmwy)
               })
             }), (0, r.jsx)(d.iRW, {
               minValue: n,
-              maxValue: l,
+              maxValue: i,
               initialValue: $,
               value: $,
-              asValueChanges: eT,
+              asValueChanges: ew,
               onValueRender: e => "".concat(Math.round(100 * e), "%"),
-              "aria-label": S.intl.string(S.t.grzPmr)
+              "aria-label": O.intl.string(O.t.grzPmr)
             })]
           }), (0, r.jsx)(u.u, {
-            text: S.intl.string(S.t["9hMafy"]),
+            text: O.intl.string(O.t["9hMafy"]),
             position: "top",
             children: (0, r.jsx)(d.hU, {
               icon: d.OyE,
               onClick: eZ,
-              disabled: $ >= l,
+              disabled: $ >= i,
               variant: "overlay-secondary",
               size: "sm",
-              "aria-label": S.intl.string(S.t["9hMafy"])
+              "aria-label": O.intl.string(O.t["9hMafy"])
             })
           })]
         })]

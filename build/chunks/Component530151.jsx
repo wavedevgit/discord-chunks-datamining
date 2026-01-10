@@ -462,12 +462,12 @@ let W = () => (0, r.jsx)(H, {
     tooltip: D.intl.string(D.t.YGm6SZ),
     onClick: () => b.v4()
   }),
-  q = () => (0, r.jsx)(H, {
+  K = () => (0, r.jsx)(H, {
     icon: g.fpf,
     tooltip: D.intl.string(D.t.TVAd5J),
     onClick: () => b.wO()
   }),
-  K = e => {
+  q = e => {
     let {
       item: t
     } = e;
@@ -519,9 +519,9 @@ let W = () => (0, r.jsx)(H, {
         libraryApplication: e.libraryApplication,
         size: "sm",
         source: R.Sbl.APPLICATION_LIBRARY_UPDATES
-      }) : null : null != e.state ? e.state.type !== R.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(K, {
+      }) : null : null != e.state ? e.state.type !== R.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(q, {
         item: e
-      }) : null != t && t.paused ? (0, r.jsx)(W, {}) : (0, r.jsx)(q, {
+      }) : null != t && t.paused ? (0, r.jsx)(W, {}) : (0, r.jsx)(K, {
         item: e
       }), i = (0, r.jsx)(Q, {
         item: e
@@ -545,7 +545,7 @@ class X extends Chunk473749.PureComponent {
       applications: e
     } = this.props;
     e.forEach(e => {
-      e.finished && m.Z.wait(() => {
+      e.finished && h.Z.wait(() => {
         b.wi(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true
@@ -593,7 +593,7 @@ class X extends Chunk473749.PureComponent {
         },
         rowProps: {
           onContextMenu: (e, t) => {
-            h.jW(e, async () => {
+            m.jW(e, async () => {
               let {
                 default: e
               } = await n.e("98335").then(n.bind(n, 485292));

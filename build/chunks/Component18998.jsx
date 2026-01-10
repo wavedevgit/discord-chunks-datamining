@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 18998, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./583741.js"), require("./388685.js"), require("./539854.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk491455 = require("./491455.js");
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,16 +30,16 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
-let b = {
+let m = {
   friction: 10,
   tension: 300
 };
-class m extends Chunk473749.Component {
+class b extends Chunk473749.Component {
   shouldComponentUpdate(e, t) {
     return !(0, d.Z)(this.props, e, ["animate"]) || !(0, d.Z)(this.state, t)
   }
@@ -68,7 +68,7 @@ class m extends Chunk473749.Component {
     this._timeout = setTimeout(() => {
       u.Z.spring(e, g({
         toValue: 0
-      }, b)).start()
+      }, m)).start()
     }, 100)
   }
   animateOut() {
@@ -78,7 +78,7 @@ class m extends Chunk473749.Component {
     if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) return void e.setValue(1);
     u.Z.spring(e, g({
       toValue: 1
-    }, b)).start()
+    }, m)).start()
   }
   render() {
     let {
@@ -88,14 +88,14 @@ class m extends Chunk473749.Component {
       onClick: r
     } = this.props;
     return (0, i.jsx)(u.Z.div, {
-      className: o()(h.bar, e, {
-        [h.hidden]: n
+      className: o()(f.bar, e, {
+        [f.hidden]: n
       }),
       onClick: r,
       style: this.getAnimatedStyle(),
       "aria-hidden": n,
       children: (0, i.jsx)("span", {
-        className: h.text,
+        className: f.text,
         children: t
       })
     })
@@ -116,7 +116,7 @@ class m extends Chunk473749.Component {
     }
   }
   constructor(e) {
-    super(e), p(this, "_timeout", true), this.state = {
+    super(e), h(this, "_timeout", true), this.state = {
       translateY: new u.Z.Value,
       reduceMotion: false
     }
@@ -149,9 +149,9 @@ class y extends(r = Chunk473749.PureComponent) {
     } = this.context;
     return (0, i.jsx)("div", {
       className: null != a ? a : true,
-      children: (0, i.jsx)(m, {
+      children: (0, i.jsx)(b, {
         hide: true === c || null == e && null == t,
-        className: o()(s, null != t ? h.mention : h.unread),
+        className: o()(s, null != t ? f.mention : f.unread),
         text: null != t ? n : r,
         reverse: l,
         animate: u && !d.enabled,
@@ -160,10 +160,10 @@ class y extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "state", {
+    super(...e), h(this, "state", {
       unread: null,
       mention: null
-    }), p(this, "calculateState", c()(() => {
+    }), h(this, "calculateState", c()(() => {
       let {
         items: e,
         expandedFolders: t,
@@ -180,14 +180,14 @@ class y extends(r = Chunk473749.PureComponent) {
           null == o && i(e, l, c) && (o = e), null == s && r(e, l, c) && (s = e)
         },
         d = l ? c.length - 1 : 0,
-        f = c[d];
-      for (; null != f;) {
-        if ("string" == typeof f) {
-          if (n(f, l, c)) break;
-          u(f)
+        p = c[d];
+      for (; null != p;) {
+        if ("string" == typeof p) {
+          if (n(p, l, c)) break;
+          u(p)
         } else {
           let e = false;
-          for (let t of f) {
+          for (let t of p) {
             if (n(t, l, c)) {
               e = true;
               break
@@ -196,13 +196,13 @@ class y extends(r = Chunk473749.PureComponent) {
           }
           if (e) break
         }
-        d += l ? false : 1, f = c[d]
+        d += l ? false : 1, p = c[d]
       }
       null != a && a(o, s, l), this.setState({
         mention: o,
         unread: s
       })
-    }, 200)), p(this, "handleClick", e => {
+    }, 200)), h(this, "handleClick", e => {
       e.preventDefault(), e.stopPropagation();
       let {
         unread: t,
@@ -214,10 +214,10 @@ class y extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-p(y, "contextType", Chunk481060.Sfi), p(y, "defaultProps", {
+h(y, "contextType", Chunk481060.Sfi), h(y, "defaultProps", {
   className: Chunk491455.container,
   reverse: false,
   hide: false,
   animate: true
 });
-let O = y
+let v = y

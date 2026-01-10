@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 428530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -29,14 +29,14 @@ function u(e) {
 let m = u(d),
   p = u(d);
 
-function f(e) {
+function h(e) {
   return o.Jn9.test(e) ? (0, a.jsx)(s.ZP, {
     type: s.ZP.Types.TEXT,
     children: () => e
   }) : e
 }
 
-function h(e) {
+function f(e) {
   let {
     data: t
   } = e, n = (0, l.ZP)();
@@ -46,7 +46,7 @@ function h(e) {
       data: t,
       theme: "light" === n ? p : m,
       invertTheme: false,
-      valueRenderer: f,
+      valueRenderer: h,
       shouldExpandNode: () => true
     })
   })

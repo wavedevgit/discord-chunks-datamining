@@ -215,9 +215,9 @@ function P(e) {
     let {
       keywords: r
     } = n;
-    !(r.length >= y.G7) && (r.includes(e) || (g(null), (0, d.zH)(t, [...r, e])))
+    !(r.length >= C.G7) && (r.includes(e) || (g(null), (0, d.zH)(t, [...r, e])))
   }, [t, n]), b = i.useMemo(() => (0, p.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
-    let t = n.keywords.length >= y.G7;
+    let t = n.keywords.length >= C.G7;
     return {
       text: e,
       onClick: () => m(e),
@@ -240,8 +240,8 @@ function P(e) {
         onRemoveTag: f,
         onAddTag: m,
         onAddTagError: g,
-        maxTags: y.G7,
-        maxTaxLength: y._0,
+        maxTags: C.G7,
+        maxTaxLength: C._0,
         placeholder: n.keywords.length < 1 ? E.intl.string(E.t.EL4Lhs) : true
       }), null != h ? (0, r.jsx)(o.Text, {
         color: "text-feedback-critical",
@@ -364,7 +364,7 @@ function D(e) {
     }
   });
   if (null == o) return null;
-  let c = i === C.U.ELIGIBLE_DISABLED;
+  let c = i === y.U.ELIGIBLE_DISABLED;
   return (0, r.jsxs)("div", {
     className: I.settings,
     children: [(0, r.jsx)(_, {

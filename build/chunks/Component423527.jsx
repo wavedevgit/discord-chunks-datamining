@@ -309,9 +309,12 @@ class ec extends(r = Chunk473749.PureComponent) {
     return (null == e ? true : e.guild_scheduled_event) != null ? (0, i.jsx)(y.r, {
       channel: e.channel,
       guildScheduledEvent: e.guild_scheduled_event
-    }) : (0, i.jsx)(Y.Z, {
-      invite: e,
-      inUnclaimedFlow: true
+    }) : (0, i.jsx)("div", {
+      className: ei.marginBottom24,
+      children: (0, i.jsx)(Y.Z, {
+        invite: e,
+        inUnclaimedFlow: true
+      })
     })
   }
   renderInviteButton() {
@@ -624,9 +627,12 @@ class ec extends(r = Chunk473749.PureComponent) {
       guildTemplate: s
     }), true) : null != n ? this.renderFull(() => (0, i.jsx)(q.Z, {
       giftCode: n
-    })) : null != r && a && r.state === Q.r2o.RESOLVED ? this.renderFull(() => (0, i.jsx)(Y.Z, {
-      invite: r,
-      isRegister: true
+    })) : null != r && a && r.state === Q.r2o.RESOLVED ? this.renderFull(() => (0, i.jsx)("div", {
+      className: ei.marginBottom24,
+      children: (0, i.jsx)(Y.Z, {
+        invite: r,
+        isRegister: true
+      })
     })) : this.renderFull()
   }
   constructor(e) {

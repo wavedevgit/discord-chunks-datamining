@@ -2,7 +2,7 @@
 /** chunk id: 81509, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -180,7 +180,7 @@ function O(e) {
     subscriberCount: b,
     emojisToShow: h,
     notShownEmojiCount: O,
-    storePageUrl: C
+    storePageUrl: y
   } = o.details;
   return (0, r.jsxs)("div", {
     className: p.guildCard,
@@ -196,12 +196,12 @@ function O(e) {
     }), (0, r.jsx)(v, {
       emojisToShow: h,
       notShownEmojiCount: O,
-      storePageUrl: C
+      storePageUrl: y
     })]
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     highlightedCreators: t
   } = e;

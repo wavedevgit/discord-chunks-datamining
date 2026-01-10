@@ -24,8 +24,7 @@ function g(e) {
     isFetching: f,
     coverImageUrl: m
   } = (0, c.$)(t, {
-    coverImageHeight: 336,
-    coverImageWidth: 252
+    coverImageSize: 256
   }), b = (0, o.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getDetectableGame(t)) ? true : e.name) ? n : ""

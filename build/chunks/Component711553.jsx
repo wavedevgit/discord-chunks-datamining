@@ -2,42 +2,42 @@
 /** chunk id: 711553, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk518084 = require("./518084.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk74739 = require("./74739.js");
-let f = function(e) {
+let h = function(e) {
   let t, {
       title: n,
-      header: a,
-      children: f,
-      renderSettings: h,
+      header: s,
+      children: h,
+      renderSettings: f,
       onDragStart: p
     } = e,
     g = r.useRef(null);
-  return t = null != n ? (0, i.jsxs)(l.ZP.Bar, {
-    className: s()(u.header, u.draggableStartArea),
+  return t = null != n ? (0, i.jsxs)(a.ZP.Bar, {
+    className: o()(u.header, u.draggableStartArea),
     onMouseDown: p,
-    children: [(0, i.jsx)(l.ZP.Content, {
-      className: s()(u.headerTitle, u.draggableStartArea),
+    children: [(0, i.jsx)(a.ZP.Content, {
+      className: o()(u.headerTitle, u.draggableStartArea),
       dynamicSize: true,
       children: n
-    }), (0, i.jsx)(l.ZP.Content, {
-      children: (0, i.jsx)(o.yRy, {
+    }), (0, i.jsx)(a.ZP.Content, {
+      children: (0, i.jsx)(l.yRy, {
         targetElementRef: g,
         position: "right",
-        renderPopout: null != h ? h : c.dG4,
+        renderPopout: null != f ? f : c.dG4,
         autoInvert: false,
         children: e => {
           var t, n;
-          return (0, i.jsx)(l.ZP.Icon, (t = function(e) {
+          return (0, i.jsx)(a.ZP.Icon, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -55,7 +55,7 @@ let f = function(e) {
             }
             return e
           }({}, e), n = n = {
-            icon: o.ewm,
+            icon: l.ewm,
             label: d.intl.string(d.t["3D5yo/"]),
             ref: g
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -71,11 +71,11 @@ let f = function(e) {
         }
       })
     })]
-  }) : a, (0, i.jsxs)("div", {
+  }) : s, (0, i.jsxs)("div", {
     className: u.sidebar,
     children: [t, (0, i.jsx)("div", {
       className: u.children,
-      children: f
+      children: h
     })]
   })
 }

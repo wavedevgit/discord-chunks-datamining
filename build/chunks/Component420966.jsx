@@ -43,7 +43,7 @@ function p(e) {
   i.useEffect(() => {
     v && h(g.ZI.PERMISSIONS)
   }, [v, h]);
-  let C = (0, o.e)(t, b);
+  let y = (0, o.e)(t, b);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: m.titleContainer,
@@ -54,7 +54,7 @@ function p(e) {
         children: f.intl.format(f.t.BUdGkE, {
           roleName: b.name
         })
-      }), C ? (0, r.jsx)(a.P3F, {
+      }), y ? (0, r.jsx)(a.P3F, {
         className: m.menu,
         onClick: function(e) {
           (0, s.jW)(e, async () => {

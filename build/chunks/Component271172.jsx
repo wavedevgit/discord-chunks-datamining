@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 271172, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -40,9 +40,9 @@ function m(e) {
   let {
     guild: l,
     channelId: a
-  } = e, s = (0, u.kH)(l), {
-    modalType: f
-  } = s, m = function(e, t) {
+  } = e, o = (0, d.kH)(l), {
+    modalType: h
+  } = o, m = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -56,18 +56,18 @@ function m(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(s, ["modalType"]), b = i.useCallback(() => {
-    null != l && o.Z.nsfwReturnToSafety(l.id)
+  }(o, ["modalType"]), b = i.useCallback(() => {
+    null != l && s.Z.nsfwReturnToSafety(l.id)
   }, [l]), y = i.useCallback(() => {
-    null != l && o.Z.nsfwAgree(l.id)
-  }, [l]), O = i.useCallback(() => {
+    null != l && s.Z.nsfwAgree(l.id)
+  }, [l]), v = i.useCallback(() => {
     c.Z.showAgeVerificationGetStartedModal({
-      entryPoint: d.cU.NSFW_GUILD
+      entryPoint: u.cU.NSFW_GUILD
     })
-  }, []), x = (t = g({}, m), n = n = {
+  }, []), O = (t = g({}, m), n = n = {
     guildId: null == l ? true : l.id,
     channelId: a,
-    disagreement: h.intl.string(h.t["/g10LC"])
+    disagreement: f.intl.string(f.t["/g10LC"])
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,20 +78,20 @@ function m(e) {
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t);
-  switch (f) {
-    case d.it.NSFW_CHANNEL_AGE_VERIFY:
-    case d.it.GUILD_LARGE_SERVER:
+  switch (h) {
+    case u.it.NSFW_CHANNEL_AGE_VERIFY:
+    case u.it.GUILD_LARGE_SERVER:
       return (0, r.jsx)(p.Z, g({
-        onAgree: O,
+        onAgree: v,
         onDisagree: b,
-        modalType: f
-      }, x));
+        modalType: h
+      }, O));
     default:
       return (0, r.jsx)(p.Z, g({
         onAgree: y,
         onDisagree: b,
-        modalType: f
-      }, x))
+        modalType: h
+      }, O))
   }
 }
 let b = function(e) {
@@ -99,17 +99,17 @@ let b = function(e) {
     guild: t,
     channelId: n,
     className: l
-  } = e, o = i.useRef(null);
+  } = e, s = i.useRef(null);
   return i.useEffect(() => {
     let {
       current: e
-    } = o;
+    } = s;
     null == e || e.scrollToBottom()
-  }, []), (0, r.jsx)(s.Den, {
-    ref: o,
-    className: f.scroller,
+  }, []), (0, r.jsx)(o.Den, {
+    ref: s,
+    className: h.scroller,
     children: (0, r.jsx)("div", {
-      className: a()(l, f.wrapper),
+      className: a()(l, h.wrapper),
       children: (0, r.jsx)(m, {
         guild: t,
         channelId: n

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 734386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -37,10 +37,10 @@ var Chunk54381 = require("./54381.js"),
 function w(e) {
   let {
     channel: t
-  } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([x.Z], () => null != w ? x.Z.getSortedRoles(w) : true), R = (0, u.e7)([j.default, O.Z], () => {
+  } = e, [n, l] = i.useState(false), o = (0, g.ZP)(t, true), w = t.guild_id, R = (0, u.e7)([j.Z], () => null != w ? j.Z.getSortedRoles(w) : true), D = (0, u.e7)([E.default, x.Z], () => {
     var e;
-    return j.default.getUser(null == (e = O.Z.getGuild(w)) ? true : e.ownerId)
-  }), D = r.useMemo(() => null != M ? M.filter(e => !(0, v.fI)(e)) : [], [M]), L = r.useMemo(() => s()(D).filter(e => {
+    return E.default.getUser(null == (e = x.Z.getGuild(w)) ? true : e.ownerId)
+  }), M = i.useMemo(() => null != R ? R.filter(e => !(0, O.fI)(e)) : [], [R]), k = i.useMemo(() => s()(M).filter(e => {
     if (null == w) returnfalse;
     let n = S.I0({
       forceRoles: {
@@ -49,144 +49,144 @@ function w(e) {
       context: t
     });
     return c.Db(n, c.$e(Z.Plq.ADMINISTRATOR, Z.Plq.VIEW_CHANNEL))
-  }).value(), [t, w, D]), k = (0, u.Wu)([j.default], () => {
+  }).value(), [t, w, M]), L = (0, u.Wu)([E.default], () => {
     let e = {};
-    for (let n of (null != R && (e[R.id] = R), Object.values(t.permissionOverwrites))) {
+    for (let n of (null != D && (e[D.id] = D), Object.values(t.permissionOverwrites))) {
       if (n.type !== h.BN.MEMBER || null != e[n.id]) continue;
-      let t = j.default.getUser(n.id);
+      let t = E.default.getUser(n.id);
       null != t && (e[t.id] = t)
     }
     return s()(e).filter(e => {
       var n;
-      let i = S.BT({
+      let r = S.BT({
           permission: Z.Plq.ADMINISTRATOR,
           user: e,
           context: t
         }),
-        r = null != (n = t.permissionOverwrites[e.id]) ? n : S.Hn,
-        l = c.e$(r.allow, Z.Plq.VIEW_CHANNEL);
-      return i || l
+        i = null != (n = t.permissionOverwrites[e.id]) ? n : S.Hn,
+        l = c.e$(i.allow, Z.Plq.VIEW_CHANNEL);
+      return r || l
     }).value()
-  }, [t, R]), U = E.Z.can(Z.Plq.MANAGE_CHANNELS, t) || E.Z.can(Z.Plq.MANAGE_ROLES, t), V = r.useCallback(() => l(false), []);
-  return (0, i.jsxs)(P.ZP, {
+  }, [t, D]), U = C.Z.can(Z.Plq.MANAGE_CHANNELS, t) || C.Z.can(Z.Plq.MANAGE_ROLES, t), G = i.useCallback(() => l(false), []);
+  return (0, r.jsxs)(I.ZP, {
     channelId: t.id,
-    children: [(0, i.jsx)(P.Kq, {
+    children: [(0, r.jsx)(I.Kq, {
       locked: true,
       channelType: t.type
-    }), (0, i.jsx)(P.Ot, {
-      children: T.intl.format(T.t.I3R7Vn, {
+    }), (0, r.jsx)(I.Ot, {
+      children: N.intl.format(N.t.I3R7Vn, {
         channelName: o
       })
-    }), (0, i.jsx)(P.jz, {
+    }), (0, r.jsx)(I.jz, {
       className: A.markup,
-      children: T.intl.format(T.t.QuwqjG, {
+      children: N.intl.format(N.t.QuwqjG, {
         channelName: o,
-        topicHook: () => y.Z.parseTopic(t.topic, true, {
+        topicHook: () => v.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
-    }), U ? (0, i.jsxs)("div", {
-      className: N.channelSettingButtons,
-      children: [(0, i.jsx)(p.Button, {
+    }), U ? (0, r.jsxs)("div", {
+      className: T.channelSettingButtons,
+      children: [(0, r.jsx)(p.Button, {
         size: "sm",
         variant: "secondary",
-        text: T.intl.string(T.t.dMJ3Y6),
+        text: N.intl.string(N.t.dMJ3Y6),
         onClick: () => l(true),
         icon: p.BFJ
-      }), (0, i.jsx)(p.Button, {
+      }), (0, r.jsx)(p.Button, {
         size: "sm",
         variant: "secondary",
-        text: T.intl.string(T.t["3gUsJb"]),
+        text: N.intl.string(N.t["3gUsJb"]),
         onClick: function() {
           f.ZP.open(t.id)
         },
         icon: p.vdY
       })]
-    }) : null, (0, i.jsxs)("div", {
-      className: N.members,
+    }) : null, (0, r.jsxs)("div", {
+      className: T.members,
       children: [function() {
-        if (1 !== k.length || L.length > 0) return (0, i.jsx)(d.Z, {
+        if (1 !== L.length || k.length > 0) return (0, r.jsx)(d.Z, {
           guildId: t.guild_id,
-          className: N.avatars,
+          className: T.avatars,
           maxUsers: 5,
-          users: k
+          users: L
         });
-        let e = k[0],
+        let e = L[0],
           n = _.ZP.getName(e);
-        return (0, i.jsxs)("div", {
-          className: N.avatars,
-          children: [(0, i.jsx)(p.qEK, {
+        return (0, r.jsxs)("div", {
+          className: T.avatars,
+          children: [(0, r.jsx)(p.qEK, {
             src: e.getAvatarURL(t.guild_id, 24),
             "aria-label": n,
             size: p.EFr.SIZE_24
-          }), (0, i.jsx)(p.Text, {
+          }), (0, r.jsx)(p.Text, {
             tag: "span",
-            className: N.singleUserName,
+            className: T.singleUserName,
             variant: "text-md/normal",
             children: n
-          }), "\xa0", (0, i.jsx)(p.Text, {
+          }), "\xa0", (0, r.jsx)(p.Text, {
             tag: "span",
             variant: "text-md/normal",
             color: "text-muted",
-            children: T.intl.string(T.t.rt0ERW)
+            children: N.intl.string(N.t.rt0ERW)
           })]
         })
-      }(), L.map((e, n) => {
-        var r, l;
+      }(), k.map((e, n) => {
+        var i, l;
         let o = null != (l = e.colorString) ? l : Z.Pbq,
-          s = (null == (r = e.tags) ? true : r.guild_connections) !== true;
-        return U ? (0, i.jsx)(I.Z, {
-          className: a()(N.role, {
-            [N.last]: n === L.length - 1
+          s = (null == (i = e.tags) ? true : i.guild_connections) !== true;
+        return U ? (0, r.jsx)(P.Z, {
+          className: a()(T.role, {
+            [T.last]: n === k.length - 1
           }),
           roleName: e.name,
           roleColor: o,
           disabled: !U,
           verified: s,
           onClick: () => {
-            C.Z.open(t.guild_id, Z.pNK.MEMBERS), C.Z.selectRole(e.id)
+            y.Z.open(t.guild_id, Z.pNK.MEMBERS), y.Z.selectRole(e.id)
           }
-        }, e.id) : (0, i.jsx)(b.Z, {
-          className: a()(N.role, {
-            [N.last]: n === L.length - 1
+        }, e.id) : (0, r.jsx)(b.Z, {
+          className: a()(T.role, {
+            [T.last]: n === k.length - 1
           }),
           roleName: e.name,
           roleColor: o,
           verified: s
         }, e.id)
       })]
-    }), n ? (0, i.jsx)(p.u_l, {
+    }), n ? (0, r.jsx)(p.u_l, {
       renderModal: e => {
-        var n, r;
-        return (0, i.jsx)(g.default, (n = function(e) {
+        var n, i;
+        return (0, r.jsx)(m.default, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[t] = r
             })
           }
           return e
-        }({}, e), r = r = {
-          onClose: () => (V(), e.onClose()),
+        }({}, e), i = i = {
+          onClose: () => (G(), e.onClose()),
           channelId: t.id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
           return n
-        })(Object(r)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
         }), n))
       },
       onCloseRequest: () => l(false)

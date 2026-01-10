@@ -2,11 +2,10 @@
 /** chunk id: 556019, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  qt: () => l
+  qt: () => s
 });
-var Chunk203311 = require("./203311.js"),
-  Chunk818083 = require("./818083.js");
-let a = (0, Chunk818083.B)({
+var Chunk818083 = require("./818083.js");
+let i = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_emoji_studio_mobile",
     label: "Emoji Studio (Mobile)",
@@ -21,7 +20,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-08_emoji_studio_entrypoint",
     label: "Emoji Studio Entrypoint",
@@ -36,7 +35,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-08_emoji_studio_speedrun",
     label: "Emoji Studio V2 Speedrun",
@@ -61,36 +60,36 @@ let a = (0, Chunk818083.B)({
     }]
   });
 
-function l(e) {
+function s(e) {
   let {
     location: t,
     autoTrackExposure: n,
-    disable: i = false
-  } = e, l = (0, r.$u)(t), {
-    enabled: c
+    disable: r = false
+  } = e, {
+    enabled: s
+  } = i.useExperiment({
+    location: t
+  }, {
+    autoTrackExposure: n,
+    disable: r
+  }), {
+    enabled: l
   } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: l || i
+    disable: r
   }), {
-    enabled: u
+    isEmojiEditingExperimentEnabled: c,
+    isSelectFileBeforeEmojiStudioExperimentEnabled: u
   } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: l || i
-  }), {
-    isEmojiEditingExperimentEnabled: d,
-    isSelectFileBeforeEmojiStudioExperimentEnabled: f
-  } = s.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: n,
-    disable: l || i
+    disable: r
   });
   return {
-    enabled: u || d || f,
-    isMobileEnabled: c
+    enabled: l || c || u,
+    isMobileEnabled: s
   }
 }

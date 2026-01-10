@@ -1,1 +1,0 @@
-{"id":"853385","type":"experiment","data":{"kind":"user","id":"2025-09_ctp_quest_home_open_uneven_buckets","label":"CTP quest home open - A/A test - Uneven buckets","defaultConfig":{"doSomething":false},"commonTriggerPoint":"Chunk987338.$P.QUEST_HOME_OPEN","treatments":[{"id":1,"label":"Treatment","config":{"doSomething":true}}]},"fromModule":{"id":"1272"}}

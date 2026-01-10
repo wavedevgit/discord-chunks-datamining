@@ -1,4 +1,4 @@
-/** Chunk was on 193 **/
+/** Chunk was on 49131 **/
 /** chunk id: 260503, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,11 +13,11 @@ function i(e) {
     padding: n,
     channel: i,
     isEnabled: l
-  } = e, s = a.useCallback(e => {
-    let a = t.current,
-      r = document.querySelector(e);
-    null != r && (null == a || a.scrollIntoViewNode({
-      node: r,
+  } = e, s = r.useCallback(e => {
+    let r = t.current,
+      a = document.querySelector(e);
+    null != a && (null == r || r.scrollIntoViewNode({
+      node: a,
       padding: n,
       callback: () => {
         var t;
@@ -26,18 +26,18 @@ function i(e) {
         })
       }
     }))
-  }, [n, t]), o = a.useCallback(() => new Promise(e => {
+  }, [n, t]), o = r.useCallback(() => new Promise(e => {
     let n = t.current;
     null == n || n.scrollToTop({
       callback: () => requestAnimationFrame(e)
     })
-  }), [t]), c = a.useCallback(() => new Promise(e => {
+  }), [t]), c = r.useCallback(() => new Promise(e => {
     let n = t.current;
     null == n || n.scrollToBottom({
       callback: () => requestAnimationFrame(e)
     })
   }), [t]);
-  return (0, r.ZP)({
+  return (0, a.ZP)({
     id: "forum-channel-list-".concat(i.id),
     isEnabled: l,
     scrollToStart: o,

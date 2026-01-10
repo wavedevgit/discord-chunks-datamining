@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 39989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => f
+  C: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ let m = [{
   p = {
     private_browsing_perk: Chunk704088.U
   },
-  f = () => {
+  h = () => {
     let [e, t] = r.useState("private_browsing_perk"), n = r.useMemo(() => p[e], [e]);
     return (0, a.jsxs)("div", {
       className: l()(d.panel, u.container),

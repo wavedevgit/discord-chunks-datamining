@@ -54,7 +54,7 @@ function O(e, t) {
   }), e
 }
 
-function C(e) {
+function y(e) {
   let {
     guild: t,
     channel: i
@@ -76,7 +76,7 @@ function C(e) {
       (0, d.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("90508"), n.e("24358"), n.e("8965"), n.e("23899")]).then(n.bind(n, 139035));
+        } = await Promise.all([n.e("90508"), n.e("68294"), n.e("8965"), n.e("76150")]).then(n.bind(n, 139035));
         return n => (0, r.jsx)(e, O(v({}, n), {
           channel: i,
           guild: t
@@ -103,7 +103,7 @@ function C(e) {
     })]
   })
 }
-let y = Chunk473749.memo(function() {
+let C = Chunk473749.memo(function() {
     return (0, r.jsx)("div", {
       className: j.separator
     })
@@ -124,7 +124,7 @@ let y = Chunk473749.memo(function() {
       category: i,
       guild: l,
       isFirstChannel: f,
-      isLastChannel: C,
+      isLastChannel: y,
       tooltipDirection: E = "right"
     } = e, I = (0, b.Mf)(t.id, i.id), S = (0, b.t4)(t.id, i.id), _ = (0, b.EH)(t.id, i.id), T = (0, b.lL)(l.id, i.id), P = null != (0, p.Z)(l).find(e => e.id === t.id);
     return (0, r.jsxs)(r.Fragment, {
@@ -136,7 +136,7 @@ let y = Chunk473749.memo(function() {
         children: (0, r.jsxs)(c.P3F, {
           className: a()(j.channelRow, {
             [j.firstChannel]: f,
-            [j.lastChannel]: C,
+            [j.lastChannel]: y,
             [j.disabled]: S
           }),
           onClick: e => {
@@ -154,7 +154,7 @@ let y = Chunk473749.memo(function() {
             t.isGuildVocal() ? (0, d.jW)(e, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("79695"), n.e("90508"), n.e("24358"), n.e("18320"), n.e("83331"), n.e("56648")]).then(n.bind(n, 213202));
+              } = await Promise.all([n.e("79695"), n.e("90508"), n.e("68294"), n.e("18320"), n.e("83331"), n.e("49738")]).then(n.bind(n, 213202));
               return n => (0, r.jsx)(e, O(v({}, n), {
                 channel: t,
                 guild: l
@@ -162,7 +162,7 @@ let y = Chunk473749.memo(function() {
             }) : (0, d.jW)(e, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("72748"), n.e("79695"), n.e("90508"), n.e("6915"), n.e("33285"), n.e("89250"), n.e("43342"), n.e("91315"), n.e("24358"), n.e("38342"), n.e("41700"), n.e("48615"), n.e("37220"), n.e("83203"), n.e("18320"), n.e("95546"), n.e("40184"), n.e("26503"), n.e("84983"), n.e("24903")]).then(n.bind(n, 373651));
+              } = await Promise.all([n.e("79695"), n.e("90508"), n.e("68294"), n.e("18320"), n.e("23877")]).then(n.bind(n, 373651));
               return n => (0, r.jsx)(e, O(v({}, n), {
                 channel: t,
                 guild: l
@@ -210,7 +210,7 @@ let y = Chunk473749.memo(function() {
             })
           })]
         })
-      }), !C && (0, r.jsx)(y, {})]
+      }), !y && (0, r.jsx)(C, {})]
     })
   });
 
@@ -222,7 +222,7 @@ function I(e) {
     hasSidebar: a
   } = e, s = i.useCallback(e => {
     let i = t._categories[e];
-    return (0, r.jsx)(C, {
+    return (0, r.jsx)(y, {
       channel: i.channel,
       guild: n
     }, i.channel.id)

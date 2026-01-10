@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 139577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -13,8 +13,8 @@ var Chunk442837 = require("./442837.js"),
 
 function u(e) {
   let t = (0, s.Z)(c.oZ.CHAT_INPUT),
-    n = (0, i.e7)([a.Z], () => a.Z.isEnabled({
+    n = (0, r.e7)([a.Z], () => a.Z.isEnabled({
       shakeLocation: c.oZ.CHAT_INPUT
     }));
-  return (0, i.e7)([l.Z, o.ZP, r.default], () => n && l.Z.isTyping(e, r.default.getId()) ? o.ZP.getUserComboShakeIntensity(r.default.getId(), e, t) : 0)
+  return (0, r.e7)([l.Z, o.ZP, i.default], () => n && l.Z.isTyping(e, i.default.getId()) ? o.ZP.getUserComboShakeIntensity(i.default.getId(), e, t) : 0)
 }

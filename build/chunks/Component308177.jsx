@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 308177, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,29 +20,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk852973 = require("./852973.js");
 
-function O(e) {
-  return e.type === d.Ui.VOICE
+function v(e) {
+  return e.type === u.Ui.VOICE
 }
-let x = (0, Chunk112724.Z)(e => {
+let O = (0, Chunk112724.Z)(e => {
   var t, n;
   let {
     channel: a,
-    width: x,
+    width: O,
     onScroll: j,
-    popoutType: v
+    popoutType: x
   } = e, {
     selectedParticipantId: C,
-    largeStream: I,
-    chatOpen: _
-  } = (0, l.cj)([s.Z], () => ({
-    selectedParticipantId: s.Z.getSelectedParticipantId(a.id),
-    largeStream: s.Z.getStageStreamSize(a.id),
-    chatOpen: s.Z.getChatOpen(a.id)
-  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != C ? o.Z.getParticipant(a.id, C) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(O), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((x - 32) / 102), w = x < 424 ? 1 : x < 624 ? 2 : x < 824 || _ ? 3 : 4, A = {
-    [d.pV.SPEAKER]: w,
-    [d.pV.AUDIENCE]: R,
-    [d.pV.SELECTED]: 1
-  }, D = (0, u.Dx)(a.id), [L, M] = (0, u.aP)(a.id, A, D), k = [Math.max(null != (t = L[0]) ? t : 1, 1), Math.max(null != (n = L[1]) ? n : 1, 1), L[2]], {
+    largeStream: E,
+    chatOpen: S
+  } = (0, l.cj)([o.Z], () => ({
+    selectedParticipantId: o.Z.getSelectedParticipantId(a.id),
+    largeStream: o.Z.getStageStreamSize(a.id),
+    chatOpen: o.Z.getChatOpen(a.id)
+  }), [a.id]), _ = (0, c.Io)(a.id), I = (0, c.Rk)(a.id, u.pV.AUDIENCE), P = (0, l.e7)([s.Z], () => null != C ? s.Z.getParticipant(a.id, C) : null), Z = (0, c.w8)(a.id, u.pV.SPEAKER), N = Z.filter(v), T = null != Z.find(e => e.type === u.Ui.STREAM), A = Math.floor((O - 32) / 102), w = O < 424 ? 1 : O < 624 ? 2 : O < 824 || S ? 3 : 4, R = {
+    [u.pV.SPEAKER]: w,
+    [u.pV.AUDIENCE]: A,
+    [u.pV.SELECTED]: 1
+  }, D = (0, d.Dx)(a.id), [M, k] = (0, d.aP)(a.id, R, D), L = [Math.max(null != (t = M[0]) ? t : 1, 1), Math.max(null != (n = M[1]) ? n : 1, 1), M[2]], {
     speakerTileWidth: U,
     speakerTileHeight: G
   } = ((e, t) => {
@@ -52,24 +52,24 @@ let x = (0, Chunk112724.Z)(e => {
       speakerTileWidth: n,
       speakerTileHeight: r
     }
-  })(x, w), H = I ? x - 32 : Math.min(x - 64, 3 * U + 8), F = e => e === L.length - 1 || 0 === E && 1 === e, [B, V] = i.useState(false), [z, W] = i.useState(false);
-  return (0, r.jsx)(h.Z, {
-    sections: k,
+  })(O, w), B = E ? O - 32 : Math.min(O - 64, 3 * U + 8), F = e => e === M.length - 1 || 0 === I && 1 === e, [H, V] = i.useState(false), [z, W] = i.useState(false);
+  return (0, r.jsx)(f.Z, {
+    sections: L,
     renderSection: e => {
       let {
         section: t
       } = e;
-      return 1 === t ? 0 === S ? null : (0, r.jsx)(g.Z, {
-        participantCount: S,
+      return 1 === t ? 0 === _ ? null : (0, r.jsx)(g.Z, {
+        participantCount: _,
         label: b.intl.string(b.t.CduOkx),
         className: y.header,
-        onClick: () => V(!B),
-        collapsed: B,
-        speakers: T,
+        onClick: () => V(!H),
+        collapsed: H,
+        speakers: N,
         channel: a,
-        isStreamLive: N
-      }, "speaker-header-".concat(t)) : 2 === t ? 0 === E ? null : (0, r.jsx)(g.Z, {
-        participantCount: E,
+        isStreamLive: T
+      }, "speaker-header-".concat(t)) : 2 === t ? 0 === I ? null : (0, r.jsx)(g.Z, {
+        participantCount: I,
         label: b.intl.string(b.t["3foUu5"]),
         className: y.header,
         onClick: () => W(!z),
@@ -82,7 +82,7 @@ let x = (0, Chunk112724.Z)(e => {
       let {
         section: t,
         row: n
-      } = e, l = M[t][n];
+      } = e, l = k[t][n];
       if ((null == l ? true : l.length) == null) return null;
       switch (t) {
         case 0:
@@ -92,19 +92,19 @@ let x = (0, Chunk112724.Z)(e => {
             children: (0, r.jsx)(m.Z, {
               channel: a,
               participant: l[0],
-              width: H,
-              popoutType: v
+              width: B,
+              popoutType: x
             })
           }, "selected-participant");
         case 1:
-          if (B) return null;
+          if (H) return null;
           return (0, r.jsx)(i.Fragment, {
-            children: (0, r.jsx)(f.Z, {
+            children: (0, r.jsx)(h.Z, {
               tileWidth: U,
               channel: a,
               participants: l,
-              selectedParticipant: Z,
-              popoutType: v
+              selectedParticipant: P,
+              popoutType: x
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
@@ -112,13 +112,13 @@ let x = (0, Chunk112724.Z)(e => {
           return (0, r.jsx)(p.Z, {
             channel: a,
             participants: l,
-            maxTiles: R
+            maxTiles: A
           }, "audience-".concat(t, "-").concat(n));
         default:
           return null
       }
     },
-    rowHeight: e => null == M[e][0] ? 0 : 0 === e ? H / m.Q + 8 : 1 === e ? B ? 0 : G : 98 * !z,
+    rowHeight: e => null == k[e][0] ? 0 : 0 === e ? B / m.Q + 8 : 1 === e ? H ? 0 : G : 98 * !z,
     renderFooter: e => {
       let {
         section: t

@@ -110,21 +110,21 @@ function S(e) {
   let A = "" !== t.value ? t.value : t.id;
   return (0, r.jsx)("div", {
     ref: S,
-    className: a()(y.draggableInputContainer, {
-      [y.dragging]: h
+    className: a()(C.draggableInputContainer, {
+      [C.dragging]: h
     }),
     "data-dnd-name": A,
     children: (0, r.jsxs)("div", {
-      className: y.inputWrapper,
+      className: C.inputWrapper,
       children: [(0, r.jsx)(g.P3F, {
         onMouseDown: () => j(l),
         children: (0, r.jsx)(b.ZP, {
-          innerClassName: y.rulesTextAreaInput,
+          innerClassName: C.rulesTextAreaInput,
           type: f.Ie.RULES_INPUT,
           textValue: T,
           richValue: P,
           channel: n,
-          placeholder: C.intl.string(C.t.BRkD41),
+          placeholder: y.intl.string(y.t.BRkD41),
           focused: x,
           onChange: (e, n, r) => {
             let i = E ? t.value : n;
@@ -143,22 +143,22 @@ function S(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: y.clearButton,
+        className: C.clearButton,
         children: (0, r.jsx)(g.hU, {
           size: "sm",
           variant: "icon-only",
           icon: g.k$p,
-          "aria-label": C.intl.string(C.t.VkKicb),
+          "aria-label": y.intl.string(y.t.VkKicb),
           onClick: u
         })
       }), (0, r.jsx)("div", {
         ref: _,
-        className: y.dragContainer,
+        className: C.dragContainer,
         "data-dnd-name": A,
         children: N && (0, r.jsx)(g.Vni, {
           size: "xs",
           color: "currentColor",
-          className: y.dragIcon
+          className: C.dragIcon
         })
       })]
     })
@@ -199,34 +199,34 @@ function _(e) {
     }
     i ? null !== m && b(null) : r !== m && b(r)
   }, [a, m, t, n]), R = t.length === v.X2, D = i.useMemo(() => {
-    let e = R ? C.intl.formatToPlainString(C.t.tU718E, {
+    let e = R ? y.intl.formatToPlainString(y.t.tU718E, {
       number: v.X2
     }) : true;
     return [{
-      text: C.intl.string(C.t.DXq2od),
-      onClick: () => T(C.intl.string(C.t.XudkSq)),
+      text: y.intl.string(y.t.DXq2od),
+      onClick: () => T(y.intl.string(y.t.XudkSq)),
       disabled: R || a,
       tooltipText: e
     }, {
-      text: C.intl.string(C.t.nSqTjM),
-      onClick: () => T(C.intl.string(C.t.np91jA)),
+      text: y.intl.string(y.t.nSqTjM),
+      onClick: () => T(y.intl.string(y.t.np91jA)),
       disabled: R || a,
       tooltipText: e
     }, {
-      text: C.intl.string(C.t.AtRxsO),
-      onClick: () => T(C.intl.string(C.t.PNIDDJ)),
+      text: y.intl.string(y.t.AtRxsO),
+      onClick: () => T(y.intl.string(y.t.PNIDDJ)),
       disabled: R || a,
       tooltipText: e
     }, {
-      text: C.intl.string(C.t["0K5NJt"]),
-      onClick: () => T(C.intl.string(C.t.HolIDy)),
+      text: y.intl.string(y.t["0K5NJt"]),
+      onClick: () => T(y.intl.string(y.t.HolIDy)),
       disabled: R || a,
       tooltipText: e
     }]
   }, [T, a, R]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: y.rulesContainer,
+      className: C.rulesContainer,
       children: t.map((e, i) => (0, r.jsx)(S, {
         rulesChannel: null != d ? d : f,
         rule: e,
@@ -249,17 +249,17 @@ function _(e) {
         disabled: a
       }, e.id))
     }), !R && (0, r.jsx)(x.A, {
-      text: C.intl.string(C.t.Cq5JuR),
+      text: y.intl.string(y.t.Cq5JuR),
       onClick: P,
       disabled: a
     }), (0, r.jsx)(g.Heading, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: y.exampleRulesTitle,
-      children: C.intl.string(C.t.XHWj8W)
+      className: C.exampleRulesTitle,
+      children: y.intl.string(y.t.XHWj8W)
     }), (0, r.jsx)(j.j, {
       pills: D,
-      pillClassName: y.pill
+      pillClassName: C.pill
     })]
   })
 }

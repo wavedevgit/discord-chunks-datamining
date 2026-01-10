@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 879434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -19,15 +19,15 @@ var Chunk54381 = require("./54381.js"),
 let x = e => {
     let {
       setTab: t
-    } = e, n = (0, o.e7)([u.Z], () => u.Z.getWindowOpen(f.KJ3.DEVTOOLS_POPOUT));
+    } = e, n = (0, o.e7)([u.Z], () => u.Z.getWindowOpen(h.KJ3.DEVTOOLS_POPOUT));
     return (0, a.jsxs)("div", {
-      className: h.content,
+      className: f.content,
       children: [(0, a.jsx)(s.P3F, {
         onClick: () => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: l()(h.banner, h.pfxBanner),
+          className: l()(f.banner, f.pfxBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -39,7 +39,7 @@ let x = e => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: l()(h.banner, h.nameplateBanner),
+          className: l()(f.banner, f.nameplateBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -51,7 +51,7 @@ let x = e => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: l()(h.banner, h.bundlesBanner),
+          className: l()(f.banner, f.bundlesBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -87,9 +87,9 @@ let x = e => {
   b = () => {
     let [e, t] = r.useState(0);
     return (0, a.jsxs)(s.zJl, {
-      className: h.wrapper,
+      className: f.wrapper,
       children: [(0, a.jsxs)("div", {
-        className: h.nav,
+        className: f.nav,
         children: [(0, a.jsx)(s.X6q, {
           variant: "heading-xxl/medium",
           children: "Collectibles DevTools"

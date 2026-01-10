@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 34335, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => s,
@@ -7,22 +7,22 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk231338 = require("./231338.js");
-let l = Chunk473749.createContext(null),
+let a = Chunk473749.createContext(null),
   o = {
-    registerManageWidgetButtonRef: () => a.dG,
+    registerManageWidgetButtonRef: () => l.dG,
     manageFocusOnReorder: Chunk231338.dG,
     getManageButtonForWidget: () => null
   };
 
 function c() {
-  let e = i.useContext(l);
+  let e = i.useContext(a);
   return null != e ? e : o
 }
 
 function s(e) {
   let {
     children: t
-  } = e, n = i.useRef(new Map), a = i.useCallback(e => t => {
+  } = e, n = i.useRef(new Map), l = i.useCallback(e => t => {
     null != t ? n.current.set(e, t) : n.current.delete(e)
   }, []), o = i.useCallback(e => {
     requestAnimationFrame(() => {
@@ -33,11 +33,11 @@ function s(e) {
     var t;
     return null != (t = n.current.get(e)) ? t : null
   }, []), s = i.useMemo(() => ({
-    registerManageWidgetButtonRef: a,
+    registerManageWidgetButtonRef: l,
     manageFocusOnReorder: o,
     getManageButtonForWidget: c
-  }), [a, o, c]);
-  return (0, r.jsx)(l.Provider, {
+  }), [l, o, c]);
+  return (0, r.jsx)(a.Provider, {
     value: s,
     children: t
   })

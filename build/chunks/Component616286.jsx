@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 616286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => j
+  T: () => E
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,44 +23,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
-  let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
+function x(e) {
+  let t = (0, s.e7)([g.Z], () => !(0, o.isEmpty)(g.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([h.Z], () => h.Z.getVoiceChannelId() === e, [e]),
     {
-      unreadCount: i,
-      mentionCount: r
+      unreadCount: r,
+      mentionCount: i
     } = (0, s.cj)([f.ZP], () => ({
       unreadCount: f.ZP.getUnreadCount(e),
       mentionCount: f.ZP.getMentionCount(e)
     }), [e]);
   return {
-    unreadCount: i,
-    mentionCount: r,
+    unreadCount: r,
+    mentionCount: i,
     voiceChannelIsSelected: n,
     isTyping: t
   }
 }
 
-function E(e) {
+function C(e) {
   let {
     className: t,
     channelId: n
   } = e, {
-    unreadCount: r,
+    unreadCount: i,
     mentionCount: l,
     isTyping: a,
     voiceChannelIsSelected: o
-  } = O(n);
-  return (0, i.jsx)(C.Z, {
+  } = x(n);
+  return (0, r.jsx)(y.Z, {
     className: t,
-    unreadCount: r,
+    unreadCount: i,
     mentionCount: l,
     isTyping: a,
     canBadge: o
   })
 }
 
-function j(e) {
+function E(e) {
   let t;
   var {
     channelId: n,
@@ -68,38 +68,38 @@ function j(e) {
     showingClassName: o,
     onClick: f,
     inPopout: h,
-    showRequestToSpeakSidebar: m,
-    toggleRequestToSpeakSidebar: C
-  } = e, j = function(e, t) {
+    showRequestToSpeakSidebar: g,
+    toggleRequestToSpeakSidebar: y
+  } = e, E = function(e, t) {
     if (null == e) return {};
-    var n, i, r = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, i, r = {},
+      var n, r, i = {},
         l = Object.keys(e);
-      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return r
+    return i
   }(e, ["channelId", "className", "showingClassName", "onClick", "inPopout", "showRequestToSpeakSidebar", "toggleRequestToSpeakSidebar"]);
   let {
     parentAnalyticsLocation: S
   } = (0, u.ZP)(), {
     disabled: _
-  } = j, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = E, I = i.useRef(null), P = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
-    unreadCount: T,
-    mentionCount: N
+    unreadCount: N,
+    mentionCount: T
   } = function(e) {
     let {
       unreadCount: t,
       mentionCount: n,
-      isTyping: i
-    } = O(e), [l, a] = r.useState(false);
-    return r.useEffect(() => {
+      isTyping: r
+    } = x(e), [l, a] = i.useState(false);
+    return i.useEffect(() => {
       a(t > 0);
       let e = setTimeout(() => {
         a(false)
@@ -108,72 +108,72 @@ function j(e) {
         clearTimeout(e), a(false)
       }
     }, [t]), {
-      isShowing: l || n > 0 || i,
+      isShowing: l || n > 0 || r,
       unreadCount: t,
       mentionCount: n
     }
-  }(n), A = r.useCallback(() => {
-    (0, p.v)(S, p.d.CHAT, !I), null == f || f(), !I && m && (null == C || C()), c.Z.updateChatOpen(n, !I)
-  }, [n, I, f, m, C, S]), w = r.useCallback(e => {
+  }(n), A = i.useCallback(() => {
+    (0, p.v)(S, p.d.CHAT, !P), null == f || f(), !P && g && (null == y || y()), c.Z.updateChatOpen(n, !P)
+  }, [n, P, f, g, y, S]), w = i.useCallback(e => {
     let {
       className: t
     } = e;
-    return (0, i.jsx)(E, {
+    return (0, r.jsx)(C, {
       className: t,
       channelId: n
     })
-  }, [n]), M = r.useCallback(() => {
+  }, [n]), R = i.useCallback(() => {
     var e;
-    null == (e = P.current) || e.focus()
+    null == (e = I.current) || e.focus()
   }, []);
-  (0, g.yp)({
-    event: v.CkL.FOCUS_CHAT_BUTTON,
-    handler: _ ? null : M
+  (0, m.yp)({
+    event: O.CkL.FOCUS_CHAT_BUTTON,
+    handler: _ ? null : R
   });
-  let [R, D] = r.useState(false), L = r.useCallback(() => {
-    h && D(true)
+  let [D, M] = i.useState(false), k = i.useCallback(() => {
+    h && M(true)
   }, [h]);
-  (0, g.yp)({
-    event: v.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: L
-  }), r.useEffect(() => {
+  (0, m.yp)({
+    event: O.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
+    handler: k
+  }), i.useEffect(() => {
     let e;
-    return R && (e = setTimeout(() => {
-      D(false)
+    return D && (e = setTimeout(() => {
+      M(false)
     }, 3e3)), () => {
       clearTimeout(e)
     }
-  }, [R]);
-  let k = [t = h && _ ? x.intl.string(x.t.DPgc5h) : I ? x.intl.string(x.t.nthdxB) : x.intl.string(x.t["5KxXrK"])];
-  return N > 0 && k.push(x.intl.formatToPlainString(x.t["3l1GOx"], {
-    mentionCount: N
-  })), T > 0 && k.push(x.intl.string(x.t.x5zAGZ)), (0, i.jsx)(y.Z, function(e) {
+  }, [D]);
+  let L = [t = h && _ ? j.intl.string(j.t.DPgc5h) : P ? j.intl.string(j.t.nthdxB) : j.intl.string(j.t["5KxXrK"])];
+  return T > 0 && L.push(j.intl.formatToPlainString(j.t["3l1GOx"], {
+    mentionCount: T
+  })), N > 0 && L.push(j.intl.string(j.t.x5zAGZ)), (0, r.jsx)(v.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = i
+        }) : e[t] = r
       })
     }
     return e
   }({
-    buttonRef: P,
+    buttonRef: I,
     onClick: A,
     label: t,
-    "aria-label": k.join(", "),
+    "aria-label": L.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
     wrapperClassName: a()(l, null != o && {
       [o]: Z
     }),
-    forceTooltipOpen: R
-  }, j))
+    forceTooltipOpen: D
+  }, E))
 }

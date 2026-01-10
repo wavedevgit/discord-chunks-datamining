@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 978966, original params: e,t,n (module,exports,require) **/
 module.exports = {
   chat: "f75fb00fb7356cbe-chat",

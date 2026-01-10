@@ -93,7 +93,7 @@ class Z extends Chunk317770.Z {
       let e = b.Z.getGuild(A);
       null != e && (0, d.Dc)(e) && (o = true, (0, g.RM)(e.id))
     }
-    let Z = () => 0 === h.Z.totalGuilds && !v.isPlatformEmbedded,
+    let Z = () => 0 === m.Z.totalGuilds && !v.isPlatformEmbedded,
       w = s.bN();
     e = [{
       key: "Unified NUF Modal",
@@ -171,7 +171,7 @@ class Z extends Chunk317770.Z {
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != A && null != m.Z.get(A) && m.Z.get(A) !== m.a
+      predicate: () => null != A && null != h.Z.get(A) && h.Z.get(A) !== h.a
     }], t = () => {
       y.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
     }, [...e].reverse().forEach(e => {

@@ -2,7 +2,7 @@
 /** chunk id: 959508, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,18 +23,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk529650 = require("./529650.js");
-let C = {
+let y = {
   optionErrors: []
 };
 
-function y(e) {
+function C(e) {
   var t;
   let {
     guild: n,
     prompt: l,
     disableAutofocus: u,
     promptIndex: x,
-    dragIndex: y,
+    dragIndex: C,
     includeCount: I,
     singleColumn: S,
     onPromptDragComplete: _,
@@ -47,14 +47,14 @@ function y(e) {
     setIsDraggable: A
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_CARD",
-    index: y,
+    index: C,
     optionId: l.id,
     onDragStart: T,
     onDragComplete: _,
     onDragReset: P
   }), L = (0, s.cj)([h.Z], () => {
     var e;
-    return null != (e = h.Z.errors[x]) ? e : C
+    return null != (e = h.Z.errors[x]) ? e : y
   }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(m.lm)[0], F = L.config, H = l.options.length >= j.fY, W = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, z = i.useRef(null), V = i.useRef(x);
   return (i.useEffect(() => {
     V.current = x

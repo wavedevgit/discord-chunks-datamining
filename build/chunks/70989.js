@@ -4,7 +4,7 @@
 require.d(exports, {
   K: () => i
 });
-let r = (0, require("./722733.js").Z)({
+let r = (0, require("./722733.js").ZP)({
   kind: "user",
   name: "2025-10-mana-date-inputs",
   defaultConfig: {

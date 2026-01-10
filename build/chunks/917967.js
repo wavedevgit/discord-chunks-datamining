@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 917967, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -18,6 +18,6 @@ function u(e) {
     wishlist: u
   } = e, d = (0, c.cZ)({
     location: n
-  }), f = (0, r.e7)([l.Z], () => l.Z.getGuild((0, o.ac)())), g = null != (t = null == u ? true : u.items.some(e => (0, a.F)(e))) && t, p = (0, r.e7)([i.ZP], () => i.ZP.getGamesSeen(false, false).some(e => null != e.id && s.RI.has(e.id)));
+  }), f = (0, r.e7)([a.Z], () => a.Z.getGuild((0, o.ac)())), g = null != (t = null == u ? true : u.items.some(e => (0, l.F)(e))) && t, p = (0, r.e7)([i.ZP], () => i.ZP.getGamesSeen(false, false).some(e => null != e.id && s.RI.has(e.id)));
   return d && (null != f || p || g)
 }

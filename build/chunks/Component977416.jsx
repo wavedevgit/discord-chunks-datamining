@@ -1,12 +1,12 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 977416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -19,58 +19,58 @@ var Chunk120356 = require("./120356.js"),
   Chunk713603 = require("./713603.js"),
   Chunk813347 = require("./813347.js");
 
-function h(e) {
+function y(e) {
   let {
     applicationId: t,
     userId: n,
     onClick: i
   } = e, {
-    coverImageUrl: a,
+    coverImageUrl: l,
     gameName: s,
     isLoading: f
-  } = (0, g.Z)(t), h = (0, l.e7)([u.Z], () => u.Z.suggestedFetchIsLoading), y = p.intl.formatToPlainString(p.t["3mb1s5"], {
+  } = (0, g.Z)(t), y = (0, a.e7)([u.Z], () => u.Z.suggestedFetchIsLoading), j = p.intl.formatToPlainString(p.t["3mb1s5"], {
     game: s
   });
-  return f || h ? (0, r.jsx)("div", {
-    className: b.loadingCover
+  return f || y ? (0, r.jsx)("div", {
+    className: m.loadingCover
   }) : (0, r.jsx)(o.u, {
-    text: y,
+    text: j,
     ariaHidden: true,
     children: (0, r.jsxs)(c.P3F, {
-      className: m.addButton,
+      className: b.addButton,
       onClick: i,
-      "aria-label": y,
+      "aria-label": j,
       children: [(0, r.jsx)(d.Z, {
-        className: m.cover,
-        imageSrc: a,
+        className: b.cover,
+        imageSrc: l,
         gameName: s,
         applicationId: t,
         userId: n,
         disableInteraction: true
       }), (0, r.jsx)(c.svS, {
         size: "md",
-        className: m.addIcon,
+        className: b.addIcon,
         color: c.TVs.colors.WHITE
       })]
     })
   })
 }
 
-function y(e) {
+function j(e) {
   let {
     userId: t,
     games: n,
     onDismiss: i,
-    onClick: l,
+    onClick: a,
     className: o
   } = e, u = (0, s.Dt)();
   return (0, r.jsxs)("aside", {
-    className: a()(m.container, o),
+    className: l()(b.container, o),
     "aria-labelledby": u,
     children: [(0, r.jsxs)("div", {
-      className: m.header,
+      className: b.header,
       children: [(0, r.jsx)(c.P3F, {
-        className: m.dismissButton,
+        className: b.dismissButton,
         "aria-label": p.intl.string(p.t["pUR+3g"]),
         onClick: i,
         children: (0, r.jsx)(c.Dio, {
@@ -89,8 +89,8 @@ function y(e) {
         let {
           applicationId: n
         } = e;
-        return (0, r.jsx)(h, {
-          onClick: () => l(n),
+        return (0, r.jsx)(y, {
+          onClick: () => a(n),
           userId: t,
           applicationId: n
         })

@@ -22,12 +22,12 @@ function p(e) {
     user: f,
     hasSingleMessageRequest: g
   } = e, {
-    channelId: m
+    channelId: h
   } = (0, s._)();
   return (0, r.jsx)(c.Z, {
     index: t,
     className: n,
-    isFocused: m === p.id,
+    isFocused: h === p.id,
     channel: p,
     user: f,
     onClick: e => {

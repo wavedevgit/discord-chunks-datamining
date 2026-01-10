@@ -16,8 +16,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk891304 = require("./891304.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk470165 = require("./470165.js");
-let m = Chunk185514.Nx.binds["0"],
-  h = Chunk185514.On.binds["0"],
+let h = Chunk185514.Nx.binds["0"],
+  m = Chunk185514.On.binds["0"],
   b = e => {
     var t, n;
     let {
@@ -39,7 +39,7 @@ let m = Chunk185514.Nx.binds["0"],
         ariaHidden: true,
         shouldShow: b,
         text: f.intl.string(f.t.B9vzIP),
-        keyboardShortcut: m,
+        keyboardShortcut: h,
         children: (0, r.jsx)(s.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -83,7 +83,7 @@ let m = Chunk185514.Nx.binds["0"],
         ariaHidden: true,
         shouldShow: _,
         text: f.intl.string(f.t["9KJ29e"]),
-        keyboardShortcut: h,
+        keyboardShortcut: m,
         children: (0, r.jsx)(s.P3F, {
           "aria-label": f.intl.string(f.t["9KJ29e"]),
           "aria-disabled": !_,

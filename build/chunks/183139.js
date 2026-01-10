@@ -3,18 +3,16 @@
 "use strict";
 require.d(exports, {
   Z: () => l,
-  j: () => s
+  j: () => o.j
 }), require("./997841.js"), require("./388685.js"), require("./49124.js");
 var Chunk836560 = require("./836560.js"),
   Chunk936349 = require("./936349.js"),
-  Chunk709054 = require("./709054.js");
-let o = 15360;
-var s = function(e) {
-  return e[e.DISPATCH = 0] = "DISPATCH", e[e.HEARTBEAT = 1] = "HEARTBEAT", e[e.IDENTIFY = 2] = "IDENTIFY", e[e.PRESENCE_UPDATE = 3] = "PRESENCE_UPDATE", e[e.VOICE_STATE_UPDATE = 4] = "VOICE_STATE_UPDATE", e[e.VOICE_SERVER_PING = 5] = "VOICE_SERVER_PING", e[e.RESUME = 6] = "RESUME", e[e.RECONNECT = 7] = "RECONNECT", e[e.REQUEST_GUILD_MEMBERS = 8] = "REQUEST_GUILD_MEMBERS", e[e.INVALID_SESSION = 9] = "INVALID_SESSION", e[e.HELLO = 10] = "HELLO", e[e.HEARTBEAT_ACK = 11] = "HEARTBEAT_ACK", e[e.CALL_CONNECT = 13] = "CALL_CONNECT", e[e.GUILD_SUBSCRIPTIONS = 14] = "GUILD_SUBSCRIPTIONS", e[e.STREAM_CREATE = 18] = "STREAM_CREATE", e[e.STREAM_DELETE = 19] = "STREAM_DELETE", e[e.STREAM_WATCH = 20] = "STREAM_WATCH", e[e.STREAM_PING = 21] = "STREAM_PING", e[e.STREAM_SET_PAUSED = 22] = "STREAM_SET_PAUSED", e[e.REQUEST_GUILD_APPLICATION_COMMANDS = 24] = "REQUEST_GUILD_APPLICATION_COMMANDS", e[e.REQUEST_FORUM_UNREADS = 28] = "REQUEST_FORUM_UNREADS", e[e.REMOTE_COMMAND = 29] = "REMOTE_COMMAND", e[e.GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH = 30] = "GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH", e[e.REQUEST_SOUNDBOARD_SOUNDS = 31] = "REQUEST_SOUNDBOARD_SOUNDS", e[e.REQUEST_LAST_MESSAGES = 34] = "REQUEST_LAST_MESSAGES", e[e.SEARCH_RECENT_MEMBERS = 35] = "SEARCH_RECENT_MEMBERS", e[e.REQUEST_CHANNEL_STATUSES = 36] = "REQUEST_CHANNEL_STATUSES", e[e.GUILD_SUBSCRIPTIONS_BULK = 37] = "GUILD_SUBSCRIPTIONS_BULK", e[e.GUILD_CHANNELS_RESYNC = 38] = "GUILD_CHANNELS_RESYNC", e[e.REQUEST_CHANNEL_MEMBER_COUNT = 39] = "REQUEST_CHANNEL_MEMBER_COUNT", e[e.QOS_HEARTBEAT = 40] = "QOS_HEARTBEAT", e[e.UPDATE_TIME_SPENT_SESSION_ID = 41] = "UPDATE_TIME_SPENT_SESSION_ID", e[e.REQUEST_CHANNEL_INFO = 43] = "REQUEST_CHANNEL_INFO", e
-}({});
+  Chunk709054 = require("./709054.js"),
+  Chunk738043 = require("./738043.js");
+let s = 15360;
 class l extends Chunk836560.EventEmitter {
   presenceUpdate(e, t, n, r) {
-    this.send(3, {
+    this.send(o.j.PRESENCE_UPDATE, {
       status: e,
       since: t,
       activities: n,
@@ -27,27 +25,27 @@ class l extends Chunk836560.EventEmitter {
       channelId: n = null,
       selfMute: r = false,
       selfDeaf: a = false,
-      selfVideo: o = false,
-      preferredRegion: s = null,
-      preferredRegions: l = null,
-      videoStreamParameters: c = null,
-      flags: u = 0
-    } = e, d = {
+      selfVideo: s = false,
+      preferredRegion: l = null,
+      preferredRegions: c = null,
+      videoStreamParameters: u = null,
+      flags: d = 0
+    } = e, f = {
       guild_id: t,
       channel_id: n,
       self_mute: r,
       self_deaf: a,
-      self_video: o,
-      flags: u
+      self_video: s,
+      flags: d
     };
-    null != n && i.Z.shouldIncludePreferredRegion() && (d.preferred_region = s, d.preferred_regions = l), null != c && (d.tracks = null == c ? true : c.map(e => ({
+    null != n && i.Z.shouldIncludePreferredRegion() && (f.preferred_region = l, f.preferred_regions = c), null != u && (f.tracks = null == u ? true : u.map(e => ({
       type: e.type,
       rid: e.rid,
       quality: e.quality
-    }))), this.send(4, d)
+    }))), this.send(o.j.VOICE_STATE_UPDATE, f)
   }
   voiceServerPing() {
-    this.send(5, null)
+    this.send(o.j.VOICE_SERVER_PING, null)
   }
   requestGuildMembers(e, t) {
     let {
@@ -56,7 +54,7 @@ class l extends Chunk836560.EventEmitter {
       userIds: i,
       presences: a
     } = t;
-    this.send(8, {
+    this.send(o.j.REQUEST_GUILD_MEMBERS, {
       guild_id: e,
       query: n,
       limit: r,
@@ -69,7 +67,7 @@ class l extends Chunk836560.EventEmitter {
       query: n,
       continuationToken: r
     } = t;
-    this.send(35, {
+    this.send(o.j.SEARCH_RECENT_MEMBERS, {
       guild_id: e,
       query: null != n ? n : "",
       continuation_token: null != r ? r : null
@@ -81,21 +79,21 @@ class l extends Chunk836560.EventEmitter {
     a.default.keys(e).forEach(r => {
       let i = e[r],
         a = JSON.stringify([r, i]).length;
-      n + a > o && (this.send(37, {
+      n + a > s && (this.send(o.j.GUILD_SUBSCRIPTIONS_BULK, {
         subscriptions: t
       }), t = {}, n = 0), t[r] = i, n += a
-    }), n > 0 && this.send(37, {
+    }), n > 0 && this.send(o.j.GUILD_SUBSCRIPTIONS_BULK, {
       subscriptions: t
     })
   }
   callConnect(e) {
-    this.send(13, {
+    this.send(o.j.CALL_CONNECT, {
       channel_id: e
     })
   }
   streamCreate(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
-    this.send(18, {
+    this.send(o.j.STREAM_CREATE, {
       type: e,
       guild_id: t,
       channel_id: n,
@@ -103,28 +101,28 @@ class l extends Chunk836560.EventEmitter {
     })
   }
   streamWatch(e) {
-    this.send(20, {
+    this.send(o.j.STREAM_WATCH, {
       stream_key: e
     })
   }
   streamPing(e) {
-    this.send(21, {
+    this.send(o.j.STREAM_PING, {
       stream_key: e
     })
   }
   streamDelete(e) {
-    this.send(19, {
+    this.send(o.j.STREAM_DELETE, {
       stream_key: e
     })
   }
   streamSetPaused(e, t) {
-    this.send(22, {
+    this.send(o.j.STREAM_SET_PAUSED, {
       stream_key: e,
       paused: t
     })
   }
   requestForumUnreads(e, t, n) {
-    this.send(28, {
+    this.send(o.j.REQUEST_FORUM_UNREADS, {
       guild_id: e,
       channel_id: t,
       threads: n.map(e => ({
@@ -134,18 +132,18 @@ class l extends Chunk836560.EventEmitter {
     })
   }
   requestSoundboardSounds(e) {
-    this.send(31, {
+    this.send(o.j.REQUEST_SOUNDBOARD_SOUNDS, {
       guild_ids: e
     })
   }
   requestLastMessages(e, t) {
-    this.send(34, {
+    this.send(o.j.REQUEST_LAST_MESSAGES, {
       guild_id: e,
       channel_ids: t
     })
   }
   getDeletedEntityIdsNotMatchingHash(e, t, n, r, i) {
-    this.send(30, {
+    this.send(o.j.GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH, {
       guild_id: e,
       channel_ids_hash: t,
       role_ids_hash: n,
@@ -154,30 +152,30 @@ class l extends Chunk836560.EventEmitter {
     })
   }
   triggerGuildChannelResync(e, t) {
-    this.send(38, {
+    this.send(o.j.GUILD_CHANNELS_RESYNC, {
       guild_id: e,
       obfuscated_channel_ids: t
     })
   }
   requestChannelStatuses(e) {
-    this.send(36, {
+    this.send(o.j.REQUEST_CHANNEL_STATUSES, {
       guild_id: e
     })
   }
   requestChannelInfo(e, t) {
-    this.send(43, {
+    this.send(o.j.REQUEST_CHANNEL_INFO, {
       guild_id: e,
       fields: t
     })
   }
   requestChannelMemberCount(e, t) {
-    this.send(39, {
+    this.send(o.j.REQUEST_CHANNEL_MEMBER_COUNT, {
       guild_id: e,
       channel_id: t
     })
   }
   remoteCommand(e, t) {
-    this.send(29, {
+    this.send(o.j.REMOTE_COMMAND, {
       target_session_id: e,
       payload: t
     })

@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 64247, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,21 +12,21 @@ var Chunk481060 = require("./481060.js"),
   Chunk723170 = require("./723170.js"),
   Chunk124368 = require("./124368.js");
 
-function d(e) {
+function u(e) {
   let {
     channel: t,
     closePopout: n,
-    onSelect: d,
-    navId: u,
+    onSelect: u,
+    navId: d,
     label: p
-  } = e, h = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), g = (0, o.B)(t);
+  } = e, f = (0, l.Z)(t, "Notifications Bell"), h = (0, a.Z)(t), g = (0, s.B)(t);
   return (0, r.jsxs)(i.v2r, {
-    navId: u,
+    navId: d,
     onClose: n,
     "aria-label": p,
-    onSelect: d,
+    onSelect: u,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [t.isForumPost() ? h : null, f]
+      children: [t.isForumPost() ? f : null, h]
     }), (0, r.jsx)(i.kSQ, {
       children: (0, c.zb)().map(e => {
         let {
@@ -37,7 +37,7 @@ function d(e) {
           group: "thread-notifications",
           id: "".concat(n),
           label: l,
-          action: () => s.Z.setNotificationSettings(t, {
+          action: () => o.Z.setNotificationSettings(t, {
             flags: n
           }),
           checked: n === g

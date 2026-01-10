@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
 let g = function(e) {
   let {
     loadId: t
-  } = e, n = s.Z.useField("categoryId"), g = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), m = i.useCallback(() => {
+  } = e, n = s.Z.useField("categoryId"), g = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), h = i.useCallback(() => {
     s.Z.setState({
       categoryId: u.Hk
     }), o.Z.loadCategoryResults({
@@ -26,10 +26,10 @@ let g = function(e) {
       query: s.Z.getField("fetchedQuery"),
       languageCode: s.Z.getField("languageCode")
     })
-  }, [t]), h = n === u.Hk ? d.intl.string(d.t.Ivw1Is) : d.intl.formatToPlainString(d.t["+1WAFb"], {
+  }, [t]), m = n === u.Hk ? d.intl.string(d.t.Ivw1Is) : d.intl.formatToPlainString(d.t["+1WAFb"], {
     categoryName: g
   }), b = n === u.Hk ? d.intl.string(d.t.aXvEjd) : d.intl.format(d.t.XLioqn, {
-    onClick: m
+    onClick: h
   });
   return (0, r.jsxs)("div", {
     className: p.container,
@@ -40,7 +40,7 @@ let g = function(e) {
     }), (0, r.jsx)(a.Heading, {
       variant: "heading-xl/semibold",
       className: p.header,
-      children: h
+      children: m
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-default",

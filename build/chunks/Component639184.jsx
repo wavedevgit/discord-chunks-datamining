@@ -1,4 +1,4 @@
-/** Chunk was on 193 **/
+/** Chunk was on 49131 **/
 /** chunk id: 639184, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,67 +23,67 @@ function x(e) {
   let {
     onDismiss: t
   } = e;
-  return (0, a.jsxs)(l.P3F, {
+  return (0, r.jsxs)(l.P3F, {
     onClick: () => {
       open(c.V8), (0, s.GX)({
         readGuideCta: true
       })
     },
-    className: i()(h.container, f.container, m.mainCard),
-    children: [(0, a.jsxs)("div", {
-      className: f.inline,
-      children: [(0, a.jsxs)("div", {
-        className: f.author,
-        children: [(0, a.jsx)(l.gw7, {
+    className: i()(f.container, h.container, m.mainCard),
+    children: [(0, r.jsxs)("div", {
+      className: h.inline,
+      children: [(0, r.jsxs)("div", {
+        className: h.author,
+        children: [(0, r.jsx)(l.gw7, {
           size: "custom",
           width: 28,
           height: 28,
           color: "currentColor",
-          className: f.discordIcon
-        }), (0, a.jsx)(l.Text, {
+          className: h.discordIcon
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           color: "text-strong",
           children: u.intl.string(u.t.uvGmCx)
-        }), (0, a.jsxs)("div", {
-          className: f.notice,
-          children: [(0, a.jsx)(l.d3s, {
+        }), (0, r.jsxs)("div", {
+          className: h.notice,
+          children: [(0, r.jsx)(l.d3s, {
             size: "md",
             color: "currentColor",
-            className: f.infoIcon
-          }), (0, a.jsx)(l.Text, {
+            className: h.infoIcon
+          }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-default",
             children: u.intl.string(u.t.t2GkVR)
           })]
         })]
-      }), (0, a.jsx)(l.P3F, {
+      }), (0, r.jsx)(l.P3F, {
         onClick: e => {
           e.stopPropagation(), t(d.L.DISMISS), (0, s.GX)({
             readGuideCta: false
           })
         },
-        children: (0, a.jsx)(l.Dio, {
+        children: (0, r.jsx)(l.Dio, {
           size: "xs",
           color: "currentColor",
-          className: f.closeIcon
+          className: h.closeIcon
         })
       })]
-    }), (0, a.jsx)("hr", {
-      className: f.separator
-    }), (0, a.jsxs)("div", {
-      className: f.inline,
-      children: [(0, a.jsxs)("div", {
-        children: [(0, a.jsx)(l.Heading, {
-          className: i()(h.__invalid_channelName, f.title),
+    }), (0, r.jsx)("hr", {
+      className: h.separator
+    }), (0, r.jsxs)("div", {
+      className: h.inline,
+      children: [(0, r.jsxs)("div", {
+        children: [(0, r.jsx)(l.Heading, {
+          className: i()(f.__invalid_channelName, h.title),
           variant: "heading-lg/semibold",
           color: "text-strong",
           children: u.intl.string(u.t.JtSpD0)
-        }), (0, a.jsx)(l.Text, {
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: u.intl.string(u.t.Ajhp03)
         })]
-      }), (0, a.jsx)("img", {
+      }), (0, r.jsx)("img", {
         src: g,
         alt: u.intl.string(u.t.gAlJzV),
         width: o.TJ,

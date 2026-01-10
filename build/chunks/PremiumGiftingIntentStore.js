@@ -284,7 +284,7 @@ class el extends(r = Chunk442837.ZP.PersistedStore) {
     return null == t ? 0 : Z(t.friendsSince)
   }
   canShowProfilePopoutGiftIntents(e) {
-    return null == N.profilePopoutGiftIntentsDismissMap[e] && this.getFriendAnniversaryYears(e) > 0
+    return null == N.profilePopoutGiftIntentsDismissMap[e] && null != D[e]
   }
   isGiftIntentMessageInCooldown(e) {
     return null != N.messageGiftIntentLastShownMap[e]
@@ -306,6 +306,9 @@ class el extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMessageGiftIntentLastShownMap() {
     return N.messageGiftIntentLastShownMap
+  }
+  getProfilePopoutGiftIntentsDismissMap() {
+    return N.profilePopoutGiftIntentsDismissMap
   }
 }
 h(el, "displayName", "PremiumGiftingIntentStore"), h(el, "persistKey", "PremiumGiftingIntentStore"), h(el, "migrations", [e => {

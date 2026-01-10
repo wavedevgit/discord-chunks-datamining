@@ -41,7 +41,7 @@ class P extends Chunk473749.PureComponent {
   createSound() {
     let {
       soundpack: e
-    } = this.props, t = (0, h.uk)("discodo", e);
+    } = this.props, t = (0, m.uk)("discodo", e);
     return t.volume = 1, t
   }
   componentDidMount() {
@@ -202,7 +202,7 @@ class P extends Chunk473749.PureComponent {
       })];
       return E.default.locale.startsWith("en-") && e.push(T.intl.string(T.t.dQ9Wqk)), e[s().random(e.length - 1)]
     }()), j(this, "_eventLoadingText", function() {
-      let e = m.Z.getLoadingTips();
+      let e = h.Z.getLoadingTips();
       if (null != e && e.length > 0) return e[s().random(e.length - 1)]
     }()), j(this, "handleReady", () => {
       this.setState({

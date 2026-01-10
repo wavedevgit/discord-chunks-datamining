@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 621586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -33,91 +33,91 @@ function _(e) {
     isHovered: n,
     closePopout: a,
     onMouseEnter: _,
-    onMouseLeave: P,
-    channel: I
+    onMouseLeave: I,
+    channel: P
   } = e;
-  r.useEffect(() => {
+  i.useEffect(() => {
     n || a()
   }, [a, n]);
-  let Z = (0, s.e7)([c.Z], () => c.Z.getApplication(v.t9)),
-    [T] = (0, s.e7)([d.Z], () => null != I.id ? [d.Z.getParticipants(I.id), d.Z.getParticipantsVersion(I.id)] : [
+  let Z = (0, s.e7)([c.Z], () => c.Z.getApplication(O.t9)),
+    [N] = (0, s.e7)([d.Z], () => null != P.id ? [d.Z.getParticipants(P.id), d.Z.getParticipantsVersion(P.id)] : [
       [], 0
-    ], [I.id], u.Lc),
-    N = (0, s.Wu)([f.Z], () => {
+    ], [P.id], u.Lc),
+    T = (0, s.Wu)([f.Z], () => {
       let e = new Set;
-      for (let n of T)
-        if ((0, O.Io)(n) || (0, O._5)(n))
-          for (let i of f.Z.getActivities(n.user.id)) {
+      for (let n of N)
+        if ((0, x.Io)(n) || (0, x._5)(n))
+          for (let r of f.Z.getActivities(n.user.id)) {
             var t;
-            if (i.application_id === (null == Z ? true : Z.id) || (null == Z || null == (t = Z.linkedGames) ? true : t.some(e => e.id === i.application_id)) === true) {
+            if (r.application_id === (null == Z ? true : Z.id) || (null == Z || null == (t = Z.linkedGames) ? true : t.some(e => e.id === r.application_id)) === true) {
               e.add(n.user.id);
               break
             }
           }
       return Array.from(e).sort()
-    }, [T, Z]),
-    A = r.useMemo(() => {
-      let e = T.map(e => (0, O.Io)(e) || (0, O._5)(e) ? e.user.id : null).filter(m.lm);
-      return (0, l.uniq)([...N, ...e])
-    }, [T, N]),
+    }, [N, Z]),
+    A = i.useMemo(() => {
+      let e = N.map(e => (0, x.Io)(e) || (0, x._5)(e) ? e.user.id : null).filter(g.lm);
+      return (0, l.uniq)([...T, ...e])
+    }, [N, T]),
     {
       state: w,
-      recommendations: M,
-      skuIdToUserIdsReasons: R
-    } = (0, C.Z)({
-      guildId: (0, g.ac)(),
-      applicationId: v.t9,
-      numWishlistItems: C.W,
+      recommendations: R,
+      skuIdToUserIdsReasons: D
+    } = (0, y.Z)({
+      guildId: (0, m.ac)(),
+      applicationId: O.t9,
+      numWishlistItems: y.W,
       userIds: A,
       location: "Social Layer Gifting Mini Shelf",
       includeWishlists: true
     }),
-    D = r.useMemo(() => {
+    M = i.useMemo(() => {
       let e = new Set(A);
-      return M.map(t => {
-        var n, r;
-        let l = null != (r = null == (n = R[t.skuId]) ? true : n.filter(t => t.reason === b.g.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(m.lm)) ? r : [];
-        return (0, i.jsx)(y.Z, {
-          variant: l.length > 0 ? y.B.WISHLIST : y.B.POPULAR,
+      return R.map(t => {
+        var n, i;
+        let l = null != (i = null == (n = D[t.skuId]) ? true : n.filter(t => t.reason === b.g.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(g.lm)) ? i : [];
+        return (0, r.jsx)(v.Z, {
+          variant: l.length > 0 ? v.B.WISHLIST : v.B.POPULAR,
           wishlistItem: t,
           userIds: l,
-          guildId: I.guild_id,
-          channelId: I.id,
-          contextContainerClassName: j.contextContainer
+          guildId: P.guild_id,
+          channelId: P.id,
+          contextContainerClassName: E.contextContainer
         }, t.skuId)
       })
-    }, [I.guild_id, I.id, M, R, A]);
-  return r.useEffect(() => {
-    0 !== M.length && h.default.track(x.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
-      guild_id: I.guild_id,
-      channel_id: I.id,
-      sku_ids: M.map(e => e.skuId)
+    }, [P.guild_id, P.id, R, D, A]);
+  return i.useEffect(() => {
+    0 !== R.length && h.default.track(j.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+      guild_id: P.guild_id,
+      channel_id: P.id,
+      sku_ids: R.map(e => e.skuId)
     })
-  }, [I.id, I.guild_id, M]), (0, i.jsx)(p.Z, {
-    children: (0, i.jsx)(o.VqE, {
+  }, [P.id, P.guild_id, R]), (0, r.jsx)(p.Z, {
+    children: (0, r.jsx)(o.VqE, {
       "aria-labelledby": S,
       modal: false,
-      children: (0, i.jsxs)("div", {
-        className: j.container,
+      children: (0, r.jsxs)("div", {
+        className: E.container,
         onMouseEnter: _,
-        onMouseLeave: P,
-        children: [(0, i.jsx)(o.X6q, {
-          className: j.title,
+        onMouseLeave: I,
+        children: [(0, r.jsx)(o.X6q, {
+          className: E.title,
           variant: "text-lg/bold",
           color: "text-strong",
-          children: E.intl.string(E.t.xLP3bi)
-        }), (0, i.jsx)(o.xvT, {
-          className: j.subtitle,
+          children: C.intl.string(C.t.xLP3bi)
+        }), (0, r.jsx)(o.xvT, {
+          className: E.subtitle,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: E.intl.format(E.t["+SqhBF"], {
-            applicationName: null != (t = null == Z ? true : Z.name) ? t : E.intl.string(E.t["/1hhto"])
+          children: C.intl.format(C.t["+SqhBF"], {
+            applicationName: null != (t = null == Z ? true : Z.name) ? t : C.intl.string(C.t["/1hhto"])
           })
-        }), (0, i.jsx)("div", {
-          className: j.wishlistItemsContainer,
-          children: "loading" === w || 0 === M.length ? (0, i.jsx)(o.$jN, {
-            className: j.loading
-          }) : D
+        }), (0, r.jsx)("div", {
+          className: E.wishlistItemsContainer,
+          children: "loading" === w || 0 === R.length ? (0, r.jsx)(o.$jN, {
+            className: E.loading
+          }) : M
         })]
       })
     })

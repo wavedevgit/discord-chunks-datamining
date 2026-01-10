@@ -31,15 +31,15 @@ class f extends Chunk317770.Z {
       } = e;
       if (f) return void(0, c.c_)(t);
       let g = u.default.getCurrentUser(),
-        m = null != r ? a.I5 : i.I5,
-        h = d.ZP.canUseAnimatedAvatar(g);
-      if (h || "image/gif" !== n.type) return void m(t);
+        h = null != r ? a.I5 : i.I5,
+        m = d.ZP.canUseAnimatedAvatar(g);
+      if (m || "image/gif" !== n.type) return void h(t);
       if (null == g) return;
       let b = (0, s.SD)({
         userId: g.id,
         image: t
       });
-      if (!h) return void(0, o.s)({
+      if (!m) return void(0, o.s)({
         uploadType: p.pC.AVATAR,
         imageSrc: b,
         analyticsSource: l

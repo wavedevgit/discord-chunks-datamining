@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk796075 = require("./796075.js"),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk481060 = require("./481060.js");
 let c = null != (r = window.ResizeObserver) ? r : Chunk796075.d;
 

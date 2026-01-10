@@ -2,7 +2,7 @@
 /** chunk id: 874993, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,18 +24,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk993830 = require("./993830.js");
 
-function C(e) {
+function y(e) {
   var t, n;
   let {
-    guildId: C,
-    setPreventNavigation: y = () => {}
+    guildId: y,
+    setPreventNavigation: C = () => {}
   } = e, {
     editingRule: N,
     setEditingRule: E
   } = (0, m.V)(), {
     guild: I,
     subsection: S
-  } = (0, l.cj)([s.Z], () => s.Z.getProps()), _ = null != (n = null != (t = null == I ? true : I.id) ? t : C) ? n : j.lds, T = null != N, [P] = (0, u.RD)(_), {
+  } = (0, l.cj)([s.Z], () => s.Z.getProps()), _ = null != (n = null != (t = null == I ? true : I.id) ? t : y) ? n : j.lds, T = null != N, [P] = (0, u.RD)(_), {
     rulesByTriggerType: w
   } = (0, u.pH)(_), Z = {
     [g.vh.MEMBERS]: v.intl.string(v.t.sx4E5v),
@@ -70,8 +70,8 @@ function C(e) {
       return L(null != (e = null == N ? true : N.id) ? e : null, null != (t = null == N ? true : N.triggerType) ? t : null)
     }, [L, N]);
   i.useEffect(() => {
-    y(T, (0, h.af)(k))
-  }, [y, T, k]);
+    C(T, (0, h.af)(k))
+  }, [C, T, k]);
   let G = (0, g.Z6)(_);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.Heading, {

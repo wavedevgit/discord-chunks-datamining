@@ -1,1 +1,0 @@
-{"id":"203311","type":"experiment","data":{"kind":"user","id":"2025-04_culture_creation_holdout","label":"Culture Creation Holdout","commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","defaultConfig":{"inHoldout":false},"treatments":[{"id":1,"label":"In Holdout","config":{"inHoldout":true}}]},"fromModule":{"id":"web.js"}}

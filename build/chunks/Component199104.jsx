@@ -25,7 +25,7 @@ var Chunk120356 = require("./120356.js"),
 function O() {
   let {
     analyticsLocations: e
-  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), t = (0, a.e7)([m.Z], () => m.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [o.z.NOW_PLAYING_CONSENT_CARD], n = (0, p.Dt)();
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), t = (0, a.e7)([h.Z], () => h.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [o.z.NOW_PLAYING_CONSENT_CARD], n = (0, p.Dt)();
   return (0, r.jsx)(d.Gt, {
     value: e,
     children: (0, r.jsx)(c.Z, {
@@ -53,7 +53,7 @@ function O() {
                   markAsDismissed: n
                 })
               }
-            }), (0, r.jsx)(h.Z, {})]
+            }), (0, r.jsx)(m.Z, {})]
           })
         })
       })

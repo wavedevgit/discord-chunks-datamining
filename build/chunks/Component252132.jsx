@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 252132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,12 +9,12 @@ var Chunk27457 = require("./27457.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk746551 = require("./746551.js");
 
-function s(e) {
+function o(e) {
   var {
     aspectRatio: t,
     className: n,
-    children: s,
-    width: o
+    children: o,
+    width: s
   } = e, c = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -30,10 +30,10 @@ function s(e) {
     }
     return i
   }(e, ["aspectRatio", "className", "children", "width"]);
-  let d = l.Z.getVideoComponent();
+  let u = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
-      width: o
+      width: s
     },
     className: a.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
@@ -60,9 +60,9 @@ function s(e) {
         return e
       }({
         className: n,
-        videoComponent: d,
-        width: o
-      }, c)), s]
+        videoComponent: u,
+        width: s
+      }, c)), o]
     })
   })
 }

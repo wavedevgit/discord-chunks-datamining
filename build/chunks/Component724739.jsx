@@ -1,4 +1,4 @@
-/** Chunk was on 193 **/
+/** Chunk was on 49131 **/
 /** chunk id: 724739, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,7 +22,7 @@ let s = e => {
     messageId: null == s ? true : s.id,
     stopPropagation: true
   })(null != d ? d : true)(u, c.id);
-  return (0, a.jsx)(r.Text, {
+  return (0, r.jsx)(a.Text, {
     variant: "text-md/semibold",
     children: m
   })

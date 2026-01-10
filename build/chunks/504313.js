@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk722733 = require("./722733.js");
 require("./633289.js");
 var Chunk751823 = require("./751823.js");
-let a = (0, Chunk722733.Z)({
+let a = (0, Chunk722733.ZP)({
   kind: "user",
   name: "2025-12-proportional-vad-indicator",
   defaultConfig: {

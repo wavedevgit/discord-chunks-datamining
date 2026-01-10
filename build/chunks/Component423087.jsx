@@ -2,7 +2,7 @@
 /** chunk id: 423087, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -129,17 +129,17 @@ function O(e) {
     }))
   })
 }
-let C = function(e) {
+let y = function(e) {
   let {
     className: t,
     guildId: n,
     badge: l,
     primaryColor: a,
     secondaryColor: s
-  } = e, [d, u] = i.useState(false), g = i.useRef(null), C = i.useId(), y = i.useId(), N = i.useMemo(() => m.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), E = (0, o.Jb)({
+  } = e, [d, u] = i.useState(false), g = i.useRef(null), y = i.useId(), C = i.useId(), N = i.useMemo(() => m.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), E = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: false,
-    labelledBy: C
+    labelledBy: y
   });
 
   function I(e) {
@@ -150,10 +150,10 @@ let C = function(e) {
     className: t,
     children: [(0, r.jsx)(c.gNt, {
       label: p.intl.string(b.default.zSbMdX),
-      id: C,
+      id: y,
       children: e => (0, r.jsxs)("div", j(x({}, E), {
         id: e.controlId,
-        "aria-describedby": y,
+        "aria-describedby": C,
         className: h.pickerGrid,
         children: [m.Ek.map(e => (0, r.jsx)(v, {
           palette: e,
@@ -172,7 +172,7 @@ let C = function(e) {
         })]
       }))
     }), (0, r.jsx)(c.nn4, {
-      id: y,
+      id: C,
       children: p.intl.string(p.t.ovbW0Z)
     })]
   })

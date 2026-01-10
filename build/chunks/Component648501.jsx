@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 648501, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -35,40 +35,40 @@ function P(e) {
   let {
     channel: n,
     isChannelSelected: P,
-    isChannelCollapsed: N,
-    voiceStates: Z,
-    enableConnectedUserLimit: w,
-    enableActivities: T,
-    isSubscriptionGated: A,
+    isChannelCollapsed: Z,
+    voiceStates: N,
+    enableConnectedUserLimit: T,
+    enableActivities: A,
+    isSubscriptionGated: w,
     needSubscriptionToAccess: R,
     isNewChannel: D,
     muted: M,
-    resolvedUnreadSetting: L
-  } = e, k = (0, i.e7)([b.ZP], () => b.ZP.getMentionCount(n.id)), G = (0, i.e7)([b.ZP], () => b.ZP.getIsMentionLowImportance(n.id)), U = (0, o.ZP)(n), B = (0, i.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, n)), F = (0, s.P)(n), V = (0, i.e7)([m.Z], () => m.Z.hasVideo(n.id)), H = (0, f.PK)(n.id) && n.isGuildStageVoice(), W = (0, j.ZP)({
+    resolvedUnreadSetting: k
+  } = e, L = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), G = (0, o.ZP)(n), B = (0, i.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, n)), F = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), V = (0, p.PK)(n.id) && n.isGuildStageVoice(), z = (0, j.ZP)({
     channel: n,
     locked: B,
-    video: (V || H) && null == F,
+    video: (H || V) && null == F,
     selected: P
-  }), z = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), K = (0, u.n2)(n.guild_id, n.id), Y = (0, i.e7)([p.Z], () => {
+  }), W = (0, i.e7)([f.Z], () => f.Z.getNewThreadCount(n.guild_id, n.id)), K = (0, u.n2)(n.guild_id, n.id), Y = (0, i.e7)([h.Z], () => {
     var e, t;
-    return null != (t = null == (e = p.Z.getGuild(n.guild_id)) ? true : e.features.has(S.GuildFeatures.COMMUNITY)) && t
+    return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? true : e.features.has(S.GuildFeatures.COMMUNITY)) && t
   });
-  if ((0, v.Z)(k)) return (0, r.jsx)(E.Z, {
-    mentionsCount: k,
-    isMentionLowImportance: G
+  if ((0, O.Z)(L)) return (0, r.jsx)(E.Z, {
+    mentionsCount: L,
+    isMentionLowImportance: U
   });
-  if ((0, d.O)(A)) return (0, r.jsx)(d.Z, {
+  if ((0, d.O)(w)) return (0, r.jsx)(d.Z, {
     locked: R
   });
   if (D) return (0, r.jsx)(a.IGR, {
     text: I.intl.string(I.t.y2b7CA),
     color: l.Z.colors.BADGE_BACKGROUND_BRAND.css
   });
-  if (!M && L === _.i.ALL_MESSAGES && n.isForumLikeChannel() && null != z && z > 0) return (0, r.jsx)(a.Text, {
+  if (!M && k === _.i.ALL_MESSAGES && n.isForumLikeChannel() && null != W && W > 0) return (0, r.jsx)(a.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
     children: I.intl.format(I.t.GkAbqY, {
-      count: (0, a.NGo)(z)
+      count: (0, a.NGo)(W)
     })
   });
   if (!M && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(a.Text, {
@@ -76,12 +76,12 @@ function P(e) {
     color: "text-muted",
     children: (0, a.NGo)(K)
   });
-  let q = null != (t = null == Z ? true : Z.length) ? t : 0;
-  return null != w && w && W ? (0, r.jsx)(x.Z, {
+  let q = null != (t = null == N ? true : N.length) ? t : 0;
+  return null != T && T && z ? (0, r.jsx)(C.Z, {
     userCount: q,
-    video: V || H,
+    video: H || V,
     channel: n
-  }) : N && (0, y.a)(Z) && Y ? (0, r.jsx)(a.IGR, {
+  }) : Z && (0, y.a)(N) && Y ? (0, r.jsx)(a.IGR, {
     text: I.intl.string(I.t.dI3q4h),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != F ? (0, r.jsx)(c.x, {
@@ -89,8 +89,8 @@ function P(e) {
     entry: {
       start: F
     }
-  }) : null != T && T && (0, O.u)(U) ? (0, r.jsx)(C.Z, {
-    embeddedApps: U,
+  }) : null != A && A && (0, v.u)(G) ? (0, r.jsx)(x.Z, {
+    embeddedApps: G,
     muted: M
   }) : null
 }

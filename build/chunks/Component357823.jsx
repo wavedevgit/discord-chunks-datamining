@@ -1,7 +1,7 @@
 /** Chunk was on 38035 **/
 /** chunk id: 357823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,44 +19,44 @@ var Chunk481060 = require("./481060.js"),
   Chunk933409 = require("./933409.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let O = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     channel: n,
-    guildId: a,
-    onSelect: d,
+    guildId: o,
+    onSelect: a,
     onInteraction: u,
     context: g
-  } = e, v = n.id, C = t.isNonUserBot(), M = t.id === E.default.getId(), b = (0, _.Z)(t), O = (0, s.Z)(t, a, v), I = (0, A.Y)({
-    isOwnSettings: M,
+  } = e, O = n.id, A = t.isNonUserBot(), j = t.id === _.default.getId(), Z = (0, s.Z)(t), S = (0, f.Z)(t, o, O), h = (0, E.Y)({
+    isOwnSettings: j,
     userId: t.id,
-    channelId: v,
-    guildId: a,
+    channelId: O,
+    guildId: o,
     context: g
-  }), [Z, N] = (0, A.E)(t, v, a), T = (0, f.Z)(t, a, v), h = (0, o.Z)({
+  }), [p, x] = (0, E.E)(t, O, o), y = (0, b.Z)(t, o, O), C = (0, c.Z)({
     id: t.id,
-    label: S.intl.string(S.t["/AXYnE"])
-  }), R = (0, c.Z)(t.id, n);
-  return (0, i.jsx)(l.v2r, {
+    label: v.intl.string(v.t["/AXYnE"])
+  }), I = (0, d.Z)(t.id, n);
+  return (0, i.jsx)(r.v2r, {
     navId: "user-context",
-    onClose: r.Zy,
-    "aria-label": S.intl.string(S.t.liqwPJ),
-    onSelect: d,
+    onClose: l.Zy,
+    "aria-label": v.intl.string(v.t.liqwPJ),
+    onSelect: a,
     onInteraction: u,
     variant: "fixed",
-    children: !C && (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(l.kSQ, {
-        children: [b, O]
-      }), R, I, !M && (0, i.jsx)(l.kSQ, {
-        children: (0, i.jsxs)(l.sNh, {
+    children: !A && (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsxs)(r.kSQ, {
+        children: [Z, S]
+      }), I, h, !j && (0, i.jsx)(r.kSQ, {
+        children: (0, i.jsxs)(r.sNh, {
           id: "more-options",
-          label: S.intl.string(S.t.PdRCRg),
-          children: [Z, (0, i.jsx)(l.kSQ, {
-            children: T
-          }), N]
+          label: v.intl.string(v.t.PdRCRg),
+          children: [p, (0, i.jsx)(r.kSQ, {
+            children: y
+          }), x]
         })
-      }), M && (0, i.jsx)(l.kSQ, {
-        children: h
+      }), j && (0, i.jsx)(r.kSQ, {
+        children: C
       })]
     })
   })

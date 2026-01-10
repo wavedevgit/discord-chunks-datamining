@@ -48,10 +48,10 @@ function E(e) {
 let I = function(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = null;
-    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = y.intl.string(y.t.xO2msf)) : i = y.intl.formatToPlainString(y.t.nskeMw, {
+    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = C.intl.string(C.t.xO2msf)) : i = C.intl.formatToPlainString(C.t.nskeMw, {
       percentage: (0, a.o)(Math.abs(t), n)
     }), {
-      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : y.intl.string(y.t.jHpxwo),
+      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : C.intl.string(C.t.jHpxwo),
       subtext: i,
       isTrendingUp: t > 0,
       isTrendingDown: t < 0
@@ -63,11 +63,11 @@ let I = function(e, t, n) {
       className: N.notEnoughMembersError,
       children: (0, r.jsx)(c.M14, {
         type: "info",
-        children: y.intl.string(y.t["FsgE/B"])
+        children: C.intl.string(C.t["FsgE/B"])
       })
     }) : null == e ? null : (0, r.jsx)(c.M14, {
       type: "critical",
-      children: y.intl.string(y.t.Iju63e)
+      children: C.intl.string(C.t.Iju63e)
     })
   },
   _ = () => {
@@ -77,7 +77,7 @@ let I = function(e, t, n) {
       className: N.developerPortalCta,
       children: (0, r.jsx)(c.Button, {
         variant: "primary",
-        text: y.intl.string(y.t.Uskgxx),
+        text: C.intl.string(C.t.Uskgxx),
         onClick: () => {
           t(true), (function(e) {
             p.default.track(O.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
@@ -123,33 +123,33 @@ let I = function(e, t, n) {
     i.useEffect(() => {
       null == e || T || ((0, x.Vk)(e), (0, x.SR)(e), (0, x.xl)(e))
     }, [e, T]), i.useEffect(() => {
-      (0, u.Kw)(C.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
+      (0, u.Kw)(y.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
     let P = null != a ? (0, r.jsx)("div", {
       className: N.__invalid_guildAnalyticsOverviewWrapper,
       children: (0, r.jsxs)("div", {
         className: N.overviewData,
         children: [(0, r.jsx)(v.Z, E({
-          title: y.intl.string(y.t.i0NorT),
-          tooltipText: y.intl.string(y.t.KiRbLJ)
+          title: C.intl.string(C.t.i0NorT),
+          tooltipText: C.intl.string(C.t.KiRbLJ)
         }, I(a.visitors, a.visitorsChange, l))), (0, r.jsx)(v.Z, E({
-          title: y.intl.string(y.t.DDAHdQ),
-          tooltipText: y.intl.string(y.t.HxWUkU)
+          title: C.intl.string(C.t.DDAHdQ),
+          tooltipText: C.intl.string(C.t.HxWUkU)
         }, I(a.communicators, a.communicatorsChange, l))), (0, r.jsx)(v.Z, E({
-          title: y.intl.string(y.t.hYeOqC)
+          title: C.intl.string(C.t.hYeOqC)
         }, I(a.newMembers, a.newMembersChange, l))), (0, r.jsx)(v.Z, E({
-          title: y.intl.string(y.t.jj7OPw),
-          tooltipText: y.intl.string(y.t.MQCslz)
+          title: C.intl.string(C.t.jj7OPw),
+          tooltipText: C.intl.string(C.t.MQCslz)
         }, I(a.pctRetained, a.pctRetainedChange, l, true)))]
       })
     }) : null;
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
-        children: y.intl.string(y.t["0wWfUG"])
+        children: C.intl.string(C.t["0wWfUG"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: y.intl.format(y.t.NIZ60a, {})
+        children: C.intl.format(C.t.NIZ60a, {})
       }), S(o, T), (0, r.jsxs)("div", {
         className: N.developerPortalCtaWrapper,
         children: [(0, r.jsx)("div", {
@@ -157,7 +157,7 @@ let I = function(e, t, n) {
         }), (0, r.jsx)(c.Text, {
           className: N.developerPortalCtaText,
           variant: "text-sm/normal",
-          children: y.intl.string(y.t.A5vswv)
+          children: C.intl.string(C.t.A5vswv)
         }), (0, r.jsx)(_, {})]
       }), p ? (0, r.jsx)("div", {
         className: N.streamerMode,

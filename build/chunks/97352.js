@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 97352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,19 +14,19 @@ var Chunk473749 = require("./473749.js"),
 
 function d() {
   let e = s.Yk.useSetting(),
-    t = (0, r.e7)([a.Z], () => a.Z.useReducedMotion);
-  i.useEffect(() => {
+    t = (0, i.e7)([a.Z], () => a.Z.useReducedMotion);
+  r.useEffect(() => {
     function n(n) {
       let {
-        messageId: i,
-        channelId: r,
+        messageId: r,
+        channelId: i,
         emoji: l,
         optimistic: a,
         reactionType: s
       } = n;
       a || s !== u.O.BURST || !e || t || (0, o.T6)({
-        channelId: r,
-        messageId: i,
+        channelId: i,
+        messageId: r,
         emoji: l,
         key: c.I.EXTERNAL
       })

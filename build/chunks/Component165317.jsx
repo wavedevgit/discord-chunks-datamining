@@ -1,7 +1,7 @@
 /** Chunk was on 75909 **/
 /** chunk id: 165317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,85 +10,78 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk49436 = require("./49436.js"),
-  Chunk937797 = require("./937797.js"),
   Chunk968843 = require("./968843.js"),
   Chunk115179 = require("./115179.js"),
   Chunk836831 = require("./836831.jsx"),
   Chunk644646 = require("./644646.jsx"),
   Chunk969227 = require("./969227.js"),
   Chunk215113 = require("./215113.jsx"),
-  Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969937 = require("./969937.js");
-let C = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
+let h = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
 
-function b(e) {
-  var t, n, b, S;
+function C(e) {
+  var t, n, C, S;
   let {
-    tooltipPosition: _
+    tooltipPosition: b
   } = e, {
-    quest: y,
-    sourceQuestContent: x,
-    onClose: j
-  } = o.useContext(E.VideoQuestModalContext), {
-    enabled: D
-  } = u.EO.useConfig({
-    location: g.dr.VIDEO_MODAL
-  }), [P, T] = o.useState(false), R = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), N = o.useRef(null == (t = y.userStatus) ? true : t.completedAt), [I, A] = o.useState(false), L = (0, m.w8)(y.config), {
-    completedRatio: w,
-    completedRatioDisplay: k
-  } = (0, d.I)(y), M = (null == (n = y.userStatus) ? true : n.completedAt) != null, V = (null == (b = y.userStatus) ? true : b.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && D ? O.t.NRp4K4 : O.t["12IWP2"], {
-    rewardName: L
+    quest: O,
+    sourceQuestContent: _,
+    onClose: x
+  } = o.useContext(v.VideoQuestModalContext), [y, j] = o.useState(false), P = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), D = o.useRef(null == (t = O.userStatus) ? true : t.completedAt), [T, R] = o.useState(false), N = (0, d.w8)(O.config), {
+    completedRatio: I,
+    completedRatioDisplay: A
+  } = (0, u.I)(O), w = (null == (n = O.userStatus) ? true : n.completedAt) != null, k = (null == (C = O.userStatus) ? true : C.claimedAt) != null, L = E.intl.formatToPlainString(w && !k ? E.t.NRp4K4 : E.t["12IWP2"], {
+    rewardName: N
   });
   o.useEffect(() => {
     var e, t;
-    null == N.current && (null == (e = y.userStatus) ? true : e.completedAt) != null && D && A(true), N.current = null == (t = y.userStatus) ? true : t.completedAt
-  }, [null == (S = y.userStatus) ? true : S.completedAt, D]);
-  let F = (0, v.D)({
-      quest: y,
-      questContent: c.jn.QUEST_HOME_DESKTOP,
-      sourceQuestContent: x,
-      onClick: j,
-      shouldShowShopIfAlreadyClaimed: false
-    }),
-    B = M && D;
+    null == D.current && (null == (e = O.userStatus) ? true : e.completedAt) != null && R(true), D.current = null == (t = O.userStatus) ? true : t.completedAt
+  }, [null == (S = O.userStatus) ? true : S.completedAt]);
+  let M = (0, p.D)({
+    quest: O,
+    questContent: c.jn.QUEST_HOME_DESKTOP,
+    sourceQuestContent: _,
+    onCloseModal: x,
+    shouldShowShopIfAlreadyClaimed: false
+  });
   return (0, r.jsxs)("div", {
-    className: h.progressWrapper,
-    children: [M && (0, r.jsx)(a.Fmz, {
-      importData: C,
-      className: h.confetti,
+    className: g.progressWrapper,
+    children: [w && (0, r.jsx)(a.Fmz, {
+      importData: h,
+      className: g.confetti,
       loop: false,
       autoplay: false,
-      shouldAnimate: I && !R
+      shouldAnimate: T && !P
     }), (0, r.jsx)(i.u, {
-      position: _,
-      text: Z,
+      position: b,
+      text: L,
       onTooltipShow: () => {
-        T(true)
+        j(true)
       },
       onTooltipHide: () => {
-        T(false)
+        j(false)
       },
       children: (0, r.jsx)(a.P3F, {
-        className: h.progressCont,
-        style: B ? {
+        className: g.progressCont,
+        style: w ? {
           cursor: "pointer"
         } : true,
         onClick: e => {
-          B && F(e)
+          w && M(e)
         },
-        children: (0, r.jsx)(f.Z, {
-          quest: y,
+        children: (0, r.jsx)(m.Z, {
+          quest: O,
           size: 48,
-          percentComplete: w,
-          percentCompleteText: P ? k : true,
+          percentComplete: I,
+          percentCompleteText: y ? A : true,
           percentCompleteTextVariant: "text-sm/medium",
-          children: (0, r.jsx)(p.Z, {
-            className: h.questProgressRewardTile,
-            quest: y,
+          children: (0, r.jsx)(f.Z, {
+            className: g.questProgressRewardTile,
+            quest: O,
             questContent: c.jn.VIDEO_MODAL,
             autoplay: false,
-            sourceQuestContent: x
+            sourceQuestContent: _
           })
         })
       })

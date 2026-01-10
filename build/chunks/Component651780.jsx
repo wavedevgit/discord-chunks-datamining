@@ -54,9 +54,9 @@ function T(e) {
   let {
     appliedGuildBoosts: t,
     guildId: n
-  } = e, i = (0, C.gZ)(t, n), l = (0, C.nW)((0, C.Jh)(n));
+  } = e, i = (0, y.gZ)(t, n), l = (0, y.nW)((0, y.Jh)(n));
   if (null == i || null == l) return null;
-  let s = (0, C._k)(t, n);
+  let s = (0, y._k)(t, n);
   return (0, r.jsxs)(a.Wn, {
     messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
@@ -110,7 +110,7 @@ function w() {
         className: S.titleBlurb,
         variant: "text-sm/normal",
         children: I.intl.format(I.t.hLOkp9, {
-          helpdeskArticle: y.Z.getArticleURL(E.BhN.GUILD_SUBSCRIPTIONS)
+          helpdeskArticle: C.Z.getArticleURL(E.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
     }), null != e && (0, r.jsx)(h.Z, {
@@ -119,7 +119,7 @@ function w() {
         null != e && ((0, c.xf)(), (0, p.Z)(e.id, g.Z.GUILD_POWERUPS_GUILD_SETTINGS_PREMIUM))
       }
     }), (0, r.jsx)(x.Z, {
-      tiers: (0, C.cP)(null != e && e.features.has(E.GuildFeatures.COMMUNITY) && e.maxStageVideoChannelUsers >= E.B9o),
+      tiers: (0, y.cP)(null != e && e.features.has(E.GuildFeatures.COMMUNITY) && e.maxStageVideoChannelUsers >= E.B9o),
       renderTier: P
     }), (0, r.jsx)("div", {
       className: S.divider

@@ -1,14 +1,14 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 813900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FO: () => o,
   Fq: () => a,
   Ks: () => r,
-  q2: () => l,
-  qh: () => i
+  q2: () => i,
+  qh: () => l
 });
 let r = 80,
-  i = 48,
-  l = 3,
+  l = 48,
+  i = 3,
   a = 500,
   o = 5e3

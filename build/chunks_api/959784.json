@@ -1,1 +1,0 @@
-{"id":"959784","type":"experiment","data":{"kind":"user","id":"2024-07_ctp_payment_flow_started_uneven_buckets_","label":"CTP payment flow started - A/A test - Uneven buckets","defaultConfig":{"doSomething":false},"commonTriggerPoint":"Chunk987338.$P.PAYMENT_FLOW_STARTED","treatments":[{"id":1,"label":"Treatment","config":{"doSomething":true}}]},"fromModule":{"id":"web.js"}}

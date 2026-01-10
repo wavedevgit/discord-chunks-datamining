@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 298905, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -10,9 +10,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk866071 = require("./866071.js");
 
 function s(e) {
-  let t = (0, r.e7)([l.ZP], () => l.ZP.getGuilds()),
-    n = i.useRef([]);
-  return i.useEffect(() => {
+  let t = (0, i.e7)([l.ZP], () => l.ZP.getGuilds()),
+    n = r.useRef([]);
+  return r.useEffect(() => {
     a.ZP.forEach(e => n.current.push(e))
-  }, []), i.useMemo(() => [...Object.values(t).map(t => t.emojis.filter(t => (0, o.K)(t, e))).flat(), ...n.current], [t, e])
+  }, []), r.useMemo(() => [...Object.values(t).map(t => t.emojis.filter(t => (0, o.K)(t, e))).flat(), ...n.current], [t, e])
 }

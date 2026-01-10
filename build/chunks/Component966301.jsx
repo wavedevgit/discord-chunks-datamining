@@ -48,7 +48,7 @@ function E(e) {
           className: N.coverageTitle,
           variant: "text-xs/medium",
           color: "text-muted",
-          children: y.intl.format(y.t.nMVKCX, {
+          children: C.intl.format(C.t.nMVKCX, {
             numChannelsMissing: m - f
           })
         })]
@@ -69,7 +69,7 @@ function E(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: y.intl.string(y.t["0FM4i+"])
+        children: C.intl.string(C.t["0FM4i+"])
       }), (0, r.jsx)("div", {
         className: N.channels,
         children: u.map(e => {
@@ -97,14 +97,14 @@ function E(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: y.intl.format(y.t.sX8890, {
+            children: C.intl.format(C.t.sX8890, {
               numChannels: p
             })
           })]
         }) : (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: y.intl.string(y.t.o4s29v)
+          children: C.intl.string(C.t.o4s29v)
         })
       })]
     }) : null]
@@ -127,7 +127,7 @@ function S(e) {
     saveOnClose: n
   } = e, a = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([h.Z], () => h.Z.editedOnboardingPrompts), d = (0, l.e7)([h.Z], () => h.Z.advancedMode), u = i.useRef(false);
   i.useEffect(() => {
-    a || u.current || (u.current = true, d || 0 !== o.length || (0, p.tS)(t, [(0, C.ae)()], false))
+    a || u.current || (u.current = true, d || 0 !== o.length || (0, p.tS)(t, [(0, y.ae)()], false))
   });
   let g = i.useRef(t);
   if (i.useEffect(() => {
@@ -149,11 +149,11 @@ function S(e) {
     children: [(0, r.jsx)(s.Heading, {
       className: N.header,
       variant: "heading-lg/extrabold",
-      children: d ? y.intl.string(y.t.AGjtFv) : y.intl.string(y.t.dqCzoT)
+      children: d ? C.intl.string(C.t.AGjtFv) : C.intl.string(C.t.dqCzoT)
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      children: y.intl.string(y.t["q/6MLL"])
+      children: C.intl.string(C.t["q/6MLL"])
     }), (0, r.jsxs)("div", {
       className: N.links,
       children: [(0, r.jsx)(s.eee, {
@@ -162,7 +162,7 @@ function S(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: y.intl.string(y.t.Ok55Kh)
+          children: C.intl.string(C.t.Ok55Kh)
         })
       }), (0, r.jsx)("div", {
         className: N.dot
@@ -171,7 +171,7 @@ function S(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: y.intl.string(y.t["6gsjdM"])
+          children: C.intl.string(C.t["6gsjdM"])
         })
       }), (0, r.jsx)("div", {
         className: N.dot
@@ -206,6 +206,6 @@ function _() {
       (0, p.NB)(), i && (0, m.Pk)()
     },
     submitting: t || i && n,
-    onSaveText: y.intl.string(y.t["R3BPH+"])
+    onSaveText: C.intl.string(C.t["R3BPH+"])
   })
 }

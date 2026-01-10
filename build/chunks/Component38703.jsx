@@ -89,8 +89,8 @@ function h() {
     {
       handleDragStart: v,
       handleDragReset: O,
-      handleDragComplete: C,
-      draggingId: y
+      handleDragComplete: y,
+      draggingId: C
     } = (0, s.Z)(x, j),
     N = e.length < f.yx;
   return (0, r.jsxs)("div", {
@@ -120,8 +120,8 @@ function h() {
         index: t,
         onDragStart: v,
         onDragReset: O,
-        onDragComplete: C,
-        draggingId: y
+        onDragComplete: y,
+        draggingId: C
       }, e.id))
     }), (0, r.jsxs)("button", {
       className: b.addConnectionButton,

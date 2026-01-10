@@ -45,8 +45,8 @@ function g(e) {
     showOrbRentalNewBadge: b
   } = e, {
     itemTypeFilters: p
-  } = (0, o.S)(), m = l.useMemo(() => {
-    if (n === i.AW.CATALOG && p.size > 0) {
+  } = (0, i.S)(), m = l.useMemo(() => {
+    if (n === o.AW.CATALOG && p.size > 0) {
       let e = f[Array.from(p)[0]];
       if (null != e) return e
     }
@@ -63,9 +63,9 @@ function g(e) {
         let {
           tab: t,
           label: l,
-          hasSubmenu: o
+          hasSubmenu: i
         } = e;
-        if (o && t === i.AW.CATALOG) {
+        if (i && t === o.AW.CATALOG) {
           let e = t === n;
           return (0, r.jsx)(s.sNh, {
             id: t,
@@ -88,7 +88,7 @@ function g(e) {
             })
           }, t)
         }
-        let f = t === i.AW.ORBS && b,
+        let f = t === o.AW.ORBS && b,
           p = (0, r.jsxs)("span", {
             style: {
               display: "flex",

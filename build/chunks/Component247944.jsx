@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 247944, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => a.Z,
@@ -11,8 +11,8 @@ var Chunk970683 = require("./970683.js"),
   Chunk904847 = require("./904847.js"),
   Chunk610674 = require("./610674.js"),
   Chunk388032 = require("./388032.jsx");
-let c = () => (0, i.jsx)(l.i, {
-  bannerIcon: (0, i.jsx)(r.sm, {
+let c = () => (0, r.jsx)(l.i, {
+  bannerIcon: (0, r.jsx)(i.sm, {
     alt: "",
     width: 80,
     height: 40

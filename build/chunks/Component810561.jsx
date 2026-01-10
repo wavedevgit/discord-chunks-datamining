@@ -1,4 +1,4 @@
-/** Chunk was on 97476 **/
+/** Chunk was on 76246 **/
 /** chunk id: 810561, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -21,9 +21,9 @@ function b(e) {
     guildEventId: i,
     onRecurrenceClick: b,
     hideScroller: f = false,
-    activeRecurrenceId: h
+    activeRecurrenceId: p
   } = e, {
-    recurrenceStartTimes: p,
+    recurrenceStartTimes: h,
     canViewMoreRecurrences: m,
     updateRecurrenceStartTimes: g
   } = (0, c.Z)(i, n, t), v = f ? "div" : l.Ttm;
@@ -32,19 +32,19 @@ function b(e) {
     children: [(0, a.jsx)(l.Heading, {
       variant: "heading-sm/medium",
       className: u.heading,
-      children: s.intl.string(s.t["D/jjoa"])
+      children: d.intl.string(d.t["D/jjoa"])
     }), (0, a.jsxs)(v, {
       className: r()(u.scroller, {
         [u.showScroller]: !f
       }),
-      children: [p.map(e => {
+      children: [h.map(e => {
         let n = o.default.fromTimestamp(e.getTime());
-        return (0, a.jsx)(d.Z, {
+        return (0, a.jsx)(s.Z, {
           recurrenceId: n,
           originalScheduledStartTime: e,
           guildEventId: i,
           onClick: b,
-          isActive: n === h
+          isActive: n === p
         }, n)
       }), m && (0, a.jsx)("div", {
         className: u.buttonContainer,
@@ -52,7 +52,7 @@ function b(e) {
           onClick: e => {
             e.stopPropagation(), g()
           },
-          text: s.intl.string(s.t["8O7Hpy"]),
+          text: d.intl.string(d.t["8O7Hpy"]),
           size: "sm"
         })
       })]

@@ -49,12 +49,12 @@ function v(e) {
   } = (0, s.cj)([f.Z], () => ({
     guild: f.Z.getGuild(),
     guildProfile: f.Z.getGuildProfile()
-  })), O = null == n ? true : n.id, C = (0, s.e7)([c.Z], () => c.Z.get(O)), {
-    fetchGuildProfile: y
+  })), O = null == n ? true : n.id, y = (0, s.e7)([c.Z], () => c.Z.get(O)), {
+    fetchGuildProfile: C
   } = (0, d.u)(O), N = (null == v ? true : v.visibility) == null || !l.Y.VISIBLE.has(null == v ? true : v.visibility), E = (null == v ? true : v.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
-    null != O && y()
-  }, [O, y]);
+    null != O && C()
+  }, [O, C]);
   let I = i.useMemo(() => null == n || null == v ? j : v, [n, v]),
     S = i.useCallback(() => {
       (null == n ? true : n.id) != null && (E ? g.Z.updateGuildProfile(n.id, {
@@ -67,7 +67,7 @@ function v(e) {
       g.Z.setSection(p.pNK.PROFILE)
     }, []);
   if (null == n) return null;
-  let T = null != t ? t : null == C ? true : C.formFields;
+  let T = null != t ? t : null == y ? true : y.formFields;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",

@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 16853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -12,14 +12,14 @@ let a = e => {
     entry: t,
     hideEditButton: n,
     children: a,
-    onRequestOpen: s,
-    onRequestClose: o,
+    onRequestOpen: o,
+    onRequestClose: s,
     targetElementRef: c
   } = e;
   return (0, r.jsx)(i.yRy, {
     targetElementRef: c,
-    onRequestOpen: s,
-    onRequestClose: o,
+    onRequestOpen: o,
+    onRequestClose: s,
     animation: i.yRy.Animation.NONE,
     position: "bottom",
     spacing: 4,

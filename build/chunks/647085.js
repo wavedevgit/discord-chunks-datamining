@@ -9,7 +9,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk722733 = require("./722733.js"),
   Chunk633289 = require("./633289.js"),
   Chunk751823 = require("./751823.js");
-let s = (0, Chunk722733.Z)({
+let s = (0, Chunk722733.ZP)({
   name: "2025-10-windows-mute-detection",
   kind: "user",
   defaultConfig: {

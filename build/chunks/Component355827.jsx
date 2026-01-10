@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 355827, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -16,18 +16,18 @@ var Chunk442837 = require("./442837.js"),
 function d(e) {
   let {
     channel: t
-  } = e, n = (0, r.e7)([o.ZP], () => o.ZP.getVoiceStatesForChannel(t));
-  return (0, i.jsxs)("div", {
+  } = e, n = (0, i.e7)([o.ZP], () => o.ZP.getVoiceStatesForChannel(t));
+  return (0, r.jsxs)("div", {
     className: u.root,
-    children: [(0, i.jsx)(l.Text, {
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-xs/bold",
       className: u.header,
       children: c.intl.format(c.t.e95u3C, {
         count: n.length
       })
-    }), (0, i.jsx)(l.Ttm, {
+    }), (0, r.jsx)(l.Ttm, {
       className: u.scroller,
-      children: (0, i.jsx)(a.Z, {
+      children: (0, r.jsx)(a.Z, {
         allowDragging: false,
         allowPreviews: false,
         className: u.voiceUsers,

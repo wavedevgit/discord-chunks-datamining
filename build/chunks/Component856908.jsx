@@ -2,7 +2,7 @@
 /** chunk id: 856908, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,16 +54,16 @@ function S(e, t) {
   }), e
 }
 
-function _(e) {
+function x(e) {
   let {
     tab: t,
     label: n,
     selected: l,
     handleTransition: a,
-    hasSubmenu: o,
+    hasSubmenu: i,
     showNewBadge: c
   } = e;
-  return o ? (0, r.jsx)(x, {
+  return i ? (0, r.jsx)(O, {
     tab: t,
     label: n,
     selected: l,
@@ -74,41 +74,41 @@ function _(e) {
     className: s()(E.tab, {
       [E.selected]: l
     }),
-    children: [n, c && (0, r.jsx)(i.IGR, {
+    children: [n, c && (0, r.jsx)(o.IGR, {
       text: h.intl.string(h.t.y2b7CA),
       className: C.newBadge
     })]
   })
 }
 
-function x(e) {
+function O(e) {
   let {
     tab: t,
     label: n,
     selected: a,
-    handleTransition: o
+    handleTransition: i
   } = e, c = l.useRef(null), p = l.useRef(false), {
     isHovered: m,
     setIsHovered: h,
     onMouseEnter: C,
-    onMouseLeave: _,
-    cancelTimers: x
-  } = (0, g.Z)(100, 100), O = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), x(), h(true), p.current = d.Z.keyboardModeEnabled)
+    onMouseLeave: x,
+    cancelTimers: O
+  } = (0, g.Z)(100, 100), _ = e => {
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), O(), h(true), p.current = d.Z.keyboardModeEnabled)
   }, y = l.useCallback(() => {
     p.current = d.Z.keyboardModeEnabled, C()
   }, [C]);
   return (0, r.jsx)("div", {
     className: E.tabWithMenuContainer,
     onMouseEnter: y,
-    onMouseLeave: _,
-    children: (0, r.jsx)(i.yRy, {
+    onMouseLeave: x,
+    children: (0, r.jsx)(o.yRy, {
       targetElementRef: c,
       shouldShow: m,
       position: "bottom",
       align: "left",
       onRequestOpen: () => {
-        x(), h(true), p.current = d.Z.keyboardModeEnabled
+        O(), h(true), p.current = d.Z.keyboardModeEnabled
       },
       onRequestClose: () => {
         var e;
@@ -120,9 +120,9 @@ function x(e) {
         } = e;
         return (0, r.jsx)("div", {
           onMouseEnter: C,
-          onMouseLeave: _,
+          onMouseLeave: x,
           children: (0, r.jsx)(b.Z, {
-            handleTransition: o,
+            handleTransition: i,
             onClose: t
           })
         })
@@ -130,11 +130,11 @@ function x(e) {
       children: (e, l) => {
         let {
           isShown: u
-        } = l, d = u ? i.u04 : i.CJ0;
+        } = l, d = u ? o.u04 : o.CJ0;
         return (0, r.jsx)(f.Z.Title, S(v({}, e), {
           ref: c,
-          onClick: () => o(t),
-          onKeyDown: O,
+          onClick: () => i(t),
+          onKeyDown: _,
           wrapperClassName: E.tabWrapper,
           className: s()(E.tab, {
             [E.selected]: a
@@ -152,47 +152,47 @@ function x(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     onTabSelect: t,
     tabs: n,
     selectedTab: a,
-    selected: o,
+    selected: i,
     showOrbRentalNewBadge: c
   } = e, b = l.useRef(null), m = l.useRef(false), {
     isHovered: C,
-    setIsHovered: _,
-    onMouseEnter: x,
-    onMouseLeave: O,
+    setIsHovered: x,
+    onMouseEnter: O,
+    onMouseLeave: _,
     cancelTimers: y
-  } = (0, g.Z)(100, 100), k = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), y(), _(true), m.current = d.Z.keyboardModeEnabled)
-  }, T = l.useCallback(() => {
-    m.current = d.Z.keyboardModeEnabled, x()
-  }, [x]);
+  } = (0, g.Z)(100, 100), j = e => {
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), y(), x(true), m.current = d.Z.keyboardModeEnabled)
+  }, k = l.useCallback(() => {
+    m.current = d.Z.keyboardModeEnabled, O()
+  }, [O]);
   return (0, r.jsx)("div", {
     className: E.tabWithMenuContainer,
-    onMouseEnter: T,
-    onMouseLeave: O,
-    children: (0, r.jsx)(i.yRy, {
+    onMouseEnter: k,
+    onMouseLeave: _,
+    children: (0, r.jsx)(o.yRy, {
       targetElementRef: b,
       shouldShow: C,
       position: "bottom",
       align: "left",
       onRequestOpen: () => {
-        y(), _(true), m.current = d.Z.keyboardModeEnabled
+        y(), x(true), m.current = d.Z.keyboardModeEnabled
       },
       onRequestClose: () => {
         var e;
-        m.current && !d.Z.keyboardModeEnabled && (0, u.Qj)(), _(false), null == (e = b.current) || e.focus()
+        m.current && !d.Z.keyboardModeEnabled && (0, u.Qj)(), x(false), null == (e = b.current) || e.focus()
       },
       renderPopout: e => {
         let {
           closePopout: l
         } = e;
         return (0, r.jsx)("div", {
-          onMouseEnter: x,
-          onMouseLeave: O,
+          onMouseEnter: O,
+          onMouseLeave: _,
           children: (0, r.jsx)(p.Z, {
             selectedTab: a,
             onClose: l,
@@ -205,13 +205,13 @@ function O(e) {
       children: (e, t) => {
         let {
           isShown: n
-        } = t, l = n ? i.u04 : i.CJ0;
+        } = t, l = n ? o.u04 : o.CJ0;
         return (0, r.jsx)(f.Z.Title, S(v({}, e), {
           ref: b,
-          onKeyDown: k,
+          onKeyDown: j,
           wrapperClassName: E.tabWrapper,
           className: s()(E.tab, E.more, {
-            [E.selected]: o
+            [E.selected]: i
           }),
           "aria-label": h.intl.string(h.t["UKOtz+"]),
           children: (0, r.jsxs)("span", {
@@ -231,29 +231,29 @@ function y(e, t, n) {
   return e === n || null != (r = t.hasSubmenu) && r && (0, m.RE)(n) && e === m.AW.CATALOG
 }
 
-function k(e) {
+function j(e) {
   let {
     className: t,
     selectedTab: n,
     tabs: a,
-    onTabSelect: i,
+    onTabSelect: o,
     showOrbRentalNewBadge: u
   } = e, [d, f] = l.useState(0), g = l.useRef(d), {
     lastVisibleIndex: b,
     onItemLayout: p,
     overflowItemsRef: h
-  } = (0, o.zP)({
+  } = (0, i.zP)({
     items: a,
     itemGapPx: 24,
     maxLines: 1,
     containerWidth: d
-  }), C = l.useMemo(() => a.slice(0, b + 1), [b, a]), v = l.useMemo(() => a.slice(b + 1), [b, a]), S = l.useRef(null), x = l.useCallback(e => {
+  }), C = l.useMemo(() => a.slice(0, b + 1), [b, a]), v = l.useMemo(() => a.slice(b + 1), [b, a]), S = l.useRef(null), O = l.useCallback(e => {
     let t = e.contentRect.width;
     null != t && g.current !== t && (f(t), g.current = t)
   }, []);
-  (0, c.s)(S, x);
-  let k = 0 !== d,
-    T = v.some(e => y(e.tab, e, n));
+  (0, c.s)(S, O);
+  let j = 0 !== d,
+    k = v.some(e => y(e.tab, e, n));
   return (0, r.jsxs)("div", {
     className: s()(E.container, t),
     ref: S,
@@ -261,45 +261,45 @@ function k(e) {
       className: E.measurements,
       children: [a.map((e, t) => {
         var l;
-        return (0, r.jsx)(o.AJ, {
+        return (0, r.jsx)(i.AJ, {
           index: t,
           onItemLayout: p,
-          children: (0, r.jsx)(_, {
+          children: (0, r.jsx)(x, {
             tab: e.tab,
             label: e.label,
             selected: y(e.tab, e, n),
-            handleTransition: i,
+            handleTransition: o,
             hasSubmenu: null != (l = e.hasSubmenu) && l,
             showNewBadge: e.tab === m.AW.ORBS && u
           })
         }, e.tab)
       }), (0, r.jsx)("div", {
         ref: h,
-        children: (0, r.jsx)(O, {
+        children: (0, r.jsx)(_, {
           tabs: v,
-          onTabSelect: i,
+          onTabSelect: o,
           selectedTab: n,
-          selected: T,
+          selected: k,
           showOrbRentalNewBadge: u
         })
       })]
-    }), k && (0, r.jsxs)("div", {
+    }), j && (0, r.jsxs)("div", {
       className: E.tabs,
       children: [C.map(e => {
         var t;
-        return (0, r.jsx)(_, {
+        return (0, r.jsx)(x, {
           tab: e.tab,
           label: e.label,
           selected: y(e.tab, e, n),
-          handleTransition: i,
+          handleTransition: o,
           hasSubmenu: null != (t = e.hasSubmenu) && t,
           showNewBadge: e.tab === m.AW.ORBS && u
         }, e.tab)
-      }), 0 !== v.length ? (0, r.jsx)(O, {
+      }), 0 !== v.length ? (0, r.jsx)(_, {
         tabs: v,
-        onTabSelect: i,
+        onTabSelect: o,
         selectedTab: n,
-        selected: T,
+        selected: k,
         showOrbRentalNewBadge: u
       }) : null]
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 89675 **/
-/** chunk id: 146747, original params: e,t,r (module,exports,require) **/
+/** chunk id: 146747, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => P
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,20 +19,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk261203 = require("./261203.js"),
   Chunk478411 = require("./478411.js");
 
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
+function h(e) {
+  for (var r = 1; r < arguments.length; r++) {
+    var t = null != arguments[r] ? arguments[r] : {},
+      n = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), n.forEach(function(r) {
       var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
+      n = t[r], r in e ? Object.defineProperty(e, r, {
         value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[r] = n
     })
   }
   return e
@@ -41,8 +41,8 @@ let x = "premium-guild-subscription-upsell-modal-header";
 
 function y(e) {
   let {
-    title: t,
-    subtitle: r,
+    title: r,
+    subtitle: t,
     image: o
   } = e;
   return (0, n.jsxs)("div", {
@@ -51,20 +51,20 @@ function y(e) {
       variant: "heading-xl/semibold",
       id: x,
       color: "text-strong",
-      className: h.marginBottom8,
-      children: t
+      className: f.marginBottom8,
+      children: r
     }), (0, n.jsx)(a.Text, {
       variant: "text-md/normal",
       className: j.subtitleText,
-      children: r
+      children: t
     }), o]
   })
 }
 let O = e => {
     let {
-      onClose: t,
-      perks: r,
-      perkIntro: o = m.intl.string(m.t.Dr3GoS),
+      onClose: r,
+      perks: t,
+      perkIntro: o = g.intl.string(g.t.Dr3GoS),
       headerProps: s
     } = e;
     return (0, n.jsxs)("div", {
@@ -73,40 +73,40 @@ let O = e => {
         "data-migration-pending": true,
         className: j.closeButton,
         onClick: () => {
-          t()
+          r()
         }
-      }), (0, n.jsx)(P, {
+      }), (0, n.jsx)(k, {
         headerProps: s,
         perkIntro: o
       }), (0, n.jsx)("div", {
         className: j.perks,
-        children: r.map((e, t) => {
+        children: t.map((e, r) => {
           let {
-            icon: r,
+            icon: t,
             iconClassName: o,
             description: a,
             color: s
           } = e;
-          return (0, n.jsx)(p.Z, {
-            icon: r,
+          return (0, n.jsx)(u.Z, {
+            icon: t,
             iconClassName: o,
             description: a,
             color: s
-          }, t)
+          }, r)
         })
       })]
     })
   },
-  P = e => {
+  k = e => {
     let {
-      headerProps: t,
+      headerProps: r,
       perkIntro: s
     } = e;
     return (0, n.jsxs)(o.Fragment, {
-      children: [null != t ? (0, n.jsx)(y, f({}, t)) : (0, n.jsx)("img", {
+      children: [null != r ? (0, n.jsx)(y, h({}, r)) : (0, n.jsx)("img", {
         className: j.heroImage,
-        src: r(438471),
-        alt: m.intl.string(m.t.PkcaAH)
+        src: t(438471),
+        alt: g.intl.string(g.t.PkcaAH)
       }), (0, n.jsx)(a.Text, {
         variant: "text-md/normal",
         className: j.heading,
@@ -116,14 +116,14 @@ let O = e => {
   },
   v = e => {
     let {
-      guild: t,
-      targetBoostedGuildTier: r,
+      guild: r,
+      targetBoostedGuildTier: t,
       onClose: o,
       analyticsSourceLocation: s
     } = e, i = {
-      section: g.jXE.PREMIUM_GUILD_UPSELL_MODAL,
-      object: g.qAy.BUTTON_CTA,
-      objectType: null != r ? (0, d.ge)(r) : null
+      section: m.jXE.PREMIUM_GUILD_UPSELL_MODAL,
+      object: m.qAy.BUTTON_CTA,
+      objectType: null != t ? (0, d.ge)(t) : null
     };
     return (0, n.jsxs)(a.mzw, {
       className: j.footer,
@@ -131,15 +131,15 @@ let O = e => {
       children: [(0, n.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: m.intl.string(m.t.cpT0Cq),
+        text: g.intl.string(g.t.cpT0Cq),
         onClick: () => {
           o()
         }
       }), (0, n.jsx)(b.Z, {
         analyticsLocation: i,
         analyticsSourceLocation: s,
-        guild: t,
-        targetBoostedGuildTier: r,
+        guild: r,
+        targetBoostedGuildTier: t,
         onClose: () => {
           o()
         }
@@ -147,28 +147,28 @@ let O = e => {
     })
   };
 
-function k(e) {
-  var t, r, {
+function P(e) {
+  var r, t, {
       analyticsSourceLocation: o,
-      guild: p,
+      guild: u,
       targetBoostedGuildTier: d,
       perks: b,
-      perkIntro: g,
-      headerProps: m,
+      perkIntro: m,
+      headerProps: g,
       onClose: j
     } = e,
-    h = function(e, t) {
+    f = function(e, r) {
       if (null == e) return {};
-      var r, n, o = function(e, t) {
+      var t, n, o = function(e, r) {
         if (null == e) return {};
-        var r, n, o = {},
+        var t, n, o = {},
           a = Object.keys(e);
-        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+        for (n = 0; n < a.length; n++) t = a[n], r.indexOf(t) >= 0 || (o[t] = e[t]);
         return o
-      }(e, t);
+      }(e, r);
       if (Object.getOwnPropertySymbols) {
         var a = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        for (n = 0; n < a.length; n++) t = a[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
       }
       return o
     }(e, ["analyticsSourceLocation", "guild", "targetBoostedGuildTier", "perks", "perkIntro", "headerProps", "onClose"]);
@@ -177,41 +177,41 @@ function k(e) {
   } = (0, i.ZP)(s.Z.ACTIVITY_DIRECTORY);
   return (0, n.jsx)(i.Gt, {
     value: y,
-    children: (0, n.jsx)(l.PaymentContextProvider, {
+    children: (0, n.jsx)(c.PaymentContextProvider, {
       activeSubscription: null,
       stepConfigs: [],
       skuIDs: [],
-      children: (0, n.jsx)(a.Y0X, (t = f({}, h), r = r = {
+      children: (0, n.jsx)(a.Y0X, (r = h({}, f), t = t = {
         "aria-labelledby": x,
         "data-migration-pending": true,
         parentComponent: "GuildBoostingUpsellModal",
-        children: (0, n.jsx)(u.Z, {
+        children: (0, n.jsx)(p.Z, {
           hideBreadcrumbs: true,
           body: (0, n.jsx)(O, {
             onClose: j,
             perks: b,
-            perkIntro: g,
-            headerProps: m
+            perkIntro: m,
+            headerProps: g
           }),
           footer: (0, n.jsx)(v, {
-            guild: p,
+            guild: u,
             targetBoostedGuildTier: d,
             onClose: j,
             analyticsSourceLocation: o
           }),
-          steps: [c.h8.PREMIUM_GUILD_UPSELL],
-          currentStep: c.h8.PREMIUM_GUILD_UPSELL
+          steps: [l.h8.PREMIUM_GUILD_UPSELL],
+          currentStep: l.h8.PREMIUM_GUILD_UPSELL
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(t)) : (function(e, r) {
+        var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          t.push.apply(t, n)
         }
-        return r
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-      }), t))
+        return t
+      })(Object(t)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(t, e))
+      }), r))
     })
   })
 }

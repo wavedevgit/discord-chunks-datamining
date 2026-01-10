@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk722733 = require("./722733.js"),
   Chunk751823 = require("./751823.js");
-let a = (0, Chunk722733.Z)({
+let a = (0, Chunk722733.ZP)({
   kind: "user",
   name: "2025-10-low-latency-rate-control",
   defaultConfig: {

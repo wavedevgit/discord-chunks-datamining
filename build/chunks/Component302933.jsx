@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk873546 = require("./873546.js"),
   Chunk435935 = require("./435935.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -26,8 +26,8 @@ let g = Chunk473749.memo(function(e) {
       friction: 12
     }
   });
-  return (0, r.jsxs)(o.animated.div, {
-    className: s()([f.countDownWrapper, i.tq && f.mobileWrapper]),
+  return (0, r.jsxs)(i.animated.div, {
+    className: s()([f.countDownWrapper, o.tq && f.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {

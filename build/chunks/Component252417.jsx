@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -19,37 +19,37 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk580784 = require("./580784.js");
-let O = Chunk481060.EFr.SIZE_40,
-  v = (0, Chunk481060.dcp)(O);
+let v = Chunk481060.EFr.SIZE_40,
+  O = (0, Chunk481060.dcp)(v);
 
 function j(e) {
   let {
     user: t,
     status: j,
-    guildId: C,
-    channelId: x,
+    guildId: x,
+    channelId: C,
     onSelect: E
   } = e, {
     theme: S,
     themeType: _
-  } = (0, g.z)(), I = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
+  } = (0, g.z)(), I = i.useMemo(() => t.isNonUserBot() || (0, p.W)(t, C), [t, C]), {
     activities: P,
-    isMobileOnline: N
-  } = (0, l.cj)([p.Z], () => ({
-    activities: p.Z.getActivities(t.id),
-    isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), Z = (0, h.Z)(t.id), {
-    voiceActivityStatusEnabled: w
+    isMobileOnline: Z
+  } = (0, l.cj)([h.Z], () => ({
+    activities: h.Z.getActivities(t.id),
+    isMobileOnline: h.Z.isMobileOnline(t.id)
+  })), N = (0, f.Z)(t.id), {
+    voiceActivityStatusEnabled: T
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: T
+    voiceChannel: A
   } = (0, u.Z)({
-    userId: w ? t.id : true,
-    guildId: C
+    userId: T ? t.id : true,
+    guildId: x
   });
   return (0, r.jsxs)(a.P3F, {
-    focusProps: _ === m.l.MODAL_V2 ? {
+    focusProps: _ === b.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -102,12 +102,12 @@ function j(e) {
       })
     },
     children: [(0, r.jsx)(a.qEK, {
-      src: t.getAvatarURL(C, v),
+      src: t.getAvatarURL(x, O),
       "aria-label": t.username,
-      size: O,
-      status: I ? b.Skl.UNKNOWN : j,
+      size: v,
+      status: I ? m.Skl.UNKNOWN : j,
       statusBackdropColor: I ? true : (0, a.QFD)(S),
-      isMobile: N,
+      isMobile: Z,
       className: y.avatar
     }), (0, r.jsxs)("div", {
       className: y.details,
@@ -118,8 +118,8 @@ function j(e) {
       }), (0, r.jsx)(d.Z, {
         user: t,
         activities: P,
-        applicationStream: Z,
-        voiceChannel: T
+        applicationStream: N,
+        voiceChannel: A
       })]
     })]
   })

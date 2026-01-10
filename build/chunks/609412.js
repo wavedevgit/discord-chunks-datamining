@@ -1,11 +1,11 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 609412, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  RB: () => v,
+  RB: () => O,
   VH: () => y,
   Vi: () => j,
-  Vu: () => C,
-  q7: () => O
+  Vu: () => x,
+  q7: () => v
 });
 var Chunk692547 = require("./692547.js"),
   Chunk497089 = require("./497089.js"),
@@ -33,7 +33,7 @@ let y = {
     ADD_FRIEND: Chunk389765,
     FIRST_MESSAGE: Chunk178561
   },
-  O = e => {
+  v = e => {
     switch (e.type) {
       case "lifecycle_item":
         switch (e.item_enum) {
@@ -60,12 +60,12 @@ let y = {
         return "NOTIFICATION_CENTER"
     }
   },
-  v = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+  O = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
   j = e => {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {
-          icon: m, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: b, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.DY.FRIEND_REQUEST_ACCEPTED:
       case i.DY.GAME_FRIEND_REQUEST_ACCEPTED:
@@ -89,13 +89,13 @@ let y = {
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS:
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: f, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: p, color: r.Z.colors.BACKGROUND_ACCENT
         };
       default:
         return null
     }
   },
-  C = e => {
+  x = e => {
     switch (e.item_enum) {
       case i.AM.UPDATE_PROFILE:
         return l.Y9;

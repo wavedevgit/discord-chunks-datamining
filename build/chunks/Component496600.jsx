@@ -129,11 +129,11 @@ function L(e) {
     F = i.useRef(true),
     B = i.useMemo(() => ("single" === d ? F.current = M.find(e => e.value === g) : F.current = true, null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => M.find(t => t.value === e)).filter(e => null != e), [g, M, d]);
   i.useEffect(() => {
-    if ("single" === d) {
+    if (!A && "single" === d) {
       var e, t;
       G(null != (t = null == (e = F.current) ? true : e.label) ? t : "", "")
     }
-  }, [G, B, d]), i.useEffect(() => {
+  }, [G, B, d, A]), i.useEffect(() => {
     if (o && null != F.current) {
       let e = Z.findIndex(e => {
         var t;

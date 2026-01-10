@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 940777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547355 = require("./547355.js");
 
-function T(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function T(e) {
   }
   return e
 }
-let A = {
+let w = {
   analyticsSource: {
     page: Chunk981631.ZY5.GUILD_CHANNEL,
     section: Chunk981631.jXE.CHANNEL_LIST,
@@ -66,82 +66,82 @@ function R() {
       favoriteAdded: R,
       clearFavoriteAdded: D
     } = (0, S.up)(),
-    [M, L] = i.useState(false),
+    [M, k] = i.useState(false),
     {
-      favoriteServerMuted: k,
-      favoriteChannels: G
+      favoriteServerMuted: L,
+      favoriteChannels: U
     } = (0, s.cj)([E.Z], () => ({
       favoriteChannels: E.Z.getFavoriteChannels(),
       favoriteServerMuted: E.Z.favoriteServerMuted
     })),
-    U = (0, s.e7)([j.Z], () => j.Z.getChannelId(N.I_8)),
-    B = (0, s.e7)([v.Z], () => v.Z.getChannel(U)),
-    F = (0, y.Z)(e => e.guildId) === N.I_8,
+    G = (0, s.e7)([j.Z], () => j.Z.getChannelId(Z.I_8)),
+    B = (0, s.e7)([O.Z], () => O.Z.getChannel(G)),
+    F = (0, y.Z)(e => e.guildId) === Z.I_8,
     {
-      badge: V,
-      unread: H
-    } = (0, _.Z)(G),
-    W = function(e) {
+      badge: H,
+      unread: V
+    } = (0, _.Z)(U),
+    z = function(e) {
       let t = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, s.e7)([O.Z], () => {
+        r = (0, s.e7)([v.Z], () => {
           if (!n) returnfalse;
-          let t = O.Z.getCurrentUserActiveStream();
+          let t = v.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
-        a = (0, s.Wu)([f.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...f.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
-        o = (0, s.e7)([f.ZP], () => Array.from(f.ZP.getSelfEmbeddedActivities().values()).some(t => {
+        i = (0, s.e7)([v.Z], () => v.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        l = (0, s.e7)([x.Z], () => n && null != t && x.Z.hasVideo(t), [n, t]),
+        a = (0, s.Wu)([p.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        o = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
-          } = t, r = (0, h.p)(n);
+          } = t, r = (0, f.p)(n);
           return null != r && null != e[r]
         })),
         c = a.length > 0,
         u = false,
         d = false,
-        p = false,
+        h = false,
         g = false;
-      return n ? (u = !l, d = l, p = r, g = o) : (p = i, g = c), (0, b.Or)({
+      return n ? (u = !l, d = l, h = r, g = o) : (h = i, g = c), (0, m.Or)({
         audio: u,
         video: d,
-        screenshare: p,
+        screenshare: h,
         liveStage: false,
         isCurrentUserConnected: n,
         activity: g
       })
-    }(G),
-    z = V > 0 ? (0, m.N)(V) : null,
+    }(U),
+    W = H > 0 ? (0, b.N)(H) : null,
     K = i.useCallback(() => {
       D()
     }, [D]);
   return (0, r.jsxs)(g.H, {
-    children: [(0, r.jsx)(p.Z, {
+    children: [(0, r.jsx)(h.Z, {
       selected: F,
       hovered: M,
-      unread: H && !k,
-      className: w.pill
+      unread: V && !L,
+      className: T.pill
     }), (0, r.jsx)(P.Z, {
       onShow: K,
       children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
           selected: true,
-          upperBadge: W,
-          lowerBadge: z,
-          children: (0, r.jsx)(c.LYs, (e = T({}, l), t = t = {
-            ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRss"], {
-              guildName: Z.intl.string(Z.t.wMWyci),
-              mentions: V
+          upperBadge: z,
+          lowerBadge: W,
+          children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
+            ariaLabel: N.intl.formatToPlainString(N.t["/uzRss"], {
+              guildName: N.intl.string(N.t.wMWyci),
+              mentions: H
             }),
             "aria-selected": F,
             to: {
-              pathname: N.Z5c.CHANNEL(N.I_8, U),
-              state: A
+              pathname: Z.Z5c.CHANNEL(Z.I_8, G),
+              state: w
             },
             selected: F || M,
-            onMouseEnter: () => L(true),
-            onMouseLeave: () => L(false),
+            onMouseEnter: () => k(true),
+            onMouseLeave: () => k(false),
             onMouseDown: function() {
               null != B && u.Z.preload(B.guild_id, B.id)
             },
@@ -150,17 +150,17 @@ function R() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, T({}, t))
+                return t => (0, r.jsx)(e, A({}, t))
               })
             },
             children: (0, r.jsx)("div", {
-              className: a()(w.ring, {
-                [w.ringActive]: R
+              className: a()(T.ring, {
+                [T.ringActive]: R
               }),
               children: (0, r.jsx)(c.r7p, {
                 size: "custom",
                 color: "currentColor",
-                className: w.favoriteIcon,
+                className: T.favoriteIcon,
                 width: 20,
                 height: 20
               })

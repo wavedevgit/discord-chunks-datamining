@@ -49,31 +49,31 @@ class x extends Chunk473749.Component {
       selectedChannel: n,
       isMemberPending: i,
       hasPreviewEnabled: r,
-      postableChannelCount: a
+      postableChannelCount: s
     } = this.props;
     if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending)) {
-      var u, f;
+      var u, h;
       (0, c.Q)(O.rMx.GUILD_VIEWED, (u = E({}, i ? {
         is_pending: i,
         preview_enabled: r
-      } : {}), f = f = {
-        postable_channels: a
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(f)) : (function(e, t) {
+      } : {}), h = h = {
+        postable_channels: s
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(f)).forEach(function(e) {
-        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(f, e))
-      }), u)), (0, l.a)(O.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      })(Object(h)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
+      }), u)), (0, a.a)(O.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
-      let e = (0, o.K)(d.Z.getChannel(n), true);
-      (0, c.Q)(O.rMx.CHANNEL_OPENED, E({}, e, (0, s.$H)(n))), (0, l.a)(O.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      let e = (0, l.K)(d.Z.getChannel(n), true);
+      (0, c.Q)(O.rMx.CHANNEL_OPENED, E({}, e, (0, o.$H)(n))), (0, a.a)(O.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -84,23 +84,23 @@ class x extends Chunk473749.Component {
 }
 let S = Chunk442837.ZP.connectStores([Chunk914010.Z, Chunk944486.Z, Chunk430824.Z, Chunk594174.default, Chunk237997.default, Chunk984933.ZP, Chunk496675.Z, Chunk271383.ZP], () => {
   var e, t, n;
-  let i = b.Z.getGuildId(),
-    a = g.Z.getChannelId(i),
-    s = h.Z.getGuild(i),
-    o = m.default.getCurrentUser(),
-    l = null != (t = u.ZP.getChannels(null == s ? true : s.id)[u.sH]) ? t : [],
-    c = l.length > 0 ? l.filter(e => {
+  let i = m.Z.getGuildId(),
+    s = g.Z.getChannelId(i),
+    o = f.Z.getGuild(i),
+    l = b.default.getCurrentUser(),
+    a = null != (t = u.ZP.getChannels(null == o ? true : o.id)[u.sH]) ? t : [],
+    c = a.length > 0 ? a.filter(e => {
       let {
         channel: t
       } = e;
       return p.Z.can(r.$e(O.Plq.SEND_MESSAGES, O.Plq.VIEW_CHANNEL), t)
     }).length : 0,
-    d = null != o && null != i && null != (n = null == (e = f.ZP.getMember(i, o.id)) ? true : e.isPending) && n;
+    d = null != l && null != i && null != (n = null == (e = h.ZP.getMember(i, l.id)) ? true : e.isPending) && n;
   return {
     selectedGuild: i,
-    selectedChannel: a,
+    selectedChannel: s,
     locked: y.default.isLocked((0, v.getPID)()),
-    hasPreviewEnabled: null == s ? true : s.features.has(O.GuildFeatures.PREVIEW_ENABLED),
+    hasPreviewEnabled: null == o ? true : o.features.has(O.GuildFeatures.PREVIEW_ENABLED),
     isMemberPending: d,
     postableChannelCount: c
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 15718 **/
+/** Chunk was on 69937 **/
 /** chunk id: 16846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -14,19 +14,19 @@ function s(e) {
     offset: n,
     totalCount: s,
     pageSize: o,
-    renderPageWrapper: u
-  } = e, c = Math.floor(n / o) + 1, E = l.useCallback(e => {
+    renderPageWrapper: c
+  } = e, u = Math.floor(n / o) + 1, d = l.useCallback(e => {
     t(e - 1)
   }, [t]);
   return (0, r.jsx)("div", {
     className: a.container,
     children: (0, r.jsx)(i.DsT, {
-      currentPage: c,
+      currentPage: u,
       totalCount: s,
       pageSize: o,
-      onPageChange: E,
+      onPageChange: d,
       maxVisiblePages: 5,
-      renderPageWrapper: u
+      renderPageWrapper: c
     })
   })
 }

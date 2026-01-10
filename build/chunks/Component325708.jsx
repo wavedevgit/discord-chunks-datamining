@@ -1,10 +1,10 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 325708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C,
-  y: () => g
+  Z: () => y,
+  y: () => m
 }), require("./388685.js");
-var i, Chunk54381 = require("./54381.js"),
+var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
@@ -16,13 +16,13 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk740492 = require("./740492.js"),
   Chunk36645 = require("./36645.js"),
   Chunk631871 = require("./631871.js"),
-  g = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i[i.ParticipantsSidebar = 5] = "ParticipantsSidebar", i);
+  m = ((r = {})[r.PostSidebar = 0] = "PostSidebar", r[r.ThreadSidebar = 1] = "ThreadSidebar", r[r.CallChatSidebar = 2] = "CallChatSidebar", r[r.MessageRequestSidebar = 3] = "MessageRequestSidebar", r[r.HomeSidebar = 4] = "HomeSidebar", r[r.ParticipantsSidebar = 5] = "ParticipantsSidebar", r);
 
 function b(e) {
   let {
     resizableNode: t,
     onResize: n,
-    onResizeEnd: i,
+    onResizeEnd: r,
     maxWidth: l,
     minWidth: a
   } = e, o = (0, p.Z)({
@@ -30,24 +30,24 @@ function b(e) {
     maxDimension: l,
     resizableDomNodeRef: t,
     onElementResize: n,
-    onElementResizeEnd: i,
+    onElementResizeEnd: r,
     orientation: p.y.HORIZONTAL_LEFT,
     throttleDuration: 16
   });
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     onMouseDown: o,
-    className: m.resizeHandle
+    className: g.resizeHandle
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     sidebarType: t,
     maxWidth: n,
-    onWidthChange: i,
+    onWidthChange: r,
     children: a,
     floatingLayer: p
-  } = e, g = l.useRef(null), C = function(e) {
+  } = e, m = l.useRef(null), y = function(e) {
     switch (e) {
       case 0:
         return "postSidebarWidth";
@@ -62,46 +62,46 @@ function C(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, v] = l.useState(f.ZP[C]), x = l.useCallback(e => {
+  }(t), [v, O] = l.useState(f.ZP[y]), j = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
-      [C]: e
+      [y]: e
     })
-  }, [C]), O = 5 === t ? h.at : h.Co, E = (0, h.WL)({
+  }, [y]), x = 5 === t ? h.at : h.Co, C = (0, h.WL)({
     maxWidth: n,
-    minWidth: O
-  }), j = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), S = (0, s.clamp)(y, O, n), _ = E ? S : S + j;
+    minWidth: x
+  }), E = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), S = (0, s.clamp)(v, x, n), _ = C ? S : S + E;
   l.useEffect(() => {
-    null == i || i(S, E)
-  }, [S, i, E]);
-  let P = null != p ? p : l.Fragment;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [!E && (0, r.jsx)("div", {
+    null == r || r(S, C)
+  }, [S, r, C]);
+  let I = null != p ? p : l.Fragment;
+  return (0, i.jsxs)(i.Fragment, {
+    children: [!C && (0, i.jsx)("div", {
       style: {
         minWidth: _
       }
-    }), (0, r.jsx)(P, {
-      children: (0, r.jsxs)("div", {
-        className: o()(m.chatLayerWrapper, {
-          [m.hidden]: false
+    }), (0, i.jsx)(I, {
+      children: (0, i.jsxs)("div", {
+        className: o()(g.chatLayerWrapper, {
+          [g.hidden]: false
         }),
-        children: [(0, r.jsx)("div", {
-          className: o()(m.chatTarget, {
-            [m.floating]: E,
-            [m.notFloating]: !E
+        children: [(0, i.jsx)("div", {
+          className: o()(g.chatTarget, {
+            [g.floating]: C,
+            [g.notFloating]: !C
           }),
           style: {
             width: _
           }
-        }), !E && (0, r.jsx)(b, {
-          minWidth: O,
+        }), !C && (0, i.jsx)(b, {
+          minWidth: x,
           maxWidth: n,
-          resizableNode: g,
-          onResize: v,
-          onResizeEnd: x
-        }), (0, r.jsx)("div", {
-          ref: g,
-          className: o()(m.container, {
-            [m.floating]: E
+          resizableNode: m,
+          onResize: O,
+          onResizeEnd: j
+        }), (0, i.jsx)("div", {
+          ref: m,
+          className: o()(g.container, {
+            [g.floating]: C
           }),
           style: {
             width: S

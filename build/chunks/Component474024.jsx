@@ -30,14 +30,14 @@ function x(e) {
     return (null == (e = d.Z.getProfile(x)) ? true : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
   }, [x]), O = i.useRef(null);
   (0, m.Z)(O, b.KsC.PROFILE_VISIBILITY);
-  let C = i.useCallback(() => {
+  let y = i.useCallback(() => {
       j ? f.Z.updateGuildProfile(x, {
         visibility: u.k.RESTRICTED
       }) : f.Z.updateGuildProfile(x, {
         visibility: v ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
       })
     }, [x, v, j]),
-    y = i.useCallback(() => {
+    C = i.useCallback(() => {
       f.Z.setSection(b.pNK.ACCESS, b.KsC.ACCESS_DISCOVERABLE)
     }, []),
     N = null == (t = n.features) ? true : t.includes(b.GuildFeatures.DISCOVERABLE);
@@ -50,14 +50,14 @@ function x(e) {
         label: p.intl.string(p.t.fjHWen),
         description: p.intl.string(p.t.J1YOV6),
         checked: !j,
-        onChange: C,
+        onChange: y,
         disabled: N || !l
       }), N && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: p.intl.format(p.t.R8jY9g, {
           accessLink: (e, t) => (0, r.jsx)(c.eee, {
-            onClick: y,
+            onClick: C,
             children: e
           }, t)
         })

@@ -36,37 +36,37 @@ let m = {
     let {
       isLoading: n = false,
       heroBlock: l,
-      tab: o,
+      tab: i,
       onVisibilityChange: d
     } = e, h = (0, s.O)(e => {
       null == d || d(e)
-    }, .1, null != d), C = (0, i.e7)([u.default], () => u.default.getCurrentUser()), {
+    }, .1, null != d), C = (0, o.e7)([u.default], () => u.default.getCurrentUser()), {
       bannerStyleOverrides: E,
       logoStyleOverrides: v,
       heroLogo: S,
-      heroBannerStatic: _,
-      heroBannerAnimated: x
-    } = (0, f.hr)(l), O = null != (t = null == E ? true : E.responsive) && t, y = null == E ? true : E.backgroundStyle;
+      heroBannerStatic: x,
+      heroBannerAnimated: O
+    } = (0, f.hr)(l), _ = null != (t = null == E ? true : E.responsive) && t, y = null == E ? true : E.backgroundStyle;
     return null != C && (n || l !== m) ? (0, r.jsxs)("div", {
       ref: h,
       className: p.heroBlock,
       children: [(0, r.jsx)("div", {
         className: a()(p.banner, {
-          [p.responsive]: O
+          [p.responsive]: _
         }),
         style: null != y ? {
           background: y
         } : true,
-        children: null != _ && (0, r.jsx)(g.Z, {
-          bannerStatic: _,
-          bannerAnimated: x,
-          isResponsive: O
+        children: null != x && (0, r.jsx)(g.Z, {
+          bannerStatic: x,
+          bannerAnimated: O,
+          isResponsive: _
         })
       }), (0, r.jsxs)("div", {
         className: p.heroBlockContent,
         children: [(0, r.jsx)("div", {
           className: a()(p.heroHeaderContainer, {
-            [p.responsive]: O
+            [p.responsive]: _
           }),
           children: n ? (0, r.jsx)("div", {
             className: p.heroHeaderBadgeLogoSummaryContainer
@@ -97,7 +97,7 @@ let m = {
         }), (0, r.jsx)(b.Z, {
           isBlockLoading: n,
           heroBlock: l,
-          tab: o
+          tab: i
         })]
       })]
     }) : null

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 532239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -23,17 +23,17 @@ function u(e, t, n, u) {
       null != t && e.type === s.d4z.GUILD_VOICE && (0, a.W)(function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
@@ -41,15 +41,15 @@ function u(e, t, n, u) {
         guild: t
       }, d))
     };
-  return null != u ? (0, i.jsx)(r.sNh, {
+  return null != u ? (0, r.jsx)(i.sNh, {
     id: "invite-to-stream",
     label: c.intl.string(c.t["OzOM/q"]),
     action: p,
-    icon: r.ejJ
-  }) : null != t && null != e && o.Z.can(s.Plq.CREATE_INSTANT_INVITE, e) ? (0, i.jsx)(r.sNh, {
+    icon: i.ejJ
+  }) : null != t && null != e && o.Z.can(s.Plq.CREATE_INSTANT_INVITE, e) ? (0, r.jsx)(i.sNh, {
     id: "invite-friends",
     label: c.intl.string(c.t["EE+P0H"]),
     action: p,
-    icon: r.oLu
+    icon: i.oLu
   }) : null
 }

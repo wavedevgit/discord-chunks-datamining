@@ -24,11 +24,11 @@ function f() {
   let f = (0, c.X)(s.Z.getInputDevices()[t]),
     g = (0, c.X)(s.Z.getOutputDevices()[i]);
   if (l().some(c.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === f || e.displayName === g)) return;
-  let m = l().some(c.Z.lastDeviceConnected, e => o.Z.isCertified(c.Z.inputDevices[e.displayName]) || o.Z.isCertified(c.Z.outputDevices[e.displayName]));
-  if ((t === u.w5 && c.Z.lastInputSystemDevice.justChanged || i === u.w5 && c.Z.lastOutputSystemDevice.justChanged) && !m) return;
-  let h = l().first(Object.keys(c.Z.lastDeviceConnected)),
-    b = null != h && "" !== h ? c.Z.lastDeviceConnected[h] : null;
-  null != b && (c.Z.getState().ignoredDevices[b.displayName] || (c.Z.initialized && null != h && (o.Z.isCertified(c.Z.inputDevices[h]) ? e = o.Z.getCertifiedDevice(c.Z.inputDevices[h]) : o.Z.isCertified(c.Z.outputDevices[h]) && (e = o.Z.getCertifiedDevice(c.Z.outputDevices[h]))), (0, a.ZDy)(async () => {
+  let h = l().some(c.Z.lastDeviceConnected, e => o.Z.isCertified(c.Z.inputDevices[e.displayName]) || o.Z.isCertified(c.Z.outputDevices[e.displayName]));
+  if ((t === u.w5 && c.Z.lastInputSystemDevice.justChanged || i === u.w5 && c.Z.lastOutputSystemDevice.justChanged) && !h) return;
+  let m = l().first(Object.keys(c.Z.lastDeviceConnected)),
+    b = null != m && "" !== m ? c.Z.lastDeviceConnected[m] : null;
+  null != b && (c.Z.getState().ignoredDevices[b.displayName] || (c.Z.initialized && null != m && (o.Z.isCertified(c.Z.inputDevices[m]) ? e = o.Z.getCertifiedDevice(c.Z.inputDevices[m]) : o.Z.isCertified(c.Z.outputDevices[m]) && (e = o.Z.getCertifiedDevice(c.Z.outputDevices[m]))), (0, a.ZDy)(async () => {
     let {
       default: t
     } = await n.e("30042").then(n.bind(n, 30575));

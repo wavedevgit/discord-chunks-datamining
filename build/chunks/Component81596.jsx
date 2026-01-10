@@ -1,7 +1,7 @@
 /** Chunk was on 26545 **/
-/** chunk id: 81596, original params: t,n,i (module,exports,require) **/
+/** chunk id: 81596, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,66 +20,66 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk616874 = require("./616874.js");
 
-function h(t) {
+function _(t) {
   let {
-    user: n,
-    entry: i,
-    transitionState: h,
-    onAction: p,
-    onClose: I,
-    onOpenGameSettings: f
-  } = t, [x, S] = (0, l.Wu)([o.Z], () => [o.Z.isDeletingEntryHistory, o.Z.deleteOutboxEntryError]);
-  return r.useEffect(() => a.Bt, []), (0, e.jsxs)(s.Modal, {
-    title: (0, T.y)(i),
-    subtitle: R.intl.format(R.t.KV72oe, {
-      settingsHook: (t, n) => {
-        let r = (0, C.C)({
-          entry: i,
-          onOpenGameSettings: f
+    user: e,
+    entry: n,
+    transitionState: _,
+    onAction: h,
+    onClose: k,
+    onOpenGameSettings: m
+  } = t, [R, f] = (0, l.Wu)([d.Z], () => [d.Z.isDeletingEntryHistory, d.Z.deleteOutboxEntryError]);
+  return r.useEffect(() => a.Bt, []), (0, i.jsxs)(s.Modal, {
+    title: (0, x.y)(n),
+    subtitle: p.intl.format(p.t.KV72oe, {
+      settingsHook: (t, e) => {
+        let r = (0, b.C)({
+          entry: n,
+          onOpenGameSettings: m
         });
-        return (0, e.jsx)(d.eee, {
+        return (0, i.jsx)(o.eee, {
           onClick: () => {
-            null == p || p({
+            null == h || h({
               action: "PRESS_CLEAR_HISTORY_DISCLAIMER"
-            }), null != r ? r() : (0, u.openUserSettings)(E.n.PROFILE_PANEL, {
-              section: N.oAB.PROFILE_CUSTOMIZATION
-            }), I()
+            }), null != r ? r() : (0, E.openUserSettings)(u.n.PROFILE_PANEL, {
+              section: S.oAB.PROFILE_CUSTOMIZATION
+            }), k()
           },
           children: t
-        }, n)
+        }, e)
       }
     }),
     size: "sm",
     actions: [{
-      text: R.intl.string(R.t["ETE/oC"]),
-      onClick: I,
+      text: p.intl.string(p.t["ETE/oC"]),
+      onClick: k,
       variant: "secondary",
       size: "sm"
     }, {
-      text: null != S ? R.intl.string(R.t["5911Lb"]) : R.intl.string(R.t.VkKicb),
+      text: null != f ? p.intl.string(p.t["5911Lb"]) : p.intl.string(p.t.VkKicb),
       onClick: () => {
-        null == p || p({
+        null == h || h({
           action: "PRESS_CLEAR_HISTORY_BUTTON"
-        }), (0, c.CV)(i, n.id, I)
+        }), (0, c.CV)(n, e.id, k)
       },
-      disabled: x,
+      disabled: R,
       variant: "critical-primary",
       size: "sm"
     }],
-    onClose: I,
-    transitionState: h,
-    children: [null != S ? (0, e.jsxs)("div", {
-      className: O.error,
-      children: [(0, e.jsx)(d.k$p, {
-        color: d.TVs.colors.STATUS_DANGER
-      }), (0, e.jsx)(d.Text, {
+    onClose: k,
+    transitionState: _,
+    children: [null != f ? (0, i.jsxs)("div", {
+      className: T.error,
+      children: [(0, i.jsx)(o.k$p, {
+        color: o.TVs.colors.STATUS_DANGER
+      }), (0, i.jsx)(o.Text, {
         variant: "text-sm/medium",
-        children: R.intl.string(R.t.FMbL3s)
+        children: p.intl.string(p.t.FMbL3s)
       })]
-    }) : null, (0, e.jsx)(_.Z, {
-      user: n,
-      entry: i,
-      className: O.card,
+    }) : null, (0, i.jsx)(C.Z, {
+      user: e,
+      entry: n,
+      className: T.card,
       hideContextMenu: true
     })]
   })

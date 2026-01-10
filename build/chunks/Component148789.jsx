@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 148789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -14,8 +14,8 @@ function c(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, [c, u] = i.useState(false), [d, f] = i.useState(false), h = i.useCallback(async e => {
-    e.stopPropagation(), f(true);
+  } = e, [c, u] = i.useState(false), [d, p] = i.useState(false), f = i.useCallback(async e => {
+    e.stopPropagation(), p(true);
     try {
       await a.Z.cancelFriendRequest({
         userId: t,
@@ -23,9 +23,9 @@ function c(e) {
         location: "ActionButtonFriendRequest"
       })
     } finally {
-      f(false)
+      p(false)
     }
-  }, [n, t]), p = i.useCallback(async e => {
+  }, [n, t]), h = i.useCallback(async e => {
     e.stopPropagation(), u(true);
     try {
       await a.Z.maybeConfirmFriendRequestAccept({
@@ -43,13 +43,13 @@ function c(e) {
       size: "sm",
       children: [(0, r.jsx)(l.zxk, {
         variant: "active",
-        onClick: p,
+        onClick: h,
         text: o.intl.string(o.t.Zcibdf),
         loading: c,
         disabled: d
       }), (0, r.jsx)(l.zxk, {
         variant: "secondary",
-        onClick: h,
+        onClick: f,
         text: o.intl.string(o.t.xuio0C),
         loading: d,
         disabled: c

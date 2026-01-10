@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 226625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,26 +9,26 @@ var Chunk54381 = require("./54381.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk779717 = require("./779717.js");
-let f = {
+let h = {
   mass: 10,
   tension: 550,
   friction: 140
 };
 
-function h(e) {
+function f(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, i = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [s, h] = r.useState({
+  } = e, i = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [s, f] = r.useState({
     x: 0,
     y: 0
   }), x = r.useMemo(() => o().throttle(e => {
-    if (!i) h({
+    if (!i) f({
       x: (window.innerWidth - e.pageX * n) / 90,
       y: (window.innerHeight - e.pageY * n) / 90
     })
@@ -37,7 +37,7 @@ function h(e) {
   let [b, g] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
-    config: f
+    config: h
   }));
   return r.useEffect(() => {
     g({

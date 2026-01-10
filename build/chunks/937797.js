@@ -3,51 +3,28 @@
 "use strict";
 require.d(exports, {
   DL: () => i,
-  EO: () => o,
-  VG: () => d,
-  eC: () => l,
-  m_: () => a,
-  n0: () => c,
-  nj: () => u
+  VG: () => c,
+  eC: () => o,
+  n0: () => s,
+  nj: () => l
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
-  name: "2025-08-quest-ad-fetch-active-check",
-  kind: "user",
-  defaultConfig: {
-    enabled: false
-  },
-  variations: {
-    0: {
-      enabled: false
-    },
-    1: {
-      enabled: true
-    }
-  }
-});
-var a = function(e) {
-  return e[e.DISPLAY_ADVERTISER_CTA_ALWAYS = 0] = "DISPLAY_ADVERTISER_CTA_ALWAYS", e[e.OVERLAY_SHARE_ON_VIDEO = 1] = "OVERLAY_SHARE_ON_VIDEO", e
-}({});
-let o = (0, Chunk427164.le)({
-    name: "2025-10-desktop-video-quest-cta-relocation",
+    name: "2025-08-quest-ad-fetch-active-check",
     kind: "user",
     defaultConfig: {
-      enabled: false,
-      variant: null
+      enabled: false
     },
     variations: {
-      1: {
-        enabled: true,
-        variant: 0
+      0: {
+        enabled: false
       },
-      2: {
-        enabled: true,
-        variant: 1
+      1: {
+        enabled: true
       }
     }
   }),
-  s = (0, Chunk427164.le)({
+  a = (0, Chunk427164.le)({
     name: "2025-11-quest-home-suggested-sort-rotation",
     kind: "user",
     defaultConfig: {
@@ -69,11 +46,11 @@ let o = (0, Chunk427164.le)({
       }
     }
   }),
-  l = e => {
+  o = e => {
     let {
       enabled: t,
       variant: n
-    } = s.getConfig({
+    } = a.getConfig({
       location: e
     });
     return 0 === n ? {
@@ -87,7 +64,7 @@ let o = (0, Chunk427164.le)({
       minutes: 0
     }
   },
-  c = (0, Chunk427164.le)({
+  s = (0, Chunk427164.le)({
     name: "2025-11-quest-home-takeover-client-rollout",
     kind: "user",
     defaultConfig: {
@@ -99,7 +76,7 @@ let o = (0, Chunk427164.le)({
       }
     }
   }),
-  u = (0, Chunk427164.le)({
+  l = (0, Chunk427164.le)({
     name: "2025-11-quest-bar-listen-for-source-error",
     kind: "user",
     defaultConfig: {
@@ -111,7 +88,7 @@ let o = (0, Chunk427164.le)({
       }
     }
   }),
-  d = (0, Chunk427164.le)({
+  c = (0, Chunk427164.le)({
     name: "2025-11-video-end-card-v2",
     kind: "user",
     defaultConfig: {

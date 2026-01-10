@@ -1,17 +1,17 @@
-/** Chunk was on 15718 **/
+/** Chunk was on 69937 **/
 /** chunk id: 995532, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I,
+  Z: () => T,
   a: () => s
 });
 var r, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let s = {},
   o = {},
-  u = {},
-  c = false,
-  E = false,
-  d = false;
+  c = {},
+  u = false,
+  d = false,
+  E = false;
 
 function _(e) {
   let {
@@ -27,32 +27,32 @@ function A(e) {
   } = e;
   o[n] = null != t ? t : s
 }
-class T extends(l = Chunk442837.ZP.Store) {
+class f extends(l = Chunk442837.ZP.Store) {
   get(e) {
     if (null != e) return o[e]
   }
   isFetching() {
-    return E
+    return d
   }
   hasError() {
-    return d
+    return E
   }
   hasSeen(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return null != e && (t ? c : u[e] || false)
+    return null != e && (t ? u : c[e] || false)
   }
   isEmpty(e) {
     if (null == e) returntrue;
     let t = o[e];
     return null == t || 0 === t.welcome_channels.length
   }
-}(r = "displayName") in T ? Object.defineProperty(T, r, {
+}(r = "displayName") in f ? Object.defineProperty(f, r, {
   value: "WelcomeScreenStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : T[r] = "WelcomeScreenStore";
-let I = new T(Chunk570140.Z, {
+}) : f[r] = "WelcomeScreenStore";
+let T = new f(Chunk570140.Z, {
   INVITE_RESOLVE_SUCCESS: _,
   INVITE_ACCEPT_SUCCESS: _,
   WELCOME_SCREEN_SUBMIT_SUCCESS: A,
@@ -62,10 +62,10 @@ let I = new T(Chunk570140.Z, {
       guildId: t,
       isLurking: n
     } = e;
-    u[t] = true, n && (c = true)
+    c[t] = true, n && (u = true)
   },
   GUILD_STOP_LURKING: function() {
-    c = false
+    u = false
   },
   GUILD_DELETE: function(e) {
     let {
@@ -73,13 +73,13 @@ let I = new T(Chunk570140.Z, {
         id: t
       }
     } = e;
-    u[t] = false
+    c[t] = false
   },
   WELCOME_SCREEN_FETCH_START: function() {
-    E = true, d = false
+    d = true, E = false
   },
   WELCOME_SCREEN_FETCH_SUCCESS: function(e) {
-    E = false, d = false;
+    d = false, E = false;
     let {
       welcomeScreen: t,
       guildId: n
@@ -87,6 +87,6 @@ let I = new T(Chunk570140.Z, {
     o[n] = null != t ? t : s
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
-    E = false, d = true
+    d = false, E = true
   }
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 756095, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => f,
@@ -21,17 +21,17 @@ function h(e) {
     scheduledMessage: t,
     transitionState: n,
     onClose: l
-  } = e, h = a()(t.sendAtTimestamp.substring(0, 200)), [m, g] = r.useState(h), [b, C] = r.useState(false), y = async () => {
-    C(true);
+  } = e, h = a()(t.sendAtTimestamp.substring(0, 200)), [g, m] = i.useState(h), [b, y] = i.useState(false), v = async () => {
+    y(true);
     try {
-      await (0, c.P4)(t.scheduledMessageId, m.toISOString()), (0, d.eD)(), (0, s.Mr3)(f)
+      await (0, c.P4)(t.scheduledMessageId, g.toISOString()), (0, d.eD)(), (0, s.Mr3)(f)
     } catch (e) {
       (0, d.$X)(e.message)
     } finally {
-      C(false)
+      y(false)
     }
   };
-  return (0, i.jsx)(o.Modal, {
+  return (0, r.jsx)(o.Modal, {
     transitionState: n,
     size: "md",
     title: p.intl.string(p.t.jbdHj3),
@@ -43,12 +43,12 @@ function h(e) {
     }, {
       variant: "primary",
       text: p.intl.string(p.t.VZANAD),
-      onClick: y,
+      onClick: v,
       loading: b
     }],
-    children: (0, i.jsx)(u.Z, {
+    children: (0, r.jsx)(u.Z, {
       defaultValue: h,
-      onChange: g
+      onChange: m
     })
   })
 }

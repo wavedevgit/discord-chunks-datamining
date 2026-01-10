@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551952 = require("./551952.js");
 let O = function(e) {
-  var t, l, O, C, y;
+  var t, l, O, y, C;
   let {
     guildId: N,
     action: E,
@@ -96,7 +96,7 @@ let O = function(e) {
     })
   }, [N, E, I, S, _]);
   if (null == Z || null == R) return null;
-  let V = null != (y = (0, d.KS)(Z)) ? y : c.VL1;
+  let V = null != (C = (0, d.KS)(Z)) ? C : c.VL1;
   return (0, r.jsxs)("div", {
     className: v.actionItemContainer,
     children: [(0, r.jsxs)("div", {
@@ -131,7 +131,7 @@ let O = function(e) {
         className: v.actionItemEmojiWrapper,
         children: (0, r.jsx)(m.Z, {
           emojiId: null == (O = E.emoji) ? true : O.id,
-          emojiName: null == (C = E.emoji) ? true : C.name,
+          emojiName: null == (y = E.emoji) ? true : y.name,
           size: m.R.MEDIUM,
           defaultComponent: (0, r.jsx)(V, {})
         })

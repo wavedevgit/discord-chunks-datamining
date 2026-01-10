@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 12779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,49 +11,49 @@ var Chunk54381 = require("./54381.js"),
   Chunk194082 = require("./194082.jsx"),
   Chunk14338 = require("./14338.jsx"),
   Chunk995148 = require("./995148.js");
-let u = Chunk473749.memo(function(e) {
+let d = Chunk473749.memo(function(e) {
   let {
     label: t,
     participantCount: n,
     onClick: i,
     className: l,
-    collapsed: u,
+    collapsed: d,
     speakers: p,
-    channel: h,
-    isStreamLive: f
+    channel: f,
+    isStreamLive: h
   } = e;
-  return (0, r.jsxs)(s.P3F, {
+  return (0, r.jsxs)(o.P3F, {
     onClick: i,
-    className: a()(d.container, l),
-    children: [null == p ? (0, r.jsx)(s.BFJ, {
+    className: a()(u.container, l),
+    children: [null == p ? (0, r.jsx)(o.BFJ, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: d.micIcon
-    }) : (0, r.jsx)(s.S6n, {
+      className: u.micIcon
+    }) : (0, r.jsx)(o.S6n, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: d.micIcon
-    }), (0, r.jsxs)(s.Text, {
+      className: u.micIcon
+    }), (0, r.jsxs)(o.Text, {
       color: "text-strong",
       variant: "text-md/semibold",
-      className: d.text,
+      className: u.text,
       children: [t, " — ", n]
-    }), u && null != h && null != p && p.length > 0 && (0, r.jsxs)(r.Fragment, {
+    }), d && null != f && null != p && p.length > 0 && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Z, {
-        channel: h,
+        channel: f,
         speakers: p
-      }), f && (0, r.jsx)(o.ZP, {})]
-    }), (0, r.jsx)(s.CJ0, {
+      }), h && (0, r.jsx)(s.ZP, {})]
+    }), (0, r.jsx)(o.CJ0, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: a()(d.downIcon, {
-        [d.upIcon]: u
+      className: a()(u.downIcon, {
+        [u.upIcon]: d
       })
     })]
   })

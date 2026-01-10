@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 316173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,19 +15,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk820254 = require("./820254.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk187794 = require("./187794.js");
-let m = "isHideDevBanner",
-  h = () => {
+let h = "isHideDevBanner",
+  m = () => {
     var e;
-    let [t, n] = (0, i.useState)((null == (e = s.K.get(m, "false")) ? true : e.toString()) === "true"), l = (0, o.e7)([u.C], () => {
+    let [t, n] = (0, i.useState)((null == (e = s.K.get(h, "false")) ? true : e.toString()) === "true"), l = (0, o.e7)([u.C], () => {
       var e;
       return (0, d.fD)() ? null == (e = u.C.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     });
     if (t) return null;
-    let h = () => {
-        s.K.set(m, true), n(true)
+    let m = () => {
+        s.K.set(h, true), n(true)
       },
       b = () => (0, r.jsx)(c.P3F, {
-        onClick: h,
+        onClick: m,
         className: g.closeButton,
         "aria-label": f.intl.string(f.t.WAI6xu),
         children: (0, r.jsx)(c.Dio, {
@@ -46,7 +46,7 @@ let m = "isHideDevBanner",
       children: [(0, r.jsx)(p.Z, {
         className: g.icon
       }), f.intl.format(f.t.uyrfYF, {
-        buildNumber: "483626"
+        buildNumber: "484612"
       }), (0, r.jsx)(b, {})]
     }) : null
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 442336, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -51,43 +51,43 @@ function m(e, t) {
 function b(e) {
   let {
     channel: t
-  } = e, n = i.useRef(null), [b, y] = (0, l.Wu)([o.ZP], () => [o.ZP.isChannelMuted(t.getGuildId(), t.id), o.ZP.resolvedMessageNotifications(t)], [t]), [O, x] = i.useState(false);
+  } = e, n = i.useRef(null), [b, y] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [v, O] = i.useState(false);
   i.useEffect(() => {
-    let e = () => x(true);
-    return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    let e = () => O(true);
+    return c.S.subscribe(f.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      c.S.unsubscribe(f.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
   let j = e => {
-      e.shiftKey ? s.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
+      e.shiftKey ? o.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
-      }, d.UE.muted(!b)) : x(e => !e)
+      }, u.UE.muted(!b)) : O(e => !e)
     },
-    v = f.intl.string(f.t.h850Ss);
+    x = h.intl.string(h.t.h850Ss);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
-    shouldShow: O,
+    shouldShow: v,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
-    onRequestClose: () => x(false),
+    onRequestClose: () => O(false),
     renderPopout: e => (0, r.jsx)(p.Z, m(g({}, e), {
       channel: t,
       navId: "channel-context",
-      label: f.intl.string(f.t.Xm41aV)
+      label: h.intl.string(h.t.Xm41aV)
     })),
     clickTrap: true,
     children: (e, t) => {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(u.ZP.Icon, m(g({}, e), {
+      return (0, r.jsx)(d.ZP.Icon, m(g({}, e), {
         ref: n,
         onClick: j,
-        tooltip: i ? null : v,
-        icon: b || y !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
-        "aria-label": v,
+        tooltip: i ? null : x,
+        icon: b || y !== f.bL.ALL_MESSAGES ? a.owu : a.Dkj,
+        "aria-label": x,
         selected: i
       }))
     }

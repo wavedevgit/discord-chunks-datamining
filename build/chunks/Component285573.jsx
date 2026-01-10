@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 285573, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -24,16 +24,16 @@ let y = (0, Chunk146773.B)(function(e) {
     selectedChannelId: l,
     position: c,
     disableManageChannels: y,
-    sorting: O,
-    sortingType: v,
+    sorting: v,
+    sortingType: O,
     sortingPosition: j,
-    connectChannelDragSource: C,
-    connectChannelDropTarget: x,
+    connectChannelDragSource: x,
+    connectChannelDropTarget: C,
     tabIndex: E
   } = e, S = (0, o.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), _ = (0, o.e7)([u.Z], () => u.Z.getChannel(null == S ? true : S.parent_id)), I = l === (null == S ? true : S.id), P = (0, o.e7)([f.Z], () => null != _ ? f.Z.can(g.Plq.MANAGE_CHANNELS, _) : null != t && f.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
+  }), _ = (0, o.e7)([u.Z], () => u.Z.getChannel(null == S ? true : S.parent_id)), I = l === (null == S ? true : S.id), P = (0, o.e7)([p.Z], () => null != _ ? p.Z.can(g.Plq.MANAGE_CHANNELS, _) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
     null != S && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -73,31 +73,31 @@ let y = (0, Chunk146773.B)(function(e) {
     })
   }, [S]);
   if (null == S) return null;
-  let Z = (0, h.jo)(c, j),
-    w = (0, h.CN)(S, O, v),
-    T = (0, r.jsx)("div", {
-      className: a()(Z, {
-        [m.disabled]: w,
-        [m.selected]: I
+  let N = (0, f.jo)(c, j),
+    T = (0, f.CN)(S, v, O),
+    A = (0, r.jsx)("div", {
+      className: a()(N, {
+        [b.disabled]: T,
+        [b.selected]: I
       }),
       "data-dnd-name": S.name,
-      children: (0, r.jsxs)(p.ZP, {
-        className: m.iconVisibility,
+      children: (0, r.jsxs)(h.ZP, {
+        className: b.iconVisibility,
         channel: S,
         guild: t,
         selected: I,
-        onContextMenu: N,
+        onContextMenu: Z,
         forceInteractable: true,
-        resolvedUnreadSetting: b.i.ONLY_MENTIONS,
-        children: [(0, r.jsx)(h.eP, {
+        resolvedUnreadSetting: m.i.ONLY_MENTIONS,
+        children: [(0, r.jsx)(f.eP, {
           channel: S,
           tabIndex: E
-        }), (0, r.jsx)(h.hR, {
+        }), (0, r.jsx)(f.hR, {
           channel: S,
           disableManageChannels: y,
           tabIndex: E
         })]
       })
     });
-  return P && (T = x(C(T))), T
+  return P && (A = C(x(A))), A
 })

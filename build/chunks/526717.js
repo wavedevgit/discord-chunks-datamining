@@ -32,9 +32,9 @@ function s(e, t, n) {
     id: e,
     icon: m,
     size: n
-  }), p = r.useMemo(() => null != f && f.length > t ? f.slice(0, t) : f, [f, t]), h = null != f && f.length > t ? f.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, v = null == g || null == (s = g.guild) ? true : s.name, O = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, C = !c && null != v && null != m && null != b;
-  return C ? {
-    hasAllImperativeDetails: C,
+  }), p = r.useMemo(() => null != f && f.length > t ? f.slice(0, t) : f, [f, t]), h = null != f && f.length > t ? f.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, v = null == g || null == (s = g.guild) ? true : s.name, O = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, y = !c && null != v && null != m && null != b;
+  return y ? {
+    hasAllImperativeDetails: y,
     isLoading: c,
     details: {
       guildName: v,
@@ -46,7 +46,7 @@ function s(e, t, n) {
       notShownEmojiCount: h
     }
   } : {
-    hasAllImperativeDetails: C,
+    hasAllImperativeDetails: y,
     isLoading: c,
     error: d
   }

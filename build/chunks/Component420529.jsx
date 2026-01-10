@@ -1,7 +1,7 @@
-/** Chunk was on 56648 **/
+/** Chunk was on 81985 **/
 /** chunk id: 420529, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,7 +18,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function p(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,51 +50,51 @@ function v(e, t) {
   }), e
 }
 
-function Z(e) {
-  let t = (0, i.e7)([o.Z], () => o.Z.getChannelId() === e.id),
-    Z = (0, s.Z)(),
-    h = (null == Z ? true : Z.channelId) === e.id,
-    b = (0, a.V)(e) && !e.isPrivate(),
-    y = (0, a.Z)(e),
-    _ = !(0, i.e7)([c.Z], () => c.Z.isInChannel(e.id)) && y || b,
-    N = (0, f.Z)();
-  return h || 0 !== N.length ? h ? (0, r.jsx)(l.sNh, {
-    label: O.intl.string(O.t.PlwgdU),
+function y(e) {
+  let t = (0, i.e7)([s.Z], () => s.Z.getChannelId() === e.id),
+    y = (0, d.Z)(),
+    v = (null == y ? true : y.channelId) === e.id,
+    O = (0, o.V)(e) && !e.isPrivate(),
+    j = (0, o.Z)(e),
+    x = !(0, i.e7)([c.Z], () => c.Z.isInChannel(e.id)) && j || O,
+    C = (0, p.Z)();
+  return v || 0 !== C.length ? v ? (0, r.jsx)(l.sNh, {
+    label: g.intl.string(g.t.PlwgdU),
     id: "handoff",
     action: () => {
-      (0, d.F)(Z)
+      (0, u.F)(y)
     },
-    icon: (0, E.Z)(true),
-    disabled: _
-  }) : N.map(i => {
-    var a, o;
+    icon: (0, f.Z)(true),
+    disabled: x
+  }) : C.map(i => {
+    var o, s;
     return (0, r.jsx)(l.sNh, {
       id: "transfer-".concat(i.type, "-").concat(i.id),
-      label: (a = i.type, o = t, a === g.ABu.XBOX ? o ? O.intl.string(O.t["qVE/VF"]) : O.intl.string(O.t.E8euSk) : a === g.ABu.PLAYSTATION ? o ? O.intl.string(O.t.vzfxmY) : O.intl.string(O.t.QxEYDj) : a === g.ABu.PLAYSTATION_STAGING ? o ? O.intl.string(O.t.BDiXtV) : O.intl.string(O.t["bhdB9+"]) : true),
+      label: (o = i.type, s = t, o === h.ABu.XBOX ? s ? g.intl.string(g.t["qVE/VF"]) : g.intl.string(g.t.E8euSk) : o === h.ABu.PLAYSTATION ? s ? g.intl.string(g.t.vzfxmY) : g.intl.string(g.t.QxEYDj) : o === h.ABu.PLAYSTATION_STAGING ? s ? g.intl.string(g.t.BDiXtV) : g.intl.string(g.t["bhdB9+"]) : true),
       action: () => (t => {
-        if (!t.twoWayLink || t.revoked) return void(0, u.Z)({
+        if (!t.twoWayLink || t.revoked) return void(0, a.Z)({
           platformType: t.type,
           location: "Console Transfer Item"
         });
-        t.type === g.ABu.XBOX ? (0, l.ZDy)(async () => {
+        t.type === h.ABu.XBOX ? (0, l.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("93132"), n.e("45929")]).then(n.bind(n, 200623));
-          return n => (0, r.jsx)(t, v(p({}, n), {
+          } = await Promise.all([n.e("37193"), n.e("45929")]).then(n.bind(n, 200623));
+          return n => (0, r.jsx)(t, b(m({}, n), {
             channel: e
           }))
-        }) : (t.type === g.ABu.PLAYSTATION || t.type === g.ABu.PLAYSTATION_STAGING) && (0, l.ZDy)(async () => {
+        }) : (t.type === h.ABu.PLAYSTATION || t.type === h.ABu.PLAYSTATION_STAGING) && (0, l.ZDy)(async () => {
           let {
             default: i
           } = await n.e("638").then(n.bind(n, 543974));
-          return n => (0, r.jsx)(i, v(p({}, n), {
+          return n => (0, r.jsx)(i, b(m({}, n), {
             platform: t.type,
             channel: e
           }))
         })
       })(i),
-      icon: (0, E.Z)(i.type),
-      disabled: _
+      icon: (0, f.Z)(i.type),
+      disabled: x
     }, i.id)
   }) : null
 }

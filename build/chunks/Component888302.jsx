@@ -16,10 +16,10 @@ function u() {
   let {
     itemTypeFilters: e,
     searchQuery: t
-  } = (0, o.S)(e => e), {
+  } = (0, i.S)(e => e), {
     totalCount: n,
     isFetchingResults: u
-  } = (0, i.a)(), d = (0, o.S)(e => e.hasFilters()), f = l.useCallback(() => {
+  } = (0, o.a)(), d = (0, i.S)(e => e.hasFilters()), f = l.useCallback(() => {
     if (!d) return "";
     if (u) return c.intl.string(c.t["/FaMSE"]);
     if ("" !== t) {

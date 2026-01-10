@@ -1,40 +1,41 @@
-/** Chunk was on 40184 **/
-/** chunk id: 260300, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 260300, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let a = {
+let o = {
   show(e, t) {
-    r.Z.wait(() => r.Z.dispatch({
+    i.Z.wait(() => i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_SHOW",
       tutorialId: e,
       renderData: t
     }))
   },
   hide(e) {
-    r.Z.wait(() => r.Z.dispatch({
+    i.Z.wait(() => i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_HIDE",
       tutorialId: e
     }))
   },
   dismiss(e) {
-    r.Z.wait(() => r.Z.dispatch({
+    i.Z.wait(() => i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_DISMISS",
       tutorialId: e
-    })), i.tn.put({
-      url: l.ANM.TUTORIAL_INDICATOR(e),
+    })), r.tn.put({
+      url: a.ANM.TUTORIAL_INDICATOR(e),
       oldFormErrors: true,
       rejectWithError: true
     })
   },
   suppressAll() {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_SUPPRESS_ALL"
-    }), i.tn.post({
-      url: l.ANM.TUTORIAL_INDICATORS_SUPPRESS,
+    }), r.tn.post({
+      url: a.ANM.TUTORIAL_INDICATORS_SUPPRESS,
       oldFormErrors: true,
       rejectWithError: true
     })

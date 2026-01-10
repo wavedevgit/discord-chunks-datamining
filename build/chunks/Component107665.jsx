@@ -86,8 +86,7 @@ let O = (0, Chunk467368.Dz)(),
       handleClose: a
     } = n, {
       renderStepBody: o,
-      disabled: s,
-      onBackClick: l
+      disabled: s
     } = (0, p.n3)({
       handleStepChange: r,
       handleClose: a
@@ -97,11 +96,10 @@ let O = (0, Chunk467368.Dz)(),
       unifiedStepProps: i.useMemo(() => ({
         layout: "custom-step-body",
         renderStepBody: o,
-        onBackClick: l,
         primaryCTAButtonProps: {
           disabled: s
         }
-      }), [o, l, s])
+      }), [o, s])
     })
   },
   I = {
@@ -117,6 +115,7 @@ let O = (0, Chunk467368.Dz)(),
       let {
         analyticsLocations: f
       } = (0, u.V)(h({
+        applicationId: i,
         skuId: s,
         analyticsLocations: c
       }, d));
@@ -147,26 +146,28 @@ let O = (0, Chunk467368.Dz)(),
         children: f
       } = e, {
         analyticsLocations: p
-      } = (0, a.ZP)(), _ = i.useMemo(() => ({
-        onClose: c,
+      } = (0, a.ZP)(), _ = l.onClose, m = i.useCallback(e => {
+        _(), null != c && c(e)
+      }, [_, c]), h = i.useMemo(() => ({
+        onClose: m,
         onComplete: u,
         applicationId: o,
         skuId: t,
         initialPlanId: null,
         analyticsObject: s,
         analyticsLocations: p
-      }), [c, u, o, t, s, p]), m = i.useMemo(() => ({
+      }), [m, u, o, t, s, p]), g = i.useMemo(() => ({
         skuId: t,
         loadId: n,
         flowSpecificOptions: d,
         analyticsLocations: p
-      }), [t, n, d, p]), h = i.useMemo(() => ({
-        sharedCheckoutContext: m,
-        paymentModalProps: _,
+      }), [t, n, d, p]), E = i.useMemo(() => ({
+        sharedCheckoutContext: g,
+        paymentModalProps: h,
         renderModalProps: l
-      }), [m, _, l]);
+      }), [g, h, l]);
       return (0, r.jsx)(O.Provider, {
-        value: h,
+        value: E,
         children: f
       })
     },

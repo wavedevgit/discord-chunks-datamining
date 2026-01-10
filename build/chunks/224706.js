@@ -310,6 +310,29 @@ let Z = {
       })
     })
   },
+  getDetectableBlocklist() {
+    O.Z.canFetchExecutableBlocklist() && (c.Z.dispatch({
+      type: "GAMES_BLOCKLIST_FETCH"
+    }), s.tn.get({
+      url: w.ANM.GAMES_BLOCKLIST,
+      oldFormErrors: true,
+      rejectWithError: false
+    }).then(e => {
+      var t, n;
+      let {
+        body: r
+      } = e;
+      c.Z.dispatch({
+        type: "GAMES_BLOCKLIST_UPDATE",
+        executables: null != (t = r.executables) ? t : [],
+        patterns: null != (n = r.patterns) ? n : []
+      })
+    }, e => {
+      j.error("Failed to fetch games blocklist", e), c.Z.dispatch({
+        type: "GAMES_BLOCKLIST_FETCH_FAIL"
+      })
+    }))
+  },
   getDetectableNonGames() {
     if (!g.Z.canFetch()) return;
     let e = g.Z.etag;

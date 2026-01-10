@@ -72,13 +72,13 @@ function U(e) {
   let {
     section: t
   } = e;
-  if (null != r || t !== y.pNK.ROLES) returnfalse;
+  if (null != r || t !== C.pNK.ROLES) returnfalse;
   B()
 }
 
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  r = C.Z.getProps().guild, P = false, w = false, l = true, _.clear(), G.clear(), T = y.QZA.OPEN, R = [...Z = null != r ? [...x.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, R), D = false, e && (k.clear(), L.forEach((e, t) => {
+  r = y.Z.getProps().guild, P = false, w = false, l = true, _.clear(), G.clear(), T = C.QZA.OPEN, R = [...Z = null != r ? [...x.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, R), D = false, e && (k.clear(), L.forEach((e, t) => {
     k.set(t, [...e])
   }))
 }
@@ -90,7 +90,7 @@ function F(e, t) {
     null != t.colors && r && (null != t.colors.tertiary_color ? n = "holographic" : null != t.colors.secondary_color && (n = "gradient"));
     let i = {
       solid: {
-        primary_color: y.p6O,
+        primary_color: C.p6O,
         secondary_color: null,
         tertiary_color: null
       },
@@ -108,7 +108,7 @@ function F(e, t) {
     if (null != t.colors) {
       var l, a, s;
       i[n] = {
-        primary_color: null != (l = t.colors.primary_color) ? l : y.p6O,
+        primary_color: null != (l = t.colors.primary_color) ? l : C.p6O,
         secondary_color: null != (a = t.colors.secondary_color) ? a : null,
         tertiary_color: null != (s = t.colors.tertiary_color) ? s : null
       }
@@ -153,7 +153,7 @@ function V(e) {
   let {
     guildId: t
   } = e;
-  if (null == (r = C.Z.getProps().guild) || t !== r.id || T === y.QZA.SUBMITTING) returnfalse;
+  if (null == (r = y.Z.getProps().guild) || t !== r.id || T === C.QZA.SUBMITTING) returnfalse;
   let n = [...x.Z.getSortedRoles(r.id)];
   _.forEach(e => {
     let t = z(e),
@@ -175,7 +175,7 @@ function V(e) {
 }
 class K extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(C.Z, b.Z, x.Z)
+    this.waitFor(y.Z, b.Z, x.Z)
   }
   hasChanges() {
     return P || w || D
@@ -399,7 +399,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       D = true, A.add(r.id), k.set(r.id, n), H()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, R = Z = [], L.clear(), _.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = y.QZA.CLOSED
+      r = null, R = Z = [], L.clear(), _.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = C.QZA.CLOSED
     },
     GUILD_ROLE_CREATE: V,
     GUILD_ROLE_UPDATE: V,
@@ -407,13 +407,13 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       return A.has(e.roleId) && (A.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), D = false), V(e)
     },
     GUILD_SETTINGS_ROLES_SUBMITTING: function() {
-      T = y.QZA.SUBMITTING
+      T = C.QZA.SUBMITTING
     },
     GUILD_SETTINGS_ROLES_SAVE_FAIL: function(e) {
       let {
         message: t
       } = e;
-      T = y.QZA.OPEN, l = t
+      T = C.QZA.OPEN, l = t
     },
     GUILD_SETTINGS_ROLES_SAVE_SUCCESS: function() {
       B(false)
@@ -423,14 +423,14 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         guildId: t
       } = e;
       if (null == r || t !== r.id) returnfalse;
-      r = (0, m.t8)(r, "features", new Set([...r.features, y.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE]))
+      r = (0, m.t8)(r, "features", new Set([...r.features, C.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE]))
     },
     GUILD_SETTINGS_SLOWMODE_PERMISSION_MIGRATED: function(e) {
       let {
         guildId: t
       } = e;
       if (null == r || t !== r.id) returnfalse;
-      r = (0, m.t8)(r, "features", new Set([...r.features, y.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
+      r = (0, m.t8)(r, "features", new Set([...r.features, C.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
     }
   }),
   q = Y

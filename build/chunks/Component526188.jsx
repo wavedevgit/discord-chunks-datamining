@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 526188, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i,
@@ -30,8 +30,8 @@ let i = Chunk473749.createContext({
       onGameSheetClose: u,
       collapsedHeight: m,
       quest: p,
-      taskDetails: f
-    } = e, h = r.useMemo(() => ({
+      taskDetails: h
+    } = e, f = r.useMemo(() => ({
       isExpanded: n,
       isExpansionAnimationComplete: l,
       onCtxMenuClose: s,
@@ -41,10 +41,10 @@ let i = Chunk473749.createContext({
       onGameSheetClose: u,
       collapsedHeight: m,
       quest: p,
-      taskDetails: f
-    }), [n, l, s, o, c, d, u, m, p, f]);
+      taskDetails: h
+    }), [n, l, s, o, c, d, u, m, p, h]);
     return (0, a.jsx)(i.Provider, {
-      value: h,
+      value: f,
       children: t
     })
   }

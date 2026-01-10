@@ -49,22 +49,23 @@ function w(e) {
     isPreload: a,
     jumpType: o,
     skipLocalFetch: s,
-    avoidInitialScroll: l
+    avoidInitialScroll: l,
+    fetchKey: d
   } = e;
   if (null == n || (0, A.AB)(n)) return;
-  let d = b.Z.getChannel(n);
-  if ((null == d ? true : d.type) === C.d4z.GUILD_STORE || (null == d ? true : d.type) != null && C.TPd.GUILD_THREADS_ONLY.has(d.type)) return;
-  let _ = f.Z.getOrCreate(n);
-  _.some(T.k5) && (R.log("Found expired attachment link, clearing messages"), f.Z.clear(n), _ = f.Z.getOrCreate(n)), null != _.jumpTargetId && null == r && (_ = _.mutate({
+  let _ = b.Z.getChannel(n);
+  if ((null == _ ? true : _.type) === C.d4z.GUILD_STORE || (null == _ ? true : _.type) != null && C.TPd.GUILD_THREADS_ONLY.has(_.type)) return;
+  let h = f.Z.getOrCreate(n);
+  h.some(T.k5) && (R.log("Found expired attachment link, clearing messages"), f.Z.clear(n), h = f.Z.getOrCreate(n)), null != h.jumpTargetId && null == r && (h = h.mutate({
     jumpTargetId: null,
     jumped: false,
     jumpType: u.SR.ANIMATED
-  }), f.Z.commit(_)), null != _.focusTargetId && null == r && (_ = _.mutate({
+  }), f.Z.commit(h)), null != h.focusTargetId && null == r && (h = h.mutate({
     focusTargetId: null
-  }), f.Z.commit(_));
-  let h = i;
-  if (!a || m.Z.isConnected() || _.loadingMore ? _.loadingMore || _.ready && !_.cached ? null != r && (h = true) : (null == t || null != y.Z.getGuild(t)) && (h = true) : h = true, (0, p.Z)(n) && O.ZP.hasUnread(n) && (h = true), h)
-    if (f.Z.commit(_.mutate({
+  }), f.Z.commit(h));
+  let g = i;
+  if (!a || m.Z.isConnected() || h.loadingMore ? h.loadingMore || h.ready && !h.cached ? null != r && (g = true) : (null == t || null != y.Z.getGuild(t)) && (g = true) : g = true, (0, p.Z)(n) && O.ZP.hasUnread(n) && (g = true), g)
+    if (f.Z.commit(h.mutate({
         loadingMore: true
       })), null != r) c.Z.jumpToMessage({
       channelId: n,
@@ -76,7 +77,7 @@ function w(e) {
       avoidInitialScroll: l
     });
     else {
-      if ((null == d ? true : d.isThread()) && L(n)) return R.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
+      if ((null == _ ? true : _.isThread()) && L(n)) return R.log("Jumping to start of thread ".concat(_.id)), c.Z.fetchMessages({
         channelId: n,
         limit: C.AQB,
         jump: {
@@ -85,9 +86,10 @@ function w(e) {
         },
         isPreload: a,
         skipLocalFetch: s,
-        avoidInitialScroll: l
+        avoidInitialScroll: l,
+        fetchKey: d
       });
-      if (!((null == d ? true : d.isThread()) && O.ZP.hasTrackedUnread(d.id)) || _.ready) return c.Z.fetchMessages({
+      if (!((null == _ ? true : _.isThread()) && O.ZP.hasTrackedUnread(_.id)) || h.ready) return c.Z.fetchMessages({
         channelId: n,
         limit: C.AQB,
         isPreload: a,
@@ -95,10 +97,11 @@ function w(e) {
         jump: {
           jumpType: u.SR.ANIMATED
         },
-        avoidInitialScroll: l
+        avoidInitialScroll: l,
+        fetchKey: d
       });
-      let e = O.ZP.getTrackedAckMessageId(d.id);
-      return R.log("Jumping to most recent message in thread ".concat(d.id, " - ").concat(e)), c.Z.fetchMessages({
+      let e = O.ZP.getTrackedAckMessageId(_.id);
+      return R.log("Jumping to most recent message in thread ".concat(_.id, " - ").concat(e)), c.Z.fetchMessages({
         channelId: n,
         limit: C.AQB,
         jump: {
@@ -108,7 +111,8 @@ function w(e) {
         },
         isPreload: a,
         skipLocalFetch: s,
-        avoidInitialScroll: l
+        avoidInitialScroll: l,
+        fetchKey: d
       })
     }
 }

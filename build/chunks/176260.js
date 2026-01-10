@@ -1,9 +1,6 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 176260, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  popout: "cba5926a3ea0ad97-popout",
-  popoutContent: "cba5926a3ea0ad97-popoutContent",
-  footer: "cba5926a3ea0ad97-footer",
   searchBar: "cba5926a3ea0ad97-searchBar",
   customizationContainer: "cba5926a3ea0ad97-customizationContainer",
   iconSelector: "cba5926a3ea0ad97-iconSelector",

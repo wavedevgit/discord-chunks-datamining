@@ -1,12 +1,12 @@
 /** Chunk was on 93886 **/
-/** chunk id: 422202, original params: e,t,n (module,exports,require) **/
+/** chunk id: 422202, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  P: () => l,
-  _: () => o
+  P: () => r,
+  _: () => d
 });
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_device_changed_notification",
   label: "Device-changed notification experiment",
@@ -22,40 +22,40 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function d(e) {
   let {
     location: t,
-    autoTrackExposure: n = true
+    autoTrackExposure: a = true
   } = e, {
-    isInHoldout: r
-  } = i.L.getCurrentConfig({
+    isInHoldout: c
+  } = n.L.getCurrentConfig({
     location: t
   }, {
-    autoTrackExposure: n
+    autoTrackExposure: a
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
-    disable: r,
-    autoTrackExposure: n
+    disable: c,
+    autoTrackExposure: a
   })
 }
 
-function l(e) {
+function r(e) {
   let {
     location: t,
-    autoTrackExposure: n = true
+    autoTrackExposure: a = true
   } = e, {
-    isInHoldout: r
-  } = i.L.useExperiment({
+    isInHoldout: c
+  } = n.L.useExperiment({
     location: t
   }, {
-    autoTrackExposure: n
+    autoTrackExposure: a
   });
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
-    disable: r,
-    autoTrackExposure: n
+    disable: c,
+    autoTrackExposure: a
   })
 }

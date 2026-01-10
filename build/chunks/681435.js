@@ -18,8 +18,8 @@ let g = () => {
   var e;
   let t = (0, a.e7)([u.Z], () => u.Z.getMarketingBySurface(i.K.DESKTOP_SHOP_BUTTON)),
     n = !(0, s.$sL)(),
-    [g, m] = (0, c.XR)(n ? o.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == t ? true : t.version) ? e : 0, true, true),
-    h = (0, d.mB)(t),
+    [g, h] = (0, c.XR)(n ? o.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == t ? true : t.version) ? e : 0, true, true),
+    m = (0, d.mB)(t),
     b = null != g ? ((e, t) => {
       var n, r, i, a, o, s, c, u;
       if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
@@ -86,10 +86,10 @@ let g = () => {
         }
       }
       return null
-    })(h, t) : null,
+    })(m, t) : null,
     _ = r.useCallback(() => {
-      null != b && m(f.L.AUTO)
-    }, [b, m]);
+      null != b && h(f.L.AUTO)
+    }, [b, h]);
   return {
     shopButtonDisplayOptions: b,
     dismissShopButtonDC: _

@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => p
+  m: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk642915 = require("./642915.js"),
   Chunk323453 = require("./323453.js");
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,20 +46,20 @@ function h(e, t) {
   }), e
 }
 
-function p(e) {
+function h(e) {
   var t, {
       id: n,
       className: i,
-      innerClassName: p,
+      innerClassName: h,
       renderIcon: g,
-      text: b,
-      selected: m,
+      text: m,
+      selected: b,
       trailing: y,
-      background: O,
-      showUnread: v = false,
+      background: v,
+      showUnread: O = false,
       ref: j
     } = e,
-    C = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -74,12 +74,12 @@ function p(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let x = (0, a.JA)(n),
-    E = null != (t = (0, o.q)(b)) ? t : "";
+  let C = (0, a.JA)(n),
+    E = null != (t = (0, o.q)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: j,
-    children: (0, r.jsxs)(s.kL8, h(f({}, C), {
-      buttonProps: h(f({}, x), {
+    children: (0, r.jsxs)(s.kL8, f(p({}, x), {
+      buttonProps: f(p({}, C), {
         id: n,
         role: "button"
       }),
@@ -92,16 +92,16 @@ function p(e) {
           right: 4
         }
       },
-      onContextMenu: null != C.onContextMenu ? C.onContextMenu : e => {
+      onContextMenu: null != x.onContextMenu ? x.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {
-        [d.modeSelected]: m
+        [d.modeSelected]: b
       }, i),
-      children: [O, v ? (0, r.jsx)("div", {
+      children: [v, O ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: l()([d.link, d.basicChannelRowLink, p]),
+        className: l()([d.link, d.basicChannelRowLink, h]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {
@@ -110,7 +110,7 @@ function p(e) {
           }), (0, r.jsx)("div", {
             className: d.name,
             "aria-hidden": true,
-            children: b
+            children: m
           }), y]
         })
       })]

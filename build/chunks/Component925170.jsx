@@ -1,7 +1,7 @@
 /** Chunk was on 38576 **/
 /** chunk id: 925170, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,18 +9,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk810473 = require("./810473.js"),
+  Chunk500143 = require("./500143.js"),
   Chunk299560 = require("./299560.jsx"),
-  Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk387083 = require("./387083.js");
 
-function O(e) {
+function b(e) {
   var t, r, {
-      onClose: O,
+      onClose: b,
       trackUserProfileEditAction: d
     } = e,
-    y = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -35,19 +34,25 @@ function O(e) {
       }
       return o
     }(e, ["onClose", "trackUserProfileEditAction"]);
-  let g = (0, c.e7)([s.default], () => s.default.getCurrentUser()),
-    j = (0, a.Z)(),
-    h = o.useRef(new Set(j)),
-    m = p.rR.filter(e => h.current.has(e)),
-    w = m.length > 0,
-    [P, k] = o.useState(false),
-    v = {
-      onClick: () => O(),
+  let g = (0, l.e7)([s.default], () => s.default.getCurrentUser()),
+    y = function() {
+      let e = (0, u.Z)({
+          location: "UserProfileWidgetAddModal"
+        }),
+        [t, r] = o.useState(e);
+      return o.useEffect(() => {
+        e.length > t.length && r(e)
+      }, [e, t]), t
+    }(),
+    j = y.length > 0,
+    [h, m] = o.useState(false),
+    P = {
+      onClick: () => b(),
       text: f.intl.string(f.t.cpT0Cq)
     },
-    x = o.useCallback(() => {
-      k(true), O()
-    }, [O]);
+    w = o.useCallback(() => {
+      m(true), b()
+    }, [b]);
   return null == g ? null : (0, n.jsx)(i.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -67,20 +72,20 @@ function O(e) {
     return e
   }({
     title: f.intl.string(f.t["grUgR+"]),
-    actions: w ? [] : [v],
-    size: w ? "md" : "sm",
-    onClose: O
-  }, y), r = r = {
-    children: w ? (0, n.jsx)("ul", {
+    actions: j ? [] : [P],
+    size: j ? "md" : "sm",
+    onClose: b
+  }, O), r = r = {
+    children: j ? (0, n.jsx)("ul", {
       "aria-label": f.intl.string(f.t["+EIBSA"]),
-      className: b.options,
-      children: m.map(e => (0, n.jsx)(u.Z, {
-        widgetType: e,
-        onAddWidget: x,
-        loading: P,
+      className: p.options,
+      children: y.map(e => (0, n.jsx)(a.Z, {
+        widget: e,
+        onAddWidget: w,
+        loading: h,
         trackUserProfileEditAction: d
-      }, e))
-    }) : (0, n.jsx)(l.Text, {
+      }, e.getUniqueKey()))
+    }) : (0, n.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "text-subtle",
       children: f.intl.string(f.t["1nkDOs"])

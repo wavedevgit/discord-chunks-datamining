@@ -1,5 +1,6 @@
-/** Chunk was on 41700 **/
-/** chunk id: 791486, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 791486, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   placeholderPulse: "c8ffbb79449f399c-placeholderPulse",
   container: "c8ffbb79449f399c-container",
@@ -7,6 +8,8 @@ module.exports = {
   members: "c8ffbb79449f399c-members",
   member: "c8ffbb79449f399c-member",
   membersGroup: "c8ffbb79449f399c-membersGroup",
+  membersGroupHeader: "c8ffbb79449f399c-membersGroupHeader",
+  membersGroupName: "c8ffbb79449f399c-membersGroupName",
   hiddenMembers: "c8ffbb79449f399c-hiddenMembers",
   memberGroupsPlaceholder: "c8ffbb79449f399c-memberGroupsPlaceholder",
   roleIcon: "c8ffbb79449f399c-roleIcon",

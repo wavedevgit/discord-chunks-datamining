@@ -1,5 +1,6 @@
-/** Chunk was on 40184 **/
-/** chunk id: 21825, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 21825, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   S: () => c
 });
@@ -9,19 +10,19 @@ var Chunk113570 = require("./113570.jsx"),
   Chunk482641 = require("./482641.jsx"),
   Chunk613725 = require("./613725.jsx"),
   Chunk350707 = require("./350707.jsx");
-let s = Object.freeze({
+let l = Object.freeze({
     "voice-conversations": {
       popoutPosition: "right",
       highPriority: true,
       textAlign: Chunk350707.iu.CENTER,
-      media: () => (0, i.jsx)(l.Z, {})
+      media: () => (0, r.jsx)(a.Z, {})
     },
     "writing-messages": {
       popoutPosition: "top",
       highPriority: true,
       textAlign: Chunk350707.iu.CENTER,
       spacing: 10,
-      media: () => (0, i.jsx)(a.Z, {})
+      media: () => (0, r.jsx)(o.Z, {})
     },
     "direct-messages": {
       popoutPosition: "right"
@@ -34,7 +35,7 @@ let s = Object.freeze({
       popoutPosition: "right",
       textAlign: Chunk350707.iu.CENTER,
       spacing: 8,
-      media: () => (0, i.jsx)(r.Z, {})
+      media: () => (0, r.jsx)(i.Z, {})
     },
     "instant-invite": {
       popoutPosition: "right",
@@ -58,4 +59,4 @@ let s = Object.freeze({
       popoutPosition: "right"
     }
   }),
-  c = e => e in s ? s[e] : null
+  c = e => e in l ? l[e] : null

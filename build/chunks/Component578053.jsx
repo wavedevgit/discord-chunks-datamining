@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   g: () => O,
-  u: () => C
+  u: () => y
 }), require("./290780.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -74,7 +74,7 @@ function O(e) {
       afkChannelId: t
     })
   }, []);
-  return (0, r.jsx)(y, {
+  return (0, r.jsx)(C, {
     label: o,
     value: null != s ? s : x,
     options: u,
@@ -83,7 +83,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     canManageGuild: t,
     guildId: n,
@@ -113,7 +113,7 @@ function C(e) {
       systemChannelId: t
     })
   }, []);
-  return (0, r.jsx)(y, {
+  return (0, r.jsx)(C, {
     label: o,
     description: d,
     layout: u,
@@ -124,7 +124,7 @@ function C(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     value: t,
     options: n,

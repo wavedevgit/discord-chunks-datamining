@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function C(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function C(e, t) {
   }), e
 }
 
-function y(e) {
+function C(e) {
   let {
     rule: t,
     triggerType: n
@@ -103,7 +103,7 @@ let N = e => {
       }
       return i
     }(e, ["className", "children"]);
-    return (0, r.jsx)(s.P3F, C(O({
+    return (0, r.jsx)(s.P3F, y(O({
       className: t,
       onClick: N,
       onMouseDown: N,
@@ -119,7 +119,7 @@ function I(e) {
     rule: n,
     onChangeRule: i,
     onContextMenu: l
-  } = e, o = () => i(C(O({}, n), {
+  } = e, o = () => i(y(O({}, n), {
     enabled: !n.enabled
   }));
   return (0, r.jsxs)(r.Fragment, {
@@ -174,7 +174,7 @@ function _(e) {
     updateRule: p
   } = (0, g.pH)(t.guildId), [h, x] = i.useState(t.enabled), I = (0, l.throttle)(async () => {
     if (!d) {
-      let e = C(O({}, t), {
+      let e = y(O({}, t), {
         enabled: !h
       });
       x(!h);
@@ -215,7 +215,7 @@ function _(e) {
         className: v.ruleTextDescription,
         variant: "text-sm/normal",
         children: P
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(C, {
         rule: t,
         triggerType: t.triggerType
       })]
@@ -277,7 +277,7 @@ function T(e) {
         className: v.ruleTextDescription,
         variant: "text-sm/normal",
         children: o
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(C, {
         triggerType: t
       })]
     }), (0, r.jsx)(E, {

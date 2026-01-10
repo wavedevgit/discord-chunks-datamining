@@ -39,67 +39,67 @@ function N(e) {
   let {
     selectedTab: t,
     handleTransition: n
-  } = e, a = (0, f.ZP)(), N = (0, i.e7)([S.default], () => S.default.getCurrentUser()), {
+  } = e, a = (0, f.ZP)(), N = (0, o.e7)([S.default], () => S.default.getCurrentUser()), {
     enabled: R
   } = (0, E.W)({
     location: "collectibles_shop_header_bar"
   }), P = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
   }), {
-    searchQuery: Z
-  } = (0, x.S)(), w = l.useRef(null), [D, H] = l.useState(false);
-  (0, d.s)(w, l.useCallback(e => {
-    H(e.contentRect.width < j.J)
+    searchQuery: w
+  } = (0, O.S)(), Z = l.useRef(null), [D, M] = l.useState(false);
+  (0, d.s)(Z, l.useCallback(e => {
+    M(e.contentRect.width < T.J)
   }, []));
-  let M = (0, _.Pc)("CollectiblesShopHeaderBar"),
-    F = M ? [c.z.ORB_RENTAL_NEW_BADGE] : [],
+  let H = (0, x.Pc)("CollectiblesShopHeaderBar"),
+    F = H ? [c.z.ORB_RENTAL_NEW_BADGE] : [],
     [W, U] = (0, g.US)(F),
-    z = M && W === c.z.ORB_RENTAL_NEW_BADGE;
+    z = H && W === c.z.ORB_RENTAL_NEW_BADGE;
   l.useEffect(() => () => {
-    z && U(L.L.USER_DISMISS)
+    z && U(I.L.USER_DISMISS)
   }, [z, U]);
   let V = l.useMemo(() => [{
-      tab: k.AW.HOME,
+      tab: j.AW.HOME,
       label: A.intl.string(A.t.ijDDwz)
     }, {
-      tab: k.AW.CATALOG,
+      tab: j.AW.CATALOG,
       label: A.intl.string(A.t.Ah5sJo),
       hasSubmenu: true
     }, ...R ? [{
-      tab: k.AW.ORBS,
+      tab: j.AW.ORBS,
       label: A.intl.string(A.t.EBYkzk)
     }] : []], [R]),
-    G = t === k.AW.ORBS ? T.ZY5.SHOP_ORBS_TAB : T.ZY5.COLLECTIBLES_SHOP,
+    G = t === j.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
     K = l.useCallback(() => {
       (0, C.Y)({
         pageType: G,
-        sectionType: T.jXE.ORBS_BALANCE_MENU,
-        ctaObject: T.qAy.CTA_TO_QUEST_HOME
+        sectionType: k.jXE.ORBS_BALANCE_MENU,
+        ctaObject: k.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
-        fromContent: o.j.ORBS_BALANCE_MENU
+        fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [G]),
     Y = l.useCallback(() => {
       (null == N ? true : N.id) != null && (0, h.openUserProfileModal)({
         userId: N.id,
-        tabSection: I.oh.WISHLIST,
+        tabSection: L.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == N ? true : N.id]),
     q = l.useCallback(e => {
-      n(e), e === k.AW.ORBS && z && U(L.L.USER_DISMISS)
+      n(e), e === j.AW.ORBS && z && U(I.L.USER_DISMISS)
     }, [n, z, U]);
   return (0, r.jsx)(u.f6W, {
     theme: a,
     children: e => (0, r.jsx)("div", {
-      ref: w,
+      ref: Z,
       children: (0, r.jsxs)(b.Z, {
         disableDoubleClick: true,
         className: s()(e, B.headerBar),
         innerClassname: R ? B.headerBarInner : true,
         children: [(0, r.jsx)(u.P3F, {
           className: B.shopHomeLink,
-          onClick: () => n(k.AW.HOME),
+          onClick: () => n(j.AW.HOME),
           "aria-label": A.intl.string(A.t.pWG4ze) + " home",
           children: (0, r.jsx)(u.EOn, {
             size: "md",
@@ -112,11 +112,11 @@ function N(e) {
           showOrbRentalNewBadge: z
         }), (0, r.jsxs)("div", {
           className: B.alignedRightContent,
-          children: [(0, r.jsx)(O.Z, {
+          children: [(0, r.jsx)(_.Z, {
             handleTransition: n,
             selectedTab: t,
             isNarrow: D,
-            hasText: "" !== Z
+            hasText: "" !== w
           }), P && (0, r.jsx)(u.P3F, {
             className: B.wishlistButton,
             onClick: Y,

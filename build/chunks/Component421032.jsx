@@ -1,4 +1,4 @@
-/** Chunk was on 97476 **/
+/** Chunk was on 76246 **/
 /** chunk id: 421032, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -28,15 +28,15 @@ function x(e) {
     guildEventId: x,
     onClick: _,
     isActive: C
-  } = e, j = (0, l.e7)([b.ZP], () => b.ZP.getGuildScheduledEvent(x)), k = (0, f.Z)(n, null == j ? true : j.id), I = (0, l.e7)([u.Z], () => u.Z.getGuild(null == j ? true : j.guild_id)), N = (0, l.e7)([s.Z], () => s.Z.getChannel(null == j ? true : j.channel_id));
+  } = e, j = (0, l.e7)([b.ZP], () => b.ZP.getGuildScheduledEvent(x)), k = (0, f.Z)(n, null == j ? true : j.id), I = (0, l.e7)([u.Z], () => u.Z.getGuild(null == j ? true : j.guild_id)), N = (0, l.e7)([d.Z], () => d.Z.getChannel(null == j ? true : j.channel_id));
   if (null == j) return null;
   let {
     is_canceled: Z = false
-  } = null != k ? k : {}, E = (null == k ? true : k.scheduled_start_time) != null ? new Date(null == k ? true : k.scheduled_start_time) : i, y = (0, h.DK)(j), S = Z ? m.p1.CANCELED : m.p1.SCHEDULED;
-  y === n && (S = j.status);
-  let w = (null == j ? true : j.scheduled_start_time) != null ? (0, h.lh)(k, E, new Date(null == j ? true : j.scheduled_start_time)) : null,
+  } = null != k ? k : {}, y = (null == k ? true : k.scheduled_start_time) != null ? new Date(null == k ? true : k.scheduled_start_time) : i, w = (0, p.DK)(j), E = Z ? m.p1.CANCELED : m.p1.SCHEDULED;
+  w === n && (E = j.status);
+  let S = (null == j ? true : j.scheduled_start_time) != null ? (0, p.lh)(k, y, new Date(null == j ? true : j.scheduled_start_time)) : null,
     P = e => {
-      e.stopPropagation(), null != I && (0, d.jW)(e, async () => {
+      e.stopPropagation(), null != I && (0, s.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([t.e("91973"), t.e("470")]).then(t.bind(t, 215269));
@@ -77,9 +77,9 @@ function x(e) {
     },
     onContextMenu: P,
     "aria-label": "",
-    children: [(0, a.jsx)(p.z, {
-      startTime: E.toISOString(),
-      status: null != w ? w : S,
+    children: [(0, a.jsx)(h.z, {
+      startTime: y.toISOString(),
+      status: null != S ? S : E,
       eventType: j.entity_type,
       guildEventId: j.id,
       recurrenceId: n,

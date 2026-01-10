@@ -124,8 +124,8 @@ let j = function(e) {
   })), O = i.useCallback(e => {
     (0, c.hS)(e)
   }, []), {
-    handleDragStart: C,
-    handleDragReset: y,
+    handleDragStart: y,
+    handleDragReset: C,
     handleDragComplete: N
   } = (0, s.Z)(v, O);
   return (0, r.jsxs)("div", {
@@ -136,8 +136,8 @@ let j = function(e) {
       actionIndex: n,
       onChange: g,
       onDelete: j,
-      onDragStart: C,
-      onDragReset: y,
+      onDragStart: y,
+      onDragReset: C,
       onDragComplete: N
     }, e.channelId)), (0, r.jsx)(h, {}), n.length < o.O9 && (0, r.jsx)(x, {
       guildId: t,

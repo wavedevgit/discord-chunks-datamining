@@ -49,8 +49,7 @@ function _(e) {
 function m(e, t) {
   _(e);
   let n = r.useMemo(() => null != t ? {
-    width: t.coverImageWidth,
-    height: t.coverImageHeight
+    size: t.coverImageSize
   } : true, [t]);
   return (0, o.cj)([c.Z], () => null == e ? {
     isFetching: false,

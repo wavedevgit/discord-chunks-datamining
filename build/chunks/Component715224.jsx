@@ -42,7 +42,7 @@ function m(e) {
     d.Z.updateGuild({
       systemChannelFlags: r
     })
-  }, [n.systemChannelFlags]), x = i.useCallback(e => h(u.xmn.SUPPRESS_JOIN_NOTIFICATIONS, !e), [h]), j = i.useCallback(e => h(u.xmn.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [h]), v = i.useCallback(e => h(u.xmn.SUPPRESS_UGC_ADDED_NOTIFICATIONS, !e), [h]), O = i.useCallback(e => h(u.xmn.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [h]), C = i.useCallback(e => h(u.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [h]), y = i.useCallback(e => h(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [h]), N = i.useCallback(e => h(u.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [h]), E = i.useCallback(e => h(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [h]), I = null != (t = n.systemChannelId) ? t : f, S = (0, c.eI)(n), _ = S || (0, l.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), T = S || (0, l.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
+  }, [n.systemChannelFlags]), x = i.useCallback(e => h(u.xmn.SUPPRESS_JOIN_NOTIFICATIONS, !e), [h]), j = i.useCallback(e => h(u.xmn.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [h]), v = i.useCallback(e => h(u.xmn.SUPPRESS_UGC_ADDED_NOTIFICATIONS, !e), [h]), O = i.useCallback(e => h(u.xmn.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [h]), y = i.useCallback(e => h(u.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [h]), C = i.useCallback(e => h(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [h]), N = i.useCallback(e => h(u.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [h]), E = i.useCallback(e => h(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [h]), I = null != (t = n.systemChannelId) ? t : f, S = (0, c.eI)(n), _ = S || (0, l.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), T = S || (0, l.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.rsf, {
       label: g.intl.string(g.t["+f0bXQ"]),
@@ -52,7 +52,7 @@ function m(e) {
     }), (0, r.jsx)(a.rsf, {
       label: g.intl.string(g.t["72k7jf"]),
       checked: !(0, l.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES),
-      onChange: C,
+      onChange: y,
       disabled: !m || I === f
     }), (0, r.jsx)(a.rsf, {
       label: g.intl.string(g.t["2L8NCN"]),
@@ -72,7 +72,7 @@ function m(e) {
     }), _ && (0, r.jsx)(a.rsf, {
       label: g.intl.string(g.t["54n19R"]),
       checked: !(0, l.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS),
-      onChange: y,
+      onChange: C,
       disabled: !m || I === f
     }), T && (0, r.jsx)(a.rsf, {
       label: g.intl.string(g.t["IhF5d+"]),

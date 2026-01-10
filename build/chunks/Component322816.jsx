@@ -185,11 +185,11 @@ function Z(e) {
         children: [(0, r.jsx)(O.Z, {
           guild: t,
           role: n,
-          selectedSection: y.ZI.PERMISSIONS,
+          selectedSection: C.ZI.PERMISSIONS,
           setSelectedSection: s
         }), (0, r.jsx)("div", {
           className: I.noticeContainer,
-          children: (0, r.jsx)(C.Z, {
+          children: (0, r.jsx)(y.Z, {
             role: n
           })
         }), (0, r.jsx)("div", {

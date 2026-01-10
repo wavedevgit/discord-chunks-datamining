@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 682475, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => ed
@@ -73,7 +73,7 @@ function ed() {
       name: "Analytics",
       group: es.v0.EXPERIMENTS,
       tags: ["events", "impressions", "tracking"],
-      render: () => (0, a.jsx)(h.Z, {})
+      render: () => (0, a.jsx)(f.Z, {})
     }, {
       id: "triggers",
       name: "Triggers",
@@ -97,7 +97,7 @@ function ed() {
       id: "shop",
       name: "Shop",
       group: es.v0.BILLING,
-      render: () => (0, a.jsx)(K.C, {})
+      render: () => (0, a.jsx)(q.C, {})
     }), e.push({
       id: "payment_flow_modals",
       name: "Payment Flow Modals",
@@ -114,13 +114,13 @@ function ed() {
       name: "Quick Actions",
       group: es.v0.DEVELOPMENT,
       tags: ["captcha", "safety", "checkpoint", "vibe", "vibing", "override", "premium type"],
-      render: () => (0, a.jsx)(H.Z, {})
+      render: () => (0, a.jsx)(W.Z, {})
     }), e.push({
       id: "end_to_end_encryption",
       name: "E2EE",
       group: es.v0.DEVELOPMENT,
       tags: ["secure frames", "encryption"],
-      render: () => (0, a.jsx)(C.Z, {})
+      render: () => (0, a.jsx)(y.Z, {})
     }), e.push({
       id: "performance",
       name: "Performance",
@@ -131,13 +131,13 @@ function ed() {
       id: "age_verification",
       name: "Age Verification",
       group: es.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(f.Z, {})
+      render: () => (0, a.jsx)(h.Z, {})
     }), e.push({
       id: "feedback",
       name: "Feedback",
       group: es.v0.USERS,
       tags: ["surveys"],
-      render: () => (0, a.jsx)(y.Z, {})
+      render: () => (0, a.jsx)(C.Z, {})
     }), e.push({
       id: "overlay",
       name: "Overlay v3",
@@ -168,7 +168,7 @@ function ed() {
       name: "Rive",
       group: es.v0.UI,
       tags: ["animation"],
-      render: () => (0, a.jsx)(q.Z, {})
+      render: () => (0, a.jsx)(K.Z, {})
     }), e.push({
       id: "lottie",
       name: "Lottie",
@@ -196,7 +196,7 @@ function ed() {
       id: "appearance_randomizer",
       name: "Appearance Randomizer",
       group: es.v0.UI,
-      render: () => (0, a.jsx)(W.Z, {})
+      render: () => (0, a.jsx)(H.Z, {})
     }), e.push({
       id: "overlays",
       name: "Dev Overlays",
@@ -209,7 +209,7 @@ function ed() {
       name: "Messaging",
       group: es.v0.USERS,
       tags: ["dm", "nux", "system dm"],
-      render: () => (0, a.jsx)(D.Z, {})
+      render: () => (0, a.jsx)(Z.Z, {})
     }), e.push({
       id: "reporting",
       name: "Reporting",
@@ -227,7 +227,7 @@ function ed() {
       name: "Modals",
       group: es.v0.UI,
       tags: ["dialogs", "popups"],
-      render: () => (0, a.jsx)(Z.Z, {})
+      render: () => (0, a.jsx)(D.Z, {})
     }), e.push({
       id: "layers",
       name: "Layers",

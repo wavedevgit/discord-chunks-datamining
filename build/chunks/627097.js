@@ -2,13 +2,14 @@
 /** chunk id: 627097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => d
+  O: () => f
 });
 var Chunk663042 = require("./663042.js"),
   Chunk690775 = require("./690775.js"),
+  Chunk805422 = require("./805422.js"),
   Chunk390551 = require("./390551.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,20 +18,20 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
 
-function l(e, t) {
+function c(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -41,21 +42,21 @@ function l(e, t) {
   return n
 }
 
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = .2,
-  d = (0, Chunk663042.U)()((0, Chunk690775.tJ)((e, t) => ({
+let d = .2,
+  f = (0, Chunk663042.U)()((0, Chunk690775.tJ)((e, t) => ({
     songIndex: 0,
-    genre: a.AL.SLEEPY,
+    genre: o.AL.SLEEPY,
     playRadio: true,
     globalMute: false,
     volumes: {
-      radio: u,
-      environment: u,
-      campfire: u
+      radio: d,
+      environment: d,
+      campfire: d
     },
     setSongIndex: t => e({
       songIndex: t
@@ -71,22 +72,26 @@ let u = .2,
       globalMute: t
     }),
     setVolume: (t, n) => e(e => ({
-      volumes: c(s({}, e.volumes), {
+      volumes: u(l({}, e.volumes), {
         [t]: n
       })
     })),
     playNextSong: () => {
       let n = t(),
-        r = a.at[n.genre].length;
-      0 !== r && e({
-        songIndex: (n.songIndex + 1) % r
+        r = a.Z.getSongs(n.genre);
+      if (null == r) return;
+      let i = r.length;
+      0 !== i && e({
+        songIndex: (n.songIndex + 1) % i
       })
     },
     playPrevSong: () => {
       let n = t(),
-        r = a.at[n.genre].length;
-      0 !== r && e({
-        songIndex: n.songIndex - 1 >= 0 ? n.songIndex - 1 : r - 1
+        r = a.Z.getSongs(n.genre);
+      if (null == r) return;
+      let i = r.length;
+      0 !== i && e({
+        songIndex: n.songIndex - 1 >= 0 ? n.songIndex - 1 : i - 1
       })
     },
     resetPlayback: () => e({

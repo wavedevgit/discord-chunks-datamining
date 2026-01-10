@@ -64,12 +64,12 @@ let b = function(e) {
     }), (0, r.jsxs)(c.Z, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Heading, {
-          className: m.sectionTitle,
+          className: h.sectionTitle,
           variant: "heading-lg/semibold",
           color: "text-strong",
           children: g.intl.string(g.t["2DfZIQ"])
         }), (0, r.jsxs)("div", {
-          className: m.content,
+          className: h.content,
           children: [b.map(e => (0, r.jsx)(f.VD, {
             guild: e,
             onClick: () => a.Z.transitionToGuildSync(e.id)
@@ -78,21 +78,21 @@ let b = function(e) {
           })]
         })]
       }) : (0, r.jsx)("div", {
-        className: m.content,
+        className: h.content,
         children: (0, r.jsx)(d.Z, {
           hasHub: false
         })
       }), (0, r.jsx)("div", {
-        className: h.divider
+        className: m.divider
       }), (0, r.jsxs)("div", {
-        className: h.disclaimer,
+        className: m.disclaimer,
         children: [(0, r.jsxs)(l.Text, {
-          className: h.text,
+          className: m.text,
           variant: "text-sm/medium",
           color: "text-default",
           children: [g.intl.string(g.t.O1k9XX), " "]
         }), (0, r.jsx)(l.Text, {
-          className: h.text,
+          className: m.text,
           variant: "text-sm/medium",
           color: "text-default",
           children: g.intl.string(g.t.FV5dvh)

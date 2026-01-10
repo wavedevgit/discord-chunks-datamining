@@ -3,7 +3,7 @@
 require.d(exports, {
   E: () => S,
   Y: () => x,
-  default: () => E
+  default: () => P
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -33,8 +33,8 @@ function x(e) {
     userId: n,
     channelId: l,
     guildId: o,
-    context: c
-  } = e, s = (0, O.Z)({
+    context: a
+  } = e, s = (0, m.Z)({
     userId: n,
     guildId: o,
     channelId: l,
@@ -42,12 +42,12 @@ function x(e) {
     icon: (0, i.jsx)(r.tBG, {
       size: "sm"
     }),
-    label: h.intl.string(h.t.iXAna6)
-  }), d = (0, p.Z)(n, c, r.kBi), b = (0, Z.Z)(n), g = (0, v.Z)(n), j = (0, a.Z)(n), m = (0, u.Z)(n), y = (0, f.Z)();
+    label: y.intl.string(y.t.iXAna6)
+  }), d = (0, v.Z)(n, a, r.kBi), b = (0, Z.Z)(n), g = (0, O.Z)(n), j = (0, c.Z)(n), p = (0, u.Z)(n), h = (0, f.Z)();
   return [(0, i.jsxs)(r.kSQ, {
     children: [s, d]
   }), (0, i.jsxs)(r.kSQ, {
-    children: [b, g, j, m, t && y]
+    children: [b, g, j, p, t && h]
   })]
 }
 
@@ -60,9 +60,9 @@ function S(e, t, n) {
     }),
     o = (0, b.Z)({
       id: e.id,
-      label: h.intl.string(h.t["/AXYnE"])
+      label: y.intl.string(y.t["/AXYnE"])
     }),
-    c = (0, m.Z)({
+    a = (0, p.Z)({
       user: e,
       guildId: n,
       channelId: t,
@@ -74,45 +74,45 @@ function S(e, t, n) {
       channelId: t,
       location: "GuildVoiceUserContextMenu"
     }),
-    a = (0, i.jsxs)(r.kSQ, {
+    c = (0, i.jsxs)(r.kSQ, {
       children: [l, o]
     });
   return [(0, i.jsxs)(r.kSQ, {
-    children: [c, s]
-  }), a]
+    children: [a, s]
+  }), c]
 }
-let E = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let P = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     channel: n,
     onSelect: o,
-    onInteraction: c,
+    onInteraction: a,
     context: s
-  } = e, a = n.id, u = t.isNonUserBot(), d = t.id === g.default.getId(), f = x({
+  } = e, c = n.id, u = t.isNonUserBot(), d = t.id === g.default.getId(), f = x({
     isOwnSettings: d,
     userId: t.id,
-    channelId: a,
+    channelId: c,
     context: s
-  }), j = S(t, a), m = (0, b.Z)({
+  }), j = S(t, c), p = (0, b.Z)({
     id: t.id,
-    label: h.intl.string(h.t["/AXYnE"])
+    label: y.intl.string(y.t["/AXYnE"])
   });
   return (0, i.jsx)(r.v2r, {
     navId: "user-context",
     onClose: l.Zy,
-    "aria-label": h.intl.string(h.t.liqwPJ),
+    "aria-label": y.intl.string(y.t.liqwPJ),
     onSelect: o,
-    onInteraction: c,
+    onInteraction: a,
     variant: "fixed",
     children: !u && (0, i.jsxs)(i.Fragment, {
       children: [f, !d && (0, i.jsx)(r.kSQ, {
         children: (0, i.jsx)(r.sNh, {
           id: "more-options",
-          label: h.intl.string(h.t.PdRCRg),
+          label: y.intl.string(y.t.PdRCRg),
           children: j
         })
       }), d && (0, i.jsx)(r.kSQ, {
-        children: m
+        children: p
       })]
     })
   })

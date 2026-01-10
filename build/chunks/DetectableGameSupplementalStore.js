@@ -2,12 +2,13 @@
 /** chunk id: 669764, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  Chunk570140 = require("./570140.js"),
+  Chunk591759 = require("./591759.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,31 +16,31 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new Map,
-  l = new Set,
+let l = new Map,
   c = new Set,
-  u = new Set;
+  u = new Set,
+  d = new Set;
 
-function d() {
-  s = new Map, l = new Set, c = new Set, u = new Set
+function f() {
+  l = new Map, c = new Set, u = new Set, d = new Set
 }
 
-function f(e) {
+function p(e) {
   let {
     applicationIds: t
   } = e;
   t.forEach(e => {
-    l.add(e), c.delete(e)
+    c.add(e), u.delete(e)
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     applicationIds: t,
     supplementalGameData: n
   } = e, r = new Set(t);
   t.forEach(e => {
-    l.delete(e), c.delete(e)
+    c.delete(e), u.delete(e)
   }), n.forEach(e => {
     let {
       application_id: t,
@@ -47,7 +48,7 @@ function p(e) {
       summary: i,
       websites: a,
       themes: o,
-      genres: l,
+      genres: s,
       platforms: c,
       artwork_urls: u,
       screenshot_urls: d,
@@ -58,14 +59,14 @@ function p(e) {
       publisher_names: h,
       developer_names: g
     } = e;
-    r.delete(t), s.set(t, {
+    r.delete(t), l.set(t, {
       applicationId: t,
       name: n,
       summary: i,
       summaryLocalized: m,
       websites: a,
       themes: o,
-      genres: l,
+      genres: s,
       platforms: c,
       artwork: u,
       screenshots: d,
@@ -76,61 +77,64 @@ function p(e) {
       developers: null != g ? g : []
     })
   }), r.forEach(e => {
-    s.has(e) || u.add(e)
+    l.has(e) || d.add(e)
   })
 }
 
-function _(e) {
+function m(e) {
   let {
     applicationIds: t
   } = e;
   t.forEach(e => {
-    l.delete(e), c.add(e)
+    c.delete(e), u.add(e)
   })
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk442837.ZP.Store) {
   canFetch(e) {
-    return !l.has(e) && !c.has(e) && !s.has(e) && !u.has(e)
+    return !c.has(e) && !u.has(e) && !l.has(e) && !d.has(e)
   }
   isFetching(e) {
-    return l.has(e)
-  }
-  didFetchingFail(e) {
     return c.has(e)
   }
+  didFetchingFail(e) {
+    return u.has(e)
+  }
   getGame(e) {
-    return s.get(e)
+    return l.get(e)
   }
   getGames(e) {
-    return e.map(e => s.get(e))
+    return e.map(e => l.get(e))
   }
   getLocalizedName(e) {
     var t;
-    return null == (t = s.get(e)) ? true : t.name
+    return null == (t = l.get(e)) ? true : t.name
   }
   getThemes(e) {
     var t;
-    return null == (t = s.get(e)) ? true : t.themes
+    return null == (t = l.get(e)) ? true : t.themes
   }
   getCoverImageUrl(e, t) {
     var n;
-    let r = null == (n = s.get(e)) ? true : n.coverImageUrl;
-    return null == r ? null : null == t ? r : "".concat(r, "?width=").concat(t.width, "&height=").concat(t.height)
+    let r = null == (n = l.get(e)) ? true : n.coverImageUrl;
+    if (null == r) return null;
+    if (null == t) return r;
+    let i = o.Z.toURLSafe(r);
+    return null == i ? r : (i.searchParams.set("size", t.size.toString()), i.toString())
   }
   noDataAvailable(e) {
-    return u.has(e)
+    return d.has(e)
   }
   numNoDataAvailable() {
-    return u.size
+    return d.size
   }
   numSupplementalGames() {
-    return s.size
+    return l.size
   }
 }
-o(m, "displayName", "DetectableGameSupplementalStore");
-let h = new m(Chunk570140.Z, {
-  LOGOUT: d,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH: f,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: p,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: _
+s(h, "displayName", "DetectableGameSupplementalStore");
+let g = new h(Chunk570140.Z, {
+  LOGOUT: f,
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH: p,
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: _,
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: m
 })

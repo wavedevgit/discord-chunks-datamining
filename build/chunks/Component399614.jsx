@@ -60,12 +60,12 @@ let p = [],
       handleDragStart: j,
       handleDragReset: v,
       handleDragComplete: O
-    } = (0, s.Z)(x, c.lq), C = i.useCallback((e, n) => {
+    } = (0, s.Z)(x, c.lq), y = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
-    }, [t]), y = i.useCallback(() => {
+    }, [t]), C = i.useCallback(() => {
       if (null != t) return (0, a.ZDy)(async () => {
         let {
           default: e
@@ -73,10 +73,10 @@ let p = [],
         return n => (0, r.jsx)(e, b(m({}, n), {
           guildId: t,
           onSave: c.r2,
-          onIconUpload: C
+          onIconUpload: y
         }))
       })
-    }, [t, C]);
+    }, [t, y]);
     return (0, r.jsxs)("div", {
       className: f.editResources,
       children: [h.map((e, n) => (0, r.jsx)(u.Z, {
@@ -88,7 +88,7 @@ let p = [],
         onDragComplete: O
       }, e.channelId)), h.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: f.addActionItem,
-        onClick: y,
+        onClick: C,
         children: [(0, r.jsx)(a.oFk, {
           size: "xs",
           color: "currentColor"

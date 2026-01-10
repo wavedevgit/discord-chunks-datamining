@@ -1,7 +1,7 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 53870 **/
 /** chunk id: 589580, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => o
+  p: () => u
 });
 var Chunk573654 = require("./573654.js");
 
@@ -13,9 +13,9 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var a = false,
-  l = false,
-  o = function() {
+var o = false,
+  a = false,
+  u = function() {
     var e;
 
     function t(e) {
@@ -35,22 +35,22 @@ var a = false,
       }, {
         key: "canDrag",
         value: function() {
-          (0, r.k)(!a, "You may not call monitor.canDrag() inside your canDrag() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, r.k)(!o, "You may not call monitor.canDrag() inside your canDrag() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
-            return a = true, this.internalMonitor.canDragSource(this.sourceId)
+            return o = true, this.internalMonitor.canDragSource(this.sourceId)
           } finally {
-            a = false
+            o = false
           }
         }
       }, {
         key: "isDragging",
         value: function() {
           if (!this.sourceId) returnfalse;
-          (0, r.k)(!l, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, r.k)(!a, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
-            return l = true, this.internalMonitor.isDraggingSource(this.sourceId)
+            return a = true, this.internalMonitor.isDraggingSource(this.sourceId)
           } finally {
-            l = false
+            a = false
           }
         }
       }, {

@@ -66,7 +66,7 @@ function i(e) {
         segmentEndSec: e
       }), v.current = true
     }
-  }, [t, i, a]), O = (0, r.useCallback)(() => {
+  }, [t, i, a]), h = (0, r.useCallback)(() => {
     let e = t();
     if (null == e || null == d) return;
     let n = Date.now();
@@ -84,7 +84,7 @@ function i(e) {
     i && a || (m(null), v.current = false)
   }, [i, a]), (0, r.useEffect)(() => {
     if (n && i && a) v.current || g(), f.current = window.setInterval(() => {
-      O()
+      h()
     }, 200);
     else {
       let e = t();
@@ -100,7 +100,7 @@ function i(e) {
     return () => {
       null != f.current && (clearInterval(f.current), f.current = null)
     }
-  }, [n, i, a, d, O, E, g, t]), {
+  }, [n, i, a, d, h, E, g, t]), {
     forceSendCurrentSegment: (0, r.useCallback)(() => {
       let e = t();
       if (null != d && null != e) {

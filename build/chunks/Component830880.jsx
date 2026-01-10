@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
 function b() {
   let [e, t] = (0, a.US)([l.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
   return i.useMemo(() => e === l.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [e]) ? (0, r.jsx)(o.f, {
-    label: m.t.zqv4nV,
+    label: h.t.zqv4nV,
     labelHook: () => {
       (0, c.openUserSettings)(s.n.CONTENT_AND_SOCIAL_PANEL, {
         section: u.oAB.CONTENT_AND_SOCIAL,
@@ -30,7 +30,7 @@ function b() {
       })
     },
     dismissNotice: () => t(d.L.USER_DISMISS),
-    className: h.blockedIgnoredSettingsNotice,
+    className: m.blockedIgnoredSettingsNotice,
     noticeType: p.nq.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   }) : null
 }

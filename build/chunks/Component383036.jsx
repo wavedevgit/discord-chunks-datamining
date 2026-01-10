@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 383036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk653126 = require("./653126.jsx"),
   Chunk832149 = require("./832149.jsx"),
   Chunk627911 = require("./627911.js");
-let h = e => {
+let f = e => {
     let [t, n] = r.useState(0);
     return r.useLayoutEffect(() => {
       let e = d.Z.getPurchase;
@@ -23,7 +23,7 @@ let h = e => {
         d.Z.getPurchase = e, d.Z.emitChange()
       }
     }, []), (0, a.jsx)("div", {
-      className: f.previewProductCardContainer,
+      className: h.previewProductCardContainer,
       children: (0, a.jsx)(m.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -60,62 +60,62 @@ let h = e => {
       }),
       v = x ? t : g,
       j = x || !b && v.size > 0,
-      [C, y] = r.useState(""),
+      [y, C] = r.useState(""),
       [_, S] = r.useState(null),
       [E, T] = r.useState(null);
     return (r.useEffect(() => {
-      if ("" === C.trim() || !j) {
+      if ("" === y.trim() || !j) {
         S(null), T(null);
         return
       }
-      let e = c.Z.getProduct(C),
-        t = c.Z.getCategoryForProduct(C);
+      let e = c.Z.getProduct(y),
+        t = c.Z.getCategoryForProduct(y);
       null != e && null != t ? (S(e), T(t)) : (S(null), T(null))
-    }, [C, j]), b) ? (0, a.jsx)(l.Text, {
+    }, [y, j]), b) ? (0, a.jsx)(l.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
     }) : null == e ? (0, a.jsx)(l.Text, {
       variant: "text-md/normal",
       children: "No user found"
     }) : (0, a.jsxs)("div", {
-      className: f.container,
+      className: h.container,
       children: [(0, a.jsxs)("div", {
-        className: f.section,
+        className: h.section,
         children: [(0, a.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Configuration"
         }), (0, a.jsxs)("div", {
-          className: f.inputSection,
+          className: h.inputSection,
           children: [(0, a.jsx)(l.Text, {
             variant: "text-md/semibold",
-            className: f.inputLabel,
+            className: h.inputLabel,
             children: "Primary Product SKU ID"
           }), (0, a.jsx)(l.oil, {
-            value: C,
-            onChange: y,
+            value: y,
+            onChange: C,
             placeholder: "Enter product SKU ID"
-          }), !j && "" !== C.trim() && (0, a.jsx)(l.Text, {
+          }), !j && "" !== y.trim() && (0, a.jsx)(l.Text, {
             variant: "text-sm/normal",
-            className: f.loadingText,
+            className: h.loadingText,
             children: "Loading products..."
-          }), j && "" !== C.trim() && null == _ && (0, a.jsx)(l.Text, {
+          }), j && "" !== y.trim() && null == _ && (0, a.jsx)(l.Text, {
             variant: "text-sm/normal",
-            className: f.errorText,
+            className: h.errorText,
             children: "Product not found"
           }), null != _ && (0, a.jsxs)(l.Text, {
             variant: "text-sm/normal",
-            className: f.successText,
+            className: h.successText,
             children: ["Found: ", _.name]
           })]
         })]
       }), (0, a.jsxs)("div", {
-        className: f.section,
+        className: h.section,
         children: [(0, a.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
         }), null != _ && null != E ? (0, a.jsxs)("div", {
-          className: f.previewContainer,
-          children: [(0, a.jsx)(h, {
+          className: h.previewContainer,
+          children: [(0, a.jsx)(f, {
             skuId: _.skuId
           }), (0, a.jsx)(l.Button, {
             variant: "primary",
@@ -128,10 +128,10 @@ let h = e => {
             text: "Show Collectibles Collected Modal"
           })]
         }) : (0, a.jsx)("div", {
-          className: f.placeholder,
+          className: h.placeholder,
           children: (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
-            className: f.mutedText,
+            className: h.mutedText,
             children: "Enter a valid product SKU ID to see the preview"
           })
         })]

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 481051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -14,10 +14,10 @@ function s(e) {
   let {
     hasMentions: t,
     truncatedCount: n,
-    className: r
+    className: i
   } = e;
-  return (0, i.jsx)(a.Text, {
-    className: l()(o.unreadCount, r, {
+  return (0, r.jsx)(a.Text, {
+    className: l()(o.unreadCount, i, {
       [o.mention]: t
     }),
     variant: "text-xs/normal",

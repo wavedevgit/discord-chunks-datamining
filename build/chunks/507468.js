@@ -14,7 +14,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk526761 = require("./526761.js");
 let p = {
   init() {
-    s.Z[d.yP.PRELOADED_USER_SETTINGS] = o.Z, s.Z[d.yP.FRECENCY_AND_FAVORITES_SETTINGS] = a.Z, l.Z.subscribe("CONNECTION_OPEN", f), l.Z.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", g), l.Z.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), l.Z.subscribe("APP_STATE_UPDATE", h)
+    s.Z[d.yP.PRELOADED_USER_SETTINGS] = o.Z, s.Z[d.yP.FRECENCY_AND_FAVORITES_SETTINGS] = a.Z, l.Z.subscribe("CONNECTION_OPEN", f), l.Z.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", g), l.Z.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", h), l.Z.subscribe("APP_STATE_UPDATE", m)
   }
 };
 
@@ -42,14 +42,14 @@ function g(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     settingsType: t
   } = e;
   c.aj[t].loadIfNecessary()
 }
 
-function h(e) {
+function m(e) {
   let {
     state: t
   } = e;

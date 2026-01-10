@@ -1,7 +1,7 @@
 /** Chunk was on 92977 **/
 /** chunk id: 379164, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => s
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk447543 = require("./447543.js"),
@@ -12,7 +12,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk782605 = require("./782605.js"),
   Chunk88658 = require("./88658.js"),
   Chunk981631 = require("./981631.js");
-let u = {
+let s = {
   acceptInvite(e) {
     let t = a.ZP.getInviteContext("Desktop Invite Modal", e),
       i = (0, l.y)(),

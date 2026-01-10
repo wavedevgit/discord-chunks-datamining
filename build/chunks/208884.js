@@ -1,26 +1,26 @@
-/** Chunk was on 62856 **/
-/** chunk id: 208884, original params: t,i,E (module,exports,require) **/
+/** Chunk was on 96795 **/
+/** chunk id: 208884, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  FX: () => I,
-  Ny: () => _,
-  WV: () => g,
-  WW: () => s,
-  _u: () => R,
-  aW: () => T,
-  ih: () => D,
-  kv: () => O,
-  s4: () => P,
-  uu: () => a,
-  vq: () => N,
-  xU: () => M,
-  zO: () => o
+  FX: () => d,
+  Ny: () => P,
+  WV: () => _,
+  WW: () => S,
+  _u: () => u,
+  aW: () => N,
+  ih: () => M,
+  kv: () => p,
+  s4: () => a,
+  uu: () => T,
+  vq: () => g,
+  xU: () => c,
+  zO: () => A
 }), require("./539854.js"), require("./781311.js");
 var Chunk823379 = require("./823379.js"),
   Chunk110259 = require("./110259.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
 
-function e(t) {
+function s(t) {
   let i = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return i || (t.permissions = t.permissions.filter(t => {
     let {
@@ -30,400 +30,400 @@ function e(t) {
   })), t
 }
 
-function A(t, i) {
+function o(t, i) {
   return t.map(t => i[t.toString()])
 }
 
-function s(t) {
-  var i, E;
+function S(t) {
+  var i, n;
   return {
-    [S.Pl.VIEW_CHANNEL.toString()]: {
-      title: r.intl.string(r.t.uV83yi),
-      description: r.t.ybTHLk,
-      flag: S.Pl.VIEW_CHANNEL
+    [r.Pl.VIEW_CHANNEL.toString()]: {
+      title: E.intl.string(E.t.uV83yi),
+      description: E.t.ybTHLk,
+      flag: r.Pl.VIEW_CHANNEL
     },
-    [S.Pl.MANAGE_CHANNELS.toString()]: {
-      title: r.intl.string(r.t["9qLtWs"]),
-      description: r.t.qfJnug,
-      flag: S.Pl.MANAGE_CHANNELS
+    [r.Pl.MANAGE_CHANNELS.toString()]: {
+      title: E.intl.string(E.t["9qLtWs"]),
+      description: E.t.qfJnug,
+      flag: r.Pl.MANAGE_CHANNELS
     },
-    [S.Pl.MANAGE_ROLES.toString()]: {
-      title: r.intl.string(r.t["C8d+oG"]),
-      description: r.t.buo9uw,
-      flag: S.Pl.MANAGE_ROLES
+    [r.Pl.MANAGE_ROLES.toString()]: {
+      title: E.intl.string(E.t["C8d+oG"]),
+      description: E.t.buo9uw,
+      flag: r.Pl.MANAGE_ROLES
     },
-    [S.Pl.MANAGE_GUILD_EXPRESSIONS.toString()]: {
-      title: r.intl.string(r.t.bbuXIn),
-      description: r.t["4vb3/6"],
-      flag: S.Pl.MANAGE_GUILD_EXPRESSIONS
+    [r.Pl.MANAGE_GUILD_EXPRESSIONS.toString()]: {
+      title: E.intl.string(E.t.bbuXIn),
+      description: E.t["4vb3/6"],
+      flag: r.Pl.MANAGE_GUILD_EXPRESSIONS
     },
-    [S.Pl.CREATE_GUILD_EXPRESSIONS.toString()]: {
-      title: r.intl.string(r.t.HarVuP),
-      description: r.t.gkdHvH,
-      flag: S.Pl.CREATE_GUILD_EXPRESSIONS
+    [r.Pl.CREATE_GUILD_EXPRESSIONS.toString()]: {
+      title: E.intl.string(E.t.HarVuP),
+      description: E.t.gkdHvH,
+      flag: r.Pl.CREATE_GUILD_EXPRESSIONS
     },
-    [S.Pl.VIEW_AUDIT_LOG.toString()]: {
-      title: r.intl.string(r.t.fZgLpA),
-      description: r.t["0hx75i"],
-      flag: S.Pl.VIEW_AUDIT_LOG
+    [r.Pl.VIEW_AUDIT_LOG.toString()]: {
+      title: E.intl.string(E.t.fZgLpA),
+      description: E.t["0hx75i"],
+      flag: r.Pl.VIEW_AUDIT_LOG
     },
-    [S.Pl.VIEW_GUILD_ANALYTICS.toString()]: {
-      title: r.intl.string(r.t["rQJBE/"]),
-      description: r.t.whVKhX,
-      flag: S.Pl.VIEW_GUILD_ANALYTICS
+    [r.Pl.VIEW_GUILD_ANALYTICS.toString()]: {
+      title: E.intl.string(E.t["rQJBE/"]),
+      description: E.t.whVKhX,
+      flag: r.Pl.VIEW_GUILD_ANALYTICS
     },
-    [S.Pl.VIEW_CREATOR_MONETIZATION_ANALYTICS.toString()]: {
-      title: r.intl.string(r.t["0lTLTv"]),
-      description: r.t.mut6NV,
-      flag: S.Pl.VIEW_CREATOR_MONETIZATION_ANALYTICS
+    [r.Pl.VIEW_CREATOR_MONETIZATION_ANALYTICS.toString()]: {
+      title: E.intl.string(E.t["0lTLTv"]),
+      description: E.t.mut6NV,
+      flag: r.Pl.VIEW_CREATOR_MONETIZATION_ANALYTICS
     },
-    [S.Pl.MANAGE_WEBHOOKS.toString()]: {
-      title: r.intl.string(r.t["/ADKmM"]),
-      description: r.t.LczYqC,
-      flag: S.Pl.MANAGE_WEBHOOKS
+    [r.Pl.MANAGE_WEBHOOKS.toString()]: {
+      title: E.intl.string(E.t["/ADKmM"]),
+      description: E.t.LczYqC,
+      flag: r.Pl.MANAGE_WEBHOOKS
     },
-    [S.Pl.MANAGE_GUILD.toString()]: {
-      title: r.intl.string(r.t.QZRcfO),
-      description: r.t["KoQe/G"],
-      flag: S.Pl.MANAGE_GUILD
+    [r.Pl.MANAGE_GUILD.toString()]: {
+      title: E.intl.string(E.t.QZRcfO),
+      description: E.t["KoQe/G"],
+      flag: r.Pl.MANAGE_GUILD
     },
-    [S.Pl.CREATE_INSTANT_INVITE.toString()]: {
-      title: r.intl.string(r.t.zJrgTG),
-      description: r.t.PCFOZa,
-      flag: S.Pl.CREATE_INSTANT_INVITE
+    [r.Pl.CREATE_INSTANT_INVITE.toString()]: {
+      title: E.intl.string(E.t.zJrgTG),
+      description: E.t.PCFOZa,
+      flag: r.Pl.CREATE_INSTANT_INVITE
     },
-    [S.Pl.CHANGE_NICKNAME.toString()]: {
-      title: r.intl.string(r.t.dilOF6),
-      description: r.t["b8B++j"],
-      flag: S.Pl.CHANGE_NICKNAME
+    [r.Pl.CHANGE_NICKNAME.toString()]: {
+      title: E.intl.string(E.t.dilOF6),
+      description: E.t["b8B++j"],
+      flag: r.Pl.CHANGE_NICKNAME
     },
-    [S.Pl.MANAGE_NICKNAMES.toString()]: {
-      title: r.intl.string(r.t["t+Ct5x"]),
-      description: r.t.hTnlMb,
-      flag: S.Pl.MANAGE_NICKNAMES
+    [r.Pl.MANAGE_NICKNAMES.toString()]: {
+      title: E.intl.string(E.t["t+Ct5x"]),
+      description: E.t.hTnlMb,
+      flag: r.Pl.MANAGE_NICKNAMES
     },
-    [S.Pl.KICK_MEMBERS.toString()]: {
-      title: t.showMembershipManualApprovalPermissions ? r.intl.string(r.t["9TxXwb"]) : r.intl.string(r.t.pBNv6i),
-      description: t.showMembershipManualApprovalPermissions ? r.t.hGBAnw : r.t.rwdPaE,
-      flag: S.Pl.KICK_MEMBERS
+    [r.Pl.KICK_MEMBERS.toString()]: {
+      title: t.showMembershipManualApprovalPermissions ? E.intl.string(E.t["9TxXwb"]) : E.intl.string(E.t.pBNv6i),
+      description: t.showMembershipManualApprovalPermissions ? E.t.hGBAnw : E.t.rwdPaE,
+      flag: r.Pl.KICK_MEMBERS
     },
-    [S.Pl.BAN_MEMBERS.toString()]: {
-      title: r.intl.string(r.t.oTBA7N),
-      description: r.t["OqNY0/"],
-      flag: S.Pl.BAN_MEMBERS
+    [r.Pl.BAN_MEMBERS.toString()]: {
+      title: E.intl.string(E.t.oTBA7N),
+      description: E.t["OqNY0/"],
+      flag: r.Pl.BAN_MEMBERS
     },
-    [S.Pl.MODERATE_MEMBERS.toString()]: {
-      title: r.intl.string(r.t["+RL6pz"]),
-      description: r.t.T6bZsX,
-      flag: S.Pl.MODERATE_MEMBERS
+    [r.Pl.MODERATE_MEMBERS.toString()]: {
+      title: E.intl.string(E.t["+RL6pz"]),
+      description: E.t.T6bZsX,
+      flag: r.Pl.MODERATE_MEMBERS
     },
-    [S.Pl.SEND_MESSAGES.toString()]: {
-      title: r.intl.string(r.t.S1VOwd),
-      description: r.t.prvWKm,
-      flag: S.Pl.SEND_MESSAGES
+    [r.Pl.SEND_MESSAGES.toString()]: {
+      title: E.intl.string(E.t.S1VOwd),
+      description: E.t.prvWKm,
+      flag: r.Pl.SEND_MESSAGES
     },
-    [S.Pl.EMBED_LINKS.toString()]: {
-      title: r.intl.string(r.t["969dEL"]),
-      description: r.t.ChoIiy,
-      flag: S.Pl.EMBED_LINKS
+    [r.Pl.EMBED_LINKS.toString()]: {
+      title: E.intl.string(E.t["969dEL"]),
+      description: E.t.ChoIiy,
+      flag: r.Pl.EMBED_LINKS
     },
-    [S.Pl.ATTACH_FILES.toString()]: {
-      title: r.intl.string(r.t["3AS4UM"]),
-      description: r.t["/87mYH"],
-      flag: S.Pl.ATTACH_FILES
+    [r.Pl.ATTACH_FILES.toString()]: {
+      title: E.intl.string(E.t["3AS4UM"]),
+      description: E.t["/87mYH"],
+      flag: r.Pl.ATTACH_FILES
     },
-    [S.Pl.ADD_REACTIONS.toString()]: {
-      title: r.intl.string(r.t.yEoJAr),
-      description: r.t.FEYwX7,
-      flag: S.Pl.ADD_REACTIONS
+    [r.Pl.ADD_REACTIONS.toString()]: {
+      title: E.intl.string(E.t.yEoJAr),
+      description: E.t.FEYwX7,
+      flag: r.Pl.ADD_REACTIONS
     },
-    [S.Pl.USE_EXTERNAL_EMOJIS.toString()]: {
-      title: r.intl.string(r.t["+bxf3H"]),
-      description: r.t.POeVIu,
-      flag: S.Pl.USE_EXTERNAL_EMOJIS
+    [r.Pl.USE_EXTERNAL_EMOJIS.toString()]: {
+      title: E.intl.string(E.t["+bxf3H"]),
+      description: E.t.POeVIu,
+      flag: r.Pl.USE_EXTERNAL_EMOJIS
     },
-    [S.Pl.USE_EXTERNAL_STICKERS.toString()]: {
-      title: r.intl.string(r.t.ERNhYf),
-      description: r.t.AdXVhI,
-      flag: S.Pl.USE_EXTERNAL_STICKERS
+    [r.Pl.USE_EXTERNAL_STICKERS.toString()]: {
+      title: E.intl.string(E.t.ERNhYf),
+      description: E.t.AdXVhI,
+      flag: r.Pl.USE_EXTERNAL_STICKERS
     },
-    [S.Pl.MENTION_EVERYONE.toString()]: {
-      title: t.inGameMentionsExperiment ? r.intl.string(r.t.lEO7Wr) : r.intl.string(r.t.Y78KGC),
-      description: t.inGameMentionsExperiment ? r.intl.string(r.t.wdHpIC) : r.intl.string(r.t.ryj6N5),
-      flag: S.Pl.MENTION_EVERYONE
+    [r.Pl.MENTION_EVERYONE.toString()]: {
+      title: t.inGameMentionsExperiment ? E.intl.string(E.t.lEO7Wr) : E.intl.string(E.t.Y78KGC),
+      description: t.inGameMentionsExperiment ? E.intl.string(E.t.wdHpIC) : E.intl.string(E.t.ryj6N5),
+      flag: r.Pl.MENTION_EVERYONE
     },
-    [S.Pl.MANAGE_MESSAGES.toString()]: {
-      title: r.intl.string(r.t["6lU9xM"]),
-      description: r.t["RXMG/+"],
-      flag: S.Pl.MANAGE_MESSAGES
+    [r.Pl.MANAGE_MESSAGES.toString()]: {
+      title: E.intl.string(E.t["6lU9xM"]),
+      description: E.t["RXMG/+"],
+      flag: r.Pl.MANAGE_MESSAGES
     },
-    [S.Pl.PIN_MESSAGES.toString()]: {
-      title: r.intl.string(r.t.Y5BI39),
-      description: r.t["LN/K3x"],
-      flag: S.Pl.PIN_MESSAGES
+    [r.Pl.PIN_MESSAGES.toString()]: {
+      title: E.intl.string(E.t.Y5BI39),
+      description: E.t["LN/K3x"],
+      flag: r.Pl.PIN_MESSAGES
     },
-    [S.Pl.BYPASS_SLOWMODE.toString()]: {
-      title: r.intl.string(r.t.kqcjeV),
-      description: r.t.S2ZE5c,
-      flag: S.Pl.BYPASS_SLOWMODE
+    [r.Pl.BYPASS_SLOWMODE.toString()]: {
+      title: E.intl.string(E.t.kqcjeV),
+      description: E.t.S2ZE5c,
+      flag: r.Pl.BYPASS_SLOWMODE
     },
-    [S.Pl.READ_MESSAGE_HISTORY.toString()]: {
-      title: r.intl.string(r.t.l9ufaR),
-      description: r.t.rmHPFR,
-      flag: S.Pl.READ_MESSAGE_HISTORY
+    [r.Pl.READ_MESSAGE_HISTORY.toString()]: {
+      title: E.intl.string(E.t.l9ufaR),
+      description: E.t.rmHPFR,
+      flag: r.Pl.READ_MESSAGE_HISTORY
     },
-    [S.Pl.SEND_TTS_MESSAGES.toString()]: {
-      title: r.intl.string(r.t.mMbwh7),
-      description: r.t.D6x8Nr,
-      flag: S.Pl.SEND_TTS_MESSAGES
+    [r.Pl.SEND_TTS_MESSAGES.toString()]: {
+      title: E.intl.string(E.t.mMbwh7),
+      description: E.t.D6x8Nr,
+      flag: r.Pl.SEND_TTS_MESSAGES
     },
-    [S.Pl.USE_APPLICATION_COMMANDS.toString()]: {
-      title: r.intl.string(r.t.nkoPOt),
-      description: r.t.pJrJ35,
-      flag: S.Pl.USE_APPLICATION_COMMANDS
+    [r.Pl.USE_APPLICATION_COMMANDS.toString()]: {
+      title: E.intl.string(E.t.nkoPOt),
+      description: E.t.pJrJ35,
+      flag: r.Pl.USE_APPLICATION_COMMANDS
     },
-    [S.Pl.USE_EXTERNAL_APPS.toString()]: {
-      title: r.intl.string(r.t.TtA5rK),
-      description: r.t.mzLoDY,
-      flag: S.Pl.USE_EXTERNAL_APPS
+    [r.Pl.USE_EXTERNAL_APPS.toString()]: {
+      title: E.intl.string(E.t.TtA5rK),
+      description: E.t.mzLoDY,
+      flag: r.Pl.USE_EXTERNAL_APPS
     },
-    [S.Pl.SEND_VOICE_MESSAGES.toString()]: {
-      title: r.intl.string(r.t.WlWSBT),
-      description: r.t.pDuyi0,
-      flag: S.Pl.SEND_VOICE_MESSAGES
+    [r.Pl.SEND_VOICE_MESSAGES.toString()]: {
+      title: E.intl.string(E.t.WlWSBT),
+      description: E.t.pDuyi0,
+      flag: r.Pl.SEND_VOICE_MESSAGES
     },
-    [S.Pl.SEND_POLLS.toString()]: {
-      title: r.intl.string(r.t.UMQ7Ww),
-      description: r.t["Xl6W+F"],
-      flag: S.Pl.SEND_POLLS
+    [r.Pl.SEND_POLLS.toString()]: {
+      title: E.intl.string(E.t.UMQ7Ww),
+      description: E.t["Xl6W+F"],
+      flag: r.Pl.SEND_POLLS
     },
-    [S.Pl.CONNECT.toString()]: {
-      title: r.intl.string(r.t.S0W8Z5),
-      description: r.t["3GCm/f"],
-      flag: S.Pl.CONNECT
+    [r.Pl.CONNECT.toString()]: {
+      title: E.intl.string(E.t.S0W8Z5),
+      description: E.t["3GCm/f"],
+      flag: r.Pl.CONNECT
     },
-    [S.Pl.SPEAK.toString()]: {
-      title: r.intl.string(r.t["8w1tIR"]),
-      description: r.t.y4MncF,
-      flag: S.Pl.SPEAK
+    [r.Pl.SPEAK.toString()]: {
+      title: E.intl.string(E.t["8w1tIR"]),
+      description: E.t.y4MncF,
+      flag: r.Pl.SPEAK
     },
-    [S.Pl.STREAM.toString()]: {
-      title: r.intl.string(r.t.FlNoSV),
-      description: r.t["6Z0j9v"],
-      flag: S.Pl.STREAM
+    [r.Pl.STREAM.toString()]: {
+      title: E.intl.string(E.t.FlNoSV),
+      description: E.t["6Z0j9v"],
+      flag: r.Pl.STREAM
     },
-    [S.Pl.USE_EMBEDDED_ACTIVITIES.toString()]: {
-      title: r.intl.string(r.t.rLSGeh),
-      description: r.t.BEqU5H,
-      flag: S.Pl.USE_EMBEDDED_ACTIVITIES
+    [r.Pl.USE_EMBEDDED_ACTIVITIES.toString()]: {
+      title: E.intl.string(E.t.rLSGeh),
+      description: E.t.BEqU5H,
+      flag: r.Pl.USE_EMBEDDED_ACTIVITIES
     },
-    [S.Pl.USE_SOUNDBOARD.toString()]: {
-      title: r.intl.string(r.t.Bco7NG),
-      description: null != (i = null == t ? true : t.SOUNDBOARD_DESCRIPTION) ? i : r.t["+8p+fc"],
-      flag: S.Pl.USE_SOUNDBOARD
+    [r.Pl.USE_SOUNDBOARD.toString()]: {
+      title: E.intl.string(E.t.Bco7NG),
+      description: null != (i = null == t ? true : t.SOUNDBOARD_DESCRIPTION) ? i : E.t["+8p+fc"],
+      flag: r.Pl.USE_SOUNDBOARD
     },
-    [S.Pl.USE_EXTERNAL_SOUNDS.toString()]: {
-      title: r.intl.string(r.t.pwaVJ6),
-      description: r.t.qDpPtX,
-      flag: S.Pl.USE_EXTERNAL_SOUNDS
+    [r.Pl.USE_EXTERNAL_SOUNDS.toString()]: {
+      title: E.intl.string(E.t.pwaVJ6),
+      description: E.t.qDpPtX,
+      flag: r.Pl.USE_EXTERNAL_SOUNDS
     },
-    [S.Pl.USE_VAD.toString()]: {
-      title: r.intl.string(r.t["08zAV7"]),
-      description: r.t["7CHjmc"],
-      flag: S.Pl.USE_VAD
+    [r.Pl.USE_VAD.toString()]: {
+      title: E.intl.string(E.t["08zAV7"]),
+      description: E.t["7CHjmc"],
+      flag: r.Pl.USE_VAD
     },
-    [S.Pl.PRIORITY_SPEAKER.toString()]: {
-      title: r.intl.string(r.t.BVK71i),
-      description: null != (E = null == t ? true : t.PRIORITY_SPEAKER_DESCRIPTION) ? E : r.t.OJkrro,
-      flag: S.Pl.PRIORITY_SPEAKER
+    [r.Pl.PRIORITY_SPEAKER.toString()]: {
+      title: E.intl.string(E.t.BVK71i),
+      description: null != (n = null == t ? true : t.PRIORITY_SPEAKER_DESCRIPTION) ? n : E.t.OJkrro,
+      flag: r.Pl.PRIORITY_SPEAKER
     },
-    [S.Pl.MUTE_MEMBERS.toString()]: {
-      title: r.intl.string(r.t["8EI30/"]),
-      description: r.t.PIhGA1,
-      flag: S.Pl.MUTE_MEMBERS
+    [r.Pl.MUTE_MEMBERS.toString()]: {
+      title: E.intl.string(E.t["8EI30/"]),
+      description: E.t.PIhGA1,
+      flag: r.Pl.MUTE_MEMBERS
     },
-    [S.Pl.DEAFEN_MEMBERS.toString()]: {
-      title: r.intl.string(r.t["9L47Fr"]),
-      description: r.t["FQr3+t"],
-      flag: S.Pl.DEAFEN_MEMBERS
+    [r.Pl.DEAFEN_MEMBERS.toString()]: {
+      title: E.intl.string(E.t["9L47Fr"]),
+      description: E.t["FQr3+t"],
+      flag: r.Pl.DEAFEN_MEMBERS
     },
-    [S.Pl.MOVE_MEMBERS.toString()]: {
-      title: r.intl.string(r.t.YtjJPQ),
-      description: r.t.SEe0Gp,
-      flag: S.Pl.MOVE_MEMBERS
+    [r.Pl.MOVE_MEMBERS.toString()]: {
+      title: E.intl.string(E.t.YtjJPQ),
+      description: E.t.SEe0Gp,
+      flag: r.Pl.MOVE_MEMBERS
     },
-    [S.Pl.REQUEST_TO_SPEAK.toString()]: {
-      title: r.intl.string(r.t["5kicT2"]),
-      description: r.t["yNE+Q5"],
-      flag: S.Pl.REQUEST_TO_SPEAK,
+    [r.Pl.REQUEST_TO_SPEAK.toString()]: {
+      title: E.intl.string(E.t["5kicT2"]),
+      description: E.t["yNE+Q5"],
+      flag: r.Pl.REQUEST_TO_SPEAK,
       isExperimental: true
     },
-    [S.Pl.ADMINISTRATOR.toString()]: {
-      title: r.intl.string(r.t.PGvZqX),
-      description: "string" == typeof r.t.UJxMrK ? r.t.UJxMrK : r.intl.format(r.t.UJxMrK, {}),
-      flag: S.Pl.ADMINISTRATOR
+    [r.Pl.ADMINISTRATOR.toString()]: {
+      title: E.intl.string(E.t.PGvZqX),
+      description: "string" == typeof E.t.UJxMrK ? E.t.UJxMrK : E.intl.format(E.t.UJxMrK, {}),
+      flag: r.Pl.ADMINISTRATOR
     },
-    [S.Pl.MANAGE_EVENTS.toString()]: {
-      title: r.intl.string(r.t.HIgA5a),
-      description: r.t["SL+qgG"],
-      flag: S.Pl.MANAGE_EVENTS
+    [r.Pl.MANAGE_EVENTS.toString()]: {
+      title: E.intl.string(E.t.HIgA5a),
+      description: E.t["SL+qgG"],
+      flag: r.Pl.MANAGE_EVENTS
     },
-    [S.Pl.CREATE_EVENTS.toString()]: {
-      title: r.intl.string(r.t.qyjZua),
-      description: r.t.bQEFJZ,
-      flag: S.Pl.CREATE_EVENTS
+    [r.Pl.CREATE_EVENTS.toString()]: {
+      title: E.intl.string(E.t.qyjZua),
+      description: E.t.bQEFJZ,
+      flag: r.Pl.CREATE_EVENTS
     },
-    [S.Pl.MANAGE_THREADS.toString()]: {
-      title: r.intl.string(r.t.QKe7Q3),
-      description: r.t.QAxIIt,
-      flag: S.Pl.MANAGE_THREADS
+    [r.Pl.MANAGE_THREADS.toString()]: {
+      title: E.intl.string(E.t.QKe7Q3),
+      description: E.t.QAxIIt,
+      flag: r.Pl.MANAGE_THREADS
     },
-    [S.Pl.CREATE_PUBLIC_THREADS.toString()]: {
-      title: r.intl.string(r.t["25rKnX"]),
-      description: r.t.ODCYj8,
-      flag: S.Pl.CREATE_PUBLIC_THREADS
+    [r.Pl.CREATE_PUBLIC_THREADS.toString()]: {
+      title: E.intl.string(E.t["25rKnX"]),
+      description: E.t.ODCYj8,
+      flag: r.Pl.CREATE_PUBLIC_THREADS
     },
-    [S.Pl.CREATE_PRIVATE_THREADS.toString()]: {
-      title: r.intl.string(r.t.QwbTSa),
-      description: r.t["G/cc3l"],
-      flag: S.Pl.CREATE_PRIVATE_THREADS
+    [r.Pl.CREATE_PRIVATE_THREADS.toString()]: {
+      title: E.intl.string(E.t.QwbTSa),
+      description: E.t["G/cc3l"],
+      flag: r.Pl.CREATE_PRIVATE_THREADS
     },
-    [S.Pl.SEND_MESSAGES_IN_THREADS.toString()]: {
-      title: r.intl.string(r.t["5QlVGy"]),
-      description: r.t.C2ZPE3,
-      flag: S.Pl.SEND_MESSAGES_IN_THREADS
+    [r.Pl.SEND_MESSAGES_IN_THREADS.toString()]: {
+      title: E.intl.string(E.t["5QlVGy"]),
+      description: E.t.C2ZPE3,
+      flag: r.Pl.SEND_MESSAGES_IN_THREADS
     },
-    [S.Pl.SET_VOICE_CHANNEL_STATUS.toString()]: {
-      title: r.intl.string(r.t.VBwkUf),
-      description: r.t.C6BzXx,
-      flag: S.Pl.SET_VOICE_CHANNEL_STATUS
+    [r.Pl.SET_VOICE_CHANNEL_STATUS.toString()]: {
+      title: E.intl.string(E.t.VBwkUf),
+      description: E.t.C6BzXx,
+      flag: r.Pl.SET_VOICE_CHANNEL_STATUS
     }
   }
 }
 
-function P(t) {
-  let i, E = s(t),
-    n = [function(t, i) {
-      let E = [S.Pl.VIEW_CHANNEL, S.Pl.MANAGE_CHANNELS, S.Pl.MANAGE_ROLES, S.Pl.CREATE_GUILD_EXPRESSIONS, S.Pl.MANAGE_GUILD_EXPRESSIONS, S.Pl.VIEW_AUDIT_LOG, S.Pl.VIEW_GUILD_ANALYTICS];
-      return i.showCreatorMonetizationAnalyticsPermission && E.push(S.Pl.VIEW_CREATOR_MONETIZATION_ANALYTICS), E.push(S.Pl.MANAGE_WEBHOOKS), E.push(S.Pl.MANAGE_GUILD), e({
-        title: r.intl.string(r.t["mYck+B"]),
-        permissions: A(E, t)
+function a(t) {
+  let i, n = S(t),
+    e = [function(t, i) {
+      let n = [r.Pl.VIEW_CHANNEL, r.Pl.MANAGE_CHANNELS, r.Pl.MANAGE_ROLES, r.Pl.CREATE_GUILD_EXPRESSIONS, r.Pl.MANAGE_GUILD_EXPRESSIONS, r.Pl.VIEW_AUDIT_LOG, r.Pl.VIEW_GUILD_ANALYTICS];
+      return i.showCreatorMonetizationAnalyticsPermission && n.push(r.Pl.VIEW_CREATOR_MONETIZATION_ANALYTICS), n.push(r.Pl.MANAGE_WEBHOOKS), n.push(r.Pl.MANAGE_GUILD), s({
+        title: E.intl.string(E.t["mYck+B"]),
+        permissions: o(n, t)
       })
-    }(E, t), function(t) {
-      let i = [S.Pl.CREATE_INSTANT_INVITE, S.Pl.CHANGE_NICKNAME, S.Pl.MANAGE_NICKNAMES, S.Pl.KICK_MEMBERS, S.Pl.BAN_MEMBERS, S.Pl.MODERATE_MEMBERS];
-      return e({
-        title: r.intl.string(r.t.Ny49TN),
-        permissions: A(i, t)
+    }(n, t), function(t) {
+      let i = [r.Pl.CREATE_INSTANT_INVITE, r.Pl.CHANGE_NICKNAME, r.Pl.MANAGE_NICKNAMES, r.Pl.KICK_MEMBERS, r.Pl.BAN_MEMBERS, r.Pl.MODERATE_MEMBERS];
+      return s({
+        title: E.intl.string(E.t.Ny49TN),
+        permissions: o(i, t)
       })
-    }(E), (i = [S.Pl.SEND_MESSAGES, S.Pl.SEND_MESSAGES_IN_THREADS, S.Pl.CREATE_PUBLIC_THREADS, S.Pl.CREATE_PRIVATE_THREADS, S.Pl.EMBED_LINKS, S.Pl.ATTACH_FILES, S.Pl.ADD_REACTIONS, S.Pl.USE_EXTERNAL_EMOJIS, S.Pl.USE_EXTERNAL_STICKERS, S.Pl.USE_EXTERNAL_SOUNDS, S.Pl.MENTION_EVERYONE, S.Pl.MANAGE_MESSAGES, S.Pl.PIN_MESSAGES, S.Pl.BYPASS_SLOWMODE, S.Pl.MANAGE_THREADS, S.Pl.READ_MESSAGE_HISTORY, S.Pl.SEND_TTS_MESSAGES, S.Pl.SEND_VOICE_MESSAGES, S.Pl.SEND_POLLS], t.inSoundmojiExperiment || (i = i.filter(t => t !== S.Pl.USE_EXTERNAL_SOUNDS)), t.inBypassSlowmodePermissionExperiment || (i = i.filter(t => t !== S.Pl.BYPASS_SLOWMODE)), e({
-      title: r.intl.string(r.t.cKobO5),
-      permissions: A(i, E)
+    }(n), (i = [r.Pl.SEND_MESSAGES, r.Pl.SEND_MESSAGES_IN_THREADS, r.Pl.CREATE_PUBLIC_THREADS, r.Pl.CREATE_PRIVATE_THREADS, r.Pl.EMBED_LINKS, r.Pl.ATTACH_FILES, r.Pl.ADD_REACTIONS, r.Pl.USE_EXTERNAL_EMOJIS, r.Pl.USE_EXTERNAL_STICKERS, r.Pl.USE_EXTERNAL_SOUNDS, r.Pl.MENTION_EVERYONE, r.Pl.MANAGE_MESSAGES, r.Pl.PIN_MESSAGES, r.Pl.BYPASS_SLOWMODE, r.Pl.MANAGE_THREADS, r.Pl.READ_MESSAGE_HISTORY, r.Pl.SEND_TTS_MESSAGES, r.Pl.SEND_VOICE_MESSAGES, r.Pl.SEND_POLLS], t.inSoundmojiExperiment || (i = i.filter(t => t !== r.Pl.USE_EXTERNAL_SOUNDS)), t.inBypassSlowmodePermissionExperiment || (i = i.filter(t => t !== r.Pl.BYPASS_SLOWMODE)), s({
+      title: E.intl.string(E.t.cKobO5),
+      permissions: o(i, n)
     })), function(t, i) {
-      let E = [S.Pl.CONNECT, S.Pl.SPEAK, S.Pl.STREAM, S.Pl.USE_SOUNDBOARD, S.Pl.USE_EXTERNAL_SOUNDS, S.Pl.USE_VAD, S.Pl.PRIORITY_SPEAKER, S.Pl.MUTE_MEMBERS, S.Pl.DEAFEN_MEMBERS, S.Pl.MOVE_MEMBERS, S.Pl.SET_VOICE_CHANNEL_STATUS];
-      return e({
-        title: r.intl.string(r.t["46Ra1b"]),
-        permissions: A(E, t)
+      let n = [r.Pl.CONNECT, r.Pl.SPEAK, r.Pl.STREAM, r.Pl.USE_SOUNDBOARD, r.Pl.USE_EXTERNAL_SOUNDS, r.Pl.USE_VAD, r.Pl.PRIORITY_SPEAKER, r.Pl.MUTE_MEMBERS, r.Pl.DEAFEN_MEMBERS, r.Pl.MOVE_MEMBERS, r.Pl.SET_VOICE_CHANNEL_STATUS];
+      return s({
+        title: E.intl.string(E.t["46Ra1b"]),
+        permissions: o(n, t)
       })
-    }(E, 0), function(t) {
-      let i = [S.Pl.USE_APPLICATION_COMMANDS, S.Pl.USE_EMBEDDED_ACTIVITIES, S.Pl.USE_EXTERNAL_APPS];
-      return e({
-        title: r.intl.string(r.t["rrh/W6"]),
-        permissions: A(i, t)
+    }(n, 0), function(t) {
+      let i = [r.Pl.USE_APPLICATION_COMMANDS, r.Pl.USE_EMBEDDED_ACTIVITIES, r.Pl.USE_EXTERNAL_APPS];
+      return s({
+        title: E.intl.string(E.t["rrh/W6"]),
+        permissions: o(i, t)
       })
-    }(E)];
-  return t.showStageChannelPermissions && n.push(e({
-    title: r.intl.string(r.t.yniauk),
-    permissions: A([S.Pl.REQUEST_TO_SPEAK], E)
-  }, t.showExperimental)), n.push(e({
-    title: r.intl.string(r.t.b8lplT),
-    permissions: A([S.Pl.CREATE_EVENTS, S.Pl.MANAGE_EVENTS], E)
-  }, t.showExperimental)), n.push(e({
-    title: r.intl.string(r.t["3uI5CX"]),
-    permissions: A([S.Pl.ADMINISTRATOR], E)
-  })), n
+    }(n)];
+  return t.showStageChannelPermissions && e.push(s({
+    title: E.intl.string(E.t.yniauk),
+    permissions: o([r.Pl.REQUEST_TO_SPEAK], n)
+  }, t.showExperimental)), e.push(s({
+    title: E.intl.string(E.t.b8lplT),
+    permissions: o([r.Pl.CREATE_EVENTS, r.Pl.MANAGE_EVENTS], n)
+  }, t.showExperimental)), e.push(s({
+    title: E.intl.string(E.t["3uI5CX"]),
+    permissions: o([r.Pl.ADMINISTRATOR], n)
+  })), e
 }
 
-function o(t, i) {
-  let E = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+function A(t, i) {
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
     showManageWebhooks: true
   };
   return {
     title: i,
-    permissions: A((null == E ? true : E.showManageWebhooks) ? [S.Pl.VIEW_CHANNEL, S.Pl.MANAGE_CHANNELS, S.Pl.MANAGE_ROLES, S.Pl.MANAGE_WEBHOOKS] : [S.Pl.VIEW_CHANNEL, S.Pl.MANAGE_CHANNELS, S.Pl.MANAGE_ROLES], t)
+    permissions: o((null == n ? true : n.showManageWebhooks) ? [r.Pl.VIEW_CHANNEL, r.Pl.MANAGE_CHANNELS, r.Pl.MANAGE_ROLES, r.Pl.MANAGE_WEBHOOKS] : [r.Pl.VIEW_CHANNEL, r.Pl.MANAGE_CHANNELS, r.Pl.MANAGE_ROLES], t)
+  }
+}
+
+function P(t, i) {
+  return {
+    title: i,
+    permissions: o([r.Pl.CREATE_INSTANT_INVITE], t)
+  }
+}
+
+function g(t, i, n) {
+  let e = [r.Pl.SEND_MESSAGES, r.Pl.SEND_MESSAGES_IN_THREADS, r.Pl.CREATE_PUBLIC_THREADS, r.Pl.CREATE_PRIVATE_THREADS, r.Pl.EMBED_LINKS, r.Pl.ATTACH_FILES, r.Pl.ADD_REACTIONS, r.Pl.USE_EXTERNAL_EMOJIS, r.Pl.USE_EXTERNAL_STICKERS, r.Pl.USE_EXTERNAL_SOUNDS, r.Pl.MENTION_EVERYONE, r.Pl.MANAGE_MESSAGES, r.Pl.PIN_MESSAGES, r.Pl.BYPASS_SLOWMODE, r.Pl.MANAGE_THREADS, r.Pl.READ_MESSAGE_HISTORY, r.Pl.SEND_TTS_MESSAGES, r.Pl.SEND_VOICE_MESSAGES, r.Pl.SEND_POLLS];
+  return n.inSoundmojiExperiment || (e = e.filter(t => t !== r.Pl.USE_EXTERNAL_SOUNDS)), n.showPrivateThreads && n.showCreateThreads || (e = e.filter(t => t !== r.Pl.CREATE_PRIVATE_THREADS)), n.showCreateThreads || (e = e.filter(t => t !== r.Pl.CREATE_PUBLIC_THREADS)), n.inBypassSlowmodePermissionExperiment || (e = e.filter(t => t !== r.Pl.BYPASS_SLOWMODE)), {
+    title: i,
+    description: n.sectionDescription,
+    permissions: o(e, t)
   }
 }
 
 function _(t, i) {
   return {
     title: i,
-    permissions: A([S.Pl.CREATE_INSTANT_INVITE], t)
+    permissions: o([r.Pl.CONNECT, r.Pl.SPEAK, r.Pl.STREAM, r.Pl.USE_SOUNDBOARD, r.Pl.USE_EXTERNAL_SOUNDS, r.Pl.USE_VAD, r.Pl.PRIORITY_SPEAKER, r.Pl.MUTE_MEMBERS, r.Pl.DEAFEN_MEMBERS, r.Pl.MOVE_MEMBERS, r.Pl.SET_VOICE_CHANNEL_STATUS], t)
   }
 }
 
-function N(t, i, E) {
-  let n = [S.Pl.SEND_MESSAGES, S.Pl.SEND_MESSAGES_IN_THREADS, S.Pl.CREATE_PUBLIC_THREADS, S.Pl.CREATE_PRIVATE_THREADS, S.Pl.EMBED_LINKS, S.Pl.ATTACH_FILES, S.Pl.ADD_REACTIONS, S.Pl.USE_EXTERNAL_EMOJIS, S.Pl.USE_EXTERNAL_STICKERS, S.Pl.USE_EXTERNAL_SOUNDS, S.Pl.MENTION_EVERYONE, S.Pl.MANAGE_MESSAGES, S.Pl.PIN_MESSAGES, S.Pl.BYPASS_SLOWMODE, S.Pl.MANAGE_THREADS, S.Pl.READ_MESSAGE_HISTORY, S.Pl.SEND_TTS_MESSAGES, S.Pl.SEND_VOICE_MESSAGES, S.Pl.SEND_POLLS];
-  return E.inSoundmojiExperiment || (n = n.filter(t => t !== S.Pl.USE_EXTERNAL_SOUNDS)), E.showPrivateThreads && E.showCreateThreads || (n = n.filter(t => t !== S.Pl.CREATE_PRIVATE_THREADS)), E.showCreateThreads || (n = n.filter(t => t !== S.Pl.CREATE_PUBLIC_THREADS)), E.inBypassSlowmodePermissionExperiment || (n = n.filter(t => t !== S.Pl.BYPASS_SLOWMODE)), {
+function N(t, i, n) {
+  let e = [r.Pl.SEND_MESSAGES, r.Pl.EMBED_LINKS, r.Pl.ATTACH_FILES, r.Pl.ADD_REACTIONS, r.Pl.USE_EXTERNAL_EMOJIS, r.Pl.USE_EXTERNAL_STICKERS, r.Pl.USE_EXTERNAL_SOUNDS, r.Pl.MENTION_EVERYONE, r.Pl.MANAGE_MESSAGES, r.Pl.BYPASS_SLOWMODE, r.Pl.READ_MESSAGE_HISTORY, r.Pl.SEND_TTS_MESSAGES, r.Pl.SEND_VOICE_MESSAGES, r.Pl.SEND_POLLS];
+  return n.inSoundmojiExperiment || (e = e.filter(t => t !== r.Pl.USE_EXTERNAL_SOUNDS)), n.inBypassSlowmodePermissionExperiment || (e = e.filter(t => t !== r.Pl.BYPASS_SLOWMODE)), {
     title: i,
-    description: E.sectionDescription,
-    permissions: A(n, t)
+    description: n.sectionDescription,
+    permissions: o(e, t)
   }
 }
 
-function g(t, i) {
-  return {
-    title: i,
-    permissions: A([S.Pl.CONNECT, S.Pl.SPEAK, S.Pl.STREAM, S.Pl.USE_SOUNDBOARD, S.Pl.USE_EXTERNAL_SOUNDS, S.Pl.USE_VAD, S.Pl.PRIORITY_SPEAKER, S.Pl.MUTE_MEMBERS, S.Pl.DEAFEN_MEMBERS, S.Pl.MOVE_MEMBERS, S.Pl.SET_VOICE_CHANNEL_STATUS], t)
-  }
-}
-
-function T(t, i, E) {
-  let n = [S.Pl.SEND_MESSAGES, S.Pl.EMBED_LINKS, S.Pl.ATTACH_FILES, S.Pl.ADD_REACTIONS, S.Pl.USE_EXTERNAL_EMOJIS, S.Pl.USE_EXTERNAL_STICKERS, S.Pl.USE_EXTERNAL_SOUNDS, S.Pl.MENTION_EVERYONE, S.Pl.MANAGE_MESSAGES, S.Pl.BYPASS_SLOWMODE, S.Pl.READ_MESSAGE_HISTORY, S.Pl.SEND_TTS_MESSAGES, S.Pl.SEND_VOICE_MESSAGES, S.Pl.SEND_POLLS];
-  return E.inSoundmojiExperiment || (n = n.filter(t => t !== S.Pl.USE_EXTERNAL_SOUNDS)), E.inBypassSlowmodePermissionExperiment || (n = n.filter(t => t !== S.Pl.BYPASS_SLOWMODE)), {
-    title: i,
-    description: E.sectionDescription,
-    permissions: A(n, t)
-  }
-}
-
-function M(t, i) {
-  let E = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+function c(t, i) {
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
     showActivities: true
   };
   return {
     title: i,
-    permissions: A([S.Pl.USE_APPLICATION_COMMANDS, E.showActivities ? S.Pl.USE_EMBEDDED_ACTIVITIES : null, S.Pl.USE_EXTERNAL_APPS].filter(n.lm), t)
+    permissions: o([r.Pl.USE_APPLICATION_COMMANDS, n.showActivities ? r.Pl.USE_EMBEDDED_ACTIVITIES : null, r.Pl.USE_EXTERNAL_APPS].filter(e.lm), t)
   }
 }
 
-function I(t, i, E) {
+function d(t, i, n) {
   return {
     title: i,
-    permissions: A(E ? [S.Pl.CONNECT, S.Pl.STREAM, S.Pl.MUTE_MEMBERS, S.Pl.MOVE_MEMBERS] : [S.Pl.CONNECT, S.Pl.MUTE_MEMBERS, S.Pl.MOVE_MEMBERS], t)
+    permissions: o(n ? [r.Pl.CONNECT, r.Pl.STREAM, r.Pl.MUTE_MEMBERS, r.Pl.MOVE_MEMBERS] : [r.Pl.CONNECT, r.Pl.MUTE_MEMBERS, r.Pl.MOVE_MEMBERS], t)
   }
 }
 
-function O(t, i) {
+function p(t, i) {
   return {
     title: i,
-    permissions: A([S.Pl.REQUEST_TO_SPEAK, S.Pl.MENTION_EVERYONE], t)
+    permissions: o([r.Pl.REQUEST_TO_SPEAK, r.Pl.MENTION_EVERYONE], t)
   }
 }
 
-function a(t, i) {
+function T(t, i) {
   return {
     title: i,
-    permissions: A([S.Pl.CREATE_EVENTS, S.Pl.MANAGE_EVENTS], t)
+    permissions: o([r.Pl.CREATE_EVENTS, r.Pl.MANAGE_EVENTS], t)
   }
 }
 
-function R(t) {
-  return null == t ? t : "string" == typeof t ? t.trim() : "function" == typeof t ? r.intl.format(t, {}) : t
+function u(t) {
+  return null == t ? t : "string" == typeof t ? t.trim() : "function" == typeof t ? E.intl.format(t, {}) : t
 }
 
-function D(t, i, E) {
+function M(t, i, n) {
   if (l.Z.getCurrentConfig({
-      guildId: E,
+      guildId: n,
       location: "getMigrationWarning"
-    }).enabled) return i ? t === S.Pl.MANAGE_CHANNELS || t === S.Pl.MANAGE_THREADS ? r.intl.string(r.t.JD3HnA) : t === S.Pl.MANAGE_MESSAGES ? r.intl.string(r.t["62sGhW"]) : null : t === S.Pl.MANAGE_MESSAGES ? r.intl.string(r.t.bU1J1V) : null;
-  return i ? t === S.Pl.MANAGE_CHANNELS || t === S.Pl.MANAGE_THREADS ? r.intl.string(r.t.Han3PH) : t === S.Pl.MANAGE_MESSAGES ? r.intl.string(r.t.zSc2tb) : null : t === S.Pl.MANAGE_MESSAGES ? r.intl.string(r.t["2XIdPp"]) : null
+    }).enabled) return i ? t === r.Pl.MANAGE_CHANNELS || t === r.Pl.MANAGE_THREADS ? E.intl.string(E.t.JD3HnA) : t === r.Pl.MANAGE_MESSAGES ? E.intl.string(E.t["62sGhW"]) : null : t === r.Pl.MANAGE_MESSAGES ? E.intl.string(E.t.bU1J1V) : null;
+  return i ? t === r.Pl.MANAGE_CHANNELS || t === r.Pl.MANAGE_THREADS ? E.intl.string(E.t.Han3PH) : t === r.Pl.MANAGE_MESSAGES ? E.intl.string(E.t.zSc2tb) : null : t === r.Pl.MANAGE_MESSAGES ? E.intl.string(E.t["2XIdPp"]) : null
 }

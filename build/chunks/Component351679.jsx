@@ -76,7 +76,7 @@ let N = Chunk473749.memo(function(e) {
     content: H,
     hasSpoilerEmbeds: B,
     hasBailedAst: V
-  } = (0, m.Z)(N, {
+  } = (0, h.Z)(N, {
     hideSimpleEmbedContent: A,
     allowList: U || G,
     allowHeading: U || G,
@@ -85,7 +85,7 @@ let N = Chunk473749.memo(function(e) {
   }), F = (0, o.JA)(N.id), z = (0, p.ZP)(N), Y = (0, s.e7)([v.Z], () => N.hasFlag(I.iLy.HAS_THREAD) && v.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), W = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: z.iconRoleId
-  }), q = (0, g.iG)(N), K = (0, g.Gx)(N);
+  }), K = (0, g.iG)(N), q = (0, g.Gx)(N);
   return (0, r.jsx)(f.Z, T({
     compact: false,
     className: a()(j, C.icymiMessageWrapper, {
@@ -106,7 +106,7 @@ let N = Chunk473749.memo(function(e) {
       hideTimestamp: true,
       hideGuildTag: false
     }),
-    childrenAccessories: e.hideAccessories ? true : (0, h.Q)(e, B, V),
+    childrenAccessories: e.hideAccessories ? true : (0, m.Q)(e, B, V),
     childrenMessageContent: (0, b.Z)(e, H),
     childrenSystemMessage: (0, E.Z)((i = T({}, e), l = l = {
       disableInteraction: k
@@ -124,8 +124,8 @@ let N = Chunk473749.memo(function(e) {
     onClick: x,
     hasThread: D && null != Y && N.hasFlag(I.iLy.HAS_THREAD),
     hasReply: false,
-    "aria-labelledby": q,
-    "aria-describedby": K,
+    "aria-labelledby": K,
+    "aria-describedby": q,
     author: z
   }, F, M))
 })

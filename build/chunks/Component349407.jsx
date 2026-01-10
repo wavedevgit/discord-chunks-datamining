@@ -34,7 +34,7 @@ function s(e) {
   (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("93132"), n.e("51343"), n.e("18290")]).then(n.bind(n, 598576));
+    } = await Promise.all([n.e("37193"), n.e("51343"), n.e("18290")]).then(n.bind(n, 598576));
     return n => (0, r.jsx)(t, o({
       analyticsLocation: e
     }, n))

@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,32 +21,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk731994 = require("./731994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = function(e) {
+let j = function(e) {
   let {
     className: t,
     style: n,
-    channel: x,
-    draftType: O
-  } = e, [E, j] = r.useState(true), S = (0, l.e7)([d.Z], () => d.Z.hasLayers()), _ = (0, l.e7)([p.Z], () => null != x && p.Z.can(y.Plq.ATTACH_FILES, x), [x]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(x.id)), I = x.getGuildId(), Z = O === c.d.FirstThreadMessage, T = (0, a.$5)(x), N = r.useMemo(() => !S && (x.isPrivate() && !x.isManaged() || null != I && !T && _ && u.Z.canChatInGuild(I)), [_, T, x, I, S]), A = Z ? y.TPd.GUILD_THREADS_ONLY.has(x.type) ? v.intl.string(v.t.RBBLhL) : v.intl.string(v.t.gUx4eu) : E ? v.intl.format(v.t.dYP2Fc, {
-    destination: (0, s.F6)(x, h.default, f.Z, true)
-  }) : v.intl.string(v.t.h76ulG);
-  return P || !N ? null : (0, i.jsx)(b.Z, {
+    channel: j,
+    draftType: x
+  } = e, [C, E] = i.useState(true), S = (0, l.e7)([d.Z], () => d.Z.hasLayers()), _ = (0, l.e7)([p.Z], () => null != j && p.Z.can(v.Plq.ATTACH_FILES, j), [j]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(j.id)), P = j.getGuildId(), Z = x === c.d.FirstThreadMessage, N = (0, a.$5)(j), T = i.useMemo(() => !S && (j.isPrivate() && !j.isManaged() || null != P && !N && _ && u.Z.canChatInGuild(P)), [_, N, j, P, S]), A = Z ? v.TPd.GUILD_THREADS_ONLY.has(j.type) ? O.intl.string(O.t.RBBLhL) : O.intl.string(O.t.gUx4eu) : C ? O.intl.format(O.t.dYP2Fc, {
+    destination: (0, s.F6)(j, h.default, f.Z, true)
+  }) : O.intl.string(O.t.h76ulG);
+  return I || !T ? null : (0, r.jsx)(b.Z, {
     className: t,
     style: n,
     title: A,
-    description: Z ? v.intl.string(v.t.lpgkzq) : v.intl.string(v.t.usQh4J),
-    icons: C.J6,
+    description: Z ? O.intl.string(O.t.lpgkzq) : O.intl.string(O.t.usQh4J),
+    icons: y.J6,
     onDrop: e => {
-      if (P) returnfalse;
-      N && null != x && ((0, g.d)(e, x, O, {
-        requireConfirm: E,
+      if (I) returnfalse;
+      T && null != j && ((0, m.d)(e, j, x, {
+        requireConfirm: C,
         origin: "drag_drop"
-      }), m.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS))
+      }), g.S.dispatchToLastSubscribed(v.CkL.TEXTAREA_FOCUS))
     },
-    onDragClear: () => j(true),
+    onDragClear: () => E(true),
     onDragOver: e => {
-      if (P) returnfalse;
-      Z || e.shiftKey !== E || j(!e.shiftKey)
+      if (I) returnfalse;
+      Z || e.shiftKey !== C || E(!e.shiftKey)
     }
   })
 }

@@ -69,10 +69,10 @@ function H(e) {
   let {
     channel: t,
     size: n = d.EFr.SIZE_20
-  } = e, i = (0, s.e7)([D.default], () => D.default.getUser(null == t ? true : t.recipients[0])), r = (0, s.e7)([x.Z], () => !(null == i || null == t || t.isMultiUserDM()) && null != x.Z.getTypingUsers(null == t ? true : t.id)[null == i ? true : i.id]), {
+  } = e, i = (0, u.e7)([D.default], () => D.default.getUser(null == t ? true : t.recipients[0])), r = (0, u.e7)([x.Z], () => !(null == i || null == t || t.isMultiUserDM()) && null != x.Z.getTypingUsers(null == t ? true : t.id)[null == i ? true : i.id]), {
     status: a,
     isMobile: o
-  } = (0, s.cj)([I.Z], () => null == i || null == t || t.isMultiUserDM() ? {
+  } = (0, u.cj)([I.Z], () => null == i || null == t || t.isMultiUserDM() ? {
     status: null,
     isMobile: false
   } : {
@@ -96,11 +96,11 @@ let U = Chunk473749.memo(function(e) {
       channel: i,
       locked: r,
       hasActiveThreads: o,
-      hasUsersInVoiceChannel: u,
+      hasUsersInVoiceChannel: s,
       withGuildIcon: d
-    } = e, h = (0, s.e7)([j.Z], () => j.Z.getGuild(i.guild_id), [i.guild_id]), N = i.type === A.d4z.DM || i.type === A.d4z.GROUP_DM, {
+    } = e, h = (0, u.e7)([j.Z], () => j.Z.getGuild(i.guild_id), [i.guild_id]), N = i.type === A.d4z.DM || i.type === A.d4z.GROUP_DM, {
       enableWaveformIcon: v
-    } = (0, f.M)(i.guild_id, "ChannelItemIcon"), T = (0, s.e7)([g.Z], () => g.Z.getAnimationStyle(i.id), [i.id]), O = i.type === A.d4z.GUILD_VOICE, y = v && O && !r && u, b = null;
+    } = (0, g.M)(i.guild_id, "ChannelItemIcon"), T = (0, u.e7)([f.Z], () => f.Z.getAnimationStyle(i.id), [i.id]), O = i.type === A.d4z.GUILD_VOICE, p = v && O && !r && s, b = null;
     if (d && null != h && !N) b = (0, l.jsx)(S.Z, {
       size: S.E.SMALL_32,
       className: L.iconContainerWithGuildIcon,
@@ -110,7 +110,7 @@ let U = Chunk473749.memo(function(e) {
       locked: r,
       hasActiveThreads: o
     });
-    else if (y) b = (0, l.jsx)(E.Z, {
+    else if (p) b = (0, l.jsx)(E.Z, {
       color: "currentColor",
       className: a()(L.icon, t),
       animationStyle: T,
@@ -132,7 +132,7 @@ let U = Chunk473749.memo(function(e) {
               })
             };
           default:
-            return (0, p.KS)(e, t, n)
+            return (0, y.KS)(e, t, n)
         }
       }(i, h, {
         locked: r,
@@ -144,7 +144,7 @@ let U = Chunk473749.memo(function(e) {
         className: a()(L.icon, t)
       })
     }
-    let I = d ? null == h ? true : h.name : (0, p.bT)(i, h, r, o),
+    let I = d ? null == h ? true : h.name : (0, y.bT)(i, h, r, o),
       x = d && null != h ? "".concat(h.name, " - ").concat(I, " icon") : "".concat(I, " icon");
     return (0, l.jsx)(c.u, {
       text: I,
@@ -160,11 +160,11 @@ let U = Chunk473749.memo(function(e) {
   k = 12633 == require.j ? Chunk473749.forwardRef(function(e, t) {
     var n, r, c;
     let {
-      channel: g,
+      channel: f,
       name: h,
       muted: m,
       selected: E,
-      connected: p,
+      connected: y,
       unread: v,
       locked: T,
       hasActiveThreads: O,
@@ -181,10 +181,10 @@ let U = Chunk473749.memo(function(e) {
         type: k
       },
       onMouseEnter: z,
-      onMouseLeave: V,
-      "aria-label": W,
-      children: F,
-      guild: q,
+      onMouseLeave: F,
+      "aria-label": V,
+      children: q,
+      guild: W,
       channelTypeOverride: K,
       forceInteractable: Y,
       mentionCount: X,
@@ -195,9 +195,9 @@ let U = Chunk473749.memo(function(e) {
     } = e, et = J === w.i.ALL_MESSAGES || null != X && X > 0, {
       enableWaveformIcon: en,
       enableHighlight: el
-    } = (0, f.M)(g.guild_id, "ChannelItem"), ei = en || el, er = (0, s.e7)([_.Z], () => Object.values(_.Z.getVoiceStatesForChannel(g.id)).length > 0, [g.id]), ea = ei && g.isGuildVocal() && er, eo = el && g.isGuildVocal() && er, es = (0, o.JA)(g.id), {
-      role: eu
-    } = es, ec = function(e, t) {
+    } = (0, g.M)(f.guild_id, "ChannelItem"), ei = en || el, er = (0, u.e7)([_.Z], () => Object.values(_.Z.getVoiceStatesForChannel(f.id)).length > 0, [f.id]), ea = ei && f.isGuildVocal() && er, eo = el && f.isGuildVocal() && er, eu = (0, o.JA)(f.id), {
+      role: es
+    } = eu, ec = function(e, t) {
       if (null == e) return {};
       var n, l, i = function(e, t) {
         if (null == e) return {};
@@ -211,11 +211,11 @@ let U = Chunk473749.memo(function(e) {
         for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(es, ["role"]), ed = i.useRef(null), eg = i.useRef(null), ef = (0, y.Z)(g), eh = A.Z5c.CHANNEL(ef, g.id), em = (0, N.ZP)(g), eN = g.isGuildVocal(), eE = (0, l.jsx)("div", {
+    }(eu, ["role"]), ed = i.useRef(null), ef = i.useRef(null), eg = (0, p.Z)(f), eh = A.Z5c.CHANNEL(eg, f.id), em = (0, N.ZP)(f), eN = f.isGuildVocal(), eE = (0, l.jsx)("div", {
       className: a()({
         [L.favoritesSuggestion]: Q
       }),
-      ref: eg,
+      ref: ef,
       children: (0, l.jsxs)(b.Z, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -234,14 +234,14 @@ let U = Chunk473749.memo(function(e) {
         }
         return e
       }({
-        role: eN && !p ? "button" : "link",
+        role: eN && !y ? "button" : "link",
         href: eN ? true : eh,
         target: "_blank",
         ref: ed,
         className: L.link,
-        onClick: () => null == S ? true : S(g)
+        onClick: () => null == S ? true : S(f)
       }, ec), c = c = {
-        "aria-label": W,
+        "aria-label": V,
         focusProps: {
           enabled: false
         },
@@ -249,25 +249,25 @@ let U = Chunk473749.memo(function(e) {
           className: L.linkTop,
           children: [(0, l.jsx)(U, {
             className: G,
-            channel: g,
-            guild: q,
+            channel: f,
+            guild: W,
             hasUsersInVoiceChannel: er,
             hasActiveThreads: O,
             locked: T,
             withGuildIcon: $
-          }), (0, l.jsx)(u.Z, {
+          }), (0, l.jsx)(s.Z, {
             className: a()(L.name, {
               [L.activeEvent]: ee
             }),
             "aria-hidden": true,
             children: (0, l.jsx)(B, {
-              channel: g,
+              channel: f,
               name: null != h ? h : em
             })
-          }), i.Children.count(F) > 0 ? (0, l.jsx)("div", {
+          }), i.Children.count(q) > 0 ? (0, l.jsx)("div", {
             onClick: P,
             className: L.children,
-            children: F
+            children: q
           }) : null]
         }), null != Z ? (0, l.jsx)("div", {
           className: a()(L.linkBottom, {
@@ -293,7 +293,7 @@ let U = Chunk473749.memo(function(e) {
     });
     return (0, l.jsx)(d.tEY, {
       focusTarget: ed,
-      ringTarget: eg,
+      ringTarget: ef,
       offset: {
         top: 2,
         bottom: 2,
@@ -303,10 +303,10 @@ let U = Chunk473749.memo(function(e) {
         ref: t,
         className: a()(C, null != S || null != I || null != j || Y ? L.wrapper : L.notInteractive, (() => {
           if (E) return a()(M.selectedChannel, R.SELECTED);
-          if (p) return a()(M.selectedChannel, R.CONNECTED);
+          if (y) return a()(M.selectedChannel, R.CONNECTED);
           if (T) return R.LOCKED;
           if (m) return R.MUTED;
-          if (ei && !p && ea) return R.HOISTING_NOT_CONNECTED;
+          if (ei && !y && ea) return R.HOISTING_NOT_CONNECTED;
           if (v)
             if (et) return R.UNREAD_IMPORTANT;
             else return R.UNREAD_LESS_IMPORTANT;
@@ -329,11 +329,11 @@ let U = Chunk473749.memo(function(e) {
               return L.typeDefault
           }
         }(null != K ? K : k)),
-        onMouseUp: e => null == I ? true : I(e, g),
-        onMouseDown: e => null == j ? true : j(e, g),
-        onContextMenu: e => null == x ? true : x(e, g),
+        onMouseUp: e => null == I ? true : I(e, f),
+        onMouseDown: e => null == j ? true : j(e, f),
+        onContextMenu: e => null == x ? true : x(e, f),
         onMouseEnter: z,
-        onMouseLeave: V,
+        onMouseLeave: F,
         children: [!eo && v && !m && (0, l.jsx)("div", {
           className: a()(L.unread, et ? L.unreadImportant : true)
         }), null != (n = null == D ? true : D(eE)) ? n : eE]
@@ -346,7 +346,7 @@ function B(e) {
   let {
     channel: a,
     name: o
-  } = e, s = a.isPrivate() && 1 === (null != (r = a.rawRecipients) ? r : []).length, u = null == (n = a.rawRecipients) || null == (t = n[0]) ? true : t.display_name_styles, c = i.useMemo(() => s ? (0, v.bN)(u) : null, [s, u]);
+  } = e, u = a.isPrivate() && 1 === (null != (r = a.rawRecipients) ? r : []).length, s = null == (n = a.rawRecipients) || null == (t = n[0]) ? true : t.display_name_styles, c = i.useMemo(() => u ? (0, v.bN)(s) : null, [u, s]);
   return null != c ? (0, l.jsx)(O.Z, {
     userName: o,
     displayNameStyles: c,

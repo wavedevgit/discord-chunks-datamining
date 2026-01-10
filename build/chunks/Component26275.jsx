@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 26275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,20 +15,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782589 = require("./782589.js");
 
-function f() {
+function h() {
   let {
     quest: e,
     onCtxMenuOpen: t,
     onCtxMenuClose: n,
     onCtxMenuSelect: i
-  } = r.useContext(u.A), f = (0, c.B6)(e.config.expiresAt);
+  } = r.useContext(u.A), h = (0, c.B6)(e.config.expiresAt);
   return (0, a.jsxs)("div", {
     className: p.questAcceptedHeader,
     children: [(0, a.jsx)(s.Text, {
       variant: "text-xxs/medium",
       className: l()(p.flex, p.headerText),
       children: m.intl.format(m.t["pX+fmn"], {
-        expirationDate: f
+        expirationDate: h
       })
     }), (0, a.jsx)(d.i, {
       onOpen: t,

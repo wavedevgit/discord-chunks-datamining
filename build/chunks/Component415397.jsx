@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 415397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => T
+  B: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -29,67 +29,67 @@ var Chunk54381 = require("./54381.js"),
   Chunk303092 = require("./303092.js"),
   Chunk770966 = require("./770966.js");
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
 }
 let Z = "VoiceInviteSuggestionsPopover";
 
-function T(e) {
+function N(e) {
   let {
     channel: t,
     onHoverOrFocus: l,
     setPopoutRef: o,
     closePopout: u
-  } = e, p = r.useRef(null), f = (0, E.Tu)(p), b = (0, E.j1)({
+  } = e, p = i.useRef(null), f = (0, C.Tu)(p), b = (0, C.j1)({
     channel: t
   }), {
-    analyticsLocations: C
-  } = (0, m.ZP)(h.Z.VOICE_INVITE_SUGGESTIONS_POPOVER);
-  (0, g.Z)({
+    analyticsLocations: y
+  } = (0, g.ZP)(h.Z.VOICE_INVITE_SUGGESTIONS_POPOVER);
+  (0, m.Z)({
     name: c.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
     type: c.ImpressionTypes.POPOUT,
     properties: {
       voice_channel_id: t.id,
       voice_guild_id: t.guild_id,
-      location_stack: C
+      location_stack: y
     }
-  }), r.useEffect(() => {
+  }), i.useEffect(() => {
     null == o || o(p.current)
-  }, [o]), r.useEffect(() => {
+  }, [o]), i.useEffect(() => {
     null == l || l(f.isHoveringOrFocusing)
   }, [l, f]);
-  let v = r.useCallback(() => {
-    let e = y.Z.getGuild(t.guild_id);
+  let O = i.useCallback(() => {
+    let e = v.Z.getGuild(t.guild_id);
     s()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, d.ZDy)(async () => {
       let {
-        default: r
-      } = await Promise.all([n.e("49049"), n.e("7654"), n.e("97016")]).then(n.bind(n, 560114));
+        default: i
+      } = await Promise.all([n.e("7654"), n.e("49049"), n.e("97016")]).then(n.bind(n, 560114));
       return n => {
         var l, a;
-        return (0, i.jsx)(r, (l = I({}, n), a = a = {
+        return (0, r.jsx)(i, (l = P({}, n), a = a = {
           guild: e,
           channel: t,
-          source: j.t4x.VOICE_INVITE_SUGGESTIONS
+          source: E.t4x.VOICE_INVITE_SUGGESTIONS
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
           return n
         })(Object(a)).forEach(function(e) {
@@ -98,28 +98,28 @@ function T(e) {
       }
     }), u()
   }, [t, u]);
-  return (0, i.jsx)("div", {
+  return (0, r.jsx)("div", {
     ref: p,
     "aria-label": S.intl.string(S.t.o53CL2),
-    className: a()(P.popover, _.popover),
-    children: (0, i.jsx)("div", {
+    className: a()(I.popover, _.popover),
+    children: (0, r.jsx)("div", {
       className: _.inner,
-      children: (0, i.jsxs)("ul", {
+      children: (0, r.jsxs)("ul", {
         className: _.list,
-        children: [b.map(e => (0, i.jsx)(N, {
+        children: [b.map(e => (0, r.jsx)(T, {
           channel: t,
           user: e
-        }, e.id)), (0, i.jsxs)(d.P3F, {
+        }, e.id)), (0, r.jsxs)(d.P3F, {
           tag: "li",
-          onClick: v,
+          onClick: O,
           className: a()(_.row, _.clickable),
-          children: [(0, i.jsx)("div", {
+          children: [(0, r.jsx)("div", {
             className: _.leading,
-            children: (0, i.jsx)(d.BFJ, {
+            children: (0, r.jsx)(d.BFJ, {
               size: "xs",
               className: _.icon
             })
-          }), (0, i.jsx)(d.Text, {
+          }), (0, r.jsx)(d.Text, {
             variant: "text-md/medium",
             className: _.name,
             lineClamp: 1,
@@ -131,46 +131,46 @@ function T(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     channel: t,
     user: n
-  } = e, l = r.useRef(null), o = (0, u.e7)([C.ZP], () => C.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
+  } = e, l = i.useRef(null), o = (0, u.e7)([y.ZP], () => y.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
     isHoveringOrFocusing: s
-  } = (0, E.Tu)(l), [c, h] = r.useState(null), m = "success" === c || "sending" === c, g = r.useCallback(async () => {
-    if (m) return;
+  } = (0, C.Tu)(l), [c, h] = i.useState(null), g = "success" === c || "sending" === c, m = i.useCallback(async () => {
+    if (g) return;
     async function e() {
-      var e, n, i;
-      let r = null != (e = v.Z.getInvite(t.id, {})) ? e : null;
-      if (null == r) {
-        if (!x.Z.can(j.Plq.CREATE_INSTANT_INVITE, t)) return null;
+      var e, n, r;
+      let i = null != (e = O.Z.getInvite(t.id, {})) ? e : null;
+      if (null == i) {
+        if (!j.Z.can(E.Plq.CREATE_INSTANT_INVITE, t)) return null;
         try {
           await p.ZP.createInvite(t.id, {}, Z)
         } catch (e) {
           return null
         }
-        r = null != (n = v.Z.getInvite(t.id, {})) ? n : null
+        i = null != (n = O.Z.getInvite(t.id, {})) ? n : null
       }
-      return null != (i = null == r ? true : r.code) ? i : null
+      return null != (r = null == i ? true : i.code) ? r : null
     }
     h("sending");
-    let i = await e();
-    if (null == i) return void h(null);
+    let r = await e();
+    if (null == r) return void h(null);
     f.Z.enqueue({
       type: f.m.USER,
       user: n,
-      inviteKey: i,
+      inviteKey: r,
       location: Z,
       inviteAnalyticsMetadata: {
-        source: j.t4x.VOICE_INVITE_SUGGESTIONS
+        source: E.t4x.VOICE_INVITE_SUGGESTIONS
       }
     }, e => {
       h(e ? "success" : null)
     })
-  }, [m, n, t]), {
-    avatarDecorationSrc: y,
-    avatarSrc: P,
-    eventHandlers: T
+  }, [g, n, t]), {
+    avatarDecorationSrc: v,
+    avatarSrc: I,
+    eventHandlers: N
   } = (0, b.Z)({
     userId: n.id,
     size: d.EFr.SIZE_24,
@@ -178,43 +178,43 @@ function N(e) {
     guildId: t.guild_id
   });
   if (null == o) return null;
-  let N = O.ZP.getName(n),
+  let T = x.ZP.getName(n),
     A = S.intl.string(S.t.jYnGPG);
-  return (0, i.jsxs)(d.P3F, {
+  return (0, r.jsxs)(d.P3F, {
     innerRef: l,
     tag: "li",
     className: a()(_.row, {
-      [_.clickable]: !m
+      [_.clickable]: !g
     }),
-    "aria-disabled": m,
-    onClick: g,
+    "aria-disabled": g,
+    onClick: m,
     "aria-label": A,
-    children: [(0, i.jsx)(d.qEK, I({
+    children: [(0, r.jsx)(d.qEK, P({
       className: _.avatar,
-      "aria-label": N,
+      "aria-label": T,
       size: d.EFr.SIZE_24,
-      src: P,
-      avatarDecoration: y
-    }, T)), (0, i.jsx)(d.Text, {
+      src: I,
+      avatarDecoration: v
+    }, N)), (0, r.jsx)(d.Text, {
       variant: "text-md/medium",
       className: _.name,
       lineClamp: 1,
-      children: N
-    }), "sending" === c && (0, i.jsx)("div", {
+      children: T
+    }), "sending" === c && (0, r.jsx)("div", {
       className: _.dots,
-      children: (0, i.jsx)(d.bbz, {
+      children: (0, r.jsx)(d.bbz, {
         dotRadius: 2,
         themed: true
       })
-    }), "success" === c && (0, i.jsx)(d.Text, {
+    }), "success" === c && (0, r.jsx)(d.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
       className: _.status,
       lineClamp: 1,
       children: S.intl.string(S.t["8BEiNn"])
-    }), null == c && (0, i.jsx)("div", {
+    }), null == c && (0, r.jsx)("div", {
       className: _.userIconContainer,
-      children: (0, i.jsx)(d.oLu, {
+      children: (0, r.jsx)(d.oLu, {
         color: "currentColor",
         size: "xs",
         className: _.icon

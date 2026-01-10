@@ -29,7 +29,7 @@ let v = Chunk473749.memo(function(e) {
     onContextMenu: e => (0, o.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("90508"), n.e("89250"), n.e("3489")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("90508"), n.e("92091"), n.e("12632")]).then(n.bind(n, 422200));
       return t => {
         var n, l;
         return (0, r.jsx)(e, (n = function(e) {

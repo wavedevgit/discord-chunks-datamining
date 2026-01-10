@@ -6,6 +6,7 @@ require.d(exports, {
   Cf: () => I,
   ID: () => T,
   Ls: () => y,
+  SK: () => j,
   Xz: () => P,
   Z: () => b,
   c_: () => N,
@@ -15,7 +16,6 @@ require.d(exports, {
   pG: () => O,
   rH: () => D,
   rf: () => w,
-  uV: () => j,
   x3: () => x,
   z5: () => A
 });
@@ -197,9 +197,9 @@ function x(e) {
   }, e)), E(m.QP.PRESET)
 }
 async function L() {
-  if (null == f.Z.applicationWidgetApplicationConfigs || !(f.Z.applicationWidgetApplicationConfigs.length > 0)) {
+  if (null == f.Z.applicationWidgetConfigs || !(f.Z.applicationWidgetConfigs.length > 0)) {
     a.Z.dispatch({
-      type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_START"
+      type: "USER_PROFILE_APPLICATION_WIDGET_CONFIGS_FETCH_START"
     });
     try {
       let e = await i.tn.get({
@@ -207,18 +207,18 @@ async function L() {
         rejectWithError: true
       });
       a.Z.dispatch({
-        type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_SUCCESS",
+        type: "USER_PROFILE_APPLICATION_WIDGET_CONFIGS_FETCH_SUCCESS",
         applicationConfigs: e.body.application_configs
       })
     } catch (e) {
       throw a.Z.dispatch({
-        type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_FAILURE"
+        type: "USER_PROFILE_APPLICATION_WIDGET_CONFIGS_FETCH_FAILURE"
       }), d.Z.captureException(e), e
     }
   }
 }
 let j = (0, Chunk442837.Kb)(Chunk621853.Z, {
   getQueryId: Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_CONFIGS,
-  get: () => f.Z.applicationWidgetApplicationConfigs,
+  get: () => f.Z.applicationWidgetConfigs,
   load: () => L()
 })

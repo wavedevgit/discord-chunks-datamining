@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function C(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function C(e, t) {
   }), e
 }
 
-function y(e) {
+function C(e) {
   let {
     guildId: t,
     emojiData: n,
@@ -91,8 +91,8 @@ function y(e) {
       emojiName: n.name,
       animated: null == s ? true : s.animated
     })
-  }, [n, s]), y = "";
-  return null != s ? y = ":".concat(s.name, ":") : null != n.name && (y = b.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
+  }, [n, s]), C = "";
+  return null != s ? C = ":".concat(s.name, ":") : null != n.name && (C = b.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
     targetElementRef: a,
     animation: c.yRy.Animation.NONE,
     position: "top",
@@ -101,7 +101,7 @@ function y(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsxs)("div", C(O({
+      return (0, r.jsxs)("div", y(O({
         ref: a,
         className: v.emojiInputContainer
       }, e), {
@@ -113,7 +113,7 @@ function y(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
           className: v.emojiText,
-          children: y
+          children: C
         })]
       }))
     }
@@ -135,10 +135,10 @@ function N(e) {
   } = e, p = (0, u.Dt)(), [h, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, O] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), C = d && "" !== h && (null != v.id || null != v.name);
+  })), y = d && "" !== h && (null != v.id || null != v.name);
 
   function N(e) {
-    e.preventDefault(), C && (g({
+    e.preventDefault(), y && (g({
       description: h,
       emojiId: v.id,
       emojiName: v.name
@@ -160,7 +160,7 @@ function N(e) {
     text: null == l ? j.intl.string(j.t.OYkgVk) : j.intl.string(j.t["R3BPH+"]),
     variant: "primary",
     onClick: N,
-    disabled: !C
+    disabled: !y
   }), (0, r.jsx)("form", {
     onSubmit: N,
     children: (0, r.jsx)(s.Modal, {
@@ -180,7 +180,7 @@ function N(e) {
           "aria-labelledby": p
         }), (0, r.jsx)(s.gNt, {
           label: j.intl.string(j.t.sMOuuS),
-          children: (0, r.jsx)(y, {
+          children: (0, r.jsx)(C, {
             guildId: n,
             emojiData: v,
             onSelectEmoji: O
@@ -224,7 +224,7 @@ function E(e) {
     descriptionPlaceholder: j.intl.string(j.t.J8O1Lp),
     canSubmit: null != f,
     onSave: function(e) {
-      a()(null != f, "Cannot submit null channel"), s(C(O({}, e), {
+      a()(null != f, "Cannot submit null channel"), s(y(O({}, e), {
         channelId: f
       }))
     },
@@ -260,7 +260,7 @@ function I(e) {
     descriptionPlaceholder: j.intl.string(j.t.ucP4Tt),
     canSubmit: "" !== f,
     onSave: function(e) {
-      a()("" !== f, "Cannot submit empty name"), l(C(O({}, e), {
+      a()("" !== f, "Cannot submit empty name"), l(y(O({}, e), {
         name: f
       }))
     },

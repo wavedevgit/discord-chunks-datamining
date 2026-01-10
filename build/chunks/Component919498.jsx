@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 919498, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => d,
@@ -21,13 +21,13 @@ function d(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["applicationId"]);
@@ -65,8 +65,8 @@ function f(e) {
     guildId: d,
     channelId: f,
     className: g
-  } = e, p = (0, c.Z)(n), b = p.length > 0, m = function(e, t, n) {
-    let r = e.slice(0, 3).map(e => l.ZP.getName(t, n, e));
+  } = e, p = (0, c.Z)(n), m = p.length > 0, b = function(e, t, n) {
+    let r = e.slice(0, 3).map(e => a.ZP.getName(t, n, e));
     return 1 === e.length ? s.intl.formatToPlainString(s.t.FURqTU, {
       name: r[0]
     }) : 2 === e.length ? s.intl.formatToPlainString(s.t["08Usu/"], {
@@ -82,21 +82,21 @@ function f(e) {
       name3: r[2],
       numPeople: e.length - 3
     })
-  }(p, d, f), h = (0, a.Z)({
+  }(p, d, f), y = (0, l.Z)({
     location: "SocialProofButton",
     applicationId: n,
     source: i.m1.UserProfile,
     sourceUserId: t,
     trackEntryPointImpression: true
   });
-  return b && null != h ? (0, r.jsx)(o.$, {
+  return m && null != y ? (0, r.jsx)(o.$, {
     users: p,
-    label: m,
+    label: b,
     className: g,
-    onClick: h,
+    onClick: y,
     guildId: d,
     channelId: f,
-    "aria-label": m,
+    "aria-label": b,
     overflowCountColor: "text-strong",
     overflowCountClassName: u.gameCoverOverflowCount
   }) : null

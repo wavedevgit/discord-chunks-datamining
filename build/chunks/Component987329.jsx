@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 987329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -20,16 +20,16 @@ let h = e => {
     remoteMode: n = false
   } = e, {
     parentAnalyticsLocation: h
-  } = (0, a.ZP)(), m = r.useRef(null);
-  return (0, i.jsx)(l.yRy, {
-    targetElementRef: m,
+  } = (0, a.ZP)(), g = i.useRef(null);
+  return (0, r.jsx)(l.yRy, {
+    targetElementRef: g,
     renderPopout: e => {
       let {
-        closePopout: r
+        closePopout: i
       } = e;
-      return (0, i.jsx)(u.Z, {
-        children: (0, i.jsx)(o.Z, {
-          onClose: r,
+      return (0, r.jsx)(u.Z, {
+        children: (0, r.jsx)(o.Z, {
+          onClose: i,
           channel: t,
           remoteMode: n,
           onInteraction: (0, c.u)("MoreSettingsMenu", h, {
@@ -46,10 +46,10 @@ let h = e => {
       let {
         onClick: n
       } = e, {
-        isShown: r
+        isShown: i
       } = t;
-      return (0, i.jsx)(d.d, {
-        ref: m,
+      return (0, r.jsx)(d.d, {
+        ref: g,
         isTrayButton: true,
         onClick: e => {
           (0, s.v)(h, s.d.MORE), n(e)
@@ -57,7 +57,7 @@ let h = e => {
         label: f.intl.string(f.t.PdRCRg),
         iconComponent: l.xhG,
         color: "primaryDark",
-        isActive: r
+        isActive: i
       })
     }
   })

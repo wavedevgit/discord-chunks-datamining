@@ -1,14 +1,15 @@
-/** Chunk was on 40184 **/
-/** chunk id: 350707, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 350707, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  ZP: () => O,
-  cy: () => v,
+  ZP: () => S,
+  cy: () => O,
   iu: () => y
 }), require("./388685.js");
-var i, r, l, Chunk54381 = require("./54381.js"),
+var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk626135 = require("./626135.js"),
@@ -16,7 +17,7 @@ var i, r, l, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk308779 = require("./308779.js");
 
-function g(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,44 +26,70 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      g(e, t, n[t])
+    }))), r.forEach(function(t) {
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function h(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var y = ((r = {}).CENTER = "center", r.LEFT = "left", r),
-  v = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
-class x extends Chunk473749.PureComponent {
+
+function E(e, t) {
+  if (null == e) return {};
+  var n, r, i = b(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function b(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+var y = function(e) {
+    return e.CENTER = "center", e.LEFT = "left", e
+  }({}),
+  O = function(e) {
+    return e.TOP = "top", e.MIDDLE = "middle", e
+  }({});
+class v extends Chunk473749.PureComponent {
   componentDidMount() {
     let {
       uniqueId: e
     } = this.props;
-    p.default.track(f.rMx.SHOW_TUTORIAL, {
+    u.default.track(d.rMx.SHOW_TUTORIAL, {
       tutorial: e
     })
   }
   componentWillUnmount() {
-    p.default.track(f.rMx.CLOSE_TUTORIAL, {
+    u.default.track(d.rMx.CLOSE_TUTORIAL, {
       tutorial: this.props.uniqueId,
       acknowledged: this.state.confirmed
     })
@@ -72,50 +99,50 @@ class x extends Chunk473749.PureComponent {
       renderMedia: e,
       textAlign: t,
       isLongText: n,
-      title: i,
-      body: r,
-      className: l,
-      onClickSkipAll: o
-    } = this.props, s = "left" === t || n, p = "center" === t || !s;
-    return (0, a.jsxs)(u.VqE, {
-      className: c()(m.popoutRoot, l),
-      children: [null != e && (0, a.jsx)(d.Z, {
-        className: m.mediaContainer,
-        justify: s ? d.Z.Justify.START : d.Z.Justify.CENTER,
+      title: r,
+      body: a,
+      className: o,
+      onClickSkipAll: u
+    } = this.props, d = "string" == typeof a ? "p" : "div", _ = "left" === t || n, m = "center" === t || !_;
+    return (0, i.jsxs)(l.VqE, {
+      className: s()(p.popoutRoot, o),
+      children: [null != e && (0, i.jsx)(c.Z, {
+        className: p.mediaContainer,
+        justify: _ ? c.Z.Justify.START : c.Z.Justify.CENTER,
         children: e()
-      }), (0, a.jsx)(u.H, {
-        className: c()({
-          [m.titleCenter]: p,
-          [m.titleLeft]: s
-        }),
-        children: i
-      }), (0, a.jsx)("string" == typeof r ? "p" : "div", {
-        className: c()({
-          [m.bodyCenter]: p,
-          [m.bodyLeft]: s
+      }), (0, i.jsx)(l.H, {
+        className: s()({
+          [p.titleCenter]: m,
+          [p.titleLeft]: _
         }),
         children: r
-      }), (0, a.jsxs)(u.ButtonGroup, {
+      }), (0, i.jsx)(d, {
+        className: s()({
+          [p.bodyCenter]: m,
+          [p.bodyLeft]: _
+        }),
+        children: a
+      }), (0, i.jsxs)(l.ButtonGroup, {
         fullWidth: true,
         direction: "vertical",
-        children: [(0, a.jsx)(u.Button, {
+        children: [(0, i.jsx)(l.Button, {
           fullWidth: true,
           variant: "primary",
           onClick: this.handleDismiss,
-          text: h.intl.string(h.t["+IrDzN"])
-        }), (0, a.jsx)(u.Button, {
+          text: f.intl.string(f.t["+IrDzN"])
+        }), (0, i.jsx)(l.Button, {
           fullWidth: true,
           variant: "secondary",
-          onClick: o,
-          text: h.intl.string(h.t["33wtxt"])
+          onClick: u,
+          text: f.intl.string(f.t["33wtxt"])
         })]
       })]
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), _(this, "state", {
       confirmed: false
-    }), g(this, "handleDismiss", () => {
+    }), _(this, "handleDismiss", () => {
       let {
         onClickComplete: e
       } = this.props;
@@ -125,84 +152,70 @@ class x extends Chunk473749.PureComponent {
     })
   }
 }
-class O extends(i = Chunk473749.PureComponent) {
+class S extends(r = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
         renderMedia: t,
         textAlign: n,
-        onComplete: i,
-        onSkipAll: r,
-        isLongText: l,
-        title: o,
-        body: s,
-        children: c,
+        onComplete: r,
+        onSkipAll: a,
+        isLongText: o,
+        title: s,
+        body: c,
+        children: u,
         spacing: d,
-        forceTheme: p,
-        innerRef: f
+        forceTheme: f,
+        innerRef: p
       } = e,
-      h = function(e, t) {
-        if (null == e) return {};
-        var n, i, r = function(e, t) {
-          if (null == e) return {};
-          var n, i, r = {},
-            l = Object.keys(e);
-          for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-          return r
-        }(e, t);
-        if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
-        }
-        return r
-      }(e, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
-      m = "top" === h.position || "bottom" === h.position ? "center" : "top";
-    return (0, a.jsx)(u.yRy, C(b({
-      targetElementRef: f
-    }, h), {
-      align: m,
+      _ = E(e, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
+      h = "top" === _.position || "bottom" === _.position ? "center" : "top";
+    return (0, i.jsx)(l.yRy, g(m({
+      targetElementRef: p
+    }, _), {
+      align: h,
       spacing: null != d ? d : 0,
       renderPopout: this.renderPopoutContent,
       nudgeAlignIntoViewport: true,
-      children: c
+      children: u
     }))
   }
   constructor(...e) {
-    super(...e), g(this, "onClickComplete", e => {
+    super(...e), _(this, "onClickComplete", e => {
       e(), this.props.onComplete()
-    }), g(this, "onClickSkipAll", e => {
+    }), _(this, "onClickSkipAll", e => {
       let {
         onSkipAll: t,
         uniqueId: n
       } = this.props;
-      e(), t(), p.default.track(f.rMx.DISMISS_ALL_TUTORIALS, {
+      e(), t(), u.default.track(d.rMx.DISMISS_ALL_TUTORIALS, {
         tutorial: n
       })
-    }), g(this, "renderPopoutContent", e => {
+    }), _(this, "renderPopoutContent", e => {
       let {
         closePopout: t,
         position: n
       } = e, {
-        forceTheme: i,
-        isLongText: r,
-        arrowAlignment: l,
-        renderMedia: o
-      } = this.props, s = null != o;
-      return (0, a.jsx)(u.f6W, {
-        theme: i,
-        children: e => (0, a.jsx)(x, C(b({}, this.props), {
-          className: c()({
-            [m.bottom]: "bottom" === n,
-            [m.contentNarrowNoMedia]: !r && !s,
-            [m.contentNarrowWithMedia]: !r && s,
-            [m.contentWideNoMedia]: r && !s,
-            [m.contentWideWithMedia]: r && s,
-            [m.right]: "right" === n,
-            [m.top]: "top" === n,
-            [m.left]: "left" === n,
-            [m.arrowAlignmentTop]: "top" === l,
-            [m.arrowAlignmentMiddle]: "middle" === l,
-            "force-theme": null != i
+        forceTheme: r,
+        isLongText: a,
+        arrowAlignment: o,
+        renderMedia: c
+      } = this.props, u = null != c;
+      return (0, i.jsx)(l.f6W, {
+        theme: r,
+        children: e => (0, i.jsx)(v, g(m({}, this.props), {
+          className: s()({
+            [p.bottom]: "bottom" === n,
+            [p.contentNarrowNoMedia]: !a && !u,
+            [p.contentNarrowWithMedia]: !a && u,
+            [p.contentWideNoMedia]: a && !u,
+            [p.contentWideWithMedia]: a && u,
+            [p.right]: "right" === n,
+            [p.top]: "top" === n,
+            [p.left]: "left" === n,
+            [p.arrowAlignmentTop]: "top" === o,
+            [p.arrowAlignmentMiddle]: "middle" === o,
+            "force-theme": null != r
           }, e),
           onClickComplete: () => this.onClickComplete(t),
           onClickSkipAll: () => this.onClickSkipAll(t)
@@ -211,6 +224,6 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-g(O, "TextAlignments", y), g(O, "defaultProps", {
+_(S, "TextAlignments", y), _(S, "defaultProps", {
   textAlign: "left"
 })

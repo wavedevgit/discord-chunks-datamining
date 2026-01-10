@@ -359,6 +359,10 @@ let V = {
   [Chunk981631.rMx.VIDEO_STREAM_ZOOM_CHANGED]: {
     throttlePeriod: R,
     throttleKeys: () => []
+  },
+  [Chunk981631.rMx.CACHE_STATS_RECORDED]: {
+    throttlePeriod: j,
+    throttleKeys: () => []
   }
 };
 

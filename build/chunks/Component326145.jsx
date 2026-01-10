@@ -31,7 +31,7 @@ function v(e) {
     width: v,
     height: y
   } = (0, c.ZP)(), I = i.useCallback(() => {
-    null != t && null != n && ((0, h.I1)(t), (0, b.default)({
+    null != t && null != n && ((0, m.I1)(t), (0, b.default)({
       guildId: t,
       returnChannelId: n
     }))
@@ -53,7 +53,7 @@ function v(e) {
     }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
       className: O.gradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, m.aD)(T, .16), " 0%, ").concat((0, m.aD)(T, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, h.aD)(T, .16), " 0%, ").concat((0, h.aD)(T, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
       className: O.gradient

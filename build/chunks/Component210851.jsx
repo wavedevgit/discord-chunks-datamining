@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 210851, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -15,9 +15,9 @@ let s = function(e) {
     initialValue: c,
     onFileChange: d,
     title: u
-  } = e, [m, p] = r.useState(null), f = r.useRef(null);
+  } = e, [m, p] = r.useState(null), h = r.useRef(null);
   return r.useEffect(() => () => {
-    null != f.current && URL.revokeObjectURL(f.current)
+    null != h.current && URL.revokeObjectURL(h.current)
   }, []), (0, a.jsx)(i.gNt, {
     label: u,
     description: "Supported asset formats: ".concat(o.join(", ")),
@@ -32,7 +32,7 @@ let s = function(e) {
       onFileSelect: function(e) {
         if (p(null != e ? e : null), null == e) return;
         let t = URL.createObjectURL(e);
-        f.current = t;
+        h.current = t;
         let n = new URL(t);
         n.searchParams.append("mimetype", e.type), n.searchParams.append("name", e.name), d(s, n.toString())
       }

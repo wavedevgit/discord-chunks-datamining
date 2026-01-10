@@ -1,7 +1,7 @@
-/** Chunk was on 15718 **/
+/** Chunk was on 69937 **/
 /** chunk id: 787469, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,52 +21,52 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk280533 = require("./280533.js");
 
-function N(e) {
+function h(e) {
   let {
     member: t
-  } = e, n = (0, s.e7)([A.Z], () => A.Z.getGuild(t.guildId)), i = (0, s.e7)([_.Z], () => _.Z.getSortedRoles(t.guildId)), N = l.useMemo(() => i.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, i]), h = (0, s.e7)([c.Z], () => c.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), O = (0, E.zq)(h), R = (0, E.vN)(t), S = (0, s.e7)([T.Z], () => T.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
-  return null == n ? null : (0, r.jsx)(u.gNt, {
-    label: f.intl.string(f.t["LPJmL/"]),
-    children: (0, r.jsx)(I.WM, {
-      children: (0, r.jsx)(I._2, {
-        description: t.roles.length > 0 || S ? (0, r.jsxs)("div", {
-          className: g.roleContainer,
+  } = e, n = (0, s.e7)([A.Z], () => A.Z.getGuild(t.guildId)), i = (0, s.e7)([_.Z], () => _.Z.getSortedRoles(t.guildId)), h = l.useMemo(() => i.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, i]), N = (0, s.e7)([u.Z], () => u.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), O = (0, d.zq)(N), p = (0, d.vN)(t), R = (0, s.e7)([f.Z], () => f.Z.can(g.Plq.MANAGE_ROLES, n), [n]);
+  return null == n ? null : (0, r.jsx)(c.gNt, {
+    label: I.intl.string(I.t["LPJmL/"]),
+    children: (0, r.jsx)(T.WM, {
+      children: (0, r.jsx)(T._2, {
+        description: t.roles.length > 0 || R ? (0, r.jsxs)("div", {
+          className: m.roleContainer,
           children: [(0, r.jsx)(o.u, {
             asContainer: true,
-            "aria-label": f.intl.string(f.t["0g8Xd/"]),
-            text: f.intl.string(f.t["93S+lG"]),
-            children: (0, r.jsx)(u.P3F, {
-              children: (0, r.jsx)(d.Z, {
-                className: a()(g.roleTooltipItem, g.highestRole),
+            "aria-label": I.intl.string(I.t["0g8Xd/"]),
+            text: I.intl.string(I.t["93S+lG"]),
+            children: (0, r.jsx)(c.P3F, {
+              children: (0, r.jsx)(E.Z, {
+                className: a()(m.roleTooltipItem, m.highestRole),
                 role: O,
                 guildId: t.guildId
               })
             })
-          }), N.map(e => (0, r.jsx)(d.Z, {
-            className: g.roleTooltipItem,
+          }), h.map(e => (0, r.jsx)(E.Z, {
+            className: m.roleTooltipItem,
             role: e,
             guildId: t.guildId
-          }, e.id)), S && (0, r.jsx)(o.u, {
+          }, e.id)), R && (0, r.jsx)(o.u, {
             asContainer: true,
-            "aria-label": f.intl.string(f.t.ljnBlo),
-            text: f.intl.string(f.t.ljnBlo),
-            children: (0, r.jsx)(u.P3F, {
-              onClick: R,
-              className: g.addRoleContainer,
-              children: (0, r.jsx)(u.oFk, {
+            "aria-label": I.intl.string(I.t.ljnBlo),
+            text: I.intl.string(I.t.ljnBlo),
+            children: (0, r.jsx)(c.P3F, {
+              onClick: p,
+              className: m.addRoleContainer,
+              children: (0, r.jsx)(c.oFk, {
                 size: "custom",
                 color: "currentColor",
-                className: g.addRoleIcon,
+                className: m.addRoleIcon,
                 width: 20,
                 height: 20
               })
             })
           })]
         }) : (0, r.jsx)("div", {
-          className: g.noRoles,
-          children: (0, r.jsx)(u.Text, {
+          className: m.noRoles,
+          children: (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
-            children: f.intl.string(f.t.nZfHsf)
+            children: I.intl.string(I.t.nZfHsf)
           })
         })
       })

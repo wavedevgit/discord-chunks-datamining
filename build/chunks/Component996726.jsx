@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 996726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,11 +20,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk16507 = require("./16507.js");
 
-function O(e) {
+function v(e) {
   var {
     channelId: t,
     className: n
-  } = e, O = function(e, t) {
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -39,23 +39,23 @@ function O(e) {
     }
     return i
   }(e, ["channelId", "className"]);
-  let x = i.useRef(null),
-    j = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
-    v = i.useCallback(() => {
+  let O = i.useRef(null),
+    j = (0, a.e7)([h.ZP], () => h.ZP.getFocusedLayout() === g.MI.RESIZABLE),
+    x = i.useCallback(() => {
       let e = j ? g.MI.NO_CHAT : g.MI.RESIZABLE;
-      (0, h.gC)(e)
+      (0, f.gC)(e)
     }, [j]),
     {
       unreadCount: C,
-      mentionCount: I
+      mentionCount: E
     } = function(e) {
-      let t = (0, a.e7)([u.Z], () => !(0, l.isEmpty)(u.Z.getTypingUsers(e)), [e]),
+      let t = (0, a.e7)([d.Z], () => !(0, l.isEmpty)(d.Z.getTypingUsers(e)), [e]),
         {
           unreadCount: n,
           mentionCount: r
-        } = (0, a.cj)([d.ZP], () => ({
-          unreadCount: d.ZP.getUnreadCount(e),
-          mentionCount: d.ZP.getMentionCount(e)
+        } = (0, a.cj)([u.ZP], () => ({
+          unreadCount: u.ZP.getUnreadCount(e),
+          mentionCount: u.ZP.getMentionCount(e)
         }), [e]);
       return {
         unreadCount: n,
@@ -63,22 +63,22 @@ function O(e) {
         isTyping: t
       }
     }(t),
-    _ = i.useCallback(() => {
+    S = i.useCallback(() => {
       var e;
-      null == (e = x.current) || e.focus()
+      null == (e = O.current) || e.focus()
     }, []);
   (0, p.yp)({
     event: m.CkL.FOCUS_CHAT_BUTTON,
-    handler: _
+    handler: S
   });
-  let S = j ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
-    E = [S];
-  I > 0 && E.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
-    mentionCount: I
-  })), C > 0 && E.push(b.intl.string(b.t.x5zAGZ));
-  let Z = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
-    P = I > 0 ? I : C,
-    T = P > 0;
+  let _ = j ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
+    I = [_];
+  E > 0 && I.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
+    mentionCount: E
+  })), C > 0 && I.push(b.intl.string(b.t.x5zAGZ));
+  let P = (0, a.e7)([h.ZP], () => h.ZP.getFocusedLayout()),
+    Z = E > 0 ? E : C,
+    N = Z > 0;
   return (0, r.jsxs)("div", {
     className: y.wrapper,
     children: [(0, r.jsx)(c.d, function(e) {
@@ -100,17 +100,17 @@ function O(e) {
       return e
     }({
       isTrayButton: true,
-      buttonRef: x,
-      onClick: v,
-      label: S,
-      "aria-label": E.join(", "),
+      buttonRef: O,
+      onClick: x,
+      label: _,
+      "aria-label": I.join(", "),
       tooltipPosition: "top",
-      iconComponent: Z === g.MI.NO_CHAT ? s.sXD : s.hic,
+      iconComponent: P === g.MI.NO_CHAT ? o.sXD : o.hic,
       themeable: true,
       className: n
-    }, O)), T ? (0, r.jsx)(o.Z, {
-      hasMentions: I > 0,
-      truncatedCount: P > 99 ? "99+" : P,
+    }, v)), N ? (0, r.jsx)(s.Z, {
+      hasMentions: E > 0,
+      truncatedCount: Z > 99 ? "99+" : Z,
       className: y.badge
     }) : null]
   })

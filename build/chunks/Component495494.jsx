@@ -1,7 +1,7 @@
 /** Chunk was on 79939 **/
 /** chunk id: 495494, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk242369 = require("./242369.js");
 
-function y(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -37,7 +37,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,50 +50,50 @@ function O(e, t) {
   }), e
 }
 
-function h(e) {
+function y(e) {
   var {
     guildId: t,
     user: r,
-    location: h,
+    location: y,
     modReportId: j
   } = e, v = function(e, t) {
     if (null == e) return {};
-    var r, n, l = function(e, t) {
+    var r, n, o = function(e, t) {
       if (null == e) return {};
-      var r, n, l = {},
-        i = Object.keys(e);
-      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
-      return l
+      var r, n, o = {},
+        l = Object.keys(e);
+      for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+      return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+      var l = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
     }
-    return l
+    return o
   }(e, ["guildId", "user", "location", "modReportId"]);
-  let [x, P] = l.useState(""), [C, w] = l.useState(false), k = (0, s.sE)(t, {
-    location: h,
+  let [P, x] = o.useState(""), [C, E] = o.useState(false), w = (0, s.sE)(t, {
+    location: y,
     targetUserId: r.id
   }), {
     isModReportClosed: T,
-    isModReport: S
-  } = (0, o.cj)([u.Z], () => {
+    isModReport: k
+  } = (0, i.cj)([u.Z], () => {
     let e = u.Z.getChannel(j);
     return {
       isModReportClosed: null == e ? true : e.isArchivedThread(),
       isModReport: null == e ? true : e.isModeratorReportChannel()
     }
-  }), Z = l.useCallback(() => {
-    if (c.Z.kickUser(t, r.id, x, j).then(() => {
+  }), R = o.useCallback(() => {
+    if (c.Z.kickUser(t, r.id, P, j).then(() => {
         C && null != j && d.Z.resolveFlag(j)
-      }), k(s.jQ.KICK), null != j) {
+      }), w(s.jQ.KICK), null != j) {
       var e;
       null == (e = v.onClose) || e.call(v)
     }
-  }, [t, r.id, x, k, j, C, v]), E = l.useCallback(e => {
-    P(e)
+  }, [t, r.id, P, w, j, C, v]), S = o.useCallback(e => {
+    x(e)
   }, []);
-  return null != j && S ? (0, n.jsx)(i.Modal, O(y({}, v), {
+  return null != j && k ? (0, n.jsx)(l.Modal, m(h({}, v), {
     title: b.intl.formatToPlainString(b.t["1Ie87p"], {
       user: r.username
     }),
@@ -102,45 +102,45 @@ function h(e) {
     }),
     actions: [{
       text: b.intl.string(b.t["3glT6Z"]),
-      onClick: Z,
+      onClick: R,
       size: "sm",
       variant: "critical-primary"
     }],
     actionBarInput: T ? true : (0, n.jsx)(a.Checkbox, {
       checked: C,
       onChange: e => {
-        w(e)
+        E(e)
       },
       label: b.intl.string(g.default["8yIKem"])
     }),
     children: (0, n.jsx)(a.Kx8, {
       label: b.intl.string(null != j ? b.t.hmKy8E : b.t["+2QEPt"]),
       maxLength: f.GNZ,
-      onChange: E,
-      value: x,
+      onChange: S,
+      value: P,
       rows: 2
     })
-  })) : (0, n.jsxs)(a.VoidConfirmModal, O(y({
+  })) : (0, n.jsxs)(a.VoidConfirmModal, m(h({
     header: b.intl.formatToPlainString(b.t["1Ie87p"], {
       user: r.username
     }),
     confirmText: b.intl.string(b.t["3glT6Z"]),
     cancelText: b.intl.string(b.t["ETE/oC"]),
-    onConfirm: Z
+    onConfirm: R
   }, v), {
     children: [(0, n.jsx)(a.Text, {
       variant: "text-md/normal",
-      className: m.spacing,
+      className: O.spacing,
       children: b.intl.format(b.t["/yH0UT"], {
         user: "@".concat(p.ZP.getName(r))
       })
     }), (0, n.jsx)("div", {
-      className: m.spacing,
+      className: O.spacing,
       children: (0, n.jsx)(a.Kx8, {
         label: b.intl.string(b.t["+2QEPt"]),
         maxLength: f.GNZ,
-        onChange: E,
-        value: x,
+        onChange: S,
+        value: P,
         rows: 2
       })
     })]

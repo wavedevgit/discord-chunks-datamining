@@ -512,7 +512,7 @@ var r, o, Chunk460288 = require("./460288.js"),
       return n.e("82143").then(n.bind(n, 442257))
     },
     "zh-TW": function() {
-      return n.e("37558").then(n.bind(n, 821696))
+      return n.e("7649").then(n.bind(n, 821696))
     }
   };
 

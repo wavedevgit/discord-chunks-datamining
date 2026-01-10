@@ -79,13 +79,13 @@ function k(e) {
     renderHeader: o,
     headerHeight: d,
     query: u
-  } = e, g = (0, c.e7)([E.Z], () => E.Z.getRoleMemberCount(n.id), [n.id]), f = (0, c.e7)([C.Z], () => C.Z.getHighestRole(n), [n]), b = u.trim();
+  } = e, g = (0, c.e7)([E.Z], () => E.Z.getRoleMemberCount(n.id), [n.id]), f = (0, c.e7)([y.Z], () => y.Z.getHighestRole(n), [n]), b = u.trim();
   i.useEffect(() => {
     (0, N.E)(n.id)
   }, [n.id]);
   let p = i.useRef(false);
   i.useEffect(() => {
-    p.current || "" === u.trimStart() || (y.default.track(P.rMx.SEARCH_STARTED, {
+    p.current || "" === u.trimStart() || (C.default.track(P.rMx.SEARCH_STARTED, {
       search_type: "Roles"
     }), p.current = true)
   }, [u]);
@@ -153,8 +153,8 @@ function M(e) {
     highestRole: x,
     currentPosition: v,
     memberCount: O,
-    onDragStart: C,
-    onDragReset: y,
+    onDragStart: y,
+    onDragReset: C,
     onDragComplete: N,
     disableHover: E,
     disableDrag: I,
@@ -162,7 +162,7 @@ function M(e) {
     setSelectedSection: P
   } = e, k = (0, S.T)(m, x, d), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
     type: L,
-    item: () => (C(d.id), {
+    item: () => (y(d.id), {
       id: d.id,
       position: v
     }),
@@ -172,10 +172,10 @@ function M(e) {
     }),
     end: (e, t) => {
       let n = t.getDropResult();
-      if (null == n) return void y();
+      if (null == n) return void C();
       N(n.roleId)
     }
-  }), [d, C, y, N, G, M, v]), [{
+  }), [d, y, C, N, G, M, v]), [{
     isDragging: H
   }, W] = (0, s.c)(F), z = i.useMemo(() => ({
     accept: L,
@@ -325,17 +325,17 @@ function U(e) {
     hasGradient: b,
     stops: p,
     gradientId: h
-  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, v.yH)(s, o), C = (0, x.p9)({
+  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, v.yH)(s, o), y = (0, x.p9)({
     guildId: s,
     roleId: o.id,
     size: c
   });
-  if (null != C) return (0, r.jsx)(O.Z, A(D({}, C), {
+  if (null != y) return (0, r.jsx)(O.Z, A(D({}, y), {
     className: f,
     enableTooltip: u
   }));
-  let y = null != (l = o.colorString) ? l : P.Pbq;
-  return j && b && (y = "url(#".concat(h, ")")), (0, r.jsxs)(r.Fragment, {
+  let C = null != (l = o.colorString) ? l : P.Pbq;
+  return j && b && (C = "url(#".concat(h, ")")), (0, r.jsxs)(r.Fragment, {
     children: [j && b && (0, r.jsx)("svg", {
       width: "0",
       height: "0",
@@ -353,7 +353,7 @@ function U(e) {
     }), (0, r.jsx)(g.lZ8, {
       size: "custom",
       className: a()(f, m),
-      color: y,
+      color: C,
       width: c,
       height: c
     })]

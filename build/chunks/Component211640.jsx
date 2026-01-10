@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 211640, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,32 +16,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk792389 = require("./792389.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function g(e) {
   let {
     message: t,
     user: n,
-    guild: m,
-    channel: g
-  } = e, b = (0, r.e7)([d.Z], () => null != n && null != m && (0, o.CX)(n, m, [d.Z])), {
-    messageReference: C
-  } = t, y = (0, r.e7)([u.Z], () => null != C ? u.Z.getMessage(C.channel_id, C.message_id) : null), v = (0, r.e7)([c.Z], () => null != y ? c.Z.getChannel(y.channel_id) : null), x = (0, r.e7)([c.Z], () => {
+    guild: g,
+    channel: m
+  } = e, b = (0, i.e7)([d.Z], () => null != n && null != g && (0, o.CX)(n, g, [d.Z])), {
+    messageReference: y
+  } = t, v = (0, i.e7)([u.Z], () => null != y ? u.Z.getMessage(y.channel_id, y.message_id) : null), O = (0, i.e7)([c.Z], () => null != v ? c.Z.getChannel(v.channel_id) : null), j = (0, i.e7)([c.Z], () => {
     var e, t;
-    return null != (t = null == (e = c.Z.getChannel(g.id)) ? true : e.isArchivedThread()) && t
+    return null != (t = null == (e = c.Z.getChannel(m.id)) ? true : e.isArchivedThread()) && t
   });
   if (!b) return null;
-  let O = null == y ? h.intl.string(f.default["0IZbwC"]) : h.intl.string(f.default.Uj6oD4),
-    E = null == y,
-    j = "delete-message-".concat(t.id);
-  return (0, i.jsx)(p.Z, {
-    text: O,
+  let x = null == v ? h.intl.string(f.default["0IZbwC"]) : h.intl.string(f.default.Uj6oD4),
+    C = null == v,
+    E = "delete-message-".concat(t.id);
+  return (0, r.jsx)(p.Z, {
+    text: x,
     icon: a.XHJ,
     onClick: () => {
-      null != v && null != y && s.Z.confirmDelete(v, y, false, {
-        isFlagResolved: x,
-        moderatorReportChannelId: g.id
+      null != O && null != v && s.Z.confirmDelete(O, v, false, {
+        isFlagResolved: j,
+        moderatorReportChannelId: m.id
       })
     },
-    disabled: E,
+    disabled: C,
     color: l.zx.Colors.RED
-  }, j)
+  }, E)
 }

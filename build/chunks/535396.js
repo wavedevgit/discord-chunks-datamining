@@ -23,8 +23,8 @@ require.d(exports, {
   d5: () => y,
   m: () => w,
   os: () => A,
-  uc: () => b,
-  vW: () => D
+  vW: () => D,
+  ye: () => b
 }), require("./388685.js");
 var Chunk494497 = require("./494497.js"),
   Chunk704215 = require("./704215.js"),
@@ -63,8 +63,9 @@ let d = "1340102344645283891",
     [Chunk494497.A$],
     [Chunk494497.MB, Chunk494497.Vk]
   ],
-  b = new Set([Chunk494497.IN, Chunk494497.If, Chunk494497.A$, Chunk494497.MB, Chunk494497.Vk]),
-  y = () => ({
+  b = new Set([Chunk494497.IN, Chunk494497.If, Chunk494497.A$, Chunk494497.MB, Chunk494497.Vk]);
+Chunk494497.If;
+let y = () => ({
     [l.GuildFeatures.VIDEO_BITRATE_ENHANCED]: {
       perkIcon: a.Ro.STREAM,
       description: c.intl.string(c.t.y4ft4D)
@@ -168,7 +169,7 @@ var P = function(e) {
     return e[e.AVAILABLE = 0] = "AVAILABLE", e[e.SPENT = 1] = "SPENT", e[e.TOTAL = 2] = "TOTAL", e
   }({}),
   R = function(e) {
-    return e[e.NONE = 0] = "NONE", e[e.LEVEL = 1] = "LEVEL", e[e.PERK = 2] = "PERK", e
+    return e[e.LEVEL = 0] = "LEVEL", e[e.PERK = 1] = "PERK", e
   }({}),
   w = function(e) {
     return e.START = "start", e.MIDDLE = "middle", e.END = "end", e

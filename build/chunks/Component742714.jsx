@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 742714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,36 +17,36 @@ var Chunk120356 = require("./120356.js"),
   Chunk618158 = require("./618158.jsx"),
   Chunk240766 = require("./240766.js");
 
-function m(e) {
+function g(e) {
   let {
     className: t,
     iconClassName: n,
-    sliderClassName: r,
-    userId: m,
-    context: g,
+    sliderClassName: i,
+    userId: g,
+    context: m,
     currentWindow: b = window,
-    location: C
+    location: y
   } = e, {
-    currentVolume: y,
-    muted: v
+    currentVolume: v,
+    muted: O
   } = (0, a.cj)([u.Z], () => ({
-    currentVolume: u.Z.getLocalVolume(m, g),
-    muted: u.Z.isLocalMute(m, g)
+    currentVolume: u.Z.getLocalVolume(g, m),
+    muted: u.Z.isLocalMute(g, m)
   }));
-  return (0, i.jsx)(f.Z, {
-    children: (0, i.jsx)(c.Z, {
+  return (0, r.jsx)(f.Z, {
+    children: (0, r.jsx)(c.Z, {
       currentWindow: b,
       iconClassName: l()(n, h.controlIcon),
-      sliderClassName: r,
+      sliderClassName: i,
       className: t,
-      value: (0, d.P)(y),
-      muted: v,
+      value: (0, d.P)(v),
+      muted: O,
       maxValue: p.isPlatformEmbedded ? 200 : 100,
       onValueChange: e => {
-        e > 0 && v && o.Z.toggleLocalMute(m, g), o.Z.setLocalVolume(m, (0, d.A)(e), g)
+        e > 0 && O && o.Z.toggleLocalMute(g, m), o.Z.setLocalVolume(g, (0, d.A)(e), m)
       },
       onToggleMute: () => {
-        null != C && (0, s.v)(C, s.d.VOLUME, v), o.Z.toggleLocalMute(m, g)
+        null != y && (0, s.v)(y, s.d.VOLUME, O), o.Z.toggleLocalMute(g, m)
       }
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 440653, original params: e,t,n (module,exports,require) **/
 module.exports = {
   widgetContainer: "_0ea1a3c81197a370-widgetContainer",
@@ -21,7 +21,6 @@ module.exports = {
   heroImagePlaceholder: "_0ea1a3c81197a370-heroImagePlaceholder",
   heroImageContainer: "_0ea1a3c81197a370-heroImageContainer",
   grid: "_0ea1a3c81197a370-grid",
-  socialProof: "_0ea1a3c81197a370-socialProof",
   stillSyncing: "_0ea1a3c81197a370-stillSyncing",
   footer: "_0ea1a3c81197a370-footer",
   cta: "_0ea1a3c81197a370-cta"

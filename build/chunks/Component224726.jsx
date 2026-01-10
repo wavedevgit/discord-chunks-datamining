@@ -92,7 +92,7 @@ let S = function() {
           canManageGuild: P
         }), (0, r.jsx)("div", {
           className: I.divider
-        }), (0, r.jsx)(C.Z, {
+        }), (0, r.jsx)(y.Z, {
           profile: T,
           canManageGuild: P
         }), (0, r.jsx)("div", {
@@ -107,7 +107,7 @@ let S = function() {
           canManageGuild: P
         }), (0, r.jsx)("div", {
           className: I.divider
-        }), (0, r.jsx)(y.Z, {
+        }), (0, r.jsx)(C.Z, {
           profile: T,
           canManageGuild: P
         })]

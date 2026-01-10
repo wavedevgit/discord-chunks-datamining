@@ -1,7 +1,7 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 590076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,42 +15,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk90753 = require("./90753.js"),
   Chunk80109 = require("./80109.js");
 
-function b(e) {
+function g(e) {
   let {
     focused: t,
     channelId: n,
-    streamerId: l,
+    streamerId: i,
     stream: u
-  } = e, b = i.useRef(null), m = (0, o.e7)([s.default], () => s.default.getCurrentUser());
-  a()(null != m, "user cannot be null"), (0, f.Z)(b, m, l, n);
+  } = e, g = l.useRef(null), b = (0, o.e7)([s.default], () => s.default.getCurrentUser());
+  a()(null != b, "user cannot be null"), (0, f.Z)(g, b, i, n);
   let {
-    handleClick: g,
-    handleMouseDown: v,
-    handleMouseEnter: h,
-    handleMouseMove: E,
+    handleClick: m,
+    handleMouseDown: h,
+    handleMouseEnter: E,
+    handleMouseMove: v,
     handleMouseUp: _
   } = (0, d.Z)({
-    user: m,
+    user: b,
     channelId: n,
-    streamerId: l,
+    streamerId: i,
     stream: u,
     focused: t,
-    canvas: b.current
+    canvas: g.current
   });
   return (0, r.jsx)(c.Z, {
     children: (0, r.jsx)("canvas", {
-      ref: b,
-      onClick: g,
-      onMouseDown: v,
-      onMouseEnter: h,
-      onMouseMove: E,
+      ref: g,
+      onClick: m,
+      onMouseDown: h,
+      onMouseEnter: E,
+      onMouseMove: v,
       onMouseUp: _,
       className: p.sharedCanvas
     })
   })
 }
 
-function m(e) {
+function b(e) {
   let {
     isSharedCanvasEnabled: t
   } = u.Z.useExperiment({
@@ -59,7 +59,7 @@ function m(e) {
   }, {
     autoTrackExposure: true
   });
-  return !t || e.hasScreenMessage ? null : (0, r.jsx)(b, function(e) {
+  return !t || e.hasScreenMessage ? null : (0, r.jsx)(g, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

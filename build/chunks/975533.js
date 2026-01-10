@@ -193,7 +193,7 @@ let U = {
   [Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING]: {
     onTrigger() {
       let e = I.Z.getCurrentUserActiveStream();
-      if (null != e) return (0, o.g)((0, h.V9)(e));
+      if (null != e) return (0, o.g)((0, m.V9)(e));
       (0, b.Z)(true, [d.Z.GO_LIVE_KEYBIND])
     },
     keyEvents: {
@@ -211,7 +211,7 @@ let U = {
     }
   },
   [Chunk981631.kg4.NAVIGATE_BACK]: {
-    onTrigger: () => (0, m.Hm)("global_keybind"),
+    onTrigger: () => (0, h.Hm)("global_keybind"),
     keyEvents: {
       keyup: true,
       keydown: false,
@@ -220,7 +220,7 @@ let U = {
     }
   },
   [Chunk981631.kg4.NAVIGATE_FORWARD]: {
-    onTrigger: () => (0, m.TL)("global_keybind"),
+    onTrigger: () => (0, h.TL)("global_keybind"),
     keyEvents: {
       keyup: true,
       keydown: false,

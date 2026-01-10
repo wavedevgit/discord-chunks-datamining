@@ -9,7 +9,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk772848 = require("./772848.js"),
   Chunk374470 = require("./374470.js"),
   Chunk681715 = require("./681715.js"),
@@ -31,8 +31,8 @@ function j(e, t, n) {
 }
 let v = false,
   O = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
-  C = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
-  y = {
+  y = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
+  C = {
     tension: 140,
     friction: 30
   },
@@ -45,7 +45,7 @@ class E extends(r = Chunk473749.Component) {
     let {
       tiers: e
     } = this.props;
-    return e[e.length - 1].y + C / 2
+    return e[e.length - 1].y + y / 2
   }
   getProgressHeight(e) {
     let t, {
@@ -142,7 +142,7 @@ class E extends(r = Chunk473749.Component) {
       g = e.key === a[0].key,
       m = this.getTierDisabled(e);
     r = g ? x.tierFirst : m ? x.tierInProgress : d ? x.tierCurrent : c ? x.tierAccomplished : x.tierInProgress;
-    let b = e.y - (g ? 0 : C / 2),
+    let b = e.y - (g ? 0 : y / 2),
       p = this.state.tierMarkerActive >= t,
       h = !g && d && p,
       j = this.getTierMarkerTooltipText(e);
@@ -217,7 +217,7 @@ class E extends(r = Chunk473749.Component) {
         to: {
           height: n
         },
-        config: y,
+        config: C,
         delay: r ? 0 : this.props.initialAnimationDelay,
         onChange: this.handleForegroundFrame,
         onRest: r ? true : this.handleFinishedInitialAnimation,

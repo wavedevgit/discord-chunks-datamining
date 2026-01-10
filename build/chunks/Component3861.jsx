@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,94 +21,94 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk676465 = require("./676465.js");
-let x = (0, Chunk112724.Z)(e => {
+let j = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: a,
-    participantsVersion: x,
-    layout: O,
-    onSelectParticipant: E,
-    onContextMenuParticipant: j,
+    participantsVersion: j,
+    layout: x,
+    onSelectParticipant: C,
+    onContextMenuParticipant: E,
     onFullscreenParticipant: S,
     channel: _,
-    hasConnectPermission: P,
-    className: I,
+    hasConnectPermission: I,
+    className: P,
     inCall: Z,
-    showParticipants: T = true,
-    width: N,
+    showParticipants: N = true,
+    width: T,
     height: A,
     idle: w,
-    mode: M,
-    popoutType: R,
-    awaitingRemoteSessionInfo: D,
-    callContainerDimensions: L
+    mode: R,
+    popoutType: D,
+    awaitingRemoteSessionInfo: M,
+    callContainerDimensions: k
   } = e;
-  r.useEffect(() => {
-    p.S.dispatch(C.CkL.REMEASURE_TARGET)
-  }, [N, A, L.width, L.height]);
-  let k = r.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, x]),
+  i.useEffect(() => {
+    p.S.dispatch(y.CkL.REMEASURE_TARGET)
+  }, [T, A, k.width, k.height]);
+  let L = i.useMemo(() => n.filter(e => e.type !== v.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, j]),
     U = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(_.id), [_.id]);
-  if ((null == D ? true : D.channelId) === _.id) return (0, i.jsx)(h.Z, {
+  if ((null == M ? true : M.channelId) === _.id) return (0, r.jsx)(h.Z, {
     height: A
   });
-  if ((null == _ ? true : _.isGuildVocalOrThread()) && !Z) return (0, i.jsx)(f.Z, {
+  if ((null == _ ? true : _.isGuildVocalOrThread()) && !Z) return (0, r.jsx)(f.Z, {
     channel: _,
     participants: t,
-    hasConnectPermission: P
+    hasConnectPermission: I
   });
-  if (n = Z ? n : t, O === C.AEg.HAVEN) return (0, i.jsx)(d.Z, {
+  if (n = Z ? n : t, x === y.AEg.HAVEN) return (0, r.jsx)(d.Z, {
     participants: n,
     channel: _,
     idle: w
   });
-  if (M === C.WtW.VOICE) return (0, i.jsx)(c.Z, {
+  if (R === y.WtW.VOICE) return (0, r.jsx)(c.Z, {
     guildId: _.guild_id,
-    width: N,
-    className: v.voiceCallWrapper,
+    width: T,
+    className: O.voiceCallWrapper,
     participants: t,
-    onContextMenu: j
+    onContextMenu: E
   });
   if (null == a) {
     if (0 === n.length) {
       let e = t.length > 0 && !U;
-      return (0, i.jsx)(b.Z, {
+      return (0, r.jsx)(b.Z, {
         channelId: _.id,
         allPoppedOut: e
       })
     }
-    return (0, i.jsx)(u.Z, {
-      className: v.videoGridWrapper,
+    return (0, r.jsx)(u.Z, {
+      className: O.videoGridWrapper,
       justify: u.Z.Justify.CENTER,
       align: u.Z.Align.CENTER,
-      children: (0, i.jsx)(m.Z, {
+      children: (0, r.jsx)(g.Z, {
         channel: _,
-        className: v.videoGrid,
-        participants: k,
+        className: O.videoGrid,
+        participants: L,
         totalNumberOfParticipants: t.length,
-        onClick: E,
+        onClick: C,
         onDoubleClick: S,
-        onContextMenu: j,
+        onContextMenu: E,
         inCall: Z,
-        popoutType: R
+        popoutType: D
       })
     })
   }
-  return (0, i.jsx)(g.Z, {
+  return (0, r.jsx)(m.Z, {
     onFullscreenParticipant: S,
-    onContextMenuParticipant: j,
-    onSelectParticipant: E,
+    onContextMenuParticipant: E,
+    onSelectParticipant: C,
     selectedParticipant: a,
-    filteredParticipants: k,
+    filteredParticipants: L,
     participants: t,
-    popoutType: R,
-    className: I,
+    popoutType: D,
+    className: P,
     idle: w,
     height: A,
-    width: N,
-    layout: O,
+    width: T,
+    layout: x,
     inCall: Z,
     channel: _,
-    showParticipants: T
+    showParticipants: N
   })
 })

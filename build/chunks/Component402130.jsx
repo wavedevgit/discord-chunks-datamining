@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 402130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -39,37 +39,37 @@ function m(e) {
 function b(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, b = (0, l.e7)([s.default], () => s.default.getUser(n)), y = (0, l.e7)([s.default], () => s.default.getCurrentUser()), O = (0, d.Z)(), [x, j] = (0, c.Z)(n);
+  } = e, [n] = t.recipients, b = (0, l.e7)([o.default], () => o.default.getUser(n)), y = (0, l.e7)([o.default], () => o.default.getCurrentUser()), v = (0, u.Z)(), [O, j] = (0, c.Z)(n);
   if (i.useEffect(() => {
-      (0, u.Z)(null != b ? b : n, {
+      (0, d.Z)(null != b ? b : n, {
         type: "sidebar",
         withMutualFriendsCount: (null == b ? true : b.bot) !== true,
         withMutualFriends: false,
         withMutualGuilds: true,
         channelId: t.id
       })
-    }, [b, n, t.id]), null == b || null == y || !O) return null;
-  let v = "user-profile-sidebar-heading-".concat(b.id),
-    C = o.ZP.getName(null, t.id, b);
+    }, [b, n, t.id]), null == b || null == y || !v) return null;
+  let x = "user-profile-sidebar-heading-".concat(b.id),
+    C = s.ZP.getName(null, t.id, b);
   return (0, r.jsx)("aside", {
-    "aria-labelledby": v,
+    "aria-labelledby": x,
     children: (0, r.jsx)(a.y5t, {
       component: (0, r.jsx)(a.nn4, {
         children: (0, r.jsx)(a.H, {
-          id: v,
+          id: x,
           children: g.intl.format(g.t.KRe1Fk, {
             name: C
           })
         })
       }),
-      children: x ? (0, r.jsx)(h.Z, m({
+      children: O ? (0, r.jsx)(f.Z, m({
         user: b,
         currentUser: y,
         onHide: j
       }, e)) : b.isNonUserBot() ? (0, r.jsx)(p.Z, m({
         user: b,
         currentUser: y
-      }, e)) : (0, r.jsx)(f.Z, m({
+      }, e)) : (0, r.jsx)(h.Z, m({
         user: b,
         currentUser: y
       }, e))

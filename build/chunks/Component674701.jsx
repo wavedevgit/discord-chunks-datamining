@@ -108,8 +108,7 @@ function L(e) {
     W = () => t === T.hX.FRIEND_ANNIVERSARY ? N.intl.formatToPlainString(N.t.W7AF4C, {
       friendUserName: y.ZP.getName(a)
     }) : (0, O.Ou)(t),
-    K = () => t === T.hX.FRIEND_ANNIVERSARY ? N.intl.string(N.t.OrwKgi) : (0, O.Ou)(t),
-    z = e => {
+    K = e => {
       e.stopPropagation();
       let n = h.Z.getUserAffinity(a.id);
       b.default.track(C.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
@@ -127,8 +126,7 @@ function L(e) {
           section: M,
           object: C.qAy.BUTTON_CTA,
           objectType: C.AnalyticsObjectTypes.GIFT
-        },
-        giftMessage: K()
+        }
       }) : (0, m.Z)({
         isGift: true,
         initialPlanId: null,
@@ -140,8 +138,7 @@ function L(e) {
           section: M,
           object: C.qAy.BUTTON_CTA,
           objectType: C.AnalyticsObjectTypes.GIFT
-        },
-        giftMessage: K()
+        }
       })
     };
   return (0, r.jsx)("div", {
@@ -218,7 +215,7 @@ function L(e) {
           text: W(),
           icon: u.OgN,
           "aria-label": W(),
-          onClick: z
+          onClick: K
         })]
       }), null != L && (0, r.jsx)("div", {
         className: o()(P.connector, {

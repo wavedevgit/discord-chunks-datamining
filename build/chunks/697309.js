@@ -1,8 +1,8 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 697309, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   li: () => r,
-  nT: () => s,
+  nT: () => o,
   p8: () => a,
   qO: () => l,
   zx: () => i
@@ -10,5 +10,5 @@ require.d(exports, {
 let r = 264,
   i = 432,
   l = 375,
-  a = 12633 == require.j ? 76 : null,
-  s = "resizable-sidebar-width-2"
+  a = 76,
+  o = "resizable-sidebar-width-2"

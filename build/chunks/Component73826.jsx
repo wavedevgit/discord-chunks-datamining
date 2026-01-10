@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 73826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -22,11 +22,11 @@ let g = e => {
   let {
     isFullyExpanded: t,
     partnerBranding: n
-  } = e, i = (0, h.qe)().label, g = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
+  } = e, i = (0, f.qe)().label, g = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
     quest: v
-  } = r.useContext(f.A), {
+  } = r.useContext(h.A), {
     expansionSpring: j
-  } = r.useContext(p.xo), C = i ? false : 6;
+  } = r.useContext(p.xo), y = i ? false : 6;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
       className: b.rewardTileContainer,
@@ -66,7 +66,7 @@ let g = e => {
           output: [0, false]
         }), j.to({
           range: [0, 1],
-          output: [0, C]
+          output: [0, y]
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, a.jsx)("div", {

@@ -51,7 +51,7 @@ function u(e, t) {
 let d = {
     defaultWatchMultipleStreams: false
   },
-  f = (0, Chunk722733.Z)({
+  f = (0, Chunk722733.ZP)({
     name: "2025-08-go-live-default-multiwatch",
     kind: "user",
     defaultConfig: d,

@@ -2,7 +2,7 @@
 /** chunk id: 137158, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -124,7 +124,7 @@ function O(e) {
     end: (e, t) => {
       null == e || t.didDrop() || b(e.field, null, true)
     }
-  }), [, C] = (0, c.L)({
+  }), [, y] = (0, c.L)({
     accept: v,
     hover: (e, n) => {
       var r;
@@ -140,9 +140,9 @@ function O(e) {
       b(e.field, t, true)
     }
   });
-  return i.useLayoutEffect(() => (O(C(x)), () => {
-    C(null), O(null)
-  }), [O, C]), (0, r.jsxs)("div", {
+  return i.useLayoutEffect(() => (O(y(x)), () => {
+    y(null), O(null)
+  }), [O, y]), (0, r.jsxs)("div", {
     ref: x,
     "data-dnd-name": "field-".concat(t),
     className: a()(p.dragContainer, {
@@ -161,7 +161,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   return (0, r.jsxs)("div", {
     className: a()(p.formFieldContainer, {
       [p.compact]: e.fieldStyle === m.it.COMPACT

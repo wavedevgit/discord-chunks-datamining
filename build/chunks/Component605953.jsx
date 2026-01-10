@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 605953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,16 +15,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk814249 = require("./814249.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function f(e) {
   let {
     channel: t
-  } = e, n = (0, i.e7)([s.Z], () => s.Z.shouldShowTopicsBar());
+  } = e, n = (0, i.e7)([o.Z], () => o.Z.shouldShowTopicsBar());
   return (0, r.jsx)(c.ZP.Icon, {
     icon: l.sVe,
     onClick: () => {
-      o.default.track(d.rMx.SUMMARIES_SIDEBAR_TOGGLED, {
+      s.default.track(u.rMx.SUMMARIES_SIDEBAR_TOGGLED, {
         summaries_sidebar_open: !n,
-        source: u.Dc.TOOLBAR_BUTTON,
+        source: d.Dc.TOOLBAR_BUTTON,
         guild_id: t.guild_id,
         channel_id: t.id,
         channel_type: t.type

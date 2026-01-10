@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk531578 = require("./531578.js"),
   Chunk746234 = require("./746234.js");
-let f = [{
+let h = [{
   label: "second(s)",
   value: 1e3
 }, {
@@ -28,11 +28,11 @@ let f = [{
   value: 864e5
 }];
 
-function h() {
-  let [e, t] = r.useState(null), [n, h] = r.useState(0), [x, b] = r.useState(1e3), [g, v] = r.useState(0), j = (0, i.e7)([d.Z], () => {
+function f() {
+  let [e, t] = r.useState(null), [n, f] = r.useState(0), [x, b] = r.useState(1e3), [g, v] = r.useState(0), j = (0, i.e7)([d.Z], () => {
     var t;
     return null === e ? null : null != (t = d.Z.getFeedbackConfig(m.nw[e])) ? t : c.R[m.nw[e]]
-  }), C = Object.entries(m.nw), y = C.slice(C.length / 2).map(e => {
+  }), y = Object.entries(m.nw), C = y.slice(y.length / 2).map(e => {
     let [t] = e;
     return {
       label: t,
@@ -45,7 +45,7 @@ function h() {
       gap: 32,
       children: [(0, a.jsx)(l.y6, {
         label: "Feedback Survey",
-        options: y,
+        options: C,
         value: e,
         onChange: e => {
           t(e)
@@ -80,9 +80,9 @@ function h() {
             value: n.toString(),
             type: "number",
             placeholder: "Duration length",
-            onChange: e => h(parseFloat(e))
+            onChange: e => f(parseFloat(e))
           }), (0, a.jsx)(l.y6, {
-            options: f,
+            options: h,
             value: x,
             onChange: e => {
               b(e)

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk538505 = require("./538505.js");
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       image: a,
       type: d,
       imageMarginX: p,
-      imageMarginTop: h,
+      imageMarginTop: m,
       trackingSource: _,
       undismissable: E,
       onDismissed: O,
@@ -61,7 +61,7 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     let C = null;
     "function" == typeof y ? C = y() : null != y && (C = (0, r.jsx)(o.zx, {
       "data-migration-pending": true,
-      className: m.btn,
+      className: h.btn,
       size: o.zx.Sizes.SMALL,
       onClick: () => {
         null != d && u.default.track(f.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -76,37 +76,37 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: m.channelNotice,
+      className: h.channelNotice,
       children: [true === E ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(f.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
           }), null == O || O()
         },
-        className: m.close,
+        className: h.close,
         "aria-label": g.intl.string(g.t.WAI6xu),
         children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",
-          className: m.closeIcon
+          className: h.closeIcon
         })
       }), (0, r.jsx)("div", {
-        className: m.imageContainer,
+        className: h.imageContainer,
         style: {
-          marginTop: "".concat(h, "px"),
+          marginTop: "".concat(m, "px"),
           marginLeft: S,
           marginRight: S
         },
         children: (0, r.jsx)("img", {
-          className: m.image,
+          className: h.image,
           src: a,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        className: m.message,
+        className: h.message,
         children: [null != n ? (0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
-          className: m.title,
+          className: h.title,
           children: n
         }) : null, (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
@@ -119,5 +119,5 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     let {
       showRedesignedChannelNotice: t
     } = (0, d.o)(true);
-    return t ? (0, r.jsx)(p.Z, h({}, e)) : (0, r.jsx)(_, h({}, e))
+    return t ? (0, r.jsx)(p.Z, m({}, e)) : (0, r.jsx)(_, m({}, e))
   }

@@ -1,15 +1,15 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 88315, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P7: () => b,
+  P7: () => g,
   RR: () => p,
   UN: () => u,
-  bg: () => m,
+  bg: () => b,
   hn: () => d,
   np: () => f
 });
 var Chunk979590 = require("./979590.js"),
-  i = require.n(Chunk979590),
+  l = require.n(Chunk979590),
   Chunk866442 = require("./866442.js"),
   Chunk220082 = require("./220082.js"),
   Chunk594174 = require("./594174.js"),
@@ -26,12 +26,12 @@ function d(e, t) {
   let {
     width: n,
     height: r,
-    left: i,
-    top: l
+    left: l,
+    top: i
   } = e.getBoundingClientRect();
   return {
-    x: (t.clientX - i) / n,
-    y: (t.clientY - l) / r
+    x: (t.clientX - l) / n,
+    y: (t.clientY - i) / r
   }
 }
 
@@ -47,23 +47,23 @@ function p(e, t, n) {
   }
 }
 
-function b(e) {
+function g(e) {
   return e.type === c.W.LINE
 }
 
-function m(e, t, n, r) {
+function b(e, t, n, r) {
   var c;
   let u = o.default.getUser(e),
     d = null == u ? true : u.getAvatarURL(null, s.Ks),
     f = null != d ? null == (c = a.SR.getState().palette[d]) ? true : c[0] : null,
-    p = null != f ? "#".concat(i()({
+    p = null != f ? "#".concat(l()({
       r: f[0],
       g: f[1],
       b: f[2]
     }).toHex()) : r,
-    b = (0, l.Bd)((0, l._i)(p)) > .5 ? n : t;
+    g = (0, i.Bd)((0, i._i)(p)) > .5 ? n : t;
   return {
     fillColor: p,
-    outlineColor: b
+    outlineColor: g
   }
 }

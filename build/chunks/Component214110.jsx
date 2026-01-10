@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 214110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,16 +17,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk792389 = require("./792389.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function m(e) {
   let {
     channel: t,
     user: n,
-    guild: g
-  } = e, b = (0, r.e7)([p.default, u.Z, d.Z], () => null != n && null != g && (0, o.F)(g.id, n.id, [p.default, u.Z, d.Z])), [C, y] = (0, s.ZP)(null == n ? true : n.id, t.guild_id), v = (0, r.e7)([c.ZP], () => null != g && null != n && null != c.ZP.getMember(g.id, n.id));
-  if (!b || !v) return null;
-  let x = "timeout-user-".concat(null == n ? true : n.id);
-  return (0, i.jsx)(f.Z, {
-    text: y ? m.intl.string(h.default["6uMZbv"]) : m.intl.string(h.default["Sgg/uI"]),
+    guild: m
+  } = e, b = (0, i.e7)([p.default, u.Z, d.Z], () => null != n && null != m && (0, o.F)(m.id, n.id, [p.default, u.Z, d.Z])), [y, v] = (0, s.ZP)(null == n ? true : n.id, t.guild_id), O = (0, i.e7)([c.ZP], () => null != m && null != n && null != c.ZP.getMember(m.id, n.id));
+  if (!b || !O) return null;
+  let j = "timeout-user-".concat(null == n ? true : n.id);
+  return (0, r.jsx)(f.Z, {
+    text: v ? g.intl.string(h.default["6uMZbv"]) : g.intl.string(h.default["Sgg/uI"]),
     icon: l.T39,
     onClick: () => {
       null != n && (0, a.z)({
@@ -35,6 +35,6 @@ function g(e) {
         modReportId: t.id
       })
     },
-    disabled: y
-  }, x)
+    disabled: v
+  }, j)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => w,
@@ -46,8 +46,8 @@ function E(e) {
 }
 
 function T() {
-  (0, f.open)(C.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(p.Z, {
-    windowKey: C.KJ3.DEVTOOLS_POPOUT,
+  (0, h.open)(y.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(p.Z, {
+    windowKey: y.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
     withTitleBar: true,
     children: (0, a.jsx)(w, {
@@ -93,7 +93,7 @@ function O(e) {
           onClick: T
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
-          tooltip: y.intl.string(y.t.cpT0Cq),
+          tooltip: C.intl.string(C.t.cpT0Cq),
           onClick: x.SO
         })]
       }),
@@ -150,8 +150,8 @@ function P() {
       onClick: x.SO,
       children: (0, a.jsxs)(m.ZP, {
         className: l()(S.headerBar, _.mobileHeaderCollapsed),
-        toolbar: (0, a.jsx)(h.Z, {
-          direction: h.Z.Directions.UP
+        toolbar: (0, a.jsx)(f.Z, {
+          direction: f.Z.Directions.UP
         }),
         children: [(0, a.jsx)(m.ZP.Icon, {
           icon: c.Ymb,

@@ -28,7 +28,7 @@ function h(e) {
   } = e, {
     searchQuery: C,
     onSetSearchQuery: E
-  } = (0, f.S)(), [v, S] = l.useState(""), _ = (0, d.sp)(), x = (0, o.e7)([c.default], () => c.default.locale), O = l.useRef(null), [y, k] = l.useState(false);
+  } = (0, f.S)(), [v, S] = l.useState(""), x = (0, d.sp)(), O = (0, i.e7)([c.default], () => c.default.locale), _ = l.useRef(null), [y, j] = l.useState(false);
   l.useEffect(() => {
     let e = setTimeout(() => {
       E(v)
@@ -37,85 +37,85 @@ function h(e) {
   }, [v, E]), l.useEffect(() => {
     S(C)
   }, [C]), l.useEffect(() => {
-    k(a && h)
+    j(a && h)
   }, [a, h]);
-  let T = l.useCallback(e => {
+  let k = l.useCallback(e => {
       "Enter" === e.key && E(v)
     }, [v, E]),
-    j = l.useCallback(e => {
+    T = l.useCallback(e => {
       u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == _ ? true : _.sessionId,
-        page_section: null == _ ? true : _.pageSection,
-        page_category: null == _ ? true : _.pageCategory,
-        page_index: null == _ ? true : _.pageIndex,
-        page_size: null == _ ? true : _.pageSize,
+        collectibles_shop_session_id: null == x ? true : x.sessionId,
+        page_section: null == x ? true : x.pageSection,
+        page_category: null == x ? true : x.pageCategory,
+        page_index: null == x ? true : x.pageIndex,
+        page_size: null == x ? true : x.pageSize,
         cta_name: e,
         page_type: n
       })
-    }, [n, _]),
-    L = l.useCallback(() => {
-      n !== g.AW.CATALOG && t(g.AW.CATALOG), j(g.Dh.SEARCH_ICON), k(true), setTimeout(() => {
-        var e;
-        return null == (e = O.current) ? true : e.focus()
-      })
-    }, [n, t, j]),
+    }, [n, x]),
     I = l.useCallback(() => {
-      n !== g.AW.CATALOG && t(g.AW.CATALOG), j(g.Dh.SEARCH_BAR)
-    }, [n, t, j]),
+      n !== g.AW.CATALOG && t(g.AW.CATALOG), T(g.Dh.SEARCH_ICON), j(true), setTimeout(() => {
+        var e;
+        return null == (e = _.current) ? true : e.focus()
+      })
+    }, [n, t, T]),
+    L = l.useCallback(() => {
+      n !== g.AW.CATALOG && t(g.AW.CATALOG), T(g.Dh.SEARCH_BAR)
+    }, [n, t, T]),
     A = l.useCallback(() => {
-      S(""), E(""), j(g.Dh.SEARCH_BAR_CLEAR), a && k(false)
-    }, [E, j, a]),
+      S(""), E(""), T(g.Dh.SEARCH_BAR_CLEAR), a && j(false)
+    }, [E, T, a]),
     B = l.useCallback(() => {
-      a && "" === v && k(false)
+      a && "" === v && j(false)
     }, [a, v]),
     N = a && !y,
-    R = (0, r.jsx)(i.P3F, {
+    R = (0, r.jsx)(o.P3F, {
       className: m.searchIcon,
-      onClick: L,
-      children: (0, r.jsx)(i._Ve, {
+      onClick: I,
+      children: (0, r.jsx)(o._Ve, {
         size: "sm",
-        color: i.TVs.colors.INTERACTIVE_ICON_DEFAULT
+        color: o.TVs.colors.INTERACTIVE_ICON_DEFAULT
       })
     }),
-    P = (0, r.jsx)(i.E1j, {
+    P = (0, r.jsx)(o.E1j, {
       size: "sm",
-      ref: O,
-      onKeyDown: T,
+      ref: _,
+      onKeyDown: k,
       query: v,
       onChange: S,
       onClear: A,
       onBlur: B,
-      placeholder: "en-US" === x ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
+      placeholder: "en-US" === O ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
     }),
-    Z = {
+    w = {
       "--custom-search-bar-width": "".concat(g.Cs, "px"),
       "--custom-search-bar-icon-width": "".concat(g.wf, "px")
     };
   if (N) return (0, r.jsx)("div", {
-    style: Z,
+    style: w,
     children: R
   });
-  let w = s()(m.searchBar, {
+  let Z = s()(m.searchBar, {
     [m.searchFloating]: y
   });
   return y ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.searchIconContainerHidden,
-      style: Z,
+      style: w,
       children: R
-    }), (0, r.jsx)(i.P3F, {
-      className: w,
-      style: Z,
-      onClick: I,
+    }), (0, r.jsx)(o.P3F, {
+      className: Z,
+      style: w,
+      onClick: L,
       ignoreKeyPress: true,
       children: P
     })]
   }) : (0, r.jsx)("div", {
-    className: w,
-    style: Z,
-    children: (0, r.jsx)(i.P3F, {
+    className: Z,
+    style: w,
+    children: (0, r.jsx)(o.P3F, {
       ignoreKeyPress: true,
-      onClick: I,
+      onClick: L,
       children: P
     })
   })

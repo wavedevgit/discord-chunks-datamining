@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk215569 = require("./215569.js"),
@@ -77,17 +77,17 @@ function A() {
 function L(e) {
   let {
     guild: t
-  } = e, b = t.id, A = (0, a.e7)([C.Z], () => C.Z.getCurrentPage()), L = (0, N.Z)(b), {
+  } = e, b = t.id, A = (0, a.e7)([y.Z], () => y.Z.getCurrentPage()), L = (0, N.Z)(b), {
     hasChanges: k,
     hasConfiguredAnythingForCurrentStep: G,
     hasErrors: M
-  } = (0, a.cj)([C.Z], () => ({
-    hasChanges: C.Z.hasChanges(),
-    hasConfiguredAnythingForCurrentStep: C.Z.hasConfiguredAnythingForCurrentStep(),
-    hasErrors: C.Z.hasErrors()
-  })), U = (0, a.e7)([C.Z], () => {
-    let e = (0, y.lg)(A);
-    return null != e && !C.Z.isEducationUpsellDismissed(e)
+  } = (0, a.cj)([y.Z], () => ({
+    hasChanges: y.Z.hasChanges(),
+    hasConfiguredAnythingForCurrentStep: y.Z.hasConfiguredAnythingForCurrentStep(),
+    hasErrors: y.Z.hasErrors()
+  })), U = (0, a.e7)([y.Z], () => {
+    let e = (0, C.lg)(A);
+    return null != e && !y.Z.isEducationUpsellDismissed(e)
   }), B = (0, u.ZP)(), F = i.useRef(null), [{
     spring: H
   }, W] = (0, d.q_F)(() => ({
@@ -116,23 +116,23 @@ function L(e) {
       output: [K, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
     });
   if (L) {
-    if (A === y.PG.DEFAULT_CHANNELS) return (0, r.jsx)(I.j, {});
-    else if (A === y.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(_.Zm, {});
-    else if (A === y.PG.HOME_SETTINGS) return (0, r.jsx)(T.Z, {});
-    else if (A === y.PG.CONNECTIONS) return (0, r.jsx)(S.u, {});
-    else if ((A === y.PG.LANDING || A === y.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(T.Z, {})
+    if (A === C.PG.DEFAULT_CHANNELS) return (0, r.jsx)(I.j, {});
+    else if (A === C.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(_.Zm, {});
+    else if (A === C.PG.HOME_SETTINGS) return (0, r.jsx)(T.Z, {});
+    else if (A === C.PG.CONNECTIONS) return (0, r.jsx)(S.u, {});
+    else if ((A === C.PG.LANDING || A === C.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(T.Z, {})
   }
-  let q = A === y.xh[y.xh.length - 1],
+  let q = A === C.xh[C.xh.length - 1],
     X = async () => {
       let e = O.Z.advancedMode;
       if (k) try {
-        if (A === y.PG.DEFAULT_CHANNELS) await (0, p.DO)(t).then(() => e ? (0, v.rS)(t, {
+        if (A === C.PG.DEFAULT_CHANNELS) await (0, p.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
-        else if (A === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
+        else if (A === C.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         });
-        else if (A === y.PG.HOME_SETTINGS) {
+        else if (A === C.PG.HOME_SETTINGS) {
           let e = j.Z.getSettings();
           await (0, x.oo)(t.id, e)
         }
@@ -142,18 +142,18 @@ function L(e) {
       returntrue
     }, J = async () => {
       f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
-        step: y.PG[A],
+        step: C.PG[A],
         back: false,
         skip: !k
-      })), (0, h.Nb)((0, y.lg)(A)), await X() && (0, h.IG)(b, A)
+      })), (0, h.Nb)((0, C.lg)(A)), await X() && (0, h.IG)(b, A)
     }, Q = async () => {
       f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
-        step: y.PG[A],
+        step: C.PG[A],
         back: true,
         skip: false
       })), await X() && (0, h.Wy)(b, A)
     }, $ = null;
-  U && (A === y.PG.SAFETY_CHECK ? $ = (0, r.jsx)(E.j7, {}) : A === y.PG.DEFAULT_CHANNELS ? $ = (0, r.jsx)(E.Io, {}) : A === y.PG.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(E.cZ, {}) : A === y.PG.HOME_SETTINGS && ($ = (0, r.jsx)(E.g6, {})));
+  U && (A === C.PG.SAFETY_CHECK ? $ = (0, r.jsx)(E.j7, {}) : A === C.PG.DEFAULT_CHANNELS ? $ = (0, r.jsx)(E.Io, {}) : A === C.PG.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(E.cZ, {}) : A === C.PG.HOME_SETTINGS && ($ = (0, r.jsx)(E.g6, {})));
   let ee = (0, r.jsx)("div", {
       className: U ? Z.hidden : true,
       children: (0, r.jsx)(d.Button, {

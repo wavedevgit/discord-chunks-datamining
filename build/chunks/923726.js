@@ -16,37 +16,11 @@ var Chunk644542 = require("./644542.js"),
   Chunk981631 = require("./981631.js");
 
 function a(e) {
-  let {
-    enableRoleSubscriptionsForGuild: t
-  } = r.Xv.useExperiment({
-    guildId: null != e ? e : i.lds,
-    location: "504714_1"
-  }, {
-    autoTrackExposure: true
-  }), {
-    enableRoleSubscriptionsForUser: n
-  } = r.Zo.useExperiment({
-    location: "504714_2"
-  }, {
-    autoTrackExposure: false
-  });
-  return null != e && t && n
+  returntrue
 }
 
 function o(e) {
-  let {
-    enableRoleSubscriptionsForGuild: t
-  } = r.Xv.getCurrentConfig({
-    guildId: null != e ? e : i.lds,
-    location: "504714_3"
-  }), {
-    enableRoleSubscriptionsForUser: n
-  } = r.Zo.getCurrentConfig({
-    location: "504714_4"
-  }, {
-    autoTrackExposure: false
-  });
-  return null != e && t && n
+  returntrue
 }
 
 function s(e) {

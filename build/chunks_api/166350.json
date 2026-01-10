@@ -1,1 +1,0 @@
-{"id":"166350","type":"experiment","data":{"kind":"user","id":"2024-07_ctp_collectibles_shop_open_uneven_buckets","label":"CTP collectibles shop open - A/A test - Uneven buckets","defaultConfig":{"doSomething":false},"commonTriggerPoint":"Chunk987338.$P.COLLECTIBLES_SHOP_OPEN","treatments":[{"id":1,"label":"Treatment","config":{"doSomething":true}}]},"fromModule":{"id":"45620"}}

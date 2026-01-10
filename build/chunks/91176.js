@@ -1,22 +1,22 @@
-/** Chunk was on 76233 **/
-/** chunk id: 91176, original params: t,n,e (module,exports,require) **/
+/** Chunk was on 92524 **/
+/** chunk id: 91176, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  i = require.n(Chunk913527),
   Chunk749210 = require("./749210.js");
-let s = {
-  async setCommunicationDisabledDuration(t, n, e, l, s, r) {
-    let o = null != e ? a()().add(e, "s").toISOString() : null;
-    await i.Z.setCommunicationDisabledUntil({
-      guildId: t,
-      userId: n,
-      communicationDisabledUntilTimestamp: o,
-      duration: e,
+let a = {
+  async setCommunicationDisabledDuration(e, t, n, l, a, o) {
+    let u = null != n ? i()().add(n, "s").toISOString() : null;
+    await r.Z.setCommunicationDisabledUntil({
+      guildId: e,
+      userId: t,
+      communicationDisabledUntilTimestamp: u,
+      duration: n,
       reason: l,
-      location: s,
-      moderatorReportId: r
+      location: a,
+      moderatorReportId: o
     })
   }
 }

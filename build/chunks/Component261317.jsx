@@ -150,13 +150,13 @@ let P = function() {
         }) : B]
       }), (0, r.jsxs)("div", {
         className: T.sidebarContainer,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(C.Z, {
           guildId: w.id,
           tag: Z.tag,
           badge: G,
           primaryColor: M,
           secondaryColor: U
-        }), !k && (0, r.jsx)(C.Z, {
+        }), !k && (0, r.jsx)(y.Z, {
           guildId: w.id
         })]
       })]

@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 296768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk452379 = require("./452379.js"),
   Chunk325253 = require("./325253.js");
-let y = e => {
+let O = e => {
   let {
     game: t,
     onClose: n,
@@ -33,7 +33,7 @@ let y = e => {
     asContainer: true,
     text: t.name,
     children: (0, a.jsx)(u.P3F, {
-      className: O.similarGameImageClickable,
+      className: I.similarGameImageClickable,
       onClick: async () => {
         i(p.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, a.jsx)(j.default, function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -60,14 +60,14 @@ let y = e => {
       children: (0, a.jsx)(h.C, {
         game: t,
         application: r,
-        className: O.similarGameImage,
+        className: I.similarGameImage,
         size: h.Z.SMALL
       })
     })
   })
 };
 
-function P(e) {
+function w(e) {
   let {
     applicationId: t,
     onClose: n,
@@ -83,23 +83,23 @@ function P(e) {
     o.length > 0 && m.Z.getDetectableGamesSupplemental([t, ...o])
   }, [t, o]), f && null == d) ? (0, a.jsxs)("div", {
     children: [(0, a.jsx)("div", {
-      className: l()(O.loadingHeading, I.sectionHeader)
+      className: l()(I.loadingHeading, y.sectionHeader)
     }), (0, a.jsx)("div", {
-      className: l()(I.row, I.gapLg),
+      className: l()(y.row, y.gapLg),
       children: s().range(0, 5).map(e => (0, a.jsx)("div", {
-        className: O.loadingArtwork
+        className: I.loadingArtwork
       }, e))
     })]
   }) : (f || 0 !== p.length) && null == d ? (0, a.jsxs)("div", {
     children: [(0, a.jsx)(u.Heading, {
-      className: I.sectionHeader,
+      className: y.sectionHeader,
       variant: "text-md/semibold",
       color: "text-strong",
       children: b.intl.string(b.t["6rLyQB"])
     }), (0, a.jsx)("div", {
-      className: O.similarGames,
+      className: I.similarGames,
       style: {},
-      children: p.map(e => (0, a.jsx)(y, {
+      children: p.map(e => (0, a.jsx)(O, {
         game: e,
         onClose: n,
         trackClick: r

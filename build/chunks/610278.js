@@ -35,7 +35,7 @@ function g() {
   return r.Z.wait(() => i.bA(t, d.NYg.FRAME, {})), void(p = t)
 }
 
-function m() {
+function h() {
   if ((0, a.Z)({
       LayerStore: s.Z,
       PopoutWindowStore: o.Z
@@ -47,12 +47,12 @@ function m() {
   let e = p;
   null != e && c.Z.isOpen(e) && r.Z.wait(() => i.$Z(e))
 }
-class h extends Chunk317770.Z {
+class m extends Chunk317770.Z {
   _initialize() {
-    u.Z.addChangeListener(g), s.Z.addChangeListener(m)
+    u.Z.addChangeListener(g), s.Z.addChangeListener(h)
   }
   _terminate() {
-    u.Z.removeChangeListener(g), s.Z.removeChangeListener(m)
+    u.Z.removeChangeListener(g), s.Z.removeChangeListener(h)
   }
 }
-let b = new h
+let b = new m

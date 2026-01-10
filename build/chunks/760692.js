@@ -2,7 +2,7 @@
 /** chunk id: 760692, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => O
+  K: () => v
 });
 var Chunk522942 = require("./522942.js"),
   Chunk131016 = require("./131016.js");
@@ -53,17 +53,19 @@ let c = "--custom-display-name-styles-gradient-start-color",
   _ = "--custom-display-name-styles-dark-1-color",
   m = "--custom-display-name-styles-dark-2-color",
   h = "--custom-display-name-styles-toon-stroke-color",
-  g = "--custom-display-name-styles-wrap",
-  E = "--custom-display-name-styles-font-opacity";
+  g = "--custom-display-name-styles-neon-stroke-color",
+  E = "--custom-display-name-styles-wrap",
+  b = "--custom-display-name-styles-font-opacity";
 
-function b(e) {
+function y(e) {
   let {
     main: t,
     light1: n,
     light2: r,
     dark1: a,
     dark2: o,
-    toonStroke: s
+    toonStroke: s,
+    neonStroke: l
   } = (0, i.hX)(e);
   return {
     [d]: t,
@@ -71,11 +73,12 @@ function b(e) {
     [p]: r,
     [_]: a,
     [m]: o,
-    [h]: s
+    [h]: s,
+    [g]: l
   }
 }
 
-function y(e) {
+function O(e) {
   return 0 === e.length ? {} : {
     [c]: e[0],
     [u]: e.length > 1 ? e[1] : e[0],
@@ -83,7 +86,7 @@ function y(e) {
   }
 }
 
-function O(e, t) {
+function v(e, t) {
   let {
     shouldWrap: n = false,
     fontOpacity: i = 1
@@ -91,17 +94,17 @@ function O(e, t) {
   switch (e) {
     case r.m.GRADIENT:
     case r.m.GLOW:
-      a = y(t);
+      a = O(t);
       break;
     case r.m.NEON:
     case r.m.POP:
     case r.m.TOON:
     case r.m.SOLID:
     default:
-      t.length > 0 && (a = b(t[0]))
+      t.length > 0 && (a = y(t[0]))
   }
   return l(o({}, a), {
-    [g]: n ? "wrap" : "nowrap",
-    [E]: i
+    [E]: n ? "wrap" : "nowrap",
+    [b]: i
   })
 }

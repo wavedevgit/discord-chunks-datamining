@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 704088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => S
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk246992 = require("./246992.js"),
   Chunk474936 = require("./474936.js");
-let y = Chunk473749.forwardRef((e, t) => {
+let C = Chunk473749.forwardRef((e, t) => {
   let [n, i] = r.useState(null), [l, o] = r.useState(null), [d, u] = r.useState(false), m = r.useCallback(async () => {
     u(true), o(null), i(null);
     try {
@@ -82,7 +82,7 @@ let y = Chunk473749.forwardRef((e, t) => {
     })]
   })
 });
-y.displayName = "DebugWarpLicenseInfo";
+C.displayName = "DebugWarpLicenseInfo";
 let _ = e => {
     let {
       onSuccess: t
@@ -135,13 +135,13 @@ let _ = e => {
     })
   },
   S = () => {
-    let [e, t] = r.useState(false), [n, s] = r.useState(false), [S, E] = r.useState(false), [T, O] = r.useState(5e3), [N, P] = r.useState(false), w = r.useRef(null), I = (0, l.e7)([v.default], () => v.default.getCurrentUser()), k = (0, h.u)(), [R] = r.useState(() => (0, x.o8)({
+    let [e, t] = r.useState(false), [n, s] = r.useState(false), [S, E] = r.useState(false), [T, O] = r.useState(5e3), [N, P] = r.useState(false), w = r.useRef(null), I = (0, l.e7)([v.default], () => v.default.getCurrentUser()), k = (0, f.u)(), [R] = r.useState(() => (0, x.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: k
     })), {
       installationStatus: A,
-      setInstallationStatus: D,
-      connectionStatus: Z,
+      setInstallationStatus: Z,
+      connectionStatus: D,
       setConnectionStatus: L,
       setConnect: M,
       setDisconnect: U,
@@ -150,42 +150,42 @@ let _ = e => {
       setIsSupportedPrivateBrowsingPerkPlatform: G,
       isWeb: V,
       isSupportedPrivateBrowsingPerkPlatform: z,
-      setGetWarpInstallationStatus: W,
-      perkAvailableToUser: H,
-      setPerkAvailableToUser: q
-    } = (0, i.o)(R), K = r.useCallback(async () => (L(p.Ij.INITIALIZING), t(setTimeout(() => {
+      setGetWarpInstallationStatus: H,
+      perkAvailableToUser: W,
+      setPerkAvailableToUser: K
+    } = (0, i.o)(R), q = r.useCallback(async () => (L(p.Ij.INITIALIZING), t(setTimeout(() => {
       L(p.Ij.CONNECTED)
     }, 1e3)), true), [L, t]);
     r.useEffect(() => {
-      M(K)
-    }, [K, M]);
+      M(q)
+    }, [q, M]);
     let Y = r.useCallback(async () => p._n.INSTALLING, []);
     r.useEffect(() => {
-      q(k)
-    }, [k, q]), r.useEffect(() => {
-      W(Y)
-    }, [W, Y]);
+      K(k)
+    }, [k, K]), r.useEffect(() => {
+      H(Y)
+    }, [H, Y]);
     let Q = r.useCallback(async () => (clearTimeout(e), L(p.Ij.DISCONNECTED), true), [e, L]),
       X = r.useCallback(() => new Promise((e, t) => {
-        D(p._n.INSTALLING), s(setTimeout(() => {
+        Z(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
         }, T))
-      }), [S, T, D, s]);
+      }), [S, T, Z, s]);
     r.useEffect(() => {
-      V && A !== p._n.UNKNOWN && D(p._n.UNKNOWN)
-    }, [V, D, A]), r.useEffect(() => {
+      V && A !== p._n.UNKNOWN && Z(p._n.UNKNOWN)
+    }, [V, Z, A]), r.useEffect(() => {
       U(Q)
     }, [Q, U]), r.useEffect(() => {
       B(X)
     }, [X, B]), r.useEffect(() => {
       A !== p._n.INSTALLING && clearTimeout(n)
     }, [n, A]), r.useEffect(() => {
-      if (A !== p._n.INSTALLED && Z !== p.Ij.INITIALIZING) return void L(p.Ij.INITIALIZING)
-    }, [A, Z, L]);
+      if (A !== p._n.INSTALLED && D !== p.Ij.INITIALIZING) return void L(p.Ij.INITIALIZING)
+    }, [A, D, L]);
     let {
       enabled: J
-    } = f.H.useConfig({
+    } = h.H.useConfig({
       location: "private_browsing_perk_settings_page"
     });
     return J ? (0, a.jsxs)("div", {
@@ -210,9 +210,9 @@ let _ = e => {
               },
               children: (0, a.jsx)(c.rsf, {
                 onChange: () => {
-                  H ? (0, m.C)(null, I) : (0, m.C)(C.F_, I)
+                  W ? (0, m.C)(null, I) : (0, m.C)(y.F_, I)
                 },
-                checked: H
+                checked: W
               })
             })]
           }), (0, a.jsxs)(b.BZ, {
@@ -246,7 +246,7 @@ let _ = e => {
               variant: "text-md/semibold",
               children: "Installation Status"
             }), (0, a.jsx)(o.B6, {
-              select: e => D(e),
+              select: e => Z(e),
               isSelected: e => e === A,
               serialize: e => "".concat(e),
               disabled: V,
@@ -286,7 +286,7 @@ let _ = e => {
               children: "Connection Status"
             }), (0, a.jsx)(o.B6, {
               select: e => L(e),
-              isSelected: e => e === Z,
+              isSelected: e => e === D,
               serialize: e => "".concat(e),
               options: [{
                 label: "Initializing",
@@ -390,7 +390,7 @@ let _ = e => {
           children: [(0, a.jsx)(c.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"
-          }), (0, a.jsx)(y, {
+          }), (0, a.jsx)(C, {
             ref: w
           })]
         })]

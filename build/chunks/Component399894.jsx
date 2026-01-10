@@ -1,8 +1,8 @@
-/** Chunk was on 193 **/
+/** Chunk was on 49131 **/
 /** chunk id: 399894, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,61 +15,61 @@ var Chunk120356 = require("./120356.js"),
   Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk95136 = require("./95136.js");
-let f = e => {
+let h = e => {
   let t, n, {
-    rateLimitPerUser: r,
+    rateLimitPerUser: a,
     slowmodeCooldownGuess: l,
-    isBypassSlowmode: f,
-    leadingIcon: h = false
+    isBypassSlowmode: h,
+    leadingIcon: f = false
   } = e;
-  if (r >= d.Z.Seconds.HOUR) {
-    let e = Math.floor(r / d.Z.Seconds.HOUR),
-      t = Math.floor((r - e * d.Z.Seconds.HOUR) / d.Z.Seconds.MINUTE),
-      a = r - e * d.Z.Seconds.HOUR - t * d.Z.Seconds.MINUTE;
+  if (a >= d.Z.Seconds.HOUR) {
+    let e = Math.floor(a / d.Z.Seconds.HOUR),
+      t = Math.floor((a - e * d.Z.Seconds.HOUR) / d.Z.Seconds.MINUTE),
+      r = a - e * d.Z.Seconds.HOUR - t * d.Z.Seconds.MINUTE;
     n = u.intl.formatToPlainString(u.t.oEwLez, {
       hours: e,
       minutes: t,
-      seconds: a
+      seconds: r
     })
-  } else if (r >= 60) {
-    let e = Math.floor(r / 60);
+  } else if (a >= 60) {
+    let e = Math.floor(a / 60);
     n = u.intl.formatToPlainString(u.t.DARKYm, {
       minutes: e,
-      seconds: r - 60 * e
+      seconds: a - 60 * e
     })
   } else n = u.intl.formatToPlainString(u.t["9yE8Ga"], {
-    seconds: r
+    seconds: a
   });
-  if (!f && l > 0) {
+  if (!h && l > 0) {
     let e = s().duration(l);
     if (l > d.Z.Millis.HOUR) {
       let n = "".concat(e.minutes()).padStart(2, "0"),
-        a = "".concat(e.seconds()).padStart(2, "0");
-      t = "".concat(e.hours(), ":").concat(n, ":").concat(a)
+        r = "".concat(e.seconds()).padStart(2, "0");
+      t = "".concat(e.hours(), ":").concat(n, ":").concat(r)
     } else {
       let n = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.minutes(), ":").concat(n)
     }
-  } else t = f ? u.intl.string(u.t.SSzXvQ) : u.intl.string(u.t.Icu3bf);
-  let g = (0, a.jsx)(c.Text, {
+  } else t = h ? u.intl.string(u.t.SSzXvQ) : u.intl.string(u.t.Icu3bf);
+  let g = (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: t
     }),
-    x = (0, a.jsx)(c.ANZ, {
+    x = (0, r.jsx)(c.ANZ, {
       size: "xs",
       color: "currentColor",
       className: i()(m.slowModeIcon, {
-        [m.leadingIcon]: h
+        [m.leadingIcon]: f
       })
     });
-  return (0, a.jsx)(o.u, {
+  return (0, r.jsx)(o.u, {
     text: n,
-    children: (0, a.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: m.cooldownWrapper,
-      children: h ? (0, a.jsxs)(a.Fragment, {
+      children: f ? (0, r.jsxs)(r.Fragment, {
         children: [x, g]
-      }) : (0, a.jsxs)(a.Fragment, {
+      }) : (0, r.jsxs)(r.Fragment, {
         children: [g, x]
       })
     })

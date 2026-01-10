@@ -24,15 +24,15 @@ let C = e => {
     shelf: t,
     handleTransition: n,
     tab: a
-  } = e, C = (0, o.e7)([c.default], () => c.default.getCurrentUser()), E = (0, o.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), v = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), _ = (0, f.l)(S).slice(0, 4);
+  } = e, C = (0, i.e7)([c.default], () => c.default.getCurrentUser()), E = (0, i.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), v = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), x = (0, f.l)(S).slice(0, 4);
   return null == C ? null : (0, r.jsxs)("div", {
     className: s()(h.shelfBlockContainer, h.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: h.blockHeader,
-      children: [(0, r.jsx)(i.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(i.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "secondary",
         text: m.intl.formatToPlainString(m.t.bc9RBE, {
           category_name: t.name
@@ -49,7 +49,7 @@ let C = e => {
     }), (0, r.jsx)("div", {
       className: h.feed,
       children: (0, r.jsx)(r.Fragment, {
-        children: _.map((e, n) => {
+        children: x.map((e, n) => {
           if (null == d.Z.getCategoryForProduct(e.skuId) || null == e) return null;
           let l = e.skuId;
           return (0, r.jsx)(u.k0, {

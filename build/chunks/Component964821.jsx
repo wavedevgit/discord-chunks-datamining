@@ -28,8 +28,8 @@ function x(e) {
     onDragReset: j,
     onDragComplete: v,
     draggingId: O
-  } = e, C = (0, d.ZP)(), {
-    drag: y,
+  } = e, y = (0, d.ZP)(), {
+    drag: C,
     drop: N,
     dragSourcePosition: E,
     setIsDraggable: I
@@ -102,7 +102,7 @@ function x(e) {
       name: p.intl.string(p.t.kFlgsx),
       icon: null
     }
-  })(t, C, w), [t, C, w]);
+  })(t, y, w), [t, y, w]);
   return (0, r.jsxs)("div", {
     className: a()(h.card, {
       [h.dropIndicatorBefore]: null != E && l < E,
@@ -111,7 +111,7 @@ function x(e) {
     onMouseEnter: () => I(true),
     onMouseLeave: () => I(false),
     ref: e => {
-      y(N(e))
+      C(N(e))
     },
     children: [(0, r.jsx)("div", {
       className: h.dragHandle,

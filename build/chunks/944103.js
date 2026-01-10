@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 944103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -11,15 +11,15 @@ var Chunk473749 = require("./473749.js"),
 
 function s(e) {
   let t = (0, a.Mn)("useShouldRenderBanner"),
-    [n, s] = i.useState("");
-  i.useEffect(() => {
+    [n, s] = r.useState("");
+  r.useEffect(() => {
     s("")
   }, [e.id]);
-  let c = (0, r.e7)([o.Z], () => o.Z.getLastActionTime(e.id));
-  i.useEffect(() => {
+  let c = (0, i.e7)([o.Z], () => o.Z.getLastActionTime(e.id));
+  r.useEffect(() => {
     l.$N.has(e.type) && n !== e.id && t && o.Z.maybeAutoUpgradeChannel(e.id) && s(e.id)
   }, [n, t, c, e]);
-  let u = i.useCallback(() => s(""), []);
+  let u = r.useCallback(() => s(""), []);
   return {
     showUnreadsNotice: n === e.id,
     clearUnreadsNotice: u

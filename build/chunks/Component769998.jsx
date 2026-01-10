@@ -26,7 +26,7 @@ function b(e) {
     guildId: p,
     toggled: h,
     onToggleAction: x
-  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, b), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, g.getFriendlyDurationString)(O) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(p)), [p]);
+  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, b), O = null == (t = n.metadata) ? true : t.durationSeconds, y = null != O ? (0, g.getFriendlyDurationString)(O) : null, C = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(p)), [p]);
   if (null == v) return null;
   let {
     headerText: N,
@@ -54,11 +54,11 @@ function b(e) {
       }), h && (0, r.jsxs)(a.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: [null === C ? null : b === d.fX.MENTION_SPAM ? f.intl.format(f.t.i3lsKD, {
-          friendlyDurationString: C
+        children: [null === y ? null : b === d.fX.MENTION_SPAM ? f.intl.format(f.t.i3lsKD, {
+          friendlyDurationString: y
         }) : f.intl.format(f.t.mvHxze, {
-          friendlyDurationString: C
-        }), y && (0, r.jsx)(a.P3F, {
+          friendlyDurationString: y
+        }), C && (0, r.jsx)(a.P3F, {
           onClick: j(true),
           className: m.editChannel,
           tag: "span",
@@ -69,13 +69,13 @@ function b(e) {
     }), (0, r.jsx)(l.u, {
       text: f.intl.format(f.t.wx6Vb9, {}),
       "aria-label": f.intl.formatToMarkdownString(f.t.wx6Vb9, {}),
-      shouldShow: !y,
+      shouldShow: !C,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.P3F, {
-          onClick: y ? j(false) : true,
+          onClick: C ? j(false) : true,
           children: (0, r.jsx)(a.FZ5, {
             checked: h,
-            disabled: !y
+            disabled: !C
           })
         })
       })

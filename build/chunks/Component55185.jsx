@@ -1,8 +1,8 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => E,
-  NK: () => x
+  NK: () => C
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk509780 = require("./509780.js"),
   Chunk273701 = require("./273701.js");
 
-function m(e) {
+function b(e) {
   let {
     closePopout: t
   } = e;
@@ -28,7 +28,7 @@ function m(e) {
     children: (0, i.jsx)(s.Button, {
       variant: "primary",
       size: "sm",
-      text: p.intl.string(h.default.Poezn1),
+      text: h.intl.string(f.default.Poezn1),
       onClick: () => {
         t(), (0, c.Z)({
           nextStatus: s.Skl.ONLINE
@@ -51,7 +51,7 @@ function y(e) {
       children: [(0, i.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
-        children: p.intl.string(h.default.WhdCGP)
+        children: h.intl.string(f.default.WhdCGP)
       }), n && (0, i.jsxs)("div", {
         className: g.toggleContainerOnlineRow,
         children: [(0, i.jsx)(s.qbd, {
@@ -60,7 +60,7 @@ function y(e) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-subtle",
-          children: r === s.Skl.INVISIBLE ? p.intl.string(h.default.a3AofS) : p.intl.string(p.t.WbGtnH)
+          children: r === s.Skl.INVISIBLE ? h.intl.string(f.default.a3AofS) : h.intl.string(h.t.WbGtnH)
         })]
       })]
     }), (0, i.jsx)(s.rsf, {
@@ -74,7 +74,7 @@ function y(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     children: t
   } = e, n = (0, l.useRef)(null);
@@ -88,20 +88,20 @@ function O(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(O, {
+  return (0, i.jsxs)(v, {
     children: [(0, i.jsx)(y, {
       showCurrentGame: n
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: p.intl.string(h.default["7cfFob"])
+      children: h.intl.string(f.default["7cfFob"])
     }), (0, i.jsx)(s.izJ, {
       className: g.divider
-    }), (0, i.jsx)(f.yj, {
+    }), (0, i.jsx)(p.yj, {
       onClosePopout: t
     })]
   })
@@ -111,7 +111,7 @@ function j(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(O, {
+  return (0, i.jsxs)(v, {
     children: [(0, i.jsxs)(s.Kqy, {
       align: "start",
       gap: 0,
@@ -122,7 +122,7 @@ function j(e) {
         variant: "heading-sm/semibold",
         color: "text-strong",
         className: g.controlTitle,
-        children: p.intl.string(h.default["5YsmGI"])
+        children: h.intl.string(f.default["5YsmGI"])
       }), (0, i.jsxs)("div", {
         className: g.toggleContainerOnlineRow,
         children: [(0, i.jsx)(s.qbd, {
@@ -131,39 +131,39 @@ function j(e) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-subtle",
-          children: p.intl.string(h.default.U8MFdR)
+          children: h.intl.string(f.default.U8MFdR)
         })]
       })]
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: p.intl.string(h.default.Yl0mh4)
-    }), (0, i.jsx)(m, {
+      children: h.intl.string(f.default.Yl0mh4)
+    }), (0, i.jsx)(b, {
       closePopout: t
     })]
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(O, {
+  return (0, i.jsxs)(v, {
     children: [(0, i.jsx)(y, {
       showCurrentGame: n,
       shouldShowStatus: true
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: p.intl.string(h.default["7cfFob"])
+      children: h.intl.string(f.default["7cfFob"])
     }), (0, i.jsx)(s.izJ, {
       className: g.divider
-    }), (0, i.jsx)(f.yj, {
+    }), (0, i.jsx)(p.yj, {
       onClosePopout: t
     })]
   })
 }
-var x = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var C = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
 function E(e) {
   let {
@@ -172,25 +172,25 @@ function E(e) {
     handleClose: r,
     popoutTargetRef: a,
     children: d
-  } = e, [g, m] = (0, l.useState)(n), y = (0, l.useRef)(null), O = function(e) {
+  } = e, [g, b] = (0, l.useState)(n), y = (0, l.useRef)(null), v = function(e) {
     if (null === e) return null;
     switch (e) {
       case 0:
         return {
-          type: "popover", title: p.intl.string(h.default.vxVbGP), body: [p.intl.string(h.default["7cfFob"])], action: {
-            text: p.intl.string(h.default.k4tCg2),
+          type: "popover", title: h.intl.string(f.default.vxVbGP), body: [h.intl.string(f.default["7cfFob"])], action: {
+            text: h.intl.string(f.default.k4tCg2),
             onClick: () => {
               u.G6.updateSetting(true)
             }
           }, textLink: {
-            text: p.intl.string(p.t["ZrN+DT"]),
-            onClick: f.S$
+            text: h.intl.string(h.t["ZrN+DT"]),
+            onClick: p.S$
           }
         };
       case 1:
         return {
-          type: "popover", title: p.intl.string(h.default.qKDqet), body: [p.intl.string(h.default.Yl0mh4)], action: {
-            text: p.intl.string(h.default.Poezn1),
+          type: "popover", title: h.intl.string(f.default.qKDqet), body: [h.intl.string(f.default.Yl0mh4)], action: {
+            text: h.intl.string(f.default.Poezn1),
             onClick: () => {
               (0, c.Z)({
                 nextStatus: s.Skl.ONLINE
@@ -200,21 +200,21 @@ function E(e) {
         };
       case 2:
         return {
-          type: "popover", title: p.intl.string(h.default["6cA8HZ"]), body: [p.intl.string(h.default["7cfFob"])], action: {
-            text: p.intl.string(h.default.k4tCg2),
+          type: "popover", title: h.intl.string(f.default["6cA8HZ"]), body: [h.intl.string(f.default["7cfFob"])], action: {
+            text: h.intl.string(f.default.k4tCg2),
             onClick: () => {
               u.G6.updateSetting(true), (0, c.Z)({
                 nextStatus: s.Skl.ONLINE
               })
             }
           }, textLink: {
-            text: p.intl.string(p.t["ZrN+DT"]),
-            onClick: f.S$
+            text: h.intl.string(h.t["ZrN+DT"]),
+            onClick: p.S$
           }
         };
       case 3:
         return {
-          type: "popout", children: v
+          type: "popout", children: O
         };
       case 4:
         return {
@@ -222,23 +222,23 @@ function E(e) {
         };
       case 5:
         return {
-          type: "popout", children: C
+          type: "popout", children: x
         };
       default:
         return null
     }
-  }(g), x = (0, l.useRef)(t);
+  }(g), C = (0, l.useRef)(t);
   if ((0, l.useEffect)(() => {
-      t && !x.current && m(n), t !== x.current && (x.current = t)
-    }, [n, t]), null == O || !t) return d;
-  if ("popover" === O.type) {
+      t && !C.current && b(n), t !== C.current && (C.current = t)
+    }, [n, t]), null == v || !t) return d;
+  if ("popover" === v.type) {
     var E, S;
     let {
       action: e,
       title: t,
       body: n,
       textLink: l
-    } = O;
+    } = v;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(o.J2, {
         targetElementRef: a,
@@ -252,7 +252,7 @@ function E(e) {
         gradientColor: "purple",
         graphic: {
           type: "image",
-          src: b.Z
+          src: m.Z
         },
         actions: [(E = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -291,7 +291,7 @@ function E(e) {
   }
   let {
     children: _
-  } = O;
+  } = v;
   return (0, i.jsx)(s.yRy, {
     targetElementRef: y,
     shouldShow: true,

@@ -79,8 +79,8 @@ let D = +Chunk70956.Z.Millis.DAY,
   z = {},
   Y = {},
   W = {},
-  q = {},
-  K = 0,
+  K = {},
+  q = 0,
   Q = false,
   J = false,
   X = false,
@@ -108,17 +108,17 @@ function eg(e, t) {
   returnfalse
 }
 
-function em(e) {
+function eh(e) {
   if (!N.Z.filterStaffContent()) returntrue;
   if ((0, x._e)(e)) {
     if (e.data.guild_id === j.KF) returntrue;
-    let t = h.Z.getGuild(e.data.guild_id);
+    let t = m.Z.getGuild(e.data.guild_id);
     if (null == t || t.features.has(A.GuildFeatures.INTERNAL_EMPLOYEE_ONLY)) returnfalse
   }
   returntrue
 }
 
-function eh(e, t, n, r) {
+function em(e, t, n, r) {
   let i = e.filter(e => e.type !== n);
   return t.forEach((e, t) => {
     (t + 1) * r < i.length ? i.splice((t + 1) * r, 0, e) : i.push(e)
@@ -128,7 +128,7 @@ function eh(e, t, n, r) {
 function eb() {
   if (en = en.filter(e => e.type !== j.Ni.RECOMMENDED_GUILDS), er = er.filter(e => e.type !== j.Ni.RECOMMENDED_GUILDS), 0 === el.length) return;
   let e = "recommendedGuilds",
-    t = h.Z.getGuildsArray().filter(e => e.features.has(A.GuildFeatures.COMMUNITY)).length >= 5,
+    t = m.Z.getGuildsArray().filter(e => e.features.has(A.GuildFeatures.COMMUNITY)).length >= 5,
     n = P.Z.getReadTimestamp(e);
   if (t && null != n && Date.now() - ea > D && Date.now() - n < M) return;
   let r = {
@@ -161,13 +161,13 @@ function e_() {
 }
 
 function eE(e) {
-  if (H.length > 0 && (k = H, H = [], B = []), K++, null != e) en = e.newUnread, er = e.newRead;
+  if (H.length > 0 && (k = H, H = [], B = []), q++, null != e) en = e.newUnread, er = e.newRead;
   else {
     let [e, t] = eO(k);
     en = e, er = t
   }
   if (N.Z.onlyShowRecentGeneratedCandidates() || (function() {
-      let e = h.Z.getGuildIds(),
+      let e = m.Z.getGuildIds(),
         t = [];
       for (let r of e) {
         if (null != W[r] && W[r] < 0) continue;
@@ -200,15 +200,15 @@ function eE(e) {
           }
       }
       t.sort((e, t) => {
-        let n = m.Z.getGuildAffinity(e.data.guild_id),
-          r = m.Z.getGuildAffinity(t.data.guild_id);
+        let n = h.Z.getGuildAffinity(e.data.guild_id),
+          r = h.Z.getGuildAffinity(t.data.guild_id);
         return (null != r ? r.score : 0) - (null != n ? n.score : 0)
       });
       let r = [],
         i = [];
       t.forEach(e => {
         F[e.id] = e, null != P.Z.getReadTimestamp(e.id) ? i.push(e) : r.push(e)
-      }), en = eh(en, r, j.Ni.GUILD_EVENT, 7), er = eh(er, i, j.Ni.GUILD_EVENT, 7)
+      }), en = em(en, r, j.Ni.GUILD_EVENT, 7), er = em(er, i, j.Ni.GUILD_EVENT, 7)
     }(), function() {
       var e, t;
       let n = new Set,
@@ -238,7 +238,7 @@ function eE(e) {
           }
         };
         n.add(e.content.id), F[t.id] = t, null != P.Z.getReadTimestamp(t.id) ? a.push(t) : l.push(t)
-      }), en = eh(en, l, j.Ni.ACTIVITY, 5), er = eh(er, a, j.Ni.ACTIVITY, 5)
+      }), en = em(en, l, j.Ni.ACTIVITY, 5), er = em(er, a, j.Ni.ACTIVITY, 5)
     }(), eb()), null != V.load_id && U !== V.load_id) {
     var t;
     S.m.trackFeedLoaded({
@@ -318,15 +318,15 @@ function eN(e) {
 }
 class ej extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(f.default, g.Z, o.Z, u.Z, m.Z, d.ZP, h.Z, N.Z, P.Z, b.Z, _.Z, E.ZP, O.Z, v.ZP), null != e) {
+    if (this.waitFor(f.default, g.Z, o.Z, u.Z, h.Z, d.ZP, m.Z, N.Z, P.Z, b.Z, _.Z, E.ZP, O.Z, v.ZP), null != e) {
       var t, n, r, i, l, a, s;
       (k = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         F[e.id] = e
-      }), W = null != (n = e.customGuildScores) ? n : {}, q = null != (r = e.customChannelScoresByGuild) ? r : {}, et = null != (i = e.numOpens) ? i : 0, G = null != (l = e.lastOpened) ? l : 0, ea = null != (a = e.lastJoinedRecommendedGuild) ? a : 0, ef = null != (s = e.lastTakenICYMISurvey) ? s : 0
+      }), W = null != (n = e.customGuildScores) ? n : {}, K = null != (r = e.customChannelScoresByGuild) ? r : {}, et = null != (i = e.numOpens) ? i : 0, G = null != (l = e.lastOpened) ? l : 0, ea = null != (a = e.lastJoinedRecommendedGuild) ? a : 0, ef = null != (s = e.lastTakenICYMISurvey) ? s : 0
     }
   }
   getVersion() {
-    return K
+    return q
   }
   getDehydratedItems() {
     return k
@@ -368,7 +368,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return this.getCustomGuildScore(e) === x.aL.MUTED || this.getCustomChannelScore(e, t) === x.aL.MUTED
   }
   getCustomChannelScore(e, t) {
-    return null == q[e] || null == q[e][t] ? x.aL.UNKNOWN : (0, x.jv)(q[e][t])
+    return null == K[e] || null == K[e][t] ? x.aL.UNKNOWN : (0, x.jv)(K[e][t])
   }
   getCustomGuildScore(e) {
     var t;
@@ -427,7 +427,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
       dehydratedItems: k,
       numOpens: et,
       customGuildScores: W,
-      customChannelScoresByGuild: q,
+      customChannelScoresByGuild: K,
       lastOpened: G,
       lastJoinedRecommendedGuild: ea,
       lastTakenICYMISurvey: ef
@@ -437,7 +437,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
 w(ej, "displayName", "ICYMIStore"), w(ej, "persistKey", "ICYMIStore");
 let eP = new ej(Chunk570140.Z, {
   LOGOUT: function() {
-    k = [], H = [], B = [], F = {}, V = {}, z = {}, Y = {}, U = null, W = {}, q = {}, K = 0, Q = false, J = false, X = false, en = [], er = [], ei = 0, G = 0, ea = 0, eo = true, es = false, ec = new Set, ee = null, eu = false, ed = false, $ = null, ep = 0
+    k = [], H = [], B = [], F = {}, V = {}, z = {}, Y = {}, U = null, W = {}, K = {}, q = 0, Q = false, J = false, X = false, en = [], er = [], ei = 0, G = 0, ea = 0, eo = true, es = false, ec = new Set, ee = null, eu = false, ed = false, $ = null, ep = 0
   },
   LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
     let {
@@ -480,7 +480,7 @@ let eP = new ej(Chunk570140.Z, {
         contentGenerationEnabled: t
       } = (0, T.q3)("processRawItems", false), n = N.Z.onlyShowRecentGeneratedCandidates(), r = new Set(j.zd);
       n ? r = new Set([j.Ni.GENERATED_CANDIDATE]) : t && r.add(j.Ni.GENERATED_CANDIDATE);
-      let i = e.filter(e => r.has(e.type)).filter(em);
+      let i = e.filter(e => r.has(e.type)).filter(eh);
       return n && i.sort((e, t) => C.default.extractTimestamp(t.id) - C.default.extractTimestamp(e.id)), i.map(e => {
         if (e.type === j.Ni.MESSAGE && null != e.data.message_context) {
           let t = {};
@@ -494,12 +494,12 @@ let eP = new ej(Chunk570140.Z, {
       feed_item_ids: H.map(e => e.id)
     };
     let [a, o] = eO(H);
-    if (B = ev(a), !X || 0 === K || i) K = 0, !eu && eg(a, H) ? (J = true, Q = true) : J = false, eE({
+    if (B = ev(a), !X || 0 === q || i) q = 0, !eu && eg(a, H) ? (J = true, Q = true) : J = false, eE({
       newUnread: a,
       newRead: o
     });
     else {
-      K > 0 && (ee = null);
+      q > 0 && (ee = null);
       let e = B.length > j.Lb;
       l || (J = e), e && ((0, x.em)([...a, ...o], 0, j.xy), a.length + o.length === 0 && (ed = true))
     }
@@ -587,8 +587,8 @@ let eP = new ej(Chunk570140.Z, {
       scores: t
     } = e;
     for (let e of t)
-      for (let t of (W[e.guild_id] = e.guild_score, eS(e.guild_id, e.guild_score), Object.keys(e.custom_channel_scores))) null == q[e.guild_id] && (q[e.guild_id] = {}), q[e.guild_id][t] = e.custom_channel_scores[t], eI(t, e.custom_channel_scores[t]);
-    W = L({}, W), q = L({}, q)
+      for (let t of (W[e.guild_id] = e.guild_score, eS(e.guild_id, e.guild_score), Object.keys(e.custom_channel_scores))) null == K[e.guild_id] && (K[e.guild_id] = {}), K[e.guild_id][t] = e.custom_channel_scores[t], eI(t, e.custom_channel_scores[t]);
+    W = L({}, W), K = L({}, K)
   },
   LOAD_ICYMI_RECOMMENDED_GUILDS: function(e) {
     let {
@@ -607,7 +607,7 @@ let eP = new ej(Chunk570140.Z, {
         channelId: t,
         score: r
       } = e;
-      null == q[n] && (q[n] = {}), q[n][t] = r, eI(t, r), q = L({}, q)
+      null == K[n] && (K[n] = {}), K[n][t] = r, eI(t, r), K = L({}, K)
     })
   },
   RELOAD_ICYMI: function() {

@@ -22,14 +22,14 @@ let j = new Set,
   v = Chunk84658.PG.LANDING,
   O = null;
 
-function C(e) {
+function y(e) {
   let {
     subsection: t
   } = e;
   if (c.Z.getGuildId() === O) returnfalse;
   v = t === x.KsC.SERVER_GUIDE ? p.PG.HOME_SETTINGS : p.PG.LANDING, O = c.Z.getGuildId()
 }
-class y extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(s.Z, g.Z, b.Z, m.Z, f.Z, d.Z, c.Z), this.syncWith([s.Z, g.Z, b.Z, m.Z, f.Z, d.Z], () => true)
   }
@@ -68,15 +68,15 @@ class y extends(r = Chunk442837.ZP.Store) {
   canCloseEarly() {
     return null == O || !this.hasErrors() && (!(0, h.C)(O) || !this.hasChanges())
   }
-}(i = "displayName") in y ? Object.defineProperty(y, i, {
+}(i = "displayName") in C ? Object.defineProperty(C, i, {
   value: "GuildSettingsOnboardingStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : y[i] = "GuildSettingsOnboardingStore";
-let N = new y(Chunk570140.Z, {
-  GUILD_SETTINGS_INIT: C,
-  GUILD_SETTINGS_SET_SECTION: C,
+}) : C[i] = "GuildSettingsOnboardingStore";
+let N = new C(Chunk570140.Z, {
+  GUILD_SETTINGS_INIT: y,
+  GUILD_SETTINGS_SET_SECTION: y,
   GUILD_SETTINGS_ONBOARDING_STEP: function(e) {
     let {
       step: t

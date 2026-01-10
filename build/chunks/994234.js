@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 994234, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -15,7 +15,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function h(e, t, n) {
   n && (0, l.pTH)(), (0, d.h)(e, t)
 }
 
@@ -26,7 +26,7 @@ function g(e, t) {
     onToggle: l,
     isLoading: d,
     error: g
-  } = (0, u.Z)(e, t), b = (0, i.e7)([s.Z], () => s.Z.getGuild(e)), m = (0, c.Z)(e, t);
+  } = (0, u.Z)(e, t), m = (0, i.e7)([s.Z], () => s.Z.getGuild(e)), b = (0, c.Z)(e, t);
   return {
     onActivate: r.useCallback(function() {
       var e;
@@ -34,25 +34,25 @@ function g(e, t) {
         {
           shouldCloseAllModals: i = true
         } = r;
-      if (null != b && null != t) return m < t.cost ? void(0, o.u)({
+      if (null != m && null != t) return b < t.cost ? void(0, o.u)({
         analyticsLocation: {
-          page: h.ZY5.GUILD_POWERUPS_OVERVIEW,
-          section: h.jXE.GUILD_POWERUPS_OVERVIEW_CARD
+          page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
+          section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD
         },
-        numberOfBoostsToAdd: t.cost - m,
+        numberOfBoostsToAdd: t.cost - b,
         analyticsLocations: n,
-        guild: b,
-        intent: t.type === f.Us.LEVEL ? f.P2.LEVEL : f.P2.PERK,
+        guild: m,
+        intent: t.type === p.Us.LEVEL ? p.P2.LEVEL : p.P2.PERK,
         onSubscribeComplete: () => {
           var e;
           return null == (e = l(true)) ? true : e.then(() => {
-            p(b.id, t, i)
+            h(m.id, t, i)
           })
         }
       }) : null == (e = l(true)) ? true : e.then(() => {
-        p(b.id, t, i)
+        h(m.id, t, i)
       })
-    }, [l, t, m, n, b]),
+    }, [l, t, b, n, m]),
     isLoading: d,
     error: g
   }

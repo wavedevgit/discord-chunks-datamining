@@ -82,7 +82,7 @@ let _ = function(e) {
               options: A,
               value: E,
               onChange: R,
-              placeholder: h.intl.string(h.t.Zw8jxn),
+              placeholder: m.intl.string(m.t.Zw8jxn),
               clearable: true,
               filter: (e, t) => {
                 if ((0, c.Ew)(null == t ? true : t.trim())) return e;
@@ -94,7 +94,7 @@ let _ = function(e) {
               }
             }, "".concat(E, "-").concat(null != (_ = null == v || null == (n = v.config) || null == (t = n.messages) ? true : t.questName) ? _ : "")), (0, r.jsx)(o.hU, {
               onClick: y,
-              "aria-label": h.intl.string(h.t.wzzjk9),
+              "aria-label": m.intl.string(m.t.wzzjk9),
               icon: o.DuK,
               loading: x
             })]
@@ -110,19 +110,19 @@ let _ = function(e) {
           disabled: I,
           loading: I,
           variant: "secondary",
-          text: h.intl.string(h.t.jQEfRT)
+          text: m.intl.string(m.t.jQEfRT)
         }), (0, r.jsx)(o.Button, {
           onClick: w,
           disabled: I,
           loading: I,
           variant: "secondary",
-          text: h.intl.string(h.t.taqkwK)
+          text: m.intl.string(m.t.taqkwK)
         }), (0, r.jsx)(o.Button, {
           onClick: L,
           disabled: I,
           loading: I,
           variant: "secondary",
-          text: h.intl.string(h.t.cKSLr4)
+          text: m.intl.string(m.t.cKSLr4)
         }), (0, r.jsx)(o.yRy, {
           targetElementRef: N,
           shouldShow: S,
@@ -134,15 +134,15 @@ let _ = function(e) {
             children: (0, r.jsx)("div", {
               className: b.copyInput,
               children: (0, r.jsx)(s.Z, {
-                value: m.$w.QUEST_PREVIEW_TOOL_2(E),
-                text: h.intl.string(h.t.WqhZss)
+                value: h.$w.QUEST_PREVIEW_TOOL_2(E),
+                text: m.intl.string(m.t.WqhZss)
               })
             })
           }),
           children: () => (0, r.jsx)(o.hU, {
             buttonRef: N,
             onClick: () => T(!S),
-            "aria-label": h.intl.string(h.t.rNGQfD),
+            "aria-label": m.intl.string(m.t.rNGQfD),
             icon: o.TIy,
             variant: "secondary"
           })

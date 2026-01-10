@@ -91,7 +91,7 @@ function q(e) {
     }
   };
 
-  function y() {
+  function C() {
     (0, N.Z)(n, h.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, m.xf)()
   }
   return (0, r.jsx)(j.ZP, {
@@ -128,7 +128,7 @@ function q(e) {
                       guildId: n,
                       authorId: o.author.id,
                       colorRoleId: t.id,
-                      colorStrings: (0, C.DX)(m),
+                      colorStrings: (0, y.DX)(m),
                       colorString: (0, c.Rf)(m.primary_color)
                     },
                     message: o,
@@ -161,7 +161,7 @@ function q(e) {
               children: U.intl.string(B.default.FJZeZF)
             })]
           }), (0, r.jsx)(f.Button, {
-            onClick: y,
+            onClick: C,
             variant: "expressive",
             icon: f.Ucv,
             text: U.intl.string(U.t["+7XY31"])
@@ -178,7 +178,7 @@ function X() {
       gradientStyle: t,
       gradientClassname: n
     } = (0, f.JUn)({
-      colorStrings: (0, C.DX)(M.SK),
+      colorStrings: (0, y.DX)(M.SK),
       useReducedMotion: e,
       roleStyle: "username",
       includeConvenienceGlow: true,
@@ -328,7 +328,7 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, s = (0, y.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, g = (0, I.fI)(n), m = i || g, b = (0, d.e7)([S.Z], () => S.Z.canImpersonateRole(t, n)), {
+  } = e, s = (0, C.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, g = (0, I.fI)(n), m = i || g, b = (0, d.e7)([S.Z], () => S.Z.canImpersonateRole(t, n)), {
     headerHeight: p,
     headerRef: h
   } = (0, w.Z)(0), {

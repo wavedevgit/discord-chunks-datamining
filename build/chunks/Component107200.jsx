@@ -2,7 +2,7 @@
 /** chunk id: 107200, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,19 +16,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk710111 = require("./710111.js"),
   Chunk399794 = require("./399794.js");
 
-function h() {
-  let [e, t] = (0, r.Wu)([a.Z], () => [a.Z.enabled, a.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), h = (0, r.e7)([l.Z], () => l.Z.getChannel(n), [n]), p = null == h ? true : h.getGuildId();
-  return e && null != h ? (0, i.jsx)("div", {
-    className: f.widget,
-    children: (0, i.jsx)(o.Z, {
+function f() {
+  let [e, t] = (0, r.Wu)([s.Z], () => [s.Z.enabled, s.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), f = (0, r.e7)([a.Z], () => a.Z.getChannel(n), [n]), p = null == f ? true : f.getGuildId();
+  return e && null != f ? (0, i.jsx)("div", {
+    className: h.widget,
+    children: (0, i.jsx)(l.Z, {
       width: u.FW.width,
       height: u.FW.height,
       guildId: p,
-      channel: h,
+      channel: f,
       keepOpen: t,
       onClose: function() {
         let e = (0, d.Z)();
-        null != e && (0, s.oZ)(e)
+        null != e && (0, o.oZ)(e)
       },
       analyticsSource: "overlay"
     })

@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -21,59 +21,59 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk679817 = require("./679817.js");
 
-function y(e) {
+function v(e) {
   let {
     channelId: t,
     showProfile: n = false,
-    showTrailingDivider: y = false
-  } = e, v = p.default.cast(t), {
-    joinRequest: x,
-    isModmin: O,
-    guildId: E,
-    maxMembers: j
-  } = (0, r.cj)([f.Z, u.Z, d.Z], () => {
-    let e = f.Z.getRequest(v),
+    showTrailingDivider: v = false
+  } = e, O = p.default.cast(t), {
+    joinRequest: j,
+    isModmin: x,
+    guildId: C,
+    maxMembers: E
+  } = (0, i.cj)([f.Z, u.Z, d.Z], () => {
+    let e = f.Z.getRequest(O),
       t = u.Z.getGuild(null == e ? true : e.guildId);
     return {
       joinRequest: e,
-      isModmin: null != t && d.Z.can(g.Plq.KICK_MEMBERS, t),
+      isModmin: null != t && d.Z.can(m.Plq.KICK_MEMBERS, t),
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), S = (0, r.e7)([c.Z], () => null != E ? c.Z.getMemberCount(E) : 0), _ = null != j && (null != S ? S : 0) >= j, {
-    approveRequest: P,
-    rejectRequest: I,
+  }), S = (0, i.e7)([c.Z], () => null != C ? c.Z.getMemberCount(C) : 0), _ = null != E && (null != S ? S : 0) >= E, {
+    approveRequest: I,
+    rejectRequest: P,
     submitting: Z
-  } = (0, m.s)(null == x ? true : x.guildId, null == x ? true : x.userId, null == x ? true : x.joinRequestId);
-  return null != x && x.applicationStatus === h.wB.SUBMITTED && O ? (0, i.jsxs)("div", {
-    className: C.buttons,
-    children: [(0, i.jsx)(l.u, {
+  } = (0, g.s)(null == j ? true : j.guildId, null == j ? true : j.userId, null == j ? true : j.joinRequestId);
+  return null != j && j.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
+    className: y.buttons,
+    children: [(0, r.jsx)(l.u, {
       text: b.intl.string(b.t.cdPGbE),
       shouldShow: _,
-      children: (0, i.jsx)(a.Button, {
+      children: (0, r.jsx)(a.Button, {
         variant: "active",
         size: "sm",
         text: b.intl.string(b.t.BzjDQJ),
         loading: Z,
-        onClick: P,
+        onClick: I,
         disabled: _
       })
-    }), (0, i.jsx)(a.Button, {
+    }), (0, r.jsx)(a.Button, {
       variant: "critical-primary",
       size: "sm",
       text: b.intl.string(b.t.hDtbsz),
-      onClick: I,
-      disabled: Z || x.applicationStatus !== h.wB.SUBMITTED
-    }), n && (0, i.jsx)(a.Button, {
+      onClick: P,
+      disabled: Z || j.applicationStatus !== h.wB.SUBMITTED
+    }), n && (0, r.jsx)(a.Button, {
       onClick: () => {
         (0, s.openUserProfileModal)({
-          userId: x.userId,
-          guildId: x.guildId
+          userId: j.userId,
+          guildId: j.guildId
         })
       },
       variant: "secondary",
       size: "sm",
       text: b.intl.string(b.t.iXAna6)
-    }), y && (0, i.jsx)(o.ZP.Divider, {})]
+    }), v && (0, r.jsx)(o.ZP.Divider, {})]
   }) : null
 }

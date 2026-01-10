@@ -1,7 +1,7 @@
-/** Chunk was on 8982 **/
+/** Chunk was on 92524 **/
 /** chunk id: 286694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,20 +16,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e, t, n) {
-  var f;
-  let Z = a.Z.getChannel(n),
-    E = (0, i.e7)([u.Z], () => u.Z.getGuild(t), [t]),
-    P = (0, i.e7)([c.ZP], () => c.ZP.getPermissionsForUser(e.id, n), [n, e.id]),
-    h = (null == (f = s.default.getCurrentUser()) ? true : f.id) === e.id,
-    p = (0, i.e7)([o.Z], () => null != n && o.Z.canWithPartialContext(g.Plq.MUTE_MEMBERS, {
+function m(e, t, n) {
+  var m;
+  let b = a.Z.getChannel(n),
+    Z = (0, i.e7)([o.Z], () => o.Z.getGuild(t), [t]),
+    v = (0, i.e7)([c.ZP], () => c.ZP.getPermissionsForUser(e.id, n), [n, e.id]),
+    p = (null == (m = s.default.getCurrentUser()) ? true : m.id) === e.id,
+    E = (0, i.e7)([u.Z], () => null != n && u.Z.canWithPartialContext(g.Plq.MUTE_MEMBERS, {
       channelId: n
     }), [n]);
-  return null != Z && null != E && (p || h) && P.speaker ? (0, l.jsx)(r.sNh, {
+  return null != b && null != Z && (E || p) && v.speaker ? (0, l.jsx)(r.sNh, {
     id: "audience",
-    label: h ? m.intl.string(m.t["6C6PJx"]) : m.intl.string(m.t.VK3vQy),
+    label: p ? f.intl.string(f.t["6C6PJx"]) : f.intl.string(f.t.VK3vQy),
     action: () => {
-      h ? (0, d.yi)(Z) : (0, d.hz)(e, Z)
+      p ? (0, d.yi)(b) : (0, d.hz)(e, b)
     }
   }) : null
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 367207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk937579 = require("./937579.js"),
   Chunk522558 = require("./522558.js");
 
-function m(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,13 +35,13 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class v extends Chunk317770.Z {
+class O extends Chunk317770.Z {
   _initialize() {
     __OVERLAY__ ? l.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (l.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), l.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
   }
@@ -78,7 +78,7 @@ class v extends Chunk317770.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, s.Z)(O(y({}, e), {
+      (0, s.Z)(v(y({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -104,27 +104,27 @@ class v extends Chunk317770.Z {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "_premiumPaymentModalCloseResolve", null), m(this, "_premiumPaymentModalCloseReject", null), m(this, "_maybeFetchPremiumOffer", async () => {
+    super(...e), b(this, "_premiumPaymentModalCloseResolve", null), b(this, "_premiumPaymentModalCloseReject", null), b(this, "_maybeFetchPremiumOffer", async () => {
       let e = u.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = (d.Z.canFractionalPremiumUserUseOffer() || !(0, f.I5)(e)) && !d.Z.isFetchingOffer();
+        let t = (d.Z.canFractionalPremiumUserUseOffer() || !(0, p.I5)(e)) && !d.Z.isFetchingOffer();
         await (0, g.Tf)("PremiumManager", t)
       }
       l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
-    }), m(this, "_maybeFetchCheckoutRecovery", async () => {
+    }), b(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
-      null != e && e.verified && !(0, f.I5)(e) && p.Z.shouldFetchCheckoutRecovery() && await (0, h.o)()
-    }), m(this, "_maybeFetchUserAffinities", () => {
+      null != e && e.verified && !(0, p.I5)(e) && h.Z.shouldFetchCheckoutRecovery() && await (0, f.o)()
+    }), b(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
-      } = b.w.getConfig({
+      } = m.w.getConfig({
         location: "PremiumManager"
       });
       e && (0, c._)()
-    }), m(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, s.Z)(O(y({}, e), {
+    }), b(this, "_handlePremiumPaymentModalOpen", e => {
+      (0, s.Z)(v(y({}, e), {
         analyticsLocations: [o.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
@@ -133,7 +133,7 @@ class v extends Chunk317770.Z {
           })
         }
       }))
-    }), m(this, "_handlePremiumPaymentModalClose", e => {
+    }), b(this, "_handlePremiumPaymentModalClose", e => {
       let {
         didSucceed: t
       } = e;
@@ -141,4 +141,4 @@ class v extends Chunk317770.Z {
     })
   }
 }
-let j = new v
+let j = new O

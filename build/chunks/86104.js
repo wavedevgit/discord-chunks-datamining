@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   d = require.n(Chunk512722);
 let f = (0, require("./170830.js").G)(async () => {
-  let t = await Promise.all([i.e("43676"), i.e("43903")]).then(i.bind(i, 241441)),
+  let t = await Promise.all([i.e("11237"), i.e("43903")]).then(i.bind(i, 241441)),
     e = await t.default();
   a = e.cwrap("lottie_create", "number", ["string"]), s = e._lottie_destroy, h = e._lottie_draw_into_bgra, o = e._lottie_draw_into_rgba, l = e._lottie_frame_count, c = e._lottie_frame_rate, u = e._memory_create, n = e, r = u(409600)
 });

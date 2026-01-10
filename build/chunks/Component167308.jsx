@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 167308, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -18,17 +18,17 @@ let p = e => {
     isExpanded: t,
     contentLocation: n,
     progressBarRef: p,
-    percentComplete: f,
-    activeScreen: h,
+    percentComplete: h,
+    activeScreen: f,
     popoutTargetElementRef: x
   } = e, {
     quest: b,
     onGameSheetOpen: g,
     onGameSheetClose: v
-  } = r.useContext(u.A), j = (0, s.eQ)(b), C = (0, s.vf)({
+  } = r.useContext(u.A), j = (0, s.eQ)(b), y = (0, s.vf)({
     quest: b,
     isExpanded: t,
-    activeScreen: h,
+    activeScreen: f,
     sourceQuestContent: l.jn.QUEST_BAR_V2,
     popoutTargetElementRef: x,
     onGameSheetOpened: g,
@@ -43,7 +43,7 @@ let p = e => {
       children: e => (0, a.jsx)(d.Z, {
         ref: e,
         quest: b,
-        percentComplete: f,
+        percentComplete: h,
         size: 42,
         strokeWidth: 3,
         children: (0, a.jsx)(o.Z, {
@@ -75,7 +75,7 @@ let p = e => {
           className: m.questProgressHint,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: C
+          children: y
         })
       })]
     })]

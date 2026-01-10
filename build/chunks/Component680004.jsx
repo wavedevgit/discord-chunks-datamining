@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 680004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -59,7 +59,7 @@ function p() {
     emotion: window.__CLIPS_DEBUG__.emotion,
     yell: window.__CLIPS_DEBUG__.yell,
     whisper: window.__CLIPS_DEBUG__.whisper
-  })), [p, f] = r.useState(c.x0.KILL), [h, x] = r.useState(1), [b, g] = r.useState(""), [v, j] = r.useState(""), C = r.useCallback(e => {
+  })), [p, h] = r.useState(c.x0.KILL), [f, x] = r.useState(1), [b, g] = r.useState(""), [v, j] = r.useState(""), y = r.useCallback(e => {
     let a = !t[e];
     true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
       emotion: false,
@@ -107,7 +107,7 @@ function p() {
           children: [(0, a.jsx)(l.y6, {
             label: "Event Type",
             value: p,
-            onChange: e => f(e),
+            onChange: e => h(e),
             options: [{
               label: "Kill",
               value: c.x0.KILL
@@ -141,7 +141,7 @@ function p() {
             }]
           }), (0, a.jsx)(l.y6, {
             label: "Importance",
-            value: h,
+            value: f,
             onChange: x,
             options: [{
               label: "Low",
@@ -170,7 +170,7 @@ function p() {
             d.XK({
               type: c.Bs.GAME_EVENT,
               eventType: p,
-              importance: h,
+              importance: f,
               title: b,
               description: v
             })
@@ -209,22 +209,22 @@ function p() {
           label: "Wake Word Debug",
           description: "Log wake word detection events to console",
           checked: t.wakeWord,
-          onChange: () => C("wakeWord")
+          onChange: () => y("wakeWord")
         }), (0, a.jsx)(s.rsf, {
           label: "Emotion Debug",
           description: "Log emotion classification events to console",
           checked: t.emotion,
-          onChange: () => C("emotion")
+          onChange: () => y("emotion")
         }), (0, a.jsx)(s.rsf, {
           label: "Yell Debug",
           description: "Show yell classification events to console",
           checked: t.yell,
-          onChange: () => C("yell")
+          onChange: () => y("yell")
         }), (0, a.jsx)(s.rsf, {
           label: "Whisper Debug",
           description: "Log whisper transcription events to console",
           checked: t.whisper,
-          onChange: () => C("whisper")
+          onChange: () => y("whisper")
         })]
       })]
     })

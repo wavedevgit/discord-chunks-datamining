@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 738672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => d
@@ -20,36 +20,36 @@ function d(e) {
     renderComponent: p,
     nudgeAlignIntoViewport: f = false,
     skipForceHide: h = false
-  } = e, m = r.useContext(c.h9), [g, b] = r.useState(""), [C, y] = r.useState(false), v = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), x = r.useRef(null), O = r.useRef(0);
-  r.useEffect(() => {
+  } = e, g = i.useContext(c.h9), [m, b] = i.useState(""), [y, v] = i.useState(false), O = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), j = i.useRef(null), x = i.useRef(0);
+  i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
-  }), r.useEffect(() => {
+  }), i.useEffect(() => {
     if (!h) {
       var e, t;
-      b(String(O.current)), y(true !== v && v < (null != (t = null == (e = x.current) ? true : e.clientHeight) ? t : 300) + 24), O.current += 1
+      b(String(x.current)), v(true !== O && O < (null != (t = null == (e = j.current) ? true : e.clientHeight) ? t : 300) + 24), x.current += 1
     }
-  }, [v, x, h]);
+  }, [O, j, h]);
   let {
-    preventIdle: E,
-    allowIdle: j
+    preventIdle: C,
+    allowIdle: E
   } = (0, u.Y)("popup");
-  return (null == t ? true : t.current) == null ? null : (0, i.jsx)(o.ZP, {
-    children: (0, i.jsx)(a.jRF, {
+  return (null == t ? true : t.current) == null ? null : (0, r.jsx)(o.ZP, {
+    children: (0, r.jsx)(a.jRF, {
       targetRef: t,
       position: "top",
       align: "center",
       spacing: 0,
-      positionKey: g,
+      positionKey: m,
       nudgeAlignIntoViewport: f,
-      children: () => (0, i.jsx)("div", {
-        ref: x,
-        onMouseOver: E,
-        onFocus: E,
-        onBlur: j,
-        onMouseLeave: j,
+      children: () => (0, r.jsx)("div", {
+        ref: j,
+        onMouseOver: C,
+        onFocus: C,
+        onBlur: E,
+        onMouseLeave: E,
         children: p({
-          hidden: C || m || n,
+          hidden: y || g || n,
           onDismiss: d
         })
       })

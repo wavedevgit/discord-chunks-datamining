@@ -88,9 +88,6 @@ let S = new Chunk710845.Z("MarkdownToSlate"),
     attachmentLink: {
       type: "skip"
     },
-    shopLink: {
-      type: "skip"
-    },
     newline: {
       type: "verbatim"
     },

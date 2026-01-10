@@ -22,14 +22,14 @@ function f(e) {
   })(e)
 }
 
-function l(e, t) {
+function h(e, t) {
   (null == t || t > e.length) && (t = e.length);
   for (var r = 0, n = Array(t); r < t; r++) n[r] = e[r];
   return n
 }
 
-function h(e, t) {
-  return (h = Object.setPrototypeOf || function(e, t) {
+function l(e, t) {
+  return (l = Object.setPrototypeOf || function(e, t) {
     return e.__proto__ = t, e
   })(e, t)
 }
@@ -62,9 +62,9 @@ function b(e) {
     m = e.registerHandler,
     D = e.containerDisplayName,
     k = e.getType,
-    j = e.collect,
-    w = e.options.arePropsEqual,
-    O = true === w ? i.w : w,
+    w = e.collect,
+    O = e.options.arePropsEqual,
+    j = true === O ? i.w : O,
     C = t.displayName || t.name || "Component",
     I = function(e) {
       if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function");
@@ -74,8 +74,8 @@ function b(e) {
           writable: true,
           configurable: true
         }
-      }), e && h(I, e);
-      var p, D, w = (p = function() {
+      }), e && l(I, e);
+      var p, D, O = (p = function() {
         if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
         if ("function" == typeof Proxy) returntrue;
         try {
@@ -96,7 +96,7 @@ function b(e) {
       function I(e) {
         var t;
         if (!(this instanceof I)) throw TypeError("Cannot call a class as a function");
-        return g(v(t = w.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", true), g(v(t), "manager", true), g(v(t), "handlerMonitor", true), g(v(t), "handlerConnector", true), g(v(t), "handler", true), g(v(t), "disposable", true), g(v(t), "rafId", true), g(v(t), "currentType", true), g(v(t), "handleChange", function() {
+        return g(v(t = O.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", true), g(v(t), "manager", true), g(v(t), "handlerMonitor", true), g(v(t), "handlerConnector", true), g(v(t), "handler", true), g(v(t), "disposable", true), g(v(t), "rafId", true), g(v(t), "currentType", true), g(v(t), "handleChange", function() {
           var e = t.getCurrentState();
           (0, i.w)(e, t.state) || t.setState(e)
         }), t.disposable = new c.M$, t.receiveProps(e), t.dispose(), t
@@ -114,7 +114,7 @@ function b(e) {
         }, {
           key: "shouldComponentUpdate",
           value: function(e, t) {
-            return !O(e, this.props) || !(0, i.w)(t, this.state)
+            return !j(e, this.props) || !(0, i.w)(t, this.state)
           }
         }, {
           key: "componentDidMount",
@@ -124,7 +124,7 @@ function b(e) {
         }, {
           key: "componentDidUpdate",
           value: function(e) {
-            O(this.props, e) || (this.receiveProps(this.props), this.handleChange())
+            j(this.props, e) || (this.receiveProps(this.props), this.handleChange())
           }
         }, {
           key: "componentWillUnmount",
@@ -164,10 +164,10 @@ function b(e) {
                   }
                 }(t, 2) || function(e, t) {
                   if (e) {
-                    if ("string" == typeof e) return l(e, 2);
+                    if ("string" == typeof e) return h(e, 2);
                     var r = Object.prototype.toString.call(e).slice(8, false);
                     if ("Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r) return Array.from(e);
-                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return l(e, t)
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return h(e, t)
                   }
                 }(t, 2) || function() {
                   throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
@@ -189,7 +189,7 @@ function b(e) {
         }, {
           key: "getCurrentState",
           value: function() {
-            return this.handlerConnector ? j(this.handlerConnector.hooks, this.handlerMonitor, this.props) : {}
+            return this.handlerConnector ? w(this.handlerConnector.hooks, this.handlerMonitor, this.props) : {}
           }
         }, {
           key: "render",

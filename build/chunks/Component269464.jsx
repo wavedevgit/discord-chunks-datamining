@@ -34,7 +34,7 @@ function p(e) {
       analyticsObject: d.qAy.UPLOAD_IMAGE,
       perks: (0, u.XO)()
     })
-  }, [j, t]), C = (0, r.jsx)(s.Z, {
+  }, [j, t]), y = (0, r.jsx)(s.Z, {
     image: t.banner,
     makeURL: e => null != e ? o.ZP.getGuildBannerURL({
       id: t.id,
@@ -61,11 +61,11 @@ function p(e) {
     }),
     enabled: x
   });
-  return p ? C : (0, r.jsx)(l.P3F, {
+  return p ? y : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
     className: b.upsell,
     onClick: O,
-    children: C
+    children: y
   })
 }

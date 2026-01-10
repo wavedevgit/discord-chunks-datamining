@@ -63,16 +63,19 @@ let S = (e, t) => null != t && t.implemented && t.flowType === e,
   I = {
     [Chunk733579.G.ORB_CHECKOUT]: {
       allowGiftCustomization: false,
-      disablePaymentAuthSteps: true
+      disablePaymentAuthSteps: true,
+      predicateStepType: "unified"
     },
     [Chunk733579.G.COLLECTIBLES_CHECKOUT]: {
-      allowGiftCustomization: true
+      allowGiftCustomization: true,
+      predicateStepType: "one_time_payment"
+    },
+    [Chunk733579.G.SLAYER_STOREFRONT_CHECKOUT]: {
+      allowGiftCustomization: true,
+      predicateStepType: "one_time_payment"
     },
     [Chunk733579.G.PREMIUM_CHECKOUT]: {
       allowGiftCustomization: false
-    },
-    [Chunk733579.G.SLAYER_STOREFRONT_CHECKOUT]: {
-      allowGiftCustomization: true
     }
   };
 class T {
@@ -90,7 +93,10 @@ class T {
     })
   }
   getPredicateStepConfig() {
-    return this.checkoutFlow === u.G.COLLECTIBLES_CHECKOUT ? l.WA : this.checkoutFlow === u.G.ORB_CHECKOUT ? {
+    let {
+      predicateStepType: e
+    } = this.internalCheckoutFlowControls;
+    return "one_time_payment" === e ? l.WA : "unified" === e ? {
       key: null,
       renderStep: e => (0, r.jsx)(m.I, {
         paymentModalStepProps: e,
@@ -188,7 +194,7 @@ class T {
       analyticsLocations: _
     } = e, m = null != d ? d : (0, i.Z)(), {
       modalKey: h
-    } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), b = false;
+    } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), b = false, O = null != o ? o : true;
     return (0, a.ZDy)(async () => {
       let {
         WrappedUnifiedPaymentModal: e
@@ -212,7 +218,7 @@ class T {
         analyticsSourceLocation: p,
         renderModalProps: t,
         giftContextProps: s,
-        flowSpecificOptions: o
+        flowSpecificOptions: O
       })
     }, v(y({}, t), {
       onCloseRequest() {

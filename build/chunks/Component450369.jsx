@@ -1,8 +1,8 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 450369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => k,
-  Z: () => H
+  Q: () => L,
+  Z: () => B
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk354459 = require("./354459.js"),
   Chunk688267 = require("./688267.js");
 
-function L(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function L(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,48 +69,48 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 16 / 9,
+let L = 16 / 9,
   U = e => {
     let {
       stageParticipant: t,
       rtcParticipant: n,
       channel: l,
       guildId: a,
-      user: s,
-      width: o,
-      isModerator: d,
-      onContextMenu: u,
+      user: o,
+      width: s,
+      isModerator: u,
+      onContextMenu: d,
       popoutType: p
-    } = e, h = i.useRef(null), {
-      reducedMotion: f
+    } = e, f = i.useRef(null), {
+      reducedMotion: h
     } = i.useContext(c.Sfi), {
       blocked: g,
       ignored: m,
       id: b
     } = t;
-    return (0, r.jsx)(I.Z, {
-      targetElementRef: h,
-      user: s,
+    return (0, r.jsx)(E.Z, {
+      targetElementRef: f,
+      user: o,
       guildId: a,
       channelId: l.id,
       clickTrap: true,
-      children: e => (0, r.jsx)(c.P3F, M(L({
-        innerRef: h,
-        onContextMenu: e => u(n, e)
+      children: e => (0, r.jsx)(c.P3F, k(M({
+        innerRef: f,
+        onContextMenu: e => d(n, e)
       }, e), {
-        children: (0, r.jsx)(N.Z, {
+        children: (0, r.jsx)(T.Z, {
           participant: n,
-          aspectRatio: k,
+          aspectRatio: L,
           blocked: g,
           ignored: m,
           channel: l,
           className: D.tile,
           inCall: true,
           popoutType: p,
-          pulseSpeakingIndicator: !f.enabled,
-          width: o,
-          onContextMenu: u,
-          children: d && (0, r.jsx)(R.Z, {})
+          pulseSpeakingIndicator: !h.enabled,
+          width: s,
+          onContextMenu: d,
+          children: u && (0, r.jsx)(A.Z, {})
         }, b)
       }))
     })
@@ -121,120 +121,120 @@ let k = 16 / 9,
       rtcParticipant: n,
       channel: l,
       width: a,
-      isModerator: s,
-      onContextMenu: u,
-      popoutType: h
+      isModerator: o,
+      onContextMenu: d,
+      popoutType: f
     } = e, {
-      reducedMotion: f
+      reducedMotion: h
     } = i.useContext(c.Sfi), {
       id: g,
       blocked: b,
       ignored: j
-    } = t, C = (0, o.Wu)([_.Z], () => _.Z.getAllActiveStreams(), []), {
-      selectedParticipant: I,
-      largeStream: S
-    } = (0, o.cj)([m.Z], () => ({
+    } = t, C = (0, s.Wu)([S.Z], () => S.Z.getAllActiveStreams(), []), {
+      selectedParticipant: E,
+      largeStream: _
+    } = (0, s.cj)([m.Z], () => ({
       selectedParticipant: null != l ? m.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && m.Z.getStageStreamSize(l.id)
-    })), T = i.useCallback((e, t) => {
-      if (e.type === A.fO.STREAM && 0 === C.filter(t => (0, O.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, x.p9)(l, P.Z, E.Z, Z.Z, y.default)[0]) return;
-        (0, p.rn)((0, O.my)(e.id), {
+    })), N = i.useCallback((e, t) => {
+      if (e.type === R.fO.STREAM && 0 === C.filter(t => (0, v.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
+        if (!(0, O.p9)(l, Z.Z, I.Z, P.Z, y.default)[0]) return;
+        (0, p.rn)((0, v.my)(e.id), {
           forceMultiple: t.shiftKey
         })
-      }(null == I ? true : I.id) === e.id ? S ? (d.Z.selectParticipant(l.id, null), d.Z.updateStageStreamSize(l.id, false)) : d.Z.updateStageStreamSize(l.id, true) : (d.Z.updateStageStreamSize(l.id, false), d.Z.selectParticipant(l.id, e.id))
-    }, [C, l, I, S]);
-    return (0, r.jsx)(N.Z, {
+      }(null == E ? true : E.id) === e.id ? _ ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, false)) : u.Z.updateStageStreamSize(l.id, true) : (u.Z.updateStageStreamSize(l.id, false), u.Z.selectParticipant(l.id, e.id))
+    }, [C, l, E, _]);
+    return (0, r.jsx)(T.Z, {
       participant: n,
-      aspectRatio: k,
-      fit: n.type === A.fO.USER ? v.L.COVER : true,
+      aspectRatio: L,
+      fit: n.type === R.fO.USER ? x.L.COVER : true,
       blocked: b,
       ignored: j,
       channel: l,
       className: D.tile,
       inCall: true,
-      popoutType: h,
-      onClick: T,
-      onContextMenu: u,
-      pulseSpeakingIndicator: !f.enabled,
+      popoutType: f,
+      onClick: N,
+      onContextMenu: d,
+      pulseSpeakingIndicator: !h.enabled,
       width: a,
-      children: s && n.type === A.fO.USER && (0, r.jsx)(R.Z, {})
+      children: o && n.type === R.fO.USER && (0, r.jsx)(A.Z, {})
     }, g)
   },
-  H = Chunk473749.memo(function(e) {
+  B = Chunk473749.memo(function(e) {
     var t;
     let {
       participant: i,
       channel: l,
       width: c,
-      popoutType: d
+      popoutType: u
     } = e, {
       newestAnalyticsLocation: p
-    } = (0, f.ZP)(h.Z.STAGE_TILE), y = (0, j.bp)(), O = l.getGuildId(), x = S.default.getId();
-    a()(null != O, "Channel cannot be guildless");
+    } = (0, h.ZP)(f.Z.STAGE_TILE), y = (0, j.bp)(), v = l.getGuildId(), O = _.default.getId();
+    a()(null != v, "Channel cannot be guildless");
     let {
-      user: v
-    } = i, I = (0, o.e7)([m.Z], () => m.Z.getParticipant(l.id, i.id), [l.id, i.id]), _ = (0, o.e7)([T.ZP], () => T.ZP.isModerator(v.id, l.id), [l.id, v.id]);
-    if (null == I || I.type === A.fO.ACTIVITY) return null;
-    let E = e => {
+      user: x
+    } = i, E = (0, s.e7)([m.Z], () => m.Z.getParticipant(l.id, i.id), [l.id, i.id]), S = (0, s.e7)([N.ZP], () => N.ZP.isModerator(x.id, l.id), [l.id, x.id]);
+    if (null == E || E.type === R.fO.ACTIVITY) return null;
+    let I = e => {
         (0, g.h)({
-          type: s.ImpressionTypes.MENU,
-          name: s.ImpressionNames.CALL_TILE_CONTEXT_MENU,
+          type: o.ImpressionTypes.MENU,
+          name: o.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: v.id === x,
+            is_tile_owner: x.id === O,
             tile_type: e
           }
         })
       },
-      Z = (e, t, i, a) => {
+      P = (e, t, i, a) => {
         switch (e.type) {
-          case A.fO.HIDDEN_STREAM:
-          case A.fO.STREAM:
-            E(A.TH.STREAM), (0, u.jW)(t, async () => {
+          case R.fO.HIDDEN_STREAM:
+          case R.fO.STREAM:
+            I(R.TH.STREAM), (0, d.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
-              return n => (0, r.jsx)(t, M(L({}, n), {
+              return n => (0, r.jsx)(t, k(M({}, n), {
                 stream: e.stream,
                 appContext: y,
                 exitFullscreen: () => {},
                 onInteraction: (0, b.u)("StreamContextMenu", p, {
                   entrypoint: a,
-                  targetUserId: v.id,
-                  tileType: A.TH.STREAM
+                  targetUserId: x.id,
+                  tileType: R.TH.STREAM
                 })
               }))
             }, {
               context: y
             });
             return;
-          case A.fO.USER:
+          case R.fO.USER:
           default:
-            if (E(A.TH.USER), i) return (0, C.D)(t, v, l, {
+            if (I(R.TH.USER), i) return (0, C.D)(t, x, l, {
               context: y
             }, (e, t) => (0, b.o)({
               menuName: e,
               menuItemProps: t,
-              entrypoint: A.A5.THREE_DOT,
-              targetUserId: v.id,
+              entrypoint: R.A5.THREE_DOT,
+              targetUserId: x.id,
               location: p,
-              tileType: A.TH.USER
+              tileType: R.TH.USER
             }));
-            (0, u.jW)(t, async () => {
+            (0, d.jW)(t, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("9393")]).then(n.bind(n, 757387));
-              return t => (0, r.jsx)(e, M(L({}, t), {
-                user: v,
-                guildId: O,
+              } = await Promise.all([n.e("79695"), n.e("4040"), n.e("92524"), n.e("7717"), n.e("9393")]).then(n.bind(n, 757387));
+              return t => (0, r.jsx)(e, k(M({}, t), {
+                user: x,
+                guildId: v,
                 channel: l,
                 showMediaItems: true,
                 showStageChannelItems: true,
                 showChatItems: false,
                 onInteraction: (0, b.u)("GuildChannelUserContextMenu", p, {
-                  targetUserId: v.id,
-                  tileType: A.TH.USER
+                  targetUserId: x.id,
+                  tileType: R.TH.USER
                 })
               }))
             }, {
@@ -242,25 +242,25 @@ let k = 16 / 9,
             })
         }
       };
-    return I.type !== A.fO.USER || (null == (t = I.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
+    return E.type !== R.fO.USER || (null == (t = E.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
       stageParticipant: i,
-      rtcParticipant: I,
+      rtcParticipant: E,
       channel: l,
-      guildId: O,
-      user: v,
+      guildId: v,
+      user: x,
       width: c,
-      isModerator: _,
-      onContextMenu: Z,
-      popoutType: d
+      isModerator: S,
+      onContextMenu: P,
+      popoutType: u
     }) : (0, r.jsx)(U, {
       stageParticipant: i,
-      rtcParticipant: I,
+      rtcParticipant: E,
       channel: l,
-      guildId: O,
-      user: v,
+      guildId: v,
+      user: x,
       width: c,
-      isModerator: _,
-      onContextMenu: Z,
-      popoutType: d
+      isModerator: S,
+      onContextMenu: P,
+      popoutType: u
     })
   })

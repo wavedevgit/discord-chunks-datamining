@@ -37,7 +37,7 @@ function h(t) {
     onClose: h,
     trackUserProfileEditAction: w
   } = t, v = r.useCallback(() => {
-    (0, u.y8)(n.type), w(function(t) {
+    (0, u.y8)(n), w(function(t) {
       for (var e = 1; e < arguments.length; e++) {
         var n = null != arguments[e] ? arguments[e] : {},
           i = Object.keys(n);
@@ -57,8 +57,8 @@ function h(t) {
     }({
       action: "WIDGET_REMOVED"
     }, n.getProfileEditAnalyticsOptions())), h(), (0, b.L$)(f.qb.WIDGET_REMOVED)
-  }, [n, h, w]), y = (0, l.e7)([s.default], () => s.default.getUser(d));
-  return null == y ? null : (0, i.jsxs)(a.Modal, {
+  }, [n, h, w]), j = (0, l.e7)([s.default], () => s.default.getUser(d));
+  return null == j ? null : (0, i.jsxs)(a.Modal, {
     transitionState: e,
     onClose: h,
     title: p.intl.string(p.t.Mm07Yc),
@@ -78,7 +78,7 @@ function h(t) {
       className: g.widgetPreview,
       children: (0, i.jsx)(x, {
         widget: n,
-        user: y
+        user: j
       })
     }), (0, i.jsx)("div", {
       className: g.hintText,

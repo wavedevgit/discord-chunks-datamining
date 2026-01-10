@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 436355, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -18,12 +18,12 @@ function p(e) {
     channel: t,
     user: p,
     guild: f
-  } = e, h = (0, r.e7)([s.Z], () => null != p && null != f && (0, a.nX)(p, f, [s.Z])), m = (0, r.e7)([o.ZP], () => null == p || null == o.ZP.getMember(t.guild_id, p.id));
+  } = e, h = (0, i.e7)([s.Z], () => null != p && null != f && (0, a.nX)(p, f, [s.Z])), g = (0, i.e7)([o.ZP], () => null == p || null == o.ZP.getMember(t.guild_id, p.id));
   if (!h) return null;
-  let g = m ? d.intl.string(u.default.Ux67nW) : d.intl.string(u.default["snp/lJ"]),
+  let m = g ? d.intl.string(u.default.Ux67nW) : d.intl.string(u.default["snp/lJ"]),
     b = "kick-user-".concat(null == p ? true : p.id);
-  return (0, i.jsx)(c.Z, {
-    text: g,
+  return (0, r.jsx)(c.Z, {
+    text: m,
     icon: l.I9k,
     onClick: () => {
       null != p && (0, l.ZDy)(async () => {
@@ -31,21 +31,21 @@ function p(e) {
           default: e
         } = await n.e("39298").then(n.bind(n, 495494));
         return n => {
-          var r, l;
-          return (0, i.jsx)(e, (r = function(e) {
+          var i, l;
+          return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
-                i = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), i.forEach(function(t) {
-                var i;
-                i = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: i,
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = i
+                }) : e[t] = r
               })
             }
             return e
@@ -53,19 +53,19 @@ function p(e) {
             guildId: t.guild_id,
             user: p,
             modReportId: t.id
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var i = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, i)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
             return n
           })(Object(l)).forEach(function(e) {
-            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-          }), r))
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+          }), i))
         }
       })
     },
-    disabled: m
+    disabled: g
   }, b)
 }

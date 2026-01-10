@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 98493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => d,
@@ -17,15 +17,15 @@ function d(e) {
   let {
     guildId: t,
     guildJoinRequests: n
-  } = e, i = r.useRef(false), [d, f] = r.useState(null), h = r.useRef(null), p = r.useRef(false);
+  } = e, i = r.useRef(false), [d, p] = r.useState(null), f = r.useRef(null), h = r.useRef(false);
   return {
     fetchNextPage: r.useCallback(async (e, r) => {
       if (i.current) return;
       let g = "".concat(e, "-").concat(r),
-        b = false;
-      if (g !== h.current && (h.current = g, p.current = false, b = true), p.current) return;
-      null != d && f(null);
-      let m = function(e, t, n, r) {
+        m = false;
+      if (g !== f.current && (f.current = g, h.current = false, m = true), h.current) return;
+      null != d && p(null);
+      let b = function(e, t, n, r) {
         let i = n === c.wB.SUBMITTED;
         if (t === c.Nw.TIMESTAMP_DESC)
           if (r) return {
@@ -45,7 +45,7 @@ function d(e) {
             after: i ? t.joinRequestId : t.actionedAt
           }
         }
-      }(n, e, r, b);
+      }(n, e, r, m);
       try {
         i.current = true;
         let e = await s.Z.fetchGuildJoinRequests(function(e) {
@@ -70,15 +70,15 @@ function d(e) {
           status: r,
           limit: u,
           force: true
-        }, m));
+        }, b));
         if (null != e) {
           let {
             guild_join_requests: t
           } = e.body;
-          t.length < u && (p.current = true)
+          t.length < u && (h.current = true)
         }
       } catch (e) {
-        f(new a.Hx(e).getAnyErrorMessage())
+        p(new a.Hx(e).getAnyErrorMessage())
       } finally {
         i.current = false
       }

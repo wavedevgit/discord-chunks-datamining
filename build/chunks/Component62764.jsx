@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => H
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -43,18 +43,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk860302 = require("./860302.js"),
   Chunk414103 = require("./414103.js");
 
-function H(e) {
+function F(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, c] = r.useState(false), d = () => {
-    c(true), E.Z.resolveFlag(t.id).then(() => {
+  } = e, l = t.isArchivedThread(), a = (0, E.P0)(t), [o, c] = i.useState(false), d = () => {
+    c(true), C.Z.resolveFlag(t.id).then(() => {
       c(false)
     })
   };
-  return a ? (0, i.jsx)(u.Button, {
+  return a ? (0, r.jsx)(u.Button, {
     size: "sm",
     variant: "secondary",
-    text: l ? L.intl.string(k.default["2Y4vkk"]) : L.intl.string(k.default.YIbR4r),
+    text: l ? k.intl.string(L.default["2Y4vkk"]) : k.intl.string(L.default.YIbR4r),
     onClick: () => {
       true === s.K.get(_.F) ? d() : (0, u.ZDy)(async () => {
         let {
@@ -63,11 +63,11 @@ function H(e) {
         return t => {
           let {
             transitionState: n,
-            onClose: r
+            onClose: i
           } = t;
-          return (0, i.jsx)(e, {
+          return (0, r.jsx)(e, {
             transitionState: n,
-            onClose: r,
+            onClose: i,
             handleResolveFlag: d
           })
         }
@@ -79,33 +79,33 @@ function H(e) {
   }) : null
 }
 
-function B(e) {
+function H(e) {
   let {
     postId: t,
     isFirstMessage: n,
     isLastItem: l = false,
     parentChannelId: s
   } = e, {
-    ref: E,
-    width: j
-  } = (0, f.ZP)(), [_, k] = r.useState(3), [B, G] = r.useState(!n), [W, z] = (0, h.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
-    firstMessage: K
-  } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+    ref: C,
+    width: E
+  } = (0, f.ZP)(), [_, L] = i.useState(3), [H, V] = i.useState(!n), [z, W] = (0, h.Z)(false, 2e3), K = (0, o.e7)([N.Z], () => N.Z.getChannel(t), [t]), {
+    firstMessage: Y
+  } = (0, R.cl)(K), q = (0, o.e7)([P.Z], () => P.Z.hasJoined(t)), {
     disableReactionUpdates: X,
-    disableReactionCreates: J,
-    isLurking: Q,
+    disableReactionCreates: Q,
+    isLurking: J,
     isGuest: $,
     isPendingMember: ee
-  } = (0, C.Z)(q), et = (0, S.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
+  } = (0, y.Z)(K), et = (0, S.nw)(K), en = (0, o.e7)([N.Z], () => N.Z.getChannel(s)), er = (0, w.Bs)(en), ei = (0, o.e7)([g.Z], () => g.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
         n = t.boundingClientRect;
-      G((e.bottom - e.top) / (n.bottom - n.top) < 1)
+      V((e.bottom - e.top) / (n.bottom - n.top) < 1)
     }
   }, [n]);
-  r.useLayoutEffect(() => {
-    let e = E.current;
+  i.useLayoutEffect(() => {
+    let e = C.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(el, {
       threshold: 1
@@ -114,46 +114,46 @@ function B(e) {
       t.disconnect()
     }
   });
-  let [ea, eo] = r.useState(true);
-  if (r.useEffect(() => {
-      null != j && (k(Math.floor((j - 280) / 58)), eo(false))
-    }, [j]), null == q || null == K) return null;
-  let es = K.reactions.length > 0,
+  let [ea, eo] = i.useState(true);
+  if (i.useEffect(() => {
+      null != E && (L(Math.floor((E - 280) / 58)), eo(false))
+    }, [E]), null == K || null == Y) return null;
+  let es = Y.reactions.length > 0,
     ec = () => {
-      (0, R.B)({
-        postId: q.id,
+      (0, D.B)({
+        postId: K.id,
         location: {
-          section: D.jXE.CHANNEL_HEADER
+          section: M.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, N.EO)(q, en), () => z(true))
+      }), (0, A.JG)((0, T.EO)(K, en), () => W(true))
     },
-    eu = Y ? u.dz2 : u.Dkj;
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)("div", {
+    eu = q ? u.dz2 : u.Dkj;
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
       className: a()(U.container, {
-        [U.header]: B
+        [U.header]: H
       }),
-      ref: E,
-      children: [et ? (0, i.jsx)("div", {
+      ref: C,
+      children: [et ? (0, r.jsx)("div", {
         className: U.reportedMessageActions,
-        children: (0, i.jsx)(P.Z, {
-          message: K,
-          channel: q
+        children: (0, r.jsx)(I.Z, {
+          message: Y,
+          channel: K
         })
-      }) : (0, i.jsxs)("div", {
+      }) : (0, r.jsxs)("div", {
         className: a()(U.reactButtons, {
           [U.loading]: ea
         }),
-        children: [!es && !J && null != ei && (0, i.jsx)("div", {
-          className: V.reactions,
-          children: (0, i.jsx)(O.le, {
-            message: K,
+        children: [!es && !Q && null != er && (0, r.jsx)("div", {
+          className: G.reactions,
+          children: (0, r.jsx)(x.le, {
+            message: Y,
             readOnly: false,
             useChatFontScaling: false,
-            isLurking: Q,
+            isLurking: J,
             isGuest: $,
             isPendingMember: ee,
-            emoji: ei,
+            emoji: er,
             type: b.O.NORMAL,
             hideCount: true,
             count: 0,
@@ -162,12 +162,12 @@ function B(e) {
             me_burst: false,
             emojiSize: "reaction"
           })
-        }), (0, i.jsx)(x.Z, {
-          message: K,
-          channel: q,
+        }), (0, r.jsx)(j.Z, {
+          message: Y,
+          channel: K,
           disableReactionCreates: true,
           disableReactionUpdates: X,
-          isLurking: Q,
+          isLurking: J,
           isGuest: $,
           isPendingMember: ee,
           maxReactions: _,
@@ -175,68 +175,68 @@ function B(e) {
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
-        }), !J && (0, i.jsx)(y.X, {
-          message: K,
-          channel: q,
+        }), !Q && (0, r.jsx)(v.X, {
+          message: Y,
+          channel: K,
           useChatFontScaling: false,
-          className: a()(F.secondary, U.addReactButton, {
+          className: a()(B.secondary, U.addReactButton, {
             [U.hasNoReactions]: !es
           }),
           isForumToolbar: true,
-          children: !es && L.intl.string(L.t.xpOyTO)
+          children: !es && k.intl.string(k.t.xpOyTO)
         })]
-      }), (0, i.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: U.buttons,
-        children: [et ? (0, i.jsx)(H, {
-          channel: q
-        }) : !Q && (0, i.jsx)(c.u, {
-          text: L.intl.string(L.t.F7oeDv),
-          children: (0, i.jsx)(u.Button, {
+        children: [et ? (0, r.jsx)(F, {
+          channel: K
+        }) : !J && (0, r.jsx)(c.u, {
+          text: k.intl.string(k.t.F7oeDv),
+          children: (0, r.jsx)(u.Button, {
             icon: eu,
             size: "sm",
             variant: "secondary",
-            text: Y ? L.intl.string(L.t["7OkUzs"]) : L.intl.string(L.t["3aOv+h"]),
+            text: q ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+h"]),
             onClick: () => {
-              Y ? Z.Z.leaveThread(q, "Forum Toolbar") : Z.Z.joinThread(q, "Forum Toolbar")
+              q ? Z.Z.leaveThread(K, "Forum Toolbar") : Z.Z.joinThread(K, "Forum Toolbar")
             }
           })
-        }), (0, i.jsx)(c.u, {
-          text: L.intl.string(L.t.WqhZss),
-          children: W ? (0, i.jsx)(u.Button, {
+        }), (0, r.jsx)(c.u, {
+          text: k.intl.string(k.t.WqhZss),
+          children: z ? (0, r.jsx)(u.Button, {
             icon: u.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ec,
-            text: L.intl.string(L.t.t5VZ88)
-          }) : (0, i.jsx)(u.hU, {
+            text: k.intl.string(k.t.t5VZ88)
+          }) : (0, r.jsx)(u.hU, {
             icon: u.xPt,
             size: "sm",
             variant: "secondary",
             onClick: ec,
-            "aria-label": L.intl.string(L.t.WqhZss)
+            "aria-label": k.intl.string(k.t.WqhZss)
           })
-        }), !n && (0, i.jsx)(c.u, {
-          text: L.intl.string(L.t.nFP4oa),
-          children: (0, i.jsx)(u.hU, {
+        }), !n && (0, r.jsx)(c.u, {
+          text: k.intl.string(k.t.nFP4oa),
+          children: (0, r.jsx)(u.hU, {
             icon: u.Za2,
             size: "sm",
             variant: "secondary",
             onClick: () => {
               d.Z.jumpToMessage({
-                channelId: q.id,
-                messageId: q.id,
+                channelId: K.id,
+                messageId: K.id,
                 flash: true,
                 jumpType: p.SR.INSTANT
               })
             },
-            "aria-label": L.intl.string(L.t.nFP4oa)
+            "aria-label": k.intl.string(k.t.nFP4oa)
           })
         })]
       })]
-    }), er && (0, i.jsx)(g.Z, {
+    }), ei && (0, r.jsx)(m.Z, {
       threadId: t
-    }), (0, i.jsx)(v.Z, {
-      channel: q,
+    }), (0, r.jsx)(O.Z, {
+      channel: K,
       isLastItem: l
     })]
   })

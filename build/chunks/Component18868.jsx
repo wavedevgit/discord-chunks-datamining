@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => f
+  L: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,20 +45,20 @@ let m = () => {
   p = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  f = e => {
+  h = e => {
     let {
       className: t,
       onDrop: n,
       children: i
-    } = e, [f, h] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
-      p(e), h(true), (0, s.Mr3)(c.A)
+    } = e, [h, f] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
+      p(e), f(true), (0, s.Mr3)(c.A)
     }, []), g = r.useCallback(e => {
       p(e);
       let t = x.current,
         n = e.relatedTarget;
-      null != n && (null == t || t.contains(n)) || h(false)
+      null != n && (null == t || t.contains(n)) || f(false)
     }, []), v = r.useCallback(async e => {
-      p(e), h(false);
+      p(e), f(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
       let a = await Promise.all(Array.from(t.items).map(e => {
@@ -74,7 +74,7 @@ let m = () => {
       onDragOver: p,
       onDragLeave: g,
       onDrop: v,
-      children: [i, f && (0, a.jsx)("div", {
+      children: [i, h && (0, a.jsx)("div", {
         className: u.uploadModal,
         children: (0, a.jsxs)("div", {
           className: u.inner,

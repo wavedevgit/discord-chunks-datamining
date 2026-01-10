@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 53425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -23,32 +23,32 @@ let g = Chunk473749.memo(function(e) {
     sortedThreadIds: l,
     withGuildIcon: g
   } = e, {
-    density: b
-  } = (0, s.TCT)(), m = (0, o.Wu)([c.Z], () => l.map(e => c.Z.getChannel(e)).filter(d.lm), [l]), y = (0, o.e7)([u.ZP], () => {
-    let e = m[m.length - 1];
+    density: m
+  } = (0, s.TCT)(), b = (0, o.Wu)([c.Z], () => l.map(e => c.Z.getChannel(e)).filter(d.lm), [l]), y = (0, o.e7)([u.ZP], () => {
+    let e = b[b.length - 1];
     if (null == e) return 0;
     let t = u.ZP.getVoiceStates(e.guild_id)[e.id];
     return null == t || 0 === t.length ? 0 : i !== e.id ? 40 : 32 * t.length + 8
   });
   return (0, r.jsx)("li", {
-    className: p.container,
+    className: h.container,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": h.intl.formatToPlainString(h.t.EiyIi6, {
+      "aria-label": f.intl.formatToPlainString(f.t.EiyIi6, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(p.spineBorder, {
-          [p.spineBorderWithGuildIcon]: g
+        className: a()(h.spineBorder, {
+          [h.spineBorderWithGuildIcon]: g
         }),
         style: {
-          bottom: ("cozy" === b ? 28 : 24) + y
+          bottom: ("cozy" === m ? 28 : 24) + y
         }
-      }), m.map((e, t) => (0, r.jsx)(f.Z, {
+      }), b.map((e, t) => (0, r.jsx)(p.Z, {
         thread: e,
         isSelectedChannel: (null == n ? true : n.id) === e.id,
         isSelectedVoice: i === e.id,
-        isLast: t === m.length - 1,
+        isLast: t === b.length - 1,
         withGuildIcon: g
       }, e.id))]
     })

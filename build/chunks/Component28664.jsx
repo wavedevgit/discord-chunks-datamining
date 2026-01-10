@@ -73,60 +73,73 @@ function g(e) {
     positionKey: C,
     ariaHidden: A = false
   } = e, N = m(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]);
-  let {
-    tooltipId: P,
-    isVisible: R,
-    targetElementRef: w,
-    trigger: D
-  } = (0, d.Q)(_({
-    children: t,
-    targetElementRef: S,
-    asContainer: g,
-    containerTag: E,
-    ariaHidden: A
-  }, N)), [x, L] = i.useState(false), {
-    defaultLayerContext: j
-  } = (0, o.ZFG)(), M = i.useMemo(() => null != h ? h : null == n || "" === n ? null : null != p && "" !== p ? (0, r.jsxs)("div", {
-    className: f.tooltipWithShortcut,
-    children: [(0, r.jsx)(s.Text, {
-      variant: "text-sm/medium",
-      children: n
-    }), (0, r.jsx)(s.M2$, {
-      shortcut: p
-    })]
-  }) : n, [n, p, h]), k = null != M && ("string" != typeof M || "" !== M), U = R || x;
-  i.useEffect(() => {
-    R && k ? L(true) : k || L(false)
-  }, [R, k]);
-  let G = i.useCallback(() => {
-      L(false)
-    }, []),
-    Z = (0, u.Q)({
-      shouldShow: R,
-      onExitComplete: G
-    });
-  if (!k && (R || !x)) return t;
-  if (null == t || !g && !i.isValidElement(t)) return null;
-  let F = null != C ? C : (0, c.Sw)(n),
-    B = Z((e, t) => t ? (0, r.jsx)(l.N, {
-      isVisible: R,
-      isRendered: U,
+  let [P, R] = i.useState(null);
+  i.useLayoutEffect(() => {
+    null != I && R(I.current)
+  }, [I]);
+  let w = i.useCallback(e => {
+      null == I && R(e), (0, c.k$)(S, e)
+    }, [S, I]),
+    {
+      tooltipId: D,
+      isVisible: x,
+      targetElementRef: L,
+      trigger: j
+    } = (0, d.Q)(_({
+      children: t,
       targetElementRef: w,
+      asContainer: g,
+      containerTag: E,
+      ariaHidden: A
+    }, N)),
+    [M, k] = i.useState(false),
+    {
+      defaultLayerContext: U
+    } = (0, o.ZFG)(),
+    G = i.useMemo(() => null != h ? h : null == n || "" === n ? null : null != p && "" !== p ? (0, r.jsxs)("div", {
+      className: f.tooltipWithShortcut,
+      children: [(0, r.jsx)(s.Text, {
+        variant: "text-sm/medium",
+        children: n
+      }), (0, r.jsx)(s.M2$, {
+        shortcut: p
+      })]
+    }) : n, [n, p, h]),
+    Z = null != G && ("string" != typeof G || "" !== G),
+    F = x || M;
+  i.useEffect(() => {
+    x && Z ? k(true) : Z || k(false)
+  }, [x, Z]);
+  let B = i.useCallback(() => {
+      k(false)
+    }, []),
+    V = (0, u.Q)({
+      shouldShow: x,
+      onExitComplete: B
+    });
+  if (!Z && (x || !M)) return t;
+  if (null == t || !g && !i.isValidElement(t)) return null;
+  let H = null != C ? C : (0, c.Sw)(n),
+    Y = V((e, t) => t ? (0, r.jsx)(l.N, {
+      isVisible: x,
+      isRendered: F,
+      targetElementRef: L,
+      targetElement: P,
       anchorRef: I,
-      id: P,
-      content: M,
+      id: D,
+      content: G,
       position: b,
       align: y,
       spacing: O,
       caretConfig: T,
-      layerContext: null != v ? v : j,
+      layerContext: null != v ? v : U,
       animationStyle: e,
-      positionKey: F
+      positionKey: H
     }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [D, A || null == M || "" === M ? null : (0, r.jsx)(a.n, {
-      id: P,
-      children: M
-    }), B]
+    children: [j, A || null == G || "" === G ? null : (0, r.jsx)(a.n, {
+      id: D,
+      children: G
+    }), Y]
   })
 }

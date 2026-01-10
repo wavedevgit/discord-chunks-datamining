@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 939974, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk505805 = require("./505805.js"),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
@@ -41,7 +41,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,18 +59,18 @@ function x(e) {
     widget: t,
     className: n,
     buttonRef: i,
-    additionalMenuItems: l
-  } = e, o = (0, b.mR)(t), c = (0, f.Dt)();
+    additionalMenuItems: a
+  } = e, o = (0, m.mR)(t), c = (0, f.Dt)();
   return (0, r.jsx)(I, {
     targetRef: i,
     widget: t,
-    additionalMenuItems: l,
+    additionalMenuItems: a,
     children: e => (0, r.jsx)(P, {
-      children: (0, r.jsxs)(s.P3F, j(O({
+      children: (0, r.jsxs)(s.P3F, v(O({
         innerRef: i,
-        className: a()(v.button, n),
+        className: l()(h.button, n),
         "data-dnd-name": o,
-        "aria-label": y.intl.formatToPlainString(y.t.HWNJJN, {
+        "aria-label": j.intl.formatToPlainString(j.t.HWNJJN, {
           widgetTitle: o
         }),
         "aria-describedby": c,
@@ -80,7 +80,7 @@ function x(e) {
           size: "sm"
         }), (0, r.jsx)(s.nn4, {
           id: c,
-          children: y.intl.string(y.t.bsuqFn)
+          children: j.intl.string(j.t.bsuqFn)
         })]
       }))
     })
@@ -91,16 +91,16 @@ let P = e => {
       children: t
     } = e, n = (0, o.e7)([d.Z], () => d.Z.keyboardModeEnabled), {
       isDragging: i
-    } = (0, l.f)(e => ({
+    } = (0, a.f)(e => ({
       isDragging: e.isDragging()
     }));
     return (0, r.jsx)(c.u, {
       __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
-        className: v.tooltipText,
+        className: h.tooltipText,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          children: y.intl.format(n ? y.t["zvln/l"] : y.t["7cdwhg"], {
+          children: j.intl.format(n ? j.t["zvln/l"] : j.t["7cdwhg"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
@@ -108,7 +108,7 @@ let P = e => {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          children: y.intl.format(y.t["4e0rM4"], {
+          children: j.intl.format(j.t["4e0rM4"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
@@ -125,21 +125,21 @@ let P = e => {
     let {
       children: t,
       widget: i,
-      targetRef: a,
-      additionalMenuItems: l
+      targetRef: l,
+      additionalMenuItems: a
     } = e, {
       trackUserProfileEditAction: o
     } = (0, p.KZ)(), c = e => {
       if (e.shiftKey) {
-        (0, b.y8)(i.type), o(O({
+        (0, m.y8)(i), o(O({
           action: "WIDGET_REMOVED"
-        }, i.getProfileEditAnalyticsOptions())), (0, m.L$)(h.qb.WIDGET_REMOVED);
+        }, i.getProfileEditAnalyticsOptions())), (0, b.L$)(y.qb.WIDGET_REMOVED);
         return
       }(0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
-        return t => (0, r.jsx)(e, j(O({}, t), {
+        return t => (0, r.jsx)(e, v(O({}, t), {
           userId: g.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
@@ -149,7 +149,7 @@ let P = e => {
       })
     };
     return (0, r.jsx)(s.yRy, {
-      targetElementRef: a,
+      targetElementRef: l,
       align: "top",
       position: "right",
       disablePointerEvents: false,
@@ -163,12 +163,12 @@ let P = e => {
             (0, u.Zy)(), t()
           },
           onSelect: () => {},
-          "aria-label": y.intl.string(y.t.xpSHSk),
-          className: v.menu,
+          "aria-label": j.intl.string(j.t.xpSHSk),
+          className: h.menu,
           children: (0, r.jsxs)(s.kSQ, {
-            children: [l, (0, r.jsx)(s.sNh, {
+            children: [a, (0, r.jsx)(s.sNh, {
               id: "remove-widget",
-              label: y.intl.string(y.t.Mm07Yc),
+              label: j.intl.string(j.t.Mm07Yc),
               action: c,
               color: "danger",
               icon: s.XHJ

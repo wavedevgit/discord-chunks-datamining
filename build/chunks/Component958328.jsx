@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 958328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -45,14 +45,14 @@ function v(e) {
 
 function j() {
   let e = (0, s.e7)([p.Z], () => p.Z.getChannelId()),
-    t = (0, s.e7)([f.Z], () => f.Z.getGuildId()),
+    t = (0, s.e7)([h.Z], () => h.Z.getGuildId()),
     n = (0, s.e7)([d.Z], () => d.Z.getChannel(e)),
     r = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
     j = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
-    C = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
-    y = (0, c.ZP)(n, true),
+    y = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
+    C = (0, c.ZP)(n, true),
     _ = null != n ? (0, x.IG)(n, false) : null,
-    S = null != r ? h.Z.getGuildPermissionSpecMap(r) : null,
+    S = null != r ? f.Z.getGuildPermissionSpecMap(r) : null,
     E = Object.values(null != _ ? _ : {}).map(e => {
       let {
         title: t,
@@ -67,7 +67,7 @@ function j() {
       let {
         title: t,
         flag: n
-      } = e, r = l.e$(C, n);
+      } = e, r = l.e$(y, n);
       return (0, a.jsx)(v, {
         title: t,
         can: r
@@ -81,7 +81,7 @@ function j() {
         className: b.section,
         children: [(0, a.jsx)(o.Heading, {
           variant: "heading-md/semibold",
-          children: null != y ? "Permissions in ".concat(y) : "No channel selected"
+          children: null != C ? "Permissions in ".concat(C) : "No channel selected"
         }), E]
       }), (0, a.jsxs)("section", {
         className: b.section,

@@ -80,12 +80,12 @@ let G = "WELCOME_CHANNEL",
         isDropHovered: v,
         index: O
       } = e,
-      C = i.useRef(null),
-      y = (0, u.e7)([E.Z], () => E.Z.getChannel(o.channel_id)),
+      y = i.useRef(null),
+      C = (0, u.e7)([E.Z], () => E.Z.getChannel(o.channel_id)),
       N = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
-      S = null != y && _.Uu(w.Plq.VIEW_CHANNEL, y),
-      T = null != (t = (0, x.KS)(y)) ? t : g.VL1,
-      P = (0, h.ZP)(y, false),
+      S = null != C && _.Uu(w.Plq.VIEW_CHANNEL, C),
+      T = null != (t = (0, x.KS)(C)) ? t : g.VL1,
+      P = (0, h.ZP)(C, false),
       R = () => {
         (0, g.ZDy)(async () => {
           let {
@@ -120,7 +120,7 @@ let G = "WELCOME_CHANNEL",
           p(e.channel, O, true)
         }
       });
-    return i.useLayoutEffect(() => (M(U(C)), () => {
+    return i.useLayoutEffect(() => (M(U(y)), () => {
       M(null), U(null)
     }), [M, U]), l = S ? null != N || null != o.emoji_name ? (0, r.jsx)(m.Z, {
       emojiId: null == N ? true : N.id,
@@ -138,7 +138,7 @@ let G = "WELCOME_CHANNEL",
       className: a()(A.welcomeChannel, {
         [A.dragging]: v
       }),
-      ref: C,
+      ref: y,
       "data-dnd-name": o.description,
       onContextMenu: e => {
         (0, f.jW)(e, async () => {
@@ -191,18 +191,18 @@ let G = "WELCOME_CHANNEL",
       channels: E,
       enabled: _
     } = l, Z = e => {
-      null != t && (o()(e, a.channels) || ((0, y.Es)(t.id, {
+      null != t && (o()(e, a.channels) || ((0, C.Es)(t.id, {
         channels: e
       }), m(true)))
     }, G = e => {
-      null != t && e !== a.enabled && ((0, y.Es)(t.id, {
+      null != t && e !== a.enabled && ((0, C.Es)(t.id, {
         enabled: e
       }), x(!s), m(true))
     }, U = (e, t, n) => {
       if (null == E) return;
       let r = E.indexOf(e),
         i = [...E];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, y.VP)({
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, C.VP)({
         channels: i
       })), n ? (Z(i), d(null)) : d(t)
     }, B = i.useRef(false);
@@ -224,7 +224,7 @@ let G = "WELCOME_CHANNEL",
           is_enabled: _
         })
       }
-    }, [f, E, j, _, t]), i.useEffect(() => () => (0, y.sm)(), []);
+    }, [f, E, j, _, t]), i.useEffect(() => () => (0, C.sm)(), []);
     let F = i.useCallback(() => {
       null != t && T.Z.open(t.id, w.pNK.ONBOARDING)
     }, [t]);
@@ -239,7 +239,7 @@ let G = "WELCOME_CHANNEL",
           children: [(0, r.jsx)(I.Z, {
             className: A.noticeIcon
           }), D.intl.format(D.t["oj2vi+"], {
-            onboardingLink: e => (0, r.jsx)(C.Z, {
+            onboardingLink: e => (0, r.jsx)(y.Z, {
               onClick: F,
               children: e
             })
@@ -297,12 +297,12 @@ let G = "WELCOME_CHANNEL",
             children: (0, r.jsx)(g.Kx8, {
               placeholder: D.intl.string(D.t.qzZHaX),
               onChange: e => {
-                (0, y.VP)({
+                (0, C.VP)({
                   description: e
                 })
               },
               onBlur: () => {
-                null != t && j !== a.description && ((0, y.Es)(t.id, {
+                null != t && j !== a.description && ((0, C.Es)(t.id, {
                   description: null == j ? true : j.trim()
                 }), m(true))
               },
@@ -326,9 +326,9 @@ let G = "WELCOME_CHANNEL",
               welcomeChannel: e,
               onEdit: e => {
                 let t = [...null != E ? E : []];
-                null == e ? t.splice(n, 1) : t[n] = e, (0, y.VP)({
+                null == e ? t.splice(n, 1) : t[n] = e, (0, C.VP)({
                   channels: t
-                }), Z(t), 0 === t.length && _ && ((0, y.VP)({
+                }), Z(t), 0 === t.length && _ && ((0, C.VP)({
                   enabled: false
                 }), G(false))
               },

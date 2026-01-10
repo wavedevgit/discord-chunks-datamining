@@ -11,6 +11,6 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OPEN_MESSAGE", function(e) {
     messageId: i
   } = e;
   (0, r.dL)({
-    pathname: a.Z5c.CHANNEL(t, n, i)
+    pathname: s.Z5c.CHANNEL(t, n, i)
   })
 })

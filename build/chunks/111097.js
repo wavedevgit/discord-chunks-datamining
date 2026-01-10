@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 111097, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./415506.js"), require("./388685.js"), require("./49124.js");
 var Chunk72924 = require("./72924.jsx"),
   Chunk100527 = require("./100527.js"),
@@ -16,7 +16,7 @@ var Chunk72924 = require("./72924.jsx"),
   Chunk474936 = require("./474936.js");
 let g = [Chunk100527.Z.RPC];
 
-function m(e, t) {
+function h(e, t) {
   let n = {
     subscriptionTier: f.Si.TIER_2,
     analyticsLocations: g,
@@ -31,7 +31,7 @@ function m(e, t) {
       throw Error("Unexpected app context: ".concat(e))
   }
 }
-let h = {
+let m = {
   [Chunk981631.Etm.START_PURCHASE]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
     validation: e => (0, o.Z)(e).required().keys({
@@ -58,7 +58,7 @@ let h = {
       if (null == (0, s.Z)()) throw new a.Z({
         errorCode: p.lTL.INVALID_CHANNEL
       }, "Invalid channel");
-      let h = {
+      let m = {
         page: p.ZY5.IN_APP
       };
       return (async () => {
@@ -66,9 +66,9 @@ let h = {
           let e = await (0, r.S)({
             applicationId: l,
             skuId: n,
-            openPremiumPaymentModal: () => m(f, h),
+            openPremiumPaymentModal: () => h(f, m),
             analyticsLocations: g,
-            analyticsLocationObject: h,
+            analyticsLocationObject: m,
             context: f
           });
           return o(), e
@@ -105,7 +105,7 @@ let h = {
         lock: r,
         context: i
       } = (0, u.jU)(t.transport !== d.He.POST_MESSAGE ? n : null);
-      return m(i, {
+      return h(i, {
         page: p.ZY5.IN_APP
       }).then(() => {
         r()

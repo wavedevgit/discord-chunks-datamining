@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 589049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -23,7 +23,7 @@ function h() {
       newestAnalyticsLocation: n
     } = (0, l.ZP)(),
     h = (0, c.wy)(n);
-  return e === p.IlC.APP || d.isPlatformEmbedded || h ? (0, i.jsx)(r.sNh, {
+  return e === p.IlC.APP || d.isPlatformEmbedded || h ? (0, r.jsx)(i.sNh, {
     id: "voice-and-video-settings",
     label: f.intl.string(f.t.dsXapM),
     action: () => {
@@ -32,6 +32,6 @@ function h() {
         analyticsLocations: t
       })
     },
-    icon: r.ewm
+    icon: i.ewm
   }) : null
 }

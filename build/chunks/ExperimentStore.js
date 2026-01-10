@@ -279,21 +279,21 @@ function et(e) {
     current_snapshot_session_id: w.sessionId,
     current_snapshot_fingerprint: w.fingerprint
   }), D = {}, x = {}, L = {};
-  let r = "CONNECTION_OPEN" === e.type || null == e.fingerprint || e.fingerprint === d.default.getFingerprint(),
+  let n = "CONNECTION_OPEN" === e.type || null == e.fingerprint || e.fingerprint === d.default.getFingerprint(),
     {
-      experiments: i,
-      guildExperiments: a
+      experiments: r,
+      guildExperiments: i
     } = e,
-    o = "CONNECTION_OPEN" === e.type ? "ready_payload" : "logged_out_api",
-    s = "sessionId" in e ? e.sessionId : null != (t = d.default.getSessionId()) ? t : "",
-    l = d.default.getFingerprint();
-  r && en({
-    rawUserExperiments: i,
-    rawGuildExperiments: null != a ? a : [],
-    source: o,
-    sessionId: s,
-    fingerprint: l
-  }, false), n(598984).Vx.trackExposure(), A = true
+    a = "CONNECTION_OPEN" === e.type ? "ready_payload" : "logged_out_api",
+    o = "sessionId" in e ? e.sessionId : null != (t = d.default.getSessionId()) ? t : "",
+    s = d.default.getFingerprint();
+  n && en({
+    rawUserExperiments: r,
+    rawGuildExperiments: null != i ? i : [],
+    source: a,
+    sessionId: o,
+    fingerprint: s
+  }, false), A = true
 }
 
 function en(e) {

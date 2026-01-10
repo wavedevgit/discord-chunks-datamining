@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 786721, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,25 +15,25 @@ function c(e) {
   let {
     className: t,
     roleColor: n,
-    roleName: r,
+    roleName: i,
     hasRemoveIcon: c = false,
     onClick: u,
     disabled: d = false,
     verified: p = false
   } = e;
-  return (0, i.jsx)(a.P3F, {
+  return (0, r.jsx)(a.P3F, {
     className: l()(t, s.button, {
       [s.disabled]: d
     }),
     onClick: d ? true : u,
     "aria-disabled": d,
     role: "button",
-    children: (0, i.jsx)(o.Z, {
+    children: (0, r.jsx)(o.Z, {
       className: s.role,
       roleColor: n,
-      roleName: r,
+      roleName: i,
       verified: p,
-      children: c && (0, i.jsx)(a.Dio, {
+      children: c && (0, r.jsx)(a.Dio, {
         size: "custom",
         color: "currentColor",
         height: 6,

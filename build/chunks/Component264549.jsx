@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 264549, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 }), require("./539854.js"), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk895996 = require("./895996.js");
 
-function h(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,10 +22,10 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = () => (0, r.jsxs)("div", {
-  className: f.symbol,
+let h = () => (0, r.jsxs)("div", {
+  className: p.symbol,
   children: [(0, r.jsx)("div", {
-    className: f.symbolBackground
+    className: p.symbolBackground
   }), (0, r.jsx)("img", {
     alt: "",
     src: n(977706)
@@ -49,28 +49,28 @@ class g extends Chunk473749.PureComponent {
   }
   renderPrimary() {
     return (0, r.jsxs)("div", {
-      className: f.primaryExplosion,
+      className: p.primaryExplosion,
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: f.circleInner,
+        className: p.circleInner,
         src: n(273226),
         width: 70,
         height: 69
       }), (0, r.jsx)("img", {
         alt: "",
-        className: f.circleOuter,
+        className: p.circleOuter,
         src: n(922026),
         width: 96,
         height: 95
       }), (0, r.jsx)("img", {
         alt: "",
-        className: f.linesSecondary,
+        className: p.linesSecondary,
         src: n(827926),
         width: 183,
         height: 104
       }), (0, r.jsx)("img", {
         alt: "",
-        className: f.linesMain,
+        className: p.linesMain,
         src: n(873180),
         width: 69,
         height: 180
@@ -79,32 +79,32 @@ class g extends Chunk473749.PureComponent {
   }
   renderSecondary(e, t) {
     return (0, r.jsxs)("div", {
-      className: f.secondaryExplosion,
+      className: p.secondaryExplosion,
       style: {
         top: t,
         left: e
       },
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: f.circleInner,
+        className: p.circleInner,
         src: n(272162),
         width: 61,
         height: 58
       }, "circle-inner"), (0, r.jsx)("img", {
         alt: "",
-        className: f.circleOuter,
+        className: p.circleOuter,
         src: n(632989),
         width: 85,
         height: 85
       }, "circle-outer"), (0, r.jsx)("img", {
         alt: "",
-        className: f.linesSecondary,
+        className: p.linesSecondary,
         src: n(376252),
         width: 162,
         height: 173
       }, "lines-secondary"), (0, r.jsx)("img", {
         alt: "",
-        className: f.linesMain,
+        className: p.linesMain,
         src: n(720617),
         width: 156,
         height: 306
@@ -120,8 +120,8 @@ class g extends Chunk473749.PureComponent {
       scale: l
     } = this.state, o = [this.renderPrimary()];
     return e && o.push(this.renderSecondary(t, n)), (0, r.jsx)("div", {
-      className: a()(f.container, {
-        [f.animate]: i
+      className: a()(p.container, {
+        [p.animate]: i
       }),
       style: {
         top: this.props.top,
@@ -132,18 +132,18 @@ class g extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "_renderSecondaryTimeout", null), h(this, "_doneTimeout", null), h(this, "state", {
+    super(...e), f(this, "_renderSecondaryTimeout", null), f(this, "_doneTimeout", null), f(this, "state", {
       animating: false,
       renderSecondary: false,
       scale: s().random(.6, 1, true),
       offsetX: s().random(0, 140, false) - 70,
       offsetY: s().random(0, 140, false) - 70
-    }), h(this, "done", () => {
+    }), f(this, "done", () => {
       this.props.onAnimationComplete(this.props.componentId)
     })
   }
 }
-class b extends Chunk473749.PureComponent {
+class m extends Chunk473749.PureComponent {
   componentDidMount() {
     this.setTimeout(() => {
       this.setState({
@@ -158,20 +158,20 @@ class b extends Chunk473749.PureComponent {
   }
   render() {
     return (0, r.jsx)("div", {
-      className: a()(f.ragingDemon, {
-        [f.visible]: this.state.visible
+      className: a()(p.ragingDemon, {
+        [p.visible]: this.state.visible
       }),
       children: this.children
     })
   }
   constructor(...e) {
-    super(...e), h(this, "_timeouts", []), h(this, "children", []), h(this, "state", {
+    super(...e), f(this, "_timeouts", []), f(this, "children", []), f(this, "state", {
       explosions: 0,
       visible: false
-    }), h(this, "setTimeout", (e, t) => {
+    }), f(this, "setTimeout", (e, t) => {
       let n = setTimeout(e, t);
       return this._timeouts.push(n), n
-    }), h(this, "removeExplosion", e => {
+    }), f(this, "removeExplosion", e => {
       let t = this.children,
         n = t.findIndex(t => {
           if (t.type !== g) returnfalse;
@@ -179,7 +179,7 @@ class b extends Chunk473749.PureComponent {
           return null != n.componentId && n.componentId === e
         });
       n >= 0 && t.splice(n, 1), this.forceUpdate()
-    }), h(this, "createExplosion", () => {
+    }), f(this, "createExplosion", () => {
       let e = this.children,
         t = window.innerWidth / 2 | 0,
         n = window.innerHeight / 2 | 0;
@@ -194,11 +194,11 @@ class b extends Chunk473749.PureComponent {
           explosions: this.state.explosions + 1
         })
       } else this.setTimeout(this.addSymbol, 750)
-    }), h(this, "addSymbol", () => {
-      this.children = [(0, r.jsx)(p, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
-    }), h(this, "delayedClose", () => {
+    }), f(this, "addSymbol", () => {
+      this.children = [(0, r.jsx)(h, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
+    }), f(this, "delayedClose", () => {
       this.props.handleDemonClose()
     })
   }
 }
-let m = b
+let b = m

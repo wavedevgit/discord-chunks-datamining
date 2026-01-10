@@ -68,11 +68,11 @@ function _(e) {
         return e
       }({}, t))
     }, {
-      modalKey: h.Qr
+      modalKey: m.Qr
     })
   }
   return (i.useEffect(() => (C ? P() : x(), () => x()), [C, P, x]), O && E) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != T && t && I && S && !(0, a.$sL)() && !j && (0, r.jsx)(m.Z, {
+    children: [null != T && t && I && S && !(0, a.$sL)() && !j && (0, r.jsx)(h.Z, {
       clipIconRef: T,
       lastClipsSession: y,
       onOpenClipsGallery: A

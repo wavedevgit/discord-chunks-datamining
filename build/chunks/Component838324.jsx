@@ -21,7 +21,7 @@ function m(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, m = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), b = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [p, h] = (0, o.VF)(t, b), [x, j] = (0, d.OA)(t, [...b]), v = m ? j.length : h.length, O = m ? x.length : p.length, C = O >= u.X, y = j.length - h.length, N = (0, r.jsx)(a.owK, {
+  } = e, m = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), b = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [p, h] = (0, o.VF)(t, b), [x, j] = (0, d.OA)(t, [...b]), v = m ? j.length : h.length, O = m ? x.length : p.length, y = O >= u.X, C = j.length - h.length, N = (0, r.jsx)(a.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE.css,
@@ -31,7 +31,7 @@ function m(e) {
     className: f.icon,
     color: l.Z.colors.WHITE.css,
     secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css
-  }), I = [Math.min(u.X, O) / u.X * 100], S = C ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css];
+  }), I = [Math.min(u.X, O) / u.X * 100], S = y ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css];
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ function m(e) {
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: f.requiredItem,
-      children: [C ? N : E, (0, r.jsx)(a.Text, {
+      children: [y ? N : E, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: g.intl.format(g.t.PwXgSy, {
@@ -86,7 +86,7 @@ function m(e) {
           variant: "text-xs/normal",
           color: "text-muted",
           children: g.intl.format(g.t["8Geut3"], {
-            count: y,
+            count: C,
             prejoinHook: e => (0, r.jsx)(a.eee, {
               onClick: n,
               children: (0, r.jsx)(a.Text, {

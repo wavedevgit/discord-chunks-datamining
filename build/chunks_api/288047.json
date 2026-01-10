@@ -1,1 +1,1 @@
-{"id":"288047","type":"experiment","data":{"kind":"user","id":"2025-10_friend_is_online_notification","label":"Friend Online Notification Experiment","defaultConfig":{"showSettingsToggle":false},"treatments":[{"id":1,"label":"User can receive friend online notifications. Show settings toggle.","config":{"showSettingsToggle":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"288047","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

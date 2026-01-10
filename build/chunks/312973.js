@@ -4,7 +4,7 @@
 require.d(exports, {
   $: () => i
 });
-let r = (0, require("./722733.js").Z)({
+let r = (0, require("./722733.js").ZP)({
   kind: "user",
   name: "2025-10-fetch-promotions-endpoint",
   defaultConfig: {

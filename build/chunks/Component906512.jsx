@@ -138,7 +138,7 @@ let E = [{
   _ = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [a, O] = i.useState(0), [C, y] = i.useState(), _ = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.ADMINISTRATOR, t)), T = null == C ? true : C.offsetWidth, P = null == C ? true : C.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, O] = i.useState(0), [y, C] = i.useState(), _ = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.ADMINISTRATOR, t)), T = null == y ? true : y.offsetWidth, P = null == y ? true : y.offsetHeight;
     return i.useEffect(() => {
       null != T && l(T / 2), null != P && O(P / 2)
     }, [T, P, l, O]), i.useEffect(() => {
@@ -147,7 +147,7 @@ let E = [{
       className: x.container,
       children: [(0, r.jsxs)("div", {
         className: x.banner,
-        ref: e => y(e),
+        ref: e => C(e),
         children: [E.map(e => {
           var t, i;
           return (0, r.jsx)(S, (t = N({}, e), i = i = {

@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 763577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js");
 
 function u() {
-  let e = Object.keys(i).map(e => (0, a.jsx)(f, {
+  let e = Object.keys(i).map(e => (0, a.jsx)(h, {
     riveName: e
   }, e));
   return (0, a.jsx)(l.w0Z, {
@@ -44,7 +44,7 @@ function u() {
 }
 
 function m() {
-  let [e, t] = r.useState(null), [n, i] = r.useState(null), [s, o] = r.useState(null), [c, u] = r.useState([]), m = r.useRef(null), [h, x] = r.useState(400), [b, g] = r.useState(400), v = r.useCallback(() => {
+  let [e, t] = r.useState(null), [n, i] = r.useState(null), [s, o] = r.useState(null), [c, u] = r.useState([]), m = r.useRef(null), [f, x] = r.useState(400), [b, g] = r.useState(400), v = r.useCallback(() => {
     setTimeout(() => {
       var e, t, n, a;
       o(null != (n = null == (e = m.current) ? true : e.getProperties()) ? n : {}), u(null != (a = null == (t = m.current) ? true : t.getArtboards()) ? a : []), i({})
@@ -85,17 +85,17 @@ function m() {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r
     })
-  }, [s, n]), C = r.useCallback(e => {
+  }, [s, n]), y = r.useCallback(e => {
     o(null), i(null), t(e)
   }, []);
   return (0, a.jsxs)(l.Kqy, {
     gap: 16,
-    children: [(0, a.jsx)(f, {
+    children: [(0, a.jsx)(h, {
       riveName: "Rive inspector",
-      onRiveLoad: C
+      onRiveLoad: y
     }), null != e && (0, a.jsx)("div", {
       style: {
-        width: h,
+        width: f,
         height: b
       },
       children: (0, a.jsx)(d.BmE, {
@@ -113,7 +113,7 @@ function m() {
         }), (0, a.jsx)(d.oil, {
           type: "number",
           label: "width",
-          value: h.toString(),
+          value: f.toString(),
           onChange: e => x(parseInt(e))
         }), (0, a.jsx)(d.oil, {
           type: "number",
@@ -199,7 +199,7 @@ function p(e) {
   }) : null
 }
 
-function f(e) {
+function h(e) {
   var t;
   let {
     riveName: n,

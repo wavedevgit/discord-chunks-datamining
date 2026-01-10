@@ -87,9 +87,9 @@ function eg(e) {
   }
   return e
 }
-let em = Chunk473749.createContext({});
+let eh = Chunk473749.createContext({});
 
-function eh(e) {
+function em(e) {
   let {
     onLoadComplete: t
   } = e, {
@@ -99,7 +99,7 @@ function eh(e) {
   }), l = (0, u.e7)([g.Z], () => g.Z.useReducedMotion), o = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
     ref: s,
     inViewport: c
-  } = (0, q.a)(), d = i.useRef(null);
+  } = (0, K.a)(), d = i.useRef(null);
   if (i.useEffect(() => {
       (null == d ? true : d.current) != null && (d.current.paused || o && c && !l ? d.current.paused && !l && c && o && d.current.play() : d.current.pause())
     }, [l, c, o]), n) {
@@ -163,15 +163,15 @@ function e_(e) {
     onSelectTab: u,
     scrollerRef: d,
     selectedTab: p
-  } = i.useContext(em), {
+  } = i.useContext(eh), {
     takeover: f,
     isLoading: g
   } = (0, F.Nm)(), {
-    enabled: m
+    enabled: h
   } = (0, Z.W)({
     location: en.dr.QUEST_HOME_DESKTOP
   }), {
-    enabled: h
+    enabled: m
   } = B.n0.useConfig({
     location: en.dr.QUEST_HOME_DESKTOP
   }), b = i.useRef(null), _ = i.useCallback(() => {
@@ -184,7 +184,7 @@ function e_(e) {
       onScroll: c,
       ref: d,
       children: [function() {
-        if (!s && h) {
+        if (!s && m) {
           if (p !== F.e5.ALL) return null;
           if (g) return (0, r.jsx)(ee.o, {});
           if (null != f) return (0, r.jsx)(ee.Z, {
@@ -196,11 +196,11 @@ function e_(e) {
       }(), (0, r.jsx)(T.Z, {
         children: (0, r.jsxs)("div", {
           className: a()(eo.content, {
-            [eo.contentWithExtraPadding]: h && !m && p !== F.e5.ALL
+            [eo.contentWithExtraPadding]: m && !h && p !== F.e5.ALL
           }),
           children: [n, o ? p === F.e5.CLAIMED ? (0, r.jsx)(Q.Z, {
             onSelectTab: u
-          }) : p === F.e5.PREVIEW_TOOL ? (0, r.jsx)(z.Z, {}) : (0, r.jsx)(K.Z, {
+          }) : p === F.e5.PREVIEW_TOOL ? (0, r.jsx)(z.Z, {}) : (0, r.jsx)(q.Z, {
             ref: b
           }) : null]
         })
@@ -229,14 +229,14 @@ let eE = function(e) {
   let {
     onScroll: D,
     scrollPosition: B
-  } = (0, C.M)(), z = W.Z.getState().getUtmCurrentContext(), q = (0, J.z)(e => e.registerAssetLoad), K = i.useRef(z);
+  } = (0, C.M)(), z = W.Z.getState().getUtmCurrentContext(), K = (0, J.z)(e => e.registerAssetLoad), q = i.useRef(z);
   i.useEffect(() => {
-    K.current = z
+    q.current = z
   }), i.useEffect(() => {
     let {
       current: e
-    } = K;
-    (0, h.h)({
+    } = q;
+    (0, m.h)({
       name: c.ImpressionNames.QUEST_HOME,
       type: c.ImpressionTypes.VIEW,
       properties: {
@@ -270,7 +270,7 @@ let eE = function(e) {
       }), (0, E.mK)({
         tab: ei.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: m.Z.ORBS_BALANCE_MENU
+        analyticsSource: h.Z.ORBS_BALANCE_MENU
       })
     }, []);
   i.useEffect(() => {
@@ -342,9 +342,9 @@ let eE = function(e) {
     }, [l, x]);
   return (0, r.jsx)(X.k.Provider, {
     value: {
-      onAssetLoadComplete: q
+      onAssetLoadComplete: K
     },
-    children: (0, r.jsx)(em.Provider, {
+    children: (0, r.jsx)(eh.Provider, {
       value: i.useMemo(() => ({
         isInDiscoverQuestHomeTab: g,
         onScroll: D,
@@ -367,7 +367,7 @@ let eE = function(e) {
             }),
             className: eo.redirectNoticeBannerContainer,
             children: (0, r.jsx)(eb, {
-              onLoadComplete: q
+              onLoadComplete: K
             })
           }),
           header: (0, r.jsx)(P.a, {
@@ -404,7 +404,7 @@ let eE = function(e) {
                 onClick: () => (0, E.mK)({
                   tab: ei.AW.ORBS,
                   analyticsLocations: [],
-                  analyticsSource: m.Z.INTRO_TO_ORBS_QUEST_BANNER
+                  analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
                 })
               }), (0, r.jsx)(p.Button, {
                 variant: "overlay-secondary",
@@ -415,8 +415,8 @@ let eE = function(e) {
             className: a()(eo.bannerContainer, eo.orbsContainer),
             children: [(0, r.jsx)("div", {
               className: a()(eo.bannerGradient, eo.orbsGradient)
-            }), (0, r.jsx)(eh, {
-              onLoadComplete: q
+            }), (0, r.jsx)(em, {
+              onLoadComplete: K
             })]
           }),
           header: (0, r.jsx)(P.a, {
@@ -445,8 +445,8 @@ let eE = function(e) {
             className: eo.bannerContainer,
             children: [(0, r.jsx)("div", {
               className: eo.bannerGradient
-            }), (0, r.jsx)(eh, {
-              onLoadComplete: q
+            }), (0, r.jsx)(em, {
+              onLoadComplete: K
             })]
           }),
           header: (0, r.jsxs)(j.ZP, {

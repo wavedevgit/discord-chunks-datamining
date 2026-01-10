@@ -1,11 +1,11 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 510231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => d
 }), require("./583741.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk86419 = require("./86419.js"),
   Chunk77498 = require("./77498.js"),
@@ -17,8 +17,8 @@ function u(e) {
 }
 
 function d() {
-  let e = (0, l.e7)([c.Z], () => c.Z.games),
-    t = r.useMemo(() => a()(e).filter(e => (0, o.pZ)(e)).map(e => ({
+  let e = (0, a.e7)([c.Z], () => c.Z.games),
+    t = r.useMemo(() => l()(e).filter(e => (0, o.pZ)(e)).map(e => ({
       value: e.id,
       label: e.name
     })).sortBy(e => {

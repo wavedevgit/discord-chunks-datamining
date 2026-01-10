@@ -12,7 +12,7 @@ var Chunk722733 = require("./722733.js"),
   i = function(e) {
     return e.OLDEST_CREATION_DATE = "oldest_creation_date", e.TOP_SOUNDS = "top_sounds", e.NEWEST_CREATION_DATE = "newest_creation_date", e.RECENTLY_USED_BY_USER = "recently_used_by_user", e.METRICS_CAPTURE = "metrics_capture", e
   }({});
-let a = (0, Chunk722733.Z)({
+let a = (0, Chunk722733.ZP)({
   name: "2025-10-soundboard-xp-3",
   kind: "user",
   defaultConfig: {

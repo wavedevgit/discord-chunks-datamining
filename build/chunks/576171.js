@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 576171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -14,15 +14,15 @@ var Chunk473749 = require("./473749.js"),
   Chunk440493 = require("./440493.js");
 
 function p(e) {
-  let t = (0, i.e7)([o.Z, a.Z, c.default, s.ZP], () => {
-    let t = o.Z.getGuild(e);
-    if ((null == t ? true : t.features.has(d.GuildFeatures.HUB)) !== true || true === a.Z.hasViewedPrompt(u.r.REAL_NAME_PROMPT, t.id)) return null;
+  let t = (0, i.e7)([s.Z, a.Z, c.default, o.ZP], () => {
+    let t = s.Z.getGuild(e);
+    if ((null == t ? true : t.features.has(u.GuildFeatures.HUB)) !== true || true === a.Z.hasViewedPrompt(d.r.REAL_NAME_PROMPT, t.id)) return null;
     let n = c.default.getCurrentUser();
     if (null == n) return null;
-    let r = s.ZP.getMember(t.id, null == n ? true : n.id);
+    let r = o.ZP.getMember(t.id, null == n ? true : n.id);
     return (null == r ? true : r.nick) == null
   });
   return r.useEffect(() => {
-    null != e && null != t && (t || l.Z.viewPrompt(u.r.REAL_NAME_PROMPT, e))
+    null != e && null != t && (t || l.Z.viewPrompt(d.r.REAL_NAME_PROMPT, e))
   }, [t, e]), true === t
 }

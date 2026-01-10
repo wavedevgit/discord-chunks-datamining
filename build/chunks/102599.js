@@ -1,6 +1,5 @@
-/** Chunk was on 63141 **/
-/** chunk id: 102599, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 102599, original params: e,t,a (module,exports,require) **/
 module.exports = {
   channel: "_972a0d22c8afa7f0-channel",
   fullWidth: "_972a0d22c8afa7f0-fullWidth",

@@ -1,5 +1,5 @@
-/** Chunk was on 89250 **/
-/** chunk id: 612856, original params: t,n,e (module,exports,require) **/
+/** Chunk was on 92091 **/
+/** chunk id: 612856, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -14,26 +14,26 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(t) {
-  let n = (0, o.B)(t);
-  return (0, l.e7)([r.Z], () => r.Z.hasJoined(t.id)) ? (0, i.jsx)(a.sNh, {
+  let n = (0, d.B)(t);
+  return (0, l.e7)([a.Z], () => a.Z.hasJoined(t.id)) ? (0, e.jsx)(r.sNh, {
     id: "thread-notifications",
     label: u.intl.string(u.t.h850Ss),
-    children: (0, d.zb)().map(e => {
+    children: (0, o.zb)().map(i => {
       let {
         setting: l,
-        label: r
-      } = e;
-      return (0, i.jsx)(a.k5B, {
+        label: a
+      } = i;
+      return (0, e.jsx)(r.k5B, {
         group: "thread-notifications",
         id: "".concat(l),
-        label: r,
+        label: a,
         action: () => s.Z.setNotificationSettings(t, {
           flags: l
         }),
         checked: l === n
       }, l)
     })
-  }) : (0, i.jsx)(a.sNh, {
+  }) : (0, e.jsx)(r.sNh, {
     id: "notifications-disabled",
     label: u.intl.string(u.t.h850Ss),
     disabled: true

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 900211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -15,8 +15,8 @@ function o(e) {
     onResizeEnd: o,
     minHeight: s,
     maxHeight: c
-  } = e, [u, d] = r.useState(null);
-  r.useEffect(() => {
+  } = e, [u, d] = i.useState(null);
+  i.useEffect(() => {
     var e, n;
     d(null != (n = null == (e = t.current) ? true : e.offsetHeight) ? n : null)
   }, [t]);
@@ -29,7 +29,7 @@ function o(e) {
     onElementResizeEnd: o,
     orientation: l.y.VERTICAL_BOTTOM
   });
-  return (0, i.jsx)("div", {
+  return (0, r.jsx)("div", {
     onMouseDown: p,
     className: a.resizeHandle
   })

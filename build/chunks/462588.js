@@ -4,7 +4,7 @@
 require.d(exports, {
   N: () => i
 });
-let r = (0, require("./722733.js").Z)({
+let r = (0, require("./722733.js").ZP)({
   name: "2025-12-hide-guild-boost-status-tab",
   kind: "user",
   defaultConfig: {

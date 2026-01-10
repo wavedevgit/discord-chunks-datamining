@@ -29,9 +29,9 @@ function x(e) {
     j = (0, l.e7)([u.Z], () => null != n && u.Z.can(b.Plq.MANAGE_GUILD, n), [n]),
     v = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
     O = (0, d.eM)(n, v),
-    C = null == v ? true : v.mfaEnabled,
-    y = x === b.BpS.ELEVATED,
-    N = O && C,
+    y = null == v ? true : v.mfaEnabled,
+    C = x === b.BpS.ELEVATED,
+    N = O && y,
     E = (0, i.throttle)(async e => {
       N && await f.Z.updateMFALevel({
         guildId: n.id,
@@ -58,16 +58,16 @@ function x(e) {
         color: "text-default",
         children: [p.intl.string(p.t["a/93J6"]), " ", t]
       })]
-    }), !N || y && I ? (0, r.jsx)(a.u, {
+    }), !N || C && I ? (0, r.jsx)(a.u, {
       text: I ? p.intl.string(p.t["KG1V/E"]) : O ? p.intl.string(p.t.NmsheT) : p.intl.string(p.t.LieBta),
       children: (0, r.jsx)(m.Z, {
-        checked: y,
+        checked: C,
         disabled: true,
         onChange: E,
         className: h.bringToFront
       })
     }) : (0, r.jsx)(m.Z, {
-      checked: y,
+      checked: C,
       onChange: E,
       className: h.bringToFront
     })]

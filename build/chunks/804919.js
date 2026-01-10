@@ -1,9 +1,9 @@
-/** Chunk was on 39380 **/
+/** Chunk was on 33131 **/
 /** chunk id: 804919, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
-  L: () => i
+  L: () => t
 });
-let i = {
+let t = {
   LEAGUE_OF_LEGENDS: "1402418696126992445",
   VALORANT: "700136079562375258",
   PEAK: "1384276457596911676",
@@ -15,4 +15,4 @@ let i = {
   BATTLEFIELD_6: "1402692356343599254",
   SILKSONG: "1413176957381771337"
 };
-Object.values(i)
+Object.values(t)

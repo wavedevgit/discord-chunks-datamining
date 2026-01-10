@@ -27,8 +27,8 @@ function x(e) {
     priceTiers: j,
     loading: v,
     error: O,
-    handlePublishTier: C,
-    onDeleteEditState: y
+    handlePublishTier: y,
+    onDeleteEditState: C
   } = e, {
     editStateId: N
   } = (0, d.N)(), E = (0, l.e7)([o.Z], () => o.Z.getSubscriptionListing(N)), I = (0, c.mY)(), S = i.useMemo(() => {
@@ -61,7 +61,7 @@ function x(e) {
           children: (0, r.jsx)(s.Button, {
             disabled: _,
             variant: "secondary",
-            onClick: C,
+            onClick: y,
             loading: v,
             text: p.intl.string(p.t.Lj6R5m)
           })
@@ -72,7 +72,7 @@ function x(e) {
     }), (0, r.jsx)(f.Z, {
       allSubscriptionListings: x
     }), (0, r.jsx)(m.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(u.Z, {
-      onDeleteEditState: y
+      onDeleteEditState: C
     })]
   })
 }

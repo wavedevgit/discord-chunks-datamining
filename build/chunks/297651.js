@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 297651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => m
@@ -17,12 +17,12 @@ function m(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "product",
     m = (0, s.sp)(),
     p = (0, r.e7)([o.Z], () => o.Z.getProduct(e)),
-    f = (0, d.x)(),
-    h = l.ZP.canUseCollectibles(f),
+    h = (0, d.x)(),
+    f = l.ZP.canUseCollectibles(h),
     x = a.useRef(null),
     b = a.useCallback(() => {
-      let a = null != p ? (0, c.Vw)(p, h, false) : null,
-        r = null != p ? (0, c.eu)(p, h, false) : true;
+      let a = null != p ? (0, c.Vw)(p, f, false) : null,
+        r = null != p ? (0, c.eu)(p, f, false) : true;
       i.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == m ? true : m.sessionId,
         sku_id: e,
@@ -36,7 +36,7 @@ function m(e, t) {
         type: n,
         category_position: null == m ? true : m.categoryPosition
       })
-    }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, h, t, p, e, n]),
+    }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, f, t, p, e, n]),
     g = a.useCallback(e => {
       e ? null === x.current && (x.current = setTimeout(() => {
         b(), x.current = null

@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => H
+  default: () => M
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,40 +53,40 @@ let D = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, a, r]), t
   },
-  H = function(e) {
+  M = function(e) {
     let {
       tab: t = N.AW.HOME
     } = e;
-    (0, p.z)(b.f), (0, O.f)();
-    let n = (0, f.Z)((0, o.Z)()),
-      a = (0, i.e7)([h.default], () => h.default.getCurrentUser());
+    (0, p.z)(b.f), (0, _.f)();
+    let n = (0, f.Z)((0, i.Z)()),
+      a = (0, o.e7)([h.default], () => h.default.getCurrentUser());
     (0, m.p2)();
     let c = (0, B.B)("CollectiblesShop"),
       {
         onClose: P
-      } = (0, I.Db)(),
+      } = (0, L.Db)(),
       {
-        currentTab: H,
-        hasFilters: M
-      } = (0, k.S)(),
-      F = l.useMemo(() => t === N.AW.HOME && H && M() ? H : t, [t, H, M]),
+        currentTab: M,
+        hasFilters: H
+      } = (0, j.S)(),
+      F = l.useMemo(() => t === N.AW.HOME && M && H() ? M : t, [t, M, H]),
       {
         categories: W,
         refreshCategories: U
-      } = (0, _.ZP)({
+      } = (0, x.ZP)({
         logPerf: true
       }, {
         sessionId: n,
         tab: F
       }),
-      z = (0, x.O)(W),
+      z = (0, O.O)(W),
       [V, G] = l.useState(),
-      K = (0, i.e7)([E.Z], () => {
+      K = (0, o.e7)([E.Z], () => {
         var e;
         return null == (e = E.Z.getCategory(V)) ? true : e.name
       }),
       [Y, q] = l.useState();
-    (0, j.Kp)();
+    (0, T.Kp)();
     let Q = l.useCallback((e, t) => {
         q(e), G(t)
       }, []),
@@ -127,21 +127,21 @@ let D = e => {
             onClose: P,
             shouldAddEventListener: false,
             children: (0, r.jsxs)("div", {
-              className: s()(Z.shop, {
-                [w.customCursors]: c
+              className: s()(w.shop, {
+                [Z.customCursors]: c
               }),
               ref: en,
               tabIndex: false,
-              children: [(0, r.jsx)(L.I, {
+              children: [(0, r.jsx)(I.I, {
                 handleTransition: $,
                 selectedTab: J
               }), (0, r.jsx)("div", {
-                className: s()(Z.shopViewWrapper, {
-                  [Z.visible]: X === N.f7.VISIBLE,
-                  [Z.in]: X === N.f7.IN,
-                  [Z.out]: X === N.f7.OUT
+                className: s()(w.shopViewWrapper, {
+                  [w.visible]: X === N.f7.VISIBLE,
+                  [w.in]: X === N.f7.IN,
+                  [w.out]: X === N.f7.OUT
                 }),
-                children: (0, r.jsx)(T.Z, {
+                children: (0, r.jsx)(k.Z, {
                   tab: J,
                   refreshCategories: U,
                   transitionToTab: $,

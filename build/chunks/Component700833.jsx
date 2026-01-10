@@ -58,8 +58,8 @@ function m(e) {
     submittedGuildJoinRequestsCount: j,
     removeFormField: v,
     updateFormField: O,
-    updateFormFieldOrder: C,
-    canRemove: y,
+    updateFormFieldOrder: y,
+    canRemove: C,
     actionsLocation: N,
     fieldStyle: E
   } = e, I = async () => {
@@ -67,7 +67,7 @@ function m(e) {
   }, S = async e => {
     await O(h, e)
   }, _ = async (e, t, n) => {
-    await C(e, t, n)
+    await y(e, t, n)
   }, T = (0, i.uniqueId)(), P = t === h, w = {
     key: T,
     index: h,
@@ -87,7 +87,7 @@ function m(e) {
     },
     onRemove: I,
     onDrop: _,
-    canRemove: y,
+    canRemove: C,
     actionsLocation: N,
     fieldStyle: E
   };

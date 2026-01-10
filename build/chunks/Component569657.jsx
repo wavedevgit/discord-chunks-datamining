@@ -46,94 +46,94 @@ function N(e) {
     }),
     u = (0, x.vc)(a()(v.zQD), "LL");
   return l ? (0, r.jsxs)(s.pJ, {
-    className: y.infobox,
+    className: C.infobox,
     defaultExpanded: n,
     children: [(0, r.jsx)(o.X, {
       level: 2,
       children: (0, r.jsx)(d.tEY, {
         children: (0, r.jsxs)(c.z, {
           slot: "trigger",
-          className: y.header,
+          className: C.header,
           children: [(0, r.jsx)(d.Mgn, {
             color: "currentColor"
           }), (0, r.jsx)(d.xvT, {
             variant: "heading-lg/semibold",
             tag: "span",
-            children: C.intl.string(C.t["k60MO+"])
+            children: y.intl.string(y.t["k60MO+"])
           }), (0, r.jsx)(d.hic, {
-            className: y.expandButton
+            className: C.expandButton
           })]
         })
       })
     }), (0, r.jsx)(s.V2, {
-      className: y.panel,
+      className: C.panel,
       children: (0, r.jsxs)("div", {
-        className: y.content,
+        className: C.content,
         children: [(0, r.jsxs)("p", {
-          children: [C.intl.format(C.t.kBaRSt, {}), (0, r.jsxs)("ul", {
-            className: y.infoList,
+          children: [y.intl.format(y.t.kBaRSt, {}), (0, r.jsxs)("ul", {
+            className: C.infoList,
             children: [(0, r.jsx)("li", {
-              children: C.intl.format(C.t.tUarT8, {})
+              children: y.intl.format(y.t.tUarT8, {})
             }), (0, r.jsx)("li", {
-              children: C.intl.format(C.t.r807RN, {})
+              children: y.intl.format(y.t.r807RN, {})
             })]
           })]
         }), (0, r.jsx)("p", {
-          children: C.intl.format(C.t.vgAb6w, {
+          children: y.intl.format(y.t.vgAb6w, {
             breakingChangeDate: u
           })
         })]
       })
     })]
   }) : (0, r.jsxs)(s.pJ, {
-    className: y.infobox,
+    className: C.infobox,
     defaultExpanded: n,
     children: [(0, r.jsx)(o.X, {
       level: 2,
       children: (0, r.jsx)(d.tEY, {
         children: (0, r.jsxs)(c.z, {
           slot: "trigger",
-          className: y.header,
+          className: C.header,
           children: [(0, r.jsx)(d.Mgn, {
             color: "currentColor"
           }), (0, r.jsx)(d.xvT, {
             variant: "heading-lg/semibold",
             tag: "span",
-            children: C.intl.string(C.t["F+YaVP"])
+            children: y.intl.string(y.t["F+YaVP"])
           }), (0, r.jsx)(d.hic, {
-            className: y.expandButton
+            className: C.expandButton
           })]
         })
       })
     }), (0, r.jsx)(s.V2, {
-      className: y.panel,
+      className: C.panel,
       children: (0, r.jsxs)("div", {
-        className: y.content,
+        className: C.content,
         children: [(0, r.jsxs)("p", {
-          children: [C.intl.format(C.t.xaPmNf, {}), (0, r.jsxs)("ul", {
-            className: y.infoList,
+          children: [y.intl.format(y.t.xaPmNf, {}), (0, r.jsxs)("ul", {
+            className: C.infoList,
             children: [(0, r.jsx)("li", {
-              children: C.intl.format(C.t.tUarT8, {})
+              children: y.intl.format(y.t.tUarT8, {})
             }), (0, r.jsx)("li", {
-              children: C.intl.format(C.t.r807RN, {})
+              children: y.intl.format(y.t.r807RN, {})
             })]
           })]
         }), (0, r.jsx)(d.y5t, {
           forceLevel: 3,
           children: (0, r.jsx)(d.X6q, {
             variant: "text-md/bold",
-            children: C.intl.string(C.t.bLwbyU)
+            children: y.intl.string(y.t.bLwbyU)
           })
         }), (0, r.jsx)("p", {
-          children: C.intl.format(C.t.eo5E6e, {
+          children: y.intl.format(y.t.eo5E6e, {
             breakingChangeDate: u
           })
         }), (0, r.jsx)("p", {
-          children: C.intl.format(C.t.iLwQzv, {
+          children: y.intl.format(y.t.iLwQzv, {
             breakingChangeDate: u
           })
         }), (0, r.jsx)("div", {
-          className: y.divider
+          className: C.divider
         }), (0, r.jsx)(E, {
           guild: t
         })]
@@ -147,25 +147,25 @@ function E(e) {
     guild: t
   } = e, n = (0, u.e7)([h.Z], () => h.Z.can(v.Plq.ADMINISTRATOR, t)), l = t.features.has(v.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), a = t.features.has(v.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [s, o] = i.useState(true), [c, g] = i.useState(true);
   return n ? (0, r.jsxs)("form", {
-    className: y.form,
+    className: C.form,
     children: [(0, r.jsxs)("fieldset", {
       children: [(0, r.jsx)("legend", {
-        children: C.intl.string(C.t["/SSzPD"])
+        children: y.intl.string(y.t["/SSzPD"])
       }), (0, r.jsx)(I, {
-        label: C.intl.string(C.t.KMbKTt),
-        migratedLabel: C.intl.string(C.t.IJKefK),
+        label: y.intl.string(y.t.KMbKTt),
+        migratedLabel: y.intl.string(y.t.IJKefK),
         migrated: l,
         enabled: s,
         onChange: o
       }), (0, r.jsx)(I, {
-        label: C.intl.string(C.t["7ltOG9"]),
-        migratedLabel: C.intl.string(C.t.gVKQNA),
+        label: y.intl.string(y.t["7ltOG9"]),
+        migratedLabel: y.intl.string(y.t.gVKQNA),
         migrated: a,
         enabled: c,
         onChange: g
       })]
     }), (0, r.jsx)(d.zxk, {
-      text: C.intl.string(C.t["1Qm822"]),
+      text: y.intl.string(y.t["1Qm822"]),
       disabled: (!s || l) && (!c || a),
       onClick: () => {
         var e, n;
@@ -173,12 +173,12 @@ function E(e) {
           migratePin: s && !l,
           migrateSlowmode: c && !a
         }, void f.Z.show({
-          title: C.intl.string(C.t.fM5aQ2),
-          body: C.intl.format(C.t.rLbJs6, {
+          title: y.intl.string(y.t.fM5aQ2),
+          body: y.intl.format(y.t.rLbJs6, {
             guildName: e.name
           }),
-          cancelText: C.intl.string(C.t["ETE/oC"]),
-          confirmText: C.intl.string(C.t["cY+Oob"]),
+          cancelText: y.intl.string(y.t["ETE/oC"]),
+          confirmText: y.intl.string(y.t["cY+Oob"]),
           onConfirm: () => {
             S(e.id, n)
           }
@@ -186,7 +186,7 @@ function E(e) {
       }
     })]
   }) : (0, r.jsx)("p", {
-    children: C.intl.string(C.t.hvFwHy)
+    children: y.intl.string(y.t.hvFwHy)
   })
 }
 
@@ -211,8 +211,8 @@ async function S(e, t) {
     await j.Z.migratePermissions(e, t)
   } catch (e) {
     f.Z.show({
-      title: C.intl.string(C.t.R0RpRX),
-      body: C.intl.string(C.t["58yMLG"]),
+      title: y.intl.string(y.t.R0RpRX),
+      body: y.intl.string(y.t["58yMLG"]),
       confirmVariant: "secondary"
     })
   }

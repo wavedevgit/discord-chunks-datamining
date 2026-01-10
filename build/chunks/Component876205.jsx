@@ -23,22 +23,22 @@ function u(e) {
   let {
     value: t,
     action: n,
-    shouldShow: l
-  } = e, u = (0, r.e7)([s.ZP], () => s.ZP.getKeybindForAction(n, false, true));
-  if (null == u || !l) return null;
-  let f = o.BB(u.shortcut),
-    h = d[n],
-    p = t ? h.slash : h.default;
+    shouldShow: a
+  } = e, u = (0, r.e7)([o.ZP], () => o.ZP.getKeybindForAction(n, false, true));
+  if (null == u || !a) return null;
+  let h = l.BB(u.shortcut),
+    f = d[n],
+    p = t ? f.slash : f.default;
   return (0, i.jsxs)("div", {
     className: c.keybindIndicator,
     children: [(0, i.jsx)(p, {
       className: c.keybindIcon,
       size: "xs",
       color: "currentColor"
-    }), (0, i.jsx)(a.Text, {
+    }), (0, i.jsx)(s.Text, {
       variant: "text-xxs/semibold",
       className: c.keybindIndicatorText,
-      children: f
+      children: h
     })]
   })
 }

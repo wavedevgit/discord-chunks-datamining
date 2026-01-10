@@ -155,11 +155,11 @@ let k = function(e) {
     B(w(Z({}, H), {
       [R]: e
     }))
-  }, [H, R]), q = i.useCallback(() => {
+  }, [H, R]), K = i.useCallback(() => {
     B(w(Z({}, H), {
       [R]: ""
     }))
-  }, [H, R]), K = i.useMemo(() => R === j.pJs.PENDING && (o.filter(j.pJs.SPAM).length > 0 || o.filter(j.pJs.PENDING_IGNORED).length > 0), [o, R]), Q = i.useMemo(() => o.filter(R, H[R]), [o, H, R]), J = R === j.pJs.PENDING, X = i.useMemo(() => {
+  }, [H, R]), q = i.useMemo(() => R === j.pJs.PENDING && (o.filter(j.pJs.SPAM).length > 0 || o.filter(j.pJs.PENDING_IGNORED).length > 0), [o, R]), Q = i.useMemo(() => o.filter(R, H[R]), [o, H, R]), J = R === j.pJs.PENDING, X = i.useMemo(() => {
     if (!J) return L;
     let e = [];
     return Q.forEach(t => {
@@ -185,7 +185,7 @@ let k = function(e) {
             let e = [];
             return Q.forEach(t => {
               t.giftIntentType === P.hX.FRIEND_ANNIVERSARY && e.push(t)
-            }), e.sort((e, t) => h.Z.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, m.nN), Q]
+            }), e.sort((e, t) => m.Z.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, h.nN), Q]
           }
         default:
           return [Q]
@@ -253,7 +253,7 @@ let k = function(e) {
         })
       }, i)
     }, [ee, R, t, en, er]),
-    ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > m.nN ? (0, r.jsx)("div", {
+    ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > h.nN ? (0, r.jsx)("div", {
       className: A.sectionFooter,
       children: (0, r.jsx)(a.Button, {
         icon: F ? a.u04 : a.CJ0,
@@ -270,7 +270,7 @@ let k = function(e) {
       z(false)
     }, [R, $]), 0 === Q.length && "" === H[R]) return (0, r.jsx)(M, {
     section: R,
-    showSpamCta: K
+    showSpamCta: q
   });
   let eo = "" !== H[R],
     es = 0 === Q.length && eo;
@@ -283,7 +283,7 @@ let k = function(e) {
         children: (0, r.jsx)(a.E1j, {
           query: H[R],
           onChange: W,
-          onClear: q
+          onClear: K
         })
       }), (0, r.jsx)(I.Z, {
         rows: ee,
@@ -293,7 +293,7 @@ let k = function(e) {
         isVirtualizedList: U >= N.nG,
         hasSearchQuery: eo,
         renderSectionFooter: ea,
-        footer: K && !es ? (0, r.jsx)("div", {
+        footer: q && !es ? (0, r.jsx)("div", {
           className: A.viewSpamButton,
           children: (0, r.jsx)(a.Avr, {
             text: x.intl.string(x.t.R40bU2),

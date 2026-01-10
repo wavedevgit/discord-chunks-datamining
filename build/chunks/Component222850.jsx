@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk704215 = require("./704215.js"),
   Chunk952265 = require("./952265.js"),
@@ -35,7 +35,7 @@ let I = Math.ceil(Math.sqrt(115200)),
       dismissContent: P
     } = function() {
       let e = (0, u.useHasAnyModalOpen)(),
-        [t, n] = (0, m.US)(e ? [] : [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.R.PRIVATE_CHANNELS_LIST, true),
+        [t, n] = (0, h.US)(e ? [] : [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.R.PRIVATE_CHANNELS_LIST, true),
         r = i.useCallback(() => {
           n(O.L.TAKE_ACTION)
         }, [n]);
@@ -94,7 +94,7 @@ let I = Math.ceil(Math.sqrt(115200)),
       }), Z({
         glowSpring: 1,
         delay: 700
-      }), h.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), m.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [L, Z]), [k, U] = i.useState(false), G = i.useCallback(e => {
       U(e.contentRect.width)
     }, []), H = (0, f.y)(G, [], {

@@ -90,11 +90,11 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
     s = t, p.HEAP8 = l = new Int8Array(t), p.HEAP16 = new Int16Array(t), p.HEAP32 = h = new Int32Array(t), p.HEAPU8 = m = new Uint8Array(t), p.HEAPU16 = new Uint16Array(t), p.HEAPU32 = new Uint32Array(t), p.HEAPF32 = new Float32Array(t), p.HEAPF64 = new Float64Array(t)
   }
   p.INITIAL_MEMORY;
-  var k = [],
-    x = [],
+  var x = [],
     C = [],
+    k = [],
     H = [];
-  x.push({
+  C.push({
     func: function() {
       tn()
     }
@@ -641,9 +641,9 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
       if (p.preRun)
         for ("function" == typeof p.preRun && (p.preRun = [p.preRun]); p.preRun.length;) {
           var n;
-          n = p.preRun.shift(), k.unshift(n)
+          n = p.preRun.shift(), x.unshift(n)
         }
-      L(k), P > 0 || (p.setStatus ? (p.setStatus("Running..."), setTimeout(() => {
+      L(x), P > 0 || (p.setStatus ? (p.setStatus("Running..."), setTimeout(() => {
         setTimeout(() => {
           p.setStatus("")
         }, 1), r()
@@ -652,7 +652,7 @@ let a = (e = "undefined" != typeof document && document.currentScript ? document
 
     function r() {
       if (!y && (y = true, p.calledRun = true, !M)) {
-        if (L(x), L(C), a(p), p.onRuntimeInitialized && p.onRuntimeInitialized(), p.postRun)
+        if (L(C), L(k), a(p), p.onRuntimeInitialized && p.onRuntimeInitialized(), p.postRun)
           for ("function" == typeof p.postRun && (p.postRun = [p.postRun]); p.postRun.length;) {
             var t;
             t = p.postRun.shift(), H.unshift(t)

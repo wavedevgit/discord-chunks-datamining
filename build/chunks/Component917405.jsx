@@ -1,7 +1,7 @@
-/** Chunk was on 60831 **/
+/** Chunk was on 69813 **/
 /** chunk id: 917405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,142 +17,142 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk156730 = require("./156730.js");
 
-function E(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = r
     })
   }
   return e
 }
-let N = {
+let h = {
     [Chunk981631.QKv.CONNECTED]: Chunk156730.rtcConnectionStatusConnected,
     [Chunk981631.QKv.CONNECTING]: Chunk156730.rtcConnectionStatusConnecting,
     [Chunk981631.QKv.ERROR]: Chunk156730.rtcConnectionStatusError
   },
-  O = {
+  E = {
     [Chunk981631.IE4.FINE]: Chunk156730.rtcConnectionQualityFine,
     [Chunk981631.IE4.AVERAGE]: Chunk156730.rtcConnectionQualityAverage,
     [Chunk981631.IE4.BAD]: Chunk156730.rtcConnectionQualityBad,
     [Chunk981631.IE4.UNKNOWN]: null
   },
-  y = {
+  v = {
     [Chunk981631.IE4.FINE]: Chunk481060.B_b,
     [Chunk981631.IE4.AVERAGE]: Chunk481060.hLg,
     [Chunk981631.IE4.BAD]: Chunk481060.mbS,
     [Chunk981631.IE4.UNKNOWN]: Chunk481060._3e
   };
 
-function C(e) {
+function _(e) {
   var {
     quality: t,
     largePing: n
-  } = e, i = function(e, t) {
+  } = e, l = function(e, t) {
     if (null == e) return {};
-    var n, l, i = function(e, t) {
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var n, l, i = {},
-        r = Object.keys(e);
-      for (l = 0; l < r.length; l++) n = r[l], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, r, l = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return i
+    return l
   }(e, ["quality", "largePing"]);
-  let r = y[t];
-  return (0, l.jsx)(r, E({
-    className: a()(p.ping, {
-      [p.largePing]: n
+  let i = v[t];
+  return (0, r.jsx)(i, m({
+    className: a()(b.ping, {
+      [b.largePing]: n
     })
-  }, i))
+  }, l))
 }
 
-function T(e) {
+function y(e) {
   let {
     quality: t,
     lastPing: n,
-    state: r,
-    className: y,
-    children: T,
-    channelId: _,
-    childrenAsSubtitle: m,
-    connectionStatusTextVariant: I,
-    hasVideo: S
-  } = e, b = i.useRef(null), v = r === h.hes.RTC_CONNECTED, x = i.useCallback(e => {
+    state: i,
+    className: v,
+    children: y,
+    channelId: O,
+    childrenAsSubtitle: C,
+    connectionStatusTextVariant: S,
+    hasVideo: I
+  } = e, N = l.useRef(null), T = i === g.hes.RTC_CONNECTED, x = l.useCallback(e => {
     var t, n;
-    return (0, l.jsx)(f.Z, (t = E({}, e), n = n = {
-      channelId: _
+    return (0, r.jsx)(f.Z, (t = m({}, e), n = n = {
+      channelId: O
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, l)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [_]), {
+  }, [O]), {
     connectionStatus: P,
     connectionStatusText: Z
-  } = d.Z.getStatus(r, S);
-  return (0, l.jsxs)("div", {
-    className: p.rtcConnectionStatusWrapper,
-    children: [(0, l.jsx)("div", {
-      className: a()(p.rtcConnectionStatus, O[t], y),
-      ref: b,
-      children: (0, l.jsx)(s.yRy, {
-        targetElementRef: b,
+  } = d.Z.getStatus(i, I);
+  return (0, r.jsxs)("div", {
+    className: b.rtcConnectionStatusWrapper,
+    children: [(0, r.jsx)("div", {
+      className: a()(b.rtcConnectionStatus, E[t], v),
+      ref: N,
+      children: (0, r.jsx)(c.yRy, {
+        targetElementRef: N,
         renderPopout: x,
         position: "top",
         children: e => {
           let {
-            onClick: i
+            onClick: l
           } = e;
-          return (0, l.jsxs)(l.Fragment, {
-            children: [v && (0, l.jsx)(o.u, {
-              text: t !== h.IE4.UNKNOWN && null != n ? "".concat(n.toFixed(0), " ms") : null,
-              children: (0, l.jsx)(s.P3F, {
-                className: p.clickablePing,
+          return (0, r.jsxs)(r.Fragment, {
+            children: [T && (0, r.jsx)(o.u, {
+              text: t !== g.IE4.UNKNOWN && null != n ? "".concat(n.toFixed(0), " ms") : null,
+              children: (0, r.jsx)(c.P3F, {
+                className: b.clickablePing,
                 onClick: e => {
-                  (0, c.v)(u.Z.RTC_PANEL, c.d.CONNECTION_STATUS), i(e)
+                  (0, u.v)(s.Z.RTC_PANEL, u.d.CONNECTION_STATUS), l(e)
                 },
-                children: (0, l.jsx)(C, {
+                children: (0, r.jsx)(_, {
                   quality: t,
-                  largePing: m
+                  largePing: C
                 })
               })
-            }), (0, l.jsxs)("div", {
-              className: p.labelWrapper,
-              children: [(0, l.jsx)(s.P3F, {
+            }), (0, r.jsxs)("div", {
+              className: b.labelWrapper,
+              children: [(0, r.jsx)(c.P3F, {
                 onClick: e => {
-                  (0, c.v)(u.Z.RTC_PANEL, c.d.CONNECTION_STATUS), i(e)
+                  (0, u.v)(s.Z.RTC_PANEL, u.d.CONNECTION_STATUS), l(e)
                 },
-                children: (0, l.jsx)(g.Z, {
+                children: (0, r.jsx)(p.Z, {
                   text: Z,
-                  textVariant: I,
-                  hasVideo: S,
-                  className: N[P],
-                  hasConnectedChannel: null != _
+                  textVariant: S,
+                  hasVideo: I,
+                  className: h[P],
+                  hasConnectedChannel: null != O
                 })
-              }), m ? T : null]
+              }), C ? y : null]
             })]
           })
         }
       })
-    }), m ? null : T]
+    }), C ? null : y]
   })
 }

@@ -1,8 +1,12 @@
 /** Chunk was on web.js **/
 /** chunk id: 931847, original params: e,t,n (module,exports,re quire) **/
 "use strict";
+require.d(exports, {
+  q: () => a
+});
+var Chunk296009 = require("./296009.js");
 
-function r(e, t, n) {
+function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -10,10 +14,7 @@ function r(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-require.d(exports, {
-  q: () => i
-});
-class i {
+class a {
   toSubmission() {
     return {
       id: this.id,
@@ -30,7 +31,10 @@ class i {
     returntrue
   }
   isEqual(e) {
-    return e instanceof i && e.applicationId === this.applicationId
+    return e instanceof a && e.applicationId === this.applicationId
+  }
+  getUniqueKey() {
+    return "".concat(this.type, "-").concat(this.applicationId)
   }
   getProfileAnalyticsOptions() {
     return {
@@ -46,9 +50,8 @@ class i {
   }
   constructor({
     id: e,
-    type: t,
-    applicationId: n
+    applicationId: t
   }) {
-    r(this, "id", true), r(this, "type", true), r(this, "applicationId", true), this.id = e, this.type = t, this.applicationId = n
+    i(this, "id", true), i(this, "type", true), i(this, "applicationId", true), this.id = e, this.type = r.l.APPLICATION, this.applicationId = t
   }
 }

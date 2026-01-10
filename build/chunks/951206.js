@@ -1,7 +1,7 @@
-/** Chunk was on 56648 **/
+/** Chunk was on 81985 **/
 /** chunk id: 951206, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => d
+  F: () => u
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -11,10 +11,10 @@ var Chunk512722 = require("./512722.js"),
   Chunk254238 = require("./254238.js"),
   Chunk893387 = require("./893387.js");
 
-function d(e, t) {
+function u(e, t) {
   var n;
   let r = null != (n = e.sessionId) ? n : "";
-  (0, o._)(r), (0, o.s6)();
-  let d = null != t ? t : e.channelId;
-  i()(null != d, "attempted to transfer to unknown channel"), e.selfMute !== a.Z.isSelfMute() && l.Z.toggleSelfMute(), e.selfDeaf !== a.Z.isSelfDeaf() && l.Z.toggleSelfDeaf(), (0, c.Z)(d, "discord_client", r), u.default.selectVoiceChannel(d, false)
+  (0, s._)(r), (0, s.s6)();
+  let u = null != t ? t : e.channelId;
+  i()(null != u, "attempted to transfer to unknown channel"), e.selfMute !== o.Z.isSelfMute() && l.Z.toggleSelfMute(), e.selfDeaf !== o.Z.isSelfDeaf() && l.Z.toggleSelfDeaf(), (0, c.Z)(u, "discord_client", r), a.default.selectVoiceChannel(u, false)
 }

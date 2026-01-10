@@ -62,7 +62,7 @@ function P(e) {
     label: e.name,
     value: e.id
   })), [n]), x = async () => {
-    await g(t, c, E.wW.GUILD_ROLE_SUBSCRIPTIONS) && (b(t.id), (0, C.B)({
+    await g(t, c, E.wW.GUILD_ROLE_SUBSCRIPTIONS) && (b(t.id), (0, y.B)({
       title: S.intl.string(S.t["AP/2qe"]),
       body: S.intl.string(S.t.kHMgaK)
     }))
@@ -99,10 +99,10 @@ let w = e => {
     loading: O
   } = (0, b.Z)({
     refreshOnDepChange: u
-  }), C = i.useMemo(() => v.filter(e => {
+  }), y = i.useMemo(() => v.filter(e => {
     var t;
     return e.payout_account_status !== I.C.BLOCKED && (0, m.Z)(null != (t = null == n ? true : n.id) ? t : N.lds, e)
-  }), [v, n]), E = C.length > 0, w = i.useCallback(async () => {
+  }), [v, n]), E = y.length > 0, w = i.useCallback(async () => {
     j.default.track(N.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: s,
       has_eligible_team: E,
@@ -131,7 +131,7 @@ let w = e => {
       }),
       children: E ? (0, r.jsx)(P, {
         guild: t,
-        eligibleTeams: C,
+        eligibleTeams: y,
         isGuildOwner: a
       }) : (0, r.jsx)(T, {
         onCreateTeamClick: w,
@@ -139,7 +139,7 @@ let w = e => {
       })
     }), (0, r.jsx)(o.gNt, {
       label: S.intl.string(S.t["0n7R2X"]),
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(C.Z, {
         guildId: t.id,
         allPeriods: []
       })

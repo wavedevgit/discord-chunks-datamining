@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 596040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -12,8 +12,8 @@ function o(e, t) {
   let n = (0, l.z)(),
     o = (0, a.Z)(t),
     s = null != e && "" !== e || o;
-  return i.useEffect(() => {
-    s && n && (0, r.w1)({
+  return r.useEffect(() => {
+    s && n && (0, i.w1)({
       guildId: e
     })
   }, [e, n, s]), s && n

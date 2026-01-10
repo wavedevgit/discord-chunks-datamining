@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => P
+  I: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -29,17 +29,17 @@ var Chunk54381 = require("./54381.js"),
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
@@ -49,8 +49,8 @@ function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -58,72 +58,72 @@ function _(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     hangStatusActivity: t,
     channel: n,
     userId: l,
-    setPopoutRef: P
-  } = e, I = r.useRef(null), Z = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === n.id), T = (0, o.e7)([d.Z], () => d.Z.can(x.Plq.CONNECT, n)), N = (null == t ? true : t.emoji) == null || (0, g.K)(t.emoji, n);
-  r.useEffect(() => {
-    null == P || P(null == I ? true : I.current)
-  }, [I, P]), r.useEffect(() => {
-    f.default.track(x.rMx.VIEW_HANG_STATUS, S({
+    setPopoutRef: I
+  } = e, P = i.useRef(null), Z = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === n.id), N = (0, o.e7)([d.Z], () => d.Z.can(j.Plq.CONNECT, n)), T = (null == t ? true : t.emoji) == null || (0, m.K)(t.emoji, n);
+  i.useEffect(() => {
+    null == I || I(null == P ? true : P.current)
+  }, [P, I]), i.useEffect(() => {
+    f.default.track(j.rMx.VIEW_HANG_STATUS, S({
       source: "HangStatusPopout",
       other_user_id: l
     }, (0, b.Z)(n.id)))
   }, [n.guild_id, n.id, l]);
-  let A = r.useCallback(() => {
-      !Z && T && (u.default.selectVoiceChannel(n.id), f.default.track(x.rMx.HANG_STATUS_CTA_CLICKED, _(S({
+  let A = i.useCallback(() => {
+      !Z && N && (u.default.selectVoiceChannel(n.id), f.default.track(j.rMx.HANG_STATUS_CTA_CLICKED, _(S({
         source: "HangStatusPopout"
       }, (0, b.Z)(n.id)), {
         other_user_id: l,
         cta_type: "join"
       })))
-    }, [Z, T, n.id, l]),
-    w = r.useCallback(() => {
-      if (!Z || !N || null == t.state) return;
-      let [e] = (0, C.F)(l, t.state);
+    }, [Z, N, n.id, l]),
+    w = i.useCallback(() => {
+      if (!Z || !T || null == t.state) return;
+      let [e] = (0, y.F)(l, t.state);
       if (null != e) {
-        if (e === v.tN.CUSTOM) {
+        if (e === O.tN.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
           (0, h._s)(t.details, t.emoji, true)
         } else(0, h.Zx)(e, true);
-        f.default.track(x.rMx.HANG_STATUS_CTA_CLICKED, _(S({
+        f.default.track(j.rMx.HANG_STATUS_CTA_CLICKED, _(S({
           source: "HangStatusPopout"
         }, (0, b.Z)(n.id)), {
           other_user_id: l,
           cta_type: "swipe"
         }))
       }
-    }, [Z, N, t, n.id, l]);
-  return (0, i.jsxs)("div", {
-    ref: I,
-    className: a()(j.popover, E.container),
-    children: [(0, i.jsx)(y.Z, {
+    }, [Z, T, t, n.id, l]);
+  return (0, r.jsxs)("div", {
+    ref: P,
+    className: a()(E.popover, C.container),
+    children: [(0, r.jsx)(v.Z, {
       userId: l,
       size: 32,
-      className: E.icon,
+      className: C.icon,
       hangStatusActivity: t
-    }), (0, i.jsx)(c.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
-      className: E.statusText,
-      children: (0, m.O8)(l, t)
-    }), Z ? (0, i.jsx)(s.u, {
-      text: N ? true : O.intl.string(O.t["0LMpW+"]),
-      children: (0, i.jsx)("div", {
-        children: (0, i.jsx)(c.Button, {
+      className: C.statusText,
+      children: (0, g.O8)(l, t)
+    }), Z ? (0, r.jsx)(s.u, {
+      text: T ? true : x.intl.string(x.t["0LMpW+"]),
+      children: (0, r.jsx)("div", {
+        children: (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
-          text: O.intl.string(O.t["0eHzpm"]),
+          text: x.intl.string(x.t["0eHzpm"]),
           onClick: w,
-          disabled: !N
+          disabled: !T
         })
       })
-    }) : T && (0, i.jsx)(c.Button, {
+    }) : N && (0, r.jsx)(c.Button, {
       size: "sm",
       variant: "secondary",
-      text: O.intl.string(O.t["B/dHXL"]),
+      text: x.intl.string(x.t["B/dHXL"]),
       onClick: A
     })]
   })

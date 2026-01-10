@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 272193, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,26 +13,45 @@ var Chunk913527 = require("./913527.js"),
   Chunk570140 = require("./570140.js"),
   Chunk666086 = require("./666086.js"),
   Chunk441623 = require("./441623.js"),
+  Chunk752048 = require("./752048.js"),
   Chunk594174 = require("./594174.js"),
   Chunk246992 = require("./246992.js"),
   Chunk555109 = require("./555109.js"),
   Chunk663618 = require("./663618.js");
 
-function x() {
+function b(e) {
+  let t = new Date(e);
+  return t.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  }) + " " + t.toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true
+  })
+}
+
+function g() {
   let e = (0, l.e7)([u.ZP], () => u.ZP.getDevToolTotalFriendAnniversaries()),
     t = (0, l.e7)([u.ZP], () => u.ZP.getDevToolCurrentDate()),
     n = (0, l.e7)([u.ZP], () => u.ZP.getGiftUnreadNotificationLastDismissedTimes()),
     r = (0, l.e7)([u.ZP], () => u.ZP.getMessageGiftIntentLastShownMap()),
-    x = (0, l.e7)([u.ZP], () => u.ZP.getHighestAffinityFriendAnniversaries()),
-    b = (0, l.e7)([u.ZP], () => u.ZP.getHighAffinityFriendAnniversaries()),
-    g = e => {
+    g = (0, l.e7)([u.ZP], () => u.ZP.getHighestAffinityFriendAnniversaries()),
+    v = (0, l.e7)([u.ZP], () => u.ZP.getHighAffinityFriendAnniversaries()),
+    j = (0, l.e7)([u.ZP], () => u.ZP.getProfilePopoutGiftIntentsDismissMap()),
+    y = e => {
       c.Z.dispatch({
         type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
         total: e
       })
+    },
+    C = e => {
+      let t = m.Z.getUserAffinity(e);
+      return (null == t ? true : t.dmProbability) != null ? "".concat((100 * t.dmProbability).toFixed(3), "%") : "N/A"
     };
   return (0, a.jsx)(o.zJl, {
-    className: h.panel,
+    className: x.panel,
     children: (0, a.jsxs)("div", {
       className: f.panelInner,
       children: [(0, a.jsx)(o.Text, {
@@ -78,15 +97,15 @@ function x() {
             }],
             value: e,
             onChange: e => {
-              g(e)
+              y(e)
             },
-            popoutLayerContext: p.O$
+            popoutLayerContext: h.O$
           }), (0, a.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: "Clear",
             onClick: () => {
-              g(null)
+              y(null)
             }
           })]
         })
@@ -94,32 +113,38 @@ function x() {
         className: f.panelRow,
         children: (0, a.jsxs)(o.Kqy, {
           gap: 8,
-          children: [x.length > 0 && (0, a.jsxs)(o.Kqy, {
+          children: [(0, a.jsx)(o.Text, {
+            variant: "text-xs/normal",
+            children: "Affinity is the percent chance that User A will DM or GDM User B in the next 7 days."
+          }), (0, a.jsx)(o.Text, {
+            variant: "text-xs/normal",
+            children: "The devtool automatically assigns users as high affinity regardless of actual affinity for testing."
+          }), g.length > 0 && (0, a.jsxs)(o.Kqy, {
             gap: 4,
             children: [(0, a.jsx)(o.Text, {
               variant: "text-xs/semibold",
               children: "Highest Affinity Friend Anniversaries (Eligible for Notification):"
-            }), x.map(e => {
+            }), g.map(e => {
               var t;
-              let n = m.default.getUser(e),
+              let n = p.default.getUser(e),
                 r = null != (t = null == n ? true : n.username) ? t : "Unknown User (".concat(e, ")");
-              return (0, a.jsx)(o.Text, {
+              return (0, a.jsxs)(o.Text, {
                 variant: "text-xs/normal",
-                children: r
+                children: [r, " (", C(e), ")"]
               }, e)
             })]
-          }), b.length > 0 && (0, a.jsxs)(o.Kqy, {
+          }), v.length > 0 && (0, a.jsxs)(o.Kqy, {
             gap: 4,
             children: [(0, a.jsx)(o.Text, {
               variant: "text-xs/semibold",
               children: "High Affinity Friend Anniversaries:"
-            }), b.map(e => {
+            }), v.map(e => {
               var t;
-              let n = m.default.getUser(e),
+              let n = p.default.getUser(e),
                 r = null != (t = null == n ? true : n.username) ? t : "Unknown User (".concat(e, ")");
-              return (0, a.jsx)(o.Text, {
+              return (0, a.jsxs)(o.Text, {
                 variant: "text-xs/normal",
-                children: r
+                children: [r, " (", C(e), ")"]
               }, e)
             })]
           })]
@@ -178,10 +203,10 @@ function x() {
               children: "Gift Message Intent Last Shown:"
             }), Object.entries(r).map(e => {
               var t;
-              let [n, r] = e, l = m.default.getUser(n), s = null != (t = null == l ? true : l.username) ? t : "Unknown User (".concat(n, ")");
+              let [n, r] = e, i = p.default.getUser(n), l = null != (t = null == i ? true : i.username) ? t : "Unknown User (".concat(n, ")");
               return (0, a.jsxs)(o.Text, {
                 variant: "text-xs/normal",
-                children: [s, ": ", i()(r).format("MMM D, YYYY h:mm A")]
+                children: [l, ": ", b(r)]
               }, n)
             })]
           })]
@@ -213,7 +238,7 @@ function x() {
               children: "Gift notification shown timestamps:"
             }), n.map((e, t) => (0, a.jsx)(o.Text, {
               variant: "text-xs/normal",
-              children: i()(e).format("MMM D, YYYY h:mm A")
+              children: b(e)
             }, t))]
           })]
         })
@@ -245,21 +270,41 @@ function x() {
             })
           }
         })]
-      }), (0, a.jsxs)("div", {
+      }), (0, a.jsx)("div", {
         className: f.panelRow,
-        children: [(0, a.jsx)(o.Text, {
-          variant: "text-md/normal",
-          children: "Reset profile popout gift intents dismiss"
-        }), (0, a.jsx)(o.Button, {
-          variant: "primary",
-          size: "sm",
-          text: "Reset",
-          onClick: () => {
-            c.Z.dispatch({
-              type: "DEV_TOOLS_PROFILE_POPOUT_GIFT_INTENTS_DISMISS_RESET"
-            })
-          }
-        })]
+        children: (0, a.jsxs)(o.Kqy, {
+          gap: 8,
+          children: [(0, a.jsxs)(o.Kqy, {
+            gap: 8,
+            direction: "horizontal",
+            children: [(0, a.jsx)(o.Text, {
+              variant: "text-md/normal",
+              children: "Reset profile popout gift intents dismiss"
+            }), (0, a.jsx)(o.Button, {
+              variant: "primary",
+              size: "sm",
+              text: "Reset",
+              onClick: () => {
+                c.Z.dispatch({
+                  type: "DEV_TOOLS_PROFILE_POPOUT_GIFT_INTENTS_DISMISS_RESET"
+                })
+              }
+            })]
+          }), Object.keys(j).length > 0 && (0, a.jsxs)(o.Kqy, {
+            gap: 4,
+            children: [(0, a.jsx)(o.Text, {
+              variant: "text-xs/semibold",
+              children: "Profile Popout Gift Intents Dismissed:"
+            }), Object.entries(j).map(e => {
+              var t;
+              let [n, r] = e, i = p.default.getUser(n), l = null != (t = null == i ? true : i.username) ? t : "Unknown User (".concat(n, ")");
+              return (0, a.jsxs)(o.Text, {
+                variant: "text-xs/normal",
+                children: [l, ": ", b(r)]
+              }, n)
+            })]
+          })]
+        })
       })]
     })
   })

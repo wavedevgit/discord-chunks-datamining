@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk370774 = require("./370774.js"),
   Chunk616182 = require("./616182.js"),
   Chunk663618 = require("./663618.js");
-let h = [{
+let f = [{
     key: "channelName",
     cellClassName: i()(Chunk616182.cell, Chunk616182.channelName),
     render(e) {
@@ -94,18 +94,18 @@ function b() {
     hasPreloaded: u.Z.hasPreloaded,
     hasMoreToLoad: u.Z.hasMoreToLoad,
     isLoadingComplete: u.Z.isLoadingComplete
-  })), v = (0, l.e7)([u.Z], () => u.Z.currentRequestAnalyticsPayload), j = (0, l.cj)([u.Z], () => u.Z.getChannelInfoMap()), C = (0, l.cj)([d.Z], () => {
+  })), v = (0, l.e7)([u.Z], () => u.Z.currentRequestAnalyticsPayload), j = (0, l.cj)([u.Z], () => u.Z.getChannelInfoMap()), y = (0, l.cj)([d.Z], () => {
     let e = {};
     return Object.entries(j).forEach(t => {
       let [n] = t, a = d.Z.getChannel(n);
       e[n] = null != a ? a : null
     }), e
-  }), y = (0, l.cj)([d.Z], () => t.reduce((e, t) => {
+  }), C = (0, l.cj)([d.Z], () => t.reduce((e, t) => {
     let n = d.Z.getChannel(t);
     return e[t] = null != n ? n : null, e
   }, {})), _ = (0, l.e7)([u.Z], () => u.Z.getInboxMessages()), S = (0, l.e7)([u.Z], () => u.Z.getDevOverrides().navOnClick);
   return (0, a.jsx)("div", {
-    className: f.panel,
+    className: h.panel,
     children: (0, a.jsxs)(s.zJl, {
       className: p.content,
       children: [(0, a.jsxs)("div", {
@@ -147,8 +147,8 @@ function b() {
         }), (0, a.jsxs)("div", {
           children: ["Unread Channel Count: ", t.length]
         }), (0, a.jsx)(c.Z, {
-          columns: h,
-          data: Object.entries(y).map(e => {
+          columns: f,
+          data: Object.entries(C).map(e => {
             var t;
             let [n, a] = e;
             return {
@@ -189,7 +189,7 @@ function b() {
             return {
               key: a,
               channelId: a,
-              channelName: null != (n = null == (t = C[a]) ? true : t.name) ? n : "",
+              channelName: null != (n = null == (t = y[a]) ? true : t.name) ? n : "",
               loadState: r.loadState
             }
           })

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 887012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -8,10 +8,10 @@ var Chunk822183 = require("./822183.js"),
 
 function l(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = (0, r.Z)(e),
+    n = (0, i.Z)(e),
     {
       isSharedCanvasEnabled: l
-    } = i.Z.useExperiment({
+    } = r.Z.useExperiment({
       guildId: e.guild_id,
       location: "6b64ff_1"
     }, {

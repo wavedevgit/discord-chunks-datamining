@@ -1,4 +1,4 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 334374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -13,17 +13,17 @@ function c(e) {
   let {
     currentUserId: t,
     participant: n
-  } = e, c = (0, l.Z)(n.type), [s, u] = i.useState(), [d, f] = i.useState(), [p, b] = i.useState(), m = n.id.split(":").at(false), g = t === m, v = i.useCallback((e, t, n) => {
-    var r, i, l;
+  } = e, c = (0, i.Z)(n.type), [s, u] = l.useState(), [d, f] = l.useState(), [p, g] = l.useState(), b = n.id.split(":").at(false), m = t === b, h = l.useCallback((e, t, n) => {
+    var r, l, i;
     let o = n ? a.ZP.getOutboundStats(t) : a.ZP.getInboundStats(e, t);
-    u(null != (r = null == o ? true : o.codec) ? r : "unknown"), f(true === (i = null == o ? true : o.resolution) || 0 === i.width && 0 === i.height ? "unknown" : i.width + " x " + i.height), b((null == o ? true : o.bitrateEstimate) !== true ? (l = o.bitrateEstimate, "".concat((l / 1e3).toFixed(2), " Kbps")) : "unknown")
+    u(null != (r = null == o ? true : o.codec) ? r : "unknown"), f(true === (l = null == o ? true : o.resolution) || 0 === l.width && 0 === l.height ? "unknown" : l.width + " x " + l.height), g((null == o ? true : o.bitrateEstimate) !== true ? (i = o.bitrateEstimate, "".concat((i / 1e3).toFixed(2), " Kbps")) : "unknown")
   }, []);
-  return i.useEffect(() => {
-    let e = () => v(m, c, g);
+  return l.useEffect(() => {
+    let e = () => h(b, c, m);
     e();
     let t = setInterval(e, 1e3);
     return () => clearInterval(t)
-  }, [g, m, c, v]), (0, r.jsxs)("div", {
+  }, [m, b, c, h]), (0, r.jsxs)("div", {
     className: o.streamInfoContainer,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("strong", {
@@ -43,7 +43,7 @@ function c(e) {
       }), (0, r.jsx)("strong", {
         children: d
       })]
-    }), g && (0, r.jsxs)("div", {
+    }), m && (0, r.jsxs)("div", {
       className: o.infoRow,
       children: [(0, r.jsx)("span", {
         children: "Bitrate Estimate: "

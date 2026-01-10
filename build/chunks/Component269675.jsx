@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.getGuild(t), [t]), j = (0, a.e7)([g.Z], () => g.Z.isConnected()), P = (0, p.Z)(t), x = (0, E.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([g.Z], () => g.Z.isConnected()), P = (0, p.Z)(t), x = (0, E.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || A || L;
@@ -53,13 +53,13 @@ function j(e) {
   }
   return (0, r.jsxs)("div", {
     className: N.container,
-    children: [(0, r.jsxs)(m.Z, {
+    children: [(0, r.jsxs)(h.Z, {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       className: N.headerBar,
-      children: [(0, r.jsx)(m.Z.Icon, {
+      children: [(0, r.jsx)(h.Z.Icon, {
         icon: (0, o.GSL)(O.Z),
         "aria-hidden": true
-      }), (0, r.jsx)(m.Z.Title, {
+      }), (0, r.jsx)(h.Z.Title, {
         children: T.intl.string(T.t["KzCF/6"])
       })]
     }), (0, r.jsx)("div", {

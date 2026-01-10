@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 893732, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -14,32 +14,32 @@ function o(e) {
     onClose: t,
     guildName: n
   } = e;
-  return (0, i.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: a.container,
-    children: [(0, i.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: a.iconContainer,
-      children: (0, i.jsx)(r.YlB, {
+      children: (0, r.jsx)(i.YlB, {
         size: "custom",
         color: "currentColor",
         className: a.icon,
         width: 20,
         height: 20
       })
-    }), (0, i.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: a.header,
-      children: [(0, i.jsx)(r.Heading, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-md/semibold",
         className: a.headerText,
         children: l.intl.string(l.t.LIIyeE)
-      }), (0, i.jsx)(r.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         children: l.intl.format(l.t["4/6vQh"], {
           guildName: n
         })
-      }), (0, i.jsx)("div", {
+      }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: a.button,
-        children: (0, i.jsx)(r.Button, {
+        children: (0, r.jsx)(i.Button, {
           variant: "primary",
           text: l.intl.string(l.t.BddRzS),
           onClick: t

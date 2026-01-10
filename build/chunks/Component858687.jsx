@@ -1,34 +1,29 @@
 /** Chunk was on 25421 **/
 /** chunk id: 858687, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
-  Chunk489618 = require("./489618.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk933557 = require("./933557.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e, t) {
-  let {
-    rearrangeContextMenu: f
-  } = o.Z.useExperiment({
-    location: "useChannelLeaveItem"
-  }), b = i.useCallback(() => {
-    let i = (0, u.F6)(e, s.default, c.Z),
-      o = d.intl.formatToPlainString(d.t.hJ5Ap4, {
+function d(e, t) {
+  let d = i.useCallback(() => {
+    let i = (0, s.F6)(e, c.default, o.Z),
+      d = u.intl.formatToPlainString(u.t.hJ5Ap4, {
         name: i
       }),
-      f = d.intl.format(d.t.SSIVOu, {
+      f = u.intl.format(u.t.SSIVOu, {
         name: i
       });
-    e.isManaged() && (o = d.intl.formatToPlainString(d.t.hVGjEW, {
+    e.isManaged() && (d = u.intl.formatToPlainString(u.t.hVGjEW, {
       name: i
-    }), f = d.intl.format(d.t.IK1Qvs, {
+    }), f = u.intl.format(u.t.IK1Qvs, {
       name: i
     }));
     let b = function(n) {
@@ -57,7 +52,7 @@ function f(e, t) {
         }
         return e
       }({
-        header: o,
+        header: d,
         body: f,
         onSubmit: b
       }, t))
@@ -65,9 +60,8 @@ function f(e, t) {
   }, [e, t]);
   return (0, r.jsx)(l.sNh, {
     id: "leave-channel",
-    label: d.intl.string(d.t["26C4oi"]),
-    action: b,
-    color: "danger",
-    subtext: f ? d.intl.string(d.t["2HOk0k"]) : true
+    label: u.intl.string(u.t["26C4oi"]),
+    action: d,
+    color: "danger"
   })
 }

@@ -41,47 +41,47 @@ function _(e) {
 }
 let E = {
   [Chunk981631.AzA.NOW_PLAYING]: {
-    single: (e, t) => m.intl.format(m.t.NEckza, {
+    single: (e, t) => h.intl.format(h.t.NEckza, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => m.intl.format(m.t["6uWulc"], {
+    double: (e, t, n) => h.intl.format(h.t["6uWulc"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => m.intl.format(m.t["8fMgRU"], {
+    other: e => h.intl.format(h.t["8fMgRU"], {
       count: e
     })
   },
   [Chunk981631.AzA.RECENTLY_PLAYED]: {
-    single: (e, t) => m.intl.format(m.t["nB/JNB"], {
+    single: (e, t) => h.intl.format(h.t["nB/JNB"], {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => m.intl.format(m.t.AZCcHU, {
+    double: (e, t, n) => h.intl.format(h.t.AZCcHU, {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => m.intl.format(m.t.yNuaTU, {
+    other: e => h.intl.format(h.t.yNuaTU, {
       count: e
     })
   },
   [Chunk981631.AzA.EVER_PLAYED]: {
-    single: (e, t) => m.intl.format(m.t.Fecf3N, {
+    single: (e, t) => h.intl.format(h.t.Fecf3N, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => m.intl.format(m.t["0LiGbJ"], {
+    double: (e, t, n) => h.intl.format(h.t["0LiGbJ"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => m.intl.format(m.t.Yx1rjU, {
+    other: e => h.intl.format(h.t.Yx1rjU, {
       count: e
     })
   }
@@ -101,7 +101,7 @@ class O extends Chunk473749.PureComponent {
         var n, i;
         return (0, r.jsx)("span", (n = _({
           ref: this.activityDiscordTagRef,
-          className: h.username
+          className: m.username
         }, t), i = i = {
           children: e.username
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -126,9 +126,9 @@ class O extends Chunk473749.PureComponent {
       userInfo: i
     } = e;
     return 0 === i.length ? null : (0, r.jsxs)("div", {
-      className: a()(h.recommendationActivity, t),
+      className: a()(m.recommendationActivity, t),
       children: [(0, r.jsx)(p.Z, {
-        className: h.players,
+        className: m.players,
         users: i.map(e => {
           let {
             user: t
@@ -139,18 +139,18 @@ class O extends Chunk473749.PureComponent {
         max: 4,
         renderMoreUsers: this.renderPlayerOverflow
       }), (0, r.jsx)("div", {
-        className: h.description,
+        className: m.description,
         children: this.renderDescription(n, i)
       })]
     })
   }
   constructor(...e) {
     super(...e), b(this, "activityDiscordTagRef", i.createRef()), b(this, "playerAvatarRef", i.createRef()), b(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
-      className: h.tooltip,
+      className: m.tooltip,
       children: [(0, r.jsx)("div", {
         children: f.ZP.getUserTag(e)
       }), (0, r.jsx)(u.ZP, {
-        className: h.tooltipTimestamp,
+        className: m.tooltipTimestamp,
         start: t,
         end: n,
         location: u.ZP.Locations.ACTIVITY_FEED
@@ -170,8 +170,8 @@ class O extends Chunk473749.PureComponent {
           }),
           children: (0, r.jsx)(s.qEK, _({
             ref: this.playerAvatarRef,
-            className: a()(h.playerAvatar, {
-              [h.avatarMasked]: !i
+            className: a()(m.playerAvatar, {
+              [m.avatarMasked]: !i
             }),
             src: e.getAvatarURL(true, 32),
             "aria-label": e.username,
@@ -180,7 +180,7 @@ class O extends Chunk473749.PureComponent {
         })
       }, e.id)
     }), b(this, "renderPlayerOverflow", (e, t, n) => (0, r.jsx)("div", {
-      className: h.playerOverflow,
+      className: m.playerOverflow,
       children: e
     }, n))
   }

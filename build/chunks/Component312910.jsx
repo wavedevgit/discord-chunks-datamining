@@ -23,12 +23,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk708881 = require("./708881.js");
-let C = {
+let y = {
     page: Chunk981631.ZY5.GUILD_SETTINGS,
     section: Chunk981631.jXE.GUILD_SETTINGS_STICKERS,
     object: Chunk981631.qAy.BOOSTING_BANNER
   },
-  y = e => {
+  C = e => {
     let {
       guild: t
     } = e, {
@@ -51,7 +51,7 @@ let C = {
           text: v.intl.string(v.t.Q5dbTi),
           onClick: () => (0, d.Z)({
             analyticsLocations: n,
-            analyticsLocation: C,
+            analyticsLocation: y,
             guildId: t.id,
             totalNumberOfSlotsToAssign: a
           })
@@ -139,7 +139,7 @@ let C = {
             guild: e,
             guildStickers: t
           }), (0, r.jsx)(N, {})]
-        }) : (0, r.jsx)(y, {
+        }) : (0, r.jsx)(C, {
           guild: e
         }), (0, r.jsx)(l.izJ, {
           className: O.divider

@@ -1,8 +1,8 @@
-/** Chunk was on 39380 **/
+/** Chunk was on 33131 **/
 /** chunk id: 70399, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
   T: () => j,
-  Z: () => g
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,45 +19,45 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk890302 = require("./890302.js");
 
-function g(e) {
+function x(e) {
   let {
     applicationId: a,
     size: l = "default"
-  } = e, t = (0, c.e7)([v.Z], () => v.Z.getApplicationWidgetApplicationConfig(a));
-  return (0, i.jsxs)("div", {
-    className: r()(x.container, {
-      [x.sizeSmall]: "small" === l
+  } = e, i = (0, c.e7)([v.Z], () => v.Z.getApplicationWidgetConfig(a));
+  return (0, t.jsxs)("div", {
+    className: r()(g.container, {
+      [g.sizeSmall]: "small" === l
     }),
-    children: [(0, i.jsxs)("div", {
-      className: x.content,
-      children: [(0, i.jsx)("div", {
-        className: x.header
-      }), (0, i.jsx)("div", {
-        className: x.divider
-      }), (0, i.jsxs)("div", {
-        className: x.stats,
-        children: [(0, i.jsx)("div", {
-          className: x.stat
-        }), (0, i.jsx)("div", {
-          className: x.stat
-        }), (0, i.jsx)("div", {
-          className: x.stat
-        }), (0, i.jsx)("div", {
-          className: x.stat
-        }), (0, i.jsx)("div", {
-          className: x.stat
-        }), (0, i.jsx)("div", {
-          className: x.stat
+    children: [(0, t.jsxs)("div", {
+      className: g.content,
+      children: [(0, t.jsx)("div", {
+        className: g.header
+      }), (0, t.jsx)("div", {
+        className: g.divider
+      }), (0, t.jsxs)("div", {
+        className: g.stats,
+        children: [(0, t.jsx)("div", {
+          className: g.stat
+        }), (0, t.jsx)("div", {
+          className: g.stat
+        }), (0, t.jsx)("div", {
+          className: g.stat
+        }), (0, t.jsx)("div", {
+          className: g.stat
+        }), (0, t.jsx)("div", {
+          className: g.stat
+        }), (0, t.jsx)("div", {
+          className: g.stat
         })]
       })]
-    }), (0, i.jsx)("div", {
-      className: x.imageContainer,
-      children: (null == t ? true : t.mini_preview_image) != null ? (0, i.jsx)("img", {
-        src: t.mini_preview_image,
+    }), (0, t.jsx)("div", {
+      className: g.imageContainer,
+      children: (null == i ? true : i.miniPreviewImage) != null ? (0, t.jsx)("img", {
+        src: i.miniPreviewImage,
         alt: "",
-        className: x.previewImage
-      }) : (0, i.jsx)("div", {
-        className: x.previewImagePlaceholder
+        className: g.previewImage
+      }) : (0, t.jsx)("div", {
+        className: g.previewImagePlaceholder
       })
     })]
   })
@@ -69,34 +69,34 @@ function j(e) {
     size: l = "default"
   } = e, {
     trackUserProfileAction: n
-  } = (0, m.KZ)(), r = (0, p.q)(a), {
+  } = (0, p.KZ)(), r = (0, m.q)(a), {
     hasAlreadyLinked: c,
     canStartAuthorization: v,
-    startAuthorization: g,
+    startAuthorization: x,
     fetched: j
   } = (0, u.FG)(r), {
     analyticsLocations: h
-  } = (0, d.ZP)(o.Z.USER_PROFILE_APPLICATION_WIDGET), N = t.useCallback(() => {
+  } = (0, d.ZP)(o.Z.USER_PROFILE_APPLICATION_WIDGET), N = i.useCallback(() => {
     v && (n({
       action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
       applicationId: a
-    }), g({
+    }), x({
       analyticsLocations: h
     }))
-  }, [v, n, a, g, h]);
-  return "default" !== l || null == r ? null : (0, i.jsxs)("div", {
-    className: x.footer,
-    children: [(0, i.jsx)(s.uIJ, {
+  }, [v, n, a, x, h]);
+  return "default" !== l || null == r ? null : (0, t.jsxs)("div", {
+    className: g.footer,
+    children: [(0, t.jsx)(s.uIJ, {
       size: "xs"
-    }), (0, i.jsx)(s.xvT, {
+    }), (0, t.jsx)(s.xvT, {
       variant: "text-sm/medium",
       color: "text-subtle",
       children: j ? c ? f.intl.format(f.t.wiyuG9, {
         applicationName: r.name
       }) : v ? f.intl.format(f.t.RNWFOQ, {
         onConnect: N
-      }) : f.intl.string(f.t["9TX4UT"]) : (0, i.jsx)("div", {
-        className: x.footerPlaceholder
+      }) : f.intl.string(f.t["9TX4UT"]) : (0, t.jsx)("div", {
+        className: g.footerPlaceholder
       })
     })]
   })

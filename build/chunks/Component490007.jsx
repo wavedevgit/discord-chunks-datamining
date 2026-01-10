@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 490007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,13 +20,13 @@ let p = [{
     id: "nitro",
     name: "Nitro Components"
   }],
-  f = {
+  h = {
     "virtual-currency": Chunk595925.O,
     nitro: Chunk488922.X
   };
 
-function h() {
-  let [e, t] = r.useState("virtual-currency"), n = r.useMemo(() => f[e], [e]);
+function f() {
+  let [e, t] = r.useState("virtual-currency"), n = r.useMemo(() => h[e], [e]);
   return (0, a.jsxs)("div", {
     className: l()(u.panel, m.container),
     children: [(0, a.jsx)(o.njP, {

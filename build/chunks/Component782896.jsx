@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 782896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => h
+  c: () => f
 }), require("./388685.js"), require("./290780.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk797670 = require("./797670.jsx"),
   Chunk956778 = require("./956778.js");
 
-function f(e) {
+function p(e) {
   let {
     children: t
   } = e;
@@ -26,17 +26,17 @@ function f(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guildIds: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), o = (0, l.Wu)([s.Z], () => t.map(e => s.Z.getGuild(e)), [t]), h = (0, i.useMemo)(() => o.filter(e => null != e), [o]), {
-    visibleGuilds: p,
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), o = (0, l.Wu)([s.Z], () => t.map(e => s.Z.getGuild(e)), [t]), f = (0, i.useMemo)(() => o.filter(e => null != e), [o]), {
+    visibleGuilds: h,
     numTruncated: g
   } = (0, i.useMemo)(() => {
-    let e = [...h];
+    let e = [...f];
     if (null != n) {
-      let t = h.findIndex(e => e.id === n);
-      false !== t && (e.splice(t, 1), e.unshift(h[t]))
+      let t = f.findIndex(e => e.id === n);
+      false !== t && (e.splice(t, 1), e.unshift(f[t]))
     }
     return 4 === e.length ? {
       visibleGuilds: e,
@@ -47,15 +47,15 @@ function h(e) {
       visibleGuilds: e.slice(0, 3),
       numTruncated: e.length - 3
     }
-  }, [h, n]);
+  }, [f, n]);
   return (0, r.jsxs)("div", {
     className: d.facepile,
-    children: [p.map(e => (0, r.jsx)(f, {
+    children: [h.map(e => (0, r.jsx)(p, {
       children: (0, r.jsx)(u.V, {
         guild: e,
         size: 20
       })
-    }, e.id)), g > 0 && (0, r.jsx)(f, {
+    }, e.id)), g > 0 && (0, r.jsx)(p, {
       children: (0, r.jsxs)(a.Text, {
         className: d.textItem,
         color: "text-subtle",

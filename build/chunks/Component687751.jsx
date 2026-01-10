@@ -69,30 +69,30 @@ class E extends Chunk317770.Z {
         source: t
       }, n))
     }, {
-      modalKey: m.dG,
-      onCloseRequest: h.dG4,
+      modalKey: h.dG,
+      onCloseRequest: m.dG4,
       backdropStyle: (0, o.bj)(t) ? i.fCB.LIGHTBOX : true
     })
   }
   handleAgeGateSuccess() {
-    s.Z.showSuccessToast(b.wQ.EXISTING_USER_AGE_GATE_SUCCESS), (0, i.Mr3)(m.dG)
+    s.Z.showSuccessToast(b.wQ.EXISTING_USER_AGE_GATE_SUCCESS), (0, i.Mr3)(h.dG)
   }
   handleAgeGateFailure(e) {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(m.dG, e => (0, r.jsx)(g.default, _({
+    (0, i.oav)(h.dG, e => (0, r.jsx)(g.default, _({
       underageMessage: t
     }, e)))
   }
   handleAgeGateModalClose() {
-    (0, i.Mr3)(m.dG)
+    (0, i.Mr3)(h.dG)
   }
   handleGuildUpdate(e) {
     let {
       guild: t
     } = e, n = d.Z.getGuildId();
-    if (null != n && t.id === n && (t.owner_configured_content_level === h.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
+    if (null != n && t.id === n && (t.owner_configured_content_level === m.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
   }
 }
 let O = new E

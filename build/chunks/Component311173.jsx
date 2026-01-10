@@ -59,7 +59,7 @@ function h(e) {
     value: "",
     selections: [],
     isSelecting: false
-  })), C = i.useMemo(() => x.reduce((e, t) => {
+  })), y = i.useMemo(() => x.reduce((e, t) => {
     let {
       pattern: n,
       message: r,
@@ -73,7 +73,7 @@ function h(e) {
       erroringCharacterLength: l,
       erroringCharacterOffset: a
     }), e
-  }, {}), [x, g]), y = i.useCallback(e => {
+  }, {}), [x, g]), C = i.useCallback(e => {
     j(e, g)
   }, [j, g]), N = i.useCallback(e => {
     v(e)
@@ -83,9 +83,9 @@ function h(e) {
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: O,
-      onChangeTags: y,
+      onChangeTags: C,
       onChangeNewTagValue: N,
-      tagErrors: C,
+      tagErrors: y,
       maxTags: u.VW
     }), (0, r.jsx)(p, {
       text: f.intl.format(f.t["PGC/AJ"], {

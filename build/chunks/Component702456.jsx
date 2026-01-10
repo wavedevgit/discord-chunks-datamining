@@ -59,10 +59,10 @@ function Z(e) {
     var e, t;
     await p.Z.openPrivateChannel({
       recipientIds: [i.id],
-      location: m.Z.FREQUENT_FRIENDS_ROW
+      location: h.Z.FREQUENT_FRIENDS_ROW
     });
     let n = O.Z.getDMFromUserId(i.id);
-    null != n && (0, h.yw)(P.rMx.CHANNEL_OPENED, (e = function(e) {
+    null != n && (0, m.yw)(P.rMx.CHANNEL_OPENED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -79,8 +79,8 @@ function Z(e) {
         })
       }
       return e
-    }({}, (0, h.$H)(n)), t = t = {
-      location: "".concat(m.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
+    }({}, (0, m.$H)(n)), t = t = {
+      location: "".concat(h.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -145,14 +145,14 @@ function w() {
   }(), n = (0, s.e7)([v.Z], () => v.Z.hasConsented(P.pjP.PERSONALIZATION)), l = (0, s.e7)([S.default], () => {
     var e, t;
     return null != (t = null == (e = S.default.getCurrentUser()) ? true : e.nsfwAllowed) && t
-  }), [p, m] = i.useState({
+  }), [p, h] = i.useState({
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), h = i.useRef(null), E = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), y = i.useCallback(() => {
+  }), m = i.useRef(null), E = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), y = i.useCallback(() => {
     var e;
-    let t = null == (e = h.current) ? true : e.getScrollerNode();
-    null != t && m({
+    let t = null == (e = m.current) ? true : e.getScrollerNode();
+    null != t && h({
       scrollLeft: t.scrollLeft,
       scrollWidth: t.scrollWidth,
       clientWidth: t.clientWidth
@@ -164,12 +164,12 @@ function w() {
   let C = (0, f.y)(y, []),
     w = i.useCallback(e => {
       let t = e.currentTarget;
-      m({
+      h({
         scrollLeft: t.scrollLeft,
         scrollWidth: t.scrollWidth,
         clientWidth: t.clientWidth
       })
-    }, [m]);
+    }, [h]);
   if (i.useEffect(() => {
       (0, d.GE)()
     }, []), !e || null == t || !n) return null;
@@ -194,7 +194,7 @@ function w() {
         })]
       }), (0, r.jsx)(u.xVE, {
         ref: e => {
-          h.current = e, C.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+          m.current = e, C.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(A.frequentFriendsAvatars, {
           [A.scrollMaskLeft]: U && G,

@@ -108,7 +108,7 @@ function A(e) {
           (0, o.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("24783"), n.e("45917")]).then(n.bind(n, 439635));
+            } = await n.e("24783").then(n.bind(n, 439635));
             return t => (0, a.jsx)(e, B(T({}, t), {
               channel: k,
               guild: L

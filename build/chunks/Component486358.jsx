@@ -26,7 +26,7 @@ var Chunk793030 = require("./793030.js"),
 let O = function() {
   let {
     analyticsLocations: e
-  } = (0, o.ZP)(s.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, l.e7)([d.Z], () => null != t && d.Z.can(x.Plq.MANAGE_GUILD, t)), O = (0, c.E)(t), C = (0, a.l9)(null != t ? t : true);
+  } = (0, o.ZP)(s.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, l.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, l.e7)([d.Z], () => null != t && d.Z.can(x.Plq.MANAGE_GUILD, t)), O = (0, c.E)(t), y = (0, a.l9)(null != t ? t : true);
   return null == t ? null : (0, r.jsx)(o.Gt, {
     value: e,
     children: (0, r.jsxs)("main", {
@@ -43,7 +43,7 @@ let O = function() {
           className: v.description,
           children: j.intl.string(j.t.XCGZFk)
         })]
-      }), true === C && (0, r.jsxs)(r.Fragment, {
+      }), true === y && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.P, {
           canManageGuild: n,
           features: t.features

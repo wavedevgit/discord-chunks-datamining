@@ -520,76 +520,77 @@ function U(e) {
   let t = (0, S.l)("SearchableSelect"),
     {
       id: n,
-      options: i,
-      required: a,
-      disabled: o,
-      isDisabled: s,
-      value: l,
-      multi: c,
-      clearable: u,
-      closeOnSelect: d = true,
-      filter: f,
-      matchSorterOptions: p,
-      placeholder: m,
-      "aria-required": h,
-      onChange: g,
-      onSearchChange: E,
-      onKeyDown: y,
-      onFocus: O,
-      onBlur: v,
-      debounceTime: I,
-      hidePills: T,
-      renderOptionLabel: C,
-      renderOptionPrefix: N,
-      renderOptionSuffix: R
+      options: a,
+      required: o,
+      disabled: s,
+      isDisabled: l,
+      value: c,
+      multi: u,
+      clearable: d,
+      closeOnSelect: f = true,
+      filter: p,
+      matchSorterOptions: m,
+      placeholder: h,
+      "aria-required": g,
+      onChange: E,
+      onSearchChange: y,
+      onKeyDown: O,
+      onFocus: v,
+      onBlur: I,
+      debounceTime: T,
+      hidePills: C,
+      renderOptionLabel: N,
+      renderOptionPrefix: R,
+      renderOptionSuffix: w
     } = e,
     {
-      fieldProps: w
+      fieldProps: D
     } = (0, _.XF_)(e),
-    D = null != I || "function" == typeof i || null != C;
-  if (t && !D) {
-    let e = null != f && "function" == typeof f ? f : true;
+    x = null != T || "function" == typeof a || null != N,
+    L = i.useCallback(e => {
+      let {
+        key: t,
+        value: n,
+        label: r,
+        disabled: i
+      } = e;
+      return {
+        id: null != t ? t : n,
+        value: n,
+        label: r,
+        disabled: i,
+        leading: null == R ? true : R(e, {
+          inPill: false,
+          inDropdown: true
+        }),
+        trailing: null == w ? true : w(e, {
+          inPill: false,
+          inDropdown: true
+        })
+      }
+    }, [R, w]);
+  if (t && !x) {
+    let e = null != p && "function" == typeof p ? p : true;
     return (0, r.jsx)(b.V, P(A({
       id: n,
-      selectionMode: c ? "multiple" : "single",
-      required: a || h,
-      disabled: o || s,
-      hideTags: T
-    }, w), {
-      value: l,
-      options: i,
-      formatOption: e => {
-        let {
-          key: t,
-          value: n,
-          label: r,
-          disabled: i
-        } = e;
-        return {
-          id: null != t ? t : n,
-          value: n,
-          label: r,
-          disabled: i,
-          leading: null == N ? true : N(e, {
-            inPill: false,
-            inDropdown: true
-          }),
-          trailing: null == R ? true : R(e, {
-            inPill: false,
-            inDropdown: true
-          })
-        }
-      },
-      onSelectionChange: g,
+      selectionMode: u ? "multiple" : "single",
+      required: o || g,
+      disabled: s || l,
+      hideTags: C
+    }, D), {
+      value: c,
+      options: a,
+      formatOption: L,
+      onSelectionChange: E,
       customMatchSorter: e,
-      matchSorterOptions: p,
-      placeholder: m,
-      onQueryChange: e => null == E ? true : E(e.target.value),
-      onKeyDown: y,
-      onFocus: O,
-      onBlur: v,
-      clearable: u,
-      closeOnSelect: d
+      matchSorterOptions: m,
+      placeholder: h,
+      onQueryChange: e => null == y ? true : y(e.target.value),
+      onKeyDown: O,
+      onFocus: v,
+      onBlur: I,
+      clearable: d,
+      closeOnSelect: f
     }))
   }
   return (0, r.jsx)(k, A({}, e))

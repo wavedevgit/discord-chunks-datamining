@@ -41,9 +41,9 @@ class N extends Chunk473749.PureComponent {
       approximateMemberCount: e,
       approximatePresenceCount: t
     } = this.props.guild;
-    return null == e || null == t ? null : (0, r.jsxs)(m.Z, {
+    return null == e || null == t ? null : (0, r.jsxs)(h.Z, {
       className: S.memberInfo,
-      align: m.Z.Align.CENTER,
+      align: h.Z.Align.CENTER,
       children: [(0, r.jsx)("div", {
         className: S.dotOnline
       }), (0, r.jsx)("span", {
@@ -77,8 +77,8 @@ class N extends Chunk473749.PureComponent {
       f = this.handleJoinOrView,
       b = c.zx.Looks.FILLED,
       _ = c.zx.Colors.PRIMARY;
-    return l ? n ? (b = c.zx.Looks.OUTLINED, _ = S.buttonColorInGuild, p = (0, r.jsxs)(m.Z, {
-      align: m.Z.Align.CENTER,
+    return l ? n ? (b = c.zx.Looks.OUTLINED, _ = S.buttonColorInGuild, p = (0, r.jsxs)(h.Z, {
+      align: h.Z.Align.CENTER,
       children: [(0, r.jsx)("div", {
         children: C.intl.string(C.t.cEnaWx)
       }), (0, r.jsx)(u.dz2, {
@@ -94,10 +94,10 @@ class N extends Chunk473749.PureComponent {
         className: S.content,
         children: [(0, r.jsxs)("div", {
           className: S.info,
-          children: [(0, r.jsx)(h.Z, {
+          children: [(0, r.jsx)(m.Z, {
             guild: d,
             active: true,
-            size: h.Z.Sizes.LARGE,
+            size: m.Z.Sizes.LARGE,
             className: S.guildIcon
           }), (0, r.jsxs)("div", {
             className: S.infoText,

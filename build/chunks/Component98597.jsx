@@ -1,11 +1,11 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 98597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   CN: () => P,
   ZP: () => R,
-  eP: () => w,
-  hR: () => Z,
-  jo: () => N
+  eP: () => T,
+  hR: () => N,
+  jo: () => Z
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,14 +53,14 @@ function I(e) {
 }
 
 function P(e, t, n) {
-  return null != t && !!t && !(0, C.ig)(n, e.type)
+  return null != t && !!t && !(0, x.ig)(n, e.type)
 }
 
-function N(e, t) {
+function Z(e, t) {
   return null == t ? S.containerDefault : e > t ? S.containerDragAfter : S.containerDragBefore
 }
 
-function Z(e) {
+function N(e) {
   let {
     channel: t,
     disableManageChannels: n,
@@ -68,7 +68,7 @@ function Z(e) {
     forceShowButtons: l,
     hasChannelInfo: a = false
   } = e;
-  return (0, s.e7)([v.Z, j.Z], () => n || j.Z.getGuildId() === x.I_8 || !v.Z.can(x.Plq.MANAGE_CHANNELS, t) && !v.Z.can(x.Plq.MANAGE_ROLES, t) && !v.Z.can(x.Plq.MANAGE_WEBHOOKS, t) || (0, m.r8)(t.type) && !v.Z.can(x.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !v.Z.can(x.Plq.CONNECT, t) || !m.dF.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(c.u, {
+  return (0, s.e7)([O.Z, j.Z], () => n || j.Z.getGuildId() === C.I_8 || !O.Z.can(C.Plq.MANAGE_CHANNELS, t) && !O.Z.can(C.Plq.MANAGE_ROLES, t) && !O.Z.can(C.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !O.Z.can(C.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !O.Z.can(C.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(c.u, {
     asContainer: true,
     text: E.intl.string(E.t["3gUsJb"]),
     children: (0, i.jsx)(u.P3F, {
@@ -87,38 +87,38 @@ function Z(e) {
   })
 }
 
-function w(e) {
+function T(e) {
   let {
     channel: t,
     isDefaultChannel: r = false,
     locked: a,
     tabIndex: d,
-    forceShowButtons: p,
-    hasChannelInfo: m = false
-  } = e, j = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), C = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), _ = (0, s.e7)([f.ZP], () => f.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([v.Z], () => (0, h.b)(v.Z, j, t, C)), N = (0, s.e7)([], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE ? E.intl.string(E.t["EE+P0H"]) : E.intl.string(E.t["0jeAXt"])), Z = l.useRef(null);
+    forceShowButtons: h,
+    hasChannelInfo: b = false
+  } = e, j = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), x = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), _ = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([O.Z], () => (0, f.b)(O.Z, j, t, x)), Z = (0, s.e7)([], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE ? E.intl.string(E.t["EE+P0H"]) : E.intl.string(E.t["0jeAXt"])), N = l.useRef(null);
   if (a || !P || t.isModeratorReportChannel()) return null;
-  let w = (0, i.jsx)(u.oLu, {
+  let T = (0, i.jsx)(u.oLu, {
     size: "xs",
     className: S.actionIcon,
     "aria-hidden": true,
     color: "currentColor"
   });
-  return r && (w = (0, i.jsx)(b.Z, {
-    childRef: Z,
+  return r && (T = (0, i.jsx)(m.Z, {
+    childRef: N,
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      ref: Z,
-      children: w
+      ref: N,
+      children: T
     })
   })), (0, i.jsx)(c.u, {
     asContainer: true,
-    text: N,
+    text: Z,
     children: (0, i.jsx)(u.P3F, {
-      className: o()(S.iconItem, p ? S.alwaysShown : true, m ? S.iconWithChannelInfo : S.iconNoChannelInfo),
+      className: o()(S.iconItem, h ? S.alwaysShown : true, b ? S.iconWithChannelInfo : S.iconNoChannelInfo),
       onClick: function() {
         if (null != j) {
-          let e = y.Z.getAllActiveStreams().filter(e => e.state !== x.jm8.ENDED && e.channelId === t.id);
+          let e = y.Z.getAllActiveStreams().filter(e => e.state !== C.jm8.ENDED && e.channelId === t.id);
           (0, u.ZDy)(async () => {
             let {
               default: r
@@ -129,7 +129,7 @@ function w(e) {
                 guild: j,
                 channel: t,
                 streamUserId: 1 === e.length ? e[0].ownerId : null,
-                source: x.t4x.GUILD_CHANNELS,
+                source: C.t4x.GUILD_CHANNELS,
                 guildScheduledEvent: _
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -146,13 +146,13 @@ function w(e) {
         }
       },
       tabIndex: d,
-      "aria-label": N,
-      children: w
+      "aria-label": Z,
+      children: T
     })
   })
 }
 
-function T(e) {
+function A(e) {
   let {
     channel: t
   } = e;
@@ -162,7 +162,7 @@ function T(e) {
     children: (0, i.jsx)(u.P3F, {
       className: S.iconItem,
       onClick: () => {
-        (0, p._U)(t.guild_id, t.id)
+        (0, h._U)(t.guild_id, t.id)
       },
       "aria-label": E.intl.string(E.t["ROh4T+"]),
       children: (0, i.jsx)(u.Dio, {
@@ -174,7 +174,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function w(e) {
   let {
     channel: t
   } = e;
@@ -184,8 +184,8 @@ function A(e) {
     children: (0, i.jsx)(u.P3F, {
       className: S.iconItem,
       onClick: () => {
-        (0, p.dM)(t.guild_id, t.id, true, {
-          section: x.jXE.CHANNEL_LIST
+        (0, h.dM)(t.guild_id, t.id, true, {
+          section: C.jXE.CHANNEL_LIST
         })
       },
       "aria-label": E.intl.string(E.t["N2c/Un"]),
@@ -199,23 +199,23 @@ function A(e) {
 }
 class R extends(r = Chunk473749.PureComponent) {
   renderEditButton() {
-    return (0, i.jsx)(Z, I({}, this.props))
+    return (0, i.jsx)(N, I({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(w, I({}, this.props))
-  }
-  renderRemoveSuggestionButton() {
     return (0, i.jsx)(T, I({}, this.props))
   }
-  renderAcceptSuggestionButton() {
+  renderRemoveSuggestionButton() {
     return (0, i.jsx)(A, I({}, this.props))
+  }
+  renderAcceptSuggestionButton() {
+    return (0, i.jsx)(w, I({}, this.props))
   }
   getClassName() {
     let {
       position: e,
       sortingPosition: t
     } = this.props;
-    return N(e, t)
+    return Z(e, t)
   }
   isDisabled() {
     let {

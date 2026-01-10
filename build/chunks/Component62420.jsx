@@ -1,5 +1,5 @@
 /** Chunk was on 56826 **/
-/** chunk id: 62420, original params: e,n,t (module,exports,require) **/
+/** chunk id: 62420, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./539854.js"), require("./388685.js");
@@ -12,43 +12,43 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
-  let n = (0, a.Mt)(),
-    t = (0, a.s4)(e.id),
+  let t = (0, a.Mt)(),
+    n = (0, a.s4)(e.id),
     d = (0, a.zv)(),
     {
-      isFavoritesPerk: c
-    } = (0, s.z)("useChannelMoveToCategory");
-  if (__OVERLAY__ || !n || null == t || !c) return null;
-  let [u, f] = function(e) {
-    let n = [],
-      t = null;
-    for (let i of e) null == i.id ? t = i : n.push(i);
-    return [t, n]
-  }(d.filter(e => e.id !== (null == t ? true : t.parentId)));
+      isFavoritesPerk: u
+    } = (0, o.z)("useChannelMoveToCategory");
+  if (__OVERLAY__ || !t || null == n || !u) return null;
+  let [c, f] = function(e) {
+    let t = [],
+      n = null;
+    for (let i of e) null == i.id ? n = i : t.push(i);
+    return [n, t]
+  }(d.filter(e => e.id !== (null == n ? true : n.parentId)));
 
-  function h(e) {
-    null != t && (0, l.uA)(t.id, e)
+  function g(e) {
+    null != n && (0, l.uA)(n.id, e)
   }
-  return null == u && 0 === f.length ? null : (0, i.jsxs)(r.sNh, {
+  return null == c && 0 === f.length ? null : (0, i.jsxs)(r.sNh, {
     id: "move-to-category",
-    label: o.intl.string(o.t.FAplms),
-    children: [null != u && (0, i.jsx)(r.kSQ, {
+    label: s.intl.string(s.t.FAplms),
+    children: [null != c && (0, i.jsx)(r.kSQ, {
       children: (0, i.jsx)(r.sNh, {
         id: "favorite-uncategorized",
-        label: u.name,
-        action: () => h(u.id)
+        label: c.name,
+        action: () => g(c.id)
       })
     }), f.length > 0 && (0, i.jsx)(r.kSQ, {
       children: f.map(e => {
         let {
-          id: n,
-          name: t
+          id: t,
+          name: n
         } = e;
         return (0, i.jsx)(r.sNh, {
-          id: "favorite-".concat(n),
-          label: t,
-          action: () => h(n)
-        }, n)
+          id: "favorite-".concat(t),
+          label: n,
+          action: () => g(t)
+        }, t)
       })
     })]
   })

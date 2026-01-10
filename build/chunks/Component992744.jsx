@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 992744, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -16,11 +16,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk66737 = require("./66737.js"),
   Chunk525377 = require("./525377.js");
 let g = () => {
-  let e = (0, s.ZP)();
+  let e = (0, o.ZP)();
   i.useEffect(() => {
-    o.ZP.trackWithMetadata(d.rMx.GUILD_OUTAGE_VIEWED, {})
+    s.ZP.trackWithMetadata(u.rMx.GUILD_OUTAGE_VIEWED, {})
   }, []);
-  let t = (0, l.wj)(e) ? h : f;
+  let t = (0, l.wj)(e) ? f : h;
   return (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsxs)(c.Z, {
@@ -29,7 +29,7 @@ let g = () => {
         icon: a.VL1,
         "aria-hidden": true
       }), (0, r.jsx)(c.Z.Title, {
-        children: u.intl.string(u.t["8LKchl"])
+        children: d.intl.string(d.t["8LKchl"])
       })]
     }), (0, r.jsxs)("div", {
       className: p.content,
@@ -40,11 +40,11 @@ let g = () => {
       }), (0, r.jsx)(a.Heading, {
         className: p.splashHeader,
         variant: "heading-lg/medium",
-        children: u.intl.string(u.t.m9gRVN)
+        children: d.intl.string(d.t.m9gRVN)
       }), (0, r.jsx)(a.Text, {
         className: p.splashText,
         variant: "text-md/normal",
-        children: u.intl.string(u.t.wC3j56)
+        children: d.intl.string(d.t.wC3j56)
       })]
     })]
   })

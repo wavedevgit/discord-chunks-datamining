@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 603274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => Z
 }), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ function _(e, t) {
     children: [(0, r.jsx)(e, {
       className: S.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(h.ZP, {
+    }), (0, r.jsx)(f.ZP, {
       guildId: true,
       users: t,
       max: 6
@@ -42,30 +42,30 @@ function _(e, t) {
 }
 
 function I() {
-  let e = (0, c.Wu)([C.Z, m.Z], () => j.default.keys(C.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(v.lm)),
+  let e = (0, c.Wu)([x.Z, b.Z], () => j.default.keys(x.Z.getFavoriteChannels()).map(e => b.Z.getChannel(e)).filter(O.lm)),
     t = e.map(e => e.id),
-    n = e.filter(e => e.type === x.d4z.GUILD_VOICE),
-    i = e.filter(e => e.type === x.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, c.Wu)([O.ZP], () => s().flatMap(n, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
+    n = e.filter(e => e.type === C.d4z.GUILD_VOICE),
+    i = e.filter(e => e.type === C.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    l = (0, c.Wu)([v.ZP], () => s().flatMap(n, e => v.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
     })), [n]),
-    a = (0, c.Wu)([p.Z], () => s().flatMap(i, e => p.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
+    a = (0, c.Wu)([h.Z], () => s().flatMap(i, e => h.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
       return t
     }))),
-    o = (0, c.e7)([p.Z], () => {
+    o = (0, c.e7)([h.Z], () => {
       let e = 0;
-      for (let t of i) e += p.Z.getParticipantCount(t, g.pV.AUDIENCE);
+      for (let t of i) e += h.Z.getParticipantCount(t, g.pV.AUDIENCE);
       return e
     }),
-    u = (0, c.Wu)([b.Z], () => b.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-    E = (0, c.Wu)([f.ZP], () => {
-      let e = f.ZP.getEmbeddedActivitiesByChannel(),
+    u = (0, c.Wu)([m.Z], () => m.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+    E = (0, c.Wu)([p.ZP], () => {
+      let e = p.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of t) {
         var r, i;
@@ -75,14 +75,14 @@ function I() {
     }, [t]),
     I = (0, c.Wu)([y.default], () => E.map(e => y.default.getUser(e)), [E]),
     P = (0, c.Wu)([y.default], () => u.map(e => y.default.getUser(e)), [u]),
-    N = _(d.gj8, l.filter(e => !u.includes(e.id) && !E.includes(e.id))),
-    Z = 0 === a.length ? null : (0, r.jsxs)("div", {
+    Z = _(d.gj8, l.filter(e => !u.includes(e.id) && !E.includes(e.id))),
+    N = 0 === a.length ? null : (0, r.jsxs)("div", {
       className: S.row,
       children: [(0, r.jsx)(d.ewx, {
         size: "lg",
         color: "currentColor",
         className: S.activityIcon
-      }), (0, r.jsx)(h.ZP, {
+      }), (0, r.jsx)(f.ZP, {
         guildId: true,
         users: a,
         max: 3
@@ -99,10 +99,10 @@ function I() {
         })]
       })]
     }),
-    w = _(d.hGI, P.filter(e => null != e && !E.includes(e.id))),
-    T = _(d.nG3, I);
+    T = _(d.hGI, P.filter(e => null != e && !E.includes(e.id))),
+    A = _(d.nG3, I);
   return (0, r.jsxs)(r.Fragment, {
-    children: [Z, N, w, T]
+    children: [N, Z, T, A]
   })
 }
 
@@ -118,7 +118,7 @@ function P() {
   })
 }
 
-function N(e) {
+function Z(e) {
   let {
     "aria-label": t = false,
     onShow: n,

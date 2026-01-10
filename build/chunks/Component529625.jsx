@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 529625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,19 +20,19 @@ let p = (0, Chunk972959.H)(() => ({
   errorMessage: null
 }));
 
-function f() {
+function h() {
   let e = p.useField("isRecording"),
     t = p.useField("isUploading"),
     n = p.useField("isSuccess"),
     s = p.useField("errorMessage"),
-    f = r.useRef([]),
-    h = r.useRef(""),
+    h = r.useRef([]),
+    f = r.useRef(""),
     x = r.useCallback(() => {
       let {
         results: e,
         query: t
       } = c.Z.getProps();
-      (f.current !== e || h.current !== t) && (f.current = e, h.current = t, (0, d.OC)())
+      (h.current !== e || f.current !== t) && (h.current = e, f.current = t, (0, d.OC)())
     }, []);
   r.useEffect(() => {
     if (e) return c.Z.addChangeListener(x), () => c.Z.removeChangeListener(x)

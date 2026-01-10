@@ -99,7 +99,7 @@ function P(e) {
         variant: "text-sm/normal",
         children: I.intl.format(I.t.iuRk2j, {})
       })]
-    }), (0, r.jsx)(y.Z, {
+    }), (0, r.jsx)(C.Z, {
       changeTitle: I.intl.string(I.t.TxESJG),
       value: null == s ? true : s.value,
       options: a,
@@ -151,7 +151,7 @@ function w(e) {
             helpdeskArticle: x.Z.getArticleURL(E.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(C.Z, {
         changeTitle: I.intl.string(I.t["eBd+Uv"]),
         value: null == g ? true : g.value,
         options: u,
@@ -251,7 +251,7 @@ function A() {
       className: S.headerContainer,
       variant: "heading-lg/semibold",
       children: I.intl.string(I.t["suhY+Y"])
-    }), (0, r.jsx)(C.z, {
+    }), (0, r.jsx)(y.z, {
       guild: e
     }), (0, r.jsx)(R, {
       guild: e

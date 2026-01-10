@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 481363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -24,18 +24,18 @@ function c(e) {
       message: p,
       channel: f,
       groupId: h,
-      compact: m = false
+      compact: g = false
     },
-    messageWindow: g
-  } = e, b = p.state === o.yb.SENDING, C = p.id === h, y = (0, r.yE)(p.flags, o.iLy.EPHEMERAL), v = p.state === o.yb.SEND_FAILED;
-  return b || y && !v ? null : (0, i.jsx)(a.Z, {
+    messageWindow: m
+  } = e, b = p.state === o.yb.SENDING, y = p.id === h, v = (0, i.yE)(p.flags, o.iLy.EPHEMERAL), O = p.state === o.yb.SEND_FAILED;
+  return b || v && !O ? null : (0, r.jsx)(a.Z, {
     className: s.buttons,
     innerClassName: s.buttonsInner,
-    isHeader: !m && C && !(0, l.Z)(p),
-    isReply: !m && p.type === o.uaV.REPLY && null != p.messageReference,
+    isHeader: !g && y && !(0, l.Z)(p),
+    isReply: !g && p.type === o.uaV.REPLY && null != p.messageReference,
     channel: f,
     message: p,
-    messageWindow: g,
+    messageWindow: m,
     setPopout: t,
     showEmojiPicker: n,
     showEmojiBurstPicker: c,

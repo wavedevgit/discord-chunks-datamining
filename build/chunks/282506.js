@@ -26,16 +26,16 @@ var Chunk570140 = require("./570140.js"),
 function y() {
   var e;
   let t = r;
-  if (null == t || !m.Z.isOpen(t)) returnfalse;
-  i.Z.wait(() => l.xv(t)), null == (e = h.Z.getRTCConnection()) || e.setPipOpen(false), r = null
+  if (null == t || !h.Z.isOpen(t)) returnfalse;
+  i.Z.wait(() => l.xv(t)), null == (e = m.Z.getRTCConnection()) || e.setPipOpen(false), r = null
 }
 
 function I() {
   var e;
-  let t = h.Z.getChannelId(),
+  let t = m.Z.getChannelId(),
     n = r === t;
   if (function() {
-      let e = h.Z.getChannelId(),
+      let e = m.Z.getChannelId(),
         t = b.Z.getChannelId();
       if (!g.Z.supports(v.AN.VIDEO) || u.Z.getWindowOpen(O.KJ3.CHANNEL_CALL_POPOUT)) returntrue;
       let n = null != e && d.Z.getAllActiveStreams().some(t => !s.Z.isParticipantPoppedOut(e, (0, c.V9)(t)));
@@ -50,16 +50,16 @@ function I() {
     }()) return y();
   if (n || y(), null == t) returnfalse;
   let a = p.Z.getChannel(t);
-  return !(null == a || m.Z.isOpen(t)) && (i.Z.wait(() => l.bA(a.id, O.NYg.VIDEO, {
+  return !(null == a || h.Z.isOpen(t)) && (i.Z.wait(() => l.bA(a.id, O.NYg.VIDEO, {
     channel: a
-  })), null == (e = h.Z.getRTCConnection()) || e.setPipOpen(true), void(r = t))
+  })), null == (e = m.Z.getRTCConnection()) || e.setPipOpen(true), void(r = t))
 }
 class C extends Chunk317770.Z {
   _initialize() {
-    b.Z.addChangeListener(I), _.Z.addChangeListener(I), h.Z.addChangeListener(I), E.Z.addChangeListener(I), f.Z.addChangeListener(I), d.Z.addChangeListener(I), u.Z.addChangeListener(I), g.Z.addChangeListener(I), o.ZP.addChangeListener(I), s.Z.addChangeListener(I)
+    b.Z.addChangeListener(I), _.Z.addChangeListener(I), m.Z.addChangeListener(I), E.Z.addChangeListener(I), f.Z.addChangeListener(I), d.Z.addChangeListener(I), u.Z.addChangeListener(I), g.Z.addChangeListener(I), o.ZP.addChangeListener(I), s.Z.addChangeListener(I)
   }
   _terminate() {
-    b.Z.removeChangeListener(I), _.Z.removeChangeListener(I), h.Z.removeChangeListener(I), E.Z.removeChangeListener(I), f.Z.removeChangeListener(I), d.Z.removeChangeListener(I), u.Z.removeChangeListener(I), g.Z.removeChangeListener(I), o.ZP.removeChangeListener(I), s.Z.removeChangeListener(I)
+    b.Z.removeChangeListener(I), _.Z.removeChangeListener(I), m.Z.removeChangeListener(I), E.Z.removeChangeListener(I), f.Z.removeChangeListener(I), d.Z.removeChangeListener(I), u.Z.removeChangeListener(I), g.Z.removeChangeListener(I), o.ZP.removeChangeListener(I), s.Z.removeChangeListener(I)
   }
 }
 let S = new C

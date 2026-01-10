@@ -5,7 +5,7 @@ require.d(exports, {
   Y: () => a,
   Z: () => i
 });
-let r = (0, require("./722733.js").Z)({
+let r = (0, require("./722733.js").ZP)({
   kind: "user",
   name: "2025-10-premium-brand-refresh-ga-backtest",
   defaultConfig: {

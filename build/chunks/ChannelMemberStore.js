@@ -203,6 +203,11 @@ class M {
       this.rebuildMember(n)
     }
   }
+  rebuildGroup(e) {
+    let t = this.groups.findIndex(t => t.id === e),
+      n = this.groups[t];
+    null != n && (this.groups.splice(t, 1, D(this.guildId, e, n.count, n.index)), this.version++)
+  }
   constructor(e, t) {
     T(this, "guildId", true), T(this, "listId", true), T(this, "ownerId", true), T(this, "rows", []), T(this, "groups", []), T(this, "members", {}), T(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
   }
@@ -282,9 +287,12 @@ function B(e) {
 
 function V(e) {
   let {
-    guildId: t
+    guildId: t,
+    role: n
   } = e;
-  U.forEach(t, e => e.rebuildMembers())
+  U.forEach(t, e => {
+    e.rebuildGroup(n.id), e.rebuildMembers()
+  })
 }
 
 function H(e) {

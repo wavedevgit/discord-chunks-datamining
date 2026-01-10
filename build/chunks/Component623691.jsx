@@ -47,7 +47,7 @@ function _(e) {
   });
   i.useEffect(() => {
     var e, t;
-    c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : C.Cl)
+    c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : y.Cl)
   }, [c]);
   let m = i.useCallback(() => {
       a(n.id)
@@ -87,8 +87,8 @@ function T(e) {
       forceTrack: true
     })
   }, [t]);
-  let n = (0, h.vc)(o()(y.zQD), "LL"),
-    l = t.features.has(y.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
+  let n = (0, h.vc)(o()(C.zQD), "LL"),
+    l = t.features.has(C.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: I.intl.format(I.t.Vg2oTN, {
         breakingChangeDate: n
@@ -146,7 +146,7 @@ function P(e) {
       color: "text-default",
       variant: "text-sm/normal",
       children: I.intl.format(I.t.xkC3Yf, {
-        articleURL: x.Z.getArticleURL(y.BhN.PERMISSIONS_TUTORIAL)
+        articleURL: x.Z.getArticleURL(C.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: S.rolesTable,

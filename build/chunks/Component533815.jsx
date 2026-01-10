@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 533815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -23,22 +23,22 @@ function f(e) {
     buttonRef: g,
     onRemove: p
   } = e, {
-    trackUserProfileEditAction: b
+    trackUserProfileEditAction: m
   } = (0, c.KZ)();
-  return (0, r.jsx)(l.u, {
+  return (0, r.jsx)(a.u, {
     text: u.intl.string(u.t.HUvyDc),
     ariaHidden: true,
     children: (0, r.jsx)(o.P3F, {
       innerRef: g,
       onClick: () => {
-        (0, s.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), b({
+        (0, s.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), m({
           action: "GAME_REMOVED",
           gameId: t.applicationId,
           widgetEdited: n
         }), null == p || p()
       },
       "aria-label": u.intl.string(u.t.HUvyDc),
-      className: a()(f, d.clickable),
+      className: l()(f, d.clickable),
       children: (0, r.jsx)(o.XHJ, {
         size: i,
         className: d.icon,

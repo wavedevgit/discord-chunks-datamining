@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk623445 = require("./623445.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk931847 = require("./931847.js"),
   Chunk836197 = require("./836197.js"),
-  Chunk164725 = require("./164725.js"),
   Chunk278857 = require("./278857.jsx"),
   Chunk890307 = require("./890307.jsx"),
   Chunk350207 = require("./350207.jsx"),
@@ -44,21 +44,21 @@ function g(e) {
     user: t,
     widgets: n = [],
     onOpenUserProfileModal: m
-  } = e, g = i.useMemo(() => n.filter(e => e instanceof s.q), [n]), {
+  } = e, g = i.useMemo(() => n.filter(e => e instanceof l.q), [n]), {
     analyticsLocations: E
   } = (0, a.ZP)(), {
     trackUserProfileAction: b
-  } = (0, o.KZ)(), y = (0, c.d)(t.id, g), O = i.useCallback(() => {
+  } = (0, s.KZ)(), y = (0, o.Z)(t.id, g), O = i.useCallback(() => {
     null == m || m({
       tabSection: p.oh.WIDGETS
     })
   }, [m]), v = i.useCallback(e => {
     let t = false,
       i = [];
-    for (let a of n) a instanceof s.q ? null != y[a.applicationId] && i.push((0, r.jsx)(d.Z, h({
+    for (let a of n) a instanceof l.q ? null != y[a.applicationId] && i.push((0, r.jsx)(d.Z, h({
       previewData: y[a.applicationId],
       onClick: O
-    }, e), "application-widget-".concat(a.applicationId))) : a instanceof l.zy && !t && (i.push((0, r.jsx)(f.Z, h({
+    }, e), "application-widget-".concat(a.applicationId))) : a instanceof c.zy && !t && (i.push((0, r.jsx)(f.Z, h({
       widgets: n,
       onClick: O
     }, e), "collection-breadcrumb")), t = true);

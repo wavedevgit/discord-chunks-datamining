@@ -1,11 +1,11 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -14,19 +14,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk456631 = require("./456631.js"),
   Chunk516846 = require("./516846.js");
 let p = 6 * Chunk70956.Z.Millis.SECOND,
+  g = 2 * Chunk70956.Z.Millis.SECOND,
   b = 2 * Chunk70956.Z.Millis.SECOND,
-  m = 2 * Chunk70956.Z.Millis.SECOND,
-  g = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
+  m = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
-function v(e) {
+function h(e) {
   let {
     userId: t,
     voiceChannelEffect: n,
     onComplete: u
   } = e, {
-    emoji: v,
-    sentAt: h
-  } = n, E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [_, y] = i.useState(true), S = !E, O = (0, o.Yzy)(_, {
+    emoji: h,
+    sentAt: E
+  } = n, v = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [_, y] = l.useState(true), O = !v, C = (0, o.Yzy)(_, {
     from: {
       rotate: false
     },
@@ -36,7 +36,7 @@ function v(e) {
     leave: {
       rotate: false
     },
-    config: l.config.default,
+    config: i.config.default,
     onRest: (e, t) => {
       let {
         phase: n
@@ -44,28 +44,28 @@ function v(e) {
       "leave" === n && u()
     }
   });
-  return (i.useEffect(() => {
+  return (l.useEffect(() => {
     let e;
-    return Date.now() - h >= m ? (0, d.H)(t) : e = setTimeout(() => {
-      y(false), S && (0, d.H)(t)
-    }, S ? b : p), () => {
+    return Date.now() - E >= b ? (0, d.H)(t) : e = setTimeout(() => {
+      y(false), O && (0, d.H)(t)
+    }, O ? g : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [h, t, S]), S) ? null : O((e, t) => {
+  }, [E, t, O]), O) ? null : C((e, t) => {
     var n;
     let {
-      rotate: i
+      rotate: l
     } = e;
-    return t && (0, r.jsx)(l.animated.div, {
+    return t && (0, r.jsx)(i.animated.div, {
       className: f.voiceChannelEffectEmojiContainer,
       style: {
-        transform: i.to(g)
+        transform: l.to(m)
       },
       children: (0, r.jsx)(c.Z, {
         className: f.voiceChannelEffectEmoji,
-        emojiId: v.id,
-        emojiName: v.name,
-        animated: null != (n = v.animated) && n
+        emojiId: h.id,
+        emojiName: h.name,
+        animated: null != (n = h.animated) && n
       })
     })
   })

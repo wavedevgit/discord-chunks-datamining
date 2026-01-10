@@ -2,7 +2,7 @@
 /** chunk id: 158979, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -49,26 +49,26 @@ function g(e, t) {
   }), e
 }
 
-function b() {
+function m() {
   return (0, i.jsx)("div", {
-    className: h.footer,
+    className: f.footer,
     children: (0, i.jsx)(r.Button, {
       variant: "active",
       size: "sm",
-      text: f.intl.string(f.t.U76Ft2),
+      text: h.intl.string(h.t.U76Ft2),
       fullWidth: true
     })
   })
 }
 
-function m(e) {
+function b(e) {
   switch (e.type) {
     case u.nc.GO_LIVE_VOICE: {
       let {
         game: t,
-        voiceGuild: h
+        voiceGuild: f
       } = e, {
-        trackView: m,
+        trackView: b,
         trackClick: y
       } = (0, d.R)(u.n0.GoLiveNudge, {
         notif_type: u.n0.GoLiveNudge
@@ -76,22 +76,22 @@ function m(e) {
       return {
         icon: n(847881),
         title: null,
-        body: f.intl.formatToPlainString(f.t.z9znpa, {
+        body: h.intl.formatToPlainString(h.t.z9znpa, {
           game: t.name,
-          server: h.name
+          server: f.name
         }),
-        hint: () => (0, i.jsx)(b, {}),
-        renderFooter: () => (0, i.jsx)(b, {}),
+        hint: () => (0, i.jsx)(m, {}),
+        renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          m()
+          b()
         },
         onNotificationClick: (e, t) => {
           y("unlock");
           let d = (0, c.getPID)();
-          a.Z.updateNotificationStatus(t);
-          let u = o.default.isOverlayOOPEnabledForPid(d);
-          if (u ? a.Z.setInputLocked(false, d) : a.Z.setInstanceLocked(false), null == l.default.getCurrentUser()) return;
-          let f = u ? {
+          s.Z.updateNotificationStatus(t);
+          let u = l.default.isOverlayOOPEnabledForPid(d);
+          if (u ? s.Z.setInputLocked(false, d) : s.Z.setInstanceLocked(false), null == a.default.getCurrentUser()) return;
+          let h = u ? {
             contextKey: r.u1M
           } : true;
           (0, r.ZDy)(async () => {
@@ -101,9 +101,9 @@ function m(e) {
             return t => (0, i.jsx)(e, g(p({}, t), {
               sourcePID: d,
               selectSource: false,
-              analyticsLocations: [s.Z.OVERLAY_NUDGE]
+              analyticsLocations: [o.Z.OVERLAY_NUDGE]
             }))
-          }, f)
+          }, h)
         },
         onDismissClick: () => {
           y("dismiss")
@@ -114,28 +114,28 @@ function m(e) {
       let {
         game: t
       } = e, {
-        trackView: l,
-        trackClick: h
+        trackView: a,
+        trackClick: f
       } = (0, d.R)(u.n0.GoLiveNonVoiceNudge, {
         notif_type: u.n0.GoLiveNonVoiceNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: f.intl.formatToPlainString(f.t["0SVWgF"], {
+        body: h.intl.formatToPlainString(h.t["0SVWgF"], {
           game: t.name
         }),
-        hint: () => (0, i.jsx)(b, {}),
-        renderFooter: () => (0, i.jsx)(b, {}),
+        hint: () => (0, i.jsx)(m, {}),
+        renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          l()
+          a()
         },
         onNotificationClick: (e, t) => {
-          h("unlock");
-          let l = (0, c.getPID)();
-          a.Z.updateNotificationStatus(t);
-          let d = o.default.isOverlayOOPEnabledForPid(l);
-          d ? a.Z.setInputLocked(false, l) : a.Z.setInstanceLocked(false);
+          f("unlock");
+          let a = (0, c.getPID)();
+          s.Z.updateNotificationStatus(t);
+          let d = l.default.isOverlayOOPEnabledForPid(a);
+          d ? s.Z.setInputLocked(false, a) : s.Z.setInstanceLocked(false);
           let u = d ? {
             contextKey: r.u1M
           } : true;
@@ -144,14 +144,14 @@ function m(e) {
               default: e
             } = await Promise.all([n.e("46746"), n.e("95200")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(p({}, t), {
-              sourcePID: l,
+              sourcePID: a,
               selectSource: false,
-              analyticsLocations: [s.Z.OVERLAY_NUDGE]
+              analyticsLocations: [o.Z.OVERLAY_NUDGE]
             }))
           }, u)
         },
         onDismissClick: () => {
-          h("dismiss")
+          f("dismiss")
         }
       }
     }

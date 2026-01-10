@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,15 +52,15 @@ function j(e, t) {
   }), e
 }
 
-function C() {
+function y() {
   var e, t;
-  let [n, i] = (0, r.useState)(false), [s, d] = (0, r.useState)(false), [f, x] = (0, r.useState)(null), C = (0, u.ZP)(e => e.toolsCache), {
+  let [n, i] = (0, r.useState)(false), [s, d] = (0, r.useState)(false), [h, x] = (0, r.useState)(null), y = (0, u.ZP)(e => e.toolsCache), {
     setToolsCache: T,
     removeToolsCache: O
   } = (0, u.L3)(), {
     setImgCache: N
   } = (0, u.W_)(), P = (0, r.useCallback)(e => {
-    let t = C[e];
+    let t = y[e];
     null != t && x({
       src: t.url,
       palette: t.palette,
@@ -73,7 +73,7 @@ function C() {
       src: e,
       preview: true
     }))
-  }, [C]), w = (0, r.useCallback)(e => {
+  }, [y]), w = (0, r.useCallback)(e => {
     x(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
@@ -103,18 +103,18 @@ function C() {
         })]
       }), (0, a.jsxs)("div", {
         className: g.themePicker,
-        children: [n && (0, a.jsx)(c.i, {}), s && (0, a.jsx)(h.Z, {
-          selected: null == f || null == (e = f.palette) ? true : e.name,
+        children: [n && (0, a.jsx)(c.i, {}), s && (0, a.jsx)(f.Z, {
+          selected: null == h || null == (e = h.palette) ? true : e.name,
           onSelect: e => {
-            (null == f ? true : f.src) != null && T(f.src, f.src, e), w(e)
+            (null == h ? true : h.src) != null && T(h.src, h.src, e), w(e)
           }
         })]
       })]
     }), (0, a.jsxs)("div", {
       className: g.main,
-      children: [(0, a.jsx)(y, {
-        nameplate: f
-      }, null == f || null == (t = f.palette) ? true : t.name), (0, a.jsxs)("div", {
+      children: [(0, a.jsx)(C, {
+        nameplate: h
+      }, null == h || null == (t = h.palette) ? true : t.name), (0, a.jsxs)("div", {
         className: g.buttons,
         children: [(0, a.jsx)(l.Text, {
           variant: "text-sm/semibold",
@@ -131,7 +131,7 @@ function C() {
           }
         }), (0, a.jsx)("div", {
           className: g.uploadedArea,
-          children: Object.values(C).map(e => {
+          children: Object.values(y).map(e => {
             let {
               url: t
             } = e;
@@ -157,7 +157,7 @@ function C() {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     nameplate: t
   } = e, [n, i] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
@@ -358,7 +358,7 @@ function N(e) {
     className: g.preview,
     children: (0, a.jsx)("div", {
       className: g.rtcSim,
-      children: (0, a.jsx)(f.Z, {
+      children: (0, a.jsx)(h.Z, {
         nameplate: t
       })
     })

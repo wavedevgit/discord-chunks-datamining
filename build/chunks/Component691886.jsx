@@ -52,7 +52,7 @@ function O(e) {
   })
 }
 
-function C() {
+function y() {
   return (0, r.jsx)(O, {
     icon: (0, r.jsx)(c.qJs, {
       size: "md",
@@ -64,7 +64,7 @@ function C() {
   })
 }
 
-function y(e) {
+function C(e) {
   var t;
   let {
     channelId: n
@@ -86,9 +86,9 @@ function N(e) {
   let {
     value: t
   } = e;
-  return null != t ? (0, r.jsx)(y, {
+  return null != t ? (0, r.jsx)(C, {
     channelId: t
-  }) : (0, r.jsx)(C, {})
+  }) : (0, r.jsx)(y, {})
 }
 
 function E(e) {
@@ -99,11 +99,11 @@ function E(e) {
     initialChannelId: u,
     omitChannelIds: j,
     "aria-labelledby": O,
-    onChange: C
-  } = e, y = x.intl.string(x.t.d7YJMK), E = (0, s.e7)([f.Z], () => f.Z.getCategories(l), [l]), I = (0, p.m7)(null != a ? a : h.lds), S = i.useMemo(() => {
+    onChange: y
+  } = e, C = x.intl.string(x.t.d7YJMK), E = (0, s.e7)([f.Z], () => f.Z.getCategories(l), [l]), I = (0, p.m7)(null != a ? a : h.lds), S = i.useMemo(() => {
     let e = [{
         value: null,
-        label: y
+        label: C
       }],
       t = false;
     for (let n of E._categories)
@@ -118,7 +118,7 @@ function E(e) {
       value: a,
       label: I.name
     }), e
-  }, [y, a, I, E, j, u]);
+  }, [C, a, I, E, j, u]);
   return (0, r.jsx)(o.B6, {
     label: t,
     placeholder: x.intl.string(x.t.r2ptsz),
@@ -149,7 +149,7 @@ function E(e) {
             return e
           }({}, t), i = i = {
             guildId: l,
-            onSubmit: C
+            onSubmit: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -161,7 +161,7 @@ function E(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n))
         }
-      }) : C(e)
+      }) : y(e)
     },
     isSelected: e => null != a && v(e) === v(a),
     serialize: v,

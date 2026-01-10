@@ -27,10 +27,10 @@ function h(e) {
     editStateId: h,
     guildId: x,
     groupListingId: j
-  } = (0, g.N)(), v = (0, s.e7)([u.Z], () => u.Z.getSubscriptionListing(h)), O = null == v ? true : v.id, C = (0, f.Z)(x), y = i.useMemo(() => {
+  } = (0, g.N)(), v = (0, s.e7)([u.Z], () => u.Z.getSubscriptionListing(h)), O = null == v ? true : v.id, y = (0, f.Z)(x), C = i.useMemo(() => {
     var e;
-    return null != C && null != v && (null != (e = C[v.role_id]) ? e : 0)
-  }, [C, v]), N = 0 === y, E = null == O, I = null != (t = null == v ? true : v.archived) && t, {
+    return null != y && null != v && (null != (e = y[v.role_id]) ? e : 0)
+  }, [y, v]), N = 0 === C, E = null == O, I = null != (t = null == v ? true : v.archived) && t, {
     error: S,
     deleteSubscriptionListing: _,
     submitting: T
@@ -61,7 +61,7 @@ function h(e) {
             variant: "text-sm/normal",
             className: p.warning,
             children: b.intl.formatToPlainString(b.t.ABeonY, {
-              listingMemberCount: y
+              listingMemberCount: C
             })
           }), (0, r.jsx)(o.Button, {
             variant: "critical-primary",

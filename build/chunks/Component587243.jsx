@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => g,
@@ -17,7 +17,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk787224 = require("./787224.js");
-let h = [{
+let f = [{
     duration: 15 * Chunk70956.Z.Millis.MINUTE,
     label: () => p.intl.string(p.t["8ot6gv"])
   }, {
@@ -44,7 +44,7 @@ function b(e) {
     currentStatus: n,
     description: i
   } = e, l = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
-    children: h.map(e => {
+    children: f.map(e => {
       let {
         duration: i,
         label: l
@@ -63,7 +63,7 @@ function b(e) {
   });
   return (0, a.jsx)(r.sNh, {
     id: t,
-    className: f.expiringStatusMenuItem,
+    className: h.expiringStatusMenuItem,
     keepItemStyles: true,
     hasSubmenu: l,
     label: e => {
@@ -71,17 +71,17 @@ function b(e) {
         isFocused: n
       } = e;
       return (0, a.jsxs)("div", {
-        className: f.statusItem,
+        className: h.statusItem,
         children: [(0, a.jsx)(r.qbd, {
           status: t,
-          className: f.icon,
+          className: h.icon,
           size: 10,
           color: n ? "currentColor" : true
         }), (0, a.jsx)("div", {
-          className: f.status,
+          className: h.status,
           children: (0, c.u5)(t)
         }), null != i && (0, a.jsx)("div", {
-          className: f.description,
+          className: h.description,
           children: i
         })]
       })
@@ -133,7 +133,7 @@ function v(e) {
       }
     },
     v = (0, a.jsx)(a.Fragment, {
-      children: h.map(t => {
+      children: f.map(t => {
         let {
           duration: n,
           label: l
@@ -152,12 +152,12 @@ function v(e) {
       status: m.Skl.ONLINE,
       currentStatus: e
     }),
-    C = b({
+    y = b({
       status: m.Skl.IDLE,
       currentStatus: e,
       description: u(m.Skl.IDLE)
     }),
-    y = b({
+    C = b({
       status: m.Skl.DND,
       currentStatus: e,
       description: u(m.Skl.DND)
@@ -168,26 +168,26 @@ function v(e) {
       description: u(m.Skl.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [j, (0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), C, y, _, o || n ? (0, a.jsxs)(a.Fragment, {
+    children: [j, (0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), y, C, _, o || n ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(r.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
-        className: f.expiringStatusMenuItem,
+        className: h.expiringStatusMenuItem,
         keepItemStyles: true,
         hasSubmenu: true,
         label: () => (0, a.jsxs)("div", {
-          className: f.statusItem,
+          className: h.statusItem,
           children: [(0, a.jsx)(r.owu, {
             size: "xxs",
-            className: f.icon
+            className: h.icon
           }), (0, a.jsxs)("div", {
-            className: f.focusModeTitle,
+            className: h.focusModeTitle,
             children: [p.intl.string(p.t.gJRnwK), (0, a.jsx)(r.IGR, {
               text: n ? p.intl.string(p.t.ApAu9f) : d ? p.intl.string(p.t.gH3Frd) : p.intl.string(p.t["64pl82"]),
               color: n ? r.TVs.unsafe_rawColors.BRAND_500.css : d ? r.TVs.unsafe_rawColors.RED_400.css : r.TVs.unsafe_rawColors.PRIMARY_500.css
             })]
           }), (0, a.jsx)("div", {
-            className: f.description,
+            className: h.description,
             children: n && null != c && "0" !== c ? p.intl.formatToPlainString(p.t.BWD8fs, {
               endTime: new Date(Number(c)).toLocaleString(p.intl.currentLocale, {
                 month: "numeric",

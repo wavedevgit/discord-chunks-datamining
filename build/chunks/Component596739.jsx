@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 596739, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => c
@@ -17,44 +17,44 @@ function c(e) {
     onDismiss: c,
     buttons: u,
     dismissible: d = true
-  } = e, p = r.useCallback(() => {
+  } = e, p = i.useCallback(() => {
     null == c || c()
   }, [c]);
-  return (0, i.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: s.safetyBanner,
-    children: [(0, i.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: s.shieldAndHeading,
-      children: [(0, i.jsx)(l.i$, {
+      children: [(0, r.jsx)(l.i$, {
         alt: "",
         size: 32
-      }), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(a.Heading, {
+      }), (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-strong",
           children: t
-        }), (0, i.jsx)(a.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-strong",
           children: n
         })]
       })]
-    }), (0, i.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: s.buttons,
       children: null == u ? true : u.map((e, t) => {
         var n;
-        return (0, i.jsx)(a.Button, {
+        return (0, r.jsx)(a.Button, {
           text: e.text,
           variant: null != (n = e.variant) ? n : "secondary",
           onClick: e.onClick,
           size: "sm"
         }, t)
       })
-    }), d ? (0, i.jsx)(a.P3F, {
+    }), d ? (0, r.jsx)(a.P3F, {
       className: s.closeButton,
       onClick: p,
       role: "button",
       "aria-label": o.intl.string(o.t.WAI6xu),
-      children: (0, i.jsx)(a.Dio, {
+      children: (0, r.jsx)(a.Dio, {
         size: "md",
         color: "currentColor",
         className: s.closeButton

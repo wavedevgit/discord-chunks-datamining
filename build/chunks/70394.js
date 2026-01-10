@@ -4,7 +4,7 @@
 require.d(exports, {
   $: () => i
 });
-let r = (0, require("./722733.js").Z)({
+let r = (0, require("./722733.js").ZP)({
   name: "2025-12-boosting-marketing-page-refresh",
   kind: "user",
   defaultConfig: {

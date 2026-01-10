@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 362416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -19,6 +19,6 @@ function u(e) {
     location: t
   }), u = (0, c.w)({
     location: t
-  }), m = (0, a.e7)([s.default], () => s.default.getCurrentUser()), p = (0, a.e7)([l.Z], () => null != m ? l.Z.getFirstWishlistId(m.id) : null), f = (0, r.Z)("wishlist_user_profile_account_popout_upsell"), h = (0, a.e7)([i.ZP], () => i.ZP.getRunningGames().some(e => null != e.id && d.RI.has(e.id) && i.ZP.isDetectionEnabled(e)) || i.ZP.getGamesSeen(false, false).some(e => null != e.id && d.RI.has(e.id)));
-  return u && n && null == p && h || f
+  }), m = (0, a.e7)([s.default], () => s.default.getCurrentUser()), p = (0, a.e7)([l.Z], () => null != m ? l.Z.getFirstWishlistId(m.id) : null), h = (0, r.Z)("wishlist_user_profile_account_popout_upsell"), f = (0, a.e7)([i.ZP], () => i.ZP.getRunningGames().some(e => null != e.id && d.RI.has(e.id) && i.ZP.isDetectionEnabled(e)) || i.ZP.getGamesSeen(false, false).some(e => null != e.id && d.RI.has(e.id)));
+  return u && n && null == p && f || h
 }

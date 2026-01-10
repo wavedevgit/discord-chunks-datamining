@@ -1,8 +1,8 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 602034, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
-  r: () => O
+  r: () => v
 });
 var Chunk473749 = require("./473749.js"),
   Chunk55160 = require("./55160.js"),
@@ -25,21 +25,21 @@ function b(e) {
     parentMessageId: n,
     threadSettings: i,
     privateThreadMode: c,
-    location: d,
+    location: u,
     onThreadCreated: b,
     useDefaultThreadName: y
-  } = e, O = r.useCallback((e, t, n, r) => {
-    a.Z.sendMessage(e.id, u.ZP.parse(e, n), true, {
+  } = e, v = r.useCallback((e, t, n, r) => {
+    a.Z.sendMessage(e.id, d.ZP.parse(e, n), true, {
       eagerDispatch: false,
       location: g.dy.THREAD_CREATION,
       stickerIds: r,
       attachmentsToUpload: t,
       onAttachmentUploadError: (r, i, a, c) => {
-        var d;
-        (0, o.openUploadError)({
+        var u;
+        (0, s.openUploadError)({
           title: m.intl.string(m.t.B3vFdU),
-          help: null != (d = null == c ? true : c.message) ? d : m.intl.string(m.t.zMEjJg)
-        }), "" !== n && "" === p.Z.getDraft(e.id, p.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, p.d.FirstThreadMessage), 0 === h.Z.getUploadCount(e.id, p.d.FirstThreadMessage) && s.Z.setUploads({
+          help: null != (u = null == c ? true : c.message) ? u : m.intl.string(m.t.zMEjJg)
+        }), "" !== n && "" === p.Z.getDraft(e.id, p.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, p.d.FirstThreadMessage), 0 === f.Z.getUploadCount(e.id, p.d.FirstThreadMessage) && o.Z.setUploads({
           channelId: e.id,
           uploads: t,
           draftType: p.d.FirstThreadMessage
@@ -47,15 +47,15 @@ function b(e) {
       }
     })
   }, []);
-  return (0, f.JA)({
+  return (0, h.JA)({
     parentChannel: t,
     parentMessageId: n,
     threadSettings: i,
     privateThreadMode: c,
-    location: d,
+    location: u,
     onThreadCreated: b,
     useDefaultThreadName: y,
-    uploadHandler: O
+    uploadHandler: v
   })
 }
 async function y(e) {
@@ -67,13 +67,13 @@ async function y(e) {
   }
 }
 
-function O(e) {
+function v(e) {
   let {
     parentChannel: t
   } = e, {
     name: n,
     appliedTags: r
-  } = (0, d.xH)(e => {
+  } = (0, u.xH)(e => {
     let {
       name: t,
       appliedTags: n
@@ -83,7 +83,7 @@ function O(e) {
       appliedTags: n
     }
   }, i.X);
-  return (0, f.Wj)({
+  return (0, h.Wj)({
     parentChannel: t,
     name: n,
     appliedTags: r,

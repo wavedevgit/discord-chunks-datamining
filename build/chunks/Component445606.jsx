@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 445606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -17,40 +17,40 @@ function u(e) {
     onRender: n,
     onRequestClose: u,
     onActionClick: d,
-    onActionMouseDown: f,
-    position: h = "right",
-    align: p = "top",
+    onActionMouseDown: p,
+    position: f = "right",
+    align: h = "top",
     caretConfig: g = {
       align: "start"
     },
-    skuImageDetails: b,
-    title: m,
+    skuImageDetails: m,
+    title: b,
     body: y
   } = e;
   i.useEffect(() => {
     null == n || n()
   }, [n]);
-  let O = i.useMemo(() => (null == b ? true : b.imageUrl) == null ? {
+  let v = i.useMemo(() => (null == m ? true : m.imageUrl) == null ? {
     type: "image",
     src: c.Z,
     aspectRatio: "6/4"
   } : (0, a.D)({
-    imageUrl: null == b ? true : b.imageUrl,
-    backgroundImageUrl: null == b ? true : b.backgroundImageUrl,
+    imageUrl: null == m ? true : m.imageUrl,
+    backgroundImageUrl: null == m ? true : m.backgroundImageUrl,
     altText: o.intl.string(o.t["ulQB+t"]),
     customClassNames: {
       containerClassName: s.dynamicGraphicContainer,
       foregroundImageClassName: s.dynamicGraphicForegroundImage
     }
-  }), [null == b ? true : b.imageUrl, null == b ? true : b.backgroundImageUrl]);
+  }), [null == m ? true : m.imageUrl, null == m ? true : m.backgroundImageUrl]);
   return (0, r.jsx)(l.J2, {
     size: "lg",
     shouldShow: true,
-    position: h,
+    position: f,
     caretConfig: g,
     gradientColor: "purple",
     alignmentStrategy: "edge",
-    align: p,
+    align: h,
     badge: {
       type: "new",
       variant: "default"
@@ -60,11 +60,11 @@ function u(e) {
       text: o.intl.string(o.t.RzWDqY),
       variant: "primary",
       onClick: d,
-      onMouseDown: f
+      onMouseDown: p
     }],
     targetElementRef: t,
-    title: null != m ? m : o.intl.string(o.t.Ylu2JM),
+    title: null != b ? b : o.intl.string(o.t.Ylu2JM),
     body: null != y ? y : o.intl.string(o.t.vgylLQ),
-    graphic: O
+    graphic: v
   })
 }

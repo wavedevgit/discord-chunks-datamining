@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 788956, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   d: () => o
@@ -9,8 +9,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk553795 = require("./553795.js");
 
 function o(e) {
-  let t = (0, i.e7)([l.Z], () => null != e ? l.Z.getAccount(null, e) : null),
-    n = (0, i.e7)([l.Z], () => l.Z.isFetching()),
+  let t = (0, i.e7)([a.Z], () => null != e ? a.Z.getAccount(null, e) : null),
+    n = (0, i.e7)([a.Z], () => a.Z.isFetching()),
     o = null != t && !t.revoked;
   return {
     loading: n,
@@ -22,7 +22,7 @@ function o(e) {
       };
       try {
         var n;
-        let r = await a.Z.authorize(e, {
+        let r = await l.Z.authorize(e, {
           location: null != t ? t : "Account Linking"
         });
         if (r.ok && (null == (n = r.body) ? true : n.url) != null) return {

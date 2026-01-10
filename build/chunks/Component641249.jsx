@@ -56,7 +56,7 @@ function x() {
     guildId: t
   } = (0, o.N)(), [x, j] = c.XZ(e, t), v = (0, u.Z)(t, e), {
     setCurrentTab: O
-  } = (0, m.dw)(), C = () => O(m.ue.EMOJIS), y = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), N = null != y ? (0, d.Z)(y) : true;
+  } = (0, m.dw)(), y = () => O(m.ue.EMOJIS), C = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), N = null != C ? (0, d.Z)(C) : true;
 
   function E(e) {
     null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
@@ -73,7 +73,7 @@ function x() {
       premiumEmojiMaximum: N
     }),
     helperText: b.intl.format(b.t.sEkgBk, {
-      handleTransitionToManageEmoji: C
+      handleTransitionToManageEmoji: y
     }),
     disabled: S,
     children: [(0, r.jsx)(f.E, {
@@ -104,7 +104,7 @@ function x() {
             initialTierEmojiIds: x,
             onSubmit: E,
             transitionToManageEmoji: () => {
-              C(), n.onClose()
+              y(), n.onClose()
             }
           }))
         })

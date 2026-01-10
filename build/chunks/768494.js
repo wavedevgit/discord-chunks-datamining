@@ -8,6 +8,7 @@ require.d(exports, {
   VY: () => h,
   hR: () => _,
   hg: () => g,
+  o4: () => O,
   ym: () => m
 }), require("./997841.js"), require("./953529.js");
 var Chunk95015 = require("./95015.js"),
@@ -145,4 +146,8 @@ function y(e, t, n) {
     sourceMetadata: t,
     contentType: e.contentType
   }
+}
+
+function O(e) {
+  return null != e.width && e.width > 0 && null != e.height && e.height > 0
 }

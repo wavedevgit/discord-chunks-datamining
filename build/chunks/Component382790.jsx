@@ -7,7 +7,7 @@ require.d(exports, {
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk552062 = require("./552062.jsx"),
   Chunk416568 = require("./416568.jsx"),
@@ -44,24 +44,24 @@ class E extends(i = Chunk473749.PureComponent) {
       locked: t,
       contained: n,
       className: i
-    } = this.props, a = null != e ? (0, r.jsx)(h.Z, {
+    } = this.props, s = null != e ? (0, r.jsx)(f.Z, {
       guildId: e,
       onDragStart: this.onDragStart
-    }, e) : (0, r.jsx)(b.Z, {
-      title: m.intl.string(m.t.YUU0RF),
+    }, e) : (0, r.jsx)(m.Z, {
+      title: b.intl.string(b.t.YUU0RF),
       renderSettings: O,
       onDragStart: this.onDragStart,
       children: (0, r.jsx)(g.Z, {})
-    }), s = n ? "div" : f.ZP;
-    return (0, r.jsxs)(s, {
-      className: o()(y.base, {
+    }), o = n ? "div" : h.ZP;
+    return (0, r.jsxs)(o, {
+      className: l()(y.base, {
         [y.widget]: !n
       }, i),
       children: [(0, r.jsx)(d.Z, {
         isOverlay: true,
         disableAppDownload: true,
         isVisible: !t
-      }), a]
+      }), s]
     })
   }
   constructor(...e) {

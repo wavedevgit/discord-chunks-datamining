@@ -2,7 +2,7 @@
 /** chunk id: 546221, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -57,7 +57,7 @@ function O(e) {
     className: j.currentMonthEarningsTable
   })
 }
-let C = e => {
+let y = e => {
   var t, n;
   let {
     guildId: s,
@@ -65,8 +65,8 @@ let C = e => {
   } = e, {
     loading: g,
     team: f,
-    currentPeriod: C,
-    allPeriods: y,
+    currentPeriod: y,
+    allPeriods: C,
     metrics: N
   } = (0, d.Z)(s, o), E = (0, u.u)(s), I = (0, c.mY)();
   return g ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
@@ -108,13 +108,13 @@ let C = e => {
         })]
       }), (0, r.jsx)(O, {
         guildId: s,
-        totalPayoutsForPeriod: C
+        totalPayoutsForPeriod: y
       })]
     }), (0, r.jsx)(i.C3N, {
       label: x.intl.string(x.t["+5Rmhl"]),
       className: j.formSection,
       children: (0, r.jsx)(v, {
-        payoutsByPeriod: y,
+        payoutsByPeriod: C,
         team: f
       })
     }), (0, r.jsx)(i.C3N, {
@@ -130,16 +130,16 @@ let C = e => {
       className: j.formSection,
       children: (0, r.jsx)(p.Z, {
         guildId: s,
-        allPeriods: y
+        allPeriods: C
       })
     })]
   })
 };
 
-function y(e) {
+function C(e) {
   return (0, r.jsx)(s.l, {
     guildId: e.guildId,
-    children: (0, r.jsx)(C, function(e) {
+    children: (0, r.jsx)(y, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

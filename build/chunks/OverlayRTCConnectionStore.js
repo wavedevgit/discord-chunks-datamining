@@ -1,16 +1,16 @@
-/** Chunk was on 60831 **/
+/** Chunk was on 69813 **/
 /** chunk id: 362446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
 });
-var l, i, Chunk442837 = require("./442837.js"),
+var r, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let s = {};
+let c = {};
 
-function u(e) {
-  let t = s[e = null != e ? e : "null"];
-  return null == t && (t = s[e] = {
+function s(e) {
+  let t = c[e = null != e ? e : "null"];
+  return null == t && (t = c[e] = {
     state: o.hes.DISCONNECTED,
     quality: o.IE4.UNKNOWN,
     pings: [],
@@ -19,13 +19,13 @@ function u(e) {
   }), t
 }
 
-function c(e, t, n) {
-  let l = s[e = null != e ? e : "null"];
-  return null != l ? t(l) : n
+function u(e, t, n) {
+  let r = c[e = null != e ? e : "null"];
+  return null != r ? t(r) : n
 }
-class d extends(i = Chunk442837.ZP.Store) {
+class d extends(l = Chunk442837.ZP.Store) {
   getConnectionState(e) {
-    return c(e, e => {
+    return u(e, e => {
       let {
         state: t
       } = e;
@@ -33,7 +33,7 @@ class d extends(i = Chunk442837.ZP.Store) {
     }, o.hes.DISCONNECTED)
   }
   getQuality(e) {
-    return c(e, e => {
+    return u(e, e => {
       let {
         quality: t
       } = e;
@@ -41,7 +41,7 @@ class d extends(i = Chunk442837.ZP.Store) {
     }, o.IE4.UNKNOWN)
   }
   getHostname(e) {
-    return c(e, e => {
+    return u(e, e => {
       let {
         hostname: t
       } = e;
@@ -49,7 +49,7 @@ class d extends(i = Chunk442837.ZP.Store) {
     }, null)
   }
   getPings(e) {
-    return c(e, e => {
+    return u(e, e => {
       let {
         pings: t
       } = e;
@@ -66,33 +66,33 @@ class d extends(i = Chunk442837.ZP.Store) {
     return 0 === n.length ? 0 : null == (t = n[n.length - 1]) ? true : t.value
   }
   getOutboundLossRate(e) {
-    return c(e, e => {
+    return u(e, e => {
       let {
         lossRate: t
       } = e;
       return t
     }, null)
   }
-}(l = "displayName") in d ? Object.defineProperty(d, l, {
+}(r = "displayName") in d ? Object.defineProperty(d, r, {
   value: "OverlayRTCConnectionStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[l] = "OverlayRTCConnectionStore";
+}) : d[r] = "OverlayRTCConnectionStore";
 let f = new d(Chunk570140.Z, {
   OVERLAY_INITIALIZE: function(e) {
-    s = e.rtcConnectionStates
+    c = e.rtcConnectionStates
   },
   RTC_CONNECTION_STATE: function(e) {
     if (null != e.streamKey) returnfalse;
-    let t = u(e.lobbyId);
+    let t = s(e.lobbyId);
     t.state = e.state, t.hostname = e.hostname
   },
   RTC_CONNECTION_PING: function(e) {
-    let t = u(e.lobbyId);
+    let t = s(e.lobbyId);
     t.pings = e.pings, t.quality = e.quality
   },
   RTC_CONNECTION_LOSS_RATE: function(e) {
-    u(e.lobbyId).lossRate = e.lossRate
+    s(e.lobbyId).lossRate = e.lossRate
   }
 })

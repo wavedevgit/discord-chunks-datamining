@@ -38,10 +38,10 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       guild: e,
       guildMetadata: t,
       submitting: n
-    } = (0, a.cj)([C.Z], () => ({
-      submitting: C.Z.isSubmitting(),
-      guild: C.Z.getGuild(),
-      guildMetadata: C.Z.getMetadata()
+    } = (0, a.cj)([y.Z], () => ({
+      submitting: y.Z.isSubmitting(),
+      guild: y.Z.getGuild(),
+      guildMetadata: y.Z.getMetadata()
     }));
     return (0, r.jsx)(s.Z, {
       submitting: n,
@@ -70,7 +70,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   Z = () => {
     var e;
     let t = i.useRef(null),
-      s = (0, a.e7)([C.Z], () => C.Z.getGuild()),
+      s = (0, a.e7)([y.Z], () => y.Z.getGuild()),
       [w, Z] = i.useState(false);
     i.useEffect(() => {
       w || null == s || ((0, m.le)(), (0, m.aC)(s.id), (0, m.i3)(s.id), Z(true))
@@ -79,7 +79,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: R
     } = (0, a.cj)([x.Z], () => ({
       canManageGuild: x.Z.can(S.Plq.MANAGE_GUILD, s)
-    })), D = (0, a.e7)([C.Z], () => C.Z.isGuildMetadataLoaded()), A = (0, a.e7)([C.Z], () => null != s ? C.Z.getMetadata() : null), L = (0, a.e7)([C.Z], () => null != s && (null == A ? true : A.isPublished) ? C.Z.getSlug() : null), [k, G] = i.useState([true]), [M, U] = i.useState(true), [B, F] = i.useState([false]), [H, W] = i.useState([""]);
+    })), D = (0, a.e7)([y.Z], () => y.Z.isGuildMetadataLoaded()), A = (0, a.e7)([y.Z], () => null != s ? y.Z.getMetadata() : null), L = (0, a.e7)([y.Z], () => null != s && (null == A ? true : A.isPublished) ? y.Z.getSlug() : null), [k, G] = i.useState([true]), [M, U] = i.useState(true), [B, F] = i.useState([false]), [H, W] = i.useState([""]);
     i.useEffect(() => {
       if (null !== A) {
         let e = [],
@@ -103,7 +103,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         }), W(t), G(e), U(e.every(e => true === e))
       }
     }, [A]);
-    let z = (0, a.e7)([C.Z], () => null != s ? C.Z.getErrors() : null);
+    let z = (0, a.e7)([y.Z], () => null != s ? y.Z.getErrors() : null);
     if (null == s || null == A) return null;
     let V = e => {
         O.Z.updateGuild({
@@ -226,7 +226,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       })
                     })(), (0, r.jsx)(d.izJ, {}), (() => {
                       if (null != s) return (0, r.jsxs)(r.Fragment, {
-                        children: [(0, r.jsx)(y.E, {
+                        children: [(0, r.jsx)(C.E, {
                           label: _.intl.string(_.t.GjPpSu),
                           description: _.intl.string(_.t.MVXonM),
                           guildId: s.id,
@@ -434,4 +434,4 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       })
     })
   },
-  R = () => null == (0, a.e7)([C.Z], () => C.Z.getGuild()) ? null : (0, r.jsx)(Z, {})
+  R = () => null == (0, a.e7)([y.Z], () => y.Z.getGuild()) ? null : (0, r.jsx)(Z, {})

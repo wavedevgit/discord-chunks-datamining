@@ -1,8 +1,8 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 833519, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Y,
-  _: () => q
+  Z: () => K,
+  _: () => z
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -46,63 +46,63 @@ var Chunk54381 = require("./54381.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk858329 = require("./858329.js");
-let B = new Chunk710845.Z("StreamTile");
+let H = new Chunk710845.Z("StreamTile");
 
-function q(e) {
+function z(e) {
   let {
     participant: t,
     selected: n,
-    focused: i,
-    idle: l,
+    focused: l,
+    idle: i,
     width: a,
     premiumIndicator: c
-  } = e, s = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), u = (0, F.K)(a);
+  } = e, s = (0, o.e7)([T.Z], () => T.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), u = (0, U.K)(a);
   return (0, r.jsxs)(r.Fragment, {
-    children: [n || i ? null : (0, r.jsx)(L.Z, {
+    children: [n || l ? null : (0, r.jsx)(L.Z, {
       participant: t
-    }), i || null == s || s.state === V.jm8.ENDED || s.state === V.jm8.FAILED ? null : (0, r.jsx)(S.Z, {
-      size: m.ZP.Sizes.SMALL,
-      className: H.liveIndicator,
+    }), l || null == s || s.state === F.jm8.ENDED || s.state === F.jm8.FAILED ? null : (0, r.jsx)(O.Z, {
+      size: b.ZP.Sizes.SMALL,
+      className: G.liveIndicator,
       participant: t,
-      showQuality: !u && !l,
+      showQuality: !u && !i,
       isUpsellEnabled: false,
       premiumIndicator: c
     })]
   })
 }
 
-function Y(e) {
+function K(e) {
   let {
     participant: t,
     selected: n,
-    onVideoResize: l,
-    fit: m,
-    popoutType: g,
-    width: S,
+    onVideoResize: i,
+    fit: b,
+    popoutType: m,
+    width: O,
     focused: L,
-    wrapperClassName: F,
-    paused: q = false,
-    idle: Y = false,
-    controlsBottom: G
-  } = e, K = Z.Z.getVideoComponent(), Q = (0, o.e7)([j.default], () => j.default.getId()), X = (0, h.Z)(), {
+    wrapperClassName: U,
+    paused: z = false,
+    idle: K = false,
+    controlsBottom: Y
+  } = e, q = Z.Z.getVideoComponent(), Q = (0, o.e7)([x.default], () => x.default.getId()), X = (0, E.Z)(), {
     stream: J,
     user: $,
     streamId: ee
-  } = t, et = (0, o.e7)([x.Z], () => x.Z.getChannel(J.channelId)), en = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser($.id, J.guildId), [$.id, J.guildId]), {
+  } = t, et = (0, o.e7)([P.Z], () => P.Z.getChannel(J.channelId)), en = (0, o.e7)([T.Z], () => T.Z.getActiveStreamForUser($.id, J.guildId), [$.id, J.guildId]), {
     defaultWatchMultipleStreams: er
-  } = (0, E.P)({
+  } = (0, v.P)({
     location: "StreamTile"
-  }), ei = (0, o.e7)([P.Z], () => P.Z.getAllActiveStreams().length > 0), el = (0, o.e7)([R.Z], () => R.Z.isFocused()), ea = (null == en ? true : en.ownerId) === Q, eo = ea && !el && g === b.P.NO_POPOUT, ec = null != en ? (0, _.Z)(en, $, $.id === Q, eo) : null, es = S < 195;
+  }), el = (0, o.e7)([T.Z], () => T.Z.getAllActiveStreams().length > 0), ei = (0, o.e7)([j.Z], () => j.Z.isFocused()), ea = (null == en ? true : en.ownerId) === Q, eo = ea && !ei && m === g.P.NO_POPOUT, ec = null != en ? (0, _.Z)(en, $, $.id === Q, eo) : null, es = O < 195;
   (0, f.ZP)(() => {
-    !ei && (null == et ? true : et.isGuildStageVoice()) && !ea && ((0, d.rn)(J), u.Z.updateStageStreamSize(J.channelId, false))
+    !el && (null == et ? true : et.isGuildStageVoice()) && !ea && ((0, d.rn)(J), u.Z.updateStageStreamSize(J.channelId, false))
   });
-  let eu = (0, v.c)(z.Yn.STREAM, t.user.id);
-  i.useEffect(() => {
-    B.info("Stream Tile State - activeStream: ".concat(null != en, " | selected: ").concat(n, " | Video: ").concat(null != K, " | MediaEngine: ").concat(Z.Z.supports(z.AN.VIDEO)))
-  }, [K, en, n]);
+  let eu = (0, h.c)(W.Yn.STREAM, t.user.id);
+  l.useEffect(() => {
+    H.info("Stream Tile State - activeStream: ".concat(null != en, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(Z.Z.supports(W.AN.VIDEO)))
+  }, [q, en, n]);
   let {
     allowGoLiveZoomPan: ed
-  } = (0, O.H)({
+  } = (0, C.H)({
     location: "StreamTile"
   });
   if (X) return (0, r.jsx)(k.Z, {
@@ -111,51 +111,51 @@ function Y(e) {
     selected: n,
     isSelfStream: $.id === Q
   });
-  if ((null == en ? true : en.state) === V.jm8.ENDED) return (0, r.jsx)(N.Z, {
+  if ((null == en ? true : en.state) === F.jm8.ENDED) return (0, r.jsx)(R.Z, {
     selected: n,
     stream: en,
-    width: S
+    width: O
   });
-  if (null != eu || (null == en ? true : en.state) === V.jm8.FAILED) return (0, r.jsx)(D.Z, {
+  if (null != eu || (null == en ? true : en.state) === F.jm8.FAILED) return (0, r.jsx)(D.Z, {
     avError: null == eu ? true : eu.type,
     avErrorContext: eu,
     selected: n,
     stream: t.stream,
-    width: S
+    width: O
   });
-  if (t.type === U.fO.HIDDEN_STREAM) return (0, r.jsx)(M.Z, {
+  if (t.type === V.fO.HIDDEN_STREAM) return (0, r.jsx)(M.Z, {
     selected: n,
     participant: t,
-    width: S
+    width: O
   });
-  if (!(null != en && !n && null != K && Z.Z.supports(z.AN.VIDEO))) return (0, r.jsxs)("div", {
-    className: a()(H.content, H.streamPreview, {
-      [H.small]: es
+  if (!(null != en && !n && null != q && Z.Z.supports(W.AN.VIDEO))) return (0, r.jsxs)("div", {
+    className: a()(G.content, G.streamPreview, {
+      [G.small]: es
     }),
     children: [(0, r.jsx)(y.Z, {
       noImage: true,
       noText: true,
-      className: a()(H.absoluteFill, {
-        [H.streamPreviewOpacity]: null == en
+      className: a()(G.absoluteFill, {
+        [G.streamPreviewOpacity]: null == en
       }),
       stream: t.stream
     }), n ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: H.cta,
+        className: G.cta,
         children: (0, r.jsx)(s.Button, {
           variant: "secondary",
           size: es ? "sm" : "md",
-          text: S < 175 ? W.intl.string(W.t.I6JG46) : W.intl.string(W.t["7Xq/nV"])
+          text: O < 175 ? B.intl.string(B.t.I6JG46) : B.intl.string(B.t["7Xq/nV"])
         })
-      }), ei && !er ? (0, r.jsx)("div", {
-        className: a()(H.cta, H.addCta),
+      }), el && !er ? (0, r.jsx)("div", {
+        className: a()(G.cta, G.addCta),
         children: (0, r.jsx)(c.u, {
-          text: W.intl.string(W.t.wCrzut),
+          text: B.intl.string(B.t.wCrzut),
           children: (0, r.jsx)(s.hU, {
             variant: "secondary",
             size: es ? "sm" : "md",
             icon: s.OgY,
-            "aria-label": W.intl.string(W.t.wCrzut),
+            "aria-label": B.intl.string(B.t.wCrzut),
             onClick: e => {
               e.stopPropagation(), (0, d.rn)(t.stream, {
                 forceMultiple: true
@@ -167,28 +167,28 @@ function Y(e) {
     })]
   });
   else return (0, r.jsxs)(r.Fragment, {
-    children: [null != et ? (0, r.jsx)(w.Z, {
+    children: [null != et ? (0, r.jsx)(I.Z, {
       focused: L,
       channelId: et.id,
       guildId: et.guild_id,
       streamerId: $.id,
       hasScreenMessage: null != ec,
       stream: J
-    }) : null, (0, r.jsx)(C.Z, {
+    }) : null, (0, r.jsx)(S.Z, {
       enableZoom: ed && L,
-      onResize: l,
-      wrapperClassName: a()(g !== b.P.CALL_TILE ? H.videoWrapper : true, F),
-      className: H.content,
+      onResize: i,
+      wrapperClassName: a()(m !== g.P.CALL_TILE ? G.videoWrapper : true, U),
+      className: G.content,
       streamId: ee,
-      videoComponent: K,
-      fit: m,
-      paused: q || (null == en ? true : en.state) === V.jm8.PAUSED || eo,
+      videoComponent: q,
+      fit: b,
+      paused: z || (null == en ? true : en.state) === F.jm8.PAUSED || eo,
       videoSpinnerContext: ea ? p.m.SELF_STREAM : p.m.REMOTE_STREAM,
       userId: $.id,
       streamKey: t.id,
-      controlsBottom: G,
-      idle: Y
-    }, ee), null != ec ? (0, r.jsx)(I.Z, function(e) {
+      controlsBottom: Y,
+      idle: K
+    }, ee), null != ec ? (0, r.jsx)(N.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -206,10 +206,10 @@ function Y(e) {
       }
       return e
     }({
-      size: (0, T.L)(S)
+      size: (0, w.L)(O)
     }, ec)) : null, (0, r.jsx)(A.Z, {
       stream: J,
-      popoutType: g
+      popoutType: m
     })]
   })
 }

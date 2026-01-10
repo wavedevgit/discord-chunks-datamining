@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
   Chunk286379 = require("./286379.js"),
@@ -40,8 +40,8 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = 10 * Chunk70956.Z.Millis.SECOND,
-  N = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
+let N = 10 * Chunk70956.Z.Millis.SECOND,
+  T = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
 
 function D() {
   let e = (0, E.getPID)(),
@@ -59,8 +59,8 @@ function D() {
 }
 class k extends Chunk473749.PureComponent {
   componentDidMount() {
-    this.notificationTimer = setTimeout(this.hideNotification, T), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
-      notif_type: j.n0.OverlayCrashed
+    this.notificationTimer = setTimeout(this.hideNotification, N), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
+      notif_type: _.n0.OverlayCrashed
     })
   }
   componentWillUnmount() {
@@ -78,16 +78,16 @@ class k extends Chunk473749.PureComponent {
     } = this.state, {
       notificationTimer: r
     } = this;
-    return null == r ? null : (0, i.jsx)(_.Z, {
+    return null == r ? null : (0, i.jsx)(Z.Z, {
       contentDomRef: this.contentDomRef,
       observe: false,
-      children: (0, i.jsx)(h.f6W, {
+      children: (0, i.jsx)(f.f6W, {
         theme: C.BRd.DARK,
-        children: r => (0, i.jsxs)(h.P3F, {
+        children: r => (0, i.jsxs)(f.P3F, {
           innerRef: this.contentDomRef,
-          className: s()(r, P.container),
+          className: o()(r, P.container),
           onClick: e => e.stopPropagation(),
-          children: [(0, i.jsx)(m.ZP, {
+          children: [(0, i.jsx)(b.ZP, {
             expand: true,
             icon: (0, i.jsx)(v.Z, {
               width: 40,
@@ -100,11 +100,11 @@ class k extends Chunk473749.PureComponent {
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
             locked: false
-          }), n && null != e ? (0, i.jsxs)(Z.ZP, {
+          }), n && null != e ? (0, i.jsxs)(j.ZP, {
             className: P.stackTrace,
-            children: [(0, i.jsx)(Z.ZP.Bar, {
+            children: [(0, i.jsx)(j.ZP.Bar, {
               children: "Error Details"
-            }), (0, i.jsx)(Z.ZP.Content, {
+            }), (0, i.jsx)(j.ZP.Content, {
               className: P.stackTraceCode,
               children: (0, i.jsx)("code", {
                 className: P.code,
@@ -132,7 +132,7 @@ class k extends Chunk473749.PureComponent {
       this.setState({
         busy: true
       }), D(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
-        notif_type: j.n0.OverlayCrashed,
+        notif_type: _.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
     }), w(this, "handleNotificationClick", e => {
@@ -146,8 +146,8 @@ class k extends Chunk473749.PureComponent {
     })
   }
 }
-let R = l().throttle(() => {
-  b.Z.increment({
+let R = a().throttle(() => {
+  m.Z.increment({
     name: u.V.APP_CRASHED,
     tags: ["reason:".concat(c.v.UNHANDLED_JS_ERROR), "level:".concat(d.c.FATAL)]
   }, true)
@@ -160,7 +160,7 @@ class A extends Chunk473749.PureComponent {
     this.setState({
       error: e,
       info: t
-    }), N.error("ErrorBoundary caught error: ".concat(e.message), {
+    }), T.error("ErrorBoundary caught error: ".concat(e.message), {
       error: e,
       info: t
     });
@@ -180,7 +180,7 @@ class A extends Chunk473749.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", D));
-    let a = (0, x.V6)(e, S.gl.Hook, {
+    let s = (0, x.V6)(e, S.gl.Hook, {
       extra: t
     });
     p.Z.track(C.rMx.APP_CRASHED, {
@@ -188,7 +188,7 @@ class A extends Chunk473749.PureComponent {
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
-      sentry_issue_id: a,
+      sentry_issue_id: s,
       error_level: "fatal"
     }), R()
   }

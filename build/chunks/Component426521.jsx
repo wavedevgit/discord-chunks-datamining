@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => U
+  U: () => G
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -42,18 +42,18 @@ function D(e) {
     item: c
   } = e, u = null == (t = c.message) ? true : t.content;
   if (null == u) return (0, r.jsx)("div", {});
-  let d = null != (o = m.default.getUser(null == (i = c.message) || null == (n = i.author) ? true : n.id)) ? o : new b.Z(null == (l = c.message) ? true : l.author),
-    h = f.Z.parse(u);
+  let d = null != (o = b.default.getUser(null == (i = c.message) || null == (n = i.author) ? true : n.id)) ? o : new m.Z(null == (l = c.message) ? true : l.author),
+    f = p.Z.parse(u);
   return (0, r.jsxs)("div", {
-    className: T.messagePreviewContainer,
+    className: A.messagePreviewContainer,
     children: [(0, r.jsx)(s.Z, {
       user: d,
       size: a.EFr.SIZE_24
     }), (0, r.jsx)(a.Text, {
-      className: T.messagePreviewText,
+      className: A.messagePreviewText,
       variant: "text-sm/normal",
       lineClamp: 2,
-      children: h
+      children: f
     })]
   })
 }
@@ -65,9 +65,9 @@ function M(e) {
     }
   } = e;
   if (null == t) return null;
-  let n = f.Z.parse(t);
+  let n = p.Z.parse(t);
   return (0, r.jsx)("div", {
-    className: T.calloutContainer,
+    className: A.calloutContainer,
     children: (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       lineClamp: 2,
@@ -76,18 +76,18 @@ function M(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     item: t
-  } = e, n = R, i = w.intl.string(w.t.SJTHJb);
-  return t.completed && (n = A, i = w.intl.string(w.t.f6RTAM)), (0, r.jsxs)("div", {
-    className: T.lifecycleContainer,
+  } = e, n = R, i = T.intl.string(T.t.SJTHJb);
+  return t.completed && (n = w, i = T.intl.string(T.t.f6RTAM)), (0, r.jsxs)("div", {
+    className: A.lifecycleContainer,
     children: [(0, r.jsx)("img", {
-      className: T.checkbox,
+      className: A.checkbox,
       alt: "",
       src: n
     }), (0, r.jsx)(a.Text, {
-      className: T.lifecycleText,
+      className: A.lifecycleText,
       variant: "text-xs/bold",
       color: "text-default",
       children: i
@@ -95,23 +95,23 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     applicationId: t
   } = e, n = (0, l.e7)([u.Z], () => u.Z.getApplication(t));
-  return null == n ? (0, r.jsx)("div", {}) : (0, r.jsx)(h.Z, {
+  return null == n ? (0, r.jsx)("div", {}) : (0, r.jsx)(f.Z, {
     application: n
   }, n.id)
 }
-let G = Chunk473749.memo(function(e) {
+let U = Chunk473749.memo(function(e) {
     var t;
     let {
       item: l,
       ackedBeforeId: s
     } = e, {
       analyticsLocations: u
-    } = (0, c.ZP)(), h = (0, _.I)(l, s), g = i.useCallback(async () => {
-      if (h || (0, j.wt)(l), null != l.item_enum && l.item_enum === C.AM.FIND_FRIENDS) return void(0, a.ZDy)(async () => {
+    } = (0, c.ZP)(), f = (0, _.I)(l, s), g = i.useCallback(async () => {
+      if (f || (0, j.wt)(l), null != l.item_enum && l.item_enum === x.AM.FIND_FRIENDS) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("6074").then(n.bind(n, 443189));
@@ -137,94 +137,94 @@ let G = Chunk473749.memo(function(e) {
         }, t))
       });
       if (null != l.deeplink) {
-        let t = v.Z.safeParseWithQuery(l.deeplink);
+        let t = O.Z.safeParseWithQuery(l.deeplink);
         if (null == t) return;
         let n = t.hostname,
           r = t.path;
         if (null == n || null == r) return;
-        if (v.Z.isDiscordHostname(n)) {
+        if (O.Z.isDiscordHostname(n)) {
           let t = r.match("^/users/(\\d+)");
           if (null != t && 2 === t.length) {
             var e;
-            (0, p.openUserProfileModal)({
+            (0, h.openUserProfileModal)({
               userId: t[1],
               messageId: null == (e = l.message) ? true : e.id,
               sourceAnalyticsLocations: u
             })
           } else await (0, d.Z)(r)
         }
-        y.default.track(Z.rMx.NOTIFICATION_CENTER_ACTION, {
-          action_type: C.ud.CLICKED,
+        y.default.track(N.rMx.NOTIFICATION_CENTER_ACTION, {
+          action_type: x.ud.CLICKED,
           notification_center_id: l.id,
           item_type: l.type,
-          acked: h
+          acked: f
         })
       }
-    }, [l, h, u]), b = null;
-    l.type === C.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? b = (0, r.jsx)(P.Z, {
+    }, [l, f, u]), m = null;
+    l.type === x.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(P.Z, {
       userId: l.other_user.id
-    }) : l.type === C.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (b = (0, r.jsx)(P.Z, {
+    }) : l.type === x.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(P.Z, {
       userId: l.other_user.id,
       applicationId: l.applicationId
     }));
-    let m = null != l.local_id,
+    let b = null != l.local_id,
       S = (0, E.Z)({
         item: l,
-        renderApplication: e => (0, r.jsx)(k, {
+        renderApplication: e => (0, r.jsx)(L, {
           applicationId: e
         })
       }),
       {
-        emoji_id: w,
-        emoji_name: A
+        emoji_id: T,
+        emoji_name: w
       } = l,
-      R = null != w || null != A ? (0, r.jsx)(o.Z, {
-        className: T.emoji,
-        emojiId: w,
-        emojiName: A
+      R = null != T || null != w ? (0, r.jsx)(o.Z, {
+        className: A.emoji,
+        emojiId: T,
+        emojiName: w
       }) : null;
     return (0, r.jsxs)("div", {
-      className: T.row,
+      className: A.row,
       children: [(0, r.jsxs)(a.kL8, {
-        className: T.rowContent,
+        className: A.rowContent,
         focusProps: {
           offset: 4
         },
         "aria-label": S,
         onClick: g,
-        children: [h ? null : (0, r.jsx)("div", {
-          className: T.unread
+        children: [f ? null : (0, r.jsx)("div", {
+          className: A.unread
         }), (0, r.jsx)(I.U, {
           item: l
         }), (0, r.jsxs)("div", {
-          className: T.body,
-          children: ["lifecycle_item" === l.type && null != l.item_enum && (0, r.jsx)(L, {
+          className: A.body,
+          children: ["lifecycle_item" === l.type && null != l.item_enum && (0, r.jsx)(k, {
             item: l
           }), (0, r.jsxs)(a.Text, {
             variant: "text-md/normal",
-            color: h ? "text-muted" : "text-default",
-            children: ["string" != typeof S ? S : f.Z.parse(S), R]
+            color: f ? "text-muted" : "text-default",
+            children: ["string" != typeof S ? S : p.Z.parse(S), R]
           }), (null == (t = l.message) ? true : t.content) != null ? (0, r.jsx)(D, {
             item: l
           }) : null, null != l.callout ? (0, r.jsx)(M, {
             item: l
           }) : null, (0, r.jsx)(a.Text, {
             variant: "text-xs/medium",
-            color: h ? "text-muted" : "text-default",
-            children: (0, x.a3)(O.default.extractTimestamp(l.id))
-          }), b]
+            color: f ? "text-muted" : "text-default",
+            children: (0, C.a3)(v.default.extractTimestamp(l.id))
+          }), m]
         })]
-      }), m ? null : (0, r.jsx)(N.z, {
+      }), b ? null : (0, r.jsx)(Z.z, {
         item: l
       })]
     })
   }),
-  U = Chunk473749.memo(function(e) {
+  G = Chunk473749.memo(function(e) {
     let {
       items: t
     } = e, n = g.d$.useSetting();
     return (0, S.c)(t), (0, r.jsx)(r.Fragment, {
-      children: t.map(e => (0, r.jsx)(G, {
+      children: t.map(e => (0, r.jsx)(U, {
         item: e,
         ackedBeforeId: n
       }, e.id))

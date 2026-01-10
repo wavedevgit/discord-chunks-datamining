@@ -1,14 +1,14 @@
-/** Chunk was on 193 **/
+/** Chunk was on 49131 **/
 /** chunk id: 386923, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk918222 = require("./918222.js"),
@@ -30,86 +30,86 @@ let T = {
     friction: 18,
     clamp: true
   },
-  w = e => {
+  S = e => {
     let {
       guild: t
-    } = e, n = (0, o.e7)([h.Z], () => h.Z.can(x.Plq.MANAGE_GUILD, t));
-    return (0, a.jsxs)(c.Kqy, {
+    } = e, n = (0, o.e7)([f.Z], () => f.Z.can(x.Plq.MANAGE_GUILD, t));
+    return (0, r.jsxs)(c.Kqy, {
       direction: "horizontal",
       gap: 8,
-      children: [(0, a.jsxs)(c.Kqy, {
+      children: [(0, r.jsxs)(c.Kqy, {
         direction: "vertical",
         gap: 16,
-        children: [(0, a.jsx)(c.Kqy, {
+        children: [(0, r.jsx)(c.Kqy, {
           direction: "vertical",
           gap: 4,
-          children: (0, a.jsx)(c.Text, {
+          children: (0, r.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "text-default",
             children: p.intl.string(b.default.fP8DVx)
           })
-        }), (0, a.jsxs)(c.Kqy, {
+        }), (0, r.jsxs)(c.Kqy, {
           direction: "vertical",
           gap: 8,
-          children: [(0, a.jsx)(c.Text, {
+          children: [(0, r.jsx)(c.Text, {
             variant: "text-lg/semibold",
             color: "text-default",
             children: p.intl.string(b.default["i7CH/I"])
-          }), (0, a.jsxs)("ol", {
+          }), (0, r.jsxs)("ol", {
             className: l()(j.list, j.orderedList, j.topLevelList),
-            children: [(0, a.jsx)("li", {
-              children: (0, a.jsx)(c.Text, {
+            children: [(0, r.jsx)("li", {
+              children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 children: p.intl.string(b.default["+Izoz7"])
               })
-            }), (0, a.jsxs)("li", {
-              children: [(0, a.jsx)(c.Text, {
+            }), (0, r.jsxs)("li", {
+              children: [(0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 children: p.intl.string(b.default["iu/RkU"])
-              }), (0, a.jsxs)("ul", {
+              }), (0, r.jsxs)("ul", {
                 className: l()(j.list, j.innerList, j.unorderedList),
-                children: [(0, a.jsx)("li", {
-                  children: (0, a.jsx)(c.Text, {
+                children: [(0, r.jsx)("li", {
+                  children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
                     children: p.intl.string(b.default.QogKbP)
                   })
-                }), (0, a.jsx)("li", {
-                  children: (0, a.jsx)(c.Text, {
+                }), (0, r.jsx)("li", {
+                  children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
                     children: p.intl.string(b.default.V4orHT)
                   })
-                }), (0, a.jsx)("li", {
-                  children: (0, a.jsx)(c.Text, {
+                }), (0, r.jsx)("li", {
+                  children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
                     children: p.intl.string(b.default.VrrQXe)
                   })
-                }), (0, a.jsx)("li", {
-                  children: (0, a.jsx)(c.Text, {
+                }), (0, r.jsx)("li", {
+                  children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
                     children: p.intl.string(b.default.pSuM5e)
                   })
-                }), (0, a.jsx)("li", {
-                  children: (0, a.jsx)(c.Text, {
+                }), (0, r.jsx)("li", {
+                  children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "text-default",
                     children: p.intl.string(b.default["/RLXlI"])
                   })
                 })]
               })]
-            }), (0, a.jsx)("li", {
-              children: (0, a.jsx)(c.Text, {
+            }), (0, r.jsx)("li", {
+              children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 children: p.intl.string(b.default.j4AmYy)
               })
-            }), (0, a.jsx)("li", {
-              children: (0, a.jsx)(c.Text, {
+            }), (0, r.jsx)("li", {
+              children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 children: p.intl.format(b.default["/g+PvX"], {
@@ -120,25 +120,25 @@ let T = {
               })
             })]
           })]
-        }), (0, a.jsxs)(c.Kqy, {
+        }), (0, r.jsxs)(c.Kqy, {
           direction: "vertical",
           gap: 8,
-          children: [(0, a.jsx)(c.Text, {
+          children: [(0, r.jsx)(c.Text, {
             variant: "text-lg/semibold",
             color: "text-default",
             children: p.intl.string(b.default.qJWXsz)
-          }), (0, a.jsxs)("ul", {
+          }), (0, r.jsxs)("ul", {
             className: l()(j.list, j.unorderedList, j.topLevelList),
-            children: [(0, a.jsx)("li", {
-              children: (0, a.jsx)(c.Text, {
+            children: [(0, r.jsx)("li", {
+              children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 children: p.intl.format(b.default.FUBV1P, {
                   survey: "https://discord.sjc1.qualtrics.com/jfe/form/SV_3WvT7SqlWpCJ4HQ"
                 })
               })
-            }), (0, a.jsx)("li", {
-              children: (0, a.jsx)(c.Text, {
+            }), (0, r.jsx)("li", {
+              children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 children: p.intl.format(b.default.W4MIAG, {
@@ -147,29 +147,29 @@ let T = {
               })
             })]
           })]
-        }), (0, a.jsxs)(c.Kqy, {
+        }), (0, r.jsxs)(c.Kqy, {
           direction: "vertical",
           gap: 8,
-          children: [(0, a.jsx)(c.Text, {
+          children: [(0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: p.intl.string(b.default.J3HKmx)
-          }), n && (0, a.jsx)(c.Text, {
+          }), n && (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: p.intl.format(b.default["9x2vbP"], {
-              optOutHook: e => (0, a.jsx)(f.Z, {
+              optOutHook: e => (0, r.jsx)(h.Z, {
                 onClick: () => m.Z.open(t.id, x.pNK.MODERATION, null, x.KsC.SAFETY_OVERVIEW),
                 children: e
               })
             })
-          }), (0, a.jsx)(c.Text, {
+          }), (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: p.intl.string(b.default.KcCY25)
           })]
         })]
-      }), (0, a.jsx)("img", {
+      }), (0, r.jsx)("img", {
         src: y,
         alt: p.intl.string(p.t.gAlJzV),
         width: u.TJ,
@@ -178,17 +178,17 @@ let T = {
     })
   };
 
-function S(e) {
+function N(e) {
   let t, {
       guild: n
     } = e,
     [i, o] = (0, d.R)("report-to-mod-education-dismissed", false),
     [u, m] = (0, d.R)("report-to-mod-education-expanded", false),
     {
-      transitions: f,
-      setVisible: h
+      transitions: h,
+      setVisible: f
     } = (() => {
-      let [e, t] = r.useState(true);
+      let [e, t] = a.useState(true);
       return {
         transitions: (0, c.Yzy)(e, {
           keys: e => e ? "shown" : "hidden",
@@ -221,48 +221,48 @@ function S(e) {
         duration: 200
       }
     }));
-  return (r.useEffect(() => {
-    i && h(false)
-  }, [i, h]), i) ? null : f((e, t) => t ? (0, a.jsxs)(s.animated.div, {
+  return (a.useEffect(() => {
+    i && f(false)
+  }, [i, f]), i) ? null : h((e, t) => t ? (0, r.jsxs)(s.animated.div, {
     style: e,
     onClick: () => m(!u),
     className: l()(C.container, j.container, v.mainCard),
-    children: [(0, a.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: j.inline,
-      children: [(0, a.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
         className: j.author,
-        children: [(0, a.jsx)(c.gw7, {
+        children: [(0, r.jsx)(c.gw7, {
           size: "custom",
           width: 28,
           height: 28,
           color: "currentColor",
           className: j.discordIcon
-        }), (0, a.jsx)(c.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-strong",
           children: p.intl.string(p.t.uvGmCx)
-        }), (0, a.jsx)(c.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-strong",
           children: "—"
-        }), (0, a.jsx)(c.Heading, {
+        }), (0, r.jsx)(c.Heading, {
           variant: "text-md/semibold",
           color: "text-strong",
           children: p.intl.string(b.default["95qQRB"])
         })]
-      }), (0, a.jsx)(c.P3F, {
+      }), (0, r.jsx)(c.P3F, {
         onClick: () => o(true),
-        children: (0, a.jsx)(c.Dio, {
+        children: (0, r.jsx)(c.Dio, {
           size: "xs",
           color: "currentColor",
           className: j.closeIcon
         })
       })]
-    }), g((e, t) => t ? (0, a.jsxs)(s.animated.div, {
+    }), g((e, t) => t ? (0, r.jsxs)(s.animated.div, {
       style: e,
-      children: [(0, a.jsx)("hr", {
+      children: [(0, r.jsx)("hr", {
         className: j.separator
-      }), (0, a.jsx)(w, {
+      }), (0, r.jsx)(S, {
         guild: n
       })]
     }) : null)]

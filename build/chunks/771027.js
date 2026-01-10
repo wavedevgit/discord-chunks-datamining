@@ -1,8 +1,8 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 771027, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Tu: () => g,
-  UM: () => m,
+  Tu: () => m,
+  UM: () => g,
   j1: () => h
 }), require("./388685.js"), require("./387201.js"), require("./642613.js");
 var Chunk473749 = require("./473749.js"),
@@ -20,19 +20,19 @@ var Chunk473749 = require("./473749.js"),
 function h(e) {
   let {
     channel: t
-  } = e, n = (0, r.e7)([o.Z], () => o.Z.getUserAffinitiesMap(), []), l = null == t ? true : t.guild_id, a = new Set((0, r.e7)([u.ZP], () => null == t ? [] : u.ZP.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), p = (0, r.Wu)([s.ZP, c.default], () => s.ZP.getMembers(l).map(e => c.default.getUser(e.userId)).filter(d.lm).filter(e => !a.has(e.id)), [l, a]);
-  return i.useMemo(() => p.toSorted((e, t) => {
-    var i, r, l, a;
+  } = e, n = (0, i.e7)([o.Z], () => o.Z.getUserAffinitiesMap(), []), l = null == t ? true : t.guild_id, a = new Set((0, i.e7)([u.ZP], () => null == t ? [] : u.ZP.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), p = (0, i.Wu)([s.ZP, c.default], () => s.ZP.getMembers(l).map(e => c.default.getUser(e.userId)).filter(d.lm).filter(e => !a.has(e.id)), [l, a]);
+  return r.useMemo(() => p.toSorted((e, t) => {
+    var r, i, l, a;
     let {
       id: o
     } = e, {
       id: s
     } = t;
-    return (null != (l = null == (i = n.get(s)) ? true : i.vcProbability) ? l : 0) - (null != (a = null == (r = n.get(o)) ? true : r.vcProbability) ? a : 0)
+    return (null != (l = null == (r = n.get(s)) ? true : r.vcProbability) ? l : 0) - (null != (a = null == (i = n.get(o)) ? true : i.vcProbability) ? a : 0)
   }), [p, n]).slice(0, 5)
 }
 
-function m(e) {
+function g(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       enabled: n
@@ -44,29 +44,29 @@ function m(e) {
     {
       collapsed: l = false
     } = t,
-    o = (0, r.e7)([f.Z], () => f.Z.getShouldShowPopover(e.id), [e.id]);
+    o = (0, i.e7)([f.Z], () => f.Z.getShouldShowPopover(e.id), [e.id]);
   return {
     shouldShow: n && o && !l,
-    dismiss: i.useCallback(() => {
+    dismiss: r.useCallback(() => {
       (0, p.o)(e.id)
     }, [e])
   }
 }
 
-function g(e) {
-  let [t, n] = i.useState(false), [a, o] = i.useState(false), s = (0, r.e7)([l.Z], () => l.Z.keyboardModeEnabled);
-  i.useEffect(() => {
+function m(e) {
+  let [t, n] = r.useState(false), [a, o] = r.useState(false), s = (0, i.e7)([l.Z], () => l.Z.keyboardModeEnabled);
+  r.useEffect(() => {
     let t = e.current;
     if (null == t) return;
     n(false), o(false);
-    let i = () => n(true),
-      r = () => n(false),
+    let r = () => n(true),
+      i = () => n(false),
       l = () => o(true),
       a = e => {
         t.contains(e.relatedTarget) || o(false)
       };
-    return t.addEventListener("mouseenter", i), t.addEventListener("mouseleave", r), t.addEventListener("focusin", l), t.addEventListener("focusout", a), () => {
-      t.removeEventListener("mouseenter", i), t.removeEventListener("mouseleave", r), t.removeEventListener("focusin", l), t.removeEventListener("focusout", a)
+    return t.addEventListener("mouseenter", r), t.addEventListener("mouseleave", i), t.addEventListener("focusin", l), t.addEventListener("focusout", a), () => {
+      t.removeEventListener("mouseenter", r), t.removeEventListener("mouseleave", i), t.removeEventListener("focusin", l), t.removeEventListener("focusout", a)
     }
   }, [e]);
   let c = s && a;

@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 588322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -25,24 +25,24 @@ var Chunk54381 = require("./54381.js"),
 function j(e) {
   let {
     channelId: t
-  } = e, j = (0, l.e7)([g.Z], () => g.Z.getChannel(t)), v = (0, l.e7)([g.Z], () => g.Z.getChannel(null == j ? true : j.parent_id)), C = (0, l.e7)([b.Z], () => b.Z.getGuild(null == j ? true : j.getGuildId())), I = (0, o.ZP)(j), _ = i.useRef(false);
+  } = e, j = (0, l.e7)([g.Z], () => g.Z.getChannel(t)), x = (0, l.e7)([g.Z], () => g.Z.getChannel(null == j ? true : j.parent_id)), C = (0, l.e7)([b.Z], () => b.Z.getGuild(null == j ? true : j.getGuildId())), E = (0, s.ZP)(j), S = i.useRef(false);
   if (i.useEffect(() => {
-      null == j || _.current || (_.current = true, (0, y.lN)(j))
+      null == j || S.current || (S.current = true, (0, y.lN)(j))
     }, [j]), null == j || null == C) return null;
-  let S = (0, r.jsx)(f.Z, {
+  let _ = (0, r.jsx)(h.Z, {
     channel: j
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.Z, {
+    children: [(0, r.jsx)(o.Z, {
       channel: j,
       draftType: m.d.ChannelMessage
-    }), (0, r.jsx)(u.ZP, {
-      toolbar: S,
-      "aria-label": O.intl.string(O.t.Pwe8tN),
+    }), (0, r.jsx)(d.ZP, {
+      toolbar: _,
+      "aria-label": v.intl.string(v.t.Pwe8tN),
       children: (0, p.ud)({
         channel: j,
-        parentChannel: v,
-        channelName: I,
+        parentChannel: x,
+        channelName: E,
         guild: C,
         inSidebar: true,
         handleContextMenu: function(e) {
@@ -85,15 +85,15 @@ function j(e) {
           })
         },
         handleClick: function() {
-          null != j && (0, h.XU)(j.guild_id, j.id)
+          null != j && (0, f.XU)(j.guild_id, j.id)
         }
       })
     }), (0, r.jsx)("div", {
-      className: x.chat,
+      className: O.chat,
       children: (0, r.jsx)(c.Z, {
         channel: j,
         guild: C,
-        chatInputType: d.Ie.SIDEBAR
+        chatInputType: u.Ie.SIDEBAR
       }, t)
     })]
   })

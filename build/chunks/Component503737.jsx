@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 503737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -31,12 +31,12 @@ function u(e) {
   return e
 }
 let d = "ActivityInviteManager",
-  f = () => {
+  p = () => {
     a.Z.dispatch({
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
-class h extends Chunk317770.Z {
+class f extends Chunk317770.Z {
   _initialize() {
     a.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), a.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
@@ -48,7 +48,7 @@ class h extends Chunk317770.Z {
       activity: t,
       isPrivate: a,
       context: o
-    } = e, h = o === s.IlC.POPOUT ? l.u1M : l.z1l;
+    } = e, f = o === s.IlC.POPOUT ? l.u1M : l.z1l;
     a ? (0, l.h7j)(e => {
       var n, a;
       return (0, r.jsx)(i.Modal, (n = u({
@@ -77,21 +77,21 @@ class h extends Chunk317770.Z {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
       }), n))
     }, {
-      onCloseCallback: f,
+      onCloseCallback: p,
       modalKey: d
-    }, h) : (0, l.ZDy)(async () => {
+    }, f) : (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("5598").then(n.bind(n, 621566));
       return t => (0, r.jsx)(e, u({}, t))
     }, {
-      onCloseCallback: f,
+      onCloseCallback: p,
       modalKey: d,
-      contextKey: h
+      contextKey: f
     })
   }
   handleModalClose(e) {
     (0, l.Mr3)(d)
   }
 }
-let p = new h
+let h = new f

@@ -1,9 +1,9 @@
 /** Chunk was on 93375 **/
 /** chunk id: 727072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I2: () => j,
+  I2: () => d,
   RD: () => p,
-  mY: () => d,
+  mY: () => j,
   pH: () => A
 }), require("./539854.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -60,12 +60,12 @@ let S = {},
         triggerType: o
       } = n, {
         rules: c
-      } = t(), f = null != (r = c[i]) ? r : {}, S = null != (l = f[o]) ? l : [], O = S.some(e => e.id === u), d = S.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), j = O ? d.map(e => e.id === u ? n : e) : [...d, n];
+      } = t(), f = null != (r = c[i]) ? r : {}, S = null != (l = f[o]) ? l : [], O = S.some(e => e.id === u), j = S.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), d = O ? j.map(e => e.id === u ? n : e) : [...j, n];
       (0, a.j)(() => {
         e({
           rules: g(E({}, c), {
             [i]: g(E({}, f), {
-              [o]: j
+              [o]: d
             })
           }),
           error: null
@@ -136,12 +136,12 @@ let S = {},
       }
     }
   })),
-  d = (e, t) => {
+  j = (e, t) => {
     var n, r;
     return (null != (r = null == (n = O.getState().rules[e]) ? true : n[t]) ? r : []).length
   };
 
-function j(e) {
+function d(e) {
   let [t, n] = r.useState(false), [i, a] = O(e => [e.syncRules, e.fetching], l.X);
   return [t, r.useCallback(async () => {
     if (!a && null != e) try {
@@ -153,7 +153,7 @@ function j(e) {
 }
 
 function p(e) {
-  let [t, n] = j(e);
+  let [t, n] = d(e);
   return r.useEffect(() => {
     (async () => {
       await n()

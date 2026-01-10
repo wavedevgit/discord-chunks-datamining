@@ -1,13 +1,13 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 87646 **/
 /** chunk id: 858543, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  DM: () => x,
-  ZP: () => j
+  DM: () => p,
+  ZP: () => v
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -19,64 +19,64 @@ var Chunk120356 = require("./120356.js"),
   Chunk112021 = require("./112021.js"),
   Chunk458681 = require("./458681.js");
 
-function x(e) {
+function p(e) {
   let {
     channel: t,
     isNew: n
-  } = e, s = (0, u.eV)(t), l = s.slice(true, 3), a = s.slice(3), r = s.length > 3 ? s.length - 3 : 0, i = t.hasFlag(m.zZ.PINNED), o = l.length > 0 || i || n;
+  } = e, i = (0, u.eV)(t), s = i.slice(true, 3), r = i.slice(3), l = i.length > 3 ? i.length - 3 : 0, a = t.hasFlag(h.zZ.PINNED), o = s.length > 0 || a || n;
   return {
-    shownTags: l,
-    remainingTags: a,
-    moreTagsCount: r,
-    isPinned: i,
+    shownTags: s,
+    remainingTags: r,
+    moreTagsCount: l,
+    isPinned: a,
     shouldRenderTagsRow: o,
-    forumPostContainsTags: s.length > 0
+    forumPostContainsTags: i.length > 0
   }
 }
 
-function j(e) {
+function v(e) {
   let {
     channel: t,
     isNew: n,
-    tagsClassName: l,
+    tagsClassName: s,
     className: u
   } = e, {
-    shownTags: m,
-    remainingTags: j,
+    shownTags: h,
+    remainingTags: v,
     moreTagsCount: b,
-    isPinned: v,
-    shouldRenderTagsRow: p
-  } = x({
+    isPinned: x,
+    shouldRenderTagsRow: O
+  } = p({
     channel: t,
     isNew: n
   }), {
-    tagFilter: N
+    tagFilter: j
   } = (0, c.H)(t.id);
-  return p ? (0, s.jsxs)("div", {
-    className: a()(f.tags, u),
-    children: [n ? (0, s.jsx)(o.IGR, {
-      className: a()(g.newBadge, g.inTagsRow),
-      color: r.Z.unsafe_rawColors.BRAND_260.css,
-      text: h.intl.string(h.t.y2b7CA)
-    }) : null, v && (0, s.jsx)("div", {
+  return O ? (0, i.jsxs)("div", {
+    className: r()(f.tags, u),
+    children: [n ? (0, i.jsx)(o.IGR, {
+      className: r()(m.newBadge, m.inTagsRow),
+      color: l.Z.unsafe_rawColors.BRAND_260.css,
+      text: g.intl.string(g.t.y2b7CA)
+    }) : null, x && (0, i.jsx)("div", {
       className: f.pinIcon,
-      children: (0, s.jsx)(i.u, {
-        text: h.intl.string(h.t["1QLRYb"]),
-        children: (0, s.jsx)(o.qQX, {
+      children: (0, i.jsx)(a.u, {
+        text: g.intl.string(g.t["1QLRYb"]),
+        children: (0, i.jsx)(o.qQX, {
           size: "custom",
           width: 16,
           height: 16,
           color: "white"
         })
       })
-    }), m.map(e => (0, s.jsx)(d.Z, {
+    }), h.map(e => (0, i.jsx)(d.Z, {
       tag: e,
       size: d.Z.Sizes.SMALL,
-      className: a()(l, {
-        [f.tagFiltered]: N.has(e.id)
+      className: r()(s, {
+        [f.tagFiltered]: j.has(e.id)
       })
-    }, e.id)), b > 0 ? (0, s.jsx)(d.f, {
-      tags: j,
+    }, e.id)), b > 0 ? (0, i.jsx)(d.f, {
+      tags: v,
       count: b,
       size: d.Z.Sizes.SMALL
     }) : null]

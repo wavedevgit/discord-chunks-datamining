@@ -2,7 +2,7 @@
 /** chunk id: 166805, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  P: () => C
+  P: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,8 +30,8 @@ function O(e) {
     guildProfile: c,
     fetchGuildProfile: f,
     fetchStatus: O
-  } = (0, g.u)(t), C = O !== u.a.FETCHED, {
-    fetchedEmbed: y,
+  } = (0, g.u)(t), y = O !== u.a.FETCHED, {
+    fetchedEmbed: C,
     embedEnabled: N,
     embedChannelId: E
   } = (0, s.cj)([b.Z], () => {
@@ -45,16 +45,16 @@ function O(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), I = i.useMemo(() => (0, h.S)(t), [t]), S = i.useMemo(() => (0, h.a)(t), [t]), [_, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !N;
+  }), I = i.useMemo(() => (0, h.S)(t), [t]), S = i.useMemo(() => (0, h.a)(t), [t]), [_, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !y && !P && !N;
   i.useEffect(() => {
-    y || (0, m.R)(t)
-  }, [y, t]), i.useEffect(() => {
+    C || (0, m.R)(t)
+  }, [C, t]), i.useEffect(() => {
     f()
   }, [t, f]);
   let Z = i.useCallback(async e => {
     T(true), await (0, p.c)(t, e, E), T(false)
   }, [E, t]);
-  return y ? (0, r.jsxs)(r.Fragment, {
+  return C ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.rsf, {
       label: j.intl.string(j.t.NR6huS),
       checked: N,
@@ -116,7 +116,7 @@ function O(e) {
   }) : (0, r.jsx)(o.$jN, {})
 }
 
-function C(e) {
+function y(e) {
   let {
     guildId: t
   } = e, n = (0, s.e7)([f.Z], () => f.Z.enabled);

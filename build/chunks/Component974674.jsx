@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk793030 = require("./793030.js"),
   Chunk438784 = require("./438784.jsx"),
   Chunk696826 = require("./696826.jsx"),
@@ -522,7 +522,7 @@ function F(e) {
     width: A + S,
     height: A,
     viewBox: "0 0 ".concat(A + S, " ").concat(A),
-    className: b.avatarDecoration,
+    className: b.avatarDecorationContainer,
     "aria-hidden": true,
     children: (0, r.jsx)("foreignObject", {
       x: 0,
@@ -530,14 +530,11 @@ function F(e) {
       width: A,
       height: A,
       mask: null != N ? "url(#".concat(N, ")") : true,
-      children: (0, r.jsx)("div", {
-        className: b.avatarStack,
-        children: (0, r.jsx)("img", {
-          className: b.avatar,
-          src: v,
-          alt: " ",
-          "aria-hidden": true
-        })
+      children: (0, r.jsx)("img", {
+        className: b.avatarDecoration,
+        src: v,
+        alt: " ",
+        "aria-hidden": true
       })
     })
   });

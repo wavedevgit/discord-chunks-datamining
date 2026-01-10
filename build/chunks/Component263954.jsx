@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 263954, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 89675 **/
+/** chunk id: 263954, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => i
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,24 +9,24 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk11777 = require("./11777.js");
 
-function s(e) {
+function i(e) {
   let {
-    icon: t,
-    iconClassName: n,
-    description: i,
-    color: s
+    icon: r,
+    iconClassName: t,
+    description: o,
+    color: i
   } = e;
-  return (0, r.jsxs)("div", {
-    className: o.perkRow,
-    children: [(0, r.jsx)("div", {
-      className: o.perkIconContainer,
-      children: (0, r.jsx)(t, {
-        color: null != s ? s : "currentColor",
-        className: a()(o.perkIcon, n)
+  return (0, n.jsxs)("div", {
+    className: s.perkRow,
+    children: [(0, n.jsx)("div", {
+      className: s.perkIconContainer,
+      children: (0, n.jsx)(r, {
+        color: null != i ? i : "currentColor",
+        className: a()(s.perkIcon, t)
       })
-    }), (0, r.jsx)("div", {
-      className: o.perkDescription,
-      children: i
+    }), (0, n.jsx)("div", {
+      className: s.perkDescription,
+      children: o
     })]
   })
 }

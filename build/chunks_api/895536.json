@@ -1,1 +1,0 @@
-{"id":"895536","type":"experiment","data":{"kind":"user","id":"2024-06_ctp_voice_call_uneven_buckets","label":"CTP voice call - A/A test - Uneven buckets","defaultConfig":{"doSomething":false},"commonTriggerPoint":"Chunk987338.$P.VOICE_CALL","treatments":[{"id":1,"label":"Treatment","config":{"doSomething":true}}]},"fromModule":{"id":"web.js"}}

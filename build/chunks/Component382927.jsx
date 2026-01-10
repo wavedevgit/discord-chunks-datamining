@@ -94,61 +94,64 @@ function k(e) {
     currentUser: i
   } = e, o = U(e, ["onClose", "isExistingSub", "premiumGroupPrimaryName", "currentUser"]);
   let u = (0, l.e7)([f.Z], () => f.Z.useReducedMotion),
-    d = (0, g.rO)() ? C.Z : j.Z;
+    d = (0, g.rO)() ? h.Z : j.Z;
   return (0, n.jsx)(s.IX, T(E({}, o), {
     onClose: t,
-    children: (0, n.jsxs)(s.fef, {
-      children: [(0, n.jsx)("div", {
-        className: h.wumpusContainer
-      }), (0, n.jsx)(s.X6q, {
-        className: h.header,
-        variant: "display-md",
-        color: "text-strong",
-        children: y.intl.string(y.t.QWljxE)
-      }), (0, n.jsxs)("div", {
-        className: h.nameplatePreviewContainer,
-        children: [u ? (0, n.jsx)("img", {
-          src: w.Z,
-          alt: "",
-          className: h.nameplateGlow
-        }) : (0, n.jsx)(p.Z, {
-          playsInline: true,
-          muted: true,
-          autoPlay: true,
-          loop: true,
-          className: h.nameplateGlow,
-          children: (0, n.jsx)("source", {
-            src: d
+    children: (0, n.jsx)(s.fef, {
+      children: (0, n.jsxs)("div", {
+        className: C.contentContainer,
+        children: [(0, n.jsx)("div", {
+          className: C.wumpusContainer
+        }), (0, n.jsx)(s.X6q, {
+          className: C.header,
+          variant: "display-md",
+          color: "text-strong",
+          children: y.intl.string(y.t.QWljxE)
+        }), (0, n.jsxs)("div", {
+          className: C.nameplatePreviewContainer,
+          children: [u ? (0, n.jsx)("img", {
+            src: w.Z,
+            alt: "",
+            className: C.nameplateGlow
+          }) : (0, n.jsx)(m.Z, {
+            playsInline: true,
+            muted: true,
+            autoPlay: true,
+            loop: true,
+            className: C.nameplateGlow,
+            children: (0, n.jsx)("source", {
+              src: d
+            })
+          }), (0, n.jsx)(p.Z, {
+            user: i,
+            isHighlighted: true,
+            nameplate: null,
+            nameplateData: i.nameplate,
+            className: C.nameplatePreview,
+            nameplatePreviewSize: "large"
+          })]
+        }), (0, n.jsx)("div", {
+          className: C.textContainer,
+          children: (0, n.jsx)(s.xvT, {
+            variant: "text-md/medium",
+            color: "text-muted",
+            children: y.intl.format(r ? I.default.axh0pl : I.default["+KAArL"], {
+              premiumGroupProductName: (0, x.sO)(),
+              primaryName: a
+            })
           })
-        }), (0, n.jsx)(m.Z, {
-          user: i,
-          isHighlighted: true,
-          nameplate: null,
-          nameplateData: i.nameplate,
-          className: h.nameplatePreview,
-          nameplatePreviewSize: "large"
+        }), (0, n.jsx)("div", {
+          className: C.footer,
+          children: (0, n.jsx)(c.zxk, {
+            variant: "primary",
+            fullWidth: true,
+            text: y.intl.string(I.default.EL9m2H),
+            onClick: () => {
+              t(), (0, _.uL)(v.Z5c.APPLICATION_STORE)
+            }
+          })
         })]
-      }), (0, n.jsx)("div", {
-        className: h.textContainer,
-        children: (0, n.jsx)(s.xvT, {
-          variant: "text-md/medium",
-          color: "text-muted",
-          children: y.intl.format(r ? I.default.axh0pl : I.default["+KAArL"], {
-            premiumGroupProductName: (0, x.sO)(),
-            primaryName: a
-          })
-        })
-      }), (0, n.jsx)("div", {
-        className: h.footer,
-        children: (0, n.jsx)(c.zxk, {
-          variant: "primary",
-          fullWidth: true,
-          text: y.intl.string(I.default.EL9m2H),
-          onClick: () => {
-            t(), (0, _.uL)(v.Z5c.APPLICATION_STORE)
-          }
-        })
-      })]
+      })
     })
   }))
 }
@@ -162,8 +165,8 @@ function R(e) {
     isExistingSub: l,
     premiumGroupPrimaryName: c,
     currentUser: f,
-    setError: p
-  } = e, m = U(e, ["setModalState", "onClose", "premiumGroupSubscriptionId", "premiumGroupInviteId", "isExistingSub", "premiumGroupPrimaryName", "currentUser", "setError"]);
+    setError: m
+  } = e, p = U(e, ["setModalState", "onClose", "premiumGroupSubscriptionId", "premiumGroupInviteId", "isExistingSub", "premiumGroupPrimaryName", "currentUser", "setError"]);
   let b = (0, x.sO)(),
     [_, O] = (0, a.useState)(false);
   (0, u.ZP)(() => {
@@ -203,10 +206,10 @@ function R(e) {
               return "unknown"
           }
         }(s)
-      }), p(s), t(2)
+      }), m(s), t(2)
     }
   };
-  return (0, n.jsx)(s.ExpressiveModal, T(E({}, m), {
+  return (0, n.jsx)(s.ExpressiveModal, T(E({}, p), {
     onClose: r,
     gradientColor: "nitro-pink",
     badge: {
@@ -311,8 +314,8 @@ function M(e) {
     isExistingSub: i,
     premiumGroupPrimaryName: s
   } = e, c = U(e, ["premiumGroupSubscriptionId", "premiumGroupInviteId", "isExistingSub", "premiumGroupPrimaryName"]);
-  let [u, d] = (0, a.useState)(0), [f, p] = (0, a.useState)(null), m = (0, l.e7)([O.default], () => O.default.getCurrentUser());
-  o()(null != m, "UserSettingsProfileCustomization: user cannot be undefined");
+  let [u, d] = (0, a.useState)(0), [f, m] = (0, a.useState)(null), p = (0, l.e7)([O.default], () => O.default.getCurrentUser());
+  o()(null != p, "UserSettingsProfileCustomization: user cannot be undefined");
   let _ = null;
   switch (u) {
     case 0:
@@ -322,15 +325,15 @@ function M(e) {
         premiumGroupInviteId: r,
         isExistingSub: i,
         premiumGroupPrimaryName: s,
-        currentUser: m,
-        setError: p
+        currentUser: p,
+        setError: m
       }, c));
       break;
     case 1:
       _ = (0, n.jsx)(k, T(E({}, c), {
         isExistingSub: i,
         premiumGroupPrimaryName: s,
-        currentUser: m
+        currentUser: p
       }));
       break;
     case 2:

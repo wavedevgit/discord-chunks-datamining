@@ -153,7 +153,7 @@ let w = Chunk473749.forwardRef((e, t) => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: S.avatar,
-                src: l.action === E.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === E.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === E.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === E.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, C.j)() : null == (t = l.user) ? true : t.getAvatarURL(O, 40),
+                src: l.action === E.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === E.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === E.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === E.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, y.j)() : null == (t = l.user) ? true : t.getAvatarURL(O, 40),
                 "aria-hidden": true,
                 size: d.EFr.SIZE_40
               }))
@@ -184,7 +184,7 @@ let w = Chunk473749.forwardRef((e, t) => {
                 options: a
               } = l;
               t = (0, v.lM)(i) ? i.name : i.toString();
-              let s = y.N5(l);
+              let s = C.N5(l);
               return null != s ? (0, r.jsx)("div", {
                 className: S.overflowEllipsis,
                 children: I.intl.format(s, {

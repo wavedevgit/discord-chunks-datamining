@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 652376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -16,18 +16,18 @@ function c(e) {
     c = e.children.map(e => e.id),
     u = null != n && c.includes(n),
     d = false,
+    p = false,
     f = false,
-    h = false,
-    p = (0, i.e7)([o.Z], () => o.Z.getChannelId()),
+    h = (0, i.e7)([o.Z], () => o.Z.getChannelId()),
     g = null == (t = (0, l.Z)()) ? true : t.guild_id,
-    b = null != g && c.includes(g),
-    m = (0, i.e7)([s.Z], () => null != p && s.Z.hasVideo(p), [p]),
+    m = null != g && c.includes(g),
+    b = (0, i.e7)([s.Z], () => null != h && s.Z.hasVideo(h), [h]),
     y = (0, i.e7)([a.Z], () => a.Z.getCurrentUserActiveStream());
-  return u && (d = !m, f = m, h = null != y && null != y.guildId && c.includes(y.guildId)), r.useMemo(() => ({
+  return u && (d = !b, p = b, f = null != y && null != y.guildId && c.includes(y.guildId)), r.useMemo(() => ({
     audio: d,
-    video: f,
-    screenshare: h,
-    liveStage: b,
+    video: p,
+    screenshare: f,
+    liveStage: m,
     isCurrentUserConnected: u
-  }), [d, f, h, b, u])
+  }), [d, p, f, m, u])
 }

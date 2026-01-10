@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 480173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,16 +15,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk679363 = require("./679363.js");
 let p = Chunk473749.lazy(() => n.e("979").then(n.bind(n, 739859)));
 
-function f() {
+function h() {
   let e = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
     t = (0, c.Z)(e => e.shouldRenderTenureLevelUp),
     n = (0, d.Z)();
-  return e || !t || null == n ? null : (0, a.jsx)(h, {
+  return e || !t || null == n ? null : (0, a.jsx)(f, {
     levelUpData: n
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     levelUpData: t
   } = e, n = r.useRef(null), i = r.useCallback(() => {

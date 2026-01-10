@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 305248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,38 +21,38 @@ var Chunk54381 = require("./54381.js"),
   Chunk124368 = require("./124368.js"),
   Chunk392261 = require("./392261.js");
 
-function v(e) {
+function O(e) {
   let {
     channel: t,
     channelRecord: n,
     deleteChannel: l
-  } = e, v = (0, o.Wu)([f.Z, p.Z], () => a()(f.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+  } = e, O = (0, o.Wu)([p.Z, h.Z], () => a()(p.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
     let {
       id: n
     } = e;
-    return b.default.compare(n, t.oldestReadMessageId) > 0
+    return m.default.compare(n, t.oldestReadMessageId) > 0
   }).map(e => {
     let {
       id: t
     } = e;
-    return p.Z.getChannel(t)
-  }).filter(g.lm).sort((e, t) => b.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), j = i.useCallback((e, t) => {
-    (0, h.ok)(e, t, y.on.INBOX)
+    return h.Z.getChannel(t)
+  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), j = i.useCallback((e, t) => {
+    (0, f.ok)(e, t, y.on.INBOX)
   }, []);
   return i.useEffect(() => {
-    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== v.length || s.Z.wait(() => {
+    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== O.length || s.Z.wait(() => {
       (0, c.ack)(t.channelId, {
-        section: m.jXE.INBOX,
-        object: m.qAy.ACK_INBOX_FORUM_NO_POSTS,
-        objectType: m.AnalyticsObjectTypes.ACK_AUTOMATIC
+        section: b.jXE.INBOX,
+        object: b.qAy.ACK_INBOX_FORUM_NO_POSTS,
+        objectType: b.AnalyticsObjectTypes.ACK_AUTOMATIC
       }, true), l(t.channelId)
     })
   }), (0, r.jsx)("div", {
-    className: O.container,
-    children: v.map(e => (0, r.jsx)(d.oL, {
+    className: v.container,
+    children: O.map(e => (0, r.jsx)(d.oL, {
       channel: n,
       children: (0, r.jsx)(u.ZP, {
-        className: O.forumPost,
+        className: v.forumPost,
         threadId: e.id,
         goToThread: j
       })

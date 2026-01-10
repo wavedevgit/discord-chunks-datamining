@@ -10,7 +10,7 @@ var n, i, Chunk442837 = require("./442837.js"),
 let a = {
     smarterSourceOrdering: false
   },
-  d = (0, Chunk722733.Z)({
+  d = (0, Chunk722733.ZP)({
     name: "2025-08-go-live-source-ordering",
     kind: "user",
     defaultConfig: a,

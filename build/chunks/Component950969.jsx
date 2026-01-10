@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 950969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,9 +15,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk9156 = require("./9156.js"),
   Chunk451478 = require("./451478.js");
 
-function p(e) {
+function h(e) {
   let t = u.Z.getChannel(e);
-  return null != t && null != t.getGuildId() && !(t.isThread() ? c.Z.isMuted(t.id) : f.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, s.d)(t)
+  return null != t && null != t.getGuildId() && !(t.isThread() ? c.Z.isMuted(t.id) : p.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, s.d)(t)
 }
 
 function g(e) {
@@ -25,11 +25,11 @@ function g(e) {
   if (null == t) returnfalse;
   let n = t.getGuildId();
   if (null == n) returnfalse;
-  let r = f.ZP.isGuildCollapsed(n),
-    i = f.ZP.isChannelMuted(n, t.id);
+  let r = p.ZP.isGuildCollapsed(n),
+    i = p.ZP.isChannelMuted(n, t.id);
   return (!r || !i) && d.ZP.getMentionCount(e) > 0
 }
-let b = Chunk473749.forwardRef(function(e, t) {
+let m = Chunk473749.forwardRef(function(e, t) {
   var n, i, {
       guildId: s,
       guildChannels: c,
@@ -50,12 +50,12 @@ let b = Chunk473749.forwardRef(function(e, t) {
       }
       return i
     }(e, ["guildId", "guildChannels", "guildChannelsVersion"]);
-  let f = (0, a.T)(s, c, u, {
+  let p = (0, a.T)(s, c, u, {
       withVoiceChannels: false
     }, {
       ignoreRecents: true
     }),
-    b = (0, l.e7)([h.Z], () => h.Z.isFocused());
+    m = (0, l.e7)([f.Z], () => f.Z.isFocused());
   return (0, r.jsx)(o.Z, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -76,10 +76,10 @@ let b = Chunk473749.forwardRef(function(e, t) {
   }({
     ref: t
   }, d), i = i = {
-    isUnread: p,
+    isUnread: h,
     isMentioned: g,
-    items: f,
-    animate: b
+    items: p,
+    animate: m
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

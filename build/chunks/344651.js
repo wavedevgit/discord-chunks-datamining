@@ -444,6 +444,9 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
         type: "UPDATE_TOKEN",
         token: e.auth_token,
         userId: e.user.id
+      }), null != e.ad_personalization_toggles_disabled && X({
+        type: "AD_PERSONALIZATION_TOGGLES_RESTRICTED",
+        disabled: e.ad_personalization_toggles_disabled
       }), x.RR.update(), x.GC.update()
     })
   })

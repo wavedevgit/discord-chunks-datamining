@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 550818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk696483 = require("./696483.js"),
   Chunk268293 = require("./268293.js");
 
-function I(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,71 +44,71 @@ function I(e) {
   return e
 }
 
-function _(e) {
+function S(e) {
   let {
     user: t,
     channel: n,
-    onHide: _
-  } = e, S = (0, g.ZP)(t.id), E = (0, o.ZP)(), Z = (0, a.e7)([u.Z], () => u.Z.isBlocked(t.id)), {
-    analyticsLocations: P
-  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, h.ZB)({
+    onHide: S
+  } = e, _ = (0, g.ZP)(t.id), I = (0, s.ZP)(), P = (0, a.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+    analyticsLocations: Z
+  } = (0, u.ZP)(P ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), N = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
-  }), N = i.useRef(null);
-  return (0, r.jsx)(d.Gt, {
-    value: P,
-    children: (0, r.jsx)(h.Mt, {
-      value: T,
-      fetchStartedAt: null == S ? true : S.fetchStartedAt,
-      fetchEndedAt: null == S ? true : S.fetchEndedAt,
-      isLoaded: null == S ? true : S.isLoaded,
+  }), T = i.useRef(null);
+  return (0, r.jsx)(u.Gt, {
+    value: Z,
+    children: (0, r.jsx)(f.Mt, {
+      value: N,
+      fetchStartedAt: null == _ ? true : _.fetchStartedAt,
+      fetchEndedAt: null == _ ? true : _.fetchEndedAt,
+      isLoaded: null == _ ? true : _.isLoaded,
       children: (0, r.jsx)(b.Z, {
-        ref: N,
+        ref: T,
         user: t,
-        displayProfile: S,
-        themeType: x.l.SIDEBAR,
-        themeOverride: E,
+        displayProfile: _,
+        themeType: O.l.SIDEBAR,
+        themeOverride: I,
         children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
-            className: v.container,
+            className: x.container,
             children: [(0, r.jsx)("img", {
               alt: "",
               src: C,
-              className: v.preview,
+              className: x.preview,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
-              className: v.body,
+              className: x.body,
               children: [(0, r.jsxs)("div", {
-                className: v.headerContainer,
+                className: x.headerContainer,
                 children: [(0, r.jsx)(m.Z, {
                   user: t
-                }), (0, r.jsx)(s.Heading, {
+                }), (0, r.jsx)(o.Heading, {
                   variant: "heading-lg/bold",
                   children: j.intl.string(j.t.b33pLD)
-                }), (0, r.jsx)(s.Text, {
+                }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: j.intl.format(Z ? j.t["8F+WNz"] : j.t["/cZp5s"], {
+                  children: j.intl.format(P ? j.t["8F+WNz"] : j.t["/cZp5s"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]
-              }), (0, r.jsxs)(s.Kqy, {
+              }), (0, r.jsxs)(o.Kqy, {
                 align: "center",
-                children: [(0, r.jsx)(O.Z, {
-                  isBlocked: Z,
+                children: [(0, r.jsx)(v.Z, {
+                  isBlocked: P,
                   onClick: () => {
-                    _(), (0, f.pQ)(I({
-                      action: Z ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                      analyticsLocations: P
-                    }, T))
+                    S(), (0, h.pQ)(E({
+                      action: P ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                      analyticsLocations: Z
+                    }, N))
                   }
                 }), (0, r.jsx)(y.Z, {
                   userId: t.id,
                   onClick: () => {
-                    _(), (0, f.pQ)(I({
+                    S(), (0, h.pQ)(E({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: P
-                    }, T))
+                      analyticsLocations: Z
+                    }, N))
                   }
                 })]
               })]

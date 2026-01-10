@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 800926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
   Chunk444134 = require("./444134.jsx"),
@@ -26,11 +26,11 @@ let g = Chunk473749.forwardRef(function(e, t) {
   } = e, {
     expansionSpring: j
   } = r.useContext(d.xo), {
-    quest: C,
-    taskDetails: y,
+    quest: y,
+    taskDetails: C,
     isExpanded: _,
     isExpansionAnimationComplete: S
-  } = r.useContext(p.A), E = (null == (n = C.userStatus) ? true : n.completedAt) != null, T = (0, c.Jf)(C), O = r.useRef(null), N = (null == (i = C.userStatus) ? true : i.enrolledAt) != null, P = null != T ? T.percentComplete : y.percentComplete, [w, I] = r.useState(false);
+  } = r.useContext(p.A), E = (null == (n = y.userStatus) ? true : n.completedAt) != null, T = (0, c.Jf)(y), O = r.useRef(null), N = (null == (i = y.userStatus) ? true : i.enrolledAt) != null, P = null != T ? T.percentComplete : C.percentComplete, [w, I] = r.useState(false);
   return (0, a.jsxs)(a.Fragment, {
     children: [E && (0, a.jsx)(m.Z, {
       overlayRef: v,
@@ -55,10 +55,10 @@ let g = Chunk473749.forwardRef(function(e, t) {
       children: (0, a.jsxs)("div", {
         className: b.contentCollapsedWrapper,
         children: [E && (0, a.jsxs)(a.Fragment, {
-          children: [(0, a.jsx)(h.Z, {}), (0, a.jsx)("div", {
+          children: [(0, a.jsx)(f.Z, {}), (0, a.jsx)("div", {
             className: b.divider
           })]
-        }), N ? (0, a.jsx)(f.Z, {
+        }), N ? (0, a.jsx)(h.Z, {
           contentLocation: "collapsed",
           progressBarRef: O,
           isExpanded: false,

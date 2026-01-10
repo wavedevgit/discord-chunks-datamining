@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 819514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => Z
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -59,9 +59,9 @@ class P extends Chunk473749.PureComponent {
         channel: a,
         message: c,
         showContextMenuHint: d,
-        moderatorReportData: f
+        moderatorReportData: p
       } = l,
-      h = function(e, t) {
+      f = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -76,19 +76,19 @@ class P extends Chunk473749.PureComponent {
         }
         return i
       }(l, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
-      b = a.type === C.d4z.GUILD_ANNOUNCEMENT && (0, o.yE)(c.flags, C.iLy.CROSSPOSTED);
-    d && (e = (0, r.jsx)(p.Z, {
+      m = a.type === x.d4z.GUILD_ANNOUNCEMENT && (0, o.yE)(c.flags, x.iLy.CROSSPOSTED);
+    d && (e = (0, r.jsx)(h.Z, {
       className: S.spacingTop,
-      children: x.intl.format(x.t.IxY7E6, {})
-    })), (0, v.vc)(c) && (t = (0, r.jsx)("div", {
+      children: C.intl.format(C.t.IxY7E6, {})
+    })), (0, O.vc)(c) && (t = (0, r.jsx)("div", {
       className: S.spacingTop,
       children: (0, r.jsx)(u.rsf, {
-        label: x.intl.string(x.t.x0jzo9),
+        label: C.intl.string(C.t.x0jzo9),
         checked: n,
         onChange: this.handleToggleReport
       })
     }));
-    let m = b ? x.intl.string(x.t["2kHABX"]) : x.intl.string(x.t.AMvpS4),
+    let b = m ? C.intl.string(C.t["2kHABX"]) : C.intl.string(C.t.AMvpS4),
       y = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: S.message,
@@ -99,29 +99,29 @@ class P extends Chunk473749.PureComponent {
           })
         }), t, e]
       });
-    if ((null == f ? true : f.moderatorReportChannelId) != null) {
-      var O, _;
+    if ((null == p ? true : p.moderatorReportChannelId) != null) {
+      var v, _;
       let {
         isFlagResolved: e
-      } = f;
+      } = p;
       return (0, r.jsx)(g.Z.Provider, {
         value: a.guild_id,
-        children: (0, r.jsx)(s.Modal, (O = I({
-          title: x.intl.string(x.t.MWMcg7),
-          subtitle: m,
+        children: (0, r.jsx)(s.Modal, (v = I({
+          title: C.intl.string(C.t.MWMcg7),
+          subtitle: b,
           actions: [{
             variant: "critical-primary",
-            text: x.intl.string(x.t.oyYWHE),
+            text: C.intl.string(C.t.oyYWHE),
             onClick: this.handleDelete
           }],
           actionBarInput: e ? true : (0, r.jsx)(u.Checkbox, {
             checked: i,
-            label: x.intl.string(E.default["8yIKem"]),
+            label: C.intl.string(E.default["8yIKem"]),
             onChange: e => this.handleToggleResolveFlag(e)
           })
-        }, h), _ = _ = {
+        }, f), _ = _ = {
           children: y
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(_)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(v, Object.getOwnPropertyDescriptors(_)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -129,26 +129,26 @@ class P extends Chunk473749.PureComponent {
           }
           return n
         })(Object(_)).forEach(function(e) {
-          Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(_, e))
-        }), O))
+          Object.defineProperty(v, e, Object.getOwnPropertyDescriptor(_, e))
+        }), v))
       })
     }
     return (0, r.jsx)(g.Z.Provider, {
       value: a.guild_id,
       children: (0, r.jsx)(s.Modal, {
-        title: b ? x.intl.string(x.t.aIz1oV) : x.intl.string(x.t.MWMcg7),
-        subtitle: m,
+        title: m ? C.intl.string(C.t.aIz1oV) : C.intl.string(C.t.MWMcg7),
+        subtitle: b,
         actions: [{
-          text: x.intl.string(x.t["ETE/oC"]),
-          onClick: h.onClose,
+          text: C.intl.string(C.t["ETE/oC"]),
+          onClick: f.onClose,
           variant: "secondary"
         }, {
-          text: x.intl.string(x.t.oyYWHE),
+          text: C.intl.string(C.t.oyYWHE),
           onClick: this.handleDeleteMana,
           variant: "critical-primary"
         }],
-        onClose: h.onClose,
-        transitionState: h.transitionState,
+        onClose: f.onClose,
+        transitionState: f.transitionState,
         children: y
       })
     })
@@ -169,15 +169,15 @@ class P extends Chunk473749.PureComponent {
         moderatorReportChannelId: l,
         isFlagResolved: a
       } = null != i ? i : {};
-      e ? (0, b.ak)(r, "message_delete_alert", () => f.Z.deleteMessage(n.id, r.id).then(() => {
+      e ? (0, m.ak)(r, "message_delete_alert", () => p.Z.deleteMessage(n.id, r.id).then(() => {
         if (null != l) {
           var e, n;
-          t && !a && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !a && b.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
-      })) : f.Z.deleteMessage(n.id, r.id).then(() => {
+      })) : p.Z.deleteMessage(n.id, r.id).then(() => {
         if (null != l) {
           var e, n;
-          t && !a && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !a && b.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
     }), _(this, "handleDeleteMana", () => {
@@ -194,20 +194,20 @@ class P extends Chunk473749.PureComponent {
     })
   }
 }
-let N = {
+let Z = {
   confirmPin: function(e, t) {
-    let n, i = (0, h.F6)(e, O.default, y.Z);
-    n = e.isPrivate() ? x.intl.string(x.t.hMRngA) : x.intl.formatToPlainString(x.t["3IRluI"], {
+    let n, i = (0, f.F6)(e, v.default, y.Z);
+    n = e.isPrivate() ? C.intl.string(C.t.hMRngA) : C.intl.formatToPlainString(C.t["3IRluI"], {
       channelName: i
     }), (0, c.Z)({
-      title: x.intl.string(x.t.bKMaZX),
+      title: C.intl.string(C.t.bKMaZX),
       subtitle: n,
-      confirmText: x.intl.string(x.t.rOQ5BX),
+      confirmText: C.intl.string(C.t.rOQ5BX),
       variant: "primary",
       onConfirm: () => {
         d.Z.pinMessage(e, t.id)
       },
-      cancelText: x.intl.string(x.t["ETE/oC"]),
+      cancelText: C.intl.string(C.t["ETE/oC"]),
       children: (0, r.jsx)("div", {
         className: S.message,
         children: (0, r.jsx)(j.Z, {
@@ -221,14 +221,14 @@ let N = {
   },
   confirmUnpin: function(e, t) {
     (0, c.Z)({
-      title: x.intl.string(x.t.CFF2vL),
-      subtitle: x.intl.string(x.t.NjEPp7),
-      confirmText: x.intl.string(x.t.lAU5jB),
+      title: C.intl.string(C.t.CFF2vL),
+      subtitle: C.intl.string(C.t.NjEPp7),
+      confirmText: C.intl.string(C.t.lAU5jB),
       variant: "critical",
       onConfirm: () => {
         d.Z.unpinMessage(e, t.id)
       },
-      cancelText: x.intl.string(x.t["ETE/oC"]),
+      cancelText: C.intl.string(C.t["ETE/oC"]),
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: a()(S.message, S.spacing),
@@ -237,8 +237,8 @@ let N = {
             message: t,
             disableInteraction: true
           })
-        }), (0, r.jsx)(p.Z, {
-          children: x.intl.format(x.t.oCVB3Y, {})
+        }), (0, r.jsx)(h.Z, {
+          children: C.intl.format(C.t.oCVB3Y, {})
         })]
       })
     })
@@ -255,14 +255,14 @@ let N = {
   },
   confirmEdit: function(e, t, n) {
     (0, c.Z)({
-      title: x.intl.string(x.t.aIz1oV),
-      subtitle: x.intl.string(x.t.grBcM8),
-      confirmText: x.intl.string(x.t["cY+Oob"]),
+      title: C.intl.string(C.t.aIz1oV),
+      subtitle: C.intl.string(C.t.grBcM8),
+      confirmText: C.intl.string(C.t["cY+Oob"]),
       variant: "primary",
       onConfirm: () => {
-        f.Z.editMessage(e, t, n)
+        p.Z.editMessage(e, t, n)
       },
-      cancelText: x.intl.string(x.t["ETE/oC"])
+      cancelText: C.intl.string(C.t["ETE/oC"])
     })
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 217599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => L
@@ -73,7 +73,7 @@ function w(e) {
     onClick: () => {
       var e;
       let a = (null == (e = t.userStatus) ? true : e.enrolledAt) == null ? d.jZ.ACCEPT_QUEST : d.jZ.WATCH_VIDEO;
-      (0, y.openVideoQuestModal)({
+      (0, C.openVideoQuestModal)({
         quest: t,
         questContent: m.jn.QUEST_BAR_V2,
         sourceQuestContent: n,
@@ -88,7 +88,7 @@ let I = e => {
     let {
       quest: t,
       sourceQuestContent: n
-    } = e, r = (0, u.aM)(), l = (0, h.V_)(t);
+    } = e, r = (0, u.aM)(), l = (0, f.V_)(t);
     return (0, a.jsx)(i.zxk, {
       size: "sm",
       fullWidth: true,
@@ -128,11 +128,11 @@ let I = e => {
       quest: t
     }), {
       launchInGameActivity: r
-    } = (0, f.zB)(t);
+    } = (0, h.zB)(t);
     return (0, v.Rt)(t) ? (0, a.jsx)(i.zxk, {
       fullWidth: true,
       variant: "primary",
-      icon: (0, y.getPrimaryCtaIcon)(t),
+      icon: (0, C.getPrimaryCtaIcon)(t),
       onClick: r,
       size: "sm",
       text: n
@@ -164,7 +164,7 @@ let I = e => {
       }, e))
     })
   },
-  D = e => {
+  Z = e => {
     var t, {
         quest: n,
         ctaLabel: s,
@@ -172,7 +172,7 @@ let I = e => {
         questContent: u = m.jn.QUEST_BAR_V2,
         sourceQuestContent: p
       } = e,
-      f = function(e, t) {
+      h = function(e, t) {
         if (null == e) return {};
         var n, a, r = function(e, t) {
           if (null == e) return {};
@@ -187,7 +187,7 @@ let I = e => {
         }
         return r
       }(e, ["quest", "ctaLabel", "onClick", "questContent", "sourceQuestContent"]);
-    let h = (0, C.hf)({
+    let f = (0, y.hf)({
         quest: n,
         questContent: u,
         sourceQuestContent: p
@@ -198,17 +198,17 @@ let I = e => {
           tab: E.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: o.Z.QUEST_HOME_PAGE
-        }) : h()
-      }, [d, n.config, null == (t = n.userStatus) ? true : t.claimedAt, h]);
+        }) : f()
+      }, [d, n.config, null == (t = n.userStatus) ? true : t.claimedAt, f]);
     return (0, a.jsx)(i.zxk, P(N({
       fullWidth: true,
       onClick: x,
       text: null != s ? s : T.intl.string(T.t.cfY4PE)
-    }, f), {
-      size: f.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
+    }, h), {
+      size: h.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
   },
-  Z = e => {
+  D = e => {
     var t;
     let {
       sourceQuestContent: n,
@@ -221,15 +221,15 @@ let I = e => {
       quest: d,
       onGameSheetOpen: u,
       onGameSheetClose: p,
-      taskDetails: f
-    } = r.useContext(S.A), h = (null == (t = d.userStatus) ? true : t.completedAt) != null, x = (0, g.q8)(d), b = o !== m.LI.SELECT && !l && !s, j = null;
-    return h ? j = (0, a.jsx)(D, {
+      taskDetails: h
+    } = r.useContext(S.A), f = (null == (t = d.userStatus) ? true : t.completedAt) != null, x = (0, g.q8)(d), b = o !== m.LI.SELECT && !l && !s, j = null;
+    return f ? j = (0, a.jsx)(Z, {
       quest: d,
       sourceQuestContent: n
     }) : x ? j = (0, a.jsx)(w, {
       quest: d,
       sourceQuestContent: n,
-      taskDetails: f
+      taskDetails: h
     }) : (0, v.Rt)(d) ? j = (0, a.jsx)(R, {
       quest: d
     }) : o === m.LI.CONSOLE && i ? j = (0, a.jsx)(k, {
@@ -238,7 +238,7 @@ let I = e => {
     }) : b && (0, v.Pb)(d) ? j = (0, a.jsx)(A, {
       quest: d,
       sourceQuestContent: n,
-      taskDetails: f,
+      taskDetails: h,
       popoutTargetElementRef: c,
       onGameSheetOpened: u,
       onGameSheetClosed: p
@@ -262,7 +262,7 @@ function L(e) {
       onClick: e.onBack,
       icon: s.V7D,
       variant: "secondary"
-    }), (0, a.jsx)(Z, P(N({}, e), {
+    }), (0, a.jsx)(D, P(N({}, e), {
       popoutTargetElementRef: t
     }))]
   })

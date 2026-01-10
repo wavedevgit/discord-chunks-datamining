@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 977391, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => d,
@@ -16,32 +16,32 @@ function u(e) {
   let {
     compact: t,
     messageGroups: n,
-    groupRange: i,
-    attachments: r,
+    groupRange: r,
+    attachments: i,
     fontSize: l,
     groupSpacing: c
   } = e;
-  if (r > n) throw Error("generateMessageSpecs: too many attachments relative to messageGroups: ".concat(n, ", ").concat(r));
+  if (i > n) throw Error("generateMessageSpecs: too many attachments relative to messageGroups: ".concat(n, ", ").concat(i));
   let u = l / s.yqN.FONT_SIZE_DEFAULT,
     d = t ? o.iv : o.pk,
     p = t ? o.Pb : o.XX,
     f = 0,
     h = Array(n).fill(null).map(() => {
-      let e = a().random(1, i);
+      let e = a().random(1, r);
       return f += c * u, f += d * u, f += (e - 1) * p * u, e
     }),
-    m = h.map((e, t) => t),
-    g = [];
-  for (; g.length < r;) {
+    g = h.map((e, t) => t),
+    m = [];
+  for (; m.length < i;) {
     let e = {
       width: a().random(140, 400),
       height: a().random(100, 320)
     };
-    g.push([m.splice(a().random(0, m.length - 1), 1)[0], e]), f += e.height + o.M9 * u
+    m.push([g.splice(a().random(0, g.length - 1), 1)[0], e]), f += e.height + o.M9 * u
   }
   return {
     messages: h,
-    attachmentSpecs: g,
+    attachmentSpecs: m,
     totalHeight: f,
     groupSpacing: c
   }
@@ -55,20 +55,20 @@ function d(e) {
     totalHeight: a,
     groupSpacing: s
   } = e;
-  return r.useMemo(() => {
+  return i.useMemo(() => {
     let e = Array(n.length).fill(true);
     for (let [t, n] of l) e[t] = n;
-    return (0, i.jsx)("div", {
+    return (0, r.jsx)("div", {
       className: c.wrapper,
       style: {
         height: a
       },
-      children: n.map((n, r) => (0, i.jsx)(o.ZP, {
+      children: n.map((n, i) => (0, r.jsx)(o.ZP, {
         groupSpacing: s,
         compact: t,
         messages: n,
-        attachmentSpecs: e[r]
-      }, r))
+        attachmentSpecs: e[i]
+      }, i))
     })
   }, [t, n, l, a, s])
 }

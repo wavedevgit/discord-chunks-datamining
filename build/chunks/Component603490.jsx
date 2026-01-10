@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 603490, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -17,22 +17,22 @@ function c(e) {
     togglePopout: c,
     renderEmojiPicker: u,
     shouldShow: d
-  } = e, p = r.useRef(null);
-  return (0, i.jsx)(a.yRy, {
+  } = e, p = i.useRef(null);
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: p,
     animation: a.yRy.Animation.FADE,
     renderPopout: e => {
       let {
-        closePopout: i
+        closePopout: r
       } = e;
-      return u(t, n, i, false)
+      return u(t, n, r, false)
     },
     shouldShow: d,
     onRequestClose: c,
     position: l.tq ? "top" : "left",
     align: l.tq ? "center" : "top",
     clickTrap: true,
-    children: () => (0, i.jsx)(o.sF, {
+    children: () => (0, r.jsx)(o.sF, {
       ref: p,
       label: s.intl.string(s.t.lfIHs4),
       icon: a.EO4,

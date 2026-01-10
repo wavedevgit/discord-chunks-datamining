@@ -24,7 +24,7 @@ function b(e) {
     user: n,
     channel: b
   } = e, _ = (0, d.V)(), E = i.useCallback(() => {
-    (0, a.showToast)((0, a.createToast)(m.intl.string(m.t.pIQ3h4), a.ToastType.FAILURE)), o.Z.increment({
+    (0, a.showToast)((0, a.createToast)(h.intl.string(h.t.pIQ3h4), a.ToastType.FAILURE)), o.Z.increment({
       name: l.V.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
   }, []), O = i.useCallback(() => {
@@ -43,17 +43,17 @@ function b(e) {
     onError: E
   }), T = I || C, N = T || S;
   return (0, r.jsxs)("div", {
-    className: h.container,
+    className: m.container,
     children: [(0, r.jsx)(f.Z, {
       otherUser: n,
       channel: b,
       active: t
     }), (0, r.jsxs)("div", {
-      className: h.actions,
+      className: m.actions,
       children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: m.intl.string(m.t.vicfl6),
+        text: h.intl.string(h.t.vicfl6),
         onClick: e => {
           y(b.id), e.stopPropagation()
         },

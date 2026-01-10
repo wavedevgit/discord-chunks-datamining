@@ -135,12 +135,13 @@ function R() {
 }
 
 function w(e) {
-  return R().find(t => t.type === e)
+  var t;
+  return null != (t = R().filter(l.Wc).find(t => t.type === e)) ? t : null
 }
 
 function D(e) {
   let t = R(),
-    n = t.findIndex(t => t.type === e.type);
+    n = t.findIndex(t => t.getUniqueKey() === e.getUniqueKey());
   if (false === n) return [e, ...t];
   {
     let r = [...t];
@@ -148,13 +149,13 @@ function D(e) {
   }
 }
 
-function x(e, t) {
-  let n = R();
-  null == n.find(t => t.type === e) && u.Z.setPendingWidgets([t, ...n])
+function x(e) {
+  let t = R();
+  null == t.find(t => t.getUniqueKey() === e.getUniqueKey()) && u.Z.setPendingWidgets([e, ...t])
 }
 
 function L(e) {
-  let t = R().filter(t => t.type !== e);
+  let t = R().filter(t => t.getUniqueKey() !== e.getUniqueKey());
   u.Z.setPendingWidgets(t)
 }
 

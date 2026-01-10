@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 174130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,15 +15,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk916069 = require("./916069.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function f(e) {
   let {
     channel: t
   } = e, {
     isFavoritesPerk: n
-  } = (0, d.z)("ChannelFavoritesHeaderButton"), h = (0, u.Z)(), {
-    notifyFavoriteAdded: f
-  } = (0, c.up)(), g = (0, i.e7)([s.Z], () => s.Z.isFavorite(t.id));
-  if (!n || h) return null;
+  } = (0, u.z)("ChannelFavoritesHeaderButton"), f = (0, d.Z)(), {
+    notifyFavoriteAdded: h
+  } = (0, c.up)(), g = (0, i.e7)([o.Z], () => o.Z.isFavorite(t.id));
+  if (!n || f) return null;
   let m = g ? l.r7p : l.vxU,
     b = g ? p.intl.string(p.t.Bou7lT) : p.intl.string(p.t["4wcdE/"]);
   return (0, r.jsx)(a.ZP.Icon, {
@@ -31,7 +31,7 @@ function h(e) {
     tooltip: b,
     "aria-label": b,
     onClick: () => {
-      g ? (0, o.oC)(t.id) : (f(), (0, o.kj)(t.id))
+      g ? (0, s.oC)(t.id) : (h(), (0, s.kj)(t.id))
     }
   })
 }

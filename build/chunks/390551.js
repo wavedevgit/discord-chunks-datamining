@@ -3,28 +3,24 @@
 "use strict";
 require.d(exports, {
   AL: () => r,
-  Is: () => u,
-  Yg: () => d,
-  at: () => o,
-  eJ: () => l,
-  oc: () => s,
-  x3: () => c
+  Is: () => l,
+  Yg: () => c,
+  eJ: () => o,
+  oc: () => a,
+  wv: () => i,
+  x3: () => s
 });
 var r = function(e) {
-  return e.SLEEPY = "sleepy", e.CHILL = "chill", e.JAZZY = "jazzy", e
-}({});
-let i = [],
-  a = i.filter(e => e.genres.includes("sleepy")),
-  o = {
-    sleepy: a,
-    chill: i.filter(e => e.genres.includes("chill")),
-    jazzy: i.filter(e => e.genres.includes("jazzy"))
-  };
-var s = function(e) {
-  return e.NONE = "none", e.GOLDFISH = "goldfish", e.GOLDFISH_BLUE = "goldfishBlue", e.GOLDFISH_PINK = "goldfishPink", e.POPCORN = "popcorn", e.POPCORN_PURPLE = "popcornPurple", e.POPCORN_BLUE = "popcornBlue", e.IMP = "imp", e.IMP_BLUE = "impBlue", e.IMP_PINK = "impPink", e
-}({});
-let l = ["none", "goldfish", "goldfishBlue", "goldfishPink", "popcorn", "popcornPurple", "popcornBlue", "imp", "impBlue", "impPink"],
-  c = {
+    return e.SLEEPY = "sleepy", e.CHILL = "chill", e.JAZZY = "jazzy", e
+  }({}),
+  i = function(e) {
+    return e.ENVIRONMENT = "environment", e.CAMPFIRE = "campfire", e
+  }({}),
+  a = function(e) {
+    return e.NONE = "none", e.GOLDFISH = "goldfish", e.GOLDFISH_BLUE = "goldfishBlue", e.GOLDFISH_PINK = "goldfishPink", e.POPCORN = "popcorn", e.POPCORN_PURPLE = "popcornPurple", e.POPCORN_BLUE = "popcornBlue", e.IMP = "imp", e.IMP_BLUE = "impBlue", e.IMP_PINK = "impPink", e
+  }({});
+let o = ["none", "goldfish", "goldfishBlue", "goldfishPink", "popcorn", "popcornPurple", "popcornBlue", "imp", "impBlue", "impPink"],
+  s = {
     none: {
       name: "none",
       width: 0,
@@ -116,7 +112,7 @@ let l = ["none", "goldfish", "goldfishBlue", "goldfishPink", "popcorn", "popcorn
       }
     }
   },
-  u = [{
+  l = [{
     id: 1,
     x: 722,
     y: 1203,
@@ -203,6 +199,6 @@ let l = ["none", "goldfish", "goldfishBlue", "goldfishPink", "popcorn", "popcorn
     },
     assetKey: "rightRock"
   }];
-var d = function(e) {
+var c = function(e) {
   return e.RADIO = "radio", e.ENVIRONMENT = "environment", e.CAMPFIRE = "campfire", e
 }({})

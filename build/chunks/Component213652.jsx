@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,39 +21,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk674463 = require("./674463.js");
 
-function v(e) {
+function O(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), v = (0, l.e7)([m.Z], () => m.Z.getSelectedParticipant(t.id)), x = (null == v ? true : v.type) === b.fO.STREAM, O = (0, l.e7)([f.Z], () => x ? f.Z.getActiveStreamForStreamKey(v.id) : null), {
-    ignoreSenderPreference: E
+  } = (0, o.ZP)(), O = (0, l.e7)([g.Z], () => g.Z.getSelectedParticipant(t.id)), j = (null == O ? true : O.type) === b.fO.STREAM, x = (0, l.e7)([f.Z], () => j ? f.Z.getActiveStreamForStreamKey(O.id) : null), {
+    ignoreSenderPreference: C
   } = d.Z.useExperiment({
     location: "ActionBarClipsButton"
   }, {
     autoTrackExposure: false
   }), {
-    viewerClippingAllowed: j,
+    viewerClippingAllowed: E,
     isAtMaxSavingClipOperations: S
   } = (0, l.cj)([s.Z], () => ({
-    viewerClippingAllowed: null != O && (s.Z.isViewerClippingAllowedForUser(O.ownerId) || E),
+    viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || C),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), _ = (0, c.z8)(), P = (null == O ? true : O.ownerId) === h.default.getId(), I = !_ || !(P || j) || S || null == v, Z = r.useCallback(e => {
+  })), _ = (0, c.z8)(), I = (null == x ? true : x.ownerId) === h.default.getId(), P = !_ || !(I || E) || S || null == O, Z = i.useCallback(e => {
     var t, n;
-    return (0, i.jsx)(a.xmR, (t = function(e) {
+    return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = i
+          }) : e[t] = r
         })
       }
       return e
@@ -62,22 +62,22 @@ function v(e) {
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, []);
-  return (0, i.jsx)(p.Z, {
-    className: y.actionBarButton,
+  return (0, r.jsx)(p.Z, {
+    className: v.actionBarButton,
     onClick: () => {
-      I || ((0, g.v)(n, g.d.CLIP), P ? (0, u.br)() : (0, u.C1)(v.id))
+      P || ((0, m.v)(n, m.d.CLIP), I ? (0, u.br)() : (0, u.C1)(O.id))
     },
-    disabled: I,
+    disabled: P,
     iconComponent: Z,
-    label: null == O ? C.intl.string(C.t.eg5qtV) : P || j ? _ ? S ? true : C.intl.string(C.t.U4URzP) : C.intl.string(C.t.wSS1yN) : C.intl.string(C.t.aRifJX),
+    label: null == x ? y.intl.string(y.t.eg5qtV) : I || E ? _ ? S ? true : y.intl.string(y.t.U4URzP) : y.intl.string(y.t.wSS1yN) : y.intl.string(y.t.aRifJX),
     grow: false
   })
 }

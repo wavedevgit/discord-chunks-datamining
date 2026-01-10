@@ -1,7 +1,7 @@
-/** Chunk was on 15718 **/
+/** Chunk was on 69937 **/
 /** chunk id: 370595, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk807121 = require("./807121.js"),
   Chunk280533 = require("./280533.js");
 
-function u(e) {
+function c(e) {
   let {
     onNavigate: t,
     backPanel: n = i.k.INFO

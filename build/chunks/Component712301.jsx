@@ -1,7 +1,7 @@
 /** Chunk was on 70675 **/
-/** chunk id: 712301, original params: e,n,t (module,exports,require) **/
+/** chunk id: 712301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,39 +24,39 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e, n) {
-  let t = (0, i.e7)([c.ZP], () => c.ZP.getChannels(n)[c.Zb], [n]),
-    v = (0, i.e7)([m.Z, d.Z], () => {
-      let t = m.Z.getUserVoiceChannelId(n, e.id);
-      return d.Z.getChannel(t)
-    }, [n, e.id]);
-  if ((0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, e.id), [n, e.id]) || null == v) return null;
-  let N = e.id === s.default.getId();
-  if (!N && !f.Z.can(P.Plq.MOVE_MEMBERS, v)) return null;
-  let y = t.filter(n => {
+function y(e, t) {
+  let n = (0, r.e7)([c.ZP], () => c.ZP.getChannels(t)[c.Zb], [t]),
+    y = (0, r.e7)([h.Z, d.Z], () => {
+      let n = h.Z.getUserVoiceChannelId(t, e.id);
+      return d.Z.getChannel(n)
+    }, [t, e.id]);
+  if ((0, r.e7)([Z.ZP], () => Z.ZP.isGuestOrLurker(t, e.id), [t, e.id]) || null == y) return null;
+  let E = e.id === u.default.getId();
+  if (!E && !f.Z.can(m.Plq.MOVE_MEMBERS, y)) return null;
+  let N = n.filter(t => {
     let {
-      channel: t
-    } = n;
-    return t.id !== v.id && (N ? f.Z.can(P.Plq.CONNECT, t) && !(0, h.rY)(t, m.Z, Z.Z) : f.Z.can(P.Plq.MOVE_MEMBERS, t) && (f.Z.can(P.Plq.CONNECT, t) || p.BT({
-      permission: P.Plq.CONNECT,
+      channel: n
+    } = t;
+    return n.id !== y.id && (E ? f.Z.can(m.Plq.CONNECT, n) && !(0, p.rY)(n, h.Z, g.Z) : f.Z.can(m.Plq.MOVE_MEMBERS, n) && (f.Z.can(m.Plq.CONNECT, n) || P.BT({
+      permission: m.Plq.CONNECT,
       user: e,
-      context: t
-    })) && !(0, h.rY)(t, m.Z, Z.Z))
+      context: n
+    })) && !(0, p.rY)(n, h.Z, g.Z))
   });
-  return 0 === y.length ? null : (0, l.jsx)(r.sNh, {
+  return 0 === N.length ? null : (0, l.jsx)(i.sNh, {
     id: "voice-move",
     label: j.intl.string(j.t.FAplms),
-    children: y.map(t => {
+    children: N.map(n => {
       let {
-        channel: i
-      } = t;
-      return (0, l.jsx)(r.sNh, {
-        id: i.id,
+        channel: r
+      } = n;
+      return (0, l.jsx)(i.sNh, {
+        id: r.id,
         action: () => {
-          e.id === s.default.getId() ? o.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
+          e.id === u.default.getId() ? a.default.selectVoiceChannel(r.id) : o.Z.setChannel(t, e.id, r.id)
         },
-        label: (0, u.F6)(i, O.default, b.Z)
-      }, i.id)
+        label: (0, s.F6)(r, O.default, b.Z)
+      }, r.id)
     })
   })
 }

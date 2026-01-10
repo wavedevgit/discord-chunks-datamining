@@ -223,8 +223,8 @@ function L(e) {
   } = e, {
     analyticsLocations: g
   } = (0, b.ZP)(m.Z.MEMBER_LIST), f = i.useMemo(() => l.trim().toLowerCase(), [l]);
-  (0, C.rY)(t, f);
-  let p = i.useMemo(() => c.filter(e => (0, C.eg)(f, e)), [c, f]),
+  (0, y.rY)(t, f);
+  let p = i.useMemo(() => c.filter(e => (0, y.eg)(f, e)), [c, f]),
     h = i.useMemo(() => p.sort((e, t) => e.name.localeCompare(t.name)), [p]);
   return (0, r.jsx)(b.Gt, {
     value: g,
@@ -296,10 +296,10 @@ function G(e) {
   } = e, [u, g] = i.useState(""), {
     headerHeight: f,
     headerRef: m
-  } = (0, y.Z)(0), {
+  } = (0, C.Z)(0), {
     scrolledToTop: b,
     handleScroll: p
-  } = (0, N.V)(), h = l.managed || s, v = (0, C.e)(t.id, l.id), O = (0, o.e7)([j.Z], () => {
+  } = (0, N.V)(), h = l.managed || s, v = (0, y.e)(t.id, l.id), O = (0, o.e7)([j.Z], () => {
     var e, n;
     return null != (n = null == (e = j.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
   }) > v.length, E = () => {

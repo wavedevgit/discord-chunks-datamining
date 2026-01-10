@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 175015, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => u
@@ -15,11 +15,11 @@ var Chunk442837 = require("./442837.js"),
 
 function u(e, t, n, u, m) {
   let p = (0, r.e7)([o.Z], () => o.Z.getGuild(e)),
-    f = (0, s.Z)({
+    h = (0, s.Z)({
       guild: p,
       analyticsLocations: t
     }),
-    h = (0, s.Z)({
+    f = (0, s.Z)({
       analyticsLocations: t
     });
   return (0, a.jsxs)(a.Fragment, {
@@ -47,7 +47,7 @@ function u(e, t, n, u, m) {
         })]
       }),
       action: () => {
-        f(), null == m || m(), null == u || u()
+        h(), null == m || m(), null == u || u()
       }
     }, "edit-server-profile") : null, (0, a.jsx)(i.sNh, {
       id: "edit-main-profile",
@@ -66,7 +66,7 @@ function u(e, t, n, u, m) {
         }) : true]
       }),
       action: () => {
-        h(), null == m || m(), null == u || u()
+        f(), null == m || m(), null == u || u()
       }
     }, "edit-main-profile")]
   })

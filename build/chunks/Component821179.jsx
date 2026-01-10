@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 821179, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,18 +18,18 @@ var Chunk692547 = require("./692547.js"),
   Chunk499218 = require("./499218.js");
 let g = (0, Chunk481060.dcp)(Chunk481060.EFr.SIZE_16);
 
-function b(e) {
+function m(e) {
   let {
     user: t,
-    guild: b,
-    nick: m,
+    guild: m,
+    nick: b,
     onSelect: y
   } = e, {
-    theme: O,
-    themeType: v
-  } = (0, d.z)(), j = t.hasAvatarForGuild(b.id);
+    theme: v,
+    themeType: O
+  } = (0, d.z)(), j = t.hasAvatarForGuild(m.id);
   return (0, r.jsxs)(o.P3F, {
-    focusProps: v === h.l.MODAL_V2 ? {
+    focusProps: O === f.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -40,13 +40,13 @@ function b(e) {
         right: 8
       }
     },
-    className: p.row,
+    className: h.row,
     onClick: y,
     onContextMenu: e => {
       (0, s.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("53870"), n.e("57804"), n.e("49049"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("9414"), n.e("6850"), n.e("58227"), n.e("63575"), n.e("62856"), n.e("44686"), n.e("38697"), n.e("9536"), n.e("15718"), n.e("39206"), n.e("93375"), n.e("22516"), n.e("76844"), n.e("87154"), n.e("33213"), n.e("88039")]).then(n.bind(n, 545135));
+        } = await Promise.all([n.e("57804"), n.e("36599"), n.e("7654"), n.e("49049"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("9414"), n.e("6850"), n.e("58227"), n.e("63575"), n.e("44686"), n.e("38697"), n.e("9536"), n.e("96795"), n.e("39206"), n.e("93375"), n.e("69937"), n.e("22516"), n.e("87154"), n.e("33213"), n.e("60807")]).then(n.bind(n, 545135));
         return t => {
           var n, i;
           return (0, r.jsx)(e, (n = function(e) {
@@ -67,7 +67,7 @@ function b(e) {
             }
             return e
           }({}, t), i = i = {
-            guild: b
+            guild: m
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -83,38 +83,38 @@ function b(e) {
     },
     children: [(0, r.jsx)(c.Z, {
       tabIndex: false,
-      guild: b,
+      guild: m,
       showBadge: true,
-      className: null != b.icon ? p.icon : p.noIcon,
-      badgeStrokeColor: (0, a.wj)(O) ? i.Z.unsafe_rawColors.PRIMARY_600.css : i.Z.unsafe_rawColors.WHITE.css,
+      className: null != m.icon ? h.icon : h.noIcon,
+      badgeStrokeColor: (0, a.wj)(v) ? i.Z.unsafe_rawColors.PRIMARY_600.css : i.Z.unsafe_rawColors.WHITE.css,
       badgeTooltipColor: o.r6K.PRIMARY,
-      badgeTooltipDelay: f.vB,
+      badgeTooltipDelay: p.vB,
       size: c.Z.Sizes.MEDIUM,
       active: true
     }), (0, r.jsxs)("div", {
-      className: p.details,
+      className: h.details,
       children: [(0, r.jsx)("div", {
-        className: p.name,
-        children: b.name
+        className: h.name,
+        children: m.name
       }), j && (0, r.jsxs)("div", {
-        className: p.nick,
+        className: h.nick,
         children: [(0, r.jsx)(o.qEK, {
-          src: t.getAvatarURL(b.id, g),
+          src: t.getAvatarURL(m.id, g),
           size: o.EFr.SIZE_16,
-          className: p.avatar,
+          className: h.avatar,
           "aria-hidden": true
         }), (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           children: (0, r.jsx)(l.Z, {
-            delay: f.vB,
-            children: null != m ? m : u.ZP.getName(b.id, true, t)
+            delay: p.vB,
+            children: null != b ? b : u.ZP.getName(m.id, true, t)
           })
         })]
-      }), !j && null != m && (0, r.jsx)(o.Text, {
+      }), !j && null != b && (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: (0, r.jsx)(l.Z, {
-          delay: f.vB,
-          children: m
+          delay: p.vB,
+          children: b
         })
       })]
     })]

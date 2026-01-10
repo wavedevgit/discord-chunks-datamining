@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 582344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -13,6 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk699867 = require("./699867.jsx"),
   Chunk227157 = require("./227157.jsx"),
   Chunk775195 = require("./775195.jsx"),
+  Chunk675478 = require("./675478.js"),
   Chunk117768 = require("./117768.js");
 
 function f() {
@@ -24,14 +25,14 @@ function f() {
     dailyCapReached: c.Z.hasUserHitDCCap(),
     dailyCapOverridden: c.Z.dailyCapOverridden,
     newUserMinAgeRequiredOverridden: c.Z.newUserMinAgeRequiredOverridden
-  })), [f, h] = r.useState(""), [x, b] = r.useState(20), g = r.useMemo(() => Object.keys(l.z).filter(e => e.toLowerCase().includes(f.toLowerCase())).reverse(), [f]), v = r.useCallback(e => {
+  })), [f, x] = r.useState(""), [b, g] = r.useState(20), v = r.useMemo(() => Object.keys(l.z).filter(e => e.toLowerCase().includes(f.toLowerCase())).reverse(), [f]), j = r.useCallback(e => {
     let t = e.currentTarget;
-    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && x < g.length && b(e => e + 100)
-  }, [x, g.length]);
+    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && b < v.length && g(e => e + 100)
+  }, [b, v.length]);
   return (0, a.jsx)(s.h21, {
-    onScroll: v,
+    onScroll: j,
     children: (0, a.jsxs)("div", {
-      className: p.panelContainer,
+      className: h.panelContainer,
       children: [(0, a.jsxs)(s.C3N, {
         label: "Dismissible Content Overrides",
         children: [(0, a.jsxs)(s.Kqy, {
@@ -40,6 +41,10 @@ function f() {
             variant: "primary",
             text: "Reset Daily Cap",
             onClick: () => (0, o.EG)()
+          }), (0, a.jsx)(s.Button, {
+            variant: "primary",
+            text: "Clear All DCs",
+            onClick: p.sr
           }), (0, a.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
@@ -60,10 +65,10 @@ function f() {
         label: "All Dismissible Contents",
         children: [(0, a.jsx)(s.E1j, {
           query: f,
-          onChange: h,
-          onClear: () => h("")
+          onChange: x,
+          onClear: () => x("")
         }), (0, a.jsx)(d.Z, {
-          items: g.slice(0, x)
+          items: v.slice(0, b)
         })]
       })]
     })

@@ -41,21 +41,21 @@ function N(e) {
     isFetchingCategories: n,
     scrollerRef: N,
     tab: R
-  } = e, P = (0, f.sp)(), Z = null != (t = null == P ? true : P.sessionId) ? t : "", {
-    noCache: w,
+  } = e, P = (0, f.sp)(), w = null != (t = null == P ? true : P.sessionId) ? t : "", {
+    noCache: Z,
     includeUnpublished: D
-  } = (0, v.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), z = (0, o.ap)(U), [V, G, K] = l.useMemo(() => {
+  } = (0, v.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), H = (0, s.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), z = (0, i.ap)(U), [V, G, K] = l.useMemo(() => {
     switch (R) {
       case S.AW.AVATAR_DECORATIONS:
-        return [x.intl.string(x.t.dRZYNE), z ? j.Z : T.Z, a.Z.AVATAR_DECORATION];
+        return [O.intl.string(O.t.dRZYNE), z ? T.Z : k.Z, a.Z.AVATAR_DECORATION];
       case S.AW.PROFILE_EFFECTS:
-        return [x.intl.string(x.t["1cNjtx"]), z ? B.Z : A.Z, a.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjtx"]), z ? B.Z : A.Z, a.Z.PROFILE_EFFECT];
       case S.AW.NAMEPLATES:
-        return [x.intl.string(x.t.V68Fqz), z ? I.Z : L.Z, a.Z.NAMEPLATE];
+        return [O.intl.string(O.t.V68Fqz), z ? L.Z : I.Z, a.Z.NAMEPLATE];
       case S.AW.BUNDLES:
-        return [x.intl.string(x.t.FYFpps), z ? k.Z : y.Z, a.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFpps), z ? j.Z : y.Z, a.Z.BUNDLE]
     }
-  }, [R, z]), Y = (0, b.a)(), q = l.useMemo(() => Y(M.filter(e => {
+  }, [R, z]), Y = (0, b.a)(), q = l.useMemo(() => Y(H.filter(e => {
     var t;
     return (e.type === K || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === K)) === true) && !S.y8.some(t => {
       let {
@@ -63,35 +63,35 @@ function N(e) {
       } = t;
       return n === e.categorySkuId
     })
-  })), [M, K, Y]), Q = (0, p.l)(q);
+  })), [H, K, Y]), Q = (0, p.l)(q);
   return (l.useEffect(() => {
     (0, m.n)({
-      sessionId: Z,
+      sessionId: w,
       checkpoint: m.a.SHOP_MOUNTED,
       tab: R,
       unpublishedCategoriesShown: D,
-      cacheDisabled: w
+      cacheDisabled: Z
     })
   }, []), l.useEffect(() => {
     n || (0, m.n)({
-      sessionId: Z,
+      sessionId: w,
       checkpoint: m.a.SHOP_RENDERED,
       tab: R,
       unpublishedCategoriesShown: D,
-      cacheDisabled: w
+      cacheDisabled: Z
     })
-  }, [Z, D, w, n, R]), n || null == H) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [w, D, Z, n, R]), n || null == M) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
       },
-      className: O.bannerContainer,
-      children: (0, r.jsx)(i.Heading, {
+      className: _.bannerContainer,
+      children: (0, r.jsx)(o.Heading, {
         variant: "heading-xxl/extrabold",
         children: V
       })
     }), (0, r.jsx)("div", {
-      className: O.products,
+      className: _.products,
       children: Q.slice(40 * (F - 1), 40 * F).map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(f.k0, {
         newValue: {
           tilePosition: t
@@ -102,15 +102,15 @@ function N(e) {
         }, e.skuId)
       }, e.skuId))
     }), Q.length > 40 && (0, r.jsx)("div", {
-      className: O.paginationContainer,
+      className: _.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(i.DsT, {
+        children: (0, r.jsx)(o.DsT, {
           currentPage: F,
           totalCount: Q.length,
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            d.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == P ? true : P.sessionId,
               page_section: null == P ? true : P.pageSection,
               page_category: null == P ? true : P.pageCategory,

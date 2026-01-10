@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 866730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -35,7 +35,7 @@ let m = e => {
       return "".concat(t, " ").concat(s.z[n])
     }
   }],
-  f = [{
+  h = [{
     key: "candidates",
     render(e) {
       let {
@@ -45,12 +45,12 @@ let m = e => {
     }
   }];
 
-function h() {
+function f() {
   let e = (0, l.e7)([o.Z], () => o.Z.getDCFEvents()),
     t = (0, c.ZP)(e => e.candidates),
     n = (0, c.ZP)(e => e.lastWinnerTime),
     r = 0 !== n ? i()(n).fromNow() : "n/a",
-    h = (0, c.ZP)(e => e.recentlyShown[0]),
+    f = (0, c.ZP)(e => e.recentlyShown[0]),
     x = e.map(e => {
       let {
         eventType: t,
@@ -73,12 +73,12 @@ function h() {
       children: ["Last winner time: ", r]
     }), (0, a.jsx)("br", {}), (0, a.jsxs)("div", {
       className: u.info,
-      children: ["Last winner: ", null != h ? s.z[h] : "None"]
+      children: ["Last winner: ", null != f ? s.z[f] : "None"]
     }), (0, a.jsx)("br", {}), (0, a.jsx)("div", {
       className: u.candidatesTableContainer,
       children: (0, a.jsx)(d.Z, {
         className: u.candidatesTable,
-        columns: f,
+        columns: h,
         data: b
       })
     }), (0, a.jsx)("br", {}), (0, a.jsx)(d.Z, {

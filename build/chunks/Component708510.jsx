@@ -74,11 +74,11 @@ function I(e) {
     return null == (e = j.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
     b.Z.setIsAgeRestricted(t, e)
-  }, [t]), g = n === C.V_K.AGE_RESTRICTED && s !== C.V_K.AGE_RESTRICTED;
+  }, [t]), g = n === y.V_K.AGE_RESTRICTED && s !== y.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(a.rsf, {
-    label: y.intl.string(y.t.N9xEJF),
-    description: y.intl.format(y.t.iyQQ62, {
-      helpArticleLink: u.Z.getArticleURL(C.BhN.NSFW_SERVER_AGE_RESTRICTION)
+    label: C.intl.string(C.t.N9xEJF),
+    description: C.intl.format(C.t.iyQQ62, {
+      helpArticleLink: u.Z.getArticleURL(y.BhN.NSFW_SERVER_AGE_RESTRICTION)
     }),
     checked: o,
     onChange: c,
@@ -105,7 +105,7 @@ function S() {
     children: [(0, r.jsx)(a.Heading, {
       color: "text-strong",
       variant: "heading-lg/semibold",
-      children: y.intl.string(y.t.YJlvBM)
+      children: C.intl.string(C.t.YJlvBM)
     }), (0, r.jsx)(v.h, {
       onTypePicked: s,
       activeType: d,

@@ -1,8 +1,9 @@
-/** Chunk was on 89311 **/
-/** chunk id: 485267, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 485267, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Bt: () => u,
-  Jn: () => d,
+  Bt: () => d,
+  Jn: () => u,
   lY: () => c
 });
 var Chunk570140 = require("./570140.js");
@@ -15,23 +16,23 @@ var Chunk626135 = require("./626135.js"),
 require("./295955.js");
 var Chunk981631 = require("./981631.js");
 let c = () => {
-  a.Z.dispatch({
+  r.Z.dispatch({
     type: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN"
-  }), l.default.track(s.rMx.MEMBERLIST_CONTENT_FEED_HIDDEN, {
+  }), o.default.track(l.rMx.MEMBERLIST_CONTENT_FEED_HIDDEN, {
     channel_id: i.Z.getChannelId(),
-    guild_id: r.Z.getGuildId(),
-    hidden: o.Z.hidden
+    guild_id: a.Z.getGuildId(),
+    hidden: s.Z.hidden
   })
 };
 
-function d() {
-  a.Z.dispatch({
+function u() {
+  r.Z.dispatch({
     type: "GAME_PROFILE_OPEN"
   })
 }
 
-function u() {
-  a.Z.dispatch({
+function d() {
+  r.Z.dispatch({
     type: "CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR"
   })
 }

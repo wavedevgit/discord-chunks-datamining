@@ -1,7 +1,7 @@
-/** Chunk was on 38342 **/
+/** Chunk was on 76676 **/
 /** chunk id: 601184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,15 +17,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t) {
+function g(e, t) {
   let n = (0, l.e7)([c.default], () => c.default.getCurrentUser()),
-    _ = (0, o.$R)(t),
-    g = (0, l.e7)([u.Z], () => u.Z.can(f.Plq.MANAGE_MESSAGES, t), [t]),
+    g = (0, o.$R)(t),
+    _ = (0, l.e7)([u.Z], () => u.Z.can(f.Plq.MANAGE_MESSAGES, t), [t]),
     {
       firstMessage: S
     } = (0, l.e7)([a.Z], () => a.Z.getMessage(t.id), [t.id]),
-    N = g || null != n && e.canDeleteOwnMessage(n.id);
-  return e.state === f.yb.SENDING || !N || f.V$x.UNDELETABLE.has(e.type) || !_ || t.isModeratorReportChannel() && (e.id === (null == S ? true : S.id) || (0, d.Z)(e)) ? null : (0, i.jsx)(s.sNh, {
+    D = _ || null != n && e.canDeleteOwnMessage(n.id);
+  return e.state === f.yb.SENDING || !D || f.V$x.UNDELETABLE.has(e.type) || !g || t.isModeratorReportChannel() && (e.id === (null == S ? true : S.id) || (0, d.Z)(e)) ? null : (0, i.jsx)(s.sNh, {
     id: "delete",
     label: m.intl.string(m.t.xwMqD7),
     action: function(n) {

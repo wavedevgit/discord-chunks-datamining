@@ -30,10 +30,10 @@ function p(e) {
       error: j,
       loading: v,
       createEnableRequest: O,
-      submittedRequest: C
+      submittedRequest: y
     } = (0, d.Z)(null == e ? true : e.id),
     {
-      loading: y,
+      loading: C,
       error: N,
       refresh: E,
       eligibility: I
@@ -46,7 +46,7 @@ function p(e) {
     {
       isMonetizationReapplicationDisabled: P
     } = (0, l.eC)(null == e ? true : e.id),
-    w = C || (null == I ? true : I.isApplicationPending) === true,
+    w = y || (null == I ? true : I.isApplicationPending) === true,
     Z = (null == I ? true : I.canApply) === true,
     R = b.intl.format(b.t.aJUdOi, {
       faqUrl: o.Z.getArticleURL(m.BhN.CREATOR_FAQ)
@@ -70,8 +70,8 @@ function p(e) {
     resubmissionError: j,
     isGuildOwner: x,
     createEnableRequest: O,
-    resubmittedRequest: C,
-    eligibilityLoading: y,
+    resubmittedRequest: y,
+    eligibilityLoading: C,
     eligibilityError: N,
     refreshEligibility: E,
     eligibility: I,

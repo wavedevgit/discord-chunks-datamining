@@ -1,7 +1,7 @@
-/** Chunk was on 70675 **/
-/** chunk id: 185457, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 69220 **/
+/** chunk id: 185457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,33 +15,33 @@ var Chunk481060 = require("./481060.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function Z(e) {
+function g(e) {
   let {
-    user: n,
-    guildId: t,
-    channelId: Z,
-    context: f
+    user: t,
+    guildId: n,
+    channelId: g,
+    context: Z
   } = e, {
     id: b
-  } = n, {
-    loading: O,
-    note: m
-  } = (0, a.Z)(b), h = !O && null != m && m.length > 0, p = f === d.IlC.POPOUT || f === d.IlC.OVERLAY, {
-    analyticsLocations: P
+  } = t, {
+    loading: p,
+    note: v
+  } = (0, o.Z)(b), m = !p && null != v && v.length > 0, O = Z === s.IlC.POPOUT || Z === s.IlC.OVERLAY, {
+    analyticsLocations: h
   } = (0, r.ZP)();
-  return b === u.default.getId() || s.Z.hidePersonalInformation || p ? null : (0, l.jsx)(i.sNh, {
+  return b === d.default.getId() || u.Z.hidePersonalInformation || O ? null : (0, i.jsx)(l.sNh, {
     id: "note",
-    label: O ? g.intl.string(g.t["WLKx/9"]) : h ? g.intl.string(g.t.sHHsOM) : g.intl.string(g.t.Dglxrf),
-    subtext: g.intl.string(g.t.r1BOdd),
+    label: p ? f.intl.string(f.t["WLKx/9"]) : m ? f.intl.string(f.t.sHHsOM) : f.intl.string(f.t.Dglxrf),
+    subtext: f.intl.string(f.t.r1BOdd),
     action: () => {
-      (0, o.openUserProfileModal)({
-        userId: n.id,
+      (0, a.openUserProfileModal)({
+        userId: t.id,
         tabSection: c.oh.USER_INFO,
         scrollTarget: c.Tb.NOTE,
-        guildId: t,
-        channelId: Z,
-        sourceAnalyticsLocations: P,
-        appContext: f
+        guildId: n,
+        channelId: g,
+        sourceAnalyticsLocations: h,
+        appContext: Z
       })
     }
   })

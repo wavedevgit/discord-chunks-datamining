@@ -1,12 +1,12 @@
 /** Chunk was on 76157 **/
-/** chunk id: 828569, original params: e,r,t (module,exports,require) **/
+/** chunk id: 828569, original params: e,r,n (module,exports,require) **/
 require.d(exports, {
   default: () => M
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  c = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,64 +31,64 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk773491 = require("./773491.js");
-let T = e => {
+let N = e => {
     let {
       locale: r
     } = e;
-    return (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(y.Z, {
+    return (0, t.jsxs)(t.Fragment, {
+      children: [(0, t.jsx)(P.Z, {
         icon: a.SlE,
-        iconClassName: I.iconColorPurple,
-        description: v.intl.string(v.t.uAfKTe)
-      }), (0, n.jsx)(y.Z, {
+        iconClassName: E.iconColorPurple,
+        description: S.intl.string(S.t.uAfKTe)
+      }), (0, t.jsx)(P.Z, {
         icon: a.$zw,
-        iconClassName: I.iconColorPink,
-        description: v.intl.formatToPlainString(v.t.sWnv5M, {
-          numGuildSubscriptions: k.cb,
-          discountPercent: (0, C.T3)(r, k.Rr / 100)
+        iconClassName: E.iconColorPink,
+        description: S.intl.formatToPlainString(S.t.sWnv5M, {
+          numGuildSubscriptions: w.cb,
+          discountPercent: (0, C.T3)(r, w.Rr / 100)
         })
-      }), (0, n.jsx)(y.Z, {
+      }), (0, t.jsx)(P.Z, {
         icon: a.EO4,
-        iconClassName: I.iconColorYellow,
-        description: v.intl.string(v.t.pqHIf7)
+        iconClassName: E.iconColorYellow,
+        description: S.intl.string(S.t.pqHIf7)
       })]
     })
   },
-  N = e => {
+  T = e => {
     let {
       trialOffer: r,
       discountOffer: o,
       isLoading: i,
-      price: c,
-      onClose: u
-    } = e, f = (0, s.e7)([x.default], () => x.default.locale), p = null != r || null != o;
-    return (0, n.jsxs)("div", {
-      className: I.wrapper,
-      children: [(0, n.jsx)(a.olH, {
+      price: s,
+      onClose: p
+    } = e, u = (0, l.e7)([y.default], () => y.default.locale), f = null != r || null != o;
+    return (0, t.jsxs)("div", {
+      className: E.wrapper,
+      children: [(0, t.jsx)(a.olH, {
         "data-migration-pending": true,
-        onClick: u,
-        className: I.closeButton
-      }), p && (0, n.jsx)(h.dz, {
-        className: I.premiumTrialBadge
-      }), (0, n.jsx)("img", {
-        className: l()(I.heroImage, {
-          [I.heroImageWithTrialOffer]: p
+        onClick: p,
+        className: E.closeButton
+      }), f && (0, t.jsx)(h.dz, {
+        className: E.premiumTrialBadge
+      }), (0, t.jsx)("img", {
+        className: c()(E.heroImage, {
+          [E.heroImageWithTrialOffer]: f
         }),
-        src: t(178632),
+        src: n(178632),
         alt: ""
-      }), i ? (0, n.jsx)(a.$jN, {}) : (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(a.Text, {
+      }), i ? (0, t.jsx)(a.$jN, {}) : (0, t.jsxs)(t.Fragment, {
+        children: [(0, t.jsx)(a.Text, {
           variant: "text-md/normal",
-          className: I.heading,
-          children: null == c ? (0, n.jsx)(a.$jN, {
+          className: E.heading,
+          children: null == s ? (0, t.jsx)(a.$jN, {
             type: a.$jN.Type.PULSING_ELLIPSIS
-          }) : v.intl.format(v.t.TBsJfQ, {
-            monthlyPrice: (0, w.T4)(c.amount, c.currency)
+          }) : S.intl.format(S.t.TBsJfQ, {
+            monthlyPrice: (0, I.T4)(s.amount, s.currency)
           })
-        }), (0, n.jsx)("div", {
-          className: I.perks,
-          children: (0, n.jsx)(T, {
-            locale: f
+        }), (0, t.jsx)("div", {
+          className: E.perks,
+          children: (0, t.jsx)(N, {
+            locale: u
           })
         })]
       })]
@@ -97,27 +97,27 @@ let T = e => {
   L = e => {
     let {
       trialOffer: r,
-      discountOffer: t,
+      discountOffer: n,
       onClose: o
     } = e, i = {
-      section: E.jXE.STICKER_PREMIUM_TIER_2_UPSELL_MODAL
+      section: v.jXE.STICKER_PREMIUM_TIER_2_UPSELL_MODAL
     };
-    return (0, n.jsxs)(a.mzw, {
+    return (0, t.jsxs)(a.mzw, {
       "data-migration-pending": true,
-      className: I.footer,
-      children: [(0, n.jsx)(a.Button, {
+      className: E.footer,
+      children: [(0, t.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: v.intl.string(v.t.cpT0Cq),
+        text: S.intl.string(S.t.cpT0Cq),
         onClick: o
-      }), (0, n.jsx)(b.Z, {
+      }), (0, t.jsx)(O.Z, {
         textOptions: {
-          textOverride: null != r || null != t ? v.intl.string(v.t["Gd/XHF"]) : true
+          textOverride: null != r || null != n ? S.intl.string(S.t["Gd/XHF"]) : true
         },
         premiumModalAnalyticsLocation: i,
-        subscriptionTier: k.Si.TIER_2,
-        size: c.zx.Sizes.SMALL,
-        color: c.zx.Colors.GREEN,
+        subscriptionTier: w.Si.TIER_2,
+        size: s.zx.Sizes.SMALL,
+        color: s.zx.Colors.GREEN,
         onClick: () => {
           o()
         }
@@ -126,87 +126,87 @@ let T = e => {
   };
 
 function M(e) {
-  var r, t, {
+  var r, n, {
       onClose: i
     } = e,
-    l = function(e, r) {
+    c = function(e, r) {
       if (null == e) return {};
-      var t, n, o = function(e, r) {
+      var n, t, o = function(e, r) {
         if (null == e) return {};
-        var t, n, o = {},
+        var n, t, o = {},
           i = Object.keys(e);
-        for (n = 0; n < i.length; n++) t = i[n], r.indexOf(t) >= 0 || (o[t] = e[t]);
+        for (t = 0; t < i.length; t++) n = i[t], r.indexOf(n) >= 0 || (o[n] = e[n]);
         return o
       }(e, r);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) t = i[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+        for (t = 0; t < i.length; t++) n = i[t], !(r.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
     }(e, ["onClose"]);
-  let c = (0, d.V)(),
-    b = (0, s.e7)([_.Z], () => _.Z.hasFetchedPaymentSources),
-    h = c && b,
-    y = (0, O.N)(),
-    x = (0, g.N)();
+  let s = (0, d.V)(),
+    O = (0, l.e7)([k.Z], () => k.Z.hasFetchedPaymentSources),
+    h = s && O,
+    P = (0, g.N)(),
+    y = (0, b.N)();
   o.useEffect(() => {
-    u.Z.wait(() => {
-      (0, f.tZ)(), (0, p.Y2)(null, null, E.JjL.DISCOVERY)
+    p.Z.wait(() => {
+      (0, u.tZ)(), (0, f.Y2)(null, null, v.JjL.DISCOVERY)
     })
   }, []);
-  let C = h ? S.ZP.getDefaultPrice(k.Xh.PREMIUM_MONTH_TIER_2) : null;
-  return (0, n.jsx)(m.PaymentContextProvider, {
+  let C = h ? _.ZP.getDefaultPrice(w.Xh.PREMIUM_MONTH_TIER_2) : null;
+  return (0, t.jsx)(m.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
     skuIDs: [],
-    children: (0, n.jsx)(a.Y0X, (r = function(e) {
+    children: (0, t.jsx)(a.Y0X, (r = function(e) {
       for (var r = 1; r < arguments.length; r++) {
-        var t = null != arguments[r] ? arguments[r] : {},
-          n = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), n.forEach(function(r) {
-          var n;
-          n = t[r], r in e ? Object.defineProperty(e, r, {
-            value: n,
+        var n = null != arguments[r] ? arguments[r] : {},
+          t = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (t = t.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), t.forEach(function(r) {
+          var t;
+          t = n[r], r in e ? Object.defineProperty(e, r, {
+            value: t,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[r] = n
+          }) : e[r] = t
         })
       }
       return e
     }({
       "data-migration-pending": true
-    }, l), t = t = {
+    }, c), n = n = {
       "aria-labelledby": "sticker-pack-premium-upsell-modal-header",
       parentComponent: "StickerPackPremiumUpsellModal",
-      children: (0, n.jsx)(P.Z, {
+      children: (0, t.jsx)(x.Z, {
         hideBreadcrumbs: true,
-        body: (0, n.jsx)(N, {
-          trialOffer: y,
-          discountOffer: x,
+        body: (0, t.jsx)(T, {
+          trialOffer: P,
+          discountOffer: y,
           isLoading: !h,
           price: C,
           onClose: i
         }),
-        footer: (0, n.jsx)(L, {
-          trialOffer: y,
-          discountOffer: x,
+        footer: (0, t.jsx)(L, {
+          trialOffer: P,
+          discountOffer: y,
           onClose: i
         }),
         steps: [j.h8.PREMIUM_UPSELL],
         currentStep: j.h8.PREMIUM_UPSELL
       })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(t)) : (function(e, r) {
-      var t = Object.keys(e);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(n)) : (function(e, r) {
+      var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(e);
-        t.push.apply(t, n)
+        var t = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, t)
       }
-      return t
-    })(Object(t)).forEach(function(e) {
-      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(t, e))
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(n, e))
     }), r))
   })
 }

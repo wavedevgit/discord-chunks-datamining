@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   d = require.n(Chunk392711),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -104,7 +104,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
         duration: 200,
         clamp: true
       }
-    }), d ? "respect-motion-settings" : "animate-never"), y = L.ZP.useUserTag(s.user);
+    }), d ? "respect-motion-settings" : "animate-never"), C = L.ZP.useUserTag(s.user);
     return (0, r.jsxs)("div", {
       className: a()(W.emojiRow, z.card),
       role: "row",
@@ -160,15 +160,15 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
         })
       }), (0, r.jsx)("div", {
         className: W.column,
-        children: (0, r.jsx)(C.Z, {
+        children: (0, r.jsx)(y.Z, {
           avatar: (0, r.jsx)(b.qEK, {
             src: s.user.getAvatarURL(l, 20),
-            "aria-label": y,
+            "aria-label": C,
             size: b.EFr.SIZE_20
           }),
           name: (0, r.jsx)(b.Text, {
             variant: "text-sm/normal",
-            children: y
+            children: C
           })
         })
       }), !c && (0, r.jsxs)("div", {
@@ -407,7 +407,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
         emojis: G.Z.getEmojis(l.id)
       })),
       h = (0, v.Z)(m),
-      [x, C] = i.useState(false),
+      [x, y] = i.useState(false),
       [_, R] = i.useState(false),
       D = i.useRef(null),
       {
@@ -478,7 +478,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
         s((0, g.Z)()), Z.default.track(B.rMx.EMOJI_UPLOAD_STARTED, {
           guild_id: l.id,
           upload_id: a
-        }), await (0, T._j)(e, el), C(true)
+        }), await (0, T._j)(e, el), y(true)
       }, es = () => {
         null !== D.current && ((0, b.Mr3)(D.current), D.current = null)
       }, eo = async e => {
@@ -502,7 +502,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
             page: B.ZY5.GUILD_SETTINGS
           }
         }), t.current += 1
-      }, [l.id]), ed = (0, y.l)(l), eu = J.enabled ? e => ei({
+      }, [l.id]), ed = (0, C.l)(l), eu = J.enabled ? e => ei({
         emoji: e
       }) : true;
     return (0, r.jsxs)("div", {

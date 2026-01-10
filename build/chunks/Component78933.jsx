@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => es
@@ -13,6 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk393238 = require("./393238.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk251296 = require("./251296.js"),
   Chunk104505 = require("./104505.js"),
   Chunk368326 = require("./368326.js"),
   Chunk429467 = require("./429467.js"),
@@ -23,7 +24,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk785717 = require("./785717.jsx"),
   Chunk659158 = require("./659158.js"),
-  Chunk880421 = require("./880421.js"),
   Chunk687158 = require("./687158.js"),
   Chunk612600 = require("./612600.js"),
   Chunk892001 = require("./892001.js"),
@@ -90,8 +90,8 @@ function es(e) {
     guildId: ed,
     guildProfileEnabled: eu
   } = e, em = __OVERLAY__, ep = (0, S.ZP)(t.id, ed), {
-    analyticsLocations: ef
-  } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), eh = (0, C.ZB)({
+    analyticsLocations: eh
+  } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), ef = (0, C.ZB)({
     layout: "ACCOUNT_POPOUT",
     userId: t.id,
     guildId: ed
@@ -101,24 +101,24 @@ function es(e) {
   } = (0, d.ZP)(), {
     isHoveringOrFocusing: eg,
     isHovering: ev
-  } = (0, p.Z)(ex);
+  } = (0, h.Z)(ex);
   r.useEffect(() => {
     null == es || es(ex.current)
-  }, [ex, es]), r.useEffect(() => (W.Z.setState({
+  }, [ex, es]), r.useEffect(() => (H.Z.setState({
     isOpen: true
-  }), () => W.Z.setState({
+  }), () => H.Z.setState({
     isOpen: false
   })), []);
   let ej = (0, s.e7)([B.Z], () => B.Z.getStatus(t.id)),
-    eC = U.Cr.useSetting(),
-    ey = (0, J.F)(eC),
+    ey = U.Cr.useSetting(),
+    eC = (0, J.F)(ey),
     e_ = (0, s.e7)([F.Z], () => F.Z.hidePersonalInformation),
-    eS = (0, b.p)(),
+    eS = (0, g.p)(),
     eE = U.Sb.useSetting(),
     eT = (0, J.I)(ej),
-    eO = (0, q.g)(n),
-    eN = (0, v.Z)({
-      analyticsLocations: ef
+    eO = (0, K.g)(n),
+    eN = (0, j.Z)({
+      analyticsLocations: eh
     }),
     eP = (0, z.I5)(t),
     ew = (0, f.p)({
@@ -126,45 +126,45 @@ function es(e) {
     }),
     eI = r.useRef(null),
     ek = r.useRef(null),
-    eR = r.useRef((0, W.Z)(e => e.shouldRenderTenureLevelUp)),
-    eA = r.useMemo(() => (0, h.Z)(), []),
-    [eD, eZ] = r.useState(true);
+    eR = r.useRef((0, H.Z)(e => e.shouldRenderTenureLevelUp)),
+    eA = r.useMemo(() => (0, x.Z)(), []),
+    [eZ, eD] = r.useState(true);
   r.useEffect(() => {
     setTimeout(() => {
-      eZ(false)
+      eD(false)
     }, 500)
   }, []);
   let eL = e => {
       null == n || n(), (0, T.openUserProfileModal)(el({
         customStatusPrompt: eA,
-        sourceAnalyticsLocations: ef
-      }, eh, e))
+        sourceAnalyticsLocations: eh
+      }, ef, e))
     },
     eM = (0, E.Z)({
       location: "UserProfileAccountPopout"
     }),
     eU = (null == ep ? true : ep.widgets) != null && ep.widgets.length > 0,
     eB = eU ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [eF, eG] = (0, x.US)(eB),
+    [eF, eG] = (0, b.US)(eB),
     eV = eF === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     ez = r.useCallback(() => {
       eG(et.L.USER_DISMISS), n()
     }, [eG, n]),
-    eW = r.useCallback(() => {
+    eH = r.useCallback(() => {
       eu && null != ed || (eN(), ez())
     }, [eN, ez, eu, ed]),
-    eH = eu && null != ed,
-    eq = (0, H.K)(ed, ef, eV, n, ez),
-    eK = (0, _.k)({
+    eW = eu && null != ed,
+    eK = (0, W.K)(ed, eh, eV, n, ez),
+    eq = (0, p.q5)({
       location: "UserProfileAccountPopout"
     }),
-    eY = (0, y.S)({
+    eY = (0, _.S)({
       location: "UserProfileAccountPopout"
     });
   return (0, a.jsx)(m.Gt, {
-    value: ef,
+    value: eh,
     children: (0, a.jsx)(C.Mt, {
-      value: eh,
+      value: ef,
       openedAt: ec,
       fetchStartedAt: null == ep ? true : ep.fetchStartedAt,
       fetchEndedAt: null == ep ? true : ep.fetchEndedAt,
@@ -204,11 +204,11 @@ function es(e) {
           }), (0, a.jsxs)(c.Ttm, {
             className: er.body,
             style: {
-              pointerEvents: eD ? "none" : true
+              pointerEvents: eZ ? "none" : true
             },
             children: [(0, a.jsx)(I.Z, {
               userId: t.id
-            }), (0, a.jsx)(D.Z, {
+            }), (0, a.jsx)(Z.Z, {
               user: t,
               className: er.username,
               nickname: V.ZP.getName(ed, null, t),
@@ -221,7 +221,7 @@ function es(e) {
                 shouldOpenBadgeTooltip: null != eo ? e => e === eo : true,
                 shouldGlowTenureBadge: eR.current
               }),
-              nicknameIcons: (0, a.jsx)(Z.Z, {
+              nicknameIcons: (0, a.jsx)(D.Z, {
                 user: t,
                 isVisible: eg
               })
@@ -251,8 +251,8 @@ function es(e) {
                     action: "EDIT_PROFILE",
                     label: eu ? ea.intl.string(ea.t.Ip9nBS) : ea.intl.string(ea.t.s5vZlQ),
                     icon: c.vdY,
-                    onClick: eW,
-                    renderSubmenu: eH ? e => {
+                    onClick: eH,
+                    renderSubmenu: eW ? e => {
                       let {
                         closePopout: t
                       } = e;
@@ -260,7 +260,7 @@ function es(e) {
                         navId: "edit-profile-submenu",
                         "aria-label": ea.intl.string(ea.t.szTA8E),
                         onClose: t,
-                        children: eq
+                        children: eK
                       })
                     } : true,
                     trailing: eV ? (0, a.jsx)(c.IGR, {
@@ -270,7 +270,7 @@ function es(e) {
                   }), (0, a.jsx)(Y.V4, {
                     action: "PRESS_SET_STATUS",
                     label: (0, a.jsx)(Q.Z, {}),
-                    sublabel: null != ey && ey,
+                    sublabel: null != eC && eC,
                     icon: () => (0, a.jsx)(c.qbd, {
                       status: ej,
                       size: 12
@@ -371,14 +371,14 @@ function es(e) {
                 })
               })]
             })]
-          }), (null == ep ? true : ep.profileEffect) != null && !eR.current && (0, a.jsx)(j.Z, {
+          }), (null == ep ? true : ep.profileEffect) != null && !eR.current && (0, a.jsx)(y.Z, {
             skuId: ep.profileEffect.skuId,
             isHovering: ev
           })]
-        }), !eH && eK && eY ? (0, a.jsx)(K.Z, {
+        }), !eW && eq && eY ? (0, a.jsx)(q.Z, {
           targetElementRef: ek,
           onClose: n
-        }) : null, (0, a.jsx)(g.Z, {})]
+        }) : null, (0, a.jsx)(v.Z, {})]
       })
     })
   })

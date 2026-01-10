@@ -1,10 +1,10 @@
-/** Chunk was on 15718 **/
+/** Chunk was on 69937 **/
 /** chunk id: 387667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Pw: () => E,
+  Pw: () => d,
   ZP: () => A,
-  ms: () => d,
-  p5: () => c
+  ms: () => E,
+  p5: () => u
 });
 var Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
@@ -13,7 +13,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function u(e) {
   if (e === o.rsA.ALL) return o.KFR.ALL;
   if (e <= o.rsA.GUILD_UPDATE) return o.KFR.GUILD;
   if (e <= o.rsA.CHANNEL_DELETE || e === o.rsA.MESSAGE_BULK_DELETE) return o.KFR.CHANNEL;
@@ -58,7 +58,7 @@ function c(e) {
   return a.Z.captureMessage("Unknown target type for: ".concat(e)), o.KFR.UNKNOWN
 }
 
-function E(e) {
+function d(e) {
   switch (e) {
     case o.rsA.CHANNEL_CREATE:
     case o.rsA.CHANNEL_OVERWRITE_CREATE:
@@ -144,15 +144,15 @@ function E(e) {
   }
   return o.vB8.ALL
 }
-class d {
+class E {
   constructor(e, t, n) {
-    u(this, "key", true), u(this, "oldValue", true), u(this, "newValue", true), u(this, "subtarget", true), this.key = e, this.oldValue = t, this.newValue = n
+    c(this, "key", true), c(this, "oldValue", true), c(this, "newValue", true), c(this, "subtarget", true), this.key = e, this.oldValue = t, this.newValue = n
   }
 }
 class _ extends Chunk81825.Z {
   constructor(e) {
     var t, n, r, i, a, o;
-    super(), u(this, "id", true), u(this, "actionType", true), u(this, "action", true), u(this, "targetType", true), u(this, "targetId", true), u(this, "target", true), u(this, "userId", true), u(this, "changes", true), u(this, "timestampStart", true), u(this, "timestampEnd", true), u(this, "user", true), u(this, "options", true), this.id = e.id, this.action = e.action, this.actionType = E(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : l()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (r = e.changes) ? r : [], this.targetType = c(this.action), this.options = null != (i = e.options) ? i : {}, this.target = null != (a = e.target) ? a : e.id, this.user = null != (o = e.user) ? o : null
+    super(), c(this, "id", true), c(this, "actionType", true), c(this, "action", true), c(this, "targetType", true), c(this, "targetId", true), c(this, "target", true), c(this, "userId", true), c(this, "changes", true), c(this, "timestampStart", true), c(this, "timestampEnd", true), c(this, "user", true), c(this, "options", true), this.id = e.id, this.action = e.action, this.actionType = d(this.action), this.targetId = e.targetId, this.timestampStart = null != (t = e.timestampStart) ? t : l()(s.default.extractTimestamp(this.id)), this.timestampEnd = null != (n = e.timestampEnd) ? n : this.timestampStart, this.userId = e.userId, this.changes = null != (r = e.changes) ? r : [], this.targetType = u(this.action), this.options = null != (i = e.options) ? i : {}, this.target = null != (a = e.target) ? a : e.id, this.user = null != (o = e.user) ? o : null
   }
 }
 let A = _

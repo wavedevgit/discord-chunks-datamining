@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 248400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -11,9 +11,9 @@ var Chunk692547 = require("./692547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk402844 = require("./402844.js");
 let c = () => (0, r.jsx)(l.u, {
-  text: s.intl.string(s.t.GMZqSi),
+  text: o.intl.string(o.t.GMZqSi),
   children: (0, r.jsx)("div", {
-    className: o.container,
+    className: s.container,
     children: (0, r.jsx)(a.Z, {
       color: i.Z.unsafe_rawColors.WHITE.css
     })

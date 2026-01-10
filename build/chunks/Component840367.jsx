@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 840367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk314897 = require("./314897.js"),
@@ -18,14 +18,14 @@ function d(e) {
     userId: t,
     headingId: n,
     widget: i,
-    disableInteraction: l = false,
+    disableInteraction: a = false,
     title: c,
     subtitle: s,
     actionButtons: d = [],
     className: g
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(u.headerRow, g),
+    className: l()(u.headerRow, g),
     children: [(0, r.jsxs)("div", {
       className: u.title,
       children: [(0, r.jsx)(o.Heading, {
@@ -41,7 +41,7 @@ function d(e) {
     }), (0, r.jsx)(f, {
       widget: i,
       actionButtons: d,
-      disabledInteraction: l,
+      disabledInteraction: a,
       userId: t
     })]
   })
@@ -52,16 +52,16 @@ function f(e) {
     widget: t,
     actionButtons: n,
     disabledInteraction: i,
-    userId: a
-  } = e, o = (0, l.e7)([c.default], () => c.default.getId());
+    userId: l
+  } = e, o = (0, a.e7)([c.default], () => c.default.getId());
   return i ? null : null != n && n.length > 0 ? (0, r.jsx)("div", {
     className: u.actions,
     children: n
-  }) : o !== a ? (0, r.jsx)("div", {
+  }) : o !== l ? (0, r.jsx)("div", {
     className: u.actions,
     children: (0, r.jsx)(s.Z, {
       widget: t,
-      userId: a,
+      userId: l,
       className: u.menuButton
     })
   }) : null

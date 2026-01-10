@@ -214,7 +214,7 @@ function c(e, t) {
         })
       }), r && null != n.current && n.current.scrollToBottom(), t && (e.preventDefault(), e.stopPropagation()))
     }, [n, u, o]),
-    C = r.useCallback(e => {
+    y = r.useCallback(e => {
       let t = o.trim().length <= 0;
       if (d.length > 0) {
         var n;
@@ -247,7 +247,7 @@ function c(e, t) {
         })
       }), e.preventDefault(), e.stopPropagation())
     }, [i, d.length, u, o]),
-    y = r.useCallback(e => {
+    C = r.useCallback(e => {
       var t, n, r, l;
       let a = e.metaKey || e.ctrlKey;
       "z" === e.key && a ? (g().selections.length > 0 ? null == (t = i.current) || t.blur() : null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && a && (f().selections.length > 0 ? null == (r = i.current) || r.blur() : null == (l = i.current) || l.focus(), e.preventDefault(), e.stopPropagation())
@@ -288,13 +288,13 @@ function c(e, t) {
     handleInputChange: v,
     handleKeyDown: r.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      "Meta" !== e.key && (s.ye.has(e.key) ? O(e) : "Backspace" === e.key ? C(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? N(e) : s.Bd.has(e.key) && t && y(e))
-    }, [O, C, j, N, y]),
+      "Meta" !== e.key && (s.ye.has(e.key) ? O(e) : "Backspace" === e.key ? y(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? N(e) : s.Bd.has(e.key) && t && C(e))
+    }, [O, y, j, N, C]),
     handleContainerKeyUp: r.useCallback(e => {
       if (document.activeElement !== l.current) return;
       let t = e.metaKey || e.ctrlKey;
-      "Backspace" === e.key ? C(e) : "a" === e.key && t ? N(e) : "Escape" === e.key ? j(e) : s.Bd.has(e.key) && t ? y(e) : "Meta" !== e.key && j(e)
-    }, [y, C, N, j, l]),
+      "Backspace" === e.key ? y(e) : "a" === e.key && t ? N(e) : "Escape" === e.key ? j(e) : s.Bd.has(e.key) && t ? C(e) : "Meta" !== e.key && j(e)
+    }, [C, y, N, j, l]),
     handleRemoveTag: b,
     handleTagChangeEvent: p,
     handleSelectTag: h,

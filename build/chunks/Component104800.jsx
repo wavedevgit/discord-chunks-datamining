@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk209668 = require("./209668.js");
 
-function y(e) {
+function x(e) {
   let {
     quest: t,
     sourceQuestContent: n
@@ -45,7 +45,7 @@ function y(e) {
   })
 }
 
-function x(e) {
+function y(e) {
   let {
     title: t,
     subtitle: n,
@@ -77,7 +77,7 @@ function x(e) {
           className: _.endScreenPanelTextSubtitle,
           children: n
         })]
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(C.Z, {
         color: "#747783"
       }), (0, r.jsx)(l, {
         size: "md",
@@ -99,7 +99,7 @@ function j(e) {
   })
 }
 
-function D(e) {
+function P(e) {
   let {
     quest: t,
     asset: n,
@@ -123,7 +123,7 @@ function D(e) {
   })
 }
 
-function P(e) {
+function D(e) {
   let {
     ctaBtnLabel: t,
     title: n,
@@ -202,29 +202,29 @@ function N(e) {
     onExitFullScreen: l,
     onTrackQuestVideoFullscreenChanged: s,
     onTrackQuestContentClick: g,
-    orientation: h
+    orientation: C
   } = e, {
     onClose: T,
     sourceQuestContent: R,
     quest: N
-  } = o.useContext(O.VideoQuestModalContext), I = (0, f.ZP)(e => e.fullScreenEnabled), A = (0, f.ZP)(e => e.setFullScreenEnabled), L = (0, d.aM)(), w = (0, C.e)({
+  } = o.useContext(h.VideoQuestModalContext), I = (0, f.ZP)(e => e.fullScreenEnabled), A = (0, f.ZP)(e => e.setFullScreenEnabled), w = (0, d.aM)(), k = (0, S.e)({
     quest: N,
     onClose: T,
     sourceQuestContent: R,
-    impressionId: L
-  }), k = o.useCallback(e => {
+    impressionId: w
+  }), L = o.useCallback(e => {
     if (I) {
       var t;
       let e = (0, c.fn)(null == (t = n.current) ? true : t.parentNode, n.current);
       null != e && (e.removeEventListener(c.NO, l), (0, c.Pr)(e), A(false), s(false))
     }
-    g(e, u.jZ.LEARN_MORE), w(e, u.jZ.OPEN_GAME_LINK)
-  }, [I, n, l, A, s, w, g]), {
+    g(e, u.jZ.LEARN_MORE), k(e, u.jZ.OPEN_GAME_LINK)
+  }, [I, n, l, A, s, k, g]), {
     title: M,
     subtitle: V
   } = {
     title: (0, E.V_)(N),
-    subtitle: null != (t = N.config.ctaConfig.subtitle) ? t : S.intl.string(S.t.mxaHfx)
+    subtitle: null != (t = N.config.ctaConfig.subtitle) ? t : O.intl.string(O.t.mxaHfx)
   }, {
     enabled: Z
   } = p.VG.useConfig({
@@ -237,33 +237,33 @@ function N(e) {
       className: _.endScreenOverlay
     }), (0, r.jsxs)("div", {
       className: i()(_.endScreenContainer, {
-        [_.endScreenContainerPortrait]: "portrait" === h
+        [_.endScreenContainerPortrait]: "portrait" === C
       }),
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(P, {
         quest: N,
         asset: F,
         sourceQuestContent: R,
-        orientation: h
-      }), (0, r.jsx)(P, {
+        orientation: C
+      }), (0, r.jsx)(D, {
         title: M,
         subtitle: V,
         ctaBtnLabel: N.config.ctaConfig.buttonLabel,
-        onCTAClick: () => k(m.jn.VIDEO_MODAL),
-        orientation: h
+        onCTAClick: () => L(m.jn.VIDEO_MODAL),
+        orientation: C
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(x, {
       quest: N,
       sourceQuestContent: R
     }), (0, r.jsx)("div", {
       className: _.videoContOverlay
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(y, {
       title: M,
       subtitle: V,
       icon: a.d4D,
       className: _.endScreenPanelRight,
-      onClick: () => k(m.jn.VIDEO_MODAL)
+      onClick: () => L(m.jn.VIDEO_MODAL)
     })]
   })
 }

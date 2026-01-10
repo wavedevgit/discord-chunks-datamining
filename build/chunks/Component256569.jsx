@@ -79,8 +79,8 @@ function p(e) {
     className: p,
     maxTags: h
   } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), O = (0, g.V)(n), {
-    handlePasteEvent: C,
-    handleInputChange: y,
+    handlePasteEvent: y,
+    handleInputChange: C,
     handleKeyDown: N,
     handleContainerKeyUp: E,
     handleRemoveTag: I,
@@ -151,9 +151,9 @@ function p(e) {
           [f.isEditingOtherNodes]: k
         }),
         ref: x,
-        onChange: y,
+        onChange: C,
         onKeyDownCapture: N,
-        onPaste: C,
+        onPaste: y,
         onBlur: w,
         placeholder: 0 === R.length ? m : true,
         value: Z

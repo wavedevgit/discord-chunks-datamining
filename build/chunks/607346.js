@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 607346, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -16,9 +16,9 @@ function u(e, t) {
   let u = (0, i.e7)([l.Z], () => l.Z.getGuild(e)),
     d = (0, i.e7)([o.Z], () => o.Z.getStateForGuild(e)),
     {
-      spent: f
+      spent: p
     } = (0, s.Z)(e),
-    h = r.useMemo(() => {
+    f = r.useMemo(() => {
       if (null == t || t.type !== c.Us.LEVEL || null == d) return [];
       let e = c.T1[t.skuId];
       return null == e ? [] : Object.entries(c.Rx).filter(t => {
@@ -29,6 +29,6 @@ function u(e, t) {
         return d.allPowerups[t]
       }).filter(a.lm)
     }, [t, d]),
-    p = null == h ? true : h.reduce((e, t) => e + t.cost, 0);
-  return Math.max((null != (n = null == u ? true : u.premiumSubscriberCount) ? n : 0) - f + (null != p ? p : 0), 0)
+    h = null == f ? true : f.reduce((e, t) => e + t.cost, 0);
+  return Math.max((null != (n = null == u ? true : u.premiumSubscriberCount) ? n : 0) - p + (null != h ? h : 0), 0)
 }

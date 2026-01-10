@@ -1,8 +1,8 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZB: () => v,
-  ZP: () => h,
+  ZB: () => h,
+  ZP: () => E,
   cF: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
@@ -16,18 +16,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk354459 = require("./354459.js"),
   Chunk389591 = require("./389591.js");
 let p = 112,
-  b = 16 / 9 * 112 + 8,
-  m = 10 * Chunk70956.Z.Millis.SECOND;
+  g = 16 / 9 * 112 + 8,
+  b = 10 * Chunk70956.Z.Millis.SECOND;
 
-function g(e) {
+function m(e) {
   var t;
   let n = o.default.getId();
   return e.type === d.fO.USER && e.user.id === n && (null == (t = e.voiceState) ? true : t.selfVideo)
 }
 
-function v(e, t) {
+function h(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
-      tileWidth: b,
+      tileWidth: g,
       tileMinWidth: 124,
       tileMargin: 8,
       limit: 12,
@@ -41,22 +41,22 @@ function v(e, t) {
       cropSelfVideo: f,
       version: p
     } = n,
-    [v, h] = i.useState(Date.now());
-  i.useEffect(() => {
+    [h, E] = l.useState(Date.now());
+  l.useEffect(() => {
     let e = setTimeout(() => {
-      h(Date.now())
-    }, m);
+      E(Date.now())
+    }, b);
     return () => {
       clearTimeout(e)
     }
   }, [t]);
-  let E = i.useRef({}),
+  let v = l.useRef({}),
     {
       visibleParticipants: _,
       participantTileWidth: y
-    } = i.useMemo(() => {
+    } = l.useMemo(() => {
       let n = Date.now(),
-        i = (0, l.sortBy)(t, e => (function(e) {
+        l = (0, i.sortBy)(t, e => (function(e) {
           let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Date.now();
           switch (e.type) {
             case d.fO.ACTIVITY:
@@ -67,56 +67,56 @@ function v(e, t) {
             case d.fO.USER:
               var n;
               let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < m ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              return e.speaking ? r = "\x03" : t - e.lastSpoke < b ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
-        [p, b] = (0, l.partition)(i, d.Io),
-        v = p.findIndex(g),
-        h = null;
-      false !== v && (h = p[v], p.splice(v, 1));
-      let _ = null == h || f ? e : e - r - c,
+        [p, g] = (0, i.partition)(l, d.Io),
+        h = p.findIndex(m),
+        E = null;
+      false !== h && (E = p[h], p.splice(h, 1));
+      let _ = null == E || f ? e : e - r - c,
         y = Math.max(0, Math.min(Math.floor((_ - c) / (o + c)), u, t.length)),
-        S = Math.min((_ - c) / y - c, r),
-        O = Math.max(0, y - b.length),
-        C = b.slice(0, y),
-        w = p.slice(0, O),
-        I = Array(O);
-      if (O > 0) {
+        O = Math.min((_ - c) / y - c, r),
+        C = Math.max(0, y - g.length),
+        S = g.slice(0, y),
+        I = p.slice(0, C),
+        N = Array(C);
+      if (C > 0) {
         let e = [];
-        for (let t of w) {
-          let n = E.current[t.id];
-          null != n && n < O ? I[n] = t : e.push(t)
+        for (let t of I) {
+          let n = v.current[t.id];
+          null != n && n < C ? N[n] = t : e.push(t)
         }
-        for (let t = 0; t < I.length; t++) {
-          if (null != I[t]) continue;
+        for (let t = 0; t < N.length; t++) {
+          if (null != N[t]) continue;
           let n = e.shift();
           if (null == n) break;
-          I[t] = n
+          N[t] = n
         }
       }
-      let P = I.filter(s.lm);
-      E.current = (0, l.keyBy)((0, l.range)(P.length), e => P[e].id);
-      let j = [...C, ...P];
-      return null != h && (f && j.length >= y ? j[Math.max(0, j.length - 1)] = h : j.push(h)), {
-        visibleParticipants: j,
-        participantTileWidth: S
+      let T = N.filter(s.lm);
+      v.current = (0, i.keyBy)((0, i.range)(T.length), e => T[e].id);
+      let x = [...S, ...T];
+      return null != E && (f && x.length >= y ? x[Math.max(0, x.length - 1)] = E : x.push(E)), {
+        visibleParticipants: x,
+        participantTileWidth: O
       }
-    }, [e, t, v, p, f, u, c, o, r]);
+    }, [e, t, h, p, f, u, c, o, r]);
   return {
     visibleParticipants: _,
     participantTileWidth: y
   }
 }
 
-function h(e) {
+function E(e) {
   let {
     participants: t,
     participantTileWidth: n,
-    selectedParticipantId: i,
-    onDoubleClick: l,
+    selectedParticipantId: l,
+    onDoubleClick: i,
     onContextMenu: a,
     onClick: o,
     channel: c,
@@ -128,7 +128,7 @@ function h(e) {
     className: f.root,
     children: t.map(e => {
       if (null == e) return null;
-      let t = g(e);
+      let t = m(e);
       return (0, r.jsx)("div", {
         className: f.tileSizer,
         style: t ? {
@@ -136,14 +136,14 @@ function h(e) {
         } : true,
         children: (0, r.jsx)(u.ZP, {
           participant: e,
-          selected: i === e.id,
+          selected: l === e.id,
           channel: c,
           className: f.tile,
           fit: u.BP.COVER,
           onClick: o,
-          onDoubleClick: l,
+          onDoubleClick: i,
           onContextMenu: a,
-          width: t ? b : n,
+          width: t ? g : n,
           inCall: s,
           paused: p,
           popoutType: d

@@ -30,8 +30,8 @@ function m(e) {
   if (null == w || null == Z) return null;
   let {
     status: I,
-    cost: E,
-    costDecorator: P
+    cost: P,
+    costDecorator: E
   } = w;
   return (0, r.jsxs)(c.aB, {
     label: Z.title,
@@ -50,8 +50,8 @@ function m(e) {
       textColor: C,
       footer: (0, r.jsx)(c.uf, {
         status: I,
-        cost: E,
-        costDecorator: P
+        cost: P,
+        costDecorator: E
       }),
       children: (0, r.jsx)(a.Text, {
         className: p.description,

@@ -37,55 +37,19 @@ function o() {
 }
 
 function s(e) {
-  let {
-    enableFastMonetizationOnboardingForGuild: t
-  } = r.z.useExperiment({
-    guildId: null != e ? e : i.lds,
-    location: "e3bb71_3"
-  }, {
-    autoTrackExposure: true
-  }), {
-    enableFastMonetizationOnboardingForUser: n
-  } = r.AC.useExperiment({
-    location: "e3bb71_4"
-  }, {
-    autoTrackExposure: false
-  });
-  return null != e && t && n
+  return null != e
 }
 
 function l(e) {
-  let {
-    enableFastMonetizationOnboardingForGuild: t
-  } = r.z.getCurrentConfig({
-    guildId: null != e ? e : i.lds,
-    location: "e3bb71_5"
-  }), {
-    enableFastMonetizationOnboardingForUser: n
-  } = r.AC.getCurrentConfig({
-    location: "e3bb71_6"
-  });
-  return null != e && t && n
+  return null != e
 }
 
 function c(e) {
-  let {
-    enableFastMonetizationOnboardingForUser: t
-  } = r.AC.useExperiment({
-    location: "e3bb71_7"
-  }, {
-    autoTrackExposure: false
-  });
-  return null != e && e.features.has(i.GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE) && t
+  return null != e && e.features.has(i.GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE)
 }
 
 function u(e) {
-  let {
-    enableFastMonetizationOnboardingForUser: t
-  } = r.AC.getCurrentConfig({
-    location: "e3bb71_8"
-  });
-  return null != e && e.features.has(i.GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE) && t
+  return null != e && e.features.has(i.GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE)
 }
 
 function d(e) {

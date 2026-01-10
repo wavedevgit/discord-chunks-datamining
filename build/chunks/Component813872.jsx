@@ -1,7 +1,7 @@
-/** Chunk was on 26976 **/
+/** Chunk was on 92524 **/
 /** chunk id: 813872, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,32 +23,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx");
 
-function P(e) {
+function S(e) {
   let {
     userId: t,
     guildId: n,
-    channelId: P,
-    location: p,
-    onAction: S,
-    appContext: y
-  } = e, C = i.useContext(O.AnalyticsContext), I = (0, d.Aq)(), M = (0, r.e7)([m.Z], () => null != P ? P : m.Z.getChannelId(n, true), [P, n]), x = (0, r.e7)([b.ZP], () => null == n ? null : b.ZP.getMember(n, t), [n, t]), N = (0, u.m)(n);
-  return null != n && null != x && N ? (0, l.jsx)(a.sNh, {
+    channelId: S,
+    location: P,
+    onAction: y,
+    appContext: j
+  } = e, I = i.useContext(v.AnalyticsContext), M = (0, d.Aq)(), C = (0, r.e7)([Z.Z], () => null != S ? S : Z.Z.getChannelId(n, true), [S, n]), _ = (0, r.e7)([b.ZP], () => null == n ? null : b.ZP.getMember(n, t), [n, t]), A = (0, s.m)(n);
+  return null != n && null != _ && A ? (0, l.jsx)(a.sNh, {
     id: "mod-view",
-    label: j.intl.string(j.t.kj3tz2),
+    label: h.intl.string(h.t.kj3tz2),
     action: () => {
-      null == S || S(), (0, c.i)(y), I.dispatch(h.CkL.POPOUT_CLOSE);
-      let e = f.Z.getChannel(M),
+      null == y || y(), (0, c.i)(j), M.dispatch(p.CkL.POPOUT_CLOSE);
+      let e = m.Z.getChannel(C),
         l = {
-          modViewPanel: v.k.INFO,
-          sourceLocation: null != p ? p : C.location
+          modViewPanel: O.k.INFO,
+          sourceLocation: null != P ? P : I.location
         };
       if ((null == e ? true : e.isThread()) && null != e.parent_id) {
-        Z.ZP.getCurrentSidebarChannelId(e.parent_id) === e.id && (o.Z.dispatch({
+        f.ZP.getCurrentSidebarChannelId(e.parent_id) === e.id && (o.Z.dispatch({
           type: "SIDEBAR_CLOSE",
           baseChannelId: e.parent_id
-        }), (0, g.Kh)(e.id)), (0, s.r)(n, t, e.parent_id, l);
+        }), (0, g.Kh)(e.id)), (0, u.r)(n, t, e.parent_id, l);
         return
-      }(0, s.r)(n, t, null != M ? M : E.oC.MEMBER_SAFETY, l)
+      }(0, u.r)(n, t, null != C ? C : E.oC.MEMBER_SAFETY, l)
     }
   }) : null
 }

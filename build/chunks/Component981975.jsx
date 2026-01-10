@@ -63,18 +63,18 @@ function _(e) {
     children: [(0, r.jsx)(d.Heading, {
       className: N.headerHeading,
       variant: "eyebrow",
-      children: y.intl.string(y.t.nMir27)
+      children: C.intl.string(C.t.nMir27)
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "text-default",
       className: N.headerNoConfigSubtitle,
-      children: y.intl.format(y.t.q5f7tK, {
+      children: C.intl.format(C.t.q5f7tK, {
         helpdeskArticleUrl: f.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.Button, {
       disabled: n,
       onClick: t,
-      text: y.intl.string(y.t["OSvW5+"]),
+      text: C.intl.string(C.t["OSvW5+"]),
       fullWidth: true,
       variant: "primary"
     })]
@@ -120,7 +120,7 @@ function T(e) {
       onComplete: e => G(e),
       excludedPlatformTypes: k,
       integrations: o,
-      onCompleteApplication: e => G(C.Kt, e)
+      onCompleteApplication: e => G(y.Kt, e)
     })
   }
   let U = null;
@@ -134,7 +134,7 @@ function T(e) {
     L.length < 10 && (e = (0, r.jsx)(d.Button, {
       disabled: l,
       onClick: M,
-      text: y.intl.string(y.t["OSvW5+"]),
+      text: C.intl.string(C.t["OSvW5+"]),
       icon: d.oFk,
       fullWidth: true,
       variant: "secondary"
@@ -146,30 +146,30 @@ function T(e) {
             className: N.headerTitleTextContainer,
             children: (0, r.jsx)(d.Heading, {
               variant: "eyebrow",
-              children: y.intl.string(y.t.nMir27)
+              children: C.intl.string(C.t.nMir27)
             })
           }), (0, r.jsx)(d.Avr, {
             variant: "critical",
             onClick: B,
             disabled: l,
-            text: y.intl.string(y.t.ntW1cc),
+            text: C.intl.string(C.t.ntW1cc),
             textVariant: "text-sm/semibold"
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: y.intl.format(y.t.q5f7tK, {
+          children: C.intl.format(C.t.q5f7tK, {
             helpdeskArticleUrl: f.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
         let a = S(i, g.O1.OR);
         return (0, r.jsx)(d.FXm, {
-          label: y.intl.string(y.t.Xs7PHX),
+          label: C.intl.string(C.t.Xs7PHX),
           options: [{
-            name: y.intl.string(y.t.W3iY58),
+            name: C.intl.string(C.t.W3iY58),
             value: g.O1.OR
           }, {
-            name: y.intl.string(y.t.gHXS9A),
+            name: C.intl.string(C.t.gHXS9A),
             value: g.O1.AND
           }],
           onChange: e => l(i, e),
@@ -270,7 +270,7 @@ function T(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: y.intl.string(y.t["2aFeef"])
+          children: C.intl.string(C.t["2aFeef"])
         })]
       }) : null, U]
     })

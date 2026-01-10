@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 480898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -20,12 +20,12 @@ function m(e) {
     height: m
   } = e, p = (0, d.Un)({
     location: "AccountProfilePopoutUpsell"
-  }), f = (0, c.ww)(t), h = (0, s.Z)({
+  }), h = (0, c.ww)(t), f = (0, s.Z)({
     location: "AccountProfilePopoutUpsell"
   }), x = r.useMemo(() => {
     let e = [];
-    return p && !f && e.push(i.z.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), h && e.push(i.z.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
-  }, [p, f, h]);
+    return p && !h && e.push(i.z.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), f && e.push(i.z.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
+  }, [p, h, f]);
   return (0, a.jsx)(l.ZP, {
     contentTypes: x,
     bypassAutoDismiss: true,

@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => Z
 }), require("./388685.js"), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -107,7 +107,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = x.default.getUser(i), f = o()(r);
+      } = e, d = x.default.getUser(i), h = o()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
@@ -159,23 +159,23 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             tooltip: "Close",
             onClick: s
           })]
-        }), (0, a.jsxs)(C.E, {
+        }), (0, a.jsxs)(y.E, {
           className: T.commonProperties,
-          children: [(0, a.jsx)(C.Z9, {
+          children: [(0, a.jsx)(y.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
             children: (0, a.jsxs)("time", {
               dateTime: r.toISOString(),
-              title: (0, g.vc)(f, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, g.Y4)(f)]
+              title: (0, g.vc)(h, "LLLL"),
+              children: ["(", o().locale(), ") ", (0, g.Y4)(h)]
             })
-          }), null != d && (0, a.jsx)(C.Z9, {
+          }), null != d && (0, a.jsx)(y.Z9, {
             name: "User",
             copyValue: d.id,
             children: (0, a.jsx)(m.Z, {
               user: d
             })
-          }), (0, a.jsx)(C.Z9, {
+          }), (0, a.jsx)(y.Z9, {
             name: "Fingerprint",
             copyValue: i,
             children: (0, a.jsx)("code", {
@@ -266,23 +266,23 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
     throttleMs: 100
   };
 
-function D() {
+function Z() {
   let e = r.useRef(null),
     [t, n] = r.useState(""),
     i = (0, c.e7)([v.Z], () => v.Z.loggedEventsVersion),
     [s, o] = r.useState(() => Object.keys(R)),
     [m, p] = r.useState(v.Z.loggedEvents),
-    f = r.useCallback(e => {
+    h = r.useCallback(e => {
       p(e)
     }, []);
-  (0, h.BO)(t, v.Z.loggedEvents, f, A, [i]);
+  (0, f.BO)(t, v.Z.loggedEvents, h, A, [i]);
   let x = m.filter(e => {
       for (let t of s)
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
     [b, g] = r.useState(true),
-    C = x.find(e => e.key === b),
+    y = x.find(e => e.key === b),
     {
       TabBar: P,
       renderSelectedTab: w
@@ -336,12 +336,12 @@ function D() {
       data: x,
       selectedRowKey: b,
       onClickRow: e => g(e.key)
-    }), null != C && (0, a.jsxs)(y.Z, {
+    }), null != y && (0, a.jsxs)(C.Z, {
       className: T.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
       children: [(0, a.jsx)(P, {}), w({
-        loggedEvent: C,
+        loggedEvent: y,
         onClose: () => g(true),
         filteredEvents: x
       })]

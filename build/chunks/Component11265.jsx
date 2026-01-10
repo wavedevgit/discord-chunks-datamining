@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -24,13 +24,13 @@ let g = Chunk473749.memo(function(e) {
     disableAnimation: p,
     disableBackground: h
   } = e, [x, j] = i.useState(true), [v, O] = i.useState(false), {
-    ref: C,
-    height: y = 0
+    ref: y,
+    height: C = 0
   } = (0, c.ZP)(), {
     ref: N,
     height: E = 0
   } = (0, c.ZP)(), [I, S] = i.useState(f), _ = (0, o.q_F)({
-    height: I ? E + y : y,
+    height: I ? E + C : C,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -85,7 +85,7 @@ let g = Chunk473749.memo(function(e) {
       }),
       style: _,
       children: [(0, r.jsx)(o.P3F, {
-        innerRef: C,
+        innerRef: y,
         onClick: m ? true : b,
         className: a()(u.innerHeader, {
           [u.toggled]: f && m

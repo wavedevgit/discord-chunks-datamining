@@ -2,7 +2,7 @@
 /** chunk id: 716130, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -70,13 +70,13 @@ function O(e) {
     onDragStart: () => {},
     onDragComplete: () => {},
     onDragReset: () => {}
-  }), C = i.useRef(null);
+  }), y = i.useRef(null);
   return i.useEffect(() => {
     O(false)
   }, [O]), i.useEffect(() => {
-    b(j(C))
-  }, [b, j, C]), (0, r.jsxs)("div", {
-    ref: C,
+    b(j(y))
+  }, [b, j, y]), (0, r.jsxs)("div", {
+    ref: y,
     className: a()(x.separatorSection, {
       [x.dropIndicatorBefore]: null != v && g < v,
       [x.dropIndicatorAfter]: null != v && g > v
@@ -111,14 +111,14 @@ function O(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     guildId: t,
     prejoinOnly: n,
     postjoinOnly: i,
     includeCount: l,
     singleColumn: a
-  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), y = C.filter(e => e.inOnboarding), N = C.filter(e => true !== e.inOnboarding), E = [...y.map(e => ({
+  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), y = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), C = y.filter(e => e.inOnboarding), N = y.filter(e => true !== e.inOnboarding), E = [...C.map(e => ({
     id: e.id,
     data: e
   })), {
@@ -160,7 +160,7 @@ function C(e) {
           className: x.subtitle,
           children: h.intl.string(h.t.QvCcYe)
         })]
-      }), y.map((e, t) => (0, r.jsx)(b.Z, {
+      }), C.map((e, t) => (0, r.jsx)(b.Z, {
         guild: d,
         prompt: e,
         disableAutofocus: n,
@@ -180,14 +180,14 @@ function C(e) {
       children: [N.map((e, t) => (0, r.jsx)(b.Z, {
         guild: d,
         prompt: e,
-        promptIndex: t + y.length,
-        dragIndex: t + y.length + 1,
+        promptIndex: t + C.length,
+        dragIndex: t + C.length + 1,
         onPromptDragStart: I,
         onPromptDragReset: S,
         onPromptDragComplete: _
-      }, e.id)), C.length < p.YW ? (0, r.jsxs)(o.P3F, {
+      }, e.id)), y.length < p.YW ? (0, r.jsxs)(o.P3F, {
         className: x.addPrompt,
-        onClick: () => (0, f.tS)(d, [...C, (0, p.yZ)(false)], false),
+        onClick: () => (0, f.tS)(d, [...y, (0, p.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",

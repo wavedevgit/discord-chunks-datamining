@@ -30,8 +30,8 @@ function v() {
     r = c.Z.getChannel(n);
   if (null == r) returnfalse;
   let v = r.getGuildId();
-  if (!(0, h.JL)(r, u.Z, p.Z, false)) returnfalse;
-  if (d.Z.getUseSystemScreensharePicker())(0, m.isMac)() && i().satisfies(null === a.Z || true === a.Z ? true : a.Z.os.release, O.jR) ? (0, _.T)() : (0, _.T)("window");
+  if (!(0, m.JL)(r, u.Z, p.Z, false)) returnfalse;
+  if (d.Z.getUseSystemScreensharePicker())(0, h.isMac)() && i().satisfies(null === a.Z || true === a.Z ? true : a.Z.os.release, O.jR) ? (0, _.T)() : (0, _.T)("window");
   else {
     let n = (0, E.Z)(o.ZP, g.Z);
     if (null == n || n.isLauncher && !e) returnfalse;

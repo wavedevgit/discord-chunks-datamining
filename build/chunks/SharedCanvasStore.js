@@ -1,4 +1,4 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 69813 **/
 /** chunk id: 673125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -33,19 +33,19 @@ function p(e) {
   }
   return e
 }
-let b = {},
+let g = {},
+  b = {},
   m = {},
-  g = {},
-  v = true,
-  h = null;
+  h = true,
+  E = null;
 
-function E(e) {
-  if (null == m[e]) {
+function v(e) {
+  if (null == b[e]) {
     let t = o.default.getUser(e);
     if (null == t) return;
     let n = t.getAvatarURL(null, d.Ks),
       r = new Image;
-    r.src = n, m[e] = r
+    r.src = n, b[e] = r
   }
 }
 class _ extends(r = Chunk442837.ZP.Store) {
@@ -53,19 +53,19 @@ class _ extends(r = Chunk442837.ZP.Store) {
     this.waitFor(o.default)
   }
   get visibleOverlayCanvas() {
-    return v
+    return h
   }
   getDrawables(e) {
-    return null != b[e] ? b[e] : []
+    return null != g[e] ? g[e] : []
   }
   getAvatarImage(e) {
-    return m[e]
+    return b[e]
   }
   getEmojiImage(e) {
-    return g[e]
+    return m[e]
   }
   getDrawMode() {
-    return h
+    return E
   }
 }
 f(_, "displayName", "SharedCanvasStore");
@@ -75,77 +75,77 @@ let y = new _(Chunk570140.Z, {
       lineId: t,
       newPoints: n,
       userId: r,
-      streamerId: i
-    } = e, l = b[i];
-    if (null == l) b[i] = [{
+      streamerId: l
+    } = e, i = g[l];
+    if (null == i) g[l] = [{
       type: s.W.LINE,
       id: t,
       userId: r,
       points: n
     }];
     else {
-      let e = l.find(e => e.id === t);
-      null == e ? l.push({
+      let e = i.find(e => e.id === t);
+      null == e ? i.push({
         type: s.W.LINE,
         id: t,
         userId: r,
         points: n
       }) : (0, u.P7)(e) && e.points.push(...n)
     }
-    E(r)
+    v(r)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
-    var t, n, r, i, l;
+    var t, n, r, l, i;
     let {
       emojiHose: o,
       streamerId: u,
       userId: f
-    } = e, m = (i = p({}, o), l = l = {
+    } = e, b = (l = p({}, o), i = i = {
       type: s.W.EMOJI_HOSE
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(l)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-    }), i);
-    if (null == b[u]) b[u] = [m];
+    })(Object(i)).forEach(function(e) {
+      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+    }), l);
+    if (null == g[u]) g[u] = [b];
     else {
-      let e = b[u].findIndex(e => e.id === o.id);
-      e >= 0 ? b[u][e] = p({}, b[u][e], m) : b[u].push(m)
+      let e = g[u].findIndex(e => e.id === o.id);
+      e >= 0 ? g[u][e] = p({}, g[u][e], b) : g[u].push(b)
     }
-    let v = null != (n = null != (t = o.emojiId) ? t : o.emojiName) ? n : "";
-    if (null == g[v]) {
+    let h = null != (n = null != (t = o.emojiId) ? t : o.emojiName) ? n : "";
+    if (null == m[h]) {
       let e = null != o.emojiName ? a.ZP.convertNameToSurrogate(o.emojiName) : null;
-      g[v] = new Image, g[v].src = (0, c.qc)({
+      m[h] = new Image, m[h].src = (0, c.qc)({
         id: o.emojiId,
         name: null != (r = null != e ? e : o.emojiName) ? r : "",
         animated: false
       }, d.qh)
     }
-    E(f)
+    v(f)
   },
   SHARED_CANVAS_CLEAR_DRAWABLES: function(e) {
     let {
       drawables: t,
       streamerId: n
     } = e;
-    if (null != b[n]) {
+    if (null != g[n]) {
       let e = new Set;
-      t.forEach(t => e.add(t.id)), b[n] = b[n].filter(t => !e.has(t.id))
+      t.forEach(t => e.add(t.id)), g[n] = g[n].filter(t => !e.has(t.id))
     }
   },
   SHARED_CANVAS_SET_DRAW_MODE: function(e) {
     let {
       drawMode: t
     } = e;
-    h = t
+    E = t
   },
   TOGGLE_OVERLAY_CANVAS: function(e) {
     let {} = e;
-    v = !v
+    h = !h
   }
 })

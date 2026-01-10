@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 433280, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,11 +18,11 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk217110 = require("./217110.js");
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     markAsDismissed: n,
-    targetElementRef: h
+    targetElementRef: m
   } = e, b = (0, l.e7)([u.Z, d.default], () => {
     let e = d.default.getCurrentUser(),
       n = u.Z.getGuild(t);
@@ -36,12 +36,12 @@ function h(e) {
       is_owner: b
     }
   }), (0, r.jsx)(a.J2, {
-    targetElementRef: h,
+    targetElementRef: m,
     title: g.intl.string(g.t.C0m4rQ),
     body: g.intl.string(g.t.zOHfEX),
     graphic: {
       type: "image",
-      src: m
+      src: h
     },
     actions: [{
       text: g.intl.string(g.t.OgQQbG),

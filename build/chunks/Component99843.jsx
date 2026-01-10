@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => y
@@ -17,11 +17,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk408215 = require("./408215.js");
-let m = e => {
+let b = e => {
     let {
       channel: t
     } = e;
-    return (0, f.m$)({
+    return (0, p.m$)({
       channelId: t.id
     }) ? (0, r.jsx)(l.u, {
       text: g.intl.string(g.t.QyZ4Td),
@@ -35,18 +35,18 @@ let m = e => {
   y = Chunk473749.memo(function(e) {
     let {
       channel: t
-    } = e, i = t.id, f = (0, c.ZP)(t);
+    } = e, i = t.id, p = (0, c.ZP)(t);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.u, {
         asContainer: true,
         text: g.intl.string(g.t["5Q9+/L"]),
         position: "bottom",
         children: (0, r.jsxs)(a.P3F, {
-          className: b.hoverableContainer,
+          className: m.hoverableContainer,
           onClick: () => {
             (0, d.B)(i, s.Z.HEADER_BAR)
           },
-          onContextMenu: e => (0, o.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("38357")]).then(n.bind(n, 354741)).then(e => {
+          onContextMenu: e => (0, o.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("20402")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
             } = e;
@@ -88,7 +88,7 @@ let m = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            h.default.track(p.rMx.GDM_EDIT_INTERACTED, {
+            f.default.track(h.rMx.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: s.Z.HEADER_BAR
@@ -96,7 +96,7 @@ let m = e => {
           },
           "aria-label": g.intl.string(g.t["5Q9+/L"]),
           children: [(0, r.jsx)(u.Z, {
-            className: b.gdmIcon,
+            className: m.gdmIcon,
             "aria-hidden": true,
             channel: t,
             size: a.EFr.SIZE_20,
@@ -104,14 +104,14 @@ let m = e => {
           }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            children: null != f ? f : ""
+            children: null != p ? p : ""
           }), (0, r.jsx)(a.vdY, {
-            className: b.editIcon,
+            className: m.editIcon,
             size: "xs",
             color: "currentColor"
           })]
         })
-      }), (0, r.jsx)(m, {
+      }), (0, r.jsx)(b, {
         channel: t
       })]
     })

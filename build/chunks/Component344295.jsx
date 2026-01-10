@@ -188,11 +188,15 @@ class z extends Chunk473749.PureComponent {
   }
   renderErrorInvite() {
     var e, t;
-    return (0, r.jsxs)(x.ZP, {
-      children: [(0, r.jsx)(R.Z, {
-        invite: this.props.invite,
-        error: null == (e = this.state.error) ? true : e.message
-      }), (null == (t = this.state.error) ? true : t.code) === k.evJ.INVALID_CANNOT_FRIEND_SELF ? this.renderButton(U.intl.string(U.t.fIv16B)) : this.renderButton(U.intl.string(U.t.ohMvm1), this.handleAccept)]
+    return (0, r.jsx)(x.ZP, {
+      children: (0, r.jsxs)(h.Kqy, {
+        direction: "vertical",
+        gap: 24,
+        children: [(0, r.jsx)(R.Z, {
+          invite: this.props.invite,
+          error: null == (e = this.state.error) ? true : e.message
+        }), (null == (t = this.state.error) ? true : t.code) === k.evJ.INVALID_CANNOT_FRIEND_SELF ? this.renderButton(U.intl.string(U.t.fIv16B)) : this.renderButton(U.intl.string(U.t.ohMvm1), this.handleAccept)]
+      })
     })
   }
   renderExpiredInvite() {
@@ -219,8 +223,11 @@ class z extends Chunk473749.PureComponent {
     return null != e.guild_scheduled_event ? (0, r.jsx)(_.r, {
       channel: e.channel,
       guildScheduledEvent: e.guild_scheduled_event
-    }) : (0, r.jsx)(R.Z, {
-      invite: e
+    }) : (0, r.jsx)("div", {
+      className: G.marginBottom24,
+      children: (0, r.jsx)(R.Z, {
+        invite: e
+      })
     })
   }
   renderAuthenicatedFooter() {

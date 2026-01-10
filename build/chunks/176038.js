@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _Y: () => O,
@@ -25,7 +25,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk469115 = require("./469115.js"),
   Chunk959517 = require("./959517.js");
-let y = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT],
+let C = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT],
   _ = [Chunk524437.Pi.COMPACT, Chunk524437.Pi.COZY, Chunk524437.Pi.DEFAULT];
 
 function S(e) {
@@ -50,14 +50,14 @@ async function E() {
         theme: t,
         backgroundGradientPresetId: null != r ? r : true,
         customUserThemeSettings: true
-      }, h.fy.INFREQUENT_USER_ACTION)
+      }, f.fy.INFREQUENT_USER_ACTION)
     } else {
-      let e = S(y);
+      let e = S(C);
       await l.ZI({
         theme: e,
         backgroundGradientPresetId: true,
         customUserThemeSettings: true
-      }, h.fy.INFREQUENT_USER_ACTION)
+      }, f.fy.INFREQUENT_USER_ACTION)
     }
   } catch (e) {}
 }
@@ -86,10 +86,10 @@ function O() {
   try {
     let e = S(v.yqN.FONT_SIZES);
     (0, s.oL)(e);
-    let t = S(C.fP);
+    let t = S(y.fP);
     (0, s.ZZ)(t);
     let n = S(_);
-    f.YC.updateSetting(n)
+    h.YC.updateSetting(n)
   } catch (e) {}
 }
 
@@ -97,29 +97,29 @@ function N() {
   a.useEffect(() => {
     var e, t, n, a, r;
     let g = b.default.getCurrentUser(),
-      v = f.L1.getSetting(),
+      v = h.L1.getSetting(),
       j = c.Z.purchases,
-      C = (0, d.Ad)(j),
-      y = (0, d.jT)(j),
+      y = (0, d.Ad)(j),
+      C = (0, d.jT)(j),
       _ = p.Z.theme,
       S = v.backgroundGradientPresetId,
       E = null == g || null == (e = g.avatarDecoration) ? true : e.skuId,
       T = null == g || null == (n = g.collectibles) || null == (t = n.nameplate) ? true : t.skuId,
-      O = null != E && null != (a = C.find(e => e.skuId === E)) ? a : null,
-      N = null != T && null != (r = y.find(e => e.skuId === T)) ? r : null,
+      O = null != E && null != (a = y.find(e => e.skuId === E)) ? a : null,
+      N = null != T && null != (r = C.find(e => e.skuId === T)) ? r : null,
       P = o.Z.fontSize,
       w = o.Z.messageGroupSpacing,
-      I = f.YC.getSetting();
+      I = h.YC.getSetting();
     return () => {
       try {
         l.ZI({
           theme: _,
           backgroundGradientPresetId: null != S ? S : true,
           customUserThemeSettings: true
-        }, h.fy.INFREQUENT_USER_ACTION), (0, u.PO)(O), (0, u.Wh)(N);
+        }, f.fy.INFREQUENT_USER_ACTION), (0, u.PO)(O), (0, u.Wh)(N);
         let e = x.Z.getAllPending(),
           t = (0, m.ED)(e);
-        (0, i.Mn)(t).finally(i.si), (0, s.oL)(P), (0, s.ZZ)(w), f.YC.updateSetting(I)
+        (0, i.Mn)(t).finally(i.si), (0, s.oL)(P), (0, s.ZZ)(w), h.YC.updateSetting(I)
       } catch (e) {}
     }
   }, [])

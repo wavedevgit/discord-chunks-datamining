@@ -2,14 +2,14 @@
 /** chunk id: 908430, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  f: () => o
+  f: () => i
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
   Chunk570140 = require("./570140.js"),
   Chunk615006 = require("./615006.js");
 
-function o() {
+function i() {
   let e = r.useRef(new Map),
     t = (0, l.e7)([s.Z], () => s.Z.getUserDiscounts());
   r.useEffect(() => {

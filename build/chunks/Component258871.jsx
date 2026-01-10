@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 258871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function h(e) {
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ let g = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => f.intl.string(f.t.K50GHd),
+    getName: () => p.intl.string(p.t.K50GHd),
     handler: (e, t) => (0, s.XU)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
@@ -62,12 +62,12 @@ let g = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => f.intl.string(f.t.emRpdS),
+    getName: () => p.intl.string(p.t.emRpdS),
     handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
       } = await n.e("79764").then(n.bind(n, 533202));
-      return n => (0, r.jsx)(i, p(h({}, n), {
+      return n => (0, r.jsx)(i, h(f({}, n), {
         directoryGuildName: e.name,
         directoryGuildId: e.id,
         directoryChannelId: t.id
@@ -78,19 +78,19 @@ let g = [{
     renderIcon: e => (0, r.jsx)(l.ejJ, {
       className: e
     }),
-    getName: () => f.intl.string(f.t.MJQOuJ),
+    getName: () => p.intl.string(p.t.MJQOuJ),
     handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
       } = await Promise.all([n.e("7654"), n.e("45965")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(i, p(h({}, n), {
+      return n => (0, r.jsx)(i, h(f({}, n), {
         guild: e,
         channel: t,
         source: d.t4x.HUB_SIDEBAR
       }))
     })
   }],
-  b = e => {
+  m = e => {
     let {
       guild: t,
       channel: n
@@ -102,15 +102,15 @@ let g = [{
           getName: c,
           handler: u,
           renderIcon: d
-        } = e, f = "".concat(i, "-").concat(t.id);
+        } = e, p = "".concat(i, "-").concat(t.id);
         return (0, r.jsx)(a.m, {
-          id: f,
+          id: p,
           renderIcon: d,
           text: c(),
           selected: l && "JOIN_SERVERS" === i,
           onClick: null != n ? () => u(t, n) : true,
           trailing: "JOIN_SERVERS" === i && s > 0 ? (0, o.N)(s) : null
-        }, f)
+        }, p)
       })
     })
   }

@@ -2,86 +2,108 @@
 /** chunk id: 550656, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => g
+  N: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
+  Chunk762328 = require("./762328.jsx"),
   Chunk793030 = require("./793030.js"),
+  Chunk682973 = require("./682973.js"),
   Chunk481060 = require("./481060.js"),
   Chunk337363 = require("./337363.jsx"),
   Chunk725027 = require("./725027.jsx"),
   Chunk464281 = require("./464281.js"),
   Chunk847310 = require("./847310.js");
-let _ = 11,
-  m = ["left", "center", "right"],
-  h = ["top", "center", "bottom"];
+let h = 11,
+  g = ["left", "center", "right"],
+  E = ["top", "center", "bottom"];
 
-function g(e) {
+function b(e) {
   let {
     isVisible: t,
     isRendered: n = t,
     targetElementRef: a,
-    anchorRef: g,
-    id: E,
-    content: b,
-    position: y = "top",
-    align: O = "center",
-    spacing: v = _,
-    caretConfig: S,
-    layerContext: I,
-    animationStyle: T,
-    positionKey: C
-  } = e, A = i.useRef(null), {
-    isRichTooltip: N
-  } = (0, d.nr)(), P = i.useMemo(() => ("left" === y || "right" === y ? h : m).includes(O) ? O : "center", [y, O]);
+    targetElement: b,
+    anchorRef: y,
+    id: O,
+    content: v,
+    position: S = "top",
+    align: I = "center",
+    spacing: T = h,
+    caretConfig: C,
+    layerContext: A,
+    animationStyle: N,
+    positionKey: P
+  } = e, {
+    isRichTooltip: R
+  } = (0, p.nr)(), w = (0, u.E)("Tooltip"), D = i.useMemo(() => ("left" === S || "right" === S ? E : g).includes(I) ? I : "center", [S, I]);
   if (!n) return null;
-  let R = (0, r.jsx)(c.jRF, {
-    targetRef: null != g ? g : a,
-    position: y,
-    align: P,
-    spacing: v,
-    positionKey: C,
+  let x = e => {
+    var t, n, i, a;
+    let {
+      position: l,
+      nudge: c
+    } = e, u = null != l ? l : S, p = null != (t = null == C ? true : C.align) ? t : null != c && 0 !== c ? "custom" : "center", h = null != (i = null != (n = null == C ? true : C.customOffset) ? n : c) ? i : 0, g = {
+      position: null != (a = null == C ? true : C.position) ? a : (0, _.Av)(u),
+      align: p,
+      customOffset: "custom" === p ? h : true
+    }, E = (0, r.jsxs)("div", {
+      id: O,
+      className: o()(m.tooltip, {
+        [m.richTooltip]: R
+      }),
+      role: "tooltip",
+      "data-position": u,
+      "data-mana-component": "tooltip",
+      children: [(0, r.jsx)(f._, {
+        caretConfig: g
+      }), (0, r.jsx)("div", {
+        className: m.tooltipContent,
+        children: "string" == typeof v ? (0, r.jsx)(d.Text, {
+          variant: "text-sm/medium",
+          children: v
+        }) : v
+      })]
+    });
+    return N ? (0, r.jsx)(s.animated.div, {
+      style: N,
+      children: E
+    }) : E
+  };
+  if (w) {
+    let e = (0, l.a_)(S, I);
+    return (0, r.jsx)(l.pS, {
+      open: n,
+      spacing: T,
+      placement: e,
+      reference: b,
+      renderLayer: e => {
+        let {
+          placement: t
+        } = e;
+        return x({
+          position: (0, l.C)(t),
+          nudge: 0
+        })
+      },
+      children: () => null
+    })
+  }
+  let L = (0, r.jsx)(d.jRF, {
+    targetRef: null != y ? y : a,
+    position: S,
+    align: D,
+    spacing: T,
+    positionKey: P,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
-    children: e => {
-      var t, n, i, a;
-      let {
-        position: l,
-        nudge: d
-      } = e, _ = null != l ? l : y, m = null != (t = null == S ? true : S.align) ? t : null != d && 0 !== d ? "custom" : "center", h = null != (i = null != (n = null == S ? true : S.customOffset) ? n : d) ? i : 0, g = {
-        position: null != (a = null == S ? true : S.position) ? a : (0, f.Av)(_),
-        align: m,
-        customOffset: "custom" === m ? h : true
-      }, O = (0, r.jsxs)("div", {
-        ref: A,
-        id: E,
-        className: o()(p.tooltip, {
-          [p.richTooltip]: N
-        }),
-        role: "tooltip",
-        "data-position": _,
-        "data-mana-component": "tooltip",
-        children: [(0, r.jsx)(u._, {
-          caretConfig: g
-        }), (0, r.jsx)("div", {
-          className: p.tooltipContent,
-          children: "string" == typeof b ? (0, r.jsx)(c.Text, {
-            variant: "text-sm/medium",
-            children: b
-          }) : b
-        })]
-      });
-      return T ? (0, r.jsx)(s.animated.div, {
-        style: T,
-        children: O
-      }) : O
-    }
+    children: x
   });
-  return null != I ? (0, r.jsx)(l.mh4, {
-    layerContext: I,
-    children: R
-  }) : R
+  return null != A ? (0, r.jsx)(c.mh4, {
+    layerContext: A,
+    children: L
+  }) : L
 }

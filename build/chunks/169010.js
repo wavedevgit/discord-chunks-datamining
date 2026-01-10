@@ -2,7 +2,7 @@
 /** chunk id: 169010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _P: () => c
-}), require("./388685.js"), require("./539854.js");
+}), require("./388685.js"), require("./539854.js"), require("./290780.js");
 var Chunk473749 = require("./473749.js"),
   Chunk494497 = require("./494497.js"),
   Chunk442837 = require("./442837.js"),
@@ -23,15 +23,12 @@ function c(e, t) {
     let o = null == n ? true : n.powerupCatalog[r];
     if (null == o) return e;
     let l = function(e, t, n) {
-      let r = [];
-      n && e === a.Us.PERK && r.push({
-        type: "gameServer"
-      });
-      let o = t.reduce((e, t) => {
-        if (t.type !== a.Us.PERK) return e;
-        let n = s[t.skuId];
-        return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
-      }, {});
+      let r = [],
+        o = t.reduce((e, t) => {
+          if (t.type !== a.Us.PERK) return e;
+          let n = s[t.skuId];
+          return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
+        }, {});
       for (let e of t) {
         if (e.type === a.Us.LEVEL) {
           r.push({
@@ -55,17 +52,20 @@ function c(e, t) {
           powerup: e
         })
       }
-      return function(e) {
-        let t = e.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === i.IN),
-          n = e.findIndex(e => "multiPerk" === e.type && "guildTagsBadgePacks" === e.group);
-        if (false !== t && false !== n && n !== t + 1) {
-          let t = [...e],
-            [r] = t.splice(n, 1),
-            o = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === i.IN);
-          return t.splice(o + 1, 0, r), t
-        }
-        return e
-      }(r)
+      return n && e === a.Us.PERK && r.unshift({
+          type: "gameServer"
+        }),
+        function(e) {
+          let t = e.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === i.IN),
+            n = e.findIndex(e => "multiPerk" === e.type && "guildTagsBadgePacks" === e.group);
+          if (false !== t && false !== n && n !== t + 1) {
+            let t = [...e],
+              [r] = t.splice(n, 1),
+              o = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === i.IN);
+            return t.splice(o + 1, 0, r), t
+          }
+          return e
+        }(r)
     }(r, o, t);
     return e.push({
       type: r,

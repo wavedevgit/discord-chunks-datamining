@@ -1,10 +1,10 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 521506, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => i
+  t: () => r
 });
-let i = (0, require("./427164.js").le)({
-  name: "2025-09-haven",
+let r = (0, require("./427164.js").le)({
+  name: "2026-01-haven-client",
   kind: "user",
   defaultConfig: {
     enabled: false

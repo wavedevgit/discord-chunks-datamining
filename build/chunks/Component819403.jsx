@@ -1,7 +1,7 @@
-/** Chunk was on 70675 **/
-/** chunk id: 819403, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 69220 **/
+/** chunk id: 819403, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,34 +20,34 @@ var Chunk442837 = require("./442837.js"),
   Chunk430104 = require("./430104.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
-  var n;
-  let t = (0, b.Z)(),
-    h = null == t ? true : t.id,
-    p = null == t ? true : t.guild_id,
-    P = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]),
-    j = (0, i.e7)([d.Z], () => null != h ? d.Z.getVoiceStateForChannel(h, e.id) : null, [h, e.id]),
-    v = (null == (n = s.default.getCurrentUser()) ? true : n.id) === e.id,
-    N = (0, f.Z)(),
-    y = (0, i.e7)([Z.ZP], () => Z.ZP.getPermissionsForUser(e.id, h), [h, e.id]),
-    x = (0, g.B)(h),
-    E = (0, O.sP)();
-  if (null == t || null == P || null == j || y.speaker) return null;
-  let _ = () => {
-    if (v) {
-      if ((0, O.u1)(t.id)) return void a.Z.showAgeVerificationGetStartedModal({
-        entryPoint: o.cU.STAGE_CHANNEL_RAISE_HAND
+function m(e) {
+  var t;
+  let n = (0, b.Z)(),
+    m = null == n ? true : n.id,
+    O = null == n ? true : n.guild_id,
+    h = (0, l.e7)([d.Z], () => d.Z.getGuild(O), [O]),
+    j = (0, l.e7)([s.Z], () => null != m ? s.Z.getVoiceStateForChannel(m, e.id) : null, [m, e.id]),
+    y = (null == (t = u.default.getCurrentUser()) ? true : t.id) === e.id,
+    P = (0, Z.Z)(),
+    x = (0, l.e7)([g.ZP], () => g.ZP.getPermissionsForUser(e.id, m), [m, e.id]),
+    S = (0, f.B)(m),
+    E = (0, p.sP)();
+  if (null == n || null == h || null == j || x.speaker) return null;
+  let I = () => {
+    if (y) {
+      if ((0, p.u1)(n.id)) return void o.Z.showAgeVerificationGetStartedModal({
+        entryPoint: a.cU.STAGE_CHANNEL_RAISE_HAND
       });
-      (0, c.RK)(t, false)
-    } else(0, c._0)(t, e.id)
+      (0, c.RK)(n, false)
+    } else(0, c._0)(n, e.id)
   };
-  return v && E ? null : x ? (0, l.jsx)(r.sNh, {
+  return y && E ? null : S ? (0, i.jsx)(r.sNh, {
     id: "invite-speaker",
-    label: v ? m.intl.string(m.t["W6c/Vf"]) : m.intl.string(m.t.VUCWcO),
-    action: _
-  }) : N && v ? (0, l.jsx)(r.sNh, {
+    label: y ? v.intl.string(v.t["W6c/Vf"]) : v.intl.string(v.t.VUCWcO),
+    action: I
+  }) : P && y ? (0, i.jsx)(r.sNh, {
     id: "invite-speaker",
-    label: m.intl.string(m.t["W6c/Vf"]),
-    action: _
+    label: v.intl.string(v.t["W6c/Vf"]),
+    action: I
   }) : null
 }

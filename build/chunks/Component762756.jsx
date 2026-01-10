@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 762756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -46,15 +46,15 @@ class g extends(a = Chunk473749.PureComponent) {
   render() {
     return (0, r.jsxs)(c.Kqy, {
       gap: 16,
-      className: h.verification,
+      className: f.verification,
       align: "center",
       direction: "vertical",
       justify: "center",
       children: [(0, r.jsxs)(c.Kqy, {
         gap: 16,
         fullWidth: false,
-        className: s()(h.container, {
-          [h.isMobile]: o.tq
+        className: s()(f.container, {
+          [f.isMobile]: o.tq
         }),
         align: "center",
         direction: "vertical",
@@ -65,19 +65,19 @@ class g extends(a = Chunk473749.PureComponent) {
           justify: "center",
           gap: 16,
           children: [(0, r.jsx)("div", {
-            className: h.image
+            className: f.image
           }), (0, r.jsxs)(c.Kqy, {
-            className: h.textContainer,
+            className: f.textContainer,
             gap: 4,
             align: "center",
             direction: "vertical",
             justify: "center",
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-xl/normal",
-              children: f.intl.string(f.t.Iz0kDg)
+              children: h.intl.string(h.t.Iz0kDg)
             }), (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
-              children: f.intl.format(f.t["0rqMV5"], {
+              children: h.intl.format(h.t["0rqMV5"], {
                 helpCenterURL: b
               })
             })]
@@ -96,8 +96,8 @@ class g extends(a = Chunk473749.PureComponent) {
         justify: "center",
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          className: h.footer,
-          children: f.intl.string(f.t.qqYun3)
+          className: f.footer,
+          children: h.intl.string(h.t.qqYun3)
         }), (0, r.jsxs)(c.Kqy, {
           gap: 8,
           align: "center",
@@ -105,17 +105,17 @@ class g extends(a = Chunk473749.PureComponent) {
           justify: "center",
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            className: h.footer,
-            children: f.intl.format(f.t.WL51ZR, {
+            className: f.footer,
+            children: h.intl.format(h.t.WL51ZR, {
               supportURL: u.Z.getSubmitRequestURL()
             })
           }), (0, r.jsx)("div", {
-            className: s()(h.footer, h.footerBullet),
+            className: s()(f.footer, f.footerBullet),
             children: "•"
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            className: h.footer,
-            children: f.intl.format(f.t.Hv7ztc, {
+            className: f.footer,
+            children: h.intl.format(h.t.Hv7ztc, {
               logoutOnClick: this.props.onLogout
             })
           })]

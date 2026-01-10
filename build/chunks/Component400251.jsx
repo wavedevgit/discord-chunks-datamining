@@ -1,8 +1,8 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N,
-  m: () => P
+  Z: () => T,
+  m: () => Z
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk183594 = require("./183594.js"),
   Chunk883760 = require("./883760.js");
 
-function E(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function E(e) {
   return e
 }
 
-function Z(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,60 +60,60 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = Chunk473749.memo(function(e) {
+let Z = Chunk473749.memo(function(e) {
   let {
     onClick: t
   } = e;
   return (0, r.jsxs)(c.P3F, {
     onClick: t,
-    className: _.addEntryCard,
+    className: S.addEntryCard,
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: S
+      src: _
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      className: _.addServerText,
-      children: I.intl.string(I.t.H9jxS1)
+      className: S.addServerText,
+      children: E.intl.string(E.t.H9jxS1)
     })]
   })
 });
 
-function T(e) {
+function N(e) {
   let {
     entry: t
-  } = e, [l, s] = i.useState(false), d = i.useRef(null), {
-    canEdit: u
+  } = e, [l, o] = i.useState(false), u = i.useRef(null), {
+    canEdit: d
   } = (0, j.Z)(t);
   return (0, r.jsx)("div", {
-    className: a()(_.actionButtonsContainer, {
-      [_.forceButtonsShow]: l
+    className: a()(S.actionButtonsContainer, {
+      [S.forceButtonsShow]: l
     }),
-    children: (0, r.jsxs)(h.ZP, {
-      children: [u ? (0, r.jsx)(o.u, {
-        text: I.intl.string(I.t.XnuOvN),
-        children: (0, r.jsx)(h.zx, {
+    children: (0, r.jsxs)(f.ZP, {
+      children: [d ? (0, r.jsx)(s.u, {
+        text: E.intl.string(E.t.XnuOvN),
+        children: (0, r.jsx)(f.zx, {
           onClick: () => {
             (0, c.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("34191").then(n.bind(n, 303647));
-              return n => (0, r.jsx)(e, Z(E({}, n), {
+              return n => (0, r.jsx)(e, P(I({}, n), {
                 entry: t
               }))
             })
           },
-          "aria-label": I.intl.string(I.t.XnuOvN),
+          "aria-label": E.intl.string(E.t.XnuOvN),
           children: (0, r.jsx)(c.vdY, {
             size: "xs",
             color: "currentColor",
-            className: _.overflowIcon
+            className: S.overflowIcon
           })
         })
-      }) : null, (0, r.jsx)(v.Z, {
-        targetElementRef: d,
-        onRequestOpen: () => s(true),
-        onRequestClose: () => s(false),
+      }) : null, (0, r.jsx)(x.Z, {
+        targetElementRef: u,
+        onRequestOpen: () => o(true),
+        onRequestClose: () => o(false),
         entry: t,
         hideEditButton: true,
         children: e => {
@@ -134,18 +134,18 @@ function T(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(o.u, {
-            text: I.intl.string(I.t["UKOtz+"]),
-            children: (0, r.jsx)(h.zx, Z(E({}, n), {
+          return (0, r.jsx)(s.u, {
+            text: E.intl.string(E.t["UKOtz+"]),
+            children: (0, r.jsx)(f.zx, P(I({}, n), {
               onClick: e => {
                 t(e)
               },
-              ref: d,
-              "aria-label": I.intl.string(I.t["UKOtz+"]),
+              ref: u,
+              "aria-label": E.intl.string(E.t["UKOtz+"]),
               children: (0, r.jsx)(c.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: _.overflowIcon
+                className: S.overflowIcon
               })
             }))
           })
@@ -154,121 +154,121 @@ function T(e) {
     })
   })
 }
-let N = Chunk473749.memo(function(e) {
+let T = Chunk473749.memo(function(e) {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), j = async () => {
-    o(true);
+  } = e, [a, s] = i.useState(false), f = null != (0, o.e7)([y.Z], () => y.Z.getGuild(l.guildId)), j = async () => {
+    s(true);
     try {
-      h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
+      f ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
         source: C.vtS.DIRECTORY_ENTRY
       })
     } finally {
-      o(false)
+      s(false)
     }
-  }, v = O.ZP.getGuildSplashURL({
+  }, x = v.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
-  }), S = null != (t = O.ZP.getGuildIconURL({
+  }), _ = null != (t = v.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, P = I.intl.string(I.t.VJlc0S);
-  return h && (P = I.intl.string(I.t.cqWE2Z)), (0, r.jsxs)("div", {
-    className: _.card,
+  })) ? t : true, Z = E.intl.string(E.t.VJlc0S);
+  return f && (Z = E.intl.string(E.t.cqWE2Z)), (0, r.jsxs)("div", {
+    className: S.card,
     onContextMenu: e => {
-      (0, d.jW)(e, async () => {
+      (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, Z(E({}, t), {
+        return t => (0, r.jsx)(e, P(I({}, t), {
           entry: l
         }))
       })
     },
     children: [(0, r.jsxs)("div", {
-      className: _.cardHeader,
+      className: S.cardHeader,
       children: [(0, r.jsx)("div", {
-        className: _.splash,
-        children: null != v && (0, r.jsx)("img", {
-          src: v,
+        className: S.splash,
+        children: null != x && (0, r.jsx)("img", {
+          src: x,
           alt: "",
-          className: _.splashImage
+          className: S.splashImage
         })
       }), (0, r.jsx)("div", {
-        className: _.guildIcon,
+        className: S.guildIcon,
         children: (0, r.jsx)(p.ZP, {
           mask: p.ZP.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
-            className: _.iconMask,
-            children: (0, r.jsx)(f.Z, {
-              className: _.icon,
-              iconSrc: S,
-              guild: (0, x.e)(l),
-              size: f.Z.Sizes.MEDIUM,
+            className: S.iconMask,
+            children: (0, r.jsx)(h.Z, {
+              className: S.icon,
+              iconSrc: _,
+              guild: (0, O.e)(l),
+              size: h.Z.Sizes.MEDIUM,
               active: true
             })
           })
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: _.guildInfo,
+      className: S.guildInfo,
       children: [(0, r.jsxs)("div", {
-        className: _.title,
+        className: S.title,
         children: [(0, r.jsx)(g.Z, {
-          className: _.guildBadge,
+          className: S.guildBadge,
           guild: l
         }), (0, r.jsx)(c.Text, {
-          className: _.guildName,
+          className: S.guildName,
           variant: "heading-md/semibold",
           color: "text-strong",
           children: l.name
         })]
       }), (0, r.jsx)(c.Text, {
-        className: _.description,
+        className: S.description,
         variant: "text-sm/normal",
         color: "text-default",
         children: l.description
       }), (0, r.jsxs)("div", {
-        className: _.memberInfo,
+        className: S.memberInfo,
         children: [null != l.approximatePresenceCount && (0, r.jsxs)("div", {
-          className: _.memberCount,
+          className: S.memberCount,
           children: [(0, r.jsx)("div", {
-            className: _.dotOnline
+            className: S.dotOnline
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            children: I.intl.format(I.t["LC+S+m"], {
+            children: E.intl.format(E.t["LC+S+m"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
         }), null != l.approximateMemberCount && (0, r.jsxs)("div", {
-          className: _.memberCount,
+          className: S.memberCount,
           children: [(0, r.jsx)("div", {
-            className: _.dotOffline
+            className: S.dotOffline
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            children: I.intl.format(I.t.zRl6XR, {
+            children: E.intl.format(E.t.zRl6XR, {
               count: l.approximateMemberCount
             })
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: _.joinButton,
+        className: S.joinButton,
         children: (0, r.jsx)(c.Button, {
           loading: a,
-          variant: h ? "secondary" : "active",
+          variant: f ? "secondary" : "active",
           onClick: j,
-          text: P,
+          text: Z,
           fullWidth: true
         })
       })]
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(N, {
       entry: l
     })]
   })

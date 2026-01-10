@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk236413 = require("./236413.js"),
@@ -56,30 +56,30 @@ function p(e) {
     editingRule: v,
     createNewEditingRule: O
   } = (0, d.V)(), {
-    getDefaultRuleName: C
-  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [N, E] = i.useState(y ? v : h), I = (0, s.q_F)({
-    opacity: +!y,
-    pointerEvents: y ? "none" : "all",
+    getDefaultRuleName: y
+  } = c.I6[n], C = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [N, E] = i.useState(C ? v : h), I = (0, s.q_F)({
+    opacity: +!C,
+    pointerEvents: C ? "none" : "all",
     config: b(m({}, l.config.stiff), {
       clamp: true
     })
   }), S = (0, s.q_F)({
-    opacity: +!!y,
-    pointerEvents: y ? "all" : "none",
+    opacity: +!!C,
+    pointerEvents: C ? "all" : "none",
     config: b(m({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {
-      E(y ? v : h)
+      E(C ? v : h)
     },
     onRest: () => {
-      E(y ? v : h), j(y)
+      E(C ? v : h), j(C)
     }
   });
-  return null == v || y ? (0, r.jsxs)("div", {
+  return null == v || C ? (0, r.jsxs)("div", {
     className: f.mainRuleContainer,
     style: {
-      height: y ? "auto" : "60px"
+      height: C ? "auto" : "60px"
     },
     children: [(0, r.jsx)(l.animated.div, {
       className: f.animatedRuleCardContainer,
@@ -106,7 +106,7 @@ function p(e) {
           variant: "text-md/semibold",
           color: "text-link",
           children: g.intl.format(g.t.dNjRAf, {
-            ruleName: C()
+            ruleName: y()
           })
         })]
       })

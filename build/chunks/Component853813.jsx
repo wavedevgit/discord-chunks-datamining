@@ -105,7 +105,7 @@ function S(e) {
       });
       break;
     case N.ZI.PERMISSIONS:
-      t = (0, r.jsx)(C.ZP, {
+      t = (0, r.jsx)(y.ZP, {
         guild: T,
         role: P,
         locked: R,
@@ -135,7 +135,7 @@ function S(e) {
   }
   return (0, r.jsxs)("div", {
     className: I.page,
-    children: [(0, r.jsx)(y.Z, {
+    children: [(0, r.jsx)(C.Z, {
       guild: T,
       currentRoleId: n,
       setCurrentRoleId: l,

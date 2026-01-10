@@ -118,7 +118,7 @@ function G() {
     eu = (0, P.Z)({
       location: "DefaultCustomizationSections"
     }),
-    ed = (null == V || null == (n = V.widgets) ? true : n.some(e => C.Ki.includes(e.type))) === true,
+    ed = (null == V || null == (n = V.widgets) ? true : n.some(C.Wc)) === true,
     ef = eu || ed,
     ep = () => en ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(E.Z, {

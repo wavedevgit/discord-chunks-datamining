@@ -1,4 +1,4 @@
-/** Chunk was on 43342 **/
+/** Chunk was on 13478 **/
 /** chunk id: 365831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => P
@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk378441 = require("./378441.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk62530 = require("./62530.js");
-let O = e => 1 - Math.pow(1 - e, 4),
+let j = e => 1 - Math.pow(1 - e, 4),
   h = {
     mass: 1,
     friction: 64,
@@ -71,7 +71,7 @@ function P(e) {
       pointerEvents: k ? "auto" : "none",
       backgroundColor: null != (t = null == P ? true : P.baseColor) ? t : T,
       config: e => "backgroundColor" === e ? {
-        easing: O,
+        easing: j,
         duration: 200
       } : h,
       delay: 100 * !!M
@@ -91,7 +91,7 @@ function P(e) {
         delay: M ? 100 : 150
       },
       config: {
-        easing: O,
+        easing: j,
         duration: M ? 250 : 200
       }
     }, "respect-motion-settings"),
@@ -111,7 +111,7 @@ function P(e) {
         opacity: 1
       },
       config: e => "opacity" === e ? {
-        easing: O,
+        easing: j,
         duration: 200
       } : x,
       delay: A ? 50 - 50 * e : 200 + 50 * e
@@ -136,7 +136,7 @@ function P(e) {
         delay: 150 * !M
       },
       config: e => "opacity" === e ? {
-        easing: O,
+        easing: j,
         duration: 200
       } : k ? h : _
     }, "respect-motion-settings"),
@@ -154,7 +154,7 @@ function P(e) {
         translateY: 0,
         delay: 150,
         config: e => "opacity" === e ? {
-          easing: O,
+          easing: j,
           duration: 200
         } : M ? h : x
       },
@@ -164,38 +164,38 @@ function P(e) {
         translateY: 16 * (null == n),
         delay: A ? 100 : 50,
         config: e => "opacity" === e ? {
-          easing: O,
+          easing: j,
           duration: 200
         } : M ? h : x
       }
     }, "respect-motion-settings"),
     Y = y.intl.string(E ? y.t.esVyo6 : y.t.UQqFCF);
   return (0, r.jsxs)(a.animated.div, {
-    className: j.voiceFilterHero,
+    className: O.voiceFilterHero,
     "aria-hidden": D,
     style: R,
     children: [(0, r.jsx)("div", {
-      className: l()([j.bgGradient, j.bgGradientHighlight])
+      className: l()([O.bgGradient, O.bgGradientHighlight])
     }), V(e => (0, r.jsx)(a.animated.div, {
-      className: j.bgGradient,
+      className: O.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
-      className: j.iconWrapper,
+      className: O.iconWrapper,
       children: F((e, t) => (0, r.jsx)(a.animated.img, {
-        className: j.activeVoiceIcon,
+        className: O.activeVoiceIcon,
         style: e,
         alt: "",
         src: t
       }, t))
     }), (0, r.jsx)("div", {
-      className: j.descriptionWrapper,
+      className: O.descriptionWrapper,
       children: U((e, t) => (0, r.jsxs)(a.animated.div, {
-        className: j.description,
+        className: O.description,
         style: e,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          className: j.offWhiteText,
+          className: O.offWhiteText,
           children: y.intl.string(y.t.WW5DAC)
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/medium",
@@ -204,13 +204,13 @@ function P(e) {
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: j.buttonWrapper,
+      className: O.buttonWrapper,
       children: [(0, r.jsx)(c.u, {
         __unsupportedReactNodeAsText: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(u.Heading, {
             variant: "heading-sm/normal",
             color: "text-strong",
-            className: j.tooltipHeader,
+            className: O.tooltipHeader,
             children: Y
           }), (0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
@@ -221,11 +221,11 @@ function P(e) {
         shouldShow: k,
         ariaHidden: true,
         children: (0, r.jsx)(a.animated.div, {
-          className: j.buttonWrapper,
+          className: O.buttonWrapper,
           style: L[0],
           children: (0, r.jsx)(u.P3F, {
-            className: l()(j.button, {
-              [j.loopbackEnabled]: E
+            className: l()(O.button, {
+              [O.loopbackEnabled]: E
             }),
             "aria-label": Y,
             "aria-hidden": D,
@@ -246,10 +246,10 @@ function P(e) {
         shouldShow: k,
         text: y.intl.string(y.t.UvMx7F),
         children: (0, r.jsx)(a.animated.div, {
-          className: j.buttonWrapper,
+          className: O.buttonWrapper,
           style: L[1],
           children: (0, r.jsx)(u.P3F, {
-            className: j.button,
+            className: O.button,
             "aria-hidden": D,
             focusProps: {
               enabled: k

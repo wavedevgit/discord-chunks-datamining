@@ -1,7 +1,7 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 30344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -42,44 +42,44 @@ function p(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["games"]);
   let {
     registerItemRef: i,
-    manageFocusOnDelete: a
-  } = (0, l.C)();
+    manageFocusOnDelete: l
+  } = (0, a.C)();
   return (0, r.jsx)(o.Z, {
     games: t,
     renderGame: (e, t) => (0, r.jsx)(d.S, g({
       index: t,
       game: e,
       coverRef: i(e.applicationId),
-      onRemoveGame: a
+      onRemoveGame: l
     }, n))
   })
 }
 
-function b(e) {
+function m(e) {
   var t, n;
   let {
     userId: o,
     widgetType: d,
-    disableInteraction: b,
-    games: m
-  } = e, h = (0, i.e7)([a.default], () => a.default.getId() === o), {
-    getManageButtonForWidget: y
-  } = (0, f.j)(), v = y(d), {
+    disableInteraction: m,
+    games: b
+  } = e, y = (0, i.e7)([l.default], () => l.default.getId() === o), {
+    getManageButtonForWidget: j
+  } = (0, f.j)(), h = j(d), {
     expanded: O,
-    setExpanded: j
-  } = (0, s.g)(), x = O ? m : m.slice(0, 8), P = m.length > 8, I = (0, r.jsxs)(r.Fragment, {
+    setExpanded: v
+  } = (0, s.g)(), x = O ? b : b.slice(0, 8), P = b.length > 8, I = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p, (t = g({}, e), n = n = {
       games: x
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -93,15 +93,15 @@ function b(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), P && (0, r.jsx)(u.Z, {
       expanded: O,
-      onClick: () => j(e => !e)
+      onClick: () => v(e => !e)
     })]
   });
-  return h && !b ? (0, r.jsxs)(r.Fragment, {
+  return y && !m ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       widgetType: d,
-      gameCount: m.length
-    }), (0, r.jsx)(l.d, {
-      emptyListFallbackRef: v,
+      gameCount: b.length
+    }), (0, r.jsx)(a.d, {
+      emptyListFallbackRef: h,
       children: I
     })]
   }) : I

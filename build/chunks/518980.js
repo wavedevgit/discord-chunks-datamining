@@ -1,6 +1,5 @@
-/** Chunk was on 88039 **/
+/** Chunk was on 86590 **/
 /** chunk id: 518980, original params: e,n,t (module,exports,require) **/
-"use strict";
 module.exports = {
   icon: "_2894cba534d7d8a0-icon",
   iconWithGuildIcon: "_2894cba534d7d8a0-iconWithGuildIcon",

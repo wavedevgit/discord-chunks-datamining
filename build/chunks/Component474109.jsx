@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 474109, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -16,24 +16,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk251625 = require("./251625.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let b = "app-download-item",
-  m = "add-server-item";
+let m = "app-download-item",
+  b = "add-server-item";
 
 function y() {
   returnfalse
 }
 
-function O(e) {
+function v(e) {
   var t;
   let n = s.default.getMutableGuildStates();
-  return e === p.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(p.x8Z.SERVER_DISCOVERY_BADGE) || e !== b && e !== m && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
+  return e === h.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(h.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
 }
-let v = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, m, p.x8Z.E3_SERVER_DISCOVERY_BADGE, b]),
+let O = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, h.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
   j = Chunk473749.forwardRef(function(e, t) {
     var n, i;
-    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => v(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
-      h = (0, l.e7)([f.Z], () => f.Z.isFocused()),
-      p = (0, l.e7)([o.Z], () => o.Z.getExpandedFolders());
+    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => O(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
+      f = (0, l.e7)([p.Z], () => p.Z.isFocused()),
+      h = (0, l.e7)([o.Z], () => o.Z.getExpandedFolders());
     return (0, r.jsx)(a.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -57,9 +57,9 @@ let v = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, m, p.x8Z.E3_SERVER
       isUnread: y,
       textUnread: g.intl.string(g.t.y2b7CA),
       textMention: g.intl.string(g.t.y2b7CA),
-      isMentioned: O,
-      animate: h,
-      expandedFolders: p
+      isMentioned: v,
+      animate: f,
+      expandedFolders: h
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

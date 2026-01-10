@@ -1,11 +1,11 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => k
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,7 +31,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk729074 = require("./729074.js");
 
-function w(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,20 +40,20 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,11 +74,11 @@ function D(e) {
   switch (e) {
     case "height":
     case "opacity":
-      return T({
+      return A({
         duration: 150
       }, R);
     case "scale":
-      return T({}, R);
+      return A({}, R);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -146,8 +146,8 @@ class M extends(r = Chunk473749.PureComponent) {
   getChannelIcon() {
     let {
       channel: e
-    } = this.props, t = e.type === P.d4z.DM ? O.default.getUser(e.getRecipientId()) : null;
-    return null != t ? t.getAvatarURL(true, 48, false) : (0, f.x)(e)
+    } = this.props, t = e.type === P.d4z.DM ? v.default.getUser(e.getRecipientId()) : null;
+    return null != t ? t.getAvatarURL(true, 48, false) : (0, p.x)(e)
   }
   render() {
     let {
@@ -160,12 +160,12 @@ class M extends(r = Chunk473749.PureComponent) {
       stream: s,
       isCurrentUserInThisDMCall: u,
       unread: d,
-      treeItemProps: f,
-      statusIndicatorsEnabled: h
+      treeItemProps: p,
+      statusIndicatorsEnabled: f
     } = this.props, {
       hovered: g,
-      animating: b
-    } = this.state, m = e.isMultiUserDM() && null == e.icon, y = () => (0, i.jsx)(c.LYs, T({
+      animating: m
+    } = this.state, b = e.isMultiUserDM() && null == e.icon, y = () => (0, i.jsx)(c.LYs, A({
       to: P.Z5c.CHANNEL(P.ME, e.id),
       onMouseEnter: () => this.setState({
         hovered: true
@@ -174,20 +174,20 @@ class M extends(r = Chunk473749.PureComponent) {
         hovered: false
       }),
       selected: n || g,
-      ariaLabel: null != t ? N.intl.formatToPlainString(N.t.hKarnZ, {
+      ariaLabel: null != t ? Z.intl.formatToPlainString(Z.t.hKarnZ, {
         mentions: r,
         name: t
       }) : "",
       onContextMenu: this.handleContextMenu,
-      icon: m ? true : this.getChannelIcon(),
-      backgroundStyle: m ? "on-hover" : "always",
-      children: m ? (0, i.jsx)(p.Z, {
+      icon: b ? true : this.getChannelIcon(),
+      backgroundStyle: b ? "on-hover" : "always",
+      children: b ? (0, i.jsx)(h.Z, {
         channel: e,
         size: c.EFr.SIZE_40,
         facepileSizeOverride: c.EFr.SIZE_32,
         "aria-hidden": true
       }) : true
-    }, f)), O = (0, i.jsx)(c.aRk, {
+    }, p)), v = (0, i.jsx)(c.aRk, {
       rounded: true,
       selected: false,
       lowerBadge: r > 0 ? (0, I.Ne)(r, true, true) : null,
@@ -201,28 +201,28 @@ class M extends(r = Chunk473749.PureComponent) {
         width: (0, c.OVM)(r)
       },
       children: y()
-    }), v = h ? (0, i.jsx)(E.Z, {
+    }), O = f ? (0, i.jsx)(E.Z, {
       channel: e,
-      children: O
+      children: v
     }) : (0, i.jsx)(_.Z, {
       text: null != t ? t : "",
       selected: n,
-      children: O
+      children: v
     });
     return (0, i.jsx)(a.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, i.jsxs)(S.H, {
-        children: [(0, i.jsx)(x.Z, {
-          hovered: !b && g,
-          selected: !b && n,
-          unread: !b && d,
-          className: Z.pill
-        }), v]
+        children: [(0, i.jsx)(C.Z, {
+          hovered: !m && g,
+          selected: !m && n,
+          unread: !m && d,
+          className: N.pill
+        }), O]
       })
     })
   }
   constructor(...e) {
-    super(...e), w(this, "state", {
+    super(...e), T(this, "state", {
       hovered: false,
       animating: true,
       controller: new a.Controller({
@@ -231,15 +231,15 @@ class M extends(r = Chunk473749.PureComponent) {
         opacity: 0,
         config: D
       })
-    }), w(this, "handleContextMenu", e => {
+    }), T(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === P.d4z.DM ? O.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === P.d4z.DM ? v.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("93896")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, A(T({}, n), {
+        } = await Promise.all([n.e("79695"), n.e("4040"), n.e("56826"), n.e("93896")]).then(n.bind(n, 131404));
+        return n => (0, i.jsx)(e, w(A({}, n), {
           channel: t,
           user: r
         }))
@@ -247,7 +247,7 @@ class M extends(r = Chunk473749.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, A(T({}, n), {
+        return n => (0, i.jsx)(e, w(A({}, n), {
           channel: t,
           selected: false
         }))
@@ -255,44 +255,44 @@ class M extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-w(M, "defaultProps", {
+T(M, "defaultProps", {
   badge: 0,
   audio: false,
   video: false,
   isCurrentUserInThisDMCall: false
 });
-let L = Chunk473749.forwardRef(function(e, t) {
+let k = Chunk473749.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, h.ZP)(e.channel),
+    r = (0, f.ZP)(e.channel),
     l = (0, o.Ie)(n, 2),
-    a = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
+    a = (0, s.e7)([m.Z], () => m.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => d.Z.getMode(n), [n]),
-    f = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    p = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-    O = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
-    j = (0, s.e7)([m.ZP], () => m.ZP.getMentionCount(n), [n]),
+    p = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
+    h = (0, s.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+    v = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
+    j = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
     {
-      enabled: x
-    } = (0, C.p)({
+      enabled: C
+    } = (0, x.p)({
       location: "DirectMessage"
     }),
     E = a === n,
     S = false,
     _ = false;
-  (E || x && p) && (S = u === P.WtW.VOICE, _ = u === P.WtW.VIDEO);
+  (E || C && h) && (S = u === P.WtW.VOICE, _ = u === P.WtW.VIDEO);
   let I = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(M, A(T({}, e), {
+  return (0, i.jsx)(M, w(A({}, e), {
     ref: t,
     channelName: r,
     unread: j > 0,
-    selected: O === n,
+    selected: v === n,
     badge: j,
     audio: S,
     video: _,
-    stream: f,
+    stream: p,
     isCurrentUserInThisDMCall: E,
     size: I,
     treeItemProps: l,
-    statusIndicatorsEnabled: x
+    statusIndicatorsEnabled: C
   }))
 })

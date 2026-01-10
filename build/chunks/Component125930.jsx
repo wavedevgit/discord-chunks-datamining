@@ -33,12 +33,12 @@ class _ extends Chunk473749.PureComponent {
     return (0, r.jsx)(o.zx, {
       size: l ? o.zx.Sizes.MIN : o.zx.Sizes.LARGE,
       fullWidth: !l,
-      color: e ? h.tabSelectedColor : h.tabNotSelectedColor,
+      color: e ? m.tabSelectedColor : m.tabNotSelectedColor,
       className: a()({
-        [h.tabPageLarge]: l,
-        [h.tabPageSmall]: !l,
-        [h.tabSelected]: e,
-        [h.tabNotSelected]: !e
+        [m.tabPageLarge]: l,
+        [m.tabPageSmall]: !l,
+        [m.tabSelected]: e,
+        [m.tabNotSelected]: !e
       }),
       onClick: i,
       children: t
@@ -64,9 +64,9 @@ class E extends Chunk473749.PureComponent {
       selectedOperatingSystem: n
     } = this.state, i = Object.keys(t);
     return 1 === i.length ? null : (0, r.jsxs)(c.Z, {
-      className: h.tabs,
+      className: m.tabs,
       children: [(0, r.jsx)("div", {
-        className: h.separator
+        className: m.separator
       }), i.map(t => (0, r.jsx)(_, {
         active: t === n,
         onClick: () => this.handleSelectOperatingSystem(t),
@@ -74,11 +74,11 @@ class E extends Chunk473749.PureComponent {
         children: function(e) {
           switch (e) {
             case g.TaA.WINDOWS:
-              return m.intl.string(m.t["0/xHFO"]);
+              return h.intl.string(h.t["0/xHFO"]);
             case g.TaA.MACOS:
-              return m.intl.string(m.t.E4u4n5);
+              return h.intl.string(h.t.E4u4n5);
             case g.TaA.LINUX:
-              return m.intl.string(m.t.tcawo3)
+              return h.intl.string(h.t.tcawo3)
           }
         }(t)
       }, t))]
@@ -87,47 +87,47 @@ class E extends Chunk473749.PureComponent {
   renderRequirementsSection(e, t) {
     if (null == e) return null;
     let n = [{
-      key: m.intl.string(m.t["0TcHzv"]),
+      key: h.intl.string(h.t["0TcHzv"]),
       value: e.operating_system_version
     }, {
-      key: m.intl.string(m.t.eOX6Hq),
+      key: h.intl.string(h.t.eOX6Hq),
       value: e.cpu
     }, {
-      key: m.intl.string(m.t["+WJ5XQ"]),
-      value: null != e.ram ? m.intl.formatToPlainString(m.t.RNRSl6, {
+      key: h.intl.string(h.t["+WJ5XQ"]),
+      value: null != e.ram ? h.intl.formatToPlainString(h.t.RNRSl6, {
         size: (0, u.BU)(1e3 * e.ram, {
           showDecimalForGB: false
         })
       }) : null
     }, {
-      key: m.intl.string(m.t["+3s/V/"]),
+      key: h.intl.string(h.t["+3s/V/"]),
       value: e.gpu
     }, {
-      key: m.intl.string(m.t["L+x5wB"]),
+      key: h.intl.string(h.t["L+x5wB"]),
       value: null != e.disk ? (0, u.BU)(1e3 * e.disk, {
         showDecimalForGB: false
       }) : null
     }, {
-      key: m.intl.string(m.t["Ghp2/B"]),
+      key: h.intl.string(h.t["Ghp2/B"]),
       value: e.sound_card
     }, {
-      key: m.intl.string(m.t["+w6nJg"]),
+      key: h.intl.string(h.t["+w6nJg"]),
       value: e.network
     }, {
-      key: m.intl.string(m.t.Au3Vbp),
+      key: h.intl.string(h.t.Au3Vbp),
       value: e.notes
     }].map((e, t) => {
       let n = null != e.value ? e.value.trim() : null;
       return null == n || 0 === n.length ? null : (0, r.jsxs)("div", {
-        className: h.requirement,
+        className: m.requirement,
         children: [(0, r.jsxs)("span", {
-          className: h.requirementKey,
+          className: m.requirementKey,
           children: [e.key, ":"]
         }), n]
       }, t)
     }).filter(d.lm);
     return (0, r.jsxs)("div", {
-      className: h.requirements,
+      className: m.requirements,
       children: [(0, r.jsx)(s.Z, {
         tag: "h4",
         children: t
@@ -140,15 +140,15 @@ class E extends Chunk473749.PureComponent {
       recommended: t
     } = this.props.systemRequirements[this.state.selectedOperatingSystem];
     return (0, r.jsxs)("div", {
-      className: h.requirementsContainer,
-      children: [this.renderRequirementsSection(e, m.intl.string(m.t.QCCMXE)), this.renderRequirementsSection(t, m.intl.string(m.t.He39wq))]
+      className: m.requirementsContainer,
+      children: [this.renderRequirementsSection(e, h.intl.string(h.t.QCCMXE)), this.renderRequirementsSection(t, h.intl.string(h.t.He39wq))]
     })
   }
   render() {
     return (0, r.jsxs)("div", {
       className: this.props.className,
       children: [(0, r.jsx)(s.Z, {
-        children: m.intl.string(m.t.IkOAol)
+        children: h.intl.string(h.t.IkOAol)
       }), this.renderTabs(), this.renderBody()]
     })
   }

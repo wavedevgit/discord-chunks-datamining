@@ -1,13 +1,13 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,20 +23,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk915241 = require("./915241.js");
 
-function C(e) {
+function x(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, C = (0, m.Z)(t), x = (0, b.Z)(t.id), E = i.useCallback(() => {
-    (0, y.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), S = (0, c.e7)([p.Z], () => {
+  } = e, x = (0, b.Z)(t), C = (0, m.Z)(t.id), E = i.useCallback(() => {
+    (0, y.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
+  }, [t.id]), S = (0, c.e7)([h.Z], () => {
     var e;
-    return null != (e = p.Z.getCountForGuild(t.id)) ? e : 0
+    return null != (e = h.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    S !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
+    S !== t.premiumSubscriberCount && (0, f.v)(t.id, t.premiumSubscriberCount)
   }, [t.id, S, t.premiumSubscriberCount]);
-  let _ = Math.min(S / C * 100, 100),
+  let _ = Math.min(S / x * 100, 100),
     [I, P] = (0, u.q_F)(() => ({
       width: S === t.premiumSubscriberCount ? "calc(".concat(_, "% - 4px)") : "0%",
       config: {
@@ -50,7 +50,7 @@ function C(e) {
       width: "calc(".concat(_, "% - 4px)")
     })
   }, [_, P]);
-  let N = S >= C;
+  let Z = S >= x;
   return (0, r.jsx)(u.P3F, {
     "aria-label": true,
     role: "button",
@@ -67,7 +67,7 @@ function C(e) {
       [j.containerWithMargin]: l
     }),
     onContextMenu: e => {
-      x && (0, d.jW)(e, async () => {
+      C && (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("8570").then(n.bind(n, 651138));
@@ -121,8 +121,8 @@ function C(e) {
           children: [(0, r.jsx)(s.xvT, {
             className: j.text,
             variant: "text-xs/semibold",
-            children: v.intl.string(O.default.NI6Ihe)
-          }), t.premiumSubscriberCount >= C && (0, r.jsx)(s.xvT, {
+            children: O.intl.string(v.default.NI6Ihe)
+          }), t.premiumSubscriberCount >= x && (0, r.jsx)(s.xvT, {
             className: j.text,
             variant: "text-xs/semibold",
             children: "\uD83C\uDF89"
@@ -132,11 +132,11 @@ function C(e) {
           children: [(0, r.jsx)(s.xvT, {
             className: a()(j.text, j.boostCountText),
             variant: "text-xs/semibold",
-            children: N ? v.intl.formatToPlainString(O.default["Ehpq+7"], {
+            children: Z ? O.intl.formatToPlainString(v.default["Ehpq+7"], {
               appliedBoostCount: S
-            }) : v.intl.formatToPlainString(O.default["/rbPDs"], {
+            }) : O.intl.formatToPlainString(v.default["/rbPDs"], {
               appliedBoostCount: S,
-              maxBoostCount: C
+              maxBoostCount: x
             })
           }), (0, r.jsx)(g.Z, {
             width: 12,
@@ -150,12 +150,12 @@ function C(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     guild: t,
     withMargin: n
   } = e;
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(x, {
     guild: t,
     withMargin: n
   })

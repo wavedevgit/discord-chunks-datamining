@@ -2,6 +2,7 @@
 /** chunk id: 762328, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  C: () => O,
   TA: () => E,
   a_: () => y,
   pS: () => b
@@ -61,86 +62,93 @@ let g = 8,
 function b(e) {
   var t;
   let n, {
-      open: l,
-      onOpenChange: p,
-      id: m,
-      className: b,
-      overrideTargetRect: y,
-      placement: O = "bottom",
-      spacing: v = 8,
-      autoFlip: S = true,
-      autoShift: I = true,
-      strategy: T = "fixed",
-      portal: C = true,
-      blockPointerEvents: A = false,
-      children: N,
-      renderLayer: P,
-      viewportPadding: R = g,
-      trigger: w = "click"
+      ownerDocument: l = document,
+      open: p,
+      onOpenChange: m,
+      id: b,
+      className: y,
+      reference: O,
+      overrideTargetRect: v,
+      placement: S = "bottom",
+      spacing: I = 8,
+      autoFlip: T = true,
+      crossAccessFlip: C = true,
+      autoShift: A = true,
+      strategy: N = "fixed",
+      portal: P = true,
+      blockPointerEvents: R = false,
+      children: w,
+      renderLayer: D,
+      viewportPadding: x = g,
+      trigger: L = "click"
     } = e,
-    D = i.useRef(null),
-    x = i.useMemo(() => {
-      let e = [(0, a.cv)(v)];
-      return S && e.push((0, a.RR)({
-        padding: R,
-        boundary: window.document.body
-      })), I && e.push((0, a.uY)({
-        padding: R,
+    j = i.useRef(null),
+    M = i.useMemo(() => {
+      let e = [(0, a.cv)(I)];
+      return T && e.push((0, a.RR)({
+        crossAxis: C,
+        padding: x,
+        boundary: l.body
+      })), A && e.push((0, a.uY)({
+        padding: x,
         limiter: (0, a.dr)(),
-        boundary: window.document.body
+        boundary: l.body
       })), e.push((0, a.Cp)({
         strategy: "referenceHidden"
       })), e
-    }, [v, S, I, R]);
-  null != y && (n = {
+    }, [I, T, A, x, C, l]);
+  null != v ? n = {
     reference: {
-      getBoundingClientRect: () => y
+      getBoundingClientRect: () => v
     }
+  } : null != O && (n = {
+    reference: O
   });
   let {
-    refs: L,
-    floatingStyles: j,
-    placement: M,
-    middlewareData: k,
-    update: U,
-    context: G
+    refs: k,
+    floatingStyles: U,
+    placement: G,
+    middlewareData: Z,
+    update: F,
+    context: B
   } = (0, o.YF)({
-    placement: O,
-    open: l,
-    onOpenChange: p,
-    strategy: T,
-    middleware: x,
+    placement: S,
+    open: p,
+    onOpenChange: m,
+    strategy: N,
+    middleware: M,
     whileElementsMounted: s.Me,
     elements: n
-  }), Z = (0, o.bQ)(G), F = (0, o.XI)(G, {
-    enabled: "hover" === w,
+  }), V = (0, o.bQ)(B), H = (0, o.XI)(B, {
+    enabled: "hover" === L,
     handleClose: (0, o.xp)({
       blockPointerEvents: true
     })
   }), {
-    getReferenceProps: B,
-    getFloatingProps: V
-  } = (0, o.NI)([Z, F]), H = (null == (t = k.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Y = C ? d.UU : i.Fragment;
+    getReferenceProps: Y,
+    getFloatingProps: W
+  } = (0, o.NI)([V, H]), K = (null == (t = Z.hide) ? true : t.referenceHidden) ? "hidden" : "visible", z = P ? d.UU : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
-    children: [N({
-      ref: L.setReference,
-      props: B()
-    }), l && (0, r.jsxs)(Y, {
-      children: [A ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", h(_({
-        id: m,
-        className: c()(b, f.layer),
+    children: [w({
+      ref: k.setReference,
+      props: Y()
+    }), p && (0, r.jsxs)(z, {
+      ownerDocument: l,
+      children: [R ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", h(_({
+        id: b,
+        className: c()(y, f.layer),
         [E]: true,
-        style: h(_({}, j), {
-          visibility: H
+        style: h(_({}, U), {
+          visibility: K
         }),
-        ref: L.setFloating
-      }, V()), {
+        ref: k.setFloating
+      }, W()), {
         children: (0, r.jsx)(u.Jc, {
-          containerRef: D,
-          children: P({
-            placement: M,
-            update: U,
-            hidden: "hidden" === H
+          containerRef: j,
+          children: D({
+            placement: G,
+            update: F,
+            hidden: "hidden" === K
           })
         })
       }))]
@@ -164,5 +172,18 @@ function y(e, t) {
       if ("top" === t) return "".concat(e, "-start");
       if ("bottom" === t) return "".concat(e, "-end");
       return e
+  }
+}
+
+function O(e) {
+  let t = e.split("-")[0];
+  switch (t) {
+    case "top":
+    case "bottom":
+    case "left":
+    case "right":
+      return t;
+    default:
+      return "top"
   }
 }

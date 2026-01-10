@@ -1,8 +1,8 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 339149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => N,
-  Z: () => Z
+  E: () => Z,
+  Z: () => N
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,52 +48,52 @@ function S(e) {
 }
 let _ = {
   [Chunk981631.vxO.INSTALLING]: {
-    [Chunk707409.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["p+2sE+"], {
+    [Chunk707409.J6.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["/0NgPI"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.ZIwMzr, {
+    [Chunk707409.J6.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t["3IQDUi"], {
+    [Chunk707409.J6.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.UPDATING]: {
-    [Chunk707409.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["6F9QzC"], {
+    [Chunk707409.J6.NONE]: (e, t) => x.intl.formatToPlainString(x.t["6F9QzC"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["2OVgVq"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["2OVgVq"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.mgQg1L, {
+    [Chunk707409.J6.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.mgQg1L, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t.aTdq44, {
+    [Chunk707409.J6.HOURS]: (e, t) => x.intl.formatToPlainString(x.t.aTdq44, {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.REPAIRING]: {
-    [Chunk707409.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["p+2sE+"], {
+    [Chunk707409.J6.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["/0NgPI"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.ZIwMzr, {
+    [Chunk707409.J6.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t["3IQDUi"], {
+    [Chunk707409.J6.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
@@ -106,9 +106,9 @@ class I extends Chunk473749.PureComponent {
       isPaused: t
     } = this.props;
     if (e.type === j.vxO.UPDATING || e.type === j.vxO.REPAIRING || e.type === j.vxO.INSTALLING) {
-      if (t) return C.intl.string(C.t["5oxtFS"]);
-      else if (e.stage === j.f07.PATCHING || e.stage === j.f07.REPAIRING) return (0, i.jsx)(v.Z, {
-        getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
+      if (t) return x.intl.string(x.t["5oxtFS"]);
+      else if (e.stage === j.f07.PATCHING || e.stage === j.f07.REPAIRING) return (0, i.jsx)(O.Z, {
+        getHistoricalTotalBytes: b.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
       })
@@ -117,7 +117,7 @@ class I extends Chunk473749.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != e ? e : C.intl.string(C.t.cw57ar)
+    return null != e ? e : x.intl.string(x.t.cw57ar)
   }
   constructor(...e) {
     super(...e), E(this, "renderProgressBody", (e, t) => {
@@ -136,12 +136,12 @@ class I extends Chunk473749.PureComponent {
         u = _[o],
         d = null != u ? Object.keys(u) : [],
         {
-          unit: f,
-          time: h
+          unit: p,
+          time: f
         } = (0, g.CI)(null != c ? c / 60 : null, d);
-      if (null != u && null != f) {
-        let e = u[f];
-        return null != e ? e(r.name, h) : null
+      if (null != u && null != p) {
+        let e = u[p];
+        return null != e ? e(r.name, f) : null
       }
       return null
     })
@@ -169,7 +169,7 @@ class P extends(r = Chunk473749.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? C.intl.string(C.t.cw57ar) : (0, i.jsx)(I, {
+    return null == e || null == t ? x.intl.string(x.t.cw57ar) : (0, i.jsx)(I, {
       application: e,
       state: t,
       isPaused: n
@@ -187,20 +187,20 @@ class P extends(r = Chunk473749.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: o()(n, x.progressContainer),
+      className: o()(n, C.progressContainer),
       onClick: this.handleOnClick,
-      children: (0, i.jsx)(f.u, {
+      children: (0, i.jsx)(p.u, {
         __unsupportedReactNodeAsText: this.getTooltipText(),
         position: "right",
         "aria-label": false,
         children: (0, i.jsx)("div", {
-          children: (0, i.jsx)(h._3P, {
+          children: (0, i.jsx)(f._3P, {
             percent: e,
             colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
-            children: (0, i.jsx)(h._8t, {
+            children: (0, i.jsx)(f._8t, {
               size: "md",
               color: "currentColor",
-              className: x.downloadIcon
+              className: C.downloadIcon
             })
           })
         })
@@ -214,12 +214,12 @@ class P extends(r = Chunk473749.PureComponent) {
       let {
         onClick: t
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, b.uL)(j.Z5c.APPLICATION_LIBRARY)
+      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, m.uL)(j.Z5c.APPLICATION_LIBRARY)
     })
   }
 }
 
-function N(e, t) {
+function Z(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -231,17 +231,17 @@ function N(e, t) {
 E(P, "defaultProps", {
   strokeSize: Chunk481060._3P.StrokeSizes.MEDIUM
 });
-let Z = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.Z], () => {
+let N = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.Z], () => {
   let e = y.Z.activeItems,
-    t = N(e, m.Z),
+    t = Z(e, b.Z),
     {
       total: n,
       progress: r
-    } = O.lK(t);
+    } = v.lK(t);
   return {
-    percent: O.xI(r, n),
+    percent: v.xI(r, n),
     isPaused: y.Z.paused,
-    firstApplication: e.length > 0 ? p.Z.getApplication(e[0].applicationId) : null,
+    firstApplication: e.length > 0 ? h.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null
   }
 })(e => {

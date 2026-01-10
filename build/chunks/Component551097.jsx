@@ -1,13 +1,13 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 551097, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
@@ -21,8 +21,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk73826 = require("./73826.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952334 = require("./952334.js");
-let C = (0, Chunk554916.animated)(Chunk685613.ZP),
-  y = () => {
+let y = (0, Chunk620389.animated)(Chunk685613.ZP),
+  C = () => {
     let e = (0, d.aM)(),
       {
         expansionSpring: t
@@ -30,13 +30,13 @@ let C = (0, Chunk554916.animated)(Chunk685613.ZP),
       {
         onCtxMenuOpen: n,
         onCtxMenuClose: i,
-        onCtxMenuSelect: f,
-        isExpanded: y,
+        onCtxMenuSelect: h,
+        isExpanded: C,
         isExpansionAnimationComplete: _,
         quest: S
       } = r.useContext(b.A),
       E = r.useCallback(() => {
-        (0, h.openDisclosureModal)(S, {
+        (0, f.openDisclosureModal)(S, {
           content: u.jn.QUEST_BAR_V2,
           ctaContent: c.jZ.OPEN_DISCLOSURE,
           sourceQuestContent: u.jn.QUEST_BAR_V2
@@ -50,13 +50,13 @@ let C = (0, Chunk554916.animated)(Chunk685613.ZP),
           sourceQuestContent: u.jn.QUEST_BAR_V2
         })
       }, [e, S]),
-      O = y && _,
+      O = C && _,
       N = (0, a.jsx)(o.P3F, {
         onClick: T,
         className: l()(j.clickable, {
           [j.logo]: O
         }),
-        children: (0, a.jsx)(C, {
+        children: (0, a.jsx)(y, {
           quest: S,
           withGameTile: false,
           logotypeClassName: j.partnerBranding,
@@ -113,7 +113,7 @@ let C = (0, Chunk554916.animated)(Chunk685613.ZP),
         }), (0, a.jsx)(p.i, {
           onOpen: n,
           onClose: i,
-          onSelect: f,
+          onSelect: h,
           questContent: u.jn.QUEST_BAR_V2,
           quest: S,
           shouldShowDisclosure: true,

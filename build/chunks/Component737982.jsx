@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 737982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,36 +20,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk914820 = require("./914820.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk498374 = require("./498374.js");
-let v = Chunk473749.memo(function(e) {
+let O = Chunk473749.memo(function(e) {
   let {
     guildId: t,
     selected: n
-  } = e, v = (0, o.useHasAnyModalOpen)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), [C, x] = (0, c.ZT)([a.z.GAME_SERVER_HOSTING_NEW_BADGE], t), E = C === a.z.GAME_SERVER_HOSTING_NEW_BADGE, [S, _] = (0, c.ZT)(v || j || !E ? [] : [a.z.GAME_SERVER_HOSTING_NEW_COACHMARK], t), I = i.useCallback(e => {
-    x(e), _(e)
-  }, [x, _]), P = i.useCallback(() => {
-    I(b.L.USER_DISMISS), (0, d.uL)(p.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
-  }, [t, I]), N = i.useRef(null), Z = S === a.z.GAME_SERVER_HOSTING_NEW_COACHMARK, w = i.useCallback(() => (0, r.jsx)(h.En, {
-    channelRowRef: N,
+  } = e, O = (0, o.useHasAnyModalOpen)(), j = (0, l.e7)([p.Z], () => p.Z.hasLayers()), [x, C] = (0, c.ZT)([a.z.GAME_SERVER_HOSTING_NEW_BADGE], t), E = x === a.z.GAME_SERVER_HOSTING_NEW_BADGE, [S, _] = (0, c.ZT)(O || j || !E ? [] : [a.z.GAME_SERVER_HOSTING_NEW_COACHMARK], t), I = i.useCallback(e => {
+    C(e), _(e)
+  }, [C, _]), P = i.useCallback(() => {
+    I(m.L.USER_DISMISS), (0, d.uL)(h.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
+  }, [t, I]), Z = i.useRef(null), N = S === a.z.GAME_SERVER_HOSTING_NEW_COACHMARK, T = i.useCallback(() => (0, r.jsx)(f.En, {
+    channelRowRef: Z,
     guildId: t,
     markAsDismissed: I
   }), [t, I]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.m, {
-      ref: N,
+      ref: Z,
       id: "game-server-".concat(t),
       renderIcon: e => (0, r.jsx)(s.iWm, {
         size: "md",
         className: e,
         color: "currentColor"
       }),
-      text: y.intl.string(m.default.vCzwM7),
+      text: y.intl.string(b.default.vCzwM7),
       selected: n,
       onClick: P,
       trailing: E ? (0, r.jsx)(s.IGR, {
         disableColor: true,
         text: y.intl.string(y.t.y2b7CA),
-        className: O.badge
+        className: v.badge
       }) : null
-    }), Z && w()]
+    }), N && T()]
   })
 })

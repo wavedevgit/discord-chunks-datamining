@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 9145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk257536 = require("./257536.js");
 let F = Chunk884338.u8.SIZE_32,
-  B = {
+  H = {
     [Chunk918559.MI.NO_CHAT]: Chunk257536.noChat,
     [Chunk918559.MI.RESIZABLE]: Chunk257536.resizable
   };
@@ -54,13 +54,13 @@ function V(e) {
     maxHeight: V,
     connectedLocation: z,
     renderExternalHeader: W
-  } = e, Y = (0, N.Z)(), q = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(z), [z]), K = (0, T.p)(z), Q = (0, s.e7)([x.Z], () => x.Z.getChannel(K)), X = (0, Z.gb)(q), J = (0, Z.uF)(X), $ = i.useCallback(() => {
-    (0, S.tg)(k.Ez.PIP)
-  }, []), ee = i.useRef(null), et = (0, s.e7)([E.ZP], () => E.ZP.getFocusedLayout()), en = et !== k.MI.NO_CHAT, [er, ei] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : V) ? n : null), el = i.useCallback(e => {
-    u.ZP.updatedUnsyncedSettings({
+  } = e, K = (0, T.Z)(), Y = (0, o.Wu)([I.ZP], () => I.ZP.getEmbeddedActivitiesForLocation(z), [z]), q = (0, N.p)(z), X = (0, o.e7)([O.Z], () => O.Z.getChannel(q)), Q = (0, P.gb)(Y), J = (0, P.uF)(Q), $ = i.useCallback(() => {
+    (0, _.tg)(L.Ez.PIP)
+  }, []), ee = i.useRef(null), et = (0, o.e7)([I.ZP], () => I.ZP.getFocusedLayout()), en = et !== L.MI.NO_CHAT, [er, ei] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : V) ? n : null), el = i.useCallback(e => {
+    d.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
-  }, []), ea = i.useRef(null), [es, eo] = i.useState({
+  }, []), ea = i.useRef(null), [eo, es] = i.useState({
     width: 0,
     height: 0
   });
@@ -68,28 +68,28 @@ function V(e) {
     if (null == ea.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
-      eo({
+      es({
         width: null != (n = null == (e = ea.current) ? true : e.clientWidth) ? n : 0,
         height: null != (r = null == (t = ea.current) ? true : t.clientHeight) ? r : 0
       })
     });
     return e.observe(ea.current), () => e.disconnect()
   }, []);
-  let ec = es.width / Math.max(es.height, 1) < k.I0,
-    ed = 0,
+  let ec = eo.width / Math.max(eo.height, 1) < L.I0,
     eu = 0,
-    ep = (0, P.Z)(null == Y ? true : Y.id);
+    ed = 0,
+    ep = (0, Z.Z)(null == K ? true : K.id);
   if (!ep) {
-    let e = es.width,
-      t = es.height;
-    ec ? ((t = es.width / k.I0) > es.height && (e = (t = es.height) * k.I0), eu = (es.height - t) / 2) : ((e = Math.min(es.height * k.I0)) > es.width && (t = (e = es.width) / k.I0), ed = (es.width - e) / 2)
+    let e = eo.width,
+      t = eo.height;
+    ec ? ((t = eo.width / L.I0) > eo.height && (e = (t = eo.height) * L.I0), ed = (eo.height - t) / 2) : ((e = Math.min(eo.height * L.I0)) > eo.width && (t = (e = eo.width) / L.I0), eu = (eo.width - e) / 2)
   }
-  let eh = J.get(null != (l = null == Y ? true : Y.id) ? l : ""),
-    ef = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
-    eg = (0, s.Wu)([j.ZP], () => {
+  let ef = J.get(null != (l = null == K ? true : K.id) ? l : ""),
+    eh = (0, o.e7)([x.Z], () => x.Z.getChannelId()),
+    eg = (0, o.Wu)([j.ZP], () => {
       var e;
-      return null == Q ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(Q.guild_id, e))
-    }, [eh, Q]),
+      return null == X ? [] : Array.from(null != (e = null == ef ? true : ef.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(X.guild_id, e))
+    }, [ef, X]),
     em = i.useMemo(() => {
       let e = new Map;
       return eg.forEach(t => {
@@ -99,16 +99,16 @@ function V(e) {
     eb = function(e, t, n) {
       let r = (0, p.Z)(e),
         l = e !== r,
-        [a, s] = i.useState(false);
+        [a, o] = i.useState(false);
       i.useEffect(() => {
-        s(true);
-        let e = setTimeout(() => s(false), 50);
+        o(true);
+        let e = setTimeout(() => o(false), 50);
         return () => clearTimeout(e)
       }, [e]);
-      let o = !h.Z.useReducedMotion && (l || a);
+      let s = !f.Z.useReducedMotion && (l || a);
       return i.useMemo(() => {
         var r, i;
-        let l = o ? {
+        let l = s ? {
           transitionProperty: "height, max-height",
           transitionDuration: "".concat(50, "ms"),
           transitionTimingFunction: "ease-in-out"
@@ -144,95 +144,95 @@ function V(e) {
         })(Object(i)).forEach(function(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r) : l
-      }, [o, e, n, t])
+      }, [s, e, n, t])
     }(en, er, V),
-    ey = (0, L.y)();
-  if (null == Y) return null;
-  let eO = [];
-  null != eh && (eO = Array.from(eh.embeddedActivity.userIds).map(e => C.default.getUser(e)).filter(e => null != e && true !== e));
-  let ex = e => {
+    ey = (0, M.y)();
+  if (null == K) return null;
+  let ev = [];
+  null != ef && (ev = Array.from(ef.embeddedActivity.userIds).map(e => C.default.getUser(e)).filter(e => null != e && true !== e));
+  let eO = e => {
     var t;
     if (null == e || true === e || e === w.ag) return null;
     let n = em.get(e.id),
-      i = null != (t = null == n ? true : n.nick) ? t : _.ZP.getName(e);
+      i = null != (t = null == n ? true : n.nick) ? t : S.ZP.getName(e);
     return (0, r.jsx)(c.u, {
       asContainer: true,
       text: i,
       position: "bottom",
       children: (0, r.jsx)("img", {
-        src: e.getAvatarURL(null == Q ? true : Q.guild_id, F),
+        src: e.getAvatarURL(null == X ? true : X.guild_id, F),
         alt: i,
-        className: H.avatar
+        className: B.avatar
       }, e.id)
     }, e.id)
   };
-  return (0, r.jsx)(d.f6W, {
+  return (0, r.jsx)(u.f6W, {
     theme: U.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(H.wrapper, B[et], e),
+      className: a()(B.wrapper, H[et], e),
       ref: ee,
       style: eb,
       children: [null == W ? true : W(), (0, r.jsxs)("div", {
-        className: H.activityPanelContainer,
+        className: B.activityPanelContainer,
         children: [en ? null : (0, r.jsx)("div", {
-          className: H.header,
-          children: (0, r.jsx)(o.x, {
+          className: B.header,
+          children: (0, r.jsx)(s.x, {
             color: "text-strong",
             variant: "text-md/semibold",
-            className: H.headerTitle,
-            children: null == Y ? true : Y.name
+            className: B.headerTitle,
+            children: null == K ? true : K.name
           })
         }), (0, r.jsx)("div", {
-          className: a()(H.activityContainer, {
-            [H.activityContainerNoMargin]: ep
+          className: a()(B.activityContainer, {
+            [B.activityContainerNoMargin]: ep
           }),
           style: {
-            paddingLeft: ed,
-            paddingRight: ed,
-            paddingTop: eu,
-            paddingBottom: eu
+            paddingLeft: eu,
+            paddingRight: eu,
+            paddingTop: ed,
+            paddingBottom: ed
           },
           ref: ea,
-          children: (0, r.jsx)(R.Z, {
-            className: H.iframe,
-            embedId: (0, D.Z)(z.id, Y.id)
+          children: (0, r.jsx)(A.Z, {
+            className: B.iframe,
+            embedId: (0, D.Z)(z.id, K.id)
           })
-        }), null != ef ? (0, r.jsxs)("div", {
-          className: H.footer,
+        }), null != eh ? (0, r.jsxs)("div", {
+          className: B.footer,
           children: [(0, r.jsx)(w.ZP, {
             renderIcon: false,
-            users: eO,
+            users: ev,
             size: F,
             max: 6,
-            renderUser: ex
+            renderUser: eO
           }), (0, r.jsxs)("div", {
-            className: H.footerButtons,
+            className: B.footerButtons,
             children: [(0, r.jsxs)("div", {
-              className: H.buttonSection,
-              children: [(0, r.jsx)(M.Z, {
-                channelId: ef
+              className: B.buttonSection,
+              children: [(0, r.jsx)(k.Z, {
+                channelId: eh
               }), (0, r.jsx)(b.d, {
                 isTrayButton: true,
                 label: G.intl.string(G.t.brPQ5U),
                 onClick: $,
-                iconComponent: d.dOc,
+                iconComponent: u.dOc,
                 themeable: true
               })]
             }), (0, r.jsx)("div", {
-              className: H.leaveButtonContainer,
+              className: B.leaveButtonContainer,
               children: (0, r.jsx)(y.Z, {
-                applicationId: Y.id,
+                applicationId: K.id,
                 location: z,
                 centerButton: true,
                 color: "disconnect"
               })
             })]
-          }), ey ? (0, r.jsx)(O.Z, {
+          }), ey ? (0, r.jsx)(v.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
-              (0, f.yw)(U.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, A.Z)({
+              (0, h.yw)(U.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, R.Z)({
                 onConfirm: async () => {
-                  (null == Y ? true : Y.id) != null && null != K && await (0, S.nJ)(Y.id, K), (0, S.Gj)()
+                  (null == K ? true : K.id) != null && null != q && await (0, _.nJ)(K.id, q), (0, _.Gj)()
                 }
               })
             },
@@ -244,12 +244,12 @@ function V(e) {
         maxHeight: V,
         resizableNode: ee,
         onResize: e => {
-          I.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
+          E.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: true
           }), ei(e)
         },
         onResizeEnd: e => {
-          I.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
+          E.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: false
           }), el(e)
         }

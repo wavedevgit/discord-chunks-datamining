@@ -29,26 +29,26 @@ function b(e) {
     })) ? t : 0,
     [j, v] = i.useState(null),
     O = i.useMemo(() => null == b ? true : b.some(e => (0, a.J)(e)), [b]),
-    C = i.useMemo(() => b.length === g.nx, [b]),
-    y = i.useCallback(e => {
+    y = i.useMemo(() => b.length === g.nx, [b]),
+    C = i.useCallback(e => {
       u.Z.setPendingMemberVerificationRules(n.id, e), h(e), null != j && v(null)
     }, [j, n.id]),
     N = i.useCallback(e => {
-      y([...b, e])
-    }, [b, y]),
+      C([...b, e])
+    }, [b, C]),
     E = i.useCallback(e => {
-      y([...b.slice(0, e), ...b.slice(e + 1)])
-    }, [b, y]),
+      C([...b.slice(0, e), ...b.slice(e + 1)])
+    }, [b, C]),
     I = i.useCallback((e, t) => {
       if (b[e] === t) return;
       let n = [...b];
-      n[e] = t, y(n)
-    }, [b, y]),
+      n[e] = t, C(n)
+    }, [b, C]),
     S = i.useCallback((e, t, n) => {
       let r = b.indexOf(e),
         i = [...b];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), h(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
-    }, [j, b, y]);
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), h(i)), n ? (C(i), null !== j && v(null)) : j !== t && v(t)
+    }, [j, b, C]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
@@ -71,14 +71,14 @@ function b(e) {
       canRemove: b.length > 1,
       actionsLocation: "side",
       fieldStyle: a.it.COMPACT
-    })), !C && (0, r.jsx)("div", {
+    })), !y && (0, r.jsx)("div", {
       className: m.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
         addFormField: N,
         guild: n,
         allowTerms: !O
       })
-    }), !C && (0, r.jsx)(p, {
+    }), !y && (0, r.jsx)(p, {
       addFormField: N
     })]
   })

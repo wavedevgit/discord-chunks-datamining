@@ -28,11 +28,11 @@ let h = function(e) {
     onDragReset: v
   } = e, {
     title: O,
-    channelId: C,
-    description: y
-  } = l, N = u.Z.getChannel(C), E = null;
+    channelId: y,
+    description: C
+  } = l, N = u.Z.getChannel(y), E = null;
   null != N && (0, d.k3)(N) || (E = b.intl.string(b.t.kTdL8X));
-  let I = null == y || 0 === y.length,
+  let I = null == C || 0 === C.length,
     S = g.ZP.getResourceChannelIconURL({
       channelId: l.channelId,
       icon: l.icon
@@ -142,7 +142,7 @@ let h = function(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: y
+          children: C
         })]
       }), (0, r.jsx)(s.u, {
         text: b.intl.string(b.t.bt75uw),

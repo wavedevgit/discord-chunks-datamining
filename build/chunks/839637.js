@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 839637, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk494497 = require("./494497.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,29 +15,29 @@ var Chunk494497 = require("./494497.js"),
   Chunk556970 = require("./556970.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t) {
+function h(e, t) {
   var n;
-  let p = (0, i.e7)([l.Z], () => {
+  let h = (0, i.e7)([l.Z], () => {
       var t;
       return null == (t = l.Z.getGuild(e)) ? true : t.features
     }),
     g = (0, i.e7)([a.Z], () => a.Z.getStateForGuild(e)),
-    b = null == g ? true : g.allPowerups[r.A$],
-    m = (0, c.ZP)(e, b),
+    m = null == g ? true : g.allPowerups[r.A$],
+    b = (0, c.ZP)(e, m),
     y = (0, o.q8)(e, t),
-    O = null == b ? true : b.storeRemovalDate,
-    v = null != (n = null == p ? true : p.has(d.GuildFeatures.PARTNERED)) && n,
-    j = y && null != O && !v && m.type === u.A3.POWERUP_ACTIVATED,
-    C = j ? {
-      title: h.intl.formatToPlainString(f.default.mgoPkU, {
-        perkName: null == b ? true : b.title
+    v = null == m ? true : m.storeRemovalDate,
+    O = null != (n = null == h ? true : h.has(d.GuildFeatures.PARTNERED)) && n,
+    j = y && null != v && !O && b.type === u.A3.POWERUP_ACTIVATED,
+    x = j ? {
+      title: f.intl.formatToPlainString(p.default.mgoPkU, {
+        perkName: null == m ? true : m.title
       }),
-      description: h.intl.formatToPlainString(f.default.UT9pkI, {
-        dateString: (0, s.Z)(O)
+      description: f.intl.formatToPlainString(p.default.UT9pkI, {
+        dateString: (0, s.Z)(v)
       })
     } : null;
   return {
     shouldShow: j,
-    notificationConfig: C
+    notificationConfig: x
   }
 }

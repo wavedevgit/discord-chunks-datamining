@@ -1,5 +1,5 @@
 /** Chunk was on 87766 **/
-/** chunk id: 238384, original params: e,t,o (module,exports,require) **/
+/** chunk id: 238384, original params: e,t,n (module,exports,require) **/
 module.exports = {
   cont: "b256a219e865d41d-cont",
   hitboxArea: "b256a219e865d41d-hitboxArea",

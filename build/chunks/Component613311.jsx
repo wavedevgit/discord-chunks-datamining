@@ -120,7 +120,7 @@ class ef extends Chunk473749.PureComponent {
       } = l.state;
       this._analyticsSource = e, this._extraAnalyticsProperties = t
     } else this._analyticsSource = ea.SaU;
-    (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, h.yD)(e.applicationId), r && g.Z.wait(() => (0, m.$)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
+    (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, m.yD)(e.applicationId), r && g.Z.wait(() => (0, h.$)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentDidUpdate(e) {
     let {
@@ -138,7 +138,7 @@ class ef extends Chunk473749.PureComponent {
         slug: a
       }), (t !== e.locale || i !== e.skuId) && s(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
-      g.Z.wait(() => (0, m.$)(n.applicationId))
+      g.Z.wait(() => (0, h.$)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentWillUnmount() {
@@ -284,7 +284,7 @@ class ef extends Chunk473749.PureComponent {
     })
   }
   renderFeatures(e) {
-    return (0, r.jsx)(K.Z, {
+    return (0, r.jsx)(q.Z, {
       sku: e
     })
   }
@@ -306,7 +306,7 @@ class ef extends Chunk473749.PureComponent {
         children: es.intl.format(es.t.tluX4B, {
           name: n.name
         })
-      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(q.Z, {
+      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(K.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,

@@ -24,7 +24,7 @@ let d = e => {
     }),
     body: c.intl.format(s.default.MuUV5u, {
       premiumGroupProductName: (0, a.sO)(),
-      totalSeats: a.v$
+      totalSeats: a.Q5
     }),
     graphic: {
       type: "image",

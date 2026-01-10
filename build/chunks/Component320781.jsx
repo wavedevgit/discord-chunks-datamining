@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 320781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -21,25 +21,25 @@ function f(e) {
     channel: n
   } = e, f = (0, o.eV)(n), {
     firstMessage: h
-  } = (0, r.cj)([s.Z], () => s.Z.getMessage(n.id)), m = new Set((0, o.kn)(n, f)), g = null != (t = (0, a.KS)(n)) ? t : l.kBi;
-  return (0, i.jsxs)(u.ZP, {
+  } = (0, i.cj)([s.Z], () => s.Z.getMessage(n.id)), g = new Set((0, o.kn)(n, f)), m = null != (t = (0, a.KS)(n)) ? t : l.kBi;
+  return (0, r.jsxs)(u.ZP, {
     channelId: n.id,
     className: p.container,
-    children: [(0, i.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: p.iconWrapper,
-      children: (0, i.jsx)(g, {
+      children: (0, r.jsx)(m, {
         className: p.icon,
         strokeWidth: 1.75
       })
-    }), (0, i.jsx)(u.Ot, {
+    }), (0, r.jsx)(u.Ot, {
       className: p.header,
       children: n.name
-    }), null == h && (0, i.jsx)(l.Text, {
+    }), null == h && (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "text-default",
       children: d.intl.string(d.t.mE3KJN)
-    }), (0, i.jsx)(c.Z, {
-      appliedTags: m,
+    }), (0, r.jsx)(c.Z, {
+      appliedTags: g,
       wrap: n.isModeratorReportChannel()
     })]
   })

@@ -616,7 +616,7 @@ let eh = Chunk473749.forwardRef(function(e, t) {
     if (null != r) return r;
     let e = G.Z.getChannelId(),
       t = null == e || (0, et.AB)(e) ? true : w.Z.getChannel(e);
-    return (null == t ? true : t.isThread()) && (t = w.Z.getChannel(t.parent_id)), null != t ? t : R.ZP.getDefaultChannel(a.id, true, ee.Plq.CREATE_INSTANT_INVITE)
+    return (null == t ? true : t.isThread()) && (t = w.Z.getChannel(t.parent_id)), (null == t ? true : t.guild_id) === a.id && null != t ? t : R.ZP.getDefaultChannel(a.id, true, ee.Plq.CREATE_INSTANT_INVITE)
   }, [r, a.id]), P = null;
   null != d ? P = X.Iq.STREAM : null != c && (P = X.Iq.EMBEDDED_APPLICATION);
   let Z = null != r ? r.getGuildId() : null != a ? a.id : null,

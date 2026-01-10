@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 6809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,29 +15,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969373 = require("./969373.js");
-let m = function() {
+let h = function() {
   let {
     analyticsLocations: e
   } = (0, c.ZP)(), t = (0, l.e7)([d.Z], () => d.Z.theme), n = i.useRef(null);
   i.useEffect(() => {
     null == n.current && (n.current = t)
   }, [t]);
-  let m = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.LIGHT),
-    h = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.DARKER),
+  let h = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.LIGHT),
+    m = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.DARKER),
     b = (0, o.dQu)(a.Z.colors.BACKGROUND_BASE_LOW, p.BRd.MIDNIGHT),
     _ = i.useMemo(() => [{
       theme: p.BRd.LIGHT,
       label: f.t.K2sFfo,
-      color: m.hex()
+      color: h.hex()
     }, {
       theme: p.BRd.DARKER,
       label: f.t.b8Cei3,
-      color: h.hex()
+      color: m.hex()
     }, {
       theme: p.BRd.MIDNIGHT,
       label: f.t.Do4ZJx,
       color: b.hex()
-    }], [m, h, b]),
+    }], [h, m, b]),
     E = i.useCallback(t => {
       (0, u.Yk)({
         isPersisted: true,

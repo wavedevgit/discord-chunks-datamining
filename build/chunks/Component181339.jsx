@@ -37,7 +37,7 @@ function _(e) {
     isExpanded: n,
     selectedChannelId: l,
     className: s
-  } = e, c = (0, m.BT)(t), h = (0, b.Z)(t), [j, v] = i.useState(h), O = (0, o.e7)([x.Z], () => x.Z.getChannel(l), [l]), C = (0, g.ZP)(O), y = async () => {
+  } = e, c = (0, m.BT)(t), h = (0, b.Z)(t), [j, v] = i.useState(h), O = (0, o.e7)([x.Z], () => x.Z.getChannel(l), [l]), y = (0, g.ZP)(O), C = async () => {
     v(!j);
     try {
       var e;
@@ -76,11 +76,11 @@ function _(e) {
         children: [(0, r.jsx)(d.VL1, {
           size: "xxs",
           color: "currentColor"
-        }), " ", C]
+        }), " ", y]
       })]
     }), (0, r.jsx)(N.Z, {
       checked: j,
-      onChange: y,
+      onChange: C,
       disabled: !c || null == l
     })]
   })
@@ -93,7 +93,7 @@ function T(e) {
     selectedChannelId: i,
     setSelectedChannelId: l,
     className: f
-  } = e, m = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([j.ZP, C.default, O.Z, v.Z], () => {
+  } = e, m = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([j.ZP, y.default, O.Z, v.Z], () => {
     let e = j.ZP.getChannels(n.id)[j.sH].filter(e => {
       let {
         channel: t
@@ -105,18 +105,18 @@ function T(e) {
       } = e;
       return {
         value: t.id,
-        label: (0, g.F6)(t, C.default, O.Z, true)
+        label: (0, g.F6)(t, y.default, O.Z, true)
       }
     });
     return null != m ? e : [...e]
   }, [n.id, m]), x = async e => {
     l(e);
     try {
-      if (e !== m && (await y.Z.saveGuild(n.id, {
+      if (e !== m && (await C.Z.saveGuild(n.id, {
           safetyAlertsChannelId: e
         }, {
           throwErr: true
-        }), y.Z.updateGuild({
+        }), C.Z.updateGuild({
           safetyAlertsChannelId: e
         })), null != e) {
         let t = {

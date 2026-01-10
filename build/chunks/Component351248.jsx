@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk727829 = require("./727829.js"),
   Chunk982681 = require("./982681.js");
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = {
+let O = {
   SCALE_MIN: .7,
   SCALE_MAX: 1,
   DURATION_IN: 300,
@@ -36,7 +36,7 @@ let v = {
   EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
   EASING_OUT: Chunk748780.Z.Easing.quad
 };
-class x extends Chunk473749.PureComponent {
+class j extends Chunk473749.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -54,8 +54,8 @@ class x extends Chunk473749.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), o.Z.parallel([o.Z.timing(t, {
       toValue: 1,
-      duration: v.DURATION_IN,
-      easing: v.EASING_IN
+      duration: O.DURATION_IN,
+      easing: O.EASING_IN
     }), o.Z.timing(n, {
       toValue: 1,
       duration: 200
@@ -65,10 +65,10 @@ class x extends Chunk473749.PureComponent {
     let {
       scaleAnimation: t,
       spriteAnimation: n,
-      spriteOpacity: i,
-      widthAnimation: r
+      spriteOpacity: r,
+      widthAnimation: i
     } = this;
-    i.setValue(1), n.setValue(0);
+    r.setValue(1), n.setValue(0);
     let l = [];
     for (let e = 0; e < 23; e++) l.push(o.Z.timing(n, {
       toValue: false * e,
@@ -76,9 +76,9 @@ class x extends Chunk473749.PureComponent {
     }));
     o.Z.sequence([o.Z.timing(t, {
       toValue: 0,
-      duration: v.DURATION_OUT,
-      easing: v.EASING_OUT
-    }), o.Z.sequence(l), o.Z.timing(r, {
+      duration: O.DURATION_OUT,
+      easing: O.EASING_OUT
+    }), o.Z.sequence(l), o.Z.timing(i, {
       toValue: 0,
       duration: 125
     })]).start(e)
@@ -91,7 +91,7 @@ class x extends Chunk473749.PureComponent {
       transform: [{
         scale: e.interpolate({
           inputRange: [0, 1],
-          outputRange: [v.SCALE_MIN, v.SCALE_MAX]
+          outputRange: [O.SCALE_MIN, O.SCALE_MAX]
         })
       }],
       opacity: e
@@ -120,43 +120,43 @@ class x extends Chunk473749.PureComponent {
       theme: e,
       children: t,
       className: n
-    } = this.props, r = (0, u.wj)(e), l = a()(g.sprite, {
-      [C.crossWhite]: r,
-      [C.crossGrey]: !r
+    } = this.props, i = (0, u.wj)(e), l = a()(m.sprite, {
+      [y.crossWhite]: i,
+      [y.crossGrey]: !i
     });
-    return (0, i.jsxs)(o.Z.div, {
+    return (0, r.jsxs)(o.Z.div, {
       role: "listitem",
-      className: a()(g.transition, n),
+      className: a()(m.transition, n),
       style: this.getWidthStyle(),
-      children: [(0, i.jsx)("div", {
-        className: a()(g.spriteWrapper, b.horizontal, b.justifyCenter, b.alignCenter),
-        children: (0, i.jsx)(o.Z.div, {
+      children: [(0, r.jsx)("div", {
+        className: a()(m.spriteWrapper, b.horizontal, b.justifyCenter, b.alignCenter),
+        children: (0, r.jsx)(o.Z.div, {
           className: l,
           style: this.getSpriteStyle()
         })
-      }), (0, i.jsx)(o.Z.div, {
+      }), (0, r.jsx)(o.Z.div, {
         style: this.getScaleStyle(),
         children: t
       })]
     })
   }
   constructor(...e) {
-    super(...e), y(this, "scaleAnimation", new o.Z.Value(0)), y(this, "spriteAnimation", new o.Z.Value(0)), y(this, "spriteOpacity", new o.Z.Value(0)), y(this, "widthAnimation", new o.Z.Value(0))
+    super(...e), v(this, "scaleAnimation", new o.Z.Value(0)), v(this, "spriteAnimation", new o.Z.Value(0)), v(this, "spriteOpacity", new o.Z.Value(0)), v(this, "widthAnimation", new o.Z.Value(0))
   }
 }
 
-function O(e) {
+function x(e) {
   var t;
   let {
     participants: n,
-    onContextMenu: r,
+    onContextMenu: i,
     className: l,
     onClick: o,
     width: u,
     guildId: b
-  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([f.Z], () => f.Z.isFocused()), O = n.map(e => {
+  } = e, y = (0, p.ZP)(), v = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), O = (0, s.e7)([f.Z], () => f.Z.isFocused()), x = n.map(e => {
     var t, n;
-    if (e.type !== m.fO.USER) return null;
+    if (e.type !== g.fO.USER) return null;
     let {
       user: l,
       voiceState: a,
@@ -165,18 +165,18 @@ function O(e) {
       latched: u,
       ringing: p
     } = e;
-    return (0, i.jsx)(x, {
-      className: g.participant,
-      width: (0, d.dcp)(y),
-      theme: C,
-      children: (0, i.jsx)(d.kL8, {
+    return (0, r.jsx)(j, {
+      className: m.participant,
+      width: (0, d.dcp)(v),
+      theme: y,
+      children: (0, r.jsx)(d.kL8, {
         "aria-label": l.username,
         onClick: t => null == o ? true : o(e, t),
-        onContextMenu: t => null == r ? true : r(e, t),
-        children: (0, i.jsx)(h.Z, {
+        onContextMenu: t => null == i ? true : i(e, t),
+        children: (0, r.jsx)(h.Z, {
           userId: l.id,
-          src: l.getAvatarURL(b, (0, d.dcp)(y), s && v),
-          size: y,
+          src: l.getAvatarURL(b, (0, d.dcp)(v), s && O),
+          size: v,
           muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
           deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
           speaking: s,
@@ -187,10 +187,10 @@ function O(e) {
       })
     }, l.id)
   });
-  return (0, i.jsx)(c.W, {
+  return (0, r.jsx)(c.W, {
     component: "div",
     role: "list",
-    className: a()(g.root, l),
-    children: O
+    className: a()(m.root, l),
+    children: x
   })
 }

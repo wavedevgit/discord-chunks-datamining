@@ -40,7 +40,7 @@ class E extends Chunk473749.PureComponent {
       host: t,
       party: n
     } = this.props;
-    return this.hasParty(n) && null != e ? (0, r.jsx)(m.Z, {
+    return this.hasParty(n) && null != e ? (0, r.jsx)(h.Z, {
       currentUser: e,
       host: t,
       party: n,
@@ -85,7 +85,7 @@ class E extends Chunk473749.PureComponent {
       let {
         party: e
       } = this.props;
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(m.Z, {
         party: e,
         header: b.intl.formatToPlainString(b.t.I9et1z, {
           count: e.length

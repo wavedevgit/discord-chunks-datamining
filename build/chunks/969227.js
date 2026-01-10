@@ -16,7 +16,7 @@ function c(e) {
     quest: n,
     questContent: c,
     sourceQuestContent: u,
-    onClick: d,
+    onCloseModal: d,
     shouldShowShopIfAlreadyClaimed: m
   } = e, f = (0, a.hf)({
     quest: n,
@@ -25,10 +25,10 @@ function c(e) {
   });
   return r.useCallback(e => {
     var t;
-    null == d || d(e), (0, i.xN)(n.config) && (null == (t = n.userStatus) ? true : t.claimedAt) != null && m ? (0, l.mK)({
+    (0, i.xN)(n.config) && (null == (t = n.userStatus) ? true : t.claimedAt) != null && m ? (null == d || d(e), (0, l.mK)({
       tab: s.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: o.Z.QUEST_HOME_PAGE
-    }) : f()
-  }, [d, n.config, null == (t = n.userStatus) ? true : t.claimedAt, f, m])
+    })) : ((0, i.Bg)(n.config) && (null == d || d(e)), f())
+  }, [n.config, null == (t = n.userStatus) ? true : t.claimedAt, f, m, d])
 }

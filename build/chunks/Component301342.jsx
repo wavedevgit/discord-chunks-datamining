@@ -1,11 +1,11 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => w,
-  Qo: () => T,
-  ZP: () => Z,
+  P: () => T,
+  Qo: () => A,
+  ZP: () => N,
   kw: () => R,
-  rj: () => A
+  rj: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -66,28 +66,28 @@ function I(e, t) {
 function P(e) {
   e.stopPropagation()
 }
-let N = Chunk473749.memo(function(e) {
+let Z = Chunk473749.memo(function(e) {
     let t, {
         channel: l,
         connectChannelDragSource: d,
         connectChannelDropTarget: g,
         disableManageChannels: j,
-        position: C,
-        sortingPosition: N,
-        hideIcon: Z,
-        children: w
+        position: x,
+        sortingPosition: Z,
+        hideIcon: N,
+        children: T
       } = e,
-      T = (0, s.e7)([v.ZP], () => v.ZP.isChannelMuted(l.getGuildId(), l.id)),
-      A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
-      R = (0, s.e7)([O.Z], () => O.Z.can(x.Plq.MANAGE_CHANNELS, l));
-    t = null != N ? C > N ? S.containerDragAfter : S.containerDragBefore : S.containerDefault;
+      A = (0, s.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      w = (0, s.e7)([b.Z], () => b.Z.isCollapsed(l.id)),
+      R = (0, s.e7)([v.Z], () => v.Z.can(C.Plq.MANAGE_CHANNELS, l));
+    t = null != Z ? x > Z ? S.containerDragAfter : S.containerDragBefore : S.containerDefault;
     let D = i.useCallback(() => {
-        A ? (0, h.mJ)(l.id) : (0, h.c4)(l.id)
-      }, [l.id, A]),
+        w ? (0, f.mJ)(l.id) : (0, f.c4)(l.id)
+      }, [l.id, w]),
       M = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = y.Z.getGuild(l.getGuildId());
-          null != t && (0, p.jW)(e, async () => {
+          null != t && (0, h.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
@@ -98,10 +98,10 @@ let N = Chunk473749.memo(function(e) {
           })
         }
       }, [l]),
-      L = i.useCallback(() => {
-        let e = l.type === x.d4z.GUILD_CATEGORY ? null : l.type,
+      k = i.useCallback(() => {
+        let e = l.type === C.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
-        null != t && (0, f.ZDy)(async () => {
+        null != t && (0, p.ZDy)(async () => {
           let {
             default: i
           } = await Promise.all([n.e("29497"), n.e("59679")]).then(n.bind(n, 241865));
@@ -112,11 +112,11 @@ let N = Chunk473749.memo(function(e) {
           }))
         })
       }, [l]),
-      k = (0, o.JA)(l.id),
+      L = (0, o.JA)(l.id),
       {
-        role: G,
-        tabIndex: U
-      } = k,
+        role: U,
+        tabIndex: G
+      } = L,
       B = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
@@ -131,46 +131,46 @@ let N = Chunk473749.memo(function(e) {
           for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
-      }(k, ["role", "tabIndex"]),
+      }(L, ["role", "tabIndex"]),
       F = i.useRef(null),
-      V = i.useRef(null),
-      H = (0, r.jsxs)("li", {
+      H = i.useRef(null),
+      V = (0, r.jsxs)("li", {
         className: t,
         "data-dnd-name": l.name,
-        children: [(0, r.jsx)(f.tEY, {
+        children: [(0, r.jsx)(p.tEY, {
           focusTarget: F,
-          ringTarget: V,
+          ringTarget: H,
           offset: {
             left: 4,
             right: 4
           },
           children: (0, r.jsxs)("div", {
-            ref: V,
+            ref: H,
             className: a()(S.iconVisibility, S.wrapper, {
-              [S.collapsed]: A,
-              [S.muted]: T,
+              [S.collapsed]: w,
+              [S.muted]: A,
               [S.clickable]: true
             }),
             onContextMenu: M,
-            children: [(0, r.jsxs)(f.P3F, I(_({
+            children: [(0, r.jsxs)(p.P3F, I(_({
               innerRef: F,
               className: S.mainContent,
-              tabIndex: U
+              tabIndex: G
             }, B), {
               onClick: D,
               "aria-label": E.intl.formatToPlainString(E.t.y5l3J2, {
                 categoryName: l.name
               }),
-              "aria-expanded": !A,
+              "aria-expanded": !w,
               focusProps: {
                 enabled: false
               },
-              children: [(0, r.jsx)(b.Z, {
+              children: [(0, r.jsx)(m.Z, {
                 className: S.name,
                 children: (0, r.jsx)(c.Z, {
                   children: l.name
                 })
-              }), Z ? null : (0, r.jsx)(f.CJ0, {
+              }), N ? null : (0, r.jsx)(p.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: S.icon
@@ -180,13 +180,13 @@ let N = Chunk473749.memo(function(e) {
               className: S.children,
               children: R && !j ? (0, r.jsx)(u.u, {
                 text: E.intl.string(E.t["fUYU+j"]),
-                children: (0, r.jsx)(f.P3F, {
+                children: (0, r.jsx)(p.P3F, {
                   className: a()(S.addButton, S.forceVisible),
-                  onClick: L,
-                  tabIndex: U,
+                  onClick: k,
+                  tabIndex: G,
                   role: "button",
                   "aria-label": E.intl.string(E.t["fUYU+j"]),
-                  children: (0, r.jsx)(f.BRu, {
+                  children: (0, r.jsx)(p.BRu, {
                     size: "xs",
                     color: "currentColor",
                     className: S.addButtonIcon
@@ -195,12 +195,12 @@ let N = Chunk473749.memo(function(e) {
               }) : null
             })]
           })
-        }), w]
+        }), T]
       });
-    return null != g && null != d ? g(d(H)) : H
+    return null != g && null != d ? g(d(V)) : V
   }),
-  Z = (0, Chunk146773.B)(N),
-  w = Chunk473749.memo(function(e) {
+  N = (0, Chunk146773.B)(Z),
+  T = Chunk473749.memo(function(e) {
     let {
       name: t,
       onDismiss: n,
@@ -212,7 +212,7 @@ let N = Chunk473749.memo(function(e) {
         className: a()(S.iconVisibility, S.wrapperStatic),
         children: [(0, r.jsx)("div", {
           className: S.mainContent,
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(m.Z, {
             className: S.name,
             children: (0, r.jsx)(c.Z, {
               children: t
@@ -221,10 +221,10 @@ let N = Chunk473749.memo(function(e) {
         }), null != n ? (0, r.jsx)(u.u, {
           asContainer: true,
           text: E.intl.string(E.t["5qNmsU"]),
-          children: (0, r.jsx)(f.P3F, {
+          children: (0, r.jsx)(p.P3F, {
             className: S.dismissButton,
             onClick: n,
-            children: (0, r.jsx)(f.k$p, {
+            children: (0, r.jsx)(p.k$p, {
               size: "md",
               color: "currentColor",
               className: S.dismiss
@@ -234,11 +234,11 @@ let N = Chunk473749.memo(function(e) {
       })
     })
   }),
-  T = Chunk473749.memo(function(e) {
+  A = Chunk473749.memo(function(e) {
     let {
       category: t
     } = e, n = (0, s.e7)([j.Z], () => j.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
-      n ? (0, C.s)(t.guild.id) : (0, C.M)(t.guild.id)
+      n ? (0, x.s)(t.guild.id) : (0, x.M)(t.guild.id)
     }, [t.guild.id, n]);
     return (0, r.jsx)("div", {
       className: S.refreshVoiceChannelsButton,
@@ -246,21 +246,21 @@ let N = Chunk473749.memo(function(e) {
         variant: "secondary",
         fullWidth: true,
         onClick: l,
-        icon: f.gj8,
+        icon: p.gj8,
         text: n ? E.intl.string(E.t["/eB9Bg"]) : E.intl.string(E.t.Q2gPWl)
       })
     })
   }),
-  A = Chunk473749.memo(function(e) {
+  w = Chunk473749.memo(function(e) {
     let {
       category: t,
       channel: n
     } = e, i = (0, s.e7)([j.Z], () => j.Z.isVoiceCategoryCollapsed(t.guild.id));
-    return i || null == n || n.record.type === x.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
+    return i || null == n || n.record.type === C.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
       className: S.containerDefault,
       children: (0, r.jsx)("div", {
         className: a()(S.iconVisibility, S.wrapperStatic),
-        children: (0, r.jsx)(b.Z, {
+        children: (0, r.jsx)(m.Z, {
           className: S.name,
           children: (0, r.jsx)(c.Z, {
             children: E.intl.string(E.t["V/u9Dy"])
@@ -281,7 +281,7 @@ let N = Chunk473749.memo(function(e) {
       className: S.containerDefault,
       children: (0, r.jsx)("div", {
         className: a()(S.iconVisibility, S.wrapperStatic),
-        children: (0, r.jsx)(b.Z, {
+        children: (0, r.jsx)(m.Z, {
           className: S.name,
           children: (0, r.jsx)(c.Z, {
             children: t.name

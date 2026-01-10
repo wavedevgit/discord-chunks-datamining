@@ -2,16 +2,18 @@
 /** chunk id: 560223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk975298 = require("./975298.js"),
   Chunk594928 = require("./594928.js"),
   Chunk172416 = require("./172416.js"),
+  Chunk594174 = require("./594174.js"),
   Chunk695349 = require("./695349.js"),
   Chunk340625 = require("./340625.js"),
   Chunk260720 = require("./260720.js"),
@@ -22,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk51636 = require("./51636.jsx"),
   Chunk877782 = require("./877782.js");
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,20 +33,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,108 +57,109 @@ function v(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let C = e => {
     let {
       showAllPerksButton: t,
       leftAlignHeaders: n,
       title: i,
       headerClassname: a
-    } = e, o = (0, r.jsx)(s.Heading, {
+    } = e, o = (0, r.jsx)(l.Heading, {
       variant: "heading-xxl/extrabold",
       color: "text-strong",
-      className: null != a ? a : b.heading,
+      className: null != a ? a : O.heading,
       children: i
     });
     return null == t ? o : n ? (0, r.jsxs)("div", {
-      className: b.sectionHeader,
+      className: O.sectionHeader,
       children: [o, null != t && (0, r.jsx)("div", {
-        className: b.showAllPerksButton,
+        className: O.showAllPerksButton,
         children: t
       })]
     }) : (0, r.jsx)("div", {
-      className: b.container,
+      className: O.container,
       children: (0, r.jsx)("div", {
-        className: b.sectionHeaderSeeAll,
+        className: O.sectionHeaderSeeAll,
         children: o
       })
     })
   },
-  T = e => {
+  A = e => {
     let {
       className: t,
       variant: n,
       noBackground: a = false,
-      leftAlignHeaders: y = false,
-      showAllPerksButton: v,
-      headerClassname: T
-    } = e, C = i.useRef(null), A = n === h.gM.WHATS_NEW, N = (0, _.x)();
+      leftAlignHeaders: v = false,
+      showAllPerksButton: I,
+      headerClassname: A
+    } = e, N = i.useRef(null), P = n === E.gM.WHATS_NEW, R = (0, s.e7)([f.default], () => f.default.getCurrentUser()), w = (0, h.x)();
     i.useEffect(() => {
-      A && N()
-    }, [N, A]);
-    let P = (0, g.re)(A),
-      R = (0, m.Z)(),
-      w = (0, g.mN)(),
+      P && w()
+    }, [w, P]);
+    let D = (0, b.re)(P),
+      x = (0, g.Z)(),
+      L = (0, b.mN)(),
       {
-        fractionalState: D
-      } = (0, l.Z)(),
-      x = (0, d.W)(),
-      L = (0, u.bg)({
+        fractionalState: j
+      } = (0, c.Z)(),
+      M = (0, p.W)(),
+      k = (0, d.bg)({
         location: "PremiumPerks"
       }),
-      j = c.JH.useExperiment({
+      U = u.JH.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      M = f.Z.useExperiment({
+      G = _.Z.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      k = (0, p.QL)(),
-      U = (0, g.ZM)({
-        perksCards: R,
+      Z = (0, m.QL)(),
+      F = (0, b.ZM)({
+        perksCards: x,
         variant: n,
         hideCardsOnNarrowScreen: false,
-        isPremiumSubscriber: w,
-        fractionalState: D,
-        isInReverseTrial: x,
-        showProfileWidgets: L,
-        showDisplayNameStyles: j,
-        recurring3PPromotionExperiment: M,
-        showPremiumGroup: k
+        isPremiumSubscriber: L,
+        fractionalState: j,
+        isInReverseTrial: M,
+        showProfileWidgets: k,
+        showDisplayNameStyles: U,
+        recurring3PPromotionExperiment: G,
+        showPremiumGroup: Z,
+        isPremiumGroupMember: null == R ? true : R.isPremiumGroupMember()
       }),
-      G = U.some(e => null != e.pillText);
+      B = F.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
-      ref: C,
-      className: o()(b.section, {
-        [b.centerAlignSection]: !y,
-        [b.leftAlignSection]: y
+      ref: N,
+      className: o()(O.section, {
+        [O.centerAlignSection]: !v,
+        [O.leftAlignSection]: v
       }, t),
-      children: [(0, r.jsx)(I, {
-        showAllPerksButton: v,
-        leftAlignHeaders: y,
-        title: P.title,
-        headerClassname: T
-      }), (0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(C, {
+        showAllPerksButton: I,
+        leftAlignHeaders: v,
+        title: D.title,
+        headerClassname: A
+      }), (0, r.jsx)(l.Text, {
         variant: "text-lg/normal",
         color: "text-strong",
-        className: o()(b.subtitle, {
-          [b.subtitle]: null == v || y,
-          [b.subtitleWithButton]: null != v && !y,
-          [b.fullWidth]: A || y,
-          [b.moreSubtitleMargin]: G,
-          [b.leftAlignSubtitle]: y,
-          [b.centerAlignSubtitle]: !y
+        className: o()(O.subtitle, {
+          [O.subtitle]: null == I || v,
+          [O.subtitleWithButton]: null != I && !v,
+          [O.fullWidth]: P || v,
+          [O.moreSubtitleMargin]: B,
+          [O.leftAlignSubtitle]: v,
+          [O.centerAlignSubtitle]: !v
         }),
-        children: P.subtitle
-      }), !y && null != v && (0, r.jsx)("div", {
-        className: b.showAllPerksButtonCenter,
-        children: v
+        children: D.subtitle
+      }), !v && null != I && (0, r.jsx)("div", {
+        className: O.showAllPerksButtonCenter,
+        children: I
       }), (0, r.jsx)("div", {
-        className: b.cardContainer,
-        children: U.map((e, t) => (0, r.jsx)(E.Z, S(O({}, e), {
+        className: O.cardContainer,
+        children: F.map((e, t) => (0, r.jsx)(y.Z, T(S({}, e), {
           forceShadow: a
         }), "".concat(e.name, "_").concat(t)))
       })]

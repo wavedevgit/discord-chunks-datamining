@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 608949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = {};
-class f extends(r = Chunk442837.ZP.PersistedStore) {
+class p extends(r = Chunk442837.ZP.PersistedStore) {
   getState() {
     return d
   }
@@ -30,17 +30,17 @@ class f extends(r = Chunk442837.ZP.PersistedStore) {
     return d[e]
   }
 }
-u(f, "displayName", "GuildPowerupsNotificationStore"), u(f, "persistKey", "GuildPowerupsNotificationStore"), u(f, "migrations", [e => (Object.entries(e).forEach(t => {
+u(p, "displayName", "GuildPowerupsNotificationStore"), u(p, "persistKey", "GuildPowerupsNotificationStore"), u(p, "migrations", [e => (Object.entries(e).forEach(t => {
   let [n, r] = t;
   e[n] = r
 }), e)]);
-let h = new f(Chunk570140.Z, {
+let f = new p(Chunk570140.Z, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
-    var t, n, r, i, l, f, h, p;
+    var t, n, r, i, l, p, f, h;
     let {
       guildId: g
-    } = e, b = null != (r = null == (t = a.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, m = s.Z.getStateForGuild(g), y = o.Z.getStateForGuild(g), O = (0, c.h)([...Object.values(null != (i = null == m ? true : m.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == y ? true : y.entitlements) ? l : {})]);
-    h = function(e) {
+    } = e, m = null != (r = null == (t = a.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, b = s.Z.getStateForGuild(g), y = o.Z.getStateForGuild(g), v = (0, c.h)([...Object.values(null != (i = null == b ? true : b.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == y ? true : y.entitlements) ? l : {})]);
+    f = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -51,21 +51,21 @@ let h = new f(Chunk570140.Z, {
         })
       }
       return e
-    }({}, d), p = p = {
+    }({}, d), h = h = {
       [g]: {
-        lastSeenWarningNotification: new Date(null != (f = null == (n = O[O.length - 1]) ? true : n.ends_at) ? f : Date.now()).getTime(),
-        lastBoostCount: b
+        lastSeenWarningNotification: new Date(null != (p = null == (n = v[v.length - 1]) ? true : n.ends_at) ? p : Date.now()).getTime(),
+        lastBoostCount: m
       }
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(h, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(f, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(p)).forEach(function(e) {
-      Object.defineProperty(h, e, Object.getOwnPropertyDescriptor(p, e))
-    }), d = h
+    })(Object(h)).forEach(function(e) {
+      Object.defineProperty(f, e, Object.getOwnPropertyDescriptor(h, e))
+    }), d = f
   },
   GUILD_POWERUPS_RESET_NOTIFICATIONS: function() {
     d = {}

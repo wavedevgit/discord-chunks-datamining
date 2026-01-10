@@ -24,16 +24,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js");
 require("./635324.jsx"), require("./29973.jsx"), require("./308765.js"), require("./913487.js"), require("./606206.js"), Chunk442837.ZP.initialize();
 let E = function() {
-  return r.useEffect(() => (b.Z.initialize(), d.Z.initialize(), m.Z.init(), () => {
-    b.Z.terminate(), d.Z.terminate()
+  return r.useEffect(() => (m.Z.initialize(), d.Z.initialize(), b.Z.init(), () => {
+    m.Z.terminate(), d.Z.terminate()
   }), []), (0, i.jsxs)(r.Fragment, {
     children: [(0, i.jsx)(u.Z, {}), (0, i.jsx)(c.T, {
       children: (0, i.jsxs)(y.Z, {
-        children: [(0, i.jsx)(h.Co, {}), (0, i.jsx)(f.ZP, {}), (0, i.jsx)(g.Wu, {
+        children: [(0, i.jsx)(f.Co, {}), (0, i.jsx)(h.ZP, {}), (0, i.jsx)(g.Wu, {
           appContext: O.IlC.OVERLAY,
           renderWindow: window,
           children: (0, i.jsxs)(p.yP, {
-            children: [(0, i.jsx)(v.Z, {}), (0, i.jsx)(o.nKe, {}), (0, i.jsx)(l.Z, {}), (0, i.jsx)(a.uZ, {}), (0, i.jsx)(p.Un, {})]
+            children: [(0, i.jsx)(v.Z, {}), (0, i.jsx)(l.nKe, {}), (0, i.jsx)(a.Z, {}), (0, i.jsx)(s.uZ, {}), (0, i.jsx)(p.Un, {})]
           })
         })]
       })

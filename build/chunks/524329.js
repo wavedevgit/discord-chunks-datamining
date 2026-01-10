@@ -1,11 +1,11 @@
-/** Chunk was on 15718 **/
+/** Chunk was on 69937 **/
 /** chunk id: 524329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Es: () => E,
+  Es: () => d,
   RM: () => s,
-  VP: () => c,
+  VP: () => u,
   Xb: () => o,
-  sm: () => u,
+  sm: () => c,
   y0: () => a
 }), require("./953529.js");
 var Chunk544891 = require("./544891.js"),
@@ -43,16 +43,16 @@ let a = function(e) {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })
-  }, u = () => {
+  }, c = () => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_CLEAR"
     })
-  }, c = e => {
+  }, u = e => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_UPDATE",
       settings: e
     })
-  }, E = async (e, t) => {
+  }, d = async (e, t) => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SUBMIT"
     });

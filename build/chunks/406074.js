@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 406074, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => p
@@ -18,9 +18,9 @@ function p(e) {
     guildId: t,
     channelId: n
   } = e, p = (0, c.qi)(t);
-  return (0, r.Wu)([a.Z, o.Z, i.Z], () => {
+  return (0, r.Wu)([a.Z, s.Z, i.Z], () => {
     let e = a.Z.getChannel(n),
-      r = o.Z.getGuild(t),
+      r = s.Z.getGuild(t),
       c = i.Z.isViewingServerShop(t);
     return null != r && null != e ? p.filter(t => (function(e, t, n) {
       let {
@@ -28,12 +28,12 @@ function p(e) {
       } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
       if (!(r || e.published)) returnfalse;
       let i = n.permissionOverwrites[e.role_id];
-      if ((0, d.TG)(n, i)) returntrue;
-      let a = s.Z.getEveryoneRole(t),
-        o = null != a && !(0, l.Fs)(a, u.Plq.VIEW_CHANNEL),
-        c = (0, d.wB)(n, n.permissionOverwrites[t.id]),
-        p = s.Z.getRole(t.id, e.role_id);
-      return o && !c && null != p && (0, d.yt)(p) && !(0, d.wB)(n, i)
+      if ((0, u.TG)(n, i)) returntrue;
+      let a = o.Z.getEveryoneRole(t),
+        s = null != a && !(0, l.Fs)(a, d.Plq.VIEW_CHANNEL),
+        c = (0, u.wB)(n, n.permissionOverwrites[t.id]),
+        p = o.Z.getRole(t.id, e.role_id);
+      return s && !c && null != p && (0, u.yt)(p) && !(0, u.wB)(n, i)
     })(t, r, e, {
       isPreviewingRoles: c
     })) : []

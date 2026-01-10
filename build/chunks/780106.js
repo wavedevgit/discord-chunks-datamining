@@ -1,13 +1,13 @@
-/** Chunk was on 51333 **/
+/** Chunk was on 83772 **/
 /** chunk id: 780106, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => a,
-  h: () => o
+  O: () => s,
+  h: () => a
 });
 var Chunk593472 = require("./593472.js"),
   Chunk70956 = require("./70956.js"),
   Chunk981631 = require("./981631.js");
-let a = {
+let s = {
     None: true,
     Terraria: {
       id: "1402418344912752671",
@@ -30,4 +30,4 @@ let a = {
       distributor: Chunk981631.GQo.STEAM
     }
   },
-  o = Object.keys(a)
+  a = Object.keys(s)

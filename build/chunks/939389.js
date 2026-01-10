@@ -1,70 +1,55 @@
 /** Chunk was on 75909 **/
 /** chunk id: 939389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $R: () => v,
-  G6: () => m,
-  JC: () => u,
-  PW: () => p,
-  yv: () => d
-}), require("./388685.js");
-var Chunk473749 = require("./473749.js"),
-  Chunk447543 = require("./447543.js"),
+  $R: () => f,
+  JC: () => c,
+  PW: () => m,
+  yv: () => u
+}), require("./388685.js"), require("./473749.js");
+var Chunk447543 = require("./447543.js"),
   Chunk960904 = require("./960904.js"),
   Chunk830121 = require("./830121.js"),
   Chunk701190 = require("./701190.js"),
   Chunk771845 = require("./771845.js"),
   Chunk591759 = require("./591759.js");
-let u = e => null != e.text;
+let c = e => null != e.text;
 
-function d(e) {
+function u(e) {
   let t = 0 | e,
     n = Math.floor(t / 3600),
     r = Math.floor(t % 3600 / 60),
     o = t % 60;
   return n > 0 ? "".concat(n, ":").concat(String(r).padStart(2, "0"), ":").concat(String(o).padStart(2, "0")) : "".concat(r, ":").concat(String(o).padStart(2, "0"))
 }
-
-function m(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 2e3,
-    [o, l] = (0, r.useState)(e),
-    i = (0, r.useRef)(null);
-  return (0, r.useEffect)(() => () => {
-    null != i.current && clearTimeout(i.current)
-  }, [e]), [o, () => {
-    l(t), null != i.current && clearTimeout(i.current), i.current = setTimeout(() => {
-      l(e)
-    }, n)
-  }]
-}
-async function f(e) {
+async function d(e) {
   try {
     var t;
-    let n = (0, i.zO)(e);
-    if (null == n || n.type !== l.g.INVITE) returnfalse;
-    let r = a.Z.getInvite(n.code);
-    if (null == r) {
+    let n = (0, l.zO)(e);
+    if (null == n || n.type !== o.g.INVITE) returnfalse;
+    let s = i.Z.getInvite(n.code);
+    if (null == s) {
       let {
         invite: e
-      } = await o.ZP.resolveInvite(n.code, "Markdown Link");
-      r = e
+      } = await r.ZP.resolveInvite(n.code, "Markdown Link");
+      s = e
     }
-    if (null == r) returnfalse;
-    let c = s.ZP.getFlattenedGuildIds(),
-      u = null == r || null == (t = r.guild) ? true : t.id;
+    if (null == s) returnfalse;
+    let c = a.ZP.getFlattenedGuildIds(),
+      u = null == s || null == (t = s.guild) ? true : t.id;
     return null != u && c.includes(u)
   } catch (e) {
     returnfalse
   }
 }
-async function p(e) {
+async function m(e) {
   try {
-    if (c.Z.isDiscordUrl(e)) returntrue;
-    return await f(e)
+    if (s.Z.isDiscordUrl(e)) returntrue;
+    return await d(e)
   } catch (e) {
     returnfalse
   }
 }
 
-function v(e, t, n) {
+function f(e, t, n) {
   return e ? t.timestampSec >= t.duration ? 0 : t.timestampSec : Math.max(t.timestampSec, n.progressSeconds)
 }

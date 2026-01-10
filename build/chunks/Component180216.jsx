@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 180216, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,20 +22,20 @@ function b(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, b = (0, d.C)({
+  } = e, b = (0, u.C)({
     guildId: t,
     channelId: n
-  }), y = (0, c.GG)(t), O = (0, c.YB)(t), x = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), j = null == x ? true : x.name, v = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), C = i.useMemo(() => {
+  }), y = (0, c.GG)(t), v = (0, c.YB)(t), O = (0, l.e7)([s.Z], () => s.Z.getGuild(t), [t]), j = null == O ? true : O.name, x = (0, l.e7)([o.Z], () => o.Z.getChannel(n)), C = i.useMemo(() => {
     let e = {};
     for (let t of y)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
     return e
   }, [y]);
-  return ((0, u.Z)({
+  return ((0, d.Z)({
     guildId: t,
-    location: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL,
+    location: h.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL,
     relevantSubscriptionListingIds: b.map(e => e.id)
-  }), null == x) ? (0, r.jsx)("div", {
+  }), null == O) ? (0, r.jsx)("div", {
     className: m.__invalid_spinnerContainer,
     children: (0, r.jsx)(a.$jN, {
       className: m.__invalid_spinner
@@ -47,20 +47,20 @@ function b(e) {
       className: m.joinCtaTitle,
       children: g.intl.format(g.t.xHMpym, {
         serverName: j,
-        channelName: null == v ? true : v.name
+        channelName: null == x ? true : x.name
       })
     }), (0, r.jsx)(a.Text, {
       className: m.joinCtaSubtitle,
       variant: "text-md/normal",
       color: "text-default",
-      children: null == O ? true : O.description
+      children: null == v ? true : v.description
     }), (0, r.jsx)(p.Z, {
       guildId: t,
-      children: b.filter(e => null != C[e.id]).map(e => (0, r.jsx)(h.Z, {
+      children: b.filter(e => null != C[e.id]).map(e => (0, r.jsx)(f.Z, {
         guildId: t,
         listingId: e.id,
         groupListingId: C[e.id],
-        analyticsLocation: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL
+        analyticsLocation: h.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL
       }, e.id))
     })]
   })

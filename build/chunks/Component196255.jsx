@@ -1,4 +1,4 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 87646 **/
 /** chunk id: 196255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk456269 = require("./456269.js"),
@@ -15,29 +15,29 @@ var Chunk120356 = require("./120356.js"),
 let d = e => {
   var t, n;
   let {
-    message: l,
+    message: s,
     channel: d,
-    renderColon: m,
-    hasUnreads: h
+    renderColon: h,
+    hasUnreads: g
   } = e, {
-    user: g,
+    user: m,
     author: f
-  } = (0, o.AJ)(d), x = null != (n = null != (t = null == f ? true : f.nick) ? t : null == g ? true : g.username) ? n : "", j = (0, i.l)({
-    user: null == l ? true : l.author,
+  } = (0, o.AJ)(d), p = null != (n = null != (t = null == f ? true : f.nick) ? t : null == m ? true : m.username) ? n : "", v = (0, a.l)({
+    user: null == s ? true : s.author,
     channelId: d.id,
     guildId: d.guild_id,
-    messageId: null == l ? true : l.id,
+    messageId: null == s ? true : s.id,
     stopPropagation: true,
     ariaLabel: c.intl.formatToPlainString(c.t.CSIeU1, {
-      name: x
+      name: p
     })
-  })(null != f ? f : true)(x, d.id);
-  return (0, s.jsxs)(r.Text, {
+  })(null != f ? f : true)(p, d.id);
+  return (0, i.jsxs)(l.Text, {
     tag: "span",
-    className: a()(u.author, {
-      [u.hasUnreads]: h
+    className: r()(u.author, {
+      [u.hasUnreads]: g
     }),
     variant: "text-sm/semibold",
-    children: [j, true === m ? ": " : null]
+    children: [v, true === h ? ": " : null]
   })
 }

@@ -85,7 +85,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
     let x = (0, a.e7)([v.Z], () => v.Z.getGuild("942897714956472401")),
       O = l.features.has(_.GuildFeatures.COMMUNITY) && u >= 1e3 && g && null == x;
     if (t && n && !O) return null;
-    let C = async () => {
+    let y = async () => {
       try {
         let e = await s.tn.post({
           url: _.ANM.JOIN_ADMIN_SERVER(l.id),
@@ -135,7 +135,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             variant: "primary",
             size: "sm",
             text: T.intl.string(T.t.iF1Asi),
-            onClick: C
+            onClick: y
           })
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
@@ -194,7 +194,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       } = e;
       t.type === _.d4z.GUILD_TEXT && b.push({
         value: t.id,
-        label: (0, p.F6)(t, y.default, C.Z, true)
+        label: (0, p.F6)(t, C.default, y.Z, true)
       })
     });
     let h = () => {

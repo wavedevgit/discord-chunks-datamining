@@ -24,10 +24,10 @@ function j(e) {
     label: l,
     children: n
   } = e;
-  return (0, t.jsxs)(a.Kqy, {
+  return (0, t.jsxs)(r.Kqy, {
     direction: "vertical",
     gap: 4,
-    children: [(0, t.jsx)(a.Text, {
+    children: [(0, t.jsx)(r.Text, {
       variant: "text-sm/medium",
       color: "text-default",
       children: l
@@ -41,15 +41,15 @@ function h(e) {
     checked: n,
     onChange: i
   } = e;
-  return (0, t.jsxs)(a.Kqy, {
+  return (0, t.jsxs)(r.Kqy, {
     direction: "horizontal",
     justify: "space-between",
     align: "center",
-    children: [(0, t.jsx)(a.Text, {
+    children: [(0, t.jsx)(r.Text, {
       variant: "text-sm/medium",
       color: "text-default",
       children: l
-    }), (0, t.jsx)(o.ZP, {
+    }), (0, t.jsx)(d.ZP, {
       value: n,
       onChange: i,
       title: ""
@@ -61,7 +61,7 @@ let E = () => {
   let l = u.G6.useSetting(),
     {
       nickname: n,
-      dmsAllowed: o,
+      dmsAllowed: d,
       showActivity: g,
       setNickname: E,
       setDmsAllowed: p,
@@ -69,15 +69,15 @@ let E = () => {
       guildId: I,
       inviteCode: N
     } = (0, c.XW)(),
-    f = null == (e = r.Z.getProps().invite) ? true : e.is_nickname_changeable,
+    f = null == (e = a.Z.getProps().invite) ? true : e.is_nickname_changeable,
     S = i.useCallback(() => {
-      d.default.track(m.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+      o.default.track(m.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
         guild_id: I,
         invite_code: N
       })
     }, [I, N]);
   return (0, t.jsxs)(s.Z, {
-    icon: (0, t.jsx)(a.ewm, {
+    icon: (0, t.jsx)(r.ewm, {
       size: "refresh_sm"
     }),
     title: x.intl.string(x.t["A5wHQ/"]),
@@ -87,7 +87,7 @@ let E = () => {
     children: [f && (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsx)(j, {
         label: x.intl.string(x.t.me1lRk),
-        children: (0, t.jsx)(a.oil, {
+        children: (0, t.jsx)(r.oil, {
           placeholder: x.intl.string(x.t["09Q8yp"]),
           maxLength: m.l$U,
           value: n,
@@ -96,7 +96,7 @@ let E = () => {
       }), (0, t.jsx)(v, {})]
     }), (0, t.jsx)(h, {
       label: x.intl.string(x.t["/2ed37"]),
-      checked: o,
+      checked: d,
       onChange: p
     }), (0, t.jsx)(v, {}), l && (0, t.jsx)(h, {
       label: x.intl.string(x.t.bN4m1G),

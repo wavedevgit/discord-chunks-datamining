@@ -1,4 +1,4 @@
-/** Chunk was on 83203 **/
+/** Chunk was on 83772 **/
 /** chunk id: 346592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk373370 = require("./373370.js"),
   Chunk644646 = require("./644646.jsx"),
@@ -19,28 +19,28 @@ let c = function(e) {
     questContent: c,
     taskDetails: d,
     location: m,
-    sourceQuestContent: E
-  } = e, f = (0, a.DD)({
+    sourceQuestContent: f
+  } = e, p = (0, a.DD)({
     quest: l,
     taskDetails: d,
     location: m,
     questContent: c,
-    sourceQuestContent: E
+    sourceQuestContent: f
   });
   return (0, r.jsxs)("div", {
-    className: s()(u.wrapper, t),
+    className: i()(u.wrapper, t),
     children: [(0, r.jsx)(o.Z, {
       autoplay: n,
       className: u.rewardTile,
       quest: l,
       questContent: c,
-      sourceQuestContent: E
+      sourceQuestContent: f
     }), (0, r.jsx)("div", {
       className: u.copy,
-      children: (0, r.jsx)(i.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: f
+        children: p
       })
     })]
   })

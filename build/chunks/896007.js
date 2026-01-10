@@ -29,8 +29,8 @@ function b(e) {
     canAccessMembersPage: j,
     canViewGuildAnalytics: v,
     isOwner: O,
-    isGuildAdmin: C,
-    canManageGuildExpressions: y
+    isGuildAdmin: y,
+    canManageGuildExpressions: C
   } = e, N = () => (0, s.X$)({
     guild: c,
     isOwner: O,
@@ -72,12 +72,12 @@ function b(e) {
   I.push({
     section: f,
     label: "" !== c.name ? c.name : u.intl.string(u.t["154/bL"])
-  }), I.push(g(d.pNK.PROFILE, E)), I.push(g(d.pNK.TAG, E)), I.push(g(d.pNK.ENGAGEMENT, E)), I.push(g(d.pNK.BOOST_PERKS, E)), y && (I.push({
+  }), I.push(g(d.pNK.PROFILE, E)), I.push(g(d.pNK.TAG, E)), I.push(g(d.pNK.ENGAGEMENT, E)), I.push(g(d.pNK.BOOST_PERKS, E)), C && (I.push({
     section: m
   }), I.push({
     section: f,
     label: u.intl.string(u.t.m6lkGy)
-  }), I.push(g(d.pNK.EMOJI, E)), I.push(g(d.pNK.STICKERS, E)), I.push(g(d.pNK.SOUNDBOARD, E))), (b || h || j || C) && (I.push({
+  }), I.push(g(d.pNK.EMOJI, E)), I.push(g(d.pNK.STICKERS, E)), I.push(g(d.pNK.SOUNDBOARD, E))), (b || h || j || y) && (I.push({
     section: m
   }), I.push({
     section: f,

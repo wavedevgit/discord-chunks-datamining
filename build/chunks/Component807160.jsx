@@ -425,7 +425,9 @@ class eS extends(r = Chunk473749.PureComponent) {
         children: ei.intl.string(ei.t["gIGB/A"])
       }), (0, i.jsx)("div", {
         className: ea.paymentText,
-        children: ei.intl.format(ei.t.IBtGwC, {
+        children: null != r ? ei.intl.format(ei.t.Q1K9eg, {
+          username: $.ZP.getName(r)
+        }) : ei.intl.format(ei.t.IBtGwC, {
           applicationName: null == l ? true : l.name
         })
       })]

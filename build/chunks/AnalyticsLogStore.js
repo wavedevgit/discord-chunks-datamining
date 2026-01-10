@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 120816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -12,8 +12,8 @@ var a, r, Chunk772848 = require("./772848.js"),
 let u = 0,
   m = [],
   p = 0,
-  f = [],
-  h = false;
+  h = [],
+  f = false;
 class x extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(c.default, d.Z)
@@ -25,10 +25,10 @@ class x extends(a = Chunk442837.ZP.Store) {
     return p
   }
   get loggedTriggers() {
-    return f
+    return h
   }
   get trackTriggers() {
-    return h
+    return f
   }
 }(r = "displayName") in x ? Object.defineProperty(x, r, {
   value: "AnalyticsLogStore",
@@ -60,7 +60,7 @@ let b = new x(Chunk570140.Z, {
       location: l,
       previouslyTracked: s
     } = e;
-    d.Z.isDeveloper && h && (f = [...f, {
+    d.Z.isDeveloper && f && (h = [...h, {
       key: (0, i.Z)(),
       experimentId: t,
       descriptor: n,
@@ -69,15 +69,15 @@ let b = new x(Chunk570140.Z, {
       location: l,
       previouslyTracked: s,
       timestamp: new Date
-    }]).length > 500 && f.shift()
+    }]).length > 500 && h.shift()
   },
   SET_TRACK_TRIGGERS: function(e) {
     let {
       enabled: t
     } = e;
-    h = t
+    f = t
   },
   ANALYTICS_LOG_CLEAR: function() {
-    m = [], p++, f = []
+    m = [], p++, h = []
   }
 })

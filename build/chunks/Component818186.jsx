@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 818186, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,16 +16,16 @@ var Chunk692547 = require("./692547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk426153 = require("./426153.js");
 
-function p(e) {
+function h(e) {
   let {
     closePopout: t
   } = e, n = (0, c.If)();
   return (0, r.jsx)(l.u, {
     asContainer: true,
-    text: f.intl.string(f.t["lMR96+"]),
+    text: p.intl.string(p.t["lMR96+"]),
     children: (0, r.jsxs)(a.P3F, {
-      "aria-label": "".concat(f.intl.string(f.t["lMR96+"]), ", ").concat(n),
-      className: h.friendRequestsButton,
+      "aria-label": "".concat(p.intl.string(p.t["lMR96+"]), ", ").concat(n),
+      className: f.friendRequestsButton,
       onClick: () => {
         u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: s.ud.FRIEND_REQUESTS_BUTTON_CLICK

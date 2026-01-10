@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 373322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   l = require.n(Chunk120356),
   Chunk921254 = require("./921254.js"),
   Chunk24156 = require("./24156.js"),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk110924 = require("./110924.js"),
   Chunk607070 = require("./607070.js"),
@@ -21,24 +21,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk922630 = require("./922630.js"),
   Chunk197857 = require("./197857.js");
 let j = ["#51BC9D"],
-  C = e => {
+  y = e => {
     var t;
     let {
       overlayRef: n,
       progressBarRef: i,
-      isHovered: C
+      isHovered: y
     } = e, {
-      quest: y,
+      quest: C,
       isExpanded: _
-    } = r.useContext(h.A), {
+    } = r.useContext(f.A), {
       expansionSpring: S
-    } = r.useContext(f.xo), {
+    } = r.useContext(h.xo), {
       completionSpring: E,
       startCompletionAnimation: T
-    } = (0, x.GX)(), O = (null == (t = y.userStatus) ? true : t.completedAt) != null, N = r.useRef(false), P = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), w = r.useRef(null), I = (0, d.e7)([p.Z], () => p.Z.hasLayers()), k = (0, u.Z)(I), [R, A] = r.useState(null), [D, Z] = r.useState(null), L = r.useRef(new s.qA({
+    } = (0, x.GX)(), O = (null == (t = C.userStatus) ? true : t.completedAt) != null, N = r.useRef(false), P = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), w = r.useRef(null), I = (0, d.e7)([p.Z], () => p.Z.hasLayers()), k = (0, u.Z)(I), [R, A] = r.useState(null), [Z, D] = r.useState(null), L = r.useRef(new s.qA({
       gravity: 0,
       wind: 0
-    })), M = (0, s.uR)(R, D), U = r.useCallback(() => {
+    })), M = (0, s.uR)(R, Z), U = r.useCallback(() => {
       if (P) return;
       let e = i.current,
         t = w.current;
@@ -126,8 +126,8 @@ let j = ["#51BC9D"],
     }, [O, k, I, T, U]), r.useEffect(() => {
       M.isReady && (!N.current && O && (T(), U()), N.current = O)
     }, [O, N, U, T, M]), r.useEffect(() => {
-      C && O && (T(), U())
-    }, [C, O, T, U]), P) ? null : (0, a.jsxs)("div", {
+      y && O && (T(), U())
+    }, [y, O, T, U]), P) ? null : (0, a.jsxs)("div", {
       className: g.wrapper,
       "aria-hidden": "true",
       ref: w,
@@ -154,7 +154,7 @@ let j = ["#51BC9D"],
           className: g.confetti,
           environment: L.current
         }), (0, a.jsx)(s.Ji, {
-          ref: Z,
+          ref: D,
           sprites: [v],
           colors: j,
           spriteWidth: b.Ko,

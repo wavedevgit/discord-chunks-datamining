@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 219226, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,7 +30,7 @@ let _ = e => {
     let {
       channel: t,
       message: n,
-      out: r = false,
+      out: i = false,
       noAnimate: l = false
     } = e, s = (0, b.Z)(n, {
       hideSimpleEmbedContent: true,
@@ -41,85 +41,85 @@ let _ = e => {
       allowLinks: false,
       allowGameMentions: false,
       previewLinkTarget: false
-    }), c = n.author, u = O.ZP.getName(c), d = (0, f.Z)({
+    }), c = n.author, u = x.ZP.getName(c), d = (0, f.Z)({
       userId: c.id,
       guildId: t.guild_id
     }), {
       avatarSrc: p,
-      avatarDecorationSrc: g
-    } = (0, C.Z)({
+      avatarDecorationSrc: m
+    } = (0, y.Z)({
       userId: c.id,
       guildId: t.guild_id,
       size: 48
     });
-    return (0, i.jsxs)("div", {
+    return (0, r.jsxs)("div", {
       className: a()(S.message, {
-        [S.out]: r,
+        [S.out]: i,
         [S.noAnimate]: l
       }),
-      children: [(0, i.jsx)("div", {
-        children: (0, i.jsx)(o.qEK, {
+      children: [(0, r.jsx)("div", {
+        children: (0, r.jsx)(o.qEK, {
           src: p,
-          avatarDecoration: g,
+          avatarDecoration: m,
           size: o.EFr.SIZE_24,
           "aria-label": "User Avatar",
           isTyping: false
         })
-      }), (0, i.jsx)(m.Z, {
+      }), (0, r.jsx)(g.Z, {
         userName: u,
         displayNameStyles: d,
         effectDisplayType: h.F.STATIC,
         loop: true
-      }), (0, i.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: S.column,
-        children: [(0, i.jsx)(o.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           className: S.content,
           children: s.content
-        }), n.attachments.length > 0 && (0, i.jsx)("div", {
+        }), n.attachments.length > 0 && (0, r.jsx)("div", {
           className: a()(S.row, S.gap),
           children: n.attachments.filter(e => {
             var t;
             return !e.spoiler && (null == (t = e.content_type) ? true : t.startsWith("image"))
-          }).map(e => (0, i.jsx)("img", {
+          }).map(e => (0, r.jsx)("img", {
             src: e.url,
             width: 128,
             className: S.attachment,
-            alt: j.intl.string(j.t.X4IxWL)
+            alt: E.intl.string(E.t.X4IxWL)
           }, e.id))
         })]
       })]
     })
   },
-  P = e => {
+  I = e => {
     let {
       channel: t,
       idle: n,
       showChat: l
-    } = e, f = r.useRef(new Set), [h, m] = r.useState([]), [b, C] = r.useState(0), O = r.useRef(null), j = r.useRef(false), [P, I] = r.useState(true), [Z, T] = r.useState(""), [N, A] = r.useState((0, d.JM)(Z));
-    r.useEffect(() => {
+    } = e, f = i.useRef(new Set), [h, g] = i.useState([]), [b, y] = i.useState(0), x = i.useRef(null), E = i.useRef(false), [I, P] = i.useState(true), [Z, N] = i.useState(""), [T, A] = i.useState((0, d.JM)(Z));
+    i.useEffect(() => {
       let e = f.current;
       return () => {
         e.size > 0 && [...e].forEach(e => clearTimeout(e))
       }
-    }, []), r.useEffect(() => {
-      let e = () => I(true),
-        t = () => I(false);
-      return x.S.subscribe(E.CkL.TEXTAREA_FOCUS, e), x.S.subscribe(E.CkL.TEXTAREA_BLUR, t), () => {
-        x.S.unsubscribe(E.CkL.TEXTAREA_FOCUS, e), x.S.unsubscribe(E.CkL.TEXTAREA_BLUR, t)
+    }, []), i.useEffect(() => {
+      let e = () => P(true),
+        t = () => P(false);
+      return j.S.subscribe(C.CkL.TEXTAREA_FOCUS, e), j.S.subscribe(C.CkL.TEXTAREA_BLUR, t), () => {
+        j.S.unsubscribe(C.CkL.TEXTAREA_FOCUS, e), j.S.unsubscribe(C.CkL.TEXTAREA_BLUR, t)
       }
-    }, []), r.useEffect(() => {
-      let e = O.current;
+    }, []), i.useEffect(() => {
+      let e = x.current;
       null != e && e.scrollTo({
         top: e.scrollHeight,
         behavior: "smooth"
       })
-    }, [O]), r.useEffect(() => {
+    }, [x]), i.useEffect(() => {
       let e = Date.now();
-      m(v.Z.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(false))
+      g(O.Z.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(false))
     }, [t]);
-    let w = r.useCallback(e => {
-        m(t => {
+    let w = i.useCallback(e => {
+        g(t => {
           if (!t.some(t => t.id === e.id)) {
             let n = [...t, e];
             return n.length > 50 && n.shift(), n
@@ -127,30 +127,30 @@ let _ = e => {
           return t
         })
       }, []),
-      M = r.useMemo(() => {
+      R = i.useMemo(() => {
         let e = h[h.length - 1];
         if (null == e) returntrue;
         if (b + 100 > Date.now()) returnfalse;
         let t = Date.now() > e.timestamp.getTime() + 5e3;
         if (!t) {
           let e = setTimeout(() => {
-            C(Date.now()), f.current.delete(e)
+            y(Date.now()), f.current.delete(e)
           }, 5500);
           f.current.add(e)
         }
         return t
       }, [h, b]);
-    return r.useEffect(() => {
+    return i.useEffect(() => {
       let e = e => {
         let {
           channelId: n,
-          message: i
-        } = e, r = v.Z.getMessage(i.channel_id, i.id);
-        if (n === t.id && (null == r ? true : r.state) === "SENT") {
-          w(r);
+          message: r
+        } = e, i = O.Z.getMessage(r.channel_id, r.id);
+        if (n === t.id && (null == i ? true : i.state) === "SENT") {
+          w(i);
           let e = setTimeout(() => {
             f.current.delete(e);
-            let t = O.current;
+            let t = x.current;
             null != t && t.scrollTo({
               top: t.scrollHeight,
               behavior: "smooth"
@@ -160,36 +160,36 @@ let _ = e => {
         }
       };
       return s.Z.subscribe("MESSAGE_CREATE", e), () => s.Z.unsubscribe("MESSAGE_CREATE", e)
-    }, []), (0, i.jsxs)("div", {
+    }, []), (0, r.jsxs)("div", {
       className: a()(S.chatFlow, {
         [S.hidden]: !l
       }),
-      onMouseEnter: () => j.current = true,
-      onMouseLeave: () => j.current = false,
+      onMouseEnter: () => E.current = true,
+      onMouseLeave: () => E.current = false,
       onWheel: e => {
         e.preventDefault(), e.stopPropagation()
       },
       onScroll: e => {
         e.preventDefault(), e.stopPropagation()
       },
-      children: [(0, i.jsx)(y.Z, {
-        children: (0, i.jsx)("div", {
+      children: [(0, r.jsx)(v.Z, {
+        children: (0, r.jsx)("div", {
           className: a()(S.chat, {
             [S.idle]: n
           }),
-          children: (0, i.jsx)(o.Ttm, {
+          children: (0, r.jsx)(o.Ttm, {
             className: a()(S.history, {
-              [S.idle]: M && n
+              [S.idle]: R && n
             }),
-            ref: O,
-            children: h.map(e => (0, i.jsx)(_, {
+            ref: x,
+            children: h.map(e => (0, r.jsx)(_, {
               channel: t,
               message: e,
               noAnimate: true
             }, e.id))
           })
         })
-      }), (0, i.jsx)(p.ZP, {
+      }), (0, r.jsx)(p.ZP, {
         className: a()(S.outerInput, {
           [S.idle]: n && 0 === Z.length
         }),
@@ -197,29 +197,29 @@ let _ = e => {
         type: u.Ie.HAVEN,
         channel: t,
         textValue: Z,
-        richValue: N,
+        richValue: T,
         placeholder: "Send message",
-        onFocus: () => I(true),
-        onBlur: () => I(false),
-        focused: P,
+        onFocus: () => P(true),
+        onBlur: () => P(false),
+        focused: I,
         disabled: !l,
         showValueWhenDisabled: true,
         onChange: (e, t, n) => {
-          t !== Z && (T(t), A(n))
+          t !== Z && (N(t), A(n))
         },
         onSubmit: async e => {
           let {
             value: n
-          } = e, i = n.trim();
-          if (0 === i.length) return {
+          } = e, r = n.trim();
+          if (0 === r.length) return {
             shouldClear: false,
             shouldRefocus: false
           };
-          let r = g.ZP.parse(t, i);
+          let i = m.ZP.parse(t, r);
           try {
-            return await c.Z.sendMessage(t.id, r, true, {
+            return await c.Z.sendMessage(t.id, i, true, {
               location: "Haven"
-            }), T(""), A((0, d.JM)("")), {
+            }), N(""), A((0, d.JM)("")), {
               shouldClear: true,
               shouldRefocus: false
             }

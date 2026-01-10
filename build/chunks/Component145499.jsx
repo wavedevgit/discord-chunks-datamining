@@ -154,7 +154,7 @@ let T = e => {
           children: S.intl.string(S.t.BfF6ED)
         })
       }];
-    return (0, r.jsx)(y.Z, {
+    return (0, r.jsx)(C.Z, {
       tiers: L,
       renderTier: e => {
         var i;
@@ -162,14 +162,14 @@ let T = e => {
             isAnimatedTo: h,
             onSetRef: x,
             tier: O,
-            tiers: y,
+            tiers: C,
             tierIndex: T
           } = e,
           {
             canCreateExpressions: L,
             canManageGuildExpression: k
           } = (0, b.Gw)(t),
-          G = y[T - 1],
+          G = C[T - 1],
           M = null != G ? (0, v.A3)(G.tier) : 0,
           U = (0, v.A3)(O.tier, t),
           B = (0, v.ig)(O.tier),
@@ -228,14 +228,14 @@ let T = e => {
           tier: O,
           onSetRef: x,
           isAnimatedTo: h,
-          hasBottomMargin: T !== y.length - 1,
+          hasBottomMargin: T !== C.length - 1,
           withCardBody: !K,
           headerButton: g,
           showHeaderLockStatus: ei,
           guildId: t.id,
           children: [K && (0, r.jsxs)("div", {
             className: _.grid,
-            children: [F.map(e => (0, r.jsx)(C.Z, {
+            children: [F.map(e => (0, r.jsx)(y.Z, {
               isDisabled: W,
               sticker: e,
               canManageSticker: k(e)

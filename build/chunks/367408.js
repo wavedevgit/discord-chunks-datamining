@@ -18,14 +18,14 @@ function c(t) {
     n = (0, r.h)(t),
     c = (0, l.o)(t);
   if (null == i || c || (0, o.tX)(n)) return;
-  let d = n.some(t => t.type === s.pj.INAPPROPRIATE_CONVERSATION_TIER_1),
-    u = n.filter(t => null != t.dismiss_timestamp).sort((t, e) => e.dismiss_timestamp < t.dismiss_timestamp ? false : 1);
-  if (u.length < 1 || ! function(t) {
+  let u = n.some(t => t.type === s.pj.INAPPROPRIATE_CONVERSATION_TIER_1),
+    d = n.filter(t => null != t.dismiss_timestamp).sort((t, e) => e.dismiss_timestamp < t.dismiss_timestamp ? false : 1);
+  if (d.length < 1 || ! function(t) {
       let e = arguments.length > 1 && true !== arguments[1] && arguments[1];
       if (null == t) returntrue;
       let i = new Date(t).getTime() + (e ? p : f);
       return new Date().getTime() >= i
-    }(u[0].dismiss_timestamp, d)) return;
-  let b = n.filter(t => null == t.dismiss_timestamp);
-  return null != (e = b.findLast(t => t.type === s.pj.INAPPROPRIATE_CONVERSATION_TIER_1)) ? e : b.findLast(t => t.type === s.pj.INAPPROPRIATE_CONVERSATION_TIER_2)
+    }(d[0].dismiss_timestamp, u)) return;
+  let _ = n.filter(t => null == t.dismiss_timestamp);
+  return null != (e = _.findLast(t => t.type === s.pj.INAPPROPRIATE_CONVERSATION_TIER_1)) ? e : _.findLast(t => t.type === s.pj.INAPPROPRIATE_CONVERSATION_TIER_2)
 }

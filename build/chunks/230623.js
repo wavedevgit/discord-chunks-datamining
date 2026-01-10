@@ -42,9 +42,9 @@ function O() {
   if (function() {
       let e = d.Z.getChannelId(),
         t = p.Z.getChannelId();
-      return !!(null == e || !m.Z.isUserConnected(e) || e === t || o.Z.getWindowOpen(h.KJ3.CHANNEL_CALL_POPOUT))
+      return !!(null == e || !h.Z.isUserConnected(e) || e === t || o.Z.getWindowOpen(m.KJ3.CHANNEL_CALL_POPOUT))
     }()) return _();
-  if (null != t && m.Z.isUserConnected(t.id)) {
+  if (null != t && h.Z.isUserConnected(t.id)) {
     if (r !== t.id) {
       let e = b(t.id);
       if (u.Z.isOpen(e)) returnfalse;
@@ -53,7 +53,7 @@ function O() {
         i.Z.wait(() => l.xv(e))
       }
       return i.Z.wait(() => {
-        l.bA(e, h.NYg.HAVEN, {
+        l.bA(e, m.NYg.HAVEN, {
           channel: t
         }), E() && l.Cp(e)
       }), r = t.id, true
@@ -78,10 +78,10 @@ function v() {
 }
 class y extends Chunk317770.Z {
   _initialize() {
-    p.Z.addChangeListener(O), f.Z.addChangeListener(O), d.Z.addChangeListener(O), g.Z.addChangeListener(O), c.Z.addChangeListener(v), m.Z.addChangeListener(O), o.Z.addChangeListener(O)
+    p.Z.addChangeListener(O), f.Z.addChangeListener(O), d.Z.addChangeListener(O), g.Z.addChangeListener(O), c.Z.addChangeListener(v), h.Z.addChangeListener(O), o.Z.addChangeListener(O)
   }
   _terminate() {
-    p.Z.removeChangeListener(O), f.Z.removeChangeListener(O), d.Z.removeChangeListener(O), g.Z.removeChangeListener(O), c.Z.removeChangeListener(v), m.Z.removeChangeListener(O), o.Z.removeChangeListener(O)
+    p.Z.removeChangeListener(O), f.Z.removeChangeListener(O), d.Z.removeChangeListener(O), g.Z.removeChangeListener(O), c.Z.removeChangeListener(v), h.Z.removeChangeListener(O), o.Z.removeChangeListener(O)
   }
 }
 let I = new y

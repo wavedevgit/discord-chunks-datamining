@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 220141, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -17,9 +17,9 @@ var Chunk54381 = require("./54381.js"),
 function p(e) {
   var t, n, {
       handleOpenUserProfileModal: p,
-      markAsDismissed: f
+      markAsDismissed: h
     } = e,
-    h = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
       var n, a, r = function(e, t) {
         if (null == e) return {};
@@ -36,11 +36,14 @@ function p(e) {
     }(e, ["handleOpenUserProfileModal", "markAsDismissed"]);
   let {
     trackUserProfileEditAction: x
-  } = (0, l.KZ)(), b = c.rR.filter(e => s.Ki.includes(e)), g = r.useCallback(() => {
-    f(d.L.TAKE_ACTION), x({
+  } = (0, l.KZ)(), b = r.useMemo(() => c.rR.filter(s.Sr).map(e => new s.zy({
+    type: e,
+    games: []
+  })), []), g = r.useCallback(() => {
+    h(d.L.TAKE_ACTION), x({
       action: "PRESS_ADD_WIDGET"
     }), p()
-  }, [p, f, x]);
+  }, [p, h, x]);
   return (0, a.jsx)(i.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -61,17 +64,17 @@ function p(e) {
   }({
     heading: u.intl.string(u.t["oqalC+"]),
     subheading: u.intl.string(u.t.O9SQ1c),
-    markAsDismissed: f
-  }, h), n = n = {
+    markAsDismissed: h
+  }, f), n = n = {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.options,
       children: b.map(e => (0, a.jsx)(o.Z, {
-        widgetType: e,
+        widget: e,
         size: "medium",
         onAddWidget: g,
         trackUserProfileEditAction: x
-      }, e))
+      }, e.getUniqueKey()))
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

@@ -208,16 +208,16 @@ let V = e => {
 function Y(e) {
   let {
     guild: t
-  } = e, [l, a] = (0, c.Wu)([C.Z], () => {
+  } = e, [l, a] = (0, c.Wu)([y.Z], () => {
     var e;
-    return [null != (e = C.Z.getSoundsForGuild(t.id)) ? e : k.Hy, C.Z.isFetchingSounds() || C.Z.isFetchingDefaultSounds()]
+    return [null != (e = y.Z.getSoundsForGuild(t.id)) ? e : k.Hy, y.Z.isFetchingSounds() || y.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: s
   } = (0, v.XJ)(t), o = i.useRef(null), d = (0, p.ZP)(), u = t.premiumTier, g = (0, w.yw)(t, l, u);
   i.useEffect(() => {
     (0, O.w)()
   }, []);
-  let m = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, y.Z)(t.soundId)), e), {}), [l]),
+  let m = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, C.Z)(t.soundId)), e), {}), [l]),
     b = 0 === l.length && !a;
 
   function h(e) {
@@ -319,12 +319,12 @@ function q(e) {
     user: p,
     userId: h,
     emojiId: j,
-    emojiName: C
+    emojiName: y
   } = t, {
-    analyticsLocations: y
+    analyticsLocations: C
   } = (0, x.ZP)(), N = (0, c.e7)([_.default], () => null != p ? p : _.default.getUser(h), [h, p]), {
     canManageGuildExpression: S
-  } = (0, v.XJ)(o), T = i.useMemo(() => S(t), [t, S]), w = null != j || null != C, [Z, D] = i.useState(false), A = (0, E.z)(t, o.id);
+  } = (0, v.XJ)(o), T = i.useMemo(() => S(t), [t, S]), w = null != j || null != y, [Z, D] = i.useState(false), A = (0, E.z)(t, o.id);
   async function L() {
     if (!Z) {
       D(true);
@@ -345,9 +345,9 @@ function q(e) {
       null != N && (0, I.openUserProfileModal)({
         userId: N.id,
         guildId: o.id,
-        sourceAnalyticsLocations: y
+        sourceAnalyticsLocations: C
       })
-    }, [N, o.id, y]),
+    }, [N, o.id, C]),
     F = R.ZP.useUserTag(N);
   return (0, r.jsxs)("div", {
     className: a()(M.row, {
@@ -355,7 +355,7 @@ function q(e) {
     }),
     children: [w ? (0, r.jsx)(b.Z, {
       emojiId: j,
-      emojiName: C,
+      emojiName: y,
       className: M.emoji
     }) : (0, r.jsx)(f.XBm, {
       size: "md",

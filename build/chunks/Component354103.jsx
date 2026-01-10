@@ -28,8 +28,8 @@ function j(e) {
   (0, u.Z)(n, p.KsC.BOOST_PERKS_VANITY_URL);
   let {
     vanityURLCode: O,
-    vanityURLUses: C,
-    originalVanityURLCode: y,
+    vanityURLUses: y,
+    originalVanityURLCode: C,
     errorDetails: N,
     fetched: E
   } = (0, l.cj)([f.Z], () => ({
@@ -62,8 +62,8 @@ function j(e) {
     }), (0, r.jsx)(b.z, {
       guild: t,
       vanityURLCode: O,
-      vanityURLUses: C,
-      originalVanityURLCode: y,
+      vanityURLUses: y,
+      originalVanityURLCode: C,
       errorDetails: N
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 554838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => u,
@@ -19,8 +19,8 @@ function u(e, t, n) {
 function d(e, t, n) {
   if (n.hasFlag(s.iLy.HAS_THREAD) || n.isCommandType()) returntrue;
   if (n.type > s.uaV.DEFAULT) return !(0, o.Z)(t) || n.type === s.uaV.REPLY;
-  if ((0, o.Z)(t) || t.author.id !== n.author.id || t.hasFlag(s.iLy.EPHEMERAL) !== n.hasFlag(s.iLy.EPHEMERAL) || null != n.webhookId && t.author.username !== n.author.username || (null == e ? true : e.isForumPost()) && t.id === a.default.castChannelIdAsMessageId(e.id) || !(0, r.KC)(t.timestamp, n.timestamp) || !(0, r._w)(t.timestamp, n.timestamp, c) || n.hasFlag(s.iLy.SUPPRESS_NOTIFICATIONS) && !t.hasFlag(s.iLy.SUPPRESS_NOTIFICATIONS) || t.hasFlag(s.iLy.SUPPRESS_NOTIFICATIONS) && !n.hasFlag(s.iLy.SUPPRESS_NOTIFICATIONS) && (n.mentions.length > 0 || n.mentionRoles.length > 0 || n.mentionEveryone)) returntrue;
-  let l = i.HZ.getCurrentConfig({
+  if ((0, o.Z)(t) || t.author.id !== n.author.id || t.hasFlag(s.iLy.EPHEMERAL) !== n.hasFlag(s.iLy.EPHEMERAL) || null != n.webhookId && t.author.username !== n.author.username || (null == e ? true : e.isForumPost()) && t.id === a.default.castChannelIdAsMessageId(e.id) || !(0, i.KC)(t.timestamp, n.timestamp) || !(0, i._w)(t.timestamp, n.timestamp, c) || n.hasFlag(s.iLy.SUPPRESS_NOTIFICATIONS) && !t.hasFlag(s.iLy.SUPPRESS_NOTIFICATIONS) || t.hasFlag(s.iLy.SUPPRESS_NOTIFICATIONS) && !n.hasFlag(s.iLy.SUPPRESS_NOTIFICATIONS) && (n.mentions.length > 0 || n.mentionRoles.length > 0 || n.mentionEveryone)) returntrue;
+  let l = r.HZ.getCurrentConfig({
     location: "isNewMessageGroup"
   }, {
     autoTrackExposure: false

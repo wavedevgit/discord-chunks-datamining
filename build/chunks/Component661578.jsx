@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 661578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -39,10 +39,10 @@ function T(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, i = (0, f.n)(), o = (0, j.k3)(t.id, h.jn.QUEST_BAR_V2, h.jn.QUEST_BAR_V2), d = (0, j.g2)({
+  } = e, i = (0, h.n)(), o = (0, j.k3)(t.id, f.jn.QUEST_BAR_V2, f.jn.QUEST_BAR_V2), d = (0, j.g2)({
     useReducedMotion: n
-  }), g = (0, m.O5)(), C = (0, p.aM)(), {
-    errorHints: y,
+  }), g = (0, m.O5)(), y = (0, p.aM)(), {
+    errorHints: C,
     startingConsoleQuest: T,
     startConsoleQuest: O
   } = (0, x.GI)({
@@ -50,9 +50,9 @@ function T(e) {
     beforeRequest: () => {
       g({
         questId: t.id,
-        questContent: h.jn.QUEST_BAR_V2,
+        questContent: f.jn.QUEST_BAR_V2,
         questContentCTA: m.jZ.DEFIBRILLATOR,
-        sourceQuestContent: h.jn.QUEST_BAR_V2
+        sourceQuestContent: f.jn.QUEST_BAR_V2
       }), d.startAnimation()
     },
     afterRequest: d.stopAnimation
@@ -60,7 +60,7 @@ function T(e) {
     header: N,
     renderBody: P
   } = r.useMemo(() => {
-    let e = y.length > 0,
+    let e = C.length > 0,
       n = t.config.messages.gameTitle;
     return {
       header: e ? (0, v.Pb)(t) ? _.intl.string(_.t.N33EuL) : _.intl.formatToPlainString(_.t["28Ql27"], {
@@ -69,7 +69,7 @@ function T(e) {
         gameTitle: n
       }),
       renderBody: e ? () => (0, a.jsx)(a.Fragment, {
-        children: y.map((e, n) => {
+        children: C.map((e, n) => {
           if (e.type === s.K.EXPIRED_CREDENTIAL && i) {
             let r = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
               i = (0, b.C9)(e),
@@ -82,10 +82,10 @@ function T(e) {
                     quest: t,
                     platformType: l
                   }, {
-                    content: h.jn.QUEST_BAR,
+                    content: f.jn.QUEST_BAR,
                     ctaContent: m.jZ.DEFIBRILLATOR_RECONNECT_CONSOLE,
-                    impressionId: C,
-                    sourceQuestContent: h.jn.QUEST_BAR_V2
+                    impressionId: y,
+                    sourceQuestContent: f.jn.QUEST_BAR_V2
                   })
                 }
               })
@@ -104,7 +104,7 @@ function T(e) {
         })
       })
     }
-  }, [y, t, i, C]);
+  }, [C, t, i, y]);
   return (0, a.jsxs)("div", {
     className: S.microphoneUnit,
     children: [(0, a.jsxs)("div", {
@@ -112,7 +112,7 @@ function T(e) {
       children: [(0, a.jsx)(c.Mgn, {
         size: "custom",
         color: "currentColor",
-        className: 0 === y.length ? S.warningCircle : S.errorCircle,
+        className: 0 === C.length ? S.warningCircle : S.errorCircle,
         width: 16,
         height: 16
       }), (0, a.jsx)(c.Text, {
@@ -129,7 +129,7 @@ function T(e) {
       className: l()({
         [S.opacity_50]: T
       }),
-      children: [P(), 0 === y.length ? null : (0, a.jsx)(E, {
+      children: [P(), 0 === C.length ? null : (0, a.jsx)(E, {
         children: o
       })]
     })]
@@ -154,7 +154,7 @@ let O = function(e) {
       steps: [{
         renderContent: () => {
           var e, n;
-          return (0, a.jsx)(C.Q, (e = function(e) {
+          return (0, a.jsx)(y.Q, (e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 a = Object.keys(n);
@@ -173,7 +173,7 @@ let O = function(e) {
             return e
           }({}, l), n = n = {
             quest: t,
-            sourceQuestContent: h.jn.QUEST_BAR_V2
+            sourceQuestContent: f.jn.QUEST_BAR_V2
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -187,14 +187,14 @@ let O = function(e) {
         },
         isComplete: r || i || c
       }, {
-        renderContent: () => (0, a.jsx)(y.y3, {
+        renderContent: () => (0, a.jsx)(C.y3, {
           children: (0, v.Pb)(t) ? _.intl.string(_.t["5tXqFe"]) : _.intl.formatToPlainString(_.t["+8JB6Y"], {
             gameTitle: o
           })
         }),
         isComplete: i || c
       }, {
-        renderContent: () => (0, a.jsx)(y.y3, {
+        renderContent: () => (0, a.jsx)(C.y3, {
           children: _.intl.formatToPlainString(_.t.HhfrYS, {
             numMinutes: n.targetMinutes
           })
@@ -206,7 +206,7 @@ let O = function(e) {
       isQuestComplete: c
     }
   }, [l, s.length, t, n.targetMinutes]);
-  return (0, a.jsx)(y.ZP, {
+  return (0, a.jsx)(C.ZP, {
     heading: _.intl.string(_.t.UPWlJu),
     steps: c,
     children: u && !m && !p && (0, a.jsx)(T, {

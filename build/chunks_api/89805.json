@@ -1,1 +1,0 @@
-{"id":"89805","type":"experiment","data":{"kind":"user","id":"2024-07_ctp_open_user_settings_uneven_buckets","label":"CTP open user settings - A/A test - Uneven buckets","defaultConfig":{"doSomething":false},"commonTriggerPoint":"Chunk987338.$P.OPEN_USER_SETTINGS","treatments":[{"id":1,"label":"Treatment","config":{"doSomething":true}}]},"fromModule":{"id":"web.js"}}

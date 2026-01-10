@@ -68,16 +68,16 @@ class S extends Chunk473749.PureComponent {
       guild: n
     } = this.props;
     return (0, r.jsxs)(o.P3F, {
-      className: y.bannedUser,
+      className: C.bannedUser,
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
       children: [(0, r.jsx)(o.qEK, {
         src: t.getAvatarURL(null == n ? true : n.id, 40),
         "aria-label": t.username,
         size: o.EFr.SIZE_40,
-        className: y.bannedUserAvatar
+        className: C.bannedUserAvatar
       }), (0, r.jsxs)("div", {
-        className: y.username,
+        className: C.username,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
@@ -133,7 +133,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
   }, [a, l]), c = i.useCallback(e => {
     var t;
     if (null == a && 0 === e) return (0, r.jsx)(o.$jN, {
-      className: y.spinner,
+      className: C.spinner,
       type: o.$jN.Type.SPINNING_CIRCLE
     }, "spinner");
     let i = l[e],
@@ -182,31 +182,31 @@ function T(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-lg/semibold",
-      children: C.intl.string(C.t["7OY0gJ"])
+      children: y.intl.string(y.t["7OY0gJ"])
     }), (0, r.jsx)("div", {
-      className: y.settingsHeader,
+      className: C.settingsHeader,
       children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        className: y.description,
-        children: C.intl.format(C.t.JcZ36i, {
+        className: C.description,
+        children: y.intl.format(y.t.JcZ36i, {
           onModerationClick: u
         })
       })
     }), (0, r.jsxs)("div", {
-      className: y.bansSearchContainer,
+      className: C.bansSearchContainer,
       children: [(0, r.jsx)(o.E1j, {
         query: null != l ? l : "",
-        placeholder: C.intl.string(C.t.MiqUmf),
-        "aria-label": C.intl.string(C.t.MiqUmf),
+        placeholder: y.intl.string(y.t.MiqUmf),
+        "aria-label": y.intl.string(y.t.MiqUmf),
         onChange: g,
         onKeyDown: p,
         onClear: f
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: y.searchButton,
+        className: C.searchButton,
         children: (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: C.intl.string(C.t["5h0QOP"]),
+          text: y.intl.string(y.t["5h0QOP"]),
           onClick: b,
           disabled: s,
           loading: s
@@ -263,12 +263,12 @@ function P() {
     return null != (e = F[M.currentPage - 1]) ? e : []
   }, [F, M.currentPage]);
   return null == c ? null : (0, r.jsxs)("div", {
-    className: y.container,
+    className: C.container,
     children: [(0, r.jsx)(T, {
       guildId: w,
       storedSearchQuery: f
     }), (0, r.jsxs)("div", {
-      className: y.scrollerContainer,
+      className: C.scrollerContainer,
       children: [!G && (0, r.jsx)(_, {
         guild: c,
         bans: N,
@@ -276,23 +276,23 @@ function P() {
         ref: Z
       }), !k && G && (0, r.jsxs)(o.ubH, {
         theme: P,
-        className: y.emptyState,
+        className: C.emptyState,
         children: [(0, r.jsx)(o.oxh, {
           darkSrc: n(532747),
           lightSrc: n(433466),
           width: 256,
           height: 212
         }), (0, r.jsx)(o.OZU, {
-          note: C.intl.string(C.t.zfCsAw),
+          note: y.intl.string(y.t.zfCsAw),
           style: {
             maxWidth: 300
           },
-          children: C.intl.string(C.t.ZEiY1D)
+          children: y.intl.string(y.t.ZEiY1D)
         })]
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(o.DsT, {
-        className: y.paginationInput,
+        className: C.paginationInput,
         totalCount: A.length + (k ? M.pageSize : 0),
         pageSize: M.pageSize,
         currentPage: M.currentPage,

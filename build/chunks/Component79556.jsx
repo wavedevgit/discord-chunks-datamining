@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 79556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => U
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -69,7 +69,7 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class L extends Chunk98597.ZP {
+class k extends Chunk98597.ZP {
   componentWillUnmount() {
     this.resetTextChannelPopoutTimers()
   }
@@ -81,7 +81,7 @@ class L extends Chunk98597.ZP {
       channelInfo: e
     } = this.props;
     return null == e ? null : (0, r.jsx)("div", {
-      className: A.channelInfo,
+      className: w.channelInfo,
       children: e
     })
   }
@@ -96,21 +96,21 @@ class L extends Chunk98597.ZP {
       hasMoreActiveThreads: c,
       mentionCount: u,
       connectChannelDropTarget: d,
-      connectChannelDragSource: f,
-      connectDragPreview: h,
-      canReorderChannel: p,
-      isSubscriptionGated: m,
+      connectChannelDragSource: p,
+      connectDragPreview: f,
+      canReorderChannel: h,
+      isSubscriptionGated: b,
       isFavoriteSuggestion: y,
-      subtitle: O,
-      forceTopLevelThread: v,
+      subtitle: v,
+      forceTopLevelThread: O,
       embeddedApps: j,
-      resolvedUnreadSetting: C,
-      withGuildIcon: x,
+      resolvedUnreadSetting: x,
+      withGuildIcon: C,
       enableActivities: E
-    } = this.props, S = E && null != j && j.length > 0, _ = (0, b.D)(O), I = (0, r.jsx)("li", {
+    } = this.props, S = E && null != j && j.length > 0, _ = (0, m.D)(v), I = (0, r.jsx)("li", {
       className: a()(this.getClassName(), {
-        [A.disabled]: this.isDisabled(),
-        [A.selected]: n
+        [w.disabled]: this.isDisabled(),
+        [w.selected]: n
       }),
       "data-dnd-name": e.name,
       onMouseEnter: c || S ? this.handleMouseEnter : true,
@@ -121,9 +121,9 @@ class L extends Chunk98597.ZP {
         renderPopout: this.renderPopout,
         onRequestClose: this.handleClosePopout,
         shouldShow: c && this.state.shouldShowThreadsPopout || S && this.state.shouldShowActivities,
-        children: () => (0, r.jsxs)(N.ZP, {
+        children: () => (0, r.jsxs)(Z.ZP, {
           ref: this.channelItemRef,
-          className: A.iconVisibility,
+          className: w.iconVisibility,
           channel: e,
           guild: t,
           selected: !y && n,
@@ -135,16 +135,16 @@ class L extends Chunk98597.ZP {
           subtitleColor: null == _ ? true : _.color,
           onMouseDown: this.handleMouseDown,
           onContextMenu: this.handleContextMenu,
-          connectDragPreview: p ? h : null,
+          connectDragPreview: h ? f : null,
           isFavoriteSuggestion: y,
-          channelTypeOverride: v ? w.d4z.GUILD_TEXT : true,
-          resolvedUnreadSetting: C,
-          withGuildIcon: x,
+          channelTypeOverride: O ? T.d4z.GUILD_TEXT : true,
+          resolvedUnreadSetting: x,
+          withGuildIcon: C,
           "aria-label": (0, g.ZP)({
             channel: e,
             unread: l,
             mentionCount: u,
-            isSubscriptionGated: m
+            isSubscriptionGated: b
           }),
           children: [y && (0, r.jsxs)(r.Fragment, {
             children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
@@ -154,7 +154,7 @@ class L extends Chunk98597.ZP {
         })
       })
     });
-    return p ? d(f(I)) : I
+    return h ? d(p(I)) : I
   }
   constructor(...e) {
     super(...e), R(this, "state", {
@@ -191,7 +191,7 @@ class L extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      c.Z.preload(null != t ? t : w.ME, e.id)
+      c.Z.preload(null != t ? t : T.ME, e.id)
     }), R(this, "renderPopout", e => {
       let {
         channel: t,
@@ -201,7 +201,7 @@ class L extends Chunk98597.ZP {
       } = this.props, {
         shouldShowActivities: a
       } = this.state;
-      return t.isModeratorReportChannel() || l ? null : null != i && i.length > 0 && a && !n ? (0, r.jsx)(Z.Z, {
+      return t.isModeratorReportChannel() || l ? null : null != i && i.length > 0 && a && !n ? (0, r.jsx)(N.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
       }) : (0, r.jsx)(_.Z, M(D({}, e), {
@@ -211,7 +211,7 @@ class L extends Chunk98597.ZP {
       let {
         channel: t
       } = this.props;
-      if (t.type === w.d4z.GROUP_DM) return void(0, u.jW)(e, async () => {
+      if (t.type === T.d4z.GROUP_DM) return void(0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
@@ -220,12 +220,12 @@ class L extends Chunk98597.ZP {
           selected: true
         }))
       });
-      if (t.type === w.d4z.DM) {
+      if (t.type === T.d4z.DM) {
         let i = S.default.getUser(t.getRecipientId());
         null != i && (0, u.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("93896")]).then(n.bind(n, 131404));
+          } = await Promise.all([n.e("79695"), n.e("4040"), n.e("56826"), n.e("93896")]).then(n.bind(n, 131404));
           return n => (0, r.jsx)(e, M(D({}, n), {
             user: i,
             channel: t,
@@ -255,9 +255,9 @@ class L extends Chunk98597.ZP {
     })
   }
 }
-let k = (0, Chunk146773.B)(L);
+let L = (0, Chunk146773.B)(k);
 
-function G(e) {
+function U(e) {
   let {
     channel: t,
     guild: n,
@@ -268,20 +268,20 @@ function G(e) {
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, O.JQ)(t), d = (0, o.cj)([x.ZP], () => ({
-    unread: x.ZP.hasUnread(t.id),
-    ackMessageId: x.ZP.ackMessageId(t.id),
-    isLowImportanceMention: x.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, o.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), b = (0, o.cj)([v.Z, C.Z], () => {
-    let e = v.Z.getChannel(t.parent_id);
+  } = (0, v.JQ)(t), d = (0, o.cj)([C.ZP], () => ({
+    unread: C.ZP.hasUnread(t.id),
+    ackMessageId: C.ZP.ackMessageId(t.id),
+    isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
+  })), g = (0, o.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), m = (0, o.cj)([O.Z, x.Z], () => {
+    let e = O.Z.getChannel(t.parent_id);
     return {
-      canManageChannel: C.Z.can(w.Plq.MANAGE_CHANNELS, t),
-      canReorderChannel: true !== i && (n.id === T._ || (null != e ? C.Z.can(w.Plq.MANAGE_CHANNELS, e) : C.Z.can(w.Plq.MANAGE_CHANNELS, n)))
+      canManageChannel: x.Z.can(T.Plq.MANAGE_CHANNELS, t),
+      canReorderChannel: true !== i && (n.id === A._ || (null != e ? x.Z.can(T.Plq.MANAGE_CHANNELS, e) : x.Z.can(T.Plq.MANAGE_CHANNELS, n)))
     }
   }), j = (0, o.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: S,
     isSubscriptionGated: _
-  } = (0, m.Z)(t.id), I = (0, o.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), N = (0, p.$5)(t), Z = (0, f.NX)(t.id), A = (0, P.Z)({
+  } = (0, b.Z)(t.id), I = (0, o.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), Z = (0, h.$5)(t), N = (0, p.NX)(t.id), w = (0, P.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
@@ -289,21 +289,21 @@ function G(e) {
     needSubscriptionToAccess: S,
     isNewChannel: j,
     muted: a,
-    enableActivities: Z,
+    enableActivities: N,
     resolvedUnreadSetting: g
-  }), R = (0, h.ZP)(t);
-  return (0, r.jsx)(k, M(D({}, d, b, e), {
+  }), R = (0, f.ZP)(t);
+  return (0, r.jsx)(L, M(D({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: _,
     needSubscriptionToAccess: S,
     isNewChannel: j && e.canBeNewChannel,
     isFavoriteSuggestion: l && !I,
-    channelIsContentGated: N,
-    channelInfo: A,
+    channelIsContentGated: Z,
+    channelInfo: w,
     embeddedApps: R,
     resolvedUnreadSetting: g,
-    hasChannelInfo: null != A,
-    enableActivities: Z
+    hasChannelInfo: null != w,
+    enableActivities: N
   }))
 }

@@ -111,21 +111,21 @@ function _(e) {
           let e = (() => {
             switch (n.data.kind) {
               case "message":
-                if (n.channelType === m.d4z.GUILD_ANNOUNCEMENT) return h.intl.string(h.t["8P08G9"]);
-                return h.intl.string(h.t.hMFMY9);
+                if (n.channelType === h.d4z.GUILD_ANNOUNCEMENT) return m.intl.string(m.t["8P08G9"]);
+                return m.intl.string(m.t.hMFMY9);
               case "generatedCandidate":
-                return h.intl.string(h.t.ljgIO9);
+                return m.intl.string(m.t.ljgIO9);
               case "guildEvent":
-                return h.intl.string(h.t["6pFsLQ"]);
+                return m.intl.string(m.t["6pFsLQ"]);
               case "forumThread":
-                return h.intl.string(h.t.bYNuVx);
+                return m.intl.string(m.t.bYNuVx);
               case "contentInventory":
                 switch (n.data.content.content_type) {
                   case l.s.CUSTOM_STATUS:
-                    return h.intl.string(h.t.fxOLPR);
+                    return m.intl.string(m.t.fxOLPR);
                   case l.s.TOP_GAME:
                   case l.s.PLAYED_GAME:
-                    return h.intl.string(h.t.ktOTRQ);
+                    return m.intl.string(m.t.ktOTRQ);
                   default:
                     return "".concat(n.data.content.content_type)
                 }
@@ -149,7 +149,7 @@ function _(e) {
                 children: e
               }), (0, r.jsx)("span", {
                 className: b.subtitleText,
-                children: h.intl.string(h.t.CHUAYk)
+                children: m.intl.string(m.t.CHUAYk)
               }), (0, r.jsxs)("span", {
                 className: b.subtitleText,
                 children: [null != t && (0, r.jsx)(t, {

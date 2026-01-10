@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 819349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => _
@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
@@ -25,20 +25,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk165343 = require("./165343.js"),
   Chunk960414 = require("./960414.js");
 
-function j(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
@@ -49,10 +49,10 @@ function _(e) {
   let {
     channel: t,
     onClose: n
-  } = e, l = r.useRef(null), [_, P] = r.useState(false), I = r.useRef(null), Z = r.useRef(null), [T, N] = r.useState(0), {
+  } = e, l = i.useRef(null), [_, I] = i.useState(false), P = i.useRef(null), Z = i.useRef(null), [N, T] = i.useState(0), {
     analyticsLocations: A
   } = (0, h.ZP)(f.Z.VOICE_INVITE_SUGGESTIONS);
-  (0, m.Z)({
+  (0, g.Z)({
     name: s.ImpressionNames.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT,
     type: s.ImpressionTypes.VIEW,
     properties: {
@@ -61,148 +61,148 @@ function _(e) {
       location_stack: A
     }
   });
-  let w = (0, c.e7)([g.Z], () => g.Z.can(v.Plq.CREATE_INSTANT_INVITE, t), [t]),
-    [M, R] = r.useState(false),
-    [D, L] = r.useState("unknown"),
-    k = r.useRef(null),
+  let w = (0, c.e7)([m.Z], () => m.Z.can(O.Plq.CREATE_INSTANT_INVITE, t), [t]),
+    [R, D] = i.useState(false),
+    [M, k] = i.useState("unknown"),
+    L = i.useRef(null),
     {
       isHoveringOrFocusing: U
-    } = (0, y.Tu)(w ? l : k),
-    [V, F] = r.useState(false),
-    H = U || V,
-    B = r.useCallback(function() {
+    } = (0, v.Tu)(w ? l : L),
+    [G, B] = i.useState(false),
+    F = U || G,
+    H = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
-      b.default.track(v.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
+      b.default.track(O.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
         reason: e,
         channel_id: t.id,
         guild_id: t.guild_id,
         location_stack: A
-      }), P(false), null == n || n()
+      }), I(false), null == n || n()
     }, [t, n, A]),
-    G = (0, d.q_F)({
+    V = (0, d.q_F)({
       from: {
         height: "0px"
       },
       to: {
         height: "".concat(32, "px")
       },
-      reverse: M,
+      reverse: R,
       config: {
         duration: 200,
         easing: S,
         clamp: true
       },
       onRest: () => {
-        M && B(D)
+        R && H(M)
       }
     }),
-    W = r.useCallback(function() {
+    z = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
-      R(true), L(e)
+      D(true), k(e)
     }, []),
-    z = r.useCallback(() => (null != I.current && clearTimeout(I.current), I.current = setTimeout(() => W("timeout"), 1e4), N(e => e + 1), () => {
-      null != I.current && clearTimeout(I.current)
-    }), [W]),
-    q = r.useCallback(() => (null != Z.current && clearTimeout(Z.current), Z.current = setTimeout(() => {
-      P(false)
+    W = i.useCallback(() => (null != P.current && clearTimeout(P.current), P.current = setTimeout(() => z("timeout"), 1e4), T(e => e + 1), () => {
+      null != P.current && clearTimeout(P.current)
+    }), [z]),
+    K = i.useCallback(() => (null != Z.current && clearTimeout(Z.current), Z.current = setTimeout(() => {
+      I(false)
     }, 150), () => {
       null != Z.current && clearTimeout(Z.current)
     }), []);
-  (0, p.ZP)(z), r.useEffect(() => {
-    if (!H) {
-      z(), q();
+  (0, p.ZP)(W), i.useEffect(() => {
+    if (!F) {
+      W(), K();
       return
     }
-    null != I.current && clearTimeout(I.current), null != Z.current && clearTimeout(Z.current), P(true)
-  }, [H, z, q]);
-  let K = r.useCallback(() => {
-      P(true)
+    null != P.current && clearTimeout(P.current), null != Z.current && clearTimeout(Z.current), I(true)
+  }, [F, W, K]);
+  let Y = i.useCallback(() => {
+      I(true)
     }, []),
-    Y = r.useCallback(() => {
-      P(false), F(false)
+    q = i.useCallback(() => {
+      I(false), B(false)
     }, []);
-  return w ? (0, i.jsx)(d.yRy, {
+  return w ? (0, r.jsx)(d.yRy, {
     targetElementRef: l,
     shouldShow: _,
     position: "right",
     align: "top",
     spacing: 8,
     popoutKey: "voice-invite-suggestions-button",
-    renderPopout: e => (0, i.jsx)(C.B, j({
+    renderPopout: e => (0, r.jsx)(y.B, E({
       channel: t,
-      onHoverOrFocus: F
+      onHoverOrFocus: B
     }, e)),
-    onRequestOpen: K,
-    onRequestClose: Y,
+    onRequestOpen: Y,
+    onRequestClose: q,
     children: e => {
       var t, n;
-      return (0, i.jsx)(o.animated.div, {
-        className: O.animation,
-        style: G,
-        children: (0, i.jsx)(d.P3F, (t = j({
+      return (0, r.jsx)(o.animated.div, {
+        className: x.animation,
+        style: V,
+        children: (0, r.jsx)(d.P3F, (t = E({
           innerRef: l,
           className: a()({
-            [O.clickable]: !M
-          }, E.voiceUser, E.userSmall, E.clickable),
-          "aria-disabled": M,
-          "aria-label": x.intl.string(x.t.F3qiJr)
+            [x.clickable]: !R
+          }, C.voiceUser, C.userSmall, C.clickable),
+          "aria-disabled": R,
+          "aria-label": j.intl.string(j.t.F3qiJr)
         }, e), n = n = {
-          children: (0, i.jsxs)("div", {
-            className: a()(O.content, E.content),
-            children: [(0, i.jsxs)("div", {
-              className: O.leading,
+          children: (0, r.jsxs)("div", {
+            className: a()(x.content, C.content),
+            children: [(0, r.jsxs)("div", {
+              className: x.leading,
               style: {
                 "--custom-voice-invite-suggestions-timer-size": 24
               },
-              children: [(0, i.jsxs)("svg", {
-                className: a()(O.timer, {
-                  [O.paused]: H
+              children: [(0, r.jsxs)("svg", {
+                className: a()(x.timer, {
+                  [x.paused]: F
                 }),
                 viewBox: "0 0 ".concat(24, " ").concat(24),
                 style: {
                   "--custom-voice-invite-suggestions-timer-duration": 1e4
                 },
-                children: [(0, i.jsx)("circle", {
-                  className: O.progress
-                }), (0, i.jsx)("circle", {
-                  className: O.ring
+                children: [(0, r.jsx)("circle", {
+                  className: x.progress
+                }), (0, r.jsx)("circle", {
+                  className: x.ring
                 })]
-              }, "voice-invite-suggestions-timer-".concat(T)), (0, i.jsx)(d.oLu, {
+              }, "voice-invite-suggestions-timer-".concat(N)), (0, r.jsx)(d.oLu, {
                 size: "custom",
                 width: 14,
                 height: 14,
                 color: "currentColor",
-                className: a()(O.userIcon, O.icon)
+                className: a()(x.userIcon, x.icon)
               })]
-            }), (0, i.jsx)(u.u, {
-              text: x.intl.string(x.t["EE+P0H"]),
+            }), (0, r.jsx)(u.u, {
+              text: j.intl.string(j.t["EE+P0H"]),
               overflowOnly: true,
-              children: (0, i.jsx)(d.Text, {
+              children: (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                className: O.label,
+                className: x.label,
                 lineClamp: 1,
-                children: x.intl.string(x.t["EE+P0H"])
+                children: j.intl.string(j.t["EE+P0H"])
               })
-            }), U ? (0, i.jsx)(d.P3F, {
-              className: O.close,
-              onClick: () => W("user_explicit"),
-              "aria-label": x.intl.string(x.t.cpT0Cq),
-              children: (0, i.jsx)(d.Dio, {
+            }), U ? (0, r.jsx)(d.P3F, {
+              className: x.close,
+              onClick: () => z("user_explicit"),
+              "aria-label": j.intl.string(j.t.cpT0Cq),
+              children: (0, r.jsx)(d.Dio, {
                 size: "xs",
                 color: "currentColor",
-                className: O.icon
+                className: x.icon
               })
-            }) : (0, i.jsx)(d.Fbu, {
+            }) : (0, r.jsx)(d.Fbu, {
               size: "xs",
               color: "currentColor",
-              className: O.icon
+              className: x.icon
             })]
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
           return n
         })(Object(n)).forEach(function(e) {

@@ -37,8 +37,8 @@ function g(e) {
   let {
     guildId: t,
     markAsDismissed: g,
-    renderTargetElement: m
-  } = e, h = {
+    renderTargetElement: h
+  } = e, m = {
     text: p.intl.string(p.t.JzJpg4),
     onClick: () => {
       s.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, o.hH)(t))), g(d.L.PRIMARY), (0, a.ZDy)(async () => {
@@ -68,7 +68,7 @@ function g(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: b,
-      children: m()
+      children: h()
     }), (0, r.jsx)(l.Mb, {
       title: p.intl.string(p.t.fW7UqM),
       body: p.intl.string(p.t["yQ0X+T"]),
@@ -77,7 +77,7 @@ function g(e) {
         align: "center"
       },
       assetUrl: "https://cdn.discordapp.com/assets/media_channel/media_channel_upsell_demo.mp4",
-      action: h,
+      action: m,
       textLink: {
         link: c.Z.getCreatorSupportArticleURL(u.BhN.MEDIA_CHANNEL),
         text: p.intl.string(p.t.w4DutA)

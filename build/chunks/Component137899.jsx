@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350724 = require("./350724.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends Chunk473749.PureComponent {
+class m extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.memoizedMode ? {
       memoizedMode: e.mode,
@@ -39,7 +39,7 @@ class h extends Chunk473749.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          m(e, t, n[t])
+          h(e, t, n[t])
         })
       }
       return e
@@ -71,10 +71,10 @@ class h extends Chunk473749.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), m(this, "state", {
+    super(...e), h(this, "state", {
       memoizedMode: this.props.mode,
       clicked: false
-    }), m(this, "handleInstallDownload", () => {
+    }), h(this, "handleInstallDownload", () => {
       d.Z.isConnected() ? o.Z.show({
         title: f.intl.string(f.t.tiu1ly),
         body: f.intl.string(f.t["zK+lqW"]),
@@ -83,7 +83,7 @@ class h extends Chunk473749.PureComponent {
         confirmText: f.intl.string(f.t["QDX/qu"]),
         confirmVariant: "critical-primary"
       }) : this.doUpdate()
-    }), m(this, "doUpdate", () => {
+    }), h(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: true
       }), (0, s.Q)())
@@ -92,4 +92,4 @@ class h extends Chunk473749.PureComponent {
 }
 let b = Chunk442837.ZP.connectStores([Chunk91372.Z], () => ({
   mode: u.Z.getState()
-}))(h)
+}))(m)

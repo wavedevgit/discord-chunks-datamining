@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 843343, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,13 +16,13 @@ var Chunk91192 = require("./91192.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk943207 = require("./943207.js");
 
-function p() {
+function h() {
   var e, t;
   let n = (0, l.e7)([o.Z, s.Z], () => o.Z.unavailableGuilds.filter(e => null == s.Z.getGuild(e)).length),
-    p = (0, i.Ie)("unavailable-guilds-button");
+    h = (0, i.Ie)("unavailable-guilds-button");
   return n <= 0 ? null : (0, r.jsx)(c.H, {
     children: (0, r.jsx)(u.Z, {
-      text: f.intl.format(f.t["TnH05/"], {
+      text: p.intl.format(p.t["TnH05/"], {
         count: n
       }),
       children: (0, r.jsx)(a.eee, (e = function(e) {
@@ -45,11 +45,11 @@ function p() {
       }({
         href: d.yX.STATUS,
         target: "_blank",
-        className: h.guildsError,
-        "aria-label": f.intl.formatToPlainString(f.t["MEpX+2"], {
+        className: f.guildsError,
+        "aria-label": p.intl.formatToPlainString(p.t["MEpX+2"], {
           count: n
         })
-      }, p), t = t = {
+      }, h), t = t = {
         children: (0, r.jsx)(a.Mgn, {
           color: "currentColor",
           "aria-hidden": true

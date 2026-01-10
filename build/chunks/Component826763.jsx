@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 826763, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -19,29 +19,29 @@ function p(e) {
     guildId: t
   } = e;
   return (0, r.jsx)("div", {
-    className: d.upsellPage,
+    className: u.upsellPage,
     children: (0, r.jsxs)("div", {
-      className: d.upsellContainer,
+      className: u.upsellContainer,
       children: [(0, r.jsx)("img", {
-        src: u,
+        src: d,
         alt: ""
       }), (0, r.jsxs)("div", {
-        className: d.upsellContent,
+        className: u.upsellContent,
         children: [(0, r.jsx)(i.Heading, {
           variant: "heading-xl/semibold",
           children: c.intl.string(c.t["8gJGPs"])
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
-          className: d.bodyText,
+          className: u.bodyText,
           children: c.intl.string(c.t.GpOWIi)
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: d.__invalid_button,
+          className: u.__invalid_button,
           children: (0, r.jsx)(i.Button, {
             variant: "primary",
             text: c.intl.string(c.t["I/XhUn"]),
             onClick: () => {
-              (0, a.mL)(t), l.Z.open(t, o.pNK.ROLE_SUBSCRIPTIONS, true, o.KsC.ROLE_SUBSCRIPTION_TIERS), (0, s.GN)(t)
+              (0, a.mL)(t), l.Z.open(t, s.pNK.ROLE_SUBSCRIPTIONS, true, s.KsC.ROLE_SUBSCRIPTION_TIERS), (0, o.GN)(t)
             }
           })
         })]

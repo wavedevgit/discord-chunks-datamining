@@ -1,4 +1,4 @@
-/** Chunk was on 193 **/
+/** Chunk was on 49131 **/
 /** chunk id: 621516, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -30,15 +30,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk420196 = require("./420196.js"),
   Chunk433075 = require("./433075.js");
 
-function I(e) {
+function P(e) {
   let {
     handleHide: t
   } = e;
-  return (0, a.jsx)(d.P3F, {
+  return (0, r.jsx)(d.P3F, {
     onClick: t,
     className: T.closeButton,
     "aria-label": y.intl.string(y.t.WAI6xu),
-    children: (0, a.jsx)(d.Dio, {
+    children: (0, r.jsx)(d.Dio, {
       size: "md",
       color: "currentColor",
       className: T.closeIcon
@@ -46,74 +46,74 @@ function I(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     username: t,
     title: n,
-    videoSrc: r,
+    videoSrc: a,
     messageCount: i,
     reaction: s,
     reactionCount: o,
     classname: c
   } = e;
-  return (0, a.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: l()(T.videoPreview, c),
-    children: [(0, a.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: T.authorRow,
-      children: (0, a.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: T.rowGroup,
-        children: [(0, a.jsx)(d.Text, {
+        children: [(0, r.jsx)(d.Text, {
           tag: "span",
           className: T.author,
           variant: "text-sm/semibold",
           children: t
-        }), (0, a.jsx)(d.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "text-default",
           className: T.postCreationTimestamp,
           children: y.intl.string(y.t.mA0IvI)
         })]
       })
-    }), (0, a.jsx)(d.Heading, {
+    }), (0, r.jsx)(d.Heading, {
       variant: "heading-md/extrabold",
       className: T.title,
       color: "text-strong",
       "aria-hidden": true,
       children: n
-    }), (0, a.jsx)(d.LZC, {
+    }), (0, r.jsx)(d.LZC, {
       size: 10
-    }), (0, a.jsx)(m.Z, {
+    }), (0, r.jsx)(m.Z, {
       className: T.video,
-      src: r,
+      src: a,
       autoPlay: true,
       loop: true,
       muted: true
-    }), (0, a.jsx)(d.LZC, {
+    }), (0, r.jsx)(d.LZC, {
       size: 10
-    }), (0, a.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: T.footer,
-      children: (0, a.jsxs)("div", {
+      children: (0, r.jsxs)("div", {
         className: T.forumPostControls,
-        children: [(0, a.jsxs)("div", {
+        children: [(0, r.jsxs)("div", {
           className: T.messageCountBox,
-          children: [(0, a.jsx)("span", {
+          children: [(0, r.jsx)("span", {
             className: T.messageCountIcon,
-            children: (0, a.jsx)(d.kBi, {
+            children: (0, r.jsx)(d.kBi, {
               size: "xs",
               color: "currentColor"
             })
-          }), (0, a.jsx)(d.Text, {
+          }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "interactive-text-default",
             children: i
           })]
-        }), (0, a.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
           className: T.reactionBox,
-          children: [(0, a.jsx)("span", {
+          children: [(0, r.jsx)("span", {
             role: "img",
             "aria-label": "",
             children: s
-          }), (0, a.jsx)(d.Text, {
+          }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "interactive-text-default",
             children: o
@@ -127,20 +127,20 @@ let E = e => {
   var t, n;
   let {
     channel: i
-  } = e, m = (0, u.ZP)(), E = (0, c.wj)(m), _ = (0, o.e7)([p.Z], () => p.Z.getGuild(i.guild_id)), R = (0, o.e7)([f.Z], () => f.Z.hasHidden(i.id)), M = (0, x.C)({
+  } = e, m = (0, u.ZP)(), E = (0, c.wj)(m), _ = (0, o.e7)([p.Z], () => p.Z.getGuild(i.guild_id)), R = (0, o.e7)([h.Z], () => h.Z.hasHidden(i.id)), M = (0, x.C)({
     guildId: i.guild_id,
     channelId: i.id
   }), {
     transitions: Z,
     setVisible: k
-  } = (0, v.H)(), A = r.useCallback(() => {
-    k(false), h.Z.hideAdminOnboarding(i.id, true)
+  } = (0, v.H)(), A = a.useCallback(() => {
+    k(false), f.Z.hideAdminOnboarding(i.id, true)
   }, [i, k]);
-  r.useEffect(() => {
+  a.useEffect(() => {
     (0, g.c)(i.id) || k(!R)
   }, [i, k, R]);
-  let L = r.useMemo(() => [y.intl.string(y.t["8pEGAw"]), y.intl.string(y.t.jwfgDd), y.intl.string(y.t.mPKs27), y.intl.string(y.t.StRbvG)], []),
-    F = r.useMemo(() => [y.intl.string(y.t["m/b58M"]), y.intl.string(y.t.MuJSKw), y.intl.string(y.t["d/Wqvu"]), y.intl.string(y.t.GJklAw)], []),
+  let L = a.useMemo(() => [y.intl.string(y.t["8pEGAw"]), y.intl.string(y.t.jwfgDd), y.intl.string(y.t.mPKs27), y.intl.string(y.t.StRbvG)], []),
+    F = a.useMemo(() => [y.intl.string(y.t["m/b58M"]), y.intl.string(y.t.MuJSKw), y.intl.string(y.t["d/Wqvu"]), y.intl.string(y.t.GJklAw)], []),
     D = () => {
       b.Z.open(i.guild_id, C.pNK.ROLE_SUBSCRIPTIONS)
     },
@@ -148,32 +148,32 @@ let E = e => {
     z = null != (n = (null == _ ? true : _.features.has(C.GuildFeatures.CREATOR_MONETIZABLE)) || (null == _ ? true : _.features.has(C.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL))) && n,
     B = z ? y.intl.string(y.t["G/7ciZ"]) : y.intl.string(y.t.IFOiit),
     U = z ? y.intl.string(y.t.GjgQO1) : y.intl.string(y.t.E7AO6t);
-  return (0, a.jsx)(a.Fragment, {
-    children: Z((e, t) => t ? (0, a.jsxs)(s.animated.div, {
+  return (0, r.jsx)(r.Fragment, {
+    children: Z((e, t) => t ? (0, r.jsxs)(s.animated.div, {
       style: e,
       className: T.container,
-      children: [(0, a.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
         className: T.headerRow,
-        children: [(0, a.jsxs)(d.Text, {
+        children: [(0, r.jsxs)(d.Text, {
           variant: "text-xs/normal",
           className: T.visibilityInfo,
-          children: [(0, a.jsx)(d.d3s, {
+          children: [(0, r.jsx)(d.d3s, {
             size: "xxs",
             color: "currentColor",
             className: T.icon
           }), y.intl.string(y.t.znhX2R)]
-        }), (0, a.jsx)(I, {
+        }), (0, r.jsx)(P, {
           handleHide: A
         })]
-      }), (0, a.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: T.contentContainer,
-        children: [(0, a.jsxs)("div", {
+        children: [(0, r.jsxs)("div", {
           className: l()(T.contentRow, z && T.contentRowOne),
-          children: [(0, a.jsx)("div", {
+          children: [(0, r.jsx)("div", {
             className: T.contentMediaContainer,
-            children: (0, a.jsxs)("div", {
+            children: (0, r.jsxs)("div", {
               className: T.contentVideoContainer,
-              children: [(0, a.jsx)(P, {
+              children: [(0, r.jsx)(I, {
                 username: y.intl.string(y.t.AkORco),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4",
                 title: y.intl.string(y.t.yO6Fxu),
@@ -181,7 +181,7 @@ let E = e => {
                 reaction: "⚡️",
                 reactionCount: "724",
                 classname: T.backgroundVideo
-              }), (0, a.jsx)(P, {
+              }), (0, r.jsx)(I, {
                 username: y.intl.string(y.t.DPg3YM),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_wumpus_onboarding.mp4",
                 title: y.intl.string(y.t["R5XnC/"]),
@@ -189,7 +189,7 @@ let E = e => {
                 reactionCount: "84",
                 reaction: "\uD83D\uDC9E",
                 classname: T.backgroundVideo
-              }), (0, a.jsx)(P, {
+              }), (0, r.jsx)(I, {
                 username: y.intl.string(y.t.KIelex),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_scientist_wumpus.mp4",
                 title: y.intl.string(y.t.pt88Vb),
@@ -199,37 +199,37 @@ let E = e => {
                 classname: T.highlightVideo
               })]
             })
-          }), (0, a.jsxs)("article", {
+          }), (0, r.jsxs)("article", {
             className: T.contentTextContainer,
-            children: [(0, a.jsx)(d.Heading, {
+            children: [(0, r.jsx)(d.Heading, {
               variant: "heading-lg/semibold",
               color: "text-strong",
               children: B
-            }), (0, a.jsx)(d.LZC, {
+            }), (0, r.jsx)(d.LZC, {
               size: 8
-            }), (0, a.jsx)(d.Text, {
+            }), (0, r.jsx)(d.Text, {
               variant: "text-md/normal",
               color: "text-muted",
               children: U
-            }), (0, a.jsx)(d.LZC, {
+            }), (0, r.jsx)(d.LZC, {
               size: 16
-            }), (0, a.jsxs)(d.P3F, {
+            }), (0, r.jsxs)(d.P3F, {
               onClick: () => open(j.Z.getCreatorSupportArticleURL(C.BhN.MEDIA_CHANNEL)),
               className: T.helpCenterLink,
-              children: [(0, a.jsx)(d.Text, {
+              children: [(0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "text-link",
                 children: y.intl.string(y.t.OahzBd)
-              }), (0, a.jsx)(d.rgF, {
+              }), (0, r.jsx)(d.rgF, {
                 size: "xs",
                 color: "currentColor",
                 className: T.helpCenterLinkIcon
               })]
-            }), (0, a.jsx)(d.LZC, {
+            }), (0, r.jsx)(d.LZC, {
               size: 16
-            }), (0, a.jsx)("div", {
+            }), (0, r.jsx)("div", {
               className: T.mediaChannelTagsContainer,
-              children: L.map(e => (0, a.jsx)(d.Text, {
+              children: L.map(e => (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
                 className: T.mediaChannelTag,
@@ -237,57 +237,57 @@ let E = e => {
               }, e))
             })]
           })]
-        }), z && (0, a.jsxs)("div", {
+        }), z && (0, r.jsxs)("div", {
           className: l()(T.contentRow, T.contentRowTwo),
-          children: [(0, a.jsx)("div", {
+          children: [(0, r.jsx)("div", {
             className: T.contentMediaContainer,
-            children: (0, a.jsxs)("div", {
+            children: (0, r.jsxs)("div", {
               className: T.contentImageContainer,
-              children: [(0, a.jsx)("img", {
-                src: E ? N : O,
+              children: [(0, r.jsx)("img", {
+                src: E ? w : O,
                 alt: "",
                 className: T.previewEmbedImage
-              }), (0, a.jsx)("img", {
-                src: E ? w : S,
+              }), (0, r.jsx)("img", {
+                src: E ? S : N,
                 alt: "",
                 className: T.previewEmbedImage
               })]
             })
-          }), (0, a.jsxs)("article", {
+          }), (0, r.jsxs)("article", {
             className: T.contentTextContainer,
-            children: [(0, a.jsxs)(d.Text, {
+            children: [(0, r.jsxs)(d.Text, {
               variant: "text-xxs/bold",
               className: T.serverSubPill,
-              children: [y.intl.string(y.t.NChGwy), " ", (0, a.jsx)("span", {
+              children: [y.intl.string(y.t.NChGwy), " ", (0, r.jsx)("span", {
                 role: "img",
                 "aria-label": "",
                 children: "\uD83D\uDD25"
               })]
-            }), (0, a.jsx)(d.LZC, {
+            }), (0, r.jsx)(d.LZC, {
               size: 10
-            }), (0, a.jsx)(d.Heading, {
+            }), (0, r.jsx)(d.Heading, {
               variant: "heading-lg/semibold",
               color: "text-strong",
               children: y.intl.string(y.t["N/TRrT"])
-            }), (0, a.jsx)(d.LZC, {
+            }), (0, r.jsx)(d.LZC, {
               size: 8
-            }), (0, a.jsx)(d.Text, {
+            }), (0, r.jsx)(d.Text, {
               variant: "text-md/normal",
               color: "text-muted",
               children: y.intl.string(y.t.t3yWxG)
-            }), (0, a.jsx)(d.LZC, {
+            }), (0, r.jsx)(d.LZC, {
               size: 16
-            }), (0, a.jsx)("div", {
+            }), (0, r.jsx)("div", {
               className: T.mediaChannelTagsContainer,
-              children: F.map(e => (0, a.jsx)(d.Text, {
+              children: F.map(e => (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
                 className: T.mediaChannelTag,
                 children: e
               }, e))
-            }), (0, a.jsx)(d.LZC, {
+            }), (0, r.jsx)(d.LZC, {
               size: 16
-            }), 0 === M.length && (0, a.jsx)(d.Button, {
+            }), 0 === M.length && (0, r.jsx)(d.Button, {
               variant: "primary",
               onClick: D,
               text: H

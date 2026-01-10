@@ -65,7 +65,7 @@ class c extends Chunk495852.C {
           a.cardAsset = l.F.internalBinaryRead(e, e.uint32(), n, a.cardAsset);
           break;
         case 12:
-          a.mobileCardAsset = l.F.internalBinaryRead(e, e.uint32(), n, a.mobileCardAsset);
+          a.mobileBannerAsset = l.F.internalBinaryRead(e, e.uint32(), n, a.mobileBannerAsset);
           break;
         default:
           let o = n.readUnknownField;
@@ -77,7 +77,7 @@ class c extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.header && t.tag(1, r.TD.LengthDelimited).string(e.header), "" !== e.desktopBody && t.tag(2, r.TD.LengthDelimited).string(e.desktopBody), "" !== e.mobileBody && t.tag(3, r.TD.LengthDelimited).string(e.mobileBody), e.avatarAsset && l.F.internalBinaryWrite(e.avatarAsset, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "" !== e.bannerAssetUrl && t.tag(5, r.TD.LengthDelimited).string(e.bannerAssetUrl), "" !== e.backgroundAssetUrl && t.tag(6, r.TD.LengthDelimited).string(e.backgroundAssetUrl), "" !== e.cardAssetUrl && t.tag(7, r.TD.LengthDelimited).string(e.cardAssetUrl), e.gradient && s.p.internalBinaryWrite(e.gradient, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.bannerAsset && l.F.internalBinaryWrite(e.bannerAsset, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.backgroundAsset && l.F.internalBinaryWrite(e.backgroundAsset, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.cardAsset && l.F.internalBinaryWrite(e.cardAsset, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.mobileCardAsset && l.F.internalBinaryWrite(e.mobileCardAsset, t.tag(12, r.TD.LengthDelimited).fork(), n).join();
+    "" !== e.header && t.tag(1, r.TD.LengthDelimited).string(e.header), "" !== e.desktopBody && t.tag(2, r.TD.LengthDelimited).string(e.desktopBody), "" !== e.mobileBody && t.tag(3, r.TD.LengthDelimited).string(e.mobileBody), e.avatarAsset && l.F.internalBinaryWrite(e.avatarAsset, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "" !== e.bannerAssetUrl && t.tag(5, r.TD.LengthDelimited).string(e.bannerAssetUrl), "" !== e.backgroundAssetUrl && t.tag(6, r.TD.LengthDelimited).string(e.backgroundAssetUrl), "" !== e.cardAssetUrl && t.tag(7, r.TD.LengthDelimited).string(e.cardAssetUrl), e.gradient && s.p.internalBinaryWrite(e.gradient, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.bannerAsset && l.F.internalBinaryWrite(e.bannerAsset, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.backgroundAsset && l.F.internalBinaryWrite(e.backgroundAsset, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.cardAsset && l.F.internalBinaryWrite(e.cardAsset, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.mobileBannerAsset && l.F.internalBinaryWrite(e.mobileBannerAsset, t.tag(12, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -139,7 +139,7 @@ class c extends Chunk495852.C {
       T: () => l.F
     }, {
       no: 12,
-      name: "mobile_card_asset",
+      name: "mobile_banner_asset",
       kind: "message",
       T: () => l.F
     }])

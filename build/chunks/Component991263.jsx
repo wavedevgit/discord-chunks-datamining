@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 991263, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,20 +12,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk992733 = require("./992733.js");
 
-function u(e) {
+function d(e) {
   let {
     rating: t,
     onClick: n
-  } = e, s = t === o.aZ.BAD ? l.kZ9 : l.lbB, c = i.useCallback(() => {
+  } = e, o = t === s.aZ.BAD ? l.kZ9 : l.lbB, c = i.useCallback(() => {
     n(t)
   }, [n, t]);
   return (0, r.jsx)(a.P3F, {
     onClick: c,
-    className: d.iconContainer,
-    children: (0, r.jsx)(s, {
+    className: u.iconContainer,
+    children: (0, r.jsx)(o, {
       size: "md",
       color: "currentColor",
-      className: d.icon
+      className: u.icon
     })
   })
 }
@@ -35,7 +35,7 @@ let p = function(e) {
     dismissFeedbackEntrypoint: l
   } = e;
   i.useEffect(() => {
-    (0, s.bo)({
+    (0, o.bo)({
       searchContext: t
     })
   }, [t]);
@@ -80,18 +80,18 @@ let p = function(e) {
     })
   }, [l, t]);
   return (0, r.jsxs)("div", {
-    className: d.container,
+    className: u.container,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-strong",
       children: c.intl.string(c.t["I+4OJC"])
     }), (0, r.jsxs)("div", {
-      className: d.icons,
-      children: [(0, r.jsx)(u, {
-        rating: o.aZ.GOOD,
+      className: u.icons,
+      children: [(0, r.jsx)(d, {
+        rating: s.aZ.GOOD,
         onClick: p
-      }), (0, r.jsx)(u, {
-        rating: o.aZ.BAD,
+      }), (0, r.jsx)(d, {
+        rating: s.aZ.BAD,
         onClick: p
       })]
     })]

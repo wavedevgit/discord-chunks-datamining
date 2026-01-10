@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -21,24 +21,24 @@ function p(e) {
     scrollerRef: n
   } = e, {
     isDragging: p,
-    item: b,
-    sourceClientOffset: m
-  } = (0, a.f)(e => ({
+    item: m,
+    sourceClientOffset: b
+  } = (0, l.f)(e => ({
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), h = (0, l.e7)([c.default], () => c.default.getCurrentUser()), y = (0, o.zPA)(), v = i.useMemo(() => {
-    if (null == h || null == b) return null;
+  })), y = (0, a.e7)([c.default], () => c.default.getCurrentUser()), j = (0, o.zPA)(), h = i.useMemo(() => {
+    if (null == y || null == m) return null;
     let {
       id: e,
       itemType: t,
       itemPreviewProps: n
-    } = b;
+    } = m;
     if ("WIDGET" === t && (null == n ? true : n.widget) != null) return (0, r.jsx)("div", {
       className: g.widgetPreview,
       children: (0, r.jsx)(d.Z, {
         widget: n.widget,
-        user: h,
+        user: y,
         disableInteraction: true
       })
     });
@@ -52,7 +52,7 @@ function p(e) {
         imageSrc: t,
         gameName: i,
         applicationId: e,
-        userId: null == h ? true : h.id,
+        userId: null == y ? true : y.id,
         disableInteraction: true
       })
     }
@@ -63,7 +63,7 @@ function p(e) {
       } = n;
       return (0, r.jsx)(u.Z, {
         className: g.gameDetailsCardPreview,
-        user: h,
+        user: y,
         widgetType: t,
         game: e,
         disableInteraction: true
@@ -77,7 +77,7 @@ function p(e) {
         className: g.wishlistItemPreview,
         children: (0, r.jsx)(f.Z, {
           item: e,
-          profileOwner: h,
+          profileOwner: y,
           wishlistId: null,
           isOwner: false,
           showOverlayButton: false,
@@ -87,7 +87,7 @@ function p(e) {
       })
     }
     return null
-  }, [b, h]), O = i.useRef(null), j = i.useCallback(() => {
+  }, [m, y]), O = i.useRef(null), v = i.useCallback(() => {
     if (null == n.current) return;
     let e = n.current.getBoundingClientRect();
     O.current = {
@@ -100,21 +100,21 @@ function p(e) {
         O.current = null;
         return
       }
-      null == O.current && j()
-    }, [p, j]), true !== p || null == m || null == v) return null;
-  null == O.current && j();
+      null == O.current && v()
+    }, [p, v]), true !== p || null == b || null == h) return null;
+  null == O.current && v();
   let {
     x: x,
     y: P
   } = null != (t = O.current) ? t : {
     x: 0,
     y: 0
-  }, I = m.x - x - 60 * !!y, w = m.y - P;
+  }, I = b.x - x - 60 * !!j, w = b.y - P;
   return (0, r.jsx)("div", {
     className: g.container,
     style: {
       transform: "translate3d(".concat(I, "px, ").concat(w, "px, 0)")
     },
-    children: v
+    children: h
   })
 }

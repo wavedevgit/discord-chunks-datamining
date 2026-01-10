@@ -2,7 +2,7 @@
 /** chunk id: 213956, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,17 +24,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk146473 = require("./146473.js");
 
-function C() {
+function y() {
   let e, t = (0, l.e7)([g.Z], () => g.Z.getGuildId()),
     n = (0, l.e7)([u.Z], () => u.Z.getGuild(t)),
-    C = (0, l.e7)([m.Z], () => m.Z.getCurrentPage());
+    y = (0, l.e7)([m.Z], () => m.Z.getCurrentPage());
   if (i.useEffect(() => {
       (0, o.Q3)(a.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: j.L.AUTO
       })
     }, []), null == n) return null;
-  let y = (0, x.Q)(n);
-  switch (C) {
+  let C = (0, x.Q)(n);
+  switch (y) {
     case b.u.OVERVIEW:
       e = (0, r.jsx)(p.Z, {
         guild: n
@@ -43,13 +43,13 @@ function C() {
     case b.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, r.jsx)(h.Z, {
         title: v.intl.string(v.t["53eF5o"]),
-        settings: y[b.u.CAPTCHA_AND_RAID_PROTECTION]
+        settings: C[b.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case b.u.DM_AND_SPAM_PROTECTION:
       e = (0, r.jsx)(h.Z, {
         title: v.intl.string(v.t.O0SfFy),
-        settings: y[b.u.DM_AND_SPAM_PROTECTION]
+        settings: C[b.u.DM_AND_SPAM_PROTECTION]
       });
       break;
     case b.u.AUTOMOD:
@@ -60,11 +60,11 @@ function C() {
     case b.u.PERMISSIONS:
       e = (0, r.jsx)(h.Z, {
         title: v.intl.string(v.t.BXoNiT),
-        settings: y[b.u.PERMISSIONS]
+        settings: C[b.u.PERMISSIONS]
       })
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [C !== b.u.OVERVIEW && (0, r.jsx)(s.P3F, {
+    children: [y !== b.u.OVERVIEW && (0, r.jsx)(s.P3F, {
       className: O.back,
       onClick: () => {
         (0, f.K)(b.u.OVERVIEW)

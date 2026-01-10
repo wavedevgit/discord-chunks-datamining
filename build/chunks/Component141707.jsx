@@ -1,4 +1,4 @@
-/** Chunk was on 83203 **/
+/** Chunk was on 83772 **/
 /** chunk id: 141707, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -37,13 +37,13 @@ let o = Chunk473749.forwardRef(function(e, t) {
     }({
       marginTop: 8 * !!n
     }, l),
-    children: [(0, r.jsx)(i.d3s, {
+    children: [(0, r.jsx)(s.d3s, {
       size: "custom",
       className: a.infoIcon,
       height: n ? 16 : 12,
       width: n ? 16 : 12,
-      color: n ? s.Z.colors.TEXT_MUTED.css : s.Z.colors.WHITE.css
-    }), (0, r.jsx)(i.Text, {
+      color: n ? i.Z.colors.TEXT_MUTED.css : i.Z.colors.WHITE.css
+    }), (0, r.jsx)(s.Text, {
       color: n ? "text-muted" : "always-white",
       variant: n ? "text-xs/normal" : "text-xxs/normal",
       children: o

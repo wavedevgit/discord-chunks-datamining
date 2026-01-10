@@ -160,7 +160,7 @@ let P = e => {
       isCollapsed: t = false,
       onVariantEnter: l,
       onVariantExit: i
-    } = e, a = (0, h.LJ)(n);
+    } = e, a = (0, h.bK)(n);
     return null != a && (0, g.ox)(a) ? (0, r.jsx)(P, {
       product: a,
       onVariantEnter: l,

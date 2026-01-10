@@ -44,10 +44,10 @@ function w(e) {
       currentPosition: h,
       onDragStart: v,
       onDragReset: O,
-      onDragComplete: C,
+      onDragComplete: y,
       roleStyle: N
     } = e,
-    E = (0, y.T)(c, f, d),
+    E = (0, C.T)(c, f, d),
     I = (0, j.fI)(d),
     _ = null == E && !I,
     w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
@@ -62,7 +62,7 @@ function w(e) {
       end: (e, t) => {
         let n = t.getDropResult();
         if (null == n) return void O();
-        C(n.roleId)
+        y(n.roleId)
       }
     }),
     [{
@@ -149,7 +149,7 @@ function w(e) {
       var t;
       R(A(null != (t = null == e ? true : e.ref) ? t : null))
     },
-    children: [l, null != E ? (0, r.jsx)(y.Z, {
+    children: [l, null != E ? (0, r.jsx)(C.Z, {
       className: T.lock,
       tooltipText: E
     }) : null, (0, r.jsx)(u.Text, {
@@ -167,8 +167,8 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: s
-  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), p = (0, c.e7)([b.Z], () => b.Z.roleStyle), [x, j] = i.useState(o.length), {
-    scrolledToTop: y,
+  } = e, o = (0, c.e7)([y.Z], () => y.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), p = (0, c.e7)([b.Z], () => b.Z.roleStyle), [x, j] = i.useState(o.length), {
+    scrolledToTop: C,
     handleScroll: S
   } = (0, E.V)(), {
     handleDragStart: P,
@@ -191,7 +191,7 @@ function Z(e) {
       className: T.container,
       children: [(0, r.jsxs)("div", {
         className: a()(T.titleContainer, {
-          [T.titleElevated]: !y
+          [T.titleElevated]: !C
         }),
         children: [(0, r.jsxs)(u.P3F, {
           className: T.title,

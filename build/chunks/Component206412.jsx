@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 206412, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => d
@@ -47,9 +47,9 @@ function d(e) {
     initExpanded: n,
     highlightMode: d = "none",
     children: u
-  } = e, [m, p] = r.useState(n), f = r.useCallback(() => {
+  } = e, [m, p] = r.useState(n), h = r.useCallback(() => {
     p(!m)
-  }, [m]), h = "root" === d ? "status-warning" : "status-positive", x = e => "migrated" === d ? (0, a.jsx)(i.Text, {
+  }, [m]), f = "root" === d ? "status-warning" : "status-positive", x = e => "migrated" === d ? (0, a.jsx)(i.Text, {
     variant: e,
     children: (0, a.jsx)(o, {
       text: t
@@ -61,7 +61,7 @@ function d(e) {
     })
   }) : (0, a.jsx)(i.Text, {
     variant: e,
-    color: h,
+    color: f,
     children: t
   });
   return null == u ? (0, a.jsx)("div", {
@@ -71,7 +71,7 @@ function d(e) {
     className: s.settingNode,
     children: [(0, a.jsxs)(i.P3F, {
       className: s.headerBar,
-      onClick: f,
+      onClick: h,
       children: [x("text-md/bold"), (0, a.jsx)(l.Z, {
         direction: m ? l.Z.Directions.DOWN : l.Z.Directions.RIGHT,
         className: s.headerCaret

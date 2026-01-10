@@ -29,7 +29,7 @@ function I(e) {
     channel: t,
     baseChannelId: n
   } = e, I = (0, _.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), j = (0, g.V)(t.id, t.getRecipientId()), P = i.useCallback(() => {
-    h.Z.closeChannelSidebar(b.uZ), T && C && (0, m.Kh)(t.id), N && S && (0, m.Kh)(t.id)
+    m.Z.closeChannelSidebar(b.uZ), T && C && (0, h.Kh)(t.id), N && S && (0, h.Kh)(t.id)
   }, [t.id, N, S, T, C]), x = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {
@@ -42,7 +42,7 @@ function I(e) {
   let Z = [(0, r.jsx)(s.ZP.Icon, {
     icon: a.Dio,
     tooltip: O.intl.string(O.t.cpT0Cq),
-    onClick: () => h.Z.closeChannelSidebar(n)
+    onClick: () => m.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.ZP, {

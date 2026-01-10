@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,106 +25,106 @@ var Chunk54381 = require("./54381.js"),
   Chunk127379 = require("./127379.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e) {
+function E(e) {
   let {
     channel: t,
-    themeable: j,
+    themeable: E,
     whichPopoutIsOpen: S,
     setWhichPopoutIsOpen: _
   } = e, {
-    parentAnalyticsLocation: P
+    parentAnalyticsLocation: I
   } = (0, u.ZP)(), {
-    Component: I,
+    Component: P,
     play: Z,
     events: {
-      onMouseEnter: T,
-      onMouseLeave: N
+      onMouseEnter: N,
+      onMouseLeave: T
     }
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
-    suppress: M
-  } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || M || R, L = (0, m.sR)({
-    isSoundboardButtonDisabled: D
-  }), [k, U] = (0, f.cv)(L), {
-    analyticsLocations: V
+    suppress: R
+  } = (0, y.Z)(t), D = (0, l.e7)([v.Z], () => v.Z.isDeaf()), M = w || R || D, k = (0, g.sR)({
+    isSoundboardButtonDisabled: M
+  }), [L, U] = (0, f.cv)(k), {
+    analyticsLocations: G
   } = (0, u.ZP)(), {
-    isHovered: F,
-    setIsHovered: H,
-    onMouseEnter: B,
-    onMouseLeave: G
+    isHovered: B,
+    setIsHovered: F,
+    onMouseEnter: H,
+    onMouseLeave: V
   } = (0, h.Z)(200, 300);
 
-  function W(e) {
+  function z(e) {
     null != A && (0, c.jW)(e, async () => {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => {
-        var n, r;
-        return (0, i.jsx)(e, (n = function(e) {
+        var n, i;
+        return (0, r.jsx)(e, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[t] = r
             })
           }
           return e
         }({
           guildId: A,
-          sourceAnalyticsLocations: V
-        }, t), r = r = {
-          onInteraction: (0, p.u)("SoundboardContextMenu", P)
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+          sourceAnalyticsLocations: G
+        }, t), i = i = {
+          onInteraction: (0, p.u)("SoundboardContextMenu", I)
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
           return n
-        })(Object(r)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
         }), n))
       }
     })
   }
 
-  function z() {
-    (0, d.v)(P, d.d.SOUNDBOARD), S === O.D.SOUNDBOARD ? (null == _ || _(true), G()) : (null != S ? (Z(), B()) : Z(), null == _ || _(O.D.SOUNDBOARD))
+  function W() {
+    (0, d.v)(I, d.d.SOUNDBOARD), S === x.D.SOUNDBOARD ? (null == _ || _(true), V()) : (null != S ? (Z(), H()) : Z(), null == _ || _(x.D.SOUNDBOARD))
   }
-  let q = r.useRef(null);
-  return (0, i.jsx)(s.y, {
-    targetElementRef: q,
-    shouldShow: F && (S === O.D.SOUNDBOARD || null == S) || S === O.D.SOUNDBOARD,
+  let K = i.useRef(null);
+  return (0, r.jsx)(s.y, {
+    targetElementRef: K,
+    shouldShow: B && (S === x.D.SOUNDBOARD || null == S) || S === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      H(false), null == _ || _(true)
+      F(false), null == _ || _(true)
     },
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return D ? null : (0, i.jsx)(v.Z, {
-        children: (0, i.jsx)("div", {
-          onMouseEnter: B,
-          onMouseLeave: G,
-          children: (0, i.jsx)(b.Z, {
+      return M ? null : (0, r.jsx)(O.Z, {
+        children: (0, r.jsx)("div", {
+          onMouseEnter: H,
+          onMouseLeave: V,
+          children: (0, r.jsx)(b.Z, {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: k === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.o, {
+            gridNotice: L === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(m.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -133,23 +133,23 @@ function j(e) {
         })
       })
     },
-    children: () => (0, i.jsx)(x.d, {
-      ref: q,
+    children: () => (0, r.jsx)(j.d, {
+      ref: K,
       isTrayButton: true,
-      themeable: j,
-      label: w ? E.intl.string(E.t["Ox4/zU"]) : M ? E.intl.string(E.t["+YBKYI"]) : R ? E.intl.string(E.t.X1lQli) : true,
-      iconComponent: I,
-      disabled: D,
-      onContextMenu: W,
-      onClick: z,
+      themeable: E,
+      label: w ? C.intl.string(C.t["Ox4/zU"]) : R ? C.intl.string(C.t["+YBKYI"]) : D ? C.intl.string(C.t.X1lQli) : true,
+      iconComponent: P,
+      disabled: M,
+      onContextMenu: z,
+      onClick: W,
       onMouseEnter: () => {
-        B(), T()
+        H(), N()
       },
       onMouseLeave: () => {
-        null == S && (G(), N())
+        null == S && (V(), T())
       },
-      isActive: F || S === O.D.SOUNDBOARD,
-      color: F || S === O.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: B || S === x.D.SOUNDBOARD,
+      color: B || S === x.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

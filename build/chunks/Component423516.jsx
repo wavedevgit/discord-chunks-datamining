@@ -1,35 +1,35 @@
-/** Chunk was on 60831 **/
+/** Chunk was on 69813 **/
 /** chunk id: 423516, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk570928 = require("./570928.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk255642 = require("./255642.js");
-let c = function(e) {
+let u = function(e) {
   let {
     className: t,
     hasVideo: n,
-    text: i,
-    hasConnectedChannel: c,
+    text: l,
+    hasConnectedChannel: u,
     textVariant: d = "text-md/medium"
-  } = e, f = n ? s.intl.string(s.t.IlHdW8) : s.intl.string(s.t.WsOisp);
-  return (0, l.jsx)(o.Z, {
-    className: r()(t, u.hoverableStatus),
-    hoverText: c ? (0, l.jsx)(a.Text, {
+  } = e, f = n ? c.intl.string(c.t.IlHdW8) : c.intl.string(c.t.WsOisp);
+  return (0, r.jsx)(o.Z, {
+    className: i()(t, s.hoverableStatus),
+    hoverText: u ? (0, r.jsx)(a.Text, {
       variant: d,
       color: "currentColor",
       children: f
     }) : null,
-    children: (0, l.jsx)(a.Text, {
+    children: (0, r.jsx)(a.Text, {
       variant: d,
       color: "currentColor",
-      children: i
+      children: l
     })
   })
 }

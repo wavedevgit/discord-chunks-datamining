@@ -59,13 +59,13 @@ function j(e) {
     guild: j,
     prompt: v,
     singleColumn: O,
-    promptIndex: C,
-    option: y,
+    promptIndex: y,
+    option: C,
     hasError: N,
     onDragStart: E,
     onDragComplete: I,
     onDragReset: S
-  } = e, _ = null, T = s().findIndex(v.options, e => e.id === y.id), {
+  } = e, _ = null, T = s().findIndex(v.options, e => e.id === C.id), {
     drag: P,
     dragSourcePosition: w,
     drop: Z,
@@ -73,15 +73,15 @@ function j(e) {
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
     index: T,
-    optionId: y.id,
+    optionId: C.id,
     onDragStart: E,
     onDragComplete: I,
     onDragReset: S
   }), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = y.emoji) ? true : t.id, null == (i = y.emoji) ? true : i.name);
-  return (0, m.Oq)(y.emoji) || null != D || null != A || (_ = b.intl.string(b.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
+  } = (0, u.Z)(null == (t = C.emoji) ? true : t.id, null == (i = C.emoji) ? true : i.name);
+  return (0, m.Oq)(C.emoji) || null != D || null != A || (_ = b.intl.string(b.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
     className: l()(p.optionCard, {
       [p.hasError]: N || null != _,
       [p.dropIndicatorBefore]: null != w && T < w,
@@ -95,16 +95,16 @@ function j(e) {
       return t => (0, r.jsx)(e, x(h({}, t), {
         guild: j,
         prompt: v,
-        option: y,
-        index: C,
+        option: C,
+        index: y,
         onSave: e => {
           (0, f.Kk)(j, v.id, {
-            options: v.options.map(t => t.id === y.id ? e : t)
+            options: v.options.map(t => t.id === C.id ? e : t)
           })
         },
         onDelete: () => {
           (0, f.Kk)(j, v.id, {
-            options: v.options.filter(e => e.id !== y.id)
+            options: v.options.filter(e => e.id !== C.id)
           })
         }
       }))
@@ -126,8 +126,8 @@ function j(e) {
       children: [(0, r.jsx)("div", {
         className: p.emoji,
         children: (0, r.jsx)(g.Z, {
-          emojiId: null == (a = y.emoji) ? true : a.id,
-          emojiName: null == (c = y.emoji) ? true : c.name,
+          emojiId: null == (a = C.emoji) ? true : a.id,
+          emojiName: null == (c = C.emoji) ? true : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
@@ -136,12 +136,12 @@ function j(e) {
           variant: "text-md/medium",
           color: "text-strong",
           lineClamp: 1,
-          children: y.title
-        }), "" !== y.description && (0, r.jsx)(o.Text, {
+          children: C.title
+        }), "" !== C.description && (0, r.jsx)(o.Text, {
           className: p.description,
           variant: "text-xs/normal",
           color: "text-default",
-          children: y.description
+          children: C.description
         })]
       })]
     }), null != _ && (0, r.jsx)(o.Text, {

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 897669, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -21,10 +21,10 @@ function p(e) {
   } = e, p = (0, o.ZP)(t, n), f = (0, a.Z)(n, t.id);
   if (null == t) return null;
   let h = (null == t ? true : t.scheduled_start_time) != null ? (0, s.lh)(f, p.startTime, new Date(null == t ? true : t.scheduled_start_time)) : null;
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.ZP.Divider, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(l.ZP.Divider, {
       className: d.divider
-    }), (0, i.jsx)(c.z, {
+    }), (0, r.jsx)(c.z, {
       startTime: p.startTime.toISOString(),
       status: null != h ? h : t.status,
       liveText: u.intl.string(u.t.kM6e4G),
@@ -33,7 +33,7 @@ function p(e) {
       eventType: t.entity_type,
       guildEventId: null == t ? true : t.id,
       recurrenceId: n
-    }), (0, i.jsx)(r.Text, {
+    }), (0, r.jsx)(i.Text, {
       color: "text-default",
       variant: "text-md/normal",
       className: d.eventName,

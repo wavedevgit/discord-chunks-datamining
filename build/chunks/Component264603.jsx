@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -47,24 +47,24 @@ function O() {
     } = (0, p.ZP)(m.Z.DEV_TOOLS),
     n = j.JG.useSetting(),
     [i, o] = r.useState(""),
-    O = (0, s.e7)([g.ZP, y.Z], () => (0, v.Z)(g.ZP, y.Z)),
+    O = (0, s.e7)([g.ZP, C.Z], () => (0, v.Z)(g.ZP, C.Z)),
     N = (0, b.q)(i),
     P = (0, s.Wu)([x.Z], () => {
       var e, t;
       return null != (t = null == N || null == (e = N.linkedGames) ? true : e.map(e => x.Z.getApplication(e.id)).filter(e => null != e)) ? t : []
     }),
-    w = (0, h.FG)(N, {
-      allowedFlows: [h.ro.RPC]
+    w = (0, f.FG)(N, {
+      allowedFlows: [f.ro.RPC]
     }),
-    I = (0, h.FG)(N, {
-      allowedFlows: [h.ro.WEB]
+    I = (0, f.FG)(N, {
+      allowedFlows: [f.ro.WEB]
     }),
-    k = (0, h.FG)(N),
+    k = (0, f.FG)(N),
     {
       canDeauthorize: R,
       deauthorize: A
     } = function(e) {
-      let t = (0, s.e7)([C.default], () => C.default.getNewestTokenForApplication(e)),
+      let t = (0, s.e7)([y.default], () => y.default.getNewestTokenForApplication(e)),
         n = r.useCallback(() => {
           null != t && u.Z.delete(t.id)
         }, [t]);
@@ -109,7 +109,7 @@ function O() {
         variant: "text-md/normal",
         children: ["Linked Games:", " ", P.length > 0 ? P.map(e => {
           var t;
-          return (null == (t = (0, f.r)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
+          return (null == (t = (0, h.r)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
       })]
     }), (0, a.jsxs)("div", {

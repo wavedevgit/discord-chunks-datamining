@@ -12,17 +12,18 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  R: () => s,
-  y: () => l
+  R: () => l,
+  y: () => c
 }), require("./49124.js");
+let a = "__d6gp33cibjs";
 try {
-  r = window.localStorage
+  r = window.localStorage, null == r && null != a && (r = window[a], delete window[a])
 } catch (e) {}
 try {
-  delete window.localStorage
+  null != window.localStorage && null != a && (window[a] = window.localStorage), delete window.localStorage
 } catch (e) {}
 
-function a() {
+function o() {
   let e = "test";
   try {
     return r.setItem(e, e), r.removeItem(e), true
@@ -30,7 +31,7 @@ function a() {
     returnfalse
   }
 }
-class o {
+class s {
   get(e, t) {
     let n = r.getItem(e);
     if (null != n) try {
@@ -62,7 +63,7 @@ class o {
     return Promise.resolve(this.get(e))
   }
 }
-class s {
+class l {
   get(e, t) {
     return this.storage.hasOwnProperty(e) ? this.storage[e] : t
   }
@@ -91,4 +92,4 @@ class s {
     i(this, "storage", true), this.storage = {}
   }
 }
-let l = a() ? new o : new s
+let c = o() ? new s : new l

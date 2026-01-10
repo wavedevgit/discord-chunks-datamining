@@ -138,7 +138,7 @@ function M(e) {
     } = (0, T.dw)(),
     O = (0, j.f)(),
     S = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
-    R = (0, y.Z)(n.id),
+    R = (0, C.Z)(n.id),
     G = null != n && (0, b.eM)(n, S);
   if (!O) return (0, r.jsx)(a.$jN, {});
   switch (m) {
@@ -228,7 +228,7 @@ function M(e) {
                   roles: t,
                   initialTab: "role_subscriptions",
                   returnToSection: w.pNK.ROLE_SUBSCRIPTIONS
-                }), (0, C.be)(n.id), (0, f.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
+                }), (0, y.be)(n.id), (0, f.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
               },
               text: D.intl.string(D.t.vM81yY),
               size: "sm",

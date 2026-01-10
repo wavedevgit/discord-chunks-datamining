@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 962486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,13 +20,13 @@ let g = {
   section: Chunk981631.jXE.DISCOVER_POPULAR
 };
 
-function m(e) {
+function h(e) {
   let {
     tab: t,
     guildIds: n,
     loading: p,
-    onScroll: m,
-    onGuildCardClick: h,
+    onScroll: h,
+    onGuildCardClick: m,
     onGuildCardSeen: b
   } = e, _ = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), v = (0, u.lg)(t), y = i.useMemo(() => {
     let e = p ? 30 : n.length,
@@ -36,14 +36,14 @@ function m(e) {
       t.push((0, r.jsx)(d.Eo, {
         guildId: null != (i = n[a]) ? i : null,
         index: a,
-        onClick: e => h(e, a, v, g),
+        onClick: e => m(e, a, v, g),
         onView: e => b(e, v)
       }, null != (l = n[a]) ? l : a))
     }
     return t
-  }, [v, n, p, h, b]);
+  }, [v, n, p, m, b]);
   return (0, r.jsxs)(c.Z, {
-    onScroll: m,
+    onScroll: h,
     children: [(0, r.jsx)(o.Z, {
       title: _,
       description: E,

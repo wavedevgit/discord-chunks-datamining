@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 210724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => G,
@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk554916 = require("./554916.js"),
+  Chunk620389 = require("./620389.js"),
   Chunk286379 = require("./286379.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -65,10 +65,10 @@ function G(e) {
   var t, n;
   let {
     quest: i
-  } = e, p = (0, y.T)({
+  } = e, p = (0, C.T)({
     quest: i,
     location: L.dr.QUESTS_BAR
-  }), j = (0, C.Z)({
+  }), j = (0, y.Z)({
     location: L.dr.QUESTS_BAR
   }), G = (0, c.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: V,
@@ -76,18 +76,18 @@ function G(e) {
   } = (0, O.qN)({
     quest: i,
     location: L.dr.QUESTS_BAR
-  }), W = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), H = (0, c.e7)([h.Z], () => h.Z.hasLayers()), q = r.useRef(null), K = r.useMemo(() => (0, S.q8)(i), [i]), Y = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(Y), X = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+  }), H = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), W = (0, c.e7)([f.Z], () => f.Z.hasLayers()), K = r.useRef(null), q = r.useMemo(() => (0, S.q8)(i), [i]), Y = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(Y), X = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
     hasError: J,
     isLoading: $
-  } = (0, E.kC)(), ee = r.useContext(D.T) || j && V && !$ && !G, et = r.useRef(ee), en = r.useRef(false), ea = r.useRef(false), [er, ei] = r.useState(false), [el, es] = r.useState(false), [eo, ec] = r.useState(false), [ed, eu] = r.useState(true), [em, ep] = r.useState(true), ef = r.useRef(null), eh = r.useRef(null), ex = r.useRef(null), eb = (0, _.Rf)(i), eg = r.useCallback(e => {
+  } = (0, E.kC)(), ee = r.useContext(Z.T) || j && V && !$ && !G, et = r.useRef(ee), en = r.useRef(false), ea = r.useRef(false), [er, ei] = r.useState(false), [el, es] = r.useState(false), [eo, ec] = r.useState(false), [ed, eu] = r.useState(true), [em, ep] = r.useState(true), eh = r.useRef(null), ef = r.useRef(null), ex = r.useRef(null), eb = (0, _.Rf)(i), eg = r.useCallback(e => {
     X || (eu(false), ec(e))
   }, [X]), ev = r.useCallback(() => {
     eg(true)
   }, [eg]), ej = r.useCallback(() => {
     ei(true)
-  }, []), eC = r.useCallback(() => {
+  }, []), ey = r.useCallback(() => {
     ei(false), ea.current || X || eg(false)
-  }, [X, eg]), ey = r.useCallback(() => {
+  }, [X, eg]), eC = r.useCallback(() => {
     ei(false), X || eg(false), ea.current = false
   }, [X, eg]), e_ = r.useCallback(() => {
     es(true)
@@ -112,7 +112,7 @@ function G(e) {
       properties: {
         content_id: v.jn.QUEST_BAR,
         content_name: (0, x._b)(v.jn.QUEST_BAR),
-        impression_id: null == (e = q.current) ? true : e.getId()
+        impression_id: null == (e = K.current) ? true : e.getId()
       },
       shouldExtendSession: true,
       sourceQuestContent: v.jn.QUEST_BAR_V2
@@ -127,7 +127,7 @@ function G(e) {
       properties: {
         content_id: v.jn.QUEST_BAR,
         content_name: (0, x._b)(v.jn.QUEST_BAR),
-        impression_id: null == (e = q.current) ? true : e.getId()
+        impression_id: null == (e = K.current) ? true : e.getId()
       },
       sourceQuestContent: v.jn.QUEST_BAR_V2
     }), ea.current = false, eO()
@@ -159,9 +159,9 @@ function G(e) {
   r.useEffect(() => {
     ek({
       expansionSpring: +!!eo,
-      immediate: W
+      immediate: H
     })
-  }, [eo, ek, W]);
+  }, [eo, ek, H]);
   let {
     visibilitySpring: eR
   } = (0, d.q_F)({
@@ -184,8 +184,8 @@ function G(e) {
     }
   });
   if (r.useEffect(() => {
-      K && (0, N.loadVideoQuestModal)()
-    }, [K]), r.useEffect(() => {
+      q && (0, N.loadVideoQuestModal)()
+    }, [q]), r.useEffect(() => {
       if (J) {
         var e;
         (0, x.dA)({
@@ -195,10 +195,10 @@ function G(e) {
             content_id: v.jn.QUEST_BAR,
             content_name: (0, x._b)(v.jn.QUEST_BAR),
             reason: "asset_loading_error",
-            impression_id: null == (e = q.current) ? true : e.getId()
+            impression_id: null == (e = K.current) ? true : e.getId()
           },
           sourceQuestContent: v.jn.QUEST_BAR_V2
-        }), f.Z.increment({
+        }), h.Z.increment({
           name: o.V.QUEST_CONTENT_RENDERING_FAILURE,
           tags: ["quest_id:".concat(i.id), "reason:asset_loading_error"]
         })
@@ -213,7 +213,7 @@ function G(e) {
             content_id: v.jn.QUEST_BAR,
             content_name: (0, x._b)(v.jn.QUEST_BAR),
             reason: "not_eligible_for_quest",
-            impression_id: null == (e = q.current) ? true : e.getId()
+            impression_id: null == (e = K.current) ? true : e.getId()
           },
           sourceQuestContent: v.jn.QUEST_BAR_V2
         })
@@ -228,7 +228,7 @@ function G(e) {
             content_id: v.jn.QUEST_BAR,
             content_name: (0, x._b)(v.jn.QUEST_BAR),
             reason: z,
-            impression_id: null == (e = q.current) ? true : e.getId()
+            impression_id: null == (e = K.current) ? true : e.getId()
           },
           sourceQuestContent: v.jn.QUEST_BAR_V2
         })
@@ -240,9 +240,9 @@ function G(e) {
   return (0, a.jsx)(T.A, {
     questOrQuests: i,
     questContent: v.jn.QUEST_BAR_V2,
-    overrideVisibility: !H && ee,
+    overrideVisibility: !W && ee,
     sourceQuestContent: v.jn.QUEST_BAR_V2,
-    children: (e, t) => (q.current = t.current, (0, a.jsxs)("div", {
+    children: (e, t) => (K.current = t.current, (0, a.jsxs)("div", {
       className: U.mask,
       children: [ee && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(B, {
@@ -274,30 +274,30 @@ function G(e) {
             springConfig: ew,
             isExpanded: eo,
             children: (0, a.jsx)(w.iQ, {
-              expandedContentRef: ef,
-              collapsedContentRef: eh,
+              expandedContentRef: eh,
+              collapsedContentRef: ef,
               expansionSpring: eI,
               children: (0, a.jsxs)(A.g, {
                 quest: i,
                 taskDetails: eb,
                 isExpanded: eo,
                 isExpansionAnimationComplete: ed,
-                onCtxMenuClose: eC,
+                onCtxMenuClose: ey,
                 onCtxMenuOpen: ej,
-                onCtxMenuSelect: ey,
+                onCtxMenuSelect: eC,
                 onGameSheetOpen: e_,
                 onGameSheetClose: eS,
                 collapsedHeight: eA,
                 children: [(0, a.jsx)(I.Z, {
-                  ref: eh,
+                  ref: ef,
                   className: U.content,
                   overlayRef: ex
                 }, X ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(k.Z, {
                   className: U.content,
                   overlayRef: ex,
-                  ref: ef,
+                  ref: eh,
                   children: (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(Z.Z, {}), !Y && (0, a.jsx)(P.Z, {})]
+                    children: [(0, a.jsx)(D.Z, {}), !Y && (0, a.jsx)(P.Z, {})]
                   })
                 }), (0, a.jsx)("div", {
                   ref: ex,

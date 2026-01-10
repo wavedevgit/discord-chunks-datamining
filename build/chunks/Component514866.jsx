@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,18 +24,18 @@ var Chunk120356 = require("./120356.js"),
   Chunk293717 = require("./293717.js"),
   Chunk478411 = require("./478411.js");
 
-function y() {
+function C() {
   let e = b.default.getCurrentUser(),
     t = null == e ? true : e.isStaff(),
-    r = f.Rt.useSetting();
+    r = h.Rt.useSetting();
   return (0, a.jsxs)(s.Ttm, {
     children: [(0, a.jsx)("div", {
-      className: i()(j.buttonsContainer, C.marginBottom20),
-      children: (0, a.jsx)(h.g, {
+      className: i()(j.buttonsContainer, y.marginBottom20),
+      children: (0, a.jsx)(f.g, {
         isDevTools: true
       })
     }), (0, a.jsx)("div", {
-      className: i()(j.buttonsContainer, C.marginBottom8),
+      className: i()(j.buttonsContainer, y.marginBottom8),
       children: (0, a.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
@@ -45,7 +45,7 @@ function y() {
         })
       })
     }), (0, a.jsx)("div", {
-      className: i()(j.buttonsContainer, C.marginBottom8),
+      className: i()(j.buttonsContainer, y.marginBottom8),
       children: (0, a.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
@@ -56,7 +56,7 @@ function y() {
           (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("37031"), n.e("89650"), n.e("30332")]).then(n.bind(n, 611446));
+            } = await Promise.all([n.e("37031"), n.e("89650"), n.e("98932")]).then(n.bind(n, 611446));
             return n => (0, a.jsx)(e, function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -87,7 +87,7 @@ function y() {
       })
     }), t && (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)("div", {
-        className: i()(j.buttonsContainer, C.marginBottom8),
+        className: i()(j.buttonsContainer, y.marginBottom8),
         children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
@@ -95,7 +95,7 @@ function y() {
           onClick: () => (0, d.Z)("devtools")
         })
       }), (0, a.jsx)("div", {
-        className: i()(j.buttonsContainer, C.marginBottom8),
+        className: i()(j.buttonsContainer, y.marginBottom8),
         children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
@@ -103,7 +103,7 @@ function y() {
           onClick: () => (0, o.N)()
         })
       }), (0, a.jsx)("div", {
-        className: i()(j.buttonsContainer, C.marginBottom8),
+        className: i()(j.buttonsContainer, y.marginBottom8),
         children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
@@ -111,7 +111,7 @@ function y() {
           onClick: u.YU
         })
       }), (0, a.jsx)("div", {
-        className: i()(j.buttonsContainer, C.marginBottom8),
+        className: i()(j.buttonsContainer, y.marginBottom8),
         children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
@@ -119,7 +119,7 @@ function y() {
           onClick: l.$R
         })
       }), (0, a.jsx)("div", {
-        className: i()(j.buttonsContainer, C.marginBottom8),
+        className: i()(j.buttonsContainer, y.marginBottom8),
         children: (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
@@ -127,11 +127,11 @@ function y() {
           onClick: () => (0, c.pg)(true)
         })
       }), (0, a.jsx)("div", {
-        className: i()(j.buttonsContainer, C.marginBottom20),
+        className: i()(j.buttonsContainer, y.marginBottom20),
         children: (0, a.jsx)(s.rsf, {
           label: "Ignore profile speedbump disabled",
           checked: r,
-          onChange: e => f.Rt.updateSetting(e)
+          onChange: e => h.Rt.updateSetting(e)
         })
       })]
     })]

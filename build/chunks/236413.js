@@ -9,8 +9,8 @@ require.d(exports, {
   Vb: () => A,
   YN: () => _,
   ZF: () => y,
-  ep: () => d,
-  km: () => j,
+  ep: () => j,
+  km: () => d,
   nC: () => S,
   vo: () => E
 }), require("./388685.js"), require("./415506.js");
@@ -28,7 +28,7 @@ let f = e => (null == e ? true : e.triggerType) === s.fX.KEYWORD,
   S = e => (null == e ? true : e.triggerType) === s.fX.MENTION_SPAM,
   O = e => (null == e ? true : e.triggerType) === s.fX.USER_PROFILE;
 
-function d(e, t) {
+function j(e, t) {
   let n = o.I6[t],
     r = (0, o.jp)(t, e),
     a = {
@@ -50,7 +50,7 @@ function d(e, t) {
   return s > 0 && (a.name += " ".concat(s + 1)), a
 }
 
-function j(e, t) {
+function d(e, t) {
   if (e.length > t) throw Error(c.intl.formatToPlainString(c.t.mee4qd, {
     limit: t
   }));
@@ -69,7 +69,7 @@ function p(e) {
     let r = null != (t = e.triggerMetadata.keywordFilter) ? t : [],
       l = null != (n = e.triggerMetadata.regexPatterns) ? n : [];
     if (0 === r.length && 0 === l.length) throw Error(c.intl.string(c.t.kz2Av3));
-    if (j(r, s.RH), l.length > s.VW) throw Error(c.intl.formatToPlainString(c.t.tDjhF1, {
+    if (d(r, s.RH), l.length > s.VW) throw Error(c.intl.formatToPlainString(c.t.tDjhF1, {
       limit: s.VW
     }));
     l.forEach(e => {

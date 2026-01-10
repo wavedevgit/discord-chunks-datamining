@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 223730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S$: () => b,
+  S$: () => m,
   yj: () => y
 });
 var Chunk54381 = require("./54381.js"),
@@ -17,13 +17,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk418924 = require("./418924.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk507179 = require("./507179.js");
-let b = () => {
+let m = () => {
   (0, s.openUserSettings)(o.n.ACTIVITY_PRIVACY_PANEL, {
-    section: f.oAB.ACTIVITY_PRIVACY
+    section: p.oAB.ACTIVITY_PRIVACY
   })
 };
 
-function m(e) {
+function b(e) {
   let {
     children: t,
     onClick: n
@@ -44,16 +44,16 @@ function m(e) {
 function y(e) {
   let {
     onClosePopout: t
-  } = e, n = a.G6.useSetting(), o = (0, i.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), s = (0, u._o)(), f = o.filter(e => !s.has(e));
-  return 0 === o.length ? null : (0, r.jsxs)(m, {
+  } = e, n = a.G6.useSetting(), o = (0, i.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), s = (0, u._o)(), p = o.filter(e => !s.has(e));
+  return 0 === o.length ? null : (0, r.jsxs)(b, {
     onClick: () => {
-      t(), b()
+      t(), m()
     },
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      children: p.intl.string(n ? h.default["3GrhnF"] : h.default["54ycKJ"])
+      children: h.intl.string(n ? f.default["3GrhnF"] : f.default["54ycKJ"])
     }), (0, r.jsx)(d.c, {
-      guildIds: f
+      guildIds: p
     })]
   })
 }

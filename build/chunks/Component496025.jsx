@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -40,7 +40,7 @@ function T() {
         let t = x.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, f.F6)(t, g.default, b.Z) : e.channelId
+          label: null != t ? (0, h.F6)(t, g.default, b.Z) : e.channelId
         }
       })
     })),
@@ -48,9 +48,9 @@ function T() {
       var e;
       if (null == l || !l.isPrivate()) return;
       let t = (0, o.x9)(null != (e = l.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
-      h.Z.updatePrivateChannelRecipientFlags(l.id, t)
+      f.Z.updatePrivateChannelRecipientFlags(l.id, t)
     }, [l]),
-    C = null != l && !!l.isPrivate() && (0, o.yE)(null != (e = l.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    y = null != l && !!l.isPrivate() && (0, o.yE)(null != (e = l.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(u.Text, {
       variant: "text-md/semibold",
@@ -72,11 +72,11 @@ function T() {
             size: u.EFr.SIZE_16
           })
         },
-        popoutLayerContext: y.O$
+        popoutLayerContext: C.O$
       }), (0, a.jsx)(u.Button, {
         variant: "primary",
         size: "sm",
-        text: C ? "Clear NUX Flag" : "Set NUX Flag",
+        text: y ? "Clear NUX Flag" : "Set NUX Flag",
         onClick: j,
         disabled: null == n
       })]
@@ -99,7 +99,7 @@ function O() {
 }
 
 function N() {
-  let e = (0, c.e7)([C.ZP], () => C.ZP.allByCategory(C.zU.MESSAGING), [], c.pF).map(e => {
+  let e = (0, c.e7)([y.ZP], () => y.ZP.allByCategory(y.zU.MESSAGING), [], c.pF).map(e => {
     let [t, n, {
       label: r
     }] = e;

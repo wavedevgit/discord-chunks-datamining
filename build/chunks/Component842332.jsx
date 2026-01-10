@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 842332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => h
+  U: () => f
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ async function p(e) {
   try {
     var t, n;
     let r = await l.tn.post({
-      url: d.ANM.AI_TITLE,
+      url: u.ANM.AI_TITLE,
       body: {
         content: e
       },
@@ -29,14 +29,14 @@ async function p(e) {
   }
 }
 
-function h(e) {
+function f(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
     updateThreadSettings: l,
-    threadSettings: d,
-    textAreaState: h
-  } = e, [f, g] = i.useState(false), [m, b] = i.useState(false), y = (0, o.o)(), O = i.useCallback(async () => {
+    threadSettings: u,
+    textAreaState: f
+  } = e, [h, g] = i.useState(false), [m, b] = i.useState(false), y = (0, s.o)(), v = i.useCallback(async () => {
     if (y) {
       g(true);
       try {
@@ -45,7 +45,7 @@ function h(e) {
           var e;
           let i = c.Z.getMessage(t.id, n);
           r = null != (e = null == i ? true : i.content) ? e : null
-        } else h.textValue.trim().length >= 10 && (r = h.textValue);
+        } else f.textValue.trim().length >= 10 && (r = f.textValue);
         if (null != r) {
           let e = await p(r);
           null != e && "" !== e.trim() && l({
@@ -56,46 +56,46 @@ function h(e) {
         g(false)
       }
     }
-  }, [t.id, n, l, y, h.textValue]);
+  }, [t.id, n, l, y, f.textValue]);
   i.useEffect(() => {
-    b(false), g(false), t.id === d.parentChannelId && n !== d.parentMessageId && l({
+    b(false), g(false), t.id === u.parentChannelId && n !== u.parentMessageId && l({
       name: ""
     })
-  }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), i.useEffect(() => {
-    (null == d.name || "" === d.name.trim()) && !m && y && null != n && (b(true), O())
-  }, [t.id, n, l, d.name, m, y, O]);
-  let x = i.useCallback(function() {
+  }, [n, l, t.id, u.parentChannelId, u.parentMessageId]), i.useEffect(() => {
+    (null == u.name || "" === u.name.trim()) && !m && y && null != n && (b(true), v())
+  }, [t.id, n, l, u.name, m, y, v]);
+  let O = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       if (y) return {
-        icon: s.$2U,
-        onClick: O,
-        "aria-label": u.intl.string(u.t.ZF2oBs),
-        disabled: e || f || null == n && h.textValue.trim().length < 10,
-        tooltip: u.intl.string(u.t.ZF2oBs),
-        loading: f
+        icon: o.$2U,
+        onClick: v,
+        "aria-label": d.intl.string(d.t.ZF2oBs),
+        disabled: e || h || null == n && f.textValue.trim().length < 10,
+        tooltip: d.intl.string(d.t.ZF2oBs),
+        loading: h
       }
-    }, [y, O, f, n, h.textValue]),
+    }, [y, v, h, n, f.textValue]),
     j = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       return y ? (0, r.jsx)(a.u, {
-        text: u.intl.string(u.t.ZF2oBs),
-        children: (0, r.jsx)(s.hU, {
-          icon: s.$2U,
+        text: d.intl.string(d.t.ZF2oBs),
+        children: (0, r.jsx)(o.hU, {
+          icon: o.$2U,
           variant: "secondary",
           size: "sm",
-          "aria-label": u.intl.string(u.t.ZF2oBs),
-          onClick: O,
-          disabled: e || f || null == n && h.textValue.trim().length < 10,
-          loading: f,
+          "aria-label": d.intl.string(d.t.ZF2oBs),
+          onClick: v,
+          disabled: e || h || null == n && f.textValue.trim().length < 10,
+          loading: h,
           type: "button"
         })
       }) : null
-    }, [y, f, n, h.textValue, O]);
+    }, [y, h, n, f.textValue, v]);
   return {
-    isGeneratingAI: f,
-    generateAIName: O,
+    isGeneratingAI: h,
+    generateAIName: v,
     enableAIFeatures: y,
     renderAiGenerateButton: j,
-    getThreadNameInputAccessory: x
+    getThreadNameInputAccessory: O
   }
 }

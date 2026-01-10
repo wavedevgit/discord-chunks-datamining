@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 544245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -30,8 +30,8 @@ function p() {
     n = m.useField("includeDMs"),
     s = m.useField("includeGDMs"),
     p = m.useField("includeQuickSwitcherState"),
-    f = m.useField("includeUserSearchWorkerState"),
-    h = m.useField("isUploading"),
+    h = m.useField("includeUserSearchWorkerState"),
+    f = m.useField("isUploading"),
     x = m.useField("isSuccess"),
     b = m.useField("errorMessage"),
     g = r.useCallback(async () => {
@@ -105,12 +105,12 @@ function p() {
     }), (0, a.jsx)(i.rsf, {
       label: "User Search Worker",
       description: "Includes all users that your client knows about. For each user, includes the user id, username, nickname, and any guild nicknames.",
-      checked: f,
+      checked: h,
       onChange: () => m.setState({
-        includeUserSearchWorkerState: !f
+        includeUserSearchWorkerState: !h
       })
     }), (0, a.jsx)(d.a, {
-      isUploading: h,
+      isUploading: f,
       isSuccess: x,
       errorMessage: b,
       onClick: g,

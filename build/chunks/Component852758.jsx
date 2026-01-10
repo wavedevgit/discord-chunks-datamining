@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 852758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -53,7 +53,7 @@ function T() {
     action: g.Z.getAction(),
     theme: b.Z.theme
   })), T = v.Z.getVerificationTypes(e), [O, N] = r.useState(0), P = (0, m.Z)(T);
-  (0, f.Z)({
+  (0, h.Z)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.USER_ACTION_REQUIRED,
     properties: {
@@ -68,14 +68,14 @@ function T() {
       } = await n.e("35401").then(n.bind(n, 284549));
       return t => (0, a.jsx)(e, E({}, t))
     }, {
-      modalKey: C.F0,
-      Layer: h.ZP
+      modalKey: y.F0,
+      Layer: f.ZP
     })
   };
   return r.useEffect(() => (p.Z.disable(), () => {
     p.Z.enable()
   }), []), r.useEffect(() => {
-    (null == P ? true : P[0]) === y.PUi.PHONE && (null == T ? true : T[0]) === y.PUi.EMAIL && (0, o.ZDy)(async () => {
+    (null == P ? true : P[0]) === C.PUi.PHONE && (null == T ? true : T[0]) === C.PUi.EMAIL && (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("84112").then(n.bind(n, 273352));
@@ -97,8 +97,8 @@ function T() {
         }), n))
       }
     }, {
-      modalKey: C.HR,
-      Layer: h.ZP,
+      modalKey: y.HR,
+      Layer: f.ZP,
       onCloseCallback: w
     })
   }, [T, P]), (0, a.jsx)(j.Z, {
@@ -106,7 +106,7 @@ function T() {
     captchaKey: O,
     onCaptchaVerify: e => {
       s.tn.post({
-        url: y.ANM.CAPTCHA,
+        url: C.ANM.CAPTCHA,
         body: {
           captcha_key: e
         },
@@ -118,17 +118,17 @@ function T() {
     },
     theme: t,
     onClick: e => {
-      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
+      e === C.PUi.EMAIL_OR_PHONE || e === C.PUi.EMAIL || e === C.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
         return t => (0, a.jsx)(e, E({
-          layerContext: h.mK,
+          layerContext: f.mK,
           reason: x.L.USER_ACTION_REQUIRED
         }, t))
       }, {
         modalKey: _.M,
-        Layer: h.ZP
+        Layer: f.ZP
       })
     },
     onLogout: () => {
@@ -144,7 +144,7 @@ function T() {
           onConfirm: () => c.Z.logout("verification")
         }, t))
       }, {
-        Layer: h.ZP
+        Layer: f.ZP
       })
     }
   })

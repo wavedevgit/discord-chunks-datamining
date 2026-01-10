@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk269181 = require("./269181.js");
 
-function C(e) {
+function y(e) {
   let {
     originalVanityURLCode: t
   } = e;
@@ -43,7 +43,7 @@ function C(e) {
   return null
 }
 
-function y(e) {
+function C(e) {
   let {
     guild: t,
     vanityURLCode: n,
@@ -109,7 +109,7 @@ function N(e) {
     })
   }, [h, t, v]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, m.p)(t) ? (0, r.jsx)(y, {
+    children: [(0, m.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: a,
@@ -120,7 +120,7 @@ function N(e) {
       children: (0, r.jsx)(b.v, {
         onClick: N
       })
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(y, {
       originalVanityURLCode: c
     })]
   })

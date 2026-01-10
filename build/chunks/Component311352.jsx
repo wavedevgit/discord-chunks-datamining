@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 311352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk238168 = require("./238168.js"),
   Chunk38983 = require("./38983.js");
 
-function C(e) {
+function x(e) {
   (0, s.jW)(e, async () => {
     let {
       default: e
@@ -48,7 +48,7 @@ function C(e) {
     }({}, t))
   })
 }
-let x = e => {
+let C = e => {
     let {
       keybindString: t,
       targetElementRef: n
@@ -57,17 +57,17 @@ let x = e => {
       shouldShow: l,
       targetElementRef: n,
       position: "top",
-      title: O.intl.format(O.t["o+srEw"], {
+      title: v.intl.format(v.t["o+srEw"], {
         keybind: t,
         keybindHook: () => (0, r.jsx)("span", {
-          className: v.keybindHintKeys,
+          className: O.keybindHintKeys,
           children: (0, r.jsx)(o.M2$, {
-            className: v.keybindShortcut,
+            className: O.keybindShortcut,
             shortcut: t
           })
         })
       }),
-      body: O.intl.format(O.t.DWeRm1, {
+      body: v.intl.format(v.t.DWeRm1, {
         keybindHook: () => t,
         keybind: t
       }),
@@ -86,26 +86,26 @@ let x = e => {
       {
         parentAnalyticsLocation: t
       } = (0, c.ZP)(),
-      n = (0, l.e7)([f.Z], () => f.Z.hasLayers()),
-      a = (0, b.z8)(),
+      n = (0, l.e7)([p.Z], () => p.Z.hasLayers()),
+      a = (0, m.z8)(),
       s = (0, l.e7)([g.Z], () => g.Z.getIsAtMaxSaveClipOperations()),
-      v = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(y.kg4.SAVE_CLIP));
-    if (!a || null == v || n) return null;
-    let j = p.BB(v.shortcut, true);
+      O = (0, l.e7)([f.ZP], () => f.ZP.getKeybindForAction(y.kg4.SAVE_CLIP));
+    if (!a || null == O || n) return null;
+    let j = h.BB(O.shortcut, true);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(x, {
+      children: [(0, r.jsx)(C, {
         keybindString: j,
         targetElementRef: e
       }), (0, r.jsx)(d.Z, {
         ref: e,
         disabled: s,
-        tooltipText: null != v ? O.intl.formatToPlainString(O.t.HIMcv1, {
-          hotkey: p.BB(null == v ? true : v.shortcut, true)
-        }) : O.intl.string(O.t.s52pju),
+        tooltipText: null != O ? v.intl.formatToPlainString(v.t.HIMcv1, {
+          hotkey: h.BB(null == O ? true : O.shortcut, true)
+        }) : v.intl.string(v.t.s52pju),
         onClick: () => {
-          (0, m.br)(), (0, u.v)(t, u.d.CLIP)
+          (0, b.br)(), (0, u.v)(t, u.d.CLIP)
         },
-        onContextMenu: C,
+        onContextMenu: x,
         icon: o.AlX
       })]
     })

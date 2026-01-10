@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,121 +41,121 @@ var Chunk54381 = require("./54381.js"),
   Chunk701766 = require("./701766.js"),
   Chunk478411 = require("./478411.js");
 
-function V(e) {
+function G(e) {
   let {
     canManageRoles: t,
     channel: n
-  } = e, r = t && (0, p.Yk)(n), a = (0, l.e7)([v.ZP], () => null != n.guild_id && n === v.ZP.getDefaultChannel(n.guild_id), [n]);
+  } = e, i = t && (0, p.Yk)(n), a = (0, l.e7)([O.ZP], () => null != n.guild_id && n === O.ZP.getDefaultChannel(n.guild_id), [n]);
   if ((0, f.Z)(n.id)) return null;
-  if (n.isForumPost()) return (0, i.jsx)(_.Z, {
+  if (n.isForumPost()) return (0, r.jsx)(_.Z, {
     channel: n
   });
-  if (C.Ec.has(n.type)) return (0, i.jsx)(w.Z, {
+  if (y.Ec.has(n.type)) return (0, r.jsx)(w.Z, {
     channel: n
   });
-  if (a) return (0, i.jsx)(M.Z, {
+  if (a) return (0, r.jsx)(R.Z, {
     channel: n
   });
-  if (r) return (0, i.jsx)(N.Z, {
+  if (i) return (0, r.jsx)(T.Z, {
     channel: n
   });
-  return (0, i.jsx)(A.Z, {
+  return (0, r.jsx)(A.Z, {
     channel: n
   })
 }
 
-function F(e) {
+function B(e) {
   var t;
   let {
     channel: n,
     showingBanner: p
   } = e, f = (0, d.ZP)(n), {
-    type: C
-  } = n, v = (0, l.e7)([O.default], () => n.isPrivate() ? O.default.getUser(n.getRecipientId()) : null), _ = E.ZP.useUserTag(v), {
-    canManageRoles: N,
+    type: y
+  } = n, O = (0, l.e7)([x.default], () => n.isPrivate() ? x.default.getUser(n.getRecipientId()) : null), _ = C.ZP.useUserTag(O), {
+    canManageRoles: T,
     canReadMessageHistory: A
-  } = (0, l.cj)([x.Z], () => ({
-    canManageRoles: x.Z.can(R.Plq.MANAGE_ROLES, n),
-    canReadMessageHistory: x.Z.can(R.Plq.READ_MESSAGE_HISTORY, n)
-  })), w = (0, l.e7)([g.Z], () => C === R.d4z.DM ? g.Z.getMutualGuilds(n.getRecipientId()) : null, [n, C]), M = (0, u.Z)(null != (t = null == v ? true : v.id) ? t : R.lds), {
-    authorizedAppToken: F,
-    authorizedAppsFetchState: H
-  } = (0, l.cj)([y.default], () => ({
-    authorizedAppToken: y.default.getNewestTokenForApplication(null == M ? true : M.id),
-    authorizedAppsFetchState: y.default.getFetchState()
-  })), B = c.Z.useExperiment({
+  } = (0, l.cj)([j.Z], () => ({
+    canManageRoles: j.Z.can(D.Plq.MANAGE_ROLES, n),
+    canReadMessageHistory: j.Z.can(D.Plq.READ_MESSAGE_HISTORY, n)
+  })), w = (0, l.e7)([m.Z], () => y === D.d4z.DM ? m.Z.getMutualGuilds(n.getRecipientId()) : null, [n, y]), R = (0, u.Z)(null != (t = null == O ? true : O.id) ? t : D.lds), {
+    authorizedAppToken: B,
+    authorizedAppsFetchState: F
+  } = (0, l.cj)([v.default], () => ({
+    authorizedAppToken: v.default.getNewestTokenForApplication(null == R ? true : R.id),
+    authorizedAppsFetchState: v.default.getFetchState()
+  })), H = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
-  if (r.useEffect(() => {
-      C === R.d4z.DM && null == w && null != v && o.Z.wait(() => (0, b.Z)(n.getRecipientId(), v.getAvatarURL(null, 80), {
+  if (i.useEffect(() => {
+      y === D.d4z.DM && null == w && null != O && o.Z.wait(() => (0, b.Z)(n.getRecipientId(), O.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
-    }, [w, C, n, v]), r.useEffect(() => {
-      (null == v ? true : v.bot) && H === y.FetchState.NOT_FETCHED && s.Z.fetch()
-    }, [null == v ? true : v.bot, H]), n.isSystemDM()) return (0, i.jsx)(T.Z, {
+    }, [w, y, n, O]), i.useEffect(() => {
+      (null == O ? true : O.bot) && F === v.FetchState.NOT_FETCHED && s.Z.fetch()
+    }, [null == O ? true : O.bot, F]), n.isSystemDM()) return (0, r.jsx)(N.Z, {
     channel: n,
-    children: L.intl.string(L.t.Rzvnig)
+    children: k.intl.string(k.t.Rzvnig)
   });
-  if (C === R.d4z.DM) {
+  if (y === D.d4z.DM) {
     let e;
-    return null != v && null != M ? null != F && (e = (0, i.jsxs)("div", {
-      className: k.buttonContainer,
-      children: [(0, i.jsx)(Z.W, {
+    return null != O && null != R ? null != B && (e = (0, r.jsxs)("div", {
+      className: L.buttonContainer,
+      children: [(0, r.jsx)(Z.W, {
         channel: n,
-        user: v
-      }), (0, i.jsx)(I.n, {
-        user: v,
-        application: M,
+        user: O
+      }), (0, r.jsx)(P.n, {
+        user: O,
+        application: R,
         channel: n,
-        oauth2Token: F
-      }), B && (0, i.jsx)(h.Z, {
+        oauth2Token: B
+      }), H && (0, r.jsx)(h.Z, {
         channel: n
       })]
-    })) : e = (0, i.jsx)(j.Z, {
+    })) : e = (0, r.jsx)(E.Z, {
       userId: n.getRecipientId(),
       channel: n,
       showingBanner: p
-    }), (0, i.jsxs)(T.Z, {
+    }), (0, r.jsxs)(N.Z, {
       channel: n,
-      user: v,
-      children: [null != v && !v.isProvisional && (0, i.jsx)(a.Heading, {
+      user: O,
+      children: [null != O && !O.isProvisional && (0, r.jsx)(a.Heading, {
         variant: "heading-xl/medium",
         className: U.marginBottom20,
         children: _
-      }), L.intl.format(L.t["Qvg+6+"], {
+      }), k.intl.format(k.t["Qvg+6+"], {
         username: f
-      }), (null == v ? true : v.isProvisional) && (0, i.jsx)(m.q, {
-        userId: v.id
+      }), (null == O ? true : O.isProvisional) && (0, r.jsx)(g.q, {
+        userId: O.id
       }), e]
     })
   }
   if (n.isMultiUserDM())
-    if (n.isManaged()) return (0, i.jsxs)(S.ZP, {
+    if (n.isManaged()) return (0, r.jsxs)(S.ZP, {
       channelId: n.id,
-      children: [(0, i.jsx)(S.Ot, {
-        children: L.intl.format(L.t.I3R7Vn, {
+      children: [(0, r.jsx)(S.Ot, {
+        children: k.intl.format(k.t.I3R7Vn, {
           channelName: f
         })
-      }), (0, i.jsx)(S.jz, {
-        children: L.intl.string(L.t.M8Ao6I)
+      }), (0, r.jsx)(S.jz, {
+        children: k.intl.string(k.t.M8Ao6I)
       })]
     });
-    else if (n.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(P.Z, {
+    else if (n.hasFlag(M.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(I.Z, {
     channel: n
   });
-  else return (0, i.jsx)(T.Z, {
+  else return (0, r.jsx)(N.Z, {
     channel: n,
-    children: L.intl.format(L.t.MFwcqO, {
+    children: k.intl.format(k.t.MFwcqO, {
       name: f
     })
   });
-  return A ? (0, i.jsx)(V, {
+  return A ? (0, r.jsx)(G, {
     channel: n,
-    canManageRoles: N
-  }) : (0, i.jsx)(S.ZP, {
+    canManageRoles: T
+  }) : (0, r.jsx)(S.ZP, {
     channelId: n.id,
-    children: (0, i.jsx)(S.jz, {
-      children: L.intl.format(L.t.hPVEQG, {
+    children: (0, r.jsx)(S.jz, {
+      children: k.intl.format(k.t.hPVEQG, {
         channelName: f
       })
     })

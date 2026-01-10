@@ -1,48 +1,39 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk296009 = require("./296009.js"),
-  Chunk442837 = require("./442837.js"),
-  Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk491662 = require("./491662.js"),
+  Chunk513417 = require("./513417.js"),
   Chunk243778 = require("./243778.jsx"),
-  Chunk594174 = require("./594174.js"),
   Chunk785717 = require("./785717.jsx"),
-  Chunk931847 = require("./931847.js"),
-  Chunk50130 = require("./50130.js"),
   Chunk28671 = require("./28671.jsx"),
   Chunk430790 = require("./430790.jsx"),
   Chunk795990 = require("./795990.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk284459 = require("./284459.js");
 
-function O() {
+function p() {
   let {
     trackUserProfileAction: e,
     trackUserProfileEditAction: t
-  } = (0, f.KZ)(), O = i.useRef(false), j = (0, l.e7)([d.default], () => d.default.getCurrentUser()), {
-    application: x,
-    config: P
-  } = (0, p.G)(), {
-    token: I,
-    fetched: w
-  } = (0, s.o)(null == P ? true : P.application_id), S = i.useMemo(() => (null == P ? true : P.application_id) != null ? new g.q({
-    type: a.l.APPLICATION,
-    applicationId: P.application_id
-  }) : null, [null == P ? true : P.application_id]), E = i.useCallback(() => {
+  } = (0, c.KZ)(), p = i.useRef(false), {
+    suggestions: m,
+    currentUser: b,
+    isLoading: y
+  } = (0, a.Z)({
+    location: "UserProfileModalV2ApplicationWidgetsEmptyState"
+  }), j = null == m ? true : m[0], h = i.useCallback(() => {
     t({
       action: "PRESS_ADD_WIDGET"
-    }), (0, c.ZDy)(async () => {
+    }), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("38576").then(n.bind(n, 925170));
       return n => {
-        var i, a;
+        var i, l;
         return (0, r.jsx)(e, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -60,84 +51,79 @@ function O() {
             })
           }
           return e
-        }({}, n), a = a = {
+        }({}, n), l = l = {
           trackUserProfileEditAction: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
         }), i))
       }
     }, {
       stackingBehavior: "stack"
     })
-  }, [t]), T = null == j || null == x || null == S || !w, _ = null != I;
+  }, [t]);
   if (i.useEffect(() => {
-      !T && _ && (O.current || (e({
+      !y && null != j && (p.current || (e({
         action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
-        applicationId: x.id
-      }), O.current = true))
-    }, [T, _, e, null == x ? true : x.id]), T) return (0, r.jsx)("div", {
-    className: v.loading,
-    children: (0, r.jsx)(c.$jN, {})
+        applicationId: j.application.id
+      }), p.current = true))
+    }, [y, e, j]), y) return (0, r.jsx)("div", {
+    className: g.loading,
+    children: (0, r.jsx)(l.$jN, {})
   });
-  if (!_) return (0, r.jsx)(h.Z, {});
-  let C = (0, r.jsxs)(c.Kqy, {
+  if (null == j) return (0, r.jsx)(d.Z, {});
+  let O = (0, r.jsxs)(l.Kqy, {
     gap: 4,
-    className: v.header,
-    children: [(0, r.jsx)(c.Heading, {
+    className: g.header,
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/medium",
       color: "text-strong",
-      children: y.intl.string(y.t["oqalC+"])
-    }), (0, r.jsx)(c.Text, {
+      children: f.intl.string(f.t["oqalC+"])
+    }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: y.intl.format(y.t.YnNFWa, {
-        applicationName: x.name
+      children: f.intl.format(f.t.YnNFWa, {
+        applicationName: j.application.name
       })
     })]
   });
-  return (0, r.jsx)(u.ZP, {
-    contentTypes: [o.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
+  return (0, r.jsx)(o.ZP, {
+    contentTypes: [j.dismissibleContent],
     bypassAutoDismiss: true,
     children: e => {
       let {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      switch (t) {
-        case o.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET:
-          return (0, r.jsxs)(c.Kqy, {
-            gap: 16,
-            align: "center",
-            children: [(0, r.jsx)(c.LZC, {
-              size: 32
-            }), C, (0, r.jsx)(b.Z, {
-              user: j,
-              application: x,
-              onDismiss: n
-            }), (0, r.jsx)(m.Z, {})]
-          });
-        case null:
-          return (0, r.jsxs)(c.Kqy, {
-            gap: 32,
-            align: "center",
-            children: [(0, r.jsx)(c.LZC, {
-              size: 128
-            }), C, (0, r.jsx)(c.Button, {
-              icon: c.qJs,
-              text: y.intl.string(y.t["lBG2s/"]),
-              size: "md",
-              color: "secondary",
-              onClick: E
-            })]
-          })
-      }
+      return t === j.dismissibleContent ? (0, r.jsxs)(l.Kqy, {
+        gap: 16,
+        align: "center",
+        children: [(0, r.jsx)(l.LZC, {
+          size: 32
+        }), O, (0, r.jsx)(s.Z, {
+          user: b,
+          application: j.application,
+          onDismiss: n
+        }), (0, r.jsx)(u.Z, {})]
+      }) : (0, r.jsxs)(l.Kqy, {
+        gap: 32,
+        align: "center",
+        children: [(0, r.jsx)(l.LZC, {
+          size: 128
+        }), O, (0, r.jsx)(l.Button, {
+          icon: l.qJs,
+          text: f.intl.string(f.t["lBG2s/"]),
+          size: "md",
+          color: "secondary",
+          onClick: h
+        })]
+      })
     }
   })
 }

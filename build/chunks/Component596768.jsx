@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 596768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -71,12 +71,12 @@ let T = [{
         }
       } = e, u = d()(s);
       return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsxs)(h.ZP, {
+        children: [(0, a.jsxs)(f.ZP, {
           className: l()(E.headerBar, S.subPanelHeaderBar),
-          children: [(0, a.jsx)(h.ZP.Icon, {
+          children: [(0, a.jsx)(f.ZP.Icon, {
             icon: p.IeX,
             tooltip: t
-          }), (0, a.jsx)(h.ZP.Title, {
+          }), (0, a.jsx)(f.ZP.Title, {
             children: t
           })]
         }), (0, a.jsxs)(v.E, {
@@ -135,13 +135,13 @@ let T = [{
   }];
 
 function N() {
-  let [e, t] = r.useState(""), n = r.useRef(null), i = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => i.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [i, e]), [c, d] = r.useState(true), h = s.find(e => e.key === c), {
+  let [e, t] = r.useState(""), n = r.useRef(null), i = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => i.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [i, e]), [c, d] = r.useState(true), f = s.find(e => e.key === c), {
     TabBar: x,
     renderSelectedTab: v
-  } = (0, y.ZP)({
+  } = (0, C.ZP)({
     tabs: O
   }, []), N = (0, u.e7)([b.Z], () => b.Z.trackTriggers), P = r.useCallback(e => {
-    f.Z.dispatch({
+    h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
@@ -173,17 +173,17 @@ function N() {
         icon: p.XHJ,
         onClick: g.Zw
       })]
-    }), (0, a.jsx)(C.Z, {
+    }), (0, a.jsx)(y.Z, {
       columns: T,
       data: s,
       selectedRowKey: c,
       onClickRow: e => d(e.key)
-    }), null != h && (0, a.jsxs)(j.Z, {
+    }), null != f && (0, a.jsxs)(j.Z, {
       className: S.subPanel,
       minHeight: 100,
       initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
       children: [(0, a.jsx)(x, {}), v({
-        loggedTrigger: h
+        loggedTrigger: f
       })]
     })]
   })

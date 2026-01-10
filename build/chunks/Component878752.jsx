@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 878752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,39 +18,39 @@ var Chunk100527 = require("./100527.js"),
   Chunk159909 = require("./159909.jsx"),
   Chunk2012 = require("./2012.js");
 
-function g(e) {
+function m(e) {
   let {
     channel: t,
     hasActiveStream: n,
-    showRightDivider: g = false
+    showRightDivider: m = false
   } = e, {
     analyticsLocations: b
-  } = (0, l.ZP)(r.Z.VOICE_CONTROL_TRAY), C = (0, o.Z)(), {
-    isSharedCanvasEnabled: y
+  } = (0, l.ZP)(i.Z.VOICE_CONTROL_TRAY), y = (0, o.Z)(), {
+    isSharedCanvasEnabled: v
   } = c.Z.useExperiment({
     guildId: null == t ? true : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: v
+    enableViewerClipping: O
   } = s.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: false
-  }), x = (0, a.Z)(u.Z);
-  if (null == t || null != C) return null;
-  let O = v && x,
-    E = y && n;
-  return O || E ? (0, i.jsxs)(l.Gt, {
+  }), j = (0, a.Z)(u.Z);
+  if (null == t || null != y) return null;
+  let x = O && j,
+    C = v && n;
+  return x || C ? (0, r.jsxs)(l.Gt, {
     value: b,
-    children: [(0, i.jsxs)("div", {
-      className: m.voiceEffectsActionBar,
-      children: [O && (0, i.jsx)(d.Z, {
+    children: [(0, r.jsxs)("div", {
+      className: g.voiceEffectsActionBar,
+      children: [x && (0, r.jsx)(d.Z, {
         channel: t
-      }), E && (0, i.jsx)(p.Z, {}), E && (0, i.jsx)(f.Z, {
+      }), C && (0, r.jsx)(p.Z, {}), C && (0, r.jsx)(f.Z, {
         channel: t
-      }), E && (0, i.jsx)(h.Z, {})]
-    }), g && (0, i.jsx)("div", {
-      className: m.divider
+      }), C && (0, r.jsx)(h.Z, {})]
+    }), m && (0, r.jsx)("div", {
+      className: g.divider
     })]
   }) : null
 }

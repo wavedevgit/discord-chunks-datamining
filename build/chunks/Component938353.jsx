@@ -778,7 +778,7 @@ function e7(e) {
   } = (0, u.cj)([em.Z], () => ({
     canAddNewReactions: m && em.Z.can(eK.Plq.ADD_REACTIONS, n),
     canManageMessages: em.Z.can(eK.Plq.MANAGE_MESSAGES, n)
-  }), [m, n]), O = (0, M.ux)(n.guild_id), [, v] = (0, k.AB)(n.guild_id), S = (0, el.$R)(n), I = (s === r.author.id || y) && r.author.id !== eK.LAt && false !== a && !(0, c.yE)(r.flags, eK.iLy.EPHEMERAL) && S && 1 === (0, eA.Z)(r), T = s === r.author.id && S && !o, C = r.author.id === s, A = r.isFirstMessageInForumPost(n), P = (0, eP.Z)({
+  }), [m, n]), O = (0, M.ux)(n.guild_id), [, v] = (0, k.AB)(n.guild_id), S = (0, el.$R)(n), I = (s === r.author.id || y) && r.author.id !== eK.LAt && false !== a && !(0, c.yE)(r.flags, eK.iLy.EPHEMERAL) && S && (0, eA.Z)(r) >= 1, T = s === r.author.id && S && !o, C = r.author.id === s, A = r.isFirstMessageInForumPost(n), P = (0, eP.Z)({
     channel: n,
     canChat: m,
     renderReactions: p,

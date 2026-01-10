@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   i: () => O
-}), require("./415506.js");
+}), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
@@ -78,65 +78,78 @@ function O(e) {
     positionKey: R,
     ariaHidden: w = false
   } = e, D = b(e, ["children", "title", "body", "asset", "assetSize", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
-  let {
-    tooltipId: x,
-    isVisible: L,
-    targetElementRef: j,
-    trigger: M
-  } = (0, m.Q)(E({
-    children: t,
-    targetElementRef: N,
-    asContainer: O,
-    containerTag: v,
-    ariaHidden: w
-  }, D)), k = null != n && ("string" != typeof n || "" !== n), U = null != g && !i.isValidElement(g), G = i.useMemo(() => (0, r.jsxs)("div", {
-    className: o()(h.richTooltipContent, {
-      [h.noAsset]: null == g
-    }),
-    children: [null != g && (0, r.jsx)("div", {
-      className: h.assetContainer,
-      style: {
-        width: y
-      },
-      children: U ? (0, r.jsx)(l.zsu, E({}, g)) : g
-    }), (0, r.jsxs)("div", {
-      className: h.textContent,
-      children: [k && (0, r.jsx)(c.Text, {
-        variant: "text-sm/medium",
-        children: n
-      }), (0, r.jsx)(c.Text, {
-        variant: "text-sm/normal",
-        color: k ? "text-subtle" : "text-default",
-        children: a
+  let [x, L] = i.useState(null);
+  i.useLayoutEffect(() => {
+    null != P && L(P.current)
+  }, [P]);
+  let j = i.useCallback(e => {
+      null == P && L(e), (0, p.k$)(N, e)
+    }, [N, P]),
+    {
+      tooltipId: M,
+      isVisible: k,
+      targetElementRef: U,
+      trigger: G
+    } = (0, m.Q)(E({
+      children: t,
+      targetElementRef: j,
+      asContainer: O,
+      containerTag: v,
+      ariaHidden: w
+    }, D)),
+    Z = null != n && ("string" != typeof n || "" !== n),
+    F = null != g && !i.isValidElement(g),
+    B = i.useMemo(() => (0, r.jsxs)("div", {
+      className: o()(h.richTooltipContent, {
+        [h.noAsset]: null == g
+      }),
+      children: [null != g && (0, r.jsx)("div", {
+        className: h.assetContainer,
+        style: {
+          width: y
+        },
+        children: F ? (0, r.jsx)(l.zsu, E({}, g)) : g
+      }), (0, r.jsxs)("div", {
+        className: h.textContent,
+        children: [Z && (0, r.jsx)(c.Text, {
+          variant: "text-sm/medium",
+          children: n
+        }), (0, r.jsx)(c.Text, {
+          variant: "text-sm/normal",
+          color: Z ? "text-subtle" : "text-default",
+          children: a
+        })]
       })]
-    })]
-  }), [g, y, n, a, k, U]), Z = null != R ? R : "".concat((0, p.Sw)(null != n ? n : ""), "|").concat((0, p.Sw)(a)), F = (0, _.Q)({
-    shouldShow: L
-  });
+    }), [g, y, n, a, Z, F]),
+    V = null != R ? R : "".concat((0, p.Sw)(null != n ? n : ""), "|").concat((0, p.Sw)(a)),
+    H = (0, _.Q)({
+      shouldShow: k
+    });
   if (!O && !i.isValidElement(t)) return null;
-  let B = F((e, t) => t ? (0, r.jsx)(f.pn, {
+  let Y = H((e, t) => t ? (0, r.jsx)(f.pn, {
     isRichTooltip: true,
     children: (0, r.jsx)(d.N, {
-      isVisible: L,
+      isVisible: k,
       isRendered: true,
-      targetElementRef: j,
+      targetElementRef: U,
+      targetElement: x,
       anchorRef: P,
-      id: x,
-      content: G,
+      id: M,
+      content: B,
       position: S,
       align: I,
       spacing: T,
       caretConfig: C,
       layerContext: null != A ? A : u.nz,
       animationStyle: e,
-      positionKey: Z,
+      positionKey: V,
       "data-mana-component": "rich-tooltip"
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [M, w || null == G ? null : (0, r.jsx)(s.n, {
-      id: x,
-      children: G
-    }), B]
+    children: [G, w || null == B ? null : (0, r.jsx)(s.n, {
+      id: M,
+      children: B
+    }), Y]
   })
 }

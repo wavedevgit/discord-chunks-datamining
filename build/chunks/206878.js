@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 206878, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => v
@@ -59,7 +59,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
     max: 25e4,
     warn: 5e4
   },
-  f = {
+  h = {
     [Chunk281598.aB.PROFILE_EFFECT]: c,
     [Chunk281598.aB.AVATAR_DECORATION]: d,
     [Chunk281598.jE.HERO_BANNER_ANIMATED]: c,
@@ -75,11 +75,12 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
     [Chunk281598.jE.UPSELL_BANNER_POPOUT]: p,
     [Chunk281598.jE.MOBILE_BANNER]: m,
     [Chunk281598.jE.MOBILE_BACKGROUND]: p,
+    [Chunk281598.jE.MOBILE_HERO]: m,
     [Chunk281598.jE.PDP_BACKGROUND]: p,
     [Chunk281598.jE.LOGO]: p,
     [Chunk281598.jE.COACHTIP_AVATAR]: p
   },
-  h = async e => {
+  f = async e => {
     let t = Object.values(r.CM),
       n = new Set,
       a = e.createReader();
@@ -100,7 +101,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
       n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(l, " (max: ").concat(t, ")")])
     } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(l)])
   }, g = (e, t, n, a) => {
-    let r = f[e];
+    let r = h[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || b(r, e, n, a)
   }, v = () => {
@@ -136,7 +137,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
           if (e.length > 1) return void m("Uploaded multiple files. Expected 1 directory.");
           let t = e[0];
           if (!t.isDirectory) return void m("Uploaded a file. Expected a directory.");
-          let a = await h(t);
+          let a = await f(t);
           if (a.length > 0) return void m("Missing required directories", a);
           n = await (0, r.LY)([t]), (e => {
             let {
@@ -146,7 +147,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
             } = e;
             for (let e of t.collectionFiles) {
               let t = (0, r.BU)(e),
-                i = null != t ? f[t] : null;
+                i = null != t ? h[t] : null;
               null != i && b(i, e, n, a)
             }
             x({

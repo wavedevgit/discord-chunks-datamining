@@ -1,40 +1,40 @@
-/** Chunk was on 76844 **/
+/** Chunk was on 69937 **/
 /** chunk id: 630810, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p,
+  Z: () => _,
   m: () => d
 });
-var l, Chunk493683 = require("./493683.js"),
+var r, Chunk493683 = require("./493683.js"),
   Chunk904245 = require("./904245.js"),
   Chunk710845 = require("./710845.js"),
   Chunk592125 = require("./592125.js"),
   Chunk70956 = require("./70956.js"),
   Chunk651655 = require("./651655.js");
-let c = +Chunk70956.Z.Millis.SECOND + 10;
-var d = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
-class h extends Chunk651655.Z {
-  _sendInvite(e, t, n, l, r) {
-    i.Z.sendInvite(e.id, t, n, l).then(() => r(null, true), () => r(null, false))
+let u = +Chunk70956.Z.Millis.SECOND + 10;
+var d = ((r = {})[r.GROUP_DM = 0] = "GROUP_DM", r[r.USER = 1] = "USER", r[r.CHANNEL = 2] = "CHANNEL", r);
+class E extends Chunk651655.Z {
+  _sendInvite(e, t, n, r, l) {
+    i.Z.sendInvite(e.id, t, n, r).then(() => l(null, true), () => l(null, false))
   }
   drain(e, t) {
     let {
       location: n,
-      inviteAnalyticsMetadata: l
+      inviteAnalyticsMetadata: r
     } = e;
     switch (e.type) {
       case 0:
       case 2:
-        this._sendInvite(e.channel, e.inviteKey, n, l, t);
+        this._sendInvite(e.channel, e.inviteKey, n, r, t);
         break;
       case 1:
-        r.Z.ensurePrivateChannel(e.user.id).then(r => {
-          let i = s.Z.getChannel(r);
-          null != i && this._sendInvite(i, e.inviteKey, n, l, t)
+        l.Z.ensurePrivateChannel(e.user.id).then(l => {
+          let i = s.Z.getChannel(l);
+          null != i && this._sendInvite(i, e.inviteKey, n, r, t)
         }, () => t(null, false))
     }
   }
   constructor() {
-    super(new a.Z("InviteQueue"), c)
+    super(new a.Z("InviteQueue"), u)
   }
 }
-let p = new h
+let _ = new E

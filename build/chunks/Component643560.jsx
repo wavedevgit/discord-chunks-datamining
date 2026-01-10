@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 643560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,36 +14,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk683818 = require("./683818.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function f(e) {
   let {
     entry: t,
-    onSelect: h,
-    closePopout: f,
+    onSelect: f,
+    closePopout: h,
     hideEditButton: g = false
   } = e, {
     isEntryAdmin: m,
     canEdit: b,
     canRemove: y
-  } = (0, u.Z)(t), O = (0, o.Z)({
+  } = (0, d.Z)(t), v = (0, s.Z)({
     id: t.guildId,
     label: p.intl.string(p.t["94lLD7"]),
-    onSuccess: f
+    onSuccess: h
   });
   i.useEffect(() => {
-    b || y || null != O || (0, s.Zy)()
+    b || y || null != v || (0, o.Zy)()
   });
-  let x = () => {
-    d.kx(t.channelId, t.guildId)
+  let O = () => {
+    u.kx(t.channelId, t.guildId)
   };
 
   function j() {
-    (0, s.Zy)(), null == f || f()
+    (0, o.Zy)(), null == h || h()
   }
   return (0, r.jsxs)(a.v2r, {
     navId: "guild-entry-context",
     onClose: j,
     "aria-label": p.intl.string(p.t.HpQykc),
-    onSelect: h,
+    onSelect: f,
     children: [(0, r.jsxs)(a.kSQ, {
       children: [b && !g ? (0, r.jsx)(a.sNh, {
         id: "update-entry",
@@ -97,7 +97,7 @@ function h(e) {
               guildName: t.name
             }),
             confirmText: p.intl.string(p.t.N86XcP),
-            onConfirm: x
+            onConfirm: O
           }), j()
         },
         color: "danger"
@@ -111,7 +111,7 @@ function h(e) {
         color: "danger"
       })]
     }), (0, r.jsx)(a.kSQ, {
-      children: O
+      children: v
     })]
   })
 }

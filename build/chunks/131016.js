@@ -14,14 +14,17 @@ var Chunk688619 = require("./688619.js"),
 
 function s(e) {
   let t = i()(e).alpha(1),
-    n = t.get("hsl.l");
+    n = t.get("hsl.l"),
+    r = Math.min(1, 1.2 * t.get("hsl.s")),
+    a = Math.min(.6, n + .1);
   return {
     main: e,
     light1: t.set("hsl.l", Math.min(1, 1.2 * n)).hex(),
     light2: t.set("hsl.l", Math.min(1, 1.6 * n)).hex(),
     dark1: t.set("hsl.l", Math.max(0, .6 * n)).hex(),
     dark2: t.set("hsl.l", Math.max(0, .2 * n)).hex(),
-    toonStroke: t.set("hsl.l", Math.max(.12, .4 * n)).hex()
+    toonStroke: t.set("hsl.l", Math.max(.12, .4 * n)).hex(),
+    neonStroke: t.set("hsl.s", r).set("hsl.l", a).hex()
   }
 }
 

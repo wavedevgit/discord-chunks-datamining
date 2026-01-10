@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk505805 = require("./505805.js"),
   Chunk594174 = require("./594174.js"),
   Chunk86419 = require("./86419.js"),
@@ -21,13 +21,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk713603 = require("./713603.js"),
   Chunk507683 = require("./507683.js");
 
-function v(e) {
+function h(e) {
   let {
     index: t,
     widgetType: n,
     game: i,
-    coverImageUrl: a,
-    gameName: l,
+    coverImageUrl: l,
+    gameName: a,
     children: o
   } = e, {
     manageFocusOnReorder: d
@@ -38,20 +38,20 @@ function v(e) {
     listType: n,
     itemType: "GAME_COVER",
     itemPreviewProps: {
-      imageSrc: a,
-      gameName: l
+      imageSrc: l,
+      gameName: a
     },
-    "aria-label": m.intl.formatToPlainString(m.t["0dR3gw"], {
+    "aria-label": b.intl.formatToPlainString(b.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, c.Eq)(n, e, t),
     onEnd: () => d(i.applicationId),
-    className: y.container,
-    dropBeforeClassName: y.dropIndicatorBefore,
-    dropAfterClassName: y.dropIndicatorAfter,
-    draggingClassName: y.isDragging,
+    className: j.container,
+    dropBeforeClassName: j.dropIndicatorBefore,
+    dropAfterClassName: j.dropIndicatorAfter,
+    draggingClassName: j.isDragging,
     children: (0, r.jsx)("div", {
-      className: y.dragHandleContainer,
+      className: j.dragHandleContainer,
       children: o
     })
   })
@@ -63,9 +63,9 @@ function O(e) {
     userId: n,
     widgetType: i,
     guildId: c,
-    channelId: m,
+    channelId: b,
     disableInteraction: O = false,
-    index: j,
+    index: v,
     onRemoveGame: x,
     coverRef: P
   } = e, {
@@ -74,48 +74,48 @@ function O(e) {
     isLoading: S
   } = (0, p.Z)(t.applicationId), {
     registerDragHandleRef: E
-  } = (0, u.C)(), T = (0, b.Z)(t.applicationId).length > 0, _ = o.default.getCurrentUser(), C = (null == _ ? true : _.id) === n, D = !O && C, {
-    isDragging: k
-  } = (0, l.f)(e => ({
+  } = (0, u.C)(), T = (0, m.Z)(t.applicationId).length > 0, _ = o.default.getCurrentUser(), C = (null == _ ? true : _.id) === n, N = !O && C, {
+    isDragging: Z
+  } = (0, a.f)(e => ({
     isDragging: e.isDragging()
-  })), N = () => (0, r.jsxs)(r.Fragment, {
+  })), A = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       imageSrc: I,
       gameName: w,
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: O,
-      className: a()(T ? y.socialProofBackdrop : true, null == I || O ? true : h.hoverActiveEffect),
-      hideTooltip: k,
+      className: l()(T ? j.socialProofBackdrop : true, null == I || O ? true : y.hoverActiveEffect),
+      hideTooltip: Z,
       coverRef: P
-    }), D && (0, r.jsx)(s.e_, {
+    }), N && (0, r.jsx)(s.e_, {
       buttonRef: E(t.applicationId),
-      className: y.dragHandle
+      className: j.dragHandle
     }), !O && (0, r.jsx)(g.L, {
       userId: n,
       applicationId: t.applicationId,
       guildId: c,
-      channelId: m,
-      className: y.socialProof
-    }), D && (0, r.jsx)(f.Z, {
+      channelId: b,
+      className: j.socialProof
+    }), N && (0, r.jsx)(f.Z, {
       game: t,
       widgetType: i,
-      className: y.removeGameButton,
+      className: j.removeGameButton,
       iconSize: "xs",
       onRemove: () => null == x ? true : x(t.applicationId)
     })]
   });
   return S ? (0, r.jsx)("div", {
-    className: h.loadingCover
-  }) : D ? (0, r.jsx)(v, {
+    className: y.loadingCover
+  }) : N ? (0, r.jsx)(h, {
     widgetType: i,
-    index: null != j ? j : 0,
+    index: null != v ? v : 0,
     game: t,
     coverImageUrl: I,
     gameName: w,
-    children: N()
+    children: A()
   }) : (0, r.jsx)("div", {
-    className: y.container,
-    children: N()
+    className: j.container,
+    children: A()
   })
 }

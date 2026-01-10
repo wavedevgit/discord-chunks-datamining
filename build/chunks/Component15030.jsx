@@ -32,11 +32,11 @@ function j() {
   i.useEffect(() => {
     null != t && (0, g.sO)(t) && (0, c.Q3)(a.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [t]);
-  let C = (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
+  let y = (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
   return e = null == t || j ? (0, r.jsx)(s.$jN, {}) : null != O ? (0, r.jsx)(m.Z, {
     guild: t,
     config: O
-  }) : C ? (0, r.jsx)(b.Z, {
+  }) : y ? (0, r.jsx)(b.Z, {
     guild: t
   }) : (0, r.jsx)(f.Z, {
     guild: t,

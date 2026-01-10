@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 176127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -20,7 +20,7 @@ function d() {
     let t = null == (e = o.Z.getLastClipsSession()) ? true : e.newClipIds;
     return null == t ? [] : o.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
-  return (0, i.jsx)("div", {
+  return (0, r.jsx)("div", {
     className: l()(u.thumbnailStack, {
       [u["height-1"]]: 1 === n.length,
       [u["height-2"]]: 2 === n.length,
@@ -30,17 +30,17 @@ function d() {
     children: Array.from((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = i
+          }) : e[t] = r
         })
       }
       return e
@@ -49,18 +49,18 @@ function d() {
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e)).map((e, t) => null != e ? e.type === s.NJ.VOICE_CLIP ? (0, i.jsx)(c.Z, {
+    }), e)).map((e, t) => null != e ? e.type === s.NJ.VOICE_CLIP ? (0, r.jsx)(c.Z, {
       className: u.thumbnail
-    }, e.id) : (0, i.jsx)("img", {
+    }, e.id) : (0, r.jsx)("img", {
       alt: "",
       className: u.thumbnail,
       src: e.thumbnail
-    }, e.id) : (0, i.jsx)("div", {}, "placeholder-".concat(t))).reverse()
+    }, e.id) : (0, r.jsx)("div", {}, "placeholder-".concat(t))).reverse()
   })
 }

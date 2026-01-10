@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 95764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,34 +22,34 @@ function b(e) {
   let {
     channelId: t,
     onClick: n
-  } = e, b = (0, o.bp)(), C = (0, m.qY)(t), y = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
-    canManageGuildEvent: v
-  } = (0, s.XJ)(y), x = v(C), O = r.useRef(null);
-  if (null == C) return null;
-  let E = () => {
-      if (null != y && (0, h.Z)(y)) return void(0, p.lC)(y, b);
+  } = e, b = (0, o.bp)(), y = (0, g.qY)(t), v = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
+    canManageGuildEvent: O
+  } = (0, s.XJ)(v), j = O(y), x = i.useRef(null);
+  if (null == y) return null;
+  let C = () => {
+      if (null != v && (0, h.Z)(v)) return void(0, p.lC)(v, b);
       n()
     },
-    j = () => {
-      f.Z.endEvent(C.id, C.guild_id)
+    E = () => {
+      f.Z.endEvent(y.id, y.guild_id)
     };
-  return x ? (0, i.jsx)(a.yRy, {
-    targetElementRef: O,
+  return j ? (0, r.jsx)(a.yRy, {
+    targetElementRef: x,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, i.jsx)(c.Z, {
-        children: (0, i.jsx)(a.v2r, {
+      return (0, r.jsx)(c.Z, {
+        children: (0, r.jsx)(a.v2r, {
           navId: "exit-options",
           onSelect: () => {},
-          "aria-label": g.intl.string(g.t["K6/mk3"]),
+          "aria-label": m.intl.string(m.t["K6/mk3"]),
           onClose: t,
-          children: (0, i.jsx)(a.sNh, {
+          children: (0, r.jsx)(a.sNh, {
             id: "end-voice-event",
             color: "danger",
-            action: j,
-            label: g.intl.string(g.t.qaYzPA),
+            action: E,
+            label: m.intl.string(m.t.qaYzPA),
             icon: a.k$p
           })
         })
@@ -62,15 +62,15 @@ function b(e) {
       let {
         onClick: t
       } = e;
-      return (0, i.jsx)(u.Z, {
-        buttonRef: O,
-        label: g.intl.string(g.t["6vrfgt"]),
-        onClick: E,
+      return (0, r.jsx)(u.Z, {
+        buttonRef: x,
+        label: m.intl.string(m.t["6vrfgt"]),
+        onClick: C,
         onPopoutClick: t
       })
     }
-  }) : (0, i.jsx)(u.Z, {
-    label: g.intl.string(g.t["6vrfgt"]),
+  }) : (0, r.jsx)(u.Z, {
+    label: m.intl.string(m.t["6vrfgt"]),
     onClick: n
   })
 }

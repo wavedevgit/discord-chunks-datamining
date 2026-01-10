@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 923029, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -23,23 +23,23 @@ function g(e) {
   i.useEffect(() => {
     c.Z.loadThread(g)
   });
-  let m = (0, a.e7)([u.Z], () => u.Z.getGuildId()) === p.I_8,
-    b = (0, a.e7)([d.Z], () => d.Z.theme);
-  return t = m ? (0, r.jsx)(s.OZU, {
-    note: h.intl.string(h.t["D5SN5/"]),
-    children: h.intl.string(h.t.xVTAdb)
-  }) : null != g ? (0, r.jsx)(s.$jN, {
-    type: s.$jN.Type.SPINNING_CIRCLE
-  }) : (0, r.jsx)(s.OZU, {
-    note: h.intl.string(h.t["LTr+x9"]),
-    children: h.intl.string(h.t.ai6Lbr)
+  let m = (0, a.e7)([d.Z], () => d.Z.getGuildId()) === p.I_8,
+    b = (0, a.e7)([u.Z], () => u.Z.theme);
+  return t = m ? (0, r.jsx)(o.OZU, {
+    note: f.intl.string(f.t["D5SN5/"]),
+    children: f.intl.string(f.t.xVTAdb)
+  }) : null != g ? (0, r.jsx)(o.$jN, {
+    type: o.$jN.Type.SPINNING_CIRCLE
+  }) : (0, r.jsx)(o.OZU, {
+    note: f.intl.string(f.t["LTr+x9"]),
+    children: f.intl.string(f.t.ai6Lbr)
   }), (0, r.jsxs)("div", {
-    className: f.noChannel,
-    children: [l.tq && (0, r.jsx)(o.ZP, {
+    className: h.noChannel,
+    children: [l.tq && (0, r.jsx)(s.ZP, {
       children: null
-    }), (0, r.jsxs)(s.ubH, {
+    }), (0, r.jsxs)(o.ubH, {
       theme: b,
-      children: [(0, r.jsx)(s.oxh, {
+      children: [(0, r.jsx)(o.oxh, {
         darkSrc: m ? n(691270) : n(625065),
         lightSrc: m ? n(704139) : n(875184),
         width: 272,

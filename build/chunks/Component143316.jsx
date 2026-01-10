@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 143316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -22,7 +22,7 @@ function d(e) {
     })
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [n ? (0, r.jsx)(f, {
+    children: [n ? (0, r.jsx)(p, {
       confirm: d,
       cancel: () => a(false)
     }) : null, (0, r.jsx)(l.u, {
@@ -40,7 +40,7 @@ function d(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     cancel: t,
     confirm: n

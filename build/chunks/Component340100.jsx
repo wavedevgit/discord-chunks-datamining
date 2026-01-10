@@ -1,4 +1,4 @@
-/** Chunk was on 83203 **/
+/** Chunk was on 83772 **/
 /** chunk id: 340100, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk968843 = require("./968843.js"),
@@ -15,17 +15,17 @@ var Chunk120356 = require("./120356.js"),
 let d = function(e) {
   let {
     className: t,
-    color: n = i.Z.colors.WHITE,
+    color: n = s.Z.colors.WHITE,
     quest: l,
     isInventory: d
   } = e, m = (0, o.qb)(e.quest), {
-    percentComplete: E,
-    completedRatioDisplay: f
+    percentComplete: f,
+    completedRatioDisplay: p
   } = (0, o.I)(l);
   return !d && m.length > 0 ? (0, r.jsx)(u.Z, {
     children: m.at(0)
   }) : (0, r.jsxs)("div", {
-    className: s()(c.wrapper, t),
+    className: i()(c.wrapper, t),
     style: {
       color: n.css
     },
@@ -35,21 +35,21 @@ let d = function(e) {
         variant: "text-xs/semibold",
         className: c.percentCompleteLabel,
         color: "none",
-        children: f
+        children: p
       }), (0, r.jsx)("div", {
         className: c.percentCompleteLabelOffset,
         style: {
-          width: "".concat(100 - E, "%")
+          width: "".concat(100 - f, "%")
         }
       })]
     }), (0, r.jsx)("div", {
       className: c.progressBar,
       role: "progressbar",
-      "aria-valuenow": E,
+      "aria-valuenow": f,
       children: (0, r.jsx)("div", {
         className: c.progressBarFill,
         style: {
-          width: "".concat(E, "%")
+          width: "".concat(f, "%")
         }
       })
     }), m.length > 0 && (0, r.jsx)(u.Z, {

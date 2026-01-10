@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 995993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => x
+  m: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,19 +24,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function C(e) {
   let {
     guild: t,
-    selected: x
-  } = e, E = (0, f.Z)(t), S = (0, u.Nj)(a.z.CHANNEL_BROWSER_NEW_BADGE_NUX), _ = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), P = _.length > m.Cb, N = (0, l.e7)([d.Z, g.ZP], () => {
+    selected: C
+  } = e, E = (0, p.Z)(t), S = (0, u.Nj)(a.z.CHANNEL_BROWSER_NEW_BADGE_NUX), _ = (0, l.Wu)([f.Z], () => Array.from(f.Z.getNewChannelIds(t.id)).filter(e => f.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), P = _.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, j.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) returnfalse;
-    let r = b.default.extractTimestamp(n);
+    let r = m.default.extractTimestamp(n);
     return null != e && e > r
-  }), Z = i.useCallback(() => {
-    (0, p.uL)(O.Z5c.CHANNEL(t.id, E ? v.oC.CUSTOMIZE_COMMUNITY : v.oC.CHANNEL_BROWSER))
-  }, [t.id, E]), w = i.useCallback(e => {
+  }), N = i.useCallback(() => {
+    (0, h.uL)(v.Z5c.CHANNEL(t.id, E ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
+  }, [t.id, E]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -74,10 +74,10 @@ function x(e) {
         }), i))
       }
     })
-  }, [t]), T = null;
-  return S && !I && !P || x || N || (T = (0, r.jsx)(s.IGR, {
+  }, [t]), A = null;
+  return S && !I && !P || C || Z || (A = (0, r.jsx)(s.IGR, {
     color: o.Z.colors.BADGE_BACKGROUND_BRAND.css,
-    text: C.intl.string(C.t.y2b7CA)
+    text: x.intl.string(x.t.y2b7CA)
   })), (0, r.jsx)(y.m, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(s.H$4, {
@@ -85,10 +85,10 @@ function x(e) {
       color: "currentColor",
       className: e
     }),
-    text: E ? C.intl.string(C.t.h9mGOP) : C.intl.string(C.t.et6wav),
-    selected: x,
-    onClick: Z,
-    onContextMenu: w,
-    trailing: T
+    text: E ? x.intl.string(x.t.h9mGOP) : x.intl.string(x.t.et6wav),
+    selected: C,
+    onClick: N,
+    onContextMenu: T,
+    trailing: A
   })
 }

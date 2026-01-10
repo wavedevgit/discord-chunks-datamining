@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 102888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,11 +10,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk503889 = require("./503889.js");
-let d = e => {
+let u = e => {
   let {
     guild: t,
-    onAddGuild: d
-  } = e, u = i.useCallback(() => {
+    onAddGuild: u
+  } = e, d = i.useCallback(() => {
     (0, l.ZDy)(async () => {
       let {
         default: e
@@ -40,9 +40,9 @@ let d = e => {
           return e
         }({}, n), l = l = {
           guild: t,
-          source: s.t4x.HUB_DIRECTORY,
+          source: o.t4x.HUB_DIRECTORY,
           analyticsLocation: {
-            section: s.jXE.HUB_WELCOME_CTA
+            section: o.jXE.HUB_WELCOME_CTA
           }
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -66,25 +66,25 @@ let d = e => {
     }), (0, r.jsx)(l.Heading, {
       className: c.emptyTitle,
       variant: "heading-xl/semibold",
-      children: o.intl.format(o.t.vyvrpC, {
+      children: s.intl.format(s.t.vyvrpC, {
         guildName: t.name
       })
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: c.emptySubtitle,
-      children: o.intl.string(o.t.WypE0i)
-    }), null != d ? (0, r.jsx)(a.i, {
+      children: s.intl.string(s.t.WypE0i)
+    }), null != u ? (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(362827),
-      header: o.intl.string(o.t.hyK15i),
+      header: s.intl.string(s.t.hyK15i),
       completed: false,
-      onClick: d
+      onClick: u
     }) : null, (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(538548),
-      header: o.intl.string(o.t.L4bwJ9),
+      header: s.intl.string(s.t.L4bwJ9),
       completed: false,
-      onClick: u
+      onClick: d
     })]
   })
 }

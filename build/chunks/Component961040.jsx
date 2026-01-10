@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 961040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,46 +18,46 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk122069 = require("./122069.js");
 
-function m(e) {
+function b(e) {
   let {
     children: t,
     popoutPosition: n,
     popoutAlign: l,
-    targetElementRef: h,
-    spacing: m = 0
+    targetElementRef: f,
+    spacing: b = 0
   } = e, {
-    isOpen: O,
-    setIsOpen: v
-  } = (0, f.Z)(), j = i.useCallback(() => {
-    v(false)
-  }, [v]), C = i.useCallback(() => {
-    v(!O)
-  }, [O, v]);
+    isOpen: v,
+    setIsOpen: O
+  } = (0, p.Z)(), j = i.useCallback(() => {
+    O(false)
+  }, [O]), x = i.useCallback(() => {
+    O(!v)
+  }, [v, O]);
   (0, c.ZP)(() => {
     let e = () => {
-      v(false)
+      O(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (u.S.subscribe(p.CkL.TOGGLE_INBOX, C), () => void u.S.unsubscribe(p.CkL.TOGGLE_INBOX, C)), [C]);
+  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, x), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, x)), [x]);
   let {
-    entrypoint: x
+    entrypoint: C
   } = (0, d.pN)({
     location: "NotificationsInboxPopout"
   });
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: h,
-    shouldShow: O,
+    targetElementRef: f,
+    shouldShow: v,
     align: l,
-    animation: x === d.u3.TITLE_BAR_LEFT ? o.yRy.Animation.TRANSLATE : o.yRy.Animation.FADE,
-    animationPosition: x === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
+    animation: C === d.u3.TITLE_BAR_LEFT ? o.yRy.Animation.TRANSLATE : o.yRy.Animation.FADE,
+    animationPosition: C === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
     position: n,
     onRequestClose: j,
-    spacing: m,
+    spacing: b,
     renderPopout: () => (0, r.jsx)(o.VqE, {
       "aria-label": g.intl.string(g.t.GSmTKJ),
       className: a()({
-        [b.repositionLayerTitlebarPopout]: x === d.u3.TITLE_BAR_LEFT,
-        [b.repositionLayerSidebarPopout]: x === d.u3.SERVER_RAIL_TOP
+        [m.repositionLayerTitlebarPopout]: C === d.u3.TITLE_BAR_LEFT,
+        [m.repositionLayerSidebarPopout]: C === d.u3.SERVER_RAIL_TOP
       }),
       children: (0, r.jsx)(y, {})
     }),
@@ -65,19 +65,19 @@ function m(e) {
       let {
         isShown: r
       } = n;
-      return t(C, r, e)
+      return t(x, r, e)
     }
   })
 }
 
 function y() {
   return (0, r.jsxs)("div", {
-    className: b.container,
+    className: m.container,
     children: [(0, r.jsx)("div", {
-      className: b.backgroundContainer,
+      className: m.backgroundContainer,
       children: (0, r.jsx)("span", {
-        className: b.background
+        className: m.background
       })
-    }), (0, r.jsx)(h.Z, {})]
+    }), (0, r.jsx)(f.Z, {})]
   })
 }

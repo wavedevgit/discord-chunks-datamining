@@ -1,4 +1,4 @@
-/** Chunk was on 15718 **/
+/** Chunk was on 69937 **/
 /** chunk id: 777288, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
@@ -14,7 +14,7 @@ function i(e) {
       color: s = "currentColor",
       foreground: o
     } = e,
-    u = function(e, t) {
+    c = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -46,7 +46,7 @@ function i(e) {
       })
     }
     return e
-  }({}, (0, l.Z)(u)), n = n = {
+  }({}, (0, l.Z)(c)), n = n = {
     width: i,
     height: a,
     viewBox: "0 0 16 16",

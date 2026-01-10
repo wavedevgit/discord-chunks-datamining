@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 141014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   N: () => s,
@@ -15,8 +15,8 @@ function s(e) {
   let {
     widgetType: t,
     children: n
-  } = e, s = (0, a.e7)([l.Z], () => {
-    let e = l.Z.getPendingWidgets();
+  } = e, s = (0, l.e7)([a.Z], () => {
+    let e = a.Z.getPendingWidgets();
     if (null == e) returnfalse;
     let n = e.find(e => e.type === t);
     if (null == n) returnfalse;

@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 118122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk675999 = require("./675999.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105303 = require("./105303.js");
-let C = {
+let x = {
   origin: {
     x: false,
     y: 0
@@ -35,7 +35,7 @@ let C = {
   }
 };
 
-function x(e) {
+function C(e) {
   (0, o.jW)(e, async () => {
     let {
       default: e
@@ -65,9 +65,9 @@ function E(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, o = (0, l.Wu)([p.Z], () => p.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => o.some(e => (0, h.eM)(e, E)), [o, E]), _ = (0, a.s9z)(e => (0, a.DEQ)(e, O.PU)), {
+  } = e, o = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => o.some(e => (0, f.eM)(e, E)), [o, E]), _ = (0, a.s9z)(e => (0, a.DEQ)(e, v.PU)), {
     analyticsLocations: I
-  } = (0, s.ZP)(), P = (0, r.jsx)(m.Z, {
+  } = (0, s.ZP)(), P = (0, r.jsx)(b.Z, {
     showPill: false,
     id: "create-join-button",
     onClick: () => {
@@ -85,18 +85,18 @@ function E(e) {
       })
     },
     selected: _,
-    onContextMenu: x,
-    tooltip: v.intl.string(v.t.l5WIbf),
+    onContextMenu: C,
+    tooltip: O.intl.string(O.t.l5WIbf),
     icon: a.oFk
   });
   return t ? P : (0, r.jsx)("div", {
     className: j.tutorialContainer,
-    children: (0, r.jsxs)(f.Z, {
+    children: (0, r.jsxs)(p.Z, {
       tutorialId: S ? "create-more-servers" : "create-first-server",
-      inlineSpecs: C,
+      inlineSpecs: x,
       position: "right",
-      children: [P, null != n && (0, r.jsx)(b.ZP, {
-        name: v.intl.string(v.t["45xjM5"]),
+      children: [P, null != n && (0, r.jsx)(m.ZP, {
+        name: O.intl.string(O.t["45xjM5"]),
         targetNode: n,
         below: true,
         noCombine: true

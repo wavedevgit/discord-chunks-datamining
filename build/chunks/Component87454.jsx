@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 87454, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,10 +18,10 @@ let d = Chunk473749.memo(function(e) {
   } = e, u = i.z[n], {
     isDismissed: m,
     handleToggleDismissState: p
-  } = (0, c.Z)(u), [f, h] = r.useState(false), x = r.useCallback(() => {
+  } = (0, c.Z)(u), [h, f] = r.useState(false), x = r.useCallback(() => {
     null == d || d(n), p()
   }, [d, p, n]), b = r.useCallback(e => {
-    e.preventDefault(), h(true), navigator.clipboard.writeText(n.toLowerCase())
+    e.preventDefault(), f(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsxs)(l.Kqy, {
@@ -31,9 +31,9 @@ let d = Chunk473749.memo(function(e) {
       children: [(0, a.jsx)(l.hU, {
         size: "sm",
         variant: "icon-only",
-        icon: f ? l.C2q : l.zTD,
+        icon: h ? l.C2q : l.zTD,
         onClick: b,
-        "aria-label": f ? "Copied" : "Copy"
+        "aria-label": h ? "Copied" : "Copy"
       }), (0, a.jsx)(l.rsf, {
         label: "".concat(n.toLowerCase(), " (").concat(i.z[n], ")"),
         description: (0, o.qh)(u) ? function(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 225653, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => d
@@ -15,10 +15,10 @@ var Chunk54381 = require("./54381.js"),
 function d(e) {
   let t = (0, l.e7)([s.Z], () => s.Z.getCall(e), [e]),
     n = (0, l.e7)([c.Z], () => c.Z.getRegions(null));
-  r.useEffect(() => {
+  i.useEffect(() => {
     null == n && o.Z.fetchRegions(null)
   }, [n]);
-  let d = r.useMemo(() => {
+  let d = i.useMemo(() => {
       var e;
       return null != t && t.regionUpdated && null != n && null != t.region ? null != (e = n.find(e => {
         let {
@@ -33,15 +33,15 @@ function d(e) {
         name: u.intl.string(u.t.JEmsap)
       }
     }, [t, n]),
-    p = r.useCallback(e => {
+    p = i.useCallback(e => {
       null != t && o.Z.changeCallRegion(t.channelId, e.id)
     }, [t]),
-    f = r.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
+    f = i.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
       let {
         id: t,
         name: n
       } = e;
-      return (0, i.jsx)(a.k5B, {
+      return (0, r.jsx)(a.k5B, {
         id: "region-".concat(t),
         group: "region-select",
         label: n,
@@ -49,7 +49,7 @@ function d(e) {
         action: () => p(e)
       }, "region-".concat(t))
     }), [n, d, p]);
-  return (0, i.jsx)(a.sNh, {
+  return (0, r.jsx)(a.sNh, {
     id: "region-select",
     label: u.intl.string(u.t.w8gMqh),
     subtext: d.name,

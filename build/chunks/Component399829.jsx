@@ -253,12 +253,12 @@ class w extends Chunk473749.Component {
 let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.Z, Chunk899667.Z, Chunk594174.default, Chunk271383.ZP], () => {
   var e, t;
   let n = b.Z.getGuildId(),
-    r = null != (t = null == (e = C.Z.getGuild(n)) ? true : e.premiumTier) ? t : I.Eu4.NONE,
+    r = null != (t = null == (e = y.Z.getGuild(n)) ? true : e.premiumTier) ? t : I.Eu4.NONE,
     i = (0, h.I)(n),
     l = null != n ? v.Z.getAppliedGuildBoostsForGuild(n) : null,
     a = o()(null != l ? l : []).uniqBy(e => e.userId),
     s = a.map(e => ({
-      user: y.default.getUser(e.userId),
+      user: C.default.getUser(e.userId),
       nick: O.ZP.getNick(n, e.userId)
     })).filter(e => null != e.user).value();
   return {

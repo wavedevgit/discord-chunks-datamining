@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 735959, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -21,7 +21,7 @@ function x() {
   let e = (0, c.e7)([m.default], () => m.default.locale),
     [t, n] = r.useState(),
     l = (0, i.runtimeHashMessageKey)(null != t ? t : ""),
-    x = r.useMemo(() => h.t[l], [l]);
+    x = r.useMemo(() => f.t[l], [l]);
   return (0, a.jsxs)("div", {
     children: [(0, a.jsxs)(u.ZP, {
       children: [(0, a.jsx)(u.ZP.Icon, {
@@ -30,23 +30,23 @@ function x() {
       }), (0, a.jsx)(u.ZP.Title, {
         children: "Locale"
       })]
-    }), (0, a.jsxs)(f.E, {
-      children: [(0, a.jsx)(f.Z9, {
+    }), (0, a.jsxs)(h.E, {
+      children: [(0, a.jsx)(h.Z9, {
         name: "Active System",
         children: "@discord/intl"
-      }), (0, a.jsx)(f.Z9, {
+      }), (0, a.jsx)(h.Z9, {
         name: "App",
         children: e
-      }), (0, a.jsx)(f.Z9, {
+      }), (0, a.jsx)(h.Z9, {
         name: "System",
-        children: h.systemLocale
-      }), (0, a.jsx)(f.Z9, {
+        children: f.systemLocale
+      }), (0, a.jsx)(h.Z9, {
         name: "@discord/intl",
-        children: h.intl.currentLocale
-      }), (0, a.jsx)(f.Z9, {
+        children: f.intl.currentLocale
+      }), (0, a.jsx)(h.Z9, {
         name: "common i18n",
         children: o.Z.getLocale()
-      }), (0, a.jsx)(f.Z9, {
+      }), (0, a.jsx)(h.Z9, {
         name: "Moment",
         children: s().locale()
       })]
@@ -57,10 +57,10 @@ function x() {
       }), (0, a.jsx)(u.ZP.Title, {
         children: "New System Messages"
       })]
-    }), (0, a.jsx)(f.E, {
-      children: (0, a.jsx)(f.Z9, {
+    }), (0, a.jsx)(h.E, {
+      children: (0, a.jsx)(h.Z9, {
         name: "Unique Rendered Main Messages",
-        children: Object.keys(h.t).length
+        children: Object.keys(f.t).length
       })
     }), (0, a.jsx)("div", {
       style: {
@@ -73,11 +73,11 @@ function x() {
         name: "Message name",
         placeholder: "Find a message"
       })
-    }), (0, a.jsxs)(f.E, {
-      children: [(0, a.jsx)(f.Z9, {
+    }), (0, a.jsxs)(h.E, {
+      children: [(0, a.jsx)(h.Z9, {
         name: "Hashed key",
         children: l
-      }), (0, a.jsx)(f.Z9, {
+      }), (0, a.jsx)(h.Z9, {
         name: "Exists?",
         children: null != x ? "yes" : "no"
       })]

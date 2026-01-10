@@ -39,7 +39,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, y.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([O.default], () => O.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
+  } = (0, C.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([O.default], () => O.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, g.P)(Z);
@@ -66,8 +66,8 @@ function w(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: T.intl.format(T.t.xiYuDt, {
-          monetizationPolicyLink: C.Z.getArticleURL(S.BhN.CREATOR_POLICY),
-          serverProductsSupportLink: C.Z.getCreatorSupportArticleURL(S.BhN.SERVER_PRODUCTS)
+          monetizationPolicyLink: y.Z.getArticleURL(S.BhN.CREATOR_POLICY),
+          serverProductsSupportLink: y.Z.getCreatorSupportArticleURL(S.BhN.SERVER_PRODUCTS)
         })
       })]
     }),

@@ -48,18 +48,18 @@ function L(e) {
   let t, {
       guildId: n
     } = e,
-    l = (0, s.e7)([y.Z], () => y.Z.getCurrentPage()),
-    b = (0, s.e7)([y.Z], () => {
+    l = (0, s.e7)([C.Z], () => C.Z.getCurrentPage()),
+    b = (0, s.e7)([C.Z], () => {
       let e = (0, N.lg)(l);
-      return null != e && !y.Z.isEducationUpsellDismissed(e)
+      return null != e && !C.Z.isEducationUpsellDismissed(e)
     }),
-    C = (0, E.Z)(n),
-    A = !C && b;
+    y = (0, E.Z)(n),
+    A = !y && b;
   switch (i.useEffect(() => {
       (0, g.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
     case N.PG.LANDING:
-      t = C ? (0, r.jsx)(T.Z, {
+      t = y ? (0, r.jsx)(T.Z, {
         completed: true,
         guildId: n
       }) : (0, r.jsx)(w.Z, {});
@@ -69,27 +69,27 @@ function L(e) {
       break;
     case N.PG.DEFAULT_CHANNELS:
       t = (0, r.jsx)(I.Z, {
-        saveOnClose: !C
+        saveOnClose: !y
       });
       break;
     case N.PG.CUSTOMIZATION_QUESTIONS:
       t = (0, r.jsx)(P.ZP, {
-        saveOnClose: !C
+        saveOnClose: !y
       });
       break;
     case N.PG.HOME_SETTINGS:
       t = (0, r.jsx)(S.Z, {
-        saveOnClose: !C
+        saveOnClose: !y
       });
       break;
     case N.PG.CONNECTIONS:
       t = (0, r.jsx)(_.Z, {
-        saveOnClose: !C
+        saveOnClose: !y
       });
       break;
     case N.PG.REVIEW:
       t = (0, r.jsx)(T.Z, {
-        completed: C,
+        completed: y,
         guildId: n
       })
   }
@@ -97,17 +97,17 @@ function L(e) {
     className: a()(D.onboardingContainer, {
       [D.upsellOnTop]: A
     }),
-    children: [!C && l !== N.PG.LANDING && (0, r.jsx)(k, {
+    children: [!y && l !== N.PG.LANDING && (0, r.jsx)(k, {
       setOnboardingStep: x.$K,
       page: l,
       homeSettingsEnabled: true
-    }), C && l !== N.PG.LANDING && (0, r.jsx)("div", {
+    }), y && l !== N.PG.LANDING && (0, r.jsx)("div", {
       children: (0, r.jsxs)(c.zx, {
         innerClassName: D.backButton,
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.MIN,
         onClick: () => {
-          if (y.Z.hasChanges() && !y.Z.canCloseEarly()) {
+          if (C.Z.hasChanges() && !C.Z.canCloseEarly()) {
             m.S.dispatch(Z.CkL.SHAKE_APP, {
               duration: 300,
               intensity: u.$x
@@ -135,9 +135,9 @@ function k(e) {
     page: t,
     setOnboardingStep: n,
     homeSettingsEnabled: i
-  } = e, l = (0, s.e7)([y.Z], () => y.Z.hasErrors()), o = e => {
+  } = e, l = (0, s.e7)([C.Z], () => C.Z.hasErrors()), o = e => {
     if (!l) return () => n(e)
-  }, c = (0, s.e7)([C.Z], () => C.Z.advancedMode);
+  }, c = (0, s.e7)([y.Z], () => y.Z.advancedMode);
   return (0, r.jsxs)("div", {
     className: D.progressContainer,
     children: [(0, r.jsxs)(d.P3F, {

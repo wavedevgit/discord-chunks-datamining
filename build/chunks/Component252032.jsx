@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 252032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -24,12 +24,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk224837 = require("./224837.js"),
   Chunk548498 = require("./548498.js");
 
-function E(e) {
+function C(e) {
   let {
     value: t,
     channel: n
   } = e;
-  return (0, g.v)({
+  return (0, m.v)({
     type: c.Ie.EDIT,
     content: t,
     channel: n,
@@ -38,7 +38,7 @@ function E(e) {
   })
 }
 
-function j(e) {
+function E(e) {
   let {
     channel: t,
     message: n
@@ -46,76 +46,76 @@ function j(e) {
     id: c
   } = t, {
     id: u
-  } = n, m = t.getGuildId(), g = (0, a.e7)([f.Z], () => f.Z.getGuild(m), [m]), C = t.type === v.d4z.GUILD_ANNOUNCEMENT, j = null != g && g.features.has(v.GuildFeatures.NEWS), _ = C && j, {
-    editingMessage: P,
-    editingTextValue: I,
+  } = n, g = t.getGuildId(), m = (0, a.e7)([f.Z], () => f.Z.getGuild(g), [g]), y = t.type === O.d4z.GUILD_ANNOUNCEMENT, E = null != m && m.features.has(O.GuildFeatures.NEWS), _ = y && E, {
+    editingMessage: I,
+    editingTextValue: P,
     editingRichValue: Z
   } = (0, a.cj)([p.Z], () => ({
     editingMessage: p.Z.getEditingMessage(c),
     editingTextValue: p.Z.getEditingTextValue(c),
     editingRichValue: p.Z.getEditingRichValue(c)
-  }), [c]), T = (0, a.e7)([d.default], () => d.default.getId()), N = r.useCallback((e, i, r) => {
+  }), [c]), N = (0, a.e7)([d.default], () => d.default.getId()), T = i.useCallback((e, r, i) => {
     let {
       content: a
-    } = r, c = h.Z.can(v.Plq.MANAGE_MESSAGES, t), u = null != P && null != P.author ? P.author.id : null, d = _ && (u === T || c), p = {
+    } = i, c = h.Z.can(O.Plq.MANAGE_MESSAGES, t), u = null != I && null != I.author ? I.author.id : null, d = _ && (u === N || c), p = {
       content: a,
       components: true
     };
-    if (n.hasFlag(v.iLy.IS_COMPONENTS_V2)) {
+    if (n.hasFlag(O.iLy.IS_COMPONENTS_V2)) {
       var f;
       let e = (null == (f = n.components[0]) ? true : f.type) === s.re.MEDIA_GALLERY,
         t = n.components.filter(e => e.type !== s.re.TEXT_DISPLAY);
       t.splice(+!!e, 0, {
         type: s.re.TEXT_DISPLAY,
         content: a,
-        id: "".concat(x.Kb)
+        id: "".concat(j.Kb)
       }), p.content = "", p.components = t
     }
-    return d && null != P && (0, l.yE)(P.flags, v.iLy.CROSSPOSTED) ? b.Z.confirmEdit(e, i, p) : o.Z.editMessage(e, i, p), Promise.resolve()
-  }, [P, _, T, t, n]), A = r.useCallback(e => {
+    return d && null != I && (0, l.yE)(I.flags, O.iLy.CROSSPOSTED) ? b.Z.confirmEdit(e, r, p) : o.Z.editMessage(e, r, p), Promise.resolve()
+  }, [I, _, N, t, n]), A = i.useCallback(e => {
     var t, n;
-    return (0, r.createElement)(S, (t = function(e) {
+    return (0, i.createElement)(S, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = i
+          }) : e[t] = r
         })
       }
       return e
     }({}, e), n = n = {
-      className: O.channelTextArea,
+      className: x.channelTextArea,
       key: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [u]);
-  return null != I && null != Z ? (0, i.jsx)(y.Z, {
+  return null != P && null != Z ? (0, r.jsx)(v.Z, {
     ref: true,
     channel: t,
     message: n,
-    textValue: I,
+    textValue: P,
     richValue: Z,
     onCancel: o.Z.endEditMessage,
     onChange: o.Z.updateEditMessage,
     onConfirmDelete: b.Z.confirmDelete,
-    saveMessage: N,
-    validateEdit: E,
+    saveMessage: T,
+    validateEdit: C,
     children: A
   }) : null
 }
@@ -130,11 +130,11 @@ function S(e) {
     onSubmit: s,
     onKeyDown: d,
     renderLeftAccessories: p
-  } = e, [f, h] = r.useState(true), g = r.useCallback(() => h(true), []), b = r.useCallback(() => h(false), []);
-  return r.useEffect(() => (m.S.subscribe(v.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(v.CkL.TEXTAREA_BLUR, b), () => {
-    m.S.unsubscribe(v.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(v.CkL.TEXTAREA_BLUR, b)
-  }), [g, b]), (0, i.jsx)(u.ZP, {
-    className: O.channelTextArea,
+  } = e, [f, h] = i.useState(true), m = i.useCallback(() => h(true), []), b = i.useCallback(() => h(false), []);
+  return i.useEffect(() => (g.S.subscribe(O.CkL.TEXTAREA_FOCUS, m), g.S.subscribe(O.CkL.TEXTAREA_BLUR, b), () => {
+    g.S.unsubscribe(O.CkL.TEXTAREA_FOCUS, m), g.S.unsubscribe(O.CkL.TEXTAREA_BLUR, b)
+  }), [m, b]), (0, r.jsx)(u.ZP, {
+    className: x.channelTextArea,
     textValue: t,
     richValue: n,
     channel: a,
@@ -148,7 +148,7 @@ function S(e) {
     },
     onKeyDown: d,
     focused: f,
-    onFocus: g,
+    onFocus: m,
     onBlur: b,
     renderLeftAccessories: p
   }, l.id)
@@ -156,15 +156,15 @@ function S(e) {
 
 function _(e, t, n) {
   let {
-    message: r,
+    message: i,
     channel: l,
     compact: a
   } = e;
-  return n ? (0, i.jsx)(j, {
+  return n ? (0, r.jsx)(E, {
     channel: l,
-    message: r
-  }) : (0, i.jsx)(C.ZP, {
-    message: r,
+    message: i
+  }) : (0, r.jsx)(y.ZP, {
+    message: i,
     content: t,
     compact: null != a && a
   })

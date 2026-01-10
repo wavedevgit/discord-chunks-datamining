@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 694253, original params: e,t,n (module,exports,require) **/
 module.exports = {
   confettiCanvas: "_8fcbd6531c8a6e63-confettiCanvas",

@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 453470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => v
+  M: () => O
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,43 +21,43 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e) {
+function O(e) {
   let {
     channelId: t,
-    warningId: v,
-    senderId: x
-  } = e, O = (0, b.E4)(), E = r.useCallback(() => {
-    (0, p.T)(t, [v])
-  }, [t, v]), j = e => {
+    warningId: O,
+    senderId: j
+  } = e, x = (0, b.E4)(), C = i.useCallback(() => {
+    (0, p.T)(t, [O])
+  }, [t, O]), E = e => {
     o.Z.updateChannelOverrideSettings(null, t, {
       muted: true
-    }, g.ZB.Muted), c.Z.showMuteSuccessToast(x, t), (0, h.qc)({
+    }, m.ZB.Muted), c.Z.showMuteSuccessToast(j, t), (0, h.qc)({
       channelId: t,
-      warningId: v,
-      senderId: x,
+      warningId: O,
+      senderId: j,
       warningType: f.pj.LIKELY_ATO,
       cta: e
-    }), E()
+    }), C()
   };
-  return r.useEffect(() => {
-    (0, h.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
+  return i.useEffect(() => {
+    (0, h.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: v,
-      senderId: x,
+      warningId: O,
+      senderId: j,
       warningType: f.pj.LIKELY_ATO
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, v, x]), (0, i.jsx)(m.Q, {
+  }, [t, O, j]), (0, r.jsx)(g.Q, {
     channelId: t,
-    warningId: v,
-    senderId: x,
+    warningId: O,
+    senderId: j,
     warningType: f.pj.LIKELY_ATO,
-    header: y.intl.string(y.t.R8UsiI),
-    description: y.intl.string(y.t.lI8nQl),
-    onDismiss: E,
+    header: v.intl.string(v.t.R8UsiI),
+    description: v.intl.string(v.t.lI8nQl),
+    onDismiss: C,
     buttons: [{
-      text: y.intl.string(y.t.tC1pvL),
+      text: v.intl.string(v.t.tC1pvL),
       variant: "primary",
       onClick: () => {
         (0, a.ZDy)(async () => {
@@ -66,42 +66,42 @@ function v(e) {
           } = await n.e("59385").then(n.bind(n, 480884));
           return n => {
             let {
-              transitionState: r,
+              transitionState: i,
               onClose: l
             } = n;
-            return (0, i.jsx)(e, {
-              transitionState: r,
+            return (0, r.jsx)(e, {
+              transitionState: i,
               onClose: l,
               channelId: t,
-              warningId: v,
-              senderId: x,
-              description: y.intl.string(y.t["/uid3p"]),
-              safetyTipRows: O.map((e, t) => (0, i.jsx)(u.q, {
+              warningId: O,
+              senderId: j,
+              description: v.intl.string(v.t["/uid3p"]),
+              safetyTipRows: x.map((e, t) => (0, r.jsx)(u.q, {
                 listType: "numbered",
                 index: t,
                 title: e.title,
                 description: e.description
               }, t)),
-              actionRows: [(0, i.jsx)(d.JZ, {
-                title: y.intl.string(y.t.ftIK2A),
-                description: y.intl.string(y.t.w2ve0t),
-                buttonText: y.intl.string(y.t.ftIK2A),
+              actionRows: [(0, r.jsx)(d.JZ, {
+                title: v.intl.string(v.t.ftIK2A),
+                description: v.intl.string(v.t.w2ve0t),
+                buttonText: v.intl.string(v.t.ftIK2A),
                 onButtonPress: () => {
-                  j(h.NM.USER_MODAL_MUTE), l()
+                  E(h.NM.USER_MODAL_MUTE), l()
                 }
               }, "likely-ato-mute")],
-              learnMore: (0, i.jsx)(a.P3F, {
+              learnMore: (0, r.jsx)(a.P3F, {
                 onClick: () => (0, h.qc)({
                   channelId: t,
-                  warningId: v,
-                  senderId: x,
+                  warningId: O,
+                  senderId: j,
                   warningType: f.pj.LIKELY_ATO,
                   cta: h.NM.USER_MODAL_LEARN_MORE
                 }),
-                children: (0, i.jsx)(a.Heading, {
+                children: (0, r.jsx)(a.Heading, {
                   variant: "heading-sm/medium",
                   color: "text-link",
-                  children: y.intl.format(y.t.UkH122, {
+                  children: v.intl.format(v.t.UkH122, {
                     learnMoreLink: b.D8
                   })
                 })
@@ -110,15 +110,15 @@ function v(e) {
           }
         }), (0, h.qc)({
           channelId: t,
-          warningId: v,
-          senderId: x,
+          warningId: O,
+          senderId: j,
           warningType: f.pj.LIKELY_ATO,
           cta: h.NM.OPEN_MORE_TIPS
         })
       }
     }, {
-      text: y.intl.string(y.t.ftIK2A),
-      onClick: () => j(h.NM.USER_BANNER_MUTE)
+      text: v.intl.string(v.t.ftIK2A),
+      onClick: () => E(h.NM.USER_BANNER_MUTE)
     }]
   })
 }

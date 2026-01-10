@@ -54,7 +54,7 @@ function j(e) {
       t && null != e && (0, u.ss)(e)
     }
   }, [t, a]);
-  let C = i.useCallback(() => {
+  let y = i.useCallback(() => {
       null != a && (0, s.ZDy)(async () => {
         let {
           default: e
@@ -62,7 +62,7 @@ function j(e) {
         return t => (0, r.jsx)(e, x({}, t))
       })
     }, [a]),
-    y = i.useMemo(() => j.map(e => {
+    C = i.useMemo(() => j.map(e => {
       var t, n;
       return t = x({}, e), n = n = {
         id: (0, b.a4)(e)
@@ -105,7 +105,7 @@ function j(e) {
       handleDragReset: I,
       handleDragComplete: S,
       draggingId: _
-    } = (0, o.Z)(y, N);
+    } = (0, o.Z)(C, N);
   if (null == a) return null;
   let T = j.length < b.yx;
   return (0, r.jsx)("div", {
@@ -126,7 +126,7 @@ function j(e) {
         })]
       }), j.length > 0 && (0, r.jsx)("div", {
         className: h.connectionsList,
-        children: y.map((e, t) => (0, r.jsx)(f.Z, {
+        children: C.map((e, t) => (0, r.jsx)(f.Z, {
           connection: e,
           index: t,
           onDragStart: E,
@@ -136,7 +136,7 @@ function j(e) {
         }, e.id))
       }), (0, r.jsxs)("button", {
         className: h.addConnectionButton,
-        onClick: C,
+        onClick: y,
         disabled: !T || v,
         type: "button",
         children: [(0, r.jsx)(s.oFk, {

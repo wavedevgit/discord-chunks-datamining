@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 895182, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk914010 = require("./914010.js"),
   Chunk510726 = require("./510726.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function x() {
       null != x && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: h(f({}, x), {
+        instance: f(h({}, x), {
           status: t
         })
       })
@@ -78,7 +78,7 @@ function x() {
       null != x && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: h(f({}, x), {
+        instance: f(h({}, x), {
           serverIP: true,
           port: true,
           gameServerPanelUrl: true

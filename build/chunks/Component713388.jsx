@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 713388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -26,14 +26,14 @@ function p(e) {
   return !!m(e) || !!(0, s.Lk)(e) && e.layout.some(e => p(e))
 }
 
-function f(e) {
+function h(e) {
   var t;
   let {
     setting: n,
     depth: i,
     highlightMode: l
   } = e, s = null == (t = r.useContext(x)) ? true : t.get(n), o = null;
-  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(f, {
+  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(h, {
     setting: e,
     depth: i + 1,
     highlightMode: l
@@ -45,7 +45,7 @@ function f(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     setting: t,
     depth: n,
@@ -67,11 +67,11 @@ function h(e) {
   if ((0, s.Lk)(t)) {
     var d, u, x;
     let e = null == (x = t.parent) || null == (u = x.parent) || null == (d = u.getLegacySearchKey) ? true : d.call(u);
-    0 === t.layout.length && null != e ? o = (0, a.jsx)(f, {
+    0 === t.layout.length && null != e ? o = (0, a.jsx)(h, {
       setting: e,
       depth: n + 1,
       highlightMode: null != l ? l : "legacy"
-    }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(h, {
+    }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(f, {
       setting: e,
       depth: n + 1,
       inheritedHighlightMode: l
@@ -107,10 +107,10 @@ function b() {
       value: n,
       children: (0, a.jsxs)("div", {
         className: u.tree,
-        children: [e && (0, a.jsx)(f, {
+        children: [e && (0, a.jsx)(h, {
           setting: "root",
           depth: 1
-        }, "root"), !e && (0, a.jsx)(h, {
+        }, "root"), !e && (0, a.jsx)(f, {
           setting: s,
           depth: 1
         }, s.key)]

@@ -1,10 +1,10 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 925975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => b
 }), require("./781311.js"), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./804061.js");
 var Chunk159635 = require("./159635.js"),
-  r = require.n(Chunk159635),
+  i = require.n(Chunk159635),
   Chunk969812 = require("./969812.js"),
   Chunk904245 = require("./904245.js"),
   Chunk367907 = require("./367907.js"),
@@ -15,7 +15,7 @@ var Chunk159635 = require("./159635.js"),
   Chunk375954 = require("./375954.js"),
   Chunk981631 = require("./981631.js");
 let h = /\\([*?+/])/g,
-  m = {
+  g = {
     tts: {
       action: () => ({
         tts: d.OW.getSetting()
@@ -52,39 +52,39 @@ let h = /\\([*?+/])/g,
       }
     },
     reaction: {
-      match: r().anyScopeRegex(/^\+:(.+?): *$/),
+      match: i().anyScopeRegex(/^\+:(.+?): *$/),
       action(e, t) {
         let {
           isEdit: n,
-          channel: i
+          channel: r
         } = t;
-        if (n || !p.Z.hasPresent(i.id)) return;
-        let r = p.Z.getMessages(i.id).last();
-        if (null == r || null == r.id) return;
-        let l = s.ZP.getDisambiguatedEmojiContext(i.guild_id).getByName(e.trim().slice(2, false));
-        if (null != l) return (0, c.rU)(i.id, r.id, (0, u.g1)(l)), {
+        if (n || !p.Z.hasPresent(r.id)) return;
+        let i = p.Z.getMessages(r.id).last();
+        if (null == i || null == i.id) return;
+        let l = s.ZP.getDisambiguatedEmojiContext(r.guild_id).getByName(e.trim().slice(2, false));
+        if (null != l) return (0, c.rU)(r.id, i.id, (0, u.g1)(l)), {
           content: ""
         }
       }
     },
     searchReplace: {
-      match: r().anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/),
+      match: i().anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/),
       action(e, t) {
-        var n, i;
+        var n, r;
         let {
-          isEdit: r,
+          isEdit: i,
           channel: l
         } = t;
-        if (r) return;
+        if (i) return;
         let o = p.Z.getLastEditableMessage(l.id);
         if (null == o || null == o.id) return {
           content: ""
         };
-        let [s, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), f = null != (i = null == d ? true : d.split("")) ? i : [];
+        let [s, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), f = null != (r = null == d ? true : d.split("")) ? r : [];
         c = c.replace(h, (e, t) => t), u = u.replace(h, (e, t) => t);
-        let m = f.includes("g") ? o.content.replaceAll(c, u) : o.content.replace(c, u);
-        return (null == m || "" === m.trim()) && 0 === o.attachments.length ? a.Z.deleteMessage(l.id, o.id) : m !== o.content && a.Z.editMessage(l.id, o.id, {
-          content: m
+        let g = f.includes("g") ? o.content.replaceAll(c, u) : o.content.replace(c, u);
+        return (null == g || "" === g.trim()) && 0 === o.attachments.length ? a.Z.deleteMessage(l.id, o.id) : g !== o.content && a.Z.editMessage(l.id, o.id, {
+          content: g
         }), {
           content: ""
         }
@@ -97,24 +97,24 @@ let h = /\\([*?+/])/g,
     }
   };
 
-function g(e, t, n, i) {
+function m(e, t, n, r) {
   return o.ZP.trackWithMetadata(f.rMx.SLASH_COMMAND_USED, {
     command: e
-  }), t.action(n, i)
+  }), t.action(n, r)
 }
 
 function b(e, t) {
-  for (let i in m) {
-    let r = m[i];
-    if (null != r.match) {
+  for (let r in g) {
+    let i = g[r];
+    if (null != i.match) {
       var n;
-      if (null == (n = r.match.regex) ? true : n.test(e)) return g(i, r, e, t);
+      if (null == (n = i.match.regex) ? true : n.test(e)) return m(r, i, e, t);
       continue
     }
     if (d.dN.getSetting() && "/" === e[0]) {
       let n = e.split(" ");
-      if (i === n[0].slice(1) && null != r.action) return g(i, r, n.slice(1).join(" "), t)
+      if (r === n[0].slice(1) && null != i.action) return m(r, i, n.slice(1).join(" "), t)
     }
   }
 }
-Object.setPrototypeOf(m, null)
+Object.setPrototypeOf(g, null)

@@ -43,7 +43,7 @@ let E = () => {
       } = e, n = h.Z.editedRoleIds.map(e => h.Z.getRole(e)).filter(f.lm), r = h.Z.getSortDeltas(), i = null, l = null;
       h.Z.hasRoleConfigurationChanges && (l = h.Z.editedRoleIdsForConfigurations, i = h.Z.getEditedRoleConnectionConfigurationsMap()), (0, p.Gf)(t, n, r, l, i)
     },
-    submitting: t === y.QZA.SUBMITTING,
+    submitting: t === C.QZA.SUBMITTING,
     onReset: p.S1
   })
 };
@@ -63,16 +63,16 @@ function I(e) {
   a()(null != o, "Guild must have an everyone role");
   let f = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
     m = (0, s.e7)([b.Z], () => b.Z.getSelectedRoleId()),
-    [p, y] = i.useState(f.length > 0);
+    [p, C] = i.useState(f.length > 0);
   i.useEffect(() => {
-    y(p || f.length > 0)
+    C(p || f.length > 0)
   }, [p, f.length]), (0, d.ZP)(() => {
     let e = g.Z.getMemberCount(n.id);
     null != e && e <= x.cm && c.Z.requestMembers(n.id, "", 0, false)
   });
-  let [E, I] = i.useState(C.ZI.DISPLAY);
+  let [E, I] = i.useState(y.ZI.DISPLAY);
   return (i.useEffect(() => {
-    null == m && I(C.ZI.DISPLAY)
+    null == m && I(y.ZI.DISPLAY)
   }, [m]), null != m) ? (0, r.jsx)(j.Z, {
     editRoleId: m,
     setEditRoleId: N,

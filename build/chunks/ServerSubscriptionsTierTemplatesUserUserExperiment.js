@@ -2,44 +2,12 @@
 /** chunk id: 644542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $i: () => c,
-  Xv: () => a,
-  Zo: () => o,
-  ai: () => s,
-  jJ: () => l
+  $i: () => s,
+  ai: () => a,
+  jJ: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk293810 = require("./293810.js");
-let a = (0, Chunk818083.B)({
-    kind: "guild",
-    id: "2021-06_guild_role_subscriptions",
-    label: "Guild Role Subscriptions",
-    defaultConfig: {
-      enableRoleSubscriptionsForGuild: false
-    },
-    treatments: [{
-      id: 1,
-      label: "Enables guild to create Guild Role Subscriptions",
-      config: {
-        enableRoleSubscriptionsForGuild: true
-      }
-    }]
-  }),
-  o = (0, Chunk818083.B)({
-    kind: "user",
-    id: "2021-08_guild_role_subscription_users",
-    label: "Guild Role Subscription Users",
-    defaultConfig: {
-      enableRoleSubscriptionsForUser: false
-    },
-    treatments: [{
-      id: 1,
-      label: "Enables users to create Guild Role Subscriptions",
-      config: {
-        enableRoleSubscriptionsForUser: true
-      }
-    }]
-  });
 (0, Chunk818083.B)({
   kind: "guild",
   id: "2022-01_guild_role_subscription_trials",
@@ -55,7 +23,7 @@ let a = (0, Chunk818083.B)({
     }
   }]
 });
-let s = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "guild",
   id: "2022-07_guild_role_subscriptions_variable_max_tiers",
   label: "Guild Role Subscription Max Tiers",
@@ -87,7 +55,7 @@ let s = (0, Chunk818083.B)({
     }
   }]
 });
-let l = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "guild",
     id: "2023-03_server_subscriptions_tier_templates",
     label: "Server Subscriptions Tier Templates",
@@ -118,7 +86,7 @@ let l = (0, Chunk818083.B)({
       }
     }]
   }),
-  c = (0, Chunk818083.B)({
+  s = (0, Chunk818083.B)({
     kind: "user",
     id: "2023-04_server_subscriptions_tier_templates_user",
     label: "Server Subscriptions Tier Templates",

@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 319396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -28,12 +28,12 @@ function x(e) {
     item: t,
     index: n,
     wishlistId: i,
-    onReorder: a,
-    children: l
+    onReorder: l,
+    children: a
   } = e, {
     manageFocusOnReorder: o
-  } = (0, y.C)();
-  return (0, r.jsx)(h.yW, {
+  } = (0, j.C)();
+  return (0, r.jsx)(y.yW, {
     index: n,
     itemId: String(t.skuId),
     listType: String(i),
@@ -44,15 +44,15 @@ function x(e) {
     "aria-label": O.intl.formatToPlainString(O.t["7SnyMA"], {
       positionNumber: n + 1
     }),
-    onReorder: a,
+    onReorder: l,
     onEnd: () => o(String(t.skuId)),
-    className: j.dragAndDropContainer,
-    dropBeforeClassName: j.dropIndicatorBefore,
-    dropAfterClassName: j.dropIndicatorAfter,
-    draggingClassName: j.isDragging,
+    className: v.dragAndDropContainer,
+    dropBeforeClassName: v.dropIndicatorBefore,
+    dropAfterClassName: v.dropIndicatorAfter,
+    draggingClassName: v.isDragging,
     children: (0, r.jsx)("div", {
-      className: j.dragHandleContainer,
-      children: l
+      className: v.dragHandleContainer,
+      children: a
     })
   })
 }
@@ -61,33 +61,33 @@ let P = Chunk473749.memo(function(e) {
     item: t,
     index: n,
     profileOwner: i,
-    isOwner: a,
-    wishlistId: l,
+    isOwner: l,
+    wishlistId: a,
     canReorder: s,
     tooltipConfig: u,
     isDragging: d,
     onReorder: g
   } = e, {
     registerDragHandleRef: p
-  } = (0, y.C)(), b = s ? (0, r.jsx)(h.e_, {
+  } = (0, j.C)(), m = s ? (0, r.jsx)(y.e_, {
     buttonRef: p(String(t.skuId)),
-    className: j.dragHandle,
+    className: v.dragHandle,
     onFocus: e => e.stopPropagation()
-  }) : true, m = (0, r.jsx)(v.Z, {
+  }) : true, b = (0, r.jsx)(h.Z, {
     item: t,
     profileOwner: i,
-    wishlistId: l,
-    isOwner: a,
+    wishlistId: a,
+    isOwner: l,
     isDragging: d,
-    dragHandle: b
-  }), O = m;
+    dragHandle: m
+  }), O = b;
   if (u.shouldShow && !d)
     if (null != u.title && null == u.body && null == u.renderIcon) O = (0, r.jsx)(c.u, {
       text: u.title,
       position: "top",
       asContainer: true,
       delay: f.rq,
-      children: m
+      children: b
     });
     else {
       var P, I;
@@ -99,13 +99,13 @@ let P = Chunk473749.memo(function(e) {
         position: "top",
         asContainer: true,
         delay: f.rq,
-        children: m
+        children: b
       })
     } return s ? (0, r.jsx)("li", {
     children: (0, r.jsx)(x, {
       item: t,
       index: n,
-      wishlistId: l,
+      wishlistId: a,
       onReorder: g,
       children: O
     })
@@ -121,13 +121,13 @@ function I(e) {
     isOwner: o
   } = e, c = p.default.getCurrentUser(), {
     defaultWishlistId: f
-  } = (0, l.cj)([b.Z], () => ({
-    defaultWishlistId: b.Z.getFirstWishlistId(n.id)
-  })), h = (0, g.c)(t, o), v = (0, m.f)({
+  } = (0, a.cj)([m.Z], () => ({
+    defaultWishlistId: m.Z.getFirstWishlistId(n.id)
+  })), y = (0, g.c)(t, o), h = (0, b.f)({
     location: "UserProfileModalV2WishlistGrid"
   }) && o, {
     isDragging: O
-  } = (0, a.f)(e => ({
+  } = (0, l.f)(e => ({
     isDragging: e.isDragging()
   })), x = i.useCallback((e, n) => {
     if (e === n || null == f || 0 === t.length || e < 0 || e >= t.length || n < 0 || n >= t.length) return;
@@ -135,32 +135,32 @@ function I(e) {
     if (null == r) return;
     let i = t[e],
       {
-        newWishlistData: a,
-        previousSkuId: l,
+        newWishlistData: l,
+        previousSkuId: a,
         nextSkuId: o
       } = (0, d.d)(r, t, e, n);
     s.Z.reorderWishlistItem(f, i.skuId, {
-      previousSkuId: l,
+      previousSkuId: a,
       nextSkuId: o,
-      newWishlistData: a
+      newWishlistData: l
     })
   }, [f, t]);
   if (null == c || null == f) return null;
   let I = (0, r.jsx)("ul", {
-    className: j.grid,
+    className: v.grid,
     children: t.map((e, t) => (0, r.jsx)(P, {
       item: e,
       index: t,
       profileOwner: n,
       isOwner: o,
       wishlistId: f,
-      canReorder: v,
-      tooltipConfig: h[t],
+      canReorder: h,
+      tooltipConfig: y[t],
       isDragging: O,
       onReorder: x
     }, e.skuId))
   });
-  return v ? (0, r.jsx)(y.d, {
+  return h ? (0, r.jsx)(j.d, {
     emptyListFallbackRef: null,
     children: I
   }) : I

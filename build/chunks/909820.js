@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 909820, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B2: () => o,
@@ -6,7 +6,7 @@ require.d(exports, {
   ZP: () => s
 });
 let {
-  Layer: i,
-  LayerContainer: r,
+  Layer: r,
+  LayerContainer: i,
   LayerProvider: l
-} = (0, require("./481060.js").Xvx)("ChannelCallChat"), a = r, o = l, s = i
+} = (0, require("./481060.js").Xvx)("ChannelCallChat"), a = i, o = l, s = r

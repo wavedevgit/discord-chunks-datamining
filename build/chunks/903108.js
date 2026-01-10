@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 903108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -16,12 +16,12 @@ var Chunk442837 = require("./442837.js"),
 function p(e) {
   var t;
   let n = (0, r.e7)([i.Z], () => i.Z.getStageVideoLimitBoostUpsellDismissed(e.id), [e.id]),
-    p = (0, s.Io)(e.id),
-    h = (0, s.Rk)(e.id, o.pV.AUDIENCE),
-    f = (0, d.PK)(e.id),
+    p = (0, o.Io)(e.id),
+    f = (0, o.Rk)(e.id, s.pV.AUDIENCE),
+    h = (0, u.PK)(e.id),
     g = (0, r.e7)([l.Z], () => l.Z.getGuild(e.guild_id), [e.guild_id]),
     m = (0, r.e7)([a.Z], () => a.Z.can(c.yP, e), [e]),
     b = null != (t = null == g ? true : g.maxStageVideoChannelUsers) ? t : 0,
-    y = !(null != g && g.features.has(u.GuildFeatures.COMMUNITY)) && b > u.RcX;
-  return f && !n && m && !y && p + h >= b
+    y = !(null != g && g.features.has(d.GuildFeatures.COMMUNITY)) && b > d.RcX;
+  return h && !n && m && !y && p + f >= b
 }

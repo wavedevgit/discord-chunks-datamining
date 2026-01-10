@@ -73,8 +73,8 @@ function v(e) {
     n(e), g(e)
   }
   let O = t === f.p6O,
-    C = O ? u : t,
-    y = (0, r.jsx)(d.dz2, {
+    y = O ? u : t,
+    C = (0, r.jsx)(d.dz2, {
       size: "custom",
       width: 32,
       height: 24,
@@ -134,7 +134,7 @@ function v(e) {
           style: {
             backgroundColor: f.Pbq
           },
-          children: O ? y : null
+          children: O ? C : null
         }), (0, r.jsx)(d.Text, {
           className: b.swatchDescription,
           color: "text-default",
@@ -153,12 +153,12 @@ function v(e) {
       }, _), {
         children: [(0, r.jsx)("div", {
           className: a()(b.customSwatch, {
-            [b.defaultSwatch]: C === f.p6O
+            [b.defaultSwatch]: y === f.p6O
           }),
           style: {
-            "--custom-color": (0, s.Rf)(C)
+            "--custom-color": (0, s.Rf)(y)
           },
-          children: O ? null : y
+          children: O ? null : C
         }), (0, r.jsx)(d.Text, {
           className: b.swatchDescription,
           color: "text-default",
@@ -182,7 +182,7 @@ function v(e) {
             className: b.dropperIcon,
             width: 14,
             height: 14,
-            color: j(C)
+            color: j(y)
           })
         }))
       })]

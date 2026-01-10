@@ -1,5 +1,6 @@
-/** Chunk was on 40184 **/
-/** chunk id: 55361, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 55361, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   icon: "dbd2162099fe5387-icon",
   writingMessagesTitle: "dbd2162099fe5387-writingMessagesTitle",

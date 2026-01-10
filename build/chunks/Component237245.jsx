@@ -83,7 +83,7 @@ function I(e) {
         throwErr: true
       })
     } catch (e) {
-      throw "object" == typeof e && "message" in e ? R(e.message) : R(y.intl.formatToPlainString(y.t.aTVNes, {
+      throw "object" == typeof e && "message" in e ? R(e.message) : R(C.intl.formatToPlainString(C.t.aTVNes, {
         statusPageURL: O.yXt.STATUS
       })), e
     }
@@ -96,7 +96,7 @@ function I(e) {
   }, [T]), U = i.useCallback(async (e, t, n) => {
     let r = t.length > 0 ? [{
       field_type: u.QJ.TERMS,
-      label: y.intl.string(y.t["9suSIA"]),
+      label: C.intl.string(C.t["9suSIA"]),
       values: t,
       required: true
     }] : [];
@@ -169,9 +169,9 @@ function I(e) {
         requireTerms: e,
         termRules: t = []
       } = l;
-      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void R(y.intl.string(y.t.TCHkcd))
+      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void R(C.intl.string(C.t.TCHkcd))
     }
-    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, g._C)(e)))) return void R(y.intl.string(y.t.HGVrI3));
+    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, g._C)(e)))) return void R(C.intl.string(C.t.HGVrI3));
     (e => {
       if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, s.ZDy)(async () => {
         let {
@@ -196,10 +196,10 @@ function I(e) {
       });
       e()
     })(() => B(e)))
-  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, W = null != I.description && S.primaryCategoryId !== C.o3 && S.keywords.length > 0;
+  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, W = null != I.description && S.primaryCategoryId !== y.o3 && S.keywords.length > 0;
   return (0, r.jsx)(a.Z, {
-    message: H ? y.intl.string(y.t.V2G2Yr) : true,
-    onSaveText: H ? y.intl.string(y.t["qjtt/p"]) : true,
+    message: H ? C.intl.string(C.t.V2G2Yr) : true,
+    onSaveText: H ? C.intl.string(C.t["qjtt/p"]) : true,
     submitting: P,
     errorMessage: Z,
     onReset: L,
@@ -235,7 +235,7 @@ function S() {
     }
   });
   return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === v.U.INELIGIBLE ? (0, r.jsx)(a.Z, {
-    message: y.intl.string(y.t.TEXwRt),
+    message: C.intl.string(C.t.TEXwRt),
     onReset: () => b.Z.init(n.id, O.pNK.ACCESS)
   }) : (0, r.jsx)(I, {
     pendingState: e,

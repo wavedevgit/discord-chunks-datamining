@@ -2,15 +2,15 @@
 /** chunk id: 825409, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => p,
-  q: () => c
+  m: () => p
 }), require("./388685.js"), require("./642613.js"), require("./35282.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk400053 = require("./400053.js"),
   a = require.n(Chunk400053),
+  Chunk788756 = require("./788756.js"),
   Chunk142494 = require("./142494.js");
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,22 +19,17 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 require.g.IntlMessageFormat = a(), require("./770801.js"), require("./177486.js"), require("./144062.js"), require("./750854.js"), require("./198823.js"), require("./551576.js"), require("./682422.js"), require("./760388.js"), require("./725589.js"), require("./338770.js"), require("./99783.js"), require("./740635.js"), require("./523332.js"), require("./307163.js"), require("./636681.js"), require("./209012.js"), require("./651811.js"), require("./740191.js"), require("./407837.js"), require("./372097.js"), require("./894996.js"), require("./829028.js"), require("./750879.js"), require("./952874.js"), require("./185851.js"), require("./962066.js"), require("./519708.js"), require("./180583.js"), delete require.g.IntlMessageFormat, "undefined" == typeof Intl && require("./211604.js");
-let l = "en-US";
-
-function c() {
-  let e;
-  return null != (e = (Array.isArray(navigator.languages) ? navigator.languages[0] : null) || navigator.language || navigator.browserLanguage || navigator.userLanguage) ? e : ""
-}
+let c = "en-US";
 class u {
   getMessages() {
     return this._parsedMessages
   }
   constructor(e) {
-    s(this, "_context", {
+    l(this, "_context", {
       messages: {},
       defaultMessages: {},
-      locale: l
-    }), s(this, "_parsedMessages", {}), s(this, "_getParsedMessages", true), this._getParsedMessages = e
+      locale: c
+    }), l(this, "_parsedMessages", {}), l(this, "_getParsedMessages", true), this._getParsedMessages = e
   }
 }
 class d extends u {
@@ -43,7 +38,7 @@ class d extends u {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, s(this, "_refresh", function(e) {
+    super(...e), t = this, l(this, "_refresh", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
       return Object.keys(e.defaultMessages).forEach(r => {
         Object.defineProperty(n, r, {
@@ -62,7 +57,7 @@ class f extends u {
   }
   constructor(e) {
     var t;
-    super(e), t = this, s(this, "_createProxy", function() {
+    super(e), t = this, l(this, "_createProxy", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : t._context;
       return new Proxy({}, {
         get: (n, r) => n[r] || (n[r] = t._getParsedMessages(e, r, t._createProxy))
@@ -85,7 +80,7 @@ class p extends Chunk836560.EventEmitter {
     this._chosenLocale = e, this.loadPromise = this._loadMessagesForLocale(e), this.emit("locale", this._chosenLocale, t)
   }
   setUpdateRules(e) {
-    (0, o.yR)(e)
+    (0, s.yR)(e)
   }
   getLanguages() {
     return this._languages
@@ -124,7 +119,7 @@ class p extends Chunk836560.EventEmitter {
   }
   getDefaultLocale() {
     var e, t, n;
-    let r = null != (e = c()) ? e : l,
+    let r = null != (e = (0, o.q)()) ? e : c,
       i = this._languages.filter(e => {
         let {
           enabled: t
@@ -138,14 +133,14 @@ class p extends Chunk836560.EventEmitter {
       });
     if (i.includes(r)) return r;
     let a = r.split("-");
-    return i.includes(a[0]) ? a[0] : "zh" === a[0] && a.length > 1 && "Hant" === a[1] ? null != (t = i.find(e => "zh-TW" === e)) ? t : l : null != (n = i.find(e => e.split("-")[0] === a[0])) ? n : l
+    return i.includes(a[0]) ? a[0] : "zh" === a[0] && a.length > 1 && "Hant" === a[1] ? null != (t = i.find(e => "zh-TW" === e)) ? t : c : null != (n = i.find(e => e.split("-")[0] === a[0])) ? n : c
   }
   _loadMessagesForLocale(e) {
     let t = this._fetchMessages(e);
     return t instanceof Promise ? t.then(t => this._applyMessagesForLocale(t, e)) : (this._applyMessagesForLocale(t, e), Promise.resolve())
   }
   _applyMessagesForLocale(e, t) {
-    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : this._findMessages(l);
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : this._findMessages(c);
     this._requestedLocale === t && (this._provider.refresh({
       messages: e,
       defaultMessages: n,
@@ -158,9 +153,9 @@ class p extends Chunk836560.EventEmitter {
     return t
   }
   _fetchMessages(e) {
-    let t = e === l ? () => {
-      throw Error("Error Loading ".concat(l))
-    } : () => (console.warn("Unsupported Locale", e), false === e.indexOf("-")) ? this._fetchMessages(l) : this._fetchMessages(e.split("-")[0]);
+    let t = e === c ? () => {
+      throw Error("Error Loading ".concat(c))
+    } : () => (console.warn("Unsupported Locale", e), false === e.indexOf("-")) ? this._fetchMessages(c) : this._fetchMessages(e.split("-")[0]);
     try {
       let n = this._getMessages(e);
       return n instanceof Promise ? n.catch(t) : n
@@ -173,24 +168,24 @@ class p extends Chunk836560.EventEmitter {
     getMessages: t,
     getLanguages: r
   }) {
-    super(), s(this, "Messages", true), s(this, "loadPromise", Promise.resolve()), s(this, "initialLanguageLoad", true), s(this, "resolveLanguageLoaded", () => {}), s(this, "_languages", []), s(this, "_provider", true), s(this, "_chosenLocale", ""), s(this, "_requestedLocale", true), s(this, "_getMessages", true), s(this, "_getParsedMessages", (e, t, n) => {
+    super(), l(this, "Messages", true), l(this, "loadPromise", Promise.resolve()), l(this, "initialLanguageLoad", true), l(this, "resolveLanguageLoaded", () => {}), l(this, "_languages", []), l(this, "_provider", true), l(this, "_chosenLocale", ""), l(this, "_requestedLocale", true), l(this, "_getMessages", true), l(this, "_getParsedMessages", (e, t, n) => {
       let {
         messages: r,
         defaultMessages: i,
         locale: a
-      } = e, s = r[t] || i[t];
-      if ("object" == typeof s) return n({
-        messages: s,
+      } = e, o = r[t] || i[t];
+      if ("object" == typeof o) return n({
+        messages: o,
         defaultMessages: i[t],
         locale: a
       });
       try {
-        return (0, o.FC)(s, a)
+        return (0, s.FC)(o, a)
       } catch (e) {
-        if (console.warn("Failed parsing intl key '".concat(String(t), "' in locale '").concat(a, "' defaulting to English"), e), "string" == typeof(s = i[t])) return (0, o.FC)(s, a)
+        if (console.warn("Failed parsing intl key '".concat(String(t), "' in locale '").concat(a, "' defaulting to English"), e), "string" == typeof(o = i[t])) return (0, s.FC)(o, a)
       }
       return ""
-    }), s(this, "_handleNewListener", e => {
+    }), l(this, "_handleNewListener", e => {
       "locale" === e && this.emit(e, this._chosenLocale)
     }), this.initialLanguageLoad = new Promise((e, t) => {
       this.resolveLanguageLoaded = e

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 86863, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => f
@@ -19,36 +19,36 @@ let f = e => {
     user: n,
     application: f,
     oauth2Token: h
-  } = e, m = (0, r.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities());
+  } = e, g = (0, i.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities());
   if (!n.bot || null == f) return null;
 
-  function g() {
+  function m() {
     o.Z.delete(h.id);
-    let e = m.get(f.id);
+    let e = g.get(f.id);
     null != e && c.Z.leaveActivity({
       location: e.location,
       applicationId: f.id
     })
   }
-  return (0, i.jsx)(a.Button, {
+  return (0, r.jsx)(a.Button, {
     variant: "secondary",
     size: "sm",
     text: p.intl.string(p.t["5S3sQF"]),
     onClick: () => {
-      (0, a.h7j)(e => (0, i.jsx)(l.u_l, function(e) {
+      (0, a.h7j)(e => (0, r.jsx)(l.u_l, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
@@ -65,7 +65,7 @@ let f = e => {
           text: p.intl.string(p.t.xUqheM),
           variant: "critical-primary",
           onClick: () => {
-            g(), e.onClose()
+            m(), e.onClose()
           }
         }]
       }, e))), u.default.track(d.rMx.APP_MANAGE_CTA_CLICKED, {

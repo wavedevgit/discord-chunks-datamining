@@ -1,30 +1,30 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 260979, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk965288 = require("./965288.jsx"),
   Chunk123739 = require("./123739.js");
-let s = Chunk473749.memo(function(e) {
+let o = Chunk473749.memo(function(e) {
   let {
     channel: t,
     participants: n,
     maxTiles: i
   } = e;
   if (0 === n.length) return null;
-  let s = [];
+  let o = [];
   for (let e = 0; e < i; e++)
     if (e < n.length) {
       let i = n[e];
-      s.push((0, r.jsx)(l.Z, {
+      o.push((0, r.jsx)(l.Z, {
         channel: t,
         participant: i
       }, i.id))
-    } else s.push((0, r.jsx)(l.y, {}, e));
+    } else o.push((0, r.jsx)(l.y, {}, e));
   return (0, r.jsx)("div", {
     className: a.participants,
-    children: s
+    children: o
   })
 })

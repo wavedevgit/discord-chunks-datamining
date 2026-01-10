@@ -35,12 +35,12 @@ function x(e) {
     onMove: x,
     disabled: j = false
   } = e, v = i.useRef(null), O = i.useRef(null), {
-    drag: C,
-    dragPreview: y,
+    drag: y,
+    dragPreview: C,
     drop: N,
     isDragging: E
   } = (0, b.Z)(v, d, u, x);
-  return C(O), y(N(v)), (0, r.jsxs)("div", {
+  return y(O), C(N(v)), (0, r.jsxs)("div", {
     ref: v,
     className: a()(h.card, {
       [h.cardDragging]: E,

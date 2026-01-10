@@ -25,7 +25,7 @@ function p() {
         autoTrackExposure: false
       }
     }),
-    [t, n] = (0, l.cv)(e ? [r.z.OVERLAY_KEYBIND_NOTIFICATION] : []);
+    [t, n] = (0, a.cv)(e ? [r.z.OVERLAY_KEYBIND_NOTIFICATION] : []);
   return {
     showKeybindIndicators: null != t && e,
     dismissKeybindNotification: n
@@ -38,28 +38,28 @@ function g(e) {
   } = e, {
     trackView: n,
     trackClick: r
-  } = (0, o.R)(d.n0.KeybindIndicatorsNotification, {
+  } = (0, l.R)(d.n0.KeybindIndicatorsNotification, {
     notif_type: d.n0.KeybindIndicatorsNotification
   });
   return {
     icon: null,
     body: (0, i.jsxs)("div", {
-      className: h.notificationBody,
+      className: f.notificationBody,
       children: [(0, i.jsx)("div", {
-        className: h.iconContainer,
-        children: (0, i.jsx)(a.S6n, {
+        className: f.iconContainer,
+        children: (0, i.jsx)(s.S6n, {
           size: "custom",
           color: "currentColor",
           height: 28,
           width: 28
         })
-      }), (0, i.jsx)(a.Text, {
+      }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: f.intl.string(f.t.EFRNtK)
+        children: h.intl.string(h.t.EFRNtK)
       })]
     }),
     onDismissClick: (e, n) => {
-      r("dismiss"), t(u.L.DISMISS), s.Z.updateNotificationStatus(n)
+      r("dismiss"), t(u.L.DISMISS), o.Z.updateNotificationStatus(n)
     },
     onNotificationShow: () => {
       t(u.L.AUTO_DISMISS), n()

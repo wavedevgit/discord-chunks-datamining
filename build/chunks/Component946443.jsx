@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  QP: () => N,
+  QP: () => Z,
   ZP: () => _,
   h6: () => P
 }), require("./388685.js");
@@ -30,19 +30,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk97916 = require("./97916.js");
 
 function _(e) {
-  var t, n, l, o, O, _, P;
+  var t, n, l, o, v, _, P;
   let {
-    onJump: N,
-    showTutorial: Z,
-    setSeenTutorial: w,
-    closePopout: T
-  } = e, A = i.useRef(null), [R, D] = (0, C.ZP)(A), {
+    onJump: Z,
+    showTutorial: N,
+    setSeenTutorial: T,
+    closePopout: A
+  } = e, w = i.useRef(null), [R, D] = (0, x.ZP)(w), {
     loadState: M,
-    channels: L
+    channels: k
   } = R, {
-    maybeLoadMore: k
-  } = D, G = (0, u.e7)([p.Z], () => p.Z.messageGroupSpacing);
-  t = A, n = R, l = D, i.useLayoutEffect(() => {
+    maybeLoadMore: L
+  } = D, U = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
+  t = w, n = R, l = D, i.useLayoutEffect(() => {
     var e;
     let {
       scrollToChannelIndex: r
@@ -63,15 +63,15 @@ function _(e) {
     (o.offsetTop < s || o.offsetTop > s + c) && i.scrollTo({
       to: o.offsetTop
     })
-  }), o = R, O = D, i.useEffect(() => {
+  }), o = R, v = D, i.useEffect(() => {
     let e = () => {
       let e = o.channels.find(e => !e.collapsed);
-      null != e && O.markChannelRead(e)
+      null != e && v.markChannelRead(e)
     };
-    return m.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      m.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return b.S.subscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      b.S.unsubscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [O, o.channels]), _ = D, i.useEffect(() => {
+  }, [v, o.channels]), _ = D, i.useEffect(() => {
     let e = e => {
       ((0, y.isMac)() || (0, y.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && _.undoMarkChannelRead()
     };
@@ -79,24 +79,24 @@ function _(e) {
       document.removeEventListener("keydown", e)
     }
   }, [_]), i.useEffect(() => {
-    b.default.track(x.rMx.OPEN_POPOUT, {
+    m.default.track(C.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (f.Z.subscribe("CONNECTION_OPEN", T), () => {
-    f.Z.unsubscribe("CONNECTION_OPEN", T)
-  }), [T]), (0, h.ZP)(() => (m.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
-    m.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
+  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", A), () => {
+    p.Z.unsubscribe("CONNECTION_OPEN", A)
+  }), [A]), (0, f.ZP)(() => (b.S.subscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+    b.S.unsubscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
-  let U = (0, g.Z)("unreads", A);
-  if (0 === L.length) {
-    return (0, r.jsx)(v.Z, {
+  let G = (0, g.Z)("unreads", w);
+  if (0 === k.length) {
+    return (0, r.jsx)(O.Z, {
       Icon: d.xx7,
       header: E.intl.string(E.t["6XMM+D"]),
       tip: (null == (P = s().os) ? true : P.family) === "OS X" ? E.intl.string(E.t.w9uDOW) : E.intl.string(E.t.BiUJC6)
     })
   }
   return (0, r.jsx)(c.bG, {
-    navigator: U,
+    navigator: G,
     children: (0, r.jsx)(c.SJ, {
       children: e => {
         var t, n, {
@@ -137,14 +137,14 @@ function _(e) {
         }({
           ref: e => {
             var t;
-            A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+            w.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: M === C.jd.Done ? true : k,
-          className: a()(S.scroller, "group-spacing-".concat(G)),
-          children: [Z ? (0, r.jsx)(I, {
-            setSeenTutorial: w
-          }) : null, (0, j.Z)(L, D, N), M === C.jd.Done ? null : (0, r.jsx)(d.$jN, {
+          onScroll: M === x.jd.Done ? true : L,
+          className: a()(S.scroller, "group-spacing-".concat(U)),
+          children: [N ? (0, r.jsx)(I, {
+            setSeenTutorial: T
+          }) : null, (0, j.Z)(k, D, Z), M === x.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: S.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -198,13 +198,13 @@ function I(e) {
 }
 
 function P() {
-  return (0, r.jsx)(v.Z, {
+  return (0, r.jsx)(O.Z, {
     Icon: d.xx7,
     disableStars: true,
     header: E.intl.string(E.t["KG/ynf"]),
     tip: E.intl.string(E.t.cvcKzX)
   })
 }
-let N = () => (0, r.jsx)(O.Z, {
-  onClick: () => m.S.dispatch(x.CkL.INBOX_MARK_ALL_UNREADS_READ)
+let Z = () => (0, r.jsx)(v.Z, {
+  onClick: () => b.S.dispatch(C.CkL.INBOX_MARK_ALL_UNREADS_READ)
 })

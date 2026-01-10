@@ -116,8 +116,9 @@ let m = (e, t) => {
     let t = (0, c.Z)({
         location: "PremiumGroupPurchase"
       }),
-      n = (0, r.e7)([s.Z], () => s.Z.getPremiumSubscription());
-    return !!t && (null == n || u.No.has(null != (e = n.premiumPlanIdFromItems) ? e : "") && !n.isPurchasedExternally)
+      n = (0, r.e7)([s.Z], () => s.Z.getPremiumSubscription()),
+      i = (0, r.e7)([o.default], () => o.default.getCurrentUser());
+    return (null == i || !i.isPremiumWithFractionalPremiumOnly()) && !!t && (null == n || u.No.has(null != (e = n.premiumPlanIdFromItems) ? e : "") && !n.isPurchasedExternally)
   },
   E = () => {
     let e = (0, c.Z)({

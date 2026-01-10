@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 678639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,7 +32,7 @@ function b(e) {
       t.removeChangeListener(e)
     }
   }, [t, n]), (0, a.jsx)(o.zJl, {
-    className: h.inspectorContainer,
+    className: f.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
       data: i
     })
@@ -57,7 +57,7 @@ let g = [{
         store: t
       } = e;
       return null == t.__getLocalVars ? (0, a.jsxs)("div", {
-        className: h.inspectorContainer,
+        className: f.inspectorContainer,
         children: ["Store is missing ", (0, a.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
@@ -92,11 +92,11 @@ function j(e) {
     tabs: v
   }, []);
   return (0, a.jsxs)(u.Z, {
-    className: h.subPanel,
+    className: f.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
-      className: l()(f.headerBar, h.subPanelHeaderBar),
+      className: l()(h.headerBar, f.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
         icon: o.lO_,
         tooltip: t.getName()
@@ -109,7 +109,7 @@ function j(e) {
   })
 }
 
-function C() {
+function y() {
   let e = r.useRef(null),
     [t, n] = r.useState(""),
     i = s.yh.getAll(),
@@ -126,9 +126,9 @@ function C() {
     p = i.find(e => e._dispatchToken === d);
   return (0, a.jsxs)("div", {
     ref: e,
-    className: l()(f.panel, h.panel),
+    className: l()(h.panel, f.panel),
     children: [(0, a.jsx)("div", {
-      className: h.toolbar,
+      className: f.toolbar,
       children: (0, a.jsx)(o.E1j, {
         size: "sm",
         query: t,

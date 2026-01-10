@@ -1,7 +1,7 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 474376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => C
+  g: () => y
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -23,17 +23,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk608125 = require("./608125.js");
 
-function C(e) {
+function y(e) {
   let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
     n = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    C = (0, r.e7)([o.Z], () => (0, l.wj)(o.Z.theme)),
+    y = (0, r.e7)([o.Z], () => (0, l.wj)(o.Z.theme)),
     {
-      multiAccountUsers: y
+      multiAccountUsers: C
     } = (0, x.L)(),
-    _ = y.map(r => {
+    _ = C.map(r => {
       let l = new c.Z(r),
         o = l.id === (null == t ? true : t.id),
-        d = r.tokenStatus === h.q.INVALID,
+        d = r.tokenStatus === f.q.INVALID,
         u = n ? null : "#".concat(l.discriminator);
       return (0, a.jsx)(s.sNh, {
         id: l.id,
@@ -65,11 +65,11 @@ function C(e) {
             }), o && (0, a.jsx)(s.owK, {
               size: "sm",
               color: t ? i.Z.unsafe_rawColors.WHITE.css : i.Z.unsafe_rawColors.BRAND_500.css,
-              secondaryColor: t && C || t && !C ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE.css,
+              secondaryColor: t && y || t && !y ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE.css,
               className: j.activeIcon
             }), d && (0, a.jsx)(s.Mgn, {
               color: i.Z.unsafe_rawColors.RED_400.css,
-              secondaryColor: t && C || t && !C ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE.css,
+              secondaryColor: t && y || t && !y ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE.css,
               size: "xs",
               className: j.activeIcon
             })]
@@ -83,7 +83,7 @@ function C(e) {
               location: {
                 section: g.jXE.USER_PROFILE
               }
-            }), f.yD(n))
+            }), h.yD(n))
           }
         }
       }, l.id)

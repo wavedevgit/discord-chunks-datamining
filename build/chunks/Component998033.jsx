@@ -27,11 +27,11 @@ function y(e, t, n, y) {
     icon: O,
     title: E,
     body: x
-  } = (0, a.Xi)(e, t, n), {
+  } = (0, s.Xi)(e, t, n), {
     trackView: S,
-    trackClick: _
-  } = (0, p.R)(b.n0.TextChat, {
-    notif_type: b.n0.TextChat,
+    trackClick: Z
+  } = (0, p.R)(m.n0.TextChat, {
+    notif_type: m.n0.TextChat,
     notif_user_id: null == (v = t.author) ? true : v.id,
     message_id: t.id,
     message_type: t.type,
@@ -47,20 +47,20 @@ function y(e, t, n, y) {
       style: {
         textAlign: "center"
       },
-      children: m.intl.string(m.t["+MJm3w"])
+      children: b.intl.string(b.t["+MJm3w"])
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      y && (0, l.GN)(c.Ay, c.yk), S()
+      y && (0, a.GN)(c.Ay, c.yk), S()
     },
     onNotificationClick: () => {
-      if (s.default.isOverlayOOPEnabledForPid((0, h.getPID)())) {
-        let n = (0, h.getPID)();
-        d.default.isInstanceLocked() ? (_("unlock"), r.Z.setInputLocked(false, n)) : (_("jump"), (0, o.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && f.ZP.focus())
-      } else(0, o.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), _("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+      if (o.default.isOverlayOOPEnabledForPid((0, f.getPID)())) {
+        let n = (0, f.getPID)();
+        d.default.isInstanceLocked() ? (Z("unlock"), r.Z.setInputLocked(false, n)) : (Z("jump"), (0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
+      } else(0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), Z("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      _("dismiss")
+      Z("dismiss")
     }
   }
 }

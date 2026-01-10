@@ -1,5 +1,6 @@
-/** Chunk was on 40184 **/
-/** chunk id: 970167, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 970167, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "ee658d2340aa68e2-container",
   personAvatar: "ee658d2340aa68e2-personAvatar",

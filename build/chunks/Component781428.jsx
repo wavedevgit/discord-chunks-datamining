@@ -310,8 +310,11 @@ class et extends(r = Chunk473749.PureComponent) {
         disableAutofocusOnDefaultForm: u
       } = this.props,
       d = !this.hasError("email") && this.hasError("password");
-    return n = null != r ? (0, i.jsx)(V.Z, {
-      invite: r
+    return n = null != r ? (0, i.jsx)("div", {
+      className: J.marginBottom24,
+      children: (0, i.jsx)(V.Z, {
+        invite: r
+      })
     }) : null != s ? (0, i.jsx)(F.Z, {
       giftCode: s
     }) : (0, i.jsxs)("div", {

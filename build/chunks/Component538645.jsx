@@ -1,4 +1,4 @@
-/** Chunk was on 6043 **/
+/** Chunk was on 84249 **/
 /** chunk id: 538645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -26,7 +26,7 @@ let g = "Make sure you're only uploading text files!",
       onClick: l
     } = e, {
       deleteConfig: s
-    } = (0, h.n6)();
+    } = (0, f.n6)();
     return (0, a.jsxs)(c.P3F, {
       className: b.previewCard,
       onClick: () => {
@@ -58,15 +58,15 @@ function j() {
     profileEffects: e,
     upsertConfig: t,
     clearAll: n
-  } = (0, h.n6)(), [i, j] = r.useState(), C = r.useRef(null), y = (0, o.Wu)([f.Z], () => f.Z.getAllProfileEffects());
+  } = (0, f.n6)(), [i, j] = r.useState(), y = r.useRef(null), C = (0, o.Wu)([h.Z], () => h.Z.getAllProfileEffects());
   (0, m.Z)();
-  let [_, S] = r.useState(""), E = r.useMemo(() => "" === _ ? y : y.filter(e => {
+  let [_, S] = r.useState(""), E = r.useMemo(() => "" === _ ? C : C.filter(e => {
     var t, n, a, r;
     let i = _.toLowerCase(),
       l = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
       s = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
     return l.includes(i) || s.includes(i)
-  }), [_, y]), T = r.useCallback((e, n) => {
+  }), [_, C]), T = r.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, p.Eo)(g);
     let [a, r] = n.split(",");
     if (!a.includes("text/plain")) return (0, p.Eo)(g);
@@ -117,7 +117,7 @@ function j() {
             color: "always-white",
             children: "Import Shared Config"
           }), (0, a.jsx)(u.Z, {
-            ref: C,
+            ref: y,
             onChange: O,
             multiple: false
           })]

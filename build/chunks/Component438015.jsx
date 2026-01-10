@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk593481 = require("./593481.jsx"),
   Chunk981631 = require("./981631.js");
 
-function l(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +23,20 @@ class c extends Chunk473749.Component {
     let e, t, n, i, {
       props: {
         position: r,
-        zIndex: a
+        zIndex: s
       }
     } = this;
     switch (r) {
-      case o._vf.TOP_LEFT:
-      case o._vf.BOTTOM_LEFT:
+      case l._vf.TOP_LEFT:
+      case l._vf.BOTTOM_LEFT:
         e = 0;
         break;
       default:
         t = 0
     }
     switch (r) {
-      case o._vf.BOTTOM_LEFT:
-      case o._vf.BOTTOM_RIGHT:
+      case l._vf.BOTTOM_LEFT:
+      case l._vf.BOTTOM_RIGHT:
         n = 0;
         break;
       default:
@@ -47,7 +47,7 @@ class c extends Chunk473749.Component {
       right: t,
       bottom: n,
       top: i,
-      zIndex: a
+      zIndex: s
     }
   }
   render() {
@@ -58,44 +58,44 @@ class c extends Chunk473749.Component {
         notification: {
           props: {
             renderFooter: r,
-            onNotificationShow: a,
-            onDismissClick: o,
+            onNotificationShow: s,
+            onDismissClick: l,
             onNotificationClick: c,
             onConfirmClick: d,
             onCancelClick: u
           }
         }
       }
-    } = this, f = function(e, t) {
+    } = this, h = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          a = Object.keys(e);
-        for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          s = Object.keys(e);
+        for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(this.props.notification.props, ["renderFooter", "onNotificationShow", "onDismissClick", "onNotificationClick", "onConfirmClick", "onCancelClick"]);
-    return (0, i.jsx)(s.ZP, (e = function(e) {
+    return (0, i.jsx)(o.ZP, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          l(e, t, n[t])
+          a(e, t, n[t])
         })
       }
       return e
-    }({}, f), t = t = {
+    }({}, h), t = t = {
       locked: n,
       onNotificationShow: this.handleNotificationShow,
-      onDismissClick: null != o ? this.handleDismissClick : true,
+      onDismissClick: null != l ? this.handleDismissClick : true,
       onNotificationClick: null != c ? this.handleNotificationClick : null,
       onConfirmClick: null != d ? this.handleConfirmClick : null,
       onCancelClick: null != u ? this.handleCancelClick : null,
@@ -113,7 +113,7 @@ class c extends Chunk473749.Component {
     }), e))
   }
   constructor(...e) {
-    super(...e), l(this, "handleNotificationShow", () => {
+    super(...e), a(this, "handleNotificationShow", () => {
       let {
         id: e,
         props: {
@@ -121,15 +121,15 @@ class c extends Chunk473749.Component {
         }
       } = this.props.notification;
       t(e)
-    }), l(this, "handleDismissClick", e => {
+    }), a(this, "handleDismissClick", e => {
       let {
         id: t,
         props: {
           onDismissClick: n
         }
       } = this.props.notification;
-      a.Z.updateNotificationStatus(t), null == n || n(e, t)
-    }), l(this, "handleNotificationClick", e => {
+      s.Z.updateNotificationStatus(t), null == n || n(e, t)
+    }), a(this, "handleNotificationClick", e => {
       let {
         id: t,
         props: {
@@ -137,7 +137,7 @@ class c extends Chunk473749.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), l(this, "handleConfirmClick", e => {
+    }), a(this, "handleConfirmClick", e => {
       let {
         id: t,
         props: {
@@ -145,7 +145,7 @@ class c extends Chunk473749.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), l(this, "handleCancelClick", e => {
+    }), a(this, "handleCancelClick", e => {
       let {
         id: t,
         props: {
@@ -153,7 +153,7 @@ class c extends Chunk473749.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), l(this, "renderFooter", e => {
+    }), a(this, "renderFooter", e => {
       let {
         id: t,
         props: {

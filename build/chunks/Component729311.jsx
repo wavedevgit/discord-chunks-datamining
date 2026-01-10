@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
 function w(e) {
   let {
     guild: t
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), b = (0, l.e7)([m.Z], () => m.Z.hasFetched(t.id)), p = (0, y.Z)(t), h = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = p.filter(e => !h.has(e.id)), [O, C] = i.useState(false);
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), b = (0, l.e7)([m.Z], () => m.Z.hasFetched(t.id)), p = (0, C.Z)(t), h = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = p.filter(e => !h.has(e.id)), [O, y] = i.useState(false);
   return (i.useEffect(() => {
     b || a || (0, f.S)(t.id)
   }, [t.id, b, a]), O || 0 === x.length) ? null : (0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ function w(e) {
         children: _.intl.string(_.t["3Uuql+"])
       }), (0, r.jsxs)(o.P3F, {
         className: T.dismissAll,
-        onClick: () => C(true),
+        onClick: () => y(true),
         children: [(0, r.jsx)(o.dz2, {
           size: "xxs",
           color: "currentColor",
@@ -164,7 +164,7 @@ function w(e) {
 function Z(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([p.ZP], () => p.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([b.Z], () => b.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([C.Z], () => C.Z.advancedMode), g = i.useRef(null), [f, m] = i.useState(false), v = i.useRef(n);
+  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([p.ZP], () => p.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([b.Z], () => b.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([y.Z], () => y.Z.advancedMode), g = i.useRef(null), [f, m] = i.useState(false), v = i.useRef(n);
   return (i.useEffect(() => {
     v.current = n
   }), i.useEffect(() => {
@@ -250,7 +250,7 @@ function Z(e) {
 function R() {
   let e = (0, l.e7)([x.Z], () => x.Z.getProps().guild),
     t = (0, l.e7)([v.Z], () => v.Z.submitting),
-    n = (0, l.e7)([C.Z], () => C.Z.advancedMode);
+    n = (0, l.e7)([y.Z], () => y.Z.advancedMode);
   return null == e ? null : (0, r.jsx)(a.Z, {
     onSave: () => {
       (0, j.DO)(e).then(() => {

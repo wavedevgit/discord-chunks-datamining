@@ -1,14 +1,14 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 457868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => X
+  Z: () => Q
 }), require("./388685.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
   Chunk924826 = require("./924826.js"),
   Chunk873546 = require("./873546.js"),
@@ -65,21 +65,21 @@ function z(e) {
   return e
 }
 let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
-  Y = 44 + Chunk276264.x,
-  q = Chunk473749.memo(function(e) {
+  K = 44 + Chunk276264.x,
+  Y = Chunk473749.memo(function(e) {
     let {
       channel: t,
       sectionId: l,
       userId: a,
-      guildOwnerId: s
-    } = e, o = i.useRef(null), d = (0, p.e7)([R.Z], () => R.Z.isTyping(t.id, a)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, p.e7)([P.Z], () => {
+      guildOwnerId: o
+    } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, a)), f = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, a)), m = (0, p.e7)([Z.Z], () => {
       var e;
-      return (null == h ? true : h.colorRoleId) != null ? null == (e = P.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), O = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, p.e7)([T.Z, N.Z], () => O ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), C = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), I = (0, p.e7)([T.Z, N.Z], () => O ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, p.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, p.e7)([_.Z], () => _.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
-      null != b && (0, f.jW)(e, async () => {
+      return (null == f ? true : f.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, f.colorRoleId)) ? true : e.name : true
+    }, [t.guild_id, f]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), v = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, p.e7)([N.Z, T.Z], () => v ? T.Z.getStatus() : N.Z.getStatus(a, t.guild_id)), C = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(a)), E = (0, p.e7)([N.Z, T.Z], () => v ? T.Z.getActivities() : N.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), k = (0, p.e7)([S.Z], () => S.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === o, H = i.useCallback(e => {
+      null != b && (0, h.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("70675"), n.e("41971")]).then(n.bind(n, 654663));
+        } = await Promise.all([n.e("79695"), n.e("4040"), n.e("70675"), n.e("41971")]).then(n.bind(n, 654663));
         return n => {
           var i, l;
           return (0, r.jsx)(e, (i = z({}, n), l = l = {
@@ -100,40 +100,40 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       })
     }, [b, t]), V = i.useCallback(() => {
       if (null == b) return;
-      let e = "@".concat(k.ZP.getUserTag(b, {
+      let e = "@".concat(L.ZP.getUserTag(b, {
           decoration: "never"
         })),
         n = "<@".concat(b.id, ">");
-      L.S.dispatch(H.CkL.TEXTAREA_FOCUS, {
+      M.S.dispatch(B.CkL.TEXTAREA_FOCUS, {
         channelId: t.id
-      }), L.S.dispatchToLastSubscribed(H.CkL.INSERT_TEXT, {
+      }), M.S.dispatchToLastSubscribed(B.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: n
       }), g.Z.startTyping(t.id)
-    }, [b, t]), Y = i.useCallback(e => {
-      e.stopPropagation(), (0, x.f)({
+    }, [b, t]), K = i.useCallback(e => {
+      e.stopPropagation(), (0, O.f)({
         guildId: t.guild_id,
         location: {
-          section: H.jXE.THREAD_MEMBER_LIST,
-          object: H.qAy.BOOST_GEM_ICON
+          section: B.jXE.THREAD_MEMBER_LIST,
+          object: B.qAy.BOOST_GEM_ICON
         }
       })
-    }, [t.guild_id]), q = (0, v.K)({
+    }, [t.guild_id]), Y = (0, x.K)({
       user: b,
       guildId: t.guild_id
-    }), [K, Q] = i.useState(false);
+    }), [q, X] = i.useState(false);
     if (null == b) return null;
-    let X = null == h ? true : h.premiumSince;
-    return (0, r.jsx)(S.Z, {
-      targetElementRef: o,
+    let Q = null == f ? true : f.premiumSince;
+    return (0, r.jsx)(_.Z, {
+      targetElementRef: s,
       user: b,
       guildId: t.guild_id,
       channelId: t.id,
-      position: u.tq ? "window_center" : "left",
+      position: d.tq ? "window_center" : "left",
       spacing: 16,
       onShiftClick: V,
-      shouldShow: K,
-      onRequestClose: () => Q(false),
+      shouldShow: q,
+      onRequestClose: () => X(false),
       children: e => {
         var {
           onClick: n,
@@ -154,40 +154,40 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           return i
         }(e, ["onClick", "onMouseDown"]);
         return (0, r.jsx)(G.Z, z({
-          ref: o,
-          onContextMenu: B,
+          ref: s,
+          onContextMenu: H,
           shouldAnimateStatus: W,
           user: b,
           currentUser: y,
-          nick: null == h ? true : h.nick,
+          nick: null == f ? true : f.nick,
           status: j,
-          activities: I,
-          colorString: null == h ? true : h.colorString,
-          colorStrings: null == h ? true : h.colorStrings,
+          activities: E,
+          colorString: null == f ? true : f.colorString,
+          colorStrings: null == f ? true : f.colorStrings,
           colorRoleName: m,
-          isTyping: d,
+          isTyping: u,
           channel: t,
           guildId: t.guild_id,
           isMobile: C,
-          selected: K,
-          applicationStream: A,
-          premiumSince: null == X ? null : new Date(X),
-          onClickPremiumGuildIcon: Y,
+          selected: q,
+          applicationStream: R,
+          premiumSince: null == Q ? null : new Date(Q),
+          onClickPremiumGuildIcon: K,
           itemProps: D,
-          lostPermissionTooltipText: M ? true : F.intl.string(F.t["/QcoTz"]),
+          lostPermissionTooltipText: k ? true : F.intl.string(F.t["/QcoTz"]),
           isOwner: U,
-          nameplate: q,
+          nameplate: Y,
           onClick: e => {
-            e.shiftKey ? null == V || V() : Q(e => !e)
+            e.shiftKey ? null == V || V() : X(e => !e)
           },
           onMouseDown: e => {
-            K ? e.stopPropagation() : null == i || i(e)
+            q ? e.stopPropagation() : null == i || i(e)
           }
         }, l))
       }
     })
   }),
-  K = Chunk473749.memo(function(e) {
+  q = Chunk473749.memo(function(e) {
     let {
       id: t,
       label: n,
@@ -198,12 +198,12 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       guildId: l,
       size: 16
     });
-    return t === H.Skl.UNKNOWN ? (0, r.jsx)("div", {
+    return t === B.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: V.membersGroup,
       children: (0, r.jsx)("div", {
         className: V.memberGroupsPlaceholder
       })
-    }) : (0, r.jsxs)(O.Z, {
+    }) : (0, r.jsxs)(v.Z, {
       className: V.membersGroup,
       "aria-label": F.intl.formatToPlainString(F.t.Uaqbke, {
         title: n,
@@ -217,39 +217,39 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       })]
     })
   }),
-  Q = Chunk473749.memo(function(e) {
+  X = Chunk473749.memo(function(e) {
     let {
       channel: t
     } = e;
-    return t.type === H.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
+    return t.type === B.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: B.divider
-      }), (0, r.jsxs)(h.Text, {
+        className: H.divider
+      }), (0, r.jsxs)(f.Text, {
         variant: "text-xs/bold",
         color: "text-default",
-        className: B.private,
-        children: [(0, r.jsx)(h.mBM, {
+        className: H.private,
+        children: [(0, r.jsx)(f.mBM, {
           size: "xxs",
           color: "currentColor"
         }), "\xa0", F.intl.string(F.t.BTLTAs)]
-      }), (0, r.jsx)(h.Text, {
+      }), (0, r.jsx)(f.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        className: B.instructions,
+        className: H.instructions,
         children: F.intl.string(F.t.Hsd8hC)
       })]
     }) : null
   });
 
-function X(e) {
+function Q(e) {
   let {
     channel: t,
     guild: n
   } = e, l = "members-".concat(t.id), {
-    analyticsLocations: s
-  } = (0, y.ZP)(b.Z.MEMBER_LIST), u = (0, I.D)(t.id, n), f = u.filter(e => e.userIds.length > 0).reverse()[0], {
+    analyticsLocations: o
+  } = (0, y.ZP)(b.Z.MEMBER_LIST), d = (0, E.D)(t.id, n), h = d.filter(e => e.userIds.length > 0).reverse()[0], {
     navigator: g,
-    listRef: O
+    listRef: v
   } = function(e, t) {
     let n = (0, p.e7)([m.Z], () => m.Z.keyboardModeEnabled),
       r = i.useRef(null),
@@ -257,12 +257,12 @@ function X(e) {
         let i = r.current;
         if (null == i) return;
         let l = parseInt(n, 10),
-          [a, s] = i.getSectionRowFromIndex(l),
-          o = 0 === a && 0 === s ? t : 0;
+          [a, o] = i.getSectionRowFromIndex(l),
+          s = 0 === a && 0 === o ? t : 0;
         i.scrollToIndex({
           section: a,
-          row: s,
-          padding: o,
+          row: o,
+          padding: s,
           callback: () => {
             requestAnimationFrame(() => {
               var t;
@@ -280,7 +280,7 @@ function X(e) {
           callback: () => requestAnimationFrame(() => e())
         })
       }), []),
-      s = i.useCallback(() => new Promise(e => {
+      o = i.useCallback(() => new Promise(e => {
         let t = r.current;
         if (null == t) return e();
         t.scrollToBottom({
@@ -290,51 +290,51 @@ function X(e) {
         })
       }), []);
     return {
-      navigator: (0, d.ZP)({
+      navigator: (0, u.ZP)({
         id: e,
         setFocus: l,
         isEnabled: n,
         scrollToStart: a,
-        scrollToEnd: s
+        scrollToEnd: o
       }),
       listRef: r
     }
-  }(l, Y), x = 0 === u.length || u.every(e => 0 === e.userIds.length);
+  }(l, K), O = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
-      D.default.track(H.rMx.MEMBER_LIST_VIEWED, {
+      D.default.track(B.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
         channel_type: t.type,
         guild_id: t.guild_id
       })
-    }, [t.guild_id, t.id, t.type]), x) return (0, r.jsx)(J, {
+    }, [t.guild_id, t.id, t.type]), O) return (0, r.jsx)(J, {
     channel: t
   });
-  let j = o().omit(g.containerProps, ["ref"]),
-    v = M.iJ(n);
+  let j = s().omit(g.containerProps, ["ref"]),
+    x = k.iJ(n);
   return (0, r.jsx)(y.Gt, {
-    value: s,
+    value: o,
     children: (0, r.jsx)(c.bG, {
       navigator: g,
-      children: (0, r.jsx)(h.Wdt, {
+      children: (0, r.jsx)(f.Wdt, {
         children: e => (0, r.jsx)("div", {
-          className: a()(V.membersWrap, V.hiddenMembers, B.container),
-          children: (0, r.jsx)(h.aVo, z({
-            ref: O,
+          className: a()(V.membersWrap, V.hiddenMembers, H.container),
+          children: (0, r.jsx)(f.aVo, z({
+            ref: v,
             className: V.members,
             paddingTop: 0,
             sectionHeight: 40,
             renderSection: e => {
               let {
                 section: t
-              } = e, i = u[t];
-              return (0, r.jsx)(K, {
+              } = e, i = d[t];
+              return (0, r.jsx)(q, {
                 id: i.id,
                 label: i.label,
                 count: i.userIds.length,
                 guildId: n.id
               }, i.id)
             },
-            rowHeight: Y,
+            rowHeight: K,
             renderRow: e => {
               let {
                 section: n,
@@ -342,21 +342,21 @@ function X(e) {
               } = e, {
                 userIds: l,
                 id: a
-              } = u[n];
-              return (0, r.jsx)(q, {
+              } = d[n];
+              return (0, r.jsx)(Y, {
                 channel: t,
                 sectionId: a,
                 userId: l[i],
-                guildOwnerId: v
+                guildOwnerId: x
               }, l[i])
             },
-            footerHeight: e => 80 * (u[e] === f && t.type === H.d4z.PRIVATE_THREAD),
-            renderFooter: e => u[e.section] === f ? (0, r.jsx)(Q, {
+            footerHeight: e => 80 * (d[e] === h && t.type === B.d4z.PRIVATE_THREAD),
+            renderFooter: e => d[e.section] === h ? (0, r.jsx)(X, {
               channel: t
             }, "footer") : null,
             innerAriaLabel: F.intl.string(F.t["9Oq93m"]),
             innerTag: "ul",
-            sections: u.map(e => e.userIds.length),
+            sections: d.map(e => e.userIds.length),
             fade: true
           }, j, e), l)
         })
@@ -370,28 +370,28 @@ function J(e) {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(B.emptyState, B.container, V.membersWrap, V.hiddenMembers, V.members),
-    children: [(0, r.jsx)(h.Text, {
-      className: B.emptyStateHeader,
+    className: a()(H.emptyState, H.container, V.membersWrap, V.hiddenMembers, V.members),
+    children: [(0, r.jsx)(f.Text, {
+      className: H.emptyStateHeader,
       variant: "text-xs/bold",
       color: "interactive-text-default",
       children: F.intl.string(F.t["9Oq93m"])
     }), (0, r.jsxs)("div", {
-      className: B.emptyStateIconContainer,
+      className: H.emptyStateIconContainer,
       children: [(0, r.jsx)("div", {
-        className: B.emptyStateIcon,
-        children: (0, r.jsx)(h.BFJ, {
+        className: H.emptyStateIcon,
+        children: (0, r.jsx)(f.BFJ, {
           size: "lg",
           color: "currentColor"
         })
-      }), (0, r.jsx)(A.Z, {
-        className: B.emptyStateStars
+      }), (0, r.jsx)(R.Z, {
+        className: H.emptyStateStars
       })]
-    }), (0, r.jsx)(h.Heading, {
+    }), (0, r.jsx)(f.Heading, {
       variant: "heading-md/semibold",
       children: t.isForumPost() ? F.intl.string(F.t.p0UgNQ) : F.intl.string(F.t["9/n5vz"])
-    }), (0, r.jsx)(h.Text, {
-      className: B.emptyStateSubtext,
+    }), (0, r.jsx)(f.Text, {
+      className: H.emptyStateSubtext,
       variant: "text-sm/normal",
       color: "text-default",
       children: F.intl.string(F.t.emw8UP)

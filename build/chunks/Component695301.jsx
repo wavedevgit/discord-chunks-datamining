@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,29 +17,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk61634 = require("./61634.js"),
   Chunk325257 = require("./325257.jsx"),
   Chunk357863 = require("./357863.js");
-let m = Chunk473749.memo(function(e) {
+let b = Chunk473749.memo(function(e) {
   var t, n;
   let {
-    guildNode: m,
+    guildNode: b,
     lowerBadge: y
-  } = e, O = m.id, v = (0, l.e7)([f.Z], () => f.Z.getGuild(O)), j = (0, o.E)(v), C = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), E = (0, c.Z)(e => e.guildId), S = (0, p.Z)(O), {
+  } = e, v = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(v)), j = (0, o.E)(O), x = (0, l.e7)([f.Z], () => f.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(v)), E = (0, c.Z)(e => e.guildId), S = (0, h.Z)(v), {
     badge: _,
     unread: I,
     isMentionLowImportance: P
   } = (0, l.cj)([d.default], () => ({
-    badge: d.default.getMentionCount(O),
-    isMentionLowImportance: d.default.getIsMentionLowImportance(O),
-    unread: d.default.hasUnread(O)
-  })), N = (0, s.Ij)(v) && 0 === _, Z = i.useMemo(() => null != y ? y : N ? (0, r.jsx)("div", {
-    className: b.pauseBackground,
+    badge: d.default.getMentionCount(v),
+    isMentionLowImportance: d.default.getIsMentionLowImportance(v),
+    unread: d.default.hasUnread(v)
+  })), Z = (0, s.Ij)(O) && 0 === _, N = i.useMemo(() => null != y ? y : Z ? (0, r.jsx)("div", {
+    className: m.pauseBackground,
     children: (0, r.jsx)(a.fpf, {
       size: "custom",
       color: "currentColor",
-      className: b.pause,
+      className: m.pause,
       width: 10,
       height: 10
     })
-  }) : null, [y, N]);
+  }) : null, [y, Z]);
   return (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -58,13 +58,13 @@ let m = Chunk473749.memo(function(e) {
     }
     return e
   }({}, e), n = n = {
-    guild: v,
-    unavailable: x,
-    animatable: C,
-    selected: E === O,
+    guild: O,
+    unavailable: C,
+    animatable: x,
+    selected: E === v,
     badge: _,
     isMentionLowImportance: P,
-    lowerBadge: Z,
+    lowerBadge: N,
     unread: I,
     mediaState: S,
     guildJoinRequestStatus: j

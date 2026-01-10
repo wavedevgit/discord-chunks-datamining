@@ -1,4 +1,4 @@
-/** Chunk was on 15718 **/
+/** Chunk was on 69937 **/
 /** chunk id: 467014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -20,83 +20,83 @@ function A(e) {
     userId: t,
     guildId: n
   } = e, A = (0, i.e7)([s.ZP], () => s.ZP.getGuildSidebarState(n), [n]), {
-    messagesCount: T,
-    linksCount: I,
-    mediaCount: m
-  } = (0, u.P2)(t, n), f = new Intl.NumberFormat(d.intl.currentLocale).format(T), g = new Intl.NumberFormat(d.intl.currentLocale).format(I), N = new Intl.NumberFormat(d.intl.currentLocale).format(m), h = l.useCallback(async e => {
+    messagesCount: f,
+    linksCount: T,
+    mediaCount: g
+  } = (0, c.P2)(t, n), I = new Intl.NumberFormat(E.intl.currentLocale).format(f), m = new Intl.NumberFormat(E.intl.currentLocale).format(T), h = new Intl.NumberFormat(E.intl.currentLocale).format(g), N = l.useCallback(async e => {
     if (null == A) return;
-    let r = (0, u.Ow)(t, e, {
+    let r = (0, c.Ow)(t, e, {
       include_nsfw: true
     });
     await (0, o.r)(n, t, A.baseChannelId, {
-      modViewPanel: E.k.MESSAGE_HISTORY,
+      modViewPanel: d.k.MESSAGE_HISTORY,
       additionalSearchQuery: r
     })
   }, [n, A, t]);
   return (0, r.jsx)(a.gNt, {
-    label: d.intl.string(d.t.vCn2Tn),
-    children: (0, r.jsxs)(c.WM, {
-      children: [(0, r.jsx)(c._2, {
+    label: E.intl.string(E.t.vCn2Tn),
+    children: (0, r.jsxs)(u.WM, {
+      children: [(0, r.jsx)(u._2, {
         icon: (0, r.jsx)(a.kBi, {
           size: "custom",
           color: "currentColor",
-          width: c.Mn,
-          height: c.Mn
+          width: u.Mn,
+          height: u.Mn
         }),
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t.OIgYlQ)
+          children: E.intl.string(E.t.OIgYlQ)
         }),
-        description: T === u.II ? (0, r.jsx)(a.$jN, {
+        description: f === c.II ? (0, r.jsx)(a.$jN, {
           type: a.RAz.SPINNING_CIRCLE,
           className: _.loadingSpinner
         }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",
-          children: f
+          children: I
         }),
-        onNavigate: T > 0 ? () => h(u.mw.MESSAGES) : true
-      }), (0, r.jsx)(c._2, {
+        onNavigate: f > 0 ? () => N(c.mw.MESSAGES) : true
+      }), (0, r.jsx)(u._2, {
         icon: (0, r.jsx)(a.xPt, {
           size: "custom",
-          width: c.Mn,
-          height: c.Mn
+          width: u.Mn,
+          height: u.Mn
         }),
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t.DFSvTt)
+          children: E.intl.string(E.t.DFSvTt)
         }),
-        description: I === u.II ? (0, r.jsx)(a.$jN, {
+        description: T === c.II ? (0, r.jsx)(a.$jN, {
           type: a.RAz.SPINNING_CIRCLE,
           className: _.loadingSpinner
         }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",
-          children: g
+          children: m
         }),
-        onNavigate: I > 0 ? () => h(u.mw.LINKS) : true
-      }), (0, r.jsx)(c._2, {
+        onNavigate: T > 0 ? () => N(c.mw.LINKS) : true
+      }), (0, r.jsx)(u._2, {
         icon: (0, r.jsx)(a.Ka2, {
           size: "custom",
-          width: c.Mn,
-          height: c.Mn
+          width: u.Mn,
+          height: u.Mn
         }),
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t["Aw9+/M"])
+          children: E.intl.string(E.t["Aw9+/M"])
         }),
-        description: m === u.II ? (0, r.jsx)(a.$jN, {
+        description: g === c.II ? (0, r.jsx)(a.$jN, {
           type: a.RAz.SPINNING_CIRCLE,
           className: _.loadingSpinner
         }) : (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",
-          children: N
+          children: h
         }),
-        onNavigate: m > 0 ? () => h(u.mw.MEDIA) : true
+        onNavigate: g > 0 ? () => N(c.mw.MEDIA) : true
       })]
     })
   })

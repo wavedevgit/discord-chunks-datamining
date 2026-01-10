@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 81985 **/
 /** chunk id: 900157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk19055 = require("./19055.js");
 
-function P(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function P(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,47 +62,47 @@ function T(e, t) {
   }), e
 }
 
-function N(e) {
+function T(e) {
   let {
     channelId: t,
     baseChannelId: l,
-    channelViewSource: N = "Split View"
-  } = e, R = (0, s.e7)([x.Z], () => x.Z.getChannel(t)), w = (0, s.e7)([v.Z], () => v.Z.getGuild(null == R ? true : R.getGuildId())), A = (0, f.ZP)(R);
-  var D = R;
-  let L = (0, s.e7)([C.Z], () => null != D && !a().isEmpty(C.Z.getVoiceStatesForChannel(D.id)));
+    channelViewSource: T = "Split View"
+  } = e, A = (0, o.e7)([O.Z], () => O.Z.getChannel(t)), w = (0, o.e7)([x.Z], () => x.Z.getGuild(null == A ? true : A.getGuildId())), R = (0, h.ZP)(A);
+  var D = A;
+  let M = (0, o.e7)([C.Z], () => null != D && !a().isEmpty(C.Z.getVoiceStatesForChannel(D.id)));
   i.useEffect(() => {
-    L && null != D && (o.Z.dispatch({
+    M && null != D && (s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: D.parent_id
-    }), (0, O.ad)(D, {
-      source: _.on.VOICE_AUTO_OPEN
+    }), (0, v.ad)(D, {
+      source: S.on.VOICE_AUTO_OPEN
     }))
-  }, [L, D]);
-  let M = i.useRef(false);
+  }, [M, D]);
+  let k = i.useRef(false);
   if (i.useEffect(() => {
-      if (null == R || M.current) return;
-      M.current = true;
-      let e = (0, p.K)(x.Z.getChannel(R.id), true);
-      (0, u.yw)(S.rMx.CHANNEL_OPENED, T(P({}, e, (0, u.$H)(R.id)), {
-        channel_view: N
-      })), (0, h.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
-        channelId: R.id
+      if (null == A || k.current) return;
+      k.current = true;
+      let e = (0, p.K)(O.Z.getChannel(A.id), true);
+      (0, d.yw)(_.rMx.CHANNEL_OPENED, N(Z({}, e, (0, d.$H)(A.id)), {
+        channel_view: T
+      })), (0, f.a)(_.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+        channelId: A.id
       })
-    }, [R, N]), null == R || null == w) return null;
-  let k = (0, r.jsx)(I.Z, {
-    channel: R,
+    }, [A, T]), null == A || null == w) return null;
+  let L = (0, r.jsx)(E.Z, {
+    channel: A,
     baseChannelId: l
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.Z, {
-      channel: R,
+    children: [(0, r.jsx)(u.Z, {
+      channel: A,
       draftType: j.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
-      toolbar: k,
-      "aria-label": E.intl.string(E.t.Pwe8tN),
+      toolbar: L,
+      "aria-label": I.intl.string(I.t.Pwe8tN),
       children: (0, y.ud)({
-        channel: R,
-        channelName: A,
+        channel: A,
+        channelName: R,
         guild: w,
         inSidebar: true,
         handleContextMenu: function(e) {
@@ -110,19 +110,19 @@ function N(e) {
             let {
               default: e
             } = await n.e("40157").then(n.bind(n, 422200));
-            return t => (0, r.jsx)(e, T(P({}, t), {
-              channel: R
+            return t => (0, r.jsx)(e, N(Z({}, t), {
+              channel: A
             }))
           })
         },
         handleClick: function() {
-          null != R && (0, O.Kh)(R.id)
+          null != A && (0, v.Kh)(A.id)
         }
       })
     }), (0, r.jsx)("div", {
-      className: Z.chat,
+      className: P.chat,
       children: (0, r.jsx)(g.Z, {
-        channel: R,
+        channel: A,
         guild: w,
         chatInputType: m.Ie.SIDEBAR
       }, t)

@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,35 +41,35 @@ function h() {
   }
 }
 
-function m(e, t, n) {
-  let i = document.createRange();
-  i.setStart(t, n), i.collapse(true), e.removeAllRanges(), e.addRange(i)
+function g(e, t, n) {
+  let r = document.createRange();
+  r.setStart(t, n), r.collapse(true), e.removeAllRanges(), e.addRange(r)
 }
-class g extends Chunk473749.PureComponent {
+class m extends Chunk473749.PureComponent {
   render() {
     let {
       className: e,
       textValue: t,
       richValue: n,
-      message: r,
+      message: i,
       channel: l,
       onCancel: a,
       children: o
-    } = this.props, s = (0, i.jsx)("div", {
+    } = this.props, s = (0, r.jsx)("div", {
       className: d.operations,
       children: u.intl.format(u.t.wDsPXs, {
         onCancel: () => a(l.id),
         onSave: this.onClickSave
       })
     });
-    return (0, i.jsxs)("div", {
+    return (0, r.jsxs)("div", {
       className: e,
       ref: this.node,
       onContextMenu: f,
       children: [o({
         textValue: t,
         richValue: n,
-        message: r,
+        message: i,
         channel: l,
         onChange: this.onChange,
         onSubmit: this.onSubmit,
@@ -79,7 +79,7 @@ class g extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "node", r.createRef()), p(this, "onClickSave", () => {
+    super(...e), p(this, "node", i.createRef()), p(this, "onClickSave", () => {
       let {
         textValue: e
       } = this.props;
@@ -88,21 +88,21 @@ class g extends Chunk473749.PureComponent {
       let {
         message: t,
         channel: n,
-        onConfirmDelete: i,
-        onCancel: r,
+        onConfirmDelete: r,
+        onCancel: i,
         saveMessage: c,
         validateEdit: u
       } = this.props;
-      return 0 === e.length ? (i(n, t), r(n.id), Promise.resolve({
+      return 0 === e.length ? (r(n, t), i(n.id), Promise.resolve({
         shouldClear: false,
         shouldRefocus: false
       })) : u({
         value: e,
         channel: n
-      }).then(i => {
+      }).then(r => {
         let {
           valid: u
-        } = i;
+        } = r;
         if (!u) return Promise.resolve({
           shouldClear: false,
           shouldRefocus: false
@@ -115,24 +115,24 @@ class g extends Chunk473749.PureComponent {
           let t = o.ZP.parse(this.props.channel, e),
             n = this.props.message.components.filter(e => e.type === l.re.TEXT_DISPLAY);
           if (1 === n.length) {
-            let i = n[0];
-            e !== i.content && c(this.props.channel.id, this.props.message.id, t)
+            let r = n[0];
+            e !== r.content && c(this.props.channel.id, this.props.message.id, t)
           }
         } else {
           let t = o.ZP.parse(this.props.channel, e);
           t.content !== this.props.message.content && c(this.props.channel.id, this.props.message.id, t)
         }
-        return r(n.id), Promise.resolve({
+        return i(n.id), Promise.resolve({
           shouldClear: true,
           shouldRefocus: true
         })
       })
     }), p(this, "onChange", (e, t, n) => {
       let {
-        channel: i,
-        onChange: r
+        channel: r,
+        onChange: i
       } = this.props;
-      r(i.id, t, n)
+      i(r.id, t, n)
     }), p(this, "onKeyDown", e => {
       if (e.key === c.vn.ESCAPE && !e.shiftKey) {
         let {
@@ -146,22 +146,22 @@ class g extends Chunk473749.PureComponent {
         let {
           selection: t,
           rangeStartContainer: n,
-          rangeStartOffset: i
+          rangeStartOffset: r
         } = h();
-        if (null == t || null == n || null == i) return;
-        m(t, n, 0)
+        if (null == t || null == n || null == r) return;
+        g(t, n, 0)
       }
       if (e.key === c.vn.END && !e.shiftKey) {
         e.preventDefault();
         let {
           selection: t,
           rangeStartContainer: n,
-          rangeStartOffset: i
+          rangeStartOffset: r
         } = h();
-        if (null == t || null == n || null == i) return;
-        let r = n.textContent;
-        if (null == r) return;
-        m(t, n, r.length)
+        if (null == t || null == n || null == r) return;
+        let i = n.textContent;
+        if (null == i) return;
+        g(t, n, i.length)
       }
     })
   }

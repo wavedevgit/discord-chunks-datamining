@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -31,7 +31,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function C(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
@@ -60,21 +60,21 @@ class E extends Chunk98597.ZP {
       canReorderChannel: o
     } = this.props, s = (0, r.jsx)("li", {
       className: a()(this.getClassName(), {
-        [v.disabled]: this.isDisabled()
+        [O.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
-      children: (0, r.jsxs)(m.ZP, {
-        className: v.iconVisibility,
+      children: (0, r.jsxs)(b.ZP, {
+        className: O.iconVisibility,
         channel: e,
         selected: t,
         onClick: this.handleClick,
-        onMouseDown: x,
+        onMouseDown: C,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: o ? l : null,
         "aria-label": (0, d.ZP)({
           channel: e
         }),
-        resolvedUnreadSetting: O.i.ONLY_MENTIONS,
+        resolvedUnreadSetting: v.i.ONLY_MENTIONS,
         children: [this.renderInviteButton(), this.renderEditButton()]
       })
     });
@@ -84,7 +84,7 @@ class E extends Chunk98597.ZP {
     super(...e), j(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = p.Z.getGuild(t.getGuildId());
+      } = this.props, i = h.Z.getGuild(t.getGuildId());
       null != i && (0, c.jW)(e, async () => {
         let {
           default: e
@@ -100,7 +100,7 @@ class E extends Chunk98597.ZP {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(C({}, n), {
+        }(x({}, n), {
           channel: t,
           guild: i
         }))
@@ -109,7 +109,7 @@ class E extends Chunk98597.ZP {
       ! function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-        (0, f.uL)(y.Z5c.CHANNEL(t, e.id), {
+        (0, p.uL)(y.Z5c.CHANNEL(t, e.id), {
           state: {
             analyticsSource: {
               page: y.ZY5.GUILD_CHANNEL,
@@ -128,12 +128,12 @@ let S = (0, Chunk146773.B)(E),
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, o.cj)([h.Z, g.Z], () => {
-      let e = h.Z.getChannel(t.parent_id);
+    } = e, l = (0, o.cj)([f.Z, g.Z], () => {
+      let e = f.Z.getChannel(t.parent_id);
       return {
         canManageChannel: g.Z.can(y.Plq.MANAGE_CHANNELS, t),
         canReorderChannel: true !== i && null != e ? g.Z.can(y.Plq.MANAGE_CHANNELS, e) : g.Z.can(y.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(S, C({}, l, e))
+    return (0, r.jsx)(S, x({}, l, e))
   })

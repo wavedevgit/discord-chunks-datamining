@@ -78,7 +78,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk494865 = require("./494865.js");
 
-function eC(e) {
+function ey(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -97,7 +97,7 @@ function eC(e) {
   return e
 }
 
-function ey(e, t) {
+function eC(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -245,7 +245,7 @@ let eN = {
           label: eT,
           element: A.Z,
           ariaLabel: eT,
-          newIndicator: !t.guild.features.has(ex.GuildFeatures.COMMUNITY) && null != t.memberCount && t.memberCount >= ej.U3 && y.qc.hasHotspot(y.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
+          newIndicator: !t.guild.features.has(ex.GuildFeatures.COMMUNITY) && null != t.memberCount && t.memberCount >= ej.U3 && C.qc.hasHotspot(C.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
           notice: {
             stores: [w.Z],
             element: A.X
@@ -292,7 +292,7 @@ let eN = {
           }, predicate: () => t.canManageGuild && t.guild.features.has(ex.GuildFeatures.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(ex.GuildFeatures.GUILD_SERVER_GUIDE)
         };
       case ex.pNK.ROLE_SUBSCRIPTIONS:
-        return ey(eC({}, eS), {
+        return eC(ey({}, eS), {
           section: ex.pNK.ROLE_SUBSCRIPTIONS,
           element: O.Z,
           type: c.bT.CUSTOM,
@@ -305,7 +305,7 @@ let eN = {
         };
       case ex.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE:
         return {
-          section: ex.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: ev.intl.string(ev.t.ipTYsk), ariaLabel: ev.intl.string(ev.t.ipTYsk), element: C.Z, predicate: () => t.monetizationPredicate() && (0, j.sy)(t.guild)
+          section: ex.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: ev.intl.string(ev.t.ipTYsk), ariaLabel: ev.intl.string(ev.t.ipTYsk), element: y.Z, predicate: () => t.monetizationPredicate() && (0, j.sy)(t.guild)
         };
       case ex.pNK.GUILD_PREMIUM:
         return {
@@ -346,7 +346,7 @@ let eN = {
               let {
                 default: e
               } = await n.e("93197").then(n.bind(n, 848876));
-              return t => (0, r.jsx)(e, ey(eC({}, t), {
+              return t => (0, r.jsx)(e, eC(ey({}, t), {
                 onConfirm: l,
                 guildName: i
               }))

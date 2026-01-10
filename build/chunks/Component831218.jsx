@@ -1,4 +1,4 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -45,7 +45,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function L(e) {
   return e
 }
 
-function k(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,7 +70,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let G = Chunk473749.memo(function() {
+let U = Chunk473749.memo(function() {
   return (0, i.jsxs)("svg", {
     width: "184",
     height: "428",
@@ -197,7 +197,7 @@ let G = Chunk473749.memo(function() {
     })]
   })
 });
-class U extends(r = Chunk473749.Component) {
+class G extends(r = Chunk473749.Component) {
   static getDerivedStateFromProps(e) {
     let {
       children: t,
@@ -276,8 +276,8 @@ class U extends(r = Chunk473749.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(f.Wdt, {
-          children: r => (0, i.jsx)(f.aVo, L({
+        return (0, i.jsx)(p.Wdt, {
+          children: r => (0, i.jsx)(p.aVo, k({
             fade: true,
             innerRole: a,
             innerAriaLabel: R.intl.string(R.t.YUU0RF),
@@ -321,19 +321,19 @@ class U extends(r = Chunk473749.Component) {
       let a = Math.round((t.offsetHeight - 44 * i) / 44),
         o = a > n.length ? n.slice(0, a + 1) : n,
         s = o.map(e => null != r[e] ? r[e].getRecipientId() : null),
-        c = n.some(e => (0, O.Z)(e)),
+        c = n.some(e => (0, v.Z)(e)),
         u = {
           num_users_visible: o.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && N.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = true, b.ZP.trackWithMetadata(A.rMx.DM_LIST_VIEWED, k(L({}, u, (0, y.X)()), {
+      this.hasReportedAnalytics = true, m.ZP.trackWithMetadata(w.rMx.DM_LIST_VIEWED, L(k({}, u, (0, y.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
     }), M(this, "getSectionHeight", e => 24 * (0 !== e)), M(this, "handleScroll", o()(() => {
       if (null != this._list) {
         let e = this._list.getScrollerNode();
-        null != e && h.Z.updateChannelListScroll(A.ME, e.scrollTop)
+        null != e && f.Z.updateChannelListScroll(w.ME, e.scrollTop)
       }
       true !== this.props.onHandleScroll && this.props.onHandleScroll()
     }, 100)), M(this, "renderDM", (e, t) => {
@@ -345,7 +345,7 @@ class U extends(r = Chunk473749.Component) {
         totalRowCount: a,
         preRenderedChildren: o
       } = this.state, s = r[n[t]];
-      return null == s ? null : (0, i.jsx)(T.ZP, {
+      return null == s ? null : (0, i.jsx)(A.ZP, {
         channel: s,
         selected: s.id === l,
         "aria-posinset": o + t + 1,
@@ -367,24 +367,22 @@ class U extends(r = Chunk473749.Component) {
       } = e, {
         privateChannelIds: r
       } = this.props;
-      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(G, {}, "no-private-channels") : this.renderDM(t, n)
+      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(U, {}, "no-private-channels") : this.renderDM(t, n)
     }), M(this, "renderSection", e => {
       let {
         section: t
       } = e;
-      return 0 === t ? null : (0, i.jsxs)(v.Z, {
+      return 0 === t ? null : (0, i.jsxs)(O.Z, {
         className: D.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: D.headerText,
           children: R.intl.string(R.t.YUU0RF)
         }), (0, i.jsx)(E.Z, {
-          location: "PrivateChannelsList-CreateDMButton",
           tooltip: R.intl.string(R.t["6Urw1t"]),
           tooltipPosition: "top",
-          popoutAlign: "left",
           className: D.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: D.privateChannelRecipientsInviteButtonIcon,
-          icon: f.BRu,
+          icon: p.BRu,
           subscribeToGlobalHotkey: true
         })]
       }, t)
@@ -406,32 +404,32 @@ class U extends(r = Chunk473749.Component) {
     })
   }
 }
-M(U, "defaultProps", {
+M(G, "defaultProps", {
   padding: 8
 });
 let B = e => {
   let {
     density: t
-  } = (0, f.TCT)(), {
+  } = (0, p.TCT)(), {
     version: n,
     theme: r,
     children: a,
     listScrollerRef: o
-  } = e, d = l.Children.count(a), h = N.Z.getMutablePrivateChannels(), b = (0, _.k1)(h), y = (0, u.Wu)([w.Z, S.Z, I.Z], () => {
-    let e = w.Z.getPrivateChannelIds();
+  } = e, d = l.Children.count(a), f = Z.Z.getMutablePrivateChannels(), m = (0, _.k1)(f), y = (0, u.Wu)([T.Z, S.Z, I.Z], () => {
+    let e = T.Z.getPrivateChannelIds();
     return (0, _.tU)(e, [S.Z, I.Z])
   });
-  (0, x.z)(C.R);
+  (0, C.z)(x.R);
   let {
-    analyticsLocations: O
-  } = (0, m.ZP)(g.Z.CONTACTS_LIST), v = (0, P.Ll)(), {
+    analyticsLocations: v
+  } = (0, b.ZP)(g.Z.CONTACTS_LIST), O = (0, P.Ll)(), {
     keyboardModeEnabled: E,
-    version: Z
-  } = (0, u.cj)([p.Z, N.Z], () => ({
-    keyboardModeEnabled: p.Z.keyboardModeEnabled,
-    version: null != n ? "".concat(n, ":").concat(N.Z.getPrivateChannelsVersion()) : N.Z.getPrivateChannelsVersion()
-  })), T = l.useRef(null), A = null != o ? o : T, R = l.useCallback(e => {
-    let t = A.current,
+    version: N
+  } = (0, u.cj)([h.Z, Z.Z], () => ({
+    keyboardModeEnabled: h.Z.keyboardModeEnabled,
+    version: null != n ? "".concat(n, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
+  })), A = l.useRef(null), w = null != o ? o : A, R = l.useCallback(e => {
+    let t = w.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
       node: n,
@@ -444,39 +442,39 @@ let B = e => {
         })
       }
     })
-  }, [A]), D = l.useCallback(() => new Promise(e => {
-    let t = A.current;
+  }, [w]), D = l.useCallback(() => new Promise(e => {
+    let t = w.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), [A]), M = l.useCallback(() => new Promise(e => {
-    let t = A.current;
+  }), [w]), M = l.useCallback(() => new Promise(e => {
+    let t = w.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback() {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [A]), G = (0, j.Dt)(), B = (0, c.ZP)({
-    id: "private-channels-".concat(G),
+  }), [w]), U = (0, j.Dt)(), B = (0, c.ZP)({
+    id: "private-channels-".concat(U),
     isEnabled: E,
     scrollToStart: D,
     scrollToEnd: M,
     defaultFocused: (d + 1).toString(),
     setFocus: R
   });
-  return (0, i.jsx)(m.Gt, {
-    value: O,
+  return (0, i.jsx)(b.Gt, {
+    value: v,
     children: (0, i.jsx)(s.bG, {
       navigator: B,
-      children: (0, i.jsx)(U, k(L({}, e), {
+      children: (0, i.jsx)(G, L(k({}, e), {
         density: t,
-        channels: b,
+        channels: m,
         privateChannelIds: y,
-        listRef: A,
-        theme: null != v ? v : r,
-        version: Z
+        listRef: w,
+        theme: null != O ? O : r,
+        version: N
       }))
     })
   })

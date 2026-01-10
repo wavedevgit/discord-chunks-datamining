@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 153209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Gp: () => v,
+  Gp: () => O,
   ZP: () => y
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
@@ -26,8 +26,8 @@ function y() {
     items: t,
     loading: n,
     loadMore: i
-  } = (0, d.y6)(), a = O(t, (0, l.e7)([s.Z], () => s.Z.localItems));
-  return (0, r.jsx)(f.Z, {
+  } = (0, d.y6)(), a = v(t, (0, l.e7)([s.Z], () => s.Z.localItems));
+  return (0, r.jsx)(p.Z, {
     initialized: e,
     items: a,
     loading: n,
@@ -35,30 +35,30 @@ function y() {
   })
 }
 
-function O(e, t) {
+function v(e, t) {
   return i.useMemo(() => [...[...e, ...t].sort((e, t) => false * g.default.compare(e.id, t.id))], [e, t])
 }
 
-function v() {
+function O() {
   let {
     items: e
-  } = (0, d.y6)(), t = e.length > 0 ? e[0] : null, n = O(e, (0, l.e7)([s.Z], () => s.Z.localItems)), f = h.d$.useSetting();
+  } = (0, d.y6)(), t = e.length > 0 ? e[0] : null, n = v(e, (0, l.e7)([s.Z], () => s.Z.localItems)), p = f.d$.useSetting();
   return i.useMemo(() => {
-    if (null != t && 0 >= g.default.compare(t.id, f)) returnfalse;
+    if (null != t && 0 >= g.default.compare(t.id, p)) returnfalse;
     for (let e of n) {
-      if (0 >= g.default.compare(e.id, f)) break;
-      if (!(0, u.r)(e, f)) returntrue
+      if (0 >= g.default.compare(e.id, p)) break;
+      if (!(0, u.r)(e, p)) returntrue
     }
     returnfalse
-  }, [t, f, n]) ? (0, r.jsx)(a.u, {
-    text: m.intl.string(m.t["8k+6QY"]),
+  }, [t, p, n]) ? (0, r.jsx)(a.u, {
+    text: b.intl.string(b.t["8k+6QY"]),
     children: (0, r.jsx)(o.hU, {
-      "aria-label": m.intl.string(m.t["8k+6QY"]),
+      "aria-label": b.intl.string(b.t["8k+6QY"]),
       icon: o.W6s,
       variant: "secondary",
       size: "sm",
       onClick: () => {
-        null != t && (h.d$.updateSetting(t.id), p.default.track(b.rMx.NOTIFICATION_CENTER_ACTION, {
+        null != t && (f.d$.updateSetting(t.id), h.default.track(m.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: c.ud.MARK_ALL_READ
         }))
       }

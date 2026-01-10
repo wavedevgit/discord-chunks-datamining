@@ -1,7 +1,7 @@
-/** Chunk was on 67000 **/
+/** Chunk was on 81985 **/
 /** chunk id: 358652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./388685.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -11,19 +11,19 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk306680 = require("./306680.js"),
   Chunk944486 = require("./944486.js"),
   Chunk55589 = require("./55589.js");
-let h = [],
-  p = new Set;
+let f = [],
+  h = new Set;
 
 function g() {
-  let e = f.Z.getPrivateChannelIds().filter(e => u.ZP.getMentionCount(e) > 0);
-  return e.length > 20 && (e.length = 20), !(0, s.EF)(e, h) && (h = e, p = new Set(e), true)
+  let e = p.Z.getPrivateChannelIds().filter(e => u.ZP.getMentionCount(e) > 0);
+  return e.length > 20 && (e.length = 20), !(0, s.EF)(e, f) && (f = e, h = new Set(e), true)
 }
 
-function b() {
+function m() {
   return g()
 }
 
-function m(e) {
+function b(e) {
   let {
     channelId: t
   } = e, n = c.Z.getChannel(t);
@@ -31,10 +31,10 @@ function m(e) {
 }
 class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(f.Z, c.Z, d.Z, u.ZP)
+    this.waitFor(p.Z, c.Z, d.Z, u.ZP)
   }
   getUnreadPrivateChannelIds() {
-    return h
+    return f
   }
 }(i = "displayName") in y ? Object.defineProperty(y, i, {
   value: "PrivateChannelReadStateStore",
@@ -42,11 +42,11 @@ class y extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : y[i] = "PrivateChannelReadStateStore";
-let O = new y(Chunk570140.Z, {
-  CONNECTION_OPEN: b,
-  OVERLAY_INITIALIZE: b,
-  MESSAGE_CREATE: m,
-  MESSAGE_ACK: m,
+let v = new y(Chunk570140.Z, {
+  CONNECTION_OPEN: m,
+  OVERLAY_INITIALIZE: m,
+  MESSAGE_CREATE: b,
+  MESSAGE_ACK: b,
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t
@@ -59,7 +59,7 @@ let O = new y(Chunk570140.Z, {
         id: t
       }
     } = e;
-    return !!p.has(t) && g()
+    return !!h.has(t) && g()
   },
   WINDOW_FOCUS: function() {
     let e = c.Z.getChannel(d.Z.getChannelId());

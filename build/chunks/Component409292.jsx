@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk456235 = require("./456235.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ class b extends Chunk473749.Component {
       page: g.ZY5.CHANNEL_STORE_LISTING,
       root: true,
       children: (0, r.jsx)("div", {
-        className: m.applicationStore,
+        className: h.applicationStore,
         children: (0, r.jsx)(l.AW, {
           path: "*",
           render: this.renderApplicationListing
@@ -43,13 +43,13 @@ class b extends Chunk473749.Component {
     }) : null
   }
   constructor(...e) {
-    super(...e), h(this, "fetchStoreListing", e => {
+    super(...e), m(this, "fetchStoreListing", e => {
       let {
         channel: t,
         inputSkuId: n
       } = this.props;
       return null != e ? o.Z.fetchChannelStoreListing(t.id, e) : null != n ? o.Z.fetchChannelStoreListing(t.id, n) : o.Z.fetchChannelStoreListing(t.id)
-    }), h(this, "renderApplicationListing", e => {
+    }), m(this, "renderApplicationListing", e => {
       let {
         location: t
       } = e, {

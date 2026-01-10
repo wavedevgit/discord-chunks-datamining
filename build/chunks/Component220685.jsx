@@ -66,49 +66,49 @@ let N = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       gap: 24,
       children: [(0, r.jsx)(g.Heading, {
         variant: "heading-lg/semibold",
-        children: C.intl.string(C.t.N6Tg9A)
+        children: y.intl.string(y.t.N6Tg9A)
       }), (0, r.jsxs)(g.Kqy, {
         gap: 8,
         children: [(0, r.jsx)(g.rsf, {
-          label: C.intl.string(C.t.lwvl1g),
+          label: y.intl.string(y.t.lwvl1g),
           checked: S,
           disabled: B || H,
-          description: C.intl.string(C.t["uU/69/"]),
+          description: y.intl.string(y.t["uU/69/"]),
           onChange: e => _(e)
         }), H ? (0, r.jsx)(g.Wn, {
           messageType: g.QYI.WARNING,
-          children: C.intl.string(C.t.mIgfEu)
+          children: y.intl.string(y.t.mIgfEu)
         }) : null]
       }), (0, r.jsx)(g.izJ, {}), (0, r.jsxs)(g.gNt, {
-        label: C.intl.string(C.t.N46WOv),
+        label: y.intl.string(y.t.N46WOv),
         disabled: B,
         children: [(0, r.jsx)(f.Z, {
           value: M,
           className: a()({
-            [y.disabled]: B
+            [C.disabled]: B
           })
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: y.openPageButton,
+          className: C.openPageButton,
           children: (0, r.jsx)(g.Button, {
             variant: "primary",
-            text: C.intl.string(C.t.CaOYqc),
+            text: y.intl.string(y.t.CaOYqc),
             onClick: () => (0, m.Z)(M),
             disabled: B
           })
         })]
       }), (0, r.jsx)(g.izJ, {}), (0, r.jsx)(g.gNt, {
-        label: C.intl.string(C.t.W39uIL),
-        description: C.intl.string(C.t.B6XtE7),
+        label: y.intl.string(y.t.W39uIL),
+        description: y.intl.string(y.t.B6XtE7),
         children: (0, r.jsxs)("div", {
-          className: y.accentColorContainer,
+          className: C.accentColorContainer,
           children: [(0, r.jsx)(g.Text, {
             variant: "text-md/medium",
             style: {
               backgroundColor: "#".concat(T.toString(16).padStart(6, "0"))
             },
-            className: y.buttonPreview,
-            children: C.intl.string(C.t.l6iM36)
+            className: C.buttonPreview,
+            children: y.intl.string(y.t.l6iM36)
           }), (0, r.jsx)(g.zH8, {
             colors: N,
             customColor: null,
@@ -117,25 +117,25 @@ let N = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             onChange: e => P(e),
             renderDefaultButton: () => null,
             renderCustomButton: () => null,
-            colorContainerClassName: y.hideColorButtons,
+            colorContainerClassName: C.hideColorButtons,
             disabled: B
           })]
         })
       }), (0, r.jsx)(g.izJ, {}), (0, r.jsx)(g.oil, {
-        label: C.intl.string(C.t.k2yRvd),
-        description: C.intl.string(C.t.amd996),
+        label: y.intl.string(y.t.k2yRvd),
+        description: y.intl.string(y.t.amd996),
         value: null != w ? w : true,
         onChange: e => Z("" === e ? null : e),
-        error: R ? null : C.intl.string(C.t["1kL79Q"]),
-        placeholder: C.intl.string(C.t["+I4gdT"]),
+        error: R ? null : y.intl.string(y.t["1kL79Q"]),
+        placeholder: y.intl.string(y.t["+I4gdT"]),
         trailing: R && U ? g.owK : true,
         disabled: B
       }), (0, r.jsx)(g.izJ, {}), (0, r.jsx)(g.C3N, {
-        label: C.intl.string(C.t.AU2HU0),
-        description: C.intl.string(C.t.iWBt3Q),
+        label: y.intl.string(y.t.AU2HU0),
+        description: y.intl.string(y.t.iWBt3Q),
         children: (0, r.jsx)(g.rsf, {
-          label: C.intl.string(C.t.hJsAPo),
-          description: C.intl.string(C.t.hn65ET),
+          label: y.intl.string(y.t.hJsAPo),
+          description: y.intl.string(y.t.hn65ET),
           icon: g.tBG,
           checked: D,
           onChange: e => A(e),
@@ -143,7 +143,7 @@ let N = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         })
       }), (0, r.jsx)(d.W, {
         component: "div",
-        className: y.contentRegion,
+        className: C.contentRegion,
         children: k && (0, r.jsx)(g.oXn, {
           children: (0, r.jsx)(u.Z, {
             submitting: h,

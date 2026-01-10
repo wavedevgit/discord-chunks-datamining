@@ -28,15 +28,15 @@ function j(e) {
     guildId: i
   } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), v = (0, a.e7)([f.default], () => f.default.getCurrentUser()), {
     onAdoptTag: O,
-    isAdopting: C
-  } = (0, u.Z)(i), y = (null == v || null == (t = v.primaryGuild) ? true : t.identityGuildId) === i && (null == v || null == (n = v.primaryGuild) ? true : n.identityEnabled) === true;
+    isAdopting: y
+  } = (0, u.Z)(i), C = (null == v || null == (t = v.primaryGuild) ? true : t.identityGuildId) === i && (null == v || null == (n = v.primaryGuild) ? true : n.identityEnabled) === true;
   if (null != v && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
     className: x.container,
     children: [(0, r.jsx)(s.Text, {
       className: x.section,
       variant: "text-xs/medium",
       color: "text-muted",
-      children: y ? h.intl.string(p.default["6xBCpG"]) : h.intl.string(p.default.eSRKez)
+      children: C ? h.intl.string(p.default["6xBCpG"]) : h.intl.string(p.default.eSRKez)
     }), (0, r.jsx)("div", {
       className: x.divider
     }), (0, r.jsxs)("div", {
@@ -60,8 +60,8 @@ function j(e) {
         variant: "primary",
         text: h.intl.string(h.t.cQDYRu),
         onClick: O,
-        loading: C,
-        disabled: y,
+        loading: y,
+        disabled: C,
         fullWidth: true
       })]
     })]

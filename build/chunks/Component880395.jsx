@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 880395, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D: () => o
@@ -10,17 +10,17 @@ var Chunk239091 = require("./239091.js");
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
@@ -30,8 +30,8 @@ function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -41,21 +41,21 @@ function a(e, t) {
 
 function o(e, t, o, s, c) {
   let u = o.getGuildId();
-  return null != u ? (0, r.jW)(e, async () => {
+  return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("8982"), n.e("80125"), n.e("38035")]).then(n.bind(n, 357823));
-    return n => (0, i.jsx)(e, a(l({}, n), {
+    } = await Promise.all([n.e("92524"), n.e("38035")]).then(n.bind(n, 357823));
+    return n => (0, r.jsx)(e, a(l({}, n), {
       user: t,
       channel: o,
       guildId: u,
       onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
-  }, s) : (0, r.jW)(e, async () => {
+  }, s) : (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("80125"), n.e("90211")]).then(n.bind(n, 238296));
-    return n => (0, i.jsx)(e, a(l({}, n), {
+    } = await n.e("80125").then(n.bind(n, 238296));
+    return n => (0, r.jsx)(e, a(l({}, n), {
       user: t,
       channel: o,
       onInteraction: e => c("BaseVoiceUserContextMenu", e)

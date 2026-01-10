@@ -29,7 +29,7 @@ function I(e) {
   let {
     sku: t,
     guildId: a
-  } = e, c = (0, s.q)(t.applicationId), l = r.useMemo(() => (0, _.wQ)(a, t), [a, t]);
+  } = e, c = (0, s.q)(t.applicationId), l = r.useMemo(() => (0, h.wQ)(a, t), [a, t]);
   return (0, n.jsxs)("div", {
     className: P.forwardPreview,
     children: [(0, n.jsxs)("div", {
@@ -52,12 +52,12 @@ function I(e) {
         }), (0, n.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
-          children: g.intl.formatToPlainString(g.t["CqpEC+"], {
+          children: v.intl.formatToPlainString(v.t["CqpEC+"], {
             applicationName: null == c ? true : c.name
           })
         })]
       })]
-    }), (0, n.jsx)(h.A, {
+    }), (0, n.jsx)(_.A, {
       containerClassName: P.cardImage,
       foregroundImageClassName: P.cardImage,
       backgroundImageClassName: P.cardImage,
@@ -71,7 +71,7 @@ function x(e) {
   var t, a, {
       sku: i,
       guildId: s,
-      source: h,
+      source: _,
       onClose: P,
       analyticsLocations: x,
       analyticsContext: j
@@ -103,19 +103,19 @@ function x(e) {
       let t = (await Promise.all(e.map(b.qx))).filter(w.lm);
       if (0 === t.length) return void a(false);
       r && P();
-      let o = (0, _.l8)(s, i);
+      let l = (0, h.l8)(s, i);
       for (let e of t) {
         let t = f.Z.getChannel(e);
-        null != t && await c.Z.sendMessage(t.id, u.ZP.parse(t, o + (null != n ? n : "")), false, {
-          location: v.dy.SOCIAL_LAYER_STOREFRONT
+        null != t && await c.Z.sendMessage(t.id, u.ZP.parse(t, l + (null != n ? n : "")), false, {
+          location: g.dy.SOCIAL_LAYER_STOREFRONT
         })
-      }
+      }(0, o.showToast)((0, o.createToast)(v.intl.string(v.t.kwmYkt), o.ToastType.SUCCESS))
     } catch (e) {
-      (0, o.showToast)((0, o.createToast)(g.intl.string(g.t.iufib1), o.ToastType.FAILURE))
+      (0, o.showToast)((0, o.createToast)(v.intl.string(v.t.iufib1), o.ToastType.FAILURE))
     } finally {
       a(false)
     }
-  }, [P, s, i]), L = r.useMemo(() => [{
+  }, [P, s, i]), T = r.useMemo(() => [{
     variant: "secondary",
     text: true,
     onClick: () => {
@@ -125,7 +125,7 @@ function x(e) {
         sku_id: i.id,
         cta_type: y.eR.COPY_LINK_BUTTON,
         location_stack: k
-      }), (0, m.JG)((0, _.wQ)(s, i), () => (0, o.showToast)((0, o.createToast)(g.intl.string(g.t["L/PwZf"]), o.ToastType.SUCCESS)))
+      }), (0, m.JG)((0, h.wQ)(s, i), () => (0, o.showToast)((0, o.createToast)(v.intl.string(v.t["L/PwZf"]), o.ToastType.SUCCESS)))
     },
     icon: o.xPt
   }], [s, i, null == j ? true : j.sessionId, k]);
@@ -148,14 +148,14 @@ function x(e) {
     return e
   }({}, C), a = a = {
     onClose: P,
-    source: h,
+    source: _,
     customPreview: (0, n.jsx)(I, {
       sku: i,
       guildId: s
     }),
-    customSubtitle: g.intl.string(g.t.yiaXeN),
+    customSubtitle: v.intl.string(v.t.yiaXeN),
     customSendHandler: S,
-    additionalActions: L
+    additionalActions: T
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var a = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

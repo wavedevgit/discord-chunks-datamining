@@ -1,7 +1,7 @@
-/** Chunk was on 95546 **/
+/** Chunk was on 87646 **/
 /** chunk id: 443877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk715903 = require("./715903.js"),
@@ -14,16 +14,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk432376 = require("./432376.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e) {
+function g(e) {
   var t, n;
-  let f = null == e ? true : e.guild_id,
-    O = (0, i.e7)([c.Z], () => null == f || c.Z.canChatInGuild(f), [f]),
-    b = (0, i.e7)([o.Z], () => null != f && o.Z.isLurking(f), [f]),
-    h = (0, i.e7)([a.ZP], () => null != f && a.ZP.isCurrentUserGuest(f), [f]),
-    m = (0, i.e7)([u.Z], () => O && u.Z.can(p.Plq.ADD_REACTIONS, e), [O, e]),
-    g = (0, r.ux)(f),
-    [, y] = (0, l.AB)(f),
-    v = (0, s.$R)(e);
+  let g = null == e ? true : e.guild_id,
+    m = (0, i.e7)([c.Z], () => null == g || c.Z.canChatInGuild(g), [g]),
+    f = (0, i.e7)([l.Z], () => null != g && l.Z.isLurking(g), [g]),
+    p = (0, i.e7)([o.ZP], () => null != g && o.ZP.isCurrentUserGuest(g), [g]),
+    v = (0, i.e7)([u.Z], () => m && u.Z.can(h.Plq.ADD_REACTIONS, e), [m, e]),
+    b = (0, s.ux)(g),
+    [, x] = (0, r.AB)(g),
+    O = (0, a.$R)(e);
   return null == e ? {
     disableReactionReads: true,
     disableReactionCreates: true,
@@ -50,17 +50,17 @@ function f(e) {
     return e
   }({}, (0, d.Z)({
     channel: e,
-    canChat: O,
+    canChat: m,
     renderReactions: true,
-    canAddNewReactions: m,
-    isLurking: b,
-    isGuest: h,
-    communicationDisabled: y,
-    isActiveChannelOrUnarchivableThread: v,
-    isAutomodQuarantined: g
+    canAddNewReactions: v,
+    isLurking: f,
+    isGuest: p,
+    communicationDisabled: x,
+    isActiveChannelOrUnarchivableThread: O,
+    isAutomodQuarantined: b
   })), n = n = {
-    isLurking: b,
-    isGuest: h,
+    isLurking: f,
+    isGuest: p,
     isPendingMember: false
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

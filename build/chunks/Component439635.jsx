@@ -1,7 +1,7 @@
 /** Chunk was on 24783 **/
 /** chunk id: 439635, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => Z
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -21,39 +21,36 @@ var Chunk481060 = require("./481060.js"),
   Chunk776568 = require("./776568.jsx"),
   Chunk218035 = require("./218035.jsx"),
   Chunk775666 = require("./775666.jsx"),
-  Chunk593589 = require("./593589.jsx"),
   Chunk442754 = require("./442754.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk108843.Z)(function(e) {
+let Z = (0, Chunk108843.Z)(function(e) {
   let {
     channel: t,
     guild: n,
     includeTopic: c = false,
     onSelect: o
-  } = e, _ = (0, E.Z)(t), N = (0, j.ZP)(t), w = (0, g.Z)(t), x = (0, d.Z)(t), C = (0, p.Z)(t), S = (0, O.Z)(t), m = (0, y.Z)(t, n), A = (0, s.Z)(t, n), D = (0, b.Z)(t, n, v.d4z.GUILD_TEXT), T = (0, b.Z)(t, n, v.d4z.GUILD_VOICE), I = (0, f.Z)(t), k = (0, a.Z)({
+  } = e, Z = (0, P.Z)(t), _ = (0, g.ZP)(t), N = (0, j.Z)(t), w = (0, d.Z)(t), S = (0, b.Z)(t), x = (0, O.Z)(t), C = (0, y.Z)(t, n), D = (0, u.Z)(t, n), m = (0, p.Z)(t, n, E.d4z.GUILD_TEXT), A = (0, p.Z)(t, n, E.d4z.GUILD_VOICE), I = (0, f.Z)(t), T = (0, a.Z)({
     id: t.id,
-    label: Z.intl.string(Z.t.gFHI3k)
-  }), L = (0, P.Z)(t, "title_context_menu"), M = (0, u.Mn)("ChannelTitleContextMenu"), U = (0, h.ZP)(t);
+    label: v.intl.string(v.t.gFHI3k)
+  }), M = (0, s.Mn)("ChannelTitleContextMenu"), k = (0, h.ZP)(t);
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
-    "aria-label": Z.intl.string(Z.t.Xm41aV),
+    "aria-label": v.intl.string(v.t.Xm41aV),
     onSelect: o,
     children: [(0, r.jsx)(i.kSQ, {
+      children: Z
+    }), (0, r.jsx)(i.kSQ, {
       children: _
-    }), (0, r.jsx)(i.kSQ, {
-      children: N
     }), (0, r.jsxs)(i.kSQ, {
-      children: [c ? C : M ? U : w, S]
+      children: [c ? S : M ? k : N, x]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [m, x, A, D, T]
-    }), (0, r.jsx)(i.kSQ, {
-      children: L
+      children: [C, w, D, m, A]
     }), (0, r.jsx)(i.kSQ, {
       children: I
     }), (0, r.jsx)(i.kSQ, {
-      children: k
+      children: T
     })]
   })
 }, [Chunk100527.Z.CONTEXT_MENU, Chunk100527.Z.CHANNEL_TITLE_MENU])

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 809244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -8,8 +8,8 @@ var Chunk687516 = require("./687516.js"),
   Chunk388032 = require("./388032.jsx");
 
 function a(e, t, n) {
-  let a = (0, i.Cf)(n),
-    o = r.ZP.getName(e.getGuildId(), e.id, t);
+  let a = (0, r.Cf)(n),
+    o = i.ZP.getName(e.getGuildId(), e.id, t);
   return null == n ? o : (null == a ? true : a.name) != null ? l.intl.formatToPlainString(l.t["9jpVOZ"], {
     applicationName: null == a ? true : a.name,
     username: o

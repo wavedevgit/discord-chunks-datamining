@@ -149,7 +149,7 @@ function O() {
   })
 }
 
-function C() {
+function y() {
   return (0, r.jsxs)("div", {
     className: c.earningBenefitCard,
     children: [(0, r.jsx)(l.Text, {
@@ -164,7 +164,7 @@ function C() {
   })
 }
 
-function y() {
+function C() {
   return (0, r.jsxs)("div", {
     className: c.followerBenefitCard,
     children: [(0, r.jsx)(l.Text, {
@@ -220,7 +220,7 @@ function E() {
       size: 24
     }), (0, r.jsxs)("div", {
       className: c.creatorBenefitsContainer,
-      children: [(0, r.jsx)(C, {}), (0, r.jsx)(y, {}), (0, r.jsx)(N, {})]
+      children: [(0, r.jsx)(y, {}), (0, r.jsx)(C, {}), (0, r.jsx)(N, {})]
     })]
   })
 }

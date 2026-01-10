@@ -1,7 +1,7 @@
 /** Chunk was on 21854 **/
-/** chunk id: 211912, original params: e,t,a (module,exports,require) **/
+/** chunk id: 211912, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,108 +22,137 @@ var Chunk54381 = require("./54381.js"),
   Chunk867709 = require("./867709.js"),
   Chunk157443 = require("./157443.js");
 
-function b(e) {
-  let {
-    transitionState: t,
-    returnRef: a,
-    onClose: r
-  } = e;
-  n.useEffect(() => {
-    u.default.track(f.rMx.OPEN_MODAL, {
+function O(e) {
+  s.useEffect(() => {
+    u.default.track(m.rMx.OPEN_MODAL, {
       type: "Social Layer Storefront Announcement Modal"
     }), (0, d.bj)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL, {
-      dismissAction: h.L.AUTO_DISMISS
+      dismissAction: x.L.AUTO_DISMISS
     })
   }, []);
-  let b = n.useCallback(() => {
-      (0, m.eagerNavigateToSocialLayerStorefront)({
-        guildId: (0, x.ac)()
+  let t = s.useCallback(() => {
+      (0, b.eagerNavigateToSocialLayerStorefront)({
+        guildId: (0, f.ac)()
       })
     }, []),
-    k = n.useCallback(() => {
-      (0, m.default)({
-        guildId: (0, x.ac)()
+    {
+      onClose: r
+    } = e,
+    a = s.useCallback(() => {
+      (0, b.default)({
+        guildId: (0, f.ac)()
       }), r()
     }, [r]);
-  return (0, s.jsx)(o.f6W, {
-    theme: g.BR.DARK,
-    children: e => (0, s.jsx)(l.Y0X, {
-      transitionState: t,
-      parentComponent: "SocialLayerStorefrontAnnouncementModal",
-      size: l.CgR.DYNAMIC,
-      className: i()(e, p.modal),
-      returnRef: a,
-      children: (0, s.jsxs)(l.hzk, {
-        className: p.content,
-        children: [(0, s.jsx)("div", {
-          className: p.closeButton,
-          children: (0, s.jsx)(l.olH, {
-            onClick: r
+  return (0, n.jsx)(o.f6W, {
+    theme: p.BR.DARK,
+    children: s => {
+      var c, d;
+      return (0, n.jsx)(l.IX, (c = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = n
           })
-        }), (0, s.jsx)("div", {
-          className: p.artwork
-        }), (0, s.jsx)(o.X6q, {
-          variant: "display-md",
-          color: "text-strong",
-          children: j.intl.string(j.t.to0E8U)
-        }), (0, s.jsx)(o.X6q, {
-          variant: "display-md",
-          color: "text-strong",
-          children: j.intl.string(j.t.BKEkBd)
-        }), (0, s.jsx)(o.X6q, {
-          variant: "heading-md/medium",
-          color: "text-muted",
-          children: j.intl.string(j.t.SiXpR2)
-        }), (0, s.jsxs)("div", {
-          className: p.features,
-          children: [(0, s.jsxs)("div", {
-            className: p.feature,
-            children: [(0, s.jsx)("div", {
-              className: p.featureIcon,
-              children: (0, s.jsx)("img", {
-                src: N,
-                alt: ""
-              })
-            }), (0, s.jsxs)("div", {
-              className: p.featureCopy,
-              children: [(0, s.jsx)(o.X6q, {
-                variant: "heading-md/semibold",
-                color: "text-strong",
-                children: j.intl.string(j.t["5hRbeH"])
-              }), (0, s.jsx)(o.xvT, {
-                variant: "text-sm/medium",
-                color: "text-muted",
-                children: j.intl.string(j.t["72sDuh"])
+        }
+        return e
+      }({}, e), d = d = {
+        size: "lg",
+        children: (0, n.jsxs)("div", {
+          className: i()(s, g.content),
+          children: [(0, n.jsx)("div", {
+            className: g.closeButton,
+            children: (0, n.jsx)(o.PZ7, {
+              onClick: r
+            })
+          }), (0, n.jsx)("div", {
+            className: g.artwork
+          }), (0, n.jsxs)("div", {
+            className: g.titleContainer,
+            children: [(0, n.jsx)(o.X6q, {
+              variant: "display-md",
+              color: "text-strong",
+              className: g.title,
+              children: j.intl.string(j.t.to0E8U)
+            }), (0, n.jsx)(o.X6q, {
+              variant: "display-md",
+              color: "text-strong",
+              className: g.title,
+              children: j.intl.string(j.t.BKEkBd)
+            }), (0, n.jsx)(o.X6q, {
+              variant: "heading-lg/medium",
+              color: "text-muted",
+              className: g.subtitle,
+              children: j.intl.string(j.t.SiXpR2)
+            })]
+          }), (0, n.jsxs)("div", {
+            className: g.features,
+            children: [(0, n.jsxs)("div", {
+              className: g.feature,
+              children: [(0, n.jsx)("div", {
+                className: g.featureIcon,
+                children: (0, n.jsx)("img", {
+                  src: v,
+                  alt: ""
+                })
+              }), (0, n.jsxs)("div", {
+                className: g.featureCopy,
+                children: [(0, n.jsx)(o.X6q, {
+                  variant: "heading-md/semibold",
+                  color: "text-strong",
+                  children: j.intl.string(j.t["5hRbeH"])
+                }), (0, n.jsx)(o.xvT, {
+                  variant: "text-sm/medium",
+                  color: "text-muted",
+                  children: j.intl.string(j.t["72sDuh"])
+                })]
+              })]
+            }), (0, n.jsxs)("div", {
+              className: g.feature,
+              children: [(0, n.jsx)("div", {
+                className: g.featureIcon,
+                children: (0, n.jsx)("img", {
+                  src: h,
+                  alt: ""
+                })
+              }), (0, n.jsxs)("div", {
+                className: g.featureCopy,
+                children: [(0, n.jsx)(o.X6q, {
+                  variant: "heading-md/semibold",
+                  color: "text-strong",
+                  children: j.intl.string(j.t.MO4ASw)
+                }), (0, n.jsx)(o.xvT, {
+                  variant: "text-sm/medium",
+                  color: "text-muted",
+                  children: j.intl.string(j.t.o4i2Wx)
+                })]
               })]
             })]
-          }), (0, s.jsxs)("div", {
-            className: p.feature,
-            children: [(0, s.jsx)("div", {
-              className: p.featureIcon,
-              children: (0, s.jsx)("img", {
-                src: v,
-                alt: ""
-              })
-            }), (0, s.jsxs)("div", {
-              className: p.featureCopy,
-              children: [(0, s.jsx)(o.X6q, {
-                variant: "heading-md/semibold",
-                color: "text-strong",
-                children: j.intl.string(j.t.MO4ASw)
-              }), (0, s.jsx)(o.xvT, {
-                variant: "text-sm/medium",
-                color: "text-muted",
-                children: j.intl.string(j.t.o4i2Wx)
-              })]
-            })]
+          }), (0, n.jsx)(o.zxk, {
+            variant: "primary",
+            text: j.intl.string(j.t.CekBHq),
+            onClick: a,
+            onMouseDown: t
           })]
-        }), (0, s.jsx)(o.zxk, {
-          variant: "primary",
-          text: j.intl.string(j.t.CekBHq),
-          onClick: k,
-          onMouseDown: b
-        })]
-      })
-    })
+        })
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
+        var r = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
+        }
+        return r
+      })(Object(d)).forEach(function(e) {
+        Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(d, e))
+      }), c))
+    }
   })
 }

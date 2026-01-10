@@ -1,4 +1,4 @@
-/** Chunk was on 60646 **/
+/** Chunk was on 65414 **/
 /** chunk id: 729424, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk706454 = require("./706454.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
 function g(e) {
   let {
     className: t
-  } = e, a = ["en-US", "en-GB"].includes((0, o.e7)([s.default], () => s.default.locale)) ? d.intl.string(d.t.OYlggR) : d.intl.string(d.t.Y55Tua), {
+  } = e, l = ["en-US", "en-GB"].includes((0, o.e7)([s.default], () => s.default.locale)) ? d.intl.string(d.t.OYlggR) : d.intl.string(d.t.Y55Tua), {
     trackUserProfileEditAction: g
   } = (0, u.KZ)(), p = i.useCallback(() => {
     g({
@@ -63,11 +63,11 @@ function g(e) {
     })
   }, [g]);
   return (0, r.jsxs)("div", {
-    className: l()(f.header, t),
+    className: a()(f.header, t),
     children: [(0, r.jsx)(c.Text, {
       variant: "text-xs/semibold",
       color: "text-subtle",
-      children: a
+      children: l
     }), (0, r.jsx)(c.Button, {
       icon: c.qJs,
       text: d.intl.string(d.t["lBG2s/"]),

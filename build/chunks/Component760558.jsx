@@ -19,9 +19,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk267642 = require("./267642.js"),
   Chunk395199 = require("./395199.jsx"),
   Chunk719228 = require("./719228.jsx"),
-  Chunk343649 = require("./343649.jsx"),
   Chunk4434 = require("./4434.jsx"),
   Chunk981631 = require("./981631.js"),
+  Chunk535396 = require("./535396.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk965688 = require("./965688.js");
 let S = e => {
@@ -50,8 +50,8 @@ let S = e => {
       var e;
       return (null == M || null == (e = M[0]) ? true : e.premiumGuildSubscription) != null
     }, [M]),
-    Z = () => (T("SUCCESS" === R), _.default.track(y.rMx.MODAL_DISMISSED, {
-      type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
+    Z = () => (T("SUCCESS" === R), _.default.track(b.rMx.MODAL_DISMISSED, {
+      type: b.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     }), Promise.resolve()),
     F = {
@@ -119,7 +119,7 @@ let S = e => {
                     id: t
                   } = e;
                   return t
-                }), S === E.P.PERK), w("SUCCESS")
+                }), S === y.P2.PERK), w("SUCCESS")
               } catch (e) {
                 x(true)
               }
@@ -160,7 +160,7 @@ let S = e => {
             guild: L,
             blurb: O.intl.string(O.t.yTlZV0),
             warning: O.intl.formatToPlainString(O.t.KPnDlu, {
-              days: y.o3l,
+              days: b.o3l,
               slotCount: t
             }),
             imageClass: v.confirmImage,
@@ -178,7 +178,7 @@ let S = e => {
           size: "md",
           title: e,
           actions: [],
-          children: (0, r.jsx)(b.R7, {
+          children: (0, r.jsx)(E.R7, {
             guild: L,
             isTransfer: G,
             guildBoostQuantity: M.length,
@@ -189,8 +189,8 @@ let S = e => {
       }
     };
   i.useEffect(() => {
-    _.default.track(y.rMx.OPEN_MODAL, {
-      type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
+    _.default.track(b.rMx.OPEN_MODAL, {
+      type: b.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     })
   }, [a]);

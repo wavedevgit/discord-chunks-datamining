@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
@@ -51,7 +51,7 @@ function F() {
       },
       location_stack: l
     })
-  }, [l]), (0, t.jsxs)(d.P3F, {
+  }, [l]), (0, t.jsxs)(o.P3F, {
     onClick: () => (0, p.Z)({
       analyticsSource: {
         page: D.Sbl.EXTERNAL_INVITE_LINK_MODAL
@@ -63,7 +63,7 @@ function F() {
       analyticsLocations: e
     }),
     className: b.experimentUpsellError,
-    children: [(0, t.jsx)(d.SrA, {
+    children: [(0, t.jsx)(o.SrA, {
       size: "md",
       className: b.experimentUpsellIcon,
       color: v.JX.PREMIUM_TIER_2
@@ -83,10 +83,10 @@ function U(e) {
   } = e;
   return (0, t.jsxs)("div", {
     "aria-hidden": "true",
-    className: r()(b.iconContainer, l),
+    className: a()(b.iconContainer, l),
     children: [(0, t.jsx)(S.Z, {
       className: b.iconSparklePlus
-    }), (0, t.jsx)(d.xPt, {
+    }), (0, t.jsx)(o.xPt, {
       size: "custom",
       color: "currentColor",
       className: b.iconLink,
@@ -115,7 +115,7 @@ function z(e) {
         className: b.errorContent,
         children: [(0, t.jsx)(U, {
           className: b.errorImage
-        }), (0, t.jsx)(d.Heading, {
+        }), (0, t.jsx)(o.Heading, {
           id: n,
           variant: "heading-xl/semibold",
           color: "text-strong",
@@ -135,21 +135,21 @@ function z(e) {
 }
 
 function y(e) {
-  var l, n, a, r, v, p;
+  var l, n, r, a, v, p;
   let S, T, k, {
     transitionState: U
   } = e;
-  (0, o.e7)([f.default], () => {
+  (0, d.e7)([f.default], () => {
     var e;
     return null == (e = f.default.getCurrentUser()) ? true : e.premiumType
   });
-  let y = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
+  let y = (0, d.e7)([f.default], () => f.default.getCurrentUser()),
     {
       invite: V,
       error: w,
       submitting: H
-    } = (0, o.cj)([R.Z], () => R.Z.getProps()),
-    K = (0, o.e7)([N.Z], () => {
+    } = (0, d.cj)([R.Z], () => R.Z.getProps()),
+    K = (0, d.e7)([N.Z], () => {
       var e;
       return N.Z.getFriendMemberIds(null != (e = null == V ? true : V.code) ? e : "")
     });
@@ -176,7 +176,7 @@ function y(e) {
     {
       analyticsLocations: Q
     } = (0, g.ZP)(x.Z.INVITE_MODAL),
-    Y = null != (a = null == q ? true : q.length) ? a : 0,
+    Y = null != (r = null == q ? true : q.length) ? r : 0,
     J = Y > 0;
   if (i.useEffect(() => {
       if (J && (null == V ? true : V.code) != null) {
@@ -209,7 +209,7 @@ function y(e) {
     channel: en,
     inviter: et,
     target_application: ei
-  } = V, ea = null == V.guild && null == V.channel && null != V.inviter, er = X && (null != (r = null == q ? true : q.length) ? r : 0) > 0 && null != et, es = null != el || er;
+  } = V, er = null == V.guild && null == V.channel && null != V.inviter, ea = X && (null != (a = null == q ? true : q.length) ? a : 0) > 0 && null != et, es = null != el || ea;
   if (null != ei) S = null == el ? true : el.name, T = _.ZP.createFromServer(ei).getCoverImageURL(1024);
   else if (null != el) S = el.name, T = C.ZP.getGuildSplashURL({
     id: el.id,
@@ -217,7 +217,7 @@ function y(e) {
   });
   else if ((null == (S = en.name) || "" === S) && null != et && (S = et.username), null == S) throw Error("no name for group DM invite");
   let eu = (0, E.yU)();
-  return k = ea ? O.intl.string(O.t["e/6Ogt"]) : O.intl.format(O.t["9sWQNT"], {
+  return k = er ? O.intl.string(O.t["e/6Ogt"]) : O.intl.format(O.t["9sWQNT"], {
     usernameHook: () => (0, t.jsx)("span", {
       children: W
     })
@@ -242,17 +242,17 @@ function y(e) {
         className: b.modalContainer,
         children: [(0, t.jsxs)("div", {
           className: b.contentWrapper,
-          children: [er && (0, t.jsxs)("div", {
+          children: [ea && (0, t.jsxs)("div", {
             className: b.inviterContainer,
             children: [(0, t.jsx)(m.Z, {
               user: new I.Z(et),
-              size: d.EFr.SIZE_20
-            }), (0, t.jsx)(d.Text, {
+              size: o.EFr.SIZE_20
+            }), (0, t.jsx)(o.Text, {
               tag: "span",
               variant: "text-md/medium",
               color: "text-subtle",
               children: O.intl.format(O.t.ri1ubC, {
-                usernameHook: (e, l) => (0, t.jsx)(d.Text, {
+                usernameHook: (e, l) => (0, t.jsx)(o.Text, {
                   variant: "text-md/semibold",
                   color: "text-default",
                   tag: "span",
@@ -269,7 +269,7 @@ function y(e) {
                 disableUser: es,
                 error: w,
                 friendMemberIds: q,
-                showInvitedByHeader: !er
+                showInvitedByHeader: !ea
               })
             }), (0, t.jsxs)("div", {
               children: [eu ? (0, t.jsx)(F, {}) : null, (0, t.jsxs)(u.Kqy, {
@@ -284,7 +284,7 @@ function y(e) {
                   text: eu ? O.intl.string(O.t.ZNCziL) : k,
                   icon: eu || null == y ? true : () => (0, t.jsx)(m.Z, {
                     "aria-hidden": true,
-                    size: d.EFr.SIZE_16,
+                    size: o.EFr.SIZE_16,
                     user: y,
                     className: b.acceptAsAvatar
                   })

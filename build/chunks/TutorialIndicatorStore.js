@@ -1,9 +1,10 @@
-/** Chunk was on 40184 **/
-/** chunk id: 10401, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 10401, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => P
 }), require("./388685.js");
-var i, Chunk873546 = require("./873546.js"),
+var r, Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk38618 = require("./38618.js"),
@@ -22,88 +23,112 @@ function u(e, t, n) {
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
+    }))), r.forEach(function(t) {
       u(e, t, n[t])
     })
   }
   return e
 }
 
+function f(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = {},
-  h = {},
-  m = true,
+let _ = {},
+  m = {},
+  h = true,
   g = {},
-  b = false;
+  E = false;
 
-function C() {
-  if (g = {}, !m)
-    for (let [e, t] of Object.entries(s.Z)) {
-      let n = false !== f[e];
+function b() {
+  return l.Z
+}
+
+function y() {
+  if (g = {}, !h)
+    for (let [e, t] of Object.entries(b())) {
+      let n = false !== _[e];
       if (g[e] = n, n && null != t.prerequisites)
-        for (let n of t.prerequisites) false !== f[n] && (g[e] = false)
+        for (let n of t.prerequisites) false !== _[n] && (g[e] = false)
     }
 }
-class y extends(i = Chunk442837.ZP.Store) {
+
+function O(e) {
+  _ = p(d({}, _), {
+    [e.tutorialId]: false
+  }), m = d({}, m), delete m[e.tutorialId], y()
+}
+
+function v(e) {
+  m = p(d({}, m), {
+    [e.tutorialId]: e.renderData
+  })
+}
+
+function S(e) {
+  m = d({}, m), delete m[e.tutorialId]
+}
+
+function I() {
+  h = true
+}
+
+function T(e) {
+  let {
+    tutorial: t
+  } = e;
+  E = true, h = true, _ = {}, null != t && (h = t.indicators_suppressed, t.indicators_confirmed.forEach(e => _[e] = false)), y()
+}
+
+function C() {
+  E = false
+}
+
+function A(e) {
+  return i.tq && ["writing-messages", "organize-by-topic"].includes(e)
+}
+class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    C(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(o.Z)
+    y(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(s.Z)
   }
   shouldShow(e) {
-    return !(!b || m || c.a || r.tq && ["writing-messages", "organize-by-topic"].includes(e)) && (g[e] || false)
+    return !(!E || h || c.a || A(e)) && (g[e] || false)
   }
   shouldShowAnyIndicators() {
-    return !m
+    return !h
   }
   getIndicators() {
-    return h
+    return m
   }
   getData() {
-    return s.Z
+    return b()
   }
   getDefinition(e) {
     let t = this.getData();
     return null != t ? t[e] : null
   }
 }
-u(y, "displayName", "TutorialIndicatorStore");
-let v = new y(Chunk570140.Z, {
-  CONNECTION_OPEN: function(e) {
-    let {
-      tutorial: t
-    } = e;
-    b = true, m = true, f = {}, null != t && (m = t.indicators_suppressed, t.indicators_confirmed.forEach(e => f[e] = false)), C()
-  },
-  CONNECTION_CLOSED: function() {
-    b = false
-  },
-  TUTORIAL_INDICATOR_DISMISS: function(e) {
-    f = p(d({}, f), {
-      [e.tutorialId]: false
-    }), h = d({}, h), delete h[e.tutorialId], C()
-  },
-  TUTORIAL_INDICATOR_SHOW: function(e) {
-    h = p(d({}, h), {
-      [e.tutorialId]: e.renderData
-    })
-  },
-  TUTORIAL_INDICATOR_HIDE: function(e) {
-    h = d({}, h), delete h[e.tutorialId]
-  },
-  TUTORIAL_INDICATOR_SUPPRESS_ALL: function() {
-    m = true
-  }
+u(N, "displayName", "TutorialIndicatorStore");
+let P = new N(Chunk570140.Z, {
+  CONNECTION_OPEN: T,
+  CONNECTION_CLOSED: C,
+  TUTORIAL_INDICATOR_DISMISS: O,
+  TUTORIAL_INDICATOR_SHOW: v,
+  TUTORIAL_INDICATOR_HIDE: S,
+  TUTORIAL_INDICATOR_SUPPRESS_ALL: I
 })

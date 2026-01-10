@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 81985 **/
 /** chunk id: 360328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => p
@@ -14,42 +14,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e, t, p, f) {
-  let [h, m] = r.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getChannel(f)), b = r.useCallback(() => {
+  let [h, g] = i.useState(false), m = (0, l.e7)([s.Z], () => s.Z.getChannel(f)), b = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.R0RpRX), a.ToastType.FAILURE))
-  }, []), C = r.useCallback(async () => {
+  }, []), y = i.useCallback(async () => {
     if (!h && null != e && null != t && null != p) {
-      if (null != g) return void o.default.selectPrivateChannel(g.id);
+      if (null != m) return void o.default.selectPrivateChannel(m.id);
       if (!h) {
-        m(true);
+        g(true);
         try {
           await c.Z.createOrEnterJoinRequestInterview(p)
         } catch (e) {
           b()
         } finally {
-          m(false)
+          g(false)
         }
       }
     }
-  }, [e, p, g, b, h, t]);
+  }, [e, p, m, b, h, t]);
   return {
     approveRequest: async () => {
       if (!h && null != e && null != t && null != p) {
-        m(true);
+        g(true);
         try {
           await c.Z.updateGuildJoinRequest(e, t, p, u.wB.APPROVED)
         } catch (e) {
           b()
         } finally {
-          m(false)
+          g(false)
         }
       }
     },
     rejectRequest: () => {
       null != e && null != t && null != p && (0, a.ZDy)(async () => {
         let {
-          default: r
+          default: i
         } = await n.e("56496").then(n.bind(n, 113886));
-        return n => (0, i.jsx)(r, {
+        return n => (0, r.jsx)(i, {
           modalProps: n,
           guildId: e,
           userId: t,
@@ -59,6 +59,6 @@ function p(e, t, p, f) {
       })
     },
     submitting: h,
-    handleOpenInterview: C
+    handleOpenInterview: y
   }
 }

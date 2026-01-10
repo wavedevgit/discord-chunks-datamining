@@ -82,6 +82,10 @@ class g extends(i = Chunk442837.ZP.Store) {
   get assets() {
     return r
   }
+  getSongs(e) {
+    var t;
+    return null == r || null == (t = r.genres[e]) ? true : t.songs
+  }
 }
 l(g, "displayName", "HavenStore");
 let E = new g(Chunk570140.Z, {

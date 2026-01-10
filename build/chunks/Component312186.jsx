@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk512080 = require("./512080.js"),
   Chunk478411 = require("./478411.js");
 
-function _(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,49 +35,49 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z() {
-  let e = h.default.getNotificationPositionMode(),
+function j() {
+  let e = f.default.getNotificationPositionMode(),
     t = e !== O._vf.DISABLED,
-    n = f.ZP.getOverlayKeybind(),
-    i = f.ZP.getOverlayChatKeybind();
-  l.Z.track(O.rMx.OVERLAY_SETTINGS_UPDATED, {
+    n = h.ZP.getOverlayKeybind(),
+    i = h.ZP.getOverlayChatKeybind();
+  a.Z.track(O.rMx.OVERLAY_SETTINGS_UPDATED, {
     enabled: true,
     notifications_enabled: t,
     notifications_position: t ? e : null,
     text_notifications_mode: y.Z.isNotificationDisabled(v.n0.TextChat) ? "DISABLED" : "ENABLED",
-    text_opacity_slider: h.default.getTextWidgetOpacity(),
+    text_opacity_slider: f.default.getTextWidgetOpacity(),
     hotkey: null != n ? (0, g.BB)(n.shortcut) : null,
     text_activation_hotkey: null != i ? (0, g.BB)(i.shortcut) : null
   })
 }
-class j extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   componentDidMount() {
-    l.Z.track(O.rMx.SETTINGS_PANE_VIEWED, {
+    a.Z.track(O.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "overlay",
       destination_pane: "OVERLAY SETTINGS",
       origin_pane: null
     })
   }
   handleChangeNotificationPositionMode(e, t) {
-    l.Z.setNotificationPositionMode(t), Z()
+    a.Z.setNotificationPositionMode(t), j()
   }
   handleChangeAvatarSizeMode(e) {
     let {
       value: t
     } = e;
-    l.Z.setAvatarSizeMode(t)
+    a.Z.setAvatarSizeMode(t)
   }
   handleChangeDisplayNameMode(e) {
     let {
       value: t
     } = e;
-    l.Z.setDisplayNameMode(t)
+    a.Z.setDisplayNameMode(t)
   }
   handleChangeDisplayUserMode(e) {
     let {
       value: t
     } = e;
-    l.Z.setDisplayUserMode(t)
+    a.Z.setDisplayUserMode(t)
   }
   renderHeader() {
     return (0, i.jsxs)(c.Z, {
@@ -86,16 +86,16 @@ class j extends Chunk473749.PureComponent {
       shrink: 0,
       className: x.header,
       children: [(0, i.jsxs)(c.Z, {
-        children: [(0, i.jsx)(o.Heading, {
+        children: [(0, i.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           className: x.headerTitle,
           children: E.intl.string(E.t["35G2Mq"])
         }), (0, i.jsx)("div", {
           className: x.headerClose,
-          children: (0, i.jsx)(o.hU, {
+          children: (0, i.jsx)(l.hU, {
             variant: "icon-only",
             size: "md",
-            icon: o.Dio,
+            icon: l.Dio,
             onClick: this.props.onClose,
             "aria-label": E.intl.string(E.t.cpT0Cq)
           })
@@ -106,21 +106,21 @@ class j extends Chunk473749.PureComponent {
   renderTabBar() {
     let {
       selectedSection: e
-    } = this.state, t = u.Z.isDeveloper ? (0, i.jsx)(o.njP.Item, {
+    } = this.state, t = u.Z.isDeveloper ? (0, i.jsx)(l.njP.Item, {
       id: "DEVELOPER",
       className: x.tabBarItem,
       children: "Developer"
     }) : null;
-    return (0, i.jsxs)(o.njP, {
+    return (0, i.jsxs)(l.njP, {
       selectedItem: e,
       type: "top",
       className: x.__invalid_tabBar,
       onItemSelect: this.handleSelectSection,
-      children: [(0, i.jsx)(o.njP.Item, {
+      children: [(0, i.jsx)(l.njP.Item, {
         id: "GENERAL",
         className: x.tabBarItem,
         children: E.intl.string(E.t["0FYxxw"])
-      }), (0, i.jsx)(o.njP.Item, {
+      }), (0, i.jsx)(l.njP.Item, {
         id: "VOICE",
         className: x.tabBarItem,
         children: E.intl.string(E.t["3WeSiE"])
@@ -141,7 +141,7 @@ class j extends Chunk473749.PureComponent {
       default:
         e = this.renderGeneralSettings()
     }
-    return (0, i.jsx)(o.h21, {
+    return (0, i.jsx)(l.h21, {
       className: x.content,
       children: e
     }, t)
@@ -152,28 +152,28 @@ class j extends Chunk473749.PureComponent {
       shouldShowKeybindIndicators: t,
       showKeybindIndicators: n,
       shouldShowInviteNotification: r
-    } = this.props, a = !y.Z.isNotificationDisabled(v.n0.TextChat), s = e !== O._vf.DISABLED;
-    return (0, i.jsxs)(o.C3N, {
-      children: [(0, i.jsx)(o.gNt, {
+    } = this.props, s = !y.Z.isNotificationDisabled(v.n0.TextChat), o = e !== O._vf.DISABLED;
+    return (0, i.jsxs)(l.C3N, {
+      children: [(0, i.jsx)(l.gNt, {
         label: E.intl.string(E.t.IQv8Eo),
         children: (0, i.jsx)(d.Z, {
           position: e,
           onChange: this.handleChangeNotificationPositionMode
         })
-      }), (0, i.jsx)(o.rsf, {
+      }), (0, i.jsx)(l.rsf, {
         label: E.intl.string(E.t.Fy5kPp),
-        checked: a && s,
+        checked: s && o,
         onChange: this.handleToggleTextChatNotifications,
-        disabled: !s
-      }), (0, i.jsx)(o.rsf, {
+        disabled: !o
+      }), (0, i.jsx)(l.rsf, {
         label: E.intl.string(E.t["f+c48/"]),
         description: E.intl.string(E.t.W9DVVf),
         checked: r,
         onChange: this.handleToggleInviteNotification
-      }), n && (0, i.jsx)(o.rsf, {
+      }), n && (0, i.jsx)(l.rsf, {
         label: E.intl.string(E.t.XZTl9r),
         checked: t,
-        onChange: e => l.Z.setShowKeybindIndicators(e)
+        onChange: e => a.Z.setShowKeybindIndicators(e)
       })]
     })
   }
@@ -183,9 +183,9 @@ class j extends Chunk473749.PureComponent {
       displayNameMode: t,
       displayUserMode: n
     } = this.props;
-    return (0, i.jsxs)(o.Kqy, {
+    return (0, i.jsxs)(l.Kqy, {
       gap: 20,
-      children: [(0, i.jsx)(o.FXm, {
+      children: [(0, i.jsx)(l.FXm, {
         label: E.intl.string(E.t.dnvZSg),
         onChange: e => this.handleChangeAvatarSizeMode({
           value: e
@@ -198,7 +198,7 @@ class j extends Chunk473749.PureComponent {
           name: E.intl.string(E.t.BKIKqx)
         }],
         value: e
-      }), (0, i.jsx)(o.FXm, {
+      }), (0, i.jsx)(l.FXm, {
         label: E.intl.string(E.t.J0dpcB),
         onChange: e => this.handleChangeDisplayNameMode({
           value: e
@@ -214,7 +214,7 @@ class j extends Chunk473749.PureComponent {
           name: E.intl.string(E.t.ekjlPL)
         }],
         value: t
-      }), (0, i.jsx)(o.FXm, {
+      }), (0, i.jsx)(l.FXm, {
         label: E.intl.string(E.t.swsWWC),
         onChange: e => this.handleChangeDisplayUserMode({
           value: e
@@ -233,7 +233,7 @@ class j extends Chunk473749.PureComponent {
   renderDeveloperSettings() {
     return (0, i.jsx)("div", {
       className: S.marginBottom20,
-      children: (0, i.jsx)(s.y6, {
+      children: (0, i.jsx)(o.y6, {
         label: "Crashes",
         value: true,
         options: [{
@@ -260,24 +260,24 @@ class j extends Chunk473749.PureComponent {
     })
   }
   render() {
-    return (0, i.jsxs)(o.VqE, {
+    return (0, i.jsxs)(l.VqE, {
       "aria-label": E.intl.string(E.t["35G2Mq"]),
       className: x.container,
       children: [this.renderHeader(), this.renderBody()]
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), Z(this, "state", {
       selectedSection: "GENERAL"
-    }), _(this, "handleSelectSection", e => {
+    }), Z(this, "handleSelectSection", e => {
       this.setState({
         selectedSection: e
       })
-    }), _(this, "handleToggleTextChatNotifications", () => {
-      l.Z.setNotificationDisabledSetting(b.i.TEXT_CHAT, !this.props.textChatDisabled), Z()
-    }), _(this, "handleToggleInviteNotification", () => {
+    }), Z(this, "handleToggleTextChatNotifications", () => {
+      a.Z.setNotificationDisabledSetting(m.i.TEXT_CHAT, !this.props.textChatDisabled), j()
+    }), Z(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
-      l.Z.setNotificationDisabledSetting(b.i.GAME_ACTIVITY, !e)
+      a.Z.setNotificationDisabledSetting(m.i.GAME_ACTIVITY, !e)
     })
   }
 }
@@ -288,29 +288,29 @@ function C(e) {
   } = e, {
     avatarSizeMode: n,
     displayNameMode: r,
-    displayUserMode: s,
-    notificationPositionMode: o,
-    textChatDisabled: l,
+    displayUserMode: o,
+    notificationPositionMode: l,
+    textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, a.cj)([h.default, y.Z], () => ({
-    avatarSizeMode: h.default.getAvatarSizeMode(),
-    displayNameMode: h.default.getDisplayNameMode(),
-    displayUserMode: h.default.getDisplayUserMode(),
-    notificationPositionMode: h.default.getNotificationPositionMode(),
+  } = (0, s.cj)([f.default, y.Z], () => ({
+    avatarSizeMode: f.default.getAvatarSizeMode(),
+    displayNameMode: f.default.getDisplayNameMode(),
+    displayUserMode: f.default.getDisplayUserMode(),
+    notificationPositionMode: f.default.getNotificationPositionMode(),
     textChatDisabled: y.Z.isNotificationDisabled(v.n0.TextChat),
-    shouldShowKeybindIndicators: h.default.showKeybindIndicators,
+    shouldShowKeybindIndicators: f.default.showKeybindIndicators,
     shouldShowInviteNotification: !y.Z.isNotificationDisabled(v.n0.ActivityInvite)
-  })), u = (0, m.Z)({
+  })), u = (0, b.Z)({
     location: "Overlay Settings"
   });
-  return (0, i.jsx)(j, {
+  return (0, i.jsx)(_, {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,
-    displayUserMode: s,
-    notificationPositionMode: o,
-    textChatDisabled: l,
+    displayUserMode: o,
+    notificationPositionMode: l,
+    textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     showKeybindIndicators: u,
     shouldShowInviteNotification: d

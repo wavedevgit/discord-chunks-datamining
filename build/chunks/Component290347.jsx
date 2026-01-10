@@ -126,14 +126,14 @@ function Z(e) {
   } = e, {
     onClose: V,
     transitionState: F
-  } = x, z = (0, b.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), eo = i.useRef(ee), es = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
+  } = x, z = (0, b.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [K, q] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(K), el = i.useRef(Q), ea = i.useRef(X), eo = i.useRef(ee), es = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
       t = e - ei.current,
       n = el.current,
       r = ea.current;
-    return eo.current && (J(n += t), es.current || $(r += t)), K(e), [n, r]
+    return eo.current && (J(n += t), es.current || $(r += t)), q(e), [n, r]
   }
   return (0, g.Z)({
     type: o.ImpressionTypes.MODAL,
@@ -170,8 +170,8 @@ function Z(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
-    ei.current = q, el.current = Q, ea.current = X, eo.current = ee, es.current = en
-  }, [q, Q, X, ee, en]), i.useEffect(() => () => {
+    ei.current = K, el.current = Q, ea.current = X, eo.current = ee, es.current = en
+  }, [K, Q, X, ee, en]), i.useEffect(() => () => {
     if ("video" === Z.type || "embed" === Z.type) {
       let [e, t] = ep();
       v.default.track(I.rMx.CHANGE_LOG_VIDEO_PLAYED, {
@@ -224,7 +224,7 @@ function Z(e) {
           onPlay: e => {
             v.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
-            }), K(Date.now()), et(true), er(e.currentTarget.muted)
+            }), q(Date.now()), et(true), er(e.currentTarget.muted)
           },
           onEnded: e => {
             ep(), er(e.currentTarget.muted), et(false)
@@ -246,13 +246,13 @@ function Z(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === Z.type ? (0, r.jsx)(m.BC, {
+        }) : "embed" === Z.type ? (0, r.jsx)(h.BC, {
           className: a()(T.video, w),
           allowFullScreen: false,
           href: Z.href,
           thumbnail: Z.thumbnail,
           video: Z.embed,
-          provider: h.pn.YOUTUBE,
+          provider: m.pn.YOUTUBE,
           maxWidth: Z.embed.width,
           maxHeight: Z.embed.height,
           renderVideoComponent: O.lV,
