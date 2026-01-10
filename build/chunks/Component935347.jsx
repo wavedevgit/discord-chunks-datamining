@@ -44,35 +44,26 @@ class P extends Chunk473749.PureComponent {
     } = this.props, t = (0, m.uk)("discodo", e);
     return t.volume = 1, t
   }
-  isAlreadyConnected() {
-    let {
-      connected: e
-    } = this.props, {
-      ready: t,
-      hide: n,
-      problems: r
-    } = this.state;
-    return e && t && !n && !r
-  }
   componentDidMount() {
-    this.setProblemsTimeout(), this.isAlreadyConnected() && (0, _.t)()
+    this.setProblemsTimeout(), this.props.connected && (0, _.t)()
   }
   componentDidUpdate(e, t) {
     let {
-      hide: n,
-      problems: r
+      ready: n,
+      hide: r,
+      problems: i
     } = this.state, {
-      connected: i,
-      soundpack: l
-    } = this.props, a = this.isAlreadyConnected();
-    e.soundpack !== l && (this._connectedSound = this.createSound()), e.connected !== i || a ? (i && (0, _.t)(), i && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
+      connected: l,
+      soundpack: a
+    } = this.props, o = l && n && !r && !i;
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || o ? (l && (0, _.t)(), l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
       problems: false,
-      hide: i
-    })) : t.hide !== n ? (n ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
+      hide: l
+    })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
       shouldRender: true
     }), setTimeout(() => this.setState({
-      shouldRender: !n
-    }), 200)) : t.problems !== r && r && p.Z.checkIncidents()
+      shouldRender: !r
+    }), 200)) : t.problems !== i && i && p.Z.checkIncidents()
   }
   componentWillUnmount() {
     this.clearProblemsTimeout()
