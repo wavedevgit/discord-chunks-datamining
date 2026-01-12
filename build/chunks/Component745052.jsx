@@ -245,7 +245,7 @@ let ea = e => {
           actions: [{
             text: $.intl.string($.t.JN6EOJ),
             onClick: e => {
-              e.stopPropagation(), (0, Z.openUserSettings)(A.n.CONTENT_AND_SOCIAL_PANEL, {
+              e.stopPropagation(), (0, A.openUserSettings)(Z.n.CONTENT_AND_SOCIAL_PANEL, {
                 section: Q.oAB.CONTENT_AND_SOCIAL,
                 scrollPosition: X.FY.MESSAGE_REQUESTS_V2
               }), l(J.L.TAKE_ACTION)
@@ -293,7 +293,7 @@ let es = (0, Chunk112724.Z)(function(e) {
   i.useEffect(() => {
     null != h && !_ && E && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
   }, [h, E, b, _]);
-  let [y, I] = i.useState(q.pS.REQUESTS), A = e => {
+  let [y, I] = i.useState(q.pS.REQUESTS), Z = e => {
     I(e)
   };
   return (0, v.Tt)({
@@ -322,7 +322,7 @@ let es = (0, Chunk112724.Z)(function(e) {
             "aria-label": $.intl.string($.t.e7GWjQ),
             selectedItem: y,
             type: "top-pill",
-            onItemSelect: A,
+            onItemSelect: Z,
             children: [(0, r.jsx)(p.njP.Item, {
               id: q.pS.REQUESTS,
               className: ee.item,

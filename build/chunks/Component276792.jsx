@@ -52,7 +52,7 @@ function h(e) {
     type: "image",
     src: I ? E.heroArtImageLinkLightTheme : E.heroArtImageLinkDarkTheme
   });
-  let A = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
+  let Z = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
     text: E.modalTopPill,
     className: g.modalTopPill
   }) : true;
@@ -61,7 +61,7 @@ function h(e) {
     promotionId: _,
     renderModalProps: O,
     header: E.header,
-    modalTopExtra: A,
+    modalTopExtra: Z,
     subHeader: E.subheader,
     subHeaderExtra: P,
     body: E.body,

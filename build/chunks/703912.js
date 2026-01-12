@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 703912, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./35282.js"), require("./997841.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk664751 = require("./664751.js"),
   Chunk373793 = require("./373793.js"),
@@ -72,8 +72,8 @@ async function P(e, t, n) {
     nonce: N,
     scope: P,
     permissions: x,
-    guild_id: A,
-    channel_id: Z,
+    guild_id: Z,
+    channel_id: A,
     prompt: w,
     disable_guild_select: L,
     integration_type: R,
@@ -147,7 +147,7 @@ async function P(e, t, n) {
       errorCode: C.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorize Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
-  null == n || n(s.application, Z, D);
+  null == n || n(s.application, A, D);
   let G = v.Hn;
   try {
     G = a.vB(null != x ? x : 0)
@@ -165,8 +165,8 @@ async function P(e, t, n) {
     codeChallenge: I,
     codeChallengeMethod: S,
     state: T,
-    guildId: A,
-    channelId: Z,
+    guildId: Z,
+    channelId: A,
     prompt: w,
     disableGuildSelect: L,
     disclosures: c,
@@ -221,7 +221,7 @@ function x(e, t) {
   })
 }
 
-function A(e, t) {
+function Z(e, t) {
   return {
     [C.Etm.AUTHENTICATE]: (0, u.S)(C.Etm.AUTHENTICATE, {
       handler(n) {

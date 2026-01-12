@@ -106,12 +106,12 @@ function P(e) {
         location: n.location
       })
     }), [n.location, t])
-  }(e), A = [];
+  }(e), Z = [];
   for (let e of x) {
     let {
       activity: t
     } = e;
-    null != t && null != t.type && A.push(function(e, t) {
+    null != t && null != t.type && Z.push(function(e, t) {
       let {
         canJoin: n,
         activity: i,
@@ -169,5 +169,5 @@ function P(e) {
       })
     }(e, n))
   }
-  return [P, ...A]
+  return [P, ...Z]
 }

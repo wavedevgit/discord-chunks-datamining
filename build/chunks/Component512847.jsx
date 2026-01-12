@@ -43,7 +43,7 @@ function x(e, t, n, r) {
   })
 }
 
-function A() {
+function Z() {
   return x([v.Z, C.Z], () => ({
     inVoiceChannel: null != C.Z.getVoiceChannelId(),
     selfMute: v.Z.isSelfMute(),
@@ -63,7 +63,7 @@ function A() {
   }), null
 }
 
-function Z() {
+function A() {
   return x([v.Z, C.Z], () => ({
     videoEnabled: v.Z.isVideoEnabled(),
     inVoiceChannel: null != C.Z.getVoiceChannelId()
@@ -287,6 +287,6 @@ function B() {
 
 function V() {
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(A, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {}), (0, r.jsx)(L, {}), (0, r.jsx)(D, {}), (0, r.jsx)(k, {}), (0, r.jsx)(G, {}), (0, r.jsx)(U, {}), (0, r.jsx)(H, {}), (0, r.jsx)(R, {}), (0, r.jsx)(M, {}), (0, r.jsx)(B, {})]
+    children: [(0, r.jsx)(Z, {}), (0, r.jsx)(A, {}), (0, r.jsx)(w, {}), (0, r.jsx)(L, {}), (0, r.jsx)(D, {}), (0, r.jsx)(k, {}), (0, r.jsx)(G, {}), (0, r.jsx)(U, {}), (0, r.jsx)(H, {}), (0, r.jsx)(R, {}), (0, r.jsx)(M, {}), (0, r.jsx)(B, {})]
   })
 }

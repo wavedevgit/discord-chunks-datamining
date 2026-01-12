@@ -49,8 +49,8 @@ let I = Math.ceil(Math.sqrt(115200)),
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
-      glowSpring: A
-    }, Z] = (0, d.q_F)(() => ({
+      glowSpring: Z
+    }, A] = (0, d.q_F)(() => ({
       from: {
         glowSpring: 0
       },
@@ -75,27 +75,27 @@ let I = Math.ceil(Math.sqrt(115200)),
     })), R = i.useCallback(() => {
       L({
         shineSpring: 1
-      }), Z({
+      }), A({
         glowSpring: 1,
         delay: 200
       })
-    }, [L, Z]), D = i.useCallback(() => {
+    }, [L, A]), D = i.useCallback(() => {
       L({
         shineSpring: 0,
         immediate: true
-      }), Z({
+      }), A({
         glowSpring: 0,
         delay: 0
       })
-    }, [L, Z]), M = i.useCallback(() => {
+    }, [L, A]), M = i.useCallback(() => {
       L({
         shineSpring: 1,
         delay: 500
-      }), Z({
+      }), A({
         glowSpring: 1,
         delay: 700
       }), m.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
-    }, [L, Z]), [k, U] = i.useState(false), G = i.useCallback(e => {
+    }, [L, A]), [k, U] = i.useState(false), G = i.useCallback(e => {
       U(e.contentRect.width)
     }, []), H = (0, f.y)(G, [], {
       fireOnMount: true
@@ -149,7 +149,7 @@ let I = Math.ceil(Math.sqrt(115200)),
             }), (0, r.jsx)(o.animated.div, {
               className: y.glow,
               style: {
-                opacity: A.to({
+                opacity: Z.to({
                   range: [0, 1],
                   output: [0, .5]
                 })

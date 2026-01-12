@@ -55,11 +55,11 @@ let x = function(e) {
   let b = (0, s.e7)([O.Z], () => O.Z.theme),
     x = (0, y.If)(),
     {
-      section: A,
-      rows: Z
+      section: Z,
+      rows: A
     } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
     w = (0, s.e7)([h.Z], () => h.Z.getSuggestionCount()),
-    L = i.useMemo(() => Z.getRelationshipCounts(), [Z]);
+    L = i.useMemo(() => A.getRelationshipCounts(), [A]);
   i.useEffect(() => {
     null != t && p.Z.setInitialSection(t), 0 === L[S.OGo.FRIEND] && 0 === L[S.OGo.PENDING_INCOMING] && 0 === L[S.OGo.PENDING_OUTGOING] && 0 === L[S.OGo.BLOCKED] && p.Z.transitionToSection(S.pJs.ADD_FRIEND)
   }, [t, L]);
@@ -72,7 +72,7 @@ let x = function(e) {
     M = (0, g.Dt)(),
     k = [{
       id: S.pJs.ONLINE,
-      show: Z.filter(S.pJs.ONLINE).length > 0,
+      show: A.filter(S.pJs.ONLINE).length > 0,
       content: N.intl.string(N.t.b9w3bO),
       className: j.item
     }, {
@@ -82,7 +82,7 @@ let x = function(e) {
       className: j.item
     }, {
       id: S.pJs.PENDING,
-      show: Z.filter(S.pJs.PENDING).length > 0,
+      show: A.filter(S.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
         children: [N.intl.string(N.t.p6IHGE), x > 0 && (0, r.jsx)(c.mAB, {
           count: x,
@@ -120,7 +120,7 @@ let x = function(e) {
       className: j.nowPlayingColumn,
       children: (0, r.jsx)(_.Z, {})
     });
-  return U = A === S.pJs.ADD_FRIEND ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(C.Z, {
+  return U = Z === S.pJs.ADD_FRIEND ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(C.Z, {
     titleId: M
   }), (0, r.jsxs)("main", {
     className: j.container,
@@ -143,7 +143,7 @@ let x = function(e) {
           children: N.intl.string(N.t.TdEu5X)
         }), (0, r.jsx)(m.Z.Divider, {}), (0, r.jsx)(c.njP, {
           "aria-label": N.intl.string(N.t.TdEu5X),
-          selectedItem: A,
+          selectedItem: Z,
           type: "top-pill",
           onItemSelect: R,
           className: j.tabBar,
@@ -158,7 +158,7 @@ let x = function(e) {
     }), (0, r.jsxs)("div", {
       className: j.tabBody,
       children: [(0, r.jsx)(c.njP.Panel, {
-        id: A,
+        id: Z,
         className: j.peopleColumn,
         "aria-labelledby": M,
         children: U

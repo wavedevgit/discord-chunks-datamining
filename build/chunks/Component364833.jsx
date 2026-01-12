@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 364833, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -85,7 +85,7 @@ function x(e) {
   let {
     nodeRef: c,
     quest: m
-  } = e, _ = (0, d.O5)(), S = (0, o.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [x, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
+  } = e, _ = (0, d.O5)(), S = (0, o.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [x, Z] = i.useState(false), A = i.useCallback(() => Z(true), []), w = i.useCallback(() => Z(false), []), {
     launchInGameActivity: L
   } = (0, h.zB)(m), R = i.useCallback(e => {
     e.stopPropagation()
@@ -137,8 +137,8 @@ function x(e) {
     }),
     onClick: R,
     onKeyPress: R,
-    onFocus: Z,
-    onMouseEnter: Z,
+    onFocus: A,
+    onMouseEnter: A,
     onBlur: w,
     onMouseLeave: w,
     children: [(0, r.jsxs)("div", {
@@ -224,7 +224,7 @@ function x(e) {
     })]
   })
 }
-let A = function(e) {
+let Z = function(e) {
   return (0, r.jsx)(_.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,

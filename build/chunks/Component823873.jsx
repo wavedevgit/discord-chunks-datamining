@@ -29,7 +29,7 @@ function _(e) {
     startDateTimeString: m.intl.string(m.t.TxqPQR)
   } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, I]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == v ? true : v.name) ? t : j, x = null != v ? (0, o.KS)(v) : null;
   if (null == E || null == O) return null;
-  let A = null != E.description && E.description.length > 0;
+  let Z = null != E.description && E.description.length > 0;
   return (0, r.jsxs)("div", {
     className: b.eventContainer,
     children: [(0, r.jsx)("div", {
@@ -41,9 +41,9 @@ function _(e) {
       })
     }), (0, r.jsx)(a.Text, {
       variant: "text-lg/semibold",
-      className: A ? b.eventTitle : true,
+      className: Z ? b.eventTitle : true,
       children: E.name
-    }), A && (0, r.jsx)(a.Text, {
+    }), Z && (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-subtle",
       className: b.eventDescription,

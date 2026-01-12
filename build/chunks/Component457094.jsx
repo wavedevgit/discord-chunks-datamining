@@ -562,10 +562,10 @@ class t_ extends Chunk473749.PureComponent {
         } = await Promise.all([n.e("7082"), n.e("32454")]).then(n.bind(n, 650233));
         return t => (0, r.jsx)(e, ta({}, t))
       })
-    }), ec.Z.initialize(), eC.Z.initialize(), eO.Z.initialize(), k.Z.initialize(), A.Z.initialize(), Z.Z.initialize(), S.Z.initialize(), this.rewriterUnlisten = eS.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.Z.addRouteChangeListener(this.handleHistoryChange)
+    }), ec.Z.initialize(), eC.Z.initialize(), eO.Z.initialize(), k.Z.initialize(), Z.Z.initialize(), A.Z.initialize(), S.Z.initialize(), this.rewriterUnlisten = eS.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.Z.addRouteChangeListener(this.handleHistoryChange)
   }
   componentWillUnmount() {
-    eP.Z.terminate(), eW.Z.terminate(), ey.Z.terminate(), eE.Z.terminate(), P.Z.terminate(), y.ZP.terminate(), V.ZP.terminate(), eY.Z.terminate(), v.Z.terminate(), eI.Z.terminate(), e_.Z.terminate(), eG.Z.terminate(), O.Z.terminate(), H.Z.terminate(), ec.Z.terminate(), E.Z.terminate(), eC.Z.terminate(), ex.Z.terminate(), ew.Z.terminate(), em.Z.terminate(), eh.Z.terminate(), eb.Z.terminate(), L.Z.terminate(), R.Z.terminate(), eO.Z.terminate(), k.Z.terminate(), F.Z.terminate(), A.Z.terminate(), Z.Z.terminate(), S.Z.terminate(), z.Z.terminate(), eo.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+    eP.Z.terminate(), eW.Z.terminate(), ey.Z.terminate(), eE.Z.terminate(), P.Z.terminate(), y.ZP.terminate(), V.ZP.terminate(), eY.Z.terminate(), v.Z.terminate(), eI.Z.terminate(), e_.Z.terminate(), eG.Z.terminate(), O.Z.terminate(), H.Z.terminate(), ec.Z.terminate(), E.Z.terminate(), eC.Z.terminate(), ex.Z.terminate(), ew.Z.terminate(), em.Z.terminate(), eh.Z.terminate(), eb.Z.terminate(), L.Z.terminate(), R.Z.terminate(), eO.Z.terminate(), k.Z.terminate(), F.Z.terminate(), Z.Z.terminate(), A.Z.terminate(), S.Z.terminate(), z.Z.terminate(), eo.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
   }
   handleHistoryChange(e, t) {
     let {
@@ -602,24 +602,24 @@ class t_ extends Chunk473749.PureComponent {
           } = (0, l.parse)(t);
           null != e && eD.ZP.setSelectedSummary(i, e)
         }
-        if (c && a && null != i && null != eq.ZP.getCurrentSidebarChannelId(i) && eA.Z.closeChannelSidebar(i), null != s && d) {
+        if (c && a && null != i && null != eq.ZP.getCurrentSidebarChannelId(i) && eZ.Z.closeChannelSidebar(i), null != s && d) {
           let e = eq.ZP.getCurrentSidebarChannelId(n),
             t = e !== s;
           if (null != i && null != s && t)
             if (c)(0, eN.dL)(tt.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
-                type: eZ.Ff.THREAD
+                type: eA.Ff.THREAD
               };
-              null != o && (e.initialMessageId = o), eA.Z.openThreadAsSidebar({
+              null != o && (e.initialMessageId = o), eZ.Z.openThreadAsSidebar({
                 guildId: r,
                 baseChannelId: i,
                 channelId: s,
                 details: e
               })
             }
-          else c && null != e && null != i && eA.Z.closeChannelSidebar(i)
-        } else null == i || a || eA.Z.closeChannelSidebar(i);
+          else c && null != e && null != i && eZ.Z.closeChannelSidebar(i)
+        } else null == i || a || eZ.Z.closeChannelSidebar(i);
         let u = ed.Z.getIsOpen();
         if (i === tn.oC.ROLE_SUBSCRIPTIONS) eu.Z.closeSidebar();
         else if (h && u) {
@@ -663,7 +663,7 @@ class t_ extends Chunk473749.PureComponent {
           guildId: r,
           pathname: t
         }));
-        else if ((null == n ? true : n.parent_id) !== i) return eA.Z.closeChannelSidebar(i), {
+        else if ((null == n ? true : n.parent_id) !== i) return eZ.Z.closeChannelSidebar(i), {
           path: tt.Z5c.CHANNEL(r, i),
           state: e.state
         }

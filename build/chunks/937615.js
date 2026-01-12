@@ -2,13 +2,16 @@
 /** chunk id: 937615, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T3: () => b,
-  T4: () => g,
-  og: () => E,
-  qr: () => v,
-  xg: () => y
+  HR: () => E,
+  T3: () => O,
+  T4: () => b,
+  og: () => y,
+  qr: () => I,
+  xg: () => v,
+  yH: () => h
 }), require("./415506.js"), require("./704826.js"), require("./35282.js");
 var Chunk221513 = require("./221513.js"),
+  Chunk389053 = require("./389053.js"),
   Chunk706454 = require("./706454.js"),
   Chunk351402 = require("./351402.js"),
   Chunk358085 = require("./358085.js"),
@@ -17,7 +20,7 @@ var Chunk221513 = require("./221513.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,77 +29,91 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
-let p = Object.freeze(["en-CA", "en-AU", "en-NZ"]),
-  _ = 1.95583;
+let _ = Object.freeze(["en-CA", "en-AU", "en-NZ"]),
+  m = 1.95583;
 
-function m(e, t, n) {
-  var a;
-  let s = f({}, null != n ? n : {}),
-    l = null != (a = null == n ? true : n.localeOverride) ? a : i.default.locale;
-  "en-US" === l && p.includes(i.default.systemLocale) && (s.currencyDisplay = "code"), "en-US" === l && (0, o.isWindows)() && "en-GB" === i.default.systemLocale && (s.currencyDisplay = "code");
+function h(e, t, n) {
+  var i;
+  let o = p({}, null != n ? n : {}),
+    l = null != (i = null == n ? true : n.localeOverride) ? i : a.default.locale;
+  "en-US" === l && _.includes(a.default.systemLocale) && (o.currencyDisplay = "code"), "en-US" === l && (0, s.isWindows)() && "en-GB" === a.default.systemLocale && (o.currencyDisplay = "code");
   let {
     maximumFractionDigits: c,
     minimumFractionDigits: u
-  } = s;
-  return 0 === c && null == u && (s.minimumFractionDigits = 0), (0, r.T4)(e, t, l, s)
+  } = o;
+  return 0 === c && null == u && (o.minimumFractionDigits = 0), (0, r.T4)(e, t, l, o)
 }
 
-function h(e) {
-  return (!!(0, o.isDesktop)() || !!(0, o.isWeb)()) && "BG" === a.Z.ipCountryCode && (null == e ? true : e.toLowerCase()) === c.pK.EUR
-}
-
-function g(e, t, n) {
-  if (h(t)) {
-    let r = m(e, t, n),
-      i = m(e * _, c.pK.BGN, n);
-    return "".concat(r, " (").concat(i, ")")
+function g(e) {
+  if (Date.now() >= new Date("2026-08-05T22:00:00Z").getTime()) returnfalse;
+  let t = null;
+  switch ((0, s.getPlatformName)()) {
+    case "android":
+      t = n(332983).Z.getUserCountry();
+      break;
+    case "ios":
+      var r;
+      t = null == (r = i.Z.getStoreFront()) ? true : r.country;
+      break;
+    default:
+      t = o.Z.ipCountryCode
   }
-  return m(e, t, n)
+  return "BG" === t && (null == e ? true : e.toLowerCase()) === u.pK.EUR
 }
 
-function E(e, t, n) {
-  if (t === l.rV.YEAR) return u.intl.formatToPlainString(u.t["rS8FA+"], {
+function E(e, t) {
+  let n = h(e, u.pK.EUR, t),
+    r = h(e * m, u.pK.BGN, t);
+  return "".concat(n, " (").concat(r, ")")
+}
+
+function b(e, t, n) {
+  return g(t) ? E(e, n) : h(e, t, n)
+}
+
+function y(e, t, n) {
+  if (t === c.rV.YEAR) return d.intl.formatToPlainString(d.t["rS8FA+"], {
     price: e
   });
-  if (t === l.rV.MONTH && 1 === n) return u.intl.formatToPlainString(u.t.AbOLNu, {
+  if (t === c.rV.MONTH && 1 === n) return d.intl.formatToPlainString(d.t.AbOLNu, {
     price: e
   });
-  if (t === l.rV.MONTH && n > 1) return u.intl.formatToPlainString(u.t["Qc+9ww"], {
+  if (t === c.rV.MONTH && n > 1) return d.intl.formatToPlainString(d.t["Qc+9ww"], {
     price: e,
     intervalCount: n
   });
   throw Error("Unsupported interval type: ".concat(t, ", and interval count: ").concat(n))
 }
 
-function b(e, t) {
+function O(e, t) {
   return Intl.NumberFormat(e, {
     style: "percent",
     minimumFractionDigits: 0
   }).format(t)
 }
 
-function y(e) {
+function v(e) {
   let t = "interval_count" in e ? e.interval_count : e.intervalCount,
-    n = (0, s.aS)(e.id);
-  return E(g(n.amount, n.currency), e.interval, t)
+    n = (0, l.aS)(e.id);
+  return y(b(n.amount, n.currency), e.interval, t)
 }
 
-function O(e) {
+function S(e) {
   return e.length > 5 ? e.replace(/\.00(?=[\s)]|$)/g, "") : e
 }
 
-function v(e, t, n) {
-  return O(g(e, t, n))
+function I(e, t, n) {
+  return S(b(e, t, n))
 }

@@ -626,8 +626,8 @@ let eg = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     }),
     isInTestMode: null != l && u,
     matureAgree: D.Z.didMatureAgree,
-    theme: Z.Z.theme,
-    locale: A.default.locale,
+    theme: A.Z.theme,
+    locale: Z.default.locale,
     guild: null != c ? w.Z.getGuild(c.getGuildId()) : null
   }
 })(ef)))

@@ -119,7 +119,7 @@ let eh = e => {
     var {
       selected: t
     } = e, n = eg(e, ["selected"]);
-    let i = (0, A.b5)("PrivateChannels.ICYMIButton"),
+    let i = (0, Z.b5)("PrivateChannels.ICYMIButton"),
       l = (0, c.JA)("icymi");
     return i ? (0, r.jsx)("div", {
       className: ed.friendsButtonContainer,
@@ -177,7 +177,7 @@ let eh = e => {
       x = () => {
         N(true)
       },
-      A = () => (0, r.jsx)(v.Qj, ef(ep({
+      Z = () => (0, r.jsx)(v.Qj, ef(ep({
         onClick: y,
         interactiveClassName: E ? ed.friendsBadge : true,
         selected: t,
@@ -202,7 +202,7 @@ let eh = e => {
             size: 32,
             alt: ec.intl.string(ec.t["4LohBA"])
           }),
-          children: A()
+          children: Z()
         }), !u && (0, r.jsx)(z.Z, {
           className: ed.confetti,
           wind: 0,
@@ -223,7 +223,7 @@ let eh = e => {
             }
           }
         })]
-      }) : A()
+      }) : Z()
     })
   },
   eb = e => {
@@ -256,7 +256,7 @@ let eh = e => {
       selected: t
     } = e, n = (0, c.JA)("messageRequests"), {
       channelId: i
-    } = (0, Z._)();
+    } = (0, A._)();
     if (!(0, L.a)()) return null;
     let l = null == i ? true : () => E.Z.preload(el.ME, i);
     return (0, r.jsx)(v.Qj, ef(ep({
@@ -356,7 +356,7 @@ let eC = Chunk473749.memo(function(e) {
     shouldShowFamilyCenterRow: f,
     selectedChannelId: g,
     path: h
-  } = e, b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), v = i.useRef(null), I = (0, A.b5)("PrivateChannels"), C = null;
+  } = e, b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), v = i.useRef(null), I = (0, Z.b5)("PrivateChannels"), C = null;
   return c ? C = (0, r.jsx)(V.F, {
     targetElementRef: v
   }) : d && (C = (0, r.jsx)(G.d, {

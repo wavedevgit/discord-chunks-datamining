@@ -50,14 +50,14 @@ function N(e) {
     focusSectionProps: b
   } = e, [O, v] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
     backForwardButtons: x,
-    titlebarIconSize: A,
-    titlebarHoverHighlight: Z
+    titlebarIconSize: Z,
+    titlebarHoverHighlight: A
   } = (0, f.T)({
     location: "NotificationsInboxTitleBarButton"
   }), w = (0, r.jsx)(d.Dkj, {
     className: I.icon,
     color: O || P ? d.TVs.colors.ICON_STRONG : d.TVs.colors.ICON_MUTED,
-    size: A
+    size: Z
   }), {
     badge: L,
     badgeType: R
@@ -94,7 +94,7 @@ function N(e) {
       }({
         innerRef: h,
         className: a()(I.clickableContainer, {
-          [I.withHoverHighlight]: Z
+          [I.withHoverHighlight]: A
         })
       }, b, s), n = n = {
         onMouseEnter: () => {
@@ -111,12 +111,12 @@ function N(e) {
           className: a()(I.iconWrapper, null),
           children: "unread" === R ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(p.ZP, {
-              width: c.Z[A],
-              height: c.Z[A],
+              width: c.Z[Z],
+              height: c.Z[Z],
               mask: p.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
               children: w
             }), (0, r.jsx)("div", {
-              className: a()(I.unreadDot, I[A])
+              className: a()(I.unreadDot, I[Z])
             })]
           }) : w
         }), L]

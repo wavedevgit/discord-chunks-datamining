@@ -79,7 +79,7 @@ function h(e) {
         type: (0, u.v$)(e)
       })), O)
     }, [O, m]),
-    A = r.useCallback(e => {
+    Z = r.useCallback(e => {
       let {
         viewableItems: t
       } = e;
@@ -110,7 +110,7 @@ function h(e) {
         }
       }))
     }, [O]),
-    Z = r.useCallback(e => {
+    A = r.useCallback(e => {
       let {
         viewableItems: t
       } = e;
@@ -149,15 +149,15 @@ function h(e) {
         viewAreaCoveragePercentThreshold: 50,
         minimumViewTime: 1e3
       },
-      onViewableItemsChanged: A
+      onViewableItemsChanged: Z
     }, {
       viewabilityConfig: {
         waitForInteraction: false,
         viewAreaCoveragePercentThreshold: 50,
         minimumViewTime: 50
       },
-      onViewableItemsChanged: Z
-    }], [x, A, Z]);
+      onViewableItemsChanged: A
+    }], [x, Z, A]);
   r.useEffect(() => {
     a.Z.openICYMITab()
   }, []);

@@ -82,14 +82,14 @@ let T = (0, Chunk663993.Un)({
     webpackId: 994763,
     name: "GuildSettings"
   }),
-  A = {
+  Z = {
     [Chunk981631.S9g.USER_SETTINGS]: () => (0, i.jsx)(T, {}),
     [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, i.jsx)(j, {}),
     [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, i.jsx)(x, {}),
     [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, i.jsx)(P, {}),
     [Chunk981631.S9g.COMPONENT_PLAYGROUND]: () => (0, i.jsx)(N, {})
   },
-  Z = "SHOWN",
+  A = "SHOWN",
   w = "HIDDEN",
   L = {
     friction: 10,
@@ -113,8 +113,8 @@ class D extends(r = Chunk473749.PureComponent) {
       mode: n
     } = e;
     if (t !== n) {
-      if (t === Z && n === w) return this.animateIn();
-      if (t === w && n === Z) return this.animateUnder()
+      if (t === A && n === w) return this.animateIn();
+      if (t === w && n === A) return this.animateUnder()
     }
   }
   componentWillEnter(e) {
@@ -279,16 +279,16 @@ class M extends Chunk473749.PureComponent {
       length: r
     } = t, l = [];
     return l.push((0, i.jsx)(D, {
-      mode: 0 !== r || n ? w : Z,
+      mode: 0 !== r || n ? w : A,
       baseLayer: true,
       children: e
     }, "layer-base")), t.forEach((e, t) => l.push(this.renderComponent(e, t, r))), l
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? A[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(D, {
+    return r = "string" == typeof e ? Z[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(D, {
       name: "string" == typeof e ? e : true,
-      mode: t === n - 1 ? Z : w,
+      mode: t === n - 1 ? A : w,
       children: [(0, i.jsx)(R, {}), r]
     }, "layer-".concat(t))
   }

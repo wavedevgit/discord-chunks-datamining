@@ -36,8 +36,8 @@ function P(e) {
     isFocused: l,
     isActive: P,
     status: x,
-    activities: A,
-    applicationStream: Z,
+    activities: Z,
+    applicationStream: A,
     isGameRelationship: w,
     isMobile: L,
     onOtherHover: R,
@@ -113,8 +113,8 @@ function P(e) {
         subText: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
             hovered: e,
-            activities: A,
-            applicationStream: Z,
+            activities: Z,
+            applicationStream: A,
             status: x,
             user: M,
             userIgnored: O.Z.isIgnored(M.id)

@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk938359 = require("./938359.js");
 
-function Z(e) {
+function A(e) {
   var t, n;
   let {
     user: i,
@@ -93,7 +93,7 @@ function Z(e) {
     }), e))
   }, _ = 0 === l, v = _ ? u.YqE : a ? u.XcD : true, I = _ ? x.intl.string(x.t.aI4VOL) : a ? x.intl.string(x.t.kABl2x) : true;
   return (0, r.jsx)(u.P3F, {
-    className: A.frequentFriendAvatarButton,
+    className: Z.frequentFriendAvatarButton,
     onClick: b,
     onMouseEnter: g.onMouseEnter,
     onMouseLeave: g.onMouseLeave,
@@ -179,30 +179,30 @@ function w() {
   } = t, D = (E === o.S.AU || E === o.S.GB) && !O, M = null != E && o.M.EU_COUNTRIES.has(E) && !l, k = !D && !M && null != E && R, U = p.scrollWidth > p.clientWidth, G = p.scrollLeft > 0, H = p.scrollLeft < p.scrollWidth - p.clientWidth - 2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: A.frequentFriendsRow,
+      className: Z.frequentFriendsRow,
       children: [(0, r.jsxs)("div", {
-        className: A.frequentFriendsHeader,
+        className: Z.frequentFriendsHeader,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-sm/semibold",
-          className: A.frequentFriendsTitle,
+          className: Z.frequentFriendsTitle,
           children: x.intl.string(x.t.QEh90H)
         }), (0, r.jsx)(c.u, {
           text: x.intl.string(x.t.tqCMcU),
           children: (0, r.jsx)(u.d3s, {
-            className: A.frequentFriendsInfoIcon
+            className: Z.frequentFriendsInfoIcon
           })
         })]
       }), (0, r.jsx)(u.xVE, {
         ref: e => {
           m.current = e, C.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
-        className: a()(A.frequentFriendsAvatars, {
-          [A.scrollMaskLeft]: U && G,
-          [A.scrollMaskRight]: U && H
+        className: a()(Z.frequentFriendsAvatars, {
+          [Z.scrollMaskLeft]: U && G,
+          [Z.scrollMaskRight]: U && H
         }),
         orientation: "horizontal",
         onScroll: w,
-        children: L.map((e, t) => (0, r.jsx)(Z, {
+        children: L.map((e, t) => (0, r.jsx)(A, {
           user: e,
           index: t,
           isCompetitive: k && t === L.length - 1

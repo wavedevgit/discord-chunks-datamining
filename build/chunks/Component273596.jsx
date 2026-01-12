@@ -60,9 +60,9 @@ function P(e) {
     searchCategoryId: x
   } = (0, b.f)({
     loadId: t
-  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), M = i.useRef(R), [k, U] = i.useState(3), G = i.useRef(k), H = i.useRef(null), B = i.useCallback(e => {
-    if (null != e && !A && !f) 336 * (s.length / k) <= e.height && P()
-  }, [A, f, s.length, k, P]), V = i.useCallback(e => {
+  }), Z = 0 === s.length && !f, A = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), M = i.useRef(R), [k, U] = i.useState(3), G = i.useRef(k), H = i.useRef(null), B = i.useCallback(e => {
+    if (null != e && !Z && !f) 336 * (s.length / k) <= e.height && P()
+  }, [Z, f, s.length, k, P]), V = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -79,10 +79,10 @@ function P(e) {
       searchId: w,
       query: I,
       guildResults: s.map(g.Z.getGuild).filter(p.lm),
-      analyticsContext: Z,
+      analyticsContext: A,
       categoryId: x
     })
-  }, [Z, s, t, x, w, I]);
+  }, [A, s, t, x, w, I]);
   let z = i.useCallback(e => n(e, x), [n, x]),
     Y = i.useMemo(() => f ? [s.length, 0] : [s.length], [s.length, f]),
     W = i.useCallback((e, n, i) => {
@@ -103,7 +103,7 @@ function P(e) {
               }), (0, r.jsx)(v.Z, {
                 loadId: t
               })]
-            }), A && (0, r.jsx)(O.Z, {
+            }), Z && (0, r.jsx)(O.Z, {
               loadId: t
             })]
           }, i);
@@ -114,18 +114,18 @@ function P(e) {
             })
           }, i)
       }
-    }, [A, R, t]),
+    }, [Z, R, t]),
     K = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
-          return A ? t + 448 : t;
+          return Z ? t + 448 : t;
         case 1:
           return 120;
         default:
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
-    }, [A, R]),
+    }, [Z, R]),
     q = i.useCallback((e, t) => {
       switch (e) {
         case 0:

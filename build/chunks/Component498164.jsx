@@ -74,7 +74,7 @@ let M = {
           code: t
         }
       } = e;
-      return await (0, A.T)(t, "Desktop Modal")
+      return await (0, Z.T)(t, "Desktop Modal")
     }
   },
   [Chunk981631.Etm.GUILD_TEMPLATE_BROWSER]: {
@@ -163,52 +163,52 @@ let M = {
         }
       } = e;
       switch (P.ZP.focus(), t) {
-        case Z.jE.USER_SETTINGS:
+        case A.jE.USER_SETTINGS:
           null != r && ((0, I.dL)({
             pathname: w.Z5c.SETTINGS(r.section, r.subsection),
             search: r.search
-          }), D(r.fingerprint, (0, Z.O)(t)));
+          }), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.CHANGELOG:
-          null != r && ((0, I.dL)(j.Z.formatPathWithQuery(w.Z5c.CHANGELOGS(r.date), r.query)), D(r.fingerprint, (0, Z.O)(t)));
+        case A.jE.CHANGELOG:
+          null != r && ((0, I.dL)(j.Z.formatPathWithQuery(w.Z5c.CHANGELOGS(r.date), r.query)), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.LIBRARY:
-          (0, I.dL)(w.Z5c.APPLICATION_LIBRARY), null != r && D(r.fingerprint, (0, Z.O)(t));
+        case A.jE.LIBRARY:
+          (0, I.dL)(w.Z5c.APPLICATION_LIBRARY), null != r && D(r.fingerprint, (0, A.O)(t));
           break;
-        case Z.jE.STORE_HOME:
-          (0, I.dL)(w.Z5c.APPLICATION_STORE), null != r && D(r.fingerprint, (0, Z.O)(t));
+        case A.jE.STORE_HOME:
+          (0, I.dL)(w.Z5c.APPLICATION_STORE), null != r && D(r.fingerprint, (0, A.O)(t));
           break;
-        case Z.jE.STORE_LISTING:
-          null != r && ((0, I.dL)(w.Z5c.APPLICATION_STORE_LISTING_SKU(r.skuId, r.slug)), D(r.fingerprint, (0, Z.O)(t)));
+        case A.jE.STORE_LISTING:
+          null != r && ((0, I.dL)(w.Z5c.APPLICATION_STORE_LISTING_SKU(r.skuId, r.slug)), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.PICK_GUILD_SETTINGS:
+        case A.jE.PICK_GUILD_SETTINGS:
           null != r && ((0, I.dL)({
             pathname: w.Z5c.PICK_GUILD_SETTINGS(r.section, r.subsection),
             search: r.search
-          }), D(r.fingerprint, (0, Z.O)(t)));
+          }), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.CHANNEL:
+        case A.jE.CHANNEL:
           null != r && ((0, I.dL)({
             pathname: w.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId),
             search: r.search
-          }), D(r.fingerprint, (0, Z.O)(t)));
+          }), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.GAME_SHOP:
+        case A.jE.GAME_SHOP:
           null != r && ((0, I.dL)({
             pathname: w.Z5c.CHANNELS_GAME_SHOP(r.guildId, r.pageIndex, r.skuId, r.slug)
-          }), D(r.fingerprint, (0, Z.O)(t)));
+          }), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.QUEST_HOME:
+        case A.jE.QUEST_HOME:
           if (null != r) {
             let e = new URLSearchParams;
             null != r.sort && e.set(y.tR.SORT, r.sort), null != r.filter && e.set(y.tR.FILTER, r.filter), null != r.tab && e.set(y.tR.TAB, r.tab), (0, I.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               hash: r.questId,
               search: "?".concat(e.toString())
-            }), D(r.fingerprint, (0, Z.O)(t))
+            }), D(r.fingerprint, (0, A.O)(t))
           } else(0, I.dL)(w.Z5c.QUEST_HOME_V2);
           break;
-        case Z.jE.QUEST_PREVIEW_TOOL:
+        case A.jE.QUEST_PREVIEW_TOOL:
           if ((0, v.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != r) {
@@ -216,38 +216,38 @@ let M = {
             e.set(y.tR.TAB, y.e5.PREVIEW_TOOL), null != r.questId && e.set(y.tR.QUEST_ID, r.questId), (0, I.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
-            }), D(r.fingerprint, (0, Z.O)(t))
+            }), D(r.fingerprint, (0, A.O)(t))
           }
           break;
-        case Z.jE.DISCOVERY_GAME_RESULTS:
+        case A.jE.DISCOVERY_GAME_RESULTS:
           null != r && ((0, I.dL)({
             pathname: w.Z5c.GLOBAL_DISCOVERY_SERVERS,
             search: "?game=".concat(r.gameId)
-          }), D(r.fingerprint, (0, Z.O)(t)));
+          }), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.OAUTH2:
+        case A.jE.OAUTH2:
           let l = new URL(w.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           l.search = r.search;
           let a = (0, E.getOAuth2AuthorizeProps)(l.toString());
           if (null != a) return (0, E.openOAuth2ModalWithCreateGuildModal)(a), true;
           returnfalse;
-        case Z.jE.ONE_TIME_LOGIN:
+        case A.jE.ONE_TIME_LOGIN:
           if (null != r) return (0, O.Y)({
             token: r.token
-          }), D(r.fingerprint, (0, Z.O)(t)), true;
+          }), D(r.fingerprint, (0, A.O)(t)), true;
           returnfalse;
-        case Z.jE.SHOP:
+        case A.jE.SHOP:
           null != r && ((0, I.dL)({
             pathname: w.Z5c.COLLECTIBLES_SHOP,
             search: r.search
-          }), D(r.fingerprint, (0, Z.O)(t)));
+          }), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.FEATURES:
+        case A.jE.FEATURES:
           (null == r ? true : r.path) != null && ((0, I.dL)({
             pathname: r.path
-          }), D(r.fingerprint, (0, Z.O)(t)));
+          }), D(r.fingerprint, (0, A.O)(t)));
           break;
-        case Z.jE.ACTIVITIES:
+        case A.jE.ACTIVITIES:
           if (null != r) {
             let e = r.attemptId || (0, i.Z)();
             return async function(e, t, n) {
@@ -296,15 +296,15 @@ let M = {
                   attempt_id: n
                 })
               }
-            }(r.applicationId, r.url, e), D(r.fingerprint, (0, Z.O)(t)), true
+            }(r.applicationId, r.url, e), D(r.fingerprint, (0, A.O)(t)), true
           }
           returnfalse;
-        case Z.jE.PLAYGROUND:
+        case A.jE.PLAYGROUND:
           if (null != r) {
             let {
               openPlayground: e
             } = n(2419);
-            e(r.collection, r.story), D(r.fingerprint, (0, Z.O)(t))
+            e(r.collection, r.story), D(r.fingerprint, (0, A.O)(t))
           }
       }
     }

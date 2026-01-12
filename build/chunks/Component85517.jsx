@@ -100,8 +100,8 @@ function j(e) {
     enabled: P
   } = (0, g.W)({
     location: O.dr.QUEST_HOME_DESKTOP
-  }), x = (0, p.ZP)(), [A, Z] = i.useState("display-lg"), w = i.useCallback(e => {
-    e.contentRect.width < 500 ? Z("display-md") : Z("display-lg")
+  }), x = (0, p.ZP)(), [Z, A] = i.useState("display-lg"), w = i.useCallback(e => {
+    e.contentRect.width < 500 ? A("display-md") : A("display-lg")
   }, []), L = (0, d.y)(w, [], {
     fireOnMount: true
   }), R = (0, c.e7)([b.Z], () => b.Z.quests);
@@ -143,7 +143,7 @@ function j(e) {
             gap: 8,
             children: [(0, r.jsx)(u.Heading, {
               color: "text-strong",
-              variant: A,
+              variant: Z,
               className: C.title,
               children: t.labelTitle
             }), (0, r.jsx)(u.Text, {

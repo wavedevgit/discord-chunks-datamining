@@ -113,7 +113,7 @@ function eh(e) {
   if ((0, x._e)(e)) {
     if (e.data.guild_id === j.KF) returntrue;
     let t = m.Z.getGuild(e.data.guild_id);
-    if (null == t || t.features.has(A.GuildFeatures.INTERNAL_EMPLOYEE_ONLY)) returnfalse
+    if (null == t || t.features.has(Z.GuildFeatures.INTERNAL_EMPLOYEE_ONLY)) returnfalse
   }
   returntrue
 }
@@ -128,7 +128,7 @@ function em(e, t, n, r) {
 function eb() {
   if (en = en.filter(e => e.type !== j.Ni.RECOMMENDED_GUILDS), er = er.filter(e => e.type !== j.Ni.RECOMMENDED_GUILDS), 0 === el.length) return;
   let e = "recommendedGuilds",
-    t = m.Z.getGuildsArray().filter(e => e.features.has(A.GuildFeatures.COMMUNITY)).length >= 5,
+    t = m.Z.getGuildsArray().filter(e => e.features.has(Z.GuildFeatures.COMMUNITY)).length >= 5,
     n = P.Z.getReadTimestamp(e);
   if (t && null != n && Date.now() - ea > D && Date.now() - n < M) return;
   let r = {
@@ -177,7 +177,7 @@ function eE(e) {
           if (!(0, d.Z2)(r)) {
             if (null != r.channel_id) {
               let e = g.Z.getChannel(r.channel_id);
-              if (!_.Z.can(A.Plq.VIEW_CHANNEL, e)) continue
+              if (!_.Z.can(Z.Plq.VIEW_CHANNEL, e)) continue
             }
             if ((0, d.BQ)(r, 2 * y.Z.Seconds.DAY) || (0, d.xt)(r)) {
               var n;
@@ -215,7 +215,7 @@ function eE(e) {
         r = {},
         l = [],
         a = [],
-        u = null != (t = null == (e = o.Z.getFeed(Z.YN.GLOBAL_FEED)) ? true : e.entries) ? t : [];
+        u = null != (t = null == (e = o.Z.getFeed(A.YN.GLOBAL_FEED)) ? true : e.entries) ? t : [];
       u.sort((e, t) => e.rank - t.rank).slice(0, 5), u.forEach(e => {
         if (n.has(e.content.id) || e.content.content_type !== i.s.PLAYED_GAME && e.content.content_type !== i.s.CUSTOM_STATUS && e.content.content_type !== i.s.TOP_GAME || (0, c.n2)(e.content)) return;
         if ((0, s.dX)(e.content)) {
@@ -454,7 +454,7 @@ let eP = new ej(Chunk570140.Z, {
           channel_id: t.channel_id,
           message_id: t.message.id,
           guild_id: t.guild_id,
-          channel_type: A.d4z.GUILD_TEXT
+          channel_type: Z.d4z.GUILD_TEXT
         }
       };
       if (F[t.message.id] = e, z[t.message.id] = R(L({}, e), {
@@ -541,7 +541,7 @@ let eP = new ej(Chunk570140.Z, {
           guild_id: t.guild_id,
           channel_id: t.channel_id,
           message_id: t.message.id,
-          channel_type: A.d4z.GUILD_TEXT,
+          channel_type: Z.d4z.GUILD_TEXT,
           has_mention: false
         }
       });

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 290347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./388685.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -70,7 +70,7 @@ let P = [],
       text: t
     })
   },
-  A = e => {
+  Z = e => {
     let {
       header: t,
       subHeader: n,
@@ -106,13 +106,13 @@ let P = [],
     })
   };
 
-function Z(e) {
+function A(e) {
   let {
     componentId: t,
     promotionId: n,
     className: l,
     renderModalProps: x,
-    heroArt: Z,
+    heroArt: A,
     heroArtClassName: w,
     modalTopExtra: L,
     header: R,
@@ -146,8 +146,8 @@ function Z(e) {
     let e = async () => {
       try {
         var e;
-        if ("video" !== Z.type || null == Z.subtitles) return;
-        let t = null == (e = Z.subtitles) ? true : e.map(async e => {
+        if ("video" !== A.type || null == A.subtitles) return;
+        let t = null == (e = A.subtitles) ? true : e.map(async e => {
           let t = await fetch(e.src);
           if (!t.ok) throw Error("Failed to fetch the subtitle file ".concat(e.src));
           let n = await t.text(),
@@ -165,14 +165,14 @@ function Z(e) {
       }
     };
     true !== ed.current && e(), ed.current = true
-  }, [Z, ec]), i.useEffect(() => () => {
+  }, [A, ec]), i.useEffect(() => () => {
     null != ec && ec.forEach(e => {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
     ei.current = K, el.current = Q, ea.current = X, eo.current = ee, es.current = en
   }, [K, Q, X, ee, en]), i.useEffect(() => () => {
-    if ("video" === Z.type || "embed" === Z.type) {
+    if ("video" === A.type || "embed" === A.type) {
       let [e, t] = ep();
       v.default.track(I.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: G,
@@ -182,7 +182,7 @@ function Z(e) {
         seconds_unmuted: Math.round(t / 1e3)
       })
     }
-  }, [G, Z.type]), i.useEffect(() => {
+  }, [G, A.type]), i.useEffect(() => {
     (0, E.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
     return v.default.track(I.rMx.CHANGE_LOG_OPENED, {
@@ -212,15 +212,15 @@ function Z(e) {
       }), null == L ? true : L(), (0, r.jsxs)(p.hzk, {
         "data-migration-pending": true,
         className: T.content,
-        children: ["video" === Z.type ? (0, r.jsx)(_.Z, {
+        children: ["video" === A.type ? (0, r.jsx)(_.Z, {
           className: a()(T.video, w),
           autoPlay: !W,
           loop: true,
           muted: true,
           controls: true,
           controlsList: "nofullscreen nodownload noremoteplayback noplaybackrate",
-          src: Z.src,
-          poster: Z.poster,
+          src: A.src,
+          poster: A.poster,
           onPlay: e => {
             v.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
@@ -246,15 +246,15 @@ function Z(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === Z.type ? (0, r.jsx)(h.BC, {
+        }) : "embed" === A.type ? (0, r.jsx)(h.BC, {
           className: a()(T.video, w),
           allowFullScreen: false,
-          href: Z.href,
-          thumbnail: Z.thumbnail,
-          video: Z.embed,
+          href: A.href,
+          thumbnail: A.thumbnail,
+          video: A.embed,
           provider: m.pn.YOUTUBE,
-          maxWidth: Z.embed.width,
-          maxHeight: Z.embed.height,
+          maxWidth: A.embed.width,
+          maxHeight: A.embed.height,
           renderVideoComponent: O.lV,
           renderImageComponent: O.Yi,
           renderLinkComponent: O.iT,
@@ -263,10 +263,10 @@ function Z(e) {
               change_log_id: G
             })
           }
-        }) : "image" === Z.type ? (0, r.jsx)("img", {
+        }) : "image" === A.type ? (0, r.jsx)("img", {
           alt: "",
           className: a()(T.video, w),
-          src: Z.src
+          src: A.src
         }) : null, (0, r.jsx)(p.Heading, {
           variant: "display-md",
           className: a()(T.headerText, D),
@@ -284,7 +284,7 @@ function Z(e) {
           className: a()(T.featureCardGroup, {
             [T.wideStyle]: Y
           }),
-          children: U.map((e, t) => (0, r.jsx)(A, j(N({}, e), {
+          children: U.map((e, t) => (0, r.jsx)(Z, j(N({}, e), {
             wideStyle: Y
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {

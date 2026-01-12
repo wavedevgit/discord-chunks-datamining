@@ -43,7 +43,7 @@ var Chunk243814 = require("./243814.js"),
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "",
     l = I.Z.getApplicationActivity(t);
-  if (null == l || null == l.secrets || !(0, A.t9)(r, l.party, l.secrets)) throw new x.Z({
+  if (null == l || null == l.secrets || !(0, Z.t9)(r, l.party, l.secrets)) throw new x.Z({
     errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
   let a = (0, m.Z)(l, C.Z);
@@ -105,7 +105,7 @@ let G = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
-    validation: e => (0, Z.Z)(e).required().keys({
+    validation: e => (0, A.Z)(e).required().keys({
       user_id: e.string().required(),
       type: e.number().required().valid([M.mFx.JOIN]),
       content: e.string().min(0).max(1024),
@@ -131,7 +131,7 @@ let G = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
-    validation: e => (0, Z.Z)(e).required().keys({
+    validation: e => (0, A.Z)(e).required().keys({
       type: e.number().required().valid([M.mFx.JOIN]),
       user_id: e.string().required(),
       session_id: e.string().required(),
@@ -306,7 +306,7 @@ let G = {
           mediaUrl: r
         }
       } = e;
-      (0, A.bu)(n.transport);
+      (0, Z.bu)(n.transport);
       let i = n.application.id;
       if (null == i) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND

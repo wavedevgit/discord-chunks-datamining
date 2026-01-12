@@ -44,7 +44,7 @@ function _(e) {
     allowIdle: x
   } = (0, s.Y)("animation");
 
-  function A() {
+  function Z() {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -75,7 +75,7 @@ function _(e) {
     children: [null != T && t && I && S && !(0, a.$sL)() && !j && (0, r.jsx)(h.Z, {
       clipIconRef: T,
       lastClipsSession: y,
-      onOpenClipsGallery: A
+      onOpenClipsGallery: Z
     }), (0, r.jsx)("div", {
       ref: N,
       children: (0, r.jsx)(o.JO, {
@@ -83,7 +83,7 @@ function _(e) {
         icon: a.AlX,
         showBadge: v,
         tooltip: b.intl.string(b.t.MXaLEM),
-        onClick: A
+        onClick: Z
       })
     })]
   }) : null

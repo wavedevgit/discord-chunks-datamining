@@ -63,7 +63,7 @@ function P(e, t) {
 let x = {
     offset: 2
   },
-  A = {
+  Z = {
     serverDeaf: {
       icon: Chunk481060.Vm4,
       colorize: true,
@@ -91,7 +91,7 @@ let x = {
     }
   };
 
-function Z(e) {
+function A(e) {
   var t, l;
   let p = i.useRef(null),
     {
@@ -99,21 +99,21 @@ function Z(e) {
     } = (0, h.ZP)(),
     {
       channel: v,
-      user: Z,
+      user: A,
       nick: w,
       mute: L,
       deaf: R,
       serverMute: D,
       serverDeaf: M
     } = e,
-    k = (0, o.e7)([y.Z], () => y.Z.isLocalMute(Z.id)),
+    k = (0, o.e7)([y.Z], () => y.Z.isLocalMute(A.id)),
     U = (0, d.Z)({
-      userId: Z.id,
+      userId: A.id,
       checkSoundSharing: true
     }),
     G = null != (t = v.getGuildId()) ? t : true,
-    H = Z.getAvatarURL(v.guild_id, 24),
-    B = null != w ? w : C.ZP.getName(Z),
+    H = A.getAvatarURL(v.guild_id, 24),
+    B = null != w ? w : C.ZP.getName(A),
     {
       icon: V,
       colorize: F,
@@ -126,11 +126,11 @@ function Z(e) {
         mute: i,
         localMute: l
       } = e;
-      if (t) return A.serverDeaf;
-      if (n) return A.deaf;
-      if (r) return A.serverMute;
-      if (l) return A.localMute;
-      if (i) return A.mute
+      if (t) return Z.serverDeaf;
+      if (n) return Z.deaf;
+      if (r) return Z.serverMute;
+      if (l) return Z.localMute;
+      if (i) return Z.mute
     }({
       serverDeaf: M,
       deaf: R,
@@ -149,12 +149,12 @@ function Z(e) {
         default: e
       } = await Promise.all([n.e("79695"), n.e("4040"), n.e("92524"), n.e("7717"), n.e("9393")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, P(j({}, t), {
-        user: Z,
+        user: A,
         guildId: G,
         channel: v,
         showMediaItems: true,
         onInteraction: (0, _.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
-          targetUserId: Z.id
+          targetUserId: A.id
         })
       }))
     }) : (0, u.jW)(e, async () => {
@@ -162,15 +162,15 @@ function Z(e) {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220"), n.e("18030")]).then(n.bind(n, 881351));
       return t => (0, r.jsx)(e, P(j({}, t), {
-        user: Z,
+        user: A,
         showMediaItems: true,
         onInteraction: (0, _.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
-          targetUserId: Z.id
+          targetUserId: A.id
         })
       }))
     })
   }
-  let K = (0, o.e7)([I.Z], () => I.Z.getVoiceVolume(Z.id)),
+  let K = (0, o.e7)([I.Z], () => I.Z.getVoiceVolume(A.id)),
     q = (0, m._)({
       isSpeaking: U,
       voiceDb: K,
@@ -179,7 +179,7 @@ function Z(e) {
     });
   return (0, r.jsx)(O.Z, {
     targetElementRef: p,
-    user: Z,
+    user: A,
     guildId: G,
     channelId: v.id,
     position: "top",
@@ -272,7 +272,7 @@ function w(e) {
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== g ? (0, r.jsx)(Z, {
+        return t.id !== g ? (0, r.jsx)(A, {
           channel: n,
           user: t,
           nick: i,

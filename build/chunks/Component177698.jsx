@@ -69,8 +69,8 @@ let E = (0, Chunk703912.Z)(e => {
     disclosures: j,
     integrationType: P,
     pid: x,
-    signal: A
-  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+    signal: Z
+  } = e, A = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, g.jU)(x),
       w = i.z1l;
@@ -123,7 +123,7 @@ let E = (0, Chunk703912.Z)(e => {
             null == t || t.removeEventListener("abort", n)
           }
         }
-      }(Z, A);
+      }(A, Z);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
@@ -143,7 +143,7 @@ let E = (0, Chunk703912.Z)(e => {
       integrationType: P,
       cancelCompletesFlow: true
     })), {
-      modalKey: Z,
+      modalKey: A,
       onCloseCallback: () => {
         M(), R || (t(new p.Z({
           errorCode: h.lTL.OAUTH2_ERROR

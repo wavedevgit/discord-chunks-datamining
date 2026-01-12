@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk121748 = require("./121748.js");
-let Z = 15 * Chunk70956.Z.Millis.MINUTE,
+let A = 15 * Chunk70956.Z.Millis.MINUTE,
   w = (0, Chunk525296.Z)(function(e) {
     let {
       party: t,
@@ -63,7 +63,7 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, _, E, g]), y = i.useMemo(() => s()(v, Z), [v]);
+    }, [m, b, _, E, g]), y = i.useMemo(() => s()(v, A), [v]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -103,7 +103,7 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
           ref: o,
           onMouseEnter: y,
           "aria-haspopup": "menu",
-          className: A.itemCard,
+          className: Z.itemCard,
           active: l,
           children: (0, r.jsxs)("div", {
             children: [c, d]
@@ -164,19 +164,19 @@ function R() {
       quest: m.get(t.id)
     }, t.id)
   }) : (0, r.jsxs)("div", {
-    className: A.emptyCard,
+    className: Z.emptyCard,
     children: [(0, r.jsx)(u.Heading, {
       variant: "heading-md/semibold",
-      className: A.emptyHeader,
+      className: Z.emptyHeader,
       children: x.intl.string(x.t["ngJ/5u"])
     }), (0, r.jsx)(u.Text, {
       color: "none",
-      className: A.emptyText,
+      className: Z.emptyText,
       variant: "text-sm/normal",
       children: x.intl.string(x.t["99ZWxQ"])
     })]
   }) : (0, r.jsx)("div", {
-    className: A.emptyCard,
+    className: Z.emptyCard,
     children: (0, r.jsx)(u.$jN, {})
   })
 }

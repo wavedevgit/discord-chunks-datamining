@@ -52,8 +52,8 @@ let N = Chunk473749.memo(function(e) {
     className: j,
     onContextMenu: P,
     onClick: x,
-    hideSimpleEmbedContent: A = true,
-    channel: Z,
+    hideSimpleEmbedContent: Z = true,
+    channel: A,
     isGroupStart: w,
     animateAvatar: L,
     subscribeToComponentDispatch: R,
@@ -72,18 +72,18 @@ let N = Chunk473749.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === I.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(Z), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
+  }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === I.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(A), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
     content: H,
     hasSpoilerEmbeds: B,
     hasBailedAst: V
   } = (0, h.Z)(N, {
-    hideSimpleEmbedContent: A,
+    hideSimpleEmbedContent: Z,
     allowList: U || G,
     allowHeading: U || G,
     allowLinks: true,
     previewLinkTarget: true
   }), F = (0, o.JA)(N.id), z = (0, p.ZP)(N), Y = (0, s.e7)([v.Z], () => N.hasFlag(I.iLy.HAS_THREAD) && v.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), W = (0, c.p9)({
-    guildId: Z.guild_id,
+    guildId: A.guild_id,
     roleId: z.iconRoleId
   }), K = (0, g.iG)(N), q = (0, g.Gx)(N);
   return (0, r.jsx)(f.Z, T({
@@ -93,12 +93,12 @@ let N = Chunk473749.memo(function(e) {
       [S.disableInteraction]: k
     }),
     disableInteraction: k,
-    childrenExecutedCommand: (0, O.Z)(N, Z, false),
+    childrenExecutedCommand: (0, O.Z)(N, A, false),
     childrenHeader: (0, _.Z)({
       message: N,
-      channel: Z,
+      channel: A,
       author: z,
-      guildId: Z.guild_id,
+      guildId: A.guild_id,
       compact: false,
       animateAvatar: L,
       isGroupStart: true,

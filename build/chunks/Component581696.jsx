@@ -63,10 +63,10 @@ let g = function(e) {
         behavior: "smooth"
       })
     }, [t]),
-    A = i.useCallback(() => {
+    Z = i.useCallback(() => {
       v(), x()
     }, [v, x]),
-    Z = i.useCallback(e => "loading" === e.data.kind ? (0, r.jsx)("div", {
+    A = i.useCallback(e => "loading" === e.data.kind ? (0, r.jsx)("div", {
       style: {
         padding: "32px",
         textAlign: "center"
@@ -117,7 +117,7 @@ let g = function(e) {
         textAlign: "center"
       },
       children: (0, r.jsx)("button", {
-        onClick: A,
+        onClick: Z,
         style: {
           background: "#5865f2",
           color: "white",
@@ -133,7 +133,7 @@ let g = function(e) {
     }), (0, r.jsxs)("div", {
       ref: h,
       className: f.scrollContainer,
-      children: [_.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
+      children: [_.map(e => A(e)), !j && (m || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

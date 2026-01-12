@@ -2,7 +2,7 @@
 /** chunk id: 178318, original params: e,t,n (module,exports,require) **/
 let r, i;
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./49124.js"), require("./388685.js"), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
@@ -120,7 +120,7 @@ class x extends Chunk76238.Z {
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class A extends Chunk836560.EventEmitter {
+class Z extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
     if ("/rpc" === n && "OPTIONS" === i) return void N(e, t, {
@@ -204,4 +204,4 @@ class A extends Chunk836560.EventEmitter {
     new v.ws.Server(n).on("connection", e => this.handleConnection(e))
   }
 }
-let Z = new A
+let A = new Z

@@ -194,7 +194,7 @@ function O(e) {
   }), x = (0, c.Z)({
     userId: S.user.id,
     guildId: null == C ? true : C.id
-  }), A = (0, u.j)({
+  }), Z = (0, u.j)({
     displayNameStyles: x
   });
   return (0, r.jsx)(m.Z.Header, {
@@ -206,6 +206,6 @@ function O(e) {
     onSubtitleClick: P,
     onIconClick: P,
     onContextMenu: e => v(e, S.user),
-    displayNameFont: 1 === I.length ? A : true
+    displayNameFont: 1 === I.length ? Z : true
   })
 }

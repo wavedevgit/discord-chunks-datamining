@@ -135,10 +135,10 @@ class eu extends Chunk473749.PureComponent {
   }
   componentDidMount() {
     var e;
-    this.setAnimatedValue(0), p.Z.subscribe("LAYER_PUSH", this.closeAllHeaderNotices), this.historyUnlisten = Z.Z.addRouteChangeListener(this.handleHistoryChange);
+    this.setAnimatedValue(0), p.Z.subscribe("LAYER_PUSH", this.closeAllHeaderNotices), this.historyUnlisten = A.Z.addRouteChangeListener(this.handleHistoryChange);
     let {
       location: t
-    } = Z.Z.getHistory();
+    } = A.Z.getHistory();
     (null == (e = t.state) ? true : e.shouldShowSubscribeTooltip) && this.showTimeout.start(1e3, () => this.setState({
       shouldShowSubscribeTooltip: true
     }))
@@ -453,7 +453,7 @@ function ed(e) {
     f = (0, o.e7)([D.Z], () => D.Z.getGuildDimensions(n).scrollTo),
     T = (0, o.e7)([V.Z], () => V.Z.getChannelId()),
     P = (0, o.e7)([H.Z], () => H.Z.can(X.Plq.MANAGE_GUILD, u)),
-    Z = (0, o.e7)([M.Z], () => M.Z.isUnavailable(n)),
+    A = (0, o.e7)([M.Z], () => M.Z.isUnavailable(n)),
     w = (0, o.e7)([F.default], () => F.default.getCurrentUser()),
     {
       enableStudyGroup: k
@@ -476,7 +476,7 @@ function ed(e) {
     eE = (0, C.Z)(n),
     eO = (0, o.e7)([V.Z], () => V.Z.getChannelId()),
     ev = (0, o.e7)([B.Z], () => B.Z.desyncedVoiceStatesCount),
-    ey = (0, A.Z)(n);
+    ey = (0, Z.Z)(n);
   return (0, r.jsx)(eu, {
     guildId: n,
     hideSelectedChannel: l,
@@ -488,7 +488,7 @@ function ed(e) {
     voiceStates: p,
     rtcConnectedChannelId: eO,
     rtcDesyncedVoiceStatesCount: ev,
-    isUnavailable: Z,
+    isUnavailable: A,
     user: w,
     hasChannelNotice: null != en || J,
     anyLayerOpen: er || ei,

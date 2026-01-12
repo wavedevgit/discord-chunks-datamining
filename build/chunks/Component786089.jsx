@@ -31,14 +31,14 @@ var Chunk54381 = require("./54381.js"),
 let j = (0, Chunk473749.memo)(function(e) {
   var t, n, l, j, P, x;
   let {
-    quest: A
-  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), H = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    quest: Z
+  } = e, [A, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), H = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: B,
     height: V = 0
-  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
+  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = Z.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), Y = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[Y], K = (null == W ? true : W.type) === s.w.FRACTIONAL_PREMIUM, q = (null == W ? true : W.type) === s.w.COLLECTIBLE, Q = (null == W ? true : W.type) === s.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === o.Z.AVATAR_DECORATION ? J : null;
+  }), Y = null != (P = null == (n = Z.userStatus) ? true : n.claimedTier) ? P : 0, W = Z.config.rewards[Y], K = (null == W ? true : W.type) === s.w.FRACTIONAL_PREMIUM, q = (null == W ? true : W.type) === s.w.COLLECTIBLE, Q = (null == W ? true : W.type) === s.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === o.Z.AVATAR_DECORATION ? J : null;
   (0, p.PM)(k, e => {
     let {
       height: t
@@ -50,9 +50,9 @@ let j = (0, Chunk473749.memo)(function(e) {
     R((r.top - n.top - i.height) / 2)
   });
   let $ = (0, u.wj)(F),
-    ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
-    et = (0, i.useMemo)(() => (0, v.fh)(A, v.eC.REWARD), [A]),
-    en = Z ? V + 8 : 0,
+    ee = (0, i.useMemo)(() => null != Z.config.cosponsorMetadata, [Z]),
+    et = (0, i.useMemo)(() => (0, v.fh)(Z, v.eC.REWARD), [Z]),
+    en = A ? V + 8 : 0,
     er = (0, _.mH)(E.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
@@ -92,7 +92,7 @@ let j = (0, Chunk473749.memo)(function(e) {
         }
         return e
       }({
-        quest_id: A.id
+        quest_id: Z.id
       }, ea))
     },
     es = () => {
@@ -102,7 +102,7 @@ let j = (0, Chunk473749.memo)(function(e) {
       M(true), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
-        quest_id: A.id
+        quest_id: Z.id
       })
     };
   return null == W || D ? null : (0, r.jsx)(d.tEY, {
@@ -114,7 +114,7 @@ let j = (0, Chunk473749.memo)(function(e) {
       onMouseEnter: eo,
       onMouseLeave: es,
       className: a()(N.container, {
-        [N.hovered]: Z
+        [N.hovered]: A
       }),
       children: [null != H && q && null != X && (0, r.jsx)("div", {
         ref: G,
@@ -126,14 +126,14 @@ let j = (0, Chunk473749.memo)(function(e) {
           avatarDecorationOverride: X,
           user: H,
           guildId: null,
-          animateOnHover: !Z
+          animateOnHover: !A
         })
       }), K ? (0, r.jsx)(y.Z, {
         className: N.image
       }) : Q ? (0, r.jsx)(I.Z, {
         className: N.image,
-        isAnimated: Z,
-        questName: A.config.messages.questName
+        isAnimated: A,
+        questName: Z.config.messages.questName
       }) : et.isAnimated ? (0, r.jsx)(h.Z, {
         className: N.assetBlurred,
         autoPlay: false,
@@ -145,7 +145,7 @@ let j = (0, Chunk473749.memo)(function(e) {
       }) : (0, r.jsx)("img", {
         className: N.image,
         src: et.url,
-        alt: A.config.messages.questName,
+        alt: Z.config.messages.questName,
         onError: () => ec(et.url)
       }), (0, r.jsx)("div", {
         className: a()(N.overlay, {
@@ -162,7 +162,7 @@ let j = (0, Chunk473749.memo)(function(e) {
           logotypeClassName: a()(N.logo, {
             [N.logoWithCosponsor]: ee
           }),
-          quest: A,
+          quest: Z,
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
@@ -173,7 +173,7 @@ let j = (0, Chunk473749.memo)(function(e) {
           variant: "heading-md/semibold",
           color: "always-white",
           children: T.intl.format(T.t.EAYZAr, {
-            questName: A.config.messages.questName
+            questName: Z.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",

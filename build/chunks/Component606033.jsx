@@ -25,7 +25,7 @@ let _ = function(e) {
     setQuestId: O,
     quest: v,
     refreshQuest: y
-  } = e, [I, C] = i.useState(false), [S, T] = i.useState(false), N = i.useRef(null), j = (0, p.MP)(), P = (0, l.e7)([d.Z], () => null != E ? d.Z.getFetchQuestPreviewError(E) : null, [E]), x = (0, l.e7)([d.Z], () => null != E && d.Z.isFetchingQuestPreview(E), [E]), A = i.useMemo(() => {
+  } = e, [I, C] = i.useState(false), [S, T] = i.useState(false), N = i.useRef(null), j = (0, p.MP)(), P = (0, l.e7)([d.Z], () => null != E ? d.Z.getFetchQuestPreviewError(E) : null, [E]), x = (0, l.e7)([d.Z], () => null != E && d.Z.isFetchingQuestPreview(E), [E]), Z = i.useMemo(() => {
     let e = j.map(e => {
       var t, n, r;
       return {
@@ -37,7 +37,7 @@ let _ = function(e) {
       label: E,
       value: E
     }), e
-  }, [j, E]), Z = i.useCallback(async () => {
+  }, [j, E]), A = i.useCallback(async () => {
     if (null != E) {
       C(true);
       try {
@@ -79,7 +79,7 @@ let _ = function(e) {
             className: b.questInput,
             children: [(0, r.jsx)(a.d, {
               "aria-label": "Quest ID",
-              options: A,
+              options: Z,
               value: E,
               onChange: R,
               placeholder: m.intl.string(m.t.Zw8jxn),
@@ -106,7 +106,7 @@ let _ = function(e) {
       children: (0, r.jsxs)(o.ButtonGroup, {
         className: b.controlButtons,
         children: [(0, r.jsx)(o.Button, {
-          onClick: Z,
+          onClick: A,
           disabled: I,
           loading: I,
           variant: "secondary",

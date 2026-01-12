@@ -91,7 +91,7 @@ function B(e, t) {
     case R.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
-      return (0, A.BU)(e, {
+      return (0, Z.BU)(e, {
         useKibibytes: true
       })
   }
@@ -321,7 +321,7 @@ class Y extends Chunk473749.PureComponent {
       if (null != r && null != i) {
         let n = B(i, l),
           a = B(r, l),
-          o = Math.floor(t = Z.xI(r, i));
+          o = Math.floor(t = A.xI(r, i));
         e = l === R.f07.PAUSING ? D.intl.formatToPlainString(D.t.vjxhWo, {
           percent: o,
           progress: a,
@@ -352,12 +352,12 @@ class Y extends Chunk473749.PureComponent {
       total: r
     } = e;
     if (null == n || null == r) return null;
-    let i = Z.xI(n, r),
+    let i = A.xI(n, r),
       l = Math.floor(i),
       a = 0 === n && 1 === r ? D.intl.string(D.t["+pfsFX"]) : D.intl.formatToPlainString(D.t["+feX8S"], {
         percent: l,
-        progress: (0, A.BU)(n),
-        total: (0, A.BU)(r)
+        progress: (0, Z.BU)(n),
+        total: (0, Z.BU)(r)
       });
     return this.renderBody({
       message: a,
@@ -384,7 +384,7 @@ class Y extends Chunk473749.PureComponent {
       type: i
     } = e;
     if (null == t || null == n || null == r) return null;
-    let l = Z.xI(n, t),
+    let l = A.xI(n, t),
       a = Math.floor(l);
     return this.renderBody({
       percent: l,
@@ -438,8 +438,8 @@ class Y extends Chunk473749.PureComponent {
         readerProgress: o
       } = n;
       if (null == i || null == l || null == r) return null;
-      let s = Z.xI(i, l),
-        c = Z.xI(null != o ? o : 0, l),
+      let s = A.xI(i, l),
+        c = A.xI(null != o ? o : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
         p = z({

@@ -42,13 +42,13 @@ function N() {
       (0, c.showToast)((0, c.createToast)(S.intl.string(S.t["EDYbS+"]), c.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: A
+      rejectAll: Z
     } = (0, b.m)({
       onError: x
     }),
-    Z = i.useCallback(() => {
-      A(t.map(e => e.channel.id))
-    }, [t, A]);
+    A = i.useCallback(() => {
+      Z(t.map(e => e.channel.id))
+    }, [t, Z]);
   (0, d.ZP)(() => {
     h.default.track(C.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
@@ -86,11 +86,11 @@ function N() {
         }), (0, r.jsx)(c.Avr, {
           textVariant: "text-sm/normal",
           text: S.intl.string(S.t.p6t7RC),
-          onClick: Z,
+          onClick: A,
           "aria-label": S.intl.string(S.t.p6t7RC)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [n, Z, N]);
+    }, "message-requests-spam-title"), [n, A, N]);
   return 0 === t.length ? (0, r.jsx)(v.Z, {
     section: I.pS.SPAM
   }) : (0, r.jsx)(o.bG, {

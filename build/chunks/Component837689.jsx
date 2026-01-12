@@ -52,6 +52,7 @@ class P extends Chunk317770.Z {
       } = e;
       for (let e of t)
         if (null != e.marketing_components) {
+          if (null != e.trial_id && null == f.Z.getUserTrialOffer(e.trial_id)) continue;
           for (let t of e.marketing_components)
             if (t.component_type === l.I.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(t.id, t.promotion_id, t.properties, false)
         }

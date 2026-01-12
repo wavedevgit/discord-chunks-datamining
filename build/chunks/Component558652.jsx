@@ -54,11 +54,11 @@ let b = [],
       filters: y
     }), [v, y])), P = i.useCallback(() => {
       C(b)
-    }, [C]), x = i.useRef(null), A = i.useRef(null), Z = (0, l.TH)(), w = (0, l.k6)();
+    }, [C]), x = i.useRef(null), Z = i.useRef(null), A = (0, l.TH)(), w = (0, l.k6)();
     return i.useEffect(() => {
-      if ("" !== Z.hash && null != x.current && null != A.current) {
+      if ("" !== A.hash && null != x.current && null != Z.current) {
         var e, t;
-        (v !== x.current || y !== A.current) && w.replace((e = function(e) {
+        (v !== x.current || y !== Z.current) && w.replace((e = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -75,7 +75,7 @@ let b = [],
             })
           }
           return e
-        }({}, Z), t = t = {
+        }({}, A), t = t = {
           hash: true
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -88,10 +88,10 @@ let b = [],
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e))
       }
-    }, [v, y, Z, w]), i.useEffect(() => {
+    }, [v, y, A, w]), i.useEffect(() => {
       x.current = v
     }, [v]), i.useEffect(() => {
-      A.current = y
+      Z.current = y
     }, [y]), (0, c.SU)({
       selectedSortMethod: v,
       selectedFilters: y,

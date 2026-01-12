@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk535881 = require("./535881.js");
 
-function Z(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -77,7 +77,7 @@ function D() {
     let {
       default: e
     } = await n.e("36312").then(n.bind(n, 153932));
-    return t => (0, r.jsx)(e, Z({}, t))
+    return t => (0, r.jsx)(e, A({}, t))
   })
 }
 
@@ -87,7 +87,7 @@ function M(e) {
     showSpamCta: n
   } = e, l = i.useMemo(() => n ? D : t !== j.pJs.PENDING ? R : true, [n, t]);
   return (0, r.jsx)("div", {
-    className: A.emptyStateContainer,
+    className: Z.emptyStateContainer,
     children: (0, r.jsx)(v.Z, {
       type: t,
       onClick: l
@@ -132,31 +132,31 @@ let k = function(e) {
     }(e, ["key"]);
     switch (R) {
       case j.pJs.PENDING:
-        return (0, r.jsx)(y.Z, w(Z({}, i), {
+        return (0, r.jsx)(y.Z, w(A({}, i), {
           isFocused: k
         }), n);
       case j.pJs.SUGGESTIONS:
-        return (0, r.jsx)(T.Z, w(Z({}, i), {
+        return (0, r.jsx)(T.Z, w(A({}, i), {
           isFocused: k
         }), n);
       case j.pJs.ALL:
-        return (0, r.jsx)(O.Z, w(Z({}, i), {
+        return (0, r.jsx)(O.Z, w(A({}, i), {
           isFocused: k,
           sectionIndex: t,
           hasFriendAnniversarySection: V
         }), "".concat(t, "-").concat(n));
       case j.pJs.ONLINE:
       default:
-        return (0, r.jsx)(O.Z, w(Z({}, i), {
+        return (0, r.jsx)(O.Z, w(A({}, i), {
           isFocused: k
         }), n)
     }
   }, [k, R, V]), W = i.useCallback(e => {
-    B(w(Z({}, H), {
+    B(w(A({}, H), {
       [R]: e
     }))
   }, [H, R]), K = i.useCallback(() => {
-    B(w(Z({}, H), {
+    B(w(A({}, H), {
       [R]: ""
     }))
   }, [H, R]), q = i.useMemo(() => R === j.pJs.PENDING && (o.filter(j.pJs.SPAM).length > 0 || o.filter(j.pJs.PENDING_IGNORED).length > 0), [o, R]), Q = i.useMemo(() => o.filter(R, H[R]), [o, H, R]), J = R === j.pJs.PENDING, X = i.useMemo(() => {
@@ -232,12 +232,12 @@ let k = function(e) {
           }
         }(R, n.length, e, n.some(e => e.giftIntentType === P.hX.FRIEND_ANNIVERSARY));
       return R === j.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
-        className: A.sectionTitle,
+        className: Z.sectionTitle,
         children: [(0, r.jsx)(S.Z, {
           id: t,
           title: i
         }), en && (0, r.jsx)("div", {
-          className: A.clearButton,
+          className: Z.clearButton,
           children: (0, r.jsx)(a.Avr, {
             text: x.intl.string(x.t.O8k7O4),
             onClick: er,
@@ -246,7 +246,7 @@ let k = function(e) {
           })
         })]
       }, i) : (0, r.jsx)("div", {
-        className: A.sectionTitle,
+        className: Z.sectionTitle,
         children: (0, r.jsx)(S.Z, {
           id: t,
           title: i
@@ -254,7 +254,7 @@ let k = function(e) {
       }, i)
     }, [ee, R, t, en, er]),
     ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > h.nN ? (0, r.jsx)("div", {
-      className: A.sectionFooter,
+      className: Z.sectionFooter,
       children: (0, r.jsx)(a.Button, {
         icon: F ? a.u04 : a.CJ0,
         variant: "secondary",
@@ -279,7 +279,7 @@ let k = function(e) {
     children: (0, r.jsxs)(c.Z, {
       section: j.jXE.FRIENDS_LIST,
       children: [G && (0, r.jsx)(C.R, {}), (0, r.jsx)("div", {
-        className: A.searchBar,
+        className: Z.searchBar,
         children: (0, r.jsx)(a.E1j, {
           query: H[R],
           onChange: W,
@@ -294,7 +294,7 @@ let k = function(e) {
         hasSearchQuery: eo,
         renderSectionFooter: ea,
         footer: q && !es ? (0, r.jsx)("div", {
-          className: A.viewSpamButton,
+          className: Z.viewSpamButton,
           children: (0, r.jsx)(a.Avr, {
             text: x.intl.string(x.t.R40bU2),
             onClick: D,
@@ -303,7 +303,7 @@ let k = function(e) {
           })
         }) : null
       }), es && (0, r.jsx)("div", {
-        className: A.emptyStateContainer,
+        className: Z.emptyStateContainer,
         children: (0, r.jsx)(v.Z, {
           type: v.j.SECTION_NO_RESULTS
         }, R)

@@ -77,23 +77,23 @@ function x() {
   for (let t of Object.keys(S)) n.has(t) || j(S[t], e)
 }
 
-function A() {
+function Z() {
   for (let e of Object.keys(S)) j(S[e]);
   N = false
 }
-class Z extends(i = Chunk442837.ZP.Store) {
+class A extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(m.default, b.Z, _.Z, E.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], x)
   }
   getActivities() {
     return S
   }
-}(l = "displayName") in Z ? Object.defineProperty(Z, l, {
+}(l = "displayName") in A ? Object.defineProperty(A, l, {
   value: "ActivityTrackingStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : Z[l] = "ActivityTrackingStore", new Z(Chunk570140.Z, {
+}) : A[l] = "ActivityTrackingStore", new A(Chunk570140.Z, {
   RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (N) returnfalse;
@@ -104,9 +104,9 @@ class Z extends(i = Chunk442837.ZP.Store) {
     let {
       code: t
     } = e;
-    4004 === t && A()
+    4004 === t && Z()
   },
-  LOGOUT: A,
+  LOGOUT: Z,
   ACTIVITY_UPDATE_SUCCESS: function(e) {
     let {
       applicationId: t,

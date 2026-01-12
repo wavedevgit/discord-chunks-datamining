@@ -76,7 +76,7 @@ let T = e => {
   let x = i.useCallback(() => {
       f(Math.max(p, y.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, u.uL)(v.Z5c.ME)
     }, [t, p]),
-    A = (e, t) => () => {
+    Z = (e, t) => () => {
       (0, a.Z)({
         title: I.intl.string(I.t.y0CVes),
         subtitle: e,
@@ -85,14 +85,14 @@ let T = e => {
         confirmText: I.intl.string(I.t.p89ACt)
       })
     },
-    Z = async () => {
+    A = async () => {
       await g.Z.resetGuildJoinRequest(t), (0, h.hk)(t)
     }, w = e => {
       if (!e) return void x();
-      A(I.intl.format(I.t["9ZezpN"], {
+      Z(I.intl.format(I.t["9ZezpN"], {
         name: null == P ? true : P.name
       }), x)()
-    }, L = A(I.intl.format(I.t.fJwWVt, {
+    }, L = Z(I.intl.format(I.t.fJwWVt, {
       name: null == P ? true : P.name
     }), x);
   return (0, r.jsxs)("div", {
@@ -115,7 +115,7 @@ let T = e => {
           case m.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
               reapplyText: I.intl.string(I.t.I1LYVk),
-              onReapply: Z,
+              onReapply: A,
               confirmText: I.intl.string(I.t.g9tK0o),
               onWithdrawApplication: w,
               rejectionReason: T.rejectionReason,
