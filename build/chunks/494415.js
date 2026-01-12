@@ -24,12 +24,12 @@ function v(e, t) {
   } = (0, i.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlocked(e.author.id),
     isIgnored: d.Z.isIgnored(e.author.id)
-  }), [e.author.id]), y = (0, s.ZP)(t.id, e.id), x = (0, i.e7)([c.default], () => c.default.getId()), b = (0, u.ZP)(e).nick, h = e.author.id === x ? g.intl.string(g.t.LuZzxn) : b, j = (0, i.e7)([m.default], () => e.mentions.length > 0 ? m.default.getUser(e.mentions[0]) : true), O = (0, u.Sw)(j, t).nick;
+  }), [e.author.id]), y = (0, a.ZP)(t.id, e.id), x = (0, i.e7)([c.default], () => c.default.getId()), b = (0, u.ZP)(e).nick, j = e.author.id === x ? g.intl.string(g.t.LuZzxn) : b, h = (0, i.e7)([m.default], () => e.mentions.length > 0 ? m.default.getUser(e.mentions[0]) : true), S = (0, u.Sw)(h, t).nick;
   return function(e, t) {
     let {
       isBlocked: n,
       isIgnored: i,
-      authorNick: s
+      authorNick: a
     } = t;
     if (n) return {
       type: "text",
@@ -151,7 +151,7 @@ function v(e, t) {
             })
           }
         }
-        if ((0, a.Z)(e)) return {
+        if ((0, s.Z)(e)) return {
           type: "text",
           text: g.intl.string(g.t["9ddYKt"])
         }
@@ -176,7 +176,7 @@ function v(e, t) {
           }
           return e
         }({}, t), c = c = {
-          authorLabel: s
+          authorLabel: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -193,27 +193,27 @@ function v(e, t) {
       let {
         currentUserId: n,
         authorNick: i,
-        otherUser: s,
-        otherUserNick: a,
+        otherUser: a,
+        otherUserNick: s,
         isCallActive: o
       } = t;
-      return e.type === l.u.RECIPIENT_ADD && null != a ? {
+      return e.type === l.u.RECIPIENT_ADD && null != s ? {
         type: "text",
         text: g.intl.formatToPlainString(g.t.MMN2Jq, {
           username: i,
           usernameHook: r.identity,
-          otherUsername: a,
+          otherUsername: s,
           otherUsernameHook: r.identity
         })
-      } : e.type === l.u.RECIPIENT_REMOVE && null != a ? {
+      } : e.type === l.u.RECIPIENT_REMOVE && null != s ? {
         type: "text",
-        text: e.author.id === (null == s ? true : s.id) ? g.intl.formatToPlainString(g.t["5v2xa8"], {
+        text: e.author.id === (null == a ? true : a.id) ? g.intl.formatToPlainString(g.t["5v2xa8"], {
           username: i,
           usernameHook: r.identity
         }) : g.intl.formatToPlainString(g.t.L2FyVq, {
           username: i,
           usernameHook: r.identity,
-          otherUsername: a,
+          otherUsername: s,
           otherUsernameHook: r.identity
         })
       } : e.type === l.u.CALL ? {
@@ -266,9 +266,9 @@ function v(e, t) {
     message: e,
     channel: t,
     currentUserId: x,
-    authorNick: h,
-    otherUser: j,
-    otherUserNick: O,
+    authorNick: j,
+    otherUser: h,
+    otherUserNick: S,
     isBlocked: n,
     isIgnored: v,
     isCallActive: y

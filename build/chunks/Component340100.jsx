@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
 let d = function(e) {
   let {
     className: t,
-    color: n = s.Z.colors.WHITE,
+    color: n = a.Z.colors.WHITE,
     quest: l,
     isInventory: d
   } = e, m = (0, o.qb)(e.quest), {
@@ -31,7 +31,7 @@ let d = function(e) {
     },
     children: [(0, r.jsxs)("div", {
       className: c.percentCompleteWrapper,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
         className: c.percentCompleteLabel,
         color: "none",

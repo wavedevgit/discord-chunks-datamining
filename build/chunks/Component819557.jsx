@@ -16,9 +16,9 @@ function o(e) {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: a.cellGroup,
+    className: s.cellGroup,
     children: (0, r.jsx)("div", {
-      className: a.content,
+      className: s.content,
       children: t
     })
   })
@@ -36,43 +36,43 @@ function u(e) {
     index: m
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.cell,
+    className: s.cell,
     children: [(() => {
       if ("numbered" === c && null != m)
         if (d) return (0, r.jsx)("div", {
-          className: a.number,
-          children: (0, r.jsx)(s.sV5, {
+          className: s.number,
+          children: (0, r.jsx)(a.sV5, {
             color: "green",
-            className: i()(a.icon, o)
+            className: i()(s.icon, o)
           })
         });
-        else return (0, r.jsx)(s.Heading, {
+        else return (0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-brand",
-          className: a.number,
+          className: s.number,
           children: m + 1
         });
       if (null != t) return (0, r.jsx)("div", {
-        className: a.iconContainer,
+        className: s.iconContainer,
         children: (0, r.jsx)(t, {
           color: null != u ? u : "currentColor",
-          className: i()(a.icon, o)
+          className: i()(s.icon, o)
         })
       })
     })(), (0, r.jsxs)("div", {
-      className: a.textContainer,
-      children: [(0, r.jsx)(s.Text, {
+      className: s.textContainer,
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "text-strong",
         className: i()({
-          [a.completedText]: d
+          [s.completedText]: d
         }),
         children: n
-      }), null != l && (0, r.jsx)(s.Text, {
+      }), null != l && (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-subtle",
         className: i()({
-          [a.completedText]: d
+          [s.completedText]: d
         }),
         children: l
       })]

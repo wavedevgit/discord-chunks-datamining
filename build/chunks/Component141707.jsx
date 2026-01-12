@@ -16,7 +16,7 @@ let o = Chunk473749.forwardRef(function(e, t) {
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: a.desktopTooltip,
+    className: s.desktopTooltip,
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -37,13 +37,13 @@ let o = Chunk473749.forwardRef(function(e, t) {
     }({
       marginTop: 8 * !!n
     }, l),
-    children: [(0, r.jsx)(s.d3s, {
+    children: [(0, r.jsx)(a.d3s, {
       size: "custom",
-      className: a.infoIcon,
+      className: s.infoIcon,
       height: n ? 16 : 12,
       width: n ? 16 : 12,
       color: n ? i.Z.colors.TEXT_MUTED.css : i.Z.colors.WHITE.css
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       color: n ? "text-muted" : "always-white",
       variant: n ? "text-xs/normal" : "text-xxs/normal",
       children: o

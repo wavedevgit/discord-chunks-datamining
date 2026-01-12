@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk454585 = require("./454585.js"),
   Chunk494415 = require("./494415.js"),
@@ -52,21 +52,21 @@ function f(e) {
   }(e, ["icon"]);
   switch (t) {
     case "image":
-      return (0, r.jsx)(a.XBm, m({}, n));
+      return (0, r.jsx)(s.XBm, m({}, n));
     case "video":
-      return (0, r.jsx)(a.Odl, m({}, n));
+      return (0, r.jsx)(s.Odl, m({}, n));
     case "audio":
-      return (0, r.jsx)(a.RZG, m({}, n));
+      return (0, r.jsx)(s.RZG, m({}, n));
     case "attachment":
-      return (0, r.jsx)(a.Ujz, m({}, n));
+      return (0, r.jsx)(s.Ujz, m({}, n));
     case "link":
-      return (0, r.jsx)(a.xPt, m({}, n));
+      return (0, r.jsx)(s.xPt, m({}, n));
     case "sticker":
-      return (0, r.jsx)(a.SlE, m({}, n));
+      return (0, r.jsx)(s.SlE, m({}, n));
     case "call-active":
-      return (0, r.jsx)(a.Csw, m({}, n));
+      return (0, r.jsx)(s.Csw, m({}, n));
     case "call-ended":
-      return (0, r.jsx)(a.gkL, m({}, n))
+      return (0, r.jsx)(s.gkL, m({}, n))
   }
 }
 let p = Chunk473749.memo(function(e) {
@@ -97,7 +97,7 @@ function v(e) {
     i = (0, u.sY)(l, n);
   if (null == i) return null;
   let {
-    authorLabel: a,
+    authorLabel: s,
     color: o,
     trailingIcon: c
   } = i;
@@ -107,12 +107,12 @@ function v(e) {
   }) : "message" === i.type && (t = (0, r.jsx)(p, {
     message: i.message
   })), (0, r.jsxs)("div", {
-    className: s()(d.messagePreviewLine, {
+    className: a()(d.messagePreviewLine, {
       [d.colorTextFeedbackPositive]: "text-feedback-positive" === o
     }),
     children: [(0, r.jsxs)("span", {
       className: d.messageContent,
-      children: [null != a && "".concat(a, ": "), t]
+      children: [null != s && "".concat(s, ": "), t]
     }), null != c && (0, r.jsx)(f, {
       icon: c,
       size: "xxs",

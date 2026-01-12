@@ -20,7 +20,7 @@ let c = function(e) {
     taskDetails: d,
     location: m,
     sourceQuestContent: f
-  } = e, p = (0, a.DD)({
+  } = e, p = (0, s.DD)({
     quest: l,
     taskDetails: d,
     location: m,
@@ -37,7 +37,7 @@ let c = function(e) {
       sourceQuestContent: f
     }), (0, r.jsx)("div", {
       className: u.copy,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: p

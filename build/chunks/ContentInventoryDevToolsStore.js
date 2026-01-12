@@ -12,7 +12,7 @@ class u extends(l = Chunk442837.ZP.Store) {
     return o
   }
   getFakeGameData() {
-    return a.O[o]
+    return s.O[o]
   }
 }(r = "displayName") in u ? Object.defineProperty(u, r, {
   value: "ContentInventoryDevToolsStore",

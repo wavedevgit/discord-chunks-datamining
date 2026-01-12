@@ -15,9 +15,9 @@ function o(e) {
     children: t,
     className: n
   } = e;
-  return (0, r.jsx)(s.Text, {
+  return (0, r.jsx)(a.Text, {
     color: "none",
-    className: i()(a.title, n),
+    className: i()(s.title, n),
     variant: "text-md/medium",
     children: t
   })

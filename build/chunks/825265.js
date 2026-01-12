@@ -13,17 +13,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk85746 = require("./85746.js");
 
 function c(e) {
-  return (0, r.e7)([a.Z], () => (function(e, t) {
+  return (0, r.e7)([s.Z], () => (function(e, t) {
     var n, r;
     let l = null != t ? null == e || null == (r = e.guilds[t]) || null == (n = r.mobileRedesignChannelListSettings) ? true : n.messagePreviews : null;
-    return null != l && s.lL.has(l.value) ? l.value : s.Gp.getSetting()
-  })(a.Z.settings.guilds, e))
+    return null != l && a.lL.has(l.value) ? l.value : a.Gp.getSetting()
+  })(s.Z.settings.guilds, e))
 }
 
 function d(e, t) {
   let {
     unread: n,
-    disabled: s
-  } = t, a = c(e.guild_id), d = (0, r.e7)([o.ZP], () => null != e && o.ZP.hasUnread(e.id)), m = (0, l.Z)(e), f = s || m || a === u.Z.NONE || a === u.Z.UNREADS && !(null != n ? n : d);
+    disabled: a
+  } = t, s = c(e.guild_id), d = (0, r.e7)([o.ZP], () => null != e && o.ZP.hasUnread(e.id)), m = (0, l.Z)(e), f = a || m || s === u.Z.NONE || s === u.Z.UNREADS && !(null != n ? n : d);
   return (0, i.Z)(e, f)
 }

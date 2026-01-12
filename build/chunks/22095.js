@@ -6,20 +6,21 @@ require.d(exports, {
   Ag: () => q,
   CS: () => D,
   EW: () => K,
-  Kh: () => ea,
-  MG: () => er,
+  Kh: () => eo,
+  MG: () => ei,
   OR: () => z,
   QB: () => Z,
   T0: () => W,
   Wf: () => H,
-  cT: () => ee,
+  _: () => ee,
+  cT: () => et,
   eT: () => Y,
-  gU: () => en,
+  gU: () => er,
   gl: () => B,
   is: () => x,
   it: () => L,
   jo: () => $,
-  lL: () => et,
+  lL: () => en,
   lx: () => X,
   m0: () => M,
   nE: () => V,
@@ -562,6 +563,38 @@ function $(e, t) {
   })
 }
 async function ee(e, t) {
+  a.Z.dispatch({
+    type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN",
+    content: t
+  });
+  try {
+    let n = await (0, l.Gg)(),
+      r = e.join(","),
+      o = await i.tn.get({
+        url: T.ANM.QUEST_EARNED_DECISION(r, t, null == n ? true : n.uuid),
+        rejectWithError: false
+      }),
+      s = o.body.quest,
+      c = null != s && (0, S.Qe)(s) ? (0, S.WP)(s) : null,
+      u = o.body.metadata_raw;
+    return a.Z.dispatch({
+      type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS",
+      quest: c,
+      metadataRaw: u,
+      content: t
+    }), {
+      quest: c,
+      metadataRaw: u
+    }
+  } catch (e) {
+    a.Z.dispatch({
+      type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_FAILURE",
+      error: new o.Z(e),
+      content: t
+    })
+  }
+}
+async function et(e, t) {
   var n;
   await _.Z.post({
     url: T.ANM.QUESTS_VIDEO_PROGRESS(e),
@@ -579,7 +612,7 @@ async function ee(e, t) {
     rejectWithError: false
   })
 }
-async function et(e) {
+async function en(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = (0, O.fh)(e, O.eC.VIDEO_PLAYER_TRANSCRIPT, true, t);
   if (null == n) return void y.ZP.getState().setTranscriptAsset({
@@ -608,14 +641,14 @@ async function et(e) {
     })
   }
 }
-async function en(e) {
+async function er(e) {
   let t = await i.tn.get({
     url: T.ANM.QUEST(e),
     rejectWithError: false
   });
   return (0, S.q6)(t.body)
 }
-async function er(e) {
+async function ei(e) {
   if (!E.Z.isFetchingQuestPreview(e)) {
     a.Z.dispatch({
       type: "QUESTS_FETCH_PREVIEW_BEGIN",
@@ -640,11 +673,11 @@ async function er(e) {
     }
   }
 }
-let ei = 5 * Chunk70956.Z.Millis.MINUTE;
-async function ea() {
+let ea = 5 * Chunk70956.Z.Millis.MINUTE;
+async function eo() {
   if (E.Z.isFetchingQuestHomeTakeover()) return;
   let e = E.Z.getLastFetchedQuestHomeTakeover();
-  if (!(null != e && Date.now() - e <= ei)) {
+  if (!(null != e && Date.now() - e <= ea)) {
     a.Z.dispatch({
       type: "QUESTS_FETCH_QUEST_HOME_TAKEOVER_BEGIN"
     });

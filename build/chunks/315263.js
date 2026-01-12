@@ -285,6 +285,17 @@ function V(e) {
       urlOrigin: "link_click"
     }), true)
   }
+  if (H && (null == L ? true : L.startsWith("/playground"))) {
+    let {
+      parsePlaygroundUrl: e
+    } = n(857494), {
+      openPlayground: t
+    } = n(2419), {
+      collection: r,
+      story: i
+    } = e(L);
+    return e => (null == e || e.preventDefault(), t(r, i), true)
+  }
   return H && (null == L ? true : L.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
   }), true) : H && (null == L ? true : L.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, C.uL)(U.Z5c.QUEST_HOME_V2 + (null != Z ? Z : "")), true) : H && (null == L ? true : L.startsWith("/quest-preview")) ? e => {
