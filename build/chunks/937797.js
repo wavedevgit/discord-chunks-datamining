@@ -3,10 +3,11 @@
 "use strict";
 require.d(exports, {
   DL: () => i,
-  VG: () => c,
+  VG: () => u,
+  b2: () => l,
   eC: () => o,
   n0: () => s,
-  nj: () => l
+  nj: () => c
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
@@ -75,20 +76,33 @@ let i = (0, Chunk427164.le)({
         enabled: true
       }
     }
-  }),
-  l = (0, Chunk427164.le)({
+  });
+var l = function(e) {
+  return e[e.LISTEN_FOR_ERROR_ONLY = 0] = "LISTEN_FOR_ERROR_ONLY", e[e.LISTEN_AND_RETRY_LOADING = 1] = "LISTEN_AND_RETRY_LOADING", e
+}({});
+let c = (0, Chunk427164.le)({
     name: "2025-11-quest-bar-listen-for-source-error",
     kind: "user",
     defaultConfig: {
-      enabled: false
+      enabled: false,
+      variant: null
     },
     variations: {
+      0: {
+        enabled: false,
+        variant: null
+      },
       1: {
-        enabled: true
+        enabled: true,
+        variant: 0
+      },
+      2: {
+        enabled: true,
+        variant: 1
       }
     }
   }),
-  c = (0, Chunk427164.le)({
+  u = (0, Chunk427164.le)({
     name: "2025-11-video-end-card-v2",
     kind: "user",
     defaultConfig: {

@@ -314,7 +314,8 @@ function G(e) {
 let V = 12633 == require.j ? function() {
   let e = (0, O.DH)(),
     {
-      enabled: t
+      enabled: t,
+      variant: n
     } = j.nj.getConfig({
       location: L.dr.QUESTS_BAR
     });
@@ -322,6 +323,7 @@ let V = 12633 == require.j ? function() {
     source: L.dr.QUESTS_BAR,
     questId: e.id,
     listenForSourceError: t,
+    retrySourceLoadOnError: n === j.b2.LISTEN_AND_RETRY_LOADING,
     children: (0, a.jsx)(G, {
       quest: e
     })
