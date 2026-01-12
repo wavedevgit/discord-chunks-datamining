@@ -72,7 +72,7 @@ function v(e) {
   function v(e) {
     n(e), g(e)
   }
-  let O = t === f.p6O,
+  let O = t === m.p6O,
     y = O ? u : t,
     C = (0, r.jsx)(d.dz2, {
       size: "custom",
@@ -104,19 +104,19 @@ function v(e) {
     }(N, ["ref"]),
     S = (0, c.jm)({
       isSelected: O,
-      label: m.intl.formatToPlainString(m.t.ZC69mL, {
-        colorHex: f.Pbq
+      label: f.intl.formatToPlainString(f.t.ZC69mL, {
+        colorHex: m.Pbq
       })
     }),
     _ = (0, c.jm)({
       isSelected: !O,
-      label: m.intl.formatToPlainString(m.t["3kiLZZ"], {
+      label: f.intl.formatToPlainString(f.t["3kiLZZ"], {
         colorHex: (0, s.Rf)(t)
       })
     });
   return (0, r.jsxs)("div", h(p({
     className: b.buttonsContainer,
-    "aria-label": m.intl.string(m.t["FJjrI/"]),
+    "aria-label": f.intl.string(f.t["FJjrI/"]),
     ref: E
   }, I), {
     children: [(0, r.jsx)("div", {
@@ -125,14 +125,14 @@ function v(e) {
       }),
       children: (0, r.jsxs)(d.P3F, h(p({
         onClick: l ? true : function() {
-          n(f.p6O)
+          n(m.p6O)
         },
         "aria-disabled": l
       }, S), {
         children: [(0, r.jsx)("div", {
           className: b.swatch,
           style: {
-            backgroundColor: f.Pbq
+            backgroundColor: m.Pbq
           },
           children: O ? C : null
         }), (0, r.jsx)(d.Text, {
@@ -140,7 +140,7 @@ function v(e) {
           color: "text-default",
           variant: "text-xs/normal",
           "aria-hidden": true,
-          children: m.intl.string(m.t.Mcfzar)
+          children: f.intl.string(f.t.Mcfzar)
         })]
       }))
     }), (0, r.jsxs)("div", {
@@ -153,7 +153,7 @@ function v(e) {
       }, _), {
         children: [(0, r.jsx)("div", {
           className: a()(b.customSwatch, {
-            [b.defaultSwatch]: y === f.p6O
+            [b.defaultSwatch]: y === m.p6O
           }),
           style: {
             "--custom-color": (0, s.Rf)(y)
@@ -164,7 +164,7 @@ function v(e) {
           color: "text-default",
           variant: "text-xs/normal",
           "aria-hidden": true,
-          children: m.intl.string(m.t["2ArXy1"])
+          children: f.intl.string(f.t["2ArXy1"])
         })]
       })), !l && (0, r.jsx)(d.yRy, {
         targetElementRef: o,
@@ -176,7 +176,7 @@ function v(e) {
         children: e => (0, r.jsx)(d.P3F, h(p({}, e), {
           innerRef: o,
           className: b.dropperIconButton,
-          "aria-label": m.intl.string(m.t.Qp04hK),
+          "aria-label": f.intl.string(f.t.Qp04hK),
           children: (0, r.jsx)(d.ilE, {
             size: "custom",
             className: b.dropperIcon,
@@ -205,8 +205,8 @@ function O(e) {
     onChange: i,
     disabled: l
   }) : (0, r.jsx)(x, {
-    defaultColor: f.p6O,
-    colors: f.pmI,
+    defaultColor: m.p6O,
+    colors: m.pmI,
     value: n,
     onChange: i,
     disabled: l

@@ -19,8 +19,8 @@ function u() {
     n = (0, l.e7)([d.Z], () => d.Z.getProfileError()),
     u = (0, l.e7)([d.Z], () => d.Z.getGuildProfile()),
     g = (0, l.e7)([o.Z], () => o.Z.getIsUpdating(t)),
-    f = i.useMemo(() => null == n ? true : n.getAnyErrorMessage(), [n]),
-    m = i.useCallback(() => {
+    m = i.useMemo(() => null == n ? true : n.getAnyErrorMessage(), [n]),
+    f = i.useCallback(() => {
       if (null == e || null == u) return;
       let t = {
         name: u.name,
@@ -39,8 +39,8 @@ function u() {
     }, [t]);
   return (0, r.jsx)(a.Z, {
     submitting: g,
-    errorMessage: f,
-    onSave: m,
+    errorMessage: m,
+    onSave: f,
     onReset: b
   })
 }

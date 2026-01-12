@@ -35,7 +35,7 @@ function h(e) {
       })
     }), (0, r.jsxs)("div", {
       className: p.subscriberCountText,
-      children: [(0, r.jsx)(m.Z, {
+      children: [(0, r.jsx)(f.Z, {
         color: a.Z.colors.WHITE.css
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
@@ -175,8 +175,8 @@ function O(e) {
   if (!d) return null;
   let {
     guildIcon: u,
-    guildName: f,
-    guildAvatarUrl: m,
+    guildName: m,
+    guildAvatarUrl: f,
     subscriberCount: b,
     emojisToShow: h,
     notShownEmojiCount: O,
@@ -186,8 +186,8 @@ function O(e) {
     className: p.guildCard,
     children: [(0, r.jsx)(x, {
       guildIcon: u,
-      guildName: f,
-      guildAvatarUrl: m,
+      guildName: m,
+      guildAvatarUrl: f,
       subscriberCount: b
     }), (0, r.jsx)(j, {
       quote: i,
@@ -212,7 +212,7 @@ function y(e) {
       children: b.intl.string(b.t["tJp+QV"])
     }), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsx)(f.Z, {
+    }), (0, r.jsx)(m.Z, {
       carouselClassName: p.creatorGuildCarousel,
       items: t,
       renderItem: e => (0, r.jsx)(O, {

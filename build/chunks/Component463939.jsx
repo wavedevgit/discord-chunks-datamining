@@ -60,7 +60,7 @@ function E(e) {
     payoutStatus: r,
     ppgDeferralReasons: i,
     periodEndDate: a
-  } = (0, h.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, f.Zo)(s, "MMM D");
+  } = (0, h.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, m.Zo)(s, "MMM D");
   switch (n) {
     case v.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
@@ -121,7 +121,7 @@ function E(e) {
     case v.jw.REJECTED:
     case v.jw.RISK_REVIEW:
       return (0, l.jsxs)(l.Fragment, {
-        children: [m.Z.getStatusErrorText(r), (0, l.jsx)(g.k$p, {
+        children: [f.Z.getStatusErrorText(r), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: y.statusErrorIcon

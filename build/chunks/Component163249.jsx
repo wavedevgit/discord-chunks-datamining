@@ -23,13 +23,13 @@ function b(e) {
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.roleTag,
+    className: f.roleTag,
     children: [(0, r.jsx)(s.xko, {
-      className: m.roleDot,
+      className: f.roleDot,
       color: t,
       colors: null
     }), (0, r.jsx)("span", {
-      className: m.roleText,
+      className: f.roleText,
       children: n
     })]
   })
@@ -41,22 +41,22 @@ function p(e) {
     display: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(m.banner, t.backgroundClass, {
-      [m.bannerOut]: !n
+    className: a()(f.banner, t.backgroundClass, {
+      [f.bannerOut]: !n
     }),
     children: [(0, r.jsx)("div", {
-      className: m.roles,
+      className: f.roles,
       children: t.roles.map((e, t) => (0, r.jsx)("div", {
-        className: m.rolesRow,
+        className: f.rolesRow,
         children: e.map(e => (0, r.jsx)(b, {
           color: e.color,
           children: e.name
         }, e.name))
       }, t))
     }), (0, r.jsx)("div", {
-      className: m.profileCard,
+      className: f.profileCard,
       children: (0, r.jsxs)("div", {
-        className: m.avatarContainer,
+        className: f.avatarContainer,
         children: [(0, r.jsx)(s.qEK, {
           size: s.EFr.SIZE_56,
           "aria-hidden": true,
@@ -65,7 +65,7 @@ function p(e) {
         }), (0, r.jsx)(s.Text, {
           color: "text-strong",
           variant: "text-md/bold",
-          className: m.avatarName,
+          className: f.avatarName,
           children: t.username
         })]
       })
@@ -75,80 +75,80 @@ function p(e) {
 
 function h() {
   let e = i.useMemo(() => [{
-      backgroundClass: m.bannerClubs,
+      backgroundClass: f.bannerClubs,
       username: "Wumpus#0000",
       avatar: n(91055),
       roles: [
         [{
-          name: f.intl.string(f.t["7oaPPo"]),
+          name: m.intl.string(m.t["7oaPPo"]),
           color: "#7e00fc"
         }, {
-          name: f.intl.string(f.t["Z/HN61"]),
+          name: m.intl.string(m.t["Z/HN61"]),
           color: "#faa61a"
         }, {
-          name: f.intl.string(f.t.lvHTg0),
+          name: m.intl.string(m.t.lvHTg0),
           color: "#f06ea8"
         }],
         [{
-          name: f.intl.string(f.t["6yECkg"]),
+          name: m.intl.string(m.t["6yECkg"]),
           color: "#45ddc0"
         }, {
-          name: f.intl.string(f.t["5DabCV"]),
+          name: m.intl.string(m.t["5DabCV"]),
           color: "#00b0f4"
         }, {
-          name: f.intl.string(f.t.bB900T),
+          name: m.intl.string(m.t.bB900T),
           color: "#ba1616"
         }]
       ]
     }, {
-      backgroundClass: m.bannerGaming,
+      backgroundClass: f.bannerGaming,
       username: "Graggle#0000",
       avatar: n(507003),
       roles: [
         [{
-          name: f.intl.string(f.t["xz/Vfn"]),
+          name: m.intl.string(m.t["xz/Vfn"]),
           color: "#4a76e6"
         }, {
-          name: f.intl.string(f.t.Bceruw),
+          name: m.intl.string(m.t.Bceruw),
           color: "#ad87ff"
         }, {
-          name: f.intl.string(f.t.W51slj),
+          name: m.intl.string(m.t.W51slj),
           color: "#6defcf"
         }],
         [{
-          name: f.intl.string(f.t.y9gTiX),
+          name: m.intl.string(m.t.y9gTiX),
           color: "#ff73fa"
         }, {
-          name: f.intl.string(f.t.HslvdS),
+          name: m.intl.string(m.t.HslvdS),
           color: "#3ba55c"
         }, {
-          name: f.intl.string(f.t.ipL1AG),
+          name: m.intl.string(m.t.ipL1AG),
           color: "#ff1b66"
         }]
       ]
     }, {
-      backgroundClass: m.bannerHobbies,
+      backgroundClass: f.bannerHobbies,
       username: "Mallow#0000",
       avatar: n(552557),
       roles: [
         [{
-          name: f.intl.string(f.t.pAFEbr),
+          name: m.intl.string(m.t.pAFEbr),
           color: "#20d6b8"
         }, {
-          name: f.intl.string(f.t["p/HZEE"]),
+          name: m.intl.string(m.t["p/HZEE"]),
           color: "#236136"
         }, {
-          name: f.intl.string(f.t["9Qp/JQ"]),
+          name: m.intl.string(m.t["9Qp/JQ"]),
           color: "#ff9a15"
         }],
         [{
-          name: f.intl.string(f.t.craF5a),
+          name: m.intl.string(m.t.craF5a),
           color: "#ff78b9"
         }, {
-          name: f.intl.string(f.t.L1TvXF),
+          name: m.intl.string(m.t.L1TvXF),
           color: "#00b0f4"
         }, {
-          name: f.intl.string(f.t.lqKz9F),
+          name: m.intl.string(m.t.lqKz9F),
           color: "#6f52e4"
         }]
       ]
@@ -162,7 +162,7 @@ function h() {
     let e = setTimeout(() => l((t + 1) % a.current.length), 6332);
     return () => clearTimeout(e)
   }, [t]), (0, r.jsx)("div", {
-    className: m.bannerContainer,
+    className: f.bannerContainer,
     "aria-hidden": true,
     children: e.map((e, n) => (0, r.jsx)(p, {
       guild: e,
@@ -183,32 +183,32 @@ function x(e) {
   }, [l, n.id]);
   return (0, r.jsx)(c.NM, {
     children: (0, r.jsxs)("div", {
-      className: m.section,
+      className: f.section,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: f.intl.string(f.t["LPJmL/"])
+        children: m.intl.string(m.t["LPJmL/"])
       }), (0, r.jsxs)("div", {
-        className: m.container,
+        className: f.container,
         children: [(0, r.jsx)(h, {}), (0, r.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
-          children: f.intl.string(f.t.ALlnbi)
+          children: m.intl.string(m.t.ALlnbi)
         }), (0, r.jsx)(s.Text, {
           color: "text-default",
           variant: "text-md/normal",
-          className: m.introBody,
-          children: f.intl.string(f.t["1ydhVp"])
+          className: f.introBody,
+          children: m.intl.string(m.t["1ydhVp"])
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: m.button,
+          className: f.button,
           children: (0, r.jsx)(s.Button, {
             variant: "primary",
-            text: f.intl.string(f.t.JZZjQK),
+            text: m.intl.string(m.t.JZZjQK),
             onClick: g,
             loading: a
           })
         })]
       }), (0, r.jsx)(s.izJ, {
-        className: m.divider
+        className: f.divider
       }), (0, r.jsx)(u.Z, {
         role: n,
         onClick: b

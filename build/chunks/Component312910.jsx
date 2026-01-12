@@ -76,7 +76,7 @@ let y = {
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: v.intl.format(v.t.hxLviw, {
-        fileSize: (0, m.IC)(j.Ht, {
+        fileSize: (0, f.IC)(j.Ht, {
           useKibibytes: true
         })
       })
@@ -143,7 +143,7 @@ let y = {
           guild: e
         }), (0, r.jsx)(l.izJ, {
           className: O.divider
-        }), (0, r.jsx)(f.Z, {
+        }), (0, r.jsx)(m.Z, {
           guild: e
         })]
       })

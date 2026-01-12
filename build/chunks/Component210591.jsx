@@ -16,25 +16,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk57175 = require("./57175.js");
 
-function m(e) {
+function f(e) {
   let {
     checked: t,
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.row,
+    className: m.row,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "interactive-text-active",
-      className: f.rowText,
+      className: m.rowText,
       children: n
     }), t ? (0, r.jsx)(c.owK, {
       size: "md",
       color: "currentColor",
       secondaryColor: o.Z.unsafe_rawColors.WHITE.css,
-      className: a()(f.rowIcon, f.rowIconChecked)
+      className: a()(m.rowIcon, m.rowIconChecked)
     }) : (0, r.jsx)("div", {
-      className: a()(f.rowIcon, f.rowIconEmpty)
+      className: a()(m.rowIcon, m.rowIconEmpty)
     })]
   })
 }
@@ -63,7 +63,7 @@ function b(e) {
           label: n,
           children: (0, r.jsx)(c.Kqy, {
             gap: 8,
-            children: l.map((e, t) => (0, r.jsx)(m, {
+            children: l.map((e, t) => (0, r.jsx)(f, {
               children: e.description,
               checked: e.completed
             }, t))
@@ -75,7 +75,7 @@ function b(e) {
       children: (0, r.jsx)(c.Kqy, {
         gap: 8,
         children: h.map((e, t) => (0, r.jsx)("div", {
-          className: f.row,
+          className: m.row,
           children: (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             children: e
@@ -85,26 +85,26 @@ function b(e) {
     })]
   });
   return (0, r.jsx)("div", {
-    className: f.checklist,
+    className: m.checklist,
     children: (0, r.jsx)("div", {
-      className: f.container,
+      className: m.container,
       children: (0, r.jsxs)(c.Kqy, {
         gap: 16,
         children: [(0, r.jsxs)(c.P3F, {
-          className: f.headerBar,
+          className: m.headerBar,
           onClick: () => l(e => !e),
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-md/semibold",
-            className: f.headerText,
+            className: m.headerText,
             children: g.intl.string(g.t["2Xbd/G"])
           }), (0, r.jsx)(d.Z, {
             direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
-            className: f.headerCaret
+            className: m.headerCaret
           })]
         }), !b && (0, r.jsx)("div", {
-          className: f.progressBarOuter,
+          className: m.progressBarOuter,
           children: (0, r.jsx)(s.animated.div, {
-            className: f.progressBarInner,
+            className: m.progressBarInner,
             style: p
           })
         }), x]

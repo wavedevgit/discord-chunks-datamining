@@ -77,7 +77,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       onEdit: o,
       editingDisabled: c = false,
       isNewlyAdded: d = false
-    } = e, [g, f] = i.useState(s.name), j = R.ZP.getEmojiURL({
+    } = e, [g, m] = i.useState(s.name), j = R.ZP.getEmojiURL({
       id: s.id,
       animated: s.animated,
       size: 32
@@ -110,7 +110,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       role: "row",
       children: [(0, r.jsx)("div", {
         className: W.emojiColumn,
-        children: (0, r.jsx)(m.u, {
+        children: (0, r.jsx)(f.u, {
           text: s.available ? null : H.intl.string(H.t.KUzI73),
           children: (0, r.jsx)(u.animated.div, {
             className: a()(W.emojiImage, {
@@ -151,10 +151,10 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
                 guildId: l,
                 emojiId: s.id,
                 name: e
-              }), f(e)
+              }), m(e)
             },
             onChange: e => {
-              f(e.target.value)
+              m(e.target.value)
             }
           })
         })
@@ -173,7 +173,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
         })
       }), !c && (0, r.jsxs)("div", {
         className: W.emojiRowTools,
-        children: [null == o ? null : (0, r.jsx)(m.u, {
+        children: [null == o ? null : (0, r.jsx)(f.u, {
           text: H.intl.string(H.t.FOYn8U),
           "aria-label": H.intl.string(H.t.FOYn8U),
           children: (0, r.jsx)(b.hU, {
@@ -183,7 +183,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
             onClick: () => o(s, l),
             "aria-label": H.intl.string(H.t.FOYn8U)
           })
-        }), (0, r.jsx)(m.u, {
+        }), (0, r.jsx)(f.u, {
           text: H.intl.string(H.t["+euLPe"]),
           "aria-label": H.intl.string(H.t["+euLPe"]),
           children: (0, r.jsx)(b.hU, {
@@ -280,7 +280,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       newlyAddedEmojiIds: s
     } = e, o = i.useMemo(() => [...t].reverse(), [t]), {
       canManageGuildExpression: c
-    } = (0, P.Gw)(n), d = (0, f.e7)([w.Z], () => w.Z.theme);
+    } = (0, P.Gw)(n), d = (0, m.e7)([w.Z], () => w.Z.theme);
     return 0 === t.length ? (0, r.jsx)(b.ubH, {
       theme: d,
       children: (0, r.jsx)(b.OZU, {
@@ -392,21 +392,21 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
   ee = () => {
     let e = i.useRef(null),
       t = i.useRef(0),
-      l = (0, f.e7)([M.Z], () => M.Z.getGuild()),
+      l = (0, m.e7)([M.Z], () => M.Z.getGuild()),
       [a, s] = i.useState("");
     o()(null != l, "ConnectedGuildSettingsEmoji must be rendered within a guild context");
-    let c = (0, f.e7)([w.Z], () => w.Z.theme),
+    let c = (0, m.e7)([w.Z], () => w.Z.theme),
       {
         canCreateExpressions: u
       } = (0, P.XJ)(l),
       {
-        revision: m,
+        revision: f,
         emojis: p
-      } = (0, f.cj)([G.Z], () => ({
+      } = (0, m.cj)([G.Z], () => ({
         revision: G.Z.getEmojiRevision(l.id),
         emojis: G.Z.getEmojis(l.id)
       })),
-      h = (0, v.Z)(m),
+      h = (0, v.Z)(f),
       [x, y] = i.useState(false),
       [_, R] = i.useState(false),
       D = i.useRef(null),
@@ -431,8 +431,8 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
     }, [x]), i.useEffect(() => {
       K(l.id)
     }, [l.id]), i.useEffect(() => {
-      null != h && h < m && K(l.id)
-    }, [m, h, l.id]), i.useEffect(() => {
+      null != h && h < f && K(l.id)
+    }, [f, h, l.id]), i.useEffect(() => {
       if (null != p && null == ee) return void et(p)
     }, [p, ee]);
     let er = i.useMemo(() => J.enabled && null != ee ? new Set(d().differenceBy(p, ee, "id").map(e => e.id)) : new Set, [J.enabled, p, ee]),

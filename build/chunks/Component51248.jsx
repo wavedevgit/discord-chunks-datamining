@@ -21,15 +21,15 @@ function g(e) {
     existingRules: n
   } = e, {
     cancelEditingRule: g,
-    isLoading: f,
-    hasChanges: m,
+    isLoading: m,
+    hasChanges: f,
     editingRule: b,
     errorMessage: p,
     saveEditingRule: h
   } = (0, c.w)(), {
     updateRule: x
-  } = (0, o.pH)(t), j = null != b, v = j && !(0, s.Vb)(b), O = j || m || v, y = async () => {
-    if (!m && !v) return g();
+  } = (0, o.pH)(t), j = null != b, v = j && !(0, s.Vb)(b), O = j || f || v, y = async () => {
+    if (!f && !v) return g();
     null == b || v || x(b);
     let e = n.find(e => {
       let {
@@ -43,7 +43,7 @@ function g(e) {
     } catch (t) {
       null != e && x(e)
     }
-  }, C = d.intl.string(d.t["ETE/oC"]), N = !m && j ? d.intl.formatToPlainString(d.t.nula34, {
+  }, C = d.intl.string(d.t["ETE/oC"]), N = !f && j ? d.intl.formatToPlainString(d.t.nula34, {
     ruleName: null == b ? true : b.name
   }) : true;
   return null != p && (N = (0, r.jsx)(a.Text, {
@@ -56,8 +56,8 @@ function g(e) {
     className: u.saveNoticeContainer,
     children: O && (0, r.jsx)(a.oXn, {
       children: (0, r.jsx)(l.Z, {
-        submitting: f,
-        disabled: f,
+        submitting: m,
+        disabled: m,
         onSave: y,
         onReset: g,
         onResetText: C,

@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk999382 = require("./999382.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx");
-let m = e => {
+let f = e => {
     var t;
     let {
       reason: n = "",
       emoji_name: d,
-      onSetReason: f,
-      onSelectEmoji: m,
+      onSetReason: m,
+      onSelectEmoji: f,
       onClearPressed: b,
       reasonMinLength: p,
       reasonMaxLength: h,
@@ -48,7 +48,7 @@ let m = e => {
               emoji: n,
               willClose: r
             } = e;
-            null != n && m(n), r && t()
+            null != n && f(n), r && t()
           }
         })
       },
@@ -76,7 +76,7 @@ let m = e => {
         button: N
       },
       onChange: e => {
-        f(e)
+        m(e)
       },
       clearable: {
         show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
@@ -90,8 +90,8 @@ let m = e => {
       reasonMaxLength: n,
       guildId: i,
       reasons: l
-    } = e, s = [f.intl.string(f.t["9dhBGo"]), f.intl.string(f.t["8RmhKF"]), f.intl.string(f.t["2t0V83"]), f.intl.string(f.t.l8WqCR)], o = [];
-    for (let e = 0; e < 4; e++) o.push((0, r.jsx)(m, function(e, t) {
+    } = e, s = [m.intl.string(m.t["9dhBGo"]), m.intl.string(m.t["8RmhKF"]), m.intl.string(m.t["2t0V83"]), m.intl.string(m.t.l8WqCR)], o = [];
+    for (let e = 0; e < 4; e++) o.push((0, r.jsx)(f, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

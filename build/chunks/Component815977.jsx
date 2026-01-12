@@ -108,16 +108,16 @@ function L(e) {
         size: c.zx.Sizes.MIN,
         onClick: () => {
           if (C.Z.hasChanges() && !C.Z.canCloseEarly()) {
-            m.S.dispatch(Z.CkL.SHAKE_APP, {
+            f.S.dispatch(Z.CkL.SHAKE_APP, {
               duration: 300,
               intensity: u.$x
-            }), m.S.dispatch(Z.CkL.EMPHASIZE_NOTICE);
+            }), f.S.dispatch(Z.CkL.EMPHASIZE_NOTICE);
             return
           }(0, O.NB)(), (0, h.BG)(), (0, v.bj)(), (0, j.Pk)(), (0, x.$K)(N.PG.LANDING)
         },
-        children: [(0, r.jsx)(f.Z, {
+        children: [(0, r.jsx)(m.Z, {
           className: D.arrow,
-          direction: f.Z.Directions.LEFT
+          direction: m.Z.Directions.LEFT
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",

@@ -43,19 +43,19 @@ function x(e) {
     type: t
   } = e, n = i.useMemo(() => {
     switch (t) {
-      case m.QJ.MULTIPLE_CHOICE:
+      case f.QJ.MULTIPLE_CHOICE:
         return {
           icon: g.jE$, text: b.intl.string(b.t.ooKh3m)
         };
-      case m.QJ.PARAGRAPH:
+      case f.QJ.PARAGRAPH:
         return {
           icon: g.OvV, text: b.intl.string(b.t.gG0JBN)
         };
-      case m.QJ.TEXT_INPUT:
+      case f.QJ.TEXT_INPUT:
         return {
-          icon: (0, g.GSL)(f.Z), text: b.intl.string(b.t.w6Q9wz)
+          icon: (0, g.GSL)(m.Z), text: b.intl.string(b.t.w6Q9wz)
         };
-      case m.QJ.TERMS:
+      case f.QJ.TERMS:
         return {
           icon: g.snC, text: b.intl.string(b.t["3pz9t3"])
         };
@@ -85,7 +85,7 @@ function j(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: p.backgroundContainer,
-    children: i === m.it.REGULAR ? (0, r.jsxs)("div", {
+    children: i === f.it.REGULAR ? (0, r.jsxs)("div", {
       className: p.containerPadding,
       children: [(0, r.jsx)(d.xvT, {
         variant: "text-md/medium",
@@ -112,7 +112,7 @@ function O(e) {
     field: n,
     isDropHovered: l,
     onDrop: d,
-    fieldStyle: f
+    fieldStyle: m
   } = e, b = (0, s.debounce)(async (e, t, n) => {
     await d(e, t, n)
   }), x = i.useRef(null), [, O] = (0, o.c)({
@@ -150,7 +150,7 @@ function O(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: a()(p.dragIconContainer, {
-        [p.compact]: f === m.it.COMPACT
+        [p.compact]: m === f.it.COMPACT
       }),
       children: (0, r.jsx)(g.Vni, {
         size: "xs",
@@ -164,14 +164,14 @@ function O(e) {
 function y(e) {
   return (0, r.jsxs)("div", {
     className: a()(p.formFieldContainer, {
-      [p.compact]: e.fieldStyle === m.it.COMPACT
+      [p.compact]: e.fieldStyle === f.it.COMPACT
     }),
     children: [(0, r.jsx)("div", {
       className: p.spacingContainer,
       children: e.isDragEnabled ? (0, r.jsx)(O, h({}, e)) : (0, r.jsx)(j, h({}, e))
     }), "side" === e.actionsLocation && (0, r.jsxs)("div", {
       className: a()(p.actionButtonsContainer, {
-        [p.compact]: e.fieldStyle === m.it.COMPACT,
+        [p.compact]: e.fieldStyle === f.it.COMPACT,
         [p.canRemove]: e.canRemove
       }),
       children: [(0, r.jsx)(g.P3F, {

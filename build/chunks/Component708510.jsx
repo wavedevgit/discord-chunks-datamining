@@ -32,7 +32,7 @@ function E(e) {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, f.k)(e), (0, m.V)(e), (0, s.le)(), (0, s.aC)(e)
+      await (0, m.k)(e), (0, f.V)(e), (0, s.le)(), (0, s.aC)(e)
     } finally {
       n.current = true
     }

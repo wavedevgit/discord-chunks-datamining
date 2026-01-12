@@ -52,7 +52,7 @@ let P = function() {
   });
   if (null == w || null == Z) return null;
   let A = l.Y.VISIBLE.has(Z.visibility),
-    L = (0, f.up)(w),
+    L = (0, m.up)(w),
     k = !L || (null == Z ? true : Z.tag) == null,
     G = null != (e = Z.badge) ? e : I.QV["0"],
     M = null != (t = Z.badgeColorPrimary) ? t : I.Ek["0"].primary,
@@ -139,7 +139,7 @@ let P = function() {
           className: T.boostingLinkContainer,
           children: (0, r.jsx)(x.v, {
             onClick: () => {
-              (0, m.Z)(w.id, c.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), p.Z.close()
+              (0, f.Z)(w.id, c.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), p.Z.close()
             }
           })
         }), k ? (0, r.jsx)(o.nuw, {

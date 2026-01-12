@@ -2,7 +2,7 @@
 /** chunk id: 372444, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk678558 = require("./678558.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk255258 = require("./255258.js");
-let f = e => {
+let m = e => {
   let {
     guild: t,
     analyticsLocation: n,
@@ -40,14 +40,14 @@ let f = e => {
   })
 };
 
-function m(e) {
+function f(e) {
   let {
     header: t,
     text: i,
     analyticsLocation: a,
     guild: d,
     className: u,
-    textColor: m,
+    textColor: f,
     headerColor: b,
     buttonProps: p,
     useExpressiveButton: h
@@ -71,12 +71,12 @@ function m(e) {
           children: t
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          color: null != m ? m : "always-white",
+          color: null != f ? f : "always-white",
           children: i
         })]
       }), (0, r.jsx)("div", {
         className: g.ctaContainer,
-        children: (0, r.jsx)(f, {
+        children: (0, r.jsx)(m, {
           guild: d,
           analyticsLocation: a,
           className: g.button,

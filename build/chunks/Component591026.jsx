@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186180 = require("./186180.js");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,72 +55,72 @@ function p(e) {
     onChangeRule: h
   } = e, [x, j] = i.useState(null == (t = p.triggerMetadata) ? true : t.mentionTotalLimit), v = (0, a.a)(p.guildId, false);
   return (0, r.jsxs)("div", {
-    className: f.cardContentsContainer,
+    className: m.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: g.intl.string(g.t.IGfuTa),
       children: [(0, r.jsxs)("div", {
-        className: f.mentionLimitContainer,
+        className: m.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
-          className: f.mentionLimitIconContainer,
+          className: m.mentionLimitIconContainer,
           children: (0, r.jsx)(l.lOy, {
             size: "md",
             color: "currentColor",
-            className: f.mentionLimitIcon
+            className: m.mentionLimitIcon
           })
         }), (0, r.jsxs)("div", {
-          className: f.mentionLimitTextContainer,
+          className: m.mentionLimitTextContainer,
           children: [(0, r.jsx)(l.Heading, {
             variant: "heading-sm/semibold",
             children: g.intl.string(g.t["s/26oQ"])
           }), (0, r.jsx)(l.Text, {
             color: "interactive-text-default",
             variant: "text-xs/medium",
-            className: f.descriptionHint,
+            className: m.descriptionHint,
             children: g.intl.string(g.t["8uW4/N"])
           })]
         }), (0, r.jsx)("div", {
-          className: f.stepperContainer,
+          className: m.stepperContainer,
           children: (0, r.jsx)(l.FiK, {
             value: x,
             onChange: e => {
-              j(e), h(b(m({}, p), {
-                triggerMetadata: b(m({}, p.triggerMetadata), {
+              j(e), h(b(f({}, p), {
+                triggerMetadata: b(f({}, p.triggerMetadata), {
                   mentionTotalLimit: e
                 })
               }))
             },
             minValue: u.Vg,
             maxValue: u.Lg,
-            className: f.stepper
+            className: m.stepper
           })
         })]
       }), v ? (0, r.jsxs)("div", {
-        className: f.mentionLimitContainer,
+        className: m.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
-          className: f.mentionLimitIconContainer,
+          className: m.mentionLimitIconContainer,
           children: (0, r.jsx)(l.S4f, {
             size: "md",
             color: "currentColor",
-            className: f.mentionLimitIcon
+            className: m.mentionLimitIcon
           })
         }), (0, r.jsxs)("div", {
-          className: f.mentionLimitTextContainer,
+          className: m.mentionLimitTextContainer,
           children: [(0, r.jsx)(l.Heading, {
             variant: "heading-sm/semibold",
             children: g.intl.string(g.t.XnuC9g)
           }), (0, r.jsx)(l.Text, {
             color: "interactive-text-default",
             variant: "text-xs/medium",
-            className: f.descriptionHint,
+            className: m.descriptionHint,
             children: g.intl.string(g.t.EDBe5m)
           })]
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(l.P3F, {
             onClick: v ? () => {
               var e, t;
-              return t = !(null == (e = p.triggerMetadata) ? true : e.mentionRaidProtectionEnabled), void h(b(m({}, p), {
-                triggerMetadata: b(m({}, p.triggerMetadata), {
+              return t = !(null == (e = p.triggerMetadata) ? true : e.mentionRaidProtectionEnabled), void h(b(f({}, p), {
+                triggerMetadata: b(f({}, p.triggerMetadata), {
                   mentionRaidProtectionEnabled: t
                 })
               }))

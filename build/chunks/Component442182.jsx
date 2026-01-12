@@ -92,7 +92,7 @@ function D(e) {
     guildId: l,
     roleId: o,
     locked: g
-  } = e, m = i.useRef(null), b = i.useMemo(() => ({
+  } = e, f = i.useRef(null), b = i.useMemo(() => ({
     [l]: [t.id]
   }), [l, t.id]);
 
@@ -140,16 +140,16 @@ function D(e) {
       }))
     })
   }
-  return (0, f.$)(b, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
+  return (0, m.$)(b, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
     className: P.contentWidth,
     children: (0, r.jsx)(p.Z, {
-      targetElementRef: m,
+      targetElementRef: f,
       userId: t.id,
       guildId: l,
       roleId: o,
       position: "left",
       children: e => (0, r.jsxs)(d.P3F, Z(w({}, e), {
-        innerRef: m,
+        innerRef: f,
         className: T.memberRow,
         onContextMenu: j,
         children: [(0, r.jsx)(E.Z, {
@@ -222,9 +222,9 @@ function L(e) {
     handleAddClick: u
   } = e, {
     analyticsLocations: g
-  } = (0, b.ZP)(m.Z.MEMBER_LIST), f = i.useMemo(() => l.trim().toLowerCase(), [l]);
-  (0, y.rY)(t, f);
-  let p = i.useMemo(() => c.filter(e => (0, y.eg)(f, e)), [c, f]),
+  } = (0, b.ZP)(f.Z.MEMBER_LIST), m = i.useMemo(() => l.trim().toLowerCase(), [l]);
+  (0, y.rY)(t, m);
+  let p = i.useMemo(() => c.filter(e => (0, y.eg)(m, e)), [c, m]),
     h = i.useMemo(() => p.sort((e, t) => e.name.localeCompare(t.name)), [p]);
   return (0, r.jsx)(b.Gt, {
     value: g,
@@ -294,8 +294,8 @@ function G(e) {
     locked: s,
     setSelectedSection: c
   } = e, [u, g] = i.useState(""), {
-    headerHeight: f,
-    headerRef: m
+    headerHeight: m,
+    headerRef: f
   } = (0, C.Z)(0), {
     scrolledToTop: b,
     handleScroll: p
@@ -321,7 +321,7 @@ function G(e) {
     className: T.container,
     children: [(0, r.jsx)("div", {
       className: T.headerContainer,
-      ref: m,
+      ref: f,
       children: (0, r.jsx)("div", {
         className: P.contentWidth,
         children: (0, r.jsxs)("div", {
@@ -346,7 +346,7 @@ function G(e) {
         })
       })
     }), (0, r.jsx)(L, {
-      headerHeight: f + 8,
+      headerHeight: m + 8,
       query: u,
       guildId: t.id,
       roleId: l.id,

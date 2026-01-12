@@ -67,7 +67,7 @@ function I(e) {
     settingsGuild: I,
     settingsMetadata: S,
     settingsProfile: _
-  } = e, T = I.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = I.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, f.A)({
+  } = e, T = I.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = I.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
     guildId: I.id
   })) ? t : 0, L = i.useCallback(() => {
     R(null), b.Z.init(T, O.pNK.ACCESS)
@@ -133,7 +133,7 @@ function I(e) {
             features: e
           })
         }
-        p.verificationDirty && await M([...t], true, e), p.profileDirty && null != _ && await (0, m.pV)(I.id, {
+        p.verificationDirty && await M([...t], true, e), p.profileDirty && null != _ && await (0, f.pV)(I.id, {
           visibility: _.visibility
         })
       })

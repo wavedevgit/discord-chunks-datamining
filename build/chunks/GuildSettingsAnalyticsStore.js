@@ -50,13 +50,13 @@ function g(e) {
   }({}, i, r, d[t])
 }
 
-function f(e) {
+function m(e) {
   let {
     error: t
   } = e;
   u = t.code
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk442837.ZP.Store) {
   getOverviewAnalytics(e) {
     return d[e]
   }
@@ -64,12 +64,12 @@ class m extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-o(m, "displayName", "GuildSettingsAnalyticsStore");
-let b = new m(Chunk570140.Z, {
+o(f, "displayName", "GuildSettingsAnalyticsStore");
+let b = new f(Chunk570140.Z, {
   GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: g,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: g,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: g,
-  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: f,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: f,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: f
+  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: m,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: m,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: m
 })

@@ -82,7 +82,7 @@ let N = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }), (0, r.jsx)(g.izJ, {}), (0, r.jsxs)(g.gNt, {
         label: y.intl.string(y.t.N46WOv),
         disabled: B,
-        children: [(0, r.jsx)(f.Z, {
+        children: [(0, r.jsx)(m.Z, {
           value: M,
           className: a()({
             [C.disabled]: B
@@ -93,7 +93,7 @@ let N = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           children: (0, r.jsx)(g.Button, {
             variant: "primary",
             text: y.intl.string(y.t.CaOYqc),
-            onClick: () => (0, m.Z)(M),
+            onClick: () => (0, f.Z)(M),
             disabled: B
           })
         })]

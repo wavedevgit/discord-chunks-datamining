@@ -21,8 +21,8 @@ function u(e) {
     name: i,
     bot: u,
     verifiedBot: g,
-    userTag: f
-  } = e, m = (0, a.e7)([c.Z], () => c.Z.hidePersonalInformation);
+    userTag: m
+  } = e, f = (0, a.e7)([c.Z], () => c.Z.hidePersonalInformation);
   return (0, r.jsxs)("div", {
     className: l()(d.container, t),
     children: [(0, r.jsx)(s.qEK, {
@@ -41,12 +41,12 @@ function u(e) {
       }), u ? (0, r.jsx)(o.Z, {
         className: d.botTag,
         verified: g
-      }) : null, m ? null : (0, r.jsx)(s.Text, {
+      }) : null, f ? null : (0, r.jsx)(s.Text, {
         tag: "span",
         color: "interactive-text-default",
         className: d.userTag,
         variant: "text-sm/normal",
-        children: f
+        children: m
       })]
     })]
   })

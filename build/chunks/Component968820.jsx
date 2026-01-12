@@ -20,8 +20,8 @@ function g(e) {
     children: t,
     revenue: n,
     revenueTrend: g,
-    summaryMetricLabel: f,
-    summaryMetricValue: m,
+    summaryMetricLabel: m,
+    summaryMetricValue: f,
     summaryMetricTrend: b,
     summaryMetricTrendIsPercent: p
   } = e;
@@ -38,8 +38,8 @@ function g(e) {
             isPercent: true
           })
         }), (0, r.jsx)(s.Z, {
-          label: f,
-          value: m,
+          label: m,
+          value: f,
           additionalContent: (0, r.jsx)(l.H, {
             value: b,
             isPercent: p

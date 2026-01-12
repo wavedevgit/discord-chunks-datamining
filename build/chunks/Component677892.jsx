@@ -126,7 +126,7 @@ function j(e) {
 
 function v(e) {
   let t = j(e),
-    n = (0, m.O4)(e);
+    n = (0, f.O4)(e);
   return t || n
 }
 
@@ -135,7 +135,7 @@ function O(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), g = i.useMemo(() => new Set(d), [d]), [, f] = (0, o.VF)(t, g), v = f.length, O = j(t), y = (0, m.O4)(t), C = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), N = C ? p.intl.formatToPlainString(p.t.nHwnLK, {
+  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), g = i.useMemo(() => new Set(d), [d]), [, m] = (0, o.VF)(t, g), v = m.length, O = j(t), y = (0, f.O4)(t), C = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), N = C ? p.intl.formatToPlainString(p.t.nHwnLK, {
     numDefaultChannels: v,
     numFromQuestions: u - v
   }) : O ? p.intl.formatToPlainString(p.t.HxEwSv, {
@@ -162,11 +162,11 @@ function y(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: i
-  } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [g, f] = (0, o.dF)(t, d, c), m = g.length, b = g.length + f.length, j = m / b * 100, v = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), O = u > 0, y = "none";
+  } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [g, m] = (0, o.dF)(t, d, c), f = g.length, b = g.length + m.length, j = f / b * 100, v = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), O = u > 0, y = "none";
   return O && (j >= 85 && !i ? y = "good" : j < 85 && (y = "warning")), (0, r.jsx)(x, {
     title: v ? p.intl.string(p.t.AGjtFv) : p.intl.string(p.t.dqCzoT),
     description: p.intl.format(p.t.iuNisr, {
-      numChannels: m,
+      numChannels: f,
       numTotalChannels: b,
       channelsHook: (e, t) => (0, r.jsx)("span", {
         style: {
@@ -191,19 +191,19 @@ function C(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: o
-  } = e, d = (0, l.e7)([g.Z], () => g.Z.getSettings()), f = (0, l.e7)([s.Z], () => s.Z.getEnabled(t)), m = (0, c.uo)(d), b = d.enabled, j = i.useCallback(() => {
+  } = e, d = (0, l.e7)([g.Z], () => g.Z.getSettings()), m = (0, l.e7)([s.Z], () => s.Z.getEnabled(t)), f = (0, c.uo)(d), b = d.enabled, j = i.useCallback(() => {
     (0, u.To)(t, !b)
   }, [t, b]), v = !(0, c.av)(d), O = "none";
-  v && (m && !o ? O = "good" : m || (O = "required"));
+  v && (f && !o ? O = "good" : f || (O = "required"));
   let y = p.intl.string(p.t.GMOwOD);
-  m ? v || (y = p.intl.string(p.t.wHOoyE)) : y = p.intl.string(p.t.wXFbgZ);
+  f ? v || (y = p.intl.string(p.t.wHOoyE)) : y = p.intl.string(p.t.wXFbgZ);
   let C = null;
-  return v && f && (C = (0, r.jsx)("div", {
+  return v && m && (C = (0, r.jsx)("div", {
     className: h.inlineSwitch,
     children: (0, r.jsx)(a.rsf, {
       checked: b,
       onChange: j,
-      disabled: !m
+      disabled: !f
     })
   })), (0, r.jsx)(x, {
     title: p.intl.string(p.t.mRHqsj),
@@ -227,7 +227,7 @@ function N(e) {
     disableGoodStatus: i
   } = e, {
     enabled: s
-  } = f.Z.useExperiment({
+  } = m.Z.useExperiment({
     guildId: t,
     location: "guild_settings"
   }, {

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk870472 = require("./870472.js"),
   Chunk420974 = require("./420974.js");
 
-function m(e) {
+function f(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -31,7 +31,7 @@ function m(e) {
   });
   return (0, r.jsx)("div", {
     onMouseDown: l,
-    className: f.resizeHandle
+    className: m.resizeHandle
   })
 }
 let b = Chunk473749.forwardRef(function(e, t) {
@@ -42,7 +42,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
     onClick: o
   } = e, c = i.useRef(null), [d, g] = i.useState(u.tq);
   return (0, r.jsxs)(s.P3F, {
-    className: f.textArea,
+    className: m.textArea,
     onFocus: l,
     onBlur: a,
     onClick: o,
@@ -52,13 +52,13 @@ let b = Chunk473749.forwardRef(function(e, t) {
       minHeight: d
     },
     children: [(0, r.jsx)(s.Den, {
-      className: f.innerScroller,
+      className: m.innerScroller,
       style: {
         minHeight: d - 2
       },
       ref: t,
       children: n
-    }), (0, r.jsx)(m, {
+    }), (0, r.jsx)(f, {
       resizableNode: c,
       onResize: g,
       onResizeEnd: e => {
@@ -75,7 +75,7 @@ function p(e) {
     onChangeTags: l,
     onChangeNewTagValue: c,
     tagErrors: u = {},
-    placeholder: m,
+    placeholder: f,
     className: p,
     maxTags: h
   } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), O = (0, g.V)(n), {
@@ -129,7 +129,7 @@ function p(e) {
       } else T(e, true), G(true)
     }, [_, T, D, R]);
   return (0, r.jsxs)("div", {
-    className: a()(f.mainContainer, p),
+    className: a()(m.mainContainer, p),
     ref: j,
     tabIndex: 0,
     onKeyUp: E,
@@ -147,21 +147,21 @@ function p(e) {
         error: u[e],
         forceShowErrorTooltip: !k && t === R.length - 1
       }, t)), (0, r.jsx)("input", {
-        className: a()(f.mainTextInput, {
-          [f.isEditingOtherNodes]: k
+        className: a()(m.mainTextInput, {
+          [m.isEditingOtherNodes]: k
         }),
         ref: x,
         onChange: C,
         onKeyDownCapture: N,
         onPaste: y,
         onBlur: w,
-        placeholder: 0 === R.length ? m : true,
+        placeholder: 0 === R.length ? f : true,
         value: Z
       })]
     }), null != h && (0, r.jsxs)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      className: f.maxTags,
+      className: m.maxTags,
       children: [null != (t = null == R ? true : R.length) ? t : 0, "/", h]
     })]
   })

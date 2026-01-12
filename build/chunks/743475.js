@@ -36,10 +36,10 @@ async function h(e) {
     n = g.Z.advancedMode,
     [b] = (0, s.d9)(e.id, [...t]),
     p = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
-  if (a.Z.getEnabled(e.id) && (!n && b.length < f.X || n && p.length < f.X)) {
+  if (a.Z.getEnabled(e.id) && (!n && b.length < m.X || n && p.length < m.X)) {
     if (i.Z.show({
-        title: m.intl.string(m.t.iLdiqY),
-        body: m.intl.string(m.t.JOT74c)
+        title: f.intl.string(f.t.iLdiqY),
+        body: f.intl.string(f.t.JOT74c)
       }), n) throw Error("Chattable channels with questions requirement not met");
     return
   }
@@ -51,7 +51,7 @@ async function h(e) {
       let i = n ? (0, u.GP)(e, {
           ignoreDefaultPrompt: true
         }) : null,
-        l = null != i ? i.map(f.dr) : true;
+        l = null != i ? i.map(m.dr) : true;
       await (0, u.n_)(e.id, {
         default_channel_ids: t,
         prompts: l
@@ -73,7 +73,7 @@ async function h(e) {
         error: t
       } = null != (h = new l.Hx(n).getAnyErrorMessageAndField()) ? h : {};
       i.Z.show({
-        title: m.intl.string(m.t.iLdiqY),
+        title: f.intl.string(f.t.iLdiqY),
         body: [e, t].filter(c.lm).join(": ")
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED"

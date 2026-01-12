@@ -19,7 +19,7 @@ let c = e => {
     isTrendingUp: d,
     isTrendingDown: u,
     tooltipText: g
-  } = e, f = null != g ? (0, r.jsx)(l.aML, {
+  } = e, m = null != g ? (0, r.jsx)(l.aML, {
     text: g,
     position: "top",
     "aria-label": "string" == typeof g ? g : t,
@@ -51,7 +51,7 @@ let c = e => {
     children: [(0, r.jsxs)(l.Text, {
       variant: "text-md/medium",
       className: o.analyticsCardTitle,
-      children: [t, f]
+      children: [t, m]
     }), (0, r.jsx)("div", {
       className: o.analyticsCardContent,
       children: (0, r.jsx)(l.Text, {

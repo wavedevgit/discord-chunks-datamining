@@ -68,10 +68,10 @@ function h(e) {
     }))
   }, [y, O]);
   return (0, r.jsxs)("div", {
-    className: m.cardContentsContainer,
+    className: f.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
       step: 1,
-      header: f.intl.string(f.t["ue+tnb"]),
+      header: m.intl.string(m.t["ue+tnb"]),
       children: [(0, r.jsx)(o.Z, {
         onChangeText: C,
         maxWordCount: g.RH,
@@ -90,7 +90,7 @@ function h(e) {
       type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(d.Z, {
       step: 2,
-      header: f.intl.string(f.t["18TOiQ"]),
+      header: m.intl.string(m.t["18TOiQ"]),
       children: (0, r.jsx)(a.Z, {
         rule: O,
         onChangeRule: y
@@ -99,7 +99,7 @@ function h(e) {
       type: u.Z.Type.CROSS
     }), (0, r.jsx)(d.Z, {
       step: 3,
-      header: f.intl.string(f.t.u5xPPW),
+      header: m.intl.string(m.t.u5xPPW),
       children: (0, r.jsx)(c.Z, {
         rule: O,
         onChangeRule: y,

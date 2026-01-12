@@ -97,7 +97,7 @@ function w() {
   }, []);
   let e = (0, l.e7)([N.Z], () => N.Z.getGuild()),
     t = (0, l.e7)([v.Z], () => null != e ? v.Z.getAppliedGuildBoostsForGuild(e.id) : null),
-    n = (0, f.V)();
+    n = (0, m.V)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(a.Heading, {
@@ -123,7 +123,7 @@ function w() {
       renderTier: P
     }), (0, r.jsx)("div", {
       className: S.divider
-    }), n ? (0, r.jsx)(b.Z, {}) : null, n ? (0, r.jsx)(m.Z, {
+    }), n ? (0, r.jsx)(b.Z, {}) : null, n ? (0, r.jsx)(f.Z, {
       onOpenPremiumClick: () => void O.default.track(E.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {
           page: E.ZY5.GUILD_SETTINGS,

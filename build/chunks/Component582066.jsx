@@ -26,7 +26,7 @@ function j(e) {
   var t, n;
   let {
     guildId: i
-  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), v = (0, a.e7)([f.default], () => f.default.getCurrentUser()), {
+  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), v = (0, a.e7)([m.default], () => m.default.getCurrentUser()), {
     onAdoptTag: O,
     isAdopting: y
   } = (0, u.Z)(i), C = (null == v || null == (t = v.primaryGuild) ? true : t.identityGuildId) === i && (null == v || null == (n = v.primaryGuild) ? true : n.identityEnabled) === true;
@@ -54,7 +54,7 @@ function j(e) {
           guildTag: j.profile.tag,
           inline: false
         }),
-        username: m.ZP.getName(i, null, v),
+        username: f.ZP.getName(i, null, v),
         message: h.intl.string(h.t["6OSasb"])
       }), (0, r.jsx)(s.Button, {
         variant: "primary",

@@ -104,8 +104,8 @@ function L(e) {
         delay: 1e3
       })
     }
-    return m.S.subscribe(P.CkL.EMPHASIZE_NOTICE, e), () => {
-      m.S.unsubscribe(P.CkL.EMPHASIZE_NOTICE, e)
+    return f.S.subscribe(P.CkL.EMPHASIZE_NOTICE, e), () => {
+      f.S.unsubscribe(P.CkL.EMPHASIZE_NOTICE, e)
     }
   }, [W]);
   let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
@@ -141,13 +141,13 @@ function L(e) {
       }
       returntrue
     }, J = async () => {
-      f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
+      m.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
         step: C.PG[A],
         back: false,
         skip: !k
       })), (0, h.Nb)((0, C.lg)(A)), await X() && (0, h.IG)(b, A)
     }, Q = async () => {
-      f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
+      m.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
         step: C.PG[A],
         back: true,
         skip: false

@@ -121,12 +121,12 @@ function j(e) {
           variant: "text-sm/medium",
           color: "text-strong",
           children: p.intl.format(p.t.vqgyJR, {
-            linkedRolesUrl: c.Z.getArticleURL(m.BhN.CONNECTION_DETAILS_ADMIN)
+            linkedRolesUrl: c.Z.getArticleURL(f.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       }), j.length > 0 && (0, r.jsx)("div", {
         className: h.connectionsList,
-        children: C.map((e, t) => (0, r.jsx)(f.Z, {
+        children: C.map((e, t) => (0, r.jsx)(m.Z, {
           connection: e,
           index: t,
           onDragStart: E,

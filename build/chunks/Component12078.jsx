@@ -65,10 +65,10 @@ function O(e) {
   } = e, o = null != n.customBanner, d = i.useMemo(() => {
     if (null == n.customBanner) return null;
     let e = n.customBanner;
-    return f.ff.test(e) ? e : f.ZP.getGuildDiscoverySplashURL({
+    return m.ff.test(e) ? e : m.ZP.getGuildDiscoverySplashURL({
       id: n.id,
       splash: n.customBanner,
-      size: 300 * (0, m.Z)()
+      size: 300 * (0, f.Z)()
     })
   }, [n]);
   if (!t) return null;
@@ -118,12 +118,12 @@ function y(e) {
     profile: n,
     onCustomBannerChange: l,
     canManageGuild: u
-  } = e, f = (0, s.e7)([g.Z], () => g.Z.getGuild(n.id)), m = null != (t = null == f ? true : f.features.has(p.GuildFeatures.DISCOVERABLE)) && t, y = n.id, C = i.useCallback(e => () => {
+  } = e, m = (0, s.e7)([g.Z], () => g.Z.getGuild(n.id)), f = null != (t = null == m ? true : m.features.has(p.GuildFeatures.DISCOVERABLE)) && t, y = n.id, C = i.useCallback(e => () => {
     b.Z.updateGuildProfile(y, {
       brandColorPrimary: e,
       customBanner: null
     })
-  }, [y]), N = i.useCallback(e => (!m || null == n.customBanner) && e === n.brandColorPrimary, [n, m]);
+  }, [y]), N = i.useCallback(e => (!f || null == n.customBanner) && e === n.brandColorPrimary, [n, f]);
   return (0, r.jsx)(c.gNt, {
     label: x.intl.string(x.t.BSVog8),
     children: (0, r.jsxs)("div", {
@@ -132,7 +132,7 @@ function y(e) {
         profile: n,
         canManageGuild: u,
         handleClick: C(null),
-        hasCustomBanner: m && null != n.customBanner
+        hasCustomBanner: f && null != n.customBanner
       }), h.cb.map(e => {
         let {
           name: t,
@@ -161,7 +161,7 @@ function y(e) {
         }, t)
       }), (0, r.jsx)(O, {
         canManageGuild: u,
-        isDiscoverable: m,
+        isDiscoverable: f,
         profile: n,
         onCustomBannerChange: l
       })]

@@ -18,8 +18,8 @@ let u = e => {
     description: n,
     guild: u,
     guildMetadata: g,
-    disabled: f
-  } = e, m = (0, l.Wu)([c.Z], () => c.Z.getAllCategories()), b = i.useMemo(() => m.map(e => {
+    disabled: m
+  } = e, f = (0, l.Wu)([c.Z], () => c.Z.getAllCategories()), b = i.useMemo(() => f.map(e => {
     let {
       categoryId: t,
       name: n
@@ -28,7 +28,7 @@ let u = e => {
       value: t,
       label: n
     }
-  }), [m]);
+  }), [f]);
   return 0 === b.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(a.d, {
     label: t,
     description: n,
@@ -44,7 +44,7 @@ let u = e => {
         e.filter(e => !t.includes(e)).forEach(e => (0, o.Kq)(u.id, e))
       }
     },
-    isDisabled: f,
+    isDisabled: m,
     multi: true
   })
 }

@@ -19,8 +19,8 @@ function u(e) {
     description: n,
     helperText: u,
     guildId: g,
-    defaultSettings: f,
-    canManageGuild: m
+    defaultSettings: m,
+    canManageGuild: f
   } = e, b = (0, l.e7)([s.Z], () => s.Z.getMemberCount(g)), p = i.useMemo(() => [{
     name: d.intl.string(d.t["n/bTaY"]),
     value: c.bL.ALL_MESSAGES,
@@ -38,8 +38,8 @@ function u(e) {
     description: n,
     helperText: u,
     options: p,
-    value: f,
-    disabled: !m,
+    value: m,
+    disabled: !f,
     onChange: h
   })
 }

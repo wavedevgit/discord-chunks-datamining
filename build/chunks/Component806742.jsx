@@ -22,9 +22,9 @@ var Chunk54381 = require("./54381.js"),
 let x = function(e) {
   let {
     guildId: t
-  } = e, l = (0, s.cj)([m.Z], () => {
+  } = e, l = (0, s.cj)([f.Z], () => {
     var e;
-    return null != (e = m.Z.getSettings().welcomeMessage) ? e : b.z
+    return null != (e = f.Z.getSettings().welcomeMessage) ? e : b.z
   }), x = i.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
@@ -51,7 +51,7 @@ let x = function(e) {
       }({}, n), a = a = {
         guildId: t,
         welcomeMessage: l,
-        onSave: e => (0, f._N)(e)
+        onSave: e => (0, m._N)(e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

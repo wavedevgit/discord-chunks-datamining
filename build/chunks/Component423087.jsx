@@ -85,7 +85,7 @@ function O(e) {
     isSelected: l,
     showColorPopout: d,
     setShowColorPopout: g,
-    palettePopoutTargetRef: f,
+    palettePopoutTargetRef: m,
     handleChange: b
   } = e, v = (0, o.jm)({
     isSelected: l,
@@ -95,8 +95,8 @@ function O(e) {
     })
   });
   return (0, r.jsx)(u.Z, {
-    popoutTargetRef: f,
-    showSecondaryColor: m.ER[t] >= 2,
+    popoutTargetRef: m,
+    showSecondaryColor: f.ER[t] >= 2,
     palette: {
       primary: n,
       secondary: i
@@ -114,7 +114,7 @@ function O(e) {
     shouldShow: d,
     onRequestClose: () => g(false),
     children: e => (0, r.jsx)(c.P3F, j(x({}, e, v), {
-      innerRef: f,
+      innerRef: m,
       onClick: () => {
         g(e => !e)
       },
@@ -136,7 +136,7 @@ let y = function(e) {
     badge: l,
     primaryColor: a,
     secondaryColor: s
-  } = e, [d, u] = i.useState(false), g = i.useRef(null), y = i.useId(), C = i.useId(), N = i.useMemo(() => m.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), E = (0, o.Jb)({
+  } = e, [d, u] = i.useState(false), g = i.useRef(null), y = i.useId(), C = i.useId(), N = i.useMemo(() => f.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), E = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: false,
     labelledBy: y
@@ -144,7 +144,7 @@ let y = function(e) {
 
   function I(e) {
     let t = {};
-    true !== e.primary && (t.badgeColorPrimary = e.primary), true !== e.secondary && (t.badgeColorSecondary = e.secondary), f.Z.updateGuildProfile(n, t)
+    true !== e.primary && (t.badgeColorPrimary = e.primary), true !== e.secondary && (t.badgeColorSecondary = e.secondary), m.Z.updateGuildProfile(n, t)
   }
   return (0, r.jsxs)("div", {
     className: t,
@@ -155,7 +155,7 @@ let y = function(e) {
         id: e.controlId,
         "aria-describedby": C,
         className: h.pickerGrid,
-        children: [m.Ek.map(e => (0, r.jsx)(v, {
+        children: [f.Ek.map(e => (0, r.jsx)(v, {
           palette: e,
           badge: l,
           isSelected: e.primary === a && e.secondary === s,

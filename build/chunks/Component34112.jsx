@@ -79,7 +79,7 @@ function k(e) {
     renderHeader: o,
     headerHeight: d,
     query: u
-  } = e, g = (0, c.e7)([E.Z], () => E.Z.getRoleMemberCount(n.id), [n.id]), f = (0, c.e7)([y.Z], () => y.Z.getHighestRole(n), [n]), b = u.trim();
+  } = e, g = (0, c.e7)([E.Z], () => E.Z.getRoleMemberCount(n.id), [n.id]), m = (0, c.e7)([y.Z], () => y.Z.getHighestRole(n), [n]), b = u.trim();
   i.useEffect(() => {
     (0, N.E)(n.id)
   }, [n.id]);
@@ -107,7 +107,7 @@ function k(e) {
       return (0, r.jsx)(M, {
         role: o,
         guild: n,
-        highestRole: f,
+        highestRole: m,
         currentPosition: l,
         memberCount: null != (i = null == g ? true : g[o.id]) ? i : 0,
         onDragStart: v,
@@ -118,8 +118,8 @@ function k(e) {
         setEditRoleId: t,
         setSelectedSection: s
       }, o.id)
-    }, [h, n, f, g, v, O, S, j, a, t, s]);
-  return (0, r.jsx)(m.Xi, {
+    }, [h, n, m, g, v, O, S, j, a, t, s]);
+  return (0, r.jsx)(f.Xi, {
     sections: [Math.max(h.length, 1)],
     sectionHeight: d,
     renderSection: o,
@@ -149,7 +149,7 @@ function M(e) {
   var t, l, c;
   let {
     role: d,
-    guild: m,
+    guild: f,
     highestRole: x,
     currentPosition: v,
     memberCount: O,
@@ -160,7 +160,7 @@ function M(e) {
     disableDrag: I,
     setEditRoleId: _,
     setSelectedSection: P
-  } = e, k = (0, S.T)(m, x, d), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
+  } = e, k = (0, S.T)(f, x, d), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
     type: L,
     item: () => (y(d.id), {
       id: d.id,
@@ -194,16 +194,16 @@ function M(e) {
   }), [G, d]), [{
     dragSourcePosition: V
   }, K] = (0, o.L)(z), Y = i.useCallback(e => {
-    (0, f.jW)(e, async () => {
+    (0, m.jW)(e, async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
       return t => (0, r.jsx)(e, A(D({}, t), {
         role: d,
-        guild: m
+        guild: f
       }))
     })
-  }, [m, d]), q = (0, h.e)(m, d);
+  }, [f, d]), q = (0, h.e)(f, d);
   if (H) return (0, r.jsx)("div", {
     ref: e => {
       W(e)
@@ -247,7 +247,7 @@ function M(e) {
         color: d.colorString,
         size: 24
       }) : (0, r.jsx)(U, {
-        guildId: m.id,
+        guildId: f.id,
         role: d,
         size: 24,
         className: Z.roleIcon,
@@ -319,8 +319,8 @@ function U(e) {
     role: o,
     size: c,
     enableTooltip: u,
-    className: f,
-    defaultIconClassName: m
+    className: m,
+    defaultIconClassName: f
   } = e, {
     hasGradient: b,
     stops: p,
@@ -331,7 +331,7 @@ function U(e) {
     size: c
   });
   if (null != y) return (0, r.jsx)(O.Z, A(D({}, y), {
-    className: f,
+    className: m,
     enableTooltip: u
   }));
   let C = null != (l = o.colorString) ? l : P.Pbq;
@@ -352,7 +352,7 @@ function U(e) {
       })
     }), (0, r.jsx)(g.lZ8, {
       size: "custom",
-      className: a()(f, m),
+      className: a()(m, f),
       color: C,
       width: c,
       height: c

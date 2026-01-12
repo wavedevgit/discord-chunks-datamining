@@ -193,9 +193,9 @@ let eN = {
         };
       case ex.pNK.ACCESS:
         return {
-          section: ex.pNK.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: ev.intl.string(ev.t.YJlvBM), element: ef.O, notice: {
+          section: ex.pNK.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: ev.intl.string(ev.t.YJlvBM), element: em.O, notice: {
             stores: [eb.Z],
-            element: em.w
+            element: ef.w
           }, predicate: () => t.canManageGuild, ariaLabel: ev.intl.string(ev.t.YJlvBM)
         };
       case ex.pNK.INTEGRATIONS:
@@ -227,7 +227,7 @@ let eN = {
           section: ex.pNK.GUILD_AUTOMOD, label: (0, r.jsx)("div", {
             className: eO.landingPageTabLink,
             children: ev.intl.string(ev.t.uRelgx)
-          }), ariaLabel: ev.intl.string(ev.t.uRelgx), element: m.Z, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.features.has(ex.GuildFeatures.COMMUNITY) && ((0, f.Nb)(t.guild.id) || (0, f.ze)(t.guild.id))
+          }), ariaLabel: ev.intl.string(ev.t.uRelgx), element: f.Z, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.features.has(ex.GuildFeatures.COMMUNITY) && ((0, m.Nb)(t.guild.id) || (0, m.ze)(t.guild.id))
         };
       case ex.pNK.AUDIT_LOG:
         return {

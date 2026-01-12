@@ -55,7 +55,7 @@ function j(e) {
       label: p.intl.string(p.t.u197b7)
     }), e
   }, [y, l, j]), N = i.useCallback(e => {
-    O ? (0, m.c)(l, b, e !== h ? e : null) : f.Z.updateEmbed(l, b, e !== h ? e : null)
+    O ? (0, f.c)(l, b, e !== h ? e : null) : m.Z.updateEmbed(l, b, e !== h ? e : null)
   }, [l, b, O]);
   return (0, r.jsx)(s.y6, {
     label: t,

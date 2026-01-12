@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   E6: () => g,
-  f4: () => f,
+  f4: () => m,
   mw: () => u
 });
 var Chunk54381 = require("./54381.js"),
@@ -85,7 +85,7 @@ function g(e) {
   })
 }
 
-function f(e, t, n, r) {
+function m(e, t, n, r) {
   let i = null == r ? true : r.type,
     l = {
       page: d.ZY5.GUILD_SETTINGS,

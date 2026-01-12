@@ -41,13 +41,13 @@ function h(e) {
 }
 
 function x(e) {
-  return m.$X.filter(t => (null == e ? true : e.id) !== f._ && g.oz(t, e))
+  return f.$X.filter(t => (null == e ? true : e.id) !== m._ && g.oz(t, e))
 }
 
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, s.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = x(t), f = g.length > 0, j = m.$X.some(e => {
+  } = e, i = (0, s.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = x(t), m = g.length > 0, j = f.$X.some(e => {
     var n, r;
     return !u.Z.can(e, t, null, {
       [i.id]: (n = h({}, i), r = r = {
@@ -77,7 +77,7 @@ function j(e) {
           numPerms: g.length
         })
       })]
-    }), f ? (0, r.jsx)(c.Mgn, {
+    }), m ? (0, r.jsx)(c.Mgn, {
       size: "custom",
       color: "currentColor",
       height: 24,
@@ -93,7 +93,7 @@ function j(e) {
       "aria-label": b.intl.string(b.t.YQix8y)
     })]
   });
-  return f ? j ? (0, r.jsx)(o.u, {
+  return m ? j ? (0, r.jsx)(o.u, {
     text: b.intl.string(b.t["E5v/a/"]),
     children: (0, r.jsx)("div", {
       className: l()(p.simpleItemWrapper, p.disabled),

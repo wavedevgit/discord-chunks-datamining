@@ -20,8 +20,8 @@ var Chunk473749 = require("./473749.js"),
 
 function p(e) {
   let t, n = (0, c.Ob)(e),
-    p = null == e ? true : e.features.has(m.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
-    h = null == e ? true : e.features.has(m.GuildFeatures.CREATOR_MONETIZABLE),
+    p = null == e ? true : e.features.has(f.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
+    h = null == e ? true : e.features.has(f.GuildFeatures.CREATOR_MONETIZABLE),
     x = (0, i.e7)([s.default], () => {
       let t = s.default.getCurrentUser();
       return null != e && (0, a.eM)(e, t)
@@ -42,26 +42,26 @@ function p(e) {
       isApplicationRejected: S,
       requestCooldownDuration: _
     } = (0, g.Z)(I),
-    T = (null == e ? true : e.features.has(m.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(m.GuildFeatures.CREATOR_MONETIZABLE_DISABLED)) === true,
+    T = (null == e ? true : e.features.has(f.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(f.GuildFeatures.CREATOR_MONETIZABLE_DISABLED)) === true,
     {
       isMonetizationReapplicationDisabled: P
     } = (0, l.eC)(null == e ? true : e.id),
     w = y || (null == I ? true : I.isApplicationPending) === true,
     Z = (null == I ? true : I.canApply) === true,
     R = b.intl.format(b.t.aJUdOi, {
-      faqUrl: o.Z.getArticleURL(m.BhN.CREATOR_FAQ)
+      faqUrl: o.Z.getArticleURL(f.BhN.CREATOR_FAQ)
     });
   S && P ? t = true === p ? b.intl.format(b.t["0o1Q+t"], {
-    communityGuidelineUrl: m.EYA.GUIDELINES
+    communityGuidelineUrl: f.EYA.GUIDELINES
   }) : b.intl.format(b.t.b6h59n, {
-    communityGuidelineUrl: m.EYA.GUIDELINES
+    communityGuidelineUrl: f.EYA.GUIDELINES
   }) : S && null != _ && (t = b.intl.format(b.t.TvX207, {
     requestCooldownDuration: _,
-    creatorRevenuePolicyUrl: o.Z.getArticleURL(m.BhN.CREATOR_POLICY)
+    creatorRevenuePolicyUrl: o.Z.getArticleURL(f.BhN.CREATOR_POLICY)
   }));
   let D = n && x && false === h,
     A = n && false === p,
-    L = (0, f.f)(),
+    L = (0, m.f)(),
     k = S && Z && x ? b.intl.format(b.t.wbVIUB, {}) : true;
   return r.useEffect(() => {
     D && E()

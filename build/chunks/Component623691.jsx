@@ -41,7 +41,7 @@ function _(e) {
     setHeaderHeight: c
   } = e, u = i.useRef(null), {
     enabled: g
-  } = f.Z.useExperiment({
+  } = m.Z.useExperiment({
     guildId: t.id,
     location: "GuildSettingsRolesOverviewHeader"
   });
@@ -49,7 +49,7 @@ function _(e) {
     var e, t;
     c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : y.Cl)
   }, [c]);
-  let m = i.useCallback(() => {
+  let f = i.useCallback(() => {
       a(n.id)
     }, [a, n.id]),
     b = g ? O.Z : T;
@@ -71,7 +71,7 @@ function _(e) {
       filteredRoles: l,
       query: s,
       setQuery: o,
-      onEveryoneRoleClick: m
+      onEveryoneRoleClick: f
     })]
   })
 }
@@ -81,7 +81,7 @@ function T(e) {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, m.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+    (0, f.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
       dismissAction: N.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true

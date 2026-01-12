@@ -39,7 +39,7 @@ function x() {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: p.intl.string(p.t.UKgg5N)
-      }), (0, r.jsx)(m.w, {
+      }), (0, r.jsx)(f.w, {
         canManageGuild: x,
         premiumProgressBarEnabled: t.premiumProgressBarEnabled
       }), (0, r.jsx)("div", {
@@ -51,7 +51,7 @@ function x() {
         className: h.divider
       }), j ? (0, r.jsxs)(r.Fragment, {
         children: [n && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(f.V, {
+          children: [(0, r.jsx)(m.V, {
             guild: t
           }), (0, r.jsx)("div", {
             className: h.divider
@@ -67,7 +67,7 @@ function x() {
         }), n && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: h.divider
-          }), (0, r.jsx)(f.V, {
+          }), (0, r.jsx)(m.V, {
             guild: t
           })]
         })]

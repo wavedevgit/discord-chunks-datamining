@@ -54,8 +54,8 @@ function P(e) {
     isGuildOwner: l
   } = e, [c, d] = i.useState(), {
     enableGuildMonetizationForTeam: g,
-    submitting: f,
-    error: m
+    submitting: m,
+    error: f
   } = (0, u.Z)(), {
     fetchSubscriptionsSettings: b
   } = (0, v.JH)(), p = (0, O.mY)(), h = i.useMemo(() => n.map(e => ({
@@ -81,13 +81,13 @@ function P(e) {
       }), (0, r.jsx)(s.zxk, {
         text: S.intl.string(S.t["9HU3ZV"]),
         onClick: x,
-        loading: f,
+        loading: m,
         disabled: null == c || p || !l
       })]
-    }), null != m && (0, r.jsx)(o.Text, {
+    }), null != f && (0, r.jsx)(o.Text, {
       className: _.error,
       variant: "text-sm/normal",
-      children: m.getAnyErrorMessage()
+      children: f.getAnyErrorMessage()
     })]
   })
 }
@@ -101,7 +101,7 @@ let w = e => {
     refreshOnDepChange: u
   }), y = i.useMemo(() => v.filter(e => {
     var t;
-    return e.payout_account_status !== I.C.BLOCKED && (0, m.Z)(null != (t = null == n ? true : n.id) ? t : N.lds, e)
+    return e.payout_account_status !== I.C.BLOCKED && (0, f.Z)(null != (t = null == n ? true : n.id) ? t : N.lds, e)
   }), [v, n]), E = y.length > 0, w = i.useCallback(async () => {
     j.default.track(N.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: s,
@@ -111,7 +111,7 @@ let w = e => {
     });
     let e = await (0, g.$)(N.E07.DEVELOPER_PORTAL_TEAMS);
     (0, c.Z)(e)
-  }, [t, a, s, E]), Z = i.useCallback(e => a ? (0, r.jsx)(f.Z, {
+  }, [t, a, s, E]), Z = i.useCallback(e => a ? (0, r.jsx)(m.Z, {
     onClick: w,
     children: e
   }) : e, [w, a]);

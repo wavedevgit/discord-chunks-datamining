@@ -24,8 +24,8 @@ function c(e) {
     teamId: null == n || null == (t = n.team) ? true : t.id
   }), {
     currentPeriod: g,
-    previousPeriods: f,
-    metrics: m
+    previousPeriods: m,
+    metrics: f
   } = r.useMemo(() => {
     let {
       currentPeriod: e,
@@ -41,8 +41,8 @@ function c(e) {
     loading: c || u,
     payoutsByPeriod: d,
     currentPeriod: g,
-    previousPeriods: f,
-    metrics: m,
+    previousPeriods: m,
+    metrics: f,
     application: n
   }
 }

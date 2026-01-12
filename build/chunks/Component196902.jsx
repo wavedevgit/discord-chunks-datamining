@@ -28,7 +28,7 @@ let x = function(e) {
     primaryColor: j,
     secondaryColor: v,
     isDisabled: O = false
-  } = e, y = (0, a.e7)([f.Z], () => f.Z.getProps().originalProfile), C = null != y && y.tag !== i;
+  } = e, y = (0, a.e7)([m.Z], () => m.Z.getProps().originalProfile), C = null != y && y.tag !== i;
 
   function N(e) {
     g.Z.updateGuildProfile(n, {
@@ -75,7 +75,7 @@ let x = function(e) {
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: p.intl.format(b.default["4ZKDXq"], {
-          articleUrl: u.Z.getArticleURL(m.BhN.SERVER_TAGS)
+          articleUrl: u.Z.getArticleURL(f.BhN.SERVER_TAGS)
         })
       })
     })]

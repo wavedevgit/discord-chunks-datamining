@@ -109,7 +109,7 @@ let G = Chunk473749.forwardRef((e, t) => {
       } = s, {
         user: i
       } = t;
-      null != i && null != l && (0, f.jW)(e, async () => {
+      null != i && null != l && (0, m.jW)(e, async () => {
         let {
           default: e
         } = await n.e("50929").then(n.bind(n, 595011));
@@ -123,7 +123,7 @@ let G = Chunk473749.forwardRef((e, t) => {
       let {
         log: t
       } = s, i = v.Z.getGuild(l);
-      null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, f.jW)(e, async () => {
+      null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, m.jW)(e, async () => {
         let {
           default: e
         } = await n.e("51529").then(n.bind(n, 228620));
@@ -141,7 +141,7 @@ let G = Chunk473749.forwardRef((e, t) => {
         case P.KFR.CHANNEL_OVERWRITE:
           let i = j.Z.getChannel(t.targetId),
             a = v.Z.getGuild(l);
-          if (null != i && null != a) return (0, f.jW)(e, async () => {
+          if (null != i && null != a) return (0, m.jW)(e, async () => {
             let {
               default: e
             } = await n.e("51529").then(n.bind(n, 228620));
@@ -149,7 +149,7 @@ let G = Chunk473749.forwardRef((e, t) => {
               channel: i
             }))
           });
-          return (0, f.jW)(e, async () => {
+          return (0, m.jW)(e, async () => {
             let {
               default: e
             } = await n.e("5396").then(n.bind(n, 731646));
@@ -160,7 +160,7 @@ let G = Chunk473749.forwardRef((e, t) => {
           });
         case P.KFR.USER:
           let o = y.default.getUser(t.targetId);
-          if (null != o && null != l) return (0, f.jW)(e, async () => {
+          if (null != o && null != l) return (0, m.jW)(e, async () => {
             let {
               default: e
             } = await n.e("50929").then(n.bind(n, 595011));
@@ -186,12 +186,12 @@ function M(e) {
     setExpandedRef: d,
     setLastExpandedRef: u,
     onHeaderClick: g,
-    onContentClick: f
-  } = e, m = i.useRef(c);
+    onContentClick: m
+  } = e, f = i.useRef(c);
   i.useEffect(() => {
-    m.current = c
+    f.current = c
   }, [c]);
-  let p = (0, b.Z)("audit-log", m);
+  let p = (0, b.Z)("audit-log", f);
   return (0, r.jsx)(s.bG, {
     navigator: p,
     children: (0, r.jsx)(s.SJ, {
@@ -215,7 +215,7 @@ function M(e) {
               },
               className: Z.row,
               onHeaderClick: g,
-              onContentClick: f,
+              onContentClick: m,
               log: e,
               expanded: t
             }, e.id)
@@ -299,7 +299,7 @@ class U extends Chunk473749.PureComponent {
       guildId: d,
       guild: g
     } = this.props;
-    if (a) return (0, r.jsx)(m.Z, {});
+    if (a) return (0, r.jsx)(f.Z, {});
     if (o || s) return this.renderSpinner();
     if (0 === i.length) {
       let e = c ? w.intl.string(w.t.tzkaD7) : w.intl.string(w.t.lNuYhh),

@@ -108,8 +108,8 @@ let I = function(e, t, n) {
   },
   T = () => {
     let e = (0, s.e7)([h.Z], () => h.Z.getGuildId()),
-      t = (0, s.e7)([f.Z], () => f.Z.getMemberCount(e)),
-      n = (0, s.e7)([m.Z], () => m.Z.getGuild(e)),
+      t = (0, s.e7)([m.Z], () => m.Z.getMemberCount(e)),
+      n = (0, s.e7)([f.Z], () => f.Z.getGuild(e)),
       l = (0, s.e7)([g.default], () => g.default.locale),
       {
         analytics: a,

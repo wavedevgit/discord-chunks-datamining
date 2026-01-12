@@ -24,12 +24,12 @@ function h(e) {
   let {
     guild: t,
     scrollToQuestions: n
-  } = e, i = (0, a.e7)([f.Z], () => f.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
+  } = e, i = (0, a.e7)([m.Z], () => m.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)("div", {
       className: p.header,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(f.Z, {
         guildId: t.id,
         scrollToQuestions: n
       })

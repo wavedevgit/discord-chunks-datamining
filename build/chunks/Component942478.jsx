@@ -19,7 +19,7 @@ function u() {
     originalGuild: t,
     submitting: n,
     errors: u
-  } = (0, a.cj)([c.Z], () => c.Z.getProps()), g = i.useMemo(() => (0, d.LG)(u), [u]), f = i.useCallback(async () => {
+  } = (0, a.cj)([c.Z], () => c.Z.getProps()), g = i.useMemo(() => (0, d.LG)(u), [u]), m = i.useCallback(async () => {
     if (null == e) return Promise.resolve();
     let n = {
       systemChannelFlags: e.systemChannelFlags,
@@ -36,13 +36,13 @@ function u() {
       await o.Z.updateEmbed(e.id, t, n)
     }
     return Promise.resolve()
-  }, [e, t]), m = i.useCallback(() => {
+  }, [e, t]), f = i.useCallback(() => {
     null != e && o.Z.init(e.id)
   }, [e]);
   return (0, r.jsx)(s.Z, {
     submitting: n,
     errorMessage: g,
-    onSave: f,
-    onReset: m
+    onSave: m,
+    onReset: f
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 146610, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk199596 = require("./199596.js"),
   Chunk729124 = require("./729124.js");
-let f = [{
+let m = [{
     key: "tier_name",
     cellClassName: Chunk199596.tierNameColumn,
     renderHeader: () => d.intl.string(d.t["2Uiha2"]),
@@ -58,7 +58,7 @@ let f = [{
       })
     }
   }],
-  m = e => {
+  f = e => {
     let {
       totalPayoutsForPeriod: t,
       guildId: n,
@@ -67,7 +67,7 @@ let f = [{
     return (0, r.jsx)("div", {
       className: l()(g.tableContainer, i),
       children: (0, r.jsx)(a.Z, {
-        columns: f,
+        columns: m,
         data: s,
         className: l()(g.table, u.table),
         rowClassName: u.row,

@@ -2,7 +2,7 @@
 /** chunk id: 392885, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -34,20 +34,20 @@ function g(e) {
       d = o.u.OVERVIEW
   }
 }
-class f extends(i = Chunk442837.ZP.Store) {
+class m extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(s.Z)
   }
   getCurrentPage() {
     return d
   }
-}(r = "displayName") in f ? Object.defineProperty(f, r, {
+}(r = "displayName") in m ? Object.defineProperty(m, r, {
   value: "GuildSettingsSafetyStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[r] = "GuildSettingsSafetyStore";
-let m = new f(Chunk570140.Z, {
+}) : m[r] = "GuildSettingsSafetyStore";
+let f = new m(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: function() {
     if (s.Z.getGuildId() === u) returnfalse;
     u = s.Z.getGuildId()

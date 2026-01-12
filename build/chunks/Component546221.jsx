@@ -38,7 +38,7 @@ function v(e) {
       children: [x.intl.string(x.t["9Ub4KY"]), " ", l]
     }), (0, r.jsx)(i.LZC, {
       size: 16
-    }), (0, r.jsx)(f.ZP, {
+    }), (0, r.jsx)(m.ZP, {
       payoutsByPeriod: t
     })]
   })
@@ -64,7 +64,7 @@ let y = e => {
     application: o
   } = e, {
     loading: g,
-    team: f,
+    team: m,
     currentPeriod: y,
     allPeriods: C,
     metrics: N
@@ -85,14 +85,14 @@ let y = e => {
         size: 8
       }), (0, r.jsxs)("div", {
         className: j.metricsContainer,
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(f.Z, {
           label: x.intl.string(x.t.iY1jW3),
           value: (0, a.T4)(null != (t = N.revenue) ? t : 0, h.pKx.USD),
-          additionalContent: (0, r.jsx)(m.H, {
+          additionalContent: (0, r.jsx)(f.H, {
             value: N.revenuePctChange,
             isPercent: true
           })
-        }), (0, r.jsx)(m.Z, {
+        }), (0, r.jsx)(f.Z, {
           label: x.intl.string(x.t["cXyw2/"]),
           value: (0, r.jsxs)(r.Fragment, {
             children: [null != (n = N.subscribers) ? n : "-", " ", (0, r.jsx)(i.tBG, {
@@ -102,7 +102,7 @@ let y = e => {
               "aria-hidden": true
             })]
           }),
-          additionalContent: (0, r.jsx)(m.H, {
+          additionalContent: (0, r.jsx)(f.H, {
             value: N.subscriberChange
           })
         })]
@@ -115,7 +115,7 @@ let y = e => {
       className: j.formSection,
       children: (0, r.jsx)(v, {
         payoutsByPeriod: C,
-        team: f
+        team: m
       })
     }), (0, r.jsx)(i.C3N, {
       label: x.intl.string(x.t.O8cDAJ),

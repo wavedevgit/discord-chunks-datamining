@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   HE: () => u,
-  HZ: () => f,
+  HZ: () => m,
   Pk: () => b,
   e$: () => p,
-  l_: () => m,
+  l_: () => f,
   ss: () => x,
   xI: () => g
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
@@ -33,7 +33,7 @@ function g(e) {
   })
 }
 
-function f(e, t) {
+function m(e, t) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE",
     index: e,
@@ -41,7 +41,7 @@ function f(e, t) {
   })
 }
 
-function m(e) {
+function f(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER",
     connections: e
@@ -56,13 +56,13 @@ function b() {
 async function p(e) {
   var t, n, u;
   let g = s.Z.getEditedConnections(),
-    f = [];
+    m = [];
   if (g.forEach(e => {
       let t = (0, c.t9)(e);
-      f.push(...t)
-    }), f.length > 0) throw h(f), i.Z.show({
+      m.push(...t)
+    }), m.length > 0) throw h(m), i.Z.show({
     title: d.intl.string(d.t.ISppXw),
-    body: f.join("\n")
+    body: m.join("\n")
   }), Error("failed to validate connections");
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT"

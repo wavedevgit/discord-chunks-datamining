@@ -35,13 +35,13 @@ function p() {
 function h() {
   let e = b((0, l.e7)([u.Z], () => u.Z.getProps().guild, []));
   return (0, r.jsxs)("div", {
-    className: m.rowContainer,
+    className: f.rowContainer,
     children: [(0, r.jsx)("div", {
-      children: f.intl.string(f.t["9Oq93m"])
+      children: m.intl.string(m.t["9Oq93m"])
     }), e && (0, r.jsx)(a.rgF, {
       size: "xs",
       color: "currentColor",
-      className: m.linkIcon
+      className: f.linkIcon
     })]
   })
 }

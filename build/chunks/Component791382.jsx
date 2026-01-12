@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   H: () => g,
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -40,7 +40,7 @@ let g = e => {
       })]
     })
   },
-  f = e => {
+  m = e => {
     let {
       label: t,
       sublabel: n,

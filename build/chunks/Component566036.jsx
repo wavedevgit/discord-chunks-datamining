@@ -30,15 +30,15 @@ function p(e) {
   return (0, r.jsx)(s.d, {
     multi: true,
     hidePills: true,
-    wrapperClassName: m.selectWrapper,
+    wrapperClassName: f.selectWrapper,
     options: l,
     value: t,
-    placeholder: f.intl.string(f.t.JTLolO),
+    placeholder: m.intl.string(m.t.JTLolO),
     onChange: n,
     isDisabled: 20 === t.length || i,
     matchSorterOptions: a,
     clearQueryOnSelect: true,
-    customPillContainerClassName: m.pills,
+    customPillContainerClassName: f.pills,
     renderCustomPill: b
   })
 }
@@ -50,7 +50,7 @@ function h(e) {
     disabled: i
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: m.selectedGames,
+    className: f.selectedGames,
     children: t.map(e => (0, r.jsx)(u.Z, {
       applicationId: e,
       selected: true,
@@ -70,22 +70,22 @@ function j(e) {
     d.Z.updateGuildProfile(s, {
       gameApplicationIds: e
     })
-  }, [s]), m = i.useCallback(e => {
+  }, [s]), f = i.useCallback(e => {
     let t = c.filter(t => t !== e);
     d.Z.updateGuildProfile(s, {
       gameApplicationIds: t
     })
   }, [s, c]), b = i.useRef(c), j = i.useMemo(() => (a().isEqual(new Set(c), new Set(b.current)) || (b.current = [...c]), b.current), [c]);
   return (0, r.jsxs)(o.C3N, {
-    label: f.intl.string(f.t.BR68vK),
-    description: f.intl.string(f.t.MobxiB),
+    label: m.intl.string(m.t.BR68vK),
+    description: m.intl.string(m.t.MobxiB),
     children: [(0, r.jsx)(p, {
       gameApplicationIds: c,
       handleChange: u,
       disabled: !l
     }), (0, r.jsx)(h, {
       gameApplicationIds: j,
-      onRemoveGame: m,
+      onRemoveGame: f,
       disabled: !l
     }), (0, r.jsx)(g.Z, {
       guildId: s,

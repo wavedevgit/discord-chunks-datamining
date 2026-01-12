@@ -140,7 +140,7 @@ let w = Chunk473749.forwardRef((e, t) => {
               integration_type: n
             }
           } = l;
-          if (null != e && null != t) return (0, r.jsx)(m.Z, {
+          if (null != e && null != t) return (0, r.jsx)(f.Z, {
             targetElementRef: G,
             user: e,
             guildId: O,
@@ -210,7 +210,7 @@ let w = Chunk473749.forwardRef((e, t) => {
                     children: e
                   }, t),
                   count: null != (e = a.count) ? e : "",
-                  channel: null == a.channel || "string" == typeof a.channel ? a.channel : (0, f.F6)(a.channel, x.default, h.Z, true),
+                  channel: null == a.channel || "string" == typeof a.channel ? a.channel : (0, m.F6)(a.channel, x.default, h.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: Z,
                     children: e

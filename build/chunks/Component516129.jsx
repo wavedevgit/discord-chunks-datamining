@@ -2,7 +2,7 @@
 /** chunk id: 516129, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -33,9 +33,9 @@ function u(e) {
   return e
 }
 let g = Chunk692547.Z.unsafe_rawColors.PRIMARY_400.css,
-  f = Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css;
+  m = Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css;
 
-function m(e) {
+function f(e) {
   var {
     enabled: t,
     imageClassName: n,
@@ -55,11 +55,11 @@ function m(e) {
     }
     return i
   }(e, ["enabled", "imageClassName", "iconWrapperClassName"]);
-  let m = (0, o.ZP)(),
+  let f = (0, o.ZP)(),
     b = {
       height: 18,
       width: 18,
-      color: (0, s.wjy)(m) ? g : f
+      color: (0, s.wjy)(f) ? g : m
     };
   return (0, r.jsx)(c.Z, u({
     className: l()({

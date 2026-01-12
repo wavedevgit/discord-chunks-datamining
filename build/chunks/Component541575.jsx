@@ -72,7 +72,7 @@ let x = function(e) {
         object: g.qAy.BADGE
       },
       guild: t,
-      perks: (0, f.Yp)()
+      perks: (0, m.Yp)()
     }))
   }, N = (0, r.jsx)(s.Z, {
     className: b.availabilityIndicator,
@@ -90,11 +90,11 @@ let x = function(e) {
     children: [(0, r.jsxs)(i.vwX, {
       className: b.formTitle,
       children: [(0, r.jsx)("div", {
-        children: m.intl.string(m.t.B9grJw)
+        children: f.intl.string(f.t.B9grJw)
       }), N]
     }), (0, r.jsx)(i.R94, {
       className: b.description,
-      children: m.intl.string(m.t.I3YQeV)
+      children: f.intl.string(f.t.I3YQeV)
     }), (0, r.jsxs)("div", {
       className: b.rolePreviewArea,
       children: [(0, r.jsx)("div", {
@@ -124,14 +124,14 @@ let x = function(e) {
         }),
         variant: "primary",
         disabled: x,
-        text: m.intl.string(m.t.mD1oGB)
+        text: f.intl.string(f.t.mD1oGB)
       }), null != v ? (0, r.jsx)(i.Button, {
         onClick: () => {
           (0, u._l)(j.id, null, null)
         },
         variant: "critical-secondary",
         disabled: x,
-        text: m.intl.string(m.t["uY+Nk/"])
+        text: f.intl.string(f.t["uY+Nk/"])
       }) : null]
     })]
   })

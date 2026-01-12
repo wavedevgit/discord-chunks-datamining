@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551952 = require("./551952.js");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,11 +51,11 @@ let p = [];
 
 function h() {
   return (0, r.jsx)("div", {
-    className: f.actionItemContainer,
+    className: m.actionItemContainer,
     children: (0, r.jsxs)("div", {
-      className: f.actionItem,
+      className: m.actionItem,
       children: [(0, r.jsx)("div", {
-        className: f.actionItemEmojiWrapper,
+        className: m.actionItemEmojiWrapper,
         children: (0, r.jsx)(a.snC, {
           size: "custom",
           color: "currentColor",
@@ -63,7 +63,7 @@ function h() {
           width: 22
         })
       }), (0, r.jsx)("div", {
-        className: f.actionItemText,
+        className: m.actionItemText,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
@@ -83,14 +83,14 @@ function x(e) {
       let {
         default: e
       } = await Promise.all([n.e("7590"), n.e("88575")]).then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, b(m({}, n), {
+      return n => (0, r.jsx)(e, b(f({}, n), {
         guildId: t,
         onSave: l
       }))
     })
   }, [t, l]);
   return (0, r.jsxs)(a.P3F, {
-    className: f.addActionItem,
+    className: m.addActionItem,
     onClick: s,
     children: [(0, r.jsx)(a.oFk, {
       size: "xs",
@@ -119,7 +119,7 @@ let j = function(e) {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), v = n.map(e => b(m({}, e), {
+  }, [n]), v = n.map(e => b(f({}, e), {
     id: e.channelId
   })), O = i.useCallback(e => {
     (0, c.hS)(e)
@@ -129,7 +129,7 @@ let j = function(e) {
     handleDragComplete: N
   } = (0, s.Z)(v, O);
   return (0, r.jsxs)("div", {
-    className: f.section,
+    className: m.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
       guildId: t,
       action: e,

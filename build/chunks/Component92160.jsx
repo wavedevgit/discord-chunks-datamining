@@ -21,8 +21,8 @@ function c(e) {
     onToggle: d,
     animateStatus: u,
     firstLine: g,
-    secondLine: f,
-    disabled: m
+    secondLine: m,
+    disabled: f
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(t, o.enableContainer),
@@ -49,7 +49,7 @@ function c(e) {
         children: g
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: f
+        children: m
       })]
     }), (0, r.jsxs)("div", {
       className: o.buttonContainer,
@@ -61,12 +61,12 @@ function c(e) {
           size: "sm",
           text: null != i ? i : s.intl.string(s.t["5U0kL8"]),
           onClick: c,
-          disabled: m
+          disabled: f
         })
       }), (0, r.jsx)(a.Button, {
         variant: n ? "critical-primary" : "primary",
         size: "sm",
-        disabled: null == d || !n || m,
+        disabled: null == d || !n || f,
         text: n ? s.intl.string(s.t.R9GHya) : s.intl.string(s.t.JFfins),
         onClick: d
       })]

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Md: () => b,
-  a0: () => m
+  a0: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -35,7 +35,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,10 +48,10 @@ function f(e, t) {
   }), e
 }
 
-function m(e) {
+function f(e) {
   let {
     dropHoveredIndex: t,
-    formField: m,
+    formField: f,
     guild: b,
     index: h,
     isDragEnabled: x,
@@ -74,14 +74,14 @@ function m(e) {
     isDragEnabled: x,
     isDropHovered: P,
     onEdit: () => {
-      0 === j ? p(m, S, b) : (0, l.ZDy)(async () => {
+      0 === j ? p(f, S, b) : (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("74673").then(n.bind(n, 394045));
-        return t => (0, r.jsx)(e, f(g({}, t), {
+        return t => (0, r.jsx)(e, m(g({}, t), {
           guildId: b.id,
           submittedGuildJoinRequestsCount: j,
-          onConfirm: () => p(m, S, b)
+          onConfirm: () => p(f, S, b)
         }))
       })
     },
@@ -91,24 +91,24 @@ function m(e) {
     actionsLocation: N,
     fieldStyle: E
   };
-  switch (m.field_type) {
+  switch (f.field_type) {
     case a.QJ.TERMS:
       return (0, r.jsx)(c.Z, g({
         channelId: b.rulesChannelId,
         title: E === a.it.COMPACT ? u.intl.string(u.t["55+gic"]) : u.intl.string(u.t["53vNcB"]),
-        formField: m
+        formField: f
       }, w));
     case a.QJ.PARAGRAPH:
       return (0, r.jsx)(o.Z, g({
-        formField: m
+        formField: f
       }, w));
     case a.QJ.TEXT_INPUT:
       return (0, r.jsx)(d.Z, g({
-        formField: m
+        formField: f
       }, w));
     case a.QJ.MULTIPLE_CHOICE:
       return (0, r.jsx)(s.Z, g({
-        formField: m
+        formField: f
       }, w));
     default:
       return null
@@ -122,7 +122,7 @@ function b(e, t, i) {
         let {
           default: e
         } = await n.e("5945").then(n.bind(n, 92451));
-        return n => (0, r.jsx)(e, f(g({}, n), {
+        return n => (0, r.jsx)(e, m(g({}, n), {
           field: true,
           onSave: t,
           guild: i
@@ -133,7 +133,7 @@ function b(e, t, i) {
         let {
           ParagraphFormFieldModal: e
         } = await n.e("6595").then(n.bind(n, 457042));
-        return n => (0, r.jsx)(e, f(g({}, n), {
+        return n => (0, r.jsx)(e, m(g({}, n), {
           field: true,
           onSave: t
         }))
@@ -143,7 +143,7 @@ function b(e, t, i) {
         let {
           TextInputFormFieldModal: e
         } = await n.e("6595").then(n.bind(n, 457042));
-        return n => (0, r.jsx)(e, f(g({}, n), {
+        return n => (0, r.jsx)(e, m(g({}, n), {
           field: true,
           onSave: t
         }))
@@ -153,7 +153,7 @@ function b(e, t, i) {
         let {
           default: e
         } = await n.e("94064").then(n.bind(n, 607569));
-        return n => (0, r.jsx)(e, f(g({}, n), {
+        return n => (0, r.jsx)(e, m(g({}, n), {
           field: true,
           onSave: t
         }))
@@ -168,7 +168,7 @@ function p(e, t, i) {
         let {
           default: l
         } = await n.e("5945").then(n.bind(n, 92451));
-        return n => (0, r.jsx)(l, f(g({}, n), {
+        return n => (0, r.jsx)(l, m(g({}, n), {
           field: e,
           onSave: t,
           guild: i
@@ -179,7 +179,7 @@ function p(e, t, i) {
         let {
           ParagraphFormFieldModal: i
         } = await n.e("6595").then(n.bind(n, 457042));
-        return n => (0, r.jsx)(i, f(g({}, n), {
+        return n => (0, r.jsx)(i, m(g({}, n), {
           field: e,
           onSave: t
         }))
@@ -189,7 +189,7 @@ function p(e, t, i) {
         let {
           TextInputFormFieldModal: i
         } = await n.e("6595").then(n.bind(n, 457042));
-        return n => (0, r.jsx)(i, f(g({}, n), {
+        return n => (0, r.jsx)(i, m(g({}, n), {
           field: e,
           onSave: t
         }))
@@ -199,7 +199,7 @@ function p(e, t, i) {
         let {
           default: i
         } = await n.e("94064").then(n.bind(n, 607569));
-        return n => (0, r.jsx)(i, f(g({}, n), {
+        return n => (0, r.jsx)(i, m(g({}, n), {
           field: e,
           onSave: t
         }))

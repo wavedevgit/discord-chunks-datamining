@@ -2,7 +2,7 @@
 /** chunk id: 783454, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,18 +15,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk618374 = require("./618374.js");
 
-function f(e) {
+function m(e) {
   let {
     intiallyExpanded: t = false,
     title: n,
     description: l,
-    children: f
-  } = e, [m, b] = i.useState(t), p = () => b(e => !e), h = (0, o.Dt)();
+    children: m
+  } = e, [f, b] = i.useState(t), p = () => b(e => !e), h = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(d.Z, {
       className: a()(g.header, {
-        [g.headerWithDescription]: m && null != l
+        [g.headerWithDescription]: f && null != l
       }),
       onClick: p,
       children: e => {
@@ -42,18 +42,18 @@ function f(e) {
             onClick: i(p),
             "aria-label": u.intl.string(u.t.e5eQOy),
             "aria-controls": h,
-            "aria-expanded": m,
+            "aria-expanded": f,
             focusProps: {
               ringTarget: t
             },
             children: (0, r.jsx)(c.Z, {
               className: g.caret,
-              direction: m ? c.Z.Directions.UP : c.Z.Directions.DOWN
+              direction: f ? c.Z.Directions.UP : c.Z.Directions.DOWN
             })
           })]
         })
       }
-    }), m && (0, r.jsxs)("div", {
+    }), f && (0, r.jsxs)("div", {
       id: h,
       children: [null != l && (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
@@ -63,7 +63,7 @@ function f(e) {
         className: g.divider
       }), (0, r.jsx)("div", {
         className: g.content,
-        children: f
+        children: m
       })]
     })]
   })

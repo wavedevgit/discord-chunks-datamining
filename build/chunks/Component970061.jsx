@@ -2,7 +2,7 @@
 /** chunk id: 970061, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,27 +37,27 @@ function g(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     title: t,
     children: n,
     buttonLabel: l,
     buttonCallback: a,
     disabled: o
-  } = e, [f, m] = i.useState(false), b = n.flatMap(e => e.items.map(e => e.completed)), p = b.filter(e => e).length / b.length, h = (0, c.q_F)({
+  } = e, [m, f] = i.useState(false), b = n.flatMap(e => e.items.map(e => e.completed)), p = b.filter(e => e).length / b.length, h = (0, c.q_F)({
     width: "".concat(100 * p, "%")
   });
   return (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsxs)(c.P3F, {
       className: u.headerBar,
-      onClick: () => m(e => !e),
+      onClick: () => f(e => !e),
       children: [(0, r.jsx)(c.Heading, {
         variant: "heading-md/semibold",
         className: u.headerText,
         children: t
       }), (0, r.jsx)(d.Z, {
-        direction: f ? d.Z.Directions.DOWN : d.Z.Directions.UP,
+        direction: m ? d.Z.Directions.DOWN : d.Z.Directions.UP,
         className: u.headerCaret
       })]
     }), (0, r.jsx)("div", {
@@ -66,7 +66,7 @@ function f(e) {
         className: u.progressBarInner,
         style: h
       })
-    }), !f && n.map((e, t) => {
+    }), !m && n.map((e, t) => {
       let {
         title: n,
         items: l

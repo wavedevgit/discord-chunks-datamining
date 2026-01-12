@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk516453 = require("./516453.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function m(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -86,7 +86,7 @@ function b(e) {
             let {
               ImportBenefitsFromSubscriptionListingModal: l
             } = await n.e("31667").then(n.bind(n, 880229));
-            return n => (0, r.jsx)(l, m(f({}, n), {
+            return n => (0, r.jsx)(l, f(m({}, n), {
               fromSubscriptionListing: e,
               existingChannelBenefits: t,
               existingIntangibleBenefits: i,
@@ -116,7 +116,7 @@ function p(e) {
         let {
           ImportBenefitsFromRoleModal: e
         } = await n.e("31667").then(n.bind(n, 880229));
-        return n => (0, r.jsx)(e, m(f({}, n), {
+        return n => (0, r.jsx)(e, f(m({}, n), {
           guildId: t,
           onImport: i
         }))

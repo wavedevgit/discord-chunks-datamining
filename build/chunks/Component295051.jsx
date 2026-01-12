@@ -2,8 +2,8 @@
 /** chunk id: 295051, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  hH: () => f,
-  xl: () => m,
+  hH: () => m,
+  xl: () => f,
   zA: () => g
 });
 var Chunk54381 = require("./54381.js"),
@@ -24,22 +24,22 @@ function u(e) {
     getPerks: u,
     targetPremiumGuildTier: g
   } = e, {
-    analyticsLocations: f
-  } = (0, l.ZP)(), m = i.useCallback(e => {
+    analyticsLocations: m
+  } = (0, l.ZP)(), f = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, s.E6)({
       guild: t,
-      analyticsLocations: f,
+      analyticsLocations: m,
       analyticsSection: o,
       analyticsObject: c,
       perks: u(),
       targetPremiumGuildTier: g
     })
-  }, [f, c, o, t, u, g]);
+  }, [m, c, o, t, u, g]);
   return (0, r.jsx)(a.Z, {
     guild: t,
     guildFeature: n,
     className: d.guildFeatureAvailabilityIndicator,
-    onClick: m
+    onClick: f
   })
 }
 
@@ -56,7 +56,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     guild: t
   } = e;
@@ -69,7 +69,7 @@ function f(e) {
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     guild: t
   } = e;

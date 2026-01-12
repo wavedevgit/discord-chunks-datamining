@@ -34,16 +34,16 @@ function b(e) {
     icon: I
   } = v;
   return (0, r.jsxs)("div", {
-    className: m.actionContainer,
+    className: f.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: m.actionIconContainer,
+      className: f.actionIconContainer,
       children: (0, r.jsx)(I, {
         size: "md",
         color: "currentColor",
-        className: m.actionIcon
+        className: f.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: m.actionTextContainer,
+      className: f.actionTextContainer,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-sm/semibold",
         children: N
@@ -54,21 +54,21 @@ function b(e) {
       }), h && (0, r.jsxs)(a.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: [null === y ? null : b === d.fX.MENTION_SPAM ? f.intl.format(f.t.i3lsKD, {
+        children: [null === y ? null : b === d.fX.MENTION_SPAM ? m.intl.format(m.t.i3lsKD, {
           friendlyDurationString: y
-        }) : f.intl.format(f.t.mvHxze, {
+        }) : m.intl.format(m.t.mvHxze, {
           friendlyDurationString: y
         }), C && (0, r.jsx)(a.P3F, {
           onClick: j(true),
-          className: m.editChannel,
+          className: f.editChannel,
           tag: "span",
           role: "link",
-          children: f.intl.string(f.t["0B95RJ"])
+          children: m.intl.string(m.t["0B95RJ"])
         })]
       })]
     }), (0, r.jsx)(l.u, {
-      text: f.intl.format(f.t.wx6Vb9, {}),
-      "aria-label": f.intl.formatToMarkdownString(f.t.wx6Vb9, {}),
+      text: m.intl.format(m.t.wx6Vb9, {}),
+      "aria-label": m.intl.formatToMarkdownString(m.t.wx6Vb9, {}),
       shouldShow: !C,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.P3F, {

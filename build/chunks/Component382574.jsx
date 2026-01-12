@@ -19,8 +19,8 @@ let s = function(e) {
     onEdit: d,
     onRemove: u,
     canRemove: g,
-    actionsLocation: f,
-    fieldStyle: m
+    actionsLocation: m,
+    fieldStyle: f
   } = e, {
     label: b,
     placeholder: p
@@ -35,8 +35,8 @@ let s = function(e) {
     onRemove: u,
     title: b,
     canRemove: g,
-    actionsLocation: f,
-    fieldStyle: m,
+    actionsLocation: m,
+    fieldStyle: f,
     children: (0, r.jsx)(i.Q8, {
       placeholder: null != p ? p : a.intl.string(a.t["Sqn+Wh"]),
       disabled: true

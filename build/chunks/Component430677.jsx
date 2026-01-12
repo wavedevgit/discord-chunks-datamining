@@ -40,7 +40,7 @@ let O = function(e) {
     channelId: E.channelId,
     icon: E.icon
   }), M = null != D ? D.iconData : G, U = null;
-  null != Z && (0, f.kb)(Z) ? k || (U = j.intl.string(j.t.wAkIZW)) : U = j.intl.string(j.t.CbTEKP);
+  null != Z && (0, m.kb)(Z) ? k || (U = j.intl.string(j.t.wAkIZW)) : U = j.intl.string(j.t.CbTEKP);
   let {
     drag: B,
     dragSourcePosition: F,
@@ -129,10 +129,10 @@ let O = function(e) {
         })
       }) : (0, r.jsx)("div", {
         className: v.actionItemEmojiWrapper,
-        children: (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(f.Z, {
           emojiId: null == (O = E.emoji) ? true : O.id,
           emojiName: null == (y = E.emoji) ? true : y.name,
-          size: m.R.MEDIUM,
+          size: f.R.MEDIUM,
           defaultComponent: (0, r.jsx)(V, {})
         })
       }), (0, r.jsxs)("div", {

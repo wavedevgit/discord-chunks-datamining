@@ -67,18 +67,18 @@ function P(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, a = (0, o.e7)([m.default], () => m.default.getCurrentUser()), u = i.useMemo(() => h.uB({
+  } = e, a = (0, o.e7)([f.default], () => f.default.getCurrentUser()), u = i.useMemo(() => h.uB({
     user: a,
     context: t
   }), [a, t]), g = i.useMemo(() => ({
     [n.id]: T(_({}, n), {
       permissions: h.Hn
     })
-  }), [n]), f = i.useMemo(() => h.uB({
+  }), [n]), m = i.useMemo(() => h.uB({
     user: a,
     context: t,
     roles: g
-  }), [a, t, g]), b = !s.fS(u, f);
+  }), [a, t, g]), b = !s.fS(u, m);
   return (0, r.jsx)(c.u, {
     text: b ? E.intl.string(E.t["IQ/6Sg"]) : null,
     position: "top",
@@ -118,7 +118,7 @@ function w(e) {
   });
 
   function o(e) {
-    return f.Z.can(e, t) ? !f.Z.can(e, t, null, {
+    return m.Z.can(e, t) ? !m.Z.can(e, t, null, {
       [n.id]: T(_({}, n), {
         permissions: s.Od(n.permissions, e)
       })
@@ -159,8 +159,8 @@ function Z(e) {
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
-    headerHeight: f,
-    headerRef: m
+    headerHeight: m,
+    headerRef: f
   } = (0, v.Z)(0), {
     scrolledToTop: h,
     handleScroll: x
@@ -172,7 +172,7 @@ function Z(e) {
   }, [c]), (0, r.jsx)(d.yWw, {
     className: I.scroller,
     style: {
-      scrollPaddingTop: f
+      scrollPaddingTop: m
     },
     onScroll: x,
     children: (0, r.jsxs)("div", {
@@ -181,7 +181,7 @@ function Z(e) {
         className: a()(S.header, S.stickyHeader, {
           [S.stickyHeaderElevated]: !h
         }),
-        ref: m,
+        ref: f,
         children: [(0, r.jsx)(O.Z, {
           guild: t,
           role: n,

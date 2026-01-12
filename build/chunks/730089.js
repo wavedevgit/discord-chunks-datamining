@@ -15,7 +15,7 @@ var Chunk36793 = require("./36793.js"),
   Chunk185923 = require("./185923.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  m = require("./413135.js").Buffer;
+  f = require("./413135.js").Buffer;
 let b = (e, t, n, r) => (o.default.track(g.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
     guild_id: n,
     file_size: t,
@@ -63,20 +63,20 @@ let b = (e, t, n, r) => (o.default.track(g.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
       return o.default.track(g.rMx.EMOJI_UPLOAD_COMPLETED, {
         guild_id: p,
         upload_id: h
-      }), (0, i.showToast)((0, i.createToast)(f.intl.string(f.t["r0w9m/"]), i.ToastType.SUCCESS)), e
+      }), (0, i.showToast)((0, i.createToast)(m.intl.string(m.t["r0w9m/"]), i.ToastType.SUCCESS)), e
     } catch (a) {
       let e, n, {
         body: r,
         status: i
       } = a;
-      return null != r && (r.code === g.evJ.TOO_MANY_EMOJI ? (e = f.intl.string(f.t["jP/Rqm"]), n = s.d.TOO_MANY_EMOJI) : r.code === g.evJ.TOO_MANY_ANIMATED_EMOJI ? (e = f.intl.string(f.t["6v5dP/"]), n = s.d.TOO_MANY_ANIMATED_EMOJI) : null != r.image || r.code === g.evJ.INVALID_FILE_ASSET_SIZE ? (o.default.track(g.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
+      return null != r && (r.code === g.evJ.TOO_MANY_EMOJI ? (e = m.intl.string(m.t["jP/Rqm"]), n = s.d.TOO_MANY_EMOJI) : r.code === g.evJ.TOO_MANY_ANIMATED_EMOJI ? (e = m.intl.string(m.t["6v5dP/"]), n = s.d.TOO_MANY_ANIMATED_EMOJI) : null != r.image || r.code === g.evJ.INVALID_FILE_ASSET_SIZE ? (o.default.track(g.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
         guild_id: p,
-        file_size: m.byteLength(t),
+        file_size: f.byteLength(t),
         upload_id: h
-      }), e = f.intl.formatToPlainString(f.t.kIO9jy, {
+      }), e = m.intl.formatToPlainString(m.t.kIO9jy, {
         maxSize: u.xG
-      }), n = s.d.TOO_BIG) : (null != r.image || r.code === g.evJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = s.d.RESIZE_GIF)), 429 === i && (e = f.intl.string(f.t.Whhv4w), n = s.d.RATE_LIMIT), null == e || v || l.Z.show({
-        title: f.intl.string(f.t.iufib1),
+      }), n = s.d.TOO_BIG) : (null != r.image || r.code === g.evJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = s.d.RESIZE_GIF)), 429 === i && (e = m.intl.string(m.t.Whhv4w), n = s.d.RATE_LIMIT), null == e || v || l.Z.show({
+        title: m.intl.string(m.t.iufib1),
         body: e
       }), n
     }

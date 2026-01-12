@@ -207,8 +207,8 @@ function D(e) {
     canChangeMFALevel: false,
     showMFAUserTooltip: false
   } : {
-    isGuildOwnerWithMFA: (0, m.yn)(t, a),
-    showMFAUserTooltip: !a.mfaEnabled && (0, m.eM)(t, a)
+    isGuildOwnerWithMFA: (0, f.yn)(t, a),
+    showMFAUserTooltip: !a.mfaEnabled && (0, f.eM)(t, a)
   }, [a, t]), p = n === E.BpS.ELEVATED, x = (0, s.throttle)(async e => {
     d && (u || await v.Z.updateMFALevel({
       guildId: t.id,
@@ -231,7 +231,7 @@ function D(e) {
         textVariant: "text-xs/normal",
         children: I.intl.format(I.t.Xz1O0W, {
           onClick: function() {
-            (0, f.openUserSettings)(g.n.ACCOUNT_PANEL, {
+            (0, m.openUserSettings)(g.n.ACCOUNT_PANEL, {
               section: E.oAB.ACCOUNT
             })
           }

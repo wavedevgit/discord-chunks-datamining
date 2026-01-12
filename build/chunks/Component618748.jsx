@@ -83,7 +83,7 @@ function k(e) {
     application: t
   } = e, {
     teams: n
-  } = (0, m.Z)({
+  } = (0, f.Z)({
     refreshOnDepChange: false
   }), i = n.find(e => {
     var n;
@@ -133,7 +133,7 @@ function M(e) {
     } = e,
     d = null != o && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
     {
-      currentTab: m,
+      currentTab: f,
       setCurrentTab: v
     } = (0, T.dw)(),
     O = (0, j.f)(),
@@ -141,7 +141,7 @@ function M(e) {
     R = (0, C.Z)(n.id),
     G = null != n && (0, b.eM)(n, S);
   if (!O) return (0, r.jsx)(a.$jN, {});
-  switch (m) {
+  switch (f) {
     case T.ue.BASIC_INFO:
       t = (0, r.jsx)(I.Z, {
         guild: n
@@ -163,7 +163,7 @@ function M(e) {
       });
       break;
     default:
-      (0, x.vE)(m)
+      (0, x.vE)(f)
   }
   return (0, r.jsxs)("div", {
     className: A.container,
@@ -187,7 +187,7 @@ function M(e) {
         children: [(0, r.jsxs)(a.njP, {
           className: A.tabBar,
           "aria-label": D.intl.string(D.t["+1H47t"]),
-          selectedItem: m,
+          selectedItem: f,
           type: "top",
           look: "brand",
           onItemSelect: v,
@@ -228,7 +228,7 @@ function M(e) {
                   roles: t,
                   initialTab: "role_subscriptions",
                   returnToSection: w.pNK.ROLE_SUBSCRIPTIONS
-                }), (0, y.be)(n.id), (0, f.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
+                }), (0, y.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
               },
               text: D.intl.string(D.t.vM81yY),
               size: "sm",

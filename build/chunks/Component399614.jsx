@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551952 = require("./551952.js");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ let p = [],
     } = e, h = (0, l.Wu)([d.Z], () => {
       var e;
       return null != (e = d.Z.getSettings().resourceChannels) ? e : p
-    }), x = i.useMemo(() => h.map(e => b(m({}, e), {
+    }), x = i.useMemo(() => h.map(e => b(f({}, e), {
       id: e.channelId
     })), [h]), {
       handleDragStart: j,
@@ -70,7 +70,7 @@ let p = [],
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
-        return n => (0, r.jsx)(e, b(m({}, n), {
+        return n => (0, r.jsx)(e, b(f({}, n), {
           guildId: t,
           onSave: c.r2,
           onIconUpload: y
@@ -78,7 +78,7 @@ let p = [],
       })
     }, [t, y]);
     return (0, r.jsxs)("div", {
-      className: f.editResources,
+      className: m.editResources,
       children: [h.map((e, n) => (0, r.jsx)(u.Z, {
         guildId: t,
         resourceChannel: e,
@@ -87,7 +87,7 @@ let p = [],
         onDragReset: v,
         onDragComplete: O
       }, e.channelId)), h.length < o.x3 && (0, r.jsxs)(a.P3F, {
-        className: f.addActionItem,
+        className: m.addActionItem,
         onClick: C,
         children: [(0, r.jsx)(a.oFk, {
           size: "xs",

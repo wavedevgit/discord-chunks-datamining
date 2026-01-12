@@ -30,8 +30,8 @@ function x(e) {
     description: c,
     targetType: d,
     index: u,
-    dndName: f,
-    onEdit: m,
+    dndName: m,
+    onEdit: f,
     onMove: x,
     disabled: j = false
   } = e, v = i.useRef(null), O = i.useRef(null), {
@@ -56,7 +56,7 @@ function x(e) {
       }), !j && (0, r.jsx)("div", {
         ref: O,
         className: h.dragIconWrapper,
-        "data-dnd-name": f,
+        "data-dnd-name": m,
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
@@ -78,7 +78,7 @@ function x(e) {
       className: h.cardActions,
       children: !j && (0, r.jsx)(o.P3F, {
         className: h.cardActionButton,
-        onClick: j ? true : m,
+        onClick: j ? true : f,
         "aria-label": p.intl.string(p.t.Eoo8h6),
         "aria-disabled": j,
         children: (0, r.jsx)(o.vdY, {
@@ -113,11 +113,11 @@ function j(e) {
         guildId: o,
         emojiId: e.emoji_id,
         emojiName: e.emoji_name,
-        title: (0, f.Z)(e),
+        title: (0, m.Z)(e),
         description: e.description,
         targetType: g,
         index: t,
-        dndName: (0, m.Z)(e),
+        dndName: (0, f.Z)(e),
         onEdit: () => n(t),
         onMove: l,
         disabled: p

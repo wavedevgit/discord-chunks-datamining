@@ -42,10 +42,10 @@ function p(e) {
     }, h) : null,
     disabled: !x,
     onChange: v,
-    hint: m.intl.string(m.t.uPvxqJ),
+    hint: f.intl.string(f.t.uPvxqJ),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: g.pC.GUILD_BANNER,
-      maxFileSizeBytes: f.B,
+      maxFileSizeBytes: m.B,
       onComplete: e => {
         let {
           imageUri: t,

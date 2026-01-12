@@ -27,7 +27,7 @@ function h(e) {
     editStateId: h,
     guildId: x,
     groupListingId: j
-  } = (0, g.N)(), v = (0, s.e7)([u.Z], () => u.Z.getSubscriptionListing(h)), O = null == v ? true : v.id, y = (0, f.Z)(x), C = i.useMemo(() => {
+  } = (0, g.N)(), v = (0, s.e7)([u.Z], () => u.Z.getSubscriptionListing(h)), O = null == v ? true : v.id, y = (0, m.Z)(x), C = i.useMemo(() => {
     var e;
     return null != y && null != v && (null != (e = y[v.role_id]) ? e : 0)
   }, [y, v]), N = 0 === C, E = null == O, I = null != (t = null == v ? true : v.archived) && t, {
@@ -41,7 +41,7 @@ function h(e) {
   } = (0, d._1)(), {
     allowSelfRemoveMonetization: R
   } = (0, c.gX)(x);
-  return null == v ? null : (0, r.jsx)(m.Z, {
+  return null == v ? null : (0, r.jsx)(f.Z, {
     title: b.intl.string(b.t["7Si8Ul"]),
     children: (0, r.jsxs)(o.Kqy, {
       gap: 16,

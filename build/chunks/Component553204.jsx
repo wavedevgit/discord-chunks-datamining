@@ -21,7 +21,7 @@ let b = (0, Chunk624138.Mg)(Chunk477690.Z.ROLE_ICON_UPLOADER_ICON_SIZE);
 function p(e) {
   let {
     role: t,
-    "aria-label": n = f.intl.string(f.t["MsUY/S"]),
+    "aria-label": n = m.intl.string(m.t["MsUY/S"]),
     className: l,
     onClick: s,
     disabled: g = false
@@ -44,27 +44,27 @@ function p(e) {
     return e
   }({
     enableTooltip: false,
-    className: m.icon
+    className: f.icon
   }, h)) : (0, r.jsx)(o.FmF, {
     size: "md",
     color: "currentColor",
-    className: m.icon
+    className: f.icon
   });
   return (0, r.jsx)(o.tEY, {
     ringTarget: p,
     children: (0, r.jsxs)(o.P3F, {
       "aria-label": n,
-      className: a()(m.container, l, {
-        [m.disabled]: g
+      className: a()(f.container, l, {
+        [f.disabled]: g
       }),
       onClick: g ? true : s,
       "aria-disabled": g,
       children: [(0, r.jsx)("div", {
         ref: p,
-        className: m.preview,
+        className: f.preview,
         children: x
       }), null != h ? (0, r.jsx)(d.S, {
-        className: m.uploaderIcon
+        className: f.uploaderIcon
       }) : null]
     })
   })

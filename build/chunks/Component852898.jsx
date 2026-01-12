@@ -2,7 +2,7 @@
 /** chunk id: 852898, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,16 +16,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t) {
+function f(e, t) {
   let n = (0, a.e7)([u.Z], () => u.Z.getProps().integrations);
   return i.useMemo(() => (function(e, t, n) {
-    var i, a, u, m;
+    var i, a, u, f;
     let b;
     if (!t.managed) return null;
     let p = null == (i = t.tags) ? true : i.bot_id,
       h = null == (a = t.tags) ? true : a.integration_id,
       x = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
-      j = (null == (m = t.tags) ? true : m.guild_connections) !== true;
+      j = (null == (f = t.tags) ? true : f.guild_connections) !== true;
     if (null != p ? b = null == n ? true : n.find(e => {
         var t;
         let {
@@ -44,7 +44,7 @@ function m(e, t) {
       let n = () => {
         d.Z.setSection(g.pNK.INTEGRATIONS), s.Z.setSection(g.b4C.APPLICATION, e)
       };
-      return f.intl.format(f.t.FuXsWm, {
+      return m.intl.format(m.t.FuXsWm, {
         name: t,
         integrationNameHook: (e, t) => (0, r.jsx)(c.Z, {
           onClick: n,
@@ -52,6 +52,6 @@ function m(e, t) {
         }, t)
       })
     }
-    return x ? f.intl.string(f.t.oF6FYT) : j ? f.intl.string(f.t.ZQ37tH) : f.intl.string(f.t.k5d7DJ)
+    return x ? m.intl.string(m.t.oF6FYT) : j ? m.intl.string(m.t.ZQ37tH) : m.intl.string(m.t.k5d7DJ)
   })(0, t, n), [e, t, n])
 }

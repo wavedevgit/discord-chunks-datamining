@@ -28,7 +28,7 @@ function O(e) {
     guildId: t
   } = e, {
     guildProfile: c,
-    fetchGuildProfile: f,
+    fetchGuildProfile: m,
     fetchStatus: O
   } = (0, g.u)(t), y = O !== u.a.FETCHED, {
     fetchedEmbed: C,
@@ -47,10 +47,10 @@ function O(e) {
     }
   }), I = i.useMemo(() => (0, h.S)(t), [t]), S = i.useMemo(() => (0, h.a)(t), [t]), [_, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !y && !P && !N;
   i.useEffect(() => {
-    C || (0, m.R)(t)
+    C || (0, f.R)(t)
   }, [C, t]), i.useEffect(() => {
-    f()
-  }, [t, f]);
+    m()
+  }, [t, m]);
   let Z = i.useCallback(async e => {
     T(true), await (0, p.c)(t, e, E), T(false)
   }, [E, t]);
@@ -119,7 +119,7 @@ function O(e) {
 function y(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([f.Z], () => f.Z.enabled);
+  } = e, n = (0, s.e7)([m.Z], () => m.Z.enabled);
   return (0, r.jsx)(o.C3N, {
     label: j.intl.string(j.t["qlhNb+"]),
     description: j.intl.string(j.t["dNn/1i"]),

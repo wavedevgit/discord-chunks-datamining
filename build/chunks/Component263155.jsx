@@ -122,7 +122,7 @@ let G = "WELCOME_CHANNEL",
       });
     return i.useLayoutEffect(() => (M(U(y)), () => {
       M(null), U(null)
-    }), [M, U]), l = S ? null != N || null != o.emoji_name ? (0, r.jsx)(m.Z, {
+    }), [M, U]), l = S ? null != N || null != o.emoji_name ? (0, r.jsx)(f.Z, {
       emojiId: null == N ? true : N.id,
       emojiName: null != N ? N.name : o.emoji_name,
       animated: !!(null == N ? true : N.animated)
@@ -141,7 +141,7 @@ let G = "WELCOME_CHANNEL",
       ref: y,
       "data-dnd-name": o.description,
       onContextMenu: e => {
-        (0, f.jW)(e, async () => {
+        (0, m.jW)(e, async () => {
           let {
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
@@ -186,18 +186,18 @@ let G = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: a
-    } = (0, u.e7)([N.Z], () => N.Z.getSettingsProps()), s = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), [c, d] = i.useState(null), [f, m] = i.useState(false), [h, x] = i.useState(false), {
+    } = (0, u.e7)([N.Z], () => N.Z.getSettingsProps()), s = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), [c, d] = i.useState(null), [m, f] = i.useState(false), [h, x] = i.useState(false), {
       description: j,
       channels: E,
       enabled: _
     } = l, Z = e => {
       null != t && (o()(e, a.channels) || ((0, C.Es)(t.id, {
         channels: e
-      }), m(true)))
+      }), f(true)))
     }, G = e => {
       null != t && e !== a.enabled && ((0, C.Es)(t.id, {
         enabled: e
-      }), x(!s), m(true))
+      }), x(!s), f(true))
     }, U = (e, t, n) => {
       if (null == E) return;
       let r = E.indexOf(e),
@@ -209,7 +209,7 @@ let G = "WELCOME_CHANNEL",
     (0, b.ZP)(() => () => {
       B.current = true
     }), i.useEffect(() => () => {
-      if (B.current && f) {
+      if (B.current && m) {
         let e = [],
           n = [],
           r = false;
@@ -224,7 +224,7 @@ let G = "WELCOME_CHANNEL",
           is_enabled: _
         })
       }
-    }, [f, E, j, _, t]), i.useEffect(() => () => (0, C.sm)(), []);
+    }, [m, E, j, _, t]), i.useEffect(() => () => (0, C.sm)(), []);
     let F = i.useCallback(() => {
       null != t && T.Z.open(t.id, w.pNK.ONBOARDING)
     }, [t]);
@@ -304,7 +304,7 @@ let G = "WELCOME_CHANNEL",
               onBlur: () => {
                 null != t && j !== a.description && ((0, C.Es)(t.id, {
                   description: null == j ? true : j.trim()
-                }), m(true))
+                }), f(true))
               },
               onKeyDown: e => {
                 e.key === R.vn.ENTER && e.preventDefault()

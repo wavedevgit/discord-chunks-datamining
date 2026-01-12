@@ -13,7 +13,7 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk82923 = require("./82923.js"),
   Chunk583943 = require("./583943.js");
 
-function f(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,7 +21,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var m = ((i = m || {})[i.HOVERING = 0] = "HOVERING", i[i.FLYING = 1] = "FLYING", i);
+var f = ((i = f || {})[i.HOVERING = 0] = "HOVERING", i[i.FLYING = 1] = "FLYING", i);
 let b = Object.freeze({
   HOVERING: {
     Y_DURATION: 1500,
@@ -145,8 +145,8 @@ class h extends(r = Chunk473749.Component) {
         delay: b.FLYING.DURATION / b.FLYING.OPACITY_DURATION_DIVIDEND
       }),
       g = this.createFireAnimation(b.FLYING.FIRE_COUNT, b.FLYING.DURATION, b.FLYING.FIRE_MIN_INTENSITY, b.FLYING.FIRE_MAX_INTENSITY),
-      f = u.Z.parallel([o, c, d, g]);
-    if (this.currentAnimation = u.Z.sequence([r, s, f]), await (null == (e = this.currentAnimation) ? true : e.start()), !this.isUnmounted) {
+      m = u.Z.parallel([o, c, d, g]);
+    if (this.currentAnimation = u.Z.sequence([r, s, m]), await (null == (e = this.currentAnimation) ? true : e.start()), !this.isUnmounted) {
       let {
         onFlyingComplete: e
       } = this.props;
@@ -190,7 +190,7 @@ class h extends(r = Chunk473749.Component) {
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            f(e, t, n[t])
+            m(e, t, n[t])
           })
         }
         return e
@@ -213,8 +213,8 @@ class h extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "x", new u.Z.Value(0)), f(this, "y", new u.Z.Value(0)), f(this, "opacity", new u.Z.Value(1)), f(this, "fireScale", new u.Z.Value(1)), f(this, "currentAnimation", null), f(this, "isUnmounted", false)
+    super(...e), m(this, "x", new u.Z.Value(0)), m(this, "y", new u.Z.Value(0)), m(this, "opacity", new u.Z.Value(1)), m(this, "fireScale", new u.Z.Value(1)), m(this, "currentAnimation", null), m(this, "isUnmounted", false)
   }
 }
-f(h, "Stages", m);
+m(h, "Stages", f);
 let x = h

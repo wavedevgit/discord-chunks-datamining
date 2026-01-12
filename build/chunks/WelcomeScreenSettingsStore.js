@@ -25,21 +25,21 @@ let c = {
   d = c,
   u = false,
   g = false,
-  f = c;
+  m = c;
 
-function m(e) {
+function f(e) {
   let {
     welcomeScreen: t,
     guildId: n
   } = e, r = a.Z.getGuild(n);
   if (null != t) {
     var i, l;
-    f = d = {
+    m = d = {
       description: null != (i = t.description) ? i : "",
       channels: null != (l = t.welcome_channels) ? l : [],
       enabled: null == r ? true : r.features.has(s.GuildFeatures.WELCOME_SCREEN_ENABLED)
     }
-  } else f = d = c;
+  } else m = d = c;
   g = false
 }
 class b extends(r = Chunk442837.ZP.Store) {
@@ -47,7 +47,7 @@ class b extends(r = Chunk442837.ZP.Store) {
     this.waitFor(a.Z)
   }
   get() {
-    return f
+    return m
   }
   showNotice() {
     return g
@@ -56,26 +56,26 @@ class b extends(r = Chunk442837.ZP.Store) {
     return {
       submitting: u,
       hasErrors: g,
-      welcomeSettings: f,
+      welcomeSettings: m,
       originalWelcomeSettings: d
     }
   }
 }
 o(b, "displayName", "WelcomeScreenSettingsStore");
 let p = new b(Chunk570140.Z, {
-  WELCOME_SCREEN_FETCH_SUCCESS: m,
-  WELCOME_SCREEN_UPDATE: m,
+  WELCOME_SCREEN_FETCH_SUCCESS: f,
+  WELCOME_SCREEN_UPDATE: f,
   WELCOME_SCREEN_SETTINGS_RESET: function() {
-    f = d, g = false
+    m = d, g = false
   },
   WELCOME_SCREEN_SETTINGS_CLEAR: function() {
-    f = c, d = c
+    m = c, d = c
   },
   WELCOME_SCREEN_SETTINGS_UPDATE: function(e) {
     let {
       settings: t
     } = e;
-    f = function(e) {
+    m = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -86,13 +86,13 @@ let p = new b(Chunk570140.Z, {
         })
       }
       return e
-    }({}, f, t)
+    }({}, m, t)
   },
   WELCOME_SCREEN_SUBMIT: function() {
     u = true
   },
   WELCOME_SCREEN_SUBMIT_SUCCESS: function(e) {
-    m(e), u = false
+    f(e), u = false
   },
   WELCOME_SCREEN_SUBMIT_FAILURE: function() {
     g = true, u = false

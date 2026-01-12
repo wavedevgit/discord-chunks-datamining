@@ -37,9 +37,9 @@ var Chunk54381 = require("./54381.js"),
 function w(e) {
   let {
     guild: t
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), b = (0, l.e7)([m.Z], () => m.Z.hasFetched(t.id)), p = (0, C.Z)(t), h = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = p.filter(e => !h.has(e.id)), [O, y] = i.useState(false);
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), b = (0, l.e7)([f.Z], () => f.Z.hasFetched(t.id)), p = (0, C.Z)(t), h = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = p.filter(e => !h.has(e.id)), [O, y] = i.useState(false);
   return (i.useEffect(() => {
-    b || a || (0, f.S)(t.id)
+    b || a || (0, m.S)(t.id)
   }, [t.id, b, a]), O || 0 === x.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(o.Text, {
@@ -164,7 +164,7 @@ function w(e) {
 function Z(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([p.ZP], () => p.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([b.Z], () => b.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([y.Z], () => y.Z.advancedMode), g = i.useRef(null), [f, m] = i.useState(false), v = i.useRef(n);
+  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([p.ZP], () => p.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([b.Z], () => b.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([y.Z], () => y.Z.advancedMode), g = i.useRef(null), [m, f] = i.useState(false), v = i.useRef(n);
   return (i.useEffect(() => {
     v.current = n
   }), i.useEffect(() => {
@@ -186,9 +186,9 @@ function Z(e) {
       className: T.channelBrowser,
       children: [(0, r.jsx)(o.P3F, {
         className: T.collapseButton,
-        onClick: () => m(e => !e),
+        onClick: () => f(e => !e),
         children: (0, r.jsx)(h.Z, {
-          direction: f ? h.Z.Directions.DOWN : h.Z.Directions.UP,
+          direction: m ? h.Z.Directions.DOWN : h.Z.Directions.UP,
           height: 16,
           width: 16
         })
@@ -203,7 +203,7 @@ function Z(e) {
       }), (0, r.jsx)(N.Wu, {
         className: T.advancedModeToggle,
         guildId: n.id
-      }), f ? null : (0, r.jsxs)(r.Fragment, {
+      }), m ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(w, {
           guild: n
         }), (0, r.jsx)(E.Z, {

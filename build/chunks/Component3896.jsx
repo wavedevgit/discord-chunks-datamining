@@ -2,7 +2,7 @@
 /** chunk id: 3896, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,10 +15,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk146473 = require("./146473.js");
 
-function f(e) {
+function m(e) {
   let {
     guild: t
-  } = e, l = t.verificationLevel, f = i.useMemo(() => (0, o.I9)(l), [l]);
+  } = e, l = t.verificationLevel, m = i.useMemo(() => (0, o.I9)(l), [l]);
   return (0, r.jsxs)(s.P3F, {
     onClick: () => (0, s.ZDy)(async () => {
       let {
@@ -85,7 +85,7 @@ function f(e) {
             color: "currentColor",
             width: 16,
             height: 16
-          }), f]
+          }), m]
         })
       })]
     }), (0, r.jsx)(c.Z, {

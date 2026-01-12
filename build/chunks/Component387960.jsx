@@ -23,10 +23,10 @@ let x = [],
   j = function(e) {
     let {
       guildId: t
-    } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([f.Z], () => {
+    } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([m.Z], () => {
       var e, t;
-      return null != (t = null == (e = f.Z.getSettings().resourceChannels) ? true : e.map(e => e.channelId)) ? t : x
-    }), v = (0, a.Wu)([f.Z], () => f.Z.getDismissedSuggestedChannelIds(t)), O = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), y = i.useMemo(() => (0, l.chain)(O).filter(e => e.channel.type === b.d4z.GUILD_TEXT && e.channel.id !== (null == n ? true : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(b.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(b.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [O, v, null == n ? true : n.rulesChannelId, j]), C = i.useCallback(() => {
+      return null != (t = null == (e = m.Z.getSettings().resourceChannels) ? true : e.map(e => e.channelId)) ? t : x
+    }), v = (0, a.Wu)([m.Z], () => m.Z.getDismissedSuggestedChannelIds(t)), O = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), y = i.useMemo(() => (0, l.chain)(O).filter(e => e.channel.type === b.d4z.GUILD_TEXT && e.channel.id !== (null == n ? true : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(b.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(b.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [O, v, null == n ? true : n.rulesChannelId, j]), C = i.useCallback(() => {
       let e = y.map(e => e.channel.id);
       (0, g.q6)(t, e)
     }, [t, y]);
@@ -57,7 +57,7 @@ let x = [],
           })]
         }), (0, r.jsx)("div", {
           className: h.suggestedChannels,
-          children: y.map((e, t) => (0, r.jsx)(m.Z, {
+          children: y.map((e, t) => (0, r.jsx)(f.Z, {
             channel: e.channel,
             end: t < y.length - 1
           }, e.channel.id))

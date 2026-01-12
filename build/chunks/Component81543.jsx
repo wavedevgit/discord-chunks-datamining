@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => p,
-  n: () => f
+  n: () => m
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,8 +34,8 @@ function g(e) {
   }
   return e
 }
-var f = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
-let m = {
+var m = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
+let f = {
   friction: 10,
   tension: 40,
   overshootClamping: true
@@ -45,7 +45,7 @@ class b extends Chunk473749.PureComponent {
     var t, n;
     null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, g({
       toValue: 0
-    }, m)).start(() => {
+    }, f)).start(() => {
       var t, n;
       e(), null == (t = (n = this.props).onAnimationEnd) || t.call(n)
     })
@@ -56,7 +56,7 @@ class b extends Chunk473749.PureComponent {
   componentWillLeave(e) {
     o.Z.spring(this._animated, g({
       toValue: this.props.direction
-    }, m)).start(e)
+    }, f)).start(e)
   }
   getStyle() {
     return o.Z.accelerate({

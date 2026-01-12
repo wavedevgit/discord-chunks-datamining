@@ -46,7 +46,7 @@ function w(e) {
   let G = i.useCallback(() => {
     if (null == Z) return;
     let e = j.Z.getEveryoneRole(Z);
-    m.Z.close();
+    f.Z.close();
     let t = {
       [e.id]: e
     };
@@ -115,7 +115,7 @@ function w(e) {
     }) : (0, r.jsx)(o.$jN, {});
   return (0, r.jsxs)(d.AL, {
     guildId: t,
-    children: [M, (0, r.jsx)(f.Z, {
+    children: [M, (0, r.jsx)(m.Z, {
       guild: Z
     }), (0, r.jsx)("div", {
       className: P.tabBarContainer,

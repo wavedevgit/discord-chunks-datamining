@@ -130,7 +130,7 @@ function O() {
         length: 12
       }), (0, r.jsx)("img", {
         className: c.roundAvatar,
-        src: f,
+        src: m,
         alt: ""
       }), (0, r.jsx)(t, {
         horizontal: true,
@@ -142,7 +142,7 @@ function O() {
         length: 12
       }), (0, r.jsx)("img", {
         className: c.roundAvatar,
-        src: m,
+        src: f,
         alt: ""
       })]
     })]
