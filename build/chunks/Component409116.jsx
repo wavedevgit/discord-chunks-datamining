@@ -50,7 +50,7 @@ let f = e => {
       discountOfferAmount: v,
       discount: b = c.f_,
       variant: g = "heading-md/semibold"
-    } = e, h = null != v, m = (0, s.qr)(n, t), j = b !== c.f_ && b.discountPercentage >= 5 && !h ? (0, r.jsxs)(r.Fragment, {
+    } = e, h = null != v, m = (0, s.qr)(n, t), y = b !== c.f_ && b.discountPercentage >= 5 && !h ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t.niC6DK, {
           price: m,
@@ -97,7 +97,7 @@ let f = e => {
         variant: g,
         color: "currentColor",
         lineClamp: 1,
-        children: j
+        children: y
       }), h && (0, r.jsxs)(o.Text, {
         variant: g,
         className: p.discountPill,
