@@ -86,7 +86,8 @@ function g() {
         promotion: t
       } = e;
       return !N.has(t.id) && false === (0, f.pD)({
-        promotionPartner: t.outboundTitle
+        promotionPartner: t.outboundTitle,
+        promotionType: t.promotionType
       })
     }).filter(e => (0, f.ZC)(e.promotion)),
     claimedOutboundPromotionCodeMap: C,

@@ -39,7 +39,8 @@ let p = f(),
     [Chunk397047.$k.MARKETING_MOMENT]: {},
     [Chunk397047.$k.THIRD_PARTY_INBOUND]: {},
     [Chunk397047.$k.THIRD_PARTY_OUTBOUND]: {},
-    [Chunk397047.$k.GIFT_PROMOTION]: {}
+    [Chunk397047.$k.GIFT_PROMOTION]: {},
+    [Chunk397047.$k.THIRD_PARTY_OUTBOUND_RECURRING]: {}
   },
   y = {},
   O = null,
@@ -74,11 +75,13 @@ function C(e) {
     [u.$k.MARKETING_MOMENT]: {},
     [u.$k.THIRD_PARTY_INBOUND]: {},
     [u.$k.THIRD_PARTY_OUTBOUND]: {},
-    [u.$k.GIFT_PROMOTION]: {}
+    [u.$k.GIFT_PROMOTION]: {},
+    [u.$k.THIRD_PARTY_OUTBOUND_RECURRING]: {}
   }, v = new Map, t.forEach(e => {
     let t = s.Z.createFromServer(e);
     if (true === (0, c.pD)({
-        promotionPartner: t.outboundTitle
+        promotionPartner: t.outboundTitle,
+        promotionType: t.promotionType
       })) t.id in y || (y[t.id] = t);
     else if (e.promotion_type === u.$k.THIRD_PARTY) b[u.$k.THIRD_PARTY_OUTBOUND][e.id] = t;
     else {
@@ -100,7 +103,8 @@ function N() {
     [u.$k.MARKETING_MOMENT]: {},
     [u.$k.THIRD_PARTY_INBOUND]: {},
     [u.$k.THIRD_PARTY_OUTBOUND]: {},
-    [u.$k.GIFT_PROMOTION]: {}
+    [u.$k.GIFT_PROMOTION]: {},
+    [u.$k.THIRD_PARTY_OUTBOUND_RECURRING]: {}
   }, v = new Map, g = false, y = {}
 }
 
@@ -136,7 +140,8 @@ function x() {
     [u.$k.MARKETING_MOMENT]: {},
     [u.$k.THIRD_PARTY_INBOUND]: {},
     [u.$k.THIRD_PARTY_OUTBOUND]: {},
-    [u.$k.GIFT_PROMOTION]: {}
+    [u.$k.GIFT_PROMOTION]: {},
+    [u.$k.THIRD_PARTY_OUTBOUND_RECURRING]: {}
   }, _ = null, y = {}, v.clear()
 }
 

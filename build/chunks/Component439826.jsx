@@ -130,19 +130,14 @@ function Z(e) {
     day: "numeric"
   }), q = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Y = (null == (i = C.userStatus) ? true : i.completedAt) != null, {
     onAssetLoadComplete: Q
-  } = r.useContext(O.k), X = z ? "text-muted" : "always-white", J = r.useCallback(async () => {
-    G && ((0, v.zi)(C) || q ? (0, T.openVideoQuestModal)({
+  } = r.useContext(O.k), X = z ? "text-muted" : "always-white", J = r.useCallback(() => {
+    G && (0, T.openVideoQuestModal)({
       quest: C,
       questContent: b.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: F,
       sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
-    }) : await (0, T.enrollAndStartVideoQuestWithErrorHandling)(C, {
-      questContent: b.jn.QUEST_HOME_DESKTOP,
-      questContentCTA: f.jZ.ACCEPT_QUEST,
-      sourceQuestContent: F,
-      sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
-    }))
-  }, [G, C, q, F]), $ = (0, o.e7)([x.Z], () => x.Z.getQuestHomeTakeoverConfig()), ee = r.useMemo(() => null != $ && (0, y.P9)($, C.id), [$, C.id]);
+    })
+  }, [G, C, F]), $ = (0, o.e7)([x.Z], () => x.Z.getQuestHomeTakeoverConfig()), ee = r.useMemo(() => null != $ && (0, y.P9)($, C.id), [$, C.id]);
   return (0, a.jsxs)("div", {
     className: k.container,
     children: [(0, a.jsx)("div", {

@@ -122,7 +122,8 @@ function w(e, t) {
 
 function D(e) {
   let {
-    promotionPartner: t
+    promotionPartner: t,
+    promotionType: n
   } = e;
-  return g.Ce.has(t.toLocaleLowerCase())
+  return n === g.$k.THIRD_PARTY_OUTBOUND_RECURRING || g.Ce.has(t.toLocaleLowerCase())
 }
