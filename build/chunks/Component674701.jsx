@@ -2,7 +2,7 @@
 /** chunk id: 674701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,7 +21,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk602733 = require("./602733.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk51144 = require("./51144.js"),
   Chunk479446 = require("./479446.js"),
   Chunk909917 = require("./909917.jsx"),
   Chunk441623 = require("./441623.js"),
@@ -32,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk558741 = require("./558741.js");
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,20 +40,20 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,28 +64,28 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function L(e) {
+function x(e) {
   let {
     giftIntentType: t,
     recipientUser: a,
-    onMouseEnter: R,
-    onMouseLeave: D,
-    popoutPosition: L,
-    analyticsPage: j,
-    analyticsSection: M,
-    glow: k,
-    innerRef: U
-  } = e, G = (0, l.e7)([E.default], () => E.default.getCurrentUser()), {
-    analyticsLocations: Z
-  } = (0, p.ZP)(f.Z.PREMIUM_GIFT_INTENT_CARD), F = (0, l.e7)([S.ZP], () => S.ZP.getFriendAnniversaryYears(a.id)), {
-    Component: B
-  } = (0, c.V)(), V = (0, g.ao)({
+    onMouseEnter: P,
+    onMouseLeave: w,
+    popoutPosition: x,
+    analyticsPage: L,
+    analyticsSection: j,
+    glow: M,
+    innerRef: k
+  } = e, U = (0, l.e7)([E.default], () => E.default.getCurrentUser()), {
+    analyticsLocations: G
+  } = (0, p.ZP)(f.Z.PREMIUM_GIFT_INTENT_CARD), Z = (0, l.e7)([v.ZP], () => v.ZP.getFriendAnniversaryYears(a.id)), {
+    Component: F
+  } = (0, c.V)(), B = (0, g.ao)({
     location: "gift-intent-card",
     isGift: true,
     giftRecipient: a
@@ -97,130 +96,128 @@ function L(e) {
       type: s.ImpressionTypes.VIEW,
       properties: {
         gift_intent_type: t,
-        num_friend_anniversaries: S.ZP.getFriendAnniversaries().length
+        num_friend_anniversaries: v.ZP.getFriendAnniversaries().length
       }
     })
   }, [t]);
-  let H = () => t === T.hX.FRIEND_ANNIVERSARY ? N.intl.string(N.t.CeQIwZ) : (0, O.Ou)(t),
-    Y = () => t === T.hX.FRIEND_ANNIVERSARY ? N.intl.formatToPlainString(N.t.PpG27s, {
-      numberOfYears: F
-    }) : (0, O.Ou)(t),
-    W = () => t === T.hX.FRIEND_ANNIVERSARY ? N.intl.formatToPlainString(N.t.W7AF4C, {
-      friendUserName: y.ZP.getName(a)
-    }) : (0, O.Ou)(t),
-    K = e => {
+  let V = () => t === I.hX.FRIEND_ANNIVERSARY ? A.intl.string(A.t.CeQIwZ) : (0, y.Ou)(t),
+    H = () => t === I.hX.FRIEND_ANNIVERSARY ? A.intl.formatToPlainString(A.t.PpG27s, {
+      numberOfYears: Z
+    }) : (0, y.Ou)(t),
+    Y = () => t === I.hX.FRIEND_ANNIVERSARY ? A.intl.string(A.t.PEjaCx) : (0, y.Ou)(t),
+    W = e => {
       e.stopPropagation();
       let n = h.Z.getUserAffinity(a.id);
-      b.default.track(C.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+      b.default.track(T.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: t,
         affinity: null == n ? true : n.dmProbability,
-        location_stack: Z
+        location_stack: G
       });
-      let r = (0, I.F)(t);
-      V ? (0, v.Z)({
+      let r = (0, S.F)(t);
+      B ? (0, O.Z)({
         giftRecipient: a,
-        analyticsLocations: Z,
+        analyticsLocations: G,
         analyticsLocation: r.chat,
         analyticsObject: {
-          page: j,
-          section: M,
-          object: C.qAy.BUTTON_CTA,
-          objectType: C.AnalyticsObjectTypes.GIFT
+          page: L,
+          section: j,
+          object: T.qAy.BUTTON_CTA,
+          objectType: T.AnalyticsObjectTypes.GIFT
         }
       }) : (0, m.Z)({
         isGift: true,
         initialPlanId: null,
         giftRecipient: a,
         analyticsLocation: r.chat,
-        analyticsLocations: Z,
+        analyticsLocations: G,
         analyticsObject: {
-          page: j,
-          section: M,
-          object: C.qAy.BUTTON_CTA,
-          objectType: C.AnalyticsObjectTypes.GIFT
+          page: L,
+          section: j,
+          object: T.qAy.BUTTON_CTA,
+          objectType: T.AnalyticsObjectTypes.GIFT
         }
       })
     };
   return (0, r.jsx)("div", {
-    ref: U,
-    className: o()(P.content, {
-      [P.outerGlow]: k
+    ref: k,
+    className: o()(N.content, {
+      [N.outerGlow]: M
     }),
-    onMouseEnter: R,
-    onMouseLeave: D,
+    onMouseEnter: P,
+    onMouseLeave: w,
     children: (0, r.jsxs)("div", {
-      className: o()(P.innerContent, {
-        [P.innerGlow]: k
+      className: o()(N.innerContent, {
+        [N.innerGlow]: M
       }),
       children: [(0, r.jsxs)("div", {
-        className: P.subContent,
+        className: N.subContent,
         children: [(0, r.jsxs)("div", {
-          className: P.avatars,
+          className: N.avatars,
           children: [(0, r.jsx)(d.Z, {
-            className: P.recipientUserAvatar,
+            className: N.recipientUserAvatar,
             user: a,
             "aria-label": a.username,
-            size: A.EF.SIZE_56
-          }), null != G && (0, r.jsx)(d.Z, {
-            className: P.currentUserAvatar,
-            user: G,
+            size: C.EF.SIZE_56
+          }), null != U && (0, r.jsx)(d.Z, {
+            className: N.currentUserAvatar,
+            user: U,
             "aria-label": a.username,
-            size: A.EF.SIZE_24
+            size: C.EF.SIZE_24
           })]
         }), (0, r.jsxs)("div", {
-          className: P.textContainer,
+          className: N.textContainer,
           children: [(0, r.jsx)(u.Text, {
             variant: "text-md/medium",
             color: "text-strong",
             lineClamp: 3,
-            children: H()
+            children: V()
           }), (0, r.jsxs)("div", {
-            className: P.subHeaderContainer,
+            className: N.subHeaderContainer,
             children: [(0, r.jsx)(u.iFz, {
               size: "xxs"
             }), (0, r.jsx)(u.Text, {
-              className: P.subHeaderText,
+              className: N.subHeaderText,
               variant: "text-xs/normal",
               color: "text-subtle",
               lineClamp: 1,
-              children: Y()
+              children: H()
             })]
           })]
         })]
       }), (0, r.jsxs)("div", {
-        className: P.buttonContainer,
+        className: N.buttonContainer,
         children: [(0, r.jsx)(u.hU, {
           size: "sm",
           variant: "secondary",
-          icon: B,
-          "aria-label": N.intl.string(N.t.I61IsE),
+          icon: F,
+          "aria-label": A.intl.string(A.t.I61IsE),
           onClick: e => {
-            e.stopPropagation(), b.default.track(C.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), b.default.track(T.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: "send_message",
-              location_stack: Z
+              location_stack: G
             }), (0, u.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("5890").then(n.bind(n, 171793));
-              return n => (0, r.jsx)(e, x(w({}, n), {
+              return n => (0, r.jsx)(e, D(R({}, n), {
                 giftIntentType: t,
-                analyticsLocationHistory: Z
+                analyticsLocationHistory: G
               }))
             })
           }
         }), (0, r.jsx)(u.Button, {
           size: "sm",
           variant: "expressive",
-          text: W(),
+          text: Y(),
           icon: u.OgN,
-          "aria-label": W(),
-          onClick: K
+          "aria-label": Y(),
+          onClick: W
         })]
-      }), null != L && (0, r.jsx)("div", {
-        className: o()(P.connector, {
-          [P.leftPopoutConnector]: "left" === L,
-          [P.rightPopoutConnector]: "right" === L
+      }), null != x && (0, r.jsx)("div", {
+        className: o()(N.connector, {
+          [N.leftPopoutConnector]: "left" === x,
+          [N.rightPopoutConnector]: "right" === x
         })
       })]
     })
