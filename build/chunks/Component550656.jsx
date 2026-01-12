@@ -81,12 +81,14 @@ function b(e) {
       placement: e,
       reference: b,
       renderLayer: e => {
+        var t;
         let {
-          placement: t
-        } = e;
+          placement: n,
+          shift: r
+        } = e, i = -(null != (t = null == r ? true : r.x) ? t : 0);
         return x({
-          position: (0, l.C)(t),
-          nudge: 0
+          position: (0, l.C)(n),
+          nudge: i
         })
       },
       children: () => null

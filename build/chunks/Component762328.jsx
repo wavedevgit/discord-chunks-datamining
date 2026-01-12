@@ -148,7 +148,8 @@ function b(e) {
           children: D({
             placement: G,
             update: F,
-            hidden: "hidden" === K
+            hidden: "hidden" === K,
+            shift: Z.shift
           })
         })
       }))]
