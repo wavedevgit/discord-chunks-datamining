@@ -5,7 +5,6 @@ module.exports = {
   keybindMessage: "_740f25428e5fa983-keybindMessage",
   item: "_740f25428e5fa983-item",
   switch: "_740f25428e5fa983-switch",
-  removeKeybindFloating: "_740f25428e5fa983-removeKeybindFloating",
   removeKeybind: "_740f25428e5fa983-removeKeybind",
   keybindGroup: "_740f25428e5fa983-keybindGroup",
   keybindGroupContent: "_740f25428e5fa983-keybindGroupContent",

@@ -8,7 +8,6 @@ module.exports = {
   accountAddInner: "c7f964e7e0fc8b47-accountAddInner",
   connectionList: "c7f964e7e0fc8b47-connectionList",
   connection: "c7f964e7e0fc8b47-connection",
-  connectionUserSettingsRedesign: "c7f964e7e0fc8b47-connectionUserSettingsRedesign",
   connectionHeader: "c7f964e7e0fc8b47-connectionHeader",
   connectionAccountValue: "c7f964e7e0fc8b47-connectionAccountValue",
   connectionAccountLabelContainer: "c7f964e7e0fc8b47-connectionAccountLabelContainer",

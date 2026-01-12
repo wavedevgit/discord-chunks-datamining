@@ -64,8 +64,8 @@ function f() {
     isSourceMapsEnabled: A,
     isIdleStatusIndicatorEnabled: N,
     isAxeEnabled: I,
-    preventPopoutClose: w,
-    onlyShowPreviewAppCollections: _,
+    preventPopoutClose: _,
+    onlyShowPreviewAppCollections: w,
     disableAppCollectionsCache: x
   } = (0, i.cj)([c.default, u.default, s.Z], () => {
     var e;
@@ -177,19 +177,19 @@ function f() {
     }, "accessibility-auditing"), (0, l.jsx)(a.S89, {
       id: "prevent-popout-close",
       label: "Prevent Popouts From Closing",
-      checked: w,
+      checked: _,
       action: () => {
         (0, r.y)({
-          preventPopoutClose: !w
+          preventPopoutClose: !_
         })
       }
     }, "prevent-popout-close"), (0, l.jsx)(a.S89, {
       id: "preview-collections",
       label: "Preview Unpublished Collections",
-      checked: _,
+      checked: w,
       action: () => {
         (0, r.y)({
-          onlyShowPreviewAppCollections: !_
+          onlyShowPreviewAppCollections: !w
         })
       }
     }, "preview-collections"), (0, l.jsx)(a.S89, {

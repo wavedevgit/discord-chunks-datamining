@@ -2,29 +2,30 @@
 /** chunk id: 605236, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bn: () => O,
-  Ei: () => C,
-  Fo: () => P,
-  H4: () => N,
-  J0: () => A,
-  JO: () => B,
-  ME: () => k,
-  OA: () => D,
-  Ow: () => V,
-  UJ: () => R,
-  XM: () => I,
-  XY: () => w,
-  ZF: () => T,
-  bj: () => U,
-  kk: () => j,
-  mA: () => Z,
-  oK: () => x,
-  po: () => S,
-  qN: () => G,
-  u9: () => M,
-  wH: () => F,
-  wx: () => y,
-  z2: () => v
+  Bn: () => S,
+  Ei: () => N,
+  F8: () => v,
+  Fo: () => w,
+  H4: () => R,
+  J0: () => P,
+  JO: () => H,
+  ME: () => G,
+  OA: () => L,
+  Ow: () => Y,
+  UJ: () => D,
+  XM: () => C,
+  XY: () => x,
+  ZF: () => A,
+  bj: () => Z,
+  kk: () => k,
+  mA: () => B,
+  oK: () => j,
+  po: () => T,
+  qN: () => F,
+  u9: () => U,
+  wH: () => V,
+  wx: () => O,
+  z2: () => I
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -38,15 +39,26 @@ var Chunk442837 = require("./442837.js"),
   Chunk261376 = require("./261376.js"),
   Chunk883904 = require("./883904.js"),
   Chunk68985 = require("./68985.js"),
-  Chunk211644 = require("./211644.js");
-require("./428967.js");
-var Chunk57207 = require("./57207.js"),
+  Chunk211644 = require("./211644.js"),
+  Chunk428967 = require("./428967.js"),
+  Chunk57207 = require("./57207.js"),
   Chunk644916 = require("./644916.js"),
   Chunk921944 = require("./921944.js"),
   Chunk981631 = require("./981631.js");
-let y = 2592e6;
+let O = 2592e6;
 
-function O(e, t, n) {
+function v(e) {
+  var t, n;
+  let r = null == (t = s.Z.settings.userContent) ? true : t.recurringDismissibleContentStates[e];
+  return {
+    lastDismissedVersion: (0, h.lg)(e) ? (0, E.t)(e) : 0,
+    lastDismissedAtMs: new Date().getTime().toString(),
+    lastDismissedObjectId: (0, h.I0)(e) ? c.default.fromTimestamp(Date.now() + O) : "0",
+    numTimesDismissed: null != (n = null == r ? true : r.numTimesDismissed) ? n : 0
+  }
+}
+
+function S(e, t, n) {
   return (0, o.Cd)(e, {
     lastDismissedVersion: t,
     lastDismissedAtMs: Date.now().toString(),
@@ -55,7 +67,7 @@ function O(e, t, n) {
   })
 }
 
-function v(e, t) {
+function I(e, t) {
   return (0, o.Cd)(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
@@ -64,7 +76,7 @@ function v(e, t) {
   })
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   return (0, o.Cd)(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
@@ -73,29 +85,9 @@ function S(e, t, n) {
   })
 }
 
-function I(e, t, n) {
-  return (0, o.m9)(e, t, {
-    dismissed: true,
-    lastDismissedVersion: 0,
-    lastDismissedAtMs: Date.now().toString(),
-    lastDismissedObjectId: "0",
-    numTimesDismissed: n
-  })
-}
-
-function T(e, t, n) {
-  return (0, o.m9)(e, t, {
-    dismissed: false,
-    lastDismissedVersion: 0,
-    lastDismissedAtMs: Date.now().toString(),
-    lastDismissedObjectId: "0",
-    numTimesDismissed: n
-  })
-}
-
 function C(e, t, n) {
   return (0, o.m9)(e, t, {
-    dismissed: false,
+    dismissed: true,
     lastDismissedVersion: 0,
     lastDismissedAtMs: Date.now().toString(),
     lastDismissedObjectId: "0",
@@ -107,29 +99,49 @@ function A(e, t, n) {
   return (0, o.m9)(e, t, {
     dismissed: false,
     lastDismissedVersion: 0,
+    lastDismissedAtMs: Date.now().toString(),
+    lastDismissedObjectId: "0",
+    numTimesDismissed: n
+  })
+}
+
+function N(e, t, n) {
+  return (0, o.m9)(e, t, {
+    dismissed: false,
+    lastDismissedVersion: 0,
+    lastDismissedAtMs: Date.now().toString(),
+    lastDismissedObjectId: "0",
+    numTimesDismissed: n
+  })
+}
+
+function P(e, t, n) {
+  return (0, o.m9)(e, t, {
+    dismissed: false,
+    lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
     lastDismissedObjectId: "0",
     numTimesDismissed: n
   })
 }
 
-function N(e, t) {
+function R(e, t) {
   var n, r;
-  if ((0, h.Bh)(e)) return {
+  if ((0, g.Bh)(e)) return {
     isDismissed: true,
     lastDismissedVersion: null
   };
   let i = null == (r = s.Z.settings.userContent) || null == (n = r.recurringDismissibleContentStates[e]) ? true : n.lastDismissedVersion,
-    a = null != t ? t : (0, g.t)(e);
+    a = null != t ? t : (0, E.t)(e);
   return {
     isDismissed: null != i && i >= a,
     lastDismissedVersion: i
   }
 }
 
-function P(e, t) {
+function w(e, t) {
   var n, r;
-  if ((0, h.Bh)(e)) return {
+  if ((0, g.Bh)(e)) return {
     isDismissed: true,
     lastDismissedAtMs: null
   };
@@ -152,9 +164,9 @@ function P(e, t) {
   }
 }
 
-function R(e, t, n) {
+function D(e, t, n) {
   var r, i, a, o;
-  if ((0, h.Bh)(e)) returntrue;
+  if ((0, g.Bh)(e)) returntrue;
   let l = null == (i = s.Z.settings.userContent) || null == (r = i.recurringDismissibleContentStates[e]) ? true : r.lastDismissedObjectId,
     u = null == (o = s.Z.settings.userContent) || null == (a = o.recurringDismissibleContentStates[e]) ? true : a.lastDismissedAtMs,
     d = null != u && "0" !== u ? Number.isNaN(Number(u)) ? true : Number(u) : true,
@@ -169,28 +181,28 @@ function R(e, t, n) {
   return f && p
 }
 
-function w(e, t) {
-  if ((0, h.Bh)(e)) returntrue;
+function x(e, t) {
+  if ((0, g.Bh)(e)) returntrue;
   let n = s.Z.getGuildDismissedContentState(t);
   return null != n && null != n[e] && true === n[e].dismissed
 }
 
-function D(e, t) {
-  return (0, r.e7)([s.Z], () => w(e, t))
+function L(e, t) {
+  return (0, r.e7)([s.Z], () => x(e, t))
 }
 
-function x(e, t) {
-  if ((0, h.Bh)(e)) returntrue;
+function j(e, t) {
+  if ((0, g.Bh)(e)) returntrue;
   let n = s.Z.getGuildDismissedContentState(t);
   return null != n && null != n[e] && null != n[e].lastDismissedAtMs && "0" !== n[e].lastDismissedAtMs
 }
-let L = new Set([Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS, Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER, Chunk704215.z.ACCOUNT_LINK_PROMPT]);
+let M = new Set([Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS, Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER, Chunk704215.z.ACCOUNT_LINK_PROMPT]);
 
-function j(e, t, n, r) {
+function k(e, t, n, r) {
   if ((0, m.cI)(e) || _.Z.hasUserHitDCCap(e, null == t ? true : t.guildId)) return;
   let o = d.Z.getConfig({
     location: "requestMarkDismissibleContentAsShown"
-  }).enabled && null == r && L.has(e);
+  }).enabled && null == r && M.has(e);
   (!n || o) && (a.Z.dispatch({
     type: "DCF_EVENT_LOGGED",
     eventType: u.D.DC_SHOW_REQUEST,
@@ -201,7 +213,7 @@ function j(e, t, n, r) {
     onAdded: () => {
       var n;
       let [r, a] = (0, m.Aq)();
-      (0, p.cm)(e, null == t ? true : t.guildId), l.default.track(b.rMx.DISMISSIBLE_CONTENT_SHOWN, {
+      (0, p.cm)(e, null == t ? true : t.guildId), l.default.track(y.rMx.DISMISSIBLE_CONTENT_SHOWN, {
         type: i.z[e],
         content_count: r,
         fatigable_content_count: a,
@@ -214,53 +226,53 @@ function j(e, t, n, r) {
   }))
 }
 
-function M(e, t) {
-  ((0, m.cI)(e) || t.forceTrack) && H(e, t), (0, p.Vr)(e)
+function U(e, t) {
+  ((0, m.cI)(e) || t.forceTrack) && W(e, t), (0, p.Vr)(e)
 }
 
-function k(e, t) {
+function G(e, t) {
   let n = !_.Z.hasUserHitDCCap();
   (0, m.gE)({
     content: e,
     groupName: null == t ? true : t.groupName
   }, n)
 }
-async function U(e, t) {
-  let n = (0, g.t)(e);
-  await F(e, n, t)
+async function Z(e, t) {
+  let n = (0, E.t)(e);
+  await V(e, n, t)
 }
 
-function G(e, t) {
+function F(e, t) {
   var n, r;
   let i = null == (n = s.Z.getGuildDismissedContentState(t)) ? true : n[e];
   return (null != (r = null == i ? true : i.numTimesDismissed) ? r : 0) + 1
 }
 
-function Z(e, t) {
+function B(e, t) {
   var n, r;
   if (null != t.numTimesDismissed) return t.numTimesDismissed;
   let i = null == (n = s.Z.settings.userContent) ? true : n.recurringDismissibleContentStates[e];
   return (null != (r = null == i ? true : i.numTimesDismissed) ? r : 0) + 1
 }
-async function F(e, t, n) {
-  let r = Z(e, n);
-  M(e, n), await O(e, t, r), k(e, n)
+async function V(e, t, n) {
+  let r = B(e, n);
+  U(e, n), await S(e, t, r), G(e, n)
 }
-async function B(e, t, n) {
-  let r = Z(e, n);
-  M(e, n), await S(e, t, r), k(e, n)
+async function H(e, t, n) {
+  let r = B(e, n);
+  U(e, n), await T(e, t, r), G(e, n)
 }
-async function V(e, t) {
-  let n = Z(e, t);
-  M(e, t), await v(e, n), k(e, t)
+async function Y(e, t) {
+  let n = B(e, t);
+  U(e, t), await I(e, n), G(e, t)
 }
 
-function H(e, t) {
+function W(e, t) {
   var n;
-  let [r] = (0, m.Aq)(), a = _.Z.getRenderedAtTimestamp(e), o = new Date, s = null == a ? null : o.getTime() - a, c = (null == t ? true : t.guildId) != null ? G(e, t.guildId) : Z(e, null != t ? t : {});
-  l.default.track(b.rMx.DISMISSIBLE_CONTENT_DISMISSED, {
+  let [r] = (0, m.Aq)(), a = _.Z.getRenderedAtTimestamp(e), o = new Date, s = null == a ? null : o.getTime() - a, c = (null == t ? true : t.guildId) != null ? F(e, t.guildId) : B(e, null != t ? t : {});
+  l.default.track(y.rMx.DISMISSIBLE_CONTENT_DISMISSED, {
     type: i.z[e],
-    action: null != (n = null == t ? true : t.dismissAction) ? n : E.L.UNKNOWN,
+    action: null != (n = null == t ? true : t.dismissAction) ? n : b.L.UNKNOWN,
     content_count: r,
     group_name: null == t ? true : t.groupName,
     bypass_fatigue: f.O.has(e),

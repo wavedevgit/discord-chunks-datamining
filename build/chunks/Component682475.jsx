@@ -259,12 +259,12 @@ function ed() {
     })), e.push({
       id: "dcf_overrides",
       name: "DCF Overrides",
-      group: es.v0.DISMISSIBLE_CONTENT,
+      group: es.v0.DCF,
       render: () => (0, a.jsx)(g.Z, {})
     }), e.push({
       id: "dcf_events",
       name: "DCF Events",
-      group: es.v0.DISMISSIBLE_CONTENT,
+      group: es.v0.DCF,
       render: () => (0, a.jsx)(b.Z, {})
     }), e.push({
       id: "hotspots",

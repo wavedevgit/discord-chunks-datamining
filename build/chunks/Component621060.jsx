@@ -17,8 +17,8 @@ var a, Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk252899 = require("./252899.jsx"),
   Chunk663618 = require("./663618.js"),
-  x = ((a = {}).NONE = "", a.DISMISSIBLE_CONTENT = "Dismissible Content", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
-let b = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
+  x = ((a = {}).NONE = "", a.DCF = "DCF", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
+let b = ["Experiments", "DCF", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
   g = Chunk473749.forwardRef(function(e, t) {
     let {
       id: n,

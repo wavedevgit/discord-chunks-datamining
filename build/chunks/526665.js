@@ -2,40 +2,15 @@
 /** chunk id: 526665, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BK: () => d,
-  Gl: () => _,
-  KV: () => u,
-  Ml: () => f,
-  NT: () => m,
-  gN: () => p,
-  gj: () => c,
-  wy: () => l,
-  yP: () => s
+  BK: () => l,
+  Gl: () => d,
+  KV: () => s,
+  Ml: () => c,
+  gN: () => u,
+  gj: () => o
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
-    name: "2025-09-user-settings-redesign-1",
-    kind: "user",
-    defaultConfig: {
-      enabled: false,
-      showLegacyOpen: false
-    },
-    variations: {
-      0: {
-        enabled: false,
-        showLegacyOpen: false
-      },
-      1: {
-        enabled: true,
-        showLegacyOpen: false
-      },
-      2: {
-        enabled: true,
-        showLegacyOpen: true
-      }
-    }
-  }),
-  a = (0, Chunk427164.le)({
     name: "2025-09-user-settings-redesign-2a",
     kind: "user",
     defaultConfig: {
@@ -53,7 +28,7 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  o = (0, Chunk427164.le)({
+  a = (0, Chunk427164.le)({
     name: "2025-12-user-settings-redesign-3",
     kind: "user",
     defaultConfig: {
@@ -68,38 +43,21 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  s = e => i.getConfig({
-    location: e
-  }).enabled,
-  l = e => i.useConfig({
-    location: e
-  }).enabled,
-  c = e => {
-    let t = l(e),
-      n = a.useConfig({
-        location: e
-      }).showRedesignedNotifications;
-    return t && n
-  },
-  u = e => !!s(e) && a.getConfig({
+  o = e => i.useConfig({
     location: e
   }).showRedesignedNotifications,
-  d = e => {
-    let t = l(e),
-      n = a.useConfig({
-        location: e
-      }).showRedesignedVoiceAndVideo;
-    return t && n
-  },
-  f = e => !!s(e) && a.getConfig({
+  s = e => i.getConfig({
+    location: e
+  }).showRedesignedNotifications,
+  l = e => i.useConfig({
     location: e
   }).showRedesignedVoiceAndVideo,
-  p = e => o.useConfig({
+  c = e => i.getConfig({
+    location: e
+  }).showRedesignedVoiceAndVideo,
+  u = e => a.useConfig({
     location: e
   }).enabled,
-  _ = e => o.getConfig({
+  d = e => a.getConfig({
     location: e
-  }).enabled,
-  m = e => i.useConfig({
-    location: e
-  }).showLegacyOpen
+  }).enabled

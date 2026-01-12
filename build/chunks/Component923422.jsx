@@ -1,7 +1,7 @@
 /** Chunk was on 2535 **/
 /** chunk id: 923422, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => w
 }), require("./388685.js"), require("./290780.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,34 +28,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk69021 = require("./69021.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk108843.Z)(function(e) {
+let w = (0, Chunk108843.Z)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: s
-  } = e, [c, _] = i.useState(false), x = (0, v.Z)(), D = (0, h.Z)(), T = (0, f.Z)(), C = (0, y.Z)(), m = (0, A.Z)(), L = (0, j.Z)(), R = (0, S.Z)(), Z = (0, N.Z)(), k = (0, P.Z)(), {
+  } = e, [c, w] = i.useState(false), x = (0, v.Z)(), D = (0, h.Z)(), T = (0, f.Z)(), C = (0, y.Z)(), m = (0, A.Z)(), L = (0, j.Z)(), R = (0, S.Z)(), Z = (0, N.Z)(), k = (0, P.Z)(), {
     analyticsLocations: V
   } = (0, u.ZP)(), B = i.useMemo(() => (0, g.j)(), []);
   async function M() {
     try {
-      _(true), await (0, d.bF)(), window.location.reload(true)
+      w(true), await (0, d.bF)(), window.location.reload(true)
     } catch (e) {
-      _(false)
+      w(false)
     }
   }
-  let U = (0, p.wy)("UserSettingsCogContextMenu"),
-    G = (0, p.gj)("UserSettingsCogContextMenu"),
-    F = (0, E.getWebUserSettingsByUserSettingsSections)(),
-    z = (0, O.VO)(),
-    Y = i.useMemo(() => {
+  let U = (0, p.gj)("UserSettingsCogContextMenu"),
+    G = (0, E.getWebUserSettingsByUserSettingsSections)(),
+    F = (0, O.VO)(),
+    z = i.useMemo(() => {
       let e = [];
-      if (z.forEach(t => {
+      if (F.forEach(t => {
           let {
             section: n,
             predicate: l
           } = t;
-          n !== o.ID.HEADER && n !== o.ID.CUSTOM && n !== o.ID.DIVIDER && "logout" !== n && (null == l || l()) && (U && null == F.get(n) || (U && n === I.oAB.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t)))
-        }), G) {
+          n !== o.ID.HEADER && n !== o.ID.CUSTOM && n !== o.ID.DIVIDER && "logout" !== n && (null == l || l()) && null != G.get(n) && (n === I.oAB.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t))
+        }), U) {
         let t = e.findIndex(e => e.section === I.oAB.NOTIFICATIONS),
           n = e.findIndex(e => e.section === I.oAB.CONNECTIONS);
         if (false !== t && false !== n && t > n) {
@@ -64,16 +63,16 @@ let _ = (0, Chunk108843.Z)(function(e) {
         }
       }
       return e
-    }, [z, U, F, G]);
+    }, [F, G, U]);
   return (0, l.jsx)(u.Gt, {
     value: V,
     children: (0, l.jsxs)(a.v2r, {
       navId: "user-settings-cog",
       onClose: r.Zy,
-      "aria-label": w.intl.string(w.t.opYYHn),
+      "aria-label": _.intl.string(_.t.opYYHn),
       onSelect: n,
       onInteraction: s,
-      children: [Y.map(e => {
+      children: [z.map(e => {
         var t, n;
         let {
           section: i,
@@ -109,7 +108,7 @@ let _ = (0, Chunk108843.Z)(function(e) {
                 section: l,
                 analyticsLocations: n
               })
-            }(null != (e = F.get(i)) ? e : b.n.ACCOUNT_PANEL, i, V)
+            }(null != (e = G.get(i)) ? e : b.n.ACCOUNT_PANEL, i, V)
           }
         }), n = n = {
           children: (e => {
@@ -162,7 +161,7 @@ let _ = (0, Chunk108843.Z)(function(e) {
         children: (0, l.jsx)(a.sNh, {
           id: "clear-build-override",
           disabled: c,
-          label: w.intl.string(w.t["/Nz9rY"]),
+          label: _.intl.string(_.t["/Nz9rY"]),
           action: M,
           color: "danger"
         })
