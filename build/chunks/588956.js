@@ -2,6 +2,7 @@
 /** chunk id: 588956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  K: () => s,
   Z: () => l
 });
 var Chunk544891 = require("./544891.js"),
@@ -29,6 +30,5 @@ async function s() {
   }
 }
 async function l() {
-  let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  a.Z.shouldFetch(e) && await s()
+  a.Z.shouldFetch() && await s()
 }

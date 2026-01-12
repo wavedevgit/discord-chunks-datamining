@@ -2,12 +2,13 @@
 /** chunk id: 437584, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
-  Chunk588956 = require("./588956.js");
+  Chunk588956 = require("./588956.js"),
+  Chunk468208 = require("./468208.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,13 +16,14 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-require("./468208.js");
-class o extends Chunk147913.Z {
+class s extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), a(this, "actions", {
+    super(...e), o(this, "actions", {
       POST_CONNECTION_OPEN: () => (0, i.Z)(),
-      BILLING_SUBSCRIPTION_UPDATE_SUCCESS: () => (0, i.Z)(true)
+      BILLING_SUBSCRIPTION_UPDATE_SUCCESS: () => {
+        a.Z.isInProperTreatments() && (0, i.K)()
+      }
     })
   }
 }
-let s = new o
+let l = new s

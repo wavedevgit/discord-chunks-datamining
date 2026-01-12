@@ -43,11 +43,11 @@ function f() {
             onClick: () => (0, o.EG)()
           }), (0, a.jsx)(s.Button, {
             variant: "primary",
-            text: "Clear All DCs",
+            text: "Clear All",
             onClick: () => (0, p.sr)()
           }), (0, a.jsx)(s.Button, {
             variant: "primary",
-            text: "Check All DCs",
+            text: "Check All",
             onClick: () => (0, p.bE)()
           }), (0, a.jsx)(s.Text, {
             variant: "text-sm/normal",
