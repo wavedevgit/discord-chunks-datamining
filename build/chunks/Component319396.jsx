@@ -1,7 +1,7 @@
 /** Chunk was on 65414 **/
 /** chunk id: 319396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,14 +16,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk689201 = require("./689201.js"),
   Chunk594174 = require("./594174.js"),
   Chunk621853 = require("./621853.js"),
-  Chunk559410 = require("./559410.js"),
   Chunk780899 = require("./780899.jsx"),
   Chunk733231 = require("./733231.jsx"),
   Chunk796483 = require("./796483.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk796647 = require("./796647.js");
 
-function x(e) {
+function v(e) {
   let {
     item: t,
     index: n,
@@ -32,8 +31,8 @@ function x(e) {
     children: a
   } = e, {
     manageFocusOnReorder: o
-  } = (0, j.C)();
-  return (0, r.jsx)(y.yW, {
+  } = (0, y.C)();
+  return (0, r.jsx)(b.yW, {
     index: n,
     itemId: String(t.skuId),
     listType: String(i),
@@ -41,80 +40,79 @@ function x(e) {
     itemPreviewProps: {
       item: t
     },
-    "aria-label": O.intl.formatToPlainString(O.t["7SnyMA"], {
+    "aria-label": h.intl.formatToPlainString(h.t["7SnyMA"], {
       positionNumber: n + 1
     }),
     onReorder: l,
     onEnd: () => o(String(t.skuId)),
-    className: v.dragAndDropContainer,
-    dropBeforeClassName: v.dropIndicatorBefore,
-    dropAfterClassName: v.dropIndicatorAfter,
-    draggingClassName: v.isDragging,
+    className: O.dragAndDropContainer,
+    dropBeforeClassName: O.dropIndicatorBefore,
+    dropAfterClassName: O.dropIndicatorAfter,
+    draggingClassName: O.isDragging,
     children: (0, r.jsx)("div", {
-      className: v.dragHandleContainer,
+      className: O.dragHandleContainer,
       children: a
     })
   })
 }
-let P = Chunk473749.memo(function(e) {
+let x = Chunk473749.memo(function(e) {
   let {
     item: t,
     index: n,
     profileOwner: i,
     isOwner: l,
     wishlistId: a,
-    canReorder: s,
-    tooltipConfig: u,
-    isDragging: d,
-    onReorder: g
+    tooltipConfig: s,
+    isDragging: u,
+    onReorder: d
   } = e, {
-    registerDragHandleRef: p
-  } = (0, j.C)(), m = s ? (0, r.jsx)(y.e_, {
-    buttonRef: p(String(t.skuId)),
-    className: v.dragHandle,
+    registerDragHandleRef: g
+  } = (0, y.C)(), p = l ? (0, r.jsx)(b.e_, {
+    buttonRef: g(String(t.skuId)),
+    className: O.dragHandle,
     onFocus: e => e.stopPropagation()
-  }) : true, b = (0, r.jsx)(h.Z, {
+  }) : true, m = (0, r.jsx)(j.Z, {
     item: t,
     profileOwner: i,
     wishlistId: a,
     isOwner: l,
-    isDragging: d,
-    dragHandle: m
-  }), O = b;
-  if (u.shouldShow && !d)
-    if (null != u.title && null == u.body && null == u.renderIcon) O = (0, r.jsx)(c.u, {
-      text: u.title,
+    isDragging: u,
+    dragHandle: p
+  }), h = m;
+  if (s.shouldShow && !u)
+    if (null != s.title && null == s.body && null == s.renderIcon) h = (0, r.jsx)(c.u, {
+      text: s.title,
       position: "top",
       asContainer: true,
       delay: f.rq,
-      children: b
+      children: m
     });
     else {
-      var P, I;
-      O = (0, r.jsx)(o.i, {
-        title: u.title,
-        body: null != (I = u.body) ? I : "",
-        asset: null == (P = u.renderIcon) ? true : P.call(u, t),
+      var x, P;
+      h = (0, r.jsx)(o.i, {
+        title: s.title,
+        body: null != (P = s.body) ? P : "",
+        asset: null == (x = s.renderIcon) ? true : x.call(s, t),
         assetSize: f.EU,
         position: "top",
         asContainer: true,
         delay: f.rq,
-        children: b
+        children: m
       })
-    } return s ? (0, r.jsx)("li", {
-    children: (0, r.jsx)(x, {
+    } return l ? (0, r.jsx)("li", {
+    children: (0, r.jsx)(v, {
       item: t,
       index: n,
       wishlistId: a,
-      onReorder: g,
-      children: O
+      onReorder: d,
+      children: h
     })
   }) : (0, r.jsx)("li", {
-    children: O
+    children: h
   })
 });
 
-function I(e) {
+function P(e) {
   let {
     items: t,
     profileOwner: n,
@@ -123,13 +121,11 @@ function I(e) {
     defaultWishlistId: f
   } = (0, a.cj)([m.Z], () => ({
     defaultWishlistId: m.Z.getFirstWishlistId(n.id)
-  })), y = (0, g.c)(t, o), h = (0, b.f)({
-    location: "UserProfileModalV2WishlistGrid"
-  }) && o, {
-    isDragging: O
+  })), b = (0, g.c)(t, o), {
+    isDragging: j
   } = (0, l.f)(e => ({
     isDragging: e.isDragging()
-  })), x = i.useCallback((e, n) => {
+  })), h = i.useCallback((e, n) => {
     if (e === n || null == f || 0 === t.length || e < 0 || e >= t.length || n < 0 || n >= t.length) return;
     let r = u.Z.getWishlist(f);
     if (null == r) return;
@@ -146,22 +142,21 @@ function I(e) {
     })
   }, [f, t]);
   if (null == c || null == f) return null;
-  let I = (0, r.jsx)("ul", {
-    className: v.grid,
-    children: t.map((e, t) => (0, r.jsx)(P, {
+  let v = (0, r.jsx)("ul", {
+    className: O.grid,
+    children: t.map((e, t) => (0, r.jsx)(x, {
       item: e,
       index: t,
       profileOwner: n,
       isOwner: o,
       wishlistId: f,
-      canReorder: h,
-      tooltipConfig: y[t],
-      isDragging: O,
-      onReorder: x
+      tooltipConfig: b[t],
+      isDragging: j,
+      onReorder: h
     }, e.skuId))
   });
-  return h ? (0, r.jsx)(j.d, {
+  return o ? (0, r.jsx)(y.d, {
     emptyListFallbackRef: null,
-    children: I
-  }) : I
+    children: v
+  }) : v
 }
