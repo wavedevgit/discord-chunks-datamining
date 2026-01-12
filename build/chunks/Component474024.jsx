@@ -29,16 +29,16 @@ function x(e) {
     var e;
     return (null == (e = d.Z.getProfile(x)) ? true : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
   }, [x]), O = i.useRef(null);
-  (0, f.Z)(O, b.KsC.PROFILE_VISIBILITY);
+  (0, m.Z)(O, b.KsC.PROFILE_VISIBILITY);
   let y = i.useCallback(() => {
-      j ? m.Z.updateGuildProfile(x, {
+      j ? f.Z.updateGuildProfile(x, {
         visibility: u.k.RESTRICTED
-      }) : m.Z.updateGuildProfile(x, {
+      }) : f.Z.updateGuildProfile(x, {
         visibility: v ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
       })
     }, [x, v, j]),
     C = i.useCallback(() => {
-      m.Z.setSection(b.pNK.ACCESS, b.KsC.ACCESS_DISCOVERABLE)
+      f.Z.setSection(b.pNK.ACCESS, b.KsC.ACCESS_DISCOVERABLE)
     }, []),
     N = null == (t = n.features) ? true : t.includes(b.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {

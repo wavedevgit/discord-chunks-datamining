@@ -2,7 +2,7 @@
 /** chunk id: 937222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  F: () => f
+  F: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,11 +16,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function m(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: f
+    buttonClassName: m
   } = e, {
     analyticsLocations: b
   } = (0, a.ZP)(), p = t.features.has(c.GuildFeatures.BANNER), h = i.useCallback(e => {
@@ -50,15 +50,15 @@ function f(e) {
     })
   }, [b, h]);
   return p ? (0, r.jsx)("div", {
-    className: f,
+    className: m,
     children: (0, r.jsx)(l.zxk, {
       disabled: !(p && n),
       variant: "primary",
-      text: m.intl.string(m.t.yG2pUi),
+      text: f.intl.string(f.t.yG2pUi),
       onClick: j
     })
   }) : (0, r.jsx)("div", {
-    className: f,
+    className: m,
     children: (0, r.jsx)(s.v, {
       onClick: x
     })

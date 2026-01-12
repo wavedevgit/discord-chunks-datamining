@@ -32,17 +32,17 @@ function x(e) {
     editedIntegration: o,
     webhooks: d,
     editedWebhook: u,
-    isFetching: f,
+    isFetching: m,
     errors: b
-  } = (0, l.cj)([m.default], () => ({
-    editedIntegration: m.default.editedIntegration,
-    editedWebhook: m.default.editedWebhook,
-    errors: m.default.getErrors(),
-    integrations: m.default.integrations,
-    isFetching: m.default.isFetching(),
-    section: m.default.getSection(),
-    sectionId: m.default.getSectionId(),
-    webhooks: m.default.webhooks
+  } = (0, l.cj)([f.default], () => ({
+    editedIntegration: f.default.editedIntegration,
+    editedWebhook: f.default.editedWebhook,
+    errors: f.default.getErrors(),
+    integrations: f.default.integrations,
+    isFetching: f.default.isFetching(),
+    section: f.default.getSection(),
+    sectionId: f.default.getSectionId(),
+    webhooks: f.default.webhooks
   }));
   return null == n ? null : (0, r.jsx)(c.Z, {
     guild: n,
@@ -52,8 +52,8 @@ function x(e) {
     webhooks: d,
     editedIntegration: o,
     editedWebhook: u,
-    isFetchingWebhooks: f,
-    hasChanges: m.default.hasChanges,
+    isFetchingWebhooks: m,
+    hasChanges: f.default.hasChanges,
     errors: b,
     refToScroller: t
   })
@@ -68,7 +68,7 @@ function j() {
     guild: g.Z.getGuild(),
     submitting: g.Z.isSubmitting()
   })), c = (0, l.e7)([d.Z], () => d.Z.can(p.Plq.KICK_MEMBERS, t)), x = false, j = null;
-  return c || (null == (e = m.default.editedIntegration) ? true : e.expire_behavior) !== i.l.KICK || (x = true, j = (0, r.jsx)(s.Text, {
+  return c || (null == (e = f.default.editedIntegration) ? true : e.expire_behavior) !== i.l.KICK || (x = true, j = (0, r.jsx)(s.Text, {
     color: "text-feedback-critical",
     variant: "text-md/normal",
     children: h.intl.string(h.t["mrO/ZQ"])
@@ -77,14 +77,14 @@ function j() {
     disabled: x,
     errorMessage: j,
     onReset: () => {
-      o.Z.init(), f.Ui(), null != t && u.Z.init(t.id)
+      o.Z.init(), m.Ui(), null != t && u.Z.init(t.id)
     },
     onSave: () => {
       if (null != t) {
-        if (null != m.default.editedIntegration) o.Z.saveIntegration(t.id, m.default.editedIntegration);
-        else if (null != m.default.editedWebhook) o.Z.saveWebhook(t.id, m.default.editedWebhook);
-        else if (null != m.default.editedCommandId) {
-          let e = m.default.getSectionId(),
+        if (null != f.default.editedIntegration) o.Z.saveIntegration(t.id, f.default.editedIntegration);
+        else if (null != f.default.editedWebhook) o.Z.saveWebhook(t.id, f.default.editedWebhook);
+        else if (null != f.default.editedCommandId) {
+          let e = f.default.getSectionId(),
             n = b.Z.getEditedApplication();
           if (null == e || null == n) return;
           o.Z.saveApplicationPermissions(e, t.id, Object.values(n))

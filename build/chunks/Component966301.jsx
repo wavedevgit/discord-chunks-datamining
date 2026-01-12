@@ -32,7 +32,7 @@ function E(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, a = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), m = c.length, f = c.length + u.length, b = m / f * 100, p = Math.max(Math.ceil(85 * f / 100) - m, 0), [h, x] = i.useState(false), j = h ? s.CJ0 : s.u04;
+  } = e, a = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), f = c.length, m = c.length + u.length, b = f / m * 100, p = Math.max(Math.ceil(85 * m / 100) - f, 0), [h, x] = i.useState(false), j = h ? s.CJ0 : s.u04;
   return (0, r.jsxs)("div", {
     className: N.channelCoverage,
     children: [(0, r.jsxs)(s.P3F, {
@@ -49,7 +49,7 @@ function E(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           children: C.intl.format(C.t.nMVKCX, {
-            numChannelsMissing: f - m
+            numChannelsMissing: m - f
           })
         })]
       }), (0, r.jsxs)("div", {
@@ -137,12 +137,12 @@ function S(e) {
         let e = g.current;
         null != e && (0, p.rS)(e, {
           ignoreDefaultPrompt: true
-        }).then(() => (0, f.ss)(e.id)).catch(() => {})
+        }).then(() => (0, m.ss)(e.id)).catch(() => {})
       }
     }, [n]), null == t) return null;
   let b = async () => {
     try {
-      await (0, p.rS)(t), await (0, m.di)(t.id)
+      await (0, p.rS)(t), await (0, f.di)(t.id)
     } catch (e) {}
   };
   return (0, r.jsxs)(r.Fragment, {
@@ -199,11 +199,11 @@ function _() {
   return null == e ? null : (0, r.jsx)(a.Z, {
     onSave: async () => {
       try {
-        await (0, p.rS)(e), i && await (0, f.e$)(e.id)
+        await (0, p.rS)(e), i && await (0, m.e$)(e.id)
       } catch (e) {}
     },
     onReset: () => {
-      (0, p.NB)(), i && (0, f.Pk)()
+      (0, p.NB)(), i && (0, m.Pk)()
     },
     submitting: t || i && n,
     onSaveText: C.intl.string(C.t["R3BPH+"])

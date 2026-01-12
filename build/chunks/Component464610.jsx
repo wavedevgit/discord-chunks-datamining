@@ -48,7 +48,7 @@ function p(e) {
       size: "sm",
       variant: "secondary",
       onClick: () => (0, d.K)(a),
-      text: f.intl.string(f.t.bt75uw)
+      text: m.intl.string(m.t.bt75uw)
     })]
   })
 }
@@ -80,7 +80,7 @@ function h(e) {
         numRules: t
       }
     }, [d, h]),
-    v = (0, m.Q)(t),
+    v = (0, f.Q)(t),
     O = v[u.u.CAPTCHA_AND_RAID_PROTECTION],
     y = v[u.u.DM_AND_SPAM_PROTECTION],
     C = v[u.u.PERMISSIONS],
@@ -90,15 +90,15 @@ function h(e) {
       variant: "heading-lg/semibold",
       color: "text-strong",
       className: b.header,
-      children: f.intl.string(f.t["0A+VSA"])
+      children: m.intl.string(m.t["0A+VSA"])
     }), (0, r.jsx)(g.z, {
       guild: t
     }), (0, r.jsxs)("div", {
       className: b.safetyChecklist,
       children: [(0, r.jsx)(p, {
         icon: n(14215),
-        title: f.intl.string(f.t["53eF5o"]),
-        subtitle: f.intl.formatToPlainString(f.t.TG7NYK, {
+        title: m.intl.string(m.t["53eF5o"]),
+        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
           enabled: O.filter(e => e.enabled).length,
           total: O.length
         }),
@@ -107,8 +107,8 @@ function h(e) {
         className: b.divider
       }), (0, r.jsx)(p, {
         icon: n(128724),
-        title: f.intl.string(f.t.O0SfFy),
-        subtitle: f.intl.formatToPlainString(f.t.TG7NYK, {
+        title: m.intl.string(m.t.O0SfFy),
+        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
           enabled: y.filter(e => e.enabled).length,
           total: y.length
         }),
@@ -118,8 +118,8 @@ function h(e) {
       }), N && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p, {
           icon: n(145136),
-          title: f.intl.string(f.t.uRelgx),
-          subtitle: f.intl.formatToPlainString(f.t.TG7NYK, {
+          title: m.intl.string(m.t.uRelgx),
+          subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
             enabled: x,
             total: j
           }),
@@ -129,8 +129,8 @@ function h(e) {
         })]
       }), (0, r.jsx)(p, {
         icon: n(913414),
-        title: f.intl.string(f.t.xrmhRX),
-        subtitle: f.intl.formatToPlainString(f.t.TG7NYK, {
+        title: m.intl.string(m.t.xrmhRX),
+        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
           enabled: C.filter(e => e.enabled).length,
           total: C.length
         }),

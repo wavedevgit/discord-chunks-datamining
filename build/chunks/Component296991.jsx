@@ -77,7 +77,7 @@ function S(e) {
   } = e, S = i.useRef(null), _ = i.useRef(null), [{
     textValue: T,
     richValue: P
-  }, w] = i.useState((0, f.eK)(t.value)), [, Z, R] = (0, c.c)({
+  }, w] = i.useState((0, m.eK)(t.value)), [, Z, R] = (0, c.c)({
     type: I,
     item: {
       rule: t,
@@ -105,7 +105,7 @@ function S(e) {
   if (i.useLayoutEffect(() => (Z(_), R(D(S)), () => {
       Z(null), D(null)
     }), [Z, D, R]), i.useEffect(() => {
-      "" !== t.value && "" === T && w((0, f.eK)(t.value))
+      "" !== t.value && "" === T && w((0, m.eK)(t.value))
     }, [t.value, T]), null == n) return null;
   let A = "" !== t.value ? t.value : t.id;
   return (0, r.jsx)("div", {
@@ -120,7 +120,7 @@ function S(e) {
         onMouseDown: () => j(l),
         children: (0, r.jsx)(b.ZP, {
           innerClassName: C.rulesTextAreaInput,
-          type: m.Ie.RULES_INPUT,
+          type: f.Ie.RULES_INPUT,
           textValue: T,
           richValue: P,
           channel: n,
@@ -128,7 +128,7 @@ function S(e) {
           focused: x,
           onChange: (e, n, r) => {
             let i = E ? t.value : n;
-            i.length > v.fn && (i = i.slice(0, v.fn)), n !== i && (n = i, r = (0, f.JM)(i)), s(n), w({
+            i.length > v.fn && (i = i.slice(0, v.fn)), n !== i && (n = i, r = (0, m.JM)(i)), s(n), w({
               textValue: n,
               richValue: r
             })
@@ -171,7 +171,7 @@ function _(e) {
     setRules: n,
     guild: l,
     disabled: a
-  } = e, s = l.rulesChannelId, c = l.features.has(O.GuildFeatures.PREVIEW_ENABLED), d = (0, u.e7)([p.Z], () => null != s ? p.Z.getChannel(s) : null), m = (0, u.e7)([h.ZP], () => h.ZP.getDefaultChannel(l.id)), [f, b] = i.useState(null), [I, _] = i.useState(null), T = i.useCallback(e => {
+  } = e, s = l.rulesChannelId, c = l.features.has(O.GuildFeatures.PREVIEW_ENABLED), d = (0, u.e7)([p.Z], () => null != s ? p.Z.getChannel(s) : null), f = (0, u.e7)([h.ZP], () => h.ZP.getDefaultChannel(l.id)), [m, b] = i.useState(null), [I, _] = i.useState(null), T = i.useCallback(e => {
     if (!a && t.length !== v.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -197,8 +197,8 @@ function _(e) {
       let i = [...t];
       i.splice(l, 1), i.splice(r, 0, e), n(i)
     }
-    i ? null !== f && b(null) : r !== f && b(r)
-  }, [a, f, t, n]), R = t.length === v.X2, D = i.useMemo(() => {
+    i ? null !== m && b(null) : r !== m && b(r)
+  }, [a, m, t, n]), R = t.length === v.X2, D = i.useMemo(() => {
     let e = R ? y.intl.formatToPlainString(y.t.tU718E, {
       number: v.X2
     }) : true;
@@ -228,7 +228,7 @@ function _(e) {
     children: [(0, r.jsx)("div", {
       className: C.rulesContainer,
       children: t.map((e, i) => (0, r.jsx)(S, {
-        rulesChannel: null != d ? d : m,
+        rulesChannel: null != d ? d : f,
         rule: e,
         index: i,
         onChange: e => w(e, i),
@@ -241,7 +241,7 @@ function _(e) {
           }] : r)
         })(i),
         onRuleReorder: Z,
-        isDropHovered: i === f,
+        isDropHovered: i === m,
         focused: i === I,
         onFocus: _,
         previewEnabled: null == c || c,

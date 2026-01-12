@@ -2,7 +2,7 @@
 /** chunk id: 574085, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -34,7 +34,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,11 +47,11 @@ function m(e, t) {
   }), e
 }
 
-function f() {
+function m() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, a.N)(), [n, f] = s.R7(e);
+  } = (0, a.N)(), [n, m] = s.R7(e);
 
   function b(e, t) {
     let {
@@ -67,34 +67,34 @@ function f() {
       ref_type: d.Qs.INTANGIBLE,
       ref_id: true
     };
-    null != t ? s[t] = o : s.push(o), f(s)
+    null != t ? s[t] = o : s.push(o), m(s)
   }
   let p = (0, l.mY)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.p, {
       benefits: n,
       onEdit: function(e) {
-        (0, i.h7j)(i => (0, r.jsx)(o.DI, m(g({}, i), {
+        (0, i.h7j)(i => (0, r.jsx)(o.DI, f(g({}, i), {
           guildId: t,
           initialData: n[e],
           onSave: t => b(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
-            t.splice(e, 1), f(t)
+            t.splice(e, 1), m(t)
           })(e)
         })))
       },
       onMove: function(e, t) {
         let r = [...n],
           [i] = r.splice(e, 1);
-        r.splice(t, 0, i), f(r)
+        r.splice(t, 0, i), m(r)
       },
       guildId: t
     }), n.length > 0 ? (0, r.jsx)(i.LZC, {
       size: 8
     }) : null, (0, r.jsx)(c.s, {
       onClick: function() {
-        (0, i.h7j)(e => (0, r.jsx)(o.DI, m(g({}, e), {
+        (0, i.h7j)(e => (0, r.jsx)(o.DI, f(g({}, e), {
           guildId: t,
           onSave: e => b(e)
         })))

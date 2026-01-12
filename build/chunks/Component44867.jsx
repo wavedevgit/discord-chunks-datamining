@@ -2,7 +2,7 @@
 /** chunk id: 44867, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => m
+  c: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk487840 = require("./487840.js");
 
-function m(e) {
+function f(e) {
   let {
     fetchDiscoveryData: t,
     settingsView: n,
-    requireTerms: m,
-    rules: f
+    requireTerms: f,
+    rules: m
   } = e, b = (0, l.e7)([s.Z], () => s.Z.getProps().guild);
   if (i.useEffect(() => {
       null != b && t(b.id)
@@ -51,8 +51,8 @@ function m(e) {
     case d.U.ELIGIBLE_DISABLED:
     case d.U.ELIGIBLE_ENABLED:
       return (0, r.jsx)(c.d, {
-        requireTerms: m,
-        rules: f,
+        requireTerms: f,
+        rules: m,
         settingsView: n
       });
     case d.U.INELIGIBLE:

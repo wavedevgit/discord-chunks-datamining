@@ -31,7 +31,7 @@ function y(e) {
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, g.Z, b.Z, f.Z, m.Z, d.Z, c.Z), this.syncWith([s.Z, g.Z, b.Z, f.Z, m.Z, d.Z], () => true)
+    this.waitFor(s.Z, g.Z, b.Z, m.Z, f.Z, d.Z, c.Z), this.syncWith([s.Z, g.Z, b.Z, m.Z, f.Z, d.Z], () => true)
   }
   isEducationUpsellDismissed(e) {
     return j.has(e)
@@ -45,15 +45,15 @@ class C extends(r = Chunk442837.ZP.Store) {
     if (v === p.PG.DEFAULT_CHANNELS)
       if (e) return g.Z.hasChanges() || b.Z.hasChanges();
       else return g.Z.hasChanges();
-    return v === p.PG.CUSTOMIZATION_QUESTIONS ? b.Z.hasChanges() || m.Z.hasChanges() : v === p.PG.HOME_SETTINGS ? f.Z.hasChanges() : v === p.PG.CONNECTIONS && m.Z.hasChanges()
+    return v === p.PG.CUSTOMIZATION_QUESTIONS ? b.Z.hasChanges() || f.Z.hasChanges() : v === p.PG.HOME_SETTINGS ? m.Z.hasChanges() : v === p.PG.CONNECTIONS && f.Z.hasChanges()
   }
   hasConfiguredAnythingForCurrentStep() {
     if (null == O) returnfalse;
     if (v === p.PG.SAFETY_CHECK) returntrue;
     if (v === p.PG.DEFAULT_CHANNELS) return g.Z.editedDefaultChannelIds.size > 0;
-    if (v === p.PG.CUSTOMIZATION_QUESTIONS) return b.Z.editedOnboardingPrompts.length > 0 || m.Z.getEditedConnections().length > 0;
-    if (v === p.PG.HOME_SETTINGS) return !(0, o.av)(f.Z.getSettings());
-    if (v === p.PG.CONNECTIONS) return m.Z.getEditedConnections().length > 0;
+    if (v === p.PG.CUSTOMIZATION_QUESTIONS) return b.Z.editedOnboardingPrompts.length > 0 || f.Z.getEditedConnections().length > 0;
+    if (v === p.PG.HOME_SETTINGS) return !(0, o.av)(m.Z.getSettings());
+    if (v === p.PG.CONNECTIONS) return f.Z.getEditedConnections().length > 0;
     returnfalse
   }
   hasErrors() {

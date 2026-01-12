@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
 function y() {
   let e, t = (0, l.e7)([g.Z], () => g.Z.getGuildId()),
     n = (0, l.e7)([u.Z], () => u.Z.getGuild(t)),
-    y = (0, l.e7)([f.Z], () => f.Z.getCurrentPage());
+    y = (0, l.e7)([m.Z], () => m.Z.getCurrentPage());
   if (i.useEffect(() => {
       (0, o.Q3)(a.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: j.L.AUTO
@@ -67,7 +67,7 @@ function y() {
     children: [y !== b.u.OVERVIEW && (0, r.jsx)(s.P3F, {
       className: O.back,
       onClick: () => {
-        (0, m.K)(b.u.OVERVIEW)
+        (0, f.K)(b.u.OVERVIEW)
       },
       children: (0, r.jsxs)("div", {
         className: O.backButton,

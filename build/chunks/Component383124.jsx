@@ -21,8 +21,8 @@ function g(e) {
     onClick: l,
     disabled: g
   } = e, {
-    isFetching: m,
-    coverImageUrl: f
+    isFetching: f,
+    coverImageUrl: m
   } = (0, c.$)(t, {
     coverImageSize: 256
   }), b = (0, o.e7)([d.Z], () => {
@@ -30,7 +30,7 @@ function g(e) {
     return null != (n = null == (e = d.Z.getDetectableGame(t)) ? true : e.name) ? n : ""
   }), p = i.useCallback(() => {
     null == l || l(t)
-  }, [t, l]), h = i.useMemo(() => m ? null : null == f ? (0, r.jsx)("div", {
+  }, [t, l]), h = i.useMemo(() => f ? null : null == m ? (0, r.jsx)("div", {
     className: u.gameUnknownImage,
     children: (0, r.jsx)(s.IMN, {
       size: "lg"
@@ -38,8 +38,8 @@ function g(e) {
   }) : (0, r.jsx)("img", {
     className: u.gameImage,
     alt: b,
-    src: f
-  }), [f, m, b]);
+    src: m
+  }), [m, f, b]);
   return (0, r.jsxs)("div", {
     className: a()(u.selectedGame, {
       [u.dimmed]: !n,
@@ -50,7 +50,7 @@ function g(e) {
       tabIndex: g ? false : 0,
       onClick: g ? true : p,
       className: a()(u.gameImageBackground, {
-        [u.gameImageLoading]: m,
+        [u.gameImageLoading]: f,
         [u.disabled]: g
       }),
       children: [n && (0, r.jsx)("div", {

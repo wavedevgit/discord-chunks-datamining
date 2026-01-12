@@ -2,7 +2,7 @@
 /** chunk id: 413682, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  w: () => m
+  w: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,11 +15,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk935653 = require("./935653.js"),
   Chunk449874 = require("./449874.js");
 
-function m(e) {
+function f(e) {
   let {
     canManageGuild: t,
     premiumProgressBarEnabled: n
-  } = e, m = (0, s.ZP)(), f = i.useCallback(e => {
+  } = e, f = (0, s.ZP)(), m = i.useCallback(e => {
     o.Z.updateGuild({
       premiumProgressBarEnabled: e
     })
@@ -32,14 +32,14 @@ function m(e) {
         label: c.intl.string(c.t.Dl4mJS),
         description: c.intl.string(c.t.xzHcod),
         checked: n,
-        onChange: f,
+        onChange: m,
         disabled: !t
       })
     }), (0, r.jsx)("div", {
       className: d.column,
       children: (0, r.jsx)("img", {
         alt: c.intl.string(c.t.UOJp5a),
-        src: (0, l.ap)(m) ? g : u,
+        src: (0, l.ap)(f) ? g : u,
         className: d.progressBarImage
       })
     })]

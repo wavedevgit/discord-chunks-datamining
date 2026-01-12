@@ -69,7 +69,7 @@ function _(e) {
       color: "text-default",
       className: N.headerNoConfigSubtitle,
       children: C.intl.format(C.t.q5f7tK, {
-        helpdeskArticleUrl: m.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
+        helpdeskArticleUrl: f.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.Button, {
       disabled: n,
@@ -94,9 +94,9 @@ function T(e) {
   } = (0, h.Z)(0), {
     scrolledToTop: w,
     handleScroll: Z
-  } = (0, j.V)(), R = (0, c.e7)([f.Z], () => {
+  } = (0, j.V)(), R = (0, c.e7)([m.Z], () => {
     var e;
-    return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
+    return null == (e = m.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
   }, [n.id, t.id]), D = (0, c.Wu)([p.Z], () => {
     var e;
     return null != (e = p.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
@@ -158,7 +158,7 @@ function T(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: C.intl.format(C.t.q5f7tK, {
-            helpdeskArticleUrl: m.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
+            helpdeskArticleUrl: f.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {

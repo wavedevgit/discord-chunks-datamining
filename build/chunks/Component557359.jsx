@@ -31,11 +31,11 @@ function p(e) {
   }, [p, t]);
   return null == l ? null : null == n ? (0, r.jsx)(c.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.rsf, {
-      label: f.intl.string(f.t.d21uOr),
-      description: f.intl.string(f.t.SzpUBF),
+      label: m.intl.string(m.t.d21uOr),
+      description: m.intl.string(m.t.SzpUBF),
       onChange: h,
       checked: t
-    }), t && (0, r.jsx)(m.c, {
+    }), t && (0, r.jsx)(f.c, {
       guildId: l.id
     }), (0, r.jsx)("div", {
       className: a()(b.rules, {
@@ -47,7 +47,7 @@ function p(e) {
           variant: "text-xs/bold",
           color: "text-muted",
           className: b.rulesHeader,
-          children: f.intl.string(f.t.XcAzbo)
+          children: m.intl.string(m.t.XcAzbo)
         }), (0, r.jsx)(d.k, {
           guild: l,
           rules: n,

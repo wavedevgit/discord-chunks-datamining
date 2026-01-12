@@ -22,7 +22,7 @@ let c = e => {
 };
 
 function d(e, t) {
-  var n, c, d, u, g, m;
+  var n, c, d, u, g, f;
   return null != e && (e => {
     switch (e) {
       case s.fX.KEYWORD:
@@ -36,7 +36,7 @@ function d(e, t) {
         returnfalse
     }
   })(e) ? {
-    headerText: null !== (n = null != (m = null == t ? true : t.name) ? m : a.I6[e].getDefaultRuleName()) && true !== n ? n : "",
+    headerText: null !== (n = null != (f = null == t ? true : t.name) ? f : a.I6[e].getDefaultRuleName()) && true !== n ? n : "",
     headerSubtext: null != (c = ((e, t) => {
       if ((0, l.Vb)(t) && (0, l.DO)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? o.intl.formatToPlainString(o.t.xZUvxR, {
         keywordCount: t.triggerMetadata.keywordFilter.length,

@@ -81,7 +81,7 @@ function j(e) {
     customEmoji: D,
     unicodeEmoji: A
   } = (0, u.Z)(null == (t = C.emoji) ? true : t.id, null == (i = C.emoji) ? true : i.name);
-  return (0, f.Oq)(C.emoji) || null != D || null != A || (_ = b.intl.string(b.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
+  return (0, m.Oq)(C.emoji) || null != D || null != A || (_ = b.intl.string(b.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
     className: l()(p.optionCard, {
       [p.hasError]: N || null != _,
       [p.dropIndicatorBefore]: null != w && T < w,
@@ -98,12 +98,12 @@ function j(e) {
         option: C,
         index: y,
         onSave: e => {
-          (0, m.Kk)(j, v.id, {
+          (0, f.Kk)(j, v.id, {
             options: v.options.map(t => t.id === C.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, m.Kk)(j, v.id, {
+          (0, f.Kk)(j, v.id, {
             options: v.options.filter(e => e.id !== C.id)
           })
         }
@@ -166,7 +166,7 @@ function v(e) {
       return n => (0, r.jsx)(e, x(h({}, n), {
         guild: t,
         prompt: i,
-        onSave: e => (0, m.Kk)(t, i.id, {
+        onSave: e => (0, f.Kk)(t, i.id, {
           options: [...i.options, e]
         }),
         onDelete: () => {},
@@ -180,10 +180,10 @@ function v(e) {
       [p.singleColumn]: s
     }),
     onClick: () => {
-      i.options.length + 1 === f.fY ? c.Z.show({
+      i.options.length + 1 === m.fY ? c.Z.show({
         title: b.intl.string(b.t.TggC7k),
         body: b.intl.formatToPlainString(b.t.kPQKai, {
-          thresholdCount: f.fY
+          thresholdCount: m.fY
         }),
         confirmText: b.intl.string(b.t.BddRzS),
         cancelText: b.intl.string(b.t["ETE/oC"]),

@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk596390 = require("./596390.js"),
   Chunk812234 = require("./812234.js");
-let f = Chunk473749.forwardRef(function(e, t) {
+let m = Chunk473749.forwardRef(function(e, t) {
   var n, l;
   let {
     value: s,
@@ -23,7 +23,7 @@ let f = Chunk473749.forwardRef(function(e, t) {
     isEditing: d,
     forceShowErrorTooltip: u = false,
     error: g
-  } = e, [f, b, p] = i.useMemo(() => {
+  } = e, [m, b, p] = i.useMemo(() => {
     if (null == g) return [];
     let {
       erroringCharacterOffset: e = 0,
@@ -32,18 +32,18 @@ let f = Chunk473749.forwardRef(function(e, t) {
     return [n, s.slice(e, e + t), s.slice(e + t)]
   }, [s, g]);
   return null == g ? (0, r.jsx)("div", {
-    className: a()(m.chipletValue, {
-      [m.isEditing]: d,
-      [m.isSelected]: c
+    className: a()(f.chipletValue, {
+      [f.isEditing]: d,
+      [f.isSelected]: c
     }),
     ref: t,
     children: s
-  }) : (null != (n = null == f ? true : f.length) ? n : 0) + (null != (l = null == b ? true : b.length) ? l : 0) > 70 ? (0, r.jsx)(o.u, {
+  }) : (null != (n = null == m ? true : m.length) ? n : 0) + (null != (l = null == b ? true : b.length) ? l : 0) > 70 ? (0, r.jsx)(o.u, {
     "aria-label": g.message,
     __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
       "aria-label": g.message,
       children: [g.message, " ", (0, r.jsx)("span", {
-        className: m.errorOverflowValue,
+        className: f.errorOverflowValue,
         children: b
       })]
     }),
@@ -51,15 +51,15 @@ let f = Chunk473749.forwardRef(function(e, t) {
     forceOpen: u || true,
     children: (0, r.jsxs)("div", {
       ref: t,
-      className: a()(m.chipletValue, {
-        [m.isEditing]: d,
-        [m.isError]: null != g && !d,
-        [m.isOverflowing]: null != g && !d
+      className: a()(f.chipletValue, {
+        [f.isEditing]: d,
+        [f.isError]: null != g && !d,
+        [f.isOverflowing]: null != g && !d
       }),
       children: [(0, r.jsx)("span", {
-        children: f
+        children: m
       }), (0, r.jsx)("span", {
-        className: m.errorValue,
+        className: f.errorValue,
         children: b
       }), (0, r.jsx)("span", {
         children: p
@@ -67,18 +67,18 @@ let f = Chunk473749.forwardRef(function(e, t) {
     })
   }) : (0, r.jsxs)("div", {
     ref: t,
-    className: a()(m.chipletValue, {
-      [m.isEditing]: d,
-      [m.isError]: null != g && !d
+    className: a()(f.chipletValue, {
+      [f.isEditing]: d,
+      [f.isError]: null != g && !d
     }),
     children: [(0, r.jsx)("span", {
-      children: f
+      children: m
     }), (0, r.jsx)(o.u, {
       text: g.message,
       position: "top",
       forceOpen: u || true,
       children: (0, r.jsx)("span", {
-        className: m.errorValue,
+        className: f.errorValue,
         children: b
       })
     }), (0, r.jsx)("span", {
@@ -135,15 +135,15 @@ function b(e) {
       b()
     }, [b]);
   return (0, r.jsx)("div", {
-    className: m.chipletFlexContainer,
+    className: f.chipletFlexContainer,
     children: (0, r.jsxs)("div", {
       ref: I,
-      className: a()(m.chipletContainer, {
-        [m.isEditing]: y,
-        [m.smallBlink]: !y && !_,
-        [m.isSelected]: p,
-        [m.isSelecting]: h,
-        [m.isError]: null != x && !y
+      className: a()(f.chipletContainer, {
+        [f.isEditing]: y,
+        [f.smallBlink]: !y && !_,
+        [f.isSelected]: p,
+        [f.isSelecting]: h,
+        [f.isError]: null != x && !y
       }),
       children: [(0, r.jsxs)(c.P3F, {
         tag: "div",
@@ -152,15 +152,15 @@ function b(e) {
         ignoreKeyPress: true,
         onMouseEnter: () => P(true),
         onMouseLeave: () => P(false),
-        className: a()(m.chipletContainerInner, {
-          [m.isSelecting]: h,
-          [m.isEditing]: y
+        className: a()(f.chipletContainerInner, {
+          [f.isSelecting]: h,
+          [f.isEditing]: y
         }),
         ref: O,
         children: [(0, r.jsx)("input", {
-          className: a()(m.chipletInput, {
-            [m.isEditing]: y,
-            [m.isSelecting]: h
+          className: a()(f.chipletInput, {
+            [f.isEditing]: y,
+            [f.isSelecting]: h
           }),
           ref: v,
           onChange: R,
@@ -169,7 +169,7 @@ function b(e) {
           style: {
             width: Z > 0 ? Z : "calc(".concat(t.length, "ch + 10px)")
           }
-        }), (0, r.jsx)(f, {
+        }), (0, r.jsx)(m, {
           ref: N,
           value: t,
           isEditing: y,
@@ -178,12 +178,12 @@ function b(e) {
           forceShowErrorTooltip: T || y
         })]
       }), !y && (0, r.jsx)(c.P3F, {
-        className: m.closeIconContainer,
+        className: f.closeIconContainer,
         onClick: k,
         children: (0, r.jsx)(c.Dio, {
           size: "xxs",
           color: "currentColor",
-          className: m.closeIcon
+          className: f.closeIcon
         })
       })]
     })

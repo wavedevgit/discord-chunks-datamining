@@ -45,23 +45,23 @@ function _(e) {
     guild: n,
     requireDescription: s
   } = e, c = i.useCallback(e => {
-    f.Z.updateGuild({
+    m.Z.updateGuild({
       discoverySplash: e
     })
   }, []), d = i.useCallback(() => {
-    f.Z.updateGuild({
+    m.Z.updateGuild({
       discoverySplash: null
     })
   }, []), u = i.useCallback(e => {
-    f.Z.updateGuild({
+    m.Z.updateGuild({
       description: e
     })
   }, []), {
     memberCount: b,
     onlineCount: p
-  } = (0, a.cj)([m.Z], () => ({
-    memberCount: m.Z.getMemberCount(n.id),
-    onlineCount: m.Z.getOnlineCount(n.id)
+  } = (0, a.cj)([f.Z], () => ({
+    memberCount: f.Z.getMemberCount(n.id),
+    onlineCount: f.Z.getOnlineCount(n.id)
   }));
   return (0, r.jsxs)("div", {
     className: I.twoColumns,
@@ -207,11 +207,11 @@ function P(e) {
     guildMetadata: n,
     requireTag: l,
     error: a
-  } = e, [s, g] = i.useState(null), m = i.useCallback(e => {
+  } = e, [s, g] = i.useState(null), f = i.useCallback(e => {
     let r = Array.from(e),
       i = [...n.keywords].filter(e => !r.includes(e));
     g(null), (0, d.zH)(t, i)
-  }, [t, n]), f = i.useCallback(e => {
+  }, [t, n]), m = i.useCallback(e => {
     let {
       keywords: r
     } = n;
@@ -220,11 +220,11 @@ function P(e) {
     let t = n.keywords.length >= C.G7;
     return {
       text: e,
-      onClick: () => f(e),
+      onClick: () => m(e),
       disabled: t,
       tooltipText: t ? E.intl.string(E.t.Xx7XeB) : true
     }
-  }), [n.keywords, n.primaryCategoryId, f]), h = null != a ? a : s, x = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, m]), h = null != a ? a : s, x = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -237,8 +237,8 @@ function P(e) {
         description: E.intl.string(E.t.ztiTDH),
         tagsLabel: E.intl.string(E.t["0PJZXj"]),
         tags: x,
-        onRemoveTag: m,
-        onAddTag: f,
+        onRemoveTag: f,
+        onAddTag: m,
         onAddTagError: g,
         maxTags: C.G7,
         maxTaxLength: C._0,
@@ -308,7 +308,7 @@ function Z(e) {
   let {
     preferredLocale: t
   } = e, n = i.useMemo(() => (0, N.jb)(), []), l = i.useCallback(e => {
-    f.Z.updateGuild({
+    m.Z.updateGuild({
       preferredLocale: e
     })
   }, []);

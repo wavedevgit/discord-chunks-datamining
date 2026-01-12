@@ -33,12 +33,12 @@ function j() {
     null != t && (0, g.sO)(t) && (0, c.Q3)(a.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [t]);
   let y = (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == t ? true : t.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
-  return e = null == t || j ? (0, r.jsx)(s.$jN, {}) : null != O ? (0, r.jsx)(f.Z, {
+  return e = null == t || j ? (0, r.jsx)(s.$jN, {}) : null != O ? (0, r.jsx)(m.Z, {
     guild: t,
     config: O
   }) : y ? (0, r.jsx)(b.Z, {
     guild: t
-  }) : (0, r.jsx)(m.Z, {
+  }) : (0, r.jsx)(f.Z, {
     guild: t,
     application: n
   }), (0, r.jsx)("div", {

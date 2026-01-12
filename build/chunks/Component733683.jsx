@@ -85,7 +85,7 @@ class N extends(r = Chunk473749.Component) {
     let {
       progress: t
     } = this.props;
-    if (null == e.name || e.key === f.Eu4.NONE) return null;
+    if (null == e.name || e.key === m.Eu4.NONE) return null;
     let n = Math.min(t, e.numRequired);
     return this.getTierDisabled(e) ? {
       title: null,
@@ -108,12 +108,12 @@ class N extends(r = Chunk473749.Component) {
       s = a[n],
       c = l >= e.numRequired,
       u = null != s && e.key === s.key,
-      m = e.key === a[0].key,
-      f = this.getTierDisabled(e);
-    r = m ? h.tierFirst : f ? h.tierInProgress : u ? h.tierCurrent : c ? h.tierAccomplished : h.tierInProgress;
-    let b = e.y - (m ? 0 : O / 2),
+      f = e.key === a[0].key,
+      m = this.getTierDisabled(e);
+    r = f ? h.tierFirst : m ? h.tierInProgress : u ? h.tierCurrent : c ? h.tierAccomplished : h.tierInProgress;
+    let b = e.y - (f ? 0 : O / 2),
       p = this.state.tierMarkerActive >= t,
-      x = !m && u && p,
+      x = !f && u && p,
       j = this.getTierMarkerTooltipText(e);
     return (0, i.jsx)(g.AMe, {
       from: {

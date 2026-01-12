@@ -51,12 +51,12 @@ function C(e) {
     originalVanityURLCode: s,
     errorDetails: o
   } = e, c = (null == t ? true : t.features.has(x.GuildFeatures.VANITY_URL)) === true, d = i.useCallback(() => {
-    (0, m.Gy)("")
+    (0, f.Gy)("")
   }, []), u = i.useCallback(e => {
-    (0, m.Gy)(e)
+    (0, f.Gy)(e)
   }, []);
   if (null == n) return (0, r.jsx)(a.$jN, {});
-  let g = null != o ? (0, f.i)(o.code) : null;
+  let g = null != o ? (0, m.i)(o.code) : null;
   return (0, r.jsxs)(a.Zbd, {
     editable: true,
     className: O.editVanityUrlCard,
@@ -95,7 +95,7 @@ function N(e) {
     vanityURLCode: n,
     vanityURLUses: a,
     originalVanityURLCode: c,
-    errorDetails: m
+    errorDetails: f
   } = e, {
     analyticsLocations: h
   } = (0, o.ZP)(), v = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), N = i.useCallback(e => {
@@ -109,12 +109,12 @@ function N(e) {
     })
   }, [h, t, v]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, f.p)(t) ? (0, r.jsx)(C, {
+    children: [(0, m.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
       vanityURLUses: a,
       originalVanityURLCode: c,
-      errorDetails: m
+      errorDetails: f
     }) : (0, r.jsx)("div", {
       className: O.upsellButton,
       children: (0, r.jsx)(b.v, {

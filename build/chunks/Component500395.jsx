@@ -2,7 +2,7 @@
 /** chunk id: 500395, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk990547 = require("./990547.js"),
@@ -57,14 +57,14 @@ function g(e) {
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     guild: t,
     config: n
   } = e, {
     isLoading: c,
     error: u,
-    creatorMonetizationOnboardingMarketing: m
+    creatorMonetizationOnboardingMarketing: f
   } = (0, s.Z)(t.id);
   return ((0, a.Z)({
     type: i.ImpressionTypes.PANE,
@@ -77,7 +77,7 @@ function m(e) {
     children: [(0, r.jsx)(g, {
       config: n
     }), (0, r.jsx)(o.C, {
-      onboardingMarketing: m,
+      onboardingMarketing: f,
       onboardingMarketingError: u
     })]
   })

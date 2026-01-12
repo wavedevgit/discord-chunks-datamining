@@ -138,7 +138,7 @@ let E = [{
   _ = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [a, O] = i.useState(0), [y, C] = i.useState(), _ = (0, s.e7)([m.Z], () => m.Z.can(b.Plq.ADMINISTRATOR, t)), T = null == y ? true : y.offsetWidth, P = null == y ? true : y.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, O] = i.useState(0), [y, C] = i.useState(), _ = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.ADMINISTRATOR, t)), T = null == y ? true : y.offsetWidth, P = null == y ? true : y.offsetHeight;
     return i.useEffect(() => {
       null != T && l(T / 2), null != P && O(P / 2)
     }, [T, P, l, O]), i.useEffect(() => {
@@ -180,7 +180,7 @@ let E = [{
         variant: "text-md/normal",
         className: x.body,
         children: h.intl.format(h.t["52EgsM"], {
-          helpdeskArticle: f.Z.getArticleURL(b.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
+          helpdeskArticle: m.Z.getArticleURL(b.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.u, {
         text: _ ? null : h.intl.string(h.t["pjG+T3"]),
@@ -208,7 +208,7 @@ let E = [{
         className: x.body,
         variant: "text-sm/normal",
         children: h.intl.format(h.t.rjhrqC, {
-          helpdeskArticle: f.Z.getArticleURL(b.BhN.GUILD_COMMUNITY_FEATURE)
+          helpdeskArticle: m.Z.getArticleURL(b.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
         className: x.features,

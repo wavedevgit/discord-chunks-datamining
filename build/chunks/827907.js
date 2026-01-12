@@ -4,7 +4,7 @@
 require.d(exports, {
   EH: () => g,
   Mf: () => d,
-  lL: () => m,
+  lL: () => f,
   t4: () => u
 });
 var Chunk442837 = require("./442837.js"),
@@ -27,7 +27,7 @@ function g(e, t) {
   return (0, r.e7)([s.Z, i.Z], () => null != t && s.Z.editedDefaultChannelIds.has(t) ? c.intl.string(c.t.Lz94y1) : a.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? true : c.intl.string(c.t["031cXt"]))
 }
 
-function m(e, t) {
+function f(e, t) {
   let n = (0, r.e7)([l.Z], () => {
       var n;
       return (null == (n = l.Z.getGuild(e)) ? true : n.rulesChannelId) === t

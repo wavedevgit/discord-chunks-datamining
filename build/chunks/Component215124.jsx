@@ -19,7 +19,7 @@ function g(e) {
   let {
     guildId: t,
     allPeriods: g
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), f = (0, c.qi)(t, {
+  } = e, f = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), m = (0, c.qi)(t, {
     includeSoftDeleted: true
   }), b = (0, s.ue)(t, {
     publishedOnly: false
@@ -29,12 +29,12 @@ function g(e) {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
-  }), x = f.length > 0, j = b.length > 0, v = h.length > 0;
-  return null == m ? null : (0, r.jsxs)("div", {
+  }), x = m.length > 0, j = b.length > 0, v = h.length > 0;
+  return null == f ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: u.intl.format(u.t.fvOn6J, {
-        guildName: m.name
+        guildName: f.name
       })
     }), (0, r.jsx)(l.LZC, {
       size: 16
@@ -67,7 +67,7 @@ function g(e) {
               }
               return e
             }({}, t), i = i = {
-              guild: m
+              guild: f
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

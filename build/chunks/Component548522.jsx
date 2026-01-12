@@ -53,8 +53,8 @@ function b(e) {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: f.title,
-      children: m.intl.format(m.t["sm+75n"], {
+      className: m.title,
+      children: f.intl.format(f.t["sm+75n"], {
         currentCount: b.length,
         maxCount: g.nx
       })
@@ -72,7 +72,7 @@ function b(e) {
       actionsLocation: "side",
       fieldStyle: a.it.COMPACT
     })), !y && (0, r.jsx)("div", {
-      className: f.addQuestionsContainer,
+      className: m.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
         addFormField: N,
         guild: n,
@@ -88,29 +88,29 @@ function p(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
-    text: m.intl.string(m.t.EOwiEk),
+    text: f.intl.string(f.t.EOwiEk),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.EOwiEk),
+        label: f.intl.string(f.t.EOwiEk),
         required: true
       })
     }
   }, {
-    text: m.intl.string(m.t.jqrNDh),
+    text: f.intl.string(f.t.jqrNDh),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.jqrNDh),
+        label: f.intl.string(f.t.jqrNDh),
         required: true
       })
     }
   }, {
-    text: m.intl.string(m.t.I5q8vp),
+    text: f.intl.string(f.t.I5q8vp),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.I5q8vp),
+        label: f.intl.string(f.t.I5q8vp),
         required: true
       })
     }
@@ -119,8 +119,8 @@ function p(e) {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: f.examplesHeader,
-      children: m.intl.string(m.t.ID04cA)
+      className: m.examplesHeader,
+      children: f.intl.string(f.t.ID04cA)
     }), (0, r.jsx)(c.j, {
       pills: n
     })]

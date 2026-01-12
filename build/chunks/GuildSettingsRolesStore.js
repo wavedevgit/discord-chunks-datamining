@@ -423,14 +423,14 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         guildId: t
       } = e;
       if (null == r || t !== r.id) returnfalse;
-      r = (0, f.t8)(r, "features", new Set([...r.features, C.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE]))
+      r = (0, m.t8)(r, "features", new Set([...r.features, C.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE]))
     },
     GUILD_SETTINGS_SLOWMODE_PERMISSION_MIGRATED: function(e) {
       let {
         guildId: t
       } = e;
       if (null == r || t !== r.id) returnfalse;
-      r = (0, f.t8)(r, "features", new Set([...r.features, C.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
+      r = (0, m.t8)(r, "features", new Set([...r.features, C.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
     }
   }),
   q = Y

@@ -61,10 +61,10 @@ function y(e) {
     n(1)
   }, d = () => {
     n(2)
-  }, m = 2 === t, f = 1 === t;
-  if (!(!(r >= i) && r / i >= .8) || m) return null;
-  let b = f || m ? j.hidden : null,
-    p = f ? g.Z.Stages.FLYING : g.Z.Stages.HOVERING;
+  }, f = 2 === t, m = 1 === t;
+  if (!(!(r >= i) && r / i >= .8) || f) return null;
+  let b = m || f ? j.hidden : null,
+    p = m ? g.Z.Stages.FLYING : g.Z.Stages.HOVERING;
   return (0, l.jsx)(u.AMe, {
     from: {
       opacity: 0
@@ -109,8 +109,8 @@ function C(e) {
     showHeaderLockStatus: c,
     headerButton: d = null,
     subscriptionsRequired: g,
-    subscriptionCount: m,
-    className: f
+    subscriptionCount: f,
+    className: m
   } = e, b = e => {
     null == i || i(e)
   }, [h, x] = a.useState(0);
@@ -129,7 +129,7 @@ function C(e) {
         [j.tierHeaderWithoutCardBody]: !t,
         [j.tierHeaderUnlocked]: r,
         [j.tierHeaderLocked]: !r
-      }, f),
+      }, m),
       ref: b,
       children: (0, l.jsxs)("div", {
         className: j.tierHeaderContent,
@@ -150,7 +150,7 @@ function C(e) {
           subscriptionsRequired: g,
           hasAnimatedUnlocked: r
         }) : null, (0, l.jsx)(y, {
-          numUnlocked: m,
+          numUnlocked: f,
           numRequired: g
         })]
       })
@@ -207,10 +207,10 @@ function N(e) {
             let {
               Icon: r,
               className: i
-            } = (0, m.t)(e.icon, t);
+            } = (0, f.t)(e.icon, t);
             return (0, l.jsxs)("div", {
               className: j.perk,
-              children: [(0, l.jsx)(f.Z, {
+              children: [(0, l.jsx)(m.Z, {
                 name: String(e.icon),
                 icon: r,
                 className: j.perkIcon,

@@ -34,7 +34,7 @@ function u(e) {
 }
 let g = "role_subscriptions_eligibility_modal";
 
-function m(e) {
+function f(e) {
   let {
     guild: t,
     eligibility: i,
@@ -78,7 +78,7 @@ function m(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     guild: t,
     checkboxText: n
@@ -87,11 +87,11 @@ function f(e) {
     error: c,
     loading: d,
     submitAcceptTermsRequest: u
-  } = (0, a.Z)(t.id), [g, m] = i.useState(false);
+  } = (0, a.Z)(t.id), [g, f] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Checkbox, {
       onChange: function() {
-        m(e => !e)
+        f(e => !e)
       },
       checked: g,
       label: n
@@ -127,10 +127,10 @@ function b(e) {
     acceptTermsCheckboxText: d,
     wasRejectedInV1: g
   } = n;
-  return c ? g ? (0, r.jsx)(s.Z, u({}, n)) : (0, r.jsx)(f, {
+  return c ? g ? (0, r.jsx)(s.Z, u({}, n)) : (0, r.jsx)(m, {
     guild: t,
     checkboxText: d
-  }) : (0, r.jsx)(m, {
+  }) : (0, r.jsx)(f, {
     guild: t,
     eligibility: o,
     eligibilityLoading: i,

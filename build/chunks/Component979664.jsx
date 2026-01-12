@@ -2,7 +2,7 @@
 /** chunk id: 979664, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,7 +21,7 @@ function g(e) {
     canManageGuild: o
   } = e, g = i.useCallback(() => {
     l(null)
-  }, [l]), m = i.useCallback((e, t) => {
+  }, [l]), f = i.useCallback((e, t) => {
     (0, a.ZDy)(async () => {
       let {
         default: i
@@ -70,7 +70,7 @@ function g(e) {
           text: d.intl.string(d.t.r3JdsT)
         }), (0, r.jsx)(s.ZP, {
           tabIndex: 0,
-          onChange: m,
+          onChange: f,
           disabled: !o
         })]
       })
@@ -84,7 +84,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     profile: t,
     canManageGuild: n,

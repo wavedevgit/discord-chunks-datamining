@@ -33,7 +33,7 @@ function x(e) {
     C = x === b.BpS.ELEVATED,
     N = O && y,
     E = (0, i.throttle)(async e => {
-      N && await m.Z.updateMFALevel({
+      N && await f.Z.updateMFALevel({
         guildId: n.id,
         level: e ? b.BpS.ELEVATED : b.BpS.NONE
       })
@@ -60,13 +60,13 @@ function x(e) {
       })]
     }), !N || C && I ? (0, r.jsx)(a.u, {
       text: I ? p.intl.string(p.t["KG1V/E"]) : O ? p.intl.string(p.t.NmsheT) : p.intl.string(p.t.LieBta),
-      children: (0, r.jsx)(f.Z, {
+      children: (0, r.jsx)(m.Z, {
         checked: C,
         disabled: true,
         onChange: E,
         className: h.bringToFront
       })
-    }) : (0, r.jsx)(f.Z, {
+    }) : (0, r.jsx)(m.Z, {
       checked: C,
       onChange: E,
       className: h.bringToFront

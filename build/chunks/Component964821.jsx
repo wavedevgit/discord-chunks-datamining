@@ -33,7 +33,7 @@ function x(e) {
     drop: N,
     dragSourcePosition: E,
     setIsDraggable: I
-  } = (0, m.Z)({
+  } = (0, f.Z)({
     type: "ONBOARDING_CONNECTION_CARD",
     index: l,
     optionId: t.id,
@@ -41,7 +41,7 @@ function x(e) {
     onDragComplete: e => v(e),
     onDragReset: () => j()
   }), S = i.useCallback(() => {
-    (0, f.xI)(l)
+    (0, m.xI)(l)
   }, [l]), _ = i.useCallback(() => {
     (0, c.ZDy)(async () => {
       let {

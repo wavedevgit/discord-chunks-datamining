@@ -36,7 +36,7 @@ function h(e) {
         className: p.productListings,
         id: e.controlId,
         children: g.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(m.Z, {
             guildId: t,
             product: e,
             onEditProduct: () => i(e.id),
@@ -80,7 +80,7 @@ function h(e) {
               var n;
               return n = e.id, void(0, o.JG)((0, u.ar)(t, n))
             },
-            onTestDownload: () => m.Z.open({
+            onTestDownload: () => f.Z.open({
               guildId: t,
               productId: e.id
             }),

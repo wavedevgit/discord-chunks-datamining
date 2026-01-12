@@ -63,13 +63,13 @@ let O = function() {
         })]
       }), (0, r.jsx)("div", {
         className: v.divider
-      }), (0, r.jsx)(m.z, {
+      }), (0, r.jsx)(f.z, {
         guildId: t.id,
         defaultSettings: t.defaultMessageNotifications,
         canManageGuild: n
       }), (0, r.jsx)("div", {
         className: v.divider
-      }), (0, r.jsx)(f.L, {
+      }), (0, r.jsx)(m.L, {
         canManageGuild: n,
         guild: t
       }), true === n && (0, r.jsxs)(r.Fragment, {

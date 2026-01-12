@@ -46,16 +46,16 @@ function p(e) {
   let y = (0, o.e)(t, b);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: f.titleContainer,
+      className: m.titleContainer,
       children: [(0, r.jsx)(a.Text, {
-        className: f.titleText,
+        className: m.titleText,
         color: "text-strong",
         variant: "text-md/semibold",
-        children: m.intl.format(m.t.BUdGkE, {
+        children: f.intl.format(f.t.BUdGkE, {
           roleName: b.name
         })
       }), y ? (0, r.jsx)(a.P3F, {
-        className: f.menu,
+        className: m.menu,
         onClick: function(e) {
           (0, s.jW)(e, async () => {
             let {
@@ -96,7 +96,7 @@ function p(e) {
             }
           })
         },
-        "aria-label": m.intl.string(m.t.PdRCRg),
+        "aria-label": f.intl.string(f.t.PdRCRg),
         children: (0, r.jsx)(a.xhG, {
           size: "md",
           color: "currentColor"
@@ -106,31 +106,31 @@ function p(e) {
       messageType: a.QYI.WARNING,
       children: O
     }) : null, (0, r.jsxs)(a.njP, {
-      className: f.tabBar,
-      "aria-label": m.intl.string(m.t["+1H47t"]),
+      className: m.tabBar,
+      "aria-label": f.intl.string(f.t["+1H47t"]),
       selectedItem: p,
       type: "top",
       look: "brand",
       onItemSelect: x,
       children: [(0, r.jsx)(a.njP.Item, {
-        className: f.tabBarItem,
+        className: m.tabBarItem,
         id: g.ZI.DISPLAY,
         disabled: v,
-        children: m.intl.string(m.t.hmdomw)
+        children: f.intl.string(f.t.hmdomw)
       }), (0, r.jsx)(a.njP.Item, {
-        className: f.tabBarItem,
+        className: m.tabBarItem,
         id: g.ZI.PERMISSIONS,
-        children: m.intl.string(m.t.WIDE1L)
+        children: f.intl.string(f.t.WIDE1L)
       }), (0, r.jsx)(a.njP.Item, {
-        className: f.tabBarItem,
+        className: m.tabBarItem,
         id: g.ZI.VERIFICATIONS,
         disabled: v,
-        children: m.intl.string(m.t["5//Muu"])
+        children: f.intl.string(f.t["5//Muu"])
       }), (0, r.jsx)(a.njP.Item, {
-        className: f.tabBarItem,
+        className: m.tabBarItem,
         id: g.ZI.MEMBERS,
         disabled: v,
-        children: v ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
+        children: v ? f.intl.string(f.t["kg//+7"]) : f.intl.formatToPlainString(f.t.bHnZWW, {
           numMembers: String(j)
         })
       })]

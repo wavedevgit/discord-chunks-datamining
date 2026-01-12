@@ -45,13 +45,13 @@ function v(e) {
   let i, {
     theme: l,
     platform: s,
-    integration: m,
-    onRemove: f,
+    integration: f,
+    onRemove: m,
     locked: b
   } = e;
-  if ((null == m ? true : m.application) != null) o()(null != m.application.bot, "bot is null"), i = (0, r.jsx)(g.Z, {
+  if ((null == f ? true : f.application) != null) o()(null != f.application.bot, "bot is null"), i = (0, r.jsx)(g.Z, {
     size: u.EFr.SIZE_24,
-    user: m.application.bot,
+    user: f.application.bot,
     className: x.verifiedIcon
   });
   else if (null != s) {
@@ -65,12 +65,12 @@ function v(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: a()(x.verifiedRow, (null == s ? true : s.hasMetadata) === true || (null == m ? true : m.role_connections_metadata) != null && (null == m ? true : m.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
+    className: a()(x.verifiedRow, (null == s ? true : s.hasMetadata) === true || (null == f ? true : f.role_connections_metadata) != null && (null == f ? true : f.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
     children: [i, (0, r.jsx)(u.Text, {
       variant: "text-md/medium",
       className: x.verifiedText,
       children: h.intl.format(h.t.Nj0a3j, {
-        platformName: null != (n = null == s ? true : s.name) ? n : null == m || null == (t = m.application) ? true : t.name
+        platformName: null != (n = null == s ? true : s.name) ? n : null == f || null == (t = f.application) ? true : t.name
       })
     }), (0, r.jsx)(c.u, {
       text: h.intl.string(h.t.N86XcP),
@@ -78,7 +78,7 @@ function v(e) {
         children: (0, r.jsx)(u.hU, {
           "aria-label": h.intl.string(h.t.N86XcP),
           variant: "icon-only",
-          onClick: f,
+          onClick: m,
           disabled: b,
           icon: u.Dio,
           size: "sm"
@@ -153,8 +153,8 @@ function y(e) {
     existingPendingConfiguration: c,
     platform: d,
     applicationId: g,
-    onConfigurationChange: m,
-    locked: f,
+    onConfigurationChange: f,
+    locked: m,
     operator: b
   } = e, j = (null == c ? true : c.configuration) != null, v = null != (n = null == c ? true : c.index) ? n : false, [O, y] = function(e, t) {
     let n = null != t ? t : p.iO.GREATER_THAN,
@@ -206,7 +206,7 @@ function y(e) {
             }(e, b);
             if ("" !== e) {
               var r;
-              m({
+              f({
                 connectionType: null != (r = null == d ? true : d.type) ? r : p.Kt,
                 applicationId: g,
                 connectionMetadataField: o,
@@ -215,7 +215,7 @@ function y(e) {
               }, v)
             }
           },
-          disabled: f || !j
+          disabled: m || !j
         })
       })
     }), (0, r.jsx)("td", {
@@ -231,9 +231,9 @@ function y(e) {
             connectionMetadataField: o,
             operator: y,
             value: C
-          }), m(r, null != (n = null == c ? true : c.index) ? n : false)
+          }), f(r, null != (n = null == c ? true : c.index) ? n : false)
         },
-        disabled: f
+        disabled: m
       })
     })]
   }, o)
@@ -277,7 +277,7 @@ function N(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = f.Z.get(b.ABu.BLUESKY);
+  } = e, l = m.Z.get(b.ABu.BLUESKY);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
       titleText: h.intl.string(h.t.zdXqG9),
@@ -312,7 +312,7 @@ function E(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = f.Z.get(b.ABu.STEAM);
+  } = e, l = m.Z.get(b.ABu.STEAM);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
       titleText: h.intl.string(h.t.zdXqG9),
@@ -359,7 +359,7 @@ function I(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = f.Z.get(b.ABu.TWITTER);
+  } = e, l = m.Z.get(b.ABu.TWITTER);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
       titleText: h.intl.string(h.t.zdXqG9),
@@ -402,7 +402,7 @@ function S(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = f.Z.get(b.ABu.REDDIT);
+  } = e, l = m.Z.get(b.ABu.REDDIT);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
       titleText: h.intl.string(h.t.zdXqG9),
@@ -445,7 +445,7 @@ function _(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = f.Z.get(b.ABu.PAYPAL);
+  } = e, l = m.Z.get(b.ABu.PAYPAL);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
       titleText: h.intl.string(h.t.zdXqG9),
@@ -472,7 +472,7 @@ function T(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = f.Z.get(b.ABu.EBAY);
+  } = e, l = m.Z.get(b.ABu.EBAY);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(y, {
       titleText: h.intl.string(h.t.zdXqG9),
@@ -524,7 +524,7 @@ function P(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = f.Z.get(b.ABu.TIKTOK);
+  } = e, l = m.Z.get(b.ABu.TIKTOK);
   return (0, r.jsxs)(C, {
     children: [(0, r.jsx)(O, {
       titleText: h.intl.string(h.t.QHHwRR),
@@ -634,7 +634,7 @@ function Z(e) {
       locked: l,
       integrations: a
     } = e,
-    s = (0, m.ZP)();
+    s = (0, f.ZP)();
   if (n.length < 1) return null;
   let o = n[0].configuration.applicationId,
     c = null != o ? null == a ? true : a.find(e => {
@@ -644,7 +644,7 @@ function Z(e) {
   if (null != o && null == c) return null;
   let d = null;
   try {
-    d = f.Z.get(n[0].configuration.connectionType)
+    d = m.Z.get(n[0].configuration.connectionType)
   } catch (e) {}
   let u = new Map;
   n.forEach(e => {

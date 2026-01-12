@@ -51,12 +51,12 @@ let h = function(e) {
       onDragReset: v
     }),
     Z = i.useCallback(e => {
-      (0, m.XG)(l.channelId, e)
+      (0, f.XG)(l.channelId, e)
     }, [l.channelId]),
     R = i.useCallback((e, n) => {
-      let r = f.Z.getSettings();
-      null != r && ((0, m.XG)(l.channelId, e), (0, m.oo)(t, r).then(() => {
-        (0, m.mM)(t, e.channelId, n)
+      let r = m.Z.getSettings();
+      null != r && ((0, f.XG)(l.channelId, e), (0, f.oo)(t, r).then(() => {
+        (0, f.mM)(t, e.channelId, n)
       }))
     }, [t, l]),
     D = i.useCallback(() => (0, o.ZDy)(async () => {
@@ -86,7 +86,7 @@ let h = function(e) {
           guildId: t,
           resourceChannel: l,
           onSave: Z,
-          onDelete: () => (0, m.Hz)(l.channelId),
+          onDelete: () => (0, f.Hz)(l.channelId),
           onIconUpload: R
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);

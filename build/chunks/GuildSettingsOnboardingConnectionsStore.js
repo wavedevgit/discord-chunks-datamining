@@ -22,7 +22,7 @@ let d = [],
   u = false,
   g = [];
 
-function m() {
+function f() {
   let e = s.Z.getGuildId();
   if (null == e) {
     d = [], g = [], u = false;
@@ -30,7 +30,7 @@ function m() {
   }
   d = [...a.Z.getConnections(e)], g = [], u = false
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(a.Z, s.Z)
   }
@@ -59,11 +59,11 @@ class f extends(r = Chunk442837.ZP.Store) {
     return g.length > 0
   }
 }
-c(f, "displayName", "GuildSettingsOnboardingConnectionsStore");
-let b = new f(Chunk570140.Z, {
-  GUILD_SETTINGS_INIT: m,
-  GUILD_SETTINGS_SET_SECTION: m,
-  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: m,
+c(m, "displayName", "GuildSettingsOnboardingConnectionsStore");
+let b = new m(Chunk570140.Z, {
+  GUILD_SETTINGS_INIT: f,
+  GUILD_SETTINGS_SET_SECTION: f,
+  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: f,
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_ADD: function(e) {
     let {
       connection: t

@@ -19,8 +19,8 @@ function g(e) {
     label: t,
     description: n,
     guildId: g,
-    guildMetadata: m,
-    isDisabled: f,
+    guildMetadata: f,
+    isDisabled: m,
     clearable: b = true
   } = e, p = (0, l.Wu)([c.Z], () => c.Z.getPrimaryCategories()), h = i.useCallback(e => {
     (0, o.TA)(g, null != e ? e : d.o3)
@@ -35,13 +35,13 @@ function g(e) {
     }
   }), [p]);
   return 0 === p.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(a.d, {
-    value: m.primaryCategoryId === d.o3 ? null : m.primaryCategoryId,
+    value: f.primaryCategoryId === d.o3 ? null : f.primaryCategoryId,
     label: t,
     description: n,
     placeholder: u.intl.string(u.t.XqMe3N),
     options: x,
     onChange: h,
-    isDisabled: f,
+    isDisabled: m,
     clearable: b
   }, x.length)
 }

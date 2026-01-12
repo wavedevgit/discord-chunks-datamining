@@ -23,43 +23,43 @@ function p(e) {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, p = l.features.has(m.GuildFeatures.COMMUNITY), h = (0, s.e7)([d.Z], () => d.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
+  } = e, p = l.features.has(f.GuildFeatures.COMMUNITY), h = (0, s.e7)([d.Z], () => d.Z.can(f.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
     let e = t === g.A.DISCOVERABLE && !h,
       n = p && (t === g.A.DISCOVERABLE || h);
     return [{
       id: g.A.INVITE,
-      title: f.intl.string(f.t["HQVS/L"]),
-      body: f.intl.string(f.t.KzXzFa),
+      title: m.intl.string(m.t["HQVS/L"]),
+      body: m.intl.string(m.t.KzXzFa),
       icon: c.mBM,
       enabled: !e,
-      ineligibleText: f.intl.string(f.t.LIZgwJ)
+      ineligibleText: m.intl.string(m.t.LIZgwJ)
     }, {
       id: g.A.APPLY,
-      title: f.intl.string(f.t.LrFEYW),
-      body: f.intl.string(f.t.kJj2oG),
+      title: m.intl.string(m.t.LrFEYW),
+      body: m.intl.string(m.t.kJj2oG),
       icon: c._XJ,
       enabled: !e,
-      ineligibleText: f.intl.string(f.t.LIZgwJ)
+      ineligibleText: m.intl.string(m.t.LIZgwJ)
     }, {
       id: g.A.DISCOVERABLE,
-      title: f.intl.string(f.t.lhOHL3),
-      body: f.intl.string(f.t.pqQylS),
+      title: m.intl.string(m.t.lhOHL3),
+      body: m.intl.string(m.t.pqQylS),
       icon: c.enf,
       enabled: n,
-      ineligibleText: p ? f.intl.string(f.t.iBpXPg) : f.intl.string(f.t["5TQ+eE"])
+      ineligibleText: p ? m.intl.string(m.t.iBpXPg) : m.intl.string(m.t["5TQ+eE"])
     }]
   }, [t, p, h]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Heading, {
       color: "text-strong",
       variant: "text-md/semibold",
-      children: f.intl.string(f.t["N+GnP2"])
+      children: m.intl.string(m.t["N+GnP2"])
     }), (0, r.jsx)(c.Text, {
       color: "text-subtle",
       variant: "text-sm/medium",
       className: b.bodyText,
-      children: f.intl.format(f.t["Y/jYwu"], {
-        helpdeskArticle: u.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
+      children: m.intl.format(m.t["Y/jYwu"], {
+        helpdeskArticle: u.Z.getArticleURL(f.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(c.njP, {
       selectedItem: t,

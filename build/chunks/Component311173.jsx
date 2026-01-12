@@ -25,17 +25,17 @@ function p(e) {
     errorText: i
   } = e;
   return t ? (0, r.jsx)("div", {
-    className: f.subtext,
+    className: m.subtext,
     children: (0, r.jsx)(s.Text, {
-      className: f.errorSpan,
+      className: m.errorSpan,
       variant: "text-xs/medium",
       color: "text-feedback-critical",
-      children: null != i ? i : m.intl.format(m.t.jKYAPu, {
+      children: null != i ? i : f.intl.format(f.t.jKYAPu, {
         helpArticle: b
       })
     })
   }) : (0, r.jsx)(s.Text, {
-    className: f.subtext,
+    className: m.subtext,
     variant: "text-xs/medium",
     color: "text-muted",
     children: n
@@ -79,7 +79,7 @@ function h(e) {
     v(e)
   }, [v]);
   return (0, r.jsxs)("div", {
-    className: a()(f.keywordsContainer, o),
+    className: a()(m.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: O,
@@ -88,7 +88,7 @@ function h(e) {
       tagErrors: y,
       maxTags: u.VW
     }), (0, r.jsx)(p, {
-      text: m.intl.format(m.t["PGC/AJ"], {
+      text: f.intl.format(f.t["PGC/AJ"], {
         helpArticle: b
       }),
       hasErrors: x.length > 0 || null != h,

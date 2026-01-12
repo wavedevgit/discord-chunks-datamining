@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js");
 
 function N(e) {
-  f.Z.selectRole(e)
+  m.Z.selectRole(e)
 }
 let E = () => {
   let {
@@ -40,7 +40,7 @@ let E = () => {
       if (null == e) return;
       let {
         id: t
-      } = e, n = h.Z.editedRoleIds.map(e => h.Z.getRole(e)).filter(m.lm), r = h.Z.getSortDeltas(), i = null, l = null;
+      } = e, n = h.Z.editedRoleIds.map(e => h.Z.getRole(e)).filter(f.lm), r = h.Z.getSortDeltas(), i = null, l = null;
       h.Z.hasRoleConfigurationChanges && (l = h.Z.editedRoleIdsForConfigurations, i = h.Z.getEditedRoleConnectionConfigurationsMap()), (0, p.Gf)(t, n, r, l, i)
     },
     submitting: t === C.QZA.SUBMITTING,
@@ -61,20 +61,20 @@ function I(e) {
   a()(null != n, "Guild cannot be null here");
   let o = i.useMemo(() => l.find(e => (0, u.fI)(e)), [l]);
   a()(null != o, "Guild must have an everyone role");
-  let m = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
-    f = (0, s.e7)([b.Z], () => b.Z.getSelectedRoleId()),
-    [p, C] = i.useState(m.length > 0);
+  let f = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
+    m = (0, s.e7)([b.Z], () => b.Z.getSelectedRoleId()),
+    [p, C] = i.useState(f.length > 0);
   i.useEffect(() => {
-    C(p || m.length > 0)
-  }, [p, m.length]), (0, d.ZP)(() => {
+    C(p || f.length > 0)
+  }, [p, f.length]), (0, d.ZP)(() => {
     let e = g.Z.getMemberCount(n.id);
     null != e && e <= x.cm && c.Z.requestMembers(n.id, "", 0, false)
   });
   let [E, I] = i.useState(y.ZI.DISPLAY);
   return (i.useEffect(() => {
-    null == f && I(y.ZI.DISPLAY)
-  }, [f]), null != f) ? (0, r.jsx)(j.Z, {
-    editRoleId: f,
+    null == m && I(y.ZI.DISPLAY)
+  }, [m]), null != m) ? (0, r.jsx)(j.Z, {
+    editRoleId: m,
     setEditRoleId: N,
     selectedSection: E,
     setSelectedSection: I
@@ -82,7 +82,7 @@ function I(e) {
     setEditRoleId: N,
     guild: n,
     everyoneRole: o,
-    otherRoles: m,
+    otherRoles: f,
     setSelectedSection: I,
     refToScroller: t
   }) : (0, r.jsx)(v.Z, {

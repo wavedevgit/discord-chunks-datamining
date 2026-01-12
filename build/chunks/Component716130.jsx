@@ -58,7 +58,7 @@ function O(e) {
     guild: t,
     prejoinOnly: n,
     postjoinOnly: l
-  } = e, c = (0, s.e7)([f.Z], () => f.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
+  } = e, c = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
     drag: b,
     drop: j,
     dragSourcePosition: v,
@@ -83,7 +83,7 @@ function O(e) {
     }),
     children: [!l && u.length < p.b3 ? (0, r.jsxs)(o.P3F, {
       className: x.addPrompt,
-      onClick: () => (0, m.tS)(t, [...c, (0, p.yZ)(true)], false),
+      onClick: () => (0, f.tS)(t, [...c, (0, p.yZ)(true)], false),
       children: [(0, r.jsx)(o.oFk, {
         size: "custom",
         color: "currentColor",
@@ -118,7 +118,7 @@ function y(e) {
     postjoinOnly: i,
     includeCount: l,
     singleColumn: a
-  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), y = (0, s.e7)([f.Z], () => f.Z.editedOnboardingPrompts), C = y.filter(e => e.inOnboarding), N = y.filter(e => true !== e.inOnboarding), E = [...C.map(e => ({
+  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), y = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), C = y.filter(e => e.inOnboarding), N = y.filter(e => true !== e.inOnboarding), E = [...C.map(e => ({
     id: e.id,
     data: e
   })), {
@@ -146,7 +146,7 @@ function y(e) {
         numQuestions: p.b3
       })
     });
-    (0, m.tS)(d, [...n, ...r])
+    (0, f.tS)(d, [...n, ...r])
   });
   return null == d ? null : (0, r.jsxs)(r.Fragment, {
     children: [i ? null : (0, r.jsxs)(r.Fragment, {
@@ -187,7 +187,7 @@ function y(e) {
         onPromptDragComplete: _
       }, e.id)), y.length < p.YW ? (0, r.jsxs)(o.P3F, {
         className: x.addPrompt,
-        onClick: () => (0, m.tS)(d, [...y, (0, p.yZ)(false)], false),
+        onClick: () => (0, f.tS)(d, [...y, (0, p.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",

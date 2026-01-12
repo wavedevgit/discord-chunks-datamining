@@ -2,7 +2,7 @@
 /** chunk id: 910494, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk551199 = require("./551199.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   let {
     className: t,
     guildId: n,
-    selectedBadge: m
-  } = e, f = i.useCallback(e => {
+    selectedBadge: f
+  } = e, m = i.useCallback(e => {
     c.Z.updateGuildProfile(n, {
       badge: e
     })
@@ -35,8 +35,8 @@ function m(e) {
       children: (0, r.jsx)(d.g, {
         badgeCollection: p,
         handleBoostUpsellClick: b,
-        onBadgeClicked: f,
-        selectedBadge: m,
+        onBadgeClicked: m,
+        selectedBadge: f,
         headingId: h
       })
     })

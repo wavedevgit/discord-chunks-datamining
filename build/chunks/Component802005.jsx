@@ -2,7 +2,7 @@
 /** chunk id: 802005, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  C: () => m
+  C: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk196961 = require("./196961.js"),
   Chunk203377 = require("./203377.js");
 
-function m() {
+function f() {
   let {
     vanityURLCode: e,
     hasChanges: t,
@@ -25,28 +25,28 @@ function m() {
     hasChanges: d.Z.hasChanges(),
     errorDetails: d.Z.errorDetails
   })), {
-    guild: m,
-    submitting: f,
+    guild: f,
+    submitting: m,
     errors: b,
     hasChanges: p
   } = (0, l.cj)([o.Z], () => o.Z.getProps()), h = i.useMemo(() => null != n ? (0, u.i)(null == n ? true : n.code) : (0, g.LG)(b), [b, n]), x = i.useCallback(async () => {
-    if (null != m && (t && await (0, c.en)(m.id, e, {
+    if (null != f && (t && await (0, c.en)(f.id, e, {
         throwErr: true
       }), p)) {
       let e = {
-        premiumProgressBarEnabled: m.premiumProgressBarEnabled,
-        banner: m.banner,
-        splash: m.splash
+        premiumProgressBarEnabled: f.premiumProgressBarEnabled,
+        banner: f.banner,
+        splash: f.splash
       };
-      await s.Z.saveGuild(m.id, e, {
+      await s.Z.saveGuild(f.id, e, {
         throwErr: true
       })
     }
-  }, [m, p, t, e]), j = i.useCallback(() => {
-    null != m && (s.Z.init(m.id), (0, c.H7)())
-  }, [m]);
+  }, [f, p, t, e]), j = i.useCallback(() => {
+    null != f && (s.Z.init(f.id), (0, c.H7)())
+  }, [f]);
   return (0, r.jsx)(a.Z, {
-    submitting: f,
+    submitting: m,
     errorMessage: h,
     onSave: x,
     onReset: j

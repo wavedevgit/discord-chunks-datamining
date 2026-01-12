@@ -63,7 +63,7 @@ function j(e, t, n) {
   return r.useEffect(() => {
     i.current = n
   }), r.useEffect(() => {
-    (0, m.H)(e, t).catch(i.current)
+    (0, f.H)(e, t).catch(i.current)
   }, [e, t]), x(e, r.useCallback(e => e.roles.includes(t), [t]))
 }
 
@@ -83,13 +83,13 @@ function O(e, t) {
 
 function y(e) {
   switch (e) {
-    case f.ZI.MEMBERS:
+    case m.ZI.MEMBERS:
       return "Members";
-    case f.ZI.PERMISSIONS:
+    case m.ZI.PERMISSIONS:
       return "Permissions";
-    case f.ZI.DISPLAY:
+    case m.ZI.DISPLAY:
       return "Role Settings";
-    case f.ZI.VERIFICATIONS:
+    case m.ZI.VERIFICATIONS:
       return "Connections";
     default:
       (0, d.vE)(e)

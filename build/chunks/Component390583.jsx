@@ -16,7 +16,7 @@ var Chunk723047 = require("./723047.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ function b() {
     children: [(0, r.jsx)(d.p, {
       benefits: n,
       onEdit: function(e) {
-        (0, l.h7j)(i => (0, r.jsx)(c.x3, f(m({}, i), {
+        (0, l.h7j)(i => (0, r.jsx)(c.x3, m(f({}, i), {
           guildId: t,
           omitChannelIds: p,
           initialData: n[e],
@@ -96,7 +96,7 @@ function b() {
       size: 8
     }), (0, r.jsx)(d.s, {
       onClick: function() {
-        (0, l.h7j)(e => (0, r.jsx)(c.x3, f(m({}, e), {
+        (0, l.h7j)(e => (0, r.jsx)(c.x3, m(f({}, e), {
           guildId: t,
           omitChannelIds: p,
           onSave: e => h(e)

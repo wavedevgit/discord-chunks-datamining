@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk796814 = require("./796814.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function m(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function b(e) {
           let {
             CreateEmojiWithRolesModal: l
           } = await n.e("9007").then(n.bind(n, 604623));
-          return n => (0, r.jsx)(l, f(m({}, n), {
+          return n => (0, r.jsx)(l, m(f({}, n), {
             data: e,
             file: i,
             guildId: t.id
@@ -91,7 +91,7 @@ function b(e) {
             let {
               UpdateEmojiRolesModal: i
             } = await n.e("9007").then(n.bind(n, 604623));
-            return n => (0, r.jsx)(i, f(m({}, n), {
+            return n => (0, r.jsx)(i, m(f({}, n), {
               emoji: e,
               guildId: t
             }))

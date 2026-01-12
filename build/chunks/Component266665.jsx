@@ -38,8 +38,8 @@ function w(e) {
   let l, {
       guild: c,
       role: d,
-      highestRole: m,
-      selectedItem: f,
+      highestRole: f,
+      selectedItem: m,
       onClick: b,
       currentPosition: h,
       onDragStart: v,
@@ -47,7 +47,7 @@ function w(e) {
       onDragComplete: y,
       roleStyle: N
     } = e,
-    E = (0, C.T)(c, m, d),
+    E = (0, C.T)(c, f, d),
     I = (0, j.fI)(d),
     _ = null == E && !I,
     w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
@@ -101,7 +101,7 @@ function w(e) {
       [T.dragAfter]: null !== D && h > D
     }),
     id: d.id,
-    selectedItem: f,
+    selectedItem: m,
     itemType: "side",
     onClick: b,
     onContextMenu: function(e) {
@@ -181,7 +181,7 @@ function Z(e) {
       top: Math.max((r - 2) * 34, 0)
     })
   }, [o]);
-  return (0, f.ZP)(() => {
+  return (0, m.ZP)(() => {
     A(n)
   }), i.useEffect(() => {
     o.length > x && A(n), o.length !== x && j(o.length)
@@ -215,7 +215,7 @@ function Z(e) {
           children: (0, r.jsx)(u.P3F, {
             className: T.addRole,
             onClick: () => {
-              m.Z.createRole(t.id), s(I.ZI.DISPLAY)
+              f.Z.createRole(t.id), s(I.ZI.DISPLAY)
             },
             children: (0, r.jsx)(u.qJs, {
               size: "custom",

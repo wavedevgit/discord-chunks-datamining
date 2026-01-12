@@ -36,7 +36,7 @@ function h(e) {
       analyticsLocations: x,
       analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: g.qAy.BUTTON_CTA,
-      perks: (0, m.o9)()
+      perks: (0, f.o9)()
     })
   }, [x, t]), N = i.useCallback(() => {
     var e;
@@ -55,8 +55,8 @@ function h(e) {
         ref: O,
         disabled: !v,
         onChange: y,
-        maxFileSizeBytes: f.B,
-        onFileSizeError: () => (0, s.Z)(f.B),
+        maxFileSizeBytes: m.B,
+        onFileSizeError: () => (0, s.Z)(m.B),
         tabIndex: false,
         "aria-hidden": true
       })

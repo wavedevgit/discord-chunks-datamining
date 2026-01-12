@@ -32,7 +32,7 @@ function y(e) {
   } = e, {
     editingRule: N,
     setEditingRule: E
-  } = (0, f.V)(), {
+  } = (0, m.V)(), {
     guild: I,
     subsection: S
   } = (0, l.cj)([s.Z], () => s.Z.getProps()), _ = null != (n = null != (t = null == I ? true : I.id) ? t : y) ? n : j.lds, T = null != N, [P] = (0, u.RD)(_), {
@@ -94,7 +94,7 @@ function y(e) {
           })
         })]
       })
-    }), P ? (0, r.jsx)(m.Z, {}) : Object.entries(G).map(e => {
+    }), P ? (0, r.jsx)(f.Z, {}) : Object.entries(G).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != Z[t] ? (0, r.jsx)("div", {

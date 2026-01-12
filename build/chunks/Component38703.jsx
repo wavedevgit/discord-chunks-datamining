@@ -51,7 +51,7 @@ function h() {
     x = i.useMemo(() => e.map(e => {
       var t, n;
       return t = p({}, e), n = n = {
-        id: (0, m.a4)(e)
+        id: (0, f.a4)(e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -92,25 +92,25 @@ function h() {
       handleDragComplete: y,
       draggingId: C
     } = (0, s.Z)(x, j),
-    N = e.length < m.yx;
+    N = e.length < f.yx;
   return (0, r.jsxs)("div", {
     className: b.connectionsSection,
     children: [(0, r.jsxs)("div", {
       className: b.connectionsSectionHeader,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/bold",
-        children: f.intl.string(f.t.Cl8F8H)
+        children: m.intl.string(m.t.Cl8F8H)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
-        children: f.intl.format(f.t.vqgyJR, {
+        children: m.intl.format(m.t.vqgyJR, {
           linkedRolesUrl: o.Z.getArticleURL(g.BhN.CONNECTION_DETAILS_ADMIN)
         })
       }), !N && (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: f.intl.format(f.t.Nc7guW, {
-          max: m.yx
+        children: m.intl.format(m.t.Nc7guW, {
+          max: f.yx
         })
       })]
     }), e.length > 0 && (0, r.jsx)("div", {
@@ -136,7 +136,7 @@ function h() {
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "text-brand",
-        children: f.intl.string(f.t["03EqaC"])
+        children: m.intl.string(m.t["03EqaC"])
       })]
     })]
   })

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk365604 = require("./365604.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,14 +54,14 @@ function p(e) {
     rule: h,
     onChangeRule: x
   } = e, j = i.useCallback(e => {
-    x(b(f({}, h), {
-      triggerMetadata: b(f({}, h.triggerMetadata), {
+    x(b(m({}, h), {
+      triggerMetadata: b(m({}, h.triggerMetadata), {
         allowList: e
       })
     }))
   }, [x, h]);
   return (0, r.jsxs)("div", {
-    className: m.cardContentsContainer,
+    className: f.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: g.intl.string(g.t.CX5Yfc),

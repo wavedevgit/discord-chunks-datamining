@@ -52,7 +52,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         null != e && (O.Z.saveGuild(e.id, {
           discoverySplash: e.discoverySplash,
           description: e.description
-        }), (0, f.Vv)({
+        }), (0, m.Vv)({
           guildId: e.id,
           primaryCategoryId: t.primaryCategoryId,
           keywords: t.keywords,
@@ -73,7 +73,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       s = (0, a.e7)([y.Z], () => y.Z.getGuild()),
       [w, Z] = i.useState(false);
     i.useEffect(() => {
-      w || null == s || ((0, f.le)(), (0, f.aC)(s.id), (0, f.i3)(s.id), Z(true))
+      w || null == s || ((0, m.le)(), (0, m.aC)(s.id), (0, m.i3)(s.id), Z(true))
     }, [s, w]);
     let {
       canManageGuild: R
@@ -112,7 +112,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       },
       K = e => {
         let t = () => {
-          (0, f.W1)(s.id, e), e ? (0, f.Vv)({
+          (0, m.W1)(s.id, e), e ? (0, m.Vv)({
             guildId: s.id,
             primaryCategoryId: A.primaryCategoryId,
             keywords: A.keywords,
@@ -123,7 +123,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: A.reasonsToJoin,
             socialLinks: A.socialLinks,
             about: A.about
-          }) : (0, f.Vv)({
+          }) : (0, m.Vv)({
             guildId: s.id,
             primaryCategoryId: A.primaryCategoryId,
             keywords: A.keywords,
@@ -313,7 +313,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       value: A.about,
                       placeholder: _.intl.string(_.t.TduTbs),
                       onChange: e => {
-                        (0, f.mA)(s.id, e)
+                        (0, m.mA)(s.id, e)
                       },
                       minLength: 300,
                       maxLength: 2400,
@@ -351,7 +351,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               let n = [...A.socialLinks],
                                 r = [...H],
                                 i = [...k];
-                              r[t] = e, n[t] = I.z[e].baseUrl, i[t] = true, G(i), W(r), U(i.every(e => true === e)), (0, f.t$)(s.id, n)
+                              r[t] = e, n[t] = I.z[e].baseUrl, i[t] = true, G(i), W(r), U(i.every(e => true === e)), (0, m.t$)(s.id, n)
                             })(e, t),
                             isDisabled: !R
                           }), (0, r.jsx)(d.oil, {
@@ -360,7 +360,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               let n = [...A.socialLinks],
                                 r = n[t],
                                 i = e;
-                              0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, f.t$)(s.id, n))
+                              0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, m.t$)(s.id, n))
                             })("".concat(l).concat(e), t),
                             placeholder: null != l ? true : _.intl.string(_.t.Q6o4pJ),
                             maxLength: 150,
@@ -378,7 +378,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                 let r = [...H];
                                 r.splice(e, 1), W(r);
                                 let i = [...A.socialLinks];
-                                i.splice(e, 1), (0, f.t$)(s.id, i)
+                                i.splice(e, 1), (0, m.t$)(s.id, i)
                               })(t)
                             } : true
                           })]
@@ -394,7 +394,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         onClick: () => {
                           if (A.socialLinks.length < 9) {
                             let e = [...A.socialLinks];
-                            (0, f.t$)(s.id, e.concat("")), W(H.concat(""))
+                            (0, m.t$)(s.id, e.concat("")), W(H.concat(""))
                           }
                         },
                         disabled: !R || A.socialLinks.length >= 9
@@ -419,7 +419,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                   })]
                 }), !A.isPublished && (0, r.jsx)("div", {
                   className: T.checklist,
-                  children: (0, r.jsx)(m.Z, {
+                  children: (0, r.jsx)(f.Z, {
                     title: _.intl.string(_.t["2kCyn/"]),
                     children: q,
                     buttonLabel: _.intl.string(_.t.tVK6S9),

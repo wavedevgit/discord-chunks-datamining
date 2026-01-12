@@ -2,7 +2,7 @@
 /** chunk id: 671066, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,14 +16,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239244 = require("./239244.js");
 
-function m(e) {
+function f(e) {
   var t;
   let {
     action: n,
-    triggerType: m,
-    toggled: f,
+    triggerType: f,
+    toggled: m,
     onToggleAction: b
-  } = e, p = e => () => b(e), h = (0, d.c)(n.type, n, m), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.e7)([c.default, o.Z, s.Z], () => {
+  } = e, p = e => () => b(e), h = (0, d.c)(n.type, n, f), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.e7)([c.default, o.Z, s.Z], () => {
     let e = s.Z.getChannel(x);
     return null == e ? null : (0, a.F6)(e, c.default, o.Z)
   }, [x]);
@@ -51,7 +51,7 @@ function m(e) {
         color: "interactive-text-default",
         variant: "text-xs/medium",
         children: O
-      }), f && (0, r.jsxs)(l.Text, {
+      }), m && (0, r.jsxs)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [null != j && u.intl.format(u.t["8Sr/ar"], {
@@ -68,7 +68,7 @@ function m(e) {
       children: (0, r.jsx)(l.P3F, {
         onClick: h.isEditable ? p(false) : true,
         children: (0, r.jsx)(l.FZ5, {
-          checked: f,
+          checked: m,
           disabled: !h.isEditable
         })
       })

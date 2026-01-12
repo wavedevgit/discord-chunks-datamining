@@ -32,12 +32,12 @@ function j(e) {
     originalVanityURLCode: C,
     errorDetails: N,
     fetched: E
-  } = (0, l.cj)([m.Z], () => ({
-    vanityURLCode: m.Z.vanityURLCode,
-    vanityURLUses: m.Z.vanityURLUses,
-    originalVanityURLCode: m.Z.originalVanityURLCode,
-    errorDetails: m.Z.errorDetails,
-    fetched: m.Z.fetchedVanityURL
+  } = (0, l.cj)([f.Z], () => ({
+    vanityURLCode: f.Z.vanityURLCode,
+    vanityURLUses: f.Z.vanityURLUses,
+    originalVanityURLCode: f.Z.originalVanityURLCode,
+    errorDetails: f.Z.errorDetails,
+    fetched: f.Z.fetchedVanityURL
   })), I = null == t ? true : t.id;
   return (i.useEffect(() => {
     null == I || E || (0, g.U5)(I)
@@ -47,7 +47,7 @@ function j(e) {
       variant: "heading-md/medium",
       color: "text-strong",
       className: x.title,
-      children: [h.intl.string(h.t["5XZKy/"]), (0, r.jsx)(f.xl, {
+      children: [h.intl.string(h.t["5XZKy/"]), (0, r.jsx)(m.xl, {
         guild: t
       })]
     }), (0, r.jsx)(a.Text, {

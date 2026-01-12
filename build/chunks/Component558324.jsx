@@ -16,8 +16,8 @@ let o = e => {
       value: d,
       onRemoveTag: u,
       onAddTag: g,
-      onAddTagError: m,
-      maxTaxLength: f,
+      onAddTagError: f,
+      maxTaxLength: m,
       maxTags: b,
       disabled: p,
       placeholder: h
@@ -41,12 +41,12 @@ let o = e => {
     let e = j.trim();
     if (0 !== e.length) {
       if (null != b && o.length >= b) {
-        null == m || m(s.intl.string(s.t.Xx7XeB));
+        null == f || f(s.intl.string(s.t.Xx7XeB));
         return
       }
       g(e), v("")
     }
-  }, [j, b, g, m, o.length]), y = i.useCallback(e => {
+  }, [j, b, g, f, o.length]), y = i.useCallback(e => {
     switch (e.key) {
       case a.vn.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
@@ -85,7 +85,7 @@ let o = e => {
     value: j,
     onKeyDown: y,
     onChange: v,
-    maxLength: f,
+    maxLength: m,
     disabled: p,
     onBlur: O,
     placeholder: h

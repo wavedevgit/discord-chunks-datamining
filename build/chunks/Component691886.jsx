@@ -71,8 +71,8 @@ function C(e) {
   } = e, i = (0, p.m7)(n), l = (0, p.m7)(null != (t = null == i ? true : i.parent_id) ? t : h.lds);
   if (null == i) return null;
   let a = (0, u.KS)(i),
-    s = (0, d.F6)(i, b.default, f.Z),
-    o = null != l ? (0, d.F6)(l, b.default, f.Z) : true;
+    s = (0, d.F6)(i, b.default, m.Z),
+    o = null != l ? (0, d.F6)(l, b.default, m.Z) : true;
   return (0, r.jsx)(O, {
     icon: null != a && (0, r.jsx)(a, {
       className: j.labelIcon
@@ -100,7 +100,7 @@ function E(e) {
     omitChannelIds: j,
     "aria-labelledby": O,
     onChange: y
-  } = e, C = x.intl.string(x.t.d7YJMK), E = (0, s.e7)([m.Z], () => m.Z.getCategories(l), [l]), I = (0, p.m7)(null != a ? a : h.lds), S = i.useMemo(() => {
+  } = e, C = x.intl.string(x.t.d7YJMK), E = (0, s.e7)([f.Z], () => f.Z.getCategories(l), [l]), I = (0, p.m7)(null != a ? a : h.lds), S = i.useMemo(() => {
     let e = [{
         value: null,
         label: C
@@ -112,7 +112,7 @@ function E(e) {
         }
         of E[n.channel.id])((0, g.r8)(r.type) || (0, g.bw)(r.type)) && (r.id !== a && (null == j ? true : j.has(r.id)) && (r.id !== u || a === u) || (a === r.id && (t = true), e.push({
         value: r.id,
-        label: (0, d.F6)(r, b.default, f.Z)
+        label: (0, d.F6)(r, b.default, m.Z)
       })));
     return null == a || t || null == I || e.push({
       value: a,

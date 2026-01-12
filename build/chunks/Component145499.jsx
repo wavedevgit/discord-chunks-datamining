@@ -190,7 +190,7 @@ let T = e => {
           et = () => {
             var e, n;
             let r;
-            return e = Math.max(1, E.oCV[O.tier] - j), n = O.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.AnalyticsObjectTypes.TIER_1 : n === E.Eu4.TIER_2 ? r = E.AnalyticsObjectTypes.TIER_2 : n === E.Eu4.TIER_3 && (r = E.AnalyticsObjectTypes.TIER_3), (0, f.Z)({
+            return e = Math.max(1, E.oCV[O.tier] - j), n = O.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.AnalyticsObjectTypes.TIER_1 : n === E.Eu4.TIER_2 ? r = E.AnalyticsObjectTypes.TIER_2 : n === E.Eu4.TIER_3 && (r = E.AnalyticsObjectTypes.TIER_3), (0, m.Z)({
               analyticsLocations: u,
               analyticsLocation: {
                 page: E.ZY5.GUILD_SETTINGS,
@@ -209,7 +209,7 @@ let T = e => {
         }, ee = S.intl.string(S.t.g7lkrU), t.premiumTier + 1 !== O.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJR)));
         let er = z === T + 1 && z > Z,
           ei = V || er || T > Z;
-        return er ? g = (0, r.jsx)(m.Z, {
+        return er ? g = (0, r.jsx)(f.Z, {
           guild: t,
           size: o.zx.Sizes.SMALL,
           color: o.zx.Colors.GREEN,

@@ -105,24 +105,24 @@ let Z = "dismissedCommunityFeaturesUpsell",
           width: 60,
           className: P.upsellImage
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(f.Heading, {
+          children: [(0, r.jsx)(m.Heading, {
             variant: "heading-md/semibold",
             className: P.upsellHeader,
             children: T.intl.string(T.t["pR/Bge"])
-          }), (0, r.jsx)(f.Text, {
+          }), (0, r.jsx)(m.Text, {
             variant: "text-sm/normal",
             children: T.intl.string(T.t["V+Yo1l"])
           })]
         })]
-      }), (0, r.jsx)(m.zx, {
+      }), (0, r.jsx)(f.zx, {
         "aria-label": T.intl.string(T.t.cpT0Cq),
-        look: m.zx.Looks.BLANK,
-        size: m.zx.Sizes.NONE,
+        look: f.zx.Looks.BLANK,
+        size: f.zx.Sizes.NONE,
         className: P.upsellClose,
         onClick: () => {
           o.K.set(Z, true), d(true)
         },
-        children: (0, r.jsx)(f.Dio, {
+        children: (0, r.jsx)(m.Dio, {
           size: "md",
           color: "currentColor"
         })
@@ -131,7 +131,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         children: [O && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: P.upsellButton,
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "primary",
             size: "sm",
             text: T.intl.string(T.t.iF1Asi),
@@ -140,7 +140,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: P.upsellButton,
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "primary",
             size: "sm",
             text: T.intl.string(T.t["S/Dfid"]),
@@ -151,7 +151,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), t ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: P.upsellButton,
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "secondary",
             size: "sm",
             text: T.intl.string(T.t["0kmJdw"]),
@@ -162,7 +162,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: P.upsellButton,
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "secondary",
             size: "sm",
             text: T.intl.string(T.t.BQIYTb),
@@ -185,7 +185,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       })),
       s = (0, a.e7)([x.ZP], () => null != e ? x.ZP.getChannels(e.id) : null),
       c = i.useMemo(S.jb, []),
-      m = true !== o.K.get(Z);
+      f = true !== o.K.get(Z);
     if (null == e) return null;
     let b = [];
     null != s && s[x.sH].forEach(e => {
@@ -211,12 +211,12 @@ let Z = "dismissedCommunityFeaturesUpsell",
           description: e
         })
       };
-    return (0, r.jsxs)(f.Kqy, {
+    return (0, r.jsxs)(m.Kqy, {
       gap: 24,
-      children: [(0, r.jsx)(f.Heading, {
+      children: [(0, r.jsx)(m.Heading, {
         variant: "heading-lg/semibold",
         children: T.intl.string(T.t.nRtNqn)
-      }), m ? (0, r.jsx)(D, {
+      }), f ? (0, r.jsx)(D, {
         discoveryEnabled: e.features.has(_.GuildFeatures.DISCOVERABLE),
         onboardingEnabled: e.features.has(_.GuildFeatures.GUILD_ONBOARDING),
         guild: e
@@ -232,7 +232,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !t
-      }), (0, r.jsx)(f.izJ, {}), (0, r.jsx)(d.d, {
+      }), (0, r.jsx)(m.izJ, {}), (0, r.jsx)(d.d, {
         layout: "horizontal-responsive",
         label: T.intl.string(T.t.vAyDGU),
         description: T.intl.string(T.t.ZFeonu),
@@ -244,7 +244,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !n
-      }), (0, r.jsx)(f.izJ, {}), (0, r.jsx)(d.d, {
+      }), (0, r.jsx)(m.izJ, {}), (0, r.jsx)(d.d, {
         layout: "horizontal-responsive",
         label: T.intl.string(T.t.sMkYE8),
         description: T.intl.string(T.t.htioQo),
@@ -256,7 +256,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !t
-      }), (0, r.jsx)(f.izJ, {}), (0, r.jsx)(d.d, {
+      }), (0, r.jsx)(m.izJ, {}), (0, r.jsx)(d.d, {
         layout: "horizontal-responsive",
         label: T.intl.string(T.t.pO60fy),
         description: T.intl.string(T.t.aIR73T),
@@ -268,9 +268,9 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !t
-      }), (0, r.jsx)(f.izJ, {}), (() => {
+      }), (0, r.jsx)(m.izJ, {}), (() => {
         var n;
-        if (null != e) return (0, r.jsx)(f.Kx8, {
+        if (null != e) return (0, r.jsx)(m.Kx8, {
           label: T.intl.string(T.t["RSfm+i"]),
           description: T.intl.string(T.t["/B6PRw"]),
           value: null != (n = e.description) ? n : "",
@@ -279,14 +279,14 @@ let Z = "dismissedCommunityFeaturesUpsell",
           maxLength: l.Us,
           disabled: !t
         })
-      })(), (0, r.jsx)(f.izJ, {}), (0, r.jsx)(f.gNt, {
+      })(), (0, r.jsx)(m.izJ, {}), (0, r.jsx)(m.gNt, {
         label: T.intl.string(T.t.c1BmbC),
         description: T.intl.string(T.t.aQzVF8),
         layout: "horizontal",
         children: (0, r.jsx)(g.u, {
           text: n ? null : T.intl.string(T.t["pjG+T3"]),
           "aria-label": n ? true : T.intl.string(T.t["pjG+T3"]),
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "critical-primary",
             size: "sm",
             text: T.intl.string(T.t.c1BmbC),

@@ -69,9 +69,9 @@ function x(e) {
       })]
     }), (0, r.jsx)(g.Z, {
       priceTiers: S
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(f.Z, {
       allSubscriptionListings: x
-    }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(u.Z, {
+    }), (0, r.jsx)(m.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(u.Z, {
       onDeleteEditState: C
     })]
   })

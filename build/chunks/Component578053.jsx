@@ -25,7 +25,7 @@ let x = "NO_CHANNEL";
 function j(e) {
   return {
     value: e.id,
-    label: (0, d.F6)(e, b.default, f.Z),
+    label: (0, d.F6)(e, b.default, m.Z),
     channel: e,
     category: g.Z.getChannel(e.parent_id)
   }
@@ -52,7 +52,7 @@ function O(e) {
     guildId: n,
     afkChannelId: s,
     label: o
-  } = e, d = (0, a.e7)([m.Z], () => m.Z.getCategories(n)), u = i.useMemo(() => {
+  } = e, d = (0, a.e7)([f.Z], () => f.Z.getCategories(n)), u = i.useMemo(() => {
     let e = (0, c.Z)(d._categories, d).filter(e => {
       let {
         channel: t
@@ -91,7 +91,7 @@ function y(e) {
     label: o,
     description: d,
     layout: u
-  } = e, g = (0, a.e7)([m.Z], () => m.Z.getCategories(n)), f = i.useMemo(() => {
+  } = e, g = (0, a.e7)([f.Z], () => f.Z.getCategories(n)), m = i.useMemo(() => {
     let e = (0, c.Z)(g._categories, g).filter(e => {
       let {
         channel: t
@@ -118,7 +118,7 @@ function y(e) {
     description: d,
     layout: u,
     value: null != s ? s : x,
-    options: f,
+    options: m,
     canManageGuild: t,
     onChange: b
   })

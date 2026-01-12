@@ -56,7 +56,7 @@ function x() {
     guildId: t
   } = (0, o.N)(), [x, j] = c.XZ(e, t), v = (0, u.Z)(t, e), {
     setCurrentTab: O
-  } = (0, f.dw)(), y = () => O(f.ue.EMOJIS), C = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), N = null != C ? (0, d.Z)(C) : true;
+  } = (0, m.dw)(), y = () => O(m.ue.EMOJIS), C = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), N = null != C ? (0, d.Z)(C) : true;
 
   function E(e) {
     null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
@@ -76,7 +76,7 @@ function x() {
       handleTransitionToManageEmoji: y
     }),
     disabled: S,
-    children: [(0, r.jsx)(m.E, {
+    children: [(0, r.jsx)(f.E, {
       tierEmojiIds: x,
       guildId: t,
       onRemoveEmoji: function(e) {

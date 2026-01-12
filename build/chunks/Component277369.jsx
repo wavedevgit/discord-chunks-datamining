@@ -19,8 +19,8 @@ function g(e) {
   let {
     guildId: t,
     application: g
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), f = (0, i.e7)([c.default], () => c.default.getCurrentUser()), b = (0, d.mY)();
-  if (null == m || !(0, s.eM)(m, f)) return null;
+  } = e, f = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), m = (0, i.e7)([c.default], () => c.default.getCurrentUser()), b = (0, d.mY)();
+  if (null == f || !(0, s.eM)(f, m)) return null;
   let p = g.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.Text, {

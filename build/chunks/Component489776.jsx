@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk402766 = require("./402766.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,13 +60,13 @@ function p(e) {
   } = c.I6[n], C = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [N, E] = i.useState(C ? v : h), I = (0, s.q_F)({
     opacity: +!C,
     pointerEvents: C ? "none" : "all",
-    config: b(f({}, l.config.stiff), {
+    config: b(m({}, l.config.stiff), {
       clamp: true
     })
   }), S = (0, s.q_F)({
     opacity: +!!C,
     pointerEvents: C ? "all" : "none",
-    config: b(f({}, l.config.stiff), {
+    config: b(m({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {
@@ -77,22 +77,22 @@ function p(e) {
     }
   });
   return null == v || C ? (0, r.jsxs)("div", {
-    className: m.mainRuleContainer,
+    className: f.mainRuleContainer,
     style: {
       height: C ? "auto" : "60px"
     },
     children: [(0, r.jsx)(l.animated.div, {
-      className: m.animatedRuleCardContainer,
+      className: f.animatedRuleCardContainer,
       style: S,
       children: (0, r.jsx)(u.Z, {
         rule: N,
         persistEdit: x
       })
     }), (0, r.jsx)(l.animated.div, {
-      className: m.animatedNewRuleContainer,
+      className: f.animatedNewRuleContainer,
       style: I,
       children: (0, r.jsxs)(s.P3F, {
-        className: m.addAnotherRuleCardContainer,
+        className: f.addAnotherRuleCardContainer,
         onClick: () => {
           O(t, n)
         },
@@ -101,7 +101,7 @@ function p(e) {
           width: 20,
           height: 20,
           color: a.Z.unsafe_rawColors.BLUE_345.css,
-          className: m.plusIcon
+          className: f.plusIcon
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "text-link",

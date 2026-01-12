@@ -34,14 +34,14 @@ let S = function() {
   } = (0, c.ZP)(o.Z.GUILD_SETTINGS_PROFILE_PAGE), t = (0, l.e7)([b.Z], () => b.Z.getGuild(), []), n = null == t ? true : t.id, {
     fetchGuildProfile: S,
     fetchStatus: _
-  } = (0, u.u)(null == t ? true : t.id), T = (0, l.e7)([b.Z], () => b.Z.getGuildProfile(), []), P = (0, l.e7)([m.Z], () => m.Z.can(N.Plq.MANAGE_GUILD, t)), w = i.useCallback(e => {
-    null != n && (f.Z.updateGuild({
+  } = (0, u.u)(null == t ? true : t.id), T = (0, l.e7)([b.Z], () => b.Z.getGuildProfile(), []), P = (0, l.e7)([f.Z], () => f.Z.can(N.Plq.MANAGE_GUILD, t)), w = i.useCallback(e => {
+    null != n && (m.Z.updateGuild({
       icon: e
-    }), f.Z.updateGuildProfile(n, {
+    }), m.Z.updateGuildProfile(n, {
       icon: e
     }))
   }, [n]), Z = i.useCallback(e => {
-    null != n && f.Z.updateGuildProfile(n, {
+    null != n && m.Z.updateGuildProfile(n, {
       customBanner: e
     })
   }, [n]);

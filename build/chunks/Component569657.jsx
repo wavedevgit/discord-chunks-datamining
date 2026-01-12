@@ -31,7 +31,7 @@ function N(e) {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, f.wE)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+    (0, m.wE)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
       dismissAction: O.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
@@ -172,7 +172,7 @@ function E(e) {
         return e = t, n = {
           migratePin: s && !l,
           migrateSlowmode: c && !a
-        }, void m.Z.show({
+        }, void f.Z.show({
           title: y.intl.string(y.t.fM5aQ2),
           body: y.intl.format(y.t.rLbJs6, {
             guildName: e.name
@@ -210,7 +210,7 @@ async function S(e, t) {
   try {
     await j.Z.migratePermissions(e, t)
   } catch (e) {
-    m.Z.show({
+    f.Z.show({
       title: y.intl.string(y.t.R0RpRX),
       body: y.intl.string(y.t["58yMLG"]),
       confirmVariant: "secondary"

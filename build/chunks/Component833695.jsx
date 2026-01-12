@@ -34,7 +34,7 @@ function v(e) {
   var t, n, s;
   let {
     guildId: b
-  } = e, v = (0, p.Z)(b), O = (0, a.f3)(), y = (0, i.e7)([f.Z], () => f.Z.getGuild());
+  } = e, v = (0, p.Z)(b), O = (0, a.f3)(), y = (0, i.e7)([m.Z], () => m.Z.getGuild());
   return v.loading || null == y ? (0, r.jsx)(l.$jN, {}) : null == v.application ? (0, r.jsx)(u.Z, {
     guild: y
   }) : (0, r.jsxs)(d.Z, {
@@ -65,7 +65,7 @@ function v(e) {
       })
     }), (0, r.jsx)(l.gNt, {
       label: x.intl.string(x.t["0n7R2X"]),
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(f.Z, {
         guildId: b,
         allPeriods: v.payoutsByPeriod
       })

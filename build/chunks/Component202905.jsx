@@ -46,9 +46,9 @@ function v(e) {
   } = e, {
     guild: n,
     guildProfile: v
-  } = (0, s.cj)([m.Z], () => ({
-    guild: m.Z.getGuild(),
-    guildProfile: m.Z.getGuildProfile()
+  } = (0, s.cj)([f.Z], () => ({
+    guild: f.Z.getGuild(),
+    guildProfile: f.Z.getGuildProfile()
   })), O = null == n ? true : n.id, y = (0, s.e7)([c.Z], () => c.Z.get(O)), {
     fetchGuildProfile: C
   } = (0, d.u)(O), N = (null == v ? true : v.visibility) == null || !l.Y.VISIBLE.has(null == v ? true : v.visibility), E = (null == v ? true : v.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
@@ -83,7 +83,7 @@ function v(e) {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: x.form,
-      children: null != T ? (0, r.jsx)(f.y, {
+      children: null != T ? (0, r.jsx)(m.y, {
         guild: n,
         formFields: T
       }) : (0, r.jsx)(o.$jN, {})

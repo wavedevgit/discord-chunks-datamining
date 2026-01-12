@@ -59,10 +59,10 @@ function C(e) {
   let {
     rule: t,
     triggerType: n
-  } = e, l = i.useMemo(() => null == t ? (0, m.V9)(n).map(e => (0, r.jsx)(p.Z, {
+  } = e, l = i.useMemo(() => null == t ? (0, f.V9)(n).map(e => (0, r.jsx)(p.Z, {
     actionType: e,
     triggerType: n
-  }, e)) : (0, m.V9)(n).reduce((e, i) => {
+  }, e)) : (0, f.V9)(n).reduce((e, i) => {
     var l;
     let a = t.actions.find(e => {
       let {
@@ -155,9 +155,9 @@ function I(e) {
 }
 
 function S(e) {
-  return (0, m.r5)(e, m.vT.ALPHA) ? (0, r.jsx)(c.Z, {
+  return (0, f.r5)(e, f.vT.ALPHA) ? (0, r.jsx)(c.Z, {
     className: v.alphaBetaTag
-  }) : (0, m.r5)(e, m.vT.BETA) ? (0, r.jsx)(d.Z, {
+  }) : (0, f.r5)(e, f.vT.BETA) ? (0, r.jsx)(d.Z, {
     className: v.alphaBetaTag
   }) : null
 }
@@ -169,8 +169,8 @@ function _(e) {
     onContextMenu: o
   } = e, c = (0, b.w)(t.triggerType, t), {
     isLoading: d,
-    saveRule: m
-  } = (0, f.w)(), {
+    saveRule: f
+  } = (0, m.w)(), {
     updateRule: p
   } = (0, g.pH)(t.guildId), [h, x] = i.useState(t.enabled), I = (0, l.throttle)(async () => {
     if (!d) {
@@ -178,7 +178,7 @@ function _(e) {
         enabled: !h
       });
       x(!h);
-      let n = await m(e, []);
+      let n = await f(e, []);
       null != n && (p(n), x(n.enabled))
     }
   }, 300);
@@ -310,11 +310,11 @@ function P(e) {
         rule: t
       }, n))
     }))
-  }, m = (0, r.jsx)(T, {
+  }, f = (0, r.jsx)(T, {
     triggerType: i,
     onSetupRule: d
   });
-  return null == t || c || (m = l ? (0, r.jsx)(I, {
+  return null == t || c || (f = l ? (0, r.jsx)(I, {
     rule: t,
     onChangeRule: u,
     onContextMenu: g
@@ -325,6 +325,6 @@ function P(e) {
   })), (0, r.jsx)(s.P3F, {
     className: v.mainContainer,
     onContextMenu: g,
-    children: m
+    children: f
   })
 }

@@ -78,8 +78,8 @@ function E(e) {
         })
       }), (0, r.jsx)("div", {
         className: v.section,
-        children: (0, r.jsx)(f.Z, {})
-      }), (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(m.Z, {})
+      }), (0, r.jsx)(f.Z, {
         guildId: t.id
       }), (0, r.jsx)("div", {
         className: v.sectionSeparator

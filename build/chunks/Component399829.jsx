@@ -46,7 +46,7 @@ class w extends Chunk473749.Component {
     let {
       guildId: e
     } = this.props;
-    null != e && (0, m.C0)(e), window.addEventListener("resize", this.measure)
+    null != e && (0, f.C0)(e), window.addEventListener("resize", this.measure)
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.measure)
@@ -184,7 +184,7 @@ class w extends Chunk473749.Component {
     }), T(this, "renderSubscriber", (e, t, n) => {
       var i;
       return null == e ? null : (0, r.jsx)(d.u, {
-        __unsupportedReactNodeAsText: (0, r.jsx)(f.Z, {
+        __unsupportedReactNodeAsText: (0, r.jsx)(m.Z, {
           user: e.user,
           nick: e.nick
         }),
@@ -208,7 +208,7 @@ class w extends Chunk473749.Component {
           className: _.avatar
         }), (0, r.jsx)("div", {
           className: _.subscribersPopoutUsername,
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(m.Z, {
             user: e.user,
             nick: e.nick
           })

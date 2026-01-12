@@ -19,13 +19,13 @@ let g = Chunk473749.memo(function(e) {
     persistEdit: n = false,
     initWithEdit: g = false
   } = e, {
-    hasChanges: m,
-    editingRule: f,
+    hasChanges: f,
+    editingRule: m,
     createNewEditingRule: b,
     setEditingRule: p
   } = (0, s.V)(), {
     isLoading: h
-  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == f ? true : f.id) === t.id || n, v = (0, a.U)(null == t ? true : t.id), O = j && null != f ? f : t, y = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), C = i.useCallback(() => {
+  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == m ? true : m.id) === t.id || n, v = (0, a.U)(null == t ? true : t.id), O = j && null != m ? m : t, y = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), C = i.useCallback(() => {
     b(t.guildId, t.triggerType)
   }, [t.guildId, t.triggerType, b]), N = i.useCallback(e => {
     h || p(e, true)
@@ -34,10 +34,10 @@ let g = Chunk473749.memo(function(e) {
     g && p(t, true)
   }, [g, t, p]);
   let E = i.useCallback(() => {
-    j ? m || p(null) : m ? y(() => {
+    j ? f || p(null) : f ? y(() => {
       p(t)
     }) : p(t)
-  }, [j, m, y, t, p]);
+  }, [j, f, y, t, p]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
       rule: O,
@@ -48,7 +48,7 @@ let g = Chunk473749.memo(function(e) {
       onChangeRule: N,
       onSetupRule: C
     }),
-    isStuck: j && m,
+    isStuck: j && f,
     isExpanded: j,
     onExpand: E,
     children: j && (0, r.jsx)(c.Z, {
