@@ -270,18 +270,15 @@ let $ = Chunk473749.memo(function(e) {
     }, [g, v, t, j, h]), H = y === V.d$.ORDER_BY_GUILD_JOINED_AT_ASC, w = y === V.d$.ORDER_BY_USER_ID_ASC || y === V.d$.ORDER_BY_USER_ID_DESC;
     return (0, r.jsxs)(r.Fragment, {
       children: [x && (0, r.jsx)("td", {
-        children: (0, r.jsx)("div", {
-          className: Y.xsmallCol,
-          children: (0, r.jsx)(C.u, {
-            shouldShow: !v,
-            ariaHidden: v,
-            text: z.intl.string(z.t["Se4c7+"]),
-            children: (0, r.jsx)(m.P3F, {
-              onClick: O,
-              children: (0, r.jsx)(m.FZ5, {
-                checked: h.has(t.userId),
-                disabled: !v
-              })
+        children: (0, r.jsx)(C.u, {
+          shouldShow: !v,
+          ariaHidden: v,
+          text: z.intl.string(z.t["Se4c7+"]),
+          children: (0, r.jsx)(m.P3F, {
+            onClick: O,
+            children: (0, r.jsx)(m.FZ5, {
+              checked: h.has(t.userId),
+              disabled: !v
             })
           })
         })
