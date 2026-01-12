@@ -1,14 +1,13 @@
 /** Chunk was on 86948 **/
-/** chunk id: 153241, original params: e,t,n (module,exports,require) **/
+/** chunk id: 153241, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => C
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk794433 = require("./794433.jsx"),
   Chunk480466 = require("./480466.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
@@ -26,170 +25,177 @@ var Chunk54381 = require("./54381.js"),
   Chunk992909 = require("./992909.js"),
   Chunk135471 = require("./135471.js");
 
-function S(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function _(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return r
+  })(Object(t)).forEach(function(r) {
+    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
 
-function x(e, t) {
+function I(e, t) {
   if (null == e) return {};
-  var n, r, s = function(e, t) {
+  var r, n, s = function(e, t) {
     if (null == e) return {};
-    var n, r, s = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+    var r, n, s = {},
+      i = Object.keys(e);
+    for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (s[r] = e[r]);
     return s
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+    var i = Object.getOwnPropertySymbols(e);
+    for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r])
   }
   return s
 }
-let C = e => {
+let E = e => {
     var {
       onInvite: t,
-      onClose: n,
-      subscriptionId: u
-    } = e, p = x(e, ["onInvite", "onClose", "subscriptionId"]);
-    let [g, m] = s.useState([]), [j, C] = s.useState(""), N = (0, c.Z)(j, 400), I = (0, a.e7)([b.Z], () => b.Z.getNumAvailableInvites());
+      onClose: r,
+      subscriptionId: c
+    } = e, u = I(e, ["onInvite", "onClose", "subscriptionId"]);
+    let [p, h] = s.useState([]), [x, E] = s.useState(""), N = (0, o.Z)(x, 400), C = (0, a.e7)([m.Z], () => m.Z.getNumAvailableInvites());
     s.useEffect(() => {
-      f.default.track(E.rMx.PREMIUM_GROUP_INVITE_FRIENDS_MODAL_VIEWED)
+      d.default.track(y.rMx.PREMIUM_GROUP_INVITE_FRIENDS_MODAL_VIEWED)
     }, []);
     let {
       eligibleUsers: w,
-      getNextRows: D,
-      hasError: k,
-      isFetching: M
-    } = (0, v.Z)({
-      subscriptionId: u,
+      getNextRows: M,
+      hasError: R,
+      isFetching: k
+    } = (0, g.Z)({
+      subscriptionId: c,
       searchQuery: N
-    }), [T, U] = s.useState(false);
-    return k ? (0, r.jsx)(l.Modal, S({
+    }), [U, T] = s.useState(false), Z = s.useCallback(e => {
+      h(t => t.filter(t => !e.has(t.id)))
+    }, [h]), D = s.useMemo(() => p.map(e => ({
+      id: e.id,
+      label: f.ZP.getName(e)
+    })), [p]);
+    return R ? (0, n.jsx)(i.Modal, _({
       size: "sm",
-      title: P.intl.string(O.default["54lM5y"]),
-      subtitle: P.intl.string(O.default.zrtwpV),
-      onClose: n,
+      title: S.intl.string(O.default["54lM5y"]),
+      subtitle: S.intl.string(O.default.zrtwpV),
+      onClose: r,
       actions: []
-    }, p)) : 0 !== w.length || M || 0 !== N.length ? (0, r.jsx)(l.Modal, _(S({
+    }, u)) : 0 !== w.length || k || 0 !== N.length ? (0, n.jsx)(i.Modal, P(_({
       size: "md",
-      title: P.intl.string(O.default["Um/7BM"]),
-      subtitle: P.intl.format(O.default.qSWXaf, {
-        totalSeats: y.v$,
-        premiumGroupProductName: (0, y.sO)(),
-        helpCenterLink: y.j3
+      title: S.intl.string(O.default["Um/7BM"]),
+      subtitle: S.intl.format(O.default.qSWXaf, {
+        totalSeats: v.v$,
+        premiumGroupProductName: (0, v.sO)(),
+        helpCenterLink: v.j3
       }),
-      onClose: n,
-      input: (0, r.jsx)(o.Z, {
-        className: R.searchbar,
-        size: o.Z.Sizes.MEDIUM,
-        tags: g.map(e => h.ZP.getName(e)),
-        placeholder: 0 === g.length ? P.intl.string(O.default.wRS8vo) : "",
-        query: j,
-        onRemoveTag: e => {
-          m(t => t.filter((t, n) => n !== e))
-        },
-        onQueryChange: C,
-        onClear: () => C("")
+      onClose: r,
+      input: (0, n.jsx)("div", {
+        className: j.searchbar,
+        children: (0, n.jsx)(l.oil, {
+          value: x,
+          onChange: E,
+          placeholder: 0 === p.length ? S.intl.string(O.default.wRS8vo) : "",
+          leading: D.length > 0 ? {
+            type: "tags",
+            label: S.intl.string(O.default["Um/7BM"]),
+            items: D,
+            onRemove: Z
+          } : true
+        })
       }),
       actions: [],
       actionBarInput: (() => {
         let e = N.length > 0 && 0 === w.length;
-        return (0, r.jsx)(i.Button, {
+        return (0, n.jsx)(l.Button, {
           variant: "primary",
-          disabled: 0 === g.length && !e || T,
-          text: P.intl.string(O.default["5fZHp3"]),
+          disabled: 0 === p.length && !e || U,
+          text: S.intl.string(O.default["5fZHp3"]),
           size: "md",
           fullWidth: true,
           onClick: async () => {
-            if (e) return void n();
-            f.default.track(E.rMx.PREMIUM_GROUP_INVITE_FRIENDS_CTA_CLICKED, {
-              invited_user_ids: g.map(e => e.id)
-            }), U(true), await t(g), U(false)
+            if (e) return void r();
+            d.default.track(y.rMx.PREMIUM_GROUP_INVITE_FRIENDS_CTA_CLICKED, {
+              invited_user_ids: p.map(e => e.id)
+            }), T(true), await t(p), T(false)
           }
         })
       })()
-    }, p), {
-      children: (0, r.jsx)(d.Z, {
+    }, u), {
+      children: (0, n.jsx)(b.Z, {
         users: w,
-        isUserSelected: e => g.some(t => t.id === e.id),
+        isUserSelected: e => p.some(t => t.id === e.id),
         onSelectionChange: (e, t) => {
-          m(n => t ? [...n, e] : n.filter(t => t.id !== e.id))
+          h(r => t ? [...r, e] : r.filter(t => t.id !== e.id))
         },
-        isUserDisabled: e => g.length >= I && !g.some(t => t.id === e.id),
-        isFetching: M,
-        onFetchMore: D,
+        isUserDisabled: e => p.length >= C && !p.some(t => t.id === e.id),
+        isFetching: k,
+        onFetchMore: M,
         searchQuery: N,
         emptySearchContent: {
-          header: P.intl.string(O.default.gaamNe),
-          body: P.intl.string(O.default.nQcM39)
+          header: S.intl.string(O.default.gaamNe),
+          body: S.intl.string(O.default.nQcM39)
         },
-        className: R.list
+        className: j.list
       })
-    })) : (0, r.jsx)(l.Modal, S({
+    })) : (0, n.jsx)(i.Modal, _({
       size: "sm",
-      title: P.intl.string(O.default.ONaJLH),
-      subtitle: P.intl.format(O.default["0LHbPc"], {
-        helpCenterLink: y.j3
+      title: S.intl.string(O.default.ONaJLH),
+      subtitle: S.intl.format(O.default["0LHbPc"], {
+        helpCenterLink: v.j3
       }),
-      onClose: n,
+      onClose: r,
       actions: []
-    }, p))
+    }, u))
   },
   N = e => {
     var {
       onClose: t,
-      inviteUsersResult: n
-    } = e, s = x(e, ["onClose", "inviteUsersResult"]);
-    return (0, r.jsx)(l.ExpressiveModal, _(S({
+      inviteUsersResult: r
+    } = e, s = I(e, ["onClose", "inviteUsersResult"]);
+    return (0, n.jsx)(i.ExpressiveModal, P(_({
       graphic: {
         type: "image",
-        src: j.Z
+        src: x.Z
       },
       gradientColor: "nitro-pink",
-      title: P.intl.formatToPlainString(O.default.MIiPur, {
-        premiumGroupProductName: (0, y.sO)(),
-        sentCount: n.filter(e => e.isSuccess).length
+      title: S.intl.formatToPlainString(O.default.MIiPur, {
+        premiumGroupProductName: (0, v.sO)(),
+        sentCount: r.filter(e => e.isSuccess).length
       }),
-      subtitle: P.intl.format(O.default.olkQkj, {
+      subtitle: S.intl.format(O.default.olkQkj, {
         onClick: () => {
-          t(), (0, p.openUserSettings)(u.n.SUBSCRIPTIONS_PANEL, {
-            section: E.oAB.SUBSCRIPTIONS
+          t(), (0, u.openUserSettings)(c.n.SUBSCRIPTIONS_PANEL, {
+            section: y.oAB.SUBSCRIPTIONS
           })
         }
       }),
       onClose: t
     }, s), {
-      children: (0, r.jsx)("div", {
-        className: R.inviteUsersResultContainer,
-        children: n.map(e => (0, r.jsx)(m.J, {
+      children: (0, n.jsx)("div", {
+        className: j.inviteUsersResultContainer,
+        children: r.map(e => (0, n.jsx)(h.J, {
           recipient: e.user,
           isSuccess: e.isSuccess,
           onClose: t
@@ -197,19 +203,19 @@ let C = e => {
       })
     }))
   },
-  I = e => {
+  C = e => {
     var {
       subscription: t
-    } = e, n = x(e, ["subscription"]);
-    let [l, a] = s.useState([]), [i, o] = s.useState(1), c = async e => {
-      let n = new Map,
-        r = [];
-      for (let t of e) n.set(t.id, t), r.push(t.id);
-      let s = await (0, g.cD)(t.id, r);
+    } = e, r = I(e, ["subscription"]);
+    let [i, a] = s.useState([]), [l, o] = s.useState(1), c = async e => {
+      let r = new Map,
+        n = [];
+      for (let t of e) r.set(t.id, t), n.push(t.id);
+      let s = await (0, p.cD)(t.id, n);
       if (null == s) {
-        f.default.track(E.rMx.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
+        d.default.track(y.rMx.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
           successful_user_ids: [],
-          failed_user_ids: r
+          failed_user_ids: n
         }), a(e.map(e => ({
           user: e,
           isSuccess: false
@@ -217,24 +223,24 @@ let C = e => {
         return
       }
       let {
-        invitedUsers: l,
-        ineligibleUsers: i
+        invitedUsers: i,
+        ineligibleUsers: l
       } = s;
-      f.default.track(E.rMx.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
-        successful_user_ids: l,
-        failed_user_ids: i
-      }), a([...l.map(e => ({
-        user: n.get(e),
+      d.default.track(y.rMx.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
+        successful_user_ids: i,
+        failed_user_ids: l
+      }), a([...i.map(e => ({
+        user: r.get(e),
         isSuccess: true
-      })), ...i.map(e => ({
-        user: n.get(e),
+      })), ...l.map(e => ({
+        user: r.get(e),
         isSuccess: false
       }))]), o(2)
     };
-    return 1 === i ? (0, r.jsx)(C, _(S({}, n), {
+    return 1 === l ? (0, n.jsx)(E, P(_({}, r), {
       onInvite: c,
       subscriptionId: t.id
-    })) : 2 === i ? (0, r.jsx)(N, _(S({}, n), {
-      inviteUsersResult: l
+    })) : 2 === l ? (0, n.jsx)(N, P(_({}, r), {
+      inviteUsersResult: i
     })) : true
   }
