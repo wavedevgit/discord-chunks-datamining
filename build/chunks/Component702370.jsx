@@ -237,7 +237,7 @@ let eZ = e => {
       rentalDuration: O
     } = e, {
       analyticsLocations: C
-    } = (0, x.ZP)(), I = (0, m.e7)([L.default], () => L.default.locale), y = G.ZP.canUseCollectibles(n), {
+    } = (0, x.ZP)(), y = (0, m.e7)([L.default], () => L.default.locale), I = G.ZP.canUseCollectibles(n), {
       previewingVariantIndex: T,
       handleEntering: S,
       handleLeaving: N
@@ -268,16 +268,16 @@ let eZ = e => {
       {
         firstAvatarDecoration: eg
       } = (0, X.Rj)(null != R ? R : k),
-      ex = i.useMemo(() => (0, q.BH)(k, y), [k, y]),
+      ex = i.useMemo(() => (0, q.BH)(k, I), [k, I]),
       {
         handleUseNow: eC,
-        isApplying: ey
+        isApplying: eI
       } = (0, K.W)({
         product: k,
         onSuccess: u
       }),
       eL = (0, eT.To)(k),
-      eB = (0, eI.J)(k),
+      eB = (0, ey.J)(k),
       {
         enabled: eZ
       } = (0, B.W)({
@@ -292,7 +292,7 @@ let eZ = e => {
         hasSufficientOrbs: ez
       } = (0, ew.Ip)({
         product: k,
-        isPremiumUser: y,
+        isPremiumUser: I,
         hasDiscountOffer: eG,
         isRental: null != O
       }),
@@ -342,7 +342,7 @@ let eZ = e => {
           }) : eZ ? (0, r.jsx)(eh.a, {
             prices: eH,
             product: k,
-            isPremiumUser: y,
+            isPremiumUser: I,
             discount: ex,
             hasSufficientOrbs: ez,
             isProductDisabled: F,
@@ -352,12 +352,12 @@ let eZ = e => {
             children: [(0, r.jsx)(ec.Z, {
               product: k,
               discount: ex,
-              isPremiumUser: y,
-              hideStrikethroughPrice: !y || eG,
+              isPremiumUser: I,
+              hideStrikethroughPrice: !I || eG,
               nitroIconType: "tooltip",
               nitroIconSize: "xs",
               discountOfferAmount: eF
-            }), y || eG ? null : (0, r.jsx)(eu.Z, {
+            }), I || eG ? null : (0, r.jsx)(eu.Z, {
               product: k
             })]
           })]
@@ -381,7 +381,7 @@ let eZ = e => {
           direction: "vertical",
           gap: 8,
           children: (() => {
-            if (em && !y && !eb) {
+            if (em && !I && !eb) {
               let e;
               return e = ek.intl.string(ek.t.sEAnVH), (0, r.jsx)(E.Z, {
                 subscriptionTier: eN.Si.TIER_2,
@@ -405,13 +405,21 @@ let eZ = e => {
             let e = (0, r.jsx)(v.Button, {
               variant: "primary",
               onClick: eC,
-              loading: ey,
+              loading: eI,
               text: ek.intl.string(ek.t.MAS7uK),
               fullWidth: true
             });
             if (et) {
               if (D) return e
-            } else if (D && !M) return e;
+            } else if (D && !M) return eB ? (0, r.jsxs)(v.ButtonGroup, {
+              wrap: false,
+              fullWidth: true,
+              children: [e, (0, r.jsx)(es.Z, {
+                primary: true,
+                product: k,
+                onSuccess: u
+              })]
+            }) : e;
             return em ? (0, r.jsx)(v.Button, {
               loading: er,
               loadingStartedLabel: ek.intl.string(ek.t["TYw+9s"]),
@@ -438,7 +446,7 @@ let eZ = e => {
                       a = n ? "".concat(i, ", ").concat(t) : i,
                       o = new Date,
                       s = null == O ? null : o.setDate(o.getDate() + O),
-                      c = null != s ? new Date(s).toLocaleDateString(I, {
+                      c = null != s ? new Date(s).toLocaleDateString(y, {
                         minute: "numeric",
                         hour: "numeric",
                         day: "numeric",
@@ -464,7 +472,7 @@ let eZ = e => {
                                 (0, V.qg)({
                                   variantsReturnStyle: d.v.VARIANTS_GROUP
                                 }), u();
-                                let i = (null == (t = r[0]) ? true : t.ends_at) != null ? new Date(r[0].ends_at).toLocaleDateString(I, {
+                                let i = (null == (t = r[0]) ? true : t.ends_at) != null ? new Date(r[0].ends_at).toLocaleDateString(y, {
                                   minute: "numeric",
                                   hour: "numeric",
                                   day: "numeric",
@@ -605,7 +613,7 @@ let eZ = e => {
       user: t,
       nameplate: n,
       avatarDecoration: i
-    } = e, a = (0, y.w$)();
+    } = e, a = (0, I.w$)();
     return (0, r.jsx)("div", {
       className: e_.nameplateRightPanePreviewContainer,
       role: "img",
@@ -756,7 +764,7 @@ let eZ = e => {
           className: e_.chatPreview,
           outline: true,
           "aria-hidden": true,
-          children: [(0, r.jsx)(I.Z, {
+          children: [(0, r.jsx)(y.Z, {
             className: e_.mockMessage,
             author: (0, C.ZH)(n),
             message: n
@@ -788,9 +796,9 @@ let eZ = e => {
       shouldCheckoutWithOrbs: b,
       tab: h,
       rentalDuration: P
-    } = e, j = (0, m.e7)([U.default], () => U.default.getCurrentUser()), O = (0, ey.f)(a), {
+    } = e, j = (0, m.e7)([U.default], () => U.default.getCurrentUser()), O = (0, eI.f)(a), {
       previewingVariantIndex: C
-    } = O, I = (0, W.o)(a), y = (0, eP.N)(a, C), T = (0, ej.W)(a, I);
+    } = O, y = (0, W.o)(a), I = (0, eP.N)(a, C), T = (0, ej.W)(a, y);
     s()(null != T, "Selected product should not be null");
     let {
       analyticsLocations: w
@@ -844,7 +852,7 @@ let eZ = e => {
             category: o,
             onClose: n,
             previewingVariantIndexProps: O,
-            selectedVariantIndex: I,
+            selectedVariantIndex: y,
             shouldCheckoutWithOrbs: b,
             activeBundleSlide: F,
             rentalDuration: P
@@ -860,14 +868,14 @@ let eZ = e => {
               className: e_.externalProductProfilePreview
             }) : (0, r.jsx)(eV, {
               user: j,
-              product: null != y ? y : T,
+              product: null != I ? I : T,
               activeBundleSlide: F,
               isTransitioning: G
             }), (0, r.jsxs)("div", {
               className: e_.pdpControls,
               children: [A && (0, r.jsx)(eg.a, {
                 product: a,
-                selectedVariantIndex: I,
+                selectedVariantIndex: y,
                 className: e_.wishlistButton,
                 iconSize: 16,
                 enableHoverEffect: true
