@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk905490 = require("./905490.js"),
   Chunk350618 = require("./350618.js");
-let E = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
+let P = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
 
 function T(e) {
   var t, n;
@@ -51,28 +51,28 @@ function T(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       className: I.image,
-      src: P
+      src: E
     }), (0, r.jsxs)("div", {
       className: I.textContainer,
       children: [(0, r.jsx)(l.xvT, {
         variant: "text-md/semibold",
-        children: C.intl.string(N ? w.default.KSWK1U : w.default.XXXX5l)
+        children: C.intl.string(N ? _.default.KSWK1U : _.default.XXXX5l)
       }), (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
-        children: C.intl.format(N ? w.default["7fWTg4"] : w.default["7PXeeQ"], {
+        children: C.intl.format(N ? _.default["7fWTg4"] : _.default["7PXeeQ"], {
           onClick: () => {
             (0, f.f)({
               guildId: i,
               location: {
-                section: _.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
-                object: _.qAy.LEARN_MORE
+                section: w.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
+                object: w.qAy.LEARN_MORE
               }
             })
           }
         })
       })]
     }), null != Z && !N && (0, r.jsx)(m.l, {
-      avatar: (0, r.jsx)(E, (t = function(e) {
+      avatar: (0, r.jsx)(P, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -122,8 +122,8 @@ function T(e) {
       guild: c,
       className: I.content,
       analyticsLocation: {
-        page: _.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: _.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: w.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: w.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: s.Tt.BRAND,
       size: s.Ph.MEDIUM,

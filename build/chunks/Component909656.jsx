@@ -64,11 +64,11 @@ function T(e) {
     (null == f || null == (e = f.cover_image_asset) ? true : e.application_id) != null && D((0, x._W)(f.cover_image_asset.application_id, f.cover_image_asset, _))
   }, [null == f ? true : f.cover_image_asset]);
   let q = (0, O.mY)(),
-    X = i.useMemo(() => E.kL.map(e => ({
+    J = i.useMemo(() => E.kL.map(e => ({
       label: (0, E.eJ)(e),
       value: e
     })), []),
-    J = i.useMemo(() => [{
+    X = i.useMemo(() => [{
       label: I.intl.string(I.t.X6h2gz),
       value: E.a3.PRODUCTS_FIRST
     }, {
@@ -154,10 +154,10 @@ function T(e) {
         description: I.intl.string(I.t.TILN8u),
         value: A,
         placeholder: I.intl.string(I.t.XqMe3N),
-        options: X,
+        options: J,
         onChange: e => L(e)
       })]
-    }) : null, J.length > 0 && (0, r.jsxs)(r.Fragment, {
+    }) : null, X.length > 0 && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(m.izJ, {
         className: S.divider
       }), (0, r.jsx)(u.y6, {
@@ -165,7 +165,7 @@ function T(e) {
         description: I.intl.string(I.t.n8WSWJ),
         value: k,
         placeholder: I.intl.string(I.t.XqMe3N),
-        options: J,
+        options: X,
         onChange: e => G(e)
       })]
     }), (0, r.jsx)(c.W, {

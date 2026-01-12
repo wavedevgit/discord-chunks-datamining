@@ -21,18 +21,18 @@ function m(e) {
     guildId: v,
     group: g,
     powerups: x
-  } = e, [b, h] = i.useState(false), j = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), Z = (0, f.Z)(g, v), _ = !j && b ? null == Z || null == (t = Z.image) ? true : t.animatedUrl : null == Z || null == (n = Z.image) ? true : n.staticUrl, w = (0, u.Z)({
+  } = e, [b, h] = i.useState(false), j = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), Z = (0, f.Z)(g, v), w = !j && b ? null == Z || null == (t = Z.image) ? true : t.animatedUrl : null == Z || null == (n = Z.image) ? true : n.staticUrl, _ = (0, u.Z)({
     guildId: v,
     powerups: x
   }), {
     textColor: C
-  } = (0, d.Z)(null != (m = null == w ? true : w.isActive) && m);
-  if (null == w || null == Z) return null;
+  } = (0, d.Z)(null != (m = null == _ ? true : _.isActive) && m);
+  if (null == _ || null == Z) return null;
   let {
     status: I,
-    cost: P,
-    costDecorator: E
-  } = w;
+    cost: E,
+    costDecorator: P
+  } = _;
   return (0, r.jsxs)(c.aB, {
     label: Z.title,
     isActive: (null == I ? true : I.type) === "active",
@@ -43,15 +43,15 @@ function m(e) {
     onMouseLeave: () => h(false),
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: _,
+      src: w,
       className: p.image
     }), (0, r.jsx)(c.Q9, {
       title: Z.title,
       textColor: C,
       footer: (0, r.jsx)(c.uf, {
         status: I,
-        cost: P,
-        costDecorator: E
+        cost: E,
+        costDecorator: P
       }),
       children: (0, r.jsx)(a.Text, {
         className: p.description,

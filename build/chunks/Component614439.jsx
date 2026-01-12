@@ -173,7 +173,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           })(e) || Y(e)) && A.reasonsToJoin.filter(Y).length >= 2
         }]
       }],
-      X = (e, t) => {
+      J = (e, t) => {
         let n = [...B];
         n[e] = t, F(n)
       };
@@ -329,10 +329,10 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           l = null != i ? "".concat(i.baseUrl) : true;
                         return (0, r.jsxs)("div", {
                           className: T.socialLinksContainer,
-                          onMouseOver: () => X(t, true),
-                          onFocus: () => X(t, true),
-                          onMouseOut: () => X(t, false),
-                          onBlur: () => X(t, false),
+                          onMouseOver: () => J(t, true),
+                          onFocus: () => J(t, true),
+                          onMouseOut: () => J(t, false),
+                          onBlur: () => J(t, false),
                           children: [(0, r.jsx)(o.y6, {
                             className: A.isPublished ? T.socialLinksDropdownMax : T.socialLinksDropdownMin,
                             options: (e => {

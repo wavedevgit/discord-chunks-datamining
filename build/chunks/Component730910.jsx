@@ -123,7 +123,7 @@ function L(e) {
     else if ((A === C.PG.LANDING || A === C.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(T.Z, {})
   }
   let q = A === C.xh[C.xh.length - 1],
-    X = async () => {
+    J = async () => {
       let e = O.Z.advancedMode;
       if (k) try {
         if (A === C.PG.DEFAULT_CHANNELS) await (0, p.DO)(t).then(() => e ? (0, v.rS)(t, {
@@ -140,18 +140,18 @@ function L(e) {
         returnfalse
       }
       returntrue
-    }, J = async () => {
+    }, X = async () => {
       f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
         step: C.PG[A],
         back: false,
         skip: !k
-      })), (0, h.Nb)((0, C.lg)(A)), await X() && (0, h.IG)(b, A)
+      })), (0, h.Nb)((0, C.lg)(A)), await J() && (0, h.IG)(b, A)
     }, Q = async () => {
       f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
         step: C.PG[A],
         back: true,
         skip: false
-      })), await X() && (0, h.Wy)(b, A)
+      })), await J() && (0, h.Wy)(b, A)
     }, $ = null;
   U && (A === C.PG.SAFETY_CHECK ? $ = (0, r.jsx)(E.j7, {}) : A === C.PG.DEFAULT_CHANNELS ? $ = (0, r.jsx)(E.Io, {}) : A === C.PG.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(E.cZ, {}) : A === C.PG.HOME_SETTINGS && ($ = (0, r.jsx)(E.g6, {})));
   let ee = (0, r.jsx)("div", {
@@ -172,7 +172,7 @@ function L(e) {
       text: G ? w.intl.string(w.t.PDTjLN) : w.intl.string(w.t["5Wxrcd"]),
       icon: d.ZSh,
       iconPosition: "end",
-      onClick: J,
+      onClick: X,
       disabled: U || M
     });
   return (0, r.jsx)(o.W, {

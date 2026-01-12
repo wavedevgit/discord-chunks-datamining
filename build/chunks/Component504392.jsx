@@ -49,11 +49,11 @@ function R(e) {
     {
       shouldShow: D,
       modalConfig: M
-    } = (0, E.Z)(t, "GuildPowerupsOverview"),
+    } = (0, P.Z)(t, "GuildPowerupsOverview"),
     G = null == o && null != M,
     V = [];
   D && G && V.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-  let [B, W] = (0, c.US)(V), F = (0, h._P)(t, R), z = F.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), K = (0, P.f)(z, t);
+  let [B, W] = (0, c.US)(V), F = (0, h._P)(t, R), z = F.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), K = (0, E.f)(z, t);
   return (i.useEffect(() => {
     if (null != o && !U.current)
       for (let e of F)
@@ -174,7 +174,7 @@ function R(e) {
                       nextPowerup: null == (o = i[n + 1]) ? true : o.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "singlePerk":
-                    return (0, r.jsx)(_.Z, {
+                    return (0, r.jsx)(w.Z, {
                       guildId: t,
                       powerup: e.powerup
                     }, "powerup-".concat(e.powerup.skuId));
@@ -195,7 +195,7 @@ function R(e) {
         })
       }), (0, r.jsxs)("div", {
         className: O.sidebarContainer,
-        children: [k ? (0, r.jsx)(w.Z, {
+        children: [k ? (0, r.jsx)(_.Z, {
           guildId: t
         }) : (0, r.jsx)(C.Z, {
           guildId: t

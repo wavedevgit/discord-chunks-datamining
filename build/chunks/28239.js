@@ -22,15 +22,15 @@ var Chunk473749 = require("./473749.js"),
 
 function h(e, t) {
   var n, h, j, Z;
-  let _ = (0, o.e7)([l.Z], () => l.Z.getGuild(e)),
-    w = (0, o.e7)([a.Z], () => a.Z.hasLayers()),
+  let w = (0, o.e7)([l.Z], () => l.Z.getGuild(e)),
+    _ = (0, o.e7)([a.Z], () => a.Z.hasLayers()),
     C = null != (j = (0, c.Z)(e)) && j,
     I = (0, u.q8)(e, t),
-    P = (0, o.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    E = null == P || null == (n = P.allPowerups) ? true : n[i.A$],
-    T = (0, d.ZP)(e, E),
-    S = null == E ? true : E.storeRemovalDate,
-    y = null == P || null == (h = P.allPowerups) ? true : h[i.XW],
+    E = (0, o.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    P = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
+    T = (0, d.ZP)(e, P),
+    S = null == P ? true : P.storeRemovalDate,
+    y = null == E || null == (h = E.allPowerups) ? true : h[i.XW],
     N = (0, o.e7)([l.Z], () => {
       var t;
       return null == (t = l.Z.getGuild(e)) ? true : t.features
@@ -41,31 +41,31 @@ function h(e, t) {
       error: R
     } = (0, p.Z)(e, y);
   (0, m.Z)(R);
-  let L = !w && C && I && null != E && !A && T.type === v.A3.POWERUP_ACTIVATED && null != S && null != y && null != _,
+  let L = !_ && C && I && null != P && !A && T.type === v.A3.POWERUP_ACTIVATED && null != S && null != y && null != w,
     k = r.useCallback(e => {
       e.stopPropagation(), O()
     }, [O]),
     U = r.useMemo(() => {
       if (!L) return null;
       let e = (0, f.Z)(S),
-        t = _.premiumTier === g.Eu4.TIER_2 ? b.intl.string(x.default["0uo/LD"]) : true;
+        t = w.premiumTier === g.Eu4.TIER_2 ? b.intl.string(x.default["0uo/LD"]) : true;
       return {
-        firstHeader: E.title,
+        firstHeader: P.title,
         secondHeader: b.intl.formatToPlainString(x.default["8imxAq"], {
           dateString: e
         }),
         firstBody: b.intl.formatToPlainString(x.default["/bW9tW"], {
-          serverName: _.name
+          serverName: w.name
         }),
         secondBody: b.intl.formatToPlainString(x.default.D09fdi, {
           dateString: e,
-          boostCount: E.cost
+          boostCount: P.cost
         }),
         thirdBody: b.intl.string(x.default["+zvKPr"]),
         primaryButtonText: t,
         onPrimaryClick: null != t ? k : true
       }
-    }, [L, E, S, _, k]);
+    }, [L, P, S, w, k]);
   return {
     shouldShow: L,
     modalConfig: U

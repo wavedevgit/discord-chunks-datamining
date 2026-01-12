@@ -24,19 +24,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk138545 = require("./138545.js"),
   Chunk919600 = require("./919600.js");
 
-function w(e) {
+function _(e) {
   let t, {
     active: n,
     nextActive: i,
     position: o
   } = e;
   return t = n && false !== i ? g.vW.FULL : n && false === i ? g.vW.HALF : g.vW.NONE, (0, r.jsxs)("div", {
-    className: _.progressContainer,
+    className: w.progressContainer,
     children: [(0, r.jsx)("div", {
-      className: l()(_.progress, _[o], _[t])
+      className: l()(w.progress, w[o], w[t])
     }), (0, r.jsx)("div", {
-      className: l()(_.boostContainer, Z.boostProgressBackground, {
-        [_.boostContainerActive]: n,
+      className: l()(w.boostContainer, Z.boostProgressBackground, {
+        [w.boostContainerActive]: n,
         [Z.active]: n
       }),
       children: (0, r.jsx)(s.Ucv, {
@@ -61,12 +61,12 @@ function C(e) {
     return null == t ? true : t.map((e, t) => {
       let i = (0, u.P)(e.perkIcon);
       return (0, r.jsxs)("div", {
-        className: _.perkRow,
+        className: w.perkRow,
         children: [(0, r.jsx)(i, {
           color: l,
           size: "sm"
         }), (0, r.jsx)(a.xvT, {
-          className: _.perkText,
+          className: w.perkText,
           color: o,
           variant: "text-sm/medium",
           children: e.getCopy()
@@ -75,9 +75,9 @@ function C(e) {
     })
   }, [n, l, o]);
   return (0, r.jsxs)("div", {
-    className: _.perkRowContainer,
+    className: w.perkRowContainer,
     children: [s, (0, r.jsx)("div", {
-      className: _.perkRow,
+      className: w.perkRow,
       children: (0, r.jsx)(a.xvT, {
         color: o,
         variant: "text-sm/medium",
@@ -107,8 +107,8 @@ function I(e) {
   return (0, r.jsxs)(p.Z, {
     guildId: n,
     powerup: l,
-    className: _.card,
-    children: [(0, r.jsx)(w, {
+    className: w.card,
+    children: [(0, r.jsx)(_, {
       position: t,
       active: x,
       nextActive: null != a ? b : true
@@ -116,7 +116,7 @@ function I(e) {
       title: l.title,
       textColor: I,
       footer: !h && (0, r.jsx)(p.g, {
-        className: _.footer,
+        className: w.footer,
         guildId: n,
         powerup: l
       }),

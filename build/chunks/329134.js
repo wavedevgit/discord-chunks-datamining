@@ -22,7 +22,7 @@ function a(e, t, n) {
       statusText: l.intl.formatToPlainString(o.default.WRRYUT, {
         perkName: null != (s = null == (a = t.sourcePowerup) ? true : a.title) ? s : l.intl.string(l.t.BfF6ED)
       })
-    } : t.type === i.A3.POWERUP_ACTIVATED ? {
+    } : t.type !== i.A3.INACTIVE ? {
       type: "active",
       statusText: l.intl.string(o.default.FFLkmx)
     } : true

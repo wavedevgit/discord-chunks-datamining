@@ -25,27 +25,27 @@ function x(e) {
   } = e, [x, b] = i.useState(true);
   (0, m.Z)(x);
   let [h, j] = i.useState(false), Z = (0, s.ZP)(t, n).type !== v.A3.INACTIVE, {
-    textColor: _
-  } = (0, p.Z)(Z), w = (0, a.g1)(t, "GuildPowerupPerkCard"), C = n.skuId === o.A$;
+    textColor: w
+  } = (0, p.Z)(Z), _ = (0, a.g1)(t, "GuildPowerupPerkCard"), C = n.skuId === o.A$;
   return (0, r.jsxs)(f.Z, {
     onHover: e => j(e),
     guildId: t,
     powerup: n,
-    badge: C && w ? "beta" : true,
+    badge: C && _ ? "beta" : true,
     children: [(0, r.jsx)(d.m, {
       className: g.image,
       powerup: n,
       isHovering: h
     }), (0, r.jsx)(u.Q9, {
       title: n.title,
-      textColor: _,
+      textColor: w,
       footer: (0, r.jsx)(f.g, {
         guildId: t,
         powerup: n
       }),
       children: (0, r.jsx)(l.Text, {
         className: g.description,
-        color: _,
+        color: w,
         variant: "text-sm/medium",
         children: n.description
       })

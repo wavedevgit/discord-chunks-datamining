@@ -58,8 +58,6 @@ function f() {
             color: "text-subtle",
             children: "Daily Cap Reached: ".concat(e ? "Yes" : "No")
           })]
-        }), (0, a.jsx)(s.izJ, {
-          gap: 24
         }), (0, a.jsx)(s.rsf, {
           label: "Override Dismissible Content Daily Cap",
           checked: t,

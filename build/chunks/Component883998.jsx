@@ -47,8 +47,7 @@ function d(e) {
         channel: t,
         closePopout: n,
         onSelectEmoji: m,
-        pickerIntention: u,
-        includeCreateEmojiButton: false
+        pickerIntention: u
       })
     },
     children: _

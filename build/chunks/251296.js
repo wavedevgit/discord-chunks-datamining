@@ -2,45 +2,63 @@
 /** chunk id: 251296, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  no: () => d,
-  q5: () => u,
-  zw: () => c
+  hX: () => f,
+  no: () => p,
+  q5: () => d,
+  vl: () => _,
+  zw: () => u
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk350327 = require("./350327.js"),
   Chunk438379 = require("./438379.js"),
+  Chunk823379 = require("./823379.js"),
   Chunk894883 = require("./894883.js");
 
-function s(e) {
+function l(e) {
   return (0, a.J)({
     location: e.location,
     autoTrackExposure: e.autoTrackExposure
   })
 }
 
-function l(e, t) {
+function c(e, t) {
   var n;
   let {
     data: a
-  } = (0, i.SK)(), l = (0, o.Z)(null != (n = null == a ? true : a.map(t)) ? n : [], e), c = s(e);
-  return r.useMemo(() => !c && [...l.values()].some(e => e.enabled), [c, l])
-}
-
-function c(e) {
-  return l(e, e => e.viewExperiment)
+  } = (0, i.SK)(), c = (0, s.Z)(null != (n = null == a ? true : a.map(t).filter(o.lm)) ? n : [], e), u = l(e);
+  return r.useMemo(() => !u && [...c.values()].some(e => e.enabled), [u, c])
 }
 
 function u(e) {
-  return l(e, e => e.editExperiment)
+  return c(e, e => e.viewExperiment)
 }
 
 function d(e) {
+  return c(e, e => e.editExperiment)
+}
+
+function f(e) {
+  return c(e, e => e.coachmarkExperiment)
+}
+
+function p(e) {
   var t;
   let {
     data: n
-  } = (0, i.SK)(), a = (0, o.Z)(null != (t = null == n ? true : n.map(e => e.editExperiment)) ? t : [], e), l = s(e);
-  return r.useMemo(() => l ? [] : null == n ? true : n.filter(e => {
+  } = (0, i.SK)(), a = (0, s.Z)(null != (t = null == n ? true : n.map(e => e.editExperiment)) ? t : [], e), o = l(e);
+  return r.useMemo(() => o ? [] : null == n ? true : n.filter(e => {
     var t;
     return (null == (t = a.get(e.editExperiment)) ? true : t.enabled) === true
-  }), [n, a, l])
+  }), [n, a, o])
+}
+
+function _(e) {
+  var t, n;
+  let {
+    data: a
+  } = (0, i.SK)(), c = (0, s.Z)(null != (t = null == a ? true : a.map(e => e.editExperiment)) ? t : [], e), u = (0, s.Z)(null != (n = null == a ? true : a.map(e => e.coachmarkExperiment).filter(o.lm)) ? n : [], e), d = l(e);
+  return r.useMemo(() => d ? [] : null == a ? true : a.filter(e => {
+    var t, n;
+    return (null == (t = c.get(e.editExperiment)) ? true : t.enabled) === true && null != e.coachmarkExperiment && (null == (n = u.get(e.coachmarkExperiment)) ? true : n.enabled) === true
+  }), [a, c, u, d])
 }
