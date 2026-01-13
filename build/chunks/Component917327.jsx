@@ -30,7 +30,7 @@ function g(n, t) {
     }
   }) : v && f ? (0, i.jsx)(r.sNh, {
     id: "set-status",
-    label: h.intl.string(h.t.Mgpxiw),
+    label: h.intl.string(h.t.RBd5PW),
     action: () => {
       (0, r.ZDy)(async () => {
         let {
