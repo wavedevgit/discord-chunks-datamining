@@ -184,7 +184,7 @@ function R(e) {
           icon: s.EOn,
           text: Z.intl.string(Z.t.ZbS4QB),
           onClick: $
-        }), X && (0, r.jsx)(s.Button, {
+        }), q && (0, r.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           icon: s.EOn,
@@ -193,7 +193,7 @@ function R(e) {
           onClick: et
         })]
       })]
-    }), q && (0, r.jsx)(y.Z, {
+    }), X && (0, r.jsx)(y.Z, {
       user: n,
       isOwner: M,
       wishlist: z,
