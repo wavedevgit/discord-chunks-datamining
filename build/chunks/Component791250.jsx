@@ -162,7 +162,7 @@ let eh = e => {
         }
       })
     }, [E]);
-    let y = () => {
+    let I = () => {
         let e;
         E ? (er.default.track(el.rMx.GIFT_INTENT_BADGE_CLICKED, {
           gift_intent_type: es.hX.FRIEND_ANNIVERSARY
@@ -170,7 +170,7 @@ let eh = e => {
           tab_opened: e
         })
       },
-      [I, N] = i.useState(false),
+      [y, N] = i.useState(false),
       j = () => {
         N(false)
       },
@@ -178,7 +178,7 @@ let eh = e => {
         N(true)
       },
       Z = () => (0, r.jsx)(v.Qj, ef(ep({
-        onClick: y,
+        onClick: I,
         interactiveClassName: E ? ed.friendsBadge : true,
         selected: t,
         route: el.Z5c.FRIENDS,
@@ -208,7 +208,7 @@ let eh = e => {
           wind: 0,
           sprites: ea.CA,
           spriteColors: ea.Br,
-          firing: I,
+          firing: y,
           confettiConfig: {
             opacity: {
               type: "static",
@@ -238,7 +238,7 @@ let eh = e => {
       icon: _.vqy,
       text: ec.intl.string(ec.t.cw57ar)
     }, i, l), {
-      children: (0, r.jsx)(I.Z, {
+      children: (0, r.jsx)(y.Z, {
         className: a()(ed.downloadProgressCircle, {
           [ed.hideGameUpdateProgressIndicator]: n
         })
@@ -330,9 +330,9 @@ let eh = e => {
       })
     })
   },
-  ey = () => (0, W.$Z)("DM_SEARCH");
+  eI = () => (0, W.$Z)("DM_SEARCH");
 
-function eI(e) {
+function ey(e) {
   switch (e) {
     case el.Z5c.APPLICATION_LIBRARY:
       return el.ZY5.LIBRARY;
@@ -356,7 +356,7 @@ let eC = Chunk473749.memo(function(e) {
     shouldShowFamilyCenterRow: f,
     selectedChannelId: g,
     path: h
-  } = e, b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), v = i.useRef(null), I = (0, Z.b5)("PrivateChannels"), C = null;
+  } = e, b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), v = i.useRef(null), y = (0, Z.b5)("PrivateChannels"), C = null;
   return c ? C = (0, r.jsx)(V.F, {
     targetElementRef: v
   }) : d && (C = (0, r.jsx)(G.d, {
@@ -378,7 +378,7 @@ let eC = Chunk473749.memo(function(e) {
           fullWidth: true,
           variant: "secondary",
           size: "sm",
-          onClick: ey,
+          onClick: eI,
           text: ec.intl.format(ec.t.fH9FBy, {
             tooltipHook: (e, t) => (0, r.jsx)(m.Z, {
               children: e
@@ -386,13 +386,13 @@ let eC = Chunk473749.memo(function(e) {
           })
         })
       })
-    }), (0, r.jsxs)(y.Z, ef(ep({}, e), {
+    }), (0, r.jsxs)(I.Z, ef(ep({}, e), {
       version: h,
       selectedChannelId: g,
       listScrollerRef: O,
       children: [(0, r.jsx)(em, {
         selected: null != h ? h === el.Z5c.FRIENDS : l === el.Z5c.FRIENDS
-      }, "friends"), I ? (0, r.jsx)(eh, {
+      }, "friends"), y ? (0, r.jsx)(eh, {
         selected: null != h ? h === el.Z5c.ICYMI : l === el.Z5c.ICYMI
       }, "icymi") : null, n && t ? (0, r.jsx)(eb, {
         selected: null == h ? null != l && l.startsWith(el.Z5c.APPLICATION_LIBRARY) : h.startsWith(el.Z5c.APPLICATION_LIBRARY),
@@ -406,7 +406,7 @@ let eC = Chunk473749.memo(function(e) {
           route: el.Z5c.APPLICATION_STORE,
           locationState: {
             analyticsSource: {
-              page: eI(l),
+              page: ey(l),
               section: el.jXE.NAVIGATION,
               object: el.qAy.NAVIGATION_LINK
             }
@@ -417,7 +417,7 @@ let eC = Chunk473749.memo(function(e) {
         listItemRef: E,
         locationState: {
           analyticsSource: {
-            page: eI(l),
+            page: ey(l),
             section: el.jXE.NAVIGATION,
             object: el.qAy.NAVIGATION_LINK
           }

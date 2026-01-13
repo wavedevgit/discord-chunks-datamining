@@ -259,20 +259,20 @@ function e0(e) {
     limit: m
   } = (0, ep.Z)(t), v = i.useCallback(() => {
     (0, eh.Z)()
-  }, []), y = (0, q.bp)(), I = i.useCallback(e => {
+  }, []), I = (0, q.bp)(), y = i.useCallback(e => {
     if (eS.Z.isVideoEnabled() === e) return;
     let n = () => {
       var n;
       O.Z.setVideoEnabled(e), e && (0, Q.uL)(eU.Z5c.CHANNEL(null != (n = t.getGuildId()) ? n : eU.ME, t.id))
     };
-    (0, D.v)(s, D.d.CAMERA, e), e ? (0, e_.Z)(n, y) : n()
-  }, [t, y, s]), C = p || n || f, {
+    (0, D.v)(s, D.d.CAMERA, e), e ? (0, e_.Z)(n, I) : n()
+  }, [t, I, s]), C = p || n || f, {
     Component: T,
     play: N,
     events: j
   } = (0, h.o)(c.enabled ? "disable" : "enable");
   return i.useEffect(() => () => N(), [c.enabled, N]), (0, r.jsx)(eE.Z, eK(eW({
-    onChange: I,
+    onChange: y,
     onCameraUnavailable: v,
     hasPermission: d,
     channelLimit: m,
@@ -442,9 +442,9 @@ function e4(e) {
       onMouseEnter: u,
       onMouseLeave: p
     }
-  } = o, g = eq(o.events, ["onMouseEnter", "onMouseLeave"]), [h, m] = i.useState(false), [O, v] = (0, G.US)([d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE], true, true), y = i.useCallback(() => {
+  } = o, g = eq(o.events, ["onMouseEnter", "onMouseLeave"]), [h, m] = i.useState(false), [O, v] = (0, G.US)([d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE], true, true), I = i.useCallback(() => {
     m(false)
-  }, []), I = i.useCallback(e => {
+  }, []), y = i.useCallback(e => {
     let {
       closePopout: n
     } = e;
@@ -464,8 +464,8 @@ function e4(e) {
     position: "top",
     align: "left",
     spacing: 16,
-    onRequestClose: y,
-    renderPopout: I,
+    onRequestClose: I,
+    renderPopout: y,
     children: () => (0, r.jsx)(b.u, {
       text: eF.intl.string(eF.t.PEjaCx),
       targetElementRef: n,
@@ -514,16 +514,16 @@ function e3(e) {
     m = (0, ef.Z)(n),
     O = n.getGuildId(),
     v = (0, u.cj)([S.ZP], () => null != S.ZP.getSelfEmbeddedActivityForChannel(n.id)),
-    y = (0, et.Z)(n),
-    I = i.useCallback(() => {
+    I = (0, et.Z)(n),
+    y = i.useCallback(() => {
       (0, eb.Z)(O, n.id, p)
     }, [O, n.id, p]),
     C = h.find(e => e.ownerId === (null == f ? true : f.id)),
     T = (0, eg.E)(n, f, h);
-  t = null == C ? l ? I : em.Z : () => (0, z.Z)(C);
+  t = null == C ? l ? y : em.Z : () => (0, z.Z)(C);
   let N = null != C || T.length > 0,
     j = m ? eF.intl.string(eF.t.fjBNo1) : eF.intl.string(eF.t.uQn9B8),
-    P = v || o || y,
+    P = v || o || I,
     x = null != C,
     {
       Component: Z,
@@ -549,7 +549,7 @@ function e3(e) {
         currentUser: f,
         activeStreams: h,
         onClose: t,
-        handleGoLive: l ? I : em.Z,
+        handleGoLive: l ? y : em.Z,
         onInteraction: (0, M.u)("ManageStreamsMenu", d, {
           entrypoint: eG.A5.OTHER_BUTTON
         })
@@ -768,7 +768,7 @@ class e8 extends Chunk473749.PureComponent {
         guild: n,
         channel: r
       } = this.props;
-      s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), y.Z.channelListScrollTo(null != (t = null == n ? true : n.id) ? t : eU.ME, r.id), (0, D.v)(Z.Z.RTC_PANEL, D.d.CHANNEL_LINK)
+      s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), I.Z.channelListScrollTo(null != (t = null == n ? true : n.id) ? t : eU.ME, r.id), (0, D.v)(Z.Z.RTC_PANEL, D.d.CHANNEL_LINK)
     }), eY(this, "handleChannelLinkContextMenu", e => {
       let {
         channel: t,
@@ -858,9 +858,9 @@ let e2 = (0, Chunk730749.Z)(function(e) {
       channelId: o
     } = a,
     s = eq(a, ["channelId"]),
-    c = (0, u.e7)([ey.Z], () => ey.Z.getChannel(o), [o]),
+    c = (0, u.e7)([eI.Z], () => eI.Z.getChannel(o), [o]),
     d = null == c ? true : c.getGuildId(),
-    p = (0, u.e7)([eI.Z], () => eI.Z.getGuild(d), [d]),
+    p = (0, u.e7)([ey.Z], () => ey.Z.getGuild(d), [d]),
     f = (0, u.cj)([eS.Z], () => ({
       noiseCancellationSupported: eS.Z.isNoiseCancellationSupported(),
       noiseCancellationActive: eS.Z.getNoiseCancellation(),
@@ -874,10 +874,10 @@ let e2 = (0, Chunk730749.Z)(function(e) {
     _ = (0, u.e7)([K.Z], () => K.Z.isViewingRoles(d)),
     O = (0, u.e7)([eT.Z], () => _ && !eT.Z.can(eU.Plq.VIEW_CHANNEL, c), [_, c]),
     v = eu.Fg.useSetting(),
-    [y, I, C] = (0, u.Wu)([eZ.ZP, er.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [er.Z.getMutableParticipants(c.id, ei.pV.SPEAKER), er.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eZ.ZP.getVoiceStatesForChannel(c) : null], [c]),
+    [I, y, C] = (0, u.Wu)([eZ.ZP, er.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [er.Z.getMutableParticipants(c.id, ei.pV.SPEAKER), er.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eZ.ZP.getVoiceStatesForChannel(c) : null], [c]),
     S = i.useMemo(() => {
       var e, t;
-      return null != (t = null != (e = null == y ? true : y.map(e => {
+      return null != (t = null != (e = null == I ? true : I.map(e => {
         let {
           user: t,
           userNick: n,
@@ -889,7 +889,7 @@ let e2 = (0, Chunk730749.Z)(function(e) {
           voiceState: r
         }
       })) ? e : C) ? t : []
-    }, [y, I, C]),
+    }, [I, y, C]),
     [N, j] = i.useState(false);
   i.useEffect(() => {
     (_ || O) && j(false)

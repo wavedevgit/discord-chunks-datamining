@@ -29,8 +29,8 @@ function v(e) {
   } = e, {
     ref: l,
     width: v,
-    height: y
-  } = (0, c.ZP)(), I = i.useCallback(() => {
+    height: I
+  } = (0, c.ZP)(), y = i.useCallback(() => {
     null != t && null != n && ((0, m.I1)(t), (0, b.default)({
       guildId: t,
       returnChannelId: n
@@ -48,7 +48,7 @@ function v(e) {
       className: O.artwork,
       src: S,
       width: v,
-      height: y,
+      height: I,
       imageClassName: O.cover
     }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
       className: O.gradient,
@@ -74,7 +74,7 @@ function v(e) {
         variant: "overlay-primary",
         size: "md",
         text: _.intl.string(_.t.VVFjAC),
-        onClick: I
+        onClick: y
       })]
     })]
   })

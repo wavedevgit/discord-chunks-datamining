@@ -196,7 +196,7 @@ class P {
       })
     }), j(this, "handleEmbeddedActivityUpdate", () => {
       if (0 === this.rpcServer.subscriptions.length) return;
-      let e = (0, y.dO)();
+      let e = (0, I.dO)();
       this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE, {}, e)
     }), j(this, "handleActivityMessage", e => {
       var t;
@@ -220,7 +220,7 @@ class P {
       switch (l.type) {
         case C.mFx.JOIN:
           this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_INVITE, e => e.socket.application.id === c, {
-            user: (0, I.Z)(a),
+            user: (0, y.Z)(a),
             activity: s,
             type: l.type,
             channel_id: n,
@@ -229,7 +229,7 @@ class P {
           break;
         case C.mFx.JOIN_REQUEST:
           this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_JOIN_REQUEST, e => e.socket.application.id === c, {
-            user: (0, I.Z)(a),
+            user: (0, y.Z)(a),
             activity: s,
             type: l.type,
             channel_id: n,

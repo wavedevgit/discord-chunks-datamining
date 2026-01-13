@@ -171,10 +171,10 @@ let V = Chunk473749.memo(function() {
               children: [(0, r.jsx)(C.H, {
                 focusSectionProps: "HELP" === q ? e : true,
                 className: Q
-              }), V ? (0, r.jsx)(y.M, {
+              }), V ? (0, r.jsx)(I.M, {
                 className: Q
               }) : null]
-            }) : (0, r.jsx)(I.Z, {
+            }) : (0, r.jsx)(y.Z, {
               focusSectionProps: "HELP" === q ? e : true,
               className: Q
             }), F && (0, r.jsx)(u.Z, {

@@ -89,7 +89,7 @@ function C() {
       scrollPosition: null
     })
   }, [L]), (0, r.jsxs)("div", {
-    className: I.container,
+    className: y.container,
     children: [(0, r.jsxs)(s.ZP, {
       variant: L ? s._6.RELATIVE : s._6.OVERLAY,
       children: [!L && (0, r.jsx)(s.z6, {
@@ -108,13 +108,13 @@ function C() {
       }), L && (0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
-        className: I.searchResultsHeader,
-        children: y.intl.format(y.t.zHdzqW, {
+        className: y.searchResultsHeader,
+        children: I.intl.format(I.t.zHdzqW, {
           query: G
         })
       }), P && (0, r.jsx)(u.Z, {
         query: x,
-        placeholder: y.intl.string(y.t["5h0QOP"]),
+        placeholder: I.intl.string(I.t["5h0QOP"]),
         onTextChange: Z,
         onClear: A,
         onSubmit: w,

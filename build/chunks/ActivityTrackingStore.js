@@ -17,10 +17,10 @@ var r, i, l, Chunk442837 = require("./442837.js"),
   Chunk19780 = require("./19780.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js");
-let y = "ActivityTrackingStore",
-  I = 30 * Chunk70956.Z.Millis.MINUTE,
+let I = "ActivityTrackingStore",
+  y = 30 * Chunk70956.Z.Millis.MINUTE,
   C = 5 * Chunk70956.Z.Millis.MINUTE,
-  S = null != (r = Chunk433517.K.get(y)) ? r : {},
+  S = null != (r = Chunk433517.K.get(I)) ? r : {},
   T = {},
   N = false;
 
@@ -28,14 +28,14 @@ function j(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   t && P(e, true);
   let n = T[e.applicationId];
-  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(y, S)
+  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(I, S)
 }
 
 function P(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
-  r > I + C && (r = 0);
+  r > y + C && (r = 0);
   let i = (0, h.OT)(e.applicationId, _.Z),
     l = O.Z.getVoiceChannelId(),
     a = m.default.getSessionId(),
@@ -53,7 +53,7 @@ function P(e) {
     mediaSessionId: c
   }), e.updatedAt = n;
   let d = T[e.applicationId];
-  null == d && (d = T[e.applicationId] = new s.Xp).start(I, () => P(e)), t || (S[e.applicationId] = e, o.K.set(y, S))
+  null == d && (d = T[e.applicationId] = new s.Xp).start(y, () => P(e)), t || (S[e.applicationId] = e, o.K.set(I, S))
 }
 
 function x() {
@@ -113,13 +113,13 @@ class A extends(i = Chunk442837.ZP.Store) {
       token: n
     } = e, r = S[t];
     if (null == r) returnfalse;
-    r.token = n, o.K.set(y, S)
+    r.token = n, o.K.set(I, S)
   },
   ACTIVITY_UPDATE_FAIL: function(e) {
     let {
       applicationId: t
     } = e, n = S[t];
     if (null == n) returnfalse;
-    n.token = null, n.updatedAt = null, o.K.set(y, S)
+    n.token = null, n.updatedAt = null, o.K.set(I, S)
   }
 })

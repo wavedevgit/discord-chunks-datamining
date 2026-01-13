@@ -26,7 +26,7 @@ function O(e) {
   var t, n;
   let {
     markAsDismissed: O
-  } = e, v = u.E[f.yD.WELCOME], y = (0, a.dQu)(v.primaryColor).hex(), I = (0, l.e7)([o.Z], () => o.Z.useReducedMotion);
+  } = e, v = u.E[f.yD.WELCOME], I = (0, a.dQu)(v.primaryColor).hex(), y = (0, l.e7)([o.Z], () => o.Z.useReducedMotion);
   return (0, r.jsx)(c.Q.Provider, {
     value: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -61,12 +61,12 @@ function O(e) {
       children: (0, r.jsxs)("div", {
         className: b.container,
         style: {
-          backgroundImage: "url(".concat(E.Z, "), linear-gradient(").concat(y, "80, black)"),
-          borderColor: y,
-          boxShadow: "0 0 15px 5px ".concat(y, "50")
+          backgroundImage: "url(".concat(E.Z, "), linear-gradient(").concat(I, "80, black)"),
+          borderColor: I,
+          boxShadow: "0 0 15px 5px ".concat(I, "50")
         },
         children: [(0, r.jsx)(i.Z, {
-          autoPlay: !I,
+          autoPlay: !y,
           muted: true,
           playsInline: true,
           loop: true,
@@ -80,26 +80,26 @@ function O(e) {
           children: [(0, r.jsx)(a.Text, {
             variant: "display-sm",
             style: {
-              color: y
+              color: I
             },
             className: b.display,
             children: m.intl.string(h.default["CdU/PF"])
           }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             style: {
-              color: y
+              color: I
             },
             children: m.intl.string(h.default["M/LvW0"])
           }), (0, r.jsx)(a.P3F, {
             className: b.dismissButton,
             onClick: () => O(g.L.DISMISS),
             style: {
-              color: y
+              color: I
             },
             children: (0, r.jsx)(a.Text, {
               variant: "text-xxs/normal",
               style: {
-                color: y
+                color: I
               },
               children: m.intl.string(m.t.WAI6xu)
             })
@@ -111,7 +111,7 @@ function O(e) {
             (0, d.Z)("coachmark"), O(g.L.TAKE_ACTION)
           },
           children: (0, r.jsx)(a.d4D, {
-            color: y,
+            color: I,
             size: "sm"
           })
         })]

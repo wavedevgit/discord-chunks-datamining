@@ -23,8 +23,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk435673 = require("./435673.js");
-let I = Math.ceil(Math.sqrt(115200)),
-  C = (I - 240) / 2,
+let y = Math.ceil(Math.sqrt(115200)),
+  C = (y - 240) / 2,
   S = function(e) {
     var t, n;
     let {
@@ -102,7 +102,7 @@ let I = Math.ceil(Math.sqrt(115200)),
     });
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: y.wrapper,
+        className: I.wrapper,
         onMouseEnter: R,
         onMouseLeave: D,
         onFocus: R,
@@ -131,7 +131,7 @@ let I = Math.ceil(Math.sqrt(115200)),
           return e
         }({
           className: a()({
-            [y.withGradientAndBadge]: j
+            [I.withGradientAndBadge]: j
           }),
           icon: d.qDn,
           listItemRef: T,
@@ -142,12 +142,12 @@ let I = Math.ceil(Math.sqrt(115200)),
         }, S), n = n = {
           children: j && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.animated.div, {
-              className: y.shine,
+              className: I.shine,
               style: {
-                transform: w.to(e => "translateX(calc(".concat(e * k, "px + ").concat(e * I, "px)) translateY(-50%) rotate(45deg)"))
+                transform: w.to(e => "translateX(calc(".concat(e * k, "px + ").concat(e * y, "px)) translateY(-50%) rotate(45deg)"))
               }
             }), (0, r.jsx)(o.animated.div, {
-              className: y.glow,
+              className: I.glow,
               style: {
                 opacity: Z.to({
                   range: [0, 1],
@@ -155,7 +155,7 @@ let I = Math.ceil(Math.sqrt(115200)),
                 })
               }
             }), (0, r.jsx)(d.IGR, {
-              className: y.badge,
+              className: I.badge,
               text: v.intl.string(v.t.y2b7CA),
               color: d.TVs.colors.BACKGROUND_BRAND.css
             })]

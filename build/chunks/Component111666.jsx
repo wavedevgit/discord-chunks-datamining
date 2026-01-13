@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk172421 = require("./172421.js");
 
-function I(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -77,7 +77,7 @@ function S(e) {
           let E = m.default.getUser(n);
           if (null == E) returnfalse;
           let v = false,
-            y = null;
+            I = null;
           if (null != i) {
             let t = i.type;
             if (null != t && function(e) {
@@ -85,7 +85,7 @@ function S(e) {
                 return t === O.IIU.PLAYING && null != e.application_id || t === O.IIU.LISTENING || t === O.IIU.WATCHING
               }(i)) {
               let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (g = i.name) ? g : "");
-              (null == (c = r.current[n]) ? true : c.presence) !== l && (v = true, e(n, "presence", l), y = {
+              (null == (c = r.current[n]) ? true : c.presence) !== l && (v = true, e(n, "presence", l), I = {
                 user: E,
                 activity: i
               })
@@ -95,13 +95,13 @@ function S(e) {
             let t = f.Z.getChannel(a);
             if (null != t) {
               let i = "voice-".concat(t.id);
-              (null == (b = r.current[n]) ? true : b.voice) !== i && (v = true, e(n, "voice", i), y = {
+              (null == (b = r.current[n]) ? true : b.voice) !== i && (v = true, e(n, "voice", i), I = {
                 user: E,
                 voiceChannel: t
               })
             }
           } else(null == (o = r.current[n]) ? true : o.voice) != null && (v = true, e(n, "voice", null));
-          return v && null != y && (_ = y, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
+          return v && null != I && (_ = I, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
             t(null), l.current = null
           }, 1e4)), v
         },
@@ -144,7 +144,7 @@ function S(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: y.container,
+      className: I.container,
       children: N((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
         targetElementRef: T,
         position: "bottom",
@@ -152,9 +152,9 @@ function S(e) {
         userId: t.user.id,
         children: n => {
           var i;
-          return (0, r.jsxs)(l.animated.div, C(I({
+          return (0, r.jsxs)(l.animated.div, C(y({
             ref: T,
-            className: y.activityWrapper,
+            className: I.activityWrapper,
             style: e
           }, n), {
             children: [(0, r.jsx)(o.Text, {
@@ -163,11 +163,11 @@ function S(e) {
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
               channel: t.voiceChannel,
               textVariant: "text-xs/medium",
-              textClassName: y.statusText
+              textClassName: I.statusText
             }) : (0, r.jsx)(c.Z, {
               activity: t.activity,
               textVariant: "text-xs/medium",
-              textClassName: y.statusText
+              textClassName: I.statusText
             })]
           }))
         }
@@ -175,7 +175,7 @@ function S(e) {
     }), (0, r.jsx)(_.Or, {
       popoutPosition: "bottom",
       popoutAlign: "left",
-      children: (e, i, l, a) => (0, r.jsx)(d.JO, C(I({}, l), {
+      children: (e, i, l, a) => (0, r.jsx)(d.JO, C(y({}, l), {
         ref: a,
         className: t,
         onClick: e,

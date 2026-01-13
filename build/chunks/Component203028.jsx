@@ -28,10 +28,10 @@ function O(e) {
     party: O,
     onUserContextMenu: v
   } = e, {
-    priorityMembers: y,
-    partiedMembers: I,
+    priorityMembers: I,
+    partiedMembers: y,
     guildContext: C
-  } = O, S = y[0], T = function(e) {
+  } = O, S = I[0], T = function(e) {
     let {
       priorityMembers: t,
       partiedMembers: n
@@ -66,14 +66,14 @@ function O(e) {
       partiedMembers: c,
       voiceChannels: u,
       currentActivities: d
-    } = e, p = i.length, g = c.length - p, O = d[0], v = null == O ? true : O.activity, y = null == O ? true : O.startedPlayingTime, I = {
+    } = e, p = i.length, g = c.length - p, O = d[0], v = null == O ? true : O.activity, I = null == O ? true : O.startedPlayingTime, y = {
       name: null != (t = null == v ? true : v.name) ? t : ""
     };
     if ((0, a.Z)(v) && null != v) return {
       subtitle: (0, r.jsx)(f.ZP, {
-        start: y,
+        start: I,
         location: f.ZP.Locations.ACTIVITY_FEED_NEW,
-        messageProps: I
+        messageProps: y
       }),
       icon: null
     };
@@ -97,9 +97,9 @@ function O(e) {
           };
           return {
             subtitle: (0, r.jsx)(f.ZP, {
-              start: y,
+              start: I,
               location: f.ZP.Locations.ACTIVITY_FEED_NEW,
-              messageProps: I
+              messageProps: y
             }), icon: null != e ? (0, r.jsx)(m.Z.Header.Icon, {
               src: null != e.getIconURL(b.Z) ? e.getIconURL(b.Z) : n(211827)
             }) : null
@@ -174,7 +174,7 @@ function O(e) {
         subtitle: (0, r.jsx)(f.ZP, {
           start: i,
           location: f.ZP.Locations.ACTIVITY_FEED_NEW,
-          messageProps: I
+          messageProps: y
         }),
         icon: null != n && null != n.getIconURL(b.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
           src: n.getIconURL(b.Z)
@@ -206,6 +206,6 @@ function O(e) {
     onSubtitleClick: P,
     onIconClick: P,
     onContextMenu: e => v(e, S.user),
-    displayNameFont: 1 === I.length ? Z : true
+    displayNameFont: 1 === y.length ? Z : true
   })
 }

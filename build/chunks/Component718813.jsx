@@ -23,7 +23,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk388596 = require("./388596.js");
 
-function I(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -216,9 +216,9 @@ class D extends(r = Chunk473749.PureComponent) {
         }
       }(n) : true,
       role: f ? "dialog" : true,
-      className: o()(y.layer, {
-        [y.baseLayer]: a,
-        [y.animating]: e,
+      className: o()(I.layer, {
+        [I.baseLayer]: a,
+        [I.animating]: e,
         "stop-animations": r === w
       }),
       style: p
@@ -249,7 +249,7 @@ class D extends(r = Chunk473749.PureComponent) {
     }
   }
   constructor(e) {
-    super(e), I(this, "containerRef", l.createRef());
+    super(e), y(this, "containerRef", l.createRef());
     let t = 1,
       n = 1;
     e.mode === w && (t = .93, n = 0), this.state = {
@@ -260,9 +260,9 @@ class D extends(r = Chunk473749.PureComponent) {
     }
   }
 }
-I(D, "defaultProps", {
+y(D, "defaultProps", {
   baseLayer: false
-}), I(D, "contextType", Chunk481060.Sfi);
+}), y(D, "contextType", Chunk481060.Sfi);
 class M extends Chunk473749.PureComponent {
   componentDidMount() {
     E.S.subscribe(O.CkL.LAYER_POP_ESCAPE_KEY, p.xf)
@@ -296,7 +296,7 @@ class M extends Chunk473749.PureComponent {
     return (0, i.jsx)(d.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: o()(y.bg, e)
+        className: o()(I.bg, e)
       })
     })
   }
@@ -304,7 +304,7 @@ class M extends Chunk473749.PureComponent {
     return (0, i.jsxs)(i.Fragment, {
       children: [this.renderArtisanalHack(), (0, i.jsx)(u.W, {
         component: "div",
-        className: o()(y.layers, this.props.className),
+        className: o()(I.layers, this.props.className),
         children: this.renderLayers()
       })]
     })

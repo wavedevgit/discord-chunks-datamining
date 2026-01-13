@@ -32,7 +32,7 @@ let b = e => {
   let {
     activeSubscription: E
   } = (0, o.Z)(null == _ ? true : _.id), O = (0, l.YB)(b.id), v = null == O ? true : O.description, {
-    editStateIds: y
+    editStateIds: I
   } = a.B7(null != (t = null == _ ? true : _.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.Z, {
@@ -52,7 +52,7 @@ let b = e => {
     }), (0, r.jsx)(i.y5t, {
       children: (0, r.jsx)(d.Z, {
         guildId: b.id,
-        children: y.map(e => {
+        children: I.map(e => {
           var t;
           return (0, r.jsx)(p.Z, {
             guildId: b.id,

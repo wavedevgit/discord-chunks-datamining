@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 967351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 }), require("./388685.js"), require("./415506.js"), require("./49124.js");
 var Chunk413135 = require("./413135.js"),
   Chunk836560 = require("./836560.js"),
@@ -148,7 +148,7 @@ class v extends Chunk76238.Z {
     super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, b(e, false)
   }
 }
-class y extends Chunk836560.EventEmitter {
+class I extends Chunk836560.EventEmitter {
   handleConnection(e) {
     let t = new v(e, "json"),
       n = setTimeout(() => {
@@ -201,4 +201,4 @@ class y extends Chunk836560.EventEmitter {
     })
   }
 }
-let I = new y
+let y = new I

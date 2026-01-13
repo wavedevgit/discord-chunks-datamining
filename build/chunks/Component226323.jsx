@@ -106,7 +106,7 @@ function A(e) {
       serverMute: D,
       serverDeaf: M
     } = e,
-    k = (0, o.e7)([y.Z], () => y.Z.isLocalMute(A.id)),
+    k = (0, o.e7)([I.Z], () => I.Z.isLocalMute(A.id)),
     U = (0, d.Z)({
       userId: A.id,
       checkSoundSharing: true
@@ -170,7 +170,7 @@ function A(e) {
       }))
     })
   }
-  let K = (0, o.e7)([I.Z], () => I.Z.getVoiceVolume(A.id)),
+  let K = (0, o.e7)([y.Z], () => y.Z.getVoiceVolume(A.id)),
     q = (0, m._)({
       isSpeaking: U,
       voiceDb: K,
@@ -245,7 +245,7 @@ function w(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, g, m), E = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(s.u, {
+  }(t, g, m), E = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), I = (0, r.jsx)(s.u, {
     text: O,
     ariaHidden: true,
     children: (0, r.jsx)(c.hU, {
@@ -257,8 +257,8 @@ function w(e) {
       variant: "icon-only",
       size: "sm"
     })
-  }), I = _ && u ? t : b;
-  return I.length <= 0 ? null : (0, r.jsx)(c.zJl, {
+  }), y = _ && u ? t : b;
+  return y.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(N.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
@@ -266,7 +266,7 @@ function w(e) {
       className: a()(N.voiceUsers, !u && N.collapsed),
       role: "group",
       "aria-label": T.intl.string(T.t["/ZgaVU"]),
-      children: [I.map(e => {
+      children: [y.map(e => {
         let {
           user: t,
           nick: i,
@@ -282,7 +282,7 @@ function w(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), _ ? y : null]
+      }), _ ? I : null]
     })
   })
 }

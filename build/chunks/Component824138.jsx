@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class I extends Chunk473749.PureComponent {
+class y extends Chunk473749.PureComponent {
   isHost() {
     let {
       currentUser: e,
@@ -128,7 +128,7 @@ class I extends Chunk473749.PureComponent {
         clickTrap: true,
         children: l => (0, r.jsx)(o.u, {
           text: n,
-          children: (0, i.createElement)(s.qEK, y(v({}, l), {
+          children: (0, i.createElement)(s.qEK, I(v({}, l), {
             key: e.id,
             src: e.getAvatarURL(true, 24),
             size: s.EFr.SIZE_24,
@@ -148,7 +148,7 @@ class I extends Chunk473749.PureComponent {
         targetElementRef: this.partyMemberOverflowRef,
         children: n => (0, r.jsx)(o.u, {
           text: _.intl.string(_.t.Zf4NPe),
-          children: (0, r.jsx)("div", y(v({}, n), {
+          children: (0, r.jsx)("div", I(v({}, n), {
             ref: this.partyMemberOverflowRef,
             className: a()(E.overflow, t),
             children: e
@@ -158,4 +158,4 @@ class I extends Chunk473749.PureComponent {
     })
   }
 }
-let C = I
+let C = y

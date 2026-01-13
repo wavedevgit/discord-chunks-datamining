@@ -71,7 +71,7 @@ function P(e) {
       gift_intent_type: k,
       affinity: null == t ? true : t.dmProbability,
       location_stack: U
-    }), B ? (0, y.Z)({
+    }), B ? (0, I.Z)({
       giftRecipient: M,
       analyticsLocations: U,
       analyticsLocation: S.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
@@ -146,7 +146,7 @@ function P(e) {
               gift_intent_type: k,
               cta_type: "send_message",
               location_stack: U
-            }), (0, I.PV)(M.id), (0, u.ZDy)(async () => {
+            }), (0, y.PV)(M.id), (0, u.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("5890").then(n.bind(n, 171793));

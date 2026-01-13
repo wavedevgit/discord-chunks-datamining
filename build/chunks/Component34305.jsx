@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 34305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -264,7 +264,7 @@ class v extends Chunk473749.PureComponent {
     })
   }
 }
-let y = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
+let I = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
   installationPaths: p.Z.installationPaths,
   installationPathsMetadata: p.Z.installationPathsMetadata,
   defaultInstallationPath: p.Z.defaultInstallationPath

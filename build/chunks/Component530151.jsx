@@ -261,8 +261,8 @@ class Y extends Chunk473749.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(y.Z, {
-      direction: y.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(I.Z, {
+      direction: I.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(g.Exd, {
         percent: t,
         size: g.Exd.Sizes.SMALL,
@@ -280,8 +280,8 @@ class Y extends Chunk473749.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(y.Z, {
-      direction: y.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(I.Z, {
+      direction: I.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(g.yGy, {
         percents: t,
         size: g.yGy.Sizes.SMALL,
@@ -490,8 +490,8 @@ let W = () => (0, r.jsx)(H, {
   J = [{
     key: "name",
     cellClassName: Chunk654069.nameCell,
-    render: e => (0, r.jsxs)(y.Z, {
-      align: y.Z.Align.CENTER,
+    render: e => (0, r.jsxs)(I.Z, {
+      align: I.Z.Align.CENTER,
       children: [(0, r.jsx)(C.Z, {
         game: e.application,
         className: M.__invalid_gameIcon,
@@ -527,8 +527,8 @@ let W = () => (0, r.jsx)(H, {
         item: e
       })) : i = (0, r.jsx)(Q, {
         item: e
-      }), (0, r.jsxs)(y.Z, {
-        justify: y.Z.Justify.END,
+      }), (0, r.jsxs)(I.Z, {
+        justify: I.Z.Justify.END,
         children: [n, i]
       })
     }
@@ -579,7 +579,7 @@ class X extends Chunk473749.PureComponent {
           }).hex(),
           animate: i
         })]
-      }), (0, r.jsx)(I.Z, {
+      }), (0, r.jsx)(y.Z, {
         hasHeader: false,
         columns: J,
         data: e,

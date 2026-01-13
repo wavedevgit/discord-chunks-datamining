@@ -26,12 +26,12 @@ function O(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, o.e7)([h.default], () => h.default.getCurrentUser()), v = i.useRef(null), y = (0, o.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
-    titlebarIconSize: I,
+  } = e, O = (0, o.e7)([h.default], () => h.default.getCurrentUser()), v = i.useRef(null), I = (0, o.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
+    titlebarIconSize: y,
     titlebarHoverHighlight: C
   } = (0, p.T)({
     location: "RecentsButton"
-  }), S = "sm" === I ? "refresh_sm" : "md", T = i.useMemo(() => (0, r.jsx)(u.xx7, {
+  }), S = "sm" === y ? "refresh_sm" : "md", T = i.useMemo(() => (0, r.jsx)(u.xx7, {
     size: S,
     color: "currentColor"
   }), [S]);
@@ -40,7 +40,7 @@ function O(e) {
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: y
+      badgeForYou: I
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
@@ -77,7 +77,7 @@ function O(e) {
             className: a()(E.clickable, {
               [E.withHighlight]: C
             }),
-            children: y || i ? (0, r.jsxs)(r.Fragment, {
+            children: I || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
                 mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
                 height: s.Z[S],

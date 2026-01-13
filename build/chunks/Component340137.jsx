@@ -55,7 +55,7 @@ function N(e) {
   } = (0, f.T)({
     location: "NotificationsInboxTitleBarButton"
   }), w = (0, r.jsx)(d.Dkj, {
-    className: I.icon,
+    className: y.icon,
     color: O || P ? d.TVs.colors.ICON_STRONG : d.TVs.colors.ICON_MUTED,
     size: Z
   }), {
@@ -73,7 +73,7 @@ function N(e) {
     }), (0, r.jsx)(u.u, {
       asContainer: true,
       shouldShow: !P,
-      text: y.intl.string(y.t.HcoRu0),
+      text: I.intl.string(I.t.HcoRu0),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -93,8 +93,8 @@ function N(e) {
         return e
       }({
         innerRef: h,
-        className: a()(I.clickableContainer, {
-          [I.withHoverHighlight]: A
+        className: a()(y.clickableContainer, {
+          [y.withHoverHighlight]: A
         })
       }, b, s), n = n = {
         onMouseEnter: () => {
@@ -108,7 +108,7 @@ function N(e) {
           null == l || l(), null == s || null == (e = s.onClick) || e.call(s)
         },
         children: [(0, r.jsx)("div", {
-          className: a()(I.iconWrapper, null),
+          className: a()(y.iconWrapper, null),
           children: "unread" === R ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(p.ZP, {
               width: c.Z[Z],
@@ -116,7 +116,7 @@ function N(e) {
               mask: p.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
               children: w
             }), (0, r.jsx)("div", {
-              className: a()(I.unreadDot, I[Z])
+              className: a()(y.unreadDot, y[Z])
             })]
           }) : w
         }), L]

@@ -43,7 +43,7 @@ function C(e) {
           color: "currentColor"
         })
     }
-  })(t), [t]), y = i.useMemo(() => (0, b.s)(t), [t]), C = n === t, S = i.useCallback(() => {
+  })(t), [t]), I = i.useMemo(() => (0, b.s)(t), [t]), C = n === t, S = i.useCallback(() => {
     switch (t) {
       case E.GlobalDiscoveryTab.QUESTS:
         return C && g.Z.resetState(), h.default.track(O.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
@@ -81,30 +81,30 @@ function C(e) {
   }, [t, C]);
   return (0, r.jsxs)(s.P3F, {
     onClick: S,
-    className: a()(I.navItem, {
-      [I.selected]: C
+    className: a()(y.navItem, {
+      [y.selected]: C
     }),
     children: [(0, r.jsx)("div", {
-      className: I.navItemIcon,
+      className: y.navItemIcon,
       children: l
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "none",
-      children: y
+      children: I
     })]
   })
 }
 let S = function() {
   return (0, r.jsxs)("div", {
-    className: I.container,
+    className: y.container,
     children: [(0, r.jsx)("div", {
-      className: I.header,
+      className: y.header,
       children: (0, r.jsx)(s.Heading, {
         variant: "text-lg/semibold",
-        children: y.intl.string(y.t["1KqYnl"])
+        children: I.intl.string(I.t["1KqYnl"])
       })
     }), (0, r.jsx)("nav", {
-      className: I.nav,
+      className: y.nav,
       children: E.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(C, {
         tab: e
       }, e))

@@ -56,10 +56,10 @@ let h = function(e) {
     isActive: E,
     onOtherHover: O,
     className: v
-  } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = () => {
-    I(true), !_ || E || C || null == O || O()
+  } = e, [I, y] = i.useState(false), [C, S] = i.useState(false), T = () => {
+    y(true), !_ || E || C || null == O || O()
   }, N = () => {
-    I(false)
+    y(false)
   };
   return (0, r.jsx)(s.mh, {
     id: m.id,
@@ -95,7 +95,7 @@ let h = function(e) {
           opacity: 1
         }
       }, e), {
-        children: l(y || E || C)
+        children: l(I || E || C)
       }))
     })
   })

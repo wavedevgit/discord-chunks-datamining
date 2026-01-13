@@ -23,14 +23,14 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function y() {
+function I() {
   var e;
   let t = r;
   if (null == t || !h.Z.isOpen(t)) returnfalse;
   i.Z.wait(() => l.xv(t)), null == (e = m.Z.getRTCConnection()) || e.setPipOpen(false), r = null
 }
 
-function I() {
+function y() {
   var e;
   let t = m.Z.getChannelId(),
     n = r === t;
@@ -47,8 +47,8 @@ function I() {
         }) || n)) returntrue;
       let r = f.Z.hasLayers();
       return !(r && f.Z.getLayers().includes(O.S9g.RTC_DEBUG)) && (!!r || e === t)
-    }()) return y();
-  if (n || y(), null == t) returnfalse;
+    }()) return I();
+  if (n || I(), null == t) returnfalse;
   let a = p.Z.getChannel(t);
   return !(null == a || h.Z.isOpen(t)) && (i.Z.wait(() => l.bA(a.id, O.NYg.VIDEO, {
     channel: a
@@ -56,10 +56,10 @@ function I() {
 }
 class C extends Chunk317770.Z {
   _initialize() {
-    b.Z.addChangeListener(I), _.Z.addChangeListener(I), m.Z.addChangeListener(I), E.Z.addChangeListener(I), f.Z.addChangeListener(I), d.Z.addChangeListener(I), u.Z.addChangeListener(I), g.Z.addChangeListener(I), o.ZP.addChangeListener(I), s.Z.addChangeListener(I)
+    b.Z.addChangeListener(y), _.Z.addChangeListener(y), m.Z.addChangeListener(y), E.Z.addChangeListener(y), f.Z.addChangeListener(y), d.Z.addChangeListener(y), u.Z.addChangeListener(y), g.Z.addChangeListener(y), o.ZP.addChangeListener(y), s.Z.addChangeListener(y)
   }
   _terminate() {
-    b.Z.removeChangeListener(I), _.Z.removeChangeListener(I), m.Z.removeChangeListener(I), E.Z.removeChangeListener(I), f.Z.removeChangeListener(I), d.Z.removeChangeListener(I), u.Z.removeChangeListener(I), g.Z.removeChangeListener(I), o.ZP.removeChangeListener(I), s.Z.removeChangeListener(I)
+    b.Z.removeChangeListener(y), _.Z.removeChangeListener(y), m.Z.removeChangeListener(y), E.Z.removeChangeListener(y), f.Z.removeChangeListener(y), d.Z.removeChangeListener(y), u.Z.removeChangeListener(y), g.Z.removeChangeListener(y), o.ZP.removeChangeListener(y), s.Z.removeChangeListener(y)
   }
 }
 let S = new C

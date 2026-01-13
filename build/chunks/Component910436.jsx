@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 910436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => I
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,18 +24,18 @@ var Chunk287734 = require("./287734.js"),
   Chunk817915 = require("./817915.js"),
   Chunk981631 = require("./981631.js");
 
-function y(e) {
+function I(e) {
   let {
     party: t,
     onChannelContextMenu: n,
-    quest: y
-  } = e, I = (0, E.L)(), {
+    quest: I
+  } = e, y = (0, E.L)(), {
     voiceChannels: C,
     currentActivities: S,
     partiedMembers: T,
     applicationStreams: N,
     guildContext: j
-  } = t, P = (0, p.z1)(y), x = [], Z = e => {
+  } = t, P = (0, p.z1)(I), x = [], Z = e => {
     let {
       length: t
     } = x;
@@ -72,7 +72,7 @@ function y(e) {
         Z(t);
         break
       }
-    } return N.length > 0 && I && N.forEach(e => {
+    } return N.length > 0 && y && N.forEach(e => {
     let {
       stream: t,
       streamUser: n,
@@ -88,7 +88,7 @@ function y(e) {
       }
     }, "application-stream-".concat(t.ownerId)))
   }), S.forEach((e, t) => {
-    var n, i, l, p, b, E, I, N, x;
+    var n, i, l, p, b, E, y, N, x;
     let {
       activity: A,
       game: w,
@@ -143,14 +143,14 @@ function y(e) {
       },
       getAssetImage: m.xF,
       members: L
-    }, "spotify-".concat(null != (I = A.session_id) ? I : t, "-").concat(R.id))) : (null != A.assets || (0, a.Z)(A)) && Z((0, r.jsx)(_.Z.RichPresenceSection, {
+    }, "spotify-".concat(null != (y = A.session_id) ? y : t, "-").concat(R.id))) : (null != A.assets || (0, a.Z)(A)) && Z((0, r.jsx)(_.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: m.xF,
       user: R
     }, "rich-presence-".concat(null != (N = A.session_id) ? N : t, "-").concat(R.id))));
-    P && null != y && null != w && (0, g._D)(A, y) && (null == y.userStatus || !(0, f.zE)(y.userStatus, d.jn.ACTIVITY_PANEL)) && Z((0, r.jsx)(h.Z, {
-      quest: y
-    }, "quest-".concat(y.id, "-").concat(null != (x = A.session_id) ? x : t)))
+    P && null != I && null != w && (0, g._D)(A, I) && (null == I.userStatus || !(0, f.zE)(I.userStatus, d.jn.ACTIVITY_PANEL)) && Z((0, r.jsx)(h.Z, {
+      quest: I
+    }, "quest-".concat(I.id, "-").concat(null != (x = A.session_id) ? x : t)))
   }), x.length > 0 ? (0, r.jsx)(_.Z.Body, {
     children: x
   }) : null

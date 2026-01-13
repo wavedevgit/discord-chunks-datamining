@@ -279,7 +279,7 @@ function tg(e) {
 let th = [{
   path: [Chunk981631.Z5c.ACTIVITY_DETAILS(":applicationId")],
   render: function(e) {
-    return (0, e7.$8)() || eK.default.getLoginStatus() === tt.u34.LOGGING_IN || !eK.default.allowLogoutRedirect() ? td(e) : (0, r.jsx)(I.Z, {
+    return (0, e7.$8)() || eK.default.getLoginStatus() === tt.u34.LOGGING_IN || !eK.default.allowLogoutRedirect() ? td(e) : (0, r.jsx)(y.Z, {
       applicationId: e.match.params.applicationId
     })
   }
@@ -554,7 +554,7 @@ function tb(e) {
 }
 class t_ extends Chunk473749.PureComponent {
   componentDidMount() {
-    e6.ZP.setZoomFactor(b.Z.zoom), eP.Z.init(), P.Z.initialize(), eE.Z.initialize(), Y.Z.initialize(), eW.Z.initialize(), W.Z.initialize(), ey.Z.initialize(), U.Z.initialize(), es.Z.initialize(), _.Z.init(), q.Z.init(), K.Z.init(), ef.Z.initialize(), C.Z.initialize(), B.Z.initialize(), eI.Z.initialize(), y.ZP.initialize(), V.ZP.initialize(), eY.Z.initialize(), ei.ZP.initialize(), e_.Z.initialize(), v.Z.initialize(), el.Z.init(), w.Z.init(), e2.Z.init(), O.Z.initialize(), ek.Z.init(), e8.Z.init(), eH.Z.init(), eL.Z.initialize(), eR.Z.initialize(), eG.Z.initialize(), eV.Z.init(), H.Z.initialize(), E.Z.initialize(), ex.Z.initialize(), ew.Z.initialize(), em.Z.initialize(), eh.Z.initialize(), eb.Z.initialize(), L.Z.initialize(), R.Z.initialize(), z.Z.initialize(), eo.Z.initialize(), ea.Z.init({
+    e6.ZP.setZoomFactor(b.Z.zoom), eP.Z.init(), P.Z.initialize(), eE.Z.initialize(), Y.Z.initialize(), eW.Z.initialize(), W.Z.initialize(), eI.Z.initialize(), U.Z.initialize(), es.Z.initialize(), _.Z.init(), q.Z.init(), K.Z.init(), ef.Z.initialize(), C.Z.initialize(), B.Z.initialize(), ey.Z.initialize(), I.ZP.initialize(), V.ZP.initialize(), eY.Z.initialize(), ei.ZP.initialize(), e_.Z.initialize(), v.Z.initialize(), el.Z.init(), w.Z.init(), e2.Z.init(), O.Z.initialize(), ek.Z.init(), e8.Z.init(), eH.Z.init(), eL.Z.initialize(), eR.Z.initialize(), eG.Z.initialize(), eV.Z.init(), H.Z.initialize(), E.Z.initialize(), ex.Z.initialize(), ew.Z.initialize(), em.Z.initialize(), eh.Z.initialize(), eb.Z.initialize(), L.Z.initialize(), R.Z.initialize(), z.Z.initialize(), eo.Z.initialize(), ea.Z.init({
       hasModalOpen: s.$sL,
       openModal: () => (0, s.ZDy)(async () => {
         let {
@@ -565,7 +565,7 @@ class t_ extends Chunk473749.PureComponent {
     }), ec.Z.initialize(), eC.Z.initialize(), eO.Z.initialize(), k.Z.initialize(), Z.Z.initialize(), A.Z.initialize(), S.Z.initialize(), this.rewriterUnlisten = eS.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.Z.addRouteChangeListener(this.handleHistoryChange)
   }
   componentWillUnmount() {
-    eP.Z.terminate(), eW.Z.terminate(), ey.Z.terminate(), eE.Z.terminate(), P.Z.terminate(), y.ZP.terminate(), V.ZP.terminate(), eY.Z.terminate(), v.Z.terminate(), eI.Z.terminate(), e_.Z.terminate(), eG.Z.terminate(), O.Z.terminate(), H.Z.terminate(), ec.Z.terminate(), E.Z.terminate(), eC.Z.terminate(), ex.Z.terminate(), ew.Z.terminate(), em.Z.terminate(), eh.Z.terminate(), eb.Z.terminate(), L.Z.terminate(), R.Z.terminate(), eO.Z.terminate(), k.Z.terminate(), F.Z.terminate(), Z.Z.terminate(), A.Z.terminate(), S.Z.terminate(), z.Z.terminate(), eo.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+    eP.Z.terminate(), eW.Z.terminate(), eI.Z.terminate(), eE.Z.terminate(), P.Z.terminate(), I.ZP.terminate(), V.ZP.terminate(), eY.Z.terminate(), v.Z.terminate(), ey.Z.terminate(), e_.Z.terminate(), eG.Z.terminate(), O.Z.terminate(), H.Z.terminate(), ec.Z.terminate(), E.Z.terminate(), eC.Z.terminate(), ex.Z.terminate(), ew.Z.terminate(), em.Z.terminate(), eh.Z.terminate(), eb.Z.terminate(), L.Z.terminate(), R.Z.terminate(), eO.Z.terminate(), k.Z.terminate(), F.Z.terminate(), Z.Z.terminate(), A.Z.terminate(), S.Z.terminate(), z.Z.terminate(), eo.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
   }
   handleHistoryChange(e, t) {
     let {

@@ -37,7 +37,7 @@ function x(e, t, n, r) {
       l = new a.Fh(e, () => {
         let e = t(),
           l = n(i, e);
-        null == l || y.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
+        null == l || I.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
       });
     return l.attach("useSound"), () => l.detach()
   })
@@ -82,12 +82,12 @@ function A() {
 }
 
 function w() {
-  return x([E.Z, I.Z, C.Z, u.default], () => {
+  return x([E.Z, y.Z, C.Z, u.default], () => {
     let e = E.Z.getChannel(C.Z.getVoiceChannelId()),
       t = null == e ? true : e.type,
       n = null == e ? true : e.getGuildId(),
-      r = I.Z.getWasEverRtcConnected(),
-      i = I.Z.getState();
+      r = y.Z.getWasEverRtcConnected(),
+      i = y.Z.getState();
     return {
       channelType: t,
       guildId: n,

@@ -214,8 +214,8 @@ function el(e) {
 let ea = e => {
   let t = (0, U.Z)();
   return (i.useEffect(() => {
-    (0, y.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
-  }, []), null == e.targetElementRef.current || R.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(I.ZP, {
+    (0, I.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
+  }, []), null == e.targetElementRef.current || R.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(y.ZP, {
     contentTypes: [u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK],
     children: n => {
       let {
@@ -293,8 +293,8 @@ let es = (0, Chunk112724.Z)(function(e) {
   i.useEffect(() => {
     null != h && !_ && E && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
   }, [h, E, b, _]);
-  let [y, I] = i.useState(q.pS.REQUESTS), Z = e => {
-    I(e)
+  let [I, y] = i.useState(q.pS.REQUESTS), Z = e => {
+    y(e)
   };
   return (0, v.Tt)({
     location: $.intl.string($.t.e7GWjQ)
@@ -320,7 +320,7 @@ let es = (0, Chunk112724.Z)(function(e) {
             })
           }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {
             "aria-label": $.intl.string($.t.e7GWjQ),
-            selectedItem: y,
+            selectedItem: I,
             type: "top-pill",
             onItemSelect: Z,
             children: [(0, r.jsx)(p.njP.Item, {
@@ -339,7 +339,7 @@ let es = (0, Chunk112724.Z)(function(e) {
       }), (0, r.jsx)("div", {
         className: et.content,
         children: (0, r.jsx)(eo, {
-          section: y
+          section: I
         })
       })]
     }), b && (0, r.jsx)(el, {

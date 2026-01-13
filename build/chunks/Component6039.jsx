@@ -61,7 +61,7 @@ let T = e => {
     ref: n,
     width: s,
     height: c
-  } = (0, o.ZP)(), [p, f] = i.useState(y.hO.INITIAL), T = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+  } = (0, o.ZP)(), [p, f] = i.useState(I.hO.INITIAL), T = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: j,
     guildPreviewDisabled: P
   } = (0, l.cj)([b.Z], () => ({
@@ -74,25 +74,25 @@ let T = e => {
     j || g.Z.fetchRequestToJoinGuilds()
   }, [j]);
   let x = i.useCallback(() => {
-      f(Math.max(p, y.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, u.uL)(v.Z5c.ME)
+      f(Math.max(p, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, u.uL)(v.Z5c.ME)
     }, [t, p]),
     Z = (e, t) => () => {
       (0, a.Z)({
-        title: I.intl.string(I.t.y0CVes),
+        title: y.intl.string(y.t.y0CVes),
         subtitle: e,
-        cancelText: I.intl.string(I.t.oEAioF),
+        cancelText: y.intl.string(y.t.oEAioF),
         onConfirm: t,
-        confirmText: I.intl.string(I.t.p89ACt)
+        confirmText: y.intl.string(y.t.p89ACt)
       })
     },
     A = async () => {
       await g.Z.resetGuildJoinRequest(t), (0, h.hk)(t)
     }, w = e => {
       if (!e) return void x();
-      Z(I.intl.format(I.t["9ZezpN"], {
+      Z(y.intl.format(y.t["9ZezpN"], {
         name: null == P ? true : P.name
       }), x)()
-    }, L = Z(I.intl.format(I.t.fJwWVt, {
+    }, L = Z(y.intl.format(y.t.fJwWVt, {
       name: null == P ? true : P.name
     }), x);
   return (0, r.jsxs)("div", {
@@ -114,9 +114,9 @@ let T = e => {
             });
           case m.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
-              reapplyText: I.intl.string(I.t.I1LYVk),
+              reapplyText: y.intl.string(y.t.I1LYVk),
               onReapply: A,
-              confirmText: I.intl.string(I.t.g9tK0o),
+              confirmText: y.intl.string(y.t.g9tK0o),
               onWithdrawApplication: w,
               rejectionReason: T.rejectionReason,
               guild: P

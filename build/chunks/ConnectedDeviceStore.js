@@ -35,15 +35,15 @@ let h = {
     id: null,
     justChanged: false
   },
-  y = {
+  I = {
     id: null,
     justChanged: false
   },
-  I = /\(([^)]+)\)/;
+  y = /\(([^)]+)\)/;
 
 function C(e) {
   if ((0, d.getPlatform)() === d.PlatformTypes.WINDOWS) {
-    let t = e.name.match(I);
+    let t = e.name.match(y);
     if (null != t) return t[1]
   }
   return e.name
@@ -81,7 +81,7 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return E
   }
   get lastOutputSystemDevice() {
-    return y
+    return I
   }
 }
 g(T, "displayName", "ConnectedDeviceStore"), g(T, "persistKey", "ConnectedDeviceStore"), g(T, "migrations", [e => {
@@ -127,11 +127,11 @@ let N = new T(Chunk570140.Z, {
       }
     });
     let i = {};
-    if (y.justChanged = false, n.forEach(e => {
+    if (I.justChanged = false, n.forEach(e => {
         if (i[C(e)] = e.id, e.id === f.w5) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
-          n !== y.id && (y.justChanged = true), y.id = n
+          n !== I.id && (I.justChanged = true), I.id = n
         }
       }), !b) {
       _ = r, E = i, b = true;

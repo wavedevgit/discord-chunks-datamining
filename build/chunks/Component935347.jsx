@@ -207,7 +207,7 @@ class P extends Chunk473749.PureComponent {
     }()), j(this, "handleReady", () => {
       this.setState({
         ready: true
-      }), (0, y.isDesktop)() && (I.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), I.ZP.send("UPDATE_OPEN_ON_STARTUP"))
+      }), (0, I.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
     }), j(this, "setVideoRef", e => {
       this.videoRef = e
     }), j(this, "setProblemsTimeout", () => {

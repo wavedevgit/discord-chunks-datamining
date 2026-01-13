@@ -483,11 +483,11 @@ eO.Header = eE, eO.Body = e => {
   } = eg({
     activity: c,
     user: d
-  }), E = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), I = (0, S.Z)({
+  }), E = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), y = (0, S.Z)({
     application: f,
     analyticsLocations: p
   });
-  return null != c.assets || (0, O.Z)(c) || null != I ? (0, i.jsxs)(ed, {
+  return null != c.assets || (0, O.Z)(c) || null != y ? (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: o()(ea.activitySection, {
         [ea.activitySectionWithButtons]: _
@@ -518,7 +518,7 @@ eO.Header = eE, eO.Body = e => {
           let {
             timestamps: e
           } = c;
-          return null == e || !(0, v.Z)(c) || (0, y.Z)(c) ? null : ec((0, O.Z)(c) ? (0, i.jsx)(eu, {
+          return null == e || !(0, v.Z)(c) || (0, I.Z)(c) ? null : ec((0, O.Z)(c) ? (0, i.jsx)(eu, {
             timestamps: e
           }) : (0, i.jsx)(B.ZP, {
             start: e.start,
@@ -602,7 +602,7 @@ eO.Header = eE, eO.Body = e => {
       assets: d,
       application_id: p
     } = r;
-  if (null != d && (0, I.Z)(r)) {
+  if (null != d && (0, y.Z)(r)) {
     var g;
     t = (0, i.jsx)(L.Z, {
       className: ea.twitchSectionPreviewWrapper,

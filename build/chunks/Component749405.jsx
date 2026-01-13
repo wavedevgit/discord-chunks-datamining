@@ -30,8 +30,8 @@ function g(e) {
     acceptMessageRequest: E,
     rejectMessageRequest: O,
     isAcceptLoading: v,
-    isRejectLoading: y,
-    isUserProfileLoading: I,
+    isRejectLoading: I,
+    isUserProfileLoading: y,
     isOptimisticAccepted: C,
     isOptimisticRejected: S
   } = (0, u.m)({
@@ -39,7 +39,7 @@ function g(e) {
     onAcceptSuccess: _,
     onRejectSuccess: b,
     onError: m
-  }), T = v || y || I || C || S;
+  }), T = v || I || y || C || S;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(d.Z, {
@@ -59,7 +59,7 @@ function g(e) {
             e.stopPropagation(), O(g.id)
           },
           disabled: T,
-          loading: y || S
+          loading: I || S
         })
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
@@ -72,7 +72,7 @@ function g(e) {
             e.stopPropagation(), E(g.id)
           },
           disabled: T,
-          loading: v || I || C
+          loading: v || y || C
         })
       })]
     })]

@@ -24,14 +24,14 @@ let b = [],
     let [n, O] = (0, f.P)(), v = i.useMemo(() => {
       var e, t;
       return null !== (t = n.get(_), e = (0, s.Ew)(t) ? null : Object.values(g.yq).find(e => e === t) || null) && true !== e ? e : g.yq.SUGGESTED
-    }, [n]), y = i.useMemo(() => {
+    }, [n]), I = i.useMemo(() => {
       var e;
       return null != (e = function(e) {
         if ((0, s.Ew)(e)) return null;
         let t = e.split(",").map(e => (0, g.fI)(e)).filter(o.lm);
         return t.length > 0 ? t : null
       }(n.get(E))) ? e : b
-    }, [n]), I = i.useCallback(e => {
+    }, [n]), y = i.useCallback(e => {
       O({
         [_]: e
       })
@@ -51,14 +51,14 @@ let b = [],
       hasFetched: j
     } = (0, c.bA)(c.e5.ALL, i.useMemo(() => ({
       sortMethod: v,
-      filters: y
-    }), [v, y])), P = i.useCallback(() => {
+      filters: I
+    }), [v, I])), P = i.useCallback(() => {
       C(b)
     }, [C]), x = i.useRef(null), Z = i.useRef(null), A = (0, l.TH)(), w = (0, l.k6)();
     return i.useEffect(() => {
       if ("" !== A.hash && null != x.current && null != Z.current) {
         var e, t;
-        (v !== x.current || y !== Z.current) && w.replace((e = function(e) {
+        (v !== x.current || I !== Z.current) && w.replace((e = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -88,19 +88,19 @@ let b = [],
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e))
       }
-    }, [v, y, A, w]), i.useEffect(() => {
+    }, [v, I, A, w]), i.useEffect(() => {
       x.current = v
     }, [v]), i.useEffect(() => {
-      Z.current = y
-    }, [y]), (0, c.SU)({
+      Z.current = I
+    }, [I]), (0, c.SU)({
       selectedSortMethod: v,
-      selectedFilters: y,
+      selectedFilters: I,
       numQuestsVisible: S.length
     }), i.useImperativeHandle(t, () => ({
       resetSortingFiltering: () => {
-        P(), I(g.yq.SUGGESTED)
+        P(), y(g.yq.SUGGESTED)
       }
-    }), [P, I]), (0, r.jsxs)(r.Fragment, {
+    }), [P, y]), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: m.headingWrapper,
         children: [(0, r.jsx)(a.Heading, {
@@ -109,12 +109,12 @@ let b = [],
         }), (0, r.jsxs)("div", {
           className: m.headingControls,
           children: [(0, r.jsx)(d.Z, {
-            onChange: I,
+            onChange: y,
             optionClassName: m.filterSortOption,
             selectedSortMethod: v
           }), (0, r.jsx)(u.Z, {
             onChange: C,
-            selectedFilters: y
+            selectedFilters: I
           })]
         })]
       }), (0, r.jsx)(p.Z, {
@@ -122,7 +122,7 @@ let b = [],
         excludedQuests: T,
         isFetching: N,
         hasFetched: j,
-        hasFiltersApplied: y.length > 0,
+        hasFiltersApplied: I.length > 0,
         onClearFilters: P
       })]
     })

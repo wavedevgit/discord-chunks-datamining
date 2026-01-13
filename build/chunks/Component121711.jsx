@@ -276,7 +276,7 @@ let eE = function(e) {
   i.useEffect(() => {
     (0, f.Y)(er.Z5c.QUEST_HOME_V2)
   }, []), i.useEffect(() => {
-    I.C.trigger()
+    y.C.trigger()
   }, []);
   let ed = (0, V.T)({
     location: en.dr.QUEST_PREVIEW_TOOL_2
@@ -312,7 +312,7 @@ let eE = function(e) {
       })
     }
   }, [n.search, v, ed, l.action, n.hash, t]), i.useEffect(() => {
-    t && (0, y.Q3)(d.z.QUEST_HOME_ENTRYPOINT_ONBOARDING)
+    t && (0, I.Q3)(d.z.QUEST_HOME_ENTRYPOINT_ONBOARDING)
   }, [t]);
   let ep = i.useCallback(() => {
       (0, Y.navigateToQuestHome)({

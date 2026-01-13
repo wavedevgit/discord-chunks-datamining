@@ -218,7 +218,7 @@ class eu extends Chunk473749.PureComponent {
         animation: d.yRy.Animation.SCALE,
         shouldShow: n,
         onRequestClose: () => {
-          (0, y.l)(false)
+          (0, I.l)(false)
         },
         spacing: 4,
         children: i => {
@@ -332,7 +332,7 @@ class eu extends Chunk473749.PureComponent {
       let {
         isHeaderPopoutOpen: t
       } = this.props;
-      e.stopPropagation(), (0, y.l)(!t), this.closeAllHeaderNotices()
+      e.stopPropagation(), (0, I.l)(!t), this.closeAllHeaderNotices()
     }), ei(this, "handleContextMenu", e => {
       let {
         guild: t
@@ -469,14 +469,14 @@ function ed(e) {
   }, [n, q, Y]);
   let [J, et] = (0, E.ZP)(e => [$.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ee.R.GUILD_HEADER_TOOLTIPS)], a.X), en = (0, _.Z)(u), er = (0, d.s9z)(d.JQI), ei = (0, o.e7)([G.Z], () => G.Z.hasLayers()), el = (0, o.e7)([L.Z], () => L.Z.shouldShow(es)), ea = (0, S.Z)(n), eo = (null == u ? true : u.features.has(X.GuildFeatures.HUB)) === true, ec = P && (null == u ? true : u.features.has(X.GuildFeatures.DISCOVERABLE)) === true, ed = (0, o.e7)([N.Z, G.Z], () => null != u && null != w && P && !G.Z.hasLayers() && N.Z.shouldShowGuildTemplateDirtyTooltip(n)), ep = (0, o.e7)([R.Z], () => R.Z.getChannel(c)), {
     isPopoutOpen: ef
-  } = (0, y.y)(), eg = null != (t = null == u ? true : u.features.has(X.GuildFeatures.COMMUNITY)) && t, eh = z.ZP.isNewUser(w), em = W && !eh;
-  (0, I.Z)(u);
+  } = (0, I.y)(), eg = null != (t = null == u ? true : u.features.has(X.GuildFeatures.COMMUNITY)) && t, eh = z.ZP.isNewUser(w), em = W && !eh;
+  (0, y.Z)(u);
   let eb = (0, O.Nj)(s.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     e_ = (0, x.Z)(n),
     eE = (0, C.Z)(n),
     eO = (0, o.e7)([V.Z], () => V.Z.getChannelId()),
     ev = (0, o.e7)([B.Z], () => B.Z.desyncedVoiceStatesCount),
-    ey = (0, Z.Z)(n);
+    eI = (0, Z.Z)(n);
   return (0, r.jsx)(eu, {
     guildId: n,
     hideSelectedChannel: l,
@@ -507,6 +507,6 @@ function ed(e) {
     headerAnalyticsLocations: Q,
     isTutorialHighlightDismissed: eb,
     shouldRenderBurstCoachmark: em,
-    shouldRenderGuildPowerupPerkCoachmark: false === ey
+    shouldRenderGuildPowerupPerkCoachmark: false === eI
   })
 }

@@ -59,7 +59,7 @@ function j(e) {
         isFrameInFocusedMode: g.Z.getFrameLayoutMode() === C.U.FOCUSED
       }
     }),
-    B = null != G ? y.ZP.getApplicationIconURL({
+    B = null != G ? I.ZP.getApplicationIconURL({
       id: G.id,
       icon: G.icon,
       bot: G.bot
@@ -82,19 +82,19 @@ function j(e) {
     className: N.guildIcon
   }), l = R.name) : null != w && (w.isDM() || w.isGroupDM()) ? (l = S.intl.string(S.t.YUU0RF), V = (0, r.jsx)(u.gw7, {
     size: k
-  })) : x.pathname.startsWith(I.Z5c.ICYMI) ? (l = S.intl.string(S.t["jnXV/V"]), V = (0, r.jsx)(u.qOE, {
+  })) : x.pathname.startsWith(y.Z5c.ICYMI) ? (l = S.intl.string(S.t["jnXV/V"]), V = (0, r.jsx)(u.qOE, {
     size: k
-  })) : x.pathname.startsWith(I.Z5c.GLOBAL_DISCOVERY) ? (l = S.intl.string(S.t["4nEZLk"]), V = (0, r.jsx)(u.Jmo, {
+  })) : x.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (l = S.intl.string(S.t["4nEZLk"]), V = (0, r.jsx)(u.Jmo, {
     size: k
-  })) : x.pathname.startsWith(I.Z5c.NITRO_HOME) ? (l = S.intl.string(S.t.Ipxkog), V = (0, r.jsx)(u.SrA, {
+  })) : x.pathname.startsWith(y.Z5c.NITRO_HOME) ? (l = S.intl.string(S.t.Ipxkog), V = (0, r.jsx)(u.SrA, {
     size: k
-  })) : x.pathname.startsWith(I.Z5c.COLLECTIBLES_SHOP) ? (l = S.intl.string(S.t.pWG4ze), V = (0, r.jsx)(u.EOn, {
+  })) : x.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (l = S.intl.string(S.t.pWG4ze), V = (0, r.jsx)(u.EOn, {
     size: k
-  })) : x.pathname.startsWith(I.Z5c.FRIENDS) ? (l = S.intl.string(S.t.TdEu5X), V = (0, r.jsx)(u.iFz, {
+  })) : x.pathname.startsWith(y.Z5c.FRIENDS) ? (l = S.intl.string(S.t.TdEu5X), V = (0, r.jsx)(u.iFz, {
     size: k
-  })) : x.pathname.startsWith(I.Z5c.FAMILY_CENTER) ? (l = S.intl.string(T.default.RZqaJn), V = (0, r.jsx)(u.BFJ, {
+  })) : x.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (l = S.intl.string(T.default.RZqaJn), V = (0, r.jsx)(u.BFJ, {
     size: k
-  })) : x.pathname.startsWith(I.Z5c.QUEST_HOME_V2) && (l = S.intl.string(S.t.JALI2K), V = (0, r.jsx)(u.qDn, {
+  })) : x.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (l = S.intl.string(S.t.JALI2K), V = (0, r.jsx)(u.qDn, {
     size: k
   }));
   let F = i.useCallback(e => {

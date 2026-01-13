@@ -134,7 +134,7 @@ class A extends Chunk473749.PureComponent {
       applicationStream: i,
       isMobile: a,
       isGameRelationship: o
-    }) : (0, r.jsx)(y.Z, {
+    }) : (0, r.jsx)(I.Z, {
       ref: this.peopleListItemRef,
       isFocused: t,
       isActive: m,
@@ -147,7 +147,7 @@ class A extends Chunk473749.PureComponent {
           user: e,
           status: l,
           isMobile: a,
-          subText: (0, r.jsx)(I.Z, {
+          subText: (0, r.jsx)(y.Z, {
             hovered: t,
             activities: n,
             applicationStream: i,

@@ -432,21 +432,21 @@ function H(e) {
       applicationViewItems: r,
       filterQuery: a,
       fetched: o
-    } = (0, c.cj)([y.Z], () => ({
-      applicationViewItems: y.Z.sortedFilteredLibraryApplicationViewItems,
-      filterQuery: y.Z.applicationFilterQuery,
-      fetched: y.Z.hasFetchedApplications
+    } = (0, c.cj)([I.Z], () => ({
+      applicationViewItems: I.Z.sortedFilteredLibraryApplicationViewItems,
+      filterQuery: I.Z.applicationFilterQuery,
+      fetched: I.Z.hasFetchedApplications
     })),
     {
       sortKey: u,
       sortDirection: d,
       activeRowKey: p,
       isNavigatingByKeyboard: f
-    } = (0, c.cj)([I.Z], () => ({
-      sortKey: I.Z.sortKey,
-      sortDirection: I.Z.sortDirection,
-      activeRowKey: I.Z.activeRowKey,
-      isNavigatingByKeyboard: I.Z.isNavigatingByKeyboard
+    } = (0, c.cj)([y.Z], () => ({
+      sortKey: y.Z.sortKey,
+      sortDirection: y.Z.sortDirection,
+      activeRowKey: y.Z.activeRowKey,
+      isNavigatingByKeyboard: y.Z.isNavigatingByKeyboard
     }));
   return (0, i.jsx)(G, w(A({}, e), {
     analyticsContext: t,

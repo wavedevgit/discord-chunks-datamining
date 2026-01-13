@@ -29,9 +29,9 @@ function b() {
     v = null == (e = g.default.getCurrentUser()) ? true : e.id;
   if (null == O || null == v) return;
   let {
-    reachedLimit: y
+    reachedLimit: I
   } = (0, s.t)(O);
-  if (!y) {
+  if (!I) {
     if (O.isGuildStageVoice()) {
       let e = l.Z.getMutableParticipants(O.id, a.pV.SPEAKER),
         t = null == e ? true : e.find(e => {

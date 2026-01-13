@@ -43,16 +43,16 @@ function h(e) {
     }), _.current = true
   }, [t, O, E, l, h]);
   let v = null != O,
-    [y, I] = i.useState(window.innerWidth);
+    [I, y] = i.useState(window.innerWidth);
   i.useEffect(() => {
     let e = (0, o.debounce)(() => {
-      I(window.innerWidth)
+      y(window.innerWidth)
     }, 250);
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let C = y >= 1610 ? 3 : y >= 1340 ? 2 : 1;
+  let C = I >= 1610 ? 3 : I >= 1340 ? 2 : 1;
   return l && 0 === t.length ? (0, r.jsx)(c.$jN, {
     className: g.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {

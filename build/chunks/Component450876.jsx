@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk566888 = require("./566888.js");
 
-function I(e) {
+function y(e) {
   var t, n;
   let {
     analyticsLocations: i
@@ -80,16 +80,16 @@ let C = Chunk473749.memo(function() {
   } = (0, f.Z)();
   return (0, r.jsx)("section", {
     ref: e,
-    className: a()(y.panels, {
-      [y.disablePointersWhileSorting]: t
+    className: a()(I.panels, {
+      [I.disablePointersWhileSorting]: t
     }),
     "aria-label": v.intl.string(v.t.StREWK),
     children: (0, r.jsxs)(o.JcV, {
       containerRef: e,
       children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(c.Z, {
         section: O.jXE.ACTIVITY_PANEL,
-        children: (0, r.jsx)(I, {
-          className: y.activityPanel
+        children: (0, r.jsx)(y, {
+          className: I.activityPanel
         })
       }), (0, r.jsx)(c.Z, {
         section: O.jXE.RTC_CONNECTION_PANEL,

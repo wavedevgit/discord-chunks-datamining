@@ -42,7 +42,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
     } = e, o = i.useRef(null), c = (0, r.jsx)(C.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(I.Z, {
+    }), d = (0, r.jsx)(y.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -63,7 +63,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, _, E, g]), y = i.useMemo(() => s()(v, A), [v]);
+    }, [m, b, _, E, g]), I = i.useMemo(() => s()(v, A), [v]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -101,7 +101,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
           return e
         }({}, e), i = i = {
           ref: o,
-          onMouseEnter: y,
+          onMouseEnter: I,
           "aria-haspopup": "menu",
           className: Z.itemCard,
           active: l,
@@ -137,7 +137,7 @@ function R() {
     fetching: b.Z.isFetching(),
     currentUser: _.default.getCurrentUser()
   })), o = (0, c.e7)([p.Z], () => p.Z.quests), s = (0, f.Fy)(Array.from(o.values()));
-  i.useEffect(() => (d.Z.wait(() => y.L()), () => d.Z.wait(() => y.v())), [null == a ? true : a.id]), i.useEffect(() => {
+  i.useEffect(() => (d.Z.wait(() => I.L()), () => d.Z.wait(() => I.v())), [null == a ? true : a.id]), i.useEffect(() => {
     n && !l && L()
   }, [n, l]);
   let m = i.useMemo(() => {

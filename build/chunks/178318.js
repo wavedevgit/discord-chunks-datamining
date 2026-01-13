@@ -36,8 +36,8 @@ try {
   } catch (e) {}
 }
 let v = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
-  y = window.GLOBAL_ENV.MARKETING_ENDPOINT,
-  I = new Chunk710845.Z("RPCServer:WSS"),
+  I = window.GLOBAL_ENV.MARKETING_ENDPOINT,
+  y = new Chunk710845.Z("RPCServer:WSS"),
   C = [];
 
 function S(e) {
@@ -49,7 +49,7 @@ function T() {
     t = e > 0 ? true : () => {
       if (!S(i.listening)) return;
       let e = i.address().port;
-      I.info("Starting on ".concat(e)), s.Z.dispatch({
+      y.info("Starting on ".concat(e)), s.Z.dispatch({
         type: "RPC_SERVER_READY",
         port: e
       })
@@ -89,7 +89,7 @@ function j(e, t, n, r) {
 }
 class P extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, g.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
+    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && y.info("Socket Emit: ".concat(this.id), (0, g.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
     }) : this._socket.send(JSON.stringify(e))
   }
@@ -108,7 +108,7 @@ class P extends Chunk76238.Z {
 }
 class x extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
+    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && y.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
   close(e, t) {
     this._closeCallback(t, e)
@@ -136,7 +136,7 @@ class Z extends Chunk836560.EventEmitter {
             protocol: i,
             host: l
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
-          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
+          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", I), t.writeHead(301), t.end()
         },
         s = new x(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
@@ -167,8 +167,8 @@ class Z extends Chunk836560.EventEmitter {
       e.close(t.code, t.message);
       return
     }
-    I.info("Socket Opened: ".concat(r.id)), e.on("error", e => I.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
-      I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), o().remove(C, e => e === r), this.emit("disconnect", r)
+    y.info("Socket Opened: ".concat(r.id)), e.on("error", e => y.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
+      y.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), o().remove(C, e => e === r), this.emit("disconnect", r)
     }), (0, m.em)(r, l, i.get("client_id")).then(() => {
       C.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {
@@ -188,14 +188,14 @@ class Z extends Chunk836560.EventEmitter {
     } catch (t) {
       e.close(_.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
       return
-    }(u.default.isLoggingOverlayEvents || n.cmd !== _.Etm.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, g.Z)(n)), this.emit("request", e, n)
+    }(u.default.isLoggingOverlayEvents || n.cmd !== _.Etm.OVERLAY) && y.info("Socket Message: ".concat(e.id), (0, g.Z)(n)), this.emit("request", e, n)
   }
   constructor() {
     var e;
     super();
     let t = 0;
     (i = v.http.createServer()).on("error", e => {
-      I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
+      y.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
     }), i.on("request", this.handleRequest.bind(this)), T(t);
     let n = {
       instanceId: null != (e = i.instanceId) ? e : 0,

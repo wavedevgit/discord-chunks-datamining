@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 491575, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk718813 = require("./718813.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk358091 = require("./358091.js");
-let I = Chunk473749.memo(function() {
+let y = Chunk473749.memo(function() {
   let e = (0, c.Z)(),
     t = i.useRef(null),
     n = i.useCallback(e => {
@@ -41,9 +41,9 @@ let I = Chunk473749.memo(function() {
     _.S.unsubscribe(v.CkL.SHAKE_APP, n)
   }), [n]), (0, f.Z)(), (0, r.jsxs)(o.F0h, {
     ref: t,
-    className: y.app,
+    className: I.app,
     children: [(0, r.jsx)(O.Z, {
-      className: y.layers,
+      className: I.layers,
       children: (0, r.jsx)(h.Z, {})
     }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(s.Z, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(m.Z, {}), !e && (0, r.jsx)(o.c43, {})]
   })

@@ -164,63 +164,63 @@ let M = {
       } = e;
       switch (P.ZP.focus(), t) {
         case A.jE.USER_SETTINGS:
-          null != r && ((0, I.dL)({
+          null != r && ((0, y.dL)({
             pathname: w.Z5c.SETTINGS(r.section, r.subsection),
             search: r.search
           }), D(r.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.CHANGELOG:
-          null != r && ((0, I.dL)(j.Z.formatPathWithQuery(w.Z5c.CHANGELOGS(r.date), r.query)), D(r.fingerprint, (0, A.O)(t)));
+          null != r && ((0, y.dL)(j.Z.formatPathWithQuery(w.Z5c.CHANGELOGS(r.date), r.query)), D(r.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.LIBRARY:
-          (0, I.dL)(w.Z5c.APPLICATION_LIBRARY), null != r && D(r.fingerprint, (0, A.O)(t));
+          (0, y.dL)(w.Z5c.APPLICATION_LIBRARY), null != r && D(r.fingerprint, (0, A.O)(t));
           break;
         case A.jE.STORE_HOME:
-          (0, I.dL)(w.Z5c.APPLICATION_STORE), null != r && D(r.fingerprint, (0, A.O)(t));
+          (0, y.dL)(w.Z5c.APPLICATION_STORE), null != r && D(r.fingerprint, (0, A.O)(t));
           break;
         case A.jE.STORE_LISTING:
-          null != r && ((0, I.dL)(w.Z5c.APPLICATION_STORE_LISTING_SKU(r.skuId, r.slug)), D(r.fingerprint, (0, A.O)(t)));
+          null != r && ((0, y.dL)(w.Z5c.APPLICATION_STORE_LISTING_SKU(r.skuId, r.slug)), D(r.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.PICK_GUILD_SETTINGS:
-          null != r && ((0, I.dL)({
+          null != r && ((0, y.dL)({
             pathname: w.Z5c.PICK_GUILD_SETTINGS(r.section, r.subsection),
             search: r.search
           }), D(r.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.CHANNEL:
-          null != r && ((0, I.dL)({
+          null != r && ((0, y.dL)({
             pathname: w.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId),
             search: r.search
           }), D(r.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.GAME_SHOP:
-          null != r && ((0, I.dL)({
+          null != r && ((0, y.dL)({
             pathname: w.Z5c.CHANNELS_GAME_SHOP(r.guildId, r.pageIndex, r.skuId, r.slug)
           }), D(r.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.QUEST_HOME:
           if (null != r) {
             let e = new URLSearchParams;
-            null != r.sort && e.set(y.tR.SORT, r.sort), null != r.filter && e.set(y.tR.FILTER, r.filter), null != r.tab && e.set(y.tR.TAB, r.tab), (0, I.dL)({
+            null != r.sort && e.set(I.tR.SORT, r.sort), null != r.filter && e.set(I.tR.FILTER, r.filter), null != r.tab && e.set(I.tR.TAB, r.tab), (0, y.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               hash: r.questId,
               search: "?".concat(e.toString())
             }), D(r.fingerprint, (0, A.O)(t))
-          } else(0, I.dL)(w.Z5c.QUEST_HOME_V2);
+          } else(0, y.dL)(w.Z5c.QUEST_HOME_V2);
           break;
         case A.jE.QUEST_PREVIEW_TOOL:
           if ((0, v.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != r) {
             let e = new URLSearchParams;
-            e.set(y.tR.TAB, y.e5.PREVIEW_TOOL), null != r.questId && e.set(y.tR.QUEST_ID, r.questId), (0, I.dL)({
+            e.set(I.tR.TAB, I.e5.PREVIEW_TOOL), null != r.questId && e.set(I.tR.QUEST_ID, r.questId), (0, y.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
             }), D(r.fingerprint, (0, A.O)(t))
           }
           break;
         case A.jE.DISCOVERY_GAME_RESULTS:
-          null != r && ((0, I.dL)({
+          null != r && ((0, y.dL)({
             pathname: w.Z5c.GLOBAL_DISCOVERY_SERVERS,
             search: "?game=".concat(r.gameId)
           }), D(r.fingerprint, (0, A.O)(t)));
@@ -237,13 +237,13 @@ let M = {
           }), D(r.fingerprint, (0, A.O)(t)), true;
           returnfalse;
         case A.jE.SHOP:
-          null != r && ((0, I.dL)({
+          null != r && ((0, y.dL)({
             pathname: w.Z5c.COLLECTIBLES_SHOP,
             search: r.search
           }), D(r.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.FEATURES:
-          (null == r ? true : r.path) != null && ((0, I.dL)({
+          (null == r ? true : r.path) != null && ((0, y.dL)({
             pathname: r.path
           }), D(r.fingerprint, (0, A.O)(t)));
           break;

@@ -1,94 +1,64 @@
 /** Chunk was on 1272 **/
 /** chunk id: 474486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => u,
-  l: () => d
+  C: () => d,
+  l: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk119269 = require("./119269.jsx"),
   Chunk227140 = require("./227140.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk630942 = require("./630942.js");
-let u = e => {
+let d = e => {
     let {
       children: t
     } = e, n = (0, r.jsxs)("div", {
-      className: c.coachTipContainer,
+      className: u.nitroTabCoachtipContainer,
       children: [(0, r.jsx)("div", {
-        className: c.iconContainer,
-        children: (0, r.jsx)(a.ZP, {
+        className: u.iconContainer,
+        children: (0, r.jsx)(o.ZP, {
           staticPercentage: 100,
-          iconClassName: c.icon,
+          iconClassName: u.icon,
           showAnimations: true,
-          progressCircleVariation: a.Qo.NITRO_LOGO,
+          progressCircleVariation: o.Qo.NITRO_LOGO,
           ellipseOpacity: 1,
-          customAnimationClassName: c.customCircleAnimation,
+          customAnimationClassName: u.customCircleAnimation,
           circleColor: "url(#purple-gradient)"
         })
       }), (0, r.jsxs)("div", {
-        className: c.coachtipContent,
-        children: [(0, r.jsx)(l.Heading, {
+        className: u.coachtipContent,
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-sm/bold",
-          children: s.intl.string(s.t.USo4s7)
-        }), (0, r.jsx)(l.Text, {
+          children: c.intl.string(c.t.USo4s7)
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
-          children: s.intl.format(s.t.AGKQq6, {
+          children: c.intl.format(c.t.AGKQq6, {
             numReferrals: 3
           })
         })]
       })]
     });
-    return (0, r.jsx)(l.aML, {
-      text: n,
+    return (0, r.jsx)(l.u, {
+      __unsupportedReactNodeAsText: n,
       position: "right",
-      "aria-label": s.intl.string(s.t.USo4s7),
-      tooltipClassName: c.marketingBadgeTooltip,
-      allowOverflow: true,
-      tooltipContentClassName: c.tooltipContent,
-      children: e => {
-        var n, i;
-        return (0, r.jsx)("div", (n = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, e), i = i = {
-          children: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-        }), n))
-      }
+      "aria-label": c.intl.string(c.t.USo4s7),
+      asContainer: true,
+      children: (0, r.jsx)("div", {
+        children: t
+      })
     })
   },
-  d = e => {
+  p = e => {
     let {
       isSelected: t,
       onSelect: n
     } = e;
     return i.useEffect(() => {
       t && n()
-    }, [t, n]), (0, r.jsx)(o.Z, {
-      copy: s.intl.string(s.t.y2b7CA)
+    }, [t, n]), (0, r.jsx)(s.Z, {
+      copy: c.intl.string(c.t.y2b7CA)
     })
   }

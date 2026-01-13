@@ -128,9 +128,9 @@ let j = (0, Chunk473749.memo)(function(e) {
           guildId: null,
           animateOnHover: !A
         })
-      }), K ? (0, r.jsx)(y.Z, {
+      }), K ? (0, r.jsx)(I.Z, {
         className: N.image
-      }) : Q ? (0, r.jsx)(I.Z, {
+      }) : Q ? (0, r.jsx)(y.Z, {
         className: N.image,
         isAnimated: A,
         questName: Z.config.messages.questName

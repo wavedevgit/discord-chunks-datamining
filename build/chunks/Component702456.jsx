@@ -42,9 +42,9 @@ function A(e) {
   } = e, {
     status: o,
     isMobile: c
-  } = (0, s.cj)([y.Z], () => ({
-    status: y.Z.getStatus(i.id),
-    isMobile: y.Z.isMobileOnline(i.id)
+  } = (0, s.cj)([I.Z], () => ({
+    status: I.Z.getStatus(i.id),
+    isMobile: I.Z.isMobileOnline(i.id)
   })), d = (0, s.e7)([C.Z, O.Z], () => {
     let e = O.Z.getDMFromUserId(i.id);
     return null != e && C.Z.isTyping(e, i.id)
@@ -91,7 +91,7 @@ function A(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, _ = 0 === l, v = _ ? u.YqE : a ? u.XcD : true, I = _ ? x.intl.string(x.t.aI4VOL) : a ? x.intl.string(x.t.kABl2x) : true;
+  }, _ = 0 === l, v = _ ? u.YqE : a ? u.XcD : true, y = _ ? x.intl.string(x.t.aI4VOL) : a ? x.intl.string(x.t.kABl2x) : true;
   return (0, r.jsx)(u.P3F, {
     className: Z.frequentFriendAvatarButton,
     onClick: b,
@@ -109,7 +109,7 @@ function A(e) {
       size: u.EFr.SIZE_32,
       CutoutIcon: v,
       avatarTooltipAsset: _ ? "\uD83D\uDD25" : a ? "❄️" : true,
-      avatarTooltipText: I,
+      avatarTooltipText: y,
       statusTooltip: true,
       statusTooltipDelay: 50,
       avatarTooltipTitle: null != (n = i.globalName) ? n : i.username
@@ -122,13 +122,13 @@ function w() {
     enabled: e
   } = (0, j.Q)("frequent_friends_row"), t = function() {
     let e = (0, s.Wu)([_.Z], () => [..._.Z.getUserAffinities()].sort((e, t) => _.Z.compare(e.otherUserId, t.otherUserId))),
-      t = (0, s.Wu)([S.default, I.Z], () => {
+      t = (0, s.Wu)([S.default, y.Z], () => {
         let t = e.map(e => e.otherUserId),
           n = [];
         for (let e of t)
           if (n.length < 5) {
             let t = S.default.getUser(e);
-            !(0, N.lm)(t) || I.Z.isIgnored(t.id) || I.Z.isBlocked(t.id) || n.push(t)
+            !(0, N.lm)(t) || y.Z.isIgnored(t.id) || y.Z.isBlocked(t.id) || n.push(t)
           } else break;
         return n
       }, [e]),
@@ -149,7 +149,7 @@ function w() {
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), m = i.useRef(null), E = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), y = i.useCallback(() => {
+  }), m = i.useRef(null), E = (0, s.e7)([T.Z], () => T.Z.ipCountryCode), O = (0, g.gD)(), I = i.useCallback(() => {
     var e;
     let t = null == (e = m.current) ? true : e.getScrollerNode();
     null != t && h({
@@ -159,9 +159,9 @@ function w() {
     })
   }, []);
   i.useEffect(() => {
-    (null == t ? true : t.frequentFriends.length) != null && y()
-  }, [null == t ? true : t.frequentFriends.length, null == t ? true : t.showCompetitiveSpot, y]);
-  let C = (0, f.y)(y, []),
+    (null == t ? true : t.frequentFriends.length) != null && I()
+  }, [null == t ? true : t.frequentFriends.length, null == t ? true : t.showCompetitiveSpot, I]);
+  let C = (0, f.y)(I, []),
     w = i.useCallback(e => {
       let t = e.currentTarget;
       h({

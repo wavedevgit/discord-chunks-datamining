@@ -28,7 +28,7 @@ function h(e) {
     onScroll: h,
     onGuildCardClick: m,
     onGuildCardSeen: b
-  } = e, _ = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), v = (0, u.lg)(t), y = i.useMemo(() => {
+  } = e, _ = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), v = (0, u.lg)(t), I = i.useMemo(() => {
     let e = p ? 30 : n.length,
       t = [];
     for (let a = 0; a < e; a++) {
@@ -56,7 +56,7 @@ function h(e) {
         children: O
       }), (0, r.jsx)("div", {
         className: f.content,
-        children: y
+        children: I
       })]
     })]
   })

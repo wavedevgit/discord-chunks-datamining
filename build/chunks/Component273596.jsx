@@ -55,7 +55,7 @@ function P(e) {
   } = e, {
     guildIds: s,
     loading: f,
-    searchResultsQuery: I,
+    searchResultsQuery: y,
     loadMore: P,
     searchCategoryId: x
   } = (0, b.f)({
@@ -73,16 +73,16 @@ function P(e) {
   }, [R, B]), F = (0, u.y)(V, [R, B]);
   i.useEffect(() => {
     L((0, m.PM)())
-  }, [I]), i.useEffect(() => {
+  }, [y]), i.useEffect(() => {
     j({
       loadId: t,
       searchId: w,
-      query: I,
+      query: y,
       guildResults: s.map(g.Z.getGuild).filter(p.lm),
       analyticsContext: A,
       categoryId: x
     })
-  }, [A, s, t, x, w, I]);
+  }, [A, s, t, x, w, y]);
   let z = i.useCallback(e => n(e, x), [n, x]),
     Y = i.useMemo(() => f ? [s.length, 0] : [s.length], [s.length, f]),
     W = i.useCallback((e, n, i) => {
@@ -160,7 +160,7 @@ function P(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(y.ZP, {
+          children: (0, r.jsx)(I.ZP, {
             guildId: e,
             onClick: async e => await J(e, t, x, N),
             onView: e => z(e)

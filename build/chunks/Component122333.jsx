@@ -75,7 +75,7 @@ class A extends Chunk317770.Z {
   }
   handleConnectionOpen() {
     var e;
-    let t, a = I.Z.getType();
+    let t, a = y.Z.getType();
     if (null == a) return;
     switch (a) {
       case C.M5.INVITE_UNCLAIMED:
@@ -173,7 +173,7 @@ class A extends Chunk317770.Z {
       }),
       predicate: () => null != Z && null != h.Z.get(Z) && h.Z.get(Z) !== h.a
     }], t = () => {
-      y.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
+      I.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
     }, [...e].reverse().forEach(e => {
       let n = t;
       t = () => {

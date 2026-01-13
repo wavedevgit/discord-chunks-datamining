@@ -25,21 +25,21 @@ var Chunk54381 = require("./54381.js"),
 function v(e) {
   let {
     className: t
-  } = e, [n, l] = (0, d.US)([c.z.CHECKPOINT_2025_DESKTOP_UPSELL]), v = (0, s.e7)([g.Z], () => g.Z.hasOpenedCheckpointThisSession && !g.Z.hasSeenRewatchPopover), y = i.useRef(null), I = n === c.z.CHECKPOINT_2025_DESKTOP_UPSELL, C = () => {
+  } = e, [n, l] = (0, d.US)([c.z.CHECKPOINT_2025_DESKTOP_UPSELL]), v = (0, s.e7)([g.Z], () => g.Z.hasOpenedCheckpointThisSession && !g.Z.hasSeenRewatchPopover), I = i.useRef(null), y = n === c.z.CHECKPOINT_2025_DESKTOP_UPSELL, C = () => {
     (0, f.OL)()
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.JO, {
-      ref: y,
+      ref: I,
       className: t,
       onClick: () => {
-        (0, h.Z)("header_bar"), I && l(b.L.INDIRECT_ACTION)
+        (0, h.Z)("header_bar"), y && l(b.L.INDIRECT_ACTION)
       },
       icon: o.d5i,
       tooltip: E.intl.string(_.default["CdU/PF"]),
-      foreground: a()(O.iconForeground, I ? O.highlighted : null)
-    }), !I && v && (0, r.jsx)(u.J2, {
-      targetElementRef: y,
+      foreground: a()(O.iconForeground, y ? O.highlighted : null)
+    }), !y && v && (0, r.jsx)(u.J2, {
+      targetElementRef: I,
       title: E.intl.string(_.default.goiR2u),
       body: E.intl.string(_.default.UYjWa5),
       onRequestClose: C,
@@ -47,7 +47,7 @@ function v(e) {
         text: E.intl.string(E.t["NX+WJN"]),
         onClick: C
       }]
-    }), I && (0, r.jsx)(m.Z, {
+    }), y && (0, r.jsx)(m.Z, {
       markAsDismissed: l
     })]
   })

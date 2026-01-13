@@ -87,7 +87,7 @@ class N extends Chunk473749.PureComponent {
         className: S.joinedCheckmark
       })]
     })) : i && t && (p = C.intl.string(C.t.XpeFYr)) : (p = C.intl.string(C.t.dKhVQN), f = this.handleLogin), (0, r.jsxs)("div", {
-      className: a()(o, s === y.b.SMALL ? S.inviteSmall : S.inviteLarge),
+      className: a()(o, s === I.b.SMALL ? S.inviteSmall : S.inviteLarge),
       children: [(0, r.jsx)(g.Z, {
         children: C.intl.string(C.t.s1KcLo)
       }), (0, r.jsxs)("div", {
@@ -131,14 +131,14 @@ class N extends Chunk473749.PureComponent {
       else try {
         await d.Z.joinGuild(e.id, {
           lurker: true,
-          source: I.vtS.APPLICATION_STORE
+          source: y.vtS.APPLICATION_STORE
         }), i()
       } catch (e) {}
     }), T(this, "handleLogin", () => {
       let e = {
-        redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
+        redirect_to: y.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, _.uL)(I.Z5c.LOGIN, {
+      (0, _.uL)(y.Z5c.LOGIN, {
         search: (0, o.stringify)(e),
         source: "verified_guild_invite"
       })

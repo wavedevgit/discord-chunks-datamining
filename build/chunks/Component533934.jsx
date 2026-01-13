@@ -173,8 +173,8 @@ let eR = (0, Chunk608787.Un)({
     var t, n;
     let {
       match: i
-    } = e, l = (0, C.l)(), a = (0, p.e7)([e_.Z, ey.Z], () => {
-      let e = ey.Z.getChannelId();
+    } = e, l = (0, C.l)(), a = (0, p.e7)([e_.Z, eI.Z], () => {
+      let e = eI.Z.getChannelId();
       return e_.Z.getChannel(e)
     }), {
       guildId: o,
@@ -285,7 +285,7 @@ let eR = (0, Chunk608787.Un)({
       notificationCenterVariant: n
     } = (0, en.pN)({
       location: "Sidebar"
-    }), i = (0, p.e7)([ey.Z], () => null != t ? t : ey.Z.getChannelId(e));
+    }), i = (0, p.e7)([eI.Z], () => null != t ? t : eI.Z.getChannelId(e));
     return window.location.pathname.startsWith(ej.Z5c.CHANNEL(ej.STv)) ? ("sidebar" !== n && (0, em.dL)(eE.Z.defaultRoute), (0, r.jsx)(ei.Z, {
       includePanelSpacing: true
     })) : window.location.pathname.startsWith(ej.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(ej.Z5c.GUILD_DISCOVERY) || (0, ec.$V)() ? (0, r.jsx)(U.Z, {}) : null != e ? (0, r.jsx)(z.Z, {
@@ -447,7 +447,7 @@ function tt(e) {
     hideChannelList: o,
     isSidebarOpen: s
   } = e;
-  (0, y.t)(true);
+  (0, I.t)(true);
   let c = "app view user trigger debugging";
   v.R6.useExperiment({
     location: c
@@ -501,14 +501,14 @@ function tt(e) {
         width: e
       })
     }, []),
-    S = (0, I.Z)({
+    S = (0, y.Z)({
       minDimension: b.li,
       maxDimension: b.zx,
       resizableDomNodeRef: _,
       onElementResize: E,
       onElementResizeStart: O,
       onElementResizeEnd: C,
-      orientation: I.y.HORIZONTAL_RIGHT,
+      orientation: y.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
     T = i.useCallback(() => {
@@ -565,7 +565,7 @@ function tt(e) {
 
 function tn() {
   var e;
-  let t = (0, p.e7)([eI.ZP], () => eI.ZP.hasNotice()),
+  let t = (0, p.e7)([ey.ZP], () => ey.ZP.hasNotice()),
     n = (0, eb.Ll)(),
     l = function() {
       let [e, t] = i.useState(() => window.location.pathname.startsWith(ej.Z5c.GUILD_MEMBER_VERIFICATION("")));

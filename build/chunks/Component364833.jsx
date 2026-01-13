@@ -101,7 +101,7 @@ function x(e) {
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.TRACK_PROGRESS,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
-    }), (0, I.navigateToQuestHome)({
+    }), (0, y.navigateToQuestHome)({
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: m.id
     }))
@@ -111,7 +111,7 @@ function x(e) {
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.LEARN_MORE,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
-    }), (0, I.navigateToQuestHome)({
+    }), (0, y.navigateToQuestHome)({
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: m.id
     })
@@ -183,7 +183,7 @@ function x(e) {
           children: V
         })
       })]
-    }), G && !H && (0, r.jsx)(y.Z, {
+    }), G && !H && (0, r.jsx)(I.Z, {
       autoplay: x,
       className: N.rewardTileWithInstructions,
       quest: m,
@@ -206,7 +206,7 @@ function x(e) {
           text: Y,
           onClick: D,
           loading: S,
-          icon: (0, I.getPrimaryCtaIcon)(m)
+          icon: (0, y.getPrimaryCtaIcon)(m)
         })]
       }), G && !H && (0, r.jsx)(s.Button, {
         variant: "primary",

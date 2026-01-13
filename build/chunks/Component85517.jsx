@@ -112,7 +112,7 @@ function j(e) {
     }))
   }, [t.campaignId]), (0, r.jsx)("div", {
     className: a()(C.wrapper, {
-      "theme-dark": x === y.BR.LIGHT,
+      "theme-dark": x === I.BR.LIGHT,
       [C.wrapperWithOldDiscoveryHeader]: !P
     }),
     ref: L,
@@ -134,7 +134,7 @@ function j(e) {
             color: "text-strong",
             variant: "text-sm/normal",
             className: C.sponsoredTag,
-            children: I.intl.string(I.t.OJjFi5)
+            children: y.intl.string(y.t.OJjFi5)
           })]
         }), (0, r.jsxs)(u.Kqy, {
           className: C.contentBody,

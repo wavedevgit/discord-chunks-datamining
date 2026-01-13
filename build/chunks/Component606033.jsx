@@ -24,8 +24,8 @@ let _ = function(e) {
     questId: E,
     setQuestId: O,
     quest: v,
-    refreshQuest: y
-  } = e, [I, C] = i.useState(false), [S, T] = i.useState(false), N = i.useRef(null), j = (0, p.MP)(), P = (0, l.e7)([d.Z], () => null != E ? d.Z.getFetchQuestPreviewError(E) : null, [E]), x = (0, l.e7)([d.Z], () => null != E && d.Z.isFetchingQuestPreview(E), [E]), Z = i.useMemo(() => {
+    refreshQuest: I
+  } = e, [y, C] = i.useState(false), [S, T] = i.useState(false), N = i.useRef(null), j = (0, p.MP)(), P = (0, l.e7)([d.Z], () => null != E ? d.Z.getFetchQuestPreviewError(E) : null, [E]), x = (0, l.e7)([d.Z], () => null != E && d.Z.isFetchingQuestPreview(E), [E]), Z = i.useMemo(() => {
     let e = j.map(e => {
       var t, n, r;
       return {
@@ -93,7 +93,7 @@ let _ = function(e) {
                 }] : n
               }
             }, "".concat(E, "-").concat(null != (_ = null == v || null == (n = v.config) || null == (t = n.messages) ? true : t.questName) ? _ : "")), (0, r.jsx)(o.hU, {
-              onClick: y,
+              onClick: I,
               "aria-label": m.intl.string(m.t.wzzjk9),
               icon: o.DuK,
               loading: x
@@ -107,20 +107,20 @@ let _ = function(e) {
         className: b.controlButtons,
         children: [(0, r.jsx)(o.Button, {
           onClick: A,
-          disabled: I,
-          loading: I,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: m.intl.string(m.t.jQEfRT)
         }), (0, r.jsx)(o.Button, {
           onClick: w,
-          disabled: I,
-          loading: I,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: m.intl.string(m.t.taqkwK)
         }), (0, r.jsx)(o.Button, {
           onClick: L,
-          disabled: I,
-          loading: I,
+          disabled: y,
+          loading: y,
           variant: "secondary",
           text: m.intl.string(m.t.cKSLr4)
         }), (0, r.jsx)(o.yRy, {

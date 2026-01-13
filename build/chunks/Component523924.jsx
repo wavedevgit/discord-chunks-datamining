@@ -33,7 +33,7 @@ let f = e => {
     null == _ && null != b && s.Z.fetchJoinRequestCooldown(b.id)
   }, [_, b]);
   let v = (null != _ ? _ : 0) > 0,
-    y = v && null != _ ? Math.ceil((1e3 * _ - Date.now()) / 864e5) : 0;
+    I = v && null != _ ? Math.ceil((1e3 * _ - Date.now()) / 864e5) : 0;
   return (0, r.jsxs)("div", {
     className: p.confirmation,
     children: [(0, r.jsx)("div", {
@@ -66,10 +66,10 @@ let f = e => {
       children: [E || O ? (0, r.jsx)(a.u, {
         asContainer: true,
         text: v ? d.intl.formatToPlainString(d.t.A0f0P7, {
-          days: y
+          days: I
         }) : null,
         "aria-label": v ? d.intl.formatToPlainString(d.t.A0f0P7, {
-          days: y
+          days: I
         }) : true,
         children: (0, r.jsx)(o.Button, {
           onClick: f,

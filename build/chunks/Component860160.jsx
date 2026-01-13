@@ -53,7 +53,7 @@ function _(e) {
     }
   }, [n]), v = i.useMemo(() => {
     if ("contentInventory" === n.data.kind) return n.data.content.author_id
-  }, [n]), y = i.useMemo(() => {
+  }, [n]), I = i.useMemo(() => {
     switch (n.data.kind) {
       case "message":
       case "forumThread":
@@ -65,7 +65,7 @@ function _(e) {
       default:
         return n.timestamp
     }
-  }, [n]), I = (0, a.e7)([d.Z], () => d.Z.getChannel(E), [E]), C = null != (t = null == I ? true : I.guild_id) ? t : O, S = (0, a.e7)([p.Z], () => null != C ? p.Z.getGuild(C) : null, [C]), T = (0, a.e7)([f.default], () => null != v ? f.default.getUser(v) : null, [v]);
+  }, [n]), y = (0, a.e7)([d.Z], () => d.Z.getChannel(E), [E]), C = null != (t = null == y ? true : y.guild_id) ? t : O, S = (0, a.e7)([p.Z], () => null != C ? p.Z.getGuild(C) : null, [C]), T = (0, a.e7)([f.default], () => null != v ? f.default.getUser(v) : null, [v]);
   return "unknown" === _ ? null : (0, r.jsx)("div", {
     className: b.container,
     children: (0, r.jsxs)("div", {
@@ -104,7 +104,7 @@ function _(e) {
               children: T.username
             }) : null, (0, r.jsx)("div", {
               className: b.timestamp,
-              children: (0, u.a3)(y)
+              children: (0, u.a3)(I)
             })]
           })
         }), (() => {
@@ -140,8 +140,8 @@ function _(e) {
               children: e
             })
           });
-          if (null != I && null != e) {
-            let t = (0, o.KS)(I, S);
+          if (null != y && null != e) {
+            let t = (0, o.KS)(y, S);
             return (0, r.jsxs)("div", {
               className: b.subtitle,
               children: [(0, r.jsx)("span", {
@@ -157,7 +157,7 @@ function _(e) {
                   width: 16,
                   height: 16,
                   className: b.channelIcon
-                }), I.name]
+                }), y.name]
               })]
             })
           }

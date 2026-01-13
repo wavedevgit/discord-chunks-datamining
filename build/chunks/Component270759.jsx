@@ -53,7 +53,7 @@ let x = function(e) {
     d.Y(S.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
   let b = (0, s.e7)([O.Z], () => O.Z.theme),
-    x = (0, y.If)(),
+    x = (0, I.If)(),
     {
       section: Z,
       rows: A
@@ -120,7 +120,7 @@ let x = function(e) {
       className: j.nowPlayingColumn,
       children: (0, r.jsx)(_.Z, {})
     });
-  return U = Z === S.pJs.ADD_FRIEND ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(C.Z, {
+  return U = Z === S.pJs.ADD_FRIEND ? (0, r.jsx)(y.Z, {}) : (0, r.jsx)(C.Z, {
     titleId: M
   }), (0, r.jsxs)("main", {
     className: j.container,

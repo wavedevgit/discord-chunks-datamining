@@ -25,14 +25,14 @@ function h(e) {
     content: E,
     renderModalProps: O,
     analyticsLocations: v,
-    analyticsLocation: y,
-    isLightTheme: I
+    analyticsLocation: I,
+    isLightTheme: y
   } = e, C = "AnnouncementModalVariant1_".concat(b), {
     onClose: S
   } = O, T = null != (m = null == (t = E.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = E.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
     buttonAction: null == (h = E.button) ? true : h.buttonAction,
     analyticsLocations: v,
-    analyticsLocation: y,
+    analyticsLocation: I,
     onClose: S
   }), P = "" !== E.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
     children: ["\xa0", (0, r.jsx)(o.eee, {
@@ -42,7 +42,7 @@ function h(e) {
     })]
   }) : true, x = {
     type: "video",
-    src: I ? E.heroArtVideoLinkLightTheme : E.videoLink
+    src: y ? E.heroArtVideoLinkLightTheme : E.videoLink
   };
   null != E.heroArtVideoSubtitles && (x.subtitles = E.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
@@ -50,7 +50,7 @@ function h(e) {
     isDefault: false
   }))), ("" !== E.heroArtImageLinkDarkTheme || "" !== E.heroArtImageLinkLightTheme) && (x = {
     type: "image",
-    src: I ? E.heroArtImageLinkLightTheme : E.heroArtImageLinkDarkTheme
+    src: y ? E.heroArtImageLinkLightTheme : E.heroArtImageLinkDarkTheme
   });
   let Z = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
     text: E.modalTopPill,
@@ -69,7 +69,7 @@ function h(e) {
     featureCards: E.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
-      imageSrc: I ? e.imageLinkLightTheme : e.imageLink,
+      imageSrc: y ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
     changeLogId: C,

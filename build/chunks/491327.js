@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 491327, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => I
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -22,7 +22,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk561205 = require("./561205.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let y = {
+let I = {
   [Chunk981631.Etm.GET_CHANNEL]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.GUILDS, Chunk243814.x.GUILDS_CHANNELS_READ]
