@@ -8,5 +8,5 @@ var Chunk701488 = require("./701488.js");
 
 function i(e) {
   var t, n;
-  return !!r.Pc.has(e.id) || ("embeddedActivityConfig" in e ? (null == (t = e.embeddedActivityConfig) ? true : t.displays_advertisements) === true : "embedded_activity_config" in e && (null == (n = e.embedded_activity_config) ? true : n.displays_advertisements) === true)
+  return null != e && (!!r.Pc.has(e.id) || ("embeddedActivityConfig" in e ? (null == (t = e.embeddedActivityConfig) ? true : t.displays_advertisements) === true : "embedded_activity_config" in e && (null == (n = e.embedded_activity_config) ? true : n.displays_advertisements) === true))
 }

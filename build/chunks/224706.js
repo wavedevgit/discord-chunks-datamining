@@ -16,7 +16,7 @@ var Chunk664751 = require("./664751.js"),
   Chunk439849 = require("./439849.js"),
   Chunk710845 = require("./710845.js"),
   Chunk48131 = require("./48131.js"),
-  Chunk813370 = require("./813370.js"),
+  Chunk686440 = require("./686440.js"),
   Chunk346951 = require("./346951.js"),
   Chunk569675 = require("./569675.js"),
   Chunk594190 = require("./594190.js"),
@@ -138,7 +138,7 @@ async function G(e) {
   } = e;
   if (i) {
     let e = d.Z.getApplication(t);
-    return null != e && (0, m.g)(e) ? (_.Z.launchFrame({
+    return null != e && (0, m.g)(e) ? (await _.Z.launchFrame({
       applicationId: t
     }), 0) : await (0, u.Z)({
       applicationId: t,

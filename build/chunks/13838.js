@@ -288,6 +288,10 @@ let w = {
     scope: true,
     handler() {}
   },
+  [Chunk981631.zMe.FRAME_LAYOUT_MODE_UPDATE]: {
+    scope: true,
+    handler() {}
+  },
   [Chunk981631.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: Chunk238679.gQ,
   [Chunk981631.zMe.THERMAL_STATE_UPDATE]: {
     scope: {

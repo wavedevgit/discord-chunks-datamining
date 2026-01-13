@@ -25,6 +25,11 @@ let s = {
         }
       } = e, s = t.application.id;
       if (null != s) r.Z.dispatch({
+        type: "FRAME_SET_ORIENTATION_LOCK_STATE",
+        applicationId: s,
+        lockState: n,
+        pictureInPictureLockState: l
+      }), r.Z.dispatch({
         type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE",
         applicationId: s,
         lockState: n,

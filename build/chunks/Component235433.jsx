@@ -2,8 +2,8 @@
 /** chunk id: 235433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
-}), require("./539854.js"), require("./388685.js");
+  Z: () => O
+}), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk704215 = require("./704215.js"),
@@ -11,7 +11,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk809206 = require("./809206.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk243778 = require("./243778.jsx"),
-  Chunk594928 = require("./594928.js"),
   Chunk829716 = require("./829716.jsx"),
   Chunk18438 = require("./18438.js"),
   Chunk626135 = require("./626135.js"),
@@ -24,60 +23,54 @@ var Chunk54381 = require("./54381.js"),
   Chunk143525 = require("./143525.js"),
   Chunk399477 = require("./399477.js");
 
-function v(e) {
+function O(e) {
   let {
     user: t,
     guildId: n,
-    className: v
-  } = e, S = u.JH.useExperiment({
-    location: "DisplayNameStylesSection"
-  }).enabled, I = _.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: T
+    className: O
+  } = e, v = p.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: S
   } = (0, l.ZP)(), {
-    userDisplayNameStyles: C,
-    guildDisplayNameStyles: A,
-    pendingDisplayNameStyles: N,
-    pendingErrors: P
-  } = (0, m.mD)(t, n), R = [];
-  S && R.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [w, D] = (0, c.US)(R), x = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
-    D(E.L.TAKE_ACTION), p.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
-      analyticsLocations: T,
+    userDisplayNameStyles: I,
+    guildDisplayNameStyles: T,
+    pendingDisplayNameStyles: C,
+    pendingErrors: A
+  } = (0, _.mD)(t, n), [N, P] = (0, c.US)([a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = N === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, w = (0, i.useCallback)(() => {
+    P(g.L.TAKE_ACTION), f.default.track(h.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, u.I)({
+      analyticsLocations: S,
       guildId: n
     })
-  }, [T, D, n]), j = (0, i.useCallback)(() => {
-    (0, s.NI)(null), p.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
-  }, []), M = (0, i.useCallback)(() => {
-    (0, f.N_)(null)
-  }, []), k = true !== N || (null != n ? null != A : null != C);
-  if (!S && !k) return null;
-  let U = true !== N ? N : A;
-  return (0, r.jsx)(h.Z, {
-    title: b.intl.string(y.default["86GtGH"]),
-    titleIcon: x ? (0, r.jsx)(o.IGR, {
-      text: b.intl.string(b.t.y2b7CA),
-      className: O.newBadge
+  }, [S, P, n]), D = (0, i.useCallback)(() => {
+    (0, s.NI)(null), f.default.track(h.rMx.DISPLAY_NAME_STYLES_REMOVED)
+  }, []), x = (0, i.useCallback)(() => {
+    (0, d.N_)(null)
+  }, []), L = true !== C || (null != n ? null != T : null != I), j = true !== C ? C : T;
+  return (0, r.jsx)(m.Z, {
+    title: E.intl.string(b.default["86GtGH"]),
+    titleIcon: R ? (0, r.jsx)(o.IGR, {
+      text: E.intl.string(E.t.y2b7CA),
+      className: y.newBadge
     }) : true,
-    className: v,
-    showPremiumIcon: I,
-    errors: P,
+    className: O,
+    showPremiumIcon: v,
+    errors: A,
     children: (0, r.jsxs)("div", {
-      className: O.buttonsContainer,
-      children: [S && (0, r.jsx)(o.Button, {
+      className: y.buttonsContainer,
+      children: [(0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
-        text: b.intl.string(y.default.vJqrIg),
-        onClick: L
-      }), null == n && k && (0, r.jsx)(o.Button, {
+        text: E.intl.string(b.default.vJqrIg),
+        onClick: w
+      }), null == n && L && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
-        text: b.intl.string(y.default.ymq8WQ),
-        onClick: j
-      }), null != n && null != U && (0, r.jsx)(o.Button, {
+        text: E.intl.string(b.default.ymq8WQ),
+        onClick: D
+      }), null != n && null != j && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
-        text: b.intl.string(y.default["j/KRxc"]),
-        onClick: M
+        text: E.intl.string(b.default["j/KRxc"]),
+        onClick: x
       })]
     })
   })

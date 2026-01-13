@@ -158,9 +158,11 @@ class P {
       let r = n !== S.cE.FOCUSED;
       this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
         is_pip_mode: r
-      }), this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, {
+      });
+      let i = {
         layout_mode: n
-      })
+      };
+      this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, i), this.rpcServer.dispatchToSubscriptions(C.zMe.FRAME_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, i)
     }), j(this, "handleFrameUpdateLayoutMode", e => {
       let {
         applicationId: t,
@@ -171,9 +173,11 @@ class P {
         i = r !== S.cE.FOCUSED;
       this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_PIP_MODE_UPDATE, e => e.socket.application.id === t, {
         is_pip_mode: i
-      }), this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, {
+      });
+      let l = {
         layout_mode: r
-      })
+      };
+      this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, l), this.rpcServer.dispatchToSubscriptions(C.zMe.FRAME_LAYOUT_MODE_UPDATE, e => e.socket.application.id === t, l)
     }), j(this, "handleThermalStateChange", e => {
       let {
         applicationId: t
