@@ -251,24 +251,23 @@ function eo(e) {
         user: null != p ? p : n,
         size: _.EFr.SIZE_32
       })
-    }), (0, r.jsx)(b.Z.Child, {
-      children: (0, r.jsxs)(_.Text, {
+    }), (0, r.jsxs)(b.Z.Child, {
+      className: W.reactorInfo,
+      children: [(0, r.jsx)(_.Text, {
         tag: "strong",
         variant: "text-md/normal",
         className: W.name,
-        children: [null != y && "" !== y && (0, r.jsx)("span", {
-          className: o()(W.ellipsized, {
-            [W.nickname]: !n.hasUniqueUsername()
-          }),
+        children: null != y && "" !== y && (0, r.jsx)("span", {
+          className: W.ellipsized,
           children: y
-        }), (0, r.jsx)(h.Z, {
-          user: n,
-          className: null != y && "" !== y ? W.tagFaded : null,
-          usernameClass: o()(W.username, W.ellipsized),
-          discriminatorClass: W.discriminator,
-          forceUsername: true
-        })]
-      })
+        })
+      }), (0, r.jsx)(h.Z, {
+        user: n,
+        className: null != y && "" !== y ? W.tagFaded : null,
+        usernameClass: o()(W.username, W.ellipsized),
+        discriminatorClass: W.discriminator,
+        forceUsername: true
+      })]
     }), E && (0, r.jsx)("div", {
       className: W.remove,
       children: (0, r.jsx)(f.hU, {
