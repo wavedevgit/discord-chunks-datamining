@@ -1,5 +1,5 @@
-/** Chunk was on 5410 **/
-/** chunk id: 680942, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 89929 **/
+/** chunk id: 680942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
@@ -20,8 +20,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let m = e => {
   let {
-    product: n,
-    primary: t,
+    product: t,
+    primary: n,
     selectedVariantIndex: m,
     returnRef: y,
     onSuccess: j,
@@ -29,19 +29,19 @@ let m = e => {
     fullWidth: O = false
   } = e, {
     analyticsLocations: P
-  } = (0, c.ZP)(), C = l.useRef(null), S = (0, p.sp)(), k = (0, f.Z)(), _ = e => {
+  } = (0, c.ZP)(), C = l.useRef(null), S = (0, p.sp)(), k = (0, v.Z)(), _ = e => {
     e.stopPropagation(), d.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == S ? true : S.sessionId,
-      sku_id: n.skuId,
+      sku_id: t.skuId,
       page_section: null == S ? true : S.pageSection,
       page_category: null == S ? true : S.pageCategory,
-      tile_type: i.Z[n.type],
+      tile_type: i.Z[t.type],
       tile_position: String(null == S ? true : S.tilePosition),
       cta_name: "gift button",
       page_type: k || "home"
     }), (0, u.Z)({
-      skuId: (0, v.S)({
-        product: n,
+      skuId: (0, f.S)({
+        product: t,
         selectedVariantIndex: m
       }),
       isGift: true,
@@ -55,7 +55,7 @@ let m = e => {
     })
   };
   return O ? (0, r.jsx)(s.Button, {
-    variant: t ? "primary" : "secondary",
+    variant: n ? "primary" : "secondary",
     icon: s.OgN,
     onClick: _,
     text: h.intl.string(h.t.gmnzqM),
@@ -66,7 +66,7 @@ let m = e => {
     children: (0, r.jsx)(s.hU, {
       "aria-label": h.intl.string(h.t["JCFN/y"]),
       buttonRef: C,
-      variant: t ? "primary" : "secondary",
+      variant: n ? "primary" : "secondary",
       icon: s.OgN,
       size: "md",
       onClick: _

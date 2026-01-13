@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 720983, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => Z
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,7 +13,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk984370 = require("./984370.jsx"),
-  Chunk567400 = require("./567400.js"),
   Chunk892001 = require("./892001.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
@@ -27,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk418993 = require("./418993.js");
 
-function Z(e) {
+function S(e) {
   let {
     content: n,
     onClick: t,
@@ -42,47 +41,45 @@ function Z(e) {
   })
 }
 
-function E(e) {
+function Z(e) {
   let {
     guildId: n,
     storefront: t,
     selectedPageIndex: a
-  } = e, E = (0, s.wjy)((0, d.ZP)()), L = (0, g.Y)({
-    location: "SocialLayerStorefrontHeader"
-  }), N = (0, r.e7)([I.default], () => I.default.getCurrentUser()), R = (0, m.oR)(), {
-    analyticsLocations: T
-  } = (0, u.ZP)(), A = i.useCallback(() => {
-    (null == N ? true : N.id) != null && (0, p.openUserProfileModal)({
-      userId: N.id,
-      tabSection: k.oh.WISHLIST,
+  } = e, Z = (0, s.wjy)((0, d.ZP)()), E = (0, r.e7)([p.default], () => p.default.getCurrentUser()), N = (0, _.oR)(), {
+    analyticsLocations: L
+  } = (0, u.ZP)(), R = i.useCallback(() => {
+    (null == E ? true : E.id) != null && (0, g.openUserProfileModal)({
+      userId: E.id,
+      tabSection: C.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
-  }, [N]), M = i.useCallback(() => {
-    h.default.track(C.rMx.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
-      slayer_storefront_session_id: null == R ? true : R.sessionId,
-      cta_type: v.US.LEARN_MORE,
-      location_stack: T
-    }), window.open(x.Z.getArticleURL(C.BhN.SOCIAL_LAYER_STOREFRONT))
-  }, [R, T]);
+  }, [E]), T = i.useCallback(() => {
+    I.default.track(v.rMx.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
+      slayer_storefront_session_id: null == N ? true : N.sessionId,
+      cta_type: b.US.LEARN_MORE,
+      location_stack: L
+    }), window.open(h.Z.getArticleURL(v.BhN.SOCIAL_LAYER_STOREFRONT))
+  }, [N, L]);
   if (null == t) return null;
-  let O = null != t.logoAssetId ? (0, _._W)(t.applicationId, t.logoAssetId, 75) : null,
-    P = null != t.lightThemeLogoAssetId ? (0, _._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
-    y = null;
-  return y = E ? null != O ? O : P : null != P ? P : O, (0, l.jsxs)(f.Z, {
+  let A = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
+    M = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+    O = null;
+  return O = Z ? null != A ? A : M : null != M ? M : A, (0, l.jsxs)(f.Z, {
     disableDoubleClick: true,
     className: j.headerContainer,
     children: [(0, l.jsxs)(s.P3F, {
       onClick: () => {
-        (0, b.default)({
+        (0, m.default)({
           guildId: n,
           pageIndex: 0
         })
       },
       className: j.titleContainer,
-      children: [null != y && (0, l.jsx)("img", {
+      children: [null != O && (0, l.jsx)("img", {
         className: j.logo,
-        src: y,
+        src: O,
         alt: t.title
       }), (0, l.jsx)(f.Z.Title, {
         children: t.title
@@ -91,7 +88,7 @@ function E(e) {
       className: j.titles,
       children: t.pages.map((e, t) => (0, l.jsx)(f.Z.Title, {
         onClick: () => {
-          (0, b.default)({
+          (0, m.default)({
             guildId: n,
             pageIndex: t
           })
@@ -105,22 +102,22 @@ function E(e) {
           children: e.title
         })
       }, "".concat(e.title, "-").concat(t)))
-    }), L && (0, l.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: j.alignedRightContent,
-      children: [(0, l.jsx)(Z, {
+      children: [(0, l.jsx)(S, {
         content: (0, l.jsx)(s.h_8, {
           size: "xs",
           color: "currentColor"
         }),
-        onClick: A,
-        ariaLabel: S.intl.string(S.t["7lZ31J"]),
+        onClick: R,
+        ariaLabel: k.intl.string(k.t["7lZ31J"]),
         className: j.wishlistButton
-      }), (0, l.jsx)(Z, {
-        onClick: M,
-        ariaLabel: S.intl.string(S.t.hvVgAZ),
+      }), (0, l.jsx)(S, {
+        onClick: T,
+        ariaLabel: k.intl.string(k.t.hvVgAZ),
         content: (0, l.jsx)(s.xvT, {
           variant: "text-sm/medium",
-          children: S.intl.string(S.t.hvVgAZ)
+          children: k.intl.string(k.t.hvVgAZ)
         }),
         className: j.learnMoreButton
       })]

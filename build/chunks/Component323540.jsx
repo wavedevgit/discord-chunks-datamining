@@ -29,9 +29,9 @@ function x(e) {
     width: v
   } = (0, o.ZP)(), C = (0, d.oR)(), {
     analyticsLocations: k
-  } = (0, s.ZP)(), S = i.useRef(null), {
-    handleScroll: j
-  } = (0, p.I)(S, C, k), [Z, E] = i.useMemo(() => {
+  } = (0, s.ZP)(), j = i.useRef(null), {
+    handleScroll: S
+  } = (0, p.I)(j, C, k), [Z, E] = i.useMemo(() => {
     if ((null == m ? true : m.skuIds) == null || 0 === m.skuIds.length) return [
       [],
       []
@@ -42,7 +42,7 @@ function x(e) {
     ] : e < 1104 ? m.skuIds.length >= 2 ? [
       [], m.skuIds
     ] : [m.skuIds.slice(0, 1), m.skuIds.slice(1)] : [m.skuIds.slice(0, 2), m.skuIds.slice(2)]
-  }, [m, v]), L = 1 === Z.length && null != v && v >= 834;
+  }, [m, v]), N = 1 === Z.length && null != v && v >= 834;
   return (i.useEffect(() => {
     let {
       sessionId: e,
@@ -62,8 +62,8 @@ function x(e) {
       location_stack: k
     })
   }, [C, k]), null == m) ? null : (0, l.jsx)(a.h21, {
-    ref: S,
-    onScroll: j,
+    ref: j,
+    onScroll: S,
     children: (0, l.jsxs)("section", {
       ref: b,
       className: h.container,
@@ -73,7 +73,7 @@ function x(e) {
       }), (0, l.jsx)(u.t, {
         analyticsSectionId: "leaderboard",
         leaderboard: m.leaderboard,
-        skuId: L ? Z[0] : true,
+        skuId: N ? Z[0] : true,
         applicationId: x,
         guildId: _,
         analyticsLocations: k
@@ -81,7 +81,7 @@ function x(e) {
         analyticsSectionId: "featured-top-section",
         applicationId: x,
         guildId: _,
-        skuIds: L ? true : Z,
+        skuIds: N ? true : Z,
         variant: c.Z.MEDIUM
       }), (0, l.jsx)(g.Z, {
         analyticsSectionId: "non-featured-top-section",

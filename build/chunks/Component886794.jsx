@@ -55,7 +55,7 @@ function _(e) {
     channelId: S,
     messageId: w,
     roleId: D
-  }), H = i.useRef(null), Y = (0, s.X)(H);
+  }), H = i.useRef(null), K = (0, s.X)(H);
   return (0, l.jsx)(a.Gt, {
     value: W,
     children: (0, l.jsx)(f.Mt, {
@@ -155,7 +155,7 @@ function _(e) {
           })
         }), (null == G ? true : G.profileEffect) != null && (0, l.jsx)(d.Z, {
           skuId: null == G || null == (n = G.profileEffect) ? true : n.skuId,
-          isHovering: Y
+          isHovering: K
         })]
       })
     })

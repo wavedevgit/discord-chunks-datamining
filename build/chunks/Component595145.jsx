@@ -141,8 +141,8 @@ function ec(e) {
     eW = (0, x.vh)(ec.id),
     ez = (0, E.Z)(ec.id),
     eH = (0, P.Z)(ec.id),
-    eY = (0, u.Dt)(),
-    eK = er.intl.format(er.t.KRe1Fk, {
+    eK = (0, u.Dt)(),
+    eY = er.intl.format(er.t.KRe1Fk, {
       name: eL
     });
   return i.useEffect(() => {
@@ -171,7 +171,7 @@ function ec(e) {
             hideShadow: true,
             className: ea.root,
             transitionState: ej,
-            "aria-labelledby": eY,
+            "aria-labelledby": eK,
             parentComponent: "UserProfileModalV2",
             children: [(0, l.jsxs)(a.UkV, {
               isShaking: eP,
@@ -179,11 +179,11 @@ function ec(e) {
               children: [eZ ? (0, l.jsxs)("div", {
                 className: ea.previewBar,
                 children: [(0, l.jsxs)(a.Heading, {
-                  id: eY,
+                  id: eK,
                   variant: "heading-sm/normal",
                   color: "text-strong",
                   children: [(0, l.jsx)(a.nn4, {
-                    children: "".concat(er.intl.string(er.t.apVial), ": ").concat(eK)
+                    children: "".concat(er.intl.string(er.t.apVial), ": ").concat(eY)
                   }), (0, l.jsx)("span", {
                     "aria-hidden": true,
                     children: er.intl.string(er.t.apVial)
@@ -197,8 +197,8 @@ function ec(e) {
                 })]
               }) : (0, l.jsx)(a.nn4, {
                 children: (0, l.jsx)(a.H, {
-                  id: eY,
-                  children: eK
+                  id: eK,
+                  children: eY
                 })
               }), (0, l.jsx)(a.y5t, {
                 children: (0, l.jsxs)(V.Z, {
@@ -310,7 +310,7 @@ function ec(e) {
                         className: ea.profileBanner
                       }), (0, l.jsx)("div", {
                         className: ea.profileButtons,
-                        children: (0, l.jsx)(K.Z, {
+                        children: (0, l.jsx)(Y.Z, {
                           user: ec,
                           currentUser: es,
                           guildId: ed,
@@ -352,7 +352,7 @@ function ec(e) {
                       }), eH.length > 0 && (0, l.jsx)(Q.Z, {
                         heading: er.intl.string(er.t.PHjkRE),
                         scrollTargetId: el.Tb.APPS,
-                        children: (0, l.jsx)(Y.Z, {
+                        children: (0, l.jsx)(K.Z, {
                           applicationRoleConnections: eH,
                           onClose: eg,
                           className: ea.profileAppConnections

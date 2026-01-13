@@ -1,7 +1,7 @@
-/** Chunk was on 5410 **/
-/** chunk id: 409116, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 89929 **/
+/** chunk id: 409116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => f
+  F: () => v
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,23 +14,23 @@ var Chunk120356 = require("./120356.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk492436 = require("./492436.js");
-let f = e => {
+let v = e => {
     let {
-      price: n,
-      nitroIconType: t,
+      price: t,
+      nitroIconType: n,
       nitroIconSize: l = "md",
       className: i,
       discountOfferAmount: a,
       discount: o = c.f_,
       variant: s = "text-md/semibold"
     } = e;
-    return n.currency === u.pK.DISCORD_ORB ? (0, r.jsx)(b, {
-      orbAmount: n.amount,
+    return t.currency === u.pK.DISCORD_ORB ? (0, r.jsx)(b, {
+      orbAmount: t.amount,
       className: i,
       variant: s
-    }) : (0, r.jsx)(v, {
-      price: n,
-      nitroIconType: t,
+    }) : (0, r.jsx)(f, {
+      price: t,
+      nitroIconType: n,
       nitroIconSize: l,
       className: i,
       discountOfferAmount: a,
@@ -38,19 +38,19 @@ let f = e => {
       variant: s
     })
   },
-  v = e => {
+  f = e => {
     let {
       price: {
-        amount: n,
-        currency: t
+        amount: t,
+        currency: n
       },
       nitroIconType: l,
       nitroIconSize: u = "md",
-      className: f,
-      discountOfferAmount: v,
+      className: v,
+      discountOfferAmount: f,
       discount: b = c.f_,
       variant: g = "heading-md/semibold"
-    } = e, h = null != v, m = (0, s.qr)(n, t), y = b !== c.f_ && b.discountPercentage >= 5 && !h ? (0, r.jsxs)(r.Fragment, {
+    } = e, h = null != f, m = (0, s.qr)(t, n), y = b !== c.f_ && b.discountPercentage >= 5 && !h ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t.niC6DK, {
           price: m,
@@ -73,14 +73,14 @@ let f = e => {
         "aria-hidden": true,
         className: i()({
           [p.priceStrikethrough]: h
-        }, f),
+        }, v),
         children: m
       })]
     });
     return (0, r.jsxs)("div", {
       className: i()({
         [p.discountBackgroundColor]: h
-      }, p.container, f),
+      }, p.container, v),
       children: ["tooltip" === l ? (0, r.jsx)(a.u, {
         text: d.intl.string(d.t.MPFyJ5),
         "aria-label": d.intl.string(d.t.X3Ekj8),
@@ -104,12 +104,12 @@ let f = e => {
         lineClamp: 1,
         children: [(0, r.jsx)(o.nn4, {
           children: d.intl.format(d.t.rItDbx, {
-            discountOfferAmount: v
+            discountOfferAmount: f
           })
         }), (0, r.jsx)("span", {
           "aria-hidden": true,
           children: d.intl.formatToPlainString(d.t.AYcXGW, {
-            discountOfferAmount: v
+            discountOfferAmount: f
           })
         })]
       })]
@@ -117,12 +117,12 @@ let f = e => {
   },
   b = e => {
     let {
-      orbAmount: n,
-      className: t,
+      orbAmount: t,
+      className: n,
       variant: l = "text-md/semibold"
     } = e;
     return (0, r.jsxs)("div", {
-      className: i()(p.container, t),
+      className: i()(p.container, n),
       children: [(0, r.jsx)(o.aQr, {
         color: "currentColor",
         size: "sm",
@@ -133,11 +133,11 @@ let f = e => {
         lineClamp: 1,
         children: [(0, r.jsx)(o.nn4, {
           children: d.intl.format(d.t["a/Y8PK"], {
-            orbAmount: n
+            orbAmount: t
           })
         }), (0, r.jsx)("span", {
           "aria-hidden": true,
-          children: n
+          children: t
         })]
       })]
     })

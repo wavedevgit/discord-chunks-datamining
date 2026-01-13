@@ -2,7 +2,7 @@
 /** chunk id: 963102, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => N
+  I: () => B
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk984370 = require("./984370.jsx"),
   Chunk110560 = require("./110560.jsx"),
-  Chunk567400 = require("./567400.js"),
   Chunk892001 = require("./892001.js"),
   Chunk507808 = require("./507808.js"),
   Chunk825102 = require("./825102.js"),
@@ -35,102 +34,100 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk379398 = require("./379398.js");
 
-function N(e) {
+function B(e) {
   let {
     selectedTab: t,
     handleTransition: n
-  } = e, a = (0, f.ZP)(), N = (0, o.e7)([S.default], () => S.default.getCurrentUser()), {
-    enabled: R
-  } = (0, E.W)({
+  } = e, a = (0, f.ZP)(), B = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
+    enabled: N
+  } = (0, C.W)({
     location: "collectibles_shop_header_bar"
-  }), P = (0, m.Y)({
-    location: "CollectiblesShopHeaderBar"
   }), {
-    searchQuery: w
-  } = (0, O.S)(), Z = l.useRef(null), [D, M] = l.useState(false);
-  (0, d.s)(Z, l.useCallback(e => {
-    M(e.contentRect.width < T.J)
+    searchQuery: R
+  } = (0, x.S)(), P = l.useRef(null), [w, Z] = l.useState(false);
+  (0, d.s)(P, l.useCallback(e => {
+    Z(e.contentRect.width < k.J)
   }, []));
-  let H = (0, x.Pc)("CollectiblesShopHeaderBar"),
-    F = H ? [c.z.ORB_RENTAL_NEW_BADGE] : [],
-    [W, U] = (0, g.US)(F),
-    z = H && W === c.z.ORB_RENTAL_NEW_BADGE;
+  let D = (0, S.Pc)("CollectiblesShopHeaderBar"),
+    M = D ? [c.z.ORB_RENTAL_NEW_BADGE] : [],
+    [H, F] = (0, g.US)(M),
+    W = D && H === c.z.ORB_RENTAL_NEW_BADGE;
   l.useEffect(() => () => {
-    z && U(I.L.USER_DISMISS)
-  }, [z, U]);
-  let V = l.useMemo(() => [{
-      tab: j.AW.HOME,
-      label: A.intl.string(A.t.ijDDwz)
+    W && F(T.L.USER_DISMISS)
+  }, [W, F]);
+  let U = l.useMemo(() => [{
+      tab: y.AW.HOME,
+      label: L.intl.string(L.t.ijDDwz)
     }, {
-      tab: j.AW.CATALOG,
-      label: A.intl.string(A.t.Ah5sJo),
+      tab: y.AW.CATALOG,
+      label: L.intl.string(L.t.Ah5sJo),
       hasSubmenu: true
-    }, ...R ? [{
-      tab: j.AW.ORBS,
-      label: A.intl.string(A.t.EBYkzk)
-    }] : []], [R]),
-    G = t === j.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
-    K = l.useCallback(() => {
-      (0, C.Y)({
-        pageType: G,
-        sectionType: k.jXE.ORBS_BALANCE_MENU,
-        ctaObject: k.qAy.CTA_TO_QUEST_HOME
+    }, ...N ? [{
+      tab: y.AW.ORBS,
+      label: L.intl.string(L.t.EBYkzk)
+    }] : []], [N]),
+    z = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
+    V = l.useCallback(() => {
+      (0, h.Y)({
+        pageType: z,
+        sectionType: j.jXE.ORBS_BALANCE_MENU,
+        ctaObject: j.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: i.j.ORBS_BALANCE_MENU
       })
-    }, [G]),
-    Y = l.useCallback(() => {
-      (null == N ? true : N.id) != null && (0, h.openUserProfileModal)({
-        userId: N.id,
-        tabSection: L.oh.WISHLIST,
+    }, [z]),
+    G = l.useCallback(() => {
+      (null == B ? true : B.id) != null && (0, m.openUserProfileModal)({
+        userId: B.id,
+        tabSection: I.oh.WISHLIST,
         showGuildProfile: false
       })
-    }, [null == N ? true : N.id]),
-    q = l.useCallback(e => {
-      n(e), e === j.AW.ORBS && z && U(I.L.USER_DISMISS)
-    }, [n, z, U]);
+    }, [null == B ? true : B.id]),
+    K = l.useCallback(e => {
+      n(e), e === y.AW.ORBS && W && F(T.L.USER_DISMISS)
+    }, [n, W, F]);
   return (0, r.jsx)(u.f6W, {
     theme: a,
     children: e => (0, r.jsx)("div", {
-      ref: Z,
+      ref: P,
       children: (0, r.jsxs)(b.Z, {
         disableDoubleClick: true,
-        className: s()(e, B.headerBar),
-        innerClassname: R ? B.headerBarInner : true,
+        className: s()(e, A.headerBar),
+        innerClassname: N ? A.headerBarInner : true,
         children: [(0, r.jsx)(u.P3F, {
-          className: B.shopHomeLink,
-          onClick: () => n(j.AW.HOME),
-          "aria-label": A.intl.string(A.t.pWG4ze) + " home",
+          className: A.shopHomeLink,
+          onClick: () => n(y.AW.HOME),
+          "aria-label": L.intl.string(L.t.pWG4ze) + " home",
           children: (0, r.jsx)(u.EOn, {
             size: "md",
             color: u.TVs.colors.TEXT_DEFAULT
           })
-        }), (0, r.jsx)(y.Z, {
-          tabs: V,
+        }), (0, r.jsx)(_.Z, {
+          tabs: U,
           selectedTab: t,
-          onTabSelect: q,
-          showOrbRentalNewBadge: z
+          onTabSelect: K,
+          showOrbRentalNewBadge: W
         }), (0, r.jsxs)("div", {
-          className: B.alignedRightContent,
-          children: [(0, r.jsx)(_.Z, {
+          className: A.alignedRightContent,
+          children: [(0, r.jsx)(O.Z, {
             handleTransition: n,
             selectedTab: t,
-            isNarrow: D,
-            hasText: "" !== w
-          }), P && (0, r.jsx)(u.P3F, {
-            className: B.wishlistButton,
-            onClick: Y,
-            "aria-label": A.intl.string(A.t["7lZ31J"]),
+            isNarrow: w,
+            hasText: "" !== R
+          }), (0, r.jsx)(u.P3F, {
+            className: A.wishlistButton,
+            onClick: G,
+            "aria-label": L.intl.string(L.t["7lZ31J"]),
             children: (0, r.jsx)(u.h_8, {
               size: "xs",
               color: "currentColor"
             })
-          }), R && (0, r.jsx)(v.V9, {
-            analyticsPage: G,
-            cardAlignment: v.V9.CardAlignment.END,
-            ctaText: A.intl.string(A.t.VC4Mq0),
-            ctaOnClick: K,
-            className: B.balanceWidgetMenu
+          }), N && (0, r.jsx)(E.V9, {
+            analyticsPage: z,
+            cardAlignment: E.V9.CardAlignment.END,
+            ctaText: L.intl.string(L.t.VC4Mq0),
+            ctaOnClick: V,
+            className: A.balanceWidgetMenu
           })]
         })]
       })
