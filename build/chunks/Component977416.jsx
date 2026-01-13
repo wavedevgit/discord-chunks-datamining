@@ -1,7 +1,7 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 977416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -28,18 +28,18 @@ function y(e) {
     coverImageUrl: l,
     gameName: s,
     isLoading: f
-  } = (0, g.Z)(t), y = (0, a.e7)([u.Z], () => u.Z.suggestedFetchIsLoading), j = p.intl.formatToPlainString(p.t["3mb1s5"], {
+  } = (0, g.Z)(t), y = (0, a.e7)([u.Z], () => u.Z.suggestedFetchIsLoading), h = p.intl.formatToPlainString(p.t["3mb1s5"], {
     game: s
   });
   return f || y ? (0, r.jsx)("div", {
     className: m.loadingCover
   }) : (0, r.jsx)(o.u, {
-    text: j,
+    text: h,
     ariaHidden: true,
     children: (0, r.jsxs)(c.P3F, {
       className: b.addButton,
       onClick: i,
-      "aria-label": j,
+      "aria-label": h,
       children: [(0, r.jsx)(d.Z, {
         className: b.cover,
         imageSrc: l,
@@ -56,7 +56,7 @@ function y(e) {
   })
 }
 
-function j(e) {
+function h(e) {
   let {
     userId: t,
     games: n,

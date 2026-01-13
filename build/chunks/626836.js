@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 626836, original params: e,t,n (module,exports,require) **/
 module.exports = {
   headerRow: "_4fbcc81dbba4d7a8-headerRow",
@@ -6,5 +6,7 @@ module.exports = {
   emptyStateContainer: "_4fbcc81dbba4d7a8-emptyStateContainer",
   emptyStateText: "_4fbcc81dbba4d7a8-emptyStateText",
   scroller: "_4fbcc81dbba4d7a8-scroller",
-  teenDisclaimer: "_4fbcc81dbba4d7a8-teenDisclaimer"
+  teenDisclaimer: "_4fbcc81dbba4d7a8-teenDisclaimer",
+  recommendationsContainerEmptyWishlist: "_4fbcc81dbba4d7a8-recommendationsContainerEmptyWishlist",
+  recommendationsContainerWithWishlist: "_4fbcc81dbba4d7a8-recommendationsContainerWithWishlist"
 }

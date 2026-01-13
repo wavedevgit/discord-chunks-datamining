@@ -166,7 +166,7 @@ function j(e, t) {
   } = t, _ = null != i && i > 0, h = p === m.lr.POPULAR ? S.intl.string(S.t.Ig6VDH) : S.intl.string(S.t.ilhtIa), g = {
     title: _ ? S.intl.string(S.t.TxBQzD) : S.intl.string(S.t["4yiU7x"]),
     body: _ ? true : h,
-    renderIcon: _ ? true : f.Q,
+    renderIcon: _ ? true : f.Qe,
     shouldShow: true
   }, O = () => {
     if (_) return void a();

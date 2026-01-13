@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 654544, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -38,7 +38,7 @@ function d(e) {
         children: e
       })]
     })
-  }, [b]), j = i.useMemo(() => (0, r.jsxs)(l.kSQ, {
+  }, [b]), h = i.useMemo(() => (0, r.jsxs)(l.kSQ, {
     children: [(0, r.jsx)(l.sNh, {
       id: "browse-collectibles-shop",
       label: s.intl.string(s.t["5upuqx"]),
@@ -65,7 +65,7 @@ function d(e) {
         onSelect: true,
         onClose: t,
         "aria-label": s.intl.string(s.t.GdNkvG),
-        children: j
+        children: h
       })
     },
     children: e => (0, r.jsx)(l.Button, function(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 232083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -81,13 +81,13 @@ function m(e) {
     disableInteraction: m,
     games: b
   } = e, y = (0, i.e7)([l.default], () => l.default.getId() === u.id), {
-    getManageButtonForWidget: j
-  } = (0, d.j)(), h = j(f), {
+    getManageButtonForWidget: h
+  } = (0, d.j)(), j = h(f), {
     expanded: O,
-    setExpanded: v
-  } = (0, c.g)(), x = O ? b : b.slice(0, 2), P = b.length > 2, I = (0, r.jsxs)(r.Fragment, {
+    setExpanded: x
+  } = (0, c.g)(), v = O ? b : b.slice(0, 2), P = b.length > 2, I = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p, (t = g({}, e), n = n = {
-      games: x
+      games: v
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -99,7 +99,7 @@ function m(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), P && (0, r.jsx)(s.Z, {
       expanded: O,
-      onClick: () => v(e => !e)
+      onClick: () => x(e => !e)
     })]
   });
   return y && !m ? (0, r.jsxs)(r.Fragment, {
@@ -107,7 +107,7 @@ function m(e) {
       widgetType: f,
       gameCount: b.length
     }), (0, r.jsx)(a.d, {
-      emptyListFallbackRef: h,
+      emptyListFallbackRef: j,
       children: I
     })]
   }) : I

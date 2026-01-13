@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -27,7 +27,7 @@ function p(e) {
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), y = (0, a.e7)([c.default], () => c.default.getCurrentUser()), j = (0, o.zPA)(), h = i.useMemo(() => {
+  })), y = (0, a.e7)([c.default], () => c.default.getCurrentUser()), h = (0, o.zPA)(), j = i.useMemo(() => {
     if (null == y || null == m) return null;
     let {
       id: e,
@@ -87,7 +87,7 @@ function p(e) {
       })
     }
     return null
-  }, [m, y]), O = i.useRef(null), v = i.useCallback(() => {
+  }, [m, y]), O = i.useRef(null), x = i.useCallback(() => {
     if (null == n.current) return;
     let e = n.current.getBoundingClientRect();
     O.current = {
@@ -100,21 +100,21 @@ function p(e) {
         O.current = null;
         return
       }
-      null == O.current && v()
-    }, [p, v]), true !== p || null == b || null == h) return null;
-  null == O.current && v();
+      null == O.current && x()
+    }, [p, x]), true !== p || null == b || null == j) return null;
+  null == O.current && x();
   let {
-    x: x,
+    x: v,
     y: P
   } = null != (t = O.current) ? t : {
     x: 0,
     y: 0
-  }, I = b.x - x - 60 * !!j, w = b.y - P;
+  }, I = b.x - v - 60 * !!h, w = b.y - P;
   return (0, r.jsx)("div", {
     className: g.container,
     style: {
       transform: "translate3d(".concat(I, "px, ").concat(w, "px, 0)")
     },
-    children: h
+    children: j
   })
 }

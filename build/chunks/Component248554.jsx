@@ -1,4 +1,4 @@
-/** Chunk was on 33131 **/
+/** Chunk was on 55827 **/
 /** chunk id: 248554, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
   c: () => m,
@@ -18,13 +18,13 @@ function d(e) {
     applicationId: a
   } = e, {
     coverImageUrl: l
-  } = (0, r.$)(a);
-  return null != l && "" !== l ? (0, t.jsx)("div", {
+  } = (0, s.$)(a);
+  return null != l && "" !== l ? (0, i.jsx)("div", {
     className: n()(c.coverContainer, o.placeholderCover),
-    children: (0, t.jsx)(s.o, {
+    children: (0, i.jsx)(r.o, {
       imageSrc: l
     })
-  }) : (0, t.jsx)("div", {
+  }) : (0, i.jsx)("div", {
     className: n()(c.loadingCover, o.placeholderCover)
   })
 }
@@ -33,23 +33,23 @@ function u(e) {
   let {
     applicationId: a,
     size: l = "default",
-    className: i
+    className: t
   } = e;
-  return (0, t.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: n()(o.container, o.placeholderDetailsCard, {
       [o.sizeSmall]: "small" === l,
       [o.sizeMedium]: "medium" === l
-    }, i),
+    }, t),
     "aria-hidden": true,
-    children: [null != a ? (0, t.jsx)(d, {
+    children: [null != a ? (0, i.jsx)(d, {
       applicationId: a
-    }) : (0, t.jsx)("div", {
+    }) : (0, i.jsx)("div", {
       className: c.loadingCover
-    }), (0, t.jsxs)("div", {
+    }), (0, i.jsxs)("div", {
       className: o.placeholderText,
-      children: [(0, t.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         className: o.placeholderBar
-      }), (0, t.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: o.placeholderBar
       })]
     })]
@@ -60,15 +60,15 @@ function m(e) {
   let {
     applicationIds: a,
     size: l = "default",
-    className: i
-  } = e, r = "small" === l ? a.slice(0, 3) : a.slice(0, 4);
-  return (0, t.jsx)("div", {
+    className: t
+  } = e, s = "small" === l ? a.slice(0, 3) : a.slice(0, 4);
+  return (0, i.jsx)("div", {
     className: n()(o.container, o.placeholderCoverGrid, {
       [o.sizeSmall]: "small" === l,
       [o.sizeMedium]: "medium" === l
-    }, i),
+    }, t),
     "aria-hidden": true,
-    children: r.map((e, a) => (0, t.jsx)(d, {
+    children: s.map((e, a) => (0, i.jsx)(d, {
       applicationId: e
     }, a))
   })

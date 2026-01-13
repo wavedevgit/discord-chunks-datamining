@@ -1,7 +1,7 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => j,
+  F: () => h,
   Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk237297 = require("./237297.js");
 
-function j(e) {
+function h(e) {
   var t, n, {
       children: i,
       className: l,
@@ -76,7 +76,7 @@ function j(e) {
   }), t))
 }
 
-function h(e) {
+function j(e) {
   let {
     user: t,
     currentUser: n,
@@ -122,11 +122,11 @@ function O(e) {
     initialSection: p,
     onClose: m
   } = e, {
-    trackUserProfileAction: j
+    trackUserProfileAction: h
   } = (0, c.KZ)(), [{
     section: O,
-    text: v
-  }, x] = i.useState(null != (t = g.find(e => {
+    text: x
+  }, v] = i.useState(null != (t = g.find(e => {
     let {
       section: t
     } = e;
@@ -145,10 +145,10 @@ function O(e) {
         selectedItem: O,
         onItemSelect: e => {
           if (u.Z.hasUnsavedChanges() && O === b.oh.WIDGETS) return void s.Z.notifyUnsavedWidgets();
-          j({
+          h({
             action: "PRESS_SECTION",
             section: e
-          }), x(t => {
+          }), v(t => {
             var n;
             return null != (n = g.find(t => t.section === e)) ? n : t
           })
@@ -162,15 +162,15 @@ function O(e) {
       })
     }), (0, r.jsx)(o.njP.Panel, {
       id: O,
-      "aria-label": v,
+      "aria-label": x,
       className: y.tabBarPanel,
       children: (0, r.jsx)(o.y5t, {
         component: (0, r.jsx)(o.nn4, {
           children: (0, r.jsx)(o.H, {
-            children: v
+            children: x
           })
         }),
-        children: (0, r.jsx)(h, {
+        children: (0, r.jsx)(j, {
           user: n,
           currentUser: l,
           displayProfile: a,

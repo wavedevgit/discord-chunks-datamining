@@ -1,8 +1,8 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  wl: () => h,
-  yX: () => j
+  wl: () => j,
+  yX: () => h
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -69,13 +69,13 @@ function y(e) {
     widgetType: t,
     widget: n,
     onAddGame: y,
-    children: j
-  } = e, h = b(e, ["widgetType", "widget", "onAddGame", "children"]);
+    children: h
+  } = e, j = b(e, ["widgetType", "widget", "onAddGame", "children"]);
   let O = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]),
     {
-      trackUserProfileEditAction: v
+      trackUserProfileEditAction: x
     } = (0, s.KZ)(),
-    [x, P] = i.useState(""),
+    [v, P] = i.useState(""),
     I = i.useRef(""),
     {
       options: w,
@@ -91,12 +91,12 @@ function y(e) {
         game: {
           applicationId: e
         }
-      }), o.uvj.announce(f.intl.string(f.t.q0U3DE)), v({
+      }), o.uvj.announce(f.intl.string(f.t.q0U3DE)), x({
         action: "GAME_ADDED",
         gameId: e,
         widgetEdited: t
       }), S.includes(e) && T(e), null == y || y()
-    }, [t, v, y, S, T]),
+    }, [t, x, y, S, T]),
     C = i.useMemo(() => {
       let e = new Map(w.map(e => [String(e.value), {
           id: String(e.value),
@@ -115,22 +115,22 @@ function y(e) {
     Z = i.useCallback(e => "" === e.trim() ? C.length : (0, l.Lu)(C, e, N).length, [C, N]),
     A = i.useCallback(e => {
       let n = e.target.value;
-      "" === x.trim() && "" !== n.trim() && v({
+      "" === v.trim() && "" !== n.trim() && x({
         action: "GAME_SEARCH_SESSION_STARTED",
         widgetEdited: t,
         numCharacters: n.trim().length,
         numResults: Z(n)
       }), P(n), I.current = n
-    }, [x, v, t, Z]);
-  return (0, r.jsx)(o.yRy, m(p({}, h), {
+    }, [v, x, t, Z]);
+  return (0, r.jsx)(o.yRy, m(p({}, j), {
     onRequestOpen: () => {
-      v({
+      x({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
       }), P(""), I.current = ""
     },
     onRequestClose: () => {
-      v({
+      x({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
         numCharacters: I.current.trim().length,
@@ -164,11 +164,11 @@ function y(e) {
         })
       })
     },
-    children: e => j(e)
+    children: e => h(e)
   }))
 }
 
-function j(e) {
+function h(e) {
   var {
     disabled: t
   } = e, n = b(e, ["disabled"]);
@@ -189,7 +189,7 @@ function j(e) {
   }))
 }
 
-function h(e) {
+function j(e) {
   let t = i.useRef(null);
   return (0, r.jsx)(y, m(p({
     targetElementRef: t,

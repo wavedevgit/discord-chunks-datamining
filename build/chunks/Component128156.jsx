@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -70,9 +70,9 @@ function w(e) {
   });
   if (!M && !F && !k) {
     var U;
-    return R ? (0, r.jsx)(j.Uf, {
+    return R ? (0, r.jsx)(h.Uf, {
       onClose: T
-    }) : (0, r.jsx)(j.P9, {
+    }) : (0, r.jsx)(h.P9, {
       user: t,
       guildId: null != (U = null == w ? true : w.guildId) ? U : E,
       channelId: S,
@@ -82,7 +82,7 @@ function w(e) {
   return (0, r.jsxs)(O.F, {
     className: I.scroller,
     fade: true,
-    children: [M ? (0, r.jsx)(h.Z, {
+    children: [M ? (0, r.jsx)(j.Z, {
       heading: P.intl.string(P.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
@@ -109,15 +109,15 @@ function w(e) {
           })
         })]
       })
-    }) : null, F ? (0, r.jsx)(h.Z, {
+    }) : null, F ? (0, r.jsx)(j.Z, {
       heading: P.intl.string(P.t.jzgEoL),
       introText: R ? P.intl.format(P.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
-          href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollTargetId: v.Tb.RECENT_ACTIVITY,
+      scrollTargetId: x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: I.cards,
         children: N.map(e => (0, r.jsx)("li", {

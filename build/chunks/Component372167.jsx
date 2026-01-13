@@ -1,4 +1,4 @@
-/** Chunk was on 84249 **/
+/** Chunk was on 22979 **/
 /** chunk id: 372167, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -36,7 +36,8 @@ function h(e) {
     height: 560,
     children: [(0, a.jsx)(d.Z, {
       analyticsLocations: o,
-      handleOpenUserProfileModal: t
+      handleOpenUserProfileModal: t,
+      numWishlistItemsToRecommend: 9
     }), (0, a.jsx)("div", {
       className: m.buttonContainer,
       children: (0, a.jsx)(r.zxk, {

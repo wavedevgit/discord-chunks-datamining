@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk391122 = require("./391122.js");
 
-function x(e) {
+function v(e) {
   let {
     index: t,
     widget: n,
@@ -32,7 +32,7 @@ function x(e) {
   } = e, c = i.useRef(null), u = i.useRef(null), {
     registerManageWidgetButtonRef: d,
     manageFocusOnReorder: g
-  } = (0, h.j)();
+  } = (0, j.j)();
   i.useLayoutEffect(() => {
     let e = d(n.type);
     return e(c.current), () => e(null)
@@ -43,7 +43,7 @@ function x(e) {
     }, [n.id]),
     {
       isDragging: b,
-      dragSourcePosition: j
+      dragSourcePosition: h
     } = (0, m.Y9)({
       dragRef: c,
       dropRef: u,
@@ -57,15 +57,15 @@ function x(e) {
       onReorder: f.IM,
       onEnd: () => g(n.type)
     }),
-    x = null != j,
-    P = x && t < j,
-    I = x && t > j;
+    v = null != h,
+    P = v && t < h,
+    I = v && t > h;
   return (0, r.jsxs)("div", {
     ref: u,
-    className: a()(v.dragAndDropTarget, {
-      [v.dropIndicatorBefore]: P,
-      [v.dropIndicatorAfter]: I,
-      [v.isDragging]: b
+    className: a()(x.dragAndDropTarget, {
+      [x.dropIndicatorBefore]: P,
+      [x.dropIndicatorAfter]: I,
+      [x.isDragging]: b
     }),
     "aria-label": O.intl.formatToPlainString(O.t.YLczh4, {
       positionNumber: t + 1
@@ -73,7 +73,7 @@ function x(e) {
     children: [(0, r.jsx)(y.Z, {
       buttonRef: c,
       widget: n,
-      className: v.dragHandleButton,
+      className: x.dragHandleButton,
       additionalMenuItems: l
     }), o]
   })
@@ -88,7 +88,7 @@ function P(e) {
     className: f,
     index: m,
     trailingContent: y,
-    headerTitle: h,
+    headerTitle: j,
     headerSubtitle: O,
     headerActionButtons: P,
     headerClassName: I,
@@ -102,11 +102,11 @@ function P(e) {
   (0, g.Z)(C, N);
   let Z = S && null != m && !l,
     A = () => (0, r.jsxs)("div", {
-      className: a()(v.container, f),
-      children: [(0, r.jsx)(j.Z, {
+      className: a()(x.container, f),
+      children: [(0, r.jsx)(h.Z, {
         userId: t,
         headingId: E,
-        title: h,
+        title: j,
         subtitle: O,
         actionButtons: P,
         widget: n,
@@ -119,7 +119,7 @@ function P(e) {
   return (0, r.jsx)("section", {
     ref: C,
     "aria-labelledby": E,
-    children: Z ? (0, r.jsx)(x, {
+    children: Z ? (0, r.jsx)(v, {
       index: null != m ? m : 0,
       widget: n,
       additionalManageWidgetMenuItems: w,

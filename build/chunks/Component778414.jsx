@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => F,
@@ -76,9 +76,9 @@ function L(e) {
   var {
     widget: t
   } = e, n = R(e, ["widget"]);
-  return t instanceof j.q ? (0, r.jsx)(P.Z, k({
+  return t instanceof h.q ? (0, r.jsx)(P.Z, k({
     widget: t
-  }, n)) : t instanceof h.zy ? (0, r.jsx)(T.Z, k({
+  }, n)) : t instanceof j.zy ? (0, r.jsx)(T.Z, k({
     widget: t
   }, n)) : null
 }
@@ -127,14 +127,14 @@ function M(e) {
     user: t,
     guildId: n,
     channelId: l
-  } = e, a = (0, x.Z)(t.id), c = (0, o.e7)([b.default], () => b.default.getId() === t.id), d = (() => {
+  } = e, a = (0, v.Z)(t.id), c = (0, o.e7)([b.default], () => b.default.getId() === t.id), d = (() => {
     let [e, t] = (0, o.Wu)([y.Z], () => [y.Z.ipCountryCode, y.Z.ipCountryCodeRequest]), n = (0, p.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, s.GE)()
     }, [e, t, n]), "GB" === e && n
   })(), g = (0, u.q5)({
     location: "UserProfileModalV2Widgets"
-  }), v = 0 === a.length && c, P = i.useMemo(() => a.filter(h.Wc), [a]), I = i.useMemo(() => a.filter(e => e instanceof j.q), [a]);
+  }), x = 0 === a.length && c, P = i.useMemo(() => a.filter(j.Wc), [a]), I = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
   (0, O.J)(c, P), ((e, t) => {
     let n = i.useMemo(() => t.map(e => e.applicationId), [t]);
     (0, f.Z)(n);
@@ -159,7 +159,7 @@ function M(e) {
       index: i
     }, e.getUniqueKey()))]
   });
-  if (v)
+  if (x)
     if (g) return (0, r.jsx)(_.Z, {});
     else return (0, r.jsx)(Z.Z, {});
   return c ? (0, r.jsx)(E.K, {
@@ -172,7 +172,7 @@ function F(e) {
     user: t
   } = e, n = R(e, ["user"]);
   let l = i.useRef(null);
-  (0, v.r)({
+  (0, x.r)({
     containerRef: l
   });
   let o = (0, C.h)(t.id);

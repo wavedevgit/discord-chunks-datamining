@@ -1,7 +1,7 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -38,7 +38,7 @@ function y(e) {
   return e
 }
 
-function j(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -54,10 +54,10 @@ function j(e, t) {
   return i
 }
 
-function h(e) {
+function j(e) {
   var {
     widget: t
-  } = e, n = j(e, ["widget"]);
+  } = e, n = h(e, ["widget"]);
   switch (t.type) {
     case i.l.FAVORITE_GAMES:
       return (0, r.jsx)(f.Z, y({
@@ -85,20 +85,20 @@ function O(e) {
     widget: t,
     user: n,
     disableInteraction: i
-  } = e, d = j(e, ["widget", "user", "disableInteraction"]);
+  } = e, d = h(e, ["widget", "user", "disableInteraction"]);
   let {
     setExpanded: f
   } = (0, u.g)(), {
     shouldShowSuggestions: g,
     handleDismissSuggestions: p
-  } = (0, c.h)(t), O = (0, l.e7)([a.default], () => a.default.getId() === n.id), v = O && !i && g, x = (0, o.mR)(t), P = (0, o.Hy)(t, {
+  } = (0, c.h)(t), O = (0, l.e7)([a.default], () => a.default.getId() === n.id), x = O && !i && g, v = (0, o.mR)(t), P = (0, o.Hy)(t, {
     isCurrentUser: O
   }), I = (0, o.kQ)(t), w = 1 === (0, o.Gv)(t.type);
-  return (0, r.jsx)(h, y({
+  return (0, r.jsx)(j, y({
     widget: t,
     user: n,
     disableInteraction: i,
-    headerTitle: x,
+    headerTitle: v,
     headerSubtitle: P,
     headerActionButtons: O && !w ? [(0, r.jsx)(s.yX, {
       disabled: I,
@@ -106,7 +106,7 @@ function O(e) {
       widget: t,
       onAddGame: () => f(true)
     }, "".concat(t.type, "-browse-games-popout"))] : true,
-    trailingContent: v && (0, r.jsx)(m.Z, {
+    trailingContent: x && (0, r.jsx)(m.Z, {
       userId: n.id,
       widgetType: t.type,
       onDismiss: p,
@@ -115,10 +115,10 @@ function O(e) {
   }, d))
 }
 
-function v(e) {
+function x(e) {
   var {
     widget: t
-  } = e, n = j(e, ["widget"]);
+  } = e, n = h(e, ["widget"]);
   return (0, r.jsx)(u.N, {
     widgetType: t.type,
     children: (0, r.jsx)(O, y({

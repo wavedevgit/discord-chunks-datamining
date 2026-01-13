@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 513417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -29,11 +29,11 @@ function f(e) {
       fetched: b
     } = (0, l.O)(g),
     y = (0, c.Z)(null == t ? true : t.id),
-    j = null == t || null == f || null == m || !b;
-  return r.useMemo(() => j ? {
-    isLoading: j
+    h = null == t || null == f || null == m || !b;
+  return r.useMemo(() => h ? {
+    isLoading: h
   } : {
-    isLoading: j,
+    isLoading: h,
     suggestions: f.map(e => {
       let t = p.find(t => (null == t ? true : t.id) === e.applicationId);
       return null == t || null == m.find(t => t.application.id === e.applicationId) || null != y.find(t => t instanceof o.q && t.applicationId === e.applicationId) ? null : {
@@ -43,5 +43,5 @@ function f(e) {
       }
     }).filter(u.lm),
     currentUser: t
-  }, [j, f, t, p, m, y])
+  }, [h, f, t, p, m, y])
 }

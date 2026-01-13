@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 28671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -25,7 +25,7 @@ function m(e) {
     trackUserProfileEditAction: b
   } = (0, o.KZ)(), y = i.useMemo(() => new c.q({
     applicationId: n.id
-  }), [n.id]), j = i.useCallback(() => {
+  }), [n.id]), h = i.useCallback(() => {
     null != y && ((0, s.qH)(y), b(function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -83,7 +83,7 @@ function m(e) {
               applicationName: n.name
             }),
             onClick: () => {
-              m(g.L.TAKE_ACTION), j()
+              m(g.L.TAKE_ACTION), h()
             }
           })
         })]

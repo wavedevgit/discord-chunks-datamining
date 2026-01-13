@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -24,20 +24,20 @@ function b(e) {
     channelId: b,
     onClose: y
   } = e, {
-    analyticsLocations: j
+    analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: h,
+    context: j,
     trackUserProfileAction: O
   } = (0, c.KZ)(), {
-    mutualFriends: v,
-    mutualFriendsCount: x
+    mutualFriends: x,
+    mutualFriendsCount: v
   } = (0, s.Z)(t), P = (0, l.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, P)
   }, [t.id, P]), (0, r.jsx)(p.F, {
     className: m.scroller,
-    children: null == v ? Array.from({
-      length: null != x ? x : 10
+    children: null == x ? Array.from({
+      length: null != v ? v : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: m.friendsLoadingItem,
       children: [(0, r.jsx)(o.ZT, {
@@ -47,7 +47,7 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === v.length ? (0, r.jsx)(g.s_, {}) : v.map(e => {
+    }, t)) : 0 === x.length ? (0, r.jsx)(g.s_, {}) : x.map(e => {
       let {
         key: t,
         user: i,
@@ -79,9 +79,9 @@ function b(e) {
               })
             }
             return e
-          }({}, h), t = t = {
+          }({}, j), t = t = {
             userId: i.id,
-            sourceAnalyticsLocations: j
+            sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

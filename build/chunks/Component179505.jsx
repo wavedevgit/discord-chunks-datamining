@@ -58,7 +58,7 @@ function b(e, t) {
   } = t, O = null != e.bundleItems && e.bundleItems.length > 0, v = null != n && n > 0, S = E && !v, I = v ? _.intl.string(_.t.TxBQzD) : _.intl.string(_.t.pLPjsb), T = y === u.lr.POPULAR ? _.intl.string(_.t.Ig6VDH) : _.intl.string(_.t.ilhtIa), C = {
     title: S ? _.intl.string(_.t.HFhcqh) : I,
     body: S ? T : true,
-    renderIcon: S ? s.Q : true,
+    renderIcon: S ? s.Qe : true,
     shouldShow: true
   }, A = () => {
     if (v) return void c();

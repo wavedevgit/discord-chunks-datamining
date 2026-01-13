@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -192,30 +192,30 @@ function D(e) {
     applicationId: f
   } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
     trackUserProfileEditAction: y
-  } = (0, p.KZ)(), [j, h] = i.useState("idle"), [O, v] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), S = null != t && "" !== t.trim(), T = i.useCallback(() => {
+  } = (0, p.KZ)(), [h, j] = i.useState("idle"), [O, x] = i.useState(null != t ? t : ""), v = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), S = null != t && "" !== t.trim(), T = i.useCallback(() => {
     y({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
-    }), h("editing")
+    }), j("editing")
   }, [d, y]), _ = i.useCallback(() => {
     let e = O.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, m.Bu)(d, f, "" !== e ? e : true), h("completed"), n && y({
+    (0, m.Bu)(d, f, "" !== e ? e : true), j("completed"), n && y({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
       gameId: f
     })
   }, [d, f, O, t, y]), C = i.useCallback(e => {
-    v(e)
+    x(e)
   }, []);
   return i.useEffect(() => {
-    "editing" === j && v(null != t ? t : "")
-  }, [t, j]), i.useEffect(() => {
-    if ("completed" === j) {
+    "editing" === h && x(null != t ? t : "")
+  }, [t, h]), i.useEffect(() => {
+    if ("completed" === h) {
       var e;
-      null == (e = x.current) || e.focus()
+      null == (e = v.current) || e.focus()
     }
-  }, [j]), "editing" === j ? (0, r.jsxs)("div", {
+  }, [h]), "editing" === h ? (0, r.jsxs)("div", {
     className: E.textAreaContainer,
     children: [(0, r.jsx)(c.nn4, {
       tag: "label",
@@ -228,7 +228,7 @@ function D(e) {
       onChange: C,
       onBlur: _,
       rows: 3,
-      autoFocus: "editing" === j,
+      autoFocus: "editing" === h,
       onKeyDown: e => {
         "Enter" !== e.key || e.shiftKey || (e.preventDefault(), _())
       },
@@ -253,7 +253,7 @@ function D(e) {
       text: null != t ? t : w,
       className: a()(E.editableCommentText, !S && E.placeholder)
     }), (0, r.jsx)(c.P3F, {
-      innerRef: x,
+      innerRef: v,
       "aria-label": I.intl.string(I.t.ppb9MJ),
       onClick: e => {
         e.stopPropagation(), T()
@@ -291,8 +291,8 @@ function k(e) {
   }, B = f.default.getCurrentUser(), M = (null == B ? true : B.id) === t.id, F = 1 === (0, m.Gv)(o), U = !s && M, W = U && (0, m.vI)(o), H = U && !F, {
     registerDragHandleRef: z
   } = (0, y.C)();
-  if (L) return (0, r.jsx)(h.i, {});
-  let K = () => (0, r.jsx)(j.Z, {
+  if (L) return (0, r.jsx)(j.i, {});
+  let K = () => (0, r.jsx)(h.Z, {
       coverRef: g,
       className: null == k || s ? true : w.hoverActiveEffect,
       imageSrc: k,
@@ -337,13 +337,13 @@ function k(e) {
           applicationId: I,
           disableInteraction: s,
           className: E.tags
-        }), !s && (0, r.jsx)(x.F, {
+        }), !s && (0, r.jsx)(v.F, {
           className: E.socialProof,
           applicationId: I,
           guildId: n,
           channelId: i
         })]
-      }), !s && M && (0, r.jsx)(v.Z, {
+      }), !s && M && (0, r.jsx)(x.Z, {
         game: l,
         widgetType: o,
         className: E.removeGameButton,

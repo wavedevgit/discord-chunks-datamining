@@ -1,7 +1,7 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 939974, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -41,7 +41,7 @@ function O(e) {
   return e
 }
 
-function v(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function v(e, t) {
   }), e
 }
 
-function x(e) {
+function v(e) {
   let {
     widget: t,
     className: n,
@@ -66,11 +66,11 @@ function x(e) {
     widget: t,
     additionalMenuItems: a,
     children: e => (0, r.jsx)(P, {
-      children: (0, r.jsxs)(s.P3F, v(O({
+      children: (0, r.jsxs)(s.P3F, x(O({
         innerRef: i,
-        className: l()(h.button, n),
+        className: l()(j.button, n),
         "data-dnd-name": o,
-        "aria-label": j.intl.formatToPlainString(j.t.HWNJJN, {
+        "aria-label": h.intl.formatToPlainString(h.t.HWNJJN, {
           widgetTitle: o
         }),
         "aria-describedby": c,
@@ -80,7 +80,7 @@ function x(e) {
           size: "sm"
         }), (0, r.jsx)(s.nn4, {
           id: c,
-          children: j.intl.string(j.t.bsuqFn)
+          children: h.intl.string(h.t.bsuqFn)
         })]
       }))
     })
@@ -96,11 +96,11 @@ let P = e => {
     }));
     return (0, r.jsx)(c.u, {
       __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
-        className: h.tooltipText,
+        className: j.tooltipText,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          children: j.intl.format(n ? j.t["zvln/l"] : j.t["7cdwhg"], {
+          children: h.intl.format(n ? h.t["zvln/l"] : h.t["7cdwhg"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
@@ -108,7 +108,7 @@ let P = e => {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          children: j.intl.format(j.t["4e0rM4"], {
+          children: h.intl.format(h.t["4e0rM4"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
@@ -139,7 +139,7 @@ let P = e => {
         let {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
-        return t => (0, r.jsx)(e, v(O({}, t), {
+        return t => (0, r.jsx)(e, x(O({}, t), {
           userId: g.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
@@ -163,12 +163,12 @@ let P = e => {
             (0, u.Zy)(), t()
           },
           onSelect: () => {},
-          "aria-label": j.intl.string(j.t.xpSHSk),
-          className: h.menu,
+          "aria-label": h.intl.string(h.t.xpSHSk),
+          className: j.menu,
           children: (0, r.jsxs)(s.kSQ, {
             children: [a, (0, r.jsx)(s.sNh, {
               id: "remove-widget",
-              label: j.intl.string(j.t.Mm07Yc),
+              label: h.intl.string(h.t.Mm07Yc),
               action: c,
               color: "danger",
               icon: s.XHJ

@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 978369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -87,7 +87,7 @@ function f(e) {
       gameId: f
     }));
     (0, o.n$)(n, f, Array.from(r))
-  }, [b, m, n, f]), j = (0, i.useCallback)(e => {
+  }, [b, m, n, f]), h = (0, i.useCallback)(e => {
     let t = new Set(b);
     e.forEach(e => {
       t.delete(e)
@@ -114,7 +114,7 @@ function f(e) {
       return (0, r.jsx)(d, {
         currentTags: b,
         onTagSelect: y,
-        onNoneSelect: j,
+        onNoneSelect: h,
         onClose: t
       })
     },

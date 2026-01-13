@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => O
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk713603 = require("./713603.js"),
   Chunk507683 = require("./507683.js");
 
-function h(e) {
+function j(e) {
   let {
     index: t,
     widgetType: n,
@@ -46,12 +46,12 @@ function h(e) {
     }),
     onReorder: (e, t) => (0, c.Eq)(n, e, t),
     onEnd: () => d(i.applicationId),
-    className: j.container,
-    dropBeforeClassName: j.dropIndicatorBefore,
-    dropAfterClassName: j.dropIndicatorAfter,
-    draggingClassName: j.isDragging,
+    className: h.container,
+    dropBeforeClassName: h.dropIndicatorBefore,
+    dropAfterClassName: h.dropIndicatorAfter,
+    draggingClassName: h.isDragging,
     children: (0, r.jsx)("div", {
-      className: j.dragHandleContainer,
+      className: h.dragHandleContainer,
       children: o
     })
   })
@@ -65,8 +65,8 @@ function O(e) {
     guildId: c,
     channelId: b,
     disableInteraction: O = false,
-    index: v,
-    onRemoveGame: x,
+    index: x,
+    onRemoveGame: v,
     coverRef: P
   } = e, {
     coverImageUrl: I,
@@ -85,37 +85,37 @@ function O(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: O,
-      className: l()(T ? j.socialProofBackdrop : true, null == I || O ? true : y.hoverActiveEffect),
+      className: l()(T ? h.socialProofBackdrop : true, null == I || O ? true : y.hoverActiveEffect),
       hideTooltip: Z,
       coverRef: P
     }), N && (0, r.jsx)(s.e_, {
       buttonRef: S(t.applicationId),
-      className: j.dragHandle
+      className: h.dragHandle
     }), !O && (0, r.jsx)(g.L, {
       userId: n,
       applicationId: t.applicationId,
       guildId: c,
       channelId: b,
-      className: j.socialProof
+      className: h.socialProof
     }), N && (0, r.jsx)(f.Z, {
       game: t,
       widgetType: i,
-      className: j.removeGameButton,
+      className: h.removeGameButton,
       iconSize: "xs",
-      onRemove: () => null == x ? true : x(t.applicationId)
+      onRemove: () => null == v ? true : v(t.applicationId)
     })]
   });
   return E ? (0, r.jsx)("div", {
     className: y.loadingCover
-  }) : N ? (0, r.jsx)(h, {
+  }) : N ? (0, r.jsx)(j, {
     widgetType: i,
-    index: null != v ? v : 0,
+    index: null != x ? x : 0,
     game: t,
     coverImageUrl: I,
     gameName: w,
     children: A()
   }) : (0, r.jsx)("div", {
-    className: j.container,
+    className: h.container,
     children: A()
   })
 }

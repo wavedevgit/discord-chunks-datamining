@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -25,7 +25,7 @@ function p() {
     isLoading: y
   } = (0, a.Z)({
     location: "UserProfileModalV2ApplicationWidgetsEmptyState"
-  }), j = null == m ? true : m[0], h = i.useCallback(() => {
+  }), h = null == m ? true : m[0], j = i.useCallback(() => {
     t({
       action: "PRESS_ADD_WIDGET"
     }), (0, l.ZDy)(async () => {
@@ -69,15 +69,15 @@ function p() {
     })
   }, [t]);
   if (i.useEffect(() => {
-      !y && null != j && (p.current || (e({
+      !y && null != h && (p.current || (e({
         action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
-        applicationId: j.application.id
+        applicationId: h.application.id
       }), p.current = true))
-    }, [y, e, j]), y) return (0, r.jsx)("div", {
+    }, [y, e, h]), y) return (0, r.jsx)("div", {
     className: g.loading,
     children: (0, r.jsx)(l.$jN, {})
   });
-  if (null == j) return (0, r.jsx)(d.Z, {});
+  if (null == h) return (0, r.jsx)(d.Z, {});
   let O = (0, r.jsxs)(l.Kqy, {
     gap: 4,
     className: g.header,
@@ -89,26 +89,26 @@ function p() {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: f.intl.format(f.t.YnNFWa, {
-        applicationName: j.application.name
+        applicationName: h.application.name
       })
     })]
   });
   return (0, r.jsx)(o.ZP, {
-    contentTypes: [j.dismissibleContent],
+    contentTypes: [h.dismissibleContent],
     bypassAutoDismiss: true,
     children: e => {
       let {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      return t === j.dismissibleContent ? (0, r.jsxs)(l.Kqy, {
+      return t === h.dismissibleContent ? (0, r.jsxs)(l.Kqy, {
         gap: 16,
         align: "center",
         children: [(0, r.jsx)(l.LZC, {
           size: 32
         }), O, (0, r.jsx)(s.Z, {
           user: b,
-          application: j.application,
+          application: h.application,
           onDismiss: n
         }), (0, r.jsx)(u.Z, {})]
       }) : (0, r.jsxs)(l.Kqy, {
@@ -121,7 +121,7 @@ function p() {
           text: f.intl.string(f.t["lBG2s/"]),
           size: "md",
           color: "secondary",
-          onClick: h
+          onClick: j
         })]
       })
     }

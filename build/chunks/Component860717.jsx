@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => $
@@ -328,7 +328,7 @@ function W(e) {
         children: null != t ? t : (0, r.jsx)("div", {
           className: k.textPlaceholder
         })
-      }), (0, r.jsx)(x.U, {
+      }), (0, r.jsx)(v.U, {
         color: "muted",
         children: n
       })]
@@ -378,7 +378,7 @@ function z(e) {
 function K(e) {
   let {
     content: t
-  } = e, n = i.useId(), l = (0, x._)();
+  } = e, n = i.useId(), l = (0, v._)();
   return null != t ? (0, r.jsx)(I.Z, {
     type: d.re.TEXT_DISPLAY,
     id: n,
@@ -394,7 +394,7 @@ function q(e) {
     content: t,
     image: n,
     imagePosition: i
-  } = e, l = (0, x._)(), o = (0, b.d)(n) ? (0, r.jsx)("div", {
+  } = e, l = (0, v._)(), o = (0, b.d)(n) ? (0, r.jsx)("div", {
     className: a()(k.image, l.className),
     "data-position": i,
     children: (0, r.jsx)(E.ZP, {
@@ -459,16 +459,16 @@ function Y(e, t) {
   return null == l || "unfurled_media" !== l.type ? null : l.media
 }
 
-function Q(e) {
+function J(e) {
   let {
     children: t,
     widget: n
   } = e;
-  return (0, r.jsx)(v.am.Root, {
+  return (0, r.jsx)(x.am.Root, {
     containerInnerWidth: 396,
     children: (0, r.jsx)(O.Il, {
       applicationWidget: n,
-      children: (0, r.jsx)(x.U, {
+      children: (0, r.jsx)(v.U, {
         size: "reduced",
         weight: "reduced",
         children: (0, r.jsx)("div", {
@@ -480,7 +480,7 @@ function Q(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   return (0, r.jsxs)(u.Kqy, {
     direction: "horizontal",
     gap: 24,
@@ -520,10 +520,10 @@ let $ = Object.assign(function(e) {
     widget: l,
     cta: o,
     subtle: d = false
-  } = e, b = (0, s.e7)([T.default], () => T.default.getId()) === n.id, O = (0, y.q)(l.applicationId), v = null == O ? true : O.getIconURL(16), x = (0, s.e7)([_.Z], () => null != O ? _.Z.getGameByApplication(O) : null), P = (0, h.Z)({
+  } = e, b = (0, s.e7)([T.default], () => T.default.getId()) === n.id, O = (0, y.q)(l.applicationId), x = null == O ? true : O.getIconURL(16), v = (0, s.e7)([_.Z], () => null != O ? _.Z.getGameByApplication(O) : null), P = (0, j.Z)({
     location: "UserProfileApplicationWidget",
-    applicationId: null == x ? true : x.id,
-    source: j.m1.UserProfile,
+    applicationId: null == v ? true : v.id,
+    source: h.m1.UserProfile,
     sourceUserId: n.id,
     trackEntryPointImpression: true
   }), {
@@ -541,9 +541,9 @@ let $ = Object.assign(function(e) {
       analyticsLocations: U
     }))
   }, [G, F, t, l.applicationId, U]), H = null == o && I && !E && G, z = (0, r.jsxs)(r.Fragment, {
-    children: [null != v ? (0, r.jsx)("img", {
+    children: [null != x ? (0, r.jsx)("img", {
       className: k.appIcon,
-      src: v,
+      src: x,
       width: 16,
       height: 16,
       alt: ""
@@ -555,7 +555,7 @@ let $ = Object.assign(function(e) {
         className: k.textPlaceholder
       })
     })]
-  }), K = null == x ? (0, r.jsx)("div", {
+  }), K = null == v ? (0, r.jsx)("div", {
     className: k.headerTitle,
     children: z
   }) : (0, r.jsx)(u.P3F, {
@@ -653,13 +653,13 @@ let $ = Object.assign(function(e) {
     className: a()(k.widgetContainer, d && k.subtle),
     headerTitle: K,
     headerClassName: k.header,
-    additionalManageWidgetMenuItems: null != x ? (0, r.jsx)(u.sNh, {
+    additionalManageWidgetMenuItems: null != v ? (0, r.jsx)(u.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: u.iWm,
       action: P
     }) : null,
-    children: [(0, r.jsx)(Q, {
+    children: [(0, r.jsx)(J, {
       widget: l,
       children: (0, r.jsx)(M, {
         component: $
@@ -675,7 +675,7 @@ let $ = Object.assign(function(e) {
           color: "text-subtle",
           children: D.intl.string(D.t.z5K4Uv)
         })]
-      }), H ? (0, r.jsx)(J, {
+      }), H ? (0, r.jsx)(Q, {
         heading: D.intl.string(D.t.UDPRLO),
         content: D.intl.string(D.t["OW/2al"]),
         buttons: (0, r.jsx)(u.Button, {
@@ -686,5 +686,5 @@ let $ = Object.assign(function(e) {
     })]
   }))
 }, {
-  Cta: J
+  Cta: Q
 })

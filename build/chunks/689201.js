@@ -24,7 +24,7 @@ function f(e, t) {
         return {
           productLine: t.skuProductLine,
           source: r,
-          renderIcon: l.Q
+          renderIcon: l.Qe
         }
       }),
       n = a.ZP.getName(t),
@@ -72,7 +72,7 @@ function m(e, t) {
     let r = t && e.isOwned && null != e.gifterUserId && null != a[e.gifterUserId];
     return {
       title: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
-      renderIcon: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? l.Q : true,
+      renderIcon: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? l.Qe : true,
       shouldShow: !r
     }
   }) : e.map(() => ({

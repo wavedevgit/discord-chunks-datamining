@@ -1,4 +1,4 @@
-/** Chunk was on 65414 **/
+/** Chunk was on 90882 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -27,20 +27,20 @@ function y(e) {
     applicationId: s,
     className: u,
     disableInteraction: y = false
-  } = e, h = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = h.length > 0, P = o.qH, I = l && !y && (0, f.M8)(c) && h.length < P, {
+  } = e, j = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = j.length > 0, P = o.qH, I = l && !y && (0, f.M8)(c) && j.length < P, {
     trackUserProfileAction: w
-  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [_, C] = (0, i.useState)(0), [N, Z] = (0, i.useState)(false), A = x(S, T, h, E, C);
+  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [_, C] = (0, i.useState)(0), [N, Z] = (0, i.useState)(false), A = v(S, T, j, E, C);
   if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
       window.removeEventListener("resize", A)
-    }), [A, null == h ? true : h.join("")]), !O && !I) return null;
-  let D = N ? h : h.slice(0, h.length - _);
+    }), [A, null == j ? true : j.join("")]), !O && !I) return null;
+  let D = N ? j : j.slice(0, j.length - _);
   return (0, r.jsxs)("div", {
     className: a()(b.tagListContainer, u),
     children: [O && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
         className: b.tagList,
         "aria-label": m.intl.string(m.t.EfjTi4),
-        children: D.map(e => (0, r.jsx)(j, {
+        children: D.map(e => (0, r.jsx)(h, {
           tag: e,
           isCurrentUser: l,
           applicationId: s,
@@ -50,7 +50,7 @@ function y(e) {
           },
           disableInteraction: y
         }, e))
-      }), _ > 0 && (0, r.jsx)(v, {
+      }), _ > 0 && (0, r.jsx)(x, {
         buttonRef: S,
         isExpanded: N,
         numberOfOverflowingTags: _,
@@ -74,7 +74,7 @@ function y(e) {
     })]
   })
 }
-let j = e => {
+let h = e => {
   let {
     tag: t,
     isCurrentUser: n,
@@ -88,12 +88,12 @@ let j = e => {
   if (null == g) return null;
   let {
     getText: y,
-    icon: j
+    icon: h
   } = g;
   return (0, r.jsxs)("li", {
     className: b.tag,
     ref: o,
-    children: [(0, r.jsx)(j, {
+    children: [(0, r.jsx)(h, {
       size: "xxs"
     }), (0, r.jsx)(s.Text, {
       variant: "text-xxs/medium",
@@ -123,7 +123,7 @@ let j = e => {
   })
 };
 
-function h(e) {
+function j(e) {
   let {
     numberOfOverflowingTags: t
   } = e;
@@ -143,7 +143,7 @@ function O() {
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     isExpanded: t,
     numberOfOverflowingTags: n,
@@ -157,7 +157,7 @@ function v(e) {
   return a ? (0, r.jsx)("div", {
     className: b.expandButton,
     ref: o,
-    children: (0, r.jsx)(h, {
+    children: (0, r.jsx)(j, {
       numberOfOverflowingTags: n
     })
   }) : (0, r.jsx)(c.u, {
@@ -168,13 +168,13 @@ function v(e) {
       onClick: t ? l : i,
       "aria-label": d,
       className: t ? b.collapseButton : b.expandButton,
-      children: t ? (0, r.jsx)(O, {}) : (0, r.jsx)(h, {
+      children: t ? (0, r.jsx)(O, {}) : (0, r.jsx)(j, {
         numberOfOverflowingTags: n
       })
     })
   })
 }
-let x = (e, t, n, r, l) => (0, i.useCallback)(() => {
+let v = (e, t, n, r, l) => (0, i.useCallback)(() => {
   var i, a, o, c;
   if (null == n) return void l(0);
   let s = null != (o = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? o : 0,
