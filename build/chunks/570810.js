@@ -11,5 +11,6 @@ module.exports = {
   loader: "_5ed150ae1491f8f7-loader",
   balanceWidgetPillContainer: "_5ed150ae1491f8f7-balanceWidgetPillContainer",
   tabularNums: "_5ed150ae1491f8f7-tabularNums",
-  headerWithSpacing: "_5ed150ae1491f8f7-headerWithSpacing"
+  headerWithSpacing: "_5ed150ae1491f8f7-headerWithSpacing",
+  orderSummaryContainer: "_5ed150ae1491f8f7-orderSummaryContainer"
 }
