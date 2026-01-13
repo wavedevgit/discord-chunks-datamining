@@ -76,7 +76,7 @@ let M = () => {
             alt: "Private browsing perk logo"
           }), (0, i.jsxs)("div", {
             className: V.content,
-            children: [(0, i.jsx)(R.C, {}), (0, i.jsx)(P.R, {})]
+            children: [(0, i.jsx)(P.C, {}), (0, i.jsx)(R.R, {})]
           }), (0, i.jsx)("div", {
             className: V.contentSpacer
           }), (0, i.jsx)("div", {

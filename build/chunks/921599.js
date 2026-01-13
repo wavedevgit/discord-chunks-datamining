@@ -18,6 +18,7 @@ let T = t => "".concat(t.toFixed(0), "px"),
     stickToMarkers: true,
     minValue: Chunk959517.fP["0"],
     maxValue: Chunk959517.fP[Chunk959517.fP.length - 1],
+    useDefaultValue: () => u.jU.useSetting() ? a.c8 : a.pq,
     getInitialValue: () => {
       let t = l.Z.messageGroupSpacing,
         e = u.jU.getSetting();

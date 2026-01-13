@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 696467, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => P
+  u: () => R
 });
 var Chunk755721 = require("./755721.js"),
   Chunk168107 = require("./168107.jsx"),
@@ -29,7 +29,7 @@ let L = (t, e) => {
       applied_to_existing_guilds: e
     })
   },
-  P = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+  R = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: () => f.intl.string(f.t["3o2ojh"]),
     useSubtitle: () => (0, I.c_)() ? f.intl.format(f.t.WpnWLc, {
       helpdeskArticle: T.Z.getArticleURL(C.BhN.MESSAGE_REQUESTS)

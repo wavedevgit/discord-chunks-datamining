@@ -29,31 +29,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk897192 = require("./897192.js");
 let m = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     usePredicate: () => !(0, O.gN)("LegacyProfilePanel"),
-    useTitle: () => R.intl.string(R.t["vi7f+q"]),
+    useTitle: () => P.intl.string(P.t["vi7f+q"]),
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
     },
     initialize: () => () => r.Z.wait(() => {
-      (0, T.It)(), (0, a.P6)(), o.Z.clearSubsection(P.oAB.PROFILE_CUSTOMIZATION)
+      (0, T.It)(), (0, a.P6)(), o.Z.clearSubsection(R.oAB.PROFILE_CUSTOMIZATION)
     }),
     StronglyDiscouragedCustomComponent: Chunk564344.Z,
     buildLayout: () => []
   }),
   b = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     usePredicate: () => (0, O.gN)("ProfilePanel"),
-    useTitle: () => R.intl.string(R.t["vi7f+q"]),
+    useTitle: () => P.intl.string(P.t["vi7f+q"]),
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
     },
     initialize: () => () => r.Z.wait(() => {
-      (0, T.It)(), (0, a.P6)(), o.Z.clearSubsection(P.oAB.PROFILE_CUSTOMIZATION)
+      (0, T.It)(), (0, a.P6)(), o.Z.clearSubsection(R.oAB.PROFILE_CUSTOMIZATION)
     }),
     buildLayout: () => [f.i]
   }),
   D = (0, Chunk509613.m7)(Chunk313789.n.PROFILE_SIDEBAR_ITEM, {
-    useTitle: () => R.intl.string(R.t["vi7f+q"]),
+    useTitle: () => P.intl.string(P.t["vi7f+q"]),
     getLegacySearchKey: () => (0, O.Gl)("ProfilePanel") ? true : L.s6.PROFILE_CUSTOMIZATION,
     icon: Chunk657707.tBG,
     stronglyDiscouragedCustomComponent: () => {
@@ -72,7 +72,7 @@ let m = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
           src: n,
           avatarDecoration: r,
           size: u.EFr.SIZE_48,
-          "aria-label": R.intl.string(R.t.lqaIxI)
+          "aria-label": P.intl.string(P.t.lqaIxI)
         }), (0, i.jsxs)("div", {
           className: p.textContainer,
           children: [(0, i.jsx)(u.Text, {
@@ -86,7 +86,7 @@ let m = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
               variant: "text-sm/normal",
               color: "currentColor",
               lineClamp: 1,
-              children: R.intl.string(R.t.Ip9nBS)
+              children: P.intl.string(P.t.Ip9nBS)
             }), (0, i.jsx)(l.vdY, {
               size: "xxs",
               color: "currentColor"

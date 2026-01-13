@@ -21,5 +21,6 @@ let c = (0, Chunk509613.J9)(Chunk313789.n.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
   setValue: t => r.Xr.updateSetting(t),
   useOptions: function() {
     return i.useMemo(() => (0, u.c7)(), [])
-  }
+  },
+  useSearchTerms: () => [S.intl.string(S.t.JzaP4h), S.intl.string(S.t.H9XOl3), S.intl.string(S.t.k4W40P)]
 })

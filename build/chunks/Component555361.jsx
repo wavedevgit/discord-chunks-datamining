@@ -17,32 +17,39 @@ function s(e) {
     getInitialValue: s,
     minValue: l,
     maxValue: c,
-    useTitle: u,
-    useSubtitle: d,
-    useDisabled: f,
-    onValueRender: p,
-    asValueChanges: _,
-    markers: m,
-    onMarkerRender: h,
-    stickToMarkers: g,
-    fieldLayout: E
-  } = t, [b] = i.useState(() => s()), y = u(), O = null == d ? true : d(), v = null == f ? true : f();
-  return (0, r.jsx)(o.X, {
-    children: (0, r.jsx)(a.iRW, {
-      label: y,
-      description: O,
-      disabled: v,
-      initialValue: b,
+    useDefaultValue: u,
+    useTitle: d,
+    useSubtitle: f,
+    useHintText: p,
+    useDisabled: _,
+    onValueRender: m,
+    asValueChanges: h,
+    markers: g,
+    onMarkerRender: E,
+    stickToMarkers: b,
+    fieldLayout: y
+  } = t, [O] = i.useState(() => s()), v = d(), S = null == f ? true : f(), I = null == p ? true : p(), T = null == _ ? true : _(), C = null == u ? true : u();
+  return (0, r.jsxs)(o.X, {
+    children: [(0, r.jsx)(a.iRW, {
+      label: v,
+      description: S,
+      disabled: T,
+      initialValue: O,
       minValue: l,
       maxValue: c,
-      onValueRender: p,
-      asValueChanges: _,
+      defaultValue: C,
+      onValueRender: m,
+      asValueChanges: h,
       onValueChange: n,
       orientation: "horizontal",
-      markers: m,
-      onMarkerRender: h,
-      stickToMarkers: g,
-      layout: E
-    })
+      markers: g,
+      onMarkerRender: E,
+      stickToMarkers: b,
+      layout: y
+    }), null != I && (0, r.jsx)(a.Text, {
+      variant: "text-xs/normal",
+      color: "text-muted",
+      children: I
+    })]
   })
 }
