@@ -2,18 +2,18 @@
 /** chunk id: 68405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PF: () => J,
-  R7: () => B,
-  Tg: () => H,
-  UU: () => Y,
-  gK: () => V,
-  hM: () => M,
-  iy: () => W,
-  mO: () => Z,
-  t1: () => j,
-  uL: () => X,
-  v2: () => F,
-  yC: () => G
+  PF: () => $,
+  R7: () => V,
+  Tg: () => Y,
+  UU: () => W,
+  gK: () => H,
+  hM: () => k,
+  iy: () => K,
+  mO: () => F,
+  t1: () => M,
+  uL: () => J,
+  v2: () => B,
+  yC: () => Z
 }), require("./704826.js"), require("./35282.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -22,6 +22,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk377108 = require("./377108.js"),
   Chunk570140 = require("./570140.js"),
   Chunk367907 = require("./367907.js"),
+  Chunk690287 = require("./690287.js"),
   Chunk198620 = require("./198620.js"),
   Chunk706454 = require("./706454.js"),
   Chunk675478 = require("./675478.js"),
@@ -34,7 +35,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,20 +44,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,15 +68,15 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,69 +84,72 @@ function T(e, t) {
   return i
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = 250,
-  N = /-/g,
-  P = "format",
-  R = "animated",
-  w = "webp",
-  D = ".webp",
-  x = ".avif",
-  L = ".gif";
+let N = 250,
+  P = /-/g,
+  R = "format",
+  w = "animated",
+  D = "webp",
+  x = ".webp",
+  L = ".avif",
+  j = ".gif";
 
-function j(e) {
+function M(e) {
   let t = null != e ? {
     [e]: 1
   } : {};
-  c.ZP.trackWithMetadata(E.rMx.SEARCH_STARTED, {
-    search_type: E.aib.GIF,
-    load_id: p.Z.getAnalyticsID(),
+  c.ZP.trackWithMetadata(b.rMx.SEARCH_STARTED, {
+    search_type: b.aib.GIF,
+    load_id: _.Z.getAnalyticsID(),
     num_modifiers: Object.keys(t).length,
-    modifiers: t
+    modifiers: t,
+    gif_provider: (0, u.eE)()
   })
 }
 
-function M(e, t) {
+function k(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   var {
     startTime: r
-  } = n, i = T(n, ["startTime"]);
+  } = n, i = C(n, ["startTime"]);
   let a = {
       offset: 0,
       limit: null,
       totalResults: e.length
     },
-    o = (0, m._2)(p.Z.getAnalyticsID(), t, I(v({}, a, i), {
+    o = (0, h._2)(_.Z.getAnalyticsID(), t, T(S({}, a, i), {
       results: e.length
     })),
     s = null == r ? {} : {
       load_duration_ms: Date.now() - r
     };
-  c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_VIEWED, v({}, o, s))
+  c.ZP.trackWithMetadata(b.rMx.SEARCH_RESULT_VIEWED, T(S({}, o, s), {
+    gif_provider: (0, u.eE)()
+  }))
 }
 
-function k(e, t, n) {
+function U(e, t, n) {
   let r = Date.now();
-  j(t), o.tn.get({
-    url: E.ANM.GIFS_SEARCH,
+  M(t), o.tn.get({
+    url: b.ANM.GIFS_SEARCH,
     query: {
       q: e,
-      media_format: p.Z.getSelectedFormat(),
-      provider: "tenor",
-      locale: d.default.locale,
+      media_format: _.Z.getSelectedFormat(),
+      provider: (0, u.eE)(),
+      locale: f.default.locale,
       limit: n
     },
     oldFormErrors: true,
     rejectWithError: true
   }).then(i => {
     let a = i.body;
-    M(a, t, {
+    k(a, t, {
       startTime: r,
       limit: n
     }), l.Z.dispatch({
@@ -158,25 +162,25 @@ function k(e, t, n) {
     query: e
   }))
 }
-let U = i().debounce(k, A);
+let G = i().debounce(U, N);
 
-function G(e, t) {
+function Z(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 ? arguments[3] : true;
-  "" === e ? F() : (l.Z.dispatch({
+  "" === e ? B() : (l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: e
-  }), n ? k(e, t, r) : U(e, t, r))
+  }), n ? U(e, t, r) : G(e, t, r))
 }
 
-function Z(e) {
+function F(e) {
   "" !== e && null != e && o.tn.get({
-    url: E.ANM.GIFS_SUGGEST,
+    url: b.ANM.GIFS_SUGGEST,
     query: {
       q: e,
-      provider: "tenor",
+      provider: (0, u.eE)(),
       limit: 5,
-      locale: d.default.locale
+      locale: f.default.locale
     },
     oldFormErrors: true,
     rejectWithError: true
@@ -190,14 +194,14 @@ function Z(e) {
   })
 }
 
-function F() {
+function B() {
   l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: ""
   })
 }
 
-function B(e) {
+function V(e) {
   let {
     type: t,
     index: n,
@@ -206,32 +210,36 @@ function B(e) {
     results: a,
     totalResults: s,
     query: l,
-    gifId: u
-  } = e, d = (0, m._2)(p.Z.getAnalyticsID(), t, {
+    gifId: d
+  } = e, f = (0, h._2)(_.Z.getAnalyticsID(), t, {
     offset: r,
     limit: i,
     results: a,
     totalResults: s
   });
-  c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_SELECTED, I(v({}, d), {
-    index_num: n,
-    source_object: "GIF Picker",
-    query: l
-  })), null != u && o.tn.post({
-    url: E.ANM.GIFS_SELECT,
-    body: {
-      id: u,
-      q: l
-    },
-    oldFormErrors: true,
-    rejectWithError: true
-  })
+  if (c.ZP.trackWithMetadata(b.rMx.SEARCH_RESULT_SELECTED, T(S({}, f), {
+      index_num: n,
+      source_object: "GIF Picker",
+      query: l
+    })), null != d) {
+    let e = (0, u.eE)();
+    o.tn.post({
+      url: b.ANM.GIFS_SELECT,
+      body: {
+        id: d,
+        q: l,
+        provider: e
+      },
+      oldFormErrors: true,
+      rejectWithError: true
+    })
+  }
 }
 
-function V() {
-  let e = (0, a.Z)().replace(N, "");
-  c.ZP.trackWithMetadata(E.rMx.SEARCH_OPENED, {
-    search_type: E.aib.GIF,
+function H() {
+  let e = (0, a.Z)().replace(P, "");
+  c.ZP.trackWithMetadata(b.rMx.SEARCH_OPENED, {
+    search_type: b.aib.GIF,
     load_id: e
   }), l.Z.wait(() => {
     l.Z.dispatch({
@@ -241,13 +249,13 @@ function V() {
   })
 }
 
-function H() {
+function Y() {
   o.tn.get({
-    url: E.ANM.GIFS_TRENDING,
+    url: b.ANM.GIFS_TRENDING,
     query: {
-      provider: "tenor",
-      locale: d.default.locale,
-      media_format: p.Z.getSelectedFormat()
+      provider: (0, u.eE)(),
+      locale: f.default.locale,
+      media_format: _.Z.getSelectedFormat()
     },
     oldFormErrors: true,
     rejectWithError: true
@@ -266,14 +274,14 @@ function H() {
   })
 }
 
-function Y(e) {
+function W(e) {
   let t = Date.now();
-  j(E.wI2.TRENDING_GIFS), o.tn.get({
-    url: E.ANM.GIFS_TRENDING_GIFS,
+  M(b.wI2.TRENDING_GIFS), o.tn.get({
+    url: b.ANM.GIFS_TRENDING_GIFS,
     query: {
-      media_format: p.Z.getSelectedFormat(),
-      provider: "tenor",
-      locale: d.default.locale,
+      media_format: _.Z.getSelectedFormat(),
+      provider: (0, u.eE)(),
+      locale: f.default.locale,
       limit: e
     },
     oldFormErrors: true,
@@ -282,7 +290,7 @@ function Y(e) {
     let {
       body: r
     } = n;
-    M(r, E.wI2.TRENDING_GIFS, {
+    k(r, b.wI2.TRENDING_GIFS, {
       startTime: t,
       limit: e
     }), l.Z.dispatch({
@@ -296,64 +304,64 @@ function Y(e) {
   })
 }
 
-function W(e) {
-  let t = h.Z.toURLSafe(e);
-  return null == t ? e : (0, u.MO)(t) ? (0, u.q5)(t).toString() : e
-}
-
 function K(e) {
-  let t = h.Z.toURLSafe(e.src);
-  return null != t && ((0, u._M)(t) || (0, u.MO)(t))
+  let t = g.Z.toURLSafe(e);
+  return null == t ? e : (0, d.MO)(t) ? (0, d.q5)(t).toString() : e
 }
 
 function z(e) {
-  return K(e) && null != e.gifSrc ? e.gifSrc : e.src
+  let t = g.Z.toURLSafe(e.src);
+  return null != t && ((0, d._M)(t) || (0, d.MO)(t))
 }
 
 function q(e) {
-  let t = h.Z.toURLSafe(e);
-  if (null == t) returnfalse;
-  let n = t.pathname.toLowerCase();
-  return n.endsWith(D) || n.endsWith(x) || n.endsWith(L)
+  return z(e) && null != e.gifSrc ? e.gifSrc : e.src
 }
 
 function Q(e) {
-  let t = h.Z.toURLSafe(e);
-  if (null == t) return e;
-  let n = t.pathname.toLowerCase(),
-    r = n.endsWith(D),
-    i = n.endsWith(x),
-    a = n.endsWith(L);
-  return r || i || a ? ((i || a) && t.searchParams.set(P, w), t.searchParams.set(R, "true"), t.toString()) : e
+  let t = g.Z.toURLSafe(e);
+  if (null == t) returnfalse;
+  let n = t.pathname.toLowerCase();
+  return n.endsWith(x) || n.endsWith(L) || n.endsWith(j)
 }
 
 function X(e) {
-  f.DZ.updateAsync("favoriteGifs", t => {
-    var n;
-    let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0,
-      a = z(e),
-      o = K(e) && q(a),
-      l = o ? Q(a) : a,
-      c = o ? s.EO.IMAGE : e.format;
-    if (t.gifs[W(e.url)] = I(v({}, e), {
-        src: l,
-        format: c,
-        order: r + 1
-      }), s.wK.toBinary(t).length > b.vY) return g.Z.show({
-      title: y.intl.string(y.t["+XYXtZ"]),
-      body: y.intl.string(y.t.YSDH9n)
-    }), false;
-    let u = i().size(t.gifs);
-    u > 2 && (t.hideTooltip = true), _.default.track(E.rMx.GIF_FAVORITED, {
-      total_num_favorited: u
-    })
-  }, b.fy.INFREQUENT_USER_ACTION)
+  let t = g.Z.toURLSafe(e);
+  if (null == t) return e;
+  let n = t.pathname.toLowerCase(),
+    r = n.endsWith(x),
+    i = n.endsWith(L),
+    a = n.endsWith(j);
+  return r || i || a ? ((i || a) && t.searchParams.set(R, D), t.searchParams.set(w, "true"), t.toString()) : e
 }
 
 function J(e) {
-  f.DZ.updateAsync("favoriteGifs", t => {
-    e in t.gifs ? delete t.gifs[e] : delete t.gifs[W(e)], _.default.track(E.rMx.GIF_UNFAVORITED, {
+  p.DZ.updateAsync("favoriteGifs", t => {
+    var n;
+    let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0,
+      a = q(e),
+      o = z(e) && Q(a),
+      l = o ? X(a) : a,
+      c = o ? s.EO.IMAGE : e.format;
+    if (t.gifs[K(e.url)] = T(S({}, e), {
+        src: l,
+        format: c,
+        order: r + 1
+      }), s.wK.toBinary(t).length > y.vY) return E.Z.show({
+      title: O.intl.string(O.t["+XYXtZ"]),
+      body: O.intl.string(O.t.YSDH9n)
+    }), false;
+    let u = i().size(t.gifs);
+    u > 2 && (t.hideTooltip = true), m.default.track(b.rMx.GIF_FAVORITED, {
+      total_num_favorited: u
+    })
+  }, y.fy.INFREQUENT_USER_ACTION)
+}
+
+function $(e) {
+  p.DZ.updateAsync("favoriteGifs", t => {
+    e in t.gifs ? delete t.gifs[e] : delete t.gifs[K(e)], m.default.track(b.rMx.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)
     })
-  }, b.fy.INFREQUENT_USER_ACTION)
+  }, y.fy.INFREQUENT_USER_ACTION)
 }

@@ -2,8 +2,8 @@
 /** chunk id: 656733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => H
-}), require("./704826.js"), require("./35282.js"), require("./388685.js");
+  Z: () => Y
+}), require("./704826.js"), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk377108 = require("./377108.js"),
   Chunk570140 = require("./570140.js"),
@@ -103,6 +103,14 @@ function k(e) {
 }
 
 function U(e) {
+  try {
+    let t = new URL(e).pathname.toLowerCase();
+    if (t.endsWith(".mp4") || t.endsWith(".webm")) return a.EO.VIDEO
+  } catch (e) {}
+  return a.EO.IMAGE
+}
+
+function G(e) {
   if (null != e.query && N === P) returnfalse;
   null != e.query && (P = e.query), R = e.items.map(e => {
     let {
@@ -125,7 +133,7 @@ function U(e) {
   })
 }
 
-function G(e) {
+function Z(e) {
   let {
     query: t
   } = e;
@@ -133,34 +141,34 @@ function G(e) {
   P = t, R = []
 }
 
-function Z(e) {
+function F(e) {
   let t = e.trendingCategories;
   w = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
     name: l.intl.string(l.t.H6zNFz),
     src: k(e.trendingGIFPreview.src),
-    format: C
+    format: U(e.trendingGIFPreview.src)
   }] : [], ...t.map(e => f(u({}, e), {
     src: k(e.src),
     type: s.wI2.TRENDING_CATEGORY,
-    format: C
+    format: U(e.src)
   }))]
-}
-
-function F(e) {
-  let {
-    items: t
-  } = e;
-  D = t
 }
 
 function B(e) {
   let {
     items: t
   } = e;
+  D = t
+}
+
+function V(e) {
+  let {
+    items: t
+  } = e;
   x = t
 }
-class V extends(r = Chunk442837.ZP.Store) {
+class H extends(r = Chunk442837.ZP.Store) {
   getAnalyticsID() {
     return A
   }
@@ -186,13 +194,13 @@ class V extends(r = Chunk442837.ZP.Store) {
     return x
   }
 }
-c(V, "displayName", "GIFPickerViewStore");
-let H = new V(Chunk570140.Z, {
+c(H, "displayName", "GIFPickerViewStore");
+let Y = new H(Chunk570140.Z, {
   GIF_PICKER_INITIALIZE: L,
   GIF_PICKER_QUERY: j,
-  GIF_PICKER_QUERY_SUCCESS: U,
-  GIF_PICKER_QUERY_FAILURE: G,
-  GIF_PICKER_TRENDING_FETCH_SUCCESS: Z,
-  GIF_PICKER_SUGGESTIONS_SUCCESS: F,
-  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: B
+  GIF_PICKER_QUERY_SUCCESS: G,
+  GIF_PICKER_QUERY_FAILURE: Z,
+  GIF_PICKER_TRENDING_FETCH_SUCCESS: F,
+  GIF_PICKER_SUGGESTIONS_SUCCESS: B,
+  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: V
 })

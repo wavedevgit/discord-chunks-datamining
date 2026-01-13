@@ -2,7 +2,7 @@
 /** chunk id: 455708, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => R
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,6 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk28546 = require("./28546.js"),
   Chunk656733 = require("./656733.js"),
   Chunk985375 = require("./985375.js"),
+  Chunk304704 = require("./304704.js"),
+  Chunk690287 = require("./690287.js"),
   Chunk653235 = require("./653235.jsx"),
   Chunk215016 = require("./215016.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -24,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk277170 = require("./277170.js");
 
-function v(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,20 +35,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,18 +59,18 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = e => e.stopPropagation();
-class A extends Chunk473749.PureComponent {
+let N = e => e.stopPropagation();
+class P extends Chunk473749.PureComponent {
   componentDidMount() {
-    u.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, g.wI2.SEARCH)
+    u.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, b.wI2.SEARCH)
   }
   componentDidUpdate(e) {
-    "" === e.query && "" !== this.props.query && null == this.state.resultType && this.search(this.props.query, g.wI2.SEARCH)
+    "" === e.query && "" !== this.props.query && null == this.state.resultType && this.search(this.props.query, b.wI2.SEARCH)
   }
   componentWillUnmount() {
     c.Z.wait(() => u.v2()), document.removeEventListener("keydown", this.backToFrontPage)
@@ -76,8 +78,8 @@ class A extends Chunk473749.PureComponent {
   search(e, t, n) {
     u.yC(e, t, n), "" === e ? this.setState({
       resultType: null
-    }) : this.state.resultType !== g.wI2.SEARCH && this.setState({
-      resultType: g.wI2.SEARCH
+    }) : this.state.resultType !== b.wI2.SEARCH && this.setState({
+      resultType: b.wI2.SEARCH
     })
   }
   renderHeaderContent() {
@@ -88,30 +90,33 @@ class A extends Chunk473749.PureComponent {
       resultType: n
     } = this.state;
     switch (n) {
-      case g.wI2.FAVORITES:
+      case b.wI2.FAVORITES:
         return (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: t,
-          className: O.searchHeader,
-          children: y.intl.string(y.t.y3LQCG)
+          className: S.searchHeader,
+          children: v.intl.string(v.t.y3LQCG)
         });
-      case g.wI2.TRENDING_GIFS:
+      case b.wI2.TRENDING_GIFS:
         return (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: t,
-          className: O.searchHeader,
-          children: y.intl.string(y.t.H6zNFz)
+          className: S.searchHeader,
+          children: v.intl.string(v.t.H6zNFz)
         });
-      default:
+      default: {
+        let t = (0, h.eE)(),
+          n = (0, m.n)(t);
         return (0, r.jsx)(l.E1j, {
           query: e,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,
-          placeholder: y.intl.string(y.t.TnYqke),
-          "aria-label": y.intl.string(y.t.TnYqke),
+          placeholder: n,
+          "aria-label": n,
           ref: this.props.searchBarRef,
           autoFocus: true
         })
+      }
     }
   }
   renderHeader() {
@@ -120,8 +125,8 @@ class A extends Chunk473749.PureComponent {
     } = this.state, t = null;
     return null != e && (t = (0, r.jsx)(l.P3F, {
       onClick: this.handleClearQuery,
-      className: O.backButton,
-      "aria-label": y.intl.string(y.t["13/7kX"]),
+      className: S.backButton,
+      "aria-label": v.intl.string(v.t["13/7kX"]),
       children: (0, r.jsx)(l.whL, {
         size: "md",
         color: "currentColor"
@@ -146,13 +151,13 @@ class A extends Chunk473749.PureComponent {
     } = this.props, {
       resultType: d
     } = this.state;
-    return null == d ? (0, r.jsx)(m.Z, {
+    return null == d ? (0, r.jsx)(g.Z, {
       className: e,
       hideFavoritesTile: u,
       onSelectItem: this.handleSelectItem
-    }) : (0, r.jsx)(h.ZP, {
+    }) : (0, r.jsx)(E.ZP, {
       className: e,
-      data: d === g.wI2.FAVORITES ? a : t,
+      data: d === b.wI2.FAVORITES ? a : t,
       onSelectGIF: this.handleSelectGIF,
       resultType: d,
       resultQuery: n,
@@ -171,54 +176,54 @@ class A extends Chunk473749.PureComponent {
       forwardedRef: t
     } = this.props;
     return (0, r.jsxs)("div", {
-      id: E.vO,
+      id: y.vO,
       role: "tabpanel",
-      "aria-labelledby": E._3,
-      className: o()(O.container, e),
-      onClick: C,
+      "aria-labelledby": y._3,
+      className: o()(S.container, e),
+      onClick: N,
       ref: t,
       children: [(0, r.jsx)("div", {
-        className: o()(O.header, this.props.headerClassName),
+        className: o()(S.header, this.props.headerClassName),
         children: this.renderHeader()
       }), (0, r.jsx)("div", {
-        className: O.content,
+        className: S.content,
         children: this.renderContent()
       })]
     })
   }
   constructor(...e) {
-    super(...e), v(this, "state", {
+    super(...e), I(this, "state", {
       resultType: null
-    }), v(this, "backToFrontPage", e => {
+    }), I(this, "backToFrontPage", e => {
       let {
         resultType: t
       } = this.state;
-      e.key === b.vn.ESCAPE && null != t && (e.stopPropagation(), e.preventDefault(), this.handleClearQuery())
-    }), v(this, "handleChangeQuery", e => {
-      (0, f.ql)(e), this.search(e, g.wI2.SEARCH)
-    }), v(this, "handleSelectSuggestion", e => {
-      (0, f.ql)(""), u.v2(), this.search(e, g.wI2.SEARCH_SUGGESTION, true)
-    }), v(this, "handleClearQuery", () => {
+      e.key === O.vn.ESCAPE && null != t && (e.stopPropagation(), e.preventDefault(), this.handleClearQuery())
+    }), I(this, "handleChangeQuery", e => {
+      (0, f.ql)(e), this.search(e, b.wI2.SEARCH)
+    }), I(this, "handleSelectSuggestion", e => {
+      (0, f.ql)(""), u.v2(), this.search(e, b.wI2.SEARCH_SUGGESTION, true)
+    }), I(this, "handleClearQuery", () => {
       let {
         current: e
       } = this.props.searchBarRef;
       (0, f.ql)(""), u.v2(), this.setState({
         resultType: null
       }), null != e && e.focus()
-    }), v(this, "handleSelectGIF", e => {
+    }), I(this, "handleSelectGIF", e => {
       let {
         onSelectGIF: t
       } = this.props;
       null != t && t(e)
-    }), v(this, "handleSelectItem", (e, t) => {
+    }), I(this, "handleSelectItem", (e, t) => {
       let {
         current: n
       } = this.props.searchBarRef;
       switch (e) {
-        case g.wI2.TRENDING_CATEGORY:
-          u.yC(t, g.wI2.TRENDING_CATEGORY, true), null != n && n.focus();
+        case b.wI2.TRENDING_CATEGORY:
+          u.yC(t, b.wI2.TRENDING_CATEGORY, true), null != n && n.focus();
           break;
-        case g.wI2.TRENDING_GIFS:
+        case b.wI2.TRENDING_GIFS:
           u.UU()
       }
       this.setState({
@@ -227,7 +232,7 @@ class A extends Chunk473749.PureComponent {
     })
   }
 }
-let N = Chunk473749.forwardRef((e, t) => {
+let R = Chunk473749.forwardRef((e, t) => {
   i.useEffect(() => {
     if (!e.persistSearch) {
       var t;
@@ -245,7 +250,7 @@ let N = Chunk473749.forwardRef((e, t) => {
     resultItems: p.Z.getResultItems(),
     suggestions: p.Z.getSuggestions()
   })), c = (0, f.Iu)(e => e.searchQuery), u = null != n && "" !== n ? n : c, d = (0, _.HI)(), m = i.useRef(null);
-  return (0, r.jsx)(A, T(S({}, e), {
+  return (0, r.jsx)(P, A(T({}, e), {
     forwardedRef: t,
     query: u,
     resultQuery: a,
