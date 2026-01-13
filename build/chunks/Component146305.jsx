@@ -139,7 +139,7 @@ let ey = {
           section: ep.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: ex.intl.string(ex.t["2QmKZ2"]), ariaLabel: ex.intl.string(ex.t["2QmKZ2"]), element: en.Z, predicate: () => t.canManageGuild, notice: {
             stores: [P.Z],
             element: er.Z
-          }, newIndicatorDismissibleContentTypes: [l.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE]
+          }
         };
       case ep.pNK.ENGAGEMENT:
         return {
