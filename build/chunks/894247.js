@@ -17,7 +17,6 @@ function a(e, t, n) {
 }
 let o = false;
 class s extends Chunk147913.Z {
-  maybeShowChangeLanguageToast() {}
   setVerifyTimezone() {
     o = true
   }
@@ -30,7 +29,7 @@ class s extends Chunk147913.Z {
   constructor(...e) {
     super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: () => {
-        this.setVerifyTimezone(), this.maybeShowChangeLanguageToast()
+        this.setVerifyTimezone()
       },
       OVERLAY_INITIALIZE: this.setVerifyTimezone,
       USER_SETTINGS_PROTO_UPDATE: this.ensureTimezoneUpdated

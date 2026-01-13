@@ -1,7 +1,7 @@
 /** Chunk was on 86872 **/
 /** chunk id: 420186, original params: e,l,n (module,exports,require) **/
 require.d(exports, {
-  R: () => E
+  R: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ let v = () => (0, t.jsx)("div", {
   className: g.separator
 });
 
-function j(e) {
+function E(e) {
   let {
     label: l,
     children: n
@@ -35,7 +35,7 @@ function j(e) {
   })
 }
 
-function h(e) {
+function j(e) {
   let {
     label: l,
     checked: n,
@@ -56,14 +56,14 @@ function h(e) {
     })]
   })
 }
-let E = () => {
+let h = () => {
   var e;
   let l = u.G6.useSetting(),
     {
       nickname: n,
       dmsAllowed: d,
       showActivity: g,
-      setNickname: E,
+      setNickname: h,
       setDmsAllowed: p,
       setShowActivity: _,
       guildId: I,
@@ -85,20 +85,20 @@ let E = () => {
     onOpen: S,
     maxHeight: f ? 220 : 130,
     children: [f && (0, t.jsxs)(t.Fragment, {
-      children: [(0, t.jsx)(j, {
+      children: [(0, t.jsx)(E, {
         label: x.intl.string(x.t.me1lRk),
         children: (0, t.jsx)(r.oil, {
           placeholder: x.intl.string(x.t["09Q8yp"]),
           maxLength: m.l$U,
           value: n,
-          onChange: E
+          onChange: h
         })
       }), (0, t.jsx)(v, {})]
-    }), (0, t.jsx)(h, {
+    }), (0, t.jsx)(j, {
       label: x.intl.string(x.t["/2ed37"]),
       checked: d,
       onChange: p
-    }), (0, t.jsx)(v, {}), l && (0, t.jsx)(h, {
+    }), (0, t.jsx)(v, {}), l && (0, t.jsx)(j, {
       label: x.intl.string(x.t.bN4m1G),
       checked: g,
       onChange: _

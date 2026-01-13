@@ -71,59 +71,43 @@ class m extends Chunk803358.Z {
   static fromServer(e) {
     var {
       products: t,
-      logo: n,
-      hero_ranking: r,
-      pdp_bg: a,
-      mobile_bg: s,
-      mobile_banner: l,
-      catalog_banner_asset: u,
-      hero_banner_asset: p,
-      featured_block: h,
-      hero_logo: g,
-      hero_logo_display_config: E,
-      hero_banner_display_config: b,
-      hero_banner_url: y,
-      hero_banner_animated_url: O,
-      hero_rive_url: v,
-      hero_logo_url: S,
-      catalog_banner_url: I,
-      catalog_banner_animated_url: T,
-      featured_block_url: C,
-      logo_url: A,
-      pdp_bg_url: N,
-      mobile_banner_url: P,
-      mobile_bg_url: R
-    } = e, w = f(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "catalog_banner_asset", "hero_banner_asset", "featured_block", "hero_logo", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
-    return new m(d(c({}, super.fromServer(w)), {
+      hero_ranking: n,
+      hero_logo_display_config: r,
+      hero_banner_display_config: a,
+      hero_banner_url: s,
+      hero_banner_animated_url: l,
+      hero_rive_url: u,
+      hero_logo_url: p,
+      catalog_banner_url: h,
+      catalog_banner_animated_url: g,
+      featured_block_url: E,
+      logo_url: b,
+      pdp_bg_url: y,
+      mobile_banner_url: O,
+      mobile_bg_url: v
+    } = e, S = f(e, ["products", "hero_ranking", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
+    return new m(d(c({}, super.fromServer(S)), {
       products: t.reduce((e, t) => {
         let n = o.Z.fromServer(t);
         return (_(n.type) || 0 !== n.items.length) && e.push(n), e
       }, []),
-      logo: n,
-      heroRanking: r,
-      pdpBg: a,
-      mobileBg: s,
-      mobileBanner: l,
-      catalogBannerAsset: u,
-      heroBannerAsset: p,
-      featuredBlock: h,
-      heroLogo: g,
-      heroLogoDisplayConfig: (0, i.QG)(E),
-      heroBannerDisplayConfig: (0, i.QG)(b),
-      heroBannerUrl: y,
-      heroBannerAnimatedUrl: O,
-      heroRiveUrl: v,
-      heroLogoUrl: S,
-      catalogBannerUrl: I,
-      catalogBannerAnimatedUrl: T,
-      featuredBlockUrl: C,
-      logoUrl: A,
-      pdpBgUrl: N,
-      mobileBannerUrl: P,
-      mobileBgUrl: R
+      heroRanking: n,
+      heroBannerUrl: s,
+      heroBannerAnimatedUrl: l,
+      heroRiveUrl: u,
+      heroLogoUrl: p,
+      catalogBannerUrl: h,
+      catalogBannerAnimatedUrl: g,
+      featuredBlockUrl: E,
+      logoUrl: b,
+      pdpBgUrl: y,
+      mobileBannerUrl: O,
+      mobileBgUrl: v,
+      heroLogoDisplayConfig: (0, i.QG)(r),
+      heroBannerDisplayConfig: (0, i.QG)(a)
     }))
   }
   constructor(e) {
-    super(e), l(this, "products", true), l(this, "heroRanking", true), l(this, "logo", true), l(this, "pdpBg", true), l(this, "mobileBg", true), l(this, "mobileBanner", true), l(this, "catalogBannerAsset", true), l(this, "heroBannerAsset", true), l(this, "featuredBlock", true), l(this, "isOrbsExclusive", true), l(this, "heroLogo", true), l(this, "heroLogoDisplayConfig", true), l(this, "heroBannerDisplayConfig", true), l(this, "heroBannerUrl", true), l(this, "heroBannerAnimatedUrl", true), l(this, "heroRiveUrl", true), l(this, "heroLogoUrl", true), l(this, "catalogBannerUrl", true), l(this, "catalogBannerAnimatedUrl", true), l(this, "featuredBlockUrl", true), l(this, "logoUrl", true), l(this, "pdpBgUrl", true), l(this, "mobileBannerUrl", true), l(this, "mobileBgUrl", true), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.mobileBanner = e.mobileBanner, this.catalogBannerAsset = e.catalogBannerAsset, this.featuredBlock = e.featuredBlock, this.isOrbsExclusive = Array.isArray(e.products) && e.products.length > 0 && true === e.products.find(e => !(0, a.r1)(e)), this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig, this.heroBannerDisplayConfig = e.heroBannerDisplayConfig, this.heroBannerUrl = e.heroBannerUrl, this.heroBannerAnimatedUrl = e.heroBannerAnimatedUrl, this.heroRiveUrl = e.heroRiveUrl, this.heroLogoUrl = e.heroLogoUrl, this.catalogBannerUrl = e.catalogBannerUrl, this.catalogBannerAnimatedUrl = e.catalogBannerAnimatedUrl, this.featuredBlockUrl = e.featuredBlockUrl, this.logoUrl = e.logoUrl, this.pdpBgUrl = e.pdpBgUrl, this.mobileBannerUrl = e.mobileBannerUrl, this.mobileBgUrl = e.mobileBgUrl
+    super(e), l(this, "products", true), l(this, "heroRanking", true), l(this, "isOrbsExclusive", true), l(this, "heroBannerUrl", true), l(this, "heroBannerAnimatedUrl", true), l(this, "heroRiveUrl", true), l(this, "heroLogoUrl", true), l(this, "catalogBannerUrl", true), l(this, "catalogBannerAnimatedUrl", true), l(this, "featuredBlockUrl", true), l(this, "logoUrl", true), l(this, "pdpBgUrl", true), l(this, "mobileBannerUrl", true), l(this, "mobileBgUrl", true), l(this, "heroLogoDisplayConfig", true), l(this, "heroBannerDisplayConfig", true), this.products = e.products, this.heroRanking = e.heroRanking, this.isOrbsExclusive = Array.isArray(e.products) && e.products.length > 0 && true === e.products.find(e => !(0, a.r1)(e)), this.heroBannerUrl = e.heroBannerUrl, this.heroBannerAnimatedUrl = e.heroBannerAnimatedUrl, this.heroRiveUrl = e.heroRiveUrl, this.heroLogoUrl = e.heroLogoUrl, this.catalogBannerUrl = e.catalogBannerUrl, this.catalogBannerAnimatedUrl = e.catalogBannerAnimatedUrl, this.featuredBlockUrl = e.featuredBlockUrl, this.logoUrl = e.logoUrl, this.pdpBgUrl = e.pdpBgUrl, this.mobileBannerUrl = e.mobileBannerUrl, this.mobileBgUrl = e.mobileBgUrl, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig, this.heroBannerDisplayConfig = e.heroBannerDisplayConfig
   }
 }

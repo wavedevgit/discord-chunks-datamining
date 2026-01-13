@@ -23,9 +23,7 @@ let m = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
-    logoUrl: "",
     categorySkuId: true,
-    bannerAsset: true,
     summary: "",
     type: Chunk685816.z.REWARD_HERO,
     categoryStoreListingId: "",
@@ -41,8 +39,8 @@ let m = {
     } = e, h = (0, s.O)(e => {
       null == d || d(e)
     }, .1, null != d), C = (0, o.e7)([u.default], () => u.default.getCurrentUser()), {
-      bannerStyleOverrides: E,
-      logoStyleOverrides: v,
+      bannerDisplayConfig: E,
+      logoDisplayConfig: v,
       heroLogo: S,
       heroBannerStatic: x,
       heroBannerAnimated: O

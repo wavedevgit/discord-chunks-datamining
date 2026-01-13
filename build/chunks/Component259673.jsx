@@ -15,9 +15,9 @@ let d = e => {
   var t, n;
   let {
     user: d
-  } = e, m = s.ZP.canUsePremiumProfileCustomization(d), f = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
+  } = e, m = c.ZP.canUsePremiumProfileCustomization(d), f = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
     pendingAvatar: p
-  } = f, v = function(e, t) {
+  } = f, b = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -31,7 +31,7 @@ let d = e => {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(f, ["pendingAvatar"]), b = (0, l.SD)({
+  }(f, ["pendingAvatar"]), v = (0, l.SD)({
     userId: d.id,
     image: p
   });
@@ -54,10 +54,10 @@ let d = e => {
         })
       }
       return e
-    }({}, v), n = n = {
-      pendingAvatar: b,
+    }({}, b), n = n = {
+      pendingAvatar: v,
       user: d,
-      pendingBadges: [(0, c.X)()],
+      pendingBadges: [(0, s.X)()],
       canUsePremiumCustomization: m,
       disabledInputs: true,
       hideExampleButton: true

@@ -3,7 +3,7 @@
 let r;
 require.d(exports, {
   Z: () => Z
-}), require("./388685.js"), require("./539854.js");
+}), require("./997841.js"), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk447543 = require("./447543.js"),
@@ -132,8 +132,9 @@ let Z = new T(Chunk570140.Z, {
         type: c,
         channel: s,
         guild: d,
-        is_nickname_changeable: a
-      } = e, f = {
+        is_nickname_changeable: a,
+        flags: f
+      } = e, O = {
         code: r,
         state: i,
         approximate_member_count: t,
@@ -142,9 +143,10 @@ let Z = new T(Chunk570140.Z, {
         target_user: o,
         target_application: u,
         type: c,
-        is_nickname_changeable: a
+        is_nickname_changeable: a,
+        flags: f
       };
-      return null != s && (f.channel = A({}, s)), null != d && (f.guild = (0, h.Qs)(d)), null != e.inviter && (f.inviter = A({}, e.inviter)), null != e.roles && (f.roles = e.roles), f
+      return null != s && (O.channel = A({}, s)), null != d && (O.guild = (0, h.Qs)(d)), null != e.inviter && (O.inviter = A({}, e.inviter)), null != e.roles && (O.roles = e.roles), O
     }(t);
     C.push([r, e.resolve]), (0, I.Lz)({
       location: "accept_invite_modal",

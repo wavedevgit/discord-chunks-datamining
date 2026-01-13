@@ -1,7 +1,7 @@
 /** Chunk was on 8087 **/
 /** chunk id: 38914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => c
+  q: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,12 +10,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk110739 = require("./110739.js"),
   Chunk133988 = require("./133988.js");
-let c = () => {
+let s = () => {
   let e = [l.t.E1NP2x, l.t.kpMomJ, l.t.xT1Vfn, l.t.myyAEr, l.t.zTk8Ul];
   return (0, r.jsxs)("div", {
     className: o.container,
     children: [(0, r.jsx)("img", {
-      src: s.Z,
+      src: c.Z,
       alt: "",
       className: o.headerAsset
     }), (0, r.jsx)(a.Z, {

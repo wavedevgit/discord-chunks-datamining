@@ -19,6 +19,6 @@ class a {
     return new a(e)
   }
   constructor(e) {
-    i(this, "title", true), i(this, "body", true), i(this, "helpCenterUrl", true), i(this, "textColor", true), i(this, "endTime", true), i(this, "bannerAsset", true), i(this, "bannerUrl", true), i(this, "bannerAnimatedUrl", true), this.type = r.z.IMMERSIVE_BANNER, this.title = e.title, this.body = e.body, this.helpCenterUrl = e.help_center_url, this.textColor = e.text_color, this.endTime = null != e.end_time ? new Date(e.end_time) : true, this.bannerAsset = e.banner_asset, this.bannerUrl = e.banner_url, this.bannerAnimatedUrl = e.banner_animated_url
+    i(this, "title", true), i(this, "body", true), i(this, "helpCenterUrl", true), i(this, "textColor", true), i(this, "endTime", true), i(this, "bannerUrl", true), i(this, "bannerAnimatedUrl", true), this.type = r.z.IMMERSIVE_BANNER, this.title = e.title, this.body = e.body, this.helpCenterUrl = e.help_center_url, this.textColor = e.text_color, this.endTime = null != e.end_time ? new Date(e.end_time) : true, this.bannerUrl = e.banner_url, this.bannerAnimatedUrl = e.banner_animated_url
   }
 }

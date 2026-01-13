@@ -19,24 +19,24 @@ let u = e => {
   return n ? (0, r.jsx)(l.u, {
     position: "top",
     align: "left",
-    text: s.intl.string(s.t.y1VWkZ),
+    text: c.intl.string(c.t.y1VWkZ),
     children: (0, r.jsxs)("div", {
-      className: a()(c.partialOwnStateContainer, t),
+      className: a()(s.partialOwnStateContainer, t),
       children: [(0, r.jsx)("span", {
-        className: c.iconWrapper,
+        className: s.iconWrapper,
         children: (0, r.jsx)(o.d3s, {
           size: "md",
           color: "currentColor",
-          className: c.infoIcon
+          className: s.infoIcon
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
-        children: s.intl.string(s.t.BEjTij)
+        children: c.intl.string(c.t.BEjTij)
       })]
     })
   }) : (0, r.jsx)(o.Text, {
     variant: "text-md/semibold",
     className: t,
-    children: s.intl.string(s.t["6cfuDj"])
+    children: c.intl.string(c.t["6cfuDj"])
   })
 }

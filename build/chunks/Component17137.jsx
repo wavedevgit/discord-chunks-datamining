@@ -14,7 +14,7 @@ let o = e => {
     onSuccess: n
   } = e, {
     handleUseNow: o,
-    isApplying: s
+    isApplying: c
   } = (0, a.W)({
     product: t,
     onSuccess: n
@@ -22,7 +22,7 @@ let o = e => {
   return (0, r.jsx)(i.Button, {
     variant: "primary",
     onClick: o,
-    loading: s,
+    loading: c,
     text: l.intl.string(l.t.MAS7uK),
     fullWidth: true
   })

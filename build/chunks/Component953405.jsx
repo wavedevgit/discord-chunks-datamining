@@ -17,19 +17,19 @@ function d(e) {
     orbPrice: t,
     isProductDisabled: n,
     hasSufficientOrbs: a
-  } = e, l = n ? c.intl.string(c.t.wu4gyV) : c.intl.string(c.t.eFNRzU), s = n || !a;
+  } = e, l = n ? s.intl.string(s.t.wu4gyV) : s.intl.string(s.t.eFNRzU), c = n || !a;
   return (0, r.jsxs)("div", {
     className: u.priceLine,
     children: [(0, r.jsx)("div", {
       className: u.orbText,
       children: (0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
-        className: s ? u.disabled : true,
+        className: c ? u.disabled : true,
         children: l
       })
     }), (0, r.jsx)(o.F, {
       price: t,
-      className: s ? u.disabled : true
+      className: c ? u.disabled : true
     })]
   })
 }
@@ -39,12 +39,12 @@ function m(e) {
     prices: t,
     isPremiumUser: n,
     discount: i,
-    product: c,
+    product: s,
     hasSufficientOrbs: m,
     isProductDisabled: f,
     discountOfferAmount: p
-  } = e, v = null != p;
-  return 0 === t.length ? null : t[0].currency === s.pK.DISCORD_ORB ? (0, r.jsx)(d, {
+  } = e, b = null != p;
+  return 0 === t.length ? null : t[0].currency === c.pK.DISCORD_ORB ? (0, r.jsx)(d, {
     orbPrice: t[0],
     isProductDisabled: f,
     hasSufficientOrbs: m
@@ -53,17 +53,17 @@ function m(e) {
     children: [(0, r.jsxs)("div", {
       className: u.priceTagContainer,
       children: [(0, r.jsx)(a.Z, {
-        product: c,
+        product: s,
         discount: i,
         isPremiumUser: n,
-        hideStrikethroughPrice: !n || v,
+        hideStrikethroughPrice: !n || b,
         nitroIconType: "tooltip",
         nitroIconSize: "xs",
         discountOfferAmount: p
-      }), n || v ? null : (0, r.jsx)(l.Z, {
-        product: c
+      }), n || b ? null : (0, r.jsx)(l.Z, {
+        product: s
       })]
-    }), t.length > 1 && t[1].currency === s.pK.DISCORD_ORB && (0, r.jsx)(o.F, {
+    }), t.length > 1 && t[1].currency === c.pK.DISCORD_ORB && (0, r.jsx)(o.F, {
       price: t[1],
       className: f || !m ? u.disabled : true
     })]

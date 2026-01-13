@@ -1,7 +1,7 @@
 /** Chunk was on 8087 **/
 /** chunk id: 83479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => s
+  G: () => c
 }), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var Chunk473749 = require("./473749.js"),
   Chunk979554 = require("./979554.js"),
@@ -13,14 +13,14 @@ let o = function(e) {
     if (o) return l.intl.formatToPlainString(l.t["/0Yndu"], {
       num: null == (t = e.bundledProducts) ? true : t.length
     });
-    let s = null != (n = e.bundledProducts) ? n : [],
-      c = s.find(e => e.type === i.Z.AVATAR_DECORATION),
-      u = s.find(e => e.type === i.Z.PROFILE_EFFECT),
-      d = s.find(e => e.type === i.Z.NAMEPLATE);
+    let c = null != (n = e.bundledProducts) ? n : [],
+      s = c.find(e => e.type === i.Z.AVATAR_DECORATION),
+      u = c.find(e => e.type === i.Z.PROFILE_EFFECT),
+      d = c.find(e => e.type === i.Z.NAMEPLATE);
     if (null != d) {
       let e = [];
-      null != c && e.push(l.intl.formatToPlainString(l.t.Ntv9Jt, {
-        itemName: c.name
+      null != s && e.push(l.intl.formatToPlainString(l.t.Ntv9Jt, {
+        itemName: s.name
       })), null != u && e.push(l.intl.formatToPlainString(l.t["3Y8q7a"], {
         itemName: u.name
       })), null != d && e.push(l.intl.formatToPlainString(l.t["2keXky"], {
@@ -32,11 +32,11 @@ let o = function(e) {
       })
     }
     return l.intl.formatToPlainString(l.t.BS1Cuy, {
-      decoName: null != (r = null == c ? true : c.name) ? r : "",
+      decoName: null != (r = null == s ? true : s.name) ? r : "",
       pfxName: null != (a = null == u ? true : u.name) ? a : ""
     })
   },
-  s = function(e) {
+  c = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = arguments.length > 2 ? arguments[2] : true;
     return (0, r.useMemo)(() => {

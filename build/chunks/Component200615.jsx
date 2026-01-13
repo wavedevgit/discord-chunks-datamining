@@ -17,11 +17,11 @@ let u = e => {
     analyticsLocations: n
   } = (0, l.ZP)(), u = i.useRef(null);
   return (0, r.jsx)(a.P3F, {
-    className: c.subscribeNow,
+    className: s.subscribeNow,
     innerRef: u,
     onClick: () => {
       (0, o.Z)({
-        subscriptionTier: s.Si.TIER_2,
+        subscriptionTier: c.Si.TIER_2,
         analyticsLocations: n,
         returnRef: u
       })

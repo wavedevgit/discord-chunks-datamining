@@ -22,9 +22,9 @@ let u = e => {
   } = e, d = (0, o.qr)(t, n);
   return (0, r.jsxs)(l.Text, {
     variant: u,
-    className: a()(c.striked, i),
+    className: a()(s.striked, i),
     children: [(0, r.jsx)(l.nn4, {
-      children: s.intl.format(s.t["2CEGln"], {
+      children: c.intl.format(c.t["2CEGln"], {
         price: d
       })
     }), (0, r.jsx)("span", {

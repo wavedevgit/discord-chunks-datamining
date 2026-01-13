@@ -21,18 +21,18 @@ function d(e) {
     discount: m,
     className: f,
     discountOfferAmount: p,
-    hideStrikethroughPrice: v = false,
-    nitroIconType: b,
+    hideStrikethroughPrice: b = false,
+    nitroIconType: v,
     nitroIconSize: h = "md"
-  } = e, g = (0, l.ql)(i, c.tuJ.DEFAULT);
-  if (null == g) return null;
-  if (g.amount <= 0) return (0, r.jsx)("div", {
+  } = e, x = (0, l.ql)(i, s.tuJ.DEFAULT);
+  if (null == x) return null;
+  if (x.amount <= 0) return (0, r.jsx)("div", {
     className: a()(u.priceTagsContainer, f),
-    children: (0, r.jsx)(s.F, {
-      price: g
+    children: (0, r.jsx)(c.F, {
+      price: x
     })
   });
-  let x = (0, l.ql)(i, c.tuJ.PREMIUM_TIER_2),
+  let g = (0, l.ql)(i, s.tuJ.PREMIUM_TIER_2),
     P = (0, l.x6)(i) && d ? (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -50,7 +50,7 @@ function d(e) {
         })
       }
       return e
-    }({}, g), n = n = {
+    }({}, x), n = n = {
       amount: m.original
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -61,20 +61,20 @@ function d(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t) : g,
-    j = d && null != x;
+    }), t) : x,
+    j = d && null != g;
   return (0, r.jsxs)("div", {
     className: a()(u.priceTagsContainer, f),
-    children: [v ? null : (0, r.jsx)(o.y, {
+    children: [b ? null : (0, r.jsx)(o.y, {
       price: P,
       className: u.price
-    }), (0, r.jsx)(s.F, {
-      price: j ? x : P,
+    }), (0, r.jsx)(c.F, {
+      price: j ? g : P,
       discount: m,
       className: a()({
         [u.price]: null == p
       }),
-      nitroIconType: j ? b : true,
+      nitroIconType: j ? v : true,
       nitroIconSize: h,
       discountOfferAmount: p
     })]

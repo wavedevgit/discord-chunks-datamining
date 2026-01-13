@@ -101,7 +101,7 @@ function U(e) {
 function z(e) {
   let {
     transitionState: l
-  } = e, n = (0, j.Dt)(), {
+  } = e, n = (0, E.Dt)(), {
     analyticsLocations: i
   } = (0, g.ZP)(x.Z.INVITE_MODAL);
   return (0, t.jsx)(g.Gt, {
@@ -156,10 +156,10 @@ function y(e) {
   i.useEffect(() => {
     if (null != V && null != V.guild) {
       var e;
-      (0, h.pB)(null != (e = V.approximate_member_count) ? e : 0, V.code, V.guild.id)
+      (0, j.pB)(null != (e = V.approximate_member_count) ? e : 0, V.code, V.guild.id)
     }
   }, [V, null == V ? true : V.approximate_member_count, null == V ? true : V.code, null == V || null == (l = V.guild) ? true : l.id]);
-  let W = (0, h.yr)(),
+  let W = (0, j.yr)(),
     {
       showFriendsInServer: G,
       showInviter: X
@@ -172,7 +172,7 @@ function y(e) {
   i.useEffect(() => {
     !__OVERLAY__ && L.isPlatformEmbedded && ((0, L.isWindows)() ? Z.ZP.minimize() : Z.ZP.restore(), Z.ZP.focus())
   }, []);
-  let B = (0, j.Dt)(),
+  let B = (0, E.Dt)(),
     {
       analyticsLocations: Q
     } = (0, g.ZP)(x.Z.INVITE_MODAL),
@@ -216,7 +216,7 @@ function y(e) {
     splash: el.splash
   });
   else if ((null == (S = en.name) || "" === S) && null != et && (S = et.username), null == S) throw Error("no name for group DM invite");
-  let eu = (0, E.yU)();
+  let eu = (0, h.yU)();
   return k = er ? O.intl.string(O.t["e/6Ogt"]) : O.intl.format(O.t["9sWQNT"], {
     usernameHook: () => (0, t.jsx)("span", {
       children: W

@@ -17,7 +17,7 @@ var Chunk28664 = require("./28664.jsx"),
 function m(e) {
   let {
     product: t
-  } = e, n = (0, o.ql)(t, c.tuJ.PREMIUM_TIER_2);
+  } = e, n = (0, o.ql)(t, s.tuJ.PREMIUM_TIER_2);
   if (null == n) return null;
   let m = (0, l.qr)(n.amount, n.currency);
   return (0, r.jsxs)("div", {
@@ -34,7 +34,7 @@ function m(e) {
       variant: "text-xs/medium",
       children: u.intl.format(u.t.Sv8iic, {
         price: m,
-        subscribeNowHook: e => (0, r.jsx)(s.F, {
+        subscribeNowHook: e => (0, r.jsx)(c.F, {
           text: e
         })
       })

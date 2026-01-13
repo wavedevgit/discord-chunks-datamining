@@ -20,10 +20,10 @@ function d(e) {
     isDarkText: m = false,
     isOrbExclusive: f = false,
     rentalDuration: p
-  } = e, v = (t = d.type, n = f, null != (i = p) ? 3 === i ? c.intl.string(c.t["52UXCo"]) : 7 === i ? c.intl.string(c.t.FRR2s2) : c.intl.string(c.t.VgsFa1) : n ? c.intl.string(c.t["0TmQRG"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
-  return null === v ? null : (0, r.jsx)(s.Text, {
+  } = e, b = (t = d.type, n = f, null != (i = p) ? 3 === i ? s.intl.string(s.t["52UXCo"]) : 7 === i ? s.intl.string(s.t.FRR2s2) : s.intl.string(s.t.VgsFa1) : n ? s.intl.string(s.t["0TmQRG"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => s.intl.string(s.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => s.intl.string(s.t.wR5wOo)).otherwise(() => null));
+  return null === b ? null : (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     className: a()([u.container, m ? u.darkText : u.lightText]),
-    children: v
+    children: b
   })
 }

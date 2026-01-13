@@ -293,6 +293,7 @@ let C = {
               }), (0, a.jsx)(d.Z, {
                 fileContents: () => JSON.stringify(y(j({}, t), {
                   name: D,
+                  readonly: false,
                   config: y(j({}, t.config), {
                     effects: I,
                     stillFrames: R
