@@ -1,7 +1,7 @@
 /** Chunk was on 3298 **/
 /** chunk id: 796724, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => G
 }), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -96,7 +96,7 @@ function w(e) {
   })
 }
 
-function R() {
+function G() {
   let {
     guildId: e,
     currentGame: n,
@@ -104,28 +104,28 @@ function R() {
     gameServerInstance: a,
     setRegionId: l,
     name: C,
-    setName: R,
-    planId: G,
+    setName: G,
+    planId: R,
     setPlanId: Z,
     planCost: k,
     stepLoading: M,
     error: B,
-    gameProvider: L
+    gameProvider: z
   } = (0, v.JL)();
   (0, b.Dk)(e, null == a ? true : a.id, null == a ? "create" : "edit"), i.useEffect(() => {
     (0, m._k)(e)
   }, [e]);
-  let z = (0, o.e7)([x.Z], () => x.Z.getRegions()),
+  let L = (0, o.e7)([x.Z], () => x.Z.getRegions()),
     D = (0, o.e7)([x.Z], () => x.Z.getRegionState()),
     H = i.useMemo(() => {
       var e;
-      return null != (e = z.sort((e, n) => (0, E.Z)(e, n, D)).map(e => ({
+      return null != (e = L.sort((e, n) => (0, E.Z)(e, n, D)).map(e => ({
         value: e,
         label: e.name,
         disabled: true !== e.enabled
       }))) ? e : []
-    }, [D, z]),
-    U = i.useMemo(() => z.some(e => "" !== e.pingUrl), [z]),
+    }, [D, L]),
+    U = i.useMemo(() => L.some(e => "" !== e.pingUrl), [L]),
     V = i.useMemo(() => {
       var e;
       return null != (e = null == n ? true : n.plans.map(e => ({
@@ -140,8 +140,8 @@ function R() {
     } = (0, h.a)(C),
     K = null != a,
     J = (0, N.Z)(a),
-    Y = (0, S.Z)(L),
-    X = null != L && null != O.nd[L] ? O.nd[L] : "";
+    X = (0, S.Z)(z),
+    Y = null != z && null != O.nd[z] ? O.nd[z] : "";
   return null == n ? (0, r.jsx)("div", {
     className: P.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {
@@ -172,7 +172,7 @@ function R() {
             })]
           }), (0, r.jsx)(c.oil, {
             value: C,
-            onChange: R,
+            onChange: G,
             placeholder: T.intl.string(I.default.ElVYr3),
             maxLength: O.Sg,
             disabled: M || !J,
@@ -258,7 +258,7 @@ function R() {
             })]
           }), (0, r.jsx)(s.B6, {
             serialize: e => e.id,
-            isSelected: e => e.id === G,
+            isSelected: e => e.id === R,
             isDisabled: M || !J,
             options: V,
             optionClassName: P.option,
@@ -268,13 +268,13 @@ function R() {
               var n, t, i;
               return (0, r.jsx)(_, {
                 plan: null == (n = e[0]) ? true : n.value,
-                selected: (null == (i = e[0]) || null == (t = i.value) ? true : t.id) === G,
+                selected: (null == (i = e[0]) || null == (t = i.value) ? true : t.id) === R,
                 className: P.value
               })
             },
             renderOptionLabel: e => (0, r.jsx)(_, {
               plan: e.value,
-              selected: e.value.id === G
+              selected: e.value.id === R
             })
           })]
         })]
@@ -299,13 +299,22 @@ function R() {
         variant: "text-xs/medium",
         children: T.intl.string(I.default["/JNPWb"])
       })
+    }), (null == n ? true : n.early_access) === true && !K && (0, r.jsx)(u.Z, {
+      className: P.infoBox,
+      look: u.z.INFO,
+      children: (0, r.jsx)(c.Text, {
+        variant: "text-xs/medium",
+        children: T.intl.format(I.default.TnoBGX, {
+          gameName: n.name
+        })
+      })
     }), (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      children: null != L && T.intl.format(K ? I.default.num0a6 : I.default.p5KZDr, {
-        provider: Y,
+      children: null != z && T.intl.format(K ? I.default.num0a6 : I.default.p5KZDr, {
+        provider: X,
         termsOfServiceUrl: () => (0, g.q)({
-          href: X
+          href: Y
         }),
         helpCenterUrl: f.Z.getEnglishArticleURL(y.BhN.GAME_SERVER_HOSTING)
       })
