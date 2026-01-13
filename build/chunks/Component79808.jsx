@@ -103,7 +103,7 @@ function y(e) {
       visibleDirectory: P,
       accessibleDirectory: C
     }), [P, C]),
-    N = () => k(g),
+    N = o.useMemo(() => () => k(g), [k, g]),
     Z = null != x ? P.get(x) : true;
   return (0, r.jsx)(u.j.Provider, {
     value: E,

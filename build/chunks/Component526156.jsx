@@ -25,10 +25,10 @@ let d = e => {
     i.useEffect(() => {
       _(f)
     }, [f]);
-    let m = e => {
-        let t = e.component;
-        return "function" == typeof t ? (0, r.jsx)(t, {}) : t
-      },
+    let m = i.useMemo(() => {
+        let e = p.component;
+        return (0, r.jsx)(e, {})
+      }, [p]),
       h = e => {
         var n;
         _(null != (n = t.find(t => t.setting === e)) ? n : t[0]), null == c || c(e)
@@ -61,7 +61,7 @@ let d = e => {
         className: o()(u.tabBarPanel, n, {
           [u.vertical]: "vertical" === d
         }),
-        children: m(p)
+        children: m
       })]
     })
   },

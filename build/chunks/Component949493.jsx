@@ -55,7 +55,7 @@ function D() {
   let e = (0, i.e7)([o.Z], () => o.Z.getSubsection()),
     t = [{
       title: A.intl.string(A.t["/7xJCF"]),
-      component: () => (0, r.jsx)(w, {}),
+      component: w,
       setting: I.s6.CONTENT_SOCIAL_DISCORD_TAB
     }, {
       title: A.intl.string(A.t.YpCiMt),

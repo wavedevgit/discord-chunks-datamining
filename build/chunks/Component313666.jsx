@@ -35,13 +35,17 @@ function u(e) {
 function d(e) {
   let {
     type: t,
-    variant: n = "default"
+    variant: n = "default",
+    icon: i
   } = e, {
-    i18n: i
+    i18n: u
   } = (0, o.ZF)();
-  return (0, r.jsx)(s.x, {
+  return (0, r.jsxs)(s.x, {
     variant: "eyebrow",
     className: a()(l.badge, l[n]),
-    children: c(t, i)
+    children: [null != i && (0, r.jsx)(i, {
+      size: "xxs",
+      color: "currentColor"
+    }), c(t, u)]
   })
 }
