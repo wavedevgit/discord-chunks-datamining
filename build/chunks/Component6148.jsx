@@ -14,10 +14,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e, t) {
-  let n = (0, i.e7)([c.default], () => c.default.getId()),
+  let n = (0, i.e7)([s.default], () => s.default.getId()),
     d = (0, a.$R)(t),
     f = (0, a.Gu)(t);
-  return (0, s.Z)(e, n) && d && !f ? (0, r.jsx)(l.sNh, {
+  return (0, c.Z)(e, n) && d && !f ? (0, r.jsx)(l.sNh, {
     id: "edit",
     label: u.intl.string(u.t.fsBWmS),
     action: () => o.Z.startEditMessageRecord(t.id, e),

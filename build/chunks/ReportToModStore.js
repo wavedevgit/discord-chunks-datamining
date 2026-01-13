@@ -15,15 +15,15 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = null,
-  s = null,
+let s = null,
+  c = null,
   u = {
     reportedMessages: {}
   };
 
 function d() {
   let e = o.Z.getLastSelectedGuildId();
-  e !== c && (s = null, c = null != e ? e : null)
+  e !== s && (c = null, s = null != e ? e : null)
 }
 class f extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -37,7 +37,7 @@ class f extends(r = Chunk442837.ZP.PersistedStore) {
   }
   isUserBanned(e) {
     var t;
-    return null != (t = null == s ? true : s.get(e)) ? t : null
+    return null != (t = null == c ? true : c.get(e)) ? t : null
   }
   getReportedMessages() {
     return u.reportedMessages
@@ -66,14 +66,14 @@ let g = new f(Chunk570140.Z, {
       user: t,
       guildId: n
     } = e;
-    n === c && null != s && s.set(t.id, true)
+    n === s && null != c && c.set(t.id, true)
   },
   GUILD_BAN_REMOVE: function(e) {
     let {
       user: t,
       guildId: n
     } = e;
-    n === c && null != s && s.set(t.id, false)
+    n === s && null != c && c.set(t.id, false)
   },
   GUILD_SETTINGS_LOADED_BANS_BATCH: function(e) {
     let {
@@ -81,19 +81,19 @@ let g = new f(Chunk570140.Z, {
       guildId: n,
       userIds: r
     } = e;
-    if (n !== c) return;
+    if (n !== s) return;
     let i = new Set(t.map(e => {
         var t;
         return null == (t = e.user) ? true : t.id
       })),
       l = Array.from(new Set(null != r ? r : [])).filter(e => !i.has(e));
-    null == s && (s = new Map), i.forEach(e => {
-      null == s || s.set(e, true)
+    null == c && (c = new Map), i.forEach(e => {
+      null == c || c.set(e, true)
     }), l.forEach(e => {
-      null == s || s.set(e, false)
+      null == c || c.set(e, false)
     })
   },
   LOGOUT: function() {
-    c = null, s = null, u.reportedMessages = {}
+    s = null, c = null, u.reportedMessages = {}
   }
 })

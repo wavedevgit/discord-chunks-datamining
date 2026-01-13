@@ -198,7 +198,7 @@ let eh = e => {
           title: ec.intl.string(ec.t.Thb5MO),
           body: ec.intl.string(ec.t.kGvgwS),
           position: "left",
-          asset: (0, r.jsx)(g._N, {
+          asset: (0, r.jsx)(g._N_, {
             size: 32,
             alt: ec.intl.string(ec.t["4LohBA"])
           }),

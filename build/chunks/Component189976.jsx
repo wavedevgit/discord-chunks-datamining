@@ -19,18 +19,18 @@ let b = new Map;
 function p(e, t) {
   let {
     handleTranslate: p,
-    handleRevertTranslation: O,
-    isTranslating: y,
-    isTranslated: m
+    handleRevertTranslation: m,
+    isTranslating: O,
+    isTranslated: y
   } = function(e) {
     let [t, n] = i.useState(false), r = (0, l.e7)([u.default], () => u.default.locale);
     return {
       handleTranslate: i.useCallback(async (i, l) => {
-        var s, u;
+        var c, u;
         if (t) return;
         let g = null != i ? i : r;
         n(true);
-        let p = null != (u = null != l ? l : null == (s = (0, f.getAvailableLocales)().find(e => e.value === g)) ? true : s.name) ? u : g;
+        let p = null != (u = null != l ? l : null == (c = (0, f.getAvailableLocales)().find(e => e.value === g)) ? true : c.name) ? u : g;
         b.has(e.id) || b.set(e.id, e.content), (0, a.showToast)((0, a.createToast)(f.intl.formatToPlainString(f.t.Znl8Z8, {
           targetLanguage: p
         }), a.ToastType.AI));
@@ -43,7 +43,7 @@ function p(e, t) {
             },
             rejectWithError: false
           });
-          t.ok && t.body && (c.Z.dispatch({
+          t.ok && t.body && (s.Z.dispatch({
             type: "MESSAGE_UPDATE",
             message: {
               id: e.id,
@@ -59,7 +59,7 @@ function p(e, t) {
       }, [e, t, r]),
       handleRevertTranslation: i.useCallback(() => {
         let t = b.get(e.id);
-        null != t && (c.Z.dispatch({
+        null != t && (s.Z.dispatch({
           type: "MESSAGE_UPDATE",
           message: {
             id: e.id,
@@ -71,7 +71,7 @@ function p(e, t) {
       isTranslating: t,
       isTranslated: b.has(e.id)
     }
-  }(e), v = function(e, t) {
+  }(e), h = function(e, t) {
     let l = (0, f.getAvailableLocales)();
     return i.useMemo(() => l.map(i => {
       let l;
@@ -92,18 +92,18 @@ function p(e, t) {
         disabled: t
       }, i.value)
     }), [e, t, l])
-  }(p, y), h = (0, s.o)();
-  return null != e.content && "" !== e.content.trim() && h ? m ? (0, r.jsx)(a.sNh, {
+  }(p, O), v = (0, c.o)();
+  return null != e.content && "" !== e.content.trim() && v ? y ? (0, r.jsx)(a.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXn),
     icon: a.os0,
-    action: O,
-    disabled: y
+    action: m,
+    disabled: O
   }) : (0, r.jsx)(a.sNh, {
     id: "translate",
-    label: y ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
+    label: O ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
     action: () => p(),
-    disabled: y,
-    children: v
+    disabled: O,
+    children: h
   }) : null
 }

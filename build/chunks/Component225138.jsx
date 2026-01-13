@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 /** chunk id: 225138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => ee,
-  default: () => $
+  S: () => en,
+  default: () => et
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,6 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk285230 = require("./285230.js"),
   Chunk299206 = require("./299206.jsx"),
+  Chunk796762 = require("./796762.js"),
   Chunk26737 = require("./26737.jsx"),
   Chunk29264 = require("./29264.jsx"),
   Chunk905041 = require("./905041.jsx"),
@@ -30,6 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk449751 = require("./449751.jsx"),
   Chunk749339 = require("./749339.jsx"),
   Chunk601184 = require("./601184.jsx"),
+  Chunk557935 = require("./557935.jsx"),
   Chunk6148 = require("./6148.jsx"),
   Chunk519110 = require("./519110.jsx"),
   Chunk759875 = require("./759875.jsx"),
@@ -53,7 +55,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function J(e) {
+function $(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -72,7 +74,7 @@ function J(e) {
   return e
 }
 
-function Y(e, t) {
+function ee(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -85,82 +87,85 @@ function Y(e, t) {
   }), e
 }
 
-function $(e) {
+function et(e) {
   var t, n;
-  let i, o, c, d, {
+  let i, o, s, d, {
       channel: f,
       message: g,
       target: b,
       mediaItem: p,
-      shouldHideMediaOptions: O,
-      onSelect: y,
-      onHeightUpdate: m
+      shouldHideMediaOptions: m,
+      onSelect: O,
+      onHeightUpdate: y
     } = e,
     {
-      analyticsLocations: v
-    } = (0, u.ZP)([s.Z.MESSAGE_CONTEXT_MENU]),
-    h = b,
+      analyticsLocations: h
+    } = (0, u.ZP)([c.Z.MESSAGE_CONTEXT_MENU]),
+    v = b,
     j = b.getAttribute("data-type"),
     S = b.getAttribute("data-id"),
-    E = b.getAttribute("data-name");
-  if (null != p) o = i = c = p.url;
+    E = b.getAttribute("data-name"),
+    P = b.getAttribute("data-id");
+  if (null != p) o = i = s = p.url;
   else
     for (;
-      (0, l.kK)(h);)(0, l.kK)(h, HTMLImageElement) && null != h.src && (o = h.src), (0, l.kK)(h, HTMLAnchorElement) && null != h.href && (i = h.href, d = h.textContent, null == o && "img" === h.getAttribute("data-role") && (o = i, h.hasAttribute("data-safe-src") && "" !== h.getAttribute("data-safe-src") && (c = h.getAttribute("data-safe-src")))), h = h.parentNode;
-  let P = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
+      (0, l.kK)(v);)(0, l.kK)(v, HTMLImageElement) && null != v.src && (o = v.src), (0, l.kK)(v, HTMLAnchorElement) && null != v.href && (i = v.href, d = v.textContent, null == o && "img" === v.getAttribute("data-role") && (o = i, v.hasAttribute("data-safe-src") && "" !== v.getAttribute("data-safe-src") && (s = v.getAttribute("data-safe-src")))), v = v.parentNode;
+  let T = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
   return (0, r.jsx)(u.Gt, {
-    value: v,
-    children: ee({
+    value: h,
+    children: en({
       message: g,
       channel: f,
       mediaItem: p,
-      textSelection: P,
+      textSelection: T,
       favoriteableType: j,
       favoriteableId: S,
       favoriteableName: E,
       itemHref: i,
       itemSrc: o,
-      itemSafeSrc: c,
+      itemSafeSrc: s,
       itemTextContent: d,
+      emojiId: P,
       canReport: true,
-      onHeightUpdate: m,
-      onSelect: y,
+      onHeightUpdate: y,
+      onSelect: O,
       onClose: a.Zy,
       navId: "message",
-      ariaLabel: W.intl.string(W.t.ChPNkN),
-      shouldHideMediaOptions: O
+      ariaLabel: Y.intl.string(Y.t.ChPNkN),
+      shouldHideMediaOptions: m
     })
   })
 }
 
-function ee(e) {
+function en(e) {
   let {
     message: t,
     channel: n,
     mediaItem: l,
     textSelection: a,
-    favoriteableType: s,
+    favoriteableType: c,
     favoriteableId: u,
-    favoriteableName: $,
-    itemHref: ee,
-    itemSrc: et,
-    itemSafeSrc: en,
-    itemTextContent: er,
-    canReport: ei,
-    onHeightUpdate: el,
-    onSelect: eo,
-    onClose: ea,
-    navId: ec,
-    ariaLabel: es,
-    shouldHideMediaOptions: eu = false
-  } = e, ed = i.useRef(null);
+    favoriteableName: et,
+    itemHref: en,
+    itemSrc: er,
+    itemSafeSrc: ei,
+    itemTextContent: el,
+    emojiId: eo,
+    canReport: ea,
+    onHeightUpdate: es,
+    onSelect: ec,
+    onClose: eu,
+    navId: ed,
+    ariaLabel: ef,
+    shouldHideMediaOptions: eg = false
+  } = e, eb = i.useRef(null);
   i.useEffect(() => {
-    ed.current = Date.now()
+    eb.current = Date.now()
   }, []), i.useEffect(() => () => {
-    if (null != ed.current) {
+    if (null != eb.current) {
       var e;
-      let r = Date.now() - ed.current;
-      v.default.track(q.rMx.MESSAGE_MENU_TIME_TO_CLOSE, {
+      let r = Date.now() - eb.current;
+      v.default.track(W.rMx.MESSAGE_MENU_TIME_TO_CLOSE, {
         time_to_close_ms: r,
         channel_id: n.id,
         guild_id: null != (e = n.getGuildId()) ? e : true,
@@ -168,24 +173,31 @@ function ee(e) {
       })
     }
   }, [n, t]);
-  let ef = i.useCallback(() => {
-      if (null != ed.current) {
+  let ep = i.useCallback(() => {
+      if (null != eb.current) {
         var e;
-        let r = Date.now() - ed.current;
-        v.default.track(q.rMx.MESSAGE_MENU_TIME_TO_SELECT, {
+        let r = Date.now() - eb.current;
+        v.default.track(W.rMx.MESSAGE_MENU_TIME_TO_SELECT, {
           time_to_first_click_ms: r,
           channel_id: n.id,
           guild_id: null != (e = n.getGuildId()) ? e : true,
           message_id: t.id
         })
       }
-      null == eo || eo()
-    }, [eo, n, t]),
+      null == ec || ec()
+    }, [ec, n, t]),
     {
-      forceIconsLeft: eg,
-      reorderMessageMenuItems: eb
+      forceIconsLeft: em,
+      reorderMessageMenuItems: eO
     } = (0, d.d)("MessageContextMenu"),
-    ep = (e, t) => {
+    {
+      tidaWebformEnabled: ey
+    } = g.Z.useExperiment({
+      location: "MessageContextMenu"
+    }, {
+      autoTrackExposure: false
+    }),
+    eh = (e, t) => {
       var n;
       return function e(t, n, r, l) {
         var o;
@@ -195,8 +207,8 @@ function ee(e) {
         if (!i.isValidElement(t)) return t;
         let a = t.props,
           {
-            icon: c,
-            iconLeft: s,
+            icon: s,
+            iconLeft: c,
             children: u
           } = a,
           d = function(e, t) {
@@ -215,179 +227,208 @@ function ee(e) {
             return i
           }(a, ["icon", "iconLeft", "children"]),
           f = null != u ? i.Children.map(u, t => null == t ? null : e(t, true, false, l)) : u;
-        if (r) return i.cloneElement(t, Y(J({}, d), {
+        if (r) return i.cloneElement(t, ee($({}, d), {
           icon: true,
           iconLeft: true,
           children: f
         }));
-        let g = null != (o = null != s ? s : n) ? o : "function" == typeof c ? c : true;
-        return null == g ? i.cloneElement(t, Y(J({}, d), {
-          icon: c,
-          iconLeft: s,
+        let g = null != (o = null != c ? c : n) ? o : "function" == typeof s ? s : true;
+        return null == g ? i.cloneElement(t, ee($({}, d), {
+          icon: s,
+          iconLeft: c,
           children: f
-        })) : l ? i.cloneElement(t, Y(J({}, d), {
+        })) : l ? i.cloneElement(t, ee($({}, d), {
           icon: true,
           iconLeft: g,
           children: f
         })) : t
-      }(e, null == t ? true : t.iconToAdd, null != (n = null == t ? true : t.removeIcon) ? n : eb, eg)
+      }(e, null == t ? true : t.iconToAdd, null != (n = null == t ? true : t.removeIcon) ? n : eO, em)
     },
-    eO = (0, D.Z)(t, n),
-    ey = ep((0, g.Z)(a), {
+    ev = (0, L.Z)(t, n),
+    ej = eh((0, b.Z)(a), {
       iconToAdd: o.TIy
     }),
-    em = ep((0, T.Z)(t, n, a), {
+    eS = eh((0, I.Z)(t, n, a), {
       iconToAdd: o.TIy
     }),
-    ev = ep((0, O.Z)(a), {
+    eE = eh((0, O.Z)(a), {
       iconToAdd: o._Ve
     }),
-    eh = ep((0, E.Z)(t, n), {
+    eP = eh((0, P.Z)(t, n), {
       iconToAdd: o.UZo,
       removeIcon: false
     }),
-    ej = ep((0, w.Z)(t, n), {
+    eT = eh((0, N.Z)(t, n), {
       removeIcon: false
     }),
-    eS = ep((0, G.Z)(t, n), {
+    eI = eh((0, F.Z)(t, n), {
       removeIcon: false
     }),
-    eE = ep((0, N.Z)(t, n), {
+    e_ = eh((0, M.Z)(t, n), {
       removeIcon: false
     }),
-    eP = ep((0, H.Z)(t, n), {
+    eZ = eh((0, K.Z)(t, n), {
       removeIcon: false
     }),
-    eT = ep((0, I.Z)(t)),
-    e_ = ep((0, B.Z)(t, n), {
+    ex = eh((0, Z.Z)(t)),
+    ew = eh((0, V.Z)(t, n), {
       iconToAdd: o.os0
     }),
-    eI = ep((0, M.Z)(t, n)),
-    eZ = ep((0, j.Z)(t), {
+    eN = eh((0, C.Z)(t, n)),
+    eA = eh((0, S.Z)(t), {
       iconToAdd: o.plf
     }),
-    ew = ep((0, m.Z)({
-      commandType: c.yU.MESSAGE,
+    eM = eh((0, h.Z)({
+      commandType: s.yU.MESSAGE,
       commandTargetId: t.id,
       channel: n,
       guildId: true,
-      onHeightUpdate: el
+      onHeightUpdate: es
     }), {
       iconToAdd: o.jje
     }),
-    eA = ep((0, F.Z)(t, n), {
+    eD = eh((0, H.Z)(t, n), {
       iconToAdd: o.DuK
     }),
-    eN = ep((0, x.Z)(t, n)),
-    ex = ep((0, P.Z)(t, n)),
-    eM = ep((0, _.Z)(t, n)),
-    eD = ep((0, z.Z)(t, n)),
-    eC = ep((0, C.Z)(t), {
+    eC = eh((0, D.Z)(t, n)),
+    eL = eh((0, T.Z)(t, n)),
+    ek = eh((0, _.Z)(t, n)),
+    eR = eh((0, B.Z)(t, n)),
+    eG = eh((0, k.Z)(t), {
       removeIcon: false
     }),
-    eL = ep((0, S.Z)(t, n)),
-    eR = ep((0, y.Z)(t)),
-    ek = ep((0, K.Z)(t), {
+    eU = eh((0, E.Z)(t, n)),
+    eF = eh((0, y.Z)(t)),
+    ez = eh((0, X.Z)(t), {
       iconToAdd: o.T39
     }),
-    eG = ep((0, k.Z)(t, n), {
+    eH = eh((0, U.Z)(t, n), {
       iconToAdd: o.STQ,
       removeIcon: false
     }),
-    eU = ep((0, L.Z)(t, n), {
+    eB = eh((0, R.Z)(t, n), {
       iconToAdd: o.STQ,
       removeIcon: false
     }),
-    eF = ep((0, Z.Z)(t, n), {
+    eK = eh((0, x.Z)(t, n), {
       removeIcon: false
     }),
-    ez = ep((0, U.ZP)(t), {
+    eV = eh((0, z.ZP)(t), {
       removeIcon: false
     }),
-    eH = ep((0, U.eH)(t), {
+    eX = eh((0, z.eH)(t), {
       removeIcon: false
     }),
-    eB = ep((0, U.wY)(t), {
+    eQ = eh((0, z.wY)(t), {
       iconToAdd: o.U65,
       removeIcon: false
     }),
-    eK = ep((0, A.Z)({
-      type: s,
+    eq = eh((0, A.Z)({
+      type: c,
       id: u,
-      name: $
+      name: et
     }), {
       iconToAdd: o.r7p
     }),
-    eX = ep((0, h.Z)(a, n.getGuildId()), {
+    eJ = eh((0, j.Z)(a, n.getGuildId()), {
       iconToAdd: o.b7C
     }),
-    eV = ep((0, b.Z)(en, t, {
-      shouldHideMediaOptions: eu,
+    eW = eh((0, p.Z)(ei, t, {
+      shouldHideMediaOptions: eg,
       contentType: null == l ? true : l.contentType,
       originalContentType: null == l ? true : l.originalContentType
     }), {
       iconToAdd: o.XBm
     }),
-    eQ = ep((0, X.Z)(t, l)),
-    eq = ep((0, V.Z)(t)),
-    eW = ep((0, Q.Z)(l, {
-      shouldHideMediaOptions: eu
+    eY = eh((0, Q.Z)(t, l)),
+    e$ = eh((0, q.Z)(t)),
+    e0 = eh((0, J.Z)(l, {
+      shouldHideMediaOptions: eg
     }), {
       iconToAdd: o.d3s
     }),
-    eJ = ep((0, p.Z)(null != ee ? ee : et, er, t, {
-      shouldHideMediaOptions: eu
+    e4 = eh((0, m.Z)(null != en ? en : er, el, t, {
+      shouldHideMediaOptions: eg
     }), {
       iconToAdd: o.xPt
     }),
-    eY = ep((0, f.Z)({
+    e8 = eh((0, f.Z)({
       id: t.id,
-      label: W.intl.string(W.t.zBoHlf),
+      label: Y.intl.string(Y.t.zBoHlf),
       shiftId: "".concat(t.channel_id, "-").concat(t.id)
     })),
-    e$ = ep((0, R.Z)(t, n), {
+    e1 = eh((0, w.Z)({
+      messageId: t.id,
+      emojiId: eo,
+      type: c,
+      imageSrc: er
+    })),
+    e3 = eh((0, G.Z)(t, n), {
       iconToAdd: o.STQ,
       removeIcon: false
-    });
-  return eb ? (0, r.jsxs)(o.v2r, {
-    navId: ec,
-    onClose: ea,
-    "aria-label": es,
-    onSelect: ef,
+    }),
+    e7 = (0, r.jsx)(o.kSQ, {
+      children: null != e1 ? e1 : e8
+    }),
+    e9 = e => {
+      let {
+        includeLinks: t
+      } = e;
+      return (0, r.jsxs)(o.kSQ, {
+        children: [eq, eJ, eW, eY, e$, e0, t && e4]
+      })
+    };
+  return eO ? (0, r.jsxs)(o.v2r, {
+    navId: ed,
+    onClose: eu,
+    "aria-label": ef,
+    onSelect: ep,
     children: [(0, r.jsxs)(o.kSQ, {
-      children: ["" === a ? eO : null, eh, eC, ej, eS, eE, eP]
+      children: ["" === a ? ev : null, eP, eG, eT, eI, e_, eZ]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eL, ev, e_, eI, eZ, ew, eA, eN, ex, eD, eR, ek]
+      children: [eU, eE, ew, eN, eA, eM, eD, eC, eL, eR, eF, ez]
     }), (0, r.jsx)(o.kSQ, {
-      children: em
+      children: eS
+    }), ey ? (0, r.jsxs)(r.Fragment, {
+      children: [e7, e9({
+        includeLinks: true
+      })]
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [e9({
+        includeLinks: true
+      }), e7]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eK, eX, eV, eQ, eq, eW, eJ]
-    }), (0, r.jsxs)(o.kSQ, {
-      children: [e$, eF, ei && ez, ei && eH, eB]
+      children: [e3, eK, ea && eV, ea && eX, eQ]
     })]
   }) : (0, r.jsxs)(o.v2r, {
-    navId: ec,
-    onClose: ea,
-    "aria-label": es,
-    onSelect: ef,
+    navId: ed,
+    onClose: eu,
+    "aria-label": ef,
+    onSelect: ep,
     children: [(0, r.jsx)(o.kSQ, {
-      children: ey
+      children: ej
     }), (0, r.jsx)(o.kSQ, {
-      children: ev
+      children: eE
     }), (0, r.jsxs)(o.kSQ, {
-      children: ["" === a ? eO : null, eh, eC, eL]
+      children: ["" === a ? ev : null, eP, eG, eU]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [ej, eS, eE, eP]
+      children: [eT, eI, e_, eZ]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eT, e_, eI, eZ, ew, eA, eN, ex, eM, eD, eR, ek]
+      children: [ex, ew, eN, eA, eM, eD, eC, eL, ek, eR, eF, ez]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eG, eU, eF, ei && ez, ei && eH, eB]
-    }), (0, r.jsxs)(o.kSQ, {
-      children: [eK, eX, eV, eQ, eq, eW]
-    }), (0, r.jsx)(o.kSQ, {
-      children: eJ
-    }), (0, r.jsx)(o.kSQ, {
-      children: eY
+      children: [eH, eB, eK, ea && eV, ea && eX, eQ]
+    }), ey ? (0, r.jsxs)(r.Fragment, {
+      children: [e7, e9({
+        includeLinks: false
+      }), (0, r.jsx)(o.kSQ, {
+        children: e4
+      })]
+    }) : (0, r.jsxs)(r.Fragment, {
+      children: [e9({
+        includeLinks: false
+      }), (0, r.jsx)(o.kSQ, {
+        children: e4
+      }), e7]
     })]
   })
 }

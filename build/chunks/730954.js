@@ -9,20 +9,20 @@ var Chunk904245 = require("./904245.js"),
 
 function o(e, t, n) {
   var o, a;
-  let c = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
+  let s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (r.Z.deleteMessage(e.id, t.id, true), t.isCommandType()) {
-    null != t.interactionData && null != c.applicationId && (0, i.d)(t, e, c);
+    null != t.interactionData && null != s.applicationId && (0, i.d)(t, e, s);
     return
   }
   let {
-    content: s,
+    content: c,
     tts: u,
     messageReference: d,
     flags: f,
     nonce: g
   } = t;
   r.Z.sendMessage(e.id, {
-    content: s,
+    content: c,
     tts: u,
     invalidEmojis: [],
     validNonShortcutEmojis: []
@@ -47,7 +47,7 @@ function o(e, t, n) {
     nonce: g,
     flags: f,
     messageReference: null != d ? d : true
-  }, c), a = a = {
+  }, s), a = a = {
     location: l.dy.RETRY
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var n = Object.keys(e);

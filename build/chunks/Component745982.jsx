@@ -15,7 +15,7 @@ var Chunk970683 = require("./970683.js"),
 function d(t) {
   let {} = t, e = (0, o.Nn)();
   return (0, i.jsx)(s.Z, {
-    heroImage: (0, i.jsx)(r.pq, {
+    heroImage: (0, i.jsx)(r.pqG, {
       alt: c.intl.string(c.t["2mJo21"])
     }),
     header: c.intl.string(c.t.eAbVfS),

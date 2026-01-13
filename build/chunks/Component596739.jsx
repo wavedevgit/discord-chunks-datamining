@@ -24,7 +24,7 @@ function c(e) {
     className: s.safetyBanner,
     children: [(0, r.jsxs)("div", {
       className: s.shieldAndHeading,
-      children: [(0, r.jsx)(l.i$, {
+      children: [(0, r.jsx)(l.i$7, {
         alt: "",
         size: 32
       }), (0, r.jsxs)("div", {

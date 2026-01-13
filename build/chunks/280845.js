@@ -18,8 +18,8 @@ function d(e, t, n) {
 }
 
 function f(e, t, n, r, i) {
-  let l = t.hasFlag(s.iLy.EPHEMERAL),
-    o = t.state === s.yb.SENT,
+  let l = t.hasFlag(c.iLy.EPHEMERAL),
+    o = t.state === c.yb.SENT,
     a = !e.isArchivedThread() || i;
   return n && o && !l && !r && a
 }
@@ -27,16 +27,16 @@ function f(e, t, n, r, i) {
 function g(e, t) {
   var n;
   let r = (0, o.tc)(e),
-    [, c] = (0, l.AB)(null != (n = null == e ? true : e.getGuildId()) ? n : true),
-    s = (0, i.e7)([a.Z], () => null != e && null != t && d(e, t, a.Z));
-  return null != e && null != t && f(e, t, s, c, r)
+    [, s] = (0, l.AB)(null != (n = null == e ? true : e.getGuildId()) ? n : true),
+    c = (0, i.e7)([a.Z], () => null != e && null != t && d(e, t, a.Z));
+  return null != e && null != t && f(e, t, c, s, r)
 }
 
 function b(e, t) {
   var n;
   let r = (0, o.kn)(e),
     i = d(e, t, a.Z),
-    s = c.default.getCurrentUser(),
-    [, u] = (0, l.s5)(null == s ? true : s.id, null != (n = e.getGuildId()) ? n : true);
+    c = s.default.getCurrentUser(),
+    [, u] = (0, l.s5)(null == c ? true : c.id, null != (n = e.getGuildId()) ? n : true);
   return f(e, t, i, u, r)
 }

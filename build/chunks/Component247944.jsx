@@ -12,7 +12,7 @@ var Chunk970683 = require("./970683.js"),
   Chunk610674 = require("./610674.js"),
   Chunk388032 = require("./388032.jsx");
 let c = () => (0, r.jsx)(l.i, {
-  bannerIcon: (0, r.jsx)(i.sm, {
+  bannerIcon: (0, r.jsx)(i.sm3, {
     alt: "",
     width: 80,
     height: 40

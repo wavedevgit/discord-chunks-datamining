@@ -14,8 +14,8 @@ var Chunk54381 = require("./54381.js"),
 
 function d(e, t, n) {
   let d = (0, a.Z)(n),
-    f = (0, s.Z)(e),
-    g = (0, c.Z)(e, t),
+    f = (0, c.Z)(e),
+    g = (0, s.Z)(e, t),
     b = (0, o.Z)({
       id: e.id,
       label: u.intl.string(u.t.zBoHlf),

@@ -42,7 +42,7 @@ function p(e) {
     title: m.intl.string(m.t["dAfGb+"]),
     buttonText: m.intl.string(m.t["uJWIj/"]),
     onButtonClick: v,
-    image: (0, r.jsx)(a.dQ, {
+    image: (0, r.jsx)(a.dQ$, {
       alt: m.intl.string(m.t["dAfGb+"])
     })
   }) : null != _ ? (0, r.jsx)(c.Z, {

@@ -15,14 +15,14 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = {};
-class s extends(r = Chunk442837.ZP.Store) {
+let s = {};
+class c extends(r = Chunk442837.ZP.Store) {
   getOptions(e) {
-    return c[e]
+    return s[e]
   }
 }
-a(s, "displayName", "SendMessageOptionsStore");
-let u = new s(Chunk570140.Z, {
+a(c, "displayName", "SendMessageOptionsStore");
+let u = new c(Chunk570140.Z, {
   MESSAGE_CREATE: function(e) {
     let {
       message: t,
@@ -30,7 +30,7 @@ let u = new s(Chunk570140.Z, {
     } = e;
     if (null != n) {
       var r, i, l;
-      c[t.id] = (i = function(e) {
+      s[t.id] = (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -54,6 +54,6 @@ let u = new s(Chunk570140.Z, {
         Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
       }), i)
     }
-    null != t.nonce && t.nonce in c && delete c[t.nonce]
+    null != t.nonce && t.nonce in s && delete s[t.nonce]
   }
 })

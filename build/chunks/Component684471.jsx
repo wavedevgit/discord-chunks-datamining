@@ -30,7 +30,7 @@ function x(t) {
     description: f.intl.formatToPlainString(f.t.q2QrTY, {
       username: h
     }),
-    heroImage: (0, i.jsx)(r.K, {
+    heroImage: (0, i.jsx)(r.Kag, {
       alt: f.intl.string(f.t["3QhxXJ"])
     }),
     children: (0, i.jsxs)("div", {

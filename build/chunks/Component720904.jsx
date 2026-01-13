@@ -31,29 +31,29 @@ function S(e) {
   } = e, {
     animated: i,
     src: o,
-    surrogates: c
+    surrogates: s
   } = t;
   return null == o && null != t.id ? o = p.ZP.getEmojiURL({
     id: t.id,
     animated: !!i,
     size: 20
-  }) : null == o && (o = O.ZP.getURL(c)), (0, r.jsx)(a.u, {
-    text: (0, O.nY)(t),
+  }) : null == o && (o = m.ZP.getURL(s)), (0, r.jsx)(a.u, {
+    text: (0, m.nY)(t),
     hideOnClick: true,
     spacing: 16,
     forceOpen: n,
     children: (0, r.jsx)("div", {
-      "aria-label": v.intl.formatToPlainString(v.t["/iYSo6"], {
+      "aria-label": h.intl.formatToPlainString(h.t["/iYSo6"], {
         emojiName: t.name
       }),
-      className: l()(h.button, {
-        [h.focused]: n
+      className: l()(v.button, {
+        [v.focused]: n
       }),
       children: null == o || "" === o.trim() ? (0, r.jsx)("span", {
-        className: l()("emoji", "emoji-text", h.icon),
-        children: c
+        className: l()("emoji", "emoji-text", v.icon),
+        children: s
       }) : (0, r.jsx)("img", {
-        className: h.icon,
+        className: v.icon,
         src: o,
         alt: ""
       })
@@ -62,22 +62,22 @@ function S(e) {
 }
 
 function E(e, t) {
-  let n = (0, s.MZ)(t.guild_id).filter(e => {
+  let n = (0, c.MZ)(t.guild_id).filter(e => {
     var n;
-    return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !O.ZP.isEmojiPremiumLocked({
+    return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !m.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
-      intention: m.Hz.REACTION
+      intention: y.Hz.REACTION
     })
   });
   n.length > 4 && (n.length = 4);
   let i = g.nc.useSetting(),
     l = (0, f.$R)(t);
-  return (0, o.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(y.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(c.kSQ, {
-    className: h.wrapper,
+  return (0, o.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(O.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(s.kSQ, {
+    className: v.wrapper,
     children: n.map((n, i) => {
       var l;
-      return (0, r.jsx)(c.sNh, {
+      return (0, r.jsx)(s.sNh, {
         id: "quickreact-".concat(null != (l = n.id) ? l : i),
         render: e => {
           let {

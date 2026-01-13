@@ -16,19 +16,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g(e, t) {
-  let n = (0, s.$R)(t);
+  let n = (0, c.$R)(t);
   return !(0, i.e7)([u.Z], () => u.Z.can(d.Plq.MANAGE_MESSAGES, t) && n, [t, n]) || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, a.eQ)(e) ? null : (0, r.jsx)(l.sNh, {
     id: "remove-reactions",
     label: f.intl.string(f.t.ZbtGBm),
     action: function(n) {
-      n.shiftKey ? (0, c.wX)(t.id, e.id) : o.Z.show({
+      n.shiftKey ? (0, s.wX)(t.id, e.id) : o.Z.show({
         title: f.intl.string(f.t.iz3vYX),
         body: f.intl.string(f.t.VpjOCo),
         confirmText: f.intl.string(f.t.p89ACt),
         confirmVariant: "critical-primary",
         cancelText: f.intl.string(f.t.gm1Vej),
         onConfirm: () => {
-          (0, c.wX)(t.id, e.id)
+          (0, s.wX)(t.id, e.id)
         }
       })
     },

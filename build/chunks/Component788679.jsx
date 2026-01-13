@@ -21,26 +21,26 @@ function d(e) {
     embedId: f,
     transitionState: g,
     onClose: b
-  } = e, p = (0, c.v)(t, n, d), O = (0, c.Z)(t, n, f), {
-    reportFalsePositive: y,
-    isReportFalsePositiveLoading: m
+  } = e, p = (0, s.v)(t, n, d), m = (0, s.Z)(t, n, f), {
+    reportFalsePositive: O,
+    isReportFalsePositiveLoading: y
   } = (0, a.$)({
-    onSuccess: () => (0, s.s)(b),
+    onSuccess: () => (0, c.s)(b),
     onError: () => {
       (0, i.showToast)((0, i.createToast)(u.intl.string(u.t.R0RpRX), i.ToastType.FAILURE))
     },
     report: () => {
-      (0, l.Uj)(t, n, p.map(e => e.id), O.map(e => e.id))
+      (0, l.Uj)(t, n, p.map(e => e.id), m.map(e => e.id))
     }
   });
-  return p.length > 0 || O.length > 0 || b(), (0, r.jsx)(s.$, {
+  return p.length > 0 || m.length > 0 || b(), (0, r.jsx)(c.$, {
     messageId: n,
     channelId: t,
-    isReportFalsePositiveLoading: m,
+    isReportFalsePositiveLoading: y,
     analyticsContext: o.UU.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW,
-    onConfirmPress: y,
-    attachmentPreview: 1 === p.length && 0 === O.length ? p[0] : true,
-    embedPreview: 1 === O.length && 0 === p.length ? O[0] : true,
+    onConfirmPress: O,
+    attachmentPreview: 1 === p.length && 0 === m.length ? p[0] : true,
+    embedPreview: 1 === m.length && 0 === p.length ? m[0] : true,
     transitionState: g,
     onClose: b
   })
