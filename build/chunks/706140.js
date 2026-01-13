@@ -6,9 +6,10 @@ require.d(exports, {
   EM: () => T,
   Tt: () => C,
   cv: () => v,
-  sx: () => N,
+  sx: () => P,
   xT: () => A,
-  zH: () => P
+  z4: () => N,
+  zH: () => R
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -109,7 +110,7 @@ function C(e, t, n) {
     lastDismissedAtMs: r,
     numTimesDismissed: o
   } = I(e), s = (0, a.e7)([c.Z], () => c.Z.getGuildId()), l = null;
-  return null != e && (l = R(!(0, g.Bh)(e), r, o, t) ? e : null), [O(l, s, n), i.useCallback((e, t) => {
+  return null != e && (l = w(!(0, g.Bh)(e), r, o, t) ? e : null), [O(l, s, n), i.useCallback((e, t) => {
     null != l && (0, h.Ow)(l, {
       dismissAction: e,
       groupName: n,
@@ -138,6 +139,25 @@ function A(e, t, n) {
 }
 
 function N(e, t, n, r) {
+  let o = (0, a.e7)([l.Z], () => l.Z.getGuildDismissedContentState(n)),
+    s = null != e ? null == o ? null : null == o ? true : o[e] : null,
+    c = null == s ? true : s.lastDismissedObjectId,
+    u = null;
+  if (null != e) {
+    let n = !(0, g.Bh)(e);
+    l.Z.hasLoaded(b.yP.PRELOADED_USER_SETTINGS) ? u = n && (null == c || 1 === d.default.compare(t, c)) ? e : null : null != c && (u = n && 1 === d.default.compare(t, c) ? e : null)
+  }
+  return [O(u, n, r), i.useCallback((e, i) => {
+    null != u && (0, m.I4)(u, t, n, {
+      dismissAction: e,
+      groupName: r,
+      guildId: n,
+      forceTrack: i
+    })
+  }, [u, r, n, t])]
+}
+
+function P(e, t, n, r) {
   let o = (0, a.e7)([c.Z], () => c.Z.getGuildId()),
     s = null;
   return null == e || (0, h.UJ)(e, n, t) || (s = e), [O(s, o, r), i.useCallback((e, t) => {
@@ -150,7 +170,7 @@ function N(e, t, n, r) {
   }, [s, r, o, n])]
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   let r = (0, a.e7)([l.Z], () => l.Z.getGuildDismissedContentState(t)),
     o = (0, g.ig)(e),
     s = null;
@@ -164,7 +184,7 @@ function P(e, t, n) {
   }, [s, n, t])]
 }
 
-function R(e, t, n, r) {
+function w(e, t, n, r) {
   let i = null != t ? Number.isNaN(Number(t)) ? true : Number(t) : true,
     a = true === i ? 0 : i + r.cooldownDurationMs,
     o = Date.now(),

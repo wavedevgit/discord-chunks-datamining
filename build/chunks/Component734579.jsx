@@ -36,10 +36,10 @@ let Z = Chunk473749.memo(function(e) {
     selected: Z
   } = e, N = i.useRef(null), T = i.useRef(null), A = (0, u.useHasAnyModalOpen)(), w = (0, o.e7)([j.Z], () => j.Z.hasLayers());
   i.useEffect(() => {
-    l.id === (0, g.ac)() && (0, m.Xp)(l.id)
+    (0, m.Xp)(l.id)
   }, [l.id]);
   let R = (0, o.e7)([b.Z], () => b.Z.getAnnouncement(l.id)),
-    [D, M] = (0, f.TE)((null == R ? true : R.id) != null ? s.z.GAME_SHOP_NEW_BADGE : null, null != (t = null == R ? true : R.id) ? t : ""),
+    [D, M] = (0, f.ar)(s.z.GAME_SHOP_NEW_BADGE, l.id, null != (t = null == R ? true : R.id) ? t : ""),
     k = D === s.z.GAME_SHOP_NEW_BADGE;
   i.useEffect(() => {
     Z && k && M(_.L.INDIRECT_ACTION)
@@ -141,7 +141,7 @@ let Z = Chunk473749.memo(function(e) {
     children: [(0, r.jsx)(O.Z, {
       ref: N,
       children: H
-    }), A || w || (null == l ? true : l.id) !== (0, g.ac)() || !k || null == R ? null : (0, r.jsx)(v.Z, {
+    }), A || w || !k || null == R ? null : (0, r.jsx)(v.Z, {
       onActionClick: L,
       onActionMouseDown: U,
       onRender: F,

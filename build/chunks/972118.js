@@ -2,7 +2,7 @@
 /** chunk id: 972118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -51,7 +51,13 @@ function y(e, t, n) {
   return (_(e, n), n) ? ((0, f.J0)(e, t, r - 1), false) : ((0, f.Ei)(e, t, r), true)
 }
 
-function O(e) {
+function O(e, t, n) {
+  if (null == t) returnfalse;
+  let r = null != t ? (0, f.qN)(e, t) : 1;
+  return (_(e, n), n) ? ((0, f.H_)(e, t, r - 1), false) : ((0, f.Dw)(e, l.default.fromTimestamp(Date.now() + f.wx), t, r), true)
+}
+
+function v(e) {
   let t = (0, i.e7)([o.Z], () => o.Z.getGuildId()),
     n = (0, d.Nj)(e, {
       cooldownDurationMs: s.Z.Millis.WEEK,
@@ -63,6 +69,7 @@ function O(e) {
       if ((0, u.OQ)(e)) return g(e, n);
       if ((0, u.Vc)(e)) return b(e, t, n);
       if ((0, u.ms)(e)) return y(e, t, n);
+      else if ((0, u.cz)(e)) return O(e, t, n);
       else return E(e, n)
     }, [e, t, n]);
   return {

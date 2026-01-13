@@ -95,7 +95,7 @@ function O(e) {
     guildId: n
   } = e, r = new Date;
   if (h.renderedAtTimestamps.set(t, r.getTime()), s.O.has(t) || h.dailyCapOverridden) return;
-  let i = (0, l.fn)(t) && null != n;
+  let i = (0, l.cn)(t) && null != n;
   if (!(!i && h.dismissibleContentSeenDuringSession.has(t))) {
     if (!(i && y(t, n))) {
       if (i) {
@@ -159,7 +159,7 @@ class T extends(r = Chunk442837.ZP.PersistedStore) {
   hasUserHitDCCap(e, t) {
     if (null != e && (s.O.has(e) || h.dailyCapOverridden)) returnfalse;
     if (null != e) {
-      let n = null != t && (0, l.fn)(e);
+      let n = null != t && (0, l.cn)(e);
       if (n && null != t && y(e, t) || !n && h.dismissibleContentSeenDuringSession.has(e)) returnfalse
     }
     let n = new Date;
