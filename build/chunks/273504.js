@@ -40,5 +40,5 @@ let s = 1e3,
   h = 1,
   g = 50,
   E = 20,
-  b = 150,
+  b = 300,
   y = "automod-profile-quarantine-alert"
