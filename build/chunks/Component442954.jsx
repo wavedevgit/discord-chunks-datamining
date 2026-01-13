@@ -623,7 +623,7 @@ let y = {
             backgroundColor: "var(--background-danger)",
             padding: "16px",
             borderRadius: "8px",
-            border: "1px solid var(--status-danger)"
+            border: "1px solid var(--border-feedback-critical)"
           },
           children: [(0, a.jsxs)(t, {
             variant: "eyebrow",

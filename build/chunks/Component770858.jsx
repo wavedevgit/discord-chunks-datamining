@@ -65,7 +65,7 @@ function S(e) {
           width: O.zw,
           position: "relative"
         },
-        color: o.Z.colors.STATUS_DANGER.css
+        color: o.Z.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
       }) : null,
       unreadChannelsCount: 0,
       badgeDimensions: {

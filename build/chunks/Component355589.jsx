@@ -452,7 +452,7 @@ let Y = e => {
                   size: "custom",
                   width: 20,
                   height: 20,
-                  color: h.Z.colors.STATUS_DANGER.css,
+                  color: h.Z.colors.ICON_FEEDBACK_CRITICAL,
                   className: B.stepStatus
                 }) : e.isDone ? (0, r.jsx)(f.G2e, {
                   color: h.Z.colors.STATUS_POSITIVE_BACKGROUND.css,

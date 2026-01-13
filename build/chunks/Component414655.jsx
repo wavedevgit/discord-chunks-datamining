@@ -39,7 +39,7 @@ function Z(e) {
     handleOpenShop: n,
     handleOpenGameShop: i
   } = e;
-  return t ? (0, r.jsx)(S.Z, {
+  return t ? (0, r.jsx)(E.Z, {
     title: C.intl.string(C.t["i/yzHs"]),
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: i,
@@ -64,7 +64,7 @@ function A(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: N.headerActions,
-    children: [t ? (0, r.jsx)(S.Z, {
+    children: [t ? (0, r.jsx)(E.Z, {
       title: C.intl.string(C.t.SDUwM0),
       handleOpenCollectiblesShop: i,
       handleOpenGameShop: l,
@@ -75,7 +75,7 @@ function A(e) {
       icon: s.qJs,
       text: C.intl.string(C.t.SDUwM0),
       onClick: i
-    }), (0, r.jsx)(E.Z, {
+    }), (0, r.jsx)(S.Z, {
       isOwner: true,
       isWishlistPublic: n,
       onToggleVisibility: a
@@ -87,13 +87,13 @@ function D(e) {
   var t;
   let {
     profileOwner: n
-  } = e, S = i.useRef(null);
+  } = e, E = i.useRef(null);
   (0, v.r)({
-    containerRef: S,
+    containerRef: E,
     itemType: "WISHLIST_ITEM"
   });
   let {
-    wishlistId: E,
+    wishlistId: S,
     currentUser: D,
     wishlistSettings: k
   } = (0, a.cj)([O.Z, j.default], () => {
@@ -115,7 +115,7 @@ function D(e) {
     wishlist: W,
     error: H
   } = (0, y.kZ)({
-    wishlistId: E,
+    wishlistId: S,
     userId: n.id
   }), z = (0, p.Z)({
     location: "user-profile-modal-v2-wishlist",
@@ -132,18 +132,18 @@ function D(e) {
       productLines: r
     })
   }, [L]), q = (0, x.Z)({
-    wishlistId: E,
+    wishlistId: S,
     onAction: K,
     productLines: null != (t = null == W ? true : W.getProductLines()) ? t : null
   }), V = i.useCallback(() => {
-    if (null == E) return;
+    if (null == S) return;
     let e = F ? l.f.PRIVATE : l.f.PUBLIC;
-    U(!F), b.Z.updateWishlistVisibility(E, e), L({
-      wishlistId: E,
+    U(!F), b.Z.updateWishlistVisibility(S, e), L({
+      wishlistId: S,
       action: F ? T.NW.WISHLIST_TOGGLE_PRIVATE : T.NW.WISHLIST_TOGGLE_PUBLIC,
       productLines: null == W ? true : W.getProductLines()
     })
-  }, [E, F, L, W]), X = i.useCallback(() => {
+  }, [S, F, L, W]), X = i.useCallback(() => {
     (0, o.closeAllModals)(), (0, f.mK)({
       analyticsLocations: R,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
@@ -191,11 +191,11 @@ function D(e) {
       })]
     })
   }) : (0, r.jsxs)(I.F, {
-    scrollerRef: S,
+    scrollerRef: E,
     className: N.scroller,
     fade: true,
     children: [(0, r.jsx)(P.Z, {
-      scrollerRef: S
+      scrollerRef: E
     }), (0, r.jsxs)("div", {
       ref: q,
       className: N.headerRow,

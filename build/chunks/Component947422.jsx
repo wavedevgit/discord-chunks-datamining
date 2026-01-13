@@ -17,12 +17,12 @@ let s = t => {
     foreground: o
   } = t;
   return (0, n.jsxs)("div", {
-    className: c.bulletContainer,
+    className: l.bulletContainer,
     children: [(0, n.jsx)("div", {
-      className: c.iconContainer,
+      className: l.iconContainer,
       children: (0, n.jsx)(r, {
         color: null != o ? o : "currentColor",
-        className: c.bulletIcon,
+        className: l.bulletIcon,
         size: "custom",
         height: 40,
         width: 40
@@ -30,7 +30,7 @@ let s = t => {
     }), (0, n.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      className: c.bulletText,
+      className: l.bulletText,
       children: e
     })]
   })
@@ -38,7 +38,7 @@ let s = t => {
 
 function u(t) {
   var e, r, {
-      transitionState: c,
+      transitionState: l,
       onClose: u
     } = t,
     b = function(t, e) {
@@ -78,23 +78,23 @@ function u(t) {
       type: "image",
       src: a.Z
     },
-    title: l.intl.string(l.t.UVuXCs),
+    title: c.intl.string(c.t.UVuXCs),
     onClose: u,
-    transitionState: c,
+    transitionState: l,
     actions: [{
-      text: l.intl.string(l.t.obLqZ8),
+      text: c.intl.string(c.t.obLqZ8),
       variant: "primary",
       onClick: u
     }],
     children: [(0, n.jsx)(s, {
-      text: l.intl.string(l.t.sBDfo6),
+      text: c.intl.string(c.t.sBDfo6),
       icon: i.nRN,
-      foreground: "var(--status-danger)"
+      foreground: "var(--icon-feedback-critical)"
     }), (0, n.jsx)(s, {
-      text: l.intl.string(l.t.x58YtH),
+      text: c.intl.string(c.t.x58YtH),
       icon: i.gkL
     }), (0, n.jsx)(s, {
-      text: l.intl.string(l.t.XtVqla),
+      text: c.intl.string(c.t.XtVqla),
       icon: i.V9
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {

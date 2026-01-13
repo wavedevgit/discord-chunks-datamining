@@ -48,7 +48,7 @@ function I(e) {
           size: "custom",
           width: A.Mn,
           height: A.Mn,
-          color: a.TVs.colors.STATUS_DANGER
+          color: a.TVs.colors.ICON_FEEDBACK_CRITICAL
         })
       }), m !== c.qc.NO_GATE && (0, r.jsx)(A._2, {
         icon: (0, r.jsx)(a.snC, {
@@ -70,7 +70,7 @@ function I(e) {
           size: "custom",
           width: A.Mn,
           height: A.Mn,
-          color: a.TVs.colors.STATUS_DANGER
+          color: a.TVs.colors.ICON_FEEDBACK_CRITICAL
         })
       }), (0, r.jsx)(A._2, {
         icon: (0, r.jsx)(a.gw7, {

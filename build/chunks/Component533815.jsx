@@ -42,7 +42,7 @@ function f(e) {
       children: (0, r.jsx)(o.XHJ, {
         size: i,
         className: d.icon,
-        color: o.TVs.colors.STATUS_DANGER
+        color: o.TVs.colors.ICON_FEEDBACK_CRITICAL
       })
     })
   })

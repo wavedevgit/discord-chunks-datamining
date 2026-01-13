@@ -71,7 +71,7 @@ function x(e) {
           className: h.danger
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
-          color: "status-danger",
+          color: "text-feedback-critical",
           className: h.statusText,
           children: p.intl.string(p.t.EkokLy)
         })]
@@ -91,7 +91,7 @@ function x(e) {
           children: n
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
-          color: s && "required" === o ? "status-danger" : "text-default",
+          color: s && "required" === o ? "text-feedback-critical" : "text-default",
           children: i
         })]
       })]

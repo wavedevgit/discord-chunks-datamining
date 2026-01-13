@@ -118,7 +118,7 @@ function P(e) {
           }), (0, r.jsx)("div", {
             children: null != L && (0, r.jsx)(s.Text, {
               variant: "text-md/normal",
-              color: "status-danger",
+              color: "text-feedback-critical",
               children: L
             })
           }), (0, r.jsx)("div", {

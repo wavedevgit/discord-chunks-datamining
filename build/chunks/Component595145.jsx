@@ -84,7 +84,7 @@ function ec(e) {
     disableActionsForPreview: eZ = false
   } = e, {
     analyticsLocations: eO
-  } = (0, d.ZP)([...ey, s.Z.USER_PROFILE_MODAL_V2]), eT = (0, T.ZB)({
+  } = (0, d.ZP)([...ey, s.Z.USER_PROFILE_MODAL_V2]), eN = (0, N.ZB)({
     layout: "MODAL_V2",
     userId: ec.id,
     sourceSessionId: ep,
@@ -93,18 +93,18 @@ function ec(e) {
     messageId: ef,
     roleId: em,
     showGuildProfile: eI
-  }), eN = i.useRef(null), eA = (0, f.X)(eN), [eP, eE] = i.useState(false), {
-    defaultWishlistId: e_
-  } = (0, r.cj)([N.Z], () => ({
-    defaultWishlistId: N.Z.getFirstWishlistId(ec.id)
+  }), eT = i.useRef(null), eA = (0, f.X)(eT), [eP, eE] = i.useState(false), {
+    defaultWishlistId: eC
+  } = (0, r.cj)([T.Z], () => ({
+    defaultWishlistId: T.Z.getFirstWishlistId(ec.id)
   }));
   (0, b.kZ)({
-    wishlistId: e_,
+    wishlistId: eC,
     userId: ec.id
   });
-  let eC = (0, C.$m)(),
+  let e_ = (0, _.$m)(),
     eS = (0, a.q_F)({
-      opacity: +(null != eC.interactionType),
+      opacity: +(null != e_.interactionType),
       config: {
         duration: 150
       }
@@ -156,15 +156,15 @@ function ec(e) {
     }
   }, []), (0, l.jsx)(d.Gt, {
     value: eO,
-    children: (0, l.jsx)(T.Mt, {
-      value: eT,
+    children: (0, l.jsx)(N.Mt, {
+      value: eN,
       openedAt: eb,
       fetchStartedAt: null == eD ? true : eD.fetchStartedAt,
       fetchEndedAt: null == eD ? true : eD.fetchEndedAt,
       isLoaded: null == eD ? true : eD.isLoaded,
-      children: (0, l.jsx)(C.NJ, {
-        value: eC,
-        children: (0, l.jsx)(_.n, {
+      children: (0, l.jsx)(_.NJ, {
+        value: e_,
+        children: (0, l.jsx)(C.n, {
           value: eh,
           children: (0, l.jsxs)(a.Y0X, {
             "data-migration-pending": true,
@@ -211,7 +211,7 @@ function ec(e) {
                     style: {
                       backgroundImage: "url(".concat(eU, ")")
                     }
-                  }), null != eC.interactionType && (0, l.jsx)(o.animated.div, {
+                  }), null != e_.interactionType && (0, l.jsx)(o.animated.div, {
                     style: eS,
                     className: ea.backdrop
                   }), (0, l.jsx)(ee.Z, {
@@ -219,7 +219,7 @@ function ec(e) {
                     className: ea.toast
                   }), (0, l.jsxs)("div", {
                     className: ea.profile,
-                    ref: (null == eD ? true : eD.profileEffect) != null ? eN : true,
+                    ref: (null == eD ? true : eD.profileEffect) != null ? eT : true,
                     children: [(0, l.jsxs)("div", {
                       className: ea.profileHeader,
                       children: [(0, l.jsx)(D.Z, {

@@ -89,7 +89,7 @@ function w(e) {
             component: (0, l.jsx)(i.nn4, {
               children: (0, l.jsx)(i.H, {
                 id: K,
-                children: C.intl.format(C.t.KRe1Fk, {
+                children: _.intl.format(_.t.KRe1Fk, {
                   name: Y
                 })
               })
@@ -97,7 +97,7 @@ function w(e) {
             children: (0, l.jsxs)(v.Z, {
               user: n,
               displayProfile: H,
-              themeType: _.l.MODAL,
+              themeType: C.l.MODAL,
               children: [(0, l.jsx)(Z.Z, {
                 children: (0, l.jsx)(I.Z, {
                   user: n,
@@ -108,7 +108,7 @@ function w(e) {
                 children: [(0, l.jsx)(h.Z, {
                   user: n,
                   displayProfile: H,
-                  themeType: _.l.MODAL
+                  themeType: C.l.MODAL
                 }), (0, l.jsxs)("div", {
                   className: S.headerInner,
                   children: [(0, l.jsx)(p.Z, {
@@ -116,10 +116,10 @@ function w(e) {
                     displayProfile: H,
                     guildId: z,
                     channelId: D,
-                    themeType: _.l.MODAL
-                  }), (0, l.jsx)(T.Z, {
+                    themeType: C.l.MODAL
+                  }), (0, l.jsx)(N.Z, {
                     user: n,
-                    themeType: _.l.MODAL,
+                    themeType: C.l.MODAL,
                     hasEntered: k === i.Dvm.ENTERED,
                     onCloseProfile: F,
                     disableToolbar: true
@@ -161,10 +161,10 @@ function w(e) {
                   nicknameVariant: "heading-xl/bold",
                   tags: (0, l.jsx)(x.Z, {
                     displayProfile: H,
-                    themeType: _.l.MODAL,
+                    themeType: C.l.MODAL,
                     onClose: F
                   })
-                }), (0, l.jsx)(N.Z, {
+                }), (0, l.jsx)(T.Z, {
                   user: n,
                   currentUser: t,
                   displayProfile: H,

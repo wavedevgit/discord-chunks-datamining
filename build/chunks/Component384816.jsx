@@ -31,12 +31,12 @@ function O(e) {
     user: n,
     currentUser: t,
     displayProfile: O,
-    onClose: T
+    onClose: N
   } = e, {
-    trackUserProfileAction: N
+    trackUserProfileAction: T
   } = (0, u.KZ)(), A = (0, i.e7)([s.Z], () => s.Z.getGuildId()), P = (0, r.Y)({
     userId: n.id
-  }), E = (0, i.e7)([d.Z], () => d.Z.hidePersonalInformation), _ = (0, i.e7)([c.default], () => c.default.locale), C = (0, m.Z)(n.id), S = (0, f.Z)(n.id);
+  }), E = (0, i.e7)([d.Z], () => d.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), _ = (0, m.Z)(n.id), S = (0, f.Z)(n.id);
   return (0, l.jsxs)(o.zJl, {
     fade: true,
     className: Z.scroller,
@@ -69,25 +69,25 @@ function O(e) {
         guildId: null == O ? true : O.guildId,
         tooltipDelay: I.vB
       })
-    }), C.length > 0 && (0, l.jsx)(v.Z, {
+    }), _.length > 0 && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t["3fe7U5"]),
       scrollTargetId: I.Tb.CONNECTIONS,
       children: (0, l.jsx)(x.ZP, {
-        connectedAccounts: C,
+        connectedAccounts: _,
         className: Z.connections,
         userId: n.id,
-        locale: _
+        locale: C
       })
     }), S.length > 0 && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t.PHjkRE),
       children: S.map(e => (0, l.jsx)(x.tH, {
         className: Z.appsConnections,
         applicationRoleConnection: e,
-        locale: _,
+        locale: C,
         onApplicationClicked: () => {
-          N({
+          T({
             action: "PRESS_APP_CONNECTION"
-          }), T()
+          }), N()
         },
         selectedGuildId: null != A ? A : true
       }, e.application.id))

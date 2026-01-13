@@ -113,7 +113,7 @@ function L(e) {
     K = (0, c.wj)(B) ? z : V,
     Y = H.to({
       range: [0, 1],
-      output: [K, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
+      output: [K, (0, d.dQu)(s.Z.colors.BACKGROUND_FEEDBACK_CRITICAL).hex()]
     });
   if (L) {
     if (A === C.PG.DEFAULT_CHANNELS) return (0, r.jsx)(I.j, {});

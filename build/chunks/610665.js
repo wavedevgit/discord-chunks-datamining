@@ -1,7 +1,7 @@
 /** Chunk was on 84722 **/
 /** chunk id: 610665, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  GV: () => v,
+  GV: () => x,
   iQ: () => m
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
@@ -14,7 +14,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk482241 = require("./482241.js"),
   Chunk765305 = require("./765305.js"),
   Chunk981631 = require("./981631.js");
-async function x(e, n) {
+async function v(e, n) {
   let t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     i = [];
   i.push(...t);
@@ -27,7 +27,7 @@ async function x(e, n) {
   if (null == l || 201 !== l.status) throw Error("Can't create channel for event");
   return (0, s.q_)(l.body)
 }
-async function v(e, n) {
+async function x(e, n) {
   let {
     entity_type: t
   } = e;
@@ -40,7 +40,7 @@ async function v(e, n) {
       } = e, l = o.Z.getGuild(t);
       if (null == l) return Promise.resolve(null);
       let a = c.Z.getChannel(i);
-      return null == a ? x(l, e.name, n) : Promise.resolve(a)
+      return null == a ? v(l, e.name, n) : Promise.resolve(a)
     }(e, n);
     l()(null != t, "could not find or create channel")
   }

@@ -71,9 +71,9 @@ function O(e) {
   } = e, {
     coverImageUrl: I,
     gameName: w,
-    isLoading: S
+    isLoading: E
   } = (0, p.Z)(t.applicationId), {
-    registerDragHandleRef: E
+    registerDragHandleRef: S
   } = (0, u.C)(), T = (0, m.Z)(t.applicationId).length > 0, _ = o.default.getCurrentUser(), C = (null == _ ? true : _.id) === n, N = !O && C, {
     isDragging: Z
   } = (0, a.f)(e => ({
@@ -89,7 +89,7 @@ function O(e) {
       hideTooltip: Z,
       coverRef: P
     }), N && (0, r.jsx)(s.e_, {
-      buttonRef: E(t.applicationId),
+      buttonRef: S(t.applicationId),
       className: j.dragHandle
     }), !O && (0, r.jsx)(g.L, {
       userId: n,
@@ -105,7 +105,7 @@ function O(e) {
       onRemove: () => null == x ? true : x(t.applicationId)
     })]
   });
-  return S ? (0, r.jsx)("div", {
+  return E ? (0, r.jsx)("div", {
     className: y.loadingCover
   }) : N ? (0, r.jsx)(h, {
     widgetType: i,

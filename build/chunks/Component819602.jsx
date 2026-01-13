@@ -2,7 +2,7 @@
 /** chunk id: 819602, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   E3: () => P,
-  ZP: () => _,
+  ZP: () => C,
   tH: () => E
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js");
@@ -38,51 +38,51 @@ function P(e) {
     connectedAccount: v,
     theme: b,
     locale: y,
-    userId: T,
+    userId: N,
     className: P,
     showMetadata: E,
-    showInvisibleIcon: _
+    showInvisibleIcon: C
   } = e;
   null == E && (E = true);
-  let C = null != (t = v.metadata) ? t : {},
-    S = E ? (0, p.FI)(C[O.PC.CREATED_AT], y) : null,
+  let _ = null != (t = v.metadata) ? t : {},
+    S = E ? (0, p.FI)(_[O.PC.CREATED_AT], y) : null,
     w = (0, s.dQu)(r.Z.unsafe_rawColors.TWITTER).hex(),
-    D = N.intl.string(N.t["6H6h1r"]);
+    D = T.intl.string(T.t["6H6h1r"]);
   if (E) switch (v.type) {
     case Z.ABu.REDDIT:
-      i = (0, x.oP)(C);
+      i = (0, x.oP)(_);
       break;
     case Z.ABu.STEAM:
-      i = (0, x.Dq)(C);
+      i = (0, x.Dq)(_);
       break;
     case Z.ABu.BLUESKY:
     case Z.ABu.MASTODON:
     case Z.ABu.TWITTER:
-      i = (0, x.rJ)(C), "1" === C[O.PC.TWITTER_VERIFIED] && (d = w, D = N.intl.string(N.t.Jebrww));
+      i = (0, x.rJ)(_), "1" === _[O.PC.TWITTER_VERIFIED] && (d = w, D = T.intl.string(T.t.Jebrww));
       break;
     case Z.ABu.PAYPAL:
-      i = (0, x.li)(C);
+      i = (0, x.li)(_);
       break;
     case Z.ABu.EBAY:
-      i = (0, x.ul)(C);
+      i = (0, x.ul)(_);
       break;
     case Z.ABu.TIKTOK:
-      i = (0, x.hf)(C)
+      i = (0, x.hf)(_)
   }
   let L = u.Z.get((0, m.rR)(v.type)),
     R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, v);
-  null != _ && _ ? j = (0, l.jsx)(s.kZF, {
+  null != C && C ? j = (0, l.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
     className: o()(A.__invalid_connectedAccountOpenIconContainer, A.connectedAccountHideIcon)
   }) : null != R && (j = (0, l.jsx)(s.eee, {
     href: R,
-    "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(v.name, ", ").concat(N.intl.string(N.t.q5jLJB)) : "".concat(v.name, ", ").concat(N.intl.string(N.t.q5jLJB)),
+    "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)) : "".concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)),
     onClick: e => {
       var n;
       n = v.type, (0, f.yw)(Z.rMx.CONNECTED_ACCOUNT_VIEWED, {
         platform_type: n,
-        other_user_id: T
+        other_user_id: N
       }), (0, I.q)({
         href: R,
         trusted: (null == L ? true : L.type) !== Z.ABu.DOMAIN
@@ -109,7 +109,7 @@ function P(e) {
       children: [(0, l.jsx)(a.u, {
         __unsupportedReactNodeAsText: null == L ? true : L.name,
         children: (0, l.jsx)("img", {
-          alt: N.intl.formatToPlainString(N.t.rtm15P, {
+          alt: T.intl.formatToPlainString(T.t.rtm15P, {
             name: null == L ? true : L.name
           }),
           className: A.connectedAccountIcon,
@@ -135,7 +135,7 @@ function P(e) {
         }), null != S ? (0, l.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-default",
-          children: N.intl.format(N.t["9rfonh"], {
+          children: T.intl.format(T.t["9rfonh"], {
             date: S
           })
         }) : null]
@@ -156,7 +156,7 @@ function E(e) {
     selectedGuildId: a
   } = e, c = (0, x.rm)(n, i), u = () => {
     null == r || r(), (0, j.transitionToGlobalDiscovery)({
-      tab: T.GlobalDiscoveryTab.APPS,
+      tab: N.GlobalDiscoveryTab.APPS,
       applicationId: n.application.id,
       newSessionState: {
         entrypoint: {
@@ -200,7 +200,7 @@ function E(e) {
         children: (0, l.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: N.intl.format(N.t.zIT9YA, {
+          children: T.intl.format(T.t.zIT9YA, {
             applicationHook: () => (0, l.jsxs)("div", {
               className: A.connectedAccountPoweredByText,
               children: [null != n.application.bot ? (0, l.jsx)(d.Z, {
@@ -219,7 +219,7 @@ function E(e) {
   })
 }
 
-function _(e) {
+function C(e) {
   let {
     connectedAccounts: n,
     locale: t,

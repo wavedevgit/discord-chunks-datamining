@@ -1017,7 +1017,7 @@ function th(e) {
   let ee = r.useCallback(() => {
       I || (0, ey.r5)()
     }, [I]),
-    et = _ ? x.TVs.colors.STATUS_DANGER : "currentColor",
+    et = _ ? x.TVs.colors.ICON_VOICE_MUTED : "currentColor",
     en = (0, er.Z)({
       location: "Account"
     }),
@@ -1345,7 +1345,7 @@ function tf(e) {
               size: "custom",
               width: 20,
               height: 20,
-              color: h ? x.TVs.colors.STATUS_DANGER : "currentColor",
+              color: h ? x.TVs.colors.ICON_FEEDBACK_CRITICAL : "currentColor",
               className: c
             }),
             iconForeground: h ? te.strikethrough : true,
@@ -1370,7 +1370,7 @@ function tf(e) {
               size: "custom",
               width: 12,
               height: 12,
-              color: h ? x.TVs.colors.STATUS_DANGER : "currentColor"
+              color: h ? x.TVs.colors.ICON_FEEDBACK_CRITICAL : "currentColor"
             }),
             onClick: r,
             onContextMenu: r,
@@ -1403,7 +1403,7 @@ function tf(e) {
         size: "custom",
         width: 20,
         height: 20,
-        color: h ? x.TVs.colors.STATUS_DANGER : "currentColor",
+        color: h ? x.TVs.colors.ICON_FEEDBACK_CRITICAL : "currentColor",
         className: c
       }),
       onClick: s,

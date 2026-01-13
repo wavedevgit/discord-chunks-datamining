@@ -2,7 +2,7 @@
 /** chunk id: 320596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ie: () => j,
-  mv: () => x
+  mv: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,15 +17,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk930180 = require("./930180.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk182731 = require("./182731.js");
-let x = e => {
+let g = e => {
     let {
       channelId: t
     } = e;
-    return (0, r.jsx)(g, {
+    return (0, r.jsx)(x, {
       channelId: t
     })
   },
-  g = e => {
+  x = e => {
     let {
       channelId: t
     } = e, n = (0, f._d)(t), l = (0, f.K3)(t);
@@ -120,8 +120,8 @@ let x = e => {
       showStatus: n,
       speaker: i,
       channelId: c
-    } = e, f = (0, l.e7)([d.ZP], () => d.ZP.isModerator(t.id, c)), x = (0, l.e7)([o.Z], () => o.Z.isBlocked(t.id)), g = null;
-    return n && (g = i ? m.intl.string(m.t.LqMmG2) : f ? m.intl.string(m.t.GMZqSi) : m.intl.string(m.t.suRApw)), (0, r.jsxs)("div", {
+    } = e, f = (0, l.e7)([d.ZP], () => d.ZP.isModerator(t.id, c)), g = (0, l.e7)([o.Z], () => o.Z.isBlocked(t.id)), x = null;
+    return n && (x = i ? m.intl.string(m.t.LqMmG2) : f ? m.intl.string(m.t.GMZqSi) : m.intl.string(m.t.suRApw)), (0, r.jsxs)("div", {
       className: b.user,
       children: [(0, r.jsx)(s.Z, {
         src: t.getAvatarURL(null, 32),
@@ -151,12 +151,12 @@ let x = e => {
           className: b.username,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
-            color: x ? "text-feedback-critical" : "text-default",
-            children: x ? m.intl.string(m.t["4bDptI"]) : m.intl.string(m.t.tFY5Zb)
+            color: g ? "text-feedback-critical" : "text-default",
+            children: g ? m.intl.string(m.t["4bDptI"]) : m.intl.string(m.t.tFY5Zb)
           }), (0, r.jsxs)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: ["| ", g]
+            children: ["| ", x]
           })]
         })]
       })]

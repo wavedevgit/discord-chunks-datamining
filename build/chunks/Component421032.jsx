@@ -32,9 +32,9 @@ function x(e) {
   if (null == j) return null;
   let {
     is_canceled: Z = false
-  } = null != k ? k : {}, y = (null == k ? true : k.scheduled_start_time) != null ? new Date(null == k ? true : k.scheduled_start_time) : i, w = (0, p.DK)(j), E = Z ? m.p1.CANCELED : m.p1.SCHEDULED;
-  w === n && (E = j.status);
-  let S = (null == j ? true : j.scheduled_start_time) != null ? (0, p.lh)(k, y, new Date(null == j ? true : j.scheduled_start_time)) : null,
+  } = null != k ? k : {}, w = (null == k ? true : k.scheduled_start_time) != null ? new Date(null == k ? true : k.scheduled_start_time) : i, y = (0, p.DK)(j), E = Z ? m.p1.CANCELED : m.p1.SCHEDULED;
+  y === n && (E = j.status);
+  let S = (null == j ? true : j.scheduled_start_time) != null ? (0, p.lh)(k, w, new Date(null == j ? true : j.scheduled_start_time)) : null,
     P = e => {
       e.stopPropagation(), null != I && (0, s.jW)(e, async () => {
         let {
@@ -78,7 +78,7 @@ function x(e) {
     onContextMenu: P,
     "aria-label": "",
     children: [(0, a.jsx)(h.z, {
-      startTime: y.toISOString(),
+      startTime: w.toISOString(),
       status: null != S ? S : E,
       eventType: j.entity_type,
       guildEventId: j.id,

@@ -36,20 +36,20 @@ function w(e) {
     transitionState: n,
     onClose: l,
     guildId: w
-  } = e, S = (0, d.Dt)(), I = (0, c.e7)([m.Z], () => m.Z.getGuild(w)), T = (0, f.Z)(null == I ? true : I.id), D = (0, b.ZP)(w), _ = i.useRef(h.ZP.ackMessageId(w, k.W.GUILD_EVENT)), G = (0, N.Z)();
+  } = e, S = (0, d.Dt)(), I = (0, c.e7)([m.Z], () => m.Z.getGuild(w)), T = (0, f.Z)(null == I ? true : I.id), _ = (0, b.ZP)(w), D = i.useRef(h.ZP.ackMessageId(w, k.W.GUILD_EVENT)), G = (0, N.Z)();
   return i.useEffect(() => {
-    D.forEach(e => v.Z.getGuildEventUserCounts(w, e.id, [])), v.Z.getGuildEventsForCurrentUser(w)
-  }, [D, w]), (0, u.ZP)(() => {
+    _.forEach(e => x.Z.getGuildEventUserCounts(w, e.id, [])), x.Z.getGuildEventsForCurrentUser(w)
+  }, [_, w]), (0, u.ZP)(() => {
     p.default.track(O.rMx.OPEN_MODAL, {
       type: Z.zw,
       guild_id: w,
-      guild_events_count: D.length
+      guild_events_count: _.length
     })
   }), i.useEffect(() => {
-    a()(D).map(e => e.creator_id).filter(j.lm).uniq().forEach(e => {
+    a()(_).map(e => e.creator_id).filter(j.lm).uniq().forEach(e => {
       g.Z.requestMember(w, e)
     })
-  }, [w, D]), i.useEffect(() => {
+  }, [w, _]), i.useEffect(() => {
     null != w && (0, s.Ju)(w, k.W.GUILD_EVENT)
   }, [w]), (0, r.jsxs)(o.Y0X, {
     size: o.CgR.MEDIUM,
@@ -67,8 +67,8 @@ function w(e) {
       }), (0, r.jsx)(o.Heading, {
         id: S,
         variant: "heading-md/semibold",
-        children: D.length > 0 ? P.intl.formatToPlainString(P.t.IBdqSu, {
-          number: D.length
+        children: _.length > 0 ? P.intl.formatToPlainString(P.t.IBdqSu, {
+          number: _.length
         }) : P.intl.string(P.t.tlopTM)
       }), T && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
@@ -131,10 +131,10 @@ function w(e) {
     }), (0, r.jsx)(o.hzk, {
       className: E.content,
       "data-migration-pending": true,
-      children: D.length > 0 ? D.map(e => (0, r.jsx)(C.Z, {
+      children: _.length > 0 ? _.map(e => (0, r.jsx)(C.Z, {
         guildEvent: e,
         onActionTaken: l,
-        isNew: null != _.current && x.default.compare(e.id, _.current) > 0
+        isNew: null != D.current && v.default.compare(e.id, D.current) > 0
       }, e.id)) : (0, r.jsx)(y.Z, {
         guildId: w,
         onClose: l

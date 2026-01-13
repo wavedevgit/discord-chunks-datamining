@@ -2,8 +2,8 @@
 /** chunk id: 927613, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => p,
-  Z: () => g
+  W: () => f,
+  Z: () => h
 }), require("./361932.js"), require("./187205.js"), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,20 +13,19 @@ var Chunk473749 = require("./473749.js"),
   Chunk411935 = require("./411935.js"),
   Chunk210218 = require("./210218.js"),
   Chunk699955 = require("./699955.js"),
-  Chunk868849 = require("./868849.js"),
   Chunk981631 = require("./981631.js");
-let p = 6;
+let f = 6;
 
-function _(e) {
+function p(e) {
   return new o.Z({
     sku_id: e.id,
-    sku_product_line: f.POd.SOCIAL_LAYER_GAME_ITEM,
+    sku_product_line: d.POd.SOCIAL_LAYER_GAME_ITEM,
     sku_name: e.name,
     sku: e
   })
 }
 
-function m(e) {
+function _(e) {
   let {
     applicationId: t,
     numItems: n,
@@ -49,13 +48,13 @@ function m(e) {
       skuIdToUserIdsReasons: {}
     } : {
       state: e,
-      recommendations: d.data.skus.slice(0, n).map(e => _(e)),
+      recommendations: d.data.skus.slice(0, n).map(e => p(e)),
       skuIdToUserIdsReasons: d.data.skusToRecommendationReasons
     }
   }, [d, n])
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     numItems: n,
@@ -79,7 +78,7 @@ function h(e) {
       return t
     }, [o, n]),
     d = (0, i.Wu)([s.Z], () => u.map(e => s.Z.get(e)).filter(e => null != e), [u]),
-    f = r.useMemo(() => d.map(e => _(e)), [d]);
+    f = r.useMemo(() => d.map(e => p(e)), [d]);
   return {
     state: r.useMemo(() => null == o || "loading" === o.state || "partially-fetched" === o.state || 0 === n ? "loading" : "error" === o.state ? "error" : "success", [o, n]),
     recommendations: f,
@@ -87,47 +86,45 @@ function h(e) {
   }
 }
 
-function g(e) {
+function h(e) {
   let {
     guildId: t,
-    numWishlistItems: n = p,
+    numWishlistItems: n = f,
     location: i,
     applicationId: o,
     userIds: s,
     includeWishlists: l = false
-  } = e, c = (0, d.Q)({
+  } = e, c = (0, u.cZ)({
     location: i
-  }), f = (0, u.cZ)({
-    location: i
-  }), _ = c && null != s && s.length > 0, [g, E] = r.useState(s);
+  }), d = null != s && s.length > 0, [p, h] = r.useState(s);
   r.useEffect(() => {
-    E(e => null == e ? s : (0, a.E)(e, s) ? e : s)
+    h(e => null == e ? s : (0, a.E)(e, s) ? e : s)
   }, [s]);
   let {
-    state: b,
-    recommendations: y,
-    skuIdToUserIdsReasons: O
-  } = m({
+    state: g,
+    recommendations: E,
+    skuIdToUserIdsReasons: b
+  } = _({
     applicationId: o,
-    userIds: g,
+    userIds: p,
     numItems: n,
-    isEligible: _ && f,
+    isEligible: d && c,
     includeWishlists: l
-  }), v = _ && "error" !== b, {
-    state: S,
-    recommendations: I
-  } = h({
+  }), y = d && "error" !== g, {
+    state: O,
+    recommendations: v
+  } = m({
     guildId: t,
     numItems: n,
-    isEligible: !v && f
+    isEligible: !y && c
   });
-  return f && 0 !== n ? v ? {
-    state: b,
-    recommendations: y,
-    skuIdToUserIdsReasons: O
+  return c && 0 !== n ? y ? {
+    state: g,
+    recommendations: E,
+    skuIdToUserIdsReasons: b
   } : {
-    state: S,
-    recommendations: I,
+    state: O,
+    recommendations: v,
     skuIdToUserIdsReasons: {}
   } : {
     state: "success",

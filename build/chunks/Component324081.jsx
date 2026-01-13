@@ -216,7 +216,7 @@ function k(e) {
           className: N.badge,
           children: (0, r.jsx)(u.mAB, {
             count: i,
-            color: d ? s.Z.colors.BACKGROUND_ACCENT.css : s.Z.colors.STATUS_DANGER.css
+            color: d ? s.Z.colors.BACKGROUND_ACCENT.css : s.Z.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
           })
         }) : null]
       })

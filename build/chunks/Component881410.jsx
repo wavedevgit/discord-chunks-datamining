@@ -79,10 +79,10 @@ function y(e) {
     I = i.useRef(""),
     {
       options: w,
-      matchSorterOptions: S
+      matchSorterOptions: E
     } = (0, c.h)(),
     {
-      applicationIds: E,
+      applicationIds: S,
       onAddGame: T
     } = (0, d.K)(t),
     _ = i.useCallback(e => {
@@ -95,8 +95,8 @@ function y(e) {
         action: "GAME_ADDED",
         gameId: e,
         widgetEdited: t
-      }), E.includes(e) && T(e), null == y || y()
-    }, [t, v, y, E, T]),
+      }), S.includes(e) && T(e), null == y || y()
+    }, [t, v, y, S, T]),
     C = i.useMemo(() => {
       let e = new Map(w.map(e => [String(e.value), {
           id: String(e.value),
@@ -104,14 +104,14 @@ function y(e) {
           label: e.label,
           disabled: O.has(e.value)
         }])),
-        t = E.map(t => e.get(t)).filter(e => null != e && !e.disabled),
+        t = S.map(t => e.get(t)).filter(e => null != e && !e.disabled),
         n = [...e.values()].filter(e => !t.includes(e));
       return [...t, ...n]
-    }, [w, O, E]),
-    N = i.useMemo(() => m(p({}, S), {
+    }, [w, O, S]),
+    N = i.useMemo(() => m(p({}, E), {
       threshold: l.Lu.rankings.CONTAINS,
       keys: ["label"]
-    }), [S]),
+    }), [E]),
     Z = i.useCallback(e => "" === e.trim() ? C.length : (0, l.Lu)(C, e, N).length, [C, N]),
     A = i.useCallback(e => {
       let n = e.target.value;

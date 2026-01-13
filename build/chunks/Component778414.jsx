@@ -146,7 +146,7 @@ function M(e) {
       a.current && (a.current = false, l())
     }, [l])
   })(t.id, I);
-  let E = () => (0, r.jsxs)(r.Fragment, {
+  let S = () => (0, r.jsxs)(r.Fragment, {
     children: [c && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(w.Z, {
         className: D.editingHeader
@@ -162,9 +162,9 @@ function M(e) {
   if (v)
     if (g) return (0, r.jsx)(_.Z, {});
     else return (0, r.jsx)(Z.Z, {});
-  return c ? (0, r.jsx)(S.K, {
-    children: E()
-  }) : E()
+  return c ? (0, r.jsx)(E.K, {
+    children: S()
+  }) : S()
 }
 
 function F(e) {
@@ -183,7 +183,7 @@ function F(e) {
       [D.hasToolbar]: o
     }),
     fade: true,
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(S.Z, {
       scrollerRef: l
     }), (0, r.jsx)(M, k({
       user: t

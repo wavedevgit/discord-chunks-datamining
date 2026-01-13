@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk713603 = require("./713603.js"),
   Chunk447921 = require("./447921.js");
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -83,10 +83,10 @@ function _(e) {
     }),
     onReorder: (e, t) => (0, m.Eq)(n, e, t),
     onEnd: () => a(i.applicationId),
-    className: S.dropTarget,
-    dropBeforeClassName: S.dropIndicatorBefore,
-    dropAfterClassName: S.dropIndicatorAfter,
-    draggingClassName: S.isDragging,
+    className: E.dropTarget,
+    dropBeforeClassName: E.dropIndicatorBefore,
+    dropAfterClassName: E.dropIndicatorAfter,
+    draggingClassName: E.isDragging,
     children: l
   })
 }
@@ -118,12 +118,12 @@ function C(e) {
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == a ? (0, r.jsx)(c.Heading, T(E({}, l), {
+  return null == a ? (0, r.jsx)(c.Heading, T(S({}, l), {
     children: i
-  })) : (0, r.jsx)(c.Heading, T(E({}, l), {
+  })) : (0, r.jsx)(c.Heading, T(S({}, l), {
     children: (0, r.jsx)(c.P3F, {
       onClick: a,
-      className: S.clickableText,
+      className: E.clickableText,
       children: i
     })
   }))
@@ -170,7 +170,7 @@ function A(e) {
     children: [(0, r.jsx)(c.PEf, {
       size: "xxs",
       color: c.TVs.colors.ICON_MUTED,
-      className: S.commentIcon
+      className: E.commentIcon
     }), (0, r.jsx)(N, {
       user: n,
       guildId: i,
@@ -192,7 +192,7 @@ function D(e) {
     applicationId: f
   } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
     trackUserProfileEditAction: y
-  } = (0, p.KZ)(), [j, h] = i.useState("idle"), [O, v] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), E = null != t && "" !== t.trim(), T = i.useCallback(() => {
+  } = (0, p.KZ)(), [j, h] = i.useState("idle"), [O, v] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), S = null != t && "" !== t.trim(), T = i.useCallback(() => {
     y({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
@@ -216,7 +216,7 @@ function D(e) {
       null == (e = x.current) || e.focus()
     }
   }, [j]), "editing" === j ? (0, r.jsxs)("div", {
-    className: S.textAreaContainer,
+    className: E.textAreaContainer,
     children: [(0, r.jsx)(c.nn4, {
       tag: "label",
       htmlFor: g,
@@ -239,11 +239,11 @@ function D(e) {
     role: "group",
     "aria-labelledby": b,
     onClick: T,
-    className: S.editableCommentContainer,
+    className: E.editableCommentContainer,
     children: [(0, r.jsx)(c.vdY, {
       size: "xxs",
       color: c.TVs.colors.ICON_MUTED,
-      className: S.commentIcon
+      className: E.commentIcon
     }), (0, r.jsx)(N, {
       user: n,
       guildId: l,
@@ -251,7 +251,7 @@ function D(e) {
       id: b
     }), (0, r.jsx)(Z, {
       text: null != t ? t : w,
-      className: a()(S.editableCommentText, !E && S.placeholder)
+      className: a()(E.editableCommentText, !S && E.placeholder)
     }), (0, r.jsx)(c.P3F, {
       innerRef: x,
       "aria-label": I.intl.string(I.t.ppb9MJ),
@@ -303,18 +303,18 @@ function k(e) {
       hideTooltip: true
     }),
     q = () => (0, r.jsxs)("div", {
-      className: a()(S.card, p),
+      className: a()(E.card, p),
       children: [H ? (0, r.jsxs)("div", {
-        className: S.dragHandleContainer,
+        className: E.dragHandleContainer,
         children: [K(), (0, r.jsx)(b.e_, {
           buttonRef: z(l.applicationId),
-          className: S.dragHandle
+          className: E.dragHandle
         })]
       }) : K(), (0, r.jsxs)("div", {
-        className: S.details,
-        children: [s ? (0, r.jsx)(c.Heading, T(E({}, G), {
+        className: E.details,
+        children: [s ? (0, r.jsx)(c.Heading, T(S({}, G), {
           children: R
-        })) : (0, r.jsx)(C, E({
+        })) : (0, r.jsx)(C, S({
           applicationId: I,
           userId: t.id,
           gameName: R
@@ -336,9 +336,9 @@ function k(e) {
           widgetType: o,
           applicationId: I,
           disableInteraction: s,
-          className: S.tags
+          className: E.tags
         }), !s && (0, r.jsx)(x.F, {
-          className: S.socialProof,
+          className: E.socialProof,
           applicationId: I,
           guildId: n,
           channelId: i
@@ -346,7 +346,7 @@ function k(e) {
       }), !s && M && (0, r.jsx)(v.Z, {
         game: l,
         widgetType: o,
-        className: S.removeGameButton,
+        className: E.removeGameButton,
         onRemove: () => null == d ? true : d(l.applicationId)
       })]
     });

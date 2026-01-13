@@ -29,16 +29,16 @@ function p(e) {
     onSuccess: N,
     onClose: k
   } = e, {
-    guild_id: y,
-    privacy_level: E
-  } = p, w = (0, r.e7)([h.Z], () => h.Z.getChannel(p.channel_id), [p]), _ = (0, r.e7)([x.Z], () => x.Z.getGuild(y), [y]), {
+    guild_id: E,
+    privacy_level: y
+  } = p, _ = (0, r.e7)([h.Z], () => h.Z.getChannel(p.channel_id), [p]), w = (0, r.e7)([v.Z], () => v.Z.getGuild(E), [E]), {
     canManageGuildEvent: T
-  } = (0, o.XJ)(null != w ? w : _), Z = T(p), S = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), I = p.entity_type === j.WX.STAGE_INSTANCE, [b, A] = l.useState(I), [P, {
+  } = (0, o.XJ)(null != _ ? _ : w), Z = T(p), S = (0, r.e7)([c.Z], () => c.Z.isLurking(E), [E]), I = p.entity_type === f.WX.STAGE_INSTANCE, [b, A] = l.useState(I), [P, {
     loading: G,
     error: L
-  }] = (0, v.Z)();
+  }] = (0, x.Z)();
   if (!Z) return null;
-  let O = E === j.j8.PUBLIC ? f.intl.string(f.t.HhlaLP) : f.intl.string(f.t.GI3xXd),
+  let O = y === f.j8.PUBLIC ? j.intl.string(j.t.HhlaLP) : j.intl.string(j.t.GI3xXd),
     R = () => {
       null == N || N(), k(), (0, u.Ku)(false)
     },
@@ -51,9 +51,9 @@ function p(e) {
     transitionState: t,
     onClose: k,
     title: p.name,
-    subtitle: f.intl.format(f.t.UMajol, {
+    subtitle: j.intl.format(j.t.UMajol, {
       privacyLevel: O,
-      privacyLevelHook: (e, n) => E !== j.j8.PUBLIC ? null : (0, i.jsxs)("div", {
+      privacyLevelHook: (e, n) => y !== f.j8.PUBLIC ? null : (0, i.jsxs)("div", {
         className: C.privacyLevel,
         children: [(0, i.jsx)(s.enf, {
           size: "xs",
@@ -73,18 +73,18 @@ function p(e) {
       }), (0, i.jsx)(s.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: f.intl.string(f.t["Pe+Pwp"])
+        children: j.intl.string(j.t["Pe+Pwp"])
       })]
     }) : true,
     actions: [{
       variant: "active",
-      text: f.intl.string(f.t.cK1GGY),
+      text: j.intl.string(j.t.cK1GGY),
       onClick: M,
       loading: G
     }],
     children: [(0, i.jsx)(g.Z, {
-      guild: _,
-      channel: w,
+      guild: w,
+      channel: _,
       name: p.name,
       description: null != (n = p.description) ? n : true,
       imageSource: (0, m.Z)(p),
@@ -95,7 +95,7 @@ function p(e) {
       rsvped: true,
       guildEvent: p,
       hideAgeVerificationNotice: true
-    }), j.Qk.has(p.entity_type) && (0, i.jsx)(d.Z, {
+    }), f.Qk.has(p.entity_type) && (0, i.jsx)(d.Z, {
       className: C.ageVerificationNotice
     }), null != L && null != L.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
       color: "text-feedback-critical",

@@ -46,7 +46,7 @@ function f(e) {
         className: u.headerRow,
         children: [(0, r.jsx)(s.aNP, {
           className: u.warningIcon,
-          color: o.Z.colors.STATUS_DANGER
+          color: o.Z.colors.ICON_FEEDBACK_CRITICAL
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           children: c.intl.string(c.t["4CxGXi"])

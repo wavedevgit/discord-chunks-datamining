@@ -37,7 +37,7 @@ let h = {
       message: Chunk388032.intl.string(Chunk388032.t["84MExs"]),
       icon: (0, Chunk54381.jsx)(Chunk481060.Uz9, {
         size: "sm",
-        color: Chunk481060.TVs.colors.STATUS_DANGER.css
+        color: Chunk481060.TVs.colors.ICON_FEEDBACK_CRITICAL
       }),
       toast_id: "user_profile_widget_save_failure",
       type: Chunk481060.ToastType.FAILURE
@@ -46,7 +46,7 @@ let h = {
       message: Chunk388032.intl.string(Chunk388032.t.F8FvUy),
       icon: (0, Chunk54381.jsx)(Chunk481060.Uz9, {
         size: "sm",
-        color: Chunk481060.TVs.colors.STATUS_DANGER.css
+        color: Chunk481060.TVs.colors.ICON_FEEDBACK_CRITICAL
       }),
       toast_id: "user_profile_something_went_wrong",
       type: Chunk481060.ToastType.FAILURE

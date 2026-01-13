@@ -2,7 +2,7 @@
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => I,
-  Uf: () => S,
+  Uf: () => E,
   b0: () => P,
   s_: () => x
 }), require("./388685.js");
@@ -121,7 +121,7 @@ function w() {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     onClose: t
   } = e, n = i.useCallback(() => {

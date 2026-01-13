@@ -30,7 +30,7 @@ function v(e) {
   } = (0, f.KZ)(), [l, v] = i.useState(false), x = (0, c.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, c.Wu)([m.Z], () => m.Z.getChangedWidgets()), I = (0, c.Wu)([m.Z], () => m.Z.getRemovedWidgets()), w = (0, c.e7)([m.Z], () => m.Z.hasUnsavedChanges()), S = (0, c.e7)([m.Z], () => m.Z.canSaveChanges()), E = (0, c.e7)([m.Z], () => m.Z.isSubmitting), T = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(w, {
+  }), P = (0, c.Wu)([m.Z], () => m.Z.getChangedWidgets()), I = (0, c.Wu)([m.Z], () => m.Z.getRemovedWidgets()), w = (0, c.e7)([m.Z], () => m.Z.hasUnsavedChanges()), E = (0, c.e7)([m.Z], () => m.Z.canSaveChanges()), S = (0, c.e7)([m.Z], () => m.Z.isSubmitting), T = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(w, {
     from: {
       opacity: 0,
       y: 80 * !T
@@ -106,14 +106,14 @@ function v(e) {
           variant: "secondary",
           text: h.intl.string(h.t.yBZMsQ),
           onClick: N,
-          disabled: !w || E
+          disabled: !w || S
         }), (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "primary",
           text: h.intl.string(h.t["R3BPH+"]),
           onClick: C,
-          loading: E,
-          disabled: !S || !w || E
+          loading: S,
+          disabled: !E || !w || S
         })]
       })]
     })

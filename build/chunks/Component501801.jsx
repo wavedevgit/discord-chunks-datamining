@@ -486,7 +486,7 @@ function v(e) {
                   case R.vB8.CREATE:
                     return "text-feedback-positive";
                   case R.vB8.DELETE:
-                    return "status-danger";
+                    return "text-feedback-critical";
                   default:
                     return "text-feedback-warning"
                 }

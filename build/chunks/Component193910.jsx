@@ -62,35 +62,35 @@ function D() {
 function M(e) {
   let {
     channel: t,
-    chatInputType: m,
-    options: b,
-    onFileUpload: x,
-    onClose: M,
-    onSelect: k,
-    draftType: L,
-    editorTextContent: U,
-    setValue: G,
-    openClips: B
+    chatInputType: o,
+    options: m,
+    onFileUpload: b,
+    onClose: x,
+    onSelect: M,
+    draftType: k,
+    editorTextContent: L,
+    setValue: U,
+    openClips: G
   } = e, {
-    analyticsLocations: F,
-    newestAnalyticsLocation: H
-  } = (0, d.ZP)(), V = (0, y.Dt)({
+    analyticsLocations: B,
+    newestAnalyticsLocation: F
+  } = (0, d.ZP)(), H = (0, y.Dt)({
     channel: t
-  }), z = (0, l.e7)([O.Z], () => O.Z.isInProgress());
+  }), V = (0, l.e7)([O.Z], () => O.Z.isInProgress());
 
-  function W() {
+  function z() {
     (0, j.R6)(t, true, "Plus Button")
   }
 
+  function W() {
+    C.default.track(Z.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), U("/", (0, I.JM)("/"))
+  }
+
   function K() {
-    C.default.track(Z.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), G("/", (0, I.JM)("/"))
+    G()
   }
 
   function Y() {
-    B()
-  }
-
-  function q() {
     (0, g.Q3)(a.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: N.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
@@ -134,7 +134,7 @@ function M(e) {
     })
   }
 
-  function X() {
+  function q() {
     C.default.track(Z.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -147,20 +147,20 @@ function M(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: H
+      analyticsLocation: F
     }), (0, u.w1)({
       guildId: t.guild_id
     })
   }
 
-  function Q() {
-    let e = U,
+  function X() {
+    let e = L,
       n = "txt",
       r = "",
-      i = U.match(R);
+      i = L.match(R);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, _.d)([(0, S.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, L), E.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== r && E.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, k), E.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== r && E.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
       plainText: r
     })
   }
@@ -171,14 +171,13 @@ function M(e) {
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, r.jsx)(s.v2r, {
-    onSelect: k,
+    onSelect: M,
     navId: "channel-attach",
-    onClose: M,
+    onClose: x,
     "aria-label": A.intl.string(A.t.Xm41aV),
     className: w.menu,
-    children: b.map(function(e) {
-      var n;
-      let i = (0, r.jsxs)("div", {
+    children: m.map(function(e) {
+      let n = (0, r.jsxs)("div", {
         className: w.optionLabel,
         children: [(0, r.jsx)(e.icon, {
           className: w.optionIcon,
@@ -188,7 +187,7 @@ function M(e) {
           children: e.display
         }), null != e.badgeVal && e.badgeVal > 0 && (0, r.jsx)(s.mAB, {
           className: w.badge,
-          color: null != (n = e.badgeColor) ? n : o.Z.colors.STATUS_DANGER.css,
+          color: e.badgeColor,
           count: e.badgeVal
         })]
       });
@@ -196,114 +195,114 @@ function M(e) {
         case P.r.UPLOAD_A_FILE:
           return (0, r.jsx)(s.sNh, {
             id: "upload-file",
-            label: i,
-            action: x
+            label: n,
+            action: b
           }, "upload-file");
         case P.r.UPLOAD_TEXT_AS_FILE:
-          if ("" === U) return null;
+          if ("" === L) return null;
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
-            label: i,
-            action: Q
+            label: n,
+            action: X
           }, "upload-text-as-file");
         case P.r.CLIPS:
           return (0, r.jsx)(s.sNh, {
             id: "clips",
-            label: i,
-            action: Y
+            label: n,
+            action: K
           }, "clips");
         case P.r.POLL:
           return (0, r.jsx)(s.sNh, {
             id: "poll",
-            label: i,
-            action: q
+            label: n,
+            action: Y
           }, "poll");
         case P.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
             id: "play",
-            label: i,
+            label: n,
             action: () => {
               var n;
               return n = e.activity, void c.Z.sendActivityInvite({
                 channelId: t.id,
                 type: Z.mFx.JOIN,
                 activity: n,
-                location: F[F.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "play");
         case P.r.INVITE_TO_LISTEN:
           return (0, r.jsx)(s.sNh, {
             id: "listen",
-            label: i,
+            label: n,
             action: () => {
               var n;
               return n = e.activity, void c.Z.sendActivityInvite({
                 channelId: t.id,
                 type: Z.mFx.LISTEN,
                 activity: n,
-                location: F[F.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "listen");
         case P.r.INVITE_TO_WATCH:
           return (0, r.jsx)(s.sNh, {
             id: "watch",
-            label: i,
+            label: n,
             action: () => {
               var n;
               return n = e.activity, void c.Z.sendActivityInvite({
                 channelId: t.id,
                 type: Z.mFx.WATCH,
                 activity: n,
-                location: F[F.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "watch");
         case P.r.CREATE_THREAD:
           return (0, r.jsx)(s.sNh, {
             id: "THREAD",
-            label: i,
-            action: W
+            label: n,
+            action: z
           }, "THREAD");
         case P.r.SLASH_COMMAND:
           return (0, r.jsx)(s.sNh, {
             id: "SLASH_COMMAND",
-            label: i,
-            action: K
+            label: n,
+            action: W
           }, "SLASH_COMMAND");
         case P.r.APP_LAUNCHER:
           return (0, r.jsx)(s.sNh, {
             id: "APP_LAUNCHER",
-            label: i,
-            action: () => (0, p._)(f._b.TEXT, m, true, t.id)
+            label: n,
+            action: () => (0, p._)(f._b.TEXT, o, true, t.id)
           }, "APP_LAUNCHER");
         case P.r.ACTIVITY:
           return (0, r.jsx)(s.sNh, {
             id: "activity",
-            label: i,
-            action: X,
+            label: n,
+            action: q,
             hint: (0, r.jsx)(D, {})
           }, "activity");
         case P.r.SCHEDULED_MESSAGE:
           return (0, r.jsx)(s.sNh, {
             id: "scheduled_message",
-            label: i,
+            label: n,
             action: () => (0, y.$f)({
               channel: t
             }),
-            children: V
+            children: H
           }, "scheduled_message");
         case P.r.SUMMARIZE_THREAD:
           return (0, r.jsx)(s.sNh, {
             id: "summarize_thread",
-            label: i,
+            label: n,
             action: () => v.Z.summarizeThread(t),
-            icon: z ? (0, r.jsx)(s.$jN, {
+            icon: V ? (0, r.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
-            disabled: z,
-            children: z ? null : (0, r.jsxs)(r.Fragment, {
+            disabled: V,
+            children: V ? null : (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(s.sNh, {
                 id: "summarize_thread_for_everyone",
                 label: A.intl.string(A.t.eCzSdd),

@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 886794, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,11 +32,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk199912 = require("./199912.js"),
   Chunk9113 = require("./9113.js");
 
-function C(e) {
+function _(e) {
   var n;
   let {
     user: t,
-    guildId: C,
+    guildId: _,
     channelId: S,
     messageId: w,
     roleId: D,
@@ -45,7 +45,7 @@ function C(e) {
     openedAt: M,
     onClose: B,
     sourceAnalyticsLocations: U = []
-  } = e, k = C === T.ME ? true : C, G = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), V = (0, c.Dt)(), {
+  } = e, k = _ === N.ME ? true : _, G = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), V = (0, c.Dt)(), {
     analyticsLocations: W
   } = (0, a.ZP)([...U, r.Z.USER_PROFILE_MODAL]), z = (0, f.ZB)({
     layout: "MODAL",
@@ -83,7 +83,7 @@ function C(e) {
           children: (0, l.jsxs)(g.Z, {
             user: t,
             displayProfile: G,
-            themeType: N.l.MODAL,
+            themeType: T.l.MODAL,
             ref: (null == G ? true : G.profileEffect) != null ? H : true,
             children: [(0, l.jsx)(Z.Z, {
               children: (0, l.jsx)(y.Z, {
@@ -93,7 +93,7 @@ function C(e) {
               children: [(0, l.jsx)(h.Z, {
                 user: t,
                 displayProfile: G,
-                themeType: N.l.MODAL
+                themeType: T.l.MODAL
               }), (0, l.jsx)("div", {
                 className: P.headerInner,
                 children: (0, l.jsx)(p.Z, {
@@ -101,7 +101,7 @@ function C(e) {
                   displayProfile: G,
                   guildId: k,
                   channelId: S,
-                  themeType: N.l.MODAL
+                  themeType: T.l.MODAL
                 })
               })]
             }), (0, l.jsxs)("div", {
@@ -115,18 +115,18 @@ function C(e) {
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(x.Z, {
                   displayProfile: G,
-                  themeType: N.l.MODAL,
+                  themeType: T.l.MODAL,
                   onClose: B
                 })
               }), (0, l.jsxs)("div", {
-                className: _.container,
+                className: C.container,
                 children: [(0, l.jsx)(o.njP, {
-                  className: _.tabBar,
+                  className: C.tabBar,
                   type: "top",
                   selectedItem: O.oh.BOT_INFO,
-                  onItemSelect: T.dG4,
+                  onItemSelect: N.dG4,
                   children: (0, l.jsx)(o.njP.Item, {
-                    className: _.tabBarItem,
+                    className: C.tabBarItem,
                     id: O.oh.BOT_INFO,
                     "aria-label": A.intl.string(A.t.jGoPJT),
                     children: (0, l.jsx)(o.Text, {

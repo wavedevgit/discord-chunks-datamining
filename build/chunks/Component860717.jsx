@@ -334,7 +334,7 @@ function W(e) {
       })]
     }), (0, b.d)(i) ? (0, r.jsx)("div", {
       className: k.heroImageContainer,
-      children: (0, r.jsx)(S.ZP, {
+      children: (0, r.jsx)(E.ZP, {
         src: i.proxyUrl,
         alt: "",
         width: i.width,
@@ -397,7 +397,7 @@ function q(e) {
   } = e, l = (0, x._)(), o = (0, b.d)(n) ? (0, r.jsx)("div", {
     className: a()(k.image, l.className),
     "data-position": i,
-    children: (0, r.jsx)(S.ZP, {
+    children: (0, r.jsx)(E.ZP, {
       src: n.proxyUrl,
       alt: "",
       width: n.width,
@@ -528,7 +528,7 @@ let $ = Object.assign(function(e) {
     trackEntryPointImpression: true
   }), {
     fetched: I,
-    hasAlreadyLinked: S,
+    hasAlreadyLinked: E,
     canStartAuthorization: G,
     startAuthorization: F
   } = (0, p.FG)(O), {
@@ -540,7 +540,7 @@ let $ = Object.assign(function(e) {
     }), F({
       analyticsLocations: U
     }))
-  }, [G, F, t, l.applicationId, U]), H = null == o && I && !S && G, z = (0, r.jsxs)(r.Fragment, {
+  }, [G, F, t, l.applicationId, U]), H = null == o && I && !E && G, z = (0, r.jsxs)(r.Fragment, {
     children: [null != v ? (0, r.jsx)("img", {
       className: k.appIcon,
       src: v,
@@ -568,9 +568,9 @@ let $ = Object.assign(function(e) {
     components: $
   } = function(e, t) {
     let n = (0, m.Z)(),
-      r = (0, s.e7)([E.Z], () => E.Z.getUserIdentityByApplication(e, t)),
+      r = (0, s.e7)([S.Z], () => S.Z.getUserIdentityByApplication(e, t)),
       l = (0, s.e7)([Z.Z], () => Z.Z.getApplicationWidgetConfig(t)),
-      a = (0, s.e7)([E.Z, Z.Z], () => null == E.Z.getUserIdentities(e) || null == Z.Z.applicationWidgetConfigs),
+      a = (0, s.e7)([S.Z, Z.Z], () => null == S.Z.getUserIdentities(e) || null == Z.Z.applicationWidgetConfigs),
       o = i.useMemo(() => {
         var e, t, i, a, o, s, u, d, f;
         if (null == l) return null;

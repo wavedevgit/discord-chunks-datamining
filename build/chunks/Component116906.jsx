@@ -32,24 +32,24 @@ function Z(e) {
     guildId: Z,
     onClose: O
   } = e, {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: N
   } = (0, r.U)({
     location: "UserProfileModalActivity"
   }), {
-    live: N,
+    live: T,
     recent: A,
     stream: P
   } = (0, u.Z)(n.id), {
     voiceChannel: E,
-    voiceActivity: _
+    voiceActivity: C
   } = (0, f.Z)({
     userId: n.id,
     guildId: Z
-  }), C = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), S = n.id === t.id, w = (0, i.e7)([s.Z, c.Z], () => {
+  }), _ = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), S = n.id === t.id, w = (0, i.e7)([s.Z, c.Z], () => {
     let e = S ? s.Z.getStatus() : c.Z.getStatus(n.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), D = N.length > 0 || null != P, L = T && null == P && null == _ && null != E, R = !w && (D || L), M = A.length > 0;
-  return R || M || !C ? (0, l.jsxs)(o.zJl, {
+  }), D = T.length > 0 || null != P, L = N && null == P && null == C && null != E, R = !w && (D || L), M = A.length > 0;
+  return R || M || !_ ? (0, l.jsxs)(o.zJl, {
     className: I.scroller,
     fade: true,
     children: [R ? (0, l.jsx)(m.Z, {
@@ -63,7 +63,7 @@ function Z(e) {
             stream: P,
             onClose: O
           })
-        }), N.map((e, i) => (0, l.jsx)("li", {
+        }), T.map((e, i) => (0, l.jsx)("li", {
           children: (0, l.jsx)(p.Z, {
             user: n,
             currentUser: t,

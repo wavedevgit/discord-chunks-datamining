@@ -73,7 +73,7 @@ function y(e) {
           "aria-label": m.intl.string(m.t["En+D+u"]),
           className: b.tab,
           children: [m.intl.string(m.t["En+D+u"]), (null == p ? true : p.badgeForYou) ? (0, r.jsx)(o.fWl, {
-            color: a.Z.colors.STATUS_DANGER.css,
+            color: a.Z.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
             className: b.iconBadge
           }) : null]
         }), (0, r.jsx)(o.njP.Item, {

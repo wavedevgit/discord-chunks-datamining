@@ -111,7 +111,7 @@ let k = Chunk473749.memo(function(e) {
     id: el,
     parentId: ea
   } = L, eo = null != (t = e.upperBadge) ? t : Y ? (0, Z.Ny)() : null != K ? (0, Z.Or)(K) : true, es = null != (n = e.lowerBadge) ? n : true;
-  null == es && q > 0 ? es = null != (l = (0, Z.Ne)(q, X ? p.TVs.colors.BACKGROUND_ACCENT.css : p.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (h = (0, Z.jt)({
+  null == es && q > 0 ? es = null != (l = (0, Z.Ne)(q, X ? p.TVs.colors.BACKGROUND_ACCENT.css : p.TVs.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css)) ? l : true : null == es && null != et && (es = null != (h = (0, Z.jt)({
     guildJoinRequestStatus: et
   })) ? h : true);
   let ec = null != (k = e.lowerBadgeSize) ? k : {

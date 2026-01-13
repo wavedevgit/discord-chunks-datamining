@@ -32,8 +32,8 @@ function w(e) {
     user: t,
     currentUser: n,
     displayProfile: w,
-    guildId: S,
-    channelId: E,
+    guildId: E,
+    channelId: S,
     onClose: T
   } = e, {
     voiceActivityStatusEnabled: _
@@ -48,7 +48,7 @@ function w(e) {
     voiceActivity: D
   } = (0, g.Z)({
     userId: t.id,
-    guildId: S
+    guildId: E
   }), k = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, L = (0, i.e7)([u.Z, s.Z], () => {
     let e = R ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
@@ -74,8 +74,8 @@ function w(e) {
       onClose: T
     }) : (0, r.jsx)(j.P9, {
       user: t,
-      guildId: null != (U = null == w ? true : w.guildId) ? U : S,
-      channelId: E,
+      guildId: null != (U = null == w ? true : w.guildId) ? U : E,
+      channelId: S,
       onClose: T
     })
   }

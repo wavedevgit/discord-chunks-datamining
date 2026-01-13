@@ -242,6 +242,25 @@ let {
         opacity: .0784313725490196
       }
     },
+    BACKGROUND_FEEDBACK_NOTIFICATION: {
+      category: "background",
+      [r.DARK]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "RED_400",
+        opacity: 1
+      }
+    },
     BACKGROUND_FEEDBACK_POSITIVE: {
       category: "background",
       [r.DARK]: {
@@ -563,6 +582,25 @@ let {
         opacity: 1
       }
     },
+    BADGE_NOTIFICATION_BACKGROUND: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "RED_400",
+        opacity: 1
+      }
+    },
     BG_SURFACE_OVERLAY_TMP: {
       category: "background",
       [r.DARK]: {
@@ -676,6 +714,25 @@ let {
       [r.DARKER]: {
         raw: "PLUM_18",
         opacity: .96
+      }
+    },
+    BORDER_FEEDBACK_CRITICAL: {
+      category: "border",
+      [r.DARK]: {
+        raw: "OPACITY_RED_20",
+        opacity: .2
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_RED_24",
+        opacity: .23921568627450981
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_RED_24",
+        opacity: .23921568627450981
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_RED_20",
+        opacity: .2
       }
     },
     BORDER_FOCUS: {
@@ -2058,6 +2115,25 @@ let {
         opacity: 1
       }
     },
+    ICON_FEEDBACK_NOTIFICATION: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "RED_400",
+        opacity: 1
+      }
+    },
     ICON_FEEDBACK_POSITIVE: {
       category: "generic",
       [r.DARK]: {
@@ -2246,6 +2322,25 @@ let {
       [r.DARKER]: {
         raw: "TRANSPARENT",
         opacity: 0
+      }
+    },
+    ICON_VOICE_MUTED: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "RED_400",
+        opacity: 1
       }
     },
     INPUT_BACKGROUND_DEFAULT: {

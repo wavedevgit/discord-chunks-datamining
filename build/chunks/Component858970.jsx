@@ -48,28 +48,28 @@ function Z(e) {
     guildId: t,
     channelId: Z,
     messageId: O,
-    roleId: T,
-    transitionState: N,
+    roleId: N,
+    transitionState: T,
     openedAt: A,
     onHide: P,
     sourceAnalyticsLocations: E = []
-  } = e, _ = t === v.ME ? true : t, C = (0, i.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
+  } = e, C = t === v.ME ? true : t, _ = (0, i.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
     analyticsLocations: S
-  } = (0, a.ZP)([...E, C ? r.Z.BLOCKED_PROFILE_MODAL : r.Z.IGNORED_PROFILE_MODAL]), w = (0, u.ZB)({
+  } = (0, a.ZP)([...E, _ ? r.Z.BLOCKED_PROFILE_MODAL : r.Z.IGNORED_PROFILE_MODAL]), w = (0, u.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     showGuildProfile: true,
-    guildId: _,
+    guildId: C,
     channelId: Z,
     messageId: O,
-    roleId: T
+    roleId: N
   }), D = [{
     icon: o.owK,
     description: g.intl.string(g.t.kcuWva)
   }, {
     icon: o.owK,
-    description: g.intl.string(C ? g.t.QxrDY1 : g.t.W6fjkS)
-  }], L = (0, m.ZP)(n.id, _), R = d.ZP.getName(null == L ? true : L.guildId, Z, n), M = g.intl.formatToPlainString(g.t.KRe1Fk, {
+    description: g.intl.string(_ ? g.t.QxrDY1 : g.t.W6fjkS)
+  }], L = (0, m.ZP)(n.id, C), R = d.ZP.getName(null == L ? true : L.guildId, Z, n), M = g.intl.formatToPlainString(g.t.KRe1Fk, {
     name: R
   });
   return (0, l.jsx)(a.Gt, {
@@ -82,7 +82,7 @@ function Z(e) {
       isLoaded: null == L ? true : L.isLoaded,
       children: (0, l.jsx)(o.Y0X, {
         "data-migration-pending": true,
-        transitionState: N,
+        transitionState: T,
         className: I.root,
         "aria-label": M,
         parentComponent: "RestrictedUserProfileModalV2",
@@ -96,7 +96,7 @@ function Z(e) {
             className: I.content,
             children: [(0, l.jsx)(p.Z, {
               user: n,
-              guildId: _
+              guildId: C
             }), (0, l.jsxs)("div", {
               className: I.textContainer,
               children: [(0, l.jsx)(o.Heading, {
@@ -106,7 +106,7 @@ function Z(e) {
               }), (0, l.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: g.intl.format(C ? g.t.T7QiLn : g.t.MnEowy, {
+                children: g.intl.format(_ ? g.t.T7QiLn : g.t.MnEowy, {
                   username: R
                 })
               })]
@@ -128,10 +128,10 @@ function Z(e) {
               align: "center",
               children: [(0, l.jsx)(j.Z, {
                 size: "md",
-                isBlocked: C,
+                isBlocked: _,
                 onClick: () => {
                   P(), (0, f.pQ)(y({
-                    action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                    action: _ ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: S
                   }, w))
                 }

@@ -29,7 +29,7 @@ function y(e) {
     disableInteraction: y = false
   } = e, h = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = h.length > 0, P = o.qH, I = l && !y && (0, f.M8)(c) && h.length < P, {
     trackUserProfileAction: w
-  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [_, C] = (0, i.useState)(0), [N, Z] = (0, i.useState)(false), A = x(E, T, h, S, C);
+  } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [_, C] = (0, i.useState)(0), [N, Z] = (0, i.useState)(false), A = x(S, T, h, E, C);
   if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
       window.removeEventListener("resize", A)
     }), [A, null == h ? true : h.join("")]), !O && !I) return null;
@@ -46,12 +46,12 @@ function y(e) {
           applicationId: s,
           widgetType: c,
           ref: t => {
-            null != t && S.current.set(e, t)
+            null != t && E.current.set(e, t)
           },
           disableInteraction: y
         }, e))
       }), _ > 0 && (0, r.jsx)(v, {
-        buttonRef: E,
+        buttonRef: S,
         isExpanded: N,
         numberOfOverflowingTags: _,
         onExpandTags: () => {

@@ -46,7 +46,7 @@ function y(e) {
         x(e) ? (0, a.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("84722"), n.e("58923")]).then(n.bind(n, 296864));
+          } = await Promise.all([n.e("84722"), n.e("5992")]).then(n.bind(n, 296864));
           return n => {
             var i, l;
             return (0, r.jsx)(t, (i = function(e) {

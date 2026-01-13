@@ -1,7 +1,7 @@
 /** Chunk was on 90220 **/
 /** chunk id: 418225, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => u
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,7 +13,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk69901 = require("./69901.js"),
   Chunk490962 = require("./490962.js");
 
-function u(t) {
+function x(t) {
   let {
     header: e,
     body: s
@@ -25,13 +25,13 @@ function u(t) {
       className: o.bulletImage,
       src: d
     }), (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(n.Text, {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "text-default",
         children: e
-      }), (0, r.jsx)(n.LZC, {
+      }), (0, r.jsx)(l.LZC, {
         size: 4
-      }), (0, r.jsx)(n.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: s
@@ -40,22 +40,22 @@ function u(t) {
   })
 }
 
-function x(t) {
+function u(t) {
   let {
     guildId: e,
     demonetized: s,
     transitionState: o,
     onClose: d
-  } = t, [x, {
+  } = t, [u, {
     loading: m,
     error: h
-  }] = (0, i.Z)(s ? a.$J : a.hY), p = async () => {
+  }] = (0, n.Z)(s ? a.$J : a.hY), p = async () => {
     try {
-      let t = await x(e);
+      let t = await u(e);
       null != t && (null == d || d())
     } catch (t) {}
   };
-  return (0, r.jsx)(l.Modal, {
+  return (0, r.jsx)(i.Modal, {
     size: "md",
     transitionState: o,
     actions: [{
@@ -71,11 +71,11 @@ function x(t) {
     title: c.intl.string(c.t.TP4GSt),
     onClose: d,
     preview: (0, r.jsxs)(r.Fragment, {
-      children: [null == h ? null : (0, r.jsxs)(n.Text, {
+      children: [null == h ? null : (0, r.jsxs)(l.Text, {
         variant: "text-xs/normal",
-        color: "status-danger",
+        color: "text-feedback-critical",
         children: ["Error: ", h.message]
-      }), (0, r.jsx)(n.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: c.intl.format(c.t["+oNl6x"], {
@@ -86,12 +86,12 @@ function x(t) {
     subtitle: c.intl.format(c.t.c0IsON, {
       termsURL: "https://support.discord.com/hc/en-us/articles/5330075836311-Creator-Pilot-Terms"
     }),
-    children: (0, r.jsxs)(n.Kqy, {
+    children: (0, r.jsxs)(l.Kqy, {
       gap: 16,
-      children: [(0, r.jsx)(u, {
+      children: [(0, r.jsx)(x, {
         header: c.intl.string(c.t.UzDaWD),
         body: c.intl.string(c.t.IDk8Fz)
-      }), (0, r.jsx)(u, {
+      }), (0, r.jsx)(x, {
         header: c.intl.string(c.t["36/RiT"]),
         body: c.intl.string(c.t.CBzNtr)
       })]
