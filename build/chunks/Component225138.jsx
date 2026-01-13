@@ -104,20 +104,19 @@ function et(e) {
     v = b,
     j = b.getAttribute("data-type"),
     S = b.getAttribute("data-id"),
-    E = b.getAttribute("data-name"),
-    P = b.getAttribute("data-id");
+    E = b.getAttribute("data-name");
   if (null != p) o = i = s = p.url;
   else
     for (;
       (0, l.kK)(v);)(0, l.kK)(v, HTMLImageElement) && null != v.src && (o = v.src), (0, l.kK)(v, HTMLAnchorElement) && null != v.href && (i = v.href, d = v.textContent, null == o && "img" === v.getAttribute("data-role") && (o = i, v.hasAttribute("data-safe-src") && "" !== v.getAttribute("data-safe-src") && (s = v.getAttribute("data-safe-src")))), v = v.parentNode;
-  let T = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
+  let P = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
   return (0, r.jsx)(u.Gt, {
     value: h,
     children: en({
       message: g,
       channel: f,
       mediaItem: p,
-      textSelection: T,
+      textSelection: P,
       favoriteableType: j,
       favoriteableId: S,
       favoriteableName: E,
@@ -125,7 +124,6 @@ function et(e) {
       itemSrc: o,
       itemSafeSrc: s,
       itemTextContent: d,
-      emojiId: P,
       canReport: true,
       onHeightUpdate: y,
       onSelect: O,
@@ -150,21 +148,20 @@ function en(e) {
     itemSrc: er,
     itemSafeSrc: ei,
     itemTextContent: el,
-    emojiId: eo,
-    canReport: ea,
-    onHeightUpdate: es,
-    onSelect: ec,
-    onClose: eu,
-    navId: ed,
-    ariaLabel: ef,
-    shouldHideMediaOptions: eg = false
-  } = e, eb = i.useRef(null);
+    canReport: eo,
+    onHeightUpdate: ea,
+    onSelect: es,
+    onClose: ec,
+    navId: eu,
+    ariaLabel: ed,
+    shouldHideMediaOptions: ef = false
+  } = e, eg = i.useRef(null);
   i.useEffect(() => {
-    eb.current = Date.now()
+    eg.current = Date.now()
   }, []), i.useEffect(() => () => {
-    if (null != eb.current) {
+    if (null != eg.current) {
       var e;
-      let r = Date.now() - eb.current;
+      let r = Date.now() - eg.current;
       v.default.track(W.rMx.MESSAGE_MENU_TIME_TO_CLOSE, {
         time_to_close_ms: r,
         channel_id: n.id,
@@ -173,10 +170,10 @@ function en(e) {
       })
     }
   }, [n, t]);
-  let ep = i.useCallback(() => {
-      if (null != eb.current) {
+  let eb = i.useCallback(() => {
+      if (null != eg.current) {
         var e;
-        let r = Date.now() - eb.current;
+        let r = Date.now() - eg.current;
         v.default.track(W.rMx.MESSAGE_MENU_TIME_TO_SELECT, {
           time_to_first_click_ms: r,
           channel_id: n.id,
@@ -184,20 +181,20 @@ function en(e) {
           message_id: t.id
         })
       }
-      null == ec || ec()
-    }, [ec, n, t]),
+      null == es || es()
+    }, [es, n, t]),
     {
-      forceIconsLeft: em,
-      reorderMessageMenuItems: eO
+      forceIconsLeft: ep,
+      reorderMessageMenuItems: em
     } = (0, d.d)("MessageContextMenu"),
     {
-      tidaWebformEnabled: ey
+      tidaWebformEnabled: eO
     } = g.Z.useExperiment({
       location: "MessageContextMenu"
     }, {
       autoTrackExposure: false
     }),
-    eh = (e, t) => {
+    ey = (e, t) => {
       var n;
       return function e(t, n, r, l) {
         var o;
@@ -242,193 +239,193 @@ function en(e) {
           iconLeft: g,
           children: f
         })) : t
-      }(e, null == t ? true : t.iconToAdd, null != (n = null == t ? true : t.removeIcon) ? n : eO, em)
+      }(e, null == t ? true : t.iconToAdd, null != (n = null == t ? true : t.removeIcon) ? n : em, ep)
     },
-    ev = (0, L.Z)(t, n),
-    ej = eh((0, b.Z)(a), {
+    eh = (0, L.Z)(t, n),
+    ev = ey((0, b.Z)(a), {
       iconToAdd: o.TIy
     }),
-    eS = eh((0, I.Z)(t, n, a), {
+    ej = ey((0, I.Z)(t, n, a), {
       iconToAdd: o.TIy
     }),
-    eE = eh((0, O.Z)(a), {
+    eS = ey((0, O.Z)(a), {
       iconToAdd: o._Ve
     }),
-    eP = eh((0, P.Z)(t, n), {
+    eE = ey((0, P.Z)(t, n), {
       iconToAdd: o.UZo,
       removeIcon: false
     }),
-    eT = eh((0, N.Z)(t, n), {
+    eP = ey((0, N.Z)(t, n), {
       removeIcon: false
     }),
-    eI = eh((0, F.Z)(t, n), {
+    eT = ey((0, F.Z)(t, n), {
       removeIcon: false
     }),
-    e_ = eh((0, M.Z)(t, n), {
+    eI = ey((0, M.Z)(t, n), {
       removeIcon: false
     }),
-    eZ = eh((0, K.Z)(t, n), {
+    e_ = ey((0, K.Z)(t, n), {
       removeIcon: false
     }),
-    ex = eh((0, Z.Z)(t)),
-    ew = eh((0, V.Z)(t, n), {
+    eZ = ey((0, Z.Z)(t)),
+    ex = ey((0, V.Z)(t, n), {
       iconToAdd: o.os0
     }),
-    eN = eh((0, C.Z)(t, n)),
-    eA = eh((0, S.Z)(t), {
+    ew = ey((0, C.Z)(t, n)),
+    eN = ey((0, S.Z)(t), {
       iconToAdd: o.plf
     }),
-    eM = eh((0, h.Z)({
+    eA = ey((0, h.Z)({
       commandType: s.yU.MESSAGE,
       commandTargetId: t.id,
       channel: n,
       guildId: true,
-      onHeightUpdate: es
+      onHeightUpdate: ea
     }), {
       iconToAdd: o.jje
     }),
-    eD = eh((0, H.Z)(t, n), {
+    eM = ey((0, H.Z)(t, n), {
       iconToAdd: o.DuK
     }),
-    eC = eh((0, D.Z)(t, n)),
-    eL = eh((0, T.Z)(t, n)),
-    ek = eh((0, _.Z)(t, n)),
-    eR = eh((0, B.Z)(t, n)),
-    eG = eh((0, k.Z)(t), {
+    eD = ey((0, D.Z)(t, n)),
+    eC = ey((0, T.Z)(t, n)),
+    eL = ey((0, _.Z)(t, n)),
+    ek = ey((0, B.Z)(t, n)),
+    eR = ey((0, k.Z)(t), {
       removeIcon: false
     }),
-    eU = eh((0, E.Z)(t, n)),
-    eF = eh((0, y.Z)(t)),
-    ez = eh((0, X.Z)(t), {
+    eG = ey((0, E.Z)(t, n)),
+    eU = ey((0, y.Z)(t)),
+    eF = ey((0, X.Z)(t), {
       iconToAdd: o.T39
     }),
-    eH = eh((0, U.Z)(t, n), {
+    ez = ey((0, U.Z)(t, n), {
       iconToAdd: o.STQ,
       removeIcon: false
     }),
-    eB = eh((0, R.Z)(t, n), {
+    eH = ey((0, R.Z)(t, n), {
       iconToAdd: o.STQ,
       removeIcon: false
     }),
-    eK = eh((0, x.Z)(t, n), {
+    eB = ey((0, x.Z)(t, n), {
       removeIcon: false
     }),
-    eV = eh((0, z.ZP)(t), {
+    eK = ey((0, z.ZP)(t), {
       removeIcon: false
     }),
-    eX = eh((0, z.eH)(t), {
+    eV = ey((0, z.eH)(t), {
       removeIcon: false
     }),
-    eQ = eh((0, z.wY)(t), {
+    eX = ey((0, z.wY)(t), {
       iconToAdd: o.U65,
       removeIcon: false
     }),
-    eq = eh((0, A.Z)({
+    eQ = ey((0, A.Z)({
       type: c,
       id: u,
       name: et
     }), {
       iconToAdd: o.r7p
     }),
-    eJ = eh((0, j.Z)(a, n.getGuildId()), {
+    eJ = ey((0, j.Z)(a, n.getGuildId()), {
       iconToAdd: o.b7C
     }),
-    eW = eh((0, p.Z)(ei, t, {
-      shouldHideMediaOptions: eg,
+    eq = ey((0, p.Z)(ei, t, {
+      shouldHideMediaOptions: ef,
       contentType: null == l ? true : l.contentType,
       originalContentType: null == l ? true : l.originalContentType
     }), {
       iconToAdd: o.XBm
     }),
-    eY = eh((0, Q.Z)(t, l)),
-    e$ = eh((0, q.Z)(t)),
-    e0 = eh((0, J.Z)(l, {
-      shouldHideMediaOptions: eg
+    eW = ey((0, Q.Z)(t, l)),
+    eY = ey((0, J.Z)(t)),
+    e$ = ey((0, q.Z)(l, {
+      shouldHideMediaOptions: ef
     }), {
       iconToAdd: o.d3s
     }),
-    e4 = eh((0, m.Z)(null != en ? en : er, el, t, {
-      shouldHideMediaOptions: eg
+    e0 = ey((0, m.Z)(null != en ? en : er, el, t, {
+      shouldHideMediaOptions: ef
     }), {
       iconToAdd: o.xPt
     }),
-    e8 = eh((0, f.Z)({
+    e4 = ey((0, f.Z)({
       id: t.id,
       label: Y.intl.string(Y.t.zBoHlf),
       shiftId: "".concat(t.channel_id, "-").concat(t.id)
     })),
-    e1 = eh((0, w.Z)({
+    e8 = ey((0, w.Z)({
       messageId: t.id,
-      emojiId: eo,
+      itemId: u,
       type: c,
       imageSrc: er
     })),
-    e3 = eh((0, G.Z)(t, n), {
+    e1 = ey((0, G.Z)(t, n), {
       iconToAdd: o.STQ,
       removeIcon: false
     }),
-    e7 = (0, r.jsx)(o.kSQ, {
-      children: null != e1 ? e1 : e8
+    e3 = (0, r.jsx)(o.kSQ, {
+      children: null != e8 ? e8 : e4
     }),
-    e9 = e => {
+    e7 = e => {
       let {
         includeLinks: t
       } = e;
       return (0, r.jsxs)(o.kSQ, {
-        children: [eq, eJ, eW, eY, e$, e0, t && e4]
+        children: [eQ, eJ, eq, eW, eY, e$, t && e0]
       })
     };
-  return eO ? (0, r.jsxs)(o.v2r, {
-    navId: ed,
-    onClose: eu,
-    "aria-label": ef,
-    onSelect: ep,
+  return em ? (0, r.jsxs)(o.v2r, {
+    navId: eu,
+    onClose: ec,
+    "aria-label": ed,
+    onSelect: eb,
     children: [(0, r.jsxs)(o.kSQ, {
-      children: ["" === a ? ev : null, eP, eG, eT, eI, e_, eZ]
+      children: ["" === a ? eh : null, eE, eR, eP, eT, eI, e_]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eU, eE, ew, eN, eA, eM, eD, eC, eL, eR, eF, ez]
+      children: [eG, eS, ex, ew, eN, eA, eM, eD, eC, ek, eU, eF]
     }), (0, r.jsx)(o.kSQ, {
-      children: eS
-    }), ey ? (0, r.jsxs)(r.Fragment, {
-      children: [e7, e9({
+      children: ej
+    }), eO ? (0, r.jsxs)(r.Fragment, {
+      children: [e3, e7({
         includeLinks: true
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [e9({
+      children: [e7({
         includeLinks: true
-      }), e7]
+      }), e3]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [e3, eK, ea && eV, ea && eX, eQ]
+      children: [e1, eB, eo && eK, eo && eV, eX]
     })]
   }) : (0, r.jsxs)(o.v2r, {
-    navId: ed,
-    onClose: eu,
-    "aria-label": ef,
-    onSelect: ep,
+    navId: eu,
+    onClose: ec,
+    "aria-label": ed,
+    onSelect: eb,
     children: [(0, r.jsx)(o.kSQ, {
-      children: ej
+      children: ev
     }), (0, r.jsx)(o.kSQ, {
-      children: eE
+      children: eS
     }), (0, r.jsxs)(o.kSQ, {
-      children: ["" === a ? ev : null, eP, eG, eU]
+      children: ["" === a ? eh : null, eE, eR, eG]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eT, eI, e_, eZ]
+      children: [eP, eT, eI, e_]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [ex, ew, eN, eA, eM, eD, eC, eL, ek, eR, eF, ez]
+      children: [eZ, ex, ew, eN, eA, eM, eD, eC, eL, ek, eU, eF]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eH, eB, eK, ea && eV, ea && eX, eQ]
-    }), ey ? (0, r.jsxs)(r.Fragment, {
-      children: [e7, e9({
+      children: [ez, eH, eB, eo && eK, eo && eV, eX]
+    }), eO ? (0, r.jsxs)(r.Fragment, {
+      children: [e3, e7({
         includeLinks: false
       }), (0, r.jsx)(o.kSQ, {
-        children: e4
+        children: e0
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [e9({
+      children: [e7({
         includeLinks: false
       }), (0, r.jsx)(o.kSQ, {
-        children: e4
-      }), e7]
+        children: e0
+      }), e3]
     })]
   })
 }

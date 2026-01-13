@@ -40,7 +40,9 @@ let v = e => e.preventDefault(),
 function N(e, t) {
   return i.cloneElement(e, {
     "data-type": "sticker",
-    "data-id": t
+    "data-id": t.id,
+    "data-name": t.name,
+    "data-format-type": t.format_type
   })
 }
 
@@ -145,7 +147,7 @@ let R = e => {
         children: N((0, r.jsx)("canvas", {
           className: O.lottieCanvas,
           ref: g
-        }), o.id)
+        }), o)
       })
     })
   },
@@ -201,7 +203,7 @@ let R = e => {
             onLoad: A,
             onContextMenu: v,
             ref: T
-          }), n.id)
+          }), n)
         })
       })
     })

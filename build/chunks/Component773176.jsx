@@ -105,7 +105,6 @@ function eu(e) {
     itemSrc: true,
     itemSafeSrc: true,
     itemTextContent: true,
-    emojiId: null,
     canReport: r,
     onHeightUpdate: l,
     onClose: i,

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
 function f(e) {
   let {
     messageId: t,
-    emojiId: n,
+    itemId: n,
     type: f,
     imageSrc: g
   } = e, b = s.Sb.useSetting(), {
@@ -33,8 +33,10 @@ function f(e) {
     null != g && (0, c.JG)(g)
   }, [g]), h = i.useCallback(() => {
     null != g && (0, o.Z)(g)
-  }, [g]);
-  return b && c.wS && p && "emoji" === f && null != n ? (0, r.jsxs)(l.sNh, {
+  }, [g]), v = "sticker" === f;
+  if (!b || !c.wS || !p || "emoji" !== f && !v || null == n) return null;
+  let j = v ? d.intl.string(d.t.SJ3249) : d.intl.string(d.t.Ap2oVy);
+  return (0, r.jsxs)(l.sNh, {
     id: "message-details",
     label: d.intl.string(d.t.IqqJNI),
     children: [(0, r.jsx)(l.sNh, {
@@ -43,8 +45,8 @@ function f(e) {
       action: m,
       icon: l.VuL
     }), (0, r.jsx)(l.sNh, {
-      id: "copy-emoji-id",
-      label: d.intl.string(d.t.Ap2oVy),
+      id: "copy-item-id",
+      label: j,
       action: O,
       icon: l.VuL
     }), null != g && (0, r.jsxs)(r.Fragment, {
@@ -60,5 +62,5 @@ function f(e) {
         icon: l.xPt
       })]
     })]
-  }) : null
+  })
 }
