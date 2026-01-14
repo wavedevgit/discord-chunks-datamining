@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 273596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => x
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,7 +47,7 @@ let S = Object.freeze({
     trailing: true
   });
 
-function P(e) {
+function x(e) {
   let {
     loadId: t,
     onGuildCardSeen: n,
@@ -56,13 +56,13 @@ function P(e) {
     guildIds: s,
     loading: f,
     searchResultsQuery: y,
-    loadMore: P,
-    searchCategoryId: x
+    loadMore: x,
+    searchCategoryId: P
   } = (0, b.f)({
     loadId: t
-  }), Z = 0 === s.length && !f, A = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), M = i.useRef(R), [k, U] = i.useState(3), G = i.useRef(k), H = i.useRef(null), B = i.useCallback(e => {
-    if (null != e && !Z && !f) 336 * (s.length / k) <= e.height && P()
-  }, [Z, f, s.length, k, P]), V = i.useCallback(e => {
+  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), M = i.useRef(R), [k, U] = i.useState(3), G = i.useRef(k), H = i.useRef(null), B = i.useCallback(e => {
+    if (null != e && !A && !f) 336 * (s.length / k) <= e.height && x()
+  }, [A, f, s.length, k, x]), V = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -79,11 +79,11 @@ function P(e) {
       searchId: w,
       query: y,
       guildResults: s.map(g.Z.getGuild).filter(p.lm),
-      analyticsContext: A,
-      categoryId: x
+      analyticsContext: Z,
+      categoryId: P
     })
-  }, [A, s, t, x, w, y]);
-  let z = i.useCallback(e => n(e, x), [n, x]),
+  }, [Z, s, t, P, w, y]);
+  let z = i.useCallback(e => n(e, P), [n, P]),
     Y = i.useMemo(() => f ? [s.length, 0] : [s.length], [s.length, f]),
     W = i.useCallback((e, n, i) => {
       switch (e) {
@@ -103,7 +103,7 @@ function P(e) {
               }), (0, r.jsx)(v.Z, {
                 loadId: t
               })]
-            }), Z && (0, r.jsx)(O.Z, {
+            }), A && (0, r.jsx)(O.Z, {
               loadId: t
             })]
           }, i);
@@ -114,18 +114,18 @@ function P(e) {
             })
           }, i)
       }
-    }, [Z, R, t]),
+    }, [A, R, t]),
     K = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
-          return Z ? t + 448 : t;
+          return A ? t + 448 : t;
         case 1:
           return 120;
         default:
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
-    }, [Z, R]),
+    }, [A, R]),
     q = i.useCallback((e, t) => {
       switch (e) {
         case 0:
@@ -162,12 +162,12 @@ function P(e) {
           style: n,
           children: (0, r.jsx)(I.ZP, {
             guildId: e,
-            onClick: async e => await J(e, t, x, N),
+            onClick: async e => await J(e, t, P, N),
             onView: e => z(e)
           })
         }, i)
       }
-    }, [s, J, z, x]);
+    }, [s, J, z, P]);
   i.useEffect(() => {
     let e = H.current;
     return () => {
@@ -197,10 +197,10 @@ function P(e) {
       let t = null == (e = H.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
-      t.scrollHeight - n < 240 && P()
+      t.scrollHeight - n < 240 && x()
     }, 100, {
       leading: true
-    }), [P]),
+    }), [x]),
     ee = R ? S : T;
   return (0, r.jsx)("div", {
     className: C.container,

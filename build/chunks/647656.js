@@ -101,26 +101,26 @@ let _ = ["1402418171662569542"],
         N > 0 && (E.flags = N);
         let {
           assets: j,
-          party: P,
-          secrets: x,
-          timestamps: Z,
-          buttons: A,
+          party: x,
+          secrets: P,
+          timestamps: A,
+          buttons: Z,
           type: w
         } = E;
-        if (null == w && (E.type = b.IIU.PLAYING), null != x) {
-          let e = i().values(x).filter(e => !!e);
-          if (null != P && i().intersection(e, [P.id]).length > 0 && !_.includes(a.application.id)) throw new g.Z({
+        if (null == w && (E.type = b.IIU.PLAYING), null != P) {
+          let e = i().values(P).filter(e => !!e);
+          if (null != x && i().intersection(e, [x.id]).length > 0 && !_.includes(a.application.id)) throw new g.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
           if (i().uniq(e).length < e.length) throw new g.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
-          if (null != A) throw new g.Z({
+          if (null != Z) throw new g.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
-        if (null != A && (v.button_urls = A.map(e => e.url), E.buttons = A.map(e => e.label)), E.metadata = v, null != Z)
-          for (let e of Object.keys(Z)) Date.now().toString().length - Z[e].toString().length > 2 && (Z[e] = Math.floor(Z[e] * f.Z.Millis.SECOND));
+        if (null != Z && (v.button_urls = Z.map(e => e.url), E.buttons = Z.map(e => e.label)), E.metadata = v, null != A)
+          for (let e of Object.keys(A)) Date.now().toString().length - A[e].toString().length > 2 && (A[e] = Math.floor(A[e] * f.Z.Millis.SECOND));
         if (null == j) l = Promise.resolve([]);
         else {
           if (null == a.application || null == a.application.id) throw Error();

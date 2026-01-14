@@ -187,15 +187,15 @@ function O(e) {
         src: m.Z.Header.Icon.Src.MULTIPLE
       })
     }
-  }(O), P = (0, p.Z)({
+  }(O), x = (0, p.Z)({
     applicationId: null == (i = O.currentActivities[0]) || null == (t = i.activity) ? true : t.application_id,
     location: "FriendsActivityFeed",
     source: d.m1.FriendsActivityFeed
-  }), x = (0, c.Z)({
+  }), P = (0, c.Z)({
     userId: S.user.id,
     guildId: null == C ? true : C.id
-  }), Z = (0, u.j)({
-    displayNameStyles: x
+  }), A = (0, u.j)({
+    displayNameStyles: P
   });
   return (0, r.jsx)(m.Z.Header, {
     priorityUser: S,
@@ -203,9 +203,9 @@ function O(e) {
     title: T,
     subtitle: N,
     icon: j,
-    onSubtitleClick: P,
-    onIconClick: P,
+    onSubtitleClick: x,
+    onIconClick: x,
     onContextMenu: e => v(e, S.user),
-    displayNameFont: 1 === y.length ? Z : true
+    displayNameFont: 1 === y.length ? A : true
   })
 }

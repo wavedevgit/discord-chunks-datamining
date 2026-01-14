@@ -245,7 +245,7 @@ let ea = e => {
           actions: [{
             text: $.intl.string($.t.JN6EOJ),
             onClick: e => {
-              e.stopPropagation(), (0, A.openUserSettings)(Z.n.CONTENT_AND_SOCIAL_PANEL, {
+              e.stopPropagation(), (0, Z.openUserSettings)(A.n.CONTENT_AND_SOCIAL_PANEL, {
                 section: Q.oAB.CONTENT_AND_SOCIAL,
                 scrollPosition: X.FY.MESSAGE_REQUESTS_V2
               }), l(J.L.TAKE_ACTION)
@@ -272,13 +272,13 @@ let es = (0, Chunk112724.Z)(function(e) {
     width: t
   } = e, n = (0, V.q)();
   (0, m.ZP)(() => {
-    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
+    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
-  let l = (0, c.e7)([x.Z], () => x.Z.theme),
+  let l = (0, c.e7)([P.Z], () => P.Z.theme),
     o = (0, z.w)(),
     [u, d] = i.useState(false),
     g = (0, c.e7)([w.ZP], () => {
@@ -293,7 +293,7 @@ let es = (0, Chunk112724.Z)(function(e) {
   i.useEffect(() => {
     null != h && !_ && E && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
   }, [h, E, b, _]);
-  let [I, y] = i.useState(q.pS.REQUESTS), Z = e => {
+  let [I, y] = i.useState(q.pS.REQUESTS), A = e => {
     y(e)
   };
   return (0, v.Tt)({
@@ -322,7 +322,7 @@ let es = (0, Chunk112724.Z)(function(e) {
             "aria-label": $.intl.string($.t.e7GWjQ),
             selectedItem: I,
             type: "top-pill",
-            onItemSelect: Z,
+            onItemSelect: A,
             children: [(0, r.jsx)(p.njP.Item, {
               id: q.pS.REQUESTS,
               className: ee.item,

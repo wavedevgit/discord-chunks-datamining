@@ -2,7 +2,7 @@
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => S,
-  eH: () => T,
+  eH: () => I,
   wY: () => P
 });
 var Chunk54381 = require("./54381.js");
@@ -29,7 +29,7 @@ var Chunk442837 = require("./442837.js"),
 function S(e) {
   let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
     n = (0, p.Q_)(t);
-  return (0, y.a4)(e) ? (0, r.jsx)(a.sNh, {
+  return (0, O.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
     label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
@@ -76,10 +76,10 @@ function P(e) {
   }) : null
 }
 
-function T(e) {
+function I(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
-    n = (0, i.e7)([O.default], () => O.default.getCurrentUser());
-  return (0, y.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
+    n = (0, i.e7)([y.default], () => y.default.getCurrentUser());
+  return (0, O.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
     action: () => (0, f.Jw)(e, "web_message_context_menu"),

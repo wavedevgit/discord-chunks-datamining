@@ -43,7 +43,7 @@ var Chunk243814 = require("./243814.js"),
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "",
     l = y.Z.getApplicationActivity(t);
-  if (null == l || null == l.secrets || !(0, Z.t9)(r, l.party, l.secrets)) throw new x.Z({
+  if (null == l || null == l.secrets || !(0, A.t9)(r, l.party, l.secrets)) throw new P.Z({
     errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
   let a = (0, m.Z)(l, C.Z);
@@ -52,7 +52,7 @@ async function U(e, t, n, r) {
       lock: t
     } = (0, R.jU)(e);
     return (0, c.h7)(l, a).then(() => {
-      throw t(), new x.Z({
+      throw t(), new P.Z({
         errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
       }, "No eligible activity for application. Ensure user does have have privacy enabled.")
     })
@@ -78,7 +78,7 @@ let G = {
           pid: r
         }
       } = e, i = t.application.id;
-      if (null == i) throw new x.Z({
+      if (null == i) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
       return U(r, i, n, M.mFx.JOIN)
@@ -105,7 +105,7 @@ let G = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
-    validation: e => (0, A.Z)(e).required().keys({
+    validation: e => (0, Z.Z)(e).required().keys({
       user_id: e.string().required(),
       type: e.number().required().valid([M.mFx.JOIN]),
       content: e.string().min(0).max(1024),
@@ -121,7 +121,7 @@ let G = {
           pid: l
         }
       } = e, a = t.application.id;
-      if (null == a) throw new x.Z({
+      if (null == a) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
       return U(l, a, r, n, i)
@@ -131,7 +131,7 @@ let G = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
-    validation: e => (0, A.Z)(e).required().keys({
+    validation: e => (0, Z.Z)(e).required().keys({
       type: e.number().required().valid([M.mFx.JOIN]),
       user_id: e.string().required(),
       session_id: e.string().required(),
@@ -151,7 +151,7 @@ let G = {
           application_id: o
         }
       } = e, s = t.transport === D.He.IPC && null != o ? o : t.application.id;
-      if (null == s) throw new x.Z({
+      if (null == s) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
       let c = Promise.resolve(false);
@@ -162,7 +162,7 @@ let G = {
         channelId: l,
         messageId: a
       })), c.then(e => {
-        if (!e) throw new x.Z({
+        if (!e) throw new P.Z({
           errorCode: M.lTL.INVALID_INVITE
         }, "Invite is expired or invalid.")
       })
@@ -176,7 +176,7 @@ let G = {
       let {
         socket: t
       } = e, i = t.application;
-      if (null == i.id) throw new x.Z({
+      if (null == i.id) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
       let {
@@ -189,13 +189,13 @@ let G = {
       }), d = null != u ? O.Z.getWindow(u) : true;
       (null == d ? true : d.closed) && (d = true);
       let p = null != d ? M.IlC.POPOUT : M.IlC.APP;
-      if ((0, P.Pr)({}, null == d ? true : d.document), null != s) {
-        if (s.applicationId !== i.id) throw new x.Z({
+      if ((0, x.Pr)({}, null == d ? true : d.document), null != s) {
+        if (s.applicationId !== i.id) throw new P.Z({
           errorCode: M.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
         let e = y.Z.getApplicationActivity(i.id);
         if (null != e)(0, c.h7)(e, false, p);
-        else throw new x.Z({
+        else throw new P.Z({
           errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity was set using setActivity.")
       } else(0, o.ZDy)(async () => {
@@ -252,7 +252,7 @@ let G = {
       let {
         socket: n
       } = e, r = n.application.id;
-      if (null == r) throw new x.Z({
+      if (null == r) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
       let i = null == (t = (0, w.Z)()) ? true : t.id;
@@ -265,7 +265,7 @@ let G = {
             let e = S.Z.getLastFocusedWindowId();
             n = null == e ? null : null == (r = (0, E.g0)(e)) ? true : r.renderWindow
           }
-          if (null == n) throw new x.Z({
+          if (null == n) throw new P.Z({
             errorCode: M.lTL.UNKNOWN_ERROR
           }, "No valid window found");
           let i = n.document.createElement("input");
@@ -288,7 +288,7 @@ let G = {
         }, () => t(Error("Upload canceled")))
       }).catch(e => {
         var t;
-        throw new x.Z({
+        throw new P.Z({
           errorCode: M.lTL.UNKNOWN_ERROR
         }, null != (t = null == e ? true : e.message) ? t : "Failed to upload image")
       })
@@ -306,16 +306,16 @@ let G = {
           mediaUrl: r
         }
       } = e;
-      (0, Z.bu)(n.transport);
+      (0, A.bu)(n.transport);
       let i = n.application.id;
-      if (null == i) throw new x.Z({
+      if (null == i) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
-      if (!(0, l.yE)(null != (t = n.application.flags) ? t : 0, M.udG.EMBEDDED)) throw new x.Z({
+      if (!(0, l.yE)(null != (t = n.application.flags) ? t : 0, M.udG.EMBEDDED)) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let a = (0, w.Z)();
-      if (!j.Z.isDiscordCdnUrl(r)) throw new x.Z({
+      if (!j.Z.isDiscordCdnUrl(r)) throw new P.Z({
         errorCode: M.lTL.INVALID_PAYLOAD
       }, "mediaUrl must be a Discord CDN url");
       (0, b.Z)({
@@ -344,17 +344,17 @@ let G = {
           }
         } = e,
         f = r.application.id;
-      if (null == f) throw new x.Z({
+      if (null == f) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
-      if (!k.Cr.includes(f)) throw new x.Z({
+      if (!k.Cr.includes(f)) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "Unsupported application.");
-      if (!(0, l.yE)(null != (t = r.application.flags) ? t : 0, M.udG.EMBEDDED)) throw new x.Z({
+      if (!(0, l.yE)(null != (t = r.application.flags) ? t : 0, M.udG.EMBEDDED)) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let g = (0, w.Z)();
-      if (null == g && c) throw new x.Z({
+      if (null == g && c) throw new P.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No channel found");
       if (null !== a || null !== s || null !== u) {

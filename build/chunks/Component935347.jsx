@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 935347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => P
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,7 +37,7 @@ function j(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class P extends Chunk473749.PureComponent {
+class x extends Chunk473749.PureComponent {
   createSound() {
     let {
       soundpack: e
@@ -228,7 +228,7 @@ class P extends Chunk473749.PureComponent {
     }, this._connectedSound.volume = 1
   }
 }
-let x = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z, Chunk607070.Z], () => ({
+let P = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z, Chunk607070.Z], () => ({
   isTryingToConnect: g.Z.isTryingToConnect(),
   connected: g.Z.isConnected(),
   incident: O.Z.getIncident(),
@@ -242,7 +242,7 @@ let x = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z
     soundpack: l,
     reducedMotion: a
   } = e;
-  return t ? (0, r.jsx)(P, {
+  return t ? (0, r.jsx)(x, {
     reducedMotion: a,
     soundpack: l,
     connected: n,

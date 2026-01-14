@@ -151,7 +151,6 @@ function P(e) {
     purchaseNotification: e.purchase_notification,
     poll: null == e.poll ? true : (0, s.Z)(e.poll),
     sharedClientTheme: e.shared_client_theme,
-    potions: e.potions,
     giftInfo: null == U ? true : U,
     giftingPrompt: G
   }))
@@ -175,7 +174,7 @@ function w(e, t) {
     var i;
     n = n.set("reactions", j(null != (i = e.reactions) ? i : t.reactions))
   }
-  return null != t.poll && (n = n.set("poll", (0, s.Z)(t.poll))), null != t.mentions && (n = n.set("mentions", t.mentions.map(e => e.id)), r = true), null != t.mention_games && (n = n.set("mentionGames", t.mention_games), r = true), null != t.mention_everyone && (n = n.set("mentionEveryone", t.mention_everyone), r = true), null != t.mention_roles && (n = n.set("mentionRoles", t.mention_roles), r = true), null != t.potions && (n = n.set("potions", t.potions)), r && (n = n.set("mentioned", (0, E.ZP)({
+  return null != t.poll && (n = n.set("poll", (0, s.Z)(t.poll))), null != t.mentions && (n = n.set("mentions", t.mentions.map(e => e.id)), r = true), null != t.mention_games && (n = n.set("mentionGames", t.mention_games), r = true), null != t.mention_everyone && (n = n.set("mentionEveryone", t.mention_everyone), r = true), null != t.mention_roles && (n = n.set("mentionRoles", t.mention_roles), r = true), r && (n = n.set("mentioned", (0, E.ZP)({
     message: n,
     userId: f.default.getId()
   }))), n

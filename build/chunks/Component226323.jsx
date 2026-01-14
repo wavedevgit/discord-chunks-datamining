@@ -48,7 +48,7 @@ function j(e) {
   return e
 }
 
-function P(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,10 +60,10 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let P = {
     offset: 2
   },
-  Z = {
+  A = {
     serverDeaf: {
       icon: Chunk481060.Vm4,
       colorize: true,
@@ -91,7 +91,7 @@ let x = {
     }
   };
 
-function A(e) {
+function Z(e) {
   var t, l;
   let p = i.useRef(null),
     {
@@ -99,21 +99,21 @@ function A(e) {
     } = (0, h.ZP)(),
     {
       channel: v,
-      user: A,
+      user: Z,
       nick: w,
       mute: L,
       deaf: R,
       serverMute: D,
       serverDeaf: M
     } = e,
-    k = (0, o.e7)([I.Z], () => I.Z.isLocalMute(A.id)),
+    k = (0, o.e7)([I.Z], () => I.Z.isLocalMute(Z.id)),
     U = (0, d.Z)({
-      userId: A.id,
+      userId: Z.id,
       checkSoundSharing: true
     }),
     G = null != (t = v.getGuildId()) ? t : true,
-    H = A.getAvatarURL(v.guild_id, 24),
-    B = null != w ? w : C.ZP.getName(A),
+    H = Z.getAvatarURL(v.guild_id, 24),
+    B = null != w ? w : C.ZP.getName(Z),
     {
       icon: V,
       colorize: F,
@@ -126,11 +126,11 @@ function A(e) {
         mute: i,
         localMute: l
       } = e;
-      if (t) return Z.serverDeaf;
-      if (n) return Z.deaf;
-      if (r) return Z.serverMute;
-      if (l) return Z.localMute;
-      if (i) return Z.mute
+      if (t) return A.serverDeaf;
+      if (n) return A.deaf;
+      if (r) return A.serverMute;
+      if (l) return A.localMute;
+      if (i) return A.mute
     }({
       serverDeaf: M,
       deaf: R,
@@ -148,29 +148,29 @@ function A(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("4040"), n.e("92524"), n.e("7717"), n.e("9393")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, P(j({}, t), {
-        user: A,
+      return t => (0, r.jsx)(e, x(j({}, t), {
+        user: Z,
         guildId: G,
         channel: v,
         showMediaItems: true,
         onInteraction: (0, _.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
-          targetUserId: A.id
+          targetUserId: Z.id
         })
       }))
     }) : (0, u.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220"), n.e("18030")]).then(n.bind(n, 881351));
-      return t => (0, r.jsx)(e, P(j({}, t), {
-        user: A,
+      return t => (0, r.jsx)(e, x(j({}, t), {
+        user: Z,
         showMediaItems: true,
         onInteraction: (0, _.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
-          targetUserId: A.id
+          targetUserId: Z.id
         })
       }))
     })
   }
-  let K = (0, o.e7)([y.Z], () => y.Z.getVoiceVolume(A.id)),
+  let K = (0, o.e7)([y.Z], () => y.Z.getVoiceVolume(Z.id)),
     q = (0, m._)({
       isSpeaking: U,
       voiceDb: K,
@@ -179,7 +179,7 @@ function A(e) {
     });
   return (0, r.jsx)(O.Z, {
     targetElementRef: p,
-    user: A,
+    user: Z,
     guildId: G,
     channelId: v.id,
     position: "top",
@@ -193,7 +193,7 @@ function A(e) {
         },
         className: N.avatarContainer,
         onContextMenu: W,
-        focusProps: x,
+        focusProps: P,
         children: (0, r.jsx)(E.Z, {
           shakeLocation: S.oZ.VOICE_USER,
           isShaking: U,
@@ -272,7 +272,7 @@ function w(e) {
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== g ? (0, r.jsx)(A, {
+        return t.id !== g ? (0, r.jsx)(Z, {
           channel: n,
           user: t,
           nick: i,

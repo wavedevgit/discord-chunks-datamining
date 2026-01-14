@@ -898,8 +898,8 @@ let {
         opacity: .3607843137254902
       },
       [r.MIDNIGHT]: {
-        raw: "OPACITY_20",
-        opacity: .2
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
       },
       [r.DARKER]: {
         raw: "OPACITY_20",
@@ -5642,8 +5642,8 @@ let {
         opacity: .3607843137254902
       },
       [r.MIDNIGHT]: {
-        raw: "OPACITY_20",
-        opacity: .2
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
       },
       [r.DARKER]: {
         raw: "OPACITY_20",
@@ -5680,8 +5680,8 @@ let {
         opacity: .3607843137254902
       },
       [r.MIDNIGHT]: {
-        raw: "OPACITY_20",
-        opacity: .2
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
       },
       [r.DARKER]: {
         raw: "OPACITY_20",

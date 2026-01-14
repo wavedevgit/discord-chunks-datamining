@@ -88,12 +88,12 @@ let V = Chunk473749.memo(function() {
     enabled: H
   } = g.c.useConfig({
     location: "AppTitleBar"
-  }), V = (0, s.e7)([w.Z], () => w.Z.isDeveloper), F = (0, s.e7)([L.Z, d.Z], () => A.Sb.getSetting() && null != L.Z.testModeApplicationId && null != d.Z.getApplication(L.Z.testModeApplicationId) && (0, p.Z)(d.Z.getApplication(L.Z.testModeApplicationId))), z = null !== e && t === N.u3.TITLE_BAR_LEFT, Y = null === e;
+  }), V = (0, s.e7)([w.Z], () => w.Z.isDeveloper), F = (0, s.e7)([L.Z, d.Z], () => Z.Sb.getSetting() && null != L.Z.testModeApplicationId && null != d.Z.getApplication(L.Z.testModeApplicationId) && (0, p.Z)(d.Z.getApplication(L.Z.testModeApplicationId))), z = null !== e && t === N.u3.TITLE_BAR_LEFT, Y = null === e;
   i.useLayoutEffect(() => {
     D.ZP.setMinimumSize(U.J, U.N)
   }, []);
-  let W = (0, Z.Ll)(),
-    K = (0, s.e7)([R.Z, P.Z], () => (0, M.rB)()),
+  let W = (0, A.Ll)(),
+    K = (0, s.e7)([R.Z, x.Z], () => (0, M.rB)()),
     q = function(e) {
       let {
         showBackForwardButtons: t,
@@ -139,7 +139,7 @@ let V = Chunk473749.memo(function() {
             }), (0, r.jsx)(m.Z, {
               canShowReminder: true,
               className: Q
-            }), Y && (0, r.jsx)(x.Z, (i = function(e) {
+            }), Y && (0, r.jsx)(P.Z, (i = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);

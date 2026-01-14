@@ -2,7 +2,7 @@
 /** chunk id: 178318, original params: e,t,n (module,exports,require) **/
 let r, i;
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./49124.js"), require("./388685.js"), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
@@ -87,7 +87,7 @@ function j(e, t, n, r) {
     message: r
   }, n)
 }
-class P extends Chunk76238.Z {
+class x extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && y.info("Socket Emit: ".concat(this.id), (0, g.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
@@ -106,7 +106,7 @@ class P extends Chunk76238.Z {
     this._socket = e
   }
 }
-class x extends Chunk76238.Z {
+class P extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && y.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
@@ -120,7 +120,7 @@ class x extends Chunk76238.Z {
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class Z extends Chunk836560.EventEmitter {
+class A extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
     if ("/rpc" === n && "OPTIONS" === i) return void N(e, t, {
@@ -138,7 +138,7 @@ class Z extends Chunk836560.EventEmitter {
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", I), t.writeHead(301), t.end()
         },
-        s = new x(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
+        s = new P(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
@@ -162,7 +162,7 @@ class Z extends Chunk836560.EventEmitter {
     let r, i = new URLSearchParams(S(e.upgradeReq).url.split("?")[1]),
       l = null != (t = S(e.upgradeReq).headers.origin) ? t : "";
     try {
-      r = new P(e, Number(i.get("v")), null != (n = i.get("encoding")) ? n : "json")
+      r = new x(e, Number(i.get("v")), null != (n = i.get("encoding")) ? n : "json")
     } catch (t) {
       e.close(t.code, t.message);
       return
@@ -204,4 +204,4 @@ class Z extends Chunk836560.EventEmitter {
     new v.ws.Server(n).on("connection", e => this.handleConnection(e))
   }
 }
-let A = new Z
+let Z = new A

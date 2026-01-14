@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 703912, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./35282.js"), require("./997841.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk664751 = require("./664751.js"),
   Chunk373793 = require("./373793.js"),
@@ -61,7 +61,7 @@ let N = "CachedTokens",
   j = {
     "1273616940451102832": new Chunk63023.Z(2, +Chunk70956.Z.Millis.MINUTE)
   };
-async function P(e, t, n) {
+async function x(e, t, n) {
   let r, l, s, c, u, {
     client_id: d,
     response_type: p = "code",
@@ -70,10 +70,10 @@ async function P(e, t, n) {
     code_challenge_method: S,
     state: T,
     nonce: N,
-    scope: P,
-    permissions: x,
-    guild_id: Z,
-    channel_id: A,
+    scope: x,
+    permissions: P,
+    guild_id: A,
+    channel_id: Z,
     prompt: w,
     disable_guild_select: L,
     integration_type: R,
@@ -91,7 +91,7 @@ async function P(e, t, n) {
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let U = [];
-  if ("string" == typeof P ? U = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (U = P), null == E.default.getCurrentUser()) throw new I.Z({
+  if ("string" == typeof x ? U = x.split(" ").filter(e => e.length > 0) : Array.isArray(x) && (U = x), null == E.default.getCurrentUser()) throw new I.Z({
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
   if (null != R) l = Number(R);
@@ -147,10 +147,10 @@ async function P(e, t, n) {
       errorCode: C.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorize Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
-  null == n || n(s.application, A, D);
+  null == n || n(s.application, Z, D);
   let G = v.Hn;
   try {
-    G = a.vB(null != x ? x : 0)
+    G = a.vB(null != P ? P : 0)
   } catch (e) {}
   if (null != s.integration_type && Object.values(i.Y).includes(s.integration_type) && (r = new Map).set(s.integration_type, s), null != j[s.application.id] && (await j[s.application.id].process(), null == M ? true : M.aborted)) throw new I.Z({
     errorCode: C.lTL.UNKNOWN_ERROR
@@ -165,8 +165,8 @@ async function P(e, t, n) {
     codeChallenge: y,
     codeChallengeMethod: S,
     state: T,
-    guildId: Z,
-    channelId: A,
+    guildId: A,
+    channelId: Z,
     prompt: w,
     disableGuildSelect: L,
     disclosures: c,
@@ -176,7 +176,7 @@ async function P(e, t, n) {
   })
 }
 
-function x(e, t) {
+function P(e, t) {
   if (e.authorization.accessToken) throw new I.Z({
     errorCode: C.lTL.INVALID_COMMAND
   }, "Already authenticated");
@@ -221,7 +221,7 @@ function x(e, t) {
   })
 }
 
-function Z(e, t) {
+function A(e, t) {
   return {
     [C.Etm.AUTHENTICATE]: (0, u.S)(C.Etm.AUTHENTICATE, {
       handler(n) {
@@ -238,7 +238,7 @@ function Z(e, t) {
             errorCode: C.lTL.INVALID_COMMAND
           }, "No application.");
           let s = l.x.IDENTIFY,
-            c = () => P({
+            c = () => x({
               client_id: n,
               scope: s,
               response_type: "token",
@@ -264,7 +264,7 @@ function Z(e, t) {
                   scope: n,
                   expires: Date.now() + r
                 }, d.K.set(N, l)
-              }(n, l.access_token, l.scope, l.expires_in), x(i, l.access_token)
+              }(n, l.access_token, l.scope, l.expires_in), P(i, l.access_token)
             });
           return null != (o = function(e, t) {
             let n = d.K.get(N);
@@ -273,7 +273,7 @@ function Z(e, t) {
               if (!(r.scope !== t || r.expires <= Date.now())) return r.accessToken;
               delete n[e], d.K.set(N, n)
             }
-          }(n, s)) ? x(i, o).catch(() => {
+          }(n, s)) ? P(i, o).catch(() => {
             var e;
             let t = null != (e = d.K.get(N)) ? e : {};
             return delete t[n], d.K.set(N, t), c()
@@ -282,7 +282,7 @@ function Z(e, t) {
         if (null == o) throw new I.Z({
           errorCode: C.lTL.INVALID_TOKEN
         }, "No access token provided");
-        return x(i, o)
+        return P(i, o)
       }
     }),
     [C.Etm.AUTHORIZE]: {
@@ -309,7 +309,7 @@ function Z(e, t) {
           errorCode: C.lTL.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let s = l.scopes || l.scope;
-        return delete l.scopes, P(T(S({}, l), {
+        return delete l.scopes, x(T(S({}, l), {
           scope: s,
           signal: i,
           isSocketRpcPrivateScope: o

@@ -34,25 +34,25 @@ function h(e) {
     analyticsLocations: v,
     analyticsLocation: I,
     onClose: S
-  }), P = "" !== E.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  }), x = "" !== E.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
     children: ["\xa0", (0, r.jsx)(o.eee, {
       className: g.termsApplyAnchor,
       href: c.Z.getArticleURL(E.helpArticleId),
       children: f.intl.string(f.t["sBp+u0"])
     })]
-  }) : true, x = {
+  }) : true, P = {
     type: "video",
     src: y ? E.heroArtVideoLinkLightTheme : E.videoLink
   };
-  null != E.heroArtVideoSubtitles && (x.subtitles = E.heroArtVideoSubtitles.map(e => ({
+  null != E.heroArtVideoSubtitles && (P.subtitles = E.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: false
-  }))), ("" !== E.heroArtImageLinkDarkTheme || "" !== E.heroArtImageLinkLightTheme) && (x = {
+  }))), ("" !== E.heroArtImageLinkDarkTheme || "" !== E.heroArtImageLinkLightTheme) && (P = {
     type: "image",
     src: y ? E.heroArtImageLinkLightTheme : E.heroArtImageLinkDarkTheme
   });
-  let Z = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
+  let A = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
     text: E.modalTopPill,
     className: g.modalTopPill
   }) : true;
@@ -61,11 +61,11 @@ function h(e) {
     promotionId: _,
     renderModalProps: O,
     header: E.header,
-    modalTopExtra: Z,
+    modalTopExtra: A,
     subHeader: E.subheader,
-    subHeaderExtra: P,
+    subHeaderExtra: x,
     body: E.body,
-    heroArt: x,
+    heroArt: P,
     featureCards: E.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,

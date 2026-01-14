@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 269675, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,15 +32,15 @@ var Chunk54381 = require("./54381.js"),
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([g.Z], () => g.Z.isConnected()), P = (0, p.Z)(t), x = (0, E.Z)(t), Z = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), A = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([g.Z], () => g.Z.isConnected()), x = (0, p.Z)(t), P = (0, E.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
-  } = (0, f.uP)(t), R = null == n || !A || Z || L;
+  } = (0, f.uP)(t), R = null == n || !Z || A || L;
   (0, u.Tt)({
     subsection: T.intl.string(T.t["KzCF/6"]),
     location: null == n ? true : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : true);
-  let D = j && (null == n || !(P || x) || w && !L);
+  let D = j && (null == n || !(x || P) || w && !L);
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
@@ -66,7 +66,7 @@ function j(e) {
       id: C.v
     }), (0, r.jsx)("div", {
       className: N.content,
-      children: P ? (0, r.jsx)(o.u2D, {
+      children: x ? (0, r.jsx)(o.u2D, {
         className: N.scroller,
         children: (0, r.jsx)("div", {
           className: N.scrollerContent,
@@ -79,7 +79,7 @@ function j(e) {
   })
 }
 
-function P(e) {
+function x(e) {
   let {
     guildId: t
   } = e;

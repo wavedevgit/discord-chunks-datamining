@@ -1,7 +1,7 @@
 /** Chunk was on 31800 **/
 /** chunk id: 445968, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  PremiumResubscribeModal: () => w
+  PremiumResubscribeModal: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk320941 = require("./320941.jsx"),
   Chunk474936 = require("./474936.js");
 
-function S(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(a);
@@ -50,31 +50,31 @@ function v(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let w = e => {
+let P = e => {
   var t;
   let {
     analyticsLocations: a,
     premiumSubscription: o
-  } = e, w = null == (t = (0, f.Af)(o)) ? true : t.planId, y = null != w ? (0, f.Rd)(w) : null;
-  i()(null != y, "Should not be resubscribing Nitro without premiumType");
-  let P = y === h.PremiumTypes.TIER_0,
-    [x, O] = n.useState(m.R.CONFIRM),
-    _ = n.useCallback(() => {
+  } = e, P = null == (t = (0, f.Af)(o)) ? true : t.planId, w = null != P ? (0, f.Rd)(P) : null;
+  i()(null != w, "Should not be resubscribing Nitro without premiumType");
+  let y = w === S.PremiumTypes.TIER_0,
+    [x, g] = n.useState(m.R.CONFIRM),
+    O = n.useCallback(() => {
       switch (x) {
         case m.R.CONFIRM:
-          return (0, r.jsx)(u.G, v(S({}, e), {
-            setStep: O
+          return (0, r.jsx)(u.G, v(h({}, e), {
+            setStep: g
           }));
         case m.R.SUCCESS:
-          return (0, r.jsx)(C.n, v(S({}, e), {
-            premiumType: y
+          return (0, r.jsx)(C.n, v(h({}, e), {
+            premiumType: w
           }));
         default:
-          return (0, r.jsx)(u.G, v(S({}, e), {
-            setStep: O
+          return (0, r.jsx)(u.G, v(h({}, e), {
+            setStep: g
           }))
       }
-    }, [x, e, y]);
+    }, [x, e, w]);
   return (0, r.jsx)(c.Gt, {
     value: a,
     children: (0, r.jsx)(d.PaymentContextProvider, {
@@ -85,9 +85,9 @@ let w = e => {
       children: (0, r.jsx)(l.b6, {
         children: (0, r.jsx)(b.Z, {
           isConfirmationStep: x === m.R.SUCCESS,
-          isEligibleForWowMoment: !P,
-          shouldPrefetchWowMoment: !P,
-          children: _()
+          isEligibleForWowMoment: !y,
+          shouldPrefetchWowMoment: !y,
+          children: O()
         })
       })
     })

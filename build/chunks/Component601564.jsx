@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 601564, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => x,
+  default: () => P,
   getPageSize: () => j
 }), require("./388685.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
@@ -45,7 +45,7 @@ function j(e) {
   return e < I.x ? I.b.SMALL : I.b.LARGE
 }
 Chunk442837.ZP.initialize();
-class P extends Chunk473749.PureComponent {
+class x extends Chunk473749.PureComponent {
   componentDidMount() {
     (0, s.Y)(this.props.location), this.stopListeningToHistory = (0, _.s1)().listen(e => {
       e.pathname.startsWith(y.Z5c.APPLICATION_STORE) && (0, s.Y)(e)
@@ -133,4 +133,4 @@ class P extends Chunk473749.PureComponent {
     }))
   }
 }
-let x = (0, Chunk828700.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(P)))
+let P = (0, Chunk828700.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(x)))

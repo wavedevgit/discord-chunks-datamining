@@ -2,7 +2,7 @@
 /** chunk id: 533947, original params: e,t,n (module,exports,require) **/
 let r, i, l;
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./539854.js"), require("./388685.js");
 var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -52,7 +52,7 @@ function T() {
   I = m.QZA.OPEN, y = {}, C = false
 }
 let N = s().debounce(() => {
-  C && ((null == O || s().isEqual(O, j(O.id))) && (C = false), C || x.emitChange())
+  C && ((null == O || s().isEqual(O, j(O.id))) && (C = false), C || P.emitChange())
 }, 500);
 
 function j(e) {
@@ -63,7 +63,7 @@ function j(e) {
     return n === e
   })
 }
-class P extends(a = Chunk442837.ZP.Store) {
+class x extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(p.Z, f.Z, h.Z, g.Z)
   }
@@ -98,8 +98,8 @@ class P extends(a = Chunk442837.ZP.Store) {
     }
   }
 }
-b(P, "displayName", "ChannelSettingsIntegrationsStore");
-let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
+b(x, "displayName", "ChannelSettingsIntegrationsStore");
+let P = new x(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: T,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: T,
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -179,4 +179,4 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
       I = m.QZA.OPEN, y = null != (t = e.errors) ? t : {}
     }
   }),
-  Z = x
+  A = P

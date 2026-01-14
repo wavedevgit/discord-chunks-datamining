@@ -29,11 +29,11 @@ var Chunk392711 = require("./392711.js"),
   Chunk863141 = require("./863141.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let P = e => (0, y.Z)(e).required().keys({
+let x = e => (0, y.Z)(e).required().keys({
   channel_id: e.string().required()
 });
 
-function x(e) {
+function P(e) {
   let {
     args: {
       channel_id: t
@@ -47,11 +47,11 @@ function x(e) {
     errorCode: j.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(r.id))
 }
-let Z = e => (0, y.Z)(e).keys({
+let A = e => (0, y.Z)(e).keys({
   channel_id: e.string().allow(null)
 });
 
-function A(e) {
+function Z(e) {
   let {
     args: {
       channel_id: t
@@ -209,32 +209,32 @@ let w = {
   },
   [Chunk981631.zMe.MESSAGE_CREATE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
-    handler: x
+    validation: x,
+    handler: P
   },
   [Chunk981631.zMe.MESSAGE_UPDATE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
-    handler: x
+    validation: x,
+    handler: P
   },
   [Chunk981631.zMe.MESSAGE_DELETE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
-    handler: x
+    validation: x,
+    handler: P
   },
   [Chunk981631.zMe.SPEAKING_START]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
-    validation: Z,
-    handler: A
+    validation: A,
+    handler: Z
   },
   [Chunk981631.zMe.SPEAKING_STOP]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
-    validation: Z,
-    handler: A
+    validation: A,
+    handler: Z
   },
   [Chunk981631.zMe.GUILD_CREATE]: {
     scope: Chunk243814.x.RPC,

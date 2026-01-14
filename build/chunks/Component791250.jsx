@@ -119,7 +119,7 @@ let eh = e => {
     var {
       selected: t
     } = e, n = eg(e, ["selected"]);
-    let i = (0, Z.b5)("PrivateChannels.ICYMIButton"),
+    let i = (0, A.b5)("PrivateChannels.ICYMIButton"),
       l = (0, c.JA)("icymi");
     return i ? (0, r.jsx)("div", {
       className: ed.friendsButtonContainer,
@@ -149,7 +149,7 @@ let eh = e => {
       } = k.w.useConfig({
         location: "Friends Tab"
       }),
-      [h, m] = (0, P.bf)(o && f ? p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
+      [h, m] = (0, x.bf)(o && f ? p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
         cooldownDurationMs: U.n3
       }),
       E = h === p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
@@ -174,17 +174,17 @@ let eh = e => {
       j = () => {
         N(false)
       },
-      x = () => {
+      P = () => {
         N(true)
       },
-      Z = () => (0, r.jsx)(v.Qj, ef(ep({
+      A = () => (0, r.jsx)(v.Qj, ef(ep({
         onClick: I,
         interactiveClassName: E ? ed.friendsBadge : true,
         selected: t,
         route: el.Z5c.FRIENDS,
         icon: _.iFz,
         text: ec.intl.string(ec.t.TdEu5X),
-        onMouseEnter: x,
+        onMouseEnter: P,
         onMouseLeave: j
       }, n, l), {
         children: a > 0 ? (0, r.jsx)(_.mAB, {
@@ -202,7 +202,7 @@ let eh = e => {
             size: 32,
             alt: ec.intl.string(ec.t["4LohBA"])
           }),
-          children: Z()
+          children: A()
         }), !u && (0, r.jsx)(z.Z, {
           className: ed.confetti,
           wind: 0,
@@ -223,7 +223,7 @@ let eh = e => {
             }
           }
         })]
-      }) : Z()
+      }) : A()
     })
   },
   eb = e => {
@@ -256,7 +256,7 @@ let eh = e => {
       selected: t
     } = e, n = (0, c.JA)("messageRequests"), {
       channelId: i
-    } = (0, A._)();
+    } = (0, Z._)();
     if (!(0, L.a)()) return null;
     let l = null == i ? true : () => E.Z.preload(el.ME, i);
     return (0, r.jsx)(v.Qj, ef(ep({
@@ -316,7 +316,7 @@ let eh = e => {
       })
     }) : (0, r.jsx)("div", {
       className: ed.familyCenterButtonContainer,
-      children: (0, r.jsx)(P.ZP, {
+      children: (0, r.jsx)(x.ZP, {
         contentTypes: [p.z.FAMILY_CENTER_NEW_BADGE],
         children: e => {
           let {
@@ -356,7 +356,7 @@ let eC = Chunk473749.memo(function(e) {
     shouldShowFamilyCenterRow: f,
     selectedChannelId: g,
     path: h
-  } = e, b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), v = i.useRef(null), y = (0, Z.b5)("PrivateChannels"), C = null;
+  } = e, b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), v = i.useRef(null), y = (0, A.b5)("PrivateChannels"), C = null;
   return c ? C = (0, r.jsx)(V.F, {
     targetElementRef: v
   }) : d && (C = (0, r.jsx)(G.d, {
@@ -426,7 +426,7 @@ let eC = Chunk473749.memo(function(e) {
         selected: null != l && l.startsWith(el.Z5c.FAMILY_CENTER) || null != h && h.startsWith(el.Z5c.FAMILY_CENTER)
       }, "family-center") : null, (0, r.jsx)(Y.Z, {
         selected: null == h ? null != l && l.startsWith(el.Z5c.QUEST_HOME_V2) : h === el.Z5c.QUEST_HOME_V2
-      }, "quests"), (0, r.jsx)(eS, {}, "section-divider-top"), (0, r.jsx)(x.Z, {}, "frequent-friends")]
+      }, "quests"), (0, r.jsx)(eS, {}, "section-divider-top"), (0, r.jsx)(P.Z, {}, "frequent-friends")]
     }))]
   })
 });
@@ -470,7 +470,7 @@ function eT() {
     g = (0, H._h)(),
     h = [];
   (0, j.Kl)() && (f && h.push(p.z.REFERRAL_PROGRAM_POPOVER), g && h.push(p.z.RECURRING_3P_PROMOTION_POPOVER));
-  let [m, b] = (0, P.US)(h, true, true), _ = (0, L.a)(), E = function() {
+  let [m, b] = (0, x.US)(h, true, true), _ = (0, L.a)(), E = function() {
     let e = J.Ex.useSetting(),
       t = (0, R.Z)();
     returntrue === e && true === t

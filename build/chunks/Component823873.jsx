@@ -27,9 +27,9 @@ function _(e) {
     startDateTimeString: N
   } = i.useMemo(() => y ? {
     startDateTimeString: m.intl.string(m.t.TxqPQR)
-  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, y]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == v ? true : v.name) ? t : j, x = null != v ? (0, o.KS)(v) : null;
+  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, y]), j = null != E ? (0, p.cS)(E) : true, x = null != (t = null == v ? true : v.name) ? t : j, P = null != v ? (0, o.KS)(v) : null;
   if (null == E || null == O) return null;
-  let Z = null != E.description && E.description.length > 0;
+  let A = null != E.description && E.description.length > 0;
   return (0, r.jsxs)("div", {
     className: b.eventContainer,
     children: [(0, r.jsx)("div", {
@@ -41,9 +41,9 @@ function _(e) {
       })
     }), (0, r.jsx)(a.Text, {
       variant: "text-lg/semibold",
-      className: Z ? b.eventTitle : true,
+      className: A ? b.eventTitle : true,
       children: E.name
-    }), Z && (0, r.jsx)(a.Text, {
+    }), A && (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-subtle",
       className: b.eventDescription,
@@ -68,14 +68,14 @@ function _(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: b.eventLocationRow,
-        children: [null != x ? (0, r.jsx)(x, {
+        children: [null != P ? (0, r.jsx)(P, {
           size: "xs",
           color: "currentColor"
         }) : null, (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
           className: b.eventLocationText,
-          children: null != P ? (0, c.m)(P, true) : null
+          children: null != x ? (0, c.m)(x, true) : null
         })]
       })]
     })]

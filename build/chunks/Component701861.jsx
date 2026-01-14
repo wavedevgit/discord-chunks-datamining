@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk756853 = require("./756853.js");
 
-function x(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,7 +40,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function A(e) {
   let {
     user: t,
     applicationId: n,
@@ -99,7 +99,7 @@ function Z(e) {
     })]
   })
 }
-class A extends Chunk473749.PureComponent {
+class Z extends Chunk473749.PureComponent {
   componentWillLeave(e) {
     null != this.peopleListItemRef.current && this.peopleListItemRef.current.componentWillLeave(e)
   }
@@ -142,7 +142,7 @@ class A extends Chunk473749.PureComponent {
       onOtherHover: () => m ? null : (0, d.Zy)(),
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
-        className: P.listItemContents,
+        className: x.listItemContents,
         children: [(0, r.jsx)(C.Z, {
           user: e,
           status: l,
@@ -158,7 +158,7 @@ class A extends Chunk473749.PureComponent {
           hovered: t,
           showAccountIdentifier: !o && !e.isProvisional
         }), (0, r.jsxs)("div", {
-          className: P.actions,
+          className: x.actions,
           children: [(0, r.jsx)(v.Z, {
             icon: s.kBi,
             tooltip: j.intl.string(j.t["g33r/P"]),
@@ -175,9 +175,9 @@ class A extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "peopleListItemRef", i.createRef()), x(this, "state", {
+    super(...e), P(this, "peopleListItemRef", i.createRef()), P(this, "state", {
       isActiveRow: false
-    }), x(this, "handleOpenPrivateChannel", e => {
+    }), P(this, "handleOpenPrivateChannel", e => {
       let {
         user: t
       } = this.props;
@@ -186,13 +186,13 @@ class A extends Chunk473749.PureComponent {
       null != n ? (0, h.uL)(S.Z5c.CHANNEL(S.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })
-    }), x(this, "handleOpenActionsMenu", e => {
+    }), P(this, "handleOpenActionsMenu", e => {
       let {
         user: t,
         isGameRelationship: n,
         applicationId: i
       } = this.props;
-      (0, d.vq)(e, e => (0, r.jsx)(Z, function(e, t) {
+      (0, d.vq)(e, e => (0, r.jsx)(A, function(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -210,7 +210,7 @@ class A extends Chunk473749.PureComponent {
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            x(e, t, n[t])
+            P(e, t, n[t])
           })
         }
         return e
@@ -230,4 +230,4 @@ class A extends Chunk473749.PureComponent {
     })
   }
 }
-let w = A
+let w = Z

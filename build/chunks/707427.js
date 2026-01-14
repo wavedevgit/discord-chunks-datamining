@@ -2354,8 +2354,8 @@ let {
         opacity: .08
       },
       [r.MIDNIGHT]: {
-        raw: "PLUM_23_ALPHA",
-        opacity: .10196078431372549
+        raw: "BRAND_300",
+        opacity: .1
       },
       [r.DARKER]: {
         raw: "PLUM_24",
@@ -2394,7 +2394,7 @@ let {
     INPUT_PLACEHOLDER_TEXT_DEFAULT: {
       category: "background",
       [r.DARK]: {
-        raw: "INPUT_PLACEHOLDER_TEXT_DARK",
+        raw: "PRIMARY_400",
         opacity: 1
       },
       [r.LIGHT]: {
@@ -4175,8 +4175,8 @@ let {
         opacity: .08
       },
       [r.MIDNIGHT]: {
-        raw: "PLUM_23_ALPHA",
-        opacity: .10196078431372549
+        raw: "BRAND_300",
+        opacity: .1
       },
       [r.DARKER]: {
         raw: "PLUM_11",
@@ -4309,8 +4309,8 @@ let {
         opacity: .08
       },
       [r.MIDNIGHT]: {
-        raw: "PLUM_23_ALPHA",
-        opacity: .10196078431372549
+        raw: "BRAND_300",
+        opacity: .1
       },
       [r.DARKER]: {
         raw: "PLUM_11",

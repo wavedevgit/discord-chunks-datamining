@@ -92,7 +92,7 @@ let U = {
   },
   [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: {
     onTrigger(e, t) {
-      (C.Z.getMode() === w.pM4.PUSH_TO_TALK || A.Z.getCurrentConfig({
+      (C.Z.getMode() === w.pM4.PUSH_TO_TALK || Z.Z.getCurrentConfig({
         location: "keybinds"
       }).onPTTKeybind) && (U[w.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, k(e, true, false, t))
     },
@@ -104,7 +104,7 @@ let U = {
   },
   [Chunk981631.kg4.VAD_PRIORITY]: {
     onTrigger(e, t) {
-      C.Z.getMode() === w.pM4.VOICE_ACTIVITY && A.Z.getCurrentConfig({
+      C.Z.getMode() === w.pM4.VOICE_ACTIVITY && Z.Z.getCurrentConfig({
         location: "keybinds"
       }).separateKeybind && (U[w.kg4.VAD_PRIORITY].isPressed = e, k(e, true, true, t))
     },
@@ -171,8 +171,8 @@ let U = {
   [Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK]: {
     onTrigger(e, t) {
       if (!(0, N.I1)(t.shortcut)) return;
-      let n = (0, Z.Z)();
-      null != n && l.Z.setInputLocked(!P.default.isLocked(n), n)
+      let n = (0, A.Z)();
+      null != n && l.Z.setInputLocked(!x.default.isLocked(n), n)
     },
     keyEvents: {
       keyup: true,
@@ -183,7 +183,7 @@ let U = {
     onTrigger() {
       let e = j.default.getFocusedPID(),
         t = null != e;
-      null != e && t && P.default.isPinned(w.Odu.TEXT) && P.default.isLocked(e) && j.default.isReady(e) && l.Z.activateRegion(w.O0n.TEXT_WIDGET)
+      null != e && t && x.default.isPinned(w.Odu.TEXT) && x.default.isLocked(e) && j.default.isReady(e) && l.Z.activateRegion(w.O0n.TEXT_WIDGET)
     },
     keyEvents: {
       keyup: true,
@@ -230,7 +230,7 @@ let U = {
   },
   [Chunk981631.kg4.SOUNDBOARD]: {
     onTrigger: () => {
-      let e = (0, Z.Z)();
+      let e = (0, A.Z)();
       if (null != e)
         if (E.Z.enabled)(0, v.oZ)(e);
         else {
@@ -245,7 +245,7 @@ let U = {
   },
   [Chunk981631.kg4.SOUNDBOARD_HOLD]: {
     onTrigger: e => {
-      let t = (0, Z.Z)();
+      let t = (0, A.Z)();
       if (null != t) {
         if (e) {
           if (!(0, O.D)()) return;
@@ -261,7 +261,7 @@ let U = {
   },
   [Chunk981631.kg4.SAVE_CLIP]: {
     onTrigger: () => {
-      (0, f.LI)() && (x.default.track(w.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, g.br)())
+      (0, f.LI)() && (P.default.track(w.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, g.br)())
     },
     keyEvents: {
       keyup: false,
@@ -270,7 +270,7 @@ let U = {
   },
   [Chunk981631.kg4.SAVE_SCREENSHOT]: {
     onTrigger: () => {
-      (0, f.LI)() && (0, p.iL)() && (x.default.track(w.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, g.ZW)())
+      (0, f.LI)() && (0, p.iL)() && (P.default.track(w.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, g.ZW)())
     },
     keyEvents: {
       keyup: false,

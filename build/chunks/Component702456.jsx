@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk938359 = require("./938359.js");
 
-function A(e) {
+function Z(e) {
   var t, n;
   let {
     user: i,
@@ -62,7 +62,7 @@ function A(e) {
       location: h.Z.FREQUENT_FRIENDS_ROW
     });
     let n = O.Z.getDMFromUserId(i.id);
-    null != n && (0, m.yw)(P.rMx.CHANNEL_OPENED, (e = function(e) {
+    null != n && (0, m.yw)(x.rMx.CHANNEL_OPENED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -91,13 +91,13 @@ function A(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, _ = 0 === l, v = _ ? u.YqE : a ? u.XcD : true, y = _ ? x.intl.string(x.t.aI4VOL) : a ? x.intl.string(x.t.kABl2x) : true;
+  }, _ = 0 === l, v = _ ? u.YqE : a ? u.XcD : true, y = _ ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
   return (0, r.jsx)(u.P3F, {
-    className: Z.frequentFriendAvatarButton,
+    className: A.frequentFriendAvatarButton,
     onClick: b,
     onMouseEnter: g.onMouseEnter,
     onMouseLeave: g.onMouseLeave,
-    "aria-label": x.intl.formatToPlainString(x.t.M5FjCr, {
+    "aria-label": P.intl.formatToPlainString(P.t.M5FjCr, {
       username: i.username
     }),
     children: (0, r.jsx)(u.qEK, {
@@ -142,7 +142,7 @@ function w() {
       frequentFriends: t,
       showCompetitiveSpot: n
     }
-  }(), n = (0, s.e7)([v.Z], () => v.Z.hasConsented(P.pjP.PERSONALIZATION)), l = (0, s.e7)([S.default], () => {
+  }(), n = (0, s.e7)([v.Z], () => v.Z.hasConsented(x.pjP.PERSONALIZATION)), l = (0, s.e7)([S.default], () => {
     var e, t;
     return null != (t = null == (e = S.default.getCurrentUser()) ? true : e.nsfwAllowed) && t
   }), [p, h] = i.useState({
@@ -179,30 +179,30 @@ function w() {
   } = t, D = (E === o.S.AU || E === o.S.GB) && !O, M = null != E && o.M.EU_COUNTRIES.has(E) && !l, k = !D && !M && null != E && R, U = p.scrollWidth > p.clientWidth, G = p.scrollLeft > 0, H = p.scrollLeft < p.scrollWidth - p.clientWidth - 2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: Z.frequentFriendsRow,
+      className: A.frequentFriendsRow,
       children: [(0, r.jsxs)("div", {
-        className: Z.frequentFriendsHeader,
+        className: A.frequentFriendsHeader,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-sm/semibold",
-          className: Z.frequentFriendsTitle,
-          children: x.intl.string(x.t.QEh90H)
+          className: A.frequentFriendsTitle,
+          children: P.intl.string(P.t.QEh90H)
         }), (0, r.jsx)(c.u, {
-          text: x.intl.string(x.t.tqCMcU),
+          text: P.intl.string(P.t.tqCMcU),
           children: (0, r.jsx)(u.d3s, {
-            className: Z.frequentFriendsInfoIcon
+            className: A.frequentFriendsInfoIcon
           })
         })]
       }), (0, r.jsx)(u.xVE, {
         ref: e => {
           m.current = e, C.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
-        className: a()(Z.frequentFriendsAvatars, {
-          [Z.scrollMaskLeft]: U && G,
-          [Z.scrollMaskRight]: U && H
+        className: a()(A.frequentFriendsAvatars, {
+          [A.scrollMaskLeft]: U && G,
+          [A.scrollMaskRight]: U && H
         }),
         orientation: "horizontal",
         onScroll: w,
-        children: L.map((e, t) => (0, r.jsx)(A, {
+        children: L.map((e, t) => (0, r.jsx)(Z, {
           user: e,
           index: t,
           isCompetitive: k && t === L.length - 1

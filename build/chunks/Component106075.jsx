@@ -38,11 +38,11 @@ function C() {
       setSelectedTab: N
     } = (0, b.Y)(),
     j = (0, f.lg)(T),
-    P = !O.MU.has(T),
+    x = !O.MU.has(T),
     {
-      searchQuery: x,
-      onSearchTextChange: Z,
-      onClearSearch: A,
+      searchQuery: P,
+      onSearchTextChange: A,
+      onClearSearch: Z,
       onSearchSubmit: w,
       isSearchVisible: L
     } = (0, m.H)({
@@ -55,8 +55,8 @@ function C() {
       onSearchBarBlur: k,
       tabsClassName: U
     } = (0, o.U)({
-      isSearchBarVisible: P,
-      isSearchBarEmpty: "" === x.trim(),
+      isSearchBarVisible: x,
+      isSearchBarEmpty: "" === P.trim(),
       searchBarState: R,
       setSearchBarState: e => g.Z.setState({
         searchBarState: e
@@ -64,8 +64,8 @@ function C() {
     }),
     G = d.Z.useField("fetchedQuery"),
     H = i.useCallback(e => {
-      N(e), L && A()
-    }, [L, A, N]),
+      N(e), L && Z()
+    }, [L, Z, N]),
     B = i.useMemo(() => L ? S.filter(e => {
       let {
         id: t
@@ -96,7 +96,7 @@ function C() {
         scrollPosition: n
       }), L ? (0, r.jsx)(s.Cm, {
         icon: l.j9r,
-        onClick: A
+        onClick: Z
       }) : (0, r.jsx)(s.aV, {
         icon: l.QTo
       }), !L && (0, r.jsx)(c.Z, {
@@ -112,11 +112,11 @@ function C() {
         children: I.intl.format(I.t.zHdzqW, {
           query: G
         })
-      }), P && (0, r.jsx)(u.Z, {
-        query: x,
+      }), x && (0, r.jsx)(u.Z, {
+        query: P,
         placeholder: I.intl.string(I.t["5h0QOP"]),
-        onTextChange: Z,
-        onClear: A,
+        onTextChange: A,
+        onClear: Z,
         onSubmit: w,
         onCollapsedClick: M,
         state: L ? v.GlobalDiscoverySearchBarState.DEFAULT : R,

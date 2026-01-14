@@ -26,12 +26,12 @@ let I = "ActivityTrackingStore",
 
 function j(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  t && P(e, true);
+  t && x(e, true);
   let n = T[e.applicationId];
   null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(I, S)
 }
 
-function P(e) {
+function x(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
@@ -53,10 +53,10 @@ function P(e) {
     mediaSessionId: c
   }), e.updatedAt = n;
   let d = T[e.applicationId];
-  null == d && (d = T[e.applicationId] = new s.Xp).start(y, () => P(e)), t || (S[e.applicationId] = e, o.K.set(I, S))
+  null == d && (d = T[e.applicationId] = new s.Xp).start(y, () => x(e)), t || (S[e.applicationId] = e, o.K.set(I, S))
 }
 
-function x() {
+function P() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = p.ZP.getVisibleRunningGames(),
     n = new Set;
@@ -67,7 +67,7 @@ function x() {
     }
     of t) {
     let t = b.Z.getGameByName(e);
-    null != t && (n.add(t.id), t.id in S || P({
+    null != t && (n.add(t.id), t.id in S || x({
       applicationId: t.id,
       updatedAt: Date.now(),
       distributor: r,
@@ -77,36 +77,36 @@ function x() {
   for (let t of Object.keys(S)) n.has(t) || j(S[t], e)
 }
 
-function Z() {
+function A() {
   for (let e of Object.keys(S)) j(S[e]);
   N = false
 }
-class A extends(i = Chunk442837.ZP.Store) {
+class Z extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(m.default, b.Z, _.Z, E.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], x)
+    this.waitFor(m.default, b.Z, _.Z, E.Z, p.ZP, O.Z, f.Z), this.syncWith([f.Z], P)
   }
   getActivities() {
     return S
   }
-}(l = "displayName") in A ? Object.defineProperty(A, l, {
+}(l = "displayName") in Z ? Object.defineProperty(Z, l, {
   value: "ActivityTrackingStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : A[l] = "ActivityTrackingStore", new A(Chunk570140.Z, {
-  RUNNING_GAMES_CHANGE: () => x(),
+}) : Z[l] = "ActivityTrackingStore", new Z(Chunk570140.Z, {
+  RUNNING_GAMES_CHANGE: () => P(),
   CONNECTION_OPEN: function() {
     if (N) returnfalse;
-    for (let e of Object.keys(S)) P(S[e]);
-    x(false), N = true
+    for (let e of Object.keys(S)) x(S[e]);
+    P(false), N = true
   },
   CONNECTION_CLOSED: function(e) {
     let {
       code: t
     } = e;
-    4004 === t && Z()
+    4004 === t && A()
   },
-  LOGOUT: Z,
+  LOGOUT: A,
   ACTIVITY_UPDATE_SUCCESS: function(e) {
     let {
       applicationId: t,

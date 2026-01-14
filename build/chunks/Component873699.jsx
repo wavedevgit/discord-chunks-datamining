@@ -47,7 +47,7 @@ function m(e, t) {
         },
         icon: e => {
           var t, l;
-          return (0, r.jsx)(O, (t = function(e) {
+          return (0, r.jsx)(y, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -84,7 +84,7 @@ function m(e, t) {
   })
 }
 
-function O(e) {
+function y(e) {
   var t;
   let {
     emoji: n,

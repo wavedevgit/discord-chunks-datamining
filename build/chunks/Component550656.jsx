@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk620389 = require("./620389.js"),
+  Chunk853590 = require("./853590.js"),
   Chunk762328 = require("./762328.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk682973 = require("./682973.js"),
@@ -76,6 +76,7 @@ function b(e) {
   if (w) {
     let e = (0, l.a_)(S, I);
     return (0, r.jsx)(l.pS, {
+      className: m.tooltipLayer,
       open: n,
       spacing: T,
       placement: e,

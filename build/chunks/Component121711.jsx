@@ -94,7 +94,7 @@ function em(e) {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, A.W)({
+  } = (0, Z.W)({
     location: en.dr.QUEST_HOME_DESKTOP
   }), l = (0, u.e7)([g.Z], () => g.Z.useReducedMotion), o = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
     ref: s,
@@ -168,7 +168,7 @@ function e_(e) {
     isLoading: g
   } = (0, F.Nm)(), {
     enabled: h
-  } = (0, A.W)({
+  } = (0, Z.W)({
     location: en.dr.QUEST_HOME_DESKTOP
   }), {
     enabled: m
@@ -180,7 +180,7 @@ function e_(e) {
   }, []);
   return (0, r.jsxs)($.t.Provider, {
     value: d,
-    children: [l, (0, r.jsxs)(x.Z, {
+    children: [l, (0, r.jsxs)(P.Z, {
       onScroll: c,
       ref: d,
       children: [function() {
@@ -216,7 +216,7 @@ let eE = function(e) {
     return (null == (e = (0, o.LX)(n.pathname, er.Z5c.QUEST_HOME)) ? true : e.isExact) === true
   }, [n.pathname]), v = (0, u.e7)([_.Z], () => _.Z.getState("quests")), {
     selectedTab: T,
-    onSelectTab: x,
+    onSelectTab: P,
     tabs: L
   } = (0, et.z)({
     withClaimedQuestsTab: !g
@@ -250,7 +250,7 @@ let eE = function(e) {
   }, [T]);
   let {
     enabled: Q
-  } = (0, A.W)({
+  } = (0, Z.W)({
     location: en.dr.QUEST_HOME_DESKTOP
   }), $ = i.useCallback(() => {
     if (Q) return void window.open(er.EYA.PAID_TERMS_ORBS);
@@ -263,7 +263,7 @@ let eE = function(e) {
     es = Q ? ea.intl.format(ea.t.U9FY0J, {}) : ea.intl.string(ea.t.oWCrBq),
     ec = i.useRef(null),
     eu = i.useCallback(() => {
-      (0, Z.Y)({
+      (0, A.Y)({
         pageType: er.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: er.jXE.ORBS_BALANCE_MENU,
         ctaObject: er.qAy.CTA_TO_ORBS_SHOP
@@ -338,8 +338,8 @@ let eE = function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n)), null == (t = ec.current) || t.scrollToTop({
         animate: false
-      }), x(e)
-    }, [l, x]);
+      }), P(e)
+    }, [l, P]);
   return (0, r.jsx)(X.k.Provider, {
     value: {
       onAssetLoadComplete: K
@@ -370,7 +370,7 @@ let eE = function(e) {
               onLoadComplete: K
             })
           }),
-          header: (0, r.jsx)(P.a, {
+          header: (0, r.jsx)(x.a, {
             selectedTabId: T,
             handleTransition: ef,
             tabs: L,
@@ -419,7 +419,7 @@ let eE = function(e) {
               onLoadComplete: K
             })]
           }),
-          header: (0, r.jsx)(P.a, {
+          header: (0, r.jsx)(x.a, {
             selectedTabId: T,
             handleTransition: ef,
             tabs: L,

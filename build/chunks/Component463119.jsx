@@ -98,7 +98,7 @@ let k = e => {
       noCache: e,
       includeUnpublished: t
     } = (0, j.Z)();
-    return (0, C.E)(x.AW.HOME, {
+    return (0, C.E)(P.AW.HOME, {
       noCache: e,
       includeUnpublished: t,
       includeBundles: true
@@ -131,7 +131,7 @@ let k = e => {
           analyticsLocations: E
         })
       }, [m, E, a, v, s]),
-      C = Z.Z5c.COLLECTIBLES_SHOP;
+      C = A.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [O && (0, r.jsx)(U, {}), (0, r.jsx)(g.Qj, D(R({
         selected: t,
@@ -194,22 +194,22 @@ let k = e => {
       S = M(e, ["displayOptions"]);
     let T = (0, s.e7)([m.Z], () => m.Z.useReducedMotion),
       [N, j] = i.useState(0),
-      [P, x] = i.useState(false),
-      [Z, A] = i.useState(false),
+      [x, P] = i.useState(false),
+      [A, Z] = i.useState(false),
       U = i.useRef(null),
       H = i.useRef(null),
       F = (0, h.ZP)(),
       z = (0, d.wj)(F);
-    P ? z ? (t = null == (l = C.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (c = C.entrypointBackgroundStyle) || null == (o = c.hovered) ? true : o.dark) : (t = null == (u = C.entryPointBackgroundAssets) ? true : u.srcLightHovered, n = null == (g = C.entrypointBackgroundStyle) || null == (f = g.hovered) ? true : f.light) : z ? (t = null == (b = C.entryPointBackgroundAssets) ? true : b.srcDark, n = null == (E = C.entrypointBackgroundStyle) || null == (_ = E.resting) ? true : _.dark) : (t = null == (O = C.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (y = C.entrypointBackgroundStyle) || null == (v = y.resting) ? true : v.light);
+    x ? z ? (t = null == (l = C.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (c = C.entrypointBackgroundStyle) || null == (o = c.hovered) ? true : o.dark) : (t = null == (u = C.entryPointBackgroundAssets) ? true : u.srcLightHovered, n = null == (g = C.entrypointBackgroundStyle) || null == (f = g.hovered) ? true : f.light) : z ? (t = null == (b = C.entryPointBackgroundAssets) ? true : b.srcDark, n = null == (E = C.entrypointBackgroundStyle) || null == (_ = E.resting) ? true : _.dark) : (t = null == (O = C.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (y = C.entrypointBackgroundStyle) || null == (v = y.resting) ? true : v.light);
     let Y = i.useCallback(e => {
-        C.assetIds.length > 0 && j(e => (e + 1) % C.assetIds.length), x(true);
+        C.assetIds.length > 0 && j(e => (e + 1) % C.assetIds.length), P(true);
         let t = () => {
-          A(V(U))
+          Z(V(U))
         };
         t(), H.current = requestAnimationFrame(t), null == e || e()
       }, [C.assetIds.length]),
       W = i.useCallback(e => {
-        x(false), A(false), null != H.current && (cancelAnimationFrame(H.current), H.current = null), null == e || e()
+        P(false), Z(false), null != H.current && (cancelAnimationFrame(H.current), H.current = null), null == e || e()
       }, []);
     i.useEffect(() => () => {
       null != H.current && cancelAnimationFrame(H.current)
@@ -243,7 +243,7 @@ let k = e => {
           },
           children: null != t && (0, r.jsx)("img", {
             src: t,
-            className: a()(L.marketingButtonBackgroundImage, Z && L.marketingButtonBackgroundImageFaded),
+            className: a()(L.marketingButtonBackgroundImage, A && L.marketingButtonBackgroundImageFaded),
             alt: "",
             "aria-hidden": true
           })
@@ -310,7 +310,7 @@ let k = e => {
       }
     }, [E]), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(G, D(R({}, s), {
-        onClick: () => o(A.L.TAKE_ACTION),
+        onClick: () => o(Z.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
           ref: u,
@@ -328,8 +328,8 @@ let k = e => {
       })), (0, r.jsx)(S.Z, {
         displayOptions: l,
         targetElementRef: c,
-        onClick: () => o(A.L.TAKE_ACTION),
-        onRequestClose: () => o(A.L.USER_DISMISS)
+        onClick: () => o(Z.L.TAKE_ACTION),
+        onRequestClose: () => o(Z.L.USER_DISMISS)
       })]
     })
   },
@@ -340,12 +340,12 @@ let k = e => {
     let l = i.useRef(null);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(G, D(R({}, n), {
-        onClick: () => t(A.L.TAKE_ACTION),
+        onClick: () => t(Z.L.TAKE_ACTION),
         listItemRef: l
       })), (0, r.jsx)(T.Z, {
         targetElementRef: l,
-        onClick: () => t(A.L.TAKE_ACTION),
-        onRequestClose: () => t(A.L.USER_DISMISS)
+        onClick: () => t(Z.L.TAKE_ACTION),
+        onRequestClose: () => t(Z.L.USER_DISMISS)
       })]
     })
   },
@@ -367,17 +367,17 @@ let k = e => {
       listItemRef: l
     };
     if (null != a) switch (a.type) {
-      case P.k2.TOOLTIP:
+      case x.k2.TOOLTIP:
         return (0, r.jsx)(z, D(R({}, f), {
           displayOptions: a
         }));
-      case P.k2.COACHTIP:
+      case x.k2.COACHTIP:
         return (0, r.jsx)(F, D(R({}, f), {
           displayOptions: a
         }));
-      case P.k2.BADGE:
+      case x.k2.BADGE:
         return (0, r.jsx)(H, R({}, f));
-      case P.k2.COACHMARK:
+      case x.k2.COACHMARK:
         return (0, r.jsx)(Y, D(R({
           dismissContent: o
         }, f), {

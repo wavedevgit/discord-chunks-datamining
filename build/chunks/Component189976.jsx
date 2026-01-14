@@ -20,8 +20,8 @@ function p(e, t) {
   let {
     handleTranslate: p,
     handleRevertTranslation: m,
-    isTranslating: O,
-    isTranslated: y
+    isTranslating: y,
+    isTranslated: O
   } = function(e) {
     let [t, n] = i.useState(false), r = (0, l.e7)([u.default], () => u.default.locale);
     return {
@@ -92,18 +92,18 @@ function p(e, t) {
         disabled: t
       }, i.value)
     }), [e, t, l])
-  }(p, O), v = (0, c.o)();
-  return null != e.content && "" !== e.content.trim() && v ? y ? (0, r.jsx)(a.sNh, {
+  }(p, y), v = (0, c.o)();
+  return null != e.content && "" !== e.content.trim() && v ? O ? (0, r.jsx)(a.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXn),
     icon: a.os0,
     action: m,
-    disabled: O
+    disabled: y
   }) : (0, r.jsx)(a.sNh, {
     id: "translate",
-    label: O ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
+    label: y ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
     action: () => p(),
-    disabled: O,
+    disabled: y,
     children: h
   }) : null
 }

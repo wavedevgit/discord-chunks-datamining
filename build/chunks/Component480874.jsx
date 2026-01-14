@@ -36,19 +36,19 @@ function N() {
     N = (0, u.N)(),
     j = (0, p.Z)("message-requests-spam-list"),
     {
-      channelId: P
+      channelId: x
     } = (0, _._)(),
-    x = i.useCallback(() => {
+    P = i.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(S.intl.string(S.t["EDYbS+"]), c.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: Z
+      rejectAll: A
     } = (0, b.m)({
-      onError: x
+      onError: P
     }),
-    A = i.useCallback(() => {
-      Z(t.map(e => e.channel.id))
-    }, [t, Z]);
+    Z = i.useCallback(() => {
+      A(t.map(e => e.channel.id))
+    }, [t, A]);
   (0, d.ZP)(() => {
     h.default.track(C.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
@@ -64,14 +64,14 @@ function N() {
       return (0, r.jsx)(I.Z, {
         index: o,
         className: a()({
-          [T.selected]: null != P && P === u,
-          [T.siblingSelected]: null != P && P === c
+          [T.selected]: null != x && x === u,
+          [T.siblingSelected]: null != x && x === c
         }),
         channel: s.channel,
         user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [t, l, P]),
+    }, [t, l, x]),
     L = i.useCallback(() => (0, r.jsxs)(f.Z, {
       className: T.sectionTitle,
       children: [S.intl.format(S.t.C79Edh, {
@@ -86,11 +86,11 @@ function N() {
         }), (0, r.jsx)(c.Avr, {
           textVariant: "text-sm/normal",
           text: S.intl.string(S.t.p6t7RC),
-          onClick: A,
+          onClick: Z,
           "aria-label": S.intl.string(S.t.p6t7RC)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [n, A, N]);
+    }, "message-requests-spam-title"), [n, Z, N]);
   return 0 === t.length ? (0, r.jsx)(v.Z, {
     section: y.pS.SPAM
   }) : (0, r.jsx)(o.bG, {

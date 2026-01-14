@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk745769 = require("./745769.js");
 
-function h(e) {
+function S(e) {
   let {
     onClose: t
   } = e, a = (0, r.jsx)(o.Text, {
@@ -35,7 +35,7 @@ function h(e) {
   })
 }
 
-function S(e) {
+function h(e) {
   let {
     onClose: t
   } = e;
@@ -64,7 +64,7 @@ let v = e => {
       upgradeToPremiumType: s
     }), (0, r.jsx)(o.hzk, {
       "data-migration-pending": true,
-      children: (0, r.jsx)(b ? S : h, {
+      children: (0, r.jsx)(b ? h : S, {
         onClose: p
       })
     })]

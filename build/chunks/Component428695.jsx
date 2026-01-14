@@ -57,8 +57,8 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       color: S,
       children: C
     }));
-    let P = null;
-    "function" == typeof n ? P = n() : null != n && (P = (0, r.jsx)(c.Text, {
+    let x = null;
+    "function" == typeof n ? x = n() : null != n && (x = (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "text-strong",
       className: a()(g.title, {
@@ -68,8 +68,8 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       }),
       children: n
     }));
-    let x = null;
-    "function" == typeof l ? x = l() : null != l && (x = (0, r.jsx)(c.Text, {
+    let P = null;
+    "function" == typeof l ? P = l() : null != l && (P = (0, r.jsx)(c.Text, {
       className: a()({
         [g.center]: T
       }),
@@ -77,7 +77,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       color: "text-muted",
       children: l
     }));
-    let Z = null != _ ? "".concat(_, "px") : "16px";
+    let A = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: a()(g.container, N),
       children: [true === v ? null : (0, r.jsx)(c.P3F, {
@@ -97,8 +97,8 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         className: g.imageContainer,
         style: {
           marginTop: "".concat(E, "px"),
-          marginLeft: Z,
-          marginRight: Z
+          marginLeft: A,
+          marginRight: A
         },
         children: (0, r.jsx)("img", {
           className: g.image,
@@ -108,7 +108,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         })
       }), (0, r.jsxs)("div", {
         className: g.message,
-        children: [P, x, j]
+        children: [x, P, j]
       })]
     })
   }

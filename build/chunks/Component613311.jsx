@@ -182,28 +182,28 @@ class ef extends Chunk473749.PureComponent {
       channel: n,
       isAuthenticated: l
     } = this.props;
-    return (0, r.jsx)(x.Z, {
+    return (0, r.jsx)(P.Z, {
       isAuthenticated: l,
       toolbar: this.renderHeaderToolbar(e, t),
       children: null != n ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(x.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: f.lO_,
           "aria-label": es.intl.string(es.t["P1/Erq"])
-        }), (0, r.jsx)(x.Z.Title, {
+        }), (0, r.jsx)(P.Z.Title, {
           children: n.name
         })]
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(x.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: f.SrA,
           "aria-label": es.intl.string(es.t.Ipxkog)
         }), (0, r.jsx)(et.Z, {
           sku: t
         })]
       }) : null != t ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(x.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: f.lO_,
           "aria-label": es.intl.string(es.t["P1/Erq"])
-        }), (0, r.jsx)(x.Z.Title, {
+        }), (0, r.jsx)(P.Z.Title, {
           children: t.name
         })]
       }) : null
@@ -554,7 +554,7 @@ class ef extends Chunk473749.PureComponent {
             className: a()(ec.headerPurchase, {
               [ec.active]: s
             }),
-            children: [null != t ? (0, P.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
+            children: [null != t ? (0, x.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
             }) : null, (0, r.jsx)($.Z, {
               messageStyle: $.G.SHORT,
@@ -626,8 +626,8 @@ let eg = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     }),
     isInTestMode: null != l && u,
     matureAgree: D.Z.didMatureAgree,
-    theme: A.Z.theme,
-    locale: Z.default.locale,
+    theme: Z.Z.theme,
+    locale: A.default.locale,
     guild: null != c ? w.Z.getGuild(c.getGuildId()) : null
   }
 })(ef)))

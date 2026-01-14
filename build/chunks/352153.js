@@ -51,13 +51,13 @@ function h(e) {
       } = e;
       return t.id
     }).pop(),
-    P = (0, l.Z)(j);
+    x = (0, l.Z)(j);
   r.useEffect(() => {
-    if (I || v || null == P || null == j || j === P) return;
+    if (I || v || null == x || null == j || j === x) return;
     let e = Date.now();
     e - N > g.C && (a.Z.gravityScrollEvent(e), o.m.trackFeedFirstScrollStarted())
-  }, [I, N, P, j, T, v]);
-  let x = r.useCallback(e => {
+  }, [I, N, x, j, T, v]);
+  let P = r.useCallback(e => {
       let {
         viewableItems: t
       } = e;
@@ -79,7 +79,7 @@ function h(e) {
         type: (0, u.v$)(e)
       })), O)
     }, [O, m]),
-    Z = r.useCallback(e => {
+    A = r.useCallback(e => {
       let {
         viewableItems: t
       } = e;
@@ -110,7 +110,7 @@ function h(e) {
         }
       }))
     }, [O]),
-    A = r.useCallback(e => {
+    Z = r.useCallback(e => {
       let {
         viewableItems: t
       } = e;
@@ -142,22 +142,22 @@ function h(e) {
         viewAreaCoveragePercentThreshold: 100,
         minimumViewTime: 50
       },
-      onViewableItemsChanged: x
+      onViewableItemsChanged: P
     }, {
       viewabilityConfig: {
         waitForInteraction: false,
         viewAreaCoveragePercentThreshold: 50,
         minimumViewTime: 1e3
       },
-      onViewableItemsChanged: Z
+      onViewableItemsChanged: A
     }, {
       viewabilityConfig: {
         waitForInteraction: false,
         viewAreaCoveragePercentThreshold: 50,
         minimumViewTime: 50
       },
-      onViewableItemsChanged: A
-    }], [x, Z, A]);
+      onViewableItemsChanged: Z
+    }], [P, A, Z]);
   r.useEffect(() => {
     a.Z.openICYMITab()
   }, []);

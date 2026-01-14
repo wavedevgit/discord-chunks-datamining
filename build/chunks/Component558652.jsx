@@ -52,13 +52,13 @@ let b = [],
     } = (0, c.bA)(c.e5.ALL, i.useMemo(() => ({
       sortMethod: v,
       filters: I
-    }), [v, I])), P = i.useCallback(() => {
+    }), [v, I])), x = i.useCallback(() => {
       C(b)
-    }, [C]), x = i.useRef(null), Z = i.useRef(null), A = (0, l.TH)(), w = (0, l.k6)();
+    }, [C]), P = i.useRef(null), A = i.useRef(null), Z = (0, l.TH)(), w = (0, l.k6)();
     return i.useEffect(() => {
-      if ("" !== A.hash && null != x.current && null != Z.current) {
+      if ("" !== Z.hash && null != P.current && null != A.current) {
         var e, t;
-        (v !== x.current || I !== Z.current) && w.replace((e = function(e) {
+        (v !== P.current || I !== A.current) && w.replace((e = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -75,7 +75,7 @@ let b = [],
             })
           }
           return e
-        }({}, A), t = t = {
+        }({}, Z), t = t = {
           hash: true
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -88,19 +88,19 @@ let b = [],
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e))
       }
-    }, [v, I, A, w]), i.useEffect(() => {
-      x.current = v
+    }, [v, I, Z, w]), i.useEffect(() => {
+      P.current = v
     }, [v]), i.useEffect(() => {
-      Z.current = I
+      A.current = I
     }, [I]), (0, c.SU)({
       selectedSortMethod: v,
       selectedFilters: I,
       numQuestsVisible: S.length
     }), i.useImperativeHandle(t, () => ({
       resetSortingFiltering: () => {
-        P(), y(g.yq.SUGGESTED)
+        x(), y(g.yq.SUGGESTED)
       }
-    }), [P, y]), (0, r.jsxs)(r.Fragment, {
+    }), [x, y]), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: m.headingWrapper,
         children: [(0, r.jsx)(a.Heading, {
@@ -123,7 +123,7 @@ let b = [],
         isFetching: N,
         hasFetched: j,
         hasFiltersApplied: I.length > 0,
-        onClearFilters: P
+        onClearFilters: x
       })]
     })
   })

@@ -251,7 +251,7 @@ let z = function(e) {
       })
     },
     ec = () => {
-      s()(null != _, "Expected renewalInvoicePreview"), (0, c.ZDy)(async () => {
+      s()(null != _, "Expected renewalInvoicePreview"), s()(null != o, "Expected currentInvoicePreview"), (0, c.ZDy)(async () => {
         let {
           PremiumResubscribeModal: e
         } = await Promise.all([n.e("84992"), n.e("16"), n.e("23242"), n.e("31800")]).then(n.bind(n, 445968));
@@ -259,6 +259,7 @@ let z = function(e) {
           premiumSubscription: i,
           analyticsLocations: z,
           fractionalPremiumInfo: q,
+          currentInvoicePreview: o,
           renewalInvoicePreview: _
         }))
       })

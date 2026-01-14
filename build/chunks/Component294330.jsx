@@ -1,9 +1,9 @@
 /** Chunk was on 1272 **/
 /** chunk id: 294330, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Eo: () => P,
+  Eo: () => x,
   VD: () => N,
-  ZP: () => x
+  ZP: () => P
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,14 +35,14 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [g, h] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), Z = i.useCallback(async () => {
+  } = e, [g, h] = i.useState(false), [E, N] = i.useState(false), [j, x] = i.useState(false), P = i.useRef(null), A = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
     } finally {
       N(false)
     }
-  }, [t.id, l]), A = i.useCallback(e => {
+  }, [t.id, l]), Z = i.useCallback(e => {
     e && !g && (h(true), null == o || o(t.id))
   }, [t.id, g, o]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
@@ -110,14 +110,14 @@ function N(e) {
         className: y.spinner
       })
     }), (0, r.jsx)(s.$, {
-      innerRef: x,
-      onChange: A,
+      innerRef: P,
+      onChange: Z,
       active: !g,
       threshold: .55,
       children: (0, r.jsxs)(f.Z, {
-        ref: x,
+        ref: P,
         className: y.card,
-        onClick: Z,
+        onClick: A,
         disabled: E,
         onContextMenu: w,
         "aria-label": I.intl.string(I.t["M9wQ+f"]),
@@ -131,7 +131,7 @@ function N(e) {
               src: D,
               alt: "",
               className: y.bannerImage,
-              onLoad: () => P(true)
+              onLoad: () => x(true)
             })
           }), (0, r.jsx)(O.Z, {
             className: y.maximizeIcon,
@@ -222,7 +222,7 @@ function j(e) {
   })
 }
 
-function P(e) {
+function x(e) {
   let {
     guildId: t,
     index: n,
@@ -259,4 +259,4 @@ function P(e) {
     })
   })
 }
-let x = Chunk473749.memo(j)
+let P = Chunk473749.memo(j)

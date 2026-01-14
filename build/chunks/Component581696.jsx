@@ -39,7 +39,7 @@ let g = function(e) {
       registerItemRef: N
     } = (0, p.m)(_, T, t),
     j = i.useMemo(() => _.some(e => "end" === e.data.kind), [_]),
-    P = i.useCallback(() => {
+    x = i.useCallback(() => {
       if (j) return;
       let e = t.current;
       if (null == e) return;
@@ -52,21 +52,21 @@ let g = function(e) {
     }, [E, m, S, j, t]);
   i.useEffect(() => {
     let e = t.current;
-    if (null != e) return e.addEventListener("scroll", P), () => {
-      e.removeEventListener("scroll", P)
+    if (null != e) return e.addEventListener("scroll", x), () => {
+      e.removeEventListener("scroll", x)
     }
-  }, [P, t]);
-  let x = i.useCallback(() => {
+  }, [x, t]);
+  let P = i.useCallback(() => {
       var e;
       null == (e = t.current) || e.scrollTo({
         top: 0,
         behavior: "smooth"
       })
     }, [t]),
-    Z = i.useCallback(() => {
-      v(), x()
-    }, [v, x]),
-    A = i.useCallback(e => "loading" === e.data.kind ? (0, r.jsx)("div", {
+    A = i.useCallback(() => {
+      v(), P()
+    }, [v, P]),
+    Z = i.useCallback(e => "loading" === e.data.kind ? (0, r.jsx)("div", {
       style: {
         padding: "32px",
         textAlign: "center"
@@ -117,7 +117,7 @@ let g = function(e) {
         textAlign: "center"
       },
       children: (0, r.jsx)("button", {
-        onClick: Z,
+        onClick: A,
         style: {
           background: "#5865f2",
           color: "white",
@@ -133,7 +133,7 @@ let g = function(e) {
     }), (0, r.jsxs)("div", {
       ref: h,
       className: f.scrollContainer,
-      children: [_.map(e => A(e)), !j && (m || S) && (0, r.jsx)("div", {
+      children: [_.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

@@ -2,7 +2,7 @@
 /** chunk id: 277053, original params: e,t,n (module,exports,require) **/
 let r, i;
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./388685.js");
 var l, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
@@ -60,18 +60,18 @@ let E = new Set,
   N = null,
   j = Chunk433517.K.get(Chunk71080.kf) || false;
 
-function P(e) {
+function x(e) {
   let t = e.getGuildId(),
     n = b({}, e.permissionOverwrites);
   return null != t && null == n[t] && (n[t] = d.we(t)), n
 }
 
-function x() {
+function P() {
   if (C = p.Z.getChannel(), S = p.Z.getCategory(), null == C) returnfalse;
   let e = C.getGuildId();
-  y = I = P(C), null == I[T] && (T = e), i = null != S, r = d.o4(C, S), N = null, v = false, O = g.QZA.CLOSED, E.clear()
+  y = I = x(C), null == I[T] && (T = e), i = null != S, r = d.o4(C, S), N = null, v = false, O = g.QZA.CLOSED, E.clear()
 }
-class Z extends(l = Chunk442837.ZP.Store) {
+class A extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(p.Z, f.Z)
   }
@@ -112,16 +112,16 @@ class Z extends(l = Chunk442837.ZP.Store) {
     return j
   }
 }
-m(Z, "displayName", "ChannelSettingsPermissionsStore");
-let A = new Z(Chunk570140.Z, {
+m(A, "displayName", "ChannelSettingsPermissionsStore");
+let Z = new A(Chunk570140.Z, {
   CHANNEL_SETTINGS_SET_SECTION: function(e) {
     let {
       section: t
     } = e;
     if (null != C || t !== g.CoT.PERMISSIONS) returnfalse;
-    x()
+    P()
   },
-  CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
+  CHANNEL_SETTINGS_PERMISSIONS_INIT: P,
   CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION: function(e) {
     let {
       id: t,
@@ -147,7 +147,7 @@ let A = new Z(Chunk570140.Z, {
     }
   },
   CHANNEL_SETTINGS_INIT: function() {
-    p.Z.getSection() === g.CoT.PERMISSIONS && x()
+    p.Z.getSection() === g.CoT.PERMISSIONS && P()
   },
   CHANNEL_SETTINGS_CLOSE: function() {
     O = g.QZA.CLOSED, I = null, y = null, C = null, S = null, v = false, E.clear(), T = null, N = null
@@ -163,7 +163,7 @@ let A = new Z(Chunk570140.Z, {
       S = p.Z.getCategory();
       let t = C.getGuildId();
       if (null == t) returnfalse;
-      y = P(C);
+      y = x(C);
       let n = {};
       return E.forEach(e => {
         null != I && (n[e] = I[e])
@@ -178,7 +178,7 @@ let A = new Z(Chunk570140.Z, {
     let {
       silent: t
     } = e;
-    t ? O = g.QZA.OPEN : (O = g.QZA.CLOSED, x())
+    t ? O = g.QZA.OPEN : (O = g.QZA.CLOSED, P())
   },
   CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
     let {

@@ -190,7 +190,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
       name: l
     } = t, {
       data: a
-    } = (0, P.IX)(r), o = (0, S.Z)({
+    } = (0, x.IX)(r), o = (0, S.Z)({
       application: a,
       analyticsLocations: n
     }), s = (0, D.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), c = (0, V.F)(r);
@@ -381,7 +381,7 @@ eO.Header = eE, eO.Body = e => {
     partySize: a,
     members: s,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), d = (0, Z.ZP)(r, true), p = (0, K.EB)(n, 32), h = (0, K.gM)(n);
+  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, K.EB)(n, 32), h = (0, K.gM)(n);
   return (0, i.jsx)(ed, {
     children: (0, i.jsxs)("div", {
       className: ea.voiceSection,
@@ -473,7 +473,7 @@ eO.Header = eE, eO.Body = e => {
     analyticsLocations: p
   } = (0, N.ZP)(T.Z.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
     data: f
-  } = (0, P.IX)(c.application_id), {
+  } = (0, x.IX)(c.application_id), {
     assets: g,
     details: h,
     state: m,
@@ -679,8 +679,8 @@ eO.Header = eE, eO.Body = e => {
         className: ea.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
         children: [es(en.ZP.getName(l), b), ec(h)]
-      }), (0, i.jsx)(A.ZP, {
-        size: A.ZP.Sizes.SMALL
+      }), (0, i.jsx)(Z.ZP, {
+        size: Z.ZP.Sizes.SMALL
       })]
     }), g]
   })
@@ -703,7 +703,7 @@ eO.Header = eE, eO.Body = e => {
       analyticsLocations: g
     } = (0, N.ZP)();
   if (null == u) return null;
-  let h = x.Z.getApplication(u);
+  let h = P.Z.getApplication(u);
   if (null == h) return null;
   let b = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at

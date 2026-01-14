@@ -77,7 +77,6 @@ let O = (0, Chunk473749.createContext)({
     setCustomConfettiVisible: () => {},
     confettiCanvas: null,
     hideConfirmStepConfetti: false,
-    skipConfirm: false,
     skuIDs: [],
     analyticsLocations: []
   }),
@@ -118,19 +117,15 @@ let O = (0, Chunk473749.createContext)({
       analyticsLocations: v
     } = (0, u.Jb)({
       analyticsLocations: null != n ? n : []
-    }), {
-      skuIDs: S,
-      skipConfirm: I
-    } = (0, u.Af)({
+    }), S = (0, u.Af)({
       skuId: t
-    }), T = (0, i.useMemo)(() => ({
+    }), I = (0, i.useMemo)(() => ({
       analyticsLocations: v,
       skuIDs: S,
-      skipConfirm: I,
       setCustomConfettiVisible: m,
       hideConfirmStepConfetti: y,
       confettiCanvas: d
-    }), [v, S, I, m, y, d]);
+    }), [v, S, m, y, d]);
     return (0, r.jsxs)(a.Gt, {
       value: v,
       children: [(0, r.jsx)(u.sy, {
@@ -145,7 +140,7 @@ let O = (0, Chunk473749.createContext)({
         purchaseType: _.GZ.ONE_TIME,
         excludeSubscriptionPlansBySKU: true,
         children: (0, r.jsx)(O.Provider, {
-          value: T,
+          value: I,
           children: o
         })
       }))]
@@ -212,41 +207,39 @@ let O = (0, Chunk473749.createContext)({
         f(), null == s || s(e)
       }, {
         skuIDs: m,
-        skipConfirm: h,
-        setCustomConfettiVisible: g,
-        analyticsLocations: E
+        setCustomConfettiVisible: h,
+        analyticsLocations: g
       } = v(), {
-        paymentModalSkuId: b,
-        paymentModalOnClose: y,
-        paymentModalOnComplete: O
+        paymentModalSkuId: E,
+        paymentModalOnClose: b,
+        paymentModalOnComplete: y
       } = (0, u.$g)({
         onClose: _,
         onComplete: l,
         skuIDs: m,
-        setCustomConfettiVisible: g
-      }), S = (0, i.useMemo)(() => ({
+        setCustomConfettiVisible: h
+      }), O = (0, i.useMemo)(() => ({
         loadId: n,
         skuId: t,
-        analyticsLocations: E,
+        analyticsLocations: g,
         analyticsSourceLocation: a,
         flowSpecificOptions: c
-      }), [n, t, E, a, c]), I = (0, i.useMemo)(() => ({
-        skuId: b,
-        onClose: y,
-        onComplete: O,
+      }), [n, t, g, a, c]), S = (0, i.useMemo)(() => ({
+        skuId: E,
+        onClose: b,
+        onComplete: y,
         applicationId: p.XAJ,
         initialPlanId: null,
-        analyticsLocations: E,
+        analyticsLocations: g,
         onStepChange: c.onStepChange,
-        skipConfirm: h,
         hideShadow: true,
         transitionState: o.transitionState,
         returnRef: o.returnRef
-      }), [b, y, O, E, c.onStepChange, h, o.transitionState, o.returnRef]);
+      }), [E, b, y, g, c.onStepChange, o.transitionState, o.returnRef]);
       return (0, r.jsx)(A.Provider, {
         value: {
-          sharedCheckoutContext: S,
-          paymentModalProps: I,
+          sharedCheckoutContext: O,
+          paymentModalProps: S,
           renderModalProps: o
         },
         children: d

@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk620389 = require("./620389.js"),
+  Chunk853590 = require("./853590.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk704215 = require("./704215.js"),
   Chunk952265 = require("./952265.js"),
@@ -32,7 +32,7 @@ let y = Math.ceil(Math.sqrt(115200)),
     } = e, S = (0, s.JA)("quests"), T = i.useRef(null), {
       shouldShowPopover: N,
       shouldShowGradientAndBadge: j,
-      dismissContent: P
+      dismissContent: x
     } = function() {
       let e = (0, u.useHasAnyModalOpen)(),
         [t, n] = (0, h.US)(e ? [] : [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.R.PRIVATE_CHANNELS_LIST, true),
@@ -44,13 +44,13 @@ let y = Math.ceil(Math.sqrt(115200)),
         shouldShowGradientAndBadge: !(0, g.Nj)(c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING),
         dismissContent: r
       }
-    }(), x = i.useCallback(() => {
+    }(), P = i.useCallback(() => {
       _.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
-      glowSpring: Z
-    }, A] = (0, d.q_F)(() => ({
+      glowSpring: A
+    }, Z] = (0, d.q_F)(() => ({
       from: {
         glowSpring: 0
       },
@@ -75,27 +75,27 @@ let y = Math.ceil(Math.sqrt(115200)),
     })), R = i.useCallback(() => {
       L({
         shineSpring: 1
-      }), A({
+      }), Z({
         glowSpring: 1,
         delay: 200
       })
-    }, [L, A]), D = i.useCallback(() => {
+    }, [L, Z]), D = i.useCallback(() => {
       L({
         shineSpring: 0,
         immediate: true
-      }), A({
+      }), Z({
         glowSpring: 0,
         delay: 0
       })
-    }, [L, A]), M = i.useCallback(() => {
+    }, [L, Z]), M = i.useCallback(() => {
       L({
         shineSpring: 1,
         delay: 500
-      }), A({
+      }), Z({
         glowSpring: 1,
         delay: 700
       }), m.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
-    }, [L, A]), [k, U] = i.useState(false), G = i.useCallback(e => {
+    }, [L, Z]), [k, U] = i.useState(false), G = i.useCallback(e => {
       U(e.contentRect.width)
     }, []), H = (0, f.y)(G, [], {
       fireOnMount: true
@@ -135,7 +135,7 @@ let y = Math.ceil(Math.sqrt(115200)),
           }),
           icon: d.qDn,
           listItemRef: T,
-          onClick: x,
+          onClick: P,
           route: E.Z5c.QUEST_HOME_V2,
           selected: l,
           text: v.intl.string(v.t.JALI2K)
@@ -149,7 +149,7 @@ let y = Math.ceil(Math.sqrt(115200)),
             }), (0, r.jsx)(o.animated.div, {
               className: I.glow,
               style: {
-                opacity: Z.to({
+                opacity: A.to({
                   range: [0, 1],
                   output: [0, .5]
                 })
@@ -172,9 +172,9 @@ let y = Math.ceil(Math.sqrt(115200)),
         }), t))
       }), N && (0, r.jsx)(b.Z, {
         targetElementRef: T,
-        onNavigateToQuestHome: x,
+        onNavigateToQuestHome: P,
         onRender: M,
-        onRequestClose: P
+        onRequestClose: x
       })]
     })
   }

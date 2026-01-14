@@ -182,7 +182,7 @@ let eR = (0, Chunk608787.Un)({
       messageId: u,
       threadId: d
     } = i.params, f = null != c ? c : true;
-    null == f && null != i.params.gameShopPageIndex && (f = eP.oC.GAME_SHOP);
+    null == f && null != i.params.gameShopPageIndex && (f = ex.oC.GAME_SHOP);
     let g = (0, p.e7)([ev.Z], () => ev.Z.getGuild(o)),
       h = (0, p.e7)([eO.ZP], () => null == o ? null : eO.ZP.getSelfMember(o)),
       b = (0, eo.BU)(o, "ChannelRenderer"),
@@ -201,66 +201,66 @@ let eR = (0, Chunk608787.Un)({
       });
     (0, ed.WF)(f) && (0, ed.WF)(d) || (null != g && (0, em.uL)(ej.Z5c.CHANNEL(g.id, (0, ep.Z)(g))), (0, J.V)());
     let O = (0, w.C4)(o, "channel_renderer");
-    if (null != o && null != f && (0, eP.AB)(f)) switch (f) {
-      case eP.oC.ROLE_SUBSCRIPTIONS:
+    if (null != o && null != f && (0, ex.AB)(f)) switch (f) {
+      case ex.oC.ROLE_SUBSCRIPTIONS:
         return O ? (0, r.jsx)(eM, {
           guildId: o,
           initialTab: L.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(F.Z, {
           guildId: o
         });
-      case eP.oC.SERVER_MONETIZATION_ONBOARDING:
+      case ex.oC.SERVER_MONETIZATION_ONBOARDING:
         return (0, r.jsx)(eU, {
           guildId: o
         });
-      case eP.oC.GAME_SHOP:
+      case ex.oC.GAME_SHOP:
         return (0, r.jsx)(ek, eL({}, e));
-      case eP.oC.GUILD_SHOP:
+      case ex.oC.GUILD_SHOP:
         return (0, r.jsx)(eM, {
           guildId: o,
           productId: u,
           initialTab: E
         });
-      case eP.oC.MEMBER_APPLICATIONS:
+      case ex.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(s.l_, {
-          to: ej.Z5c.CHANNEL(o, eP.oC.MEMBER_SAFETY)
+          to: ej.Z5c.CHANNEL(o, ex.oC.MEMBER_SAFETY)
         });
-      case eP.oC.GUILD_HOME:
+      case ex.oC.GUILD_HOME:
         return (0, r.jsx)(eG, {
           guildId: o
         });
-      case eP.oC.CHANNEL_BROWSER:
+      case ex.oC.CHANNEL_BROWSER:
         return (0, r.jsx)(eB, {
           guildId: o,
-          selectedSection: eZ.l7.BROWSE
+          selectedSection: eA.l7.BROWSE
         });
-      case eP.oC.GUILD_ONBOARDING:
+      case ex.oC.GUILD_ONBOARDING:
         return (0, r.jsx)(eV, {
           guildId: o
         });
-      case eP.oC.CUSTOMIZE_COMMUNITY:
+      case ex.oC.CUSTOMIZE_COMMUNITY:
         return (0, r.jsx)(eB, {
           guildId: o,
-          selectedSection: eZ.l7.CUSTOMIZE
+          selectedSection: eA.l7.CUSTOMIZE
         });
-      case eP.oC.MEMBER_SAFETY:
+      case ex.oC.MEMBER_SAFETY:
         return (0, r.jsx)(eH, {
           guildId: o
         });
-      case eP.oC.GUILD_BOOSTS:
+      case ex.oC.GUILD_BOOSTS:
         return (0, r.jsx)(eF, {
           guildId: o,
           powerupListingId: null != (n = l.get("powerupId")) ? n : l.get("powerupSkuId")
         });
-      case eP.oC.GAME_SERVERS:
+      case ex.oC.GAME_SERVERS:
         if (!b || !_) return (0, r.jsx)(s.l_, {
           to: ej.Z5c.CHANNEL(o)
         });
         return (0, r.jsx)(ez, {
           guildId: o
         });
-      case eP.oC.REPORT_TO_MOD:
-        return (0, r.jsx)(P.Z, {});
+      case ex.oC.REPORT_TO_MOD:
+        return (0, r.jsx)(x.Z, {});
       default:
         (0, eS.vE)(f)
     }
@@ -275,7 +275,7 @@ let eR = (0, Chunk608787.Un)({
         inputSkuId: e
       }, a.id)
     }
-    return (0, r.jsx)(P.Z, {})
+    return (0, r.jsx)(x.Z, {})
   },
   eW = Chunk473749.memo(function() {
     let {
@@ -330,9 +330,9 @@ let eR = (0, Chunk608787.Un)({
     let {
       tab: t
     } = (0, o.parse)(e.location.search);
-    return Object.values(ex.AW).includes(t) ? (0, r.jsx)(Z.Z, eL({
+    return Object.values(eP.AW).includes(t) ? (0, r.jsx)(A.Z, eL({
       tab: t
-    }, e)) : (0, r.jsx)(Z.Z, eL({}, e))
+    }, e)) : (0, r.jsx)(A.Z, eL({}, e))
   };
 
 function e3() {
@@ -348,7 +348,7 @@ let e8 = e => (0, r.jsx)(T.Z, eL({}, e)),
   e6 = e => {
     let t = e.location.pathname;
     return (0, r.jsx)(O.Z, {
-      deepLinkType: eA.jE.FEATURES,
+      deepLinkType: eZ.jE.FEATURES,
       path: t,
       children: (e => {
         let {
@@ -394,7 +394,7 @@ let e8 = e => (0, r.jsx)(T.Z, eL({}, e)),
             let {
               tab: n
             } = (0, o.parse)(e.location.search);
-            if (Object.values(ex.AW).includes(n)) return (0, r.jsx)(s.l_, {
+            if (Object.values(eP.AW).includes(n)) return (0, r.jsx)(s.l_, {
               to: ej.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n)
             });
             return (0, r.jsx)(s.l_, {
@@ -458,14 +458,14 @@ function tt(e) {
   });
   let u = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),
     h = (0, R.T)("ChannelSidebar"),
-    m = (0, A.useAppSidebarState)(e => !e.isOpen) && h;
+    m = (0, Z.useAppSidebarState)(e => !e.isOpen) && h;
   i.useLayoutEffect(() => {
     if (h) {
       var e;
       let t = parseInt(null != (e = f.K.get(b.nT)) ? e : "");
       Number.isNaN(t) && (t = b.qO), t = Math.min(Math.max(t, b.li), b.zx), !h && t <= b.p8 && (t = b.qO), te(t);
       let n = e => {
-        e.metaKey && "b" === e.key && A.useAppSidebarState.setState(e => ({
+        e.metaKey && "b" === e.key && Z.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
         }))
       };
@@ -488,7 +488,7 @@ function tt(e) {
       let r = t < b.li / 3;
       t <= b.li ? document.body.classList.add(ew.draggingMin) : document.body.classList.remove(ew.draggingMin), t >= b.zx ? document.body.classList.add(ew.draggingMax) : document.body.classList.remove(ew.draggingMax);
       let i = t - e;
-      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / b.p8), .25))), h && (A.useAppSidebarState.setState({
+      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / b.p8), .25))), h && (Z.useAppSidebarState.setState({
         isOpen: !r
       }), r && te(b.p8))
     }, [h]),
@@ -512,7 +512,7 @@ function tt(e) {
       throttleDuration: 0
     }),
     T = i.useCallback(() => {
-      A.useAppSidebarState.setState(e => ({
+      Z.useAppSidebarState.setState(e => ({
         isOpen: !e.isOpen
       }))
     }, []);
@@ -587,10 +587,10 @@ function tn() {
     f = (0, s.$B)([ej.Z5c.CHANNEL(ej.ME, eh.Hw.channelId()), ej.Z5c.CHANNEL(eh.Hw.guildId(), eh.Hw.channelId({
       optional: true
     }), ":messageId?")]),
-    g = (null == f || null == (e = f.params) ? true : e.channelId) === eP.oC.GUILD_ONBOARDING,
+    g = (null == f || null == (e = f.params) ? true : e.channelId) === ex.oC.GUILD_ONBOARDING,
     h = i.useCallback(() => $.Z.openSidebar(), []),
     m = (0, R.T)("AppView"),
-    b = (0, A.useAppSidebarState)(e => !e.isOpen),
+    b = (0, Z.useAppSidebarState)(e => !e.isOpen),
     _ = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),
     E = (0, p.e7)([D.Z], () => D.Z.isFrameActive());
   return (0, r.jsx)("div", {
@@ -602,7 +602,7 @@ function tn() {
         "data-fullscreen": _,
         children: [!_ && (0, r.jsx)(eR, {}), d.tq ? null : (0, r.jsx)(et.Z, {}), (0, r.jsxs)("div", {
           className: ew.content,
-          children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)(tt, {
+          children: [(0, r.jsx)(P.Z, {}), (0, r.jsx)(tt, {
             isSidebarOpen: o,
             hasNotice: t,
             sidebarTheme: n,

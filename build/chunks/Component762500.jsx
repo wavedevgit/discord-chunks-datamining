@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 762500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,14 +30,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk756853 = require("./756853.js");
 
-function P(e) {
+function x(e) {
   let {
     ref: t,
     isFocused: l,
-    isActive: P,
-    status: x,
-    activities: Z,
-    applicationStream: A,
+    isActive: x,
+    status: P,
+    activities: A,
+    applicationStream: Z,
     isGameRelationship: w,
     isMobile: L,
     onOtherHover: R,
@@ -98,7 +98,7 @@ function P(e) {
   return (0, r.jsx)(h.Z, {
     ref: t,
     isFocused: l,
-    isActive: P,
+    isActive: x,
     user: M,
     onOtherHover: R,
     onClick: D,
@@ -108,14 +108,14 @@ function P(e) {
       children: [(0, r.jsx)(b.Z, {
         className: j.userInfoCentered,
         user: M,
-        status: x,
+        status: P,
         isMobile: L,
         subText: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
             hovered: e,
-            activities: Z,
-            applicationStream: A,
-            status: x,
+            activities: A,
+            applicationStream: Z,
+            status: P,
             user: M,
             userIgnored: O.Z.isIgnored(M.id)
           }), (0, r.jsxs)("div", {

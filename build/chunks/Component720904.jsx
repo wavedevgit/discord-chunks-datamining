@@ -67,13 +67,13 @@ function E(e, t) {
     return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !m.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
-      intention: y.Hz.REACTION
+      intention: O.Hz.REACTION
     })
   });
   n.length > 4 && (n.length = 4);
   let i = g.nc.useSetting(),
     l = (0, f.$R)(t);
-  return (0, o.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(O.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(s.kSQ, {
+  return (0, o.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(y.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(s.kSQ, {
     className: v.wrapper,
     children: n.map((n, i) => {
       var l;

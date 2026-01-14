@@ -67,12 +67,12 @@ let E = (0, Chunk703912.Z)(e => {
     prompt: T,
     disableGuildSelect: N,
     disclosures: j,
-    integrationType: P,
-    pid: x,
-    signal: Z
-  } = e, A = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+    integrationType: x,
+    pid: P,
+    signal: A
+  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != x ? null == u ? true : u.get(x) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let a = (0, g.jU)(x),
+    let a = (0, g.jU)(P),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
@@ -123,7 +123,7 @@ let E = (0, Chunk703912.Z)(e => {
             null == t || t.removeEventListener("abort", n)
           }
         }
-      }(A, Z);
+      }(Z, A);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
@@ -140,10 +140,10 @@ let E = (0, Chunk703912.Z)(e => {
       channelId: S,
       prompt: T,
       disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
-      integrationType: P,
+      integrationType: x,
       cancelCompletesFlow: true
     })), {
-      modalKey: A,
+      modalKey: Z,
       onCloseCallback: () => {
         M(), R || (t(new p.Z({
           errorCode: h.lTL.OAUTH2_ERROR

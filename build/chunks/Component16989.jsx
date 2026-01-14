@@ -1,7 +1,7 @@
 /** Chunk was on 31800 **/
 /** chunk id: 16989, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  G: () => v
+  G: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,36 +11,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk366939 = require("./366939.js"),
   Chunk845220 = require("./845220.js"),
   Chunk706454 = require("./706454.js"),
+  Chunk580130 = require("./580130.js"),
   Chunk626135 = require("./626135.js"),
   Chunk74538 = require("./74538.js"),
   Chunk937615 = require("./937615.js"),
   Chunk323321 = require("./323321.js"),
   Chunk540310 = require("./540310.js"),
+  Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk7449 = require("./7449.js");
-let v = e => {
+let w = e => {
   let {
     analyticsLocations: t,
     onClose: a,
-    transitionState: v,
-    premiumSubscription: w,
-    renewalInvoicePreview: y,
-    fractionalPremiumInfo: P,
-    setStep: x
-  } = e, O = (0, i.e7)([s.default], () => s.default.locale), _ = new Date(y.subscriptionPeriodStart);
-  w.isBoostOnly || (_ = p.ZP.extendDateWithUnconsumedFractionalPremium(_, P.unactivatedUnits));
-  let g = (0, f.T4)(y.total, y.currency),
-    [j, R] = (0, n.useState)(false),
-    [T, k] = (0, n.useState)(false),
-    M = _.toLocaleDateString(O, {
+    transitionState: w,
+    premiumSubscription: y,
+    currentInvoicePreview: x,
+    renewalInvoicePreview: g,
+    fractionalPremiumInfo: O,
+    setStep: _
+  } = e, j = (0, i.e7)([s.default], () => s.default.locale), T = new Date(g.subscriptionPeriodStart);
+  y.isBoostOnly || (T = f.ZP.extendDateWithUnconsumedFractionalPremium(T, O.unactivatedUnits));
+  let R = (0, i.e7)([b.Z], () => b.Z.getForApplication(S.CL)),
+    I = (0, u.T4)(x.total, x.currency),
+    [k, M] = (0, n.useState)(false),
+    [E, B] = (0, n.useState)(false),
+    A = T.toLocaleDateString(j, {
       month: "long",
       day: "numeric",
       year: "numeric"
     }),
-    I = n.useMemo(() => (0, d.b)(), []);
+    F = n.useMemo(() => (0, d.b)(), []);
   n.useEffect(() => {
-    b.default.track(C.rMx.PREMIUM_RESUBSCRIBE_FLOW_STARTED, function(e) {
+    p.default.track(h.rMx.PREMIUM_RESUBSCRIBE_FLOW_STARTED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(a);
@@ -59,32 +63,46 @@ let v = e => {
       return e
     }({
       location_stack: t,
-      load_id: I
-    }, (0, u.v)(w)))
-  }, [t, w, I]);
-  let E = async () => {
-    R(true), k(false);
+      load_id: F
+    }, (0, m.v)(y)))
+  }, [t, y, F]);
+  let U = async () => {
+    M(true), B(false);
     try {
-      await l.O5(w, t), x(m.R.SUCCESS)
+      await l.O5(y, t), _(C.R.SUCCESS)
     } catch (e) {
-      k(true), R(false)
+      B(true), M(false)
     }
-  }, B = [{
-    text: h.intl.string(h.t["cY+Oob"]),
-    onClick: () => E(),
+  }, N = [{
+    text: v.intl.string(v.t["cY+Oob"]),
+    onClick: () => U(),
     variant: "primary",
-    loading: j,
-    disabled: j
-  }];
+    loading: k,
+    disabled: k
+  }], D = v.intl.format(v.t.dbGGui, {
+    price: I,
+    date: A
+  }), G = y.premiumPlanIdFromItems;
+  if (f.ZP.hasUnconsumedGiftForSubscriptionPlan(R, G)) {
+    let e = (0, u.T4)(g.total, g.currency),
+      t = f.ZP.getIntervalForInvoice(g),
+      a = {
+        discountedPrice: e,
+        regularPrice: I,
+        date: A,
+        billingPeriod: f.ZP.getIntervalStringAsNoun(t.intervalType)
+      };
+    D = g.taxInclusive ? v.intl.format(v.t.G8IxyE, a) : v.intl.format(v.t.kXtIIn, a)
+  }
   return (0, r.jsxs)(o.ExpressiveModal, {
     graphic: {
       type: "image",
-      src: S.Z
+      src: P.Z
     },
     gradientColor: "nitro-pink",
-    transitionState: v,
-    title: h.intl.string(h.t.fYEWlq),
-    actions: B,
+    transitionState: w,
+    title: v.intl.string(v.t.fYEWlq),
+    actions: N,
     onClose: async () => a(),
     children: [(0, r.jsxs)(c.Text, {
       variant: "text-md/normal",
@@ -92,16 +110,13 @@ let v = e => {
         textAlign: "center"
       },
       children: [(0, r.jsx)("p", {
-        children: h.intl.format(h.t.dbGGui, {
-          price: g,
-          date: M
-        })
+        children: D
       }), (0, r.jsx)("p", {
-        children: h.intl.string(h.t.UQolSy)
+        children: v.intl.string(v.t.UQolSy)
       })]
-    }), T ? (0, r.jsx)(o.M14, {
+    }), E ? (0, r.jsx)(o.M14, {
       type: "critical",
-      children: h.intl.string(h.t["5mlOCW"])
+      children: v.intl.string(v.t["5mlOCW"])
     }) : null]
   })
 }

@@ -404,81 +404,80 @@ class e8 extends Chunk473749.PureComponent {
         value: t,
         uploads: n,
         stickers: r,
-        confettiPotionEmoji: i,
-        command: l,
-        commandOptionValues: a,
-        isGif: o,
-        components: s,
-        announcementSendOptions: c
+        command: i,
+        commandOptionValues: l,
+        isGif: a,
+        components: o,
+        announcementSendOptions: s
       } = e;
       if (0 === (t = t.trim()).length && (null == r || 0 === r.length) && (null == n || 0 === n.length)) return Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
       });
       let {
-        guild: u,
-        channel: p,
-        pendingReply: f,
-        chatInputType: m,
-        threadsAlsoSendToChannel: y
-      } = this.props, v = false;
-      if (null != l) {
-        if (l.inputType === N.iw.BUILT_IN_INTEGRATION) return eD.S.dispatch(eY.CkL.SHAKE_APP, {
+        guild: c,
+        channel: u,
+        pendingReply: p,
+        chatInputType: f,
+        threadsAlsoSendToChannel: m
+      } = this.props, y = false;
+      if (null != i) {
+        if (i.inputType === N.iw.BUILT_IN_INTEGRATION) return eD.S.dispatch(eY.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), Promise.resolve({
           shouldClear: false,
           shouldRefocus: true
         });
-        let e = Z.Z.getCommandOrigin(p.id);
+        let e = Z.Z.getCommandOrigin(u.id);
         if (null == e || e === N.bB.CHAT) {
           let {
             isAuthorized: e
           } = await (0, w.L)({
-            applicationId: l.applicationId,
-            channel: p,
-            commandIntegrationTypes: l.integration_types
+            applicationId: i.applicationId,
+            channel: u,
+            commandIntegrationTypes: i.integration_types
           });
           if (!e) return Promise.resolve({
             shouldClear: false,
             shouldRefocus: true
           })
         } else if (e === N.bB.APPLICATION_LAUNCHER || e === N.bB.IMAGE_RECS_MENU || e === N.bB.IMAGE_RECS_SUBMENU) {
-          var O;
+          var v;
           let {
             location: t,
             sectionName: n
-          } = null != (O = (0, eF._U)(l)) ? O : {}, r = e === N.bB.APPLICATION_LAUNCHER ? E.Z.lastShownEntrypoint() : S._b.TEXT, {
-            isAuthorized: i
+          } = null != (v = (0, eF._U)(i)) ? v : {}, r = e === N.bB.APPLICATION_LAUNCHER ? E.Z.lastShownEntrypoint() : S._b.TEXT, {
+            isAuthorized: l
           } = await (0, w.L)({
-            applicationId: l.applicationId,
-            channel: p,
-            commandIntegrationTypes: l.integration_types,
+            applicationId: i.applicationId,
+            channel: u,
+            commandIntegrationTypes: i.integration_types,
             appLauncherContext: {
               location: t,
               sectionName: n,
               entrypoint: r
             }
           });
-          if (!i) return Promise.resolve({
+          if (!l) return Promise.resolve({
             shouldClear: false,
             shouldRefocus: true
           });
-          (0, eF.SC)(l)
+          (0, eF.SC)(i)
         }
         let n = await (0, A.Z)({
-          command: l,
-          optionValues: null != a ? a : {},
+          command: i,
+          optionValues: null != l ? l : {},
           context: {
-            guild: u,
-            channel: p
+            guild: c,
+            channel: u
           }
         });
-        if (l.inputType !== N.iw.BUILT_IN_TEXT) return Promise.resolve({
+        if (i.inputType !== N.iw.BUILT_IN_TEXT) return Promise.resolve({
           shouldClear: true,
           shouldRefocus: true
         });
-        null != n && (t = null != n.content && "" !== n.content ? n.content : t, v = true === n.tts)
+        null != n && (t = null != n.content && "" !== n.content ? n.content : t, y = true === n.tts)
       }
       return (0, ek.v)({
         openWarningPopout: e => this.setState({
@@ -488,15 +487,15 @@ class e8 extends Chunk473749.PureComponent {
         content: t,
         stickers: r,
         uploads: n,
-        channel: p
+        channel: u
       }).then(async e => {
-        var a, O, j;
+        var l, v, O;
         let {
-          valid: x,
-          failureReason: C
+          valid: j,
+          failureReason: x
         } = e;
-        if (!x)
-          if (C === eY.zYc.SLOWMODE_COOLDOWN) return eD.S.dispatch(eY.CkL.SHAKE_APP, {
+        if (!j)
+          if (x === eY.zYc.SLOWMODE_COOLDOWN) return eD.S.dispatch(eY.CkL.SHAKE_APP, {
             duration: 200,
             intensity: 2
           }), eD.S.dispatch(eY.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
@@ -507,34 +506,33 @@ class e8 extends Chunk473749.PureComponent {
             shouldClear: false,
             shouldRefocus: false
           };
-        let E = (0, J.g)(t, {
-          channel: p,
+        let C = (0, J.g)(t, {
+          channel: u,
           isEdit: false
         });
-        null != E && (null != E.content && (t = E.content), null != E.tts && (v = E.tts));
-        let S = $.ZP.parse(p, t);
-        S.tts = S.tts || v, null != s && (S.content = "", S.components = s);
-        let _ = e0(e$({}, g.Z.getSendMessageOptions({
+        null != C && (null != C.content && (t = C.content), null != C.tts && (y = C.tts));
+        let E = $.ZP.parse(u, t);
+        E.tts = E.tts || y, null != o && (E.content = "", E.components = o);
+        let S = e0(e$({}, g.Z.getSendMessageOptions({
           content: t,
-          channelId: p.id,
+          channelId: u.id,
           uploads: n,
           stickers: r,
-          command: l,
-          isGif: o,
-          pendingReply: f,
-          alsoForwardToChannelId: y && null != (O = p.parent_id) ? O : true,
-          confettiPotionEmoji: i,
-          scheduledTimestamp: null == (a = this.props.pendingScheduledMessage) ? true : a.scheduledTimestamp
+          command: i,
+          isGif: a,
+          pendingReply: p,
+          alsoForwardToChannelId: m && null != (v = u.parent_id) ? v : true,
+          scheduledTimestamp: null == (l = this.props.pendingScheduledMessage) ? true : l.scheduledTimestamp
         })), {
           location: eq.dy.CHAT_INPUT
         });
-        if (null != c && (_.announcementSendOptions = c), null != s && (_.flags = (0, d.pj)(null != (j = _.flags) ? j : 0, eY.iLy.IS_COMPONENTS_V2)), o) return g.Z.sendMessage(p.id, S, true, _).then(() => {
-          if (y) {
+        if (null != s && (S.announcementSendOptions = s), null != o && (S.flags = (0, d.pj)(null != (O = S.flags) ? O : 0, eY.iLy.IS_COMPONENTS_V2)), a) return g.Z.sendMessage(u.id, E, true, S).then(() => {
+          if (m) {
             var e;
-            ey.Z(null != (e = p.parent_id) ? e : true)
+            ey.Z(null != (e = u.parent_id) ? e : true)
           }
-        }), (0, ec.A6)(p.id), em.E({
-          channelId: p.id,
+        }), (0, ec.A6)(u.id), em.E({
+          channelId: u.id,
           enabled: false
         }), {
           shouldClear: false,
@@ -542,52 +540,52 @@ class e8 extends Chunk473749.PureComponent {
         };
         if (null != n && n.length > 0) {
           let e = (0, eU.KZ)(n);
-          if ((0, eU.Bf)(e, null == u ? true : u.id)) return (0, eL.G)(p, e), {
+          if ((0, eU.Bf)(e, null == c ? true : c.id)) return (0, eL.G)(u, e), {
             shouldClear: false,
             shouldRefocus: false
           };
-          _.eagerDispatch = false, _.attachmentsToUpload = n, _.onAttachmentUploadError = (e, r, i) => {
+          S.eagerDispatch = false, S.attachmentsToUpload = n, S.onAttachmentUploadError = (e, r, i) => {
             (0, Q.A)({
               file: e,
-              guildId: p.getGuildId(),
+              guildId: u.getGuildId(),
               analyticsLocations: [],
               code: r,
               reason: i
-            }) && ("" !== t && "" === eE.Z.getDraft(p.id, eE.d.ChannelMessage) && h.Z.saveDraft(p.id, t, eE.d.ChannelMessage), 0 === eN.Z.getUploadCount(p.id, eE.d.ChannelMessage) && b.Z.setUploads({
-              channelId: p.id,
+            }) && ("" !== t && "" === eE.Z.getDraft(u.id, eE.d.ChannelMessage) && h.Z.saveDraft(u.id, t, eE.d.ChannelMessage), 0 === eN.Z.getUploadCount(u.id, eE.d.ChannelMessage) && b.Z.setUploads({
+              channelId: u.id,
               uploads: n,
               draftType: eE.d.ChannelMessage
             }))
-          }, b.Z.clearAll(p.id, eE.d.ChannelMessage)
+          }, b.Z.clearAll(u.id, eE.d.ChannelMessage)
         }
-        if (null != _.scheduledTimestamp) try {
+        if (null != S.scheduledTimestamp) try {
           await (0, ep.PV)({
-            channelId: p.id,
-            scheduledTimestamp: _.scheduledTimestamp,
+            channelId: u.id,
+            scheduledTimestamp: S.scheduledTimestamp,
             messageSendData: {
-              channelId: p.id,
+              channelId: u.id,
               content: t,
               nonce: (0, ee.r)(),
-              tts: v,
-              message_reference: _.messageReference,
-              allowed_mentions: _.allowedMentions,
-              flags: _.flags
+              tts: y,
+              message_reference: S.messageReference,
+              allowed_mentions: S.allowedMentions,
+              flags: S.flags
             },
             attachmentsToUpload: n
-          }), (0, eh.Hw)(_.scheduledTimestamp)
+          }), (0, eh.Hw)(S.scheduledTimestamp)
         } catch (e) {
           return (0, eh.wW)(e.message), {
             shouldClear: false,
             shouldRefocus: false
           }
-        } else g.Z.sendMessage(p.id, S, true, _).then(() => {
-          if (y) {
+        } else g.Z.sendMessage(u.id, E, true, S).then(() => {
+          if (m) {
             var e;
-            ey.Z(null != (e = p.parent_id) ? e : true)
+            ey.Z(null != (e = u.parent_id) ? e : true)
           }
         });
-        return this.setState((0, D.H2)()), (0, ec.A6)(p.id), (0, eg.qB)(p.id, m.drafts.type), em.E({
-          channelId: p.id,
+        return this.setState((0, D.H2)()), (0, ec.A6)(u.id), (0, eg.qB)(u.id, f.drafts.type), em.E({
+          channelId: u.id,
           enabled: false
         }), {
           shouldClear: true,

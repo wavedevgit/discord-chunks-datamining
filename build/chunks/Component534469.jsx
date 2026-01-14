@@ -1,9 +1,9 @@
 /** Chunk was on 81985 **/
 /** chunk id: 534469, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  AP: () => et,
-  Ru: () => en,
-  ZP: () => ei
+  AP: () => J,
+  Ru: () => $,
+  ZP: () => et
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,9 +18,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk223606 = require("./223606.js"),
   Chunk518738 = require("./518738.js"),
   Chunk628238 = require("./628238.js"),
-  Chunk911266 = require("./911266.jsx"),
-  Chunk111810 = require("./111810.js"),
-  Chunk235894 = require("./235894.js"),
   Chunk807092 = require("./807092.js"),
   Chunk869765 = require("./869765.js"),
   Chunk703656 = require("./703656.js"),
@@ -54,8 +51,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk548498 = require("./548498.js");
 
-function Q() {
-  return (Q = Object.assign || function(e) {
+function Y() {
+  return (Y = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -64,7 +61,7 @@ function Q() {
   }).apply(this, arguments)
 }
 
-function J(e) {
+function q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -83,7 +80,7 @@ function J(e) {
   return e
 }
 
-function $(e, t) {
+function X(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -96,7 +93,7 @@ function $(e, t) {
   }), e
 }
 
-function ee(e, t) {
+function Q(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -112,11 +109,11 @@ function ee(e, t) {
   return i
 }
 
-function et(e, t, n) {
-  return e.getElementById((0, P.p)(t, n))
+function J(e, t, n) {
+  return e.getElementById((0, S.p)(t, n))
 }
 
-function en(e) {
+function $(e) {
   var t;
   let {
     id: n,
@@ -127,49 +124,49 @@ function en(e) {
     compact: o = false,
     className: d
   } = e;
-  s()(i.type === Y.uaV.THREAD_STARTER_MESSAGE, "Message must be a thread starter message");
-  let p = Q({}, function(e) {
+  s()(i.type === z.uaV.THREAD_STARTER_MESSAGE, "Message must be a thread starter message");
+  let p = Y({}, function(e) {
       if (null == e) throw TypeError("Cannot destructure " + e);
       return e
     }((0, c.JA)(null != (t = e.id) ? t : ""))),
-    f = (0, u.e7)([O.Z], () => O.Z.getMessageByReference(l)),
+    f = (0, u.e7)([b.Z], () => b.Z.getMessageByReference(l)),
     {
       popouts: h,
       setPopout: g
-    } = (0, M.Z)(i.id, K.d$),
-    m = (0, N.ZP)(i),
-    b = (0, w.iG)(i),
-    y = (0, w.Gx)(i);
-  return i.type === Y.uaV.THREAD_STARTER_MESSAGE && null != f && f.state === O.Y.LOADED ? (0, r.jsx)(er, $(J({}, e), {
+    } = (0, w.Z)(i.id, V.d$),
+    m = (0, I.ZP)(i),
+    y = (0, N.iG)(i),
+    v = (0, N.Gx)(i);
+  return i.type === z.uaV.THREAD_STARTER_MESSAGE && null != f && f.state === b.Y.LOADED ? (0, r.jsx)(ee, X(q({}, e), {
     viewingChannelId: i.channel_id,
     message: f.message,
     groupId: f.message.id
-  })) : (0, r.jsx)(A.Z, $(J({}, p), {
+  })) : (0, r.jsx)(Z.Z, X(q({}, p), {
     id: n,
     compact: o,
     className: a()(d, {
-      [X.message]: true,
-      [X.cozyMessage]: !o,
-      [X.systemMessage]: true,
-      [X.groupStart]: true
+      [K.message]: true,
+      [K.cozyMessage]: !o,
+      [K.systemMessage]: true,
+      [K.groupStart]: true
     }),
-    childrenHeader: (0, F.Z)({
+    childrenHeader: (0, U.Z)({
       messageProps: e,
       setPopout: g,
       messagePopouts: h,
       replyReference: l,
       author: m
     }),
-    childrenSystemMessage: (0, W.Z)(e),
+    childrenSystemMessage: (0, H.Z)(e),
     childrenMessageContent: null,
-    "aria-labelledby": b,
-    "aria-describedby": y,
+    "aria-labelledby": y,
+    "aria-describedby": v,
     hasThread: false,
     author: m
   }))
 }
 
-function er(e) {
+function ee(e) {
   var t, n;
   let {
     id: l,
@@ -181,34 +178,33 @@ function er(e) {
     channel: {
       guild_id: m
     },
-    compact: b = false,
-    className: y,
-    groupId: v,
-    viewingChannelId: C
-  } = e, S = o.type === Y.uaV.REPLY ? o.messageReference : true, _ = (0, c.JA)(null != (t = e.id) ? t : ""), {
-    onFocus: P
-  } = _, T = ee(_, ["onFocus"]), {
-    isFocused: L,
-    handleFocus: G,
-    handleBlur: B
-  } = (0, R.bb)(P), {
-    popouts: V,
-    selected: Q,
+    compact: O = false,
+    className: x,
+    groupId: C,
+    viewingChannelId: S
+  } = e, P = o.type === z.uaV.REPLY ? o.messageReference : true, D = (0, c.JA)(null != (t = e.id) ? t : ""), {
+    onFocus: k
+  } = D, L = Q(D, ["onFocus"]), {
+    isFocused: B,
+    handleFocus: Y,
+    handleBlur: J
+  } = (0, T.bb)(k), {
+    popouts: $,
+    selected: ee,
     setPopout: et
-  } = (0, M.Z)(o.id, K.d$), en = x.RS.useSetting(), er = x.NA.useSetting(), ei = (0, u.e7)([O.Z], () => O.Z.getMessageByReference(S)), el = (0, g.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
+  } = (0, w.Z)(o.id, V.d$), en = v.RS.useSetting(), er = v.NA.useSetting(), ei = (0, u.e7)([b.Z], () => b.Z.getMessageByReference(P)), el = (0, g.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: ea,
     handleMouseLeave: eo,
     isHovered: es
-  } = (0, R.tn)({
-    groupId: v,
+  } = (0, T.tn)({
+    groupId: C,
     message: o,
-    defaultValue: Q,
-    popouts: V
-  }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = Q || ec && L, ed = eu || es, ep = (0, u.e7)([E.Z], () => E.Z.isDeveloper), {
+    defaultValue: ee
+  }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = ee || ec && B, ed = eu || es, ep = (0, u.e7)([j.Z], () => j.Z.isDeveloper), {
     content: ef,
     hasSpoilerEmbeds: eh,
     hasBailedAst: eg
-  } = (0, k.Z)(o, {
+  } = (0, R.Z)(o, {
     hideSimpleEmbedContent: en && er,
     isInteracting: ed,
     formatInline: false,
@@ -217,52 +213,52 @@ function er(e) {
     allowLinks: true,
     allowDevLinks: ep,
     previewLinkTarget: true,
-    viewingChannelId: C
-  }), em = (0, D.Z)(s, f, ec), eb = (0, N.ZP)(o), ey = (0, w.iG)(o, v), ev = (0, w.Gx)(o), eO = (0, H.Z)(e, ef, false), ej = i.useCallback(() => (0, j.XU)(m, f, s), [m, f, s]), ex = (0, h.p9)({
+    viewingChannelId: S
+  }), em = (0, A.Z)(s, f, ec), eb = (0, I.ZP)(o), ey = (0, N.iG)(o, C), ev = (0, N.Gx)(o), eO = (0, G.Z)(e, ef, false), ej = i.useCallback(() => (0, y.XU)(m, f, s), [m, f, s]), ex = (0, h.p9)({
     guildId: m,
     roleId: eb.iconRoleId
   });
   return (0, r.jsxs)("div", {
-    className: X.quotedChatMessage,
+    className: K.quotedChatMessage,
     children: [(0, r.jsx)(d.P3F, {
-      className: X.jump,
+      className: K.jump,
       onClick: ej,
-      "aria-label": q.intl.string(q.t.k5WiPf),
-      children: q.intl.string(q.t.k5WiPf)
-    }), (0, r.jsx)(A.Z, $(J({}, T), {
+      "aria-label": W.intl.string(W.t.k5WiPf),
+      children: W.intl.string(W.t.k5WiPf)
+    }), (0, r.jsx)(Z.Z, X(q({}, L), {
       id: l,
-      compact: b,
-      className: a()(y, {
-        [X.message]: true,
-        [X.cozyMessage]: !b,
-        [X.mentioned]: o.mentioned,
-        [X.ephemeral]: (0, I.Pv)(o),
-        [X.systemMessage]: (0, Z.Z)(o),
-        [X.groupStart]: o.id === v || o.type === Y.uaV.REPLY,
-        [X.selected]: eu
+      compact: O,
+      className: a()(x, {
+        [K.message]: true,
+        [K.cozyMessage]: !O,
+        [K.mentioned]: o.mentioned,
+        [K.ephemeral]: (0, E.Pv)(o),
+        [K.systemMessage]: (0, _.Z)(o),
+        [K.groupStart]: o.id === C || o.type === z.uaV.REPLY,
+        [K.selected]: eu
       }),
       zalgo: true,
       onKeyDown: em,
-      onFocus: G,
-      onBlur: B,
-      childrenRepliedMessage: o.type === Y.uaV.REPLY && (0, z.Z)($(J({}, e), {
+      onFocus: Y,
+      onBlur: J,
+      childrenRepliedMessage: o.type === z.uaV.REPLY && (0, F.Z)(X(q({}, e), {
         setPopout: et,
-        referencedUsernameProfile: V.referencedUsernameProfile,
-        referencedAvatarProfile: V.referencedAvatarProfile,
-        replyReference: S,
+        referencedUsernameProfile: $.referencedUsernameProfile,
+        referencedAvatarProfile: $.referencedAvatarProfile,
+        replyReference: P,
         replyMessage: ei,
         isReplySpineClickable: true
       })),
-      childrenHeader: (0, F.Z)({
+      childrenHeader: (0, U.Z)({
         messageProps: e,
         setPopout: et,
-        messagePopouts: V,
-        replyReference: S,
+        messagePopouts: $,
+        replyReference: P,
         author: eb,
         repliedMessage: ei,
         roleIcon: ex
       }),
-      childrenAccessories: (0, U.Z)({
+      childrenAccessories: (0, M.Z)({
         channelMessageProps: e,
         hasSpoilerEmbeds: eh,
         hasBailedAst: eg,
@@ -272,7 +268,7 @@ function er(e) {
         renderReactions: false,
         disableComponentInteractivity: true
       }),
-      childrenSystemMessage: (0, W.Z)(e),
+      childrenSystemMessage: (0, H.Z)(e),
       childrenMessageContent: eO,
       onMouseMove: ea,
       onMouseLeave: eo,
@@ -283,209 +279,199 @@ function er(e) {
     }))]
   })
 }
-let ei = Chunk473749.memo(function(e) {
+let et = Chunk473749.memo(function(e) {
   var t, n;
   let l, {
     id: o,
-    message: j,
+    message: y,
     message: {
-      id: P
+      id: S
     },
-    channel: Q,
+    channel: Y,
     channel: {
-      id: et
+      id: J
     },
-    compact: en = false,
-    className: er,
-    flashKey: ei,
-    groupId: el,
-    renderContentOnly: ea
+    compact: $ = false,
+    className: ee,
+    flashKey: et,
+    groupId: en,
+    renderContentOnly: er
   } = e;
-  s()(j.type !== Y.uaV.THREAD_STARTER_MESSAGE, "Message must not be a thread starter message");
-  let eo = Y.OBS.has(j.type) ? j.messageReference : true,
-    es = (0, c.JA)(null != (t = e.id) ? t : ""),
+  s()(y.type !== z.uaV.THREAD_STARTER_MESSAGE, "Message must not be a thread starter message");
+  let ei = z.OBS.has(y.type) ? y.messageReference : true,
+    el = (0, c.JA)(null != (t = e.id) ? t : ""),
     {
-      onFocus: ec
-    } = es,
-    eu = ee(es, ["onFocus"]),
-    ed = (0, b.p7)("ChatMessage"),
-    ep = x.RS.useSetting(),
-    ef = x.NA.useSetting(),
-    eh = (0, u.e7)([O.Z], () => O.Z.getMessageByReference(eo)),
+      onFocus: ea
+    } = el,
+    eo = Q(el, ["onFocus"]),
+    es = v.RS.useSetting(),
+    ec = v.NA.useSetting(),
+    eu = (0, u.e7)([b.Z], () => b.Z.getMessageByReference(ei)),
     {
-      popouts: eg,
-      selected: em,
-      setPopout: eb
-    } = (0, M.Z)(j.id, K.d$),
-    ey = (0, R.qo)(j, Q, eb),
-    ev = (0, R.Go)(j, Q),
+      popouts: ed,
+      selected: ep,
+      setPopout: ef
+    } = (0, w.Z)(y.id, V.d$),
+    eh = (0, T.qo)(y, Y, ef),
+    eg = (0, T.Go)(y, Y),
     {
-      handleMouseEnter: eO,
-      handleMouseLeave: ej,
-      hasHovered: ex,
-      isHovered: eC
-    } = (0, R.tn)({
-      groupId: el,
-      message: j,
-      defaultValue: em,
-      popouts: eg
+      handleMouseEnter: em,
+      handleMouseLeave: eb,
+      hasHovered: ey,
+      isHovered: ev
+    } = (0, T.tn)({
+      groupId: en,
+      message: y,
+      defaultValue: ep
     }),
     {
-      isFocused: eE,
-      hasFocused: eS,
-      handleFocus: e_,
-      handleBlur: eI
-    } = (0, R.bb)(ec),
-    eP = i.useCallback(e => {
-      e_(e), eO(e)
-    }, [e_, eO]),
-    eZ = i.useCallback(e => {
-      eI(e), ej()
-    }, [eI, ej]),
-    eN = (0, u.e7)([S.Z], () => S.Z.isEditing(et, P), [et, P]),
-    eT = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
-    eA = em || eN || eT && eE,
-    ew = eA || eC,
-    eR = (0, u.e7)([C.Z], () => j.hasFlag(Y.iLy.HAS_THREAD) && C.Z.getChannel(_.default.castMessageIdAsChannelId(j.id))),
-    eD = j.isFirstMessageInForumPost(Q),
-    eM = (0, g.A)((null != (n = j.editedTimestamp) ? n : j.timestamp).valueOf()),
-    ek = (0, u.e7)([E.Z], () => E.Z.isDeveloper),
+      isFocused: eO,
+      hasFocused: ej,
+      handleFocus: ex,
+      handleBlur: eC
+    } = (0, T.bb)(ea),
+    eE = i.useCallback(e => {
+      ex(e), em(e)
+    }, [ex, em]),
+    eS = i.useCallback(e => {
+      eC(e), eb()
+    }, [eC, eb]),
+    e_ = (0, u.e7)([x.Z], () => x.Z.isEditing(J, S), [J, S]),
+    eI = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
+    eP = ep || e_ || eI && eO,
+    eZ = eP || ev,
+    eN = (0, u.e7)([O.Z], () => y.hasFlag(z.iLy.HAS_THREAD) && O.Z.getChannel(C.default.castMessageIdAsChannelId(y.id))),
+    eT = y.isFirstMessageInForumPost(Y),
+    eA = (0, g.A)((null != (n = y.editedTimestamp) ? n : y.timestamp).valueOf()),
+    ew = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
     {
-      content: eL,
-      hasSpoilerEmbeds: eU,
-      hasBailedAst: eG
-    } = (0, k.Z)(j, {
-      hideSimpleEmbedContent: ep && ef,
-      isInteracting: ew,
+      content: eR,
+      hasSpoilerEmbeds: eD,
+      hasBailedAst: eM
+    } = (0, R.Z)(y, {
+      hideSimpleEmbedContent: es && ec,
+      isInteracting: eZ,
       formatInline: false,
-      allowList: eD || eM,
-      allowHeading: eD || eM,
+      allowList: eT || eA,
+      allowHeading: eT || eA,
       allowLinks: true,
-      allowDevLinks: ek,
+      allowDevLinks: ew,
       previewLinkTarget: true
     }),
-    eB = (0, D.Z)(P, et, eT),
-    eF = (0, N.ZP)(j),
-    eH = (0, u.e7)([v.Z], () => v.Z.getPendingReply(et)),
-    eV = function(e) {
+    ek = (0, A.Z)(S, J, eI),
+    eL = (0, I.ZP)(y),
+    eU = (0, u.e7)([m.Z], () => m.Z.getPendingReply(J)),
+    eG = function(e) {
       let t = i.useRef(e);
       return i.useEffect(() => {
         t.current = null != e ? e : t.current
       }), null != e ? e : t.current
-    }(ei),
-    ez = (0, h.p9)({
-      guildId: Q.guild_id,
-      roleId: eF.iconRoleId
+    }(et),
+    eB = (0, h.p9)({
+      guildId: Y.guild_id,
+      roleId: eL.iconRoleId
     }),
-    eW = (0, w.iG)(j, el),
-    eK = (0, w.Gx)(j),
-    eY = (0, u.e7)([f.Z], () => f.Z.getMessage(P), [P]),
-    eq = (0, L.Z)({
-      message: j,
-      channel: Q
+    eF = (0, N.iG)(y, en),
+    eH = (0, N.Gx)(y),
+    eV = (0, u.e7)([f.Z], () => f.Z.getMessage(S), [S]),
+    ez = (0, D.Z)({
+      message: y,
+      channel: Y
     }),
-    eX = i.useRef(window),
-    eQ = null != eY,
-    eJ = i.useMemo(() => Object.values(eg).some(e => e), [eg]);
-  l = j.type === Y.uaV.CUSTOM_GIFT ? "" : !eN && eQ ? (0, G.Z)(e, eL) : (0, H.Z)(e, eL, eN);
-  let e$ = j.id === el,
-    e0 = (0, r.jsx)(d.tEY, {
+    eW = i.useRef(window),
+    eK = null != eV;
+  l = y.type === z.uaV.CUSTOM_GIFT ? "" : !e_ && eK ? (0, k.Z)(e, eR) : (0, G.Z)(e, eR, e_);
+  let eY = y.id === en,
+    eq = (0, r.jsx)(d.tEY, {
       offset: {
         left: 4,
         right: 4
       },
-      children: (0, r.jsxs)("li", {
+      children: (0, r.jsx)("li", {
         id: o,
-        className: X.messageListItem,
+        className: K.messageListItem,
         "aria-setsize": false,
-        children: [(0, y.Uw)(j) && (0, r.jsx)(m.Z, {
-          compact: en,
-          message: j,
-          hovering: eC && !eN && !eJ
-        }), (0, r.jsx)(A.Z, $(J({}, eu), {
+        children: (0, r.jsx)(Z.Z, X(q({}, eo), {
           "aria-setsize": false,
-          "aria-roledescription": q.intl.string(q.t.BAB0yK),
-          "aria-labelledby": eW,
-          "aria-describedby": eK,
-          onFocus: eP,
-          onBlur: eZ,
-          onContextMenu: ey,
-          onKeyDown: eB,
-          onClick: ev,
-          compact: en,
-          contentOnly: ea,
-          className: a()(er, {
-            [X.message]: true,
-            [X.cozyMessage]: !en,
-            [X.mentioned]: j.mentioned,
-            [X.ephemeral]: (0, I.Pv)(j),
-            [X.nitroMessage]: j.type === Y.uaV.NITRO_NOTIFICATION,
-            [X.systemMessage]: (0, Z.Z)(j),
-            [X.groupStart]: !ea && (e$ || j.type === Y.uaV.REPLY),
-            [X.selected]: eA,
-            [X.replying]: (null == eH ? true : eH.message.id) === j.id,
-            [X.interactionSending]: j.isCommandType() && j.state === Y.yb.SENDING,
-            [X.automodMessage]: eQ,
-            [X.editing]: eN,
-            [X.hasOpenPopouts]: eJ,
-            [X.potioned]: (0, y.Uw)(j) && ed
+          "aria-roledescription": W.intl.string(W.t.BAB0yK),
+          "aria-labelledby": eF,
+          "aria-describedby": eH,
+          onFocus: eE,
+          onBlur: eS,
+          onContextMenu: eh,
+          onKeyDown: ek,
+          onClick: eg,
+          compact: $,
+          contentOnly: er,
+          className: a()(ee, {
+            [K.message]: true,
+            [K.cozyMessage]: !$,
+            [K.mentioned]: y.mentioned,
+            [K.ephemeral]: (0, E.Pv)(y),
+            [K.nitroMessage]: y.type === z.uaV.NITRO_NOTIFICATION,
+            [K.systemMessage]: (0, _.Z)(y),
+            [K.groupStart]: !er && (eY || y.type === z.uaV.REPLY),
+            [K.selected]: eP,
+            [K.replying]: (null == eU ? true : eU.message.id) === y.id,
+            [K.interactionSending]: y.isCommandType() && y.state === z.yb.SENDING,
+            [K.automodMessage]: eK
           }),
-          zalgo: !eN,
-          childrenRepliedMessage: ea || j.type !== Y.uaV.REPLY ? true : (0, z.Z)($(J({}, e), {
-            setPopout: eb,
-            referencedUsernameProfile: eg.referencedUsernameProfile,
-            referencedAvatarProfile: eg.referencedAvatarProfile,
-            replyReference: eo,
-            replyMessage: eh,
+          zalgo: !e_,
+          childrenRepliedMessage: er || y.type !== z.uaV.REPLY ? true : (0, F.Z)(X(q({}, e), {
+            setPopout: ef,
+            referencedUsernameProfile: ed.referencedUsernameProfile,
+            referencedAvatarProfile: ed.referencedAvatarProfile,
+            replyReference: ei,
+            replyMessage: eu,
             isReplySpineClickable: true
           })),
-          childrenExecutedCommand: (0, V.Z)(e, eb, eg),
-          childrenHeader: ea ? true : (0, F.Z)({
+          childrenExecutedCommand: (0, B.Z)(e, ef, ed),
+          childrenHeader: er ? true : (0, U.Z)({
             messageProps: e,
-            setPopout: eb,
-            messagePopouts: eg,
-            replyReference: eo,
-            author: eF,
-            repliedMessage: eh,
-            roleIcon: ez
+            setPopout: ef,
+            messagePopouts: ed,
+            replyReference: ei,
+            author: eL,
+            repliedMessage: eu,
+            roleIcon: eB
           }),
-          childrenAccessories: (0, U.Z)({
+          childrenAccessories: (0, M.Z)({
             channelMessageProps: e,
-            hasSpoilerEmbeds: eU,
-            hasBailedAst: eG,
-            handleContextMenu: ey,
-            isInteracting: ew,
-            isAutomodBlockedMessage: eQ,
-            forceAddReactions: j.type === Y.uaV.EMOJI_ADDED
+            hasSpoilerEmbeds: eD,
+            hasBailedAst: eM,
+            handleContextMenu: eh,
+            isInteracting: eZ,
+            isAutomodBlockedMessage: eK,
+            forceAddReactions: y.type === z.uaV.EMOJI_ADDED
           }),
-          childrenButtons: ex || eS ? (0, B.Z)({
+          childrenButtons: ey || ej ? (0, L.Z)({
             buttonProps: e,
-            setPopout: eb,
-            messagePopouts: eg,
-            isFocused: eC || eE,
-            messageWindow: eX.current
+            setPopout: ef,
+            messagePopouts: ed,
+            isFocused: ev || eO,
+            messageWindow: eW.current
           }) : true,
-          childrenSystemMessage: (0, W.Z)(e),
+          childrenSystemMessage: (0, H.Z)(e),
           childrenMessageContent: l,
-          onMouseMove: eO,
-          onMouseLeave: ej,
-          hasThread: !ea && j.hasFlag(Y.iLy.HAS_THREAD) && null != eR,
-          isSystemMessage: (0, Z.Z)(j),
-          hasReply: j.type === Y.uaV.REPLY,
+          onMouseMove: em,
+          onMouseLeave: eb,
+          hasThread: !er && y.hasFlag(z.iLy.HAS_THREAD) && null != eN,
+          isSystemMessage: (0, _.Z)(y),
+          hasReply: y.type === z.uaV.REPLY,
           messageRef: e => {
             var t, n;
-            eq.current = e, eX.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
+            ez.current = e, eW.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
           },
-          author: eF
-        }))]
+          author: eL
+        }))
       })
     });
-  return null != eV ? (0, r.jsx)(T.Z, {
-    flashKey: eV,
+  return null != eG ? (0, r.jsx)(P.Z, {
+    flashKey: eG,
     className: a()({
-      [X.backgroundFlash]: true,
-      [X.groupStart]: !en && j.id === el
+      [K.backgroundFlash]: true,
+      [K.groupStart]: !$ && y.id === en
     }),
-    children: e0
-  }, "bg-flash-".concat(o)) : e0
+    children: eq
+  }, "bg-flash-".concat(o)) : eq
 })

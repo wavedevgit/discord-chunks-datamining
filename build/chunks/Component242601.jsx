@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk620389 = require("./620389.js"),
+  Chunk853590 = require("./853590.js"),
   Chunk55160 = require("./55160.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -135,10 +135,10 @@ class eu extends Chunk473749.PureComponent {
   }
   componentDidMount() {
     var e;
-    this.setAnimatedValue(0), p.Z.subscribe("LAYER_PUSH", this.closeAllHeaderNotices), this.historyUnlisten = A.Z.addRouteChangeListener(this.handleHistoryChange);
+    this.setAnimatedValue(0), p.Z.subscribe("LAYER_PUSH", this.closeAllHeaderNotices), this.historyUnlisten = Z.Z.addRouteChangeListener(this.handleHistoryChange);
     let {
       location: t
-    } = A.Z.getHistory();
+    } = Z.Z.getHistory();
     (null == (e = t.state) ? true : e.shouldShowSubscribeTooltip) && this.showTimeout.start(1e3, () => this.setState({
       shouldShowSubscribeTooltip: true
     }))
@@ -278,7 +278,7 @@ class eu extends Chunk473749.PureComponent {
     {
       if (n.features.has(X.GuildFeatures.HUB) && !l) return (0, r.jsx)("div", {
         className: er.hubContainer,
-        children: (0, r.jsx)(P.Z, {
+        children: (0, r.jsx)(x.Z, {
           guild: n,
           channel: null != i ? i : k.ZP.getDefaultChannel(n.id)
         })
@@ -452,8 +452,8 @@ function ed(e) {
   let p = (0, v.Z)(n),
     f = (0, o.e7)([D.Z], () => D.Z.getGuildDimensions(n).scrollTo),
     T = (0, o.e7)([V.Z], () => V.Z.getChannelId()),
-    P = (0, o.e7)([H.Z], () => H.Z.can(X.Plq.MANAGE_GUILD, u)),
-    A = (0, o.e7)([M.Z], () => M.Z.isUnavailable(n)),
+    x = (0, o.e7)([H.Z], () => H.Z.can(X.Plq.MANAGE_GUILD, u)),
+    Z = (0, o.e7)([M.Z], () => M.Z.isUnavailable(n)),
     w = (0, o.e7)([F.default], () => F.default.getCurrentUser()),
     {
       enableStudyGroup: k
@@ -467,16 +467,16 @@ function ed(e) {
   i.useEffect(() => {
     n !== q && K(!Y)
   }, [n, q, Y]);
-  let [J, et] = (0, E.ZP)(e => [$.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ee.R.GUILD_HEADER_TOOLTIPS)], a.X), en = (0, _.Z)(u), er = (0, d.s9z)(d.JQI), ei = (0, o.e7)([G.Z], () => G.Z.hasLayers()), el = (0, o.e7)([L.Z], () => L.Z.shouldShow(es)), ea = (0, S.Z)(n), eo = (null == u ? true : u.features.has(X.GuildFeatures.HUB)) === true, ec = P && (null == u ? true : u.features.has(X.GuildFeatures.DISCOVERABLE)) === true, ed = (0, o.e7)([N.Z, G.Z], () => null != u && null != w && P && !G.Z.hasLayers() && N.Z.shouldShowGuildTemplateDirtyTooltip(n)), ep = (0, o.e7)([R.Z], () => R.Z.getChannel(c)), {
+  let [J, et] = (0, E.ZP)(e => [$.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ee.R.GUILD_HEADER_TOOLTIPS)], a.X), en = (0, _.Z)(u), er = (0, d.s9z)(d.JQI), ei = (0, o.e7)([G.Z], () => G.Z.hasLayers()), el = (0, o.e7)([L.Z], () => L.Z.shouldShow(es)), ea = (0, S.Z)(n), eo = (null == u ? true : u.features.has(X.GuildFeatures.HUB)) === true, ec = x && (null == u ? true : u.features.has(X.GuildFeatures.DISCOVERABLE)) === true, ed = (0, o.e7)([N.Z, G.Z], () => null != u && null != w && x && !G.Z.hasLayers() && N.Z.shouldShowGuildTemplateDirtyTooltip(n)), ep = (0, o.e7)([R.Z], () => R.Z.getChannel(c)), {
     isPopoutOpen: ef
   } = (0, I.y)(), eg = null != (t = null == u ? true : u.features.has(X.GuildFeatures.COMMUNITY)) && t, eh = z.ZP.isNewUser(w), em = W && !eh;
   (0, y.Z)(u);
   let eb = (0, O.Nj)(s.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-    e_ = (0, x.Z)(n),
+    e_ = (0, P.Z)(n),
     eE = (0, C.Z)(n),
     eO = (0, o.e7)([V.Z], () => V.Z.getChannelId()),
     ev = (0, o.e7)([B.Z], () => B.Z.desyncedVoiceStatesCount),
-    eI = (0, Z.Z)(n);
+    eI = (0, A.Z)(n);
   return (0, r.jsx)(eu, {
     guildId: n,
     hideSelectedChannel: l,
@@ -488,7 +488,7 @@ function ed(e) {
     voiceStates: p,
     rtcConnectedChannelId: eO,
     rtcDesyncedVoiceStatesCount: ev,
-    isUnavailable: A,
+    isUnavailable: Z,
     user: w,
     hasChannelNotice: null != en || J,
     anyLayerOpen: er || ei,

@@ -65,7 +65,7 @@ let g = function(e) {
     scrollToStart: S,
     scrollToEnd: T,
     setFocus: N
-  }), P = i.useMemo(() => t.map(e => e.length), [t]);
+  }), x = i.useMemo(() => t.map(e => e.length), [t]);
   return (0, r.jsx)(a.bG, {
     navigator: j,
     children: (0, r.jsx)(a.SJ, {
@@ -116,7 +116,7 @@ let g = function(e) {
             sectionHeight: u.aS,
             renderFooter: v,
             footerHeight: I,
-            sections: P,
+            sections: x,
             className: f.peopleList
           }, n)), h]
         })

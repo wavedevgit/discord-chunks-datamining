@@ -27,9 +27,9 @@ function f(e) {
     autoTrackExposure: false
   }), m = i.useCallback(() => {
     (0, c.JG)(t)
-  }, [t]), O = i.useCallback(() => {
+  }, [t]), y = i.useCallback(() => {
     null != n && (0, c.JG)(n)
-  }, [n]), y = i.useCallback(() => {
+  }, [n]), O = i.useCallback(() => {
     null != g && (0, c.JG)(g)
   }, [g]), h = i.useCallback(() => {
     null != g && (0, o.Z)(g)
@@ -47,13 +47,13 @@ function f(e) {
     }), (0, r.jsx)(l.sNh, {
       id: "copy-item-id",
       label: j,
-      action: O,
+      action: y,
       icon: l.VuL
     }), null != g && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.sNh, {
         id: "copy-image-link",
         label: d.intl.string(d.t["8xHmxo"]),
-        action: y,
+        action: O,
         icon: l.xPt
       }), u.isPlatformEmbedded && (0, r.jsx)(l.sNh, {
         id: "open-image-link",

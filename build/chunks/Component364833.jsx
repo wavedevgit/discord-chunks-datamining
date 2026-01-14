@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 364833, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,7 +48,7 @@ function j(e) {
   return e
 }
 
-function P(e) {
+function x(e) {
   var t;
   let {
     quest: n
@@ -80,12 +80,12 @@ function P(e) {
   })
 }
 
-function x(e) {
+function P(e) {
   var t, n, l;
   let {
     nodeRef: c,
     quest: m
-  } = e, _ = (0, d.O5)(), S = (0, o.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [x, Z] = i.useState(false), A = i.useCallback(() => Z(true), []), w = i.useCallback(() => Z(false), []), {
+  } = e, _ = (0, d.O5)(), S = (0, o.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [P, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
     launchInGameActivity: L
   } = (0, h.zB)(m), R = i.useCallback(e => {
     e.stopPropagation()
@@ -137,13 +137,13 @@ function x(e) {
     }),
     onClick: R,
     onKeyPress: R,
-    onFocus: A,
-    onMouseEnter: A,
+    onFocus: Z,
+    onMouseEnter: Z,
     onBlur: w,
     onMouseLeave: w,
     children: [(0, r.jsxs)("div", {
       className: N.utils,
-      children: [G ? (0, r.jsx)(P, {
+      children: [G ? (0, r.jsx)(x, {
         quest: m
       }) : (0, r.jsx)(v.Z, {}), (0, r.jsx)(E.i, {
         quest: m,
@@ -173,7 +173,7 @@ function x(e) {
         }
       })]
     }), !G && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(P, {
+      children: [(0, r.jsx)(x, {
         quest: m
       }), (0, r.jsx)("div", {
         className: N.instructions,
@@ -184,7 +184,7 @@ function x(e) {
         })
       })]
     }), G && !H && (0, r.jsx)(I.Z, {
-      autoplay: x,
+      autoplay: P,
       className: N.rewardTileWithInstructions,
       quest: m,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -224,12 +224,12 @@ function x(e) {
     })]
   })
 }
-let Z = function(e) {
+let A = function(e) {
   return (0, r.jsx)(_.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(x, j({
+    children: t => (0, r.jsx)(P, j({
       nodeRef: t
     }, e))
   })

@@ -39,7 +39,7 @@ let N = e => {
     } = (0, h.Z)({
       userId: null == t ? true : t.id,
       size: c.EFr.SIZE_56
-    }), d = m.ZP.getName(t), C = t.username !== d && a === _.Fz.SUCCESS, f = a === _.Fz.FAIL;
+    }), d = m.ZP.getName(t), C = t.username !== d && a === _.Fz.SUCCESS, p = a === _.Fz.FAIL;
     return (0, r.jsxs)("div", {
       className: w.referredUserRowContainer,
       children: [(0, r.jsx)(c.qEK, function(e) {
@@ -61,14 +61,14 @@ let N = e => {
         return e
       }({
         imageClassName: s()({
-          [w.erroredAvatar]: f
+          [w.erroredAvatar]: p
         }),
         src: n,
         "aria-label": d,
         size: c.EFr.SIZE_56
       }, l)), (0, r.jsxs)("div", {
         className: w.referredUserRowBody,
-        children: [f ? (0, r.jsxs)(r.Fragment, {
+        children: [p ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Text, {
             className: w.errorDisplayName,
             variant: "text-md/medium",
@@ -87,7 +87,7 @@ let N = e => {
           children: (0, r.jsx)(c.P3F, {
             onClick: () => {
               var e;
-              return e = t.id, void(u.Z.hasLayers() && (0, p.xf)(), x.Z.openPrivateChannel({
+              return e = t.id, void(u.Z.hasLayers() && (0, f.xf)(), x.Z.openPrivateChannel({
                 recipientIds: e
               }), i())
             },
@@ -117,13 +117,13 @@ let N = e => {
       onClose: i
     }, e.id)), n = (0, d.e7)([g.Z], () => g.Z.getReferralsRemaining());
     l()(null !== n, "Referrals remaining should not be null");
-    let o = (0, f.Fg)(),
+    let o = (0, p.Fg)(),
       x = (0, C.ap)(o) ? y.Z : L.Z,
-      p = S.intl.string(S.t.Pcb7KF),
+      f = S.intl.string(S.t.Pcb7KF),
       h = [...a.values()].filter(e => e === _.Fz.SUCCESS).length;
-    return n > 0 && (p = S.intl.formatToPlainString(S.t.iWtOfC, {
+    return n > 0 && (f = S.intl.formatToPlainString(S.t.iWtOfC, {
       numReferrals: h
-    })), 0 === h && (p = S.intl.string(S.t["7VBEue"])), (0, r.jsxs)("div", {
+    })), 0 === h && (f = S.intl.string(S.t["7VBEue"])), (0, r.jsxs)("div", {
       className: w.confrimationContainer,
       children: [(0, r.jsx)(c.P3F, {
         onClick: i,
@@ -138,15 +138,15 @@ let N = e => {
       }), (0, r.jsx)(c.Heading, {
         variant: "heading-lg/bold",
         className: w.heading,
-        children: p
+        children: f
       }), (0, r.jsx)("div", {
         className: w.confirmedUserContainer,
         children: s
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         children: S.intl.format(S.t.CZaMHn, {
-          days: v.p,
-          helpdeskArticle: j.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
+          days: b.p,
+          helpdeskArticle: j.Z.getArticleURL(v.BhN.REFERRAL_PROGRAM)
         })
       })]
     })

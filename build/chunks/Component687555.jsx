@@ -39,15 +39,15 @@ function Z(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: v.title,
+      className: b.title,
       children: [(0, r.jsx)(R, {
-        className: v.titleImage
+        className: b.titleImage
       }), (0, r.jsx)(x.Heading, {
         variant: "heading-xl/bold",
         children: y.intl.string(y.t.Lm2nFc)
       })]
     }), (0, r.jsx)(x.Text, {
-      className: v.description,
+      className: b.description,
       variant: "text-md/medium",
       color: "text-default",
       children: i
@@ -58,13 +58,13 @@ function Z(e) {
 function F() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: v.title,
+      className: b.title,
       children: (0, r.jsx)(x.Heading, {
         variant: "heading-xl/bold",
         children: y.intl.string(y.t["PFp+aJ"])
       })
     }), (0, r.jsx)(x.Text, {
-      className: v.description,
+      className: b.description,
       variant: "text-md/medium",
       color: "text-default",
       children: y.intl.string(y.t.eBIGB4)
@@ -74,7 +74,7 @@ function F() {
 
 function O() {
   return (0, r.jsx)("div", {
-    className: v.erroredContent,
+    className: b.erroredContent,
     children: (0, r.jsx)(x.Eep, {
       src: w,
       width: 225,
@@ -88,32 +88,32 @@ function E(e) {
     onClose: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: v.erroredContainer,
+    className: b.erroredContainer,
     children: [(0, r.jsxs)("div", {
-      className: n()(v.erroredHeader, v.headerSeparator),
+      className: n()(b.erroredHeader, b.headerSeparator),
       children: [(0, r.jsx)("div", {
-        className: v.title,
+        className: b.title,
         children: (0, r.jsx)(x.Heading, {
           variant: "heading-xl/bold",
           children: y.intl.string(y.t.a9HOKg)
         })
       }), (0, r.jsx)(x.Text, {
-        className: v.description,
+        className: b.description,
         variant: "text-md/medium",
         color: "text-default",
         children: y.intl.string(y.t.JjjeZb)
       })]
     }), (0, r.jsx)("div", {
-      className: v.erroredContent,
+      className: b.erroredContent,
       children: (0, r.jsx)(x.Eep, {
         src: S,
         width: 178,
         height: 190
       })
     }), (0, r.jsx)("div", {
-      className: n()(v.footer, v.footerSeparator),
+      className: n()(b.footer, b.footerSeparator),
       children: (0, r.jsx)("div", {
-        className: v.submit,
+        className: b.submit,
         children: (0, r.jsx)(C.zxk, {
           variant: "primary",
           fullWidth: true,
@@ -128,36 +128,36 @@ function E(e) {
 function U(e) {
   let {
     onShare: t
-  } = e, a = (0, c.e7)([m.Z], () => m.Z.getRecipientStatus()), [s, l] = i.useState([]), [d, o] = i.useState(new Set), [f, h] = i.useState(false);
+  } = e, a = (0, c.e7)([m.Z], () => m.Z.getRecipientStatus()), [s, l] = i.useState([]), [d, o] = i.useState(new Set), [p, h] = i.useState(false);
   return i.useEffect(() => {
     (async () => {
       let e = [];
       for (let [t, r] of a)
         if (r === j.Fe.PENDING) {
-          let a = await (0, p.PR)(t);
+          let a = await (0, f.PR)(t);
           e.push(a)
         } l(e)
     })()
   }, [a]), (0, r.jsxs)("div", {
-    className: v.remindContainer,
+    className: b.remindContainer,
     children: [(0, r.jsxs)("div", {
-      className: n()(v.remindHeader, v.headerSeparator),
+      className: n()(b.remindHeader, b.headerSeparator),
       children: [(0, r.jsxs)("div", {
-        className: v.title,
+        className: b.title,
         children: [(0, r.jsx)(R, {
-          className: v.titleImage
+          className: b.titleImage
         }), (0, r.jsx)(x.Heading, {
           variant: "heading-xl/bold",
           children: y.intl.string(y.t.SY9tyI)
         })]
       }), (0, r.jsx)(x.Text, {
-        className: v.description,
+        className: b.description,
         variant: "text-md/medium",
         color: "text-default",
         children: y.intl.string(y.t.mPmPri)
       })]
     }), (0, r.jsx)("div", {
-      className: v.list,
+      className: b.list,
       children: s.map(e => (0, r.jsx)(L.Z, {
         user: e,
         checked: d.has(e),
@@ -169,14 +169,14 @@ function U(e) {
         }
       }, e.id))
     }), (0, r.jsx)("div", {
-      className: n()(v.footer, v.footerSeparator),
+      className: n()(b.footer, b.footerSeparator),
       children: (0, r.jsx)("div", {
-        className: v.submit,
+        className: b.submit,
         children: (0, r.jsx)(C.zxk, {
           text: y.intl.string(y.t.ItpQxk),
           fullWidth: true,
           variant: "primary",
-          disabled: f,
+          disabled: p,
           onClick: async () => {
             h(true), await t([...d.values()]), h(false)
           }
@@ -192,7 +192,7 @@ function R(e) {
   } = e;
   return "light" === (0, c.e7)([h.Z], () => h.Z.theme) ? (0, r.jsx)(x.Eep, {
     className: t,
-    src: b,
+    src: v,
     width: 55,
     height: 38
   }) : (0, r.jsx)(x.Eep, {
@@ -206,7 +206,7 @@ let k = function(e) {
   let {
     onClose: t,
     onShare: a
-  } = e, s = (0, c.e7)([m.Z], () => m.Z.getReferralsRemaining()), [l, p] = i.useState(""), h = (0, f.Z)(l, 400), [j, g] = i.useState(new Map), [b, S] = i.useState(false), {
+  } = e, s = (0, c.e7)([m.Z], () => m.Z.getReferralsRemaining()), [l, f] = i.useState(""), h = (0, p.Z)(l, 400), [j, g] = i.useState(new Map), [v, S] = i.useState(false), {
     eligibleUsers: w,
     fetchUsers: N,
     hasError: R,
@@ -229,7 +229,7 @@ let k = function(e) {
   let P = h.length > 0 && 0 === w.length;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
-      className: n()(v.header, v.headerSeparator),
+      className: n()(b.header, b.headerSeparator),
       children: [P ? (0, r.jsx)(F, {}) : (0, r.jsx)(Z, {
         numOfSelectedUsers: M.length,
         anySelected: j.size > 0
@@ -250,17 +250,17 @@ let k = function(e) {
           }), g(a)
         },
         children: (0, r.jsx)("div", {
-          className: v.searchbar,
+          className: b.searchbar,
           children: (0, r.jsx)(x.CtY, {
             placeholder: 0 === j.size ? y.intl.string(y.t.Kd5RaI) : "",
             onQueryChange: e => {
-              p(e.target.value)
+              f(e.target.value)
             }
           })
         })
       })]
     }), P ? (0, r.jsx)(O, {}) : (0, r.jsxs)(C.w0Z, {
-      className: v.list,
+      className: b.list,
       children: [w.map(e => (0, r.jsx)(L.Z, {
         disabled: [...j.values()].filter(e => !B.has(e.id)).length >= s && !j.has(e.id) && !B.has(e.id),
         checked: j.has(e.id),
@@ -275,14 +275,14 @@ let k = function(e) {
         ref: A
       })]
     }), (0, r.jsx)("div", {
-      className: n()(v.footer, v.footerSeparator),
+      className: n()(b.footer, b.footerSeparator),
       children: (0, r.jsx)("div", {
-        className: v.submit,
+        className: b.submit,
         children: (0, r.jsx)(C.zxk, {
           variant: "primary",
           fullWidth: true,
           text: P ? y.intl.string(y.t.wpSqAW) : y.intl.string(y.t.ItpQxk),
-          disabled: 0 === j.size && !P || b,
+          disabled: 0 === j.size && !P || v,
           onClick: async () => {
             if (P) return void t();
             S(true), await a([...j.values()]), S(false)

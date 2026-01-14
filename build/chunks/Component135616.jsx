@@ -71,7 +71,7 @@ let p = e => {
       size: s = "md",
       width: c,
       height: f,
-      color: p = i.Z.colors.STATUS_POSITIVE,
+      color: p = i.Z.colors.ICON_FEEDBACK_POSITIVE,
       colorClass: _ = ""
     } = e,
     m = d(e, ["size", "width", "height", "color", "colorClass"]);

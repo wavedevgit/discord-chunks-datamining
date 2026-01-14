@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 848543, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk424126 = require("./424126.js");
 
-function P(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function P(e) {
   return e
 }
 
-function x(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function x(e, t) {
   }), e
 }
 
-function Z(e) {
+function A(e) {
   var {
     channel: t
   } = e, l = function(e, t) {
@@ -80,13 +80,13 @@ function Z(e) {
     }
     return i
   }(e, ["channel"]);
-  let Z = i.useRef(null),
+  let A = i.useRef(null),
     {
-      mute: A,
+      mute: Z,
       suppress: w
     } = (0, E.Z)(t),
     L = (0, o.e7)([O.Z], () => O.Z.isDeaf()),
-    R = A || w || L,
+    R = Z || w || L,
     [D, M] = i.useState(false),
     k = t.getGuildId(),
     U = (0, I.sR)({
@@ -103,7 +103,7 @@ function Z(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, x(P({
+      return t => (0, r.jsx)(e, P(x({
         guildId: k,
         sourceAnalyticsLocations: B
       }, t), {
@@ -127,12 +127,12 @@ function Z(e) {
   }), (0, r.jsx)(h.Gt, {
     value: B,
     children: (0, r.jsx)(u.u, {
-      targetElementRef: Z,
-      text: A ? N.intl.string(N.t["Ox4/zU"]) : w ? N.intl.string(N.t["+YBKYI"]) : L ? N.intl.string(N.t.X1lQli) : N.intl.string(N.t["6EJvHt"]),
+      targetElementRef: A,
+      text: Z ? N.intl.string(N.t["Ox4/zU"]) : w ? N.intl.string(N.t["+YBKYI"]) : L ? N.intl.string(N.t.X1lQli) : N.intl.string(N.t["6EJvHt"]),
       asContainer: true,
       shouldShow: !D,
       children: (0, r.jsx)(p.yRy, {
-        targetElementRef: Z,
+        targetElementRef: A,
         animation: p.yRy.Animation.FADE,
         shouldShow: D,
         position: "top",
@@ -153,8 +153,8 @@ function Z(e) {
           })
         },
         children: e => (0, r.jsx)("div", {
-          ref: Z,
-          children: (0, r.jsx)(d.zx, x(P(x(P({
+          ref: A,
+          children: (0, r.jsx)(d.zx, P(x(P(x({
             "data-migration-pending": true
           }, e), {
             className: a()(j.button, j.buttonColor, {

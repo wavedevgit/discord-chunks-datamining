@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk121748 = require("./121748.js");
-let A = 15 * Chunk70956.Z.Millis.MINUTE,
+let Z = 15 * Chunk70956.Z.Millis.MINUTE,
   w = (0, Chunk525296.Z)(function(e) {
     let {
       party: t,
@@ -63,7 +63,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, _, E, g]), I = i.useMemo(() => s()(v, A), [v]);
+    }, [m, b, _, E, g]), I = i.useMemo(() => s()(v, Z), [v]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -103,7 +103,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
           ref: o,
           onMouseEnter: I,
           "aria-haspopup": "menu",
-          className: Z.itemCard,
+          className: A.itemCard,
           active: l,
           children: (0, r.jsxs)("div", {
             children: [c, d]
@@ -143,7 +143,7 @@ function R() {
   let m = i.useMemo(() => {
       let t = new Map,
         n = new Set,
-        r = (0, h.NI)(o, P.l$);
+        r = (0, h.NI)(o, x.l$);
       for (let i of e) i.party.currentActivities.forEach(e => {
         let {
           activity: l
@@ -164,19 +164,19 @@ function R() {
       quest: m.get(t.id)
     }, t.id)
   }) : (0, r.jsxs)("div", {
-    className: Z.emptyCard,
+    className: A.emptyCard,
     children: [(0, r.jsx)(u.Heading, {
       variant: "heading-md/semibold",
-      className: Z.emptyHeader,
-      children: x.intl.string(x.t["ngJ/5u"])
+      className: A.emptyHeader,
+      children: P.intl.string(P.t["ngJ/5u"])
     }), (0, r.jsx)(u.Text, {
       color: "none",
-      className: Z.emptyText,
+      className: A.emptyText,
       variant: "text-sm/normal",
-      children: x.intl.string(x.t["99ZWxQ"])
+      children: P.intl.string(P.t["99ZWxQ"])
     })]
   }) : (0, r.jsx)("div", {
-    className: Z.emptyCard,
+    className: A.emptyCard,
     children: (0, r.jsx)(u.$jN, {})
   })
 }

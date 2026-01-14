@@ -74,7 +74,7 @@ let M = {
           code: t
         }
       } = e;
-      return await (0, Z.T)(t, "Desktop Modal")
+      return await (0, A.T)(t, "Desktop Modal")
     }
   },
   [Chunk981631.Etm.GUILD_TEMPLATE_BROWSER]: {
@@ -89,10 +89,10 @@ let M = {
       let {
         guildTemplate: i
       } = await _.Z.resolveGuildTemplate(t);
-      if (null == i) throw new x.Z({
+      if (null == i) throw new P.Z({
         errorCode: w.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
-      return P.ZP.focus(), (0, a.ZDy)(async () => {
+      return x.ZP.focus(), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("10778"), n.e("93099")]).then(n.bind(n, 766775));
@@ -131,7 +131,7 @@ let M = {
             let {
               giftCode: l
             } = i;
-            P.ZP.focus(), T.default.track(w.rMx.OPEN_MODAL, {
+            x.ZP.focus(), T.default.track(w.rMx.OPEN_MODAL, {
               type: "gift_accept",
               location: w.SaU
             }), (0, a.ZDy)(async () => {
@@ -144,7 +144,7 @@ let M = {
             }), e({
               giftCode: l
             })
-          }).catch(() => i(new x.Z({
+          }).catch(() => i(new P.Z({
             errorCode: w.lTL.INVALID_GIFT_CODE
           }, "Invalid gift code: ".concat(t))))
         })
@@ -162,53 +162,53 @@ let M = {
           params: r
         }
       } = e;
-      switch (P.ZP.focus(), t) {
-        case A.jE.USER_SETTINGS:
+      switch (x.ZP.focus(), t) {
+        case Z.jE.USER_SETTINGS:
           null != r && ((0, y.dL)({
             pathname: w.Z5c.SETTINGS(r.section, r.subsection),
             search: r.search
-          }), D(r.fingerprint, (0, A.O)(t)));
+          }), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.CHANGELOG:
-          null != r && ((0, y.dL)(j.Z.formatPathWithQuery(w.Z5c.CHANGELOGS(r.date), r.query)), D(r.fingerprint, (0, A.O)(t)));
+        case Z.jE.CHANGELOG:
+          null != r && ((0, y.dL)(j.Z.formatPathWithQuery(w.Z5c.CHANGELOGS(r.date), r.query)), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.LIBRARY:
-          (0, y.dL)(w.Z5c.APPLICATION_LIBRARY), null != r && D(r.fingerprint, (0, A.O)(t));
+        case Z.jE.LIBRARY:
+          (0, y.dL)(w.Z5c.APPLICATION_LIBRARY), null != r && D(r.fingerprint, (0, Z.O)(t));
           break;
-        case A.jE.STORE_HOME:
-          (0, y.dL)(w.Z5c.APPLICATION_STORE), null != r && D(r.fingerprint, (0, A.O)(t));
+        case Z.jE.STORE_HOME:
+          (0, y.dL)(w.Z5c.APPLICATION_STORE), null != r && D(r.fingerprint, (0, Z.O)(t));
           break;
-        case A.jE.STORE_LISTING:
-          null != r && ((0, y.dL)(w.Z5c.APPLICATION_STORE_LISTING_SKU(r.skuId, r.slug)), D(r.fingerprint, (0, A.O)(t)));
+        case Z.jE.STORE_LISTING:
+          null != r && ((0, y.dL)(w.Z5c.APPLICATION_STORE_LISTING_SKU(r.skuId, r.slug)), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.PICK_GUILD_SETTINGS:
+        case Z.jE.PICK_GUILD_SETTINGS:
           null != r && ((0, y.dL)({
             pathname: w.Z5c.PICK_GUILD_SETTINGS(r.section, r.subsection),
             search: r.search
-          }), D(r.fingerprint, (0, A.O)(t)));
+          }), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.CHANNEL:
+        case Z.jE.CHANNEL:
           null != r && ((0, y.dL)({
             pathname: w.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId),
             search: r.search
-          }), D(r.fingerprint, (0, A.O)(t)));
+          }), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.GAME_SHOP:
+        case Z.jE.GAME_SHOP:
           null != r && ((0, y.dL)({
             pathname: w.Z5c.CHANNELS_GAME_SHOP(r.guildId, r.pageIndex, r.skuId, r.slug)
-          }), D(r.fingerprint, (0, A.O)(t)));
+          }), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.QUEST_HOME:
+        case Z.jE.QUEST_HOME:
           if (null != r) {
             let e = new URLSearchParams;
             null != r.sort && e.set(I.tR.SORT, r.sort), null != r.filter && e.set(I.tR.FILTER, r.filter), null != r.tab && e.set(I.tR.TAB, r.tab), (0, y.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               hash: r.questId,
               search: "?".concat(e.toString())
-            }), D(r.fingerprint, (0, A.O)(t))
+            }), D(r.fingerprint, (0, Z.O)(t))
           } else(0, y.dL)(w.Z5c.QUEST_HOME_V2);
           break;
-        case A.jE.QUEST_PREVIEW_TOOL:
+        case Z.jE.QUEST_PREVIEW_TOOL:
           if ((0, v.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != r) {
@@ -216,38 +216,38 @@ let M = {
             e.set(I.tR.TAB, I.e5.PREVIEW_TOOL), null != r.questId && e.set(I.tR.QUEST_ID, r.questId), (0, y.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
-            }), D(r.fingerprint, (0, A.O)(t))
+            }), D(r.fingerprint, (0, Z.O)(t))
           }
           break;
-        case A.jE.DISCOVERY_GAME_RESULTS:
+        case Z.jE.DISCOVERY_GAME_RESULTS:
           null != r && ((0, y.dL)({
             pathname: w.Z5c.GLOBAL_DISCOVERY_SERVERS,
             search: "?game=".concat(r.gameId)
-          }), D(r.fingerprint, (0, A.O)(t)));
+          }), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.OAUTH2:
+        case Z.jE.OAUTH2:
           let l = new URL(w.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           l.search = r.search;
           let a = (0, E.getOAuth2AuthorizeProps)(l.toString());
           if (null != a) return (0, E.openOAuth2ModalWithCreateGuildModal)(a), true;
           returnfalse;
-        case A.jE.ONE_TIME_LOGIN:
+        case Z.jE.ONE_TIME_LOGIN:
           if (null != r) return (0, O.Y)({
             token: r.token
-          }), D(r.fingerprint, (0, A.O)(t)), true;
+          }), D(r.fingerprint, (0, Z.O)(t)), true;
           returnfalse;
-        case A.jE.SHOP:
+        case Z.jE.SHOP:
           null != r && ((0, y.dL)({
             pathname: w.Z5c.COLLECTIBLES_SHOP,
             search: r.search
-          }), D(r.fingerprint, (0, A.O)(t)));
+          }), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.FEATURES:
+        case Z.jE.FEATURES:
           (null == r ? true : r.path) != null && ((0, y.dL)({
             pathname: r.path
-          }), D(r.fingerprint, (0, A.O)(t)));
+          }), D(r.fingerprint, (0, Z.O)(t)));
           break;
-        case A.jE.ACTIVITIES:
+        case Z.jE.ACTIVITIES:
           if (null != r) {
             let e = r.attemptId || (0, i.Z)();
             return async function(e, t, n) {
@@ -296,15 +296,15 @@ let M = {
                   attempt_id: n
                 })
               }
-            }(r.applicationId, r.url, e), D(r.fingerprint, (0, A.O)(t)), true
+            }(r.applicationId, r.url, e), D(r.fingerprint, (0, Z.O)(t)), true
           }
           returnfalse;
-        case A.jE.PLAYGROUND:
+        case Z.jE.PLAYGROUND:
           if (null != r) {
             let {
               openPlayground: e
             } = n(2419);
-            e(r.collection, r.story), D(r.fingerprint, (0, A.O)(t))
+            e(r.collection, r.story), D(r.fingerprint, (0, Z.O)(t))
           }
       }
     }
@@ -318,7 +318,7 @@ let M = {
           fingerprint: n
         }
       } = e;
-      P.ZP.focus(null, true), (0, c.lx)(t, n)
+      x.ZP.focus(null, true), (0, c.lx)(t, n)
     }
   },
   [Chunk981631.Etm.CONNECTIONS_CALLBACK]: {
@@ -333,7 +333,7 @@ let M = {
           state: l
         }
       } = e;
-      if (!C.Z.hasPendingAuthorizedState(l)) throw new x.Z({
+      if (!C.Z.hasPendingAuthorizedState(l)) throw new P.Z({
         errorCode: w.lTL.INVALID_CONNECTION_CALLBACK_STATE
       }, "Provider authorization did not originate from this discord client");
       try {
@@ -344,7 +344,7 @@ let M = {
           state: l
         })
       } catch (e) {
-        if ((null == e ? true : e.status) === 400) throw new x.Z({
+        if ((null == e ? true : e.status) === 400) throw new P.Z({
           errorCode: w.lTL.BAD_REQUEST_FOR_PROVIDER
         }, "Bad request for provider");
         throw N.S.dispatch(w.CkL.CONNECTIONS_CALLBACK_ERROR), e

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 144145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => x
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,10 +60,10 @@ function N(e, t) {
 }
 let j = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
 
-function P(e) {
+function x(e) {
   let {
     currentActivities: t
-  } = e, n = t.length > 1, P = function(e) {
+  } = e, n = t.length > 1, x = function(e) {
     let {
       currentActivities: t
     } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
@@ -81,7 +81,7 @@ function P(e) {
         platform: j
       })
     })
-  }(e), x = function(e) {
+  }(e), P = function(e) {
     let {
       currentActivities: t
     } = e, n = i.useContext(v.AnalyticsContext);
@@ -106,12 +106,12 @@ function P(e) {
         location: n.location
       })
     }), [n.location, t])
-  }(e), Z = [];
-  for (let e of x) {
+  }(e), A = [];
+  for (let e of P) {
     let {
       activity: t
     } = e;
-    null != t && null != t.type && Z.push(function(e, t) {
+    null != t && null != t.type && A.push(function(e, t) {
       let {
         canJoin: n,
         activity: i,
@@ -169,5 +169,5 @@ function P(e) {
       })
     }(e, n))
   }
-  return [P, ...Z]
+  return [x, ...A]
 }

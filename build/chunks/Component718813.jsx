@@ -72,24 +72,24 @@ let T = (0, Chunk663993.Un)({
     webpackId: 869779,
     name: "ChannelSettings"
   }),
-  P = (0, Chunk663993.Un)({
+  x = (0, Chunk663993.Un)({
     createPromise: () => n.e("45620").then(n.bind(n, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
   }),
-  x = (0, Chunk663993.Un)({
+  P = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("9414"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("9536"), n.e("95140")]).then(n.bind(n, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
-  Z = {
+  A = {
     [Chunk981631.S9g.USER_SETTINGS]: () => (0, i.jsx)(T, {}),
     [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, i.jsx)(j, {}),
-    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, i.jsx)(x, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, i.jsx)(P, {}),
+    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, i.jsx)(P, {}),
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, i.jsx)(x, {}),
     [Chunk981631.S9g.COMPONENT_PLAYGROUND]: () => (0, i.jsx)(N, {})
   },
-  A = "SHOWN",
+  Z = "SHOWN",
   w = "HIDDEN",
   L = {
     friction: 10,
@@ -113,8 +113,8 @@ class D extends(r = Chunk473749.PureComponent) {
       mode: n
     } = e;
     if (t !== n) {
-      if (t === A && n === w) return this.animateIn();
-      if (t === w && n === A) return this.animateUnder()
+      if (t === Z && n === w) return this.animateIn();
+      if (t === w && n === Z) return this.animateUnder()
     }
   }
   componentWillEnter(e) {
@@ -279,16 +279,16 @@ class M extends Chunk473749.PureComponent {
       length: r
     } = t, l = [];
     return l.push((0, i.jsx)(D, {
-      mode: 0 !== r || n ? w : A,
+      mode: 0 !== r || n ? w : Z,
       baseLayer: true,
       children: e
     }, "layer-base")), t.forEach((e, t) => l.push(this.renderComponent(e, t, r))), l
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? Z[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(D, {
+    return r = "string" == typeof e ? A[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(D, {
       name: "string" == typeof e ? e : true,
-      mode: t === n - 1 ? A : w,
+      mode: t === n - 1 ? Z : w,
       children: [(0, i.jsx)(R, {}), r]
     }, "layer-".concat(t))
   }

@@ -2,7 +2,7 @@
 /** chunk id: 85517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j,
-  o: () => P
+  o: () => x
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -97,11 +97,11 @@ function j(e) {
     config: t,
     onQuestCtaClick: n
   } = e, l = (0, o.TH)(), j = (0, o.k6)(), {
-    enabled: P
+    enabled: x
   } = (0, g.W)({
     location: O.dr.QUEST_HOME_DESKTOP
-  }), x = (0, p.ZP)(), [Z, A] = i.useState("display-lg"), w = i.useCallback(e => {
-    e.contentRect.width < 500 ? A("display-md") : A("display-lg")
+  }), P = (0, p.ZP)(), [A, Z] = i.useState("display-lg"), w = i.useCallback(e => {
+    e.contentRect.width < 500 ? Z("display-md") : Z("display-lg")
   }, []), L = (0, d.y)(w, [], {
     fireOnMount: true
   }), R = (0, c.e7)([b.Z], () => b.Z.quests);
@@ -112,8 +112,8 @@ function j(e) {
     }))
   }, [t.campaignId]), (0, r.jsx)("div", {
     className: a()(C.wrapper, {
-      "theme-dark": x === I.BR.LIGHT,
-      [C.wrapperWithOldDiscoveryHeader]: !P
+      "theme-dark": P === I.BR.LIGHT,
+      [C.wrapperWithOldDiscoveryHeader]: !x
     }),
     ref: L,
     children: (0, r.jsxs)("div", {
@@ -143,7 +143,7 @@ function j(e) {
             gap: 8,
             children: [(0, r.jsx)(u.Heading, {
               color: "text-strong",
-              variant: Z,
+              variant: A,
               className: C.title,
               children: t.labelTitle
             }), (0, r.jsx)(u.Text, {
@@ -193,7 +193,7 @@ function j(e) {
   })
 }
 
-function P() {
+function x() {
   return (0, r.jsx)("div", {
     className: a()(C.wrapper, C.contentWrapper, C.contentWrapperLoading),
     children: (0, r.jsx)(u.$jN, {})

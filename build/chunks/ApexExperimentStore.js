@@ -90,10 +90,11 @@ function b(e) {
 }
 let y = new Chunk579092.Yd("ApexExperimentStore");
 (null == window.TextEncoder || null == window.TextDecoder) && require("./251171.js");
-let O = [Chunk341691.Cm.User],
+let O = [Chunk341691.Cm.User, Chunk341691.Cm.Installation],
   v = {
     user: {},
-    guild: {}
+    guild: {},
+    installation: {}
   },
   S = {},
   I = {},
@@ -106,7 +107,7 @@ let O = [Chunk341691.Cm.User],
   w = 2,
   D = 6048e5,
   x = {},
-  L = 2,
+  L = 3,
   j = {};
 
 function M(e) {
@@ -213,7 +214,7 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     return T[e]
   }
   handleLogout(e) {
-    e || (this.clearAllServerAssignments(), this.clearSessionOverrides()), l.K.remove(R), this.clearAllTrackedExposures()
+    e || (this.clearUserServerAssignments(), this.clearSessionOverrides()), l.K.remove(R), this.clearAllTrackedExposures()
   }
   registerExperiment(e) {
     S[e.name] = e, null != C[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
@@ -311,7 +312,15 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
   clearAllServerAssignments() {
     v = {
       user: {},
-      guild: {}
+      guild: {},
+      installation: {}
+    }
+  }
+  clearUserServerAssignments() {
+    v = {
+      user: {},
+      guild: {},
+      installation: v.installation
     }
   }
   clearAllOverrides() {

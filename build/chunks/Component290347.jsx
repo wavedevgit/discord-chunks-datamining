@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 290347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./388685.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -59,8 +59,8 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = [],
-  x = e => {
+let x = [],
+  P = e => {
     let {
       tagText: t,
       className: n
@@ -70,7 +70,7 @@ let P = [],
       text: t
     })
   },
-  Z = e => {
+  A = e => {
     let {
       header: t,
       subHeader: n,
@@ -82,7 +82,7 @@ let P = [],
       className: a()(T.featureCard, {
         [T.wideStyle]: o
       }),
-      children: [null != l ? (0, r.jsx)(x, {
+      children: [null != l ? (0, r.jsx)(P, {
         tagText: l,
         className: T.featureCardTag
       }) : null, (0, r.jsx)("img", {
@@ -106,13 +106,13 @@ let P = [],
     })
   };
 
-function A(e) {
+function Z(e) {
   let {
     componentId: t,
     promotionId: n,
     className: l,
-    renderModalProps: x,
-    heroArt: A,
+    renderModalProps: P,
+    heroArt: Z,
     heroArtClassName: w,
     modalTopExtra: L,
     header: R,
@@ -126,7 +126,7 @@ function A(e) {
   } = e, {
     onClose: V,
     transitionState: F
-  } = x, z = (0, b.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [K, q] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(K), el = i.useRef(Q), ea = i.useRef(X), eo = i.useRef(ee), es = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
+  } = P, z = (0, b.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [K, q] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(K), el = i.useRef(Q), ea = i.useRef(X), eo = i.useRef(ee), es = i.useRef(en), [ec, eu] = i.useState(x), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
@@ -146,8 +146,8 @@ function A(e) {
     let e = async () => {
       try {
         var e;
-        if ("video" !== A.type || null == A.subtitles) return;
-        let t = null == (e = A.subtitles) ? true : e.map(async e => {
+        if ("video" !== Z.type || null == Z.subtitles) return;
+        let t = null == (e = Z.subtitles) ? true : e.map(async e => {
           let t = await fetch(e.src);
           if (!t.ok) throw Error("Failed to fetch the subtitle file ".concat(e.src));
           let n = await t.text(),
@@ -161,18 +161,18 @@ function A(e) {
         });
         eu(await Promise.all(t))
       } catch (e) {
-        I.Z.captureException(e), eu(P)
+        I.Z.captureException(e), eu(x)
       }
     };
     true !== ed.current && e(), ed.current = true
-  }, [A, ec]), i.useEffect(() => () => {
+  }, [Z, ec]), i.useEffect(() => () => {
     null != ec && ec.forEach(e => {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
     ei.current = K, el.current = Q, ea.current = X, eo.current = ee, es.current = en
   }, [K, Q, X, ee, en]), i.useEffect(() => () => {
-    if ("video" === A.type || "embed" === A.type) {
+    if ("video" === Z.type || "embed" === Z.type) {
       let [e, t] = ep();
       v.default.track(y.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: G,
@@ -182,7 +182,7 @@ function A(e) {
         seconds_unmuted: Math.round(t / 1e3)
       })
     }
-  }, [G, A.type]), i.useEffect(() => {
+  }, [G, Z.type]), i.useEffect(() => {
     (0, E.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
     return v.default.track(y.rMx.CHANGE_LOG_OPENED, {
@@ -212,15 +212,15 @@ function A(e) {
       }), null == L ? true : L(), (0, r.jsxs)(p.hzk, {
         "data-migration-pending": true,
         className: T.content,
-        children: ["video" === A.type ? (0, r.jsx)(_.Z, {
+        children: ["video" === Z.type ? (0, r.jsx)(_.Z, {
           className: a()(T.video, w),
           autoPlay: !W,
           loop: true,
           muted: true,
           controls: true,
           controlsList: "nofullscreen nodownload noremoteplayback noplaybackrate",
-          src: A.src,
-          poster: A.poster,
+          src: Z.src,
+          poster: Z.poster,
           onPlay: e => {
             v.default.track(y.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
@@ -246,15 +246,15 @@ function A(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === A.type ? (0, r.jsx)(h.BC, {
+        }) : "embed" === Z.type ? (0, r.jsx)(h.BC, {
           className: a()(T.video, w),
           allowFullScreen: false,
-          href: A.href,
-          thumbnail: A.thumbnail,
-          video: A.embed,
+          href: Z.href,
+          thumbnail: Z.thumbnail,
+          video: Z.embed,
           provider: m.pn.YOUTUBE,
-          maxWidth: A.embed.width,
-          maxHeight: A.embed.height,
+          maxWidth: Z.embed.width,
+          maxHeight: Z.embed.height,
           renderVideoComponent: O.lV,
           renderImageComponent: O.Yi,
           renderLinkComponent: O.iT,
@@ -263,10 +263,10 @@ function A(e) {
               change_log_id: G
             })
           }
-        }) : "image" === A.type ? (0, r.jsx)("img", {
+        }) : "image" === Z.type ? (0, r.jsx)("img", {
           alt: "",
           className: a()(T.video, w),
-          src: A.src
+          src: Z.src
         }) : null, (0, r.jsx)(p.Heading, {
           variant: "display-md",
           className: a()(T.headerText, D),
@@ -284,7 +284,7 @@ function A(e) {
           className: a()(T.featureCardGroup, {
             [T.wideStyle]: Y
           }),
-          children: U.map((e, t) => (0, r.jsx)(Z, j(N({}, e), {
+          children: U.map((e, t) => (0, r.jsx)(A, j(N({}, e), {
             wideStyle: Y
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {

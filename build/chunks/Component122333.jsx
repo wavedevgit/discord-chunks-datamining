@@ -31,7 +31,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk188785 = require("./188785.js"),
   Chunk630724 = require("./630724.js");
 
-function P(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function P(e) {
   return e
 }
 
-function x(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,15 +63,15 @@ function x(e, t) {
   }), e
 }
 
-function Z() {
+function A() {
   null != r && (0, l.Mr3)(r)
 }
-class A extends Chunk317770.Z {
+class Z extends Chunk317770.Z {
   _initialize() {
-    a.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.subscribe("LOGOUT", Z)
+    a.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.subscribe("LOGOUT", A)
   }
   _terminate() {
-    a.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.unsubscribe("LOGOUT", Z)
+    a.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.unsubscribe("LOGOUT", A)
   }
   handleConnectionOpen() {
     var e;
@@ -88,12 +88,12 @@ class A extends Chunk317770.Z {
         f.Z.flowStart(j.MK.ORGANIC_MARKETING, j.EW.NUF_STARTED)
     }
     let o = false,
-      Z = _.Z.getGuildId();
+      A = _.Z.getGuildId();
     if (a === C.M5.INVITE_UNCLAIMED) {
-      let e = b.Z.getGuild(Z);
+      let e = b.Z.getGuild(A);
       null != e && (0, d.Dc)(e) && (o = true, (0, g.RM)(e.id))
     }
-    let A = () => 0 === m.Z.totalGuilds && !v.isPlatformEmbedded,
+    let Z = () => 0 === m.Z.totalGuilds && !v.isPlatformEmbedded,
       w = s.bN();
     e = [{
       key: "Unified NUF Modal",
@@ -131,7 +131,7 @@ class A extends Chunk317770.Z {
           let {
             default: e
           } = await Promise.all([n.e("42483"), n.e("24028")]).then(n.bind(n, 599219));
-          return n => (0, i.jsx)(e, x(P({}, n), {
+          return n => (0, i.jsx)(e, P(x({}, n), {
             onSlideChange: t
           }))
         }, {
@@ -140,11 +140,11 @@ class A extends Chunk317770.Z {
           modalKey: r
         })
       },
-      predicate: () => A() && !N.a
+      predicate: () => Z() && !N.a
     }, {
       key: "New User Age Gate",
       open: c.i,
-      predicate: () => w && !A() && !N.a
+      predicate: () => w && !Z() && !N.a
     }, {
       key: "Claim Account Modal",
       open: e => c.j(v.isPlatformEmbedded, e),
@@ -154,7 +154,7 @@ class A extends Chunk317770.Z {
       }
     }, {
       key: "Verification Gate with Claim Account",
-      open: e => (0, u.hk)(Z, null != e ? e : true),
+      open: e => (0, u.hk)(A, null != e ? e : true),
       predicate: () => {
         var e;
         return o && !(null == (e = E.default.getCurrentUser()) ? true : e.isClaimed()) && !N.a
@@ -165,13 +165,13 @@ class A extends Chunk317770.Z {
         let {
           default: e
         } = await n.e("90542").then(n.bind(n, 184782));
-        return t => (0, i.jsx)(e, x(P({}, t), {
-          guildId: Z
+        return t => (0, i.jsx)(e, P(x({}, t), {
+          guildId: A
         }))
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != Z && null != h.Z.get(Z) && h.Z.get(Z) !== h.a
+      predicate: () => null != A && null != h.Z.get(A) && h.Z.get(A) !== h.a
     }], t = () => {
       I.H(), f.Z.flowStep(j.MK.ANY, j.EW.NUF_COMPLETE, true)
     }, [...e].reverse().forEach(e => {
@@ -182,4 +182,4 @@ class A extends Chunk317770.Z {
     }), t()
   }
 }
-let w = new A
+let w = new Z

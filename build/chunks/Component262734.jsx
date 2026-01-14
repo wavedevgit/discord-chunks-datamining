@@ -37,11 +37,11 @@ function j(e) {
     frame: t
   } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
     selectedChannelId: j,
-    selectedVoiceChannelId: P
+    selectedVoiceChannelId: x
   } = (0, o.cj)([_.Z], () => ({
     selectedChannelId: _.Z.getChannelId(),
     selectedVoiceChannelId: _.Z.getVoiceChannelId()
-  })), x = (0, o.e7)([g.Z], () => null != P && j === P && g.Z.getChatOpen(P), [j, P]), Z = (0, o.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), A = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), P = (0, o.e7)([g.Z], () => null != x && j === x && g.Z.getChatOpen(x), [j, x]), A = (0, o.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {
@@ -86,7 +86,7 @@ function j(e) {
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
-  let F = (null != Z ? Z : y.$Y6) + A,
+  let F = (null != A ? A : y.$Y6) + Z,
     z = (0, v.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: y.BRd.DARK,
@@ -94,7 +94,7 @@ function j(e) {
       className: a()(T.wrapper, N[V], e),
       ref: w,
       style: {
-        right: x && !Number.isNaN(F) ? F : 0
+        right: P && !Number.isNaN(F) ? F : 0
       },
       children: [(0, r.jsx)("div", {
         className: T.activityPanelContainer,

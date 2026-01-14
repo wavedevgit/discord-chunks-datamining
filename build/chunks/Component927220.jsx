@@ -58,14 +58,14 @@ let T = (0, Chunk112724.Z)(function(e) {
       window.removeEventListener("keydown", e), window.removeEventListener("keyup", t), window.removeEventListener("blur", n)
     }
   }, []);
-  let P = (0, O.G)(),
-    x = b.ZY.useExperiment({
+  let x = (0, O.G)(),
+    P = b.ZY.useExperiment({
       location: "icymi page"
     }).enabled,
-    Z = i.useCallback(async e => {
-      e.metaKey && x ? await (0, E.ye)(I.qAy.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await P()
-    }, [P, x]),
-    A = N && x ? y.intl.string(y.t.YplSn2) : y.intl.string(y.t.wzzjk9);
+    A = i.useCallback(async e => {
+      e.metaKey && P ? await (0, E.ye)(I.qAy.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await x()
+    }, [x, P]),
+    Z = N && P ? y.intl.string(y.t.YplSn2) : y.intl.string(y.t.wzzjk9);
   return n ? (0, r.jsxs)("div", {
     className: a()(S.chat, C.container),
     children: [(0, r.jsx)(c.f6W, {
@@ -74,10 +74,10 @@ let T = (0, Chunk112724.Z)(function(e) {
         className: e,
         toolbar: (0, r.jsx)(g.Z.Icon, {
           icon: c.DuK,
-          tooltip: A,
-          onClick: Z,
+          tooltip: Z,
+          onClick: A,
           disabled: d,
-          "aria-label": A
+          "aria-label": Z
         }),
         children: [(0, r.jsx)(g.Z.Icon, {
           icon: c.qOE,

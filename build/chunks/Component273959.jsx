@@ -33,13 +33,13 @@ function j(e) {
   var t, n;
   let l, {
       withFastTravel: j,
-      focusSectionProps: P
+      focusSectionProps: x
     } = e,
-    x = (0, o.TH)(),
-    Z = (0, s.e7)([v.Z], () => v.Z.getGuildId()),
-    A = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
-    w = (0, s.e7)([_.Z], () => _.Z.getChannel(A), [A]),
-    L = null != Z ? Z : null == w ? true : w.guild_id,
+    P = (0, o.TH)(),
+    A = (0, s.e7)([v.Z], () => v.Z.getGuildId()),
+    Z = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
+    w = (0, s.e7)([_.Z], () => _.Z.getChannel(Z), [Z]),
+    L = null != A ? A : null == w ? true : w.guild_id,
     R = (0, s.e7)([E.Z], () => E.Z.getGuild(L), [L]),
     D = (0, f.Z)(),
     M = (0, m.D)(),
@@ -82,19 +82,19 @@ function j(e) {
     className: N.guildIcon
   }), l = R.name) : null != w && (w.isDM() || w.isGroupDM()) ? (l = S.intl.string(S.t.YUU0RF), V = (0, r.jsx)(u.gw7, {
     size: k
-  })) : x.pathname.startsWith(y.Z5c.ICYMI) ? (l = S.intl.string(S.t["jnXV/V"]), V = (0, r.jsx)(u.qOE, {
+  })) : P.pathname.startsWith(y.Z5c.ICYMI) ? (l = S.intl.string(S.t["jnXV/V"]), V = (0, r.jsx)(u.qOE, {
     size: k
-  })) : x.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (l = S.intl.string(S.t["4nEZLk"]), V = (0, r.jsx)(u.Jmo, {
+  })) : P.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (l = S.intl.string(S.t["4nEZLk"]), V = (0, r.jsx)(u.Jmo, {
     size: k
-  })) : x.pathname.startsWith(y.Z5c.NITRO_HOME) ? (l = S.intl.string(S.t.Ipxkog), V = (0, r.jsx)(u.SrA, {
+  })) : P.pathname.startsWith(y.Z5c.NITRO_HOME) ? (l = S.intl.string(S.t.Ipxkog), V = (0, r.jsx)(u.SrA, {
     size: k
-  })) : x.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (l = S.intl.string(S.t.pWG4ze), V = (0, r.jsx)(u.EOn, {
+  })) : P.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (l = S.intl.string(S.t.pWG4ze), V = (0, r.jsx)(u.EOn, {
     size: k
-  })) : x.pathname.startsWith(y.Z5c.FRIENDS) ? (l = S.intl.string(S.t.TdEu5X), V = (0, r.jsx)(u.iFz, {
+  })) : P.pathname.startsWith(y.Z5c.FRIENDS) ? (l = S.intl.string(S.t.TdEu5X), V = (0, r.jsx)(u.iFz, {
     size: k
-  })) : x.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (l = S.intl.string(T.default.RZqaJn), V = (0, r.jsx)(u.BFJ, {
+  })) : P.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (l = S.intl.string(T.default.RZqaJn), V = (0, r.jsx)(u.BFJ, {
     size: k
-  })) : x.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (l = S.intl.string(S.t.JALI2K), V = (0, r.jsx)(u.qDn, {
+  })) : P.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (l = S.intl.string(S.t.JALI2K), V = (0, r.jsx)(u.qDn, {
     size: k
   }));
   let F = i.useCallback(e => {
@@ -128,7 +128,7 @@ function j(e) {
         [N.fastTravel]: j
       }),
       "aria-label": S.intl.string(S.t["7P/+qz"])
-    }, P), n = n = {
+    }, x), n = n = {
       onClick: j ? F : true,
       children: [V, (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",

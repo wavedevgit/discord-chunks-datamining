@@ -137,7 +137,7 @@ function V(e) {
   let {
     guildEvent: t,
     noticeType: n
-  } = e, r = (0, R.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([P.Z], () => P.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
+  } = e, r = (0, R.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([x.Z], () => x.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
   return l || null != a || (0, N._6)(t.id), (0, i.jsx)(c.Button, {
     onClick: function() {
       (0, D.Z)(t.id, null, t.guild_id, () => setTimeout(() => (0, N.L_)(t.id), 1e3)), y.default.track(k.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -158,10 +158,10 @@ function F(e) {
   let {
     guildEvent: n,
     noticeType: r
-  } = e, a = (0, L.cS)(n), s = null != a ? (0, x.m)(a, true) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
+  } = e, a = (0, L.cS)(n), s = null != a ? (0, P.m)(a, true) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
     startTime: f,
     endTime: g
-  } = (0, A.ZP)(n), {
+  } = (0, Z.ZP)(n), {
     startDateTimeString: h,
     upcomingEvent: m,
     diffMinutes: b
@@ -253,7 +253,7 @@ function z(e) {
     }),
     heading: U.intl.string(U.t["1+boPi"]),
     topic: t.name,
-    location: (0, x.m)(n, true),
+    location: (0, P.m)(n, true),
     locationIcon: (0, i.jsx)(c._tJ, {
       size: "custom",
       color: "currentColor",
@@ -390,7 +390,7 @@ let J = Chunk473749.memo(function(e) {
     guild: t
   } = e, {
     showRedesignedLiveChannelNotice: n
-  } = (0, p.o)(true), r = (0, Z.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([E.Z], () => E.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
+  } = (0, p.o)(true), r = (0, A.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([E.Z], () => E.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
   } = (0, s.cj)([j.Z], () => ({
