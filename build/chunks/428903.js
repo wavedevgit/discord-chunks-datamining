@@ -13,6 +13,7 @@ let a = (0, Chunk509613.ON)(Chunk313789.n.TTS_PLAYBACK_RATE, {
     Component: Chunk154022.N
   }),
   o = (0, Chunk509613.k4)(Chunk313789.n.ACCESSIBILITY_TTS, {
+    useTitle: () => r.intl.string(r.t.VpSKeO),
     usePredicate: () => i.Zh,
     buildLayout: () => [a]
   })

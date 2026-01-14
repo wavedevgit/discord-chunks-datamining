@@ -856,7 +856,7 @@ let eG = () => [a.z.CLIENT_THEMES_SETTINGS_BADGE, a.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eP.s6.ACCESSIBILITY_STICKERS]: {
         section: ew.oAB.ACCESSIBILITY,
         searchableTitles: [ex.intl.string(ex.t["6NtAuJ"])],
-        parent: eP.s6.ACCESSIBILITY
+        parent: eP.s6.ACCESSIBILITY_REDUCED_MOTION
       },
       [eP.s6.ACCESSIBILITY_MESSAGES]: {
         section: ew.oAB.ACCESSIBILITY,

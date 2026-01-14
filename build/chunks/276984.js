@@ -10,8 +10,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.DESATURATE_CUSTOM_COLORS, {
-  useTitle: () => a.intl.string(a.t.OCJg5f),
-  useSubtitle: () => a.intl.string(a.t.HEO0s3),
+  useTitle: () => a.intl.string(a.t.bQCodD),
+  useSubtitle: () => a.intl.string(a.t.nlAOEW),
   useValue: () => (0, i.e7)([s.Z], () => s.Z.desaturateUserColors),
   setValue: () => (0, l.f1)()
 })

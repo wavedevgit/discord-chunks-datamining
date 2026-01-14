@@ -18,5 +18,5 @@ let E = (0, Chunk509613.k4)(Chunk313789.n.MOTION_CATEGORY, {
   useSubtitle: () => c.intl.format(c.t["2l9U2j"], {
     helpdeskArticle: l.Z.getArticleURL(S.BhN.REDUCED_MOTION)
   }),
-  buildLayout: () => [o.k, T.m, a.W, r.y, u.M]
+  buildLayout: () => [T.m, o.k, r.y, u.M, a.W]
 })

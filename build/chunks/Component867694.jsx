@@ -19,19 +19,21 @@ function o(e) {
     useSubtitle: c,
     useDisabled: u,
     useDisabledMessage: d,
-    useBadge: f
-  } = n, p = l(), _ = null == c ? true : c(), m = o(), h = null != (t = null == u ? true : u()) && t, g = null == d ? true : d(), E = null == f ? true : f();
+    useBadge: f,
+    hasIcon: p
+  } = n, _ = l(), m = null == c ? true : c(), h = o(), g = null != (t = null == u ? true : u()) && t, E = null == d ? true : d(), b = null == f ? true : f();
   return (0, r.jsxs)(a.X, {
     children: [(0, r.jsx)(i.rsf, {
-      label: p,
-      description: _,
-      badge: E,
-      checked: m,
+      label: _,
+      description: m,
+      badge: b,
+      checked: h,
+      hasIcon: p,
       onChange: e => s(e),
-      disabled: h
-    }), h && null != g ? (0, r.jsx)(i.Wn, {
+      disabled: g
+    }), g && null != E ? (0, r.jsx)(i.Wn, {
       messageType: i.QYI.WARNING,
-      children: g
+      children: E
     }) : null]
   })
 }

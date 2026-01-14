@@ -13,7 +13,8 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.ENABLE_SWITCH_ICONS, {
     useTitle: () => a.intl.string(a.t["S3z+pV"]),
     useSubtitle: () => a.intl.string(a.t["3QuI9+"]),
     useValue: () => (0, i.e7)([s.Z], () => s.Z.isSwitchIconsEnabled),
-    setValue: t => (0, l.ky)(t)
+    setValue: t => (0, l.ky)(t),
+    hasIcon: true
   }),
   T = (0, Chunk509613.k4)(Chunk313789.n.INPUTS, {
     buildLayout: () => [o]

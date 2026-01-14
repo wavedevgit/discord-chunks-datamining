@@ -146,11 +146,6 @@ function ei(e) {
           gap: 4
         })]
       }), (0, r.jsxs)(N.F, {
-        setting: F.s6.ACCESSIBILITY_STICKERS,
-        children: [(0, r.jsx)(eg, {}), (0, r.jsx)(c.izJ, {
-          gap: 4
-        })]
-      }), (0, r.jsxs)(N.F, {
         setting: F.s6.ACCESSIBILITY_REDUCED_MOTION,
         children: [(0, r.jsx)(eh, {}), (0, r.jsx)(c.izJ, {
           gap: 4
@@ -514,6 +509,9 @@ function eh() {
           checked: t,
           onChange: L.Yk.updateSetting
         })
+      }), (0, r.jsx)(N.F, {
+        setting: F.s6.ACCESSIBILITY_STICKERS,
+        children: (0, r.jsx)(eg, {})
       })]
     })
   })
