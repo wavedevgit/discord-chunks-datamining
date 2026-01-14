@@ -25,6 +25,8 @@ let d = (0, Chunk509613.UO)(Chunk313789.n.OVERLAY_VOICE_WIDGET_MAX_USERS, {
   useTitle: () => c.intl.string(c.t["X/Uyzc"]),
   minValue: Chunk794704.o3 - 1,
   maxValue: Chunk794704.IM,
+  markers: Chunk794704.oo,
+  onMarkerRender: t => t < o.o3 ? c.intl.string(c.t.nrUzFL) : t,
   getInitialValue: () => {
     var t;
     let e = E();
