@@ -262,6 +262,24 @@ class p extends Chunk495852.C {
             unitIdMatchesFilterSnapshot: eC.internalBinaryRead(e, e.uint32(), n, a.filter.unitIdMatchesFilterSnapshot)
           };
           break;
+        case 22:
+          a.filter = {
+            oneofKind: "guildIds",
+            guildIds: eN.internalBinaryRead(e, e.uint32(), n, a.filter.guildIds)
+          };
+          break;
+        case 25:
+          a.filter = {
+            oneofKind: "guildMemberCountRange",
+            guildMemberCountRange: eR.internalBinaryRead(e, e.uint32(), n, a.filter.guildMemberCountRange)
+          };
+          break;
+        case 26:
+          a.filter = {
+            oneofKind: "guildHasFeature",
+            guildHasFeature: eD.internalBinaryRead(e, e.uint32(), n, a.filter.guildHasFeature)
+          };
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -272,7 +290,7 @@ class p extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "clientVersion" === e.filter.oneofKind && z.internalBinaryWrite(e.filter.clientVersion, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), "clientOs" === e.filter.oneofKind && U.internalBinaryWrite(e.filter.clientOs, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "staff" === e.filter.oneofKind && h.internalBinaryWrite(e.filter.staff, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "userInGuild" === e.filter.oneofKind && E.internalBinaryWrite(e.filter.userInGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "userIds" === e.filter.oneofKind && y.internalBinaryWrite(e.filter.userIds, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), "clientLocale" === e.filter.oneofKind && I.internalBinaryWrite(e.filter.clientLocale, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), "clientLocation" === e.filter.oneofKind && N.internalBinaryWrite(e.filter.clientLocation, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), "clientIp" === e.filter.oneofKind && M.internalBinaryWrite(e.filter.clientIp, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), "userLocale" === e.filter.oneofKind && v.internalBinaryWrite(e.filter.userLocale, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), "bot" === e.filter.oneofKind && eo.internalBinaryWrite(e.filter.bot, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), "userAgeRange" === e.filter.oneofKind && el.internalBinaryWrite(e.filter.userAgeRange, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), "userIdRange" === e.filter.oneofKind && ef.internalBinaryWrite(e.filter.userIdRange, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), "userHasFlag" === e.filter.oneofKind && e_.internalBinaryWrite(e.filter.userHasFlag, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), "unitIdInRangeByHash" === e.filter.oneofKind && eh.internalBinaryWrite(e.filter.unitIdInRangeByHash, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), "clientReleaseChannel" === e.filter.oneofKind && eE.internalBinaryWrite(e.filter.clientReleaseChannel, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), "always" === e.filter.oneofKind && ey.internalBinaryWrite(e.filter.always, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), "clientSystemLocale" === e.filter.oneofKind && C.internalBinaryWrite(e.filter.clientSystemLocale, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), "unitIdInExperiment" === e.filter.oneofKind && ev.internalBinaryWrite(e.filter.unitIdInExperiment, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), "userPremiumType" === e.filter.oneofKind && eI.internalBinaryWrite(e.filter.userPremiumType, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), "unitIdMatchesFilterSnapshot" === e.filter.oneofKind && eC.internalBinaryWrite(e.filter.unitIdMatchesFilterSnapshot, t.tag(21, r.TD.LengthDelimited).fork(), n).join();
+    "clientVersion" === e.filter.oneofKind && z.internalBinaryWrite(e.filter.clientVersion, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), "clientOs" === e.filter.oneofKind && U.internalBinaryWrite(e.filter.clientOs, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "staff" === e.filter.oneofKind && h.internalBinaryWrite(e.filter.staff, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "userInGuild" === e.filter.oneofKind && E.internalBinaryWrite(e.filter.userInGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "userIds" === e.filter.oneofKind && y.internalBinaryWrite(e.filter.userIds, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), "clientLocale" === e.filter.oneofKind && I.internalBinaryWrite(e.filter.clientLocale, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), "clientLocation" === e.filter.oneofKind && N.internalBinaryWrite(e.filter.clientLocation, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), "clientIp" === e.filter.oneofKind && M.internalBinaryWrite(e.filter.clientIp, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), "userLocale" === e.filter.oneofKind && v.internalBinaryWrite(e.filter.userLocale, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), "bot" === e.filter.oneofKind && eo.internalBinaryWrite(e.filter.bot, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), "userAgeRange" === e.filter.oneofKind && el.internalBinaryWrite(e.filter.userAgeRange, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), "userIdRange" === e.filter.oneofKind && ef.internalBinaryWrite(e.filter.userIdRange, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), "userHasFlag" === e.filter.oneofKind && e_.internalBinaryWrite(e.filter.userHasFlag, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), "unitIdInRangeByHash" === e.filter.oneofKind && eh.internalBinaryWrite(e.filter.unitIdInRangeByHash, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), "clientReleaseChannel" === e.filter.oneofKind && eE.internalBinaryWrite(e.filter.clientReleaseChannel, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), "always" === e.filter.oneofKind && ey.internalBinaryWrite(e.filter.always, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), "clientSystemLocale" === e.filter.oneofKind && C.internalBinaryWrite(e.filter.clientSystemLocale, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), "unitIdInExperiment" === e.filter.oneofKind && ev.internalBinaryWrite(e.filter.unitIdInExperiment, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), "userPremiumType" === e.filter.oneofKind && eI.internalBinaryWrite(e.filter.userPremiumType, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), "unitIdMatchesFilterSnapshot" === e.filter.oneofKind && eC.internalBinaryWrite(e.filter.unitIdMatchesFilterSnapshot, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), "guildIds" === e.filter.oneofKind && eN.internalBinaryWrite(e.filter.guildIds, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), "guildMemberCountRange" === e.filter.oneofKind && eR.internalBinaryWrite(e.filter.guildMemberCountRange, t.tag(25, r.TD.LengthDelimited).fork(), n).join(), "guildHasFeature" === e.filter.oneofKind && eD.internalBinaryWrite(e.filter.guildHasFeature, t.tag(26, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -397,6 +415,24 @@ class p extends Chunk495852.C {
       kind: "message",
       oneof: "filter",
       T: () => eC
+    }, {
+      no: 22,
+      name: "guild_ids",
+      kind: "message",
+      oneof: "filter",
+      T: () => eN
+    }, {
+      no: 25,
+      name: "guild_member_count_range",
+      kind: "message",
+      oneof: "filter",
+      T: () => eR
+    }, {
+      no: 26,
+      name: "guild_has_feature",
+      kind: "message",
+      oneof: "filter",
+      T: () => eD
     }])
   }
 }
@@ -2105,4 +2141,142 @@ class eT extends Chunk495852.C {
     }])
   }
 }
-let eC = new eT
+let eC = new eT;
+class eA extends Chunk495852.C {
+  create(e) {
+    let t = {
+      guildIds: []
+    };
+    return globalThis.Object.defineProperty(t, a.C, {
+      enumerable: false,
+      value: this
+    }), true !== e && (0, i.l)(this, t, e), t
+  }
+  internalBinaryRead(e, t, n, i) {
+    let a = null != i ? i : this.create(),
+      o = e.pos + t;
+    for (; e.pos < o;) {
+      let [t, i] = e.tag();
+      if (1 === t)
+        if (i === r.TD.LengthDelimited)
+          for (let t = e.int32() + e.pos; e.pos < t;) a.guildIds.push(e.fixed64().toString());
+        else a.guildIds.push(e.fixed64().toString());
+      else {
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+        let s = e.skip(i);
+        false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+      }
+    }
+    return a
+  }
+  internalBinaryWrite(e, t, n) {
+    if (e.guildIds.length) {
+      t.tag(1, r.TD.LengthDelimited).fork();
+      for (let n = 0; n < e.guildIds.length; n++) t.fixed64(e.guildIds[n]);
+      t.join()
+    }
+    let i = n.writeUnknownFields;
+    returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
+  }
+  constructor() {
+    super("discord_protos.discord_experimentation.v1.GuildIds", [{
+      no: 1,
+      name: "guild_ids",
+      kind: "scalar",
+      repeat: 1,
+      T: 6
+    }])
+  }
+}
+let eN = new eA;
+class eP extends Chunk495852.C {
+  create(e) {
+    let t = {};
+    return globalThis.Object.defineProperty(t, a.C, {
+      enumerable: false,
+      value: this
+    }), true !== e && (0, i.l)(this, t, e), t
+  }
+  internalBinaryRead(e, t, n, i) {
+    let a = null != i ? i : this.create(),
+      o = e.pos + t;
+    for (; e.pos < o;) {
+      let [t, i] = e.tag();
+      switch (t) {
+        case 1:
+          a.minCount = s.yC.internalBinaryRead(e, e.uint32(), n, a.minCount);
+          break;
+        case 2:
+          a.maxCount = s.yC.internalBinaryRead(e, e.uint32(), n, a.maxCount);
+          break;
+        default:
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let l = e.skip(i);
+          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, l)
+      }
+    }
+    return a
+  }
+  internalBinaryWrite(e, t, n) {
+    e.minCount && s.yC.internalBinaryWrite(e.minCount, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.maxCount && s.yC.internalBinaryWrite(e.maxCount, t.tag(2, r.TD.LengthDelimited).fork(), n).join();
+    let i = n.writeUnknownFields;
+    returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
+  }
+  constructor() {
+    super("discord_protos.discord_experimentation.v1.GuildMemberCountRange", [{
+      no: 1,
+      name: "min_count",
+      kind: "message",
+      T: () => s.yC
+    }, {
+      no: 2,
+      name: "max_count",
+      kind: "message",
+      T: () => s.yC
+    }])
+  }
+}
+let eR = new eP;
+class ew extends Chunk495852.C {
+  create(e) {
+    let t = {
+      features: []
+    };
+    return globalThis.Object.defineProperty(t, a.C, {
+      enumerable: false,
+      value: this
+    }), true !== e && (0, i.l)(this, t, e), t
+  }
+  internalBinaryRead(e, t, n, i) {
+    let a = null != i ? i : this.create(),
+      o = e.pos + t;
+    for (; e.pos < o;) {
+      let [t, i] = e.tag();
+      if (1 === t) a.features.push(e.string());
+      else {
+        let o = n.readUnknownField;
+        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+        let s = e.skip(i);
+        false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+      }
+    }
+    return a
+  }
+  internalBinaryWrite(e, t, n) {
+    for (let n = 0; n < e.features.length; n++) t.tag(1, r.TD.LengthDelimited).string(e.features[n]);
+    let i = n.writeUnknownFields;
+    returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
+  }
+  constructor() {
+    super("discord_protos.discord_experimentation.v1.GuildHasFeature", [{
+      no: 1,
+      name: "features",
+      kind: "scalar",
+      repeat: 2,
+      T: 9
+    }])
+  }
+}
+let eD = new ew

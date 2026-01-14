@@ -6,6 +6,8 @@ module.exports = {
   sessions: "_803f2f55621144fb-sessions",
   session: "_803f2f55621144fb-session",
   currentSession: "_803f2f55621144fb-currentSession",
+  sessionContent: "_803f2f55621144fb-sessionContent",
+  sessionSeparator: "_803f2f55621144fb-sessionSeparator",
   sessionIcon: "_803f2f55621144fb-sessionIcon",
   legacySession: "_803f2f55621144fb-legacySession",
   sessionInfo: "_803f2f55621144fb-sessionInfo",
@@ -13,5 +15,6 @@ module.exports = {
   sessionMoreButton: "_803f2f55621144fb-sessionMoreButton",
   sessionCheckbox: "_803f2f55621144fb-sessionCheckbox",
   logOutAllButton: "_803f2f55621144fb-logOutAllButton",
-  loading: "_803f2f55621144fb-loading"
+  loading: "_803f2f55621144fb-loading",
+  logOutAllButtonRedesign: "_803f2f55621144fb-logOutAllButtonRedesign"
 }

@@ -3,6 +3,7 @@
 "use strict";
 require.d(exports, {
   F3: () => o,
+  Ts: () => s,
   _e: () => i,
   sb: () => a
 });
@@ -16,4 +17,5 @@ let i = {
     success: Chunk564546.colorSuccess
   },
   a = 48,
-  o = 16
+  o = 16,
+  s = 360

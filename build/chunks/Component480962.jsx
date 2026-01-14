@@ -118,6 +118,7 @@ function S(e) {
   if (w) return (0, r.jsx)(s.pS, {
     open: x,
     viewportPadding: p.sb,
+    maxHeight: p.Ts,
     onOpenChange: L,
     spacing: D ? false : 4,
     placement: t,

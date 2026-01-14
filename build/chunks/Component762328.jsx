@@ -81,11 +81,12 @@ function y(e) {
       children: D,
       renderLayer: x,
       viewportPadding: L = g,
-      trigger: j = "click",
-      hoverDelay: M = E
+      maxHeight: j,
+      trigger: M = "click",
+      hoverDelay: k = E
     } = e,
-    k = i.useRef(null),
-    U = i.useMemo(() => {
+    U = i.useRef(null),
+    G = i.useMemo(() => {
       let e = [(0, a.cv)(T)];
       return C && e.push((0, a.RR)({
         crossAxis: A,
@@ -97,8 +98,17 @@ function y(e) {
         boundary: l.body
       })), e.push((0, a.Cp)({
         strategy: "referenceHidden"
+      })), null != j && e.push((0, a.dp)({
+        padding: L,
+        apply(e) {
+          let {
+            availableHeight: t,
+            elements: n
+          } = e, r = Math.min(j, t);
+          n.floating.style.setProperty("--custom-floating-layer-max-height", "".concat(r, "px"))
+        }
       })), e
-    }, [T, C, N, L, A, l]);
+    }, [T, C, N, L, A, l, j]);
   null != S ? n = {
     reference: {
       getBoundingClientRect: () => S
@@ -107,56 +117,56 @@ function y(e) {
     reference: v
   });
   let {
-    refs: G,
-    floatingStyles: Z,
-    placement: F,
-    middlewareData: B,
-    update: V,
-    context: H
+    refs: Z,
+    floatingStyles: F,
+    placement: B,
+    middlewareData: V,
+    update: H,
+    context: Y
   } = (0, o.YF)({
     placement: I,
     open: p,
     onOpenChange: m,
     strategy: P,
-    middleware: U,
+    middleware: G,
     whileElementsMounted: s.Me,
     elements: n
-  }), Y = (0, o.bQ)(H), W = (0, o.XI)(H, {
-    restMs: M,
+  }), W = (0, o.bQ)(Y), K = (0, o.XI)(Y, {
+    restMs: k,
     delay: {
-      open: M,
+      open: k,
       close: 0
     },
-    enabled: "hover" === j,
+    enabled: "hover" === M,
     handleClose: (0, o.xp)({
       blockPointerEvents: true
     })
   }), {
-    getReferenceProps: K,
-    getFloatingProps: z
-  } = (0, o.NI)([Y, W]), q = (null == (t = B.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Q = R ? d.UU : i.Fragment;
+    getReferenceProps: z,
+    getFloatingProps: q
+  } = (0, o.NI)([W, K]), Q = (null == (t = V.hide) ? true : t.referenceHidden) ? "hidden" : "visible", X = R ? d.UU : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [D({
-      ref: G.setReference,
-      props: K()
-    }), p && (0, r.jsxs)(Q, {
+      ref: Z.setReference,
+      props: z()
+    }), p && (0, r.jsxs)(X, {
       ownerDocument: l,
       children: [w ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", h(_({
         id: y,
         className: c()(O, f.layer),
         [b]: true,
-        style: h(_({}, Z), {
-          visibility: q
+        style: h(_({}, F), {
+          visibility: Q
         }),
-        ref: G.setFloating
-      }, z()), {
+        ref: Z.setFloating
+      }, q()), {
         children: (0, r.jsx)(u.Jc, {
-          containerRef: k,
+          containerRef: U,
           children: x({
-            placement: F,
-            update: V,
-            hidden: "hidden" === q,
-            shift: B.shift
+            placement: B,
+            update: H,
+            hidden: "hidden" === Q,
+            shift: V.shift
           })
         })
       }))]

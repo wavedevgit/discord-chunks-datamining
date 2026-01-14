@@ -99,8 +99,8 @@ let j = Chunk473749.memo(function(e) {
               "aria-hidden": true,
               children: (0, r.jsxs)("div", {
                 className: x.progressContainer,
-                children: [(0, r.jsx)(g.Z, {
-                  variant: g.y.BLUE,
+                children: [(0, r.jsx)(g.ZP, {
+                  variant: g.yB.BLUE,
                   progress: L.length,
                   maximum: I.length
                 }), (0, r.jsxs)("div", {
