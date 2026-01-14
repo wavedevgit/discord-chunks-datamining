@@ -21,28 +21,31 @@ function p(e) {
     name: n,
     size: a,
     spoiler: p
-  } = e, _ = i.useMemo(() => null != t.contentType && false !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [m, h] = i.useState(p), g = i.useMemo(() => () => (0, r.jsx)(c.mz, {
-    mimeType: _,
-    downloadURL: t.url,
-    showDownload: true,
-    isVisualMediaType: false
-  }), [t, _]), E = e => (0, r.jsx)(s.Z, {
-    className: o()({
-      [f.fileHidden]: e
-    }),
-    url: t.url,
-    fileName: null != n ? n : d.intl.string(d.t.GnuJ5u),
-    fileSize: null != a ? a : 0,
-    renderAdjacentContent: g
-  });
+  } = e, _ = i.useMemo(() => null != t.contentType && false !== t.contentType.indexOf("/") ? t.contentType.split("/") : ["unknown", "unknown"], [t.contentType]), [m, h] = i.useState(p), [g, E] = i.useState(p);
+  p !== m && (h(p), E(p));
+  let b = i.useMemo(() => () => (0, r.jsx)(c.mz, {
+      mimeType: _,
+      downloadURL: t.url,
+      showDownload: true,
+      isVisualMediaType: false
+    }), [t, _]),
+    y = e => (0, r.jsx)(s.Z, {
+      className: o()({
+        [f.fileHidden]: e
+      }),
+      url: t.url,
+      fileName: null != n ? n : d.intl.string(d.t.GnuJ5u),
+      fileSize: null != a ? a : 0,
+      renderAdjacentContent: b
+    });
   return (0, r.jsx)("div", {
     className: f.fileDisplayContainer,
     children: p ? (0, r.jsx)(u.ZP, {
       type: u.ZP.Types.ATTACHMENT,
       reason: l.wk.SPOILER,
-      obscured: m,
-      onToggleObscurity: () => h(e => !e),
-      children: e => E(e)
-    }) : E(false)
+      obscured: g,
+      onToggleObscurity: () => E(e => !e),
+      children: e => y(e)
+    }) : y(false)
   })
 }

@@ -27,7 +27,9 @@ function E(e) {
     description: a
   } = e, E = (0, u.pU)(t), b = (0, s.yE)(t.flags, c.hR.IS_ANIMATED), {
     gifAutoPlay: y
-  } = (0, d.c)(), [O, v] = i.useState(n), S = e => {
+  } = (0, d.c)(), [O, v] = i.useState(n), [S, I] = i.useState(n);
+  n !== O && (v(n), I(n));
+  let T = e => {
     var n, i;
     return "IMAGE" !== E ? (0, r.jsx)(_.S, {
       className: h.imgContainer,
@@ -63,8 +65,8 @@ function E(e) {
   return n ? (0, r.jsx)(p.ZP, {
     type: p.ZP.Types.ATTACHMENT,
     reason: l.wk.SPOILER,
-    obscured: O,
-    onToggleObscurity: () => v(e => !e),
-    children: e => S(e)
-  }) : S(false)
+    obscured: S,
+    onToggleObscurity: () => I(e => !e),
+    children: e => T(e)
+  }) : T(false)
 }
