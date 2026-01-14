@@ -18,12 +18,12 @@ let m = e => {
     canUsePremiumCollectibles: n,
     isPurchaseSection: m,
     isPremiumSection: p
-  } = e, h = (0, c.Yq)(t), v = (0, i.e7)([s.Z, o.Z], () => {
+  } = e, f = (0, c.Yq)(t), v = (0, i.e7)([s.Z, o.Z], () => {
     let e = s.Z.getProduct(t),
       n = o.Z.getPurchase(t);
     return null != n ? (0, c.qS)(n) : (0, c.G1)(e)
   });
-  return m || p && n ? null : h ? (0, r.jsx)(a.lBU, {
+  return m || p && n ? null : f ? (0, r.jsx)(a.lBU, {
     className: u.newBadge,
     text: (0, r.jsxs)("div", {
       className: u.newBadgeText,

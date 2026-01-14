@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 934261, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,7 +51,7 @@ let S = e => {
       pendingProfileEffectRecord: t,
       product: n,
       purchase: u
-    } = e, d = (0, l.e7)([v.default], () => v.default.getCurrentUser()), p = (0, l.e7)([s.Z], () => s.Z.getProduct(null == t ? true : t.skuId)), m = (0, l.e7)([h.default], () => h.default.locale), g = O.ZP.canUseCollectibles(d), b = (0, c.qS)(u), x = (0, c.G1)(n), j = !g && b, y = (null == u ? true : u.expiresAt) != null ? (0, P.TD)(Date.now(), u.expiresAt) : null, I = (0, a.ag)(u), S = (0, a.kd)(p), _ = (0, f.M)(!x || g), Z = w(j, x, g, _), A = null == u || j;
+    } = e, d = (0, l.e7)([v.default], () => v.default.getCurrentUser()), p = (0, l.e7)([s.Z], () => s.Z.getProduct(null == t ? true : t.skuId)), m = (0, l.e7)([h.default], () => h.default.locale), g = O.ZP.canUseCollectibles(d), b = (0, c.qS)(u), x = (0, c.G1)(n), j = !g && b, y = (null == u ? true : u.expiresAt) != null ? (0, P.TD)(Date.now(), u.expiresAt) : null, I = (0, a.ag)(u), S = (0, a.kd)(p), w = (0, f.M)(!x || g), Z = _(j, x, g, w), A = null == u || j;
     return null != t ? (0, r.jsx)("div", {
       className: A ? C.effectDescriptionBorderWithGradient : C.effectDescriptionNoGradient,
       children: (0, r.jsxs)("div", {
@@ -99,8 +99,8 @@ let S = e => {
       })
     }) : null
   },
-  w = (e, t, n, r) => e ? E.intl.string(E.t["1UPza/"]) : t && n ? E.intl.string(E.t.hmyYK8) : t && !n ? r ? E.intl.string(E.t.melduy) : E.intl.string(E.t.JtAKwp) : E.intl.string(E.t.fEGjVQ),
-  _ = e => {
+  _ = (e, t, n, r) => e ? E.intl.string(E.t["1UPza/"]) : t && n ? E.intl.string(E.t.hmyYK8) : t && !n ? r ? E.intl.string(E.t.melduy) : E.intl.string(E.t.JtAKwp) : E.intl.string(E.t.fEGjVQ),
+  w = e => {
     var t, n;
     let {
       user: i,
@@ -114,8 +114,8 @@ let S = e => {
       pendingPronouns: v,
       pendingBio: P,
       pendingBanner: E,
-      pendingAvatar: w,
-      pendingAvatarDecoration: _,
+      pendingAvatar: _,
+      pendingAvatarDecoration: w,
       pendingThemeColors: Z,
       pendingAccentColor: A
     } = (0, l.cj)([u.Z, y.Z], () => I({
@@ -133,9 +133,9 @@ let S = e => {
       useLargeBanner: true,
       pendingAvatar: (0, m.SD)({
         userId: i.id,
-        image: w
+        image: _
       }),
-      pendingAvatarDecoration: _,
+      pendingAvatarDecoration: w,
       pendingThemeColors: Z,
       pendingAccentColor: A,
       pendingProfileEffect: null != o ? o : null,

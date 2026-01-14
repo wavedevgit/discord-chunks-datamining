@@ -17,7 +17,6 @@ var r = {
   group: "_64e6155a0667273d-group",
   radioItemIcon: "_64e6155a0667273d-radioItemIcon",
   label: "_64e6155a0667273d-label",
-  container: "_64e6155a0667273d-container",
   outerRadioBorderStroke: "_64e6155a0667273d-outerRadioBorderStroke"
 };
 require.r(module.exports = r)

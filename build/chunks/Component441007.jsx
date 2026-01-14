@@ -27,11 +27,11 @@ let f = {
       var e;
       return (null == (e = s.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     },
-    Component: Chunk931461.c
+    Component: Chunk931461.cs
   }, {
     order: 300,
     predicate: () => (0, l.c_)("SensitiveContentFiltersNotice") && !(0, a.kJ)(),
-    Component: Chunk931461.j
+    Component: Chunk931461.jF
   }],
   DATA_AND_PRIVACY: [{
     order: 100,

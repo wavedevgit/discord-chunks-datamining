@@ -1,12 +1,10 @@
 /** Chunk was on 77069 **/
 /** chunk id: 896049, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  K: () => N
+  K: () => g
 });
 var Chunk924628 = require("./924628.js"),
-  Chunk915009 = require("./915009.js"),
   Chunk509613 = require("./509613.js"),
-  Chunk970013 = require("./970013.js"),
   Chunk480294 = require("./480294.js"),
   Chunk313789 = require("./313789.js"),
   Chunk116233 = require("./116233.jsx"),
@@ -18,14 +16,11 @@ var Chunk924628 = require("./924628.js"),
   Chunk380640 = require("./380640.js"),
   Chunk613852 = require("./613852.js"),
   Chunk388032 = require("./388032.jsx");
-let N = (0, Chunk509613.k4)(Chunk313789.n.DATA_USAGE_CATEGORY, {
-  useTitle: () => I.intl.string(I.t.SRZyHg),
-  useNotice: () => (0, l.LN)() ? {
-    type: u.v.STRONGLY_DISCOURAGED_CUSTOM,
-    notice: o.Z
-  } : null,
+let g = (0, Chunk509613.k4)(Chunk313789.n.DATA_USAGE_CATEGORY, {
+  useTitle: () => _.intl.string(_.t.SRZyHg),
+  useNotice: Chunk116233.a,
   initialize: () => {
-    r.Z.fetchedConsents || (0, i.I)()
+    s.Z.fetchedConsents || (0, i.I)()
   },
-  buildLayout: () => [g.Q, _.M, d.W, E.T, T.P, S.I, c.Z]
+  buildLayout: () => [d.Q, E.M, c.W, S.T, a.P, o.I, T.Z]
 })

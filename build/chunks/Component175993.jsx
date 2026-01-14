@@ -2,27 +2,31 @@
 /** chunk id: 175993, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
+  Chunk493773 = require("./493773.js"),
   Chunk970013 = require("./970013.js"),
   Chunk992406 = require("./992406.js");
 
-function s(e) {
+function l(e) {
   let {
     notice: t
   } = e, {
     noticeType: n,
-    useText: a
-  } = t, o = a();
-  return (0, r.jsx)(i.M14, {
+    useText: o
+  } = t, s = o();
+  return (0, a.ZP)(() => {
+    var e;
+    null == (e = t.trackView) || e.call(t)
+  }), (0, r.jsx)(i.M14, {
     type: n,
-    children: o
+    children: s
   })
 }
 
-function l(e) {
+function c(e) {
   let {
     notice: t
   } = e, {
@@ -31,29 +35,29 @@ function l(e) {
   return (0, r.jsx)(n, {})
 }
 
-function c(e) {
+function u(e) {
   let {
     notice: t
   } = e;
   switch (t.type) {
-    case a.v.INLINE_NOTICE:
-      return (0, r.jsx)(s, {
+    case o.v.INLINE_NOTICE:
+      return (0, r.jsx)(l, {
         notice: t
       });
-    case a.v.STRONGLY_DISCOURAGED_CUSTOM:
-      return (0, r.jsx)(l, {
+    case o.v.STRONGLY_DISCOURAGED_CUSTOM:
+      return (0, r.jsx)(c, {
         notice: t
       })
   }
 }
 
-function u(e) {
+function d(e) {
   let {
     notice: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o.notice,
-    children: (0, r.jsx)(c, {
+    className: s.notice,
+    children: (0, r.jsx)(u, {
       notice: t
     })
   })

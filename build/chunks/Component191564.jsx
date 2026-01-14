@@ -85,7 +85,7 @@ function I(e) {
   } = (0, g.xZ)(null == n ? true : n.id), [v, P] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
-  }, [l, c]), [I, S] = i.useState(() => null != f ? f : true !== x ? x : null == p ? null : null != p ? p : null), w = i.useMemo(() => {
+  }, [l, c]), [I, S] = i.useState(() => null != f ? f : true !== x ? x : null == p ? null : null != p ? p : null), _ = i.useMemo(() => {
     var e;
     let t = v.find(e => {
       let {
@@ -100,9 +100,9 @@ function I(e) {
       return t === (null == I ? true : I.skuId)
     })) ? e : null
   }, [I, v, P]), {
-    product: _,
+    product: w,
     purchase: Z
-  } = (0, d.Z)(null == w ? true : w.skuId), A = i.useRef(null), k = h.ZP.canUseCollectibles(t), N = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
+  } = (0, d.Z)(null == _ ? true : _.skuId), A = i.useRef(null), k = h.ZP.canUseCollectibles(t), N = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
     S(e)
   }, [S]), D = i.useCallback(e => {
     b(), (0, a.mK)({
@@ -136,8 +136,8 @@ function I(e) {
         onOpenShop: D
       }), (0, r.jsx)(j.Z, {
         user: t,
-        pendingProfileEffectRecord: w,
-        product: _,
+        pendingProfileEffectRecord: _,
+        product: w,
         purchase: Z,
         guild: n
       })]
@@ -148,7 +148,7 @@ function I(e) {
       },
       onClose: b,
       onOpenShop: D,
-      product: _,
+      product: w,
       purchase: Z,
       canUsePremiumCollectibles: k,
       selectedProfileEffect: I,

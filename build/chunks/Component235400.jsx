@@ -37,9 +37,9 @@ function E(e) {
     purchases: m,
     analyticsLocations: b,
     onClose: j,
-    initialSelectedDecoration: w,
+    initialSelectedDecoration: S,
     guild: E
-  } = e, A = (0, l.e7)([f.ZP], () => null != E ? f.ZP.getMember(E.id, n.id) : null), T = null != A ? A.avatarDecoration : n.avatarDecoration, {
+  } = e, A = (0, l.e7)([h.ZP], () => null != E ? h.ZP.getMember(E.id, n.id) : null), T = null != A ? A.avatarDecoration : n.avatarDecoration, {
     pendingAvatarDecoration: _,
     setPendingAvatarDecoration: D
   } = (0, g.Z)({
@@ -47,7 +47,7 @@ function E(e) {
     guildId: null == E ? true : E.id
   }), [Z, N] = i.useState(() => {
     var e;
-    return null != w ? w : true !== _ ? _ : null == T ? null : null != (e = (0, d.iC)(m, o).find(e => {
+    return null != S ? S : true !== _ ? _ : null == T ? null : null != (e = (0, d.iC)(m, o).find(e => {
       let {
         skuId: t
       } = e;
@@ -75,7 +75,7 @@ function E(e) {
       className: I.modalHeader,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
-        children: C.intl.string(C.t.HykynS)
+        children: w.intl.string(w.t.HykynS)
       }), (0, r.jsx)(a.olH, {
         "data-migration-pending": true,
         className: I.modalCloseButton,
@@ -105,7 +105,7 @@ function E(e) {
       className: I.modalFooter,
       children: [null != L && (M || !U) || null === Z ? (0, r.jsx)(a.Button, {
         variant: "primary",
-        text: C.intl.string(C.t.Jh8fJz),
+        text: w.intl.string(w.t.Jh8fJz),
         onClick: () => {
           D(Z), j()
         },
@@ -113,19 +113,19 @@ function E(e) {
       }) : null == L && (M || !U) ? (0, r.jsx)(a.Button, {
         variant: "primary",
         onClick: () => G(null == R ? true : R.skuId),
-        text: C.intl.string(C.t.fYfGgK)
+        text: w.intl.string(w.t.fYfGgK)
       }) : (0, r.jsx)(v.Z, {
-        subscriptionTier: S.Si.TIER_2,
+        subscriptionTier: C.Si.TIER_2,
         showGradient: !M,
         textOptions: {
-          textOverride: P.ZP.isPremium(n) ? C.intl.string(C.t.KXLX7l) : M ? C.intl.string(C.t.mr4K7D) : C.intl.string(C.t.pj0XBN)
+          textOverride: P.ZP.isPremium(n) ? w.intl.string(w.t.KXLX7l) : M ? w.intl.string(w.t.mr4K7D) : w.intl.string(w.t.pj0XBN)
         }
-      }), !M && U ? (0, r.jsx)(h.Z, {
+      }), !M && U ? (0, r.jsx)(f.Z, {
         itemType: null != (t = null == L ? true : L.type) ? t : null == R ? true : R.type,
         onClose: j
       }) : (0, r.jsx)(a.Button, {
         variant: "secondary",
-        text: C.intl.string(C.t["ETE/oC"]),
+        text: w.intl.string(w.t["ETE/oC"]),
         onClick: j
       })]
     })]
@@ -140,20 +140,20 @@ function A(e) {
     onCloseModal: d,
     initialSelectedDecoration: u,
     guild: p
-  } = e, h = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = e, f = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
     analyticsLocations: v
   } = (0, o.ZP)(n, s.Z.EDIT_AVATAR_DECORATION_MODAL), {
     categories: x,
     purchases: g,
-    isFetchingCategories: f,
+    isFetchingCategories: h,
     isFetchingPurchases: P
-  } = (0, m.ZP)(), y = f || P && 0 === g.size;
+  } = (0, m.ZP)(), y = h || P && 0 === g.size;
   return i.useEffect(() => {
-    j.default.track(w.rMx.OPEN_MODAL, {
-      type: w.jXE.AVATAR_DECORATION_CUSTOMIZATION,
+    j.default.track(S.rMx.OPEN_MODAL, {
+      type: S.jXE.AVATAR_DECORATION_CUSTOMIZATION,
       location_stack: v
     })
-  }, [v]), null == h ? null : (0, r.jsx)(o.Gt, {
+  }, [v]), null == f ? null : (0, r.jsx)(o.Gt, {
     value: v,
     children: (0, r.jsx)(a.Y0X, {
       transitionState: t,
@@ -165,7 +165,7 @@ function A(e) {
         className: I.spinner,
         type: a.$jN.Type.SPINNING_CIRCLE
       }) : (0, r.jsx)(E, {
-        user: h,
+        user: f,
         guild: p,
         categories: x,
         purchases: g,

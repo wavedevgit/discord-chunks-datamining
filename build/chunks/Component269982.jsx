@@ -38,8 +38,8 @@ function m(e) {
     onClose: m
   } = e, {
     newestAnalyticsLocation: p
-  } = (0, a.ZP)(), h = t === i.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t === i.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t === i.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
-  return null == h ? null : (0, r.jsxs)("div", {
+  } = (0, a.ZP)(), f = t === i.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t === i.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t === i.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
+  return null == f ? null : (0, r.jsxs)("div", {
     className: d.nitroUpsellContainer,
     children: [(0, r.jsx)(l.SrA, {
       className: d.nitroWheel,
@@ -48,14 +48,14 @@ function m(e) {
     }), (0, r.jsx)(l.Text, {
       className: d.nitroText,
       variant: "text-md/medium",
-      children: h === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EI"], {
+      children: f === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EI"], {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
               default: e
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, r.jsx)(e, u({
-              premiumUpsellType: h,
+              premiumUpsellType: f,
               title: c.intl.string(c.t.JI7uhc),
               body: c.intl.string(c.t["5XvsdZ"]),
               glowUp: c.intl.string(c.t["5XvsdZ"]),
@@ -64,14 +64,14 @@ function m(e) {
             }, t))
           })
         }
-      }) : h === o.cd.PROFILE_EFFECT_MODAL_UPSELL ? c.intl.format(c.t.eWNONM, {
+      }) : f === o.cd.PROFILE_EFFECT_MODAL_UPSELL ? c.intl.format(c.t.eWNONM, {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
               default: e
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, r.jsx)(e, u({
-              premiumUpsellType: h,
+              premiumUpsellType: f,
               title: c.intl.string(c.t.sYm15X),
               body: c.intl.string(c.t["Hza+Bu"]),
               glowUp: c.intl.string(c.t["Hza+Bu"]),
@@ -80,14 +80,14 @@ function m(e) {
             }, t))
           })
         }
-      }) : h === o.cd.NAMEPLATE_MODAL_UPSELL ? c.intl.format(c.t.G6b8TF, {
+      }) : f === o.cd.NAMEPLATE_MODAL_UPSELL ? c.intl.format(c.t.G6b8TF, {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
               default: e
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, r.jsx)(e, u({
-              premiumUpsellType: h,
+              premiumUpsellType: f,
               title: c.intl.string(c.t.k7UN4k),
               body: c.intl.string(c.t["0/QPxO"]),
               glowUp: c.intl.string(c.t["0/QPxO"]),

@@ -2,13 +2,13 @@
 /** chunk id: 52268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
-}), require("./314940.js");
+});
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk278074 = require("./278074.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk212161 = require("./212161.js"),
   Chunk578976 = require("./578976.js"),
   Chunk171019 = require("./171019.jsx"),
   Chunk74538 = require("./74538.js"),
@@ -72,7 +72,7 @@ let y = () => 80,
       className: n,
       isSelected: i = false
     } = e, l = j(e, ["children", "className", "isSelected"]);
-    return (0, r.jsx)(c.P3F, h(x({
+    return (0, r.jsx)(s.P3F, h(x({
       className: o()(g.effectGridItem, n, {
         [g.selected]: i
       })
@@ -129,7 +129,7 @@ let y = () => 80,
     } = e, u = (0, p.ZP)(), f = null != i, b = d.ZP.canUseCollectibles(t);
     return (0, r.jsx)("section", {
       className: g.section,
-      children: (0, r.jsx)(c.GMG, {
+      children: (0, r.jsx)(s.GMG, {
         fade: true,
         itemGutter: 12,
         sectionGutter: 16,
@@ -147,46 +147,49 @@ let y = () => 80,
           let {
             section: j,
             items: y
-          } = u[e];
-          return (0, s.EQ)(y[t]).with(p.Tm, () => (0, r.jsxs)(v, {
+          } = u[e], O = y[t];
+          if (O === p.Tm) return (0, r.jsxs)(v, {
             style: x({}, d),
             isSelected: !f,
             onSelect: () => o(null),
-            children: [(0, r.jsx)(c.t6m, {
+            children: [(0, r.jsx)(s.t6m, {
               size: "md",
               color: "currentColor",
               className: g.notAllowedIcon
-            }), (0, r.jsx)(c.Text, {
+            }), (0, r.jsx)(s.Text, {
               variant: "text-xs/normal",
               color: "text-strong",
               children: null != n ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.PoWNfe)
             })]
-          }, h)).with(p.oT, () => (0, r.jsxs)(v, {
+          }, h);
+          if (O === p.oT) return (0, r.jsxs)(v, {
             style: d,
             onSelect: a,
-            children: [(0, r.jsx)(c.EOn, {
+            children: [(0, r.jsx)(s.EOn, {
               size: "custom",
               width: 23,
               height: 23,
               color: "currentColor",
               className: g.shopIcon
-            }), (0, r.jsx)(c.Text, {
+            }), (0, r.jsx)(s.Text, {
               variant: "text-xs/normal",
               color: "text-strong",
               children: m.intl.string(m.t.pWG4ze)
             })]
-          }, h)).otherwise(e => {
-            let t = (null == i ? true : i.skuId) === e.skuId;
+          }, h);
+          if ((0, c.H)(O)) {
+            let e = (null == i ? true : i.skuId) === O.skuId;
             return (0, r.jsx)(P, {
               style: x({}, d),
               section: j,
-              profileEffect: e,
-              innerRef: t ? l : true,
-              isSelected: t,
-              onSelect: () => o(e),
+              profileEffect: O,
+              innerRef: e ? l : true,
+              isSelected: e,
+              onSelect: () => o(O),
               canUsePremiumCollectibles: b
             }, h)
-          })
+          }
+          return null
         },
         renderSection: (e, t) => {
           let {
@@ -197,7 +200,7 @@ let y = () => 80,
               height: "".concat(16, "px"),
               position: "absolute"
             }),
-            children: (0, r.jsx)(c.Heading, {
+            children: (0, r.jsx)(s.Heading, {
               variant: "heading-md/medium",
               children: n
             })
