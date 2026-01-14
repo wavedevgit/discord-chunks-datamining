@@ -75,7 +75,9 @@ function f(e) {
     preview: e.preview,
     config: l(e.config),
     userStatus: null == e.user_status ? null : d(e.user_status),
-    targetedContent: e.targeted_content
+    targetedContent: e.targeted_content,
+    trafficMetadataRaw: e.traffic_metadata_raw,
+    trafficMetadataSealed: e.traffic_metadata_sealed
   }
 }
 

@@ -45,17 +45,17 @@ function S(e) {
     var n, r, o = function(e, t) {
       if (null == e) return {};
       var n, r, o = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
       return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
     return o
   }(e, ["target"]);
-  let i = b.Z.useField("query"),
+  let a = b.Z.useField("query"),
     d = o.useRef(null);
   (0, c.ZP)(() => {
     let e = u.Z.getSection();
@@ -64,24 +64,24 @@ function S(e) {
       originPanel: null
     }), d.current = e)
   });
-  let v = o.useCallback(e => {
+  let j = o.useCallback(e => {
       b.Z.setState({
         query: e
       })
     }, []),
-    [h, S] = o.useState(false);
+    [v, S] = o.useState(false);
   return (o.useEffect(() => {
     let e = () => {
-      (0, a.flushSync)(() => {
+      (0, i.flushSync)(() => {
         S(true), (0, g.default)()
       }), setImmediate(() => {
         l.Z.logout("settings")
       })
     };
-    return f.S.subscribe(j.CkL.SETTINGS_TRIGGER_LOGOUT, e), () => {
-      f.S.unsubscribe(j.CkL.SETTINGS_TRIGGER_LOGOUT, e)
+    return f.S.subscribe(h.CkL.SETTINGS_TRIGGER_LOGOUT, e), () => {
+      f.S.unsubscribe(h.CkL.SETTINGS_TRIGGER_LOGOUT, e)
     }
-  }, []), h) ? null : (0, r.jsx)(s.Z, function(e) {
+  }, []), v) ? null : (0, r.jsx)(s.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -99,11 +99,11 @@ function S(e) {
     }
     return e
   }({
-    partialRoot: O.E,
+    partialRoot: m.E,
     emptyState: P,
     sidebarFooter: p.Z,
     onPanelChange: e => {
-      let t = (0, m.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, O.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (x({
         destinationPanel: t,
         originPanel: d.current
@@ -111,22 +111,22 @@ function S(e) {
     },
     target: t,
     defaultTarget: y.n.ACCOUNT_PANEL,
-    searchQuery: i,
-    onSearchChange: v
+    searchQuery: a,
+    onSearchChange: j
   }, n))
 }
 
 function P() {
   return (0, r.jsxs)("div", {
-    className: h.emptySearchResultsContainer,
-    children: [(0, r.jsx)(i.Text, {
+    className: v.emptySearchResultsContainer,
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      children: v.intl.string(v.t.zihbmv)
-    }), (0, r.jsx)(i.Text, {
+      children: j.intl.string(j.t.zihbmv)
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: v.intl.string(v.t.XclvsB)
+      children: j.intl.string(j.t.XclvsB)
     })]
   })
 }

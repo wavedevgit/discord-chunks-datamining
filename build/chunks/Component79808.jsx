@@ -22,38 +22,38 @@ function y(e) {
     target: y,
     defaultTarget: p,
     onClose: g,
-    sidebarFooter: O,
-    onPanelChange: m,
-    emptyState: j,
-    searchQuery: v,
-    onSearchChange: h
+    sidebarFooter: m,
+    onPanelChange: O,
+    emptyState: h,
+    searchQuery: j,
+    onSearchChange: v
   } = e, x = d.Z.useField("currentPanelKey"), {
     node: S,
     visibleDirectory: P,
     accessibleDirectory: C
-  } = (0, f.ZP)(n, null != v ? v : ""), w = null != y && (null == (t = P.entry(y)) ? true : t.parentPanelKey) != null ? y : p, T = o.useMemo(() => {
+  } = (0, f.ZP)(n, null != j ? j : ""), w = null != y && (null == (t = P.entry(y)) ? true : t.parentPanelKey) != null ? y : p, T = o.useMemo(() => {
     var e;
     let t = null == (e = C.entry(null != x ? x : w)) ? true : e.parentPanelKey;
     if (null != t) return C.getPanelOrThrow(t)
   }, [x, C, w]), {
     navigateWithValidation: k
   } = (0, s.Cu)();
-  (0, i.ZP)(() => {
+  (0, a.ZP)(() => {
     var e, t, n;
     let r = P.entry(w).parentPanelKey,
       o = null == (e = P.entry(w)) ? true : e.parentTabKey,
-      a = null == (t = P.entry(w)) ? true : t.parentCategoryKey,
-      i = null == (n = P.entry(w)) ? true : n.parentAccordionKey;
+      i = null == (t = P.entry(w)) ? true : t.parentCategoryKey,
+      a = null == (n = P.entry(w)) ? true : n.parentAccordionKey;
     return d.Z.setState({
       currentPanelKey: r,
       currentTabKeys: null != o ? new Map([
         [r, o]
       ]) : new Map,
-      currentCategoryKey: a,
+      currentCategoryKey: i,
       disableSidebarCategoryAutoSelect: true,
       navTransition: {
         targetKey: w,
-        targetAccordionKey: i,
+        targetAccordionKey: a,
         animateScroll: false
       },
       showNavigationMobile: null == y
@@ -69,21 +69,21 @@ function y(e) {
     if (null == t) return;
     let r = P.entry(t);
     if (null == r) {
-      null == h || h("");
+      null == v || v("");
       return
     }
     let o = r.parentPanelKey;
     if (null == o) return void d.Z.setState({
       requestedTargetKey: true
     });
-    let a = d.Z.getField("currentTabKeys"),
-      i = null != r.parentTabKey ? new Map(a).set(o, r.parentTabKey) : a,
-      l = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === a.get(o)),
+    let i = d.Z.getField("currentTabKeys"),
+      a = null != r.parentTabKey ? new Map(i).set(o, r.parentTabKey) : i,
+      l = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === i.get(o)),
       c = () => {
         d.Z.setState({
           requestedTargetKey: true,
           currentPanelKey: r.parentPanelKey,
-          currentTabKeys: i,
+          currentTabKeys: a,
           currentCategoryKey: r.parentCategoryKey,
           disableSidebarCategoryAutoSelect: true,
           navTransition: {
@@ -94,11 +94,11 @@ function y(e) {
         })
       };
     r.parentPanelKey !== n ? k(() => {
-      c(), null == m || m(o)
+      c(), null == O || O(o)
     }) : c()
   }, {
-    equalityFn: a.X
-  }), [P, k, m, h]);
+    equalityFn: i.X
+  }), [P, k, O, v]);
   let N = o.useMemo(() => ({
       visibleDirectory: P,
       accessibleDirectory: C
@@ -111,11 +111,11 @@ function y(e) {
       className: b.container,
       children: [(0, r.jsx)(c.P, {
         root: S,
-        footer: O,
+        footer: m,
         onClose: E,
-        emptyState: j,
-        searchQuery: v,
-        onSearchChange: h
+        emptyState: h,
+        searchQuery: j,
+        onSearchChange: v
       }), (0, r.jsx)(l.Z, {
         onClose: E,
         setting: null != D ? D : T

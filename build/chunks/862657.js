@@ -2,9 +2,11 @@
 /** chunk id: 862657, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $V: () => x,
+  $V: () => j,
   E8: () => S,
   GN: () => g,
+  K8: () => D,
+  NS: () => w,
   PM: () => I,
   R_: () => R,
   UE: () => v,
@@ -14,9 +16,9 @@ require.d(exports, {
   iQ: () => O,
   jY: () => P,
   qe: () => N,
-  uN: () => w,
+  uN: () => x,
   vR: () => b,
-  ys: () => D,
+  ys: () => L,
   zE: () => E,
   zi: () => y
 }), require("./388685.js");
@@ -154,7 +156,9 @@ function A(e) {
       adDecisionData: t.adDecisionData,
       adContext: t.adContext,
       metadataRaw: t.metadataRaw,
-      metadataSealed: t.metadataSealed
+      metadataSealed: t.metadataSealed,
+      trafficMetadataRaw: t.trafficMetadataRaw,
+      trafficMetadataSealed: t.trafficMetadataSealed
     }
   } {
     let t = o.Z.questToDeliverForPlacement.get(e);
@@ -163,7 +167,9 @@ function A(e) {
       adDecisionData: t.adDecisionData,
       adContext: t.adContext,
       metadataRaw: t.metadataRaw,
-      metadataSealed: t.metadataSealed
+      metadataSealed: t.metadataSealed,
+      trafficMetadataRaw: t.trafficMetadataRaw,
+      trafficMetadataSealed: t.trafficMetadataSealed
     }
   }
 }
@@ -191,13 +197,43 @@ function R(e) {
   if (null != n) return null == (t = A(n)) ? true : t.metadataSealed
 }
 
-function w(e) {
+function w(e, t) {
+  var n;
+  let r = T(e);
+  if (null == r) return;
+  let {
+    trafficMetadataRaw: i,
+    questId: a
+  } = null != (n = A(r)) ? n : {};
+  if (null != i && a === t) return i;
+  if (null != t) {
+    let e = o.Z.getQuest(t);
+    return null == e ? true : e.trafficMetadataRaw
+  }
+}
+
+function D(e, t) {
+  var n;
+  let r = T(e);
+  if (null == r) return;
+  let {
+    trafficMetadataSealed: i,
+    questId: a
+  } = null != (n = A(r)) ? n : {};
+  if (null != i && a === t) return i;
+  if (null != t) {
+    let e = o.Z.getQuest(t);
+    return null == e ? true : e.trafficMetadataSealed
+  }
+}
+
+function x(e) {
   var t;
   let n = T(e);
   if (null != n) return null == (t = A(n)) ? true : t.adContext
 }
 
-function D(e, t) {
+function L(e, t) {
   a.Z.captureException(e, _(f({}, t), {
     tags: _(f({}, null == t ? true : t.tags), {
       app_context: "quests"
@@ -205,6 +241,6 @@ function D(e, t) {
   }))
 }
 
-function x() {
+function j() {
   return window.location.pathname.startsWith(u.Z5c.QUEST_HOME)
 }

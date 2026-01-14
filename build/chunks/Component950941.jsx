@@ -53,10 +53,10 @@ function u(e) {
   let {
     getDismissibleContentTypes: t,
     stronglyDiscouragedBadgeComponent: n,
-    visibleContent: a,
+    visibleContent: i,
     isSelected: l
-  } = e, c = null == t ? true : t(), s = null != a && c.includes(a) && !l, u = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(o.IGR, {
-    text: i.intl.string(i.t.y2b7CA)
+  } = e, c = null == t ? true : t(), s = null != i && c.includes(i) && !l, u = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(o.IGR, {
+    text: a.intl.string(a.t.y2b7CA)
   });
   return s ? u : null
 }
@@ -78,14 +78,14 @@ function d(e) {
   } = e;
   if (null == t) return null;
   switch (t.type) {
-    case a.W.BADGE_COUNT:
+    case i.W.BADGE_COUNT:
       return (0, r.jsx)(s, l({}, t));
-    case a.W.BADGE_NEW:
+    case i.W.BADGE_NEW:
       return (0, r.jsx)(u, c(l({}, t), {
         visibleContent: n,
         isSelected: o
       }));
-    case a.W.STRONGLY_DISCOURAGED_CUSTOM:
+    case i.W.STRONGLY_DISCOURAGED_CUSTOM:
       return (0, r.jsx)(f, c(l({}, t), {
         visibleContent: n,
         isSelected: o

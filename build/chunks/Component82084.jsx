@@ -20,27 +20,27 @@ function b(e) {
       target: y,
       defaultTarget: p,
       onPanelChange: g,
-      sidebarFooter: O,
-      emptyState: m,
-      searchQuery: j,
-      onSearchChange: v
+      sidebarFooter: m,
+      emptyState: O,
+      searchQuery: h,
+      onSearchChange: j
     } = e,
-    h = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
         var n, r, o = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
     }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]);
-  let [x, S] = o.useState(false), [P, C] = o.useState(1.4), w = o.useRef(null), T = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), k = (0, a.e7)([s.Z], () => s.Z.isFocused());
+  let [x, S] = o.useState(false), [P, C] = o.useState(1.4), w = o.useRef(null), T = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), k = (0, i.e7)([s.Z], () => s.Z.isFocused());
   return o.useEffect(() => {
     let e = e => {
       let {
@@ -55,7 +55,7 @@ function b(e) {
   }, [T, k]), (0, r.jsx)(l.UkV, {
     isShaking: x,
     intensity: P,
-    children: (0, r.jsx)(i.A, (t = function(e) {
+    children: (0, r.jsx)(a.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -72,17 +72,17 @@ function b(e) {
         })
       }
       return e
-    }({}, h), n = n = {
+    }({}, v), n = n = {
       children: (0, r.jsx)(f.Z, {
-        onClose: h.onClose,
+        onClose: v.onClose,
         partialRoot: b,
         target: y,
         defaultTarget: p,
         onPanelChange: g,
-        emptyState: m,
-        sidebarFooter: O,
-        searchQuery: j,
-        onSearchChange: v
+        emptyState: O,
+        sidebarFooter: m,
+        searchQuery: h,
+        onSearchChange: j
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

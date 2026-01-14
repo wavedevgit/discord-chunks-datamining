@@ -419,24 +419,28 @@ function ez(e) {
     responseTtlSeconds: s,
     metadataRaw: l,
     metadataSealed: c,
-    fetchedAt: u
+    trafficMetadataRaw: u,
+    trafficMetadataSealed: d,
+    fetchedAt: f
   } = e;
   _ = Date.now(), i = false, (a = new Map(a)).set(n, false);
   let {
-    enableNewRequestBehavior: d
+    enableNewRequestBehavior: p
   } = F.Z.getConfig({
     location: "handleFetchQuestToDeliverSuccess"
   });
-  if (d) {
-    var f;
+  if (p) {
+    var m;
     let e = {
-      questId: null != (f = null == t ? true : t.id) ? f : null,
-      fetchedAt: u,
+      questId: null != (m = null == t ? true : t.id) ? m : null,
+      fetchedAt: f,
       ttlMillis: eq(s),
       adDecisionData: r,
       adContext: o,
       metadataRaw: l,
-      metadataSealed: c
+      metadataSealed: c,
+      trafficMetadataRaw: u,
+      trafficMetadataSealed: d
     };
     (R = new Map(R)).set(n, e)
   } else null == t ? C.delete(n) : C.set(n, {
@@ -444,7 +448,9 @@ function ez(e) {
     adDecisionData: r,
     adContext: o,
     metadataRaw: l,
-    metadataSealed: c
+    metadataSealed: c,
+    trafficMetadataRaw: u,
+    trafficMetadataSealed: d
   })
 }
 
