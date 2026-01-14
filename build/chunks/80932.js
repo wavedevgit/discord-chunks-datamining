@@ -2,18 +2,19 @@
 /** chunk id: 80932, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $K: () => A,
-  OQ: () => O,
-  RE: () => S,
-  Xe: () => N,
-  dv: () => I,
-  rS: () => v,
-  t0: () => y
+  $K: () => N,
+  OQ: () => v,
+  RE: () => I,
+  Xe: () => P,
+  dv: () => T,
+  rS: () => S,
+  t0: () => O
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk544891 = require("./544891.js"),
   Chunk381499 = require("./381499.js"),
+  Chunk780384 = require("./780384.js"),
   Chunk570140 = require("./570140.js"),
   Chunk479531 = require("./479531.js"),
   Chunk339085 = require("./339085.js"),
@@ -28,31 +29,31 @@ var Chunk392711 = require("./392711.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e) {
-  p.hW.updateAsync("textAndImages", t => {
+function O(e) {
+  _.hW.updateAsync("textAndImages", t => {
     t.diversitySurrogate = o.Gm.create(), t.diversitySurrogate.value = e
-  }, E.fy.FREQUENT_USER_ACTION)
+  }, b.fy.FREQUENT_USER_ACTION)
 }
 
-function O(e) {
-  s.Z.dispatch({
+function v(e) {
+  l.Z.dispatch({
     type: "EMOJI_FETCH",
     guildId: e
   }), a.tn.get({
-    url: g.ANM.GUILD_EMOJIS(e),
+    url: E.ANM.GUILD_EMOJIS(e),
     oldFormErrors: true,
     rejectWithError: true
-  }).then(t => s.Z.dispatch({
+  }).then(t => l.Z.dispatch({
     type: "EMOJI_FETCH_SUCCESS",
     guildId: e,
     emojis: t.body
-  }), () => s.Z.dispatch({
+  }), () => l.Z.dispatch({
     type: "EMOJI_FETCH_FAILURE",
     guildId: e
   }))
 }
 
-function v(e) {
+function S(e) {
   let {
     guildId: t,
     image: n,
@@ -60,11 +61,11 @@ function v(e) {
     roles: i,
     analyticsLocation: o
   } = e;
-  return s.Z.dispatch({
+  return l.Z.dispatch({
     type: "EMOJI_UPLOAD_START",
     guildId: t
   }), a.tn.post({
-    url: g.ANM.GUILD_EMOJIS(t),
+    url: E.ANM.GUILD_EMOJIS(t),
     body: {
       image: n,
       name: r,
@@ -75,30 +76,32 @@ function v(e) {
     },
     oldFormErrors: true,
     rejectWithError: false
-  }).then(e => (s.Z.dispatch({
+  }).then(e => (l.Z.dispatch({
     type: "EMOJI_UPLOAD_STOP",
     guildId: t
-  }), e.body), e => (s.Z.dispatch({
+  }), e.body), e => (l.Z.dispatch({
     type: "EMOJI_UPLOAD_STOP",
     guildId: t
   }), Promise.reject(e)))
 }
 
-function S(e, t, n) {
-  return s.Z.dispatch({
+function I(e, t, n) {
+  return l.Z.dispatch({
     type: "EMOJI_DELETE",
     guildId: e,
     emojiId: t
   }), a.tn.del({
-    url: g.ANM.GUILD_EMOJI(e, t),
+    url: E.ANM.GUILD_EMOJI(e, t),
     body: null != n ? {
       replaced_by: n
     } : true,
     oldFormErrors: true,
     rejectWithError: false
+  }).then(() => {
+    s.uv.announce(y.intl.string(y.t.L3UUha))
   })
 }
-async function I(e) {
+async function T(e) {
   let {
     guildId: t,
     emojiId: n,
@@ -107,7 +110,7 @@ async function I(e) {
   } = e;
   try {
     return await a.tn.patch({
-      url: g.ANM.GUILD_EMOJI(t, n),
+      url: E.ANM.GUILD_EMOJI(t, n),
       body: {
         name: r,
         roles: i
@@ -116,38 +119,38 @@ async function I(e) {
       rejectWithError: true
     })
   } catch (e) {
-    throw new l.Z(e)
+    throw new c.Z(e)
   }
 }
 
-function T(e) {
-  if (_.Z.totalUnavailableGuilds > 0 || !f.Z.isConnected()) return e;
+function C(e) {
+  if (m.Z.totalUnavailableGuilds > 0 || !p.Z.isConnected()) return e;
   let t = e.map(e => {
     var t;
-    return null != (t = c.ZP.getCustomEmojiById(e)) ? t : u.ZP.getByName(e)
-  }).filter(m.lm);
-  return [...(0, d.Z)(t).keys()]
-}
-
-function C(e) {
-  var t, n, r;
-  return null == e ? null : null != (r = null != (n = e.id) ? n : null == (t = u.ZP.convertSurrogateToBase(e.surrogates)) ? true : t.name) ? r : e.name
+    return null != (t = u.ZP.getCustomEmojiById(e)) ? t : d.ZP.getByName(e)
+  }).filter(h.lm);
+  return [...(0, f.Z)(t).keys()]
 }
 
 function A(e) {
-  let t = C(e);
-  null != t && p.DZ.updateAsync("favoriteEmojis", e => (e.emojis = T(e.emojis), i().size(e.emojis) >= E.oX) ? (h.Z.show({
-    title: b.intl.string(b.t["+XYXtZ"]),
-    body: b.intl.formatToPlainString(b.t.JaIyFi, {
-      count: E.oX
-    })
-  }), false) : !e.emojis.includes(t) && void e.emojis.push(t), E.fy.INFREQUENT_USER_ACTION)
+  var t, n, r;
+  return null == e ? null : null != (r = null != (n = e.id) ? n : null == (t = d.ZP.convertSurrogateToBase(e.surrogates)) ? true : t.name) ? r : e.name
 }
 
 function N(e) {
-  let t = C(e);
-  null != t && p.DZ.updateAsync("favoriteEmojis", e => {
-    if (e.emojis = T(e.emojis), !e.emojis.includes(t)) returnfalse;
+  let t = A(e);
+  null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = C(e.emojis), i().size(e.emojis) >= b.oX) ? (g.Z.show({
+    title: y.intl.string(y.t["+XYXtZ"]),
+    body: y.intl.formatToPlainString(y.t.JaIyFi, {
+      count: b.oX
+    })
+  }), false) : !e.emojis.includes(t) && void e.emojis.push(t), b.fy.INFREQUENT_USER_ACTION)
+}
+
+function P(e) {
+  let t = A(e);
+  null != t && _.DZ.updateAsync("favoriteEmojis", e => {
+    if (e.emojis = C(e.emojis), !e.emojis.includes(t)) returnfalse;
     e.emojis = e.emojis.filter(e => t !== e)
-  }, E.fy.INFREQUENT_USER_ACTION)
+  }, b.fy.INFREQUENT_USER_ACTION)
 }
