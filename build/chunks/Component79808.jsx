@@ -99,26 +99,26 @@ function y(e) {
   }, {
     equalityFn: a.X
   }), [P, k, m, h]);
-  let E = o.useMemo(() => ({
+  let N = o.useMemo(() => ({
       visibleDirectory: P,
       accessibleDirectory: C
     }), [P, C]),
-    N = o.useMemo(() => () => k(g), [k, g]),
-    Z = null != x ? P.get(x) : true;
+    E = o.useMemo(() => () => k(g), [k, g]),
+    D = null != x ? P.get(x) : true;
   return (0, r.jsx)(u.j.Provider, {
-    value: E,
+    value: N,
     children: (0, r.jsxs)("div", {
       className: b.container,
       children: [(0, r.jsx)(c.P, {
         root: S,
         footer: O,
-        onClose: N,
+        onClose: E,
         emptyState: j,
         searchQuery: v,
         onSearchChange: h
       }), (0, r.jsx)(l.Z, {
-        onClose: N,
-        setting: null != Z ? Z : T
+        onClose: E,
+        setting: null != D ? D : T
       })]
     })
   })

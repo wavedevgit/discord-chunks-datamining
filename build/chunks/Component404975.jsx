@@ -53,19 +53,19 @@ function h(e) {
     return t.layout.forEach(t => {
       t.hoisted ? e.push(t) : n.push(t)
     }), [e, n]
-  }, [t.layout]), k = (0, y.Ll)(), E = (0, d.Z)("settings-sidebar", P), N = g.Z.useField("currentPanelKey");
+  }, [t.layout]), k = (0, y.Ll)(), N = (0, d.Z)("settings-sidebar", P), E = g.Z.useField("currentPanelKey");
   return o.useEffect(() => {
     var e;
-    if (null == P.current || null == N) return;
+    if (null == P.current || null == E) return;
     let t = g.Z.getField("navTransition"),
       n = null == t || t.animateScroll,
-      r = null == (e = P.current.getScrollerNode()) ? true : e.querySelector('[data-settings-sidebar-item="'.concat(N, '"]'));
+      r = null == (e = P.current.getScrollerNode()) ? true : e.querySelector('[data-settings-sidebar-item="'.concat(E, '"]'));
     null != r && P.current.scrollIntoViewNode({
       node: r,
       padding: 8,
       animate: !f.Z.useReducedMotion && n
     })
-  }, [N]), (0, r.jsx)(u.f6W, {
+  }, [E]), (0, r.jsx)(u.f6W, {
     theme: k,
     children: e => (0, r.jsx)(b.ZP, {
       contentTypes: C,
@@ -100,7 +100,7 @@ function h(e) {
               onSearchChange: m
             }), null != s && 0 === T.length && (0, r.jsx)(s, {})]
           }), (0, r.jsx)(l.bG, {
-            navigator: E,
+            navigator: N,
             children: (0, r.jsx)(l.SJ, {
               children: e => {
                 var t, a, {

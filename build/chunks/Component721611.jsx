@@ -78,11 +78,7 @@ function O(e) {
     t.some(e => e.key === n) || b.Z.setState({
       currentCategoryKey: t[0].key
     })
-  }), o.useEffect(() => () => {
-    b.Z.setState({
-      currentCategoryKey: true
-    })
-  }, []);
+  });
   let a = o.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
     i = (0, f.q_F)({
       y: 36 * a,

@@ -16,14 +16,16 @@ function o(e) {
     setValue: o,
     useTitle: s,
     useSubtitle: l,
-    useOptions: c
-  } = t, u = s(), d = null == l ? true : l(), f = n(), p = c();
+    useOptions: c,
+    useBadge: u
+  } = t, d = s(), f = null == l ? true : l(), p = n(), _ = c(), m = null == u ? true : u();
   return (0, r.jsx)(a.X, {
     children: (0, r.jsx)(i.FXm, {
-      label: u,
-      description: d,
-      options: p,
-      value: f,
+      label: d,
+      description: f,
+      options: _,
+      value: p,
+      badge: m,
       onChange: e => o(e)
     })
   })
