@@ -51,11 +51,14 @@ function E(e) {
     let t = null == (e = y.current) ? true : e.getBoundingClientRect();
     if (null == t) return;
     let n = I({
-      confettiSize: 8
-    });
-    new o.sW(g, () => {
-      S(t.left + t.width / 2, t.top + t.height / 2, n, 60)
-    }).delay()
+        confettiSize: 8
+      }),
+      r = new o.sW(g, () => {
+        S(t.left + t.width / 2, t.top + t.height / 2, n, 60)
+      });
+    return r.delay(), () => {
+      r.cancel()
+    }
   }, [S, y, b, I]);
   let T = i.useCallback(() => {
     var e;

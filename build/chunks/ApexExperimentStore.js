@@ -116,7 +116,9 @@ function M(e) {
 }
 class k extends(r = Chunk442837.ZP.PersistedStore) {
   loadStoredState(e, t) {
-    for (let n in null != e && e.version === L && (I = e.clientOverrides, v = e.evaluatedExperiments), C = {}, t) {
+    for (let n in null != e && e.version === L ? (I = e.clientOverrides, v = e.evaluatedExperiments) : null != e && 2 === e.version && (I = e.clientOverrides, v = _(f({}, e.evaluatedExperiments), {
+        installation: {}
+      })), C = {}, t) {
       let e = M(n),
         r = t[n];
       C[n] = {

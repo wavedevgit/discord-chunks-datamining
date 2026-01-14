@@ -130,7 +130,7 @@ let eZ = e => {
     } = (0, Y.Rj)(n);
     return t.type === s.Z.AVATAR_DECORATION ? (0, r.jsx)("div", {
       className: o ? e_.bundleAvatarPreviewContainer : e_.avatarPreviewContainer,
-      children: (0, r.jsx)(ex.R, {
+      children: (0, r.jsx)(eg.R, {
         user: a,
         item: t,
         isHighlighted: true
@@ -230,17 +230,17 @@ let eZ = e => {
       shouldCheckoutWithOrbs: o,
       onClose: u,
       returnRef: h,
-      previewingVariantIndexProps: x,
+      previewingVariantIndexProps: g,
       selectedVariantIndex: P,
       activeBundleSlide: j,
       rentalDuration: O
     } = e, {
       analyticsLocations: C
-    } = (0, g.ZP)(), I = (0, m.e7)([k.default], () => k.default.locale), T = F.ZP.canUseCollectibles(n), {
+    } = (0, x.ZP)(), I = (0, m.e7)([k.default], () => k.default.locale), T = F.ZP.canUseCollectibles(n), {
       previewingVariantIndex: y,
       handleEntering: S,
       handleLeaving: A
-    } = x, R = (0, eg.N)(t, y), _ = (0, eP.W)(t, P);
+    } = g, R = (0, ex.N)(t, y), _ = (0, eP.W)(t, P);
     c()(null != _, "Selected product should not be null");
     let B = (0, J.L)(t),
       {
@@ -265,7 +265,7 @@ let eZ = e => {
       eb = (0, W.ql)(_, eN.tuJ.DEFAULT),
       eh = (null == eb ? true : eb.amount) === 0,
       {
-        firstAvatarDecoration: ex
+        firstAvatarDecoration: eg
       } = (0, Y.Rj)(null != R ? R : _),
       eO = i.useMemo(() => (0, W.BH)(_, T), [_, T]),
       eI = (0, eT.To)(_),
@@ -295,8 +295,8 @@ let eZ = e => {
         onClose: e => e ? u() : (0, eA.dG)()
       }), [C, u, _.skuId]);
     return i.useEffect(() => {
-      if (null != ex) return (0, N.PO)(ex), () => (0, N.PO)(true)
-    }, [ex]), (0, r.jsxs)("div", {
+      if (null != eg) return (0, N.PO)(eg), () => (0, N.PO)(true)
+    }, [eg]), (0, r.jsxs)("div", {
       className: e_.collectibleInfoContainer,
       children: [(0, r.jsx)("div", {
         className: e_.titleContainer,
@@ -683,16 +683,16 @@ let eZ = e => {
       userId: n.id,
       image: d
     }), b = t.type === s.Z.AVATAR_DECORATION, [v] = t.items, {
-      firstAvatarDecoration: x,
-      firstProfileEffect: g,
+      firstAvatarDecoration: g,
+      firstProfileEffect: x,
       firstNameplate: P
-    } = (0, Y.Rj)(t), j = null != g, O = () => (0, r.jsxs)(r.Fragment, {
+    } = (0, Y.Rj)(t), j = null != x, O = () => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(S.Z, eL(ek({}, f), {
         pendingAvatar: p,
         user: n,
         canUsePremiumCustomization: c,
-        pendingAvatarDecoration: x,
-        pendingProfileEffect: g,
+        pendingAvatarDecoration: g,
+        pendingProfileEffect: x,
         disabledInputs: true,
         hideMessageInput: !j,
         hideCustomStatus: true,
@@ -705,7 +705,7 @@ let eZ = e => {
     }), C = e => (0, r.jsx)(eG, {
       user: n,
       nameplate: e,
-      avatarDecoration: x
+      avatarDecoration: g
     });
     if (t.type === s.Z.BUNDLE) {
       if (!(0, Q.L)(t)) return (0, r.jsx)("div", {
@@ -797,11 +797,11 @@ let eZ = e => {
       rentalDuration: P
     } = e, j = (0, m.e7)([D.default], () => D.default.getCurrentUser()), O = (0, eI.f)(a), {
       previewingVariantIndex: C
-    } = O, I = (0, z.o)(a), T = (0, eg.N)(a, C), y = (0, eP.W)(a, I);
+    } = O, I = (0, z.o)(a), T = (0, ex.N)(a, C), y = (0, eP.W)(a, I);
     c()(null != y, "Selected product should not be null");
     let {
       analyticsLocations: w
-    } = (0, g.ZP)([...p, x.Z.COLLECTIBLES_SHOP_DETAILS_MODAL, ...null != P ? [x.Z.COLLECTIBLES_SHOP_DETAILS_RENTAL_MODAL] : []]);
+    } = (0, x.ZP)([...p, g.Z.COLLECTIBLES_SHOP_DETAILS_MODAL, ...null != P ? [g.Z.COLLECTIBLES_SHOP_DETAILS_RENTAL_MODAL] : []]);
     (0, er.u9)(y.skuId);
     let E = (0, eO.kc)(o);
     i.useEffect(() => {
@@ -829,7 +829,7 @@ let eZ = e => {
         slideCount: L,
         intervalMs: 5e3
       });
-    return null == j ? null : (0, r.jsx)(g.Gt, {
+    return null == j ? null : (0, r.jsx)(x.Gt, {
       value: w,
       children: (0, r.jsxs)(b.Y0X, {
         "data-migration-pending": true,

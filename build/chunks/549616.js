@@ -80,13 +80,14 @@ class m extends Chunk803358.Z {
       hero_logo_url: p,
       catalog_banner_url: h,
       catalog_banner_animated_url: g,
-      featured_block_url: E,
-      logo_url: b,
-      pdp_bg_url: y,
-      mobile_banner_url: O,
-      mobile_bg_url: v
-    } = e, S = f(e, ["products", "hero_ranking", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
-    return new m(d(c({}, super.fromServer(S)), {
+      catalog_banner_rive_url: E,
+      featured_block_url: b,
+      logo_url: y,
+      pdp_bg_url: O,
+      mobile_banner_url: v,
+      mobile_bg_url: S
+    } = e, I = f(e, ["products", "hero_ranking", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "catalog_banner_rive_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
+    return new m(d(c({}, super.fromServer(I)), {
       products: t.reduce((e, t) => {
         let n = o.Z.fromServer(t);
         return (_(n.type) || 0 !== n.items.length) && e.push(n), e
@@ -98,16 +99,17 @@ class m extends Chunk803358.Z {
       heroLogoUrl: p,
       catalogBannerUrl: h,
       catalogBannerAnimatedUrl: g,
-      featuredBlockUrl: E,
-      logoUrl: b,
-      pdpBgUrl: y,
-      mobileBannerUrl: O,
-      mobileBgUrl: v,
+      catalogBannerRiveUrl: E,
+      featuredBlockUrl: b,
+      logoUrl: y,
+      pdpBgUrl: O,
+      mobileBannerUrl: v,
+      mobileBgUrl: S,
       heroLogoDisplayConfig: (0, i.QG)(r),
       heroBannerDisplayConfig: (0, i.QG)(a)
     }))
   }
   constructor(e) {
-    super(e), l(this, "products", true), l(this, "heroRanking", true), l(this, "isOrbsExclusive", true), l(this, "heroBannerUrl", true), l(this, "heroBannerAnimatedUrl", true), l(this, "heroRiveUrl", true), l(this, "heroLogoUrl", true), l(this, "catalogBannerUrl", true), l(this, "catalogBannerAnimatedUrl", true), l(this, "featuredBlockUrl", true), l(this, "logoUrl", true), l(this, "pdpBgUrl", true), l(this, "mobileBannerUrl", true), l(this, "mobileBgUrl", true), l(this, "heroLogoDisplayConfig", true), l(this, "heroBannerDisplayConfig", true), this.products = e.products, this.heroRanking = e.heroRanking, this.isOrbsExclusive = Array.isArray(e.products) && e.products.length > 0 && true === e.products.find(e => !(0, a.r1)(e)), this.heroBannerUrl = e.heroBannerUrl, this.heroBannerAnimatedUrl = e.heroBannerAnimatedUrl, this.heroRiveUrl = e.heroRiveUrl, this.heroLogoUrl = e.heroLogoUrl, this.catalogBannerUrl = e.catalogBannerUrl, this.catalogBannerAnimatedUrl = e.catalogBannerAnimatedUrl, this.featuredBlockUrl = e.featuredBlockUrl, this.logoUrl = e.logoUrl, this.pdpBgUrl = e.pdpBgUrl, this.mobileBannerUrl = e.mobileBannerUrl, this.mobileBgUrl = e.mobileBgUrl, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig, this.heroBannerDisplayConfig = e.heroBannerDisplayConfig
+    super(e), l(this, "products", true), l(this, "heroRanking", true), l(this, "isOrbsExclusive", true), l(this, "heroBannerUrl", true), l(this, "heroBannerAnimatedUrl", true), l(this, "heroRiveUrl", true), l(this, "heroLogoUrl", true), l(this, "catalogBannerUrl", true), l(this, "catalogBannerAnimatedUrl", true), l(this, "catalogBannerRiveUrl", true), l(this, "featuredBlockUrl", true), l(this, "logoUrl", true), l(this, "pdpBgUrl", true), l(this, "mobileBannerUrl", true), l(this, "mobileBgUrl", true), l(this, "heroLogoDisplayConfig", true), l(this, "heroBannerDisplayConfig", true), this.products = e.products, this.heroRanking = e.heroRanking, this.isOrbsExclusive = Array.isArray(e.products) && e.products.length > 0 && true === e.products.find(e => !(0, a.r1)(e)), this.heroBannerUrl = e.heroBannerUrl, this.heroBannerAnimatedUrl = e.heroBannerAnimatedUrl, this.heroRiveUrl = e.heroRiveUrl, this.heroLogoUrl = e.heroLogoUrl, this.catalogBannerUrl = e.catalogBannerUrl, this.catalogBannerAnimatedUrl = e.catalogBannerAnimatedUrl, this.catalogBannerRiveUrl = e.catalogBannerRiveUrl, this.featuredBlockUrl = e.featuredBlockUrl, this.logoUrl = e.logoUrl, this.pdpBgUrl = e.pdpBgUrl, this.mobileBannerUrl = e.mobileBannerUrl, this.mobileBgUrl = e.mobileBgUrl, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig, this.heroBannerDisplayConfig = e.heroBannerDisplayConfig
   }
 }

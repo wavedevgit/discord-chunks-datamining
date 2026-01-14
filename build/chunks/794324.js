@@ -38,10 +38,12 @@ let o = e => {
   },
   s = e => {
     let t = (0, a.zL)(l.jE.CATALOG_BANNER_STATIC),
-      n = (0, a.zL)(l.jE.CATALOG_BANNER_ANIMATED);
+      n = (0, a.zL)(l.jE.CATALOG_BANNER_ANIMATED),
+      r = (0, a.zL)(l.jE.CATALOG_BANNER_RIVE);
     return {
       catalogBannerStatic: null != t ? t : e.catalogBannerUrl,
-      catalogBannerAnimated: null != n ? n : e.catalogBannerAnimatedUrl
+      catalogBannerAnimated: null != n ? n : e.catalogBannerAnimatedUrl,
+      catalogBannerRive: null != r ? r : e.catalogBannerRiveUrl
     }
   },
   u = e => {
