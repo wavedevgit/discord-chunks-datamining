@@ -112,9 +112,10 @@ let ey = () => {
       analyticsLocations: e
     })
   }, ej = () => {
-    (0, O.openUserSettings)(E.n.APPEARANCE_PANEL, {
+    let e = (0, b.Gl)("openCustomAppSettings");
+    (0, O.openUserSettings)(e ? E.n.APPEARANCE_IN_APP_ICON : E.n.APPEARANCE_PANEL, {
       section: M.oAB.APPEARANCE,
-      scrollPosition: G.h1.CUSTOM_APP_ICONS
+      scrollPosition: e ? true : G.h1.CUSTOM_APP_ICONS
     })
   }, eM = () => {
     window.open(C.Z.getArticleURL(M.BhN.CLIPS), "_blank")

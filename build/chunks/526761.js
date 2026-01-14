@@ -50,7 +50,7 @@ var p = function(e) {
     return e.DISABLE_ACCOUNT = "disable_account", e
   }({}),
   g = function(e) {
-    return e.REDUCED_MOTION = "reduced_motion", e.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", e.LEGACY_CHAT_INPUT = "legacy_chat_input", e
+    return e.LEGACY_CHAT_INPUT = "legacy_chat_input", e
   }({}),
   E = function(e) {
     return e.DM_SAFETY_ALERTS_V2 = "dm_safety_alerts_v2", e.MESSAGE_REQUESTS_V2 = "message_requests_v2", e.EXPLICIT_MEDIA_REDACTION_V2 = "explicit_media_redaction_v2", e.RESTRICTED_ACCOUNTS = "restricted_accounts", e

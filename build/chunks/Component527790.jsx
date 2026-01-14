@@ -21,17 +21,17 @@ function d(e) {
     hideContextMenu: m = false,
     appContext: j
   } = e, {
-    analyticsLocations: u
-  } = (0, s.ZP)(i.Z.USER_PROFILE_RECENT_ACTIVITY_CARD);
-  return (0, l.Rh)(t) ? (0, n.jsx)(s.Gt, {
-    value: u,
-    children: (0, n.jsx)(c.Z, {
+    analyticsLocations: p
+  } = (0, s.ZP)(n.Z.USER_PROFILE_RECENT_ACTIVITY_CARD);
+  return (0, l.Rh)(t) ? (0, i.jsx)(s.Gt, {
+    value: p,
+    children: (0, i.jsx)(c.Z, {
       entry: t,
       user: a,
       className: d,
       onClose: x,
-      header: (0, n.jsx)(r.Z, {
-        contextMenu: m ? null : (0, n.jsx)(o.Z, {
+      header: (0, i.jsx)(r.Z, {
+        contextMenu: m ? null : (0, i.jsx)(o.Z, {
           display: "recent",
           entry: t,
           user: a,

@@ -27,7 +27,7 @@ function p() {
           (0, s.openUserSettings)(e ? i.n.ACCOUNT_REMOVAL_SETTING : i.n.ACCOUNT_PANEL, {
             section: d.oAB.ACCOUNT,
             subsection: o.D.SECURITY,
-            scrollPosition: c.KQ.AccountScrollPositions.DISABLE_ACCOUNT
+            scrollPosition: e ? true : c.KQ.AccountScrollPositions.DISABLE_ACCOUNT
           })
         }
       })

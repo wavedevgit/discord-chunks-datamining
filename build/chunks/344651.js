@@ -400,7 +400,7 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
       });
       let o = null == e.user_settings_proto ? true : (0, b.ac)(e.user_settings_proto);
       E.Z.dispatchReady.measure(() => {
-        var n, s, l;
+        var n, s, l, c;
         X({
           type: "CONNECTION_OPEN",
           sessionId: e.session_id,
@@ -438,7 +438,8 @@ z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : S.o.loadGuildIds([e.id
           geoRestrictedGuilds: a,
           explicitContentScanVersion: e.explicit_content_scan_version,
           failedStates: e.failed_states,
-          linkedUsers: null != (l = e.linked_users) ? l : true
+          linkedUsers: null != (l = e.linked_users) ? l : true,
+          regionalFeatureConfig: null != (c = e.regional_feature_config) ? c : true
         })
       }), null != e.auth_token && X({
         type: "UPDATE_TOKEN",
