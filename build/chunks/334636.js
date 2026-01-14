@@ -6,11 +6,6 @@ require.d(exports, {
 });
 var Chunk725243 = require("./725243.js");
 
-function i(e) {
-  let {
-    location: t = "Collectibles Gift Recipient Picker"
-  } = e;
-  return (0, r.Z)({
-    location: t
-  })
+function i() {
+  return (0, r.Z)()
 }

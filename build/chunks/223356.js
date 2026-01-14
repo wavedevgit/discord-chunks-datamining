@@ -62,7 +62,7 @@ async function f(e, t, n) {
     value: "".concat(t.overridePlatformInformation)
   }, {
     name: "theme",
-    value: l.Z.theme
+    value: a.Z.theme
   }];
   "" !== e.description && c.push({
     name: "description",
@@ -107,7 +107,7 @@ async function f(e, t, n) {
   }), c.push({
     name: "locale",
     value: t.locale
-  })), (0, a.E)(s.GU0.WEB_APP);
+  })), (0, l.E)(s.GU0.WEB_APP);
   try {
     return await o.Z.post({
       url: s.ANM.BUG_REPORTS,

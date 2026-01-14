@@ -82,7 +82,7 @@ function k(e) {
     giftRecipient: O
   } = (0, m.wD)(), {
     selectedSkuId: k
-  } = (0, b.JL)(), P = (0, a.e7)([d.default], () => d.default.getCurrentUser()), I = (0, a.e7)([f.Z], () => null != k ? f.Z.get(k) : null, [k]), T = (0, s.Z)({}), E = (0, a.e7)([g.Z], () => null != k ? g.Z.getForSKU(k) : null, [k]), M = (null == E ? true : E.headerBackground) != null && (null == I ? true : I.applicationId) != null ? (0, p._W)(I.applicationId, E.headerBackground, 256) : true, Z = async (e, n) => {};
+  } = (0, b.JL)(), P = (0, a.e7)([d.default], () => d.default.getCurrentUser()), I = (0, a.e7)([f.Z], () => null != k ? f.Z.get(k) : null, [k]), T = (0, s.Z)(), E = (0, a.e7)([g.Z], () => null != k ? g.Z.getForSKU(k) : null, [k]), M = (null == E ? true : E.headerBackground) != null && (null == I ? true : I.applicationId) != null ? (0, p._W)(I.applicationId, E.headerBackground, 256) : true, Z = async (e, n) => {};
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(y.C3, {
       children: (0, l.jsxs)("div", {

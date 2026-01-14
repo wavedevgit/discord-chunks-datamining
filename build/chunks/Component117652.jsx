@@ -117,7 +117,7 @@ let U = e => {
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: false
-  }), K = (0, p.Z)({}), z = Y && L === R.Wt.DM_CHANNEL, q = W === m.u.POPULAR ? w.intl.string(w.t.Kwgrrr) : w.intl.string(w.t.r1huYR), Q = async (e, t) => {
+  }), K = (0, p.Z)(), z = Y && L === R.Wt.DM_CHANNEL, q = W === m.u.POPULAR ? w.intl.string(w.t.Kwgrrr) : w.intl.string(w.t.r1huYR), Q = async (e, t) => {
     j(true), null != _ && E(), await (0, c.B1)(e.id, t) || E(w.intl.string(w.t["4kgVqQ"])), j(false)
   };
   (0, o.ZP)(() => {
