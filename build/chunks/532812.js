@@ -2,12 +2,13 @@
 /** chunk id: 532812, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => o,
-  S: () => s
+  H: () => s,
+  S: () => l
 });
 var Chunk427164 = require("./427164.js"),
-  Chunk128064 = require("./128064.js");
-let a = (0, Chunk427164.le)({
+  Chunk128064 = require("./128064.js"),
+  Chunk312870 = require("./312870.js");
+let o = (0, Chunk427164.le)({
     kind: "user",
     name: "2025-11-age-verification-commands-toggles",
     defaultConfig: {
@@ -19,17 +20,17 @@ let a = (0, Chunk427164.le)({
       }
     }
   }),
-  o = e => {
-    let t = a.useConfig({
+  s = e => {
+    let t = o.useConfig({
         location: e
       }).enabled,
       n = (0, i.pY)("AgeVerificationCommandsTogglesExperiment");
-    return t && n
+    return (0, a.s)("AgeVerificationCommandsTogglesExperiment") || t && n
   },
-  s = e => {
-    let t = a.getConfig({
+  l = e => {
+    let t = o.getConfig({
         location: e
       }).enabled,
       n = (0, i.c_)("AgeVerificationCommandsTogglesExperiment");
-    return t && n
+    return (0, a.U)("AgeVerificationCommandsTogglesExperiment") || t && n
   }

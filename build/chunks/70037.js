@@ -11,6 +11,6 @@ var Chunk509613 = require("./509613.js"),
 let a = (0, Chunk509613.qs)(Chunk313789.n.ACTIVITY_PRIVACY_SETTING, {
   useTitle: () => u.intl.string(r.default.WhdCGP),
   useSubtitle: () => u.intl.string(r.default.UQ9RHJ),
-  useValue: () => l.G6.useSetting(),
-  setValue: t => l.G6.updateSetting(t)
+  useValue: Chunk695346.G6.useSetting,
+  setValue: Chunk695346.G6.updateSetting
 })
