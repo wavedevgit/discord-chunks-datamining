@@ -1,9 +1,9 @@
 /** Chunk was on 90882 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P9: () => I,
+  P9: () => P,
   Uf: () => E,
-  b0: () => P,
+  b0: () => I,
   s_: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -62,7 +62,7 @@ function v() {
   })
 }
 
-function P() {
+function I() {
   let e = m.intl.string(m.t.bFgqYJ),
     [t] = i.useState(() => {
       var e;
@@ -74,7 +74,7 @@ function P() {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     user: t,
     guildId: n,

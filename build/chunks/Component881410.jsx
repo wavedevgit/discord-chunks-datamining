@@ -75,8 +75,8 @@ function y(e) {
     {
       trackUserProfileEditAction: x
     } = (0, s.KZ)(),
-    [v, P] = i.useState(""),
-    I = i.useRef(""),
+    [v, I] = i.useState(""),
+    P = i.useRef(""),
     {
       options: w,
       matchSorterOptions: E
@@ -120,21 +120,21 @@ function y(e) {
         widgetEdited: t,
         numCharacters: n.trim().length,
         numResults: Z(n)
-      }), P(n), I.current = n
+      }), I(n), P.current = n
     }, [v, x, t, Z]);
   return (0, r.jsx)(o.yRy, m(p({}, j), {
     onRequestOpen: () => {
       x({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
-      }), P(""), I.current = ""
+      }), I(""), P.current = ""
     },
     onRequestClose: () => {
       x({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
-        numCharacters: I.current.trim().length,
-        numResults: Z(I.current)
+        numCharacters: P.current.trim().length,
+        numResults: Z(P.current)
       })
     },
     renderPopout: e => {

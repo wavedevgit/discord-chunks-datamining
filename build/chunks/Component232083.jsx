@@ -85,7 +85,7 @@ function m(e) {
   } = (0, d.j)(), j = h(f), {
     expanded: O,
     setExpanded: x
-  } = (0, c.g)(), v = O ? b : b.slice(0, 2), P = b.length > 2, I = (0, r.jsxs)(r.Fragment, {
+  } = (0, c.g)(), v = O ? b : b.slice(0, 2), I = b.length > 2, P = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p, (t = g({}, e), n = n = {
       games: v
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -97,7 +97,7 @@ function m(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), P && (0, r.jsx)(s.Z, {
+    }), t)), I && (0, r.jsx)(s.Z, {
       expanded: O,
       onClick: () => x(e => !e)
     })]
@@ -108,7 +108,7 @@ function m(e) {
       gameCount: b.length
     }), (0, r.jsx)(a.d, {
       emptyListFallbackRef: j,
-      children: I
+      children: P
     })]
-  }) : I
+  }) : P
 }

@@ -268,6 +268,11 @@ let k = Chunk473749.forwardRef(function(e, t) {
       })
     })
   }, [eS, eD, ez, ek]), i.useEffect(() => {
+    if (eS) {
+      var e;
+      null == (e = ey.current) || e.scrollIntoView()
+    }
+  }, [eS]), i.useEffect(() => {
     let e = eK.current;
     if (eS && !eD) {
       var t;

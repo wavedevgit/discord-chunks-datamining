@@ -68,8 +68,8 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let G = /{{(.*?)}}/g,
-  B = {
+let B = /{{(.*?)}}/g,
+  G = {
     [Chunk818531.J.MARVEL_RIVALS]: [{
       type: "HERO",
       title: "{{username}}",
@@ -379,7 +379,7 @@ function K(e) {
   let {
     content: t
   } = e, n = i.useId(), l = (0, v._)();
-  return null != t ? (0, r.jsx)(I.Z, {
+  return null != t ? (0, r.jsx)(P.Z, {
     type: d.re.TEXT_DISPLAY,
     id: n,
     content: t,
@@ -424,7 +424,7 @@ function V(e) {
     size: t = "small",
     divider: n = false
   } = e, l = i.useId();
-  return (0, r.jsx)(P.Z, {
+  return (0, r.jsx)(I.Z, {
     type: d.re.SEPARATOR,
     id: l,
     divider: n,
@@ -434,7 +434,7 @@ function V(e) {
 
 function X(e, t) {
   if (null == e) return null;
-  let n = e.split(G);
+  let n = e.split(B);
   if (1 === n.length) return n[0];
   if ("skeleton" === t.mode) return null;
   let r = "";
@@ -453,7 +453,7 @@ function X(e, t) {
 function Y(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
-  let i = null == (r = e.match(G)) || null == (n = r[0]) ? true : n.slice(2, false);
+  let i = null == (r = e.match(B)) || null == (n = r[0]) ? true : n.slice(2, false);
   if (null == i) return null;
   let l = t.variables[i];
   return null == l || "unfurled_media" !== l.type ? null : l.media
@@ -520,27 +520,27 @@ let $ = Object.assign(function(e) {
     widget: l,
     cta: o,
     subtle: d = false
-  } = e, b = (0, s.e7)([T.default], () => T.default.getId()) === n.id, O = (0, y.q)(l.applicationId), x = null == O ? true : O.getIconURL(16), v = (0, s.e7)([_.Z], () => null != O ? _.Z.getGameByApplication(O) : null), P = (0, j.Z)({
+  } = e, b = (0, s.e7)([T.default], () => T.default.getId()) === n.id, O = (0, y.q)(l.applicationId), x = null == O ? true : O.getIconURL(16), v = (0, s.e7)([_.Z], () => null != O ? _.Z.getGameByApplication(O) : null), I = (0, j.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == v ? true : v.id,
     source: h.m1.UserProfile,
     sourceUserId: n.id,
     trackEntryPointImpression: true
   }), {
-    fetched: I,
+    fetched: P,
     hasAlreadyLinked: E,
-    canStartAuthorization: G,
+    canStartAuthorization: B,
     startAuthorization: F
   } = (0, p.FG)(O), {
     analyticsLocations: U
   } = (0, g.ZP)(f.Z.USER_PROFILE_APPLICATION_WIDGET), W = i.useCallback(() => {
-    G && (t({
+    B && (t({
       action: "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
       applicationId: l.applicationId
     }), F({
       analyticsLocations: U
     }))
-  }, [G, F, t, l.applicationId, U]), H = null == o && I && !E && G, z = (0, r.jsxs)(r.Fragment, {
+  }, [B, F, t, l.applicationId, U]), H = null == o && P && !E && B, z = (0, r.jsxs)(r.Fragment, {
     children: [null != x ? (0, r.jsx)("img", {
       className: k.appIcon,
       src: x,
@@ -560,7 +560,7 @@ let $ = Object.assign(function(e) {
     children: z
   }) : (0, r.jsx)(u.P3F, {
     className: a()(k.headerTitle, k.clickable),
-    onClick: P,
+    onClick: I,
     children: z
   }), {
     isLoading: q,
@@ -574,7 +574,7 @@ let $ = Object.assign(function(e) {
       o = i.useMemo(() => {
         var e, t, i, a, o, s, u, d, f;
         if (null == l) return null;
-        let g = B[l.widgetTemplateId];
+        let g = G[l.widgetTemplateId];
         if (null == g) return null;
         let p = (e = null != r ? r : null, t = null != l ? l : null, null == e ? {
           mode: "skeleton",
@@ -657,7 +657,7 @@ let $ = Object.assign(function(e) {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: u.iWm,
-      action: P
+      action: I
     }) : null,
     children: [(0, r.jsx)(J, {
       widget: l,

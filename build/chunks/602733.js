@@ -209,9 +209,7 @@ function D(e) {
     location: t,
     isGift: n,
     giftRecipient: a
-  } = e, {
-    isDisplayProfileSocialLayerStorefrontEligible: o
-  } = (0, l.Q)({
+  } = e, o = (0, l.Q)({
     userId: null == a ? true : a.id,
     location: t
   }), u = (0, s.yc)({

@@ -78,7 +78,7 @@ function _(e) {
       game: i,
       widgetType: n
     },
-    "aria-label": I.intl.formatToPlainString(I.t["0dR3gw"], {
+    "aria-label": P.intl.formatToPlainString(P.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, m.Eq)(n, e, t),
@@ -138,7 +138,7 @@ function N(e) {
   } = e;
   return (0, r.jsx)(c.nn4, {
     id: l,
-    children: I.intl.format(I.t.TM0XDY, {
+    children: P.intl.format(P.t.TM0XDY, {
       name: g.ZP.getName(n, i, t)
     })
   })
@@ -192,7 +192,7 @@ function D(e) {
     applicationId: f
   } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
     trackUserProfileEditAction: y
-  } = (0, p.KZ)(), [h, j] = i.useState("idle"), [O, x] = i.useState(null != t ? t : ""), v = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), S = null != t && "" !== t.trim(), T = i.useCallback(() => {
+  } = (0, p.KZ)(), [h, j] = i.useState("idle"), [O, x] = i.useState(null != t ? t : ""), v = i.useRef(null), I = i.useRef(null), w = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), T = i.useCallback(() => {
     y({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
@@ -220,7 +220,7 @@ function D(e) {
     children: [(0, r.jsx)(c.nn4, {
       tag: "label",
       htmlFor: g,
-      children: I.intl.string(I.t.JxKXeT)
+      children: P.intl.string(P.t.JxKXeT)
     }), (0, r.jsx)(c.Kx8, {
       id: g,
       value: O,
@@ -235,7 +235,7 @@ function D(e) {
       maxLength: o.rN
     })]
   }) : (0, r.jsxs)("div", {
-    ref: P,
+    ref: I,
     role: "group",
     "aria-labelledby": b,
     onClick: T,
@@ -254,12 +254,12 @@ function D(e) {
       className: a()(E.editableCommentText, !S && E.placeholder)
     }), (0, r.jsx)(c.P3F, {
       innerRef: v,
-      "aria-label": I.intl.string(I.t.ppb9MJ),
+      "aria-label": P.intl.string(P.t.ppb9MJ),
       onClick: e => {
         e.stopPropagation(), T()
       },
       focusProps: {
-        ringTarget: P
+        ringTarget: I
       }
     })]
   })
@@ -278,17 +278,17 @@ function k(e) {
     coverRef: g,
     className: p
   } = e, {
-    applicationId: I,
+    applicationId: P,
     comment: N,
     tags: Z
   } = l, {
     coverImageUrl: k,
     gameName: R,
     isLoading: L
-  } = (0, P.Z)(I), G = {
+  } = (0, I.Z)(P), B = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, B = f.default.getCurrentUser(), M = (null == B ? true : B.id) === t.id, F = 1 === (0, m.Gv)(o), U = !s && M, W = U && (0, m.vI)(o), H = U && !F, {
+  }, G = f.default.getCurrentUser(), M = (null == G ? true : G.id) === t.id, F = 1 === (0, m.Gv)(o), U = !s && M, W = U && (0, m.vI)(o), H = U && !F, {
     registerDragHandleRef: z
   } = (0, y.C)();
   if (L) return (0, r.jsx)(j.i, {});
@@ -297,7 +297,7 @@ function k(e) {
       className: null == k || s ? true : w.hoverActiveEffect,
       imageSrc: k,
       gameName: R,
-      applicationId: I,
+      applicationId: P,
       userId: t.id,
       disableInteraction: s,
       hideTooltip: true
@@ -312,19 +312,19 @@ function k(e) {
         })]
       }) : K(), (0, r.jsxs)("div", {
         className: E.details,
-        children: [s ? (0, r.jsx)(c.Heading, T(S({}, G), {
+        children: [s ? (0, r.jsx)(c.Heading, T(S({}, B), {
           children: R
         })) : (0, r.jsx)(C, S({
-          applicationId: I,
+          applicationId: P,
           userId: t.id,
           gameName: R
-        }, G)), W ? (0, r.jsx)(D, {
+        }, B)), W ? (0, r.jsx)(D, {
           text: N,
           user: t,
           guildId: n,
           channelId: i,
           widgetType: o,
-          applicationId: I
+          applicationId: P
         }) : (0, r.jsx)(A, {
           text: N,
           user: t,
@@ -334,12 +334,12 @@ function k(e) {
           tags: Z,
           isCurrentUser: M,
           widgetType: o,
-          applicationId: I,
+          applicationId: P,
           disableInteraction: s,
           className: E.tags
         }), !s && (0, r.jsx)(v.F, {
           className: E.socialProof,
-          applicationId: I,
+          applicationId: P,
           guildId: n,
           channelId: i
         })]

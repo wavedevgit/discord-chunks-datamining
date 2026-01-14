@@ -76,14 +76,14 @@ function L(e) {
   var {
     widget: t
   } = e, n = R(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(P.Z, k({
+  return t instanceof h.q ? (0, r.jsx)(I.Z, k({
     widget: t
   }, n)) : t instanceof j.zy ? (0, r.jsx)(T.Z, k({
     widget: t
   }, n)) : null
 }
 
-function G() {
+function B() {
   return (0, r.jsxs)("div", {
     className: D.ukTeenDisclaimer,
     children: [(0, r.jsx)(c.d3s, {
@@ -97,7 +97,7 @@ function G() {
   })
 }
 
-function B() {
+function G() {
   let {
     isLoading: e,
     suggestions: t,
@@ -113,7 +113,7 @@ function B() {
         visibleContent: i,
         markAsDismissed: l
       } = e, a = t.find(e => e.dismissibleContent === i);
-      return null == a ? null : (0, r.jsx)(I.Z, {
+      return null == a ? null : (0, r.jsx)(P.Z, {
         user: n,
         application: a.application,
         onDismiss: l
@@ -134,8 +134,8 @@ function M(e) {
     }, [e, t, n]), "GB" === e && n
   })(), g = (0, u.q5)({
     location: "UserProfileModalV2Widgets"
-  }), x = 0 === a.length && c, P = i.useMemo(() => a.filter(j.Wc), [a]), I = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
-  (0, O.J)(c, P), ((e, t) => {
+  }), x = 0 === a.length && c, I = i.useMemo(() => a.filter(j.Wc), [a]), P = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
+  (0, O.J)(c, I), ((e, t) => {
     let n = i.useMemo(() => t.map(e => e.applicationId), [t]);
     (0, f.Z)(n);
     let {
@@ -145,12 +145,12 @@ function M(e) {
     i.useEffect(() => {
       a.current && (a.current = false, l())
     }, [l])
-  })(t.id, I);
+  })(t.id, P);
   let S = () => (0, r.jsxs)(r.Fragment, {
     children: [c && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(w.Z, {
         className: D.editingHeader
-      }), d && (0, r.jsx)(G, {}), g && (0, r.jsx)(B, {})]
+      }), d && (0, r.jsx)(B, {}), g && (0, r.jsx)(G, {})]
     }), a.map((e, i) => (0, r.jsx)(L, {
       widget: e,
       user: t,

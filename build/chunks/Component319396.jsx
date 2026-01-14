@@ -1,7 +1,7 @@
 /** Chunk was on 90882 **/
 /** chunk id: 319396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -88,10 +88,10 @@ let v = Chunk473749.memo(function(e) {
       children: m
     });
     else {
-      var v, P;
+      var v, I;
       j = (0, r.jsx)(o.i, {
         title: s.title,
-        body: null != (P = s.body) ? P : "",
+        body: null != (I = s.body) ? I : "",
         asset: null == (v = s.renderIcon) ? true : v.call(s, t),
         assetSize: f.EU,
         position: "top",
@@ -112,7 +112,7 @@ let v = Chunk473749.memo(function(e) {
   })
 });
 
-function P(e) {
+function I(e) {
   let {
     items: t,
     profileOwner: n,

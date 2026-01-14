@@ -52,13 +52,13 @@ function w(e) {
   }), k = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, L = (0, i.e7)([u.Z, s.Z], () => {
     let e = R ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), G = C.length > 0 || null != Z, B = _ && null == Z && null == D && null != A, M = !L && (G || B), F = N.length > 0;
+  }), B = C.length > 0 || null != Z, G = _ && null == Z && null == D && null != A, M = !L && (B || G), F = N.length > 0;
   if (!M && !F && k) return (0, r.jsx)("div", {
-    className: I.cards,
+    className: P.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: I.loadingItem,
+      className: P.loadingItem,
       children: [(0, r.jsx)(c.ZT, {
         width: 60,
         opacity: .08
@@ -80,12 +80,12 @@ function w(e) {
     })
   }
   return (0, r.jsxs)(O.F, {
-    className: I.scroller,
+    className: P.scroller,
     fade: true,
     children: [M ? (0, r.jsx)(j.Z, {
-      heading: P.intl.string(P.t.J6STd9),
+      heading: I.intl.string(I.t.J6STd9),
       children: (0, r.jsxs)("ul", {
-        className: I.cards,
+        className: P.cards,
         children: [null != Z && (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             user: t,
@@ -100,7 +100,7 @@ function w(e) {
             activity: e,
             onClose: T
           })
-        }, "live-".concat(i))), B && (0, r.jsx)("li", {
+        }, "live-".concat(i))), G && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -110,8 +110,8 @@ function w(e) {
         })]
       })
     }) : null, F ? (0, r.jsx)(j.Z, {
-      heading: P.intl.string(P.t.jzgEoL),
-      introText: R ? P.intl.format(P.t["4bk9Ak"], {
+      heading: I.intl.string(I.t.jzgEoL),
+      introText: R ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
           href: d.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -119,7 +119,7 @@ function w(e) {
       }) : true,
       scrollTargetId: x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: I.cards,
+        className: P.cards,
         children: N.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(m.Z, {
             user: t,

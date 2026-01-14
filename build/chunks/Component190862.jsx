@@ -91,17 +91,17 @@ function O(e) {
   } = (0, u.g)(), {
     shouldShowSuggestions: g,
     handleDismissSuggestions: p
-  } = (0, c.h)(t), O = (0, l.e7)([a.default], () => a.default.getId() === n.id), x = O && !i && g, v = (0, o.mR)(t), P = (0, o.Hy)(t, {
+  } = (0, c.h)(t), O = (0, l.e7)([a.default], () => a.default.getId() === n.id), x = O && !i && g, v = (0, o.mR)(t), I = (0, o.Hy)(t, {
     isCurrentUser: O
-  }), I = (0, o.kQ)(t), w = 1 === (0, o.Gv)(t.type);
+  }), P = (0, o.kQ)(t), w = 1 === (0, o.Gv)(t.type);
   return (0, r.jsx)(j, y({
     widget: t,
     user: n,
     disableInteraction: i,
     headerTitle: v,
-    headerSubtitle: P,
+    headerSubtitle: I,
     headerActionButtons: O && !w ? [(0, r.jsx)(s.yX, {
-      disabled: I,
+      disabled: P,
       widgetType: t.type,
       widget: t,
       onAddGame: () => f(true)

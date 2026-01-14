@@ -27,12 +27,12 @@ function y(e) {
     applicationId: s,
     className: u,
     disableInteraction: y = false
-  } = e, j = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = j.length > 0, P = o.qH, I = l && !y && (0, f.M8)(c) && j.length < P, {
+  } = e, j = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = j.length > 0, I = o.qH, P = l && !y && (0, f.M8)(c) && j.length < I, {
     trackUserProfileAction: w
   } = (0, d.KZ)(), E = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [_, C] = (0, i.useState)(0), [N, Z] = (0, i.useState)(false), A = v(S, T, j, E, C);
   if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
       window.removeEventListener("resize", A)
-    }), [A, null == j ? true : j.join("")]), !O && !I) return null;
+    }), [A, null == j ? true : j.join("")]), !O && !P) return null;
   let D = N ? j : j.slice(0, j.length - _);
   return (0, r.jsxs)("div", {
     className: a()(b.tagListContainer, u),
@@ -66,7 +66,7 @@ function y(e) {
         },
         disableInteraction: y
       })]
-    }), I && (0, r.jsx)(g.Z, {
+    }), P && (0, r.jsx)(g.Z, {
       tags: n,
       widgetType: c,
       applicationId: s,

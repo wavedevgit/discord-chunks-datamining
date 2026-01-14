@@ -1,7 +1,7 @@
 /** Chunk was on 90882 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -58,13 +58,13 @@ function v(e) {
       onEnd: () => g(n.type)
     }),
     v = null != h,
-    P = v && t < h,
-    I = v && t > h;
+    I = v && t < h,
+    P = v && t > h;
   return (0, r.jsxs)("div", {
     ref: u,
     className: a()(x.dragAndDropTarget, {
-      [x.dropIndicatorBefore]: P,
-      [x.dropIndicatorAfter]: I,
+      [x.dropIndicatorBefore]: I,
+      [x.dropIndicatorAfter]: P,
       [x.isDragging]: b
     }),
     "aria-label": O.intl.formatToPlainString(O.t.YLczh4, {
@@ -79,7 +79,7 @@ function v(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     userId: t,
     widget: n,
@@ -90,8 +90,8 @@ function P(e) {
     trailingContent: y,
     headerTitle: j,
     headerSubtitle: O,
-    headerActionButtons: P,
-    headerClassName: I,
+    headerActionButtons: I,
+    headerClassName: P,
     additionalManageWidgetMenuItems: w
   } = e, E = (0, s.Dt)(), S = (0, c.e7)([u.default], () => u.default.getId() === t), T = (0, b.b)(), {
     trackUserProfileAction: _
@@ -108,10 +108,10 @@ function P(e) {
         headingId: E,
         title: j,
         subtitle: O,
-        actionButtons: P,
+        actionButtons: I,
         widget: n,
         disableInteraction: l,
-        className: I
+        className: P
       }), (0, r.jsxs)(o.y5t, {
         children: [i, y]
       })]

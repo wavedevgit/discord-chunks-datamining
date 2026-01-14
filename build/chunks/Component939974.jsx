@@ -61,11 +61,11 @@ function v(e) {
     buttonRef: i,
     additionalMenuItems: a
   } = e, o = (0, m.mR)(t), c = (0, f.Dt)();
-  return (0, r.jsx)(I, {
+  return (0, r.jsx)(P, {
     targetRef: i,
     widget: t,
     additionalMenuItems: a,
-    children: e => (0, r.jsx)(P, {
+    children: e => (0, r.jsx)(I, {
       children: (0, r.jsxs)(s.P3F, x(O({
         innerRef: i,
         className: l()(j.button, n),
@@ -86,7 +86,7 @@ function v(e) {
     })
   })
 }
-let P = e => {
+let I = e => {
     let {
       children: t
     } = e, n = (0, o.e7)([d.Z], () => d.Z.keyboardModeEnabled), {
@@ -121,7 +121,7 @@ let P = e => {
       children: t
     })
   },
-  I = e => {
+  P = e => {
     let {
       children: t,
       widget: i,

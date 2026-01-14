@@ -90,7 +90,7 @@ function R(e) {
   let {
     profileOwner: n
   } = e, T = i.useRef(null);
-  (0, P.r)({
+  (0, I.r)({
     containerRef: T,
     itemType: "WISHLIST_ITEM"
   });
@@ -106,9 +106,9 @@ function R(e) {
       wishlistSettings: null != e ? v.Z.getWishlistSettings(n.id, e) : null
     }
   }), {
-    analyticsLocations: G
+    analyticsLocations: B
   } = (0, d.ZP)(), {
-    trackUserProfileWishlistAction: B
+    trackUserProfileWishlistAction: G
   } = (0, x.KZ)(), M = (null == R ? true : R.id) === n.id, F = false === n.nsfwAllowed, U = N.t9, [W, H] = i.useState(true);
   i.useEffect(() => {
     (null == L ? true : L.visibility) != null && H(L.visibility === l.f.PUBLIC)
@@ -130,29 +130,29 @@ function R(e) {
       action: n,
       productLines: r
     } = e;
-    null != t && B({
+    null != t && G({
       wishlistId: t,
       action: n,
       productLines: r
     })
-  }, [B]), J = (0, I.Z)({
+  }, [G]), J = (0, P.Z)({
     wishlistId: _,
     onAction: Y,
     productLines: null != (t = null == z ? true : z.getProductLines()) ? t : null
   }), Q = i.useCallback(() => {
     if (null == _) return;
     let e = W ? l.f.PRIVATE : l.f.PUBLIC;
-    H(!W), h.Z.updateWishlistVisibility(_, e), B({
+    H(!W), h.Z.updateWishlistVisibility(_, e), G({
       wishlistId: _,
       action: W ? C.NW.WISHLIST_TOGGLE_PRIVATE : C.NW.WISHLIST_TOGGLE_PUBLIC,
       productLines: null == z ? true : z.getProductLines()
     })
-  }, [_, W, B, z]), $ = i.useCallback(() => {
+  }, [_, W, G, z]), $ = i.useCallback(() => {
     (0, o.closeAllModals)(), (0, f.mK)({
-      analyticsLocations: G,
+      analyticsLocations: B,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
-  }, [G]), ee = i.useCallback(() => {
+  }, [B]), ee = i.useCallback(() => {
     (0, b.eagerNavigateToSocialLayerStorefront)({
       guildId: (0, g.ac)()
     })
@@ -197,7 +197,7 @@ function R(e) {
       user: n,
       isOwner: M,
       wishlist: z,
-      analyticsLocations: G,
+      analyticsLocations: B,
       className: A.recommendationsContainerEmptyWishlist
     })]
   }) : (0, r.jsxs)(E.F, {
@@ -266,7 +266,7 @@ function R(e) {
       user: n,
       isOwner: M,
       wishlist: z,
-      analyticsLocations: G,
+      analyticsLocations: B,
       className: A.recommendationsContainerWithWishlist
     })]
   })

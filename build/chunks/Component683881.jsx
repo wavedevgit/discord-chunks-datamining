@@ -105,15 +105,15 @@ function p(e) {
   null == O.current && x();
   let {
     x: v,
-    y: P
+    y: I
   } = null != (t = O.current) ? t : {
     x: 0,
     y: 0
-  }, I = b.x - v - 60 * !!h, w = b.y - P;
+  }, P = b.x - v - 60 * !!h, w = b.y - I;
   return (0, r.jsx)("div", {
     className: g.container,
     style: {
-      transform: "translate3d(".concat(I, "px, ").concat(w, "px, 0)")
+      transform: "translate3d(".concat(P, "px, ").concat(w, "px, 0)")
     },
     children: j
   })

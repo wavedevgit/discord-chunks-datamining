@@ -27,12 +27,12 @@ function x(e) {
     user: t,
     status: x,
     guildId: v,
-    channelId: P,
-    onSelect: I
+    channelId: I,
+    onSelect: P
   } = e, {
     theme: w,
     themeType: E
-  } = (0, m.z)(), S = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
+  } = (0, m.z)(), S = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, I), [t, I]), {
     activities: T,
     isMobileOnline: _
   } = (0, l.cj)([p.Z], () => ({
@@ -61,7 +61,7 @@ function x(e) {
       }
     },
     className: h.row,
-    onClick: I,
+    onClick: P,
     onContextMenu: e => {
       (0, o.jW)(e, async () => {
         let {

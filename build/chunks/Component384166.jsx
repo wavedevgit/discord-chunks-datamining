@@ -30,7 +30,7 @@ function x(e) {
   } = (0, f.KZ)(), [l, x] = i.useState(false), v = (0, c.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, c.Wu)([m.Z], () => m.Z.getChangedWidgets()), I = (0, c.Wu)([m.Z], () => m.Z.getRemovedWidgets()), w = (0, c.e7)([m.Z], () => m.Z.hasUnsavedChanges()), E = (0, c.e7)([m.Z], () => m.Z.canSaveChanges()), S = (0, c.e7)([m.Z], () => m.Z.isSubmitting), T = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(w, {
+  }), I = (0, c.Wu)([m.Z], () => m.Z.getChangedWidgets()), P = (0, c.Wu)([m.Z], () => m.Z.getRemovedWidgets()), w = (0, c.e7)([m.Z], () => m.Z.hasUnsavedChanges()), E = (0, c.e7)([m.Z], () => m.Z.canSaveChanges()), S = (0, c.e7)([m.Z], () => m.Z.isSubmitting), T = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(w, {
     from: {
       opacity: 0,
       y: 80 * !T
@@ -64,7 +64,7 @@ function x(e) {
           (0, b.L$)(y.qb.WIDGET_SAVE_FAILURE);
           return
         }
-        for (let e of P) {
+        for (let e of I) {
           let t = {
             widgetEdited: e.type,
             isWidgetRemoved: false
@@ -77,12 +77,12 @@ function x(e) {
             return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
           }, 0)), n(t)
         }
-        for (let e of I) n({
+        for (let e of P) n({
           widgetEdited: e.type,
           isWidgetRemoved: true
         })
       }
-    }, [v, P, I, n]),
+    }, [v, I, P, n]),
     N = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
