@@ -39,8 +39,8 @@ var i, Chunk392711 = require("./392711.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk145597 = require("./145597.js"),
+  Chunk273273 = require("./273273.js"),
   Chunk581567 = require("./581567.js"),
-  Chunk569675 = require("./569675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk987650 = require("./987650.js");
 
@@ -644,12 +644,12 @@ function e9(e) {
   } = e;
   for (let e of n) Q[e] = t
 }!__OVERLAY__ && ((0, Chunk358085.isDesktop)() || Chunk987650.iP) && (el = function() {
-  if (!I.Z.hasAttemptedFetch || !j.Z.hasAttemptedFetch) returnfalse;
+  if (!I.Z.hasAttemptedFetch || !L.Z.hasAttemptedFetch) returnfalse;
   let e = [],
     t = new Set;
   r = {};
   let n = I.Z.games,
-    i = j.Z.nonGames,
+    i = L.Z.nonGames,
     a = (0, x.supportsOutOfProcess)();
   for (let e of n) {
     var o, s, l, c;
@@ -705,7 +705,7 @@ function e9(e) {
     let n = [],
       i = {},
       a = [];
-    e = e.filter(e => null != e.id && null != j.Z.getById(e.id) ? (a.push(e), false) : (e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eH(e.pid, e.windowHandle), null != eT(e)) ? (n.push(e), false) : !I.Z.shouldBlock(e));
+    e = e.filter(e => null != e.id && null != L.Z.getById(e.id) ? (a.push(e), false) : (e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eH(e.pid, e.windowHandle), null != eT(e)) ? (n.push(e), false) : !I.Z.shouldBlock(e));
     let o = n.filter(eC).length;
     o !== eu && (eu = o, d.Z.dispatch({
       type: "RUNNING_STREAMER_TOOLS_CHANGE",
@@ -726,10 +726,10 @@ function e9(e) {
           orig_game_name_v1: o.origGameName,
           game_id_v1: null == s ? true : s.id,
           distributor_v1: o.distributor,
-          verified_v1: (0, L.vp)(o.exePath, null != (r = null == s ? true : s.executables) ? r : []),
+          verified_v1: (0, j.vp)(o.exePath, null != (r = null == s ? true : s.executables) ? r : []),
           is_launcher_v1: o.isLauncher,
           game_detection_enabled_v1: eL(o),
-          executable_path_v1: (0, L.N6)(o.exePath),
+          executable_path_v1: (0, j.N6)(o.exePath),
           distributor_game_id_v1: o.sku,
           hidden_by_distributor_v1: o.hidden,
           game_metadata_v1: (0, S.sD)(o),
@@ -737,10 +737,10 @@ function e9(e) {
           orig_game_name_v2: e.origGameName,
           game_id_v2: c,
           distributor_v2: e.distributor,
-          verified_v2: (0, L.vp)(e.exePath, null != (i = null == l ? true : l.executables) ? i : []),
+          verified_v2: (0, j.vp)(e.exePath, null != (i = null == l ? true : l.executables) ? i : []),
           is_launcher_v2: e.isLauncher,
           game_detection_enabled_v2: eL(e),
-          executable_path_v2: (0, L.N6)(e.exePath),
+          executable_path_v2: (0, j.N6)(e.exePath),
           distributor_game_id_v2: e.sku,
           hidden_by_distributor_v2: e.hidden,
           game_metadata_v2: (0, S.sD)(e)
@@ -765,7 +765,7 @@ class te extends(i = Chunk442837.ZP.Store) {
         (0, S.le)(e) || (es.gameOverrides[t] = e)
       }), es.enableOverlay = null != (n = a.enableOverlay) ? n : {}, es.enableOverlayV3 = null != (r = a.enableOverlayV3) ? r : {}, es.enableDetection = null != (i = a.enableDetection) ? i : {}, eZ(), Array.isArray(a.gamesSeen))
       for (let e of a.gamesSeen) "number" == typeof e.id && (e.nativeProcessObserverId = e.id, delete e.id, s = true);
-    this.waitFor(C.Z, m.Z, I.Z, T.Z, j.Z), W = a.gamesSeen.filter(e => !(0, S.le)(e)), this.syncWith([m.Z], e7), this.syncWith([T.Z, I.Z, C.Z], o().throttle(eG, 1e3)), s && eM()
+    this.waitFor(C.Z, m.Z, I.Z, T.Z, L.Z), W = a.gamesSeen.filter(e => !(0, S.le)(e)), this.syncWith([m.Z], e7), this.syncWith([T.Z, I.Z, C.Z], o().throttle(eG, 1e3)), s && eM()
   }
   getVisibleGame() {
     return null == en || ej(en) ? en : null

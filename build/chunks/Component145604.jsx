@@ -20,8 +20,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk318885 = require("./318885.js"),
   Chunk358221 = require("./358221.js"),
   Chunk710845 = require("./710845.js"),
+  Chunk273273 = require("./273273.js"),
   Chunk581567 = require("./581567.js"),
-  Chunk569675 = require("./569675.js"),
   Chunk594190 = require("./594190.js"),
   Chunk38618 = require("./38618.js"),
   Chunk501640 = require("./501640.js"),
@@ -91,15 +91,15 @@ async function en(e) {
     voiceChannelGuildId: b
   } = e, E = await (0, A.hj)(a.pid), {
     gameName: _,
-    gameId: v,
+    gameId: O,
     exe: y,
     distributor: C,
     rawExePath: S
-  } = (0, O.G8)(a), T = c.enabledLegacy || c.enabledOOP, N = j.v.legacyEnabled || j.v.oopEnabled, P = c.source;
+  } = (0, v.G8)(a), T = c.enabledLegacy || c.enabledOOP, N = j.v.legacyEnabled || j.v.oopEnabled, P = c.source;
   Q.default.track(X.rMx.LAUNCH_GAME, {
     game: _,
-    game_id: v,
-    verified: null != o && (0, O.vp)(S, null == o ? true : o.executables),
+    game_id: O,
+    verified: null != o && (0, v.vp)(S, null == o ? true : o.executables),
     elevated: a.elevated,
     is_launcher: null != (r = null == a ? true : a.isLauncher) && r,
     game_platform: X.M7m.DESKTOP,
@@ -193,7 +193,7 @@ class er extends Chunk473749.PureComponent {
     if (e.runningGame !== A && null != A && !A.isLauncher && (!z || Y)) {
       let {
         gameId: e
-      } = (0, O.G8)(A), t = true !== e ? D.Z.getDetectableGame(e) : null, n = I.ZP.getOverrideForGame(A), r = k.Z.getGuildIds(), i = L.SE.getSetting(), l = r.filter(e => !i.includes(e)).slice(0, 200), o = null;
+      } = (0, v.G8)(A), t = true !== e ? D.Z.getDetectableGame(e) : null, n = I.ZP.getOverrideForGame(A), r = k.Z.getGuildIds(), i = L.SE.getSetting(), l = r.filter(e => !i.includes(e)).slice(0, 200), o = null;
       o = null != n ? "custom_override" : null != t ? "verified_game" : "launcher";
       let f = P.default.getTrackedGameByPid(A.pid),
         g = (0, I.b6)(A),
@@ -224,7 +224,7 @@ class er extends Chunk473749.PureComponent {
       }
     }
     if (e.runningNonGame !== M && (null == M ? true : M.id) != null && (null == (i = e.runningNonGame) ? true : i.id) !== M.id) {
-      let e = v.Z.getById(M.id);
+      let e = O.Z.getById(M.id);
       null != e && Q.default.track(X.rMx.LAUNCH_NON_GAME_APPLICATION, {
         name: e.name,
         application_id: e.id,
@@ -234,7 +234,7 @@ class er extends Chunk473749.PureComponent {
         distributor: M.distributor,
         detection_method: "verified_non_game_application",
         current_user_status: F.Z.getStatus(),
-        executable_path: (0, O.N6)(M.exePath),
+        executable_path: (0, v.N6)(M.exePath),
         voice_channel_id: m,
         voice_channel_type: C,
         voice_channel_bitrate: T,
