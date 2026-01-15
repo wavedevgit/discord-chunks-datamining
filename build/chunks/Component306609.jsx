@@ -92,7 +92,7 @@ function z(e) {
     onElementResizeEnd: e => {},
     orientation: d.y.VERTICAL_TOP
   });
-  (0, F.useSyncMessages)(L.messagesLoader);
+  (0, F.useSyncMessages)(V.messagesLoader);
   let Q = (0, s.e7)([h.default], () => (0, _.I5)(h.default.getCurrentUser())),
     J = (0, s.e7)([w.Z], () => w.Z.getCatalogUpdateTime()),
     [$, ee] = i.useState(false),
@@ -216,7 +216,7 @@ function z(e) {
           [U.hasActiveVoice]: null != er
         }),
         children: [(0, r.jsx)(v.j, {
-          deviceType: V.h7.AUDIO_INPUT,
+          deviceType: L.h7.AUDIO_INPUT,
           location: "VoiceFiltersPopout",
           onOpen: () => {
             var e;
@@ -226,7 +226,7 @@ function z(e) {
           },
           popoutPosition: "top"
         }), o && (0, r.jsx)(v.j, {
-          deviceType: V.h7.AUDIO_OUTPUT,
+          deviceType: L.h7.AUDIO_OUTPUT,
           location: "VoiceFiltersPopout",
           popoutPosition: "top"
         }), (0, r.jsx)(c.yRy, {

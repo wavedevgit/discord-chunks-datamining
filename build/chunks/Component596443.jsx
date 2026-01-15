@@ -65,7 +65,7 @@ function L(e) {
               height: 4,
               width: 4,
               "aria-hidden": "true",
-              color: d.TVs.colors.INTERACTIVE_MUTED.css
+              color: d.TVs.colors.ICON_MUTED.css
             }), (0, r.jsx)(u.u, {
               text: C.intl.string(C.t.GZvXuP),
               children: (0, r.jsxs)(d.P3F, {
@@ -87,7 +87,7 @@ function L(e) {
               height: 4,
               width: 4,
               "aria-hidden": "true",
-              color: d.TVs.colors.INTERACTIVE_MUTED.css
+              color: d.TVs.colors.ICON_MUTED.css
             }), (0, r.jsx)("div", {
               className: D.elevatedPermissionContainer,
               children: (0, r.jsx)(d.Text, {

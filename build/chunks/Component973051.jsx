@@ -54,45 +54,45 @@ function h(e) {
     guild: n,
     prompts: h,
     completeOnboarding: x,
-    setCurrentStep: v,
-    disableTracking: O,
-    previousPromptIndex: j
-  } = e, _ = i.useRef(null), y = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [N, P] = i.useState(null != (t = null == y ? true : y.response) && t), [C, E] = i.useState(false), D = (0, o.e7)([c.Z], () => c.Z.get(n.id)), I = i.useRef(null), S = i.useRef(null), Z = i.useCallback(async () => {
-    if (null != D && null != y) {
+    setCurrentStep: O,
+    disableTracking: j,
+    previousPromptIndex: v
+  } = e, y = i.useRef(null), _ = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [P, N] = i.useState(null != (t = null == _ ? true : _.response) && t), [C, E] = i.useState(false), D = (0, o.e7)([c.Z], () => c.Z.get(n.id)), I = i.useRef(null), w = i.useRef(null), S = i.useCallback(async () => {
+    if (null != D && null != _) {
       E(true);
       try {
         await s.ZP.submitVerificationForm(n.id, g(b({}, D), {
-          formFields: [g(b({}, y), {
-            response: N
+          formFields: [g(b({}, _), {
+            response: P
           })]
         }))
       } catch (e) {}
       x()
     }
-  }, [n.id, D, y, N, x]);
+  }, [n.id, D, _, P, x]);
 
-  function T(e) {
+  function Z(e) {
     let [t] = e;
-    t.isIntersecting && P(true)
+    t.isIntersecting && N(true)
   }
   return (i.useEffect(() => {
-    let e = new IntersectionObserver(T, {
+    let e = new IntersectionObserver(Z, {
         root: I.current,
         rootMargin: "0px",
         threshold: 0
       }),
-      t = S.current;
+      t = w.current;
     return null != t && null != t.lastElementChild && e.observe(t.lastElementChild), () => {
       null != t && null != t.lastElementChild && e.unobserve(t.lastElementChild)
     }
-  }, [S, I]), null == y) ? null : (0, r.jsx)("div", {
+  }, [w, I]), null == _) ? null : (0, r.jsx)("div", {
     className: m.prompt,
     children: (0, r.jsxs)("div", {
       className: m.promptContent,
       ref: I,
       children: [(0, r.jsxs)(a.h21, {
         className: m.scrollerContent,
-        ref: _,
+        ref: y,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
@@ -102,8 +102,8 @@ function h(e) {
           children: f.intl.string(f.t.prJqwT)
         }), (0, r.jsx)("div", {
           className: m.termsFieldBody,
-          ref: S,
-          children: y.values.map((e, t) => (0, r.jsxs)("div", {
+          ref: w,
+          children: _.values.map((e, t) => (0, r.jsxs)("div", {
             className: m.termsRow,
             children: [(0, r.jsx)(a.Text, {
               variant: "text-sm/normal",
@@ -124,22 +124,22 @@ function h(e) {
         className: m.navButtons,
         children: [(0, r.jsx)("div", {
           className: m.leftButtons,
-          children: false !== j && "cover" !== j && (0, r.jsx)(a.Button, {
+          children: false !== v && "cover" !== v && (0, r.jsx)(a.Button, {
             variant: "secondary",
             size: "md",
             text: f.intl.string(f.t["13/7kX"]),
             onClick: () => {
-              !O && (u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(b({}, (0, l.hH)(n.id)), {
+              !j && (u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(b({}, (0, l.hH)(n.id)), {
                 step: false,
                 skipped: false,
                 back: true,
                 options_selected: 0,
                 in_onboarding: true,
                 is_final_step: false
-              })), "number" == typeof j && j >= 0 && u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(b({}, (0, l.hH)(n.id)), {
-                step: j,
-                required: h[j].required
-              }))), v(j)
+              })), "number" == typeof v && v >= 0 && u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(b({}, (0, l.hH)(n.id)), {
+                step: v,
+                required: h[v].required
+              }))), O(v)
             },
             icon: a.j9r,
             iconPosition: "start"
@@ -150,13 +150,13 @@ function h(e) {
             className: m.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: N ? f.intl.string(f.t.arAe3I) : f.intl.string(f.t.D0CVAc)
+            children: P ? f.intl.string(f.t.arAe3I) : f.intl.string(f.t.D0CVAc)
           }), (0, r.jsx)(a.Button, {
             variant: "primary",
             size: "md",
             text: "".concat(f.intl.string(f.t["8SuVoE"]), " \uD83C\uDF89"),
-            onClick: Z,
-            disabled: !N || C,
+            onClick: S,
+            disabled: !P || C,
             loading: C
           })]
         })]

@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk613438 = require("./613438.js");
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function y(e) {
   return e
 }
 
-function N(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,9 +56,9 @@ function N(e, t) {
   }), e
 }
 
-function P(e, t) {
+function N(e, t) {
   return (0, r.jsx)("span", {
-    className: _.helpTextItem,
+    className: y.helpTextItem,
     children: e
   }, t)
 }
@@ -74,49 +74,49 @@ function C(e) {
     hasConnections: p,
     isSubmitting: f,
     selectOption: h,
-    gotoPrevPrompt: v,
-    gotoNextPrompt: O,
-    completeOnboarding: N
-  } = e, C = (0, o.Wu)([m.Z], () => m.Z.getOnboardingResponsesForPrompt(n.id, d.id)), E = 0 === C.length && (null == d ? true : d.required), D = null == d ? true : d.options.filter(e => C.includes(e.id)), I = (0, b.L6)(D), S = (0, b.dX)(D), Z = 0 === C.length, {
-    helpText: T,
-    helpTextAdditional: w
+    gotoPrevPrompt: O,
+    gotoNextPrompt: j,
+    completeOnboarding: P
+  } = e, C = (0, o.Wu)([m.Z], () => m.Z.getOnboardingResponsesForPrompt(n.id, d.id)), E = 0 === C.length && (null == d ? true : d.required), D = null == d ? true : d.options.filter(e => C.includes(e.id)), I = (0, b.L6)(D), w = (0, b.dX)(D), S = 0 === C.length, {
+    helpText: Z,
+    helpTextAdditional: T
   } = (0, g.Z)({
     guild: n,
     prompt: d,
     selectedRoleIds: I,
-    selectedChannelIds: S,
-    itemHook: P
-  }), k = (0, u.Z)(n.id, 1e3), A = d.options.map(e => y({
+    selectedChannelIds: w,
+    itemHook: N
+  }), k = (0, u.Z)(n.id, 1e3), A = d.options.map(e => _({
     value: e.id
   }, e)), B = d.options.filter(e => C.includes(e.id)).map(e => e.id);
   return (0, r.jsx)("div", {
-    className: _.prompt,
+    className: y.prompt,
     children: (0, r.jsxs)("div", {
-      className: _.promptContent,
+      className: y.promptContent,
       children: [(0, r.jsxs)(l.zJl, {
-        className: _.scrollerContent,
+        className: y.scrollerContent,
         children: [(0, r.jsxs)("div", {
-          className: _.questionHeader,
+          className: y.questionHeader,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            children: j.intl.format(j.t.isV0NW, {
+            children: v.intl.format(v.t.isV0NW, {
               currentQuestion: i + 1,
               questionCount: c
             })
           }), d.required ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.Text, {
               variant: "text-xs/normal",
-              className: _.headerSeparator,
+              className: y.headerSeparator,
               children: "\xb7"
             }), (0, r.jsx)(l.Text, {
               variant: "text-sm/medium",
               color: "text-brand",
-              children: j.intl.string(j.t.Ur8Vrt)
+              children: v.intl.string(v.t.Ur8Vrt)
             })]
           }) : null]
         }), (0, r.jsx)(l.Heading, {
-          className: _.title,
+          className: y.title,
           variant: "heading-xl/semibold",
           color: "text-strong",
           id: t,
@@ -138,32 +138,32 @@ function C(e) {
           memberCounts: k
         })]
       }), (0, r.jsxs)("div", {
-        className: _.navButtons,
+        className: y.navButtons,
         children: [(0, r.jsx)("div", {
-          className: _.leftButtons,
+          className: y.leftButtons,
           children: (i > 0 || p) && (0, r.jsx)(l.Button, {
             variant: "secondary",
             size: "md",
-            text: j.intl.string(j.t["13/7kX"]),
-            onClick: () => v(C.length),
+            text: v.intl.string(v.t["13/7kX"]),
+            onClick: () => O(C.length),
             icon: l.j9r,
             iconPosition: "start"
           })
         }), (0, r.jsxs)("div", {
-          className: _.rightButtons,
+          className: y.rightButtons,
           children: [(0, r.jsxs)(l.Text, {
-            className: _.helpText,
+            className: y.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: [T, " ", w]
+            children: [Z, " ", T]
           }), (0, r.jsx)(a.u, {
             asContainer: true,
-            text: E ? j.intl.string(j.t.dA1dSf) : null,
+            text: E ? v.intl.string(v.t.dA1dSf) : null,
             children: (0, r.jsx)(l.Button, {
-              variant: Z ? "secondary" : "primary",
+              variant: S ? "secondary" : "primary",
               size: "md",
-              text: s ? "".concat(j.intl.string(j.t["8SuVoE"]), " \uD83C\uDF89") : Z ? j.intl.string(j.t["5Wxrcd"]) : j.intl.string(j.t.PDTjLN),
-              onClick: () => s ? N() : O(C.length),
+              text: s ? "".concat(v.intl.string(v.t["8SuVoE"]), " \uD83C\uDF89") : S ? v.intl.string(v.t["5Wxrcd"]) : v.intl.string(v.t.PDTjLN),
+              onClick: () => s ? P() : j(C.length),
               disabled: E || f,
               loading: f,
               icon: s ? true : l.d4D,
@@ -188,87 +188,87 @@ function E(e) {
     isSubmitting: p,
     selectOption: f,
     gotoPrevPrompt: x,
-    gotoNextPrompt: v,
-    completeOnboarding: O
-  } = e, y = (0, o.Wu)([m.Z], () => m.Z.getOnboardingResponsesForPrompt(n.id, d.id)), N = 0 === y.length && (null == d ? true : d.required), C = null == d ? true : d.options.filter(e => y.includes(e.id)), E = (0, b.L6)(C), D = (0, b.dX)(C), I = 0 === y.length, {
-    helpText: S,
-    helpTextAdditional: Z
+    gotoNextPrompt: O,
+    completeOnboarding: j
+  } = e, _ = (0, o.Wu)([m.Z], () => m.Z.getOnboardingResponsesForPrompt(n.id, d.id)), P = 0 === _.length && (null == d ? true : d.required), C = null == d ? true : d.options.filter(e => _.includes(e.id)), E = (0, b.L6)(C), D = (0, b.dX)(C), I = 0 === _.length, {
+    helpText: w,
+    helpTextAdditional: S
   } = (0, g.Z)({
     guild: n,
     prompt: d,
     selectedRoleIds: E,
     selectedChannelIds: D,
-    itemHook: P
+    itemHook: N
   });
   return (0, r.jsx)("div", {
-    className: _.prompt,
+    className: y.prompt,
     children: (0, r.jsxs)("div", {
-      className: _.promptContent,
+      className: y.promptContent,
       children: [(0, r.jsxs)(l.zJl, {
-        className: _.scrollerContent,
+        className: y.scrollerContent,
         children: [(0, r.jsxs)("div", {
-          className: _.questionHeader,
+          className: y.questionHeader,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            children: j.intl.format(j.t.isV0NW, {
+            children: v.intl.format(v.t.isV0NW, {
               currentQuestion: i + 1,
               questionCount: c
             })
           }), d.required ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.Text, {
               variant: "text-xs/normal",
-              className: _.headerSeparator,
+              className: y.headerSeparator,
               children: "\xb7"
             }), (0, r.jsx)(l.Text, {
               variant: "text-sm/medium",
               color: "text-brand",
-              children: j.intl.string(j.t.Ur8Vrt)
+              children: v.intl.string(v.t.Ur8Vrt)
             })]
           }) : null]
         }), (0, r.jsx)(l.Heading, {
-          className: _.title,
+          className: y.title,
           variant: "heading-xl/semibold",
           color: "text-strong",
           id: t,
           children: d.title
         }), (0, r.jsx)("div", {
-          className: _.promptOptions,
+          className: y.promptOptions,
           children: d.options.map(e => (0, r.jsx)(h.Z, {
             guildId: n.id,
             option: e,
             onSelect: t => f(d.id, e.id, null != t && t),
-            selected: y.includes(e.id)
+            selected: _.includes(e.id)
           }, e.id))
         })]
       }), (0, r.jsxs)("div", {
-        className: _.navButtons,
+        className: y.navButtons,
         children: [(0, r.jsx)("div", {
-          className: _.leftButtons,
+          className: y.leftButtons,
           children: (i > 0 || u) && (0, r.jsx)(l.Button, {
             variant: "secondary",
             size: "md",
-            text: j.intl.string(j.t["13/7kX"]),
-            onClick: () => x(y.length),
+            text: v.intl.string(v.t["13/7kX"]),
+            onClick: () => x(_.length),
             icon: l.j9r,
             iconPosition: "start"
           })
         }), (0, r.jsxs)("div", {
-          className: _.rightButtons,
+          className: y.rightButtons,
           children: [(0, r.jsxs)(l.Text, {
-            className: _.helpText,
+            className: y.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: [S, " ", Z]
+            children: [w, " ", S]
           }), (0, r.jsx)(a.u, {
             asContainer: true,
-            text: N ? j.intl.string(j.t.dA1dSf) : null,
+            text: P ? v.intl.string(v.t.dA1dSf) : null,
             children: (0, r.jsx)(l.Button, {
               variant: I ? "secondary" : "primary",
               size: "md",
-              text: s ? "".concat(j.intl.string(j.t["8SuVoE"]), " \uD83C\uDF89") : I ? j.intl.string(j.t["5Wxrcd"]) : j.intl.string(j.t.PDTjLN),
-              onClick: () => s ? O() : v(y.length),
-              disabled: N || p,
+              text: s ? "".concat(v.intl.string(v.t["8SuVoE"]), " \uD83C\uDF89") : I ? v.intl.string(v.t["5Wxrcd"]) : v.intl.string(v.t.PDTjLN),
+              onClick: () => s ? j() : O(_.length),
+              disabled: P || p,
               loading: p,
               icon: s ? true : l.d4D,
               iconPosition: "end"
@@ -290,80 +290,80 @@ function D(e) {
     setCurrentStep: g,
     headerId: h,
     disableTracking: x
-  } = e, [j, _] = i.useState(false), P = (0, o.e7)([d.Z], () => d.Z.getRulesPrompt(t.id)), D = (0, o.e7)([m.Z], () => m.Z.getConnections(t.id)), I = i.useCallback(() => {
-    _(true), u()
+  } = e, [v, y] = i.useState(false), N = (0, o.e7)([d.Z], () => d.Z.getRulesPrompt(t.id)), D = (0, o.e7)([m.Z], () => m.Z.getConnections(t.id)), I = i.useCallback(() => {
+    y(true), u()
   }, [u]);
   i.useEffect(() => {
-    t.features.has(O.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && !t.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.ZP.fetchVerificationForm(t.id)
+    t.features.has(j.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && !t.features.has(j.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.ZP.fetchVerificationForm(t.id)
   }, [t]);
-  let S = n[a],
-    Z = a + 1 >= n.length && !(0, b.O5)(t, P),
-    T = n[0].required;
+  let w = n[a],
+    S = a + 1 >= n.length && !(0, b.O5)(t, N),
+    Z = n[0].required;
   i.useEffect(() => {
-    x || p.default.track(O.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
+    x || p.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, P(_({}, (0, s.hH)(t.id)), {
       step: 0,
-      required: T
+      required: Z
     }))
-  }, [t.id, T, x]);
-  let w = e => {
-      !x && (p.default.track(O.rMx.GUILD_ONBOARDING_STEP_COMPLETED, N(y({}, (0, s.hH)(t.id)), {
+  }, [t.id, Z, x]);
+  let T = e => {
+      !x && (p.default.track(j.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(_({}, (0, s.hH)(t.id)), {
         step: a,
         options_selected: e,
         skipped: 0 === e,
         back: false,
         in_onboarding: true,
         is_final_step: false
-      })), a < n.length - 1 && p.default.track(O.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
+      })), a < n.length - 1 && p.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, P(_({}, (0, s.hH)(t.id)), {
         step: a,
         required: n[a + 1].required
-      }))), a + 1 < n.length ? g(a + 1) : (0, b.O5)(t, P) && g("rules")
+      }))), a + 1 < n.length ? g(a + 1) : (0, b.O5)(t, N) && g("rules")
     },
     k = e => {
-      !x && (p.default.track(O.rMx.GUILD_ONBOARDING_STEP_COMPLETED, N(y({}, (0, s.hH)(t.id)), {
+      !x && (p.default.track(j.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(_({}, (0, s.hH)(t.id)), {
         step: a,
         skipped: false,
         back: true,
         options_selected: e,
         in_onboarding: true,
         is_final_step: false
-      })), a > 0 && p.default.track(O.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
+      })), a > 0 && p.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, P(_({}, (0, s.hH)(t.id)), {
         step: a - 1,
         required: n[a - 1].required
       }))), 0 === a && D.length > 0 ? g("connections") : g(Math.max(0, a - 1))
     };
-  if (null == S) return null;
-  switch (S.type) {
-    case v.FN.MULTIPLE_CHOICE:
+  if (null == w) return null;
+  switch (w.type) {
+    case O.FN.MULTIPLE_CHOICE:
       return (0, r.jsx)(E, {
         guild: t,
         headerId: h,
         step: a,
         questionCount: n.length,
-        currentPrompt: S,
-        lastPrompt: Z,
+        currentPrompt: w,
+        lastPrompt: S,
         hasConnections: D.length > 0,
-        isSubmitting: j,
+        isSubmitting: v,
         selectOption: l,
         gotoPrevPrompt: k,
-        gotoNextPrompt: w,
+        gotoNextPrompt: T,
         completeOnboarding: I
       });
-    case v.FN.DROPDOWN:
+    case O.FN.DROPDOWN:
       return (0, r.jsx)(C, {
         guild: t,
         headerId: h,
         step: a,
         questionCount: n.length,
-        currentPrompt: S,
-        lastPrompt: Z,
+        currentPrompt: w,
+        lastPrompt: S,
         hasConnections: D.length > 0,
-        isSubmitting: j,
+        isSubmitting: v,
         selectOption: l,
         gotoPrevPrompt: k,
-        gotoNextPrompt: w,
+        gotoNextPrompt: T,
         completeOnboarding: I
       });
     default:
-      (0, f.vE)(S.type)
+      (0, f.vE)(w.type)
   }
 }

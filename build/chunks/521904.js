@@ -7878,23 +7878,42 @@ let {
         opacity: 0
       }
     },
+    SLIDER_TRACK_BACKGROUND: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "NEUTRAL_47",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_16",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_63",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_55",
+        opacity: 1
+      }
+    },
     SPINE_DEFAULT: {
       category: "generic",
       [r.DARK]: {
-        raw: "OPACITY_44",
-        opacity: .4392156862745098
+        raw: "NEUTRAL_47",
+        opacity: 1
       },
       [r.LIGHT]: {
-        raw: "OPACITY_48",
-        opacity: .47843137254901963
+        raw: "NEUTRAL_16",
+        opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "OPACITY_44",
-        opacity: .4392156862745098
+        raw: "NEUTRAL_63",
+        opacity: 1
       },
       [r.DARKER]: {
-        raw: "OPACITY_44",
-        opacity: .4392156862745098
+        raw: "NEUTRAL_55",
+        opacity: 1
       }
     },
     SPOILER_HIDDEN_BACKGROUND: {

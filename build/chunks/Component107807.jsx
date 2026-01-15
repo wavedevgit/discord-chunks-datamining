@@ -181,11 +181,11 @@ function $(e) {
       let d, h, x, f = y[e],
         v = f.find(e => null == e.operator),
         T = f.filter(e => null != e.operator),
-        E = (null == v || v.result) && T.every(e => e.result),
-        k = f.find(e => null != e.application),
+        k = (null == v || v.result) && T.every(e => e.result),
+        E = f.find(e => null != e.application),
         _ = j.Z.get(e),
         O = null == _ || _.enabled,
-        S = null == k ? true : k.application,
+        S = null == E ? true : E.application,
         G = (null == S ? true : S.bot) != null ? new P.Z(S.bot) : null;
       D.SJ.includes(null != (n = null == S ? true : S.id) ? n : "") ? d = (0, c.jsx)(U.Z, {
         className: q.botTag,
@@ -196,8 +196,8 @@ function $(e) {
         verified: G.isVerifiedBot()
       }));
       let w = i[null != (a = null == _ ? true : _.type) ? a : V.Kt],
-        R = !E && null != w && w <= u;
-      return h = E ? (0, c.jsx)(p.dz2, {
+        R = !k && null != w && w <= u;
+      return h = k ? (0, c.jsx)(p.dz2, {
         size: "md",
         color: "currentColor",
         className: q.connectionsChecksGroupCheckmark
@@ -215,8 +215,8 @@ function $(e) {
         color: "text-muted",
         children: Y.intl.string(Y.t.cEts68)
       }), (null == _ ? true : _.type) === W.ABu.STEAM && (x = Y.intl.string(Y.t.NcZh6K)), (0, c.jsxs)(p.P3F, {
-        className: l()(q.connectionsChecksGroup, E ? q.connectionsChecksGroupPassed : null, O ? null : q.connectionsChecksGroupPlatformDisabled),
-        onClick: !E && O ? () => {
+        className: l()(q.connectionsChecksGroup, k ? q.connectionsChecksGroupPassed : null, O ? null : q.connectionsChecksGroupPlatformDisabled),
+        onClick: !k && O ? () => {
           var e, n, c, a;
           return n = null != (e = null == _ ? true : _.type) ? e : V.Kt, void((0, H.Z)({
             platformType: n,
@@ -235,7 +235,7 @@ function $(e) {
             Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(a, e))
           }), c)), N(n), b(null != S ? S : null), t())
         } : true,
-        children: [!E && R ? (0, c.jsx)("div", {
+        children: [!k && R ? (0, c.jsx)("div", {
           className: q.connectionsChecksGroupRequirementsNotMet,
           children: (0, c.jsx)(p.Text, {
             variant: "text-xs/normal",
@@ -339,7 +339,7 @@ function en(e) {
     onClose: t,
     guildId: o,
     role: l
-  } = e, [i, s] = a.useState(0), [d, h] = a.useState(null), [x, C] = a.useState(false), [f, A] = a.useState(true), [v, g] = a.useState(false), [I, P] = a.useState(true), [B, D] = a.useState(false), H = (0, u.e7)([w.Z], () => w.Z.getAccounts()), U = (0, u.e7)([S.default], () => S.default.getId()), [V, J] = a.useState(null), [X, en] = a.useState(null), [et, ec] = a.useState(null), ea = (0, b.ZP)(), eo = (0, u.e7)([k.default], () => k.default.locale), el = (0, u.e7)([R.ZP], () => R.ZP.getMember(o, U)), ei = Object.values((0, u.e7)([G.Z], () => G.Z.getMutableGuildChannelsForGuild(o))).filter(e => Z.Z.can(W.Plq.VIEW_CHANNEL, e) && Z.Z.can(W.Plq.SEND_MESSAGES, e) && (0, y.Z)(e).includes(l));
+  } = e, [i, s] = a.useState(0), [d, h] = a.useState(null), [x, C] = a.useState(false), [f, A] = a.useState(true), [v, g] = a.useState(false), [I, P] = a.useState(true), [B, D] = a.useState(false), H = (0, u.e7)([w.Z], () => w.Z.getAccounts()), U = (0, u.e7)([S.default], () => S.default.getId()), [V, J] = a.useState(null), [X, en] = a.useState(null), [et, ec] = a.useState(null), ea = (0, b.ZP)(), eo = (0, u.e7)([E.default], () => E.default.locale), el = (0, u.e7)([R.ZP], () => R.ZP.getMember(o, U)), ei = Object.values((0, u.e7)([G.Z], () => G.Z.getMutableGuildChannelsForGuild(o))).filter(e => Z.Z.can(W.Plq.VIEW_CHANNEL, e) && Z.Z.can(W.Plq.SEND_MESSAGES, e) && (0, y.Z)(e).includes(l));
 
   function er() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -513,7 +513,7 @@ function en(e) {
                         variant: "eyebrow",
                         color: "text-default",
                         children: Y.intl.string(Y.t.TOjkEg)
-                      }), (0, c.jsx)(E.E3, {
+                      }), (0, c.jsx)(k.E3, {
                         connectedAccount: e,
                         userId: U,
                         theme: ea,
@@ -549,7 +549,7 @@ function en(e) {
                           color: "currentColor"
                         })
                       })]
-                    }), (0, c.jsx)(E.tH, {
+                    }), (0, c.jsx)(k.tH, {
                       applicationRoleConnection: n,
                       className: q.accountConnectedPreviewConnectedUserAccount,
                       locale: eo

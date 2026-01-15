@@ -1,7 +1,7 @@
 /** Chunk was on 37709 **/
 /** chunk id: 71259, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk935954 = require("./935954.js");
 
-function O(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,14 +53,14 @@ function j(e, t) {
   }), e
 }
 
-function _(e) {
+function y(e) {
   let {
     guildId: t,
     onComplete: n,
-    isLastStep: _,
-    isSubmitting: y = false,
-    disableTracking: N
-  } = e, P = i.useRef(false), {
+    isLastStep: y,
+    isSubmitting: _ = false,
+    disableTracking: P
+  } = e, N = i.useRef(false), {
     onboardingConnections: C,
     isLoading: E
   } = (0, o.cj)([f.Z], () => ({
@@ -78,29 +78,29 @@ function _(e) {
     returnfalse
   }), [C]);
   i.useEffect(() => {
-    if (N || E || 0 === C.length || P.current) return;
+    if (P || E || 0 === C.length || N.current) return;
     let e = (0, m.OZ)(C),
       n = (0, m.N4)(C);
-    u.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, j(O({}, (0, s.hH)(t)), {
+    u.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, v(j({}, (0, s.hH)(t)), {
       step: p.Xx,
       required: false,
       provider_connections_connected: e.connected,
       provider_connections_not_connected: e.notConnected,
       application_connections_connected: n.connected,
       application_connections_not_connected: n.notConnected
-    })), P.current = true
-  }, [t, E, C, N]);
+    })), N.current = true
+  }, [t, E, C, P]);
   let I = i.useCallback(() => {
-    if (!N) {
+    if (!P) {
       let e = (0, m.OZ)(C),
         n = (0, m.N4)(C);
-      u.default.track(h.rMx.GUILD_ONBOARDING_STEP_COMPLETED, j(O({}, (0, s.hH)(t)), {
+      u.default.track(h.rMx.GUILD_ONBOARDING_STEP_COMPLETED, v(j({}, (0, s.hH)(t)), {
         step: p.Xx,
         skipped: !D,
         back: false,
         options_selected: 0,
         in_onboarding: true,
-        is_final_step: _,
+        is_final_step: y,
         provider_connections_connected: e.connected,
         provider_connections_not_connected: e.notConnected,
         application_connections_connected: n.connected,
@@ -108,30 +108,30 @@ function _(e) {
       }))
     }
     n()
-  }, [n, N, t, C, D, _]);
+  }, [n, P, t, C, D, y]);
   return E ? (0, r.jsxs)("div", {
-    className: v.loadingContainer,
+    className: O.loadingContainer,
     children: [(0, r.jsx)(a.$jN, {}), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       children: x.intl.string(x.t.ZTNur7)
     })]
   }) : (0, r.jsx)("div", {
-    className: v.container,
+    className: O.container,
     children: (0, r.jsxs)("div", {
-      className: v.content,
+      className: O.content,
       children: [(0, r.jsxs)("div", {
-        className: v.scrollerContent,
+        className: O.scrollerContent,
         children: [(0, r.jsxs)("div", {
-          className: v.header,
+          className: O.header,
           children: [(0, r.jsx)("div", {
-            className: v.headerTitle,
+            className: O.headerTitle,
             children: (0, r.jsx)(a.Heading, {
               variant: "heading-xl/semibold",
               children: x.intl.string(x.t.eDVMrA)
             })
           }), (0, r.jsx)("div", {
-            className: v.headerDescription,
+            className: O.headerDescription,
             children: (0, r.jsx)(a.Text, {
               variant: "text-md/normal",
               color: "text-muted",
@@ -139,9 +139,9 @@ function _(e) {
             })
           })]
         }), (0, r.jsx)("div", {
-          className: v.connectionsListScroller,
+          className: O.connectionsListScroller,
           children: (0, r.jsx)("div", {
-            className: v.connectionsList,
+            className: O.connectionsList,
             children: C.map((e, n) => (0, r.jsx)(b.Z, {
               connection: e,
               guildId: t,
@@ -150,18 +150,18 @@ function _(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: v.footer,
+        className: O.footer,
         children: (0, r.jsxs)("div", {
-          className: v.actions,
+          className: O.actions,
           children: [(0, r.jsx)("div", {}), (0, r.jsx)("div", {
-            className: v.primaryActions,
+            className: O.primaryActions,
             children: (0, r.jsx)(a.Button, {
               variant: D ? "primary" : "secondary",
               onClick: I,
-              text: D ? _ ? "".concat(x.intl.string(x.t["8SuVoE"]), " \uD83C\uDF89") : x.intl.string(x.t.PDTjLN) : x.intl.string(x.t["5Wxrcd"]),
-              disabled: y,
-              loading: y,
-              icon: _ ? true : a.d4D,
+              text: D ? y ? "".concat(x.intl.string(x.t["8SuVoE"]), " \uD83C\uDF89") : x.intl.string(x.t.PDTjLN) : x.intl.string(x.t["5Wxrcd"]),
+              disabled: _,
+              loading: _,
+              icon: y ? true : a.d4D,
               iconPosition: "end"
             })
           })]

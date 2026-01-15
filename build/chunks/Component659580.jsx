@@ -57,12 +57,12 @@ function C(e) {
       analyticsLocations: M,
       asSubmenu: N
     }),
-    V = (0, p.M)({
+    L = (0, p.M)({
       deviceType: x.h7.AUDIO_OUTPUT,
       analyticsLocations: M,
       asSubmenu: N
     }),
-    L = (0, o.e7)([v.Z], () => v.Z.getActiveInputProfile()),
+    V = (0, o.e7)([v.Z], () => v.Z.getActiveInputProfile()),
     F = (0, b.Z)(M),
     U = (0, m.Z)(M),
     Y = (0, f.Z)(M),
@@ -81,7 +81,7 @@ function C(e) {
       navId: "audio-device-context",
       variant: "fixed",
       "aria-label": _.intl.string(_.t.ZR1Ss6),
-      children: [C && R, n && V, E && F, !N && w && L !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
+      children: [C && R, n && L, E && F, !N && w && V !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
         label: _.intl.string(_.t["pS+K2L"]),
         children: U
       }) : null, (0, r.jsxs)(a.kSQ, {
@@ -100,7 +100,7 @@ function C(e) {
           action: () => s.Z.setMode(W, true, true, {
             analyticsLocations: M
           }),
-          disabled: L === h._.STUDIO
+          disabled: V === h._.STUDIO
         }) : null, A]
       })]
     })

@@ -66,13 +66,13 @@ let E = e => {
     }),
     A = (0, a.e7)([y.Z], () => y.Z.isVoiceFilterDownloaded(t.id), [t]),
     R = null == I ? true : I.previewSoundURLs,
-    [V, L] = i.useState(0),
+    [L, V] = i.useState(0),
     {
       isPlaying: F,
       playSound: U,
       stopSound: Y,
       preloadSound: H
-    } = (0, p.Z)(null != R ? R[V] : null, {
+    } = (0, p.Z)(null != R ? R[L] : null, {
       soundId: t.id
     }),
     z = P[t.styleKey],
@@ -87,8 +87,8 @@ let E = e => {
       }, (0, g.w)(o))), U({
         volume: .5,
         outputChannel: x.w.VOICE
-      }), (.25 > Math.random() || V > 0) && null != R && L(e => (e + 1) % R.length)
-    }, [o, U, V, R, t.id]),
+      }), (.25 > Math.random() || L > 0) && null != R && V(e => (e + 1) % R.length)
+    }, [o, U, L, R, t.id]),
     W = null != I ? _.intl.string(I.name) : "";
   return (0, r.jsxs)("div", {
     className: l()(P.filter, z, {

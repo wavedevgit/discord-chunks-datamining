@@ -105,26 +105,26 @@ function R(e) {
       }, t))
     }, {
       onCloseCallback: () => {
-        W(y.L.USER_DISMISS)
+        W(N.L.USER_DISMISS)
       },
       modalKey: "dismissible_content_".concat(B)
     })
   }, [t, B, W, M]), (null == L ? true : L.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
-    className: O.container,
+    className: A.container,
     children: [(0, r.jsxs)(d.Z, {
-      className: O.toolbar,
+      className: A.toolbar,
       hideSearch: true,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(d.Z.Icon, {
         icon: u.Ucv,
         "aria-label": ""
       }), (0, r.jsx)(d.Z.Title, {
-        children: A.intl.string(N.default.yv3DJJ)
+        children: O.intl.string(y.default.yv3DJJ)
       })]
     }), (0, r.jsxs)("div", {
-      className: O.contentContainer,
+      className: A.contentContainer,
       children: [(0, r.jsx)(u.zJl, {
-        className: O.powerupsContainer,
+        className: A.powerupsContainer,
         children: F.map(e => {
           let {
             type: n,
@@ -136,18 +136,18 @@ function R(e) {
             switch (e) {
               case S.Us.LEVEL:
                 return {
-                  title: A.intl.string(N.default["TXY/b0"]), description: A.intl.string(N.default.aJv4PB)
+                  title: O.intl.string(y.default["TXY/b0"]), description: O.intl.string(y.default.aJv4PB)
                 };
               case S.Us.PERK:
                 return {
-                  title: A.intl.string(N.default.TV3Vm8), description: A.intl.string(N.default.STx9hp)
+                  title: O.intl.string(y.default.TV3Vm8), description: O.intl.string(y.default.STx9hp)
                 }
             }
           }(n), s = n === S.Us.LEVEL ? u.zJl : "div";
           return (0, r.jsxs)("div", {
-            className: O.powerupsSection,
+            className: A.powerupsSection,
             children: [(0, r.jsxs)("div", {
-              className: O.powerupHorizontalPadding,
+              className: A.powerupHorizontalPadding,
               children: [(0, r.jsx)(u.Heading, {
                 color: "text-strong",
                 variant: "heading-lg/semibold",
@@ -159,8 +159,8 @@ function R(e) {
               })]
             }), (0, r.jsx)(s, {
               orientation: "horizontal",
-              className: l()(O.powerupContainer, O.powerupHorizontalPadding, {
-                [O.powerupsLevelContainer]: n === S.Us.LEVEL
+              className: l()(A.powerupContainer, A.powerupHorizontalPadding, {
+                [A.powerupsLevelContainer]: n === S.Us.LEVEL
               }),
               fade: true,
               children: i.map((e, n) => {
@@ -174,7 +174,7 @@ function R(e) {
                       nextPowerup: null == (o = i[n + 1]) ? true : o.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "singlePerk":
-                    return (0, r.jsx)(w.Z, {
+                    return (0, r.jsx)(_.Z, {
                       guildId: t,
                       powerup: e.powerup
                     }, "powerup-".concat(e.powerup.skuId));
@@ -194,10 +194,10 @@ function R(e) {
           }, "section-".concat(n))
         })
       }), (0, r.jsxs)("div", {
-        className: O.sidebarContainer,
-        children: [k ? (0, r.jsx)(_.Z, {
+        className: A.sidebarContainer,
+        children: [k ? (0, r.jsx)(C.Z, {
           guildId: t
-        }) : (0, r.jsx)(C.Z, {
+        }) : (0, r.jsx)(w.Z, {
           guildId: t
         }), (0, r.jsx)(I.Z, {
           guildId: t

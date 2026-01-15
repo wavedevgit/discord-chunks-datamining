@@ -32,7 +32,7 @@ function Z(e) {
     state: f.Z.getStateForGuild(t),
     lowestGameServerCost: f.Z.getLowestGameCostForGuild(t)
   })), Z = (0, p.Z)(t), {
-    textColor: w
+    textColor: _
   } = (0, d.Z)((null == Z ? true : Z.type) === "active");
   return null == n ? null : (0, r.jsxs)(c.aB, {
     label: g.intl.string(v.default["B3OfL/"]),
@@ -54,7 +54,7 @@ function Z(e) {
       })]
     }), (0, r.jsx)(c.Q9, {
       title: g.intl.string(v.default["B3OfL/"]),
-      textColor: w,
+      textColor: _,
       footer: (0, r.jsx)(c.uf, {
         cost: null != i ? i : 0,
         costDecorator: "+",
@@ -62,7 +62,7 @@ function Z(e) {
       }),
       children: (0, r.jsx)(l.xvT, {
         className: x.description,
-        color: w,
+        color: _,
         variant: "text-sm/medium",
         children: g.intl.string(v.default.EGkJAG)
       })

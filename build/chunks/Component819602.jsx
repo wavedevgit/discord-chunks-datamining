@@ -93,7 +93,7 @@ function P(e) {
       direction: g.Z.Directions.RIGHT
     })
   }));
-  let M = (0, s.dQu)(r.Z.colors.INTERACTIVE_MUTED).hex(),
+  let M = (0, s.dQu)(r.Z.colors.ICON_MUTED).hex(),
     R = (0, s.dQu)(r.Z.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
     U = v.verified ? (0, l.jsx)(h.Z, {
       className: A.connectedAccountVerifiedIcon,

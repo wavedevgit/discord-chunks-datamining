@@ -45,7 +45,7 @@ function x(e) {
       width: 40,
       height: 40,
       size: "custom",
-      color: c.Z.colors.INTERACTIVE_MUTED
+      color: c.Z.colors.ICON_MUTED
     }), (0, r.jsx)(u.Heading, {
       variant: "heading-sm/medium",
       color: "text-muted",
@@ -57,7 +57,7 @@ function x(e) {
       width: 40,
       height: 40,
       size: "custom",
-      color: c.Z.colors.INTERACTIVE_MUTED
+      color: c.Z.colors.ICON_MUTED
     }), (0, r.jsx)(u.Heading, {
       variant: "heading-md/normal",
       color: "text-muted",

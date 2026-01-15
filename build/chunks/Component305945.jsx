@@ -118,7 +118,7 @@ function P(e) {
     innerRef: g
   } = e, y = b(e, ["onChange", "checked", "disabled", "focusProps", "innerRef"]), {
     reducedMotion: v
-  } = i.useContext(d.S), S = i.useRef(null), [I, T] = i.useState(false), C = (0, u.d)(l.Z.colors.INTERACTIVE_MUTED).spring(), A = (0, u.d)(l.Z.colors.BACKGROUND_BRAND).spring(), {
+  } = i.useContext(d.S), S = i.useRef(null), [I, T] = i.useState(false), C = (0, u.d)(l.Z.colors.SLIDER_TRACK_BACKGROUND).spring(), A = (0, u.d)(l.Z.colors.BACKGROUND_BRAND).spring(), {
     state: P
   } = (0, c.q)({
     config: O,

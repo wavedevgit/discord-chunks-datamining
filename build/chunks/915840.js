@@ -2080,19 +2080,19 @@ let {
     },
     SPINE_DEFAULT: {
       [r.DARK]: {
-        raw: "NEUTRAL_1",
+        raw: "NEUTRAL_32",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_72",
+        raw: "NEUTRAL_32",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_10",
+        raw: "NEUTRAL_42",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_5",
+        raw: "NEUTRAL_38",
         opacity: 1
       }
     },

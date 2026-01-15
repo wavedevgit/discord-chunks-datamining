@@ -1,13 +1,14 @@
 /** Chunk was on 44799 **/
 /** chunk id: 27237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk297159 = require("./297159.js"),
   Chunk973772 = require("./973772.js"),
@@ -24,49 +25,49 @@ var Chunk54381 = require("./54381.js"),
   Chunk138545 = require("./138545.js"),
   Chunk919600 = require("./919600.js");
 
-function _(e) {
+function w(e) {
   let t, {
     active: n,
     nextActive: i,
     position: o
   } = e;
-  return t = n && false !== i ? g.vW.FULL : n && false === i ? g.vW.HALF : g.vW.NONE, (0, r.jsxs)("div", {
-    className: w.progressContainer,
+  return t = n && false !== i ? x.vW.FULL : n && false === i ? x.vW.HALF : x.vW.NONE, (0, r.jsxs)("div", {
+    className: C.progressContainer,
     children: [(0, r.jsx)("div", {
-      className: l()(w.progress, w[o], w[t])
+      className: l()(C.progress, C[o], C[t])
     }), (0, r.jsx)("div", {
-      className: l()(w.boostContainer, Z.boostProgressBackground, {
-        [w.boostContainerActive]: n,
-        [Z.active]: n
+      className: l()(C.boostContainer, _.boostProgressBackground, {
+        [C.boostContainerActive]: n,
+        [_.active]: n
       }),
-      children: (0, r.jsx)(s.Ucv, {
+      children: (0, r.jsx)(u.Ucv, {
         size: "sm",
-        color: "white"
+        color: s.Z.colors.ICON_STRONG
       })
     })]
   })
 }
 
-function C(e) {
+function I(e) {
   let {
     isActive: t,
     index: n
   } = e, {
     textColor: o,
     iconColor: l
-  } = (0, m.Z)(t), s = i.useMemo(() => {
-    let e = b.C[n];
+  } = (0, v.Z)(t), s = i.useMemo(() => {
+    let e = h.C[n];
     if (null == e) return [];
-    let t = e.tier === x.Eu4.TIER_3 ? e.perks.slice(0, false) : e.perks;
+    let t = e.tier === b.Eu4.TIER_3 ? e.perks.slice(0, false) : e.perks;
     return null == t ? true : t.map((e, t) => {
-      let i = (0, u.P)(e.perkIcon);
+      let i = (0, c.P)(e.perkIcon);
       return (0, r.jsxs)("div", {
-        className: w.perkRow,
+        className: C.perkRow,
         children: [(0, r.jsx)(i, {
           color: l,
           size: "sm"
         }), (0, r.jsx)(a.xvT, {
-          className: w.perkText,
+          className: C.perkText,
           color: o,
           variant: "text-sm/medium",
           children: e.getCopy()
@@ -75,57 +76,57 @@ function C(e) {
     })
   }, [n, l, o]);
   return (0, r.jsxs)("div", {
-    className: w.perkRowContainer,
+    className: C.perkRowContainer,
     children: [s, (0, r.jsx)("div", {
-      className: w.perkRow,
+      className: C.perkRow,
       children: (0, r.jsx)(a.xvT, {
         color: o,
         variant: "text-sm/medium",
-        children: j.intl.string(h.default.nIj3LZ)
+        children: Z.intl.string(j.default.nIj3LZ)
       })
     })]
   })
 }
 
-function I(e) {
+function E(e) {
   let t, {
       guildId: n,
       index: o,
       powerup: l,
       nextPowerup: a
     } = e,
-    s = (0, c.ZP)(n, l),
-    u = (0, c.ZP)(n, a),
-    x = s.type !== g.A3.INACTIVE,
-    b = u.type !== g.A3.INACTIVE,
-    h = s.type === g.A3.TIER_OVERRIDE_ACTIVATED,
+    s = (0, d.ZP)(n, l),
+    u = (0, d.ZP)(n, a),
+    c = s.type !== x.A3.INACTIVE,
+    b = u.type !== x.A3.INACTIVE,
+    h = s.type === x.A3.TIER_OVERRIDE_ACTIVATED,
     [j, Z] = i.useState(true);
-  (0, v.Z)(j), t = 0 === o ? g.m.START : null == a ? g.m.END : g.m.MIDDLE;
+  (0, g.Z)(j), t = 0 === o ? x.m.START : null == a ? x.m.END : x.m.MIDDLE;
   let {
-    textColor: I
-  } = (0, m.Z)(x);
-  return (0, r.jsxs)(p.Z, {
+    textColor: _
+  } = (0, v.Z)(c);
+  return (0, r.jsxs)(m.Z, {
     guildId: n,
     powerup: l,
-    className: w.card,
-    children: [(0, r.jsx)(_, {
+    className: C.card,
+    children: [(0, r.jsx)(w, {
       position: t,
-      active: x,
+      active: c,
       nextActive: null != a ? b : true
-    }), (0, r.jsx)(d.Q9, {
+    }), (0, r.jsx)(f.Q9, {
       title: l.title,
-      textColor: I,
-      footer: !h && (0, r.jsx)(p.g, {
-        className: w.footer,
+      textColor: _,
+      footer: !h && (0, r.jsx)(m.g, {
+        className: C.footer,
         guildId: n,
         powerup: l
       }),
-      children: (0, r.jsx)(C, {
-        isActive: x,
+      children: (0, r.jsx)(I, {
+        isActive: c,
         index: o
       })
-    }), !h && (0, r.jsx)(d.N4, {
-      children: (0, r.jsx)(f.ZP, {
+    }), !h && (0, r.jsx)(f.N4, {
+      children: (0, r.jsx)(p.ZP, {
         guildId: n,
         powerup: l,
         onError: Z
