@@ -82,11 +82,13 @@ function m(e) {
     actionBarInputLayout: E = "default",
     listProps: b,
     notice: y,
-    children: O
-  } = e, v = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "actionBarInputLayout", "listProps", "notice", "children"]);
-  let S = null != t ? t : null != f || null != g || (0, o.G)(O) || null != b ? "md" : "sm";
-  return (0, r.jsxs)(i.I, p(d({}, v), {
-    size: S,
+    onScroll: O,
+    scrollerRef: v,
+    children: S
+  } = e, I = _(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "actionBarInputLayout", "listProps", "notice", "onScroll", "scrollerRef", "children"]);
+  let T = null != t ? t : null != f || null != g || (0, o.G)(S) || null != b ? "md" : "sm";
+  return (0, r.jsxs)(i.I, p(d({}, I), {
+    size: T,
     children: [(0, r.jsx)(l.xB, {
       title: n,
       subtitle: u
@@ -96,7 +98,9 @@ function m(e) {
     }), (0, r.jsx)(o.f, {
       controls: f,
       listProps: b,
-      children: O
+      onScroll: O,
+      scrollerRef: v,
+      children: S
     }), (0, r.jsx)(s.m, {
       children: h
     }), (0, r.jsx)(a.G, {

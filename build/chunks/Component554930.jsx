@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
 let d = e => {
   let {
     percentage: t
-  } = e, n = new Date, d = new Date(n.getFullYear(), n.getMonth() + 1, 0).getDate(), f = (0, a.e7)([o.default], () => o.default.getCurrentUser()), p = null == f ? true : f.isFractionalPremiumWithNoSubscription();
+  } = e, n = new Date, d = new Date(n.getFullYear(), n.getMonth() + 1, 0).getDate(), f = (0, a.e7)([o.default], () => o.default.getCurrentUser()), p = null == f ? true : f.isFractionalPremiumWithNoStandardSub();
   return (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(i.xvT, {

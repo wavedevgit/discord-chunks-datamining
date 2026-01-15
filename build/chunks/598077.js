@@ -162,7 +162,7 @@ class O extends Chunk81825.Z {
     var e, t, n;
     return (0, p.I5)(this, m.PremiumTypes.TIER_2) && ((null == (e = this.premiumState) ? true : e.premiumSubscriptionType) === a.W$.NONE_UNSPECIFIED || (null == (t = this.premiumState) ? true : t.premiumSubscriptionType) === a.W$.BOOST_ONLY) && (null == (n = this.premiumState) ? true : n.premiumSource) === a.d3.FRACTIONAL_NITRO
   }
-  isFractionalPremiumWithNoSubscription() {
+  isFractionalPremiumWithNoStandardSub() {
     var e;
     return (0, p.I5)(this, m.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : e.premiumSource) === a.d3.FRACTIONAL_NITRO && this.premiumState.premiumSubscriptionType !== a.W$.TIER_2
   }

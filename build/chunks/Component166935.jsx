@@ -73,14 +73,18 @@ function O(e) {
   let {
     controls: t,
     children: n,
-    listProps: i
+    listProps: i,
+    onScroll: a,
+    scrollerRef: o
   } = e;
   if (!b(n) && null == t && null == i) return null;
-  let a = y(n);
+  let s = y(n);
   return (0, r.jsx)(v, {
     controls: t,
-    children: a,
-    listProps: i
+    children: s,
+    listProps: i,
+    onScroll: a,
+    scrollerRef: o
   })
 }
 
@@ -89,65 +93,67 @@ function v(e) {
   let {
     controls: a,
     children: s,
-    listProps: p
-  } = e, [h, g] = i.useState(false), [b, y] = i.useState(null != p), O = i.useRef(null), v = (0, c.Z)(O, null == p ? true : p.ref), S = i.useRef(null), I = i.useRef(true);
-  i.useEffect(() => (I.current = l()(() => {
+    listProps: p,
+    onScroll: h,
+    scrollerRef: g
+  } = e, [b, y] = i.useState(false), [O, v] = i.useState(null != p), S = i.useRef(null), I = (0, c.Z)(S, null == p ? true : p.ref, g), T = i.useRef(null), C = i.useRef(true);
+  i.useEffect(() => (C.current = l()(() => {
     var e;
-    (null == O ? true : O.current) != null && null != a && g((null == (e = O.current) ? true : e.getDistanceFromTop()) > 12)
+    (null == S ? true : S.current) != null && null != a && y((null == (e = S.current) ? true : e.getDistanceFromTop()) > 12)
   }, 200), () => {
     var e;
-    null == (e = I.current) || e.cancel()
+    null == (e = C.current) || e.cancel()
   }), [a]);
-  let T = i.useCallback(() => {
-      null != I.current && I.current()
-    }, [I]),
-    C = null != p;
+  let A = i.useCallback(() => {
+      null != C.current && C.current(), null != h && h()
+    }, [C, h]),
+    N = null != p;
   return i.useLayoutEffect(() => {
     var e, t;
     let n = new ResizeObserver(() => {
         var e, t;
-        if (C) return void y(true);
-        let n = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
-        if (null == n || (null == S ? true : S.current) == null) return;
+        if (N) return void v(true);
+        let n = null != (t = null == S || null == (e = S.current) ? true : e.getScrollerNode()) ? t : null;
+        if (null == n || (null == T ? true : T.current) == null) return;
         let r = n.getBoundingClientRect();
-        y(S.current.getBoundingClientRect().height > r.height)
+        v(T.current.getBoundingClientRect().height > r.height)
       }),
-      r = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
-    return null != r && n.observe(r), (null == S ? true : S.current) != null && n.observe(S.current), () => n.disconnect()
-  }, [C]), (0, r.jsxs)(u.y, {
+      r = null != (t = null == S || null == (e = S.current) ? true : e.getScrollerNode()) ? t : null;
+    return null != r && n.observe(r), (null == T ? true : T.current) != null && n.observe(T.current), () => n.disconnect()
+  }, [N]), (0, r.jsxs)(u.y, {
     children: [(0, r.jsx)("div", {
       className: o()(_.bodySpacerTop, {
-        [_.bodySpacerTopBorder]: b && null == a
+        [_.bodySpacerTopBorder]: O && null == a
       })
     }), null != a && (0, r.jsx)("header", {
       className: o()(_.bodyControls, {
-        [_.bodyControlsWithFade]: h
+        [_.bodyControlsWithFade]: b
       }),
       children: a
     }), null != p ? (0, r.jsx)(d._2, E(m({}, p), {
       className: _.bodyList,
       innerAriaOrientation: null != (t = p.innerAriaOrientation) ? t : "vertical",
       innerRole: null != (n = p.innerRole) ? n : "listbox",
-      ref: v,
+      ref: I,
       onScroll: e => {
         var t;
-        T(), null == (t = p.onScroll) || t.call(p, e)
+        A(), null == (t = p.onScroll) || t.call(p, e)
       }
     })) : (0, r.jsx)(f.yW, {
-      ref: O,
+      ref: I,
       className: _.body,
-      onScroll: T,
+      onScroll: A,
       disableFocusRingScope: true,
       children: (0, r.jsx)("main", {
-        ref: S,
+        ref: T,
         className: o()(_.bodyInner, {
-          [_.bodyInnerShouldScroll]: b
+          [_.bodyInnerShouldScroll]: O
         }),
         children: s
       })
     }), (0, r.jsx)("div", {
       className: o()(_.bodySpacerBottom, {
-        [_.bodySpacerBottomBorder]: b
+        [_.bodySpacerBottomBorder]: O
       })
     })]
   })
