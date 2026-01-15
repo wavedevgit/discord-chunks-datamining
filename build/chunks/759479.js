@@ -58,7 +58,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return null == t ? [].values() : e.values().filter(e => {
+  return null == t ? [] : Array.from(e.values()).filter(e => {
     var n, r;
     let l = (0, a.Mo)(e);
     return null != e && (0, o.Rt)(e) && !(0, i.zi)(e) && l === t && l !== s.Ts && (null == (n = e.userStatus) ? true : n.completedAt) == null && (null == (r = e.userStatus) ? true : r.enrolledAt) == null
