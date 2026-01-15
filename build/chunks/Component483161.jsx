@@ -58,7 +58,7 @@ let m = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     icon: Chunk657707.UserIcon,
     stronglyDiscouragedCustomComponent: () => {
       var t;
-      let e = (0, s.e7)([N.default], () => N.default.getCurrentUser()),
+      let e = (0, s.e7)([A.default], () => A.default.getCurrentUser()),
         {
           avatarSrc: n,
           avatarDecorationSrc: r

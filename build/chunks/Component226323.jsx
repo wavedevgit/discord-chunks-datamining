@@ -175,7 +175,7 @@ function Z(e) {
       isSpeaking: U,
       voiceDb: K,
       spreadDirection: m.h.INSET_ONLY,
-      maxInnerSpreadRadius: 5
+      maxInnerSpreadRadius: 3
     });
   return (0, r.jsx)(O.Z, {
     targetElementRef: p,

@@ -36,8 +36,8 @@ function T(e) {
     contentPosition: k,
     rowIndex: R,
     isVisibleInViewport: A,
-    onReceiveErrorHints: Z,
-    sourceQuestContent: D
+    onReceiveErrorHints: D,
+    sourceQuestContent: Z
   } = e, L = r.useRef(null), M = (0, x.w8)(P.config), U = (0, x.B3)(P.config), B = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: F,
     scrollHeight: G
@@ -79,7 +79,7 @@ function T(e) {
   }), W = (null == (n = P.userStatus) ? true : n.completedAt) != null, K = (null == (i = P.userStatus) ? true : i.claimedAt) != null, q = (0, x.xN)(P.config), Y = (0, x.LM)(P.config), {
     completedRatio: Q,
     completedRatioDisplay: X
-  } = (0, h.I)(P), J = (0, p.Bd)(P, D, L), $ = r.useMemo(() => K && q ? _.intl.format(_.t["8Op4c4"], {
+  } = (0, h.I)(P), J = (0, p.Bd)(P, Z, L), $ = r.useMemo(() => K && q ? _.intl.format(_.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(O, {
       questId: P.id,
       children: [(0, a.jsx)(m.Z, {
@@ -151,7 +151,7 @@ function T(e) {
                   autoplay: I,
                   onLoadComplete: z,
                   lazyLoad: true,
-                  sourceQuestContent: D
+                  sourceQuestContent: Z
                 })
               })
             })]
@@ -162,7 +162,7 @@ function T(e) {
             className: S.questRewardTileAsset,
             onLoadComplete: z,
             lazyLoad: true,
-            sourceQuestContent: D
+            sourceQuestContent: Z
           })]
         })
       }), (0, a.jsxs)("div", {
@@ -194,8 +194,8 @@ function T(e) {
       questContent: w,
       contentPosition: k,
       rowIndex: R,
-      onReceiveErrorHints: Z,
-      sourceQuestContent: D
+      onReceiveErrorHints: D,
+      sourceQuestContent: Z
     })]
   })
 }

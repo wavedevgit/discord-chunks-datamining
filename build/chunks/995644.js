@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 995644, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  v: () => N
+  v: () => A
 });
 var Chunk442837 = require("./442837.js"),
   Chunk509613 = require("./509613.js"),
@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk968021 = require("./968021.js"),
   Chunk921356 = require("./921356.js"),
   Chunk388032 = require("./388032.jsx");
-let N = (0, Chunk509613.k4)(Chunk313789.n.ACCOUNT_AUTHENTICATION_CATEGORY, {
+let A = (0, Chunk509613.k4)(Chunk313789.n.ACCOUNT_AUTHENTICATION_CATEGORY, {
   useTitle: () => I.intl.string(I.t.pKSjEj),
   useNotice: function() {
     return (0, i.e7)([u.default], () => {

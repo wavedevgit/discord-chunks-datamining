@@ -50,16 +50,16 @@ let _ = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
         })
       }), [_]),
       I = l.useMemo(() => t ? E.intl.string(E.t.JsbzjA) : E.intl.string(E.t.MLmyMY), [t]),
-      N = l.useId(),
-      A = l.useId();
+      A = l.useId(),
+      N = l.useId();
     return n ? (0, i.jsxs)("fieldset", {
-      "aria-describedby": A,
+      "aria-describedby": N,
       children: [(0, i.jsx)(s.nn4, {
         tag: "legend",
-        id: N,
+        id: A,
         children: E.intl.string(E.t.GByLar)
       }), (0, i.jsx)(s.nn4, {
-        id: A,
+        id: N,
         children: I
       }), (0, i.jsxs)(s.Kqy, {
         direction: "vertical",
@@ -72,12 +72,12 @@ let _ = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
         }), t ? (0, i.jsx)(S.NP, {
           isSpeaking: T,
           className: d.autoThresholdSlider,
-          ariaDescribedBy: A,
-          ariaLabelledBy: N
+          ariaDescribedBy: N,
+          ariaLabelledBy: A
         }) : (0, i.jsx)(S.t8, {
           volume: a,
-          ariaDescribedBy: A,
-          ariaLabelledBy: N
+          ariaDescribedBy: N,
+          ariaLabelledBy: A
         }), g]
       })]
     }) : (0, i.jsxs)(s.Kqy, {

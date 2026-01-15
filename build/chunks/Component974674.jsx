@@ -576,7 +576,7 @@ let B = Chunk473749.forwardRef((e, t) => {
     isLatched: a,
     voiceDb: l,
     spreadDirection: f.h.INSET_ONLY,
-    maxInnerSpreadRadius: 5
+    maxInnerSpreadRadius: 4
   }, c));
   return (0, r.jsxs)("div", {
     ref: t,

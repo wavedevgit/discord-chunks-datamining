@@ -86,5 +86,5 @@ let L = (0, Chunk509613.J9)(Chunk313789.n.VOICE_INPUT_PROFILE_SETTING, {
         }
       }, [t])
     },
-    buildLayout: () => [L, _.q, g.L, d.A, O.Y, I.h, A.q, N.X, E.h]
+    buildLayout: () => [L, _.q, g.L, d.A, O.Y, I.h, N.q, A.X, E.h]
   })

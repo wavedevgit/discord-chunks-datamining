@@ -18,12 +18,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk776570 = require("./776570.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let N = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
+let A = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     useTitle: () => I.intl.string(I.t.B1fFpf),
     StronglyDiscouragedCustomComponent: Chunk604224.Z,
     buildLayout: () => []
   }),
-  A = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
+  N = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     useTitle: () => I.intl.string(I.t.B1fFpf),
     buildLayout: () => [_.Z, S.W, o.V, d.d, E.g, c.d, T.g]
   }),
@@ -32,5 +32,5 @@ let N = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     usePredicate: () => s.Z.isSupported(),
     icon: Chunk657707.MicrophoneIcon,
     getLegacySearchKey: () => (0, r.Ml)("VoiceAndVideoPanel") ? true : g.s6.VOICE_AND_VIDEO,
-    buildLayout: () => [(0, r.Ml)("VoiceAndVideoPanel") ? A : N]
+    buildLayout: () => [(0, r.Ml)("VoiceAndVideoPanel") ? N : A]
   })

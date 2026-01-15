@@ -727,8 +727,8 @@ function tu() {
       activities: i,
       streaming: l,
       status: s
-    } = (0, d.cj)([eZ.Z], () => {
-      let e = eZ.Z.getActivities();
+    } = (0, d.cj)([eD.Z], () => {
+      let e = eD.Z.getActivities();
       return {
         activities: e,
         streaming: null != e.find(e => {
@@ -737,15 +737,15 @@ function tu() {
           } = e;
           return t === e8.IIU.STREAMING
         }),
-        status: eZ.Z.getStatus()
+        status: eD.Z.getStatus()
       }
     }),
     c = (0, d.e7)([eO.Z], () => eO.Z.getAnyStreamForUser(n)),
     m = (0, v.Z)({
       userId: n
     }),
-    p = (0, d.e7)([eD.Z], () => eD.Z.isCurrentUserPTTLatched()),
-    h = (0, d.e7)([eD.Z], () => eD.Z.getVoiceVolume(n)),
+    p = (0, d.e7)([eZ.Z], () => eZ.Z.isCurrentUserPTTLatched()),
+    h = (0, d.e7)([eZ.Z], () => eZ.Z.getVoiceVolume(n)),
     f = eY.ZP.useUserTag(t, {
       decoration: "never"
     }),
@@ -768,10 +768,10 @@ function tu() {
       return (0, R.fD)() ? null == (e = k.C.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     }),
     I = (0, d.e7)([eU.Z], () => eU.Z.getPremiumTypeSubscription()),
-    Z = (0, d.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()),
-    D = (0, d.e7)([A.Z], () => A.Z.isFullscreenInContext()),
+    D = (0, d.e7)([ek.Z], () => ek.Z.getSpeakingWhileMuted()),
+    Z = (0, d.e7)([A.Z], () => A.Z.isFullscreenInContext()),
     L = (0, d.e7)([eI.Z], () => eI.Z.hasLayers()),
-    M = (0, x.s9z)(x.JQI) || L || eq.s.isDisallowPopupsSet() || D,
+    M = (0, x.s9z)(x.JQI) || L || eq.s.isDisallowPopupsSet() || Z,
     U = (0, en.b)(),
     B = (0, d.e7)([q.default], () => null != q.default.getAwaitingRemoteSessionInfo()),
     F = (0, d.e7)([eA.Z], () => eA.Z.getGuildId()),
@@ -847,7 +847,7 @@ function tu() {
       serverMute: j,
       speaking: m,
       voiceDb: h,
-      speakingWhileMuted: Z,
+      speakingWhileMuted: D,
       latched: p && null != g,
       status: s,
       streaming: l,
@@ -968,14 +968,14 @@ function tp(e) {
     lastInitAttemptMayHaveCrashed: I
   } = (0, ev.o)(), k = null != P, R = (0, d.e7)([eR.Z], () => eR.Z.isConnected()), {
     Component: A,
-    events: Z,
+    events: D,
     play: U
   } = T, B = n || i ? x.v0G : A, F = j ? {
     tooltipType: "green_void_do_not_use",
     tooltipText: e2.intl.string(e2.t["29gnR4"]),
     tooltipForceOpen: true
   } : {
-    tooltipText: (0, D.Z)(t, n, i, s)
+    tooltipText: (0, Z.Z)(t, n, i, s)
   }, {
     analyticsLocations: V
   } = (0, N.ZP)(O.Z.AUDIO_INPUT_BUTTON), H = (0, eb.Hu)({
@@ -1092,10 +1092,10 @@ function tp(e) {
             onClick: h,
             onContextMenu: n,
             onMouseEnter: () => {
-              m(), Z.onMouseEnter()
+              m(), D.onMouseEnter()
             },
             onMouseLeave: () => {
-              p(), Z.onMouseLeave()
+              p(), D.onMouseLeave()
             },
             plated: null != g,
             redGlow: _,
@@ -1144,10 +1144,10 @@ function tp(e) {
       children: [(0, a.jsx)(e0.Z, tt({
         plated: null != g,
         onMouseEnter: () => {
-          m(), Z.onMouseEnter()
+          m(), D.onMouseEnter()
         },
         onMouseLeave: () => {
-          p(), Z.onMouseLeave()
+          p(), D.onMouseLeave()
         },
         icon: (0, a.jsx)(B, {
           size: "custom",
@@ -1290,7 +1290,7 @@ function th(e) {
     showRefreshedAudioContextMenu: C
   } = (0, eJ.e)({
     location: "HeadphonesButton"
-  }), _ = (0, Z.Z)(t, n, i), {
+  }), _ = (0, D.Z)(t, n, i), {
     analyticsLocations: S
   } = (0, N.ZP)(O.Z.AUDIO_OUTPUT_BUTTON), E = r.useRef(null);
   r.useEffect(() => () => b(), [h, b]);

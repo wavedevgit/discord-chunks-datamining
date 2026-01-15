@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 798922, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  F: () => A
+  F: () => N
 });
 var Chunk473749 = require("./473749.js"),
   Chunk657707 = require("./657707.js"),
@@ -35,13 +35,13 @@ let g = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_CATEGORY, {
     StronglyDiscouragedCustomComponent: Chunk36192.ZP,
     buildLayout: () => []
   }),
-  N = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
+  A = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
     usePredicate: () => (0, T.gN)("SessionsPanel"),
     useTitle: () => _.intl.string(_.t["+1h0k/"]),
     hideInStreamerMode: true,
     buildLayout: () => [g]
   }),
-  A = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
+  N = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["+1h0k/"]),
     getLegacySearchKey: () => (0, T.Gl)("SessionsPanel") ? true : d.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     icon: Chunk657707.LaptopPhoneIcon,
@@ -49,5 +49,5 @@ let g = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_CATEGORY, {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: () => [s.z.AUTH_SESSIONS_NEW]
     },
-    buildLayout: () => (0, T.Gl)("SessionsPanel") ? [N] : [I]
+    buildLayout: () => (0, T.Gl)("SessionsPanel") ? [A] : [I]
   })

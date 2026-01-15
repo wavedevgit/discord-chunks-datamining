@@ -47,7 +47,7 @@ function U(e) {
     questId: n
   } = e;
   return (0, y.qI)({
-    mode: t ? D.NH.EXPANDED : D.NH.COLLAPSED,
+    mode: t ? Z.NH.EXPANDED : Z.NH.COLLAPSED,
     questContent: b.jn.QUEST_BAR_V2,
     questId: n,
     sourceQuestContent: b.jn.QUEST_BAR_V2
@@ -66,15 +66,15 @@ function F(e) {
     quest: i
   } = e, u = (0, j.T)({
     quest: i,
-    location: D.dr.QUESTS_BAR
+    location: Z.dr.QUESTS_BAR
   }), g = (0, v.Z)({
-    location: D.dr.QUESTS_BAR
+    location: Z.dr.QUESTS_BAR
   }), F = (0, c.e7)([x.Z], () => null != x.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: G,
     reason: V
   } = (0, E.qN)({
     quest: i,
-    location: D.dr.QUESTS_BAR
+    location: Z.dr.QUESTS_BAR
   }), z = (0, c.e7)([p.Z], () => p.Z.hasLayers()), H = r.useRef(null), W = r.useMemo(() => (0, C.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, q = (0, d.Z)(K), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
     hasError: Q,
     isLoading: X
@@ -87,7 +87,7 @@ function F(e) {
     expansionSpring: er,
     visibilitySpring: ei,
     springConfig: el
-  } = (0, Z.a)({
+  } = (0, D.a)({
     isQuestAccepted: K,
     isQuestCompleted: Y,
     isQuestBarVisible: J
@@ -280,10 +280,10 @@ let G = 12633 == require.j ? function() {
       enabled: t,
       variant: n
     } = g.nj.getConfig({
-      location: D.dr.QUESTS_BAR
+      location: Z.dr.QUESTS_BAR
     });
   return null == e ? null : (0, a.jsx)(_.x8, {
-    source: D.dr.QUESTS_BAR,
+    source: Z.dr.QUESTS_BAR,
     questId: e.id,
     listenForSourceError: t,
     retrySourceLoadOnError: n === g.b2.LISTEN_AND_RETRY_LOADING,

@@ -110,8 +110,8 @@ function _() {
     echoCancellation: k,
     autoThreshold: R,
     vadUseKrisp: A,
-    vadKrispActivationThreshold: Z,
-    noiseCancellation: D,
+    vadKrispActivationThreshold: D,
+    noiseCancellation: Z,
     noiseSuppression: L,
     noiseSuppressionSupported: M,
     noiseCancellationSupported: U,
@@ -131,7 +131,7 @@ function _() {
     noiseCancellationSupported: x.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: x.Z.getKrispEnableStats(),
     vadDuringPreProcess: x.Z.getModeOptions().vadDuringPreProcess
-  })), G = D ? "KRISP" : L ? "STANDARD" : "NONE", V = (0, p.N)(), z = r.useCallback(() => {
+  })), G = Z ? "KRISP" : L ? "STANDARD" : "NONE", V = (0, p.N)(), z = r.useCallback(() => {
     var e;
     null == (e = E.current) || e.stop(), E.current = null, S(null)
   }, []);
@@ -226,7 +226,7 @@ function _() {
             })
           }), A && (0, a.jsx)(d.iRW, {
             label: "Krisp VAD Activation Threshold",
-            initialValue: Z,
+            initialValue: D,
             onValueChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadKrispActivationThreshold: e
             }),

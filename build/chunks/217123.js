@@ -26,21 +26,21 @@ let g = (0, Chunk509613.wf)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
     getTitle: () => _.intl.string(_.t["/7xJCF"]),
     buildLayout: () => [T.v, E.M, S._, c.f]
   }),
-  N = (0, Chunk509613.ZH)(Chunk313789.n.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
+  A = (0, Chunk509613.ZH)(Chunk313789.n.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
     initialize: () => {
       l.Z.fetch()
     },
     getTitle: () => _.intl.string(_.t.YpCiMt),
     buildLayout: () => [o.k]
   }),
-  A = (0, Chunk509613.wf)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
+  N = (0, Chunk509613.wf)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
     useTitle: () => _.intl.string(_.t["+o1pDZ"]),
     usePredicate: () => (0, r.gN)("ContentAndSocialPanel"),
-    buildLayout: () => [I, N]
+    buildLayout: () => [I, A]
   }),
   O = (0, Chunk509613.m7)(Chunk313789.n.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["+o1pDZ"]),
     getLegacySearchKey: () => (0, r.Gl)("ContentAndSocialPanel") ? true : d.s6.CONTENT_SOCIAL,
     icon: Chunk657707.ShieldUserIcon,
-    buildLayout: () => (0, r.Gl)("ContentAndSocialPanel") ? [A] : [g]
+    buildLayout: () => (0, r.Gl)("ContentAndSocialPanel") ? [N] : [g]
   })

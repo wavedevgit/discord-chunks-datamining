@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk681510 = require("./681510.js");
 
-function Z(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -55,7 +55,7 @@ function Z(e) {
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -221,7 +221,7 @@ let M = function() {
               value: R.Xh.PREMIUM_MONTH_TIER_0,
               label: "Nitro Basic"
             }],
-            onChange: e => H(t => D(Z({}, t), {
+            onChange: e => H(t => Z(D({}, t), {
               plan_id: e
             })),
             popoutLayerContext: I.O$
@@ -235,7 +235,7 @@ let M = function() {
               value: "false",
               label: "Not Gift"
             }],
-            onChange: e => H(t => D(Z({}, t), {
+            onChange: e => H(t => Z(D({}, t), {
               gift: e
             })),
             popoutLayerContext: I.O$
@@ -248,7 +248,7 @@ let M = function() {
             text: "Open Link",
             disabled: W,
             onClick: () => {
-              window.open(k.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(Z({}, z)))
+              window.open(k.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(D({}, z)))
             }
           })
         }), (0, a.jsx)(m.izJ, {}), (0, a.jsxs)(m.C3N, {

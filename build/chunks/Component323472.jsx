@@ -63,11 +63,11 @@ function d(t, e) {
   } = (0, r.t)(), g = null != (n = d.get(t)) ? n : _.get(t);
   u()(null != g && (g.type === a.Jq.ACCORDION || E(g)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
   let I = E(g) && null != (i = g.collapseAfter) ? i : 0,
-    N = g.layout;
+    A = g.layout;
   return l.useMemo(() => {
     let t = I,
       e = [];
-    for (let n of N)
+    for (let n of A)
       if ("useTitle" in n && null != n.useTitle) {
         if (t > 0) {
           t--;
@@ -150,5 +150,5 @@ function d(t, e) {
         index: 2
       })
     })
-  }, [s, I, N, S])
+  }, [s, I, A, S])
 }

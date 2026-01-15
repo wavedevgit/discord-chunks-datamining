@@ -140,8 +140,8 @@ let _ = e => {
       perkAvailableToUser: k
     })), {
       installationStatus: A,
-      setInstallationStatus: Z,
-      connectionStatus: D,
+      setInstallationStatus: D,
+      connectionStatus: Z,
       setConnectionStatus: L,
       setConnect: M,
       setDisconnect: U,
@@ -167,22 +167,22 @@ let _ = e => {
     }, [H, Y]);
     let Q = r.useCallback(async () => (clearTimeout(e), L(p.Ij.DISCONNECTED), true), [e, L]),
       X = r.useCallback(() => new Promise((e, t) => {
-        Z(p._n.INSTALLING), s(setTimeout(() => {
+        D(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
         }, T))
-      }), [S, T, Z, s]);
+      }), [S, T, D, s]);
     r.useEffect(() => {
-      V && A !== p._n.UNKNOWN && Z(p._n.UNKNOWN)
-    }, [V, Z, A]), r.useEffect(() => {
+      V && A !== p._n.UNKNOWN && D(p._n.UNKNOWN)
+    }, [V, D, A]), r.useEffect(() => {
       U(Q)
     }, [Q, U]), r.useEffect(() => {
       B(X)
     }, [X, B]), r.useEffect(() => {
       A !== p._n.INSTALLING && clearTimeout(n)
     }, [n, A]), r.useEffect(() => {
-      if (A !== p._n.INSTALLED && D !== p.Ij.INITIALIZING) return void L(p.Ij.INITIALIZING)
-    }, [A, D, L]);
+      if (A !== p._n.INSTALLED && Z !== p.Ij.INITIALIZING) return void L(p.Ij.INITIALIZING)
+    }, [A, Z, L]);
     let {
       enabled: J
     } = h.H.useConfig({
@@ -246,7 +246,7 @@ let _ = e => {
               variant: "text-md/semibold",
               children: "Installation Status"
             }), (0, a.jsx)(o.B6, {
-              select: e => Z(e),
+              select: e => D(e),
               isSelected: e => e === A,
               serialize: e => "".concat(e),
               disabled: V,
@@ -286,7 +286,7 @@ let _ = e => {
               children: "Connection Status"
             }), (0, a.jsx)(o.B6, {
               select: e => L(e),
-              isSelected: e => e === D,
+              isSelected: e => e === Z,
               serialize: e => "".concat(e),
               options: [{
                 label: "Initializing",

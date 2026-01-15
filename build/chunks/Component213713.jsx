@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 213713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -93,7 +93,7 @@ function A(e) {
   })
 }
 
-function Z() {
+function D() {
   var e, t;
   let n = (0, u.e7)([T.Z], () => T.Z.getFeed(w.YN.GLOBAL_FEED)),
     i = (0, u.e7)([T.Z], () => T.Z.getDebugImpressionCappingDisabled()),
@@ -113,7 +113,7 @@ function Z() {
       var e;
       return (null == (e = T.Z.getFeedState(w.YN.GLOBAL_FEED)) ? true : e.loading) === true
     }),
-    [A, Z] = r.useState(""),
+    [A, D] = r.useState(""),
     L = (0, u.e7)([C.Z, x.Z], () => {
       var e, t, n;
       return parseInt(A) > 0 ? A : null != (n = null == (e = C.Z.getGameByName(A)) ? true : e.id) ? n : null == (t = x.Z.getApplicationByName(A)) ? true : t.id
@@ -206,15 +206,15 @@ function Z() {
           children: "Game Profile"
         }), (0, a.jsx)(h.oil, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && Z(e),
+          onChange: e => (0 === e.length || e.length >= 18) && D(e),
           onKeyDown: e => {
-            "Enter" === e.key && (A === e.currentTarget.value ? null == M || M(e) : Z(e.currentTarget.value))
+            "Enter" === e.key && (A === e.currentTarget.value ? null == M || M(e) : D(e.currentTarget.value))
           },
           error: A.length > 0 && null == M ? "No game profile for ".concat(null != L ? L : A + " - try by id", ".") : true,
           helperText: null != M ? "Game profile found" : true
         }), (0, a.jsx)("ul", {
           children: B.map(e => (0, a.jsx)("li", {
-            children: (0, a.jsx)(D, {
+            children: (0, a.jsx)(Z, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -246,7 +246,7 @@ function Z() {
     })
   })
 }
-let D = e => {
+let Z = e => {
   let {
     application: t
   } = e, n = (0, y.Z)({

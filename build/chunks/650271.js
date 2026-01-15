@@ -19,20 +19,20 @@ var Chunk657707 = require("./657707.js"),
   Chunk490555 = require("./490555.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let A = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
-    useTitle: () => N.intl.string(N.t["iHH+ky"]),
+let N = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
+    useTitle: () => A.intl.string(A.t["iHH+ky"]),
     initialize: () => {
       (0, l.w)()
     },
     buildLayout: () => [_.D, c.l, g.G, E.K, d.t, S.R]
   }),
   O = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
-    useTitle: () => N.intl.string(N.t["iHH+ky"]),
+    useTitle: () => A.intl.string(A.t["iHH+ky"]),
     StronglyDiscouragedCustomComponent: Chunk501348.ZP,
     buildLayout: () => []
   }),
   C = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
-    useTitle: () => N.intl.string(N.t["iHH+ky"]),
+    useTitle: () => A.intl.string(A.t["iHH+ky"]),
     getLegacySearchKey: () => (0, a.Gl)("AppearanceSidebarItem") ? true : I.s6.APPEARANCE,
     icon: Chunk657707.PaintPaletteIcon,
     trailing: {
@@ -40,5 +40,5 @@ let A = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
       getDismissibleContentTypes: Chunk620163.$Z,
       stronglyDiscouragedBadgeComponent: Chunk620163.c$
     },
-    buildLayout: () => (0, a.Gl)("AppearanceSidebarItem") ? [A] : [O]
+    buildLayout: () => (0, a.Gl)("AppearanceSidebarItem") ? [N] : [O]
   })

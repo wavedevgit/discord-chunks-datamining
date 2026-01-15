@@ -44,7 +44,7 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -57,7 +57,7 @@ function Z(e) {
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -169,7 +169,7 @@ let F = "1193992107035983872",
 function V() {
   var e, t, i, d, u, A;
   let [F, V] = r.useState(G), z = r.useCallback(e => {
-    V(D(Z({}, e), {
+    V(Z(D({}, e), {
       preview: true
     }))
   }, []), [H, W] = r.useState(w.a.UNENROLLED), [K, q] = r.useState(false), [Y, Q] = r.useState(false), [X, J] = r.useState(null), $ = (A = F.config, (0, s.EQ)(A).with({
@@ -179,13 +179,13 @@ function V() {
   function ee(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, a;
-      z(D(Z({}, F), {
+      z(Z(D({}, F), {
         config: (n = F.config, a = {
           [e]: t
         }, (0, s.EQ)(n).with({
           configVersion: 2
-        }, e => D(Z({}, e), {
-          assets: Z({}, e.assets, a)
+        }, e => Z(D({}, e), {
+          assets: D({}, e.assets, a)
         })).exhaustive())
       }))
     }
@@ -195,7 +195,7 @@ function V() {
     let n = F.config.taskConfigV2.tasks,
       a = n[o.X.WATCH_VIDEO];
     if (null == a) return;
-    let r = Z({}, a.assets);
+    let r = D({}, a.assets);
     switch (e) {
       case "videoPlayerVideo":
         r.video = {
@@ -208,18 +208,18 @@ function V() {
         };
         break;
       case "videoPlayerThumbnail":
-        r.video = D(Z({}, r.video), {
+        r.video = Z(D({}, r.video), {
           thumbnail: t
         });
         break;
       default:
         return
     }
-    z(D(Z({}, F), {
-      config: D(Z({}, F.config), {
-        taskConfigV2: D(Z({}, F.config.taskConfigV2), {
-          tasks: D(Z({}, n), {
-            [o.X.WATCH_VIDEO]: D(Z({}, a), {
+    z(Z(D({}, F), {
+      config: Z(D({}, F.config), {
+        taskConfigV2: Z(D({}, F.config.taskConfigV2), {
+          tasks: Z(D({}, n), {
+            [o.X.WATCH_VIDEO]: Z(D({}, a), {
               assets: r
             })
           })
@@ -231,13 +231,13 @@ function V() {
   function en(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, a;
-      z(D(Z({}, F), {
+      z(Z(D({}, F), {
         config: (n = F.config, a = {
           [e]: t
         }, (0, s.EQ)(n).with({
           configVersion: 2
-        }, e => D(Z({}, e), {
-          messages: Z({}, e.messages, a)
+        }, e => Z(D({}, e), {
+          messages: D({}, e.messages, a)
         })).exhaustive())
       }))
     }
@@ -246,15 +246,15 @@ function V() {
   function ea(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var a, r;
-      z(D(Z({}, F), {
+      z(Z(D({}, F), {
         config: (a = F.config, r = {
           [e]: t
         }, (0, s.EQ)(a).with({
           configVersion: 2
-        }, e => D(Z({}, e), {
-          rewardsConfig: D(Z({}, e.rewardsConfig), {
-            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? D(Z({}, e), {
-              messages: Z({}, e.messages, r)
+        }, e => Z(D({}, e), {
+          rewardsConfig: Z(D({}, e.rewardsConfig), {
+            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? Z(D({}, e), {
+              messages: D({}, e.messages, r)
             }) : e)
           })
         })).exhaustive())
@@ -263,9 +263,9 @@ function V() {
   }
 
   function er(e, t) {
-    z(D(Z({}, F), {
-      config: D(Z({}, F.config), {
-        colors: D(Z({}, F.config.colors), {
+    z(Z(D({}, F), {
+      config: Z(D({}, F.config), {
+        colors: Z(D({}, F.config.colors), {
           [e]: t
         })
       })
@@ -315,8 +315,8 @@ function V() {
         taskDuration: el,
         taskConfigV2: F.config.taskConfigV2,
         onSelect: function(e) {
-          z(D(Z({}, F), {
-            config: D(Z({}, F.config), {
+          z(Z(D({}, F), {
+            config: Z(D({}, F.config), {
               taskConfigV2: e
             })
           }))
@@ -350,14 +350,14 @@ function V() {
           let n = F.config.taskConfigV2.tasks,
             a = n[o.X.WATCH_VIDEO];
           if (null == a) return;
-          let r = D(Z({}, a.messages), {
+          let r = Z(D({}, a.messages), {
             [e]: t
           });
-          z(D(Z({}, F), {
-            config: D(Z({}, F.config), {
-              taskConfigV2: D(Z({}, F.config.taskConfigV2), {
-                tasks: D(Z({}, n), {
-                  [o.X.WATCH_VIDEO]: D(Z({}, a), {
+          z(Z(D({}, F), {
+            config: Z(D({}, F.config), {
+              taskConfigV2: Z(D({}, F.config.taskConfigV2), {
+                tasks: Z(D({}, n), {
+                  [o.X.WATCH_VIDEO]: Z(D({}, a), {
                     messages: r
                   })
                 })
@@ -453,12 +453,12 @@ function V() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var a;
-              z(D(Z({}, F), {
+              z(Z(D({}, F), {
                 config: (a = F.config, (0, s.EQ)(a).with({
                   configVersion: 2
-                }, e => D(Z({}, e), {
-                  rewardsConfig: D(Z({}, e.rewardsConfig), {
-                    rewards: e.rewardsConfig.rewards.map((e, a) => a === n ? D(Z({}, e), {
+                }, e => Z(D({}, e), {
+                  rewardsConfig: Z(D({}, e.rewardsConfig), {
+                    rewards: e.rewardsConfig.rewards.map((e, a) => a === n ? Z(D({}, e), {
                       asset: t,
                       skuId: ""
                     }) : e)
@@ -511,19 +511,19 @@ function V() {
         onChange: function(e) {
           switch (W(e), e) {
             case w.a.UNENROLLED:
-              z(D(Z({}, F), {
+              z(Z(D({}, F), {
                 userStatus: null
               }));
               break;
             case w.a.ENROLLED:
-              z(D(Z({}, F), {
+              z(Z(D({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case w.a.COMPLETED_25:
-              z(D(Z({}, F), {
+              z(Z(D({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * el
@@ -531,7 +531,7 @@ function V() {
               }));
               break;
             case w.a.COMPLETED_50:
-              z(D(Z({}, F), {
+              z(Z(D({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * el
@@ -539,7 +539,7 @@ function V() {
               }));
               break;
             case w.a.COMPLETED_75:
-              z(D(Z({}, F), {
+              z(Z(D({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * el
@@ -547,7 +547,7 @@ function V() {
               }));
               break;
             case w.a.COMPLETED_100:
-              z(D(Z({}, F), {
+              z(Z(D({}, F), {
                 userStatus: B({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -556,7 +556,7 @@ function V() {
               }));
               break;
             case w.a.CLAIMED:
-              z(D(Z({}, F), {
+              z(Z(D({}, F), {
                 userStatus: B({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -686,7 +686,7 @@ function V() {
               } = await Promise.all([n.e("13193"), n.e("75909"), n.e("87766")]).then(n.bind(n, 215113));
               return t => {
                 var n;
-                return (0, a.jsx)(e, D(Z({}, t), {
+                return (0, a.jsx)(e, Z(D({}, t), {
                   openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
                   questId: null != (n = F.id) ? n : "fake-quest-id",

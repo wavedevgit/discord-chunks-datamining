@@ -83,9 +83,9 @@ function N(e) {
     onReceiveErrorHints: k,
     contentPosition: R,
     rowIndex: A,
-    sourceQuestContent: Z
-  } = e, D = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, j.g2)({
-    useReducedMotion: D
+    sourceQuestContent: D
+  } = e, Z = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, j.g2)({
+    useReducedMotion: Z
   }), M = (0, m.O5)(), U = (0, x._s)({
     quest: w
   }), B = (0, x.z)(w), F = (0, x.B6)(w.config.expiresAt, {
@@ -113,7 +113,7 @@ function N(e) {
     inGiftInventory: true,
     isVideoQuest: X,
     inGameQuest: $,
-    sourceQuestContent: Z
+    sourceQuestContent: D
   }), {
     startingConsoleQuest: ed,
     startConsoleQuest: eu
@@ -126,7 +126,7 @@ function N(e) {
         questContentCTA: m.jZ.DEFIBRILLATOR,
         questContentPosition: R,
         questContentRowIndex: A,
-        sourceQuestContent: Z
+        sourceQuestContent: D
       })
     },
     afterRequest: e => {
@@ -158,7 +158,7 @@ function N(e) {
         (0, y.openVideoQuestModal)({
           quest: w,
           questContent: I,
-          sourceQuestContent: Z,
+          sourceQuestContent: D,
           sourceQuestContentCTA: m.jZ.WATCH_VIDEO,
           skipEnrollmentCheck: true
         })
@@ -280,7 +280,7 @@ function N(e) {
       text: _.intl.string(_.t.V293qn)
     }), (0, a.jsx)(s.zxk, {
       variant: "primary",
-      onClick: () => (0, y.openQuestMinorEnrollmentBlockModal)(w, I, Z),
+      onClick: () => (0, y.openQuestMinorEnrollmentBlockModal)(w, I, D),
       text: _.intl.string(_.t.vY9GgG)
     })]
   }) : (0, a.jsx)("div", {

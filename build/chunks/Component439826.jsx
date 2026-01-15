@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 439826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./784620.js"), require("./973216.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -113,13 +113,13 @@ function A(e) {
   })
 }
 
-function Z(e) {
+function D(e) {
   var t, n, i, s, m;
   let {
     quest: C,
     isHovering: P,
-    errorHints: Z,
-    warningHints: D,
+    errorHints: D,
+    warningHints: Z,
     isVisibleInViewport: L,
     onCtxMenuClose: M,
     onCtxMenuOpen: U,
@@ -285,8 +285,8 @@ function Z(e) {
         })]
       }), (0, a.jsx)(A, {
         quest: C,
-        errorHints: Z,
-        warningHints: D,
+        errorHints: D,
+        warningHints: Z,
         isDarkTheme: z,
         sourceQuestContent: F
       })]

@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 51435, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  J: () => N
+  J: () => A
 });
 var Chunk657707 = require("./657707.js"),
   Chunk704215 = require("./704215.js"),
@@ -33,7 +33,7 @@ let d = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, 
     hideInStreamerMode: true,
     buildLayout: () => [d, _]
   }),
-  N = (0, Chunk509613.m7)(Chunk313789.n.CONNECTIONS_SIDEBAR_ITEM, {
+  A = (0, Chunk509613.m7)(Chunk313789.n.CONNECTIONS_SIDEBAR_ITEM, {
     useTitle: () => E.intl.string(E.t["3fe7U5"]),
     getLegacySearchKey: () => (0, a.Gl)("ConnectionsPanel") ? true : c.s6.CONNECTIONS,
     icon: Chunk657707.LinkIcon,

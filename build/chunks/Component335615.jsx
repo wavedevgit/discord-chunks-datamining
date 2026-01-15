@@ -250,37 +250,49 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
   es = Chunk473749.memo(function(e) {
     let {
       id: t,
-      title: n,
-      count: i,
-      guildId: a,
-      className: o
-    } = e, s = (0, w.p9)({
+      title: a,
+      count: o,
+      guildId: s,
+      className: l
+    } = e, c = (0, w.p9)({
       roleId: t,
-      guildId: a,
+      guildId: s,
       size: 16
-    }), l = (0, f.e7)([j.default], () => null == i ? null : new Intl.NumberFormat(j.default.locale).format(i), [i]);
+    }), u = (0, f.e7)([j.default], () => null == o ? null : new Intl.NumberFormat(j.default.locale).format(o), [o]), d = i.useCallback(e => {
+      (null == c ? true : c.src) != null && (0, _.jW)(e, async () => {
+        let {
+          default: e
+        } = await n.e("99351").then(n.bind(n, 549866));
+        return t => (0, r.jsx)(e, J(Q({}, t), {
+          imageUrl: c.src
+        }))
+      })
+    }, [null == c ? true : c.src]);
     return t === W.Skl.UNKNOWN ? (0, r.jsx)("div", {
-      className: o,
+      className: l,
       children: (0, r.jsx)("div", {
         className: z.memberGroupsPlaceholder
       })
     }) : (0, r.jsxs)(A.Z, {
-      className: o,
+      className: l,
       children: [(0, r.jsx)(p.nn4, {
-        children: null == i ? n : K.intl.format(K.t.Uaqbke, {
-          title: n,
-          count: i
+        children: null == o ? a : K.intl.format(K.t.Uaqbke, {
+          title: a,
+          count: o
         })
       }), (0, r.jsxs)("div", {
         className: z.membersGroupHeader,
         "aria-hidden": true,
-        children: [null != s ? (0, r.jsx)(D.Z, Q({
-          className: z.roleIcon
-        }, s)) : null, (0, r.jsx)("span", {
+        children: [null != c ? (0, r.jsx)("span", {
+          onContextMenu: d,
+          children: (0, r.jsx)(D.Z, Q({
+            className: z.roleIcon
+          }, c))
+        }) : null, (0, r.jsx)("span", {
           className: z.membersGroupName,
-          children: n
-        }), null == l ? null : (0, r.jsxs)("span", {
-          children: ["\xa0— ", l]
+          children: a
+        }), null == u ? null : (0, r.jsxs)("span", {
+          children: ["\xa0— ", u]
         })]
       })]
     })

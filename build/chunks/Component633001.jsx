@@ -1,7 +1,7 @@
 /** Chunk was on 22979 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eD
+  Z: () => eZ
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -146,7 +146,7 @@ function er(e) {
 let ei = Chunk473749.memo(function(e) {
     let {
       trackedGame: t
-    } = e, n = (0, d.e7)([y.ZP], () => y.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([Z.Z], () => Z.Z.getGameForPID(t.pid)), i = (0, d.e7)([y.ZP], () => null == n ? null : y.ZP.getGameOverlayStatus(n));
+    } = e, n = (0, d.e7)([y.ZP], () => y.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([D.Z], () => D.Z.getGameForPID(t.pid)), i = (0, d.e7)([y.ZP], () => null == n ? null : y.ZP.getGameOverlayStatus(n));
     return (0, a.jsxs)("div", {
       className: J.panelGroup,
       children: [(0, a.jsx)(h.Text, {
@@ -987,12 +987,12 @@ function eN() {
   }), [C, p, u, o, _]), [O, N] = r.useState(T), [w, I] = r.useState(null), R = r.useMemo(() => C.find(e => e.key === w), [C, w]), A = r.useCallback(e => {
     N(e)
   }, []), {
-    renderSelectedTab: Z
+    renderSelectedTab: D
   } = (0, q.ZP)({
     tabs: eT
   }, []);
   (0, k.BO)(S, T, A, eO, [C]);
-  let D = r.useCallback(e => {
+  let Z = r.useCallback(e => {
       s(e), b.Z.setModuleLogging(e)
     }, []),
     [L, U] = r.useState(false),
@@ -1034,7 +1034,7 @@ function eN() {
           children: (0, a.jsx)(h.Checkbox, {
             label: "Poll Native",
             checked: i,
-            onChange: e => D(e)
+            onChange: e => Z(e)
           })
         }), (0, a.jsx)("div", {
           title: "Only show breadcrumbs for active games",
@@ -1104,7 +1104,7 @@ function eN() {
       className: l()(J.panelGroup, J.subPanel),
       minHeight: 100,
       initialHeight: null != t ? t / 3 : 300,
-      children: Z({
+      children: D({
         breadcrumb: R,
         onClose: () => I(null)
       })
@@ -1176,7 +1176,7 @@ let ek = e => {
   eR = e => null == e ? "Disabled" : e ? "True" : "False",
   eA = Chunk473749.memo(function() {
     let e = (0, E.xj)(),
-      t = (0, d.e7)([D.ZP], () => D.ZP.getOverlayKeybind());
+      t = (0, d.e7)([Z.ZP], () => Z.ZP.getOverlayKeybind());
     return (0, a.jsxs)("div", {
       className: J.panelGroup,
       children: [(0, a.jsx)(h.Heading, {
@@ -1249,7 +1249,7 @@ let ek = e => {
     })
   });
 
-function eZ() {
+function eD() {
   return (0, a.jsx)(h.w0Z, {
     children: (0, a.jsx)("div", {
       className: l()($.panel, J.subPanel),
@@ -1258,7 +1258,7 @@ function eZ() {
   })
 }
 
-function eD() {
+function eZ() {
   let [e, t] = r.useState("state");
   return r.useEffect(() => (f.Z.dispatch({
     type: "OVERLAY_SET_DETAILED_LOGGING",
@@ -1297,6 +1297,6 @@ function eD() {
           children: "Experiments"
         })
       })]
-    }), "state" === e && (0, a.jsx)(eI, {}), "logging" === e && (0, a.jsx)(eN, {}), "experiments" === e && (0, a.jsx)(eZ, {})]
+    }), "state" === e && (0, a.jsx)(eI, {}), "logging" === e && (0, a.jsx)(eN, {}), "experiments" === e && (0, a.jsx)(eD, {})]
   })
 }

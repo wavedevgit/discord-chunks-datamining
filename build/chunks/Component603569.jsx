@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 603569, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  a: () => A
+  a: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
@@ -23,12 +23,12 @@ let I = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk106939.M,
     buildLayout: () => []
   }),
-  N = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
+  A = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     usePredicate: () => (0, c.gN)("FamilyCenterPanel"),
     useTitle: () => _.intl.string(g.default.RZqaJn),
     buildLayout: () => [E.W]
   }),
-  A = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
+  N = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(g.default.RZqaJn),
     getLegacySearchKey: () => (0, c.Gl)("FamilyCenterPanel") ? true : d.s6.PRIVACY_FAMILY_CENTER,
     icon: Chunk657707.GroupIcon,
@@ -44,5 +44,5 @@ let I = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
         }) : null
       }
     },
-    buildLayout: () => (0, c.Gl)("FamilyCenterPanel") ? [N] : [I]
+    buildLayout: () => (0, c.Gl)("FamilyCenterPanel") ? [A] : [I]
   })

@@ -40,8 +40,8 @@ let O = Chunk473749.memo(function(e) {
       skipLimitedTimeCheck: k,
       onClickCard: R,
       onClickPrimaryCTA: A,
-      onClickSecondaryCTA: Z,
-      onMouseEnter: D,
+      onClickSecondaryCTA: D,
+      onMouseEnter: Z,
       onMouseLeave: L,
       onFocus: M,
       onBlur: U,
@@ -74,7 +74,7 @@ let O = Chunk473749.memo(function(e) {
         }),
         onFocus: () => null == M ? true : M(t.skuId),
         onBlur: () => null == U ? true : U(t.skuId),
-        onMouseEnter: () => null == D ? true : D(t.skuId),
+        onMouseEnter: () => null == Z ? true : Z(t.skuId),
         onMouseLeave: () => null == L ? true : L(t.skuId),
         children: (0, a.jsxs)("div", {
           className: T.productCardContentContainer,
@@ -141,7 +141,7 @@ let O = Chunk473749.memo(function(e) {
                   }), !w && (0, a.jsx)(v.Z, {
                     skuId: t.skuId,
                     cardRef: ee,
-                    onClick: Z,
+                    onClick: D,
                     icon: F,
                     prioritizedCurrency: H,
                     onClickAnalytics: W

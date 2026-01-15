@@ -92,7 +92,7 @@ let M = () => {
       installationStatus: t,
       isWeb: e,
       setInstallationStatus: n
-    } = (0, N.xf)(), l = (0, d.m)();
+    } = (0, A.xf)(), l = (0, d.m)();
     if (e) return (0, i.jsx)(I.U, {});
     if (!l) return (0, i.jsxs)("div", {
       className: V.subscribeBtnContainer,
@@ -118,7 +118,7 @@ let M = () => {
       case _._n.NOT_INSTALLED:
         return (0, i.jsx)(p.R, {});
       case _._n.INSTALLED:
-        return (0, i.jsx)(A.n, {});
+        return (0, i.jsx)(N.n, {});
       case _._n.ZERO_TRUST:
         break;
       case _._n.EXISTING_INSTALLATION:

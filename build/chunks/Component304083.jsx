@@ -54,7 +54,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
     autoPlay: d = false
   } = e, {
     isExpanded: u
-  } = r.useContext(Z.A), m = (0, c.e7)([h.Z], () => h.Z.useReducedMotion), p = r.useRef(null);
+  } = r.useContext(D.A), m = (0, c.e7)([h.Z], () => h.Z.useReducedMotion), p = r.useRef(null);
   return r.useEffect(() => {
     null != p.current && (u && (!m || i) ? (p.current.currentTime = 0, p.current.play()) : p.current.pause())
   }, [p, u, i, m]), (0, a.jsx)(f.Z, {
@@ -81,7 +81,7 @@ function H(e) {
     onClick: n
   } = e, {
     quest: i
-  } = r.useContext(Z.A), s = (0, c.e7)([h.Z], () => h.Z.useReducedMotion), [o, u] = r.useState(false), p = (0, _.fh)(i, _.eC.QUEST_BAR_HERO_VIDEO, true, false), f = (0, _.fh)(i, _.eC.VIDEO_PLAYER_THUMBNAIL, true, false), x = (0, j.km)(e => e.getVideoProgressState)(i.id), b = (null == (t = i.userStatus) ? true : t.completedAt) != null && x === j.iw.COMPLETED, g = !b && (!s || o);
+  } = r.useContext(D.A), s = (0, c.e7)([h.Z], () => h.Z.useReducedMotion), [o, u] = r.useState(false), p = (0, _.fh)(i, _.eC.QUEST_BAR_HERO_VIDEO, true, false), f = (0, _.fh)(i, _.eC.VIDEO_PLAYER_THUMBNAIL, true, false), x = (0, j.km)(e => e.getVideoProgressState)(i.id), b = (null == (t = i.userStatus) ? true : t.completedAt) != null && x === j.iw.COMPLETED, g = !b && (!s || o);
   return (0, a.jsxs)(m.P3F, {
     className: V.videoQuestPreviewCont,
     onClick: n,
@@ -139,7 +139,7 @@ function K(e) {
     onGameSheetOpen: d,
     onGameSheetClose: h,
     taskDetails: f
-  } = r.useContext(Z.A), {
+  } = r.useContext(D.A), {
     expansionSpring: x
   } = r.useContext(w.xo), b = r.useRef(null), j = (0, c.e7)([g.Z], () => g.Z.isEnrolling(o.id), [o]), C = r.useMemo(() => (0, _.fh)(o, _.eC.QUEST_BAR_HERO), [o]), S = (0, y.CR)({
     quest: o
@@ -238,7 +238,7 @@ function q(e) {
   } = e, {
     quest: c,
     taskDetails: d
-  } = r.useContext(Z.A), {
+  } = r.useContext(D.A), {
     expansionSpring: u
   } = r.useContext(w.xo), m = (null == (t = c.userStatus) ? true : t.completedAt) != null, p = d.percentComplete > 0, h = (0, C.z)(c), [f, x, g] = (0, C.me)(c, d), j = r.useRef(null), y = r.useRef(null), _ = (0, C._s)({
     quest: c
@@ -282,7 +282,7 @@ function q(e) {
         children: !m && !(0, S.Gd)(c) && (0, o.EQ)(f).with(v.LI.SELECT, () => (0, a.jsx)(U.Z, {
           onConsole: () => g(B.cd.CONSOLE),
           onDesktop: () => g(B.cd.DESKTOP)
-        })).with(v.LI.DESKTOP, () => (0, a.jsx)(D.Z, {
+        })).with(v.LI.DESKTOP, () => (0, a.jsx)(Z.Z, {
           quest: c
         })).with(v.LI.CONSOLE, () => (0, a.jsx)(R.Z, {
           quest: c,
@@ -336,7 +336,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     isExpanded: u,
     isExpansionAnimationComplete: m,
     quest: p
-  } = r.useContext(Z.A), {
+  } = r.useContext(D.A), {
     expansionSpring: h
   } = r.useContext(w.xo), {
     launchInGameActivity: f

@@ -21,25 +21,25 @@ var Chunk657707 = require("./657707.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let O = (0, Chunk509613.ZH)(Chunk313789.n.ACCOUNT_STANDING_TAB, {
-    getTitle: () => A.intl.string(A.t["Vov/9o"]),
+    getTitle: () => N.intl.string(N.t["Vov/9o"]),
     onItemSelect: () => {
-      o.default.track(N.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+      o.default.track(A.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
         target_tab_name: c.D.STANDING
       })
     },
     buildLayout: () => [g.v]
   }),
   C = (0, Chunk509613.ZH)(Chunk313789.n.ACCOUNT_SECURITY_TAB, {
-    getTitle: () => A.intl.string(A.t.Am9YHi),
+    getTitle: () => N.intl.string(N.t.Am9YHi),
     onItemSelect: () => {
-      o.default.track(N.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+      o.default.track(A.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
         target_tab_name: c.D.SECURITY
       })
     },
     buildLayout: () => [d.z, E.v, _.v]
   }),
   f = (0, Chunk509613.wf)(Chunk313789.n.ACCOUNT_PANEL, {
-    useTitle: () => A.intl.string(A.t["JAIM/m"]),
+    useTitle: () => N.intl.string(N.t["JAIM/m"]),
     initialize: function() {
       let t = a.default.getCurrentUser();
       return null != t && (0, r.Z)(t.id, t.getAvatarURL(true, 80)), () => {
@@ -50,12 +50,12 @@ let O = (0, Chunk509613.ZH)(Chunk313789.n.ACCOUNT_STANDING_TAB, {
     buildLayout: () => [C, O]
   }),
   L = (0, Chunk509613.wf)(Chunk313789.n.ACCOUNT_PANEL, {
-    useTitle: () => A.intl.string(A.t["JAIM/m"]),
+    useTitle: () => N.intl.string(N.t["JAIM/m"]),
     StronglyDiscouragedCustomComponent: Chunk393681.Z,
     buildLayout: () => []
   }),
   R = (0, Chunk509613.m7)(Chunk313789.n.ACCOUNT_SIDEBAR_ITEM, {
-    useTitle: () => A.intl.string(A.t["JAIM/m"]),
+    useTitle: () => N.intl.string(N.t["JAIM/m"]),
     getLegacySearchKey: () => (0, S.Gl)("AccountPanel") ? true : I.s6.ACCOUNT,
     icon: Chunk657707.UserIcon,
     buildLayout: () => (0, S.Gl)("AccountPanel") ? [f] : [L]

@@ -127,13 +127,13 @@ function el(e) {
     eI = r.useRef(null),
     ek = r.useRef((0, z.Z)(e => e.shouldRenderTenureLevelUp)),
     eR = r.useMemo(() => (0, x.Z)(), []),
-    [eA, eZ] = r.useState(true);
+    [eA, eD] = r.useState(true);
   r.useEffect(() => {
     setTimeout(() => {
-      eZ(false)
+      eD(false)
     }, 500)
   }, []);
-  let eD = e => {
+  let eZ = e => {
       null == n || n(), (0, E.openUserProfileModal)(ei({
         customStatusPrompt: eR,
         sourceAnalyticsLocations: ep
@@ -175,7 +175,7 @@ function el(e) {
         "data-layer": "base",
         children: [(0, a.jsx)(Q.Z, {
           displayProfile: em,
-          handleOpenUserProfileModal: eD,
+          handleOpenUserProfileModal: eZ,
           height: ex
         }), (0, a.jsxs)(R.Z, {
           className: ea.themeContainer,
@@ -192,8 +192,8 @@ function el(e) {
               user: t,
               displayProfile: em,
               themeType: et.l.POPOUT,
-              onOpenProfile: eu ? true : eD
-            }), (0, a.jsx)(D.Z, {
+              onOpenProfile: eu ? true : eZ
+            }), (0, a.jsx)(Z.Z, {
               ref: ew,
               user: t,
               themeType: et.l.POPOUT,
@@ -211,7 +211,7 @@ function el(e) {
               user: t,
               className: ea.username,
               nickname: G.ZP.getName(ec, null, t),
-              onOpenProfile: eu ? true : eD,
+              onOpenProfile: eu ? true : eZ,
               pronouns: null == em ? true : em.pronouns,
               tags: (0, a.jsx)(O.Z, {
                 displayProfile: em,
@@ -220,7 +220,7 @@ function el(e) {
                 shouldOpenBadgeTooltip: null != es ? e => e === es : true,
                 shouldGlowTenureBadge: ek.current
               }),
-              nicknameIcons: (0, a.jsx)(Z.Z, {
+              nicknameIcons: (0, a.jsx)(D.Z, {
                 user: t,
                 isVisible: eb
               })
@@ -232,14 +232,14 @@ function el(e) {
             }), eL && eM && (0, a.jsx)(k.Z, {
               user: t,
               widgets: null == em ? true : em.widgets,
-              onOpenUserProfileModal: eD
+              onOpenUserProfileModal: eZ
             }), (0, a.jsx)(P.Z, {
               isPremiumUser: eN,
               onInteraction: n
             }), (0, a.jsx)(I.Z, {
               user: t,
               currentUser: t,
-              onOpenUserProfileModal: eD,
+              onOpenUserProfileModal: eZ,
               onClose: n
             }), (0, a.jsxs)("div", {
               className: ea.menus,

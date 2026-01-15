@@ -82,7 +82,7 @@ let R = e => {
       showGradient: true
     })
   },
-  Z = e => {
+  D = e => {
     let {
       handlePreviewButtonClick: t,
       text: n
@@ -96,7 +96,7 @@ let R = e => {
       fullWidth: true
     })
   },
-  D = e => {
+  Z = e => {
     let {
       handleUseNow: t,
       isApplying: n,
@@ -312,11 +312,11 @@ let R = e => {
       isClaimPremiumProductDisabled: q,
       text: c
     });
-    if (!w || P) return (0, a.jsx)(Z, {
+    if (!w || P) return (0, a.jsx)(D, {
       handlePreviewButtonClick: W,
       text: c
     });
-    if (g) return (0, a.jsx)(D, {
+    if (g) return (0, a.jsx)(Z, {
       handleUseNow: Y,
       isApplying: Q,
       text: c
@@ -346,7 +346,7 @@ let R = e => {
         handlePreviewButtonClick: W,
         text: c
       });
-      else return (0, a.jsx)(Z, {
+      else return (0, a.jsx)(D, {
         handlePreviewButtonClick: W,
         text: c
       });

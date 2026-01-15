@@ -18,12 +18,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk118951 = require("./118951.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let N = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
+let A = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
     useTitle: () => I.intl.string(I.t.G0neg7),
     StronglyDiscouragedCustomComponent: Chunk154022.ZP,
     buildLayout: () => []
   }),
-  A = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
+  N = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
     useTitle: () => I.intl.string(I.t.G0neg7),
     buildLayout: () => [a.H, _.j, c.m, d.y, S.x, E.k, o.F, T.D]
   }),
@@ -31,5 +31,5 @@ let N = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
     useTitle: () => I.intl.string(I.t.G0neg7),
     getLegacySearchKey: () => (0, u.Gl)("AccessibilityPanel") ? true : g.s6.ACCESSIBILITY,
     icon: Chunk657707.AccessibilityIcon,
-    buildLayout: () => (0, u.Gl)("AccessibilityPanel") ? [A] : [N]
+    buildLayout: () => (0, u.Gl)("AccessibilityPanel") ? [N] : [A]
   })

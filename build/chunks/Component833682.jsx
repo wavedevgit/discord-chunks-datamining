@@ -20,10 +20,10 @@ var Chunk54381 = require("./54381.js"),
 let Chunk775322 = require("./775322.js"),
   Chunk353385 = require("./353385.js");
 
-function A() {
+function N() {
   let t = (0, u.e7)([c.Z], () => (0, s.apv)(c.Z.theme));
   return (0, i.jsx)("img", {
-    src: t ? I : N,
+    src: t ? I : A,
     width: 48,
     height: 32,
     alt: ""
@@ -51,7 +51,7 @@ let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
       })),
       E = n ? d.Q4.STANDARD : d.Q4.NONE,
       I = e ? d.Q4.KRISP : E,
-      N = l.useMemo(() => {
+      A = l.useMemo(() => {
         let t = [];
         return c && t.push({
           label: g.intl.string(g.t.rdoNzt),
@@ -76,8 +76,8 @@ let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
         layout: "horizontal",
         value: I,
         onChange: t,
-        options: N
-      }), c && (0, i.jsx)(A, {})]
+        options: A
+      }), c && (0, i.jsx)(N, {})]
     })
   }
 })

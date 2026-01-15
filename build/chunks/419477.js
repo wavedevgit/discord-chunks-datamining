@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 419477, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  z: () => A
+  z: () => N
 });
 var Chunk657707 = require("./657707.js"),
   Chunk725727 = require("./725727.js"),
@@ -25,12 +25,12 @@ let g = (0, Chunk509613.k4)(Chunk313789.n.GIFT_INVENTORY_CATEGORY, {
     StronglyDiscouragedCustomComponent: Chunk387747.ZP,
     buildLayout: () => []
   }),
-  N = (0, Chunk509613.wf)(Chunk313789.n.GIFT_PANEL, {
+  A = (0, Chunk509613.wf)(Chunk313789.n.GIFT_PANEL, {
     usePredicate: () => (0, a.gN)("GiftPanel"),
     useTitle: () => _.intl.string(_.t["jcSP+g"]),
     buildLayout: () => [g]
   }),
-  A = (0, Chunk509613.m7)(Chunk313789.n.GIFT_SIDEBAR_ITEM, {
+  N = (0, Chunk509613.m7)(Chunk313789.n.GIFT_SIDEBAR_ITEM, {
     useTitle: () => _.intl.string(_.t["jcSP+g"]),
     getLegacySearchKey: () => (0, a.Gl)("GiftPanel") ? true : d.s6.GIFT_INVENTORY,
     icon: Chunk657707.GiftIcon,
@@ -38,5 +38,5 @@ let g = (0, Chunk509613.k4)(Chunk313789.n.GIFT_INVENTORY_CATEGORY, {
       type: Chunk970013.W.BADGE_COUNT,
       useCount: () => (0, l.YO)().length
     },
-    buildLayout: () => (0, a.Gl)("GiftPanel") ? [N] : [I]
+    buildLayout: () => (0, a.Gl)("GiftPanel") ? [A] : [I]
   })
