@@ -370,22 +370,13 @@ function k(e) {
   let D = "Active";
   return R && (D = "Expired"), k && (D = "Acked"), (0, a.jsxs)("div", {
     className: l()(_.card, _.discount),
-    children: [(0, a.jsxs)("div", {
+    children: [(0, a.jsx)("div", {
       className: l()(_.row, _.nameRow),
-      children: [(0, a.jsx)(d.Heading, {
+      children: (0, a.jsx)(d.Heading, {
         variant: "heading-lg/semibold",
         color: "text-default",
         children: I
-      }), (0, a.jsx)(d.P3F, {
-        onClick: async () => {
-          j(true), await O(E, "discount"), c(), j(false)
-        },
-        children: (0, a.jsx)(d.XHJ, {
-          size: "md",
-          color: "currentColor",
-          className: l()(_.icon, _.trashIcon)
-        })
-      })]
+      })
     }), (0, a.jsxs)(d.P3F, {
       className: l()(_.row, _.idRow),
       onClick: () => {
@@ -462,6 +453,16 @@ function k(e) {
           children: "Applied"
         })
       })]
+    }), (0, a.jsx)(d.P3F, {
+      className: _.deleteRow,
+      onClick: async () => {
+        j(true), await O(E, "discount"), c(), j(false)
+      },
+      children: (0, a.jsx)(d.XHJ, {
+        size: "md",
+        color: "currentColor",
+        className: l()(_.icon, _.deleteIcon)
+      })
     }), (0, a.jsx)("div", {
       className: l()(_.loadingContainer, {
         [_.isLoading]: v || C
