@@ -13,7 +13,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk853590 = require("./853590.js"),
   Chunk374470 = require("./374470.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk506802 = require("./506802.jsx"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk440326 = require("./440326.js");
 
@@ -251,20 +251,17 @@ class S extends(r = Chunk473749.PureComponent) {
                 })
               }), v, (0, i.jsx)("div", {
                 className: m.track,
-                children: (0, i.jsx)(p.aM, {
-                  "data-migration-pending": true,
-                  color: p.aM.Colors.GREY,
-                  hideOnClick: false,
-                  text: A || y ? null : Y,
+                children: (0, i.jsx)(p.u, {
+                  __unsupportedReactNodeAsText: A || y ? null : Y,
                   forceOpen: n || r && _.Z.keyboardModeEnabled,
-                  children: e => (0, i.jsx)("div", b(g({}, e), {
+                  children: (0, i.jsx)("div", {
                     className: s()(m.grabber, L),
                     style: b(g({}, j), {
                       left: V
                     }),
                     onMouseDown: this.handleMouseDown,
                     ref: this.grabberRef
-                  }))
+                  })
                 })
               })]
             })
