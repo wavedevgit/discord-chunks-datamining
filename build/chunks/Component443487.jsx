@@ -168,10 +168,12 @@ function S(e) {
 function I(e) {
   let {
     children: t,
-    className: n
+    className: n,
+    ref: i
   } = e;
   return (0, r.jsx)("div", {
     className: a()(g.cardRow, n),
+    ref: i,
     children: t
   })
 }
